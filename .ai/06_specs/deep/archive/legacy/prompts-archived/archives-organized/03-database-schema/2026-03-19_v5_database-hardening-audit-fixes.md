@@ -23,20 +23,20 @@ Run ALL of these via Supabase MCP in ONE batch. Do not write any SQL until you h
 
 ```sql
 -- 1. All existing indexes (so we don't create duplicates)
-SELECT tablename, indexname, indexdef 
-FROM pg_indexes 
-WHERE schemaname = 'public' 
+SELECT tablename, indexname, indexdef
+FROM pg_indexes
+WHERE schemaname = 'public'
 ORDER BY tablename, indexname;
 
 -- 2. All existing triggers (so we don't create duplicates)
 SELECT trigger_name, event_object_table, action_timing, event_manipulation
-FROM information_schema.triggers 
+FROM information_schema.triggers
 WHERE trigger_schema = 'public'
 ORDER BY event_object_table, trigger_name;
 
 -- 3. All existing RLS policies (so we can fix the broken ones)
 SELECT tablename, policyname, permissive, roles, cmd, qual, with_check
-FROM pg_policies 
+FROM pg_policies
 WHERE schemaname = 'public'
 ORDER BY tablename, policyname;
 
@@ -48,12 +48,12 @@ AND column_name IN ('updated_at', 'question_order')
 ORDER BY table_name, column_name;
 
 -- 5. Verify the update_updated_at_column function exists
-SELECT routine_name FROM information_schema.routines 
+SELECT routine_name FROM information_schema.routines
 WHERE routine_schema = 'public' AND routine_name = 'update_updated_at_column';
 
 -- 6. Check analytics_events RLS policies specifically (the known bug)
-SELECT policyname, cmd, qual, with_check 
-FROM pg_policies 
+SELECT policyname, cmd, qual, with_check
+FROM pg_policies
 WHERE tablename = 'analytics_events';
 
 -- 7. Check if (select auth.uid()) or auth.uid() is used in high-traffic policies
@@ -63,13 +63,13 @@ WHERE tablename IN ('quiz_sessions', 'user_interactions', 'user_node_mastery', '
 ORDER BY tablename;
 
 -- 8. Check sub_scores population on readiness_score_snapshots
-SELECT 
+SELECT
   COUNT(*) as total_snapshots,
   COUNT(*) FILTER (WHERE sub_scores IS NOT NULL AND sub_scores != '{}' AND sub_scores != 'null') as has_sub_scores
 FROM readiness_score_snapshots;
 
 -- 9. Check if is_flagged is being set (Lucky Guess Detection)
-SELECT 
+SELECT
   COUNT(*) as total_interactions,
   COUNT(*) FILTER (WHERE is_flagged = true) as flagged_count
 FROM user_interactions;
@@ -78,8 +78,8 @@ FROM user_interactions;
 SELECT DISTINCT test_mode FROM quiz_sessions ORDER BY test_mode;
 
 -- 11. Verify no DELETE policies exist on immutable tables
-SELECT tablename, policyname, cmd 
-FROM pg_policies 
+SELECT tablename, policyname, cmd
+FROM pg_policies
 WHERE tablename IN ('user_interactions', 'user_node_mastery') AND cmd = 'DELETE';
 ```
 
@@ -119,7 +119,7 @@ $$ LANGUAGE plpgsql;
 -- Impact: Every quiz session generation does a full table scan.
 -- At 10,000+ questions this becomes a real performance problem.
 
-CREATE INDEX IF NOT EXISTS idx_questions_topic_id 
+CREATE INDEX IF NOT EXISTS idx_questions_topic_id
   ON public.questions(topic_id);
 
 
@@ -127,7 +127,7 @@ CREATE INDEX IF NOT EXISTS idx_questions_topic_id
 -- Impact: Active session retrieval, session history, Analytics
 -- Dashboard, and RLS SELECT policy all scan the entire table.
 
-CREATE INDEX IF NOT EXISTS idx_quiz_sessions_user_id 
+CREATE INDEX IF NOT EXISTS idx_quiz_sessions_user_id
   ON public.quiz_sessions(user_id);
 
 
@@ -136,7 +136,7 @@ CREATE INDEX IF NOT EXISTS idx_quiz_sessions_user_id
 -- The UNIQUE constraint on (user_id, session_id, question_id)
 -- is NOT reliably used for single-column user_id filters.
 
-CREATE INDEX IF NOT EXISTS idx_user_interactions_user_id 
+CREATE INDEX IF NOT EXISTS idx_user_interactions_user_id
   ON public.user_interactions(user_id);
 
 
@@ -155,7 +155,7 @@ CREATE INDEX IF NOT EXISTS idx_user_interactions_user_id
 -- ADAPT: Use the ACTUAL policy name from Phase 1 query #6 results:
 -- DROP POLICY IF EXISTS "[actual_policy_name]" ON public.analytics_events;
 
--- CREATE POLICY ae_insert_fixed ON public.analytics_events 
+-- CREATE POLICY ae_insert_fixed ON public.analytics_events
 --   FOR INSERT
 --   WITH CHECK (
 --     (user_id IS NULL) OR ((select auth.uid()) = user_id)
@@ -171,43 +171,43 @@ CREATE INDEX IF NOT EXISTS idx_user_interactions_user_id
 -- The column currently lies — it always shows the creation time.
 
 DROP TRIGGER IF EXISTS tr_disciplines_updated_at ON public.disciplines;
-CREATE TRIGGER tr_disciplines_updated_at 
-  BEFORE UPDATE ON public.disciplines 
+CREATE TRIGGER tr_disciplines_updated_at
+  BEFORE UPDATE ON public.disciplines
   FOR EACH ROW EXECUTE FUNCTION public.update_updated_at_column();
 
 DROP TRIGGER IF EXISTS tr_taxonomy_tree_updated_at ON public.taxonomy_tree;
-CREATE TRIGGER tr_taxonomy_tree_updated_at 
-  BEFORE UPDATE ON public.taxonomy_tree 
+CREATE TRIGGER tr_taxonomy_tree_updated_at
+  BEFORE UPDATE ON public.taxonomy_tree
   FOR EACH ROW EXECUTE FUNCTION public.update_updated_at_column();
 
 DROP TRIGGER IF EXISTS tr_wiki_articles_updated_at ON public.wiki_articles;
-CREATE TRIGGER tr_wiki_articles_updated_at 
-  BEFORE UPDATE ON public.wiki_articles 
+CREATE TRIGGER tr_wiki_articles_updated_at
+  BEFORE UPDATE ON public.wiki_articles
   FOR EACH ROW EXECUTE FUNCTION public.update_updated_at_column();
 
 DROP TRIGGER IF EXISTS tr_user_subscriptions_updated_at ON public.user_subscriptions;
-CREATE TRIGGER tr_user_subscriptions_updated_at 
-  BEFORE UPDATE ON public.user_subscriptions 
+CREATE TRIGGER tr_user_subscriptions_updated_at
+  BEFORE UPDATE ON public.user_subscriptions
   FOR EACH ROW EXECUTE FUNCTION public.update_updated_at_column();
 
 DROP TRIGGER IF EXISTS tr_feature_flags_updated_at ON public.feature_flags;
-CREATE TRIGGER tr_feature_flags_updated_at 
-  BEFORE UPDATE ON public.feature_flags 
+CREATE TRIGGER tr_feature_flags_updated_at
+  BEFORE UPDATE ON public.feature_flags
   FOR EACH ROW EXECUTE FUNCTION public.update_updated_at_column();
 
 DROP TRIGGER IF EXISTS tr_camp_trails_updated_at ON public.camp_trails;
-CREATE TRIGGER tr_camp_trails_updated_at 
-  BEFORE UPDATE ON public.camp_trails 
+CREATE TRIGGER tr_camp_trails_updated_at
+  BEFORE UPDATE ON public.camp_trails
   FOR EACH ROW EXECUTE FUNCTION public.update_updated_at_column();
 
 DROP TRIGGER IF EXISTS tr_user_global_stats_updated_at ON public.user_global_stats;
-CREATE TRIGGER tr_user_global_stats_updated_at 
-  BEFORE UPDATE ON public.user_global_stats 
+CREATE TRIGGER tr_user_global_stats_updated_at
+  BEFORE UPDATE ON public.user_global_stats
   FOR EACH ROW EXECUTE FUNCTION public.update_updated_at_column();
 
 DROP TRIGGER IF EXISTS tr_organizations_updated_at ON public.organizations;
-CREATE TRIGGER tr_organizations_updated_at 
-  BEFORE UPDATE ON public.organizations 
+CREATE TRIGGER tr_organizations_updated_at
+  BEFORE UPDATE ON public.organizations
   FOR EACH ROW EXECUTE FUNCTION public.update_updated_at_column();
 
 
@@ -220,12 +220,12 @@ CREATE TRIGGER tr_organizations_updated_at
 -- IRT parameters will be recalibrated. model_id will change.
 -- No way to know when a question was last touched.
 
-ALTER TABLE public.questions 
+ALTER TABLE public.questions
   ADD COLUMN IF NOT EXISTS updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
 
 DROP TRIGGER IF EXISTS tr_questions_updated_at ON public.questions;
-CREATE TRIGGER tr_questions_updated_at 
-  BEFORE UPDATE ON public.questions 
+CREATE TRIGGER tr_questions_updated_at
+  BEFORE UPDATE ON public.questions
   FOR EACH ROW EXECUTE FUNCTION public.update_updated_at_column();
 
 
@@ -233,33 +233,33 @@ CREATE TRIGGER tr_questions_updated_at
 
 -- wiki_article_taxonomy: queries by node_id ("articles for this topic")
 -- PK is (article_id, node_id) — node_id-first queries scan the whole table.
-CREATE INDEX IF NOT EXISTS idx_wiki_article_taxonomy_node_id 
+CREATE INDEX IF NOT EXISTS idx_wiki_article_taxonomy_node_id
   ON public.wiki_article_taxonomy(node_id);
 
 -- spatial_hotspots: FK columns model_id and node_id have no indexes.
 -- 3D Lab hotspot queries will scan the whole table.
-CREATE INDEX IF NOT EXISTS idx_spatial_hotspots_model_id 
+CREATE INDEX IF NOT EXISTS idx_spatial_hotspots_model_id
   ON public.spatial_hotspots(model_id);
-CREATE INDEX IF NOT EXISTS idx_spatial_hotspots_node_id 
+CREATE INDEX IF NOT EXISTS idx_spatial_hotspots_node_id
   ON public.spatial_hotspots(node_id);
 
 -- user_interactions.question_id: "has this user seen this question before?"
-CREATE INDEX IF NOT EXISTS idx_user_interactions_question_id 
+CREATE INDEX IF NOT EXISTS idx_user_interactions_question_id
   ON public.user_interactions(question_id);
 
 -- trail_day_completions: RLS checks user_id, queries by day_id
-CREATE INDEX IF NOT EXISTS idx_trail_day_completions_user_id 
+CREATE INDEX IF NOT EXISTS idx_trail_day_completions_user_id
   ON public.trail_day_completions(user_id);
-CREATE INDEX IF NOT EXISTS idx_trail_day_completions_day_id 
+CREATE INDEX IF NOT EXISTS idx_trail_day_completions_day_id
   ON public.trail_day_completions(day_id);
 
 -- readiness_score_snapshots.user_id: trajectory chart reads all per user
-CREATE INDEX IF NOT EXISTS idx_readiness_snapshots_user_id 
+CREATE INDEX IF NOT EXISTS idx_readiness_snapshots_user_id
   ON public.readiness_score_snapshots(user_id);
 
 -- readiness_score_snapshots: chronological reads for trajectory
 -- ADAPT: use actual timestamp column name (created_at or computed_at)
-CREATE INDEX IF NOT EXISTS idx_readiness_snapshots_user_time 
+CREATE INDEX IF NOT EXISTS idx_readiness_snapshots_user_time
   ON public.readiness_score_snapshots(user_id, created_at DESC);
 
 
@@ -267,7 +267,7 @@ CREATE INDEX IF NOT EXISTS idx_readiness_snapshots_user_time
 -- Two interactions at the same millisecond makes ordering ambiguous.
 -- Endurance Cycle accuracy-per-10-item-block needs deterministic order.
 
-ALTER TABLE public.user_interactions 
+ALTER TABLE public.user_interactions
   ADD COLUMN IF NOT EXISTS question_order INTEGER;
 
 
@@ -307,7 +307,7 @@ ALTER TABLE public.user_interactions
 -- Currently Proof Simulations are indistinguishable from Storm Mode.
 -- The readiness score recalibration logic needs to know which is which.
 
-ALTER TABLE public.quiz_sessions 
+ALTER TABLE public.quiz_sessions
   ADD COLUMN IF NOT EXISTS is_proof_simulation BOOLEAN DEFAULT false;
 
 -- This allows the score engine to query:
@@ -330,31 +330,31 @@ ALTER TABLE public.quiz_sessions
 -- ═══════════════════════════════════════════════════════════════
 
 -- Session lookup: "get active sessions for this user"
-CREATE INDEX IF NOT EXISTS idx_quiz_sessions_user_status 
+CREATE INDEX IF NOT EXISTS idx_quiz_sessions_user_status
   ON public.quiz_sessions(user_id, status);
 
 -- Question selection: "get questions for these topics at this difficulty"
-CREATE INDEX IF NOT EXISTS idx_questions_topic_difficulty 
+CREATE INDEX IF NOT EXISTS idx_questions_topic_difficulty
   ON public.questions(topic_id, difficulty);
 
 -- Assessment question pool: "get high-discrimination assessment questions"
-CREATE INDEX IF NOT EXISTS idx_questions_assessment 
+CREATE INDEX IF NOT EXISTS idx_questions_assessment
   ON public.questions(is_assessment) WHERE is_assessment = true;
 
 -- Mastery lookup: "get all mastery data for this user"
-CREATE INDEX IF NOT EXISTS idx_user_node_mastery_user 
+CREATE INDEX IF NOT EXISTS idx_user_node_mastery_user
   ON public.user_node_mastery(user_id);
 
 -- Interaction timeline: "get interactions for this session in order"
-CREATE INDEX IF NOT EXISTS idx_user_interactions_session_time 
+CREATE INDEX IF NOT EXISTS idx_user_interactions_session_time
   ON public.user_interactions(session_id, interaction_timestamp);
 
 -- Notes by topic: "get all notes for this taxonomy node"
-CREATE INDEX IF NOT EXISTS idx_notes_topic 
+CREATE INDEX IF NOT EXISTS idx_notes_topic
   ON public.notes(topic_id) WHERE topic_id IS NOT NULL;
 
 -- Trail enrollment lookup: "get active trails for this user"
-CREATE INDEX IF NOT EXISTS idx_trail_enrollments_user_status 
+CREATE INDEX IF NOT EXISTS idx_trail_enrollments_user_status
   ON public.user_trail_enrollments(user_id, status);
 ```
 
@@ -429,9 +429,9 @@ CREATE POLICY ae_insert_fixed ON public.analytics_events
 ### Index verification:
 ```sql
 -- All indexes we created — verify they exist
-SELECT indexname, tablename 
-FROM pg_indexes 
-WHERE schemaname = 'public' 
+SELECT indexname, tablename
+FROM pg_indexes
+WHERE schemaname = 'public'
 AND indexname IN (
   'idx_questions_topic_id',
   'idx_quiz_sessions_user_id',
@@ -458,8 +458,8 @@ ORDER BY tablename, indexname;
 ### Trigger verification:
 ```sql
 -- All triggers we created — verify they exist
-SELECT trigger_name, event_object_table 
-FROM information_schema.triggers 
+SELECT trigger_name, event_object_table
+FROM information_schema.triggers
 WHERE trigger_schema = 'public'
 AND trigger_name IN (
   'tr_disciplines_updated_at',
@@ -478,7 +478,7 @@ ORDER BY event_object_table;
 ### Column verification:
 ```sql
 -- New columns exist
-SELECT table_name, column_name, data_type 
+SELECT table_name, column_name, data_type
 FROM information_schema.columns
 WHERE (table_name = 'questions' AND column_name = 'updated_at')
    OR (table_name = 'user_interactions' AND column_name = 'question_order')
@@ -496,16 +496,16 @@ ORDER BY tablename, policyname;
 
 -- Verify analytics_events allows anonymous inserts
 -- The INSERT policy should show: (user_id IS NULL) OR ((select auth.uid()) = user_id)
-SELECT with_check FROM pg_policies 
+SELECT with_check FROM pg_policies
 WHERE tablename = 'analytics_events' AND cmd = 'INSERT';
 ```
 
 ### Immutability verification:
 ```sql
 -- Confirm no DELETE policies on immutable tables
-SELECT tablename, policyname, cmd 
-FROM pg_policies 
-WHERE tablename IN ('user_interactions', 'user_node_mastery') 
+SELECT tablename, policyname, cmd
+FROM pg_policies
+WHERE tablename IN ('user_interactions', 'user_node_mastery')
 AND cmd = 'DELETE';
 -- Should return 0 rows
 ```

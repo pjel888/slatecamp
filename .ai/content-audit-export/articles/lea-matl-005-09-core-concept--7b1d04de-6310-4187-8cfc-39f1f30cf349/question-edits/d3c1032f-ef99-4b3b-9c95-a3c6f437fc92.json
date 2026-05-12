@@ -1,0 +1,69 @@
+{
+  "question_id": "d3c1032f-ef99-4b3b-9c95-a3c6f437fc92",
+  "baseline_hash": "sha256:5325f447621e2ca84f803cb4e12a2b0e5d6a40c6cc271ac737c9e135974f6ad3",
+  "action": "replace",
+  "reason": "source-audited-article-batch-085-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-005-09-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-085",
+  "approved_at": "2026-05-12T07:55:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "7b1d04de-6310-4187-8cfc-39f1f30cf349",
+    "parent_article_slug": "lea-matl-005-09-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 9003 refined markdown lines 11-125 and 491-555; Green Building Illustrated refined markdown lines 7709-7727.",
+    "checked_markdown_lines": [
+      "RA 9003 refined markdown lines 11-125 and 491-555; raw PDF pages 1, 4, 5, 16, 18, and 37 checked by local PyMuPDF extraction.",
+      "Green Building Illustrated refined markdown lines 7501-7535, 7549-7583, and 7709-7727; raw PDF pages 228-230 and 235-236 checked by local PyMuPDF extraction."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "ra-9003-ecological-solid-waste-management-b085",
+        "label": "RA 9003 Ecological Solid Waste Management Act of 2000",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.pdf",
+        "sha256": "sha256:d3939c8bad4085e76186be1fa0465b9011ceb639bdb8611e7d869fac454d59fe",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.md",
+        "refined_markdown_sha256": "sha256:f0e42aa0bb840899b2ef0a87d79fa7e9cb47e97d090731fc48b119711144eadc",
+        "locator": "RA 9003 refined markdown lines 11-125 and 491-555; raw PDF pages 1, 4, 5, 16, 18, and 37 checked by local PyMuPDF extraction."
+      },
+      {
+        "source_id": "green-building-illustrated-b085",
+        "label": "Green Building Illustrated",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Green Building Illustrated.pdf",
+        "sha256": "sha256:b23f127ca4581eb2d733b14e2a3739d022c9d04b343729b0ecdebdf92d0bdc70",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Green Building Illustrated.md",
+        "refined_markdown_sha256": "sha256:4c754dad2867dea176cd93c2f93788b7874ccbbe557096bb64cbb0ab3a0165d2",
+        "locator": "Green Building Illustrated refined markdown lines 7501-7535, 7549-7583, and 7709-7727; raw PDF pages 228-230 and 235-236 checked by local PyMuPDF extraction."
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 085 local raw-source-audited construction_waste_reduction_and_ra9003 scope."
+  },
+  "proposed": {
+    "text": "Why is material-use efficiency important in waste management?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Detailed material quantities support efficient procurement and less waste"
+      },
+      {
+        "id": "b",
+        "text": "It makes segregation unnecessary"
+      },
+      {
+        "id": "c",
+        "text": "It replaces all source reduction"
+      },
+      {
+        "id": "d",
+        "text": "It applies only to structural bolts"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Detailed material quantities support efficient procurement and less waste. RA 9003 and Green Building Illustrated support source reduction, segregation, reuse, recycling, material efficiency, and planned diversion without unsupported local recycling-rate claims.",
+    "explanation": "Detailed material quantities support efficient procurement and less waste. RA 9003 and Green Building Illustrated support source reduction, segregation, reuse, recycling, material efficiency, and planned diversion without unsupported local recycling-rate claims.",
+    "code_citation": "RA 9003 Ecological Solid Waste Management Act of 2000; Green Building Illustrated",
+    "bloom_level": "apply",
+    "application_context": "source_audited_local_first_batch_085",
+    "practice_context": [],
+    "difficulty": 0.7
+  }
+}

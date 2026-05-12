@@ -1,0 +1,48 @@
+{
+  "question_id": "6bf8349c-da8d-4ace-bc3d-a9a08f381141",
+  "baseline_hash": "sha256:35f5010c2a2a264929cab16d523fe5f8146366e6e59890eb48946b40013c76da",
+  "action": "replace",
+  "reason": "source-audited-article-batch-038-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-038",
+  "approved_at": "2026-05-11T13:26:35+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-038-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 4448-4472"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 1704"
+  },
+  "proposed": {
+    "text": "Where may the exhaust motor for a spray booth be mounted?",
+    "options": [
+      {
+        "id": "b038-d601-25-a",
+        "text": "Not in the spray booth or duct system"
+      },
+      {
+        "id": "b038-d601-25-b",
+        "text": "Inside the booth for maintenance access"
+      },
+      {
+        "id": "b038-d601-25-c",
+        "text": "Inside the duct system only"
+      },
+      {
+        "id": "b038-d601-25-d",
+        "text": "Anywhere if the fan is non-ferrous"
+      }
+    ],
+    "correct_option_id": "b038-d601-25-a",
+    "rationale": "Correct answer: Not in the spray booth or duct system. This is directly supported by PD 1096 2004 Revised IRR, Section 1704.",
+    "explanation": "The Batch 038 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 1704.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 1704"
+  }
+}

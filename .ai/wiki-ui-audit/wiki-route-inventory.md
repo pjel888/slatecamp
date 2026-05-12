@@ -1,7 +1,7 @@
 # Wiki Route Inventory
 
-**Generated:** 2026-05-04  
-**Project:** SlateCamp (Next.js App Router, Bun)  
+**Generated:** 2026-05-04
+**Project:** SlateCamp (Next.js App Router, Bun)
 **Scope:** All wiki routes and components under `/dashboard/wiki`
 
 ---
@@ -184,9 +184,9 @@ WikiArticlePage(params: { slug })
 
 ## Widget System
 
-**Registry:** `src/components/wiki/widgets/registry.ts`  
-**Groups:** `bp344/` (6 widgets), `dsgn013/` (12 widgets)  
-**Total widgets:** 18  
+**Registry:** `src/components/wiki/widgets/registry.ts`
+**Groups:** `bp344/` (6 widgets), `dsgn013/` (12 widgets)
+**Total widgets:** 18
 **Resolution:** Lazy — `detectWidgets()` scans MDX for `<WidgetName` patterns, loads only those modules
 
 ---
@@ -247,29 +247,29 @@ Accordion, WikiAccordion, WikiTabs, WikiCalloutBox, WikiChangedPill, WikiExamTab
 
 ### Critical
 
-1. **WikiSidebar.tsx — unhandled Promise rejection**  
+1. **WikiSidebar.tsx — unhandled Promise rejection**
    `getTaxonomyTree()` in effect has no `.catch()`. If the server action throws, `loading` stays `true` forever. The user sees an infinite loading skeleton.
 
 ### Medium
 
-2. **No wiki-level `error.tsx`**  
+2. **No wiki-level `error.tsx`**
    Neither `/dashboard/wiki` nor `[slug]` has an error boundary. Any unhandled exception during data fetching crashes the entire page to the dashboard/root boundary.
 
-3. **Promise.all fan-out lacks per-call error handling**  
+3. **Promise.all fan-out lacks per-call error handling**
    `[slug]/page.tsx` lines 158-166: `Promise.all([...5 calls])` — any single rejection kills all five. In demo mode these are skipped, but live mode has no safety net.
 
-4. **WikiHeader — no try/catch on breadcrumb/mobile tree fetch**  
+4. **WikiHeader — no try/catch on breadcrumb/mobile tree fetch**
    If `getBreadcrumbTrail` or `getCachedTaxonomyTreeFull` throws, the whole header crashes. No graceful degradation to an empty breadcrumb bar.
 
 ### Low
 
-5. **No `not-found.tsx` for `[slug]`**  
+5. **No `not-found.tsx` for `[slug]`**
    `notFound()` falls to the nearest parent. A wiki-specific 404 would provide better UX ("Article not found — browse the sidebar").
 
-6. **WikiSidebarLoader — no cache-failure fallback**  
+6. **WikiSidebarLoader — no cache-failure fallback**
    If `getCachedTaxonomyTreeFull` throws (cold cache + DB down), the sidebar Suspense boundary shows the skeleton indefinitely.
 
-7. **No test coverage for error states**  
+7. **No test coverage for error states**
    `page.test.tsx` only tests metadata generation and hero/journey rendering. No tests for error states, loading states, or empty states.
 
 ---

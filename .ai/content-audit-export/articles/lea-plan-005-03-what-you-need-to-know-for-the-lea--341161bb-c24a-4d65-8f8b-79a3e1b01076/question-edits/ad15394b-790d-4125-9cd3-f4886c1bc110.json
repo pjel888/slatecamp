@@ -1,0 +1,148 @@
+{
+  "question_id": "ad15394b-790d-4125-9cd3-f4886c1bc110",
+  "baseline_hash": "sha256:8a8fcd2a517c3a96d16caae88c0e0108b3fa6b815e86d219516d3476a6308192",
+  "action": "replace",
+  "reason": "source-audited-article-batch-069-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes unsupported external-theory, professional-scope, or environmental-law overclaims where present.",
+  "approved_by": "codex-local-first-batch-069",
+  "approved_at": "2026-05-12T00:24:00+08:00",
+  "source_audit_support": {
+    "parent_article_id": "341161bb-c24a-4d65-8f8b-79a3e1b01076",
+    "parent_article_slug": "lea-plan-005-03-what-you-need-to-know-for-the-lea",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "PD 1067 refined markdown lines 193 and 224-239; raw PDF page 9 checked by local PDF extraction; RA 9275 refined markdown lines 24, 88-100, 106-108, 135-139, 213-241, and 255-257; raw PDF pages 2, 4-7, 10, and 12 checked by local PDF extraction; RA 9003 refined markdown lines 506-551, 596-622, 675-677, and 811; raw PDF pages 19, 22, 25-26, and 33 checked by local PDF extraction; RA 7160 refined markdown lines 197-209, 712-746, 2665-2668, 2902-2905, and 3130; raw PDF pages 15, 51-52, 194, 213, and 232 checked by local PDF extraction; HLURB CLUP Vol. 1 refined markdown lines 304-330, 434-448, 1988-2009, 2025-2084, 2119-2129, and 8461; raw PDF pages 5, 18-20, 70, 75, and 225 checked by local PDF extraction",
+    "checked_markdown_lines": [
+      "PD 1067 line 193",
+      "PD 1067 lines 224-239",
+      "RA 9275 line 24",
+      "RA 9275 lines 88-100",
+      "RA 9275 lines 106-108",
+      "RA 9275 lines 135-139",
+      "RA 9275 lines 213-241",
+      "RA 9275 lines 255-257",
+      "RA 9003 lines 506-551",
+      "RA 9003 lines 596-622",
+      "RA 9003 lines 675-677",
+      "RA 9003 line 811",
+      "RA 7160 lines 197-209",
+      "RA 7160 lines 712-746",
+      "RA 7160 lines 2665-2668",
+      "RA 7160 lines 2902-2905",
+      "RA 7160 line 3130",
+      "HLURB CLUP Vol. 1 lines 304-330",
+      "HLURB CLUP Vol. 1 lines 434-448",
+      "HLURB CLUP Vol. 1 lines 1988-2009",
+      "HLURB CLUP Vol. 1 lines 2025-2084",
+      "HLURB CLUP Vol. 1 lines 2119-2129",
+      "HLURB CLUP Vol. 1 line 8461"
+    ],
+    "checked_raw_pdf_pages": [
+      "PD 1067 raw PDF page 9",
+      "RA 9275 raw PDF page 2",
+      "RA 9275 raw PDF pages 4-7",
+      "RA 9275 raw PDF page 10",
+      "RA 9275 raw PDF page 12",
+      "RA 9003 raw PDF page 19",
+      "RA 9003 raw PDF page 22",
+      "RA 9003 raw PDF pages 25-26",
+      "RA 9003 raw PDF page 33",
+      "RA 7160 raw PDF page 15",
+      "RA 7160 raw PDF pages 51-52",
+      "RA 7160 raw PDF page 194",
+      "RA 7160 raw PDF page 213",
+      "RA 7160 raw PDF page 232",
+      "HLURB CLUP Vol. 1 raw PDF page 5",
+      "HLURB CLUP Vol. 1 raw PDF pages 18-20",
+      "HLURB CLUP Vol. 1 raw PDF page 70",
+      "HLURB CLUP Vol. 1 raw PDF page 75",
+      "HLURB CLUP Vol. 1 raw PDF page 225"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "pd1067-water-code-easements-local-b069",
+        "label": "PD 1067 Water Code - public-use easements and water protection",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1067/PD 1067 - Water Code of the Philippines.pdf",
+        "sha256": "sha256:90fdccc66152977f0e628d47c9a7c6a0e5a93faa7d02c9344012679f1e0d4f07",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1067/PD 1067 - Water Code of the Philippines.md",
+        "refined_markdown_sha256": "sha256:1f64532d7d02f840e5d6c2710e6730d17a99f28fd1e1371839e7690174b942a7",
+        "locator": "PD 1067 refined markdown lines 193 and 224-239; raw PDF page 9 checked by local PDF extraction"
+      },
+      {
+        "source_id": "ra9275-clean-water-local-b069",
+        "label": "RA 9275 Clean Water Act - water quality management and sewage/septage",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9257/RA 9275 PH Clean Water Act.pdf",
+        "sha256": "sha256:125e87be94dbecfe40e9a5a698359e7a0e3aabf1b0a3fd08004c90ec9b17b0a9",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9257/RA 9275 PH Clean Water Act.md",
+        "refined_markdown_sha256": "sha256:209d1be42efa2e2ced9438610f041537b50ef9059911daf21bf1ece2ff89a7ee",
+        "locator": "RA 9275 refined markdown lines 24, 88-100, 106-108, 135-139, 213-241, and 255-257; raw PDF pages 2, 4-7, 10, and 12 checked by local PDF extraction"
+      },
+      {
+        "source_id": "ra9003-solid-waste-local-b069",
+        "label": "RA 9003 Ecological Solid Waste Management Act - LGU solid waste planning",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.pdf",
+        "sha256": "sha256:d3939c8bad4085e76186be1fa0465b9011ceb639bdb8611e7d869fac454d59fe",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.md",
+        "refined_markdown_sha256": "sha256:f0e42aa0bb840899b2ef0a87d79fa7e9cb47e97d090731fc48b119711144eadc",
+        "locator": "RA 9003 refined markdown lines 506-551, 596-622, 675-677, and 811; raw PDF pages 19, 22, 25-26, and 33 checked by local PDF extraction"
+      },
+      {
+        "source_id": "ra7160-planning-foundations-local-b069",
+        "label": "RA 7160 Local Government Code - planning, CLUP, and zoning foundations",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7160/RA 7160 The Local Government Code.pdf",
+        "sha256": "sha256:e270e8bc7bd84ba8ad7b6fe6780c12a3e5a6103e2b9395db13084266a5ff1fff",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7160/RA 7160 The Local Government Code.md",
+        "refined_markdown_sha256": "sha256:9f95493bd12c7f4b0989913d7e8783cdbc6235891fea9977c2aa77238c3dd392",
+        "locator": "RA 7160 refined markdown lines 197-209, 712-746, 2665-2668, 2902-2905, and 3130; raw PDF pages 15, 51-52, 194, 213, and 232 checked by local PDF extraction"
+      },
+      {
+        "source_id": "hlurb-clup-vol1-foundations-local-b069",
+        "label": "HLURB CLUP Guidebook Volume 1 - planning process and spatial plan hierarchy",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/HLURB_CLUP_Vol_1.pdf",
+        "sha256": "sha256:34888ecf03576719d36e8abe21ff90da92e18263a4debb9db3fbbc41a7878762",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/HLURB_CLUP_Vol_1.md",
+        "refined_markdown_sha256": "sha256:6b574d861c0942a232fec321c2863754673532019af8f983e84550e54afc04e3",
+        "locator": "HLURB CLUP Vol. 1 refined markdown lines 304-330, 434-448, 1988-2009, 2025-2084, 2119-2129, and 8461; raw PDF pages 5, 18-20, 70, 75, and 225 checked by local PDF extraction"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, and citation rewritten to the Batch 069 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "Under RA 9275, what does sewerage include?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Systems for collection, transport, pumping, treatment, and disposal of sewage."
+      },
+      {
+        "id": "b",
+        "text": "Only roof drainage gutters."
+      },
+      {
+        "id": "c",
+        "text": "Only zoning district names."
+      },
+      {
+        "id": "d",
+        "text": "Only architectural design competitions."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "RA 9275 defines sewerage broadly as collection, transport, pumping, treatment, and disposal systems.",
+    "explanation": "RA 9275 defines sewerage broadly as collection, transport, pumping, treatment, and disposal systems.",
+    "code_citation": "PD 1067 line 193; RA 9275 line 24; RA 9003 lines 506-551",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "bloom_level": "understand",
+    "application_context": "source-audited Philippine planning and professional-practice interpretation",
+    "practice_context": [
+      "source-audited interpretation",
+      "lea-plan-005-03-what-you-need-to-know-for-the-lea"
+    ],
+    "difficulty": 0.55,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false
+  }
+}

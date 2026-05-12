@@ -1,0 +1,76 @@
+{
+  "question_id": "88e2c7c2-b3a6-47b6-9174-400aeeb70502",
+  "baseline_hash": "sha256:d8be89e7a066389b7db71591bc32f464bac3f6719afd254bc7300e737ea475c6",
+  "action": "replace",
+  "reason": "source-audited-article-batch-037-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-037",
+  "approved_at": "2026-05-11T13:16:58+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-037-local-first",
+    "checked_sources": [
+      {
+        "source_id": "rnpc-revised-national-plumbing-code-local",
+        "label": "Revised National Plumbing Code of the Philippines",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Revised National Plumbing Code of the Philippines.md",
+        "checked_markdown_lines": [
+          "Revised National Plumbing Code refined markdown lines 75-110",
+          "Revised National Plumbing Code refined markdown lines 147-196",
+          "Revised National Plumbing Code refined markdown lines 224-251",
+          "Revised National Plumbing Code refined markdown lines 453-477",
+          "Revised National Plumbing Code refined markdown lines 1338-1370",
+          "Revised National Plumbing Code refined markdown lines 3390-3419",
+          "Revised National Plumbing Code refined markdown lines 3660-3674",
+          "Revised National Plumbing Code refined markdown lines 4213-4260"
+        ]
+      },
+      {
+        "source_id": "ra-1378-master-plumbing-law-local",
+        "label": "RA 1378 Master Plumbing Law",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-1378/MASTER PLUMBING LAW.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-1378/MASTER PLUMBING LAW.md",
+        "checked_markdown_lines": [
+          "RA 1378 Master Plumbing Law refined markdown lines 7-10",
+          "RA 1378 Master Plumbing Law refined markdown lines 16-40",
+          "RA 1378 Master Plumbing Law refined markdown lines 55-83"
+        ]
+      },
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR 2004 DPWH Official refined markdown lines 968-990",
+          "PD 1096 RIRR 2004 DPWH Official refined markdown lines 3789-3897"
+        ]
+      }
+    ],
+    "citation": "RA 1378 and Revised National Plumbing Code"
+  },
+  "proposed": {
+    "text": "What function do vents serve in sanitary drainage?",
+    "options": [
+      {
+        "id": "b037-be3f-04-a",
+        "text": "They protect trap seals against siphonage and back pressure"
+      },
+      {
+        "id": "b037-be3f-04-b",
+        "text": "They collect solid refuse"
+      },
+      {
+        "id": "b037-be3f-04-c",
+        "text": "They remove the need for cleanouts"
+      },
+      {
+        "id": "b037-be3f-04-d",
+        "text": "They turn sanitary sewage into storm water"
+      }
+    ],
+    "correct_option_id": "b037-be3f-04-a",
+    "rationale": "Correct answer: They protect trap seals against siphonage and back pressure. This is directly supported by RA 1378 and Revised National Plumbing Code.",
+    "explanation": "The Batch 037 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for RA 1378 and Revised National Plumbing Code.",
+    "code_citation": "RA 1378 and Revised National Plumbing Code"
+  }
+}

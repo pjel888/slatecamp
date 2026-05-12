@@ -1,0 +1,88 @@
+{
+  "question_id": "f9e2c759-3414-428b-b3da-76522aa33e95",
+  "baseline_hash": "sha256:dbfef458ac63619a0f496d9e2e92aeb6f6617fb9ece97442e365c1e4a4b81d1e",
+  "reason": "source-audited-article-batch-013-local-first aligned linked question with repaired source-audited article content and local raw-source evidence.",
+  "approved_by": "codex-local-source-audit-batch-013",
+  "approved_at": "2026-05-10T22:10:00.000+08:00",
+  "source_audit_support": {
+    "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+    "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+    "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
+    "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
+    "parent_article_id": "f5ed9c09-3191-4cd4-b1b0-9e6364212c36",
+    "parent_article_slug": "spp-doc-204-b-construction-management-services",
+    "answer_key_fields_changed": false,
+    "support_status": "supported",
+    "source_locator": "SPP Document 206, Sections 9.2.2, 10.2.1, and 11.1 support the PM/CM service relationship and percentage-basis compensation. The local equivalent fee source in the 1979 UAP Documents, Section 8.1, states that the Project Manager is compensated on a percentage basis of 2% to 5% of estimated Project Cost.",
+    "checked_markdown_lines": [
+      "Standards of Professional Practice2.md lines 1311-1316, 1342-1356",
+      "SPP 206.md lines 789-793",
+      "1979 UAP Documents.md line 1876; refined conversion line 1738; canonical source line 1830; sidecar JSON content id 24411",
+      "UAP Documents Reviewer.md lines 2962-2965 and uap-documents-q-a.md line 2487 mention 2%-5% in reviewer material only; corroboration only"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
+        "sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
+        "locator": "SPP Document 206, Sections 9.2.2, 10.2.1, and 11.1",
+        "lines": "1311-1316, 1342-1356",
+        "support": "supports PM/CM service linkage and percentage-basis compensation; it cross-references the Architect's Guidelines for the percentage basis"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/SPP 206.md",
+        "sha256": "sha256:7a607fc72997d7d6fbfdc718fe4894c2d95a9635f58c9e08b1b6c2a0c961ed67",
+        "locator": "SPP Document 206 conversion, Method of Compensation slide",
+        "lines": "789-793",
+        "support": "confirms compensation section exists in the SPP 206 conversion"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 206.pdf",
+        "sha256": "sha256:d140c57e69f990af217f914a1dac51b6d6aae02a1b42aadd4a3f26b6cebf72b7",
+        "locator": "SPP Document 206 raw PDF",
+        "lines": null,
+        "support": "checked as raw SPP 206 source for the current PM/CM relationship and compensation cross-reference"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/1979 UAP Documents.pdf",
+        "sha256": "sha256:54d42c8d39cb6c1e8622ef21a65e63cb09d90c302ca905efa95442614e5f0b5b",
+        "locator": "UAP Doc. 206, Method of Compensation, Section 8.1",
+        "lines": null,
+        "support": "raw PDF backing for the local UAP source that states Project Manager compensation is 2% to 5% of estimated Project Cost"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/1979 UAP Documents.md",
+        "sha256": "sha256:6ae33942ccaedc9a5541fd9f2727ec108aa66c522325c4ca1a2629caab002e38",
+        "locator": "UAP Doc. 206, Section 8.1",
+        "lines": "1876",
+        "support": "authoritative local conversion states: Project Manager compensation is 2% to 5% of estimated Project Cost"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/1979 UAP Documents.md",
+        "sha256": "sha256:ada40ce7a1046bb6ca99a34b095250ef650a05285458e2dafd0ed4be68870b8e",
+        "locator": "UAP Doc. 206, Section 8.1",
+        "lines": "1738",
+        "support": "refined conversion repeats the 2% to 5% Project Manager fee range"
+      },
+      {
+        "path": "vitruvius-connection/003_Canonical-Knowledge-Layer/shared/sources/1979-uap-documents.md",
+        "sha256": "sha256:e42f91a3324bd3ac7db9584a2b98affeec884f376c4f0e86aadf9fb92694372f",
+        "locator": "UAP Doc. 206, Section 8.1",
+        "lines": "1830",
+        "support": "canonical source repeats the 2% to 5% Project Manager fee range"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Documents Reviewer.md",
+        "sha256": "sha256:6dd95802d89912881b865a4724b6ba81979e551f026c6d3a8f436948fe143dfb",
+        "locator": "reviewer answer key and multiple-choice review item",
+        "lines": "612, 2962-2965",
+        "support": "non-authoritative reviewer corroboration only"
+      }
+    ],
+    "blocker_file": ".ai/content-audit-export/source-audited-article-batch-013-blocker-ledger-2026-05-10.json",
+    "blocker_resolution": "resolved_supported_by_local_equivalent_fee_source"
+  },
+  "proposed": {
+    "code_citation": "SPP 204-B / SPP 206",
+    "explanation": "SPP 206 states that when a Project Manager also serves as Construction Manager, the PM provides the applicable SPP 204-A and/or 204-B services. SPP 206 also states that PM compensation is percentage-based as described in the Architect's Guidelines; the local UAP Doc. 206 fee source states the Project Manager's compensation as 2% to 5% of estimated Project Cost. Regular architectural design services remain separately compensated under SPP 202."
+  }
+}

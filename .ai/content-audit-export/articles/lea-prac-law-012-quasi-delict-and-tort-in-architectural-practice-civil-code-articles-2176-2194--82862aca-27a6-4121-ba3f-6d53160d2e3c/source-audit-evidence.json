@@ -1,0 +1,135 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T22:40:00+08:00",
+  "audit_mode": "local_source_audit_no_supabase",
+  "protocols_applied": [
+    ".ai/CONTENT_EXCELLENCE_GOAL.md",
+    ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
+    ".ai/00_system/vitruvius-source-reference.md"
+  ],
+  "target": {
+    "article_id": "82862aca-27a6-4121-ba3f-6d53160d2e3c",
+    "slug": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194",
+    "title": "Quasi Delict and Tort in Architectural Practice Civil Code Articles",
+    "article_folder": ".ai/content-audit-export/articles/lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194--82862aca-27a6-4121-ba3f-6d53160d2e3c",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194--82862aca-27a6-4121-ba3f-6d53160d2e3c/candidate.md",
+    "candidate_sha256": "sha256:915a3d5b04b53267a687ace3680e40a2bc2c5946678d65194422f6dcbb37db8a",
+    "normalized_sha256": "sha256:915a3d5b04b53267a687ace3680e40a2bc2c5946678d65194422f6dcbb37db8a",
+    "linked_questions_sha256": "sha256:d3583524733c43c5d9d372934d5b1d033dc355f9e5e771f3d0e5ade5f8a770b4",
+    "sources_sha256": "sha256:5579cbba1f7db452e803cd8ffc0c7d24c713e9a00e60cd3d751806f609621871"
+  },
+  "classification": {
+    "content_type": "civil_code_quasi_delict_architecture_article",
+    "focus": "Civil Code quasi-delict elements, prescription, employer responsibility, and Article 1723/2192 boundary",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": [
+      "8532bdb6-bdd8-4f4f-bd6e-1e5a9d11211c",
+      "35208cbe-8610-483e-b362-655d7c2b62ff",
+      "1dbc01e7-9b74-4914-8257-9b3130c2cf3b",
+      "00550971-f954-4b5c-a520-3e0642ed4bb0",
+      "711b2326-c131-4f2d-8bab-df99e20111fc",
+      "4f65b525-c205-4509-b789-f3f5f6713bed",
+      "f857ab41-1fea-4427-82e3-872b52cc036b",
+      "f8f86770-b545-4522-ad8e-7039ef6954d5",
+      "910c48ef-07df-4cb2-b8ba-3de4399cf720",
+      "dd46ef55-bdfa-4a92-86af-e53a68bd65d0"
+    ]
+  },
+  "raw_sources": [
+    {
+      "key": "civil_code",
+      "label": "Civil Code of the Philippines",
+      "source_type": "civil_code",
+      "source_id": "batch006-lea-prac-law-012-quasi-delict-and-tort-in-archit-source-01",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code of the Phils.pdf",
+      "raw_pdf_sha256": "sha256:95b8d7bf26fabeab9d27c661a53729273b69c88fc8565cc2a7146243df693400",
+      "checked_pdf_pages": [
+        82,
+        123,
+        159,
+        160
+      ]
+    },
+    {
+      "key": "ra9266_irr",
+      "label": "RA 9266 IRR Architecture Act of 2004",
+      "source_type": "implementing_rules",
+      "source_id": "batch006-lea-prac-law-012-quasi-delict-and-tort-in-archit-source-02",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "checked_pdf_pages": [
+        2,
+        19
+      ]
+    }
+  ],
+  "gate_results": {
+    "compose": "PASS: content-audit:compose -- --article-id 82862aca-27a6-4121-ba3f-6d53160d2e3c --overwrite; blockers=0",
+    "diff": "PASS: content-audit:diff -- --article-id 82862aca-27a6-4121-ba3f-6d53160d2e3c; changed=true safe_to_push=true blockers=0",
+    "validate": "PASS: content-audit:validate -- --article-id 82862aca-27a6-4121-ba3f-6d53160d2e3c --summary --dry-run; valid=true blockers=0 warnings=0",
+    "push_dry_run": "not_attempted_local_first; Supabase remote fetch is final publishing only and intentionally non-blocking here",
+    "supabase_mutation": "not_attempted_by_request"
+  },
+  "claims": [
+    {
+      "claim_id": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194-claim-01",
+      "claim_text": "Civil Code Article 2176 defines quasi-delict as damage caused by fault or negligence when there is no pre-existing contractual relation.",
+      "source_support": [
+        "civil_code",
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194-claim-02",
+      "claim_text": "Civil Code Articles 1146 and 1150 support a four-year quasi-delict prescription period counted from the day the action may be brought.",
+      "source_support": [
+        "civil_code",
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194-claim-03",
+      "claim_text": "Civil Code Articles 1723 and 2192 create a special boundary for construction-defect damage covered by Article 1723.",
+      "source_support": [
+        "civil_code",
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194-linked-question-edits",
+      "claim_text": "Question edits staged locally for linked question IDs/model IDs: 8532bdb6-bdd8-4f4f-bd6e-1e5a9d11211c (ALE-PRAC-LAW-012-008), 35208cbe-8610-483e-b362-655d7c2b62ff (ALE-PRAC-LAW-012-005), 1dbc01e7-9b74-4914-8257-9b3130c2cf3b (ALE-PRAC-LAW-012-004), 00550971-f954-4b5c-a520-3e0642ed4bb0 (ALE-PRAC-LAW-012-002), 711b2326-c131-4f2d-8bab-df99e20111fc (ALE-PRAC-LAW-012-003), 4f65b525-c205-4509-b789-f3f5f6713bed (ALE-PRAC-LAW-012-009), f857ab41-1fea-4427-82e3-872b52cc036b (ALE-PRAC-LAW-012-010), f8f86770-b545-4522-ad8e-7039ef6954d5 (ALE-PRAC-LAW-012-007), 910c48ef-07df-4cb2-b8ba-3de4399cf720 (ALE-PRAC-LAW-012-006), dd46ef55-bdfa-4a92-86af-e53a68bd65d0 (ALE-PRAC-LAW-012-001)",
+      "audit_result": "PASS",
+      "source_support": [
+        "civil_code",
+        "ra9266_irr"
+      ]
+    }
+  ],
+  "unsupported_or_removed_claims": [
+    "Removed Article 1155/discovery-date framing and replaced it with Articles 1146 and 1150.",
+    "Rewrote the sixteen-year collapse scenario to respect Article 2192 instead of bypassing Article 1723 through quasi-delict.",
+    "Changed no-collapse foundation-damage question alignment from Article 1723-plus-quasi-delict to quasi-delict where the collapse trigger is absent."
+  ],
+  "remaining_local_blockers": [],
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_recovery_complete": true,
+    "remote_publish_status": "not_attempted_by_request",
+    "remaining_local_blockers": []
+  },
+  "local_validation": {
+    "command": "bun run content-audit:validate -- --article-id 82862aca-27a6-4121-ba3f-6d53160d2e3c --summary --dry-run",
+    "valid": true,
+    "blockers": 0,
+    "warnings": [],
+    "checked_at": "2026-05-10T22:40:00+08:00"
+  },
+  "bundle_integrity_repair": "Updated article-metadata.json content_hash/original_content_hash and sync-state original_hash to match the checked local original.md hash before final diff/validate."
+}

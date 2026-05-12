@@ -1,0 +1,29 @@
+{
+  "question_id": "4485d7f8-0449-4ec1-bc66-0716e8261236",
+  "baseline_hash": "sha256:5e5d0c887b96c67c8b8e3c7962a0419da248131722ae82a0b0b5adf9536501c0",
+  "reason": "Batch 006 local source audit aligned linked question ALE-PRAC-LAW-013-007 to verified raw-source claims for lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights.",
+  "approved_by": "codex-local-source-audit-batch-006",
+  "approved_at": "2026-05-10T22:30:00+08:00",
+  "proposed": {
+    "code_citation": "RA 9266 IRR Sections 3(27), 3(32), 20(4), and 33",
+    "explanation": "Source-audited against RA 9266 IRR Sections 3(27), 3(32), 20(4), and 33; the answer turns on retained copyright ownership, original-project use, and written consent for repetition or other projects.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Architect C cannot claim ownership because the original project was never built"
+      },
+      {
+        "id": "b",
+        "text": "Architect C must prove actual intent to harm before Section 33 can apply"
+      },
+      {
+        "id": "c",
+        "text": "Architect C retains ownership unless a written stipulation provides otherwise, and unauthorized use for another project violates the written-consent rule"
+      },
+      {
+        "id": "d",
+        "text": "Architect C's rights expired after three years without construction"
+      }
+    ]
+  }
+}

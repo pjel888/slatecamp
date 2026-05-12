@@ -1,0 +1,131 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-055-local-first",
+  "batch_number": 55,
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T19:38:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "4f1312e7-61e8-4d33-8d49-48a5ec0a62ba",
+    "slug": "lea-theo-002-03-core-concept",
+    "title": "Axis is the most elementary means of organizing",
+    "article_folder": ".ai/content-audit-export/articles/lea-theo-002-03-core-concept--4f1312e7-61e8-4d33-8d49-48a5ec0a62ba",
+    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-03-core-concept--4f1312e7-61e8-4d33-8d49-48a5ec0a62ba",
+    "candidate_path": ".ai/content-audit-export/articles/lea-theo-002-03-core-concept--4f1312e7-61e8-4d33-8d49-48a5ec0a62ba/candidate.md",
+    "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-03-core-concept--4f1312e7-61e8-4d33-8d49-48a5ec0a62ba/candidate.md",
+    "question_edits_folder": ".ai/content-audit-export/articles/lea-theo-002-03-core-concept--4f1312e7-61e8-4d33-8d49-48a5ec0a62ba/question-edits",
+    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-03-core-concept--4f1312e7-61e8-4d33-8d49-48a5ec0a62ba/question-edits",
+    "normalized_sha256": "sha256:c172ead98d1fdc16acd3fe55d9d70c05deb36764d5493e31173acd6cd9d00ffd",
+    "candidate_sha256": "sha256:c172ead98d1fdc16acd3fe55d9d70c05deb36764d5493e31173acd6cd9d00ffd",
+    "linked_questions_sha256": "sha256:bdd590f5895482ff0f6f8e96b7512e3ddca2c25790e3473cbe00a70b74a3d16a",
+    "sources_sha256": "sha256:ccc9e4eb4a13843654685cf9957ad91c913e0ebe93b7fdc5e7e526a87fbd3407"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "refined_markdown_role": "locator_only",
+    "derivative_or_search_layer_as_primary": false,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": [],
+    "source_families_checked": [
+      {
+        "label": "Theory of Architecture Reviewer - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Theory of Architecture Reviewer.pdf",
+        "raw_pdf_sha256": "sha256:19bdef33f5fd4c0d1e95c735fa3b1f64c61d366eb8fe4d7e7b565a33e7cd17e5",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Theory of Architecture Reviewer.md",
+        "refined_markdown_sha256": "sha256:d02f9477115e6aa0329a3edcc5da5b6400c7bd07c67f8eff1fd6fda7756d42d7",
+        "locator": "Theory of Architecture Reviewer refined markdown line 8"
+      },
+      {
+        "label": "George Salvan Architectural Theories of Design - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "raw_pdf_sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
+        "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
+        "locator": "George Salvan Architectural Theories of Design refined markdown lines 675-685, 1176-1186, and 1298-1300"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "theory-of-architecture",
+    "contains_legal_or_code_claims": false,
+    "source_risk_tier": "medium",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 14,
+    "question_edits_created": [
+      "0708514a-804e-4c56-974e-b9ba6ec29988",
+      "71974f82-6286-4157-be28-87f294be77c9",
+      "4e842bd2-8b17-422f-8ecf-0422b985e60c",
+      "898a23aa-9dcb-4964-8a0b-f153e514f148",
+      "bac1692d-1df8-4ab7-b050-f6fce168372d",
+      "c1b4ec10-4b7e-4dae-8815-1cf51f1c1aa3",
+      "002b191c-258a-4e39-8673-c02739c03f18",
+      "010bdf61-5007-4060-b3a9-65529d7b1752",
+      "0bf4e821-f1da-44bd-ab75-6b710a09444f",
+      "b3c3b846-dfae-41f5-8b93-0e258ea42a42",
+      "1c2a7504-0c64-4cdf-a963-f45561d574d0",
+      "869c4e52-730c-480b-b162-ef0a8e76155a",
+      "47eb6517-9458-446f-8f0a-7538c38cf11e",
+      "6f3722df-2225-4691-bd3a-7fa3e5a56ce8"
+    ]
+  },
+  "checked_markdown_lines": [
+    "Theory of Architecture Reviewer refined markdown line 8",
+    "George Salvan Architectural Theories of Design refined markdown lines 675-685",
+    "George Salvan Architectural Theories of Design refined markdown lines 1176-1186",
+    "George Salvan Architectural Theories of Design refined markdown lines 1298-1300"
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-theo-002-03-core-concept-b055-claim-01",
+      "claim_text": "Axis is the most elementary means of organizing in Batch 055 is limited to checked local raw PDF source families and the refined markdown locators recorded for this article.",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Theory of Architecture Reviewer.pdf",
+        "quoted_pdf_excerpt": "Theory of Architecture Reviewer refined markdown line 8; George Salvan Architectural Theories of Design refined markdown lines 675-685, 1176-1186, and 1298-1300",
+        "source_ids": [
+          "theory-reviewer-local-raw-pdf--b055-4f1312e7-01",
+          "salvan-theory-local-raw-pdf--b055-4f1312e7-02"
+        ]
+      },
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-theo-002-03-core-concept-b055-claim-questions",
+      "claim_text": "Batch 055 question edits audited for lea-theo-002-03-core-concept: 0708514a-804e-4c56-974e-b9ba6ec29988, 71974f82-6286-4157-be28-87f294be77c9, 4e842bd2-8b17-422f-8ecf-0422b985e60c, 898a23aa-9dcb-4964-8a0b-f153e514f148, bac1692d-1df8-4ab7-b050-f6fce168372d, c1b4ec10-4b7e-4dae-8815-1cf51f1c1aa3, 002b191c-258a-4e39-8673-c02739c03f18, 010bdf61-5007-4060-b3a9-65529d7b1752, 0bf4e821-f1da-44bd-ab75-6b710a09444f, b3c3b846-dfae-41f5-8b93-0e258ea42a42, 1c2a7504-0c64-4cdf-a963-f45561d574d0, 869c4e52-730c-480b-b162-ef0a8e76155a, 47eb6517-9458-446f-8f0a-7538c38cf11e, 6f3722df-2225-4691-bd3a-7fa3e5a56ce8",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Theory of Architecture Reviewer.pdf",
+        "quoted_pdf_excerpt": "Theory of Architecture Reviewer refined markdown line 8; George Salvan Architectural Theories of Design refined markdown lines 675-685, 1176-1186, and 1298-1300",
+        "source_ids": [
+          "theory-reviewer-local-raw-pdf--b055-4f1312e7-01",
+          "salvan-theory-local-raw-pdf--b055-4f1312e7-02"
+        ]
+      },
+      "audit_result": "PASS"
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "local_first_only": true,
+    "supabase_write_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json"
+  },
+  "sme_review": {
+    "required": false,
+    "status": "not_required"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

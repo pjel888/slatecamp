@@ -1,0 +1,98 @@
+{
+  "question_id": "aef53a47-1122-49f6-a57f-202173f50fe4",
+  "baseline_hash": "sha256:44456dbda7e45990c3b83956d724143ac3dc1f4ddf125f48cd6c169608bb6ef5",
+  "action": "replace",
+  "reason": "source-audited-article-batch-029-local-first rewrote this linked question to source-safe local form for lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation.",
+  "approved_by": "codex-local-source-audit-batch-029",
+  "approved_at": "2026-05-11T16:20:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "df4b2a65-1d08-41b6-83c8-944df4d35938",
+    "parent_article_slug": "lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UAP Document 301 refined markdown lines 486-499; CIAP Document 102 refined markdown lines 171-177; Civil Code Article 1326 refined markdown line 166",
+    "checked_markdown_lines": [
+      "UAP Document 301 lines 486-499",
+      "CIAP Document 102 lines 171-177",
+      "RA 386 Civil Code line 166"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "source_id": "uap-document-301-general-conditions-local",
+        "locator": "UAP Document 301 refined markdown lines 486-499"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+        "source_id": "uap-document-301-general-conditions-local",
+        "locator": "UAP Document 301 refined markdown lines 486-499"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+        "sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+        "source_id": "ciap-document-102-private-construction-contract-local",
+        "locator": "CIAP Document 102 refined markdown lines 171-177"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+        "sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
+        "source_id": "ciap-document-102-private-construction-contract-local",
+        "locator": "CIAP Document 102 refined markdown lines 171-177"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code.pdf",
+        "sha256": "sha256:c3551f7d92abed808a64071fdf08832b1f27dc87375775416f52cbc25b4bcba5",
+        "source_id": "ra-386-civil-code-local",
+        "locator": "Civil Code Article 1326 refined markdown line 166"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-386/RA-386 Civil Code.md",
+        "sha256": "sha256:8215f8acdd208b9b2f4a981bdf6c7227acbfd26186dac703133b187fc6d96adf",
+        "source_id": "ra-386-civil-code-local",
+        "locator": "Civil Code Article 1326 refined markdown line 166"
+      }
+    ],
+    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+  },
+  "proposed": {
+    "text": "What is the safest exam move when a bid-award item mentions an unfamiliar procedure?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Anchor the answer to the exact named source before adding procedures not stated in that source"
+      },
+      {
+        "id": "b",
+        "text": "Assume lowest price always wins"
+      },
+      {
+        "id": "c",
+        "text": "Assume the architect unilaterally awards the contract"
+      },
+      {
+        "id": "d",
+        "text": "Use a fire-code section because bidding is procedural"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "Correct because it follows Civil Code Article 1326 line 166; UAP Document 301 lines 486-499. The other options change the document, party, timing, amount, or legal effect stated in the checked local source.",
+    "explanation": "Use Civil Code Article 1326 line 166; UAP Document 301 lines 486-499 for this Batch 029 source-safe replacement.",
+    "code_citation": "Civil Code Article 1326 line 166; UAP Document 301 lines 486-499",
+    "bloom_level": "understand",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "contracts",
+      "source-audited-article-batch-029-local-first"
+    ],
+    "difficulty": 0.58,
+    "is_assessment": false,
+    "model_id": "BATCH-029-lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation-010"
+  }
+}

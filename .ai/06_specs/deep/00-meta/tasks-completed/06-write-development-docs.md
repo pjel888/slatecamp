@@ -3,8 +3,8 @@
 
 # Task 06: Write Development Documentation
 
-**Status:** pending  
-**Created:** 2026-04-06  
+**Status:** pending
+**Created:** 2026-04-06
 **Objective:** Write all `04-development/` documents sourced from `package.json` and `CLAUDE.md`
 
 ---

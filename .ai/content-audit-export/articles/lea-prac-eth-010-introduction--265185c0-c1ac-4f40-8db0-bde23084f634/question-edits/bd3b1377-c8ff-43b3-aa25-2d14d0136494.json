@@ -1,0 +1,32 @@
+{
+  "question_id": "bd3b1377-c8ff-43b3-aa25-2d14d0136494",
+  "baseline_hash": "sha256:95908f30527868a797c09dc88bee442870df7118326d3159efe97be21975a6f7",
+  "reason": "Batch 003 source audit removed unsupported penalty ranges, restitution amounts, dollar values, and scenario statistics; questions now use RA 9266 IRR and UAP Code of Ethics conduct categories.",
+  "approved_by": "codex-local-source-audit-batch-003",
+  "approved_at": "2026-05-10T18:00:00+08:00",
+  "proposed": {
+    "text": "An architect certifies code compliance without the review needed to know whether the documents comply. Which source-backed conduct category is implicated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No violation if the deadline was tight"
+      },
+      {
+        "id": "b",
+        "text": "Purely a pricing dispute"
+      },
+      {
+        "id": "c",
+        "text": "Fraud/deceit, misrepresentation, gross negligence, or unprofessional conduct depending the facts"
+      },
+      {
+        "id": "d",
+        "text": "Automatic permanent revocation without hearing"
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": "RA 9266 IRR supplies disciplinary categories such as fraud or deceit, gross negligence, incompetence, and unprofessional or dishonorable conduct after due process.",
+    "explanation": "The edit removes unsupported PRBoA characterization wording and fixed outcomes.",
+    "code_citation": "RA 9266 IRR grounds for discipline"
+  }
+}

@@ -1,32 +1,79 @@
 {
   "article_id": "25607252-c20a-4013-99f5-af11e829fd18",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:0b2d2f0f1be9a6e055e6c852a3341bbff3a4d7ae118d97311b6f320e22265dd0",
-  "source_count": 2,
+  "source_count": 3,
   "sources": [
     {
-      "source_id": "804c4969-52d0-4a47-9f7d-657646ed0ef7",
+      "source_id": "vitruvius-ten-books-local-raw-pdf--b057-25607252-01",
       "article_id": "25607252-c20a-4013-99f5-af11e829fd18",
-      "label": "Vitruvius Pollio, Marcus. *Ten Books on Architecture*. Translated by Morris Hicky Morgan, Dover Publications, 1960. Wikipedia contributors. \"Firmness, commodity, and delight.\" *Wikipedia",
+      "label": "Vitruvius - 10 Books of Architecture - local raw PDF",
       "url": null,
-      "source_type": "reference_standard",
-      "description": "The Free Encyclopedia*, https://en.wikipedia.org/wiki/Firmness,_commodity,_and_delight",
-      "is_verified": false,
+      "source_type": "local_raw_pdf",
+      "description": "Vitruvius - 10 Books of Architecture - local raw PDF; local raw PDF checked first; refined markdown used only as locator. Vitruvius - 10 Books of Architecture refined markdown line 617.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
+      "created_at": "2026-05-11T20:10:30.000+08:00",
+      "updated_at": "2026-05-11T20:10:30.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Vitruvius - 10 Books of Architecture.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/002-History/Vitruvius - 10 Books of Architecture.pdf",
+      "raw_pdf_sha256": "sha256:e63f78260563ae36c5f1f85a07371df3d5740dfb13f5fc77453d88632238e020",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Vitruvius - 10 Books of Architecture.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Vitruvius - 10 Books of Architecture.md",
+      "refined_markdown_sha256": "sha256:07eaf55d56357483d264d765f1bf3565aa0c839916def1edd6a17f125980ec75",
+      "source_locator": "Vitruvius - 10 Books of Architecture refined markdown line 617",
+      "checked_markdown_lines": [
+        "Vitruvius - 10 Books of Architecture refined markdown line 617"
+      ],
+      "local_audit_note": "Primary truth is the local raw PDF family; refined markdown line ranges are locator aids for the checked claims."
     },
     {
-      "source_id": "6a3cbdb9-8628-4985-ac1e-af9e0e8dd5a7",
+      "source_id": "theory-local-raw-pdf--b057-25607252-02",
       "article_id": "25607252-c20a-4013-99f5-af11e829fd18",
-      "label": "Ching, Francis D. K. *Architecture: Form, Space, and Order*. 3rd ed., John Wiley & Sons, 2007. Rethinking the Future. \"Timeless Principles of Architecture.\" *Dougvos*",
+      "label": "theory - local raw PDF",
       "url": null,
-      "source_type": "reference_standard",
-      "description": "https://dougvos.com/timeless-principles-of-architecture/",
-      "is_verified": false,
+      "source_type": "local_raw_pdf",
+      "description": "theory - local raw PDF; local raw PDF checked first; refined markdown used only as locator. theory refined markdown lines 231 and 268-279.",
+      "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:02.045686+00:00",
-      "updated_at": "2026-03-24T04:34:02.045686+00:00"
+      "created_at": "2026-05-11T20:10:30.000+08:00",
+      "updated_at": "2026-05-11T20:10:30.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+      "raw_pdf_sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+      "refined_markdown_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+      "source_locator": "theory refined markdown lines 231 and 268-279",
+      "checked_markdown_lines": [
+        "theory refined markdown line 231",
+        "theory refined markdown lines 268-279"
+      ],
+      "local_audit_note": "Primary truth is the local raw PDF family; refined markdown line ranges are locator aids for the checked claims."
+    },
+    {
+      "source_id": "salvan-theory-local-raw-pdf--b057-25607252-03",
+      "article_id": "25607252-c20a-4013-99f5-af11e829fd18",
+      "label": "George Salvan Architectural Theories of Design - local raw PDF",
+      "url": null,
+      "source_type": "local_raw_pdf",
+      "description": "George Salvan Architectural Theories of Design - local raw PDF; local raw PDF checked first; refined markdown used only as locator. George Salvan Architectural Theories of Design refined markdown lines 195-204 and 4958.",
+      "is_verified": true,
+      "sort_order": 2,
+      "created_at": "2026-05-11T20:10:30.000+08:00",
+      "updated_at": "2026-05-11T20:10:30.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+      "raw_pdf_sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
+      "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
+      "source_locator": "George Salvan Architectural Theories of Design refined markdown lines 195-204 and 4958",
+      "checked_markdown_lines": [
+        "George Salvan Architectural Theories of Design refined markdown lines 195-204",
+        "George Salvan Architectural Theories of Design refined markdown line 4958"
+      ],
+      "local_audit_note": "Primary truth is the local raw PDF family; refined markdown line ranges are locator aids for the checked claims."
     }
-  ]
+  ],
+  "sources_hash": "sha256:e8defeb0bcee8470086fe268e6613d03ece0cfb17f7aa16075a685a6940ebb78"
 }

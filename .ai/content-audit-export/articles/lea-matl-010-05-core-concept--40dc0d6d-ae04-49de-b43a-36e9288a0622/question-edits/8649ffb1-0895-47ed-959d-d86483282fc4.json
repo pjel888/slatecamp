@@ -1,0 +1,59 @@
+{
+  "question_id": "8649ffb1-0895-47ed-959d-d86483282fc4",
+  "baseline_hash": "sha256:9ec41b8897879b38d7f26a9a5b51bc273abccd37b37579506c185c6d3f4df8f6",
+  "action": "replace",
+  "reason": "source-audited-article-batch-081-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-010-05-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-081",
+  "approved_at": "2026-05-12T04:40:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "40dc0d6d-ae04-49de-b43a-36e9288a0622",
+    "parent_article_slug": "lea-matl-010-05-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Fajardo Architectural Cost Estimates refined markdown lines 19612-20382; raw PDF pages 153-154 checked by local PyMuPDF extraction",
+    "checked_markdown_lines": [
+      "Fajardo Architectural Cost Estimates refined markdown lines 19612-20382; raw PDF pages 153-154 checked by local PyMuPDF extraction"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "fajardo-cost-estimates-b081",
+        "label": "Architectural Cost Estimates By Max Fajardo",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+        "sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+        "raw_markdown_sha256": "sha256:223efdc2dd963208910027eba08fe87b4919de1a04b76cac095bbd76a7a9a962",
+        "locator": "Fajardo Architectural Cost Estimates refined markdown lines 19612-20382; raw PDF pages 153-154 checked by local PyMuPDF extraction"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 081 local raw-source-audited paint-estimating scope."
+  },
+  "proposed": {
+    "text": "A base paint quantity is 12 gallons and the problem requires 10 percent waste. What final quantity should be used?",
+    "options": [
+      {
+        "id": "a",
+        "text": "13.2 gallons"
+      },
+      {
+        "id": "b",
+        "text": "10.8 gallons"
+      },
+      {
+        "id": "c",
+        "text": "12.1 gallons"
+      },
+      {
+        "id": "d",
+        "text": "22 gallons"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Apply the waste factor after the base quantity: 12 x 1.10 = 13.2 gallons.",
+    "explanation": "Apply the waste factor after the base quantity: 12 x 1.10 = 13.2 gallons.",
+    "code_citation": "Architectural Cost Estimates By Max Fajardo",
+    "bloom_level": "remember",
+    "application_context": "source_audited_local_first_batch_081",
+    "practice_context": [],
+    "difficulty": 0.5
+  }
+}

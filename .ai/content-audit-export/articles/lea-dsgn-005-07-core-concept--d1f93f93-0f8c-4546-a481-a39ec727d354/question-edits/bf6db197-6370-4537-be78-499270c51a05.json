@@ -1,0 +1,107 @@
+{
+  "question_id": "bf6db197-6370-4537-be78-499270c51a05",
+  "baseline_hash": "sha256:409ce5479c0312d620af17cd1b30884f269bb04901dfa755e0e9fc05d7bf50f5",
+  "action": "replace",
+  "reason": "source-audited-article-batch-064-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes prior off-scope framing where present.",
+  "approved_by": "codex-local-first-batch-064",
+  "approved_at": "2026-05-11T22:32:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "d1f93f93-0f8c-4546-a481-a39ec727d354",
+    "parent_article_slug": "lea-dsgn-005-07-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1141, 1171-1176, 1193-1218, and 1259-1272; raw PDF pages 47, 53, 57-59, and 70 checked for matching occupancy text; RA 9514 RIRR refined markdown lines 2520-2554, 2646-2728, 3978-4210, 4273-4715, and 4750-4925; raw PDF pages 91, 134-139, 148-149, and 153-158 checked for matching text; PD 9514 Fire Code refined markdown lines 1599-1629; raw PDF pages 57-58 checked for matching life-safety text",
+    "checked_markdown_lines": [
+      "PD 1096 RIRR DPWH Official refined markdown lines 1088-1141",
+      "PD 1096 RIRR DPWH Official refined markdown lines 1171-1176",
+      "PD 1096 RIRR DPWH Official refined markdown lines 1193-1218",
+      "PD 1096 RIRR DPWH Official refined markdown lines 1259-1272",
+      "RA 9514 RIRR refined markdown lines 2520-2554",
+      "RA 9514 RIRR refined markdown lines 2646-2728",
+      "RA 9514 RIRR refined markdown lines 3978-4210",
+      "RA 9514 RIRR refined markdown lines 4273-4715",
+      "RA 9514 RIRR refined markdown lines 4750-4925",
+      "PD 9514 Fire Code refined markdown lines 1599-1629"
+    ],
+    "checked_raw_pdf_pages": [
+      "PD 1096 RIRR DPWH Official raw PDF page 47",
+      "PD 1096 RIRR DPWH Official raw PDF page 53",
+      "PD 1096 RIRR DPWH Official raw PDF pages 57-59",
+      "PD 1096 RIRR DPWH Official raw PDF page 70",
+      "RA 9514 RIRR raw PDF page 91",
+      "RA 9514 RIRR raw PDF pages 134-139",
+      "RA 9514 RIRR raw PDF pages 148-149",
+      "RA 9514 RIRR raw PDF pages 153-158",
+      "PD 9514 Fire Code raw PDF pages 57-58"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "pd1096-rirr-2004-occupancy-public-service-local-b064",
+        "label": "PD 1096 RIRR 2004 - occupancy classification for public-service, health, day-care, and assembly uses",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1141, 1171-1176, 1193-1218, and 1259-1272; raw PDF pages 47, 53, 57-59, and 70 checked for matching occupancy text"
+      },
+      {
+        "source_id": "ra9514-rirr-2019-health-daycare-assembly-egress-local-b064",
+        "label": "RA 9514 Revised IRR 2019 - health care, day care, assembly, means of egress, and life-safety rules",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "locator": "RA 9514 RIRR refined markdown lines 2520-2554, 2646-2728, 3978-4210, 4273-4715, and 4750-4925; raw PDF pages 91, 134-139, 148-149, and 153-158 checked for matching text"
+      },
+      {
+        "source_id": "pd9514-fire-code-life-safety-local-b064",
+        "label": "Fire Code source family - general life-safety and egress requirements",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf",
+        "sha256": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-9514/PD 9514 - Fire Code of the Philippines.md",
+        "refined_markdown_sha256": "sha256:5eb0584f1bcbfa87044e28f2e59a75c6364c7160a98edfdd888c6aef849b01b2",
+        "locator": "PD 9514 Fire Code refined markdown lines 1599-1629; raw PDF pages 57-58 checked for matching life-safety text"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, and citation rewritten to the Batch 064 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "Which day care travel-distance statement is source-safe under RA 9514?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A room door to an exit is limited to 15 m unless the sprinkler increase applies."
+      },
+      {
+        "id": "b",
+        "text": "A room door to an exit is always unlimited."
+      },
+      {
+        "id": "c",
+        "text": "Only stage travel distance matters."
+      },
+      {
+        "id": "d",
+        "text": "Travel distance is not measured in day care."
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "RA 9514 limits travel between any room door intended as exit access and an exit to 15 m, with a 15 m increase permitted for fully sprinklered buildings.",
+    "explanation": "RA 9514 limits travel between any room door intended as exit access and an exit to 15 m, with a 15 m increase permitted for fully sprinklered buildings.",
+    "code_citation": "RA 9514 refined markdown lines 4555-4565",
+    "bloom_level": "understand",
+    "application_context": "code_interpretation",
+    "practice_context": [
+      "occupancy classification",
+      "fire code review"
+    ],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false
+  }
+}

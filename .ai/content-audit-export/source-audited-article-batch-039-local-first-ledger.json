@@ -1,0 +1,253 @@
+{
+  "batch_id": "source-audited-article-batch-039-local-first",
+  "batch_number": "039",
+  "generated_at": "2026-05-11T05:56:19.011Z",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "local_only": true,
+  "inherited_blocker_status": "Batch 038 blockers=0",
+  "selection_rule": "Next five high-value PD 1096 RIRR code clusters with linked questions and local raw PDF availability, excluding Batch 001-038 recorded IDs.",
+  "articles": [
+    {
+      "article_id": "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+      "slug": "vent-shafts-and-ventilation",
+      "title": "Vent Shafts and Ventilation",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/vent-shafts-and-ventilation--4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/vent-shafts-and-ventilation--4aa53e66-6e93-44c1-804b-59f5e19bfda6/question-edits",
+      "exact_improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/vent-shafts-and-ventilation--4aa53e66-6e93-44c1-804b-59f5e19bfda6/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/vent-shafts-and-ventilation--4aa53e66-6e93-44c1-804b-59f5e19bfda6/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/vent-shafts-and-ventilation--4aa53e66-6e93-44c1-804b-59f5e19bfda6/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/vent-shafts-and-ventilation--4aa53e66-6e93-44c1-804b-59f5e19bfda6/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/vent-shafts-and-ventilation--4aa53e66-6e93-44c1-804b-59f5e19bfda6/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/vent-shafts-and-ventilation--4aa53e66-6e93-44c1-804b-59f5e19bfda6/ui-blocks.json"
+      ],
+      "linked_questions": 33,
+      "question_edits": 33,
+      "source_rows": 1,
+      "candidate_hash": "sha256:21efde4dba90940ee9967194b30b2082296e4494eeb6d9e7a27108bd6cb40b5e",
+      "normalized_hash": "sha256:21efde4dba90940ee9967194b30b2082296e4494eeb6d9e7a27108bd6cb40b5e",
+      "compose": "PASS",
+      "diff": "PASS",
+      "validate": "PASS",
+      "ui_block_validation": "PASS",
+      "source_audit": "PASS",
+      "raw_sources": [
+        {
+          "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "checked_markdown_lines": [
+            "PD 1096 RIRR refined markdown lines 2396-2428"
+          ]
+        }
+      ],
+      "metadata_content_hash_note": "Local export metadata content_hash/original_content_hash was aligned to the current original.md hash; normalized/candidate hashes and ui-blocks normalized_content_hash were aligned to the local-first repair."
+    },
+    {
+      "article_id": "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+      "slug": "stages-and-platforms",
+      "title": "Stages and Platforms",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/stages-and-platforms--1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/stages-and-platforms--1a46c0de-3c18-45bc-874e-6dce4f13f5fe/question-edits",
+      "exact_improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/stages-and-platforms--1a46c0de-3c18-45bc-874e-6dce4f13f5fe/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/stages-and-platforms--1a46c0de-3c18-45bc-874e-6dce4f13f5fe/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/stages-and-platforms--1a46c0de-3c18-45bc-874e-6dce4f13f5fe/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/stages-and-platforms--1a46c0de-3c18-45bc-874e-6dce4f13f5fe/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/stages-and-platforms--1a46c0de-3c18-45bc-874e-6dce4f13f5fe/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/stages-and-platforms--1a46c0de-3c18-45bc-874e-6dce4f13f5fe/ui-blocks.json"
+      ],
+      "linked_questions": 31,
+      "question_edits": 31,
+      "source_rows": 1,
+      "candidate_hash": "sha256:a847c4c2f0f08362ff4de249ce1c8996bf1451f94d24a9f9cf4a4fa9045cdf0b",
+      "normalized_hash": "sha256:a847c4c2f0f08362ff4de249ce1c8996bf1451f94d24a9f9cf4a4fa9045cdf0b",
+      "compose": "PASS",
+      "diff": "PASS",
+      "validate": "PASS",
+      "ui_block_validation": "PASS",
+      "source_audit": "PASS",
+      "raw_sources": [
+        {
+          "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "checked_markdown_lines": [
+            "PD 1096 RIRR refined markdown lines 3946-3997"
+          ]
+        }
+      ],
+      "metadata_content_hash_note": "Local export metadata content_hash/original_content_hash was aligned to the current original.md hash; normalized/candidate hashes and ui-blocks normalized_content_hash were aligned to the local-first repair."
+    },
+    {
+      "article_id": "5a5eaf39-d265-427e-90dc-40bfeb763baf",
+      "slug": "storage-of-x-ray-films",
+      "title": "Storage of X-Ray Films",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/storage-of-x-ray-films--5a5eaf39-d265-427e-90dc-40bfeb763baf",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/storage-of-x-ray-films--5a5eaf39-d265-427e-90dc-40bfeb763baf/question-edits",
+      "exact_improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/storage-of-x-ray-films--5a5eaf39-d265-427e-90dc-40bfeb763baf/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/storage-of-x-ray-films--5a5eaf39-d265-427e-90dc-40bfeb763baf/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/storage-of-x-ray-films--5a5eaf39-d265-427e-90dc-40bfeb763baf/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/storage-of-x-ray-films--5a5eaf39-d265-427e-90dc-40bfeb763baf/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/storage-of-x-ray-films--5a5eaf39-d265-427e-90dc-40bfeb763baf/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/storage-of-x-ray-films--5a5eaf39-d265-427e-90dc-40bfeb763baf/ui-blocks.json"
+      ],
+      "linked_questions": 31,
+      "question_edits": 31,
+      "source_rows": 1,
+      "candidate_hash": "sha256:6bb298f5681d596714b1a2fdd505573be78ec83dd14d6397dcab904e8c3589e1",
+      "normalized_hash": "sha256:6bb298f5681d596714b1a2fdd505573be78ec83dd14d6397dcab904e8c3589e1",
+      "compose": "PASS",
+      "diff": "PASS",
+      "validate": "PASS",
+      "ui_block_validation": "PASS",
+      "source_audit": "PASS",
+      "raw_sources": [
+        {
+          "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "checked_markdown_lines": [
+            "PD 1096 RIRR refined markdown lines 4306-4329"
+          ]
+        }
+      ],
+      "metadata_content_hash_note": "Local export metadata content_hash/original_content_hash was aligned to the current original.md hash; normalized/candidate hashes and ui-blocks normalized_content_hash were aligned to the local-first repair."
+    },
+    {
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "slug": "allowable-floor-area-increases",
+      "title": "Allowable Floor Area Increases",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c/question-edits",
+      "exact_improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c/ui-blocks.json"
+      ],
+      "linked_questions": 28,
+      "question_edits": 28,
+      "source_rows": 1,
+      "candidate_hash": "sha256:607ae35ebe9eaf2b8ad8c9272ccecca504da7ec78b99660c0aa2857ccd94708a",
+      "normalized_hash": "sha256:607ae35ebe9eaf2b8ad8c9272ccecca504da7ec78b99660c0aa2857ccd94708a",
+      "compose": "PASS",
+      "diff": "PASS",
+      "validate": "PASS",
+      "ui_block_validation": "PASS",
+      "source_audit": "PASS",
+      "raw_sources": [
+        {
+          "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "checked_markdown_lines": [
+            "PD 1096 RIRR refined markdown lines 1390-1450",
+            "PD 1096 RIRR refined markdown lines 1452-1462"
+          ]
+        }
+      ],
+      "metadata_content_hash_note": "Local export metadata content_hash/original_content_hash was aligned to the current original.md hash; normalized/candidate hashes and ui-blocks normalized_content_hash were aligned to the local-first repair."
+    },
+    {
+      "article_id": "aeeecbe3-e245-4e6e-ba54-8dc7f65bcfca",
+      "slug": "electrical-and-mechanical-regulations",
+      "title": "Electrical and Mechanical Regulations",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/electrical-and-mechanical-regulations--aeeecbe3-e245-4e6e-ba54-8dc7f65bcfca",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/electrical-and-mechanical-regulations--aeeecbe3-e245-4e6e-ba54-8dc7f65bcfca/question-edits",
+      "exact_improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/electrical-and-mechanical-regulations--aeeecbe3-e245-4e6e-ba54-8dc7f65bcfca/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/electrical-and-mechanical-regulations--aeeecbe3-e245-4e6e-ba54-8dc7f65bcfca/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/electrical-and-mechanical-regulations--aeeecbe3-e245-4e6e-ba54-8dc7f65bcfca/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/electrical-and-mechanical-regulations--aeeecbe3-e245-4e6e-ba54-8dc7f65bcfca/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/electrical-and-mechanical-regulations--aeeecbe3-e245-4e6e-ba54-8dc7f65bcfca/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/electrical-and-mechanical-regulations--aeeecbe3-e245-4e6e-ba54-8dc7f65bcfca/ui-blocks.json"
+      ],
+      "linked_questions": 22,
+      "question_edits": 22,
+      "source_rows": 1,
+      "candidate_hash": "sha256:56b9c7bc7808da41ab76263785baad19e19d30dcd92c0b91d536bf80864c74b8",
+      "normalized_hash": "sha256:56b9c7bc7808da41ab76263785baad19e19d30dcd92c0b91d536bf80864c74b8",
+      "compose": "PASS",
+      "diff": "PASS",
+      "validate": "PASS",
+      "ui_block_validation": "PASS",
+      "source_audit": "PASS",
+      "raw_sources": [
+        {
+          "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "checked_markdown_lines": [
+            "PD 1096 RIRR refined markdown lines 4007-4064",
+            "PD 1096 RIRR refined markdown lines 4109-4303"
+          ]
+        }
+      ],
+      "metadata_content_hash_note": "Local export metadata content_hash/original_content_hash was aligned to the current original.md hash; normalized/candidate hashes and ui-blocks normalized_content_hash were aligned to the local-first repair."
+    }
+  ],
+  "counts": {
+    "selected_articles": 5,
+    "linked_questions": 145,
+    "question_edits": 145,
+    "source_rows": 5,
+    "unique_raw_pdfs": 1,
+    "json_parse": 200,
+    "source_hash_checks": 10,
+    "marker_matches": 0,
+    "stale_compose_error_files": 0,
+    "targeted_tests_passed": 34
+  },
+  "validation": {
+    "compose": "PASS 5/5",
+    "diff": "PASS 5/5",
+    "validate": "PASS 5/5",
+    "ui_block_edit_validation": "PASS 5/5",
+    "scoped_json_parse": "PASS 200 JSON files",
+    "marker_internal_source_gap_scan": "PASS 0 matches",
+    "source_hash_checks": "PASS 10/10",
+    "question_edit_count_checks": "PASS 145/145",
+    "stale_compose_error_checks": "PASS 0 stale files",
+    "targeted_content_audit_tests": "PASS 34/34",
+    "scoped_git_diff_check": "PASS"
+  },
+  "source_evidence": {
+    "raw_pdf_family": "PD 1096 2004 Revised IRR - DPWH Official",
+    "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+    "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+    "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+    "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+    "checked_locator_families": [
+      "Rule VII allowable floor areas and floor area increases lines 1390-1450 and 1452-1462",
+      "Rule VIII vent shafts, ventilation skylights, and artificial ventilation lines 2396-2428",
+      "Rule XII stages, platforms, and projection rooms lines 3946-3997",
+      "Rule XIII electrical and mechanical regulations lines 4007-4064 and 4109-4303",
+      "Rule XIV photographic and x-ray films lines 4306-4329"
+    ]
+  },
+  "blockers": [],
+  "supabase_push": "not_attempted_local_first_only",
+  "deploy": "not_attempted",
+  "commit": "not_attempted",
+  "artifacts": {
+    "ledger": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-039-local-first-ledger.json",
+    "report": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-039-local-first-report.md",
+    "scoped_checks": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-039-local-first-scoped-checks.json",
+    "handoff": "/Users/philiplewis/slatecamp/.ai/03_plans/source-audited-local-first-batches-handoff.md"
+  },
+  "next_batch_readiness": "READY_FOR_BATCH_040_SELECTION"
+}

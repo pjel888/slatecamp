@@ -1,0 +1,226 @@
+{
+  "schema_version": "source-audit-evidence-v1-local-first",
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-042-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T15:15:23.383+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "3c69e570-a75c-4168-ad09-914e2c1062f9",
+    "slug": "public-service-counters-and-atms",
+    "title": "Public Service Counters and ATMs",
+    "article_folder": ".ai/content-audit-export/articles/public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9",
+    "candidate_path": ".ai/content-audit-export/articles/public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9/candidate.md",
+    "candidate_sha256": "sha256:78fdfa5ca494d36a6470f805b62221533a28de4ade917113c3d66d1b8627667f",
+    "normalized_sha256": "sha256:78fdfa5ca494d36a6470f805b62221533a28de4ade917113c3d66d1b8627667f",
+    "linked_questions_sha256": "sha256:75c26a3217dbfe6e8be9b6f8a4bd8a8786a3865301f8436b7a4842509afba30e",
+    "sources_sha256": "sha256:b38a58a64f7f93663ef56113fcd515d6ac9430cf053416c4219261b0e6049152"
+  },
+  "classification": {
+    "content_domain": "LEA Accessibility - public service counters and ATMs",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high_value_accessibility_code",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 19,
+    "question_edits_created": [
+      "e78040d1-3c4d-4446-a7c2-c8d5072d0849",
+      "cc0b0eca-6e40-40d8-8098-ab14a87d29c8",
+      "8dbb0e4d-b4c8-4c83-b242-a5cea1888beb",
+      "9f3121c7-8a62-494f-82f6-8fdda8d2627d",
+      "5f8f2841-06ab-4def-8d12-963170e922fa",
+      "ae3c5292-a81f-418d-a8f7-67d8043e36f7",
+      "8716ef14-6d97-4f7b-8b7d-285914e03193",
+      "2460e58f-257d-4c2c-922e-b494ea64364e",
+      "8d860ef2-c1a4-4350-8183-a7ad364f596b",
+      "4827f559-7b14-4fb0-9282-e781d4880000",
+      "24cfa28a-84e8-4955-ab84-6c2477d5c332",
+      "fbf208c5-7caf-4a61-a214-a9c10ce9be09",
+      "7bead9ef-3cfc-4d92-811e-9159aba5bd8c",
+      "afa12d5f-9bc3-4879-bfd6-17a4ababa350",
+      "c84ad42e-ac0e-4418-af75-7a93aea19047",
+      "77e5ee93-628f-483e-a495-947acc069e48",
+      "06d18bbd-744c-4363-af2e-5f77a4f96cc8",
+      "098fa62c-1fcf-40e3-b3d5-3a858c4178e9",
+      "ae03fa30-5675-4c8a-983f-15fe2ae5c505"
+    ]
+  },
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9/question-edits/e78040d1-3c4d-4446-a7c2-c8d5072d0849.json",
+      ".ai/content-audit-export/articles/public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9/question-edits/cc0b0eca-6e40-40d8-8098-ab14a87d29c8.json",
+      ".ai/content-audit-export/articles/public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9/question-edits/8dbb0e4d-b4c8-4c83-b242-a5cea1888beb.json",
+      ".ai/content-audit-export/articles/public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9/question-edits/9f3121c7-8a62-494f-82f6-8fdda8d2627d.json",
+      ".ai/content-audit-export/articles/public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9/question-edits/5f8f2841-06ab-4def-8d12-963170e922fa.json",
+      ".ai/content-audit-export/articles/public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9/question-edits/ae3c5292-a81f-418d-a8f7-67d8043e36f7.json",
+      ".ai/content-audit-export/articles/public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9/question-edits/8716ef14-6d97-4f7b-8b7d-285914e03193.json",
+      ".ai/content-audit-export/articles/public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9/question-edits/2460e58f-257d-4c2c-922e-b494ea64364e.json",
+      ".ai/content-audit-export/articles/public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9/question-edits/8d860ef2-c1a4-4350-8183-a7ad364f596b.json",
+      ".ai/content-audit-export/articles/public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9/question-edits/4827f559-7b14-4fb0-9282-e781d4880000.json",
+      ".ai/content-audit-export/articles/public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9/question-edits/24cfa28a-84e8-4955-ab84-6c2477d5c332.json",
+      ".ai/content-audit-export/articles/public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9/question-edits/fbf208c5-7caf-4a61-a214-a9c10ce9be09.json",
+      ".ai/content-audit-export/articles/public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9/question-edits/7bead9ef-3cfc-4d92-811e-9159aba5bd8c.json",
+      ".ai/content-audit-export/articles/public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9/question-edits/afa12d5f-9bc3-4879-bfd6-17a4ababa350.json",
+      ".ai/content-audit-export/articles/public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9/question-edits/c84ad42e-ac0e-4418-af75-7a93aea19047.json",
+      ".ai/content-audit-export/articles/public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9/question-edits/77e5ee93-628f-483e-a495-947acc069e48.json",
+      ".ai/content-audit-export/articles/public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9/question-edits/06d18bbd-744c-4363-af2e-5f77a4f96cc8.json",
+      ".ai/content-audit-export/articles/public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9/question-edits/098fa62c-1fcf-40e3-b3d5-3a858c4178e9.json",
+      ".ai/content-audit-export/articles/public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9/question-edits/ae03fa30-5675-4c8a-983f-15fe2ae5c505.json"
+    ]
+  },
+  "raw_sources": [
+    {
+      "source_id": "bp-344-2024-rirr-ncda-local",
+      "label": "BP 344 2024 Revised IRR - NCDA local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "source_locator": "BP 344 2024 IRR refined markdown lines 395-446; BP 344 2024 IRR refined markdown lines 529-529; BP 344 2024 IRR refined markdown lines 1100-1173; BP 344 2024 IRR refined markdown lines 1200-1200; BP 344 2024 IRR refined markdown lines 1550-1550",
+      "checked_markdown_lines": [
+        "BP 344 2024 IRR refined markdown lines 395-446",
+        "BP 344 2024 IRR refined markdown lines 529-529",
+        "BP 344 2024 IRR refined markdown lines 1100-1173",
+        "BP 344 2024 IRR refined markdown lines 1200-1200",
+        "BP 344 2024 IRR refined markdown lines 1550-1550"
+      ]
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "bp-344-2024-rirr-ncda-local",
+      "label": "BP 344 2024 Revised IRR - NCDA local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "source_locator": "BP 344 2024 IRR refined markdown lines 395-446; BP 344 2024 IRR refined markdown lines 529-529; BP 344 2024 IRR refined markdown lines 1100-1173; BP 344 2024 IRR refined markdown lines 1200-1200; BP 344 2024 IRR refined markdown lines 1550-1550",
+      "checked_markdown_lines": [
+        "BP 344 2024 IRR refined markdown lines 395-446",
+        "BP 344 2024 IRR refined markdown lines 529-529",
+        "BP 344 2024 IRR refined markdown lines 1100-1173",
+        "BP 344 2024 IRR refined markdown lines 1200-1200",
+        "BP 344 2024 IRR refined markdown lines 1550-1550"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "b042-counter-01",
+      "claim_text": "ATMs require 1800 mm by 1800 mm clear unobstructed space in front.",
+      "claim_type": "accessibility_or_building_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - NCDA local raw PDF",
+        "locator": "BP 344 refined markdown lines 1105-1107",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "minimum clear unobstructed space of 1800 mm x 1800 mm in front of ATMs"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b042-counter-02",
+      "claim_text": "Kiosks, ATMs, and ticket machines need 750 mm counters with about 480 mm under-counter depth.",
+      "claim_type": "accessibility_or_building_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - NCDA local raw PDF",
+        "locator": "BP 344 refined markdown lines 1119-1123",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "counters at height of 750 mm; minimum depth of about 480 mm"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b042-counter-03",
+      "claim_text": "Two-level counters have 750 mm lower level, 950 to 1100 mm higher level, 700 mm legroom, 480 mm depth, 1500 mm by 1500 mm approach area, and 900 mm width.",
+      "claim_type": "accessibility_or_building_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - NCDA local raw PDF",
+        "locator": "BP 344 refined markdown lines 1149-1157",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "lower level 750 mm; higher level 950 mm-1100 mm; legroom 700 mm; counter depth 480 mm; clear floor area 1500 x 1500 mm; at least 900 mm wide"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b042-counter-04",
+      "claim_text": "Hearing enhancement systems are provided at customer service and ticket counters and information desks.",
+      "claim_type": "accessibility_or_building_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - NCDA local raw PDF",
+        "locator": "BP 344 refined markdown lines 1161-1161",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "Hearing Enhancement Systems shall be provided at all customer service and ticket counters, information desks, and alike"
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [
+    "Unchecked derivative-only accessibility dimensions and non-local rule claims were excluded from the Batch 042 repaired content and question edits."
+  ],
+  "removed_or_rewritten_material": [
+    "Removed exported UI-block marker tokens from normalized article content where present.",
+    "Rewrote linked question files to stay inside checked BP 344 and PD 1096 evidence."
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdf_first": true,
+    "derivative_layers_used_only_as_locators": true,
+    "checked_raw_pdf_families": [
+      "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf"
+    ]
+  },
+  "gate_results": {
+    "source_audit": "PASS",
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_validation": "PASS",
+    "question_edit_count_check": "PASS",
+    "scoped_json_parse": "PASS",
+    "marker_scan": "PASS",
+    "source_hash_check": "PASS",
+    "stale_compose_error_check": "PASS"
+  },
+  "source_safe_repair": {
+    "status": "COMPLETE_LOCAL_VALIDATED",
+    "article_normalized_rewritten": true,
+    "sources_json_updated": true,
+    "source_audit_evidence_updated": true,
+    "question_edits_created": 19,
+    "blockers": []
+  },
+  "local_validation": {
+    "status": "PASS_LOCAL_VALIDATION",
+    "validated_at": "2026-05-11T15:15:23.383+08:00",
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_validation": "PASS",
+    "scoped_checks": "PASS",
+    "blockers": []
+  },
+  "sme_review": {
+    "required_before_supabase_publish": true,
+    "completed": false
+  },
+  "overall": {
+    "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+    "blockers": []
+  }
+}

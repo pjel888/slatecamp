@@ -28,7 +28,7 @@ Three interactive tools, housed under a tools hub page:
 - **Inputs:** Room length (m), room width (m), tile size (dropdown: 300×300, 400×400, 600×600, custom), grout width (mm)
 - **Future 3D:** React Three Fiber plane with tiled texture, camera orbit
 
-### Tool 2: Wall Paint Calculator  
+### Tool 2: Wall Paint Calculator
 - **What it does:** User inputs wall dimensions and openings → calculates paintable area, number of cans needed, and estimated cost
 - **ALE relevance:** Estimating — paint quantity takeoff, understanding coverage rates
 - **Inputs:** Wall height (m), wall width (m), number of doors (standard 0.90×2.10m), number of windows (standard 1.20×1.20m), paint coats (1-3), paint coverage rate (m²/L)
@@ -46,7 +46,7 @@ Three interactive tools, housed under a tools hub page:
 ```
 /tools                          → Hub index page (hero + tool cards grid)
 /tools/floor-tiles-calculator   → Tool 1
-/tools/wall-paint-calculator    → Tool 2  
+/tools/wall-paint-calculator    → Tool 2
 /tools/lot-plotter              → Tool 3
 ```
 
@@ -79,7 +79,7 @@ Define strict interfaces for each tool's data model. These interfaces will event
 
 export interface FloorTilesInput {
   roomLength: number      // meters
-  roomWidth: number       // meters  
+  roomWidth: number       // meters
   tileSize: number        // mm (side length, square tiles)
   groutWidth: number      // mm
 }

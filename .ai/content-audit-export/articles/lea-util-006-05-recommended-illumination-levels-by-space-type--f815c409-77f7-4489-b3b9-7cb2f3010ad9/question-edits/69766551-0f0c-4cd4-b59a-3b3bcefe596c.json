@@ -1,0 +1,66 @@
+{
+  "question_id": "69766551-0f0c-4cd4-b59a-3b3bcefe596c",
+  "baseline_hash": "sha256:5598e9621a18832979792cc5f00622fefae25fb6a9f4dcaf1e902bbed62e5a6b",
+  "action": "replace",
+  "reason": "source-audited-article-batch-047-local-first: local raw-source-backed replacement constrained to checked Batch 047 source families.",
+  "approved_by": "codex-local-first-batch-047",
+  "approved_at": "2026-05-11T18:48:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "f815c409-77f7-4489-b3b9-7cb2f3010ad9",
+    "parent_article_slug": "lea-util-006-05-recommended-illumination-levels-by-space-type",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Handouts for Lighting and Acoustics refined markdown lines 51-70",
+    "checked_markdown_lines": [
+      "DOE Guidelines refined markdown lines 323-405",
+      "DOE Guidelines refined markdown lines 458-476",
+      "Handouts for Lighting and Acoustics refined markdown lines 51-70"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "doe-energy-conserving-design-guidelines-local-raw-pdf--b047-f815c409",
+        "label": "DOE Guidelines on Energy Conserving Design on Buildings - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+        "sha256": "sha256:9a1a4019b500ffc2873625db6f04ac50b39aea7cadac9159464f9ed716e8126c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.md",
+        "refined_markdown_sha256": "sha256:477f0990a67359eee303e8280a00be449d0aa413252161db7b5b1bafec3012b9",
+        "locator": "DOE Guidelines refined markdown lines 323-405; DOE Guidelines refined markdown lines 458-476"
+      },
+      {
+        "source_id": "handouts-lighting-and-acoustics-local-raw-pdf--b047-f815c409",
+        "label": "Handouts for Lighting and Acoustics - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Handouts for Lighting _ Acoustics.pdf",
+        "sha256": "sha256:ba9a313f0fa4072866d2f922a34b24ef91a07e58128f67cd12c7b901c91d33bb",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Handouts for Lighting _ Acoustics.md",
+        "refined_markdown_sha256": "sha256:807e9a5c684407cee85c75e33290d25971f924c8b923e1b86e52d0b5ec061bd3",
+        "locator": "Handouts for Lighting and Acoustics refined markdown lines 51-70"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 047 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "What is the unit of luminous flux in the checked handout?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lux."
+      },
+      {
+        "id": "b",
+        "text": "Lumen."
+      },
+      {
+        "id": "c",
+        "text": "Ohm."
+      },
+      {
+        "id": "d",
+        "text": "Sabin."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": "Lumen. This answer matches Handouts for Lighting and Acoustics refined markdown lines 51-70.",
+    "explanation": "Lumen. This answer matches Handouts for Lighting and Acoustics refined markdown lines 51-70.",
+    "code_citation": "Handouts for Lighting and Acoustics refined markdown lines 51-70"
+  }
+}

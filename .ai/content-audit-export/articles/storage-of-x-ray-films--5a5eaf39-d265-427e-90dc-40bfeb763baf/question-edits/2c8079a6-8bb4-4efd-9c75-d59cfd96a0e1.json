@@ -1,0 +1,48 @@
+{
+  "question_id": "2c8079a6-8bb4-4efd-9c75-d59cfd96a0e1",
+  "baseline_hash": "sha256:58838fa29a7bbceab2cd451a94d1ae5b1e97431cae53a6f59723a2f0d9ed91eb",
+  "action": "replace",
+  "reason": "source-audited-article-batch-039-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-039",
+  "approved_at": "2026-05-11T13:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-039-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 4306-4329"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 1401"
+  },
+  "proposed": {
+    "text": "What minimum distance must films be kept from steam pipes, chimneys, or other heat sources?",
+    "options": [
+      {
+        "id": "b039-5a5e-20-a",
+        "text": "600 mm"
+      },
+      {
+        "id": "b039-5a5e-20-b",
+        "text": "300 mm"
+      },
+      {
+        "id": "b039-5a5e-20-c",
+        "text": "900 mm"
+      },
+      {
+        "id": "b039-5a5e-20-d",
+        "text": "1.20 m"
+      }
+    ],
+    "correct_option_id": "b039-5a5e-20-a",
+    "rationale": "Correct answer: 600 mm. This is directly supported by PD 1096 2004 Revised IRR, Section 1401.",
+    "explanation": "The Batch 039 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 1401.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 1401"
+  }
+}

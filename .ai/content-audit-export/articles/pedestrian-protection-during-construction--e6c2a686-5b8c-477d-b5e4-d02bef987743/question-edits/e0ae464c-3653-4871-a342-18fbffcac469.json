@@ -1,0 +1,24 @@
+{
+  "question_id": "e0ae464c-3653-4871-a342-18fbffcac469",
+  "baseline_hash": "sha256:d42b7e9eaf5fda4f5d3220fdcf0cde3f192afdb779a5e4c6d2c6035d845fd7ce",
+  "reason": "Batch 012 local source audit aligned linked question e0ae464c-3653-4871-a342-18fbffcac469 with the repaired Pedestrian Protection During Construction article and checked raw-source citations. This local draft updates citation and explanation context only and does not change answer-key fields.",
+  "approved_by": "codex-local-source-audit-batch-012",
+  "approved_at": "2026-05-10T20:40:00.000+08:00",
+  "source_audit_support": {
+    "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+    "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+    "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+    "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+    "source_locator": "PD 1096 Rule XI Section 1102",
+    "checked_markdown_lines": [
+      "PD 1096 raw markdown lines 3443-3446"
+    ],
+    "parent_article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+    "parent_article_slug": "pedestrian-protection-during-construction",
+    "answer_key_fields_changed": false
+  },
+  "proposed": {
+    "code_citation": "PD 1096 Rule XI, Section 1102",
+    "explanation": "Materials and equipment stored on public property must not obstruct fire hydrants, alarm boxes, utility boxes, catch basins, manholes, drainage, or vehicular and pedestrian traffic."
+  }
+}

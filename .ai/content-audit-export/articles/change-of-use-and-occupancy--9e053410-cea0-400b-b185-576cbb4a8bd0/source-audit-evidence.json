@@ -1,0 +1,184 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-048-local-first",
+  "batch_number": 48,
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T19:48:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+    "slug": "change-of-use-and-occupancy",
+    "title": "Change of Use and Occupancy",
+    "article_folder": ".ai/content-audit-export/articles/change-of-use-and-occupancy--9e053410-cea0-400b-b185-576cbb4a8bd0",
+    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/change-of-use-and-occupancy--9e053410-cea0-400b-b185-576cbb4a8bd0",
+    "candidate_path": ".ai/content-audit-export/articles/change-of-use-and-occupancy--9e053410-cea0-400b-b185-576cbb4a8bd0/candidate.md",
+    "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/change-of-use-and-occupancy--9e053410-cea0-400b-b185-576cbb4a8bd0/candidate.md",
+    "question_edits_folder": ".ai/content-audit-export/articles/change-of-use-and-occupancy--9e053410-cea0-400b-b185-576cbb4a8bd0/question-edits",
+    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/change-of-use-and-occupancy--9e053410-cea0-400b-b185-576cbb4a8bd0/question-edits",
+    "normalized_sha256": "sha256:7c8917947f3bb27423858528b0cfe798fbfad334739426d078f7a8e475f06284",
+    "candidate_sha256": "sha256:7c8917947f3bb27423858528b0cfe798fbfad334739426d078f7a8e475f06284",
+    "linked_questions_sha256": "sha256:5123b914237b4f12f22512429ce3103a233020bb20499ff5c4793accc25639ab",
+    "sources_sha256": "sha256:a0a68d476bf66690b438a81b0af46c6f64fa69f6a652d56286c121296c559fe4"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "refined_markdown_role": "locator_only",
+    "derivative_or_search_layer_as_primary": false,
+    "source_families_checked": [
+      {
+        "label": "PD 1096 National Building Code - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 - National Building Code.pdf",
+        "raw_pdf_sha256": "sha256:0bd869faac8d949359aa9e3c5bea7026e85e348f61ce1e87a09d48991c5ba796",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 - National Building Code.md",
+        "refined_markdown_sha256": "sha256:d7df246271ae1bcb14ed8e4ba881ed75cfa8381cca9f465986d9947397f353d9",
+        "locator": "PD 1096 National Building Code refined markdown lines 243-251, 356-473, 1050-1225, and 1786-1822"
+      },
+      {
+        "label": "PD 1096 IRR Full Implementing Rules and Regulations - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.pdf",
+        "raw_pdf_sha256": "sha256:8e98d8afd4b5972ba5a82d33a65e59e800cd41661b764a0dfc4112d29697b341",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.md",
+        "refined_markdown_sha256": "sha256:a43068979bbca37450a11ed16cbb966e2aff6d682cdded1ab3bf22b1d541efd0",
+        "locator": "PD 1096 IRR refined markdown lines 1243-1252, 1334-1378, 3009-3138, 3750-3825, 8637-8810, and 9180-9514"
+      },
+      {
+        "label": "RA 9514 Fire Code RIRR 2019 - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "locator": "RA 9514 RIRR refined markdown lines 2285-2456"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "change-of-use-and-occupancy_article",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 39,
+    "question_edits_created": [
+      "9a826a27-ed09-4432-8ac3-6af6b1547991",
+      "680174d1-0ee9-4b1f-80ca-2c89d01a21d5",
+      "ea6aac54-af21-4cd9-a6fd-f4d79f3bde8e",
+      "bf891ad7-eb6f-4c4c-975e-ba208898b586",
+      "90114e42-fe3a-482c-a3cb-9bd51d61d384",
+      "c7878ba7-40b4-47c5-81ea-88834dbb8ecf",
+      "a5c718e1-d6c3-4464-972d-5fbdb95226b4",
+      "737c1f58-f588-401b-a1a5-22858e146f90",
+      "ed081e73-219c-478c-ba34-fe5619c8dcb8",
+      "422fd056-50a6-4262-843f-71bec0d2958e",
+      "470ba6ed-2f78-4313-96c6-359359b6cfe2",
+      "e015d560-a07f-4a1f-b8bc-dafab81572f1",
+      "34b812c6-d500-4936-9d5b-e94177d46756",
+      "3e2392f2-49a9-4f87-9ccf-e76f149f6a70",
+      "58d057b3-af3b-4fd1-b418-971117a97b5d",
+      "80954f58-c19c-416e-8b05-eca1a8a67188",
+      "98b9b530-b29e-4129-bf7a-affc944fb0ec",
+      "f32b6c0f-04e2-4be9-9a69-63f5d23e1f49",
+      "40b21fa4-7f4d-4cc5-a1ba-3763dd1281e5",
+      "1e80ef50-0b77-4a4a-b890-d5ef4527adfc",
+      "e5ef0bb2-d668-41da-80d1-50bb14f8f2e0",
+      "afdb8cb6-0f7a-4959-9223-8da62de659e3",
+      "19089bf5-f788-4896-a452-d343705534fc",
+      "2f68c1a8-8f42-48c1-bedf-8e9fff5e908e",
+      "962cce8a-dc03-4a7d-b056-769715bbfa72",
+      "d8169a11-7d8c-451b-a744-1556beb8b5d6",
+      "b945c913-9d0f-4977-852a-038e9bfa8690",
+      "173d29f6-0ac6-49dc-b6a2-04faf5f0f2a4",
+      "50b61152-ae0d-4d8b-8434-894e12cd3c2d",
+      "c37b472c-deac-4a3f-927c-56ca7f9a225c",
+      "6a3632dc-dcaf-439f-baa5-b8c9e132fd14",
+      "4b93b26f-ea84-43c9-94be-ce1f8cf7edbb",
+      "991995f4-6504-4b94-b149-6d492b86b460",
+      "c4221a89-a6be-45eb-81dd-0079f8d6950e",
+      "d2ac3076-d2fd-4ba7-8723-3c1f19b890e7",
+      "66bbf061-43d3-47df-a4b2-684579a16d90",
+      "07084cc3-b801-422b-a2a8-632c24e186f6",
+      "8c34d1fc-028e-4da0-afb4-7c3db5afa6b5",
+      "2c53e76d-eb40-4614-82a8-6cdacd6d78be"
+    ]
+  },
+  "claims": [
+    {
+      "claim_id": "change-of-use-and-occupancy-b048-claim-01",
+      "claim_text": "PD 1096 Section 701 classifies buildings by use or character of occupancy into Groups A through J.",
+      "source_support": [
+        "pd1096-national-building-code-local-raw-pdf--b048-9e053410-01",
+        "pd1096-irr-full-local-raw-pdf--b048-9e053410-02",
+        "ra9514-rirr-2019-local-raw-pdf--b048-9e053410-03"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "change-of-use-and-occupancy-b048-claim-02",
+      "claim_text": "PD 1096 Section 702 bars a change that places the building in a different division or group unless the building complies with the new division or group requirements.",
+      "source_support": [
+        "pd1096-national-building-code-local-raw-pdf--b048-9e053410-01",
+        "pd1096-irr-full-local-raw-pdf--b048-9e053410-02",
+        "ra9514-rirr-2019-local-raw-pdf--b048-9e053410-03"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "change-of-use-and-occupancy-b048-claim-03",
+      "claim_text": "Existing buildings may change occupancy subject to Building Official approval when the new use is less hazardous based on life and fire risk.",
+      "source_support": [
+        "pd1096-national-building-code-local-raw-pdf--b048-9e053410-01",
+        "pd1096-irr-full-local-raw-pdf--b048-9e053410-02",
+        "ra9514-rirr-2019-local-raw-pdf--b048-9e053410-03"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "change-of-use-and-occupancy-b048-claim-04",
+      "claim_text": "PD 1096 Section 309 requires a Certificate of Occupancy before use or occupancy and before change in existing use or occupancy classification.",
+      "source_support": [
+        "pd1096-national-building-code-local-raw-pdf--b048-9e053410-01",
+        "pd1096-irr-full-local-raw-pdf--b048-9e053410-02",
+        "ra9514-rirr-2019-local-raw-pdf--b048-9e053410-03"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "change-of-use-and-occupancy-b048-claim-05",
+      "claim_text": "RA 9514 Rule 9 links BFP inspection, FSCCR, and FSIC to occupancy and permit clearance.",
+      "source_support": [
+        "pd1096-national-building-code-local-raw-pdf--b048-9e053410-01",
+        "pd1096-irr-full-local-raw-pdf--b048-9e053410-02",
+        "ra9514-rirr-2019-local-raw-pdf--b048-9e053410-03"
+      ],
+      "audit_result": "PASS"
+    }
+  ],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "removed_risk_notes": [
+      "Old local-batch ownership markers in sidecars refreshed to Batch 048.",
+      "Question sidecars replaced with checked local raw-source citations.",
+      "Stale compose-error sidecars removed where selected bundle compose succeeds."
+    ]
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_batch_048_complete": true,
+    "remote_publish_status": "not_attempted_by_request",
+    "remaining_local_blockers": []
+  },
+  "local_validation": {
+    "status": "PASS",
+    "valid": true,
+    "blockers": 0,
+    "checked_at": "2026-05-11T19:58:00.000+08:00",
+    "commands": [
+      "bun run content-audit:compose -- --article-id 9e053410-cea0-400b-b185-576cbb4a8bd0 --overwrite --strict",
+      "bun run content-audit:diff -- --article-id 9e053410-cea0-400b-b185-576cbb4a8bd0 --strict --summary",
+      "bun run content-audit:validate -- --article-id 9e053410-cea0-400b-b185-576cbb4a8bd0 --summary",
+      "bun run content-audit:ui-block-edits -- --article-id 9e053410-cea0-400b-b185-576cbb4a8bd0"
+    ]
+  }
+}

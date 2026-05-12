@@ -1,0 +1,76 @@
+{
+  "question_id": "d6e826ec-546f-405a-8283-d6f70e169a09",
+  "baseline_hash": "sha256:b13ec0e2ff35154066794e0b7e7db07e71e8e34599f6c4b578854805cc0bd7fa",
+  "action": "replace",
+  "reason": "source-audited-article-batch-045-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes stale derivative-only framing where present.",
+  "approved_by": "codex-local-first-batch-045",
+  "approved_at": "2026-05-11T17:18:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "06c6e7dc-b3cd-4ff8-a25a-fed405c47830",
+    "parent_article_slug": "lea-util-007-04-solar-photovoltaic-pv-systems",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 11285 refined markdown lines 63, 135, 141-146, 769, 1086-1118; PEC refined markdown lines 29231-29466; DOE refined markdown lines 25, 37, 632-642, 1798",
+    "checked_markdown_lines": [
+      "RA 11285 refined markdown lines 63, 135, 141-146, 769, 1086-1118",
+      "RA 11285 refined markdown lines 1144-1158 and 1304",
+      "PEC refined markdown lines 29231-29466",
+      "DOE refined markdown lines 25, 37, 632-642, and 1798"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "ra-11285-energy-efficiency-conservation-act-local-raw-pdf--b045",
+        "label": "RA 11285 Energy Efficiency and Conservation Act - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf",
+        "sha256": "sha256:316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.md",
+        "refined_markdown_sha256": "sha256:d2baa0e8d4ffe0059688783a4d31ac0e121517daca939f18a048fe053e76cdd4",
+        "locator": "RA 11285 refined markdown lines 63, 135, 141-146, 769, 1086-1118, 1144-1158, 1304"
+      },
+      {
+        "source_id": "philippine-electrical-code-local-raw-pdf--b045",
+        "label": "Philippine Electrical Code - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+        "sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+        "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3",
+        "locator": "PEC refined markdown lines 362, 556-612, 986-1045, 29231-29466"
+      },
+      {
+        "source_id": "doe-energy-conserving-design-guidelines-local-raw-pdf--b045",
+        "label": "DOE Energy Conserving Design Guidelines - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+        "sha256": "sha256:9a1a4019b500ffc2873625db6f04ac50b39aea7cadac9159464f9ed716e8126c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.md",
+        "refined_markdown_sha256": "sha256:477f0990a67359eee303e8280a00be449d0aa413252161db7b5b1bafec3012b9",
+        "locator": "DOE refined markdown lines 25, 37, 632-642, 877-882, 717-793, 1798"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, and citation rewritten to the Batch 045 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "What raceway rule should guide PV source and output circuits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep them out of the same raceway or fitting as feeders or branch circuits unless separated or connected as allowed."
+      },
+      {
+        "id": "b",
+        "text": "Always mix PV output circuits with unrelated feeders."
+      },
+      {
+        "id": "c",
+        "text": "Run PV circuits only through acoustic ceiling tiles."
+      },
+      {
+        "id": "d",
+        "text": "Put all PV wiring in the PABX cabinet."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Keep them out of the same raceway or fitting as feeders or branch circuits unless separated or connected as allowed. This matches the checked local source locator for the parent article.",
+    "explanation": "Keep them out of the same raceway or fitting as feeders or branch circuits unless separated or connected as allowed. This matches the checked local source locator for the parent article.",
+    "code_citation": "PEC refined markdown lines 29312-29341"
+  }
+}

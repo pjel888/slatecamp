@@ -1,0 +1,373 @@
+{
+  "batch_id": "source-audited-article-batch-028-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T15:30:00.000+08:00",
+  "article_id": "97befd70-258f-4f5a-8b02-77387b51ccfb",
+  "slug": "lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement",
+  "title": "Suspension and Termination of the Owner-Architect Agreement",
+  "status": "local_pass_ready_for_final_publishing_review",
+  "article_folder": ".ai/content-audit-export/articles/lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement--97befd70-258f-4f5a-8b02-77387b51ccfb",
+  "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement--97befd70-258f-4f5a-8b02-77387b51ccfb",
+  "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement--97befd70-258f-4f5a-8b02-77387b51ccfb/question-edits",
+  "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement--97befd70-258f-4f5a-8b02-77387b51ccfb/question-edits",
+  "linked_questions": 10,
+  "question_edits_created": 10,
+  "source_safe_rewrite_question_edits": 10,
+  "classification": {
+    "legal_or_code_content": true,
+    "requires_raw_pdf_audit": true,
+    "local_first_only": true
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "local_first_only": true,
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "blockers": [],
+    "warnings": [
+      "Local-first content batch only; final Supabase publishing requires separate review/apply phase."
+    ]
+  },
+  "source_audit": {
+    "checked_sources": [
+      {
+        "source_id": "uap-standards-spp202-suspended-abandoned-work-local",
+        "label": "UAP Standards of Professional Practice - SPP 202 compensation and work suspended or abandoned",
+        "authority": "United Architects of the Philippines Standards of Professional Practice",
+        "source_type": "professional_practice_pdf",
+        "source_locator": "UAP Standards refined markdown lines 414-501 and 505-517",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "checked_markdown_lines": [
+          "UAP Standards lines 414-501",
+          "UAP Standards lines 505-517"
+        ],
+        "use": "primary local source for source-safe article and question rewrite claims",
+        "local_source_checked": true
+      },
+      {
+        "source_id": "spp202-regular-design-services-local",
+        "label": "SPP 202 - Regular Design Services raw PDF cross-check",
+        "authority": "United Architects of the Philippines SPP Document 202",
+        "source_type": "professional_practice_pdf",
+        "source_locator": "SPP 202 local raw PDF; readable SPP 202 substance cross-checked through UAP Standards lines 414-501 and 505-517",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+        "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+        "refined_markdown_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+        "checked_markdown_lines": [
+          "SPP 202 raw PDF local file checked",
+          "UAP Standards lines 414-501",
+          "UAP Standards lines 505-517"
+        ],
+        "use": "primary local source for source-safe article and question rewrite claims",
+        "local_source_checked": true
+      },
+      {
+        "source_id": "uap-document-301-general-conditions-local",
+        "label": "UAP Document 301 - General Conditions for construction contract documents",
+        "authority": "United Architects of the Philippines / PRC Board approved general conditions source",
+        "source_type": "professional_practice_contract_pdf",
+        "source_locator": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "refined_markdown_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+        "checked_markdown_lines": [
+          "UAP Document 301 lines 472-545",
+          "UAP Document 301 lines 923-998",
+          "UAP Document 301 lines 1019-1051",
+          "UAP Document 301 lines 1062-1090"
+        ],
+        "use": "primary local source for source-safe article and question rewrite claims",
+        "local_source_checked": true
+      },
+      {
+        "source_id": "ciap-document-102-private-construction-contract-local",
+        "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
+        "authority": "Construction Industry Authority of the Philippines / DTI private construction contract source",
+        "source_type": "construction_contract_pdf",
+        "source_locator": "CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+        "refined_markdown_sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
+        "checked_markdown_lines": [
+          "CIAP Document 102 lines 169-258",
+          "CIAP Document 102 lines 712-761",
+          "CIAP Document 102 lines 807-820"
+        ],
+        "use": "primary local source for source-safe article and question rewrite claims",
+        "local_source_checked": true
+      }
+    ],
+    "source_locator": "UAP Standards refined markdown lines 414-501 and 505-517; SPP 202 local raw PDF; readable SPP 202 substance cross-checked through UAP Standards lines 414-501 and 505-517; UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090; CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820",
+    "checked_markdown_lines": [
+      "UAP Standards lines 414-501",
+      "UAP Standards lines 505-517",
+      "SPP 202 raw PDF local file checked",
+      "UAP Standards lines 414-501",
+      "UAP Standards lines 505-517",
+      "UAP Document 301 lines 472-545",
+      "UAP Document 301 lines 923-998",
+      "UAP Document 301 lines 1019-1051",
+      "UAP Document 301 lines 1062-1090",
+      "CIAP Document 102 lines 169-258",
+      "CIAP Document 102 lines 712-761",
+      "CIAP Document 102 lines 807-820"
+    ]
+  },
+  "claims": [
+    {
+      "claim_id": "batch-028-lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement-question-001",
+      "claim_text": "Question 69601865-90d4-4bf4-b753-0d43f8281b54 / model BATCH-028-lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement-001 rewritten to source-safe local form.",
+      "question_id": "69601865-90d4-4bf4-b753-0d43f8281b54",
+      "model_id": "BATCH-028-lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement-001",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp202-suspended-abandoned-work-local",
+        "spp202-regular-design-services-local",
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards lines 495-501",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-028-lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement-question-002",
+      "claim_text": "Question 7fddbbb9-df88-4fe2-903e-8c499d93472b / model BATCH-028-lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement-002 rewritten to source-safe local form.",
+      "question_id": "7fddbbb9-df88-4fe2-903e-8c499d93472b",
+      "model_id": "BATCH-028-lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement-002",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp202-suspended-abandoned-work-local",
+        "spp202-regular-design-services-local",
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards lines 414-501",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-028-lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement-question-003",
+      "claim_text": "Question ee28fd65-0762-4b87-9b23-3860512a1198 / model BATCH-028-lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement-003 rewritten to source-safe local form.",
+      "question_id": "ee28fd65-0762-4b87-9b23-3860512a1198",
+      "model_id": "BATCH-028-lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement-003",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp202-suspended-abandoned-work-local",
+        "spp202-regular-design-services-local",
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards lines 497-501",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-028-lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement-question-004",
+      "claim_text": "Question 3429796b-c3c1-41e4-b7e3-100ee5f3e0c5 / model BATCH-028-lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement-004 rewritten to source-safe local form.",
+      "question_id": "3429796b-c3c1-41e4-b7e3-100ee5f3e0c5",
+      "model_id": "BATCH-028-lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement-004",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp202-suspended-abandoned-work-local",
+        "spp202-regular-design-services-local",
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Document 301 lines 923-937",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-028-lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement-question-005",
+      "claim_text": "Question 5472e0b1-2f33-4275-95ef-bc5bb0d61a65 / model BATCH-028-lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement-005 rewritten to source-safe local form.",
+      "question_id": "5472e0b1-2f33-4275-95ef-bc5bb0d61a65",
+      "model_id": "BATCH-028-lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement-005",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp202-suspended-abandoned-work-local",
+        "spp202-regular-design-services-local",
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Document 301 lines 923-937",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-028-lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement-question-006",
+      "claim_text": "Question 65402ffd-06b0-42ed-84c4-ebf01813547a / model BATCH-028-lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement-006 rewritten to source-safe local form.",
+      "question_id": "65402ffd-06b0-42ed-84c4-ebf01813547a",
+      "model_id": "BATCH-028-lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement-006",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp202-suspended-abandoned-work-local",
+        "spp202-regular-design-services-local",
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Document 301 lines 939-947",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-028-lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement-question-007",
+      "claim_text": "Question a651c35c-6242-4ab9-904e-9a07d1962f90 / model BATCH-028-lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement-007 rewritten to source-safe local form.",
+      "question_id": "a651c35c-6242-4ab9-904e-9a07d1962f90",
+      "model_id": "BATCH-028-lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement-007",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp202-suspended-abandoned-work-local",
+        "spp202-regular-design-services-local",
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "CIAP Document 102 lines 721-740",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-028-lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement-question-008",
+      "claim_text": "Question bda5c914-aa4d-482e-84f8-f939cf9f656f / model BATCH-028-lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement-008 rewritten to source-safe local form.",
+      "question_id": "bda5c914-aa4d-482e-84f8-f939cf9f656f",
+      "model_id": "BATCH-028-lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement-008",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp202-suspended-abandoned-work-local",
+        "spp202-regular-design-services-local",
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards lines 495-505; UAP Document 301 lines 923-947",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-028-lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement-question-009",
+      "claim_text": "Question c28b31e4-7e35-45f1-a479-85c79d85e093 / model BATCH-028-lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement-009 rewritten to source-safe local form.",
+      "question_id": "c28b31e4-7e35-45f1-a479-85c79d85e093",
+      "model_id": "BATCH-028-lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement-009",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp202-suspended-abandoned-work-local",
+        "spp202-regular-design-services-local",
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards lines 503-505",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-028-lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement-question-010",
+      "claim_text": "Question b19a0192-c08d-4b5c-a66c-d2b0f8ee6c5c / model BATCH-028-lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement-010 rewritten to source-safe local form.",
+      "question_id": "b19a0192-c08d-4b5c-a66c-d2b0f8ee6c5c",
+      "model_id": "BATCH-028-lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement-010",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp202-suspended-abandoned-work-local",
+        "spp202-regular-design-services-local",
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Document 301 lines 1034-1039",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "sme_review": {
+    "required": false,
+    "status": "PASS"
+  },
+  "removed_or_rewritten_claims": [
+    "Removed unresolved SLATECAMP_UI_BLOCK placeholder sections because ui-blocks.json had zero preserved blocks for these bundles.",
+    "Removed unsupported RA 9184/private-award, AIA, cure-period, lien-remedy, and Civil Code liability claims unless supported by the checked local source set.",
+    "Rewrote linked questions to source-safe prompts and answer keys anchored to exact local source locators."
+  ],
+  "target": {
+    "article_id": "97befd70-258f-4f5a-8b02-77387b51ccfb",
+    "slug": "lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement",
+    "normalized_sha256": "sha256:f54ead1da24ca306c7637b8584580ccd3b8530fbaa451587578d7867be4a34a9",
+    "candidate_sha256": "sha256:f54ead1da24ca306c7637b8584580ccd3b8530fbaa451587578d7867be4a34a9",
+    "sources_sha256": "sha256:998668e69024bd7e7bdfc4ccea9edba3efa9736fb8bd19347d81eab5e76560ab",
+    "diff_report_sha256": "sha256:b55a20377a3b2e91ed3e0e9b33b5a3082c4b573e81021f8c9b075e158b39f385",
+    "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement--97befd70-258f-4f5a-8b02-77387b51ccfb/question-edits",
+    "question_edits_count": 10
+  },
+  "validation": {
+    "compose_blockers": [],
+    "diff_safe_to_push": true,
+    "diff_blockers": [],
+    "local_first_only": true,
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false
+  }
+}

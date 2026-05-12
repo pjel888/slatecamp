@@ -1,92 +1,42 @@
+# Indoor air quality
 
-
-## Board Exam Quick Check
-
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
-
-**Common mistake:** treating a familiar keyword in **Lea Dsgn 009 03 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
-
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 ## Learning Goal
-Apply minimum air change rates (ACH) per NBC by space type, calculate fresh air supply from floor area and occupancy, select between mechanical and passive ventilation strategies, and verify IAQ compliance for different occupancy groups.
+Apply source-safe indoor air quality checks by using PD 1096 Rule VIII for light, ventilation, ceiling height, window openings, vent shafts, and artificial ventilation triggers, while separating code requirements from unsupported air-change-rate shortcuts.
 
-Indoor air quality (IAQ) and ventilation are foundational to occupant health and building performance. The National Building Code specifies minimum air change rates (ACH) by space type to remove pollutants, moisture, and CO₂. The LEA expects candidates to know these rates, apply them to floor area calculations, and understand how mechanical and passive ventilation systems achieve compliance.
+Indoor air quality is a health, comfort, and building-performance issue. For LEA work, the safe first move is not to memorize a generic air-change table from memory. The safe first move is to identify the space, check whether natural or artificial ventilation is being relied on, and apply the source rule that controls that condition.
 
-## Core Concept
+PD 1096 Rule VIII requires every building to be designed, constructed, and equipped to provide adequate light and ventilation. It also prohibits alterations that reduce the room size or relative window area below the required level. This means ventilation is not an afterthought; it is part of the legal usability of the room.
 
-Indoor air quality depends on three factors: (1) _fresh air supply_—introduction of outdoor air to dilute indoor pollutants, (2) _source control_—minimization of pollution sources (materials, activities), and (3) _removal_—extraction of stlea air and contaminants. Air change rate (ACH) quantifies the rate at which indoor air volume is replaced with fresh air, typically measured in air changes per hour. An office space with 300 m³ volume and a specification of 4 ACH requires 300 × 4 = 1,200 m³/hour of fresh air supply.
+For rooms without an artificial ventilation system, PD 1096 requires window openings with a total free area equal to at least 10 percent of the room floor area, with a minimum of 1.00 square meter. For toilet and bath rooms, laundry rooms, and similar rooms, the checked text states a window-area rule of not less than one-twentieth of the floor area. Required windows must open directly to a court, yard, public street or alley, or open watercourse.
 
-**PD 1096 Rule VII, Section 709** specifies natural ventilation opening requirements: a minimum of 5% of floor area must be operable (1:20 ratio). However, many modern buildings rely on mechanical ventilation to achieve code-required air change rates. The LEA focuses on these rates, not the mechanical design details.
+Ceiling height is part of the IAQ check because air volume, heat buildup, and ventilation strategy are all affected by vertical clearance. Habitable rooms with artificial ventilation must have ceiling heights not less than 2.40 meters. Habitable rooms with natural ventilation must have ceiling heights not less than 2.70 meters. In buildings of more than one storey, the first storey minimum is 2.70 meters, the second storey minimum is 2.40 meters, and succeeding storeys must maintain unobstructed typical headroom clearance of not less than 2.10 meters above the finished floor.
 
-Different occupancies have vastly different IAQ demands. A hospital operating room must have 15–20 ACH with positive pressure (operating room pressure slightly above hallway) and HEPA filtration to remove surgical aerosols. A restaurant kitchen must have 15 ACH minimum (per fire code) to exhaust cooking odors and heat. A standard office requires 4–6 ACH. An unoccupied storage room may have 1–2 ACH. The LEA tests whether candidates can match space type to required ACH and apply these to ventilation system calculations.
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-dsgn-009-03-core-concept", type="image", caption="Indoor Air Quality — Ventilation Strategies by Occupancy Type", description="Comparative diagram showing minimum air change rates (ACH) per space type: restrooms (10 ACH), kitchens (15 ACH), offices (4 ACH), classrooms (6 ACH). Natural vs. mechanical ventilation strategies with NBC compliance annotations.", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+| Condition | Source-safe check |
+| --- | --- |
+| Naturally ventilated room | Window free area at least 10 percent of floor area, minimum 1.00 sqm, opening to an allowed exterior/open space condition. |
+| Toilet, bath, laundry, similar room | Window area not less than one-twentieth of floor area under the checked PD 1096 text. |
+| Vent shaft | Horizontal cross-sectional area at least 1.00 sqm per meter of shaft height, never less than 1.00 sqm; least dimension not less than 600 mm. |
+| Air duct or intake | Minimum unobstructed cross-sectional area not less than 0.30 sqm and minimum dimension of 300 mm. |
+| Industrial or heating equipment room | Artificial ventilation is required to prevent excessive accumulation of hot or polluted air. |
 
-## Key Provisions
+If an exam gives an ACH value, the arithmetic is straightforward: room volume equals floor area multiplied by ceiling height, and required air volume per hour equals room volume multiplied by the stated ACH. But do not claim that a specific office, kitchen, ward, or operating-room ACH is required by PD 1096 unless the exact checked table or specialist source is in the question packet.
 
-| Space Type | Air Change Rate (ACH) | Notes | Source |
-|---|---|---|---|
-| Office | 4–6 | Standard occupancy, moderate contamination | PD 1096 Rule VII (Natural Ventilation—Section 709/Mechanical Ventilation—Section 710); specific ACH minimums per ASHRAE 62.1 or local design guidelines |
-| Classroom | 5–8 | Higher occupancy density, requires fresh air | PD 1096 §811 (min 3 ACH); ASHRAE 62.1 |
-| Restaurant kitchen | 15 minimum | Cooking odor/heat removal; fire code minimum | PD 1096 Rule VII §80611 (min 10 ACH) |
-| Toilet/bathroom | 10 minimum | Odor and moisture removal | ASHRAE 62.1 (design guideline) |
-| Hospital ward | 6 | Infection control; patient comfort | PD 1096 §811; ASHRAE 62.1/DOH standards |
-| Hospital operating room | 15–20 | Positive pressure, HEPA filtration, surgical aerosol removal | Local ordinance/ASHRAE 62.1 |
-| Garage/parking | 10 minimum | Carbon monoxide removal | PD 1096 Rule VII, Section 811 or 710 (Natural/Mechanical Ventilation) |
-| Storage (unoccupied) | 1–2 | Low contamination risk, energy efficiency | Design guideline |
+Mechanical and electrical design references also stress that comfort and indoor air quality should influence the earliest design decisions. That is the design lesson: reserve air paths, shafts, intakes, exhaust routes, equipment space, access, and maintenance zones before the plan is frozen.
 
-_Source: PD 1096 (National Building Code) Rule VII, Section 809; RA 9514 (Fire Code); ASHRAE 62.1 (Ventilation Standard)._
+## What to Watch For
 
-**Mechanical Ventilation Calculation:**
-Required fresh air volume (m³/hour) = Floor area (m²) × Ceiling height (m) × ACH
+Unsupported hospital, kitchen, classroom, or office ACH values are a source-risk flag. Use them only when the question explicitly supplies the value or when a checked source table is present.
 
-**Example:** A 200 m² office with 3 m ceiling height, 5 ACH requirement:
-Fresh air = 200 × 3 × 5 = 3,000 m³/hour
+Natural ventilation is not just the presence of a window. The opening must meet the floor-area rule and must open to an allowed court, yard, street, alley, or watercourse condition.
 
-Natural Ventilation Opening (NBC minimum):
-Total operable window area ≥ 5% of floor area served (1:20 ratio)
+Artificial ventilation can solve some room conditions, but it does not erase ceiling-height, access, equipment, exhaust, or maintenance coordination.
 
-## Philippine Practice Context
+## Key Takeaways
 
-Philippine buildings in urban areas often rely on mechanical ventilation due to high outdoor air pollution (especially in Metro Manila). Central air-handling units (AHU) with ducting distribute conditioned, filtered air. The health benefit is significant: filtered air reduces particle and pollutant ingestion compared to unfiltered outdoor air. However, mechanical systems require ongoing maintenance and energy consumption. In low-rise residential and commercial buildings outside metro areas, natural ventilation (operable windows, cross-ventilation, stack effect) is preferred for cost and energy efficiency. The Bureau of Building and Fire Prevention Code (BFPC) enforces minimum ACH standards during occupancy inspection; deficient ventilation can result in occupancy denial.
+Start IAQ questions with the ventilation strategy and the source rule.
 
-## How It's Tested
+Use the PD 1096 window-opening, ceiling-height, vent-shaft, and artificial-ventilation checks before importing outside standards.
 
-**Test Pattern 1: ACH Application**
-A restaurant kitchen is 150 m² with 3 m ceiling height and a 15 ACH requirement. Calculate the required fresh air volume. Answer: 150 × 3 × 15 = 6,750 m³/hour. Exam may ask: is a 5,000 m³/hour fan adequate? Answer: No—insufficient; minimum 6,750 m³/hour required.
-
-**Test Pattern 2: Operating Room Design**
-A hospital has an operating room 50 m² with 3.5 m ceiling height. Exam states 20 ACH requirement with positive pressure and HEPA filter. Calculate air volume: 50 × 3.5 × 20 = 3,500 m³/hour. Exam asks: what is the purpose of positive pressure? Answer: To prevent infiltration of hallway air (potentially contaminated with bacteria, dust) into the sterile OR.
-
-**Test Pattern 3: Natural Ventilation Compliance**
-A classroom 200 m² must have natural ventilation. Calculate minimum operable window area (1:20 = 5%): 200 × 0.05 = 10 m² of operable windows required. Exam shows design with 8 m² operable area. Exam asks: is this compliant? Answer: No—insufficient by 2 m².
-
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **"Office = 4–6 ACH, Kitchen = 15 ACH, OR = 15–20 ACH (positive pressure)."** These are the three most-tested categories. Operating rooms are the most stringent (highest ACH, special pressure control, HEPA). Kitchens come next. Offices are baseline. Memorize this hierarchy.
-[/SLATECAMP_UI_BLOCK]
-
-**Exam Tip:** Air change rates (ACH) vary by occupancy: offices 4-6 ACH, restrooms 8-10 ACH, kitchens 15-20 ACH. The LEA tests whether you can select the correct ACH for a given space type and calculate required airflow.
-[SLATECAMP_UI_BLOCK:ui_0003 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-dsgn-009-03-core-concept", type="image", caption="Ventilation Strategy — Cross-Ventilation and Stack Effect Diagrams", description="Section and plan diagrams comparing passive ventilation strategies: single-sided (openings on one wall), cross-ventilation (openings on two walls with prevailing wind path), and stack effect (inlet low, outlet high at roof). Minimum ACH requirements per occupancy type per NBC applied.", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-## Cross-References
-
-See **LEA-DSGN-009-01** (Passive Design) for natural ventilation strategies, **LEA-DSGN-008-03** (Sprinkler Systems) for smoke management, and **LEA-DSGN-007-09** (Building Systems) for mechanical ventilation integration.
-
-## Common Mistakes
-
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\"Confusing air change rate (ACH, time-based) with air quality metrics (CO₂ ppm, particle counts)\",\"Forgetting that operating rooms require positive pressure (to exclude contaminants, not enhance outflow)\",\"Applying office ACH (4–6) to high-risk spaces like OR (15–20) or kitchens (15)\",\"Calculating air volume without floor area or ceiling height (need all three: area × height × ACH)\",\"Ignoring natural ventilation opening requirements (1:20 = 5% of floor area) if mechanical ventilation is specified; both may be required by code\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+Treat ACH calculations as calculations from given data unless a checked source establishes the minimum value.

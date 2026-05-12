@@ -1,0 +1,59 @@
+{
+  "question_id": "89367ddf-c050-48b0-9829-62fee58a4de3",
+  "baseline_hash": "sha256:4e777ea9e6c2ce88feaa9398b079323ca335f3a2e6c20e183d7ebd3c4411a063",
+  "action": "replace",
+  "reason": "source-audited-article-batch-081-local-first aligned linked question with checked local raw PDF/source evidence for comprehensive-signage-package.",
+  "approved_by": "codex-local-source-audit-batch-081",
+  "approved_at": "2026-05-12T04:40:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "3a00f23f-1eeb-49c4-bf44-e51354d14ce6",
+    "parent_article_slug": "comprehensive-signage-package",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "BP 344 2024 IRR refined markdown lines 307-356 and 505-511; raw PDF pages 11-18 checked by local PyMuPDF extraction",
+    "checked_markdown_lines": [
+      "BP 344 2024 IRR refined markdown lines 307-356 and 505-511; raw PDF pages 11-18 checked by local PyMuPDF extraction"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "bp344-2024-irr-b081",
+        "label": "BP 344 2024 Revised IRR",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "raw_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+        "locator": "BP 344 2024 IRR refined markdown lines 307-356 and 505-511; raw PDF pages 11-18 checked by local PyMuPDF extraction"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 081 local raw-source-audited BP 344 signage scope."
+  },
+  "proposed": {
+    "text": "What Braille grade accompanies raised characters on BP 344 pictogram signage?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Grade 2 Braille"
+      },
+      {
+        "id": "b",
+        "text": "Grade 1 Braille only"
+      },
+      {
+        "id": "c",
+        "text": "No Braille is required"
+      },
+      {
+        "id": "d",
+        "text": "Numeric Braille only"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "BP 344 requires raised characters to be accompanied by Grade 2 Braille.",
+    "explanation": "BP 344 requires raised characters to be accompanied by Grade 2 Braille.",
+    "code_citation": "BP 344 2024 Revised IRR",
+    "bloom_level": "understand",
+    "application_context": "source_audited_local_first_batch_081",
+    "practice_context": [],
+    "difficulty": 0.5
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-086-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T09:30:00.000+08:00",
+  "target": {
+    "article_id": "62991043-88f7-4c94-9e06-4d649e5d7f1c",
+    "slug": "lea-plan-007-04-core-concept",
+    "title": "HUDCC coordinated shelter policy before DHSUD consolidated the housing mandate",
+    "article_folder": ".ai/content-audit-export/articles/lea-plan-007-04-core-concept--62991043-88f7-4c94-9e06-4d649e5d7f1c",
+    "normalized_sha256": "sha256:040ab9dae83cb5cac3536cc06b3f9b7eb0d0928a255cd89ae85c6849eeb0597e",
+    "candidate_sha256": "sha256:040ab9dae83cb5cac3536cc06b3f9b7eb0d0928a255cd89ae85c6849eeb0597e",
+    "candidate_path": ".ai/content-audit-export/articles/lea-plan-007-04-core-concept--62991043-88f7-4c94-9e06-4d649e5d7f1c/candidate.md"
+  },
+  "classification": {
+    "topic_family": "hudcc_to_dhsud_governance",
+    "local_first_batch": "086",
+    "source_sensitivity": "legal_planning_housing",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "legal_housing_governance",
+    "requires_raw_pdf_audit": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdfs_checked_first": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "local_pdf_extraction_method": "python_pymupdf_local",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "eo-90-shelter-program-b086",
+      "label": "EO 90 - NGO for Shelter Program",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/EO/EO 90 NGO for Shelter Program.pdf",
+      "sha256": "sha256:22b0d40bfdd91f9636f7e57df542496b19fcca84fc7d48df4911a9e65d7cd501",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/EO/EO 90 NGO for Shelter Program.md",
+      "refined_markdown_sha256": "sha256:0edf1d2a41c71751479f8bbe0d7ff31adcda7b8b544f59dc88f3de9f6319d43b",
+      "locator": "EO 90 refined markdown lines 19-27, 30-43, 51-63, and 79-106; raw PDF pages 1, 2, 3, 4, and 6 checked by local PyMuPDF extraction."
+    },
+    {
+      "source_id": "ra-11201-irr-dhsud-act-b086",
+      "label": "RA 11201 IRR - DHSUD Act Implementing Rules",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+      "sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+      "refined_markdown_sha256": "sha256:40f1a5041c69b3a4aea7c8ba138a9d570bc686bea48aa5618ea6423a6a719528",
+      "locator": "RA 11201 IRR refined markdown lines 40-44, 68-75, 93-100, 116-121, 134-162, 261-263, 280-289, 335, 389, and 392; raw PDF pages 3, 6, 7, 13, 15, 19, and 35 checked by local PyMuPDF extraction."
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-plan-007-04-core-concept-article-b086",
+      "claim_text": "Article lea-plan-007-04-core-concept was rewritten to the checked hudcc_to_dhsud_governance source scope.",
+      "claim_type": "article_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "source_locator": "EO 90 refined markdown lines 40-63; RA 11201 IRR refined markdown lines 145-162, 280-289, and 335-392.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; derivative and search layers were not used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "lea-plan-007-04-core-concept-scenario-b086",
+      "claim_text": "Real World Scenario for lea-plan-007-04-core-concept was added from the checked hudcc_to_dhsud_governance source scope.",
+      "claim_type": "scenario_enrichment",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "source_locator": "EO 90 refined markdown lines 40-63; RA 11201 IRR refined markdown lines 145-162, 280-289, and 335-392.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; derivative and search layers were not used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-ffdb6c40-0702-406f-a7e6-33d778279630-b086",
+      "claim_text": "Question ffdb6c40-0702-406f-a7e6-33d778279630 was rewritten to the checked hudcc_to_dhsud_governance source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "source_locator": "EO 90 refined markdown lines 40-63; RA 11201 IRR refined markdown lines 145-162, 280-289, and 335-392.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; derivative and search layers were not used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-09c55602-d84a-444a-8b4e-6a7085f1cbad-b086",
+      "claim_text": "Question 09c55602-d84a-444a-8b4e-6a7085f1cbad was rewritten to the checked hudcc_to_dhsud_governance source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "source_locator": "EO 90 refined markdown lines 40-63; RA 11201 IRR refined markdown lines 145-162, 280-289, and 335-392.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; derivative and search layers were not used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-d5c85b46-bd2f-4b18-835d-a29f9444db8f-b086",
+      "claim_text": "Question d5c85b46-bd2f-4b18-835d-a29f9444db8f was rewritten to the checked hudcc_to_dhsud_governance source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "source_locator": "EO 90 refined markdown lines 40-63; RA 11201 IRR refined markdown lines 145-162, 280-289, and 335-392.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; derivative and search layers were not used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-7fa788b1-8c72-4ea9-996e-023cc8cd8a86-b086",
+      "claim_text": "Question 7fa788b1-8c72-4ea9-996e-023cc8cd8a86 was rewritten to the checked hudcc_to_dhsud_governance source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "source_locator": "EO 90 refined markdown lines 40-63; RA 11201 IRR refined markdown lines 145-162, 280-289, and 335-392.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; derivative and search layers were not used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-d99723ed-9fc1-4231-8c18-f85de622e05c-b086",
+      "claim_text": "Question d99723ed-9fc1-4231-8c18-f85de622e05c was rewritten to the checked hudcc_to_dhsud_governance source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "source_locator": "EO 90 refined markdown lines 40-63; RA 11201 IRR refined markdown lines 145-162, 280-289, and 335-392.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; derivative and search layers were not used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-91bab790-b581-4a89-9ebc-24647f21c440-b086",
+      "claim_text": "Question 91bab790-b581-4a89-9ebc-24647f21c440 was rewritten to the checked hudcc_to_dhsud_governance source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "source_locator": "EO 90 refined markdown lines 40-63; RA 11201 IRR refined markdown lines 145-162, 280-289, and 335-392.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; derivative and search layers were not used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-004f92de-f391-455d-92f6-aea7e1fba992-b086",
+      "claim_text": "Question 004f92de-f391-455d-92f6-aea7e1fba992 was rewritten to the checked hudcc_to_dhsud_governance source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "source_locator": "EO 90 refined markdown lines 40-63; RA 11201 IRR refined markdown lines 145-162, 280-289, and 335-392.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; derivative and search layers were not used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-6320e15d-7803-408b-a931-f6c65313b5c5-b086",
+      "claim_text": "Question 6320e15d-7803-408b-a931-f6c65313b5c5 was rewritten to the checked hudcc_to_dhsud_governance source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "source_locator": "EO 90 refined markdown lines 40-63; RA 11201 IRR refined markdown lines 145-162, 280-289, and 335-392.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; derivative and search layers were not used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-32f5e13e-af2f-47a2-9d32-09fb9bd8f3fe-b086",
+      "claim_text": "Question 32f5e13e-af2f-47a2-9d32-09fb9bd8f3fe was rewritten to the checked hudcc_to_dhsud_governance source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "source_locator": "EO 90 refined markdown lines 40-63; RA 11201 IRR refined markdown lines 145-162, 280-289, and 335-392.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; derivative and search layers were not used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-c0ae348b-fb1d-41de-8b7d-13761ef6f907-b086",
+      "claim_text": "Question c0ae348b-fb1d-41de-8b7d-13761ef6f907 was rewritten to the checked hudcc_to_dhsud_governance source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "source_locator": "EO 90 refined markdown lines 40-63; RA 11201 IRR refined markdown lines 145-162, 280-289, and 335-392.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; derivative and search layers were not used as primary truth."
+      },
+      "blockers": []
+    }
+  ],
+  "removed_or_out_of_scope_claims": [
+    "Current loan amounts, amortization terms, program thresholds, and agency claims without a Batch 086 local raw-source locator were kept out of the repaired article and question edits."
+  ],
+  "question_edit_audit": {
+    "linked_question_count": 10,
+    "question_edit_count": 10,
+    "answer_key_fields_changed": true,
+    "source_safe_rewrite": true,
+    "blockers": []
+  },
+  "scenario_enrichment": {
+    "status": "eligible-added",
+    "reason": "eligible-added: Batch 086 added a concise historical-governance scenario supported by EO 90 and RA 11201 IRR raw-source locators.",
+    "section_title": "Real World Scenario"
+  },
+  "roundtrip": {
+    "normalized_md_owns_article_prose": true,
+    "ui_blocks_json_owns_raw_ui_blocks": true,
+    "candidate_md_generated_by_compose": true,
+    "raw_ui_block_edits_supported_in_this_batch": false,
+    "note": "All selected Batch 086 folders had zero raw UI blocks; article prose is owned by normalized.md and candidate.md is generated by compose.",
+    "unresolved_ui_summary_markers_removed": true
+  }
+}

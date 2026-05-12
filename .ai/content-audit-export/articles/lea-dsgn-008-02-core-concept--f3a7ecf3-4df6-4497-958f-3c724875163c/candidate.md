@@ -1,83 +1,64 @@
-
-
-## Board Exam Quick Check
-
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
-
-**Common mistake:** treating a familiar keyword in **Lea Dsgn 008 02 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
-
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
-## What You Need to Know for the LEA
-
-Fire-rated separation and compartmentation form the second line of defense in fire safety design. They contain fire and smoke to protect life and property by creating barriers between occupied spaces and potential ignition sources.
+# Fire-Rated Separation
 
 ## Learning Goal
 
-Apply fire-rated separation requirements per occupancy group (2-hour for Group D, 4-hour for Group G), specify exit stairwell enclosures (2-hour walls, 1-hour doors), distinguish between occupancy separation and exit enclosure ratings, and identify correct fire door ratings for different wall types.
+After studying this article, you should be able to separate three ideas that are often mixed in LEA questions: occupancy classification under PD 1096, occupancy separation under PD 1096, and protected exits/special hazards under RA 9514. You should also be able to catch the high-risk error in this topic: **PD 1096 Group D is Institutional, not Storage. Group G is Storage and Hazardous.**
 
-## Core Concept
+## Why This Matters on the LEA
 
-Fire-rated separation creates protected zones within a building to limit the spread of fire and smoke. Unlike egress design (which focuses on _how people leave_), compartmentation asks _where fire is allowed to spread_. This strategy relies on fire-rated walls, doors, and construction assemblies that maintain their integrity and insulating value under extreme heat.
+Fire-rated separation is not a single memorized table. A question may ask about a hazardous storage room, an exit stair, a corridor, or a mixed-occupancy wall. Each case uses a different source path.
 
-In Philippine practice under **RA 9514** and **PD 1096**, separation requirements vary by occupancy group and location.
+- Use PD 1096 Rule VII, Section 701 to classify occupancy groups.
+- Use PD 1096 occupancy-separation provisions to understand one-hour, two-hour, three-hour, and four-hour separations.
+- Use RA 9514 2019 RIRR for protected exits, smoke-proof enclosures, hazardous processes, and special fire-safety provisions.
 
-- **Group D (Storage):** Requires 2-hour fire-rated separation from adjacent occupancies.
-- **Group G (High-Hazard):** Demands 4-hour separation from all other uses—the most stringent requirement in the code.
-- **Exit Stairwells:** Must be enclosed in 2-hour fire-rated walls with **1-hour fire-rated doors** (per PD 1096 Rule VII, Section 805).
-- **Standard Corridors:** Serving multiple tenancies require 1-hour minimum walls.
+The exam trap is to treat "storage" as Group D. The raw PD 1096 IRR shows Group D as Institutional. Storage and hazardous occupancies are Group G.
 
-The design principle is proportional risk: a stairwell is protected more heavily (2-hour) because it serves as a continuous vertical evacuation route; an office corridor is protected less (1-hour) because occupants have more immediate access to multiple exit paths.
-<ArticleMedia id="media-lea-dsgn-008-02-core-concept" type="image" caption="Fire-Rated Separation — Wall and Floor Assembly Ratings" description="Cross-section diagram of fire-rated assemblies: fire walls, fire barriers, fire partitions, horizontal assemblies, and shaft enclosures. Hourly ratings (1-hr to 4-hr) shown with construction type and opening protection requirements per RA 9514." suggestedAsset="Diagram or reference image" status="placeholder" />
+## Occupancy Groups First
 
-## Key Provisions
+PD 1096 Rule VII classifies Group D as Institutional. The listed examples include mental hospitals, jails, prisons, reformatories, nursing homes, and similar institutional uses. Storage is not Group D in the checked IRR text.
 
-| Space Type | Adjacent Occupancy / Component | Minimum Rating |
-|:--------------------------- |:----------------------------- |:-------------- |
-| **Group D** | Any other occupancy | 2-hour wall |
-| **Group G (High-hazard)** | Any other occupancy | 4-hour wall |
-| **Exit Stairwell Enclosure** | All sides (Interior) | 2-hour wall |
-| **Exit Door** | Opening in Exit Enclosure | **1-hour door** |
-| **Standard Corridor Wall** | Mixed occupancy/Tenancies | 1-hour wall |
+PD 1096 Rule VII classifies Group G as Storage and Hazardous. Division G-1 includes storage and handling of hazardous and highly flammable materials. A paint storage room, chemical storage room, LPG storage area, or similar high-hazard condition should make you think Group G or a special hazard provision, not Group D.
 
-## Construction and Testing
+## Verified Rating Rules
 
-Fire-rated assemblies are tested per **ASTM E119** or equivalent methods accepted under PD 1096 Section 604. A "2-hour rating" means the assembly resists fire for 120 minutes without flame penetration or the unexposed face exceeding a temperature rise of 180°C (average) or 325°C (individual point).
+| Situation | Verified source rule | Safe exam answer |
+| --- | --- | --- |
+| Required exit connecting three storeys or less | RA 9514 2019 RIRR, Section 10.2.5.2(B) | At least 1-hour fire resistance for the protected exit separation. |
+| Required exit connecting four storeys or more | RA 9514 2019 RIRR, Section 10.2.5.2(B) | At least 2-hour fire resistance; supported by noncombustible construction. |
+| Smoke-proof enclosure | RA 9514 2019 RIRR, smoke-proof enclosure provisions | 2-hour barriers enclosing the smoke-proof enclosure. |
+| Process, operation, or storage with hazard greater than normal occupancy | RA 9514 2019 RIRR, Section 10.2.6.10(A) | At least 4-hour fire resistance, automatic fire protection, or both; high hazard requires both. |
+| PD 1096 four-hour occupancy separation | PD 1096 2004 Revised IRR, occupancy separation provisions | A four-hour separation has no openings and is not less than four-hour fire-resistive construction. |
 
-**Common Assembly Ratings:**
+## How to Apply the Rule
 
-- **Concrete/Masonry:** Inherently fire-resistant; 150mm (6") CHB typically yields a 2-hour rating.
-- **5/8" (15.9mm) Type X Gypsum Board:** Provides 1-hour rating per layer on each side of a stud.
-- **Steel Framing:** Must be protected by gypsum or spray-on fireproofing as steel loses structural integrity at high temperatures.
+1. Classify the use correctly. If the question says mental hospital, jail, prison, or similar institutional use, that points toward Group D. If it says storage or handling of hazardous or highly flammable material, that points toward Group G or a special hazard rule.
+2. Identify whether the element is an exit enclosure, a corridor, an occupancy separation, or a special hazard enclosure.
+3. Use the source path that matches the element. Do not use an occupancy group label to answer an exit enclosure question.
+4. Avoid material shortcuts unless the tested assembly is supported by a listed/tested source. A fire rating belongs to an assembly or required construction, not merely to the name of a material.
 
-## How It's Tested (Exam Patterns)
+## Common Exam Patterns
 
-**Test Pattern 1: Occupancy Group Separation**
-A design shows a Group D (storage) space adjacent to a Group B (office) space. The exam asks for the required wall rating.
+**Pattern 1: Wrong occupancy label.** A question says "Group D storage." The correct response is to flag the premise. Under PD 1096 Rule VII, Group D is Institutional. Storage and hazardous uses are Group G.
 
-- **Answer:** 2-hour (Group D from any other).
-- **Mistake to Avoid:** Confusing this with the Group G 4-hour rule.
+**Pattern 2: Multi-storey exit enclosure.** A protected exit that connects four or more storeys needs a 2-hour fire resistance rating under RA 9514 Section 10.2.5.2(B). A 1-hour stair enclosure is not enough in that condition.
 
-**Test Pattern 2: Exit Stairwell Enclosure**
-A multi-story office building has a central exit stair. The exam states the stair walls are 1-hour rated.
+**Pattern 3: Hazardous storage.** If a process, operation, or storage condition has a hazard greater than normal occupancy, RA 9514 Section 10.2.6.10(A) requires at least 4-hour fire resistance, automatic fire protection, or both; where the hazard is high, both are used.
 
-- **Answer:** Non-compliant. Exit stairs require 2-hour walls and 1-hour doors.
+**Pattern 4: Corridor versus exit.** A corridor, exit passageway, protected exit, and smoke-proof enclosure are not interchangeable. Read the exact element named in the question before choosing the hour rating.
 
-**Test Pattern 3: Opening Protection Logic**
-A 2-hour fire-rated **Occupancy Separation** wall is provided. What is the required rating for a fire door in that specific wall?
+## Real-World Application
 
-- **Answer:** 1.5-hour. (Per PD 1096, openings in 2-hour _occupancy separations_ require 1.5-hour assemblies, but standard _exit stair doors_ only require 1-hour).
-<ArticleMedia id="media-lea-dsgn-008-02-core-concept" type="image" caption="Fire-Resistive Construction — Hourly Ratings by Building Element" description="Cutaway building section showing fire-resistive ratings per PD 1096 for: structural frame (1-4 hrs depending on Type), fire walls (2-4 hr separation), floor/celling assemblies, shaft enclosures, and opening protectives (fire doors, dampers). Occupancy-based rating requirements cross-referenced." suggestedAsset="Diagram or reference image" status="placeholder" />
+Suppose an architect in Davao is reviewing a four-storey school laboratory building with a small paint and solvent storage room beside an office. A junior drafter labels the room "Group D storage" and specifies a 2-hour wall. The first correction is classification: Group D is not storage under PD 1096. The second correction is source selection: because the room stores materials with hazard greater than normal office occupancy, the architect checks RA 9514 special-hazard provisions, not just a generic mixed-occupancy shortcut. The architect then coordinates with the fire-safety designer and BFP reviewer on enclosure rating, automatic protection, openings, ventilation, and allowed quantities. The lesson is source discipline. If the question names an exit stair, use the protected-exit rule. If it names hazardous storage, use the hazard rule. If it names Group D, verify that the use is actually institutional.
+
+## Source Notes for Learners
+
+- Source: PD 1096 2004 Revised IRR, Rule VII, Section 701, Group D and Group G occupancy classifications.
+- Source: PD 1096 2004 Revised IRR, occupancy separation definitions for one-hour through four-hour fire-resistive occupancy separations.
+- Source: RA 9514 2019 RIRR, Section 10.2.5.2(B), protective enclosure of exits.
+- Source: RA 9514 2019 RIRR, smoke-proof enclosure provisions.
+- Source: RA 9514 2019 RIRR, Section 10.2.6.10(A), hazards greater than normal occupancy.
 
 ## Cross-References
 
-See **LEA-DSGN-008-01** (Fire Egress) for occupant load-based exit design, **LEA-DSGN-008-03** (Sprinkler Systems) for trade-offs between separation and suppression, and **LEA-DSGN-006-04** (Warehouses) for 4-hour Group G separation.
-
-## Common Mistakes
-
-<WikiMistakeList mistakes={[
- 'ERR-DSGN-023: Claiming exit stairs do not need fire-rated walls (they need 2-hour walls).',
- 'ERR-DSGN-020: Confusing fire-ratings (hours) with travel distance (meters).',
- 'Applying 1-hour corridor ratings to 2-hour exit enclosures.',
- 'Installing a 1-hour door in a 2-hour Occupancy Separation wall (requires 1.5-hour door).',
- 'Failing to specify 4-hour ratings for Group G High-Hazard enclosures.',
- ]} />
+See **LEA-DSGN-008-01** for fire egress, **LEA-DSGN-008-03** for sprinkler systems, and **PD 1096 Rule VII Occupancy** for group classification.

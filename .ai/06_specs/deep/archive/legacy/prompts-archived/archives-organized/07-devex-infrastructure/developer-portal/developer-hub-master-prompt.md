@@ -237,7 +237,7 @@ Instead, we execute in **strict sequential phases**. Each phase has explicit del
    - `preview: React.ReactNode` — the live preview content
    - `propsTable: PropsTableEntry[]` — array of prop definitions
    - `codeSnippet: string` — the raw code string for the Code tab
-   
+
    This component renders three tabs: **Preview** | **Props** | **Code**
 
 2. **`src/components/developer/PropsTable.tsx`** — A table component that renders prop definitions with columns: Name, Type, Default, Required, Description. Use `font-mono` for Name and Type columns.

@@ -1,8 +1,8 @@
 # SlateCamp — Product Architecture Document
-**Version:** 2.1 — Updated pricing + expanded Phase 1 integration specs  
-**Last Updated:** March 2026  
-**Classification:** Internal · Product Architect Reference  
-**Tagline:** Know you'll win.  
+**Version:** 2.1 — Updated pricing + expanded Phase 1 integration specs
+**Last Updated:** March 2026
+**Classification:** Internal · Product Architect Reference
+**Tagline:** Know you'll win.
 **Governing Question:** *Does this make a student more likely to win their Licensure Exam?*
 
 ---
@@ -175,8 +175,8 @@ Every time the Readiness Score is computed, a snapshot is written to `readiness_
 
 ### 4.1 Wiki — The SlateCamp Knowledge Base
 
-**Status:** ✅ Built  
-**Type:** Knowledge infrastructure  
+**Status:** ✅ Built
+**Type:** Knowledge infrastructure
 
 **What it is:** The vetted, definitive repository for every ALE concept. Every article is authored by a Subject Matter Expert (SME), tied to a specific `topic_id` in the master taxonomy, and linked bidirectionally to the quiz questions, 3D models, and notes that reference the same concept.
 
@@ -199,8 +199,8 @@ wiki_article_taxonomy (article_id, node_id, is_primary)
 
 ### 4.2 Quiz Engine — Camp Mode & Storm Mode
 
-**Status:** ✅ Built  
-**Type:** Diagnostic core  
+**Status:** ✅ Built
+**Type:** Diagnostic core
 
 **What it is:** The primary data-generating surface. Every question answered flows into `user_interactions` → `user_node_mastery` → Readiness Score.
 
@@ -233,8 +233,8 @@ wiki_article_taxonomy (article_id, node_id, is_primary)
 
 ### 4.3 Notes Workspace — The Synthesis Ledger
 
-**Status:** ✅ Built  
-**Type:** Personal workspace  
+**Status:** ✅ Built
+**Type:** Personal workspace
 
 **What it is:** Every captured note — highlighted from the Wiki, saved from a quiz rationale, or snapshotted from the 3D Lab — is automatically tagged to the master taxonomy.
 
@@ -251,8 +251,8 @@ wiki_article_taxonomy (article_id, node_id, is_primary)
 
 ### 4.4 Analytics Dashboard
 
-**Status:** ✅ Built  
-**Type:** Analytics core  
+**Status:** ✅ Built
+**Type:** Analytics core
 
 **What it is:** A separate, dedicated analytics surface. Not the main dashboard — the main dashboard is the Daily Launchpad. The Analytics Dashboard is for deep performance review.
 
@@ -271,8 +271,8 @@ wiki_article_taxonomy (article_id, node_id, is_primary)
 
 ### 4.5 3D Lab — Interactive Building Codes
 
-**Status:** ⚠️ Designed — 186 modules mapped, currently 404  
-**Type:** Spatial learning  
+**Status:** ⚠️ Designed — 186 modules mapped, currently 404
+**Type:** Spatial learning
 
 **What it is:** WebGL-powered interactive 3D models with parametric feedback, slider-based cutaways, guided tour narratives, and code-cited hotspots. Every hotspot links directly back to the Wiki. Architecture is an inherently spatial discipline — reading a building code is insufficient. The 3D Lab makes the code visible.
 
@@ -307,8 +307,8 @@ This applies Cognitive Load Theory's expertise reversal principle — novices le
 
 ### 4.6 AI Reference Assistant — Bounded RAG
 
-**Status:** ⚠️ Designed  
-**Type:** AI tutor  
+**Status:** ⚠️ Designed
+**Type:** AI tutor
 
 **What it is:** A Socratic AI assistant tethered strictly to the SlateCamp database. Not a general-purpose chatbot. Not a search engine. A precision instrument for architectural licensure exam preparation.
 
@@ -335,7 +335,7 @@ All three mechanics are designed, not yet built. All are Pro-only. All connect d
 
 ### 5.1 Blindspot Protocol
 
-**Type:** Adaptive targeting  
+**Type:** Adaptive targeting
 **Psychological basis:** Zeigarnik Effect (unfinished tasks create persistent cognitive tension), Desirable Difficulty (Bjork, 1994)
 
 **How it works:**
@@ -352,14 +352,14 @@ All three mechanics are designed, not yet built. All are Pro-only. All connect d
 - Pacing Gauge: Queues calibrated to 15-minute sessions
 
 **Voice example:**
-> "Blindspot Protocol · 12 items  
+> "Blindspot Protocol · 12 items
 > Targeting: Building Technology — Structural Systems, Environmental Control Systems, Construction Methods"
 
 ---
 
 ### 5.2 Endurance Cycle
 
-**Type:** Stamina training  
+**Type:** Stamina training
 **Psychological basis:** Progressive overload, Cognitive Endurance (Baumeister et al., 1998), Delayed Feedback (Carver & Scheier, 1981)
 
 **How it works:**
@@ -375,14 +375,14 @@ All three mechanics are designed, not yet built. All are Pro-only. All connect d
 - Pacing Gauge: Primary driver — tracks endurance window vs exam duration
 
 **Voice example:**
-> "Endurance Session available · 55 items, ~48 minutes  
+> "Endurance Session available · 55 items, ~48 minutes
 > Last week: 45 items. Your reliable window was 38 items before accuracy dropped below 70%."
 
 ---
 
 ### 5.3 Proof Simulation
 
-**Type:** Readiness validation  
+**Type:** Readiness validation
 **Psychological basis:** Testing Effect (Roediger & Karpicke, 2006), Self-Efficacy Calibration (Bandura, 1977), Consolidation-Before-Analysis
 
 **How it works:**
@@ -398,15 +398,15 @@ All three mechanics are designed, not yet built. All are Pro-only. All connect d
 - Pacing Gauge: Validates endurance training under full exam pressure
 
 **Voice example:**
-> "Simulation Score: 68  
+> "Simulation Score: 68
 > Passing threshold: 70. Detailed breakdown available tomorrow at 9:00 AM."
 
 ---
 
 ## 6. Camp Trail — Flagship Feature
 
-**Status:** 🔄 In progress — highest build priority  
-**Type:** Flagship retention feature  
+**Status:** 🔄 In progress — highest build priority
+**Type:** Flagship retention feature
 **Positioning:** Product-level marketing, feature-level placement
 
 ### 6.1 What it is
@@ -496,8 +496,8 @@ Day marked complete when all steps are completed. Day can be completed in any or
 
 Students can enroll in multiple trails simultaneously. The schema handles attribution via `session_trail_credits` — a single quiz session on Building Laws nodes credits every active trail that has a pending step targeting those nodes.
 
-**Soft cap recommendation:** Surface a warning at 2 active trails.  
-> "You have 2 active trails. Students with more than 2 active trails complete 40% fewer of them."  
+**Soft cap recommendation:** Surface a warning at 2 active trails.
+> "You have 2 active trails. Students with more than 2 active trails complete 40% fewer of them."
 Data-driven, not a hard gate.
 
 ### 6.6 Assessment → Trail Recommendation Flow
@@ -509,8 +509,8 @@ Data-driven, not a hard gate.
 4. System reads user_global_stats.target_exam_date
 5. Algorithm: score + days_to_exam → recommended trail
 6. One trail surfaced with reasoning:
-   "Based on your score of 48% and 84 days until your exam, 
-    the 12-Week Comprehensive Trail is the right fit. 
+   "Based on your score of 48% and 84 days until your exam,
+    the 12-Week Comprehensive Trail is the right fit.
     Here's what Week 1 looks like."
 7. User enrolls or browses trail library
 8. Day 1 begins
@@ -723,7 +723,7 @@ CREATE TABLE public.session_trail_credits (
 
 ### 7.1 Assessment Quiz
 
-**Status:** 🔄 New — in progress  
+**Status:** 🔄 New — in progress
 **Purpose:** Cold start solver. Generates the student's initial Readiness Score and heatmap baseline. The emotional hook of the entire platform.
 
 **Structure:**
@@ -746,7 +746,7 @@ CREATE TABLE public.session_trail_credits (
 
 ### 7.2 Score Reveal
 
-**Status:** 🔄 New — in progress  
+**Status:** 🔄 New — in progress
 **This is the most important screen in the entire free user experience.**
 
 **What the student sees:**
@@ -833,7 +833,7 @@ ADD COLUMN pre_session_confidence_ratings jsonb DEFAULT '{}';
 **Schema change:** 1 new column on `user_interactions`:
 ```sql
 ALTER TABLE public.user_interactions
-ADD COLUMN error_type text;  
+ADD COLUMN error_type text;
 -- 'knowledge_gap' | 'misread' | 'distractor' | 'code_version' | 'time_pressure' | null
 ```
 
@@ -963,9 +963,9 @@ New quiz generation option: `contextual_variation: true` — when enabled, the s
 5. **Missing critical exceptions:** Did they cover the exceptions the ALE loves to test?
 
 **Output:** Not a score. A gap analysis:
-> "What you got right: [list]  
-> What was missing: [list]  
-> One factual issue: [specific correction with citation]  
+> "What you got right: [list]
+> What was missing: [list]
+> One factual issue: [specific correction with citation]
 > Revision prompt: [one focused question]"
 
 **Effect size:** d=0.55–1.0 for self-explanation. Among the highest in learning science literature.
@@ -1239,8 +1239,8 @@ All UI strings, error messages, onboarding copy, and system-generated feedback m
 
 ---
 
-*SlateCamp Product Architecture Document v2.0*  
-*Internal · Product Architect Reference · © 2025 SlateCamp*  
+*SlateCamp Product Architecture Document v2.0*
+*Internal · Product Architect Reference · © 2025 SlateCamp*
 *Maintained by: Claude (Product Architect) + Philip (Founder)*
 
 

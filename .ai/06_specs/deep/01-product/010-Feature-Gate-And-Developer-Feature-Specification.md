@@ -1,11 +1,11 @@
 # Feature Gate And Developer Feature Specification
 
-**Last Updated:** 2026-04-12  
-**Status:** Active - Post-Finalization Codebase Source of Truth  
-**Version:** 2.0  
-**Primary Evidence:**  
-- [2026-04-11_Enterprise-Grade-Feature-Gate-Execution-Report.md](</C:/Users/Philip Lewis/Desktop/slatecamp/.ai/plans/2026-04-11_Enterprise-Grade-Feature-Gate-Execution-Report.md>)  
-- [2026-04-11_Entitlement-Migration-Ledger.md](</C:/Users/Philip Lewis/Desktop/slatecamp/.ai/plans/2026-04-11_Entitlement-Migration-Ledger.md>)  
+**Last Updated:** 2026-04-12
+**Status:** Active - Post-Finalization Codebase Source of Truth
+**Version:** 2.0
+**Primary Evidence:**
+- [2026-04-11_Enterprise-Grade-Feature-Gate-Execution-Report.md](</C:/Users/Philip Lewis/Desktop/slatecamp/.ai/plans/2026-04-11_Enterprise-Grade-Feature-Gate-Execution-Report.md>)
+- [2026-04-11_Entitlement-Migration-Ledger.md](</C:/Users/Philip Lewis/Desktop/slatecamp/.ai/plans/2026-04-11_Entitlement-Migration-Ledger.md>)
 - [2026-04-11_Enterprise-Grade-Feature-Gate-Finalization-Plan.md](</C:/Users/Philip Lewis/Desktop/slatecamp/.ai/plans/2026-04-11_Enterprise-Grade-Feature-Gate-Finalization-Plan.md>)
 
 > This document is the authoritative product/engineering specification for SlateCamp's live entitlement, feature-gate, pricing-tier, and developer-tooling architecture after the enterprise-grade finalization pass.
@@ -49,22 +49,22 @@ This document does not cover:
 
 ## 2. Governing Principles
 
-1. **Canonical path first**  
+1. **Canonical path first**
    Paid and privileged decisions are expected to flow through `src/lib/entitlements/*`.
 
-2. **Identity, policy, and entitlements are distinct**  
+2. **Identity, policy, and entitlements are distinct**
    Role discovery is not the same as policy, and policy is not the same as feature access.
 
-3. **Developer tooling is separate from admin CMS access**  
+3. **Developer tooling is separate from admin CMS access**
    Internal tooling visibility and override write access are explicit policy decisions.
 
-4. **Storage normalization happens at the boundary**  
+4. **Storage normalization happens at the boundary**
    Legacy tier vocabulary is normalized once and not reinterpreted ad hoc across product code.
 
-5. **Auditability is part of enforcement**  
+5. **Auditability is part of enforcement**
    Denies, allows, overrides, and config mismatches are structured events, not just booleans.
 
-6. **Governance prevents drift**  
+6. **Governance prevents drift**
    New raw-tier and raw-role product gating patterns are blocked by a repo check.
 
 ---

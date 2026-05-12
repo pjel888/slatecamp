@@ -1,0 +1,147 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-050-local-first",
+  "batch_number": 50,
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T21:35:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "41447adf-185f-4a10-a0e9-16febe7b6168",
+    "slug": "pre-colonial-vernacular",
+    "title": "Pre-Colonial Vernacular",
+    "article_folder": ".ai/content-audit-export/articles/pre-colonial-vernacular--41447adf-185f-4a10-a0e9-16febe7b6168",
+    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-colonial-vernacular--41447adf-185f-4a10-a0e9-16febe7b6168",
+    "candidate_path": ".ai/content-audit-export/articles/pre-colonial-vernacular--41447adf-185f-4a10-a0e9-16febe7b6168/candidate.md",
+    "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-colonial-vernacular--41447adf-185f-4a10-a0e9-16febe7b6168/candidate.md",
+    "question_edits_folder": ".ai/content-audit-export/articles/pre-colonial-vernacular--41447adf-185f-4a10-a0e9-16febe7b6168/question-edits",
+    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-colonial-vernacular--41447adf-185f-4a10-a0e9-16febe7b6168/question-edits",
+    "normalized_sha256": "sha256:5cd4d7c8cc33ade69529640e43486e9c311c7d0b700a996c122b2e2b2b6a83d5",
+    "candidate_sha256": "sha256:5cd4d7c8cc33ade69529640e43486e9c311c7d0b700a996c122b2e2b2b6a83d5",
+    "linked_questions_sha256": "sha256:1ea0b0eec91a0ee0a8eba880118a8cf9ee674673d7618c398a73e37993492ccf",
+    "sources_sha256": "sha256:a688e5037ad6fedd4350641192b732c633a98b7ab38f207fb064f3b073bf7228"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "refined_markdown_role": "locator_only",
+    "derivative_or_search_layer_as_primary": false,
+    "source_families_checked": [
+      {
+        "label": "HOA Module 4 P1 - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/HOA MODULE 4 P1.pdf",
+        "raw_pdf_sha256": "sha256:c89f7f79b3dd8272c7aa7d8848ea72c196d6c418f33105a32fb1ed2cfadbffb3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/HOA MODULE 4 P1.md",
+        "refined_markdown_sha256": "sha256:e515c8c5203118d4aeef0fe1f288c7deb76d75d3e3e1a779291712420c7df047",
+        "locator": "HOA Module 4 P1 refined markdown lines 1-235, 278-365, and 681-760"
+      },
+      {
+        "label": "Filipino Architecture - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Filipino Architecture.pdf",
+        "raw_pdf_sha256": "sha256:3d6f220218c46fe78e37d152d1c51504fd3c7d413cf14e71b39e93c7e1a5831d",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Filipino Architecture.md",
+        "refined_markdown_sha256": "sha256:f60dacc37e4b6634875ed68c18a55288e455476697fc250905460bbe6ac25ce1",
+        "locator": "Filipino Architecture refined markdown lines 40-118, 160-178, 680-700, 830-887, 905-917, and 1037-1039"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "pre_colonial_vernacular_article",
+    "contains_legal_or_code_claims": false,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 24,
+    "question_edits_created": [
+      "7651a304-18db-442f-8b4e-36ef51ccf426",
+      "e431ca65-2799-4aef-a2ee-c1599233b354",
+      "26c0aefe-44d4-4d35-a55c-7ee70c379f55",
+      "fbc2ca67-a975-462b-ac7f-49632898e25d",
+      "cda7c211-afa1-4cc4-9cc9-0730eb85277f",
+      "8281fcd2-b449-4b33-8859-8ee366eede91",
+      "57d1ba43-3116-4229-bdad-66dd2735f19b",
+      "1c5fa38e-8a1c-4075-898c-829b28eafc2e",
+      "1d348fa4-7abc-47b8-8f7d-984c634696a7",
+      "772eecb9-a291-4668-b118-707632ee2ff6",
+      "b084034c-696a-48bc-8b0f-32e83622eba9",
+      "bf6c3784-e029-49d7-b0b3-4c8ff00a0efd",
+      "588a7e00-d88d-4d63-8892-019e96dc95ba",
+      "9afc8be1-7e39-497f-ad61-61444c3dc057",
+      "45c2536d-6fc6-49fe-bdbb-51ecc4c3291e",
+      "6c900498-17c1-449e-a30e-216902860ad5",
+      "4203a657-dd44-4f8e-bdcd-9b83fe17725d",
+      "824a9176-136b-4f27-ad43-e29c701d00b6",
+      "1419c962-747e-4141-8e86-69bfe696c9b2",
+      "43fac0a0-e073-4af2-8df0-a85aa344a8fa",
+      "520807ba-dc83-4366-9955-5b23e5f4c89f",
+      "5eef21be-ad18-437c-b0ea-e5fa0b478341",
+      "192c78aa-8a09-4d37-bb20-8e4cc5220753",
+      "e5e056ef-43d6-4203-9066-e5ff6bd88fc7"
+    ]
+  },
+  "claims": [
+    {
+      "claim_id": "pre-colonial-vernacular-b050-claim-01",
+      "claim_text": "HOA Module 4 P1 identifies early shelters and regional vernacular forms before colonial architecture.",
+      "source_support": [
+        "hoa-local-raw-pdf--b050-41447adf-01",
+        "fil-local-raw-pdf--b050-41447adf-02"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "pre-colonial-vernacular-b050-claim-02",
+      "claim_text": "Vernacular architecture is framed by region, historical period, materials, and people.",
+      "source_support": [
+        "hoa-local-raw-pdf--b050-41447adf-01",
+        "fil-local-raw-pdf--b050-41447adf-02"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "pre-colonial-vernacular-b050-claim-03",
+      "claim_text": "Archetypal Southeast Asian domestic traits include elevated floor, raised pile foundation, and thatched roof.",
+      "source_support": [
+        "hoa-local-raw-pdf--b050-41447adf-01",
+        "fil-local-raw-pdf--b050-41447adf-02"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "pre-colonial-vernacular-b050-claim-04",
+      "claim_text": "Bahay Kubo is identified as a passively cooled lowland dwelling adapted to tropical climate.",
+      "source_support": [
+        "hoa-local-raw-pdf--b050-41447adf-01",
+        "fil-local-raw-pdf--b050-41447adf-02"
+      ],
+      "audit_result": "PASS"
+    }
+  ],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "removed_risk_notes": [
+      "Question sidecars replaced with checked local raw-source citations.",
+      "Article body rewritten from local raw PDF families and refined markdown locators only.",
+      "Legacy compose-error sidecars are removed after selected bundle compose passes."
+    ]
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_batch_050_complete": true,
+    "remote_publish_status": "not_attempted_by_request",
+    "remaining_local_blockers": []
+  },
+  "local_validation": {
+    "status": "PASS",
+    "valid": true,
+    "blockers": 0,
+    "checked_at": "2026-05-11T21:35:00.000+08:00",
+    "commands": [
+      "bun run content-audit:compose -- --article-id 41447adf-185f-4a10-a0e9-16febe7b6168 --overwrite --strict",
+      "bun run content-audit:diff -- --article-id 41447adf-185f-4a10-a0e9-16febe7b6168 --strict --summary",
+      "bun run content-audit:validate -- --article-id 41447adf-185f-4a10-a0e9-16febe7b6168 --summary",
+      "bun run content-audit:ui-block-edits -- --article-id 41447adf-185f-4a10-a0e9-16febe7b6168"
+    ]
+  }
+}

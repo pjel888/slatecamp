@@ -1,0 +1,121 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T18:30:00+08:00",
+  "audit_mode": "local_source_audit_no_supabase",
+  "protocols_applied": [
+    ".ai/CONTENT_EXCELLENCE_GOAL.md",
+    ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
+    ".ai/00_system/vitruvius-source-reference.md"
+  ],
+  "target": {
+    "article_id": "f3a7ecf3-4df6-4497-958f-3c724875163c",
+    "slug": "lea-dsgn-008-02-core-concept",
+    "title": "Fire-Rated Separation",
+    "article_folder": ".ai/content-audit-export/articles/lea-dsgn-008-02-core-concept--f3a7ecf3-4df6-4497-958f-3c724875163c",
+    "candidate_path": ".ai/content-audit-export/articles/lea-dsgn-008-02-core-concept--f3a7ecf3-4df6-4497-958f-3c724875163c/candidate.md",
+    "candidate_sha256": "sha256:954e5866298fb40de1c2909d37a63320d4250d4b7810c4d1cc865a2e7ca98384",
+    "normalized_sha256": "sha256:954e5866298fb40de1c2909d37a63320d4250d4b7810c4d1cc865a2e7ca98384",
+    "linked_questions_sha256": "sha256:8a2c0d579358475bd30942d5c6ed8a2124dea2ebdfb9a8fc6dc759682086a1eb",
+    "sources_sha256": "sha256:ccb283f3c59a29b75cda0d105f9b2ae89721273477a0baf80c66c304c4cb136a"
+  },
+  "classification": {
+    "content_type": "fire_code_design_article",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": [
+      "207d3a2a-6a2e-466a-b84a-a50c25347f17",
+      "26c11ad8-3179-4a6f-ba38-2e8c21626313",
+      "2f9d001a-d81b-4a88-ad0c-1ac1e75ec905",
+      "4a042acc-e141-4956-af63-4891be445ae0",
+      "56bb0700-c655-4755-bb77-aa107a78cc69",
+      "798a01cb-ce49-4c22-bf47-1ffa389bf773",
+      "8ddcca80-026d-4f78-b762-6094701455e5",
+      "9ca5402c-d13c-4aa8-aab3-abd037d41f1a",
+      "d04a7162-6802-4652-ba60-ce5ce072fd3e",
+      "f5221eb0-c916-4136-a133-cc779ac3d3a5"
+    ]
+  },
+  "raw_sources": [
+    {
+      "key": "pd1096_2004_irr",
+      "label": "PD 1096 2004 Revised IRR (DPWH Official)",
+      "source_type": "implementing_rules",
+      "source_id": "batch003-lea-dsgn-008-02-core-concept-source-01",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6"
+    },
+    {
+      "key": "ra9514_2019_rirr",
+      "label": "RA 9514 2019 Revised IRR",
+      "source_type": "implementing_rules",
+      "source_id": "batch003-lea-dsgn-008-02-core-concept-source-02",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+      "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266"
+    }
+  ],
+  "gate_results": {
+    "compose": "PASS: blockers=0; warnings=0; preserved_blocks_reinserted=0",
+    "diff": "PASS: safe_to_push=true; locally_safe_to_push=true; blockers=0",
+    "validate": "PASS: bun run content-audit:validate -- --article-id f3a7ecf3-4df6-4497-958f-3c724875163c --summary returned valid=true with zero blockers",
+    "push_dry_run": "not_attempted_local_first_recovery; Supabase remote fetch is final publishing only and is intentionally non-blocking here",
+    "supabase_mutation": "not_attempted"
+  },
+  "claims": [
+    {
+      "claim_id": "lea-dsgn-008-02-core-concept-claim-01",
+      "claim_text": "PD 1096 Group D is Institutional, not Storage; storage/hazardous occupancy is Group G.",
+      "audit_result": "PASS",
+      "source_support": [
+        "pd1096_2004_irr",
+        "ra9514_2019_rirr"
+      ]
+    },
+    {
+      "claim_id": "lea-dsgn-008-02-core-concept-claim-02",
+      "claim_text": "RA 9514 Section 10.2.5.2(B) supplies protected-exit fire-resistance ratings.",
+      "audit_result": "PASS",
+      "source_support": [
+        "pd1096_2004_irr",
+        "ra9514_2019_rirr"
+      ]
+    },
+    {
+      "claim_id": "lea-dsgn-008-02-core-concept-claim-03",
+      "claim_text": "RA 9514 Section 10.2.6.10(A) supplies the special-hazard storage/process protection rule.",
+      "audit_result": "PASS",
+      "source_support": [
+        "pd1096_2004_irr",
+        "ra9514_2019_rirr"
+      ]
+    },
+    {
+      "claim_id": "lea-dsgn-008-02-core-concept-claim-04",
+      "claim_text": "Unsupported material and door-rating shortcuts were removed.",
+      "audit_result": "PASS",
+      "source_support": [
+        "pd1096_2004_irr",
+        "ra9514_2019_rirr"
+      ]
+    },
+    {
+      "claim_id": "lea-dsgn-008-02-core-concept-linked-question-edits",
+      "claim_text": "Question edits staged locally for linked question IDs: 207d3a2a-6a2e-466a-b84a-a50c25347f17, 26c11ad8-3179-4a6f-ba38-2e8c21626313, 2f9d001a-d81b-4a88-ad0c-1ac1e75ec905, 4a042acc-e141-4956-af63-4891be445ae0, 56bb0700-c655-4755-bb77-aa107a78cc69, 798a01cb-ce49-4c22-bf47-1ffa389bf773, 8ddcca80-026d-4f78-b762-6094701455e5, 9ca5402c-d13c-4aa8-aab3-abd037d41f1a, d04a7162-6802-4652-ba60-ce5ce072fd3e, f5221eb0-c916-4136-a133-cc779ac3d3a5",
+      "audit_result": "PASS",
+      "source_support": [
+        "pd1096_2004_irr",
+        "ra9514_2019_rirr"
+      ]
+    }
+  ],
+  "unsupported_or_removed_claims": [],
+  "remaining_local_blockers": [],
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_recovery_complete": true,
+    "remote_publish_status": "not_attempted_by_request",
+    "remaining_local_blockers": []
+  }
+}

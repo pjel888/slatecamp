@@ -1,0 +1,32 @@
+{
+  "question_id": "0230b95d-eeee-4086-bd23-8551412e5268",
+  "baseline_hash": "sha256:9f1cebf33e178aa4eee91d8b6f97354bf4f352f324696544b7534f85efd91414",
+  "reason": "Batch 003 source audit replaced unsupported agency/mandate and procurement assertions with source-backed RA 9266, Civil Code Article 1723, RA 9184, RA 7160/COA, RA 11201, and EO 90 framing.",
+  "approved_by": "codex-local-source-audit-batch-003",
+  "approved_at": "2026-05-10T18:00:00+08:00",
+  "proposed": {
+    "text": "What is the source-safe distinction between government in-house architects and private-practice architects on architect-of-record liability?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Government architects have no RA 9266 responsibility"
+      },
+      {
+        "id": "b",
+        "text": "Private architects alone are connected to Civil Code Article 1723"
+      },
+      {
+        "id": "c",
+        "text": "Government employment cancels signed and sealed professional documents"
+      },
+      {
+        "id": "d",
+        "text": "The RA 9266 IRR architect-of-record rule applies to government and private-firm architects; government work also adds procurement and public-accountability controls"
+      }
+    ],
+    "correct_option_id": "d",
+    "rationale": "RA 9266 IRR ties architect-of-record responsibility to both government and private-firm architects.",
+    "explanation": "The edit corrects the old private-only framing.",
+    "code_citation": "RA 9266 IRR; Civil Code Article 1723; RA 9184"
+  }
+}

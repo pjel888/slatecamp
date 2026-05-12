@@ -1,0 +1,51 @@
+{
+  "question_id": "807e480a-bf66-4469-b7e4-e26e0450de4a",
+  "baseline_hash": "sha256:a49ab13b28ce02afe16fba88bc0a123a93d6dbe8065b2e5677d5b9b128dbf2e9",
+  "action": "replace",
+  "reason": "source-audited-article-batch-040-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-040",
+  "approved_at": "2026-05-11T14:04:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-040-local-first",
+    "checked_sources": [
+      {
+        "source_id": "bp-344-2024-rirr-ncda-local",
+        "label": "BP 344 2024 Revised IRR - NCDA",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "checked_markdown_lines": [
+          "BP 344 2024 IRR refined markdown lines 36-70",
+          "BP 344 2024 IRR refined markdown lines 198-224",
+          "BP 344 2024 IRR refined markdown lines 228-305",
+          "BP 344 2024 IRR refined markdown lines 770-850"
+        ]
+      }
+    ],
+    "citation": "BP 344 2024 Revised IRR, Doors"
+  },
+  "proposed": {
+    "text": "What opening force limit applies to interior door closer devices, except stated exclusions?",
+    "options": [
+      {
+        "id": "b040-a7cb-09-a",
+        "text": "Not more than 2.0 kg"
+      },
+      {
+        "id": "b040-a7cb-09-b",
+        "text": "Not more than 0.5 kg"
+      },
+      {
+        "id": "b040-a7cb-09-c",
+        "text": "Not more than 5.0 kg"
+      },
+      {
+        "id": "b040-a7cb-09-d",
+        "text": "No limit is stated for interior door closers"
+      }
+    ],
+    "correct_option_id": "b040-a7cb-09-a",
+    "rationale": "Correct answer: Not more than 2.0 kg. This is directly supported by BP 344 2024 Revised IRR, Doors.",
+    "explanation": "The Batch 040 source-audited correction uses only local raw PDF families and locator-checked refined markdown for BP 344 2024 Revised IRR, Doors.",
+    "code_citation": "BP 344 2024 Revised IRR, Doors"
+  }
+}

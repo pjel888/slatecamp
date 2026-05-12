@@ -1,0 +1,57 @@
+{
+  "question_id": "e2bf9103-fb0c-489d-af58-a56d52f99afd",
+  "baseline_hash": "sha256:4c7d4885975c5d462e206bd330e6fa0a3839d54d2379bf33c80f597b39eb034c",
+  "action": "replace",
+  "reason": "source-audited-article-batch-042-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes stale or non-local framing where present.",
+  "approved_by": "codex-local-first-batch-042",
+  "approved_at": "2026-05-11T15:13:00.657+08:00",
+  "source_audit_support": {
+    "parent_article_id": "1a02a1a5-27e5-4a26-85d2-fceac4433edc",
+    "parent_article_slug": "wheelchair-maneuvering-and-parking-slots",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "BP 344 2024 IRR refined markdown lines 230-311; BP 344 2024 IRR refined markdown lines 879-912; BP 344 2024 IRR refined markdown lines 698-700",
+    "checked_markdown_lines": [
+      "BP 344 2024 IRR refined markdown lines 230-311",
+      "BP 344 2024 IRR refined markdown lines 879-912",
+      "BP 344 2024 IRR refined markdown lines 698-700"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "bp-344-2024-rirr-ncda-local",
+        "label": "BP 344 2024 Revised IRR - NCDA local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+        "locator": "BP 344 2024 IRR refined markdown lines 230-311; BP 344 2024 IRR refined markdown lines 879-912; BP 344 2024 IRR refined markdown lines 698-700"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 042 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "In multi-story indoor parking, where should accessible slots be placed?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Next to accessible elevators or as close as possible to accessible pedestrian entrances."
+      },
+      {
+        "id": "b",
+        "text": "Place the slot in a ramped area."
+      },
+      {
+        "id": "c",
+        "text": "Use a standard slot with no transfer allowance."
+      },
+      {
+        "id": "d",
+        "text": "Locate it farthest from every accessible entrance."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The checked local source supports: Next to accessible elevators or as close as possible to accessible pedestrian entrances.",
+    "explanation": "The checked local source supports: Next to accessible elevators or as close as possible to accessible pedestrian entrances.",
+    "code_citation": "BP 344 accessible parking provisions"
+  }
+}

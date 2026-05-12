@@ -1,86 +1,45 @@
-
-
 ## Board Exam Quick Check
 
-Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+For partnership questions, anchor first on the RA 9266 definition: two or more Architects, SEC registration, and Board registration. Treat private agreement details as practice or contract matters unless a source is cited.
 
-**Common mistake:** treating a familiar keyword in **Lea Prac Frm 002 Partnership In Architectural Practice** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## Partnership in Architectural Practice
 
 ## Learning Goal
 
 After studying this article, you should be able to:
 
-- Define a professional partnership for architectural practice.
-- Explain the requirements: SEC registration, partnership agreement, PRC/BOA registration.
-- Describe joint and several liability among partners.
-- Distinguish a general professional partnership from a regular business partnership.
+- Define an architectural partnership under RA 9266 IRR.
+- Apply the 75 percent registered-and-licensed-architect composition rule.
+- Distinguish source-backed professional responsibility from separate partnership-law details.
+- Identify when a partnership must be restructured before it can remain compliant.
 
-### Types and Formation Requirements
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-prac-frm-002-partnership-in-architec", type="image", caption="Architecture Partnership Structure — Formation, Liability, and RLA Majority Rule", description="Organizational diagram showing: (1) Formation flow: Partners (minimum 2 architects) → SEC Registration (Articles of Partnership) → BOA/PRC Registration; (2) Ownership pie chart: 75%+ RLA (Registered Licensed Architects) minimum, up to 25% non-architect partners; (3) Liability illustration: Joint and several liability shown as each partner's personal assets connected to all partnership obligations; (4) Governance structure: Partners → Partnership Agreement → Profit-sharing ratios → Decision-making authority.", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+### Definition and Registration
 
-An architectural partnership is a group of two or more architects duly registered with the Securities and Exchange Commission (SEC) and the Board of Architecture. RA 9266 recognizes partnerships as legitimate forms of architectural practice where architects combine resources and expertise. General partnerships involve joint and several liability, while limited partnerships are not explicitly addressed in RA 9266.
+RA 9266 IRR defines an architectural partnership as a group of two or more Architects duly registered with the Securities and Exchange Commission and then with the Board of Architecture. The UAP SPP also describes group practice as a SEC-registered partnership or corporation, subject to compliance with RA 9266 Section 37.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Joint and several liability** means each partner can be held personally liable for the full amount of a claim, not just their proportional share. A client may pursue any single partner for the entire loss, leaving that partner to seek contribution from the others.
-[/SLATECAMP_UI_BLOCK]
+The source-backed registration sequence is therefore SEC registration for the partnership form and Board/PRC recognition for architectural practice. A private partnership agreement can organize management and profit sharing, but it is not a substitute for the professional registration required by RA 9266.
 
-Formation requires filing articles of partnership with the SEC, which includes the names and addresses of all partners, contributions, profit-sharing arrangements, and term of partnership. Each partner must be a Filipino citizen properly registered and licensed as an architect. The partnership agreement should establish decision-making authority, dispute resolution mechanisms, and withdrawal procedures. The partnership must be registered with both the SEC and the Board of Architecture.
+### The 75 Percent Rule
 
-### The Registered Licensed Architect (RLA) Majority Rule
+RA 9266 Section 37 allows a firm, company, partnership, corporation, or association to be registered for the practice of architecture only under stated conditions. Filipino citizens who are properly registered and licensed as architects may form the entity among themselves or with allied technical professionals. Registered and licensed architects must compose at least 75 percent of the owners, shareholders, members, incorporators, directors, and executive officers, as the case may be.
 
-RA 9266 mandates that registered and licensed architects compose at least 75 percent of the owners, shareholders, members, incorporators, directors, and executive officers in architectural firms. For partnerships, this means at least three-quarters of all partners must hold valid Certificates of Registration and Professional Identification Cards. This requirement protects the profession from non-architect control and ensures professional standards are maintained.
+For a partnership, the LEA-safe application is direct: if non-architect ownership or membership would reduce the RLA share below 75 percent, the structure must be corrected before it can satisfy the RA 9266 composition requirement.
 
-The RLA majority rule prevents non-architects from directing professional decisions or standards. If partnerships do not comply, they must register again with the SEC and BOA to achieve compliance. The Professional Regulatory Board of Architecture periodically reviews partnerships to ensure compliance with this composition requirement. Violations can result in suspension or revocation of registration certificates.
+### Responsibility and Agreement Limits
 
-### Liability and Joint Responsibility
+RA 9266 Section 37 states that individual members of the firm, partnership, association, or corporation are responsible for their individual and collective acts as an entity and as provided by law. That is the source-backed responsibility statement.
 
-Partners in an architectural partnership share joint and several liability for professional negligence, breach of contract, and all obligations arising from the partnership business. Each partner is personally liable for the acts and omissions of other partners committed within the scope of the partnership. Client claims can be pursued against any partner individually or against all partners collectively. Personal assets of each partner are exposed to partnership debts.
+Do not replace that wording with broader claims such as automatic joint-and-several liability unless a partnership-law source is part of the item. A partnership agreement may allocate management, continuity, document custody, indemnity, and withdrawal procedures within the partnership, but those private clauses do not erase the professional registration and responsibility requirements imposed by RA 9266.
 
-Professional responsibility flows through the partnership structure. The architect-of-record identified on project documents remains fully responsible, but the partnership as an entity also assumes liability. Service agreements should clearly delineate the responsible architect and specify indemnification among partners. Malpractice by one partner exposes other partners to liability unless the agreement explicitly limits it through indemnity clauses.
+### Continuity and Dissolution in Exam Items
 
-### Partnership Agreements and Operation
+RA 9266 gives the professional-registration baseline, not a complete dissolution code. If only one architect remains, the fact pattern no longer matches the RA 9266 definition of an architectural partnership as two or more Architects. A continuing practice must fit another compliant practice form or re-register as a compliant entity.
 
-Partnership agreements establish profit-sharing ratios, capital contributions, and decision-making authority. Common provisions address partner admission, withdrawal, dissolution procedures, and dispute resolution. Salaries, bonuses, and draw limitations may be specified. The agreement should detail each partner's responsibilities, project authority limits, and client relationship management. Written documentation prevents misunderstandings during the partnership's operation.
-
-Partnership operations include regular meetings to discuss major decisions, project selection, and fee structures. Partners may specialize in different architectural disciplines, allowing the firm to offer diverse services. However, all partners are bound by decisions made by authorized partners within the scope of the partnership business. The partnership name appears on all professional documents and must comply with naming regulations established by the BOA.
-
-### Dissolution and Continuation
-
-Dissolution of a partnership occurs upon agreement of all partners, death of a partner, incapacity, or breach of partnership terms. Notification to the PRC and BOA is required for changes in professional practice registration. Outstanding client relationships and project obligations must be transferred to a continuing partner or assigned to another licensed architect. Architectural documents remain the intellectual property of the partnership unless otherwise assigned.
-
-[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Partnership dissolution is a common LEA topic. Key triggers: agreement of all partners, death of a partner, incapacity, or breach of partnership terms. After dissolution, the remaining partners must check whether they still meet the 75% RLA requirement before continuing practice.
-[/SLATECAMP_UI_BLOCK]
-
-Continuation after a partner's withdrawal or death depends on the partnership agreement. A surviving partner may continue the practice if the agreement permits and if the remaining partners meet the 75 percent RLA requirement. Client notification and transfer of architect-of-record status are required. New partnerships may be formed with remaining architects, requiring re-registration with the SEC and BOA. The former partner's share is typically transferred according to the agreement or estate settlement.
-
----
+For projects in progress, the exam-safe answer is to preserve client obligations through a properly authorized registered architect or compliant entity. Do not assume automatic transfer of architect-of-record duties without an agreement and a professional authorization basis.
 
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)
-- [Partnership](lea-prac-frm-002)
 - [Corporate Practice](lea-prac-frm-003)
 - [Joint Venture](lea-prac-frm-004)
-- [Foreign Architects](lea-prac-frm-005)
-- [ASEAN MRA](lea-prac-frm-006)
-- [CPD Requirements](lea-prac-frm-008)
 - [RA 9266 Legal Framework](lea-prac-law-001)
-- [Government Procurement](lea-prac-frm-012)
-- [Environmental Laws](lea-prac-frm-017)
-
-
-[SLATECAMP_UI_BLOCK:ui_0004 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-prac-frm-002-governance-comparison", layout="single", type="image", status="placeholder", alt="Three-panel organizational governance diagram: (1) Sole Proprietorship — single architect at top with 100% control, unilateral decision-making, no board or partners; (2) Partnership — all partners in governance circle, majority or unanimous decisions per agreement, profit-sharing ratios; (3) Corporation — hierarchical structure: Shareholders (75% RLA min) → Board of Directors (RLA only) → Executive Officers (RLA only) → Staff. Each panel shows: who makes strategic decisions, who has profit rights, and succession mechanism. Annotations highlighting key legal constraints: RLA majority rule (Sec. 5 RA 9266), non-architect shareholder limits.", caption="Practice Form Governance — Decision-Making and Ownership Control Comparison", suggestedAsset="Architectural reference image or diagram", placementIntent="Visual reference for architectural period/typology"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]

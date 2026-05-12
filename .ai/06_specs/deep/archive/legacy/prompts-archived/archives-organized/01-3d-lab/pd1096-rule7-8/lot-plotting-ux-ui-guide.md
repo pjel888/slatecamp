@@ -1,8 +1,8 @@
 # Custom Polygon Lot Plotting — UX/UI Guide & Implementation Plan
 
-**Feature:** Advanced Surveyor-Mode Lot Generation  
-**Module:** Development Controls Calculator (LotConfigurator)  
-**Design System Version:** SlateCamp Design System v1 (Rams Standard)  
+**Feature:** Advanced Surveyor-Mode Lot Generation
+**Module:** Development Controls Calculator (LotConfigurator)
+**Design System Version:** SlateCamp Design System v1 (Rams Standard)
 **Date:** April 2026
 
 ---

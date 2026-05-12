@@ -1,0 +1,456 @@
+{
+  "batch_id": "source-audited-article-batch-065-local-first",
+  "batch_number": 65,
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "generated_at": "2026-05-11T23:25:00.000+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "mode": "local-first content audit only",
+  "supabase_push_attempted": false,
+  "deploy_attempted": false,
+  "commit_attempted": false,
+  "selection_rule": "five unpassed LEA legal/code/professional-practice/accessibility/design clusters with linked questions and checked local raw PDF/source families, excluding article IDs recorded in source-audited Batch 001 through Batch 064 artifacts",
+  "inherited_blocker_status": "Batch 064 blockers=0",
+  "completed_articles": [
+    {
+      "article_id": "7eb99f1e-4b28-4b86-beed-0adc56824ff8",
+      "slug": "lea-dsgn-003-06-core-concept",
+      "title": "Dormitories and Student Housing",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-dsgn-003-06-core-concept--7eb99f1e-4b28-4b86-beed-0adc56824ff8",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-003-06-core-concept--7eb99f1e-4b28-4b86-beed-0adc56824ff8",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-dsgn-003-06-core-concept--7eb99f1e-4b28-4b86-beed-0adc56824ff8/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-003-06-core-concept--7eb99f1e-4b28-4b86-beed-0adc56824ff8/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 3,
+      "original_hash": "sha256:1d1d6c9dbba96d661c4e501c8673ccf8a538eb50b1a3b4541ffdef171d8e6c53",
+      "normalized_hash": "sha256:297f6d04f0c8c8dd47af58ebbbe185e2d9f156e4c1b0d91b88fb870b7582dbd4",
+      "candidate_hash": "sha256:297f6d04f0c8c8dd47af58ebbbe185e2d9f156e4c1b0d91b88fb870b7582dbd4",
+      "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "sources_hash": "sha256:d83de1a3f6bfe8167a0c979c3f33b3e9bef9e794a6d7bb7b9be5f85d89899331",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-003-06-core-concept--7eb99f1e-4b28-4b86-beed-0adc56824ff8/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-003-06-core-concept--7eb99f1e-4b28-4b86-beed-0adc56824ff8/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-003-06-core-concept--7eb99f1e-4b28-4b86-beed-0adc56824ff8/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-003-06-core-concept--7eb99f1e-4b28-4b86-beed-0adc56824ff8/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-003-06-core-concept--7eb99f1e-4b28-4b86-beed-0adc56824ff8/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-003-06-core-concept--7eb99f1e-4b28-4b86-beed-0adc56824ff8/ui-blocks.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-003-06-core-concept--7eb99f1e-4b28-4b86-beed-0adc56824ff8/ui-block-edits.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-003-06-core-concept--7eb99f1e-4b28-4b86-beed-0adc56824ff8/parser-errors.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-003-06-core-concept--7eb99f1e-4b28-4b86-beed-0adc56824ff8/compose-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-003-06-core-concept--7eb99f1e-4b28-4b86-beed-0adc56824ff8/diff-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-003-06-core-concept--7eb99f1e-4b28-4b86-beed-0adc56824ff8/diff-report.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-003-06-core-concept--7eb99f1e-4b28-4b86-beed-0adc56824ff8/ui-block-edit-validation.json"
+      ],
+      "question_edit_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-003-06-core-concept--7eb99f1e-4b28-4b86-beed-0adc56824ff8/question-edits/047113d9-ee9b-42e7-b287-d70e8f2141ee.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-003-06-core-concept--7eb99f1e-4b28-4b86-beed-0adc56824ff8/question-edits/06f582c0-9937-47fe-aa98-20f9a60cc7d4.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-003-06-core-concept--7eb99f1e-4b28-4b86-beed-0adc56824ff8/question-edits/466ef5b0-3439-414f-9857-f7c1864cf01b.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-003-06-core-concept--7eb99f1e-4b28-4b86-beed-0adc56824ff8/question-edits/6c701196-e405-4113-8f1b-cbfc2aaba98d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-003-06-core-concept--7eb99f1e-4b28-4b86-beed-0adc56824ff8/question-edits/99542da8-2eac-4acc-b880-1fd8fa6d2b29.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-003-06-core-concept--7eb99f1e-4b28-4b86-beed-0adc56824ff8/question-edits/a463e347-42c8-4aae-b2d8-5061f30b6c23.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-003-06-core-concept--7eb99f1e-4b28-4b86-beed-0adc56824ff8/question-edits/ce44e176-bd26-4981-bd9e-f050929bab11.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-003-06-core-concept--7eb99f1e-4b28-4b86-beed-0adc56824ff8/question-edits/d6ca925c-9231-4f63-92f2-f7e66cb862ef.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-003-06-core-concept--7eb99f1e-4b28-4b86-beed-0adc56824ff8/question-edits/e12d0fbf-541a-465e-854b-15b507f10fa5.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-003-06-core-concept--7eb99f1e-4b28-4b86-beed-0adc56824ff8/question-edits/ea05341f-a795-46cb-8bde-f0e7f04ccfe2.json"
+      ],
+      "scenario_enrichment_status": "eligible-deferred",
+      "validation": {
+        "compose_blockers": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "bundle_validate_valid": true,
+        "bundle_validate_blockers": [],
+        "bundle_validate_warnings": [
+          "component-usage.json has not been generated for this article yet."
+        ],
+        "ui_block_edit_valid": true,
+        "ui_block_edit_blockers": [],
+        "ui_block_edit_warnings": [],
+        "source_audit_status": "PASS_LOCAL_FIRST",
+        "candidate_hash_matches_evidence": true,
+        "raw_pdf_gate_status": "PASS",
+        "scoped_placeholder_internal_note_hits": 0,
+        "source_hash_checks_pass": true,
+        "stale_compose_error_blocker": false
+      }
+    },
+    {
+      "article_id": "2b843aa3-45d9-4421-ae00-107e94f28495",
+      "slug": "lea-dsgn-006-04-core-concept",
+      "title": "Warehouses and cold storage facilities",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-dsgn-006-04-core-concept--2b843aa3-45d9-4421-ae00-107e94f28495",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-006-04-core-concept--2b843aa3-45d9-4421-ae00-107e94f28495",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-dsgn-006-04-core-concept--2b843aa3-45d9-4421-ae00-107e94f28495/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-006-04-core-concept--2b843aa3-45d9-4421-ae00-107e94f28495/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 3,
+      "original_hash": "sha256:6bbc41745e96eea348c0badff465dd5b6f69e3ce4ab8515ab889994311f2251d",
+      "normalized_hash": "sha256:b78aa4c693e3ee9c9ed8bd03f4757c3bab34eacc8effc5f03c4df2eeae359288",
+      "candidate_hash": "sha256:b78aa4c693e3ee9c9ed8bd03f4757c3bab34eacc8effc5f03c4df2eeae359288",
+      "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "sources_hash": "sha256:d83de1a3f6bfe8167a0c979c3f33b3e9bef9e794a6d7bb7b9be5f85d89899331",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-006-04-core-concept--2b843aa3-45d9-4421-ae00-107e94f28495/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-006-04-core-concept--2b843aa3-45d9-4421-ae00-107e94f28495/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-006-04-core-concept--2b843aa3-45d9-4421-ae00-107e94f28495/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-006-04-core-concept--2b843aa3-45d9-4421-ae00-107e94f28495/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-006-04-core-concept--2b843aa3-45d9-4421-ae00-107e94f28495/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-006-04-core-concept--2b843aa3-45d9-4421-ae00-107e94f28495/ui-blocks.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-006-04-core-concept--2b843aa3-45d9-4421-ae00-107e94f28495/ui-block-edits.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-006-04-core-concept--2b843aa3-45d9-4421-ae00-107e94f28495/parser-errors.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-006-04-core-concept--2b843aa3-45d9-4421-ae00-107e94f28495/compose-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-006-04-core-concept--2b843aa3-45d9-4421-ae00-107e94f28495/diff-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-006-04-core-concept--2b843aa3-45d9-4421-ae00-107e94f28495/diff-report.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-006-04-core-concept--2b843aa3-45d9-4421-ae00-107e94f28495/ui-block-edit-validation.json"
+      ],
+      "question_edit_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-006-04-core-concept--2b843aa3-45d9-4421-ae00-107e94f28495/question-edits/16b0137a-1696-485f-a092-968f7765309b.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-006-04-core-concept--2b843aa3-45d9-4421-ae00-107e94f28495/question-edits/1b406df1-e535-48e9-bff9-75bca966f422.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-006-04-core-concept--2b843aa3-45d9-4421-ae00-107e94f28495/question-edits/290ac1bf-bb11-4762-b1bd-140da0cc21fe.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-006-04-core-concept--2b843aa3-45d9-4421-ae00-107e94f28495/question-edits/452057aa-4670-4fba-aded-12f3b6185a3b.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-006-04-core-concept--2b843aa3-45d9-4421-ae00-107e94f28495/question-edits/7fc31aa9-f228-4c5a-8593-84738ec7284b.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-006-04-core-concept--2b843aa3-45d9-4421-ae00-107e94f28495/question-edits/9080ec81-fa7e-4a50-bae4-e50476bc33cd.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-006-04-core-concept--2b843aa3-45d9-4421-ae00-107e94f28495/question-edits/aee63288-6cfe-4e8b-8362-195a41132834.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-006-04-core-concept--2b843aa3-45d9-4421-ae00-107e94f28495/question-edits/bbb8afbe-eadf-4a18-87d5-2c45b7f237fe.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-006-04-core-concept--2b843aa3-45d9-4421-ae00-107e94f28495/question-edits/c501176a-ff38-4a6b-a312-01c73f75e8bc.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-006-04-core-concept--2b843aa3-45d9-4421-ae00-107e94f28495/question-edits/e744b934-8f7e-4a21-b86e-bb4056f2793b.json"
+      ],
+      "scenario_enrichment_status": "eligible-deferred",
+      "validation": {
+        "compose_blockers": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "bundle_validate_valid": true,
+        "bundle_validate_blockers": [],
+        "bundle_validate_warnings": [
+          "component-usage.json has not been generated for this article yet."
+        ],
+        "ui_block_edit_valid": true,
+        "ui_block_edit_blockers": [],
+        "ui_block_edit_warnings": [],
+        "source_audit_status": "PASS_LOCAL_FIRST",
+        "candidate_hash_matches_evidence": true,
+        "raw_pdf_gate_status": "PASS",
+        "scoped_placeholder_internal_note_hits": 0,
+        "source_hash_checks_pass": true,
+        "stale_compose_error_blocker": false
+      }
+    },
+    {
+      "article_id": "08606903-14a9-4077-a94f-4c9d1f54ec08",
+      "slug": "lea-dsgn-004-08-core-concept",
+      "title": "Resorts and eco-tourism facilities",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-dsgn-004-08-core-concept--08606903-14a9-4077-a94f-4c9d1f54ec08",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-08-core-concept--08606903-14a9-4077-a94f-4c9d1f54ec08",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-dsgn-004-08-core-concept--08606903-14a9-4077-a94f-4c9d1f54ec08/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-08-core-concept--08606903-14a9-4077-a94f-4c9d1f54ec08/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 3,
+      "original_hash": "sha256:4d8b0932cd204ac7ecfae6915455ddd0a9c28e0a6ef00573d84bca39730b08cf",
+      "normalized_hash": "sha256:a798287fcedfdd84aebc6663d7001b7d8144b2a4b7a204b8179cc92089aebec7",
+      "candidate_hash": "sha256:a798287fcedfdd84aebc6663d7001b7d8144b2a4b7a204b8179cc92089aebec7",
+      "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "sources_hash": "sha256:d83de1a3f6bfe8167a0c979c3f33b3e9bef9e794a6d7bb7b9be5f85d89899331",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-08-core-concept--08606903-14a9-4077-a94f-4c9d1f54ec08/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-08-core-concept--08606903-14a9-4077-a94f-4c9d1f54ec08/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-08-core-concept--08606903-14a9-4077-a94f-4c9d1f54ec08/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-08-core-concept--08606903-14a9-4077-a94f-4c9d1f54ec08/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-08-core-concept--08606903-14a9-4077-a94f-4c9d1f54ec08/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-08-core-concept--08606903-14a9-4077-a94f-4c9d1f54ec08/ui-blocks.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-08-core-concept--08606903-14a9-4077-a94f-4c9d1f54ec08/ui-block-edits.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-08-core-concept--08606903-14a9-4077-a94f-4c9d1f54ec08/parser-errors.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-08-core-concept--08606903-14a9-4077-a94f-4c9d1f54ec08/compose-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-08-core-concept--08606903-14a9-4077-a94f-4c9d1f54ec08/diff-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-08-core-concept--08606903-14a9-4077-a94f-4c9d1f54ec08/diff-report.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-08-core-concept--08606903-14a9-4077-a94f-4c9d1f54ec08/ui-block-edit-validation.json"
+      ],
+      "question_edit_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-08-core-concept--08606903-14a9-4077-a94f-4c9d1f54ec08/question-edits/06bfdb70-3bfd-4da7-99ff-d0ffcabd8fc8.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-08-core-concept--08606903-14a9-4077-a94f-4c9d1f54ec08/question-edits/206771c3-aac4-496b-bf16-e3a6e7b0e211.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-08-core-concept--08606903-14a9-4077-a94f-4c9d1f54ec08/question-edits/36d8e633-46b2-4d77-a83a-573eb84ee548.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-08-core-concept--08606903-14a9-4077-a94f-4c9d1f54ec08/question-edits/44c37e32-f007-4790-9dde-5332700cc4fa.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-08-core-concept--08606903-14a9-4077-a94f-4c9d1f54ec08/question-edits/45907550-9b55-4dd2-905e-40a26c64531e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-08-core-concept--08606903-14a9-4077-a94f-4c9d1f54ec08/question-edits/47d0a086-096f-41bb-9d34-6a79642a0d6f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-08-core-concept--08606903-14a9-4077-a94f-4c9d1f54ec08/question-edits/70f2448d-a007-4c9a-9e09-6687c56a767b.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-08-core-concept--08606903-14a9-4077-a94f-4c9d1f54ec08/question-edits/90233379-af83-47bf-b61f-af584d10bf8f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-08-core-concept--08606903-14a9-4077-a94f-4c9d1f54ec08/question-edits/b7bf06e0-44b6-4254-a466-a21654788618.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-08-core-concept--08606903-14a9-4077-a94f-4c9d1f54ec08/question-edits/bc08084c-483e-4172-870a-fb92d3e95866.json"
+      ],
+      "scenario_enrichment_status": "eligible-deferred",
+      "validation": {
+        "compose_blockers": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "bundle_validate_valid": true,
+        "bundle_validate_blockers": [],
+        "bundle_validate_warnings": [
+          "component-usage.json has not been generated for this article yet."
+        ],
+        "ui_block_edit_valid": true,
+        "ui_block_edit_blockers": [],
+        "ui_block_edit_warnings": [],
+        "source_audit_status": "PASS_LOCAL_FIRST",
+        "candidate_hash_matches_evidence": true,
+        "raw_pdf_gate_status": "PASS",
+        "scoped_placeholder_internal_note_hits": 0,
+        "source_hash_checks_pass": true,
+        "stale_compose_error_blocker": false
+      }
+    },
+    {
+      "article_id": "0eb7f711-b740-42d6-9c25-ee45b0242eb4",
+      "slug": "lea-dsgn-004-09-core-concept",
+      "title": "Restaurants",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-dsgn-004-09-core-concept--0eb7f711-b740-42d6-9c25-ee45b0242eb4",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-09-core-concept--0eb7f711-b740-42d6-9c25-ee45b0242eb4",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-dsgn-004-09-core-concept--0eb7f711-b740-42d6-9c25-ee45b0242eb4/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-09-core-concept--0eb7f711-b740-42d6-9c25-ee45b0242eb4/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 3,
+      "original_hash": "sha256:5209925adbf280041a85dddd5110169ce13b433426ace5fd1b9e26f1ea0943fb",
+      "normalized_hash": "sha256:38a0476d606bf14b181ac3cf55dc5701652b939c57bbcefc470c8f26225d4802",
+      "candidate_hash": "sha256:38a0476d606bf14b181ac3cf55dc5701652b939c57bbcefc470c8f26225d4802",
+      "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "sources_hash": "sha256:d83de1a3f6bfe8167a0c979c3f33b3e9bef9e794a6d7bb7b9be5f85d89899331",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-09-core-concept--0eb7f711-b740-42d6-9c25-ee45b0242eb4/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-09-core-concept--0eb7f711-b740-42d6-9c25-ee45b0242eb4/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-09-core-concept--0eb7f711-b740-42d6-9c25-ee45b0242eb4/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-09-core-concept--0eb7f711-b740-42d6-9c25-ee45b0242eb4/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-09-core-concept--0eb7f711-b740-42d6-9c25-ee45b0242eb4/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-09-core-concept--0eb7f711-b740-42d6-9c25-ee45b0242eb4/ui-blocks.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-09-core-concept--0eb7f711-b740-42d6-9c25-ee45b0242eb4/ui-block-edits.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-09-core-concept--0eb7f711-b740-42d6-9c25-ee45b0242eb4/parser-errors.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-09-core-concept--0eb7f711-b740-42d6-9c25-ee45b0242eb4/compose-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-09-core-concept--0eb7f711-b740-42d6-9c25-ee45b0242eb4/diff-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-09-core-concept--0eb7f711-b740-42d6-9c25-ee45b0242eb4/diff-report.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-09-core-concept--0eb7f711-b740-42d6-9c25-ee45b0242eb4/ui-block-edit-validation.json"
+      ],
+      "question_edit_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-09-core-concept--0eb7f711-b740-42d6-9c25-ee45b0242eb4/question-edits/0953b128-2689-4042-87b2-61d29d1ed82d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-09-core-concept--0eb7f711-b740-42d6-9c25-ee45b0242eb4/question-edits/2abd77f9-e032-497b-8eb8-6fc6f86bf1d8.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-09-core-concept--0eb7f711-b740-42d6-9c25-ee45b0242eb4/question-edits/2b0ebced-3596-4010-b849-8fb6e52a513c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-09-core-concept--0eb7f711-b740-42d6-9c25-ee45b0242eb4/question-edits/39ad5ca3-2c3e-43c2-9d60-691afa821f7c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-09-core-concept--0eb7f711-b740-42d6-9c25-ee45b0242eb4/question-edits/440cb66f-abd3-4166-9584-5adb999e894c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-09-core-concept--0eb7f711-b740-42d6-9c25-ee45b0242eb4/question-edits/4b62319e-9fb8-4052-9e2e-5751544b85f4.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-09-core-concept--0eb7f711-b740-42d6-9c25-ee45b0242eb4/question-edits/56a5e759-ce46-4848-ad63-7c5e282239d2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-09-core-concept--0eb7f711-b740-42d6-9c25-ee45b0242eb4/question-edits/8546673b-6021-490b-a0e7-cfa8626bcd1a.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-09-core-concept--0eb7f711-b740-42d6-9c25-ee45b0242eb4/question-edits/f8c6d48a-463e-4105-ab53-e8ad2a7e85ee.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-09-core-concept--0eb7f711-b740-42d6-9c25-ee45b0242eb4/question-edits/f90e5a68-f86e-4149-8e32-86075711a654.json"
+      ],
+      "scenario_enrichment_status": "eligible-deferred",
+      "validation": {
+        "compose_blockers": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "bundle_validate_valid": true,
+        "bundle_validate_blockers": [],
+        "bundle_validate_warnings": [
+          "component-usage.json has not been generated for this article yet."
+        ],
+        "ui_block_edit_valid": true,
+        "ui_block_edit_blockers": [],
+        "ui_block_edit_warnings": [],
+        "source_audit_status": "PASS_LOCAL_FIRST",
+        "candidate_hash_matches_evidence": true,
+        "raw_pdf_gate_status": "PASS",
+        "scoped_placeholder_internal_note_hits": 0,
+        "source_hash_checks_pass": true,
+        "stale_compose_error_blocker": false
+      }
+    },
+    {
+      "article_id": "fc6f1ca7-340b-4188-8fc0-036e4e9d4498",
+      "slug": "case-study-hospital-mall-school",
+      "title": "Case Study Hospital Mall School",
+      "article_folder_path": ".ai/content-audit-export/articles/case-study-hospital-mall-school--fc6f1ca7-340b-4188-8fc0-036e4e9d4498",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/case-study-hospital-mall-school--fc6f1ca7-340b-4188-8fc0-036e4e9d4498",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/case-study-hospital-mall-school--fc6f1ca7-340b-4188-8fc0-036e4e9d4498/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/case-study-hospital-mall-school--fc6f1ca7-340b-4188-8fc0-036e4e9d4498/question-edits",
+      "linked_question_count": 11,
+      "question_edit_count": 11,
+      "source_count": 3,
+      "original_hash": "sha256:2a39f4508a5d48e97f1d3b407a96b0934a8b7f343d174f8d7074955159e235e6",
+      "normalized_hash": "sha256:f9d537eab3f1980cec60f2ec0d9d4683c7502acf698fadab65a7d5aaf95ebd7e",
+      "candidate_hash": "sha256:f9d537eab3f1980cec60f2ec0d9d4683c7502acf698fadab65a7d5aaf95ebd7e",
+      "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "sources_hash": "sha256:d83de1a3f6bfe8167a0c979c3f33b3e9bef9e794a6d7bb7b9be5f85d89899331",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/case-study-hospital-mall-school--fc6f1ca7-340b-4188-8fc0-036e4e9d4498/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/case-study-hospital-mall-school--fc6f1ca7-340b-4188-8fc0-036e4e9d4498/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/case-study-hospital-mall-school--fc6f1ca7-340b-4188-8fc0-036e4e9d4498/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/case-study-hospital-mall-school--fc6f1ca7-340b-4188-8fc0-036e4e9d4498/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/case-study-hospital-mall-school--fc6f1ca7-340b-4188-8fc0-036e4e9d4498/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/case-study-hospital-mall-school--fc6f1ca7-340b-4188-8fc0-036e4e9d4498/ui-blocks.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/case-study-hospital-mall-school--fc6f1ca7-340b-4188-8fc0-036e4e9d4498/ui-block-edits.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/case-study-hospital-mall-school--fc6f1ca7-340b-4188-8fc0-036e4e9d4498/parser-errors.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/case-study-hospital-mall-school--fc6f1ca7-340b-4188-8fc0-036e4e9d4498/compose-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/case-study-hospital-mall-school--fc6f1ca7-340b-4188-8fc0-036e4e9d4498/diff-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/case-study-hospital-mall-school--fc6f1ca7-340b-4188-8fc0-036e4e9d4498/diff-report.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/case-study-hospital-mall-school--fc6f1ca7-340b-4188-8fc0-036e4e9d4498/ui-block-edit-validation.json"
+      ],
+      "question_edit_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/case-study-hospital-mall-school--fc6f1ca7-340b-4188-8fc0-036e4e9d4498/question-edits/036245ae-a96d-4363-bc10-9b4354409910.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/case-study-hospital-mall-school--fc6f1ca7-340b-4188-8fc0-036e4e9d4498/question-edits/0b1a58aa-e2dc-4652-aed9-90d65d88897e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/case-study-hospital-mall-school--fc6f1ca7-340b-4188-8fc0-036e4e9d4498/question-edits/241f406f-336a-4198-932d-1d78b4b5b615.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/case-study-hospital-mall-school--fc6f1ca7-340b-4188-8fc0-036e4e9d4498/question-edits/3e80f75e-55f1-47b5-86eb-311ebb72689b.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/case-study-hospital-mall-school--fc6f1ca7-340b-4188-8fc0-036e4e9d4498/question-edits/3fbf2660-9c49-471d-a52d-da6ae82ae585.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/case-study-hospital-mall-school--fc6f1ca7-340b-4188-8fc0-036e4e9d4498/question-edits/9d20ba95-68df-43a3-bc57-c528f2b31d75.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/case-study-hospital-mall-school--fc6f1ca7-340b-4188-8fc0-036e4e9d4498/question-edits/a2bb45a9-c3e5-4495-ad40-fe92ad46b933.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/case-study-hospital-mall-school--fc6f1ca7-340b-4188-8fc0-036e4e9d4498/question-edits/ad0caf2e-6861-4442-959c-01113c917e90.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/case-study-hospital-mall-school--fc6f1ca7-340b-4188-8fc0-036e4e9d4498/question-edits/cf0b98c2-ff76-4a51-a049-09e2924408f8.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/case-study-hospital-mall-school--fc6f1ca7-340b-4188-8fc0-036e4e9d4498/question-edits/db94f167-6c48-4e60-8cae-a3e08c928e62.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/case-study-hospital-mall-school--fc6f1ca7-340b-4188-8fc0-036e4e9d4498/question-edits/dbaedc3a-66a4-447f-8ed0-0936cc473e21.json"
+      ],
+      "scenario_enrichment_status": "eligible-deferred",
+      "validation": {
+        "compose_blockers": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "bundle_validate_valid": true,
+        "bundle_validate_blockers": [],
+        "bundle_validate_warnings": [
+          "component-usage.json has not been generated for this article yet."
+        ],
+        "ui_block_edit_valid": true,
+        "ui_block_edit_blockers": [],
+        "ui_block_edit_warnings": [],
+        "source_audit_status": "PASS_LOCAL_FIRST",
+        "candidate_hash_matches_evidence": true,
+        "raw_pdf_gate_status": "PASS",
+        "scoped_placeholder_internal_note_hits": 0,
+        "source_hash_checks_pass": true,
+        "stale_compose_error_blocker": false
+      }
+    }
+  ],
+  "counts": {
+    "article_count": 5,
+    "linked_question_count": 51,
+    "question_edit_count": 51,
+    "source_family_count": 3,
+    "unresolved_blocker_count": 0
+  },
+  "source_evidence": [
+    {
+      "source_family": "PD 1096 RIRR 2004",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "checked_locators": [
+        "refined lines 1088-1128",
+        "1174-1190",
+        "1265-1272",
+        "1659-1667",
+        "1681-1698",
+        "1735-1736"
+      ],
+      "raw_pdf_pages_checked": [
+        "47-48",
+        "53",
+        "57",
+        "72",
+        "101-103"
+      ]
+    },
+    {
+      "source_family": "RA 9514 Revised IRR 2019",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+      "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+      "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+      "checked_locators": [
+        "refined line 1435",
+        "line 1628",
+        "1648-1650",
+        "1702 and 1807",
+        "2521-2591",
+        "3984-3994",
+        "4275-4303",
+        "5390-5476",
+        "6152-6200"
+      ],
+      "raw_pdf_pages_checked": [
+        "64",
+        "68",
+        "91-93",
+        "142",
+        "168",
+        "171",
+        "189"
+      ]
+    },
+    {
+      "source_family": "PD 9514 Fire Code source family",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf",
+      "raw_pdf_sha256": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-9514/PD 9514 - Fire Code of the Philippines.md",
+      "refined_markdown_sha256": "sha256:5eb0584f1bcbfa87044e28f2e59a75c6364c7160a98edfdd888c6aef849b01b2",
+      "checked_locators": [
+        "refined lines 1599-1629",
+        "1655-1719",
+        "line 2654",
+        "2849-2855",
+        "3644-3728"
+      ],
+      "raw_pdf_pages_checked": [
+        "57-63",
+        "111"
+      ]
+    }
+  ],
+  "quality_protocol_results": {
+    "compose": {
+      "command": "bun run content-audit:compose -- --article-id <id> --overwrite --strict",
+      "article_count": 5,
+      "blockers": 0
+    },
+    "diff": {
+      "command": "bun run content-audit:diff -- --article-id <id> --summary --strict",
+      "article_count": 5,
+      "safe_to_push": true,
+      "blockers": 0
+    },
+    "validate": {
+      "command": "bun run content-audit:validate -- --article-id <id> --summary",
+      "article_count": 5,
+      "valid": true,
+      "blockers": 0,
+      "warnings": "component-usage.json missing warnings only"
+    },
+    "ui_block_edits": {
+      "command": "bun run content-audit:ui-block-edits -- --article-id <id> --summary",
+      "article_count": 5,
+      "valid": true,
+      "blockers": 0,
+      "warnings": 0
+    },
+    "scoped_checks": {
+      "path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-065-local-first-scoped-checks.json",
+      "pass": true,
+      "blockers": []
+    },
+    "targeted_tests": {
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "pass_count": 34,
+      "fail_count": 0
+    },
+    "git_diff_check": {
+      "command": "git diff --check -- .ai/03_plans/source-audited-local-first-batches-handoff.md .ai/content-audit-export/sync-state.json .ai/content-audit-export/source-audited-article-batch-065-local-first-report.md .ai/content-audit-export/source-audited-article-batch-065-local-first-ledger.json .ai/content-audit-export/source-audited-article-batch-065-local-first-scoped-checks.json <five Batch 065 article folders>",
+      "status": "PASS",
+      "checked_at": "2026-05-11T23:29:00.000+08:00",
+      "blockers": 0
+    }
+  },
+  "unresolved_blockers": [],
+  "next_batch_readiness": {
+    "status": "ready",
+    "next_batch_number": 66,
+    "note": "Batch 065 blockers=0 and final scoped git diff --check passed locally."
+  }
+}

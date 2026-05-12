@@ -1,0 +1,49 @@
+{
+  "question_id": "e38e2752-69c7-42f6-9e66-645f1cf9cfd8",
+  "baseline_hash": "sha256:46c88547c246d97822e147f7f4c022439a06d9cdeba75881c6a94ba9b9751417",
+  "action": "replace",
+  "reason": "source-audited-article-batch-037-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-037",
+  "approved_at": "2026-05-11T13:16:58+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-037-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR 2004 DPWH Official refined markdown lines 968-990",
+          "PD 1096 RIRR 2004 DPWH Official refined markdown lines 3789-3897"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 1211"
+  },
+  "proposed": {
+    "text": "What minimum projection in front of the fireplace opening is required for the reinforced concrete hearth slab?",
+    "options": [
+      {
+        "id": "b037-f8d4-23-a",
+        "text": "450 mm"
+      },
+      {
+        "id": "b037-f8d4-23-b",
+        "text": "150 mm"
+      },
+      {
+        "id": "b037-f8d4-23-c",
+        "text": "300 mm"
+      },
+      {
+        "id": "b037-f8d4-23-d",
+        "text": "600 mm"
+      }
+    ],
+    "correct_option_id": "b037-f8d4-23-a",
+    "rationale": "Correct answer: 450 mm. This is directly supported by PD 1096 2004 Revised IRR, Section 1211.",
+    "explanation": "The Batch 037 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 1211.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 1211"
+  }
+}

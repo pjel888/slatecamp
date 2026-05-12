@@ -1,7 +1,57 @@
 {
   "article_id": "2ec8e3f1-4aa7-443f-8ca1-a77638b2a713",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "source_count": 0,
-  "sources": []
+  "sources_hash": "sha256:1387b2e25cc1b80ad493d9e0c803e882a1dbda49c88f340df49044545f836a06",
+  "source_count": 2,
+  "sources": [
+    {
+      "source_id": "uap-standards-spp209-pacs-local",
+      "article_id": "2ec8e3f1-4aa7-443f-8ca1-a77638b2a713",
+      "label": "UAP Standards of Professional Practice - SPP 209 PACS",
+      "url": null,
+      "source_type": "professional_practice_pdf",
+      "description": "Local raw PDF and refined markdown checked for PACS rationale, definition, scope, qualifications, selection, and compensation.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-11T14:30:00.000+08:00",
+      "updated_at": "2026-05-11T14:30:00.000+08:00",
+      "local_source_audit": {
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "source_locator": "UAP Standards refined markdown lines 1418-1460 and 1544-1695",
+        "checked_markdown_lines": [
+          "UAP Standards lines 1418-1460",
+          "UAP Standards lines 1544-1695"
+        ],
+        "local_source_checked": true
+      }
+    },
+    {
+      "source_id": "spp209-professional-architectural-consulting-services-local",
+      "article_id": "2ec8e3f1-4aa7-443f-8ca1-a77638b2a713",
+      "label": "SPP 209 - Professional Architectural Consulting Services",
+      "url": null,
+      "source_type": "professional_practice_pdf",
+      "description": "Local SPP 209 raw PDF and refined markdown checked as article-specific source.",
+      "is_verified": true,
+      "sort_order": 2,
+      "created_at": "2026-05-11T14:30:00.000+08:00",
+      "updated_at": "2026-05-11T14:30:00.000+08:00",
+      "local_source_audit": {
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 209.pdf",
+        "raw_pdf_sha256": "sha256:c0e805e8bb71adb0a3d31fe1655447d718abba54f546d20cbac3c092268b03c5",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 209.md",
+        "refined_markdown_sha256": "sha256:d596d4cda9d7fc4551ac81786bf0f7063917ecfac79b89bc1810373e3655a4f2",
+        "source_locator": "SPP 209 refined markdown lines 637-1099",
+        "checked_markdown_lines": [
+          "SPP 209 lines 637-1099"
+        ],
+        "local_source_checked": true
+      }
+    }
+  ]
 }

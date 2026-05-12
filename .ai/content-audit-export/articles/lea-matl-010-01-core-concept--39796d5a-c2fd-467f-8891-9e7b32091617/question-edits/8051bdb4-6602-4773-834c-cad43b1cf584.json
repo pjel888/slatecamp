@@ -1,0 +1,55 @@
+{
+  "question_id": "8051bdb4-6602-4773-834c-cad43b1cf584",
+  "baseline_hash": "sha256:c7a00b58337abec94299fb003975ad84ca23bd7ae57b660d1c4fa209dd9fe3eb",
+  "action": "replace",
+  "reason": "source-audited-article-batch-080-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-010-01-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-080",
+  "approved_at": "2026-05-12T07:05:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "39796d5a-c2fd-467f-8891-9e7b32091617",
+    "parent_article_slug": "lea-matl-010-01-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Fajardo refined markdown lines 605-843; raw PDF pages 8-9 checked by local PyMuPDF extraction",
+    "checked_markdown_lines": [
+      "Fajardo refined markdown lines 605-843; raw PDF pages 8-9 checked by local PyMuPDF extraction"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "fajardo-cost-estimates-b080",
+        "label": "Architectural Cost Estimates By Max Fajardo",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+        "sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+        "raw_markdown_sha256": "sha256:223efdc2dd963208910027eba08fe87b4919de1a04b76cac095bbd76a7a9a962",
+        "locator": "Fajardo refined markdown lines 605-843; raw PDF pages 8-9 checked by local PyMuPDF extraction"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 080 local raw-source-audited concrete_volume_estimating scope."
+  },
+  "proposed": {
+    "text": "If the problem changes from 40 kg to 50 kg cement bags, what should the estimator do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use the corresponding 50 kg cement-bag table value"
+      },
+      {
+        "id": "b",
+        "text": "Keep the 40 kg bag count unchanged"
+      },
+      {
+        "id": "c",
+        "text": "Ignore the cement-bag size"
+      },
+      {
+        "id": "d",
+        "text": "Use the board foot formula"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Fajardo separates table values by cement-bag size.",
+    "explanation": "Fajardo separates table values by cement-bag size.",
+    "code_citation": "Architectural Cost Estimates By Max Fajardo"
+  }
+}

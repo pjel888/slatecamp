@@ -1,7 +1,7 @@
 # IMPL_11: Personalized Forgetting Rates & Review Calendar
 
-**Priority:** P2  
-**Effort:** ~2 weeks (algorithm + UI)  
+**Priority:** P2
+**Effort:** ~2 weeks (algorithm + UI)
 **Research basis:** ACT-R / Slimstampen approach — individual forgetting rates predicted exam grades in university settings. Response time + accuracy calibrates per-student per-topic decay.
 
 ---

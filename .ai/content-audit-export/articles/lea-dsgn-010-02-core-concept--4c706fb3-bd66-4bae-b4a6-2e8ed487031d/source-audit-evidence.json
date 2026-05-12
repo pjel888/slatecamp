@@ -1,0 +1,121 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T18:30:00+08:00",
+  "audit_mode": "local_source_audit_no_supabase",
+  "protocols_applied": [
+    ".ai/CONTENT_EXCELLENCE_GOAL.md",
+    ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
+    ".ai/00_system/vitruvius-source-reference.md"
+  ],
+  "target": {
+    "article_id": "4c706fb3-bd66-4bae-b4a6-2e8ed487031d",
+    "slug": "lea-dsgn-010-02-core-concept",
+    "title": "Parking Structure Design",
+    "article_folder": ".ai/content-audit-export/articles/lea-dsgn-010-02-core-concept--4c706fb3-bd66-4bae-b4a6-2e8ed487031d",
+    "candidate_path": ".ai/content-audit-export/articles/lea-dsgn-010-02-core-concept--4c706fb3-bd66-4bae-b4a6-2e8ed487031d/candidate.md",
+    "candidate_sha256": "sha256:de9c94cb5a14d54a97f81ab7390a916c7c7320e0fbf7687edacf6129bf724cd0",
+    "normalized_sha256": "sha256:de9c94cb5a14d54a97f81ab7390a916c7c7320e0fbf7687edacf6129bf724cd0",
+    "linked_questions_sha256": "sha256:ddd6dbe356ba6d5d5be7d57374f1db2f24476927be4859a92187df57ef126fe5",
+    "sources_sha256": "sha256:5ce7ab5f9540215278ee1b6c22adec0a995f8c06272698c0aa9fcdb186d126e3"
+  },
+  "classification": {
+    "content_type": "parking_design_article",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": [
+      "3e6e01eb-4252-4aa2-982c-199779c9fc00",
+      "5bed0a27-b385-49d6-9b23-e865f4a0c234",
+      "6937b968-5e7d-4c2e-99ba-25a45f8089e2",
+      "7c02cd24-0309-45e9-97c4-6b7a9e694ba3",
+      "ab583be5-5d61-48d2-b542-337cf2e13c39",
+      "c4b2e780-2574-454f-baf0-799b577cf738",
+      "d33e7760-a031-47e6-b19c-8094362a0513",
+      "e426a54f-6b8b-4c98-9004-50385e5c847e",
+      "f28ff3a2-9145-430c-b17f-9e06b2f01c42",
+      "fd86f746-5708-4498-bce8-fe2d5686ef7f"
+    ]
+  },
+  "raw_sources": [
+    {
+      "key": "pd1096_2004_irr",
+      "label": "PD 1096 2004 Revised IRR (DPWH Official)",
+      "source_type": "implementing_rules",
+      "source_id": "batch003-lea-dsgn-010-02-core-concept-source-01",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6"
+    },
+    {
+      "key": "bp344_2024_rirr",
+      "label": "BP 344 2024 Revised IRR (NCDA)",
+      "source_type": "implementing_rules",
+      "source_id": "batch003-lea-dsgn-010-02-core-concept-source-02",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953"
+    }
+  ],
+  "gate_results": {
+    "compose": "PASS: blockers=0; warnings=0; preserved_blocks_reinserted=0",
+    "diff": "PASS: safe_to_push=true; locally_safe_to_push=true; blockers=0",
+    "validate": "PASS: bun run content-audit:validate -- --article-id 4c706fb3-bd66-4bae-b4a6-2e8ed487031d --summary returned valid=true with zero blockers",
+    "push_dry_run": "not_attempted_local_first_recovery; Supabase remote fetch is final publishing only and is intentionally non-blocking here",
+    "supabase_mutation": "not_attempted"
+  },
+  "claims": [
+    {
+      "claim_id": "lea-dsgn-010-02-core-concept-claim-01",
+      "claim_text": "PD 1096 Rule VII supports parking/loading slot sizes and plan indication requirements.",
+      "audit_result": "PASS",
+      "source_support": [
+        "pd1096_2004_irr",
+        "bp344_2024_rirr"
+      ]
+    },
+    {
+      "claim_id": "lea-dsgn-010-02-core-concept-claim-02",
+      "claim_text": "PD 1096 Rule XIX, Section 803, and Section 904 are not parking-structure geometry locators.",
+      "audit_result": "PASS",
+      "source_support": [
+        "pd1096_2004_irr",
+        "bp344_2024_rirr"
+      ]
+    },
+    {
+      "claim_id": "lea-dsgn-010-02-core-concept-claim-03",
+      "claim_text": "BP 344 2024 supports accessible parking slot dimensions, route connection, walkway, and signage details.",
+      "audit_result": "PASS",
+      "source_support": [
+        "pd1096_2004_irr",
+        "bp344_2024_rirr"
+      ]
+    },
+    {
+      "claim_id": "lea-dsgn-010-02-core-concept-claim-04",
+      "claim_text": "Unsupported ramp grade, aisle width, turning radius, clearance, and structural module claims were removed or rewritten as source limits.",
+      "audit_result": "PASS",
+      "source_support": [
+        "pd1096_2004_irr",
+        "bp344_2024_rirr"
+      ]
+    },
+    {
+      "claim_id": "lea-dsgn-010-02-core-concept-linked-question-edits",
+      "claim_text": "Question edits staged locally for linked question IDs: 3e6e01eb-4252-4aa2-982c-199779c9fc00, 5bed0a27-b385-49d6-9b23-e865f4a0c234, 6937b968-5e7d-4c2e-99ba-25a45f8089e2, 7c02cd24-0309-45e9-97c4-6b7a9e694ba3, ab583be5-5d61-48d2-b542-337cf2e13c39, c4b2e780-2574-454f-baf0-799b577cf738, d33e7760-a031-47e6-b19c-8094362a0513, e426a54f-6b8b-4c98-9004-50385e5c847e, f28ff3a2-9145-430c-b17f-9e06b2f01c42, fd86f746-5708-4498-bce8-fe2d5686ef7f",
+      "audit_result": "PASS",
+      "source_support": [
+        "pd1096_2004_irr",
+        "bp344_2024_rirr"
+      ]
+    }
+  ],
+  "unsupported_or_removed_claims": [],
+  "remaining_local_blockers": [],
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_recovery_complete": true,
+    "remote_publish_status": "not_attempted_by_request",
+    "remaining_local_blockers": []
+  }
+}

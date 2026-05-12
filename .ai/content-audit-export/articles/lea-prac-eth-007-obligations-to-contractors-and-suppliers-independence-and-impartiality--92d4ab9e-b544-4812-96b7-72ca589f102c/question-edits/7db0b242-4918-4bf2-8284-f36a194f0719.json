@@ -1,0 +1,71 @@
+{
+  "question_id": "7db0b242-4918-4bf2-8284-f36a194f0719",
+  "baseline_hash": "sha256:b391b90e8d6dd37aba51e3f429f95fd8755ee0626a1a037b51b2c3a7df468099",
+  "action": "replace",
+  "reason": "source-audited-article-batch-018-local-first rewrote linked question to match locally checked raw source evidence for lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality.",
+  "approved_by": "codex-local-source-audit-batch-018",
+  "approved_at": "2026-05-10T23:42:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "92d4ab9e-b544-4812-96b7-72ca589f102c",
+    "parent_article_slug": "lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UAP Document Code of Ethics, responsibilities to contractors and manufacturers/dealers/agents, raw markdown lines 66-89",
+    "checked_markdown_lines": [
+      "raw markdown lines 66-89"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+        "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+        "source_id": "uap-document-code-of-ethics",
+        "locator": "UAP Document Code of Ethics, responsibilities to contractors and manufacturers/dealers/agents, raw markdown lines 66-89"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
+        "sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
+        "source_id": "uap-document-code-of-ethics-raw-markdown",
+        "locator": "UAP Document Code of Ethics, responsibilities to contractors and manufacturers/dealers/agents, raw markdown lines 66-89"
+      }
+    ],
+    "local_source_safe_action": "Question was rewritten to remove unverified or over-specific claims and use only statements anchored in the checked local raw source packet."
+  },
+  "proposed": {
+    "text": "How must a market discount from a material firm be handled under the Code?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Credit it to the client"
+      },
+      {
+        "id": "b",
+        "text": "Keep it as the architect's personal bonus"
+      },
+      {
+        "id": "c",
+        "text": "Split it secretly with the contractor"
+      },
+      {
+        "id": "d",
+        "text": "Use it to avoid written compensation"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "The Code allows a market discount only when it is credited to the client.",
+    "explanation": "The Code allows a market discount only when it is credited to the client.",
+    "code_citation": "UAP Document Code of Ethics, line 89",
+    "bloom_level": "understand",
+    "application_context": "professional_practice",
+    "practice_context": [
+      "Code of Ethical Conduct",
+      "Professional ethics"
+    ],
+    "difficulty": 0.5,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-ETH-007-010"
+  }
+}

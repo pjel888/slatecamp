@@ -1,7 +1,59 @@
 {
   "article_id": "7e5be79c-b68f-44ff-8252-ef97874e528d",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "source_count": 0,
-  "sources": []
+  "sources_hash": "sha256:5686a75d6b88cf27b549042cf6f376b39b89b4aaa949884c78c4769544359445",
+  "source_count": 2,
+  "sources": [
+    {
+      "source_id": "uap-standards-spp202-compensation-local",
+      "article_id": "7e5be79c-b68f-44ff-8252-ef97874e528d",
+      "label": "UAP Document Standards of Professional Practice - SPP 202 compensation and service conditions",
+      "url": null,
+      "source_type": "professional_practice_pdf",
+      "description": "Local UAP Standards raw PDF and refined markdown checked for SPP 202 compensation methods, reimbursables, owner responsibilities, additional services, abandoned projects, and PCA compensation terms.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-11T00:00:00.000+08:00",
+      "updated_at": "2026-05-11T00:00:00.000+08:00",
+      "local_source_audit": {
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "source_locator": "UAP Standards refined markdown lines 414-501 and 1608-1642",
+        "checked_markdown_lines": [
+          "UAP Standards lines 414-457",
+          "UAP Standards lines 459-501",
+          "UAP Standards lines 1608-1642"
+        ],
+        "local_source_checked": true
+      }
+    },
+    {
+      "source_id": "spp202-regular-design-services-local",
+      "article_id": "7e5be79c-b68f-44ff-8252-ef97874e528d",
+      "label": "SPP 202 - Regular Design Services",
+      "url": null,
+      "source_type": "professional_practice_pdf",
+      "description": "Local SPP 202 raw PDF checked as the regular-design-services source counterpart; UAP Standards refined markdown provides readable local line locators for the same professional-practice provisions.",
+      "is_verified": true,
+      "sort_order": 2,
+      "created_at": "2026-05-11T00:00:00.000+08:00",
+      "updated_at": "2026-05-11T00:00:00.000+08:00",
+      "local_source_audit": {
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+        "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+        "refined_markdown_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+        "source_locator": "SPP 202 local raw PDF; UAP Standards refined markdown lines 414-501 used as readable local locator",
+        "checked_markdown_lines": [
+          "SPP 202 local raw PDF checked",
+          "UAP Standards lines 414-501 used for readable source locators"
+        ],
+        "local_source_checked": true
+      }
+    }
+  ]
 }

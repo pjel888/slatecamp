@@ -1,0 +1,57 @@
+{
+  "question_id": "dc6f5231-c321-44f5-9847-2ced45915217",
+  "baseline_hash": "sha256:7194b5c840ed023520a3a4087029f1cdef275feca2d58be392790008bbb409b6",
+  "action": "replace",
+  "reason": "source-audited-article-batch-059-local-first: local raw PDF backed replacement constrained to checked Batch 059 TOA 4 Tropical Architecture source family.",
+  "approved_by": "codex-local-first-batch-059",
+  "approved_at": "2026-05-11T20:48:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "8a812be4-c5c0-40ec-a3ff-74acb39e24bc",
+    "parent_article_slug": "lea-theo-004-08-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "TOA 4 Tropical Architecture refined markdown lines 708-810, 1201-1247, and raw PDF pages 90, 92-100, 121, 140, and 143-148",
+    "checked_markdown_lines": [
+      "TOA 4 Tropical Architecture refined markdown lines 708-810",
+      "TOA 4 Tropical Architecture refined markdown lines 1201-1247"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "toa4-tropical-architecture-local-raw-pdf--b059-8a812be4-01",
+        "label": "TOA 4 Tropical Architecture - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+        "sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+        "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+        "locator": "TOA 4 Tropical Architecture refined markdown lines 708-810, 1201-1247, and raw PDF pages 90, 92-100, 121, 140, and 143-148"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 059 checked local raw PDF source scope."
+  },
+  "proposed": {
+    "text": "Why is airflow still relevant in a solar orientation item?",
+    "options": [
+      {
+        "id": "a",
+        "text": "TOA 4 pairs orientation for minimum heat gain with orientation for maximum airflow."
+      },
+      {
+        "id": "b",
+        "text": "Airflow cancels the need for solar control."
+      },
+      {
+        "id": "c",
+        "text": "Airflow is prohibited in passive design."
+      },
+      {
+        "id": "d",
+        "text": "Airflow determines the date line on a sun chart."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "TOA 4 pairs orientation for minimum heat gain with orientation for maximum airflow. This answer is supported by the checked Batch 059 local TOA 4 Tropical Architecture raw PDF source family for Solar Geometry Fundamentals.",
+    "explanation": "TOA 4 pairs orientation for minimum heat gain with orientation for maximum airflow. The Batch 059 source audit used the local raw PDF first and refined markdown only as locator evidence for Solar Geometry Fundamentals.",
+    "code_citation": "TOA 4 Tropical Architecture refined markdown lines 708-810, 1201-1247, and raw PDF pages 90, 92-100, 121, 140, and 143-148"
+  },
+  "batch_question_template_index": 11
+}

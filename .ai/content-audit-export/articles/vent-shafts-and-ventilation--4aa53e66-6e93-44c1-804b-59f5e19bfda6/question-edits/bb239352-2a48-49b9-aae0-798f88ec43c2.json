@@ -1,0 +1,48 @@
+{
+  "question_id": "bb239352-2a48-49b9-aae0-798f88ec43c2",
+  "baseline_hash": "sha256:9f6d0224887bf4767d1831c40bf0a47b177aa30c600509c15e2262e40fed6a18",
+  "action": "replace",
+  "reason": "source-audited-article-batch-039-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-039",
+  "approved_at": "2026-05-11T13:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-039-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 2396-2428"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 809"
+  },
+  "proposed": {
+    "text": "Under Section 809, what is the absolute minimum horizontal cross-sectional area of a vent shaft?",
+    "options": [
+      {
+        "id": "b039-4aa5-12-a",
+        "text": "1.00 sq.m"
+      },
+      {
+        "id": "b039-4aa5-12-b",
+        "text": "0.30 sq.m"
+      },
+      {
+        "id": "b039-4aa5-12-c",
+        "text": "0.60 sq.m"
+      },
+      {
+        "id": "b039-4aa5-12-d",
+        "text": "1.50 sq.m"
+      }
+    ],
+    "correct_option_id": "b039-4aa5-12-a",
+    "rationale": "Correct answer: 1.00 sq.m. This is directly supported by PD 1096 2004 Revised IRR, Section 809.",
+    "explanation": "The Batch 039 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 809.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 809"
+  }
+}

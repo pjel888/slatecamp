@@ -1,0 +1,71 @@
+{
+  "question_id": "2949770f-3b1f-45e8-b3d4-fb33cbbf2715",
+  "baseline_hash": "sha256:8e4ebb877800a0fc10cff6c904926d23882b64c28b879a7c70af3be801cc0fea",
+  "action": "replace",
+  "reason": "source-audited-article-batch-017-local-first rewrote linked question to match the locally checked UAP Code of Ethics source for lea-prac-eth-002-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-017",
+  "approved_at": "2026-05-10T23:30:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "f769b43e-e467-4ce4-afd9-2d0152fe8d46",
+    "parent_article_slug": "lea-prac-eth-002-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UAP Document Code of Ethics, Architect's Credo, raw markdown lines 1-21",
+    "checked_markdown_lines": [
+      "raw markdown lines 1-21"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+        "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+        "source_id": "uap-document-code-of-ethics",
+        "locator": "UAP Document Code of Ethics, Architect's Credo, raw markdown lines 1-21"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
+        "sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
+        "source_id": "uap-document-code-of-ethics-raw-markdown",
+        "locator": "UAP Document Code of Ethics, Architect's Credo, raw markdown lines 1-21"
+      }
+    ],
+    "local_source_safe_action": "Question was rewritten to avoid unverified PRBoA-resolution, hierarchy, or enforcement claims and to use only statements anchored in the raw UAP Code of Ethics source."
+  },
+  "proposed": {
+    "text": "Which exam interpretation is source-safe for the Architect's Credo in this local batch?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Treat it as a professional pledge stated in the UAP Code of Ethics source."
+      },
+      {
+        "id": "b",
+        "text": "Claim it is mandatory to recite at all public events."
+      },
+      {
+        "id": "c",
+        "text": "Claim it replaced all numbered Code sections."
+      },
+      {
+        "id": "d",
+        "text": "Claim it creates supplier-discount exceptions."
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "The checked source shows the Credo text before the numbered Code. Claims about required recitation or replacement of the Code were not supported by the checked raw source.",
+    "explanation": "The checked source shows the Credo text before the numbered Code. Claims about required recitation or replacement of the Code were not supported by the checked raw source.",
+    "code_citation": "UAP Document Code of Ethics, lines 1-21",
+    "bloom_level": "understand",
+    "application_context": "professional_practice",
+    "practice_context": [
+      "Code of Ethical Conduct",
+      "Professional ethics"
+    ],
+    "difficulty": 0.3,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-ETH-002-002"
+  }
+}

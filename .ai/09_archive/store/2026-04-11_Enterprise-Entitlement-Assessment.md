@@ -33,7 +33,7 @@ An enterprise-grade entitlement platform needs deterministic access decisions fr
 
 ### 1. No single canonical entitlement path
 
-**Why it is a problem**  
+**Why it is a problem**
 There are still multiple active ways to answer "can this user access this feature?"
 
 - role + policy + effective tier
@@ -41,18 +41,18 @@ There are still multiple active ways to answer "can this user access this featur
 - DB `feature_flags.target_tier`
 - environment-based local/demo bypasses
 
-**Technical risk**  
+**Technical risk**
 Two surfaces for the same feature class can make different access decisions for the same user.
 
-**Business/product risk**  
+**Business/product risk**
 Paying users get blocked incorrectly. Internal users get inconsistent access. Support cannot explain entitlement behavior reliably.
 
-**Likely failure mode**  
+**Likely failure mode**
 A new feature ships using raw `user_subscriptions` checks while another uses effective tier. Access bugs reappear immediately.
 
 ### 2. Mixed gating models create privilege drift
 
-**Why it is a problem**  
+**Why it is a problem**
 Some surfaces use policy helpers and effective tier. Others still use raw subscription checks:
 
 - `src/lib/paywall/score-reveal.ts`
@@ -61,18 +61,18 @@ Some surfaces use policy helpers and effective tier. Others still use raw subscr
 - `src/lib/actions/dashboard-page.ts`
 - `src/lib/actions/streak.ts`
 
-**Technical risk**  
+**Technical risk**
 Policy evolves in one place but not another.
 
-**Business/product risk**  
+**Business/product risk**
 Users see contradictory entitlement behavior across features. Internal QA becomes unreliable because there is no stable global matrix.
 
-**Likely failure mode**  
+**Likely failure mode**
 After a role-policy change, older raw-tier surfaces silently keep the old behavior.
 
 ### 3. DB feature flags still encode legacy tier vocabulary
 
-**Why it is a problem**  
+**Why it is a problem**
 Historical migrations still seed `feature_flags.target_tier` with legacy values like `camp` and `insurance`, while the TypeScript runtime tier model is:
 
 - `free`
@@ -81,18 +81,18 @@ Historical migrations still seed `feature_flags.target_tier` with legacy values 
 - `institutional`
 - `enterprise`
 
-**Technical risk**  
+**Technical risk**
 String-based entitlement logic becomes non-deterministic across DB and code.
 
-**Business/product risk**  
+**Business/product risk**
 Feature rollouts become unsafe. Admins think they are enabling access for one tier set while runtime code interprets something else.
 
-**Likely failure mode**  
+**Likely failure mode**
 DB-backed feature gates quietly misfire after future cleanup or migration work.
 
 ### 4. Developer-mode and internal tooling are not governed by one coherent privilege policy
 
-**Why it is a problem**  
+**Why it is a problem**
 The dev toolbar, developer portal, middleware, and local bypass logic do not all use the same policy boundary.
 
 Examples:
@@ -101,71 +101,71 @@ Examples:
 - developer portal uses `getUserRole()` truthiness or `ALLOW_DEV_PORTAL_BYPASS`
 - admin middleware uses `user_roles` only
 
-**Technical risk**  
+**Technical risk**
 Internal tooling access diverges by route and component.
 
-**Business/product risk**  
+**Business/product risk**
 Privileged surfaces are hard to reason about and easy to accidentally widen.
 
-**Likely failure mode**  
+**Likely failure mode**
 A new internal role is added and picks up some privileged surfaces but not others, or worse, picks up the wrong ones.
 
 ### 5. Middleware is not aligned with the normalized internal-role model
 
-**Why it is a problem**  
+**Why it is a problem**
 `src/lib/supabase/middleware.ts` checks `user_roles` directly for admin routes. That is fine for admin CMS protection, but it does not align with the broader normalized internal-role model used elsewhere.
 
-**Technical risk**  
+**Technical risk**
 The platform has different "truths" for privileged access depending on whether the check happens in middleware, layout, or server action.
 
-**Business/product risk**  
+**Business/product risk**
 Operational confusion and inconsistent route protection behavior.
 
-**Likely failure mode**  
+**Likely failure mode**
 An internal user passes a layout-level check but gets bounced by middleware, or vice versa.
 
 ### 6. Cookie-backed dev flags are powerful but weakly governed
 
-**Why it is a problem**  
+**Why it is a problem**
 `cerebro_dev_flags` can simulate tier and bypass gates. That is acceptable for internal tooling, but not enterprise-grade without strong audit and visibility.
 
-**Technical risk**  
+**Technical risk**
 Overrides affect entitlement decisions without durable audit trails.
 
-**Business/product risk**  
+**Business/product risk**
 Debug-only behavior leaks into production support flows and is hard to reconstruct after the fact.
 
-**Likely failure mode**  
+**Likely failure mode**
 A privileged internal user runs with a simulated tier or bypass flag and later cannot explain why access behaved a certain way.
 
 ### 7. Naming is still misleading in critical places
 
-**Why it is a problem**  
+**Why it is a problem**
 Examples:
 - `getAdminAwareProfile()` now means more than admin
 - `getEffectiveTier(actualTier, isAdmin, flags)` uses a parameter name that now effectively means internal tier bypass
 
-**Technical risk**  
+**Technical risk**
 Developers write correct-looking but wrong code because the semantic meaning has drifted.
 
-**Business/product risk**  
+**Business/product risk**
 Future refactors reintroduce bugs because the naming suggests the wrong policy boundary.
 
-**Likely failure mode**  
+**Likely failure mode**
 Another engineer wires `isAdmin` where "internal bypass eligible" was intended and accidentally widens or narrows access.
 
 ### 8. Auditability and observability are not enterprise-grade
 
-**Why it is a problem**  
+**Why it is a problem**
 There is no canonical access-decision log, no structured denial-reason audit trail, and no source-of-truth trace for why a user got access.
 
-**Technical risk**  
+**Technical risk**
 You cannot debug entitlement decisions reliably.
 
-**Business/product risk**  
+**Business/product risk**
 Support, security review, and compliance are weak. You cannot prove how a privileged decision was made.
 
-**Likely failure mode**  
+**Likely failure mode**
 A privilege incident or customer complaint happens, and engineering cannot reconstruct whether the decision came from raw tier, effective tier, DB flag, role metadata, or a cookie override.
 
 ## Architectural Gaps vs Enterprise Standard
@@ -449,53 +449,53 @@ Enterprise-grade confidence requires:
 
 ### P0
 
-1. **Objective:** Build and adopt one canonical entitlement resolver  
-   **Reason:** This removes the highest-risk inconsistency in the system  
-   **Expected risk reduction:** Very high  
+1. **Objective:** Build and adopt one canonical entitlement resolver
+   **Reason:** This removes the highest-risk inconsistency in the system
+   **Expected risk reduction:** Very high
    **Expected implementation difficulty:** High
 
-2. **Objective:** Eliminate raw subscription checks from critical feature surfaces  
-   **Reason:** Raw checks are the top regression vector  
-   **Expected risk reduction:** Very high  
+2. **Objective:** Eliminate raw subscription checks from critical feature surfaces
+   **Reason:** Raw checks are the top regression vector
+   **Expected risk reduction:** Very high
    **Expected implementation difficulty:** Medium
 
-3. **Objective:** Normalize DB feature-flag tier vocabulary  
-   **Reason:** Legacy tier strings are a silent correctness risk  
-   **Expected risk reduction:** High  
+3. **Objective:** Normalize DB feature-flag tier vocabulary
+   **Reason:** Legacy tier strings are a silent correctness risk
+   **Expected risk reduction:** High
    **Expected implementation difficulty:** Medium
 
 ### P1
 
-1. **Objective:** Align developer portal, middleware, and server-action policy boundaries  
-   **Reason:** Current privilege semantics differ by surface  
-   **Expected risk reduction:** High  
+1. **Objective:** Align developer portal, middleware, and server-action policy boundaries
+   **Reason:** Current privilege semantics differ by surface
+   **Expected risk reduction:** High
    **Expected implementation difficulty:** Medium
 
-2. **Objective:** Add structured access-decision logging and internal-override audit trails  
-   **Reason:** The system is not auditable enough today  
-   **Expected risk reduction:** High  
+2. **Objective:** Add structured access-decision logging and internal-override audit trails
+   **Reason:** The system is not auditable enough today
+   **Expected risk reduction:** High
    **Expected implementation difficulty:** Medium
 
-3. **Objective:** Rename misleading helpers and parameters  
-   **Reason:** Naming drift causes future bugs  
-   **Expected risk reduction:** Medium  
+3. **Objective:** Rename misleading helpers and parameters
+   **Reason:** Naming drift causes future bugs
+   **Expected risk reduction:** Medium
    **Expected implementation difficulty:** Low
 
 ### P2
 
-1. **Objective:** Move toward capability-based client consumption  
-   **Reason:** Clients should not reason about raw role/tier fragments  
-   **Expected risk reduction:** Medium  
+1. **Objective:** Move toward capability-based client consumption
+   **Reason:** Clients should not reason about raw role/tier fragments
+   **Expected risk reduction:** Medium
    **Expected implementation difficulty:** High
 
-2. **Objective:** Formalize policy-as-code / policy-as-data boundaries  
-   **Reason:** Long-term maintainability and scale require one coherent entitlement language  
-   **Expected risk reduction:** Medium  
+2. **Objective:** Formalize policy-as-code / policy-as-data boundaries
+   **Reason:** Long-term maintainability and scale require one coherent entitlement language
+   **Expected risk reduction:** Medium
    **Expected implementation difficulty:** High
 
-3. **Objective:** Complete migration of legacy mixed-state surfaces  
-   **Reason:** This is required before the platform can honestly claim unification  
-   **Expected risk reduction:** Medium  
+3. **Objective:** Complete migration of legacy mixed-state surfaces
+   **Reason:** This is required before the platform can honestly claim unification
+   **Expected risk reduction:** Medium
    **Expected implementation difficulty:** Medium
 
 ## Final Verdict
@@ -504,4 +504,4 @@ This system should not be trusted as an enterprise-grade entitlement platform to
 
 It has good parts. The role resolver is improving, policy helpers are the right move, and some critical surfaces are now server-authoritative. But the platform still has multiple active entitlement models, legacy DB vocabulary, inconsistent privileged-surface policy, weak auditability, and too much room for privilege drift during future refactors.
 
-The right conclusion is not "almost done." The right conclusion is: the foundation is finally credible, but the entitlement platform is still transitional and should be treated as such until a single canonical entitlement path replaces the mixed models. 
+The right conclusion is not "almost done." The right conclusion is: the foundation is finally credible, but the entitlement platform is still transitional and should be treated as such until a single canonical entitlement path replaces the mixed models.

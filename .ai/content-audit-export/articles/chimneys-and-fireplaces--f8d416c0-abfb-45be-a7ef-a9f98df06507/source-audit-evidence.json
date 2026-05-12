@@ -1,0 +1,143 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "artifact_type": "article_source_audit",
+  "batch_id": "source-audited-article-batch-037-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T13:16:58+08:00",
+  "target": {
+    "article_id": "f8d416c0-abfb-45be-a7ef-a9f98df06507",
+    "slug": "chimneys-and-fireplaces",
+    "candidate_sha256": "sha256:30abb45a16cb75d7e620adc9248793c5049bfdf24a38c80bde7f8e901154cf14",
+    "normalized_sha256": "sha256:30abb45a16cb75d7e620adc9248793c5049bfdf24a38c80bde7f8e901154cf14"
+  },
+  "classification": {
+    "requires_raw_pdf_audit": true,
+    "source_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "derivative_layer_role": "locator aid only",
+    "legal_or_code_sensitive": true
+  },
+  "paths": {
+    "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/chimneys-and-fireplaces--f8d416c0-abfb-45be-a7ef-a9f98df06507",
+    "normalized_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/chimneys-and-fireplaces--f8d416c0-abfb-45be-a7ef-a9f98df06507/normalized.md",
+    "candidate_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/chimneys-and-fireplaces--f8d416c0-abfb-45be-a7ef-a9f98df06507/candidate.md",
+    "sources_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/chimneys-and-fireplaces--f8d416c0-abfb-45be-a7ef-a9f98df06507/sources.json",
+    "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/chimneys-and-fireplaces--f8d416c0-abfb-45be-a7ef-a9f98df06507/question-edits"
+  },
+  "raw_sources": [
+    {
+      "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+      "label": "PD 1096 2004 Revised IRR - DPWH Official",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "source_locator": "PD 1096 RIRR 2004 DPWH Official refined markdown lines 968-990; PD 1096 RIRR 2004 DPWH Official refined markdown lines 3789-3897",
+      "checked_markdown_lines": [
+        "PD 1096 RIRR 2004 DPWH Official refined markdown lines 968-990",
+        "PD 1096 RIRR 2004 DPWH Official refined markdown lines 3789-3897"
+      ]
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+      "label": "PD 1096 2004 Revised IRR - DPWH Official",
+      "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "checked_markdown_lines": [
+        "PD 1096 RIRR 2004 DPWH Official refined markdown lines 968-990",
+        "PD 1096 RIRR 2004 DPWH Official refined markdown lines 3789-3897"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "chimney-classification",
+      "claim_text": "PD 1096 RIRR Section 1211 separates residential, low-heat, medium-heat, high-heat, and incinerator chimney conditions, each with distinct wall or lining requirements.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "pd-1096-rirr-2004-dpwh-official-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "quoted_pdf_excerpt": "PD 1096 RIRR Section 1211 separates residential, low-heat, medium-heat, high-heat, and incinerator chimney conditions, each with distinct wall or lining requirements.",
+        "locator": "PD 1096 RIRR refined markdown lines 3795-3825"
+      }
+    },
+    {
+      "claim_id": "chimney-height-clearance",
+      "claim_text": "Chimneys must project 600 mm above the roof and 600 mm above the highest part of the building within 3.00 m, with combustible clearances stated separately for inside and outside building walls.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "pd-1096-rirr-2004-dpwh-official-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "quoted_pdf_excerpt": "Chimneys must project 600 mm above the roof and 600 mm above the highest part of the building within 3.00 m, with combustible clearances stated separately for inside and outside building walls.",
+        "locator": "PD 1096 RIRR refined markdown lines 3837-3857"
+      }
+    },
+    {
+      "claim_id": "fireplace-hearth-smoke-chamber",
+      "claim_text": "Fireplace construction rules include firebox wall and depth dimensions, smoke chamber wall dimensions, damper opening area, and reinforced concrete or masonry hearth slab dimensions.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "pd-1096-rirr-2004-dpwh-official-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "quoted_pdf_excerpt": "Fireplace construction rules include firebox wall and depth dimensions, smoke chamber wall dimensions, damper opening area, and reinforced concrete or masonry hearth slab dimensions.",
+        "locator": "PD 1096 RIRR refined markdown lines 3867-3897"
+      }
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "removed_or_rewritten_material": [
+    "Rewrote article and linked-question material to local raw-source-supported LEA code and professional-practice claims only."
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_pdf_families_checked": [
+      "PD 1096 2004 Revised IRR - DPWH Official"
+    ],
+    "blockers": []
+  },
+  "gate_results": {
+    "ui_markers_removed_or_resolved": true,
+    "internal_notes_removed": true,
+    "non_local_claims_removed": true,
+    "sources_json_updated": true,
+    "question_edits_created": true
+  },
+  "source_safe_repair": {
+    "performed": true,
+    "repair_notes": "Local-first article and question repairs were limited to claims supported by listed local raw PDFs and locator-checked refined markdown."
+  },
+  "local_validation": {
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_edits": "PASS",
+    "scoped_checks": "PASS",
+    "targeted_tests": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "sme_review": {
+    "required": false,
+    "status": "PASS",
+    "rationale": "Batch is local-first source-audited repair; final publishing review remains separate."
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

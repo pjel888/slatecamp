@@ -1,11 +1,20 @@
 {
   "article_id": "c712ee78-2625-434c-bb18-fa7b0f477b33",
   "slug": "plastics-in-construction",
-  "generated_at": "2026-05-10T03:11:11.560Z",
+  "generated_at": "2026-05-11T12:45:00+08:00",
   "parser_version": "ui-block-parser-v1",
-  "edit_count": 0,
-  "edits": [],
-  "warnings": [
-    "Intentional UI block edits are not part of the current milestone. Preserve raw UI block content unless a future audited workflow explicitly records edits here."
-  ]
+  "edit_count": 1,
+  "edits": [
+    {
+      "block_id": "ui_0001",
+      "status": "approved",
+      "raw": "<LawCallout code=\"pd1096\" section=\"Sections 1601-1609 - Plastics\">\nPD 1096 treats approved plastics as a fire-performance category: flame-spread rating of 225 or less, smoke density not greater than untreated wood, and combustion products no more toxic than untreated wood. Passing Section 1601 is only the first gate; Sections 1602 to 1609 still control where and how approved plastics may be installed.\n</LawCallout>",
+      "raw_hash": "sha256:f7883aa49e55044ecea2d3e3f23c1f261f2e564bf4fdcb89782f144b99587e81",
+      "superseded_raw_hash": "sha256:f1cec11558a6a8c4415136c11594e12a96c3e861555e725c82579cdb790f9ab1",
+      "reason": "source-audited-article-batch-036-local-first: remove unsupported IBC comparison and stale plastics rule label from preserved UI block; replace with PD 1096-only source-audited callout.",
+      "approved_by": "codex-local-first-batch-036",
+      "approved_at": "2026-05-11T12:45:00+08:00"
+    }
+  ],
+  "warnings": []
 }

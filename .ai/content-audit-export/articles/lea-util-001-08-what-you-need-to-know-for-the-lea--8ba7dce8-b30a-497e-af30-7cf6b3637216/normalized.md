@@ -1,54 +1,25 @@
+# Plumbing Framework: What You Need to Know for the LEA
 
+The LEA plumbing framework has three recurring layers: professional authority, permit and inspection control, and system performance. RA 1378 supplies the professional-practice base, the Revised National Plumbing Code supplies the plumbing-system rules, and PD 1096 connects those rules to building sanitation.
 
-## Board Exam Quick Check
+## Professional Authority
 
-Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+RA 1378 defines the practice of plumbing as work that includes consultation, design, plan and specification preparation, estimates, installation, supervision, inspection, and acceptance of plumbing materials and installations. It also defines a master plumber as a person registered with the Board of Examiners for Master Plumbers.
 
-**Common mistake:** treating a familiar keyword in **Lea Util 001 08 What You Need To Know For The Lea** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
-## What You Need to Know for the LEA
+This matters in exam questions because plumbing work is not merely a contractor preference. It is a regulated professional and technical scope.
 
-## Learning Goal
+## Permits, Plans, and Inspections
 
-Apply Revised National Plumbing Code fixture unit values to calculate drainage fixture unit (DFU) loads, size horizontal branches and vertical stacks, and determine minimum pipe diameters for sanitary drainage systems.
+The RNPC requires permits before plumbing or drainage work begins. Permit applications and related plans/specifications are routed through the registered or licensed master plumber requirements stated in the code. A permit does not authorize work that violates the code, and the Administrative Authority may require correction.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-util-001-08-what-you-need-to-know-fo", type="image", caption="Drainage Fixture Unit (DFU) Calculation — Horizontal Branch vs. Vertical Stack Sizing", description="Reference diagram showing DFU values for common fixtures (water closet=4-6, lavatory=1-2, shower=2-3, kitchen sink=2) and how they sum to determine minimum pipe diameter. Includes comparison of horizontal branch capacity vs. vertical stack capacity for same pipe diameter per Revised National Plumbing Code Table 322.1.", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+Inspection is part of the same control system. Work must not be concealed until inspected and approved. A final inspection is required, and connections to water, sewer, or storm-drain systems require approval.
 
+## Performance Rules
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: LEA plumbing questions often give a fixture schedule and ask for the minimum pipe diameter. Memorize common DFU values: water closet = 4–6 DFU, lavatory = 1–2 DFU, shower = 2–3 DFU, kitchen sink = 2 DFU. Sum the DFUs and use the code table to select the pipe size.
-[/SLATECAMP_UI_BLOCK]
+The basic plumbing principles require potable water, adequate pressure, smooth and sanitary fixtures, drainage designed against fouling and clogging, cleanouts, fixture traps, venting, testing, backflow protection, and sanitary sewage disposal where no sewer exists.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: A quick memory aid for horizontal branch sizing: 1 DFU ≈ 1 fixture unit, and the Revised National Plumbing Code provides a direct lookup table. For a stack, remember that the vertical stack can handle more DFUs than a horizontal branch of the same diameter because gravity assists flow.
-[/SLATECAMP_UI_BLOCK]
+PD 1096 Rule IX then links this plumbing performance to building sanitation: buildings must have potable water supply, sanitary plumbing installation, wastewater treatment or disposal, and storm drainage.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Do not confuse DFU with water supply fixture units (WSFU). The LEA may present both in the same question. DFU is for drainage; WSFU is for water supply. They use different tables and cannot be interchanged.
-[/SLATECAMP_UI_BLOCK]
+## Exam Use
 
-component="Tip" status="preserved"]
-[SLATECAMP_UI_BLOCK:ui_0005 component="Note" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit,
-[/SLATECAMP_UI_BLOCK]
-[SLATECAMP_UI_BLOCK:ui_0006 component="Note" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC
-[/SLATECAMP_UI_BLOCK]
-## Related Articles
-
-See also within Plumbing and Sanitary Systems: **lea-util-001-06-core-concept**, **lea-util-001-07-core-concept**, **lea-util-001-09-core-concept**.
-
-> **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
+When an LEA plumbing item gives a project scenario, classify it by control layer. Signature, seal, permit, inspection, or connection approval points to the RNPC administrative workflow. Professional scope points to RA 1378. Potable water, wastewater, venting, storm drainage, and health protection point to the system-performance requirements carried by PD 1096 and the RNPC.

@@ -248,7 +248,7 @@ When an object is selected and needs to be moved, rotated, or scaled, visual han
 
 **Universal color convention (established by Maya, adopted by all):**
 - **Red** = X axis
-- **Green** = Y axis  
+- **Green** = Y axis
 - **Blue** = Z axis
 - **Yellow/White** = Free/all axes
 
@@ -877,13 +877,13 @@ PHASE 1: ENTRY
   Thinking:   "I need to check development controls for this site"
   Feeling:    😐 Task-oriented, wants speed
   Pain Point: Loading time >3 seconds = abandoned
-  
+
 PHASE 2: CONFIGURATION
   Touchpoint: Input fields, dropdowns
   Thinking:   "Lot is 25×18, R-3 zone, RROW 12m"
   Feeling:    ⚡ Efficient — wants direct input, not sliders
   Pain Point: Slider-only input is slow for professionals. Need type-in fields.
-  
+
 PHASE 3: ANALYSIS
   Touchpoint: KPI metrics, compliance panel, 3D visualization
   Thinking:   "What's my maximum buildable? What governs — FLAR or BHL?"
@@ -913,21 +913,21 @@ DAY 0 (First Visit):
   ├── Encounters first violation → reads code reference → "aha!" moment
   ├── Takes in-context quiz → gets 1-2 questions right
   └── EXIT: "That was interesting. I'll come back."
-  
+
 DAY 1-3 (Return Visits):
   ├── Skips tour → goes straight to sandbox
   ├── Tests specific scenarios (retaker reviewing weak areas)
   ├── Discovers keyboard shortcuts by accident
   ├── Starts using camera presets to switch between plan/3D views
   └── EMOTION: Growing comfort, developing spatial muscle memory
-  
+
 WEEK 1-2 (Building Competence):
   ├── Knows which parameters affect which metrics
   ├── Uses presets to jump between scenarios
   ├── Reads compliance details with code citations
   ├── Cross-references with wiki articles
   └── EMOTION: Confidence — "I understand these rules"
-  
+
 WEEK 3-4 (Mastery):
   ├── Can predict the effect of parameter changes before making them
   ├── Uses the tool to verify exam practice question answers
@@ -946,8 +946,8 @@ Excitement ───────────────────────
               ╱      ╲     ╱
              ╱        ╲   ╱
             ╱   OVERWHELM ╲╱ ← Trough: "This is confusing"
-           ╱               
-──────────╱                
+           ╱
+──────────╱
   Entry   Tour   Lost    Discover   Explore   Quiz    Master
 ```
 

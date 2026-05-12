@@ -2,8 +2,8 @@
 
 # SlateCamp Master Architecture
 
-> **Status:** Single Source of Truth  
-> **Updated:** 2026-04-04  
+> **Status:** Single Source of Truth
+> **Updated:** 2026-04-04
 > **Purpose:** Unified architecture documentation for all portals, tech stack, and system design
 
 ---

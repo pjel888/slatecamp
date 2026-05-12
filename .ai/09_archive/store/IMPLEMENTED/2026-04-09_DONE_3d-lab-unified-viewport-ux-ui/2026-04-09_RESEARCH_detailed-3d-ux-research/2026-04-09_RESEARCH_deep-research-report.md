@@ -8,15 +8,15 @@ The evidence base for 3D interaction design groups most low-level tasks into nav
 
 Comparative teardown shows a convergent pattern across serious tools:
 
-- **Revit** operationalizes BIM work through a persistent “table of contents” (Project Browser) and a context-driven inspector (Properties palette), plus formal shortcut support. citeturn7search0turn7search16turn5search3turn5search7  
-- **Rhino** prioritizes speed and expert mastery via command-centric workflow, direct manipulation (Gumball), and strong layer and property tooling. citeturn0search4turn5search2turn8search19turn8search3  
-- **SketchUp** is built around “learnable precision” via the inference engine, hierarchical organization via Outliner, and object attribute inspection via Entity Info, now paired with collaboration workflows tied to Trimble Connect. citeturn5search4turn5search19turn5search1turn6search2  
-- **Navisworks** centers on model review and coordination through Selection Tree, saved sets, and clash results lists. citeturn8search0turn8search1turn7search21  
-- **Autodesk Viewer / Autodesk Construction Cloud viewers** standardize browser-based review through Model Browser, Properties, Comments, Markups, Settings (including performance tuning), and Share. citeturn2search0turn2search12turn2search19  
-- **Twinmotion** surfaces a real-time viz-first interface with a Navigation panel and a Scene graph hierarchy. citeturn1search2turn7search2turn7search6  
-- **Enscape** (as a plug-in) succeeds by integrating into host CAD UX but exposing a consistent Enscape UI (toolbar, asset library, placement) in the rendering viewport. citeturn1search1turn1search3turn1search25  
-- **Archicad** anchors user flow on the Info Box (tool and element settings) and Navigator (project viewpoints, views, layouts, publishing), paired with BIMcloud collaboration. citeturn1search8turn6search3turn6search0  
-- **Blender** demonstrates an “editor-based” composition UI with Outliner and Properties Editor, plus explicit support for industry-compatible keymaps to reduce muscle-memory switching cost. citeturn0search6turn0search2turn7search7turn7search3  
+- **Revit** operationalizes BIM work through a persistent “table of contents” (Project Browser) and a context-driven inspector (Properties palette), plus formal shortcut support. citeturn7search0turn7search16turn5search3turn5search7
+- **Rhino** prioritizes speed and expert mastery via command-centric workflow, direct manipulation (Gumball), and strong layer and property tooling. citeturn0search4turn5search2turn8search19turn8search3
+- **SketchUp** is built around “learnable precision” via the inference engine, hierarchical organization via Outliner, and object attribute inspection via Entity Info, now paired with collaboration workflows tied to Trimble Connect. citeturn5search4turn5search19turn5search1turn6search2
+- **Navisworks** centers on model review and coordination through Selection Tree, saved sets, and clash results lists. citeturn8search0turn8search1turn7search21
+- **Autodesk Viewer / Autodesk Construction Cloud viewers** standardize browser-based review through Model Browser, Properties, Comments, Markups, Settings (including performance tuning), and Share. citeturn2search0turn2search12turn2search19
+- **Twinmotion** surfaces a real-time viz-first interface with a Navigation panel and a Scene graph hierarchy. citeturn1search2turn7search2turn7search6
+- **Enscape** (as a plug-in) succeeds by integrating into host CAD UX but exposing a consistent Enscape UI (toolbar, asset library, placement) in the rendering viewport. citeturn1search1turn1search3turn1search25
+- **Archicad** anchors user flow on the Info Box (tool and element settings) and Navigator (project viewpoints, views, layouts, publishing), paired with BIMcloud collaboration. citeturn1search8turn6search3turn6search0
+- **Blender** demonstrates an “editor-based” composition UI with Outliner and Properties Editor, plus explicit support for industry-compatible keymaps to reduce muscle-memory switching cost. citeturn0search6turn0search2turn7search7turn7search3
 
 The practical conclusion: Slatecamp must ship with a coherent platform UX that unifies geometry editing, information design, review, and compliance into one shared mental model. If each module behaves differently, professionals will not trust it in production.
 
@@ -28,9 +28,9 @@ Most 3D UI work can be reduced to three universal task families: navigation, sel
 
 Classic human factors and UX principles apply with extra force in 3D because cognitive load is higher:
 
-- **Visibility of system status** and **user control and freedom** are not optional. They are the difference between trust and abandonment. citeturn4search0turn4search4  
-- **Direct manipulation** succeeds when users can act on visible objects with immediate feedback, reducing the gulf between intent and effect. citeturn4search2turn4search6  
-- **Human-centered design** standards emphasize explicit understanding of users and tasks, iterative design, and evaluation. In 3D architecture workflows, that means studying real project behaviors, not demo scenes. citeturn3search0turn3search8  
+- **Visibility of system status** and **user control and freedom** are not optional. They are the difference between trust and abandonment. citeturn4search0turn4search4
+- **Direct manipulation** succeeds when users can act on visible objects with immediate feedback, reducing the gulf between intent and effect. citeturn4search2turn4search6
+- **Human-centered design** standards emphasize explicit understanding of users and tasks, iterative design, and evaluation. In 3D architecture workflows, that means studying real project behaviors, not demo scenes. citeturn3search0turn3search8
 
 Slatecamp should treat these as contractual requirements, not design taste.
 
@@ -129,9 +129,9 @@ Slatecamp design rule: **Hidden state must be explainable.** Users need a “Vis
 
 Every serious tool provides a tree or hierarchy surface:
 
-- SketchUp Outliner helps manage groups and components and their hierarchy. citeturn5search19  
-- Navisworks Selection Tree offers multiple hierarchical views and a “Sets” mode for selection/search sets. citeturn8search0  
-- Twinmotion Scene graph panel is explicitly positioned as visual hierarchy of scene elements. citeturn7search2turn7search6  
+- SketchUp Outliner helps manage groups and components and their hierarchy. citeturn5search19
+- Navisworks Selection Tree offers multiple hierarchical views and a “Sets” mode for selection/search sets. citeturn8search0
+- Twinmotion Scene graph panel is explicitly positioned as visual hierarchy of scene elements. citeturn7search2turn7search6
 
 Non-negotiables:
 
@@ -147,8 +147,8 @@ For architecture, review and compliance require anchored communication, not floa
 
 Two key standards emerge:
 
-- Navisworks Clash Detective Results tab is list-driven clash management, supporting grouping and review workflows. citeturn7search21turn1search4  
-- buildingSMART’s BCF describes model-based issue topics with comments, screenshots, object references, and viewpoint attachments for navigation and status tracking. citeturn9search0turn9search4  
+- Navisworks Clash Detective Results tab is list-driven clash management, supporting grouping and review workflows. citeturn7search21turn1search4
+- buildingSMART’s BCF describes model-based issue topics with comments, screenshots, object references, and viewpoint attachments for navigation and status tracking. citeturn9search0turn9search4
 
 Non-negotiables:
 
@@ -165,10 +165,10 @@ Collaboration is not the same for all personas. Stakeholders often need review w
 
 Patterns worth adopting:
 
-- Autodesk Viewer supports share links, comments, and collaboration without requiring stakeholders to install desktop software, with account requirements only when commenting. citeturn2search19turn2search3  
-- SketchUp’s Collaboration Bar enables sharing and feedback, including measurements and comments tied to shared models. citeturn6search2  
-- Archicad BIMcloud supports real-time teamwork workflows and offline work support. citeturn6search0  
-- Autodesk BIM Collaborate Pro describes cloud co-authoring and aggregated browser visualization for distributed teams. citeturn6search9  
+- Autodesk Viewer supports share links, comments, and collaboration without requiring stakeholders to install desktop software, with account requirements only when commenting. citeturn2search19turn2search3
+- SketchUp’s Collaboration Bar enables sharing and feedback, including measurements and comments tied to shared models. citeturn6search2
+- Archicad BIMcloud supports real-time teamwork workflows and offline work support. citeturn6search0
+- Autodesk BIM Collaborate Pro describes cloud co-authoring and aggregated browser visualization for distributed teams. citeturn6search9
 
 Slatecamp design rule: **Collaboration must be role-based by default.** If the Client persona can break geometry, your product is not production-safe.
 
@@ -178,10 +178,10 @@ Performance is UX. Autodesk Viewer puts performance tuning in Settings, includin
 
 If Slatecamp is web-based and uses React Three Fiber, performance constraints become more sensitive:
 
-- R3F documents that pointer events are implemented via raycasting and that default raycasting is interaction-driven. citeturn9search9turn9search1  
-- R3F provides guidance on scaling performance and avoiding pitfalls like reactive state updates in fast loops. citeturn9search35turn9search33  
-- Three.js documents InstancedMesh as a method to reduce draw calls and improve performance for repeated objects. citeturn9search10  
-- WebGL specs define context loss behavior; production systems must handle context lost and restored events. citeturn9search3turn9search15  
+- R3F documents that pointer events are implemented via raycasting and that default raycasting is interaction-driven. citeturn9search9turn9search1
+- R3F provides guidance on scaling performance and avoiding pitfalls like reactive state updates in fast loops. citeturn9search35turn9search33
+- Three.js documents InstancedMesh as a method to reduce draw calls and improve performance for repeated objects. citeturn9search10
+- WebGL specs define context loss behavior; production systems must handle context lost and restored events. citeturn9search3turn9search15
 
 Slatecamp design rule: **You must design for degraded mode.** When FPS drops or WebGL context is lost, users need explicit messaging and safe recovery, not a frozen canvas.
 
@@ -247,9 +247,9 @@ flowchart TB
 
 A component list is worthless unless it includes: states, behavior rules, and failure handling. Slatecamp components must be designed around these invariants:
 
-- State visibility: users must always know what is active. citeturn4search0turn4search4  
-- Recoverability: undo, cancel, and safe exits must exist. citeturn4search0  
-- Consistency: tool semantics must not change across modules. citeturn4search0  
+- State visibility: users must always know what is active. citeturn4search0turn4search4
+- Recoverability: undo, cancel, and safe exits must exist. citeturn4search0
+- Consistency: tool semantics must not change across modules. citeturn4search0
 
 ## Workflows: happy paths, error paths, and UX trails
 
@@ -324,8 +324,8 @@ Error paths are where production trust is earned. Slatecamp should treat the fol
 **Performance degradation error path**
 - Triggers: FPS drops, heavy scene, raycasting overload, memory pressure.
 - Required recovery:
-  - auto-detect performance and suggest quality reduction (Autodesk Viewer Settings pattern). citeturn2search0  
-  - degrade overlays, reduce raycasts, and support “on-demand rendering” patterns for web. R3F explicitly discusses scaling performance and pitfalls. citeturn9search35turn9search33  
+  - auto-detect performance and suggest quality reduction (Autodesk Viewer Settings pattern). citeturn2search0
+  - degrade overlays, reduce raycasts, and support “on-demand rendering” patterns for web. R3F explicitly discusses scaling performance and pitfalls. citeturn9search35turn9search33
 
 **WebGL context loss error path (web platform risk)**
 - Triggers: GPU reset, tab thrash, device constraints.
@@ -365,9 +365,9 @@ Make-or-break moments:
 - option comparison: can they branch and review without duplicating chaos?
 
 Key UX needs:
-- inference guides and snapping (SketchUp pattern). citeturn5search4  
-- direct manipulation with predictable transform alignment (Rhino Gumball pattern). citeturn0search4  
-- saved views and option sets (Navisworks viewpoint mindset, repurposed for design options). citeturn1search15  
+- inference guides and snapping (SketchUp pattern). citeturn5search4
+- direct manipulation with predictable transform alignment (Rhino Gumball pattern). citeturn0search4
+- saved views and option sets (Navisworks viewpoint mindset, repurposed for design options). citeturn1search15
 
 Journey timeline:
 
@@ -398,9 +398,9 @@ Make-or-break moments:
 - property editing speed and repeatability.
 
 Key UX needs:
-- stable inspector and project tree patterns similar to Revit’s Properties palette and Project Browser concept. citeturn7search0turn7search16  
-- strong hierarchy and naming tools (Outliner/Selection Tree patterns). citeturn5search19turn8search0  
-- shortcut and customization posture for speed, as Revit supports shortcut guides and customization. citeturn5search3turn5search7  
+- stable inspector and project tree patterns similar to Revit’s Properties palette and Project Browser concept. citeturn7search0turn7search16
+- strong hierarchy and naming tools (Outliner/Selection Tree patterns). citeturn5search19turn8search0
+- shortcut and customization posture for speed, as Revit supports shortcut guides and customization. citeturn5search3turn5search7
 
 Journey timeline:
 
@@ -433,7 +433,7 @@ Make-or-break moments:
 
 Key UX needs:
 - review mode that hides authoring complexity and focuses on curated views.
-- comments and issue export for governance. Autodesk Viewer exposes Comments and allows exporting comment history to PDF. citeturn2search0  
+- comments and issue export for governance. Autodesk Viewer exposes Comments and allows exporting comment history to PDF. citeturn2search0
 - share links and stakeholder access without installing heavy software. citeturn2search19turn2search3
 
 Journey timeline:
@@ -466,8 +466,8 @@ Make-or-break moments:
 - can they place assets efficiently?
 
 Key UX needs:
-- scene graph and asset libraries, as Twinmotion exposes a Scene graph and navigation panel for scene work. citeturn7search2turn7search6turn1search2  
-- Enscape-style asset placement accessible from both host UI and renderer UI; Enscape documents asset placement via Asset Library accessible in CAD toolbar or in-viewport UI. citeturn1search25turn1search3  
+- scene graph and asset libraries, as Twinmotion exposes a Scene graph and navigation panel for scene work. citeturn7search2turn7search6turn1search2
+- Enscape-style asset placement accessible from both host UI and renderer UI; Enscape documents asset placement via Asset Library accessible in CAD toolbar or in-viewport UI. citeturn1search25turn1search3
 
 Journey timeline:
 
@@ -499,8 +499,8 @@ Make-or-break moments:
 - can they export defensible, traceable findings?
 
 Key UX needs:
-- list-driven issue management similar to Navisworks clash results workflows. citeturn7search21turn1search4  
-- BCF-style issue topics with viewpoint and object references for cross-platform exchange. citeturn9search0turn9search4  
+- list-driven issue management similar to Navisworks clash results workflows. citeturn7search21turn1search4
+- BCF-style issue topics with viewpoint and object references for cross-platform exchange. citeturn9search0turn9search4
 
 Journey timeline:
 
@@ -533,7 +533,7 @@ Make-or-break moments:
 
 Key UX needs:
 - simplified navigation with guided views (review mode).
-- comments pinned to geometry and view, similar to Autodesk Viewer share-and-comment flows. citeturn2search19turn2search3  
+- comments pinned to geometry and view, similar to Autodesk Viewer share-and-comment flows. citeturn2search19turn2search3
 - permission boundaries by default.
 
 Journey timeline:
@@ -592,14 +592,14 @@ Twinmotion can show navigation options in-viewport; Blender exposes a navigation
 
 **One hierarchy model**
 A usable hybrid is:
-- Scene graph for object hierarchy (Twinmotion, Blender, SketchUp Outliner). citeturn7search6turn0search14turn5search19  
-- Selection sets and search sets for repeatable workflows (Navisworks Sets patterns). citeturn8search0turn8search1  
+- Scene graph for object hierarchy (Twinmotion, Blender, SketchUp Outliner). citeturn7search6turn0search14turn5search19
+- Selection sets and search sets for repeatable workflows (Navisworks Sets patterns). citeturn8search0turn8search1
 
 **One review and issue model**
 Adopt:
-- list + focus mechanics (Navisworks clash results list). citeturn7search21  
-- share link + comment export mechanics (Autodesk Viewer patterns). citeturn2search0turn2search19  
-- BCF-compatible objects for exchange. citeturn9search4turn9search8  
+- list + focus mechanics (Navisworks clash results list). citeturn7search21
+- share link + comment export mechanics (Autodesk Viewer patterns). citeturn2search0turn2search19
+- BCF-compatible objects for exchange. citeturn9search4turn9search8
 
 ## Research methods, testing plan, metrics, analytics, and tables
 
@@ -675,10 +675,10 @@ Use both behavioral metrics and validated subjective instruments.
 - Repeatability (does the user get faster on second attempt)
 
 **Subjective usability**
-- System Usability Scale (SUS) provides a 10-item scale for global usability assessment. citeturn3search6  
+- System Usability Scale (SUS) provides a 10-item scale for global usability assessment. citeturn3search6
 
 **Workload**
-- NASA TLX measures perceived workload across multiple dimensions and is widely used in human factors. citeturn3search29turn3search19  
+- NASA TLX measures perceived workload across multiple dimensions and is widely used in human factors. citeturn3search29turn3search19
 
 Slatecamp should treat SUS and TLX as release gates for Tier 1 workflows, not optional research artifacts.
 
@@ -697,11 +697,11 @@ Analytics must reflect the UX trails and the failure modes that kill adoption.
 - Performance: FPS buckets, raycast time budget, draw call estimates, degradations triggered.
 
 **Web-specific instrumentation if using R3F**
-- Event handler density and raycast triggers (R3F describes pointer events via raycasting). citeturn9search9turn9search1  
-- Throttling strategies and on-demand rendering signals (R3F scaling guidance). citeturn9search35  
+- Event handler density and raycast triggers (R3F describes pointer events via raycasting). citeturn9search9turn9search1
+- Throttling strategies and on-demand rendering signals (R3F scaling guidance). citeturn9search35
 
 **Reliability**
-- WebGL context lost and restored events must be handled and logged. citeturn9search3turn9search15  
+- WebGL context lost and restored events must be handled and logged. citeturn9search3turn9search15
 
 ### UX requirements matrix
 

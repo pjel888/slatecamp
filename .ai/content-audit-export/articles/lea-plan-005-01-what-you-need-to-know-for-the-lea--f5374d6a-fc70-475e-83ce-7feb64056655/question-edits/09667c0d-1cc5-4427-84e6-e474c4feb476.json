@@ -1,0 +1,139 @@
+{
+  "question_id": "09667c0d-1cc5-4427-84e6-e474c4feb476",
+  "baseline_hash": "sha256:080d8d1f0ef95592bb7f8d9a5f97e79f7586c7469790557bf05fa2c7de7c5b8d",
+  "action": "replace",
+  "reason": "source-audited-article-batch-074-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes out-of-scope or stale claims from the exported question.",
+  "approved_by": "codex-local-first-batch-074",
+  "approved_at": "2026-05-12T02:15:00.945+08:00",
+  "source_audit_support": {
+    "parent_article_id": "f5374d6a-fc70-475e-83ce-7feb64056655",
+    "parent_article_slug": "lea-plan-005-01-what-you-need-to-know-for-the-lea",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "BCI refined markdown lines 245-288, 333-370, 407-455, 483-508, and 1328-1340; raw PDF pages 11-12, 17-18, and 20-21 checked by local PyMuPDF extraction; Open Space Guidelines refined markdown lines 36-60, 549-573, 581-665, 1705-1724, and 1729-1759; raw PDF pages 1, 3-5, and 9 checked by local PyMuPDF extraction; BP 220 refined markdown lines 105-147, 151-195, 215-264, 420-465, and 482-504; raw PDF pages 5-6, 8-10, and 12 checked by local PyMuPDF extraction; PD 957 refined markdown lines 105-123, 129-177, 198-224, 358-405, and 470-512; raw PDF pages 6-7 and 11-14 checked by local PyMuPDF extraction; DOE Guidelines refined markdown lines 717-795, 1429-1450, and 1533-1537; raw PDF pages 33, 35-36, 39-40, and 42 checked by local PyMuPDF extraction; Sitework Lecture refined markdown lines 1-90 and 560-609; raw PDF pages 1-6 and paving/surfacing pages checked by local PyMuPDF extraction",
+    "checked_markdown_lines": [
+      "BCI refined markdown lines 245-288, 333-370, 407-455, 483-508, and 1328-1340",
+      "Open Space Guidelines refined markdown lines 36-60, 549-573, 581-665, 1705-1724, and 1729-1759",
+      "BP 220 refined markdown lines 105-147, 151-195, 215-264, 420-465, and 482-504",
+      "PD 957 refined markdown lines 105-123, 129-177, 198-224, 358-405, and 470-512",
+      "DOE Guidelines refined markdown lines 717-795, 1429-1450, and 1533-1537",
+      "Sitework Lecture refined markdown lines 1-90 and 560-609"
+    ],
+    "checked_raw_pdf_pages": [
+      "Building Construction Illustrated, 5th Edition: 11-12, 17-18, and 20-21 checked by local PyMuPDF extraction",
+      "Open Space Development Guidelines: 1, 3-5, and 9 checked by local PyMuPDF extraction",
+      "Revised IRR of BP 220, 2008: 5-6, 8-10, and 12 checked by local PyMuPDF extraction",
+      "PD 957 IRR - Subdivision and Condominium Buyers Protective Decree: 6-7 and 11-14 checked by local PyMuPDF extraction",
+      "DOE Guidelines on Energy Conserving Design of Buildings, 2008: 33, 35-36, 39-40, and 42 checked by local PyMuPDF extraction",
+      "Sitework Lecture: 1-6 and paving/surfacing pages checked by local PyMuPDF extraction"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "building-construction-illustrated-b074",
+        "label": "Building Construction Illustrated, 5th Edition",
+        "source_type": "professional_reference_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "BCI refined markdown lines 245-288, 333-370, 407-455, 483-508, and 1328-1340; raw PDF pages 11-12, 17-18, and 20-21 checked by local PyMuPDF extraction",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a"
+      },
+      {
+        "source_id": "open-space-development-guidelines-b074",
+        "label": "Open Space Development Guidelines",
+        "source_type": "government_planning_guideline_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Open Space Development Guidelines.pdf",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Open Space Development Guidelines.md",
+        "source_locator": "Open Space Guidelines refined markdown lines 36-60, 549-573, 581-665, 1705-1724, and 1729-1759; raw PDF pages 1, 3-5, and 9 checked by local PyMuPDF extraction",
+        "raw_pdf_sha256": "sha256:2ca6d61605d370035cdd8679a43cdd57d5f40deada47601ea56e5161733e0add",
+        "refined_markdown_sha256": "sha256:2be9fa0f23c22913f06acedf5905c5ebf004240ee764b47a2b1c97e15b9d9b2b"
+      },
+      {
+        "source_id": "bp220-irr-2008-b074",
+        "label": "Revised IRR of BP 220, 2008",
+        "source_type": "primary_law_irr_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-220/Revised_IRR_BP220_2008.pdf",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-220/Revised_IRR_BP220_2008.md",
+        "source_locator": "BP 220 refined markdown lines 105-147, 151-195, 215-264, 420-465, and 482-504; raw PDF pages 5-6, 8-10, and 12 checked by local PyMuPDF extraction",
+        "raw_pdf_sha256": "sha256:7392741260c227647afe39de283f3efa979465692da8905e59be8857c8651614",
+        "refined_markdown_sha256": "sha256:4d66a5ce3891d6405324d52ae8b874f75321da0e5f00213489be43d754d27be1"
+      },
+      {
+        "source_id": "pd957-irr-subdivision-condominium-b074",
+        "label": "PD 957 IRR - Subdivision and Condominium Buyers Protective Decree",
+        "source_type": "primary_law_irr_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-957/PD 957 IRR - Subdivision and Condominium IRR.pdf",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-957/PD 957 IRR - Subdivision and Condominium IRR.md",
+        "source_locator": "PD 957 refined markdown lines 105-123, 129-177, 198-224, 358-405, and 470-512; raw PDF pages 6-7 and 11-14 checked by local PyMuPDF extraction",
+        "raw_pdf_sha256": "sha256:1f9ab17a816885cfdbafafc03e3e9b64470a737447129a32a459836d6773f9ea",
+        "refined_markdown_sha256": "sha256:0edd45f5293044779c45c36e5219904d3863cfa747d200864959fc1bf6a9ff7b"
+      },
+      {
+        "source_id": "doe-energy-conserving-design-2008-b074",
+        "label": "DOE Guidelines on Energy Conserving Design of Buildings, 2008",
+        "source_type": "government_guideline_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.md",
+        "source_locator": "DOE Guidelines refined markdown lines 717-795, 1429-1450, and 1533-1537; raw PDF pages 33, 35-36, 39-40, and 42 checked by local PyMuPDF extraction",
+        "raw_pdf_sha256": "sha256:9a1a4019b500ffc2873625db6f04ac50b39aea7cadac9159464f9ed716e8126c",
+        "refined_markdown_sha256": "sha256:477f0990a67359eee303e8280a00be449d0aa413252161db7b5b1bafec3012b9"
+      },
+      {
+        "source_id": "sitework-lecture-b074",
+        "label": "Sitework Lecture",
+        "source_type": "professional_reference_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Sitework Lecture.pdf",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Sitework Lecture.md",
+        "source_locator": "Sitework Lecture refined markdown lines 1-90 and 560-609; raw PDF pages 1-6 and paving/surfacing pages checked by local PyMuPDF extraction",
+        "raw_pdf_sha256": "sha256:a469e97d2c4b842f443864c658fc4359ef2787a2b009b9fbafc1afbd1da25ff6",
+        "refined_markdown_sha256": "sha256:e761c9b38b9d0c07bd6053692337109a218169ba791e8f074fa40842d3972af2"
+      }
+    ],
+    "local_source_safe_action": "Question text, answer, rationale, and citation rewritten to the source-audited-article-batch-074-local-first checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "Why are paving and surfacing part of landscape design?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They affect movement, drainage, accessibility, heat, and outdoor use."
+      },
+      {
+        "id": "b",
+        "text": "They are unrelated to sitework."
+      },
+      {
+        "id": "c",
+        "text": "They only determine building height."
+      },
+      {
+        "id": "d",
+        "text": "They are the same as housing classification."
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Correct. Sitework sources connect paving and surfacing with outdoor function and technical performance.",
+      "b": "Incorrect. This changes the checked source condition or applies a different rule.",
+      "c": "Incorrect. This changes the checked source condition or applies a different rule.",
+      "d": "Incorrect. This changes the checked source condition or applies a different rule.",
+      "correct": "Sitework sources connect paving and surfacing with outdoor function and technical performance.",
+      "takeaway": "Apply the checked local raw-source condition before choosing the answer."
+    },
+    "explanation": "Sitework sources connect paving and surfacing with outdoor function and technical performance.",
+    "code_citation": "BCI refined markdown lines 245-288, 333-370, 407-455, 483-508, and 1328-1340; raw PDF pages 11-12, 17-18, and 20-21 checked by local PyMuPDF extraction; Open Space Guidelines refined markdown lines 36-60, 549-573, 581-665, 1705-1724, and 1729-1759; raw PDF pages 1, 3-5, and 9 checked by local PyMuPDF extraction; BP 220 refined markdown lines 105-147, 151-195, 215-264, 420-465, and 482-504; raw PDF pages 5-6, 8-10, and 12 checked by local PyMuPDF extraction; PD 957 refined markdown lines 105-123, 129-177, 198-224, 358-405, and 470-512; raw PDF pages 6-7 and 11-14 checked by local PyMuPDF extraction; DOE Guidelines refined markdown lines 717-795, 1429-1450, and 1533-1537; raw PDF pages 33, 35-36, 39-40, and 42 checked by local PyMuPDF extraction; Sitework Lecture refined markdown lines 1-90 and 560-609; raw PDF pages 1-6 and paving/surfacing pages checked by local PyMuPDF extraction",
+    "bloom_level": "understand",
+    "application_context": "landscape_design",
+    "practice_context": [
+      "source-audited-article-batch-074-local-first"
+    ],
+    "difficulty": 0.52,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false
+  }
+}

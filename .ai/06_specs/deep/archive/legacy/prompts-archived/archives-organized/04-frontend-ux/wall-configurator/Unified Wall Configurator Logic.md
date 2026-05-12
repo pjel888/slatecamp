@@ -174,7 +174,7 @@ $$
 A practical plaster wastage factor is 5% for straightforward walls.
 
 ### Paint formula
-For paint estimation, use finish area after opening deduction and after side selection. Because exact spread rate varies by substrate roughness and product line, a professional estimator should keep coverage editable, but a standard engineering default for acrylic wall paint is about 25 to 30 sqm per 4 L per coat, equivalent to about 6.25 to 7.5 sqm/L/coat. This document adopts **7 sqm/L/coat** as a configurable engineering constant for reference computation. That is consistent with the user instruction permitting established engineering constants when exact manufacturer rates are not embedded in the prompt. 
+For paint estimation, use finish area after opening deduction and after side selection. Because exact spread rate varies by substrate roughness and product line, a professional estimator should keep coverage editable, but a standard engineering default for acrylic wall paint is about 25 to 30 sqm per 4 L per coat, equivalent to about 6.25 to 7.5 sqm/L/coat. This document adopts **7 sqm/L/coat** as a configurable engineering constant for reference computation. That is consistent with the user instruction permitting established engineering constants when exact manufacturer rates are not embedded in the prompt.
 
 Let:
 - $$C$$ = coverage in sqm/L/coat.
@@ -207,7 +207,7 @@ For a quick wall estimator when seam mapping is not manually entered, the softwa
 ## 4. Sample Estimate (10 sqm Reference)
 
 ### Assumptions
-The sample below uses a **10 sqm net wall area** with **no openings** so the reference stays transparent. Where finish materials are side-dependent, quantities are shown for **one side** unless noted; a second column indicates the **both sides** multiplier to avoid ambiguity. 
+The sample below uses a **10 sqm net wall area** with **no openings** so the reference stays transparent. Where finish materials are side-dependent, quantities are shown for **one side** unless noted; a second column indicates the **both sides** multiplier to avoid ambiguity.
 
 Engineering constants used for the sample:
 - CHB size: 0.40 m × 0.20 m face. [5]
@@ -409,7 +409,7 @@ If desired, apply plaster wastage factor after material conversion:
 A practical plaster wastage factor is 5% for straightforward walls.
 
 ### Paint formula
-For paint estimation, use finish area after opening deduction and after side selection. Because exact spread rate varies by substrate roughness and product line, a professional estimator should keep coverage editable, but a standard engineering default for acrylic wall paint is about 25 to 30 sqm per 4 L per coat, equivalent to about 6.25 to 7.5 sqm/L/coat. This document adopts **7 sqm/L/coat** as a configurable engineering constant for reference computation. That is consistent with the user instruction permitting established engineering constants when exact manufacturer rates are not embedded in the prompt. 
+For paint estimation, use finish area after opening deduction and after side selection. Because exact spread rate varies by substrate roughness and product line, a professional estimator should keep coverage editable, but a standard engineering default for acrylic wall paint is about 25 to 30 sqm per 4 L per coat, equivalent to about 6.25 to 7.5 sqm/L/coat. This document adopts **7 sqm/L/coat** as a configurable engineering constant for reference computation. That is consistent with the user instruction permitting established engineering constants when exact manufacturer rates are not embedded in the prompt.
 
 Let:
 - \(C\) = coverage in sqm/L/coat.
@@ -442,7 +442,7 @@ For a quick wall estimator when seam mapping is not manually entered, the softwa
 ## 4. Sample Estimate (10 sqm Reference)
 
 ### Assumptions
-The sample below uses a **10 sqm net wall area** with **no openings** so the reference stays transparent. Where finish materials are side-dependent, quantities are shown for **one side** unless noted; a second column indicates the **both sides** multiplier to avoid ambiguity. 
+The sample below uses a **10 sqm net wall area** with **no openings** so the reference stays transparent. Where finish materials are side-dependent, quantities are shown for **one side** unless noted; a second column indicates the **both sides** multiplier to avoid ambiguity.
 
 Engineering constants used for the sample:
 - CHB size: 0.40 m × 0.20 m face. [scribd](https://www.scribd.com/document/481430620/MT04-Estimation-conitnued)

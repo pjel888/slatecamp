@@ -1,0 +1,247 @@
+{
+  "schema_version": "source-audit-evidence-v1-local-first",
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-041-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T14:40:06.021+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "92be8354-f938-4307-a40c-4620c1381cba",
+    "slug": "lea-util-003-05-core-definitions-grounding-vs-bonding",
+    "title": "Core definitions: grounding vs bonding",
+    "article_folder": ".ai/content-audit-export/articles/lea-util-003-05-core-definitions-grounding-vs-bonding--92be8354-f938-4307-a40c-4620c1381cba",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-05-core-definitions-grounding-vs-bonding--92be8354-f938-4307-a40c-4620c1381cba",
+    "candidate_path": ".ai/content-audit-export/articles/lea-util-003-05-core-definitions-grounding-vs-bonding--92be8354-f938-4307-a40c-4620c1381cba/candidate.md",
+    "candidate_sha256": "sha256:ac3448054d6945ae9b501c0a998d38532c809c78e5441d59c49affc17d80d1e3",
+    "normalized_sha256": "sha256:ac3448054d6945ae9b501c0a998d38532c809c78e5441d59c49affc17d80d1e3",
+    "linked_questions_sha256": "sha256:59ee76410cf2bba9b998822eb6d8afd8c7f32e48dfd08516acb8e1c95b244103",
+    "sources_sha256": "sha256:16a68faab91f978410ebff0172a6347b5ff514e7d1c38338507d1d1847b97ac5"
+  },
+  "classification": {
+    "content_domain": "LEA Building Utilities - grounding and bonding",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high_value_building_utilities_code",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 15,
+    "question_edits_created": [
+      "0ec0a8ff-0730-46f3-8c11-47bb9dd46485",
+      "21084f66-e82d-49d5-b000-a7de4c55d026",
+      "7df25e02-af42-41d0-88d3-0e4390857cdd",
+      "75d3743a-b865-4cee-9bf6-c598cc4e91f0",
+      "dd53b691-1180-44cc-bb30-c69f78902cbf",
+      "150b7e15-c95f-4f3f-8f07-97e81e7fa2f4",
+      "0c4da5ce-765a-4eeb-b6c3-e9e865f61761",
+      "ee2b54b0-34bf-487e-9c39-0b3039f8855c",
+      "4c94086d-d7fc-43d0-84d8-51775c0f163d",
+      "9e2e4c94-285b-4f10-8fa0-3ada94ea518b",
+      "e640ba67-fb61-488b-b351-329f869ac689",
+      "e665c34c-13e8-4a92-82db-b9ce1dd41446",
+      "eb168717-c97e-4397-929b-11b67e906e68",
+      "e8bae89c-0fb3-4332-856f-93a076c3c6d6",
+      "8c9485f0-f98a-4d02-8102-cb2c0e675f53"
+    ]
+  },
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/lea-util-003-05-core-definitions-grounding-vs-bonding--92be8354-f938-4307-a40c-4620c1381cba",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-05-core-definitions-grounding-vs-bonding--92be8354-f938-4307-a40c-4620c1381cba",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/lea-util-003-05-core-definitions-grounding-vs-bonding--92be8354-f938-4307-a40c-4620c1381cba/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-05-core-definitions-grounding-vs-bonding--92be8354-f938-4307-a40c-4620c1381cba/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/lea-util-003-05-core-definitions-grounding-vs-bonding--92be8354-f938-4307-a40c-4620c1381cba/question-edits/0ec0a8ff-0730-46f3-8c11-47bb9dd46485.json",
+      ".ai/content-audit-export/articles/lea-util-003-05-core-definitions-grounding-vs-bonding--92be8354-f938-4307-a40c-4620c1381cba/question-edits/21084f66-e82d-49d5-b000-a7de4c55d026.json",
+      ".ai/content-audit-export/articles/lea-util-003-05-core-definitions-grounding-vs-bonding--92be8354-f938-4307-a40c-4620c1381cba/question-edits/7df25e02-af42-41d0-88d3-0e4390857cdd.json",
+      ".ai/content-audit-export/articles/lea-util-003-05-core-definitions-grounding-vs-bonding--92be8354-f938-4307-a40c-4620c1381cba/question-edits/75d3743a-b865-4cee-9bf6-c598cc4e91f0.json",
+      ".ai/content-audit-export/articles/lea-util-003-05-core-definitions-grounding-vs-bonding--92be8354-f938-4307-a40c-4620c1381cba/question-edits/dd53b691-1180-44cc-bb30-c69f78902cbf.json",
+      ".ai/content-audit-export/articles/lea-util-003-05-core-definitions-grounding-vs-bonding--92be8354-f938-4307-a40c-4620c1381cba/question-edits/150b7e15-c95f-4f3f-8f07-97e81e7fa2f4.json",
+      ".ai/content-audit-export/articles/lea-util-003-05-core-definitions-grounding-vs-bonding--92be8354-f938-4307-a40c-4620c1381cba/question-edits/0c4da5ce-765a-4eeb-b6c3-e9e865f61761.json",
+      ".ai/content-audit-export/articles/lea-util-003-05-core-definitions-grounding-vs-bonding--92be8354-f938-4307-a40c-4620c1381cba/question-edits/ee2b54b0-34bf-487e-9c39-0b3039f8855c.json",
+      ".ai/content-audit-export/articles/lea-util-003-05-core-definitions-grounding-vs-bonding--92be8354-f938-4307-a40c-4620c1381cba/question-edits/4c94086d-d7fc-43d0-84d8-51775c0f163d.json",
+      ".ai/content-audit-export/articles/lea-util-003-05-core-definitions-grounding-vs-bonding--92be8354-f938-4307-a40c-4620c1381cba/question-edits/9e2e4c94-285b-4f10-8fa0-3ada94ea518b.json",
+      ".ai/content-audit-export/articles/lea-util-003-05-core-definitions-grounding-vs-bonding--92be8354-f938-4307-a40c-4620c1381cba/question-edits/e640ba67-fb61-488b-b351-329f869ac689.json",
+      ".ai/content-audit-export/articles/lea-util-003-05-core-definitions-grounding-vs-bonding--92be8354-f938-4307-a40c-4620c1381cba/question-edits/e665c34c-13e8-4a92-82db-b9ce1dd41446.json",
+      ".ai/content-audit-export/articles/lea-util-003-05-core-definitions-grounding-vs-bonding--92be8354-f938-4307-a40c-4620c1381cba/question-edits/eb168717-c97e-4397-929b-11b67e906e68.json",
+      ".ai/content-audit-export/articles/lea-util-003-05-core-definitions-grounding-vs-bonding--92be8354-f938-4307-a40c-4620c1381cba/question-edits/e8bae89c-0fb3-4332-856f-93a076c3c6d6.json",
+      ".ai/content-audit-export/articles/lea-util-003-05-core-definitions-grounding-vs-bonding--92be8354-f938-4307-a40c-4620c1381cba/question-edits/8c9485f0-f98a-4d02-8102-cb2c0e675f53.json"
+    ]
+  },
+  "raw_sources": [
+    {
+      "source_id": "pec-2017-local-phil-electrical-code",
+      "label": "Philippine Electrical Code local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+      "raw_pdf_sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+      "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3",
+      "source_locator": "Phil Electrical Code refined markdown lines 248-302; Phil Electrical Code refined markdown lines 4978-5039; Phil Electrical Code refined markdown lines 5091-5128; Phil Electrical Code refined markdown lines 5172-5207; Phil Electrical Code refined markdown lines 5309-5357",
+      "checked_markdown_lines": [
+        "Phil Electrical Code refined markdown lines 248-302",
+        "Phil Electrical Code refined markdown lines 4978-5039",
+        "Phil Electrical Code refined markdown lines 5091-5128",
+        "Phil Electrical Code refined markdown lines 5172-5207",
+        "Phil Electrical Code refined markdown lines 5309-5357"
+      ]
+    },
+    {
+      "source_id": "fajardo-electrical-layout-estimate-2nd-ed-local",
+      "label": "Electrical Layout and Estimate, 2nd Edition, Max B. Fajardo Jr. and Leo R. Fajardo local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.pdf",
+      "raw_pdf_sha256": "sha256:3cc20c7a3681cd41b427df17784582d578f8d772f1f50808a9c66d9390cbf244",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.md",
+      "refined_markdown_sha256": "sha256:e68e20c6b6a0dbb331c151d0814e182037564f63cf17a07284a6e126de62fc45",
+      "source_locator": "Electrical Layout and Estimate refined markdown lines 5118-5150",
+      "checked_markdown_lines": [
+        "Electrical Layout and Estimate refined markdown lines 5118-5150"
+      ]
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "pec-2017-local-phil-electrical-code",
+      "label": "Philippine Electrical Code local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+      "raw_pdf_sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+      "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3",
+      "source_locator": "Phil Electrical Code refined markdown lines 248-302; Phil Electrical Code refined markdown lines 4978-5039; Phil Electrical Code refined markdown lines 5091-5128; Phil Electrical Code refined markdown lines 5172-5207; Phil Electrical Code refined markdown lines 5309-5357",
+      "checked_markdown_lines": [
+        "Phil Electrical Code refined markdown lines 248-302",
+        "Phil Electrical Code refined markdown lines 4978-5039",
+        "Phil Electrical Code refined markdown lines 5091-5128",
+        "Phil Electrical Code refined markdown lines 5172-5207",
+        "Phil Electrical Code refined markdown lines 5309-5357"
+      ]
+    },
+    {
+      "source_id": "fajardo-electrical-layout-estimate-2nd-ed-local",
+      "label": "Electrical Layout and Estimate, 2nd Edition, Max B. Fajardo Jr. and Leo R. Fajardo local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.pdf",
+      "raw_pdf_sha256": "sha256:3cc20c7a3681cd41b427df17784582d578f8d772f1f50808a9c66d9390cbf244",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.md",
+      "refined_markdown_sha256": "sha256:e68e20c6b6a0dbb331c151d0814e182037564f63cf17a07284a6e126de62fc45",
+      "source_locator": "Electrical Layout and Estimate refined markdown lines 5118-5150",
+      "checked_markdown_lines": [
+        "Electrical Layout and Estimate refined markdown lines 5118-5150"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "b041-ground-01",
+      "claim_text": "Grounding connects equipment, circuits, or wiring systems to a grounding electrode or electrodes; bonding joins metallic parts for continuity and fault-current capacity.",
+      "claim_type": "electrical_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "Philippine Electrical Code local raw PDF",
+        "locator": "Phil Electrical Code refined markdown lines 248-302 and 5172-5207",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+        "raw_pdf_sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+        "quoted_pdf_excerpt": "grounding conductor connects to grounding electrode; bonding permanently joins metallic parts"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b041-ground-02",
+      "claim_text": "Existing electrodes at a building or structure are bonded together into the grounding electrode system.",
+      "claim_type": "electrical_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "Philippine Electrical Code local raw PDF",
+        "locator": "Phil Electrical Code refined markdown lines 4978-5039",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+        "raw_pdf_sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+        "quoted_pdf_excerpt": "all grounding electrodes present are bonded together to form the grounding electrode system"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b041-ground-03",
+      "claim_text": "Gas piping and aluminum electrodes are excluded as grounding electrodes in the checked PEC provision.",
+      "claim_type": "electrical_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "Philippine Electrical Code local raw PDF",
+        "locator": "Phil Electrical Code refined markdown lines 4978-5039",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+        "raw_pdf_sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+        "quoted_pdf_excerpt": "gas piping and aluminum electrodes are not permitted as grounding electrodes"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b041-ground-04",
+      "claim_text": "Electrical Layout and Estimate supports grounding as a protection method using grounding conductors and grounding electrodes.",
+      "claim_type": "electrical_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "Electrical Layout and Estimate, 2nd Edition, Max B. Fajardo Jr. and Leo R. Fajardo local raw PDF",
+        "locator": "Electrical Layout and Estimate refined markdown lines 5118-5150",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.pdf",
+        "raw_pdf_sha256": "sha256:3cc20c7a3681cd41b427df17784582d578f8d772f1f50808a9c66d9390cbf244",
+        "quoted_pdf_excerpt": "grounding methods use conductors and electrodes for protection"
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [
+    "Non-local fuel secondary-containment percentages, external emergency-generator fuel-room requirements, and unchecked demand shortcuts were excluded from the Batch 041 repaired content and question edits."
+  ],
+  "removed_or_rewritten_material": [
+    "Removed exported UI-block marker tokens from normalized article content.",
+    "Rewrote linked question files to stay inside checked PEC and Electrical Layout and Estimate evidence."
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdf_first": true,
+    "derivative_layers_used_only_as_locators": true,
+    "checked_raw_pdf_families": [
+      "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+      "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.pdf"
+    ]
+  },
+  "gate_results": {
+    "source_audit": "PASS",
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_validation": "PASS",
+    "question_edit_count_check": "PASS",
+    "scoped_json_parse": "PASS",
+    "marker_scan": "PASS",
+    "source_hash_check": "PASS",
+    "stale_compose_error_check": "PASS"
+  },
+  "source_safe_repair": {
+    "status": "COMPLETE_LOCAL_VALIDATED",
+    "article_normalized_rewritten": true,
+    "sources_json_updated": true,
+    "source_audit_evidence_updated": true,
+    "question_edits_created": 15,
+    "blockers": []
+  },
+  "local_validation": {
+    "status": "PASS_LOCAL_VALIDATION",
+    "validated_at": "2026-05-11T14:40:06.021+08:00",
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_validation": "PASS",
+    "scoped_checks": "PASS",
+    "blockers": []
+  },
+  "sme_review": {
+    "required_before_supabase_publish": true,
+    "completed": false
+  },
+  "overall": {
+    "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+    "blockers": []
+  }
+}

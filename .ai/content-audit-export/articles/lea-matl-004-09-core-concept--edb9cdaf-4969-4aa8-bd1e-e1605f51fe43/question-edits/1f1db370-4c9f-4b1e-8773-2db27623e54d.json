@@ -1,0 +1,89 @@
+{
+  "question_id": "1f1db370-4c9f-4b1e-8773-2db27623e54d",
+  "baseline_hash": "sha256:d428d0b7d0ceba72cf80f2c8dbe6e15f205aaea68916d6d09f95c674d6ef5361",
+  "action": "replace",
+  "reason": "source-audited-article-batch-084-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-004-09-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-084",
+  "approved_at": "2026-05-12T06:55:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "edb9cdaf-4969-4aa8-bd1e-e1605f51fe43",
+    "parent_article_slug": "lea-matl-004-09-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Chudley/Greeno refined markdown lines 18, 514-519, and 782-916; Construction Project Management Handbook lines 2243-2245 and 3052-3056; Building Construction Illustrated lines 1545-1563; Fajardo Cost Estimates lines 5189-5293 as compaction cross-check.",
+    "checked_markdown_lines": [
+      "Chudley/Greeno refined markdown lines 18-23, 295-305, 433-519, 782-916, and 893-916; raw PDF pages 58, 96, 163-199, 471, 495, and 511 checked by local PyMuPDF extraction.",
+      "Construction Project Management Handbook refined markdown lines 253-293, 1001-1068, 2243-2245, 2694-2704, and 3052-3056; raw PDF pages 5, 7, 43-47, 82, 84, 97, 100, 105, and 125 checked by local PyMuPDF extraction.",
+      "Building Construction Illustrated refined markdown lines 288-322, 2850-2925, 3378-3605, 4037-4073, 6504-6552, 8492, and 8578-8605; raw PDF pages 18, 105, 121-126, 137-145, 248, and 459 checked by local PyMuPDF extraction.",
+      "Architectural Cost Estimates refined markdown lines 481-557 and 5189-5293; raw PDF pages 42, 43, 164, and 165 checked by local PyMuPDF extraction."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "chudley-greeno-handbook-b084",
+        "label": "Buidling Construction Handbook 7th Ed by Chudley _ Greeno",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf",
+        "sha256": "sha256:2efa493fac06a3efb9367111a397129ff8647778d88160bbe0174403cbb9e0bb",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.md",
+        "refined_markdown_sha256": "sha256:485fe968d55ca680cbde52d24fcee5f512a63591026db19e46835f1bc530dcbb",
+        "locator": "Chudley/Greeno refined markdown lines 18-23, 295-305, 433-519, 782-916, and 893-916; raw PDF pages 58, 96, 163-199, 471, 495, and 511 checked by local PyMuPDF extraction."
+      },
+      {
+        "source_id": "construction-project-management-handbook-b084",
+        "label": "Construction Project Management Handbook by Shadan _ Fleming",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Construction Project Management Handbook by Shadan _ Fleming.pdf",
+        "sha256": "sha256:01dd25a5de726377eb53bafb502127a806cc007ffc05e8dad745479b0ad6ad17",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Construction Project Management Handbook by Shadan _ Fleming.md",
+        "refined_markdown_sha256": "sha256:9d7f7c772d1efcce9db4c8f1e59cc5d19711cd99448799ae6ce783ebb6b78c77",
+        "locator": "Construction Project Management Handbook refined markdown lines 253-293, 1001-1068, 2243-2245, 2694-2704, and 3052-3056; raw PDF pages 5, 7, 43-47, 82, 84, 97, 100, 105, and 125 checked by local PyMuPDF extraction."
+      },
+      {
+        "source_id": "building-construction-illustrated-b084",
+        "label": "Building Construction Illustrated, 5th Edition",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "refined_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "locator": "Building Construction Illustrated refined markdown lines 288-322, 2850-2925, 3378-3605, 4037-4073, 6504-6552, 8492, and 8578-8605; raw PDF pages 18, 105, 121-126, 137-145, 248, and 459 checked by local PyMuPDF extraction."
+      },
+      {
+        "source_id": "fajardo-cost-estimates-b084",
+        "label": "Architectural Cost Estimates By Max Fajardo",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+        "sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+        "refined_markdown_sha256": "sha256:223efdc2dd963208910027eba08fe87b4919de1a04b76cac095bbd76a7a9a962",
+        "locator": "Architectural Cost Estimates refined markdown lines 481-557 and 5189-5293; raw PDF pages 42, 43, 164, and 165 checked by local PyMuPDF extraction."
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 084 local raw-source-audited construction_equipment scope."
+  },
+  "proposed": {
+    "text": "For concrete mixers, what source-safe selection factor matters?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Maximum output, total output, transport method, and discharge height compatibility"
+      },
+      {
+        "id": "b",
+        "text": "The color of the mixer drum"
+      },
+      {
+        "id": "c",
+        "text": "Whether the office has a lobby"
+      },
+      {
+        "id": "d",
+        "text": "The number of final inspection copies"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Chudley/Greeno lists these mixer choice factors.",
+    "explanation": "Chudley/Greeno lists these mixer choice factors.",
+    "code_citation": "Buidling Construction Handbook 7th Ed by Chudley _ Greeno; Construction Project Management Handbook by Shadan _ Fleming; Building Construction Illustrated, 5th Edition; Architectural Cost Estimates By Max Fajardo",
+    "bloom_level": "understand",
+    "application_context": "source_audited_local_first_batch_084",
+    "practice_context": [],
+    "difficulty": 0.5
+  }
+}

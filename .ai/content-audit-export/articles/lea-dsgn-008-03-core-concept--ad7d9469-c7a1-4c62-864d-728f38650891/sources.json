@@ -1,44 +1,63 @@
 {
   "article_id": "ad7d9469-c7a1-4c62-864d-728f38650891",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:d3ae027b3effcca9d76e7e11baae7b4962792ab41d9d203a5665586ccac2a145",
-  "source_count": 3,
+  "source_count": 2,
+  "sources_hash": "sha256:9a13c57f571eb1491c591bbbc01f5fa2d3372fee9733df86ca985c5b294d0d3c",
   "sources": [
     {
-      "source_id": "4aa21483-9a78-4204-8570-de415fcc81d6",
+      "source_id": "ra9514-rirr-2019-local-raw-pdf--b044",
       "article_id": "ad7d9469-c7a1-4c62-864d-728f38650891",
-      "label": "RA 9514 (2019 Revised IRR): Fire Code of the Philippines, Division 10",
+      "label": "RA 9514 Revised IRR 2019 - local raw PDF",
       "url": null,
-      "source_type": "implementing_rules",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:33:58.214974+00:00",
-      "updated_at": "2026-03-24T04:33:58.214974+00:00"
-    },
-    {
-      "source_id": "838a2419-e57a-47b4-b403-11c7e7b37dc1",
-      "article_id": "ad7d9469-c7a1-4c62-864d-728f38650891",
-      "label": "PD 1096 (National Building Code): Rule VII, Fire-Protective Design",
-      "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_raw_pdf",
+      "description": "Fire detection and alarm systems, kitchen hood fire suppression, sprinkler supervision, maintenance, water-flow alarms, and occupancy egress limits.",
+      "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-03-24T04:33:58.214974+00:00",
-      "updated_at": "2026-03-24T04:33:58.214974+00:00"
+      "created_at": "2026-05-11T16:22:00.000+08:00",
+      "updated_at": "2026-05-11T16:22:00.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+      "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+      "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+      "source_locator": "RA 9514 refined markdown lines 1482, 1510, 1520, 1630, 2347, 2417-2422, 2488, 2513, 2702-2717, 3609-3645, 3684-3714, 5451-5464, 5919-5943, 5999-6025",
+      "checked_markdown_lines": [
+        "RA 9514 refined markdown lines 1482, 1510, 1520, 1630",
+        "RA 9514 refined markdown lines 2347 and 2417-2422",
+        "RA 9514 refined markdown lines 2488 and 2513",
+        "RA 9514 refined markdown lines 2702-2717 and 3609-3645",
+        "RA 9514 refined markdown lines 3684-3714",
+        "RA 9514 refined markdown lines 5451-5464, 5919-5943, 5999-6025"
+      ],
+      "local_audit_note": "Batch 044 local-first source audit checked the raw PDF family before using refined markdown line locators."
     },
     {
-      "source_id": "6b00bd0f-85e8-489e-b21b-703e620dd47f",
+      "source_id": "salvan-architectural-utilities-2-local-raw-pdf--b044",
       "article_id": "ad7d9469-c7a1-4c62-864d-728f38650891",
-      "label": "NFPA 13: Referenced standard for sprinkler installation",
+      "label": "George Salvan Architectural Utilities 2 - local raw PDF",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_raw_pdf",
+      "description": "Ventilation definition, machine-room access and ventilation, mechanical/electrical space planning, kitchen ventilating equipment, and fire alarm device definitions.",
+      "is_verified": true,
       "sort_order": 2,
-      "created_at": "2026-03-24T04:33:58.214974+00:00",
-      "updated_at": "2026-03-24T04:33:58.214974+00:00"
+      "created_at": "2026-05-11T16:22:00.000+08:00",
+      "updated_at": "2026-05-11T16:22:00.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+      "raw_pdf_sha256": "sha256:ff7231f0059a1febaf4a0996a425caca3b7676c23c729f922e385af4e4c20d28",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
+      "refined_markdown_sha256": "sha256:1b9249c90c0b86c57c6df2f20f0ab210ac112a10230bd9bce584461773d75215",
+      "source_locator": "Salvan refined markdown lines 1478-1489, 1515, 1684, 1718, 1741, 1785-1792, 5172, 11099-11105, 12249-12417, 16731-16783",
+      "checked_markdown_lines": [
+        "Salvan refined markdown lines 1478-1489 and 1515",
+        "Salvan refined markdown lines 1684, 1718, 1741, 1785-1792",
+        "Salvan refined markdown lines 5172 and 11099-11105",
+        "Salvan refined markdown lines 12249-12417",
+        "Salvan refined markdown lines 16731-16783"
+      ],
+      "local_audit_note": "Batch 044 local-first source audit checked the raw PDF family before using refined markdown line locators."
     }
   ]
 }

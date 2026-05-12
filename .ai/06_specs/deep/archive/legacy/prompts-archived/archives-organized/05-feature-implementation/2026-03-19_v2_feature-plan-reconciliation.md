@@ -1,5 +1,5 @@
 # SlateCamp Feature Implementation Plan — Schema Reconciliation
-**Date:** 2026-03-19  
+**Date:** 2026-03-19
 **Against:** DATABASE_SCHEMA.sql (44 tables, latest production)
 
 ---
@@ -427,5 +427,5 @@ Sprint 0 is otherwise unblocked on the schema side. Start with Task 0.2 (heatmap
 
 ---
 
-*SlateCamp Feature Implementation Plan — Schema Reconciliation*  
+*SlateCamp Feature Implementation Plan — Schema Reconciliation*
 *DB Architect + Philip · 2026-03-19*

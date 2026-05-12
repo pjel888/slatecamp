@@ -1,8 +1,8 @@
 # Getting Started
 
-**Status:** Active  
-**Version:** 2.0  
-**Last Updated:** 2026-04-06  
+**Status:** Active
+**Version:** 2.0
+**Last Updated:** 2026-04-06
 **Source-of-Truth:** `AGENTS.md`, `CLAUDE.md`, `package.json`
 
 ---

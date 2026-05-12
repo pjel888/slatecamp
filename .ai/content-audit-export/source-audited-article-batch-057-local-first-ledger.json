@@ -1,0 +1,522 @@
+{
+  "artifact_type": "source_audited_local_first_batch_ledger",
+  "batch_id": "source-audited-article-batch-057-local-first",
+  "batch_number": 57,
+  "generated_at": "2026-05-11T20:17:21.000+08:00",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "inherited_blocker_status": "Batch 056 blockers=0",
+  "selection_rule": "Next five unpassed article/question clusters from .ai/content-audit-export/articles, preferring high-value LEA theory/design clusters with linked questions and exact local raw PDF families available under vitruvius-connection/001_Raw-Source-Layer.",
+  "local_first_constraints": {
+    "supabase_push": false,
+    "deploy": false,
+    "commit": false
+  },
+  "completed_articles": [
+    {
+      "article_id": "30832ba5-fbe9-4047-871a-aa4cb63ac616",
+      "slug": "lea-theo-001-07-core-concept",
+      "title": "Architecture and Society",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-07-core-concept--30832ba5-fbe9-4047-871a-aa4cb63ac616",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-07-core-concept--30832ba5-fbe9-4047-871a-aa4cb63ac616/question-edits",
+      "linked_questions": 13,
+      "question_edits": 13,
+      "source_count": 3,
+      "normalized_sha256": "sha256:4164f7b7701374b2ea342fbc822bd6cc2a3e0ad40ba231fcc0461d657bc6afbd",
+      "candidate_sha256": "sha256:4164f7b7701374b2ea342fbc822bd6cc2a3e0ad40ba231fcc0461d657bc6afbd",
+      "sources_sha256": "sha256:350fccad90e4664985bbcc459f8655797e651d73a4d940882e21600f81b66586",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-07-core-concept--30832ba5-fbe9-4047-871a-aa4cb63ac616/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-07-core-concept--30832ba5-fbe9-4047-871a-aa4cb63ac616/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-07-core-concept--30832ba5-fbe9-4047-871a-aa4cb63ac616/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-07-core-concept--30832ba5-fbe9-4047-871a-aa4cb63ac616/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-07-core-concept--30832ba5-fbe9-4047-871a-aa4cb63ac616/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-07-core-concept--30832ba5-fbe9-4047-871a-aa4cb63ac616/ui-blocks.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-07-core-concept--30832ba5-fbe9-4047-871a-aa4cb63ac616/ui-block-edits.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-07-core-concept--30832ba5-fbe9-4047-871a-aa4cb63ac616/parser-errors.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-07-core-concept--30832ba5-fbe9-4047-871a-aa4cb63ac616/compose-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-07-core-concept--30832ba5-fbe9-4047-871a-aa4cb63ac616/diff-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-07-core-concept--30832ba5-fbe9-4047-871a-aa4cb63ac616/diff-report.md"
+      ],
+      "question_edit_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-07-core-concept--30832ba5-fbe9-4047-871a-aa4cb63ac616/question-edits/3600ee5d-b6b5-41fc-92b9-ac13201a940e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-07-core-concept--30832ba5-fbe9-4047-871a-aa4cb63ac616/question-edits/4335b6f2-bc45-4990-927c-3f78591a808e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-07-core-concept--30832ba5-fbe9-4047-871a-aa4cb63ac616/question-edits/45328c46-b531-4bee-bfc5-cb760d922fab.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-07-core-concept--30832ba5-fbe9-4047-871a-aa4cb63ac616/question-edits/4ebdf156-fc5f-4199-9b37-ecf3cadcc63a.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-07-core-concept--30832ba5-fbe9-4047-871a-aa4cb63ac616/question-edits/59987c89-25b6-46e5-8ae1-940a45720f65.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-07-core-concept--30832ba5-fbe9-4047-871a-aa4cb63ac616/question-edits/59d27089-6f3b-4a44-8924-1bdbf8a12ad2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-07-core-concept--30832ba5-fbe9-4047-871a-aa4cb63ac616/question-edits/a85e7772-9c31-419f-a9cf-50d500a64810.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-07-core-concept--30832ba5-fbe9-4047-871a-aa4cb63ac616/question-edits/b99538af-d27b-4324-be11-95c71fe927c0.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-07-core-concept--30832ba5-fbe9-4047-871a-aa4cb63ac616/question-edits/bb520aac-e0a1-4a1a-ab7e-5e5adbbb0322.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-07-core-concept--30832ba5-fbe9-4047-871a-aa4cb63ac616/question-edits/d85fed8d-2823-4d9a-84fb-0b3425119438.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-07-core-concept--30832ba5-fbe9-4047-871a-aa4cb63ac616/question-edits/f1e05489-1362-4f4d-9f94-a40f15284030.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-07-core-concept--30832ba5-fbe9-4047-871a-aa4cb63ac616/question-edits/f598fb46-3577-48b0-b30f-066138a6bfca.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-07-core-concept--30832ba5-fbe9-4047-871a-aa4cb63ac616/question-edits/f6dcf17d-d08c-4445-90be-8e1d4a628cfd.json"
+      ],
+      "source_families": [
+        {
+          "source_id": "salvan-theory-local-raw-pdf--b057-30832ba5-01",
+          "label": "George Salvan Architectural Theories of Design - local raw PDF",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+          "raw_pdf_sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
+          "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
+          "locator": "George Salvan Architectural Theories of Design refined markdown lines 73, 175, and 468-486"
+        },
+        {
+          "source_id": "theory-local-raw-pdf--b057-30832ba5-02",
+          "label": "theory - local raw PDF",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+          "raw_pdf_sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+          "refined_markdown_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+          "locator": "theory refined markdown lines 7, 277-279, and 307-311"
+        },
+        {
+          "source_id": "toa1-intro-local-raw-pdf--b057-30832ba5-03",
+          "label": "TOA 1 Intro to Theory - local raw PDF",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 1 (Intro to Theory).pdf",
+          "raw_pdf_sha256": "sha256:17ee07310eaf7fbd71aeb3cb3b57a6ffb623e2b8b1957543d74b706a5184d0e0",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md",
+          "refined_markdown_sha256": "sha256:fc665ed41ea62ddb69c88ba02c7b92628481ba6792a075bc21694ca072b150d6",
+          "locator": "TOA 1 Intro to Theory refined markdown line 314"
+        }
+      ],
+      "metadata_hashes": {
+        "original_content_hash": "sha256:aeb75227366c3f6814d7ee8ce79a73671e3c4c95d610b31f10f2a595dc1a4799",
+        "normalized_content_hash": "sha256:4164f7b7701374b2ea342fbc822bd6cc2a3e0ad40ba231fcc0461d657bc6afbd",
+        "candidate_content_hash": "sha256:4164f7b7701374b2ea342fbc822bd6cc2a3e0ad40ba231fcc0461d657bc6afbd",
+        "linked_questions_hash": "sha256:072ad90fbc52f42143a3761a5eb439255e51b8faee0ce0ea8c629bc637df6d59",
+        "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "sources_hash": "sha256:350fccad90e4664985bbcc459f8655797e651d73a4d940882e21600f81b66586"
+      },
+      "scenario_enrichment_policy": "eligible-deferred"
+    },
+    {
+      "article_id": "25607252-c20a-4013-99f5-af11e829fd18",
+      "slug": "lea-theo-001-09-core-concept",
+      "title": "Vitruvius and Classical Architectural Theory",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-09-core-concept--25607252-c20a-4013-99f5-af11e829fd18",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-09-core-concept--25607252-c20a-4013-99f5-af11e829fd18/question-edits",
+      "linked_questions": 13,
+      "question_edits": 13,
+      "source_count": 3,
+      "normalized_sha256": "sha256:d08348cfc20cd5e1de499be8ff96276e3b5ba10caecaec73d71e5fdf5e9659a6",
+      "candidate_sha256": "sha256:d08348cfc20cd5e1de499be8ff96276e3b5ba10caecaec73d71e5fdf5e9659a6",
+      "sources_sha256": "sha256:e8defeb0bcee8470086fe268e6613d03ece0cfb17f7aa16075a685a6940ebb78",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-09-core-concept--25607252-c20a-4013-99f5-af11e829fd18/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-09-core-concept--25607252-c20a-4013-99f5-af11e829fd18/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-09-core-concept--25607252-c20a-4013-99f5-af11e829fd18/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-09-core-concept--25607252-c20a-4013-99f5-af11e829fd18/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-09-core-concept--25607252-c20a-4013-99f5-af11e829fd18/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-09-core-concept--25607252-c20a-4013-99f5-af11e829fd18/ui-blocks.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-09-core-concept--25607252-c20a-4013-99f5-af11e829fd18/ui-block-edits.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-09-core-concept--25607252-c20a-4013-99f5-af11e829fd18/parser-errors.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-09-core-concept--25607252-c20a-4013-99f5-af11e829fd18/compose-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-09-core-concept--25607252-c20a-4013-99f5-af11e829fd18/diff-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-09-core-concept--25607252-c20a-4013-99f5-af11e829fd18/diff-report.md"
+      ],
+      "question_edit_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-09-core-concept--25607252-c20a-4013-99f5-af11e829fd18/question-edits/059ea15e-5748-45b2-87e3-325731fe6901.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-09-core-concept--25607252-c20a-4013-99f5-af11e829fd18/question-edits/222fbbf2-1edd-43b2-90a3-adcacc39b9fd.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-09-core-concept--25607252-c20a-4013-99f5-af11e829fd18/question-edits/3140a495-83eb-43a4-8a08-e1307b95fd00.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-09-core-concept--25607252-c20a-4013-99f5-af11e829fd18/question-edits/42b4e904-2d5c-4aaa-90f4-89e101d5c9eb.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-09-core-concept--25607252-c20a-4013-99f5-af11e829fd18/question-edits/506afdd5-99ca-477d-ac3f-d88f884d4dc8.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-09-core-concept--25607252-c20a-4013-99f5-af11e829fd18/question-edits/5b9ca7e0-b3be-4ca9-8f1b-f7af570f6c30.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-09-core-concept--25607252-c20a-4013-99f5-af11e829fd18/question-edits/6fcaf2c7-a03c-467f-8d4f-9ca6fdb127ed.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-09-core-concept--25607252-c20a-4013-99f5-af11e829fd18/question-edits/9492694d-0b94-427f-8505-bafaea326a47.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-09-core-concept--25607252-c20a-4013-99f5-af11e829fd18/question-edits/9c30b109-203f-4707-a947-1f33e0f06334.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-09-core-concept--25607252-c20a-4013-99f5-af11e829fd18/question-edits/a313e4c8-018f-42bd-826d-21792f3bf57e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-09-core-concept--25607252-c20a-4013-99f5-af11e829fd18/question-edits/daf35e28-447b-4e9c-b5c8-30eae0a99415.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-09-core-concept--25607252-c20a-4013-99f5-af11e829fd18/question-edits/ebea6108-e4f3-4896-9a7e-5047bd21cf32.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-09-core-concept--25607252-c20a-4013-99f5-af11e829fd18/question-edits/fd7acb85-975b-4f83-bca5-84eb41bd3c47.json"
+      ],
+      "source_families": [
+        {
+          "source_id": "vitruvius-ten-books-local-raw-pdf--b057-25607252-01",
+          "label": "Vitruvius - 10 Books of Architecture - local raw PDF",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/002-History/Vitruvius - 10 Books of Architecture.pdf",
+          "raw_pdf_sha256": "sha256:e63f78260563ae36c5f1f85a07371df3d5740dfb13f5fc77453d88632238e020",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Vitruvius - 10 Books of Architecture.md",
+          "refined_markdown_sha256": "sha256:07eaf55d56357483d264d765f1bf3565aa0c839916def1edd6a17f125980ec75",
+          "locator": "Vitruvius - 10 Books of Architecture refined markdown line 617"
+        },
+        {
+          "source_id": "theory-local-raw-pdf--b057-25607252-02",
+          "label": "theory - local raw PDF",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+          "raw_pdf_sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+          "refined_markdown_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+          "locator": "theory refined markdown lines 231 and 268-279"
+        },
+        {
+          "source_id": "salvan-theory-local-raw-pdf--b057-25607252-03",
+          "label": "George Salvan Architectural Theories of Design - local raw PDF",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+          "raw_pdf_sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
+          "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
+          "locator": "George Salvan Architectural Theories of Design refined markdown lines 195-204 and 4958"
+        }
+      ],
+      "metadata_hashes": {
+        "original_content_hash": "sha256:1dfcdca0c5e286334d16c2b4da462f9253cee9d66a8d08ccf873f03c95a618c9",
+        "normalized_content_hash": "sha256:d08348cfc20cd5e1de499be8ff96276e3b5ba10caecaec73d71e5fdf5e9659a6",
+        "candidate_content_hash": "sha256:d08348cfc20cd5e1de499be8ff96276e3b5ba10caecaec73d71e5fdf5e9659a6",
+        "linked_questions_hash": "sha256:0a671c654259640315632a924cd11771fd710d838d8416de52d1df562a265f35",
+        "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "sources_hash": "sha256:e8defeb0bcee8470086fe268e6613d03ece0cfb17f7aa16075a685a6940ebb78"
+      },
+      "scenario_enrichment_policy": "eligible-deferred"
+    },
+    {
+      "article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+      "slug": "lea-theo-001-12-core-concept",
+      "title": "Architecture Beyond Shelter",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c/question-edits",
+      "linked_questions": 13,
+      "question_edits": 13,
+      "source_count": 3,
+      "normalized_sha256": "sha256:fb0f215f178adeb19767d091cbbe4d930b3b49def52d49380c5f9eee59cd4596",
+      "candidate_sha256": "sha256:fb0f215f178adeb19767d091cbbe4d930b3b49def52d49380c5f9eee59cd4596",
+      "sources_sha256": "sha256:13ba7910e19f9cd97477509065ca927904fb21bd21ee569b5b097db959437614",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c/ui-blocks.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c/ui-block-edits.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c/parser-errors.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c/compose-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c/diff-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c/diff-report.md"
+      ],
+      "question_edit_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c/question-edits/05f6972a-c047-4612-98d4-7d174831c357.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c/question-edits/084f05b0-01cf-4d53-971d-2574e2c62272.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c/question-edits/0d9c7f78-f928-4821-9b3b-100f57270d82.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c/question-edits/1977c796-aeb9-4a0d-a038-8d6f42ce4ea9.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c/question-edits/3f5d2610-3ad1-422b-99a1-c85b34d1cd13.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c/question-edits/4b4842b3-7744-4ea1-bcca-f78c70952bd9.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c/question-edits/5959bfa3-0d28-4e93-ba12-8981b4d4e86e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c/question-edits/62d747f9-0d32-4bf2-8592-f22774722cde.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c/question-edits/70cc65d3-02aa-4d1d-aeac-9df84aeea919.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c/question-edits/7b82e215-537e-4361-a0d5-d3b305fd2529.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c/question-edits/871adf95-b904-43eb-a585-dc77c6fabefb.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c/question-edits/9161b2ad-fa67-4723-89b5-7e5f4b64eab2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-12-core-concept--61869b56-3658-496c-ac52-060076c5ea6c/question-edits/e9f37aeb-f6e2-4250-95cf-1e57c7ecf077.json"
+      ],
+      "source_families": [
+        {
+          "source_id": "salvan-theory-local-raw-pdf--b057-61869b56-01",
+          "label": "George Salvan Architectural Theories of Design - local raw PDF",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+          "raw_pdf_sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
+          "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
+          "locator": "George Salvan Architectural Theories of Design refined markdown lines 195, 223-230, 655-675, and 7660"
+        },
+        {
+          "source_id": "theory-local-raw-pdf--b057-61869b56-02",
+          "label": "theory - local raw PDF",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+          "raw_pdf_sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+          "refined_markdown_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+          "locator": "theory refined markdown lines 184 and 307-311"
+        },
+        {
+          "source_id": "toa1-intro-local-raw-pdf--b057-61869b56-03",
+          "label": "TOA 1 Intro to Theory - local raw PDF",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 1 (Intro to Theory).pdf",
+          "raw_pdf_sha256": "sha256:17ee07310eaf7fbd71aeb3cb3b57a6ffb623e2b8b1957543d74b706a5184d0e0",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md",
+          "refined_markdown_sha256": "sha256:fc665ed41ea62ddb69c88ba02c7b92628481ba6792a075bc21694ca072b150d6",
+          "locator": "TOA 1 Intro to Theory refined markdown lines 167-169"
+        }
+      ],
+      "metadata_hashes": {
+        "original_content_hash": "sha256:fe138c6c7b6ffd025f7416d3f44d07bd120357c607656cb47379ae25b1a8602b",
+        "normalized_content_hash": "sha256:fb0f215f178adeb19767d091cbbe4d930b3b49def52d49380c5f9eee59cd4596",
+        "candidate_content_hash": "sha256:fb0f215f178adeb19767d091cbbe4d930b3b49def52d49380c5f9eee59cd4596",
+        "linked_questions_hash": "sha256:e107e6f6007c74900ea7ba03e25bb51c455007b3b041808fa0834065a94fa52a",
+        "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "sources_hash": "sha256:13ba7910e19f9cd97477509065ca927904fb21bd21ee569b5b097db959437614"
+      },
+      "scenario_enrichment_policy": "eligible-deferred"
+    },
+    {
+      "article_id": "62274e90-5cb3-4bc0-85a1-639858e47736",
+      "slug": "lea-theo-002-01-core-concept",
+      "title": "Classification of Buildings by Human Need",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-01-core-concept--62274e90-5cb3-4bc0-85a1-639858e47736",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-01-core-concept--62274e90-5cb3-4bc0-85a1-639858e47736/question-edits",
+      "linked_questions": 13,
+      "question_edits": 13,
+      "source_count": 3,
+      "normalized_sha256": "sha256:ad85b0f850c5ba9acdd9b540e53813c4825e9a62d04c6e4aa1c3beaf4b5beec0",
+      "candidate_sha256": "sha256:ad85b0f850c5ba9acdd9b540e53813c4825e9a62d04c6e4aa1c3beaf4b5beec0",
+      "sources_sha256": "sha256:92ed9029be18f15804480f3f9fec399ffed4a7bb194aa067265cb3071e630e1c",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-01-core-concept--62274e90-5cb3-4bc0-85a1-639858e47736/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-01-core-concept--62274e90-5cb3-4bc0-85a1-639858e47736/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-01-core-concept--62274e90-5cb3-4bc0-85a1-639858e47736/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-01-core-concept--62274e90-5cb3-4bc0-85a1-639858e47736/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-01-core-concept--62274e90-5cb3-4bc0-85a1-639858e47736/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-01-core-concept--62274e90-5cb3-4bc0-85a1-639858e47736/ui-blocks.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-01-core-concept--62274e90-5cb3-4bc0-85a1-639858e47736/ui-block-edits.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-01-core-concept--62274e90-5cb3-4bc0-85a1-639858e47736/parser-errors.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-01-core-concept--62274e90-5cb3-4bc0-85a1-639858e47736/compose-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-01-core-concept--62274e90-5cb3-4bc0-85a1-639858e47736/diff-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-01-core-concept--62274e90-5cb3-4bc0-85a1-639858e47736/diff-report.md"
+      ],
+      "question_edit_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-01-core-concept--62274e90-5cb3-4bc0-85a1-639858e47736/question-edits/30f34bc4-098b-44b7-bba3-d3ea6ee6fa69.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-01-core-concept--62274e90-5cb3-4bc0-85a1-639858e47736/question-edits/3bda1e21-1685-4e01-a715-cf7a8de8688c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-01-core-concept--62274e90-5cb3-4bc0-85a1-639858e47736/question-edits/4db989c7-3aea-4d33-aef7-f9576d9a8bd3.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-01-core-concept--62274e90-5cb3-4bc0-85a1-639858e47736/question-edits/4ec523c4-078a-4cc7-876b-f79972285e54.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-01-core-concept--62274e90-5cb3-4bc0-85a1-639858e47736/question-edits/6e077e5c-3cec-4fd9-8b60-2017fb3f00d1.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-01-core-concept--62274e90-5cb3-4bc0-85a1-639858e47736/question-edits/77ada63b-b941-424c-bb47-08e999b3b5ff.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-01-core-concept--62274e90-5cb3-4bc0-85a1-639858e47736/question-edits/89a429b7-0b31-4483-bdd3-9ff1fe7af716.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-01-core-concept--62274e90-5cb3-4bc0-85a1-639858e47736/question-edits/b26b6881-a570-410c-bfd2-743872506172.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-01-core-concept--62274e90-5cb3-4bc0-85a1-639858e47736/question-edits/b52aef0e-bf29-4862-8504-1043690499dc.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-01-core-concept--62274e90-5cb3-4bc0-85a1-639858e47736/question-edits/c7f8268e-4ac0-4de7-b3ec-12d3e1ed7f69.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-01-core-concept--62274e90-5cb3-4bc0-85a1-639858e47736/question-edits/dcc60bc7-d9cb-471c-b54a-f95a36ab7ef4.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-01-core-concept--62274e90-5cb3-4bc0-85a1-639858e47736/question-edits/df265b55-38ec-48da-a497-d4b411de462c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-01-core-concept--62274e90-5cb3-4bc0-85a1-639858e47736/question-edits/ef6f21c7-eed0-4da6-a9e5-c5daafa36b93.json"
+      ],
+      "source_families": [
+        {
+          "source_id": "salvan-theory-local-raw-pdf--b057-62274e90-01",
+          "label": "George Salvan Architectural Theories of Design - local raw PDF",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+          "raw_pdf_sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
+          "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
+          "locator": "George Salvan Architectural Theories of Design refined markdown lines 195, 223-230, 542-548, and 7982"
+        },
+        {
+          "source_id": "theory-local-raw-pdf--b057-62274e90-02",
+          "label": "theory - local raw PDF",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+          "raw_pdf_sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+          "refined_markdown_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+          "locator": "theory refined markdown line 184"
+        },
+        {
+          "source_id": "toa1-intro-local-raw-pdf--b057-62274e90-03",
+          "label": "TOA 1 Intro to Theory - local raw PDF",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 1 (Intro to Theory).pdf",
+          "raw_pdf_sha256": "sha256:17ee07310eaf7fbd71aeb3cb3b57a6ffb623e2b8b1957543d74b706a5184d0e0",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md",
+          "refined_markdown_sha256": "sha256:fc665ed41ea62ddb69c88ba02c7b92628481ba6792a075bc21694ca072b150d6",
+          "locator": "TOA 1 Intro to Theory refined markdown line 46"
+        }
+      ],
+      "metadata_hashes": {
+        "original_content_hash": "sha256:a2e315dc744e65726cdfafae4941d0377cfa8db041bd2b15772a64eccfda9fde",
+        "normalized_content_hash": "sha256:ad85b0f850c5ba9acdd9b540e53813c4825e9a62d04c6e4aa1c3beaf4b5beec0",
+        "candidate_content_hash": "sha256:ad85b0f850c5ba9acdd9b540e53813c4825e9a62d04c6e4aa1c3beaf4b5beec0",
+        "linked_questions_hash": "sha256:d6cc176cf79e159271862ab87a0202aec42cce62a854d96e754b702eebb2eb41",
+        "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "sources_hash": "sha256:92ed9029be18f15804480f3f9fec399ffed4a7bb194aa067265cb3071e630e1c"
+      },
+      "scenario_enrichment_policy": "eligible-deferred"
+    },
+    {
+      "article_id": "2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6",
+      "slug": "lea-theo-003-01-core-concept",
+      "title": "Anthropometrics",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-003-01-core-concept--2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-003-01-core-concept--2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6/question-edits",
+      "linked_questions": 13,
+      "question_edits": 13,
+      "source_count": 4,
+      "normalized_sha256": "sha256:64f1efa9b686117c19449b18ba76c488b06fcf44504111999bee9cc2747f9b6e",
+      "candidate_sha256": "sha256:64f1efa9b686117c19449b18ba76c488b06fcf44504111999bee9cc2747f9b6e",
+      "sources_sha256": "sha256:369ed3410509e5c7982f47b644700dafcd8f2d3653196fea5864a1ba854c4e81",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-003-01-core-concept--2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-003-01-core-concept--2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-003-01-core-concept--2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-003-01-core-concept--2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-003-01-core-concept--2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-003-01-core-concept--2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6/ui-blocks.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-003-01-core-concept--2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6/ui-block-edits.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-003-01-core-concept--2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6/parser-errors.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-003-01-core-concept--2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6/compose-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-003-01-core-concept--2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6/diff-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-003-01-core-concept--2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6/diff-report.md"
+      ],
+      "question_edit_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-003-01-core-concept--2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6/question-edits/254d409b-f72e-4b84-84a2-2a46e55fcf7d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-003-01-core-concept--2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6/question-edits/25bb6f88-74e6-4bec-885b-2b85a6d5622d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-003-01-core-concept--2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6/question-edits/2980c6ee-d746-44da-bc22-1f3f24276aaa.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-003-01-core-concept--2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6/question-edits/31650438-3c8a-42c1-8e4a-ef28676e97b9.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-003-01-core-concept--2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6/question-edits/445366c8-a477-4a91-9126-946f9146e513.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-003-01-core-concept--2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6/question-edits/53e43e1b-9e7b-43fc-a9ab-76b712460f74.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-003-01-core-concept--2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6/question-edits/699421ad-d936-4ad7-874c-954cbca5b3e0.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-003-01-core-concept--2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6/question-edits/8af854d3-ba35-4dad-bb8d-f96f4b39e75b.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-003-01-core-concept--2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6/question-edits/923b6048-e580-4da1-a3c3-fa242f0e4217.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-003-01-core-concept--2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6/question-edits/a1fdfd41-433d-49c0-9cc7-78c48f6cc56e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-003-01-core-concept--2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6/question-edits/b657fd00-c84b-452b-861c-af3ff050f35c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-003-01-core-concept--2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6/question-edits/c16d33c6-254b-4a34-9b20-dbd7bf74af8a.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-003-01-core-concept--2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6/question-edits/fca4a285-590e-4de8-8804-364f0404a54c.json"
+      ],
+      "source_families": [
+        {
+          "source_id": "toa1-intro-local-raw-pdf--b057-2a25a20f-01",
+          "label": "TOA 1 Intro to Theory - local raw PDF",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 1 (Intro to Theory).pdf",
+          "raw_pdf_sha256": "sha256:17ee07310eaf7fbd71aeb3cb3b57a6ffb623e2b8b1957543d74b706a5184d0e0",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md",
+          "refined_markdown_sha256": "sha256:fc665ed41ea62ddb69c88ba02c7b92628481ba6792a075bc21694ca072b150d6",
+          "locator": "TOA 1 Intro to Theory refined markdown lines 31 and 46"
+        },
+        {
+          "source_id": "theory-local-raw-pdf--b057-2a25a20f-02",
+          "label": "theory - local raw PDF",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+          "raw_pdf_sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+          "refined_markdown_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+          "locator": "theory refined markdown lines 141-142 and 161"
+        },
+        {
+          "source_id": "toa3-design-perception-local-raw-pdf--b057-2a25a20f-03",
+          "label": "TOA 3 Design Perception - local raw PDF",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 3 (Design Perception).pdf",
+          "raw_pdf_sha256": "sha256:807be9f1a301d579123d8fa3ec680011b1906d6a4edcb6dc061c9a57e5ea9534",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 3 (Design Perception).md",
+          "refined_markdown_sha256": "sha256:49309b3dc5eea661ca7cad04cceb91897ac29fee6dd8e43cf6c3f60f163d404a",
+          "locator": "TOA 3 Design Perception refined markdown lines 23-34 and 502-512"
+        },
+        {
+          "source_id": "salvan-theory-local-raw-pdf--b057-2a25a20f-04",
+          "label": "George Salvan Architectural Theories of Design - local raw PDF",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+          "raw_pdf_sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
+          "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
+          "locator": "George Salvan Architectural Theories of Design refined markdown lines 4843 and 7982"
+        }
+      ],
+      "metadata_hashes": {
+        "original_content_hash": "sha256:2180d131904e890e4285d4d7fd163f12dcd4c1a73e485572c821a9256090e4c4",
+        "normalized_content_hash": "sha256:64f1efa9b686117c19449b18ba76c488b06fcf44504111999bee9cc2747f9b6e",
+        "candidate_content_hash": "sha256:64f1efa9b686117c19449b18ba76c488b06fcf44504111999bee9cc2747f9b6e",
+        "linked_questions_hash": "sha256:82558d78b954bfc0f3678da9588e1c7fcaccb4235807764d8266886e2a2fa139",
+        "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "sources_hash": "sha256:369ed3410509e5c7982f47b644700dafcd8f2d3653196fea5864a1ba854c4e81"
+      },
+      "scenario_enrichment_policy": "eligible-deferred"
+    }
+  ],
+  "totals": {
+    "selected_articles": 5,
+    "linked_questions": 65,
+    "question_edits": 65,
+    "source_rows": 16,
+    "unique_raw_pdfs": 5,
+    "json_parse": 120,
+    "source_hash_checks": 32,
+    "marker_matches": 0,
+    "stale_compose_error_files": 0,
+    "targeted_tests": 34,
+    "targeted_expect_calls": 328,
+    "unresolved_blockers": 0
+  },
+  "source_evidence": {
+    "unique_raw_pdfs": [
+      {
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "raw_pdf_sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c"
+      },
+      {
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+        "raw_pdf_sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738"
+      },
+      {
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 1 (Intro to Theory).pdf",
+        "raw_pdf_sha256": "sha256:17ee07310eaf7fbd71aeb3cb3b57a6ffb623e2b8b1957543d74b706a5184d0e0"
+      },
+      {
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/002-History/Vitruvius - 10 Books of Architecture.pdf",
+        "raw_pdf_sha256": "sha256:e63f78260563ae36c5f1f85a07371df3d5740dfb13f5fc77453d88632238e020"
+      },
+      {
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 3 (Design Perception).pdf",
+        "raw_pdf_sha256": "sha256:807be9f1a301d579123d8fa3ec680011b1906d6a4edcb6dc061c9a57e5ea9534"
+      }
+    ],
+    "summary": [
+      "George Salvan Architectural Theories of Design for human needs, shelter, social and economic conditions, society reflected in architecture, form related to human needs, human scale, environmental requirements, and values/environment relationships.",
+      "TOA 1 Intro to Theory for anthropometric, proxemic, kinesthetic, ergonomic, environmental protection, durability, comfort, and social/economic/physical context claims.",
+      "TOA 3 Design Perception for proxemics, personal space, and environmental/cultural factors in spatial separation.",
+      "theory for architecture/society, anthropometrics, ergonomics, social distance, Maslow needs, Vitruvius, ecological and social theories, and designed environment.",
+      "Vitruvius - 10 Books of Architecture for the durability, convenience, and beauty triad."
+    ]
+  },
+  "quality_protocol_results": [
+    {
+      "name": "compose",
+      "command": "bun run content-audit:compose -- --article-id <id> --overwrite --strict",
+      "result": "PASS",
+      "articles_passed": 5,
+      "blockers": 0
+    },
+    {
+      "name": "diff",
+      "command": "bun run content-audit:diff -- --article-id <id> --summary --strict",
+      "result": "PASS",
+      "articles_passed": 5,
+      "safe_to_push": true,
+      "blockers": 0
+    },
+    {
+      "name": "validate",
+      "command": "bun run content-audit:validate -- --article-id <id> --summary",
+      "result": "PASS",
+      "articles_passed": 5,
+      "blockers": 0,
+      "warnings": "component-usage.json not generated warnings only"
+    },
+    {
+      "name": "ui-block-edits",
+      "command": "bun run content-audit:ui-block-edits -- --article-id <id> --summary",
+      "result": "PASS",
+      "articles_passed": 5,
+      "blockers": 0,
+      "warnings": 0
+    },
+    {
+      "name": "scoped-quality-sweep",
+      "command": "node scoped Batch 057 JSON/hash/marker/question-edit/stale-compose sweep",
+      "result": "PASS",
+      "json_parse": 120,
+      "source_hash_checks": 32,
+      "marker_matches": 0,
+      "stale_compose_error_files": 0
+    },
+    {
+      "name": "targeted-tests",
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "result": "PASS",
+      "tests": 34,
+      "failures": 0,
+      "expect_calls": 328
+    },
+    {
+      "name": "scoped-git-diff-check",
+      "command": "git diff --check -- <Batch 057 selected tracked paths and handoff> plus no-index --check for generated artifacts/all scoped files",
+      "result": "PASS"
+    }
+  ],
+  "unresolved_blockers": [],
+  "next_batch_readiness": "READY_FOR_BATCH_058_SELECTION; continue from remaining unpassed clusters with exact local raw PDF families; RA 9442 remains deferred until exact local raw PDF is confirmed; NSCP structural clusters can be selected in a separate structural batch using the local NSCP raw PDF family."
+}

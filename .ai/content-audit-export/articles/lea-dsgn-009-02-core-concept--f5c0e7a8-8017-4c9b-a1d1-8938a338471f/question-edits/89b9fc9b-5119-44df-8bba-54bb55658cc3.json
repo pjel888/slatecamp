@@ -1,0 +1,88 @@
+{
+  "question_id": "89b9fc9b-5119-44df-8bba-54bb55658cc3",
+  "baseline_hash": "sha256:3e629500cc12626bffda4abc31749db523ff7db4b5914633d1436a6d0c784025",
+  "action": "replace",
+  "reason": "source-audited-article-batch-014-local-first aligned linked question with local-first source audit for lea-dsgn-009-02-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-014",
+  "approved_at": "2026-05-10T23:05:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "f5c0e7a8-8017-4c9b-a1d1-8938a338471f",
+    "parent_article_slug": "lea-dsgn-009-02-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "supported_or_practice_qualified",
+    "source_locator": "PD 1096 Section 808 local sources support the 10% window-opening minimum for rooms not provided with artificial ventilation. Daylighting depth and tropical orientation items are retained as design heuristics, not PD 1096 mandates.",
+    "checked_markdown_lines": [
+      "raw markdown lines 436, 719-721, 743, 758, 872",
+      "raw markdown lines 1607-1665, 2495, 2595, 4020-4087, 7055, 7097, 7170, 7184, 9655",
+      "canonical source lines 1607-1665, 2495, 2595"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 - National Building Code Summary.pdf",
+        "sha256": "sha256:8923385a06f3122c2435989184e6691aa07bead89655d811d16071545e77f70e",
+        "source_id": "pd-1096-summary-light-egress-stair",
+        "locator": "Window openings, egress width/travel distance, corridor and stair summary provisions"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 - National Building Code Summary.md",
+        "sha256": "sha256:897f4d4af3b9e673af24d36d77244f1cfc290d68bbd8be9934d36912c42838ca",
+        "source_id": "pd-1096-summary-light-egress-stair",
+        "locator": "Window openings, egress width/travel distance, corridor and stair summary provisions"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.pdf",
+        "sha256": "sha256:8e98d8afd4b5972ba5a82d33a65e59e800cd41661b764a0dfc4112d29697b341",
+        "source_id": "pd-1096-full-irr-occupancy-development-controls",
+        "locator": "Occupancy groups, funeral parlors/memorial chapels in zoning tables, PSO/MACA/TOSL definitions, window openings"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.md",
+        "sha256": "sha256:74351a12fcecb23ef611e23e40f1e73b87e2bdb8f9a625e886dc1b906e83c940",
+        "source_id": "pd-1096-full-irr-occupancy-development-controls",
+        "locator": "Occupancy groups, funeral parlors/memorial chapels in zoning tables, PSO/MACA/TOSL definitions, window openings"
+      },
+      {
+        "path": "vitruvius-connection/003_Canonical-Knowledge-Layer/shared/sources/implementing-rules-and-regulations.md",
+        "sha256": "sha256:2c8c7c95eb110e83065c11b1370051dc5e191cb46932c11d2d37a5e7647537a5",
+        "source_id": "pd-1096-full-irr-occupancy-development-controls",
+        "locator": "Occupancy groups, funeral parlors/memorial chapels in zoning tables, PSO/MACA/TOSL definitions, window openings"
+      }
+    ],
+    "local_source_safe_action": "proposed explanation retained with source-safe qualification where the item uses design-practice guidance"
+  },
+  "proposed": {
+    "text": "An office corridor has a floor-to-ceiling height of 2.7 m and is served by windows at one end. If the corridor is 9.5 m long, what proportion of the corridor benefits from adequate natural daylight?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The entire corridor, assuming optimal window placement and unobstructed light paths"
+      },
+      {
+        "id": "b",
+        "text": "Approximately 70%"
+      },
+      {
+        "id": "c",
+        "text": "Approximately 50%, depending on the window size and the presence of any obstructions that may limit light penetration"
+      },
+      {
+        "id": "d",
+        "text": "None, if the windows are obstructed or improperly sized, preventing adequate light distribution"
+      }
+    ],
+    "correct_option_id": "b",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "PD 1096 Section 808 supports the 10% window-opening minimum. The 2.5x daylight-depth rule and tropical facade orientation are design heuristics; use them only when the question frames them as design guidance rather than code.",
+    "explanation": "PD 1096 Section 808 supports the 10% window-opening minimum. The 2.5x daylight-depth rule and tropical facade orientation are design heuristics; use them only when the question frames them as design guidance rather than code.",
+    "code_citation": "PD 1096 Section 808; daylighting design guidance",
+    "bloom_level": "understand",
+    "application_context": "recall",
+    "practice_context": [],
+    "difficulty": 0.5,
+    "is_assessment": false,
+    "model_id": "ALE-DSGN-009-02-004"
+  }
+}

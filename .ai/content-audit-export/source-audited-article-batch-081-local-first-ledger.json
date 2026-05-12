@@ -1,0 +1,565 @@
+{
+  "schema_version": "source-audited-local-first-ledger-v1",
+  "batch_id": "source-audited-article-batch-081-local-first",
+  "generated_at": "2026-05-12T05:00:00.000+08:00",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "blockers": [],
+  "supabase_push_attempted": false,
+  "deploy_attempted": false,
+  "commit_attempted": false,
+  "inherited_blocker_status": "Batch 080 blockers=0",
+  "selection_rule": "Next five unpassed sourceable LEA accessibility/code/material-estimating article/question clusters with linked questions and local raw PDFs, excluding Batch 001 through Batch 080 recorded IDs.",
+  "articles": [
+    {
+      "article_id": "3a00f23f-1eeb-49c4-bf44-e51354d14ce6",
+      "slug": "comprehensive-signage-package",
+      "folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/comprehensive-signage-package--3a00f23f-1eeb-49c4-bf44-e51354d14ce6",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/comprehensive-signage-package--3a00f23f-1eeb-49c4-bf44-e51354d14ce6/question-edits",
+      "linked_questions": 12,
+      "question_edits": 12,
+      "normalized_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/comprehensive-signage-package--3a00f23f-1eeb-49c4-bf44-e51354d14ce6/normalized.md",
+      "candidate_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/comprehensive-signage-package--3a00f23f-1eeb-49c4-bf44-e51354d14ce6/candidate.md",
+      "sources_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/comprehensive-signage-package--3a00f23f-1eeb-49c4-bf44-e51354d14ce6/sources.json",
+      "evidence_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/comprehensive-signage-package--3a00f23f-1eeb-49c4-bf44-e51354d14ce6/source-audit-evidence.json",
+      "candidate_hash": "sha256:82532bf9572424a2b2f79b532040031ec437e3e7687a4892f024e19b1208893a",
+      "scenario_enrichment": "not-applicable"
+    },
+    {
+      "article_id": "25bb445b-ebd5-452f-ad9e-f3912b17e740",
+      "slug": "exam-meta-deck-heights",
+      "folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/exam-meta-deck-heights--25bb445b-ebd5-452f-ad9e-f3912b17e740",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/exam-meta-deck-heights--25bb445b-ebd5-452f-ad9e-f3912b17e740/question-edits",
+      "linked_questions": 11,
+      "question_edits": 11,
+      "normalized_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/exam-meta-deck-heights--25bb445b-ebd5-452f-ad9e-f3912b17e740/normalized.md",
+      "candidate_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/exam-meta-deck-heights--25bb445b-ebd5-452f-ad9e-f3912b17e740/candidate.md",
+      "sources_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/exam-meta-deck-heights--25bb445b-ebd5-452f-ad9e-f3912b17e740/sources.json",
+      "evidence_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/exam-meta-deck-heights--25bb445b-ebd5-452f-ad9e-f3912b17e740/source-audit-evidence.json",
+      "candidate_hash": "sha256:30e572bf42fc536ebab00ea90851fcfcb031812b710b254aedb38434e1da29f4",
+      "scenario_enrichment": "not-applicable"
+    },
+    {
+      "article_id": "40dc0d6d-ae04-49de-b43a-36e9288a0622",
+      "slug": "lea-matl-010-05-core-concept",
+      "folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-010-05-core-concept--40dc0d6d-ae04-49de-b43a-36e9288a0622",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-010-05-core-concept--40dc0d6d-ae04-49de-b43a-36e9288a0622/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "normalized_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-010-05-core-concept--40dc0d6d-ae04-49de-b43a-36e9288a0622/normalized.md",
+      "candidate_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-010-05-core-concept--40dc0d6d-ae04-49de-b43a-36e9288a0622/candidate.md",
+      "sources_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-010-05-core-concept--40dc0d6d-ae04-49de-b43a-36e9288a0622/sources.json",
+      "evidence_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-010-05-core-concept--40dc0d6d-ae04-49de-b43a-36e9288a0622/source-audit-evidence.json",
+      "candidate_hash": "sha256:c007f5cc3f58c063a1b0c6d086c619548ad111906ae460454a2e378cd623c233",
+      "scenario_enrichment": "eligible-deferred"
+    },
+    {
+      "article_id": "f876a304-f787-4c8b-ab2c-a1a71dfe6257",
+      "slug": "lea-matl-010-06-core-concept",
+      "folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-010-06-core-concept--f876a304-f787-4c8b-ab2c-a1a71dfe6257",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-010-06-core-concept--f876a304-f787-4c8b-ab2c-a1a71dfe6257/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "normalized_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-010-06-core-concept--f876a304-f787-4c8b-ab2c-a1a71dfe6257/normalized.md",
+      "candidate_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-010-06-core-concept--f876a304-f787-4c8b-ab2c-a1a71dfe6257/candidate.md",
+      "sources_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-010-06-core-concept--f876a304-f787-4c8b-ab2c-a1a71dfe6257/sources.json",
+      "evidence_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-010-06-core-concept--f876a304-f787-4c8b-ab2c-a1a71dfe6257/source-audit-evidence.json",
+      "candidate_hash": "sha256:ca730c1964625689369eb71f435de70bf5f4241278bba2d6f67c49f60340b891",
+      "scenario_enrichment": "eligible-deferred"
+    },
+    {
+      "article_id": "708fd4a4-e06f-4255-a2ad-e56711b9ee43",
+      "slug": "lea-matl-010-07-core-concept",
+      "folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-010-07-core-concept--708fd4a4-e06f-4255-a2ad-e56711b9ee43",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-010-07-core-concept--708fd4a4-e06f-4255-a2ad-e56711b9ee43/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "normalized_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-010-07-core-concept--708fd4a4-e06f-4255-a2ad-e56711b9ee43/normalized.md",
+      "candidate_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-010-07-core-concept--708fd4a4-e06f-4255-a2ad-e56711b9ee43/candidate.md",
+      "sources_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-010-07-core-concept--708fd4a4-e06f-4255-a2ad-e56711b9ee43/sources.json",
+      "evidence_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-010-07-core-concept--708fd4a4-e06f-4255-a2ad-e56711b9ee43/source-audit-evidence.json",
+      "candidate_hash": "sha256:b60d93d6f21b65e1392bd3211104378eb9ae2c8581e1d0be3ee878eceacd9d45",
+      "scenario_enrichment": "eligible-deferred"
+    }
+  ],
+  "counts": {
+    "articles": 5,
+    "linked_questions": 53,
+    "question_edits": 53,
+    "json_files_parsed": 108,
+    "source_hash_checks": 18,
+    "unique_raw_pdfs_used": 4,
+    "source_evidence_claims": 58
+  },
+  "source_evidence": {
+    "unique_raw_pdfs": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "expected": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "actual": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "pass": true
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "expected": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "actual": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "pass": true
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+        "expected": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "actual": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "pass": true
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Simplified Methods on Building Construction by Max Fajardo.pdf",
+        "expected": "sha256:7112a749fe9d3a5c84c7f042cb71500f9c97d69ad37adb85347a93d093331582",
+        "actual": "sha256:7112a749fe9d3a5c84c7f042cb71500f9c97d69ad37adb85347a93d093331582",
+        "pass": true
+      }
+    ],
+    "supplemental_raw_pdf_checks": [
+      {
+        "article_id": "708fd4a4-e06f-4255-a2ad-e56711b9ee43",
+        "slug": "lea-matl-010-07-core-concept",
+        "source_id": "aisc-steel-construction-manual-13th-b081-supplemental",
+        "kind": "raw_pdf_supplemental_hash_checked_not_used_for_claims",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/AISC Steel Construction Manual 13th.pdf",
+        "expected": "sha256:601c5d0c4d07548a0806f8b38f4dd52dd1af76cc3102f5aeccf96cb6a7956c1f",
+        "actual": "sha256:601c5d0c4d07548a0806f8b38f4dd52dd1af76cc3102f5aeccf96cb6a7956c1f",
+        "pass": true
+      }
+    ]
+  },
+  "quality_protocol_results": {
+    "json_parse": {
+      "pass": true,
+      "files_checked": 108,
+      "failures": []
+    },
+    "placeholder_internal_source_gap_scan": {
+      "pass": true,
+      "matches": []
+    },
+    "compose": [
+      {
+        "article_id": "3a00f23f-1eeb-49c4-bf44-e51354d14ce6",
+        "slug": "comprehensive-signage-package",
+        "pass": true,
+        "blockers": [],
+        "warnings": []
+      },
+      {
+        "article_id": "25bb445b-ebd5-452f-ad9e-f3912b17e740",
+        "slug": "exam-meta-deck-heights",
+        "pass": true,
+        "blockers": [],
+        "warnings": []
+      },
+      {
+        "article_id": "40dc0d6d-ae04-49de-b43a-36e9288a0622",
+        "slug": "lea-matl-010-05-core-concept",
+        "pass": true,
+        "blockers": [],
+        "warnings": []
+      },
+      {
+        "article_id": "f876a304-f787-4c8b-ab2c-a1a71dfe6257",
+        "slug": "lea-matl-010-06-core-concept",
+        "pass": true,
+        "blockers": [],
+        "warnings": []
+      },
+      {
+        "article_id": "708fd4a4-e06f-4255-a2ad-e56711b9ee43",
+        "slug": "lea-matl-010-07-core-concept",
+        "pass": true,
+        "blockers": [],
+        "warnings": []
+      }
+    ],
+    "diff": [
+      {
+        "article_id": "3a00f23f-1eeb-49c4-bf44-e51354d14ce6",
+        "slug": "comprehensive-signage-package",
+        "pass": true,
+        "changed": true,
+        "blockers": [],
+        "warnings": [
+          "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+        ]
+      },
+      {
+        "article_id": "25bb445b-ebd5-452f-ad9e-f3912b17e740",
+        "slug": "exam-meta-deck-heights",
+        "pass": true,
+        "changed": true,
+        "blockers": [],
+        "warnings": [
+          "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+        ]
+      },
+      {
+        "article_id": "40dc0d6d-ae04-49de-b43a-36e9288a0622",
+        "slug": "lea-matl-010-05-core-concept",
+        "pass": true,
+        "changed": true,
+        "blockers": [],
+        "warnings": [
+          "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+        ]
+      },
+      {
+        "article_id": "f876a304-f787-4c8b-ab2c-a1a71dfe6257",
+        "slug": "lea-matl-010-06-core-concept",
+        "pass": true,
+        "changed": true,
+        "blockers": [],
+        "warnings": [
+          "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+        ]
+      },
+      {
+        "article_id": "708fd4a4-e06f-4255-a2ad-e56711b9ee43",
+        "slug": "lea-matl-010-07-core-concept",
+        "pass": true,
+        "changed": true,
+        "blockers": [],
+        "warnings": [
+          "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+        ]
+      }
+    ],
+    "validate": [
+      {
+        "article_id": "3a00f23f-1eeb-49c4-bf44-e51354d14ce6",
+        "slug": "comprehensive-signage-package",
+        "pass": true,
+        "exit_code": 0
+      },
+      {
+        "article_id": "25bb445b-ebd5-452f-ad9e-f3912b17e740",
+        "slug": "exam-meta-deck-heights",
+        "pass": true,
+        "exit_code": 0
+      },
+      {
+        "article_id": "40dc0d6d-ae04-49de-b43a-36e9288a0622",
+        "slug": "lea-matl-010-05-core-concept",
+        "pass": true,
+        "exit_code": 0
+      },
+      {
+        "article_id": "f876a304-f787-4c8b-ab2c-a1a71dfe6257",
+        "slug": "lea-matl-010-06-core-concept",
+        "pass": true,
+        "exit_code": 0
+      },
+      {
+        "article_id": "708fd4a4-e06f-4255-a2ad-e56711b9ee43",
+        "slug": "lea-matl-010-07-core-concept",
+        "pass": true,
+        "exit_code": 0
+      }
+    ],
+    "ui_block_edits": [
+      {
+        "article_id": "3a00f23f-1eeb-49c4-bf44-e51354d14ce6",
+        "slug": "comprehensive-signage-package",
+        "pass": true,
+        "exit_code": 0
+      },
+      {
+        "article_id": "25bb445b-ebd5-452f-ad9e-f3912b17e740",
+        "slug": "exam-meta-deck-heights",
+        "pass": true,
+        "exit_code": 0
+      },
+      {
+        "article_id": "40dc0d6d-ae04-49de-b43a-36e9288a0622",
+        "slug": "lea-matl-010-05-core-concept",
+        "pass": true,
+        "exit_code": 0
+      },
+      {
+        "article_id": "f876a304-f787-4c8b-ab2c-a1a71dfe6257",
+        "slug": "lea-matl-010-06-core-concept",
+        "pass": true,
+        "exit_code": 0
+      },
+      {
+        "article_id": "708fd4a4-e06f-4255-a2ad-e56711b9ee43",
+        "slug": "lea-matl-010-07-core-concept",
+        "pass": true,
+        "exit_code": 0
+      }
+    ],
+    "source_evidence": [
+      {
+        "article_id": "3a00f23f-1eeb-49c4-bf44-e51354d14ce6",
+        "slug": "comprehensive-signage-package",
+        "pass": true,
+        "claims": 13,
+        "blockers": []
+      },
+      {
+        "article_id": "25bb445b-ebd5-452f-ad9e-f3912b17e740",
+        "slug": "exam-meta-deck-heights",
+        "pass": true,
+        "claims": 12,
+        "blockers": []
+      },
+      {
+        "article_id": "40dc0d6d-ae04-49de-b43a-36e9288a0622",
+        "slug": "lea-matl-010-05-core-concept",
+        "pass": true,
+        "claims": 11,
+        "blockers": []
+      },
+      {
+        "article_id": "f876a304-f787-4c8b-ab2c-a1a71dfe6257",
+        "slug": "lea-matl-010-06-core-concept",
+        "pass": true,
+        "claims": 11,
+        "blockers": []
+      },
+      {
+        "article_id": "708fd4a4-e06f-4255-a2ad-e56711b9ee43",
+        "slug": "lea-matl-010-07-core-concept",
+        "pass": true,
+        "claims": 11,
+        "blockers": []
+      }
+    ],
+    "question_edit_counts": [
+      {
+        "article_id": "3a00f23f-1eeb-49c4-bf44-e51354d14ce6",
+        "slug": "comprehensive-signage-package",
+        "linked_question_count": 12,
+        "question_edit_count": 12,
+        "pass": true
+      },
+      {
+        "article_id": "25bb445b-ebd5-452f-ad9e-f3912b17e740",
+        "slug": "exam-meta-deck-heights",
+        "linked_question_count": 11,
+        "question_edit_count": 11,
+        "pass": true
+      },
+      {
+        "article_id": "40dc0d6d-ae04-49de-b43a-36e9288a0622",
+        "slug": "lea-matl-010-05-core-concept",
+        "linked_question_count": 10,
+        "question_edit_count": 10,
+        "pass": true
+      },
+      {
+        "article_id": "f876a304-f787-4c8b-ab2c-a1a71dfe6257",
+        "slug": "lea-matl-010-06-core-concept",
+        "linked_question_count": 10,
+        "question_edit_count": 10,
+        "pass": true
+      },
+      {
+        "article_id": "708fd4a4-e06f-4255-a2ad-e56711b9ee43",
+        "slug": "lea-matl-010-07-core-concept",
+        "linked_question_count": 10,
+        "question_edit_count": 10,
+        "pass": true
+      }
+    ],
+    "source_hashes": [
+      {
+        "article_id": "3a00f23f-1eeb-49c4-bf44-e51354d14ce6",
+        "slug": "comprehensive-signage-package",
+        "kind": "sources_hash_field",
+        "expected": "sha256:e756923244a36286246f2f19247d34da71d96b12ba04115849bd51344399b6e2",
+        "actual": "sha256:e756923244a36286246f2f19247d34da71d96b12ba04115849bd51344399b6e2",
+        "pass": true
+      },
+      {
+        "article_id": "3a00f23f-1eeb-49c4-bf44-e51354d14ce6",
+        "slug": "comprehensive-signage-package",
+        "source_id": "bp344-2024-irr-b081",
+        "kind": "raw_pdf",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "expected": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "actual": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "pass": true
+      },
+      {
+        "article_id": "3a00f23f-1eeb-49c4-bf44-e51354d14ce6",
+        "slug": "comprehensive-signage-package",
+        "source_id": "bp344-2024-irr-b081",
+        "kind": "refined_markdown",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "expected": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+        "actual": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+        "pass": true
+      },
+      {
+        "article_id": "25bb445b-ebd5-452f-ad9e-f3912b17e740",
+        "slug": "exam-meta-deck-heights",
+        "kind": "sources_hash_field",
+        "expected": "sha256:f132bbf149b71bd29c8d1223ca04ab9c7a82a86762e16c58c59ae4d73fec94be",
+        "actual": "sha256:f132bbf149b71bd29c8d1223ca04ab9c7a82a86762e16c58c59ae4d73fec94be",
+        "pass": true
+      },
+      {
+        "article_id": "25bb445b-ebd5-452f-ad9e-f3912b17e740",
+        "slug": "exam-meta-deck-heights",
+        "source_id": "bp344-2024-irr-b081",
+        "kind": "raw_pdf",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "expected": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "actual": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "pass": true
+      },
+      {
+        "article_id": "25bb445b-ebd5-452f-ad9e-f3912b17e740",
+        "slug": "exam-meta-deck-heights",
+        "source_id": "bp344-2024-irr-b081",
+        "kind": "refined_markdown",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "expected": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+        "actual": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+        "pass": true
+      },
+      {
+        "article_id": "25bb445b-ebd5-452f-ad9e-f3912b17e740",
+        "slug": "exam-meta-deck-heights",
+        "source_id": "pd1096-rirr-2004-b081",
+        "kind": "raw_pdf",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "expected": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "actual": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "pass": true
+      },
+      {
+        "article_id": "25bb445b-ebd5-452f-ad9e-f3912b17e740",
+        "slug": "exam-meta-deck-heights",
+        "source_id": "pd1096-rirr-2004-b081",
+        "kind": "refined_markdown",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "expected": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "actual": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "pass": true
+      },
+      {
+        "article_id": "40dc0d6d-ae04-49de-b43a-36e9288a0622",
+        "slug": "lea-matl-010-05-core-concept",
+        "kind": "sources_hash_field",
+        "expected": "sha256:40dea1b0536cac93858bbe3793c2b4ad781ef19e4c2359cd4d0bdf887e95f828",
+        "actual": "sha256:40dea1b0536cac93858bbe3793c2b4ad781ef19e4c2359cd4d0bdf887e95f828",
+        "pass": true
+      },
+      {
+        "article_id": "40dc0d6d-ae04-49de-b43a-36e9288a0622",
+        "slug": "lea-matl-010-05-core-concept",
+        "source_id": "fajardo-cost-estimates-b081",
+        "kind": "raw_pdf",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+        "expected": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "actual": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "pass": true
+      },
+      {
+        "article_id": "40dc0d6d-ae04-49de-b43a-36e9288a0622",
+        "slug": "lea-matl-010-05-core-concept",
+        "source_id": "fajardo-cost-estimates-b081",
+        "kind": "refined_markdown",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+        "expected": "sha256:223efdc2dd963208910027eba08fe87b4919de1a04b76cac095bbd76a7a9a962",
+        "actual": "sha256:223efdc2dd963208910027eba08fe87b4919de1a04b76cac095bbd76a7a9a962",
+        "pass": true
+      },
+      {
+        "article_id": "f876a304-f787-4c8b-ab2c-a1a71dfe6257",
+        "slug": "lea-matl-010-06-core-concept",
+        "kind": "sources_hash_field",
+        "expected": "sha256:dc611dbe7e67d31bfbe0700c767268b1239dd030491b491e16f47f6ebf8b651e",
+        "actual": "sha256:dc611dbe7e67d31bfbe0700c767268b1239dd030491b491e16f47f6ebf8b651e",
+        "pass": true
+      },
+      {
+        "article_id": "f876a304-f787-4c8b-ab2c-a1a71dfe6257",
+        "slug": "lea-matl-010-06-core-concept",
+        "source_id": "fajardo-cost-estimates-b081",
+        "kind": "raw_pdf",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+        "expected": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "actual": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "pass": true
+      },
+      {
+        "article_id": "f876a304-f787-4c8b-ab2c-a1a71dfe6257",
+        "slug": "lea-matl-010-06-core-concept",
+        "source_id": "fajardo-cost-estimates-b081",
+        "kind": "refined_markdown",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+        "expected": "sha256:223efdc2dd963208910027eba08fe87b4919de1a04b76cac095bbd76a7a9a962",
+        "actual": "sha256:223efdc2dd963208910027eba08fe87b4919de1a04b76cac095bbd76a7a9a962",
+        "pass": true
+      },
+      {
+        "article_id": "708fd4a4-e06f-4255-a2ad-e56711b9ee43",
+        "slug": "lea-matl-010-07-core-concept",
+        "kind": "sources_hash_field",
+        "expected": "sha256:fcf91aea596449f7851cbe0aee426c5ce9bf829e678177ca0ad1ffd928456663",
+        "actual": "sha256:fcf91aea596449f7851cbe0aee426c5ce9bf829e678177ca0ad1ffd928456663",
+        "pass": true
+      },
+      {
+        "article_id": "708fd4a4-e06f-4255-a2ad-e56711b9ee43",
+        "slug": "lea-matl-010-07-core-concept",
+        "source_id": "fajardo-simplified-methods-b081",
+        "kind": "raw_pdf",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Simplified Methods on Building Construction by Max Fajardo.pdf",
+        "expected": "sha256:7112a749fe9d3a5c84c7f042cb71500f9c97d69ad37adb85347a93d093331582",
+        "actual": "sha256:7112a749fe9d3a5c84c7f042cb71500f9c97d69ad37adb85347a93d093331582",
+        "pass": true
+      },
+      {
+        "article_id": "708fd4a4-e06f-4255-a2ad-e56711b9ee43",
+        "slug": "lea-matl-010-07-core-concept",
+        "source_id": "fajardo-simplified-methods-b081",
+        "kind": "refined_markdown",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Simplified Methods on Building Construction by Max Fajardo.md",
+        "expected": "sha256:8d53840352aef129d3996e6b5c61adb8a0a6cc5c7743c909930d163494610a21",
+        "actual": "sha256:8d53840352aef129d3996e6b5c61adb8a0a6cc5c7743c909930d163494610a21",
+        "pass": true
+      },
+      {
+        "article_id": "708fd4a4-e06f-4255-a2ad-e56711b9ee43",
+        "slug": "lea-matl-010-07-core-concept",
+        "source_id": "aisc-steel-construction-manual-13th-b081-supplemental",
+        "kind": "raw_pdf_supplemental_hash_checked_not_used_for_claims",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/AISC Steel Construction Manual 13th.pdf",
+        "expected": "sha256:601c5d0c4d07548a0806f8b38f4dd52dd1af76cc3102f5aeccf96cb6a7956c1f",
+        "actual": "sha256:601c5d0c4d07548a0806f8b38f4dd52dd1af76cc3102f5aeccf96cb6a7956c1f",
+        "pass": true
+      }
+    ],
+    "stale_compose_error": {
+      "pass": true,
+      "files": []
+    },
+    "targeted_tests": {
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "pass": true,
+      "summary": "34 pass, 0 fail, 328 expects"
+    },
+    "git_diff_check": {
+      "pass": true,
+      "status": "PASS",
+      "command": "git diff --check -- <Batch 081 tracked scoped paths>",
+      "tracked_scope": "PASS with no output",
+      "supplemental_untracked_whitespace_scan": {
+        "pass": true,
+        "files_checked": 132,
+        "issues": 0
+      },
+      "checked_at": "2026-05-12T05:10:00.000+08:00"
+    }
+  },
+  "next_batch_readiness": "Batch 082 may start after recording Batch 081 post-batch handoff."
+}

@@ -1,0 +1,143 @@
+{
+  "question_id": "a354f886-955e-4c92-bd9c-1ba77060ef5d",
+  "baseline_hash": "sha256:cb87ffeb9f94a54cfa4afec46b18d58e0e819a04acadb452b65afd0bf9c407b4",
+  "action": "replace",
+  "reason": "source-audited-article-batch-069-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes unsupported external-theory, professional-scope, or environmental-law overclaims where present.",
+  "approved_by": "codex-local-first-batch-069",
+  "approved_at": "2026-05-12T00:24:00+08:00",
+  "source_audit_support": {
+    "parent_article_id": "dfffd217-9aed-4a42-88fe-53b26268f665",
+    "parent_article_slug": "lea-plan-001-02-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 7160 refined markdown lines 197-209, 712-746, 2665-2668, 2902-2905, and 3130; raw PDF pages 15, 51-52, 194, 213, and 232 checked by local PDF extraction; EO 72 refined markdown lines 1-90; raw PDF pages 1-4 checked by local PDF extraction; RA 11201 IRR refined markdown lines 45, 145-159, 344-368, and 488-501; raw PDF pages 3, 9, 17-18, and 24 checked by local PDF extraction; HLURB CLUP Vol. 1 refined markdown lines 304-330, 434-448, 1988-2009, 2025-2084, 2119-2129, and 8461; raw PDF pages 5, 18-20, 70, 75, and 225 checked by local PDF extraction; RPS 2008 refined markdown lines 63-85, 125-165, 203-223, and 251-265; raw PDF pages 5-10 and 28 checked by local PDF extraction",
+    "checked_markdown_lines": [
+      "RA 7160 lines 197-209",
+      "RA 7160 lines 712-746",
+      "RA 7160 lines 2665-2668",
+      "RA 7160 lines 2902-2905",
+      "RA 7160 line 3130",
+      "EO 72 lines 1-90",
+      "RA 11201 IRR line 45",
+      "RA 11201 IRR lines 145-159",
+      "RA 11201 IRR lines 344-368",
+      "RA 11201 IRR lines 488-501",
+      "HLURB CLUP Vol. 1 lines 304-330",
+      "HLURB CLUP Vol. 1 lines 434-448",
+      "HLURB CLUP Vol. 1 lines 1988-2009",
+      "HLURB CLUP Vol. 1 lines 2025-2084",
+      "HLURB CLUP Vol. 1 lines 2119-2129",
+      "HLURB CLUP Vol. 1 line 8461",
+      "RPS 2008 lines 63-85",
+      "RPS 2008 lines 125-165",
+      "RPS 2008 lines 203-223",
+      "RPS 2008 lines 251-265"
+    ],
+    "checked_raw_pdf_pages": [
+      "RA 7160 raw PDF page 15",
+      "RA 7160 raw PDF pages 51-52",
+      "RA 7160 raw PDF page 194",
+      "RA 7160 raw PDF page 213",
+      "RA 7160 raw PDF page 232",
+      "EO 72 raw PDF pages 1-4",
+      "RA 11201 IRR raw PDF page 3",
+      "RA 11201 IRR raw PDF page 9",
+      "RA 11201 IRR raw PDF pages 17-18",
+      "RA 11201 IRR raw PDF page 24",
+      "HLURB CLUP Vol. 1 raw PDF page 5",
+      "HLURB CLUP Vol. 1 raw PDF pages 18-20",
+      "HLURB CLUP Vol. 1 raw PDF page 70",
+      "HLURB CLUP Vol. 1 raw PDF page 75",
+      "HLURB CLUP Vol. 1 raw PDF page 225",
+      "RPS 2008 raw PDF pages 5-10",
+      "RPS 2008 raw PDF page 28"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "ra7160-planning-foundations-local-b069",
+        "label": "RA 7160 Local Government Code - planning, CLUP, and zoning foundations",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7160/RA 7160 The Local Government Code.pdf",
+        "sha256": "sha256:e270e8bc7bd84ba8ad7b6fe6780c12a3e5a6103e2b9395db13084266a5ff1fff",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7160/RA 7160 The Local Government Code.md",
+        "refined_markdown_sha256": "sha256:9f95493bd12c7f4b0989913d7e8783cdbc6235891fea9977c2aa77238c3dd392",
+        "locator": "RA 7160 refined markdown lines 197-209, 712-746, 2665-2668, 2902-2905, and 3130; raw PDF pages 15, 51-52, 194, 213, and 232 checked by local PDF extraction"
+      },
+      {
+        "source_id": "eo72-planning-review-local-b069",
+        "label": "Executive Order No. 72 - CLUP preparation, review, and implementation",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/EO/EO 72 Comprehensive Land use.pdf",
+        "sha256": "sha256:57de2c585b2f2f0e5687bbf95754f9cd4f2bae68c51c6ae0d8d60e81d24c8cbd",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/EO/EO 72 Comprehensive Land use.md",
+        "refined_markdown_sha256": "sha256:478ae44ef1b4ced33ce16138db0558d38c0fad4a4ca02e35c9f192994e89c871",
+        "locator": "EO 72 refined markdown lines 1-90; raw PDF pages 1-4 checked by local PDF extraction"
+      },
+      {
+        "source_id": "ra11201-irr-planning-monitoring-local-b069",
+        "label": "RA 11201 IRR - DHSUD land-use planning and monitoring functions",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "refined_markdown_sha256": "sha256:40f1a5041c69b3a4aea7c8ba138a9d570bc686bea48aa5618ea6423a6a719528",
+        "locator": "RA 11201 IRR refined markdown lines 45, 145-159, 344-368, and 488-501; raw PDF pages 3, 9, 17-18, and 24 checked by local PDF extraction"
+      },
+      {
+        "source_id": "hlurb-clup-vol1-foundations-local-b069",
+        "label": "HLURB CLUP Guidebook Volume 1 - planning process and spatial plan hierarchy",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/HLURB_CLUP_Vol_1.pdf",
+        "sha256": "sha256:34888ecf03576719d36e8abe21ff90da92e18263a4debb9db3fbbc41a7878762",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/HLURB_CLUP_Vol_1.md",
+        "refined_markdown_sha256": "sha256:6b574d861c0942a232fec321c2863754673532019af8f983e84550e54afc04e3",
+        "locator": "HLURB CLUP Vol. 1 refined markdown lines 304-330, 434-448, 1988-2009, 2025-2084, 2119-2129, and 8461; raw PDF pages 5, 18-20, 70, 75, and 225 checked by local PDF extraction"
+      },
+      {
+        "source_id": "rps2008-planning-system-local-b069",
+        "label": "Rationalizing the Local Planning System 2008",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/RPS (2008).pdf",
+        "sha256": "sha256:1331576aa80a6e5ab2d4079aa091e7294b7574c3c91b41a499e02cd1f8df91a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/RPS (2008).md",
+        "refined_markdown_sha256": "sha256:a86183e25f99faee458dfbb5bdb6045b98e309abe56e3d9fc4b65aee43312c96",
+        "locator": "RPS 2008 refined markdown lines 63-85, 125-165, 203-223, and 251-265; raw PDF pages 5-10 and 28 checked by local PDF extraction"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, and citation rewritten to the Batch 069 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "What is DHSUD role under the RA 11201 IRR?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Standards, technical assistance, review participation, monitoring, and GIS-based compliance information."
+      },
+      {
+        "id": "b",
+        "text": "Replacing all local Sanggunians."
+      },
+      {
+        "id": "c",
+        "text": "Issuing UAP memberships."
+      },
+      {
+        "id": "d",
+        "text": "Building every project."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The IRR gives DHSUD land-use planning and monitoring functions.",
+    "explanation": "The IRR gives DHSUD land-use planning and monitoring functions.",
+    "code_citation": "RA 7160 lines 197-209; EO 72 lines 1-90; RA 11201 IRR line 45",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "bloom_level": "understand",
+    "application_context": "source-audited Philippine planning and professional-practice interpretation",
+    "practice_context": [
+      "source-audited interpretation",
+      "lea-plan-001-02-core-concept"
+    ],
+    "difficulty": 0.55,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-05-10T17:58:07.184Z",
+  "input": "/Users/philiplewis/slatecamp/.ai/content-audit-export",
+  "article_count": 1,
+  "valid": true,
+  "blockers": [],
+  "warnings": [
+    "lea-prac-eth-009-introduction--958cf8ad-c743-41b3-a7fd-47da9421a09b: component-usage.json has not been generated for this article yet."
+  ],
+  "articles": [
+    {
+      "article_id": "958cf8ad-c743-41b3-a7fd-47da9421a09b",
+      "slug": "lea-prac-eth-009-introduction",
+      "folder": "lea-prac-eth-009-introduction--958cf8ad-c743-41b3-a7fd-47da9421a09b",
+      "valid": true,
+      "blockers": [],
+      "warnings": [
+        "component-usage.json has not been generated for this article yet."
+      ],
+      "files": {
+        "metadata": true,
+        "original": true,
+        "normalized": true,
+        "uiBlocks": true,
+        "parserErrors": true,
+        "uiBlockEdits": true,
+        "linkedQuestions": true,
+        "sources": true,
+        "taxonomy": true,
+        "componentUsage": false,
+        "candidate": true,
+        "diffReport": true,
+        "diffReportMarkdown": true,
+        "pushReport": false,
+        "pushResult": false
+      },
+      "hashes": {
+        "original": "sha256:e485df41f979b1b866331058197331cabe0fb169bc80c02f60c3e7c41797d9e1",
+        "normalized": "sha256:4fa1d83be03e8fe8f673a698756cf8955cee3c28a3e85fe121639d5a0ad23a6b",
+        "candidate": "sha256:4fa1d83be03e8fe8f673a698756cf8955cee3c28a3e85fe121639d5a0ad23a6b",
+        "ui_blocks": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T22:40:00+08:00",
+  "audit_mode": "local_source_audit_no_supabase",
+  "protocols_applied": [
+    ".ai/CONTENT_EXCELLENCE_GOAL.md",
+    ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
+    ".ai/00_system/vitruvius-source-reference.md"
+  ],
+  "target": {
+    "article_id": "16e972e5-378d-426c-9269-d716204c52de",
+    "slug": "lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-exposure",
+    "title": "The Signing Sealing Prohibition Direct Supervision Delegation",
+    "article_folder": ".ai/content-audit-export/articles/lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-expo--16e972e5-378d-426c-9269-d716204c52de",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-expo--16e972e5-378d-426c-9269-d716204c52de/candidate.md",
+    "candidate_sha256": "sha256:92ccce36952512596d89c802b032c35ff0e56373e5c1c1d286688f3664a48b9c",
+    "normalized_sha256": "sha256:92ccce36952512596d89c802b032c35ff0e56373e5c1c1d286688f3664a48b9c",
+    "linked_questions_sha256": "sha256:613b2064dc5d53a2468cd454729fa3dcee3abac58ef1244632bf85c7c277d4a9",
+    "sources_sha256": "sha256:256b87bafc3e20148ff26f11dd296b78364f7d3fc53ad5b132e95b60bea5dc2e"
+  },
+  "classification": {
+    "content_type": "ra9266_signing_sealing_supervision_article",
+    "focus": "Signing/sealing prohibition, immediate supervision, AOR responsibility, and Section 23 discipline exposure",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": [
+      "7a189293-2803-4a4e-b672-fd759863a0ab",
+      "8a398674-a34a-4c5a-a866-3a37e4b9fc1b",
+      "02841c55-036f-4a32-8a6d-ef3fd5346e8f",
+      "22e6b69c-204d-43d4-9397-33c543381d33",
+      "47298cc0-16d5-432f-9fef-5a5b99325b4d",
+      "dbf369e5-5866-4bf1-92f9-c989c72357b8",
+      "dd8040c1-44b2-4bf3-b907-a55195638c7e",
+      "eef292a0-46fc-4120-9d28-917158af5c12",
+      "3b484de3-649e-469d-860f-3b78da4f70b3",
+      "9ad8063a-954f-4577-a9c6-4062ebcb3010"
+    ]
+  },
+  "raw_sources": [
+    {
+      "key": "ra9266_irr",
+      "label": "RA 9266 IRR Architecture Act of 2004",
+      "source_type": "implementing_rules",
+      "source_id": "batch006-lea-prac-law-017-the-signing-sealing-prohibition-source-01",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "checked_pdf_pages": [
+        14,
+        15,
+        19
+      ]
+    }
+  ],
+  "gate_results": {
+    "compose": "PASS: content-audit:compose -- --article-id 16e972e5-378d-426c-9269-d716204c52de --overwrite; blockers=0",
+    "diff": "PASS: content-audit:diff -- --article-id 16e972e5-378d-426c-9269-d716204c52de; changed=true safe_to_push=true blockers=0",
+    "validate": "PASS: content-audit:validate -- --article-id 16e972e5-378d-426c-9269-d716204c52de --summary --dry-run; valid=true blockers=0 warnings=0",
+    "push_dry_run": "not_attempted_local_first; Supabase remote fetch is final publishing only and intentionally non-blocking here",
+    "supabase_mutation": "not_attempted_by_request"
+  },
+  "claims": [
+    {
+      "claim_id": "lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-exposure-claim-01",
+      "claim_text": "RA 9266 IRR Section 20 prohibits signing/sealing documents prepared under another architect's supervision unless the signing architect's actual part is clearly indicated.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-exposure-claim-02",
+      "claim_text": "RA 9266 IRR Section 23 allows suspension or revocation when documents were not personally prepared or prepared under immediate supervision.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-exposure-claim-03",
+      "claim_text": "RA 9266 IRR Section 32 ties the architect-of-record seal/signature details to architectural plans, specifications, permit documents, and architectural contract documents.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-exposure-linked-question-edits",
+      "claim_text": "Question edits staged locally for linked question IDs/model IDs: 7a189293-2803-4a4e-b672-fd759863a0ab (ALE-PRAC-LAW-017-004), 8a398674-a34a-4c5a-a866-3a37e4b9fc1b (ALE-PRAC-LAW-017-008), 02841c55-036f-4a32-8a6d-ef3fd5346e8f (ALE-PRAC-LAW-017-003), 22e6b69c-204d-43d4-9397-33c543381d33 (ALE-PRAC-LAW-017-002), 47298cc0-16d5-432f-9fef-5a5b99325b4d (ALE-PRAC-LAW-017-001), dbf369e5-5866-4bf1-92f9-c989c72357b8 (ALE-PRAC-LAW-017-010), dd8040c1-44b2-4bf3-b907-a55195638c7e (ALE-PRAC-LAW-017-005), eef292a0-46fc-4120-9d28-917158af5c12 (ALE-PRAC-LAW-017-007), 3b484de3-649e-469d-860f-3b78da4f70b3 (ALE-PRAC-LAW-017-006), 9ad8063a-954f-4577-a9c6-4062ebcb3010 (ALE-PRAC-LAW-017-009)",
+      "audit_result": "PASS",
+      "source_support": [
+        "ra9266_irr"
+      ]
+    }
+  ],
+  "unsupported_or_removed_claims": [
+    "Corrected the linked-question consequence citation from Section 20(e) to Section 23.",
+    "Removed unsupported insurance-loss and automatic-consequence distractor framing from explanations.",
+    "Corrected sealing typos and narrowed specialist-coordination claims to source-backed architectural-document accountability."
+  ],
+  "remaining_local_blockers": [],
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_recovery_complete": true,
+    "remote_publish_status": "not_attempted_by_request",
+    "remaining_local_blockers": []
+  },
+  "local_validation": {
+    "command": "bun run content-audit:validate -- --article-id 16e972e5-378d-426c-9269-d716204c52de --summary --dry-run",
+    "valid": true,
+    "blockers": 0,
+    "warnings": [],
+    "checked_at": "2026-05-10T22:40:00+08:00"
+  },
+  "bundle_integrity_repair": "Updated article-metadata.json content_hash/original_content_hash and sync-state original_hash to match the checked local original.md hash before final diff/validate."
+}

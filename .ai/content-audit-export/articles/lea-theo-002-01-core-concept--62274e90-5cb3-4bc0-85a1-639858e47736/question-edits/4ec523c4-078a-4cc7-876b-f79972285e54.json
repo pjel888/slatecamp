@@ -1,0 +1,79 @@
+{
+  "question_id": "4ec523c4-078a-4cc7-876b-f79972285e54",
+  "baseline_hash": "sha256:0777b71b9cb17c3c236a3c03e831243e8989f6152ab85dca8ba2add60fc72939",
+  "action": "replace",
+  "reason": "source-audited-article-batch-057-local-first: local raw PDF backed replacement constrained to checked Batch 057 source families.",
+  "approved_by": "codex-local-first-batch-057",
+  "approved_at": "2026-05-11T20:10:30.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "62274e90-5cb3-4bc0-85a1-639858e47736",
+    "parent_article_slug": "lea-theo-002-01-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "George Salvan Architectural Theories of Design refined markdown lines 195, 223-230, 542-548, and 7982; theory refined markdown line 184; TOA 1 Intro to Theory refined markdown line 46",
+    "checked_markdown_lines": [
+      "George Salvan Architectural Theories of Design refined markdown line 195",
+      "George Salvan Architectural Theories of Design refined markdown lines 223-230",
+      "George Salvan Architectural Theories of Design refined markdown lines 542-548",
+      "George Salvan Architectural Theories of Design refined markdown line 7982",
+      "theory refined markdown line 184",
+      "TOA 1 Intro to Theory refined markdown line 46"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "salvan-theory-local-raw-pdf--b057-62274e90-01",
+        "label": "George Salvan Architectural Theories of Design - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
+        "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
+        "locator": "George Salvan Architectural Theories of Design refined markdown lines 195, 223-230, 542-548, and 7982"
+      },
+      {
+        "source_id": "theory-local-raw-pdf--b057-62274e90-02",
+        "label": "theory - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+        "sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+        "refined_markdown_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+        "locator": "theory refined markdown line 184"
+      },
+      {
+        "source_id": "toa1-intro-local-raw-pdf--b057-62274e90-03",
+        "label": "TOA 1 Intro to Theory - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 1 (Intro to Theory).pdf",
+        "sha256": "sha256:17ee07310eaf7fbd71aeb3cb3b57a6ffb623e2b8b1957543d74b706a5184d0e0",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md",
+        "refined_markdown_sha256": "sha256:fc665ed41ea62ddb69c88ba02c7b92628481ba6792a075bc21694ca072b150d6",
+        "locator": "TOA 1 Intro to Theory refined markdown line 46"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 057 checked local raw PDF source scope."
+  },
+  "proposed": {
+    "text": "Why do different building types arise according to this topic?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Different human activities call for different accompanying structures."
+      },
+      {
+        "id": "b",
+        "text": "All activities need the same building type."
+      },
+      {
+        "id": "c",
+        "text": "Only ornament determines building type."
+      },
+      {
+        "id": "d",
+        "text": "Building type is unrelated to use."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Different human activities call for different accompanying structures. This answer is supported by the checked Batch 057 local raw PDF source families for Classification of Buildings by Human Need.",
+    "explanation": "Different human activities call for different accompanying structures. The Batch 057 source audit used local raw PDFs first and refined markdown only as locator evidence for Classification of Buildings by Human Need.",
+    "code_citation": "George Salvan Architectural Theories of Design refined markdown line 223"
+  },
+  "batch_question_template_index": 2
+}

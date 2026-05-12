@@ -1,20 +1,32 @@
 {
   "article_id": "cd21006c-647f-4c7b-8b17-fa65c51cbeb3",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:31fa5f33a61df3e7d4aafb650913880142965b8a0542046e6a2f80fd6d5130c2",
-  "source_count": 1,
+  "sources_hash": "sha256:1b45e13159dcb755513a2d33113327829ab4016209012548866ff496a4bbe720",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "8e8477f3-35a1-43b1-8d61-9efc3e64055e",
+      "source_id": "salvan-building-materials-b077",
       "article_id": "cd21006c-647f-4c7b-8b17-fa65c51cbeb3",
-      "label": "ASTM C920 (Standard Specification for Elastomeric Joint Sealants), ASTM C1619 (Polyurethane Joint Sealants), ASTM C1733 (Silicone Joint Sealants), ASTM C834 (Acrylic Latex Caulks)",
+      "label": "George Salvan Architectural Building Materials",
       "url": null,
-      "source_type": "primary_law",
-      "description": "ASTM C1247 (Installation of Joint Sealants), NSCP 2015 (Water Resistance and Air Infiltration provisions), Philippine Building Code Implementation Guidelines",
-      "is_verified": false,
+      "source_type": "primary_building_materials_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-077-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf; raw_pdf_sha256=sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md; refined_markdown_sha256=sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42; checked_locator=Salvan refined markdown lines 2676-2854, 2874-3025, 3070-3470, 4332-4468, 5919-5948, and 13397-13417; raw PDF pages 92-96, 99-102, 107-115, 145-146, and 361 checked by local PyMuPDF extraction",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:00.685475+00:00",
-      "updated_at": "2026-03-24T04:34:00.685475+00:00"
+      "created_at": "2026-05-12T04:10:00.000+08:00",
+      "updated_at": "2026-05-12T04:10:00.000+08:00"
+    },
+    {
+      "source_id": "bci-5e-b077",
+      "article_id": "cd21006c-647f-4c7b-8b17-fa65c51cbeb3",
+      "label": "Building Construction Illustrated, 5th Edition",
+      "url": null,
+      "source_type": "primary_building_construction_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-077-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf; raw_pdf_sha256=sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md; refined_markdown_sha256=sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a; checked_locator=BCI refined markdown lines 695-710, 1493-1498, 2469-2492, 6412-6454, 7990-8012, 9073-9223, 9286-9335, and 9490-9558; raw PDF pages 30, 92, 197, 225, 264-265, and 274 checked by local PyMuPDF extraction",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-12T04:10:00.000+08:00",
+      "updated_at": "2026-05-12T04:10:00.000+08:00"
     }
   ]
 }

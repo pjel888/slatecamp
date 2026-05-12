@@ -1,0 +1,103 @@
+{
+  "question_id": "0e1b937e-7924-471e-8dca-95c77defa57f",
+  "baseline_hash": "sha256:8194d47d246a8f8ce218fe7cf9b61b14f2453ed9c7d34cd337df2423d5be92db",
+  "action": "replace",
+  "reason": "source-audited-article-batch-074-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes out-of-scope or stale claims from the exported question.",
+  "approved_by": "codex-local-first-batch-074",
+  "approved_at": "2026-05-12T02:15:00.945+08:00",
+  "source_audit_support": {
+    "parent_article_id": "c684727d-d3e3-4303-b213-590c4b8ab766",
+    "parent_article_slug": "lea-plan-003-04-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 7279 refined markdown lines 13-85, 111-131, 230-253, 257-313, and 319-329; raw PDF pages 1-7 checked by local PyMuPDF extraction; Local Shelter Planning Manual refined markdown lines 17-25, 37-45, 61-63, 303-384, 761-790, and 805-819; raw PDF pages 3, 5, 8-9, 12-13, and related planning-table pages checked by local PyMuPDF extraction; RA 11201 IRR refined markdown lines 17-36, 40-99, 134-162, and 187-204; raw PDF pages 1-7 checked by local PyMuPDF extraction",
+    "checked_markdown_lines": [
+      "RA 7279 refined markdown lines 13-85, 111-131, 230-253, 257-313, and 319-329",
+      "Local Shelter Planning Manual refined markdown lines 17-25, 37-45, 61-63, 303-384, 761-790, and 805-819",
+      "RA 11201 IRR refined markdown lines 17-36, 40-99, 134-162, and 187-204"
+    ],
+    "checked_raw_pdf_pages": [
+      "RA 7279 Urban Development and Housing Act: 1-7 checked by local PyMuPDF extraction",
+      "Local Shelter Planning Manual, 2016 Web Edition: 3, 5, 8-9, 12-13, and related planning-table pages checked by local PyMuPDF extraction",
+      "RA 11201 IRR - DHSUD Act Implementing Rules: 1-7 checked by local PyMuPDF extraction"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "ra7279-udha-2009-b074",
+        "label": "RA 7279 Urban Development and Housing Act",
+        "source_type": "primary_law_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7279/RA 7279 Urban Development and Housing Act 2009.pdf",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7279/RA 7279 Urban Development and Housing Act 2009.md",
+        "source_locator": "RA 7279 refined markdown lines 13-85, 111-131, 230-253, 257-313, and 319-329; raw PDF pages 1-7 checked by local PyMuPDF extraction",
+        "raw_pdf_sha256": "sha256:23efa9c0278519d79ed424d9ced016b24619ebb42a19e75a05dc9bb8bf1c4696",
+        "refined_markdown_sha256": "sha256:f52859fb18fec28c403348851c3e53caca2e678cb9cec43fbca28d8d5c3a323e"
+      },
+      {
+        "source_id": "local-shelter-planning-manual-2016-b074",
+        "label": "Local Shelter Planning Manual, 2016 Web Edition",
+        "source_type": "government_planning_manual_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Local-Shelter-Planning-Manual-2016-Web-Edition.pdf",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Local-Shelter-Planning-Manual-2016-Web-Edition.md",
+        "source_locator": "Local Shelter Planning Manual refined markdown lines 17-25, 37-45, 61-63, 303-384, 761-790, and 805-819; raw PDF pages 3, 5, 8-9, 12-13, and related planning-table pages checked by local PyMuPDF extraction",
+        "raw_pdf_sha256": "sha256:c8dd5e9492a17cdd4c2fb05d21564eee75b8def86e9f8bb8052b71adf15edcec",
+        "refined_markdown_sha256": "sha256:e94d42b03c750a104eb24daaf60e3f616c55c301af6d4be9b7aede5f1004794b"
+      },
+      {
+        "source_id": "ra11201-irr-dhsud-b074",
+        "label": "RA 11201 IRR - DHSUD Act Implementing Rules",
+        "source_type": "primary_law_irr_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "source_locator": "RA 11201 IRR refined markdown lines 17-36, 40-99, 134-162, and 187-204; raw PDF pages 1-7 checked by local PyMuPDF extraction",
+        "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_sha256": "sha256:40f1a5041c69b3a4aea7c8ba138a9d570bc686bea48aa5618ea6423a6a719528"
+      }
+    ],
+    "local_source_safe_action": "Question text, answer, rationale, and citation rewritten to the source-audited-article-batch-074-local-first checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "Which planning answer is safest when the facts show high relocation cost and strong existing livelihood ties?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Evaluate on-site upgrading first if hazard and land constraints allow it."
+      },
+      {
+        "id": "b",
+        "text": "Relocate immediately without checking services."
+      },
+      {
+        "id": "c",
+        "text": "Ignore affordability analysis."
+      },
+      {
+        "id": "d",
+        "text": "Treat every settlement as medium cost housing."
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Correct. The checked sources support minimizing displacement and requiring planning data before choosing the method.",
+      "b": "Incorrect. This changes the checked source condition or applies a different rule.",
+      "c": "Incorrect. This changes the checked source condition or applies a different rule.",
+      "d": "Incorrect. This changes the checked source condition or applies a different rule.",
+      "correct": "The checked sources support minimizing displacement and requiring planning data before choosing the method.",
+      "takeaway": "Apply the checked local raw-source condition before choosing the answer."
+    },
+    "explanation": "The checked sources support minimizing displacement and requiring planning data before choosing the method.",
+    "code_citation": "RA 7279 refined markdown lines 13-85, 111-131, 230-253, 257-313, and 319-329; raw PDF pages 1-7 checked by local PyMuPDF extraction; Local Shelter Planning Manual refined markdown lines 17-25, 37-45, 61-63, 303-384, 761-790, and 805-819; raw PDF pages 3, 5, 8-9, 12-13, and related planning-table pages checked by local PyMuPDF extraction; RA 11201 IRR refined markdown lines 17-36, 40-99, 134-162, and 187-204; raw PDF pages 1-7 checked by local PyMuPDF extraction",
+    "bloom_level": "understand",
+    "application_context": "housing_delivery_methods",
+    "practice_context": [
+      "source-audited-article-batch-074-local-first"
+    ],
+    "difficulty": 0.52,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false
+  }
+}

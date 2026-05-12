@@ -1,0 +1,69 @@
+{
+  "question_id": "ea1ffe0e-1384-4cb6-a480-526fe10e934d",
+  "baseline_hash": "sha256:c2580172a6ef2f57a479f5cb70366aa19669c306315da5a4a5828a4280498bac",
+  "action": "replace",
+  "reason": "source-audited-article-batch-084-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-004-10-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-084",
+  "approved_at": "2026-05-12T06:55:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "2ce3de97-5b64-47b3-b00e-a1deaf4a0918",
+    "parent_article_slug": "lea-matl-004-10-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Chudley/Greeno refined markdown lines 295-305 and 514-519; Building Construction Illustrated lines 4037-4073, 6082, 6504-6552, 7223, 8492, and 8578-8605.",
+    "checked_markdown_lines": [
+      "Chudley/Greeno refined markdown lines 18-23, 295-305, 433-519, 782-916, and 893-916; raw PDF pages 58, 96, 163-199, 471, 495, and 511 checked by local PyMuPDF extraction.",
+      "Building Construction Illustrated refined markdown lines 288-322, 2850-2925, 3378-3605, 4037-4073, 6504-6552, 8492, and 8578-8605; raw PDF pages 18, 105, 121-126, 137-145, 248, and 459 checked by local PyMuPDF extraction."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "chudley-greeno-handbook-b084",
+        "label": "Buidling Construction Handbook 7th Ed by Chudley _ Greeno",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf",
+        "sha256": "sha256:2efa493fac06a3efb9367111a397129ff8647778d88160bbe0174403cbb9e0bb",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.md",
+        "refined_markdown_sha256": "sha256:485fe968d55ca680cbde52d24fcee5f512a63591026db19e46835f1bc530dcbb",
+        "locator": "Chudley/Greeno refined markdown lines 18-23, 295-305, 433-519, 782-916, and 893-916; raw PDF pages 58, 96, 163-199, 471, 495, and 511 checked by local PyMuPDF extraction."
+      },
+      {
+        "source_id": "building-construction-illustrated-b084",
+        "label": "Building Construction Illustrated, 5th Edition",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "refined_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "locator": "Building Construction Illustrated refined markdown lines 288-322, 2850-2925, 3378-3605, 4037-4073, 6504-6552, 8492, and 8578-8605; raw PDF pages 18, 105, 121-126, 137-145, 248, and 459 checked by local PyMuPDF extraction."
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 084 local raw-source-audited modular_prefabricated_systems scope."
+  },
+  "proposed": {
+    "text": "What is true of precast wall panels in the checked BCI scope?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They are attached to a supporting frame with connection hardware such as steel angles and anchors"
+      },
+      {
+        "id": "b",
+        "text": "They require no connections"
+      },
+      {
+        "id": "c",
+        "text": "They are only loose temporary signs"
+      },
+      {
+        "id": "d",
+        "text": "They are always installed without lifting planning"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "BCI describes precast concrete wall panels attached to a supporting frame.",
+    "explanation": "BCI describes precast concrete wall panels attached to a supporting frame.",
+    "code_citation": "Buidling Construction Handbook 7th Ed by Chudley _ Greeno; Building Construction Illustrated, 5th Edition",
+    "bloom_level": "understand",
+    "application_context": "source_audited_local_first_batch_084",
+    "practice_context": [],
+    "difficulty": 0.5
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "question_id": "8a51628d-86d8-43e4-b42c-d55b7df25981",
+  "baseline_hash": "sha256:85c4a42ab0df374f471ecb4c5954ff8a0df0dc5c89f2a49e5165ca68a6e82095",
+  "action": "replace",
+  "reason": "source-audited-article-batch-024-local-first rewrote this linked question to align with the local source audit for lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission.",
+  "approved_by": "codex-local-source-audit-batch-024",
+  "approved_at": "2026-05-11T14:30:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "50450ba8-a843-4399-9bd9-9b6c854ee65a",
+    "parent_article_slug": "lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UAP Standards refined markdown lines 1091-1216; SPP 206 refined markdown lines 713-823",
+    "checked_markdown_lines": [
+      "UAP Standards lines 1091-1216",
+      "SPP 206 lines 713-823"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "source_id": "uap-standards-spp206-cas-lifecycle-local",
+        "locator": "UAP Standards refined markdown lines 1091-1216"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "source_id": "uap-standards-spp206-cas-lifecycle-local",
+        "locator": "UAP Standards refined markdown lines 1091-1216"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 206.pdf",
+        "sha256": "sha256:d140c57e69f990af217f914a1dac51b6d6aae02a1b42aadd4a3f26b6cebf72b7",
+        "source_id": "spp206-full-spectrum-commission-local",
+        "locator": "SPP 206 refined markdown lines 713-823"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 206.md",
+        "sha256": "sha256:1ed62c21499c67d14265fb41468a137d00983893797b04a3bd18b6fde4f3b283",
+        "source_id": "spp206-full-spectrum-commission-local",
+        "locator": "SPP 206 refined markdown lines 713-823"
+      }
+    ],
+    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+  },
+  "proposed": {
+    "text": "A client asks why the architect coordinates MEP consultants in a comprehensive commission. Which SPP 206 principle answers best?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The architect acts as the client's agent in procuring and coordinating services required by the project"
+      },
+      {
+        "id": "b",
+        "text": "MEP coordination belongs only to the contractor"
+      },
+      {
+        "id": "c",
+        "text": "MEP coordination is prohibited in CAS"
+      },
+      {
+        "id": "d",
+        "text": "Coordination begins only after building occupancy"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "SPP 206 identifies the architect as the client's agent for procuring and coordinating necessary services.",
+    "explanation": "This Batch 024 replacement removes non-source-backed or over-specific wording and ties the answer to the checked local UAP source locator.",
+    "code_citation": "UAP Standards lines 1091-1216; SPP 206 refined markdown lines 713-823",
+    "bloom_level": "apply",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited batch 024"
+    ],
+    "difficulty": 0.5,
+    "is_assessment": false,
+    "model_id": "BATCH-024-lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission-001"
+  }
+}

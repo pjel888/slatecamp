@@ -1,0 +1,31 @@
+{
+  "question_id": "13fe4f9a-1db3-4144-8380-2aee7bd42be8",
+  "baseline_hash": "sha256:3afe7d7e89d95fcedb304f8c9bfef2bccb000816ca40310a809720d82790f969",
+  "reason": "Batch 006 local source audit aligned linked question ALE-PRAC-LAW-013-005 to verified raw-source claims for lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights.",
+  "approved_by": "codex-local-source-audit-batch-006",
+  "approved_at": "2026-05-10T22:30:00+08:00",
+  "proposed": {
+    "code_citation": "RA 9266 IRR Sections 3(27), 3(32), 20(4), and 33",
+    "explanation": "Source-audited against RA 9266 IRR Sections 3(27), 3(32), 20(4), and 33; the answer turns on retained copyright ownership, original-project use, and written consent for repetition or other projects.",
+    "text": "A developer uses the same floor-plan layout from the original architectural documents for an expansion or later project without Architect B's written permission. What Section 33 issue is triggered?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The client automatically owns all repeat-use rights after paying the fee"
+      },
+      {
+        "id": "b",
+        "text": "Unauthorized repetition or use for another project is prohibited without the architect's written consent"
+      },
+      {
+        "id": "c",
+        "text": "Only the mayor's office can object to reuse of architectural documents"
+      },
+      {
+        "id": "d",
+        "text": "Reuse is allowed whenever the later project has the same owner"
+      }
+    ],
+    "correct_option_id": "b"
+  }
+}

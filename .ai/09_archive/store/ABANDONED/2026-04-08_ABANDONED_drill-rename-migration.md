@@ -1,7 +1,7 @@
 # Implementation Plan: Drills Terminology Alignment (DB & Code)
 
-**Status:** 📝 Planned  
-**Date:** 2026-04-08  
+**Status:** 📝 Planned
+**Date:** 2026-04-08
 **Objective:** Align the underlying database schema and codebase with the user-facing "Drills" terminology to ensure consistency and maintainability.
 
 ## Phase 1: Database Migration

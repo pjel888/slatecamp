@@ -1,0 +1,49 @@
+{
+  "question_id": "a6a4d822-446e-4945-a0a4-3a8d63b5ea13",
+  "baseline_hash": "sha256:8774a2406b474af8704dc1481e326bcb8a448356a7e2c00e8bdeadc6e9d377cf",
+  "action": "replace",
+  "reason": "source-audited-article-batch-039-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-039",
+  "approved_at": "2026-05-11T13:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-039-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 4007-4064",
+          "PD 1096 RIRR refined markdown lines 4109-4303"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 1302"
+  },
+  "proposed": {
+    "text": "How far above the eaves of any building within 50.00 m must smokestacks rise?",
+    "options": [
+      {
+        "id": "b039-aeee-16-a",
+        "text": "At least 5.00 m"
+      },
+      {
+        "id": "b039-aeee-16-b",
+        "text": "At least 1.00 m"
+      },
+      {
+        "id": "b039-aeee-16-c",
+        "text": "At least 2.45 m"
+      },
+      {
+        "id": "b039-aeee-16-d",
+        "text": "At least 15.00 m"
+      }
+    ],
+    "correct_option_id": "b039-aeee-16-a",
+    "rationale": "Correct answer: At least 5.00 m. This is directly supported by PD 1096 2004 Revised IRR, Section 1302.",
+    "explanation": "The Batch 039 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 1302.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 1302"
+  }
+}

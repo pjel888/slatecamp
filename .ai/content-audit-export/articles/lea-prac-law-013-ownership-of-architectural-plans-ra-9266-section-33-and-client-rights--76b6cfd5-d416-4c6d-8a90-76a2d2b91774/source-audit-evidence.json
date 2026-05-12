@@ -1,0 +1,117 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T22:40:00+08:00",
+  "audit_mode": "local_source_audit_no_supabase",
+  "protocols_applied": [
+    ".ai/CONTENT_EXCELLENCE_GOAL.md",
+    ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
+    ".ai/00_system/vitruvius-source-reference.md"
+  ],
+  "target": {
+    "article_id": "76b6cfd5-d416-4c6d-8a90-76a2d2b91774",
+    "slug": "lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights",
+    "title": "Ownership of Architectural Plans RA 9266 Section 33 and Client Rights",
+    "article_folder": ".ai/content-audit-export/articles/lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights--76b6cfd5-d416-4c6d-8a90-76a2d2b91774",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights--76b6cfd5-d416-4c6d-8a90-76a2d2b91774/candidate.md",
+    "candidate_sha256": "sha256:ddac00073f7fbccdcd72e046fea797e8fd57f76350e1dce37f5766dd0c80464b",
+    "normalized_sha256": "sha256:ddac00073f7fbccdcd72e046fea797e8fd57f76350e1dce37f5766dd0c80464b",
+    "linked_questions_sha256": "sha256:36912894e46161da4dfa3e8abca7b0a8f5d3fb9f6bf45d334611294af438747a",
+    "sources_sha256": "sha256:475c8ba70bb9e9ed8e6c1004ca26ddb85bef7df6d7b86a3ef8bd97f6c17e8bdd"
+  },
+  "classification": {
+    "content_type": "ra9266_architectural_document_ownership_article",
+    "focus": "RA 9266 copyright ownership, commissioned-project use limits, and written-consent requirement",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": [
+      "4485d7f8-0449-4ec1-bc66-0716e8261236",
+      "13fe4f9a-1db3-4144-8380-2aee7bd42be8",
+      "42bc6efe-b8a1-458b-9e74-ef719d6e099e",
+      "6f128af0-7049-4117-aec4-223a0e45e675",
+      "173e7e9f-7f2f-427b-90e3-c4a24a4495e2",
+      "4a8e5810-0292-4274-81e6-96db5ddb732c",
+      "6ba4425b-1349-4410-b3e6-c4890f897eff",
+      "4cd38400-eaa0-4817-8f56-3cdfea9fa379",
+      "bc85ebfe-63f7-4a09-8de6-ed97399e22c0",
+      "f4043b1c-2f22-47f5-ab78-d14257d94123"
+    ]
+  },
+  "raw_sources": [
+    {
+      "key": "ra9266_irr",
+      "label": "RA 9266 IRR Architecture Act of 2004",
+      "source_type": "implementing_rules",
+      "source_id": "batch006-lea-prac-law-013-ownership-of-architectural-plan-source-01",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "checked_pdf_pages": [
+        5,
+        14,
+        19
+      ]
+    }
+  ],
+  "gate_results": {
+    "compose": "PASS: content-audit:compose -- --article-id 76b6cfd5-d416-4c6d-8a90-76a2d2b91774 --overwrite; blockers=0",
+    "diff": "PASS: content-audit:diff -- --article-id 76b6cfd5-d416-4c6d-8a90-76a2d2b91774; changed=true safe_to_push=true blockers=0",
+    "validate": "PASS: content-audit:validate -- --article-id 76b6cfd5-d416-4c6d-8a90-76a2d2b91774 --summary --dry-run; valid=true blockers=0 warnings=0",
+    "push_dry_run": "not_attempted_local_first; Supabase remote fetch is final publishing only and intentionally non-blocking here",
+    "supabase_mutation": "not_attempted_by_request"
+  },
+  "claims": [
+    {
+      "claim_id": "lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights-claim-01",
+      "claim_text": "RA 9266 IRR Section 3(27) retains copyright ownership in the architect unless there is a written stipulation to the contrary.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights-claim-02",
+      "claim_text": "RA 9266 IRR Section 3(32) limits commissioned ownership to execution of the original project and excludes repetitions or subsequent projects.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights-claim-03",
+      "claim_text": "RA 9266 IRR Section 33 prohibits copying or use for repetition or other projects without the architect's written consent.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights-linked-question-edits",
+      "claim_text": "Question edits staged locally for linked question IDs/model IDs: 4485d7f8-0449-4ec1-bc66-0716e8261236 (ALE-PRAC-LAW-013-007), 13fe4f9a-1db3-4144-8380-2aee7bd42be8 (ALE-PRAC-LAW-013-005), 42bc6efe-b8a1-458b-9e74-ef719d6e099e (ALE-PRAC-LAW-013-003), 6f128af0-7049-4117-aec4-223a0e45e675 (ALE-PRAC-LAW-013-004), 173e7e9f-7f2f-427b-90e3-c4a24a4495e2 (ALE-PRAC-LAW-013-008), 4a8e5810-0292-4274-81e6-96db5ddb732c (ALE-PRAC-LAW-013-001), 6ba4425b-1349-4410-b3e6-c4890f897eff (ALE-PRAC-LAW-013-010), 4cd38400-eaa0-4817-8f56-3cdfea9fa379 (ALE-PRAC-LAW-013-006), bc85ebfe-63f7-4a09-8de6-ed97399e22c0 (ALE-PRAC-LAW-013-009), f4043b1c-2f22-47f5-ab78-d14257d94123 (ALE-PRAC-LAW-013-002)",
+      "audit_result": "PASS",
+      "source_support": [
+        "ra9266_irr"
+      ]
+    }
+  ],
+  "unsupported_or_removed_claims": [
+    "Removed IP Code remedy language not source-audited in this batch.",
+    "Removed unsupported foreign-country/extraterritorial framing and rewrote reuse claims to the source-backed repetition/other-project rule.",
+    "Reframed assignment questions around the source-backed written-stipulation exception."
+  ],
+  "remaining_local_blockers": [],
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_recovery_complete": true,
+    "remote_publish_status": "not_attempted_by_request",
+    "remaining_local_blockers": []
+  },
+  "local_validation": {
+    "command": "bun run content-audit:validate -- --article-id 76b6cfd5-d416-4c6d-8a90-76a2d2b91774 --summary --dry-run",
+    "valid": true,
+    "blockers": 0,
+    "warnings": [],
+    "checked_at": "2026-05-10T22:40:00+08:00"
+  }
+}

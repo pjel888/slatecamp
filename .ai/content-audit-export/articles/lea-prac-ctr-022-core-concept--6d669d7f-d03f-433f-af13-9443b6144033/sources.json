@@ -1,20 +1,32 @@
 {
   "article_id": "6d669d7f-d03f-433f-af13-9443b6144033",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:2b31d9865b3581351c7987b953cc583eda727f1d8d818c76106b182f7978a992",
-  "source_count": 1,
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "721f916c-8e8e-4e11-abcf-7a27c7e4ad00",
+      "source_id": "ciap-document-102-private-construction-contract-local",
       "article_id": "6d669d7f-d03f-433f-af13-9443b6144033",
-      "label": "Civil Code of the Philippines Article 2226 (Enforceability and Equitable Reduction of Liquidated Damages); CIAP Document 102 — General Conditions of Contract",
+      "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
       "url": null,
-      "source_type": "reference_standard",
-      "description": "Philippine Construction Arbitration Standards; Case Law on Liquidated Damages Enforceability and Unconscionability Tests",
-      "is_verified": false,
+      "source_type": "local_raw_pdf",
+      "description": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction; CIAP Document 102 refined markdown lines 538-554, 591, 626, 667, 681, 874; raw PDF checked locally for source-audited-article-batch-031-local-first.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:01.68074+00:00",
-      "updated_at": "2026-03-24T04:34:01.68074+00:00"
+      "created_at": "2026-05-11T08:56:01+08:00",
+      "updated_at": "2026-05-11T08:56:01+08:00"
+    },
+    {
+      "source_id": "ra-386-civil-code-local",
+      "article_id": "6d669d7f-d03f-433f-af13-9443b6144033",
+      "label": "RA 386 - Civil Code of the Philippines",
+      "url": null,
+      "source_type": "local_raw_pdf",
+      "description": "RA 386 - Civil Code of the Philippines; RA 386 Civil Code refined markdown lines 40-48; raw PDF checked locally for source-audited-article-batch-031-local-first.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-11T08:56:01+08:00",
+      "updated_at": "2026-05-11T08:56:01+08:00"
     }
-  ]
+  ],
+  "sources_hash": "sha256:0f4864427a03aa8588ca04930c9b509ef89ededf54e0830fa7dbecf2046922c1"
 }

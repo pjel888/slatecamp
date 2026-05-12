@@ -1,0 +1,48 @@
+{
+  "question_id": "5f7381d3-3670-4c8d-a795-37bfaf8002ac",
+  "baseline_hash": "sha256:0eeb03ac7682eb20d5d0c1b6b4fd42acad807bf4a214356b4f5df5198cb641f3",
+  "action": "replace",
+  "reason": "source-audited-article-batch-039-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-039",
+  "approved_at": "2026-05-11T13:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-039-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 2396-2428"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 809"
+  },
+  "proposed": {
+    "text": "If a vent shaft is not open to the outer air at the top for its full area, what must the skylight or fixed louver openings equal?",
+    "options": [
+      {
+        "id": "b039-4aa5-14-a",
+        "text": "The maximum required shaft area"
+      },
+      {
+        "id": "b039-4aa5-14-b",
+        "text": "The floor area of the served room"
+      },
+      {
+        "id": "b039-4aa5-14-c",
+        "text": "One-half of the shaft area"
+      },
+      {
+        "id": "b039-4aa5-14-d",
+        "text": "The roof opening only"
+      }
+    ],
+    "correct_option_id": "b039-4aa5-14-a",
+    "rationale": "Correct answer: The maximum required shaft area. This is directly supported by PD 1096 2004 Revised IRR, Section 809.",
+    "explanation": "The Batch 039 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 809.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 809"
+  }
+}

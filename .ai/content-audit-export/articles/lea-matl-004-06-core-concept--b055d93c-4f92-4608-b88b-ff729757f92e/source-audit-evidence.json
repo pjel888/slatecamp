@@ -1,0 +1,254 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-084-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T06:55:00.000+08:00",
+  "target": {
+    "article_id": "b055d93c-4f92-4608-b88b-ff729757f92e",
+    "slug": "lea-matl-004-06-core-concept",
+    "title": "Reinforced concrete combines concrete and steel reinforcement",
+    "article_folder": ".ai/content-audit-export/articles/lea-matl-004-06-core-concept--b055d93c-4f92-4608-b88b-ff729757f92e",
+    "normalized_sha256": "sha256:ed571db562c54b0f2c656760dadc93f966f1193a8030ab217efc9fb4f3cd285e",
+    "candidate_sha256": "sha256:ed571db562c54b0f2c656760dadc93f966f1193a8030ab217efc9fb4f3cd285e",
+    "candidate_path": ".ai/content-audit-export/articles/lea-matl-004-06-core-concept--b055d93c-4f92-4608-b88b-ff729757f92e/candidate.md"
+  },
+  "classification": {
+    "topic_family": "reinforced_concrete",
+    "local_first_batch": "084",
+    "source_sensitivity": "technical_construction",
+    "contains_legal_or_code_claims": false,
+    "source_risk_tier": "source_bound_technology",
+    "requires_raw_pdf_audit": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdfs_checked_first": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "local_pdf_extraction_method": "python_pymupdf_local",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "chudley-greeno-handbook-b084",
+      "label": "Buidling Construction Handbook 7th Ed by Chudley _ Greeno",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf",
+      "sha256": "sha256:2efa493fac06a3efb9367111a397129ff8647778d88160bbe0174403cbb9e0bb",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.md",
+      "refined_markdown_sha256": "sha256:485fe968d55ca680cbde52d24fcee5f512a63591026db19e46835f1bc530dcbb",
+      "locator": "Chudley/Greeno refined markdown lines 18-23, 295-305, 433-519, 782-916, and 893-916; raw PDF pages 58, 96, 163-199, 471, 495, and 511 checked by local PyMuPDF extraction."
+    },
+    {
+      "source_id": "building-construction-illustrated-b084",
+      "label": "Building Construction Illustrated, 5th Edition",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+      "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+      "refined_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "locator": "Building Construction Illustrated refined markdown lines 288-322, 2850-2925, 3378-3605, 4037-4073, 6504-6552, 8492, and 8578-8605; raw PDF pages 18, 105, 121-126, 137-145, 248, and 459 checked by local PyMuPDF extraction."
+    },
+    {
+      "source_id": "building-construction-1-lecture-b084",
+      "label": "Building Construction 1 Lecture",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction 1 Lecture.pdf",
+      "sha256": "sha256:a53ebfbccb0c0f53503a8f76385836d46c6951cb4350c8af10420239fd23e231",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction 1 Lecture.md",
+      "refined_markdown_sha256": "sha256:298206511059efbfa480e3dc0d9caab8f0270aa5c1288bf8987ae53790caccec",
+      "locator": "Building Construction 1 Lecture refined markdown lines 392, 2238, and 2340-2354; raw PDF pages 1-6 and 52 checked by local PyMuPDF extraction."
+    },
+    {
+      "source_id": "metals-lecture-b084",
+      "label": "Metals Lecture",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Metals Lecture.pdf",
+      "sha256": "sha256:cd9cd4ee534bda9a974447c4ec73b13b12d5abf1c14df1fca408a2c4530650dd",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Metals Lecture.md",
+      "refined_markdown_sha256": "sha256:4e9e0a042f2eef2c80d33af81512ca2cf32778cae64351af9dc54df58db3694c",
+      "locator": "Metals Lecture refined markdown lines 329-405 and 856-939; raw PDF pages 23, 26, and 28 checked by local PyMuPDF extraction."
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-matl-004-06-core-concept-article-b084",
+      "claim_text": "Article lea-matl-004-06-core-concept was rewritten to the checked reinforced_concrete source scope.",
+      "claim_type": "article_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf",
+        "raw_pdf_sha256": "sha256:2efa493fac06a3efb9367111a397129ff8647778d88160bbe0174403cbb9e0bb",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.md",
+        "source_locator": "Chudley/Greeno refined markdown lines 893-916 and 908-916; Building Construction Illustrated lines 2850-2925 and 1943-1944; Building Construction 1 Lecture lines 392 and 2238-2354; Metals Lecture lines 856-939.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-6b5f3caf-2467-4806-84f9-2bb8b164238d-b084",
+      "claim_text": "Question 6b5f3caf-2467-4806-84f9-2bb8b164238d was rewritten to the checked reinforced_concrete source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf",
+        "raw_pdf_sha256": "sha256:2efa493fac06a3efb9367111a397129ff8647778d88160bbe0174403cbb9e0bb",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.md",
+        "source_locator": "Chudley/Greeno refined markdown lines 893-916 and 908-916; Building Construction Illustrated lines 2850-2925 and 1943-1944; Building Construction 1 Lecture lines 392 and 2238-2354; Metals Lecture lines 856-939.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-d1ab2f34-ef26-49a2-b5d1-cbf06cca9f5d-b084",
+      "claim_text": "Question d1ab2f34-ef26-49a2-b5d1-cbf06cca9f5d was rewritten to the checked reinforced_concrete source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf",
+        "raw_pdf_sha256": "sha256:2efa493fac06a3efb9367111a397129ff8647778d88160bbe0174403cbb9e0bb",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.md",
+        "source_locator": "Chudley/Greeno refined markdown lines 893-916 and 908-916; Building Construction Illustrated lines 2850-2925 and 1943-1944; Building Construction 1 Lecture lines 392 and 2238-2354; Metals Lecture lines 856-939.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-70c37f31-945c-467d-8c10-5878ff9b1588-b084",
+      "claim_text": "Question 70c37f31-945c-467d-8c10-5878ff9b1588 was rewritten to the checked reinforced_concrete source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf",
+        "raw_pdf_sha256": "sha256:2efa493fac06a3efb9367111a397129ff8647778d88160bbe0174403cbb9e0bb",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.md",
+        "source_locator": "Chudley/Greeno refined markdown lines 893-916 and 908-916; Building Construction Illustrated lines 2850-2925 and 1943-1944; Building Construction 1 Lecture lines 392 and 2238-2354; Metals Lecture lines 856-939.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-6abfbae9-18fc-416a-a853-fe428f78abb2-b084",
+      "claim_text": "Question 6abfbae9-18fc-416a-a853-fe428f78abb2 was rewritten to the checked reinforced_concrete source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf",
+        "raw_pdf_sha256": "sha256:2efa493fac06a3efb9367111a397129ff8647778d88160bbe0174403cbb9e0bb",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.md",
+        "source_locator": "Chudley/Greeno refined markdown lines 893-916 and 908-916; Building Construction Illustrated lines 2850-2925 and 1943-1944; Building Construction 1 Lecture lines 392 and 2238-2354; Metals Lecture lines 856-939.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-2df09bb8-6825-4557-9bec-c792b7f29a33-b084",
+      "claim_text": "Question 2df09bb8-6825-4557-9bec-c792b7f29a33 was rewritten to the checked reinforced_concrete source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf",
+        "raw_pdf_sha256": "sha256:2efa493fac06a3efb9367111a397129ff8647778d88160bbe0174403cbb9e0bb",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.md",
+        "source_locator": "Chudley/Greeno refined markdown lines 893-916 and 908-916; Building Construction Illustrated lines 2850-2925 and 1943-1944; Building Construction 1 Lecture lines 392 and 2238-2354; Metals Lecture lines 856-939.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-4f25e6ca-18b3-4230-9c46-80a1de2023a7-b084",
+      "claim_text": "Question 4f25e6ca-18b3-4230-9c46-80a1de2023a7 was rewritten to the checked reinforced_concrete source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf",
+        "raw_pdf_sha256": "sha256:2efa493fac06a3efb9367111a397129ff8647778d88160bbe0174403cbb9e0bb",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.md",
+        "source_locator": "Chudley/Greeno refined markdown lines 893-916 and 908-916; Building Construction Illustrated lines 2850-2925 and 1943-1944; Building Construction 1 Lecture lines 392 and 2238-2354; Metals Lecture lines 856-939.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-887dde45-e724-47d3-adb4-4e21fd69c7b7-b084",
+      "claim_text": "Question 887dde45-e724-47d3-adb4-4e21fd69c7b7 was rewritten to the checked reinforced_concrete source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf",
+        "raw_pdf_sha256": "sha256:2efa493fac06a3efb9367111a397129ff8647778d88160bbe0174403cbb9e0bb",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.md",
+        "source_locator": "Chudley/Greeno refined markdown lines 893-916 and 908-916; Building Construction Illustrated lines 2850-2925 and 1943-1944; Building Construction 1 Lecture lines 392 and 2238-2354; Metals Lecture lines 856-939.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-9a62b4db-f140-4a50-9220-2c5fe91e0353-b084",
+      "claim_text": "Question 9a62b4db-f140-4a50-9220-2c5fe91e0353 was rewritten to the checked reinforced_concrete source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf",
+        "raw_pdf_sha256": "sha256:2efa493fac06a3efb9367111a397129ff8647778d88160bbe0174403cbb9e0bb",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.md",
+        "source_locator": "Chudley/Greeno refined markdown lines 893-916 and 908-916; Building Construction Illustrated lines 2850-2925 and 1943-1944; Building Construction 1 Lecture lines 392 and 2238-2354; Metals Lecture lines 856-939.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-a1027648-bbd9-4c06-a931-32c6092424fe-b084",
+      "claim_text": "Question a1027648-bbd9-4c06-a931-32c6092424fe was rewritten to the checked reinforced_concrete source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf",
+        "raw_pdf_sha256": "sha256:2efa493fac06a3efb9367111a397129ff8647778d88160bbe0174403cbb9e0bb",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.md",
+        "source_locator": "Chudley/Greeno refined markdown lines 893-916 and 908-916; Building Construction Illustrated lines 2850-2925 and 1943-1944; Building Construction 1 Lecture lines 392 and 2238-2354; Metals Lecture lines 856-939.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-587afd88-a79b-4f8b-a8c4-60c498a14927-b084",
+      "claim_text": "Question 587afd88-a79b-4f8b-a8c4-60c498a14927 was rewritten to the checked reinforced_concrete source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf",
+        "raw_pdf_sha256": "sha256:2efa493fac06a3efb9367111a397129ff8647778d88160bbe0174403cbb9e0bb",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.md",
+        "source_locator": "Chudley/Greeno refined markdown lines 893-916 and 908-916; Building Construction Illustrated lines 2850-2925 and 1943-1944; Building Construction 1 Lecture lines 392 and 2238-2354; Metals Lecture lines 856-939.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "question_edit_audit": {
+    "linked_question_count": 10,
+    "question_edit_count": 10,
+    "answer_key_fields_changed": true,
+    "source_safe_rewrite": true,
+    "blockers": []
+  },
+  "scenario_enrichment": {
+    "status": "eligible-deferred",
+    "reason": "Reinforced concrete sequencing can support site scenario practice, but Batch 084 deferred scenario additions to keep the source-repair gate focused."
+  },
+  "roundtrip": {
+    "normalized_md_owns_article_prose": true,
+    "ui_blocks_json_owns_raw_ui_blocks": true,
+    "candidate_md_generated_by_compose": true,
+    "raw_ui_block_edits_supported_in_this_batch": false,
+    "note": "Exported UI summary markers were removed where ui-blocks.json had zero preserved raw blocks, allowing compose to complete without unresolved UI markers.",
+    "unresolved_ui_summary_markers_removed": true
+  }
+}

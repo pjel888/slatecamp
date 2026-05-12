@@ -1,0 +1,309 @@
+{
+  "batch_id": "source-audited-article-batch-022-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T11:45:00.000+08:00",
+  "article_id": "4e28889a-cba3-4bf4-805c-ff0526910ee3",
+  "slug": "lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process",
+  "title": "Change Orders: Types, Authority Limits, and Documentation Process",
+  "status": "local_pass_ready_for_final_publishing_review",
+  "article_folder": ".ai/content-audit-export/articles/lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process--4e28889a-cba3-4bf4-805c-ff0526910ee3",
+  "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process--4e28889a-cba3-4bf4-805c-ff0526910ee3",
+  "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process--4e28889a-cba3-4bf4-805c-ff0526910ee3/question-edits",
+  "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process--4e28889a-cba3-4bf4-805c-ff0526910ee3/question-edits",
+  "linked_questions": 10,
+  "question_edits_created": 10,
+  "source_safe_rewrite_question_edits": 10,
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_only": true,
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false
+  },
+  "source_audit": {
+    "checked_sources": [
+      {
+        "source_id": "uap-document-301-general-conditions-local",
+        "label": "UAP Document 301 - General Conditions, architect authority, claims, payments, and project representatives",
+        "authority": "United Architects of the Philippines / PRC Board approved general conditions source",
+        "source_type": "professional_practice_contract_pdf",
+        "source_locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "refined_markdown_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+        "checked_markdown_lines": [
+          "UAP Document 301 lines 41-71",
+          "UAP Document 301 lines 482-520",
+          "UAP Document 301 lines 1019-1051",
+          "UAP Document 301 lines 1062-1080"
+        ],
+        "use": "primary local source for construction contract administration authority and documentation claims",
+        "local_source_checked": true
+      },
+      {
+        "source_id": "ciap-document-102-change-orders-claims-local",
+        "label": "CIAP Document 102 - private construction contract change orders and claims",
+        "authority": "Construction Industry Authority of the Philippines",
+        "source_type": "construction_contract_pdf",
+        "source_locator": "CIAP Document 102 refined markdown lines 21, 287, 468, 497, 507, 522, 573, 598, and 899-903",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+        "refined_markdown_sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
+        "checked_markdown_lines": [
+          "CIAP 102 line 21",
+          "CIAP 102 line 287",
+          "CIAP 102 line 468",
+          "CIAP 102 line 497",
+          "CIAP 102 line 507",
+          "CIAP 102 line 522",
+          "CIAP 102 line 573",
+          "CIAP 102 line 598",
+          "CIAP 102 lines 899-903"
+        ],
+        "use": "corroborating local source for change order, claims, and time-limit documentation",
+        "local_source_checked": true
+      }
+    ],
+    "source_locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080; CIAP Document 102 refined markdown lines 21, 287, 468, 497, 507, 522, 573, 598, and 899-903",
+    "checked_markdown_lines": [
+      "UAP Document 301 lines 41-71",
+      "UAP Document 301 lines 482-520",
+      "UAP Document 301 lines 1019-1051",
+      "UAP Document 301 lines 1062-1080",
+      "CIAP 102 line 21",
+      "CIAP 102 line 287",
+      "CIAP 102 line 468",
+      "CIAP 102 line 497",
+      "CIAP 102 line 507",
+      "CIAP 102 line 522",
+      "CIAP 102 line 573",
+      "CIAP 102 line 598",
+      "CIAP 102 lines 899-903"
+    ]
+  },
+  "claims": [
+    {
+      "claim_id": "batch-022-lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process-question-001",
+      "claim_text": "Question b82974e7-8159-4c51-a6c7-35adaca31a63 / model BATCH-022-lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process-001 rewritten to source-safe local form.",
+      "question_id": "b82974e7-8159-4c51-a6c7-35adaca31a63",
+      "model_id": "BATCH-022-lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process-001",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-change-orders-claims-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-022-lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process-question-002",
+      "claim_text": "Question 10827527-4012-4090-b56f-2730c9447014 / model BATCH-022-lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process-002 rewritten to source-safe local form.",
+      "question_id": "10827527-4012-4090-b56f-2730c9447014",
+      "model_id": "BATCH-022-lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process-002",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-change-orders-claims-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-022-lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process-question-003",
+      "claim_text": "Question 4066e690-267b-4ec2-ba32-9bb0d267204a / model BATCH-022-lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process-003 rewritten to source-safe local form.",
+      "question_id": "4066e690-267b-4ec2-ba32-9bb0d267204a",
+      "model_id": "BATCH-022-lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process-003",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-change-orders-claims-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-022-lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process-question-004",
+      "claim_text": "Question bf23dc0b-86ba-4320-9b5c-850a26a9cb14 / model BATCH-022-lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process-004 rewritten to source-safe local form.",
+      "question_id": "bf23dc0b-86ba-4320-9b5c-850a26a9cb14",
+      "model_id": "BATCH-022-lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process-004",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-change-orders-claims-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-022-lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process-question-005",
+      "claim_text": "Question c7d65d1d-132a-499e-8c97-491fd7b7c95a / model BATCH-022-lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process-005 rewritten to source-safe local form.",
+      "question_id": "c7d65d1d-132a-499e-8c97-491fd7b7c95a",
+      "model_id": "BATCH-022-lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process-005",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-change-orders-claims-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-022-lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process-question-006",
+      "claim_text": "Question cdc46758-169e-4b93-8518-1f9f9488511f / model BATCH-022-lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process-006 rewritten to source-safe local form.",
+      "question_id": "cdc46758-169e-4b93-8518-1f9f9488511f",
+      "model_id": "BATCH-022-lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process-006",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-change-orders-claims-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-022-lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process-question-007",
+      "claim_text": "Question 8b3cfaee-a495-4da3-bb63-8672b766a243 / model BATCH-022-lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process-007 rewritten to source-safe local form.",
+      "question_id": "8b3cfaee-a495-4da3-bb63-8672b766a243",
+      "model_id": "BATCH-022-lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process-007",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-change-orders-claims-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-022-lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process-question-008",
+      "claim_text": "Question eb2681b4-ef67-4089-85bd-bc0b92319323 / model BATCH-022-lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process-008 rewritten to source-safe local form.",
+      "question_id": "eb2681b4-ef67-4089-85bd-bc0b92319323",
+      "model_id": "BATCH-022-lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process-008",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-change-orders-claims-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-022-lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process-question-009",
+      "claim_text": "Question d0262e2e-a1eb-4602-8fbc-cf0cba977867 / model BATCH-022-lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process-009 rewritten to source-safe local form.",
+      "question_id": "d0262e2e-a1eb-4602-8fbc-cf0cba977867",
+      "model_id": "BATCH-022-lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process-009",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-change-orders-claims-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-022-lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process-question-010",
+      "claim_text": "Question d846afe9-9a64-4419-8aeb-1e3c765f53ba / model BATCH-022-lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process-010 rewritten to source-safe local form.",
+      "question_id": "d846afe9-9a64-4419-8aeb-1e3c765f53ba",
+      "model_id": "BATCH-022-lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process-010",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-change-orders-claims-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    }
+  ],
+  "local_repairs": {
+    "normalized_rewritten": true,
+    "candidate_recomposed": true,
+    "placeholders_removed": true,
+    "source_records_created": 2,
+    "question_edits_created": 10,
+    "source_safe_rewrite_question_edits": 10,
+    "non_source_claims_removed_or_rewritten": true
+  },
+  "validation": {
+    "compose_blockers": [],
+    "diff_safe_to_push": true,
+    "diff_blockers": [],
+    "validate_valid": true,
+    "validate_blockers": [],
+    "validate_warnings": [
+      "lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process--4e28889a-cba3-4bf4-805c-ff0526910ee3: component-usage.json has not been generated for this article yet."
+    ],
+    "scoped_validate_report": ".ai/content-audit-export/articles/lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process--4e28889a-cba3-4bf4-805c-ff0526910ee3/batch-022-validate-report.json"
+  },
+  "blockers": [],
+  "unverified_or_rejected_claims": [],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "blockers": []
+  },
+  "sme_review": {
+    "required": false,
+    "status": "not_required_for_local_first_batch"
+  }
+}

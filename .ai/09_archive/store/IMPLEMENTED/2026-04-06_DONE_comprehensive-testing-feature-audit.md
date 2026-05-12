@@ -1,7 +1,7 @@
 # 2026-04-06: Comprehensive Testing Feature Audit & Implementation Plan (Updated)
 
-**Author:** Gemini CLI (Senior Frontend Engineer)  
-**Status:** PROPOSED (Pivoted to Hero Configurator)  
+**Author:** Gemini CLI (Senior Frontend Engineer)
+**Status:** PROPOSED (Pivoted to Hero Configurator)
 **Related Tasks:** testing-feature-audit-consolidation
 
 ---
@@ -22,7 +22,7 @@ Instead of choosing a mode first, users build their session dynamically through 
 
 #### UI Features:
 - **Draggable Subject Tokens:** Core subjects (Building Tech, Structural Design, etc.) represented as pills that can be dragged into a "Canvas" or "Drop Zone".
-- **Frictionless Defaults:** 
+- **Frictionless Defaults:**
     - Question Count: Default **50** (Slider range: 10–100).
     - Timer: Default **Off** (Options: Off, 30m, 1h, 2h).
 - **Bulk Actions:** "Add All Subjects" and "Clear All" utility buttons for rapid configuration.
@@ -75,7 +75,7 @@ To support the 60/30/10 algorithm without performance bottlenecks, we will use a
 
 ```sql
 -- 1. Ensure indexes for routing performance on raw interactions
-CREATE INDEX IF NOT EXISTS idx_user_interactions_routing 
+CREATE INDEX IF NOT EXISTS idx_user_interactions_routing
 ON user_interactions (user_id, question_id, is_correct, interaction_timestamp);
 
 -- 2. Create the real-time state cache table
@@ -95,19 +95,19 @@ CREATE OR REPLACE FUNCTION update_user_question_state()
 RETURNS TRIGGER AS $$
 BEGIN
     INSERT INTO user_question_states (
-        user_id, 
-        question_id, 
-        last_seen_at, 
-        last_is_correct, 
+        user_id,
+        question_id,
+        last_seen_at,
+        last_is_correct,
         total_attempts,
         total_time_ms,
         avg_time_ms
     )
     VALUES (
-        NEW.user_id, 
-        NEW.question_id, 
-        NEW.interaction_timestamp, 
-        NEW.is_correct, 
+        NEW.user_id,
+        NEW.question_id,
+        NEW.interaction_timestamp,
+        NEW.is_correct,
         1,
         COALESCE(NEW.time_spent_ms, 0),
         COALESCE(NEW.time_spent_ms, 0)
@@ -118,7 +118,7 @@ BEGIN
         total_attempts = user_question_states.total_attempts + 1,
         total_time_ms = user_question_states.total_time_ms + COALESCE(NEW.time_spent_ms, 0),
         avg_time_ms = (user_question_states.total_time_ms + COALESCE(NEW.time_spent_ms, 0)) / (user_question_states.total_attempts + 1);
-    
+
     RETURN NEW;
 END;
 $$ LANGUAGE plpgsql;
@@ -134,7 +134,7 @@ EXECUTE FUNCTION update_user_question_state();
 ### 4.2 Codebase Alignment (Technical Observation)
 With the introduction of real-time triggers, the manual refresh of the question state is no longer required in the application layer.
 
-- **Action:** Remove the redundant RPC call `void supabase.rpc('refresh_user_question_states')` from `src/lib/actions/quiz-v2/end-session.ts`. 
+- **Action:** Remove the redundant RPC call `void supabase.rpc('refresh_user_question_states')` from `src/lib/actions/quiz-v2/end-session.ts`.
 - **Benefit:** This reduces the number of round-trips to the database during session finalization and prevents potential race conditions between the application's manual refresh and the database's automatic trigger.
 
 ---

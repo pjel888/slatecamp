@@ -1,0 +1,121 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T20:15:00+08:00",
+  "audit_mode": "local_source_audit_no_supabase",
+  "protocols_applied": [
+    ".ai/CONTENT_EXCELLENCE_GOAL.md",
+    ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
+    ".ai/00_system/vitruvius-source-reference.md"
+  ],
+  "target": {
+    "article_id": "ab6d74a1-744c-4961-816a-b088bb707848",
+    "slug": "lea-prac-law-005-prboa-powers-and-functions-section-7-in-full",
+    "title": "PRBoA Powers and Functions: Section 7 in Full",
+    "article_folder": ".ai/content-audit-export/articles/lea-prac-law-005-prboa-powers-and-functions-section-7-in-full--ab6d74a1-744c-4961-816a-b088bb707848",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-law-005-prboa-powers-and-functions-section-7-in-full--ab6d74a1-744c-4961-816a-b088bb707848/candidate.md",
+    "candidate_sha256": "sha256:bd90f08a255d5f2b392bd0138718ad659eb56d64f3aebf56bb8e2b8069791921",
+    "normalized_sha256": "sha256:bd90f08a255d5f2b392bd0138718ad659eb56d64f3aebf56bb8e2b8069791921",
+    "linked_questions_sha256": "sha256:7ef51ab4f181935cd1104ecdc726ccc6e8ee11d829847bd68aa1d2d5cb3e6728",
+    "sources_sha256": "sha256:62fb22a26f822f09c97294f2362ac6c43131cec185f2fd90252614a258c4f02f"
+  },
+  "classification": {
+    "content_type": "ra9266_prboa_powers_article",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": [
+      "af782bb3-3ff2-4f17-b655-60337518147a",
+      "13145816-156c-45ea-b398-01c581aceb61",
+      "73030b31-b2f2-4ae5-810a-0ffc12e67007",
+      "88d3ea68-4936-4cb1-8425-025c61cd3f51",
+      "bba310f4-fefb-4a88-bd79-73fb1f5c863f",
+      "926e3a06-edb7-4617-ba84-521369613223",
+      "e84de21b-133d-411e-9761-b26d4ebc1cc8",
+      "e179007d-bbb5-40e1-9468-9c99805b3372",
+      "2f304c4d-f66b-4e8b-a741-c2d07d30a15e",
+      "f96f80fe-0919-4fbc-8a73-6f0235e73b5e"
+    ]
+  },
+  "raw_sources": [
+    {
+      "key": "ra9266_irr",
+      "label": "RA 9266 IRR Architecture Act of 2004",
+      "source_type": "implementing_rules",
+      "source_id": "batch004-lea-prac-law-005-prboa-powers-and-functions-sect-source-01",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "checked_pdf_pages": [
+        8,
+        9
+      ]
+    }
+  ],
+  "gate_results": {
+    "compose": "PASS: content-audit:compose -- --article-id <id> --overwrite; blockers=0",
+    "diff": "PASS: content-audit:diff -- --article-id <id>; changed=true safe_to_push=true blockers=0",
+    "validate": "PASS: content-audit:validate -- --article-id <id> --summary --dry-run; valid=true blockers=0 warnings=0",
+    "push_dry_run": "not_attempted_local_first; Supabase remote fetch is final publishing only and is intentionally non-blocking here",
+    "supabase_mutation": "not_attempted"
+  },
+  "claims": [
+    {
+      "claim_id": "law005-claim-01",
+      "claim_text": "RA 9266 IRR Section 7 enumerates fourteen Board powers and functions from paragraphs (a) through (n).",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "law005-claim-02",
+      "claim_text": "Section 7(b), (d), (h), (j), (k), and (l) support the article anchors for licensure/practice supervision, credential action, administrative cases, exams, temporary/special permits, and CHED coordination.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "law005-claim-03",
+      "claim_text": "The Commission review rule after Section 7 applies to Board policies, resolutions, rules, and regulations, while administrative decisions are reviewed only on appeal.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "law005-claim-04",
+      "claim_text": "The article preserves the RA 9266 IRR Section 7(i) CPD wording without converting it into a current standalone CPD compliance rule.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-prac-law-005-prboa-powers-and-functions-section-7-in-full-linked-question-edits",
+      "claim_text": "Question edits staged locally for linked question IDs/model IDs: af782bb3-3ff2-4f17-b655-60337518147a (ALE-PRAC-LAW-005-001), 13145816-156c-45ea-b398-01c581aceb61 (ALE-PRAC-LAW-005-005), 73030b31-b2f2-4ae5-810a-0ffc12e67007 (ALE-PRAC-LAW-005-008), 88d3ea68-4936-4cb1-8425-025c61cd3f51 (ALE-PRAC-LAW-005-006), bba310f4-fefb-4a88-bd79-73fb1f5c863f (ALE-PRAC-LAW-005-002), 926e3a06-edb7-4617-ba84-521369613223 (ALE-PRAC-LAW-005-010), e84de21b-133d-411e-9761-b26d4ebc1cc8 (ALE-PRAC-LAW-005-009), e179007d-bbb5-40e1-9468-9c99805b3372 (ALE-PRAC-LAW-005-003), 2f304c4d-f66b-4e8b-a741-c2d07d30a15e (ALE-PRAC-LAW-005-007), f96f80fe-0919-4fbc-8a73-6f0235e73b5e (ALE-PRAC-LAW-005-004)",
+      "audit_result": "PASS",
+      "source_support": [
+        "ra9266_irr"
+      ]
+    }
+  ],
+  "unsupported_or_removed_claims": [
+    "Removed learner-visible preserved UI placeholder blocks and internal replacement notes from normalized/candidate content."
+  ],
+  "remaining_local_blockers": [],
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_recovery_complete": true,
+    "remote_publish_status": "not_attempted_by_request",
+    "remaining_local_blockers": []
+  },
+  "local_validation": {
+    "command": "bun run content-audit:validate -- --article-id ab6d74a1-744c-4961-816a-b088bb707848 --summary --dry-run",
+    "valid": true,
+    "blockers": 0,
+    "warnings": [],
+    "checked_at": "2026-05-10T16:39:34+08:00"
+  }
+}

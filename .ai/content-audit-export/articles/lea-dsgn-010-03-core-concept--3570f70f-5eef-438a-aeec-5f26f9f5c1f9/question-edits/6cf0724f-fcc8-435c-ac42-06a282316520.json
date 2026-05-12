@@ -1,0 +1,58 @@
+{
+  "question_id": "6cf0724f-fcc8-435c-ac42-06a282316520",
+  "baseline_hash": "sha256:05b522f1ff5d9969f308bfe76951974849da101c4041a4eef2d2a9bda8fa6393",
+  "action": "replace",
+  "reason": "source-audited-article-batch-040-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-040",
+  "approved_at": "2026-05-11T14:04:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-040-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 1627-1766",
+          "PD 1096 RIRR refined markdown lines 1784-1786"
+        ]
+      },
+      {
+        "source_id": "bp-344-2024-rirr-ncda-local",
+        "label": "BP 344 2024 Revised IRR - NCDA",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "checked_markdown_lines": [
+          "BP 344 2024 IRR refined markdown lines 228-305"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Rule VII parking requirements"
+  },
+  "proposed": {
+    "text": "Under PD 1096, what average car parking slot size is used for perpendicular or diagonal parking?",
+    "options": [
+      {
+        "id": "b040-3570-02-a",
+        "text": "2.50 m by 5.00 m"
+      },
+      {
+        "id": "b040-3570-02-b",
+        "text": "2.15 m by 6.00 m"
+      },
+      {
+        "id": "b040-3570-02-c",
+        "text": "3.60 m by 12.00 m"
+      },
+      {
+        "id": "b040-3570-02-d",
+        "text": "4.00 m by 5.00 m"
+      }
+    ],
+    "correct_option_id": "b040-3570-02-a",
+    "rationale": "Correct answer: 2.50 m by 5.00 m. This is directly supported by PD 1096 2004 Revised IRR, Rule VII parking requirements.",
+    "explanation": "The Batch 040 source-audited correction uses only local raw PDF families and locator-checked refined markdown for PD 1096 2004 Revised IRR, Rule VII parking requirements.",
+    "code_citation": "PD 1096 2004 Revised IRR, Rule VII parking requirements"
+  }
+}

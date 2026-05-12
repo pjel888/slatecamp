@@ -6,9 +6,9 @@
 
 ### 1.1 Primary User Persona
 
-**Role:** Site estimator or junior quantity surveyor on a Philippine construction project.  
-**Device context:** Desktop or tablet on-site; mid-range hardware, intermittent internet.  
-**Task context:** Producing a material takeoff for a wall scope before issuing a purchase request.  
+**Role:** Site estimator or junior quantity surveyor on a Philippine construction project.
+**Device context:** Desktop or tablet on-site; mid-range hardware, intermittent internet.
+**Task context:** Producing a material takeoff for a wall scope before issuing a purchase request.
 **Time pressure:** Estimating is a supporting task, not the primary job. The user needs answers in minutes, not a learning curve measured in sessions.
 
 ---
@@ -129,7 +129,7 @@ START
 
 ### 3.1 Persistent Area Summary Bar
 
-**Location:** Fixed below the configurator title. Always in viewport.  
+**Location:** Fixed below the configurator title. Always in viewport.
 **Purpose:** Ensures the user always knows their gross/net distinction regardless of which step is open.
 
 ```
@@ -390,9 +390,9 @@ This block is always present in print output. It must never be hidden behind a t
 
 ### 5.1 Test Setup
 
-**Participants:** 5 participants minimum per round. Target: site estimators, junior engineers, or draftspeople with exposure to material takeoff tasks. Philippine construction context preferred but not required.  
-**Format:** Moderated task-based session, 30–45 minutes. Remote acceptable (screen share + video).  
-**Device:** Desktop or tablet (priority hardware). One session on mobile to flag breakpoints.  
+**Participants:** 5 participants minimum per round. Target: site estimators, junior engineers, or draftspeople with exposure to material takeoff tasks. Philippine construction context preferred but not required.
+**Format:** Moderated task-based session, 30–45 minutes. Remote acceptable (screen share + video).
+**Device:** Desktop or tablet (priority hardware). One session on mobile to flag breakpoints.
 **Prototype fidelity:** Medium-fidelity interactive prototype in Figma or HTML/JS. All three BOM tiers must be functional (not placeholder values) for Scenario 3.
 
 ---
@@ -401,7 +401,7 @@ This block is always present in print output. It must never be hidden behind a t
 
 **Objective:** Validate that users understand the distinction between gross area and net area, and that opening deductions happen automatically.
 
-**Task brief given to participant:**  
+**Task brief given to participant:**
 *"You are estimating materials for a CHB partition wall: 4 meters long, 3 meters high, with one door (0.90 m × 2.10 m) and one window (1.20 m × 1.20 m). Set this up in the configurator and identify the area that will be used to calculate plaster quantities."*
 
 **Success criteria:**
@@ -422,7 +422,7 @@ This block is always present in print output. It must never be hidden behind a t
 
 **Objective:** Validate that users understand the 1 side / 2 sides distinction and can correctly identify when to change it, without guidance from the facilitator.
 
-**Task brief given to participant:**  
+**Task brief given to participant:**
 *"You're finishing both faces of a drywall partition between two offices — gypsum boards on both sides, with primer and paint on both sides. Configure this correctly in the configurator."*
 
 **Success criteria:**
@@ -443,7 +443,7 @@ This block is always present in print output. It must never be hidden behind a t
 
 **Objective:** Validate that the three-tier BOM output is correctly interpreted — specifically that the "Order Qty" column, not the formula or wastage column, is what the user takes to a supplier.
 
-**Task brief given to participant:**  
+**Task brief given to participant:**
 *"You've completed the configuration. Your site foreman is calling you right now asking: 'How many bags of cement do I need to order for plastering?' Look at the results and give them a number."*
 
 **Success criteria:**

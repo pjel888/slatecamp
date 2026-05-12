@@ -1,0 +1,50 @@
+{
+  "question_id": "c5b31bc5-2692-40fa-8768-522855d93fb7",
+  "baseline_hash": "sha256:649f6f6099b2faf36231bb8fdabd60128e26f781bfe6cb59457b0c8dc7bfcec7",
+  "action": "replace",
+  "reason": "source-audited-article-batch-036-local-first: source-safe replacement grounded in local raw PDF/source family evidence; removes unsupported, stale, or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-036",
+  "approved_at": "2026-05-11T12:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-036-local-first",
+    "checked_sources": [
+      {
+        "source_id": "bp-344-2024-revised-irr-ncda-local",
+        "label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "checked_markdown_lines": [
+          "BP 344 2024 Revised IRR refined markdown lines 1090-1135",
+          "BP 344 2024 Revised IRR refined markdown lines 1296-1306",
+          "BP 344 2024 Revised IRR refined markdown lines 1493-1514"
+        ]
+      }
+    ],
+    "citation": "BP 344 2024 Revised IRR, Dressing Rooms and Cubicles"
+  },
+  "proposed": {
+    "text": "For dressing areas, what BP 344 coat-hook projection limit must be observed?",
+    "options": [
+      {
+        "id": "b036-4985-08-a",
+        "text": "Not more than 40 mm from the wall"
+      },
+      {
+        "id": "b036-4985-08-b",
+        "text": "Not more than 100 mm from the wall"
+      },
+      {
+        "id": "b036-4985-08-c",
+        "text": "At least 200 mm from the wall"
+      },
+      {
+        "id": "b036-4985-08-d",
+        "text": "No projection limit is stated"
+      }
+    ],
+    "correct_option_id": "b036-4985-08-a",
+    "rationale": "Correct answer: Not more than 40 mm from the wall. This is directly supported by BP 344 2024 Revised IRR, Dressing Rooms and Cubicles.",
+    "explanation": "The source-audited correction uses only the local raw PDF family and locator-checked refined markdown for BP 344 2024 Revised IRR, Dressing Rooms and Cubicles.",
+    "code_citation": "BP 344 2024 Revised IRR, Dressing Rooms and Cubicles"
+  }
+}

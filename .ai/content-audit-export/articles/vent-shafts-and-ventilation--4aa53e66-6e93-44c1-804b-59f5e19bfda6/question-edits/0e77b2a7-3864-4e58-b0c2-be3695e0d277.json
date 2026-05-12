@@ -1,0 +1,48 @@
+{
+  "question_id": "0e77b2a7-3864-4e58-b0c2-be3695e0d277",
+  "baseline_hash": "sha256:a793c81a47a17eb0c90b0d4be09e101e49bf6de5cc594773544987a79fa25071",
+  "action": "replace",
+  "reason": "source-audited-article-batch-039-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-039",
+  "approved_at": "2026-05-11T13:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-039-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 2396-2428"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 811"
+  },
+  "proposed": {
+    "text": "When artificial ventilation is required under Section 811, what table supplies the minimum air-change requirements?",
+    "options": [
+      {
+        "id": "b039-4aa5-30-a",
+        "text": "Table VIII.4"
+      },
+      {
+        "id": "b039-4aa5-30-b",
+        "text": "Table VII.1"
+      },
+      {
+        "id": "b039-4aa5-30-c",
+        "text": "Table XIII.1"
+      },
+      {
+        "id": "b039-4aa5-30-d",
+        "text": "Table XIV.1"
+      }
+    ],
+    "correct_option_id": "b039-4aa5-30-a",
+    "rationale": "Correct answer: Table VIII.4. This is directly supported by PD 1096 2004 Revised IRR, Section 811.",
+    "explanation": "The Batch 039 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 811.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 811"
+  }
+}

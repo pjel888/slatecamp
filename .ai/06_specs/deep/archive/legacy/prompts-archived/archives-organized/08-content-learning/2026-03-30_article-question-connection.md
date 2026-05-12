@@ -21,9 +21,9 @@ The backend pipeline must act as a strict gatekeeper, rejecting any malformed or
 ## Phase 3: Client Interface Construction (`/admin/articles/[slug]`)
 The front-end must securely capture the relational data point (the article ID) silently while the user inputs the question text.
 
-1. **Context Extraction:** The agent must modify the editing page to guarantee it possesses the exact internal `articleId` belonging to the current `[slug]`. 
+1. **Context Extraction:** The agent must modify the editing page to guarantee it possesses the exact internal `articleId` belonging to the current `[slug]`.
 2. **Component Isolation:** The agent must build a dedicated, modular UI component for adding questions to maintain code hygiene and prevent polluting the main article form.
-3. **State Management:** The UI must maintain a local array of drafted questions. 
+3. **State Management:** The UI must maintain a local array of drafted questions.
 4. **Submission Binding:** When the user initiates a save operation, the front-end logic must automatically append the extracted `articleId` to every new question object before transmitting the payload to the server.
 
 ## Phase 4: Agent Execution Sequence

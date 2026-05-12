@@ -1,0 +1,428 @@
+{
+  "batch_id": "source-audited-article-batch-035-local-first",
+  "generated_at": "2026-05-11T11:48:48+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "local_first_only": true,
+  "constraints": {
+    "supabase_push": false,
+    "deploy": false,
+    "commit": false
+  },
+  "selection": {
+    "rule": "next five high-value professional-practice compensation clusters with linked questions and local raw PDFs, excluding Batch 001-034 IDs",
+    "inherited_blockers": 0,
+    "selected_count": 5
+  },
+  "counts": {
+    "selected_articles": 5,
+    "locally_passed_articles": 5,
+    "linked_questions": 50,
+    "question_edits_created": 50,
+    "source_rows_written": 12,
+    "unique_raw_pdf_files_checked": 3,
+    "scoped_json_parse_count": 115,
+    "source_hash_checks": 20,
+    "remaining_local_blockers": 0
+  },
+  "exact_paths": {
+    "report": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-035-local-first-report.md",
+    "ledger": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-035-local-first-ledger.json",
+    "scoped_checks": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-035-local-first-scoped-checks.json",
+    "handoff": "/Users/philiplewis/slatecamp/.ai/03_plans/source-audited-local-first-batches-handoff.md"
+  },
+  "artifacts": {
+    "report": ".ai/content-audit-export/source-audited-article-batch-035-local-first-report.md",
+    "ledger": ".ai/content-audit-export/source-audited-article-batch-035-local-first-ledger.json",
+    "scoped_checks": ".ai/content-audit-export/source-audited-article-batch-035-local-first-scoped-checks.json"
+  },
+  "raw_sources_checked": [
+    {
+      "label": "UAP Standards of Professional Practice - compiled SPP source",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+      "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+      "checked_markdown_lines": [
+        "UAP Standards of Professional Practice refined markdown lines 300-320",
+        "414-435",
+        "437-457",
+        "539-551"
+      ]
+    },
+    {
+      "label": "UAP Document 401-402 - Architect-Owner Agreement",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+      "raw_pdf_sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+      "checked_markdown_lines": [
+        "UAP Document 401-402 refined markdown lines 45-63",
+        "77-89",
+        "105-106",
+        "119-130"
+      ]
+    },
+    {
+      "label": "UAP SPP Document 201 - Pre-design Services / Compensation Slides",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+      "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+      "checked_markdown_lines": [
+        "SPP 201 refined markdown lines 165-188",
+        "192-207",
+        "221-227"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "index": 1,
+      "article_id": "5967e69f-d295-4dd2-9eb7-b4f1a321db4d",
+      "slug": "lea-prac-cmp-003-project-construction-cost-pcc-definition-inclusions-and-what-the-architect-s-fee-is-based-on",
+      "title": "Project Construction Cost PCC Definition Inclusions",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-003-project-construction-cost-pcc-definition-inclusions-and-what-the-architect-s-fee-is--5967e69f-d295-4dd2-9eb7-b4f1a321db4d",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-003-project-construction-cost-pcc-definition-inclusions-and-what-the-architect-s-fee-is--5967e69f-d295-4dd2-9eb7-b4f1a321db4d/question-edits",
+      "exact_improved_paths": {
+        "normalized_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-003-project-construction-cost-pcc-definition-inclusions-and-what-the-architect-s-fee-is--5967e69f-d295-4dd2-9eb7-b4f1a321db4d/normalized.md",
+        "candidate_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-003-project-construction-cost-pcc-definition-inclusions-and-what-the-architect-s-fee-is--5967e69f-d295-4dd2-9eb7-b4f1a321db4d/candidate.md",
+        "sources_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-003-project-construction-cost-pcc-definition-inclusions-and-what-the-architect-s-fee-is--5967e69f-d295-4dd2-9eb7-b4f1a321db4d/sources.json",
+        "source_audit_evidence_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-003-project-construction-cost-pcc-definition-inclusions-and-what-the-architect-s-fee-is--5967e69f-d295-4dd2-9eb7-b4f1a321db4d/source-audit-evidence.json",
+        "ui_blocks_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-003-project-construction-cost-pcc-definition-inclusions-and-what-the-architect-s-fee-is--5967e69f-d295-4dd2-9eb7-b4f1a321db4d/ui-blocks.json",
+        "compose_report_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-003-project-construction-cost-pcc-definition-inclusions-and-what-the-architect-s-fee-is--5967e69f-d295-4dd2-9eb7-b4f1a321db4d/compose-report.json",
+        "diff_report_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-003-project-construction-cost-pcc-definition-inclusions-and-what-the-architect-s-fee-is--5967e69f-d295-4dd2-9eb7-b4f1a321db4d/diff-report.json"
+      },
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_rows": 3,
+      "candidate_hash": "sha256:042455a89ee7903780f2ec6888845e93d1ef18f7d939b208aafe94e3f51cbf1a",
+      "normalized_hash": "sha256:042455a89ee7903780f2ec6888845e93d1ef18f7d939b208aafe94e3f51cbf1a",
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": []
+      },
+      "source_audit": {
+        "status": "PASS",
+        "raw_pdf_gate": "PASS",
+        "blockers": []
+      },
+      "raw_sources": [
+        {
+          "source_id": "uap-standards-professional-practice2-local",
+          "label": "UAP Standards of Professional Practice - compiled SPP source",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+          "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+          "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+          "source_locator": "UAP Standards of Professional Practice refined markdown lines 539-547; UAP Standards of Professional Practice refined markdown lines 549-551; UAP Document 401-402 refined markdown lines 77-89, 105-106, 128-129",
+          "checked_markdown_lines": [
+            "UAP Standards of Professional Practice refined markdown lines 539-547",
+            "UAP Standards of Professional Practice refined markdown lines 549-551",
+            "UAP Document 401-402 refined markdown lines 77-89, 105-106, 128-129"
+          ]
+        },
+        {
+          "source_id": "uap-document-401-402-local",
+          "label": "UAP Document 401-402 - Architect-Owner Agreement",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+          "raw_pdf_sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
+          "refined_markdown_sha256": "sha256:ea7f84c966467b46fe9058778d4f9a0821db94a5dbc0a4fb02a2cfd69e215d05",
+          "source_locator": "UAP Standards of Professional Practice refined markdown lines 539-547; UAP Standards of Professional Practice refined markdown lines 549-551; UAP Document 401-402 refined markdown lines 77-89, 105-106, 128-129",
+          "checked_markdown_lines": [
+            "UAP Standards of Professional Practice refined markdown lines 539-547",
+            "UAP Standards of Professional Practice refined markdown lines 549-551",
+            "UAP Document 401-402 refined markdown lines 77-89, 105-106, 128-129"
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "article_id": "0c599071-cf6f-4b07-9d5f-a6230dd77b36",
+      "slug": "lea-prac-cmp-004-schedule-of-payments-phase-percentages-and-the-architect-s-invoicing-timeline",
+      "title": "Schedule of Payments Phase Percentages",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-004-schedule-of-payments-phase-percentages-and-the-architect-s-invoicing-timeline--0c599071-cf6f-4b07-9d5f-a6230dd77b36",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-004-schedule-of-payments-phase-percentages-and-the-architect-s-invoicing-timeline--0c599071-cf6f-4b07-9d5f-a6230dd77b36/question-edits",
+      "exact_improved_paths": {
+        "normalized_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-004-schedule-of-payments-phase-percentages-and-the-architect-s-invoicing-timeline--0c599071-cf6f-4b07-9d5f-a6230dd77b36/normalized.md",
+        "candidate_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-004-schedule-of-payments-phase-percentages-and-the-architect-s-invoicing-timeline--0c599071-cf6f-4b07-9d5f-a6230dd77b36/candidate.md",
+        "sources_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-004-schedule-of-payments-phase-percentages-and-the-architect-s-invoicing-timeline--0c599071-cf6f-4b07-9d5f-a6230dd77b36/sources.json",
+        "source_audit_evidence_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-004-schedule-of-payments-phase-percentages-and-the-architect-s-invoicing-timeline--0c599071-cf6f-4b07-9d5f-a6230dd77b36/source-audit-evidence.json",
+        "ui_blocks_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-004-schedule-of-payments-phase-percentages-and-the-architect-s-invoicing-timeline--0c599071-cf6f-4b07-9d5f-a6230dd77b36/ui-blocks.json",
+        "compose_report_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-004-schedule-of-payments-phase-percentages-and-the-architect-s-invoicing-timeline--0c599071-cf6f-4b07-9d5f-a6230dd77b36/compose-report.json",
+        "diff_report_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-004-schedule-of-payments-phase-percentages-and-the-architect-s-invoicing-timeline--0c599071-cf6f-4b07-9d5f-a6230dd77b36/diff-report.json"
+      },
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_rows": 3,
+      "candidate_hash": "sha256:1ab04d3bb3fe1d20ea0351a731a29e0f507dba67d46ce6c57ce0683dd082d1b5",
+      "normalized_hash": "sha256:1ab04d3bb3fe1d20ea0351a731a29e0f507dba67d46ce6c57ce0683dd082d1b5",
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": []
+      },
+      "source_audit": {
+        "status": "PASS",
+        "raw_pdf_gate": "PASS",
+        "blockers": []
+      },
+      "raw_sources": [
+        {
+          "source_id": "uap-document-401-402-local",
+          "label": "UAP Document 401-402 - Architect-Owner Agreement",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+          "raw_pdf_sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
+          "refined_markdown_sha256": "sha256:ea7f84c966467b46fe9058778d4f9a0821db94a5dbc0a4fb02a2cfd69e215d05",
+          "source_locator": "UAP Document 401-402 refined markdown lines 77-89; UAP Document 401-402 refined markdown lines 119-124; UAP Standards of Professional Practice refined markdown lines 300-320",
+          "checked_markdown_lines": [
+            "UAP Document 401-402 refined markdown lines 77-89",
+            "UAP Document 401-402 refined markdown lines 119-124",
+            "UAP Standards of Professional Practice refined markdown lines 300-320"
+          ]
+        },
+        {
+          "source_id": "uap-standards-professional-practice2-local",
+          "label": "UAP Standards of Professional Practice - compiled SPP source",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+          "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+          "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+          "source_locator": "UAP Document 401-402 refined markdown lines 77-89; UAP Document 401-402 refined markdown lines 119-124; UAP Standards of Professional Practice refined markdown lines 300-320",
+          "checked_markdown_lines": [
+            "UAP Document 401-402 refined markdown lines 77-89",
+            "UAP Document 401-402 refined markdown lines 119-124",
+            "UAP Standards of Professional Practice refined markdown lines 300-320"
+          ]
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "article_id": "d18569e9-4401-4d85-8d59-d545240ef106",
+      "slug": "lea-prac-cmp-006-multiple-of-direct-personnel-expense-mdpe-the-formula-components-and-logic",
+      "title": "Multiple of Direct Personnel Expense MDPE the Formula Components",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-006-multiple-of-direct-personnel-expense-mdpe-the-formula-components-and-logic--d18569e9-4401-4d85-8d59-d545240ef106",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-006-multiple-of-direct-personnel-expense-mdpe-the-formula-components-and-logic--d18569e9-4401-4d85-8d59-d545240ef106/question-edits",
+      "exact_improved_paths": {
+        "normalized_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-006-multiple-of-direct-personnel-expense-mdpe-the-formula-components-and-logic--d18569e9-4401-4d85-8d59-d545240ef106/normalized.md",
+        "candidate_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-006-multiple-of-direct-personnel-expense-mdpe-the-formula-components-and-logic--d18569e9-4401-4d85-8d59-d545240ef106/candidate.md",
+        "sources_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-006-multiple-of-direct-personnel-expense-mdpe-the-formula-components-and-logic--d18569e9-4401-4d85-8d59-d545240ef106/sources.json",
+        "source_audit_evidence_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-006-multiple-of-direct-personnel-expense-mdpe-the-formula-components-and-logic--d18569e9-4401-4d85-8d59-d545240ef106/source-audit-evidence.json",
+        "ui_blocks_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-006-multiple-of-direct-personnel-expense-mdpe-the-formula-components-and-logic--d18569e9-4401-4d85-8d59-d545240ef106/ui-blocks.json",
+        "compose_report_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-006-multiple-of-direct-personnel-expense-mdpe-the-formula-components-and-logic--d18569e9-4401-4d85-8d59-d545240ef106/compose-report.json",
+        "diff_report_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-006-multiple-of-direct-personnel-expense-mdpe-the-formula-components-and-logic--d18569e9-4401-4d85-8d59-d545240ef106/diff-report.json"
+      },
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_rows": 2,
+      "candidate_hash": "sha256:1c366e3a8ef99bbadcf142f470df4349bd0727dbdbe33523eb91e50b39c9624b",
+      "normalized_hash": "sha256:1c366e3a8ef99bbadcf142f470df4349bd0727dbdbe33523eb91e50b39c9624b",
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": []
+      },
+      "source_audit": {
+        "status": "PASS",
+        "raw_pdf_gate": "PASS",
+        "blockers": []
+      },
+      "raw_sources": [
+        {
+          "source_id": "uap-standards-professional-practice2-local",
+          "label": "UAP Standards of Professional Practice - compiled SPP source",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+          "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+          "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+          "source_locator": "UAP Standards of Professional Practice refined markdown lines 419-435; SPP 201 refined markdown lines 165-188, 192-193",
+          "checked_markdown_lines": [
+            "UAP Standards of Professional Practice refined markdown lines 419-435",
+            "SPP 201 refined markdown lines 165-188, 192-193"
+          ]
+        },
+        {
+          "source_id": "uap-spp-201-local",
+          "label": "UAP SPP Document 201 - Pre-design Services / Compensation Slides",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+          "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+          "refined_markdown_sha256": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
+          "source_locator": "UAP Standards of Professional Practice refined markdown lines 419-435; SPP 201 refined markdown lines 165-188, 192-193",
+          "checked_markdown_lines": [
+            "UAP Standards of Professional Practice refined markdown lines 419-435",
+            "SPP 201 refined markdown lines 165-188, 192-193"
+          ]
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "article_id": "946e44ee-e4d7-452d-a00a-066bae0f273c",
+      "slug": "lea-prac-cmp-007-mdpe-multipliers-overhead-profit-non-technical-factors-and-philippine-practice-ranges",
+      "title": "MDPE Multipliers Overhead Profit Non Technical Factors",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-007-mdpe-multipliers-overhead-profit-non-technical-factors-and-philippine-practice-rang--946e44ee-e4d7-452d-a00a-066bae0f273c",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-007-mdpe-multipliers-overhead-profit-non-technical-factors-and-philippine-practice-rang--946e44ee-e4d7-452d-a00a-066bae0f273c/question-edits",
+      "exact_improved_paths": {
+        "normalized_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-007-mdpe-multipliers-overhead-profit-non-technical-factors-and-philippine-practice-rang--946e44ee-e4d7-452d-a00a-066bae0f273c/normalized.md",
+        "candidate_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-007-mdpe-multipliers-overhead-profit-non-technical-factors-and-philippine-practice-rang--946e44ee-e4d7-452d-a00a-066bae0f273c/candidate.md",
+        "sources_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-007-mdpe-multipliers-overhead-profit-non-technical-factors-and-philippine-practice-rang--946e44ee-e4d7-452d-a00a-066bae0f273c/sources.json",
+        "source_audit_evidence_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-007-mdpe-multipliers-overhead-profit-non-technical-factors-and-philippine-practice-rang--946e44ee-e4d7-452d-a00a-066bae0f273c/source-audit-evidence.json",
+        "ui_blocks_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-007-mdpe-multipliers-overhead-profit-non-technical-factors-and-philippine-practice-rang--946e44ee-e4d7-452d-a00a-066bae0f273c/ui-blocks.json",
+        "compose_report_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-007-mdpe-multipliers-overhead-profit-non-technical-factors-and-philippine-practice-rang--946e44ee-e4d7-452d-a00a-066bae0f273c/compose-report.json",
+        "diff_report_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-007-mdpe-multipliers-overhead-profit-non-technical-factors-and-philippine-practice-rang--946e44ee-e4d7-452d-a00a-066bae0f273c/diff-report.json"
+      },
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_rows": 2,
+      "candidate_hash": "sha256:4bd70ecbdbaa7a4580c42f7274263fe208f2ea8cf63b1bd00aac7fe0d5a7aa13",
+      "normalized_hash": "sha256:4bd70ecbdbaa7a4580c42f7274263fe208f2ea8cf63b1bd00aac7fe0d5a7aa13",
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": []
+      },
+      "source_audit": {
+        "status": "PASS",
+        "raw_pdf_gate": "PASS",
+        "blockers": []
+      },
+      "raw_sources": [
+        {
+          "source_id": "uap-standards-professional-practice2-local",
+          "label": "UAP Standards of Professional Practice - compiled SPP source",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+          "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+          "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+          "source_locator": "UAP Standards of Professional Practice refined markdown lines 419-435; SPP 201 refined markdown lines 165-188",
+          "checked_markdown_lines": [
+            "UAP Standards of Professional Practice refined markdown lines 419-435",
+            "SPP 201 refined markdown lines 165-188"
+          ]
+        },
+        {
+          "source_id": "uap-spp-201-local",
+          "label": "UAP SPP Document 201 - Pre-design Services / Compensation Slides",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+          "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+          "refined_markdown_sha256": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
+          "source_locator": "UAP Standards of Professional Practice refined markdown lines 419-435; SPP 201 refined markdown lines 165-188",
+          "checked_markdown_lines": [
+            "UAP Standards of Professional Practice refined markdown lines 419-435",
+            "SPP 201 refined markdown lines 165-188"
+          ]
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "article_id": "660b2a38-cfad-4aa2-8ff3-85b4ee8fb32d",
+      "slug": "lea-prac-cmp-009-lump-sum-fixed-fee-scope-discipline-risk-allocation-and-appropriate-use",
+      "title": "Lump Sum Fixed Fee Scope Discipline Risk Allocation",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-009-lump-sum-fixed-fee-scope-discipline-risk-allocation-and-appropriate-use--660b2a38-cfad-4aa2-8ff3-85b4ee8fb32d",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-009-lump-sum-fixed-fee-scope-discipline-risk-allocation-and-appropriate-use--660b2a38-cfad-4aa2-8ff3-85b4ee8fb32d/question-edits",
+      "exact_improved_paths": {
+        "normalized_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-009-lump-sum-fixed-fee-scope-discipline-risk-allocation-and-appropriate-use--660b2a38-cfad-4aa2-8ff3-85b4ee8fb32d/normalized.md",
+        "candidate_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-009-lump-sum-fixed-fee-scope-discipline-risk-allocation-and-appropriate-use--660b2a38-cfad-4aa2-8ff3-85b4ee8fb32d/candidate.md",
+        "sources_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-009-lump-sum-fixed-fee-scope-discipline-risk-allocation-and-appropriate-use--660b2a38-cfad-4aa2-8ff3-85b4ee8fb32d/sources.json",
+        "source_audit_evidence_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-009-lump-sum-fixed-fee-scope-discipline-risk-allocation-and-appropriate-use--660b2a38-cfad-4aa2-8ff3-85b4ee8fb32d/source-audit-evidence.json",
+        "ui_blocks_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-009-lump-sum-fixed-fee-scope-discipline-risk-allocation-and-appropriate-use--660b2a38-cfad-4aa2-8ff3-85b4ee8fb32d/ui-blocks.json",
+        "compose_report_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-009-lump-sum-fixed-fee-scope-discipline-risk-allocation-and-appropriate-use--660b2a38-cfad-4aa2-8ff3-85b4ee8fb32d/compose-report.json",
+        "diff_report_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-009-lump-sum-fixed-fee-scope-discipline-risk-allocation-and-appropriate-use--660b2a38-cfad-4aa2-8ff3-85b4ee8fb32d/diff-report.json"
+      },
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_rows": 2,
+      "candidate_hash": "sha256:5d4c19954db9c5741277f3a8c19ba548f83b6b46ea6a11e6484d381c60f4322b",
+      "normalized_hash": "sha256:5d4c19954db9c5741277f3a8c19ba548f83b6b46ea6a11e6484d381c60f4322b",
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": []
+      },
+      "source_audit": {
+        "status": "PASS",
+        "raw_pdf_gate": "PASS",
+        "blockers": []
+      },
+      "raw_sources": [
+        {
+          "source_id": "uap-standards-professional-practice2-local",
+          "label": "UAP Standards of Professional Practice - compiled SPP source",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+          "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+          "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+          "source_locator": "UAP Standards of Professional Practice refined markdown lines 441-443; SPP 201 refined markdown lines 204-207",
+          "checked_markdown_lines": [
+            "UAP Standards of Professional Practice refined markdown lines 441-443",
+            "SPP 201 refined markdown lines 204-207"
+          ]
+        },
+        {
+          "source_id": "uap-spp-201-local",
+          "label": "UAP SPP Document 201 - Pre-design Services / Compensation Slides",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+          "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+          "refined_markdown_sha256": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
+          "source_locator": "UAP Standards of Professional Practice refined markdown lines 441-443; SPP 201 refined markdown lines 204-207",
+          "checked_markdown_lines": [
+            "UAP Standards of Professional Practice refined markdown lines 441-443",
+            "SPP 201 refined markdown lines 204-207"
+          ]
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "compose": "PASS 5/5 blockers=0",
+    "diff": "PASS 5/5 changed=true safe_to_push=true blockers=0",
+    "validate": "PASS 5/5 valid=true blockers=0 expected component-usage warnings only",
+    "scoped_checks": "PASS json_parse=115 linked_questions=50 question_edits=50 source_hash_checks=20 marker_matches=0 stale_compose_error_files=0",
+    "targeted_tests": "PASS bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts; 34 pass, 0 fail, 328 expects",
+    "git_diff_check": "PASS"
+  },
+  "blockers": []
+}

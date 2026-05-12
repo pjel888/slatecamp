@@ -1,0 +1,65 @@
+{
+  "question_id": "b9b3fcdb-ba8c-4dc3-ae1b-5caa87c2f763",
+  "baseline_hash": "sha256:54892fbbf0a8fc8c7ad3c712569b8e55c354a3d8d56acc805ae3b3f766b4e80b",
+  "action": "replace",
+  "reason": "source-audited-article-batch-079-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-008-03-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-079",
+  "approved_at": "2026-05-12T06:20:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "f34aade8-a870-458c-9609-562419eb1238",
+    "parent_article_slug": "lea-matl-008-03-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "BCI refined markdown lines 16020-16138; raw PDF pages 436-438 checked by local PyMuPDF extraction",
+    "checked_markdown_lines": [
+      "BCI refined markdown lines 16020-16138; raw PDF pages 436-438 checked by local PyMuPDF extraction",
+      "Salvan refined markdown lines 6230-6348 and 6996-7002; raw PDF pages 181-183 checked by local PyMuPDF extraction"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "bci-5e-b079",
+        "label": "Building Construction Illustrated, 5th Edition",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "raw_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "locator": "BCI refined markdown lines 16020-16138; raw PDF pages 436-438 checked by local PyMuPDF extraction"
+      },
+      {
+        "source_id": "salvan-building-materials-b079",
+        "label": "George Salvan Architectural Building Materials",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+        "raw_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+        "locator": "Salvan refined markdown lines 6230-6348 and 6996-7002; raw PDF pages 181-183 checked by local PyMuPDF extraction"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 079 local raw-source-audited fastener_systems scope."
+  },
+  "proposed": {
+    "text": "Which fastener uses expansion inside a drilled masonry or concrete hole?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Expansion bolt or expansion shield"
+      },
+      {
+        "id": "b",
+        "text": "Piano hinge"
+      },
+      {
+        "id": "c",
+        "text": "Plastic laminate"
+      },
+      {
+        "id": "d",
+        "text": "Double-hung sash"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "BCI defines expansion bolts and shields by mechanical expansion inside drilled holes.",
+    "explanation": "BCI defines expansion bolts and shields by mechanical expansion inside drilled holes.",
+    "code_citation": "Building Construction Illustrated, 5th Edition; George Salvan Architectural Building Materials"
+  }
+}

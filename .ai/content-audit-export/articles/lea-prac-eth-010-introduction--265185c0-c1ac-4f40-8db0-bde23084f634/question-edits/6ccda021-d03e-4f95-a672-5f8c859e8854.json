@@ -1,0 +1,32 @@
+{
+  "question_id": "6ccda021-d03e-4f95-a672-5f8c859e8854",
+  "baseline_hash": "sha256:3da9ef7014c9903c700895eb2cdbc474f21acd971c8915864e25c3eab69de45d",
+  "reason": "Batch 003 source audit removed unsupported penalty ranges, restitution amounts, dollar values, and scenario statistics; questions now use RA 9266 IRR and UAP Code of Ethics conduct categories.",
+  "approved_by": "codex-local-source-audit-batch-003",
+  "approved_at": "2026-05-10T18:00:00+08:00",
+  "proposed": {
+    "text": "An architect knowingly submits architectural documents with a specification that does not reflect the design actually reviewed or controlled. Which source-backed issue is tested?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No issue if the contractor may notice later"
+      },
+      {
+        "id": "b",
+        "text": "A harmless drafting preference"
+      },
+      {
+        "id": "c",
+        "text": "False certification/misrepresentation and lack of responsible professional control"
+      },
+      {
+        "id": "d",
+        "text": "A BP 344 parking issue"
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": "RA 9266 IRR ties signing/sealing to responsible professional control and includes fraud/deceit or gross negligence as disciplinary categories.",
+    "explanation": "The edit avoids unsupported load-number scenarios while preserving the ethical principle.",
+    "code_citation": "RA 9266 IRR seal/signing and discipline provisions"
+  }
+}

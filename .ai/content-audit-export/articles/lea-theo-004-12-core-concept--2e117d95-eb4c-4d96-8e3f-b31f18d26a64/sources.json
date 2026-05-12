@@ -1,56 +1,35 @@
 {
   "article_id": "2e117d95-eb4c-4d96-8e3f-b31f18d26a64",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:f11006c96f0861b3916b55f43f69d0cc36ac747d233b6f161f1e7839684aa2cc",
-  "source_count": 4,
+  "source_count": 1,
   "sources": [
     {
-      "source_id": "b072f330-7289-4308-92ff-24c1b8c6f1ff",
+      "source_id": "toa4-tropical-architecture-local-raw-pdf--b060-2e117d95-01",
       "article_id": "2e117d95-eb4c-4d96-8e3f-b31f18d26a64",
-      "label": "[ASHRAE 55-2020 - Thermal Environmental Conditions for Human Occupancy](https://www.ashrae.org/technical-resources/bookstore/standard-55-thermal-environmental-conditions-for-human-occupancy)",
+      "label": "TOA 4 Tropical Architecture - local raw PDF",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_raw_pdf",
+      "description": "TOA 4 Tropical Architecture - local raw PDF; local raw PDF checked first; refined markdown used only as locator. TOA 4 Tropical Architecture refined markdown lines 513-591, 622-660, 840-874, 1386-1420, and raw PDF pages 72, 75-78, 82, 84, 104, 106-110, 163, and 172.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
-    },
-    {
-      "source_id": "c61c0034-0db6-4d77-95be-9f191bc7ad17",
-      "article_id": "2e117d95-eb4c-4d96-8e3f-b31f18d26a64",
-      "label": "[Berkeley Center for the Built Environment - Adaptive Comfort Model](https://cbe.berkeley.edu/research/adaptive-comfort-model/)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 1,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
-    },
-    {
-      "source_id": "56b27c35-dc37-4a83-8aab-339a3150acc0",
-      "article_id": "2e117d95-eb4c-4d96-8e3f-b31f18d26a64",
-      "label": "[ResearchGate - ASHRAE 55 Adaptive Model in Hot-Humid Climates](https://www.researchgate.net/publication/268805045_ASHRAE_55_adaptive_model_application_in_hot_and_humid_climates_The_Brazilian_case)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
-    },
-    {
-      "source_id": "2b7160f6-8307-4fa0-9c80-bc500fb40d0f",
-      "article_id": "2e117d95-eb4c-4d96-8e3f-b31f18d26a64",
-      "label": "[BERDE GBRS User Guide - Version 2.2.0](https://docs.berdeonline.org/userguide/v2.0.0/berde-nc/)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
+      "created_at": "2026-05-11T21:02:00.000+08:00",
+      "updated_at": "2026-05-11T21:02:00.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+      "raw_pdf_sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+      "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+      "source_locator": "TOA 4 Tropical Architecture refined markdown lines 513-591, 622-660, 840-874, 1386-1420, and raw PDF pages 72, 75-78, 82, 84, 104, 106-110, 163, and 172",
+      "checked_markdown_lines": [
+        "TOA 4 Tropical Architecture refined markdown lines 513-591",
+        "TOA 4 Tropical Architecture refined markdown lines 622-660",
+        "TOA 4 Tropical Architecture refined markdown lines 840-874",
+        "TOA 4 Tropical Architecture refined markdown lines 1386-1420"
+      ],
+      "checked_pdf_pages": "raw PDF pages 71-78, 81-84, 87-90, 92-100, 104, 106-110, 121, 140, 143-148, 151, 163, 172, 180-181, 187, and 194",
+      "local_audit_note": "Primary truth is the local raw PDF family; refined markdown line ranges are locator aids for the checked claims."
     }
-  ]
+  ],
+  "sources_hash": "sha256:11afa5f92097d19463041c874809068a6d9663d2cf64dee099f733008591e5ab"
 }

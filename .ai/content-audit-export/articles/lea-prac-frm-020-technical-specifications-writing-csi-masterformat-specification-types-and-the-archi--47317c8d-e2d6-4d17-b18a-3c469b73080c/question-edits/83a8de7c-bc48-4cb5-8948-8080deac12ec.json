@@ -1,0 +1,83 @@
+{
+  "question_id": "83a8de7c-bc48-4cb5-8948-8080deac12ec",
+  "baseline_hash": "sha256:18b5ac08516884eff21e1584e2036425384f872d855754bcdde5d7779ab12f17",
+  "action": "replace",
+  "reason": "source-audited-article-batch-036-local-first: source-safe replacement grounded in local raw PDF/source family evidence; removes unsupported, stale, or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-036",
+  "approved_at": "2026-05-11T12:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-036-local-first",
+    "checked_sources": [
+      {
+        "source_id": "uap-document-301-local",
+        "label": "UAP Document 301 - General Conditions",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "checked_markdown_lines": [
+          "UAP Document 301 refined markdown lines 478-529",
+          "UAP Document 301 refined markdown lines 531-573",
+          "UAP Document 301 refined markdown lines 579-604",
+          "UAP Document 301 refined markdown lines 608-662"
+        ]
+      },
+      {
+        "source_id": "ciap-document-102-local",
+        "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+        "checked_markdown_lines": [
+          "CIAP Document 102 refined markdown lines 180-213",
+          "CIAP Document 102 refined markdown lines 215-258"
+        ]
+      },
+      {
+        "source_id": "ra-9184-government-procurement-irr-local",
+        "label": "RA 9184 Government Procurement IRR",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/RA 9184 IRR - Government Procurement IRR.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9184/RA 9184 IRR - Government Procurement IRR.md",
+        "checked_markdown_lines": [
+          "RA 9184 IRR refined markdown lines 24-50",
+          "RA 9184 IRR refined markdown lines 145-151",
+          "RA 9184 IRR refined markdown lines 167-201"
+        ]
+      },
+      {
+        "source_id": "uap-document-401-402-local",
+        "label": "UAP Document 401-402 - Architect-Owner Agreement",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
+        "checked_markdown_lines": [
+          "UAP Document 401-402 refined markdown lines 45-72",
+          "UAP Document 401-402 refined markdown lines 77-89",
+          "UAP Document 401-402 refined markdown lines 105-119"
+        ]
+      }
+    ],
+    "citation": "RA 9184 IRR, Section 18"
+  },
+  "proposed": {
+    "text": "What does RA 9184 require for goods specifications regarding brand names?",
+    "options": [
+      {
+        "id": "b036-4731-06-a",
+        "text": "They must be based on relevant characteristics or performance requirements; brand-name reference is not allowed"
+      },
+      {
+        "id": "b036-4731-06-b",
+        "text": "They must identify exactly one preferred brand"
+      },
+      {
+        "id": "b036-4731-06-c",
+        "text": "They may be based only on supplier preference"
+      },
+      {
+        "id": "b036-4731-06-d",
+        "text": "They do not need performance requirements"
+      }
+    ],
+    "correct_option_id": "b036-4731-06-a",
+    "rationale": "Correct answer: They must be based on relevant characteristics or performance requirements; brand-name reference is not allowed. This is directly supported by RA 9184 IRR, Section 18.",
+    "explanation": "The source-audited correction uses only the local raw PDF family and locator-checked refined markdown for RA 9184 IRR, Section 18.",
+    "code_citation": "RA 9184 IRR, Section 18"
+  }
+}

@@ -1,0 +1,732 @@
+{
+  "batch_id": "source-audited-article-batch-063-local-first",
+  "batch_number": 63,
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "generated_at": "2026-05-11T22:07:00.000+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "mode": "local-first content audit only",
+  "supabase_push_attempted": false,
+  "deploy_attempted": false,
+  "commit_attempted": false,
+  "selection_rule": "corrected five unpassed LEA public-assembly/occupancy/code/design clusters with linked questions and local raw source families; duplicate candidates from the first Batch 063 checkpoint were superseded before article/question edits",
+  "inherited_blocker_status": "Batch 062 blockers=0",
+  "completed_articles": [
+    {
+      "article_id": "20ac90a7-f0e9-49cf-9459-86353d538af9",
+      "slug": "lea-dsgn-005-13-core-concept",
+      "title": "Fire stations",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 3,
+      "normalized_hash": "sha256:ee58bd853805f637e3c3fd8e9a841b8a32ccc7d6a8aa391d8919faaaacf18b29",
+      "candidate_hash": "sha256:ee58bd853805f637e3c3fd8e9a841b8a32ccc7d6a8aa391d8919faaaacf18b29",
+      "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "sources_hash": "sha256:142e5d6a2dadea7f0b4e24e5d1175864b9fb25c8cb6e722a0423e06b0edd9a3a",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/ui-blocks.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/ui-block-edits.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/parser-errors.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/compose-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/diff-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/diff-report.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/ui-block-edit-validation.json"
+      ],
+      "question_edit_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/question-edits/1a5b8a57-4d2a-4123-bd59-4d671103f4d6.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/question-edits/28c78930-692a-41bd-a3c6-6e4d910f32a4.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/question-edits/2ed6e050-80a3-4b9d-88c5-93183b657142.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/question-edits/6d6aed54-61d9-4d27-b048-5bdc0e54dd0f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/question-edits/8032806e-bb5a-439f-8076-4a839a599bc4.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/question-edits/890824e7-92bb-4124-908e-d1b5042c996c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/question-edits/a06f51ac-bcd4-48fe-8240-9bd6c41a87b8.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/question-edits/c75167c2-77c3-4ecf-8e9d-491613d6765e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/question-edits/c9075134-1804-44ad-8313-0134b8d7b313.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/question-edits/ea95d847-aef2-4c91-86d9-0fc00c0b8a07.json"
+      ],
+      "scenario_enrichment_status": "eligible-deferred",
+      "validation": {
+        "compose_blockers": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "bundle_validate_valid": true,
+        "bundle_validate_blockers": [],
+        "ui_block_edit_blockers": 0
+      }
+    },
+    {
+      "article_id": "e64d9b46-f873-4371-95d2-1c2784d7ebfc",
+      "slug": "lea-dsgn-005-06-core-concept",
+      "title": "Religious buildings (churches, chapels, mosques, temples)",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 3,
+      "normalized_hash": "sha256:45110ede1d3e4fe7f0b7dfda40508c9f0fbca9883d520d5bba84c859a0f73538",
+      "candidate_hash": "sha256:45110ede1d3e4fe7f0b7dfda40508c9f0fbca9883d520d5bba84c859a0f73538",
+      "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "sources_hash": "sha256:142e5d6a2dadea7f0b4e24e5d1175864b9fb25c8cb6e722a0423e06b0edd9a3a",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/ui-blocks.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/ui-block-edits.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/parser-errors.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/compose-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/diff-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/diff-report.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/ui-block-edit-validation.json"
+      ],
+      "question_edit_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/question-edits/08b28f65-c2fa-44ad-8347-26d7669d78a6.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/question-edits/161b5167-5516-4f8d-af4b-a2601029eff6.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/question-edits/252e9274-4225-4f4e-b8e8-6b4ce2e2c861.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/question-edits/3362bd56-c008-46ab-af53-5c6cb000f9a2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/question-edits/8e256b6b-ac42-4c4e-863d-809ce967ae0a.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/question-edits/96116a55-2cb8-49cf-9ace-63e5589af9fa.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/question-edits/98816dd1-7f50-4cca-9173-5f63d29e0e5f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/question-edits/d5ca5984-9946-4f08-aeed-32c757f46246.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/question-edits/eb8872c7-8590-43dd-acb3-a99548cc6551.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/question-edits/fc61b73b-d8e1-4cb6-98db-c568d2b0638c.json"
+      ],
+      "scenario_enrichment_status": "eligible-deferred",
+      "validation": {
+        "compose_blockers": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "bundle_validate_valid": true,
+        "bundle_validate_blockers": [],
+        "ui_block_edit_blockers": 0
+      }
+    },
+    {
+      "article_id": "ea6d06eb-e659-4092-ad67-14d4956cc4c6",
+      "slug": "lea-dsgn-004-05-core-concept",
+      "title": "Museums and cultural facilities",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 3,
+      "normalized_hash": "sha256:aca16faf857a3439c67dc696e841054d83a4a7faf7ac4b711194947efb8f9554",
+      "candidate_hash": "sha256:aca16faf857a3439c67dc696e841054d83a4a7faf7ac4b711194947efb8f9554",
+      "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "sources_hash": "sha256:142e5d6a2dadea7f0b4e24e5d1175864b9fb25c8cb6e722a0423e06b0edd9a3a",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/ui-blocks.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/ui-block-edits.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/parser-errors.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/compose-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/diff-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/diff-report.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/ui-block-edit-validation.json"
+      ],
+      "question_edit_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/question-edits/01597131-2a97-4a01-99a6-7caa6cbcbd3b.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/question-edits/2037c278-7f67-4dfb-9e53-26a2ab5c3a4f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/question-edits/22890f63-7cf6-465e-97f5-14391be65452.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/question-edits/46cc4ed2-9964-4d1a-9777-6798a7410d00.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/question-edits/552f6056-2871-48a2-870c-6dd412f519a6.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/question-edits/56d33dea-ed9e-48bc-a331-6bac8cf69231.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/question-edits/576558b2-20f3-499f-9207-85507686db83.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/question-edits/7e9c9f02-6699-4b60-8e98-449086541a45.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/question-edits/d83cb31e-d7ce-4ca2-840c-8a6e52c11416.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/question-edits/fda41152-4719-4593-b403-239d26829af9.json"
+      ],
+      "scenario_enrichment_status": "eligible-deferred",
+      "validation": {
+        "compose_blockers": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "bundle_validate_valid": true,
+        "bundle_validate_blockers": [],
+        "ui_block_edit_blockers": 0
+      }
+    },
+    {
+      "article_id": "d4dfe9dc-a807-43db-925e-6992297ce1ff",
+      "slug": "lea-dsgn-004-06-core-concept",
+      "title": "Libraries and archives",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 3,
+      "normalized_hash": "sha256:c6ee356fe600b05050ee3472c23ea0130840c747ec7a5c594d70c757fbbf1a9c",
+      "candidate_hash": "sha256:c6ee356fe600b05050ee3472c23ea0130840c747ec7a5c594d70c757fbbf1a9c",
+      "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "sources_hash": "sha256:142e5d6a2dadea7f0b4e24e5d1175864b9fb25c8cb6e722a0423e06b0edd9a3a",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/ui-blocks.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/ui-block-edits.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/parser-errors.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/compose-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/diff-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/diff-report.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/ui-block-edit-validation.json"
+      ],
+      "question_edit_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/question-edits/203bf119-1164-45f3-8454-b0f17d342800.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/question-edits/2ac6cabd-4309-4117-ab4a-864a332651c9.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/question-edits/58a848db-1e22-46b2-bfce-cbc0b4825639.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/question-edits/6a0d73cd-6a0b-4d9c-8079-9b7d3ddc39e8.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/question-edits/9ad2da53-e02a-429c-9140-33722727c6fe.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/question-edits/a1b364c5-c529-438d-9ae3-1a8455474e1f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/question-edits/a699f6c5-0598-488c-8f86-1f553a113681.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/question-edits/c85b3fde-89cb-4638-bb15-c842ca9de437.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/question-edits/ce3207df-054e-4a37-9e1c-67dd472d387d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/question-edits/cf26855e-b885-4a53-b8fb-03b919d9730c.json"
+      ],
+      "scenario_enrichment_status": "eligible-deferred",
+      "validation": {
+        "compose_blockers": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "bundle_validate_valid": true,
+        "bundle_validate_blockers": [],
+        "ui_block_edit_blockers": 0
+      }
+    },
+    {
+      "article_id": "77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7",
+      "slug": "lea-dsgn-004-07-core-concept",
+      "title": "Theater and performance venue classification",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 3,
+      "normalized_hash": "sha256:ffc69c03874d6f4b716a6d05439fb680155f5428a631283f96d382ed1d2f3ff8",
+      "candidate_hash": "sha256:ffc69c03874d6f4b716a6d05439fb680155f5428a631283f96d382ed1d2f3ff8",
+      "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "sources_hash": "sha256:142e5d6a2dadea7f0b4e24e5d1175864b9fb25c8cb6e722a0423e06b0edd9a3a",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/ui-blocks.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/ui-block-edits.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/parser-errors.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/compose-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/diff-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/diff-report.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/ui-block-edit-validation.json"
+      ],
+      "question_edit_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/question-edits/128cc2f6-34c7-4ea3-8e90-949bcfd6f28d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/question-edits/22b27483-ef13-4a77-85a8-eeee97175c7c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/question-edits/39274749-e023-48c7-b905-89b14c08d6be.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/question-edits/5e6387ca-7a68-49ba-bef7-8c70657bdb8a.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/question-edits/75fea312-1626-484c-87dc-ddb12ee0c17b.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/question-edits/9e709b0b-91f9-4aaa-b3fb-e9603633947b.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/question-edits/ab21400d-6b48-42ce-bce2-9410c981ea8f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/question-edits/c18f456c-739a-4a06-b3c5-3348498df8f8.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/question-edits/c500cf14-7406-4083-aa5b-6b834f5c20b3.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/question-edits/df8369de-f75c-4677-bd80-86b18c739fb5.json"
+      ],
+      "scenario_enrichment_status": "eligible-deferred",
+      "validation": {
+        "compose_blockers": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "bundle_validate_valid": true,
+        "bundle_validate_blockers": [],
+        "ui_block_edit_blockers": 0
+      }
+    }
+  ],
+  "exact_improved_paths": [
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/normalized.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/candidate.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/sources.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/source-audit-evidence.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/article-metadata.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/ui-blocks.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/ui-block-edits.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/parser-errors.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/compose-report.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/diff-report.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/diff-report.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/ui-block-edit-validation.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/normalized.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/candidate.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/sources.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/source-audit-evidence.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/article-metadata.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/ui-blocks.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/ui-block-edits.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/parser-errors.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/compose-report.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/diff-report.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/diff-report.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/ui-block-edit-validation.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/normalized.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/candidate.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/sources.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/source-audit-evidence.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/article-metadata.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/ui-blocks.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/ui-block-edits.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/parser-errors.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/compose-report.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/diff-report.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/diff-report.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/ui-block-edit-validation.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/normalized.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/candidate.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/sources.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/source-audit-evidence.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/article-metadata.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/ui-blocks.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/ui-block-edits.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/parser-errors.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/compose-report.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/diff-report.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/diff-report.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/ui-block-edit-validation.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/normalized.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/candidate.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/sources.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/source-audit-evidence.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/article-metadata.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/ui-blocks.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/ui-block-edits.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/parser-errors.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/compose-report.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/diff-report.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/diff-report.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/ui-block-edit-validation.json"
+  ],
+  "exact_question_edit_paths": [
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/question-edits/1a5b8a57-4d2a-4123-bd59-4d671103f4d6.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/question-edits/28c78930-692a-41bd-a3c6-6e4d910f32a4.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/question-edits/2ed6e050-80a3-4b9d-88c5-93183b657142.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/question-edits/6d6aed54-61d9-4d27-b048-5bdc0e54dd0f.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/question-edits/8032806e-bb5a-439f-8076-4a839a599bc4.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/question-edits/890824e7-92bb-4124-908e-d1b5042c996c.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/question-edits/a06f51ac-bcd4-48fe-8240-9bd6c41a87b8.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/question-edits/c75167c2-77c3-4ecf-8e9d-491613d6765e.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/question-edits/c9075134-1804-44ad-8313-0134b8d7b313.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9/question-edits/ea95d847-aef2-4c91-86d9-0fc00c0b8a07.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/question-edits/08b28f65-c2fa-44ad-8347-26d7669d78a6.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/question-edits/161b5167-5516-4f8d-af4b-a2601029eff6.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/question-edits/252e9274-4225-4f4e-b8e8-6b4ce2e2c861.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/question-edits/3362bd56-c008-46ab-af53-5c6cb000f9a2.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/question-edits/8e256b6b-ac42-4c4e-863d-809ce967ae0a.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/question-edits/96116a55-2cb8-49cf-9ace-63e5589af9fa.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/question-edits/98816dd1-7f50-4cca-9173-5f63d29e0e5f.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/question-edits/d5ca5984-9946-4f08-aeed-32c757f46246.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/question-edits/eb8872c7-8590-43dd-acb3-a99548cc6551.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc/question-edits/fc61b73b-d8e1-4cb6-98db-c568d2b0638c.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/question-edits/01597131-2a97-4a01-99a6-7caa6cbcbd3b.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/question-edits/2037c278-7f67-4dfb-9e53-26a2ab5c3a4f.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/question-edits/22890f63-7cf6-465e-97f5-14391be65452.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/question-edits/46cc4ed2-9964-4d1a-9777-6798a7410d00.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/question-edits/552f6056-2871-48a2-870c-6dd412f519a6.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/question-edits/56d33dea-ed9e-48bc-a331-6bac8cf69231.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/question-edits/576558b2-20f3-499f-9207-85507686db83.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/question-edits/7e9c9f02-6699-4b60-8e98-449086541a45.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/question-edits/d83cb31e-d7ce-4ca2-840c-8a6e52c11416.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6/question-edits/fda41152-4719-4593-b403-239d26829af9.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/question-edits/203bf119-1164-45f3-8454-b0f17d342800.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/question-edits/2ac6cabd-4309-4117-ab4a-864a332651c9.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/question-edits/58a848db-1e22-46b2-bfce-cbc0b4825639.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/question-edits/6a0d73cd-6a0b-4d9c-8079-9b7d3ddc39e8.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/question-edits/9ad2da53-e02a-429c-9140-33722727c6fe.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/question-edits/a1b364c5-c529-438d-9ae3-1a8455474e1f.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/question-edits/a699f6c5-0598-488c-8f86-1f553a113681.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/question-edits/c85b3fde-89cb-4638-bb15-c842ca9de437.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/question-edits/ce3207df-054e-4a37-9e1c-67dd472d387d.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff/question-edits/cf26855e-b885-4a53-b8fb-03b919d9730c.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/question-edits/128cc2f6-34c7-4ea3-8e90-949bcfd6f28d.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/question-edits/22b27483-ef13-4a77-85a8-eeee97175c7c.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/question-edits/39274749-e023-48c7-b905-89b14c08d6be.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/question-edits/5e6387ca-7a68-49ba-bef7-8c70657bdb8a.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/question-edits/75fea312-1626-484c-87dc-ddb12ee0c17b.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/question-edits/9e709b0b-91f9-4aaa-b3fb-e9603633947b.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/question-edits/ab21400d-6b48-42ce-bce2-9410c981ea8f.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/question-edits/c18f456c-739a-4a06-b3c5-3348498df8f8.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/question-edits/c500cf14-7406-4083-aa5b-6b834f5c20b3.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7/question-edits/df8369de-f75c-4677-bd80-86b18c739fb5.json"
+  ],
+  "counts": {
+    "selected_articles": 5,
+    "linked_questions": 50,
+    "question_edits": 50,
+    "source_rows": 15,
+    "unique_raw_pdfs": 3,
+    "json_parse": 105,
+    "marker_scan_files": 105,
+    "marker_matches": 0,
+    "source_hash_checks": 30,
+    "candidate_hash_checks": 5,
+    "stale_compose_error_files": 0,
+    "targeted_tests": 34,
+    "targeted_expect_calls": 328,
+    "unresolved_blockers": 0
+  },
+  "source_evidence": {
+    "unique_raw_sources": [
+      {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1141 and 1193-1272; raw PDF pages 47-70 checked for matching occupancy text"
+      },
+      {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "source_locator": "RA 9514 RIRR refined markdown lines 1463-1544, 2266-2313, 2515-2532, 2665-2728, 3982-4210, and 4273-4360; raw PDF pages 66, 84, 91, 134, and 138 checked for matching text"
+      },
+      {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf",
+        "raw_pdf_sha256": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+        "source_locator": "PD 9514 Fire Code refined markdown lines 1599-1629; raw PDF pages 57-58 checked for matching life-safety text"
+      }
+    ],
+    "source_rows": [
+      {
+        "article_id": "20ac90a7-f0e9-49cf-9459-86353d538af9",
+        "source_id": "pd1096-rirr-2004-occupancy-classification-dpwh-local-b063",
+        "label": "PD 1096 RIRR 2004 - occupancy classification and public-use matrices",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1141 and 1193-1272; raw PDF pages 47-70 checked for matching occupancy text",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR DPWH Official refined markdown lines 1088-1141",
+          "PD 1096 RIRR DPWH Official refined markdown lines 1193-1272"
+        ],
+        "checked_raw_pdf_pages": [
+          "PD 1096 RIRR DPWH Official raw PDF pages 47-70"
+        ]
+      },
+      {
+        "article_id": "20ac90a7-f0e9-49cf-9459-86353d538af9",
+        "source_id": "ra9514-rirr-2019-fire-life-safety-local-b063",
+        "label": "RA 9514 Revised IRR 2019 - classification, means of egress, and assembly fire-safety rules",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 RIRR refined markdown lines 1463-1544, 2266-2313, 2515-2532, 2665-2728, 3982-4210, and 4273-4360; raw PDF pages 66, 84, 91, 134, and 138 checked for matching text",
+        "checked_markdown_lines": [
+          "RA 9514 RIRR refined markdown lines 1463-1544",
+          "RA 9514 RIRR refined markdown lines 2266-2313",
+          "RA 9514 RIRR refined markdown lines 2515-2532",
+          "RA 9514 RIRR refined markdown lines 2665-2728",
+          "RA 9514 RIRR refined markdown lines 3982-4210",
+          "RA 9514 RIRR refined markdown lines 4273-4360"
+        ],
+        "checked_raw_pdf_pages": [
+          "RA 9514 RIRR raw PDF pages 66, 84, 91, 134, and 138"
+        ]
+      },
+      {
+        "article_id": "20ac90a7-f0e9-49cf-9459-86353d538af9",
+        "source_id": "pd9514-fire-code-life-safety-local-b063",
+        "label": "Fire Code source family - life-safety and egress general requirements",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf",
+        "raw_pdf_sha256": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-9514/PD 9514 - Fire Code of the Philippines.md",
+        "refined_markdown_sha256": "sha256:5eb0584f1bcbfa87044e28f2e59a75c6364c7160a98edfdd888c6aef849b01b2",
+        "source_locator": "PD 9514 Fire Code refined markdown lines 1599-1629; raw PDF pages 57-58 checked for matching life-safety text",
+        "checked_markdown_lines": [
+          "PD 9514 Fire Code refined markdown lines 1599-1629"
+        ],
+        "checked_raw_pdf_pages": [
+          "PD 9514 Fire Code raw PDF pages 57-58"
+        ]
+      },
+      {
+        "article_id": "e64d9b46-f873-4371-95d2-1c2784d7ebfc",
+        "source_id": "pd1096-rirr-2004-occupancy-classification-dpwh-local-b063",
+        "label": "PD 1096 RIRR 2004 - occupancy classification and public-use matrices",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1141 and 1193-1272; raw PDF pages 47-70 checked for matching occupancy text",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR DPWH Official refined markdown lines 1088-1141",
+          "PD 1096 RIRR DPWH Official refined markdown lines 1193-1272"
+        ],
+        "checked_raw_pdf_pages": [
+          "PD 1096 RIRR DPWH Official raw PDF pages 47-70"
+        ]
+      },
+      {
+        "article_id": "e64d9b46-f873-4371-95d2-1c2784d7ebfc",
+        "source_id": "ra9514-rirr-2019-fire-life-safety-local-b063",
+        "label": "RA 9514 Revised IRR 2019 - classification, means of egress, and assembly fire-safety rules",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 RIRR refined markdown lines 1463-1544, 2266-2313, 2515-2532, 2665-2728, 3982-4210, and 4273-4360; raw PDF pages 66, 84, 91, 134, and 138 checked for matching text",
+        "checked_markdown_lines": [
+          "RA 9514 RIRR refined markdown lines 1463-1544",
+          "RA 9514 RIRR refined markdown lines 2266-2313",
+          "RA 9514 RIRR refined markdown lines 2515-2532",
+          "RA 9514 RIRR refined markdown lines 2665-2728",
+          "RA 9514 RIRR refined markdown lines 3982-4210",
+          "RA 9514 RIRR refined markdown lines 4273-4360"
+        ],
+        "checked_raw_pdf_pages": [
+          "RA 9514 RIRR raw PDF pages 66, 84, 91, 134, and 138"
+        ]
+      },
+      {
+        "article_id": "e64d9b46-f873-4371-95d2-1c2784d7ebfc",
+        "source_id": "pd9514-fire-code-life-safety-local-b063",
+        "label": "Fire Code source family - life-safety and egress general requirements",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf",
+        "raw_pdf_sha256": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-9514/PD 9514 - Fire Code of the Philippines.md",
+        "refined_markdown_sha256": "sha256:5eb0584f1bcbfa87044e28f2e59a75c6364c7160a98edfdd888c6aef849b01b2",
+        "source_locator": "PD 9514 Fire Code refined markdown lines 1599-1629; raw PDF pages 57-58 checked for matching life-safety text",
+        "checked_markdown_lines": [
+          "PD 9514 Fire Code refined markdown lines 1599-1629"
+        ],
+        "checked_raw_pdf_pages": [
+          "PD 9514 Fire Code raw PDF pages 57-58"
+        ]
+      },
+      {
+        "article_id": "ea6d06eb-e659-4092-ad67-14d4956cc4c6",
+        "source_id": "pd1096-rirr-2004-occupancy-classification-dpwh-local-b063",
+        "label": "PD 1096 RIRR 2004 - occupancy classification and public-use matrices",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1141 and 1193-1272; raw PDF pages 47-70 checked for matching occupancy text",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR DPWH Official refined markdown lines 1088-1141",
+          "PD 1096 RIRR DPWH Official refined markdown lines 1193-1272"
+        ],
+        "checked_raw_pdf_pages": [
+          "PD 1096 RIRR DPWH Official raw PDF pages 47-70"
+        ]
+      },
+      {
+        "article_id": "ea6d06eb-e659-4092-ad67-14d4956cc4c6",
+        "source_id": "ra9514-rirr-2019-fire-life-safety-local-b063",
+        "label": "RA 9514 Revised IRR 2019 - classification, means of egress, and assembly fire-safety rules",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 RIRR refined markdown lines 1463-1544, 2266-2313, 2515-2532, 2665-2728, 3982-4210, and 4273-4360; raw PDF pages 66, 84, 91, 134, and 138 checked for matching text",
+        "checked_markdown_lines": [
+          "RA 9514 RIRR refined markdown lines 1463-1544",
+          "RA 9514 RIRR refined markdown lines 2266-2313",
+          "RA 9514 RIRR refined markdown lines 2515-2532",
+          "RA 9514 RIRR refined markdown lines 2665-2728",
+          "RA 9514 RIRR refined markdown lines 3982-4210",
+          "RA 9514 RIRR refined markdown lines 4273-4360"
+        ],
+        "checked_raw_pdf_pages": [
+          "RA 9514 RIRR raw PDF pages 66, 84, 91, 134, and 138"
+        ]
+      },
+      {
+        "article_id": "ea6d06eb-e659-4092-ad67-14d4956cc4c6",
+        "source_id": "pd9514-fire-code-life-safety-local-b063",
+        "label": "Fire Code source family - life-safety and egress general requirements",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf",
+        "raw_pdf_sha256": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-9514/PD 9514 - Fire Code of the Philippines.md",
+        "refined_markdown_sha256": "sha256:5eb0584f1bcbfa87044e28f2e59a75c6364c7160a98edfdd888c6aef849b01b2",
+        "source_locator": "PD 9514 Fire Code refined markdown lines 1599-1629; raw PDF pages 57-58 checked for matching life-safety text",
+        "checked_markdown_lines": [
+          "PD 9514 Fire Code refined markdown lines 1599-1629"
+        ],
+        "checked_raw_pdf_pages": [
+          "PD 9514 Fire Code raw PDF pages 57-58"
+        ]
+      },
+      {
+        "article_id": "d4dfe9dc-a807-43db-925e-6992297ce1ff",
+        "source_id": "pd1096-rirr-2004-occupancy-classification-dpwh-local-b063",
+        "label": "PD 1096 RIRR 2004 - occupancy classification and public-use matrices",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1141 and 1193-1272; raw PDF pages 47-70 checked for matching occupancy text",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR DPWH Official refined markdown lines 1088-1141",
+          "PD 1096 RIRR DPWH Official refined markdown lines 1193-1272"
+        ],
+        "checked_raw_pdf_pages": [
+          "PD 1096 RIRR DPWH Official raw PDF pages 47-70"
+        ]
+      },
+      {
+        "article_id": "d4dfe9dc-a807-43db-925e-6992297ce1ff",
+        "source_id": "ra9514-rirr-2019-fire-life-safety-local-b063",
+        "label": "RA 9514 Revised IRR 2019 - classification, means of egress, and assembly fire-safety rules",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 RIRR refined markdown lines 1463-1544, 2266-2313, 2515-2532, 2665-2728, 3982-4210, and 4273-4360; raw PDF pages 66, 84, 91, 134, and 138 checked for matching text",
+        "checked_markdown_lines": [
+          "RA 9514 RIRR refined markdown lines 1463-1544",
+          "RA 9514 RIRR refined markdown lines 2266-2313",
+          "RA 9514 RIRR refined markdown lines 2515-2532",
+          "RA 9514 RIRR refined markdown lines 2665-2728",
+          "RA 9514 RIRR refined markdown lines 3982-4210",
+          "RA 9514 RIRR refined markdown lines 4273-4360"
+        ],
+        "checked_raw_pdf_pages": [
+          "RA 9514 RIRR raw PDF pages 66, 84, 91, 134, and 138"
+        ]
+      },
+      {
+        "article_id": "d4dfe9dc-a807-43db-925e-6992297ce1ff",
+        "source_id": "pd9514-fire-code-life-safety-local-b063",
+        "label": "Fire Code source family - life-safety and egress general requirements",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf",
+        "raw_pdf_sha256": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-9514/PD 9514 - Fire Code of the Philippines.md",
+        "refined_markdown_sha256": "sha256:5eb0584f1bcbfa87044e28f2e59a75c6364c7160a98edfdd888c6aef849b01b2",
+        "source_locator": "PD 9514 Fire Code refined markdown lines 1599-1629; raw PDF pages 57-58 checked for matching life-safety text",
+        "checked_markdown_lines": [
+          "PD 9514 Fire Code refined markdown lines 1599-1629"
+        ],
+        "checked_raw_pdf_pages": [
+          "PD 9514 Fire Code raw PDF pages 57-58"
+        ]
+      },
+      {
+        "article_id": "77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7",
+        "source_id": "pd1096-rirr-2004-occupancy-classification-dpwh-local-b063",
+        "label": "PD 1096 RIRR 2004 - occupancy classification and public-use matrices",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1141 and 1193-1272; raw PDF pages 47-70 checked for matching occupancy text",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR DPWH Official refined markdown lines 1088-1141",
+          "PD 1096 RIRR DPWH Official refined markdown lines 1193-1272"
+        ],
+        "checked_raw_pdf_pages": [
+          "PD 1096 RIRR DPWH Official raw PDF pages 47-70"
+        ]
+      },
+      {
+        "article_id": "77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7",
+        "source_id": "ra9514-rirr-2019-fire-life-safety-local-b063",
+        "label": "RA 9514 Revised IRR 2019 - classification, means of egress, and assembly fire-safety rules",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 RIRR refined markdown lines 1463-1544, 2266-2313, 2515-2532, 2665-2728, 3982-4210, and 4273-4360; raw PDF pages 66, 84, 91, 134, and 138 checked for matching text",
+        "checked_markdown_lines": [
+          "RA 9514 RIRR refined markdown lines 1463-1544",
+          "RA 9514 RIRR refined markdown lines 2266-2313",
+          "RA 9514 RIRR refined markdown lines 2515-2532",
+          "RA 9514 RIRR refined markdown lines 2665-2728",
+          "RA 9514 RIRR refined markdown lines 3982-4210",
+          "RA 9514 RIRR refined markdown lines 4273-4360"
+        ],
+        "checked_raw_pdf_pages": [
+          "RA 9514 RIRR raw PDF pages 66, 84, 91, 134, and 138"
+        ]
+      },
+      {
+        "article_id": "77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7",
+        "source_id": "pd9514-fire-code-life-safety-local-b063",
+        "label": "Fire Code source family - life-safety and egress general requirements",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf",
+        "raw_pdf_sha256": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-9514/PD 9514 - Fire Code of the Philippines.md",
+        "refined_markdown_sha256": "sha256:5eb0584f1bcbfa87044e28f2e59a75c6364c7160a98edfdd888c6aef849b01b2",
+        "source_locator": "PD 9514 Fire Code refined markdown lines 1599-1629; raw PDF pages 57-58 checked for matching life-safety text",
+        "checked_markdown_lines": [
+          "PD 9514 Fire Code refined markdown lines 1599-1629"
+        ],
+        "checked_raw_pdf_pages": [
+          "PD 9514 Fire Code raw PDF pages 57-58"
+        ]
+      }
+    ]
+  },
+  "quality_protocol_results": {
+    "compose": {
+      "command": "bun run content-audit:compose -- --article-id <Batch 063 id> --overwrite --strict",
+      "result": "PASS 5/5 changed candidates blockers=0"
+    },
+    "diff": {
+      "command": "bun run content-audit:diff -- --article-id <Batch 063 id> --summary --strict",
+      "result": "PASS 5/5 changed=true safe_to_push=true blockers=0"
+    },
+    "validate": {
+      "command": "bun run content-audit:validate -- --article-id <Batch 063 id> --summary",
+      "result": "PASS 5/5 valid=true blockers=0; only expected component-usage warnings"
+    },
+    "ui_block_edits": {
+      "command": "bun run content-audit:ui-block-edits -- --article-id <Batch 063 id> --summary",
+      "result": "PASS 5/5 blockers=0 warnings=0"
+    },
+    "scoped_checks": {
+      "path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-063-local-first-scoped-checks.json",
+      "result": "PASS json parse, marker scan, source hash checks, candidate evidence hash checks, question-edit counts, and stale compose-error scan"
+    },
+    "targeted_tests": {
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "result": "PASS 34 pass, 0 fail, 328 expect calls"
+    },
+    "scoped_diff_check": {
+      "command": "git diff --check -- <Batch 063 scoped paths>",
+      "result": "PASS"
+    }
+  },
+  "unresolved_blockers": [],
+  "next_batch_readiness": {
+    "ready": true,
+    "next_batch_number": 64,
+    "selection_note": "Exclude Batch 001 through Batch 063 completed article IDs; continue local-first with high-value non-duplicate local-PDF-backed clusters."
+  },
+  "final_scoped_diff_check": {
+    "status": "PASS",
+    "checked_at": "2026-05-11T22:09:00.000+08:00",
+    "command": "git diff --check -- .ai/03_plans/source-audited-local-first-batches-handoff.md .ai/content-audit-export/source-audited-article-batch-063-local-first-* .ai/content-audit-export/sync-state.json <Batch 063 article folders>"
+  }
+}

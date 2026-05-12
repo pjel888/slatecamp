@@ -1,0 +1,24 @@
+{
+  "question_id": "43c9869f-554c-4995-aa6c-da3498a8bafb",
+  "baseline_hash": "sha256:996ed4dd355e7db23fe1e423825ac172c8fb85cf0892d151e791592408cda960",
+  "reason": "Batch 012 local source audit aligned linked question 43c9869f-554c-4995-aa6c-da3498a8bafb with the repaired SPP Doc 203: Specialized Architectural Services article and checked raw-source citations. This local draft updates citation and explanation context only and does not change answer-key fields.",
+  "approved_by": "codex-local-source-audit-batch-012",
+  "approved_at": "2026-05-10T20:40:00.000+08:00",
+  "source_audit_support": {
+    "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+    "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+    "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
+    "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
+    "source_locator": "SPP Document 203 introduction",
+    "checked_markdown_lines": [
+      "UAP SPP raw markdown lines 637-638"
+    ],
+    "parent_article_id": "9a800f21-b26e-4e3e-94c8-2f4127eccd42",
+    "parent_article_slug": "spp-doc-203-specialized-architectural-services",
+    "answer_key_fields_changed": false
+  },
+  "proposed": {
+    "code_citation": "SPP Document 203 introduction",
+    "explanation": "For SPP 203, the Architect means the Consulting Architect who may hold a Specialist Certificate issued by the Board and/or the Commission upon qualification or IAPoA accreditation."
+  }
+}

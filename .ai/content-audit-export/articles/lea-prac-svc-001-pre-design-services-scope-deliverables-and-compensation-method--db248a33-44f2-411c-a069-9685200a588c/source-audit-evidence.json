@@ -1,0 +1,59 @@
+{
+  "batch_id": "source-audited-article-batch-021-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T10:30:00.000+08:00",
+  "article_id": "db248a33-44f2-411c-a069-9685200a588c",
+  "slug": "lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method",
+  "title": "Pre Design Services Scope Deliverables and Compensation Method",
+  "status": "local_pass_ready_for_final_publishing_review",
+  "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c",
+  "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c/question-edits",
+  "linked_questions": 10,
+  "question_edits_created": 10,
+  "source_safe_rewrite_question_edits": 10,
+  "source_audit": {
+    "checked_sources": [
+      {
+        "source_id": "spp-201-predesign-services-local-raw-pdf",
+        "label": "UAP SPP Document 201 - Pre-Design Services",
+        "authority": "United Architects of the Philippines source conversion",
+        "source_type": "professional_practice_pdf",
+        "source_locator": "SPP 201 refined markdown lines 245-255, 268-415, and 425-447",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+        "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+        "refined_markdown_sha256": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
+        "checked_markdown_lines": [
+          "SPP 201 refined markdown lines 245-255",
+          "SPP 201 refined markdown lines 268-415",
+          "SPP 201 refined markdown lines 425-447"
+        ],
+        "use": "primary local source for pre-design services scope and compensation repair",
+        "local_source_checked": true
+      }
+    ],
+    "source_locator": "UAP SPP Document 201 local raw PDF and refined markdown, pre-design scope and compensation provisions",
+    "checked_markdown_lines": [
+      "SPP 201 refined markdown lines 245-255",
+      "SPP 201 refined markdown lines 268-415",
+      "SPP 201 refined markdown lines 425-447"
+    ]
+  },
+  "local_repairs": {
+    "normalized_rewritten": true,
+    "candidate_recomposed": true,
+    "placeholders_removed": true,
+    "source_records_created": 1,
+    "question_edits_created": 10,
+    "source_safe_rewrite_question_edits": 10,
+    "non_source_claims_removed_or_rewritten": true
+  },
+  "validation": {
+    "compose_blockers": [],
+    "diff_safe_to_push": true,
+    "diff_blockers": [],
+    "validate_valid": true,
+    "validate_blockers": []
+  },
+  "blockers": []
+}

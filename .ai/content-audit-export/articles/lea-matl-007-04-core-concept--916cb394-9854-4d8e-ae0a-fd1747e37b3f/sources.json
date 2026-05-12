@@ -1,44 +1,32 @@
 {
   "article_id": "916cb394-9854-4d8e-ae0a-fd1747e37b3f",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:df614c72c41c31d394857a6ca0c0a26e206d3bd1fdd2e98cb240903cdbd5646e",
-  "source_count": 3,
+  "sources_hash": "sha256:747cb3267ccfd86a99a5f67c2ec20cd8a421b99355476b9ee71a1644a85bcd97",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "283695e4-1fc3-4bdd-98da-b0aa26ede681",
+      "source_id": "salvan-building-materials-b077",
       "article_id": "916cb394-9854-4d8e-ae0a-fd1747e37b3f",
-      "label": "Standards cited: ASTM D3960 (VOC measurement), ASTM D3359 (adhesion), ASTM D3276 (surface prep), ASTM E119 (fire-rating testing)",
+      "label": "George Salvan Architectural Building Materials",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "primary_building_materials_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-077-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf; raw_pdf_sha256=sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md; refined_markdown_sha256=sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42; checked_locator=Salvan refined markdown lines 2676-2854, 2874-3025, 3070-3470, 4332-4468, 5919-5948, and 13397-13417; raw PDF pages 92-96, 99-102, 107-115, 145-146, and 361 checked by local PyMuPDF extraction",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:00.685475+00:00",
-      "updated_at": "2026-03-24T04:34:00.685475+00:00"
+      "created_at": "2026-05-12T04:10:00.000+08:00",
+      "updated_at": "2026-05-12T04:10:00.000+08:00"
     },
     {
-      "source_id": "0cce3e30-9b38-4629-bbf6-31961c24b0da",
+      "source_id": "bci-5e-b077",
       "article_id": "916cb394-9854-4d8e-ae0a-fd1747e37b3f",
-      "label": "Philippine context: Boysen (Pacific Paint), Davies, Island Paints product lines and VOC formulations",
+      "label": "Building Construction Illustrated, 5th Edition",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "primary_building_construction_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-077-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf; raw_pdf_sha256=sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md; refined_markdown_sha256=sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a; checked_locator=BCI refined markdown lines 695-710, 1493-1498, 2469-2492, 6412-6454, 7990-8012, 9073-9223, 9286-9335, and 9490-9558; raw PDF pages 30, 92, 197, 225, 264-265, and 274 checked by local PyMuPDF extraction",
+      "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:00.685475+00:00",
-      "updated_at": "2026-03-24T04:34:00.685475+00:00"
-    },
-    {
-      "source_id": "5f3e5087-e76c-4e24-9e8b-6eb3cd86d301",
-      "article_id": "916cb394-9854-4d8e-ae0a-fd1747e37b3f",
-      "label": "Fire rating: intumescent paint per PBCode high-rise requirements",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:34:00.685475+00:00",
-      "updated_at": "2026-03-24T04:34:00.685475+00:00"
+      "created_at": "2026-05-12T04:10:00.000+08:00",
+      "updated_at": "2026-05-12T04:10:00.000+08:00"
     }
   ]
 }

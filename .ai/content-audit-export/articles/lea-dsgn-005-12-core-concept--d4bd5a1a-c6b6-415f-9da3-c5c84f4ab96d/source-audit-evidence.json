@@ -1,0 +1,83 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-071-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T01:00:34+08:00",
+  "target": {
+    "article_id": "d4bd5a1a-c6b6-415f-9da3-c5c84f4ab96d",
+    "slug": "lea-dsgn-005-12-core-concept",
+    "title": "Adaptive Reuse Design",
+    "article_folder": ".ai/content-audit-export/articles/lea-dsgn-005-12-core-concept--d4bd5a1a-c6b6-415f-9da3-c5c84f4ab96d",
+    "normalized_sha256": "sha256:9d0c468a7b149c6cfddb2fc66ec31edaaaec105607cdaf28e1b2c0c9fabc7f11",
+    "candidate_sha256": "sha256:9d0c468a7b149c6cfddb2fc66ec31edaaaec105607cdaf28e1b2c0c9fabc7f11",
+    "candidate_path": ".ai/content-audit-export/articles/lea-dsgn-005-12-core-concept--d4bd5a1a-c6b6-415f-9da3-c5c84f4ab96d/candidate.md"
+  },
+  "classification": {
+    "topic_family": "heritage_adaptive_reuse_code",
+    "local_first_batch": "071",
+    "source_sensitivity": "heritage_law_building_code_accessibility",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdfs_checked_first": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "local_pdf_extraction_method": "python_pymupdf_local",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "ra10066-cultural-heritage-act-b071",
+      "label": "RA 10066 - National Cultural Heritage Act of 2009",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-10066/ra 10066.pdf",
+      "sha256": "sha256:98aefeeecfc07c329eac6e9ff9b784bf94e22c319dc2987d51ded09343b2bd95",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-10066/ra 10066.md",
+      "refined_markdown_sha256": "sha256:9dd244f4545b120ea56288340cb426236781e873a7ad9139779f0971e08b220c",
+      "locator": "RA 10066 refined markdown lines 95-99, 177-196, 257-293, 386-393, and 603"
+    },
+    {
+      "source_id": "pd1096-rirr-2004-b071",
+      "label": "PD 1096 2004 Revised IRR - National Building Code",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "locator": "PD 1096 refined markdown lines 75-80, 112, 337-340, 562-626, 1088-1120, 1174-1212, 1629-1631, 2246-2279, 4190, and 6113-6201"
+    },
+    {
+      "source_id": "bp344-accessibility-appendix-b071",
+      "label": "BP 344 accessibility provisions as reproduced in the PD 1096 official appendix",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "locator": "PD 1096 official appendix accessibility text refined markdown lines 6113-6152 and 6170-6201"
+    }
+  ],
+  "claims": [
+    "Adaptive reuse claims are restricted to RA 10066 heritage protection, PD 1096 conversion/occupancy, and checked accessibility dimensions.",
+    "Variance shortcuts and unverified agency claims were replaced with cultural-agency and Building Official coordination language."
+  ],
+  "unverified_or_rejected_claims": [],
+  "scenario_enrichment": {
+    "policy_status": "pending",
+    "eligibility_status": "eligible-deferred",
+    "blocker_status": "nonblocking",
+    "note": "No Real World Scenario section was added; source correctness and question safety remained the blocking criteria."
+  },
+  "sme_review": {
+    "status": "local_agent_source_audited",
+    "reviewer": "codex-local-first-batch-071"
+  }
+}

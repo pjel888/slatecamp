@@ -1,0 +1,57 @@
+{
+  "question_id": "5d7dcf73-5a13-4bad-a3dd-881b31da706f",
+  "baseline_hash": "sha256:244ae5deb0617dda2df499fb6c60c9fa9c60921730339d755dd8ed0a63e13595",
+  "action": "replace",
+  "reason": "source-audited-article-batch-059-local-first: local raw PDF backed replacement constrained to checked Batch 059 TOA 4 Tropical Architecture source family.",
+  "approved_by": "codex-local-first-batch-059",
+  "approved_at": "2026-05-11T20:48:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "8a812be4-c5c0-40ec-a3ff-74acb39e24bc",
+    "parent_article_slug": "lea-theo-004-08-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "TOA 4 Tropical Architecture refined markdown lines 708-810, 1201-1247, and raw PDF pages 90, 92-100, 121, 140, and 143-148",
+    "checked_markdown_lines": [
+      "TOA 4 Tropical Architecture refined markdown lines 708-810",
+      "TOA 4 Tropical Architecture refined markdown lines 1201-1247"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "toa4-tropical-architecture-local-raw-pdf--b059-8a812be4-01",
+        "label": "TOA 4 Tropical Architecture - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+        "sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+        "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+        "locator": "TOA 4 Tropical Architecture refined markdown lines 708-810, 1201-1247, and raw PDF pages 90, 92-100, 121, 140, and 143-148"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 059 checked local raw PDF source scope."
+  },
+  "proposed": {
+    "text": "Why are eaves and awnings part of the solar geometry answer?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Their width controls how much sun is admitted or blocked at different times."
+      },
+      {
+        "id": "b",
+        "text": "They are only decorative trim."
+      },
+      {
+        "id": "c",
+        "text": "They replace the need to orient the building."
+      },
+      {
+        "id": "d",
+        "text": "They increase glare by default."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Their width controls how much sun is admitted or blocked at different times. This answer is supported by the checked Batch 059 local TOA 4 Tropical Architecture raw PDF source family for Solar Geometry Fundamentals.",
+    "explanation": "Their width controls how much sun is admitted or blocked at different times. The Batch 059 source audit used the local raw PDF first and refined markdown only as locator evidence for Solar Geometry Fundamentals.",
+    "code_citation": "TOA 4 Tropical Architecture refined markdown lines 708-810, 1201-1247, and raw PDF pages 90, 92-100, 121, 140, and 143-148"
+  },
+  "batch_question_template_index": 7
+}

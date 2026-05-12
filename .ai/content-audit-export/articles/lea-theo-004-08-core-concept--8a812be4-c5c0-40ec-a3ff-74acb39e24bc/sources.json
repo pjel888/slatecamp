@@ -1,56 +1,33 @@
 {
   "article_id": "8a812be4-c5c0-40ec-a3ff-74acb39e24bc",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:2c3321c67371d52ff07ea1274f2857ca8f60e4e508e86b1e7c76ee727cd07175",
-  "source_count": 4,
+  "source_count": 1,
   "sources": [
     {
-      "source_id": "a6588159-52e0-4157-b8b9-cf5e7cff1c63",
+      "source_id": "toa4-tropical-architecture-local-raw-pdf--b059-8a812be4-01",
       "article_id": "8a812be4-c5c0-40ec-a3ff-74acb39e24bc",
-      "label": "[SolarNRG - House Orientation in the Philippines](https://solarnrg.ph/blog/house-orientation-philippines/) [Note: This source addresses solar panel orientation",
+      "label": "TOA 4 Tropical Architecture - local raw PDF",
       "url": null,
-      "source_type": "reference_standard",
-      "description": "building thermal design orientation differs in tropical climates.]",
-      "is_verified": false,
+      "source_type": "local_raw_pdf",
+      "description": "TOA 4 Tropical Architecture - local raw PDF; local raw PDF checked first; refined markdown used only as locator. TOA 4 Tropical Architecture refined markdown lines 708-810, 1201-1247, and raw PDF pages 90, 92-100, 121, 140, and 143-148.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:02.295633+00:00",
-      "updated_at": "2026-03-24T04:34:02.295633+00:00"
-    },
-    {
-      "source_id": "23c65580-6d20-47cf-8a36-04c2364f0d59",
-      "article_id": "8a812be4-c5c0-40ec-a3ff-74acb39e24bc",
-      "label": "[Optimal Tilt of Solar Panels in the Philippines - Schadow1 Expeditions](https://www.s1expeditions.com/2015/02/179-solar-panels-optimal-tilt-philippines.html)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 1,
-      "created_at": "2026-03-24T04:34:02.295633+00:00",
-      "updated_at": "2026-03-24T04:34:02.295633+00:00"
-    },
-    {
-      "source_id": "886c711e-0ae4-41bb-95f9-740d46251cef",
-      "article_id": "8a812be4-c5c0-40ec-a3ff-74acb39e24bc",
-      "label": "[Yr-Architecture - Designing Your House to Respond to the Sun](https://yr-architecture.com/an-intro-to-solar-orientation/)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:34:02.295633+00:00",
-      "updated_at": "2026-03-24T04:34:02.295633+00:00"
-    },
-    {
-      "source_id": "583f829d-64e8-4bf5-b7c3-5a53a998a501",
-      "article_id": "8a812be4-c5c0-40ec-a3ff-74acb39e24bc",
-      "label": "[NOAA Solar Position Calculator](https://gml.noaa.gov/grad/solcalc/azel.html)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:34:02.295633+00:00",
-      "updated_at": "2026-03-24T04:34:02.295633+00:00"
+      "created_at": "2026-05-11T20:48:00.000+08:00",
+      "updated_at": "2026-05-11T20:48:00.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+      "raw_pdf_sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+      "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+      "source_locator": "TOA 4 Tropical Architecture refined markdown lines 708-810, 1201-1247, and raw PDF pages 90, 92-100, 121, 140, and 143-148",
+      "checked_markdown_lines": [
+        "TOA 4 Tropical Architecture refined markdown lines 708-810",
+        "TOA 4 Tropical Architecture refined markdown lines 1201-1247"
+      ],
+      "checked_pdf_pages": "raw PDF pages 1, 5-11, 13, 15-18, 20-21, 23-24, 28, 41, 71-78, 81-84, 87-90, 92-100, 104, 106-110, 121, 140, 143-148, 151, 163, 172, 180-181, and 187",
+      "local_audit_note": "Primary truth is the local raw PDF family; refined markdown line ranges are locator aids for the checked claims."
     }
-  ]
+  ],
+  "sources_hash": "sha256:c7cb288f080923107d4fd44e5fe90caab4843bf956466aa7ef21a03452d8b61e"
 }

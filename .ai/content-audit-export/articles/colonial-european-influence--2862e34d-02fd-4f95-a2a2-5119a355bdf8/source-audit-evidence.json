@@ -1,0 +1,145 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-050-local-first",
+  "batch_number": 50,
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T21:35:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "2862e34d-02fd-4f95-a2a2-5119a355bdf8",
+    "slug": "colonial-european-influence",
+    "title": "Colonial European Influence",
+    "article_folder": ".ai/content-audit-export/articles/colonial-european-influence--2862e34d-02fd-4f95-a2a2-5119a355bdf8",
+    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/colonial-european-influence--2862e34d-02fd-4f95-a2a2-5119a355bdf8",
+    "candidate_path": ".ai/content-audit-export/articles/colonial-european-influence--2862e34d-02fd-4f95-a2a2-5119a355bdf8/candidate.md",
+    "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/colonial-european-influence--2862e34d-02fd-4f95-a2a2-5119a355bdf8/candidate.md",
+    "question_edits_folder": ".ai/content-audit-export/articles/colonial-european-influence--2862e34d-02fd-4f95-a2a2-5119a355bdf8/question-edits",
+    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/colonial-european-influence--2862e34d-02fd-4f95-a2a2-5119a355bdf8/question-edits",
+    "normalized_sha256": "sha256:51c426935dfa369868f85ef5e7beebe451e2011021947d4f2ea1859261717d4a",
+    "candidate_sha256": "sha256:51c426935dfa369868f85ef5e7beebe451e2011021947d4f2ea1859261717d4a",
+    "linked_questions_sha256": "sha256:28c3a3e51dacceb3f94ac0cbb8bad9ac9b3dd1d5f67d385673754ed8f8c2b39f",
+    "sources_sha256": "sha256:498b8c538d12b19c27a80f93a859b44238e7cc467980dd2e972d2d278796a73b"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "refined_markdown_role": "locator_only",
+    "derivative_or_search_layer_as_primary": false,
+    "source_families_checked": [
+      {
+        "label": "HOA Module 4 P1 - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/HOA MODULE 4 P1.pdf",
+        "raw_pdf_sha256": "sha256:c89f7f79b3dd8272c7aa7d8848ea72c196d6c418f33105a32fb1ed2cfadbffb3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/HOA MODULE 4 P1.md",
+        "refined_markdown_sha256": "sha256:e515c8c5203118d4aeef0fe1f288c7deb76d75d3e3e1a779291712420c7df047",
+        "locator": "HOA Module 4 P1 refined markdown lines 1-235, 278-365, and 681-760"
+      },
+      {
+        "label": "Filipino Architecture - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Filipino Architecture.pdf",
+        "raw_pdf_sha256": "sha256:3d6f220218c46fe78e37d152d1c51504fd3c7d413cf14e71b39e93c7e1a5831d",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Filipino Architecture.md",
+        "refined_markdown_sha256": "sha256:f60dacc37e4b6634875ed68c18a55288e455476697fc250905460bbe6ac25ce1",
+        "locator": "Filipino Architecture refined markdown lines 40-118, 160-178, 680-700, 830-887, 905-917, and 1037-1039"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "colonial_european_influence_article",
+    "contains_legal_or_code_claims": false,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 22,
+    "question_edits_created": [
+      "b47b03be-76bd-49bc-a377-a9f8de7cde49",
+      "01488b83-5edd-4ec3-9cc1-99f00fa1feb6",
+      "94f0ac4d-06cc-4e31-ba3e-29217edc31df",
+      "18fa916d-2c66-4457-b90e-eebf93b3256f",
+      "d060088c-99ce-4f13-a834-6a14396a0976",
+      "6d24172d-49c8-46b8-aef9-594b4fe3483d",
+      "fffbd1ad-4517-4c7d-b489-63b4d37ab562",
+      "7f8fd3b4-a783-465e-9d74-1bfbc11e5ae2",
+      "d7d08a89-2b8c-4dd3-8fe9-62015542ab9a",
+      "cf70b913-96a6-4b46-9877-45847540ad8a",
+      "35957e18-5435-43bb-bfcd-b70355a00eec",
+      "2f237f92-57a5-4247-983a-82d73ba5db46",
+      "35645512-ae15-419d-99b9-911ba2fee297",
+      "42194e53-99cf-43e5-a985-a47a90015fca",
+      "2138cdfc-bf97-4552-aa75-5154f756ac62",
+      "ef693f26-e865-4f28-80ca-18c3d81b36ba",
+      "109e8ca7-039e-49a4-ac07-30bb89f4cd80",
+      "8f118413-cfd5-4375-96d7-7334a5f6b082",
+      "f93b088e-e279-4609-8d06-8e30de6b7556",
+      "f312e36e-19cc-40dd-94ef-2bedd211d224",
+      "85ae207c-adf9-438b-8c6b-cb0bef09aba1",
+      "c08f5e23-7809-415b-98a6-372ac420e233"
+    ]
+  },
+  "claims": [
+    {
+      "claim_id": "colonial-european-influence-b050-claim-01",
+      "claim_text": "Spanish colonial urbanism is framed through reduccion, encomienda, settlement hierarchy, cuadricula, and infrastructure.",
+      "source_support": [
+        "hoa-local-raw-pdf--b050-2862e34d-01",
+        "fil-local-raw-pdf--b050-2862e34d-02"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "colonial-european-influence-b050-claim-02",
+      "claim_text": "Intramuros is described as patterned after European walled fortresses.",
+      "source_support": [
+        "hoa-local-raw-pdf--b050-2862e34d-01",
+        "fil-local-raw-pdf--b050-2862e34d-02"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "colonial-european-influence-b050-claim-03",
+      "claim_text": "The Laws of the Indies locator lists grid, plaza, defensive wall, and civic-religious-functional zones.",
+      "source_support": [
+        "hoa-local-raw-pdf--b050-2862e34d-01",
+        "fil-local-raw-pdf--b050-2862e34d-02"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "colonial-european-influence-b050-claim-04",
+      "claim_text": "Bahay na Bato bridges indigenous and Hispanic traditions and carries Spanish, Neo-Classical, Gothic, and Baroque influence.",
+      "source_support": [
+        "hoa-local-raw-pdf--b050-2862e34d-01",
+        "fil-local-raw-pdf--b050-2862e34d-02"
+      ],
+      "audit_result": "PASS"
+    }
+  ],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "removed_risk_notes": [
+      "Question sidecars replaced with checked local raw-source citations.",
+      "Article body rewritten from local raw PDF families and refined markdown locators only.",
+      "Legacy compose-error sidecars are removed after selected bundle compose passes."
+    ]
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_batch_050_complete": true,
+    "remote_publish_status": "not_attempted_by_request",
+    "remaining_local_blockers": []
+  },
+  "local_validation": {
+    "status": "PASS",
+    "valid": true,
+    "blockers": 0,
+    "checked_at": "2026-05-11T21:35:00.000+08:00",
+    "commands": [
+      "bun run content-audit:compose -- --article-id 2862e34d-02fd-4f95-a2a2-5119a355bdf8 --overwrite --strict",
+      "bun run content-audit:diff -- --article-id 2862e34d-02fd-4f95-a2a2-5119a355bdf8 --strict --summary",
+      "bun run content-audit:validate -- --article-id 2862e34d-02fd-4f95-a2a2-5119a355bdf8 --summary",
+      "bun run content-audit:ui-block-edits -- --article-id 2862e34d-02fd-4f95-a2a2-5119a355bdf8"
+    ]
+  }
+}

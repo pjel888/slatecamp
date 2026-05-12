@@ -1,0 +1,81 @@
+{
+  "question_id": "344f3bfb-3dfc-4a00-aff4-11475a4b67d3",
+  "baseline_hash": "sha256:58673230560bd69dba692a2ca4acb4db44e1114f2d902142af518e34285ba324",
+  "action": "replace",
+  "reason": "source-audited-article-batch-035-local-first aligned linked professional-practice question with audited local raw PDF source language for lea-prac-cmp-006-multiple-of-direct-personnel-expense-mdpe-the-formula-components-and-logic.",
+  "approved_by": "codex-local-source-audit-batch-035",
+  "approved_at": "2026-05-11T11:27:41+08:00",
+  "source_audit_support": {
+    "parent_article_id": "d18569e9-4401-4d85-8d59-d545240ef106",
+    "parent_article_slug": "lea-prac-cmp-006-multiple-of-direct-personnel-expense-mdpe-the-formula-components-and-logic",
+    "parent_article_title": "Multiple of Direct Personnel Expense MDPE the Formula Components",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UAP Standards of Professional Practice refined markdown lines 419-435; SPP 201 refined markdown lines 165-188, 192-193",
+    "checked_sources": [
+      {
+        "source_id": "uap-standards-professional-practice2-local",
+        "label": "UAP Standards of Professional Practice - compiled SPP source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+        "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+        "source_locator": "UAP Standards of Professional Practice refined markdown lines 419-435; SPP 201 refined markdown lines 165-188, 192-193",
+        "checked_markdown_lines": [
+          "UAP Standards of Professional Practice refined markdown lines 419-435",
+          "SPP 201 refined markdown lines 165-188, 192-193"
+        ]
+      },
+      {
+        "source_id": "uap-spp-201-local",
+        "label": "UAP SPP Document 201 - Pre-design Services / Compensation Slides",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+        "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+        "refined_markdown_sha256": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
+        "source_locator": "UAP Standards of Professional Practice refined markdown lines 419-435; SPP 201 refined markdown lines 165-188, 192-193",
+        "checked_markdown_lines": [
+          "UAP Standards of Professional Practice refined markdown lines 419-435",
+          "SPP 201 refined markdown lines 165-188, 192-193"
+        ]
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer key, rationale, explanation, and code citation rewritten to audited local article scope."
+  },
+  "proposed": {
+    "text": "If direct cost is PHP 1,200,000 and M is 2.5 with no reimbursables stated, what is the Fee before R?",
+    "options": [
+      {
+        "id": "a",
+        "text": "PHP 480,000"
+      },
+      {
+        "id": "b",
+        "text": "PHP 1,200,000"
+      },
+      {
+        "id": "c",
+        "text": "PHP 3,000,000"
+      },
+      {
+        "id": "d",
+        "text": "PHP 4,500,000"
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "This divides instead of multiplying.",
+      "b": "This omits the multiplier.",
+      "c": "Fee = Direct Cost x M, so PHP 1,200,000 x 2.5 = PHP 3,000,000.",
+      "d": "This uses an unsupported multiplier.",
+      "correct": "Fee = Direct Cost x M, so PHP 1,200,000 x 2.5 = PHP 3,000,000.",
+      "takeaway": "Only add R if reimbursable expenses are given."
+    },
+    "explanation": "Fee = Direct Cost x M, so PHP 1,200,000 x 2.5 = PHP 3,000,000. Only add R if reimbursable expenses are given.",
+    "code_citation": "UAP Standards of Professional Practice refined markdown lines 427-435"
+  }
+}

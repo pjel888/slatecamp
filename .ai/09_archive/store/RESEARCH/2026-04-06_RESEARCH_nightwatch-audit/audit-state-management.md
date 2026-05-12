@@ -2,7 +2,7 @@
 **Status:** UNIFIED (Panopticon V8)
 
 ## 1. Executive Vulnerability Summary
-1. **CRITICAL: Timer Hydration Bug:** `useQuizTimerStore` persists `remainingSeconds` to `localStorage`. On page refresh, the countdown resumes from the stored value, giving the user "extra time" equal to the refresh duration (e.g., if refresh took 5s, the user gets +5s). 
+1. **CRITICAL: Timer Hydration Bug:** `useQuizTimerStore` persists `remainingSeconds` to `localStorage`. On page refresh, the countdown resumes from the stored value, giving the user "extra time" equal to the refresh duration (e.g., if refresh took 5s, the user gets +5s).
 2. **HIGH: Context Initialization Chaos:** 5 separate contexts (`Tier`, `ActiveSession`, `Discipline`, `Note`, `Breadcrumb`) wrap the dashboard layout. Overlapping state dependencies between them cause unpredictable hydration orders and "cannot read property of undefined" errors in consumer components.
 3. **MEDIUM: Stable Reference Defect:** `TierContext` and `ActiveSessionContext` define functions (`hasAccess`, `setActiveSession`) inline. This triggers continuous re-renders and stale closures in components using these as dependency-array items.
 

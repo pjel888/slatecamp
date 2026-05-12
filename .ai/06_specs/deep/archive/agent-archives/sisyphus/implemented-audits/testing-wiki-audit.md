@@ -433,8 +433,8 @@ Both share: taxonomy_tree table, user_node_mastery table, quiz_sessions table
 
 # Consolidated Audit Complete
 
-**Last updated:** 2026-04-04  
-**Status:** Single consolidated file with all wiki and testing audit content  
+**Last updated:** 2026-04-04
+**Status:** Single consolidated file with all wiki and testing audit content
 **Codebase verified:** ✅ 5 wiki routes, 78 wiki components, 5 wiki action files
 /dashboard/wiki/
 ├── layout.tsx         — WikiLayoutContent (3-pane shell, discipline contexts)
@@ -1379,7 +1379,7 @@ interface WikiNavigationContextValue {
   <WikiSidebar />
 </Sheet>
 
-// Right sidebar: below lg  
+// Right sidebar: below lg
 <Sheet>
   <WikiRightSidebar />
 </Sheet>

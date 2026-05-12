@@ -1,56 +1,20 @@
 {
   "article_id": "bf583e70-ccc8-4e6e-8b6a-1794533a4d7f",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:874038746a2939566da13938a0cf99567706f8810b53ed0087b8734ea3fa5943",
-  "source_count": 4,
+  "sources_hash": "sha256:bc61416dbbba99063d490b77a58fe9c4abfcba8f837ea5b54ba383a2f7d7b33d",
+  "source_count": 1,
   "sources": [
     {
-      "source_id": "bd2cfa33-b57f-46c0-8a9f-1eaf95cd670f",
+      "source_id": "pd1096-rirr-2004-b072",
       "article_id": "bf583e70-ccc8-4e6e-8b6a-1794533a4d7f",
-      "label": "National Building Code (PD 1096), Rule II Sec 204 (Ceiling Heights), Rule IV Sec 404 (Stairs)",
+      "label": "PD 1096 2004 Revised IRR - National Building Code",
       "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
+      "source_type": "primary_law_irr_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-072-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf; raw_pdf_sha256=sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md; refined_markdown_sha256=sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7; checked_locator=PD 1096 refined markdown lines 548-570, 2085-2089, and 2352-2412; raw PDF pages 19, 24, 33, 88, 93, 108, 192, 204, and 352 checked by local PyMuPDF extraction",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:33:58.214974+00:00",
-      "updated_at": "2026-03-24T04:33:58.214974+00:00"
-    },
-    {
-      "source_id": "0f8e9aeb-7660-4eea-a645-cda91c721311",
-      "article_id": "bf583e70-ccc8-4e6e-8b6a-1794533a4d7f",
-      "label": "DPW Standard for Floor-to-Floor Heights in Multi-Story Buildings, Addendum (3.0 m standard)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 1,
-      "created_at": "2026-03-24T04:33:58.214974+00:00",
-      "updated_at": "2026-03-24T04:33:58.214974+00:00"
-    },
-    {
-      "source_id": "1c28ed0d-5f75-4a29-a3ab-03db44020a48",
-      "article_id": "bf583e70-ccc8-4e6e-8b6a-1794533a4d7f",
-      "label": "Ching, Frank D. Architectural Graphics Standards, 15th ed., Wiley (2016) — Sections 2.1–2.3 on orthographic projection and elevation drawing conventions",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:33:58.214974+00:00",
-      "updated_at": "2026-03-24T04:33:58.214974+00:00"
-    },
-    {
-      "source_id": "29471b3f-0256-4c4f-b546-8d8efe451e95",
-      "article_id": "bf583e70-ccc8-4e6e-8b6a-1794533a4d7f",
-      "label": "Philippine Institute of Civil Engineers (PICE). Guidelines for Architectural Documentation and Drawing Standards (2015)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:33:58.214974+00:00",
-      "updated_at": "2026-03-24T04:33:58.214974+00:00"
+      "created_at": "2026-05-12T01:24:18+08:00",
+      "updated_at": "2026-05-12T01:24:18+08:00"
     }
   ]
 }

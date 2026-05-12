@@ -1,0 +1,81 @@
+{
+  "question_id": "2dfa755c-6509-4f8f-a5b6-8c7861f07b84",
+  "baseline_hash": "sha256:acbb5d6b9d92056d5a33878d77eba7734ba1d0996092695880271633d3dec92f",
+  "action": "replace",
+  "reason": "source-audited-article-batch-035-local-first aligned linked professional-practice question with audited local raw PDF source language for lea-prac-cmp-006-multiple-of-direct-personnel-expense-mdpe-the-formula-components-and-logic.",
+  "approved_by": "codex-local-source-audit-batch-035",
+  "approved_at": "2026-05-11T11:27:41+08:00",
+  "source_audit_support": {
+    "parent_article_id": "d18569e9-4401-4d85-8d59-d545240ef106",
+    "parent_article_slug": "lea-prac-cmp-006-multiple-of-direct-personnel-expense-mdpe-the-formula-components-and-logic",
+    "parent_article_title": "Multiple of Direct Personnel Expense MDPE the Formula Components",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UAP Standards of Professional Practice refined markdown lines 419-435; SPP 201 refined markdown lines 165-188, 192-193",
+    "checked_sources": [
+      {
+        "source_id": "uap-standards-professional-practice2-local",
+        "label": "UAP Standards of Professional Practice - compiled SPP source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+        "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+        "source_locator": "UAP Standards of Professional Practice refined markdown lines 419-435; SPP 201 refined markdown lines 165-188, 192-193",
+        "checked_markdown_lines": [
+          "UAP Standards of Professional Practice refined markdown lines 419-435",
+          "SPP 201 refined markdown lines 165-188, 192-193"
+        ]
+      },
+      {
+        "source_id": "uap-spp-201-local",
+        "label": "UAP SPP Document 201 - Pre-design Services / Compensation Slides",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+        "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+        "refined_markdown_sha256": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
+        "source_locator": "UAP Standards of Professional Practice refined markdown lines 419-435; SPP 201 refined markdown lines 165-188, 192-193",
+        "checked_markdown_lines": [
+          "UAP Standards of Professional Practice refined markdown lines 419-435",
+          "SPP 201 refined markdown lines 165-188, 192-193"
+        ]
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer key, rationale, explanation, and code citation rewritten to audited local article scope."
+  },
+  "proposed": {
+    "text": "Which statement is not source-safe for MDPE under the checked Batch 035 sources?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The multiplier ranges from 1.5 to 2.5"
+      },
+      {
+        "id": "b",
+        "text": "MDPE applies to non-creative work such as research or data gathering"
+      },
+      {
+        "id": "c",
+        "text": "Total Cost of Service equals Fee plus R"
+      },
+      {
+        "id": "d",
+        "text": "The normal MDPE range is 2.8 to 3.5 for complex projects"
+      }
+    ],
+    "correct_option_id": "d",
+    "rationale": {
+      "a": "This is in SPP 202.",
+      "b": "This is in SPP 202.",
+      "c": "This is in the formula.",
+      "d": "The checked SPP 202 source supports a multiplier range of 1.5 to 2.5, not 2.8 to 3.5.",
+      "correct": "The checked SPP 202 source supports a multiplier range of 1.5 to 2.5, not 2.8 to 3.5.",
+      "takeaway": "Stay inside the audited local source range."
+    },
+    "explanation": "The checked SPP 202 source supports a multiplier range of 1.5 to 2.5, not 2.8 to 3.5. Stay inside the audited local source range.",
+    "code_citation": "UAP Standards of Professional Practice refined markdown lines 419-435"
+  }
+}

@@ -305,38 +305,38 @@ flowchart TD
     C --> D["WikiNavigationProvider"]
     D --> E["WikiSidebarShell"]
     D --> F["WikiContentShell"]
-    
+
     E -->|"Suspense"| G["WikiSidebarLoader (Server async)"]
     G -->|"initialNodes"| H["WikiSidebar (Client)"]
     H -->|"nodes"| I["TaxonomyTree"]
-    
+
     F -->|"children / skeleton"| J["WikiArticlePage (Server async)"]
-    
+
     J -->|"breadcrumbs"| K["WikiHeader (Server async)"]
     K -->|"breadcrumbs, articleId"| L["WikiHeaderClient (Client)"]
     L --> M["WikiReadingProgress"]
     L --> N["WikiBookmarks"]
     L -->|"mobile"| O["Sheet: WikiSidebar"]
     L -->|"mobile"| P["Sheet: RightSidebar"]
-    
+
     J -->|"article, node, eiPrompts"| Q["WikiArticleHero"]
     J -->|"article, eiPrompts, eiResponses"| R["WikiArticle (Server async)"]
     R -->|"compileMDX"| S["MDX Components + Widgets"]
     R --> T["WikiHighlighter"]
     R --> U["WikiNoteAnchor"]
     R --> V["WikiTextSelection"]
-    
+
     J --> W["WikiReadTracker"]
     J -->|"teachBackCriteria"| X["TeachBackPrompt"]
     J -->|"siblings"| Y["Prev/Next Navigation"]
-    
+
     J -->|"right sidebar"| Z["WikiRightSidebar"]
     Z --> AA["WikiQuizButton"]
     Z --> AB["WikiRelatedPopover"]
     Z --> AC["WikiSourcesPopover"]
     Z --> AD["WikiTableOfContents"]
     Z --> AE["Feedback (thumbs)"]
-    
+
     AA -->|"lazy"| AF["WikiQuizModal"]
     AF --> AG["SlideToSubmit"]
 ```
@@ -458,7 +458,7 @@ sequenceDiagram
     CQ->>DB: RPC get_article_with_node OR sequential queries
     DB-->>CQ: {article, node}
     CQ-->>P: {article, node}
-    
+
     par Parallel data fetch
         P->>EI: getEIPromptsForArticle(articleId)
         P->>EI: getUserEIResponsesForArticle(articleId)
@@ -467,7 +467,7 @@ sequenceDiagram
         P->>P: getRelatedTopics(node)
         P->>WA: getArticleSiblings(nodeId)
     end
-    
+
     P->>P: WikiArticle renders (compileMDX + resolveWidgets)
     P-->>B: Full HTML stream
 ```

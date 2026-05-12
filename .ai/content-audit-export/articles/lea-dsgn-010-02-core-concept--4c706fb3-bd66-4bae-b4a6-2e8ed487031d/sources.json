@@ -1,44 +1,32 @@
 {
   "article_id": "4c706fb3-bd66-4bae-b4a6-2e8ed487031d",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:153fc8dea5d9ec30c16d17de07b608f70ddcb673deca6c78254e64b070a9636d",
-  "source_count": 3,
+  "sources_hash": "sha256:5ce7ab5f9540215278ee1b6c22adec0a995f8c06272698c0aa9fcdb186d126e3",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "55cbc021-2b49-43e1-b2f9-0241d8cf8238",
+      "source_id": "batch003-lea-dsgn-010-02-core-concept-source-01",
       "article_id": "4c706fb3-bd66-4bae-b4a6-2e8ed487031d",
-      "label": "PD 1096: National Building Code of the Philippines, Rule XIX (Off-Street Parking)",
-      "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:33:58.214974+00:00",
-      "updated_at": "2026-03-24T04:33:58.214974+00:00"
-    },
-    {
-      "source_id": "129729d9-05ee-455a-b589-fb7b8cea8798",
-      "article_id": "4c706fb3-bd66-4bae-b4a6-2e8ed487031d",
-      "label": "BP 344: 2024 Revised Implementing Rules and Regulations (Accessibility Law)",
+      "label": "PD 1096 2004 Revised IRR (DPWH Official)",
       "url": null,
       "source_type": "implementing_rules",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 1,
-      "created_at": "2026-03-24T04:33:58.214974+00:00",
-      "updated_at": "2026-03-24T04:33:58.214974+00:00"
+      "description": "pd1096_2004_irr; raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf; raw_pdf_sha256=sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "is_verified": true,
+      "sort_order": 0,
+      "created_at": "2026-05-10T18:00:00+08:00",
+      "updated_at": "2026-05-10T18:00:00+08:00"
     },
     {
-      "source_id": "d13775d0-eb27-47cd-8dbe-53fb20bcfedd",
+      "source_id": "batch003-lea-dsgn-010-02-core-concept-source-02",
       "article_id": "4c706fb3-bd66-4bae-b4a6-2e8ed487031d",
-      "label": "NBCDO Memo Circular No. 03 s. 2025: Interim Guidance on Ramp Slopes",
+      "label": "BP 344 2024 Revised IRR (NCDA)",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:33:58.214974+00:00",
-      "updated_at": "2026-03-24T04:33:58.214974+00:00"
+      "source_type": "implementing_rules",
+      "description": "bp344_2024_rirr; raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf; raw_pdf_sha256=sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-10T18:00:00+08:00",
+      "updated_at": "2026-05-10T18:00:00+08:00"
     }
   ]
 }

@@ -1,0 +1,48 @@
+{
+  "question_id": "53986655-03f5-4508-b38d-5fcee434d96a",
+  "baseline_hash": "sha256:bf0ca3d6df7f914dd2ac28c4bbbca9aad04c221e55fc09f6a3713093bca6dd72",
+  "action": "replace",
+  "reason": "source-audited-article-batch-038-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-038",
+  "approved_at": "2026-05-11T13:26:35+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-038-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 3447-3470"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 1206"
+  },
+  "proposed": {
+    "text": "What minimum attic access size is stated for combustible ceiling or roof construction?",
+    "options": [
+      {
+        "id": "b038-66b5-10-a",
+        "text": "600 mm square or 600 mm diameter"
+      },
+      {
+        "id": "b038-66b5-10-b",
+        "text": "300 mm square only"
+      },
+      {
+        "id": "b038-66b5-10-c",
+        "text": "1.20 m wide passageway"
+      },
+      {
+        "id": "b038-66b5-10-d",
+        "text": "No attic access opening"
+      }
+    ],
+    "correct_option_id": "b038-66b5-10-a",
+    "rationale": "Correct answer: 600 mm square or 600 mm diameter. This is directly supported by PD 1096 2004 Revised IRR, Section 1206.",
+    "explanation": "The Batch 038 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 1206.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 1206"
+  }
+}

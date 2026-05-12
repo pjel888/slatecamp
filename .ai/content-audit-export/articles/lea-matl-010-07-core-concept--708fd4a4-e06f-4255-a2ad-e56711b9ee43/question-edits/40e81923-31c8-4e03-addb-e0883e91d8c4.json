@@ -1,0 +1,59 @@
+{
+  "question_id": "40e81923-31c8-4e03-addb-e0883e91d8c4",
+  "baseline_hash": "sha256:4a92d6a87ab927c9e1de28c650b0a13d93f66e68c0c51d18d902c09dbad853a7",
+  "action": "replace",
+  "reason": "source-audited-article-batch-081-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-010-07-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-081",
+  "approved_at": "2026-05-12T04:40:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "708fd4a4-e06f-4255-a2ad-e56711b9ee43",
+    "parent_article_slug": "lea-matl-010-07-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Fajardo Simplified Methods refined markdown lines 3173-3270 and 3643-3652; raw PDF pages 100 and 110 checked by local PyMuPDF extraction; AISC raw PDF hash checked but text extraction returned no usable locator, so AISC was not used for asserted claims",
+    "checked_markdown_lines": [
+      "Fajardo Simplified Methods refined markdown lines 3173-3270 and 3643-3652; raw PDF pages 100 and 110 checked by local PyMuPDF extraction; AISC raw PDF hash checked but text extraction returned no usable locator, so AISC was not used for asserted claims"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "fajardo-simplified-methods-b081",
+        "label": "Simplified Methods on Building Construction by Max Fajardo",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Simplified Methods on Building Construction by Max Fajardo.pdf",
+        "sha256": "sha256:7112a749fe9d3a5c84c7f042cb71500f9c97d69ad37adb85347a93d093331582",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Simplified Methods on Building Construction by Max Fajardo.md",
+        "raw_markdown_sha256": "sha256:8d53840352aef129d3996e6b5c61adb8a0a6cc5c7743c909930d163494610a21",
+        "locator": "Fajardo Simplified Methods refined markdown lines 3173-3270 and 3643-3652; raw PDF pages 100 and 110 checked by local PyMuPDF extraction; AISC raw PDF hash checked but text extraction returned no usable locator, so AISC was not used for asserted claims"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 081 local raw-source-audited steel unit-weight estimating scope."
+  },
+  "proposed": {
+    "text": "Three steel members are 8 m long with a given unit weight of 42 kg/m. What is their total weight?",
+    "options": [
+      {
+        "id": "a",
+        "text": "1008 kg"
+      },
+      {
+        "id": "b",
+        "text": "336 kg"
+      },
+      {
+        "id": "c",
+        "text": "126 kg"
+      },
+      {
+        "id": "d",
+        "text": "3008 kg"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "3 x 8 x 42 = 1008 kg.",
+    "explanation": "3 x 8 x 42 = 1008 kg.",
+    "code_citation": "Simplified Methods on Building Construction by Max Fajardo",
+    "bloom_level": "remember",
+    "application_context": "source_audited_local_first_batch_081",
+    "practice_context": [],
+    "difficulty": 0.5
+  }
+}

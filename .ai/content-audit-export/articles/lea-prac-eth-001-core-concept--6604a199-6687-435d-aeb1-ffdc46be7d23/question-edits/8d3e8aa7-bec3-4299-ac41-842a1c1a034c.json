@@ -1,0 +1,72 @@
+{
+  "question_id": "8d3e8aa7-bec3-4299-ac41-842a1c1a034c",
+  "baseline_hash": "sha256:ab058baf976ed9dcd867b2a56435b0fc914bbf3ab7135722793f09a300f07159",
+  "action": "replace",
+  "reason": "source-audited-article-batch-017-local-first rewrote linked question to match the locally checked UAP Code of Ethics source for lea-prac-eth-001-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-017",
+  "approved_at": "2026-05-10T23:30:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "6604a199-6687-435d-aeb1-ffdc46be7d23",
+    "parent_article_slug": "lea-prac-eth-001-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UAP Document Code of Ethics, introduction and Sections 1 through 5, raw markdown lines 23-118",
+    "checked_markdown_lines": [
+      "raw markdown lines 23-29",
+      "raw markdown lines 31-118"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+        "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+        "source_id": "uap-document-code-of-ethics",
+        "locator": "UAP Document Code of Ethics, introduction and Sections 1 through 5, raw markdown lines 23-118"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
+        "sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
+        "source_id": "uap-document-code-of-ethics-raw-markdown",
+        "locator": "UAP Document Code of Ethics, introduction and Sections 1 through 5, raw markdown lines 23-118"
+      }
+    ],
+    "local_source_safe_action": "Question was rewritten to avoid unverified PRBoA-resolution, hierarchy, or enforcement claims and to use only statements anchored in the raw UAP Code of Ethics source."
+  },
+  "proposed": {
+    "text": "A question about civic service, safety, health, well-being, and heritage most directly belongs to which section of the Code?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Section 1, responsibilities in relation to the people"
+      },
+      {
+        "id": "b",
+        "text": "Section 2, responsibilities in relation to the client"
+      },
+      {
+        "id": "c",
+        "text": "Section 4, responsibilities in relation to manufacturers"
+      },
+      {
+        "id": "d",
+        "text": "Section 5, responsibilities in relation to colleagues"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "Section 1 addresses responsibilities in relation to the people, including civic service, safety, health, well-being, and heritage.",
+    "explanation": "Section 1 addresses responsibilities in relation to the people, including civic service, safety, health, well-being, and heritage.",
+    "code_citation": "UAP Document Code of Ethics, lines 31-44",
+    "bloom_level": "understand",
+    "application_context": "professional_practice",
+    "practice_context": [
+      "Code of Ethical Conduct",
+      "Professional ethics"
+    ],
+    "difficulty": 0.3,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-ETH-001-001"
+  }
+}

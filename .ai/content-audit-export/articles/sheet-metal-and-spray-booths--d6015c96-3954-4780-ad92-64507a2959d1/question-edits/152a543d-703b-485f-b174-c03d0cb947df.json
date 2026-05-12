@@ -1,0 +1,48 @@
+{
+  "question_id": "152a543d-703b-485f-b174-c03d0cb947df",
+  "baseline_hash": "sha256:54a47dfa86a252d6771bcde0b3e9018dde5c374c9cdbd5127abd75bd8485cffb",
+  "action": "replace",
+  "reason": "source-audited-article-batch-038-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-038",
+  "approved_at": "2026-05-11T13:26:35+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-038-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 4448-4472"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 1702"
+  },
+  "proposed": {
+    "text": "What is required for an open-front spray booth larger than 1.00 sq m without doors?",
+    "options": [
+      {
+        "id": "b038-d601-28-a",
+        "text": "A fire curtain or metal deflector at least 100 mm deep at the upper outer edge"
+      },
+      {
+        "id": "b038-d601-28-b",
+        "text": "A combustible curtain at floor level"
+      },
+      {
+        "id": "b038-d601-28-c",
+        "text": "No fire protection if mechanically exhausted"
+      },
+      {
+        "id": "b038-d601-28-d",
+        "text": "A 2.00 m masonry curb only"
+      }
+    ],
+    "correct_option_id": "b038-d601-28-a",
+    "rationale": "Correct answer: A fire curtain or metal deflector at least 100 mm deep at the upper outer edge. This is directly supported by PD 1096 2004 Revised IRR, Section 1702.",
+    "explanation": "The Batch 038 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 1702.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 1702"
+  }
+}

@@ -1,7 +1,7 @@
 # Wiki Article ID Routing Migration — Final Report
 
-**Branch:** `codebase-modernization-batch1-2`  
-**Date:** 2026-05-04  
+**Branch:** `codebase-modernization-batch1-2`
+**Date:** 2026-05-04
 **Status:** Phase 4 complete. All verification gates passed except pre-existing storybook build environment issue.
 
 ---

@@ -1,0 +1,319 @@
+{
+  "schema_version": "source-audit-evidence-v1-local-first",
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-046-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T17:58:00.000+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "8d3099bc-c90a-4f31-946f-fe7ab195fb75",
+    "slug": "lea-util-003-03-protection-levels-and-risk-assessment",
+    "title": "Lightning protection systems (LPS)",
+    "article_folder": ".ai/content-audit-export/articles/lea-util-003-03-protection-levels-and-risk-assessment--8d3099bc-c90a-4f31-946f-fe7ab195fb75",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-03-protection-levels-and-risk-assessment--8d3099bc-c90a-4f31-946f-fe7ab195fb75",
+    "candidate_path": ".ai/content-audit-export/articles/lea-util-003-03-protection-levels-and-risk-assessment--8d3099bc-c90a-4f31-946f-fe7ab195fb75/candidate.md",
+    "candidate_sha256": "sha256:a97f15e053e6c9fb05579d89c11f6980ac3add5dd9e00a12724433027b2530b0",
+    "normalized_sha256": "sha256:a97f15e053e6c9fb05579d89c11f6980ac3add5dd9e00a12724433027b2530b0",
+    "linked_questions_sha256": "sha256:c57a28fedbe137762c6f1bebfc4a5a59419fd81f4466efe343281fd3017a9bf4",
+    "sources_sha256": "sha256:26eaa72bf98453c0c58272d8282c205e2e030c734c4731b784dd2a4a3344c245"
+  },
+  "classification": {
+    "content_domain": "LEA Utilities - lightning protection, grounding, and risk coordination",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high_value_electrical_lightning_grounding",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 15,
+    "question_edits_created": [
+      "12abdae6-10c1-40cb-b313-4a0d705a126e",
+      "2ff52618-d885-4b8a-93ce-4cd9072ba9a1",
+      "906d30bb-6a8e-4196-bc25-906cca44290f",
+      "e818819f-0ff7-4b53-bb2f-40a2bf72fff0",
+      "984d84b6-2175-4a4b-a50b-41c9ccf7b531",
+      "69b56ba6-6b49-4ec5-beff-c0cbb97530f8",
+      "356f819e-597c-4be7-bc31-1cdce0e3c675",
+      "3630dc79-02c6-4955-a698-9b05a6139d31",
+      "842f63a4-c052-4c2b-8993-fe58ccac3d00",
+      "af96460b-60e3-4237-8a3b-e068fb6f8cad",
+      "5cf18a7a-7c9f-457e-b86b-bd2dcd8c4e53",
+      "c316d8c5-ce1d-494c-9b26-25bcc2485dec",
+      "4d507ade-a0a9-45a5-ae08-1431c09ca010",
+      "58b5ec72-4d3a-46dc-97c4-2bed78f956a6",
+      "2d874579-510d-4c12-9656-0fd954ef52d2"
+    ]
+  },
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/lea-util-003-03-protection-levels-and-risk-assessment--8d3099bc-c90a-4f31-946f-fe7ab195fb75",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-03-protection-levels-and-risk-assessment--8d3099bc-c90a-4f31-946f-fe7ab195fb75",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/lea-util-003-03-protection-levels-and-risk-assessment--8d3099bc-c90a-4f31-946f-fe7ab195fb75/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-03-protection-levels-and-risk-assessment--8d3099bc-c90a-4f31-946f-fe7ab195fb75/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/lea-util-003-03-protection-levels-and-risk-assessment--8d3099bc-c90a-4f31-946f-fe7ab195fb75/question-edits/12abdae6-10c1-40cb-b313-4a0d705a126e.json",
+      ".ai/content-audit-export/articles/lea-util-003-03-protection-levels-and-risk-assessment--8d3099bc-c90a-4f31-946f-fe7ab195fb75/question-edits/2ff52618-d885-4b8a-93ce-4cd9072ba9a1.json",
+      ".ai/content-audit-export/articles/lea-util-003-03-protection-levels-and-risk-assessment--8d3099bc-c90a-4f31-946f-fe7ab195fb75/question-edits/906d30bb-6a8e-4196-bc25-906cca44290f.json",
+      ".ai/content-audit-export/articles/lea-util-003-03-protection-levels-and-risk-assessment--8d3099bc-c90a-4f31-946f-fe7ab195fb75/question-edits/e818819f-0ff7-4b53-bb2f-40a2bf72fff0.json",
+      ".ai/content-audit-export/articles/lea-util-003-03-protection-levels-and-risk-assessment--8d3099bc-c90a-4f31-946f-fe7ab195fb75/question-edits/984d84b6-2175-4a4b-a50b-41c9ccf7b531.json",
+      ".ai/content-audit-export/articles/lea-util-003-03-protection-levels-and-risk-assessment--8d3099bc-c90a-4f31-946f-fe7ab195fb75/question-edits/69b56ba6-6b49-4ec5-beff-c0cbb97530f8.json",
+      ".ai/content-audit-export/articles/lea-util-003-03-protection-levels-and-risk-assessment--8d3099bc-c90a-4f31-946f-fe7ab195fb75/question-edits/356f819e-597c-4be7-bc31-1cdce0e3c675.json",
+      ".ai/content-audit-export/articles/lea-util-003-03-protection-levels-and-risk-assessment--8d3099bc-c90a-4f31-946f-fe7ab195fb75/question-edits/3630dc79-02c6-4955-a698-9b05a6139d31.json",
+      ".ai/content-audit-export/articles/lea-util-003-03-protection-levels-and-risk-assessment--8d3099bc-c90a-4f31-946f-fe7ab195fb75/question-edits/842f63a4-c052-4c2b-8993-fe58ccac3d00.json",
+      ".ai/content-audit-export/articles/lea-util-003-03-protection-levels-and-risk-assessment--8d3099bc-c90a-4f31-946f-fe7ab195fb75/question-edits/af96460b-60e3-4237-8a3b-e068fb6f8cad.json",
+      ".ai/content-audit-export/articles/lea-util-003-03-protection-levels-and-risk-assessment--8d3099bc-c90a-4f31-946f-fe7ab195fb75/question-edits/5cf18a7a-7c9f-457e-b86b-bd2dcd8c4e53.json",
+      ".ai/content-audit-export/articles/lea-util-003-03-protection-levels-and-risk-assessment--8d3099bc-c90a-4f31-946f-fe7ab195fb75/question-edits/c316d8c5-ce1d-494c-9b26-25bcc2485dec.json",
+      ".ai/content-audit-export/articles/lea-util-003-03-protection-levels-and-risk-assessment--8d3099bc-c90a-4f31-946f-fe7ab195fb75/question-edits/4d507ade-a0a9-45a5-ae08-1431c09ca010.json",
+      ".ai/content-audit-export/articles/lea-util-003-03-protection-levels-and-risk-assessment--8d3099bc-c90a-4f31-946f-fe7ab195fb75/question-edits/58b5ec72-4d3a-46dc-97c4-2bed78f956a6.json",
+      ".ai/content-audit-export/articles/lea-util-003-03-protection-levels-and-risk-assessment--8d3099bc-c90a-4f31-946f-fe7ab195fb75/question-edits/2d874579-510d-4c12-9656-0fd954ef52d2.json"
+    ]
+  },
+  "raw_sources": [
+    {
+      "source_id": "philippine-electrical-code-local-raw-pdf--b046",
+      "article_id": "8d3099bc-c90a-4f31-946f-fe7ab195fb75",
+      "label": "Philippine Electrical Code - local raw PDF",
+      "url": null,
+      "source_type": "local_raw_pdf",
+      "description": "Grounding and bonding purpose, surge arrester context, communications lightning separation, primary protectors, and CATV grounding/bonding.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-11T17:58:00.000+08:00",
+      "updated_at": "2026-05-11T17:58:00.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+      "raw_pdf_sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+      "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3",
+      "source_locator": "PEC refined markdown lines 4483-4578, 32160-32302, 32838-32920",
+      "checked_markdown_lines": [
+        "PEC refined markdown lines 4483-4578",
+        "PEC refined markdown lines 32160-32302",
+        "PEC refined markdown lines 32838-32920"
+      ],
+      "local_audit_note": "Batch 046 local-first source audit checked the raw PDF family before using refined markdown line locators."
+    },
+    {
+      "source_id": "salvan-architectural-utilities-2-local-raw-pdf--b046",
+      "article_id": "8d3099bc-c90a-4f31-946f-fe7ab195fb75",
+      "label": "George Salvan Architectural Utilities 2 - local raw PDF",
+      "url": null,
+      "source_type": "local_raw_pdf",
+      "description": "Lightning arrester and surge-protection context for electrical equipment.",
+      "is_verified": true,
+      "sort_order": 2,
+      "created_at": "2026-05-11T17:58:00.000+08:00",
+      "updated_at": "2026-05-11T17:58:00.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+      "raw_pdf_sha256": "sha256:ff7231f0059a1febaf4a0996a425caca3b7676c23c729f922e385af4e4c20d28",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
+      "refined_markdown_sha256": "sha256:1b9249c90c0b86c57c6df2f20f0ab210ac112a10230bd9bce584461773d75215",
+      "source_locator": "Salvan Utilities 2 refined markdown lines 4918-4920, 5730",
+      "checked_markdown_lines": [
+        "Salvan Utilities 2 refined markdown lines 4918-4920",
+        "Salvan Utilities 2 refined markdown line 5730"
+      ],
+      "local_audit_note": "Batch 046 local-first source audit checked the raw PDF family before using refined markdown line locators."
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "philippine-electrical-code-local-raw-pdf--b046",
+      "article_id": "8d3099bc-c90a-4f31-946f-fe7ab195fb75",
+      "label": "Philippine Electrical Code - local raw PDF",
+      "url": null,
+      "source_type": "local_raw_pdf",
+      "description": "Grounding and bonding purpose, surge arrester context, communications lightning separation, primary protectors, and CATV grounding/bonding.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-11T17:58:00.000+08:00",
+      "updated_at": "2026-05-11T17:58:00.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+      "raw_pdf_sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+      "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3",
+      "source_locator": "PEC refined markdown lines 4483-4578, 32160-32302, 32838-32920",
+      "checked_markdown_lines": [
+        "PEC refined markdown lines 4483-4578",
+        "PEC refined markdown lines 32160-32302",
+        "PEC refined markdown lines 32838-32920"
+      ],
+      "local_audit_note": "Batch 046 local-first source audit checked the raw PDF family before using refined markdown line locators."
+    },
+    {
+      "source_id": "salvan-architectural-utilities-2-local-raw-pdf--b046",
+      "article_id": "8d3099bc-c90a-4f31-946f-fe7ab195fb75",
+      "label": "George Salvan Architectural Utilities 2 - local raw PDF",
+      "url": null,
+      "source_type": "local_raw_pdf",
+      "description": "Lightning arrester and surge-protection context for electrical equipment.",
+      "is_verified": true,
+      "sort_order": 2,
+      "created_at": "2026-05-11T17:58:00.000+08:00",
+      "updated_at": "2026-05-11T17:58:00.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+      "raw_pdf_sha256": "sha256:ff7231f0059a1febaf4a0996a425caca3b7676c23c729f922e385af4e4c20d28",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
+      "refined_markdown_sha256": "sha256:1b9249c90c0b86c57c6df2f20f0ab210ac112a10230bd9bce584461773d75215",
+      "source_locator": "Salvan Utilities 2 refined markdown lines 4918-4920, 5730",
+      "checked_markdown_lines": [
+        "Salvan Utilities 2 refined markdown lines 4918-4920",
+        "Salvan Utilities 2 refined markdown line 5730"
+      ],
+      "local_audit_note": "Batch 046 local-first source audit checked the raw PDF family before using refined markdown line locators."
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "b046-lightning-01",
+      "claim_text": "Grounding limits voltage imposed by lightning, line surges, and accidental higher-voltage contact.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "locator": "PEC refined markdown lines 4483-4495",
+        "checked_sources": [
+          {
+            "source_label": "Philippine Electrical Code - local raw PDF",
+            "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+            "raw_pdf_sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+            "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3"
+          },
+          {
+            "source_label": "George Salvan Architectural Utilities 2 - local raw PDF",
+            "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+            "raw_pdf_sha256": "sha256:ff7231f0059a1febaf4a0996a425caca3b7676c23c729f922e385af4e4c20d28",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
+            "refined_markdown_sha256": "sha256:1b9249c90c0b86c57c6df2f20f0ab210ac112a10230bd9bce584461773d75215"
+          }
+        ]
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b046-lightning-02",
+      "claim_text": "Communications circuits exposed to lightning need primary protector logic and grounded/bonded electrodes.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "locator": "PEC refined markdown lines 32160-32302",
+        "checked_sources": [
+          {
+            "source_label": "Philippine Electrical Code - local raw PDF",
+            "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+            "raw_pdf_sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+            "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3"
+          },
+          {
+            "source_label": "George Salvan Architectural Utilities 2 - local raw PDF",
+            "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+            "raw_pdf_sha256": "sha256:ff7231f0059a1febaf4a0996a425caca3b7676c23c729f922e385af4e4c20d28",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
+            "refined_markdown_sha256": "sha256:1b9249c90c0b86c57c6df2f20f0ab210ac112a10230bd9bce584461773d75215"
+          }
+        ]
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b046-lightning-03",
+      "claim_text": "CATV coaxial shields must be grounded near entrance and bonded to the power grounding electrode system when separate electrodes are used.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "locator": "PEC refined markdown lines 32838-32920",
+        "checked_sources": [
+          {
+            "source_label": "Philippine Electrical Code - local raw PDF",
+            "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+            "raw_pdf_sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+            "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3"
+          },
+          {
+            "source_label": "George Salvan Architectural Utilities 2 - local raw PDF",
+            "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+            "raw_pdf_sha256": "sha256:ff7231f0059a1febaf4a0996a425caca3b7676c23c729f922e385af4e4c20d28",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
+            "refined_markdown_sha256": "sha256:1b9249c90c0b86c57c6df2f20f0ab210ac112a10230bd9bce584461773d75215"
+          }
+        ]
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b046-lea-util-003-03-protection-levels-and-risk-assessment-questions",
+      "claim_text": "Batch 046 question edits created for linked question IDs: 12abdae6-10c1-40cb-b313-4a0d705a126e, 2ff52618-d885-4b8a-93ce-4cd9072ba9a1, 906d30bb-6a8e-4196-bc25-906cca44290f, e818819f-0ff7-4b53-bb2f-40a2bf72fff0, 984d84b6-2175-4a4b-a50b-41c9ccf7b531, 69b56ba6-6b49-4ec5-beff-c0cbb97530f8, 356f819e-597c-4be7-bc31-1cdce0e3c675, 3630dc79-02c6-4955-a698-9b05a6139d31, 842f63a4-c052-4c2b-8993-fe58ccac3d00, af96460b-60e3-4237-8a3b-e068fb6f8cad, 5cf18a7a-7c9f-457e-b86b-bd2dcd8c4e53, c316d8c5-ce1d-494c-9b26-25bcc2485dec, 4d507ade-a0a9-45a5-ae08-1431c09ca010, 58b5ec72-4d3a-46dc-97c4-2bed78f956a6, 2d874579-510d-4c12-9656-0fd954ef52d2",
+      "claim_type": "linked_question_source_safe_rewrite_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "locator": "PEC refined markdown lines 4483-4578, 32160-32302, 32838-32920; Salvan Utilities 2 refined markdown lines 4918-4920, 5730",
+        "checked_sources": [
+          {
+            "source_label": "Philippine Electrical Code - local raw PDF",
+            "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+            "raw_pdf_sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+            "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3"
+          },
+          {
+            "source_label": "George Salvan Architectural Utilities 2 - local raw PDF",
+            "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+            "raw_pdf_sha256": "sha256:ff7231f0059a1febaf4a0996a425caca3b7676c23c729f922e385af4e4c20d28",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
+            "refined_markdown_sha256": "sha256:1b9249c90c0b86c57c6df2f20f0ab210ac112a10230bd9bce584461773d75215"
+          }
+        ]
+      },
+      "blockers": []
+    }
+  ],
+  "removed_or_rewritten_material": [
+    "Removed exported UI block marker text from normalized article content where present.",
+    "Rewrote linked question files to stay inside checked local raw-source evidence.",
+    "Replaced derivative-only or over-specific scenario claims with checked source-family statements."
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdf_first": true,
+    "derivative_layers_used_only_as_locators": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "checked_raw_pdf_families": [
+      "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+      "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf"
+    ],
+    "blockers": []
+  },
+  "gate_results": {
+    "source_audit": "PASS",
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_validation": "PASS",
+    "question_edit_count_check": "PASS",
+    "scoped_json_parse": "PASS",
+    "marker_scan": "PASS",
+    "source_hash_check": "PASS",
+    "stale_compose_error_check": "PASS"
+  },
+  "source_safe_repair": {
+    "status": "COMPLETE_LOCAL_VALIDATED",
+    "article_normalized_rewritten": true,
+    "sources_json_updated": true,
+    "source_audit_evidence_updated": true,
+    "question_edits_created": 15,
+    "blockers": []
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "blockers": []
+  },
+  "blockers": []
+}

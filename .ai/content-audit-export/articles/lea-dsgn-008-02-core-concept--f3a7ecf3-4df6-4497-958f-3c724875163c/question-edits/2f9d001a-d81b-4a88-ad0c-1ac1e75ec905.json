@@ -1,0 +1,32 @@
+{
+  "question_id": "2f9d001a-d81b-4a88-ad0c-1ac1e75ec905",
+  "baseline_hash": "sha256:ad60118b8eae92a04daf52a5798578f2aa2eea7462982ba12b0501ad1de2639f",
+  "reason": "Batch 003 source audit corrected the wrong Group D storage premise. PD 1096 classifies Group D as Institutional and Group G as Storage and Hazardous; RA 9514 supplies protected-exit and special-hazard rules.",
+  "approved_by": "codex-local-source-audit-batch-003",
+  "approved_at": "2026-05-10T18:00:00+08:00",
+  "proposed": {
+    "text": "A high-rise office building has a central required exit stair. Which design is source-backed as incorrect under the protected-exit rule?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A protected exit separation with at least 2-hour fire resistance"
+      },
+      {
+        "id": "b",
+        "text": "A protected exit enclosure serving many storeys with only 1-hour fire resistance"
+      },
+      {
+        "id": "c",
+        "text": "Openings protected by approved self-closing fire-resistive doors"
+      },
+      {
+        "id": "d",
+        "text": "Noncombustible construction supporting the protected exit separation"
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": "For exits connecting four or more storeys, RA 9514 requires at least two-hour fire resistance.",
+    "explanation": "This aligns the high-rise stair question with RA 9514 Section 10.2.5.2(B).",
+    "code_citation": "RA 9514 2019 RIRR Section 10.2.5.2(B)"
+  }
+}

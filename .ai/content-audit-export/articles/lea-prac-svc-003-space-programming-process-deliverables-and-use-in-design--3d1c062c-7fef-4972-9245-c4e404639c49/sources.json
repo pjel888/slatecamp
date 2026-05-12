@@ -1,7 +1,56 @@
 {
   "article_id": "3d1c062c-7fef-4972-9245-c4e404639c49",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "source_count": 0,
-  "sources": []
+  "sources_hash": "sha256:469e32821c4d49509bf28b46c98ed6c625818d522ce8153be27daa9a2dbea3bd",
+  "source_count": 2,
+  "sources": [
+    {
+      "source_id": "spp201-pre-design-services-local",
+      "article_id": "3d1c062c-7fef-4972-9245-c4e404639c49",
+      "label": "SPP 201 - Pre-Design Services",
+      "url": null,
+      "source_type": "professional_practice_pdf",
+      "description": "Local SPP 201 raw PDF and refined markdown checked for architectural programming, space planning, and space management scope.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-11T18:30:00.000+08:00",
+      "updated_at": "2026-05-11T18:30:00.000+08:00",
+      "local_source_audit": {
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+        "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+        "refined_markdown_sha256": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
+        "source_locator": "SPP 201 lines 328-367",
+        "checked_markdown_lines": [
+          "SPP 201 lines 328-367"
+        ],
+        "local_source_checked": true
+      }
+    },
+    {
+      "source_id": "uap-standards-local-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design",
+      "article_id": "3d1c062c-7fef-4972-9245-c4e404639c49",
+      "label": "UAP Document Standards of Professional Practice - Space Programming Process Deliverables and Use in Design",
+      "url": null,
+      "source_type": "professional_practice_pdf",
+      "description": "Local UAP standards source checked for the SPP 201 pre-design services list.",
+      "is_verified": true,
+      "sort_order": 2,
+      "created_at": "2026-05-11T18:30:00.000+08:00",
+      "updated_at": "2026-05-11T18:30:00.000+08:00",
+      "local_source_audit": {
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "source_locator": "UAP Standards lines 1120-1125",
+        "checked_markdown_lines": [
+          "UAP Standards lines 1120-1125"
+        ],
+        "local_source_checked": true
+      }
+    }
+  ]
 }

@@ -1,0 +1,315 @@
+{
+  "batch_id": "source-audited-article-batch-064-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T22:32:00.000+08:00",
+  "target": {
+    "article_id": "622a401a-b889-4744-9d44-f77daa1627b4",
+    "slug": "lea-dsgn-005-10-core-concept",
+    "title": "Multi-purpose halls",
+    "article_folder": ".ai/content-audit-export/articles/lea-dsgn-005-10-core-concept--622a401a-b889-4744-9d44-f77daa1627b4",
+    "normalized_sha256": "sha256:ed2d7cea4eb84ef6444dd31b764832054ebb1fecf7317ab42955e1f11ebeb7ef",
+    "candidate_sha256": "sha256:ed2d7cea4eb84ef6444dd31b764832054ebb1fecf7317ab42955e1f11ebeb7ef",
+    "candidate_path": ".ai/content-audit-export/articles/lea-dsgn-005-10-core-concept--622a401a-b889-4744-9d44-f77daa1627b4/candidate.md"
+  },
+  "classification": {
+    "legal_or_code_candidate": true,
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "source_risk_tier": "high",
+    "source_domains": [
+      "PD 1096 occupancy classification",
+      "RA 9514 fire and life safety",
+      "Fire Code life-safety source family"
+    ]
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdfs_checked_first": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "pd1096-rirr-2004-occupancy-public-service-local-b064",
+      "label": "PD 1096 RIRR 2004 - occupancy classification for public-service, health, day-care, and assembly uses",
+      "authority": "DPWH official revised IRR local raw PDF conversion",
+      "source_type": "building_code_irr_pdf",
+      "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1141, 1171-1176, 1193-1218, and 1259-1272; raw PDF pages 47, 53, 57-59, and 70 checked for matching occupancy text",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "checked_markdown_lines": [
+        "PD 1096 RIRR DPWH Official refined markdown lines 1088-1141",
+        "PD 1096 RIRR DPWH Official refined markdown lines 1171-1176",
+        "PD 1096 RIRR DPWH Official refined markdown lines 1193-1218",
+        "PD 1096 RIRR DPWH Official refined markdown lines 1259-1272"
+      ],
+      "checked_raw_pdf_pages": [
+        "PD 1096 RIRR DPWH Official raw PDF page 47",
+        "PD 1096 RIRR DPWH Official raw PDF page 53",
+        "PD 1096 RIRR DPWH Official raw PDF pages 57-59",
+        "PD 1096 RIRR DPWH Official raw PDF page 70"
+      ],
+      "use": "primary local source for PD 1096 occupancy classification and public-use matrix checks",
+      "local_source_checked": true
+    },
+    {
+      "source_id": "ra9514-rirr-2019-health-daycare-assembly-egress-local-b064",
+      "label": "RA 9514 Revised IRR 2019 - health care, day care, assembly, means of egress, and life-safety rules",
+      "authority": "Bureau of Fire Protection revised IRR local raw PDF conversion",
+      "source_type": "fire_code_irr_pdf",
+      "source_locator": "RA 9514 RIRR refined markdown lines 2520-2554, 2646-2728, 3978-4210, 4273-4715, and 4750-4925; raw PDF pages 91, 134-139, 148-149, and 153-158 checked for matching text",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+      "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+      "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+      "checked_markdown_lines": [
+        "RA 9514 RIRR refined markdown lines 2520-2554",
+        "RA 9514 RIRR refined markdown lines 2646-2728",
+        "RA 9514 RIRR refined markdown lines 3978-4210",
+        "RA 9514 RIRR refined markdown lines 4273-4715",
+        "RA 9514 RIRR refined markdown lines 4750-4925"
+      ],
+      "checked_raw_pdf_pages": [
+        "RA 9514 RIRR raw PDF page 91",
+        "RA 9514 RIRR raw PDF pages 134-139",
+        "RA 9514 RIRR raw PDF pages 148-149",
+        "RA 9514 RIRR raw PDF pages 153-158"
+      ],
+      "use": "primary local source for Fire Code classification, egress, alarm, sprinkler, day care, health care, and assembly rules",
+      "local_source_checked": true
+    },
+    {
+      "source_id": "pd9514-fire-code-life-safety-local-b064",
+      "label": "Fire Code source family - general life-safety and egress requirements",
+      "authority": "Fire Code local raw PDF conversion",
+      "source_type": "fire_code_pdf",
+      "source_locator": "PD 9514 Fire Code refined markdown lines 1599-1629; raw PDF pages 57-58 checked for matching life-safety text",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf",
+      "raw_pdf_sha256": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-9514/PD 9514 - Fire Code of the Philippines.md",
+      "refined_markdown_sha256": "sha256:5eb0584f1bcbfa87044e28f2e59a75c6364c7160a98edfdd888c6aef849b01b2",
+      "checked_markdown_lines": [
+        "PD 9514 Fire Code refined markdown lines 1599-1629"
+      ],
+      "checked_raw_pdf_pages": [
+        "PD 9514 Fire Code raw PDF pages 57-58"
+      ],
+      "use": "supporting local source for general life-safety, exits, warning systems, and common-area responsibility language",
+      "local_source_checked": true
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "article-multipurpose-pd1096",
+      "claim_text": "PD 1096 checked rows include Multi-purpose/Barangay Hall, civic/community centers, and assembly groups, so the actual function and table control classification.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "pd1096-rirr-2004-occupancy-public-service-local-b064",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1141, 1171-1176, 1193-1218, and 1259-1272; raw PDF pages 47, 53, 57-59, and 70 checked for matching occupancy text",
+        "quoted_pdf_excerpt": "Civic centers, clubhouses, lodges, community centers"
+      }
+    },
+    {
+      "claim_id": "article-ra9514-assembly",
+      "claim_text": "RA 9514 assembly occupancy includes gathering spaces for 50 or more persons and supplies occupant-load factors for different assembly layouts.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9514-rirr-2019-health-daycare-assembly-egress-local-b064",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 RIRR refined markdown lines 2520-2554, 2646-2728, 3978-4210, 4273-4715, and 4750-4925; raw PDF pages 91, 134-139, 148-149, and 153-158 checked for matching text",
+        "quoted_pdf_excerpt": "The occupant load permitted in any assembly building"
+      }
+    },
+    {
+      "claim_id": "article-general-life-safety",
+      "claim_text": "The Fire Code source family requires enough exits for prompt and safe escape and permits better or safer design than the minimum.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "pd9514-fire-code-life-safety-local-b064",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf",
+        "raw_pdf_sha256": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-9514/PD 9514 - Fire Code of the Philippines.md",
+        "refined_markdown_sha256": "sha256:5eb0584f1bcbfa87044e28f2e59a75c6364c7160a98edfdd888c6aef849b01b2",
+        "source_locator": "PD 9514 Fire Code refined markdown lines 1599-1629; raw PDF pages 57-58 checked for matching life-safety text",
+        "quoted_pdf_excerpt": "Nothing in this Chapter shall be construed to prohibit a better type of design"
+      }
+    },
+    {
+      "claim_id": "question-cfab4c01-7384-475f-9dbb-a90e5b1b953f",
+      "claim_text": "Question edit cfab4c01-7384-475f-9dbb-a90e5b1b953f model ALE-DSGN-005-10-001 is rewritten to the Batch 064 checked local raw-source scope for lea-dsgn-005-10-core-concept.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "pd1096-rirr-2004-occupancy-public-service-local-b064",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1141, 1171-1176, 1193-1218, and 1259-1272; raw PDF pages 47, 53, 57-59, and 70 checked for matching occupancy text",
+        "quoted_pdf_excerpt": "Group H - Assembly for less than 1,000"
+      }
+    },
+    {
+      "claim_id": "question-f06dc934-6ef5-442f-bb57-d56d73d84e8a",
+      "claim_text": "Question edit f06dc934-6ef5-442f-bb57-d56d73d84e8a model ALE-DSGN-005-10-008 is rewritten to the Batch 064 checked local raw-source scope for lea-dsgn-005-10-core-concept.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "pd1096-rirr-2004-occupancy-public-service-local-b064",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1141, 1171-1176, 1193-1218, and 1259-1272; raw PDF pages 47, 53, 57-59, and 70 checked for matching occupancy text",
+        "quoted_pdf_excerpt": "assembly buildings with stage and having an occupant load of less than 1,000"
+      }
+    },
+    {
+      "claim_id": "question-e02df667-3094-4322-9470-b1c6f73a41d7",
+      "claim_text": "Question edit e02df667-3094-4322-9470-b1c6f73a41d7 model ALE-DSGN-005-10-002 is rewritten to the Batch 064 checked local raw-source scope for lea-dsgn-005-10-core-concept.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "pd1096-rirr-2004-occupancy-public-service-local-b064",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1141, 1171-1176, 1193-1218, and 1259-1272; raw PDF pages 47, 53, 57-59, and 70 checked for matching occupancy text",
+        "quoted_pdf_excerpt": "Assembly Buildings with stage and an occupant load of 1,000 or more"
+      }
+    },
+    {
+      "claim_id": "question-7872ac19-1e89-47ab-bf18-1228667eaff1",
+      "claim_text": "Question edit 7872ac19-1e89-47ab-bf18-1228667eaff1 model ALE-DSGN-005-10-007 is rewritten to the Batch 064 checked local raw-source scope for lea-dsgn-005-10-core-concept.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9514-rirr-2019-health-daycare-assembly-egress-local-b064",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 RIRR refined markdown lines 2520-2554, 2646-2728, 3978-4210, 4273-4715, and 4750-4925; raw PDF pages 91, 134-139, 148-149, and 153-158 checked for matching text",
+        "quoted_pdf_excerpt": "dividing the net floor area or space assigned to that use"
+      }
+    },
+    {
+      "claim_id": "question-dd65c550-e1b5-404d-ab8b-77a8dabcb83c",
+      "claim_text": "Question edit dd65c550-e1b5-404d-ab8b-77a8dabcb83c model ALE-DSGN-005-10-006 is rewritten to the Batch 064 checked local raw-source scope for lea-dsgn-005-10-core-concept.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9514-rirr-2019-health-daycare-assembly-egress-local-b064",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 RIRR refined markdown lines 2520-2554, 2646-2728, 3978-4210, 4273-4715, and 4750-4925; raw PDF pages 91, 134-139, 148-149, and 153-158 checked for matching text",
+        "quoted_pdf_excerpt": "one and four tenths square meters (1.4 m2) per person"
+      }
+    },
+    {
+      "claim_id": "question-ae640469-4c88-4353-9ad1-0801e6f7ce6c",
+      "claim_text": "Question edit ae640469-4c88-4353-9ad1-0801e6f7ce6c model ALE-DSGN-005-10-005 is rewritten to the Batch 064 checked local raw-source scope for lea-dsgn-005-10-core-concept.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9514-rirr-2019-health-daycare-assembly-egress-local-b064",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 RIRR refined markdown lines 2520-2554, 2646-2728, 3978-4210, 4273-4715, and 4750-4925; raw PDF pages 91, 134-139, 148-149, and 153-158 checked for matching text",
+        "quoted_pdf_excerpt": "twenty-eight hundredths square meter (0.28 m2) per person"
+      }
+    },
+    {
+      "claim_id": "question-753158bd-b92a-4518-b1e8-9d68bda8c34e",
+      "claim_text": "Question edit 753158bd-b92a-4518-b1e8-9d68bda8c34e model ALE-DSGN-005-10-004 is rewritten to the Batch 064 checked local raw-source scope for lea-dsgn-005-10-core-concept.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9514-rirr-2019-health-daycare-assembly-egress-local-b064",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 RIRR refined markdown lines 2520-2554, 2646-2728, 3978-4210, 4273-4715, and 4750-4925; raw PDF pages 91, 134-139, 148-149, and 153-158 checked for matching text",
+        "quoted_pdf_excerpt": "determined by the number of fixed seats installed"
+      }
+    },
+    {
+      "claim_id": "question-351c680e-87fe-4673-a91a-20a4b3de6f68",
+      "claim_text": "Question edit 351c680e-87fe-4673-a91a-20a4b3de6f68 model ALE-DSGN-005-10-010 is rewritten to the Batch 064 checked local raw-source scope for lea-dsgn-005-10-core-concept.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9514-rirr-2019-health-daycare-assembly-egress-local-b064",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 RIRR refined markdown lines 2520-2554, 2646-2728, 3978-4210, 4273-4715, and 4750-4925; raw PDF pages 91, 134-139, 148-149, and 153-158 checked for matching text",
+        "quoted_pdf_excerpt": "forty-six meters (46 m)"
+      }
+    },
+    {
+      "claim_id": "question-42d6cee5-55e8-4765-b04c-613c04520040",
+      "claim_text": "Question edit 42d6cee5-55e8-4765-b04c-613c04520040 model ALE-DSGN-005-10-009 is rewritten to the Batch 064 checked local raw-source scope for lea-dsgn-005-10-core-concept.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9514-rirr-2019-health-daycare-assembly-egress-local-b064",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 RIRR refined markdown lines 2520-2554, 2646-2728, 3978-4210, 4273-4715, and 4750-4925; raw PDF pages 91, 134-139, 148-149, and 153-158 checked for matching text",
+        "quoted_pdf_excerpt": "unless it is a panic hardware"
+      }
+    },
+    {
+      "claim_id": "question-f0e8719a-b163-4c6e-8a18-5f4050211fb9",
+      "claim_text": "Question edit f0e8719a-b163-4c6e-8a18-5f4050211fb9 model ALE-DSGN-005-10-003 is rewritten to the Batch 064 checked local raw-source scope for lea-dsgn-005-10-core-concept.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9514-rirr-2019-health-daycare-assembly-egress-local-b064",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 RIRR refined markdown lines 2520-2554, 2646-2728, 3978-4210, 4273-4715, and 4750-4925; raw PDF pages 91, 134-139, 148-149, and 153-158 checked for matching text",
+        "quoted_pdf_excerpt": "No person shall permit the overcrowding"
+      }
+    }
+  ],
+  "local_repairs": {
+    "normalized_rewritten": true,
+    "candidate_recomposed_pending": true,
+    "ui_tokens_removed": true,
+    "private_draft_notes_removed": true,
+    "source_records_created": 3,
+    "question_edits_created": 10,
+    "source_safe_rewrite_question_edits": 10,
+    "off_scope_claims_removed_or_rewritten": true
+  },
+  "scenario_enrichment_policy": {
+    "status": "eligible-deferred",
+    "reason": "Scenario expansion was not needed to complete source-audited article and question correctness for this batch."
+  },
+  "unverified_or_rejected_claims": [],
+  "sme_review": {
+    "required": false,
+    "status": "not_required"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

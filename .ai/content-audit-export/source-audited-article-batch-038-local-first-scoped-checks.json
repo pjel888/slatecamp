@@ -1,0 +1,85 @@
+{
+  "schema_version": "batch-scoped-checks-v1",
+  "batch_id": "source-audited-article-batch-038-local-first",
+  "generated_at": "2026-05-11T05:28:08.086Z",
+  "status": "PASS",
+  "blockers": [],
+  "counts": {
+    "article_count": 5,
+    "json_parse_count": 187,
+    "linked_question_count": 132,
+    "question_edit_count": 132,
+    "source_rows_written": 5,
+    "unique_raw_pdf_files_checked": 1,
+    "source_hash_checks": 10,
+    "placeholder_internal_source_gap_matches": 0,
+    "stale_compose_error_files": 0
+  },
+  "article_results": [
+    {
+      "article_id": "d6015c96-3954-4780-ad92-64507a2959d1",
+      "slug": "sheet-metal-and-spray-booths",
+      "article_folder": ".ai/content-audit-export/articles/sheet-metal-and-spray-booths--d6015c96-3954-4780-ad92-64507a2959d1",
+      "linked_questions": 34,
+      "question_edits": 34,
+      "candidate_hash": "sha256:2b6d8a6fdbc83c120128a3d0eb14afc9f3ddf55e20decb8246d4d2f25f0db984",
+      "compose_blockers": [],
+      "diff_safe_to_push": true,
+      "source_audit_status": "PASS",
+      "source_count": 1
+    },
+    {
+      "article_id": "66b5fe8b-8fda-4483-aa77-37d52adec286",
+      "slug": "vertical-openings-and-floor-roof-construction",
+      "article_folder": ".ai/content-audit-export/articles/vertical-openings-and-floor-roof-construction--66b5fe8b-8fda-4483-aa77-37d52adec286",
+      "linked_questions": 29,
+      "question_edits": 29,
+      "candidate_hash": "sha256:6a6f3c2b0c261d9d1f68ca2aea37d659ced62ba9a0bd00aa17f92d990673586c",
+      "compose_blockers": [],
+      "diff_safe_to_push": true,
+      "source_audit_status": "PASS",
+      "source_count": 1
+    },
+    {
+      "article_id": "b2166005-73ba-4a95-8dea-93e12bae9a6b",
+      "slug": "penthouses-and-roof-structures",
+      "article_folder": ".ai/content-audit-export/articles/penthouses-and-roof-structures--b2166005-73ba-4a95-8dea-93e12bae9a6b",
+      "linked_questions": 26,
+      "question_edits": 26,
+      "candidate_hash": "sha256:a8992f63c942efe766446a10aa1699be5a7b456d0c7c15eca64eae68862315f3",
+      "compose_blockers": [],
+      "diff_safe_to_push": true,
+      "source_audit_status": "PASS",
+      "source_count": 1
+    },
+    {
+      "article_id": "dc69faa6-ef36-40a7-a8f1-fdd88debdbf5",
+      "slug": "commercial-clearances",
+      "article_folder": ".ai/content-audit-export/articles/commercial-clearances--dc69faa6-ef36-40a7-a8f1-fdd88debdbf5",
+      "linked_questions": 22,
+      "question_edits": 22,
+      "candidate_hash": "sha256:60d2554d8c173ae111bdd3de2950f5667351fd879954d419bab482f9f24f3127",
+      "compose_blockers": [],
+      "diff_safe_to_push": true,
+      "source_audit_status": "PASS",
+      "source_count": 1
+    },
+    {
+      "article_id": "5ba0b022-0a85-4d27-af92-79d093a8d491",
+      "slug": "residential-clearances",
+      "article_folder": ".ai/content-audit-export/articles/residential-clearances--5ba0b022-0a85-4d27-af92-79d093a8d491",
+      "linked_questions": 21,
+      "question_edits": 21,
+      "candidate_hash": "sha256:514a5d41e42a7529fa80169eb5c154a1e14275ab29fbcd0abafd2c22845a2e84",
+      "compose_blockers": [],
+      "diff_safe_to_push": true,
+      "source_audit_status": "PASS",
+      "source_count": 1
+    }
+  ],
+  "source_hash_mismatches": [],
+  "marker_matches": [],
+  "stale_compose_errors": [],
+  "targeted_tests": "PASS: bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts (34 pass, 0 fail, 328 expects)",
+  "post_artifact_git_diff_check": "PASS"
+}

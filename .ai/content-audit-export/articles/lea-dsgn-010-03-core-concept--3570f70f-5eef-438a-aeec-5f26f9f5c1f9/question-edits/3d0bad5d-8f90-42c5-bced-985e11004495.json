@@ -1,0 +1,58 @@
+{
+  "question_id": "3d0bad5d-8f90-42c5-bced-985e11004495",
+  "baseline_hash": "sha256:ffea89e58517d6e63398af04858baea25713a9f25c04737d551bb3c936b7eb4a",
+  "action": "replace",
+  "reason": "source-audited-article-batch-040-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-040",
+  "approved_at": "2026-05-11T14:04:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-040-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 1627-1766",
+          "PD 1096 RIRR refined markdown lines 1784-1786"
+        ]
+      },
+      {
+        "source_id": "bp-344-2024-rirr-ncda-local",
+        "label": "BP 344 2024 Revised IRR - NCDA",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "checked_markdown_lines": [
+          "BP 344 2024 IRR refined markdown lines 228-305"
+        ]
+      }
+    ],
+    "citation": "BP 344 2024 Revised IRR, Accessible Parking"
+  },
+  "proposed": {
+    "text": "Under BP 344 2024, what minimum size is required for an accessible parking slot?",
+    "options": [
+      {
+        "id": "b040-3570-07-a",
+        "text": "4000 mm wide by 5000 mm long"
+      },
+      {
+        "id": "b040-3570-07-b",
+        "text": "2500 mm wide by 5000 mm long"
+      },
+      {
+        "id": "b040-3570-07-c",
+        "text": "2150 mm wide by 6000 mm long"
+      },
+      {
+        "id": "b040-3570-07-d",
+        "text": "3000 mm wide by 9000 mm long"
+      }
+    ],
+    "correct_option_id": "b040-3570-07-a",
+    "rationale": "Correct answer: 4000 mm wide by 5000 mm long. This is directly supported by BP 344 2024 Revised IRR, Accessible Parking.",
+    "explanation": "The Batch 040 source-audited correction uses only local raw PDF families and locator-checked refined markdown for BP 344 2024 Revised IRR, Accessible Parking.",
+    "code_citation": "BP 344 2024 Revised IRR, Accessible Parking"
+  }
+}

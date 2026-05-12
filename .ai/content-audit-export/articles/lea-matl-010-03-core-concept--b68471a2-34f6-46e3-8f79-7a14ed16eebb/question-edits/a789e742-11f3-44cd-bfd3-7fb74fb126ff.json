@@ -1,0 +1,55 @@
+{
+  "question_id": "a789e742-11f3-44cd-bfd3-7fb74fb126ff",
+  "baseline_hash": "sha256:9c9b0a6302b7d24cdda482af79f6f19eb955d8bfa106e20802dbc2a27a829ac7",
+  "action": "replace",
+  "reason": "source-audited-article-batch-080-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-010-03-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-080",
+  "approved_at": "2026-05-12T07:05:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "b68471a2-34f6-46e3-8f79-7a14ed16eebb",
+    "parent_article_slug": "lea-matl-010-03-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Fajardo refined markdown lines 5500-5521, 5985-6101, and 6262-6285; raw PDF pages 45, 49-50, and 52 checked by local PyMuPDF extraction",
+    "checked_markdown_lines": [
+      "Fajardo refined markdown lines 5500-5521, 5985-6101, and 6262-6285; raw PDF pages 45, 49-50, and 52 checked by local PyMuPDF extraction"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "fajardo-cost-estimates-b080",
+        "label": "Architectural Cost Estimates By Max Fajardo",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+        "sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+        "raw_markdown_sha256": "sha256:223efdc2dd963208910027eba08fe87b4919de1a04b76cac095bbd76a7a9a962",
+        "locator": "Fajardo refined markdown lines 5500-5521, 5985-6101, and 6262-6285; raw PDF pages 45, 49-50, and 52 checked by local PyMuPDF extraction"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 080 local raw-source-audited reinforcing_bar_takeoff scope."
+  },
+  "proposed": {
+    "text": "How is tie wire ordered in Fajardo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "By kilogram or roll"
+      },
+      {
+        "id": "b",
+        "text": "By board foot"
+      },
+      {
+        "id": "c",
+        "text": "By cubic meter of concrete"
+      },
+      {
+        "id": "d",
+        "text": "By number of window sashes"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Fajardo says tie wire is ordered by kilograms or roll, not by feet or meter length.",
+    "explanation": "Fajardo says tie wire is ordered by kilograms or roll, not by feet or meter length.",
+    "code_citation": "Architectural Cost Estimates By Max Fajardo"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "question_id": "f8ac7018-bf5c-448b-8c47-693c31b43314",
+  "baseline_hash": "sha256:fa341a7cffbf9c55ae5cdd4740be22a97dd85b33997fb24fcf9351350ca44960",
+  "action": "replace",
+  "reason": "source-audited-article-batch-067-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes prior off-source framing where present.",
+  "approved_by": "codex-local-first-batch-067",
+  "approved_at": "2026-05-11T23:36:12+08:00",
+  "source_audit_support": {
+    "parent_article_id": "a865c6b2-8c25-404e-bb0c-08d374d374a5",
+    "parent_article_slug": "pd-1096-rule-vii-height-limits",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction",
+    "checked_markdown_lines": [
+      "PD 1096 RIRR lines 486-530",
+      "PD 1096 RIRR lines 545-631",
+      "PD 1096 RIRR lines 756-844",
+      "PD 1096 RIRR lines 870-878",
+      "PD 1096 RIRR lines 1088-1149",
+      "PD 1096 RIRR lines 1310-1329",
+      "PD 1096 RIRR lines 1452-1498",
+      "PD 1096 RIRR lines 1627-1771",
+      "PD 1096 RIRR lines 2097-2300"
+    ],
+    "checked_raw_pdf_pages": [
+      "PD 1096 raw PDF pages 21-22",
+      "PD 1096 raw PDF pages 34-36",
+      "PD 1096 raw PDF page 47",
+      "PD 1096 raw PDF page 80",
+      "PD 1096 raw PDF pages 88-90",
+      "PD 1096 raw PDF page 97",
+      "PD 1096 raw PDF page 107",
+      "PD 1096 raw PDF page 119",
+      "PD 1096 raw PDF pages 126 and 128"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
+        "label": "PD 1096 RIRR 2004 - permits, occupancy, mixed occupancy, height, yards, and parking",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, and citation rewritten to the Batch 067 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "Which sloping-grade rule is source-safe?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Height measured from the lowest adjoining surface must not exceed the maximum height by more than 3.00 meters."
+      },
+      {
+        "id": "b",
+        "text": "Sloping sites have no height control."
+      },
+      {
+        "id": "c",
+        "text": "Only the roof slope matters."
+      },
+      {
+        "id": "d",
+        "text": "The building may exceed BHL by 10 meters on every sloping lot."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The checked notes state that height from the lowest adjoining surface must not exceed the maximum by more than 3.00 meters.",
+    "explanation": "The checked notes state that height from the lowest adjoining surface must not exceed the maximum by more than 3.00 meters.",
+    "code_citation": "PD 1096 RIRR lines 1494-1498",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "bloom_level": "apply",
+    "application_context": "grade measurement",
+    "practice_context": [
+      "source-audited code interpretation",
+      "grade measurement"
+    ],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false
+  }
+}

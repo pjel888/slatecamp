@@ -1,134 +1,21 @@
-# Widths & Slopes
+# Widths and slopes
 
+Widths and slopes are accessibility control dimensions. In the checked BP 344 2024 Revised IRR source, the main plan-check question is whether the route remains usable for wheelchair users and people with visual disabilities from arrival point to entrance, ramp, walkway, or crossing.
 
-## Board Exam Quick Check
+## Ramps
 
-Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+Changes in level require an accessible ramp unless they are served by a dropped sidewalk, curb ramp, elevator, or other mechanical device. Accessible ramps have a minimum clear width of 1200 mm. Ramps with a total length longer than 10.50 m require intermediate landings with a minimum length of 1800 mm, and level areas not less than 1800 mm are required at the upper and lower ends of ramps.
 
-**Common mistake:** treating a familiar keyword in **Widths & Slopes** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+Handrails are required on both sides of ramps and stairs. BP 344 gives the handrail heights at 700 mm and 900 mm above ramps and stairs, with a 300 mm horizontal extension at the ends. Protection railings are separate from handrails: where stairs, ramps, balconies, landings, or porches are more than 750 mm above adjacent grade, railings for protection are installed at a minimum height of 1100 mm.
 
-## Learning Goal
+## Sidewalks, walkways, and curb ramps
 
-After reading this article, you should be able to:
+Sidewalks, walkways, and pathways should be as level as possible and slip resistant in wet and dry conditions. Where possible, the running gradient should not be steeper than 1:20 or 5 percent, and the maximum cross gradient is 1:100 or 1 percent.
 
-Calculate minimum required widths for corridors, aisles, exit passageways, and ramps based on occupant load, occupancy group, and accessibility requirements; apply maximum slope ratios for ramps (1:12, 1:15, 1:20) and sidewalk grades; and determine when a ramp is required versus when stairs alone are acceptable.
+Sidewalks, walkways, and pathways have a minimum width of 1500 mm. Where two wheelchairs need to pass, the minimum width is 1800 mm. Headroom is not less than 2200 mm, and obstacles, protrusions, street furniture, bollards, signposts, columns, and utility poles must not reduce the required accessible route.
 
-## 1. Accessible Ramps (BP 344 – Appendix A)
+Curb ramps are allowed only where they will not obstruct the sidewalk or reduce the required clear width or 1500 mm by 1500 mm turning area. At loading bays for persons with disabilities, the minimum curb ramp width is 900 mm, and the curb ramp gradient is not steeper than 1:15.
 
-**Width**
+## Exam-safe method
 
-- Minimum clear width of **accessible ramps**: **1200 mm**.[file:2]
-
-**Slopes (New Work)** – Table A.1.1: Accessible Ramps
-
-| Slope    | Approx. % | Max Run Length           | Max Rise per Run | Landing Interval                   |
-| :------- | :-------- | :----------------------- | :--------------- | :--------------------------------- |
-| **1:20** | 5.0%      | – (no rise limit stated) | –                | Landings every **15.0 m**.[file:2] |
-| **1:15** | 6.67%     | **10.50 m**              | **700 mm**       | Landings every **10.0 m**.[file:2] |
-
-- Formula: \(\text{Run} = \text{Rise} \times \text{Slope Ratio}\).
-  Example: \(700 \times 15 = 10{,}500\) mm = **10.50 m**.[file:2]
-
-**Landings**
-
-- Intermediate landing required if total ramp length > **10.50 m**.[file:2]
-- Minimum length of **intermediate landings**: **1800 mm**.[file:2]
-- Level area at **upper and lower ends** of ramp: ≥ **1800 mm** in direction of travel.[file:2]
-
-**Edge Protection & Handrails**
-
-- Raised edge on both sides: **100 mm** min height.[file:2]
-- Handrails on **both sides** of ramps at **700 mm and 900 mm** above ramp surface; 300 mm horizontal extension at upper and lower ends.[file:2]
-
----
-
-## 2. Sidewalks / Walkways / Pathways (BP 344 – Appendix B)
-
-**Widths**
-
-- Minimum width of sidewalks/walkways/pathways: **1500 mm**.[file:2]
-- Where space is required for **two wheelchairs to pass**: width = **1800 mm**.[file:2]
-
-**Gradients**
-
-- Along length: “kept as level as possible”; wherever possible, **not steeper than 1:20 (5%)**.[file:2]
-- Cross gradient: maximum **1:100 (1%)**.[file:2]
-
-**Turn / Rest / Passing Spaces**
-
-- On lengthy or busy routes, provide spaces with **minimum clear dimension 1800 mm**, at **maximum 12000 mm** intervals.[file:2]
-- Turnabout spaces at or within **3500 mm of every dead‑end corridor** (per Appendix B text: “Turnabout spaces shall also be provided at or within 3500 mm of every dead-end corridor”).[file:2]
-
----
-
-## 3. Curb Ramps & Dropped Sidewalks (BP 344 – Appendix B)
-
-**Curb Ramps**
-
-- Minimum width (drop‑off for PWD at loading bays): **900 mm**.[file:2]
-- Maximum gradient: **1:15**.[file:2]
-
-**Dropped Sidewalks**
-
-- Base/level surface at bottom: **1500 mm depth** for crossings/walkways &lt;1500 mm wide; width same as crossing.[file:2]
-
----
-
-## 4. PD 1096: Ramps as Exits (Context Only)
-
-- “A ramp conforming to the provisions of the Code may be used as an exit. **The width of ramps shall be as required for corridors**.”[file:1]
-- Use this together with BP 344: where a ramp is part of an **accessible route**, adopt **≥1200 mm clear** for accessibility even if the PD 1096 corridor minimum is smaller.[file:1][file:2]
-
----
-
-## 5. Quick Memory Grid
-
-```text
-RAMP WIDTH (accessible)     → 1200 mm
-RAMP LANDINGS (top/bottom)  → 1800 mm
-RAMP INTERMEDIATE LANDING   → 1800 mm (if total > 10.50 m)
-RAMP SLOPE (preferred)      → 1:20
-RAMP SLOPE (max new)        → 1:15 (10.50 m run, 700 mm rise)
-
-SIDEWALK/WALKWAY WIDTH      → 1500 mm min
-TWO-WHEELCHAIR WIDTH        → 1800 mm
-REST / TURN SPACE           → 1800 mm; every 12,000 mm
-CROSS GRADIENT (sidewalk)   → 1:100
-LENGTHWISE GRADIENT         → as level as possible; ideally ≤1:20
-
-CURB RAMP WIDTH             → 900 mm (drop-off)
-CURB RAMP SLOPE             → 1:15 max
-EDGE PROTECTION (ramp)      → 100 mm
-HANDRAILS (ramp)            → 700 & 900 mm high, both sides
-```
-
-Use this page to answer any LEA item asking for **minimum widths** or **slopes/lengths** of ramps and primary pedestrian routes based solely on your attached PD 1096 + BP 344 2024 IRR texts.[file:1][file:2]
-
----
-
-[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code="bp344", section="Section 7 - Widths and Slopes"
-- Text: Per BP 344 2024 IRR Appendix A, Table A.1.1: Accessible Ramp Width = 1200 mm minimum clear width. Slope 1:20 (5.0%) — no stated rise limit, landings every 15.0 m. Slope 1:15 (6.67%) — max run 10,500 mm, max rise 700 mm, landings every 10.0 m. Intermediate landings: minimum 1800 mm length. Upper and lower landings: ≥1800 mm in direction of travel.
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: 1:12 is the MAXIMUM allowable slope, NOT the standard. The exam will present a question stating 'a ramp with 1:12 slope' and ask if it's compliant. The answer depends on context: 1:12 is acceptable ONLY where space constraints prevent 1:15 or 1:20. If the question doesn't mention space constraints, 1:12 may still be technically compliant as a maximum, but 1:20 is the preferred/ideal.
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Handrails are required when the ramp rise exceeds 150 mm (about 6 inches). Edge protection (curbs, rails, or extended surfaces) is required on both sides of any ramp with a rise exceeding 150 mm. These are frequently tested together — a ramp exam question often bundles slope, run, landing, handrail, and edge protection requirements.
-[/SLATECAMP_UI_BLOCK]
-
----
-
-## Cross‑References
-
-**Stairs Handrails Guardrails**, **Conflict Matrix Stairs Guards Elevators**, **Bp 344 Ramp Slope Tiers**, **Site Exterior Circulation**
-
-
-<!-- no-media-needed: existing content format is sufficient without visual media -->
+For LEA questions, identify the route element first: ramp, stair, sidewalk, walkway, dropped sidewalk, curb ramp, entrance, or corridor. Then check width, running slope, cross slope, landing or turning area, handrail, edge protection, headroom, and obstruction. Do not mix a ramp slope rule with a sidewalk cross-gradient rule.

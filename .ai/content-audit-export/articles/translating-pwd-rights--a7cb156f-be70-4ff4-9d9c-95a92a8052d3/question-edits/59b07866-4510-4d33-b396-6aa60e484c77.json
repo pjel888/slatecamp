@@ -1,0 +1,51 @@
+{
+  "question_id": "59b07866-4510-4d33-b396-6aa60e484c77",
+  "baseline_hash": "sha256:0c69d5c1e153b68e55ba6d258dd73ea7cf87b6b7021d37063bde1ee7bb48525b",
+  "action": "replace",
+  "reason": "source-audited-article-batch-040-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-040",
+  "approved_at": "2026-05-11T14:04:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-040-local-first",
+    "checked_sources": [
+      {
+        "source_id": "bp-344-2024-rirr-ncda-local",
+        "label": "BP 344 2024 Revised IRR - NCDA",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "checked_markdown_lines": [
+          "BP 344 2024 IRR refined markdown lines 36-70",
+          "BP 344 2024 IRR refined markdown lines 198-224",
+          "BP 344 2024 IRR refined markdown lines 228-305",
+          "BP 344 2024 IRR refined markdown lines 770-850"
+        ]
+      }
+    ],
+    "citation": "BP 344 2024 Revised IRR, Accessible Ramps"
+  },
+  "proposed": {
+    "text": "What minimum clear width is required for an accessible ramp?",
+    "options": [
+      {
+        "id": "b040-a7cb-21-a",
+        "text": "1200 mm"
+      },
+      {
+        "id": "b040-a7cb-21-b",
+        "text": "900 mm"
+      },
+      {
+        "id": "b040-a7cb-21-c",
+        "text": "1500 mm"
+      },
+      {
+        "id": "b040-a7cb-21-d",
+        "text": "1800 mm"
+      }
+    ],
+    "correct_option_id": "b040-a7cb-21-a",
+    "rationale": "Correct answer: 1200 mm. This is directly supported by BP 344 2024 Revised IRR, Accessible Ramps.",
+    "explanation": "The Batch 040 source-audited correction uses only local raw PDF families and locator-checked refined markdown for BP 344 2024 Revised IRR, Accessible Ramps.",
+    "code_citation": "BP 344 2024 Revised IRR, Accessible Ramps"
+  }
+}

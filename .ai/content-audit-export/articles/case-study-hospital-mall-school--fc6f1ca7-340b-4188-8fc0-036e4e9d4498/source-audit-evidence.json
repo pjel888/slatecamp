@@ -1,0 +1,343 @@
+{
+  "batch_id": "source-audited-article-batch-065-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T23:18:00.000+08:00",
+  "target": {
+    "article_id": "fc6f1ca7-340b-4188-8fc0-036e4e9d4498",
+    "slug": "case-study-hospital-mall-school",
+    "title": "Case Study Hospital Mall School",
+    "article_folder": ".ai/content-audit-export/articles/case-study-hospital-mall-school--fc6f1ca7-340b-4188-8fc0-036e4e9d4498",
+    "normalized_sha256": "sha256:f9d537eab3f1980cec60f2ec0d9d4683c7502acf698fadab65a7d5aaf95ebd7e",
+    "candidate_sha256": "sha256:f9d537eab3f1980cec60f2ec0d9d4683c7502acf698fadab65a7d5aaf95ebd7e",
+    "candidate_path": ".ai/content-audit-export/articles/case-study-hospital-mall-school--fc6f1ca7-340b-4188-8fc0-036e4e9d4498/candidate.md"
+  },
+  "classification": {
+    "legal_or_code_candidate": true,
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "source_risk_tier": "high",
+    "source_domains": [
+      "PD 1096 hospital/school/restaurant/parking classification",
+      "RA 9514 health care, mercantile, educational, assembly, and mixed occupancy",
+      "Fire Code general egress"
+    ]
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdfs_checked_first": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "local_pdf_extraction_method": "python_pymupdf_local",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "pd1096-rirr-2004-occupancy-mixed-facility-local-b065",
+      "label": "PD 1096 RIRR 2004 - occupancy classification for residential, institutional, business, industrial, storage, assembly, resort, school, hospital, restaurant, and parking/loading references",
+      "authority": "DPWH official revised IRR local raw PDF conversion",
+      "source_type": "building_code_irr_pdf",
+      "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1128, 1174-1190, 1265-1272, 1659-1667, 1681-1698, and 1735-1736; raw PDF pages 47-48, 53, 57, 72, and 101-103 checked for matching text by local PDF extraction",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "checked_markdown_lines": [
+        "PD 1096 RIRR DPWH Official refined markdown lines 1088-1128",
+        "PD 1096 RIRR DPWH Official refined markdown lines 1174-1190",
+        "PD 1096 RIRR DPWH Official refined markdown lines 1265-1272",
+        "PD 1096 RIRR DPWH Official refined markdown lines 1659-1667",
+        "PD 1096 RIRR DPWH Official refined markdown lines 1681-1698",
+        "PD 1096 RIRR DPWH Official refined markdown lines 1735-1736"
+      ],
+      "checked_raw_pdf_pages": [
+        "PD 1096 RIRR DPWH Official raw PDF pages 47-48",
+        "PD 1096 RIRR DPWH Official raw PDF page 53",
+        "PD 1096 RIRR DPWH Official raw PDF page 57",
+        "PD 1096 RIRR DPWH Official raw PDF page 72",
+        "PD 1096 RIRR DPWH Official raw PDF pages 101-103"
+      ],
+      "use": "primary local source for PD 1096 occupancy and parking/loading classification checks in Batch 065",
+      "local_source_checked": true
+    },
+    {
+      "source_id": "ra9514-rirr-2019-occupancy-egress-storage-hotel-local-b065",
+      "label": "RA 9514 Revised IRR 2019 - occupancy classification, mixed occupancy, assembly load, educational exits, hotel/dormitory protection, and storage egress",
+      "authority": "Bureau of Fire Protection revised IRR local raw PDF conversion",
+      "source_type": "fire_code_irr_pdf",
+      "source_locator": "RA 9514 RIRR refined markdown lines 1435, 1628, 1648-1650, 1702, 1807, 2521-2591, 3984-3994, 4275-4303, 5390-5476, and 6152-6200; raw PDF pages 64, 68, 91-93, 142, 168, 171, and 189 checked for matching text by local PDF extraction",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+      "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+      "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+      "checked_markdown_lines": [
+        "RA 9514 RIRR refined markdown line 1435",
+        "RA 9514 RIRR refined markdown line 1628",
+        "RA 9514 RIRR refined markdown lines 1648-1650",
+        "RA 9514 RIRR refined markdown lines 1702 and 1807",
+        "RA 9514 RIRR refined markdown lines 2521-2591",
+        "RA 9514 RIRR refined markdown lines 3984-3994",
+        "RA 9514 RIRR refined markdown lines 4275-4303",
+        "RA 9514 RIRR refined markdown lines 5390-5476",
+        "RA 9514 RIRR refined markdown lines 6152-6200"
+      ],
+      "checked_raw_pdf_pages": [
+        "RA 9514 RIRR raw PDF page 64",
+        "RA 9514 RIRR raw PDF page 68",
+        "RA 9514 RIRR raw PDF pages 91-93",
+        "RA 9514 RIRR raw PDF page 142",
+        "RA 9514 RIRR raw PDF page 168",
+        "RA 9514 RIRR raw PDF page 171",
+        "RA 9514 RIRR raw PDF page 189"
+      ],
+      "use": "primary local source for Fire Code classification, egress, alarm, sprinkler, educational, hotel/dormitory, assembly, storage, and mixed-occupancy checks in Batch 065",
+      "local_source_checked": true
+    },
+    {
+      "source_id": "pd9514-fire-code-life-safety-occupancy-local-b065",
+      "label": "Fire Code source family - general life-safety, occupancy, and egress requirements",
+      "authority": "Fire Code local raw PDF conversion",
+      "source_type": "fire_code_pdf",
+      "source_locator": "PD 9514 Fire Code refined markdown lines 1599-1629, 1655-1719, 2654, 2849-2855, and 3644-3728; raw PDF pages 57-63 and 111 checked for matching text by local PDF extraction",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf",
+      "raw_pdf_sha256": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-9514/PD 9514 - Fire Code of the Philippines.md",
+      "refined_markdown_sha256": "sha256:5eb0584f1bcbfa87044e28f2e59a75c6364c7160a98edfdd888c6aef849b01b2",
+      "checked_markdown_lines": [
+        "PD 9514 Fire Code refined markdown lines 1599-1629",
+        "PD 9514 Fire Code refined markdown lines 1655-1719",
+        "PD 9514 Fire Code refined markdown line 2654",
+        "PD 9514 Fire Code refined markdown lines 2849-2855",
+        "PD 9514 Fire Code refined markdown lines 3644-3728"
+      ],
+      "checked_raw_pdf_pages": [
+        "PD 9514 Fire Code raw PDF pages 57-63",
+        "PD 9514 Fire Code raw PDF page 111"
+      ],
+      "use": "supporting local source for general life-safety, occupancy classification, exits, warning systems, and egress checks in Batch 065",
+      "local_source_checked": true
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "article-case-ra9514-classification",
+      "claim_text": "RA 9514 classifies hospital, mall, and school conditions through health care, mercantile, educational, assembly, and mixed occupancy rules.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9514-rirr-2019-occupancy-egress-storage-hotel-local-b065",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 RIRR refined markdown lines 2521-2591; raw PDF pages 91-93",
+        "quoted_pdf_excerpt": "Checked local raw PDF page and refined line locator recorded; article uses paraphrase only."
+      }
+    },
+    {
+      "claim_id": "article-case-pd1096-classification",
+      "claim_text": "PD 1096 provides checked anchors for schools, hospitals, restaurants, lodging, and parking/loading rows used in the case-study framing.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "pd1096-rirr-2004-occupancy-mixed-facility-local-b065",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 RIRR refined markdown lines 1094-1128 and 1681-1698; raw PDF pages 47-48 and 101-103",
+        "quoted_pdf_excerpt": "Checked local raw PDF page and refined line locator recorded; article uses paraphrase only."
+      }
+    },
+    {
+      "claim_id": "article-case-school-egress",
+      "claim_text": "RA 9514 educational egress rules include room doorway thresholds, two exits per storey, and checked travel-distance limits.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9514-rirr-2019-occupancy-egress-storage-hotel-local-b065",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 RIRR refined markdown lines 4275-4303; raw PDF page 142",
+        "quoted_pdf_excerpt": "Checked local raw PDF page and refined line locator recorded; article uses paraphrase only."
+      }
+    },
+    {
+      "claim_id": "question-241f406f-336a-4198-932d-1d78b4b5b615",
+      "claim_text": "Question edit 241f406f-336a-4198-932d-1d78b4b5b615 is rewritten to the Batch 065 checked local raw-source scope for case-study-hospital-mall-school.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9514-rirr-2019-occupancy-egress-storage-hotel-local-b065",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1128, 1174-1190, 1265-1272, 1659-1667, 1681-1698, and 1735-1736; raw PDF pages 47-48, 53, 57, 72, and 101-103 checked for matching text by local PDF extraction; RA 9514 RIRR refined markdown lines 1435, 1628, 1648-1650, 1702, 1807, 2521-2591, 3984-3994, 4275-4303, 5390-5476, and 6152-6200; raw PDF pages 64, 68, 91-93, 142, 168, 171, and 189 checked for matching text by local PDF extraction; PD 9514 Fire Code refined markdown lines 1599-1629, 1655-1719, 2654, 2849-2855, and 3644-3728; raw PDF pages 57-63 and 111 checked for matching text by local PDF extraction",
+        "quoted_pdf_excerpt": "Question content is source-safe rewrite; see proposed code_citation for precise checked locator."
+      }
+    },
+    {
+      "claim_id": "question-cf0b98c2-ff76-4a51-a049-09e2924408f8",
+      "claim_text": "Question edit cf0b98c2-ff76-4a51-a049-09e2924408f8 is rewritten to the Batch 065 checked local raw-source scope for case-study-hospital-mall-school.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9514-rirr-2019-occupancy-egress-storage-hotel-local-b065",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1128, 1174-1190, 1265-1272, 1659-1667, 1681-1698, and 1735-1736; raw PDF pages 47-48, 53, 57, 72, and 101-103 checked for matching text by local PDF extraction; RA 9514 RIRR refined markdown lines 1435, 1628, 1648-1650, 1702, 1807, 2521-2591, 3984-3994, 4275-4303, 5390-5476, and 6152-6200; raw PDF pages 64, 68, 91-93, 142, 168, 171, and 189 checked for matching text by local PDF extraction; PD 9514 Fire Code refined markdown lines 1599-1629, 1655-1719, 2654, 2849-2855, and 3644-3728; raw PDF pages 57-63 and 111 checked for matching text by local PDF extraction",
+        "quoted_pdf_excerpt": "Question content is source-safe rewrite; see proposed code_citation for precise checked locator."
+      }
+    },
+    {
+      "claim_id": "question-036245ae-a96d-4363-bc10-9b4354409910",
+      "claim_text": "Question edit 036245ae-a96d-4363-bc10-9b4354409910 is rewritten to the Batch 065 checked local raw-source scope for case-study-hospital-mall-school.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9514-rirr-2019-occupancy-egress-storage-hotel-local-b065",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1128, 1174-1190, 1265-1272, 1659-1667, 1681-1698, and 1735-1736; raw PDF pages 47-48, 53, 57, 72, and 101-103 checked for matching text by local PDF extraction; RA 9514 RIRR refined markdown lines 1435, 1628, 1648-1650, 1702, 1807, 2521-2591, 3984-3994, 4275-4303, 5390-5476, and 6152-6200; raw PDF pages 64, 68, 91-93, 142, 168, 171, and 189 checked for matching text by local PDF extraction; PD 9514 Fire Code refined markdown lines 1599-1629, 1655-1719, 2654, 2849-2855, and 3644-3728; raw PDF pages 57-63 and 111 checked for matching text by local PDF extraction",
+        "quoted_pdf_excerpt": "Question content is source-safe rewrite; see proposed code_citation for precise checked locator."
+      }
+    },
+    {
+      "claim_id": "question-9d20ba95-68df-43a3-bc57-c528f2b31d75",
+      "claim_text": "Question edit 9d20ba95-68df-43a3-bc57-c528f2b31d75 is rewritten to the Batch 065 checked local raw-source scope for case-study-hospital-mall-school.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9514-rirr-2019-occupancy-egress-storage-hotel-local-b065",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1128, 1174-1190, 1265-1272, 1659-1667, 1681-1698, and 1735-1736; raw PDF pages 47-48, 53, 57, 72, and 101-103 checked for matching text by local PDF extraction; RA 9514 RIRR refined markdown lines 1435, 1628, 1648-1650, 1702, 1807, 2521-2591, 3984-3994, 4275-4303, 5390-5476, and 6152-6200; raw PDF pages 64, 68, 91-93, 142, 168, 171, and 189 checked for matching text by local PDF extraction; PD 9514 Fire Code refined markdown lines 1599-1629, 1655-1719, 2654, 2849-2855, and 3644-3728; raw PDF pages 57-63 and 111 checked for matching text by local PDF extraction",
+        "quoted_pdf_excerpt": "Question content is source-safe rewrite; see proposed code_citation for precise checked locator."
+      }
+    },
+    {
+      "claim_id": "question-0b1a58aa-e2dc-4652-aed9-90d65d88897e",
+      "claim_text": "Question edit 0b1a58aa-e2dc-4652-aed9-90d65d88897e is rewritten to the Batch 065 checked local raw-source scope for case-study-hospital-mall-school.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9514-rirr-2019-occupancy-egress-storage-hotel-local-b065",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1128, 1174-1190, 1265-1272, 1659-1667, 1681-1698, and 1735-1736; raw PDF pages 47-48, 53, 57, 72, and 101-103 checked for matching text by local PDF extraction; RA 9514 RIRR refined markdown lines 1435, 1628, 1648-1650, 1702, 1807, 2521-2591, 3984-3994, 4275-4303, 5390-5476, and 6152-6200; raw PDF pages 64, 68, 91-93, 142, 168, 171, and 189 checked for matching text by local PDF extraction; PD 9514 Fire Code refined markdown lines 1599-1629, 1655-1719, 2654, 2849-2855, and 3644-3728; raw PDF pages 57-63 and 111 checked for matching text by local PDF extraction",
+        "quoted_pdf_excerpt": "Question content is source-safe rewrite; see proposed code_citation for precise checked locator."
+      }
+    },
+    {
+      "claim_id": "question-ad0caf2e-6861-4442-959c-01113c917e90",
+      "claim_text": "Question edit ad0caf2e-6861-4442-959c-01113c917e90 is rewritten to the Batch 065 checked local raw-source scope for case-study-hospital-mall-school.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9514-rirr-2019-occupancy-egress-storage-hotel-local-b065",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1128, 1174-1190, 1265-1272, 1659-1667, 1681-1698, and 1735-1736; raw PDF pages 47-48, 53, 57, 72, and 101-103 checked for matching text by local PDF extraction; RA 9514 RIRR refined markdown lines 1435, 1628, 1648-1650, 1702, 1807, 2521-2591, 3984-3994, 4275-4303, 5390-5476, and 6152-6200; raw PDF pages 64, 68, 91-93, 142, 168, 171, and 189 checked for matching text by local PDF extraction; PD 9514 Fire Code refined markdown lines 1599-1629, 1655-1719, 2654, 2849-2855, and 3644-3728; raw PDF pages 57-63 and 111 checked for matching text by local PDF extraction",
+        "quoted_pdf_excerpt": "Question content is source-safe rewrite; see proposed code_citation for precise checked locator."
+      }
+    },
+    {
+      "claim_id": "question-a2bb45a9-c3e5-4495-ad40-fe92ad46b933",
+      "claim_text": "Question edit a2bb45a9-c3e5-4495-ad40-fe92ad46b933 is rewritten to the Batch 065 checked local raw-source scope for case-study-hospital-mall-school.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9514-rirr-2019-occupancy-egress-storage-hotel-local-b065",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1128, 1174-1190, 1265-1272, 1659-1667, 1681-1698, and 1735-1736; raw PDF pages 47-48, 53, 57, 72, and 101-103 checked for matching text by local PDF extraction; RA 9514 RIRR refined markdown lines 1435, 1628, 1648-1650, 1702, 1807, 2521-2591, 3984-3994, 4275-4303, 5390-5476, and 6152-6200; raw PDF pages 64, 68, 91-93, 142, 168, 171, and 189 checked for matching text by local PDF extraction; PD 9514 Fire Code refined markdown lines 1599-1629, 1655-1719, 2654, 2849-2855, and 3644-3728; raw PDF pages 57-63 and 111 checked for matching text by local PDF extraction",
+        "quoted_pdf_excerpt": "Question content is source-safe rewrite; see proposed code_citation for precise checked locator."
+      }
+    },
+    {
+      "claim_id": "question-3e80f75e-55f1-47b5-86eb-311ebb72689b",
+      "claim_text": "Question edit 3e80f75e-55f1-47b5-86eb-311ebb72689b is rewritten to the Batch 065 checked local raw-source scope for case-study-hospital-mall-school.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9514-rirr-2019-occupancy-egress-storage-hotel-local-b065",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1128, 1174-1190, 1265-1272, 1659-1667, 1681-1698, and 1735-1736; raw PDF pages 47-48, 53, 57, 72, and 101-103 checked for matching text by local PDF extraction; RA 9514 RIRR refined markdown lines 1435, 1628, 1648-1650, 1702, 1807, 2521-2591, 3984-3994, 4275-4303, 5390-5476, and 6152-6200; raw PDF pages 64, 68, 91-93, 142, 168, 171, and 189 checked for matching text by local PDF extraction; PD 9514 Fire Code refined markdown lines 1599-1629, 1655-1719, 2654, 2849-2855, and 3644-3728; raw PDF pages 57-63 and 111 checked for matching text by local PDF extraction",
+        "quoted_pdf_excerpt": "Question content is source-safe rewrite; see proposed code_citation for precise checked locator."
+      }
+    },
+    {
+      "claim_id": "question-dbaedc3a-66a4-447f-8ed0-0936cc473e21",
+      "claim_text": "Question edit dbaedc3a-66a4-447f-8ed0-0936cc473e21 is rewritten to the Batch 065 checked local raw-source scope for case-study-hospital-mall-school.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9514-rirr-2019-occupancy-egress-storage-hotel-local-b065",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1128, 1174-1190, 1265-1272, 1659-1667, 1681-1698, and 1735-1736; raw PDF pages 47-48, 53, 57, 72, and 101-103 checked for matching text by local PDF extraction; RA 9514 RIRR refined markdown lines 1435, 1628, 1648-1650, 1702, 1807, 2521-2591, 3984-3994, 4275-4303, 5390-5476, and 6152-6200; raw PDF pages 64, 68, 91-93, 142, 168, 171, and 189 checked for matching text by local PDF extraction; PD 9514 Fire Code refined markdown lines 1599-1629, 1655-1719, 2654, 2849-2855, and 3644-3728; raw PDF pages 57-63 and 111 checked for matching text by local PDF extraction",
+        "quoted_pdf_excerpt": "Question content is source-safe rewrite; see proposed code_citation for precise checked locator."
+      }
+    },
+    {
+      "claim_id": "question-3fbf2660-9c49-471d-a52d-da6ae82ae585",
+      "claim_text": "Question edit 3fbf2660-9c49-471d-a52d-da6ae82ae585 is rewritten to the Batch 065 checked local raw-source scope for case-study-hospital-mall-school.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9514-rirr-2019-occupancy-egress-storage-hotel-local-b065",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1128, 1174-1190, 1265-1272, 1659-1667, 1681-1698, and 1735-1736; raw PDF pages 47-48, 53, 57, 72, and 101-103 checked for matching text by local PDF extraction; RA 9514 RIRR refined markdown lines 1435, 1628, 1648-1650, 1702, 1807, 2521-2591, 3984-3994, 4275-4303, 5390-5476, and 6152-6200; raw PDF pages 64, 68, 91-93, 142, 168, 171, and 189 checked for matching text by local PDF extraction; PD 9514 Fire Code refined markdown lines 1599-1629, 1655-1719, 2654, 2849-2855, and 3644-3728; raw PDF pages 57-63 and 111 checked for matching text by local PDF extraction",
+        "quoted_pdf_excerpt": "Question content is source-safe rewrite; see proposed code_citation for precise checked locator."
+      }
+    },
+    {
+      "claim_id": "question-db94f167-6c48-4e60-8cae-a3e08c928e62",
+      "claim_text": "Question edit db94f167-6c48-4e60-8cae-a3e08c928e62 is rewritten to the Batch 065 checked local raw-source scope for case-study-hospital-mall-school.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9514-rirr-2019-occupancy-egress-storage-hotel-local-b065",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1128, 1174-1190, 1265-1272, 1659-1667, 1681-1698, and 1735-1736; raw PDF pages 47-48, 53, 57, 72, and 101-103 checked for matching text by local PDF extraction; RA 9514 RIRR refined markdown lines 1435, 1628, 1648-1650, 1702, 1807, 2521-2591, 3984-3994, 4275-4303, 5390-5476, and 6152-6200; raw PDF pages 64, 68, 91-93, 142, 168, 171, and 189 checked for matching text by local PDF extraction; PD 9514 Fire Code refined markdown lines 1599-1629, 1655-1719, 2654, 2849-2855, and 3644-3728; raw PDF pages 57-63 and 111 checked for matching text by local PDF extraction",
+        "quoted_pdf_excerpt": "Question content is source-safe rewrite; see proposed code_citation for precise checked locator."
+      }
+    }
+  ],
+  "local_repairs": [
+    "Removed unsupported placeholders/internal notes and prior off-source design-rule claims from normalized.md.",
+    "Replaced linked questions with source-safe MCQ edits tied to Batch 065 raw PDF/source-family evidence.",
+    "Preserved roundtrip ownership by setting ui-blocks.json to zero extracted UI blocks and regenerating candidate via compose."
+  ],
+  "scenario_enrichment_policy": {
+    "status": "eligible-deferred",
+    "note": "Scenario enrichment policy is pending. No Real World Scenario section was blindly added; article correctness and question support remained the gate."
+  },
+  "unverified_or_rejected_claims": [
+    "BP 344 dimensions, RA 9442/RA 10754 financial/service privileges, hotel star ratings, kitchen ergonomics, dock height, insulation thickness, clear height, and generic eco-tourism planning rules were excluded unless supported by the checked Batch 065 source families."
+  ],
+  "sme_review": {
+    "required_for_final_publishing": true,
+    "status": "local_source_audit_pass_pending_human_final_review"
+  },
+  "overall": {
+    "status": "PASS_LOCAL_FIRST",
+    "blockers": [],
+    "candidate_hash_matches_evidence": true,
+    "linked_question_edit_count": 11,
+    "question_edit_count": 11
+  }
+}

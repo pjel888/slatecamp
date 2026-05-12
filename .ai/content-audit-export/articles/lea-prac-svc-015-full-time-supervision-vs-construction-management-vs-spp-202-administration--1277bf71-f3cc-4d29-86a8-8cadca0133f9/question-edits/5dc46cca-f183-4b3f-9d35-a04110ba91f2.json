@@ -1,0 +1,135 @@
+{
+  "question_id": "5dc46cca-f183-4b3f-9d35-a04110ba91f2",
+  "baseline_hash": "sha256:2ef8b918abf6fe560becac63e62dccc0821705028a39b3ec1e698af9ba8bce38",
+  "action": "replace",
+  "reason": "source-audited-article-batch-022-local-first rewrote this linked question to align with the local source audit for lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration.",
+  "approved_by": "codex-local-source-audit-batch-022",
+  "approved_at": "2026-05-11T11:45:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "1277bf71-f3cc-4d29-86a8-8cadca0133f9",
+    "parent_article_slug": "lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UAP Standards refined markdown lines 79-100, 217-265, 416-458, 915-964, 1129-1168, and 1174-1216; SPP 202 refined markdown lines 175-183, corroborated by UAP Standards lines 1129-1168; SPP 204-A refined markdown lines 201-207, corroborated by UAP Standards lines 915-964 and 1129-1168; SPP 204-B refined markdown line 7, corroborated by UAP Standards lines 1174-1216; UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080",
+    "checked_markdown_lines": [
+      "UAP Standards lines 79-100",
+      "UAP Standards lines 217-265",
+      "UAP Standards lines 416-458",
+      "UAP Standards lines 915-964",
+      "UAP Standards lines 1129-1168",
+      "UAP Standards lines 1174-1216",
+      "SPP 202 lines 175-183",
+      "UAP Standards lines 1129-1168",
+      "SPP 204-A lines 201-207",
+      "UAP Standards lines 915-964",
+      "UAP Standards lines 1129-1168",
+      "SPP 204-B line 7",
+      "UAP Standards lines 1174-1216",
+      "UAP Document 301 lines 41-71",
+      "UAP Document 301 lines 482-520",
+      "UAP Document 301 lines 1019-1051",
+      "UAP Document 301 lines 1062-1080"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "source_id": "uap-standards-selection-compensation-supervision-cm-local",
+        "locator": "UAP Standards refined markdown lines 79-100, 217-265, 416-458, 915-964, 1129-1168, and 1174-1216"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "source_id": "uap-standards-selection-compensation-supervision-cm-local",
+        "locator": "UAP Standards refined markdown lines 79-100, 217-265, 416-458, 915-964, 1129-1168, and 1174-1216"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+        "sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+        "source_id": "spp-202-regular-design-services-local",
+        "locator": "SPP 202 refined markdown lines 175-183, corroborated by UAP Standards lines 1129-1168"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+        "sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+        "source_id": "spp-202-regular-design-services-local",
+        "locator": "SPP 202 refined markdown lines 175-183, corroborated by UAP Standards lines 1129-1168"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204A.pdf",
+        "sha256": "sha256:ec08811ae8611f077fda9f0d1106cc7fab6a1e6210fe6d617637adaa6de083b8",
+        "source_id": "spp-204a-full-time-supervision-local",
+        "locator": "SPP 204-A refined markdown lines 201-207, corroborated by UAP Standards lines 915-964 and 1129-1168"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md",
+        "sha256": "sha256:9044ca5193245c730509d0022e13d597b62ad9ea969e5e870bd2954faeb89500",
+        "source_id": "spp-204a-full-time-supervision-local",
+        "locator": "SPP 204-A refined markdown lines 201-207, corroborated by UAP Standards lines 915-964 and 1129-1168"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204B.pdf",
+        "sha256": "sha256:b6bfffcf6e3ca7a4317121b28d5fab9237c2a4642b450573232516ef9dfb697e",
+        "source_id": "spp-204b-construction-management-local",
+        "locator": "SPP 204-B refined markdown line 7, corroborated by UAP Standards lines 1174-1216"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204B.md",
+        "sha256": "sha256:b49b5fcffe1e1ad48cb618b70d6a369400a0c7460dd3fa7ea471ee5900dc53e8",
+        "source_id": "spp-204b-construction-management-local",
+        "locator": "SPP 204-B refined markdown line 7, corroborated by UAP Standards lines 1174-1216"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "source_id": "uap-document-301-general-conditions-local",
+        "locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+        "source_id": "uap-document-301-general-conditions-local",
+        "locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080"
+      }
+    ],
+    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+  },
+  "proposed": {
+    "text": "When a project manager also performs construction management, which source-backed rule applies?",
+    "options": [
+      {
+        "id": "a",
+        "text": "SPP 204-A and SPP 204-B services apply as relevant"
+      },
+      {
+        "id": "b",
+        "text": "SPP 202 automatically disappears"
+      },
+      {
+        "id": "c",
+        "text": "The contractor becomes the architect"
+      },
+      {
+        "id": "d",
+        "text": "No written service scope is needed"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "The UAP Standards link PM/CM combinations to the SPP 204-A and SPP 204-B services.",
+    "explanation": "The incorrect options import a different actor, service category, timing rule, or authority path that the checked local source does not support.",
+    "code_citation": "UAP Standards lines 1174-1216",
+    "bloom_level": "remember",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited batch 022"
+    ],
+    "difficulty": 0.42,
+    "is_assessment": false,
+    "model_id": "BATCH-022-lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration-006"
+  }
+}

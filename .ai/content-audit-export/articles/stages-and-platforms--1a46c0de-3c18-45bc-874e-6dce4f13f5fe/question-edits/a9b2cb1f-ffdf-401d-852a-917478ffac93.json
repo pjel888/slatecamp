@@ -1,0 +1,48 @@
+{
+  "question_id": "a9b2cb1f-ffdf-401d-852a-917478ffac93",
+  "baseline_hash": "sha256:4d9645b041ed841d2d9bf32e131efa8c94bb995045037abbcae63b4b640bc939",
+  "action": "replace",
+  "reason": "source-audited-article-batch-039-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-039",
+  "approved_at": "2026-05-11T13:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-039-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 3946-3997"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 1213"
+  },
+  "proposed": {
+    "text": "What fire-resistive rating is required for the incombustible proscenium wall?",
+    "options": [
+      {
+        "id": "b039-1a46-16-a",
+        "text": "Not less than two hours"
+      },
+      {
+        "id": "b039-1a46-16-b",
+        "text": "Not less than one-half hour"
+      },
+      {
+        "id": "b039-1a46-16-c",
+        "text": "Not less than one hour"
+      },
+      {
+        "id": "b039-1a46-16-d",
+        "text": "Not less than four hours"
+      }
+    ],
+    "correct_option_id": "b039-1a46-16-a",
+    "rationale": "Correct answer: Not less than two hours. This is directly supported by PD 1096 2004 Revised IRR, Section 1213.",
+    "explanation": "The Batch 039 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 1213.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 1213"
+  }
+}

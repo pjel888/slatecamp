@@ -1,0 +1,49 @@
+{
+  "question_id": "b532ef95-51eb-4b5f-9e6d-04b3e899a207",
+  "baseline_hash": "sha256:70f40325810402660ef48089fb1cfbcee8b2e277ae8aeff4a381511e1de18195",
+  "action": "replace",
+  "reason": "source-audited-article-batch-039-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-039",
+  "approved_at": "2026-05-11T13:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-039-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 4007-4064",
+          "PD 1096 RIRR refined markdown lines 4109-4303"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 1301"
+  },
+  "proposed": {
+    "text": "For the clear zone beside a building more than 15.00 m high, at what maximum height above grade must the zone begin?",
+    "options": [
+      {
+        "id": "b039-aeee-04-a",
+        "text": "Not over 2.45 m above established grade"
+      },
+      {
+        "id": "b039-aeee-04-b",
+        "text": "Not over 600 mm above grade"
+      },
+      {
+        "id": "b039-aeee-04-c",
+        "text": "Not over 5.50 m above grade"
+      },
+      {
+        "id": "b039-aeee-04-d",
+        "text": "Not over 15.00 m above grade"
+      }
+    ],
+    "correct_option_id": "b039-aeee-04-a",
+    "rationale": "Correct answer: Not over 2.45 m above established grade. This is directly supported by PD 1096 2004 Revised IRR, Section 1301.",
+    "explanation": "The Batch 039 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 1301.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 1301"
+  }
+}

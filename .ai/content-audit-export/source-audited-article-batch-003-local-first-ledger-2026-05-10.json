@@ -1,0 +1,139 @@
+{
+  "artifact_type": "batch_003_local_first_recovery_ledger",
+  "generated_at": "2026-05-10T18:30:00+08:00",
+  "source_report_superseded": ".ai/content-audit-export/source-audited-article-batch-003-report-2026-05-10.md",
+  "scope": "LOCAL_FIRST_NO_SUPABASE_NO_DEPLOY_NO_COMMIT",
+  "articles_locally_improved": 5,
+  "question_edits_created": 51,
+  "validation": {
+    "articles_valid": 5,
+    "blockers": 0,
+    "warning": "Each article warns only that component-usage.json has not been generated."
+  },
+  "remaining_local_blockers": [],
+  "remote_publish_blockers": [
+    "Supabase remote fetch/dry-run not attempted in this local-first recovery; publishing remains a separate final step."
+  ],
+  "articles": [
+    {
+      "article_id": "46490e40-c2c3-4c76-bf43-87b40512989f",
+      "slug": "lea-prac-frm-011-government-architects-dpwh-nha-dhsud-and-the-in-house-design-function",
+      "title": "Government Architects, In-House Design, and Public Accountability",
+      "folder": ".ai/content-audit-export/articles/lea-prac-frm-011-government-architects-dpwh-nha-dhsud-and-the-in-house-design-function--46490e40-c2c3-4c76-bf43-87b40512989f",
+      "status": "LOCAL_PASS",
+      "candidate_sha256": "sha256:357511191beb7d6444ef63d142ba20082a437803aa1a0f19597f8f26aa00957b",
+      "normalized_sha256": "sha256:357511191beb7d6444ef63d142ba20082a437803aa1a0f19597f8f26aa00957b",
+      "source_count": 6,
+      "question_edits_created": 10,
+      "validation": {
+        "valid": true,
+        "blockers": 0,
+        "warnings": [
+          "component-usage.json has not been generated for this article yet"
+        ]
+      },
+      "diff": {
+        "safe_to_push": true,
+        "locally_safe_to_push": true,
+        "blockers": 0
+      },
+      "source_audit_evidence": ".ai/content-audit-export/articles/lea-prac-frm-011-government-architects-dpwh-nha-dhsud-and-the-in-house-design-function--46490e40-c2c3-4c76-bf43-87b40512989f/source-audit-evidence.json"
+    },
+    {
+      "article_id": "f3a7ecf3-4df6-4497-958f-3c724875163c",
+      "slug": "lea-dsgn-008-02-core-concept",
+      "title": "Fire-Rated Separation",
+      "folder": ".ai/content-audit-export/articles/lea-dsgn-008-02-core-concept--f3a7ecf3-4df6-4497-958f-3c724875163c",
+      "status": "LOCAL_PASS",
+      "candidate_sha256": "sha256:954e5866298fb40de1c2909d37a63320d4250d4b7810c4d1cc865a2e7ca98384",
+      "normalized_sha256": "sha256:954e5866298fb40de1c2909d37a63320d4250d4b7810c4d1cc865a2e7ca98384",
+      "source_count": 2,
+      "question_edits_created": 10,
+      "validation": {
+        "valid": true,
+        "blockers": 0,
+        "warnings": [
+          "component-usage.json has not been generated for this article yet"
+        ]
+      },
+      "diff": {
+        "safe_to_push": true,
+        "locally_safe_to_push": true,
+        "blockers": 0
+      },
+      "source_audit_evidence": ".ai/content-audit-export/articles/lea-dsgn-008-02-core-concept--f3a7ecf3-4df6-4497-958f-3c724875163c/source-audit-evidence.json"
+    },
+    {
+      "article_id": "4c706fb3-bd66-4bae-b4a6-2e8ed487031d",
+      "slug": "lea-dsgn-010-02-core-concept",
+      "title": "Parking Structure Design",
+      "folder": ".ai/content-audit-export/articles/lea-dsgn-010-02-core-concept--4c706fb3-bd66-4bae-b4a6-2e8ed487031d",
+      "status": "LOCAL_PASS",
+      "candidate_sha256": "sha256:de9c94cb5a14d54a97f81ab7390a916c7c7320e0fbf7687edacf6129bf724cd0",
+      "normalized_sha256": "sha256:de9c94cb5a14d54a97f81ab7390a916c7c7320e0fbf7687edacf6129bf724cd0",
+      "source_count": 2,
+      "question_edits_created": 10,
+      "validation": {
+        "valid": true,
+        "blockers": 0,
+        "warnings": [
+          "component-usage.json has not been generated for this article yet"
+        ]
+      },
+      "diff": {
+        "safe_to_push": true,
+        "locally_safe_to_push": true,
+        "blockers": 0
+      },
+      "source_audit_evidence": ".ai/content-audit-export/articles/lea-dsgn-010-02-core-concept--4c706fb3-bd66-4bae-b4a6-2e8ed487031d/source-audit-evidence.json"
+    },
+    {
+      "article_id": "ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
+      "slug": "bp-344-vs-pd-1096-conflicts",
+      "title": "BP 344 vs PD 1096 Conflicts",
+      "folder": ".ai/content-audit-export/articles/bp-344-vs-pd-1096-conflicts--ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
+      "status": "LOCAL_PASS",
+      "candidate_sha256": "sha256:7fd9ea42a6c3c1961f843e827fbfba5993fa91947e5ca6a766521926ecb3d961",
+      "normalized_sha256": "sha256:7fd9ea42a6c3c1961f843e827fbfba5993fa91947e5ca6a766521926ecb3d961",
+      "source_count": 2,
+      "question_edits_created": 11,
+      "validation": {
+        "valid": true,
+        "blockers": 0,
+        "warnings": [
+          "component-usage.json has not been generated for this article yet"
+        ]
+      },
+      "diff": {
+        "safe_to_push": true,
+        "locally_safe_to_push": true,
+        "blockers": 0
+      },
+      "source_audit_evidence": ".ai/content-audit-export/articles/bp-344-vs-pd-1096-conflicts--ee1f8beb-e236-4831-a0a8-1ddce447a3b8/source-audit-evidence.json"
+    },
+    {
+      "article_id": "265185c0-c1ac-4f40-8db0-bde23084f634",
+      "slug": "lea-prac-eth-010-introduction",
+      "title": "Professional Development Ethics",
+      "folder": ".ai/content-audit-export/articles/lea-prac-eth-010-introduction--265185c0-c1ac-4f40-8db0-bde23084f634",
+      "status": "LOCAL_PASS",
+      "candidate_sha256": "sha256:a21ddc547ac9a014a119acf519099c83b24e04b49010e2f1725606f6065e2071",
+      "normalized_sha256": "sha256:a21ddc547ac9a014a119acf519099c83b24e04b49010e2f1725606f6065e2071",
+      "source_count": 2,
+      "question_edits_created": 10,
+      "validation": {
+        "valid": true,
+        "blockers": 0,
+        "warnings": [
+          "component-usage.json has not been generated for this article yet"
+        ]
+      },
+      "diff": {
+        "safe_to_push": true,
+        "locally_safe_to_push": true,
+        "blockers": 0
+      },
+      "source_audit_evidence": ".ai/content-audit-export/articles/lea-prac-eth-010-introduction--265185c0-c1ac-4f40-8db0-bde23084f634/source-audit-evidence.json"
+    }
+  ]
+}

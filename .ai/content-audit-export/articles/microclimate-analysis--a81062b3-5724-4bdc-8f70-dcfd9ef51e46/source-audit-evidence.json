@@ -1,0 +1,162 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-051-local-first",
+  "batch_number": 51,
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T18:44:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "a81062b3-5724-4bdc-8f70-dcfd9ef51e46",
+    "slug": "microclimate-analysis",
+    "title": "Microclimate Analysis",
+    "article_folder": ".ai/content-audit-export/articles/microclimate-analysis--a81062b3-5724-4bdc-8f70-dcfd9ef51e46",
+    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/microclimate-analysis--a81062b3-5724-4bdc-8f70-dcfd9ef51e46",
+    "candidate_path": ".ai/content-audit-export/articles/microclimate-analysis--a81062b3-5724-4bdc-8f70-dcfd9ef51e46/candidate.md",
+    "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/microclimate-analysis--a81062b3-5724-4bdc-8f70-dcfd9ef51e46/candidate.md",
+    "question_edits_folder": ".ai/content-audit-export/articles/microclimate-analysis--a81062b3-5724-4bdc-8f70-dcfd9ef51e46/question-edits",
+    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/microclimate-analysis--a81062b3-5724-4bdc-8f70-dcfd9ef51e46/question-edits",
+    "normalized_sha256": "sha256:205fd8230b9ca35f2f98dd43dd6d255e87c8619c11a951d604dc833fd7aa6b77",
+    "candidate_sha256": "sha256:205fd8230b9ca35f2f98dd43dd6d255e87c8619c11a951d604dc833fd7aa6b77",
+    "linked_questions_sha256": "sha256:7e77c76a4e5314b39827d3bd43fc0b7ffa4006e2c071ac0db0103a546a5dd056",
+    "sources_sha256": "sha256:a9ee21607e7284c6ddfc9d9925bf7da624826d3f608e36c5314361af2ec0da16"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "refined_markdown_role": "locator_only",
+    "derivative_or_search_layer_as_primary": false,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": [],
+    "source_families_checked": [
+      {
+        "label": "Climate Resilience Reference Tool - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Reference-Tool-on-Urban-Planning-and-Design-for-Climate-Resilience-for-LGUs-Planning-Actors-in-the-Philippines_readable.pdf",
+        "raw_pdf_sha256": "sha256:4fb30dbbb3eb2d7d445418120bdd046c594e0eeea85b3bf32f93d401325f3bb8",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Reference-Tool-on-Urban-Planning-and-Design-for-Climate-Resilience-for-LGUs-Planning-Actors-in-the-Philippines_readable.md",
+        "refined_markdown_sha256": "sha256:2a1544c9d48eae33c8456f130dfa1c1c7b31c27befca17a2602069fa8086c455",
+        "locator": "Climate Resilience Reference Tool refined markdown lines 939-958, 1816-1830, 2526-2556, 4407-4411, 4690-4692, 4970-4990, 5108-5112, 5381-5385, 7000-7014, and 7107-7139"
+      },
+      {
+        "label": "Building Technology - Siteworks - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Technology - Siteworks.pdf",
+        "raw_pdf_sha256": "sha256:9f498be4a288011a0e8b750d4bb8316afebf07a908993620579c311da30e02a2",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Technology - Siteworks.md",
+        "refined_markdown_sha256": "sha256:3e34ffc7b60b926a2cd75fbde6239ff3f05e7e53993d8cb6f8d5f1d865c64296",
+        "locator": "Building Technology - Siteworks refined markdown lines 24-86, 108-146, 160-220, and 250-305"
+      },
+      {
+        "label": "Sitework Lecture - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Sitework Lecture.pdf",
+        "raw_pdf_sha256": "sha256:a469e97d2c4b842f443864c658fc4359ef2787a2b009b9fbafc1afbd1da25ff6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Sitework Lecture.md",
+        "refined_markdown_sha256": "sha256:e761c9b38b9d0c07bd6053692337109a218169ba791e8f074fa40842d3972af2",
+        "locator": "Sitework Lecture refined markdown lines 28-100, 134-190, 214-290, and 370-405"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "microclimate_analysis",
+    "contains_legal_or_code_claims": false,
+    "source_risk_tier": "medium",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 21,
+    "question_edits_created": [
+      "da73a8cf-131e-4f7d-a689-d4f056ee7980",
+      "47d45741-058b-4ac5-8d77-3c2402edd382",
+      "8d697816-201a-4f4d-8f18-f0f1d3b8164a",
+      "14e31300-e8cd-4cea-8f22-762b150065d3",
+      "9045c124-45d5-4aa4-bc15-2fe6697ff0d9",
+      "55451c23-18bc-4e0c-9dcf-9caf56970b0f",
+      "51a2aea5-9f36-4f62-be63-34314b387c5d",
+      "a2a5bc40-f263-41b1-8e63-45f20f86aa37",
+      "3938f51e-badf-4b00-97d3-bd61950021e2",
+      "d0c148e1-c4f6-4e43-b28c-4cc53abe5d24",
+      "8524f6a0-67a0-4bed-bf90-68d2caf6e560",
+      "4a190789-0a57-4c1b-a47f-48a4d7f6ea17",
+      "9f375ea6-9063-4de5-bed0-481fa3465d3f",
+      "cbd31fb0-e037-47fa-9385-48bd3c05b7b5",
+      "bbf86d33-7275-4e44-85df-2c6c7a45ab70",
+      "2c7d3cd6-7fe0-4715-8f18-1bb5a5d23137",
+      "3754c5a4-6247-48e0-801c-3b880df6f188",
+      "d4cd9630-b3c4-4c75-a0ff-d57b13cd33de",
+      "59a435e2-8d01-4530-8a09-20a284a0f3a4",
+      "addb2050-60c1-4730-b5e2-115f66e1044c",
+      "c6d154a2-0b0f-4262-b996-b12b2f224262"
+    ]
+  },
+  "checked_markdown_lines": [
+    "Climate Resilience Reference Tool refined markdown lines 939-958",
+    "Climate Resilience Reference Tool refined markdown lines 1816-1830",
+    "Climate Resilience Reference Tool refined markdown lines 2526-2556",
+    "Climate Resilience Reference Tool refined markdown lines 4407-4411",
+    "Climate Resilience Reference Tool refined markdown lines 4690-4692",
+    "Climate Resilience Reference Tool refined markdown lines 4970-4990",
+    "Climate Resilience Reference Tool refined markdown lines 5108-5112",
+    "Climate Resilience Reference Tool refined markdown lines 5381-5385",
+    "Climate Resilience Reference Tool refined markdown lines 7000-7014",
+    "Climate Resilience Reference Tool refined markdown lines 7107-7139",
+    "Building Technology - Siteworks refined markdown lines 24-86",
+    "Building Technology - Siteworks refined markdown lines 108-146",
+    "Building Technology - Siteworks refined markdown lines 160-220",
+    "Building Technology - Siteworks refined markdown lines 250-305",
+    "Sitework Lecture refined markdown lines 28-100",
+    "Sitework Lecture refined markdown lines 134-190",
+    "Sitework Lecture refined markdown lines 214-290",
+    "Sitework Lecture refined markdown lines 370-405"
+  ],
+  "claims": [
+    {
+      "claim_id": "microclimate-analysis-b051-claim-01",
+      "claim_text": "Microclimate analysis connects sun path, wind, shade, vegetation, surface heat, open space, and water-sensitive site design.",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Reference-Tool-on-Urban-Planning-and-Design-for-Climate-Resilience-for-LGUs-Planning-Actors-in-the-Philippines_readable.pdf",
+        "quoted_pdf_excerpt": "Climate Resilience Reference Tool refined markdown lines 939-958, 1816-1830, 2526-2556, 4407-4411, 4690-4692, 4970-4990, 5108-5112, 5381-5385, 7000-7014, and 7107-7139",
+        "source_ids": [
+          "climate-local-raw-pdf--b051-a81062b3-01",
+          "siteworks-local-raw-pdf--b051-a81062b3-02",
+          "lecture-local-raw-pdf--b051-a81062b3-03"
+        ]
+      },
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "microclimate-analysis-b051-claim-questions",
+      "claim_text": "Batch 051 question edits audited for microclimate-analysis: da73a8cf-131e-4f7d-a689-d4f056ee7980, 47d45741-058b-4ac5-8d77-3c2402edd382, 8d697816-201a-4f4d-8f18-f0f1d3b8164a, 14e31300-e8cd-4cea-8f22-762b150065d3, 9045c124-45d5-4aa4-bc15-2fe6697ff0d9, 55451c23-18bc-4e0c-9dcf-9caf56970b0f, 51a2aea5-9f36-4f62-be63-34314b387c5d, a2a5bc40-f263-41b1-8e63-45f20f86aa37, 3938f51e-badf-4b00-97d3-bd61950021e2, d0c148e1-c4f6-4e43-b28c-4cc53abe5d24, 8524f6a0-67a0-4bed-bf90-68d2caf6e560, 4a190789-0a57-4c1b-a47f-48a4d7f6ea17, 9f375ea6-9063-4de5-bed0-481fa3465d3f, cbd31fb0-e037-47fa-9385-48bd3c05b7b5, bbf86d33-7275-4e44-85df-2c6c7a45ab70, 2c7d3cd6-7fe0-4715-8f18-1bb5a5d23137, 3754c5a4-6247-48e0-801c-3b880df6f188, d4cd9630-b3c4-4c75-a0ff-d57b13cd33de, 59a435e2-8d01-4530-8a09-20a284a0f3a4, addb2050-60c1-4730-b5e2-115f66e1044c, c6d154a2-0b0f-4262-b996-b12b2f224262",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Reference-Tool-on-Urban-Planning-and-Design-for-Climate-Resilience-for-LGUs-Planning-Actors-in-the-Philippines_readable.pdf",
+        "quoted_pdf_excerpt": "Climate Resilience Reference Tool refined markdown lines 939-958, 1816-1830, 2526-2556, 4407-4411, 4690-4692, 4970-4990, 5108-5112, 5381-5385, 7000-7014, and 7107-7139; Building Technology - Siteworks refined markdown lines 24-86, 108-146, 160-220, and 250-305; Sitework Lecture refined markdown lines 28-100, 134-190, 214-290, and 370-405",
+        "source_ids": [
+          "climate-local-raw-pdf--b051-a81062b3-01",
+          "siteworks-local-raw-pdf--b051-a81062b3-02",
+          "lecture-local-raw-pdf--b051-a81062b3-03"
+        ]
+      },
+      "audit_result": "PASS"
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "local_first_only": true,
+    "supabase_write_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json"
+  },
+  "sme_review": {
+    "required": false,
+    "status": "not_required"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

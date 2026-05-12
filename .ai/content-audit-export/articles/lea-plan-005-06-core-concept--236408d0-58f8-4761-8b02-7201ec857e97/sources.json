@@ -1,20 +1,56 @@
 {
   "article_id": "236408d0-58f8-4761-8b02-7201ec857e97",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:8a10660d6965f2c021e9e8f934a58e656c9c20ffa14d5a25158feec13ea0d41c",
-  "source_count": 1,
+  "sources_hash": "sha256:dedfb7d1805ce7ae46d5d674bebf0a555046c5596bc58ffe350ab185cfacf6e8",
+  "source_count": 4,
   "sources": [
     {
-      "source_id": "cd99f80d-2601-47ba-9892-41d4b06c1d9b",
+      "source_id": "pd-1067-water-code-local-raw-pdf--b062-236408d0-01",
       "article_id": "236408d0-58f8-4761-8b02-7201ec857e97",
-      "label": "DPWH Drainage Design Manual / Local ordinances (site drainage standards); RA 9275 (Philippine Clean Water Act — stormwater treatment); RA 10121 (DRRM — flood resilience)",
+      "label": "PD 1067 - Water Code of the Philippines - local raw PDF",
       "url": null,
-      "source_type": "primary_law",
-      "description": "SuDS Design Guidelines (international best practice adapted to Philippines); municipal stormwater management ordinances; site drainage and civil engineering references",
-      "is_verified": false,
+      "source_type": "local_raw_pdf",
+      "description": "PD 1067 refined markdown lines 180-193, 201-205, 226-227, and 238-245; raw PDF pages for drainage, natural flow, easements, flood-control, protected-area, and water-pollution provisions",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:01.381895+00:00",
-      "updated_at": "2026-03-24T04:34:01.381895+00:00"
+      "created_at": "2026-05-11T21:35:00.000+08:00",
+      "updated_at": "2026-05-11T21:35:00.000+08:00"
+    },
+    {
+      "source_id": "pd-1067-irr-local-raw-pdf--b062-236408d0-02",
+      "article_id": "236408d0-58f8-4761-8b02-7201ec857e97",
+      "label": "PD 1067 IRR - Water Code Implementing Rules - local raw PDF",
+      "url": null,
+      "source_type": "local_raw_pdf",
+      "description": "PD 1067 IRR refined markdown lines 61-84, 294-300, 468-486, and 496-502; raw PDF pages for drainage scheme maps/outlets, easement reckoning, minimum stream-flow, discharge, and drainage-system complaint provisions",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-11T21:35:00.000+08:00",
+      "updated_at": "2026-05-11T21:35:00.000+08:00"
+    },
+    {
+      "source_id": "open-space-development-guidelines-local-raw-pdf--b062-236408d0-03",
+      "article_id": "236408d0-58f8-4761-8b02-7201ec857e97",
+      "label": "Open Space Development Guidelines - local raw PDF",
+      "url": null,
+      "source_type": "local_raw_pdf",
+      "description": "Open Space Development Guidelines refined markdown lines 36-60, 549-573, 581-589, 597-665, and 1705-1759; raw PDF pages for the introduction, key strategies, open-space classification, policy/implementation notes, and glossary sections",
+      "is_verified": true,
+      "sort_order": 2,
+      "created_at": "2026-05-11T21:35:00.000+08:00",
+      "updated_at": "2026-05-11T21:35:00.000+08:00"
+    },
+    {
+      "source_id": "sitework-lecture-local-raw-pdf--b062-236408d0-04",
+      "article_id": "236408d0-58f8-4761-8b02-7201ec857e97",
+      "label": "Sitework Lecture - local raw PDF",
+      "url": null,
+      "source_type": "local_raw_pdf",
+      "description": "Sitework Lecture refined markdown lines 1-90, 130-230, and 560-625; raw PDF pages for Div 02 Sitework earthworks, AASHTO soil classification, fill, riprap, gabions, geosynthetics, roads/parking, and paving slides",
+      "is_verified": true,
+      "sort_order": 3,
+      "created_at": "2026-05-11T21:35:00.000+08:00",
+      "updated_at": "2026-05-11T21:35:00.000+08:00"
     }
   ]
 }

@@ -1,0 +1,66 @@
+{
+  "question_id": "ca55d979-71b3-4182-b754-d861b0086c0c",
+  "baseline_hash": "sha256:d7171ee90e7317c7654ac056abbcca394070796bc6989e9567f258a808ba5969",
+  "action": "replace",
+  "reason": "source-audited-article-batch-048-local-first: local raw-source-backed replacement constrained to checked Batch 048 source families.",
+  "approved_by": "codex-local-first-batch-048",
+  "approved_at": "2026-05-11T19:48:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+    "parent_article_slug": "pd-1096-rule-vii-area-metrics",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Only roof tanks and mechanical equipment.",
+    "checked_markdown_lines": [
+      "PD 1096 IRR refined markdown lines 3009-3138",
+      "PD 1096 IRR refined markdown lines 3750-3825",
+      "PD 1096 Rules 7 and 8 refined markdown lines 1560-1765"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "pd1096-irr-full-local-raw-pdf--b048-85bcd328-01",
+        "label": "PD 1096 IRR Full Implementing Rules and Regulations - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.pdf",
+        "sha256": "sha256:8e98d8afd4b5972ba5a82d33a65e59e800cd41661b764a0dfc4112d29697b341",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.md",
+        "refined_markdown_sha256": "sha256:a43068979bbca37450a11ed16cbb966e2aff6d682cdded1ab3bf22b1d541efd0",
+        "locator": "PD 1096 IRR refined markdown lines 1243-1252, 1334-1378, 3009-3138, 3750-3825, 8637-8810, and 9180-9514"
+      },
+      {
+        "source_id": "pd1096-rule-7-8-local-raw-pdf--b048-85bcd328-02",
+        "label": "PD 1096 Rules 7 and 8 - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/Rule 7 _ 8.pdf",
+        "sha256": "sha256:3fd01acd4ec7f37dbff97dba72c107502b46a05f59803df9973dfea62907a55d",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/Rule 7 _ 8.md",
+        "refined_markdown_sha256": "sha256:b09a20f30c11dffd69d4a2a11e941d4ed42ad13d539ff0ca194ddb762dced634",
+        "locator": "PD 1096 Rules 7 and 8 refined markdown lines 1560-1765"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 048 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "What is included in the Rule VII GFA concept?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Floor space within permanent external walls, including corridors, lobbies, mezzanines, and certain integrated projections."
+      },
+      {
+        "id": "b",
+        "text": "O"
+      },
+      {
+        "id": "c",
+        "text": "n"
+      },
+      {
+        "id": "d",
+        "text": "l"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Floor space within permanent external walls, including corridors, lobbies, mezzanines, and certain integrated projections. This is supported by Only public sidewalks adjoining the lot..",
+    "explanation": "Floor space within permanent external walls, including corridors, lobbies, mezzanines, and certain integrated projections. The cited local source family controls this item: Only public sidewalks adjoining the lot..",
+    "code_citation": "Only roof tanks and mechanical equipment."
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "question_id": "93b1ae06-0615-4715-9d36-14a1d00c6d2e",
+  "baseline_hash": "sha256:4e8f6b5cc4ce94e1d4350597aef8ba46140cc82ac446d3029959bb6e992b70fc",
+  "action": "replace",
+  "reason": "source-audited-article-batch-020-local-first rewrote the question to match only locally checked source evidence.",
+  "approved_by": "codex-local-source-audit-batch-020",
+  "approved_at": "2026-05-10T16:41:51.472Z",
+  "source_audit_support": {
+    "parent_article_id": "e37575ae-c640-4ddc-911a-7553f338b981",
+    "parent_article_slug": "lea-prac-svc-025-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "checked_sources": [
+      {
+        "source_id": "spp-203-uap-local-raw-pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+        "raw_pdf_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 101-117; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 121-150; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 228-231"
+      }
+    ],
+    "local_source_safe_action": "Replaced the prior item with a source-bounded MCQ using only checked SPP source lines."
+  },
+  "proposed": {
+    "text": "Which source-safe citation should this local question cluster use for Architectural Interiors classification?",
+    "options": [
+      {
+        "id": "a",
+        "text": "SPP Document 203."
+      },
+      {
+        "id": "b",
+        "text": "SPP Document 208."
+      },
+      {
+        "id": "c",
+        "text": "SPP Document 204-A."
+      },
+      {
+        "id": "d",
+        "text": "SPP Document 207."
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "The verified classification comes from SPP 203.",
+    "explanation": "The verified classification comes from SPP 203.",
+    "code_citation": "SPP Document 203",
+    "bloom_level": "remember",
+    "application_context": "professional_practice",
+    "practice_context": [
+      "SPP Document 203",
+      "Architectural Interiors under SPP 203"
+    ],
+    "difficulty": 0.45,
+    "is_assessment": false,
+    "model_id": "BATCH-020-lea-prac-svc-025-core-concept-008"
+  }
+}

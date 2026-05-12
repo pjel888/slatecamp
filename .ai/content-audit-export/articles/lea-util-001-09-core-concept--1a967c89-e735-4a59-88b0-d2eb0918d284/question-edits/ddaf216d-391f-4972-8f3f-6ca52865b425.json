@@ -1,0 +1,59 @@
+{
+  "question_id": "ddaf216d-391f-4972-8f3f-6ca52865b425",
+  "baseline_hash": "sha256:42d4a8b5748a6ecfdd19c5dea120a3aa2ed023a92fc70715a1f6ef8f4657e4ad",
+  "action": "replace",
+  "reason": "source-audited-article-batch-043-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes stale or non-local framing where present.",
+  "approved_by": "codex-local-first-batch-043",
+  "approved_at": "2026-05-11T15:45:43.683+08:00",
+  "source_audit_support": {
+    "parent_article_id": "1a967c89-e735-4a59-88b0-d2eb0918d284",
+    "parent_article_slug": "lea-util-001-09-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RNPC refined markdown lines 570, 645, 651-655, 1689-1691, 1721, 4706-4728, 4745-4822, 5241-5245",
+    "checked_markdown_lines": [
+      "RNPC refined markdown lines 570, 645, 651-655",
+      "RNPC refined markdown lines 1689-1691 and 1721",
+      "RNPC refined markdown lines 4706-4728",
+      "RNPC refined markdown lines 4745-4822",
+      "RNPC refined markdown lines 5241-5245"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "rnpc-ph-local-raw-pdf--b043-1",
+        "label": "Revised National Plumbing Code of the Philippines - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf",
+        "sha256": "sha256:c4ec30ec3ffe3b39513a033ebc2cfa614bd201d25c5578e1847e7f359fed3f5d",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Revised National Plumbing Code of the Philippines.md",
+        "refined_markdown_sha256": "sha256:7cea224bfc6c54d0883fe69c89b97cf134e45acaab6c8950b8af3621059c9a91",
+        "locator": "RNPC refined markdown lines 570, 645, 651-655, 1689-1691, 1721, 4706-4728, 4745-4822, 5241-5245"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 043 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "What should an architect remember about roof drain strainers under the checked RNPC family?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The strainer net inlet area should be at least equal to the outlet area it serves."
+      },
+      {
+        "id": "b",
+        "text": "A strainer may reduce inlet area below the outlet area when aesthetics require it."
+      },
+      {
+        "id": "c",
+        "text": "Strainers are not part of storm drainage coordination."
+      },
+      {
+        "id": "d",
+        "text": "The strainer rule applies only to sanitary floor drains."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The checked RNPC roof-drain provisions require a strainer with adequate net inlet area in relation to the outlet.",
+    "explanation": "The checked RNPC roof-drain provisions require a strainer with adequate net inlet area in relation to the outlet.",
+    "code_citation": "RNPC refined markdown lines 4714-4728"
+  }
+}

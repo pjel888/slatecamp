@@ -1,0 +1,86 @@
+{
+  "question_id": "e383b3ac-5e29-4e73-918b-b1dea76bcb9f",
+  "baseline_hash": "sha256:6b8f345c7ce575c29971e0035bba1ae447e620b206c461262eb455dbdc3c7535",
+  "action": "replace",
+  "reason": "source-audited-article-batch-062-local-first: local raw PDF backed replacement constrained to checked Batch 062 source scope for Stormwater.",
+  "approved_by": "codex-local-first-batch-062",
+  "approved_at": "2026-05-11T21:35:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "236408d0-58f8-4761-8b02-7201ec857e97",
+    "parent_article_slug": "lea-plan-005-06-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "PD 1067 refined markdown lines 180-193, 201-205, 226-227, and 238-245; raw PDF pages for drainage, natural flow, easements, flood-control, protected-area, and water-pollution provisions; PD 1067 IRR refined markdown lines 61-84, 294-300, 468-486, and 496-502; raw PDF pages for drainage scheme maps/outlets, easement reckoning, minimum stream-flow, discharge, and drainage-system complaint provisions; Open Space Development Guidelines refined markdown lines 36-60, 549-573, 581-589, 597-665, and 1705-1759; raw PDF pages for the introduction, key strategies, open-space classification, policy/implementation notes, and glossary sections; Sitework Lecture refined markdown lines 1-90, 130-230, and 560-625; raw PDF pages for Div 02 Sitework earthworks, AASHTO soil classification, fill, riprap, gabions, geosynthetics, roads/parking, and paving slides",
+    "checked_markdown_lines": [
+      "PD 1067 refined markdown lines 180-193, 201-205, 226-227, and 238-245; raw PDF pages for drainage, natural flow, easements, flood-control, protected-area, and water-pollution provisions",
+      "PD 1067 IRR refined markdown lines 61-84, 294-300, 468-486, and 496-502; raw PDF pages for drainage scheme maps/outlets, easement reckoning, minimum stream-flow, discharge, and drainage-system complaint provisions",
+      "Open Space Development Guidelines refined markdown lines 36-60, 549-573, 581-589, 597-665, and 1705-1759; raw PDF pages for the introduction, key strategies, open-space classification, policy/implementation notes, and glossary sections",
+      "Sitework Lecture refined markdown lines 1-90, 130-230, and 560-625; raw PDF pages for Div 02 Sitework earthworks, AASHTO soil classification, fill, riprap, gabions, geosynthetics, roads/parking, and paving slides"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "pd-1067-water-code-local-raw-pdf--b062-236408d0-01",
+        "label": "PD 1067 - Water Code of the Philippines - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1067/PD 1067 - Water Code of the Philippines.pdf",
+        "sha256": "sha256:90fdccc66152977f0e628d47c9a7c6a0e5a93faa7d02c9344012679f1e0d4f07",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1067/PD 1067 - Water Code of the Philippines.md",
+        "refined_markdown_sha256": "sha256:1f64532d7d02f840e5d6c2710e6730d17a99f28fd1e1371839e7690174b942a7",
+        "locator": "PD 1067 refined markdown lines 180-193, 201-205, 226-227, and 238-245; raw PDF pages for drainage, natural flow, easements, flood-control, protected-area, and water-pollution provisions"
+      },
+      {
+        "source_id": "pd-1067-irr-local-raw-pdf--b062-236408d0-02",
+        "label": "PD 1067 IRR - Water Code Implementing Rules - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1067/PD 1067 IRR - Water Code Implementing Rules.pdf",
+        "sha256": "sha256:233da4f0d1859197f82845ed945627dc9676f3e9b99e93e720ff30c54f751fc3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1067/PD 1067 IRR - Water Code Implementing Rules.md",
+        "refined_markdown_sha256": "sha256:635f6383c4f6cfc0e8f8c1a883987a0eb2abf0646c9a2d6cd69e2b186907dbe8",
+        "locator": "PD 1067 IRR refined markdown lines 61-84, 294-300, 468-486, and 496-502; raw PDF pages for drainage scheme maps/outlets, easement reckoning, minimum stream-flow, discharge, and drainage-system complaint provisions"
+      },
+      {
+        "source_id": "open-space-development-guidelines-local-raw-pdf--b062-236408d0-03",
+        "label": "Open Space Development Guidelines - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Open Space Development Guidelines.pdf",
+        "sha256": "sha256:2ca6d61605d370035cdd8679a43cdd57d5f40deada47601ea56e5161733e0add",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Open Space Development Guidelines.md",
+        "refined_markdown_sha256": "sha256:2be9fa0f23c22913f06acedf5905c5ebf004240ee764b47a2b1c97e15b9d9b2b",
+        "locator": "Open Space Development Guidelines refined markdown lines 36-60, 549-573, 581-589, 597-665, and 1705-1759; raw PDF pages for the introduction, key strategies, open-space classification, policy/implementation notes, and glossary sections"
+      },
+      {
+        "source_id": "sitework-lecture-local-raw-pdf--b062-236408d0-04",
+        "label": "Sitework Lecture - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Sitework Lecture.pdf",
+        "sha256": "sha256:a469e97d2c4b842f443864c658fc4359ef2787a2b009b9fbafc1afbd1da25ff6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Sitework Lecture.md",
+        "refined_markdown_sha256": "sha256:e761c9b38b9d0c07bd6053692337109a218169ba791e8f074fa40842d3972af2",
+        "locator": "Sitework Lecture refined markdown lines 1-90, 130-230, and 560-625; raw PDF pages for Div 02 Sitework earthworks, AASHTO soil classification, fill, riprap, gabions, geosynthetics, roads/parking, and paving slides"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 062 checked local raw PDF source scope for Stormwater."
+  },
+  "proposed": {
+    "text": "Which answer best matches the checked Batch 062 local raw PDF source scope for Stormwater?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Manage stormwater by routing drainage to an approved outlet, avoiding damage to lower land or natural-flow disruption, respecting water-margin and protected-area limits, protecting water sources from pollutants, and using open-space or sitework controls where supported."
+      },
+      {
+        "id": "b",
+        "text": "Assume a green roof, rain garden, or retention pond requirement without source support."
+      },
+      {
+        "id": "c",
+        "text": "Discharge runoff without checking approved outlets, lower-land impacts, or water-source protection."
+      },
+      {
+        "id": "d",
+        "text": "Treat flood control, open space, and erosion control as unrelated to drainage planning."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Manage stormwater by routing drainage to an approved outlet, avoiding damage to lower land or natural-flow disruption, respecting water-margin and protected-area limits, protecting water sources from pollutants, and using open-space or sitework controls where supported. This answer is supported by the checked Batch 062 local raw PDF source family for Stormwater.",
+    "explanation": "Manage stormwater by routing drainage to an approved outlet, avoiding damage to lower land or natural-flow disruption, respecting water-margin and protected-area limits, protecting water sources from pollutants, and using open-space or sitework controls where supported. Batch 062 used the local raw PDFs first and refined markdown only as locator evidence for Stormwater.",
+    "code_citation": "PD 1067 refined markdown lines 180-193, 201-205, 226-227, and 238-245; raw PDF pages for drainage, natural flow, easements, flood-control, protected-area, and water-pollution provisions; PD 1067 IRR refined markdown lines 61-84, 294-300, 468-486, and 496-502; raw PDF pages for drainage scheme maps/outlets, easement reckoning, minimum stream-flow, discharge, and drainage-system complaint provisions; Open Space Development Guidelines refined markdown lines 36-60, 549-573, 581-589, 597-665, and 1705-1759; raw PDF pages for the introduction, key strategies, open-space classification, policy/implementation notes, and glossary sections; Sitework Lecture refined markdown lines 1-90, 130-230, and 560-625; raw PDF pages for Div 02 Sitework earthworks, AASHTO soil classification, fill, riprap, gabions, geosynthetics, roads/parking, and paving slides"
+  },
+  "batch_question_template_index": 6
+}

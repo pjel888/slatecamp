@@ -1,0 +1,309 @@
+{
+  "batch_id": "source-audited-article-batch-008",
+  "audit_date": "2026-05-10",
+  "completed_at": "2026-05-10T18:18:27+08:00",
+  "mode": "LOCAL_FIRST_NO_SUPABASE_NO_DEPLOY_NO_COMMIT",
+  "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+  "selection_policy": {
+    "selected_count": 5,
+    "avoided_prior_batches": [
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007"
+    ],
+    "prior_batch_article_ids_observed_count": 54,
+    "prior_batch_reports_or_ledgers_checked": [
+      ".ai/content-audit-export/source-audited-article-batch-001-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-002-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-003-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-004-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-005-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-006-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-007-local-first-ledger-2026-05-10.json"
+    ],
+    "selection_basis": "High-value LEA legal/code/professional-practice clusters with linked questions and available raw PDFs under vitruvius-connection/001_Raw-Source-Layer."
+  },
+  "counts": {
+    "selected_articles": 5,
+    "passed_articles": 5,
+    "parked_articles": 0,
+    "linked_questions_observed": 223,
+    "question_edit_files_created": 223,
+    "raw_pdf_sources_verified": 2,
+    "sources_records_created": 6,
+    "supabase_mutations": 0,
+    "deployments": 0,
+    "commits": 0
+  },
+  "raw_sources": [
+    {
+      "key": "pd1096_2004_revised_irr",
+      "label": "PD 1096 2004 Revised IRR, DPWH Official Publication",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "used_by_article_ids": [
+        "687e0da7-4e39-454f-b3f8-a95308678556",
+        "aef59aa2-220e-47fc-9492-6b2bd98f9bea",
+        "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+        "16ba355e-811c-4191-98c2-c7fac22ca59b",
+        "9e053410-cea0-400b-b185-576cbb4a8bd0"
+      ]
+    },
+    {
+      "key": "ra9514_2019_revised_irr",
+      "label": "RA 9514 2019 Revised IRR",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+      "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+      "used_by_article_ids": [
+        "f61a5716-97a1-41d5-8863-a2fc5fd4115f"
+      ]
+    }
+  ],
+  "improved_article_folder_paths": [
+    {
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_folder": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556"
+    },
+    {
+      "article_id": "aef59aa2-220e-47fc-9492-6b2bd98f9bea",
+      "article_folder": ".ai/content-audit-export/articles/fire-resistive-construction-ratings--aef59aa2-220e-47fc-9492-6b2bd98f9bea",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-resistive-construction-ratings--aef59aa2-220e-47fc-9492-6b2bd98f9bea"
+    },
+    {
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "article_folder": ".ai/content-audit-export/articles/fire-extinguishing-systems--f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-extinguishing-systems--f61a5716-97a1-41d5-8863-a2fc5fd4115f"
+    },
+    {
+      "article_id": "16ba355e-811c-4191-98c2-c7fac22ca59b",
+      "article_folder": ".ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b"
+    },
+    {
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "article_folder": ".ai/content-audit-export/articles/change-of-use-and-occupancy--9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/change-of-use-and-occupancy--9e053410-cea0-400b-b185-576cbb4a8bd0"
+    }
+  ],
+  "question_edits_folder_paths": [
+    {
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "question_edits_folder": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits",
+      "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits"
+    },
+    {
+      "article_id": "aef59aa2-220e-47fc-9492-6b2bd98f9bea",
+      "question_edits_folder": ".ai/content-audit-export/articles/fire-resistive-construction-ratings--aef59aa2-220e-47fc-9492-6b2bd98f9bea/question-edits",
+      "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-resistive-construction-ratings--aef59aa2-220e-47fc-9492-6b2bd98f9bea/question-edits"
+    },
+    {
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "question_edits_folder": ".ai/content-audit-export/articles/fire-extinguishing-systems--f61a5716-97a1-41d5-8863-a2fc5fd4115f/question-edits",
+      "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-extinguishing-systems--f61a5716-97a1-41d5-8863-a2fc5fd4115f/question-edits"
+    },
+    {
+      "article_id": "16ba355e-811c-4191-98c2-c7fac22ca59b",
+      "question_edits_folder": ".ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits",
+      "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits"
+    },
+    {
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "question_edits_folder": ".ai/content-audit-export/articles/change-of-use-and-occupancy--9e053410-cea0-400b-b185-576cbb4a8bd0/question-edits",
+      "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/change-of-use-and-occupancy--9e053410-cea0-400b-b185-576cbb4a8bd0/question-edits"
+    }
+  ],
+  "articles": [
+    {
+      "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
+      "slug": "building-permit-process",
+      "title": "Building Permit Process",
+      "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+      "article_folder": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
+      "normalized_path": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/normalized.md",
+      "normalized_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/candidate.md",
+      "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/sources.json",
+      "sources_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/source-audit-evidence.json",
+      "source_audit_evidence_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/source-audit-evidence.json",
+      "question_edits_folder": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits",
+      "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits",
+      "linked_question_count": 57,
+      "question_edit_count": 57,
+      "source_count": 1,
+      "raw_source_keys": [
+        "pd1096_2004_revised_irr"
+      ],
+      "compose_blockers": 0,
+      "diff_changed": true,
+      "diff_safe_to_push": true,
+      "diff_blockers": 0,
+      "candidate_hash": "sha256:92f88c2cf3f5464aed7a7d27e6120663bd714825549edc10c4be6a293c430fcd",
+      "normalized_hash": "sha256:92f88c2cf3f5464aed7a7d27e6120663bd714825549edc10c4be6a293c430fcd",
+      "sources_hash": "sha256:f4f766a178d2f3f554abe4feeb80837f1148f41245f905dffc889f76b05d80df",
+      "validation_status": "valid=true blockers=0 warnings=0"
+    },
+    {
+      "article_id": "aef59aa2-220e-47fc-9492-6b2bd98f9bea",
+      "slug": "fire-resistive-construction-ratings",
+      "title": "Fire Resistive Construction Ratings",
+      "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+      "article_folder": ".ai/content-audit-export/articles/fire-resistive-construction-ratings--aef59aa2-220e-47fc-9492-6b2bd98f9bea",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-resistive-construction-ratings--aef59aa2-220e-47fc-9492-6b2bd98f9bea",
+      "normalized_path": ".ai/content-audit-export/articles/fire-resistive-construction-ratings--aef59aa2-220e-47fc-9492-6b2bd98f9bea/normalized.md",
+      "normalized_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-resistive-construction-ratings--aef59aa2-220e-47fc-9492-6b2bd98f9bea/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/fire-resistive-construction-ratings--aef59aa2-220e-47fc-9492-6b2bd98f9bea/candidate.md",
+      "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-resistive-construction-ratings--aef59aa2-220e-47fc-9492-6b2bd98f9bea/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/fire-resistive-construction-ratings--aef59aa2-220e-47fc-9492-6b2bd98f9bea/sources.json",
+      "sources_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-resistive-construction-ratings--aef59aa2-220e-47fc-9492-6b2bd98f9bea/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/fire-resistive-construction-ratings--aef59aa2-220e-47fc-9492-6b2bd98f9bea/source-audit-evidence.json",
+      "source_audit_evidence_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-resistive-construction-ratings--aef59aa2-220e-47fc-9492-6b2bd98f9bea/source-audit-evidence.json",
+      "question_edits_folder": ".ai/content-audit-export/articles/fire-resistive-construction-ratings--aef59aa2-220e-47fc-9492-6b2bd98f9bea/question-edits",
+      "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-resistive-construction-ratings--aef59aa2-220e-47fc-9492-6b2bd98f9bea/question-edits",
+      "linked_question_count": 46,
+      "question_edit_count": 46,
+      "source_count": 1,
+      "raw_source_keys": [
+        "pd1096_2004_revised_irr"
+      ],
+      "compose_blockers": 0,
+      "diff_changed": true,
+      "diff_safe_to_push": true,
+      "diff_blockers": 0,
+      "candidate_hash": "sha256:72289f6f4bb6448c6908c40cb7d08019ea1070a58c43cc9ff89e49456a64c0ec",
+      "normalized_hash": "sha256:72289f6f4bb6448c6908c40cb7d08019ea1070a58c43cc9ff89e49456a64c0ec",
+      "sources_hash": "sha256:80532908271c582fe7189c366212abf50330967e360c7adc1574e8e2bd4df7ef",
+      "validation_status": "valid=true blockers=0 warnings=0"
+    },
+    {
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "slug": "fire-extinguishing-systems",
+      "title": "Fire Extinguishing Systems",
+      "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+      "article_folder": ".ai/content-audit-export/articles/fire-extinguishing-systems--f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-extinguishing-systems--f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "normalized_path": ".ai/content-audit-export/articles/fire-extinguishing-systems--f61a5716-97a1-41d5-8863-a2fc5fd4115f/normalized.md",
+      "normalized_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-extinguishing-systems--f61a5716-97a1-41d5-8863-a2fc5fd4115f/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/fire-extinguishing-systems--f61a5716-97a1-41d5-8863-a2fc5fd4115f/candidate.md",
+      "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-extinguishing-systems--f61a5716-97a1-41d5-8863-a2fc5fd4115f/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/fire-extinguishing-systems--f61a5716-97a1-41d5-8863-a2fc5fd4115f/sources.json",
+      "sources_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-extinguishing-systems--f61a5716-97a1-41d5-8863-a2fc5fd4115f/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/fire-extinguishing-systems--f61a5716-97a1-41d5-8863-a2fc5fd4115f/source-audit-evidence.json",
+      "source_audit_evidence_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-extinguishing-systems--f61a5716-97a1-41d5-8863-a2fc5fd4115f/source-audit-evidence.json",
+      "question_edits_folder": ".ai/content-audit-export/articles/fire-extinguishing-systems--f61a5716-97a1-41d5-8863-a2fc5fd4115f/question-edits",
+      "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-extinguishing-systems--f61a5716-97a1-41d5-8863-a2fc5fd4115f/question-edits",
+      "linked_question_count": 41,
+      "question_edit_count": 41,
+      "source_count": 2,
+      "raw_source_keys": [
+        "pd1096_2004_revised_irr",
+        "ra9514_2019_revised_irr"
+      ],
+      "compose_blockers": 0,
+      "diff_changed": true,
+      "diff_safe_to_push": true,
+      "diff_blockers": 0,
+      "candidate_hash": "sha256:fc8e74865a7ec1d3ce8c9b97242b58a821be9bd1e6cf160e416af70d86c30daa",
+      "normalized_hash": "sha256:fc8e74865a7ec1d3ce8c9b97242b58a821be9bd1e6cf160e416af70d86c30daa",
+      "sources_hash": "sha256:1a53992dab6e30768cd3243fd1fa5108819ec0364b75e54e5716071316aff976",
+      "validation_status": "valid=true blockers=0 warnings=0"
+    },
+    {
+      "article_id": "16ba355e-811c-4191-98c2-c7fac22ca59b",
+      "slug": "location-on-property-and-exterior-walls",
+      "title": "Location on Property and Exterior Walls",
+      "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+      "article_folder": ".ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b",
+      "normalized_path": ".ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/normalized.md",
+      "normalized_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/candidate.md",
+      "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/sources.json",
+      "sources_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/source-audit-evidence.json",
+      "source_audit_evidence_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/source-audit-evidence.json",
+      "question_edits_folder": ".ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits",
+      "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits",
+      "linked_question_count": 40,
+      "question_edit_count": 40,
+      "source_count": 1,
+      "raw_source_keys": [
+        "pd1096_2004_revised_irr"
+      ],
+      "compose_blockers": 0,
+      "diff_changed": true,
+      "diff_safe_to_push": true,
+      "diff_blockers": 0,
+      "candidate_hash": "sha256:df71e17fc68a7f4ee4b0c50ce3cf1716f7a0a4a9ffcc8df82bbcebb3b57b0e56",
+      "normalized_hash": "sha256:df71e17fc68a7f4ee4b0c50ce3cf1716f7a0a4a9ffcc8df82bbcebb3b57b0e56",
+      "sources_hash": "sha256:22abc592b25b3772cbaa006308467d60d4b0213b1fc2f43ba5ef6229a86e93c3",
+      "validation_status": "valid=true blockers=0 warnings=0"
+    },
+    {
+      "article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "slug": "change-of-use-and-occupancy",
+      "title": "Change of Use and Occupancy",
+      "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+      "article_folder": ".ai/content-audit-export/articles/change-of-use-and-occupancy--9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/change-of-use-and-occupancy--9e053410-cea0-400b-b185-576cbb4a8bd0",
+      "normalized_path": ".ai/content-audit-export/articles/change-of-use-and-occupancy--9e053410-cea0-400b-b185-576cbb4a8bd0/normalized.md",
+      "normalized_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/change-of-use-and-occupancy--9e053410-cea0-400b-b185-576cbb4a8bd0/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/change-of-use-and-occupancy--9e053410-cea0-400b-b185-576cbb4a8bd0/candidate.md",
+      "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/change-of-use-and-occupancy--9e053410-cea0-400b-b185-576cbb4a8bd0/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/change-of-use-and-occupancy--9e053410-cea0-400b-b185-576cbb4a8bd0/sources.json",
+      "sources_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/change-of-use-and-occupancy--9e053410-cea0-400b-b185-576cbb4a8bd0/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/change-of-use-and-occupancy--9e053410-cea0-400b-b185-576cbb4a8bd0/source-audit-evidence.json",
+      "source_audit_evidence_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/change-of-use-and-occupancy--9e053410-cea0-400b-b185-576cbb4a8bd0/source-audit-evidence.json",
+      "question_edits_folder": ".ai/content-audit-export/articles/change-of-use-and-occupancy--9e053410-cea0-400b-b185-576cbb4a8bd0/question-edits",
+      "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/change-of-use-and-occupancy--9e053410-cea0-400b-b185-576cbb4a8bd0/question-edits",
+      "linked_question_count": 39,
+      "question_edit_count": 39,
+      "source_count": 1,
+      "raw_source_keys": [
+        "pd1096_2004_revised_irr"
+      ],
+      "compose_blockers": 0,
+      "diff_changed": true,
+      "diff_safe_to_push": true,
+      "diff_blockers": 0,
+      "candidate_hash": "sha256:7c8917947f3bb27423858528b0cfe798fbfad334739426d078f7a8e475f06284",
+      "normalized_hash": "sha256:7c8917947f3bb27423858528b0cfe798fbfad334739426d078f7a8e475f06284",
+      "sources_hash": "sha256:040bd04cc858191e36dc808f40cd97c680419e108e4a654cbb491c1d36cf7bde",
+      "validation_status": "valid=true blockers=0 warnings=0"
+    }
+  ],
+  "validation": {
+    "compose": "PASS: 5/5 content-audit:compose --overwrite, blockers=0",
+    "diff": "PASS: 5/5 content-audit:diff, changed=true safe_to_push=true blockers=0",
+    "validate": "PASS: 5/5 content-audit:validate --summary --dry-run, valid=true blockers=0 warnings=0",
+    "json_parse": "PASS: all selected article JSON and question-edits parse with jq empty",
+    "placeholder_scan": "PASS: no placeholder/internal-note/foreign-code marker matches in selected normalized.md, candidate.md, or question-edits",
+    "unit_test": "PASS: bun test scripts/content-audit/content-audit.test.ts; 27 pass, 0 fail",
+    "scoped_diff_check": "PASS: git diff --check scoped to Batch 008 article folders plus report/ledger",
+    "supabase": "not_attempted_by_request",
+    "deploy": "not_attempted_by_request",
+    "commit": "not_attempted_by_request"
+  },
+  "artifacts": {
+    "ledger": ".ai/content-audit-export/source-audited-article-batch-008-local-first-ledger-2026-05-10.json",
+    "ledger_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-008-local-first-ledger-2026-05-10.json",
+    "report": ".ai/content-audit-export/source-audited-article-batch-008-local-first-report-2026-05-10.md",
+    "report_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-008-local-first-report-2026-05-10.md"
+  },
+  "next_phase_readiness": {
+    "ready_for_final_publishing_review": true,
+    "final_publishing_requires": [
+      "Human/editor review of candidate.md and question-edits JSON",
+      "Supabase dry-run remote stale checks immediately before any publish",
+      "No direct Supabase apply/deploy/commit was performed in Batch 008"
+    ]
+  }
+}

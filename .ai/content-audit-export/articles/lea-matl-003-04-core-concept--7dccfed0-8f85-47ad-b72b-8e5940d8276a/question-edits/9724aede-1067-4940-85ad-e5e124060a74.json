@@ -1,0 +1,77 @@
+{
+  "question_id": "9724aede-1067-4940-85ad-e5e124060a74",
+  "baseline_hash": "sha256:930f821cb456d8198fb6aa6633b6ba81d3a0848182a3db13adbb58693a3efe7c",
+  "action": "replace",
+  "reason": "source-audited-article-batch-083-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-003-04-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-083",
+  "approved_at": "2026-05-12T06:25:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "7dccfed0-8f85-47ad-b72b-8e5940d8276a",
+    "parent_article_slug": "lea-matl-003-04-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Metals Lecture refined markdown lines 1-220 and 420-555; European Building Construction Illustrated lines 15969-16015; Building Construction Illustrated lines 15680-15710; raw PDF pages 2, 32, 415, and 427 checked by local PyMuPDF extraction.",
+    "checked_markdown_lines": [
+      "Metals Lecture refined markdown lines 1-220 and 420-555; European Building Construction Illustrated lines 15969-16015; Building Construction Illustrated lines 15680-15710; raw PDF pages 2, 32, 415, and 427 checked by local PyMuPDF extraction."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "metals-lecture-b083",
+        "label": "Metals Lecture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Metals Lecture.pdf",
+        "sha256": "sha256:cd9cd4ee534bda9a974447c4ec73b13b12d5abf1c14df1fca408a2c4530650dd",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Metals Lecture.md",
+        "raw_markdown_sha256": "sha256:4e9e0a042f2eef2c80d33af81512ca2cf32778cae64351af9dc54df58db3694c",
+        "locator": "Metals Lecture refined markdown lines 1-220, 420-555, and 638-812; raw PDF pages 2, 32, 55, 57, and 58 checked by local PyMuPDF extraction."
+      },
+      {
+        "source_id": "european-building-construction-illustrated-b083",
+        "label": "European Building Construction Illustrated",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/European Building Construction Illustrated.pdf",
+        "sha256": "sha256:440f21385df13b75ce4041026f77d9d34872d6235fd18fa770c11609a283d19c",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/European Building Construction Illustrated.md",
+        "raw_markdown_sha256": "sha256:f2ec82d918f32d6c050f9f5ea0274b6c68f409c009ddcd311ab45e3567041e8c",
+        "locator": "European Building Construction Illustrated refined markdown lines 15745-16015; raw PDF pages 411 and 415 checked by local PyMuPDF extraction."
+      },
+      {
+        "source_id": "building-construction-illustrated-b083",
+        "label": "Building Construction Illustrated, 5th Edition",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "raw_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "locator": "Building Construction Illustrated refined markdown lines 3378-3570, 6616-6792, 15420-15510, and 15680-15745; raw PDF pages 121, 422, 423, 427, and 428 checked by local PyMuPDF extraction."
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 083 local raw-source-audited non_ferrous_metals scope."
+  },
+  "proposed": {
+    "text": "What is brass primarily composed of in the checked source?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Copper and zinc"
+      },
+      {
+        "id": "b",
+        "text": "Copper and tin only"
+      },
+      {
+        "id": "c",
+        "text": "Clay and limestone"
+      },
+      {
+        "id": "d",
+        "text": "Cement and aggregate"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The Metals Lecture and BCI describe brass as fundamentally or essentially an alloy of copper and zinc.",
+    "explanation": "The Metals Lecture and BCI describe brass as fundamentally or essentially an alloy of copper and zinc.",
+    "code_citation": "Metals Lecture; European Building Construction Illustrated; Building Construction Illustrated",
+    "bloom_level": "understand",
+    "application_context": "source_audited_local_first_batch_083",
+    "practice_context": [],
+    "difficulty": 0.5
+  }
+}

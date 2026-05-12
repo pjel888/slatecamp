@@ -1,0 +1,412 @@
+{
+  "batch_id": "source-audited-article-batch-029-local-first",
+  "generated_at": "2026-05-11T08:20:42.565+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "local_first_only": true,
+  "constraints": {
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "publishing_surface": "Supabase final publishing only; not used in this run"
+  },
+  "selection": {
+    "current_batch_number": 29,
+    "selected_article_ids": [
+      "df4b2a65-1d08-41b6-83c8-944df4d35938",
+      "6bb0f186-b9f7-4da9-ba7b-05639f43d4cf",
+      "75e0731a-8a79-4007-9531-2ad50b3905ed",
+      "5e194f59-3941-4bbb-b54b-85134f25286b",
+      "7a7a042f-4e5c-4a7b-90d1-93895e551c6d"
+    ],
+    "rule": "Next five high-value LEA professional-practice contract clusters with linked questions and local raw source families, excluding article IDs recorded in source-audited Batch 001 through Batch 028 artifacts.",
+    "prior_batch_exclusion_result": "PASS: none of the selected Batch 029 article IDs appeared in Batch 001 through Batch 028 source-audited reports/ledgers."
+  },
+  "counts": {
+    "selected_articles": 5,
+    "locally_passed_articles": 5,
+    "linked_questions": 50,
+    "source_safe_question_edits_created": 50,
+    "source_rows": 13,
+    "unique_raw_pdf_files_checked": 5,
+    "remaining_local_blockers": 0
+  },
+  "exact_paths": [
+    {
+      "article_id": "df4b2a65-1d08-41b6-83c8-944df4d35938",
+      "slug": "lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation--df4b2a65-1d08-41b6-83c8-944df4d35938",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation--df4b2a65-1d08-41b6-83c8-944df4d35938/question-edits"
+    },
+    {
+      "article_id": "6bb0f186-b9f7-4da9-ba7b-05639f43d4cf",
+      "slug": "lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond--6bb0f186-b9f7-4da9-ba7b-05639f43d4cf",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond--6bb0f186-b9f7-4da9-ba7b-05639f43d4cf/question-edits"
+    },
+    {
+      "article_id": "75e0731a-8a79-4007-9531-2ad50b3905ed",
+      "slug": "lea-prac-ctr-011-payment-bond-protection-for-subcontractors-and-suppliers",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-011-payment-bond-protection-for-subcontractors-and-suppliers--75e0731a-8a79-4007-9531-2ad50b3905ed",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-011-payment-bond-protection-for-subcontractors-and-suppliers--75e0731a-8a79-4007-9531-2ad50b3905ed/question-edits"
+    },
+    {
+      "article_id": "5e194f59-3941-4bbb-b54b-85134f25286b",
+      "slug": "lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope--5e194f59-3941-4bbb-b54b-85134f25286b",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope--5e194f59-3941-4bbb-b54b-85134f25286b/question-edits"
+    },
+    {
+      "article_id": "7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
+      "slug": "lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters--7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters--7a7a042f-4e5c-4a7b-90d1-93895e551c6d/question-edits"
+    }
+  ],
+  "raw_sources_checked": [
+    {
+      "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+      "absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+      "sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+      "locators": [
+        "CIAP Document 102 lines 171-177",
+        "CIAP Document 102 lines 637-652",
+        "CIAP Document 102 lines 671-681",
+        "CIAP Document 102 lines 813-814",
+        "CIAP Document 102 lines 813-821",
+        "CIAP Document 102 lines 823-832",
+        "CIAP Document 102 lines 846-858",
+        "CIAP Document 102 lines 905-911",
+        "CIAP Document 102 refined markdown lines 171-177",
+        "CIAP Document 102 refined markdown lines 637-652, 813-814, 846-858",
+        "CIAP Document 102 refined markdown lines 671-681, 813-821, 905-911",
+        "CIAP Document 102 refined markdown lines 813-814 and 823-832"
+      ],
+      "source_ids": [
+        "ciap-document-102-private-construction-contract-local"
+      ]
+    },
+    {
+      "label": "RA 386 - Civil Code of the Philippines",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code.pdf",
+      "absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code.pdf",
+      "sha256": "sha256:c3551f7d92abed808a64071fdf08832b1f27dc87375775416f52cbc25b4bcba5",
+      "locators": [
+        "Civil Code Article 1326 refined markdown line 166",
+        "Civil Code Article 1723 refined markdown line 349",
+        "RA 386 Civil Code line 166",
+        "RA 386 Civil Code line 349"
+      ],
+      "source_ids": [
+        "ra-386-civil-code-local"
+      ]
+    },
+    {
+      "label": "RA 9266 IRR - Architecture Act of 2004",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+      "absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+      "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "locators": [
+        "RA 9266 IRR lines 809-813",
+        "RA 9266 IRR lines 841-843",
+        "RA 9266 IRR refined markdown lines 809-813 and 841-843"
+      ],
+      "source_ids": [
+        "ra-9266-irr-local"
+      ]
+    },
+    {
+      "label": "UAP Document 301 - General Conditions",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+      "absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+      "sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+      "locators": [
+        "UAP Document 301 line 493",
+        "UAP Document 301 lines 1078-1090",
+        "UAP Document 301 lines 1087-1090",
+        "UAP Document 301 lines 486-499",
+        "UAP Document 301 lines 488-492",
+        "UAP Document 301 lines 488-493",
+        "UAP Document 301 lines 786-790",
+        "UAP Document 301 refined markdown lines 486-499",
+        "UAP Document 301 refined markdown lines 488-492 and 1087-1090",
+        "UAP Document 301 refined markdown lines 488-493",
+        "UAP Document 301 refined markdown lines 493, 786-790, 1078-1090"
+      ],
+      "source_ids": [
+        "uap-document-301-general-conditions-local"
+      ]
+    },
+    {
+      "label": "UAP Standards of Professional Practice",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+      "absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+      "sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+      "locators": [
+        "UAP Standards of Professional Practice lines 1665-1668",
+        "UAP Standards of Professional Practice refined markdown lines 1665-1668"
+      ],
+      "source_ids": [
+        "uap-standards-professional-practice-local"
+      ]
+    }
+  ],
+  "validation": {
+    "commands": {
+      "compose": [
+        "bun run content-audit:compose -- --article-id df4b2a65-1d08-41b6-83c8-944df4d35938 --overwrite --strict",
+        "bun run content-audit:compose -- --article-id 6bb0f186-b9f7-4da9-ba7b-05639f43d4cf --overwrite --strict",
+        "bun run content-audit:compose -- --article-id 75e0731a-8a79-4007-9531-2ad50b3905ed --overwrite --strict",
+        "bun run content-audit:compose -- --article-id 5e194f59-3941-4bbb-b54b-85134f25286b --overwrite --strict",
+        "bun run content-audit:compose -- --article-id 7a7a042f-4e5c-4a7b-90d1-93895e551c6d --overwrite --strict"
+      ],
+      "diff": [
+        "bun run content-audit:diff -- --article-id df4b2a65-1d08-41b6-83c8-944df4d35938 --summary --strict",
+        "bun run content-audit:diff -- --article-id 6bb0f186-b9f7-4da9-ba7b-05639f43d4cf --summary --strict",
+        "bun run content-audit:diff -- --article-id 75e0731a-8a79-4007-9531-2ad50b3905ed --summary --strict",
+        "bun run content-audit:diff -- --article-id 5e194f59-3941-4bbb-b54b-85134f25286b --summary --strict",
+        "bun run content-audit:diff -- --article-id 7a7a042f-4e5c-4a7b-90d1-93895e551c6d --summary --strict"
+      ],
+      "validate": [
+        "bun run content-audit:validate -- --article-id df4b2a65-1d08-41b6-83c8-944df4d35938 --summary",
+        "bun run content-audit:validate -- --article-id 6bb0f186-b9f7-4da9-ba7b-05639f43d4cf --summary",
+        "bun run content-audit:validate -- --article-id 75e0731a-8a79-4007-9531-2ad50b3905ed --summary",
+        "bun run content-audit:validate -- --article-id 5e194f59-3941-4bbb-b54b-85134f25286b --summary",
+        "bun run content-audit:validate -- --article-id 7a7a042f-4e5c-4a7b-90d1-93895e551c6d --summary"
+      ],
+      "tests": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "git_diff_check": "git diff --check -- .ai/content-audit-export/articles/lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation--df4b2a65-1d08-41b6-83c8-944df4d35938 .ai/content-audit-export/articles/lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond--6bb0f186-b9f7-4da9-ba7b-05639f43d4cf .ai/content-audit-export/articles/lea-prac-ctr-011-payment-bond-protection-for-subcontractors-and-suppliers--75e0731a-8a79-4007-9531-2ad50b3905ed .ai/content-audit-export/articles/lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope--5e194f59-3941-4bbb-b54b-85134f25286b .ai/content-audit-export/articles/lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters--7a7a042f-4e5c-4a7b-90d1-93895e551c6d .ai/03_plans/source-audited-local-first-batches-handoff.md .ai/content-audit-export/source-audited-article-batch-029-local-first-ledger.json .ai/content-audit-export/source-audited-article-batch-029-local-first-report.md .ai/content-audit-export/source-audited-article-batch-029-local-first-scoped-checks.json"
+    },
+    "compose": "PASS: 5/5 changed candidates, blockers=0",
+    "diff": "PASS: 5/5 changed=true safe_to_push=true blockers=0",
+    "validate": "PASS: 5/5 valid=true blockers=0; only expected component-usage.json warnings",
+    "scoped_checks_path": ".ai/content-audit-export/source-audited-article-batch-029-local-first-scoped-checks.json",
+    "scoped_checks": {
+      "json_parse": "PASS",
+      "output_placeholder_internal_source_gap_scan": "PASS",
+      "compose_reports": "PASS",
+      "diff_reports": "PASS",
+      "bundle_validation": "PASS_WITH_EXPECTED_COMPONENT_USAGE_WARNINGS",
+      "source_audit_evidence": "PASS",
+      "raw_pdf_hashes": "PASS",
+      "question_edits": "PASS",
+      "stale_compose_errors": "PASS"
+    },
+    "targeted_tests": {
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "result": "PASS: 34 pass, 0 fail, 328 expect() calls"
+    },
+    "remaining_local_blockers": 0
+  },
+  "artifacts": {
+    "ledger": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-029-local-first-ledger.json",
+    "report": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-029-local-first-report.md",
+    "scoped_checks": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-029-local-first-scoped-checks.json",
+    "handoff_plan": "/Users/philiplewis/slatecamp/.ai/03_plans/source-audited-local-first-batches-handoff.md"
+  },
+  "blockers": [],
+  "articles": [
+    {
+      "article_id": "df4b2a65-1d08-41b6-83c8-944df4d35938",
+      "slug": "lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation",
+      "title": "Bid Evaluation Contract Award and the Architect's Recommendation",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation--df4b2a65-1d08-41b6-83c8-944df4d35938",
+      "absolute_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation--df4b2a65-1d08-41b6-83c8-944df4d35938",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation--df4b2a65-1d08-41b6-83c8-944df4d35938/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation--df4b2a65-1d08-41b6-83c8-944df4d35938/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 3,
+      "hashes": {
+        "original": "sha256:bb94b9f68925aa973ac9670f47e2c20ba262abb5277f918a385a559e268ed29a",
+        "normalized": "sha256:85a222824779d9f3890faec397d8ef4d19d84cc474c37e70a36a83b5fb4612a4",
+        "candidate": "sha256:85a222824779d9f3890faec397d8ef4d19d84cc474c37e70a36a83b5fb4612a4",
+        "sources": "sha256:76cb715b2a61c8345890b14b9a4acee0a58985994db6f8de5d31b9b7f679d6be"
+      },
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": [],
+        "unresolved_placeholders": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": [],
+        "unresolved_placeholders_count": 0,
+        "ui_blocks_changed_count": 0
+      },
+      "source_audit": {
+        "status": "PASS",
+        "raw_pdf_gate": "PASS",
+        "safe_for_supabase_upload": true,
+        "supabase_push_attempted": false,
+        "deploy_attempted": false,
+        "commit_attempted": false
+      },
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "article_id": "6bb0f186-b9f7-4da9-ba7b-05639f43d4cf",
+      "slug": "lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond",
+      "title": "Performance Bond Purpose Typical Amount",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond--6bb0f186-b9f7-4da9-ba7b-05639f43d4cf",
+      "absolute_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond--6bb0f186-b9f7-4da9-ba7b-05639f43d4cf",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond--6bb0f186-b9f7-4da9-ba7b-05639f43d4cf/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond--6bb0f186-b9f7-4da9-ba7b-05639f43d4cf/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 2,
+      "hashes": {
+        "original": "sha256:13967dc1ee6356f77c13dedac5b7af2978ae2053398cc79ffd74385dbe327e5c",
+        "normalized": "sha256:5cc25826f422014255be5746a07575bfdc418601121880467881e29e826ef382",
+        "candidate": "sha256:5cc25826f422014255be5746a07575bfdc418601121880467881e29e826ef382",
+        "sources": "sha256:a09cebec2211fa79fd99723e89fa2c25220fc4ebe89fc5623c9535676be9e354"
+      },
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": [],
+        "unresolved_placeholders": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": [],
+        "unresolved_placeholders_count": 0,
+        "ui_blocks_changed_count": 0
+      },
+      "source_audit": {
+        "status": "PASS",
+        "raw_pdf_gate": "PASS",
+        "safe_for_supabase_upload": true,
+        "supabase_push_attempted": false,
+        "deploy_attempted": false,
+        "commit_attempted": false
+      },
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "article_id": "75e0731a-8a79-4007-9531-2ad50b3905ed",
+      "slug": "lea-prac-ctr-011-payment-bond-protection-for-subcontractors-and-suppliers",
+      "title": "Payment Bond Protection for Subcontractors and Suppliers",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-011-payment-bond-protection-for-subcontractors-and-suppliers--75e0731a-8a79-4007-9531-2ad50b3905ed",
+      "absolute_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-011-payment-bond-protection-for-subcontractors-and-suppliers--75e0731a-8a79-4007-9531-2ad50b3905ed",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-011-payment-bond-protection-for-subcontractors-and-suppliers--75e0731a-8a79-4007-9531-2ad50b3905ed/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-011-payment-bond-protection-for-subcontractors-and-suppliers--75e0731a-8a79-4007-9531-2ad50b3905ed/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 2,
+      "hashes": {
+        "original": "sha256:0e2c297d54f85d38c06f79694505b20860092a83c305cbc444c824000eee20a1",
+        "normalized": "sha256:59ab470d2cf4ba0683e6096517d2c7d5026dc11ff0a1db6a69f9860e15b5afa9",
+        "candidate": "sha256:59ab470d2cf4ba0683e6096517d2c7d5026dc11ff0a1db6a69f9860e15b5afa9",
+        "sources": "sha256:bdfb33a57e83b7162e9055d5331c0b019c51b4d9fd652f0a6044803e85060a03"
+      },
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": [],
+        "unresolved_placeholders": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": [],
+        "unresolved_placeholders_count": 0,
+        "ui_blocks_changed_count": 0
+      },
+      "source_audit": {
+        "status": "PASS",
+        "raw_pdf_gate": "PASS",
+        "safe_for_supabase_upload": true,
+        "supabase_push_attempted": false,
+        "deploy_attempted": false,
+        "commit_attempted": false
+      },
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "article_id": "5e194f59-3941-4bbb-b54b-85134f25286b",
+      "slug": "lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope",
+      "title": "Guarantee Bond the One Year Defects Liability Period and its Scope",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope--5e194f59-3941-4bbb-b54b-85134f25286b",
+      "absolute_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope--5e194f59-3941-4bbb-b54b-85134f25286b",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope--5e194f59-3941-4bbb-b54b-85134f25286b/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-012-guarantee-bond-the-one-year-defects-liability-period-and-its-scope--5e194f59-3941-4bbb-b54b-85134f25286b/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 3,
+      "hashes": {
+        "original": "sha256:963cfbe60602b66a7c215b23004c6530cc59b06052e41b0fe74cbffd1aa16485",
+        "normalized": "sha256:8d1e3b1086b15cfd1cc87c9eb57d0ce9a20dfcd5d6b37d41f46265ef05f50114",
+        "candidate": "sha256:8d1e3b1086b15cfd1cc87c9eb57d0ce9a20dfcd5d6b37d41f46265ef05f50114",
+        "sources": "sha256:3673b80c45b1c68da8183245cccb6127c6063b605bd305ffb9b5bab6ff6f993d"
+      },
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": [],
+        "unresolved_placeholders": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": [],
+        "unresolved_placeholders_count": 0,
+        "ui_blocks_changed_count": 0
+      },
+      "source_audit": {
+        "status": "PASS",
+        "raw_pdf_gate": "PASS",
+        "safe_for_supabase_upload": true,
+        "supabase_push_attempted": false,
+        "deploy_attempted": false,
+        "commit_attempted": false
+      },
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "article_id": "7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
+      "slug": "lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters",
+      "title": "Professional Indemnity Insurance for Architects What It Covers",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters--7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
+      "absolute_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters--7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters--7a7a042f-4e5c-4a7b-90d1-93895e551c6d/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters--7a7a042f-4e5c-4a7b-90d1-93895e551c6d/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 3,
+      "hashes": {
+        "original": "sha256:b562e529750cb13088beb606f8fd58fcfedefddff25868f25191b1505d5223cd",
+        "normalized": "sha256:4279ade656e010e3e4f8ef8c476e1a0d917cca68522338d0c6913b382c50f2ed",
+        "candidate": "sha256:4279ade656e010e3e4f8ef8c476e1a0d917cca68522338d0c6913b382c50f2ed",
+        "sources": "sha256:faf2680016b921d1e9b0f4ca82c22c3a8958d852ea761ddb00fe7611fd78fce7"
+      },
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": [],
+        "unresolved_placeholders": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": [],
+        "unresolved_placeholders_count": 0,
+        "ui_blocks_changed_count": 0
+      },
+      "source_audit": {
+        "status": "PASS",
+        "raw_pdf_gate": "PASS",
+        "safe_for_supabase_upload": true,
+        "supabase_push_attempted": false,
+        "deploy_attempted": false,
+        "commit_attempted": false
+      },
+      "blockers": [],
+      "warnings": []
+    }
+  ],
+  "next_phase_readiness": "Batch 029 is locally ready for final publishing review. Batch 030 may be selected under the recorded exclusion rules. No Supabase push, deploy, or commit was attempted."
+}

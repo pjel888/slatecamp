@@ -1,0 +1,236 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-085-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T07:55:00.000+08:00",
+  "target": {
+    "article_id": "7b1d04de-6310-4187-8cfc-39f1f30cf349",
+    "slug": "lea-matl-005-09-core-concept",
+    "title": "Waste reduction starts with source reduction before reuse, recycling, recovery, and disposal",
+    "article_folder": ".ai/content-audit-export/articles/lea-matl-005-09-core-concept--7b1d04de-6310-4187-8cfc-39f1f30cf349",
+    "normalized_sha256": "sha256:7c0d1672b0f93408945e19b97143b7f31df3e6887109f1b1de6c52a4d37b1e74",
+    "candidate_sha256": "sha256:7c0d1672b0f93408945e19b97143b7f31df3e6887109f1b1de6c52a4d37b1e74",
+    "candidate_path": ".ai/content-audit-export/articles/lea-matl-005-09-core-concept--7b1d04de-6310-4187-8cfc-39f1f30cf349/candidate.md"
+  },
+  "classification": {
+    "topic_family": "construction_waste_reduction_and_ra9003",
+    "local_first_batch": "085",
+    "source_sensitivity": "legal_and_technical_construction",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "source_bound_technology",
+    "requires_raw_pdf_audit": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdfs_checked_first": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "local_pdf_extraction_method": "python_pymupdf_local",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "ra-9003-ecological-solid-waste-management-b085",
+      "label": "RA 9003 Ecological Solid Waste Management Act of 2000",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.pdf",
+      "sha256": "sha256:d3939c8bad4085e76186be1fa0465b9011ceb639bdb8611e7d869fac454d59fe",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.md",
+      "refined_markdown_sha256": "sha256:f0e42aa0bb840899b2ef0a87d79fa7e9cb47e97d090731fc48b119711144eadc",
+      "locator": "RA 9003 refined markdown lines 11-125 and 491-555; raw PDF pages 1, 4, 5, 16, 18, and 37 checked by local PyMuPDF extraction."
+    },
+    {
+      "source_id": "green-building-illustrated-b085",
+      "label": "Green Building Illustrated",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Green Building Illustrated.pdf",
+      "sha256": "sha256:b23f127ca4581eb2d733b14e2a3739d022c9d04b343729b0ecdebdf92d0bdc70",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Green Building Illustrated.md",
+      "refined_markdown_sha256": "sha256:4c754dad2867dea176cd93c2f93788b7874ccbbe557096bb64cbb0ab3a0165d2",
+      "locator": "Green Building Illustrated refined markdown lines 7501-7535, 7549-7583, and 7709-7727; raw PDF pages 228-230 and 235-236 checked by local PyMuPDF extraction."
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-matl-005-09-core-concept-article-b085",
+      "claim_text": "Article lea-matl-005-09-core-concept was rewritten to the checked construction_waste_reduction_and_ra9003 source scope.",
+      "claim_type": "article_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.pdf",
+        "raw_pdf_sha256": "sha256:d3939c8bad4085e76186be1fa0465b9011ceb639bdb8611e7d869fac454d59fe",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.md",
+        "source_locator": "RA 9003 refined markdown lines 11-125 and 491-555; Green Building Illustrated refined markdown lines 7709-7727.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-c2adc4f4-4d40-41aa-888e-6d0c966eb5e6-b085",
+      "claim_text": "Question c2adc4f4-4d40-41aa-888e-6d0c966eb5e6 was rewritten to the checked construction_waste_reduction_and_ra9003 source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.pdf",
+        "raw_pdf_sha256": "sha256:d3939c8bad4085e76186be1fa0465b9011ceb639bdb8611e7d869fac454d59fe",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.md",
+        "source_locator": "RA 9003 refined markdown lines 11-125 and 491-555; Green Building Illustrated refined markdown lines 7709-7727.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-7c60ae97-22e9-4fd1-bb4c-80c6caf4a76a-b085",
+      "claim_text": "Question 7c60ae97-22e9-4fd1-bb4c-80c6caf4a76a was rewritten to the checked construction_waste_reduction_and_ra9003 source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.pdf",
+        "raw_pdf_sha256": "sha256:d3939c8bad4085e76186be1fa0465b9011ceb639bdb8611e7d869fac454d59fe",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.md",
+        "source_locator": "RA 9003 refined markdown lines 11-125 and 491-555; Green Building Illustrated refined markdown lines 7709-7727.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-9a380ddc-6a52-4573-9799-872ee7476219-b085",
+      "claim_text": "Question 9a380ddc-6a52-4573-9799-872ee7476219 was rewritten to the checked construction_waste_reduction_and_ra9003 source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.pdf",
+        "raw_pdf_sha256": "sha256:d3939c8bad4085e76186be1fa0465b9011ceb639bdb8611e7d869fac454d59fe",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.md",
+        "source_locator": "RA 9003 refined markdown lines 11-125 and 491-555; Green Building Illustrated refined markdown lines 7709-7727.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-6aecf565-2191-4ae5-9586-1ca5fb0911ae-b085",
+      "claim_text": "Question 6aecf565-2191-4ae5-9586-1ca5fb0911ae was rewritten to the checked construction_waste_reduction_and_ra9003 source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.pdf",
+        "raw_pdf_sha256": "sha256:d3939c8bad4085e76186be1fa0465b9011ceb639bdb8611e7d869fac454d59fe",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.md",
+        "source_locator": "RA 9003 refined markdown lines 11-125 and 491-555; Green Building Illustrated refined markdown lines 7709-7727.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-5301c01a-f7f5-49c7-ae0e-831e34ca42e1-b085",
+      "claim_text": "Question 5301c01a-f7f5-49c7-ae0e-831e34ca42e1 was rewritten to the checked construction_waste_reduction_and_ra9003 source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.pdf",
+        "raw_pdf_sha256": "sha256:d3939c8bad4085e76186be1fa0465b9011ceb639bdb8611e7d869fac454d59fe",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.md",
+        "source_locator": "RA 9003 refined markdown lines 11-125 and 491-555; Green Building Illustrated refined markdown lines 7709-7727.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-96e238e3-a437-4b8e-ab69-96b81ca024e6-b085",
+      "claim_text": "Question 96e238e3-a437-4b8e-ab69-96b81ca024e6 was rewritten to the checked construction_waste_reduction_and_ra9003 source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.pdf",
+        "raw_pdf_sha256": "sha256:d3939c8bad4085e76186be1fa0465b9011ceb639bdb8611e7d869fac454d59fe",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.md",
+        "source_locator": "RA 9003 refined markdown lines 11-125 and 491-555; Green Building Illustrated refined markdown lines 7709-7727.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-d3c1032f-ef99-4b3b-9c95-a3c6f437fc92-b085",
+      "claim_text": "Question d3c1032f-ef99-4b3b-9c95-a3c6f437fc92 was rewritten to the checked construction_waste_reduction_and_ra9003 source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.pdf",
+        "raw_pdf_sha256": "sha256:d3939c8bad4085e76186be1fa0465b9011ceb639bdb8611e7d869fac454d59fe",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.md",
+        "source_locator": "RA 9003 refined markdown lines 11-125 and 491-555; Green Building Illustrated refined markdown lines 7709-7727.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-fa5e3b6a-a4fe-4041-8abc-03d2022a43b8-b085",
+      "claim_text": "Question fa5e3b6a-a4fe-4041-8abc-03d2022a43b8 was rewritten to the checked construction_waste_reduction_and_ra9003 source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.pdf",
+        "raw_pdf_sha256": "sha256:d3939c8bad4085e76186be1fa0465b9011ceb639bdb8611e7d869fac454d59fe",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.md",
+        "source_locator": "RA 9003 refined markdown lines 11-125 and 491-555; Green Building Illustrated refined markdown lines 7709-7727.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-abc6b0b8-8be4-4a93-9806-445f19ca16d3-b085",
+      "claim_text": "Question abc6b0b8-8be4-4a93-9806-445f19ca16d3 was rewritten to the checked construction_waste_reduction_and_ra9003 source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.pdf",
+        "raw_pdf_sha256": "sha256:d3939c8bad4085e76186be1fa0465b9011ceb639bdb8611e7d869fac454d59fe",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.md",
+        "source_locator": "RA 9003 refined markdown lines 11-125 and 491-555; Green Building Illustrated refined markdown lines 7709-7727.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-8d1fbe63-d7fa-44d9-b6cd-3b434efc9982-b085",
+      "claim_text": "Question 8d1fbe63-d7fa-44d9-b6cd-3b434efc9982 was rewritten to the checked construction_waste_reduction_and_ra9003 source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.pdf",
+        "raw_pdf_sha256": "sha256:d3939c8bad4085e76186be1fa0465b9011ceb639bdb8611e7d869fac454d59fe",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.md",
+        "source_locator": "RA 9003 refined markdown lines 11-125 and 491-555; Green Building Illustrated refined markdown lines 7709-7727.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "question_edit_audit": {
+    "linked_question_count": 10,
+    "question_edit_count": 10,
+    "answer_key_fields_changed": true,
+    "source_safe_rewrite": true,
+    "blockers": []
+  },
+  "scenario_enrichment": {
+    "status": "eligible-deferred",
+    "reason": "Waste-management planning has scenario potential, but Batch 085 deferred numeric waste scenarios and local recycling-rate claims that lacked raw-source support."
+  },
+  "roundtrip": {
+    "normalized_md_owns_article_prose": true,
+    "ui_blocks_json_owns_raw_ui_blocks": true,
+    "candidate_md_generated_by_compose": true,
+    "raw_ui_block_edits_supported_in_this_batch": false,
+    "note": "Exported UI summary markers were removed because ui-blocks.json has zero preserved raw blocks; compose must generate candidate.md from normalized.md.",
+    "unresolved_ui_summary_markers_removed": true
+  }
+}

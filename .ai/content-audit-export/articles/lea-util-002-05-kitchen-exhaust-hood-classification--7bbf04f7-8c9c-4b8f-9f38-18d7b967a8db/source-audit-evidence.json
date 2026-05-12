@@ -1,0 +1,302 @@
+{
+  "schema_version": "source-audit-evidence-v1-local-first",
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-044-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T16:22:00.000+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db",
+    "slug": "lea-util-002-05-kitchen-exhaust-hood-classification",
+    "title": "Kitchen exhaust systems and special mechanical systems are",
+    "article_folder": ".ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db",
+    "candidate_path": ".ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/candidate.md",
+    "candidate_sha256": "sha256:4d78b27411213c1f7c133255626785be75450eb57fa7a062b8dbea7d37976836",
+    "normalized_sha256": "sha256:4d78b27411213c1f7c133255626785be75450eb57fa7a062b8dbea7d37976836",
+    "linked_questions_sha256": "sha256:3c7b597efe2426b574bca21ff2c9ce2b51f35c9e68c71155a4918240a7bfa826",
+    "sources_sha256": "sha256:85c0df3f0075df268d767d25416569b3835735a30a09299f452644aff5413d94"
+  },
+  "classification": {
+    "content_domain": "LEA Utilities - kitchen exhaust and hood classification",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high_value_utilities_kitchen_exhaust_fire_safety",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 15,
+    "question_edits_created": [
+      "e59f3052-9238-4dd4-af58-ac6eea974dc3",
+      "3671cda4-f7ce-451f-bf11-186ee401d1c1",
+      "4c94d775-eac3-442e-b2fd-0ebe1ab0f73c",
+      "2fdee31b-f29c-45bd-a20f-69a63ae9093e",
+      "3b1579a1-568b-4160-8258-cf71359a4d12",
+      "4c9f06c3-ebbf-46fb-b139-70e442ca4506",
+      "5a621930-5a2d-4e46-a854-aaa04873a04c",
+      "1c020ad2-f59c-41e9-a49b-c17344744519",
+      "3f2a2294-8326-479a-8e17-077239a91590",
+      "59a706bc-816e-469c-b9b4-aa4586e5bf62",
+      "7bef4fc3-243c-46cc-a7ad-a3cd9b04c05a",
+      "80089fb4-11b5-47b3-a418-ceba902e36e5",
+      "e7983e74-f0dd-40d0-8c3b-c1c0f8260ccf",
+      "1b627fa4-6e3a-4c0d-b3d2-e83336165852",
+      "500cbb9e-6452-43a0-a248-404d3aa33bbc"
+    ]
+  },
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/question-edits/e59f3052-9238-4dd4-af58-ac6eea974dc3.json",
+      ".ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/question-edits/3671cda4-f7ce-451f-bf11-186ee401d1c1.json",
+      ".ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/question-edits/4c94d775-eac3-442e-b2fd-0ebe1ab0f73c.json",
+      ".ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/question-edits/2fdee31b-f29c-45bd-a20f-69a63ae9093e.json",
+      ".ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/question-edits/3b1579a1-568b-4160-8258-cf71359a4d12.json",
+      ".ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/question-edits/4c9f06c3-ebbf-46fb-b139-70e442ca4506.json",
+      ".ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/question-edits/5a621930-5a2d-4e46-a854-aaa04873a04c.json",
+      ".ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/question-edits/1c020ad2-f59c-41e9-a49b-c17344744519.json",
+      ".ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/question-edits/3f2a2294-8326-479a-8e17-077239a91590.json",
+      ".ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/question-edits/59a706bc-816e-469c-b9b4-aa4586e5bf62.json",
+      ".ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/question-edits/7bef4fc3-243c-46cc-a7ad-a3cd9b04c05a.json",
+      ".ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/question-edits/80089fb4-11b5-47b3-a418-ceba902e36e5.json",
+      ".ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/question-edits/e7983e74-f0dd-40d0-8c3b-c1c0f8260ccf.json",
+      ".ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/question-edits/1b627fa4-6e3a-4c0d-b3d2-e83336165852.json",
+      ".ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/question-edits/500cbb9e-6452-43a0-a248-404d3aa33bbc.json"
+    ]
+  },
+  "raw_sources": [
+    {
+      "source_id": "doe-energy-conserving-design-guidelines-local-raw-pdf--b044",
+      "label": "DOE Energy Conserving Design Guidelines - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+      "raw_pdf_sha256": "sha256:9a1a4019b500ffc2873625db6f04ac50b39aea7cadac9159464f9ed716e8126c",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.md",
+      "refined_markdown_sha256": "sha256:477f0990a67359eee303e8280a00be449d0aa413252161db7b5b1bafec3012b9",
+      "source_locator": "DOE refined markdown lines 49, 1115, 1244-1246, 1409-1439, 1489-1527, 1560-1612, 1680-1695",
+      "checked_markdown_lines": [
+        "DOE refined markdown lines 49 and 1115",
+        "DOE refined markdown lines 1244-1246",
+        "DOE refined markdown lines 1409-1439",
+        "DOE refined markdown lines 1489-1527",
+        "DOE refined markdown lines 1560-1612",
+        "DOE refined markdown lines 1680-1695"
+      ]
+    },
+    {
+      "source_id": "salvan-architectural-utilities-2-local-raw-pdf--b044",
+      "label": "George Salvan Architectural Utilities 2 - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+      "raw_pdf_sha256": "sha256:ff7231f0059a1febaf4a0996a425caca3b7676c23c729f922e385af4e4c20d28",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
+      "refined_markdown_sha256": "sha256:1b9249c90c0b86c57c6df2f20f0ab210ac112a10230bd9bce584461773d75215",
+      "source_locator": "Salvan refined markdown lines 1478-1489, 1515, 1684, 1718, 1741, 1785-1792, 5172, 11099-11105, 12249-12417, 16731-16783",
+      "checked_markdown_lines": [
+        "Salvan refined markdown lines 1478-1489 and 1515",
+        "Salvan refined markdown lines 1684, 1718, 1741, 1785-1792",
+        "Salvan refined markdown lines 5172 and 11099-11105",
+        "Salvan refined markdown lines 12249-12417",
+        "Salvan refined markdown lines 16731-16783"
+      ]
+    },
+    {
+      "source_id": "ra9514-rirr-2019-local-raw-pdf--b044",
+      "label": "RA 9514 Revised IRR 2019 - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+      "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+      "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+      "source_locator": "RA 9514 refined markdown lines 1482, 1510, 1520, 1630, 2347, 2417-2422, 2488, 2513, 2702-2717, 3609-3645, 3684-3714, 5451-5464, 5919-5943, 5999-6025",
+      "checked_markdown_lines": [
+        "RA 9514 refined markdown lines 1482, 1510, 1520, 1630",
+        "RA 9514 refined markdown lines 2347 and 2417-2422",
+        "RA 9514 refined markdown lines 2488 and 2513",
+        "RA 9514 refined markdown lines 2702-2717 and 3609-3645",
+        "RA 9514 refined markdown lines 3684-3714",
+        "RA 9514 refined markdown lines 5451-5464, 5919-5943, 5999-6025"
+      ]
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "doe-energy-conserving-design-guidelines-local-raw-pdf--b044",
+      "label": "DOE Energy Conserving Design Guidelines - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+      "raw_pdf_sha256": "sha256:9a1a4019b500ffc2873625db6f04ac50b39aea7cadac9159464f9ed716e8126c",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.md",
+      "refined_markdown_sha256": "sha256:477f0990a67359eee303e8280a00be449d0aa413252161db7b5b1bafec3012b9",
+      "source_locator": "DOE refined markdown lines 49, 1115, 1244-1246, 1409-1439, 1489-1527, 1560-1612, 1680-1695",
+      "checked_markdown_lines": [
+        "DOE refined markdown lines 49 and 1115",
+        "DOE refined markdown lines 1244-1246",
+        "DOE refined markdown lines 1409-1439",
+        "DOE refined markdown lines 1489-1527",
+        "DOE refined markdown lines 1560-1612",
+        "DOE refined markdown lines 1680-1695"
+      ]
+    },
+    {
+      "source_id": "salvan-architectural-utilities-2-local-raw-pdf--b044",
+      "label": "George Salvan Architectural Utilities 2 - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+      "raw_pdf_sha256": "sha256:ff7231f0059a1febaf4a0996a425caca3b7676c23c729f922e385af4e4c20d28",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
+      "refined_markdown_sha256": "sha256:1b9249c90c0b86c57c6df2f20f0ab210ac112a10230bd9bce584461773d75215",
+      "source_locator": "Salvan refined markdown lines 1478-1489, 1515, 1684, 1718, 1741, 1785-1792, 5172, 11099-11105, 12249-12417, 16731-16783",
+      "checked_markdown_lines": [
+        "Salvan refined markdown lines 1478-1489 and 1515",
+        "Salvan refined markdown lines 1684, 1718, 1741, 1785-1792",
+        "Salvan refined markdown lines 5172 and 11099-11105",
+        "Salvan refined markdown lines 12249-12417",
+        "Salvan refined markdown lines 16731-16783"
+      ]
+    },
+    {
+      "source_id": "ra9514-rirr-2019-local-raw-pdf--b044",
+      "label": "RA 9514 Revised IRR 2019 - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+      "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+      "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+      "source_locator": "RA 9514 refined markdown lines 1482, 1510, 1520, 1630, 2347, 2417-2422, 2488, 2513, 2702-2717, 3609-3645, 3684-3714, 5451-5464, 5919-5943, 5999-6025",
+      "checked_markdown_lines": [
+        "RA 9514 refined markdown lines 1482, 1510, 1520, 1630",
+        "RA 9514 refined markdown lines 2347 and 2417-2422",
+        "RA 9514 refined markdown lines 2488 and 2513",
+        "RA 9514 refined markdown lines 2702-2717 and 3609-3645",
+        "RA 9514 refined markdown lines 3684-3714",
+        "RA 9514 refined markdown lines 5451-5464, 5919-5943, 5999-6025"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "b044-kitchen-01",
+      "claim_text": "The DOE guidelines include accepted hood styles for Type 1 applications.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "DOE Energy Conserving Design Guidelines - local raw PDF",
+        "locator": "DOE refined markdown lines 49 and 1115",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+        "raw_pdf_sha256": "sha256:9a1a4019b500ffc2873625db6f04ac50b39aea7cadac9159464f9ed716e8126c",
+        "quoted_pdf_excerpt": "six basic hood styles for Type 1 applications"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b044-kitchen-02",
+      "claim_text": "The DOE hood table provides exhaust-flow formulas for conventional Type 1 hoods.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "DOE Energy Conserving Design Guidelines - local raw PDF",
+        "locator": "DOE refined markdown lines 1603-1612",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+        "raw_pdf_sha256": "sha256:9a1a4019b500ffc2873625db6f04ac50b39aea7cadac9159464f9ed716e8126c",
+        "quoted_pdf_excerpt": "Table 6.2; Q = exhaust flow rate"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b044-kitchen-03",
+      "claim_text": "Salvan distinguishes ducted hoods from ductless hoods and notes ductless hoods do not remove heat and humidity.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "George Salvan Architectural Utilities 2 - local raw PDF",
+        "locator": "Salvan refined markdown lines 16753-16761",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+        "raw_pdf_sha256": "sha256:ff7231f0059a1febaf4a0996a425caca3b7676c23c729f922e385af4e4c20d28",
+        "quoted_pdf_excerpt": "ducted hood vents outside; nonvented hoods are not able to remove heat and humidity"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b044-kitchen-04",
+      "claim_text": "RA 9514 requires cooking equipment protection by automatic kitchen hood fire suppression in accordance with recognized standards.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "RA 9514 Revised IRR 2019 - local raw PDF",
+        "locator": "RA 9514 refined markdown line 2513",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "quoted_pdf_excerpt": "Cooking equipment shall be protected by automatic kitchen hood fire suppression"
+      },
+      "blockers": []
+    }
+  ],
+  "removed_or_rewritten_material": [
+    "Removed exported UI block marker text from normalized article content where present.",
+    "Rewrote linked question files to stay inside checked local raw-source evidence.",
+    "Replaced derivative-only numeric examples with local source-family statements."
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdf_first": true,
+    "derivative_layers_used_only_as_locators": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "checked_raw_pdf_families": [
+      "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+      "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+      "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf"
+    ],
+    "blockers": []
+  },
+  "gate_results": {
+    "source_audit": "PASS",
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_validation": "PASS",
+    "question_edit_count_check": "PASS",
+    "scoped_json_parse": "PASS",
+    "marker_scan": "PASS",
+    "source_hash_check": "PASS",
+    "stale_compose_error_check": "PASS"
+  },
+  "source_safe_repair": {
+    "status": "COMPLETE_LOCAL_VALIDATED",
+    "article_normalized_rewritten": true,
+    "sources_json_updated": true,
+    "source_audit_evidence_updated": true,
+    "question_edits_created": 15,
+    "blockers": []
+  },
+  "local_validation": {
+    "status": "PASS_LOCAL_VALIDATION",
+    "validated_at": "2026-05-11T16:34:00.000+08:00",
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_validation": "PASS",
+    "scoped_checks": "PASS",
+    "blockers": []
+  },
+  "sme_review": {
+    "required_before_supabase_publish": true,
+    "completed": false
+  },
+  "overall": {
+    "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "artifact_type": "source_audit_evidence",
+  "batch_id": "source-audited-article-batch-013-local-first",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T22:25:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "status": "local_pass_ready_for_final_publishing_review",
+  "target": {
+    "article_id": "f2c105fd-51fc-4b48-b53a-77242dbb91b0",
+    "slug": "uap-spp-doc-standards-of-professional-practice-for-philippine-architects",
+    "title": "UAP SPP: General Standards",
+    "folder": ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0",
+    "normalized_path": ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/normalized.md",
+    "candidate_path": ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/candidate.md",
+    "sources_path": ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/sources.json",
+    "question_edits_folder": ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits",
+    "original_hash": "sha256:712933904177e2ab8f82af83f84c44ef7fdab38c771d10018f0b36d69642d813",
+    "normalized_hash": "sha256:5f363f64eeb22959f64cf0270e823a1a604cc96357d2d76d9bfd921d8208276c",
+    "candidate_hash": "sha256:5f363f64eeb22959f64cf0270e823a1a604cc96357d2d76d9bfd921d8208276c",
+    "sources_hash": "sha256:955ebda3b142b482bb3525394dfc7a2cc1b2b85f301c20e5944f50efd6e613dd",
+    "linked_questions_hash": "sha256:d6c9af942bb7b2f8a841d8f2f072e79b9033438ca7a38c19780e351d54577d6a",
+    "question_edit_count": 10
+  },
+  "raw_sources": [
+    {
+      "source_id": "uap-standards-of-professional-practice-2",
+      "label": "UAP Standards of Professional Practice",
+      "authority": "United Architects of the Philippines / PRBoA SPP reference copy",
+      "source_type": "professional_practice_pdf",
+      "source_locator": "UAP Standards of Professional Practice Annex A and document map",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+      "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
+      "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
+      "checked_markdown_lines": [
+        "UAP SPP raw markdown lines 25-140, 287-343, and 560"
+      ],
+      "use": "primary source for article and linked-question support",
+      "local_source_checked": true
+    }
+  ],
+  "local_edits": {
+    "normalized_repaired": true,
+    "candidate_composed": true,
+    "ui_blocks_removed_from_repaired_markdown": true,
+    "sources_json_updated": true,
+    "question_edits_created": 10,
+    "answer_key_fields_changed": false,
+    "partial_source_support_question_edits": 0
+  },
+  "validation": {
+    "compose": {
+      "safe_to_diff": true,
+      "blockers": [],
+      "placeholders_found": 0,
+      "unresolved_placeholders": []
+    },
+    "diff": {
+      "changed": true,
+      "safe_to_push": true,
+      "locally_safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+      ]
+    },
+    "bundle_validate_dry_run": {
+      "valid": true,
+      "blockers": [],
+      "warnings": [
+        "component-usage.json has not been generated for this article yet."
+      ]
+    }
+  },
+  "question_edit_files": [
+    ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/2c8d742c-4c03-44c9-b34f-8a19f772466b.json",
+    ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/44de2806-024e-488f-9c38-f6b3fcf6ca3d.json",
+    ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/6959881a-e9a0-44a3-b7c5-35a1aec20712.json",
+    ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/97530be3-4382-434c-b56d-8bca7da48893.json",
+    ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/b437c81d-373b-4905-ba00-5a4f470f024c.json",
+    ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/d905acf1-6d69-4aad-b4fa-bf27c1af0135.json",
+    ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/e42464b4-5bd6-48be-93bd-d6fc378f439f.json",
+    ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/e65cfa10-7569-42df-a72c-1176c0ce5bf9.json",
+    ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/ef5a28ce-610a-48c7-a3b7-2aeabf1617a2.json",
+    ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/f545be77-116b-48fd-8899-cadc77f2fd22.json"
+  ]
+}

@@ -1,128 +1,34 @@
+# Structural steel construction assembles prefabricated members through engineered connections
 
-
-## Board Exam Quick Check
-
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
-
-**Common mistake:** treating a familiar keyword in **Lea Matl 004 07 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
-
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
-## Learning Goal
 
-Describe structural steel construction systems — bolted and welded connections, composite steel-concrete construction, moment frames, braced frames — and identify when each system is appropriate for Philippine building projects.
+Structural steel questions should focus on member systems and connection behavior: beams, columns, joists, and metal decking are assembled with bolted or welded connections, and connection type affects rigidity, shear transfer, erection economy, and lateral stability strategy.
+
 ## Core Concept
 
-Structural steel construction assembles prefabricated members (columns, beams, braces) on-site through bolted or welded connections, creating a framework capable of resisting gravity and lateral forces. Steel offers high strength-to-weight ratio, rapid assembly (vs. concrete), and precision fabrication in controlled shop environments.
+- BCI identifies bolts, welds, tees, angles, plates, and member sizes as variables in steel connection strength and erection planning.
+- Moment connections resist rotation by developing moment capacity; shear connections are intended to transfer shear and are free to rotate under gravity loading.
+- Simple steel framing needs a separate lateral stability strategy such as shear walls or diagonal bracing.
+- Metal decking acts as a working platform and permanent formwork for a site-cast slab; composite decking relies on interaction with the concrete slab and supporting beams or joists.
 
+## How It Is Tested
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-steel-frame-systems", layout="single", type="image", status="placeholder", alt="Isometric diagrams of structural steel framing systems: moment frame, braced frame, and composite steel-concrete construction", caption="Future diagram: structural steel framing systems — moment frame, braced frame, composite construction", suggestedAsset="Isometric structural system diagrams with connection callouts", placementIntent="Helps learners distinguish steel framing systems by structural behavior"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-### Erection Sequence
-
-Steel frame erection typically follows this sequence: (1) column erection (starting from lowest level), (2) temporary bracing installation, (3) floor beam installation and connections, (4) floor decking and concrete placement, (5) progress to next level. Temporary bracing (cross-diagonals, knee braces) stabilizes the partially erected frame against wind and seismic forces until permanent lateral systems are complete.
-
-### Connection Types
-
-_Bolted Connections_ — Mechanical fasteners (ASTM A325 or A490 per NSCP 2015 Chapter 5 Section 505 / AISC 360 J2) transfer loads through bearing or slip-critical friction. Advantages: field-convenient, no welding equipment required, rapid assembly, quality controlled through bolt preload verification. Disadvantages: slightly more deformation under service load (bearing connections). Used for primary gravity connections (beam-to-column, truss nodes).
-
-_Welded Connections_ — Fused joints via SMAW, GMAW, or GTAW (per NSCP 2015 Chapter 5 Section 506 / AISC 360 J3). Advantages: true monolithic behavior, minimal deformation, clean aesthetics. Disadvantages: require skilled welders, weather-sensitive (SMAW tolerates wind; GMAW requires protection), need on-site quality verification (inspection). Used for critical connections (moment-resisting frames, continuous beams).
-
-
-[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-steel-connection-types", layout="single", type="image", status="placeholder", alt="Detail drawings of bolted and welded steel connections: shear connections, moment connections, and braced frame connections with gusset plates", caption="Future diagram: steel connection types — shear, moment, and braced frame connections", suggestedAsset="Cross-section and isometric detail drawings of steel connections", placementIntent="Shows different steel connection configurations in building frames"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-### Lateral Force-Resisting Systems
-
-_Moment-Resisting Frames (MRF)_ — Beam-column connections resist lateral forces through bending moment transfer. Frame joint rotations absorb seismic energy elastically. Advantages: open floor plans (no interior bracing), architectural flexibility. Disadvantages: require larger member sizes for moment capacity, more complex connections (welded or bolted plate connections), higher cost. Widely used in residential/office towers in Philippines.
-
-_Braced Frames_ — Diagonal or X-bracing members (concentric or eccentric) resist lateral forces through axial tension/compression. Advantages: smaller member sizes, stiffer frame (less sway), economical. Disadvantages: interior bracing reduces floor space, architectural constraints. Used in industrial and commercial buildings where interior space is secondary.
-
-_Dual Systems_ — Combination of moment-resisting frames and bracing. MRF provides ductility and damage control; bracing reduces lateral deflection. Optimal seismic performance. Increasingly specified for high-rise buildings in seismic zones (Philippines falls under seismic risk per NSCP 2015).
-
-### Fireproofing Methods
-
-_Intumescent Coatings_ — Paint-like application that expands when heated, forming protective char layer. Applied directly to steel members. Advantages: thin application, minimal impact on aesthetics. Disadvantages: requires periodic touch-up (maintenance intensive), cost varies by rating requirement.
-
-_Spray-Applied Fireproofing_ — Sprayed cementitious or mineral fiber material (3–5 cm thickness). Rapidly increases member temperature resistance. Advantages: economical, effective for complex shapes. Disadvantages: poor appearance, vulnerable to damage, requires protective finish coat.
-
-_Board Fireproofing_ — Rigid gypsum, ceramic fiber, or cementitious boards encasing steel. Highest durability and aesthetics. Advantages: durable, impact-resistant, visually clean. Disadvantages: highest cost and labor.
-
-RA 9514 (Fire Code) 2019 Revised IRR specifies fire-resistance ratings based on occupancy and height: Assembly (A) occupancy requires 3-4 hour FRR for structural elements; Business (B) requires 2-3 hours; Residential (R) requires 1-2 hours depending on building height. NSCP 2015 Chapter 7 provides complementary fire and life safety provisions. The required rating depends on building occupancy and size.
-
-## Key Provisions
-
-| Connection Type | Load Transfer | Field Convenience | Deformation | Inspection | Cost |
-|---|---|---|---|---|---|
-| Bolted Bearing | Bolt bearing on plate | High | Slight slip | Preload check | Lower |
-| Bolted Slip-Critical | Friction (high preload) | High | Minimal | Preload + inspection | Moderate |
-| Welded | Fusion, monolithic | Moderate | Minimal | VT + UT spot | Moderate–Higher |
-
-| Lateral System | Drift Control | Ductility | Complexity | Floor Space Loss | Typical Use |
-|---|---|---|---|---|---|
-| MRF | Moderate | High (seismic) | High (connections) | None | High-rise residential |
-| Braced Frame | High (stiff) | Low (brittle if poorly designed) | Low | 5–10% | Industrial, commercial |
-| Dual System | Low | High + stiff | Moderate | Minimal | High-rise seismic zones |
-
-| Fireproofing Method | Thickness | Cost | Durability | Maintenance | Aesthetics |
-|---|---|---|---|---|---|
-| Intumescent Coating | Thin (&lt;5 mm) | Moderate | Fair (touch-up) | High | Good |
-| Spray-Applied | 3–5 cm | Low | Fair (vulnerable) | Moderate | Poor (finish coat) |
-| Board (Gypsum/Fiber) | Variable | High | Excellent | Low | Excellent |
-
-## Philippine Construction Context
-
-Philippine structural steel fabricators (Vleanzuela, Laguna, surrounding zones) produce moment-resisting frame connections for high-rise residential towers in Metro Manila, Cebu, Davao, and provincial cities. NSCP 2015 Chapter 5 aligns with AISC 360-16 (or current edition) Specification for Structural Steel Buildings; designers commonly reference AISC standards directly.
-
-Bolted connections dominate Philippine construction due to labor convenience and field assembly efficiency. A325 bolts (120 ksi) with TC (tension-control) installation are increasingly standard for speed and consistency. Welded connections appear in critical areas (moment-resisting frame columns, continuous beams) where monolithic behavior is essential.
-
-Fireproofing specifications vary: spray-applied fireproofing is common for cost-sensitive projects; board fireproofing appears in premium high-rise buildings. Intumescent coatings are specified for structural visibility (architectural steel) where aesthetics matter.
-
-## How It's Tested
-
-The LEA evaluates structural steel construction through:
-
-1. _Erection sequencing_ — Identify proper sequence (columns first, temporary bracing, beams, decking) and explain temporary bracing necessity.
-2. _Connection selection_ — Specify bolted vs. welded based on ease of field assembly, required stiffness/deformation, and inspection accessibility.
-3. _Lateral system design_ — Recommend MRF, braced frame, or dual system based on occupancy, seismic risk, and architectural constraints.
-4. _Fireproofing specification_ — Select method based on fire-resistance rating requirement, cost, and aesthetics.
-5. _Defect recognition_ — Identify erection defects (misalignment, loose bolts, incomplete connections) and corrective actions.
-6. _Philippine standards alignment_ — Apply NSCP 2015 Chapter 5 and AISC 360 provisions.
-
-[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Bolted connections are the default for Philippine field assembly due to convenience and speed. Welded connections require skilled labor and weather protection; reserve them for critical moment-resisting connections and shop work. For high-rise seismic design in the Philippines, specify dual systems (MRF + bracing) for optimal ductility and stiffness. Fireproofing is mandatory for all structural steel; spray-applied is economical, but board is superior for durability. For bolted connection detail
-[/SLATECAMP_UI_BLOCK]
+- Classify a steel connection by what it is expected to resist.
+- Recognize why bolting and welding choices affect fabrication and erection.
+- Distinguish beams, joists, decking, and bracing roles.
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
-Extracted summary:
-- Props: title="Erecting Frame Without Temporary Bracing", body="A fabricator begins erecting columns and beams without diagonal bracing or knee braces. The partially erected frame is unstable; wind or minor seismic activity causes collapse and injuries. OSHA and NSCP 2015 mandate temporary bracing until permanent lateral system is complete."
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+- Do not claim exact AISC table values unless the exact local table has been audited.
+- Do not treat a shear connection as a full moment-resisting joint.
+- Do not ignore lateral bracing when the frame is described as simple.
 
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeCard" status="preserved"]
-Extracted summary:
-- Props: title="Specifying Fireproofing Without Rating Verification", body="An architect specifies 'standard spray fireproofing' without confirming the required fire-resistance rating (2, 3, or 4 hours per occupancy). The applied fireproofing fails to achieve the required rating; renovation is necessary. Always specify the fire-resistance rating and verify that the proposed method meets it."
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+## Sources Checked
 
-[SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: items="{[\"Assuming bolted and welded connections are interchangeable—bolted is faster in field; welded provides monolithic behavior. Choose based on project needs, not convenience alone.\", \"Over-relying on moment-resisting frames for seismic design in high-rise buildings without exploring dual systems—dual (MRF + bracing) optimizes ductility and stiffness, reducing member sizes and cost.\", \"Underestimating fireproofing maintenance—intumescent coatings require periodic touch-up; spray-applied fireproofing is vulnerable to impact and water. Budget for lifecycle maintenance.\", \"Failing to account for Philippine tropical weather—spray-applied fireproofing application requires dry conditions; monsoon season may delay work. Schedule accordingly.\", \"Specifying high-cost board fireproofing where spray-applied meets rating requirements—match fireproofing method to actual rating need, not budget assumptions.\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+- Building Construction Illustrated, 5th Edition: Building Construction Illustrated refined markdown lines 288-322, 2850-2925, 3378-3605, 4037-4073, 6504-6552, 8492, and 8578-8605; raw PDF pages 18, 105, 121-126, 137-145, 248, and 459 checked by local PyMuPDF extraction.
+- Buidling Construction Handbook 7th Ed by Chudley _ Greeno: Chudley/Greeno refined markdown lines 18-23, 295-305, 433-519, 782-916, and 893-916; raw PDF pages 58, 96, 163-199, 471, 495, and 511 checked by local PyMuPDF extraction.
+- Metals Lecture: Metals Lecture refined markdown lines 329-405 and 856-939; raw PDF pages 23, 26, and 28 checked by local PyMuPDF extraction.
 
-## Related Articles
+## Scenario Enrichment Status
 
-See also within Construction Systems and Methods: **lea-matl-004-06-core-concept**, **lea-matl-004-08-core-concept**, **lea-matl-004-09-core-concept**, **lea-matl-004-10-core-concept**.
-
-> **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
+eligible-deferred: Steel framing has strong scenario potential around connection selection and lateral stability, but Batch 084 deferred scenario sections to avoid broadening the repair scope.

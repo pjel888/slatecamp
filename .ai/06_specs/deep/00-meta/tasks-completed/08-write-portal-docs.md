@@ -3,8 +3,8 @@
 
 # Task 08: Write Portal Documentation
 
-**Status:** COMPLETE ✅  
-**Completed:** 2026-04-06  
+**Status:** COMPLETE ✅
+**Completed:** 2026-04-06
 **Objective:** Write all `portal/` documents sourced from `src/app/*/AGENTS.md`
 
 ---

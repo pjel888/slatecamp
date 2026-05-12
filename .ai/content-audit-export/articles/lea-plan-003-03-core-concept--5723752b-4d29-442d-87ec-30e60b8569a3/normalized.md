@@ -1,82 +1,40 @@
+# Housing finance in the Philippines works through distinct shelter roles
 
-
-## Board Exam Quick Check
-
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
-
-**Common mistake:** treating a familiar keyword in **Lea Plan 003 03 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
-
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
-## Learning Goal
-Distinguish housing finance roles — Pag-IBIG (individual buyer loans), SHFC (community-based CMP), NHA (producer, not financier) — and apply Maceda Law (RA 6552) buyer protection provisions to installment payment scenarios.
-
-Housing finance in the Philippines is distributed across multiple agencies with different mandates: **Pag-IBIG** finances individual buyer loans; **SHFC** finances community-based programs; **NHA** builds housing (it does not finance end-buyers). Understanding these roles and the buyer protections under **RA 6552 (Maceda Law)** is essential.
+Housing finance questions should not be answered as if the Philippines had one universal shelter loan. The checked sources split the system among direct shelter production, home mortgage market support, provident or member-based finance, socialized housing mechanisms, community mortgage financing, and local low-cost housing responsibilities.
 
 ## Core Concept
 
-Housing finance in the Philippines operates through a tiered system designed to serve different income segments. The primary entities are **Pag-IBIG/HDMF** (Home Development Mutual Fund), which finances loans for employed workers; **SHFC** (Social Housing Finance Corporation), which administers community-based mortgage programs; and **NHA** (National Housing Authority), which produces housing units but does not directly finance buyer loans.
+- EO 90 assigns different shelter roles: NHA for direct shelter production, NHMFC as the major government home mortgage institution, HDMF for provident contributions and available housing finance, and SSS/GSIS for their member sectors.
+- RA 11201 IRR defines the Community Mortgage Program as SHFC mortgage financing that assists legally organized associations of underprivileged and homeless citizens to purchase and develop land under community ownership.
+- RA 7279 and its implementing rules treat socialized housing and CMP as tools for underprivileged and homeless beneficiaries, while balanced housing compliance can include an equivalent socialized housing project, CMP, or joint venture in the checked IRR scope.
+- RA 7160 places low-cost housing and other mass dwelling programs within local service delivery, while excluding those funded by SSS, GSIS, and HDMF from that local-service clause.
 
-**Pag-IBIG/HDMF** draws contributions from mandatory employer and employee payroll deductions, creating a dedicated pool for housing loans. It offers three loan tiers: socialized housing loans (up to ₱580,000 traditionally; expanded under 4PH to ₱850,000-1.8M with subsidies), low-cost housing loans, and open-market housing loans (up to ₱6 million for housing loan proper). The structure reflects the Philippines' commitment to ensuring affordable housing access for the employed sector while also allowing market-rate purchases.
+## How It Is Tested
 
-**SHFC** operates the **Community Mortgage Program (CMP)**, which is distinct in that it finances not individual buyers but entire communities. Under CMP, a community organization collectively secures a mortgage to acquire the land they occupy. This approach has proven successful for in-situ upgrading—communities remain in place rather than being relocated. CMP represents the policy direction favoring retention of informal communities when possible, aligned with international best practices prioritizing community stability.
+- Match housing finance instruments to the correct agency or beneficiary group.
+- Separate community mortgage financing from individual member finance.
+- Avoid importing current loan thresholds or other laws unless the exact local raw source has been checked.
 
-**RA 6552 (Maceda Law)**, formally the Realty Installment Buyer Protection Act (1972), provides critical protections for individuals purchasing property on installment. The law distinguishes between buyers who have paid less than 2 years and those who have paid 2 years or more. Buyers with less than 2 years of installment payments receive a grace period (1 month per year paid) but no refund if the seller cancels the contract. Buyers with 2 years or more paid receive a minimum 50% refund of total payments, plus an additional 5% per year for payments beyond 5 years (capped at 90% total refund). The grace period is calculated as 1 month for every year of installments paid—a buyer with 4 years of payments gets 4 months grace before the slea can be cancelled for non-payment.
+## Real World Scenario
 
-These mechanisms—multi-source financing, community-based programs, and buyer protection laws—create a comprehensive framework ensuring affordability while preventing exploitative practices.
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-plan-003-03-core-concept", type="image", caption="Housing Finance System — Pag-IBIG, SHFC, NHA Roles", description="Diagram showing housing finance institutions and their roles: Pag-IBIG/HDMF (individual buyer housing loans), SHFC (Community Mortgage Program - community-based), NHA (housing producer, not financier). Maceda Law (RA 6552) installment buyer protection stages shown.", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-## Key Provisions
-
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
-Extracted summary:
-- Props: headers="[", Financing=true, Entity=true, Primary=true, Function=true, Loan=true, Types=true, Mandatory=true, Membership=true, rows="[[", Pag-IBIG=true, HDMF=true
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiExamTable" status="preserved"]
-Extracted summary:
-- Props: headers="[", Installments=true, Paid=true, Buyer=true, Rights=true, on=true, Cancellation=true, Grace=true, Period=true, rows="[[", Less=true, than=true
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-## Philippine Context
-
-The Philippine housing finance system reflects the nation's struggle to balance formal banking with affordability for the massive urban poor and informal working class. Pag-IBIG's mandatory membership ensures a guaranteed loan pool; SHFC's CMP model acknowledges that formal legal ownership is secondary to community stability. **RA 6552** emerged from recognition that real estate sellers could exploit buyer vulnerability on installment contracts, a common practice in the 1970s Philippine informal market. These policies collectively represent a strong buyer-protection orientation in Philippine law.
-
-## How It's Tested
-
-**Pattern 1 — Agency Function Matching:** "Which agency FINANCES individual buyer housing loans?" → Pag-IBIG (not NHA, which builds; not SHFC, which finances communities). Test distinguishes production from finance roles.
-
-**Pattern 2 — Maceda Law Calculation:** "A buyer who paid 3 years of installments is in default. What grace period applies?" → 3 months (1 month per year). Or "A buyer paid 1.5 years then defaults. What refund is due?" → Only grace period; no refund (the 2-year threshold not met).
-
-**Pattern 3 — CMP Eligibility:** "Which program allows a community organization collectively to purchase the land they occupy?" → Community Mortgage Program (SHFC). Tests understanding that CMP is community-level, not individual-buyer financing.
-
-[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Maceda Law: < 2 years = grace only (no refund); ≥ 2 years = 50% minimum refund. Grace = 1 month per year paid. NHA builds housing; Pag-IBIG finances buyer loans.
-[/SLATECAMP_UI_BLOCK]
-
-**Exam Tip:** NHA does NOT finance individual buyer loans. NHA PRODUCES housing. SHFC finances community-based programs via CMP. Pag-IBIG finances individual wage-worker loans. This agency role distinction is frequently tested.
-
-## Cross-References
-
-See **LEA-PLAN-007-03** (Finance Institutions) for Pag-IBIG/SSS/GSIS comparison, **LEA-PLAN-003-01** (Housing Law Framework) for Maceda Law provisions, and **LEA-PLAN-007-01** (NHA) for NHA's non-finance role.
+An LGU is sorting three shelter cases: an association wants to acquire the land it occupies, an employee is asking about a member housing loan, and a relocation project needs direct shelter production. For LEA purposes, first match the beneficiary and instrument: CMP/SHFC for organized association land acquisition under community ownership, HDMF/SSS/GSIS for member-based finance channels in the checked EO 90 scope, and NHA for direct shelter production.
 
 ## Common Mistakes
 
-<WikiMistakeList
-  mistakes={[
-    'Assuming NHA finances end-buyer loans (it produces housing, not loans)',
-    'Confusing SHFC (community mortgage) with Pag-IBIG (individual loans)',
-    'Stating Maceda refund applies to < 2 years payments (incorrect; only grace period applies)',
-    'Calculating Maceda grace as 2 months per year (correct is 1 month per year)',
-    'Treating PD 957 as governing informal settlement finance (PD 957 governs formal subdivisions/condos; informal settlements under RA 7279)',
-  ]}
-/>
+- Do not treat CMP as an individual employee loan; the checked RA 11201 IRR language is association-based.
+- Do not collapse NHA, SHFC, NHMFC, HDMF, SSS, and GSIS into one interchangeable lender.
+- Do not use current loan amounts, amortization rules, or contract-sale remedies unless a local raw source for that exact rule is in the batch.
+
+## Sources Checked
+
+- EO 90 - NGO for Shelter Program: EO 90 refined markdown lines 19-27, 30-43, 51-63, and 79-106; raw PDF pages 1, 2, 3, 4, and 6 checked by local PyMuPDF extraction.
+- RA 11201 IRR - DHSUD Act Implementing Rules: RA 11201 IRR refined markdown lines 40-44, 68-75, 93-100, 116-121, 134-162, 261-263, 280-289, 335, 389, and 392; raw PDF pages 3, 6, 7, 13, 15, 19, and 35 checked by local PyMuPDF extraction.
+- RA 7279 - Urban Development and Housing Act: RA 7279 refined markdown lines 11-35, 37-85, 131-155, 165-189, 231-235, 301-313, and 319; raw PDF pages 1, 2, 3, 7, 8, and 11 checked by local PyMuPDF extraction.
+- IRR RA 7279 Sec 18: IRR RA 7279 Sec 18 refined markdown lines 1-4, 26-59, and 65-94; raw PDF pages 1, 2, and 3 checked by local PyMuPDF extraction.
+- RA 7160 - The Local Government Code: RA 7160 refined markdown lines 155-162; raw PDF page 12 checked by local PyMuPDF extraction.
+
+## Scenario Enrichment Status
+
+eligible-added: Batch 086 added a concise agency-selection scenario supported by EO 90, RA 11201 IRR, RA 7279, RA 7160, and IRR RA 7279 Sec 18 raw-source locators.

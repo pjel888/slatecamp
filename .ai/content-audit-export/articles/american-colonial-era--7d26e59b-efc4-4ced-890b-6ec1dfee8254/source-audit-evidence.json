@@ -1,0 +1,154 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-049-local-first",
+  "batch_number": 49,
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T20:55:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "7d26e59b-efc4-4ced-890b-6ec1dfee8254",
+    "slug": "american-colonial-era",
+    "title": "American Colonial Era",
+    "article_folder": ".ai/content-audit-export/articles/american-colonial-era--7d26e59b-efc4-4ced-890b-6ec1dfee8254",
+    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/american-colonial-era--7d26e59b-efc4-4ced-890b-6ec1dfee8254",
+    "candidate_path": ".ai/content-audit-export/articles/american-colonial-era--7d26e59b-efc4-4ced-890b-6ec1dfee8254/candidate.md",
+    "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/american-colonial-era--7d26e59b-efc4-4ced-890b-6ec1dfee8254/candidate.md",
+    "question_edits_folder": ".ai/content-audit-export/articles/american-colonial-era--7d26e59b-efc4-4ced-890b-6ec1dfee8254/question-edits",
+    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/american-colonial-era--7d26e59b-efc4-4ced-890b-6ec1dfee8254/question-edits",
+    "normalized_sha256": "sha256:20368542ef394dd2cf82c5515a7a4ee0ee5ae11751902b13ed763ab91f4815b4",
+    "candidate_sha256": "sha256:20368542ef394dd2cf82c5515a7a4ee0ee5ae11751902b13ed763ab91f4815b4",
+    "linked_questions_sha256": "sha256:0285072edd0281500cbdaf4d6e5ff4582bbfa42a74f96c136c578bd50e3f477d",
+    "sources_sha256": "sha256:2676a15dc15faedf412e1746fdf22df559bb778da2aec02a33927efa8338f772"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "refined_markdown_role": "locator_only",
+    "derivative_or_search_layer_as_primary": false,
+    "source_families_checked": [
+      {
+        "label": "Filipino Architecture - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Filipino Architecture.pdf",
+        "raw_pdf_sha256": "sha256:3d6f220218c46fe78e37d152d1c51504fd3c7d413cf14e71b39e93c7e1a5831d",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Filipino Architecture.md",
+        "refined_markdown_sha256": "sha256:f60dacc37e4b6634875ed68c18a55288e455476697fc250905460bbe6ac25ce1",
+        "locator": "Filipino Architecture refined markdown lines 820-895"
+      },
+      {
+        "label": "Module - Architectural History - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Module - Architectural History.pdf",
+        "raw_pdf_sha256": "sha256:d88ccdfaad42e15b3a9f844539aba0b0d614b165d4ef33f082537d72ba13531d",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Module - Architectural History.md",
+        "refined_markdown_sha256": "sha256:d3fc240b16da21c71b8467f6c3bf8599cd422b4c8055e2e9647f0aa2b2e042a1",
+        "locator": "Module - Architectural History refined markdown lines 4830-4915"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "american_colonial_era_article",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 31,
+    "question_edits_created": [
+      "c4ddee9c-2523-43ea-8d5b-a887f5530489",
+      "f7f3584b-6ecc-44c9-97d3-f86fc3036256",
+      "e3efd2a2-dcc4-40c1-b0b1-a6b5193fdedd",
+      "719ef4d7-faae-4762-93ea-b31dda7ccfaf",
+      "5d6b2fa5-9c8e-43fd-a9d6-1786ec96ec77",
+      "5efd80c8-3913-46e8-8da6-4bcd6bd7a38e",
+      "08fa11bc-d438-499c-b56e-4e36e6db3dac",
+      "3dd6b62f-18f9-48a1-99c5-0c698c678619",
+      "a6899aff-36bc-4d40-8ce2-2f89c5ee3c25",
+      "3ef50cfb-1135-405d-96fd-a783222f9ee2",
+      "38bc579f-d3c0-4ad2-afa7-a334ca4f716c",
+      "0eed1553-d0de-419a-b705-7b9df50250dc",
+      "bbab26b9-8e9a-4708-8512-89d5274da394",
+      "c2e05f3d-25e5-4a1f-a535-b3bd4010e5c1",
+      "9f0212d0-3cba-4003-af5a-3839e2678aff",
+      "2928f83e-c617-40a6-8902-eafc2e501228",
+      "974fa99d-d500-4776-b538-4ef06e2d117a",
+      "5059f15f-c246-49cb-9007-429640631624",
+      "1f0bcd88-3466-4d7a-8e63-ecc52e31baaa",
+      "0e3b1e56-f75b-4da1-a0b8-fbbb1a02c8c0",
+      "8ee067b5-e097-488f-9708-0a02a59791e8",
+      "2e6ac818-f9bc-48a3-b7ab-aacbc9f3012f",
+      "2f34876e-c86e-4ac9-80de-619cad2e186a",
+      "32591e2c-6510-4c67-b376-c717444650a2",
+      "fad7f075-ff2c-4df5-8e32-5aab2bf00b45",
+      "a0902069-e8e2-418f-870e-2fc81193c477",
+      "65fd91a6-8252-4039-a1c3-28da9d7d7a64",
+      "40b96da2-479e-43e3-91f5-02551d0c012c",
+      "1781c471-010b-4230-abef-ba6a873b9cdc",
+      "bb4bd2b8-2841-4bc4-894b-ecbe8ceb87db",
+      "4ec40a34-0a80-4c0c-bddb-277a4ce4185e"
+    ]
+  },
+  "claims": [
+    {
+      "claim_id": "american-colonial-era-b049-claim-01",
+      "claim_text": "Daniel Burnham is associated with city plans for Manila and Baguio in the checked local sources.",
+      "source_support": [
+        "filipinoarch-local-raw-pdf--b049-7d26e59b-01",
+        "archhistory-local-raw-pdf--b049-7d26e59b-02"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "american-colonial-era-b049-claim-02",
+      "claim_text": "Tomas Mapua is identified as the first registered architect in the country.",
+      "source_support": [
+        "filipinoarch-local-raw-pdf--b049-7d26e59b-01",
+        "archhistory-local-raw-pdf--b049-7d26e59b-02"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "american-colonial-era-b049-claim-03",
+      "claim_text": "William Parsons is linked to the Philippine General Hospital and Juan Arellano to the Post Office Building in the checked source families.",
+      "source_support": [
+        "filipinoarch-local-raw-pdf--b049-7d26e59b-01",
+        "archhistory-local-raw-pdf--b049-7d26e59b-02"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "american-colonial-era-b049-claim-04",
+      "claim_text": "The checked sources list civic and institutional examples including the former Legislative Building, Manila Hotel, Philippine Normal School, University of the Philippines, and Masonic Temple on Escolta.",
+      "source_support": [
+        "filipinoarch-local-raw-pdf--b049-7d26e59b-01",
+        "archhistory-local-raw-pdf--b049-7d26e59b-02"
+      ],
+      "audit_result": "PASS"
+    }
+  ],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "removed_risk_notes": [
+      "Question sidecars replaced with checked local raw-source citations.",
+      "Article body rewritten from local raw PDF families and refined markdown locators only.",
+      "Legacy compose-error sidecars are removed after selected bundle compose passes."
+    ]
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_batch_049_complete": true,
+    "remote_publish_status": "not_attempted_by_request",
+    "remaining_local_blockers": []
+  },
+  "local_validation": {
+    "status": "PASS",
+    "valid": true,
+    "blockers": 0,
+    "checked_at": "2026-05-11T20:55:00.000+08:00",
+    "commands": [
+      "bun run content-audit:compose -- --article-id 7d26e59b-efc4-4ced-890b-6ec1dfee8254 --overwrite --strict",
+      "bun run content-audit:diff -- --article-id 7d26e59b-efc4-4ced-890b-6ec1dfee8254 --strict --summary",
+      "bun run content-audit:validate -- --article-id 7d26e59b-efc4-4ced-890b-6ec1dfee8254 --summary",
+      "bun run content-audit:ui-block-edits -- --article-id 7d26e59b-efc4-4ced-890b-6ec1dfee8254"
+    ]
+  }
+}

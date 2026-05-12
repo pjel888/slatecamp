@@ -1,0 +1,80 @@
+{
+  "question_id": "b99538af-d27b-4324-be11-95c71fe927c0",
+  "baseline_hash": "sha256:895767b8a703959f61b8701f2801128abe17ebf96505610a64bd7204b5a96f8c",
+  "action": "replace",
+  "reason": "source-audited-article-batch-057-local-first: local raw PDF backed replacement constrained to checked Batch 057 source families.",
+  "approved_by": "codex-local-first-batch-057",
+  "approved_at": "2026-05-11T20:10:30.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "30832ba5-fbe9-4047-871a-aa4cb63ac616",
+    "parent_article_slug": "lea-theo-001-07-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "George Salvan Architectural Theories of Design refined markdown lines 73, 175, and 468-486; theory refined markdown lines 7, 277-279, and 307-311; TOA 1 Intro to Theory refined markdown line 314",
+    "checked_markdown_lines": [
+      "George Salvan Architectural Theories of Design refined markdown line 73",
+      "George Salvan Architectural Theories of Design refined markdown line 175",
+      "George Salvan Architectural Theories of Design refined markdown lines 468-486",
+      "theory refined markdown line 7",
+      "theory refined markdown lines 277-279",
+      "theory refined markdown lines 307-311",
+      "TOA 1 Intro to Theory refined markdown line 314"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "salvan-theory-local-raw-pdf--b057-30832ba5-01",
+        "label": "George Salvan Architectural Theories of Design - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
+        "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
+        "locator": "George Salvan Architectural Theories of Design refined markdown lines 73, 175, and 468-486"
+      },
+      {
+        "source_id": "theory-local-raw-pdf--b057-30832ba5-02",
+        "label": "theory - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+        "sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+        "refined_markdown_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+        "locator": "theory refined markdown lines 7, 277-279, and 307-311"
+      },
+      {
+        "source_id": "toa1-intro-local-raw-pdf--b057-30832ba5-03",
+        "label": "TOA 1 Intro to Theory - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 1 (Intro to Theory).pdf",
+        "sha256": "sha256:17ee07310eaf7fbd71aeb3cb3b57a6ffb623e2b8b1957543d74b706a5184d0e0",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md",
+        "refined_markdown_sha256": "sha256:fc665ed41ea62ddb69c88ba02c7b92628481ba6792a075bc21694ca072b150d6",
+        "locator": "TOA 1 Intro to Theory refined markdown line 314"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 057 checked local raw PDF source scope."
+  },
+  "proposed": {
+    "text": "What is the source-audited relationship between architecture and society?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Architecture responds to social, cultural, economic, and environmental conditions."
+      },
+      {
+        "id": "b",
+        "text": "Architecture is independent from society."
+      },
+      {
+        "id": "c",
+        "text": "Architecture is only a decorative art."
+      },
+      {
+        "id": "d",
+        "text": "Architecture is determined only by structural span."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Architecture responds to social, cultural, economic, and environmental conditions. This answer is supported by the checked Batch 057 local raw PDF source families for Architecture and Society.",
+    "explanation": "Architecture responds to social, cultural, economic, and environmental conditions. The Batch 057 source audit used local raw PDFs first and refined markdown only as locator evidence for Architecture and Society.",
+    "code_citation": "George Salvan Architectural Theories of Design refined markdown lines 73 and 468-486"
+  },
+  "batch_question_template_index": 0
+}

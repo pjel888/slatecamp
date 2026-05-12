@@ -1,0 +1,236 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-084-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T06:55:00.000+08:00",
+  "target": {
+    "article_id": "2ce3de97-5b64-47b3-b00e-a1deaf4a0918",
+    "slug": "lea-matl-004-10-core-concept",
+    "title": "Modular and prefabricated systems coordinate components before site assembly",
+    "article_folder": ".ai/content-audit-export/articles/lea-matl-004-10-core-concept--2ce3de97-5b64-47b3-b00e-a1deaf4a0918",
+    "normalized_sha256": "sha256:0e99415e887f90c837de48e6753aff00d46d13693f69bce9d870e9beaf4d0d4e",
+    "candidate_sha256": "sha256:0e99415e887f90c837de48e6753aff00d46d13693f69bce9d870e9beaf4d0d4e",
+    "candidate_path": ".ai/content-audit-export/articles/lea-matl-004-10-core-concept--2ce3de97-5b64-47b3-b00e-a1deaf4a0918/candidate.md"
+  },
+  "classification": {
+    "topic_family": "modular_prefabricated_systems",
+    "local_first_batch": "084",
+    "source_sensitivity": "technical_construction",
+    "contains_legal_or_code_claims": false,
+    "source_risk_tier": "source_bound_technology",
+    "requires_raw_pdf_audit": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdfs_checked_first": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "local_pdf_extraction_method": "python_pymupdf_local",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "chudley-greeno-handbook-b084",
+      "label": "Buidling Construction Handbook 7th Ed by Chudley _ Greeno",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf",
+      "sha256": "sha256:2efa493fac06a3efb9367111a397129ff8647778d88160bbe0174403cbb9e0bb",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.md",
+      "refined_markdown_sha256": "sha256:485fe968d55ca680cbde52d24fcee5f512a63591026db19e46835f1bc530dcbb",
+      "locator": "Chudley/Greeno refined markdown lines 18-23, 295-305, 433-519, 782-916, and 893-916; raw PDF pages 58, 96, 163-199, 471, 495, and 511 checked by local PyMuPDF extraction."
+    },
+    {
+      "source_id": "building-construction-illustrated-b084",
+      "label": "Building Construction Illustrated, 5th Edition",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+      "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+      "refined_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "locator": "Building Construction Illustrated refined markdown lines 288-322, 2850-2925, 3378-3605, 4037-4073, 6504-6552, 8492, and 8578-8605; raw PDF pages 18, 105, 121-126, 137-145, 248, and 459 checked by local PyMuPDF extraction."
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-matl-004-10-core-concept-article-b084",
+      "claim_text": "Article lea-matl-004-10-core-concept was rewritten to the checked modular_prefabricated_systems source scope.",
+      "claim_type": "article_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf",
+        "raw_pdf_sha256": "sha256:2efa493fac06a3efb9367111a397129ff8647778d88160bbe0174403cbb9e0bb",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.md",
+        "source_locator": "Chudley/Greeno refined markdown lines 295-305 and 514-519; Building Construction Illustrated lines 4037-4073, 6082, 6504-6552, 7223, 8492, and 8578-8605.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-0805d254-76d0-46f7-98ea-7bb23781e089-b084",
+      "claim_text": "Question 0805d254-76d0-46f7-98ea-7bb23781e089 was rewritten to the checked modular_prefabricated_systems source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf",
+        "raw_pdf_sha256": "sha256:2efa493fac06a3efb9367111a397129ff8647778d88160bbe0174403cbb9e0bb",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.md",
+        "source_locator": "Chudley/Greeno refined markdown lines 295-305 and 514-519; Building Construction Illustrated lines 4037-4073, 6082, 6504-6552, 7223, 8492, and 8578-8605.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-cb9fc36b-331f-456f-9887-b185de654aa9-b084",
+      "claim_text": "Question cb9fc36b-331f-456f-9887-b185de654aa9 was rewritten to the checked modular_prefabricated_systems source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf",
+        "raw_pdf_sha256": "sha256:2efa493fac06a3efb9367111a397129ff8647778d88160bbe0174403cbb9e0bb",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.md",
+        "source_locator": "Chudley/Greeno refined markdown lines 295-305 and 514-519; Building Construction Illustrated lines 4037-4073, 6082, 6504-6552, 7223, 8492, and 8578-8605.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-401ab35f-c285-474c-b08c-9064999bf8c7-b084",
+      "claim_text": "Question 401ab35f-c285-474c-b08c-9064999bf8c7 was rewritten to the checked modular_prefabricated_systems source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf",
+        "raw_pdf_sha256": "sha256:2efa493fac06a3efb9367111a397129ff8647778d88160bbe0174403cbb9e0bb",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.md",
+        "source_locator": "Chudley/Greeno refined markdown lines 295-305 and 514-519; Building Construction Illustrated lines 4037-4073, 6082, 6504-6552, 7223, 8492, and 8578-8605.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-79f0e5b2-7b10-461c-baaa-5e6ce35908b6-b084",
+      "claim_text": "Question 79f0e5b2-7b10-461c-baaa-5e6ce35908b6 was rewritten to the checked modular_prefabricated_systems source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf",
+        "raw_pdf_sha256": "sha256:2efa493fac06a3efb9367111a397129ff8647778d88160bbe0174403cbb9e0bb",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.md",
+        "source_locator": "Chudley/Greeno refined markdown lines 295-305 and 514-519; Building Construction Illustrated lines 4037-4073, 6082, 6504-6552, 7223, 8492, and 8578-8605.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-b138cb41-bdc6-4fe6-ba58-417f360780c2-b084",
+      "claim_text": "Question b138cb41-bdc6-4fe6-ba58-417f360780c2 was rewritten to the checked modular_prefabricated_systems source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf",
+        "raw_pdf_sha256": "sha256:2efa493fac06a3efb9367111a397129ff8647778d88160bbe0174403cbb9e0bb",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.md",
+        "source_locator": "Chudley/Greeno refined markdown lines 295-305 and 514-519; Building Construction Illustrated lines 4037-4073, 6082, 6504-6552, 7223, 8492, and 8578-8605.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-ea1ffe0e-1384-4cb6-a480-526fe10e934d-b084",
+      "claim_text": "Question ea1ffe0e-1384-4cb6-a480-526fe10e934d was rewritten to the checked modular_prefabricated_systems source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf",
+        "raw_pdf_sha256": "sha256:2efa493fac06a3efb9367111a397129ff8647778d88160bbe0174403cbb9e0bb",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.md",
+        "source_locator": "Chudley/Greeno refined markdown lines 295-305 and 514-519; Building Construction Illustrated lines 4037-4073, 6082, 6504-6552, 7223, 8492, and 8578-8605.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-47d0bcb1-4ebb-471a-bc29-8717f83a9f91-b084",
+      "claim_text": "Question 47d0bcb1-4ebb-471a-bc29-8717f83a9f91 was rewritten to the checked modular_prefabricated_systems source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf",
+        "raw_pdf_sha256": "sha256:2efa493fac06a3efb9367111a397129ff8647778d88160bbe0174403cbb9e0bb",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.md",
+        "source_locator": "Chudley/Greeno refined markdown lines 295-305 and 514-519; Building Construction Illustrated lines 4037-4073, 6082, 6504-6552, 7223, 8492, and 8578-8605.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-527bef1a-de90-4d7d-a3fc-d95340591b49-b084",
+      "claim_text": "Question 527bef1a-de90-4d7d-a3fc-d95340591b49 was rewritten to the checked modular_prefabricated_systems source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf",
+        "raw_pdf_sha256": "sha256:2efa493fac06a3efb9367111a397129ff8647778d88160bbe0174403cbb9e0bb",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.md",
+        "source_locator": "Chudley/Greeno refined markdown lines 295-305 and 514-519; Building Construction Illustrated lines 4037-4073, 6082, 6504-6552, 7223, 8492, and 8578-8605.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-577042d7-0e47-4d43-a52c-0e51698d175e-b084",
+      "claim_text": "Question 577042d7-0e47-4d43-a52c-0e51698d175e was rewritten to the checked modular_prefabricated_systems source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf",
+        "raw_pdf_sha256": "sha256:2efa493fac06a3efb9367111a397129ff8647778d88160bbe0174403cbb9e0bb",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.md",
+        "source_locator": "Chudley/Greeno refined markdown lines 295-305 and 514-519; Building Construction Illustrated lines 4037-4073, 6082, 6504-6552, 7223, 8492, and 8578-8605.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-e9185f45-86a2-41de-a707-2b5ca5fc18df-b084",
+      "claim_text": "Question e9185f45-86a2-41de-a707-2b5ca5fc18df was rewritten to the checked modular_prefabricated_systems source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf",
+        "raw_pdf_sha256": "sha256:2efa493fac06a3efb9367111a397129ff8647778d88160bbe0174403cbb9e0bb",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.md",
+        "source_locator": "Chudley/Greeno refined markdown lines 295-305 and 514-519; Building Construction Illustrated lines 4037-4073, 6082, 6504-6552, 7223, 8492, and 8578-8605.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "question_edit_audit": {
+    "linked_question_count": 10,
+    "question_edit_count": 10,
+    "answer_key_fields_changed": true,
+    "source_safe_rewrite": true,
+    "blockers": []
+  },
+  "scenario_enrichment": {
+    "status": "eligible-deferred",
+    "reason": "Modular and prefabricated systems can support logistics scenarios, but Batch 084 deferred scenario sections so source repair remains the completion gate."
+  },
+  "roundtrip": {
+    "normalized_md_owns_article_prose": true,
+    "ui_blocks_json_owns_raw_ui_blocks": true,
+    "candidate_md_generated_by_compose": true,
+    "raw_ui_block_edits_supported_in_this_batch": false,
+    "note": "Exported UI summary markers were removed where ui-blocks.json had zero preserved raw blocks, allowing compose to complete without unresolved UI markers.",
+    "unresolved_ui_summary_markers_removed": true
+  }
+}

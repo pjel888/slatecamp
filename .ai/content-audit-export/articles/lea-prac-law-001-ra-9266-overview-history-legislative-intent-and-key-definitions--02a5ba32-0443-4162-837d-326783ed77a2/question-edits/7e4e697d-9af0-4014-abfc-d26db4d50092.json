@@ -1,0 +1,34 @@
+{
+  "question_id": "7e4e697d-9af0-4014-abfc-d26db4d50092",
+  "baseline_hash": "sha256:b7cdccc37404acc21a168f91fec6f1c443d465bbe6495401cecd4174390ac222",
+  "reason": "Batch 005 local source audit aligned RA 9266 Overview: Core Legal Frame and Key Definitions linked question ALE-PRAC-LAW-001-008 to verified RA 9266 IRR raw-source claims.",
+  "approved_by": "codex-local-source-audit-batch-005",
+  "approved_at": "2026-05-10T21:30:00+08:00",
+  "proposed": {
+    "code_citation": "RA 9266 IRR Sections 1-7 and 40",
+    "explanation": "Source-audited against RA 9266 IRR Sections 1-7 and 40 in the checked local RA 9266 IRR PDF. This edit removes unsupported locators or assumptions and keeps the question aligned to the audited article cluster.",
+    "text": "Which RA 9266 IRR section uses the IAPOA as the source of nominees for PRBoA appointments?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Section 4"
+      },
+      {
+        "id": "b",
+        "text": "Section 41"
+      },
+      {
+        "id": "c",
+        "text": "Section 18"
+      },
+      {
+        "id": "d",
+        "text": "Section 15"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "correct": "Section 4 describes PRBoA appointment through recommendees selected from IAPOA nominees. Section 40 identifies the UAP as the IAPOA, while Section 41 concerns the implementing rules and regulations."
+    }
+  }
+}

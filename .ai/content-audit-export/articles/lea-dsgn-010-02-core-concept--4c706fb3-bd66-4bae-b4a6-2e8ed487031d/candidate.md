@@ -1,93 +1,70 @@
-
-
-## Board Exam Quick Check
-
-Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
-
-**Common mistake:** treating a familiar keyword in **Lea Dsgn 010 02 Core Concept** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
-
+# Parking Structure Design
 
 ## Learning Goal
-Design parking structure geometry — ramp grades (max 1:7), bay widths, aisle dimensions, column spacing, and turning radii — to accommodate vehicle maneuverability, verify accessible stall dimensions (3.7m × 5.0m), and apply structural and operational constraints.
 
-Parking structure geometry—ramp grades, bay widths, aisle dimensions, column spacing, and turning radii—determines whether a parking design is buildable and user-friendly.
-## Core Concept
+After studying this article, you should be able to identify which parking claims are actually source-backed in the checked legal sources: PD 1096 Rule VII gives minimum off-street/on-site parking slot and loading space requirements, while BP 344 2024 gives accessible parking dimensions and accessible route details. Do not cite PD 1096 Rule XIX, Section 803, or Section 904 for parking-structure geometry. In the 2004 Revised IRR, Rule XIX is The Use of Computers, Section 803 is Percentage of Site Occupancy, and Section 904 is Storm Drainage System.
 
-A parking structure must accommodate vehicle maneuverability, emergency egress, and structural efficiency. The geometry is constrained by:
+## Why This Matters on the LEA
 
-1. **Vehicle envelope:** Standard car (2.5m × 5.0m) turning radius ~6.1m (inside wheel).
-2. **Ramp gradient:** Strictly limited to **1:6 (16.7%)** maximum for vehicles.
-3. **Bay layout:** Angle of parking (90°, 60°, 45°) determines the required aisle width.
-4. **Vertical clearance:** Minimum **2.40 m** for standard vehicle areas; **2.20 m** minimum for accessible pedestrian walkways and signage per BP 344 2024.
-5. **Column grid:** Structural economics versus parking efficiency trade-off.
+Parking questions often mix three different things:
 
-### Worked Example: 90° Double-Loaded Module
+- number of required parking slots;
+- size and location of parking/loading spaces;
+- design geometry used by architects to make the structure work.
 
-**Layout Parameters:**
+The first two can be verified from PD 1096 and BP 344. The third may be good professional practice, but it should not be overstated as PD 1096 law. A well-supported LEA answer should not invent a code locator for aisle width, turning radius, column grid, or vehicle ramp gradient unless the exact source is cited.
 
-- **Standard Stalls:** 2.5m × 5.0m.
-- **Two-way Aisle:** 6.1 m (Minimum for 90° perpendicular parking).
+## Source-Backed Parking Rules
 
-**Calculation:**
+PD 1096 2004 Revised IRR, Rule VII, Parking Slot, Parking Area and Loading/Unloading Space Requirements, states that parking and loading spaces are minimum off-street, off-RROW, on-site requirements for specific uses or occupancies. It also gives source-backed slot sizes:
 
-- Stall Depth (Side A) + Aisle + Stall Depth (Side B)
-- 5.0 m + 6.1 m + 5.0 m = **16.1 m** (Clear width between walls/columns).
-- Structural planning typically uses an **18.5 m** module to account for structural columns and "turnplates".
+| Parking or loading type | Source-backed minimum size |
+| --- | --- |
+| Average automobile slot, perpendicular or diagonal | 2.50 m x 5.00 m |
+| Average automobile slot, parallel | 2.15 m x 6.00 m |
+| Standard truck or bus parking/loading slot | 3.60 m x 12.00 m |
+| Articulated truck slot | 3.60 m x 18.00 m |
+| Jeepney or shuttle parking/loading/unloading slot | 3.00 m x 9.00 m |
 
-**Ramp Design:**
+The same PD 1096 provision requires parking slots to be drawn to scale and the total number indicated on the plans. That is a plan-checking requirement, not just a drafting preference.
 
-- To rise 3.0 m (one floor level) at a **1:6 gradient**:
-- $3.0\text{ m} \times 6 = 18.0\text{ m}$ total ramp length.
-<ArticleMedia id="media-lea-dsgn-010-02-core-concept" type="image" caption="Parking Structure Geometry — Ramp, Bay, and Aisle Dimensions" description="Plan and section of parking structure showing: ramp grade (max 1:7), parking bay width, aisle dimensions (6.1m for 90°), column spacing (3-bay standard), accessible stall (3.7m × 5.0m per BP 344), and turning radii for vehicle maneuverability." suggestedAsset="Diagram or reference image" status="placeholder" />
+## BP 344 Accessible Parking Rules
 
-## Key Provisions
+BP 344 2024 Revised IRR updates the accessible parking slot. The checked raw source states that accessible parking slots must be located nearest to accessible main entrances and must have a minimum width of 4000 mm and length of 5000 mm. It explains that the additional 1500 mm width compared with an average parking slot is intended to accommodate wheelchair passage.
 
-### Drive Aisle Widths (PD 1096 & Professional Practice)
+The BP 344 parking section also supports these related details:
 
-| Parking Angle           | Traffic Flow | Minimum Aisle Width |
-| :---------------------- | :----------- | :------------------ |
-| **90° (Perpendicular)** | Two-Way      | **6.1 m**           |
-| **90° (Perpendicular)** | One-Way      | **5.5 m**           |
-| **60° (Angled)**        | One-Way      | **5.5 m**           |
-| **45° (Angled)**        | One-Way      | **3.7 m**           |
+- an accessible parking slot should connect to an accessible route;
+- a walkway with 1200 mm minimum clear width is provided between the front ends of parked cars;
+- pole-mounted accessible parking signage is 600 mm x 600 mm and mounted at 2200 mm minimum clear height from the parking floor.
 
-### BP 344 2024 Accessibility Standards
+These BP 344 values are not the same as general vehicle layout rules. The exam trap is to apply an old 3.70 m accessible slot width or to cite a non-parking PD 1096 section.
 
-- **Accessible Parking Slot:** **4.00 m × 5.00 m** (minimum).
-- **Walkway Headroom:** **2.20 m** clear height.
-- **Accessible Ramp:** **1:12** is the enforceable minimum for building permits, though **1:20** is the preferred design standard.
-- **Landing:** Minimum **1.80 m** length at the top, bottom, and every 10.50 m of ramp.
+## Limits of These Sources
 
-## How It's Tested
+The checked PD 1096 pages do not verify 6.1 m aisles, 1:6 or 1:7 vehicle ramp gradients, 2.40 m parking clearance, 6.1 m turning radius, or an 18.5 m structural module as Rule VII, Section 803, Section 904, or Rule XIX requirements. This article keeps only values tied to the cited primary sources.
 
-**Pattern 1: Aisle Width Selection**
-Question: "What is the minimum drive aisle for 90° two-way traffic?"
+This does not mean aisle widths, ramp grades, turning radii, and column grids are unimportant. It means they should be taught from a verified parking-design source or project standard, not mislabeled as PD 1096 Rule XIX, Section 803, or Section 904.
 
-- **Answer:** 6.1 m.
+## How to Apply It in Plan Review
 
-**Pattern 2: Ramp Calculation**
-Question: "A vehicle ramp must rise 4.0 m. What is the minimum length?"
+1. Determine the occupancy/use and look up the required number of parking/loading spaces under PD 1096 Rule VII, Table VII.4 and related parking provisions.
+2. Draw the parking slots to scale and show the total number on the plans.
+3. Use the PD 1096 source-backed slot sizes for standard vehicle, truck, bus, articulated truck, jeepney, or shuttle spaces.
+4. If accessible parking is required, overlay BP 344 2024: 4000 mm x 5000 mm slot, nearest practical accessible entrance location, accessible route connection, and required signage.
+5. Treat aisle widths, turning radii, ramps, and structural grid coordination as design-geometry checks unless a verified source locator is available.
 
-- **Calculation:** $4.0 \times 6 = 24.0\text{ m}$.
+## Real-World Application
 
-**Pattern 3: Clearance Compliance**
-Question: "Is a 2.10 m headroom compliant for a PWD walkway?"
+Suppose a transport-terminal annex in Iloilo includes a small multi-level parking area. The architect first checks the required parking count against the occupancy and local ordinance, then uses PD 1096 Rule VII to confirm that average perpendicular or diagonal automobile slots are computed at 2.50 m x 5.00 m. Because the facility is open to the public, the architect also checks BP 344 2024 for accessible slots. The accessible bay is not merely a widened ordinary stall; it is 4000 mm x 5000 mm, placed near the accessible main entrance where practicable, connected to an accessible route, and marked by required signage. The architect may still coordinate ramp slope, turning radii, columns, drainage, ventilation, and headroom with engineers and local standards, but those design checks should not be falsely cited to PD 1096 Rule XIX or Section 803/904.
 
-- **Answer:** **No.** BP 344 2024 requires a minimum of **2.20 m**.
+## Source Notes for Learners
 
-**Exam Tip:** Ramp grades in parking structures: max 1:7 (14.3%) per PD 1096. Bay width for 90° parking: 2.5m × 5.0m standard, 2.7m × 5.0m for compact accessible. Aisle width for 90°: 6.1m minimum.
-<ArticleMedia id="media-lea-dsgn-010-02-core-concept" type="image" caption="Parking Ramp Section — Grade Limits and Vehicle Clearance" description="Section diagram of parking ramp showing: ramp grades (max 1:7 or ~14.3%), transition slopes at top/bottom, headroom clearance (2.1m minimum), and vehicle approach/ departure angles. Bay width (typically 3-bay structural bay at 16.5m) and column spacing annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
+- Source: PD 1096 2004 Revised IRR, Rule VII, Parking Slot, Parking Area and Loading/Unloading Space Requirements.
+- Source: PD 1096 2004 Revised IRR, Rule VII, Table VII.4, minimum required off-street/off-RROW on-site parking and loading requirements by use or occupancy.
+- Source: BP 344 2024 Revised IRR, Accessible Parking Slots.
+- Source: BP 344 2024 Revised IRR, accessible parking signage and accessible route provisions.
 
 ## Cross-References
 
-See **LEA-DSGN-010-01** (Parking Requirements) for parking count calculation, **LEA-DSGN-010-03** (Vehicular Circulation) for ramp and driveway geometry, and **LEA-DSGN-011-01** (Floor Plans) for parking plan documentation.
-
-## Common Mistakes
-
-<WikiMistakeList mistakes={[
-    'ERR-DSGN-026: Using 1:8 gradient for vehicle ramps (Correct: 1:6 maximum).',
-    'Using 3.70 m width for PWD parking (Correct: BP 344 2024 revised this to 4.00 m).',
-    'ERR-DSGN-028: Designing vehicle areas with only 2.0 m clearance (Correct: 2.40 m for vehicles, 2.20 m for PWD walkways).',
-    'Applying 1:20 ramp slope as a strict requirement when 1:12 remains the enforceable permit minimum during the transition period.',
-    'Confusing turning radii; standard car inside wheel radius is 6.1 m, requiring 12.2 m for a full U-turn.',
-  ]} />
+See **LEA-DSGN-010-01** for parking count calculation, **BP 344 Ramp Slope Tiers** for accessible ramp rules, and **BP 344 vs PD 1096 Conflicts** for accessibility overlays.

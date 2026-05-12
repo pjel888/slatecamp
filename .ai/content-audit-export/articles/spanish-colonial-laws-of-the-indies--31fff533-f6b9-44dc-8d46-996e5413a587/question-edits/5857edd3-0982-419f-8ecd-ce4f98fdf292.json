@@ -1,0 +1,57 @@
+{
+  "question_id": "5857edd3-0982-419f-8ecd-ce4f98fdf292",
+  "baseline_hash": "sha256:af7e1b80b1777505ebcdc3ef402f861fac78d1d256eab013d28932d32bffcf12",
+  "action": "replace",
+  "reason": "source-audited-article-batch-049-local-first: local raw-source-backed replacement constrained to checked Batch 049 source families.",
+  "approved_by": "codex-local-first-batch-049",
+  "approved_at": "2026-05-11T20:35:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "31fff533-f6b9-44dc-8d46-996e5413a587",
+    "parent_article_slug": "spanish-colonial-laws-of-the-indies",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "HOA Module 4 P1 refined markdown lines 278-365 and 700-760",
+    "checked_markdown_lines": [
+      "HOA Module 4 P1 refined markdown lines 278-365",
+      "HOA Module 4 P1 refined markdown lines 700-760"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "hoa4p1-local-raw-pdf--b049-31fff533-01",
+        "label": "HOA Module 4 P1 - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/HOA MODULE 4 P1.pdf",
+        "sha256": "sha256:c89f7f79b3dd8272c7aa7d8848ea72c196d6c418f33105a32fb1ed2cfadbffb3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/HOA MODULE 4 P1.md",
+        "refined_markdown_sha256": "sha256:e515c8c5203118d4aeef0fe1f288c7deb76d75d3e3e1a779291712420c7df047",
+        "locator": "HOA Module 4 P1 refined markdown lines 278-365 and 700-760"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 049 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "What does cuadricula identify in Spanish colonial town planning?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A grid pattern of streets and blocks laid out with uniform precision."
+      },
+      {
+        "id": "b",
+        "text": "A diagonal fire-escape stair system."
+      },
+      {
+        "id": "c",
+        "text": "A church facade type with no urban layout meaning."
+      },
+      {
+        "id": "d",
+        "text": "A private estate boundary unrelated to streets."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "A grid pattern of streets and blocks laid out with uniform precision. The checked source defines cuadricula as a grid of streets and blocks.",
+    "explanation": "A grid pattern of streets and blocks laid out with uniform precision. The checked source defines cuadricula as a grid of streets and blocks.",
+    "code_citation": "HOA Module 4 P1 refined markdown lines 278-365 and 700-760"
+  },
+  "batch_question_template_index": 2
+}

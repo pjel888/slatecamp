@@ -1,0 +1,468 @@
+{
+  "artifact_type": "source-audited-article-batch-local-first-ledger",
+  "batch_id": "source-audited-article-batch-054-local-first",
+  "batch_number": 54,
+  "generated_at": "2026-05-11T19:32:00.000+08:00",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "selection_rule": "Highest-linked unpassed source-backed LEA history clusters after excluding Batch 001-053 IDs.",
+  "inherited_blocker_status": "Batch 053 blockers=0",
+  "local_first_constraints": {
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false
+  },
+  "completed_articles": [
+    {
+      "article_id": "60c3b78a-e1c7-4c5e-880e-f9526d6c570d",
+      "slug": "21st-century-movements",
+      "title": "21st Century Movements",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/21st-century-movements--60c3b78a-e1c7-4c5e-880e-f9526d6c570d",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/21st-century-movements--60c3b78a-e1c7-4c5e-880e-f9526d6c570d/question-edits",
+      "linked_questions": 22,
+      "question_edits": 22,
+      "source_count": 3,
+      "normalized_sha256": "sha256:7a8c481141eb4a416aebda136118ca6252470ec88af76623f87fe180bbba862a",
+      "candidate_sha256": "sha256:7a8c481141eb4a416aebda136118ca6252470ec88af76623f87fe180bbba862a",
+      "sources_sha256": "sha256:bfff3d25d8c133d855f7d0817775096c91ef99152e6e20d64b18a93f1c26cc00",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/21st-century-movements--60c3b78a-e1c7-4c5e-880e-f9526d6c570d/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/21st-century-movements--60c3b78a-e1c7-4c5e-880e-f9526d6c570d/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/21st-century-movements--60c3b78a-e1c7-4c5e-880e-f9526d6c570d/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/21st-century-movements--60c3b78a-e1c7-4c5e-880e-f9526d6c570d/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/21st-century-movements--60c3b78a-e1c7-4c5e-880e-f9526d6c570d/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/21st-century-movements--60c3b78a-e1c7-4c5e-880e-f9526d6c570d/ui-blocks.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/21st-century-movements--60c3b78a-e1c7-4c5e-880e-f9526d6c570d/ui-block-edits.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/21st-century-movements--60c3b78a-e1c7-4c5e-880e-f9526d6c570d/parser-errors.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/21st-century-movements--60c3b78a-e1c7-4c5e-880e-f9526d6c570d/compose-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/21st-century-movements--60c3b78a-e1c7-4c5e-880e-f9526d6c570d/diff-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/21st-century-movements--60c3b78a-e1c7-4c5e-880e-f9526d6c570d/diff-report.md"
+      ],
+      "question_edit_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/21st-century-movements--60c3b78a-e1c7-4c5e-880e-f9526d6c570d/question-edits/021ea046-dbd5-4341-8186-e21d3dbae0a3.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/21st-century-movements--60c3b78a-e1c7-4c5e-880e-f9526d6c570d/question-edits/047ce021-bf5b-41a4-a8f4-1618ff5b2786.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/21st-century-movements--60c3b78a-e1c7-4c5e-880e-f9526d6c570d/question-edits/0d611840-6387-49d4-b90e-e6a820f3ee14.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/21st-century-movements--60c3b78a-e1c7-4c5e-880e-f9526d6c570d/question-edits/3ab438bf-bbc0-40b9-9373-05329ee30845.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/21st-century-movements--60c3b78a-e1c7-4c5e-880e-f9526d6c570d/question-edits/584a2916-6196-40a8-ba51-a42f3c01af67.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/21st-century-movements--60c3b78a-e1c7-4c5e-880e-f9526d6c570d/question-edits/5dbcf1b1-f706-4ca3-b101-19d46d446b80.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/21st-century-movements--60c3b78a-e1c7-4c5e-880e-f9526d6c570d/question-edits/6ddcb275-c4dc-4300-97d3-e7ed4e9fab6f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/21st-century-movements--60c3b78a-e1c7-4c5e-880e-f9526d6c570d/question-edits/74ea8c57-08dd-4e7b-9435-f1ce889b0e86.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/21st-century-movements--60c3b78a-e1c7-4c5e-880e-f9526d6c570d/question-edits/76487c6c-c954-4e2b-8630-f3d0834b87e6.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/21st-century-movements--60c3b78a-e1c7-4c5e-880e-f9526d6c570d/question-edits/878feba3-3038-4fb9-8c40-a80bd854ff27.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/21st-century-movements--60c3b78a-e1c7-4c5e-880e-f9526d6c570d/question-edits/8afa879e-ea02-485e-9eb4-3581ee93e538.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/21st-century-movements--60c3b78a-e1c7-4c5e-880e-f9526d6c570d/question-edits/8fd2e1ff-54d8-4a1c-8a01-eb0b01f33b29.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/21st-century-movements--60c3b78a-e1c7-4c5e-880e-f9526d6c570d/question-edits/b192e00e-2d3f-4f05-b959-e7ec2caaf897.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/21st-century-movements--60c3b78a-e1c7-4c5e-880e-f9526d6c570d/question-edits/b67cd010-7ae2-4390-b00f-dfb32ac2a53c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/21st-century-movements--60c3b78a-e1c7-4c5e-880e-f9526d6c570d/question-edits/bb33ee43-283d-468d-aad5-1851247e0bf3.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/21st-century-movements--60c3b78a-e1c7-4c5e-880e-f9526d6c570d/question-edits/caa4b075-4de9-4f10-8f04-7c8f352ec1a7.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/21st-century-movements--60c3b78a-e1c7-4c5e-880e-f9526d6c570d/question-edits/d57576a2-f04c-46c2-af65-64734f477125.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/21st-century-movements--60c3b78a-e1c7-4c5e-880e-f9526d6c570d/question-edits/d87cedac-1298-4a9f-9529-083820dc98f5.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/21st-century-movements--60c3b78a-e1c7-4c5e-880e-f9526d6c570d/question-edits/dcb1e1ac-e0ba-4363-bf8d-177a3f64cbc3.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/21st-century-movements--60c3b78a-e1c7-4c5e-880e-f9526d6c570d/question-edits/ecaf9985-bdc6-4b72-9bc3-a3a03c66d349.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/21st-century-movements--60c3b78a-e1c7-4c5e-880e-f9526d6c570d/question-edits/ed42fb5f-1234-4a73-aa2f-b7da7a2c6bbf.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/21st-century-movements--60c3b78a-e1c7-4c5e-880e-f9526d6c570d/question-edits/fda8e423-dbfe-4e84-ab27-35c277ff1648.json"
+      ],
+      "source_families": [
+        {
+          "source_id": "hoa-module-2-p3-local-raw-pdf--b054-60c3b78a-01",
+          "label": "HOA MODULE 2 P3 - local raw PDF",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/002-History/HOA MODULE 2 P3.pdf",
+          "raw_pdf_sha256": "sha256:b62daa7737b464ab7dc573d64f0f8701998462f8ac0fe933d96e8ecfe8040ba2",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/HOA MODULE 2 P3.md",
+          "refined_markdown_sha256": "sha256:d53cf6de56725d4b046a9f6b72665039b32d0bd932abc4d158ec0b2ba4b290e8",
+          "locator": "HOA MODULE 2 P3 refined markdown lines 511-524"
+        },
+        {
+          "source_id": "20th-century-architects-3-local-raw-pdf--b054-60c3b78a-02",
+          "label": "20th Century Architects 3 - local raw PDF",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/002-History/20th Century Architects 3.pdf",
+          "raw_pdf_sha256": "sha256:a9917c491e54202408b1d58fd6871e29b4d7cd5ba0dc8ae001dfa8ad67ffa6c9",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/20th Century Architects 3.md",
+          "refined_markdown_sha256": "sha256:83ae1f2b668eb3c2d6d8bbb7b3ff8778dd9ec126c93680d74b68e3562ae962e6",
+          "locator": "20th Century Architects 3 refined markdown lines 1-72"
+        },
+        {
+          "source_id": "history-local-raw-pdf--b054-60c3b78a-03",
+          "label": "history - local raw PDF",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/002-History/history.pdf",
+          "raw_pdf_sha256": "sha256:7fc1e6e6a8433afecc676c9037a96172f02489985033931ea1606f29557b7d18",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/history.md",
+          "refined_markdown_sha256": "sha256:9a0ef73aa09f9ebcb61002014c6a1157bf1c7d6123f835ecf87bc4ac9374b0ce",
+          "locator": "history refined markdown lines 237-245"
+        }
+      ],
+      "metadata_hashes": {
+        "original_content_hash": "sha256:14ab84c43df2fc619a214f77167df3c480935426c5b18719a2df88e843e5f893",
+        "normalized_content_hash": "sha256:7a8c481141eb4a416aebda136118ca6252470ec88af76623f87fe180bbba862a",
+        "candidate_content_hash": "sha256:7a8c481141eb4a416aebda136118ca6252470ec88af76623f87fe180bbba862a",
+        "linked_questions_hash": "sha256:5d60c35e5fb3f1b5ef12a455a02a724f4508917cd832e611ee0b524bcdf452ce",
+        "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    },
+    {
+      "article_id": "4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+      "slug": "african-vernacular-earth-architecture",
+      "title": "African Vernacular Earth Architecture",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce/question-edits",
+      "linked_questions": 22,
+      "question_edits": 22,
+      "source_count": 2,
+      "normalized_sha256": "sha256:90532f48be04a86fc22753a255450a6fcb0363dd995ee31c5d66abe6a8f88315",
+      "candidate_sha256": "sha256:90532f48be04a86fc22753a255450a6fcb0363dd995ee31c5d66abe6a8f88315",
+      "sources_sha256": "sha256:a949f428922e912b46a91c0c632397c5699e8a02ad769e8ab0dd5ffa63245dd1",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce/ui-blocks.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce/ui-block-edits.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce/parser-errors.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce/compose-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce/diff-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce/diff-report.md"
+      ],
+      "question_edit_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce/question-edits/073e4da0-54b5-423b-88d1-a2743bd4cab7.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce/question-edits/0e1d8974-af5a-4091-b05a-791174346b17.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce/question-edits/1163f95d-15ff-4c31-8ee5-6a6bb3c9bc93.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce/question-edits/1ef45fe7-ef7e-49c4-ad84-48950f4af93e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce/question-edits/46607040-9c33-4927-b5f2-3ef9f9474b58.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce/question-edits/4cf639c8-3f9a-43d4-b54a-989537b44ca2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce/question-edits/51a689ba-59ce-44c0-8221-6ec2a8e90fd3.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce/question-edits/56930853-eb80-4fc1-84bc-52631c005c89.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce/question-edits/5c5339f3-4fd1-4eb8-87bd-1310a731d4c1.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce/question-edits/716edfbf-e518-466a-bed6-225ffeb44114.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce/question-edits/7c9bb8e9-abc7-479e-91d7-a162299eb52c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce/question-edits/85036b1c-a162-4d13-a612-e1be47f6c61b.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce/question-edits/a6115378-d37f-44a5-ad43-131eb64649d6.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce/question-edits/a7a0aa70-9a61-40a6-84cd-18636fc664a1.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce/question-edits/a9579b4a-7fe8-4c57-aecc-2db8479f8111.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce/question-edits/b0fe625f-97c8-4fa2-af54-bc8a025648f1.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce/question-edits/ce997611-af95-4d6e-8b1b-4f0f51cabcb6.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce/question-edits/cf441e8c-49c5-41c6-9137-df78ec8934c8.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce/question-edits/cf6686d8-d00a-450b-b284-452812bdbad9.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce/question-edits/d9950f0e-cf85-49a9-b3a4-cb59f02e6cbe.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce/question-edits/d999bb17-5339-4227-bb42-abf4b1c00f29.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce/question-edits/e334631a-5c2a-4d3c-9a9e-cb134a555e57.json"
+      ],
+      "source_families": [
+        {
+          "source_id": "salvan-character-local-raw-pdf--b054-4a8c01ab-01",
+          "label": "George Salvan Architectural Character and the History of Architecture - local raw PDF",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Character and the History of Architecture.pdf",
+          "raw_pdf_sha256": "sha256:55c4fa2d43bbfd27cffb86d0aac4ad960032e178e1e25c29d4eb351297bfc069",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Character and the History of Architecture.md",
+          "refined_markdown_sha256": "sha256:be8e760bef8f7ceb573742d996dabb202f0353e19b4ab9283ec2de7dfc1fccea",
+          "locator": "George Salvan Architectural Character refined markdown lines 479-487 and 4931-4935"
+        },
+        {
+          "source_id": "history-local-raw-pdf--b054-4a8c01ab-02",
+          "label": "history - local raw PDF",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/002-History/history.pdf",
+          "raw_pdf_sha256": "sha256:7fc1e6e6a8433afecc676c9037a96172f02489985033931ea1606f29557b7d18",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/history.md",
+          "refined_markdown_sha256": "sha256:9a0ef73aa09f9ebcb61002014c6a1157bf1c7d6123f835ecf87bc4ac9374b0ce",
+          "locator": "history refined markdown line 177"
+        }
+      ],
+      "metadata_hashes": {
+        "original_content_hash": "sha256:7d4bab7bc2d3b05b2f3670d0051580f1303aa8c92824e154a19dd8752aa76950",
+        "normalized_content_hash": "sha256:90532f48be04a86fc22753a255450a6fcb0363dd995ee31c5d66abe6a8f88315",
+        "candidate_content_hash": "sha256:90532f48be04a86fc22753a255450a6fcb0363dd995ee31c5d66abe6a8f88315",
+        "linked_questions_hash": "sha256:a83fd1e9679fa92052665219f5bc02b7508af8a1c0c0206a12e8f8e9a0de4df1",
+        "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    },
+    {
+      "article_id": "fe7216ee-46ed-41b3-88ef-accb3f912a4c",
+      "slug": "inca-architecture-ashlar-masonry",
+      "title": "Inca Architecture Ashlar Masonry",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c/question-edits",
+      "linked_questions": 22,
+      "question_edits": 22,
+      "source_count": 1,
+      "normalized_sha256": "sha256:cb4b4cf590b66211cb63566d2bdbf1ce99dc4e0f22e574a5a93fef1ee1decd0a",
+      "candidate_sha256": "sha256:cb4b4cf590b66211cb63566d2bdbf1ce99dc4e0f22e574a5a93fef1ee1decd0a",
+      "sources_sha256": "sha256:bdf697a6f249dda8bee4169a0376ec22b0480762a87ffd45a474b930afeb621c",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c/ui-blocks.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c/ui-block-edits.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c/parser-errors.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c/compose-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c/diff-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c/diff-report.md"
+      ],
+      "question_edit_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c/question-edits/0dc824ab-aa3e-412c-8735-c1c168cd6eff.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c/question-edits/1dca9bab-54e2-4042-acdf-14dd3480a958.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c/question-edits/2a560113-be80-4f4c-84ca-9af963ca8b61.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c/question-edits/2bc2a2cd-3976-45e3-8fb6-b9c8a3b1de4e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c/question-edits/2e820e32-0412-45c9-9125-e5ff96504833.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c/question-edits/48f785ec-9de2-4730-9d7a-caee3a3d5255.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c/question-edits/4b6c0324-7b64-4811-ac8b-b086c43ab008.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c/question-edits/53c0f354-4086-453d-bbd2-970f50a3dad5.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c/question-edits/5e8a61a4-3f5e-4a57-90bd-45fe877aac5d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c/question-edits/6e0c23ce-f077-4800-9eb5-e29f1854208e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c/question-edits/75fa4d88-7247-49bc-9e56-4611615984ff.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c/question-edits/7e99476c-6dac-46d8-ae29-ec528f7ac870.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c/question-edits/8961da6f-4a0e-4918-9f8b-73e7b979fa35.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c/question-edits/a17db9b7-342f-4297-b626-bf2b504e68f8.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c/question-edits/acb82ee7-1a12-4d1a-8c6c-1a471e87b3a8.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c/question-edits/ad833160-d92a-4e57-a59e-01d54b337c45.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c/question-edits/b42bf8d0-35d0-40a9-8a8e-aba1d6c176f9.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c/question-edits/b6979907-f9eb-483f-8742-2dffb5bf6f20.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c/question-edits/c05e8892-4875-472a-a0dc-f90d35151732.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c/question-edits/d8c04655-b939-4b0d-b25f-820201afa5f1.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c/question-edits/edd29d81-96d3-44d2-840a-5022f0de40fd.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c/question-edits/eeec577b-d49b-4fc9-8493-a25cffe5e8ec.json"
+      ],
+      "source_families": [
+        {
+          "source_id": "salvan-character-local-raw-pdf--b054-fe7216ee-01",
+          "label": "George Salvan Architectural Character and the History of Architecture - local raw PDF",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Character and the History of Architecture.pdf",
+          "raw_pdf_sha256": "sha256:55c4fa2d43bbfd27cffb86d0aac4ad960032e178e1e25c29d4eb351297bfc069",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Character and the History of Architecture.md",
+          "refined_markdown_sha256": "sha256:be8e760bef8f7ceb573742d996dabb202f0353e19b4ab9283ec2de7dfc1fccea",
+          "locator": "George Salvan Architectural Character refined markdown lines 1339, 1361-1377, 1385-1387, 1397-1401, and 1407-1409"
+        }
+      ],
+      "metadata_hashes": {
+        "original_content_hash": "sha256:9b4a02d9c4cc2c79bede7f8fad288ee195019bb53ecb50ccfb6062a179756db5",
+        "normalized_content_hash": "sha256:cb4b4cf590b66211cb63566d2bdbf1ce99dc4e0f22e574a5a93fef1ee1decd0a",
+        "candidate_content_hash": "sha256:cb4b4cf590b66211cb63566d2bdbf1ce99dc4e0f22e574a5a93fef1ee1decd0a",
+        "linked_questions_hash": "sha256:580044283fb890af198dbf685d3550a8200b9868830c1facf55bcf64d24d3bfb",
+        "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    },
+    {
+      "article_id": "5fd2842e-ca3e-4e6d-bb87-65067d23a482",
+      "slug": "north-american-indigenous-architecture",
+      "title": "North American Indigenous Architecture",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482/question-edits",
+      "linked_questions": 22,
+      "question_edits": 22,
+      "source_count": 1,
+      "normalized_sha256": "sha256:629fe3474fee4cf182561fea56f1ad7870fef4bfe03abf7115edb8718aedadf3",
+      "candidate_sha256": "sha256:629fe3474fee4cf182561fea56f1ad7870fef4bfe03abf7115edb8718aedadf3",
+      "sources_sha256": "sha256:c54c8fa2e1c9905e0773994a99e83616da5684f2c3c65451851ead04b6d7a806",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482/ui-blocks.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482/ui-block-edits.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482/parser-errors.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482/compose-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482/diff-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482/diff-report.md"
+      ],
+      "question_edit_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482/question-edits/22791b72-680d-4695-bfd7-9ecf00b3182a.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482/question-edits/2a1a96a9-b13b-4a1d-a8a7-869ace7a8035.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482/question-edits/2e3664c8-8996-45ee-9fe7-dab4a0acb7af.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482/question-edits/3cbf3921-5332-42a4-927c-e58f2f5fd32e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482/question-edits/4362320c-248e-460c-9fd6-ca464953f2d4.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482/question-edits/4a92156a-1c8e-4866-b400-3e884359ffd7.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482/question-edits/54b26d6f-43c0-4a29-83c5-acddd3e0c414.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482/question-edits/5b2d0ba5-4fc2-4ec2-8644-9053280fbb57.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482/question-edits/6172a479-1a21-48db-a11b-7f9c0cca4395.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482/question-edits/68753697-4183-4805-9e26-e5001189032b.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482/question-edits/7863bedd-b863-4a56-9972-d17aad31958e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482/question-edits/7f0b5739-bb69-47cf-aa7f-553691bcb183.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482/question-edits/9df32315-751b-4c90-8ea9-f43921b0b424.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482/question-edits/a88fe13e-5a47-4fca-9188-e7fd80a8e087.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482/question-edits/b546b52b-2068-40a8-85d0-b73aed3db47c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482/question-edits/c35c193e-3c9d-4de6-953a-3649f49c3c95.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482/question-edits/c678c816-e3e2-47f2-97a5-7354912b8278.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482/question-edits/c9442842-9c39-452c-9acd-9eb77c88a6f0.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482/question-edits/c9b31198-eead-42b5-a929-8bc376b0aa93.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482/question-edits/ca8357d7-6da1-4354-a7e1-518e0b476a9c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482/question-edits/cb23c2e1-34ee-4d60-9c36-609872e1fd57.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482/question-edits/fe9dba3e-91fc-49ea-88fb-54e11e8af2f6.json"
+      ],
+      "source_families": [
+        {
+          "source_id": "salvan-character-local-raw-pdf--b054-5fd2842e-01",
+          "label": "George Salvan Architectural Character and the History of Architecture - local raw PDF",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Character and the History of Architecture.pdf",
+          "raw_pdf_sha256": "sha256:55c4fa2d43bbfd27cffb86d0aac4ad960032e178e1e25c29d4eb351297bfc069",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Character and the History of Architecture.md",
+          "refined_markdown_sha256": "sha256:be8e760bef8f7ceb573742d996dabb202f0353e19b4ab9283ec2de7dfc1fccea",
+          "locator": "George Salvan Architectural Character refined markdown lines 479-487"
+        }
+      ],
+      "metadata_hashes": {
+        "original_content_hash": "sha256:1f4b78cac06f5feddc3b3ec30f3afd441d5b3741d13412d66c67524e2a52d857",
+        "normalized_content_hash": "sha256:629fe3474fee4cf182561fea56f1ad7870fef4bfe03abf7115edb8718aedadf3",
+        "candidate_content_hash": "sha256:629fe3474fee4cf182561fea56f1ad7870fef4bfe03abf7115edb8718aedadf3",
+        "linked_questions_hash": "sha256:e41fa027892dfb335823e3b8007a64a0db55f726e4c9ecb6ff095008b39ef321",
+        "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    },
+    {
+      "article_id": "efb82628-9bf4-4bde-9561-8b784384c32c",
+      "slug": "pre-columbian-mesoamerica",
+      "title": "Pre-Columbian Mesoamerica",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c/question-edits",
+      "linked_questions": 22,
+      "question_edits": 22,
+      "source_count": 1,
+      "normalized_sha256": "sha256:217acf7be1005c7e160f35e8e81f14ea19609d2a9f53856f1032edba4b2d1256",
+      "candidate_sha256": "sha256:217acf7be1005c7e160f35e8e81f14ea19609d2a9f53856f1032edba4b2d1256",
+      "sources_sha256": "sha256:46e3de84d00c718e6b1d6881303ff61fd8b1ebbb139b7845f7d617b54f5d5c6b",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c/ui-blocks.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c/ui-block-edits.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c/parser-errors.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c/compose-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c/diff-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c/diff-report.md"
+      ],
+      "question_edit_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c/question-edits/092736ff-5c5e-4537-9434-826ee5ec8bea.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c/question-edits/1189823e-20bc-453e-a3d7-465c226ba29c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c/question-edits/18e4ff83-dfef-4edf-ac51-74cb5b2bb03b.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c/question-edits/1ab5490a-a144-46d5-88cd-e69e4fa4cda0.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c/question-edits/3befb5a4-d6b2-4e0d-abf4-52a46f943c44.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c/question-edits/45080159-4b8b-460b-8af9-328123d75ef5.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c/question-edits/5345ce3b-4364-4693-b923-40c8dd709f78.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c/question-edits/53e484c3-aa57-4b45-97db-4c605e7e207d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c/question-edits/63bd338d-6109-40e1-b12d-926b887579bb.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c/question-edits/687c6271-c77a-4f68-8ad3-ca61280cdd21.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c/question-edits/998f17a8-23f2-4649-bb9c-0443224c47e2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c/question-edits/b08a1a50-33e9-414a-93cc-b2d050639af0.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c/question-edits/b7b31282-7677-4aa1-bb86-f9a7509a8931.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c/question-edits/cf37815d-477f-404d-a77f-52af21baeacf.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c/question-edits/d09bbf3e-744a-4248-b850-2b3ec5c588df.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c/question-edits/d5587968-86d8-422a-bfa8-712194dc836d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c/question-edits/db9ab8e0-5a83-463b-949a-582c34ffd455.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c/question-edits/de97a38d-c512-4e59-9872-a5885a399cf7.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c/question-edits/e86e9e26-e319-41d1-abbb-a3118249a3af.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c/question-edits/f7fa7dd3-c7c5-4566-bdc8-9066b655d966.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c/question-edits/fa82eacf-b6a1-44ff-9698-b25104b1cdca.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c/question-edits/fc6daeb3-8e4f-471e-8464-fec1057a5371.json"
+      ],
+      "source_families": [
+        {
+          "source_id": "salvan-character-local-raw-pdf--b054-efb82628-01",
+          "label": "George Salvan Architectural Character and the History of Architecture - local raw PDF",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Character and the History of Architecture.pdf",
+          "raw_pdf_sha256": "sha256:55c4fa2d43bbfd27cffb86d0aac4ad960032e178e1e25c29d4eb351297bfc069",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Character and the History of Architecture.md",
+          "refined_markdown_sha256": "sha256:be8e760bef8f7ceb573742d996dabb202f0353e19b4ab9283ec2de7dfc1fccea",
+          "locator": "George Salvan Architectural Character refined markdown lines 1238-1315"
+        }
+      ],
+      "metadata_hashes": {
+        "original_content_hash": "sha256:514b36325e401eb66f203dcf97f8d1efc5931a12cc49ed84eaf8887d3a99ebdd",
+        "normalized_content_hash": "sha256:217acf7be1005c7e160f35e8e81f14ea19609d2a9f53856f1032edba4b2d1256",
+        "candidate_content_hash": "sha256:217acf7be1005c7e160f35e8e81f14ea19609d2a9f53856f1032edba4b2d1256",
+        "linked_questions_hash": "sha256:0e23420c69a77b08ddbbcc8c4cfb69ad9c6ea3dcbebb434e87e4107f63076bdf",
+        "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    }
+  ],
+  "totals": {
+    "selected_articles": 5,
+    "linked_questions": 110,
+    "question_edits": 110,
+    "source_rows": 8,
+    "unique_raw_pdfs": 4,
+    "json_parse": 160,
+    "source_hash_checks": 16,
+    "marker_matches": 0,
+    "stale_compose_error_files": 0,
+    "targeted_tests": 34,
+    "targeted_expect_calls": 328,
+    "unresolved_blockers": 0
+  },
+  "source_evidence": {
+    "unique_raw_pdfs": [
+      "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/002-History/20th Century Architects 3.pdf",
+      "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Character and the History of Architecture.pdf",
+      "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/002-History/HOA MODULE 2 P3.pdf",
+      "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/002-History/history.pdf"
+    ],
+    "summary": [
+      "HOA MODULE 2 P3 for Deconstructivism, Jacques Derrida, Guggenheim Bilbao, and Vitra Fire Station.",
+      "20th Century Architects 3 for Peter Eisenman, deconstruction, Jacques Derrida, and Frank Gehry.",
+      "history for late 20th and early 21st century landmark list and Sahelian category locator.",
+      "George Salvan Architectural Character and the History of Architecture for primitive dwellings, Nigerian hut, Islamic vernacular settlements, Mesoamerica, Inca masonry, Machu Picchu, Gate of the Sun, and Sacsahuaman."
+    ]
+  },
+  "quality_protocol_results": [
+    {
+      "name": "compose",
+      "command": "bun run content-audit:compose -- --article-id <id> --overwrite --strict",
+      "result": "PASS",
+      "articles_passed": 5,
+      "blockers": 0
+    },
+    {
+      "name": "diff",
+      "command": "bun run content-audit:diff -- --article-id <id> --strict --summary",
+      "result": "PASS",
+      "articles_passed": 5,
+      "safe_to_push": true,
+      "blockers": 0
+    },
+    {
+      "name": "validate",
+      "command": "bun run content-audit:validate -- --article-id <id> --summary",
+      "result": "PASS",
+      "articles_passed": 5,
+      "blockers": 0,
+      "warnings": "component-usage.json not generated warnings only"
+    },
+    {
+      "name": "ui-block-edits",
+      "command": "bun run content-audit:ui-block-edits -- --article-id <id>",
+      "result": "PASS",
+      "articles_passed": 5,
+      "blockers": 0,
+      "warnings": 0
+    },
+    {
+      "name": "scoped-quality-sweep",
+      "command": "node scoped Batch 054 JSON/hash/marker/question-edit/stale-compose sweep",
+      "result": "PASS",
+      "json_parse": 160,
+      "source_hash_checks": 16,
+      "marker_matches": 0,
+      "stale_compose_error_files": 0
+    },
+    {
+      "name": "targeted-tests",
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "result": "PASS",
+      "tests": 34,
+      "failures": 0,
+      "expect_calls": 328
+    },
+    {
+      "name": "scoped-git-diff-check",
+      "command": "git diff --check -- <Batch 054 selected paths and artifacts>",
+      "result": "PASS"
+    }
+  ],
+  "unresolved_blockers": 0,
+  "next_batch_readiness": "READY_FOR_BATCH_055_SELECTION"
+}

@@ -1,56 +1,35 @@
 {
   "article_id": "6bfa7e66-ac5c-4a52-8f92-0ca94b945305",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:c779bd95a0195f8bc6d389aa51eda2dc2f8962964f57d2b347b2bd6279e43798",
-  "source_count": 4,
+  "source_count": 1,
   "sources": [
     {
-      "source_id": "6adf0c51-8730-4a33-bf73-56d40a1f8d04",
+      "source_id": "toa4-tropical-architecture-local-raw-pdf--b059-6bfa7e66-01",
       "article_id": "6bfa7e66-ac5c-4a52-8f92-0ca94b945305",
-      "label": "[ResearchGate - CFD analysis of Wind blocking vs. Venturi effect in Tropical",
+      "label": "TOA 4 Tropical Architecture - local raw PDF",
       "url": null,
-      "source_type": "reference_standard",
-      "description": "Climate](https://www.researchgate.net/publication/273316419_CFD_analysis_of_Wind_blocking_vs_Venturi_effect_A_Case_Study_in_Tropical_Climate)",
-      "is_verified": false,
+      "source_type": "local_raw_pdf",
+      "description": "TOA 4 Tropical Architecture - local raw PDF; local raw PDF checked first; refined markdown used only as locator. TOA 4 Tropical Architecture refined markdown lines 809-874, 1155-1172, 1386-1420, 1648-1665, 1685-1703, and raw PDF pages 82, 84, 104, 106-110, 163, and 187.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:02.295633+00:00",
-      "updated_at": "2026-03-24T04:34:02.295633+00:00"
-    },
-    {
-      "source_id": "ce2af137-d128-43ff-92d5-25b7913b0530",
-      "article_id": "6bfa7e66-ac5c-4a52-8f92-0ca94b945305",
-      "label": "[MDPI - Wind Catchers: Passive Ventilation in Hot, Arid and Humid Regions](https://www.mdpi.com/2071-1050/14/17/11088)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 1,
-      "created_at": "2026-03-24T04:34:02.295633+00:00",
-      "updated_at": "2026-03-24T04:34:02.295633+00:00"
-    },
-    {
-      "source_id": "e406544c-7652-4a65-9dc1-2dc59ea0133e",
-      "article_id": "6bfa7e66-ac5c-4a52-8f92-0ca94b945305",
-      "label": "[Wikipedia - Windcatcher](https://en.wikipedia.org/wiki/Windcatcher)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:34:02.295633+00:00",
-      "updated_at": "2026-03-24T04:34:02.295633+00:00"
-    },
-    {
-      "source_id": "b6262c62-75a1-4c67-92fa-7aa15513d4f4",
-      "article_id": "6bfa7e66-ac5c-4a52-8f92-0ca94b945305",
-      "label": "[Philippine Green Building Code - ADB's Law and Policy Reform Program](https://lpr.adb.org/resource/philippine-green-building-code-2015)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:34:02.295633+00:00",
-      "updated_at": "2026-03-24T04:34:02.295633+00:00"
+      "created_at": "2026-05-11T20:48:00.000+08:00",
+      "updated_at": "2026-05-11T20:48:00.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+      "raw_pdf_sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+      "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+      "source_locator": "TOA 4 Tropical Architecture refined markdown lines 809-874, 1155-1172, 1386-1420, 1648-1665, 1685-1703, and raw PDF pages 82, 84, 104, 106-110, 163, and 187",
+      "checked_markdown_lines": [
+        "TOA 4 Tropical Architecture refined markdown lines 809-874",
+        "TOA 4 Tropical Architecture refined markdown lines 1155-1172",
+        "TOA 4 Tropical Architecture refined markdown lines 1386-1420",
+        "TOA 4 Tropical Architecture refined markdown lines 1648-1665, 1685-1703"
+      ],
+      "checked_pdf_pages": "raw PDF pages 1, 5-11, 13, 15-18, 20-21, 23-24, 28, 41, 71-78, 81-84, 87-90, 92-100, 104, 106-110, 121, 140, 143-148, 151, 163, 172, 180-181, and 187",
+      "local_audit_note": "Primary truth is the local raw PDF family; refined markdown line ranges are locator aids for the checked claims."
     }
-  ]
+  ],
+  "sources_hash": "sha256:a26658bd568dc60091a20b0c7dd5593f584210d6db55ec5a243f3e26302939fd"
 }

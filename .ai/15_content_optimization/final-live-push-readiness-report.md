@@ -1,8 +1,8 @@
 # Final Live-Push Readiness Report
 
-**Generated:** 2026-05-03  
-**Status:** ✅ **GO for live push** — all blockers are cleared  
-**Supabase:** 0 pushes, production untouched  
+**Generated:** 2026-05-03
+**Status:** ✅ **GO for live push** — all blockers are cleared
+**Supabase:** 0 pushes, production untouched
 
 ---
 
@@ -125,7 +125,7 @@ The initial classification of 66 blocked articles broke down into:
 
 All local fixable blockers are resolved. The full pipeline passes:
 - 567/567 compose
-- 567/567 all-safe dry-run  
+- 567/567 all-safe dry-run
 - 0 blockers of any kind
 
 ### Pre-push commands (human authorization required):

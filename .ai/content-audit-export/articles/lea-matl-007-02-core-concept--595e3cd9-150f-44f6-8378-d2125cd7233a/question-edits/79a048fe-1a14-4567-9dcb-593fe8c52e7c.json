@@ -1,0 +1,65 @@
+{
+  "question_id": "79a048fe-1a14-4567-9dcb-593fe8c52e7c",
+  "baseline_hash": "sha256:db6338f6f66062d9cadddbb87f0b3d50b5443c9699d31b72393b08134d6846b7",
+  "action": "replace",
+  "reason": "source-audited-article-batch-078-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-007-02-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-078",
+  "approved_at": "2026-05-12T05:20:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
+    "parent_article_slug": "lea-matl-007-02-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "BCI refined markdown lines 12549-12620, 12889-13016, and 13036-13220; raw PDF pages 343-356 checked by local PyMuPDF extraction",
+    "checked_markdown_lines": [
+      "BCI refined markdown lines 12549-12620, 12889-13016, and 13036-13220; raw PDF pages 343-356 checked by local PyMuPDF extraction",
+      "Salvan refined markdown lines 8560-8665 and 13388-13422; raw PDF pages 253-254 and 361 checked by local PyMuPDF extraction"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "bci-5e-b078",
+        "label": "Building Construction Illustrated, 5th Edition",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "raw_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "locator": "BCI refined markdown lines 12549-12620, 12889-13016, and 13036-13220; raw PDF pages 343-356 checked by local PyMuPDF extraction"
+      },
+      {
+        "source_id": "salvan-building-materials-b078",
+        "label": "George Salvan Architectural Building Materials",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+        "raw_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+        "locator": "Salvan refined markdown lines 8560-8665 and 13388-13422; raw PDF pages 253-254 and 361 checked by local PyMuPDF extraction"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 078 local raw-source-audited wall_finishes scope."
+  },
+  "proposed": {
+    "text": "What basic performance does BCI assign to interior wall finishes?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They should resist wear and be cleanable."
+      },
+      {
+        "id": "b",
+        "text": "They should act as roof trusses."
+      },
+      {
+        "id": "c",
+        "text": "They should always be loose and flexible."
+      },
+      {
+        "id": "d",
+        "text": "They should replace all surface preparation."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "BCI states that interior walls should be resistant to wear and be cleanable.",
+    "explanation": "BCI states that interior walls should be resistant to wear and be cleanable.",
+    "code_citation": "Building Construction Illustrated, 5th Edition; George Salvan Architectural Building Materials"
+  }
+}

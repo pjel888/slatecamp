@@ -1,95 +1,34 @@
-
+# Comprehensive Architectural Services: The Full-Spectrum Commission
 
 ## Board Exam Quick Check
 
-Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
-
-**Common mistake:** treating a familiar keyword in **Lea Prac Svc 017 Comprehensive Architectural Services The Full Spectrum Commission** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
-## Comprehensive Architectural Services: The Full-Spectrum Commission
+When an item asks about comprehensive services, anchor the answer to SPP 206. The safe rule is lifecycle coordination: pre-design, regular design, specialized services, construction services, and post-construction services coordinated for the owner.
 
 ## Learning Goal
 
-After studying this article, you should be able to:
+After reading this article, you should be able to explain the architect's coordinating role in CAS, distinguish CAS from regular design services alone, and avoid overstating the architect's liability for work that SPP 206 leaves with other team members.
 
-- Define comprehensive architectural services (full-spectrum commission).
-- Describe all phases from pre-design through post-construction under one contract.
-- Explain the advantages of a comprehensive contract for the client and architect.
-- Identify typical fee arrangements for comprehensive services.
+## What Makes the Commission Comprehensive
 
-|---
-### Understanding Comprehensive Services
+Comprehensive Architectural Services covers the full professional-service range from pre-design through post-construction. SPP 206 lists pre-design services, regular design services, specialized architectural services, construction services, and post-construction services. The point is continuity of services related to design and construction so that the project can be executed as a viable whole.
 
-Comprehensive Architectural Services encompasses five primary categories: pre-design services, regular design services, specialized architectural services, construction services, and post-construction services. The architect functions as the _prime professional_, serving as the client's agent in coordinating all necessary services for project delivery. This coordinating role defines the architect's leadership position within the project team.
+The architect's role is integrative. SPP 206 calls the architect the prime professional and describes the architect as creator, author, and coordinator of the building design. But the same source makes the boundary explicit: the architect is not expected to personally perform all services. The architect acts as the client's agent in procuring and coordinating necessary services.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-prac-svc-017-comprehensive-architect", type="image", caption="Comprehensive Architectural Services — The Five Service Categories", description="Process flow diagram showing the five CAS categories: Pre-Design Services (SPP 201) → Regular Design Services (SPP 202) → Specialized Architectural Services (SPP 203) → Construction Services (SPP 204) → Post-Construction Services (SPP 205). The architect is shown as prime professional coordinating all categories.", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+## CAS and Project Management
 
-The architect is not expected to perform all services directly.
+When the owner hires an architect or firm to coordinate the full CAS range, the engagement constitutes Project Management. PM sits above normal architectural and engineering service work and aims to control time, cost, and quality. PM is coordination and management; it does not cancel the normal duties of architects, engineers, or contractors.
 
-### The Five Service Categories
+SPP 206 also gives the exam a timing clue. The PM should begin consultations with the owner and A&E team as early as design development, perhaps even concurrently with the architect's commission. If the PM also serves as construction manager, the relevant SPP 204-A and/or SPP 204-B services apply.
 
-_Pre-design services_ establish the project foundation through consultation, feasibility studies, site analysis, and architectural programming. These services determine the project's viability and establish performance requirements.
+## Service Categories
 
-_Regular design services_ include the five traditional project phases: Project Definition, Schematic Design, Design Development, Contract Documents, and Bidding or Negotiation. This work creates the design that becomes the basis for construction.
+Regular design services are only one part of CAS. Under SPP 202 they include project definition, schematic design, design development, contract documents, bidding or negotiation, and construction phase. Specialized architectural services under SPP 203 address project-specific needs beyond regular design, such as interiors, acoustic design, lighting, site development planning, heritage work, building systems, commissioning, environmental certification, forensic architecture, appraisal, and related specialized services.
 
-_Specialized architectural services_ expand the core offering to include acoustic design, architectural interiors, site development planning, heritage conservation, security evaluation, facilities maintenance support, and building testing. These services address specific project needs.
+Construction services under CAS point to full-time supervision and construction management. Post-construction services point to building and facilities administration and post-construction evaluation.
 
-_Construction services_ encompass fulltime supervision and construction management, ensuring the architect's design is properly executed in the field.
+## Common Mistakes
 
-_Post-construction services_ include building administration and post-construction evaluation, allowing the architect to assess how the completed building performs.
-
-### The Architect's Coordinating Role
-
-In comprehensive services, the architect assumes professional responsibility and civil liability for both design and construction aspects of the project. The architect's education, training, and expertise qualify the professional to take a direct role from conceptualization through implementation.
-
-This extended engagement creates continuity of service, which is essential for executing a completely viable project. The architect coordinates structural engineers, mechanical engineers, landscape architects, specialty consultants, and construction personnel. This coordination ensures seamless integration of all project elements.
-
-When the client hires an architect to coordinate the complete range of Comprehensive Architectural Services, this relationship constitutes _Project Management (PM)_. Project Management represents the owner's engagement of the architect for the full scope of professional responsibility.
-
-[SLATECAMP_UI_BLOCK:ui_0002 component="SPP206RefServices" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0003 component="ProcessFlow" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Project Definition — Problem identification Schematic Design — 15% fee; conceptual design Design Development — 20% fee; detailed design Contract Documents — 50% fee; construction docs Bidding/Negotiation — 5% fee; contractor selection Construction Admin. — 10% fee; site visits
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code="irr", section="SPP Documents", title="Professional Practice Framework"
-- Text: SPP Documents 201–209 establish standards for architectural services scope, fee structures, and professional responsibilities under RA 9266.
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Fee distribution: SD=15%, DD=20%, CD=50%, BA=5%, CA=10%. Contract Documents (50%) is the largest phase. Cumulative: 15%→35%→85%→90%→100%.
-[/SLATECAMP_UI_BLOCK]
-
----
-
-## Related Articles
-
-- [SPP Doc 202 Six-Phase Framework](lea-prac-svc-004)
-- [Schematic Design Phase](lea-prac-svc-005)
-- [Design Development Phase](lea-prac-svc-006)
-- [Contract Documents Phase](lea-prac-svc-007)
-- [Bidding and Construction Admin](lea-prac-svc-008)
-- [Pre-Design Services](lea-prac-svc-001)
-- [Specialized Services](lea-prac-svc-009)
-- [Design-Build Delivery](lea-prac-svc-019)
-- [Fee Compensation Methods](lea-prac-cmp-001)
-- [Owner-Architect Agreement](lea-prac-ctr-001)
-
-[SLATECAMP_UI_BLOCK:ui_0006 component="KeyValues" status="preserved"]
-Extracted summary:
-- Props: items="{[{\"value\": \"15%\", \"label\": \"Schematic Design\"}", value=true, label=true, Design=true, Development=true, Contract=true, Docs=true, Bidding=true, Assist=true, Constr=true, Admin=true
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+- Treating regular design services as the whole CAS framework.
+- Saying the architect must directly provide every specialist service.
+- Saying PM relieves contractors or engineers of their normal responsibilities.
+- Importing design-build liability language into a CAS question unless the item is actually about SPP 207.

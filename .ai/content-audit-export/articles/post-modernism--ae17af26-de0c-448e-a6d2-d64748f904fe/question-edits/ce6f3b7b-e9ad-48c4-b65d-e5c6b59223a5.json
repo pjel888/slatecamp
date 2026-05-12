@@ -1,0 +1,87 @@
+{
+  "question_id": "ce6f3b7b-e9ad-48c4-b65d-e5c6b59223a5",
+  "baseline_hash": "sha256:fe4ecfb3078cd216085938fcb3e9bfa5dff3692185a0dac654ba4dadb850c715",
+  "action": "replace",
+  "reason": "source-audited-article-batch-052-local-first: local raw PDF backed replacement constrained to checked Batch 052 source families.",
+  "approved_by": "codex-local-first-batch-052",
+  "approved_at": "2026-05-11T18:46:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "ae17af26-de0c-448e-a6d2-d64748f904fe",
+    "parent_article_slug": "post-modernism",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "HOA Module 2 P3 refined markdown lines 252-274, 278-313, 315-338, 340-457, and 477-488; 20th Century Architects refined markdown lines 45-77; Modern Architectures in History USA refined markdown lines 763-769, 1433-1441, 1546-1548, 1751-1763, 1803-1805, 1828-1834, 1902-1906, and 1950-1956",
+    "checked_markdown_lines": [
+      "HOA Module 2 P3 refined markdown lines 252-274",
+      "HOA Module 2 P3 refined markdown lines 278-313",
+      "HOA Module 2 P3 refined markdown lines 315-338",
+      "HOA Module 2 P3 refined markdown lines 340-457",
+      "HOA Module 2 P3 refined markdown lines 477-488",
+      "20th Century Architects refined markdown lines 45-77",
+      "Modern Architectures in History USA refined markdown lines 763-769",
+      "Modern Architectures in History USA refined markdown lines 1433-1441",
+      "Modern Architectures in History USA refined markdown lines 1546-1548",
+      "Modern Architectures in History USA refined markdown lines 1751-1763",
+      "Modern Architectures in History USA refined markdown lines 1803-1805",
+      "Modern Architectures in History USA refined markdown lines 1828-1834",
+      "Modern Architectures in History USA refined markdown lines 1902-1906",
+      "Modern Architectures in History USA refined markdown lines 1950-1956"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "hoa2p3-local-raw-pdf--b052-ae17af26-01",
+        "label": "HOA Module 2 P3 - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/HOA MODULE 2 P3.pdf",
+        "sha256": "sha256:b62daa7737b464ab7dc573d64f0f8701998462f8ac0fe933d96e8ecfe8040ba2",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/HOA MODULE 2 P3.md",
+        "refined_markdown_sha256": "sha256:d53cf6de56725d4b046a9f6b72665039b32d0bd932abc4d158ec0b2ba4b290e8",
+        "locator": "HOA Module 2 P3 refined markdown lines 252-274, 278-313, 315-338, 340-457, and 477-488"
+      },
+      {
+        "source_id": "twentieth1-local-raw-pdf--b052-ae17af26-02",
+        "label": "20th Century Architects - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/20th Century Architects.pdf",
+        "sha256": "sha256:f089bb71bb762908a02114546a988147d8041d34b386d2b1a78d7517a7acd7c8",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/20th Century Architects.md",
+        "refined_markdown_sha256": "sha256:d0c57daf6466283881f2e8d52286956ee76bb64433082a694f5bf4952ef9cfc1",
+        "locator": "20th Century Architects refined markdown lines 45-77"
+      },
+      {
+        "source_id": "modernusa-local-raw-pdf--b052-ae17af26-03",
+        "label": "Modern Architectures in History USA - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Modern Architectures in History (USA) - Gwendolyn Wright.pdf",
+        "sha256": "sha256:2910fe1d48df8a3822e69d8dcbe830b8bd5948af1da991028f0dc6d062cd578d",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Modern Architectures in History (USA) - Gwendolyn Wright.md",
+        "refined_markdown_sha256": "sha256:97479009e43ab4d8b3c2df4ef9285ce36947f8b7a66370527a470994d0fbd70d",
+        "locator": "Modern Architectures in History USA refined markdown lines 763-769, 1433-1441, 1546-1548, 1751-1763, 1803-1805, 1828-1834, 1902-1906, and 1950-1956"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 052 checked local raw PDF source scope."
+  },
+  "proposed": {
+    "text": "Which work is identified in the checked local source as a first postmodern skyscraper?",
+    "options": [
+      {
+        "id": "a",
+        "text": "AT&T Headquarters in New York by Philip Johnson"
+      },
+      {
+        "id": "b",
+        "text": "Bauhaus Building at Dessau by Walter Gropius"
+      },
+      {
+        "id": "c",
+        "text": "Villa Savoye at Poissy by Le Corbusier"
+      },
+      {
+        "id": "d",
+        "text": "Farnsworth House in Illinois by Mies van der Rohe"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "AT&T Headquarters in New York by Philip Johnson This answer is supported by the checked Batch 052 local raw PDF source families for Post-Modernism.",
+    "explanation": "AT&T Headquarters in New York by Philip Johnson The Batch 052 source audit used local raw PDFs first and refined markdown only as locator evidence for Post-Modernism.",
+    "code_citation": "HOA Module 2 P3 refined markdown lines 252-274, 278-313, 315-338, 340-457, and 477-488; 20th Century Architects refined markdown lines 45-77; Modern Architectures in History USA refined markdown lines 763-769, 1433-1441, 1546-1548, 1751-1763, 1803-1805, 1828-1834, 1902-1906, and 1950-1956"
+  },
+  "batch_question_template_index": 2
+}

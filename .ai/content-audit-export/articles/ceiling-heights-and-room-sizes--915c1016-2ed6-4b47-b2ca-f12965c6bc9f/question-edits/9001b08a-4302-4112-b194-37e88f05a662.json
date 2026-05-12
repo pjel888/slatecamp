@@ -1,0 +1,24 @@
+{
+  "question_id": "9001b08a-4302-4112-b194-37e88f05a662",
+  "baseline_hash": "sha256:26c1f801f1cebfb07c966c1a9cd835072ad011646b65c883227df05d1547a1ee",
+  "reason": "Batch 010 local source audit aligned linked question 9001b08a-4302-4112-b194-37e88f05a662 with the repaired Ceiling Heights and Room Sizes article and verified PD 1096 raw-source citations. This local draft updates citation/explanation context only and does not change answer-key fields.",
+  "approved_by": "codex-local-source-audit-batch-010",
+  "approved_at": "2026-05-10T10:55:01.585+08:00",
+  "source_audit_support": {
+    "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+    "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+    "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+    "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+    "source_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+    "checked_markdown_lines": [
+      "2659-2693"
+    ],
+    "parent_article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+    "parent_article_slug": "ceiling-heights-and-room-sizes",
+    "answer_key_fields_changed": false
+  },
+  "proposed": {
+    "code_citation": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+    "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808. It covers ceiling heights, room sizes and least dimensions, air-space requirements, and window openings. This local edit adds source context only and does not change answer-key fields."
+  }
+}

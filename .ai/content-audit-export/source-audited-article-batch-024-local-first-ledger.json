@@ -1,0 +1,488 @@
+{
+  "schema_version": "source-audited-article-batch-local-first-ledger-v1",
+  "batch_id": "source-audited-article-batch-024-local-first",
+  "generated_at": "2026-05-11T14:30:00.000+08:00",
+  "mode": "LOCAL_FIRST_ONLY",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "constraints": {
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "worktree_scope": "/Users/philiplewis/slatecamp only",
+    "publishing_boundary": "Supabase is final publishing only; no remote mutation attempted in Batch 024."
+  },
+  "selection": {
+    "selected_count": 5,
+    "preferred_domains": [
+      "LEA professional practice",
+      "UAP SPP",
+      "architectural services",
+      "construction management",
+      "design-build"
+    ],
+    "prior_exclusion": {
+      "prior_batch_range_checked": "001-023",
+      "prior_report_or_ledger_file_count": 75,
+      "prior_uuid_count_seen": 434,
+      "selected_overlap_count": 0,
+      "selected_overlap": []
+    }
+  },
+  "counts": {
+    "articles_selected": 5,
+    "articles_passed": 5,
+    "linked_questions": 50,
+    "source_safe_question_edits": 50,
+    "source_records": 10,
+    "distinct_raw_pdfs": 5,
+    "distinct_refined_markdown_files": 5,
+    "json_files_scoped_parse_checked": 105
+  },
+  "validation_summary": {
+    "compose": "PASS - 5/5 recomposed with 0 blockers",
+    "diff": "PASS - 5/5 changed=true and safe_to_push=true with 0 blockers",
+    "scoped_validate": "PASS - 5/5 valid=true with 0 blockers; each has expected component-usage warning only",
+    "source_gap_and_hash_check": "PASS - all source records resolve to local raw/refined files with matching sha256 hashes",
+    "placeholder_internal_marker_check": "PASS - no scoped marker hits in normalized.md, candidate.md, sources.json, source-audit-evidence.json, or question-edits JSON",
+    "tests": "PASS - bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts (34 pass, 0 fail, 328 expect calls)",
+    "git_diff_check": "PASS - git diff --check on the five Batch 024 article folders plus ledger/report returned clean"
+  },
+  "raw_source_paths": [
+    "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204B.pdf",
+    "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 206.pdf",
+    "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 207.pdf",
+    "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 209.pdf",
+    "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf"
+  ],
+  "refined_markdown_paths": [
+    "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204B.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 206.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 209.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md"
+  ],
+  "articles": [
+    {
+      "article_id": "f74f79a0-1477-481f-9050-fa43d82f18bd",
+      "slug": "spp-doc-206-comprehensive-architectural-services",
+      "title": "SPP Doc 206: Comprehensive Architectural Services",
+      "status": "PASS_LOCAL_FIRST",
+      "improved_article_folder_path": ".ai/content-audit-export/articles/spp-doc-206-comprehensive-architectural-services--f74f79a0-1477-481f-9050-fa43d82f18bd",
+      "improved_article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-206-comprehensive-architectural-services--f74f79a0-1477-481f-9050-fa43d82f18bd",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/spp-doc-206-comprehensive-architectural-services--f74f79a0-1477-481f-9050-fa43d82f18bd/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-206-comprehensive-architectural-services--f74f79a0-1477-481f-9050-fa43d82f18bd/question-edits",
+      "question_edit_file_count": 10,
+      "question_edit_files": [
+        ".ai/content-audit-export/articles/spp-doc-206-comprehensive-architectural-services--f74f79a0-1477-481f-9050-fa43d82f18bd/question-edits/1b7cf899-e38f-443a-858c-c49688e67bf4.json",
+        ".ai/content-audit-export/articles/spp-doc-206-comprehensive-architectural-services--f74f79a0-1477-481f-9050-fa43d82f18bd/question-edits/1d327aad-2f00-470b-a072-73c86592108e.json",
+        ".ai/content-audit-export/articles/spp-doc-206-comprehensive-architectural-services--f74f79a0-1477-481f-9050-fa43d82f18bd/question-edits/22ca1a75-136a-4a8d-ab93-db276e9d771a.json",
+        ".ai/content-audit-export/articles/spp-doc-206-comprehensive-architectural-services--f74f79a0-1477-481f-9050-fa43d82f18bd/question-edits/2d264421-3dc4-4881-a033-81cfb75be92b.json",
+        ".ai/content-audit-export/articles/spp-doc-206-comprehensive-architectural-services--f74f79a0-1477-481f-9050-fa43d82f18bd/question-edits/6f11d12f-f2c8-4542-b40d-ff6ebacefa59.json",
+        ".ai/content-audit-export/articles/spp-doc-206-comprehensive-architectural-services--f74f79a0-1477-481f-9050-fa43d82f18bd/question-edits/9e0284a1-afca-4906-864d-d70315d03911.json",
+        ".ai/content-audit-export/articles/spp-doc-206-comprehensive-architectural-services--f74f79a0-1477-481f-9050-fa43d82f18bd/question-edits/ad9d170a-fc28-410f-aac1-fd3ff9e68f5c.json",
+        ".ai/content-audit-export/articles/spp-doc-206-comprehensive-architectural-services--f74f79a0-1477-481f-9050-fa43d82f18bd/question-edits/b60a8e08-3cee-4c81-836d-d1c9f154a257.json",
+        ".ai/content-audit-export/articles/spp-doc-206-comprehensive-architectural-services--f74f79a0-1477-481f-9050-fa43d82f18bd/question-edits/cdc8b26a-8f05-484e-89d9-720cfeea0b1e.json",
+        ".ai/content-audit-export/articles/spp-doc-206-comprehensive-architectural-services--f74f79a0-1477-481f-9050-fa43d82f18bd/question-edits/ec575392-5394-45da-97e1-fdec87985fa2.json"
+      ],
+      "linked_question_count": 10,
+      "source_count": 2,
+      "checked_sources": [
+        {
+          "source_id": "uap-standards-spp206-cas-pm-local",
+          "label": "UAP Standards of Professional Practice - SPP 206 CAS and PM",
+          "source_type": "professional_practice_pdf",
+          "source_locator": "UAP Standards refined markdown lines 1091-1216",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+          "local_source_checked": true
+        },
+        {
+          "source_id": "spp206-comprehensive-architectural-services-local",
+          "label": "SPP 206 - Comprehensive Architectural Services",
+          "source_type": "professional_practice_pdf",
+          "source_locator": "SPP 206 refined markdown lines 713-823",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 206.pdf",
+          "raw_pdf_sha256": "sha256:d140c57e69f990af217f914a1dac51b6d6aae02a1b42aadd4a3f26b6cebf72b7",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 206.md",
+          "refined_markdown_sha256": "sha256:1ed62c21499c67d14265fb41468a137d00983893797b04a3bd18b6fde4f3b283",
+          "local_source_checked": true
+        }
+      ],
+      "candidate_hash": "sha256:b2d8b74bb8b19ed5355f2b8f48c93a5fb79a1f478bcc14e93be42c0a69fa2041",
+      "normalized_hash": "sha256:b2d8b74bb8b19ed5355f2b8f48c93a5fb79a1f478bcc14e93be42c0a69fa2041",
+      "local_repairs": {
+        "normalized_rewritten": true,
+        "candidate_recomposed": true,
+        "source_records_created": 2,
+        "question_edits_created": 10,
+        "source_safe_rewrite_question_edits": 10,
+        "non_source_claims_removed_or_rewritten": true,
+        "ui_block_tokens_removed": true
+      },
+      "validation": {
+        "compose_report": ".ai/content-audit-export/articles/spp-doc-206-comprehensive-architectural-services--f74f79a0-1477-481f-9050-fa43d82f18bd/compose-report.json",
+        "compose_blockers": [],
+        "diff_report": ".ai/content-audit-export/articles/spp-doc-206-comprehensive-architectural-services--f74f79a0-1477-481f-9050-fa43d82f18bd/diff-report.json",
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "scoped_validate_report": ".ai/content-audit-export/articles/spp-doc-206-comprehensive-architectural-services--f74f79a0-1477-481f-9050-fa43d82f18bd/batch-024-validate-report.json",
+        "validate_valid": true,
+        "validate_blockers": [],
+        "validate_warnings": [
+          "spp-doc-206-comprehensive-architectural-services--f74f79a0-1477-481f-9050-fa43d82f18bd: component-usage.json has not been generated for this article yet."
+        ],
+        "source_audit_evidence": ".ai/content-audit-export/articles/spp-doc-206-comprehensive-architectural-services--f74f79a0-1477-481f-9050-fa43d82f18bd/source-audit-evidence.json",
+        "source_audit_status": "PASS",
+        "raw_pdf_gate_status": "PASS",
+        "safe_for_supabase_upload_after_final_review": true
+      },
+      "local_side_effects": {
+        "supabase_push_attempted": false,
+        "deploy_attempted": false,
+        "commit_attempted": false
+      },
+      "blockers": []
+    },
+    {
+      "article_id": "50450ba8-a843-4399-9bd9-9b6c854ee65a",
+      "slug": "lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission",
+      "title": "Comprehensive Architectural Services the Full Spectrum Commission",
+      "status": "PASS_LOCAL_FIRST",
+      "improved_article_folder_path": ".ai/content-audit-export/articles/lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission--50450ba8-a843-4399-9bd9-9b6c854ee65a",
+      "improved_article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission--50450ba8-a843-4399-9bd9-9b6c854ee65a",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission--50450ba8-a843-4399-9bd9-9b6c854ee65a/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission--50450ba8-a843-4399-9bd9-9b6c854ee65a/question-edits",
+      "question_edit_file_count": 10,
+      "question_edit_files": [
+        ".ai/content-audit-export/articles/lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission--50450ba8-a843-4399-9bd9-9b6c854ee65a/question-edits/0966fc2e-80e2-459f-8d78-6099e8f5ccc9.json",
+        ".ai/content-audit-export/articles/lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission--50450ba8-a843-4399-9bd9-9b6c854ee65a/question-edits/0cd4f367-83fa-4ff5-8f52-d46bc102be40.json",
+        ".ai/content-audit-export/articles/lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission--50450ba8-a843-4399-9bd9-9b6c854ee65a/question-edits/304030e9-5eb4-4cd0-b3c1-c81be955f91d.json",
+        ".ai/content-audit-export/articles/lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission--50450ba8-a843-4399-9bd9-9b6c854ee65a/question-edits/4ce45e1a-c11d-41c4-b30e-da46213a25e8.json",
+        ".ai/content-audit-export/articles/lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission--50450ba8-a843-4399-9bd9-9b6c854ee65a/question-edits/57ac8070-f0a8-43ff-bdc1-c8c5ca52b66d.json",
+        ".ai/content-audit-export/articles/lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission--50450ba8-a843-4399-9bd9-9b6c854ee65a/question-edits/7c00e128-1eaa-4d5d-92a7-49eda97f2f8e.json",
+        ".ai/content-audit-export/articles/lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission--50450ba8-a843-4399-9bd9-9b6c854ee65a/question-edits/8a51628d-86d8-43e4-b42c-d55b7df25981.json",
+        ".ai/content-audit-export/articles/lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission--50450ba8-a843-4399-9bd9-9b6c854ee65a/question-edits/8b646a53-5989-4195-87b5-b876d74843c4.json",
+        ".ai/content-audit-export/articles/lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission--50450ba8-a843-4399-9bd9-9b6c854ee65a/question-edits/bef77a69-327c-459e-b11d-918086a5fe4a.json",
+        ".ai/content-audit-export/articles/lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission--50450ba8-a843-4399-9bd9-9b6c854ee65a/question-edits/c774555c-0d1d-42b8-a58b-1e8854ce4cb7.json"
+      ],
+      "linked_question_count": 10,
+      "source_count": 2,
+      "checked_sources": [
+        {
+          "source_id": "uap-standards-spp206-cas-lifecycle-local",
+          "label": "UAP Standards of Professional Practice - CAS lifecycle and PM boundaries",
+          "source_type": "professional_practice_pdf",
+          "source_locator": "UAP Standards refined markdown lines 1091-1216",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+          "local_source_checked": true
+        },
+        {
+          "source_id": "spp206-full-spectrum-commission-local",
+          "label": "SPP 206 - full-spectrum commission source",
+          "source_type": "professional_practice_pdf",
+          "source_locator": "SPP 206 refined markdown lines 713-823",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 206.pdf",
+          "raw_pdf_sha256": "sha256:d140c57e69f990af217f914a1dac51b6d6aae02a1b42aadd4a3f26b6cebf72b7",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 206.md",
+          "refined_markdown_sha256": "sha256:1ed62c21499c67d14265fb41468a137d00983893797b04a3bd18b6fde4f3b283",
+          "local_source_checked": true
+        }
+      ],
+      "candidate_hash": "sha256:c7d24bfd8bef17bd278c41eb6ac8fa19e8cec5b31749d60352fe867a530e7423",
+      "normalized_hash": "sha256:c7d24bfd8bef17bd278c41eb6ac8fa19e8cec5b31749d60352fe867a530e7423",
+      "local_repairs": {
+        "normalized_rewritten": true,
+        "candidate_recomposed": true,
+        "source_records_created": 2,
+        "question_edits_created": 10,
+        "source_safe_rewrite_question_edits": 10,
+        "non_source_claims_removed_or_rewritten": true,
+        "ui_block_tokens_removed": true
+      },
+      "validation": {
+        "compose_report": ".ai/content-audit-export/articles/lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission--50450ba8-a843-4399-9bd9-9b6c854ee65a/compose-report.json",
+        "compose_blockers": [],
+        "diff_report": ".ai/content-audit-export/articles/lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission--50450ba8-a843-4399-9bd9-9b6c854ee65a/diff-report.json",
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "scoped_validate_report": ".ai/content-audit-export/articles/lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission--50450ba8-a843-4399-9bd9-9b6c854ee65a/batch-024-validate-report.json",
+        "validate_valid": true,
+        "validate_blockers": [],
+        "validate_warnings": [
+          "lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission--50450ba8-a843-4399-9bd9-9b6c854ee65a: component-usage.json has not been generated for this article yet."
+        ],
+        "source_audit_evidence": ".ai/content-audit-export/articles/lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission--50450ba8-a843-4399-9bd9-9b6c854ee65a/source-audit-evidence.json",
+        "source_audit_status": "PASS",
+        "raw_pdf_gate_status": "PASS",
+        "safe_for_supabase_upload_after_final_review": true
+      },
+      "local_side_effects": {
+        "supabase_push_attempted": false,
+        "deploy_attempted": false,
+        "commit_attempted": false
+      },
+      "blockers": []
+    },
+    {
+      "article_id": "31d08115-b5ff-4b0e-b33e-522e25800da4",
+      "slug": "lea-prac-svc-014-construction-management-services-scope-and-professional-authority",
+      "title": "Construction Management Services Scope and Professional Authority",
+      "status": "PASS_LOCAL_FIRST",
+      "improved_article_folder_path": ".ai/content-audit-export/articles/lea-prac-svc-014-construction-management-services-scope-and-professional-authority--31d08115-b5ff-4b0e-b33e-522e25800da4",
+      "improved_article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-014-construction-management-services-scope-and-professional-authority--31d08115-b5ff-4b0e-b33e-522e25800da4",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-svc-014-construction-management-services-scope-and-professional-authority--31d08115-b5ff-4b0e-b33e-522e25800da4/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-014-construction-management-services-scope-and-professional-authority--31d08115-b5ff-4b0e-b33e-522e25800da4/question-edits",
+      "question_edit_file_count": 10,
+      "question_edit_files": [
+        ".ai/content-audit-export/articles/lea-prac-svc-014-construction-management-services-scope-and-professional-authority--31d08115-b5ff-4b0e-b33e-522e25800da4/question-edits/008ab79e-185d-43ad-bbc8-6445beb9f26b.json",
+        ".ai/content-audit-export/articles/lea-prac-svc-014-construction-management-services-scope-and-professional-authority--31d08115-b5ff-4b0e-b33e-522e25800da4/question-edits/1b1098cb-d60d-444e-b6f1-aa2fe2810161.json",
+        ".ai/content-audit-export/articles/lea-prac-svc-014-construction-management-services-scope-and-professional-authority--31d08115-b5ff-4b0e-b33e-522e25800da4/question-edits/1d653a53-5ede-43ab-bd9a-a0d6c963ac2f.json",
+        ".ai/content-audit-export/articles/lea-prac-svc-014-construction-management-services-scope-and-professional-authority--31d08115-b5ff-4b0e-b33e-522e25800da4/question-edits/2a156f09-7030-4e37-a362-9597b459680f.json",
+        ".ai/content-audit-export/articles/lea-prac-svc-014-construction-management-services-scope-and-professional-authority--31d08115-b5ff-4b0e-b33e-522e25800da4/question-edits/615f6330-3d53-43a7-8f9e-e6cb0b012892.json",
+        ".ai/content-audit-export/articles/lea-prac-svc-014-construction-management-services-scope-and-professional-authority--31d08115-b5ff-4b0e-b33e-522e25800da4/question-edits/69712cf4-a584-4b6c-b5ff-87f0e27d385d.json",
+        ".ai/content-audit-export/articles/lea-prac-svc-014-construction-management-services-scope-and-professional-authority--31d08115-b5ff-4b0e-b33e-522e25800da4/question-edits/bd7a7fd3-7d13-4eb8-a449-42ede25cdbd2.json",
+        ".ai/content-audit-export/articles/lea-prac-svc-014-construction-management-services-scope-and-professional-authority--31d08115-b5ff-4b0e-b33e-522e25800da4/question-edits/dbf7e720-9ac6-4383-ad42-e9f436162024.json",
+        ".ai/content-audit-export/articles/lea-prac-svc-014-construction-management-services-scope-and-professional-authority--31d08115-b5ff-4b0e-b33e-522e25800da4/question-edits/f6c7e61b-4498-45fa-9d43-adc2ec9df530.json",
+        ".ai/content-audit-export/articles/lea-prac-svc-014-construction-management-services-scope-and-professional-authority--31d08115-b5ff-4b0e-b33e-522e25800da4/question-edits/fa3a69f6-cef9-49eb-8348-822ee08aad75.json"
+      ],
+      "linked_question_count": 10,
+      "source_count": 2,
+      "checked_sources": [
+        {
+          "source_id": "uap-standards-spp204b-construction-management-local",
+          "label": "UAP Standards of Professional Practice - SPP 204-B Construction Management",
+          "source_type": "professional_practice_pdf",
+          "source_locator": "UAP Standards refined markdown lines 983-1030",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+          "local_source_checked": true
+        },
+        {
+          "source_id": "spp204b-construction-management-services-local",
+          "label": "SPP 204-B - Construction Management Services",
+          "source_type": "professional_practice_pdf",
+          "source_locator": "SPP 204B refined markdown lines 83-377",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204B.pdf",
+          "raw_pdf_sha256": "sha256:b6bfffcf6e3ca7a4317121b28d5fab9237c2a4642b450573232516ef9dfb697e",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204B.md",
+          "refined_markdown_sha256": "sha256:b49b5fcffe1e1ad48cb618b70d6a369400a0c7460dd3fa7ea471ee5900dc53e8",
+          "local_source_checked": true
+        }
+      ],
+      "candidate_hash": "sha256:8116505382fe45201191ac2fec50702160354bbb437d01fec3f86ab2149fa66d",
+      "normalized_hash": "sha256:8116505382fe45201191ac2fec50702160354bbb437d01fec3f86ab2149fa66d",
+      "local_repairs": {
+        "normalized_rewritten": true,
+        "candidate_recomposed": true,
+        "source_records_created": 2,
+        "question_edits_created": 10,
+        "source_safe_rewrite_question_edits": 10,
+        "non_source_claims_removed_or_rewritten": true,
+        "ui_block_tokens_removed": true
+      },
+      "validation": {
+        "compose_report": ".ai/content-audit-export/articles/lea-prac-svc-014-construction-management-services-scope-and-professional-authority--31d08115-b5ff-4b0e-b33e-522e25800da4/compose-report.json",
+        "compose_blockers": [],
+        "diff_report": ".ai/content-audit-export/articles/lea-prac-svc-014-construction-management-services-scope-and-professional-authority--31d08115-b5ff-4b0e-b33e-522e25800da4/diff-report.json",
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "scoped_validate_report": ".ai/content-audit-export/articles/lea-prac-svc-014-construction-management-services-scope-and-professional-authority--31d08115-b5ff-4b0e-b33e-522e25800da4/batch-024-validate-report.json",
+        "validate_valid": true,
+        "validate_blockers": [],
+        "validate_warnings": [
+          "lea-prac-svc-014-construction-management-services-scope-and-professional-authority--31d08115-b5ff-4b0e-b33e-522e25800da4: component-usage.json has not been generated for this article yet."
+        ],
+        "source_audit_evidence": ".ai/content-audit-export/articles/lea-prac-svc-014-construction-management-services-scope-and-professional-authority--31d08115-b5ff-4b0e-b33e-522e25800da4/source-audit-evidence.json",
+        "source_audit_status": "PASS",
+        "raw_pdf_gate_status": "PASS",
+        "safe_for_supabase_upload_after_final_review": true
+      },
+      "local_side_effects": {
+        "supabase_push_attempted": false,
+        "deploy_attempted": false,
+        "commit_attempted": false
+      },
+      "blockers": []
+    },
+    {
+      "article_id": "9796e088-8c83-4a6c-9599-51afd69d0e81",
+      "slug": "lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role",
+      "title": "Design Build Services Overview Rationale and Architect's Role",
+      "status": "PASS_LOCAL_FIRST",
+      "improved_article_folder_path": ".ai/content-audit-export/articles/lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role--9796e088-8c83-4a6c-9599-51afd69d0e81",
+      "improved_article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role--9796e088-8c83-4a6c-9599-51afd69d0e81",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role--9796e088-8c83-4a6c-9599-51afd69d0e81/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role--9796e088-8c83-4a6c-9599-51afd69d0e81/question-edits",
+      "question_edit_file_count": 10,
+      "question_edit_files": [
+        ".ai/content-audit-export/articles/lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role--9796e088-8c83-4a6c-9599-51afd69d0e81/question-edits/1091b598-2b60-465d-9903-afddb3a6615e.json",
+        ".ai/content-audit-export/articles/lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role--9796e088-8c83-4a6c-9599-51afd69d0e81/question-edits/1b10e05a-209c-4e21-a0d9-eab9d81d9d0f.json",
+        ".ai/content-audit-export/articles/lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role--9796e088-8c83-4a6c-9599-51afd69d0e81/question-edits/1d41730f-e90c-48cd-9a8c-39e0728791a4.json",
+        ".ai/content-audit-export/articles/lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role--9796e088-8c83-4a6c-9599-51afd69d0e81/question-edits/24bb3d48-9f21-499e-9365-1148d1b275e0.json",
+        ".ai/content-audit-export/articles/lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role--9796e088-8c83-4a6c-9599-51afd69d0e81/question-edits/46c9f96e-a5e9-4261-b032-683418ae68c5.json",
+        ".ai/content-audit-export/articles/lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role--9796e088-8c83-4a6c-9599-51afd69d0e81/question-edits/7afe4c5a-9ef2-48e5-be76-180795d35cd0.json",
+        ".ai/content-audit-export/articles/lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role--9796e088-8c83-4a6c-9599-51afd69d0e81/question-edits/8921948b-059c-40a5-97db-7ed85f187d27.json",
+        ".ai/content-audit-export/articles/lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role--9796e088-8c83-4a6c-9599-51afd69d0e81/question-edits/a4890e45-fa0a-41ea-bf70-dadea274cd7c.json",
+        ".ai/content-audit-export/articles/lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role--9796e088-8c83-4a6c-9599-51afd69d0e81/question-edits/b0cf2014-96e7-4574-bc52-a7798e8a2415.json",
+        ".ai/content-audit-export/articles/lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role--9796e088-8c83-4a6c-9599-51afd69d0e81/question-edits/d81c1164-dbc3-4bbf-8401-f00d7ef64e3e.json"
+      ],
+      "linked_question_count": 10,
+      "source_count": 2,
+      "checked_sources": [
+        {
+          "source_id": "uap-standards-spp207-design-build-local",
+          "label": "UAP Standards of Professional Practice - SPP 207 Design-Build",
+          "source_type": "professional_practice_pdf",
+          "source_locator": "UAP Standards refined markdown lines 1222-1284",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+          "local_source_checked": true
+        },
+        {
+          "source_id": "spp207-design-build-services-local",
+          "label": "SPP 207 - Design-Build Services",
+          "source_type": "professional_practice_pdf",
+          "source_locator": "SPP 207 refined markdown lines 135-440",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 207.pdf",
+          "raw_pdf_sha256": "sha256:7050b0c7bd152694587f39ead8b682ed71b882ba50fce5c4a614206f32b5b610",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md",
+          "refined_markdown_sha256": "sha256:16375f49124440ba1bc938379786e14016249c3d42d0b7498a543ddb4f702e0a",
+          "local_source_checked": true
+        }
+      ],
+      "candidate_hash": "sha256:c53223c8cd0a72cb4c86d90c2ada4d938d59153446f129e7e84878ba16fe41e9",
+      "normalized_hash": "sha256:c53223c8cd0a72cb4c86d90c2ada4d938d59153446f129e7e84878ba16fe41e9",
+      "local_repairs": {
+        "normalized_rewritten": true,
+        "candidate_recomposed": true,
+        "source_records_created": 2,
+        "question_edits_created": 10,
+        "source_safe_rewrite_question_edits": 10,
+        "non_source_claims_removed_or_rewritten": true,
+        "ui_block_tokens_removed": true
+      },
+      "validation": {
+        "compose_report": ".ai/content-audit-export/articles/lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role--9796e088-8c83-4a6c-9599-51afd69d0e81/compose-report.json",
+        "compose_blockers": [],
+        "diff_report": ".ai/content-audit-export/articles/lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role--9796e088-8c83-4a6c-9599-51afd69d0e81/diff-report.json",
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "scoped_validate_report": ".ai/content-audit-export/articles/lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role--9796e088-8c83-4a6c-9599-51afd69d0e81/batch-024-validate-report.json",
+        "validate_valid": true,
+        "validate_blockers": [],
+        "validate_warnings": [
+          "lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role--9796e088-8c83-4a6c-9599-51afd69d0e81: component-usage.json has not been generated for this article yet."
+        ],
+        "source_audit_evidence": ".ai/content-audit-export/articles/lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role--9796e088-8c83-4a6c-9599-51afd69d0e81/source-audit-evidence.json",
+        "source_audit_status": "PASS",
+        "raw_pdf_gate_status": "PASS",
+        "safe_for_supabase_upload_after_final_review": true
+      },
+      "local_side_effects": {
+        "supabase_push_attempted": false,
+        "deploy_attempted": false,
+        "commit_attempted": false
+      },
+      "blockers": []
+    },
+    {
+      "article_id": "2ec8e3f1-4aa7-443f-8ca1-a77638b2a713",
+      "slug": "lea-prac-svc-011-core-concept",
+      "title": "Professional Architectural Consulting Services",
+      "status": "PASS_LOCAL_FIRST",
+      "improved_article_folder_path": ".ai/content-audit-export/articles/lea-prac-svc-011-core-concept--2ec8e3f1-4aa7-443f-8ca1-a77638b2a713",
+      "improved_article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-011-core-concept--2ec8e3f1-4aa7-443f-8ca1-a77638b2a713",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-svc-011-core-concept--2ec8e3f1-4aa7-443f-8ca1-a77638b2a713/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-011-core-concept--2ec8e3f1-4aa7-443f-8ca1-a77638b2a713/question-edits",
+      "question_edit_file_count": 10,
+      "question_edit_files": [
+        ".ai/content-audit-export/articles/lea-prac-svc-011-core-concept--2ec8e3f1-4aa7-443f-8ca1-a77638b2a713/question-edits/0dafc31c-192d-48be-87b2-daa2a11ce3e9.json",
+        ".ai/content-audit-export/articles/lea-prac-svc-011-core-concept--2ec8e3f1-4aa7-443f-8ca1-a77638b2a713/question-edits/1df3290c-a3f3-4e14-8a6e-37c37601ef6e.json",
+        ".ai/content-audit-export/articles/lea-prac-svc-011-core-concept--2ec8e3f1-4aa7-443f-8ca1-a77638b2a713/question-edits/226c0498-e69f-4a48-a0e3-0ab75f0bf3f6.json",
+        ".ai/content-audit-export/articles/lea-prac-svc-011-core-concept--2ec8e3f1-4aa7-443f-8ca1-a77638b2a713/question-edits/3005606d-8682-4445-85eb-ec2648a50401.json",
+        ".ai/content-audit-export/articles/lea-prac-svc-011-core-concept--2ec8e3f1-4aa7-443f-8ca1-a77638b2a713/question-edits/36ce1dc0-e047-4a92-bf53-4c9952322e94.json",
+        ".ai/content-audit-export/articles/lea-prac-svc-011-core-concept--2ec8e3f1-4aa7-443f-8ca1-a77638b2a713/question-edits/74785634-59af-4a3a-9fe0-accbc9c28235.json",
+        ".ai/content-audit-export/articles/lea-prac-svc-011-core-concept--2ec8e3f1-4aa7-443f-8ca1-a77638b2a713/question-edits/78444811-6e06-41b6-900e-62ddbd1e66cd.json",
+        ".ai/content-audit-export/articles/lea-prac-svc-011-core-concept--2ec8e3f1-4aa7-443f-8ca1-a77638b2a713/question-edits/7e3de747-0f6d-49f1-badc-3628f30242a7.json",
+        ".ai/content-audit-export/articles/lea-prac-svc-011-core-concept--2ec8e3f1-4aa7-443f-8ca1-a77638b2a713/question-edits/b434b587-956b-4a06-9f82-20bcdef27695.json",
+        ".ai/content-audit-export/articles/lea-prac-svc-011-core-concept--2ec8e3f1-4aa7-443f-8ca1-a77638b2a713/question-edits/ff764f9e-d0b3-480d-a35e-ec283775bf3e.json"
+      ],
+      "linked_question_count": 10,
+      "source_count": 2,
+      "checked_sources": [
+        {
+          "source_id": "uap-standards-spp209-pacs-local",
+          "label": "UAP Standards of Professional Practice - SPP 209 PACS",
+          "source_type": "professional_practice_pdf",
+          "source_locator": "UAP Standards refined markdown lines 1418-1460 and 1544-1695",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+          "local_source_checked": true
+        },
+        {
+          "source_id": "spp209-professional-architectural-consulting-services-local",
+          "label": "SPP 209 - Professional Architectural Consulting Services",
+          "source_type": "professional_practice_pdf",
+          "source_locator": "SPP 209 refined markdown lines 637-1099",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 209.pdf",
+          "raw_pdf_sha256": "sha256:c0e805e8bb71adb0a3d31fe1655447d718abba54f546d20cbac3c092268b03c5",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 209.md",
+          "refined_markdown_sha256": "sha256:d596d4cda9d7fc4551ac81786bf0f7063917ecfac79b89bc1810373e3655a4f2",
+          "local_source_checked": true
+        }
+      ],
+      "candidate_hash": "sha256:65752d372f7fd1bba659043e4c3cc2845345477f44f8f3f99c6fe5be388479be",
+      "normalized_hash": "sha256:65752d372f7fd1bba659043e4c3cc2845345477f44f8f3f99c6fe5be388479be",
+      "local_repairs": {
+        "normalized_rewritten": true,
+        "candidate_recomposed": true,
+        "source_records_created": 2,
+        "question_edits_created": 10,
+        "source_safe_rewrite_question_edits": 10,
+        "non_source_claims_removed_or_rewritten": true,
+        "ui_block_tokens_removed": true
+      },
+      "validation": {
+        "compose_report": ".ai/content-audit-export/articles/lea-prac-svc-011-core-concept--2ec8e3f1-4aa7-443f-8ca1-a77638b2a713/compose-report.json",
+        "compose_blockers": [],
+        "diff_report": ".ai/content-audit-export/articles/lea-prac-svc-011-core-concept--2ec8e3f1-4aa7-443f-8ca1-a77638b2a713/diff-report.json",
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "scoped_validate_report": ".ai/content-audit-export/articles/lea-prac-svc-011-core-concept--2ec8e3f1-4aa7-443f-8ca1-a77638b2a713/batch-024-validate-report.json",
+        "validate_valid": true,
+        "validate_blockers": [],
+        "validate_warnings": [
+          "lea-prac-svc-011-core-concept--2ec8e3f1-4aa7-443f-8ca1-a77638b2a713: component-usage.json has not been generated for this article yet."
+        ],
+        "source_audit_evidence": ".ai/content-audit-export/articles/lea-prac-svc-011-core-concept--2ec8e3f1-4aa7-443f-8ca1-a77638b2a713/source-audit-evidence.json",
+        "source_audit_status": "PASS",
+        "raw_pdf_gate_status": "PASS",
+        "safe_for_supabase_upload_after_final_review": true
+      },
+      "local_side_effects": {
+        "supabase_push_attempted": false,
+        "deploy_attempted": false,
+        "commit_attempted": false
+      },
+      "blockers": []
+    }
+  ],
+  "next_phase_readiness": {
+    "ready": true,
+    "readiness": "Local-first artifacts are source-audited and ready for final publishing review only.",
+    "blockers": [],
+    "required_next_step": "Use Supabase publishing only in a separate governed final publishing phase."
+  }
+}

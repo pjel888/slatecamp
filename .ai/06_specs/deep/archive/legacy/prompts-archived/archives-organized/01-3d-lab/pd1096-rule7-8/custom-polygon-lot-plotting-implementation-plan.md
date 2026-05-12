@@ -1,8 +1,8 @@
 # Custom Polygon Lot Plotting — Technical Implementation Plan
 
-**Feature:** Advanced Surveyor-Mode Lot Generation with Boundary Tagging  
-**Module:** Development Controls Calculator (Code Compliance Viz)  
-**Status:** Pre-Implementation Planning  
+**Feature:** Advanced Surveyor-Mode Lot Generation with Boundary Tagging
+**Module:** Development Controls Calculator (Code Compliance Viz)
+**Status:** Pre-Implementation Planning
 **Date:** April 2026
 
 ---

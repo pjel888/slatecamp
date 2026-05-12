@@ -1,0 +1,96 @@
+{
+  "question_id": "1b4ebef4-e13b-4222-a029-08e695dd3352",
+  "baseline_hash": "sha256:301f8ef781b5aa7c15e360800cbf31b9a92ac1e7d873fe8e0c01a30b062c426c",
+  "action": "replace",
+  "reason": "source-audited-article-batch-072-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes stale numeric, legal, or unsupported article claims where present.",
+  "approved_by": "codex-local-first-batch-072",
+  "approved_at": "2026-05-12T01:24:18+08:00",
+  "source_audit_support": {
+    "parent_article_id": "f30fd9ee-3ab3-46d0-a5bb-dba7e88ac4d1",
+    "parent_article_slug": "lea-dsgn-009-03-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "PD 1096 refined markdown lines 548-570, 2085-2089, and 2352-2412; raw PDF pages 19, 24, 33, 88, 93, 108, 192, 204, and 352 checked by local PyMuPDF extraction; MEEB refined markdown lines 1045-1087, 1160-1195, 1268-1275, and 2211-2217; raw PDF pages 7, 31-33, 35, 38, 45, 348, 970, and 1106 checked by local PyMuPDF extraction",
+    "checked_markdown_lines": [
+      "PD 1096 lines 548-570",
+      "PD 1096 lines 2085-2089",
+      "PD 1096 lines 2352-2412",
+      "MEEB lines 1045-1087",
+      "MEEB lines 1160-1195",
+      "MEEB lines 1268-1275",
+      "MEEB lines 2211-2217"
+    ],
+    "checked_raw_pdf_pages": [
+      "PD 1096 raw PDF pages 19, 24, 33, 88, 93, 108, 192, 204, and 352",
+      "MEEB raw PDF pages 7, 31-33, 35, 38, 45, 348, 970, and 1106"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "pd1096-rirr-2004-b072",
+        "label": "PD 1096 2004 Revised IRR - National Building Code",
+        "source_type": "primary_law_irr_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 refined markdown lines 548-570, 2085-2089, and 2352-2412; raw PDF pages 19, 24, 33, 88, 93, 108, 192, 204, and 352 checked by local PyMuPDF extraction",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7"
+      },
+      {
+        "source_id": "meeb-design-context-b072",
+        "label": "Mechanical and Electrical Equipment for Buildings - Grondzik et al. 2010",
+        "source_type": "professional_reference_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Mechanical and Electrical Equipment for Buildings - W. Grondzik, et al., (Wiley, 2010) BBS.pdf",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Mechanical and Electrical Equipment for Buildings - W. Grondzik, et al., (Wiley, 2010) BBS.md",
+        "source_locator": "MEEB refined markdown lines 1045-1087, 1160-1195, 1268-1275, and 2211-2217; raw PDF pages 7, 31-33, 35, 38, 45, 348, 970, and 1106 checked by local PyMuPDF extraction",
+        "raw_pdf_sha256": "sha256:3dd95410e968c57f6bd7646a9582b9bd1f7a97335c56e1486536b78d0864aa5e",
+        "refined_markdown_sha256": "sha256:d0650a86c65bb17008428fc309d59e388a372d6450da9c4b1464454f1ef384f9"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, and citation rewritten to the Batch 072 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "A room has no artificial ventilation. What is the source-safe PD 1096 window-opening check?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Total free opening area at least 10 percent of floor area, with a minimum of 1.00 sqm, opening to an allowed exterior/open space condition."
+      },
+      {
+        "id": "b",
+        "text": "Exactly 4 ACH for every occupancy."
+      },
+      {
+        "id": "c",
+        "text": "No window is needed if the ceiling is painted white."
+      },
+      {
+        "id": "d",
+        "text": "Only a decorative transom is required."
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Correct. This option follows the checked local raw-source evidence.",
+      "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+      "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+      "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+      "correct": "PD 1096 sets the 10 percent floor-area rule and minimum 1.00 sqm for rooms without artificial ventilation.",
+      "takeaway": "Use the checked local source condition before applying the rule."
+    },
+    "explanation": "PD 1096 sets the 10 percent floor-area rule and minimum 1.00 sqm for rooms without artificial ventilation.",
+    "code_citation": "PD 1096 refined markdown lines 548-570, 2085-2089, and 2352-2412; raw PDF pages 19, 24, 33, 88, 93, 108, 192, 204, and 352 checked by local PyMuPDF extraction; MEEB refined markdown lines 1045-1087, 1160-1195, 1268-1275, and 2211-2217; raw PDF pages 7, 31-33, 35, 38, 45, 348, 970, and 1106 checked by local PyMuPDF extraction",
+    "bloom_level": "apply",
+    "application_context": "code_interpretation",
+    "practice_context": [
+      "source-audited-local-first-batch-072"
+    ],
+    "difficulty": 0.55,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false
+  }
+}

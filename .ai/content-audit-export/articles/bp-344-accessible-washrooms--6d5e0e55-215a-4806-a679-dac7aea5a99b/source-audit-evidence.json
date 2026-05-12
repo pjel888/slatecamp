@@ -1,0 +1,216 @@
+{
+  "schema_version": "source-audit-evidence-v1-local-first",
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-032-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T09:19:39+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "6d5e0e55-215a-4806-a679-dac7aea5a99b",
+    "slug": "bp-344-accessible-washrooms",
+    "title": "BP 344 Accessible Washrooms",
+    "article_folder": ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b",
+    "candidate_path": ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b/candidate.md",
+    "candidate_sha256": "sha256:4bf52409caa38980ee0e66bf053d708766cc00cc9c3ff5eca92eaf0420feeec2",
+    "normalized_sha256": "sha256:4bf52409caa38980ee0e66bf053d708766cc00cc9c3ff5eca92eaf0420feeec2",
+    "linked_questions_sha256": "sha256:f77fdad8cae5dbde313b063d7f933fb4cdf951145d11fec34c037ab66dba6436",
+    "sources_sha256": "sha256:13e44443c6ed77e7f132f7f438bb2f6c2b206c8da01ca1f2e8a1d08ac71b87c5"
+  },
+  "classification": {
+    "content_domain": "LEA Accessibility and Building Code",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high_value_accessibility_code",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 11,
+    "question_edits_created": [
+      "58295282-30d6-4f57-b2a8-ed39144921c2",
+      "3badda29-6310-42a0-a47c-98fdea52f5e3",
+      "2331bf6f-4e0b-4728-ab79-a7c3a34ef068",
+      "7652f8cc-6362-457a-911f-44383edd1329",
+      "471af8a5-4970-46c2-946a-6445a166ba2f",
+      "9c200c7f-b0cf-4625-a351-39229d62e3ba",
+      "457a3745-222c-478e-b0d1-a58a6f78474e",
+      "b64e22fe-5fa3-4755-b7d2-bf2b16281a51",
+      "f20e6d4b-8ea1-4736-b80b-caaa0de099bb",
+      "e4a9c949-d613-4946-b0c2-2832e60eacb5",
+      "9be94bd0-ae1f-4694-95bc-901c6e60656e"
+    ]
+  },
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b/question-edits/58295282-30d6-4f57-b2a8-ed39144921c2.json",
+      ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b/question-edits/3badda29-6310-42a0-a47c-98fdea52f5e3.json",
+      ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b/question-edits/2331bf6f-4e0b-4728-ab79-a7c3a34ef068.json",
+      ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b/question-edits/7652f8cc-6362-457a-911f-44383edd1329.json",
+      ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b/question-edits/471af8a5-4970-46c2-946a-6445a166ba2f.json",
+      ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b/question-edits/9c200c7f-b0cf-4625-a351-39229d62e3ba.json",
+      ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b/question-edits/457a3745-222c-478e-b0d1-a58a6f78474e.json",
+      ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b/question-edits/b64e22fe-5fa3-4755-b7d2-bf2b16281a51.json",
+      ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b/question-edits/f20e6d4b-8ea1-4736-b80b-caaa0de099bb.json",
+      ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b/question-edits/e4a9c949-d613-4946-b0c2-2832e60eacb5.json",
+      ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b/question-edits/9be94bd0-ae1f-4694-95bc-901c6e60656e.json"
+    ]
+  },
+  "raw_sources": [
+    {
+      "source_id": "bp-344-2024-revised-irr-ncda-local",
+      "label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "source_locator": "BP 344 2024 Revised IRR refined markdown lines 317-356, 362-511, 891-951, 990-1037, 1193-1211, 1446-1458, 1529-1545",
+      "checked_markdown_lines": [
+        "BP 344 2024 Revised IRR refined markdown lines 317-356, 362-511, 891-951, 990-1037, 1193-1211, 1446-1458, 1529-1545"
+      ]
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "bp-344-2024-revised-irr-ncda-local",
+      "label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "source_locator": "BP 344 2024 Revised IRR refined markdown lines 317-356, 362-511, 891-951, 990-1037, 1193-1211, 1446-1458, 1529-1545",
+      "checked_markdown_lines": [
+        "BP 344 2024 Revised IRR refined markdown lines 317-356, 362-511, 891-951, 990-1037, 1193-1211, 1446-1458, 1529-1545"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "b032-wash-01",
+      "claim_text": "BP 344 requires accessible female and male toilet cubicles for every 20 or fewer gendered toilet cubicles on each accessible floor or area.",
+      "claim_type": "accessibility_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "locator": "BP 344 refined markdown lines 891-899",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "There shall be at least one accessible female toilet cubicle and one accessible male toilet cubicle for every 20 or fewer gendered toilet cubicles installed."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b032-wash-02",
+      "claim_text": "Accessible toilet cubicles must have a minimum area of 1800 mm x 1800 mm.",
+      "claim_type": "accessibility_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "locator": "BP 344 refined markdown lines 897-899",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "Accessible toilet cubicles shall have a minimum area of 1800 mm x 1800 mm."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b032-wash-03",
+      "claim_text": "Water closets are installed 450 mm from the finished side wall face to the centerline, and the toilet seat height is 450 mm.",
+      "claim_type": "accessibility_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "locator": "BP 344 refined markdown lines 903 and 923",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "Water closets shall be installed 450 mm from the finished side wall to centerline; the toilet seat height shall be 450 mm."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b032-wash-04",
+      "claim_text": "Emergency call buttons must be 400 mm to 600 mm from finished floor and produce an audible or visible alarm signal.",
+      "claim_type": "accessibility_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "locator": "BP 344 refined markdown line 949",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "An emergency call button shall be located at a height between 400 mm to 600 mm and emit an audible or visible alarm signal."
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "removed_or_rewritten_material": [
+    "Learner-facing article text was rewritten to local source-supported accessibility/code claims only.",
+    "Legacy UI marker blocks were removed from normalized.md so candidate.md composes without unresolved markers.",
+    "Linked questions were rewritten to source-safe wording, answer keys, rationales, and citations."
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "gate_results": {
+    "compose": "PASS: bun run content-audit:compose -- --article-id <Batch 032 id> --overwrite --strict; changed candidates; blockers=0",
+    "diff": "PASS: bun run content-audit:diff -- --article-id <Batch 032 id> --summary --strict; changed=true; safe_to_push=true; blockers=0",
+    "validate": "PASS: bun run content-audit:validate -- --article-id <Batch 032 id> --summary; valid=true; blockers=0; expected component-usage.json warning only",
+    "push_dry_run": "not_attempted_local_first; Supabase remote fetch/publish is final publishing only",
+    "supabase_mutation": "not_attempted_by_request"
+  },
+  "source_safe_repair": {
+    "normalized_md_rewritten": true,
+    "candidate_md_composed": true,
+    "sources_json_refreshed_to_checked_raw_sources": true,
+    "source_audit_evidence_json_created": true,
+    "question_edits_created": 11,
+    "answer_key_fields_changed": true,
+    "ui_markers_removed_from_normalized": true,
+    "external_business_claims_limited_to_source_safe_form": true
+  },
+  "local_validation": {
+    "compose": {
+      "passed": true,
+      "blockers": [],
+      "candidate_hash": "sha256:4bf52409caa38980ee0e66bf053d708766cc00cc9c3ff5eca92eaf0420feeec2",
+      "safe_to_diff": true
+    },
+    "diff": {
+      "passed": true,
+      "blockers": [],
+      "safe_to_push": true,
+      "changed": true
+    },
+    "validate": {
+      "passed": true,
+      "blockers": [],
+      "warnings": [
+        "expected component-usage.json warning only"
+      ]
+    },
+    "scoped_checks": {
+      "passed": true,
+      "blockers": [],
+      "placeholder_matches": []
+    }
+  },
+  "sme_review": {
+    "required": false,
+    "status": "PASS"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

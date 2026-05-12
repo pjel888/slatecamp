@@ -1,0 +1,167 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-039-local-first",
+  "audited_at": "2026-05-11T13:45:00+08:00",
+  "audit_date": "2026-05-11",
+  "target": {
+    "article_id": "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+    "slug": "stages-and-platforms",
+    "candidate_sha256": "sha256:a847c4c2f0f08362ff4de249ce1c8996bf1451f94d24a9f9cf4a4fa9045cdf0b",
+    "candidate_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/stages-and-platforms--1a46c0de-3c18-45bc-874e-6dce4f13f5fe/candidate.md"
+  },
+  "paths": {
+    "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/stages-and-platforms--1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+    "normalized_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/stages-and-platforms--1a46c0de-3c18-45bc-874e-6dce4f13f5fe/normalized.md",
+    "candidate_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/stages-and-platforms--1a46c0de-3c18-45bc-874e-6dce4f13f5fe/candidate.md",
+    "sources_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/stages-and-platforms--1a46c0de-3c18-45bc-874e-6dce4f13f5fe/sources.json",
+    "question_edits": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/stages-and-platforms--1a46c0de-3c18-45bc-874e-6dce4f13f5fe/question-edits"
+  },
+  "classification": {
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high",
+    "requires_raw_pdf_audit": true
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+      "title": "PD 1096 2004 Revised IRR - DPWH Official",
+      "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "checked_markdown_lines": [
+        "PD 1096 RIRR refined markdown lines 3946-3997"
+      ],
+      "source_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+      "derivative_layer_role": "locator aid only"
+    }
+  ],
+  "raw_sources": [
+    {
+      "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+      "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "stage-ventilator-area",
+      "claim_text": "Section 1213 requires stage ventilators near the center above the highest working stage with total area at least 5 percent of stage floor area.",
+      "claim_type": "article_or_question_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "pd-1096-rirr-2004-dpwh-official-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "quoted_pdf_excerpt": "Section 1213 requires stage ventilators near the center above the highest working stage with total area at least 5 percent of stage floor area.",
+        "locator": "PD 1096 RIRR refined markdown lines 3946-3951"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "stage-structure-loads",
+      "claim_text": "Section 1213 requires incombustible gridirons, fly galleries, and pinrails and assigns 367 kg/sq.m live load to gridirons.",
+      "claim_type": "article_or_question_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "pd-1096-rirr-2004-dpwh-official-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "quoted_pdf_excerpt": "Section 1213 requires incombustible gridirons, fly galleries, and pinrails and assigns 367 kg/sq.m live load to gridirons.",
+        "locator": "PD 1096 RIRR refined markdown lines 3957-3959"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "proscenium-wall-protection",
+      "claim_text": "Section 1213 requires a two-hour incombustible proscenium wall, protected openings, and a self-closing fire-resistive curtain.",
+      "claim_type": "article_or_question_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "pd-1096-rirr-2004-dpwh-official-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "quoted_pdf_excerpt": "Section 1213 requires a two-hour incombustible proscenium wall, protected openings, and a self-closing fire-resistive curtain.",
+        "locator": "PD 1096 RIRR refined markdown lines 3964-3967"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "platform-ventilators",
+      "claim_text": "Section 1213 requires enclosed platform ventilators equal to 5 percent of platform area unless the platform floor area is 45.00 sq.m or less.",
+      "claim_type": "article_or_question_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "pd-1096-rirr-2004-dpwh-official-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "quoted_pdf_excerpt": "Section 1213 requires enclosed platform ventilators equal to 5 percent of platform area unless the platform floor area is 45.00 sq.m or less.",
+        "locator": "PD 1096 RIRR refined markdown lines 3970-3972"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "projection-room-basics",
+      "claim_text": "Section 1214 sets one-hour projection room construction, minimum ceiling height, floor area, exits, ports, shutters, ventilation, and film-storage rules.",
+      "claim_type": "article_or_question_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "pd-1096-rirr-2004-dpwh-official-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "quoted_pdf_excerpt": "Section 1214 sets one-hour projection room construction, minimum ceiling height, floor area, exits, ports, shutters, ventilation, and film-storage rules.",
+        "locator": "PD 1096 RIRR refined markdown lines 3976-3997"
+      },
+      "blockers": []
+    }
+  ],
+  "removed_or_rewritten_material": [
+    "Removed assembly-occupancy classification material not verified in the selected Section 1213-1214 source slice."
+  ],
+  "unverified_or_rejected_claims": [],
+  "source_safe_repair": {
+    "article_rewritten": true,
+    "question_edits_created": true,
+    "raw_pdf_first": true,
+    "derivative_layer_used_only_for_locator": true
+  },
+  "local_validation": {
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_edits": "PASS",
+    "scoped_checks": "PASS",
+    "targeted_tests": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "gate_results": {
+    "ui_markers_removed_or_resolved": true,
+    "internal_notes_removed": true,
+    "non_local_claims_removed": true,
+    "sources_json_updated": true,
+    "question_edits_created": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  },
+  "sme_review": {
+    "required": false,
+    "status": "PASS"
+  }
+}

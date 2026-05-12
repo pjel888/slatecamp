@@ -1,0 +1,55 @@
+{
+  "question_id": "ae859939-6844-4739-bed7-06f724ebace0",
+  "baseline_hash": "sha256:be495a761ac5badca2498100997802b5958d92e90f6501037aaf698584943201",
+  "action": "replace",
+  "reason": "source-audited-article-batch-080-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-010-03-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-080",
+  "approved_at": "2026-05-12T07:05:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "b68471a2-34f6-46e3-8f79-7a14ed16eebb",
+    "parent_article_slug": "lea-matl-010-03-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Fajardo refined markdown lines 5500-5521, 5985-6101, and 6262-6285; raw PDF pages 45, 49-50, and 52 checked by local PyMuPDF extraction",
+    "checked_markdown_lines": [
+      "Fajardo refined markdown lines 5500-5521, 5985-6101, and 6262-6285; raw PDF pages 45, 49-50, and 52 checked by local PyMuPDF extraction"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "fajardo-cost-estimates-b080",
+        "label": "Architectural Cost Estimates By Max Fajardo",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+        "sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+        "raw_markdown_sha256": "sha256:223efdc2dd963208910027eba08fe87b4919de1a04b76cac095bbd76a7a9a962",
+        "locator": "Fajardo refined markdown lines 5500-5521, 5985-6101, and 6262-6285; raw PDF pages 45, 49-50, and 52 checked by local PyMuPDF extraction"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 080 local raw-source-audited reinforcing_bar_takeoff scope."
+  },
+  "proposed": {
+    "text": "What conversion does Fajardo give for No. 16 GI tie wire?",
+    "options": [
+      {
+        "id": "a",
+        "text": "About 53 meters per kilogram"
+      },
+      {
+        "id": "b",
+        "text": "12.5 pieces per square meter"
+      },
+      {
+        "id": "c",
+        "text": "144 cubic inches per board foot"
+      },
+      {
+        "id": "d",
+        "text": "0.10 m per 4 inches only"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Fajardo gives approximately 53 meters per kilogram for No. 16 GI tie wire.",
+    "explanation": "Fajardo gives approximately 53 meters per kilogram for No. 16 GI tie wire.",
+    "code_citation": "Architectural Cost Estimates By Max Fajardo"
+  }
+}

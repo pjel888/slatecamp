@@ -1,40 +1,38 @@
 {
   "article_id": "f3a7ecf3-4df6-4497-958f-3c724875163c",
   "slug": "lea-dsgn-008-02-core-concept",
-  "generated_at": "2026-05-10T05:25:11.660Z",
+  "generated_at": "2026-05-10T08:12:29.915Z",
   "old_hash": "sha256:2891fc5b3e3cbe25bce8f63542480c32b03b9f4b75887c7ca3a0b95b32c0654f",
-  "new_hash": "sha256:77ad93b9221fd6ce3378224ba2c1375bf24be6d36449850a8354fbbf850dbddf",
+  "new_hash": "sha256:954e5866298fb40de1c2909d37a63320d4250d4b7810c4d1cc865a2e7ca98384",
   "original_hash": "sha256:2891fc5b3e3cbe25bce8f63542480c32b03b9f4b75887c7ca3a0b95b32c0654f",
-  "normalized_hash": "sha256:2891fc5b3e3cbe25bce8f63542480c32b03b9f4b75887c7ca3a0b95b32c0654f",
-  "candidate_hash": "sha256:77ad93b9221fd6ce3378224ba2c1375bf24be6d36449850a8354fbbf850dbddf",
+  "normalized_hash": "sha256:954e5866298fb40de1c2909d37a63320d4250d4b7810c4d1cc865a2e7ca98384",
+  "candidate_hash": "sha256:954e5866298fb40de1c2909d37a63320d4250d4b7810c4d1cc865a2e7ca98384",
   "changed": true,
-  "changed_line_count": 57,
+  "changed_line_count": 80,
   "inserted_line_count": 0,
-  "deleted_line_count": 6,
-  "ui_blocks_original_count": 3,
-  "ui_blocks_candidate_count": 3,
+  "deleted_line_count": 25,
+  "ui_blocks_original_count": 0,
+  "ui_blocks_candidate_count": 0,
   "ui_blocks_changed_count": 0,
-  "ui_blocks_count": 3,
+  "ui_blocks_count": 0,
   "unresolved_placeholders_count": 0,
-  "preserved_blocks_count": 3,
+  "preserved_blocks_count": 0,
   "changed_text_summary": {
-    "changed": 57,
+    "changed": 80,
     "inserted": 0,
-    "deleted": 6,
+    "deleted": 25,
     "original_line_count": 90,
-    "candidate_line_count": 84
+    "candidate_line_count": 65
   },
   "changed_ui_blocks_summary": {
     "missing_block_ids": [],
     "changed_count": 0
   },
-  "locally_safe_to_push": false,
-  "safe_to_push": false,
-  "blockers": [
-    "original.md hash does not match article metadata export hash."
-  ],
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Unsafe: original.md hash does not match article metadata export hash."
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

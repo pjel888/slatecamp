@@ -1,0 +1,134 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T22:40:00+08:00",
+  "audit_mode": "local_source_audit_no_supabase",
+  "protocols_applied": [
+    ".ai/CONTENT_EXCELLENCE_GOAL.md",
+    ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
+    ".ai/00_system/vitruvius-source-reference.md"
+  ],
+  "target": {
+    "article_id": "17b95df0-6bea-43c6-ab03-2b82a358caa6",
+    "slug": "lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountability",
+    "title": "Architect of Record vs Architect in Charge of Construction Liability",
+    "article_folder": ".ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6/candidate.md",
+    "candidate_sha256": "sha256:647309d7144b93469b5f220ba72fb7532e5447b52bb22087f964d69a73a85515",
+    "normalized_sha256": "sha256:647309d7144b93469b5f220ba72fb7532e5447b52bb22087f964d69a73a85515",
+    "linked_questions_sha256": "sha256:4eae17c2b95a1c527249fd6e22081ec98dca82a8fc6a80de81adba1bb9ce3327",
+    "sources_sha256": "sha256:6529369160a048149e207ab63cd852d4ef78b3fba6a6bd5c643941f12ea95933"
+  },
+  "classification": {
+    "content_type": "ra9266_civil_aor_aicc_liability_article",
+    "focus": "AOR/AiCC role split, signing/sealing responsibility, Civil Code Article 1723 collapse liability",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": [
+      "7f2143ba-a7b7-4397-9c34-82ae0108bb9c",
+      "2cba8465-a4de-41ac-bd26-8451c590b071",
+      "fd64ffbe-960f-4ea3-9bb2-5a4feec61d14",
+      "b216f737-beb5-4e9f-95b0-7023c57dbfaf",
+      "216f9a84-8df2-4183-86e4-58279e229b60",
+      "016fafea-7a8c-4720-b73a-aca8fd1488c0",
+      "96b17f48-0186-4a9a-8cf3-e2fa79120826",
+      "fc4a4042-8ab7-465a-a6f5-a224a45e0e88",
+      "56120d58-cee2-4daf-9cdc-5d91ff8a9233",
+      "487458a0-704b-46b4-9de1-1cd3bc85fbf6"
+    ]
+  },
+  "raw_sources": [
+    {
+      "key": "ra9266_irr",
+      "label": "RA 9266 IRR Architecture Act of 2004",
+      "source_type": "implementing_rules",
+      "source_id": "batch006-lea-prac-law-011-architect-of-record-vs-architec-source-01",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "checked_pdf_pages": [
+        2,
+        4,
+        14,
+        15,
+        19
+      ]
+    },
+    {
+      "key": "civil_code",
+      "label": "Civil Code of the Philippines",
+      "source_type": "civil_code",
+      "source_id": "batch006-lea-prac-law-011-architect-of-record-vs-architec-source-02",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code of the Phils.pdf",
+      "raw_pdf_sha256": "sha256:95b8d7bf26fabeab9d27c661a53729273b69c88fc8565cc2a7146243df693400",
+      "checked_pdf_pages": [
+        123
+      ]
+    }
+  ],
+  "gate_results": {
+    "compose": "PASS: content-audit:compose -- --article-id 17b95df0-6bea-43c6-ab03-2b82a358caa6 --overwrite; blockers=0",
+    "diff": "PASS: content-audit:diff -- --article-id 17b95df0-6bea-43c6-ab03-2b82a358caa6; changed=true safe_to_push=true blockers=0",
+    "validate": "PASS: content-audit:validate -- --article-id 17b95df0-6bea-43c6-ab03-2b82a358caa6 --summary --dry-run; valid=true blockers=0 warnings=0",
+    "push_dry_run": "not_attempted_local_first; Supabase remote fetch is final publishing only and intentionally non-blocking here",
+    "supabase_mutation": "not_attempted_by_request"
+  },
+  "claims": [
+    {
+      "claim_id": "lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountability-claim-01",
+      "claim_text": "RA 9266 IRR Section 3(2)(a) assigns total design and signed/sealed document responsibility to the Architect-of-Record.",
+      "source_support": [
+        "ra9266_irr",
+        "civil_code"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountability-claim-02",
+      "claim_text": "RA 9266 IRR Section 3(2)(b) assigns construction-supervision responsibility and liability to the Architect-in-Charge of Construction.",
+      "source_support": [
+        "ra9266_irr",
+        "civil_code"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountability-claim-03",
+      "claim_text": "Civil Code Article 1723 separates liability for defective plans/specifications from construction defects, inferior materials, and defective construction supervision.",
+      "source_support": [
+        "ra9266_irr",
+        "civil_code"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountability-linked-question-edits",
+      "claim_text": "Question edits staged locally for linked question IDs/model IDs: 7f2143ba-a7b7-4397-9c34-82ae0108bb9c (ALE-PRAC-LAW-011-004), 2cba8465-a4de-41ac-bd26-8451c590b071 (ALE-PRAC-LAW-011-005), fd64ffbe-960f-4ea3-9bb2-5a4feec61d14 (ALE-PRAC-LAW-011-007), b216f737-beb5-4e9f-95b0-7023c57dbfaf (ALE-PRAC-LAW-011-003), 216f9a84-8df2-4183-86e4-58279e229b60 (ALE-PRAC-LAW-011-010), 016fafea-7a8c-4720-b73a-aca8fd1488c0 (ALE-PRAC-LAW-011-008), 96b17f48-0186-4a9a-8cf3-e2fa79120826 (ALE-PRAC-LAW-011-009), fc4a4042-8ab7-465a-a6f5-a224a45e0e88 (ALE-PRAC-LAW-011-006), 56120d58-cee2-4daf-9cdc-5d91ff8a9233 (ALE-PRAC-LAW-011-002), 487458a0-704b-46b4-9de1-1cd3bc85fbf6 (ALE-PRAC-LAW-011-001)",
+      "audit_result": "PASS",
+      "source_support": [
+        "ra9266_irr",
+        "civil_code"
+      ]
+    }
+  ],
+  "unsupported_or_removed_claims": [
+    "Removed insurance-policy advice and replaced it with source-backed role/scope risk framing.",
+    "Rewrote defective-material scenarios to use Article 1723 collapse and supervision language instead of unsupported cracking-only conclusions.",
+    "Corrected linked-question citations from generic RA 9266 labels to audited RA 9266 IRR and Civil Code locators."
+  ],
+  "remaining_local_blockers": [],
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_recovery_complete": true,
+    "remote_publish_status": "not_attempted_by_request",
+    "remaining_local_blockers": []
+  },
+  "local_validation": {
+    "command": "bun run content-audit:validate -- --article-id 17b95df0-6bea-43c6-ab03-2b82a358caa6 --summary --dry-run",
+    "valid": true,
+    "blockers": 0,
+    "warnings": [],
+    "checked_at": "2026-05-10T22:40:00+08:00"
+  }
+}

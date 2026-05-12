@@ -1,0 +1,80 @@
+{
+  "question_id": "9161b2ad-fa67-4723-89b5-7e5f4b64eab2",
+  "baseline_hash": "sha256:a380eacad016f542f4f3a8bcfb7d777fe7125ec367b2ab09f59f8af7f43405bd",
+  "action": "replace",
+  "reason": "source-audited-article-batch-057-local-first: local raw PDF backed replacement constrained to checked Batch 057 source families.",
+  "approved_by": "codex-local-first-batch-057",
+  "approved_at": "2026-05-11T20:10:30.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "61869b56-3658-496c-ac52-060076c5ea6c",
+    "parent_article_slug": "lea-theo-001-12-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "George Salvan Architectural Theories of Design refined markdown lines 195, 223-230, 655-675, and 7660; theory refined markdown lines 184 and 307-311; TOA 1 Intro to Theory refined markdown lines 167-169",
+    "checked_markdown_lines": [
+      "George Salvan Architectural Theories of Design refined markdown line 195",
+      "George Salvan Architectural Theories of Design refined markdown lines 223-230",
+      "George Salvan Architectural Theories of Design refined markdown lines 655-675",
+      "George Salvan Architectural Theories of Design refined markdown line 7660",
+      "theory refined markdown line 184",
+      "theory refined markdown lines 307-311",
+      "TOA 1 Intro to Theory refined markdown lines 167-169"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "salvan-theory-local-raw-pdf--b057-61869b56-01",
+        "label": "George Salvan Architectural Theories of Design - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
+        "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
+        "locator": "George Salvan Architectural Theories of Design refined markdown lines 195, 223-230, 655-675, and 7660"
+      },
+      {
+        "source_id": "theory-local-raw-pdf--b057-61869b56-02",
+        "label": "theory - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+        "sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+        "refined_markdown_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+        "locator": "theory refined markdown lines 184 and 307-311"
+      },
+      {
+        "source_id": "toa1-intro-local-raw-pdf--b057-61869b56-03",
+        "label": "TOA 1 Intro to Theory - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 1 (Intro to Theory).pdf",
+        "sha256": "sha256:17ee07310eaf7fbd71aeb3cb3b57a6ffb623e2b8b1957543d74b706a5184d0e0",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md",
+        "refined_markdown_sha256": "sha256:fc665ed41ea62ddb69c88ba02c7b92628481ba6792a075bc21694ca072b150d6",
+        "locator": "TOA 1 Intro to Theory refined markdown lines 167-169"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 057 checked local raw PDF source scope."
+  },
+  "proposed": {
+    "text": "Why is architecture more than shelter in the checked theory sources?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It organizes and protects human activities, needs, and meanings."
+      },
+      {
+        "id": "b",
+        "text": "It only provides a roof."
+      },
+      {
+        "id": "c",
+        "text": "It excludes social and psychological needs."
+      },
+      {
+        "id": "d",
+        "text": "It is only a legal occupancy label."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "It organizes and protects human activities, needs, and meanings. This answer is supported by the checked Batch 057 local raw PDF source families for Architecture Beyond Shelter.",
+    "explanation": "It organizes and protects human activities, needs, and meanings. The Batch 057 source audit used local raw PDFs first and refined markdown only as locator evidence for Architecture Beyond Shelter.",
+    "code_citation": "George Salvan Architectural Theories of Design refined markdown lines 655-675"
+  },
+  "batch_question_template_index": 0
+}

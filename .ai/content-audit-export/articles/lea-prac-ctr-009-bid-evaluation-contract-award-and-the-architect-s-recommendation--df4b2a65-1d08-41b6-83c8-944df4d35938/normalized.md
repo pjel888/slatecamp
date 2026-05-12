@@ -1,80 +1,34 @@
-
-
-## Board Exam Quick Check
-
-Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
-
-**Common mistake:** treating a familiar keyword in **Lea Prac Ctr 009 Bid Evaluation Contract Award And The Architect S Recommendation** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## Bid Evaluation, Contract Award, and the Architect's Recommendation
 
 ## Learning Goal
 
 After studying this article, you should be able to:
 
-- Describe the bid evaluation process and the architect's recommendation role.
-- Explain criteria for contract award: lowest responsive bidder.
-- Distinguish bid evaluation from bid shopping.
-- Identify the legal effect of contract award on the parties.
+- Define the bid, bid bond, bid documents, bid bulletin, and instructions to bidders using local contract sources.
+- Explain why an invitation to bid is normally an invitation for proposals rather than an automatic award to the highest or lowest bidder.
+- Identify the source-safe boundary of the architect's role in pre-award recommendations.
 
-### The Bid Evaluation Process
+## Source-Safe Rule
 
-The architect plays a central role in assessing all submitted proposals against the criteria outlined in the tender documents. This evaluation examines not only the financial offer but also the contractor's qualifications, proposed methodology, timeline, and compliance with contract specifications.
+For this local audit pass, use only the checked contract definitions and Civil Code rule. CIAP Document 102 defines a bid as the tender, proposal, quotation, or offer of a bidder to perform the work described in the contract when it complies in form and substance with the Instructions to Bidders. UAP Document 301 defines the contractor as the person or firm whose proposal has been accepted and to whom the contract was awarded.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code="ra9266", section="UAP Doc 301, SPP Doc 202", title="Bid Evaluation Criteria"
-- Text: The architect evaluates bids on: (1) Technical compliance — does the contractor understand and can they execute the work? (2) Financial compliance — is the bid calculated correctly and responsive? (3) Qualifications — experience, equipment, workforce, safety record. Non-responsive bids (those failing mandatory requirements) are rejected. The architect must establish the evaluation framework BEFORE bids are opened.
-[/SLATECAMP_UI_BLOCK]
+Civil Code Article 1326 states that advertisements for bidders are simply invitations to make proposals, and that the advertiser is not bound to accept the highest or lowest bidder unless the contrary appears. In exam use, this prevents a shortcut answer that treats the lowest price alone as an automatic contract award.
 
-### The Architect's Recommendation Authority
+## Bid Documents and Bid Controls
 
-Once evaluation is complete, the architect issues a formal recommendation to the owner recommending the most advantageous proposal. This recommendation must be based on the established evaluation criteria and documented in writing. The architect may recommend the lowest bidder, but if circumstances warrant selection of a higher-priced proposal, the architect must justify this decision clearly.
+CIAP Document 102 defines bid documents as the documents made available to prospective bidders, including the invitation to bid and a copy of the contract the winning bidder would be required to sign. UAP Document 301 defines Instructions to Bidders as the instructions for preparing bids and the conditions for award of contract.
 
-The owner retains final decision-making authority on contract award. The owner may accept the architect's recommendation, request further analysis, or make an independent decision.
+A Bid Bulletin is additional information on bid or contract documents issued before the date of bidding. A Proposal or Bid Bond guarantees that the bidder will enter into the contract with the owner if the contract is awarded to that bidder.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="ProcessFlow" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Bid Evaluation and Award Process:** Step 1: **Pre-evaluation** — Architect confirms evaluation criteria before bids opened Step 2: **Bid Opening** — Sealed bids opened at public/private meeting Step 3: **Preliminary Review** — Check for compliance with Instructions to Bidders Step 4: **Technical Evaluation** — Assess qualifications, methodology, schedule Step 5: **Financial Evaluation** — Verify arithmetic, confirm bid bond, check responsiveness Step 6: **Architect's Recommendation** — Written
-[/SLATECAMP_UI_BLOCK]
+## Exam Boundary
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Critical Exam Point:** All communications regarding bid evaluation, scoring, and the recommendation must remain CONFIDENTIAL until the contract is formally awarded. Disclosure of bid values, technical scores, or the architect's recommendation before award creates serious legal and professional liability.
-[/SLATECAMP_UI_BLOCK]
-
-### Documentation and Transparency
-
-The bid evaluation process must be documented thoroughly. The architect maintains records of all submitted proposals, the evaluation methodology, scoring or ranking analysis, and the basis for the recommendation. These records protect both the architect and owner by demonstrating compliance with fair procurement practices and providing evidence if any bidder challenges the award decision.
-
-[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Priority — Know These Rules:** 1. Evaluation criteria must be established BEFORE bids are opened (not after) 2. Non-responsive bids are rejected (not accepted with conditions) 3. Architect recommends — Owner DECIDES (Owner has final authority) 4. All evaluation communications are confidential until award 5. If recommending a non-lowest bidder, the architect must document justification in writing
-[/SLATECAMP_UI_BLOCK]
-
-## Common Mistakes
-
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\n    \"Believing the architect decides the contract award — the architect recommends; the Owner decides\",\n    \"Assuming bid evaluation criteria can be established after bid opening — criteria must be set before opening\",\n    \"Thinking non-responsive bids can be accepted with conditions — non-responsive bids are rejected\",\n    \"Disclosing evaluation results before the award — creates legal liability\",\n    \"Assuming the lowest bid must always be recommended — in private projects, other factors may justify a higher-priced recommendation (but must be documented)\",\n  ]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
----
+A source-safe answer should identify the controlling document first: bid definitions from CIAP Document 102 or UAP Document 301, and the no-automatic-award rule from Civil Code Article 1326. Avoid importing scoring systems, confidentiality procedures, or technical-ranking rules unless those exact procedures are named by the item and supplied by the source.
 
 ## Related Articles
 
-- [Standard Owner-Architect Agreement](lea-prac-ctr-001)
-- [Basic vs. Additional Services](lea-prac-ctr-002)
-- [Suspension and Termination](lea-prac-ctr-003)
 - [Bid Documents and Addenda](lea-prac-ctr-008)
 - [Performance Bonds](lea-prac-ctr-010)
-- [Certificates of Payment](lea-prac-ctr-014)
-- [Retention Money](lea-prac-ctr-015)
-- [Change Orders](lea-prac-ctr-016)
-- [Dispute Resolution](lea-prac-ctr-020)
-- [Fee Compensation Methods](lea-prac-cmp-001)
+- [Payment Bonds](lea-prac-ctr-011)
+- [Guarantee Bond](lea-prac-ctr-012)
 
 <!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

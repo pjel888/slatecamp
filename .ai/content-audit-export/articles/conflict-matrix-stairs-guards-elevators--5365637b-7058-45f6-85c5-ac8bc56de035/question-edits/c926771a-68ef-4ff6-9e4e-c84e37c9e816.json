@@ -1,0 +1,52 @@
+{
+  "question_id": "c926771a-68ef-4ff6-9e4e-c84e37c9e816",
+  "baseline_hash": "sha256:c365bc1eaef1cd288de4600dc0cac6a2029a29b7123ed1cc843e363178e8399b",
+  "action": "replace",
+  "reason": "source-audited-article-batch-040-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-040",
+  "approved_at": "2026-05-11T14:04:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-040-local-first",
+    "checked_sources": [
+      {
+        "source_id": "bp-344-2024-rirr-ncda-local",
+        "label": "BP 344 2024 Revised IRR - NCDA",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "checked_markdown_lines": [
+          "BP 344 2024 IRR refined markdown lines 36-70",
+          "BP 344 2024 IRR refined markdown lines 198-224",
+          "BP 344 2024 IRR refined markdown lines 539-585",
+          "BP 344 2024 IRR refined markdown lines 770-850",
+          "BP 344 2024 IRR refined markdown lines 317-469"
+        ]
+      }
+    ],
+    "citation": "BP 344 2024 Revised IRR, Accessible Ramps"
+  },
+  "proposed": {
+    "text": "When a change in level occurs on an accessible route, what does BP 344 require unless a dropped sidewalk, curb ramp, elevator, or other mechanical device serves it?",
+    "options": [
+      {
+        "id": "b040-5365-01-a",
+        "text": "A ramp"
+      },
+      {
+        "id": "b040-5365-01-b",
+        "text": "A warning sign only"
+      },
+      {
+        "id": "b040-5365-01-c",
+        "text": "A stair without an alternative route"
+      },
+      {
+        "id": "b040-5365-01-d",
+        "text": "A parking slot"
+      }
+    ],
+    "correct_option_id": "b040-5365-01-a",
+    "rationale": "Correct answer: A ramp. This is directly supported by BP 344 2024 Revised IRR, Accessible Ramps.",
+    "explanation": "The Batch 040 source-audited correction uses only local raw PDF families and locator-checked refined markdown for BP 344 2024 Revised IRR, Accessible Ramps.",
+    "code_citation": "BP 344 2024 Revised IRR, Accessible Ramps"
+  }
+}

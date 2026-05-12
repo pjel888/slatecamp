@@ -1,20 +1,106 @@
 {
   "article_id": "9098a3d8-b4d7-42f4-ac2b-0df1509c2507",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:8ade3d9ab9dcdb214748134705d36ec6e33520de3c7ffefb485016858f043022",
-  "source_count": 1,
+  "sources_hash": "sha256:be0af31736780574e47a3dc169a044459e9c842ef59a3ef502fba2172c22b05c",
+  "source_count": 4,
   "sources": [
     {
-      "source_id": "226147a2-b00d-487b-ac28-12c2f383778a",
-      "article_id": "9098a3d8-b4d7-42f4-ac2b-0df1509c2507",
-      "label": "Republic Act 11201 (2019), Presidential Decree 957, Republic Act 7160 (Local Government Code), Republic Act 7279 (UDHA), DHSUD official charter and organizational structure",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:01.381895+00:00",
-      "updated_at": "2026-03-24T04:34:01.381895+00:00"
+      "source_id": "ra11201-dhsud-act-local-b068",
+      "label": "RA 11201 DHSUD Act of 2019 - DHSUD mandate and transferred land-use functions",
+      "authority": "Local raw PDF OCR and refined markdown conversion",
+      "source_type": "primary_law_pdf",
+      "source_locator": "RA 11201 refined markdown lines 63-77, 227-249, 261-279, and 1090-1118; raw PDF pages 2-4 and 11-12 checked by local OCR extraction",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 - DHSUD Act of 2019.pdf",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 - DHSUD Act of 2019.md",
+      "checked_markdown_lines": [
+        "RA 11201 lines 63-77",
+        "RA 11201 lines 227-249",
+        "RA 11201 lines 261-279",
+        "RA 11201 lines 1090-1118"
+      ],
+      "checked_raw_pdf_pages": [
+        "RA 11201 raw PDF page 2",
+        "RA 11201 raw PDF pages 3-4",
+        "RA 11201 raw PDF pages 11-12"
+      ],
+      "use": "primary source for DHSUD creation, mandate, CLUP data/standards, and HLURB land-use function transfer claims",
+      "raw_pdf_sha256": "sha256:59cf831669ddd0dc6f8fb569583e0ea75baf475c25677559aa21ea0979546c8d",
+      "refined_markdown_sha256": "sha256:8dff6d78e0fc0da08fe7516b5fa8b693e370493dee73b87199f649dd0efa5451",
+      "local_source_checked": true
+    },
+    {
+      "source_id": "ra11201-irr-land-use-functions-local-b068",
+      "label": "RA 11201 IRR - DHSUD land-use planning, CLUP/ZO review, and regional office functions",
+      "authority": "Local raw PDF and refined markdown conversion",
+      "source_type": "implementing_rules_pdf",
+      "source_locator": "RA 11201 IRR refined markdown lines 45, 145-159, 344-368, and 488-501; raw PDF pages 3, 9, 17-18, and 24 checked by local PDF extraction",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+      "checked_markdown_lines": [
+        "RA 11201 IRR line 45",
+        "RA 11201 IRR lines 145-159",
+        "RA 11201 IRR lines 344-368",
+        "RA 11201 IRR lines 488-501"
+      ],
+      "checked_raw_pdf_pages": [
+        "RA 11201 IRR raw PDF page 3",
+        "RA 11201 IRR raw PDF page 9",
+        "RA 11201 IRR raw PDF pages 17-18",
+        "RA 11201 IRR raw PDF page 24"
+      ],
+      "use": "primary source for DHSUD CLUP/ZO assistance, review, monitoring, and land-use compliance claims",
+      "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+      "refined_markdown_sha256": "sha256:40f1a5041c69b3a4aea7c8ba138a9d570bc686bea48aa5618ea6423a6a719528",
+      "local_source_checked": true
+    },
+    {
+      "source_id": "eo72-clup-review-implementation-local-b068",
+      "label": "Executive Order No. 72 - CLUP preparation, review, approval, and implementation",
+      "authority": "Local raw PDF and refined markdown conversion",
+      "source_type": "executive_order_pdf",
+      "source_locator": "EO 72 refined markdown lines 1-90; raw PDF pages 1-4 checked by local PDF extraction",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/EO/EO 72 Comprehensive Land use.pdf",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/EO/EO 72 Comprehensive Land use.md",
+      "checked_markdown_lines": [
+        "EO 72 lines 1-90"
+      ],
+      "checked_raw_pdf_pages": [
+        "EO 72 raw PDF page 1",
+        "EO 72 raw PDF page 2",
+        "EO 72 raw PDF page 3",
+        "EO 72 raw PDF page 4"
+      ],
+      "use": "primary source for CLUP formulation, local technical support, Sanggunian enactment, review path, and locational-clearance implementation claims",
+      "raw_pdf_sha256": "sha256:57de2c585b2f2f0e5687bbf95754f9cd4f2bae68c51c6ae0d8d60e81d24c8cbd",
+      "refined_markdown_sha256": "sha256:478ae44ef1b4ced33ce16138db0558d38c0fad4a4ca02e35c9f192994e89c871",
+      "local_source_checked": true
+    },
+    {
+      "source_id": "ra7160-local-planning-zoning-local-b068",
+      "label": "RA 7160 Local Government Code - CLUP, zoning, and Sanggunian authority",
+      "authority": "Local raw PDF and refined markdown conversion",
+      "source_type": "primary_law_pdf",
+      "source_locator": "RA 7160 refined markdown lines 197-209, 712-746, 2665-2668, 2902-2905, and 3130; raw PDF pages 15, 51-52, 194, 213, and 232 checked by local PDF extraction",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7160/RA 7160 The Local Government Code.pdf",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7160/RA 7160 The Local Government Code.md",
+      "checked_markdown_lines": [
+        "RA 7160 lines 197-209",
+        "RA 7160 lines 712-746",
+        "RA 7160 lines 2665-2668",
+        "RA 7160 lines 2902-2905",
+        "RA 7160 line 3130"
+      ],
+      "checked_raw_pdf_pages": [
+        "RA 7160 raw PDF page 15",
+        "RA 7160 raw PDF pages 51-52",
+        "RA 7160 raw PDF page 194",
+        "RA 7160 raw PDF page 213",
+        "RA 7160 raw PDF page 232"
+      ],
+      "use": "primary source for local CLUP, land reclassification, zoning ordinance, and Sanggunian authority claims",
+      "raw_pdf_sha256": "sha256:e270e8bc7bd84ba8ad7b6fe6780c12a3e5a6103e2b9395db13084266a5ff1fff",
+      "refined_markdown_sha256": "sha256:9f95493bd12c7f4b0989913d7e8783cdbc6235891fea9977c2aa77238c3dd392",
+      "local_source_checked": true
     }
   ]
 }

@@ -1,0 +1,166 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-053-local-first",
+  "batch_number": 53,
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T19:04:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "691cf42d-0f6c-4686-b3d0-9a3bbd99da23",
+    "slug": "ergonomics-in-furniture-design",
+    "title": "Ergonomics in Furniture Design",
+    "article_folder": ".ai/content-audit-export/articles/ergonomics-in-furniture-design--691cf42d-0f6c-4686-b3d0-9a3bbd99da23",
+    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ergonomics-in-furniture-design--691cf42d-0f6c-4686-b3d0-9a3bbd99da23",
+    "candidate_path": ".ai/content-audit-export/articles/ergonomics-in-furniture-design--691cf42d-0f6c-4686-b3d0-9a3bbd99da23/candidate.md",
+    "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ergonomics-in-furniture-design--691cf42d-0f6c-4686-b3d0-9a3bbd99da23/candidate.md",
+    "question_edits_folder": ".ai/content-audit-export/articles/ergonomics-in-furniture-design--691cf42d-0f6c-4686-b3d0-9a3bbd99da23/question-edits",
+    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ergonomics-in-furniture-design--691cf42d-0f6c-4686-b3d0-9a3bbd99da23/question-edits",
+    "normalized_sha256": "sha256:a60124f5abfdd6a5459189a650515a7ce3569be4a93f07ecf6a0eba4dcd55af2",
+    "candidate_sha256": "sha256:a60124f5abfdd6a5459189a650515a7ce3569be4a93f07ecf6a0eba4dcd55af2",
+    "linked_questions_sha256": "sha256:1b3ed1f568ee37d433303aa2495ec19947237bbf262131819206bbd212cdda56",
+    "sources_sha256": "sha256:e84ae80e770e46a484e9ed8fc3bf9d4a64210183a708e2feaa8944f3e4ac716a"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "refined_markdown_role": "locator_only",
+    "derivative_or_search_layer_as_primary": false,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": [],
+    "source_families_checked": [
+      {
+        "label": "George Salvan Architectural Theories of Design - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "raw_pdf_sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
+        "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
+        "locator": "George Salvan Architectural Theories of Design refined markdown lines 3882-3888, 4089-4122, 15685-15691, 15749-15778, 15819-15831, 15871, 15923-15931, and 16194-16196"
+      },
+      {
+        "label": "Furniture Reviewer - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Furniture Reviewer.pdf",
+        "raw_pdf_sha256": "sha256:c6cce2c179de3a0021fabc9c279614476544d5b788128a163e7c41f6254183a9",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Furniture Reviewer.md",
+        "refined_markdown_sha256": "sha256:e60788de0a25b55ba389cc1c0106f2c9716c04b70de6e23349c41fb0b640f597",
+        "locator": "Furniture Reviewer refined markdown lines 1-18, 20-31, 35-65, and 67-99"
+      },
+      {
+        "label": "BP 344 2024 Revised IRR - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+        "locator": "BP 344 2024 Revised IRR refined markdown lines 40-64, 230-280, 305-348, 685-698, 776-808, 917-951, 1002-1018, 1157-1195, 1223-1225, and 1431-1441"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "furniture-ergonomics",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "medium",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 21,
+    "question_edits_created": [
+      "e44b57ed-269e-4c44-b97a-e3fc2d2a26b3",
+      "079fa38d-5f90-469f-8c24-c793a8d35a6c",
+      "ff959e84-39c4-4592-94a4-1c7a66efc9ef",
+      "004cabb5-20e8-48e8-98c6-4308a3d7cc51",
+      "bf9b8430-9c2a-480b-ab69-6a6d35b7f97c",
+      "01cbb37d-5e78-4d45-afe7-f6d980d420d3",
+      "d32c4fd1-1663-4827-a0f3-68cb548dcdc3",
+      "3916b123-7015-4082-82d8-e6380df46257",
+      "ea637b74-7ebb-493d-8bf3-a6e7de90e650",
+      "8f937185-056e-4c45-989c-23c43ad50f20",
+      "eb102a7b-e7f6-4d6d-a1fe-38cf6428af99",
+      "88a58cea-7308-4278-9a5f-85b68a72ba62",
+      "e270ddc3-807d-49ae-95f0-4f7f3fa8a1c9",
+      "7f51fc25-590d-407a-bf31-a25d0d39b5b3",
+      "624cd388-ea2e-419b-bed7-261b5b81c255",
+      "fcae9ada-ebf2-466b-8b25-574e2cd106f0",
+      "f013f91a-a77a-4457-837e-fea6323edb0e",
+      "2a9b516f-797a-4cbd-9b64-112b15ae24a4",
+      "05d6c9f7-ddb2-4691-b6bd-6f2b4ae2a889",
+      "28a39dc7-0f3e-4b13-b50e-87aabcac188a",
+      "cb1a9ad9-c71b-49f1-b8ad-4cd71bb78dd9"
+    ]
+  },
+  "checked_markdown_lines": [
+    "George Salvan Architectural Theories of Design refined markdown lines 3882-3888",
+    "George Salvan Architectural Theories of Design refined markdown lines 4089-4122",
+    "George Salvan Architectural Theories of Design refined markdown lines 15685-15691",
+    "George Salvan Architectural Theories of Design refined markdown lines 15749-15778",
+    "George Salvan Architectural Theories of Design refined markdown lines 15819-15831",
+    "George Salvan Architectural Theories of Design refined markdown line 15871",
+    "George Salvan Architectural Theories of Design refined markdown lines 15923-15931",
+    "George Salvan Architectural Theories of Design refined markdown lines 16194-16196",
+    "Furniture Reviewer refined markdown lines 1-18",
+    "Furniture Reviewer refined markdown lines 20-31",
+    "Furniture Reviewer refined markdown lines 35-65",
+    "Furniture Reviewer refined markdown lines 67-99",
+    "BP 344 2024 Revised IRR refined markdown lines 40-64",
+    "BP 344 2024 Revised IRR refined markdown lines 230-280",
+    "BP 344 2024 Revised IRR refined markdown lines 305-348",
+    "BP 344 2024 Revised IRR refined markdown lines 685-698",
+    "BP 344 2024 Revised IRR refined markdown lines 776-808",
+    "BP 344 2024 Revised IRR refined markdown lines 917-951",
+    "BP 344 2024 Revised IRR refined markdown lines 1002-1018",
+    "BP 344 2024 Revised IRR refined markdown lines 1157-1195",
+    "BP 344 2024 Revised IRR refined markdown lines 1223-1225",
+    "BP 344 2024 Revised IRR refined markdown lines 1431-1441"
+  ],
+  "claims": [
+    {
+      "claim_id": "ergonomics-in-furniture-design-b053-claim-01",
+      "claim_text": "Ergonomics in furniture design is source-audited to local raw PDF evidence for anthropometrics, human-factor fit, furniture vocabulary, and BP 344 accessible furniture/service dimensions.",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "quoted_pdf_excerpt": "George Salvan Architectural Theories of Design refined markdown lines 3882-3888, 4089-4122, 15685-15691, 15749-15778, 15819-15831, 15871, 15923-15931, and 16194-16196; Furniture Reviewer refined markdown lines 1-18, 20-31, 35-65, and 67-99; BP 344 2024 Revised IRR refined markdown lines 40-64, 230-280, 305-348, 685-698, 776-808, 917-951, 1002-1018, 1157-1195, 1223-1225, and 1431-1441",
+        "source_ids": [
+          "salvan-theory-local-raw-pdf--b053-691cf42d-01",
+          "furniture-reviewer-local-raw-pdf--b053-691cf42d-02",
+          "bp344-2024-local-raw-pdf--b053-691cf42d-03"
+        ]
+      },
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "ergonomics-in-furniture-design-b053-claim-questions",
+      "claim_text": "Batch 053 question edits audited for ergonomics-in-furniture-design: e44b57ed-269e-4c44-b97a-e3fc2d2a26b3, 079fa38d-5f90-469f-8c24-c793a8d35a6c, ff959e84-39c4-4592-94a4-1c7a66efc9ef, 004cabb5-20e8-48e8-98c6-4308a3d7cc51, bf9b8430-9c2a-480b-ab69-6a6d35b7f97c, 01cbb37d-5e78-4d45-afe7-f6d980d420d3, d32c4fd1-1663-4827-a0f3-68cb548dcdc3, 3916b123-7015-4082-82d8-e6380df46257, ea637b74-7ebb-493d-8bf3-a6e7de90e650, 8f937185-056e-4c45-989c-23c43ad50f20, eb102a7b-e7f6-4d6d-a1fe-38cf6428af99, 88a58cea-7308-4278-9a5f-85b68a72ba62, e270ddc3-807d-49ae-95f0-4f7f3fa8a1c9, 7f51fc25-590d-407a-bf31-a25d0d39b5b3, 624cd388-ea2e-419b-bed7-261b5b81c255, fcae9ada-ebf2-466b-8b25-574e2cd106f0, f013f91a-a77a-4457-837e-fea6323edb0e, 2a9b516f-797a-4cbd-9b64-112b15ae24a4, 05d6c9f7-ddb2-4691-b6bd-6f2b4ae2a889, 28a39dc7-0f3e-4b13-b50e-87aabcac188a, cb1a9ad9-c71b-49f1-b8ad-4cd71bb78dd9",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "quoted_pdf_excerpt": "George Salvan Architectural Theories of Design refined markdown lines 3882-3888, 4089-4122, 15685-15691, 15749-15778, 15819-15831, 15871, 15923-15931, and 16194-16196; Furniture Reviewer refined markdown lines 1-18, 20-31, 35-65, and 67-99; BP 344 2024 Revised IRR refined markdown lines 40-64, 230-280, 305-348, 685-698, 776-808, 917-951, 1002-1018, 1157-1195, 1223-1225, and 1431-1441",
+        "source_ids": [
+          "salvan-theory-local-raw-pdf--b053-691cf42d-01",
+          "furniture-reviewer-local-raw-pdf--b053-691cf42d-02",
+          "bp344-2024-local-raw-pdf--b053-691cf42d-03"
+        ]
+      },
+      "audit_result": "PASS"
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "local_first_only": true,
+    "supabase_write_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json"
+  },
+  "sme_review": {
+    "required": false,
+    "status": "not_required"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

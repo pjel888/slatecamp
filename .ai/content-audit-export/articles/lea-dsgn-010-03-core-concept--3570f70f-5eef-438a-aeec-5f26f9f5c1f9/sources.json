@@ -1,68 +1,39 @@
 {
   "article_id": "3570f70f-5eef-438a-aeec-5f26f9f5c1f9",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:69e9968e2019a6fc415b72f103b727540fd0af8d9d7129a4dae14780079f815d",
-  "source_count": 5,
+  "sources_hash": "sha256:4a26ca0d5be6cba264bfd967b05ebe56bafcd3bb1b074221b99832688aceaf22",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "7bf5a335-38f8-4915-a86c-e8064db15526",
-      "article_id": "3570f70f-5eef-438a-aeec-5f26f9f5c1f9",
-      "label": "Primary:",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:33:58.214974+00:00",
-      "updated_at": "2026-03-24T04:33:58.214974+00:00"
+      "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+      "title": "PD 1096 2004 Revised IRR - DPWH Official",
+      "source_type": "local_raw_pdf_with_locator_checked_refined_markdown",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "source_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+      "derivative_layer_role": "locator aid only",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "checked_markdown_lines": [
+        "PD 1096 RIRR refined markdown lines 1627-1766",
+        "PD 1096 RIRR refined markdown lines 1784-1786"
+      ],
+      "source_locator": "PD 1096 RIRR refined markdown lines 1627-1766; PD 1096 RIRR refined markdown lines 1784-1786"
     },
     {
-      "source_id": "587b7108-f8db-48b8-b5a1-2df6e53338fe",
-      "article_id": "3570f70f-5eef-438a-aeec-5f26f9f5c1f9",
-      "label": "PD 1096: National Building Code of the Philippines, Rule II (Site Development) and related provisions on vehicular access, egress, and loading",
-      "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 1,
-      "created_at": "2026-03-24T04:33:58.214974+00:00",
-      "updated_at": "2026-03-24T04:33:58.214974+00:00"
-    },
-    {
-      "source_id": "e9a444e2-5d48-45aa-bdf3-586a7c8e5510",
-      "article_id": "3570f70f-5eef-438a-aeec-5f26f9f5c1f9",
-      "label": "MMDA Administrative Code, Traffic Management Division: Driveway & Loading Zone Guidelines Reference:",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:33:58.214974+00:00",
-      "updated_at": "2026-03-24T04:33:58.214974+00:00"
-    },
-    {
-      "source_id": "300c62d3-8de2-495d-bcec-53b521c4fd35",
-      "article_id": "3570f70f-5eef-438a-aeec-5f26f9f5c1f9",
-      "label": "City of Pasig, Makati, Quezon City Municipal Codes: Local parking & traffic ordinances",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:33:58.214974+00:00",
-      "updated_at": "2026-03-24T04:33:58.214974+00:00"
-    },
-    {
-      "source_id": "6c5a51dd-c2fd-4a28-a2b1-9303f660bda8",
-      "article_id": "3570f70f-5eef-438a-aeec-5f26f9f5c1f9",
-      "label": "Institute of Transportation Engineers (ITE): Parking Generation & Site Access Design (international standard adapted to Philippine context)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 4,
-      "created_at": "2026-03-24T04:33:58.214974+00:00",
-      "updated_at": "2026-03-24T04:33:58.214974+00:00"
+      "source_id": "bp-344-2024-rirr-ncda-local",
+      "title": "BP 344 2024 Revised IRR - NCDA",
+      "source_type": "local_raw_pdf_with_locator_checked_refined_markdown",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "source_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+      "derivative_layer_role": "locator aid only",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "checked_markdown_lines": [
+        "BP 344 2024 IRR refined markdown lines 228-305"
+      ],
+      "source_locator": "BP 344 2024 IRR refined markdown lines 228-305"
     }
   ]
 }

@@ -1,0 +1,225 @@
+{
+  "artifact_type": "source_audit_evidence",
+  "batch_id": "source-audited-article-batch-014-local-first",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T23:05:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "status": "local_pass_ready_for_final_publishing_review",
+  "target": {
+    "article_id": "cd18af9a-b1e1-42d4-a254-ff5244838f19",
+    "slug": "lea-dsgn-005-11-core-concept",
+    "title": "Funeral Homes",
+    "folder": ".ai/content-audit-export/articles/lea-dsgn-005-11-core-concept--cd18af9a-b1e1-42d4-a254-ff5244838f19",
+    "normalized_path": ".ai/content-audit-export/articles/lea-dsgn-005-11-core-concept--cd18af9a-b1e1-42d4-a254-ff5244838f19/normalized.md",
+    "candidate_path": ".ai/content-audit-export/articles/lea-dsgn-005-11-core-concept--cd18af9a-b1e1-42d4-a254-ff5244838f19/candidate.md",
+    "sources_path": ".ai/content-audit-export/articles/lea-dsgn-005-11-core-concept--cd18af9a-b1e1-42d4-a254-ff5244838f19/sources.json",
+    "question_edits_folder": ".ai/content-audit-export/articles/lea-dsgn-005-11-core-concept--cd18af9a-b1e1-42d4-a254-ff5244838f19/question-edits",
+    "original_hash": "sha256:c7d1ef8cc3425d18357d5798e3271f2775d90549a273b825ee2f7571bc29f859",
+    "normalized_hash": "sha256:8af820f39bbf133a372509fe683f3aedc76eaada892cb96d9260a2c3bc6feb04",
+    "candidate_hash": "sha256:5bb2894621dc05aeb718dc3e19d0abf7d231143d415355b559d54e1928c84d67",
+    "sources_hash": "sha256:8ddc490a737b017c5b7ff02f072915638414a1ddfe15932f74111e333aa47a31",
+    "linked_questions_hash": "sha256:4b5c4373794427ea759c3deafdddfa62c9fc2e2ec9982434046227c0cac34535",
+    "question_edit_count": 10
+  },
+  "source_status_summary": "source_safe_rewrite_for_unsourced_funeral_room_hvac_and_area_numbers",
+  "local_sources": [
+    {
+      "source_id": "pd-1096-full-irr-occupancy-development-controls",
+      "label": "PD 1096 IRR - Full Implementing Rules and Regulations",
+      "authority": "Philippine National Building Code local source packet",
+      "source_type": "primary_law_raw_conversion",
+      "source_locator": "Occupancy groups, funeral parlors/memorial chapels in zoning tables, PSO/MACA/TOSL definitions, window openings",
+      "paths": [
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.pdf",
+          "sha256": "sha256:8e98d8afd4b5972ba5a82d33a65e59e800cd41661b764a0dfc4112d29697b341"
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.md",
+          "sha256": "sha256:74351a12fcecb23ef611e23e40f1e73b87e2bdb8f9a625e886dc1b906e83c940"
+        },
+        {
+          "path": "vitruvius-connection/003_Canonical-Knowledge-Layer/shared/sources/implementing-rules-and-regulations.md",
+          "sha256": "sha256:2c8c7c95eb110e83065c11b1370051dc5e191cb46932c11d2d37a5e7647537a5"
+        }
+      ],
+      "checked_markdown_lines": [
+        "raw markdown lines 1607-1665, 2495, 2595, 4020-4087, 7055, 7097, 7170, 7184, 9655",
+        "canonical source lines 1607-1665, 2495, 2595"
+      ],
+      "use": "supports occupancy classification, funeral use rows, development-control definitions, and 10% window-opening rule",
+      "local_source_checked": true
+    },
+    {
+      "source_id": "pd-1096-summary-light-egress-stair",
+      "label": "PD 1096 National Building Code Summary",
+      "authority": "Philippine National Building Code local source packet",
+      "source_type": "primary_law_summary_conversion",
+      "source_locator": "Window openings, egress width/travel distance, corridor and stair summary provisions",
+      "paths": [
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 - National Building Code Summary.pdf",
+          "sha256": "sha256:8923385a06f3122c2435989184e6691aa07bead89655d811d16071545e77f70e"
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 - National Building Code Summary.md",
+          "sha256": "sha256:897f4d4af3b9e673af24d36d77244f1cfc290d68bbd8be9934d36912c42838ca"
+        }
+      ],
+      "checked_markdown_lines": [
+        "raw markdown lines 436, 719-721, 743, 758, 872"
+      ],
+      "use": "supports window-opening ratio, corridor width, exit width, travel distance, and PD 1096 stair geometry references",
+      "local_source_checked": true
+    },
+    {
+      "source_id": "ra-9514-rirr-2019-egress-stairs-dead-end",
+      "label": "RA 9514 2019 Revised IRR",
+      "authority": "Bureau of Fire Protection / Fire Code local source packet",
+      "source_type": "implementing_rules_raw_conversion",
+      "source_locator": "Means of egress, dead-end limits, capacity factors, stair dimensions, ramp dimensions",
+      "paths": [
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+          "sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266"
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+          "sha256": "sha256:eb992b1c0090e1f8f34ee3ad24d20be3b4ffaa34ec3ab9d341b6f1596865dd26"
+        }
+      ],
+      "checked_markdown_lines": [
+        "raw markdown lines 2865-2900, 2936-2959, 3150-3208, 3255-3261, 3470-3479"
+      ],
+      "use": "supports egress capacity factors, general dead-end limit, new-stair dimensions, new-stair width table, and ramp dimensional criteria",
+      "local_source_checked": true
+    },
+    {
+      "source_id": "bp-344-2024-accessibility-elevator",
+      "label": "BP 344 2024 Revised IRR",
+      "authority": "National Council on Disability Affairs local source packet",
+      "source_type": "accessibility_irr_raw_conversion",
+      "source_locator": "Accessible elevators and vertical access provisions",
+      "paths": [
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+          "sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953"
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+          "sha256": "sha256:a621bcb059a5c023dc5056939a6fa8ae44b5f60a29918f628d81657b9639692a"
+        }
+      ],
+      "checked_markdown_lines": [
+        "raw markdown lines 1037-1048, 1054-1084, 1096-1107"
+      ],
+      "use": "supports accessible elevator clear dimensions, 900 mm door opening, controls, and vertical access provisions",
+      "local_source_checked": true
+    }
+  ],
+  "exported_source_records": [
+    {
+      "source_id": "cef9e28b-ea44-4759-937b-6f94046332f5",
+      "article_id": "cd18af9a-b1e1-42d4-a254-ff5244838f19",
+      "label": "National Building Code (PD 1096): Rule II (Occupancy Classification), Rule VI (Fire Safety/Separation), Rule III (Safety to Life)",
+      "url": null,
+      "source_type": "primary_law",
+      "description": null,
+      "is_verified": false,
+      "sort_order": 0,
+      "created_at": "2026-03-24T04:33:59.83296+00:00",
+      "updated_at": "2026-03-24T04:33:59.83296+00:00"
+    },
+    {
+      "source_id": "7a640d6f-f74c-4faf-bb8d-ae59eeddcbef",
+      "article_id": "cd18af9a-b1e1-42d4-a254-ff5244838f19",
+      "label": "Republic Act 4167: Funeral Services Board Regulations",
+      "url": null,
+      "source_type": "reference_standard",
+      "description": null,
+      "is_verified": false,
+      "sort_order": 1,
+      "created_at": "2026-03-24T04:33:59.83296+00:00",
+      "updated_at": "2026-03-24T04:33:59.83296+00:00"
+    },
+    {
+      "source_id": "41199a46-5eb7-4072-bd9f-b53f13edaac3",
+      "article_id": "cd18af9a-b1e1-42d4-a254-ff5244838f19",
+      "label": "BP 344 2024 Revised IRR: Accessibility Law",
+      "url": null,
+      "source_type": "implementing_rules",
+      "description": null,
+      "is_verified": false,
+      "sort_order": 2,
+      "created_at": "2026-03-24T04:33:59.83296+00:00",
+      "updated_at": "2026-03-24T04:33:59.83296+00:00"
+    },
+    {
+      "source_id": "a8dbdaac-7d43-4395-9a2c-88cebef9d30e",
+      "article_id": "cd18af9a-b1e1-42d4-a254-ff5244838f19",
+      "label": "RA 9514 2019 Revised IRR: Fire Code of the Philippines",
+      "url": null,
+      "source_type": "implementing_rules",
+      "description": null,
+      "is_verified": false,
+      "sort_order": 3,
+      "created_at": "2026-03-24T04:33:59.83296+00:00",
+      "updated_at": "2026-03-24T04:33:59.83296+00:00"
+    },
+    {
+      "source_id": "f36719e9-23ef-4cde-9349-c4acf3d8eba8",
+      "article_id": "cd18af9a-b1e1-42d4-a254-ff5244838f19",
+      "label": "Philippine Funeral Association (PFA): Guidelines for chapel sizing and ventilation",
+      "url": null,
+      "source_type": "reference_standard",
+      "description": null,
+      "is_verified": false,
+      "sort_order": 4,
+      "created_at": "2026-03-24T04:33:59.83296+00:00",
+      "updated_at": "2026-03-24T04:33:59.83296+00:00"
+    }
+  ],
+  "local_edits": {
+    "normalized_repaired": true,
+    "candidate_composed": true,
+    "ui_blocks_reviewed": true,
+    "question_edits_created": 10,
+    "answer_key_fields_changed": false,
+    "source_safe_rewrite_question_edits": 8,
+    "unresolved_external_source_gap_question_edits": 0
+  },
+  "source_gap_blockers": [],
+  "validation": {
+    "compose": {
+      "safe_to_diff": true,
+      "blockers": []
+    },
+    "diff": {
+      "changed": true,
+      "safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+      ]
+    },
+    "bundle_validate_dry_run": {
+      "valid": true,
+      "blockers": [],
+      "warnings": [
+        "component-usage.json has not been generated for this article yet."
+      ]
+    }
+  },
+  "question_edit_files": [
+    ".ai/content-audit-export/articles/lea-dsgn-005-11-core-concept--cd18af9a-b1e1-42d4-a254-ff5244838f19/question-edits/50cc5b35-126a-466c-83b9-5ae29ca35b33.json",
+    ".ai/content-audit-export/articles/lea-dsgn-005-11-core-concept--cd18af9a-b1e1-42d4-a254-ff5244838f19/question-edits/7be94c15-2df0-4cf2-8d2f-1317f457c215.json",
+    ".ai/content-audit-export/articles/lea-dsgn-005-11-core-concept--cd18af9a-b1e1-42d4-a254-ff5244838f19/question-edits/b6597105-cd1d-48ae-a414-76c955af5d67.json",
+    ".ai/content-audit-export/articles/lea-dsgn-005-11-core-concept--cd18af9a-b1e1-42d4-a254-ff5244838f19/question-edits/8c1258d5-8418-43bd-b42d-28acd94f3fef.json",
+    ".ai/content-audit-export/articles/lea-dsgn-005-11-core-concept--cd18af9a-b1e1-42d4-a254-ff5244838f19/question-edits/8f78cc91-4818-46f7-bd95-96ea1dccb762.json",
+    ".ai/content-audit-export/articles/lea-dsgn-005-11-core-concept--cd18af9a-b1e1-42d4-a254-ff5244838f19/question-edits/b374e763-5a3b-4f9b-a01c-b751cd3f5849.json",
+    ".ai/content-audit-export/articles/lea-dsgn-005-11-core-concept--cd18af9a-b1e1-42d4-a254-ff5244838f19/question-edits/d068304c-0d56-4a84-8334-b7edd956801c.json",
+    ".ai/content-audit-export/articles/lea-dsgn-005-11-core-concept--cd18af9a-b1e1-42d4-a254-ff5244838f19/question-edits/6a0afe2e-97ce-478b-b573-3b7ccd0c4bb1.json",
+    ".ai/content-audit-export/articles/lea-dsgn-005-11-core-concept--cd18af9a-b1e1-42d4-a254-ff5244838f19/question-edits/5c09446c-07d2-47b7-9a4f-ec833609d4b5.json",
+    ".ai/content-audit-export/articles/lea-dsgn-005-11-core-concept--cd18af9a-b1e1-42d4-a254-ff5244838f19/question-edits/9fce20e4-e5f8-477e-993c-f37525a875bb.json"
+  ]
+}

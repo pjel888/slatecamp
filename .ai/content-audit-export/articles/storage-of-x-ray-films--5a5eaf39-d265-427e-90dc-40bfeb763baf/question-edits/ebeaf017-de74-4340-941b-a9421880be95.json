@@ -1,0 +1,48 @@
+{
+  "question_id": "ebeaf017-de74-4340-941b-a9421880be95",
+  "baseline_hash": "sha256:34afea915745e9faa68a786676b0c25d916b703fc3ddec1790ee4b95f0dbeabe",
+  "action": "replace",
+  "reason": "source-audited-article-batch-039-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-039",
+  "approved_at": "2026-05-11T13:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-039-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 4306-4329"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 1401"
+  },
+  "proposed": {
+    "text": "What fire-resistive construction is required for vault door openings?",
+    "options": [
+      {
+        "id": "b039-5a5e-18-a",
+        "text": "Four-hour fire-resistive construction"
+      },
+      {
+        "id": "b039-5a5e-18-b",
+        "text": "One-hour fire-resistive construction"
+      },
+      {
+        "id": "b039-5a5e-18-c",
+        "text": "Two-hour fire-resistive construction"
+      },
+      {
+        "id": "b039-5a5e-18-d",
+        "text": "Three-fourths-hour fire-resistive construction"
+      }
+    ],
+    "correct_option_id": "b039-5a5e-18-a",
+    "rationale": "Correct answer: Four-hour fire-resistive construction. This is directly supported by PD 1096 2004 Revised IRR, Section 1401.",
+    "explanation": "The Batch 039 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 1401.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 1401"
+  }
+}

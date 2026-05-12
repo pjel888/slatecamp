@@ -1,0 +1,345 @@
+{
+  "batch_id": "source-audited-article-batch-066-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T23:46:00.000+08:00",
+  "target": {
+    "article_id": "17acdb19-55dc-4136-862d-62825aa8fb4b",
+    "slug": "lea-dsgn-007-06-core-concept",
+    "title": "Circulation",
+    "article_folder": ".ai/content-audit-export/articles/lea-dsgn-007-06-core-concept--17acdb19-55dc-4136-862d-62825aa8fb4b",
+    "normalized_sha256": "sha256:feb467d440212dc6911413a641cb00db6e2067d338d6307be4f71e64f134d771",
+    "candidate_sha256": "sha256:feb467d440212dc6911413a641cb00db6e2067d338d6307be4f71e64f134d771",
+    "candidate_path": ".ai/content-audit-export/articles/lea-dsgn-007-06-core-concept--17acdb19-55dc-4136-862d-62825aa8fb4b/candidate.md"
+  },
+  "classification": {
+    "legal_or_code_candidate": true,
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "source_risk_tier": "high",
+    "source_domains": [
+      "PD 1096 corridor and exit rules",
+      "RA 9514 educational egress/corridor rules",
+      "BP 344 accessible routes and passenger-path corridors"
+    ]
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdfs_checked_first": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "local_pdf_extraction_method": "python_pymupdf_local",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "bp344-2024-accessibility-routes-ramps-parking-local-b066",
+      "label": "BP 344 2024 Revised IRR - accessible routes, ramps, parking, signs, stairs, elevators, and public-use building definitions",
+      "authority": "NCDA/Official Gazette BP 344 2024 revised IRR local raw PDF conversion",
+      "source_type": "accessibility_irr_pdf",
+      "source_locator": "BP 344 2024 refined markdown lines 40-70, 198-230, 230-304, 338-350, 450-465, 1349-1350, 1560-1604, 1645-1651, 1661, 1749, and 1827; raw PDF pages 2, 7, 10, 16, 56, 65-67, 70, and 74 checked by local PDF extraction",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "checked_markdown_lines": [
+        "BP 344 2024 refined markdown lines 40-70",
+        "BP 344 2024 refined markdown lines 198-230",
+        "BP 344 2024 refined markdown lines 230-304",
+        "BP 344 2024 refined markdown lines 338-350",
+        "BP 344 2024 refined markdown lines 450-465",
+        "BP 344 2024 refined markdown lines 1349-1350",
+        "BP 344 2024 refined markdown lines 1560-1604",
+        "BP 344 2024 refined markdown lines 1645-1651",
+        "BP 344 2024 refined markdown line 1661",
+        "BP 344 2024 refined markdown line 1749",
+        "BP 344 2024 refined markdown line 1827"
+      ],
+      "checked_raw_pdf_pages": [
+        "BP 344 2024 raw PDF page 2",
+        "BP 344 2024 raw PDF page 7",
+        "BP 344 2024 raw PDF page 10",
+        "BP 344 2024 raw PDF page 16",
+        "BP 344 2024 raw PDF page 56",
+        "BP 344 2024 raw PDF pages 65-67",
+        "BP 344 2024 raw PDF page 70",
+        "BP 344 2024 raw PDF page 74"
+      ],
+      "use": "primary local source for accessibility routes, ramps, parking, signs, stairs, elevators, door clear width, areas of refuge, and public-use building coverage",
+      "local_source_checked": true
+    },
+    {
+      "source_id": "pd1096-rirr-plan-egress-stair-local-b066",
+      "label": "PD 1096 RIRR 2004 - architectural documents, accessibility facility details, exits, corridors, doors, and stairways",
+      "authority": "DPWH official revised IRR local raw PDF conversion",
+      "source_type": "building_code_irr_pdf",
+      "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 560-592, 625-631, and 3488-3567; raw PDF pages 23-28 and 193-195 checked by local PDF extraction",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "checked_markdown_lines": [
+        "PD 1096 RIRR DPWH Official refined markdown lines 560-592",
+        "PD 1096 RIRR DPWH Official refined markdown lines 625-631",
+        "PD 1096 RIRR DPWH Official refined markdown lines 3488-3567"
+      ],
+      "checked_raw_pdf_pages": [
+        "PD 1096 RIRR DPWH Official raw PDF pages 23-28",
+        "PD 1096 RIRR DPWH Official raw PDF pages 193-195"
+      ],
+      "use": "primary local source for floor-plan/document requirements, accessibility facility plans, egress, corridors, doors, and stair dimensions",
+      "local_source_checked": true
+    },
+    {
+      "source_id": "ra9514-rirr-egress-separation-education-local-b066",
+      "label": "RA 9514 Revised IRR 2019 - means of egress, exit enclosure, educational exits, corridors, dead ends, and hazardous-area separation",
+      "authority": "Bureau of Fire Protection revised IRR local raw PDF conversion",
+      "source_type": "fire_code_irr_pdf",
+      "source_locator": "RA 9514 RIRR refined markdown lines 2601-2658, 4275-4321, and 4381-4394; raw PDF pages 102, 142-143, and 149 checked by local PDF extraction",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+      "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+      "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+      "checked_markdown_lines": [
+        "RA 9514 RIRR refined markdown lines 2601-2658",
+        "RA 9514 RIRR refined markdown lines 4275-4321",
+        "RA 9514 RIRR refined markdown lines 4381-4394"
+      ],
+      "checked_raw_pdf_pages": [
+        "RA 9514 RIRR raw PDF page 102",
+        "RA 9514 RIRR raw PDF pages 142-143",
+        "RA 9514 RIRR raw PDF page 149"
+      ],
+      "use": "primary local source for egress capacity, protective exit enclosure, educational corridor/exit/travel-distance rules, and hazardous-area separation",
+      "local_source_checked": true
+    },
+    {
+      "source_id": "pd9514-fire-code-life-safety-local-b066",
+      "label": "PD 9514 Fire Code source family - general life-safety and egress requirements",
+      "authority": "Fire Code local raw PDF conversion",
+      "source_type": "fire_code_pdf",
+      "source_locator": "PD 9514 Fire Code refined markdown lines 1599-1629 and 1655-1719; raw PDF pages 57-63 checked for matching life-safety and occupancy text",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf",
+      "raw_pdf_sha256": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-9514/PD 9514 - Fire Code of the Philippines.md",
+      "refined_markdown_sha256": "sha256:5eb0584f1bcbfa87044e28f2e59a75c6364c7160a98edfdd888c6aef849b01b2",
+      "checked_markdown_lines": [
+        "PD 9514 Fire Code refined markdown lines 1599-1629",
+        "PD 9514 Fire Code refined markdown lines 1655-1719"
+      ],
+      "checked_raw_pdf_pages": [
+        "PD 9514 Fire Code raw PDF pages 57-63"
+      ],
+      "use": "supporting local source for general life-safety, occupancy, exits, warning systems, and egress checks",
+      "local_source_checked": true
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "article-corridor",
+      "claim_text": "PD 1096 gives checked corridor width, obstruction, access-to-exits, dead-end, and corridor construction rules.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "pd1096-rirr-plan-egress-stair-local-b066",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 refined markdown lines 3535-3543; raw PDF page 194",
+        "quoted_pdf_excerpt": "Checked local raw PDF page and refined line locator recorded; article uses paraphrase only."
+      }
+    },
+    {
+      "claim_id": "article-ra9514-education-circulation",
+      "claim_text": "RA 9514 educational egress rules include corridor width, travel distance, exit arrangement, and dead-end controls.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9514-rirr-egress-separation-education-local-b066",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 refined markdown lines 4296-4321; raw PDF pages 142-143",
+        "quoted_pdf_excerpt": "Checked local raw PDF page and refined line locator recorded; article uses paraphrase only."
+      }
+    },
+    {
+      "claim_id": "article-accessible-circulation",
+      "claim_text": "BP 344 2024 defines accessible route and accessible passenger-path corridor width.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "bp344-2024-accessibility-routes-ramps-parking-local-b066",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+        "source_locator": "BP 344 2024 refined markdown lines 1558-1570 and 1645-1651; raw PDF pages 65 and 70",
+        "quoted_pdf_excerpt": "Checked local raw PDF page and refined line locator recorded; article uses paraphrase only."
+      }
+    },
+    {
+      "claim_id": "question-db1f408a-512e-44f7-8083-e69db48de6ca",
+      "claim_text": "Question edit db1f408a-512e-44f7-8083-e69db48de6ca is rewritten to the Batch 066 checked local raw-source scope for lea-dsgn-007-06-core-concept.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "bp344-2024-accessibility-routes-ramps-parking-local-b066",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+        "source_locator": "BP 344 2024 refined markdown lines 40-70, 198-230, 230-304, 338-350, 450-465, 1349-1350, 1560-1604, 1645-1651, 1661, 1749, and 1827; raw PDF pages 2, 7, 10, 16, 56, 65-67, 70, and 74 checked by local PDF extraction; PD 1096 RIRR DPWH Official refined markdown lines 560-592, 625-631, and 3488-3567; raw PDF pages 23-28 and 193-195 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2601-2658, 4275-4321, and 4381-4394; raw PDF pages 102, 142-143, and 149 checked by local PDF extraction; PD 9514 Fire Code refined markdown lines 1599-1629 and 1655-1719; raw PDF pages 57-63 checked for matching life-safety and occupancy text",
+        "quoted_pdf_excerpt": "Question content is source-safe rewrite; see proposed code_citation for precise checked locator."
+      }
+    },
+    {
+      "claim_id": "question-031d88a8-722e-42af-8173-8a4c79b1e274",
+      "claim_text": "Question edit 031d88a8-722e-42af-8173-8a4c79b1e274 is rewritten to the Batch 066 checked local raw-source scope for lea-dsgn-007-06-core-concept.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "bp344-2024-accessibility-routes-ramps-parking-local-b066",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+        "source_locator": "BP 344 2024 refined markdown lines 40-70, 198-230, 230-304, 338-350, 450-465, 1349-1350, 1560-1604, 1645-1651, 1661, 1749, and 1827; raw PDF pages 2, 7, 10, 16, 56, 65-67, 70, and 74 checked by local PDF extraction; PD 1096 RIRR DPWH Official refined markdown lines 560-592, 625-631, and 3488-3567; raw PDF pages 23-28 and 193-195 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2601-2658, 4275-4321, and 4381-4394; raw PDF pages 102, 142-143, and 149 checked by local PDF extraction; PD 9514 Fire Code refined markdown lines 1599-1629 and 1655-1719; raw PDF pages 57-63 checked for matching life-safety and occupancy text",
+        "quoted_pdf_excerpt": "Question content is source-safe rewrite; see proposed code_citation for precise checked locator."
+      }
+    },
+    {
+      "claim_id": "question-4198d010-01f1-4143-b7ce-c3d8427b092f",
+      "claim_text": "Question edit 4198d010-01f1-4143-b7ce-c3d8427b092f is rewritten to the Batch 066 checked local raw-source scope for lea-dsgn-007-06-core-concept.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "bp344-2024-accessibility-routes-ramps-parking-local-b066",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+        "source_locator": "BP 344 2024 refined markdown lines 40-70, 198-230, 230-304, 338-350, 450-465, 1349-1350, 1560-1604, 1645-1651, 1661, 1749, and 1827; raw PDF pages 2, 7, 10, 16, 56, 65-67, 70, and 74 checked by local PDF extraction; PD 1096 RIRR DPWH Official refined markdown lines 560-592, 625-631, and 3488-3567; raw PDF pages 23-28 and 193-195 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2601-2658, 4275-4321, and 4381-4394; raw PDF pages 102, 142-143, and 149 checked by local PDF extraction; PD 9514 Fire Code refined markdown lines 1599-1629 and 1655-1719; raw PDF pages 57-63 checked for matching life-safety and occupancy text",
+        "quoted_pdf_excerpt": "Question content is source-safe rewrite; see proposed code_citation for precise checked locator."
+      }
+    },
+    {
+      "claim_id": "question-58a10dca-18ec-4ecb-91d5-c756988f65e9",
+      "claim_text": "Question edit 58a10dca-18ec-4ecb-91d5-c756988f65e9 is rewritten to the Batch 066 checked local raw-source scope for lea-dsgn-007-06-core-concept.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "bp344-2024-accessibility-routes-ramps-parking-local-b066",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+        "source_locator": "BP 344 2024 refined markdown lines 40-70, 198-230, 230-304, 338-350, 450-465, 1349-1350, 1560-1604, 1645-1651, 1661, 1749, and 1827; raw PDF pages 2, 7, 10, 16, 56, 65-67, 70, and 74 checked by local PDF extraction; PD 1096 RIRR DPWH Official refined markdown lines 560-592, 625-631, and 3488-3567; raw PDF pages 23-28 and 193-195 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2601-2658, 4275-4321, and 4381-4394; raw PDF pages 102, 142-143, and 149 checked by local PDF extraction; PD 9514 Fire Code refined markdown lines 1599-1629 and 1655-1719; raw PDF pages 57-63 checked for matching life-safety and occupancy text",
+        "quoted_pdf_excerpt": "Question content is source-safe rewrite; see proposed code_citation for precise checked locator."
+      }
+    },
+    {
+      "claim_id": "question-477ee9dc-2d6e-4147-a8e9-d042824b1a3f",
+      "claim_text": "Question edit 477ee9dc-2d6e-4147-a8e9-d042824b1a3f is rewritten to the Batch 066 checked local raw-source scope for lea-dsgn-007-06-core-concept.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "bp344-2024-accessibility-routes-ramps-parking-local-b066",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+        "source_locator": "BP 344 2024 refined markdown lines 40-70, 198-230, 230-304, 338-350, 450-465, 1349-1350, 1560-1604, 1645-1651, 1661, 1749, and 1827; raw PDF pages 2, 7, 10, 16, 56, 65-67, 70, and 74 checked by local PDF extraction; PD 1096 RIRR DPWH Official refined markdown lines 560-592, 625-631, and 3488-3567; raw PDF pages 23-28 and 193-195 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2601-2658, 4275-4321, and 4381-4394; raw PDF pages 102, 142-143, and 149 checked by local PDF extraction; PD 9514 Fire Code refined markdown lines 1599-1629 and 1655-1719; raw PDF pages 57-63 checked for matching life-safety and occupancy text",
+        "quoted_pdf_excerpt": "Question content is source-safe rewrite; see proposed code_citation for precise checked locator."
+      }
+    },
+    {
+      "claim_id": "question-0d9b0502-f89b-49e1-a15c-924f3d8fdb98",
+      "claim_text": "Question edit 0d9b0502-f89b-49e1-a15c-924f3d8fdb98 is rewritten to the Batch 066 checked local raw-source scope for lea-dsgn-007-06-core-concept.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "bp344-2024-accessibility-routes-ramps-parking-local-b066",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+        "source_locator": "BP 344 2024 refined markdown lines 40-70, 198-230, 230-304, 338-350, 450-465, 1349-1350, 1560-1604, 1645-1651, 1661, 1749, and 1827; raw PDF pages 2, 7, 10, 16, 56, 65-67, 70, and 74 checked by local PDF extraction; PD 1096 RIRR DPWH Official refined markdown lines 560-592, 625-631, and 3488-3567; raw PDF pages 23-28 and 193-195 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2601-2658, 4275-4321, and 4381-4394; raw PDF pages 102, 142-143, and 149 checked by local PDF extraction; PD 9514 Fire Code refined markdown lines 1599-1629 and 1655-1719; raw PDF pages 57-63 checked for matching life-safety and occupancy text",
+        "quoted_pdf_excerpt": "Question content is source-safe rewrite; see proposed code_citation for precise checked locator."
+      }
+    },
+    {
+      "claim_id": "question-829bc940-9a16-414d-9b8a-02ac0bc2b8f4",
+      "claim_text": "Question edit 829bc940-9a16-414d-9b8a-02ac0bc2b8f4 is rewritten to the Batch 066 checked local raw-source scope for lea-dsgn-007-06-core-concept.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "bp344-2024-accessibility-routes-ramps-parking-local-b066",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+        "source_locator": "BP 344 2024 refined markdown lines 40-70, 198-230, 230-304, 338-350, 450-465, 1349-1350, 1560-1604, 1645-1651, 1661, 1749, and 1827; raw PDF pages 2, 7, 10, 16, 56, 65-67, 70, and 74 checked by local PDF extraction; PD 1096 RIRR DPWH Official refined markdown lines 560-592, 625-631, and 3488-3567; raw PDF pages 23-28 and 193-195 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2601-2658, 4275-4321, and 4381-4394; raw PDF pages 102, 142-143, and 149 checked by local PDF extraction; PD 9514 Fire Code refined markdown lines 1599-1629 and 1655-1719; raw PDF pages 57-63 checked for matching life-safety and occupancy text",
+        "quoted_pdf_excerpt": "Question content is source-safe rewrite; see proposed code_citation for precise checked locator."
+      }
+    },
+    {
+      "claim_id": "question-679cb3cb-74dd-4f37-953b-7cd33979e88c",
+      "claim_text": "Question edit 679cb3cb-74dd-4f37-953b-7cd33979e88c is rewritten to the Batch 066 checked local raw-source scope for lea-dsgn-007-06-core-concept.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "bp344-2024-accessibility-routes-ramps-parking-local-b066",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+        "source_locator": "BP 344 2024 refined markdown lines 40-70, 198-230, 230-304, 338-350, 450-465, 1349-1350, 1560-1604, 1645-1651, 1661, 1749, and 1827; raw PDF pages 2, 7, 10, 16, 56, 65-67, 70, and 74 checked by local PDF extraction; PD 1096 RIRR DPWH Official refined markdown lines 560-592, 625-631, and 3488-3567; raw PDF pages 23-28 and 193-195 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2601-2658, 4275-4321, and 4381-4394; raw PDF pages 102, 142-143, and 149 checked by local PDF extraction; PD 9514 Fire Code refined markdown lines 1599-1629 and 1655-1719; raw PDF pages 57-63 checked for matching life-safety and occupancy text",
+        "quoted_pdf_excerpt": "Question content is source-safe rewrite; see proposed code_citation for precise checked locator."
+      }
+    },
+    {
+      "claim_id": "question-c08c2aba-524c-49fe-bc6c-483c799487b9",
+      "claim_text": "Question edit c08c2aba-524c-49fe-bc6c-483c799487b9 is rewritten to the Batch 066 checked local raw-source scope for lea-dsgn-007-06-core-concept.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "bp344-2024-accessibility-routes-ramps-parking-local-b066",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+        "source_locator": "BP 344 2024 refined markdown lines 40-70, 198-230, 230-304, 338-350, 450-465, 1349-1350, 1560-1604, 1645-1651, 1661, 1749, and 1827; raw PDF pages 2, 7, 10, 16, 56, 65-67, 70, and 74 checked by local PDF extraction; PD 1096 RIRR DPWH Official refined markdown lines 560-592, 625-631, and 3488-3567; raw PDF pages 23-28 and 193-195 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2601-2658, 4275-4321, and 4381-4394; raw PDF pages 102, 142-143, and 149 checked by local PDF extraction; PD 9514 Fire Code refined markdown lines 1599-1629 and 1655-1719; raw PDF pages 57-63 checked for matching life-safety and occupancy text",
+        "quoted_pdf_excerpt": "Question content is source-safe rewrite; see proposed code_citation for precise checked locator."
+      }
+    },
+    {
+      "claim_id": "question-d83f0766-88b2-44c7-b654-1c51c0dcd584",
+      "claim_text": "Question edit d83f0766-88b2-44c7-b654-1c51c0dcd584 is rewritten to the Batch 066 checked local raw-source scope for lea-dsgn-007-06-core-concept.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "bp344-2024-accessibility-routes-ramps-parking-local-b066",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+        "source_locator": "BP 344 2024 refined markdown lines 40-70, 198-230, 230-304, 338-350, 450-465, 1349-1350, 1560-1604, 1645-1651, 1661, 1749, and 1827; raw PDF pages 2, 7, 10, 16, 56, 65-67, 70, and 74 checked by local PDF extraction; PD 1096 RIRR DPWH Official refined markdown lines 560-592, 625-631, and 3488-3567; raw PDF pages 23-28 and 193-195 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2601-2658, 4275-4321, and 4381-4394; raw PDF pages 102, 142-143, and 149 checked by local PDF extraction; PD 9514 Fire Code refined markdown lines 1599-1629 and 1655-1719; raw PDF pages 57-63 checked for matching life-safety and occupancy text",
+        "quoted_pdf_excerpt": "Question content is source-safe rewrite; see proposed code_citation for precise checked locator."
+      }
+    }
+  ],
+  "local_repairs": [
+    "Removed UI placeholder text and internal study notes from normalized.md.",
+    "Replaced linked questions with source-safe MCQ edits tied to Batch 066 checked raw PDF/source-family evidence.",
+    "Preserved roundtrip ownership by setting ui-blocks.json to zero extracted UI blocks and regenerating candidate via compose."
+  ],
+  "scenario_enrichment_policy": {
+    "status": "eligible-deferred",
+    "note": "Scenario enrichment policy is pending. No Real World Scenario section was blindly added; article correctness and question support remained the gate."
+  },
+  "unverified_or_rejected_claims": [
+    "RA 7277, RA 9442, RA 10754, discount/VAT privileges, criminal penalty details, generic ergonomic formulas, and non-audited drafting conventions were excluded unless supported by the checked Batch 066 source families."
+  ],
+  "sme_review": {
+    "required_for_final_publishing": true,
+    "status": "local_source_audit_pass_pending_human_final_review"
+  },
+  "overall": {
+    "status": "PASS_LOCAL_FIRST",
+    "blockers": [],
+    "candidate_hash_matches_evidence": true,
+    "linked_question_edit_count": 10,
+    "question_edit_count": 10
+  }
+}

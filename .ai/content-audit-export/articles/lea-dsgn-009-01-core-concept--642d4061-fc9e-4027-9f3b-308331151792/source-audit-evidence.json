@@ -1,0 +1,112 @@
+{
+  "artifact_type": "source_audit_evidence",
+  "batch_id": "source-audited-article-batch-060-local-first",
+  "batch_number": 60,
+  "audit_mode": "local_first_raw_pdf_primary",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T21:02:00.000+08:00",
+  "target": {
+    "article_id": "642d4061-fc9e-4027-9f3b-308331151792",
+    "slug": "lea-dsgn-009-01-core-concept",
+    "title": "Passive design",
+    "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-009-01-core-concept--642d4061-fc9e-4027-9f3b-308331151792",
+    "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-009-01-core-concept--642d4061-fc9e-4027-9f3b-308331151792/question-edits",
+    "linked_questions": 10,
+    "question_edits": 10,
+    "candidate_sha256": "sha256:f324d3d5a0fa9f86c7d69f15e0004d04d576eda29400a4016d5ffb59779687db"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth": "vitruvius-connection/001_Raw-Source-Layer local raw PDFs",
+    "derivative_or_search_layers_used_as_primary_truth": false,
+    "refined_markdown_used_only_as_locator": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": [],
+    "checked_sources": [
+      {
+        "source_id": "toa4-tropical-architecture-local-raw-pdf--b060-642d4061-01",
+        "label": "TOA 4 Tropical Architecture - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+        "raw_pdf_sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+        "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+        "locator": "TOA 4 Tropical Architecture refined markdown lines 513-591, 622-670, 708-874, 1201-1247, and raw PDF pages 71-78, 81-84, 87-90, 92-100, 104, 106-110, 121, and 140"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "theory-of-architecture-tropical-design",
+    "contains_legal_or_code_claims": false,
+    "source_risk_tier": "medium",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": [
+      "ea4d3a09-5698-4720-a111-7425feb67ce6",
+      "4d14a17b-5205-42de-b1f0-21399470f6eb",
+      "a85b4f29-020b-4c4b-9ca2-534df7dac80d",
+      "e13ea937-593d-4c9e-971d-26d689f54651",
+      "b5c1e2a3-768f-4b97-9a0b-2ed0ffcafa7e",
+      "fd405ab5-8836-4599-89e1-b7bdaa925192",
+      "614a0eb8-5f1a-4ccb-add0-cb226e4c8db6",
+      "f9e1e302-7868-4921-aee9-2f797294f837",
+      "73b403ab-fe9a-4984-ab7d-ad343f251a6f",
+      "a4be99e9-1eea-413b-9d13-0f8cf7584854"
+    ],
+    "scenario_policy_status": "eligible-deferred",
+    "scenario_policy_reason": "A realistic tropical-site scenario could be useful, but Batch 060 defers scenario enrichment so source-audited article/question correctness remains the only blocking gate."
+  },
+  "claims": [
+    {
+      "claim_id": "lea-dsgn-009-01-core-concept-b060-claim-01",
+      "claim_text": "Passive design is limited to checked local raw PDF TOA 4 Tropical Architecture source locators recorded for this article.",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+        "quoted_pdf_excerpt": "TOA 4 Tropical Architecture refined markdown lines 513-591, 622-670, 708-874, 1201-1247, and raw PDF pages 71-78, 81-84, 87-90, 92-100, 104, 106-110, 121, and 140",
+        "source_ids": [
+          "toa4-tropical-architecture-local-raw-pdf--b060-642d4061-01"
+        ]
+      },
+      "audit_result": "PASS"
+    }
+  ],
+  "checked_markdown_lines": [
+    "TOA 4 Tropical Architecture refined markdown lines 513-591",
+    "TOA 4 Tropical Architecture refined markdown lines 622-670",
+    "TOA 4 Tropical Architecture refined markdown lines 708-874",
+    "TOA 4 Tropical Architecture refined markdown lines 1201-1247"
+  ],
+  "checked_pdf_pages": "raw PDF pages 71-78, 81-84, 87-90, 92-100, 104, 106-110, 121, 140, 143-148, 151, 163, 172, 180-181, 187, and 194",
+  "unverified_or_rejected_claims": [],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "local_first_only": true,
+    "supabase_write_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json",
+    "diff_gate": "safe_true_blockers_zero",
+    "validate_gate": "valid_true_blockers_zero",
+    "ui_block_edits_gate": "valid_true_blockers_zero"
+  },
+  "sme_review": {
+    "required": false,
+    "required_before_publication": true,
+    "status": "not_started_local_first_batch",
+    "note": "Local-first source audit is ready for later human/SME review before final publishing."
+  },
+  "overall": {
+    "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": [
+      "Human/SME review remains pending before final publishing."
+    ]
+  }
+}

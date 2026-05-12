@@ -1,0 +1,59 @@
+{
+  "question_id": "f575d263-9018-4efd-8a53-ea5376ce29d2",
+  "baseline_hash": "sha256:d3ef4ad4d3f98c7f891d2709f6827c9e9dc7f140ee4730421c5383af99e947a2",
+  "action": "replace",
+  "reason": "source-audited-article-batch-081-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-010-07-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-081",
+  "approved_at": "2026-05-12T04:40:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "708fd4a4-e06f-4255-a2ad-e56711b9ee43",
+    "parent_article_slug": "lea-matl-010-07-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Fajardo Simplified Methods refined markdown lines 3173-3270 and 3643-3652; raw PDF pages 100 and 110 checked by local PyMuPDF extraction; AISC raw PDF hash checked but text extraction returned no usable locator, so AISC was not used for asserted claims",
+    "checked_markdown_lines": [
+      "Fajardo Simplified Methods refined markdown lines 3173-3270 and 3643-3652; raw PDF pages 100 and 110 checked by local PyMuPDF extraction; AISC raw PDF hash checked but text extraction returned no usable locator, so AISC was not used for asserted claims"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "fajardo-simplified-methods-b081",
+        "label": "Simplified Methods on Building Construction by Max Fajardo",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Simplified Methods on Building Construction by Max Fajardo.pdf",
+        "sha256": "sha256:7112a749fe9d3a5c84c7f042cb71500f9c97d69ad37adb85347a93d093331582",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Simplified Methods on Building Construction by Max Fajardo.md",
+        "raw_markdown_sha256": "sha256:8d53840352aef129d3996e6b5c61adb8a0a6cc5c7743c909930d163494610a21",
+        "locator": "Fajardo Simplified Methods refined markdown lines 3173-3270 and 3643-3652; raw PDF pages 100 and 110 checked by local PyMuPDF extraction; AISC raw PDF hash checked but text extraction returned no usable locator, so AISC was not used for asserted claims"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 081 local raw-source-audited steel unit-weight estimating scope."
+  },
+  "proposed": {
+    "text": "What should control the unit weight of a steel member in an LEA takeoff item?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The table or problem statement unit weight"
+      },
+      {
+        "id": "b",
+        "text": "A guessed section weight"
+      },
+      {
+        "id": "c",
+        "text": "The member color"
+      },
+      {
+        "id": "d",
+        "text": "The room finish"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Fajardo warns estimators to verify weight per meter or weight per bar length from the applicable table.",
+    "explanation": "Fajardo warns estimators to verify weight per meter or weight per bar length from the applicable table.",
+    "code_citation": "Simplified Methods on Building Construction by Max Fajardo",
+    "bloom_level": "apply",
+    "application_context": "source_audited_local_first_batch_081",
+    "practice_context": [],
+    "difficulty": 0.5
+  }
+}

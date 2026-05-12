@@ -1,0 +1,165 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-048-local-first",
+  "batch_number": 48,
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T19:48:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "aef59aa2-220e-47fc-9492-6b2bd98f9bea",
+    "slug": "fire-resistive-construction-ratings",
+    "title": "Fire Resistive Construction Ratings",
+    "article_folder": ".ai/content-audit-export/articles/fire-resistive-construction-ratings--aef59aa2-220e-47fc-9492-6b2bd98f9bea",
+    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-resistive-construction-ratings--aef59aa2-220e-47fc-9492-6b2bd98f9bea",
+    "candidate_path": ".ai/content-audit-export/articles/fire-resistive-construction-ratings--aef59aa2-220e-47fc-9492-6b2bd98f9bea/candidate.md",
+    "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-resistive-construction-ratings--aef59aa2-220e-47fc-9492-6b2bd98f9bea/candidate.md",
+    "question_edits_folder": ".ai/content-audit-export/articles/fire-resistive-construction-ratings--aef59aa2-220e-47fc-9492-6b2bd98f9bea/question-edits",
+    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-resistive-construction-ratings--aef59aa2-220e-47fc-9492-6b2bd98f9bea/question-edits",
+    "normalized_sha256": "sha256:72289f6f4bb6448c6908c40cb7d08019ea1070a58c43cc9ff89e49456a64c0ec",
+    "candidate_sha256": "sha256:72289f6f4bb6448c6908c40cb7d08019ea1070a58c43cc9ff89e49456a64c0ec",
+    "linked_questions_sha256": "sha256:af02b80ec1805dc507044970ec2dfdd463fc6e0bf306e9682b37e5adf5ec6980",
+    "sources_sha256": "sha256:2090eed3c21f5c01492c36ddd24ef151975b38e4c15a39d208a2e275b5450dd2"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "refined_markdown_role": "locator_only",
+    "derivative_or_search_layer_as_primary": false,
+    "source_families_checked": [
+      {
+        "label": "PD 1096 IRR Full Implementing Rules and Regulations - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.pdf",
+        "raw_pdf_sha256": "sha256:8e98d8afd4b5972ba5a82d33a65e59e800cd41661b764a0dfc4112d29697b341",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.md",
+        "refined_markdown_sha256": "sha256:a43068979bbca37450a11ed16cbb966e2aff6d682cdded1ab3bf22b1d541efd0",
+        "locator": "PD 1096 IRR refined markdown lines 1243-1252, 1334-1378, 3009-3138, 3750-3825, 8637-8810, and 9180-9514"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "fire-resistive-construction-ratings_article",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 46,
+    "question_edits_created": [
+      "72f60314-e205-4bd8-addf-b87f090be4b5",
+      "6c7d2f87-bde2-466e-91d9-f51a4fdf41c1",
+      "52ef3c70-0bc1-4451-9af3-165493e4700a",
+      "149fedb3-cbcb-478a-8189-e93867a34ce7",
+      "3348b911-4b9a-4cfa-9bc7-a0b6de59d7d8",
+      "c30c68f6-5e8f-45a4-9c9d-1323bebd6bd7",
+      "1281215d-aa84-4c56-8cdd-72101592a27e",
+      "8aabadfe-2ae3-44d1-ace4-77019144c0d5",
+      "51cc8390-4441-44ec-b9e0-bab0f1836cd9",
+      "bd7d31fc-7e6f-452f-b181-6dd8407b330e",
+      "9de54e70-a45d-4fb6-b1de-73011025a842",
+      "8b3bf5a3-be84-4d9a-ad89-948a844b93f8",
+      "6a11aa7e-b15a-45a1-894c-a6eaa5192542",
+      "701ec0b8-985f-467f-bdec-3928322309c9",
+      "cf4ea11e-8ff2-4274-82a8-f095c50ccd68",
+      "c32f751d-a0a4-4b8b-bb43-680331555968",
+      "3e152b4b-754e-4fad-a573-bf95a527d5c3",
+      "8cf50104-5659-4c24-a1cc-3254ba528268",
+      "4debf16d-91e3-4c90-824d-159a96d819ab",
+      "d0175ee0-c45c-410e-a635-06ee9c6f4f71",
+      "c15fe29e-77ed-4b9d-95e2-52ffcf5a14cf",
+      "ae8a42e4-14d2-4b5b-b995-b4a60d37a2c8",
+      "6f106df3-22ad-4360-8a65-df87cab460fa",
+      "43c452e4-7309-46a9-b0aa-2eef68a280ad",
+      "a16a7f47-d69e-4e57-8cf2-2fe4631f417b",
+      "db80db19-501b-4a44-9f8a-b5d795d55ec0",
+      "18cc2dd7-3f5c-471f-90bd-3b5c70e63375",
+      "1912f534-c56f-42e8-a71b-26c3c0a72f99",
+      "a21fab40-b10e-4973-ad9b-7b5b1c70b302",
+      "f762acc8-f312-4a34-8a01-a59d9e34649f",
+      "34b7cf16-8106-4099-b161-83e861bfb22d",
+      "d9bcaa95-ab9a-4e82-b0b4-df05b8f51a40",
+      "9e0d2950-4704-4137-968f-be2c83ae14ab",
+      "83105932-872f-450b-bcb4-dc70758937ab",
+      "d519503e-4080-489a-9067-e9a9512b1516",
+      "cd29695f-8552-4a6c-9e9f-479d2ec32853",
+      "bcbd03d2-ca68-4bbf-9de8-6a9538c24b55",
+      "b935913c-178d-4f61-918c-e51ac36b30d5",
+      "32689bdf-4836-45bd-889f-e99bb03ef924",
+      "5f1b76e4-f907-470e-89fe-286311c973b4",
+      "a2401275-ed4a-4238-8a42-532ae38cb8a1",
+      "d2f844f6-e213-483f-9cad-cef5ebf63835",
+      "cfc90f37-c4f7-42c8-bbdb-6a29d5775549",
+      "b35dd95f-a2c9-43d7-99cf-5d2b5e73ceaa",
+      "462cc4f3-f128-4a9b-a383-23b48a59e6de",
+      "e91586c8-574f-4bc9-ae40-a1733f9442bb"
+    ]
+  },
+  "claims": [
+    {
+      "claim_id": "fire-resistive-construction-ratings-b048-claim-01",
+      "claim_text": "Rule IV classifies Type I through Type V construction and ties types to material and protection approaches.",
+      "source_support": [
+        "pd1096-irr-full-local-raw-pdf--b048-aef59aa2-01"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "fire-resistive-construction-ratings-b048-claim-02",
+      "claim_text": "Rule IV Section 403 assigns minimum fire-resistive requirements by building element rather than by type name alone.",
+      "source_support": [
+        "pd1096-irr-full-local-raw-pdf--b048-aef59aa2-01"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "fire-resistive-construction-ratings-b048-claim-03",
+      "claim_text": "Rule VI Sections 601 and 602 define fire-resistive rating and fire-resistive time-period rating.",
+      "source_support": [
+        "pd1096-irr-full-local-raw-pdf--b048-aef59aa2-01"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "fire-resistive-construction-ratings-b048-claim-04",
+      "claim_text": "Rule VI Section 603 gives minimum thickness values for specific material and assembly categories.",
+      "source_support": [
+        "pd1096-irr-full-local-raw-pdf--b048-aef59aa2-01"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "fire-resistive-construction-ratings-b048-claim-05",
+      "claim_text": "Occupancy separations are classified as one-hour, two-hour, three-hour, or four-hour fire-resistive separations.",
+      "source_support": [
+        "pd1096-irr-full-local-raw-pdf--b048-aef59aa2-01"
+      ],
+      "audit_result": "PASS"
+    }
+  ],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "removed_risk_notes": [
+      "Old local-batch ownership markers in sidecars refreshed to Batch 048.",
+      "Question sidecars replaced with checked local raw-source citations.",
+      "Stale compose-error sidecars removed where selected bundle compose succeeds."
+    ]
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_batch_048_complete": true,
+    "remote_publish_status": "not_attempted_by_request",
+    "remaining_local_blockers": []
+  },
+  "local_validation": {
+    "status": "PASS",
+    "valid": true,
+    "blockers": 0,
+    "checked_at": "2026-05-11T19:58:00.000+08:00",
+    "commands": [
+      "bun run content-audit:compose -- --article-id aef59aa2-220e-47fc-9492-6b2bd98f9bea --overwrite --strict",
+      "bun run content-audit:diff -- --article-id aef59aa2-220e-47fc-9492-6b2bd98f9bea --strict --summary",
+      "bun run content-audit:validate -- --article-id aef59aa2-220e-47fc-9492-6b2bd98f9bea --summary",
+      "bun run content-audit:ui-block-edits -- --article-id aef59aa2-220e-47fc-9492-6b2bd98f9bea"
+    ]
+  }
+}

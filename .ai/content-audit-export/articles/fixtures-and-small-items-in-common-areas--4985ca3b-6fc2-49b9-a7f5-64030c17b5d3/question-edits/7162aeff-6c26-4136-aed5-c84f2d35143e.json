@@ -1,0 +1,50 @@
+{
+  "question_id": "7162aeff-6c26-4136-aed5-c84f2d35143e",
+  "baseline_hash": "sha256:8738521f8687725250d8d2849eb87cdd7840b72ea2a28b20d52d01c5fc2f592c",
+  "action": "replace",
+  "reason": "source-audited-article-batch-036-local-first: source-safe replacement grounded in local raw PDF/source family evidence; removes unsupported, stale, or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-036",
+  "approved_at": "2026-05-11T12:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-036-local-first",
+    "checked_sources": [
+      {
+        "source_id": "bp-344-2024-revised-irr-ncda-local",
+        "label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "checked_markdown_lines": [
+          "BP 344 2024 Revised IRR refined markdown lines 1090-1135",
+          "BP 344 2024 Revised IRR refined markdown lines 1296-1306",
+          "BP 344 2024 Revised IRR refined markdown lines 1493-1514"
+        ]
+      }
+    ],
+    "citation": "BP 344 2024 Revised IRR, Public Telephones"
+  },
+  "proposed": {
+    "text": "For public telephones, what minimum illumination is required beside the telephone?",
+    "options": [
+      {
+        "id": "b036-4985-03-a",
+        "text": "200 lux"
+      },
+      {
+        "id": "b036-4985-03-b",
+        "text": "50 lux"
+      },
+      {
+        "id": "b036-4985-03-c",
+        "text": "100 lux"
+      },
+      {
+        "id": "b036-4985-03-d",
+        "text": "500 lux"
+      }
+    ],
+    "correct_option_id": "b036-4985-03-a",
+    "rationale": "Correct answer: 200 lux. This is directly supported by BP 344 2024 Revised IRR, Public Telephones.",
+    "explanation": "The source-audited correction uses only the local raw PDF family and locator-checked refined markdown for BP 344 2024 Revised IRR, Public Telephones.",
+    "code_citation": "BP 344 2024 Revised IRR, Public Telephones"
+  }
+}

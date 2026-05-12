@@ -1,0 +1,55 @@
+{
+  "question_id": "4c9d9227-7dd3-43a8-9ac1-57b003832b49",
+  "baseline_hash": "sha256:746b37d2d3748f163248eb9cb468a2ce32e108f2450923042352868eb58f0569",
+  "action": "replace",
+  "reason": "source-audited-article-batch-080-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-010-02-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-080",
+  "approved_at": "2026-05-12T07:05:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "d0466bdc-3061-46b5-9400-2c41d7eb7c97",
+    "parent_article_slug": "lea-matl-010-02-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Fajardo refined markdown lines 2521-2678, 3166-3298, and 4202-4378; raw PDF pages 22-23 and 27-35 checked by local PyMuPDF extraction",
+    "checked_markdown_lines": [
+      "Fajardo refined markdown lines 2521-2678, 3166-3298, and 4202-4378; raw PDF pages 22-23 and 27-35 checked by local PyMuPDF extraction"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "fajardo-cost-estimates-b080",
+        "label": "Architectural Cost Estimates By Max Fajardo",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+        "sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+        "raw_markdown_sha256": "sha256:223efdc2dd963208910027eba08fe87b4919de1a04b76cac095bbd76a7a9a962",
+        "locator": "Fajardo refined markdown lines 2521-2678, 3166-3298, and 4202-4378; raw PDF pages 22-23 and 27-35 checked by local PyMuPDF extraction"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 080 local raw-source-audited chb_quantity_estimating scope."
+  },
+  "proposed": {
+    "text": "What is the safe estimator response when block sizes vary by supplier?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Separate phases or verify size before table use"
+      },
+      {
+        "id": "b",
+        "text": "Use one number for all sizes without checking"
+      },
+      {
+        "id": "c",
+        "text": "Ignore the wall area"
+      },
+      {
+        "id": "d",
+        "text": "Replace the estimate with paint coverage"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Fajardo warns that uniform block size matters and table selection depends on size.",
+    "explanation": "Fajardo warns that uniform block size matters and table selection depends on size.",
+    "code_citation": "Architectural Cost Estimates By Max Fajardo"
+  }
+}

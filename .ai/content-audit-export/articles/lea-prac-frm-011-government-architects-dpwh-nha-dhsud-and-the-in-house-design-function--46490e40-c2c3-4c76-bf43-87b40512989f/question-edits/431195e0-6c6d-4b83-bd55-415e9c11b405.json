@@ -1,0 +1,32 @@
+{
+  "question_id": "431195e0-6c6d-4b83-bd55-415e9c11b405",
+  "baseline_hash": "sha256:86b39434b723123d721dde012b2e5519ab93369eeb284ece08149cfd4f6f1e3c",
+  "reason": "Batch 003 source audit replaced unsupported agency/mandate and procurement assertions with source-backed RA 9266, Civil Code Article 1723, RA 9184, RA 7160/COA, RA 11201, and EO 90 framing.",
+  "approved_by": "codex-local-source-audit-batch-003",
+  "approved_at": "2026-05-10T18:00:00+08:00",
+  "proposed": {
+    "text": "Why must government architects comply with technical codes even when working inside a public agency?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Because RA 9184 is the technical building code"
+      },
+      {
+        "id": "b",
+        "text": "Because public projects are exempt only from private contracts, not from life-safety and accessibility rules"
+      },
+      {
+        "id": "c",
+        "text": "Because the Building Code, accessibility rules, fire rules, and RA 9266 professional duties protect public users and apply when the project scope triggers them"
+      },
+      {
+        "id": "d",
+        "text": "Because COA approves every technical design detail before permitting"
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": "Technical codes protect users and apply by building element and project scope.",
+    "explanation": "The edit avoids unsupported civil-service or agency-mandate claims.",
+    "code_citation": "RA 9266 IRR; PD 1096; BP 344; RA 9514 when applicable"
+  }
+}

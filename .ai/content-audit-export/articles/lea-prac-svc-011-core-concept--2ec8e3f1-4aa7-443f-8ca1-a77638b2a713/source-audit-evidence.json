@@ -1,0 +1,305 @@
+{
+  "batch_id": "source-audited-article-batch-024-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T14:30:00.000+08:00",
+  "article_id": "2ec8e3f1-4aa7-443f-8ca1-a77638b2a713",
+  "slug": "lea-prac-svc-011-core-concept",
+  "title": "Professional Architectural Consulting Services",
+  "status": "local_pass_ready_for_final_publishing_review",
+  "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-011-core-concept--2ec8e3f1-4aa7-443f-8ca1-a77638b2a713",
+  "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-011-core-concept--2ec8e3f1-4aa7-443f-8ca1-a77638b2a713",
+  "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-svc-011-core-concept--2ec8e3f1-4aa7-443f-8ca1-a77638b2a713/question-edits",
+  "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-011-core-concept--2ec8e3f1-4aa7-443f-8ca1-a77638b2a713/question-edits",
+  "linked_questions": 10,
+  "question_edits_created": 10,
+  "source_safe_rewrite_question_edits": 10,
+  "classification": {
+    "content_domain": "professional_practice",
+    "requires_raw_pdf_audit": true,
+    "legal_or_code_source": true
+  },
+  "target": {
+    "article_id": "2ec8e3f1-4aa7-443f-8ca1-a77638b2a713",
+    "slug": "lea-prac-svc-011-core-concept",
+    "normalized_sha256": "sha256:65752d372f7fd1bba659043e4c3cc2845345477f44f8f3f99c6fe5be388479be",
+    "candidate_sha256": "sha256:65752d372f7fd1bba659043e4c3cc2845345477f44f8f3f99c6fe5be388479be"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_only": true,
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "source_audit": {
+    "checked_sources": [
+      {
+        "source_id": "uap-standards-spp209-pacs-local",
+        "label": "UAP Standards of Professional Practice - SPP 209 PACS",
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "source_type": "professional_practice_pdf",
+        "source_locator": "UAP Standards refined markdown lines 1418-1460 and 1544-1695",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "checked_markdown_lines": [
+          "UAP Standards lines 1418-1460",
+          "UAP Standards lines 1544-1695"
+        ],
+        "use": "Local raw PDF and refined markdown checked for PACS rationale, definition, scope, qualifications, selection, and compensation.",
+        "local_source_checked": true
+      },
+      {
+        "source_id": "spp209-professional-architectural-consulting-services-local",
+        "label": "SPP 209 - Professional Architectural Consulting Services",
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "source_type": "professional_practice_pdf",
+        "source_locator": "SPP 209 refined markdown lines 637-1099",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 209.pdf",
+        "raw_pdf_sha256": "sha256:c0e805e8bb71adb0a3d31fe1655447d718abba54f546d20cbac3c092268b03c5",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 209.md",
+        "refined_markdown_sha256": "sha256:d596d4cda9d7fc4551ac81786bf0f7063917ecfac79b89bc1810373e3655a4f2",
+        "checked_markdown_lines": [
+          "SPP 209 lines 637-1099"
+        ],
+        "use": "Local SPP 209 raw PDF and refined markdown checked as article-specific source.",
+        "local_source_checked": true
+      }
+    ],
+    "source_locator": "UAP Standards refined markdown lines 1418-1460 and 1544-1695; SPP 209 refined markdown lines 637-1099",
+    "checked_markdown_lines": [
+      "UAP Standards lines 1418-1460",
+      "UAP Standards lines 1544-1695",
+      "SPP 209 lines 637-1099"
+    ]
+  },
+  "claims": [
+    {
+      "claim_id": "batch-024-lea-prac-svc-011-core-concept-question-001",
+      "claim_text": "Question 1df3290c-a3f3-4e14-8a6e-37c37601ef6e / model BATCH-024-lea-prac-svc-011-core-concept-001 rewritten to source-safe local form.",
+      "question_id": "1df3290c-a3f3-4e14-8a6e-37c37601ef6e",
+      "model_id": "BATCH-024-lea-prac-svc-011-core-concept-001",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp209-pacs-local",
+        "spp209-professional-architectural-consulting-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 1418-1460 and 1544-1695",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-024-lea-prac-svc-011-core-concept-question-002",
+      "claim_text": "Question 74785634-59af-4a3a-9fe0-accbc9c28235 / model BATCH-024-lea-prac-svc-011-core-concept-002 rewritten to source-safe local form.",
+      "question_id": "74785634-59af-4a3a-9fe0-accbc9c28235",
+      "model_id": "BATCH-024-lea-prac-svc-011-core-concept-002",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp209-pacs-local",
+        "spp209-professional-architectural-consulting-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 1418-1460 and 1544-1695",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-024-lea-prac-svc-011-core-concept-question-003",
+      "claim_text": "Question 78444811-6e06-41b6-900e-62ddbd1e66cd / model BATCH-024-lea-prac-svc-011-core-concept-003 rewritten to source-safe local form.",
+      "question_id": "78444811-6e06-41b6-900e-62ddbd1e66cd",
+      "model_id": "BATCH-024-lea-prac-svc-011-core-concept-003",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp209-pacs-local",
+        "spp209-professional-architectural-consulting-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 1418-1460 and 1544-1695",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-024-lea-prac-svc-011-core-concept-question-004",
+      "claim_text": "Question 0dafc31c-192d-48be-87b2-daa2a11ce3e9 / model BATCH-024-lea-prac-svc-011-core-concept-004 rewritten to source-safe local form.",
+      "question_id": "0dafc31c-192d-48be-87b2-daa2a11ce3e9",
+      "model_id": "BATCH-024-lea-prac-svc-011-core-concept-004",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp209-pacs-local",
+        "spp209-professional-architectural-consulting-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 1418-1460 and 1544-1695",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-024-lea-prac-svc-011-core-concept-question-005",
+      "claim_text": "Question 3005606d-8682-4445-85eb-ec2648a50401 / model BATCH-024-lea-prac-svc-011-core-concept-005 rewritten to source-safe local form.",
+      "question_id": "3005606d-8682-4445-85eb-ec2648a50401",
+      "model_id": "BATCH-024-lea-prac-svc-011-core-concept-005",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp209-pacs-local",
+        "spp209-professional-architectural-consulting-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 1418-1460 and 1544-1695",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-024-lea-prac-svc-011-core-concept-question-006",
+      "claim_text": "Question 7e3de747-0f6d-49f1-badc-3628f30242a7 / model BATCH-024-lea-prac-svc-011-core-concept-006 rewritten to source-safe local form.",
+      "question_id": "7e3de747-0f6d-49f1-badc-3628f30242a7",
+      "model_id": "BATCH-024-lea-prac-svc-011-core-concept-006",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp209-pacs-local",
+        "spp209-professional-architectural-consulting-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 1418-1460 and 1544-1695",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-024-lea-prac-svc-011-core-concept-question-007",
+      "claim_text": "Question b434b587-956b-4a06-9f82-20bcdef27695 / model BATCH-024-lea-prac-svc-011-core-concept-007 rewritten to source-safe local form.",
+      "question_id": "b434b587-956b-4a06-9f82-20bcdef27695",
+      "model_id": "BATCH-024-lea-prac-svc-011-core-concept-007",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp209-pacs-local",
+        "spp209-professional-architectural-consulting-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 1418-1460 and 1544-1695",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-024-lea-prac-svc-011-core-concept-question-008",
+      "claim_text": "Question ff764f9e-d0b3-480d-a35e-ec283775bf3e / model BATCH-024-lea-prac-svc-011-core-concept-008 rewritten to source-safe local form.",
+      "question_id": "ff764f9e-d0b3-480d-a35e-ec283775bf3e",
+      "model_id": "BATCH-024-lea-prac-svc-011-core-concept-008",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp209-pacs-local",
+        "spp209-professional-architectural-consulting-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 1418-1460 and 1544-1695",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-024-lea-prac-svc-011-core-concept-question-009",
+      "claim_text": "Question 226c0498-e69f-4a48-a0e3-0ab75f0bf3f6 / model BATCH-024-lea-prac-svc-011-core-concept-009 rewritten to source-safe local form.",
+      "question_id": "226c0498-e69f-4a48-a0e3-0ab75f0bf3f6",
+      "model_id": "BATCH-024-lea-prac-svc-011-core-concept-009",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp209-pacs-local",
+        "spp209-professional-architectural-consulting-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 1418-1460 and 1544-1695",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-024-lea-prac-svc-011-core-concept-question-010",
+      "claim_text": "Question 36ce1dc0-e047-4a92-bf53-4c9952322e94 / model BATCH-024-lea-prac-svc-011-core-concept-010 rewritten to source-safe local form.",
+      "question_id": "36ce1dc0-e047-4a92-bf53-4c9952322e94",
+      "model_id": "BATCH-024-lea-prac-svc-011-core-concept-010",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp209-pacs-local",
+        "spp209-professional-architectural-consulting-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 1418-1460 and 1544-1695",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    }
+  ],
+  "local_repairs": {
+    "normalized_rewritten": true,
+    "candidate_recomposed": true,
+    "source_records_created": 2,
+    "question_edits_created": 10,
+    "source_safe_rewrite_question_edits": 10,
+    "non_source_claims_removed_or_rewritten": true,
+    "ui_block_tokens_removed": true
+  },
+  "validation": {
+    "compose_blockers": [],
+    "diff_safe_to_push": true,
+    "diff_blockers": [],
+    "validate_valid": true,
+    "validate_blockers": [],
+    "validate_warnings": [
+      "lea-prac-svc-011-core-concept--2ec8e3f1-4aa7-443f-8ca1-a77638b2a713: component-usage.json has not been generated for this article yet."
+    ],
+    "scoped_validate_report": ".ai/content-audit-export/articles/lea-prac-svc-011-core-concept--2ec8e3f1-4aa7-443f-8ca1-a77638b2a713/batch-024-validate-report.json",
+    "compose_report": ".ai/content-audit-export/articles/lea-prac-svc-011-core-concept--2ec8e3f1-4aa7-443f-8ca1-a77638b2a713/compose-report.json",
+    "diff_report": ".ai/content-audit-export/articles/lea-prac-svc-011-core-concept--2ec8e3f1-4aa7-443f-8ca1-a77638b2a713/diff-report.json"
+  },
+  "blockers": [],
+  "unverified_or_rejected_claims": [],
+  "sme_review": {
+    "required": false,
+    "status": "not_required_for_local_first_batch"
+  }
+}

@@ -1,0 +1,299 @@
+{
+  "batch_id": "source-audited-article-batch-022-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T11:45:00.000+08:00",
+  "article_id": "5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5",
+  "slug": "lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor",
+  "title": "Architect's Authority During Construction",
+  "status": "local_pass_ready_for_final_publishing_review",
+  "article_folder": ".ai/content-audit-export/articles/lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-c--5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5",
+  "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-c--5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5",
+  "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-c--5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5/question-edits",
+  "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-c--5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5/question-edits",
+  "linked_questions": 10,
+  "question_edits_created": 10,
+  "source_safe_rewrite_question_edits": 10,
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_only": true,
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false
+  },
+  "source_audit": {
+    "checked_sources": [
+      {
+        "source_id": "uap-document-301-general-conditions-local",
+        "label": "UAP Document 301 - General Conditions, architect authority, claims, payments, and project representatives",
+        "authority": "United Architects of the Philippines / PRC Board approved general conditions source",
+        "source_type": "professional_practice_contract_pdf",
+        "source_locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "refined_markdown_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+        "checked_markdown_lines": [
+          "UAP Document 301 lines 41-71",
+          "UAP Document 301 lines 482-520",
+          "UAP Document 301 lines 1019-1051",
+          "UAP Document 301 lines 1062-1080"
+        ],
+        "use": "primary local source for construction contract administration authority and documentation claims",
+        "local_source_checked": true
+      },
+      {
+        "source_id": "uap-code-ethics-client-contractor-colleague-local",
+        "label": "UAP Architect's Code of Ethics - client, contractor, and colleague duties",
+        "authority": "United Architects of the Philippines / PRC-Board approved code source",
+        "source_type": "professional_ethics_pdf",
+        "source_locator": "UAP Code of Ethics refined markdown lines 23-29, 31-58, 60-71, and 81-99",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+        "raw_pdf_sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+        "refined_markdown_sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+        "checked_markdown_lines": [
+          "UAP Code of Ethics lines 23-29",
+          "UAP Code of Ethics lines 31-58",
+          "UAP Code of Ethics lines 60-71",
+          "UAP Code of Ethics lines 81-99"
+        ],
+        "use": "primary local source for professional ethics claim repair",
+        "local_source_checked": true
+      }
+    ],
+    "source_locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080; UAP Code of Ethics refined markdown lines 23-29, 31-58, 60-71, and 81-99",
+    "checked_markdown_lines": [
+      "UAP Document 301 lines 41-71",
+      "UAP Document 301 lines 482-520",
+      "UAP Document 301 lines 1019-1051",
+      "UAP Document 301 lines 1062-1080",
+      "UAP Code of Ethics lines 23-29",
+      "UAP Code of Ethics lines 31-58",
+      "UAP Code of Ethics lines 60-71",
+      "UAP Code of Ethics lines 81-99"
+    ]
+  },
+  "claims": [
+    {
+      "claim_id": "batch-022-lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor-question-001",
+      "claim_text": "Question 6419032c-2dba-434a-b15d-15539a77893a / model BATCH-022-lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor-001 rewritten to source-safe local form.",
+      "question_id": "6419032c-2dba-434a-b15d-15539a77893a",
+      "model_id": "BATCH-022-lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor-001",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "uap-code-ethics-client-contractor-colleague-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-022-lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor-question-002",
+      "claim_text": "Question 0bec1cf8-2190-47df-a9de-5859594e5f90 / model BATCH-022-lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor-002 rewritten to source-safe local form.",
+      "question_id": "0bec1cf8-2190-47df-a9de-5859594e5f90",
+      "model_id": "BATCH-022-lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor-002",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "uap-code-ethics-client-contractor-colleague-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-022-lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor-question-003",
+      "claim_text": "Question 3a321576-1242-4824-8714-64e7decdde7b / model BATCH-022-lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor-003 rewritten to source-safe local form.",
+      "question_id": "3a321576-1242-4824-8714-64e7decdde7b",
+      "model_id": "BATCH-022-lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor-003",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "uap-code-ethics-client-contractor-colleague-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-022-lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor-question-004",
+      "claim_text": "Question 0dae5e7e-407c-4d9a-a6ba-876ef384fa3f / model BATCH-022-lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor-004 rewritten to source-safe local form.",
+      "question_id": "0dae5e7e-407c-4d9a-a6ba-876ef384fa3f",
+      "model_id": "BATCH-022-lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor-004",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "uap-code-ethics-client-contractor-colleague-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-022-lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor-question-005",
+      "claim_text": "Question 8d2e15ef-d781-4bbe-a67b-680d9c60afc5 / model BATCH-022-lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor-005 rewritten to source-safe local form.",
+      "question_id": "8d2e15ef-d781-4bbe-a67b-680d9c60afc5",
+      "model_id": "BATCH-022-lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor-005",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "uap-code-ethics-client-contractor-colleague-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-022-lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor-question-006",
+      "claim_text": "Question 0e3da667-2f7b-4e3f-b57b-77de9f3886ff / model BATCH-022-lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor-006 rewritten to source-safe local form.",
+      "question_id": "0e3da667-2f7b-4e3f-b57b-77de9f3886ff",
+      "model_id": "BATCH-022-lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor-006",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "uap-code-ethics-client-contractor-colleague-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-022-lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor-question-007",
+      "claim_text": "Question 65d9d1e3-1012-4c37-9968-56ebcdfb7da4 / model BATCH-022-lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor-007 rewritten to source-safe local form.",
+      "question_id": "65d9d1e3-1012-4c37-9968-56ebcdfb7da4",
+      "model_id": "BATCH-022-lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor-007",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "uap-code-ethics-client-contractor-colleague-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-022-lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor-question-008",
+      "claim_text": "Question 3a951a9e-2897-4db2-8035-dccc207c0f2f / model BATCH-022-lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor-008 rewritten to source-safe local form.",
+      "question_id": "3a951a9e-2897-4db2-8035-dccc207c0f2f",
+      "model_id": "BATCH-022-lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor-008",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "uap-code-ethics-client-contractor-colleague-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-022-lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor-question-009",
+      "claim_text": "Question ca5401d0-ea04-4431-aff7-28f4226a0f13 / model BATCH-022-lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor-009 rewritten to source-safe local form.",
+      "question_id": "ca5401d0-ea04-4431-aff7-28f4226a0f13",
+      "model_id": "BATCH-022-lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor-009",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "uap-code-ethics-client-contractor-colleague-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-022-lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor-question-010",
+      "claim_text": "Question 9405a991-38bc-4447-93db-1dcbeff27061 / model BATCH-022-lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor-010 rewritten to source-safe local form.",
+      "question_id": "9405a991-38bc-4447-93db-1dcbeff27061",
+      "model_id": "BATCH-022-lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor-010",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "uap-code-ethics-client-contractor-colleague-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    }
+  ],
+  "local_repairs": {
+    "normalized_rewritten": true,
+    "candidate_recomposed": true,
+    "placeholders_removed": true,
+    "source_records_created": 2,
+    "question_edits_created": 10,
+    "source_safe_rewrite_question_edits": 10,
+    "non_source_claims_removed_or_rewritten": true
+  },
+  "validation": {
+    "compose_blockers": [],
+    "diff_safe_to_push": true,
+    "diff_blockers": [],
+    "validate_valid": true,
+    "validate_blockers": [],
+    "validate_warnings": [
+      "lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-c--5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5: component-usage.json has not been generated for this article yet."
+    ],
+    "scoped_validate_report": ".ai/content-audit-export/articles/lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-c--5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5/batch-022-validate-report.json"
+  },
+  "blockers": [],
+  "unverified_or_rejected_claims": [],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "blockers": []
+  },
+  "sme_review": {
+    "required": false,
+    "status": "not_required_for_local_first_batch"
+  }
+}

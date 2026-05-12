@@ -1,0 +1,243 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-011",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T19:20:00.000+08:00",
+  "audit_mode": "LOCAL_FIRST_NO_SUPABASE_NO_DEPLOY_NO_COMMIT",
+  "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+  "protocols_applied": [
+    "AGENTS.md root local-first and validation contract",
+    ".ai/AGENTS.md operational-artifact contract",
+    "ph-arch-construction-law skill: cite exact legal/code sources only when verified",
+    "ph-arch-professional-context skill: ground practice claims in Philippine professional context"
+  ],
+  "target": {
+    "article_id": "8e546a58-36c2-4cd3-8340-2cb9d1189b13",
+    "slug": "lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions",
+    "title": "RA 9184 Government Procurement Reform Act Architecture Relevant Provisions",
+    "article_folder": ".ai/content-audit-export/articles/lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions--8e546a58-36c2-4cd3-8340-2cb9d1189b13",
+    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions--8e546a58-36c2-4cd3-8340-2cb9d1189b13",
+    "normalized_path": ".ai/content-audit-export/articles/lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions--8e546a58-36c2-4cd3-8340-2cb9d1189b13/normalized.md",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions--8e546a58-36c2-4cd3-8340-2cb9d1189b13/candidate.md",
+    "sources_path": ".ai/content-audit-export/articles/lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions--8e546a58-36c2-4cd3-8340-2cb9d1189b13/sources.json",
+    "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions--8e546a58-36c2-4cd3-8340-2cb9d1189b13/question-edits",
+    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions--8e546a58-36c2-4cd3-8340-2cb9d1189b13/question-edits",
+    "normalized_sha256": "sha256:31e70f69541b47e5f1e63715969d22a4865a42fef65c59e80358fec7243756dc",
+    "candidate_sha256": "sha256:31e70f69541b47e5f1e63715969d22a4865a42fef65c59e80358fec7243756dc",
+    "linked_questions_sha256": "sha256:069f9d03a69a02893a06977bbac567df646c9c2c1151a3f4cacba3063f705419",
+    "sources_sha256": "sha256:113012be44f0163654d465f6ceecce3614705584b9b9b73a16108f69b9ab500e"
+  },
+  "classification": {
+    "content_type": "ra9184_government_procurement_architecture_article",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": [
+      "05cd66da-7a00-4e5c-beb4-4e7698a9a25c",
+      "24f48bfa-1649-40a6-a978-a266bb7bb9df",
+      "6af33353-e679-4fbe-88af-857bdd40811c",
+      "890d7a27-eb9d-4f93-b02e-23e164dcfd05",
+      "8b9110d3-b186-452c-9bfc-a0f2749c92ec",
+      "a3a1d987-7b63-47a1-bbe7-e1fba9915636",
+      "af933e98-e20d-4b0f-a521-c95403fb70ad",
+      "c6e29807-300c-45d8-a443-674336751584",
+      "e4657d82-0cc6-491f-a6cb-62f68e4d129f",
+      "ea9acfef-f13f-479b-a870-49260aa9365a"
+    ]
+  },
+  "raw_sources": [
+    {
+      "source_id": "batch011-ra9184-procurement-source-01",
+      "label": "RA 9184 Government Procurement Reform Act",
+      "source_type": "statute",
+      "source_locator": "RA 9184 Sections 3, 4, 5, 10, 11, and 12",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/RA 9184 - Government Procurement Reform Act.pdf",
+      "raw_pdf_sha256": "sha256:c7cdc5c69dc447a185be6682f1cedfe3f55aa584f20a5ecbe4915504c2d7b8e8",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9184/RA 9184 - Government Procurement Reform Act.md",
+      "raw_markdown_sha256": "sha256:fcca884cef63406e220513da501b08c66cf34f95375eebd442e4968c0c9440cb",
+      "checked_markdown_lines": [
+        "RA 9184 Act raw markdown lines 20-82 and 239-286",
+        "RA 9184 IRR raw markdown lines 140-157 and 1393-1458"
+      ],
+      "is_verified": true
+    },
+    {
+      "source_id": "batch011-ra9184-procurement-source-02",
+      "label": "RA 9184 IRR, Government Procurement IRR",
+      "source_type": "implementing_rules",
+      "source_locator": "RA 9184 IRR-A Sections 10, 11, 12, and 48",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/RA 9184 IRR - Government Procurement IRR.pdf",
+      "raw_pdf_sha256": "sha256:19dda526ccf537bf664f79b3fd86521ea37191a84811aefa5482d70f08fc6b95",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9184/RA 9184 IRR - Government Procurement IRR.md",
+      "raw_markdown_sha256": "sha256:32dd794a3030d72e05a60ff1faa9745543c1d1d75da0e0c1052fda845afa0197",
+      "checked_markdown_lines": [
+        "RA 9184 Act raw markdown lines 20-82 and 239-286",
+        "RA 9184 IRR raw markdown lines 140-157 and 1393-1458"
+      ],
+      "is_verified": true
+    }
+  ],
+  "unsupported_claims_removed": [
+    "Removed claims outside the audited RA 9184 and IRR-A provisions and kept the article focused on procurement scope, principles, competitive bidding, BAC, and exceptional alternative methods.",
+    "Removed unresolved UI-block placeholders and internal drafting scaffolding."
+  ],
+  "claims": [
+    {
+      "claim_id": "B011-lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions-ARTICLE-01",
+      "claim_text": "RA 9184 Government Procurement Reform Act Architecture Relevant Provisions was repaired against RA 9184 Sections 3, 4, 5, 10, 11, and 12; RA 9184 IRR-A Sections 10, 11, 12, and 48; placeholders, internal drafting notes, and claims outside the checked raw-source lines were removed from normalized.md.",
+      "claim_class": "article_source_repair",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/RA 9184 - Government Procurement Reform Act.pdf",
+        "raw_pdf_sha256": "sha256:c7cdc5c69dc447a185be6682f1cedfe3f55aa584f20a5ecbe4915504c2d7b8e8",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9184/RA 9184 - Government Procurement Reform Act.md",
+        "raw_markdown_sha256": "sha256:fcca884cef63406e220513da501b08c66cf34f95375eebd442e4968c0c9440cb",
+        "source_locator": "RA 9184 Sections 3, 4, 5, 10, 11, and 12; RA 9184 IRR-A Sections 10, 11, 12, and 48",
+        "markdown_lines_checked": [
+          "RA 9184 Act raw markdown lines 20-82 and 239-286",
+          "RA 9184 IRR raw markdown lines 140-157 and 1393-1458"
+        ]
+      }
+    },
+    {
+      "claim_id": "B011-lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions-QUESTION-001",
+      "claim_text": "Question c6e29807-300c-45d8-a443-674336751584 has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions--8e546a58-36c2-4cd3-8340-2cb9d1189b13/question-edits for the repaired RA 9184 Government Procurement Reform Act Architecture Relevant Provisions article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/RA 9184 - Government Procurement Reform Act.pdf",
+        "raw_pdf_sha256": "sha256:c7cdc5c69dc447a185be6682f1cedfe3f55aa584f20a5ecbe4915504c2d7b8e8",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9184/RA 9184 - Government Procurement Reform Act.md",
+        "raw_markdown_sha256": "sha256:fcca884cef63406e220513da501b08c66cf34f95375eebd442e4968c0c9440cb",
+        "parent_article_locator": "RA 9184 Sections 3, 4, 5, 10, 11, and 12; RA 9184 IRR-A Sections 10, 11, 12, and 48",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B011-lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions-QUESTION-002",
+      "claim_text": "Question 6af33353-e679-4fbe-88af-857bdd40811c has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions--8e546a58-36c2-4cd3-8340-2cb9d1189b13/question-edits for the repaired RA 9184 Government Procurement Reform Act Architecture Relevant Provisions article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/RA 9184 - Government Procurement Reform Act.pdf",
+        "raw_pdf_sha256": "sha256:c7cdc5c69dc447a185be6682f1cedfe3f55aa584f20a5ecbe4915504c2d7b8e8",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9184/RA 9184 - Government Procurement Reform Act.md",
+        "raw_markdown_sha256": "sha256:fcca884cef63406e220513da501b08c66cf34f95375eebd442e4968c0c9440cb",
+        "parent_article_locator": "RA 9184 Sections 3, 4, 5, 10, 11, and 12; RA 9184 IRR-A Sections 10, 11, 12, and 48",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B011-lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions-QUESTION-003",
+      "claim_text": "Question 24f48bfa-1649-40a6-a978-a266bb7bb9df has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions--8e546a58-36c2-4cd3-8340-2cb9d1189b13/question-edits for the repaired RA 9184 Government Procurement Reform Act Architecture Relevant Provisions article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/RA 9184 - Government Procurement Reform Act.pdf",
+        "raw_pdf_sha256": "sha256:c7cdc5c69dc447a185be6682f1cedfe3f55aa584f20a5ecbe4915504c2d7b8e8",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9184/RA 9184 - Government Procurement Reform Act.md",
+        "raw_markdown_sha256": "sha256:fcca884cef63406e220513da501b08c66cf34f95375eebd442e4968c0c9440cb",
+        "parent_article_locator": "RA 9184 Sections 3, 4, 5, 10, 11, and 12; RA 9184 IRR-A Sections 10, 11, 12, and 48",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B011-lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions-QUESTION-004",
+      "claim_text": "Question 890d7a27-eb9d-4f93-b02e-23e164dcfd05 has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions--8e546a58-36c2-4cd3-8340-2cb9d1189b13/question-edits for the repaired RA 9184 Government Procurement Reform Act Architecture Relevant Provisions article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/RA 9184 - Government Procurement Reform Act.pdf",
+        "raw_pdf_sha256": "sha256:c7cdc5c69dc447a185be6682f1cedfe3f55aa584f20a5ecbe4915504c2d7b8e8",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9184/RA 9184 - Government Procurement Reform Act.md",
+        "raw_markdown_sha256": "sha256:fcca884cef63406e220513da501b08c66cf34f95375eebd442e4968c0c9440cb",
+        "parent_article_locator": "RA 9184 Sections 3, 4, 5, 10, 11, and 12; RA 9184 IRR-A Sections 10, 11, 12, and 48",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B011-lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions-QUESTION-005",
+      "claim_text": "Question ea9acfef-f13f-479b-a870-49260aa9365a has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions--8e546a58-36c2-4cd3-8340-2cb9d1189b13/question-edits for the repaired RA 9184 Government Procurement Reform Act Architecture Relevant Provisions article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/RA 9184 - Government Procurement Reform Act.pdf",
+        "raw_pdf_sha256": "sha256:c7cdc5c69dc447a185be6682f1cedfe3f55aa584f20a5ecbe4915504c2d7b8e8",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9184/RA 9184 - Government Procurement Reform Act.md",
+        "raw_markdown_sha256": "sha256:fcca884cef63406e220513da501b08c66cf34f95375eebd442e4968c0c9440cb",
+        "parent_article_locator": "RA 9184 Sections 3, 4, 5, 10, 11, and 12; RA 9184 IRR-A Sections 10, 11, 12, and 48",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B011-lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions-QUESTION-006",
+      "claim_text": "Question 8b9110d3-b186-452c-9bfc-a0f2749c92ec has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions--8e546a58-36c2-4cd3-8340-2cb9d1189b13/question-edits for the repaired RA 9184 Government Procurement Reform Act Architecture Relevant Provisions article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/RA 9184 - Government Procurement Reform Act.pdf",
+        "raw_pdf_sha256": "sha256:c7cdc5c69dc447a185be6682f1cedfe3f55aa584f20a5ecbe4915504c2d7b8e8",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9184/RA 9184 - Government Procurement Reform Act.md",
+        "raw_markdown_sha256": "sha256:fcca884cef63406e220513da501b08c66cf34f95375eebd442e4968c0c9440cb",
+        "parent_article_locator": "RA 9184 Sections 3, 4, 5, 10, 11, and 12; RA 9184 IRR-A Sections 10, 11, 12, and 48",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B011-lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions-QUESTION-007",
+      "claim_text": "Question 05cd66da-7a00-4e5c-beb4-4e7698a9a25c has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions--8e546a58-36c2-4cd3-8340-2cb9d1189b13/question-edits for the repaired RA 9184 Government Procurement Reform Act Architecture Relevant Provisions article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/RA 9184 - Government Procurement Reform Act.pdf",
+        "raw_pdf_sha256": "sha256:c7cdc5c69dc447a185be6682f1cedfe3f55aa584f20a5ecbe4915504c2d7b8e8",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9184/RA 9184 - Government Procurement Reform Act.md",
+        "raw_markdown_sha256": "sha256:fcca884cef63406e220513da501b08c66cf34f95375eebd442e4968c0c9440cb",
+        "parent_article_locator": "RA 9184 Sections 3, 4, 5, 10, 11, and 12; RA 9184 IRR-A Sections 10, 11, 12, and 48",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B011-lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions-QUESTION-008",
+      "claim_text": "Question a3a1d987-7b63-47a1-bbe7-e1fba9915636 has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions--8e546a58-36c2-4cd3-8340-2cb9d1189b13/question-edits for the repaired RA 9184 Government Procurement Reform Act Architecture Relevant Provisions article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/RA 9184 - Government Procurement Reform Act.pdf",
+        "raw_pdf_sha256": "sha256:c7cdc5c69dc447a185be6682f1cedfe3f55aa584f20a5ecbe4915504c2d7b8e8",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9184/RA 9184 - Government Procurement Reform Act.md",
+        "raw_markdown_sha256": "sha256:fcca884cef63406e220513da501b08c66cf34f95375eebd442e4968c0c9440cb",
+        "parent_article_locator": "RA 9184 Sections 3, 4, 5, 10, 11, and 12; RA 9184 IRR-A Sections 10, 11, 12, and 48",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B011-lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions-QUESTION-009",
+      "claim_text": "Question af933e98-e20d-4b0f-a521-c95403fb70ad has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions--8e546a58-36c2-4cd3-8340-2cb9d1189b13/question-edits for the repaired RA 9184 Government Procurement Reform Act Architecture Relevant Provisions article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/RA 9184 - Government Procurement Reform Act.pdf",
+        "raw_pdf_sha256": "sha256:c7cdc5c69dc447a185be6682f1cedfe3f55aa584f20a5ecbe4915504c2d7b8e8",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9184/RA 9184 - Government Procurement Reform Act.md",
+        "raw_markdown_sha256": "sha256:fcca884cef63406e220513da501b08c66cf34f95375eebd442e4968c0c9440cb",
+        "parent_article_locator": "RA 9184 Sections 3, 4, 5, 10, 11, and 12; RA 9184 IRR-A Sections 10, 11, 12, and 48",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B011-lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions-QUESTION-010",
+      "claim_text": "Question e4657d82-0cc6-491f-a6cb-62f68e4d129f has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions--8e546a58-36c2-4cd3-8340-2cb9d1189b13/question-edits for the repaired RA 9184 Government Procurement Reform Act Architecture Relevant Provisions article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/RA 9184 - Government Procurement Reform Act.pdf",
+        "raw_pdf_sha256": "sha256:c7cdc5c69dc447a185be6682f1cedfe3f55aa584f20a5ecbe4915504c2d7b8e8",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9184/RA 9184 - Government Procurement Reform Act.md",
+        "raw_markdown_sha256": "sha256:fcca884cef63406e220513da501b08c66cf34f95375eebd442e4968c0c9440cb",
+        "parent_article_locator": "RA 9184 Sections 3, 4, 5, 10, 11, and 12; RA 9184 IRR-A Sections 10, 11, 12, and 48",
+        "answer_key_fields_changed": false
+      }
+    }
+  ]
+}

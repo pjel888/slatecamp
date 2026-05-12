@@ -1,0 +1,246 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-083-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T06:25:00.000+08:00",
+  "target": {
+    "article_id": "99ee4b30-1612-422c-af69-9a496deb6d79",
+    "slug": "lea-matl-003-05-core-concept",
+    "title": "Welding and metal joining",
+    "article_folder": ".ai/content-audit-export/articles/lea-matl-003-05-core-concept--99ee4b30-1612-422c-af69-9a496deb6d79",
+    "normalized_sha256": "sha256:e2287cdda49dcaf5aeed27dccc5825546b42e8e3b558fbf0224088864d87b941",
+    "candidate_sha256": "sha256:e2287cdda49dcaf5aeed27dccc5825546b42e8e3b558fbf0224088864d87b941",
+    "candidate_path": ".ai/content-audit-export/articles/lea-matl-003-05-core-concept--99ee4b30-1612-422c-af69-9a496deb6d79/candidate.md"
+  },
+  "classification": {
+    "topic_family": "welding_metal_joining",
+    "local_first_batch": "083",
+    "source_sensitivity": "technical_materials",
+    "contains_legal_or_code_claims": false,
+    "source_risk_tier": "source_bound_materials",
+    "requires_raw_pdf_audit": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": [
+      "AISC Steel Construction Manual 13th raw PDF was hash-checked as an expected family but not used for asserted claims because no usable local text locator was confirmed in this batch."
+    ]
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdfs_checked_first": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "local_pdf_extraction_method": "python_pymupdf_local",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "metals-lecture-b083",
+      "label": "Metals Lecture",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Metals Lecture.pdf",
+      "sha256": "sha256:cd9cd4ee534bda9a974447c4ec73b13b12d5abf1c14df1fca408a2c4530650dd",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Metals Lecture.md",
+      "refined_markdown_sha256": "sha256:4e9e0a042f2eef2c80d33af81512ca2cf32778cae64351af9dc54df58db3694c",
+      "locator": "Metals Lecture refined markdown lines 1-220, 420-555, and 638-812; raw PDF pages 2, 32, 55, 57, and 58 checked by local PyMuPDF extraction."
+    },
+    {
+      "source_id": "building-construction-illustrated-b083",
+      "label": "Building Construction Illustrated, 5th Edition",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+      "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+      "refined_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "locator": "Building Construction Illustrated refined markdown lines 3378-3570, 6616-6792, 15420-15510, and 15680-15745; raw PDF pages 121, 422, 423, 427, and 428 checked by local PyMuPDF extraction."
+    },
+    {
+      "source_id": "building-construction-1-lecture-b083",
+      "label": "Building Construction 1 Lecture",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction 1 Lecture.pdf",
+      "sha256": "sha256:a53ebfbccb0c0f53503a8f76385836d46c6951cb4350c8af10420239fd23e231",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction 1 Lecture.md",
+      "refined_markdown_sha256": "sha256:298206511059efbfa480e3dc0d9caab8f0270aa5c1288bf8987ae53790caccec",
+      "locator": "Building Construction 1 Lecture refined markdown lines 1099-1113 and 1418-1444; raw PDF pages 23 and 30 checked by local PyMuPDF extraction."
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-matl-003-05-core-concept-article-b083",
+      "claim_text": "Article lea-matl-003-05-core-concept was rewritten to the checked welding_metal_joining source scope.",
+      "claim_type": "article_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Metals Lecture.pdf",
+        "raw_pdf_sha256": "sha256:cd9cd4ee534bda9a974447c4ec73b13b12d5abf1c14df1fca408a2c4530650dd",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Metals Lecture.md",
+        "source_locator": "Metals Lecture refined markdown lines 638-812; Building Construction Illustrated lines 3378-3570 and 6616-6792; Building Construction 1 Lecture lines 1099-1113; raw PDF pages 55, 57, 58, 121, and 23 checked by local PyMuPDF extraction.",
+        "quoted_pdf_excerpt": "Primary locators were checked in the local raw PDF extraction before the article rewrite."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-648065a2-3d3f-489a-8e2f-e4d57d1a4b25-b083",
+      "claim_text": "Question 648065a2-3d3f-489a-8e2f-e4d57d1a4b25 was rewritten to the checked welding_metal_joining source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Metals Lecture.pdf",
+        "raw_pdf_sha256": "sha256:cd9cd4ee534bda9a974447c4ec73b13b12d5abf1c14df1fca408a2c4530650dd",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Metals Lecture.md",
+        "source_locator": "Metals Lecture refined markdown lines 638-812; Building Construction Illustrated lines 3378-3570 and 6616-6792; Building Construction 1 Lecture lines 1099-1113; raw PDF pages 55, 57, 58, 121, and 23 checked by local PyMuPDF extraction.",
+        "quoted_pdf_excerpt": "Question edit is constrained to the same local raw-source-audited scope as the parent article."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-2f77fb95-144b-4a41-a3a1-773329618ac0-b083",
+      "claim_text": "Question 2f77fb95-144b-4a41-a3a1-773329618ac0 was rewritten to the checked welding_metal_joining source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Metals Lecture.pdf",
+        "raw_pdf_sha256": "sha256:cd9cd4ee534bda9a974447c4ec73b13b12d5abf1c14df1fca408a2c4530650dd",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Metals Lecture.md",
+        "source_locator": "Metals Lecture refined markdown lines 638-812; Building Construction Illustrated lines 3378-3570 and 6616-6792; Building Construction 1 Lecture lines 1099-1113; raw PDF pages 55, 57, 58, 121, and 23 checked by local PyMuPDF extraction.",
+        "quoted_pdf_excerpt": "Question edit is constrained to the same local raw-source-audited scope as the parent article."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-4f5aed2c-e68c-4923-87b8-88afab4d0c34-b083",
+      "claim_text": "Question 4f5aed2c-e68c-4923-87b8-88afab4d0c34 was rewritten to the checked welding_metal_joining source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Metals Lecture.pdf",
+        "raw_pdf_sha256": "sha256:cd9cd4ee534bda9a974447c4ec73b13b12d5abf1c14df1fca408a2c4530650dd",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Metals Lecture.md",
+        "source_locator": "Metals Lecture refined markdown lines 638-812; Building Construction Illustrated lines 3378-3570 and 6616-6792; Building Construction 1 Lecture lines 1099-1113; raw PDF pages 55, 57, 58, 121, and 23 checked by local PyMuPDF extraction.",
+        "quoted_pdf_excerpt": "Question edit is constrained to the same local raw-source-audited scope as the parent article."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-bbbe3d4c-e2bf-44d5-958c-f4db8b8990e2-b083",
+      "claim_text": "Question bbbe3d4c-e2bf-44d5-958c-f4db8b8990e2 was rewritten to the checked welding_metal_joining source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Metals Lecture.pdf",
+        "raw_pdf_sha256": "sha256:cd9cd4ee534bda9a974447c4ec73b13b12d5abf1c14df1fca408a2c4530650dd",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Metals Lecture.md",
+        "source_locator": "Metals Lecture refined markdown lines 638-812; Building Construction Illustrated lines 3378-3570 and 6616-6792; Building Construction 1 Lecture lines 1099-1113; raw PDF pages 55, 57, 58, 121, and 23 checked by local PyMuPDF extraction.",
+        "quoted_pdf_excerpt": "Question edit is constrained to the same local raw-source-audited scope as the parent article."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-f8c4fecf-8b7d-4bb2-878e-7f81e32de408-b083",
+      "claim_text": "Question f8c4fecf-8b7d-4bb2-878e-7f81e32de408 was rewritten to the checked welding_metal_joining source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Metals Lecture.pdf",
+        "raw_pdf_sha256": "sha256:cd9cd4ee534bda9a974447c4ec73b13b12d5abf1c14df1fca408a2c4530650dd",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Metals Lecture.md",
+        "source_locator": "Metals Lecture refined markdown lines 638-812; Building Construction Illustrated lines 3378-3570 and 6616-6792; Building Construction 1 Lecture lines 1099-1113; raw PDF pages 55, 57, 58, 121, and 23 checked by local PyMuPDF extraction.",
+        "quoted_pdf_excerpt": "Question edit is constrained to the same local raw-source-audited scope as the parent article."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-45f99b19-4d0d-4e13-8715-3d97c891bdde-b083",
+      "claim_text": "Question 45f99b19-4d0d-4e13-8715-3d97c891bdde was rewritten to the checked welding_metal_joining source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Metals Lecture.pdf",
+        "raw_pdf_sha256": "sha256:cd9cd4ee534bda9a974447c4ec73b13b12d5abf1c14df1fca408a2c4530650dd",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Metals Lecture.md",
+        "source_locator": "Metals Lecture refined markdown lines 638-812; Building Construction Illustrated lines 3378-3570 and 6616-6792; Building Construction 1 Lecture lines 1099-1113; raw PDF pages 55, 57, 58, 121, and 23 checked by local PyMuPDF extraction.",
+        "quoted_pdf_excerpt": "Question edit is constrained to the same local raw-source-audited scope as the parent article."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-5a1b0754-a2ee-4c49-b830-46ab4bb0b0de-b083",
+      "claim_text": "Question 5a1b0754-a2ee-4c49-b830-46ab4bb0b0de was rewritten to the checked welding_metal_joining source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Metals Lecture.pdf",
+        "raw_pdf_sha256": "sha256:cd9cd4ee534bda9a974447c4ec73b13b12d5abf1c14df1fca408a2c4530650dd",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Metals Lecture.md",
+        "source_locator": "Metals Lecture refined markdown lines 638-812; Building Construction Illustrated lines 3378-3570 and 6616-6792; Building Construction 1 Lecture lines 1099-1113; raw PDF pages 55, 57, 58, 121, and 23 checked by local PyMuPDF extraction.",
+        "quoted_pdf_excerpt": "Question edit is constrained to the same local raw-source-audited scope as the parent article."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-75ff7635-bfbe-4065-b770-5f6ebd9baffc-b083",
+      "claim_text": "Question 75ff7635-bfbe-4065-b770-5f6ebd9baffc was rewritten to the checked welding_metal_joining source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Metals Lecture.pdf",
+        "raw_pdf_sha256": "sha256:cd9cd4ee534bda9a974447c4ec73b13b12d5abf1c14df1fca408a2c4530650dd",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Metals Lecture.md",
+        "source_locator": "Metals Lecture refined markdown lines 638-812; Building Construction Illustrated lines 3378-3570 and 6616-6792; Building Construction 1 Lecture lines 1099-1113; raw PDF pages 55, 57, 58, 121, and 23 checked by local PyMuPDF extraction.",
+        "quoted_pdf_excerpt": "Question edit is constrained to the same local raw-source-audited scope as the parent article."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-f309539c-1c66-434e-823b-bf36ebf22f68-b083",
+      "claim_text": "Question f309539c-1c66-434e-823b-bf36ebf22f68 was rewritten to the checked welding_metal_joining source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Metals Lecture.pdf",
+        "raw_pdf_sha256": "sha256:cd9cd4ee534bda9a974447c4ec73b13b12d5abf1c14df1fca408a2c4530650dd",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Metals Lecture.md",
+        "source_locator": "Metals Lecture refined markdown lines 638-812; Building Construction Illustrated lines 3378-3570 and 6616-6792; Building Construction 1 Lecture lines 1099-1113; raw PDF pages 55, 57, 58, 121, and 23 checked by local PyMuPDF extraction.",
+        "quoted_pdf_excerpt": "Question edit is constrained to the same local raw-source-audited scope as the parent article."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-403f9d18-5f2a-4550-ba1e-025a96df41fa-b083",
+      "claim_text": "Question 403f9d18-5f2a-4550-ba1e-025a96df41fa was rewritten to the checked welding_metal_joining source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Metals Lecture.pdf",
+        "raw_pdf_sha256": "sha256:cd9cd4ee534bda9a974447c4ec73b13b12d5abf1c14df1fca408a2c4530650dd",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Metals Lecture.md",
+        "source_locator": "Metals Lecture refined markdown lines 638-812; Building Construction Illustrated lines 3378-3570 and 6616-6792; Building Construction 1 Lecture lines 1099-1113; raw PDF pages 55, 57, 58, 121, and 23 checked by local PyMuPDF extraction.",
+        "quoted_pdf_excerpt": "Question edit is constrained to the same local raw-source-audited scope as the parent article."
+      },
+      "blockers": []
+    }
+  ],
+  "question_edit_audit": {
+    "linked_question_count": 10,
+    "question_edit_count": 10,
+    "answer_key_fields_changed": true,
+    "source_safe_rewrite": true,
+    "blockers": []
+  },
+  "scenario_enrichment": {
+    "status": "eligible-deferred",
+    "reason": "Welding and steel-connection details can support scenario practice, but Batch 083 deferred scenario additions to avoid blocking source repair."
+  },
+  "roundtrip": {
+    "normalized_md_owns_article_prose": true,
+    "ui_blocks_json_owns_raw_ui_blocks": true,
+    "candidate_md_generated_by_compose": true,
+    "raw_ui_block_edits_supported_in_this_batch": false,
+    "note": "Exported UI summary markers were removed where ui-blocks.json had zero preserved raw blocks, allowing compose to complete without unresolved UI markers.",
+    "unresolved_ui_summary_markers_removed": true
+  }
+}

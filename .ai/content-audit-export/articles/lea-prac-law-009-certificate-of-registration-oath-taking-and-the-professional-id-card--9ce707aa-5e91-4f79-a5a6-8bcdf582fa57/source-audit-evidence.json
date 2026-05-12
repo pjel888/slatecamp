@@ -1,0 +1,134 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T21:50:00+08:00",
+  "audit_mode": "local_source_audit_no_supabase",
+  "protocols_applied": [
+    ".ai/CONTENT_EXCELLENCE_GOAL.md",
+    ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
+    ".ai/00_system/vitruvius-source-reference.md"
+  ],
+  "target": {
+    "article_id": "9ce707aa-5e91-4f79-a5a6-8bcdf582fa57",
+    "slug": "lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card",
+    "title": "Certificate of Registration, Oath, and Professional Identification Card",
+    "article_folder": ".ai/content-audit-export/articles/lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card--9ce707aa-5e91-4f79-a5a6-8bcdf582fa57",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card--9ce707aa-5e91-4f79-a5a6-8bcdf582fa57/candidate.md",
+    "candidate_sha256": "sha256:ea07f18dc1b8cfba879cecd38f11d5a690a933915e1862fe504c6d78eaebe949",
+    "normalized_sha256": "sha256:ea07f18dc1b8cfba879cecd38f11d5a690a933915e1862fe504c6d78eaebe949",
+    "linked_questions_sha256": "sha256:eceeb08d3396f2e928bee29bd693f1d7d9b033f9e21feefb02de3996fc882f35",
+    "sources_sha256": "sha256:4de3ac65c397ffc6c8a2d1036a922a3f1fad15fc62afb3f7ce5b59d431e8a1cb"
+  },
+  "classification": {
+    "content_type": "ra9266_cor_oath_pic_article",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": [
+      "6b422a1b-5daf-4271-890f-e3f792401441",
+      "b997fcee-7f26-4cab-aea5-5b787f40a219",
+      "4e2ee935-b8af-4e4f-8874-8f5d6434da82",
+      "02697f9f-da38-496a-b4d6-004091a7831a",
+      "9459ac16-5219-4f0a-b94a-146083f51989",
+      "946fc668-12f4-416d-8134-ec9830dcc3a1",
+      "9f38af9c-13c0-4f5f-b716-9e0737415143",
+      "f524a5bc-74aa-458c-8b03-326c1a9e30dc",
+      "58c847f2-dbf7-4bae-8d06-2c230927d2f8",
+      "b9acbca7-4e97-47f9-819e-15cecdf21aa6"
+    ]
+  },
+  "raw_sources": [
+    {
+      "key": "ra9266_irr",
+      "label": "RA 9266 IRR Architecture Act of 2004",
+      "source_type": "implementing_rules",
+      "source_id": "batch005-lea-prac-law-009-certificate-of-registration-oat-source-01",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "checked_pdf_pages": [
+        4,
+        6,
+        8,
+        13
+      ]
+    }
+  ],
+  "gate_results": {
+    "compose": "PASS: content-audit:compose -- --article-id 9ce707aa-5e91-4f79-a5a6-8bcdf582fa57 --overwrite; blockers=0",
+    "diff": "PASS: content-audit:diff -- --article-id 9ce707aa-5e91-4f79-a5a6-8bcdf582fa57; changed=true safe_to_push=true blockers=0",
+    "validate": "PASS: content-audit:validate -- --article-id 9ce707aa-5e91-4f79-a5a6-8bcdf582fa57 --summary --dry-run; valid=true blockers=0 warnings=0",
+    "push_dry_run": "not_attempted_local_first; Supabase remote fetch is final publishing only and intentionally non-blocking here",
+    "supabase_mutation": "not_attempted_by_request"
+  },
+  "claims": [
+    {
+      "claim_id": "law009-claim-01",
+      "claim_text": "Section 3(23) defines the Certificate of Registration as showing registration as an architect after passing the LEA.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "law009-claim-02",
+      "claim_text": "Section 3(37) defines the PIC as bearing registration number, issuance date, and expiry date and being due for periodic renewal.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "law009-claim-03",
+      "claim_text": "Section 7(c)-(d) gives the Board authority to administer oaths and issue, suspend, revoke, or reinstate CORs and PICs.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "law009-claim-04",
+      "claim_text": "Section 17 requires successful candidates to take the professional oath before entering practice.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "law009-claim-05",
+      "claim_text": "Section 18 states the COR remains effective until withdrawn, suspended, or revoked and uses a three-year PIC fee/renewal cycle.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card-linked-question-edits",
+      "claim_text": "Question edits staged locally for linked question IDs/model IDs: 6b422a1b-5daf-4271-890f-e3f792401441 (ALE-PRAC-LAW-009-002), b997fcee-7f26-4cab-aea5-5b787f40a219 (ALE-PRAC-LAW-009-003), 4e2ee935-b8af-4e4f-8874-8f5d6434da82 (ALE-PRAC-LAW-009-009), 02697f9f-da38-496a-b4d6-004091a7831a (ALE-PRAC-LAW-009-004), 9459ac16-5219-4f0a-b94a-146083f51989 (ALE-PRAC-LAW-009-007), 946fc668-12f4-416d-8134-ec9830dcc3a1 (ALE-PRAC-LAW-009-010), 9f38af9c-13c0-4f5f-b716-9e0737415143 (ALE-PRAC-LAW-009-005), f524a5bc-74aa-458c-8b03-326c1a9e30dc (ALE-PRAC-LAW-009-008), 58c847f2-dbf7-4bae-8d06-2c230927d2f8 (ALE-PRAC-LAW-009-001), b9acbca7-4e97-47f9-819e-15cecdf21aa6 (ALE-PRAC-LAW-009-006)",
+      "audit_result": "PASS",
+      "source_support": [
+        "ra9266_irr"
+      ]
+    }
+  ],
+  "unsupported_or_removed_claims": [
+    "Removed learner-visible UI placeholders, preserved placeholder blocks, extracted-summary notes, and internal replacement notes from normalized/candidate content.",
+    "Removed one-year or annual PIC-validity claim; the checked source supports a three-year fee/renewal cycle.",
+    "Removed unsupported photo/card-display claims not visible in Section 3(37).",
+    "Rewrote cancellation/return scenario to the source-backed rule that COR remains in force until withdrawn, suspended, or revoked."
+  ],
+  "remaining_local_blockers": [],
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_recovery_complete": true,
+    "remote_publish_status": "not_attempted_by_request",
+    "remaining_local_blockers": []
+  },
+  "local_validation": {
+    "command": "bun run content-audit:validate -- --article-id 9ce707aa-5e91-4f79-a5a6-8bcdf582fa57 --summary --dry-run",
+    "valid": true,
+    "blockers": 0,
+    "warnings": [],
+    "checked_at": "2026-05-10T21:50:00+08:00"
+  }
+}

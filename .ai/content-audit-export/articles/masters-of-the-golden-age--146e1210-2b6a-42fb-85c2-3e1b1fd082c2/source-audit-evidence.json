@@ -1,0 +1,146 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-050-local-first",
+  "batch_number": 50,
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T21:35:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "146e1210-2b6a-42fb-85c2-3e1b1fd082c2",
+    "slug": "masters-of-the-golden-age",
+    "title": "Masters of the Golden Age",
+    "article_folder": ".ai/content-audit-export/articles/masters-of-the-golden-age--146e1210-2b6a-42fb-85c2-3e1b1fd082c2",
+    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/masters-of-the-golden-age--146e1210-2b6a-42fb-85c2-3e1b1fd082c2",
+    "candidate_path": ".ai/content-audit-export/articles/masters-of-the-golden-age--146e1210-2b6a-42fb-85c2-3e1b1fd082c2/candidate.md",
+    "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/masters-of-the-golden-age--146e1210-2b6a-42fb-85c2-3e1b1fd082c2/candidate.md",
+    "question_edits_folder": ".ai/content-audit-export/articles/masters-of-the-golden-age--146e1210-2b6a-42fb-85c2-3e1b1fd082c2/question-edits",
+    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/masters-of-the-golden-age--146e1210-2b6a-42fb-85c2-3e1b1fd082c2/question-edits",
+    "normalized_sha256": "sha256:3cfabfd7671901a582d72b3e741f944b3e9da7719d1c8b129421e980c8c0725f",
+    "candidate_sha256": "sha256:3cfabfd7671901a582d72b3e741f944b3e9da7719d1c8b129421e980c8c0725f",
+    "linked_questions_sha256": "sha256:fbba53d0ff1d8fc963b577c8d1555794a6bd48c5537152c5112d99ec329aaf4f",
+    "sources_sha256": "sha256:1c61a87bf8c37f1b010993d41092c10648ffc7a34727b0908dedfef3166bfe03"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "refined_markdown_role": "locator_only",
+    "derivative_or_search_layer_as_primary": false,
+    "source_families_checked": [
+      {
+        "label": "Filipino Architecture - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Filipino Architecture.pdf",
+        "raw_pdf_sha256": "sha256:3d6f220218c46fe78e37d152d1c51504fd3c7d413cf14e71b39e93c7e1a5831d",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Filipino Architecture.md",
+        "refined_markdown_sha256": "sha256:f60dacc37e4b6634875ed68c18a55288e455476697fc250905460bbe6ac25ce1",
+        "locator": "Filipino Architecture refined markdown lines 40-118, 160-178, 680-700, 830-887, 905-917, and 1037-1039"
+      },
+      {
+        "label": "Module - Architectural History - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Module - Architectural History.pdf",
+        "raw_pdf_sha256": "sha256:d88ccdfaad42e15b3a9f844539aba0b0d614b165d4ef33f082537d72ba13531d",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Module - Architectural History.md",
+        "refined_markdown_sha256": "sha256:d3fc240b16da21c71b8467f6c3bf8599cd422b4c8055e2e9647f0aa2b2e042a1",
+        "locator": "Module - Architectural History refined markdown lines 4863-4915, 4913-4945, 5038-5045, and 5377-5395"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "masters_of_the_golden_age_article",
+    "contains_legal_or_code_claims": false,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 23,
+    "question_edits_created": [
+      "fd64e0c2-9e2a-4c3c-9629-95cc2199a1f4",
+      "4e55b9e2-fe4f-4486-83ac-e37bbd6b8b53",
+      "97bc6983-e6a2-4454-a5e8-07d18782c0ed",
+      "a7b630dc-ae61-472a-a1ed-07abc685bfb3",
+      "0921723d-3b1d-45e4-a66f-df0f506e088a",
+      "df4c2eb4-0909-4a9e-b1a0-3c884fe07ca5",
+      "71950b40-f600-4566-9bfd-35ff45d17956",
+      "31ddce69-a363-4345-bcc4-064d56469397",
+      "20df2f51-5492-4ee1-98ab-9ecdc50f304a",
+      "c348b3de-d6b6-4a65-9029-1665bdc3faf0",
+      "c214cf4f-e164-432b-94b0-f8ff7b93f78d",
+      "7f7e349e-103d-444d-a9c5-d3b9ab52591f",
+      "1c61586c-b32d-4a1f-9a39-0f76aa0ed6b4",
+      "97f31482-fb6e-4eb7-8f25-8383723ff5d3",
+      "9e80f3cf-3a02-4d75-baec-7a7d1fef169c",
+      "e5028c64-3aa2-4f8d-9099-5a584e75f642",
+      "a1a9d519-b2cf-4dc4-811d-ab9e045769a6",
+      "55f05d74-27d5-4fa3-8123-bfb18ff8afbe",
+      "59f41d89-31db-469b-8774-7fcb5477c9bd",
+      "4779aa24-95c7-41a5-b5e5-f8519dbbc2c2",
+      "00783800-4f35-401d-aba1-aa9879de4941",
+      "33748012-e72a-4705-a019-32a8bc891e79",
+      "e73c486a-9548-4de6-8ffb-ec9e82cc70c0"
+    ]
+  },
+  "claims": [
+    {
+      "claim_id": "masters-of-the-golden-age-b050-claim-01",
+      "claim_text": "The checked sources identify Juan Nakpil, Pablo Antonio, and Leandro Locsin in the National Artist sequence.",
+      "source_support": [
+        "fil-local-raw-pdf--b050-146e1210-01",
+        "mod-local-raw-pdf--b050-146e1210-02"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "masters-of-the-golden-age-b050-claim-02",
+      "claim_text": "The source family links Quezon Institute and Lyric Theater to Juan Nakpil, Ideal Theater to Pablo Antonio, and Philippine Stock Exchange to Leandro Locsin.",
+      "source_support": [
+        "fil-local-raw-pdf--b050-146e1210-01",
+        "mod-local-raw-pdf--b050-146e1210-02"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "masters-of-the-golden-age-b050-claim-03",
+      "claim_text": "American and Commonwealth context names include Daniel Burnham, William Parsons, Juan Arellano, Tomas Mapua, Alejandro Legardo, Antonio Toledo, and Carlos Barredo.",
+      "source_support": [
+        "fil-local-raw-pdf--b050-146e1210-01",
+        "mod-local-raw-pdf--b050-146e1210-02"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "masters-of-the-golden-age-b050-claim-04",
+      "claim_text": "Exam recognition should tie architect names to works and period context.",
+      "source_support": [
+        "fil-local-raw-pdf--b050-146e1210-01",
+        "mod-local-raw-pdf--b050-146e1210-02"
+      ],
+      "audit_result": "PASS"
+    }
+  ],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "removed_risk_notes": [
+      "Question sidecars replaced with checked local raw-source citations.",
+      "Article body rewritten from local raw PDF families and refined markdown locators only.",
+      "Legacy compose-error sidecars are removed after selected bundle compose passes."
+    ]
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_batch_050_complete": true,
+    "remote_publish_status": "not_attempted_by_request",
+    "remaining_local_blockers": []
+  },
+  "local_validation": {
+    "status": "PASS",
+    "valid": true,
+    "blockers": 0,
+    "checked_at": "2026-05-11T21:35:00.000+08:00",
+    "commands": [
+      "bun run content-audit:compose -- --article-id 146e1210-2b6a-42fb-85c2-3e1b1fd082c2 --overwrite --strict",
+      "bun run content-audit:diff -- --article-id 146e1210-2b6a-42fb-85c2-3e1b1fd082c2 --strict --summary",
+      "bun run content-audit:validate -- --article-id 146e1210-2b6a-42fb-85c2-3e1b1fd082c2 --summary",
+      "bun run content-audit:ui-block-edits -- --article-id 146e1210-2b6a-42fb-85c2-3e1b1fd082c2"
+    ]
+  }
+}

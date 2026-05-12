@@ -1,7 +1,7 @@
 # IMPL_04: Pre-Questions Before Wiki Reading
 
-**Priority:** P1  
-**Effort:** ~2 days  
+**Priority:** P1
+**Effort:** ~2 days
 **Research basis:** Prequestions with feedback amplify learning g = 1.25 (meta-analysis 2026). Primes retrieval pathways before encoding.
 
 ---

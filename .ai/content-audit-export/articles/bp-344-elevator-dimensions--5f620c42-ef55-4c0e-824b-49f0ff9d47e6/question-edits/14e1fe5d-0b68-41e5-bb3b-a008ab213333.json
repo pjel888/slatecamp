@@ -1,0 +1,57 @@
+{
+  "question_id": "14e1fe5d-0b68-41e5-bb3b-a008ab213333",
+  "baseline_hash": "sha256:f0197e41c0a1a2ceb4d1872a85eaa4e12b171fd91043d78cbf3565bc5f7d2025",
+  "action": "replace",
+  "reason": "source-audited-article-batch-032-local-first aligned linked accessibility/code question with audited local source language for bp-344-elevator-dimensions.",
+  "approved_by": "codex-local-source-audit-batch-032",
+  "approved_at": "2026-05-11T09:12:50+08:00",
+  "source_audit_support": {
+    "parent_article_id": "5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+    "parent_article_slug": "bp-344-elevator-dimensions",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "BP 344 2024 Revised IRR lines 990-1037",
+    "checked_sources": [
+      {
+        "source_id": "bp-344-2024-revised-irr-ncda-local",
+        "label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+        "source_locator": "BP 344 2024 Revised IRR refined markdown lines 317-356, 362-511, 891-951, 990-1037, 1193-1211, 1446-1458, 1529-1545",
+        "checked_markdown_lines": [
+          "BP 344 2024 Revised IRR refined markdown lines 317-356, 362-511, 891-951, 990-1037, 1193-1211, 1446-1458, 1529-1545"
+        ]
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer key, rationale, explanation, and code citation rewritten to the audited local article scope."
+  },
+  "proposed": {
+    "text": "At what height are accessible elevator handrails placed?",
+    "options": [
+      {
+        "id": "a",
+        "text": "900 mm from finished floor"
+      },
+      {
+        "id": "b",
+        "text": "450 mm from finished floor"
+      },
+      {
+        "id": "c",
+        "text": "1500 mm from finished floor"
+      },
+      {
+        "id": "d",
+        "text": "2200 mm from finished floor"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "BP 344 places elevator handrails at 900 mm.",
+    "explanation": "BP 344 places elevator handrails at 900 mm.",
+    "code_citation": "BP 344 2024 Revised IRR lines 990-1037"
+  }
+}

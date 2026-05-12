@@ -1,0 +1,553 @@
+{
+  "batch_id": "source-audited-article-batch-028-local-first",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "generated_at": "2026-05-10T20:12:18.151Z",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "local_first_only": true,
+  "constraints": {
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "workspace_scope": "/Users/philiplewis/slatecamp only"
+  },
+  "selection": {
+    "source_root": ".ai/content-audit-export/articles",
+    "prior_batches_excluded": "batch 001 through 027 report and ledger artifacts checked before selection; selected article IDs were not recorded as previously passed.",
+    "selected_article_ids": [
+      "97befd70-258f-4f5a-8b02-77387b51ccfb",
+      "2baaafee-44d6-4593-8805-eb22f73335f8",
+      "367ef654-f42a-4eed-861d-b00648f5dba4",
+      "0c598f14-db0d-490d-827d-d3088108b47f",
+      "a6eaa2f0-1220-44ea-9bf3-3e90f791b71f"
+    ],
+    "selection_rationale": "Next high-value LEA professional-practice contract/code clusters with linked questions and local raw PDFs available under vitruvius-connection/001_Raw-Source-Layer."
+  },
+  "counts": {
+    "selected_articles": 5,
+    "locally_passed_articles": 5,
+    "linked_questions": 50,
+    "question_edits_created": 50,
+    "source_rows": 12,
+    "unique_raw_pdf_files_checked": 4,
+    "blockers": 0,
+    "warnings": 0
+  },
+  "validation": {
+    "compose": "PASS: 5/5 changed candidates, blockers=0",
+    "diff": "PASS: 5/5 changed=true safe_to_push=true blockers=0",
+    "validate": "PASS: 5/5 valid=true blockers=0; only expected component-usage.json warnings",
+    "scoped_checks_path": ".ai/content-audit-export/source-audited-article-batch-028-local-first-scoped-checks.json",
+    "scoped_checks": {
+      "json_parse": "PASS",
+      "output_placeholder_internal_source_gap_scan": "PASS",
+      "compose_reports": "PASS",
+      "diff_reports": "PASS",
+      "bundle_validation": "PASS_WITH_EXPECTED_COMPONENT_USAGE_WARNINGS",
+      "source_audit_evidence": "PASS",
+      "raw_pdf_hashes": "PASS",
+      "question_edits": "PASS"
+    },
+    "targeted_tests": {
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "result": "PASS: 34 pass, 0 fail, 328 expect() calls"
+    },
+    "remaining_local_blockers": 0
+  },
+  "raw_sources_checked": [
+    {
+      "label": "UAP Standards of Professional Practice",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+      "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+      "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+      "checked_lines": [
+        "414-501",
+        "505-517"
+      ]
+    },
+    {
+      "label": "SPP 202 - Regular Design Services",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+      "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+      "refined_markdown_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+      "checked_lines": [
+        "raw PDF checked",
+        "cross-checked through UAP Standards 414-501 and 505-517"
+      ]
+    },
+    {
+      "label": "UAP Document 301 - General Conditions",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+      "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+      "refined_markdown_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+      "checked_lines": [
+        "472-545",
+        "923-998",
+        "1019-1051",
+        "1062-1090"
+      ]
+    },
+    {
+      "label": "CIAP Document 102 - Private Construction Contract",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+      "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+      "refined_markdown_sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
+      "checked_lines": [
+        "169-258",
+        "712-761",
+        "807-820"
+      ]
+    }
+  ],
+  "exact_paths": [
+    {
+      "article_id": "97befd70-258f-4f5a-8b02-77387b51ccfb",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement--97befd70-258f-4f5a-8b02-77387b51ccfb",
+      "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement--97befd70-258f-4f5a-8b02-77387b51ccfb",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement--97befd70-258f-4f5a-8b02-77387b51ccfb/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement--97befd70-258f-4f5a-8b02-77387b51ccfb/question-edits"
+    },
+    {
+      "article_id": "2baaafee-44d6-4593-8805-eb22f73335f8",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship--2baaafee-44d6-4593-8805-eb22f73335f8",
+      "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship--2baaafee-44d6-4593-8805-eb22f73335f8",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship--2baaafee-44d6-4593-8805-eb22f73335f8/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship--2baaafee-44d6-4593-8805-eb22f73335f8/question-edits"
+    },
+    {
+      "article_id": "367ef654-f42a-4eed-861d-b00648f5dba4",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period--367ef654-f42a-4eed-861d-b00648f5dba4",
+      "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period--367ef654-f42a-4eed-861d-b00648f5dba4",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period--367ef654-f42a-4eed-861d-b00648f5dba4/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period--367ef654-f42a-4eed-861d-b00648f5dba4/question-edits"
+    },
+    {
+      "article_id": "0c598f14-db0d-490d-827d-d3088108b47f",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f",
+      "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f/question-edits"
+    },
+    {
+      "article_id": "a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda--a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
+      "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda--a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda--a6eaa2f0-1220-44ea-9bf3-3e90f791b71f/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda--a6eaa2f0-1220-44ea-9bf3-3e90f791b71f/question-edits"
+    }
+  ],
+  "articles": [
+    {
+      "article_id": "97befd70-258f-4f5a-8b02-77387b51ccfb",
+      "slug": "lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement",
+      "title": "Suspension and Termination of the Owner Architect Agreement",
+      "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement--97befd70-258f-4f5a-8b02-77387b51ccfb",
+      "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement--97befd70-258f-4f5a-8b02-77387b51ccfb",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement--97befd70-258f-4f5a-8b02-77387b51ccfb/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement--97befd70-258f-4f5a-8b02-77387b51ccfb/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement--97befd70-258f-4f5a-8b02-77387b51ccfb/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement--97befd70-258f-4f5a-8b02-77387b51ccfb/source-audit-evidence.json",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement--97befd70-258f-4f5a-8b02-77387b51ccfb/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement--97befd70-258f-4f5a-8b02-77387b51ccfb/question-edits",
+      "question_edit_files": [
+        ".ai/content-audit-export/articles/lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement--97befd70-258f-4f5a-8b02-77387b51ccfb/question-edits/3429796b-c3c1-41e4-b7e3-100ee5f3e0c5.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement--97befd70-258f-4f5a-8b02-77387b51ccfb/question-edits/5472e0b1-2f33-4275-95ef-bc5bb0d61a65.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement--97befd70-258f-4f5a-8b02-77387b51ccfb/question-edits/65402ffd-06b0-42ed-84c4-ebf01813547a.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement--97befd70-258f-4f5a-8b02-77387b51ccfb/question-edits/69601865-90d4-4bf4-b753-0d43f8281b54.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement--97befd70-258f-4f5a-8b02-77387b51ccfb/question-edits/7fddbbb9-df88-4fe2-903e-8c499d93472b.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement--97befd70-258f-4f5a-8b02-77387b51ccfb/question-edits/a651c35c-6242-4ab9-904e-9a07d1962f90.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement--97befd70-258f-4f5a-8b02-77387b51ccfb/question-edits/b19a0192-c08d-4b5c-a66c-d2b0f8ee6c5c.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement--97befd70-258f-4f5a-8b02-77387b51ccfb/question-edits/bda5c914-aa4d-482e-84f8-f939cf9f656f.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement--97befd70-258f-4f5a-8b02-77387b51ccfb/question-edits/c28b31e4-7e35-45f1-a479-85c79d85e093.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement--97befd70-258f-4f5a-8b02-77387b51ccfb/question-edits/ee28fd65-0762-4b87-9b23-3860512a1198.json"
+      ],
+      "linked_question_count": 10,
+      "question_edits_created": 10,
+      "source_count": 4,
+      "source_ids": [
+        "uap-standards-spp202-suspended-abandoned-work-local",
+        "spp202-regular-design-services-local",
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "raw_pdf_sources": [
+        {
+          "source_id": "uap-standards-spp202-suspended-abandoned-work-local",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "locator": "UAP Standards refined markdown lines 414-501 and 505-517"
+        },
+        {
+          "source_id": "spp202-regular-design-services-local",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+          "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+          "locator": "SPP 202 local raw PDF; readable SPP 202 substance cross-checked through UAP Standards lines 414-501 and 505-517"
+        },
+        {
+          "source_id": "uap-document-301-general-conditions-local",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+          "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+          "locator": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090"
+        },
+        {
+          "source_id": "ciap-document-102-private-construction-contract-local",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+          "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+          "locator": "CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820"
+        }
+      ],
+      "hashes": {
+        "original": "sha256:8c067a47c11de28908a843490511c39fa2aed42d8e021bbec7dc74818483ccd9",
+        "normalized": "sha256:f54ead1da24ca306c7637b8584580ccd3b8530fbaa451587578d7867be4a34a9",
+        "candidate": "sha256:f54ead1da24ca306c7637b8584580ccd3b8530fbaa451587578d7867be4a34a9",
+        "sources": "sha256:1c9878da197e772f7e03ae6dc691fe5ed262d0a586e1a697ed2dfe66ea6e3108"
+      },
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": [],
+        "warnings": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "locally_safe_to_push": true,
+        "blockers": [],
+        "warnings": [
+          "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+        ]
+      },
+      "validation": {
+        "bundle_valid": true,
+        "validation_warning": "component-usage.json has not been generated for this article yet (expected current bundle warning).",
+        "scoped_checks_valid": true,
+        "scoped_blockers": [],
+        "source_audit_status": "PASS",
+        "raw_pdf_gate_status": "PASS",
+        "safe_for_supabase_upload": true
+      },
+      "local_integrity_note": null
+    },
+    {
+      "article_id": "2baaafee-44d6-4593-8805-eb22f73335f8",
+      "slug": "lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship",
+      "title": "UAP DOC 301 Overview Purpose Structure",
+      "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship--2baaafee-44d6-4593-8805-eb22f73335f8",
+      "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship--2baaafee-44d6-4593-8805-eb22f73335f8",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship--2baaafee-44d6-4593-8805-eb22f73335f8/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship--2baaafee-44d6-4593-8805-eb22f73335f8/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship--2baaafee-44d6-4593-8805-eb22f73335f8/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship--2baaafee-44d6-4593-8805-eb22f73335f8/source-audit-evidence.json",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship--2baaafee-44d6-4593-8805-eb22f73335f8/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship--2baaafee-44d6-4593-8805-eb22f73335f8/question-edits",
+      "question_edit_files": [
+        ".ai/content-audit-export/articles/lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship--2baaafee-44d6-4593-8805-eb22f73335f8/question-edits/08c2d1f7-c489-4d87-878a-785225242445.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship--2baaafee-44d6-4593-8805-eb22f73335f8/question-edits/7a6b7153-317f-4e4a-bdfd-8bd8b0b2ac14.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship--2baaafee-44d6-4593-8805-eb22f73335f8/question-edits/89b08ba2-acdb-4c8c-a076-894b935193ee.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship--2baaafee-44d6-4593-8805-eb22f73335f8/question-edits/93cb4e1d-3381-4e5e-8678-6965ae5dc5b5.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship--2baaafee-44d6-4593-8805-eb22f73335f8/question-edits/9e62295e-bf4e-4dd5-a066-ffed0d28cf6d.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship--2baaafee-44d6-4593-8805-eb22f73335f8/question-edits/bdcab46d-30bc-41a4-860a-8a66efd4ac2e.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship--2baaafee-44d6-4593-8805-eb22f73335f8/question-edits/cf97d0de-da04-42b1-bebd-7a1b72e60b4a.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship--2baaafee-44d6-4593-8805-eb22f73335f8/question-edits/efcb9fe3-08a7-4c5d-b208-4f7d75480cfe.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship--2baaafee-44d6-4593-8805-eb22f73335f8/question-edits/f5604333-d96c-4c32-8346-35dfd4e5c129.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship--2baaafee-44d6-4593-8805-eb22f73335f8/question-edits/f6101679-b69f-4201-bf4a-b34b050d0052.json"
+      ],
+      "linked_question_count": 10,
+      "question_edits_created": 10,
+      "source_count": 2,
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "raw_pdf_sources": [
+        {
+          "source_id": "uap-document-301-general-conditions-local",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+          "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+          "locator": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090"
+        },
+        {
+          "source_id": "ciap-document-102-private-construction-contract-local",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+          "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+          "locator": "CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820"
+        }
+      ],
+      "hashes": {
+        "original": "sha256:781b1986db9df731ef6e2beea17cf78ce62a954eee6bfb8f99f5f8d7ed4031d1",
+        "normalized": "sha256:fc92d8019f7542d02a26cca08cc9a2fd4a791587bbea03b117a35e1904b1f8e5",
+        "candidate": "sha256:fc92d8019f7542d02a26cca08cc9a2fd4a791587bbea03b117a35e1904b1f8e5",
+        "sources": "sha256:ec269e8a41a4386b37659e9063ed695ccf6c414f3f6545fea5a5e51fc6518c2e"
+      },
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": [],
+        "warnings": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "locally_safe_to_push": true,
+        "blockers": [],
+        "warnings": [
+          "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+        ]
+      },
+      "validation": {
+        "bundle_valid": true,
+        "validation_warning": "component-usage.json has not been generated for this article yet (expected current bundle warning).",
+        "scoped_checks_valid": true,
+        "scoped_blockers": [],
+        "source_audit_status": "PASS",
+        "raw_pdf_gate_status": "PASS",
+        "safe_for_supabase_upload": true
+      },
+      "local_integrity_note": "metadata original/content hash, ui-blocks original hash, and sync-state original hash were reconciled to actual local original.md before final diff/validate."
+    },
+    {
+      "article_id": "367ef654-f42a-4eed-861d-b00648f5dba4",
+      "slug": "lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period",
+      "title": "The Contractor's Obligations Scope Compliance Standards",
+      "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period--367ef654-f42a-4eed-861d-b00648f5dba4",
+      "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period--367ef654-f42a-4eed-861d-b00648f5dba4",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period--367ef654-f42a-4eed-861d-b00648f5dba4/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period--367ef654-f42a-4eed-861d-b00648f5dba4/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period--367ef654-f42a-4eed-861d-b00648f5dba4/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period--367ef654-f42a-4eed-861d-b00648f5dba4/source-audit-evidence.json",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period--367ef654-f42a-4eed-861d-b00648f5dba4/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period--367ef654-f42a-4eed-861d-b00648f5dba4/question-edits",
+      "question_edit_files": [
+        ".ai/content-audit-export/articles/lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period--367ef654-f42a-4eed-861d-b00648f5dba4/question-edits/3283c011-68f8-4ac4-85e6-2e3b5a6763f9.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period--367ef654-f42a-4eed-861d-b00648f5dba4/question-edits/378e89e5-9c56-4d6e-9d8d-cbc86f97af8e.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period--367ef654-f42a-4eed-861d-b00648f5dba4/question-edits/3a14b407-a9a4-499f-b53b-c1c810e776ec.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period--367ef654-f42a-4eed-861d-b00648f5dba4/question-edits/799a2d95-865c-4ca6-8958-3c3ad2a630ee.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period--367ef654-f42a-4eed-861d-b00648f5dba4/question-edits/8b231288-063e-4f81-9832-1344d0aa48b0.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period--367ef654-f42a-4eed-861d-b00648f5dba4/question-edits/b2674598-e2df-4d1b-bc28-a413451241ac.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period--367ef654-f42a-4eed-861d-b00648f5dba4/question-edits/c45e1ca1-864b-4125-8f08-d8a434bb09dc.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period--367ef654-f42a-4eed-861d-b00648f5dba4/question-edits/da6fda51-4a01-47cd-b9b5-19b20e08d0d3.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period--367ef654-f42a-4eed-861d-b00648f5dba4/question-edits/e445bb33-5cf9-467e-8fb7-c6381f779806.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period--367ef654-f42a-4eed-861d-b00648f5dba4/question-edits/ed529039-0c42-4270-8aed-ac9193706655.json"
+      ],
+      "linked_question_count": 10,
+      "question_edits_created": 10,
+      "source_count": 2,
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "raw_pdf_sources": [
+        {
+          "source_id": "uap-document-301-general-conditions-local",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+          "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+          "locator": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090"
+        },
+        {
+          "source_id": "ciap-document-102-private-construction-contract-local",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+          "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+          "locator": "CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820"
+        }
+      ],
+      "hashes": {
+        "original": "sha256:1dd49f884514064766af72d40eb5adce9058fa099e70c833c2bfcc275a1305a6",
+        "normalized": "sha256:94fe9ce9f8b48e8baf14e69c6dd4ec8bbcbf2f022cbbbb9621b25d5df89b7100",
+        "candidate": "sha256:94fe9ce9f8b48e8baf14e69c6dd4ec8bbcbf2f022cbbbb9621b25d5df89b7100",
+        "sources": "sha256:e32d7ed2ceea41c9824057fc17412e5224883c81bf40a2b22e6e2255b7135e83"
+      },
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": [],
+        "warnings": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "locally_safe_to_push": true,
+        "blockers": [],
+        "warnings": [
+          "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+        ]
+      },
+      "validation": {
+        "bundle_valid": true,
+        "validation_warning": "component-usage.json has not been generated for this article yet (expected current bundle warning).",
+        "scoped_checks_valid": true,
+        "scoped_blockers": [],
+        "source_audit_status": "PASS",
+        "raw_pdf_gate_status": "PASS",
+        "safe_for_supabase_upload": true
+      },
+      "local_integrity_note": null
+    },
+    {
+      "article_id": "0c598f14-db0d-490d-827d-d3088108b47f",
+      "slug": "lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures",
+      "title": "Private Bidding Competitive Bidding Negotiated",
+      "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f",
+      "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f/source-audit-evidence.json",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f/question-edits",
+      "question_edit_files": [
+        ".ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f/question-edits/0469ce6d-9057-4c1c-8635-bc4e878aa9c1.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f/question-edits/0b587929-9468-40fe-aa21-4bc6dd18d353.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f/question-edits/133a155e-942f-4423-a618-db04b924a780.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f/question-edits/430cb11f-f1ae-4956-a0f8-918acf8480b2.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f/question-edits/56de8bc9-526c-4609-a89d-0689bcaf88ce.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f/question-edits/808401a2-7e7e-42fe-b7df-b0c122d2674d.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f/question-edits/915cf8f3-6124-46af-8c95-54565b055e86.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f/question-edits/96a7e7da-5a9a-4163-9511-bf6a29741bc2.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f/question-edits/986d8bc6-065e-465f-b66e-96af92788a9a.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f/question-edits/b916ef5c-9166-4460-a5dc-4a5f2b85e5d8.json"
+      ],
+      "linked_question_count": 10,
+      "question_edits_created": 10,
+      "source_count": 2,
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "raw_pdf_sources": [
+        {
+          "source_id": "uap-document-301-general-conditions-local",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+          "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+          "locator": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090"
+        },
+        {
+          "source_id": "ciap-document-102-private-construction-contract-local",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+          "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+          "locator": "CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820"
+        }
+      ],
+      "hashes": {
+        "original": "sha256:8936caa8f2b3b8bc2b69de55ff4b4896ea48cd7ed491dfb27a823d505a612873",
+        "normalized": "sha256:831099f2e83971870d74c00e69ecdfeea4e7237957ee1a73d2fe6cd76a558003",
+        "candidate": "sha256:831099f2e83971870d74c00e69ecdfeea4e7237957ee1a73d2fe6cd76a558003",
+        "sources": "sha256:dddad0825565d38005e12a62bd773188d3a4fcfde4f95a6896c80a136e8b7d8b"
+      },
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": [],
+        "warnings": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "locally_safe_to_push": true,
+        "blockers": [],
+        "warnings": [
+          "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+        ]
+      },
+      "validation": {
+        "bundle_valid": true,
+        "validation_warning": "component-usage.json has not been generated for this article yet (expected current bundle warning).",
+        "scoped_checks_valid": true,
+        "scoped_blockers": [],
+        "source_audit_status": "PASS",
+        "raw_pdf_gate_status": "PASS",
+        "safe_for_supabase_upload": true
+      },
+      "local_integrity_note": null
+    },
+    {
+      "article_id": "a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
+      "slug": "lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda",
+      "title": "Bid Documents Contents Interpretation and Issuing Addenda",
+      "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda--a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
+      "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda--a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda--a6eaa2f0-1220-44ea-9bf3-3e90f791b71f/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda--a6eaa2f0-1220-44ea-9bf3-3e90f791b71f/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda--a6eaa2f0-1220-44ea-9bf3-3e90f791b71f/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda--a6eaa2f0-1220-44ea-9bf3-3e90f791b71f/source-audit-evidence.json",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda--a6eaa2f0-1220-44ea-9bf3-3e90f791b71f/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda--a6eaa2f0-1220-44ea-9bf3-3e90f791b71f/question-edits",
+      "question_edit_files": [
+        ".ai/content-audit-export/articles/lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda--a6eaa2f0-1220-44ea-9bf3-3e90f791b71f/question-edits/0b29f2ec-57bf-451a-ac67-c7775c0f11a8.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda--a6eaa2f0-1220-44ea-9bf3-3e90f791b71f/question-edits/38fea3d8-e0dd-4b98-91a2-d24f44bdd131.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda--a6eaa2f0-1220-44ea-9bf3-3e90f791b71f/question-edits/48ae83be-231f-4def-bb0e-af02e62e895b.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda--a6eaa2f0-1220-44ea-9bf3-3e90f791b71f/question-edits/5bb2b5cd-45f8-4af6-a730-dc886f4f4525.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda--a6eaa2f0-1220-44ea-9bf3-3e90f791b71f/question-edits/7677ef3b-3338-4156-bc0b-70bb42d833a3.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda--a6eaa2f0-1220-44ea-9bf3-3e90f791b71f/question-edits/7d023e7b-6daa-4b36-87d3-456e06aed8e4.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda--a6eaa2f0-1220-44ea-9bf3-3e90f791b71f/question-edits/81199809-d9c3-4622-be93-3d73f84313e5.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda--a6eaa2f0-1220-44ea-9bf3-3e90f791b71f/question-edits/ce9954fb-6292-4e96-9f0d-e3e9da602977.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda--a6eaa2f0-1220-44ea-9bf3-3e90f791b71f/question-edits/fe3e22fa-85cd-4ae3-b22f-0f596e04807a.json",
+        ".ai/content-audit-export/articles/lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda--a6eaa2f0-1220-44ea-9bf3-3e90f791b71f/question-edits/ff397f9a-d371-4697-b5f4-b3b01a03e96b.json"
+      ],
+      "linked_question_count": 10,
+      "question_edits_created": 10,
+      "source_count": 2,
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "raw_pdf_sources": [
+        {
+          "source_id": "uap-document-301-general-conditions-local",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+          "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+          "locator": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090"
+        },
+        {
+          "source_id": "ciap-document-102-private-construction-contract-local",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+          "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+          "locator": "CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820"
+        }
+      ],
+      "hashes": {
+        "original": "sha256:c203aa042ecde05cc11689535f67f2a98a5758ff2416b2fc98ccd8932df01fdf",
+        "normalized": "sha256:f4723a6575431a810fb6183f064b4b8df4ced825fcea0b683d547d5882f39d49",
+        "candidate": "sha256:f4723a6575431a810fb6183f064b4b8df4ced825fcea0b683d547d5882f39d49",
+        "sources": "sha256:3ea1357110556cd8198a38e3abca68641e3b082851929c2f7ff9e8eea44f5437"
+      },
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": [],
+        "warnings": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "locally_safe_to_push": true,
+        "blockers": [],
+        "warnings": [
+          "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+        ]
+      },
+      "validation": {
+        "bundle_valid": true,
+        "validation_warning": "component-usage.json has not been generated for this article yet (expected current bundle warning).",
+        "scoped_checks_valid": true,
+        "scoped_blockers": [],
+        "source_audit_status": "PASS",
+        "raw_pdf_gate_status": "PASS",
+        "safe_for_supabase_upload": true
+      },
+      "local_integrity_note": null
+    }
+  ],
+  "artifacts": {
+    "ledger": ".ai/content-audit-export/source-audited-article-batch-028-local-first-ledger.json",
+    "report": ".ai/content-audit-export/source-audited-article-batch-028-local-first-report.md",
+    "scoped_checks": ".ai/content-audit-export/source-audited-article-batch-028-local-first-scoped-checks.json"
+  },
+  "next_phase_readiness": {
+    "ready_for_final_publishing_review": true,
+    "ready_for_supabase_apply_now": false,
+    "reason": "This batch is explicitly local-first. Supabase publishing remains a separate final review/apply phase."
+  }
+}

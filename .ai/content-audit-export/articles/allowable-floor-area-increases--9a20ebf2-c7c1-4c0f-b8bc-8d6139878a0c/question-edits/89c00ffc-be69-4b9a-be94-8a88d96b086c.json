@@ -1,0 +1,49 @@
+{
+  "question_id": "89c00ffc-be69-4b9a-be94-8a88d96b086c",
+  "baseline_hash": "sha256:e84790decc3f994efee45a1bb6b028235dd6c5eaba9625069f5fda4679e9026d",
+  "action": "replace",
+  "reason": "source-audited-article-batch-039-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-039",
+  "approved_at": "2026-05-11T13:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-039-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 1390-1450",
+          "PD 1096 RIRR refined markdown lines 1452-1462"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 706"
+  },
+  "proposed": {
+    "text": "Whose approval is required for a Section 706 allowable floor area increase?",
+    "options": [
+      {
+        "id": "b039-9a20-14-a",
+        "text": "The Building Official"
+      },
+      {
+        "id": "b039-9a20-14-b",
+        "text": "Only the contractor"
+      },
+      {
+        "id": "b039-9a20-14-c",
+        "text": "Only the lot owner"
+      },
+      {
+        "id": "b039-9a20-14-d",
+        "text": "Only the materials supplier"
+      }
+    ],
+    "correct_option_id": "b039-9a20-14-a",
+    "rationale": "Correct answer: The Building Official. This is directly supported by PD 1096 2004 Revised IRR, Section 706.",
+    "explanation": "The Batch 039 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 706.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 706"
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-085-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T07:55:00.000+08:00",
+  "target": {
+    "article_id": "22192e7e-6cdf-4613-9b2c-bddf1ee3091f",
+    "slug": "lea-matl-003-07-core-concept",
+    "title": "Structural bolts join steel members through frictional force or bearing action",
+    "article_folder": ".ai/content-audit-export/articles/lea-matl-003-07-core-concept--22192e7e-6cdf-4613-9b2c-bddf1ee3091f",
+    "normalized_sha256": "sha256:bae3d8586753ee014c27f79029b196af893cf88d73ec237a2e9c5dfc0d0f49bd",
+    "candidate_sha256": "sha256:bae3d8586753ee014c27f79029b196af893cf88d73ec237a2e9c5dfc0d0f49bd",
+    "candidate_path": ".ai/content-audit-export/articles/lea-matl-003-07-core-concept--22192e7e-6cdf-4613-9b2c-bddf1ee3091f/candidate.md"
+  },
+  "classification": {
+    "topic_family": "structural_bolts_and_steel_connections",
+    "local_first_batch": "085",
+    "source_sensitivity": "technical_construction",
+    "contains_legal_or_code_claims": false,
+    "source_risk_tier": "source_bound_technology",
+    "requires_raw_pdf_audit": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdfs_checked_first": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "local_pdf_extraction_method": "python_pymupdf_local",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "european-building-construction-illustrated-b085",
+      "label": "European Building Construction Illustrated",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/European Building Construction Illustrated.pdf",
+      "sha256": "sha256:440f21385df13b75ce4041026f77d9d34872d6235fd18fa770c11609a283d19c",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/European Building Construction Illustrated.md",
+      "refined_markdown_sha256": "sha256:f2ec82d918f32d6c050f9f5ea0274b6c68f409c009ddcd311ab45e3567041e8c",
+      "locator": "European Building Construction Illustrated refined markdown lines 3537-3605; raw PDF page 121 checked by local PyMuPDF extraction."
+    },
+    {
+      "source_id": "metals-lecture-b085",
+      "label": "Metals Lecture",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Metals Lecture.pdf",
+      "sha256": "sha256:cd9cd4ee534bda9a974447c4ec73b13b12d5abf1c14df1fca408a2c4530650dd",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Metals Lecture.md",
+      "refined_markdown_sha256": "sha256:4e9e0a042f2eef2c80d33af81512ca2cf32778cae64351af9dc54df58db3694c",
+      "locator": "Metals Lecture refined markdown lines 26 and 405; raw PDF pages 2 and 28 checked by local PyMuPDF extraction."
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-matl-003-07-core-concept-article-b085",
+      "claim_text": "Article lea-matl-003-07-core-concept was rewritten to the checked structural_bolts_and_steel_connections source scope.",
+      "claim_type": "article_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/European Building Construction Illustrated.pdf",
+        "raw_pdf_sha256": "sha256:440f21385df13b75ce4041026f77d9d34872d6235fd18fa770c11609a283d19c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/European Building Construction Illustrated.md",
+        "source_locator": "European Building Construction Illustrated refined markdown lines 3537-3605; Metals Lecture refined markdown lines 26 and 405.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-17b5a72a-c775-4e40-9489-e6e4a67275b1-b085",
+      "claim_text": "Question 17b5a72a-c775-4e40-9489-e6e4a67275b1 was rewritten to the checked structural_bolts_and_steel_connections source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/European Building Construction Illustrated.pdf",
+        "raw_pdf_sha256": "sha256:440f21385df13b75ce4041026f77d9d34872d6235fd18fa770c11609a283d19c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/European Building Construction Illustrated.md",
+        "source_locator": "European Building Construction Illustrated refined markdown lines 3537-3605; Metals Lecture refined markdown lines 26 and 405.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-1f5dac3c-7d9b-41a9-abbb-8d412a90820c-b085",
+      "claim_text": "Question 1f5dac3c-7d9b-41a9-abbb-8d412a90820c was rewritten to the checked structural_bolts_and_steel_connections source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/European Building Construction Illustrated.pdf",
+        "raw_pdf_sha256": "sha256:440f21385df13b75ce4041026f77d9d34872d6235fd18fa770c11609a283d19c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/European Building Construction Illustrated.md",
+        "source_locator": "European Building Construction Illustrated refined markdown lines 3537-3605; Metals Lecture refined markdown lines 26 and 405.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-153b4448-6e26-42b8-b647-4a17abdd8d9e-b085",
+      "claim_text": "Question 153b4448-6e26-42b8-b647-4a17abdd8d9e was rewritten to the checked structural_bolts_and_steel_connections source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/European Building Construction Illustrated.pdf",
+        "raw_pdf_sha256": "sha256:440f21385df13b75ce4041026f77d9d34872d6235fd18fa770c11609a283d19c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/European Building Construction Illustrated.md",
+        "source_locator": "European Building Construction Illustrated refined markdown lines 3537-3605; Metals Lecture refined markdown lines 26 and 405.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-8a863a38-d013-4506-acec-8322dc93e841-b085",
+      "claim_text": "Question 8a863a38-d013-4506-acec-8322dc93e841 was rewritten to the checked structural_bolts_and_steel_connections source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/European Building Construction Illustrated.pdf",
+        "raw_pdf_sha256": "sha256:440f21385df13b75ce4041026f77d9d34872d6235fd18fa770c11609a283d19c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/European Building Construction Illustrated.md",
+        "source_locator": "European Building Construction Illustrated refined markdown lines 3537-3605; Metals Lecture refined markdown lines 26 and 405.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-53c0a3d1-3843-45c7-a703-5bdc424a3a72-b085",
+      "claim_text": "Question 53c0a3d1-3843-45c7-a703-5bdc424a3a72 was rewritten to the checked structural_bolts_and_steel_connections source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/European Building Construction Illustrated.pdf",
+        "raw_pdf_sha256": "sha256:440f21385df13b75ce4041026f77d9d34872d6235fd18fa770c11609a283d19c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/European Building Construction Illustrated.md",
+        "source_locator": "European Building Construction Illustrated refined markdown lines 3537-3605; Metals Lecture refined markdown lines 26 and 405.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-a58834eb-23a2-49c3-81e1-09c49dbe2cd7-b085",
+      "claim_text": "Question a58834eb-23a2-49c3-81e1-09c49dbe2cd7 was rewritten to the checked structural_bolts_and_steel_connections source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/European Building Construction Illustrated.pdf",
+        "raw_pdf_sha256": "sha256:440f21385df13b75ce4041026f77d9d34872d6235fd18fa770c11609a283d19c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/European Building Construction Illustrated.md",
+        "source_locator": "European Building Construction Illustrated refined markdown lines 3537-3605; Metals Lecture refined markdown lines 26 and 405.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-b4b44890-d033-4205-9452-b82801b1f0b2-b085",
+      "claim_text": "Question b4b44890-d033-4205-9452-b82801b1f0b2 was rewritten to the checked structural_bolts_and_steel_connections source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/European Building Construction Illustrated.pdf",
+        "raw_pdf_sha256": "sha256:440f21385df13b75ce4041026f77d9d34872d6235fd18fa770c11609a283d19c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/European Building Construction Illustrated.md",
+        "source_locator": "European Building Construction Illustrated refined markdown lines 3537-3605; Metals Lecture refined markdown lines 26 and 405.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-2cda0a48-a65f-4fed-988a-84397360aeff-b085",
+      "claim_text": "Question 2cda0a48-a65f-4fed-988a-84397360aeff was rewritten to the checked structural_bolts_and_steel_connections source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/European Building Construction Illustrated.pdf",
+        "raw_pdf_sha256": "sha256:440f21385df13b75ce4041026f77d9d34872d6235fd18fa770c11609a283d19c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/European Building Construction Illustrated.md",
+        "source_locator": "European Building Construction Illustrated refined markdown lines 3537-3605; Metals Lecture refined markdown lines 26 and 405.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-b646f090-9f5e-42c6-97e4-77d65406b559-b085",
+      "claim_text": "Question b646f090-9f5e-42c6-97e4-77d65406b559 was rewritten to the checked structural_bolts_and_steel_connections source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/European Building Construction Illustrated.pdf",
+        "raw_pdf_sha256": "sha256:440f21385df13b75ce4041026f77d9d34872d6235fd18fa770c11609a283d19c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/European Building Construction Illustrated.md",
+        "source_locator": "European Building Construction Illustrated refined markdown lines 3537-3605; Metals Lecture refined markdown lines 26 and 405.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-333652ec-0ddd-42e6-92e4-fe8bfe286211-b085",
+      "claim_text": "Question 333652ec-0ddd-42e6-92e4-fe8bfe286211 was rewritten to the checked structural_bolts_and_steel_connections source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/European Building Construction Illustrated.pdf",
+        "raw_pdf_sha256": "sha256:440f21385df13b75ce4041026f77d9d34872d6235fd18fa770c11609a283d19c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/European Building Construction Illustrated.md",
+        "source_locator": "European Building Construction Illustrated refined markdown lines 3537-3605; Metals Lecture refined markdown lines 26 and 405.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "question_edit_audit": {
+    "linked_question_count": 10,
+    "question_edit_count": 10,
+    "answer_key_fields_changed": true,
+    "source_safe_rewrite": true,
+    "blockers": []
+  },
+  "scenario_enrichment": {
+    "status": "eligible-deferred",
+    "reason": "Bolted connection selection has scenario potential, but Batch 085 deferred new scenario sections to avoid broadening the source-audit repair."
+  },
+  "roundtrip": {
+    "normalized_md_owns_article_prose": true,
+    "ui_blocks_json_owns_raw_ui_blocks": true,
+    "candidate_md_generated_by_compose": true,
+    "raw_ui_block_edits_supported_in_this_batch": false,
+    "note": "Exported UI summary markers were removed because ui-blocks.json has zero preserved raw blocks; compose must generate candidate.md from normalized.md.",
+    "unresolved_ui_summary_markers_removed": true
+  }
+}

@@ -2,42 +2,56 @@
   "question_id": "a1eaf1c8-47ba-4a12-97a4-72dbda1dd150",
   "baseline_hash": "sha256:9ba8f418d37746fd00ca73f6bde56b21aa3c40070a902c69b4d8953013dc2849",
   "action": "replace",
-  "reason": "Correct source locator: DPWH Official PD 1096 RIRR p.230 lists Section 1603 as Glazing of Openings; p.232 lists Section 1608 as Exterior Veneer.",
-  "approved_by": "hermes-agent-content-optimizer",
-  "approved_at": "2026-05-10T03:11:40.842277+00:00",
-  "proposed": {
-    "text": "Under PD 1096 Rule XVI, Sec. 1608, plastic veneer on exterior walls is limited to the first storey as the standard rule. What is the exception, and what maximum height does it allow?",
-    "options": [
+  "reason": "source-audited-article-batch-036-local-first: source-safe replacement grounded in local raw PDF/source family evidence; removes unsupported, stale, or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-036",
+  "approved_at": "2026-05-11T12:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-036-local-first",
+    "checked_sources": [
       {
-        "id": "a",
-        "text": "Exception for buildings outside highly restrictive zones: plastic veneer may extend up to 10.00 m above grade"
+        "source_id": "pd-1096-national-building-code-local",
+        "label": "PD 1096 National Building Code - Plastics Provisions",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 - National Building Code.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 - National Building Code.md",
+        "checked_markdown_lines": [
+          "PD 1096 National Building Code refined markdown lines 1909-1998"
+        ]
       },
       {
-        "id": "b",
-        "text": "Exception for fire-sprinklered buildings: plastic veneer may extend to the full building height, provided the building does not exceed 20 storeys"
-      },
-      {
-        "id": "c",
-        "text": "Exception for Type V buildings: plastic veneer may extend up to 15.00 m above grade, if the building is located in a non-seismic zone"
-      },
-      {
-        "id": "d",
-        "text": "Exception for approved plastic types: veneer is permitted on all storeys regardless of height, as long as it passes fire safety tests"
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR 2004 DPWH Official refined markdown lines 4377-4442"
+        ]
       }
     ],
-    "correct_option_id": "a",
-    "correct_value": null,
-    "accepted_answers": null,
-    "value_tolerance": 0,
-    "question_type": "mcq",
-    "rationale": "Sec. 1608 standard rule limits exterior plastic veneer to the first storey. The exception — applicable outside highly restrictive fire zones — permits plastic veneer to extend up to 10.00 m above grade. This exception is zone-dependent, not sprinkler-dependent, and the 10.00 m limit is a hard ceiling even in less restrictive zones.",
-    "explanation": "The standard (1st storey) versus exception (10.00 m outside highly restrictive zones) pairing is the primary testable fact of Sec. 1608. The zone-dependency of the exception — not sprinklers — is the key discriminator.",
-    "code_citation": "PD 1096, Rule XVI, Sec. 1608",
-    "bloom_level": "understand",
-    "application_context": null,
-    "practice_context": [],
-    "difficulty": 0.55,
-    "is_assessment": false,
-    "model_id": null
+    "citation": "PD 1096, Section 1604"
+  },
+  "proposed": {
+    "text": "What lateral and slope separation is required between plastic skylights?",
+    "options": [
+      {
+        "id": "b036-c712-05-a",
+        "text": "At least 2.50 meters laterally and 3.00 meters along the roof slope"
+      },
+      {
+        "id": "b036-c712-05-b",
+        "text": "At least 600 mm laterally and 1.20 meters vertically"
+      },
+      {
+        "id": "b036-c712-05-c",
+        "text": "At least 1.50 meters in any direction"
+      },
+      {
+        "id": "b036-c712-05-d",
+        "text": "No separation is required if plastic is approved"
+      }
+    ],
+    "correct_option_id": "b036-c712-05-a",
+    "rationale": "Correct answer: At least 2.50 meters laterally and 3.00 meters along the roof slope. This is directly supported by PD 1096, Section 1604.",
+    "explanation": "The source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096, Section 1604.",
+    "code_citation": "PD 1096, Section 1604"
   }
 }

@@ -1,0 +1,27 @@
+{
+  "question_id": "87c8eb89-e201-4212-bab5-d9e5f186fed1",
+  "baseline_hash": "sha256:63ec1ad6df1d6319b7ca805dc0d25d4f37462a6d39f0d33644722f40c34e2d3e",
+  "reason": "Batch 011 local source audit aligned linked question 87c8eb89-e201-4212-bab5-d9e5f186fed1 with the repaired Fire Detection and Alarm Systems article and verified raw-source citations. This local draft updates citation/explanation context only and does not change answer-key fields.",
+  "approved_by": "codex-local-source-audit-batch-011",
+  "approved_at": "2026-05-10T12:05:00.000+08:00",
+  "source_audit_support": {
+    "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+    "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+    "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+    "raw_markdown_sha256": "sha256:eb992b1c0090e1f8f34ee3ad24d20be3b4ffaa34ec3ab9d341b6f1596865dd26",
+    "source_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
+    "checked_markdown_lines": [
+      "3991-4060",
+      "4624-4627",
+      "6098-6106",
+      "6743-6770"
+    ],
+    "parent_article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+    "parent_article_slug": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr",
+    "answer_key_fields_changed": false
+  },
+  "proposed": {
+    "code_citation": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
+    "explanation": "The controlling audited source is RA 9514 2019 Revised IRR, Section 10.2.6.6 plus the selected occupancy provisions checked in this batch. The source supports mandatory fire alarm triggers, initiation, notification, fire-department notification, fire-watch handling, and selected assembly, hotel/dormitory, and business occupancy thresholds. Device topology decisions, such as conventional or addressable architecture, need a separate NFPA 72 or PEC engineering source before final publishing if the item turns on that point."
+  }
+}

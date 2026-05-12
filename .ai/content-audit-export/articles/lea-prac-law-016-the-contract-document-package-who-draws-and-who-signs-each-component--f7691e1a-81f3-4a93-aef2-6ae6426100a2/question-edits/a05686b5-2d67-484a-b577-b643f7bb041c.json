@@ -1,0 +1,31 @@
+{
+  "question_id": "a05686b5-2d67-484a-b577-b643f7bb041c",
+  "baseline_hash": "sha256:8f6f5cd31ca5270d8e67f446e740deac13dcc19a609e981894df095720e424b4",
+  "reason": "Batch 006 local source audit aligned linked question ALE-PRAC-LAW-016-008 to verified raw-source claims for lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component.",
+  "approved_by": "codex-local-source-audit-batch-006",
+  "approved_at": "2026-05-10T22:30:00+08:00",
+  "proposed": {
+    "code_citation": "RA 9266 IRR Sections 20 and 32",
+    "explanation": "Source-audited against RA 9266 IRR Sections 3(18), 3(26), 20, 23, and 32 plus UAP Document 301; the answer turns on architectural-document signing/sealing and coordinated contract documents.",
+    "text": "An architect signed and sealed architectural documents that were later found to contain an obvious code-related document error. The architect says the contractor should have caught the error during construction. What is the source-backed result?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The architect is not responsible because the contractor must verify every professional document"
+      },
+      {
+        "id": "b",
+        "text": "The architect remains responsible for architectural documents issued under the architect's seal and authorized signature"
+      },
+      {
+        "id": "c",
+        "text": "Responsibility depends only on whether contractor insurance covers correction costs"
+      },
+      {
+        "id": "d",
+        "text": "The seal transfers all document responsibility to the owner"
+      }
+    ],
+    "correct_option_id": "b"
+  }
+}

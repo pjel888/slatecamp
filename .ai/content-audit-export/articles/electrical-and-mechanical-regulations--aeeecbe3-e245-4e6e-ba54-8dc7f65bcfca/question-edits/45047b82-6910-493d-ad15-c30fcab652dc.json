@@ -1,0 +1,49 @@
+{
+  "question_id": "45047b82-6910-493d-ad15-c30fcab652dc",
+  "baseline_hash": "sha256:eb649e190e284d1c0b4a6a88c5be64b03a1e13da500e429889cbed5a4781cc9e",
+  "action": "replace",
+  "reason": "source-audited-article-batch-039-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-039",
+  "approved_at": "2026-05-11T13:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-039-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 4007-4064",
+          "PD 1096 RIRR refined markdown lines 4109-4303"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 1301"
+  },
+  "proposed": {
+    "text": "Under Section 1301, what code must building electrical systems conform to?",
+    "options": [
+      {
+        "id": "b039-aeee-19-a",
+        "text": "Parts 1 and 2 of the Philippine Electrical Code adopted under RA 7920"
+      },
+      {
+        "id": "b039-aeee-19-b",
+        "text": "Only the Philippine Mechanical Code"
+      },
+      {
+        "id": "b039-aeee-19-c",
+        "text": "Only BP 344"
+      },
+      {
+        "id": "b039-aeee-19-d",
+        "text": "Only the plumbing provisions of the building code"
+      }
+    ],
+    "correct_option_id": "b039-aeee-19-a",
+    "rationale": "Correct answer: Parts 1 and 2 of the Philippine Electrical Code adopted under RA 7920. This is directly supported by PD 1096 2004 Revised IRR, Section 1301.",
+    "explanation": "The Batch 039 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 1301.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 1301"
+  }
+}

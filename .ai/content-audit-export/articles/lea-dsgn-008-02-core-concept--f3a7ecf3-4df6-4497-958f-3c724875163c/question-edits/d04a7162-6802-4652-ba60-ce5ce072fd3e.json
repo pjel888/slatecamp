@@ -1,0 +1,32 @@
+{
+  "question_id": "d04a7162-6802-4652-ba60-ce5ce072fd3e",
+  "baseline_hash": "sha256:abd2a5c8c8d3d2d0ea0a7529a887dde4c212c29aedaa2bb25d35ac819912326e",
+  "reason": "Batch 003 source audit corrected the wrong Group D storage premise. PD 1096 classifies Group D as Institutional and Group G as Storage and Hazardous; RA 9514 supplies protected-exit and special-hazard rules.",
+  "approved_by": "codex-local-source-audit-batch-003",
+  "approved_at": "2026-05-10T18:00:00+08:00",
+  "proposed": {
+    "text": "A high-hazard Group G paint storage room is directly below a Group B office suite. If the designer uses a fire-resistance separation rather than relying only on automatic protection, what minimum fire-resistance rating is source-backed for the hazardous storage condition?",
+    "options": [
+      {
+        "id": "a",
+        "text": "1-hour"
+      },
+      {
+        "id": "b",
+        "text": "2-hour"
+      },
+      {
+        "id": "c",
+        "text": "3-hour"
+      },
+      {
+        "id": "d",
+        "text": "4-hour"
+      }
+    ],
+    "correct_option_id": "d",
+    "rationale": "RA 9514 Section 10.2.6.10(A) supports at least four-hour fire resistance for storage hazards greater than normal occupancy; high-hazard cases may require both construction and automatic protection.",
+    "explanation": "This replaces the wrong Group D storage premise.",
+    "code_citation": "PD 1096 Rule VII Group G; RA 9514 2019 RIRR Section 10.2.6.10(A)"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "question_id": "c4744db4-0d45-4993-a11f-f701c6a87f0c",
+  "baseline_hash": "sha256:6087c81e1b3bba1c0f57eeebccb6cf9bf622fb7f27ea61b598dc06b3fbfbf35a",
+  "action": "replace",
+  "reason": "source-audited-article-batch-075-local-first aligned linked question with checked local raw PDF/source evidence for lea-theo-009-03-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-075",
+  "approved_at": "2026-05-12T02:55:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "249aff40-df16-413b-8b16-b78190fafeff",
+    "parent_article_slug": "lea-theo-009-03-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "PD 1096 RIRR refined markdown lines 75-85, 457-458, 566-570, 914-923, 1088-1155, and 5764-5783; raw PDF pages 19, 38, 47, and 280 checked by local PyMuPDF extraction; Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430; raw PDF pages 6, 17, 25, and 33-35 checked by local PyMuPDF extraction",
+    "checked_markdown_lines": [
+      "PD 1096 RIRR refined markdown lines 75-85, 457-458, 566-570, 914-923, 1088-1155, and 5764-5783; raw PDF pages 19, 38, 47, and 280 checked by local PyMuPDF extraction",
+      "Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430; raw PDF pages 6, 17, 25, and 33-35 checked by local PyMuPDF extraction"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "pd1096-rirr-2004-dpwh-b075",
+        "label": "PD 1096 RIRR 2004 - Revised IRR (DPWH Official)",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "locator": "PD 1096 RIRR refined markdown lines 75-85, 457-458, 566-570, 914-923, 1088-1155, and 5764-5783; raw PDF pages 19, 38, 47, and 280 checked by local PyMuPDF extraction"
+      },
+      {
+        "source_id": "design-process-programming-b075",
+        "label": "Design Process",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
+        "sha256": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
+        "raw_markdown_sha256": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
+        "locator": "Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430; raw PDF pages 6, 17, 25, and 33-35 checked by local PyMuPDF extraction"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 075 local raw-source-audited article scope."
+  },
+  "proposed": {
+    "text": "Which condition is listed as an architectural deficiency in the dangerous or ruinous building context?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Inadequate sizes of rooms and space dimensions."
+      },
+      {
+        "id": "b",
+        "text": "Too many presentation boards."
+      },
+      {
+        "id": "c",
+        "text": "A missing marketing brochure."
+      },
+      {
+        "id": "d",
+        "text": "A high design fee."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The checked PD 1096 RIRR text lists inadequate room sizes, space dimensions, and window openings as architectural deficiencies.",
+    "explanation": "The checked PD 1096 RIRR text lists inadequate room sizes, space dimensions, and window openings as architectural deficiencies.",
+    "code_citation": "PD 1096 RIRR"
+  }
+}

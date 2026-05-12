@@ -1,20 +1,44 @@
 {
   "article_id": "1bf5341b-5898-4793-bbff-472227208ccf",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:c409399ed2dd67b103ac240134f9c957ff320dc48b4ee7c1a70a322c0536b67f",
-  "source_count": 1,
+  "sources_hash": "sha256:1a74105e8b2e07f89e5f42843a89f654c9dac1804f92eaa226f43904834ac7c4",
+  "source_count": 3,
   "sources": [
     {
-      "source_id": "99b1a273-98c9-4670-903e-9505f610d8ed",
+      "source_id": "sitework-lecture-local-raw-pdf--b062-1bf5341b-01",
       "article_id": "1bf5341b-5898-4793-bbff-472227208ccf",
-      "label": "Topographic mapping standards (NAMRIA); Philippine Building Code (slope and foundation requirements); PD 1067 (Water Code — easement restrictions)",
+      "label": "Sitework Lecture - local raw PDF",
       "url": null,
-      "source_type": "primary_law",
-      "description": "Geotechnical engineering practice (slope stability, fill compaction); site engineering and grading plan documentation",
-      "is_verified": false,
+      "source_type": "local_raw_pdf",
+      "description": "Sitework Lecture refined markdown lines 1-90, 130-230, and 560-625; raw PDF pages for Div 02 Sitework earthworks, AASHTO soil classification, fill, riprap, gabions, geosynthetics, roads/parking, and paving slides",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:01.381895+00:00",
-      "updated_at": "2026-03-24T04:34:01.381895+00:00"
+      "created_at": "2026-05-11T21:35:00.000+08:00",
+      "updated_at": "2026-05-11T21:35:00.000+08:00"
+    },
+    {
+      "source_id": "building-technology-siteworks-local-raw-pdf--b062-1bf5341b-02",
+      "article_id": "1bf5341b-5898-4793-bbff-472227208ccf",
+      "label": "Building Technology - Siteworks - local raw PDF",
+      "url": null,
+      "source_type": "local_raw_pdf",
+      "description": "Building Technology - Siteworks refined markdown lines 1-80, 112-219, and 440-485; raw PDF pages for Div 02 Sitework earthworks, AASHTO soil classification, fill, riprap, gabions, geosynthetics, and paving slides",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-11T21:35:00.000+08:00",
+      "updated_at": "2026-05-11T21:35:00.000+08:00"
+    },
+    {
+      "source_id": "pd-1067-water-code-local-raw-pdf--b062-1bf5341b-03",
+      "article_id": "1bf5341b-5898-4793-bbff-472227208ccf",
+      "label": "PD 1067 - Water Code of the Philippines - local raw PDF",
+      "url": null,
+      "source_type": "local_raw_pdf",
+      "description": "PD 1067 refined markdown lines 180-193, 201-205, 226-227, and 238-245; raw PDF pages for drainage, natural flow, easements, flood-control, protected-area, and water-pollution provisions",
+      "is_verified": true,
+      "sort_order": 2,
+      "created_at": "2026-05-11T21:35:00.000+08:00",
+      "updated_at": "2026-05-11T21:35:00.000+08:00"
     }
   ]
 }

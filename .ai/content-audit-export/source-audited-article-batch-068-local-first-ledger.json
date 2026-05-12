@@ -1,0 +1,443 @@
+{
+  "batch_id": "source-audited-article-batch-068-local-first",
+  "batch_number": 68,
+  "generated_at": "2026-05-12T00:10:00+08:00",
+  "mode": "local-first",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_BATCH_069_SELECTION",
+  "selection_rule": "five unpassed high-value planning-law/regulatory clusters with linked questions and exact readable local raw PDFs, excluding article IDs recorded in Batches 001-067.",
+  "inherited_blocker_status": "Batch 067 blockers=0, targeted tests passed, scoped checks pass=true, and final scoped git diff --check passed locally.",
+  "completed_articles": [
+    {
+      "article_id": "63c2455e-8c3f-4a0b-b111-855094b3c1d9",
+      "slug": "lea-plan-001-05-core-concept",
+      "title": "The Comprehensive Land Use Plan (CLUP)",
+      "folder": "lea-plan-001-05-core-concept--63c2455e-8c3f-4a0b-b111-855094b3c1d9",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-001-05-core-concept--63c2455e-8c3f-4a0b-b111-855094b3c1d9",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-001-05-core-concept--63c2455e-8c3f-4a0b-b111-855094b3c1d9/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-001-05-core-concept--63c2455e-8c3f-4a0b-b111-855094b3c1d9/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-001-05-core-concept--63c2455e-8c3f-4a0b-b111-855094b3c1d9/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-001-05-core-concept--63c2455e-8c3f-4a0b-b111-855094b3c1d9/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-001-05-core-concept--63c2455e-8c3f-4a0b-b111-855094b3c1d9/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-001-05-core-concept--63c2455e-8c3f-4a0b-b111-855094b3c1d9/ui-blocks.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-001-05-core-concept--63c2455e-8c3f-4a0b-b111-855094b3c1d9/ui-block-edits.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-001-05-core-concept--63c2455e-8c3f-4a0b-b111-855094b3c1d9/parser-errors.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-001-05-core-concept--63c2455e-8c3f-4a0b-b111-855094b3c1d9/compose-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-001-05-core-concept--63c2455e-8c3f-4a0b-b111-855094b3c1d9/diff-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-001-05-core-concept--63c2455e-8c3f-4a0b-b111-855094b3c1d9/diff-report.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-001-05-core-concept--63c2455e-8c3f-4a0b-b111-855094b3c1d9/ui-block-edit-validation.json"
+      ],
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-001-05-core-concept--63c2455e-8c3f-4a0b-b111-855094b3c1d9/question-edits",
+      "question_edit_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-001-05-core-concept--63c2455e-8c3f-4a0b-b111-855094b3c1d9/question-edits/31b63fb8-f469-433f-85f2-3b63992af4f7.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-001-05-core-concept--63c2455e-8c3f-4a0b-b111-855094b3c1d9/question-edits/398fa0b8-e054-4587-a9c3-e54ae47a5536.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-001-05-core-concept--63c2455e-8c3f-4a0b-b111-855094b3c1d9/question-edits/68756176-3163-4918-bfbb-87968372535a.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-001-05-core-concept--63c2455e-8c3f-4a0b-b111-855094b3c1d9/question-edits/76b17f88-6aa7-45ef-8b54-3de538fc9f78.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-001-05-core-concept--63c2455e-8c3f-4a0b-b111-855094b3c1d9/question-edits/8117e399-2b8a-4fb5-a392-13851a585442.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-001-05-core-concept--63c2455e-8c3f-4a0b-b111-855094b3c1d9/question-edits/a50c19e5-a0e3-4cf4-881e-355558d429dd.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-001-05-core-concept--63c2455e-8c3f-4a0b-b111-855094b3c1d9/question-edits/b2dd222a-e2ba-498a-8a16-a315e1d07085.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-001-05-core-concept--63c2455e-8c3f-4a0b-b111-855094b3c1d9/question-edits/ee3cd0a3-02f6-473b-bef3-e92fd450ed15.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-001-05-core-concept--63c2455e-8c3f-4a0b-b111-855094b3c1d9/question-edits/f9e6cc84-4323-4342-9247-248d0b939719.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-001-05-core-concept--63c2455e-8c3f-4a0b-b111-855094b3c1d9/question-edits/fa82b171-d7d6-42b4-b6d5-e34d9075bee7.json"
+      ],
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 6,
+      "original_hash": "sha256:6198ee3781736fcea437499ccc13e7e7f19f9aac1098794de0b3442aa8dcbc69",
+      "normalized_hash": "sha256:2db3864274b08477f7ab4cca361beb934fbda56a84627dc828ca77a2e1c5147d",
+      "candidate_hash": "sha256:2db3864274b08477f7ab4cca361beb934fbda56a84627dc828ca77a2e1c5147d",
+      "sources_hash": "sha256:fbdaa195ee0e5432630b0e927685828ba4f2a524c96277e43fce238ad1a41250",
+      "scenario_enrichment_status": "eligible-deferred"
+    },
+    {
+      "article_id": "23e30450-bce4-4d06-91f7-e2ec86a82ef9",
+      "slug": "lea-plan-007-05-core-concept",
+      "title": "LGU Planning Authority under RA 7160",
+      "folder": "lea-plan-007-05-core-concept--23e30450-bce4-4d06-91f7-e2ec86a82ef9",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-05-core-concept--23e30450-bce4-4d06-91f7-e2ec86a82ef9",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-05-core-concept--23e30450-bce4-4d06-91f7-e2ec86a82ef9/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-05-core-concept--23e30450-bce4-4d06-91f7-e2ec86a82ef9/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-05-core-concept--23e30450-bce4-4d06-91f7-e2ec86a82ef9/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-05-core-concept--23e30450-bce4-4d06-91f7-e2ec86a82ef9/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-05-core-concept--23e30450-bce4-4d06-91f7-e2ec86a82ef9/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-05-core-concept--23e30450-bce4-4d06-91f7-e2ec86a82ef9/ui-blocks.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-05-core-concept--23e30450-bce4-4d06-91f7-e2ec86a82ef9/ui-block-edits.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-05-core-concept--23e30450-bce4-4d06-91f7-e2ec86a82ef9/parser-errors.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-05-core-concept--23e30450-bce4-4d06-91f7-e2ec86a82ef9/compose-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-05-core-concept--23e30450-bce4-4d06-91f7-e2ec86a82ef9/diff-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-05-core-concept--23e30450-bce4-4d06-91f7-e2ec86a82ef9/diff-report.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-05-core-concept--23e30450-bce4-4d06-91f7-e2ec86a82ef9/ui-block-edit-validation.json"
+      ],
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-05-core-concept--23e30450-bce4-4d06-91f7-e2ec86a82ef9/question-edits",
+      "question_edit_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-05-core-concept--23e30450-bce4-4d06-91f7-e2ec86a82ef9/question-edits/1bfc06d1-9500-464e-8a11-7ea5d5d52626.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-05-core-concept--23e30450-bce4-4d06-91f7-e2ec86a82ef9/question-edits/1e01b376-c351-48b6-995e-24077aaf1e86.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-05-core-concept--23e30450-bce4-4d06-91f7-e2ec86a82ef9/question-edits/4290af97-cf03-418b-b705-2479a50ff817.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-05-core-concept--23e30450-bce4-4d06-91f7-e2ec86a82ef9/question-edits/69ce0420-d6f9-4d56-aae6-c715a5fb22ad.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-05-core-concept--23e30450-bce4-4d06-91f7-e2ec86a82ef9/question-edits/8c5f5f93-48c8-4985-b86e-0ef35799c76e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-05-core-concept--23e30450-bce4-4d06-91f7-e2ec86a82ef9/question-edits/99973ce3-d930-4bf1-a94f-dc0b1ca4a8bb.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-05-core-concept--23e30450-bce4-4d06-91f7-e2ec86a82ef9/question-edits/a4438b0f-b2b9-4be9-a9cc-22dc27282756.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-05-core-concept--23e30450-bce4-4d06-91f7-e2ec86a82ef9/question-edits/a4b8742d-0d05-4830-ba11-d8a8d1cfccf9.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-05-core-concept--23e30450-bce4-4d06-91f7-e2ec86a82ef9/question-edits/a99c514c-70d8-4f43-bd6c-f7c3992cf2df.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-05-core-concept--23e30450-bce4-4d06-91f7-e2ec86a82ef9/question-edits/c764310a-7d4c-43b0-992f-fd3d691c0cf1.json"
+      ],
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 5,
+      "original_hash": "sha256:af9d0f63fbbe5c329701a0890d8ced64a37b25c5222ac73c0372685c814b1450",
+      "normalized_hash": "sha256:e13c1af9add5db46e87a226a5dff68cf74c80b563131564848657a4fa0826db0",
+      "candidate_hash": "sha256:e13c1af9add5db46e87a226a5dff68cf74c80b563131564848657a4fa0826db0",
+      "sources_hash": "sha256:9b3593991b61ae11a60ceb46fe45c3d3ea10d5807ead9a907442fb159cfb3f24",
+      "scenario_enrichment_status": "eligible-deferred"
+    },
+    {
+      "article_id": "9098a3d8-b4d7-42f4-ac2b-0df1509c2507",
+      "slug": "lea-plan-007-02-core-concept",
+      "title": "DHSUD as Planning, Policy, and Regulatory Authority",
+      "folder": "lea-plan-007-02-core-concept--9098a3d8-b4d7-42f4-ac2b-0df1509c2507",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-02-core-concept--9098a3d8-b4d7-42f4-ac2b-0df1509c2507",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-02-core-concept--9098a3d8-b4d7-42f4-ac2b-0df1509c2507/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-02-core-concept--9098a3d8-b4d7-42f4-ac2b-0df1509c2507/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-02-core-concept--9098a3d8-b4d7-42f4-ac2b-0df1509c2507/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-02-core-concept--9098a3d8-b4d7-42f4-ac2b-0df1509c2507/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-02-core-concept--9098a3d8-b4d7-42f4-ac2b-0df1509c2507/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-02-core-concept--9098a3d8-b4d7-42f4-ac2b-0df1509c2507/ui-blocks.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-02-core-concept--9098a3d8-b4d7-42f4-ac2b-0df1509c2507/ui-block-edits.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-02-core-concept--9098a3d8-b4d7-42f4-ac2b-0df1509c2507/parser-errors.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-02-core-concept--9098a3d8-b4d7-42f4-ac2b-0df1509c2507/compose-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-02-core-concept--9098a3d8-b4d7-42f4-ac2b-0df1509c2507/diff-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-02-core-concept--9098a3d8-b4d7-42f4-ac2b-0df1509c2507/diff-report.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-02-core-concept--9098a3d8-b4d7-42f4-ac2b-0df1509c2507/ui-block-edit-validation.json"
+      ],
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-02-core-concept--9098a3d8-b4d7-42f4-ac2b-0df1509c2507/question-edits",
+      "question_edit_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-02-core-concept--9098a3d8-b4d7-42f4-ac2b-0df1509c2507/question-edits/08198fd5-234c-4265-bbd8-30c5d248371e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-02-core-concept--9098a3d8-b4d7-42f4-ac2b-0df1509c2507/question-edits/2f544091-2287-48c4-ade1-1d618674297e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-02-core-concept--9098a3d8-b4d7-42f4-ac2b-0df1509c2507/question-edits/526d161d-1707-4769-9a98-170b6021a3bc.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-02-core-concept--9098a3d8-b4d7-42f4-ac2b-0df1509c2507/question-edits/52a3571b-8507-4ef5-b218-49c2419e5f07.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-02-core-concept--9098a3d8-b4d7-42f4-ac2b-0df1509c2507/question-edits/722088f1-09bb-4ea1-8b82-02251f650a62.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-02-core-concept--9098a3d8-b4d7-42f4-ac2b-0df1509c2507/question-edits/7c452639-30cc-42bf-85e0-3e840c4b7746.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-02-core-concept--9098a3d8-b4d7-42f4-ac2b-0df1509c2507/question-edits/8f779b72-af37-41f6-a7da-a0e621d3154e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-02-core-concept--9098a3d8-b4d7-42f4-ac2b-0df1509c2507/question-edits/973f5fd0-f83e-4b9e-a20a-f52bb0103074.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-02-core-concept--9098a3d8-b4d7-42f4-ac2b-0df1509c2507/question-edits/e1f036da-e04f-4ceb-b7d5-ca45a82b8636.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-02-core-concept--9098a3d8-b4d7-42f4-ac2b-0df1509c2507/question-edits/ffab8f1a-97cf-4ab9-9dd8-f19360b4e17c.json"
+      ],
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 4,
+      "original_hash": "sha256:28d27200bd7b658b16c634214b08563bd22fb37ec70f1a8955da1208614ef898",
+      "normalized_hash": "sha256:ffa17a9f3b676f852522bc5ff8c7e9b7931a5d5807ebd5338cec80227a544728",
+      "candidate_hash": "sha256:ffa17a9f3b676f852522bc5ff8c7e9b7931a5d5807ebd5338cec80227a544728",
+      "sources_hash": "sha256:be0af31736780574e47a3dc169a044459e9c842ef59a3ef502fba2172c22b05c",
+      "scenario_enrichment_status": "eligible-deferred"
+    },
+    {
+      "article_id": "ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
+      "slug": "lea-plan-002-04-core-concept",
+      "title": "Land Use Planning and Zoning Ordinances",
+      "folder": "lea-plan-002-04-core-concept--ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-04-core-concept--ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-04-core-concept--ae14f6a9-dec8-458c-b4a1-3ae04df43bfa/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-04-core-concept--ae14f6a9-dec8-458c-b4a1-3ae04df43bfa/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-04-core-concept--ae14f6a9-dec8-458c-b4a1-3ae04df43bfa/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-04-core-concept--ae14f6a9-dec8-458c-b4a1-3ae04df43bfa/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-04-core-concept--ae14f6a9-dec8-458c-b4a1-3ae04df43bfa/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-04-core-concept--ae14f6a9-dec8-458c-b4a1-3ae04df43bfa/ui-blocks.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-04-core-concept--ae14f6a9-dec8-458c-b4a1-3ae04df43bfa/ui-block-edits.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-04-core-concept--ae14f6a9-dec8-458c-b4a1-3ae04df43bfa/parser-errors.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-04-core-concept--ae14f6a9-dec8-458c-b4a1-3ae04df43bfa/compose-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-04-core-concept--ae14f6a9-dec8-458c-b4a1-3ae04df43bfa/diff-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-04-core-concept--ae14f6a9-dec8-458c-b4a1-3ae04df43bfa/diff-report.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-04-core-concept--ae14f6a9-dec8-458c-b4a1-3ae04df43bfa/ui-block-edit-validation.json"
+      ],
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-04-core-concept--ae14f6a9-dec8-458c-b4a1-3ae04df43bfa/question-edits",
+      "question_edit_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-04-core-concept--ae14f6a9-dec8-458c-b4a1-3ae04df43bfa/question-edits/428e42b4-9c1e-4c80-adfc-20d4504813dd.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-04-core-concept--ae14f6a9-dec8-458c-b4a1-3ae04df43bfa/question-edits/4a605fa8-0442-4887-b959-310d2bffbabd.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-04-core-concept--ae14f6a9-dec8-458c-b4a1-3ae04df43bfa/question-edits/4ba27171-6e13-42f5-b60c-d31ed680d19f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-04-core-concept--ae14f6a9-dec8-458c-b4a1-3ae04df43bfa/question-edits/68090083-0ff0-447f-89c0-15b1585bc48a.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-04-core-concept--ae14f6a9-dec8-458c-b4a1-3ae04df43bfa/question-edits/d50e388c-1e82-4df6-a5ce-1f5708819dc4.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-04-core-concept--ae14f6a9-dec8-458c-b4a1-3ae04df43bfa/question-edits/d5ecaa5a-46f3-4603-91c9-b5bbebf41ac1.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-04-core-concept--ae14f6a9-dec8-458c-b4a1-3ae04df43bfa/question-edits/d8761a1a-1089-49ca-bb33-783cd29acdb8.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-04-core-concept--ae14f6a9-dec8-458c-b4a1-3ae04df43bfa/question-edits/dddba217-806c-48b8-9860-3c627f973e1f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-04-core-concept--ae14f6a9-dec8-458c-b4a1-3ae04df43bfa/question-edits/f148bd59-ec01-4e30-a114-3caf969eec40.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-04-core-concept--ae14f6a9-dec8-458c-b4a1-3ae04df43bfa/question-edits/f85ba1e1-3b9c-4804-943d-edbe08ce41e4.json"
+      ],
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 5,
+      "original_hash": "sha256:8650c28cbef88115f32dfb427030c99fa40ec89bc5b58bc033d24fcb2b9f6640",
+      "normalized_hash": "sha256:8f7532ffbf21cabf0820969ca2616d1288e10e3a76eff826b3690acfec32caeb",
+      "candidate_hash": "sha256:8f7532ffbf21cabf0820969ca2616d1288e10e3a76eff826b3690acfec32caeb",
+      "sources_hash": "sha256:9bda9742ad4fbab0768f8c6b2e7545c578dd97dca25204bb909fcec61138349a",
+      "scenario_enrichment_status": "eligible-deferred"
+    },
+    {
+      "article_id": "c24cb79a-074d-48ed-9eb0-b7a7400ed3e8",
+      "slug": "lea-plan-004-07-core-concept",
+      "title": "Regulatory and Zoning Analysis",
+      "folder": "lea-plan-004-07-core-concept--c24cb79a-074d-48ed-9eb0-b7a7400ed3e8",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-07-core-concept--c24cb79a-074d-48ed-9eb0-b7a7400ed3e8",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-07-core-concept--c24cb79a-074d-48ed-9eb0-b7a7400ed3e8/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-07-core-concept--c24cb79a-074d-48ed-9eb0-b7a7400ed3e8/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-07-core-concept--c24cb79a-074d-48ed-9eb0-b7a7400ed3e8/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-07-core-concept--c24cb79a-074d-48ed-9eb0-b7a7400ed3e8/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-07-core-concept--c24cb79a-074d-48ed-9eb0-b7a7400ed3e8/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-07-core-concept--c24cb79a-074d-48ed-9eb0-b7a7400ed3e8/ui-blocks.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-07-core-concept--c24cb79a-074d-48ed-9eb0-b7a7400ed3e8/ui-block-edits.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-07-core-concept--c24cb79a-074d-48ed-9eb0-b7a7400ed3e8/parser-errors.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-07-core-concept--c24cb79a-074d-48ed-9eb0-b7a7400ed3e8/compose-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-07-core-concept--c24cb79a-074d-48ed-9eb0-b7a7400ed3e8/diff-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-07-core-concept--c24cb79a-074d-48ed-9eb0-b7a7400ed3e8/diff-report.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-07-core-concept--c24cb79a-074d-48ed-9eb0-b7a7400ed3e8/ui-block-edit-validation.json"
+      ],
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-07-core-concept--c24cb79a-074d-48ed-9eb0-b7a7400ed3e8/question-edits",
+      "question_edit_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-07-core-concept--c24cb79a-074d-48ed-9eb0-b7a7400ed3e8/question-edits/0492b28b-17b2-41b0-acb4-f0b2a48a5575.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-07-core-concept--c24cb79a-074d-48ed-9eb0-b7a7400ed3e8/question-edits/0e1d5b21-eee4-49fb-8157-0466141836b6.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-07-core-concept--c24cb79a-074d-48ed-9eb0-b7a7400ed3e8/question-edits/0f65c977-2d57-42a3-adb3-95b46c23bb8d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-07-core-concept--c24cb79a-074d-48ed-9eb0-b7a7400ed3e8/question-edits/6c9396b1-dae6-48f8-94fb-ce214a7fd2e1.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-07-core-concept--c24cb79a-074d-48ed-9eb0-b7a7400ed3e8/question-edits/708f85dc-c043-4fa4-a02a-322be632414f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-07-core-concept--c24cb79a-074d-48ed-9eb0-b7a7400ed3e8/question-edits/77ea5770-beb5-4e91-8898-2b3c424da726.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-07-core-concept--c24cb79a-074d-48ed-9eb0-b7a7400ed3e8/question-edits/7f4837d8-bd19-4a5b-b389-e88f59c67cb9.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-07-core-concept--c24cb79a-074d-48ed-9eb0-b7a7400ed3e8/question-edits/a9df6931-21c2-48cb-8d91-cda5c88dbfe0.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-07-core-concept--c24cb79a-074d-48ed-9eb0-b7a7400ed3e8/question-edits/c82d2e20-708f-43f0-b096-ab96ed73e5b7.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-07-core-concept--c24cb79a-074d-48ed-9eb0-b7a7400ed3e8/question-edits/dea6a7ee-8996-444b-82bd-6ccfb2018cab.json"
+      ],
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 5,
+      "original_hash": "sha256:8dde2daa8c6c00297a22c6c26d7576c7f1e545758208250869fc9cd1a2ea1014",
+      "normalized_hash": "sha256:d1472f8f97ade4bfd5cd45a45de49e8a0b6b286182740fc89abf2c05ae5fdc94",
+      "candidate_hash": "sha256:d1472f8f97ade4bfd5cd45a45de49e8a0b6b286182740fc89abf2c05ae5fdc94",
+      "sources_hash": "sha256:9bda9742ad4fbab0768f8c6b2e7545c578dd97dca25204bb909fcec61138349a",
+      "scenario_enrichment_status": "eligible-deferred"
+    }
+  ],
+  "source_evidence": {
+    "raw_pdf_gate": "PASS",
+    "raw_pdfs_checked_first": true,
+    "extraction_methods": [
+      "python_pymupdf_local",
+      "tesseract OCR for scanned RA 11201 Act"
+    ],
+    "source_family_checks": [
+      {
+        "source_family": "RA7160",
+        "use": "used",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7160/RA 7160 The Local Government Code.pdf",
+        "raw_pdf_sha256": "sha256:e270e8bc7bd84ba8ad7b6fe6780c12a3e5a6103e2b9395db13084266a5ff1fff",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7160/RA 7160 The Local Government Code.md",
+        "refined_markdown_sha256": "sha256:9f95493bd12c7f4b0989913d7e8783cdbc6235891fea9977c2aa77238c3dd392",
+        "status": "PASS"
+      },
+      {
+        "source_family": "RA11201 Act",
+        "use": "used",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 - DHSUD Act of 2019.pdf",
+        "raw_pdf_sha256": "sha256:59cf831669ddd0dc6f8fb569583e0ea75baf475c25677559aa21ea0979546c8d",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 - DHSUD Act of 2019.md",
+        "refined_markdown_sha256": "sha256:8dff6d78e0fc0da08fe7516b5fa8b693e370493dee73b87199f649dd0efa5451",
+        "status": "PASS"
+      },
+      {
+        "source_family": "RA11201 IRR",
+        "use": "used",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "refined_markdown_sha256": "sha256:40f1a5041c69b3a4aea7c8ba138a9d570bc686bea48aa5618ea6423a6a719528",
+        "status": "PASS"
+      },
+      {
+        "source_family": "EO72",
+        "use": "used",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/EO/EO 72 Comprehensive Land use.pdf",
+        "raw_pdf_sha256": "sha256:57de2c585b2f2f0e5687bbf95754f9cd4f2bae68c51c6ae0d8d60e81d24c8cbd",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/EO/EO 72 Comprehensive Land use.md",
+        "refined_markdown_sha256": "sha256:478ae44ef1b4ced33ce16138db0558d38c0fad4a4ca02e35c9f192994e89c871",
+        "status": "PASS"
+      },
+      {
+        "source_family": "HLURB_CLUP_Guidebook_Vol_1_11042015",
+        "use": "expected_not_used",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/HLURB_CLUP_Guidebook_Vol_1_11042015.pdf",
+        "raw_pdf_sha256": "sha256:5b8e141fa204a4fc8ce74a0c165c55bd8c166691b0ccc393f24f61db57690c6f",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/HLURB_CLUP_Guidebook_Vol_1_11042015.md",
+        "refined_markdown_sha256": "sha256:26067221888dd0b950bf65719ba7ce8308694b7d799dca6f8f238ad7d7f49025",
+        "status": "PASS"
+      },
+      {
+        "source_family": "HLURB_CLUP_Vol_1",
+        "use": "used",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/HLURB_CLUP_Vol_1.pdf",
+        "raw_pdf_sha256": "sha256:34888ecf03576719d36e8abe21ff90da92e18263a4debb9db3fbbc41a7878762",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/HLURB_CLUP_Vol_1.md",
+        "refined_markdown_sha256": "sha256:6b574d861c0942a232fec321c2863754673532019af8f983e84550e54afc04e3",
+        "status": "PASS"
+      },
+      {
+        "source_family": "HLURB_CLUP_Vol_2",
+        "use": "expected_not_used",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/HLURB_CLUP_Vol_2.pdf",
+        "raw_pdf_sha256": "sha256:0da4f5c9abbab99eeae05a870c9bbce549ef2e7c36aa3d433d05821736b713bc",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/HLURB_CLUP_Vol_2.md",
+        "refined_markdown_sha256": "sha256:7f71db9d9b919381ebf71b3641e21c40f7f0fc6e43f4e845a18bd4084173c0fa",
+        "status": "PASS"
+      },
+      {
+        "source_family": "RPS 2008",
+        "use": "used",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/RPS (2008).pdf",
+        "raw_pdf_sha256": "sha256:1331576aa80a6e5ab2d4079aa091e7294b7574c3c91b41a499e02cd1f8df91a3",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/RPS (2008).md",
+        "refined_markdown_sha256": "sha256:a86183e25f99faee458dfbb5bdb6045b98e309abe56e3d9fc4b65aee43312c96",
+        "status": "PASS"
+      }
+    ],
+    "expected_but_unused_source_families": [
+      "HLURB_CLUP_Guidebook_Vol_1_11042015",
+      "HLURB_CLUP_Vol_2"
+    ]
+  },
+  "quality_protocol_results": {
+    "compose": {
+      "pass": true,
+      "articles": 5,
+      "blockers": 0
+    },
+    "diff": {
+      "pass": true,
+      "articles": 5,
+      "safe_to_push_all": true,
+      "blockers": 0
+    },
+    "validate": {
+      "pass": true,
+      "articles": 5,
+      "valid_all": true,
+      "blockers": 0,
+      "warning": "component-usage.json missing warning only"
+    },
+    "ui_block_edits": {
+      "pass": true,
+      "articles": 5,
+      "blockers": 0,
+      "warnings": 0
+    },
+    "scoped_json_parse": {
+      "pass": true,
+      "json_files": 105,
+      "errors": 0
+    },
+    "placeholder_internal_note_source_gap_scan": {
+      "pass": true,
+      "hits": 0
+    },
+    "stale_compose_error_scan": {
+      "pass": true,
+      "hits": 0
+    },
+    "source_hash_checks": {
+      "pass": true,
+      "source_families": [
+        {
+          "source_family": "RA7160",
+          "use": "used",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7160/RA 7160 The Local Government Code.pdf",
+          "raw_pdf_sha256": "sha256:e270e8bc7bd84ba8ad7b6fe6780c12a3e5a6103e2b9395db13084266a5ff1fff",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7160/RA 7160 The Local Government Code.md",
+          "refined_markdown_sha256": "sha256:9f95493bd12c7f4b0989913d7e8783cdbc6235891fea9977c2aa77238c3dd392",
+          "status": "PASS"
+        },
+        {
+          "source_family": "RA11201 Act",
+          "use": "used",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 - DHSUD Act of 2019.pdf",
+          "raw_pdf_sha256": "sha256:59cf831669ddd0dc6f8fb569583e0ea75baf475c25677559aa21ea0979546c8d",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 - DHSUD Act of 2019.md",
+          "refined_markdown_sha256": "sha256:8dff6d78e0fc0da08fe7516b5fa8b693e370493dee73b87199f649dd0efa5451",
+          "status": "PASS"
+        },
+        {
+          "source_family": "RA11201 IRR",
+          "use": "used",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+          "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+          "refined_markdown_sha256": "sha256:40f1a5041c69b3a4aea7c8ba138a9d570bc686bea48aa5618ea6423a6a719528",
+          "status": "PASS"
+        },
+        {
+          "source_family": "EO72",
+          "use": "used",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/EO/EO 72 Comprehensive Land use.pdf",
+          "raw_pdf_sha256": "sha256:57de2c585b2f2f0e5687bbf95754f9cd4f2bae68c51c6ae0d8d60e81d24c8cbd",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/EO/EO 72 Comprehensive Land use.md",
+          "refined_markdown_sha256": "sha256:478ae44ef1b4ced33ce16138db0558d38c0fad4a4ca02e35c9f192994e89c871",
+          "status": "PASS"
+        },
+        {
+          "source_family": "HLURB_CLUP_Guidebook_Vol_1_11042015",
+          "use": "expected_not_used",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/HLURB_CLUP_Guidebook_Vol_1_11042015.pdf",
+          "raw_pdf_sha256": "sha256:5b8e141fa204a4fc8ce74a0c165c55bd8c166691b0ccc393f24f61db57690c6f",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/HLURB_CLUP_Guidebook_Vol_1_11042015.md",
+          "refined_markdown_sha256": "sha256:26067221888dd0b950bf65719ba7ce8308694b7d799dca6f8f238ad7d7f49025",
+          "status": "PASS"
+        },
+        {
+          "source_family": "HLURB_CLUP_Vol_1",
+          "use": "used",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/HLURB_CLUP_Vol_1.pdf",
+          "raw_pdf_sha256": "sha256:34888ecf03576719d36e8abe21ff90da92e18263a4debb9db3fbbc41a7878762",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/HLURB_CLUP_Vol_1.md",
+          "refined_markdown_sha256": "sha256:6b574d861c0942a232fec321c2863754673532019af8f983e84550e54afc04e3",
+          "status": "PASS"
+        },
+        {
+          "source_family": "HLURB_CLUP_Vol_2",
+          "use": "expected_not_used",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/HLURB_CLUP_Vol_2.pdf",
+          "raw_pdf_sha256": "sha256:0da4f5c9abbab99eeae05a870c9bbce549ef2e7c36aa3d433d05821736b713bc",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/HLURB_CLUP_Vol_2.md",
+          "refined_markdown_sha256": "sha256:7f71db9d9b919381ebf71b3641e21c40f7f0fc6e43f4e845a18bd4084173c0fa",
+          "status": "PASS"
+        },
+        {
+          "source_family": "RPS 2008",
+          "use": "used",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/RPS (2008).pdf",
+          "raw_pdf_sha256": "sha256:1331576aa80a6e5ab2d4079aa091e7294b7574c3c91b41a499e02cd1f8df91a3",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/RPS (2008).md",
+          "refined_markdown_sha256": "sha256:a86183e25f99faee458dfbb5bdb6045b98e309abe56e3d9fc4b65aee43312c96",
+          "status": "PASS"
+        }
+      ]
+    },
+    "question_edit_count_checks": {
+      "pass": true,
+      "expected": 50,
+      "actual": 50
+    },
+    "targeted_tests": {
+      "pass": true,
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "tests_passed": 34,
+      "tests_failed": 0,
+      "expect_calls": 328
+    },
+    "git_diff_check": {
+      "status": "PASS",
+      "command": "git diff --check -- <Batch 068 scoped files>",
+      "checked_at": "2026-05-12T00:13:34+08:00"
+    }
+  },
+  "unresolved_blockers": [],
+  "next_batch_readiness": "READY_FOR_BATCH_069_SELECTION"
+}

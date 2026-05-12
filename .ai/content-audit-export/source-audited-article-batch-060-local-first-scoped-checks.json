@@ -1,0 +1,203 @@
+{
+  "artifact_type": "source_audited_article_batch_scoped_checks",
+  "batch_id": "source-audited-article-batch-060-local-first",
+  "batch_number": 60,
+  "generated_at": "2026-05-11T21:07:00.000+08:00",
+  "selected_article_ids": [
+    "e2d9d304-9362-4472-8ca8-34106f6990dd",
+    "cb07f9cb-7506-496e-941a-4080a05c323f",
+    "7ad29107-a824-4a7b-8c32-ed6a719ebd39",
+    "2e117d95-eb4c-4d96-8e3f-b31f18d26a64",
+    "642d4061-fc9e-4027-9f3b-308331151792"
+  ],
+  "counts": {
+    "selected_articles": 5,
+    "linked_questions": 53,
+    "question_edits": 53,
+    "source_rows": 5,
+    "unique_raw_pdfs": 1,
+    "json_parse": 108,
+    "marker_scan_files": 73,
+    "marker_matches": 0,
+    "source_hash_checks": 10,
+    "stale_compose_error_files": 0,
+    "targeted_tests": 34,
+    "targeted_expect_calls": 328,
+    "unresolved_blockers": 0
+  },
+  "checks": [
+    {
+      "name": "compose",
+      "command": "bun run content-audit:compose -- --article-id <selected> --overwrite",
+      "result": "PASS",
+      "articles": 5,
+      "blockers": 0
+    },
+    {
+      "name": "diff",
+      "command": "bun run content-audit:diff -- --article-id <selected> --summary",
+      "result": "PASS",
+      "articles": 5,
+      "safe_true": 5,
+      "blockers": 0
+    },
+    {
+      "name": "validate",
+      "command": "bun run content-audit:validate -- --article-id <selected> --summary",
+      "result": "PASS",
+      "articles": 5,
+      "blockers": 0,
+      "warnings": "component-usage.json missing only"
+    },
+    {
+      "name": "ui-block-edits",
+      "command": "bun run content-audit:ui-block-edits -- --article-id <selected> --summary",
+      "result": "PASS",
+      "articles": 5,
+      "blockers": 0,
+      "warnings": 0
+    },
+    {
+      "name": "scoped-json-parse",
+      "command": "node scoped Batch 060 JSON parse sweep",
+      "result": "PASS",
+      "files": 108
+    },
+    {
+      "name": "placeholder-internal-note-source-gap-marker-scan",
+      "command": "node scoped Batch 060 marker scan",
+      "result": "PASS",
+      "files": 73,
+      "matches": []
+    },
+    {
+      "name": "source-hash-checks",
+      "command": "node scoped Batch 060 source hash sweep",
+      "result": "PASS",
+      "checks": [
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+          "expected": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+          "actual": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+          "status": "PASS"
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+          "expected": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+          "actual": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+          "status": "PASS"
+        },
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+          "expected": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+          "actual": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+          "status": "PASS"
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+          "expected": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+          "actual": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+          "status": "PASS"
+        },
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+          "expected": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+          "actual": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+          "status": "PASS"
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+          "expected": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+          "actual": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+          "status": "PASS"
+        },
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+          "expected": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+          "actual": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+          "status": "PASS"
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+          "expected": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+          "actual": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+          "status": "PASS"
+        },
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+          "expected": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+          "actual": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+          "status": "PASS"
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+          "expected": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+          "actual": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "name": "question-edit-count-checks",
+      "command": "node scoped Batch 060 linked question vs edit count sweep",
+      "result": "PASS",
+      "checks": [
+        {
+          "article_id": "642d4061-fc9e-4027-9f3b-308331151792",
+          "slug": "lea-dsgn-009-01-core-concept",
+          "linked_questions": 10,
+          "question_edits": 10,
+          "status": "PASS"
+        },
+        {
+          "article_id": "e2d9d304-9362-4472-8ca8-34106f6990dd",
+          "slug": "lea-theo-004-03-core-concept",
+          "linked_questions": 11,
+          "question_edits": 11,
+          "status": "PASS"
+        },
+        {
+          "article_id": "cb07f9cb-7506-496e-941a-4080a05c323f",
+          "slug": "lea-theo-004-07-core-concept",
+          "linked_questions": 10,
+          "question_edits": 10,
+          "status": "PASS"
+        },
+        {
+          "article_id": "7ad29107-a824-4a7b-8c32-ed6a719ebd39",
+          "slug": "lea-theo-004-10-core-concept",
+          "linked_questions": 11,
+          "question_edits": 11,
+          "status": "PASS"
+        },
+        {
+          "article_id": "2e117d95-eb4c-4d96-8e3f-b31f18d26a64",
+          "slug": "lea-theo-004-12-core-concept",
+          "linked_questions": 11,
+          "question_edits": 11,
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "name": "stale-compose-error-check",
+      "command": "node scoped Batch 060 compose-error sweep",
+      "result": "PASS",
+      "files": []
+    },
+    {
+      "name": "targeted-content-audit-tests",
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "result": "PASS",
+      "tests": 34,
+      "failures": 0,
+      "expect_calls": 328
+    },
+    {
+      "name": "scoped-git-diff-check",
+      "command": "git diff --check -- .ai/03_plans/source-audited-local-first-batches-handoff.md .ai/content-audit-export/sync-state.json .ai/content-audit-export/source-audited-article-batch-060-local-first-ledger.json .ai/content-audit-export/source-audited-article-batch-060-local-first-report.md .ai/content-audit-export/source-audited-article-batch-060-local-first-scoped-checks.json .ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd .ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f .ai/content-audit-export/articles/lea-theo-004-10-core-concept--7ad29107-a824-4a7b-8c32-ed6a719ebd39 .ai/content-audit-export/articles/lea-theo-004-12-core-concept--2e117d95-eb4c-4d96-8e3f-b31f18d26a64 .ai/content-audit-export/articles/lea-dsgn-009-01-core-concept--642d4061-fc9e-4027-9f3b-308331151792",
+      "result": "PASS"
+    }
+  ],
+  "blockers": []
+}

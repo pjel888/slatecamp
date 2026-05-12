@@ -1,0 +1,56 @@
+{
+  "question_id": "2e3664c8-8996-45ee-9fe7-dab4a0acb7af",
+  "baseline_hash": "sha256:2df63a3e0fb3ebccad7e7aa76e5eee820b23441f8fe29e6aa1aee0f5487dd30d",
+  "action": "replace",
+  "reason": "source-audited-article-batch-054-local-first: local raw PDF backed replacement constrained to checked Batch 054 source families.",
+  "approved_by": "codex-local-first-batch-054",
+  "approved_at": "2026-05-11T19:22:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "5fd2842e-ca3e-4e6d-bb87-65067d23a482",
+    "parent_article_slug": "north-american-indigenous-architecture",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "George Salvan Architectural Character refined markdown lines 479-487",
+    "checked_markdown_lines": [
+      "George Salvan Architectural Character refined markdown lines 479-487"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "salvan-character-local-raw-pdf--b054-5fd2842e-01",
+        "label": "George Salvan Architectural Character and the History of Architecture - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Character and the History of Architecture.pdf",
+        "sha256": "sha256:55c4fa2d43bbfd27cffb86d0aac4ad960032e178e1e25c29d4eb351297bfc069",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Character and the History of Architecture.md",
+        "refined_markdown_sha256": "sha256:be8e760bef8f7ceb573742d996dabb202f0353e19b4ab9283ec2de7dfc1fccea",
+        "locator": "George Salvan Architectural Character refined markdown lines 479-487"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 054 checked local raw PDF source scope."
+  },
+  "proposed": {
+    "text": "Which description matches the checked Kickapoo wigwam?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rush mats over a wooden frame with an animal-skin door."
+      },
+      {
+        "id": "b",
+        "text": "Coursed ashlar with rectangular niches."
+      },
+      {
+        "id": "c",
+        "text": "A temple pyramid with a plaster coating."
+      },
+      {
+        "id": "d",
+        "text": "A titanium-clad museum in Bilbao."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Rush mats over a wooden frame with an animal-skin door. This answer is supported by the checked Batch 054 local raw PDF source families for North American Indigenous Architecture.",
+    "explanation": "Rush mats over a wooden frame with an animal-skin door. The Batch 054 source audit used local raw PDFs first and refined markdown only as locator evidence for North American Indigenous Architecture.",
+    "code_citation": "George Salvan Architectural Character refined markdown lines 479-487"
+  },
+  "batch_question_template_index": 2
+}

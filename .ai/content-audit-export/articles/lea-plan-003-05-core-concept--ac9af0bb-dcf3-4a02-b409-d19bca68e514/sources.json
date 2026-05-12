@@ -1,20 +1,44 @@
 {
   "article_id": "ac9af0bb-dcf3-4a02-b409-d19bca68e514",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:65ae8a4fb08992c6a3f86e9dc4e137694fe34bcb99c232cd0bc32e69fce56306",
-  "source_count": 1,
+  "sources_hash": "sha256:2b343b7510a416f7fd50962c6ac30dfa49293225d576141d782b80c46a5a78eb",
+  "source_count": 3,
   "sources": [
     {
-      "source_id": "23681cdc-de38-4ea0-9f79-2bec9f63d1c9",
+      "source_id": "ra11201-irr-dhsud-b074",
       "article_id": "ac9af0bb-dcf3-4a02-b409-d19bca68e514",
-      "label": "RA 7279 (Urban Development and Housing Act, UDHA, 1992); RA 10121 (Philippine Disaster Risk Reduction and Management Act, 2010); Post-Yolanda National Zoning Framework (2014)",
+      "label": "RA 11201 IRR - DHSUD Act Implementing Rules",
       "url": null,
-      "source_type": "primary_law",
-      "description": "SHFC Community Mortgage Program Guidelines; Philippine National Housing Strategy (2018); integration principles from World Bank human settlements research and UN-Habitat frameworks",
-      "is_verified": false,
+      "source_type": "primary_law_irr_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-074-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf; raw_pdf_sha256=sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md; refined_markdown_sha256=sha256:40f1a5041c69b3a4aea7c8ba138a9d570bc686bea48aa5618ea6423a6a719528; checked_locator=RA 11201 IRR refined markdown lines 17-36, 40-99, 134-162, and 187-204; raw PDF pages 1-7 checked by local PyMuPDF extraction",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:01.381895+00:00",
-      "updated_at": "2026-03-24T04:34:01.381895+00:00"
+      "created_at": "2026-05-12T02:15:00.945+08:00",
+      "updated_at": "2026-05-12T02:15:00.945+08:00"
+    },
+    {
+      "source_id": "ra7279-udha-2009-b074",
+      "article_id": "ac9af0bb-dcf3-4a02-b409-d19bca68e514",
+      "label": "RA 7279 Urban Development and Housing Act",
+      "url": null,
+      "source_type": "primary_law_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-074-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7279/RA 7279 Urban Development and Housing Act 2009.pdf; raw_pdf_sha256=sha256:23efa9c0278519d79ed424d9ced016b24619ebb42a19e75a05dc9bb8bf1c4696; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7279/RA 7279 Urban Development and Housing Act 2009.md; refined_markdown_sha256=sha256:f52859fb18fec28c403348851c3e53caca2e678cb9cec43fbca28d8d5c3a323e; checked_locator=RA 7279 refined markdown lines 13-85, 111-131, 230-253, 257-313, and 319-329; raw PDF pages 1-7 checked by local PyMuPDF extraction",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-12T02:15:00.945+08:00",
+      "updated_at": "2026-05-12T02:15:00.945+08:00"
+    },
+    {
+      "source_id": "local-shelter-planning-manual-2016-b074",
+      "article_id": "ac9af0bb-dcf3-4a02-b409-d19bca68e514",
+      "label": "Local Shelter Planning Manual, 2016 Web Edition",
+      "url": null,
+      "source_type": "government_planning_manual_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-074-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Local-Shelter-Planning-Manual-2016-Web-Edition.pdf; raw_pdf_sha256=sha256:c8dd5e9492a17cdd4c2fb05d21564eee75b8def86e9f8bb8052b71adf15edcec; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Local-Shelter-Planning-Manual-2016-Web-Edition.md; refined_markdown_sha256=sha256:e94d42b03c750a104eb24daaf60e3f616c55c301af6d4be9b7aede5f1004794b; checked_locator=Local Shelter Planning Manual refined markdown lines 17-25, 37-45, 61-63, 303-384, 761-790, and 805-819; raw PDF pages 3, 5, 8-9, 12-13, and related planning-table pages checked by local PyMuPDF extraction",
+      "is_verified": true,
+      "sort_order": 2,
+      "created_at": "2026-05-12T02:15:00.945+08:00",
+      "updated_at": "2026-05-12T02:15:00.945+08:00"
     }
   ]
 }

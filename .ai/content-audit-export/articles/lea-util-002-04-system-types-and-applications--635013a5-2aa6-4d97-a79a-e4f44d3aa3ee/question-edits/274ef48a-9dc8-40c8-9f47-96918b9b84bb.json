@@ -1,0 +1,84 @@
+{
+  "question_id": "274ef48a-9dc8-40c8-9f47-96918b9b84bb",
+  "baseline_hash": "sha256:2c7e02b61daac35ca5002d6275dac6ad7a988e3420e91649cfe3dcbf871615c1",
+  "action": "replace",
+  "reason": "source-audited-article-batch-043-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes stale or non-local framing where present.",
+  "approved_by": "codex-local-first-batch-043",
+  "approved_at": "2026-05-11T15:45:43.683+08:00",
+  "source_audit_support": {
+    "parent_article_id": "635013a5-2aa6-4d97-a79a-e4f44d3aa3ee",
+    "parent_article_slug": "lea-util-002-04-system-types-and-applications",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "DOE Guidelines refined markdown lines 37-43, 410-523, 586-653, 1075-1286, 1357-1387, 1653-1695; RA 11285 refined markdown lines 31-81, 141-157, 205-227, 267-305, 599-613, 906-960, 1060-1166; Salvan refined markdown lines 1707-1828, 5170-5172, 5858-5866, 6038-6053, 8518-8725, 11160-11273, 11555-11559",
+    "checked_markdown_lines": [
+      "DOE Guidelines refined markdown lines 37-43 and 410-523",
+      "DOE Guidelines refined markdown lines 586-653",
+      "DOE Guidelines refined markdown lines 1075-1286",
+      "DOE Guidelines refined markdown lines 1357-1387 and 1653-1695",
+      "RA 11285 refined markdown lines 31-81 and 141-157",
+      "RA 11285 refined markdown lines 205-227 and 267-305",
+      "RA 11285 refined markdown lines 599-613",
+      "RA 11285 refined markdown lines 906-960 and 1060-1166",
+      "Salvan refined markdown lines 1707-1828",
+      "Salvan refined markdown lines 5170-5172, 5858-5866, and 6038-6053",
+      "Salvan refined markdown lines 8518-8725",
+      "Salvan refined markdown lines 11160-11273 and 11555-11559"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "doe-energy-conserving-design-2008-local-raw-pdf--b043-1",
+        "label": "DOE Guidelines on Energy Conserving Design on Buildings v2008 - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+        "sha256": "sha256:9a1a4019b500ffc2873625db6f04ac50b39aea7cadac9159464f9ed716e8126c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.md",
+        "refined_markdown_sha256": "sha256:477f0990a67359eee303e8280a00be449d0aa413252161db7b5b1bafec3012b9",
+        "locator": "DOE Guidelines refined markdown lines 37-43, 410-523, 586-653, 1075-1286, 1357-1387, 1653-1695"
+      },
+      {
+        "source_id": "ra-11285-local-raw-pdf--b043-2",
+        "label": "RA 11285 Energy Efficiency and Conservation Act - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf",
+        "sha256": "sha256:316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.md",
+        "refined_markdown_sha256": "sha256:d2baa0e8d4ffe0059688783a4d31ac0e121517daca939f18a048fe053e76cdd4",
+        "locator": "RA 11285 refined markdown lines 31-81, 141-157, 205-227, 267-305, 599-613, 906-960, 1060-1166"
+      },
+      {
+        "source_id": "salvan-architectural-utilities-2-local-raw-pdf--b043-3",
+        "label": "George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+        "sha256": "sha256:ff7231f0059a1febaf4a0996a425caca3b7676c23c729f922e385af4e4c20d28",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
+        "refined_markdown_sha256": "sha256:1b9249c90c0b86c57c6df2f20f0ab210ac112a10230bd9bce584461773d75215",
+        "locator": "Salvan refined markdown lines 1707-1828, 5170-5172, 5858-5866, 6038-6053, 8518-8725, 11160-11273, 11555-11559"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 043 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "Which LEA statement is source-safe when comparing room units and central systems?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Room units can serve limited rooms, while central chilled-water and air-handling systems suit larger coordinated building loads."
+      },
+      {
+        "id": "b",
+        "text": "Window units are always the correct choice for every building scale."
+      },
+      {
+        "id": "c",
+        "text": "Central cooling never needs air handling or chilled-water coordination."
+      },
+      {
+        "id": "d",
+        "text": "The system type is independent of load, scale, and operation."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The checked Salvan family discusses window or through-the-wall room units and central cooling with chilled water and air-handling coordination.",
+    "explanation": "The checked Salvan family discusses window or through-the-wall room units and central cooling with chilled water and air-handling coordination.",
+    "code_citation": "Salvan refined markdown lines 11160-11273 and 11555-11559"
+  }
+}

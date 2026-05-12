@@ -1,0 +1,63 @@
+{
+  "question_id": "b1e19bb8-ca5e-4dd4-aa89-63c857c729cb",
+  "baseline_hash": "sha256:ff1a93e4f78c267fa5f288ad0d670a00d570c8f180677b923874c56069aa7f4e",
+  "action": "replace",
+  "reason": "source-audited-article-batch-023-local-first rewrote the item to match locally checked BP 344 and PD 1096 source evidence.",
+  "approved_by": "codex-local-source-audit-batch-023",
+  "approved_at": "2026-05-10T18:16:14.069Z",
+  "source_audit_support": {
+    "parent_article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
+    "parent_article_slug": "minimum-parking-requirements",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "checked_sources": [
+      {
+        "source_id": "bp344-2024-revised-irr-accessibility-local",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+        "source_locator": "BP 344 2024 IRR refined markdown lines 40-70, 230-305, 450-463, 539-541, 621-704, 772-792, 992-1003, 1062-1088, 1580-1613, and 1649"
+      }
+    ],
+    "local_source_safe_action": "Replaced the prior item with a source-bounded MCQ using only checked local raw-source locators."
+  },
+  "proposed": {
+    "text": "How many accessible parking slots are required for 501 to 1000 total parking spaces under the 2024 BP 344 IRR?",
+    "options": [
+      {
+        "id": "a",
+        "text": "2 percent of total parking spaces"
+      },
+      {
+        "id": "b",
+        "text": "9 spaces total"
+      },
+      {
+        "id": "c",
+        "text": "20 spaces plus one per 100 over 1000"
+      },
+      {
+        "id": "d",
+        "text": "One accessible space for each 50 spaces"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "The 2024 BP 344 table uses 2 percent of total spaces for the 501-1000 bracket.",
+    "explanation": "The 2024 BP 344 table uses 2 percent of total spaces for the 501-1000 bracket.",
+    "code_citation": "BP 344 2024 IRR, accessible parking table",
+    "bloom_level": "analyze",
+    "application_context": "lea_code_and_accessibility_review",
+    "practice_context": [
+      "Minimum Parking Requirements",
+      "LEA Architectural Design and Site Planning"
+    ],
+    "difficulty": 0.5,
+    "is_assessment": false,
+    "model_id": "BATCH-023-minimum-parking-requirements-008"
+  }
+}

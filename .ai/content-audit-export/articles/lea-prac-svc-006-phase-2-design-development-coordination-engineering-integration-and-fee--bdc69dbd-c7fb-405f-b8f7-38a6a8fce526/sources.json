@@ -1,7 +1,43 @@
 {
   "article_id": "bdc69dbd-c7fb-405f-b8f7-38a6a8fce526",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "source_count": 0,
-  "sources": []
+  "sources_hash": "sha256:c797de4f1590862abece1ac6f06c900cdebb149a454287977ed8f086ca256753",
+  "source_count": 2,
+  "sources": [
+    {
+      "source_id": "uap-spp-202-lea-prac-svc-006-phase-2-design-development-coordination-engineering-integration-and-fee",
+      "label": "SPP Document 202 - Regular Design Services",
+      "authority": "United Architects of the Philippines / PRBoA SPP material",
+      "source_type": "professional_practice_standard_pdf",
+      "source_locator": "SPP Document 202 scope, phases, deliverables, construction-phase duties, and related UAP payment milestones",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+      "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+      "raw_markdown_sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+      "checked_markdown_lines": [
+        "UAP Document Standards raw markdown lines 283-297",
+        "UAP Document Standards raw markdown lines 301-344",
+        "UAP Document Standards raw markdown lines 347-382"
+      ],
+      "use": "primary local source for SPP 202 article repair and phase-duty question rewrites",
+      "local_source_checked": true
+    },
+    {
+      "source_id": "uap-doc-401-402-payment-lea-prac-svc-006-phase-2-design-development-coordination-engineering-integration-and-fee",
+      "label": "UAP Document 401-402 - Owner-Architect Agreement payment milestones",
+      "authority": "United Architects of the Philippines",
+      "source_type": "professional_practice_agreement_pdf",
+      "source_locator": "Architect fee and manner of payment, including schematic, design development, contract document, and remaining-fee milestones",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+      "raw_pdf_sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document 401-402.md",
+      "raw_markdown_sha256": "sha256:0b9cfd569b9f964c95dec13761812c8606b2c0fe38b9043df13efad361286a53",
+      "checked_markdown_lines": [
+        "UAP Document 401-402 raw markdown lines 88-100",
+        "UAP Document 401-402 raw markdown lines 138-145"
+      ],
+      "use": "supporting local source for payment milestone wording; avoids unsupported fee split claims",
+      "local_source_checked": true
+    }
+  ]
 }

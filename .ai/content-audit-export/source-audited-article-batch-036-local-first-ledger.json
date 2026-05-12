@@ -1,0 +1,552 @@
+{
+  "batch_id": "source-audited-article-batch-036-local-first",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "generated_at": "2026-05-11T13:18:00+08:00",
+  "local_only": true,
+  "supabase_push": false,
+  "deploy": false,
+  "commit": false,
+  "inherited_blocker_status": "Batch 035 blockers=0",
+  "blockers": [],
+  "counts": {
+    "article_count": 5,
+    "json_parse_count": 127,
+    "linked_question_count": 63,
+    "question_edit_count": 63,
+    "source_rows_written": 12,
+    "unique_raw_pdf_files_checked": 8,
+    "source_hash_checks": 24,
+    "placeholder_internal_source_gap_matches": 0,
+    "stale_compose_error_files": 0
+  },
+  "articles": [
+    {
+      "index": 1,
+      "article_id": "4985ca3b-6fc2-49b9-a7f5-64030c17b5d3",
+      "slug": "fixtures-and-small-items-in-common-areas",
+      "title": "Fixtures and Small Items in Common Areas",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fixtures-and-small-items-in-common-areas--4985ca3b-6fc2-49b9-a7f5-64030c17b5d3",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fixtures-and-small-items-in-common-areas--4985ca3b-6fc2-49b9-a7f5-64030c17b5d3/question-edits",
+      "exact_improved_paths": {
+        "normalized_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fixtures-and-small-items-in-common-areas--4985ca3b-6fc2-49b9-a7f5-64030c17b5d3/normalized.md",
+        "candidate_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fixtures-and-small-items-in-common-areas--4985ca3b-6fc2-49b9-a7f5-64030c17b5d3/candidate.md",
+        "sources_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fixtures-and-small-items-in-common-areas--4985ca3b-6fc2-49b9-a7f5-64030c17b5d3/sources.json",
+        "source_audit_evidence_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fixtures-and-small-items-in-common-areas--4985ca3b-6fc2-49b9-a7f5-64030c17b5d3/source-audit-evidence.json",
+        "ui_blocks_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fixtures-and-small-items-in-common-areas--4985ca3b-6fc2-49b9-a7f5-64030c17b5d3/ui-blocks.json",
+        "compose_report_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fixtures-and-small-items-in-common-areas--4985ca3b-6fc2-49b9-a7f5-64030c17b5d3/compose-report.json",
+        "diff_report_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fixtures-and-small-items-in-common-areas--4985ca3b-6fc2-49b9-a7f5-64030c17b5d3/diff-report.json"
+      },
+      "linked_questions": 11,
+      "question_edits": 11,
+      "source_rows": 1,
+      "candidate_hash": "sha256:3b39acf2b7772a1d1cf3caf4c28f780397936b5c454931c71a2d2f5249623d72",
+      "normalized_hash": "sha256:8a2324051d3352ab42eec8238a805ca61e5c7b77c33361ae1dccf24f5e27b204",
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": []
+      },
+      "validate": {
+        "valid": true,
+        "blockers": []
+      },
+      "source_audit": {
+        "status": "PASS",
+        "raw_pdf_gate": "PASS",
+        "blockers": []
+      },
+      "raw_sources": [
+        {
+          "source_id": "bp-344-2024-revised-irr-ncda-local",
+          "label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+          "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+          "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+          "source_locator": "BP 344 2024 Revised IRR refined markdown lines 1090-1135, 1296-1306, 1493-1514",
+          "checked_markdown_lines": [
+            "BP 344 2024 Revised IRR refined markdown lines 1090-1135",
+            "BP 344 2024 Revised IRR refined markdown lines 1296-1306",
+            "BP 344 2024 Revised IRR refined markdown lines 1493-1514"
+          ]
+        }
+      ],
+      "metadata_content_hash_note": null
+    },
+    {
+      "index": 2,
+      "article_id": "85529595-d219-4b10-9bd9-383d125da8c3",
+      "slug": "lea-prac-frm-019-project-management-in-an-architectural-firm-scope-schedule-budget-and-communication-control",
+      "title": "Project Management in an Architectural Firm",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-019-project-management-in-an-architectural-firm-scope-schedule-budget-and-communication--85529595-d219-4b10-9bd9-383d125da8c3",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-019-project-management-in-an-architectural-firm-scope-schedule-budget-and-communication--85529595-d219-4b10-9bd9-383d125da8c3/question-edits",
+      "exact_improved_paths": {
+        "normalized_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-019-project-management-in-an-architectural-firm-scope-schedule-budget-and-communication--85529595-d219-4b10-9bd9-383d125da8c3/normalized.md",
+        "candidate_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-019-project-management-in-an-architectural-firm-scope-schedule-budget-and-communication--85529595-d219-4b10-9bd9-383d125da8c3/candidate.md",
+        "sources_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-019-project-management-in-an-architectural-firm-scope-schedule-budget-and-communication--85529595-d219-4b10-9bd9-383d125da8c3/sources.json",
+        "source_audit_evidence_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-019-project-management-in-an-architectural-firm-scope-schedule-budget-and-communication--85529595-d219-4b10-9bd9-383d125da8c3/source-audit-evidence.json",
+        "ui_blocks_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-019-project-management-in-an-architectural-firm-scope-schedule-budget-and-communication--85529595-d219-4b10-9bd9-383d125da8c3/ui-blocks.json",
+        "compose_report_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-019-project-management-in-an-architectural-firm-scope-schedule-budget-and-communication--85529595-d219-4b10-9bd9-383d125da8c3/compose-report.json",
+        "diff_report_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-019-project-management-in-an-architectural-firm-scope-schedule-budget-and-communication--85529595-d219-4b10-9bd9-383d125da8c3/diff-report.json"
+      },
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_rows": 3,
+      "candidate_hash": "sha256:f18879463b90de1f3e5252e0af854a844ba9b748be132a5cb6fb23c9f48ef58a",
+      "normalized_hash": "sha256:8300035dd6630b4c8440e8072c1dab538ebb574c426b131ccbf11cb6dafa6f75",
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": []
+      },
+      "validate": {
+        "valid": true,
+        "blockers": []
+      },
+      "source_audit": {
+        "status": "PASS",
+        "raw_pdf_gate": "PASS",
+        "blockers": []
+      },
+      "raw_sources": [
+        {
+          "source_id": "construction-project-management-handbook-shadan-fleming-local",
+          "label": "Construction Project Management Handbook by Shadan and Fleming",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Construction Project Management Handbook by Shadan _ Fleming.pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/004-Technology/Construction Project Management Handbook by Shadan _ Fleming.pdf",
+          "raw_pdf_sha256": "sha256:01dd25a5de726377eb53bafb502127a806cc007ffc05e8dad745479b0ad6ad17",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Construction Project Management Handbook by Shadan _ Fleming.md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Construction Project Management Handbook by Shadan _ Fleming.md",
+          "refined_markdown_sha256": "sha256:9d7f7c772d1efcce9db4c8f1e59cc5d19711cd99448799ae6ce783ebb6b78c77",
+          "source_locator": "Construction Project Management Handbook refined markdown lines 253-257, 287-301, 387-429, 1544-1577, 1614-1664, 1680-1722, 1808-1819",
+          "checked_markdown_lines": [
+            "Construction Project Management Handbook refined markdown lines 253-257",
+            "Construction Project Management Handbook refined markdown lines 287-301",
+            "Construction Project Management Handbook refined markdown lines 387-429",
+            "Construction Project Management Handbook refined markdown lines 1544-1577",
+            "Construction Project Management Handbook refined markdown lines 1614-1664",
+            "Construction Project Management Handbook refined markdown lines 1680-1722",
+            "Construction Project Management Handbook refined markdown lines 1808-1819"
+          ]
+        },
+        {
+          "source_id": "uap-document-401-402-local",
+          "label": "UAP Document 401-402 - Architect-Owner Agreement",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+          "raw_pdf_sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
+          "refined_markdown_sha256": "sha256:ea7f84c966467b46fe9058778d4f9a0821db94a5dbc0a4fb02a2cfd69e215d05",
+          "source_locator": "UAP Document 401-402 refined markdown lines 45-72, 77-89, 105-119",
+          "checked_markdown_lines": [
+            "UAP Document 401-402 refined markdown lines 45-72",
+            "UAP Document 401-402 refined markdown lines 77-89",
+            "UAP Document 401-402 refined markdown lines 105-119"
+          ]
+        },
+        {
+          "source_id": "uap-document-301-local",
+          "label": "UAP Document 301 - General Conditions",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+          "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+          "refined_markdown_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+          "source_locator": "UAP Document 301 refined markdown lines 478-529, 531-573, 579-604, 608-662",
+          "checked_markdown_lines": [
+            "UAP Document 301 refined markdown lines 478-529",
+            "UAP Document 301 refined markdown lines 531-573",
+            "UAP Document 301 refined markdown lines 579-604",
+            "UAP Document 301 refined markdown lines 608-662"
+          ]
+        }
+      ],
+      "metadata_content_hash_note": null
+    },
+    {
+      "index": 3,
+      "article_id": "47317c8d-e2d6-4d17-b18a-3c469b73080c",
+      "slug": "lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-architect-s-responsibility",
+      "title": "Technical Specifications Writing",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-archi--47317c8d-e2d6-4d17-b18a-3c469b73080c",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-archi--47317c8d-e2d6-4d17-b18a-3c469b73080c/question-edits",
+      "exact_improved_paths": {
+        "normalized_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-archi--47317c8d-e2d6-4d17-b18a-3c469b73080c/normalized.md",
+        "candidate_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-archi--47317c8d-e2d6-4d17-b18a-3c469b73080c/candidate.md",
+        "sources_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-archi--47317c8d-e2d6-4d17-b18a-3c469b73080c/sources.json",
+        "source_audit_evidence_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-archi--47317c8d-e2d6-4d17-b18a-3c469b73080c/source-audit-evidence.json",
+        "ui_blocks_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-archi--47317c8d-e2d6-4d17-b18a-3c469b73080c/ui-blocks.json",
+        "compose_report_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-archi--47317c8d-e2d6-4d17-b18a-3c469b73080c/compose-report.json",
+        "diff_report_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-archi--47317c8d-e2d6-4d17-b18a-3c469b73080c/diff-report.json"
+      },
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_rows": 4,
+      "candidate_hash": "sha256:b70d5168abfc8937e90a7899b6a104112ae30414308ecc48e5f0c2e1491b63d8",
+      "normalized_hash": "sha256:b70d5168abfc8937e90a7899b6a104112ae30414308ecc48e5f0c2e1491b63d8",
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": []
+      },
+      "validate": {
+        "valid": true,
+        "blockers": []
+      },
+      "source_audit": {
+        "status": "PASS",
+        "raw_pdf_gate": "PASS",
+        "blockers": []
+      },
+      "raw_sources": [
+        {
+          "source_id": "uap-document-301-local",
+          "label": "UAP Document 301 - General Conditions",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+          "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+          "refined_markdown_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+          "source_locator": "UAP Document 301 refined markdown lines 478-529, 531-573, 579-604, 608-662",
+          "checked_markdown_lines": [
+            "UAP Document 301 refined markdown lines 478-529",
+            "UAP Document 301 refined markdown lines 531-573",
+            "UAP Document 301 refined markdown lines 579-604",
+            "UAP Document 301 refined markdown lines 608-662"
+          ]
+        },
+        {
+          "source_id": "ciap-document-102-local",
+          "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+          "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+          "refined_markdown_sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
+          "source_locator": "CIAP Document 102 refined markdown lines 180-213, 215-258",
+          "checked_markdown_lines": [
+            "CIAP Document 102 refined markdown lines 180-213",
+            "CIAP Document 102 refined markdown lines 215-258"
+          ]
+        },
+        {
+          "source_id": "ra-9184-government-procurement-irr-local",
+          "label": "RA 9184 Government Procurement IRR",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/RA 9184 IRR - Government Procurement IRR.pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/RA 9184 IRR - Government Procurement IRR.pdf",
+          "raw_pdf_sha256": "sha256:19dda526ccf537bf664f79b3fd86521ea37191a84811aefa5482d70f08fc6b95",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9184/RA 9184 IRR - Government Procurement IRR.md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9184/RA 9184 IRR - Government Procurement IRR.md",
+          "refined_markdown_sha256": "sha256:a868cf146c5516f23d74f41f5697c9f09b51251397eaad234694a5df11cf3e10",
+          "source_locator": "RA 9184 IRR refined markdown lines 24-50, 145-151, 167-201",
+          "checked_markdown_lines": [
+            "RA 9184 IRR refined markdown lines 24-50",
+            "RA 9184 IRR refined markdown lines 145-151",
+            "RA 9184 IRR refined markdown lines 167-201"
+          ]
+        },
+        {
+          "source_id": "uap-document-401-402-local",
+          "label": "UAP Document 401-402 - Architect-Owner Agreement",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+          "raw_pdf_sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
+          "refined_markdown_sha256": "sha256:ea7f84c966467b46fe9058778d4f9a0821db94a5dbc0a4fb02a2cfd69e215d05",
+          "source_locator": "UAP Document 401-402 refined markdown lines 45-72, 77-89, 105-119",
+          "checked_markdown_lines": [
+            "UAP Document 401-402 refined markdown lines 45-72",
+            "UAP Document 401-402 refined markdown lines 77-89",
+            "UAP Document 401-402 refined markdown lines 105-119"
+          ]
+        }
+      ],
+      "metadata_content_hash_note": "Local stale original.md hash baseline was repaired to the current exported original.md hash before diff/validate."
+    },
+    {
+      "index": 4,
+      "article_id": "7a48ab8a-3609-484d-b7e3-76f2fc1f6040",
+      "slug": "lea-prac-svc-024-value-engineering-as-an-architectural-service-concept-process-and-practice-ethics",
+      "title": "Value Engineering as an Architectural Service",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-024-value-engineering-as-an-architectural-service-concept-process-and-practice-ethics--7a48ab8a-3609-484d-b7e3-76f2fc1f6040",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-024-value-engineering-as-an-architectural-service-concept-process-and-practice-ethics--7a48ab8a-3609-484d-b7e3-76f2fc1f6040/question-edits",
+      "exact_improved_paths": {
+        "normalized_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-024-value-engineering-as-an-architectural-service-concept-process-and-practice-ethics--7a48ab8a-3609-484d-b7e3-76f2fc1f6040/normalized.md",
+        "candidate_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-024-value-engineering-as-an-architectural-service-concept-process-and-practice-ethics--7a48ab8a-3609-484d-b7e3-76f2fc1f6040/candidate.md",
+        "sources_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-024-value-engineering-as-an-architectural-service-concept-process-and-practice-ethics--7a48ab8a-3609-484d-b7e3-76f2fc1f6040/sources.json",
+        "source_audit_evidence_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-024-value-engineering-as-an-architectural-service-concept-process-and-practice-ethics--7a48ab8a-3609-484d-b7e3-76f2fc1f6040/source-audit-evidence.json",
+        "ui_blocks_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-024-value-engineering-as-an-architectural-service-concept-process-and-practice-ethics--7a48ab8a-3609-484d-b7e3-76f2fc1f6040/ui-blocks.json",
+        "compose_report_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-024-value-engineering-as-an-architectural-service-concept-process-and-practice-ethics--7a48ab8a-3609-484d-b7e3-76f2fc1f6040/compose-report.json",
+        "diff_report_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-024-value-engineering-as-an-architectural-service-concept-process-and-practice-ethics--7a48ab8a-3609-484d-b7e3-76f2fc1f6040/diff-report.json"
+      },
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_rows": 2,
+      "candidate_hash": "sha256:0e903f57e62c8bde1cccb6f27a500dec9155865aaa2d6b7d274d4dfb37784ea2",
+      "normalized_hash": "sha256:0e903f57e62c8bde1cccb6f27a500dec9155865aaa2d6b7d274d4dfb37784ea2",
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": []
+      },
+      "validate": {
+        "valid": true,
+        "blockers": []
+      },
+      "source_audit": {
+        "status": "PASS",
+        "raw_pdf_gate": "PASS",
+        "blockers": []
+      },
+      "raw_sources": [
+        {
+          "source_id": "construction-project-management-handbook-shadan-fleming-local",
+          "label": "Construction Project Management Handbook by Shadan and Fleming",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Construction Project Management Handbook by Shadan _ Fleming.pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/004-Technology/Construction Project Management Handbook by Shadan _ Fleming.pdf",
+          "raw_pdf_sha256": "sha256:01dd25a5de726377eb53bafb502127a806cc007ffc05e8dad745479b0ad6ad17",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Construction Project Management Handbook by Shadan _ Fleming.md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Construction Project Management Handbook by Shadan _ Fleming.md",
+          "refined_markdown_sha256": "sha256:9d7f7c772d1efcce9db4c8f1e59cc5d19711cd99448799ae6ce783ebb6b78c77",
+          "source_locator": "Construction Project Management Handbook refined markdown lines 253-257, 287-301, 387-429, 1544-1577, 1614-1664, 1680-1722, 1808-1819",
+          "checked_markdown_lines": [
+            "Construction Project Management Handbook refined markdown lines 253-257",
+            "Construction Project Management Handbook refined markdown lines 287-301",
+            "Construction Project Management Handbook refined markdown lines 387-429",
+            "Construction Project Management Handbook refined markdown lines 1544-1577",
+            "Construction Project Management Handbook refined markdown lines 1614-1664",
+            "Construction Project Management Handbook refined markdown lines 1680-1722",
+            "Construction Project Management Handbook refined markdown lines 1808-1819"
+          ]
+        },
+        {
+          "source_id": "uap-document-401-402-local",
+          "label": "UAP Document 401-402 - Architect-Owner Agreement",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+          "raw_pdf_sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
+          "refined_markdown_sha256": "sha256:ea7f84c966467b46fe9058778d4f9a0821db94a5dbc0a4fb02a2cfd69e215d05",
+          "source_locator": "UAP Document 401-402 refined markdown lines 45-72, 77-89, 105-119",
+          "checked_markdown_lines": [
+            "UAP Document 401-402 refined markdown lines 45-72",
+            "UAP Document 401-402 refined markdown lines 77-89",
+            "UAP Document 401-402 refined markdown lines 105-119"
+          ]
+        }
+      ],
+      "metadata_content_hash_note": null
+    },
+    {
+      "index": 5,
+      "article_id": "c712ee78-2625-434c-bb18-fa7b0f477b33",
+      "slug": "plastics-in-construction",
+      "title": "Plastics in Construction",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/plastics-in-construction--c712ee78-2625-434c-bb18-fa7b0f477b33",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/plastics-in-construction--c712ee78-2625-434c-bb18-fa7b0f477b33/question-edits",
+      "exact_improved_paths": {
+        "normalized_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/plastics-in-construction--c712ee78-2625-434c-bb18-fa7b0f477b33/normalized.md",
+        "candidate_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/plastics-in-construction--c712ee78-2625-434c-bb18-fa7b0f477b33/candidate.md",
+        "sources_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/plastics-in-construction--c712ee78-2625-434c-bb18-fa7b0f477b33/sources.json",
+        "source_audit_evidence_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/plastics-in-construction--c712ee78-2625-434c-bb18-fa7b0f477b33/source-audit-evidence.json",
+        "ui_blocks_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/plastics-in-construction--c712ee78-2625-434c-bb18-fa7b0f477b33/ui-blocks.json",
+        "compose_report_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/plastics-in-construction--c712ee78-2625-434c-bb18-fa7b0f477b33/compose-report.json",
+        "diff_report_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/plastics-in-construction--c712ee78-2625-434c-bb18-fa7b0f477b33/diff-report.json"
+      },
+      "linked_questions": 22,
+      "question_edits": 22,
+      "source_rows": 2,
+      "candidate_hash": "sha256:779ec88778e1c5c3b6cb0611ba9cf09d4e3cfe267396da20aba995d6b01501e3",
+      "normalized_hash": "sha256:94e0ee536488c4e3e7e4ab1339e08399c7217cb629c739720cb5db09978681b3",
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": []
+      },
+      "validate": {
+        "valid": true,
+        "blockers": []
+      },
+      "source_audit": {
+        "status": "PASS",
+        "raw_pdf_gate": "PASS",
+        "blockers": []
+      },
+      "raw_sources": [
+        {
+          "source_id": "pd-1096-national-building-code-local",
+          "label": "PD 1096 National Building Code - Plastics Provisions",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 - National Building Code.pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 - National Building Code.pdf",
+          "raw_pdf_sha256": "sha256:0bd869faac8d949359aa9e3c5bea7026e85e348f61ce1e87a09d48991c5ba796",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 - National Building Code.md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 - National Building Code.md",
+          "refined_markdown_sha256": "sha256:d7df246271ae1bcb14ed8e4ba881ed75cfa8381cca9f465986d9947397f353d9",
+          "source_locator": "PD 1096 National Building Code refined markdown lines 1909-1998",
+          "checked_markdown_lines": [
+            "PD 1096 National Building Code refined markdown lines 1909-1998"
+          ]
+        },
+        {
+          "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+          "label": "PD 1096 2004 Revised IRR - DPWH Official",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "source_locator": "PD 1096 RIRR 2004 DPWH Official refined markdown lines 4377-4442",
+          "checked_markdown_lines": [
+            "PD 1096 RIRR 2004 DPWH Official refined markdown lines 4377-4442"
+          ]
+        }
+      ],
+      "metadata_content_hash_note": null
+    }
+  ],
+  "validation": {
+    "compose": "PASS for 5/5, blockers=0",
+    "diff": "PASS for 5/5, changed=true, safe_to_push=true, blockers=0",
+    "validate": "PASS for 5/5, blockers=0; only expected component-usage warnings where present",
+    "ui_block_edits": "PASS for 5/5, blockers=0, warnings=0",
+    "scoped_checks": "PASS",
+    "targeted_tests": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts -> PASS, 34 pass, 0 fail, 328 expects",
+    "git_diff_check": "PASS"
+  },
+  "source_evidence_summary": [
+    {
+      "source_id": "bp-344-2024-revised-irr-ncda-local",
+      "label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+      "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "checked_markdown_lines": [
+        "BP 344 2024 Revised IRR refined markdown lines 1090-1135",
+        "BP 344 2024 Revised IRR refined markdown lines 1296-1306",
+        "BP 344 2024 Revised IRR refined markdown lines 1493-1514"
+      ]
+    },
+    {
+      "source_id": "construction-project-management-handbook-shadan-fleming-local",
+      "label": "Construction Project Management Handbook by Shadan and Fleming",
+      "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/004-Technology/Construction Project Management Handbook by Shadan _ Fleming.pdf",
+      "raw_pdf_sha256": "sha256:01dd25a5de726377eb53bafb502127a806cc007ffc05e8dad745479b0ad6ad17",
+      "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Construction Project Management Handbook by Shadan _ Fleming.md",
+      "refined_markdown_sha256": "sha256:9d7f7c772d1efcce9db4c8f1e59cc5d19711cd99448799ae6ce783ebb6b78c77",
+      "checked_markdown_lines": [
+        "Construction Project Management Handbook refined markdown lines 253-257",
+        "Construction Project Management Handbook refined markdown lines 287-301",
+        "Construction Project Management Handbook refined markdown lines 387-429",
+        "Construction Project Management Handbook refined markdown lines 1544-1577",
+        "Construction Project Management Handbook refined markdown lines 1614-1664",
+        "Construction Project Management Handbook refined markdown lines 1680-1722",
+        "Construction Project Management Handbook refined markdown lines 1808-1819"
+      ]
+    },
+    {
+      "source_id": "uap-document-401-402-local",
+      "label": "UAP Document 401-402 - Architect-Owner Agreement",
+      "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+      "raw_pdf_sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+      "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
+      "refined_markdown_sha256": "sha256:ea7f84c966467b46fe9058778d4f9a0821db94a5dbc0a4fb02a2cfd69e215d05",
+      "checked_markdown_lines": [
+        "UAP Document 401-402 refined markdown lines 45-72",
+        "UAP Document 401-402 refined markdown lines 77-89",
+        "UAP Document 401-402 refined markdown lines 105-119"
+      ]
+    },
+    {
+      "source_id": "uap-document-301-local",
+      "label": "UAP Document 301 - General Conditions",
+      "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+      "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+      "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+      "refined_markdown_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+      "checked_markdown_lines": [
+        "UAP Document 301 refined markdown lines 478-529",
+        "UAP Document 301 refined markdown lines 531-573",
+        "UAP Document 301 refined markdown lines 579-604",
+        "UAP Document 301 refined markdown lines 608-662"
+      ]
+    },
+    {
+      "source_id": "ciap-document-102-local",
+      "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
+      "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+      "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+      "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+      "refined_markdown_sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
+      "checked_markdown_lines": [
+        "CIAP Document 102 refined markdown lines 180-213",
+        "CIAP Document 102 refined markdown lines 215-258"
+      ]
+    },
+    {
+      "source_id": "ra-9184-government-procurement-irr-local",
+      "label": "RA 9184 Government Procurement IRR",
+      "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/RA 9184 IRR - Government Procurement IRR.pdf",
+      "raw_pdf_sha256": "sha256:19dda526ccf537bf664f79b3fd86521ea37191a84811aefa5482d70f08fc6b95",
+      "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9184/RA 9184 IRR - Government Procurement IRR.md",
+      "refined_markdown_sha256": "sha256:a868cf146c5516f23d74f41f5697c9f09b51251397eaad234694a5df11cf3e10",
+      "checked_markdown_lines": [
+        "RA 9184 IRR refined markdown lines 24-50",
+        "RA 9184 IRR refined markdown lines 145-151",
+        "RA 9184 IRR refined markdown lines 167-201"
+      ]
+    },
+    {
+      "source_id": "pd-1096-national-building-code-local",
+      "label": "PD 1096 National Building Code - Plastics Provisions",
+      "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 - National Building Code.pdf",
+      "raw_pdf_sha256": "sha256:0bd869faac8d949359aa9e3c5bea7026e85e348f61ce1e87a09d48991c5ba796",
+      "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 - National Building Code.md",
+      "refined_markdown_sha256": "sha256:d7df246271ae1bcb14ed8e4ba881ed75cfa8381cca9f465986d9947397f353d9",
+      "checked_markdown_lines": [
+        "PD 1096 National Building Code refined markdown lines 1909-1998"
+      ]
+    },
+    {
+      "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+      "label": "PD 1096 2004 Revised IRR - DPWH Official",
+      "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "checked_markdown_lines": [
+        "PD 1096 RIRR 2004 DPWH Official refined markdown lines 4377-4442"
+      ]
+    }
+  ],
+  "next_batch_readiness": "READY_FOR_BATCH_037_SELECTION"
+}

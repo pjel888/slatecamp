@@ -67,7 +67,7 @@ The SlateCamp 3D Lab is transitioning from a 193-module baseline to a 300+ modul
 
 ### 3.2 Geometry & Code Logic (`/slatecamp-3d-parametric-engine`)
 - **Mission**: Provide pure, testable, law-verified parametric functions.
-- **Layers**: 
+- **Layers**:
   - L1: Procedural Geometry.
   - L2: Parametric Bounding Boxes (collisions/clearances).
   - L3: Real-Time Data Binding.

@@ -1,0 +1,59 @@
+{
+  "question_id": "1e93e54f-ca22-4ba7-8315-1f1eb9ad99f7",
+  "baseline_hash": "sha256:79ebb4242a03608ff0768970f377ef4c75072db2101d174fe537c41431b9ff95",
+  "action": "replace",
+  "reason": "source-audited-article-batch-081-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-010-06-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-081",
+  "approved_at": "2026-05-12T04:40:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "f876a304-f787-4c8b-ab2c-a1a71dfe6257",
+    "parent_article_slug": "lea-matl-010-06-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Fajardo Architectural Cost Estimates refined markdown lines 15121-15480 and 15698-15732; raw PDF pages 118-122 checked by local PyMuPDF extraction",
+    "checked_markdown_lines": [
+      "Fajardo Architectural Cost Estimates refined markdown lines 15121-15480 and 15698-15732; raw PDF pages 118-122 checked by local PyMuPDF extraction"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "fajardo-cost-estimates-b081",
+        "label": "Architectural Cost Estimates By Max Fajardo",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+        "sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+        "raw_markdown_sha256": "sha256:223efdc2dd963208910027eba08fe87b4919de1a04b76cac095bbd76a7a9a962",
+        "locator": "Fajardo Architectural Cost Estimates refined markdown lines 15121-15480 and 15698-15732; raw PDF pages 118-122 checked by local PyMuPDF extraction"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 081 local raw-source-audited tile-estimating scope."
+  },
+  "proposed": {
+    "text": "When using a pieces-per-square-meter table factor, what should you avoid?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Applying a second tile-area division to the same quantity"
+      },
+      {
+        "id": "b",
+        "text": "Multiplying by the room area"
+      },
+      {
+        "id": "c",
+        "text": "Using the exact tile size named in the table"
+      },
+      {
+        "id": "d",
+        "text": "Adding an allowance when the item asks for it"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The table factor already converts area to pieces, so do not divide by tile area again.",
+    "explanation": "The table factor already converts area to pieces, so do not divide by tile area again.",
+    "code_citation": "Architectural Cost Estimates By Max Fajardo",
+    "bloom_level": "apply",
+    "application_context": "source_audited_local_first_batch_081",
+    "practice_context": [],
+    "difficulty": 0.5
+  }
+}

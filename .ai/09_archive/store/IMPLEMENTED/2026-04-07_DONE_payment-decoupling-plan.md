@@ -1,7 +1,7 @@
 # Payment Gateway Decoupling Plan (Payrex & LemonSqueezy)
 
-**Status:** PLAN REFINED - COMPREHENSIVE IMPLEMENTATION GUIDE  
-**Date:** 2026-04-07  
+**Status:** PLAN REFINED - COMPREHENSIVE IMPLEMENTATION GUIDE
+**Date:** 2026-04-07
 **Objective:** Systematically disable, comment out, or bypass all Payrex and LemonSqueezy integrations to enable "Free Mode" operation without payment APIs.
 
 ---
@@ -129,9 +129,9 @@ export function getPayRex(): ReturnType<typeof PayRex> | null {
     console.warn('[PAYMENTS] PAYREX_SECRET_KEY not set - PayRex disabled');
     return null;
   }
-  
+
   if (_payrex) return _payrex;
-  
+
   try {
     const PayRexClient = require("payrex-node") as typeof PayRex;
     _payrex = PayRexClient(process.env.PAYREX_SECRET_KEY!);
@@ -284,7 +284,7 @@ export async function POST(request: Request) {
       code: "PAYMENTS_DISABLED",
     }, { status: 503 });
   }
-  
+
   // ... rest of existing code
 }
 ```
@@ -301,13 +301,13 @@ export async function POST(request: Request) {
   // Early return if payments disabled - prevents any DB writes
   if (!FEATURE_PAYMENTS_ENABLED) {
     console.log('[WEBHOOK] LemonSqueezy webhook received but payments disabled');
-    return NextResponse.json({ 
-      received: true, 
+    return NextResponse.json({
+      received: true,
       status: 'disabled',
       timestamp: new Date().toISOString(),
     });
   }
-  
+
   // ... rest of existing webhook handling
 }
 ```
@@ -321,13 +321,13 @@ import { FEATURE_PAYMENTS_ENABLED } from '@/lib/constants/feature-flags';
 export async function POST(request: Request) {
   if (!FEATURE_PAYMENTS_ENABLED) {
     console.log('[WEBHOOK] PayRex webhook received but payments disabled');
-    return NextResponse.json({ 
-      received: true, 
+    return NextResponse.json({
+      received: true,
       status: 'disabled',
       timestamp: new Date().toISOString(),
     });
   }
-  
+
   // ... rest of existing webhook handling
 }
 ```
@@ -369,15 +369,15 @@ export const checkFeatureAccess = async (featureKey: FeatureKey): Promise<Access
     const supabase = await createClient();
     const { data: { user } } = await getUser();
     const userTier: UserTier = user ? 'free' : 'free';
-    
-    return { 
-      allowed: true, 
-      userTier, 
+
+    return {
+      allowed: true,
+      userTier,
       requiredTier: [],
       reason: undefined,
     };
   }
-  
+
   // ... existing tier-based logic
 };
 
@@ -386,7 +386,7 @@ export const isPaidUser = async (): Promise<boolean> => {
   if (!FEATURE_PAYMENTS_ENABLED) {
     return false;
   }
-  
+
   // ... existing paid tier check
 };
 
@@ -395,7 +395,7 @@ export const getUserTier = async (): Promise<UserTier> => {
   if (!FEATURE_PAYMENTS_ENABLED) {
     return 'free';
   }
-  
+
   // ... existing tier logic
 };
 ```
@@ -417,7 +417,7 @@ export const checkDailyCap = async (userId: string): Promise<DailyCapResult> => 
       resetAt: null,
     };
   }
-  
+
   // ... existing cap logic
 };
 ```
@@ -437,7 +437,7 @@ export const checkScoreRevealAccess = async (userId: string): Promise<ScoreRevea
   if (!FEATURE_PAYMENTS_ENABLED) {
     return { allowed: true, hasRevealed: false };
   }
-  
+
   // ... existing logic
 };
 ```
@@ -452,7 +452,7 @@ export const getUserTier = cache(async (): Promise<UserTier> => {
   if (!FEATURE_PAYMENTS_ENABLED) {
     return 'free';
   }
-  
+
   // ... existing database lookup
 });
 ```
@@ -477,16 +477,16 @@ import { isPaymentEnabled } from '@/lib/payments/provider';
 
 export function PricingContent() {
   const paymentsEnabled = isPaymentEnabled();
-  
+
   // Track view regardless of payment status
   useEffect(() => {
     trackEvent({ event_name: 'upgrade_page_viewed' });
   }, []);
-  
+
   if (!paymentsEnabled) {
     return <FreeAccessMessage />;
   }
-  
+
   return <PricingTabs />;
 }
 
@@ -574,11 +574,11 @@ Add disabled status indicator:
 
 ```typescript
 // In components table
-{ 
-  component: 'Payments',   
-  pkg: 'lemonsqueezy + payrex-node',            
-  version: '20.4.1 / 1.7.3',    
-  notes: FEATURE_PAYMENTS_ENABLED ? '' : 'DISABLED' 
+{
+  component: 'Payments',
+  pkg: 'lemonsqueezy + payrex-node',
+  version: '20.4.1 / 1.7.3',
+  notes: FEATURE_PAYMENTS_ENABLED ? '' : 'DISABLED'
 },
 
 // In environment variables section, add:
@@ -641,11 +641,11 @@ Update `.ai/state/memory.md`:
    ```bash
    # Enable payments
    NEXT_PUBLIC_PAYMENTS_ENABLED=true
-   
+
    # PayRex (primary)
    PAYREX_SECRET_KEY=sk_live_xxx
    PAYREX_WEBHOOK_SECRET=whsec_xxx
-   
+
    # LemonSqueezy (optional/backup)
    LEMONSQUEEZY_API_KEY=xxx
    LEMONSQUEEZY_WEBHOOK_SECRET=xxx
@@ -798,7 +798,7 @@ Phase 5 (Verify)
 # 1. Build check
 bun run build
 
-# 2. Type check  
+# 2. Type check
 bun run type-check
 
 # 3. Lint
@@ -809,7 +809,7 @@ curl -s -X POST localhost:3000/api/payments/checkout \
   -H "Content-Type: application/json" \
   -d '{"tier":"pro"}' | jq '.error, .code'
 
-# 5. Webhook disabled  
+# 5. Webhook disabled
 curl -s -X POST localhost:3000/api/webhooks/payrex \
   -H "Content-Type: application/json" \
   -d '{}' | jq '.status'

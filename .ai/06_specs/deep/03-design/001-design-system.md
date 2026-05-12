@@ -1,7 +1,7 @@
 # Design System
 
-**Status:** Active  
-**Version:** 1.0  
+**Status:** Active
+**Version:** 1.0
 **Last Updated:** 2026-04-25
 **Source-of-Truth:** `DESIGN.md` for agent-readable visual identity, `src/app/globals.css` for implemented CSS/Tailwind tokens
 
@@ -241,7 +241,7 @@ Loaded via `next/font/google` in `src/app/layout.tsx`:
 | Normal | `duration-200` | 200ms |
 | Max | `duration-300` | 300ms |
 
-**Easing:** `ease-out` only (default).  
+**Easing:** `ease-out` only (default).
 **Never:** `ease-in-out`, `bounce`, or `spring` easing (except framer-motion structural animations).
 
 ---

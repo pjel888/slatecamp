@@ -1,81 +1,24 @@
-
+# Planning in the Philippines
 
 ## Board Exam Quick Check
 
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+For Philippine planning questions, separate local authority, technical planning, legislative adoption, national review, and implementation. RA 7160, EO 72, the RA 11201 IRR, the HLURB CLUP Guidebook, and RPS 2008 are the controlling local source family for this batch.
 
-**Common mistake:** treating a familiar keyword in **Lea Plan 001 03 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
-
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
-Philippine urban planning history is shaped by three distinct eras: Spanish colonial grid-plaza planning, American City Beautiful intervention, and postwar devolution to local authority.
-## Learning Goal
+RA 7160 requires LGUs to continue preparing comprehensive land use plans enacted through zoning ordinances. It gives city and municipal Sanggunians authority to adopt CLUPs and enact integrated zoning ordinances in consonance with the approved CLUP. Provinces review component city and municipal CLUPs and zoning ordinances and adopt provincial land-use plans.
 
-Trace the evolution of Philippine urban planning from the Laws of the Indies (1573) through the Burnham Plan of Manila (1905) to the Local Government Code (RA 7160, 1991), and identify the planning frameworks, key figures, and legacies of each period.
+EO 72 describes how the local planning process works: the city or municipal development council initiates formulation or updating, the CPDC or MPDC provides technical support, and the CLUP is submitted to the Sanggunian for enactment into a zoning ordinance. EO 72 also sets the review path for component LGUs, provinces, highly urbanized cities, independent component cities, and Metro Manila cities.
 
-## Core Concept
+RPS 2008 explains the local planning structure. The political component includes the Sanggunian and Local Development Council, which set policy direction. The technical component includes the local planning and development office, LGU departments, national agencies operating locally, sectoral committees, and other contributors that supply technical data and analysis.
 
-Planning in the Philippines emerged from colonial intervention rather than indigenous settlement organization. The **Laws of the Indies (1573)**, Spain's urban planning code for colonial territories, mandated a strict grid-plaza town plan for all settlements — a central plaza surrounded by the church, municipal hall, and administrative buildings, with streets in a regular grid radiating outward. Every Philippine town established during the 300-year Spanish colonial period (1565–1898) followed this template, from Intramuros (Manila's walled core) to Vigan, Cebu, and provincial capitals. This colonial inheritance created the characteristic spatial organization of Philippine towns: centralized civic nucleus, regular street grid, and defined public plaza.
+The HLURB CLUP Guidebook frames CLUP preparation as a technical and participatory process. The CLUP determines specific uses of land and physical/natural resources, integrates sectoral plans, and supports policies for settlements, production, protection, and infrastructure. Situation analysis asks where the LGU is now, using baseline data, maps, consultations, and projections.
 
-The American colonial period (1898–1946) introduced modern planning principles through **Daniel Hudson Burnham's Plan of Manila and Baguio (1905)**. Burnham, the architect of the 1893 Chicago World's Columbian Exposition and the City Beautiful Movement, was commissioned by the American colonial government to create a grand planning vision for the Philippine capital and the new Highland Summer capital. The **Plan of Manila (1905)** proposed sweeping reforms:
+DHSUD enters the source-safe framework through the RA 11201 IRR. Its transferred land-use planning and monitoring functions include standards, technical assistance, review participation, monitoring of CLUP and zoning implementation, and GIS-based compliance information. It does not replace the Sanggunian as the local legislative body.
 
-- Luneta (now Rizal Park) as the grand civic focal point, expanded with landscaping and monuments
-- Taft Avenue as the main ceremonial boulevard, connecting downtown to the bay
-- Regularization of the Pasig River with tree-lined embankments and public walkways
-- Intramuros fortification preservation as a historic core, with new government buildings and civic spaces
-- Park system development to civilize the tropical city
-- Infrastructure modernization (sewage, water, streets) following City Beautiful principles
+## Exam Focus
 
-The Plan of Manila was only partially implemented — wartime destruction, budget constraints, and changing political priorities meant many Burnham visions never materialized. However, Luneta, Taft Avenue, the Pasig River embankment, and government building placement in Manila reflect Burnham's legacy. The Plan of Baguio (also 1905) was more successful; the grid street layout, Wright Park, and overall urban form of Baguio closely follow Burnham's design.
-
-Post-independence planning (1946–1970s) focused on national reconstruction and city expansion, but lacked comprehensive frameworks. The **Local Government Code (RA 7160, 1991)** marked the watershed moment, devolving planning authority to all municipalities and cities and mandating **Comprehensive Land Use Plans (CLUPs)**. This shift acknowledged that centralized planning had failed to manage rapid urbanization, informal settlements, and environmental degradation. Contemporary Philippine planning now operates through LGU CLUPs reviewed by **DHSUD** (formerly HLURB), integrated with housing policy (RA 7279), environmental protection (PD 1586, PD 1067), and disaster risk reduction (RA 10121).
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-plan-001-03-core-concept", type="image", caption="Philippine Urban Planning History — Spanish, American, and Post-War Eras", description="Timeline diagram showing three eras: (1) Spanish colonial grid-plaza system (Law of the Indies), (2) American City Beautiful — Burnham's Plan of Manila 1905 with diagonal boulevards and civic core, (3) Post-war devolution under RA 7160 (1991 LGC) with CLUP mandate.", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-## Key Provisions
-
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
-Extracted summary:
-- Props: headers="[", Historical=true, Period=true, Planning=true, Framework=true, Key=true, Figure=true, s=true, Legacy=true, rows="[[", Spanish=true, Colonial=true
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiExamTable" status="preserved"]
-Extracted summary:
-- Props: headers="[", Concept=true, Significance=true, Testable=true, Detail=true, rows="[[", Laws=true, of=true, the=true, Indies=true, Spanish=true, colonial=true
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-## Philippine Context
-
-Contemporary planning in the Philippines is structured by **RA 7160** (Local Government Code, 1991), which ended centralized planning and created a system where every municipality and city prepares a 10-year CLUP. This represented a philosophical shift: recognition that top-down national planning had failed to address squatter settlements, traffic congestion, and environmental degradation in Manila and other cities. The CLUP system decentralizes authority while maintaining national standards through **DHSUD** review.
-
-The historical tension between centralized City Beautiful aesthetics (Burnham's Manila) and practical equity concerns (housing for the poor, upgrading informal settlements) continues to define Philippine planning debate. Modern planning integrates both: aspirational citymaking (BGC, urban renewal districts) and social housing (RA 7279 balanced housing requirements, NHA resettlement projects). Understanding planning history helps explain why contemporary debates emphasize _both_ livability and equity — colonial and American legacy provides the design vocabulary; postcolonial nation-building demands inclusion.
-
-## How It's Tested
-
-The LEA tests Philippine planning history through two dominant question patterns: (1) **Historical attribution and detail** — "The Laws of the Indies were Spain's urban planning law mandating which town pattern?" (Answer: grid-plaza). "The Burnham Plan of Manila (1905) proposed which of the following?" (multiple improvements listed). "Which feature of contemporary Manila reflects Burnham's legacy?" (Answer: Luneta, Taft Avenue, or Pasig embankment). (2) **Postcolonial institutional history** — "RA 7160 marked a shift from centralized to decentralized planning. What was the new planning instrument mandated for all LGUs?" (Answer: CLUP). Questions rarely ask for philosophizing; they test factual knowledge of dates, theorists, and specific projects.
-
-[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Historical memory anchors:** LAWS OF THE INDIES = 1573, Spanish planning law. Every Philippine town = grid-plaza. BURNHAM = 1905, Plan of Manila. Three Burnham legacies = LUNETA, TAFT AVENUE, PASIG RIVER. RA 7160 = 1991, devolution, CLUP mandate. DHSUD = 2019 creation (RA 11201) consolidating HLURB, NHA, and other housing/planning agencies.
-[/SLATECAMP_UI_BLOCK]
-
-**Exam Tip:** Three key dates: 1573 (Laws of the Indies), 1905 (Burnham Plan), 1991 (RA 7160 / Local Government Code). Know the exact year for each — 1988 or 1992 are NOT acceptable substitutes for RA 7160.
-
-## Cross-References
-
-See **LEA-PLAN-001-01** (Planning Fundamentals) for theorist attribution, **LEA-PLAN-007-06** (Key Figures) for Burnham biography, and **LEA-PLAN-001-05** (CLUP Process) for post-1991 devolved planning system.
-
-## Common Mistakes
-
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\"Confusing the Burnham Plan of Manila with other planners — Burnham designed both Manila and Baguio (1905); do not attribute Baguio to other architects\", \"Thinking Laws of the Indies were tax or military laws — they were URBAN PLANNING laws mandating grid-plaza towns\", \"Forgetting that the Spanish colonial grid-plaza is the MODEL for all Philippine towns — students sometimes think Intramuros is unique\", \"Misremembering Burnham Plan date — it's 1905, not 1900 or 1910\", \"Attributing Luneta or Taft Avenue to contemporary planners instead of Burnham legacy\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+- CLUP is local spatial policy; zoning ordinance is the enforceable implementation tool.
+- Sanggunian adopts/enacts; planning offices prepare technical support.
+- DHSUD provides standards, assistance, review participation, and monitoring.
+- Use source-backed planning horizons carefully: planning guides support long-term projections, while RA 7160 supplies the CLUP/zoning mandate.

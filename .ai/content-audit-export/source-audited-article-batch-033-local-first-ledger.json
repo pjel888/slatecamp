@@ -1,0 +1,203 @@
+{
+  "batch_id": "source-audited-article-batch-033-local-first",
+  "generated_at": "2026-05-11T09:31:19+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "local_first_only": true,
+  "constraints": {
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false
+  },
+  "selection": {
+    "batch_number": 33,
+    "selected_article_ids": [
+      "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "4f0754d8-6bd7-459b-8359-8f65857914b2",
+      "7a3b0ff7-407f-40cc-b398-fca6358f4db7",
+      "3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
+      "3e488a13-943c-4dee-8e38-95b711bef107"
+    ],
+    "selection_rule": "five high-value LEA accessibility/code clusters with linked questions and local BP 344 raw PDF, excluding IDs recorded in source-audited Batch 001 through Batch 032 artifacts",
+    "prior_batch_exclusion_check": "PASS"
+  },
+  "counts": {
+    "selected_articles": 5,
+    "locally_passed_articles": 5,
+    "linked_questions": 79,
+    "source_safe_question_edits_created": 79,
+    "source_rows": 5,
+    "unique_raw_pdf_files_checked": 1,
+    "remaining_local_blockers": 0
+  },
+  "exact_paths": [
+    {
+      "index": 1,
+      "article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "slug": "bp-344-ramp-slope-tiers",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de/question-edits"
+    },
+    {
+      "index": 2,
+      "article_id": "4f0754d8-6bd7-459b-8359-8f65857914b2",
+      "slug": "interior-doors-and-hardware",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/interior-doors-and-hardware--4f0754d8-6bd7-459b-8359-8f65857914b2",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/interior-doors-and-hardware--4f0754d8-6bd7-459b-8359-8f65857914b2/question-edits"
+    },
+    {
+      "index": 3,
+      "article_id": "7a3b0ff7-407f-40cc-b398-fca6358f4db7",
+      "slug": "lodging-and-residential-accessibility",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lodging-and-residential-accessibility--7a3b0ff7-407f-40cc-b398-fca6358f4db7",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lodging-and-residential-accessibility--7a3b0ff7-407f-40cc-b398-fca6358f4db7/question-edits"
+    },
+    {
+      "index": 4,
+      "article_id": "3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
+      "slug": "site-planning-accessible-routes-vs-open-space",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/site-planning-accessible-routes-vs-open-space--3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/site-planning-accessible-routes-vs-open-space--3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046/question-edits"
+    },
+    {
+      "index": 5,
+      "article_id": "3e488a13-943c-4dee-8e38-95b711bef107",
+      "slug": "wheelchair-maneuvering-and-parking",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/wheelchair-maneuvering-and-parking--3e488a13-943c-4dee-8e38-95b711bef107",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/wheelchair-maneuvering-and-parking--3e488a13-943c-4dee-8e38-95b711bef107/question-edits"
+    }
+  ],
+  "raw_sources_checked": [
+    {
+      "source_id": "bp-344-2024-revised-irr-ncda-local",
+      "label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "checked_locators": "BP 344 2024 Revised IRR refined markdown lines 40-70, 230-311, 679-727, 772-838, 1219-1255",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "observed_raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "observed_refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "status": "PASS"
+    }
+  ],
+  "validation": {
+    "compose": "PASS for 5/5: bun run content-audit:compose -- --article-id <Batch 033 id> --overwrite --strict; changed candidates; blockers=0",
+    "diff": "PASS for 5/5: bun run content-audit:diff -- --article-id <Batch 033 id> --summary --strict; changed=true; safe_to_push=true; blockers=0",
+    "validate": "PASS for 5/5: bun run content-audit:validate -- --article-id <Batch 033 id> --summary; valid=true; blockers=0; expected component-usage.json warnings only",
+    "targeted_tests": "PASS: bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts; 34 pass, 0 fail, 328 expects",
+    "scoped_checks": "PASS",
+    "post_artifact_check": "PASS"
+  },
+  "artifacts": {
+    "ledger": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-033-local-first-ledger.json",
+    "report": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-033-local-first-report.md",
+    "scoped_checks": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-033-local-first-scoped-checks.json",
+    "handoff": "/Users/philiplewis/slatecamp/.ai/03_plans/source-audited-local-first-batches-handoff.md"
+  },
+  "blockers": [],
+  "articles": [
+    {
+      "article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "slug": "bp-344-ramp-slope-tiers",
+      "title": "BP 344 Ramp Slope Tiers",
+      "folder": ".ai/content-audit-export/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "absolute_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "question_edits_folder": ".ai/content-audit-export/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de/question-edits",
+      "json_files_checked": 20,
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_rows": 1,
+      "candidate_hash": "sha256:85a3281bd23ec2a85c47274f607725aaf72de0a5db999672eb9767a744393c3e",
+      "normalized_hash": "sha256:85a3281bd23ec2a85c47274f607725aaf72de0a5db999672eb9767a744393c3e",
+      "placeholder_matches": [],
+      "compose_blockers": [],
+      "diff_blockers": [],
+      "raw_pdf_gate": "PASS",
+      "blockers": []
+    },
+    {
+      "article_id": "4f0754d8-6bd7-459b-8359-8f65857914b2",
+      "slug": "interior-doors-and-hardware",
+      "title": "Interior Doors and Hardware",
+      "folder": ".ai/content-audit-export/articles/interior-doors-and-hardware--4f0754d8-6bd7-459b-8359-8f65857914b2",
+      "absolute_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/interior-doors-and-hardware--4f0754d8-6bd7-459b-8359-8f65857914b2",
+      "question_edits_folder": ".ai/content-audit-export/articles/interior-doors-and-hardware--4f0754d8-6bd7-459b-8359-8f65857914b2/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/interior-doors-and-hardware--4f0754d8-6bd7-459b-8359-8f65857914b2/question-edits",
+      "json_files_checked": 21,
+      "linked_questions": 11,
+      "question_edits": 11,
+      "source_rows": 1,
+      "candidate_hash": "sha256:f730879e3815dd9b496459f4829fe9c1acf53de610521d4ca9730110babe51a7",
+      "normalized_hash": "sha256:f730879e3815dd9b496459f4829fe9c1acf53de610521d4ca9730110babe51a7",
+      "placeholder_matches": [],
+      "compose_blockers": [],
+      "diff_blockers": [],
+      "raw_pdf_gate": "PASS",
+      "blockers": []
+    },
+    {
+      "article_id": "7a3b0ff7-407f-40cc-b398-fca6358f4db7",
+      "slug": "lodging-and-residential-accessibility",
+      "title": "Lodging and Residential Accessibility",
+      "folder": ".ai/content-audit-export/articles/lodging-and-residential-accessibility--7a3b0ff7-407f-40cc-b398-fca6358f4db7",
+      "absolute_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lodging-and-residential-accessibility--7a3b0ff7-407f-40cc-b398-fca6358f4db7",
+      "question_edits_folder": ".ai/content-audit-export/articles/lodging-and-residential-accessibility--7a3b0ff7-407f-40cc-b398-fca6358f4db7/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lodging-and-residential-accessibility--7a3b0ff7-407f-40cc-b398-fca6358f4db7/question-edits",
+      "json_files_checked": 26,
+      "linked_questions": 16,
+      "question_edits": 16,
+      "source_rows": 1,
+      "candidate_hash": "sha256:1b653798e5c3686c19af29597bd2b8b9296ca29a40dc94aee8b8852644e48e79",
+      "normalized_hash": "sha256:1b653798e5c3686c19af29597bd2b8b9296ca29a40dc94aee8b8852644e48e79",
+      "placeholder_matches": [],
+      "compose_blockers": [],
+      "diff_blockers": [],
+      "raw_pdf_gate": "PASS",
+      "blockers": []
+    },
+    {
+      "article_id": "3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
+      "slug": "site-planning-accessible-routes-vs-open-space",
+      "title": "Site Planning Accessible Routes vs Open Space",
+      "folder": ".ai/content-audit-export/articles/site-planning-accessible-routes-vs-open-space--3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
+      "absolute_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/site-planning-accessible-routes-vs-open-space--3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
+      "question_edits_folder": ".ai/content-audit-export/articles/site-planning-accessible-routes-vs-open-space--3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/site-planning-accessible-routes-vs-open-space--3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046/question-edits",
+      "json_files_checked": 31,
+      "linked_questions": 21,
+      "question_edits": 21,
+      "source_rows": 1,
+      "candidate_hash": "sha256:1309e55a5e451acb6697d15fc303689b174eca755be299e4b4569c4081fa3e7a",
+      "normalized_hash": "sha256:1309e55a5e451acb6697d15fc303689b174eca755be299e4b4569c4081fa3e7a",
+      "placeholder_matches": [],
+      "compose_blockers": [],
+      "diff_blockers": [],
+      "raw_pdf_gate": "PASS",
+      "blockers": []
+    },
+    {
+      "article_id": "3e488a13-943c-4dee-8e38-95b711bef107",
+      "slug": "wheelchair-maneuvering-and-parking",
+      "title": "Wheelchair Maneuvering and Parking",
+      "folder": ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking--3e488a13-943c-4dee-8e38-95b711bef107",
+      "absolute_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/wheelchair-maneuvering-and-parking--3e488a13-943c-4dee-8e38-95b711bef107",
+      "question_edits_folder": ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking--3e488a13-943c-4dee-8e38-95b711bef107/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/wheelchair-maneuvering-and-parking--3e488a13-943c-4dee-8e38-95b711bef107/question-edits",
+      "json_files_checked": 31,
+      "linked_questions": 21,
+      "question_edits": 21,
+      "source_rows": 1,
+      "candidate_hash": "sha256:3093320d999bdd64a2699c21933d5fc418b7e8598f5b79576e0d49d2233ecda1",
+      "normalized_hash": "sha256:3093320d999bdd64a2699c21933d5fc418b7e8598f5b79576e0d49d2233ecda1",
+      "placeholder_matches": [],
+      "compose_blockers": [],
+      "diff_blockers": [],
+      "raw_pdf_gate": "PASS",
+      "blockers": []
+    }
+  ]
+}

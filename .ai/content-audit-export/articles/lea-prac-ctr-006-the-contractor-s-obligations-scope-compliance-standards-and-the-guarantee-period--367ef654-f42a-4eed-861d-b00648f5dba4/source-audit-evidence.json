@@ -1,0 +1,313 @@
+{
+  "batch_id": "source-audited-article-batch-028-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T15:30:00.000+08:00",
+  "article_id": "367ef654-f42a-4eed-861d-b00648f5dba4",
+  "slug": "lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period",
+  "title": "The Contractor's Obligations Scope Compliance Standards",
+  "status": "local_pass_ready_for_final_publishing_review",
+  "article_folder": ".ai/content-audit-export/articles/lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period--367ef654-f42a-4eed-861d-b00648f5dba4",
+  "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period--367ef654-f42a-4eed-861d-b00648f5dba4",
+  "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period--367ef654-f42a-4eed-861d-b00648f5dba4/question-edits",
+  "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period--367ef654-f42a-4eed-861d-b00648f5dba4/question-edits",
+  "linked_questions": 10,
+  "question_edits_created": 10,
+  "source_safe_rewrite_question_edits": 10,
+  "classification": {
+    "legal_or_code_content": true,
+    "requires_raw_pdf_audit": true,
+    "local_first_only": true
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "local_first_only": true,
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "blockers": [],
+    "warnings": [
+      "Local-first content batch only; final Supabase publishing requires separate review/apply phase."
+    ]
+  },
+  "source_audit": {
+    "checked_sources": [
+      {
+        "source_id": "uap-document-301-general-conditions-local",
+        "label": "UAP Document 301 - General Conditions for construction contract documents",
+        "authority": "United Architects of the Philippines / PRC Board approved general conditions source",
+        "source_type": "professional_practice_contract_pdf",
+        "source_locator": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "refined_markdown_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+        "checked_markdown_lines": [
+          "UAP Document 301 lines 472-545",
+          "UAP Document 301 lines 923-998",
+          "UAP Document 301 lines 1019-1051",
+          "UAP Document 301 lines 1062-1090"
+        ],
+        "use": "primary local source for source-safe article and question rewrite claims",
+        "local_source_checked": true
+      },
+      {
+        "source_id": "ciap-document-102-private-construction-contract-local",
+        "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
+        "authority": "Construction Industry Authority of the Philippines / DTI private construction contract source",
+        "source_type": "construction_contract_pdf",
+        "source_locator": "CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+        "refined_markdown_sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
+        "checked_markdown_lines": [
+          "CIAP Document 102 lines 169-258",
+          "CIAP Document 102 lines 712-761",
+          "CIAP Document 102 lines 807-820"
+        ],
+        "use": "primary local source for source-safe article and question rewrite claims",
+        "local_source_checked": true
+      }
+    ],
+    "source_locator": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090; CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820",
+    "checked_markdown_lines": [
+      "UAP Document 301 lines 472-545",
+      "UAP Document 301 lines 923-998",
+      "UAP Document 301 lines 1019-1051",
+      "UAP Document 301 lines 1062-1090",
+      "CIAP Document 102 lines 169-258",
+      "CIAP Document 102 lines 712-761",
+      "CIAP Document 102 lines 807-820"
+    ]
+  },
+  "claims": [
+    {
+      "claim_id": "batch-028-lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period-question-001",
+      "claim_text": "Question c45e1ca1-864b-4125-8f08-d8a434bb09dc / model BATCH-028-lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period-001 rewritten to source-safe local form.",
+      "question_id": "c45e1ca1-864b-4125-8f08-d8a434bb09dc",
+      "model_id": "BATCH-028-lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period-001",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 lines 482-486",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-028-lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period-question-002",
+      "claim_text": "Question 799a2d95-865c-4ca6-8958-3c3ad2a630ee / model BATCH-028-lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period-002 rewritten to source-safe local form.",
+      "question_id": "799a2d95-865c-4ca6-8958-3c3ad2a630ee",
+      "model_id": "BATCH-028-lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period-002",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "CIAP Document 102 lines 190-204",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-028-lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period-question-003",
+      "claim_text": "Question e445bb33-5cf9-467e-8fb7-c6381f779806 / model BATCH-028-lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period-003 rewritten to source-safe local form.",
+      "question_id": "e445bb33-5cf9-467e-8fb7-c6381f779806",
+      "model_id": "BATCH-028-lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period-003",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 lines 523-527; CIAP Document 102 lines 254-258",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-028-lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period-question-004",
+      "claim_text": "Question 3283c011-68f8-4ac4-85e6-2e3b5a6763f9 / model BATCH-028-lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period-004 rewritten to source-safe local form.",
+      "question_id": "3283c011-68f8-4ac4-85e6-2e3b5a6763f9",
+      "model_id": "BATCH-028-lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period-004",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 lines 523-527; CIAP Document 102 lines 254-258",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-028-lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period-question-005",
+      "claim_text": "Question 378e89e5-9c56-4d6e-9d8d-cbc86f97af8e / model BATCH-028-lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period-005 rewritten to source-safe local form.",
+      "question_id": "378e89e5-9c56-4d6e-9d8d-cbc86f97af8e",
+      "model_id": "BATCH-028-lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period-005",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 lines 980-987",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-028-lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period-question-006",
+      "claim_text": "Question 3a14b407-a9a4-499f-b53b-c1c810e776ec / model BATCH-028-lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period-006 rewritten to source-safe local form.",
+      "question_id": "3a14b407-a9a4-499f-b53b-c1c810e776ec",
+      "model_id": "BATCH-028-lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period-006",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 lines 980-987",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-028-lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period-question-007",
+      "claim_text": "Question b2674598-e2df-4d1b-bc28-a413451241ac / model BATCH-028-lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period-007 rewritten to source-safe local form.",
+      "question_id": "b2674598-e2df-4d1b-bc28-a413451241ac",
+      "model_id": "BATCH-028-lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period-007",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 lines 984-998",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-028-lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period-question-008",
+      "claim_text": "Question 8b231288-063e-4f81-9832-1344d0aa48b0 / model BATCH-028-lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period-008 rewritten to source-safe local form.",
+      "question_id": "8b231288-063e-4f81-9832-1344d0aa48b0",
+      "model_id": "BATCH-028-lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period-008",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "CIAP Document 102 lines 807-820",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-028-lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period-question-009",
+      "claim_text": "Question da6fda51-4a01-47cd-b9b5-19b20e08d0d3 / model BATCH-028-lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period-009 rewritten to source-safe local form.",
+      "question_id": "da6fda51-4a01-47cd-b9b5-19b20e08d0d3",
+      "model_id": "BATCH-028-lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period-009",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "CIAP Document 102 lines 813-820",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-028-lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period-question-010",
+      "claim_text": "Question ed529039-0c42-4270-8aed-ac9193706655 / model BATCH-028-lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period-010 rewritten to source-safe local form.",
+      "question_id": "ed529039-0c42-4270-8aed-ac9193706655",
+      "model_id": "BATCH-028-lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period-010",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 lines 984-998; CIAP Document 102 lines 813-820",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "sme_review": {
+    "required": false,
+    "status": "PASS"
+  },
+  "removed_or_rewritten_claims": [
+    "Removed unresolved SLATECAMP_UI_BLOCK placeholder sections because ui-blocks.json had zero preserved blocks for these bundles.",
+    "Removed unsupported RA 9184/private-award, AIA, cure-period, lien-remedy, and Civil Code liability claims unless supported by the checked local source set.",
+    "Rewrote linked questions to source-safe prompts and answer keys anchored to exact local source locators."
+  ],
+  "target": {
+    "article_id": "367ef654-f42a-4eed-861d-b00648f5dba4",
+    "slug": "lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period",
+    "normalized_sha256": "sha256:94fe9ce9f8b48e8baf14e69c6dd4ec8bbcbf2f022cbbbb9621b25d5df89b7100",
+    "candidate_sha256": "sha256:94fe9ce9f8b48e8baf14e69c6dd4ec8bbcbf2f022cbbbb9621b25d5df89b7100",
+    "sources_sha256": "sha256:f263dd4ecb8c6606df1a35e3f7994590bb84d16b4f4b672f093246d0095d7414",
+    "diff_report_sha256": "sha256:a2673ab758c10dab638a0471020d29ec95c5734f9fca5d8b81ea4f9e236ebd1a",
+    "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period--367ef654-f42a-4eed-861d-b00648f5dba4/question-edits",
+    "question_edits_count": 10
+  },
+  "validation": {
+    "compose_blockers": [],
+    "diff_safe_to_push": true,
+    "diff_blockers": [],
+    "local_first_only": true,
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false
+  }
+}

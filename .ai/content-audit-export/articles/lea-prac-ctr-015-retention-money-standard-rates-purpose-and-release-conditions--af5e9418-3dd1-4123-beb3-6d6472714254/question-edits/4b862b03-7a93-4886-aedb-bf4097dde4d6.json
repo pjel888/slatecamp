@@ -1,0 +1,93 @@
+{
+  "question_id": "4b862b03-7a93-4886-aedb-bf4097dde4d6",
+  "baseline_hash": "sha256:d080c92f9b2f8446e1afe8d8d67b8e020ac48b735451413f2b300f08b3e57cc1",
+  "action": "replace",
+  "reason": "source-audited-article-batch-030-local-first rewrote this linked question to source-safe local form for lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions.",
+  "approved_by": "codex-local-source-audit-batch-030",
+  "approved_at": "2026-05-11T08:28:21.061+08:00",
+  "source_audit_support": {
+    "parent_article_id": "af5e9418-3dd1-4123-beb3-6d6472714254",
+    "parent_article_slug": "lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "CIAP Document 102 refined markdown lines 193, 634, 681, 814, 848 and 905; UAP Document 301 refined markdown lines 816, 878, 1007 and 1072",
+    "checked_markdown_lines": [
+      "CIAP Document 102 line 193",
+      "CIAP Document 102 line 634",
+      "CIAP Document 102 line 681",
+      "CIAP Document 102 line 814",
+      "CIAP Document 102 line 848",
+      "CIAP Document 102 line 905",
+      "UAP Document 301 line 816",
+      "UAP Document 301 line 878",
+      "UAP Document 301 line 1007",
+      "UAP Document 301 line 1072"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+        "sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+        "source_id": "ciap-document-102-private-construction-contract-local",
+        "locator": "CIAP Document 102 refined markdown lines 193, 634, 681, 814, 848 and 905"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+        "sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
+        "source_id": "ciap-document-102-private-construction-contract-local",
+        "locator": "CIAP Document 102 refined markdown lines 193, 634, 681, 814, 848 and 905"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "source_id": "uap-document-301-general-conditions-local",
+        "locator": "UAP Document 301 refined markdown lines 816, 878, 1007 and 1072"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+        "source_id": "uap-document-301-general-conditions-local",
+        "locator": "UAP Document 301 refined markdown lines 816, 878, 1007 and 1072"
+      }
+    ],
+    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+  },
+  "proposed": {
+    "text": "What bond is tied to release of retention under CIAP Document 102?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The contractor's guarantee bond"
+      },
+      {
+        "id": "b",
+        "text": "The proposal bond"
+      },
+      {
+        "id": "c",
+        "text": "The architect's professional indemnity policy"
+      },
+      {
+        "id": "d",
+        "text": "The owner's fire insurance policy"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "Correct because it follows CIAP Document 102 lines 681 and 814. The other options change the timing, party, document, amount, or legal effect stated in the checked local source.",
+    "explanation": "Use CIAP Document 102 lines 681 and 814 for this Batch 030 source-safe replacement.",
+    "code_citation": "CIAP Document 102 lines 681 and 814",
+    "bloom_level": "understand",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "contracts",
+      "source-audited-article-batch-030-local-first"
+    ],
+    "difficulty": 0.38,
+    "is_assessment": false,
+    "model_id": "BATCH-030-lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions-005"
+  }
+}

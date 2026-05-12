@@ -1,0 +1,438 @@
+{
+  "schema_version": "source-audit-evidence-v1-local-first",
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-034-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T10:59:50+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "debf8513-f91a-4e0a-9f32-8fe4f677ed71",
+    "slug": "lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation",
+    "title": "Specialized Architectural Services Scope and Compensation",
+    "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation--debf8513-f91a-4e0a-9f32-8fe4f677ed71",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation--debf8513-f91a-4e0a-9f32-8fe4f677ed71",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation--debf8513-f91a-4e0a-9f32-8fe4f677ed71/candidate.md",
+    "candidate_sha256": "sha256:ad30bb21f02340ca0988d645b08200244b675407a4fe225e68d1b0914d3dc23d",
+    "normalized_sha256": "sha256:ad30bb21f02340ca0988d645b08200244b675407a4fe225e68d1b0914d3dc23d",
+    "linked_questions_sha256": "sha256:6d450dad585eb7be037d8644998a75eb90fe2f5ee135e6fb9844b487032613e1",
+    "sources_sha256": "sha256:5658591f5de5ec3f03f9b46281f07b38480edda3f2719aaaa17ca991b8e3ebe6"
+  },
+  "classification": {
+    "content_domain": "LEA Professional Services",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high_value_professional_services",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": [
+      "83b47929-49b7-45e9-a822-13017f4574ea",
+      "f2aebeb9-c887-4938-8b3d-a369287ca10e",
+      "a65ad0cb-7a3a-4656-a13d-0b05c7cefe0c",
+      "97123811-a6bc-49ba-8143-cf38d641cb2e",
+      "c6bcaa0d-5650-4e9c-828e-94cecc75fb59",
+      "e560b92a-8cde-4a59-b8bd-443225636027",
+      "a7227ce7-7590-4a4f-afff-187200901095",
+      "cfa28b8c-6ad3-4d2a-861d-03a9990b6948",
+      "fd825989-8614-4bd2-876d-757afc5cc693",
+      "d0828f99-fbc3-4d94-9a4e-7e6fa687edb5"
+    ]
+  },
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation--debf8513-f91a-4e0a-9f32-8fe4f677ed71",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation--debf8513-f91a-4e0a-9f32-8fe4f677ed71",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation--debf8513-f91a-4e0a-9f32-8fe4f677ed71/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation--debf8513-f91a-4e0a-9f32-8fe4f677ed71/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation--debf8513-f91a-4e0a-9f32-8fe4f677ed71/question-edits/83b47929-49b7-45e9-a822-13017f4574ea.json",
+      ".ai/content-audit-export/articles/lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation--debf8513-f91a-4e0a-9f32-8fe4f677ed71/question-edits/f2aebeb9-c887-4938-8b3d-a369287ca10e.json",
+      ".ai/content-audit-export/articles/lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation--debf8513-f91a-4e0a-9f32-8fe4f677ed71/question-edits/a65ad0cb-7a3a-4656-a13d-0b05c7cefe0c.json",
+      ".ai/content-audit-export/articles/lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation--debf8513-f91a-4e0a-9f32-8fe4f677ed71/question-edits/97123811-a6bc-49ba-8143-cf38d641cb2e.json",
+      ".ai/content-audit-export/articles/lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation--debf8513-f91a-4e0a-9f32-8fe4f677ed71/question-edits/c6bcaa0d-5650-4e9c-828e-94cecc75fb59.json",
+      ".ai/content-audit-export/articles/lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation--debf8513-f91a-4e0a-9f32-8fe4f677ed71/question-edits/e560b92a-8cde-4a59-b8bd-443225636027.json",
+      ".ai/content-audit-export/articles/lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation--debf8513-f91a-4e0a-9f32-8fe4f677ed71/question-edits/a7227ce7-7590-4a4f-afff-187200901095.json",
+      ".ai/content-audit-export/articles/lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation--debf8513-f91a-4e0a-9f32-8fe4f677ed71/question-edits/cfa28b8c-6ad3-4d2a-861d-03a9990b6948.json",
+      ".ai/content-audit-export/articles/lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation--debf8513-f91a-4e0a-9f32-8fe4f677ed71/question-edits/fd825989-8614-4bd2-876d-757afc5cc693.json",
+      ".ai/content-audit-export/articles/lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation--debf8513-f91a-4e0a-9f32-8fe4f677ed71/question-edits/d0828f99-fbc3-4d94-9a4e-7e6fa687edb5.json"
+    ]
+  },
+  "raw_sources": [
+    {
+      "source_id": "uap-spp-203-local",
+      "label": "UAP SPP Document 203 - Specialized Architectural Services",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+      "raw_pdf_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+      "refined_markdown_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+      "source_locator": "UAP SPP 203 refined markdown lines 101-150",
+      "checked_markdown_lines": [
+        "UAP SPP 203 refined markdown lines 101-150"
+      ]
+    },
+    {
+      "source_id": "uap-standards-professional-practice2-local",
+      "label": "UAP Standards of Professional Practice - compiled SPP source",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+      "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+      "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+      "source_locator": "UAP Standards of Professional Practice refined markdown lines 300-350, 362-418, 475-586, 1036-1077, 1097-1215",
+      "checked_markdown_lines": [
+        "UAP Standards of Professional Practice refined markdown lines 300-350",
+        "362-418",
+        "475-586",
+        "1036-1077",
+        "1097-1215"
+      ]
+    },
+    {
+      "source_id": "ra-9266-irr-local",
+      "label": "RA 9266 IRR Architecture Act of 2004",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+      "source_locator": "RA 9266 IRR refined markdown lines 674-680, 688-690, 736-738, 853-855",
+      "checked_markdown_lines": [
+        "RA 9266 IRR refined markdown lines 674-680",
+        "688-690",
+        "736-738",
+        "853-855"
+      ]
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "uap-spp-203-local",
+      "label": "UAP SPP Document 203 - Specialized Architectural Services",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+      "raw_pdf_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+      "refined_markdown_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+      "source_locator": "UAP SPP 203 refined markdown lines 101-150",
+      "checked_markdown_lines": [
+        "UAP SPP 203 refined markdown lines 101-150"
+      ]
+    },
+    {
+      "source_id": "uap-standards-professional-practice2-local",
+      "label": "UAP Standards of Professional Practice - compiled SPP source",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+      "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+      "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+      "source_locator": "UAP Standards of Professional Practice refined markdown lines 300-350, 362-418, 475-586, 1036-1077, 1097-1215",
+      "checked_markdown_lines": [
+        "UAP Standards of Professional Practice refined markdown lines 300-350",
+        "362-418",
+        "475-586",
+        "1036-1077",
+        "1097-1215"
+      ]
+    },
+    {
+      "source_id": "ra-9266-irr-local",
+      "label": "RA 9266 IRR Architecture Act of 2004",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+      "source_locator": "RA 9266 IRR refined markdown lines 674-680, 688-690, 736-738, 853-855",
+      "checked_markdown_lines": [
+        "RA 9266 IRR refined markdown lines 674-680",
+        "688-690",
+        "736-738",
+        "853-855"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "b034-svc009-01",
+      "claim_text": "SPP 203 covers specialized architectural services.",
+      "claim_type": "professional_practice_source_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "UAP Standards of Professional Practice - compiled SPP source",
+        "locator": "UAP Standards of Professional Practice refined markdown lines 557-568",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+        "quoted_pdf_excerpt": "The compiled SPP introduces SPP 203 and specialized services."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b034-svc009-02",
+      "claim_text": "SPP 203 lists specialized service categories.",
+      "claim_type": "professional_practice_source_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "UAP SPP Document 203 - Specialized Architectural Services",
+        "locator": "UAP SPP 203 refined markdown lines 101-150",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+        "raw_pdf_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+        "quoted_pdf_excerpt": "SPP 203 lists specialized service categories."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b034-svc009-03",
+      "claim_text": "Architectural Interiors covers indoor/enclosed planning and building engineering system layout.",
+      "claim_type": "professional_practice_source_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "UAP Standards of Professional Practice - compiled SPP source",
+        "locator": "UAP Standards of Professional Practice refined markdown lines 598-609",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+        "quoted_pdf_excerpt": "The compiled SPP defines Architectural Interiors scope."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b034-svc009-04",
+      "claim_text": "Specialized services compensation may use man-months or other applicable fee modes.",
+      "claim_type": "professional_practice_source_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "UAP Standards of Professional Practice - compiled SPP source",
+        "locator": "UAP Standards of Professional Practice refined markdown lines 793, 878",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+        "quoted_pdf_excerpt": "The compiled SPP describes compensation for specialized services."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b034-svc009-05",
+      "claim_text": "RA 9266 IRR recognizes the Standards of Professional Practice as part of implementation.",
+      "claim_type": "professional_practice_source_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "RA 9266 IRR Architecture Act of 2004",
+        "locator": "RA 9266 IRR refined markdown lines 853-855",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "quoted_pdf_excerpt": "RA 9266 IRR authorizes the Code and Standards of Professional Practice."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b034-question-83b47929-49b7-45e9-a822-13017f4574ea",
+      "claim_text": "Question 83b47929-49b7-45e9-a822-13017f4574ea / ALE-PRAC-SVC-009-004 has a source-safe question-edits rewrite aligned to lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation.",
+      "claim_type": "linked_question_source_safe_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "UAP SPP Document 203 - Specialized Architectural Services",
+        "locator": "UAP SPP 203 refined markdown lines 101-150",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+        "raw_pdf_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+        "quoted_pdf_excerpt": "Linked question rewrite is tied to the audited source family and article claims."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b034-question-f2aebeb9-c887-4938-8b3d-a369287ca10e",
+      "claim_text": "Question f2aebeb9-c887-4938-8b3d-a369287ca10e / ALE-PRAC-SVC-009-003 has a source-safe question-edits rewrite aligned to lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation.",
+      "claim_type": "linked_question_source_safe_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "UAP SPP Document 203 - Specialized Architectural Services",
+        "locator": "UAP SPP 203 refined markdown lines 101-150",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+        "raw_pdf_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+        "quoted_pdf_excerpt": "Linked question rewrite is tied to the audited source family and article claims."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b034-question-a65ad0cb-7a3a-4656-a13d-0b05c7cefe0c",
+      "claim_text": "Question a65ad0cb-7a3a-4656-a13d-0b05c7cefe0c / ALE-PRAC-SVC-009-002 has a source-safe question-edits rewrite aligned to lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation.",
+      "claim_type": "linked_question_source_safe_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "UAP SPP Document 203 - Specialized Architectural Services",
+        "locator": "UAP SPP 203 refined markdown lines 101-150",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+        "raw_pdf_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+        "quoted_pdf_excerpt": "Linked question rewrite is tied to the audited source family and article claims."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b034-question-97123811-a6bc-49ba-8143-cf38d641cb2e",
+      "claim_text": "Question 97123811-a6bc-49ba-8143-cf38d641cb2e / ALE-PRAC-SVC-009-005 has a source-safe question-edits rewrite aligned to lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation.",
+      "claim_type": "linked_question_source_safe_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "UAP SPP Document 203 - Specialized Architectural Services",
+        "locator": "UAP SPP 203 refined markdown lines 101-150",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+        "raw_pdf_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+        "quoted_pdf_excerpt": "Linked question rewrite is tied to the audited source family and article claims."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b034-question-c6bcaa0d-5650-4e9c-828e-94cecc75fb59",
+      "claim_text": "Question c6bcaa0d-5650-4e9c-828e-94cecc75fb59 / ALE-PRAC-SVC-009-006 has a source-safe question-edits rewrite aligned to lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation.",
+      "claim_type": "linked_question_source_safe_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "UAP SPP Document 203 - Specialized Architectural Services",
+        "locator": "UAP SPP 203 refined markdown lines 101-150",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+        "raw_pdf_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+        "quoted_pdf_excerpt": "Linked question rewrite is tied to the audited source family and article claims."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b034-question-e560b92a-8cde-4a59-b8bd-443225636027",
+      "claim_text": "Question e560b92a-8cde-4a59-b8bd-443225636027 / ALE-PRAC-SVC-009-009 has a source-safe question-edits rewrite aligned to lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation.",
+      "claim_type": "linked_question_source_safe_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "UAP SPP Document 203 - Specialized Architectural Services",
+        "locator": "UAP SPP 203 refined markdown lines 101-150",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+        "raw_pdf_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+        "quoted_pdf_excerpt": "Linked question rewrite is tied to the audited source family and article claims."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b034-question-a7227ce7-7590-4a4f-afff-187200901095",
+      "claim_text": "Question a7227ce7-7590-4a4f-afff-187200901095 / ALE-PRAC-SVC-009-007 has a source-safe question-edits rewrite aligned to lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation.",
+      "claim_type": "linked_question_source_safe_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "UAP SPP Document 203 - Specialized Architectural Services",
+        "locator": "UAP SPP 203 refined markdown lines 101-150",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+        "raw_pdf_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+        "quoted_pdf_excerpt": "Linked question rewrite is tied to the audited source family and article claims."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b034-question-cfa28b8c-6ad3-4d2a-861d-03a9990b6948",
+      "claim_text": "Question cfa28b8c-6ad3-4d2a-861d-03a9990b6948 / ALE-PRAC-SVC-009-001 has a source-safe question-edits rewrite aligned to lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation.",
+      "claim_type": "linked_question_source_safe_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "UAP SPP Document 203 - Specialized Architectural Services",
+        "locator": "UAP SPP 203 refined markdown lines 101-150",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+        "raw_pdf_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+        "quoted_pdf_excerpt": "Linked question rewrite is tied to the audited source family and article claims."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b034-question-fd825989-8614-4bd2-876d-757afc5cc693",
+      "claim_text": "Question fd825989-8614-4bd2-876d-757afc5cc693 / ALE-PRAC-SVC-009-010 has a source-safe question-edits rewrite aligned to lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation.",
+      "claim_type": "linked_question_source_safe_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "UAP SPP Document 203 - Specialized Architectural Services",
+        "locator": "UAP SPP 203 refined markdown lines 101-150",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+        "raw_pdf_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+        "quoted_pdf_excerpt": "Linked question rewrite is tied to the audited source family and article claims."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b034-question-d0828f99-fbc3-4d94-9a4e-7e6fa687edb5",
+      "claim_text": "Question d0828f99-fbc3-4d94-9a4e-7e6fa687edb5 / ALE-PRAC-SVC-009-008 has a source-safe question-edits rewrite aligned to lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation.",
+      "claim_type": "linked_question_source_safe_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "UAP SPP Document 203 - Specialized Architectural Services",
+        "locator": "UAP SPP 203 refined markdown lines 101-150",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+        "raw_pdf_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+        "quoted_pdf_excerpt": "Linked question rewrite is tied to the audited source family and article claims."
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "removed_or_rewritten_material": [
+    "Article body rewritten to local raw-source-supported professional-practice claims.",
+    "Legacy generated UI placeholders removed from normalized markdown.",
+    "Linked questions rewritten in question-edits JSON with source-safe answer keys, rationales, and citations."
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "gate_results": {
+    "compose": "PASS: bun run content-audit:compose -- --article-id <Batch 034 id> --overwrite --strict; changed candidates; blockers=0",
+    "diff": "PASS: bun run content-audit:diff -- --article-id <Batch 034 id> --summary --strict; changed=true; safe_to_push=true; blockers=0",
+    "validate": "PASS: bun run content-audit:validate -- --article-id <Batch 034 id> --summary; valid=true; blockers=0; expected component-usage.json warning only",
+    "push_dry_run": "not_attempted_local_first; Supabase remote fetch/publish is final publishing only",
+    "supabase_mutation": "not_attempted_by_request"
+  },
+  "source_safe_repair": {
+    "normalized_md_rewritten": true,
+    "candidate_md_composed": true,
+    "sources_json_refreshed_to_checked_raw_sources": true,
+    "source_audit_evidence_json_created": true,
+    "question_edits_created": 10,
+    "answer_key_fields_changed": true,
+    "ui_markers_removed_from_normalized": true,
+    "external_business_claims_limited_to_source_safe_form": true
+  },
+  "local_validation": {
+    "compose": {
+      "passed": true,
+      "blockers": [],
+      "candidate_hash": "sha256:ad30bb21f02340ca0988d645b08200244b675407a4fe225e68d1b0914d3dc23d",
+      "safe_to_diff": true
+    },
+    "diff": {
+      "passed": true,
+      "blockers": [],
+      "safe_to_push": true,
+      "changed": true
+    },
+    "validate": {
+      "passed": true,
+      "blockers": [],
+      "warnings": [
+        "expected component-usage.json warning only"
+      ]
+    },
+    "scoped_checks": {
+      "passed": true,
+      "blockers": [],
+      "placeholder_matches": []
+    }
+  },
+  "sme_review": {
+    "required": false,
+    "status": "PASS"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

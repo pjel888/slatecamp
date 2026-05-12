@@ -1,0 +1,32 @@
+{
+  "question_id": "5020afc2-ec03-4abb-9ef1-10d02e71ed99",
+  "baseline_hash": "sha256:a6d7c7fe2a458fd15fec64ff958db14828acd470adf9f40c2d4616cac6b88b58",
+  "reason": "Batch 003 source audit removed unsupported penalty ranges, restitution amounts, dollar values, and scenario statistics; questions now use RA 9266 IRR and UAP Code of Ethics conduct categories.",
+  "approved_by": "codex-local-source-audit-batch-003",
+  "approved_at": "2026-05-10T18:00:00+08:00",
+  "proposed": {
+    "text": "Two architects made comparable code errors. One promptly corrected and disclosed the error; the other concealed it until discovered after occupancy. What source-safe conclusion can be drawn without inventing a sanction?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Both must receive the same fixed penalty"
+      },
+      {
+        "id": "b",
+        "text": "Correction, disclosure, concealment, repeat conduct, and safety consequence are relevant seriousness factors, but the raw source does not supply a fixed range here"
+      },
+      {
+        "id": "c",
+        "text": "Disclosure makes every violation disappear"
+      },
+      {
+        "id": "d",
+        "text": "Only restitution amount matters"
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": "The repaired article allows seriousness factors but removes unsupported penalty ranges.",
+    "explanation": "The edit removes PRBoA-likely penalty speculation.",
+    "code_citation": "RA 9266 IRR grounds for discipline; RA 9266 IRR and UAP Code of Ethics"
+  }
+}

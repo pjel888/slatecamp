@@ -1,0 +1,240 @@
+{
+  "schema_version": "source-audit-evidence-v1-local-first",
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-033-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T09:31:19+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "7a3b0ff7-407f-40cc-b398-fca6358f4db7",
+    "slug": "lodging-and-residential-accessibility",
+    "title": "Lodging and Residential Accessibility",
+    "article_folder": ".ai/content-audit-export/articles/lodging-and-residential-accessibility--7a3b0ff7-407f-40cc-b398-fca6358f4db7",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lodging-and-residential-accessibility--7a3b0ff7-407f-40cc-b398-fca6358f4db7",
+    "candidate_path": ".ai/content-audit-export/articles/lodging-and-residential-accessibility--7a3b0ff7-407f-40cc-b398-fca6358f4db7/candidate.md",
+    "candidate_sha256": "sha256:1b653798e5c3686c19af29597bd2b8b9296ca29a40dc94aee8b8852644e48e79",
+    "normalized_sha256": "sha256:1b653798e5c3686c19af29597bd2b8b9296ca29a40dc94aee8b8852644e48e79",
+    "linked_questions_sha256": "sha256:68acb7b6eec16504cd06795c5d3851980189538add8ff66675f512eec52cee25",
+    "sources_sha256": "sha256:2a98cc06ee79e59ce478699a39a156243d6e208c994cd7efb213bdd7e063deda"
+  },
+  "classification": {
+    "content_domain": "LEA Accessibility and Building Code",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high_value_accessibility_code",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 16,
+    "question_edits_created": [
+      "7b43399b-8303-4658-8b42-def83d33a673",
+      "0f94cee0-177b-4f10-ba6e-cf1303fefaf3",
+      "bac24e47-273e-45b9-a925-b7b5db529244",
+      "f060aa7d-88d0-4768-870f-235be6a50c85",
+      "1e4c4919-8a77-4283-8338-4a255786c6d7",
+      "e5aea3cc-7654-4fcf-852b-6e6d688f26e2",
+      "1dda5f6b-650b-4c36-b4a6-925e43529790",
+      "5c6c5865-1f90-471f-a8d0-6dd17d29813c",
+      "2e9d07d9-1424-4b4b-9d5d-fac65f8e09e4",
+      "c3a684e7-000f-4fd2-95f1-4f86cb08272f",
+      "5248ad1a-be30-495a-a1e0-649c4d03ce2f",
+      "cc055513-8fad-4a90-b627-9bc3dd3d4d23",
+      "fa70010c-4c5f-4dfd-97f5-65b204deac4b",
+      "6a1749f8-d09b-4e26-8209-88bd7c277387",
+      "bda17bc4-51fc-425f-ae4c-ad6e31391af1",
+      "19e69176-b560-44cc-ae99-461a91f9f530"
+    ]
+  },
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/lodging-and-residential-accessibility--7a3b0ff7-407f-40cc-b398-fca6358f4db7",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lodging-and-residential-accessibility--7a3b0ff7-407f-40cc-b398-fca6358f4db7",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/lodging-and-residential-accessibility--7a3b0ff7-407f-40cc-b398-fca6358f4db7/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lodging-and-residential-accessibility--7a3b0ff7-407f-40cc-b398-fca6358f4db7/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/lodging-and-residential-accessibility--7a3b0ff7-407f-40cc-b398-fca6358f4db7/question-edits/7b43399b-8303-4658-8b42-def83d33a673.json",
+      ".ai/content-audit-export/articles/lodging-and-residential-accessibility--7a3b0ff7-407f-40cc-b398-fca6358f4db7/question-edits/0f94cee0-177b-4f10-ba6e-cf1303fefaf3.json",
+      ".ai/content-audit-export/articles/lodging-and-residential-accessibility--7a3b0ff7-407f-40cc-b398-fca6358f4db7/question-edits/bac24e47-273e-45b9-a925-b7b5db529244.json",
+      ".ai/content-audit-export/articles/lodging-and-residential-accessibility--7a3b0ff7-407f-40cc-b398-fca6358f4db7/question-edits/f060aa7d-88d0-4768-870f-235be6a50c85.json",
+      ".ai/content-audit-export/articles/lodging-and-residential-accessibility--7a3b0ff7-407f-40cc-b398-fca6358f4db7/question-edits/1e4c4919-8a77-4283-8338-4a255786c6d7.json",
+      ".ai/content-audit-export/articles/lodging-and-residential-accessibility--7a3b0ff7-407f-40cc-b398-fca6358f4db7/question-edits/e5aea3cc-7654-4fcf-852b-6e6d688f26e2.json",
+      ".ai/content-audit-export/articles/lodging-and-residential-accessibility--7a3b0ff7-407f-40cc-b398-fca6358f4db7/question-edits/1dda5f6b-650b-4c36-b4a6-925e43529790.json",
+      ".ai/content-audit-export/articles/lodging-and-residential-accessibility--7a3b0ff7-407f-40cc-b398-fca6358f4db7/question-edits/5c6c5865-1f90-471f-a8d0-6dd17d29813c.json",
+      ".ai/content-audit-export/articles/lodging-and-residential-accessibility--7a3b0ff7-407f-40cc-b398-fca6358f4db7/question-edits/2e9d07d9-1424-4b4b-9d5d-fac65f8e09e4.json",
+      ".ai/content-audit-export/articles/lodging-and-residential-accessibility--7a3b0ff7-407f-40cc-b398-fca6358f4db7/question-edits/c3a684e7-000f-4fd2-95f1-4f86cb08272f.json",
+      ".ai/content-audit-export/articles/lodging-and-residential-accessibility--7a3b0ff7-407f-40cc-b398-fca6358f4db7/question-edits/5248ad1a-be30-495a-a1e0-649c4d03ce2f.json",
+      ".ai/content-audit-export/articles/lodging-and-residential-accessibility--7a3b0ff7-407f-40cc-b398-fca6358f4db7/question-edits/cc055513-8fad-4a90-b627-9bc3dd3d4d23.json",
+      ".ai/content-audit-export/articles/lodging-and-residential-accessibility--7a3b0ff7-407f-40cc-b398-fca6358f4db7/question-edits/fa70010c-4c5f-4dfd-97f5-65b204deac4b.json",
+      ".ai/content-audit-export/articles/lodging-and-residential-accessibility--7a3b0ff7-407f-40cc-b398-fca6358f4db7/question-edits/6a1749f8-d09b-4e26-8209-88bd7c277387.json",
+      ".ai/content-audit-export/articles/lodging-and-residential-accessibility--7a3b0ff7-407f-40cc-b398-fca6358f4db7/question-edits/bda17bc4-51fc-425f-ae4c-ad6e31391af1.json",
+      ".ai/content-audit-export/articles/lodging-and-residential-accessibility--7a3b0ff7-407f-40cc-b398-fca6358f4db7/question-edits/19e69176-b560-44cc-ae99-461a91f9f530.json"
+    ]
+  },
+  "raw_sources": [
+    {
+      "source_id": "bp-344-2024-revised-irr-ncda-local",
+      "label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "source_locator": "BP 344 2024 Revised IRR refined markdown lines 1219-1255",
+      "checked_markdown_lines": [
+        "BP 344 2024 Revised IRR refined markdown lines 1219-1255"
+      ]
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "bp-344-2024-revised-irr-ncda-local",
+      "label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "source_locator": "BP 344 2024 Revised IRR refined markdown lines 1219-1255",
+      "checked_markdown_lines": [
+        "BP 344 2024 Revised IRR refined markdown lines 1219-1255"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "b033-lodge-01",
+      "claim_text": "Two percent of guest rooms in covered transient lodging facilities must be accessible guest rooms.",
+      "claim_type": "accessibility_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "locator": "BP 344 refined markdown line 1219",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "Two percent of the total number of guest rooms shall be Accessible Guest Rooms."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b033-lodge-02",
+      "claim_text": "Accessible guest rooms need lever handles and dual-height peepholes with the lower peephole at 1000 mm.",
+      "claim_type": "accessibility_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "locator": "BP 344 refined markdown lines 1221-1223",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "Lever type door handles and dual height peepholes with the lower peephole at 1000 mm are required."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b033-lodge-03",
+      "claim_text": "Manual switches are at 1200 mm and 200 mm from the latch side; outlets are not lower than 450 mm.",
+      "claim_type": "accessibility_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "locator": "BP 344 refined markdown lines 1223-1227",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "Manual switches are 1200 mm above floor and 200 mm from latch side; outlets not lower than 450 mm."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b033-lodge-04",
+      "claim_text": "Beds must be maximum 500 mm high, and lower hanger racks are installed 1200 mm from the floor.",
+      "claim_type": "accessibility_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "locator": "BP 344 refined markdown lines 1229-1233",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "Bed maximum height is 500 mm; lower hanger racks are 1200 mm from the floor."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b033-lodge-05",
+      "claim_text": "Accessible guest rooms need visual warning systems, staff orientation, emergency assistance buttons, and vibrating pillow or bed alarms.",
+      "claim_type": "accessibility_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "locator": "BP 344 refined markdown lines 1235-1255",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "Visual warning strobe requirements, staff orientation, emergency buttons, and vibrating pillow or bed alarms are listed."
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "removed_or_rewritten_material": [
+    "Learner article text was rewritten to local BP 344 source-supported accessibility/code claims only.",
+    "Legacy UI marker blocks were removed from normalized.md so candidate.md composes without unresolved markers.",
+    "Linked questions were rewritten to source-safe wording, answer keys, rationales, and citations."
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "gate_results": {
+    "compose": "PASS: bun run content-audit:compose -- --article-id <Batch 033 id> --overwrite --strict; changed candidates; blockers=0",
+    "diff": "PASS: bun run content-audit:diff -- --article-id <Batch 033 id> --summary --strict; changed=true; safe_to_push=true; blockers=0",
+    "validate": "PASS: bun run content-audit:validate -- --article-id <Batch 033 id> --summary; valid=true; blockers=0; expected component-usage.json warning only",
+    "push_dry_run": "not_attempted_local_first; Supabase remote fetch/publish is final publishing only",
+    "supabase_mutation": "not_attempted_by_request"
+  },
+  "source_safe_repair": {
+    "normalized_md_rewritten": true,
+    "candidate_md_composed": true,
+    "sources_json_refreshed_to_checked_raw_sources": true,
+    "source_audit_evidence_json_created": true,
+    "question_edits_created": 16,
+    "answer_key_fields_changed": true,
+    "ui_markers_removed_from_normalized": true,
+    "external_business_claims_limited_to_source_safe_form": true
+  },
+  "local_validation": {
+    "compose": {
+      "passed": true,
+      "blockers": [],
+      "candidate_hash": "sha256:1b653798e5c3686c19af29597bd2b8b9296ca29a40dc94aee8b8852644e48e79",
+      "safe_to_diff": true
+    },
+    "diff": {
+      "passed": true,
+      "blockers": [],
+      "safe_to_push": true,
+      "changed": true
+    },
+    "validate": {
+      "passed": true,
+      "blockers": [],
+      "warnings": [
+        "expected component-usage.json warning only"
+      ]
+    },
+    "scoped_checks": {
+      "passed": true,
+      "blockers": [],
+      "placeholder_matches": []
+    }
+  },
+  "sme_review": {
+    "required": false,
+    "status": "PASS"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

@@ -26,16 +26,16 @@
   ```typescript
   // BEFORE: Promise.all([getUser(), getDashboardData(), ...])
   // AFTER: Per-component Suspense
-  
+
   <div className="grid">
     <Suspense fallback={<HeroSkeleton />}>
       <HeroSection />
     </Suspense>
-    
+
     <Suspense fallback={<HeatmapSkeleton />}>
       <HeatmapSection />
     </Suspense>
-    
+
     <Suspense fallback={<ActivitySkeleton />}>
       <ActivityFeed />
     </Suspense>
@@ -55,9 +55,9 @@
       getActivityData(),
       getStreakData()
     ])
-    
+
     // Transform results to handle failures gracefully
-    return results.map(r => 
+    return results.map(r =>
       r.status === 'fulfilled' ? r.value : null
     )
   }
@@ -74,7 +74,7 @@
         trackEvent('dashboard_view')
       }
     }
-    
+
     document.addEventListener('visibilitychange', handleVisibility)
     return () => document.removeEventListener('visibilitychange', handleVisibility)
   }, [])
@@ -93,7 +93,7 @@
 - **Logic Required:**
   ```typescript
   import dynamic from 'next/dynamic'
-  
+
   const LabViewer = dynamic(() => import('@/components/3d-lab/LabViewer'), {
     ssr: false,
     loading: () => <LabSkeleton />

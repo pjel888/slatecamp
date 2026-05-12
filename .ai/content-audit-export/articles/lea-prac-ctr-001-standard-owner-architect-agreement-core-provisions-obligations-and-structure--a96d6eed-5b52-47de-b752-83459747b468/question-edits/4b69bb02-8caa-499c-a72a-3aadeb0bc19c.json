@@ -1,0 +1,86 @@
+{
+  "question_id": "4b69bb02-8caa-499c-a72a-3aadeb0bc19c",
+  "baseline_hash": "sha256:38a6e936debbc8e880b65381feb2abab4b3338da539f7d796e212a53da3b9d12",
+  "action": "replace",
+  "reason": "source-audited-article-batch-027-local-first aligned linked question with audited local UAP/SPP source language for lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure.",
+  "approved_by": "codex-local-source-audit-batch-027",
+  "approved_at": "2026-05-11T00:00:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "a96d6eed-5b52-47de-b752-83459747b468",
+    "parent_article_slug": "lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UAP Document 301 refined markdown lines 472-540 and 730-842; UAP Standards SPP 202 lines 459-501 for owner-architect service context",
+    "checked_markdown_lines": [
+      "UAP Document 301 lines 472-540",
+      "UAP Document 301 lines 730-842",
+      "UAP Standards lines 414-457",
+      "UAP Standards lines 459-501",
+      "UAP Standards lines 1608-1642"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "uap-document-301-general-conditions-local",
+        "label": "UAP Document 301 - General Conditions for construction contract documents",
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "source_type": "professional_practice_pdf",
+        "source_locator": "UAP Document 301 refined markdown lines 472-540 and 730-842",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "refined_markdown_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+        "checked_markdown_lines": [
+          "UAP Document 301 lines 472-540",
+          "UAP Document 301 lines 730-842"
+        ],
+        "use": "Local UAP Document 301 raw PDF and refined markdown checked for contract document definitions, ownership of drawings, discrepancy handling, changes, payment certification, and substantial completion.",
+        "local_source_checked": true
+      },
+      {
+        "source_id": "uap-standards-spp202-compensation-local",
+        "label": "UAP Document Standards of Professional Practice - SPP 202 compensation and service conditions",
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "source_type": "professional_practice_pdf",
+        "source_locator": "UAP Standards refined markdown lines 414-501 and 1608-1642",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "checked_markdown_lines": [
+          "UAP Standards lines 414-457",
+          "UAP Standards lines 459-501",
+          "UAP Standards lines 1608-1642"
+        ],
+        "use": "Local UAP Standards raw PDF and refined markdown checked for SPP 202 compensation methods, reimbursables, owner responsibilities, additional services, abandoned projects, and PCA compensation terms.",
+        "local_source_checked": true
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the local source-audited article scope."
+  },
+  "proposed": {
+    "text": "In UAP Document 301, the term Agreement refers to a contract between whom?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The owner and the contractor."
+      },
+      {
+        "id": "b",
+        "text": "The Board and the examinee."
+      },
+      {
+        "id": "c",
+        "text": "The contractor and the building official only."
+      },
+      {
+        "id": "d",
+        "text": "The supplier and the bank."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "UAP Document 301 defines the Agreement as the contract between the owner and the contractor.",
+    "explanation": "UAP Document 301 defines the Agreement as the contract between the owner and the contractor.",
+    "code_citation": "UAP Document 301 lines 472-494",
+    "model_id": "BATCH-027-lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure-001"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T23:10:00+08:00",
+  "audit_mode": "local_source_audit_no_supabase",
+  "protocols_applied": [
+    ".ai/CONTENT_EXCELLENCE_GOAL.md",
+    ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
+    ".ai/00_system/vitruvius-source-reference.md"
+  ],
+  "target": {
+    "article_id": "cb947ab1-7737-4bde-8a47-606b5d305ed6",
+    "slug": "pd-1096-rule-viii-light-and-ventilation",
+    "title": "PD 1096 Rule VIII Light and Ventilation",
+    "article_folder": ".ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6",
+    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6",
+    "candidate_path": ".ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6/candidate.md",
+    "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6/candidate.md",
+    "question_edits_folder": ".ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6/question-edits",
+    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6/question-edits",
+    "candidate_sha256": "sha256:95c0c5ed77f82c19807c7935ebdceebfe7c87ea0631490a162362ecc8d08e3d2",
+    "normalized_sha256": "sha256:95c0c5ed77f82c19807c7935ebdceebfe7c87ea0631490a162362ecc8d08e3d2",
+    "linked_questions_sha256": "sha256:4309aee3034ab4880db6c196b6e517bf3d2480e9624b6ce627c5b10b94ab96c0",
+    "sources_sha256": "sha256:55d0a50efcf3bed78e5c5f312da4a5a3ff0ad580959684479718b7dc838e9e94"
+  },
+  "classification": {
+    "content_type": "pd1096_rule_viii_light_and_ventilation_article",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 26,
+    "question_edits_created": [
+      "fe6797d2-c711-45df-9490-12c8332bb9dc",
+      "c2a1c833-81bb-458c-96a1-b169aa084667",
+      "5afd2ad4-ba08-4f5f-8702-8cd2810b4c77",
+      "c97510b9-bac7-4744-baaf-fabc8166e9e6",
+      "a655cff8-15f3-4c6f-bca9-75bc48f4d5ec",
+      "8f52ddf9-4582-4c78-aee0-ca1ac351ad0c",
+      "13ae9baa-7b7b-4c6a-8bce-afb61b0d637f",
+      "0a849610-08d5-4911-82fe-8b4a06f64a4d",
+      "82a2f551-c3f9-44dd-a97e-d92f7f49e05c",
+      "e40268c9-de75-4811-8344-416f1f46c4b6",
+      "aebc577f-0d76-44e0-b8fa-8d24cb7802a6",
+      "d92e0195-f2d3-451e-8262-859fe95d87fe",
+      "3a5d8ae5-f700-4f41-a3bc-b98e76999733",
+      "b18ab986-cdd8-4f4a-b580-198883189606",
+      "36cbd85d-043d-44ca-ae30-c7b23284bde2",
+      "d95e6c0d-3baa-4d32-9b89-52abb04cd745",
+      "3cb906cb-87d9-4da8-8354-ceb5ce3580cb",
+      "be9d0912-4dac-4c4c-a0c1-e44251d5cf4c",
+      "3f144559-c6ba-4832-8b39-bf397649a0a6",
+      "b1afffa7-66b7-4bd9-9521-1fd231b0e642",
+      "d7afe88a-6212-4702-b2a1-41362f39d5a9",
+      "2a37d3ea-e799-45cb-9ddc-93711a6e5792",
+      "5923d4fc-f08a-40cc-881d-bebdb6c045eb",
+      "117c97d6-06cf-4e24-8529-f1e40582c741",
+      "b5e815cc-ce69-4f5e-bec3-030f31db9773",
+      "13217960-3ab8-4546-832e-80a178334bd2"
+    ]
+  },
+  "raw_sources": [
+    {
+      "key": "pd1096_2004_revised_irr",
+      "label": "PD 1096 2004 Revised IRR, DPWH Official Publication",
+      "source_type": "implementing_rules",
+      "source_id": "batch007-pd-1096-rule-viii-light-and-ventilatio-source-01",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "checked_pdf_pages": [
+        119,
+        120,
+        126,
+        128,
+        132,
+        133,
+        134
+      ]
+    }
+  ],
+  "gate_results": {
+    "compose": "PASS: content-audit:compose -- --article-id cb947ab1-7737-4bde-8a47-606b5d305ed6 --overwrite; blockers=0",
+    "diff": "PASS: content-audit:diff -- --article-id cb947ab1-7737-4bde-8a47-606b5d305ed6; changed=true safe_to_push=true blockers=0",
+    "validate": "PASS: content-audit:validate -- --article-id cb947ab1-7737-4bde-8a47-606b5d305ed6 --summary --dry-run; blockers=0",
+    "push_dry_run": "not_attempted_local_first; Supabase remote fetch is final publishing only and is intentionally non-blocking here",
+    "supabase_mutation": "not_attempted"
+  },
+  "claims": [
+    {
+      "claim_id": "pd-1096-rule-viii-light-and-ventilation-claim-01",
+      "claim_text": "Section 805 sets natural-ventilation ceiling height at not less than 2.70 m and artificial-ventilation ceiling height at not less than 2.40 m, with storey/headroom and mezzanine rules.",
+      "source_support": [
+        "pd1096_2004_revised_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "pd-1096-rule-viii-light-and-ventilation-claim-02",
+      "claim_text": "Section 806 sets minimum room sizes and least dimensions for habitable rooms, kitchens, and bath/toilet rooms.",
+      "source_support": [
+        "pd1096_2004_revised_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "pd-1096-rule-viii-light-and-ventilation-claim-03",
+      "claim_text": "Section 807 sets air-space requirements for school rooms, workshops/factories/offices, and habitable rooms.",
+      "source_support": [
+        "pd1096_2004_revised_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "pd-1096-rule-viii-light-and-ventilation-claim-04",
+      "claim_text": "Section 808 requires natural window free area of at least 10% of floor area and at least 1.00 sq.m, with a separate 1/20 floor-area rule and 240 sq.mm floor for toilet, bath, laundry, and similar rooms.",
+      "source_support": [
+        "pd1096_2004_revised_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "pd-1096-rule-viii-light-and-ventilation-claim-05",
+      "claim_text": "Sections 809-811 set vent-shaft, ventilation-skylight, and artificial-ventilation requirements.",
+      "source_support": [
+        "pd1096_2004_revised_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "pd-1096-rule-viii-light-and-ventilation-linked-question-edits",
+      "claim_text": "Question edits staged locally for linked question IDs/model IDs: fe6797d2-c711-45df-9490-12c8332bb9dc, c2a1c833-81bb-458c-96a1-b169aa084667, 5afd2ad4-ba08-4f5f-8702-8cd2810b4c77, c97510b9-bac7-4744-baaf-fabc8166e9e6, a655cff8-15f3-4c6f-bca9-75bc48f4d5ec, 8f52ddf9-4582-4c78-aee0-ca1ac351ad0c, 13ae9baa-7b7b-4c6a-8bce-afb61b0d637f, 0a849610-08d5-4911-82fe-8b4a06f64a4d, 82a2f551-c3f9-44dd-a97e-d92f7f49e05c, e40268c9-de75-4811-8344-416f1f46c4b6, aebc577f-0d76-44e0-b8fa-8d24cb7802a6, d92e0195-f2d3-451e-8262-859fe95d87fe, 3a5d8ae5-f700-4f41-a3bc-b98e76999733, b18ab986-cdd8-4f4a-b580-198883189606, 36cbd85d-043d-44ca-ae30-c7b23284bde2, d95e6c0d-3baa-4d32-9b89-52abb04cd745, 3cb906cb-87d9-4da8-8354-ceb5ce3580cb, be9d0912-4dac-4c4c-a0c1-e44251d5cf4c, 3f144559-c6ba-4832-8b39-bf397649a0a6, b1afffa7-66b7-4bd9-9521-1fd231b0e642, d7afe88a-6212-4702-b2a1-41362f39d5a9, 2a37d3ea-e799-45cb-9ddc-93711a6e5792, 5923d4fc-f08a-40cc-881d-bebdb6c045eb, 117c97d6-06cf-4e24-8529-f1e40582c741, b5e815cc-ce69-4f5e-bec3-030f31db9773, 13217960-3ab8-4546-832e-80a178334bd2",
+      "audit_result": "PASS",
+      "source_support": [
+        "pd1096_2004_revised_irr"
+      ]
+    }
+  ],
+  "unsupported_or_removed_claims": [
+    "Removed stale UI component placeholders and extracted-summary text.",
+    "Removed unsupported statement that bathrooms always follow the general 10%/1.00 sq.m room-window rule.",
+    "Removed unsupported mechanical-ventilation reduction and skylight shortcuts not stated in the audited sections."
+  ],
+  "remaining_local_blockers": [],
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_batch_007_complete": true,
+    "remote_publish_status": "not_attempted_by_request",
+    "remaining_local_blockers": []
+  },
+  "local_validation": {
+    "commands": [
+      "bun run content-audit:compose -- --article-id cb947ab1-7737-4bde-8a47-606b5d305ed6 --overwrite",
+      "bun run content-audit:diff -- --article-id cb947ab1-7737-4bde-8a47-606b5d305ed6",
+      "bun run content-audit:validate -- --article-id cb947ab1-7737-4bde-8a47-606b5d305ed6 --summary --dry-run"
+    ],
+    "valid": true,
+    "blockers": 0,
+    "checked_at": "2026-05-10T23:10:00+08:00"
+  }
+}

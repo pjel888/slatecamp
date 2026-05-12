@@ -1,68 +1,32 @@
 {
   "article_id": "2ce3de97-5b64-47b3-b00e-a1deaf4a0918",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:fe4d251d850d4954302d8533464adbf32a40f9e55fbf33629a961b94dc36dd39",
-  "source_count": 5,
+  "sources_hash": "sha256:b6a505cac6c83644d01784f9089ea52b03624ee34268b1139292beb350acb1d3",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "6e72df43-717d-47e0-8c77-a71b631cce50",
+      "source_id": "chudley-greeno-handbook-b084",
       "article_id": "2ce3de97-5b64-47b3-b00e-a1deaf4a0918",
-      "label": "Modular Building Institute (MBI) Permanent Modular Construction standards",
+      "label": "Buidling Construction Handbook 7th Ed by Chudley _ Greeno",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "primary_technology_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-084-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf; raw_pdf_sha256=sha256:2efa493fac06a3efb9367111a397129ff8647778d88160bbe0174403cbb9e0bb; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.md; refined_markdown_sha256=sha256:485fe968d55ca680cbde52d24fcee5f512a63591026db19e46835f1bc530dcbb; checked_locator=Chudley/Greeno refined markdown lines 18-23, 295-305, 433-519, 782-916, and 893-916; raw PDF pages 58, 96, 163-199, 471, 495, and 511 checked by local PyMuPDF extraction.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:00.685475+00:00",
-      "updated_at": "2026-03-24T04:34:00.685475+00:00"
+      "created_at": "2026-05-12T06:55:00.000+08:00",
+      "updated_at": "2026-05-12T06:55:00.000+08:00"
     },
     {
-      "source_id": "34a3a751-29f2-4483-8d7d-2e10316352f9",
+      "source_id": "building-construction-illustrated-b084",
       "article_id": "2ce3de97-5b64-47b3-b00e-a1deaf4a0918",
-      "label": "DPWH Prefabricated Bridge Program guidelines",
+      "label": "Building Construction Illustrated, 5th Edition",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "primary_technology_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-084-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf; raw_pdf_sha256=sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md; refined_markdown_sha256=sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a; checked_locator=Building Construction Illustrated refined markdown lines 288-322, 2850-2925, 3378-3605, 4037-4073, 6504-6552, 8492, and 8578-8605; raw PDF pages 18, 105, 121-126, 137-145, 248, and 459 checked by local PyMuPDF extraction.",
+      "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:00.685475+00:00",
-      "updated_at": "2026-03-24T04:34:00.685475+00:00"
-    },
-    {
-      "source_id": "590daf71-e08c-4f3d-8cfb-2a765ad75170",
-      "article_id": "2ce3de97-5b64-47b3-b00e-a1deaf4a0918",
-      "label": "National Housing Authority (NHA) Socialized Housing specifications",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:34:00.685475+00:00",
-      "updated_at": "2026-03-24T04:34:00.685475+00:00"
-    },
-    {
-      "source_id": "0f5f1fd7-c2f1-47f0-8473-ed3c7548747b",
-      "article_id": "2ce3de97-5b64-47b3-b00e-a1deaf4a0918",
-      "label": "NBRC PNS 16:2019 Code of Practice for Timber/Bamboo Structures",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:34:00.685475+00:00",
-      "updated_at": "2026-03-24T04:34:00.685475+00:00"
-    },
-    {
-      "source_id": "405dfda2-a9e1-4770-b293-6f574f16399b",
-      "article_id": "2ce3de97-5b64-47b3-b00e-a1deaf4a0918",
-      "label": "ACI 546 Concrete Repair Guide (applicable to precast components)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 4,
-      "created_at": "2026-03-24T04:34:00.685475+00:00",
-      "updated_at": "2026-03-24T04:34:00.685475+00:00"
+      "created_at": "2026-05-12T06:55:00.000+08:00",
+      "updated_at": "2026-05-12T06:55:00.000+08:00"
     }
   ]
 }

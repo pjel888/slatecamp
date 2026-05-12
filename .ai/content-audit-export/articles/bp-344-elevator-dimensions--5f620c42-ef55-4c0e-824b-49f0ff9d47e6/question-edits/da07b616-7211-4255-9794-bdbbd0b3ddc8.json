@@ -1,0 +1,57 @@
+{
+  "question_id": "da07b616-7211-4255-9794-bdbbd0b3ddc8",
+  "baseline_hash": "sha256:f5ba7b7ae4b3cd987725df04d209a22bd6217e010d7c671a829d659c91dcd50d",
+  "action": "replace",
+  "reason": "source-audited-article-batch-032-local-first aligned linked accessibility/code question with audited local source language for bp-344-elevator-dimensions.",
+  "approved_by": "codex-local-source-audit-batch-032",
+  "approved_at": "2026-05-11T09:12:50+08:00",
+  "source_audit_support": {
+    "parent_article_id": "5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+    "parent_article_slug": "bp-344-elevator-dimensions",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "BP 344 2024 Revised IRR lines 990-1037",
+    "checked_sources": [
+      {
+        "source_id": "bp-344-2024-revised-irr-ncda-local",
+        "label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+        "source_locator": "BP 344 2024 Revised IRR refined markdown lines 317-356, 362-511, 891-951, 990-1037, 1193-1211, 1446-1458, 1529-1545",
+        "checked_markdown_lines": [
+          "BP 344 2024 Revised IRR refined markdown lines 317-356, 362-511, 891-951, 990-1037, 1193-1211, 1446-1458, 1529-1545"
+        ]
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer key, rationale, explanation, and code citation rewritten to the audited local article scope."
+  },
+  "proposed": {
+    "text": "At what height is the car operating panel installed?",
+    "options": [
+      {
+        "id": "a",
+        "text": "900 mm on center from the floor"
+      },
+      {
+        "id": "b",
+        "text": "1200 mm only"
+      },
+      {
+        "id": "c",
+        "text": "2200 mm only"
+      },
+      {
+        "id": "d",
+        "text": "At the ceiling"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "BP 344 states the car operating panel is installed at 900 mm on center.",
+    "explanation": "BP 344 states the car operating panel is installed at 900 mm on center.",
+    "code_citation": "BP 344 2024 Revised IRR lines 990-1037"
+  }
+}

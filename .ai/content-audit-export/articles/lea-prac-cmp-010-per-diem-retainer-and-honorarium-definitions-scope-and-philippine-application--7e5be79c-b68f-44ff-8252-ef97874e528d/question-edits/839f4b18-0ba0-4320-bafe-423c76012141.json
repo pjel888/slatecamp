@@ -1,0 +1,86 @@
+{
+  "question_id": "839f4b18-0ba0-4320-bafe-423c76012141",
+  "baseline_hash": "sha256:2a2cc781c4f9e3484e6dba607da9cceab957fbb20cfa87dbdf88a30b6933944e",
+  "action": "replace",
+  "reason": "source-audited-article-batch-027-local-first aligned linked question with audited local UAP/SPP source language for lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application.",
+  "approved_by": "codex-local-source-audit-batch-027",
+  "approved_at": "2026-05-11T00:00:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "7e5be79c-b68f-44ff-8252-ef97874e528d",
+    "parent_article_slug": "lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UAP Standards refined markdown lines 414-457 and 1608-1642; SPP 202 local raw PDF checked",
+    "checked_markdown_lines": [
+      "UAP Standards lines 414-457",
+      "UAP Standards lines 459-501",
+      "UAP Standards lines 1608-1642",
+      "SPP 202 local raw PDF checked",
+      "UAP Standards lines 414-501 used for readable source locators"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "uap-standards-spp202-compensation-local",
+        "label": "UAP Document Standards of Professional Practice - SPP 202 compensation and service conditions",
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "source_type": "professional_practice_pdf",
+        "source_locator": "UAP Standards refined markdown lines 414-501 and 1608-1642",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "checked_markdown_lines": [
+          "UAP Standards lines 414-457",
+          "UAP Standards lines 459-501",
+          "UAP Standards lines 1608-1642"
+        ],
+        "use": "Local UAP Standards raw PDF and refined markdown checked for SPP 202 compensation methods, reimbursables, owner responsibilities, additional services, abandoned projects, and PCA compensation terms.",
+        "local_source_checked": true
+      },
+      {
+        "source_id": "spp202-regular-design-services-local",
+        "label": "SPP 202 - Regular Design Services",
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "source_type": "professional_practice_pdf",
+        "source_locator": "SPP 202 local raw PDF; UAP Standards refined markdown lines 414-501 used as readable local locator",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+        "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+        "refined_markdown_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+        "checked_markdown_lines": [
+          "SPP 202 local raw PDF checked",
+          "UAP Standards lines 414-501 used for readable source locators"
+        ],
+        "use": "Local SPP 202 raw PDF checked as the regular-design-services source counterpart; UAP Standards refined markdown provides readable local line locators for the same professional-practice provisions.",
+        "local_source_checked": true
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the local source-audited article scope."
+  },
+  "proposed": {
+    "text": "A client asks the architect to attend an out-of-town ocular inspection. Which source-safe fee treatment fits SPP 202?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Per diem or honorarium plus reimbursable project expenses."
+      },
+      {
+        "id": "b",
+        "text": "No compensation because it is only attendance."
+      },
+      {
+        "id": "c",
+        "text": "A contractor retention deduction."
+      },
+      {
+        "id": "d",
+        "text": "Automatic conversion to percentage-of-PCC compensation."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "SPP 202 lists ocular inspections among services that may be paid by per diem or honorarium plus reimbursables.",
+    "explanation": "SPP 202 lists ocular inspections among services that may be paid by per diem or honorarium plus reimbursables.",
+    "code_citation": "UAP Standards SPP 202 lines 445-453",
+    "model_id": "BATCH-027-lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application-006"
+  }
+}

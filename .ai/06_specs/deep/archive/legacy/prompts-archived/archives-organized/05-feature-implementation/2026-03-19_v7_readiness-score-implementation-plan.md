@@ -1,7 +1,7 @@
 # SlateCamp — Readiness Score: Anti-Inflation Implementation Plan
-**For:** Claude Code  
-**Date:** 2026-03-19  
-**Stack:** Next.js 15 App Router · Supabase · TypeScript  
+**For:** Claude Code
+**Date:** 2026-03-19
+**Stack:** Next.js 15 App Router · Supabase · TypeScript
 **Files scope:** 1 migration · 3 modified files · 1 new file
 
 ---
@@ -137,7 +137,7 @@ COMMENT ON COLUMN public.user_global_stats.readiness_sub_scores IS
 
 -- ─────────────────────────────────────────────────────────────
 -- 3. Replace snapshot trigger to use real sub_scores
--- The old trigger wrote '{}' for sub_scores every time. 
+-- The old trigger wrote '{}' for sub_scores every time.
 -- The new one reads from readiness_sub_scores which the app now populates.
 -- ─────────────────────────────────────────────────────────────
 
@@ -952,5 +952,5 @@ SELECT prosrc FROM pg_proc WHERE proname = 'snapshot_readiness_on_session_comple
 
 ---
 
-*SlateCamp Readiness Score Anti-Inflation Implementation Plan*  
+*SlateCamp Readiness Score Anti-Inflation Implementation Plan*
 *DB Architect + Philip (Founder) · 2026-03-19*

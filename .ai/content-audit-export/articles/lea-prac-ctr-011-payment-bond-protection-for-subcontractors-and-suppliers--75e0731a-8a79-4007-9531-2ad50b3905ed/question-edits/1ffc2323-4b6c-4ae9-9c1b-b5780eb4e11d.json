@@ -1,0 +1,87 @@
+{
+  "question_id": "1ffc2323-4b6c-4ae9-9c1b-b5780eb4e11d",
+  "baseline_hash": "sha256:357ee6880aa171d5aff81bc00da58ef16224a39b9775aef4c972cb5fadd6abe8",
+  "action": "replace",
+  "reason": "source-audited-article-batch-029-local-first rewrote this linked question to source-safe local form for lea-prac-ctr-011-payment-bond-protection-for-subcontractors-and-suppliers.",
+  "approved_by": "codex-local-source-audit-batch-029",
+  "approved_at": "2026-05-11T16:20:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "75e0731a-8a79-4007-9531-2ad50b3905ed",
+    "parent_article_slug": "lea-prac-ctr-011-payment-bond-protection-for-subcontractors-and-suppliers",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UAP Document 301 refined markdown lines 488-493; CIAP Document 102 refined markdown lines 637-652, 813-814, 846-858",
+    "checked_markdown_lines": [
+      "UAP Document 301 lines 488-493",
+      "CIAP Document 102 lines 637-652",
+      "CIAP Document 102 lines 813-814",
+      "CIAP Document 102 lines 846-858"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "source_id": "uap-document-301-general-conditions-local",
+        "locator": "UAP Document 301 refined markdown lines 488-493"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+        "source_id": "uap-document-301-general-conditions-local",
+        "locator": "UAP Document 301 refined markdown lines 488-493"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+        "sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+        "source_id": "ciap-document-102-private-construction-contract-local",
+        "locator": "CIAP Document 102 refined markdown lines 637-652, 813-814, 846-858"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+        "sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
+        "source_id": "ciap-document-102-private-construction-contract-local",
+        "locator": "CIAP Document 102 refined markdown lines 637-652, 813-814, 846-858"
+      }
+    ],
+    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+  },
+  "proposed": {
+    "text": "How does UAP Document 301 define a payment bond?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Security furnished by the contractor and surety as a guarantee that obligations arising from the contract will be paid"
+      },
+      {
+        "id": "b",
+        "text": "Security for accepting the lowest bidder"
+      },
+      {
+        "id": "c",
+        "text": "A one-year guarantee of workmanship after posting"
+      },
+      {
+        "id": "d",
+        "text": "An architect's intellectual property document"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "Correct because it follows UAP Document 301 lines 488-493. The other options change the document, party, timing, amount, or legal effect stated in the checked local source.",
+    "explanation": "Use UAP Document 301 lines 488-493 for this Batch 029 source-safe replacement.",
+    "code_citation": "UAP Document 301 lines 488-493",
+    "bloom_level": "remember",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "contracts",
+      "source-audited-article-batch-029-local-first"
+    ],
+    "difficulty": 0.38,
+    "is_assessment": false,
+    "model_id": "BATCH-029-lea-prac-ctr-011-payment-bond-protection-for-subcontractors-and-suppliers-001"
+  }
+}

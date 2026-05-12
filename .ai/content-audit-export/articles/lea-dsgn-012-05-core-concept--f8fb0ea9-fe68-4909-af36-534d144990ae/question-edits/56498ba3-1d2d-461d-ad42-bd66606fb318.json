@@ -1,0 +1,128 @@
+{
+  "question_id": "56498ba3-1d2d-461d-ad42-bd66606fb318",
+  "baseline_hash": "sha256:e9fadd550cc357c2df41e3421a59eb6b47f0c6e7fb674045206247c49bba0ca1",
+  "action": "replace",
+  "reason": "source-audited-article-batch-073-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes stale numeric, legal, or unsupported article claims where present.",
+  "approved_by": "codex-local-first-batch-073",
+  "approved_at": "2026-05-12T01:46:28+08:00",
+  "source_audit_support": {
+    "parent_article_id": "f8fb0ea9-fe68-4909-af36-534d144990ae",
+    "parent_article_slug": "lea-dsgn-012-05-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "BCI refined markdown lines 245-272, 284-288, 333-356, 360, 733-737, 747-755, and 1328-1336; raw PDF pages 11, 17, 20, 31, 46, and 473-475 checked by local PyMuPDF extraction; MEEB refined markdown lines 1045-1087, 1160-1195, 1268-1275, and 2211-2217; raw PDF pages 7, 30-33, 45, 63, 348, 970, and 1106 checked by local PyMuPDF extraction; Mechanical and Electrical Systems refined markdown lines 389-405, 437-459, 506-516, and 550; raw PDF pages 2, 12-13, and 18 checked by local PyMuPDF extraction; PD 1096 refined markdown lines 560-570 and 2085-2089; raw PDF pages 23-24, 27, 33, and 352 checked by local PyMuPDF extraction",
+    "checked_markdown_lines": [
+      "BCI lines 245-272",
+      "BCI lines 284-288",
+      "BCI lines 333-356",
+      "BCI line 360",
+      "BCI lines 733-737",
+      "BCI lines 747-755",
+      "BCI lines 1328-1336",
+      "MEEB lines 1045-1087",
+      "MEEB lines 1160-1195",
+      "MEEB lines 1268-1275",
+      "MEEB lines 2211-2217",
+      "Mechanical and Electrical Systems lines 389-405",
+      "Mechanical and Electrical Systems lines 437-459",
+      "Mechanical and Electrical Systems lines 506-516",
+      "Mechanical and Electrical Systems line 550",
+      "PD 1096 lines 560-570",
+      "PD 1096 lines 2085-2089"
+    ],
+    "checked_raw_pdf_pages": [
+      "BCI raw PDF pages 11, 17, 20, 31, 46, and 473-475",
+      "MEEB raw PDF pages 7, 30-33, 45, 63, 348, 970, and 1106",
+      "Mechanical and Electrical Systems raw PDF pages 2, 12-13, and 18",
+      "PD 1096 raw PDF pages 23-24, 27, 33, and 352"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "building-construction-illustrated-b073",
+        "label": "Building Construction Illustrated 5th Edition",
+        "source_type": "professional_reference_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "BCI refined markdown lines 245-272, 284-288, 333-356, 360, 733-737, 747-755, and 1328-1336; raw PDF pages 11, 17, 20, 31, 46, and 473-475 checked by local PyMuPDF extraction",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a"
+      },
+      {
+        "source_id": "meeb-design-context-b073",
+        "label": "Mechanical and Electrical Equipment for Buildings - Grondzik et al. 2010",
+        "source_type": "professional_reference_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Mechanical and Electrical Equipment for Buildings - W. Grondzik, et al., (Wiley, 2010) BBS.pdf",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Mechanical and Electrical Equipment for Buildings - W. Grondzik, et al., (Wiley, 2010) BBS.md",
+        "source_locator": "MEEB refined markdown lines 1045-1087, 1160-1195, 1268-1275, and 2211-2217; raw PDF pages 7, 30-33, 45, 63, 348, 970, and 1106 checked by local PyMuPDF extraction",
+        "raw_pdf_sha256": "sha256:3dd95410e968c57f6bd7646a9582b9bd1f7a97335c56e1486536b78d0864aa5e",
+        "refined_markdown_sha256": "sha256:d0650a86c65bb17008428fc309d59e388a372d6450da9c4b1464454f1ef384f9"
+      },
+      {
+        "source_id": "mechanical-electrical-systems-b073",
+        "label": "Mechanical and Electrical Systems",
+        "source_type": "professional_reference_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Mechanical and Electrical Systems.pdf",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Mechanical and Electrical Systems.md",
+        "source_locator": "Mechanical and Electrical Systems refined markdown lines 389-405, 437-459, 506-516, and 550; raw PDF pages 2, 12-13, and 18 checked by local PyMuPDF extraction",
+        "raw_pdf_sha256": "sha256:b657bfd1e3cdaceb0632ef105f7604df2df2667f1b75a1534762e1dae28ec5d9",
+        "refined_markdown_sha256": "sha256:e041473193aa7cd57d017dcec252bd84de7e1589bd831ae22b2a5c7591e1daed"
+      },
+      {
+        "source_id": "pd1096-rirr-2004-b073",
+        "label": "PD 1096 2004 Revised IRR - National Building Code",
+        "source_type": "primary_law_irr_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 refined markdown lines 560-570 and 2085-2089; raw PDF pages 23-24, 27, 33, and 352 checked by local PyMuPDF extraction",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, and citation rewritten to the Batch 073 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "What is a transformer vault?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A fire/service room concept housing a transformer and auxiliary equipment for a large building."
+      },
+      {
+        "id": "b",
+        "text": "A stormwater pond."
+      },
+      {
+        "id": "c",
+        "text": "A contour interval."
+      },
+      {
+        "id": "d",
+        "text": "A room name for programming only."
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Correct. This option follows the checked local raw-source evidence.",
+      "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+      "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+      "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+      "correct": "The checked Mechanical and Electrical Systems source defines transformer vault.",
+      "takeaway": "Use the checked local source condition before applying the rule."
+    },
+    "explanation": "The checked Mechanical and Electrical Systems source defines transformer vault.",
+    "code_citation": "BCI refined markdown lines 245-272, 284-288, 333-356, 360, 733-737, 747-755, and 1328-1336; raw PDF pages 11, 17, 20, 31, 46, and 473-475 checked by local PyMuPDF extraction; MEEB refined markdown lines 1045-1087, 1160-1195, 1268-1275, and 2211-2217; raw PDF pages 7, 30-33, 45, 63, 348, 970, and 1106 checked by local PyMuPDF extraction; Mechanical and Electrical Systems refined markdown lines 389-405, 437-459, 506-516, and 550; raw PDF pages 2, 12-13, and 18 checked by local PyMuPDF extraction; PD 1096 refined markdown lines 560-570 and 2085-2089; raw PDF pages 23-24, 27, 33, and 352 checked by local PyMuPDF extraction",
+    "bloom_level": "understand",
+    "application_context": "professional_practice",
+    "practice_context": [
+      "source-audited-local-first-batch-073"
+    ],
+    "difficulty": 0.55,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false
+  }
+}

@@ -1,104 +1,34 @@
-
-
 ## Board Exam Quick Check
 
-Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+For roof-truss questions, first identify whether the item is asking about the truss form, the load path, the point of support, or the required bracing. Do not answer from memorized local span tables unless the item itself gives the span or source.
 
-**Common mistake:** treating a familiar keyword in **Lea Matl 006 02 Core Concept** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## What You Need to Know for the LEA
+
 ## Learning Goal
 
-Identify roofing system components — underlayment, flashings, valleys, ridges, eaves, gutters, vents — and explain how each component contributes to weather-tightness, thermal performance, and durability of the roof assembly.
+Explain how roof trusses use chords, web members, panel points, purlins, connectors, and bracing to carry roof loads in a stable triangulated assembly.
+
 ## Core Concept
 
-Roof trusses transfer roof loads through triangulated geometry, eliminating interior supports and creating usable attic space.
-Five primary truss types serve residential and light commercial construction:
+A roof truss is a triangulated framework. In steel trusses, BCI describes structural angles, tees, wide-flange shapes, or tubing connected by welding, bolting, and gusset plates. In wood trusses, BCI describes layered members joined at panel points with split-ring connectors for heavier trusses, and pre-engineered trussed rafters joined with metal-toothed plate connectors.
 
-1. **King Post**: Uses a single vertical member with two diagonal struts, spanning 5–7 meters; optimal for attic storage.
-2. **Queen Post**: Substitutes the center vertical with two verticals and diagonal struts, spanning 7–10 meters.
-3. **Fink (or Belgian)**: Employs W-pattern diagonals (two diagonals per panel), spanning 9–15 meters; most common in residential construction.
-4. **Howe**: Inverts the diagonal pattern (diagonals slope inward toward the peak), spanning 10–20 meters; used in wider spans.
-5. **Pratt**: Uses vertical members between diagonals sloping outward, spanning 10–25 meters; optimal for heavy loads.
+The exam-safe load-path rule is simple: loads should be applied at panel points. If a purlin bears between panel points, the top chord is exposed to local bending in addition to truss action. That is why purlin location, bearing, and joint geometry matter as much as the truss name.
 
-Supporting members include rafters (inclined beams from peak to eave), ridgeboard (horizontal tie at peak), collar ties (tie-beams reducing rafter bending moment), purlins (horizontal members supporting rafters between trusses), and hip/valley rafters.
-Standard truss spacing is 600 mm on-center (OC) for residential construction, with loads transferred through rafters to trusses.
-Span-to-depth ratio (span divided by truss height) typically ranges from 4:1 to 8:1 for residential structures;
-shallower ratios (4:1) reduce deflection but increase member sizes and cost.
+BCI identifies common truss configurations by web behavior: Warren trusses use inclined web members forming a series of triangles; Belgian trusses use inclined web members; Fink trusses are Belgian trusses with subdiagonals that shorten compression web members near the center; Pratt trusses have vertical web members in compression and diagonal web members in tension; Howe trusses have vertical web members in tension and diagonal web members in compression.
 
-Steel trusses offer superior strength-to-weight and require minimal connections (bolted or welded);
-timber trusses are labor-intensive but allow field repair and provide fire resistance when properly charred.
-NSCP 2015 requires design for basic wind speed $V = 20\text{--}50\text{ m/s}$ depending on the typhoon zone.
-Collar ties, commonly positioned in the upper third of the truss height as a design recommendation, reduce lateral thrust on walls and prevent rafter spreading in high-wind regions.
+Bracing is part of the system. Heavier wood trusses may need vertical sway bracing between adjacent trusses and horizontal cross-bracing when roof diaphragm action is not adequate. Wood trussed rafters require lateral bracing perpendicular to the truss plane during installation and after erection. BCI also notes that truss depth can accommodate ceilings, thermal insulation, and electrical or mechanical equipment.
 
-
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-roof-assembly-sections", layout="single", type="image", status="placeholder", alt="Cross-section of a complete roof assembly showing underlayment, flashings, valleys, ridges, eaves, gutters, and vents in sequence", caption="Future diagram: roof assembly cross-section — component layering from deck to finish", suggestedAsset="Annotated cross-section of roof assembly with component callouts", placementIntent="Shows how all roofing components work together for weather-tightness"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-## Key Provisions
-
-| Property | Value | Standard | LEA Relevance |
-| ------------------------ | ------------------------------ | --------------------- | ----------------------------------------- |
-| Standard truss spacing | 600 mm OC | NSCP 2015 | Residential load distribution |
-| Span-to-depth ratio | 4:1 to 8:1 | Design Practice | Deflection and cost balance |
-| King Post max span | 5–7 m | Geometry | Attic storage application |
-| Fink truss typical span | 9–15 m | Design Guide | Most common residential type |
-| Howe truss typical span | 10–20 m | Design Guide | Wider spans |
-| Pratt truss typical span | 10–25 m | Design Guide | Heavy-load applications |
-| Rafter deflection limit | $L/240$ | NSCP 2015 | Serviceability criterion |
-| Collar tie placement | Upper 1/3 height | Design Recommendation | Reduces horizontal thrust |
-| Wind speed zones (PH) | $V = 20\text{--}50\text{ m/s}$ | NSCP 2015 | Typhoon zone dependency |
-| Timber torque | 40–60 N·m | Bolting Standards | Preload consistency |
-
-## Philippine Construction Context
-
-Philippine residential construction predominantly uses Fink and King Post trusses fabricated from dipterocarp or imported pine per local timber standards.
-Designers must verify specific timber grade and strength values against NSCP 2015 Chapter 6 (Timber) allowable stress tables.
-Truss spacing of 600 mm OC accommodates standard corrugated GI roofing sheet width (1000 mm), with purlins placed at 1200–1500 mm spacing.
-NSCP 2015 requires design for basic wind speed according to typhoon zone classification.
-Coastal and exposed regions require site-specific wind analysis per NSCP 2015 Section 207, as seismic loads rarely govern roof design compared to wind.
-Steel trusses are gaining market share in Metro Manila for industrial construction due to factory precision and reduced on-site labor.
-Collar ties are recommended in high-wind zones ($V > 30\text{ m/s}$) to prevent lateral thrust failure and rafter spreading.
-
-
-[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-roof-ventilation-diagram", layout="single", type="image", status="placeholder", alt="Cross-section of roof assembly showing ventilation paths: soffit intake vents, ridge vents, and turbine vents with air flow arrows", caption="Future diagram: roof ventilation — soffit intake, ridge vent, and turbine vent air flow", suggestedAsset="Cross-section diagram of roof ventilation system", placementIntent="Shows proper roof ventilation design for tropical climate"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 ## How It's Tested
 
-**Pattern 1: Truss Type Identification** — "A roof truss has a single vertical member from the peak and two diagonal struts to the feet. What is the truss type?"
-(Answer: King Post; tests geometric recognition.)
-
-**Pattern 2: Span-to-Depth Ratio** — "A Fink truss spans 12 meters with 1.8 meter height. Calculate the span-to-depth ratio and assess deflection risk."
-(Answer: $12 / 1.8 = 6.67:1$, acceptable for residential; ratio $>8:1$ risks excessive deflection.)
-
-**Pattern 3: Wind Load Design** — "A residential roof in Batanes ($V = 45\text{ m/s}$) requires uplift bracing. What is the critical member subjected to tension?"
-(Answer: Collar ties and diagonal web members; compression reversal during suction governs design.)
-
-**Pattern 4: Member Sizing** — "Purlins spacing 1500 mm apart support corrugated roofing ($2\text{ kN/m}^2$). Calculate bending moment."
-(Answer: $w = 2\text{ kN/m}^2 \times 1.5\text{ m} = 3\text{ kN/m}$; $M = wL^2/8 = 3 \times 1.5^2 / 8 = 0.84\text{ kN}\cdot\text{m}$. Select section per NSCP bending stress allowables.)
-
-[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Memorize truss types by span: King Post 5–7 m, Fink 9–15 m, Howe 10–20 m, Pratt 10–25 m. In Philippine wind zones, collar ties in the upper 1/3 are recommended for $V > 30\text $ to control lateral thrust.
-[/SLATECAMP_UI_BLOCK]
+LEA-style items usually test recognition of the truss type or the consequence of placing loads away from panel points. If the question says the purlin does not bear at a panel point, choose the answer about local bending in the top chord. If the question compares Pratt and Howe trusses, track which members are in tension and compression.
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
-Extracted summary:
-- Props: mistake="Assuming all trusses can span equivleant distances; confusing Queen Post (7–10 m) with Fink (9–15 m) capability.", correction="Truss span depends on geometry. Fink W-pattern distributes load more efficiently than Queen Post verticals. Span capability increases with geometric complexity."
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-ibutary rafter load alone without wind multipliers',
- ]}
-/>
+- Treating a truss as a simple beam and ignoring panel-point loading.
+- Memorizing unchecked residential span ranges instead of using the source-supported truss behavior.
+- Confusing Fink with any W-shaped truss without checking the subdiagonals.
+- Omitting lateral bracing even when the question describes installation or adjacent trusses.
+- Assuming the ceiling or services can be placed anywhere without respecting truss depth and web spaces.
 
 ## Related Articles
 

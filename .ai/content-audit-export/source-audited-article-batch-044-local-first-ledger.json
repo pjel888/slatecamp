@@ -1,0 +1,370 @@
+{
+  "batch_id": "source-audited-article-batch-044-local-first",
+  "batch_number": 44,
+  "generated_at": "2026-05-11T08:34:00.000Z",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "local_only": true,
+  "supabase_push": "not_attempted",
+  "deploy": "not_attempted",
+  "commit": "not_attempted",
+  "inherited_blocker_status": "Batch 043 blockers=0",
+  "selection_rule": "five high-value building utilities/code clusters with linked questions and local DOE, Salvan, RA 9514, and PEC raw PDF families, excluding IDs recorded in source-audited Batch 001 through Batch 043 artifacts",
+  "counts": {
+    "selected_articles": 5,
+    "linked_questions": 70,
+    "question_edits": 70,
+    "source_rows": 13,
+    "unique_raw_pdfs": 4,
+    "json_parse": 125,
+    "source_hash_checks": 26,
+    "marker_matches": 0,
+    "stale_compose_error_files": 0
+  },
+  "source_evidence": [
+    "DOE Energy Conserving Design Guidelines local raw PDF family for ventilation controls, tropical ventilation, cross-ventilation, hood formulas, and fresh-air tables.",
+    "George Salvan Architectural Utilities 2 local raw PDF family for ventilation definitions, mechanical/electrical space planning, kitchen ventilation, and fire alarm device definitions.",
+    "RA 9514 Revised IRR 2019 local raw PDF family for kitchen hood fire suppression, fire detection and alarm rules, sprinkler supervision, maintenance, water-flow alarms, and occupancy egress limits.",
+    "Philippine Electrical Code local raw PDF family for electrical working space, headroom, illumination, and dedicated electrical space where electrical equipment is present."
+  ],
+  "validation": {
+    "compose": {
+      "status": "PASS",
+      "passed": 5,
+      "total": 5,
+      "command": "bun run content-audit:compose -- --article-id <id> --overwrite --strict"
+    },
+    "diff": {
+      "status": "PASS",
+      "passed": 5,
+      "total": 5,
+      "command": "bun run content-audit:diff -- --article-id <id> --strict --summary"
+    },
+    "validate": {
+      "status": "PASS",
+      "passed": 5,
+      "total": 5,
+      "warnings": "component-usage.json missing warnings only",
+      "command": "bun run content-audit:validate -- --article-id <id> --summary"
+    },
+    "ui_block_validation": {
+      "status": "PASS",
+      "passed": 5,
+      "total": 5,
+      "command": "bun run content-audit:ui-block-edits -- --article-id <id>"
+    },
+    "scoped_json_parse": {
+      "status": "PASS",
+      "parsed_files": 125,
+      "failures": []
+    },
+    "marker_scan": {
+      "status": "PASS",
+      "scanned_files": 90,
+      "matches": []
+    },
+    "source_hash_checks": {
+      "status": "PASS",
+      "checked": 26,
+      "failures": []
+    },
+    "question_edit_count_checks": {
+      "status": "PASS",
+      "checks": [
+        {
+          "article_id": "903c66da-2864-48b0-b638-2ed218a173e2",
+          "slug": "lea-util-002-03-core-ventilation-standards",
+          "expected": 15,
+          "actual": 15,
+          "pass": true
+        },
+        {
+          "article_id": "7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db",
+          "slug": "lea-util-002-05-kitchen-exhaust-hood-classification",
+          "expected": 15,
+          "actual": 15,
+          "pass": true
+        },
+        {
+          "article_id": "490d7fe6-8f50-404e-a323-1d9a99139869",
+          "slug": "lea-util-002-09-mechanical-room-location-and-siting",
+          "expected": 15,
+          "actual": 15,
+          "pass": true
+        },
+        {
+          "article_id": "881027cd-2be0-4c93-af86-4f801ec16882",
+          "slug": "lea-util-005-03-design-considerations-and-best-practices",
+          "expected": 15,
+          "actual": 15,
+          "pass": true
+        },
+        {
+          "article_id": "ad7d9469-c7a1-4c62-864d-728f38650891",
+          "slug": "lea-dsgn-008-03-core-concept",
+          "expected": 10,
+          "actual": 10,
+          "pass": true
+        }
+      ],
+      "failures": []
+    },
+    "stale_compose_error_check": {
+      "status": "PASS",
+      "stale_compose_error_files": []
+    },
+    "targeted_tests": {
+      "status": "PASS",
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "tests": 34,
+      "expect_calls": 328
+    },
+    "scoped_git_diff_check": {
+      "status": "PASS",
+      "command": "git diff --check -- <Batch 044 article folders, report, ledger, scoped checks, handoff, sync-state, validation-report, ui-block-edit-validation>"
+    }
+  },
+  "blockers": [],
+  "next_batch_readiness": "READY_FOR_BATCH_045_SELECTION",
+  "articles": [
+    {
+      "ordinal": 1,
+      "article_id": "903c66da-2864-48b0-b638-2ed218a173e2",
+      "slug": "lea-util-002-03-core-ventilation-standards",
+      "title": "Ventilation standards in the Philippines",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/question-edits",
+      "linked_questions": 15,
+      "question_edits": 15,
+      "source_rows": 2,
+      "candidate_hash": "sha256:1cf561a34cea2eabffd65807d2ed424634c80472a0791528992032d6b55a3053",
+      "normalized_hash": "sha256:1cf561a34cea2eabffd65807d2ed424634c80472a0791528992032d6b55a3053",
+      "original_hash": "sha256:6aed7bc5dd06229b5653bf9c700cf5faa74676a83e878c88b43862e4bd9a2679",
+      "sources_hash": "sha256:faab5ed72751407779e330d67d7bcfb059b094f8a5a416b230f9b8f95220056b",
+      "gates": {
+        "compose": "PASS",
+        "diff": "PASS",
+        "validate": "PASS",
+        "ui_block_validation": "PASS",
+        "source_audit": "PASS"
+      },
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/ui-blocks.json"
+      ],
+      "question_edit_files": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/question-edits/086186b1-ce6c-422b-9f71-d9d075a22f04.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/question-edits/40e680d8-8ee7-46dd-80ca-c678d73ea63c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/question-edits/4deaf49c-4833-4415-bd02-225efacc8523.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/question-edits/68608e1a-1095-4beb-bec9-623a840930c5.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/question-edits/6e26901e-52b7-4ab6-9722-be89f6455a19.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/question-edits/71ee0b56-53f1-46a3-9612-2db00e49e754.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/question-edits/7242f16d-6ca8-4993-a228-2ee5b78154e2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/question-edits/7336ac57-ca19-4981-a279-af16a8456366.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/question-edits/7fc68c58-4c59-47a6-b932-5ccb07da8759.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/question-edits/a0b03c52-6ea1-471f-a70a-429cebccca31.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/question-edits/b576c52e-01be-4aa6-941b-2ae47ee15dd0.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/question-edits/cf36d6a2-3f9a-4a56-a5d9-90b255759c84.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/question-edits/d74562c2-7c59-4b22-9f47-3151d48e343d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/question-edits/d85c7b82-227c-4982-a327-4589345040de.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/question-edits/f4d29277-a92d-48ad-886e-1945ad8aa918.json"
+      ]
+    },
+    {
+      "ordinal": 2,
+      "article_id": "7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db",
+      "slug": "lea-util-002-05-kitchen-exhaust-hood-classification",
+      "title": "Kitchen exhaust systems and special mechanical systems are",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/question-edits",
+      "linked_questions": 15,
+      "question_edits": 15,
+      "source_rows": 3,
+      "candidate_hash": "sha256:4d78b27411213c1f7c133255626785be75450eb57fa7a062b8dbea7d37976836",
+      "normalized_hash": "sha256:4d78b27411213c1f7c133255626785be75450eb57fa7a062b8dbea7d37976836",
+      "original_hash": "sha256:05f9eae82ebedbd1997912d7d5c4325797175197667073aa8b7f32ab1aa8a1d3",
+      "sources_hash": "sha256:85c0df3f0075df268d767d25416569b3835735a30a09299f452644aff5413d94",
+      "gates": {
+        "compose": "PASS",
+        "diff": "PASS",
+        "validate": "PASS",
+        "ui_block_validation": "PASS",
+        "source_audit": "PASS"
+      },
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/ui-blocks.json"
+      ],
+      "question_edit_files": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/question-edits/1b627fa4-6e3a-4c0d-b3d2-e83336165852.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/question-edits/1c020ad2-f59c-41e9-a49b-c17344744519.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/question-edits/2fdee31b-f29c-45bd-a20f-69a63ae9093e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/question-edits/3671cda4-f7ce-451f-bf11-186ee401d1c1.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/question-edits/3b1579a1-568b-4160-8258-cf71359a4d12.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/question-edits/3f2a2294-8326-479a-8e17-077239a91590.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/question-edits/4c94d775-eac3-442e-b2fd-0ebe1ab0f73c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/question-edits/4c9f06c3-ebbf-46fb-b139-70e442ca4506.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/question-edits/500cbb9e-6452-43a0-a248-404d3aa33bbc.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/question-edits/59a706bc-816e-469c-b9b4-aa4586e5bf62.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/question-edits/5a621930-5a2d-4e46-a854-aaa04873a04c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/question-edits/7bef4fc3-243c-46cc-a7ad-a3cd9b04c05a.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/question-edits/80089fb4-11b5-47b3-a418-ceba902e36e5.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/question-edits/e59f3052-9238-4dd4-af58-ac6eea974dc3.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db/question-edits/e7983e74-f0dd-40d0-8c3b-c1c0f8260ccf.json"
+      ]
+    },
+    {
+      "ordinal": 3,
+      "article_id": "490d7fe6-8f50-404e-a323-1d9a99139869",
+      "slug": "lea-util-002-09-mechanical-room-location-and-siting",
+      "title": "Mechanical rooms",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-util-002-09-mechanical-room-location-and-siting--490d7fe6-8f50-404e-a323-1d9a99139869",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-09-mechanical-room-location-and-siting--490d7fe6-8f50-404e-a323-1d9a99139869",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-util-002-09-mechanical-room-location-and-siting--490d7fe6-8f50-404e-a323-1d9a99139869/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-09-mechanical-room-location-and-siting--490d7fe6-8f50-404e-a323-1d9a99139869/question-edits",
+      "linked_questions": 15,
+      "question_edits": 15,
+      "source_rows": 4,
+      "candidate_hash": "sha256:32b3be17c31e22319e94579182886fa2bd634a60bf2dce77ffc4f8f25c3bab4b",
+      "normalized_hash": "sha256:32b3be17c31e22319e94579182886fa2bd634a60bf2dce77ffc4f8f25c3bab4b",
+      "original_hash": "sha256:264ac1f220e93dff45a2defc25b4bfc41986b49129b1f5e2981bea89e5b41a01",
+      "sources_hash": "sha256:d30966103f4b9e644e779f013a8cce6b3043c8325a14db26311c92a7fd3d622b",
+      "gates": {
+        "compose": "PASS",
+        "diff": "PASS",
+        "validate": "PASS",
+        "ui_block_validation": "PASS",
+        "source_audit": "PASS"
+      },
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-09-mechanical-room-location-and-siting--490d7fe6-8f50-404e-a323-1d9a99139869/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-09-mechanical-room-location-and-siting--490d7fe6-8f50-404e-a323-1d9a99139869/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-09-mechanical-room-location-and-siting--490d7fe6-8f50-404e-a323-1d9a99139869/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-09-mechanical-room-location-and-siting--490d7fe6-8f50-404e-a323-1d9a99139869/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-09-mechanical-room-location-and-siting--490d7fe6-8f50-404e-a323-1d9a99139869/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-09-mechanical-room-location-and-siting--490d7fe6-8f50-404e-a323-1d9a99139869/ui-blocks.json"
+      ],
+      "question_edit_files": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-09-mechanical-room-location-and-siting--490d7fe6-8f50-404e-a323-1d9a99139869/question-edits/0181170f-da24-4a0f-ac1e-22841f9dfc55.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-09-mechanical-room-location-and-siting--490d7fe6-8f50-404e-a323-1d9a99139869/question-edits/2437d019-381b-4f73-a157-5a340dcccbc5.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-09-mechanical-room-location-and-siting--490d7fe6-8f50-404e-a323-1d9a99139869/question-edits/3d6e21f3-38a8-494f-876d-23b71352c9c6.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-09-mechanical-room-location-and-siting--490d7fe6-8f50-404e-a323-1d9a99139869/question-edits/491cd33d-0890-4ad3-b337-82aa8538a6a1.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-09-mechanical-room-location-and-siting--490d7fe6-8f50-404e-a323-1d9a99139869/question-edits/4f2ccf0d-c9e1-4b7a-b3fb-879b720748ff.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-09-mechanical-room-location-and-siting--490d7fe6-8f50-404e-a323-1d9a99139869/question-edits/524a705a-77e3-4a66-8245-2ad6159167e3.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-09-mechanical-room-location-and-siting--490d7fe6-8f50-404e-a323-1d9a99139869/question-edits/52f68b7e-2c13-43af-9fab-b0bf435fc3c4.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-09-mechanical-room-location-and-siting--490d7fe6-8f50-404e-a323-1d9a99139869/question-edits/a58e3590-4a4a-4d96-984d-4276dfba6d52.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-09-mechanical-room-location-and-siting--490d7fe6-8f50-404e-a323-1d9a99139869/question-edits/a5d06320-87a0-4971-897a-635ce72d7697.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-09-mechanical-room-location-and-siting--490d7fe6-8f50-404e-a323-1d9a99139869/question-edits/bc62ede2-4a85-432b-8bdf-786ba843d81e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-09-mechanical-room-location-and-siting--490d7fe6-8f50-404e-a323-1d9a99139869/question-edits/c42da156-dfc9-498a-b14a-8ad4df9570de.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-09-mechanical-room-location-and-siting--490d7fe6-8f50-404e-a323-1d9a99139869/question-edits/c7363660-2955-4c60-8a1c-e5e4751978f9.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-09-mechanical-room-location-and-siting--490d7fe6-8f50-404e-a323-1d9a99139869/question-edits/e8262241-960b-4241-86ea-42e0fbcd18d4.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-09-mechanical-room-location-and-siting--490d7fe6-8f50-404e-a323-1d9a99139869/question-edits/ed8a610d-2249-4535-9f9d-a44b5a2c8bb1.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-09-mechanical-room-location-and-siting--490d7fe6-8f50-404e-a323-1d9a99139869/question-edits/f77c86b7-1476-428b-99c5-f5bbbf0e3dad.json"
+      ]
+    },
+    {
+      "ordinal": 4,
+      "article_id": "881027cd-2be0-4c93-af86-4f801ec16882",
+      "slug": "lea-util-005-03-design-considerations-and-best-practices",
+      "title": "Fire detection and alarm systems",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-util-005-03-design-considerations-and-best-practices--881027cd-2be0-4c93-af86-4f801ec16882",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-03-design-considerations-and-best-practices--881027cd-2be0-4c93-af86-4f801ec16882",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-util-005-03-design-considerations-and-best-practices--881027cd-2be0-4c93-af86-4f801ec16882/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-03-design-considerations-and-best-practices--881027cd-2be0-4c93-af86-4f801ec16882/question-edits",
+      "linked_questions": 15,
+      "question_edits": 15,
+      "source_rows": 2,
+      "candidate_hash": "sha256:a15ff512606aec3caa7801ce610b3aafad181941fc4b7bf7e723735f52c07981",
+      "normalized_hash": "sha256:a15ff512606aec3caa7801ce610b3aafad181941fc4b7bf7e723735f52c07981",
+      "original_hash": "sha256:abba69d8a4df401cbc094e95c6f525cb28b02638a2f929aeac6b806e279195ba",
+      "sources_hash": "sha256:7f360ddbd2e8903e6207a6736b77fbccf302bd47d24f28d47078000a7c034b75",
+      "gates": {
+        "compose": "PASS",
+        "diff": "PASS",
+        "validate": "PASS",
+        "ui_block_validation": "PASS",
+        "source_audit": "PASS"
+      },
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-03-design-considerations-and-best-practices--881027cd-2be0-4c93-af86-4f801ec16882/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-03-design-considerations-and-best-practices--881027cd-2be0-4c93-af86-4f801ec16882/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-03-design-considerations-and-best-practices--881027cd-2be0-4c93-af86-4f801ec16882/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-03-design-considerations-and-best-practices--881027cd-2be0-4c93-af86-4f801ec16882/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-03-design-considerations-and-best-practices--881027cd-2be0-4c93-af86-4f801ec16882/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-03-design-considerations-and-best-practices--881027cd-2be0-4c93-af86-4f801ec16882/ui-blocks.json"
+      ],
+      "question_edit_files": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-03-design-considerations-and-best-practices--881027cd-2be0-4c93-af86-4f801ec16882/question-edits/2730480c-ceec-472f-9164-2fca6afb8941.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-03-design-considerations-and-best-practices--881027cd-2be0-4c93-af86-4f801ec16882/question-edits/4323bba3-b5b7-4402-b442-e67e2965ffe0.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-03-design-considerations-and-best-practices--881027cd-2be0-4c93-af86-4f801ec16882/question-edits/6a34e087-3453-4c20-ac65-24c6df86916a.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-03-design-considerations-and-best-practices--881027cd-2be0-4c93-af86-4f801ec16882/question-edits/6cdd4175-6894-4abb-93e5-bf2bea50adaf.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-03-design-considerations-and-best-practices--881027cd-2be0-4c93-af86-4f801ec16882/question-edits/700c104d-4ce2-4155-a3a9-37e191e08eb7.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-03-design-considerations-and-best-practices--881027cd-2be0-4c93-af86-4f801ec16882/question-edits/71be8b09-fc96-479a-a6cd-4c6dd8f1500d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-03-design-considerations-and-best-practices--881027cd-2be0-4c93-af86-4f801ec16882/question-edits/7363062a-0803-4bb5-a504-a4c5a0311150.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-03-design-considerations-and-best-practices--881027cd-2be0-4c93-af86-4f801ec16882/question-edits/8608c8fa-9190-4378-b0af-5bbf17fdd7e5.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-03-design-considerations-and-best-practices--881027cd-2be0-4c93-af86-4f801ec16882/question-edits/8998f4c6-c7b0-4841-82e9-61c445e5a274.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-03-design-considerations-and-best-practices--881027cd-2be0-4c93-af86-4f801ec16882/question-edits/95f788fd-e41b-47b7-9f86-a95c6c84afb8.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-03-design-considerations-and-best-practices--881027cd-2be0-4c93-af86-4f801ec16882/question-edits/9f5159c0-ddd7-494a-a31d-b8b3819dafef.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-03-design-considerations-and-best-practices--881027cd-2be0-4c93-af86-4f801ec16882/question-edits/bcd0b2fb-8b63-416a-bb22-466235f94a08.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-03-design-considerations-and-best-practices--881027cd-2be0-4c93-af86-4f801ec16882/question-edits/cf4a2210-32a0-4d01-b016-604f580930c9.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-03-design-considerations-and-best-practices--881027cd-2be0-4c93-af86-4f801ec16882/question-edits/ff975d4c-bed4-4689-804c-87fc940779c0.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-03-design-considerations-and-best-practices--881027cd-2be0-4c93-af86-4f801ec16882/question-edits/fff8a986-9edf-4059-aaf5-ec8107648d2d.json"
+      ]
+    },
+    {
+      "ordinal": 5,
+      "article_id": "ad7d9469-c7a1-4c62-864d-728f38650891",
+      "slug": "lea-dsgn-008-03-core-concept",
+      "title": "Automatic Sprinkler and Fire Detection Systems",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-dsgn-008-03-core-concept--ad7d9469-c7a1-4c62-864d-728f38650891",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-008-03-core-concept--ad7d9469-c7a1-4c62-864d-728f38650891",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-dsgn-008-03-core-concept--ad7d9469-c7a1-4c62-864d-728f38650891/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-008-03-core-concept--ad7d9469-c7a1-4c62-864d-728f38650891/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_rows": 2,
+      "candidate_hash": "sha256:5c05ecb3e8e12ac7614c6b086b8f59057736873797a85be0a174a6e202919a94",
+      "normalized_hash": "sha256:5c05ecb3e8e12ac7614c6b086b8f59057736873797a85be0a174a6e202919a94",
+      "original_hash": "sha256:df7677b11541d6a5ebb82262fb1ca3d53e50db03e0596cd83b8b5121217d3571",
+      "sources_hash": "sha256:9a13c57f571eb1491c591bbbc01f5fa2d3372fee9733df86ca985c5b294d0d3c",
+      "gates": {
+        "compose": "PASS",
+        "diff": "PASS",
+        "validate": "PASS",
+        "ui_block_validation": "PASS",
+        "source_audit": "PASS"
+      },
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-008-03-core-concept--ad7d9469-c7a1-4c62-864d-728f38650891/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-008-03-core-concept--ad7d9469-c7a1-4c62-864d-728f38650891/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-008-03-core-concept--ad7d9469-c7a1-4c62-864d-728f38650891/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-008-03-core-concept--ad7d9469-c7a1-4c62-864d-728f38650891/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-008-03-core-concept--ad7d9469-c7a1-4c62-864d-728f38650891/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-008-03-core-concept--ad7d9469-c7a1-4c62-864d-728f38650891/ui-blocks.json"
+      ],
+      "question_edit_files": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-008-03-core-concept--ad7d9469-c7a1-4c62-864d-728f38650891/question-edits/0e4cfadf-f36d-48a5-b66d-ff014628d95a.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-008-03-core-concept--ad7d9469-c7a1-4c62-864d-728f38650891/question-edits/14db98aa-6127-428b-af32-ed555d832e17.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-008-03-core-concept--ad7d9469-c7a1-4c62-864d-728f38650891/question-edits/1e5828a9-5aaf-432b-a06b-12060b93ec43.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-008-03-core-concept--ad7d9469-c7a1-4c62-864d-728f38650891/question-edits/3900a4f9-8883-4fe4-b80c-9c2a00b010f7.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-008-03-core-concept--ad7d9469-c7a1-4c62-864d-728f38650891/question-edits/4b5e2585-4ab6-4939-88fb-b18cc42ef79d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-008-03-core-concept--ad7d9469-c7a1-4c62-864d-728f38650891/question-edits/518161ed-ef55-43db-acfe-3b98d1dac562.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-008-03-core-concept--ad7d9469-c7a1-4c62-864d-728f38650891/question-edits/71f6e828-bfc8-49de-9d8b-ae94ff2bf5dd.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-008-03-core-concept--ad7d9469-c7a1-4c62-864d-728f38650891/question-edits/95130e59-4a0e-4116-8037-7db66a491fac.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-008-03-core-concept--ad7d9469-c7a1-4c62-864d-728f38650891/question-edits/df6deecd-50e5-4a62-82ae-4cba791235d3.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-008-03-core-concept--ad7d9469-c7a1-4c62-864d-728f38650891/question-edits/ee36195a-6b60-4475-8b2e-62fb629b2b58.json"
+      ]
+    }
+  ]
+}

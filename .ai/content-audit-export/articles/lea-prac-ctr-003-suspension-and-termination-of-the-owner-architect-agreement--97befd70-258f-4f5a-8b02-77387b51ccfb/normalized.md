@@ -1,44 +1,42 @@
-
+## Suspension and Termination of the Owner-Architect Agreement
 
 ## Board Exam Quick Check
 
-Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
-
-**Common mistake:** treating a familiar keyword in **Lea Prac Ctr 003 Suspension And Termination Of The Owner Architect Agreement** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
-## Suspension and Termination of the Owner-Architect Agreement
+First identify which agreement is being tested. SPP 202 governs regular architectural design services and the Owner-Architect compensation relationship. UAP Document 301 and CIAP Document 102 govern the construction contract relationship between Owner and Contractor. Do not transfer one document's notice periods or remedies into the other.
 
 ## Learning Goal
 
 After studying this article, you should be able to:
 
-- Distinguish suspension (temporary stop) from termination (permanent end) of the agreement.
-- Explain the notice period and procedural requirements for suspension.
-- Identify grounds for termination for cause and for convenience.
-- Describe the architect's compensation rights upon suspension or termination.
+- Explain what SPP 202 says when the Architect's work is suspended or abandoned.
+- Separate Owner-Architect fee consequences from Owner-Contractor suspension and termination rules.
+- Recognize the notice periods and remedies used in UAP Document 301 and CIAP Document 102 for construction-contract suspension or termination.
+- Answer LEA questions using only the notice periods, fee consequences, and remedies stated in the checked documents.
 
-Explain the procedures and consequences for suspension and termination of the Owner-Architect agreement, including compensation, liability, and post-termination obligations.
+## Owner-Architect Services Under SPP 202
 
-The Owner-Architect agreement must include clear procedures for suspending work or terminating the relationship, specifying remedies and compensation in each circumstance.
+For regular design services, SPP 202 states that if the Architect's work is abandoned or suspended in whole or in part, the Owner pays the Architect for services rendered corresponding to the amount due at the stage of suspension or abandonment. The same source explains that preparing architectural plans, designs, specifications, and related construction documents completes the Detailed Design and Contract Documents phase, equivalent to ninety percent of the Architect's work. If the Owner does not implement the prepared plans and documents for construction, the Architect is entitled to compensation corresponding to ninety percent of the Architect's fee.
 
-### Suspension of Services
+SPP 202 also states that when construction is carried out in different periods and the Architect's construction-phase burden increases, charges for services during the Construction Phase are adjusted proportionately. If suspension of construction exceeds six months, the fee for remaining works is doubled.
 
-Suspension allows the Owner to pause architectural work without terminating the agreement. Upon written notice to the architect, the Owner may suspend any or all design services for a specified period. During suspension, the architect halts active work but maintains availability to resume when the Owner directs. The agreement should specify a maximum suspension period (e.g., 90 days) beyond which suspension becomes termination unless extended by mutual agreement.
+## Construction Contract Rules Are Separate
 
-The architect's compensation during suspension is limited to work performed before suspension notice. The architect remains entitled to compensation for all design effort completed up to the suspension date and for consultant fees incurred before suspension. The architect is not obligated to absorb overhead costs or continue paying consultants during suspension; such costs are borne by the Owner if suspension extends beyond 30 days, typically recovered through a separate facilities charge or extension of the overall contract timeline.
+UAP Document 301 and CIAP Document 102 address suspension and termination of the Owner-Contractor construction contract. Under UAP Document 301, the Contractor may suspend work or terminate the contract upon fifteen days' written notice to the Owner and Architect for listed causes such as court or public-authority stoppage for ninety days, payment-action failures, or failure to pay an arbitral award. UAP Document 301 also allows the Owner, on the Architect's certificate that sufficient cause exists, to terminate the construction contract after fifteen days' written notice to the Contractor or surety for listed contractor defaults.
 
-### Termination for Cause
+CIAP Document 102 similarly provides construction-contract rules: the Contractor may suspend work or terminate the contract upon fifteen days' written notice for listed owner-side or public-authority causes; the Owner may suspend work without cause for not more than an aggregate fifteen days and, in some cases, the Contractor is entitled to completion-time and contract-price adjustments; and the Owner may terminate the construction contract for specified contractor default grounds.
 
-Termination for cause occurs when the architect materially breaches the agreement, such as failing to maintain professional liability insurance, abandoning the project, or consistently failing to meet specified deadlines. Termination for cause requires written notice specifying the breach and a cure period (typically 10 to 30 days) during which the architect may remedy the breach. If the breach is not cured within the cure period, the Owner may terminate by written notice.
+## Exam Traps
 
-Upon termination for cause, the architect is entitled to compensation for services rendered and consultant fees incurred up to the termination date, less any damages the Owner sustained from the breach. If the breach involves negligence in design (e.g., omission of code-required systems), the Owner's damages may offset or exceed the architect's unpaid fees. The architect must deliver all drawings, specifications, and design work to the Owner upon termination, whether or not the work is complete.
+- Do not claim SPP 202 creates a ten-to-thirty-day cure period for terminating the Architect. That period was not found in the checked local raw sources for this batch.
+- Do not say the Architect may independently terminate the construction contract. UAP Document 301 describes the Architect as the Owner's representative during construction and gives authority only to the extent provided in the Contract Documents or in writing.
+- Do not add outside statutory-liability periods unless a question supplies a separate governing source. This rewrite focuses on SPP 202 fee consequences and UAP/CIAP construction-contract suspension and termination procedures.
 
-### Termination for Convenience
+## Source Anchors
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="Note" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: \ Termination for convenience allows the Owner to end the agreement at any time without cause. Upon written notice, the architect ceases work immediately. The architect receives compensation for all services rendered and consultant fees reimbursed through the termination date, calculated on a phase-completion or time-expended basis as specified in the agreement. Compensation upon termination for convenience is calculated based on the phase-completion or time-expended basis specified in the agree
-[/SLATECAMP_UI_BLOCK]
+- UAP Standards / SPP 202: compensation methods, Owner responsibilities, and work suspended or abandoned.
+- UAP Document 301: contractor right to suspend or terminate, Owner right to terminate, architect status, and schedule of time limits.
+- CIAP Document 102: private construction contract definitions, suspension, termination, and bond rules.
+
 ## Related Articles
 
 - [Standard Owner-Architect Agreement](lea-prac-ctr-001)
@@ -52,31 +50,5 @@ Extracted summary:
 - [Dispute Resolution](lea-prac-ctr-020)
 - [Fee Compensation Methods](lea-prac-cmp-001)
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code="uap", section="SPP Doc. 202 - Suspension and Termination"
-- Text: RA 9266, Section 25 — The architect shall not be held liable for delay caused by force majeure or acts of the Owner.
-[/SLATECAMP_UI_BLOCK]
-Extracted summary:
-- Props: (none)
-- Text: RA 9266, Section 25 — The architect shall not be held liable for delay caused...
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="ProcessFlow" status="preserved"]
-Extracted summary:
-- Props: steps="{[\"Owner gives written notice\", \"Architect ceases active work or invokes cure period\", \"Compensation calculated for work performed\", \"Architect delivers all documents to Owner\", \"Owner engages successor or proceeds to close-out\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-Extracted summary:
-- Props: (none)
-- Text: Process flow: Notice → Cessation/Curve period → Compensation → Document turno...
-
-[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: The architect does NOT have authority to independently suspend or terminate the construction contract. The architect's role is to certify compliance and recommend action to the Owner. Unauthorized suspension can expose the architect to liability.
-[/SLATECAMP_UI_BLOCK]
-Extracted summary:
-- Props: (none)
-- Text: The architect does NOT have authority to independently suspend or terminate t...
-
-<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->
+<!-- no-media-needed: professional practice article, text/tables are optimal format -->

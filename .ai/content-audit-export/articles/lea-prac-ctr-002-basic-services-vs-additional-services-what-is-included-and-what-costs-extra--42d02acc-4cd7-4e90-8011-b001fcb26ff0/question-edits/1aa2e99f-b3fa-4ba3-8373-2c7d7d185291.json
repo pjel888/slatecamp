@@ -1,0 +1,86 @@
+{
+  "question_id": "1aa2e99f-b3fa-4ba3-8373-2c7d7d185291",
+  "baseline_hash": "sha256:e4cc9a7eb90b5ec13f40430d5a4f6a5b893e4c47e1c24d1b7f4ac34760c413d7",
+  "action": "replace",
+  "reason": "source-audited-article-batch-027-local-first aligned linked question with audited local UAP/SPP source language for lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra.",
+  "approved_by": "codex-local-source-audit-batch-027",
+  "approved_at": "2026-05-11T00:00:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "42d02acc-4cd7-4e90-8011-b001fcb26ff0",
+    "parent_article_slug": "lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UAP Standards refined markdown lines 414-501; SPP 202 local raw PDF checked",
+    "checked_markdown_lines": [
+      "UAP Standards lines 414-457",
+      "UAP Standards lines 459-501",
+      "UAP Standards lines 1608-1642",
+      "SPP 202 local raw PDF checked",
+      "UAP Standards lines 414-501 used for readable source locators"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "uap-standards-spp202-compensation-local",
+        "label": "UAP Document Standards of Professional Practice - SPP 202 compensation and service conditions",
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "source_type": "professional_practice_pdf",
+        "source_locator": "UAP Standards refined markdown lines 414-501 and 1608-1642",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "checked_markdown_lines": [
+          "UAP Standards lines 414-457",
+          "UAP Standards lines 459-501",
+          "UAP Standards lines 1608-1642"
+        ],
+        "use": "Local UAP Standards raw PDF and refined markdown checked for SPP 202 compensation methods, reimbursables, owner responsibilities, additional services, abandoned projects, and PCA compensation terms.",
+        "local_source_checked": true
+      },
+      {
+        "source_id": "spp202-regular-design-services-local",
+        "label": "SPP 202 - Regular Design Services",
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "source_type": "professional_practice_pdf",
+        "source_locator": "SPP 202 local raw PDF; UAP Standards refined markdown lines 414-501 used as readable local locator",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+        "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+        "refined_markdown_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+        "checked_markdown_lines": [
+          "SPP 202 local raw PDF checked",
+          "UAP Standards lines 414-501 used for readable source locators"
+        ],
+        "use": "Local SPP 202 raw PDF checked as the regular-design-services source counterpart; UAP Standards refined markdown provides readable local line locators for the same professional-practice provisions.",
+        "local_source_checked": true
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the local source-audited article scope."
+  },
+  "proposed": {
+    "text": "How does SPP 202 treat scale models, three-dimensional models, and walkthrough presentations?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They may be recommended for owner approval and paid separately with a coordination fee."
+      },
+      {
+        "id": "b",
+        "text": "They are always included in every basic fee."
+      },
+      {
+        "id": "c",
+        "text": "They are contractor-owned permit documents."
+      },
+      {
+        "id": "d",
+        "text": "They are forbidden in architectural practice."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The checked lines treat models and walkthroughs as separately paid when recommended for owner approval, with a coordination fee.",
+    "explanation": "The checked lines treat models and walkthroughs as separately paid when recommended for owner approval, with a coordination fee.",
+    "code_citation": "UAP Standards SPP 202 line 485",
+    "model_id": "BATCH-027-lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra-003"
+  }
+}

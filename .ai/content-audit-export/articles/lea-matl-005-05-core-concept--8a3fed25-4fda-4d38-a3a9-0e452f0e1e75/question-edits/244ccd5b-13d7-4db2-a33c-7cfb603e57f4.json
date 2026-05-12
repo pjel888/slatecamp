@@ -1,0 +1,79 @@
+{
+  "question_id": "244ccd5b-13d7-4db2-a33c-7cfb603e57f4",
+  "baseline_hash": "sha256:8cd3db8da992b4fe7424badc9909c286786a12e40d9824eedb492564473a2868",
+  "action": "replace",
+  "reason": "source-audited-article-batch-085-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-005-05-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-085",
+  "approved_at": "2026-05-12T07:55:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "8a3fed25-4fda-4d38-a3a9-0e452f0e1e75",
+    "parent_article_slug": "lea-matl-005-05-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Building Construction Illustrated refined markdown lines 4583-4623; Chudley/Greeno refined markdown lines 691-717 and 732-738; Building Tech Illustrated refined markdown lines 481, 585, and 601-627.",
+    "checked_markdown_lines": [
+      "Building Construction Illustrated refined markdown lines 4583-4623; raw PDF pages 151-152 checked by local PyMuPDF extraction.",
+      "Chudley/Greeno refined markdown lines 691-717 and 732-738; raw PDF pages 138, 145, 146, and 151 checked by local PyMuPDF extraction.",
+      "Building Tech Illustrated refined markdown lines 481, 585, and 601-627; raw PDF pages 34, 41, and 43 checked by local PyMuPDF extraction."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "building-construction-illustrated-b085",
+        "label": "Building Construction Illustrated, 5th Edition",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "refined_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "locator": "Building Construction Illustrated refined markdown lines 4583-4623; raw PDF pages 151-152 checked by local PyMuPDF extraction."
+      },
+      {
+        "source_id": "chudley-greeno-handbook-b085",
+        "label": "Buidling Construction Handbook 7th Ed by Chudley _ Greeno",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf",
+        "sha256": "sha256:2efa493fac06a3efb9367111a397129ff8647778d88160bbe0174403cbb9e0bb",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.md",
+        "refined_markdown_sha256": "sha256:485fe968d55ca680cbde52d24fcee5f512a63591026db19e46835f1bc530dcbb",
+        "locator": "Chudley/Greeno refined markdown lines 691-717 and 732-738; raw PDF pages 138, 145, 146, and 151 checked by local PyMuPDF extraction."
+      },
+      {
+        "source_id": "building-tech-illustrated-b085",
+        "label": "Building Tech Illustrated",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Tech Illustrated.pdf",
+        "sha256": "sha256:231e15abee34d44e518dff7478fc503ba3285b8d6b4080a096e637a5aeec8dec",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Tech Illustrated.md",
+        "refined_markdown_sha256": "sha256:016d54a7798e5b450043d3be89f7cf940184f05494644033f0e52e03d49f64ad",
+        "locator": "Building Tech Illustrated refined markdown lines 481, 585, and 601-627; raw PDF pages 34, 41, and 43 checked by local PyMuPDF extraction."
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 085 local raw-source-audited formwork_scaffolding_and_temporary_supports scope."
+  },
+  "proposed": {
+    "text": "What is the primary purpose of formwork for columns and walls?",
+    "options": [
+      {
+        "id": "a",
+        "text": "To maintain the position and shape of fresh concrete until it sets"
+      },
+      {
+        "id": "b",
+        "text": "To serve as the permanent occupancy certificate"
+      },
+      {
+        "id": "c",
+        "text": "To replace structural reinforcement"
+      },
+      {
+        "id": "d",
+        "text": "To provide the final paint finish only"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "To maintain the position and shape of fresh concrete until it sets. The audited sources support formwork components, fresh-concrete pressure, scaffolding access, and shoring as temporary support.",
+    "explanation": "To maintain the position and shape of fresh concrete until it sets. The audited sources support formwork components, fresh-concrete pressure, scaffolding access, and shoring as temporary support.",
+    "code_citation": "Building Construction Illustrated, 5th Edition; Buidling Construction Handbook 7th Ed by Chudley _ Greeno; Building Tech Illustrated",
+    "bloom_level": "apply",
+    "application_context": "source_audited_local_first_batch_085",
+    "practice_context": [],
+    "difficulty": 0.7
+  }
+}

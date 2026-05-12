@@ -1,98 +1,34 @@
-
-
 ## Board Exam Quick Check
 
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+For wall-finish questions, identify the base surface first: plaster, gypsum board, masonry, tile backing, wood finish, or paint system. A finish that works on a dry wall may fail when the item describes moisture, uneven backing, or poor surface preparation.
 
-**Common mistake:** treating a familiar keyword in **Lea Matl 007 02 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
-
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
+
 ## Learning Goal
 
-Classify wall finishes (paint, wallpaper, gypsum board, plywood paneling, tile, stone cladding, fabric, metal panel, glass) by aesthetic effect, durability, installation method, and fire-resistance rating for interior wall applications.
+Classify wall finishes by substrate, finish layer, moisture exposure, surface preparation, and coordination with adjacent finishes.
+
 ## Core Concept
 
-Wall finishes range from paint systems (latex, enamel, epoxy) to ceramic tile, wallpaper, natural stone veneer, wood paneling, and fiber cement board. Paint is the dominant finish globally and locally in the Philippines. Paint films must bond to properly prepared substrates and maintain adhesion through environmental cycling (humidity, temperature, UV).
+BCI states that interior walls should be resistant to wear and cleanable. The finish must match the base. Plaster can serve as a finish surface or as a base for decoration. Gypsum plaster is durable, relatively lightweight, and fire-resistant for wall or ceiling surfaces that are not subject to moist or wet conditions; portland cement plaster is used on exterior walls and areas subject to wet or moist conditions.
 
-Paint performance depends on film thickness and substrate preparation. Dry film thickness (DFT) is measured in micrometers (µm) and ranges from 50µm for primer to 75-150µm for topcoats. Surface preparation—sanding, priming, caulking—is non-negotiable; 90 percent of paint failures stem from substrate defects, not paint itself. Moisture in concrete or gypsum causes blistering and delamination within months.
+Gypsum board is a sheet material for covering walls or acting as lath. BCI describes it as having good fire resistance and dimensional stability, with large sheets that make installation economical. Tapered edges allow joints to be taped and filled to form smooth, monolithic-looking surfaces that can be painted or covered with paper, vinyl, or fabric wall covering.
 
-The ASTM D3359 cross-hatch adhesion test quantifies bond strength. The test cuts a lattice pattern through the film to the substrate, applies tape, and measures adhesion loss on a 0-5 scale (5B = no loss, best; 0B = complete loss, worst). A rating of 5B (no adhesion loss) indicates excellent performance. A rating of 0B (complete adhesion loss) indicates a failed system. For interior drywall, ratings of 3 or better are typical; for concrete, ratings of 4 or better are expected if substrate is properly prepared.
+Wall tile requires a suitable backing. BCI describes solid backing such as masonry, plaster, gypsum board, or well-braced framing for tile applications, and notes cementitious backer board or water-resistant gypsum board for wet locations. Gypsum board applied to masonry or concrete needs dry, smooth, even surfaces free of oil or parting materials.
 
-In the Philippines, Boysen (Pacific Paint), Davies, and Island Paints dominate the market. Boysen's Permacoat (acrylic latex) and Acrytex (enamel/acrylic hybrid) are industry standards. Davies Paints are recognized for color range and premium positioning. These brands publish drying time, coverage rate (8-12 m²/L typical), and VOC limits that must match local air-quality requirements.
+Salvan adds the local material vocabulary for interior finishes: wood boards, wood sheets, plywood, trim materials, gypsum plaster, gypsum board, and painted surfaces. For painting, the source-safe specification pattern is surface examination, cleaning, sanding, sealing if needed, original labeled containers, manufacturer-directed mixing, and three-coat work of primer plus finish coats unless the specification says otherwise.
 
-Wallpaper, while aesthetic, demands smooth drywall surfaces (sandpaper grit 220+) and proper adhesive formulation. Ceramic tile on walls follows the same adhesion principles as floor tile but with relaxed slip-resistance requirements. Natural stone veneer (marble, granite) requires moisture barriers on substrate to prevent salt efflorescence and spalling in tropical climates. Hardiflex (fiber cement board) offers moisture and fire resistance for wet rooms and exterior walls, avoiding traditional gypsum drywall susceptibility to mold.
-
-
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-wall-finish-comparison", layout="single", type="image", status="placeholder", alt="Comparison chart of wall finishes: paint, wallpaper, gypsum board, plywood paneling, tile, stone cladding, fabric, metal panel, and glass with aesthetic, durability, and fire-resistance ratings", caption="Future chart: wall finish comparison — aesthetic effect, durability, installation method, and fire rating", suggestedAsset="Material selection matrix with finish application photos", placementIntent="Provides comprehensive reference for wall finish selection"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-## Key Provisions
-
-| Property | Specification | Standard | LEA Relevance |
-| --- | --- | --- | --- |
-| Dry Film Thickness (DFT) Primer | 30-50µm | SSPC-PA 2, ASTM D7091 | Ensures adequate substrate seal |
-| Dry Film Thickness (DFT) Topcoat | 75-150µm | SSPC-PA 2, ASTM D7091 | Provides color and durability |
-| Paint Coverage Rate | 8-12 m²/L (typical) | Manufacturer specs | Affects project cost and timeline |
-| Adhesion Rating (Cross-Hatch) | ≥3 on 0-5 scale | ASTM D3359 | Failure criterion for bond strength |
-| Surface Preparation (Gypsum) | Sandpaper grit 220+; dust-free | ASTM D3276 | Removes contaminants, promotes adhesion |
-| Moisture in Concrete | &lt;3% CM (calcium chloride method) | ASTM F2170 | Prevents blistering and delamination |
-| Prime and Paint Drying Time | 2-4 hours per coat (latex at 23°C, &lt;50% RH) | Manufacturer specs | Determines recoat timing |
-| VOC Limit (Interior Paint) | &lt;300 g/L (low-VOC) | ASTM D3960, EPA guidelines | Air quality compliance |
-| Substrate Temperature | 10°C minimum; avoid rain, &lt;85% RH | ASTM D3276 | Ensures proper curing and adhesion |
-| Hardiflex Moisture Resistance | >3mm water head per ASTM E96 | Manufacturer specs | Wet-room suitability |
-
-## Philippine Construction Context
-
-The Philippines' high humidity (60-95% year-round) and seasonal rain create moisture challenges for interior finishes. Boysen and Davies paint systems are formulated with fungicides to resist mold in damp conditions, a critical specification often overlooked. Construction timelines frequently push application in marginal conditions (high humidity, rain-threatening); insisting on ASTM D3276 conditions (23°C, &lt;50% RH) delays projects but prevents future delamination.
-
-Gypsum drywall, the standard substrate, absorbs moisture rapidly. Hardiflex fiber cement board offers mold resistance (e.g., HardiFlex NexGen with MoldBlock Technology) for kitchens, bathrooms, and ground-floor walls in flood-prone areas. Hardiflex costs 20-30% more than drywall but eliminates replacement risk in moisture-heavy zones.
-
-Stone veneer (marble, granite imported or quarried locally) requires moisture barriers and proper flashing to prevent salt efflorescence, visible as white crystalline deposits. Wallpaper, while aesthetically popular in residential projects, must be paired with fungicide-treated primers in high-humidity zones.
-
-Boysen brands like KNOxOUT (marketed as air-purifying with claimed NOx-reducing properties via titanium dioxide) appeal to premium projects seeking air-quality claims, though durability remains tied to substrate preparation.
-
-
-[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-wall-finish-assembly", layout="single", type="image", status="placeholder", alt="Cross-section of wall finish assemblies: paint on gypsum board, tile on cement board, stone cladding with anchors, and metal panel with sub-girt system", caption="Future diagram: wall finish assembly cross-sections — paint, tile, stone, and metal panel", suggestedAsset="Cross-section detail drawings of wall finish installations", placementIntent="Visualizes installation methods for different wall finishes"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 ## How It's Tested
 
-**Question Type 1 (Surface Preparation):** A painter applies latex topcoat to gypsum drywall sanded with 120-grit paper and not wiped. What will likely occur within 6-12 months? Students must recognize that inadequate surface prep (grit &lt;220) and dust contamination cause delamination (ASTM D3276 violations).
-
-**Question Type 2 (Moisture Management):** A ground-floor bathroom in Cavite shows paint blistering 4 months after application. Concrete substrate moisture test shows 5% CM. What is the root cause and solution? Answer: moisture >3% CM per ASTM F2170 causes vapor-induced blistering. Require moisture barrier or defer painting until concrete cures.
-
-**Question Type 3 (Adhesion Testing):** A project specification requires ASTM D3359 adhesion rating of 4 or better. A site test shows rating 2. Is the coating acceptable and why? Answer: No. Rating 2 indicates 5-15% adhesion loss, unacceptable per spec and likely to fail during service life.
-
-**Question Type 4 (Material Selection):** Specify a finish system for a high-humidity kitchen in Metro Manila. Options: latex paint, enamel, or wallpaper. Which offers best moisture resistance? Answer: Enamel or latex with fungicide primer (Boysen formulations); wallpaper is unsuitable without mold-resistant base primer.
-
-[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Memory aid: Surface prep is 90% of paint success. If sanding isn't done to 220-grit and dust-free, the best paint will fail. Humidity >50% and temperature &lt;10°C during application = delay the work. ASTM D3359 rating 3 is acceptable minimum; rating 5 is complete failure.
-[/SLATECAMP_UI_BLOCK]
+LEA-style items usually ask whether the proposed wall finish fits the substrate or exposure. If the question describes wet conditions, do not choose a finish that the checked source limits to dry interior use. If the question describes painting, choose the answer that includes surface preparation and manufacturer directions.
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
-Extracted summary:
-- Props: mistake="Sanding drywall with 120-grit paper and skipping dust removal before priming", correction="Use 220-grit or higher per ASTM D3276 and wipe surfaces dust-free. Dust prevents adhesion and causes delamination within 12 months."
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeCard" status="preserved"]
-Extracted summary:
-- Props: mistake="Applying paint to gypsum drywall without primer in high-humidity bathrooms", correction="Prime with fungicide-treated primer (e.g., Boysen fungicide-rich primers) before topcoat. Unprimed drywall absorbs moisture and promotes mold."
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-is optional for topcoat adhesion\", \"Mixing incompatible binders (latex over enamel without sanding and primer)\", \"Failing to caulk gaps, joints, and penetrations before finish coat\", \"Applying topcoat before primer cure time (typically 2-4 hours per coat)\", \"Using VOC-high paints without confirming local air-quality compliance\"]}"
-- Text: (none detected)
+- Treating gypsum plaster, gypsum board, cement plaster, and tile backer board as interchangeable.
+- Painting over dust, grease, dampness, or unfinished trade work.
+- Using ordinary gypsum board as if it were automatically suitable for every wet wall.
+- Ignoring edge treatment and joint finishing when the question asks for a smooth wall plane.
+- Naming a brand or test number when the source-supported issue is substrate preparation.
 
 ## Related Articles
 

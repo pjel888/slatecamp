@@ -1,0 +1,34 @@
+{
+  "question_id": "6c099536-f6a9-4cda-863a-a5a97be9870b",
+  "baseline_hash": "sha256:2a24a18b5574625899a2e8db7b13d58f8c69e9a96a31eb7e4c3c2be546818a70",
+  "reason": "Batch 005 local source audit aligned RA 9266 Overview: Core Legal Frame and Key Definitions linked question ALE-PRAC-LAW-001-010 to verified RA 9266 IRR raw-source claims.",
+  "approved_by": "codex-local-source-audit-batch-005",
+  "approved_at": "2026-05-10T21:30:00+08:00",
+  "proposed": {
+    "code_citation": "RA 9266 IRR Sections 1-7 and 40",
+    "explanation": "Source-audited against RA 9266 IRR Sections 1-7 and 40 in the checked local RA 9266 IRR PDF. This edit removes unsupported locators or assumptions and keeps the question aligned to the audited article cluster.",
+    "text": "Under RA 9266 IRR Section 3(5), what does Structural Conceptualization refer to?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Conceiving, choosing, and developing the type, disposition, arrangement, and proportioning of structural elements while considering safety, cost-effectiveness, functionality, and aesthetics."
+      },
+      {
+        "id": "b",
+        "text": "Preparing all signed and sealed structural engineering calculations for the project."
+      },
+      {
+        "id": "c",
+        "text": "Issuing the occupancy permit after construction."
+      },
+      {
+        "id": "d",
+        "text": "Replacing the Architect-of-Record for structural liability purposes."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "correct": "Section 3(5) defines Structural Conceptualization in architecture. This edit avoids unsupported claims about separate engineering document-signing rules not visible in the checked pages."
+    }
+  }
+}

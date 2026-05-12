@@ -1,0 +1,32 @@
+{
+  "question_id": "1cbc9fea-8ed5-44af-b22c-8b7c5e2c7fd3",
+  "baseline_hash": "sha256:ae56b868753426d44ee37ef1b5e74e7646a031efad04e4d0dd5c043f78aba69c",
+  "reason": "Batch 003 source audit replaced unsupported agency/mandate and procurement assertions with source-backed RA 9266, Civil Code Article 1723, RA 9184, RA 7160/COA, RA 11201, and EO 90 framing.",
+  "approved_by": "codex-local-source-audit-batch-003",
+  "approved_at": "2026-05-10T18:00:00+08:00",
+  "proposed": {
+    "text": "Which Civil Code article is the source-backed locator for architect or engineer liability for plans and specifications in the collapse/damages frame tested in the article?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Article 1157"
+      },
+      {
+        "id": "b",
+        "text": "Article 1723"
+      },
+      {
+        "id": "c",
+        "text": "Article 2180"
+      },
+      {
+        "id": "d",
+        "text": "Article 2208"
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": "Civil Code Article 1723 is the tested source for liability tied to plans and specifications in the collapse/damages frame.",
+    "explanation": "The repaired article links RA 9266 IRR architect-of-record responsibility with Civil Code Article 1723 liability.",
+    "code_citation": "Civil Code Article 1723; RA 9266 IRR architect-of-record provisions"
+  }
+}

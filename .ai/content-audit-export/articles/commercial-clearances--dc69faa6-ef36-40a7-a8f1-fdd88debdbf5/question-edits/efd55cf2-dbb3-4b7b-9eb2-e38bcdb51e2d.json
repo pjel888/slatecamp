@@ -1,0 +1,50 @@
+{
+  "question_id": "efd55cf2-dbb3-4b7b-9eb2-e38bcdb51e2d",
+  "baseline_hash": "sha256:f19fdd629445cee9987537c5ec22a85e5b031f74b7a4ba331e8c050e6efd5c11",
+  "action": "replace",
+  "reason": "source-audited-article-batch-038-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-038",
+  "approved_at": "2026-05-11T13:26:35+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-038-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 2087-2138",
+          "PD 1096 RIRR refined markdown lines 2246-2310",
+          "PD 1096 RIRR refined markdown lines 2352-2356"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 803"
+  },
+  "proposed": {
+    "text": "Under Rule VIII, what happens when maximum PSO conflicts with another light and ventilation provision?",
+    "options": [
+      {
+        "id": "b038-dc69-01-a",
+        "text": "The lesser footprint or ground-floor gross floor area prevails"
+      },
+      {
+        "id": "b038-dc69-01-b",
+        "text": "The larger footprint always prevails"
+      },
+      {
+        "id": "b038-dc69-01-c",
+        "text": "The zoning label alone controls"
+      },
+      {
+        "id": "b038-dc69-01-d",
+        "text": "The conflict is ignored"
+      }
+    ],
+    "correct_option_id": "b038-dc69-01-a",
+    "rationale": "Correct answer: The lesser footprint or ground-floor gross floor area prevails. This is directly supported by PD 1096 2004 Revised IRR, Section 803.",
+    "explanation": "The Batch 038 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 803.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 803"
+  }
+}

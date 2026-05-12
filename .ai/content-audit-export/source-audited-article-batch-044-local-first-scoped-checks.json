@@ -1,0 +1,137 @@
+{
+  "batch_id": "source-audited-article-batch-044-local-first",
+  "batch_number": 44,
+  "generated_at": "2026-05-11T08:34:00.000Z",
+  "status": "PASS",
+  "local_only": true,
+  "article_ids": [
+    "903c66da-2864-48b0-b638-2ed218a173e2",
+    "7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db",
+    "490d7fe6-8f50-404e-a323-1d9a99139869",
+    "881027cd-2be0-4c93-af86-4f801ec16882",
+    "ad7d9469-c7a1-4c62-864d-728f38650891"
+  ],
+  "article_folders": [
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-05-kitchen-exhaust-hood-classification--7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-09-mechanical-room-location-and-siting--490d7fe6-8f50-404e-a323-1d9a99139869",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-03-design-considerations-and-best-practices--881027cd-2be0-4c93-af86-4f801ec16882",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-008-03-core-concept--ad7d9469-c7a1-4c62-864d-728f38650891"
+  ],
+  "validation": {
+    "compose": {
+      "status": "PASS",
+      "passed": 5,
+      "total": 5,
+      "command": "bun run content-audit:compose -- --article-id <id> --overwrite --strict"
+    },
+    "diff": {
+      "status": "PASS",
+      "passed": 5,
+      "total": 5,
+      "command": "bun run content-audit:diff -- --article-id <id> --strict --summary"
+    },
+    "validate": {
+      "status": "PASS",
+      "passed": 5,
+      "total": 5,
+      "warnings": "component-usage.json missing warnings only",
+      "command": "bun run content-audit:validate -- --article-id <id> --summary"
+    },
+    "ui_block_validation": {
+      "status": "PASS",
+      "passed": 5,
+      "total": 5,
+      "command": "bun run content-audit:ui-block-edits -- --article-id <id>"
+    },
+    "scoped_json_parse": {
+      "status": "PASS",
+      "parsed_files": 125,
+      "failures": []
+    },
+    "marker_scan": {
+      "status": "PASS",
+      "scanned_files": 90,
+      "matches": []
+    },
+    "source_hash_checks": {
+      "status": "PASS",
+      "checked": 26,
+      "failures": []
+    },
+    "question_edit_count_checks": {
+      "status": "PASS",
+      "checks": [
+        {
+          "article_id": "903c66da-2864-48b0-b638-2ed218a173e2",
+          "slug": "lea-util-002-03-core-ventilation-standards",
+          "expected": 15,
+          "actual": 15,
+          "pass": true
+        },
+        {
+          "article_id": "7bbf04f7-8c9c-4b8f-9f38-18d7b967a8db",
+          "slug": "lea-util-002-05-kitchen-exhaust-hood-classification",
+          "expected": 15,
+          "actual": 15,
+          "pass": true
+        },
+        {
+          "article_id": "490d7fe6-8f50-404e-a323-1d9a99139869",
+          "slug": "lea-util-002-09-mechanical-room-location-and-siting",
+          "expected": 15,
+          "actual": 15,
+          "pass": true
+        },
+        {
+          "article_id": "881027cd-2be0-4c93-af86-4f801ec16882",
+          "slug": "lea-util-005-03-design-considerations-and-best-practices",
+          "expected": 15,
+          "actual": 15,
+          "pass": true
+        },
+        {
+          "article_id": "ad7d9469-c7a1-4c62-864d-728f38650891",
+          "slug": "lea-dsgn-008-03-core-concept",
+          "expected": 10,
+          "actual": 10,
+          "pass": true
+        }
+      ],
+      "failures": []
+    },
+    "stale_compose_error_check": {
+      "status": "PASS",
+      "stale_compose_error_files": []
+    },
+    "targeted_tests": {
+      "status": "PASS",
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "tests": 34,
+      "expect_calls": 328
+    },
+    "scoped_git_diff_check": {
+      "status": "PASS",
+      "command": "git diff --check -- <Batch 044 article folders, report, ledger, scoped checks, handoff, sync-state, validation-report, ui-block-edit-validation>"
+    }
+  },
+  "counts": {
+    "selected_articles": 5,
+    "linked_questions": 70,
+    "question_edits": 70,
+    "source_rows": 13,
+    "unique_raw_pdfs": 4,
+    "json_parse": 125,
+    "source_hash_checks": 26,
+    "marker_matches": 0,
+    "stale_compose_error_files": 0
+  },
+  "blockers": [],
+  "source_hash_input_files": [
+    "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+    "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+    "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+    "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf"
+  ],
+  "note": "Scoped checks are limited to Batch 044 selected article folders and generated Batch 044 artifacts."
+}

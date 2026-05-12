@@ -238,18 +238,18 @@ PRIMARY:
   padding: 10px 20px (standard), 14px 28px (large/CTA)
   font: Inter, 14-15px, weight 500
   hover: Cobalt Dark #1535A8
-  
+
 SECONDARY (Ghost):
   bg: transparent
   border: 1px solid #E8E4DC
   text: Ink #1A2332
   hover: bg cream #F2F0EB
-  
+
 GHOST TEXT:
   bg: transparent
   text: Cobalt #1B3FC4
   hover: Cobalt Light bg #EEF2FC
-  
+
 DANGER:
   bg: transparent
   border: 1px solid #E63329
@@ -265,12 +265,12 @@ STANDARD CARD:
   radius: 8-12px
   padding: 16-24px
   shadow: none (resting), shadow-sm (hover)
-  
+
 DARK CARD (on dark bg):
   bg: white/5
   border: 1px solid white/10
   radius: 8-12px
-  
+
 GOLD CARD (on gold bg):
   bg: white/90
   radius: 8-12px
@@ -285,7 +285,7 @@ CATEGORY TAG:
   bg: varies by context
   padding: 4px 10px
   radius: full
-  
+
 COBALT TAG:     bg: #EEF2FC, text: #1B3FC4
 STATUS LIVE:    bg: green/10, text: #1B7A3C
 STATUS DANGER:  bg: red/10, text: #E63329
@@ -302,7 +302,7 @@ RING:
     40-69%: Camp Orange #E8853A
     < 40%: Signal Red #E63329
   Stroke width: 8-10px, round cap
-  
+
 NUMBER:
   Font: Syne, 48-56px, weight 800
   Color: matches arc color
@@ -317,7 +317,7 @@ Every section starts with:
      Format: "[ Category Name ]" or "Category Name"
   2. Heading: Syne, 22-34px, weight 800, color Ink (#1A2332)
   3. Description: Inter, 15-16px, weight 400, color Ink Mid (#555555)
-  
+
 This triad (eyebrow → heading → body) is the fundamental content block.
 ```
 
@@ -331,7 +331,7 @@ Text: Ink Dark #111111 (maximum contrast on gold)
 Cards inside: bg white/90, no border
 Heading: Syne, weight 800
 Body: Inter, weight 400
-Effect: Feels like the page suddenly "warms up" — creates the most 
+Effect: Feels like the page suddenly "warms up" — creates the most
         memorable visual moment and is the screenshot students share.
 ```
 
@@ -346,7 +346,7 @@ Secondary text: white/60
 Cards inside: bg white/5, border white/10
 Heading: Syne, weight 800, white
 Tags: bg white/10, text white/80
-Effect: Creates cinematic contrast. Used for the 3D Lab section 
+Effect: Creates cinematic contrast. Used for the 3D Lab section
         where the dark background makes the green model pop.
 ```
 
@@ -420,13 +420,13 @@ Sections alternate between white → cream → dark → gold. No two adjacent se
   --sc-cobalt: #1B3FC4;
   --sc-cobalt-light: #EEF2FC;
   --sc-cobalt-dark: #1535A8;
-  
+
   /* Accents */
   --sc-gold: #F5A623;
   --sc-red: #E63329;
   --sc-green: #1B7A3C;
   --sc-orange: #E8853A;
-  
+
   /* Neutrals */
   --sc-cream: #F2F0EB;
   --sc-cream-light: #FFFDF7;
@@ -434,7 +434,7 @@ Sections alternate between white → cream → dark → gold. No two adjacent se
   --sc-white: #FFFFFF;
   --sc-border: #E8E4DC;
   --sc-border-light: #D4DAE3;
-  
+
   /* Ink */
   --sc-ink: #1A2332;
   --sc-ink-dark: #111111;
@@ -442,19 +442,19 @@ Sections alternate between white → cream → dark → gold. No two adjacent se
   --sc-ink-light: #6B6B6B;
   --sc-ink-muted: #888888;
   --sc-ink-ghost: #9CA3AF;
-  
+
   /* Fonts */
   --font-display: 'Syne', sans-serif;
   --font-hero: '__GeistSans', sans-serif;
   --font-body: 'Inter', sans-serif;
   --font-mono: 'DM Mono', monospace;
   --font-serif: 'Instrument Serif', serif;
-  
+
   /* Gradients */
   --grad-slate: linear-gradient(135deg, #1B3FC4 0%, #1535A8 100%);
   --grad-warm: linear-gradient(135deg, #F8F7F5 0%, #FEF5ED 100%);
   --grad-dark: linear-gradient(180deg, #1A2332 0%, #111111 100%);
-  
+
   /* Radii */
   --radius-sm: 4px;
   --radius-md: 6px;

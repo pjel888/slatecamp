@@ -1,0 +1,447 @@
+{
+  "batch_id": "source-audited-article-batch-066-local-first",
+  "mode": "local-first",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "generated_at": "2026-05-11T23:24:33+08:00",
+  "article_count": 5,
+  "total_question_edits": 51,
+  "pass": true,
+  "blockers": [],
+  "articles": [
+    {
+      "article_id": "02b9f8da-3c2e-460a-bd2b-0c5d68249b1b",
+      "slug": "legal-liability-and-enforcement-workflow",
+      "title": "Legal Liability and Enforcement Workflow",
+      "folder": ".ai/content-audit-export/articles/legal-liability-and-enforcement-workflow--02b9f8da-3c2e-460a-bd2b-0c5d68249b1b",
+      "parsed_json_file_count": 23,
+      "linked_question_count": 11,
+      "question_edit_count": 11,
+      "question_edit_paths": [
+        ".ai/content-audit-export/articles/legal-liability-and-enforcement-workflow--02b9f8da-3c2e-460a-bd2b-0c5d68249b1b/question-edits/05e37936-f819-4362-ae84-c1a0b8feb400.json",
+        ".ai/content-audit-export/articles/legal-liability-and-enforcement-workflow--02b9f8da-3c2e-460a-bd2b-0c5d68249b1b/question-edits/103485a5-0426-4d16-aefd-79af83230c92.json",
+        ".ai/content-audit-export/articles/legal-liability-and-enforcement-workflow--02b9f8da-3c2e-460a-bd2b-0c5d68249b1b/question-edits/194d6c09-d801-4589-a693-79c5f64c8ad0.json",
+        ".ai/content-audit-export/articles/legal-liability-and-enforcement-workflow--02b9f8da-3c2e-460a-bd2b-0c5d68249b1b/question-edits/227cf311-fc41-4fd9-b0e5-95022e80013c.json",
+        ".ai/content-audit-export/articles/legal-liability-and-enforcement-workflow--02b9f8da-3c2e-460a-bd2b-0c5d68249b1b/question-edits/27673cb3-8cb6-4923-b927-fa622328a5fa.json",
+        ".ai/content-audit-export/articles/legal-liability-and-enforcement-workflow--02b9f8da-3c2e-460a-bd2b-0c5d68249b1b/question-edits/57727ad9-2d3a-4fd9-8faa-e0a2435bfdbc.json",
+        ".ai/content-audit-export/articles/legal-liability-and-enforcement-workflow--02b9f8da-3c2e-460a-bd2b-0c5d68249b1b/question-edits/658998a6-1ef1-4e0f-b27d-ea895c24d275.json",
+        ".ai/content-audit-export/articles/legal-liability-and-enforcement-workflow--02b9f8da-3c2e-460a-bd2b-0c5d68249b1b/question-edits/9c58e427-26a0-4491-bd53-21548e9d25ca.json",
+        ".ai/content-audit-export/articles/legal-liability-and-enforcement-workflow--02b9f8da-3c2e-460a-bd2b-0c5d68249b1b/question-edits/b77f1295-d049-4a41-9480-830db5a4b8b5.json",
+        ".ai/content-audit-export/articles/legal-liability-and-enforcement-workflow--02b9f8da-3c2e-460a-bd2b-0c5d68249b1b/question-edits/de09fead-1580-4321-b322-07e0157aed48.json",
+        ".ai/content-audit-export/articles/legal-liability-and-enforcement-workflow--02b9f8da-3c2e-460a-bd2b-0c5d68249b1b/question-edits/e6c86256-506e-47dc-afd5-bee3f37b9e1a.json"
+      ],
+      "hashes": {
+        "original": "sha256:536675d712a4c4cc12fb905f8f49e51681200e0911a1177452f93ad1f36683fd",
+        "normalized": "sha256:13f106064810656dd46f5590a3c2a57c2b4d5aa0f432c84526dca16a3fd4ac68",
+        "candidate": "sha256:13f106064810656dd46f5590a3c2a57c2b4d5aa0f432c84526dca16a3fd4ac68",
+        "metadata_normalized": "sha256:13f106064810656dd46f5590a3c2a57c2b4d5aa0f432c84526dca16a3fd4ac68",
+        "metadata_candidate": "sha256:13f106064810656dd46f5590a3c2a57c2b4d5aa0f432c84526dca16a3fd4ac68",
+        "evidence_candidate": "sha256:13f106064810656dd46f5590a3c2a57c2b4d5aa0f432c84526dca16a3fd4ac68",
+        "sources_hash": "sha256:2f695ab2dfd1568852b5cad203677759d6cf8613953565b523f81acc3e268c02",
+        "recomputed_sources_hash": "sha256:2f695ab2dfd1568852b5cad203677759d6cf8613953565b523f81acc3e268c02",
+        "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "validation": {
+        "compose_blockers": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "bundle_validate_known_warning": "component-usage.json absent; acceptable local-first warning only",
+        "raw_pdf_gate_status": "PASS",
+        "source_audit_status": "PASS_LOCAL_FIRST",
+        "candidate_hash_matches_evidence": true,
+        "metadata_candidate_matches_candidate": true,
+        "normalized_hash_matches_metadata": true,
+        "sources_hash_matches_recomputed": true,
+        "ui_block_count": 0,
+        "placeholder_internal_note_scan_hits": [],
+        "source_hash_checks": [
+          {
+            "source_id": "bp344-2024-accessibility-routes-ramps-parking-local-b066",
+            "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+            "expected": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+            "recorded": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+            "actual": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+            "pass": true
+          },
+          {
+            "source_id": "pd1096-rirr-plan-egress-stair-local-b066",
+            "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+            "expected": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+            "recorded": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+            "actual": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+            "pass": true
+          },
+          {
+            "source_id": "ra9514-rirr-egress-separation-education-local-b066",
+            "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+            "expected": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+            "recorded": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+            "actual": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+            "pass": true
+          },
+          {
+            "source_id": "pd9514-fire-code-life-safety-local-b066",
+            "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf",
+            "expected": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+            "recorded": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+            "actual": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+            "pass": true
+          }
+        ],
+        "missing_question_edits": [],
+        "extra_question_edits": [],
+        "compose_error_status": "present_nonempty_mtime_2026-05-11T07:37:54.227Z",
+        "stale_compose_error_blocker": false,
+        "scenario_enrichment_status": "eligible-deferred"
+      }
+    },
+    {
+      "article_id": "9eb0b48e-110e-4c75-8a0c-4f83063001cf",
+      "slug": "lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty",
+      "title": "Universal Design in Practice BP 344 RA 7277",
+      "folder": ".ai/content-audit-export/articles/lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty--9eb0b48e-110e-4c75-8a0c-4f83063001cf",
+      "parsed_json_file_count": 22,
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "question_edit_paths": [
+        ".ai/content-audit-export/articles/lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty--9eb0b48e-110e-4c75-8a0c-4f83063001cf/question-edits/188ec91c-f3fd-4e34-b145-587f61f548e5.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty--9eb0b48e-110e-4c75-8a0c-4f83063001cf/question-edits/20c4c16a-b905-42d5-93ec-994d67f25f59.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty--9eb0b48e-110e-4c75-8a0c-4f83063001cf/question-edits/56dcdffb-e8bc-4a0a-9d55-681ead7beaae.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty--9eb0b48e-110e-4c75-8a0c-4f83063001cf/question-edits/695488a7-b6a8-411b-b6cb-63b3f1e682d8.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty--9eb0b48e-110e-4c75-8a0c-4f83063001cf/question-edits/77d94f06-ccb1-4fb8-8ad5-fcc8c135aca0.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty--9eb0b48e-110e-4c75-8a0c-4f83063001cf/question-edits/a959edb9-3e81-4b9d-99f9-24e05f85e7de.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty--9eb0b48e-110e-4c75-8a0c-4f83063001cf/question-edits/b2951761-b2e8-41a4-a893-19f574ed5e75.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty--9eb0b48e-110e-4c75-8a0c-4f83063001cf/question-edits/d2c6e542-5e8c-4cac-9715-6d4c866ca7d6.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty--9eb0b48e-110e-4c75-8a0c-4f83063001cf/question-edits/f386d9d8-f92f-43e8-9e05-4f017d8135e0.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty--9eb0b48e-110e-4c75-8a0c-4f83063001cf/question-edits/fe1fd1bb-a2f3-44ba-bc60-1591ab66e402.json"
+      ],
+      "hashes": {
+        "original": "sha256:79782414b64c130c6ace60c428c9235ae677f09abdb9373907a22fe45195d931",
+        "normalized": "sha256:22ee950e16f71e6c150a597f72b1080383c8f9bbbf7789375ecb58b9838e92f0",
+        "candidate": "sha256:22ee950e16f71e6c150a597f72b1080383c8f9bbbf7789375ecb58b9838e92f0",
+        "metadata_normalized": "sha256:22ee950e16f71e6c150a597f72b1080383c8f9bbbf7789375ecb58b9838e92f0",
+        "metadata_candidate": "sha256:22ee950e16f71e6c150a597f72b1080383c8f9bbbf7789375ecb58b9838e92f0",
+        "evidence_candidate": "sha256:22ee950e16f71e6c150a597f72b1080383c8f9bbbf7789375ecb58b9838e92f0",
+        "sources_hash": "sha256:2f695ab2dfd1568852b5cad203677759d6cf8613953565b523f81acc3e268c02",
+        "recomputed_sources_hash": "sha256:2f695ab2dfd1568852b5cad203677759d6cf8613953565b523f81acc3e268c02",
+        "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "validation": {
+        "compose_blockers": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "bundle_validate_known_warning": "component-usage.json absent; acceptable local-first warning only",
+        "raw_pdf_gate_status": "PASS",
+        "source_audit_status": "PASS_LOCAL_FIRST",
+        "candidate_hash_matches_evidence": true,
+        "metadata_candidate_matches_candidate": true,
+        "normalized_hash_matches_metadata": true,
+        "sources_hash_matches_recomputed": true,
+        "ui_block_count": 0,
+        "placeholder_internal_note_scan_hits": [],
+        "source_hash_checks": [
+          {
+            "source_id": "bp344-2024-accessibility-routes-ramps-parking-local-b066",
+            "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+            "expected": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+            "recorded": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+            "actual": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+            "pass": true
+          },
+          {
+            "source_id": "pd1096-rirr-plan-egress-stair-local-b066",
+            "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+            "expected": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+            "recorded": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+            "actual": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+            "pass": true
+          },
+          {
+            "source_id": "ra9514-rirr-egress-separation-education-local-b066",
+            "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+            "expected": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+            "recorded": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+            "actual": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+            "pass": true
+          },
+          {
+            "source_id": "pd9514-fire-code-life-safety-local-b066",
+            "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf",
+            "expected": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+            "recorded": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+            "actual": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+            "pass": true
+          }
+        ],
+        "missing_question_edits": [],
+        "extra_question_edits": [],
+        "compose_error_status": "absent",
+        "stale_compose_error_blocker": false,
+        "scenario_enrichment_status": "eligible-deferred"
+      }
+    },
+    {
+      "article_id": "6c4f539a-c589-4f53-bbfe-d4396641a3e6",
+      "slug": "lea-dsgn-011-01-core-concept",
+      "title": "Floor Plans",
+      "folder": ".ai/content-audit-export/articles/lea-dsgn-011-01-core-concept--6c4f539a-c589-4f53-bbfe-d4396641a3e6",
+      "parsed_json_file_count": 24,
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "question_edit_paths": [
+        ".ai/content-audit-export/articles/lea-dsgn-011-01-core-concept--6c4f539a-c589-4f53-bbfe-d4396641a3e6/question-edits/0c804e94-bea7-4c99-9bf6-687427307d6d.json",
+        ".ai/content-audit-export/articles/lea-dsgn-011-01-core-concept--6c4f539a-c589-4f53-bbfe-d4396641a3e6/question-edits/1518d0a9-7fd2-42d4-aabc-11441dde4189.json",
+        ".ai/content-audit-export/articles/lea-dsgn-011-01-core-concept--6c4f539a-c589-4f53-bbfe-d4396641a3e6/question-edits/1a7f4a3c-5020-4b0c-852c-33b00cf1d629.json",
+        ".ai/content-audit-export/articles/lea-dsgn-011-01-core-concept--6c4f539a-c589-4f53-bbfe-d4396641a3e6/question-edits/3af86aba-b257-4457-99d4-f16670ae87b4.json",
+        ".ai/content-audit-export/articles/lea-dsgn-011-01-core-concept--6c4f539a-c589-4f53-bbfe-d4396641a3e6/question-edits/4a8ae14b-ea51-43c9-8f6f-ec6dc588848d.json",
+        ".ai/content-audit-export/articles/lea-dsgn-011-01-core-concept--6c4f539a-c589-4f53-bbfe-d4396641a3e6/question-edits/52547862-2eab-49d4-b68e-dfb07f453967.json",
+        ".ai/content-audit-export/articles/lea-dsgn-011-01-core-concept--6c4f539a-c589-4f53-bbfe-d4396641a3e6/question-edits/6e707d6f-5370-4fdd-a180-afbbe4a94b8e.json",
+        ".ai/content-audit-export/articles/lea-dsgn-011-01-core-concept--6c4f539a-c589-4f53-bbfe-d4396641a3e6/question-edits/a2c0eb56-b546-4bef-8bdc-826c27fa9f5c.json",
+        ".ai/content-audit-export/articles/lea-dsgn-011-01-core-concept--6c4f539a-c589-4f53-bbfe-d4396641a3e6/question-edits/b1ef73e0-5627-43b5-8c4e-638bcafbe850.json",
+        ".ai/content-audit-export/articles/lea-dsgn-011-01-core-concept--6c4f539a-c589-4f53-bbfe-d4396641a3e6/question-edits/b8a6c28d-484f-45c9-b9bf-fdb367cc6436.json"
+      ],
+      "hashes": {
+        "original": "sha256:37cc1d98b17d63b56d78f824d8f6930e43ad4e0b466764a192ebaffb64d9908e",
+        "normalized": "sha256:0260c5d83c0582509ac04bc1976305984cce39a8752c0577e514294a60d523e7",
+        "candidate": "sha256:0260c5d83c0582509ac04bc1976305984cce39a8752c0577e514294a60d523e7",
+        "metadata_normalized": "sha256:0260c5d83c0582509ac04bc1976305984cce39a8752c0577e514294a60d523e7",
+        "metadata_candidate": "sha256:0260c5d83c0582509ac04bc1976305984cce39a8752c0577e514294a60d523e7",
+        "evidence_candidate": "sha256:0260c5d83c0582509ac04bc1976305984cce39a8752c0577e514294a60d523e7",
+        "sources_hash": "sha256:2f695ab2dfd1568852b5cad203677759d6cf8613953565b523f81acc3e268c02",
+        "recomputed_sources_hash": "sha256:2f695ab2dfd1568852b5cad203677759d6cf8613953565b523f81acc3e268c02",
+        "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "validation": {
+        "compose_blockers": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "bundle_validate_known_warning": "component-usage.json absent; acceptable local-first warning only",
+        "raw_pdf_gate_status": "PASS",
+        "source_audit_status": "PASS_LOCAL_FIRST",
+        "candidate_hash_matches_evidence": true,
+        "metadata_candidate_matches_candidate": true,
+        "normalized_hash_matches_metadata": true,
+        "sources_hash_matches_recomputed": true,
+        "ui_block_count": 0,
+        "placeholder_internal_note_scan_hits": [],
+        "source_hash_checks": [
+          {
+            "source_id": "bp344-2024-accessibility-routes-ramps-parking-local-b066",
+            "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+            "expected": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+            "recorded": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+            "actual": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+            "pass": true
+          },
+          {
+            "source_id": "pd1096-rirr-plan-egress-stair-local-b066",
+            "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+            "expected": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+            "recorded": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+            "actual": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+            "pass": true
+          },
+          {
+            "source_id": "ra9514-rirr-egress-separation-education-local-b066",
+            "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+            "expected": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+            "recorded": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+            "actual": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+            "pass": true
+          },
+          {
+            "source_id": "pd9514-fire-code-life-safety-local-b066",
+            "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf",
+            "expected": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+            "recorded": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+            "actual": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+            "pass": true
+          }
+        ],
+        "missing_question_edits": [],
+        "extra_question_edits": [],
+        "compose_error_status": "present_nonempty_mtime_2026-05-09T17:04:30.834Z",
+        "stale_compose_error_blocker": false,
+        "scenario_enrichment_status": "eligible-deferred"
+      }
+    },
+    {
+      "article_id": "17acdb19-55dc-4136-862d-62825aa8fb4b",
+      "slug": "lea-dsgn-007-06-core-concept",
+      "title": "Circulation",
+      "folder": ".ai/content-audit-export/articles/lea-dsgn-007-06-core-concept--17acdb19-55dc-4136-862d-62825aa8fb4b",
+      "parsed_json_file_count": 24,
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "question_edit_paths": [
+        ".ai/content-audit-export/articles/lea-dsgn-007-06-core-concept--17acdb19-55dc-4136-862d-62825aa8fb4b/question-edits/031d88a8-722e-42af-8173-8a4c79b1e274.json",
+        ".ai/content-audit-export/articles/lea-dsgn-007-06-core-concept--17acdb19-55dc-4136-862d-62825aa8fb4b/question-edits/0d9b0502-f89b-49e1-a15c-924f3d8fdb98.json",
+        ".ai/content-audit-export/articles/lea-dsgn-007-06-core-concept--17acdb19-55dc-4136-862d-62825aa8fb4b/question-edits/4198d010-01f1-4143-b7ce-c3d8427b092f.json",
+        ".ai/content-audit-export/articles/lea-dsgn-007-06-core-concept--17acdb19-55dc-4136-862d-62825aa8fb4b/question-edits/477ee9dc-2d6e-4147-a8e9-d042824b1a3f.json",
+        ".ai/content-audit-export/articles/lea-dsgn-007-06-core-concept--17acdb19-55dc-4136-862d-62825aa8fb4b/question-edits/58a10dca-18ec-4ecb-91d5-c756988f65e9.json",
+        ".ai/content-audit-export/articles/lea-dsgn-007-06-core-concept--17acdb19-55dc-4136-862d-62825aa8fb4b/question-edits/679cb3cb-74dd-4f37-953b-7cd33979e88c.json",
+        ".ai/content-audit-export/articles/lea-dsgn-007-06-core-concept--17acdb19-55dc-4136-862d-62825aa8fb4b/question-edits/829bc940-9a16-414d-9b8a-02ac0bc2b8f4.json",
+        ".ai/content-audit-export/articles/lea-dsgn-007-06-core-concept--17acdb19-55dc-4136-862d-62825aa8fb4b/question-edits/c08c2aba-524c-49fe-bc6c-483c799487b9.json",
+        ".ai/content-audit-export/articles/lea-dsgn-007-06-core-concept--17acdb19-55dc-4136-862d-62825aa8fb4b/question-edits/d83f0766-88b2-44c7-b654-1c51c0dcd584.json",
+        ".ai/content-audit-export/articles/lea-dsgn-007-06-core-concept--17acdb19-55dc-4136-862d-62825aa8fb4b/question-edits/db1f408a-512e-44f7-8083-e69db48de6ca.json"
+      ],
+      "hashes": {
+        "original": "sha256:8204098a9af7eb0243cbaad799601f5cdb5af3773d394e14def0e363bd99e871",
+        "normalized": "sha256:feb467d440212dc6911413a641cb00db6e2067d338d6307be4f71e64f134d771",
+        "candidate": "sha256:feb467d440212dc6911413a641cb00db6e2067d338d6307be4f71e64f134d771",
+        "metadata_normalized": "sha256:feb467d440212dc6911413a641cb00db6e2067d338d6307be4f71e64f134d771",
+        "metadata_candidate": "sha256:feb467d440212dc6911413a641cb00db6e2067d338d6307be4f71e64f134d771",
+        "evidence_candidate": "sha256:feb467d440212dc6911413a641cb00db6e2067d338d6307be4f71e64f134d771",
+        "sources_hash": "sha256:2f695ab2dfd1568852b5cad203677759d6cf8613953565b523f81acc3e268c02",
+        "recomputed_sources_hash": "sha256:2f695ab2dfd1568852b5cad203677759d6cf8613953565b523f81acc3e268c02",
+        "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "validation": {
+        "compose_blockers": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "bundle_validate_known_warning": "component-usage.json absent; acceptable local-first warning only",
+        "raw_pdf_gate_status": "PASS",
+        "source_audit_status": "PASS_LOCAL_FIRST",
+        "candidate_hash_matches_evidence": true,
+        "metadata_candidate_matches_candidate": true,
+        "normalized_hash_matches_metadata": true,
+        "sources_hash_matches_recomputed": true,
+        "ui_block_count": 0,
+        "placeholder_internal_note_scan_hits": [],
+        "source_hash_checks": [
+          {
+            "source_id": "bp344-2024-accessibility-routes-ramps-parking-local-b066",
+            "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+            "expected": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+            "recorded": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+            "actual": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+            "pass": true
+          },
+          {
+            "source_id": "pd1096-rirr-plan-egress-stair-local-b066",
+            "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+            "expected": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+            "recorded": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+            "actual": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+            "pass": true
+          },
+          {
+            "source_id": "ra9514-rirr-egress-separation-education-local-b066",
+            "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+            "expected": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+            "recorded": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+            "actual": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+            "pass": true
+          },
+          {
+            "source_id": "pd9514-fire-code-life-safety-local-b066",
+            "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf",
+            "expected": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+            "recorded": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+            "actual": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+            "pass": true
+          }
+        ],
+        "missing_question_edits": [],
+        "extra_question_edits": [],
+        "compose_error_status": "present_nonempty_mtime_2026-05-09T17:04:30.659Z",
+        "stale_compose_error_blocker": false,
+        "scenario_enrichment_status": "eligible-deferred"
+      }
+    },
+    {
+      "article_id": "81a065b0-77f6-4f96-98cd-a3239c6beae4",
+      "slug": "lea-dsgn-007-10-core-concept",
+      "title": "Stair Design",
+      "folder": ".ai/content-audit-export/articles/lea-dsgn-007-10-core-concept--81a065b0-77f6-4f96-98cd-a3239c6beae4",
+      "parsed_json_file_count": 24,
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "question_edit_paths": [
+        ".ai/content-audit-export/articles/lea-dsgn-007-10-core-concept--81a065b0-77f6-4f96-98cd-a3239c6beae4/question-edits/0015633f-cdcf-407a-8c84-88523f0610da.json",
+        ".ai/content-audit-export/articles/lea-dsgn-007-10-core-concept--81a065b0-77f6-4f96-98cd-a3239c6beae4/question-edits/05767463-cf8d-4050-8fa0-24a8c4ea119f.json",
+        ".ai/content-audit-export/articles/lea-dsgn-007-10-core-concept--81a065b0-77f6-4f96-98cd-a3239c6beae4/question-edits/2ca1c9df-9982-4fad-8ce7-380837813933.json",
+        ".ai/content-audit-export/articles/lea-dsgn-007-10-core-concept--81a065b0-77f6-4f96-98cd-a3239c6beae4/question-edits/44054702-356f-4814-b89a-1bb7cae9c6e4.json",
+        ".ai/content-audit-export/articles/lea-dsgn-007-10-core-concept--81a065b0-77f6-4f96-98cd-a3239c6beae4/question-edits/6caeec0b-e7c3-4cd2-a194-bfed430cd669.json",
+        ".ai/content-audit-export/articles/lea-dsgn-007-10-core-concept--81a065b0-77f6-4f96-98cd-a3239c6beae4/question-edits/859cefbf-59d5-4f60-a3c8-7ba7fce1077a.json",
+        ".ai/content-audit-export/articles/lea-dsgn-007-10-core-concept--81a065b0-77f6-4f96-98cd-a3239c6beae4/question-edits/89843553-d2b1-4a89-a575-ca85a3748b8e.json",
+        ".ai/content-audit-export/articles/lea-dsgn-007-10-core-concept--81a065b0-77f6-4f96-98cd-a3239c6beae4/question-edits/c4bc8b91-69da-4ede-903a-9d59f69537c1.json",
+        ".ai/content-audit-export/articles/lea-dsgn-007-10-core-concept--81a065b0-77f6-4f96-98cd-a3239c6beae4/question-edits/da9e6dc8-95a5-474c-9fd8-c90576dd65bf.json",
+        ".ai/content-audit-export/articles/lea-dsgn-007-10-core-concept--81a065b0-77f6-4f96-98cd-a3239c6beae4/question-edits/e651348d-c56b-4c34-9bd5-1d494e299c4d.json"
+      ],
+      "hashes": {
+        "original": "sha256:f787ead195d73b989c1a7ff76cc8185b158bf4cebeb1e7ca67dc51d87c655394",
+        "normalized": "sha256:5cfd4f7e0294a634c61f64070579ea27a5e3058d35075e24fa0c543ad7f8a1bc",
+        "candidate": "sha256:5cfd4f7e0294a634c61f64070579ea27a5e3058d35075e24fa0c543ad7f8a1bc",
+        "metadata_normalized": "sha256:5cfd4f7e0294a634c61f64070579ea27a5e3058d35075e24fa0c543ad7f8a1bc",
+        "metadata_candidate": "sha256:5cfd4f7e0294a634c61f64070579ea27a5e3058d35075e24fa0c543ad7f8a1bc",
+        "evidence_candidate": "sha256:5cfd4f7e0294a634c61f64070579ea27a5e3058d35075e24fa0c543ad7f8a1bc",
+        "sources_hash": "sha256:2f695ab2dfd1568852b5cad203677759d6cf8613953565b523f81acc3e268c02",
+        "recomputed_sources_hash": "sha256:2f695ab2dfd1568852b5cad203677759d6cf8613953565b523f81acc3e268c02",
+        "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "validation": {
+        "compose_blockers": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "bundle_validate_known_warning": "component-usage.json absent; acceptable local-first warning only",
+        "raw_pdf_gate_status": "PASS",
+        "source_audit_status": "PASS_LOCAL_FIRST",
+        "candidate_hash_matches_evidence": true,
+        "metadata_candidate_matches_candidate": true,
+        "normalized_hash_matches_metadata": true,
+        "sources_hash_matches_recomputed": true,
+        "ui_block_count": 0,
+        "placeholder_internal_note_scan_hits": [],
+        "source_hash_checks": [
+          {
+            "source_id": "bp344-2024-accessibility-routes-ramps-parking-local-b066",
+            "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+            "expected": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+            "recorded": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+            "actual": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+            "pass": true
+          },
+          {
+            "source_id": "pd1096-rirr-plan-egress-stair-local-b066",
+            "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+            "expected": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+            "recorded": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+            "actual": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+            "pass": true
+          },
+          {
+            "source_id": "ra9514-rirr-egress-separation-education-local-b066",
+            "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+            "expected": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+            "recorded": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+            "actual": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+            "pass": true
+          },
+          {
+            "source_id": "pd9514-fire-code-life-safety-local-b066",
+            "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf",
+            "expected": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+            "recorded": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+            "actual": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+            "pass": true
+          }
+        ],
+        "missing_question_edits": [],
+        "extra_question_edits": [],
+        "compose_error_status": "present_nonempty_mtime_2026-05-09T17:04:27.484Z",
+        "stale_compose_error_blocker": false,
+        "scenario_enrichment_status": "eligible-deferred"
+      }
+    }
+  ],
+  "git_diff_check": {
+    "command": "git diff --check -- .ai/03_plans/source-audited-local-first-batches-handoff.md .ai/content-audit-export/sync-state.json .ai/content-audit-export/source-audited-article-batch-066-local-first-report.md .ai/content-audit-export/source-audited-article-batch-066-local-first-ledger.json .ai/content-audit-export/source-audited-article-batch-066-local-first-scoped-checks.json <five Batch 066 article folders>",
+    "status": "PASS",
+    "checked_at": "2026-05-11T23:24:33+08:00",
+    "blockers": 0
+  },
+  "supabase_push_attempted": false,
+  "deploy_attempted": false,
+  "commit_attempted": false
+}

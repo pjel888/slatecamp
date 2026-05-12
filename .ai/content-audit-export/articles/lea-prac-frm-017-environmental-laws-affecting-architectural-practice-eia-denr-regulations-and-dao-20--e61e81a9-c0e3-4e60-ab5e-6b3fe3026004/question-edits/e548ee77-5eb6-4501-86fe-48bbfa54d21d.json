@@ -1,0 +1,72 @@
+{
+  "question_id": "e548ee77-5eb6-4501-86fe-48bbfa54d21d",
+  "baseline_hash": "sha256:2e4877093f7d9b41664dfd0a53b9c8878b20a05ad5aaca1c4f4b2eca88ef013f",
+  "action": "replace",
+  "reason": "source-audited-article-batch-021-local-first rewrote this linked question to align with the local source audit for lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30.",
+  "approved_by": "codex-local-source-audit-batch-021",
+  "approved_at": "2026-05-11T10:30:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
+    "parent_article_slug": "lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "DENR DAO 2003-30 EIS System Implementing Rules checked from local raw PDF and refined Markdown",
+    "checked_markdown_lines": [
+      "DAO 2003-30 refined markdown lines 13-150",
+      "DAO 2003-30 refined markdown lines 150-360"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DENR/DENR DAO 2003-30 - EIS System Implementing Rules.pdf",
+        "sha256": "sha256:079285ca972d0be053faa148fe6770c12c396408c35e6739929b81685e775fb7",
+        "source_id": "denr-dao-2003-30-eis-system-local",
+        "locator": "DAO 2003-30 refined markdown lines 13-150 and 150-360"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DENR/DENR DAO 2003-30 - EIS System Implementing Rules.md",
+        "sha256": "sha256:3a77a918f5e5a62043b3a3e75d9583372031da82056f882b49c317e94f119763",
+        "source_id": "denr-dao-2003-30-eis-system-local",
+        "locator": "DAO 2003-30 refined markdown lines 13-150 and 150-360"
+      }
+    ],
+    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+  },
+  "proposed": {
+    "text": "Which checked DAO 2003-30 term describes an environmentally sensitive area where significant impacts are expected if certain projects are located there?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Environmentally Critical Area"
+      },
+      {
+        "id": "b",
+        "text": "Certificate of Non-Coverage"
+      },
+      {
+        "id": "c",
+        "text": "Architectural program"
+      },
+      {
+        "id": "d",
+        "text": "Occupancy load"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "DAO 2003-30 defines Environmentally Critical Area as an environmentally sensitive area where significant environmental impacts are expected from certain projects or programs.",
+    "explanation": "This is distinct from an Environmentally Critical Project.",
+    "code_citation": "DAO 2003-30 refined markdown lines 47-60",
+    "bloom_level": "apply",
+    "application_context": "code_interpretation",
+    "practice_context": [
+      "environmental compliance",
+      "ECA"
+    ],
+    "difficulty": 0.66,
+    "is_assessment": false,
+    "model_id": "BATCH-021-dao-002"
+  }
+}

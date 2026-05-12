@@ -1,7 +1,54 @@
 {
   "article_id": "7d26e59b-efc4-4ced-890b-6ec1dfee8254",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "source_count": 0,
-  "sources": []
+  "sources_hash": "sha256:2676a15dc15faedf412e1746fdf22df559bb778da2aec02a33927efa8338f772",
+  "source_count": 2,
+  "sources": [
+    {
+      "source_id": "filipinoarch-local-raw-pdf--b049-7d26e59b-01",
+      "article_id": "7d26e59b-efc4-4ced-890b-6ec1dfee8254",
+      "label": "Filipino Architecture - local raw PDF",
+      "url": null,
+      "source_type": "local_raw_pdf",
+      "description": "Filipino Architecture - local raw PDF; local raw PDF checked first; refined markdown used only as locator. Filipino Architecture refined markdown lines 820-895.",
+      "is_verified": true,
+      "sort_order": 0,
+      "created_at": "2026-05-11T20:35:00.000+08:00",
+      "updated_at": "2026-05-11T20:35:00.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Filipino Architecture.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/002-History/Filipino Architecture.pdf",
+      "raw_pdf_sha256": "sha256:3d6f220218c46fe78e37d152d1c51504fd3c7d413cf14e71b39e93c7e1a5831d",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Filipino Architecture.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Filipino Architecture.md",
+      "refined_markdown_sha256": "sha256:f60dacc37e4b6634875ed68c18a55288e455476697fc250905460bbe6ac25ce1",
+      "source_locator": "Filipino Architecture refined markdown lines 820-895",
+      "checked_markdown_lines": [
+        "Filipino Architecture refined markdown lines 820-895"
+      ],
+      "local_audit_note": "Primary truth is the local raw PDF family; refined markdown line ranges are locator aids for the checked provisions."
+    },
+    {
+      "source_id": "archhistory-local-raw-pdf--b049-7d26e59b-02",
+      "article_id": "7d26e59b-efc4-4ced-890b-6ec1dfee8254",
+      "label": "Module - Architectural History - local raw PDF",
+      "url": null,
+      "source_type": "local_raw_pdf",
+      "description": "Module - Architectural History - local raw PDF; local raw PDF checked first; refined markdown used only as locator. Module - Architectural History refined markdown lines 4830-4915.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-11T20:35:00.000+08:00",
+      "updated_at": "2026-05-11T20:35:00.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Module - Architectural History.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/002-History/Module - Architectural History.pdf",
+      "raw_pdf_sha256": "sha256:d88ccdfaad42e15b3a9f844539aba0b0d614b165d4ef33f082537d72ba13531d",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Module - Architectural History.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Module - Architectural History.md",
+      "refined_markdown_sha256": "sha256:d3fc240b16da21c71b8467f6c3bf8599cd422b4c8055e2e9647f0aa2b2e042a1",
+      "source_locator": "Module - Architectural History refined markdown lines 4830-4915",
+      "checked_markdown_lines": [
+        "Module - Architectural History refined markdown lines 4830-4915"
+      ],
+      "local_audit_note": "Primary truth is the local raw PDF family; refined markdown line ranges are locator aids for the checked provisions."
+    }
+  ]
 }

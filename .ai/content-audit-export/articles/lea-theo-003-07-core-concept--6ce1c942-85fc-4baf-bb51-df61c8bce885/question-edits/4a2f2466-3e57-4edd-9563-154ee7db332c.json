@@ -1,0 +1,77 @@
+{
+  "question_id": "4a2f2466-3e57-4edd-9563-154ee7db332c",
+  "baseline_hash": "sha256:c5bdc54ed7286c6f72a62e6cc2f68cba8397aa8e5615b0d50daf664060719a59",
+  "action": "replace",
+  "reason": "source-audited-article-batch-058-local-first: local raw PDF backed replacement constrained to checked Batch 058 source families.",
+  "approved_by": "codex-local-first-batch-058",
+  "approved_at": "2026-05-11T20:31:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "6ce1c942-85fc-4baf-bb51-df61c8bce885",
+    "parent_article_slug": "lea-theo-003-07-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "TOA 3 Design Perception refined markdown lines 500-514 and raw PDF pages 57-59; theory refined markdown lines 154-173 and 328 and raw PDF pages 8 and 17; George Salvan Architectural Theories of Design refined markdown lines 15740-15903 and raw PDF pages 473-478",
+    "checked_markdown_lines": [
+      "TOA 3 Design Perception refined markdown lines 500-514",
+      "theory refined markdown lines 154-173",
+      "theory refined markdown line 328",
+      "George Salvan Architectural Theories of Design refined markdown lines 15740-15903"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "toa3-design-perception-local-raw-pdf--b058-6ce1c942-01",
+        "label": "TOA 3 Design Perception - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 3 (Design Perception).pdf",
+        "sha256": "sha256:807be9f1a301d579123d8fa3ec680011b1906d6a4edcb6dc061c9a57e5ea9534",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 3 (Design Perception).md",
+        "refined_markdown_sha256": "sha256:49309b3dc5eea661ca7cad04cceb91897ac29fee6dd8e43cf6c3f60f163d404a",
+        "locator": "TOA 3 Design Perception refined markdown lines 500-514 and raw PDF pages 57-59"
+      },
+      {
+        "source_id": "theory-local-raw-pdf--b058-6ce1c942-02",
+        "label": "theory - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+        "sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+        "refined_markdown_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+        "locator": "theory refined markdown lines 154-173 and 328 and raw PDF pages 8 and 17"
+      },
+      {
+        "source_id": "salvan-theory-local-raw-pdf--b058-6ce1c942-03",
+        "label": "George Salvan Architectural Theories of Design - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
+        "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
+        "locator": "George Salvan Architectural Theories of Design refined markdown lines 15740-15903 and raw PDF pages 473-478"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 058 checked local raw PDF source scope."
+  },
+  "proposed": {
+    "text": "What is personal space?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The variable and subjective distance at which a person feels comfortable with another person."
+      },
+      {
+        "id": "b",
+        "text": "A fixed legal setback line."
+      },
+      {
+        "id": "c",
+        "text": "Only the area inside a bedroom."
+      },
+      {
+        "id": "d",
+        "text": "A structural bay dimension."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The variable and subjective distance at which a person feels comfortable with another person. This answer is supported by the checked Batch 058 local raw PDF source families for Edward T. Hall: Proxemics and Personal Space.",
+    "explanation": "The variable and subjective distance at which a person feels comfortable with another person. The Batch 058 source audit used local raw PDFs first and refined markdown only as locator evidence for Edward T. Hall: Proxemics and Personal Space.",
+    "code_citation": "TOA 3 Design Perception refined markdown lines 500-514 and raw PDF pages 57-59"
+  },
+  "batch_question_template_index": 3
+}

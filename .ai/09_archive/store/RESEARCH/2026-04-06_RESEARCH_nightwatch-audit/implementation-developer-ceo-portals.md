@@ -38,7 +38,7 @@
     .eq('user_id', user.id)
     .in('role', ['super_admin', 'developer'])
     .maybeSingle()
-  
+
   if (!role) redirect('/dashboard')
   ```
 
@@ -67,7 +67,7 @@
     ...log,
     message: log.message.replace(/token=[\w-]+/g, 'token=***'),
     metadata: JSON.stringify(log.metadata).replace(
-      /"(password|secret|key)":\s*"[^"]*"/g, 
+      /"(password|secret|key)":\s*"[^"]*"/g,
       '"$1": "***"'
     )
   })
@@ -85,7 +85,7 @@
     price_php DECIMAL(10,2) NOT NULL,
     recorded_at TIMESTAMPTZ DEFAULT NOW()
   );
-  
+
   CREATE INDEX idx_sub_snapshots_date ON subscription_snapshots(recorded_at);
   ```
 

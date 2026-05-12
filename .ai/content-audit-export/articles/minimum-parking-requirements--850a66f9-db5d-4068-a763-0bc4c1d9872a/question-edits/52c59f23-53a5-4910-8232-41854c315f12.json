@@ -1,0 +1,63 @@
+{
+  "question_id": "52c59f23-53a5-4910-8232-41854c315f12",
+  "baseline_hash": "sha256:39f15d3e241495aa7b1de62f909920ad097bf092974c6f35c594d25db676e6c3",
+  "action": "replace",
+  "reason": "source-audited-article-batch-023-local-first rewrote the item to match locally checked BP 344 and PD 1096 source evidence.",
+  "approved_by": "codex-local-source-audit-batch-023",
+  "approved_at": "2026-05-10T18:16:14.069Z",
+  "source_audit_support": {
+    "parent_article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
+    "parent_article_slug": "minimum-parking-requirements",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "checked_sources": [
+      {
+        "source_id": "pd1096-2004-rirr-dpwh-official-local",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 RIRR refined markdown lines 1627-1694, 2703-2747, and 2788-2805"
+      }
+    ],
+    "local_source_safe_action": "Replaced the prior item with a source-bounded MCQ using only checked local raw-source locators."
+  },
+  "proposed": {
+    "text": "Which source governs ordinary minimum off-street parking and loading counts for this article?",
+    "options": [
+      {
+        "id": "a",
+        "text": "PD 1096 RIRR Table VII.4"
+      },
+      {
+        "id": "b",
+        "text": "The BP 344 accessible-parking table only"
+      },
+      {
+        "id": "c",
+        "text": "IBC frontage increase rules"
+      },
+      {
+        "id": "d",
+        "text": "A local zoning summary without a source locator"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "PD 1096 RIRR Table VII.4 provides the ordinary off-street parking and loading ratios.",
+    "explanation": "PD 1096 RIRR Table VII.4 provides the ordinary off-street parking and loading ratios.",
+    "code_citation": "PD 1096 RIRR Table VII.4",
+    "bloom_level": "apply",
+    "application_context": "lea_code_and_accessibility_review",
+    "practice_context": [
+      "Minimum Parking Requirements",
+      "LEA Architectural Design and Site Planning"
+    ],
+    "difficulty": 0.5,
+    "is_assessment": false,
+    "model_id": "BATCH-023-minimum-parking-requirements-001"
+  }
+}

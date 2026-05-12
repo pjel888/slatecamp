@@ -1,0 +1,76 @@
+{
+  "question_id": "33905c86-e9f4-40b5-9d1d-7c21273c8058",
+  "baseline_hash": "sha256:1d64bfdd9ff7a3ea811b0f92b794ddfe06aeffac80ef74771fa1b8a9c9de165f",
+  "action": "replace",
+  "reason": "source-audited-article-batch-022-local-first rewrote this linked question to align with the local source audit for lea-prac-svc-023-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-022",
+  "approved_at": "2026-05-11T11:45:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "01e537a7-be03-49ec-b745-258474c27f70",
+    "parent_article_slug": "lea-prac-svc-023-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UAP Standards refined markdown lines 79-100, 217-265, 416-458, 915-964, 1129-1168, and 1174-1216",
+    "checked_markdown_lines": [
+      "UAP Standards lines 79-100",
+      "UAP Standards lines 217-265",
+      "UAP Standards lines 416-458",
+      "UAP Standards lines 915-964",
+      "UAP Standards lines 1129-1168",
+      "UAP Standards lines 1174-1216"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "source_id": "uap-standards-selection-compensation-supervision-cm-local",
+        "locator": "UAP Standards refined markdown lines 79-100, 217-265, 416-458, 915-964, 1129-1168, and 1174-1216"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "source_id": "uap-standards-selection-compensation-supervision-cm-local",
+        "locator": "UAP Standards refined markdown lines 79-100, 217-265, 416-458, 915-964, 1129-1168, and 1174-1216"
+      }
+    ],
+    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+  },
+  "proposed": {
+    "text": "Which statement about direct selection is source-safe?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is a method for selecting the architect, not a compensation formula"
+      },
+      {
+        "id": "b",
+        "text": "It is the same as MDPE"
+      },
+      {
+        "id": "c",
+        "text": "It is a fixed percentage fee"
+      },
+      {
+        "id": "d",
+        "text": "It is a construction change order"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "Direct selection appears in the selection-method section, not in the compensation formula itself.",
+    "explanation": "The incorrect options import a different actor, service category, timing rule, or authority path that the checked local source does not support.",
+    "code_citation": "UAP Standards lines 79-100",
+    "bloom_level": "apply",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited batch 022"
+    ],
+    "difficulty": 0.46,
+    "is_assessment": false,
+    "model_id": "BATCH-022-lea-prac-svc-023-core-concept-007"
+  }
+}

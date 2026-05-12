@@ -1,7 +1,55 @@
 {
   "article_id": "4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "source_count": 0,
-  "sources": []
+  "sources_hash": "sha256:a949f428922e912b46a91c0c632397c5699e8a02ad769e8ab0dd5ffa63245dd1",
+  "source_count": 2,
+  "sources": [
+    {
+      "source_id": "salvan-character-local-raw-pdf--b054-4a8c01ab-01",
+      "article_id": "4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+      "label": "George Salvan Architectural Character and the History of Architecture - local raw PDF",
+      "url": null,
+      "source_type": "local_raw_pdf",
+      "description": "George Salvan Architectural Character and the History of Architecture - local raw PDF; local raw PDF checked first; refined markdown used only as locator. George Salvan Architectural Character refined markdown lines 479-487 and 4931-4935.",
+      "is_verified": true,
+      "sort_order": 0,
+      "created_at": "2026-05-11T19:22:00.000+08:00",
+      "updated_at": "2026-05-11T19:22:00.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Character and the History of Architecture.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Character and the History of Architecture.pdf",
+      "raw_pdf_sha256": "sha256:55c4fa2d43bbfd27cffb86d0aac4ad960032e178e1e25c29d4eb351297bfc069",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Character and the History of Architecture.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Character and the History of Architecture.md",
+      "refined_markdown_sha256": "sha256:be8e760bef8f7ceb573742d996dabb202f0353e19b4ab9283ec2de7dfc1fccea",
+      "source_locator": "George Salvan Architectural Character refined markdown lines 479-487 and 4931-4935",
+      "checked_markdown_lines": [
+        "George Salvan Architectural Character refined markdown lines 479-487",
+        "George Salvan Architectural Character refined markdown lines 4931-4935"
+      ],
+      "local_audit_note": "Primary truth is the local raw PDF family; refined markdown line ranges are locator aids for the checked claims."
+    },
+    {
+      "source_id": "history-local-raw-pdf--b054-4a8c01ab-02",
+      "article_id": "4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+      "label": "history - local raw PDF",
+      "url": null,
+      "source_type": "local_raw_pdf",
+      "description": "history - local raw PDF; local raw PDF checked first; refined markdown used only as locator. history refined markdown line 177.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-11T19:22:00.000+08:00",
+      "updated_at": "2026-05-11T19:22:00.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/history.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/002-History/history.pdf",
+      "raw_pdf_sha256": "sha256:7fc1e6e6a8433afecc676c9037a96172f02489985033931ea1606f29557b7d18",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/history.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/history.md",
+      "refined_markdown_sha256": "sha256:9a0ef73aa09f9ebcb61002014c6a1157bf1c7d6123f835ecf87bc4ac9374b0ce",
+      "source_locator": "history refined markdown line 177",
+      "checked_markdown_lines": [
+        "history refined markdown line 177"
+      ],
+      "local_audit_note": "Primary truth is the local raw PDF family; refined markdown line ranges are locator aids for the checked claims."
+    }
+  ]
 }

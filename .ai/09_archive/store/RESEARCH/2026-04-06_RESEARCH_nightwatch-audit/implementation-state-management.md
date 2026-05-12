@@ -40,7 +40,7 @@
   ```typescript
   // BEFORE: Store elapsedMs, compute remaining
   // AFTER: Store endedAt (absolute timestamp), compute remaining
-  
+
   interface QuizTimerState {
     sessionId: string | null
     startedAt: number | null      // Timestamp when timer started
@@ -49,7 +49,7 @@
     isRunning: boolean
     // ...
   }
-  
+
   // startTimer now sets endedAt, not just limitMs
   startTimer: ({ limitMs, sessionId }) => {
     const now = Date.now()
@@ -61,18 +61,18 @@
       isRunning: true,
     })
   }
-  
+
   // tickTimer now computes remaining from endedAt
   tickTimer: () => {
     const { isRunning, endedAt } = get()
     if (!isRunning || !endedAt) return
-    
+
     const remaining = Math.max(0, endedAt - Date.now())
     if (remaining <= 0) {
       // Timer expired
     }
   }
-  
+
   // On hydration, compute remaining from endedAt
   // This prevents "extra time" on refresh
   ```
@@ -88,12 +88,12 @@
     isSubmitting: boolean
     lastHeartbeatAt: number | null
   }
-  
+
   // Add to actions:
   submitAnswer: async (questionId, answer) => {
     const { isSubmitting } = get()
     if (isSubmitting) return // Prevent double-submit
-    
+
     set({ isSubmitting: true })
     try {
       const result = await submitAnswerAction(...)
@@ -102,7 +102,7 @@
       set({ isSubmitting: false })
     }
   }
-  
+
   // In UI components, disable inputs when isSubmitting is true
   ```
 
@@ -113,30 +113,30 @@
   ```typescript
   // src/lib/stores/heartbeat-sync.ts
   import { createClient } from "@/lib/supabase/server"
-  
+
   export async function heartbeatSync(sessionId: string, currentIndex: number) {
     const supabase = await createClient()
-    
+
     // Verify session is still active on server
     const { data: session } = await supabase
       .from('quiz_sessions')
       .select('status, current_question_index')
       .eq('session_id', sessionId)
       .single()
-    
+
     if (!session || session.status === 'completed') {
       // Server says session is done - update local state
       return { synced: false, reason: 'session_completed' }
     }
-    
+
     if (Math.abs(session.current_question_index - currentIndex) > 2) {
       // Server and client diverged significantly
       return { synced: false, reason: 'index_mismatch', serverIndex: session.current_question_index }
     }
-    
+
     return { synced: true, serverIndex: session.current_question_index }
   }
-  
+
   // Call this in useQuizStore every 5 questions:
   if (currentIndex % 5 === 0) {
     heartbeatSync(sessionId, currentIndex).then(result => {
@@ -152,16 +152,16 @@
   ```typescript
   // At the persist config (line 176-189):
   {
-    name: process.env.NODE_ENV === 'production' 
+    name: process.env.NODE_ENV === 'production'
       ? 'slatecamp-prod-dev-store'  // Different key in production
       : 'cerebro-dev-store',
     storage: createJSONStorage(() => sessionStorage),
     // ... rest of config
-    
+
     // Add skip in production
     skipHydration: process.env.NODE_ENV === 'production'
   }
-  
+
   // ALSO: In the store initialization, check environment:
   // At start of store creator:
   if (process.env.NODE_ENV === 'production') {
@@ -180,19 +180,19 @@
 - **Logic Required:**
   ```typescript
   import { useCallback, useMemo } from 'react'
-  
+
   export function TierProvider({ children, tier, effectiveTier, isDevMode }: TierProviderProps) {
     // Memoize capabilities to prevent unnecessary re-computation
-    const capabilities = useMemo(() => 
-      TIER_CAPABILITIES[effectiveTier], 
+    const capabilities = useMemo(() =>
+      TIER_CAPABILITIES[effectiveTier],
       [effectiveTier]
     )
-    
+
     // Stabilize hasAccess with useCallback
     const hasAccess = useCallback((requiredTier: UserTier): boolean => {
       return TIER_RANK[effectiveTier] >= TIER_RANK[requiredTier]
     }, [effectiveTier])
-    
+
     // Memoize context value to prevent unnecessary re-renders
     const value = useMemo(() => ({
       tier,
@@ -201,7 +201,7 @@
       capabilities,
       hasAccess
     }), [tier, effectiveTier, isDevMode, capabilities, hasAccess])
-    
+
     return (
       <TierContext.Provider value={value}>
         {children}
@@ -216,19 +216,19 @@
 - **Logic Required:**
   ```typescript
   import { useCallback, useMemo } from 'react'
-  
+
   export function ActiveSessionProvider({ children, initialMode }: Props) {
     const [activeMode, setActiveMode] = useState<SessionMode | null>(initialMode ?? null)
-    
+
     // Stabilize setter
     const setActiveSession = useCallback((mode: SessionMode | null) => {
       setActiveMode(mode)
     }, [])
-    
+
     const clearActiveSession = useCallback(() => {
       setActiveMode(null)
     }, [])
-    
+
     // Memoize value
     const value = useMemo(() => ({
       activeMode,
@@ -236,7 +236,7 @@
       clearActiveSession,
       isActive: activeMode !== null
     }), [activeMode, setActiveSession, clearActiveSession])
-    
+
     return (
       <ActiveSessionContext.Provider value={value}>
         {children}
@@ -252,28 +252,28 @@
   ```typescript
   // src/lib/context/dashboard-provider-shell.tsx
   'use client'
-  
+
   import { ReactNode } from 'react'
   import { TierProvider } from './tier-context'
   import { DisciplineProvider } from './discipline-context'
   import { ActiveSessionProvider } from './active-session-context'
   import { NoteProvider } from './note-context'
   import { BreadcrumbProvider } from './breadcrumb-context'
-  
+
   interface DashboardProviderShellProps {
     children: ReactNode
     tier: UserTier
     effectiveTier: UserTier
     isDevMode: boolean
   }
-  
+
   // STRICT INITIALIZATION ORDER: Tier → Discipline → ActiveSession
   // This ensures dependencies are resolved before consumers need them
-  export function DashboardProviderShell({ 
-    children, 
-    tier, 
-    effectiveTier, 
-    isDevMode 
+  export function DashboardProviderShell({
+    children,
+    tier,
+    effectiveTier,
+    isDevMode
   }: DashboardProviderShellProps) {
     return (
       <TierProvider tier={tier} effectiveTier={effectiveTier} isDevMode={isDevMode}>
@@ -299,11 +299,11 @@
   // Add in store creator:
   subscribeWithSelector((set, get) => ({
     // ... existing state and actions
-    
+
     // Cross-tab sync listener
     _initStorageListener: () => {
       if (typeof window === 'undefined') return
-      
+
       const handleStorageChange = (e: StorageEvent) => {
         if (e.key === 'slatecamp-quiz-store' && e.newValue) {
           try {
@@ -315,12 +315,12 @@
           } catch {}
         }
       }
-      
+
       window.addEventListener('storage', handleStorageChange)
       return () => window.removeEventListener('storage', handleStorageChange)
     }
   }))
-  
+
   // Call _initStorageListener() in a useEffect in the component that uses the store
   ```
 
@@ -334,14 +334,14 @@
     const state = get()
     // Guard against multiple intervals
     if (!state.isRunning || state.sessionId === null) return
-    
+
     // Double-check we shouldn't have already stopped
     if (state.endedAt && Date.now() >= state.endedAt) {
       set({ isRunning: false, colorState: 'critical' })
       handleTimerExpiry(state.sessionId)
       return
     }
-    
+
     // ... rest of tick logic
   }
   ```

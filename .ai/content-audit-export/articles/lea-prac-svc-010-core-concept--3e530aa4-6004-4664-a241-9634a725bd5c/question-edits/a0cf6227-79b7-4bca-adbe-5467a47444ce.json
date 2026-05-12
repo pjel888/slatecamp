@@ -1,0 +1,61 @@
+{
+  "question_id": "a0cf6227-79b7-4bca-adbe-5467a47444ce",
+  "baseline_hash": "sha256:97371fa04e0309858eac60aefed9a49f05f097607ffe8a0e6b53c9e166a5d588",
+  "action": "replace",
+  "reason": "source-audited-article-batch-020-local-first rewrote the question to match only locally checked source evidence.",
+  "approved_by": "codex-local-source-audit-batch-020",
+  "approved_at": "2026-05-10T16:41:51.472Z",
+  "source_audit_support": {
+    "parent_article_id": "3e530aa4-6004-4664-a241-9634a725bd5c",
+    "parent_article_slug": "lea-prac-svc-010-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "checked_sources": [
+      {
+        "source_id": "spp-208-uap-local-raw-pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 208.pdf",
+        "raw_pdf_sha256": "sha256:c491ea6b2a58eb052b37ca4bee7145ffc98b5da9ef076cf30aa59b04b100c074",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 3-8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 111-151; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/SPP 208.md lines 155-173; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 179-201; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 205-241; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 253-259"
+      }
+    ],
+    "local_source_safe_action": "Replaced the prior item with a source-bounded MCQ using only checked SPP source lines."
+  },
+  "proposed": {
+    "text": "What is the source-safe function of Technical Advisors in SPP 208?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They may be consulted by jurors so the jury can obtain necessary relevant information."
+      },
+      {
+        "id": "b",
+        "text": "They finance the ADC."
+      },
+      {
+        "id": "c",
+        "text": "They guarantee project construction cost."
+      },
+      {
+        "id": "d",
+        "text": "They prepare daily inspection reports."
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "The checked source describes Technical Advisors as specialist personnel consulted by jurors for relevant information.",
+    "explanation": "The checked source describes Technical Advisors as specialist personnel consulted by jurors for relevant information.",
+    "code_citation": "SPP Document 208",
+    "bloom_level": "remember",
+    "application_context": "professional_practice",
+    "practice_context": [
+      "SPP Document 208",
+      "SPP Doc 208: Architectural Design Competitions"
+    ],
+    "difficulty": 0.45,
+    "is_assessment": false,
+    "model_id": "BATCH-020-lea-prac-svc-010-core-concept-007"
+  }
+}

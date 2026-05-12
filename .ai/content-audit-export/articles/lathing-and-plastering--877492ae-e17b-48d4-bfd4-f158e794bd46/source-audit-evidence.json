@@ -1,0 +1,173 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-053-local-first",
+  "batch_number": 53,
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T19:04:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "877492ae-e17b-48d4-bfd4-f158e794bd46",
+    "slug": "lathing-and-plastering",
+    "title": "Lathing and Plastering",
+    "article_folder": ".ai/content-audit-export/articles/lathing-and-plastering--877492ae-e17b-48d4-bfd4-f158e794bd46",
+    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lathing-and-plastering--877492ae-e17b-48d4-bfd4-f158e794bd46",
+    "candidate_path": ".ai/content-audit-export/articles/lathing-and-plastering--877492ae-e17b-48d4-bfd4-f158e794bd46/candidate.md",
+    "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lathing-and-plastering--877492ae-e17b-48d4-bfd4-f158e794bd46/candidate.md",
+    "question_edits_folder": ".ai/content-audit-export/articles/lathing-and-plastering--877492ae-e17b-48d4-bfd4-f158e794bd46/question-edits",
+    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lathing-and-plastering--877492ae-e17b-48d4-bfd4-f158e794bd46/question-edits",
+    "normalized_sha256": "sha256:1b6217d197c7a845afcd4030d641323f8ca9f45bf6d0f63ac2b2267df2cb9f98",
+    "candidate_sha256": "sha256:1b6217d197c7a845afcd4030d641323f8ca9f45bf6d0f63ac2b2267df2cb9f98",
+    "linked_questions_sha256": "sha256:7fd270e2bee5d4eb569b3a7616d3276e2c30fcb6f4a4354bbd5546731f6f8da8",
+    "sources_sha256": "sha256:01826a042728243f84fce6376a4cfda988857e71df51a6ee9e783a25ddbf847a"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "refined_markdown_role": "locator_only",
+    "derivative_or_search_layer_as_primary": false,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": [],
+    "source_families_checked": [
+      {
+        "label": "PD 1096 National Building Code - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 - National Building Code.pdf",
+        "raw_pdf_sha256": "sha256:0bd869faac8d949359aa9e3c5bea7026e85e348f61ce1e87a09d48991c5ba796",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 - National Building Code.md",
+        "refined_markdown_sha256": "sha256:d7df246271ae1bcb14ed8e4ba881ed75cfa8381cca9f465986d9947397f353d9",
+        "locator": "PD 1096 National Building Code refined markdown lines 1826-1828"
+      },
+      {
+        "label": "PD 1096 RIRR 2004 Architecture Board - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (Architecture Board).pdf",
+        "raw_pdf_sha256": "sha256:15176ec14a361d821d2106cea302b6d837578ba021f4045a7c7f169f31af5dd3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (Architecture Board).md",
+        "refined_markdown_sha256": "sha256:d87f379d3831becb818a268892f4df577256e2ebc31d40190323c6f0f69677e7",
+        "locator": "PD 1096 RIRR 2004 refined markdown lines 1615-1620 and 4464-4466"
+      },
+      {
+        "label": "Metals Lecture - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Metals Lecture.pdf",
+        "raw_pdf_sha256": "sha256:cd9cd4ee534bda9a974447c4ec73b13b12d5abf1c14df1fca408a2c4530650dd",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Metals Lecture.md",
+        "refined_markdown_sha256": "sha256:4e9e0a042f2eef2c80d33af81512ca2cf32778cae64351af9dc54df58db3694c",
+        "locator": "Metals Lecture refined markdown lines 344-356, 856-863, and 904-914"
+      },
+      {
+        "label": "George Salvan Architectural Building Materials - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+        "raw_pdf_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+        "refined_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+        "locator": "George Salvan Architectural Building Materials refined markdown lines 1200-1231, 6418-6422, 8641-8649, and 9192-9202"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "lathing-plastering",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "medium",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 30,
+    "question_edits_created": [
+      "b861cfba-e41f-4655-8fbb-d5f09e750b01",
+      "2cd20f27-ed90-4397-bb65-9ba70feb0885",
+      "0cceade2-7046-49cb-9233-ea7605d7d7c5",
+      "375a1383-7d30-4f8e-b633-5293625887c4",
+      "129056c5-0016-43a5-acca-ca9498946a38",
+      "a19ac5a1-f72c-4987-aae3-1fbc847d2424",
+      "55f51235-7cac-40fa-b0fa-78b7e21ac83b",
+      "38745375-57f9-4967-9295-8157b6360c3a",
+      "dbc42891-5a79-4504-b5a8-89c4ef421e68",
+      "80ff2825-8290-4b7f-98c4-d4197b472ad6",
+      "d0fb18bd-974d-418e-b51c-d14ef84d7076",
+      "4c977f94-e904-4254-ad8d-76352e75c9f9",
+      "53e34d83-aefe-4c98-9742-57b2b0baf9a0",
+      "288fcffb-1c0c-486c-a105-0ec2e61cc707",
+      "b9faef97-aa13-4368-b91b-59e3ab5628fd",
+      "1a5046a5-cb12-421d-ad89-a5ab863f18f7",
+      "12029fd2-936a-4deb-ba9d-b6d5664aa1d1",
+      "538802ba-7fb6-40d5-8211-111900dad6ce",
+      "14992bab-0b46-4e45-adf2-7ba429dcfb64",
+      "8e0c079b-3143-48f5-9eab-aac46c0ad8fb",
+      "811257f0-a33d-4d6e-921e-a27333d0e28c",
+      "552e2dfb-fb51-4034-83be-a85dbfad035c",
+      "8de60f7e-2c2d-44b3-aff7-e950987142da",
+      "87704191-88c5-4789-a612-aa34ccd99406",
+      "4ed94002-0d33-43ae-9b6c-eb11a4988289",
+      "5888979c-254f-4143-a296-a038b34e3833",
+      "8c81b541-3fdd-45ea-b094-2e22596d5d0c",
+      "27123828-786a-4009-a35f-a1d90cf4e36b",
+      "c827aa34-7f33-47ec-9cce-9efdc8f83c4d",
+      "a6b0256e-6d11-4bd6-8470-53abd6da90b9"
+    ]
+  },
+  "checked_markdown_lines": [
+    "PD 1096 National Building Code refined markdown lines 1826-1828",
+    "PD 1096 RIRR 2004 refined markdown lines 1615-1620",
+    "PD 1096 RIRR 2004 refined markdown lines 4464-4466",
+    "Metals Lecture refined markdown lines 344-356",
+    "Metals Lecture refined markdown lines 856-863",
+    "Metals Lecture refined markdown lines 904-914",
+    "George Salvan Architectural Building Materials refined markdown lines 1200-1231",
+    "George Salvan Architectural Building Materials refined markdown lines 6418-6422",
+    "George Salvan Architectural Building Materials refined markdown lines 8641-8649",
+    "George Salvan Architectural Building Materials refined markdown lines 9192-9202"
+  ],
+  "claims": [
+    {
+      "claim_id": "lathing-and-plastering-b053-claim-01",
+      "claim_text": "Lathing and plastering guidance is source-audited to PD 1096 Section 1215, PD 1096 RIRR fire-resistance table evidence, and local material-source definitions for metal lath, gypsum lath, wallboard, plaster, and stucco.",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 - National Building Code.pdf",
+        "quoted_pdf_excerpt": "PD 1096 National Building Code refined markdown lines 1826-1828; PD 1096 RIRR 2004 refined markdown lines 1615-1620 and 4464-4466; Metals Lecture refined markdown lines 344-356, 856-863, and 904-914; George Salvan Architectural Building Materials refined markdown lines 1200-1231, 6418-6422, 8641-8649, and 9192-9202",
+        "source_ids": [
+          "pd1096-basic-local-raw-pdf--b053-877492ae-01",
+          "pd1096-rirr-2004-local-raw-pdf--b053-877492ae-02",
+          "metals-lecture-local-raw-pdf--b053-877492ae-03",
+          "salvan-building-materials-local-raw-pdf--b053-877492ae-04"
+        ]
+      },
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lathing-and-plastering-b053-claim-questions",
+      "claim_text": "Batch 053 question edits audited for lathing-and-plastering: b861cfba-e41f-4655-8fbb-d5f09e750b01, 2cd20f27-ed90-4397-bb65-9ba70feb0885, 0cceade2-7046-49cb-9233-ea7605d7d7c5, 375a1383-7d30-4f8e-b633-5293625887c4, 129056c5-0016-43a5-acca-ca9498946a38, a19ac5a1-f72c-4987-aae3-1fbc847d2424, 55f51235-7cac-40fa-b0fa-78b7e21ac83b, 38745375-57f9-4967-9295-8157b6360c3a, dbc42891-5a79-4504-b5a8-89c4ef421e68, 80ff2825-8290-4b7f-98c4-d4197b472ad6, d0fb18bd-974d-418e-b51c-d14ef84d7076, 4c977f94-e904-4254-ad8d-76352e75c9f9, 53e34d83-aefe-4c98-9742-57b2b0baf9a0, 288fcffb-1c0c-486c-a105-0ec2e61cc707, b9faef97-aa13-4368-b91b-59e3ab5628fd, 1a5046a5-cb12-421d-ad89-a5ab863f18f7, 12029fd2-936a-4deb-ba9d-b6d5664aa1d1, 538802ba-7fb6-40d5-8211-111900dad6ce, 14992bab-0b46-4e45-adf2-7ba429dcfb64, 8e0c079b-3143-48f5-9eab-aac46c0ad8fb, 811257f0-a33d-4d6e-921e-a27333d0e28c, 552e2dfb-fb51-4034-83be-a85dbfad035c, 8de60f7e-2c2d-44b3-aff7-e950987142da, 87704191-88c5-4789-a612-aa34ccd99406, 4ed94002-0d33-43ae-9b6c-eb11a4988289, 5888979c-254f-4143-a296-a038b34e3833, 8c81b541-3fdd-45ea-b094-2e22596d5d0c, 27123828-786a-4009-a35f-a1d90cf4e36b, c827aa34-7f33-47ec-9cce-9efdc8f83c4d, a6b0256e-6d11-4bd6-8470-53abd6da90b9",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 - National Building Code.pdf",
+        "quoted_pdf_excerpt": "PD 1096 National Building Code refined markdown lines 1826-1828; PD 1096 RIRR 2004 refined markdown lines 1615-1620 and 4464-4466; Metals Lecture refined markdown lines 344-356, 856-863, and 904-914; George Salvan Architectural Building Materials refined markdown lines 1200-1231, 6418-6422, 8641-8649, and 9192-9202",
+        "source_ids": [
+          "pd1096-basic-local-raw-pdf--b053-877492ae-01",
+          "pd1096-rirr-2004-local-raw-pdf--b053-877492ae-02",
+          "metals-lecture-local-raw-pdf--b053-877492ae-03",
+          "salvan-building-materials-local-raw-pdf--b053-877492ae-04"
+        ]
+      },
+      "audit_result": "PASS"
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "local_first_only": true,
+    "supabase_write_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json"
+  },
+  "sme_review": {
+    "required": false,
+    "status": "not_required"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

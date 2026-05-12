@@ -1,0 +1,32 @@
+{
+  "question_id": "26c11ad8-3179-4a6f-ba38-2e8c21626313",
+  "baseline_hash": "sha256:d2c7c9915cd2507b538d8f09d85c7552e519b761c35cddfbac28bea7cfec6240",
+  "reason": "Batch 003 source audit corrected the wrong Group D storage premise. PD 1096 classifies Group D as Institutional and Group G as Storage and Hazardous; RA 9514 supplies protected-exit and special-hazard rules.",
+  "approved_by": "codex-local-source-audit-batch-003",
+  "approved_at": "2026-05-10T18:00:00+08:00",
+  "proposed": {
+    "text": "Under RA 9514 Section 10.2.5.2(B), what fire-resistance rating is required for a protected exit that connects three storeys or less?",
+    "options": [
+      {
+        "id": "a",
+        "text": "At least 1-hour"
+      },
+      {
+        "id": "b",
+        "text": "At least 2-hour"
+      },
+      {
+        "id": "c",
+        "text": "At least 3-hour"
+      },
+      {
+        "id": "d",
+        "text": "At least 4-hour"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "RA 9514 distinguishes protected exits connecting three storeys or less from those connecting four or more storeys.",
+    "explanation": "This replaces overbroad corridor-wall wording with the checked protected-exit source rule.",
+    "code_citation": "RA 9514 2019 RIRR Section 10.2.5.2(B)"
+  }
+}

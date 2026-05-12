@@ -1,0 +1,99 @@
+{
+  "question_id": "dc1debd3-bec7-41b2-8453-d8dd32c231d2",
+  "baseline_hash": "sha256:32221b16a5894344900048073d61323c9c0ca59b798fd8bca2a019685fc7e378",
+  "action": "replace",
+  "reason": "source-audited-article-batch-037-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-037",
+  "approved_at": "2026-05-11T13:16:58+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-037-local-first",
+    "checked_sources": [
+      {
+        "source_id": "ra-9003-ecological-solid-waste-management-local",
+        "label": "RA 9003 Ecological Solid Waste Management Act",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.md",
+        "checked_markdown_lines": [
+          "RA 9003 refined markdown lines 11-19",
+          "RA 9003 refined markdown lines 57-74",
+          "RA 9003 refined markdown lines 108-123"
+        ]
+      },
+      {
+        "source_id": "ra-9275-clean-water-act-local",
+        "label": "RA 9275 Philippine Clean Water Act",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9257/RA 9275 PH Clean Water Act.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9257/RA 9275 PH Clean Water Act.md",
+        "checked_markdown_lines": [
+          "RA 9275 refined markdown lines 24-54",
+          "RA 9275 refined markdown lines 86-100",
+          "RA 9275 refined markdown lines 125-139",
+          "RA 9275 refined markdown lines 172-180"
+        ]
+      },
+      {
+        "source_id": "pd-856-code-on-sanitation-local",
+        "label": "PD 856 Code on Sanitation of the Philippines",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-856/phi201040.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-856/phi201040.md",
+        "checked_markdown_lines": [
+          "PD 856 refined markdown lines 195-198",
+          "PD 856 refined markdown lines 1067-1138",
+          "PD 856 refined markdown lines 1162-1267"
+        ]
+      },
+      {
+        "source_id": "rnpc-revised-national-plumbing-code-local",
+        "label": "Revised National Plumbing Code of the Philippines",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Revised National Plumbing Code of the Philippines.md",
+        "checked_markdown_lines": [
+          "Revised National Plumbing Code refined markdown lines 75-110",
+          "Revised National Plumbing Code refined markdown lines 147-196",
+          "Revised National Plumbing Code refined markdown lines 224-251",
+          "Revised National Plumbing Code refined markdown lines 453-477",
+          "Revised National Plumbing Code refined markdown lines 1338-1370",
+          "Revised National Plumbing Code refined markdown lines 3390-3419",
+          "Revised National Plumbing Code refined markdown lines 3660-3674",
+          "Revised National Plumbing Code refined markdown lines 4213-4260"
+        ]
+      },
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR 2004 DPWH Official refined markdown lines 968-990",
+          "PD 1096 RIRR 2004 DPWH Official refined markdown lines 3789-3897"
+        ]
+      }
+    ],
+    "citation": "RA 9003"
+  },
+  "proposed": {
+    "text": "Under RA 9003, what is the exam-safe role of segregation at source?",
+    "options": [
+      {
+        "id": "b037-68dc-02-a",
+        "text": "It is part of ecological solid waste management before transport and disposal"
+      },
+      {
+        "id": "b037-68dc-02-b",
+        "text": "It is only a post-disposal activity"
+      },
+      {
+        "id": "b037-68dc-02-c",
+        "text": "It applies only to roof drainage"
+      },
+      {
+        "id": "b037-68dc-02-d",
+        "text": "It replaces wastewater treatment"
+      }
+    ],
+    "correct_option_id": "b037-68dc-02-a",
+    "rationale": "Correct answer: It is part of ecological solid waste management before transport and disposal. This is directly supported by RA 9003.",
+    "explanation": "The Batch 037 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for RA 9003.",
+    "code_citation": "RA 9003"
+  }
+}

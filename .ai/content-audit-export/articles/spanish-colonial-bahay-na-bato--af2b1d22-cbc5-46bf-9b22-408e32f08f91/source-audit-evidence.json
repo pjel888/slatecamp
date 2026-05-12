@@ -1,0 +1,146 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-050-local-first",
+  "batch_number": 50,
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T21:35:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "af2b1d22-cbc5-46bf-9b22-408e32f08f91",
+    "slug": "spanish-colonial-bahay-na-bato",
+    "title": "Spanish Colonial Bahay na Bato",
+    "article_folder": ".ai/content-audit-export/articles/spanish-colonial-bahay-na-bato--af2b1d22-cbc5-46bf-9b22-408e32f08f91",
+    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spanish-colonial-bahay-na-bato--af2b1d22-cbc5-46bf-9b22-408e32f08f91",
+    "candidate_path": ".ai/content-audit-export/articles/spanish-colonial-bahay-na-bato--af2b1d22-cbc5-46bf-9b22-408e32f08f91/candidate.md",
+    "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spanish-colonial-bahay-na-bato--af2b1d22-cbc5-46bf-9b22-408e32f08f91/candidate.md",
+    "question_edits_folder": ".ai/content-audit-export/articles/spanish-colonial-bahay-na-bato--af2b1d22-cbc5-46bf-9b22-408e32f08f91/question-edits",
+    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spanish-colonial-bahay-na-bato--af2b1d22-cbc5-46bf-9b22-408e32f08f91/question-edits",
+    "normalized_sha256": "sha256:8b5742cb385b45a7c7025b14c7b1c0fa9b056d7978b30c92694749049db9fe1f",
+    "candidate_sha256": "sha256:8b5742cb385b45a7c7025b14c7b1c0fa9b056d7978b30c92694749049db9fe1f",
+    "linked_questions_sha256": "sha256:41479cdaffe90666bf9a602b3e26a795be268047d4a63c47be6c803799408697",
+    "sources_sha256": "sha256:8e0b569ad049404dc08fa942469a4803964d74cea5b4f00cacfaad9f94266b74"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "refined_markdown_role": "locator_only",
+    "derivative_or_search_layer_as_primary": false,
+    "source_families_checked": [
+      {
+        "label": "HOA Module 4 P1 - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/HOA MODULE 4 P1.pdf",
+        "raw_pdf_sha256": "sha256:c89f7f79b3dd8272c7aa7d8848ea72c196d6c418f33105a32fb1ed2cfadbffb3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/HOA MODULE 4 P1.md",
+        "refined_markdown_sha256": "sha256:e515c8c5203118d4aeef0fe1f288c7deb76d75d3e3e1a779291712420c7df047",
+        "locator": "HOA Module 4 P1 refined markdown lines 1-235, 278-365, and 681-760"
+      },
+      {
+        "label": "Filipino Architecture - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Filipino Architecture.pdf",
+        "raw_pdf_sha256": "sha256:3d6f220218c46fe78e37d152d1c51504fd3c7d413cf14e71b39e93c7e1a5831d",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Filipino Architecture.md",
+        "refined_markdown_sha256": "sha256:f60dacc37e4b6634875ed68c18a55288e455476697fc250905460bbe6ac25ce1",
+        "locator": "Filipino Architecture refined markdown lines 40-118, 160-178, 680-700, 830-887, 905-917, and 1037-1039"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "spanish_colonial_bahay_na_bato_article",
+    "contains_legal_or_code_claims": false,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 23,
+    "question_edits_created": [
+      "d10bc7ca-fd4a-4beb-95ee-3ae6998e6c3f",
+      "857ee418-b529-40bd-bfd6-ea03d4fa15ab",
+      "657a571e-a0b7-432b-85df-4aabac600b15",
+      "21e46c85-8e58-47e3-9296-7290fd06f4bb",
+      "d1b399d5-9ff4-42e2-a30b-c75e5aa8057e",
+      "e32f084f-26a8-41f8-8ffd-d2fd51ea1b54",
+      "6cd9be4e-9e12-4988-b8ad-f6304fdf2306",
+      "b3a6dd9b-72f6-4726-adec-7f3a6ab5f352",
+      "7e9b311c-f976-4729-a0a3-7d6165f63a9e",
+      "384c4845-b32f-41f9-8c7a-a3cf13d5aa68",
+      "5f7a84ae-97cf-431d-a096-ba64d18a2416",
+      "737b34cb-2cc5-4dd4-8ed6-7686e22ce382",
+      "2c7a80b1-c034-445a-946c-f9a11b8d9ec4",
+      "df9f79f7-ea55-4979-a262-c67b396cc373",
+      "beaa422d-ef7c-449e-852b-e2841ea38676",
+      "535686a5-3f13-447c-999c-65c36e33ff2d",
+      "e2874f61-8da6-4f9a-80f4-a2bbf78cd6e0",
+      "b4a19bd4-846c-4e62-b31f-46e5b2b03798",
+      "cb104328-b8f0-43ed-95ee-01aa98848b2b",
+      "8d857985-e614-4ad2-9807-84c968536185",
+      "1341e877-f3fd-44be-b346-4f064a67feab",
+      "0fddbb25-3651-4f8d-9726-c0ebab54d656",
+      "788307df-f45c-4c7b-a34b-77039d73d538"
+    ]
+  },
+  "claims": [
+    {
+      "claim_id": "spanish-colonial-bahay-na-bato-b050-claim-01",
+      "claim_text": "Bahay na Bato combines indigenous and Hispanic traditions to address fire, earthquakes, and cyclones.",
+      "source_support": [
+        "hoa-local-raw-pdf--b050-af2b1d22-01",
+        "fil-local-raw-pdf--b050-af2b1d22-02"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "spanish-colonial-bahay-na-bato-b050-claim-02",
+      "claim_text": "Arquitectura mestiza refers to construction built partly of wood and partly of stone.",
+      "source_support": [
+        "hoa-local-raw-pdf--b050-af2b1d22-01",
+        "fil-local-raw-pdf--b050-af2b1d22-02"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "spanish-colonial-bahay-na-bato-b050-claim-03",
+      "claim_text": "The checked source lists ground-floor and second-floor parts of the Bahay na Bato.",
+      "source_support": [
+        "hoa-local-raw-pdf--b050-af2b1d22-01",
+        "fil-local-raw-pdf--b050-af2b1d22-02"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "spanish-colonial-bahay-na-bato-b050-claim-04",
+      "claim_text": "Filipino Architecture connects Bahay na Bato to Bahay Kubo traits and European influence.",
+      "source_support": [
+        "hoa-local-raw-pdf--b050-af2b1d22-01",
+        "fil-local-raw-pdf--b050-af2b1d22-02"
+      ],
+      "audit_result": "PASS"
+    }
+  ],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "removed_risk_notes": [
+      "Question sidecars replaced with checked local raw-source citations.",
+      "Article body rewritten from local raw PDF families and refined markdown locators only.",
+      "Legacy compose-error sidecars are removed after selected bundle compose passes."
+    ]
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_batch_050_complete": true,
+    "remote_publish_status": "not_attempted_by_request",
+    "remaining_local_blockers": []
+  },
+  "local_validation": {
+    "status": "PASS",
+    "valid": true,
+    "blockers": 0,
+    "checked_at": "2026-05-11T21:35:00.000+08:00",
+    "commands": [
+      "bun run content-audit:compose -- --article-id af2b1d22-cbc5-46bf-9b22-408e32f08f91 --overwrite --strict",
+      "bun run content-audit:diff -- --article-id af2b1d22-cbc5-46bf-9b22-408e32f08f91 --strict --summary",
+      "bun run content-audit:validate -- --article-id af2b1d22-cbc5-46bf-9b22-408e32f08f91 --summary",
+      "bun run content-audit:ui-block-edits -- --article-id af2b1d22-cbc5-46bf-9b22-408e32f08f91"
+    ]
+  }
+}

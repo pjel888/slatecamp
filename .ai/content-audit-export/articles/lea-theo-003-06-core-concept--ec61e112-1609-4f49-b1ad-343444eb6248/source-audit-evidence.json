@@ -1,0 +1,141 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-040-local-first",
+  "audited_at": "2026-05-11T14:04:00+08:00",
+  "audit_date": "2026-05-11",
+  "target": {
+    "article_id": "ec61e112-1609-4f49-b1ad-343444eb6248",
+    "slug": "lea-theo-003-06-core-concept",
+    "candidate_sha256": "sha256:ab9e3ff3013fa967a398f9a38e44d263cce483911b5c2158d96d10a571acb03c",
+    "candidate_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-003-06-core-concept--ec61e112-1609-4f49-b1ad-343444eb6248/candidate.md"
+  },
+  "paths": {
+    "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-003-06-core-concept--ec61e112-1609-4f49-b1ad-343444eb6248",
+    "normalized_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-003-06-core-concept--ec61e112-1609-4f49-b1ad-343444eb6248/normalized.md",
+    "candidate_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-003-06-core-concept--ec61e112-1609-4f49-b1ad-343444eb6248/candidate.md",
+    "sources_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-003-06-core-concept--ec61e112-1609-4f49-b1ad-343444eb6248/sources.json",
+    "question_edits": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-003-06-core-concept--ec61e112-1609-4f49-b1ad-343444eb6248/question-edits"
+  },
+  "classification": {
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high",
+    "requires_raw_pdf_audit": true
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "bp-344-2024-rirr-ncda-local",
+      "title": "BP 344 2024 Revised IRR - NCDA",
+      "source_type": "local_raw_pdf_with_locator_checked_refined_markdown",
+      "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "source_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+      "derivative_layer_role": "locator aid only",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "checked_markdown_lines": [
+        "BP 344 2024 IRR refined markdown lines 317-469",
+        "BP 344 2024 IRR refined markdown lines 654-685",
+        "BP 344 2024 IRR refined markdown lines 770-850",
+        "BP 344 2024 IRR refined markdown lines 539-585"
+      ]
+    }
+  ],
+  "raw_sources": [
+    {
+      "source_id": "bp-344-2024-rirr-ncda-local",
+      "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "universal-route",
+      "claim_text": "BP 344 2024 sets accessible route controls through tactile paths, sidewalks, entrances, doors, stairs, and lighting.",
+      "claim_type": "article_or_question_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "bp-344-2024-rirr-ncda-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "quoted_pdf_excerpt": "BP 344 2024 sets accessible route controls through tactile paths, sidewalks, entrances, doors, stairs, and lighting.",
+        "locator": "BP 344 2024 IRR refined markdown lines 317-469; 539-585; 654-685; 770-850"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "universal-door",
+      "claim_text": "BP 344 2024 requires 900 mm clear door width, 1800 mm by 1800 mm clear level door space, and door hardware centered at 900 mm.",
+      "claim_type": "article_or_question_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "bp-344-2024-rirr-ncda-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "quoted_pdf_excerpt": "BP 344 2024 requires 900 mm clear door width, 1800 mm by 1800 mm clear level door space, and door hardware centered at 900 mm.",
+        "locator": "BP 344 2024 IRR refined markdown lines 790-850"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "universal-wayfinding",
+      "claim_text": "BP 344 2024 requires tactile, contrast, Braille, signage, and path provisions for accessible wayfinding.",
+      "claim_type": "article_or_question_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "bp-344-2024-rirr-ncda-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "quoted_pdf_excerpt": "BP 344 2024 requires tactile, contrast, Braille, signage, and path provisions for accessible wayfinding.",
+        "locator": "BP 344 2024 IRR refined markdown lines 317-469"
+      },
+      "blockers": []
+    }
+  ],
+  "removed_or_rewritten_material": [
+    "Removed broad design claims, old accessibility values, local-zoning assumptions, and non-local parking ratios not supported by the selected raw PDF source families."
+  ],
+  "unverified_or_rejected_claims": [],
+  "source_safe_repair": {
+    "article_rewritten": true,
+    "question_edits_created": true,
+    "raw_pdf_first": true,
+    "derivative_layer_used_only_for_locator": true
+  },
+  "local_validation": {
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_edits": "PASS",
+    "scoped_checks": "PASS",
+    "targeted_tests": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "gate_results": {
+    "ui_markers_removed_or_resolved": true,
+    "internal_notes_removed": true,
+    "non_local_claims_removed": true,
+    "sources_json_updated": true,
+    "question_edits_created": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  },
+  "sme_review": {
+    "required": false,
+    "status": "PASS"
+  }
+}

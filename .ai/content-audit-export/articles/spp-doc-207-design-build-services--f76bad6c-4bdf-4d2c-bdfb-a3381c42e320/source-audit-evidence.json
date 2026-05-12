@@ -1,0 +1,89 @@
+{
+  "article_id": "f76bad6c-4bdf-4d2c-bdfb-a3381c42e320",
+  "slug": "spp-doc-207-design-build-services",
+  "batch_id": "source-audited-article-batch-020-local-first",
+  "generated_at": "2026-05-10T16:41:51.472Z",
+  "mode": "local_first_no_supabase_no_deploy_no_commit",
+  "status": "locally_source_audited",
+  "raw_pdf_audit": [
+    {
+      "source_id": "spp-207-uap-local-raw-pdf",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 207.pdf",
+      "raw_pdf_sha256": "sha256:7050b0c7bd152694587f39ead8b682ed71b882ba50fce5c4a614206f32b5b610",
+      "ocr_pdf_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/ocr_pdf/UAP/SPP 207.pdf",
+      "ocr_pdf_sha256": "sha256:8511dbadd5e0e990aa10be9eb7aab404bfd5ea4e6be7a60580393b65fbbdc320",
+      "checked_markdown_lines": [
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md",
+          "checked_lines": [
+            "3-8"
+          ],
+          "note": "Document title identifies Design-Build Services."
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md",
+          "checked_lines": [
+            "147-153"
+          ],
+          "note": "Two types of Design-Build Services."
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/SPP 207.md",
+          "checked_lines": [
+            "429-432"
+          ],
+          "note": "Manner of providing services."
+        }
+      ],
+      "note": "Raw PDF is retained as the authority file; local OCR/refined Markdown was used for line-level verification."
+    }
+  ],
+  "article_repair": {
+    "normalized_md_rewritten": true,
+    "candidate_md_to_be_recomposed": true,
+    "ui_blocks_removed_from_current_candidate": true,
+    "old_internal_generation_notes_removed": true,
+    "risky_claims_removed_or_rewritten": [
+      "Removed prior percentage-fee assertions.",
+      "Removed broad liability claims not verified in checked lines.",
+      "Removed unrelated statutory framing from the repaired cluster."
+    ]
+  },
+  "claim_support": [
+    {
+      "claim": "SPP 207 is the SPP document for Design-Build Services.",
+      "support_status": "source_supported",
+      "support_sources": [
+        {
+          "source_id": "spp-207-uap-local-raw-pdf",
+          "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md lines 3-8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md lines 147-153; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/SPP 207.md lines 429-432"
+        }
+      ]
+    },
+    {
+      "claim": "SPP 207 identifies two Design-Build types: by Administration and with Guaranteed Maximum Project Construction Cost.",
+      "support_status": "source_supported",
+      "support_sources": [
+        {
+          "source_id": "spp-207-uap-local-raw-pdf",
+          "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md lines 3-8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md lines 147-153; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/SPP 207.md lines 429-432"
+        }
+      ]
+    },
+    {
+      "claim": "SPP 207 identifies two manners of providing Design-Build Services.",
+      "support_status": "source_supported",
+      "support_sources": [
+        {
+          "source_id": "spp-207-uap-local-raw-pdf",
+          "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md lines 3-8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md lines 147-153; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/SPP 207.md lines 429-432"
+        }
+      ]
+    }
+  ],
+  "question_repair_policy": {
+    "action": "replace_linked_questions_with_source_safe_versions",
+    "answer_key_changes_expected": true,
+    "allowed_question_scope": "Only concepts directly supported by the checked SPP source lines are used."
+  }
+}

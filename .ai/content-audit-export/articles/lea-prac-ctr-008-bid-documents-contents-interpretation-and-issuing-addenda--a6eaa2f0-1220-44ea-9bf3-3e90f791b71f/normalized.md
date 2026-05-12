@@ -1,70 +1,40 @@
-
+## Bid Documents: Contents, Interpretation, and Issuing Addenda
 
 ## Board Exam Quick Check
 
-Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
-
-**Common mistake:** treating a familiar keyword in **Lea Prac Ctr 008 Bid Documents Contents Interpretation And Issuing Addenda** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
-## Bid Documents — Contents, Interpretation, and Issuing Addenda
+The safe path is to answer from the specific document hierarchy supplied by the source. UAP Document 301 and CIAP Document 102 both define bid documents and interpretation rules, but they do not use identical wording. When a question says CIAP Document 102, use the CIAP priority list. When it says UAP Document 301, use UAP's drawing/specification and Architect-interpretation rules.
 
 ## Learning Goal
 
 After studying this article, you should be able to:
 
-- List the contents of a complete bid document package.
-- Explain rules on interpretation of bid documents.
-- Describe the addenda process: who issues, timeline, and effect.
-- Identify the architect's role in preparing and interpreting bid documents.
+- List source-backed bid-document components and definitions.
+- Apply UAP Document 301 rules for drawings, specifications, and written figures.
+- Apply CIAP Document 102 rules for contract-document interpretation and priority.
+- Recognize that Addenda or Bid Bulletins must be issued before bidding to affect bidder information.
 
-### Components of Bid Documents
+## Bid Document Components
 
-Bid documents comprise the complete package of information provided to prospective bidders and include: Advertisement or Invitation to Bid; Instructions to Bidders; the proposed Agreement (blank); General Conditions of Contract (UAP Document 301); Special Provisions or Conditions; Drawings; Specifications; and schedules or other supplemental information.
+UAP Document 301 defines the Contract Documents as Agreement, General Conditions, Special Provisions, Specifications, and Drawings, including additions, deletions, and modifications incorporated before execution. It defines Advertisement or Invitation to Bid, Bid Bulletin, Instructions to Bidders, Drawings, Specifications, Supplementary Specifications, and Schedule of Materials and Finishes.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code="ra9266", section="UAP Doc 301, SPP Doc 201-209", title="Bid Document Components"
-- Text: Essential bid documents: (1) Advertisement/Invitation to Bid; (2) Instructions to Bidders; (3) Proposed Agreement; (4) General Conditions (UAP Doc 301); (5) Special Provisions; (6) Drawings; (7) Specifications; (8) Schedules. The Instructions to Bidders establish binding rules — they specify bid format, deadlines, bond requirements, evaluation criteria, and the consequences of non-compliance.
-[/SLATECAMP_UI_BLOCK]
+CIAP Document 102 defines Bid Documents as all documents provided or made available to prospective bidders, including the Invitation to Bid and a copy of the Contract the winning bidder would be required to sign. It defines Contract Documents as documents attached to the Agreement and identified as Contract Documents, generally including Special Provisions or Conditions, General Conditions, Drawings, Specifications, and other Bid Documents.
 
-### Document Hierarchy and Interpretation
+## Interpretation Rules
 
-If Drawings and Specifications conflict, the hierarchy of interpretation applies:
-1. **Figures/written dimensions** prevail over scaled measurements
-2. **Detailed drawings** prevail over general drawings
-3. **Specifications** prevail over drawings (where conflicts exist)
-4. **Special provisions** prevail over general conditions
+Under UAP Document 301, if there is variance between Drawings and Specifications, the Specifications control. In conflicts involving General Conditions or detailed specification requirements, detailed specification requirements control. The Contractor must immediately report discrepancies, errors, or omissions in Drawings or Specifications to the Architect or Engineer, and work on unreported discrepancies is at the Contractor's risk.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Exam Trap:** The LEA frequently tests the interpretation hierarchy. The critical rule: **figured dimensions supersede scaled dimensions.** If a written dimension on a drawing says 3.0m but scaling the drawing gives 3.2m, the written dimension controls. Contractors cannot scale drawings without architect authorization.
-[/SLATECAMP_UI_BLOCK]
+UAP Document 301 also states that Drawings and models are intended to cooperate with Specifications, and figures are followed in preference to measurements by scale. Anything shown on the Drawings but not mentioned in the Specifications, or vice versa, or reasonably implied by either, is treated as part of the work without extra charge.
 
-### Issuance of Addenda
+CIAP Document 102 provides a broader hierarchy. Detailed Drawings prevail over General Drawings; figures written on Drawings prevail over the Drawings themselves; calculated dimensions prevail over scaled dimensions. If those rules do not resolve the conflict, priority runs through Agreement, Instruction to Bidders and amendments, Addenda to Bid Documents, Drawings, Specifications, Special Conditions, General Conditions, other Contract Documents, and incorporated documents, unless the Agreement modifies the order.
 
-If the Architect discovers errors, ambiguities, or additional information after bid documents are issued, an Addendum must be prepared and distributed to all potential bidders. Addenda must be issued in writing to all bidders. If Addenda are issued less than 48 hours before the bid deadline, the deadline should be extended to provide bidders adequate time to revise their bids.
+## Addenda and Bid Bulletins
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="ProcessFlow" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Addendum Issuance Process:** Step 1: Architect identifies error, ambiguity, or missing information Step 2: Prepare written Addendum — sequentially numbered (No. 1, No. 2, etc.) Step 3: Reference specific sections, pages, or drawings affected Step 4: State whether it modifies, deletes, or adds information Step 5: Distribute to ALL bidders who received original bid documents Step 6: If < 48 hours to deadline, extend bid deadline proportionally Step 7: Track all Addenda issued and confirm all bid
-[/SLATECAMP_UI_BLOCK]
+CIAP Document 102 defines Bid Bulletin as a document containing additional information on Bid Documents issued to bidders before the date of bidding. It also places Addenda to Bid Documents in the document-priority list after Instructions to Bidders and before Drawings. UAP Document 301 uses Bid Bulletin and Supplementary Specifications language for additional or amended information issued before bidding or as additions/amendments to Specifications.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Priority — Addenda Rules:** 1. Addenda must go to ALL bidders (equal information) 2. Issued < 48 hours before deadline → extend deadline 3. Addenda are sequentially numbered 4. Addenda become part of the Contract Documents 5. Oral clarifications are NOT binding — must be confirmed in writing as an Addendum
-[/SLATECAMP_UI_BLOCK]
+## Source Anchors
 
-## Common Mistakes
-
-[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\n    \"Believing scaled dimensions control over written dimensions — figured dimensions always supersede\",\n    \"Assuming oral clarifications at pre-bid meetings are binding — they must be confirmed in writing as Addenda\",\n    \"Thinking bid documents can be amended after bid opening — Addenda must be issued before the bid deadline\",\n    \"Confusing Instructions to Bidders with General Conditions — Instructions govern the bidding process; General Conditions govern construction\",\n    \"Believing specifications are less important than drawings — Specifications prevail over Drawings in the hierarchy of interpretation\",\n  ]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
----
+- UAP Document 301: definitions, Contract Documents, Drawings and Specifications, and discrepancy rules.
+- CIAP Document 102: Bid Documents, Contract Documents, interpretation priority, Addenda, Drawings, Specifications, and Bid Bulletin.
 
 ## Related Articles
 
@@ -79,4 +49,5 @@ Extracted summary:
 - [Dispute Resolution](lea-prac-ctr-020)
 - [Fee Compensation Methods](lea-prac-cmp-001)
 
-<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->
+
+<!-- no-media-needed: professional practice article, text/tables are optimal format -->

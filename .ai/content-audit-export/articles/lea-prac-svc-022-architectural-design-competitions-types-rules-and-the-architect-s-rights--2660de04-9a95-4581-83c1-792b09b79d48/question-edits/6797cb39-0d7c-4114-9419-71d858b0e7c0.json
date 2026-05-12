@@ -1,0 +1,85 @@
+{
+  "question_id": "6797cb39-0d7c-4114-9419-71d858b0e7c0",
+  "baseline_hash": "sha256:b1c489f952179b5b8e1a72e094407c319080ea41f298c630e20f7238378e9cda",
+  "action": "replace",
+  "reason": "source-audited-article-batch-025-local-first rewrote this linked question to align with the local source audit for lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights.",
+  "approved_by": "codex-local-source-audit-batch-025",
+  "approved_at": "2026-05-11T18:30:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "2660de04-9a95-4581-83c1-792b09b79d48",
+    "parent_article_slug": "lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UAP Standards lines 1284-1410; SPP 208 refined markdown lines 100-123, 305",
+    "checked_markdown_lines": [
+      "UAP Standards lines 1284-1410",
+      "SPP 208 lines 100-123",
+      "SPP 208 line 305"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "source_id": "uap-standards-local-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights",
+        "locator": "UAP Standards lines 1284-1410"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "source_id": "uap-standards-local-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights",
+        "locator": "UAP Standards lines 1284-1410"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 208.pdf",
+        "sha256": "sha256:c491ea6b2a58eb052b37ca4bee7145ffc98b5da9ef076cf30aa59b04b100c074",
+        "source_id": "spp208-architectural-design-competitions-local",
+        "locator": "SPP 208 lines 100-123; SPP 208 line 305"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md",
+        "sha256": "sha256:7e180c6a98dc6d60693b3198d22aa42d8dd6d9dfd4a92a015f84d30d0af6ab60",
+        "source_id": "spp208-architectural-design-competitions-local",
+        "locator": "SPP 208 lines 100-123; SPP 208 line 305"
+      }
+    ],
+    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+  },
+  "proposed": {
+    "text": "Which classification pair is source-supported under SPP 208?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Project ADCs and Ideas Competitions"
+      },
+      {
+        "id": "b",
+        "text": "Space programming and space management"
+      },
+      {
+        "id": "c",
+        "text": "Lighting samples and fixture inspection"
+      },
+      {
+        "id": "d",
+        "text": "Administration and final occupancy"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "The checked source lists Project ADCs and Ideas Competitions as ADC classifications.",
+    "explanation": "This Batch 025 replacement is tied to the checked local UAP source locator and removes wording that was not needed for source-safe assessment.",
+    "code_citation": "UAP Standards lines 1284-1410; SPP 208 refined markdown lines 100-123, 305",
+    "bloom_level": "remember",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited batch 025"
+    ],
+    "difficulty": 0.45,
+    "is_assessment": false,
+    "model_id": "BATCH-025-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights-004"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T18:30:00+08:00",
+  "audit_mode": "local_source_audit_no_supabase",
+  "protocols_applied": [
+    ".ai/CONTENT_EXCELLENCE_GOAL.md",
+    ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
+    ".ai/00_system/vitruvius-source-reference.md"
+  ],
+  "target": {
+    "article_id": "265185c0-c1ac-4f40-8db0-bde23084f634",
+    "slug": "lea-prac-eth-010-introduction",
+    "title": "Professional Development Ethics",
+    "article_folder": ".ai/content-audit-export/articles/lea-prac-eth-010-introduction--265185c0-c1ac-4f40-8db0-bde23084f634",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-eth-010-introduction--265185c0-c1ac-4f40-8db0-bde23084f634/candidate.md",
+    "candidate_sha256": "sha256:a21ddc547ac9a014a119acf519099c83b24e04b49010e2f1725606f6065e2071",
+    "normalized_sha256": "sha256:a21ddc547ac9a014a119acf519099c83b24e04b49010e2f1725606f6065e2071",
+    "linked_questions_sha256": "sha256:ff7bbac15e7825978671f0152c765105e4b453e3343b336760202dcee60e3f0b",
+    "sources_sha256": "sha256:950b0400e3c3df3a1e8ef4f75e2d92a7b1d46942268dc5b973a44ed7c067c8af"
+  },
+  "classification": {
+    "content_type": "professional_ethics_article",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": [
+      "279936d5-1487-4e4b-9a5a-4c31b511ff09",
+      "5020afc2-ec03-4abb-9ef1-10d02e71ed99",
+      "57372d7a-f13f-40c2-8544-e77079b95ce1",
+      "667fa9ba-8aec-4ee7-af25-8dd99ebb31f9",
+      "6ccda021-d03e-4f95-a672-5f8c859e8854",
+      "7b639af5-4638-4f42-95b1-90d348f7309c",
+      "b1ab6227-5854-444a-8e67-51ed411c3884",
+      "bd3b1377-c8ff-43b3-aa25-2d14d0136494",
+      "eb473876-913c-4b38-8c34-db48deef0491",
+      "fbe2c28c-bc20-43a1-addc-7807d33efb3b"
+    ]
+  },
+  "raw_sources": [
+    {
+      "key": "ra9266_irr",
+      "label": "RA 9266 IRR, Architecture Act of 2004",
+      "source_type": "implementing_rules",
+      "source_id": "batch003-lea-prac-eth-010-introduction-source-01",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574"
+    },
+    {
+      "key": "uap_code_of_ethics",
+      "label": "UAP Document Code of Ethics",
+      "source_type": "professional_ethics_code",
+      "source_id": "batch003-lea-prac-eth-010-introduction-source-02",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+      "raw_pdf_sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea"
+    }
+  ],
+  "gate_results": {
+    "compose": "PASS: blockers=0; warnings=0; preserved_blocks_reinserted=0",
+    "diff": "PASS: safe_to_push=true; locally_safe_to_push=true; blockers=0",
+    "validate": "PASS: bun run content-audit:validate -- --article-id 265185c0-c1ac-4f40-8db0-bde23084f634 --summary returned valid=true with zero blockers",
+    "push_dry_run": "not_attempted_local_first_recovery; Supabase remote fetch is final publishing only and is intentionally non-blocking here",
+    "supabase_mutation": "not_attempted"
+  },
+  "claims": [
+    {
+      "claim_id": "lea-prac-eth-010-introduction-claim-01",
+      "claim_text": "RA 9266 IRR supports discipline categories including fraud/deceit, gross negligence, incompetence, unprofessional conduct, certificate/PIC, and seal authority issues.",
+      "audit_result": "PASS",
+      "source_support": [
+        "ra9266_irr",
+        "uap_code_of_ethics"
+      ]
+    },
+    {
+      "claim_id": "lea-prac-eth-010-introduction-claim-02",
+      "claim_text": "UAP Code of Ethics supports conflict/gift/commission duties, including contractor and material/equipment firm commission rules.",
+      "audit_result": "PASS",
+      "source_support": [
+        "ra9266_irr",
+        "uap_code_of_ethics"
+      ]
+    },
+    {
+      "claim_id": "lea-prac-eth-010-introduction-claim-03",
+      "claim_text": "Unsupported penalty ranges, restitution amounts, dollar values, and invented scenario statistics were removed.",
+      "audit_result": "PASS",
+      "source_support": [
+        "ra9266_irr",
+        "uap_code_of_ethics"
+      ]
+    },
+    {
+      "claim_id": "lea-prac-eth-010-introduction-claim-04",
+      "claim_text": "Repeated conduct and correction/concealment were retained only as seriousness factors, not fixed sanctions.",
+      "audit_result": "PASS",
+      "source_support": [
+        "ra9266_irr",
+        "uap_code_of_ethics"
+      ]
+    },
+    {
+      "claim_id": "lea-prac-eth-010-introduction-linked-question-edits",
+      "claim_text": "Question edits staged locally for linked question IDs: 279936d5-1487-4e4b-9a5a-4c31b511ff09, 5020afc2-ec03-4abb-9ef1-10d02e71ed99, 57372d7a-f13f-40c2-8544-e77079b95ce1, 667fa9ba-8aec-4ee7-af25-8dd99ebb31f9, 6ccda021-d03e-4f95-a672-5f8c859e8854, 7b639af5-4638-4f42-95b1-90d348f7309c, b1ab6227-5854-444a-8e67-51ed411c3884, bd3b1377-c8ff-43b3-aa25-2d14d0136494, eb473876-913c-4b38-8c34-db48deef0491, fbe2c28c-bc20-43a1-addc-7807d33efb3b",
+      "audit_result": "PASS",
+      "source_support": [
+        "ra9266_irr",
+        "uap_code_of_ethics"
+      ]
+    }
+  ],
+  "unsupported_or_removed_claims": [],
+  "remaining_local_blockers": [],
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_recovery_complete": true,
+    "remote_publish_status": "not_attempted_by_request",
+    "remaining_local_blockers": []
+  }
+}

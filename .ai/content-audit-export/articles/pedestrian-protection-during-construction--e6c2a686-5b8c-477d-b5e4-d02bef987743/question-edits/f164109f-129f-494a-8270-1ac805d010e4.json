@@ -1,0 +1,24 @@
+{
+  "question_id": "f164109f-129f-494a-8270-1ac805d010e4",
+  "baseline_hash": "sha256:a069bea4ac3b18b1d20a326424987863e9a845571ce03e812956753853062f03",
+  "reason": "Batch 012 local source audit aligned linked question f164109f-129f-494a-8270-1ac805d010e4 with the repaired Pedestrian Protection During Construction article and checked raw-source citations. This local draft updates citation and explanation context only and does not change answer-key fields.",
+  "approved_by": "codex-local-source-audit-batch-012",
+  "approved_at": "2026-05-10T20:40:00.000+08:00",
+  "source_audit_support": {
+    "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+    "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+    "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+    "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+    "source_locator": "PD 1096 Rule XI Section 1105",
+    "checked_markdown_lines": [
+      "PD 1096 raw markdown lines 3462-3469"
+    ],
+    "parent_article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+    "parent_article_slug": "pedestrian-protection-during-construction",
+    "answer_key_fields_changed": false
+  },
+  "proposed": {
+    "code_citation": "PD 1096 Rule XI, Section 1105",
+    "explanation": "A temporary walkway must be able to support a uniform live load of 650 kilograms per square meter and maintain a durable safe wearing surface."
+  }
+}

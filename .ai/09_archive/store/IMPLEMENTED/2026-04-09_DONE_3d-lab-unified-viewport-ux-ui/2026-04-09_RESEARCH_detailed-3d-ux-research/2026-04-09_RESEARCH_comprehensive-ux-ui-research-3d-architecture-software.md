@@ -209,7 +209,7 @@ A structured guided tour is essential for educational 3D modules. The Site Dev C
 - Skippable at any step
 - Each stop narrates a single concept (one cognitive chunk)
 - Camera position should ideally update per stop for best-angle viewing of the highlighted concept
-- Tour step counter shows progress (e.g., "3 of 6") 
+- Tour step counter shows progress (e.g., "3 of 6")
 - After tour completion, module enters full sandbox mode
 
 ***

@@ -227,7 +227,7 @@ $\text{Projected Completion} = \frac{\text{Total Exam Time (minutes)}}{\text{Use
 If Projected Completion < Total Items, the system displays a **pacing deficit warning:**
 
 > *"At your current pace of 3m 15s per item, you would complete 74 of 200 items in the allotted time. That leaves 126 items unanswered."*
-> 
+>
 
 The warning is not delivered as encouragement. It is delivered as arithmetic. The student can then:
 

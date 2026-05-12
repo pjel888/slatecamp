@@ -1,0 +1,61 @@
+{
+  "question_id": "0a7ee1b5-bdbf-4788-9492-15b2028989d0",
+  "baseline_hash": "sha256:2b8f404fc7581eedd13877eec6f807761198d5b8005e18e137c24aa3534ff8b4",
+  "action": "replace",
+  "reason": "source-audited-article-batch-020-local-first rewrote the question to match only locally checked source evidence.",
+  "approved_by": "codex-local-source-audit-batch-020",
+  "approved_at": "2026-05-10T16:41:51.472Z",
+  "source_audit_support": {
+    "parent_article_id": "b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b",
+    "parent_article_slug": "lea-prac-svc-013-full-time-supervision-services-construction-phase-administration",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "checked_sources": [
+      {
+        "source_id": "spp-204a-uap-local-raw-pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204A.pdf",
+        "raw_pdf_sha256": "sha256:ec08811ae8611f077fda9f0d1106cc7fab6a1e6210fe6d617637adaa6de083b8",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md lines 3-8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md lines 201-206"
+      }
+    ],
+    "local_source_safe_action": "Replaced the prior item with a source-bounded MCQ using only checked SPP source lines."
+  },
+  "proposed": {
+    "text": "Which item is included in the checked SPP 204-A scope list?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Quality Control."
+      },
+      {
+        "id": "b",
+        "text": "Architectural Design Competition jury awards."
+      },
+      {
+        "id": "c",
+        "text": "Design-Build Guaranteed Maximum Project Construction Cost."
+      },
+      {
+        "id": "d",
+        "text": "Architectural Lighting Layout and Design."
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "Quality Control is one of the four checked SPP 204-A scope items.",
+    "explanation": "Quality Control is one of the four checked SPP 204-A scope items.",
+    "code_citation": "SPP Document 204-A",
+    "bloom_level": "remember",
+    "application_context": "professional_practice",
+    "practice_context": [
+      "SPP Document 204-A",
+      "Fulltime Supervision Services: Construction-Phase Administration"
+    ],
+    "difficulty": 0.45,
+    "is_assessment": false,
+    "model_id": "BATCH-020-lea-prac-svc-013-full-time-supervision-services-construction-phase-administration-002"
+  }
+}

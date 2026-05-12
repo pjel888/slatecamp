@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "batch_id": "source-audited-article-batch-020-local-first",
+  "generated_at": "2026-05-10T16:45:50.612Z",
+  "mode": "local_first_no_supabase_no_deploy_no_commit",
+  "selected_article_count": 5,
+  "prior_batch_id_check": {
+    "prior_batches_checked": "001-019",
+    "selected_ids_absent_from_prior_records": true,
+    "prior_selected_id_count_detected": 93
+  },
+  "articles": [
+    {
+      "article_id": "e37575ae-c640-4ddc-911a-7553f338b981",
+      "slug": "lea-prac-svc-025-core-concept",
+      "title": "Architectural Interiors under SPP 203",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-prac-svc-025-core-concept--e37575ae-c640-4ddc-911a-7553f338b981",
+      "absolute_article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-025-core-concept--e37575ae-c640-4ddc-911a-7553f338b981",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-svc-025-core-concept--e37575ae-c640-4ddc-911a-7553f338b981/question-edits",
+      "absolute_question_edits_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-025-core-concept--e37575ae-c640-4ddc-911a-7553f338b981/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "sources": [
+        {
+          "source_id": "spp-203-uap-local-raw-pdf",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+          "raw_pdf_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+          "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 101-117; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 121-150; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 228-231"
+        }
+      ],
+      "normalized_hash": "sha256:024090478ad16bbdbeaa987d23dfe71112aff3baece111e4d10d84398656eec9",
+      "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "sources_hash": "sha256:f45aefddb841563abca0ae763bce04b0bf9e6283d9faa84d576bc84810b7f60d",
+      "local_status": "locally_passed",
+      "validation": {
+        "compose_blockers": 0,
+        "compose_warnings": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "bundle_validate_valid": true,
+        "bundle_validate_blockers": [],
+        "bundle_validate_warnings": [
+          "lea-prac-svc-025-core-concept--e37575ae-c640-4ddc-911a-7553f338b981: component-usage.json has not been generated for this article yet."
+        ]
+      }
+    },
+    {
+      "article_id": "c534d94f-967a-48bb-babf-419fa6d35ec7",
+      "slug": "spp-doc-204-a-fulltime-supervision-services",
+      "title": "SPP Doc 204-A: Fulltime Supervision Services",
+      "article_folder_path": ".ai/content-audit-export/articles/spp-doc-204-a-fulltime-supervision-services--c534d94f-967a-48bb-babf-419fa6d35ec7",
+      "absolute_article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-204-a-fulltime-supervision-services--c534d94f-967a-48bb-babf-419fa6d35ec7",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/spp-doc-204-a-fulltime-supervision-services--c534d94f-967a-48bb-babf-419fa6d35ec7/question-edits",
+      "absolute_question_edits_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-204-a-fulltime-supervision-services--c534d94f-967a-48bb-babf-419fa6d35ec7/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "sources": [
+        {
+          "source_id": "spp-204a-uap-local-raw-pdf",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204A.pdf",
+          "raw_pdf_sha256": "sha256:ec08811ae8611f077fda9f0d1106cc7fab6a1e6210fe6d617637adaa6de083b8",
+          "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md lines 3-8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md lines 201-206"
+        }
+      ],
+      "normalized_hash": "sha256:f50932b1e45dd918ff2911f84abf91aea89b9669ddb8c704314ea0e37b625c3a",
+      "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "sources_hash": "sha256:e114528a79148caa1dc86caab45e0c9145075ff92f28baf7fb502305b0079736",
+      "local_status": "locally_passed",
+      "validation": {
+        "compose_blockers": 0,
+        "compose_warnings": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "bundle_validate_valid": true,
+        "bundle_validate_blockers": [],
+        "bundle_validate_warnings": [
+          "spp-doc-204-a-fulltime-supervision-services--c534d94f-967a-48bb-babf-419fa6d35ec7: component-usage.json has not been generated for this article yet."
+        ]
+      }
+    },
+    {
+      "article_id": "f76bad6c-4bdf-4d2c-bdfb-a3381c42e320",
+      "slug": "spp-doc-207-design-build-services",
+      "title": "SPP Doc 207: Design-Build Services",
+      "article_folder_path": ".ai/content-audit-export/articles/spp-doc-207-design-build-services--f76bad6c-4bdf-4d2c-bdfb-a3381c42e320",
+      "absolute_article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-207-design-build-services--f76bad6c-4bdf-4d2c-bdfb-a3381c42e320",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/spp-doc-207-design-build-services--f76bad6c-4bdf-4d2c-bdfb-a3381c42e320/question-edits",
+      "absolute_question_edits_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-207-design-build-services--f76bad6c-4bdf-4d2c-bdfb-a3381c42e320/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "sources": [
+        {
+          "source_id": "spp-207-uap-local-raw-pdf",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 207.pdf",
+          "raw_pdf_sha256": "sha256:7050b0c7bd152694587f39ead8b682ed71b882ba50fce5c4a614206f32b5b610",
+          "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md lines 3-8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md lines 147-153; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/SPP 207.md lines 429-432"
+        }
+      ],
+      "normalized_hash": "sha256:bbba2c241dad317eb77c4c2f2ac866d9f1ef3ee6d3767b260e53697fc834eb9b",
+      "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "sources_hash": "sha256:a3ad87c5f50602283378593c4c995a78ae5606964aea9fd287d58778d8e3c5d5",
+      "local_status": "locally_passed",
+      "validation": {
+        "compose_blockers": 0,
+        "compose_warnings": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "bundle_validate_valid": true,
+        "bundle_validate_blockers": [],
+        "bundle_validate_warnings": [
+          "spp-doc-207-design-build-services--f76bad6c-4bdf-4d2c-bdfb-a3381c42e320: component-usage.json has not been generated for this article yet."
+        ]
+      }
+    },
+    {
+      "article_id": "3e530aa4-6004-4664-a241-9634a725bd5c",
+      "slug": "lea-prac-svc-010-core-concept",
+      "title": "SPP Doc 208: Architectural Design Competitions",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-prac-svc-010-core-concept--3e530aa4-6004-4664-a241-9634a725bd5c",
+      "absolute_article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-010-core-concept--3e530aa4-6004-4664-a241-9634a725bd5c",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-svc-010-core-concept--3e530aa4-6004-4664-a241-9634a725bd5c/question-edits",
+      "absolute_question_edits_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-010-core-concept--3e530aa4-6004-4664-a241-9634a725bd5c/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "sources": [
+        {
+          "source_id": "spp-208-uap-local-raw-pdf",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 208.pdf",
+          "raw_pdf_sha256": "sha256:c491ea6b2a58eb052b37ca4bee7145ffc98b5da9ef076cf30aa59b04b100c074",
+          "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 3-8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 111-151; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/SPP 208.md lines 155-173; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 179-201; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 205-241; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 253-259"
+        }
+      ],
+      "normalized_hash": "sha256:f2d8c16522d07504197a1d1e6bfc579363e9f08ccc47ea95245f3b2c7000049f",
+      "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "sources_hash": "sha256:a622ffc873a9af2ec07da323c247fc13825940fd94ae8e0d986138b69d138627",
+      "local_status": "locally_passed",
+      "validation": {
+        "compose_blockers": 0,
+        "compose_warnings": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "bundle_validate_valid": true,
+        "bundle_validate_blockers": [],
+        "bundle_validate_warnings": [
+          "lea-prac-svc-010-core-concept--3e530aa4-6004-4664-a241-9634a725bd5c: component-usage.json has not been generated for this article yet."
+        ]
+      }
+    },
+    {
+      "article_id": "b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b",
+      "slug": "lea-prac-svc-013-full-time-supervision-services-construction-phase-administration",
+      "title": "Fulltime Supervision Services: Construction-Phase Administration",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-prac-svc-013-full-time-supervision-services-construction-phase-administration--b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b",
+      "absolute_article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-013-full-time-supervision-services-construction-phase-administration--b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-svc-013-full-time-supervision-services-construction-phase-administration--b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b/question-edits",
+      "absolute_question_edits_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-013-full-time-supervision-services-construction-phase-administration--b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "sources": [
+        {
+          "source_id": "spp-204a-uap-local-raw-pdf",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204A.pdf",
+          "raw_pdf_sha256": "sha256:ec08811ae8611f077fda9f0d1106cc7fab6a1e6210fe6d617637adaa6de083b8",
+          "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md lines 3-8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md lines 201-206"
+        }
+      ],
+      "normalized_hash": "sha256:6789a639b514ef3f8a1ba07c476a79794b3bc88a1d4b661d0ebc26d38e017d2d",
+      "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "sources_hash": "sha256:e114528a79148caa1dc86caab45e0c9145075ff92f28baf7fb502305b0079736",
+      "local_status": "locally_passed",
+      "validation": {
+        "compose_blockers": 0,
+        "compose_warnings": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "bundle_validate_valid": true,
+        "bundle_validate_blockers": [],
+        "bundle_validate_warnings": [
+          "lea-prac-svc-013-full-time-supervision-services-construction-phase-administration--b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b: component-usage.json has not been generated for this article yet."
+        ]
+      }
+    }
+  ],
+  "artifact_paths": {
+    "ledger": ".ai/content-audit-export/source-audited-article-batch-020-local-first-ledger-2026-05-11.json",
+    "report": ".ai/content-audit-export/source-audited-article-batch-020-local-first-report-2026-05-11.md"
+  },
+  "counts": {
+    "selected_articles": 5,
+    "linked_questions": 50,
+    "question_edits": 50,
+    "source_entries": 5,
+    "unique_raw_pdfs": 4,
+    "normalized_articles_repaired": 5,
+    "candidates_composed": 5,
+    "diff_reports_safe": 5,
+    "unresolved_local_blockers": 0
+  },
+  "validation": {
+    "compose_diff_validate": "PASS - all five compose reports have zero blockers; all five diff reports are safe; all five bundle validations returned valid=true with zero blockers.",
+    "bundle_validation_warning": "Each selected bundle still has the existing non-blocking component-usage.json warning.",
+    "scoped_json_check": "PASS - 105 selected article JSON files parsed with jq empty.",
+    "scoped_placeholder_internal_note_check": "PASS - repaired normalized.md, candidate.md, source-audit-evidence.json, and question-edits files have no SLATECAMP_UI_BLOCK, Extracted summary, TODO/TBD/FIXME, PARKED_NOT_READY, source_gap, unresolved_blocker, internal note, or AI-generated markers.",
+    "source_hash_check": "PASS - raw PDF source paths exist and recorded sha256 hashes match local files.",
+    "tests": "PASS - bun test scripts/content-audit/content-audit.test.ts: 27 pass, 0 fail.",
+    "diff_check": "PASS - git diff --check scoped to selected article folders returned clean."
+  },
+  "next_phase_readiness": {
+    "ready_for_local_review": true,
+    "ready_for_final_publishing_queue_after_human_or_governance_review": true,
+    "supabase_push_performed": false,
+    "deploy_performed": false,
+    "commit_performed": false,
+    "stop_condition": "Batch 020 local-first repairs complete with zero unresolved local blockers."
+  },
+  "generated_local_at": "2026-05-11T00:46:49+08:00",
+  "generated_local_timezone": "Asia/Manila"
+}

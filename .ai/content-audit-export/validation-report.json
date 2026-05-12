@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-05-10T05:24:50.150Z",
+  "generated_at": "2026-05-12T00:56:28.852Z",
   "input": "/Users/philiplewis/slatecamp/.ai/content-audit-export",
   "article_count": 1,
   "valid": true,
   "blockers": [],
   "warnings": [
-    "lea-prac-eth-010-introduction--265185c0-c1ac-4f40-8db0-bde23084f634: component-usage.json has not been generated for this article yet."
+    "lea-plan-007-04-core-concept--62991043-88f7-4c94-9e06-4d649e5d7f1c: component-usage.json has not been generated for this article yet."
   ],
   "articles": [
     {
-      "article_id": "265185c0-c1ac-4f40-8db0-bde23084f634",
-      "slug": "lea-prac-eth-010-introduction",
-      "folder": "lea-prac-eth-010-introduction--265185c0-c1ac-4f40-8db0-bde23084f634",
+      "article_id": "62991043-88f7-4c94-9e06-4d649e5d7f1c",
+      "slug": "lea-plan-007-04-core-concept",
+      "folder": "lea-plan-007-04-core-concept--62991043-88f7-4c94-9e06-4d649e5d7f1c",
       "valid": true,
       "blockers": [],
       "warnings": [
@@ -31,14 +31,14 @@
         "candidate": true,
         "diffReport": true,
         "diffReportMarkdown": true,
-        "pushReport": true,
-        "pushResult": true
+        "pushReport": false,
+        "pushResult": false
       },
       "hashes": {
-        "original": "sha256:4e0bfeb574258e913d1232c3b7abffe1541282a0baddd0d245bf43a6ba75544c",
-        "normalized": "sha256:05a7db9fffd4b1b3b91ca8e5b93830d87835a10d98f595f5a7cbd8ba9125a6b5",
-        "candidate": "sha256:2c40a94542fcd72c6da28cf157eebbc1e71c50c5e8f2c209cf5bc1d5ac5c1336",
-        "ui_blocks": "sha256:e75b915649c57f27b54b31cb0142ca89fbcf4c0aed684af344ab9a631d339527"
+        "original": "sha256:527bae484692fa930cf8a666ca0543e6896e15b91bb7268f75b12258c0c73975",
+        "normalized": "sha256:040ab9dae83cb5cac3536cc06b3f9b7eb0d0928a255cd89ae85c6849eeb0597e",
+        "candidate": "sha256:040ab9dae83cb5cac3536cc06b3f9b7eb0d0928a255cd89ae85c6849eeb0597e",
+        "ui_blocks": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
       }
     }
   ]

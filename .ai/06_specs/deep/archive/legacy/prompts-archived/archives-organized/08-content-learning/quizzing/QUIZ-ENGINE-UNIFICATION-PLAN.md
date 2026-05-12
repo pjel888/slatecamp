@@ -1,7 +1,7 @@
 # SlateCamp Quiz Engine — Unification & Feature Improvement Plan
 
-> **Scope:** Cross-reference of the UI/UX Psychology Blueprints (quiz-ui-design-blueprint.md, quiz-ux-user-paths.md, quiz-ui-ux-research-blueprint.md) against the technical audit (QUIZ-TESTING-AUDIT.md) to produce a developer-ready gap analysis and implementation plan.  
-> **Date:** 2026-04-01  
+> **Scope:** Cross-reference of the UI/UX Psychology Blueprints (quiz-ui-design-blueprint.md, quiz-ux-user-paths.md, quiz-ui-ux-research-blueprint.md) against the technical audit (QUIZ-TESTING-AUDIT.md) to produce a developer-ready gap analysis and implementation plan.
+> **Date:** 2026-04-01
 > **Output format:** Implementation-ready Markdown — component map, state gap tables, and checkbox task lists.
 
 ---
@@ -77,7 +77,7 @@ This creates the following unhandled edge-case UI states:
 
 ### 1.1.5 Missing Store Fields — Haptic and Motion Settings
 
-**Blueprint (quiz-ui-design-blueprint.md §3.6):** "Provide a toggle in settings to disable haptic feedback."  
+**Blueprint (quiz-ui-design-blueprint.md §3.6):** "Provide a toggle in settings to disable haptic feedback."
 **Blueprint (quiz-ux-user-paths.md §10):** "`prefers-reduced-motion` media query — all animations become instant transitions if enabled."
 
 **Audit finding:** No `settings` slice or `hapticEnabled` / `reducedMotion` preference field exists in `useQuizStore`. No `persist`-managed user preference for motion is documented.
@@ -125,7 +125,7 @@ This creates the following unhandled edge-case UI states:
 
 ### 1.2.2 Missing `QuestionSkeleton` Component
 
-**Blueprint (quiz-ui-design-blueprint.md §4.3):** "Always render `SkeletonCard` components during question fetching — 3 placeholder lines for question stem, 4 placeholder answer blocks."  
+**Blueprint (quiz-ui-design-blueprint.md §4.3):** "Always render `SkeletonCard` components during question fetching — 3 placeholder lines for question stem, 4 placeholder answer blocks."
 **Blueprint (quiz-ux-user-paths.md §2.1):** Loading/skeleton screens: 500–1000ms. "No blank white screens at any point."
 
 **Audit finding:** `QuizShell.tsx` renders questions from the pre-fetched `questions[]` array in the store (loaded at session start). There is no documented inter-question loading state or skeleton component. The transition between questions is driven by `currentIndex` increment — no async gap exists in the standard flow.
@@ -154,7 +154,7 @@ This creates the following unhandled edge-case UI states:
 
 ### 1.2.4 Timer Threshold Mismatch
 
-**Blueprint (quiz-ui-design-blueprint.md §3.7):** "Amber at 50% time remaining. Red at 20% remaining."  
+**Blueprint (quiz-ui-design-blueprint.md §3.7):** "Amber at 50% time remaining. Red at 20% remaining."
 **Blueprint (quiz-ux-user-paths.md, Timer Component):** `[Full / Green] → [~50% / Neutral] → [25% / Yellow Warning] → [10% / Red Pulsing] → [0 / Frozen]`
 
 **Audit (Phase 3, Timer Behavior):** "At <10% remaining, display turns warning color."
@@ -228,8 +228,8 @@ This creates the following unhandled edge-case UI states:
 
 ### 1.2.9 Postdiction UI — Missing from Phase 4
 
-**Audit (Phase 2, §2.15):** The prediction slider exists pre-quiz for Storm/Full Exam/Extended modes.  
-**Audit (4.4 Background Processing):** `save-postdiction.ts` server action exists.  
+**Audit (Phase 2, §2.15):** The prediction slider exists pre-quiz for Storm/Full Exam/Extended modes.
+**Audit (4.4 Background Processing):** `save-postdiction.ts` server action exists.
 **Audit (Phase 4 §3):** Results include a `PredictionComparison` component for Storm/Full Exam/Extended.
 
 **Gap:** There is no documented UI step for capturing the post-quiz postdiction score. The `save-postdiction.ts` action exists but has no mapped user interaction in Phase 4. The `PredictionComparison` component displays a pre/post comparison but it is unclear from audit data whether the postdiction value is:
@@ -551,5 +551,5 @@ QuizAnswerState.questionStatus transitions:
 
 ---
 
-*Document version: 1.0 — SlateCamp Quiz Engine Unification Plan*  
+*Document version: 1.0 — SlateCamp Quiz Engine Unification Plan*
 *Cross-references: quiz-ui-design-blueprint.md · quiz-ux-user-paths.md · quiz-ui-ux-research-blueprint.md · QUIZ-TESTING-AUDIT.md*

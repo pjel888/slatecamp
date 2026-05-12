@@ -27,7 +27,7 @@ export const ROUTES = {
   dashboard: { root: '/dashboard', ... },
   quiz: { hub: '/dashboard/drills', setup: (mode) => ..., ... },
   // ... namespaces for admin, ceo, developer, wiki, calculators
-  
+
   // Legacy Aliases (DO NOT USE FOR NEW CODE)
   HOME: '/',
   DASHBOARD: '/dashboard',

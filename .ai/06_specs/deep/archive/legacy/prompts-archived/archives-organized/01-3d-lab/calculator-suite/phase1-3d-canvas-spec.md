@@ -1,8 +1,8 @@
 # Phase 1 Calculator Suite — 3D Canvas Implementation Specification
 
-**Document type:** Technical implementation spec — R3F component architecture, geometry, materials, Zustand subscriptions, performance contracts  
-**Date:** April 2026  
-**Status:** Build-ready  
+**Document type:** Technical implementation spec — R3F component architecture, geometry, materials, Zustand subscriptions, performance contracts
+**Date:** April 2026
+**Status:** Build-ready
 **Prerequisite reading:** `3d-calculator-suite-final.md` (formulas + scope), `formulas.md` (formula audit trail)
 
 ---

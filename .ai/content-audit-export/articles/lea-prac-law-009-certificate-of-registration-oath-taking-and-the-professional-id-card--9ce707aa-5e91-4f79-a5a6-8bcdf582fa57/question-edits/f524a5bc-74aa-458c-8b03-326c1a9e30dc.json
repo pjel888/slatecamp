@@ -1,0 +1,34 @@
+{
+  "question_id": "f524a5bc-74aa-458c-8b03-326c1a9e30dc",
+  "baseline_hash": "sha256:aaf09d85df695544d80a94ebc2dd6705416c87d723ea814d23955607a08c9cf3",
+  "reason": "Batch 005 local source audit aligned Certificate of Registration, Oath, and Professional Identification Card linked question ALE-PRAC-LAW-009-008 to verified RA 9266 IRR raw-source claims.",
+  "approved_by": "codex-local-source-audit-batch-005",
+  "approved_at": "2026-05-10T21:30:00+08:00",
+  "proposed": {
+    "code_citation": "RA 9266 IRR Sections 3(23), 3(37), 7(c)-(d), 17, and 18",
+    "explanation": "Source-audited against RA 9266 IRR Sections 3(23), 3(37), 7(c)-(d), 17, and 18 in the checked local RA 9266 IRR PDF. This edit removes unsupported locators or assumptions and keeps the question aligned to the audited article cluster.",
+    "text": "Under RA 9266 IRR Section 18, how long does a Certificate of Registration remain in force and effect?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Until withdrawn, suspended, or revoked according to the Act."
+      },
+      {
+        "id": "b",
+        "text": "Only for one year after oath-taking."
+      },
+      {
+        "id": "c",
+        "text": "Only until the next LEA is administered."
+      },
+      {
+        "id": "d",
+        "text": "Only while the architect remains in the Philippines."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "correct": "Section 18 states that the Certificate of Registration remains in full force and effect until withdrawn, suspended, or revoked according to RA 9266. The prior cancellation-and-return scenario was not supported by the checked source."
+    }
+  }
+}

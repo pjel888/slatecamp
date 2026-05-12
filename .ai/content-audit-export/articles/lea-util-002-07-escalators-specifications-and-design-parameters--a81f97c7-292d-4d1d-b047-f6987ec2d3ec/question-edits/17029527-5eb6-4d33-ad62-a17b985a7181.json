@@ -1,0 +1,57 @@
+{
+  "question_id": "17029527-5eb6-4d33-ad62-a17b985a7181",
+  "baseline_hash": "sha256:03cbce93f58c1bc7ef186264e48923b3d4108c16e4bf67dfe180477bfe47f9dd",
+  "action": "replace",
+  "reason": "source-audited-article-batch-046-local-first: local raw-source-backed replacement constrained to checked Batch 046 source families.",
+  "approved_by": "codex-local-first-batch-046",
+  "approved_at": "2026-05-11T17:58:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "a81f97c7-292d-4d1d-b047-f6987ec2d3ec",
+    "parent_article_slug": "lea-util-002-07-escalators-specifications-and-design-parameters",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Salvan Utilities 2 refined markdown lines 1707-1736, 16126-16250, 16432-16523",
+    "checked_markdown_lines": [
+      "Salvan Utilities 2 refined markdown lines 1707-1736",
+      "Salvan Utilities 2 refined markdown lines 16126-16250",
+      "Salvan Utilities 2 refined markdown lines 16432-16523"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "salvan-architectural-utilities-2-local-raw-pdf--b046",
+        "label": "George Salvan Architectural Utilities 2 - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+        "sha256": "sha256:ff7231f0059a1febaf4a0996a425caca3b7676c23c729f922e385af4e4c20d28",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
+        "refined_markdown_sha256": "sha256:1b9249c90c0b86c57c6df2f20f0ab210ac112a10230bd9bce584461773d75215",
+        "locator": "Salvan Utilities 2 refined markdown lines 1707-1736, 16126-16250, 16432-16523"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 046 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "What control requirement applies to escalator starting switches?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They must be hidden from every landing."
+      },
+      {
+        "id": "b",
+        "text": "They must be key-operated and located within sight of the steps."
+      },
+      {
+        "id": "c",
+        "text": "They may be ordinary wall switches in a storage room."
+      },
+      {
+        "id": "d",
+        "text": "They are unnecessary if an emergency brake exists."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": "They must be key-operated and located within sight of the steps. This answer matches Salvan Utilities 2 refined markdown lines 1727-1736.",
+    "explanation": "They must be key-operated and located within sight of the steps. This answer matches Salvan Utilities 2 refined markdown lines 1727-1736.",
+    "code_citation": "Salvan Utilities 2 refined markdown lines 1727-1736"
+  }
+}

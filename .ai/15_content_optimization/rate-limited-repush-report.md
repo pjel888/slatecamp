@@ -1,8 +1,8 @@
 # Rate-Limited Repush Report
 
-**Generated:** 2026-05-03  
-**Status:** **SUCCESS** — all 69 rate-limited articles pushed and verified  
-**Supabase production touched:** Yes, after explicit user authorization  
+**Generated:** 2026-05-03
+**Status:** **SUCCESS** — all 69 rate-limited articles pushed and verified
+**Supabase production touched:** Yes, after explicit user authorization
 
 ---
 

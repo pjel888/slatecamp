@@ -1,0 +1,57 @@
+{
+  "question_id": "2746ab23-29b4-4017-b030-f957a50248a3",
+  "baseline_hash": "sha256:3c0dd1e2e7eab305d28e3a327f65d2e3e5d36144bb5793121c33852124761c1c",
+  "action": "replace",
+  "reason": "source-audited-article-batch-036-local-first: source-safe replacement grounded in local raw PDF/source family evidence; removes unsupported, stale, or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-036",
+  "approved_at": "2026-05-11T12:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-036-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-national-building-code-local",
+        "label": "PD 1096 National Building Code - Plastics Provisions",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 - National Building Code.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 - National Building Code.md",
+        "checked_markdown_lines": [
+          "PD 1096 National Building Code refined markdown lines 1909-1998"
+        ]
+      },
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR 2004 DPWH Official refined markdown lines 4377-4442"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 1609"
+  },
+  "proposed": {
+    "text": "For plastic awnings and canopies, what material condition is stated?",
+    "options": [
+      {
+        "id": "b036-c712-19-a",
+        "text": "Plastic materials appropriate for use according to flame-spread characteristics may be used if projections and appendages provisions are followed"
+      },
+      {
+        "id": "b036-c712-19-b",
+        "text": "Any plastic may be used regardless of flame spread"
+      },
+      {
+        "id": "b036-c712-19-c",
+        "text": "Only plain glass may be used"
+      },
+      {
+        "id": "b036-c712-19-d",
+        "text": "Only untreated canvas may be used"
+      }
+    ],
+    "correct_option_id": "b036-c712-19-a",
+    "rationale": "Correct answer: Plastic materials appropriate for use according to flame-spread characteristics may be used if projections and appendages provisions are followed. This is directly supported by PD 1096 2004 Revised IRR, Section 1609.",
+    "explanation": "The source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 1609.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 1609"
+  }
+}

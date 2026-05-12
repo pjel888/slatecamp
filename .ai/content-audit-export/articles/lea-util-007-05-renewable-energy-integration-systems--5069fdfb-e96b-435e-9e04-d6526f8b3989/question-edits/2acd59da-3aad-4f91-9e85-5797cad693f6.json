@@ -1,0 +1,101 @@
+{
+  "question_id": "2acd59da-3aad-4f91-9e85-5797cad693f6",
+  "baseline_hash": "sha256:807322f336b17f130bf9dc692859ff3fd92d6297868e96166e1e76e17d710354",
+  "action": "replace",
+  "reason": "source-audited-article-batch-049-local-first: local raw-source-backed replacement constrained to checked Batch 049 source families.",
+  "approved_by": "codex-local-first-batch-049",
+  "approved_at": "2026-05-11T20:35:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "5069fdfb-e96b-435e-9e04-d6526f8b3989",
+    "parent_article_slug": "lea-util-007-05-renewable-energy-integration-systems",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Philippine Electrical Code refined markdown lines 29229-29315, 29472-29504, 29595-29610, 29694-29723, and 29830-29855; RA 11285 refined markdown lines 31-105, 599-613, 719-775, and 1086-1124; DOE Guidelines refined markdown lines 21-43, 260-273, 321-425, and 707-785; George Salvan Utilities 2 refined markdown lines 8600-8610, 9064-9128, 9146-9153, 9220-9244, 9427-9435, and 9465-9471",
+    "checked_markdown_lines": [
+      "Philippine Electrical Code refined markdown lines 29229-29315",
+      "Philippine Electrical Code refined markdown lines 29472-29504",
+      "Philippine Electrical Code refined markdown lines 29595-29610",
+      "Philippine Electrical Code refined markdown lines 29694-29723",
+      "Philippine Electrical Code refined markdown lines 29830-29855",
+      "RA 11285 refined markdown lines 31-105",
+      "RA 11285 refined markdown lines 599-613",
+      "RA 11285 refined markdown lines 719-775",
+      "RA 11285 refined markdown lines 1086-1124",
+      "DOE Guidelines refined markdown lines 21-43",
+      "DOE Guidelines refined markdown lines 260-273",
+      "DOE Guidelines refined markdown lines 321-425",
+      "DOE Guidelines refined markdown lines 707-785",
+      "George Salvan Utilities 2 refined markdown lines 8600-8610",
+      "George Salvan Utilities 2 refined markdown lines 9064-9128",
+      "George Salvan Utilities 2 refined markdown lines 9146-9153",
+      "George Salvan Utilities 2 refined markdown lines 9220-9244",
+      "George Salvan Utilities 2 refined markdown lines 9427-9435",
+      "George Salvan Utilities 2 refined markdown lines 9465-9471"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "pec-local-raw-pdf--b049-5069fdfb-01",
+        "label": "Philippine Electrical Code - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+        "sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+        "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3",
+        "locator": "Philippine Electrical Code refined markdown lines 29229-29315, 29472-29504, 29595-29610, 29694-29723, and 29830-29855"
+      },
+      {
+        "source_id": "ra11285-local-raw-pdf--b049-5069fdfb-02",
+        "label": "RA 11285 Energy Efficiency and Conservation Act - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf",
+        "sha256": "sha256:316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.md",
+        "refined_markdown_sha256": "sha256:d2baa0e8d4ffe0059688783a4d31ac0e121517daca939f18a048fe053e76cdd4",
+        "locator": "RA 11285 refined markdown lines 31-105, 599-613, 719-775, and 1086-1124"
+      },
+      {
+        "source_id": "doe-local-raw-pdf--b049-5069fdfb-03",
+        "label": "DOE Guidelines on Energy Conserving Design of Buildings - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+        "sha256": "sha256:9a1a4019b500ffc2873625db6f04ac50b39aea7cadac9159464f9ed716e8126c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.md",
+        "refined_markdown_sha256": "sha256:477f0990a67359eee303e8280a00be449d0aa413252161db7b5b1bafec3012b9",
+        "locator": "DOE Guidelines refined markdown lines 21-43, 260-273, 321-425, and 707-785"
+      },
+      {
+        "source_id": "salvan2-local-raw-pdf--b049-5069fdfb-04",
+        "label": "George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+        "sha256": "sha256:ff7231f0059a1febaf4a0996a425caca3b7676c23c729f922e385af4e4c20d28",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
+        "refined_markdown_sha256": "sha256:1b9249c90c0b86c57c6df2f20f0ab210ac112a10230bd9bce584461773d75215",
+        "locator": "George Salvan Utilities 2 refined markdown lines 8600-8610, 9064-9128, 9146-9153, 9220-9244, 9427-9435, and 9465-9471"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 049 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "Which set of items falls within the PEC Article 6.90 photovoltaic scope?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Array circuits, inverters, controllers, interactive or stand-alone operation, and related utilization output."
+      },
+      {
+        "id": "b",
+        "text": "Only the visual appearance of solar panels on the roof surface."
+      },
+      {
+        "id": "c",
+        "text": "Only battery room ventilation and no electrical interconnection rules."
+      },
+      {
+        "id": "d",
+        "text": "Only renewable-energy policy incentives without wiring provisions."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Array circuits, inverters, controllers, interactive or stand-alone operation, and related utilization output. PEC Article 6.90 defines PV systems as complete electrical energy systems.",
+    "explanation": "Array circuits, inverters, controllers, interactive or stand-alone operation, and related utilization output. PEC Article 6.90 defines PV systems as complete electrical energy systems.",
+    "code_citation": "Philippine Electrical Code refined markdown lines 29229-29315, 29472-29504, 29595-29610, 29694-29723, and 29830-29855; RA 11285 refined markdown lines 31-105, 599-613, 719-775, and 1086-1124; DOE Guidelines refined markdown lines 21-43, 260-273, 321-425, and 707-785; George Salvan Utilities 2 refined markdown lines 8600-8610, 9064-9128, 9146-9153, 9220-9244, 9427-9435, and 9465-9471"
+  },
+  "batch_question_template_index": 1
+}

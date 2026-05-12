@@ -209,7 +209,7 @@ The following tasks create infrastructure used by both the wall configurator and
 1. Create `wall-computed-context.tsx` with:
    ```typescript
    const WallComputedContext = createContext<ComputedWallState | null>(null)
-   
+
    export const WallComputedProvider = ({ params, children }) => {
      const state = useMemo(() => computeWallState(params), [params])
      return (
@@ -218,7 +218,7 @@ The following tasks create infrastructure used by both the wall configurator and
        </WallComputedContext.Provider>
      )
    }
-   
+
    export const useWallComputed = () => {
      const ctx = useContext(WallComputedContext)
      if (!ctx) throw new Error('useWallComputed must be used within WallComputedProvider')
@@ -525,7 +525,7 @@ graph TD
     S2[S.2: ComputedWallState data channel] --> P1_10[1.10: Wire up main config]
     S3[S.3: ParameterDef visibleWhen] --> P1_10
     S3 --> P2_1[2.1: Adaptive parameter visibility]
-    
+
     P1[Phase 1: Structural Fidelity] --> P2[Phase 2: Assembly Understanding]
     P2 --> P3[Phase 3: Advanced Features]
 ```

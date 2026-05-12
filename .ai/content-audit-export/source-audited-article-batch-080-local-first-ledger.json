@@ -1,0 +1,624 @@
+{
+  "batch": "080",
+  "generated_at": "2026-05-12T07:20:00.000+08:00",
+  "mode": "local-first-source-audited-continuation",
+  "local_only": true,
+  "selection_rule": "Batch 080: source-auditable continuation after Batch 079, selecting adhesive systems and estimating clusters with local Salvan/BCI/Fajardo raw PDFs.",
+  "skipped_candidate": "lea-matl-009-02-core-concept was skipped for this batch because no direct local CSI/MasterFormat raw PDF source family was found.",
+  "inherited_blocker_status": "Batch 079 blockers=0; no Supabase push, deploy, or commit attempted.",
+  "completed_article_count": 5,
+  "completed_question_edit_count": 50,
+  "completed_articles": [
+    {
+      "article_id": "e94f5a24-e9fa-48f6-aa3e-f1de31922f46",
+      "slug": "lea-matl-008-05-core-concept",
+      "title": "Adhesive Systems",
+      "article_folder": ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46",
+      "improved_paths": {
+        "normalized_md": ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/normalized.md",
+        "candidate_md": ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/candidate.md",
+        "sources_json": ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/sources.json",
+        "source_audit_evidence_json": ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/source-audit-evidence.json",
+        "ui_blocks_json": ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/ui-blocks.json",
+        "ui_block_edits_json": ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/ui-block-edits.json",
+        "article_metadata_json": ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/article-metadata.json",
+        "compose_report_json": ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/compose-report.json",
+        "diff_report_json": ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/diff-report.json",
+        "diff_report_md": ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/diff-report.md",
+        "parser_errors_json": ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/parser-errors.json",
+        "ui_block_edit_validation_json": ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/ui-block-edit-validation.json"
+      },
+      "question_edits_count": 10,
+      "linked_question_count": 10,
+      "question_edit_paths": [
+        ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/question-edits/b05d11fe-15fd-4759-894e-69e74486c310.json",
+        ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/question-edits/658f2f0c-ed59-48d2-8ab0-6411ba3f8a4e.json",
+        ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/question-edits/9ac51a05-5a1a-4b76-867e-bb6ebbf03193.json",
+        ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/question-edits/40327fb6-c5dc-46e0-811e-bc1729bed4ee.json",
+        ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/question-edits/55b5ab8f-f29e-45e6-937d-7d621933b95d.json",
+        ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/question-edits/c99f78a2-e10a-42cc-a604-d0937967c595.json",
+        ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/question-edits/ecfcd7f3-6bfd-4986-961b-ed087bb7cc08.json",
+        ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/question-edits/4972fc6b-1dc3-483d-bfc5-dfc3a932654c.json",
+        ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/question-edits/e9f78201-79f2-439a-8f25-27003fb280c7.json",
+        ".ai/content-audit-export/articles/lea-matl-008-05-core-concept--e94f5a24-e9fa-48f6-aa3e-f1de31922f46/question-edits/f092ecd5-bd75-430a-86e3-faaca7a6b76d.json"
+      ],
+      "source_count": 2,
+      "checked_source_count": 2,
+      "source_evidence": [
+        {
+          "source_id": "bci-5e-b080",
+          "label": "Building Construction Illustrated, 5th Edition",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+          "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+          "refined_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+          "locator": "BCI refined markdown lines 16020-16145; raw PDF page 438 checked by local PyMuPDF extraction"
+        },
+        {
+          "source_id": "salvan-building-materials-b080",
+          "label": "George Salvan Architectural Building Materials",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+          "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+          "refined_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+          "locator": "Salvan refined markdown lines 2678-2854; raw PDF pages 91-94 checked by local PyMuPDF extraction"
+        }
+      ],
+      "hashes": {
+        "original": "sha256:99457545817249277862a7b3bf04929fc97f9fdc32d449adb25a0a70e967ac36",
+        "normalized": "sha256:bdaf2bf97e1ff33304e96621e40ef1f0df408bd137f654f3dbdd275bf98aa96f",
+        "candidate": "sha256:bdaf2bf97e1ff33304e96621e40ef1f0df408bd137f654f3dbdd275bf98aa96f",
+        "ui_blocks": "sha256:e3d1b122204732f60e96b8b0e5e781297323172011c05f11b7e23c6b4ef3d88f",
+        "sources_hash": "sha256:6b9c6be35f2b93824da33e36b4bff520c044f0bfc8063ee08b8e0816c7e5554d",
+        "source_audit_evidence": "sha256:c7adc4e0ab4b32a846f816b3f2d0cab1a46084618e1c9cb28c48ffa14d77fb81"
+      },
+      "compose_status": {
+        "blockers": 0,
+        "placeholders_found": 0,
+        "unresolved_placeholders": 0
+      },
+      "diff_status": {
+        "safe_to_push": true,
+        "blockers": 0,
+        "changed": true
+      },
+      "validate_status": {
+        "valid": true,
+        "blockers": 0,
+        "warnings": [
+          "component-usage.json has not been generated for this article yet."
+        ]
+      },
+      "ui_block_edit_status": {
+        "valid": true,
+        "blockers": [],
+        "warnings": []
+      },
+      "source_audit_gate": {
+        "legal_or_code_candidate": false,
+        "source_audit_required": true,
+        "source_audit_status": "PASS",
+        "blockers": [],
+        "warnings": []
+      },
+      "source_audit_status": "PASS",
+      "raw_pdf_gate": "PASS",
+      "scenario_enrichment_status": "eligible-deferred",
+      "unresolved_blockers": []
+    },
+    {
+      "article_id": "39796d5a-c2fd-467f-8891-9e7b32091617",
+      "slug": "lea-matl-010-01-core-concept",
+      "title": "Concrete volume",
+      "article_folder": ".ai/content-audit-export/articles/lea-matl-010-01-core-concept--39796d5a-c2fd-467f-8891-9e7b32091617",
+      "improved_paths": {
+        "normalized_md": ".ai/content-audit-export/articles/lea-matl-010-01-core-concept--39796d5a-c2fd-467f-8891-9e7b32091617/normalized.md",
+        "candidate_md": ".ai/content-audit-export/articles/lea-matl-010-01-core-concept--39796d5a-c2fd-467f-8891-9e7b32091617/candidate.md",
+        "sources_json": ".ai/content-audit-export/articles/lea-matl-010-01-core-concept--39796d5a-c2fd-467f-8891-9e7b32091617/sources.json",
+        "source_audit_evidence_json": ".ai/content-audit-export/articles/lea-matl-010-01-core-concept--39796d5a-c2fd-467f-8891-9e7b32091617/source-audit-evidence.json",
+        "ui_blocks_json": ".ai/content-audit-export/articles/lea-matl-010-01-core-concept--39796d5a-c2fd-467f-8891-9e7b32091617/ui-blocks.json",
+        "ui_block_edits_json": ".ai/content-audit-export/articles/lea-matl-010-01-core-concept--39796d5a-c2fd-467f-8891-9e7b32091617/ui-block-edits.json",
+        "article_metadata_json": ".ai/content-audit-export/articles/lea-matl-010-01-core-concept--39796d5a-c2fd-467f-8891-9e7b32091617/article-metadata.json",
+        "compose_report_json": ".ai/content-audit-export/articles/lea-matl-010-01-core-concept--39796d5a-c2fd-467f-8891-9e7b32091617/compose-report.json",
+        "diff_report_json": ".ai/content-audit-export/articles/lea-matl-010-01-core-concept--39796d5a-c2fd-467f-8891-9e7b32091617/diff-report.json",
+        "diff_report_md": ".ai/content-audit-export/articles/lea-matl-010-01-core-concept--39796d5a-c2fd-467f-8891-9e7b32091617/diff-report.md",
+        "parser_errors_json": ".ai/content-audit-export/articles/lea-matl-010-01-core-concept--39796d5a-c2fd-467f-8891-9e7b32091617/parser-errors.json",
+        "ui_block_edit_validation_json": ".ai/content-audit-export/articles/lea-matl-010-01-core-concept--39796d5a-c2fd-467f-8891-9e7b32091617/ui-block-edit-validation.json"
+      },
+      "question_edits_count": 10,
+      "linked_question_count": 10,
+      "question_edit_paths": [
+        ".ai/content-audit-export/articles/lea-matl-010-01-core-concept--39796d5a-c2fd-467f-8891-9e7b32091617/question-edits/6ee80a53-2217-46fa-b6b4-e1a61da2c28f.json",
+        ".ai/content-audit-export/articles/lea-matl-010-01-core-concept--39796d5a-c2fd-467f-8891-9e7b32091617/question-edits/1b928fc0-4465-430a-bea5-7d369769528b.json",
+        ".ai/content-audit-export/articles/lea-matl-010-01-core-concept--39796d5a-c2fd-467f-8891-9e7b32091617/question-edits/c5ae97d2-00d7-4c9e-93f7-f411977a1981.json",
+        ".ai/content-audit-export/articles/lea-matl-010-01-core-concept--39796d5a-c2fd-467f-8891-9e7b32091617/question-edits/0f696315-b04f-4279-b9a4-51e25bd4f063.json",
+        ".ai/content-audit-export/articles/lea-matl-010-01-core-concept--39796d5a-c2fd-467f-8891-9e7b32091617/question-edits/ced3543b-b7b0-4aa2-a36b-b09ca928568b.json",
+        ".ai/content-audit-export/articles/lea-matl-010-01-core-concept--39796d5a-c2fd-467f-8891-9e7b32091617/question-edits/4cf03943-3b63-47d7-9e92-102e8ec3dcb4.json",
+        ".ai/content-audit-export/articles/lea-matl-010-01-core-concept--39796d5a-c2fd-467f-8891-9e7b32091617/question-edits/8051bdb4-6602-4773-834c-cad43b1cf584.json",
+        ".ai/content-audit-export/articles/lea-matl-010-01-core-concept--39796d5a-c2fd-467f-8891-9e7b32091617/question-edits/28a96af7-a201-47ff-a1d0-f56bca78c045.json",
+        ".ai/content-audit-export/articles/lea-matl-010-01-core-concept--39796d5a-c2fd-467f-8891-9e7b32091617/question-edits/d63a7e64-7299-413e-98f1-448e30d7b228.json",
+        ".ai/content-audit-export/articles/lea-matl-010-01-core-concept--39796d5a-c2fd-467f-8891-9e7b32091617/question-edits/c485c22f-5d41-4385-80db-c1d746f2763e.json"
+      ],
+      "source_count": 1,
+      "checked_source_count": 1,
+      "source_evidence": [
+        {
+          "source_id": "fajardo-cost-estimates-b080",
+          "label": "Architectural Cost Estimates By Max Fajardo",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+          "sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+          "refined_markdown_sha256": "sha256:223efdc2dd963208910027eba08fe87b4919de1a04b76cac095bbd76a7a9a962",
+          "locator": "Fajardo refined markdown lines 605-843; raw PDF pages 8-9 checked by local PyMuPDF extraction"
+        }
+      ],
+      "hashes": {
+        "original": "sha256:20a4cc883a4e6169f50ee15fcbc614026237c39bf22c0a7f2c24b1b856d3a03f",
+        "normalized": "sha256:7640dc8ddaa2ee8f0720036c6b1a9a5d26f57c13b8aa2ab558ce2688a0620dc5",
+        "candidate": "sha256:7640dc8ddaa2ee8f0720036c6b1a9a5d26f57c13b8aa2ab558ce2688a0620dc5",
+        "ui_blocks": "sha256:8ca47a428a5f64735bcbf5bfec6ed4188e51c0c360cddb7e9925e7eebb311183",
+        "sources_hash": "sha256:9b51f7bf738bda0661543fbb8e08f8ceb52bb0a8c0760772f12d51d0d5d1b886",
+        "source_audit_evidence": "sha256:aeee1be305639eeb9d69d82751dcccc7847395b546eaccce38e3d0c77b3909d9"
+      },
+      "compose_status": {
+        "blockers": 0,
+        "placeholders_found": 0,
+        "unresolved_placeholders": 0
+      },
+      "diff_status": {
+        "safe_to_push": true,
+        "blockers": 0,
+        "changed": true
+      },
+      "validate_status": {
+        "valid": true,
+        "blockers": 0,
+        "warnings": [
+          "component-usage.json has not been generated for this article yet."
+        ]
+      },
+      "ui_block_edit_status": {
+        "valid": true,
+        "blockers": [],
+        "warnings": []
+      },
+      "source_audit_gate": {
+        "legal_or_code_candidate": false,
+        "source_audit_required": true,
+        "source_audit_status": "PASS",
+        "blockers": [],
+        "warnings": []
+      },
+      "source_audit_status": "PASS",
+      "raw_pdf_gate": "PASS",
+      "scenario_enrichment_status": "eligible-deferred",
+      "unresolved_blockers": []
+    },
+    {
+      "article_id": "d0466bdc-3061-46b5-9400-2c41d7eb7c97",
+      "slug": "lea-matl-010-02-core-concept",
+      "title": "CHB quantity",
+      "article_folder": ".ai/content-audit-export/articles/lea-matl-010-02-core-concept--d0466bdc-3061-46b5-9400-2c41d7eb7c97",
+      "improved_paths": {
+        "normalized_md": ".ai/content-audit-export/articles/lea-matl-010-02-core-concept--d0466bdc-3061-46b5-9400-2c41d7eb7c97/normalized.md",
+        "candidate_md": ".ai/content-audit-export/articles/lea-matl-010-02-core-concept--d0466bdc-3061-46b5-9400-2c41d7eb7c97/candidate.md",
+        "sources_json": ".ai/content-audit-export/articles/lea-matl-010-02-core-concept--d0466bdc-3061-46b5-9400-2c41d7eb7c97/sources.json",
+        "source_audit_evidence_json": ".ai/content-audit-export/articles/lea-matl-010-02-core-concept--d0466bdc-3061-46b5-9400-2c41d7eb7c97/source-audit-evidence.json",
+        "ui_blocks_json": ".ai/content-audit-export/articles/lea-matl-010-02-core-concept--d0466bdc-3061-46b5-9400-2c41d7eb7c97/ui-blocks.json",
+        "ui_block_edits_json": ".ai/content-audit-export/articles/lea-matl-010-02-core-concept--d0466bdc-3061-46b5-9400-2c41d7eb7c97/ui-block-edits.json",
+        "article_metadata_json": ".ai/content-audit-export/articles/lea-matl-010-02-core-concept--d0466bdc-3061-46b5-9400-2c41d7eb7c97/article-metadata.json",
+        "compose_report_json": ".ai/content-audit-export/articles/lea-matl-010-02-core-concept--d0466bdc-3061-46b5-9400-2c41d7eb7c97/compose-report.json",
+        "diff_report_json": ".ai/content-audit-export/articles/lea-matl-010-02-core-concept--d0466bdc-3061-46b5-9400-2c41d7eb7c97/diff-report.json",
+        "diff_report_md": ".ai/content-audit-export/articles/lea-matl-010-02-core-concept--d0466bdc-3061-46b5-9400-2c41d7eb7c97/diff-report.md",
+        "parser_errors_json": ".ai/content-audit-export/articles/lea-matl-010-02-core-concept--d0466bdc-3061-46b5-9400-2c41d7eb7c97/parser-errors.json",
+        "ui_block_edit_validation_json": ".ai/content-audit-export/articles/lea-matl-010-02-core-concept--d0466bdc-3061-46b5-9400-2c41d7eb7c97/ui-block-edit-validation.json"
+      },
+      "question_edits_count": 10,
+      "linked_question_count": 10,
+      "question_edit_paths": [
+        ".ai/content-audit-export/articles/lea-matl-010-02-core-concept--d0466bdc-3061-46b5-9400-2c41d7eb7c97/question-edits/4c9d9227-7dd3-43a8-9ac1-57b003832b49.json",
+        ".ai/content-audit-export/articles/lea-matl-010-02-core-concept--d0466bdc-3061-46b5-9400-2c41d7eb7c97/question-edits/89adf0c3-32e6-4ec5-ba5c-6383c5087953.json",
+        ".ai/content-audit-export/articles/lea-matl-010-02-core-concept--d0466bdc-3061-46b5-9400-2c41d7eb7c97/question-edits/53421687-fbbe-422a-a569-ef3bc58d371d.json",
+        ".ai/content-audit-export/articles/lea-matl-010-02-core-concept--d0466bdc-3061-46b5-9400-2c41d7eb7c97/question-edits/0817ffcb-6f65-43a9-bf12-f3718c112d5f.json",
+        ".ai/content-audit-export/articles/lea-matl-010-02-core-concept--d0466bdc-3061-46b5-9400-2c41d7eb7c97/question-edits/97149353-4183-40f9-988f-60953bc8225a.json",
+        ".ai/content-audit-export/articles/lea-matl-010-02-core-concept--d0466bdc-3061-46b5-9400-2c41d7eb7c97/question-edits/f2455fb2-17fc-4a01-9955-f0553235c4a0.json",
+        ".ai/content-audit-export/articles/lea-matl-010-02-core-concept--d0466bdc-3061-46b5-9400-2c41d7eb7c97/question-edits/e11d1920-3d49-415a-b697-bfa332dc8295.json",
+        ".ai/content-audit-export/articles/lea-matl-010-02-core-concept--d0466bdc-3061-46b5-9400-2c41d7eb7c97/question-edits/b09c5ce2-8a96-4dc2-9e56-513eb9ea6db5.json",
+        ".ai/content-audit-export/articles/lea-matl-010-02-core-concept--d0466bdc-3061-46b5-9400-2c41d7eb7c97/question-edits/5c2bf972-6d14-44b6-ad6f-a0c7066939f9.json",
+        ".ai/content-audit-export/articles/lea-matl-010-02-core-concept--d0466bdc-3061-46b5-9400-2c41d7eb7c97/question-edits/1595ab46-68d4-4f08-93f1-bec60f3b9bf8.json"
+      ],
+      "source_count": 1,
+      "checked_source_count": 1,
+      "source_evidence": [
+        {
+          "source_id": "fajardo-cost-estimates-b080",
+          "label": "Architectural Cost Estimates By Max Fajardo",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+          "sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+          "refined_markdown_sha256": "sha256:223efdc2dd963208910027eba08fe87b4919de1a04b76cac095bbd76a7a9a962",
+          "locator": "Fajardo refined markdown lines 2521-2678, 3166-3298, and 4202-4378; raw PDF pages 22-23 and 27-35 checked by local PyMuPDF extraction"
+        }
+      ],
+      "hashes": {
+        "original": "sha256:e3d904bad9ca7e5e8c2dc3efb3bae66d86fc08694a5956f6645495f275d2f56b",
+        "normalized": "sha256:8f5083f583104c3c3f8d587276795175fffe0ceb7353fe269858b1c4e42bdb09",
+        "candidate": "sha256:8f5083f583104c3c3f8d587276795175fffe0ceb7353fe269858b1c4e42bdb09",
+        "ui_blocks": "sha256:ea2ee66730e6ccd40185bc0e0dd0bc3b845402c174530d231147981d5a278f08",
+        "sources_hash": "sha256:f09c6ff8d3bc00b6b7c0a6e62e5ecfdaa374c4ba1b1d2a5a41df781e65500a47",
+        "source_audit_evidence": "sha256:534b25d8cf69bbaa02e3662bf008315f6cd063efb642cebdcb3b96029b45310e"
+      },
+      "compose_status": {
+        "blockers": 0,
+        "placeholders_found": 0,
+        "unresolved_placeholders": 0
+      },
+      "diff_status": {
+        "safe_to_push": true,
+        "blockers": 0,
+        "changed": true
+      },
+      "validate_status": {
+        "valid": true,
+        "blockers": 0,
+        "warnings": [
+          "component-usage.json has not been generated for this article yet."
+        ]
+      },
+      "ui_block_edit_status": {
+        "valid": true,
+        "blockers": [],
+        "warnings": []
+      },
+      "source_audit_gate": {
+        "legal_or_code_candidate": false,
+        "source_audit_required": true,
+        "source_audit_status": "PASS",
+        "blockers": [],
+        "warnings": []
+      },
+      "source_audit_status": "PASS",
+      "raw_pdf_gate": "PASS",
+      "scenario_enrichment_status": "eligible-deferred",
+      "unresolved_blockers": []
+    },
+    {
+      "article_id": "b68471a2-34f6-46e3-8f79-7a14ed16eebb",
+      "slug": "lea-matl-010-03-core-concept",
+      "title": "Rebar weight",
+      "article_folder": ".ai/content-audit-export/articles/lea-matl-010-03-core-concept--b68471a2-34f6-46e3-8f79-7a14ed16eebb",
+      "improved_paths": {
+        "normalized_md": ".ai/content-audit-export/articles/lea-matl-010-03-core-concept--b68471a2-34f6-46e3-8f79-7a14ed16eebb/normalized.md",
+        "candidate_md": ".ai/content-audit-export/articles/lea-matl-010-03-core-concept--b68471a2-34f6-46e3-8f79-7a14ed16eebb/candidate.md",
+        "sources_json": ".ai/content-audit-export/articles/lea-matl-010-03-core-concept--b68471a2-34f6-46e3-8f79-7a14ed16eebb/sources.json",
+        "source_audit_evidence_json": ".ai/content-audit-export/articles/lea-matl-010-03-core-concept--b68471a2-34f6-46e3-8f79-7a14ed16eebb/source-audit-evidence.json",
+        "ui_blocks_json": ".ai/content-audit-export/articles/lea-matl-010-03-core-concept--b68471a2-34f6-46e3-8f79-7a14ed16eebb/ui-blocks.json",
+        "ui_block_edits_json": ".ai/content-audit-export/articles/lea-matl-010-03-core-concept--b68471a2-34f6-46e3-8f79-7a14ed16eebb/ui-block-edits.json",
+        "article_metadata_json": ".ai/content-audit-export/articles/lea-matl-010-03-core-concept--b68471a2-34f6-46e3-8f79-7a14ed16eebb/article-metadata.json",
+        "compose_report_json": ".ai/content-audit-export/articles/lea-matl-010-03-core-concept--b68471a2-34f6-46e3-8f79-7a14ed16eebb/compose-report.json",
+        "diff_report_json": ".ai/content-audit-export/articles/lea-matl-010-03-core-concept--b68471a2-34f6-46e3-8f79-7a14ed16eebb/diff-report.json",
+        "diff_report_md": ".ai/content-audit-export/articles/lea-matl-010-03-core-concept--b68471a2-34f6-46e3-8f79-7a14ed16eebb/diff-report.md",
+        "parser_errors_json": ".ai/content-audit-export/articles/lea-matl-010-03-core-concept--b68471a2-34f6-46e3-8f79-7a14ed16eebb/parser-errors.json",
+        "ui_block_edit_validation_json": ".ai/content-audit-export/articles/lea-matl-010-03-core-concept--b68471a2-34f6-46e3-8f79-7a14ed16eebb/ui-block-edit-validation.json"
+      },
+      "question_edits_count": 10,
+      "linked_question_count": 10,
+      "question_edit_paths": [
+        ".ai/content-audit-export/articles/lea-matl-010-03-core-concept--b68471a2-34f6-46e3-8f79-7a14ed16eebb/question-edits/9d97479e-548c-42c8-bbe4-db841a0053ad.json",
+        ".ai/content-audit-export/articles/lea-matl-010-03-core-concept--b68471a2-34f6-46e3-8f79-7a14ed16eebb/question-edits/398dcdd1-e031-4e2d-b883-ce5027be7ac5.json",
+        ".ai/content-audit-export/articles/lea-matl-010-03-core-concept--b68471a2-34f6-46e3-8f79-7a14ed16eebb/question-edits/ae859939-6844-4739-bed7-06f724ebace0.json",
+        ".ai/content-audit-export/articles/lea-matl-010-03-core-concept--b68471a2-34f6-46e3-8f79-7a14ed16eebb/question-edits/30bcd44a-2b02-4b63-baef-081e2dee8d79.json",
+        ".ai/content-audit-export/articles/lea-matl-010-03-core-concept--b68471a2-34f6-46e3-8f79-7a14ed16eebb/question-edits/4760e759-52ec-4c38-b219-ae6acf2c6ffe.json",
+        ".ai/content-audit-export/articles/lea-matl-010-03-core-concept--b68471a2-34f6-46e3-8f79-7a14ed16eebb/question-edits/a789e742-11f3-44cd-bfd3-7fb74fb126ff.json",
+        ".ai/content-audit-export/articles/lea-matl-010-03-core-concept--b68471a2-34f6-46e3-8f79-7a14ed16eebb/question-edits/48572569-c418-4246-adc1-6524c3ed3004.json",
+        ".ai/content-audit-export/articles/lea-matl-010-03-core-concept--b68471a2-34f6-46e3-8f79-7a14ed16eebb/question-edits/417874e2-b48c-48e8-ae1f-061292580f92.json",
+        ".ai/content-audit-export/articles/lea-matl-010-03-core-concept--b68471a2-34f6-46e3-8f79-7a14ed16eebb/question-edits/26996369-ef0d-4889-bc14-ac3f2055aa84.json",
+        ".ai/content-audit-export/articles/lea-matl-010-03-core-concept--b68471a2-34f6-46e3-8f79-7a14ed16eebb/question-edits/c473d66d-10bf-4ec4-a560-dae936025ea5.json"
+      ],
+      "source_count": 1,
+      "checked_source_count": 1,
+      "source_evidence": [
+        {
+          "source_id": "fajardo-cost-estimates-b080",
+          "label": "Architectural Cost Estimates By Max Fajardo",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+          "sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+          "refined_markdown_sha256": "sha256:223efdc2dd963208910027eba08fe87b4919de1a04b76cac095bbd76a7a9a962",
+          "locator": "Fajardo refined markdown lines 5500-5521, 5985-6101, and 6262-6285; raw PDF pages 45, 49-50, and 52 checked by local PyMuPDF extraction"
+        }
+      ],
+      "hashes": {
+        "original": "sha256:f8c01cd4cd9cceeff66c2b607fdfaa06b7db6c2617072c730d75d531be0d141c",
+        "normalized": "sha256:0fa3da29fd5452a2292aef411b5e570158a2d38905e87134c5b7adc9f20e936e",
+        "candidate": "sha256:0fa3da29fd5452a2292aef411b5e570158a2d38905e87134c5b7adc9f20e936e",
+        "ui_blocks": "sha256:5d2c86bd395c8eb78f648b542cfebaa57d83709b84a405ed922d406fa2445723",
+        "sources_hash": "sha256:5b45c5ee5ca8c4b52646a12179ba7988236b549ff95c70c920a7dd6283394dbd",
+        "source_audit_evidence": "sha256:caea7e37c1712ffd2a29d9b51923365974c11f97695d6722ded4aa5ab87c7548"
+      },
+      "compose_status": {
+        "blockers": 0,
+        "placeholders_found": 0,
+        "unresolved_placeholders": 0
+      },
+      "diff_status": {
+        "safe_to_push": true,
+        "blockers": 0,
+        "changed": true
+      },
+      "validate_status": {
+        "valid": true,
+        "blockers": 0,
+        "warnings": [
+          "component-usage.json has not been generated for this article yet."
+        ]
+      },
+      "ui_block_edit_status": {
+        "valid": true,
+        "blockers": [],
+        "warnings": []
+      },
+      "source_audit_gate": {
+        "legal_or_code_candidate": false,
+        "source_audit_required": true,
+        "source_audit_status": "PASS",
+        "blockers": [],
+        "warnings": []
+      },
+      "source_audit_status": "PASS",
+      "raw_pdf_gate": "PASS",
+      "scenario_enrichment_status": "eligible-deferred",
+      "unresolved_blockers": []
+    },
+    {
+      "article_id": "efa0ecb2-71a7-4b89-9424-c193f8f1c314",
+      "slug": "lea-matl-010-04-core-concept",
+      "title": "Board Foot Lumber Estimation",
+      "article_folder": ".ai/content-audit-export/articles/lea-matl-010-04-core-concept--efa0ecb2-71a7-4b89-9424-c193f8f1c314",
+      "improved_paths": {
+        "normalized_md": ".ai/content-audit-export/articles/lea-matl-010-04-core-concept--efa0ecb2-71a7-4b89-9424-c193f8f1c314/normalized.md",
+        "candidate_md": ".ai/content-audit-export/articles/lea-matl-010-04-core-concept--efa0ecb2-71a7-4b89-9424-c193f8f1c314/candidate.md",
+        "sources_json": ".ai/content-audit-export/articles/lea-matl-010-04-core-concept--efa0ecb2-71a7-4b89-9424-c193f8f1c314/sources.json",
+        "source_audit_evidence_json": ".ai/content-audit-export/articles/lea-matl-010-04-core-concept--efa0ecb2-71a7-4b89-9424-c193f8f1c314/source-audit-evidence.json",
+        "ui_blocks_json": ".ai/content-audit-export/articles/lea-matl-010-04-core-concept--efa0ecb2-71a7-4b89-9424-c193f8f1c314/ui-blocks.json",
+        "ui_block_edits_json": ".ai/content-audit-export/articles/lea-matl-010-04-core-concept--efa0ecb2-71a7-4b89-9424-c193f8f1c314/ui-block-edits.json",
+        "article_metadata_json": ".ai/content-audit-export/articles/lea-matl-010-04-core-concept--efa0ecb2-71a7-4b89-9424-c193f8f1c314/article-metadata.json",
+        "compose_report_json": ".ai/content-audit-export/articles/lea-matl-010-04-core-concept--efa0ecb2-71a7-4b89-9424-c193f8f1c314/compose-report.json",
+        "diff_report_json": ".ai/content-audit-export/articles/lea-matl-010-04-core-concept--efa0ecb2-71a7-4b89-9424-c193f8f1c314/diff-report.json",
+        "diff_report_md": ".ai/content-audit-export/articles/lea-matl-010-04-core-concept--efa0ecb2-71a7-4b89-9424-c193f8f1c314/diff-report.md",
+        "parser_errors_json": ".ai/content-audit-export/articles/lea-matl-010-04-core-concept--efa0ecb2-71a7-4b89-9424-c193f8f1c314/parser-errors.json",
+        "ui_block_edit_validation_json": ".ai/content-audit-export/articles/lea-matl-010-04-core-concept--efa0ecb2-71a7-4b89-9424-c193f8f1c314/ui-block-edit-validation.json"
+      },
+      "question_edits_count": 10,
+      "linked_question_count": 10,
+      "question_edit_paths": [
+        ".ai/content-audit-export/articles/lea-matl-010-04-core-concept--efa0ecb2-71a7-4b89-9424-c193f8f1c314/question-edits/1149e2f7-5dcb-42e6-9193-7890719e1474.json",
+        ".ai/content-audit-export/articles/lea-matl-010-04-core-concept--efa0ecb2-71a7-4b89-9424-c193f8f1c314/question-edits/334d282d-5724-4aac-8f9d-1590bb664c15.json",
+        ".ai/content-audit-export/articles/lea-matl-010-04-core-concept--efa0ecb2-71a7-4b89-9424-c193f8f1c314/question-edits/b3ec4c0d-9b83-46a8-b0ae-caafc8e5bdd0.json",
+        ".ai/content-audit-export/articles/lea-matl-010-04-core-concept--efa0ecb2-71a7-4b89-9424-c193f8f1c314/question-edits/0bb9d502-efaf-40cd-b345-6e187141c748.json",
+        ".ai/content-audit-export/articles/lea-matl-010-04-core-concept--efa0ecb2-71a7-4b89-9424-c193f8f1c314/question-edits/abb4b97c-967a-43bb-98a0-d6d8308888a9.json",
+        ".ai/content-audit-export/articles/lea-matl-010-04-core-concept--efa0ecb2-71a7-4b89-9424-c193f8f1c314/question-edits/d14ca8de-df19-443f-9592-09655035f811.json",
+        ".ai/content-audit-export/articles/lea-matl-010-04-core-concept--efa0ecb2-71a7-4b89-9424-c193f8f1c314/question-edits/0eeee30e-3276-4334-99ca-c941a3fb78bb.json",
+        ".ai/content-audit-export/articles/lea-matl-010-04-core-concept--efa0ecb2-71a7-4b89-9424-c193f8f1c314/question-edits/911aad26-820e-4a51-bb06-9c7aa838b525.json",
+        ".ai/content-audit-export/articles/lea-matl-010-04-core-concept--efa0ecb2-71a7-4b89-9424-c193f8f1c314/question-edits/7dcace62-ba6c-4dd7-81c8-3a2e46d5e9fe.json",
+        ".ai/content-audit-export/articles/lea-matl-010-04-core-concept--efa0ecb2-71a7-4b89-9424-c193f8f1c314/question-edits/e8780f64-13e6-4356-bf14-b60730a3b372.json"
+      ],
+      "source_count": 1,
+      "checked_source_count": 1,
+      "source_evidence": [
+        {
+          "source_id": "fajardo-cost-estimates-b080",
+          "label": "Architectural Cost Estimates By Max Fajardo",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+          "sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+          "refined_markdown_sha256": "sha256:223efdc2dd963208910027eba08fe87b4919de1a04b76cac095bbd76a7a9a962",
+          "locator": "Fajardo refined markdown lines 9058-9213; raw PDF pages 73-74 checked by local PyMuPDF extraction"
+        }
+      ],
+      "hashes": {
+        "original": "sha256:16d7fc137d83395de762baead83eabb90aab3cf5c13eee5de83611c11a8454a8",
+        "normalized": "sha256:ca51c459ba94fb700dade73e78562bc99f5396f04fa7ecb58333736883da1da7",
+        "candidate": "sha256:ca51c459ba94fb700dade73e78562bc99f5396f04fa7ecb58333736883da1da7",
+        "ui_blocks": "sha256:6b9e9b4771f73bed6427807d8c55de7f74172751d5b08b57c26e36bf679ca8d1",
+        "sources_hash": "sha256:0fce52e1cd00b6d7de875db8d001158261a1f3da971dc70674ac5454f372edcf",
+        "source_audit_evidence": "sha256:6e517763b286efd639f9b397421c990bde21cebe308b8c84c8ed44d17c52440e"
+      },
+      "compose_status": {
+        "blockers": 0,
+        "placeholders_found": 0,
+        "unresolved_placeholders": 0
+      },
+      "diff_status": {
+        "safe_to_push": true,
+        "blockers": 0,
+        "changed": true
+      },
+      "validate_status": {
+        "valid": true,
+        "blockers": 0,
+        "warnings": [
+          "component-usage.json has not been generated for this article yet."
+        ]
+      },
+      "ui_block_edit_status": {
+        "valid": true,
+        "blockers": [],
+        "warnings": []
+      },
+      "source_audit_gate": {
+        "legal_or_code_candidate": false,
+        "source_audit_required": true,
+        "source_audit_status": "PASS",
+        "blockers": [],
+        "warnings": []
+      },
+      "source_audit_status": "PASS",
+      "raw_pdf_gate": "PASS",
+      "scenario_enrichment_status": "eligible-deferred",
+      "unresolved_blockers": []
+    }
+  ],
+  "local_export_repair": "Updated article metadata and sync-state original hashes to match current local original.md before final diff validation.",
+  "source_evidence_summary": {
+    "source_evidence_rows": 6,
+    "unique_raw_pdfs": 3,
+    "raw_source_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "source_hash_checks": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+        "expected": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+        "actual": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+        "pass": true
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "expected": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "actual": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "pass": true
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+        "expected": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "actual": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "pass": true
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+        "expected": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+        "actual": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+        "pass": true
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "expected": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "actual": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "pass": true
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+        "expected": "sha256:223efdc2dd963208910027eba08fe87b4919de1a04b76cac095bbd76a7a9a962",
+        "actual": "sha256:223efdc2dd963208910027eba08fe87b4919de1a04b76cac095bbd76a7a9a962",
+        "pass": true
+      }
+    ]
+  },
+  "quality_protocol_results": {
+    "compose": {
+      "status": "PASS",
+      "article_count": 5,
+      "blockers": 0
+    },
+    "diff": {
+      "status": "PASS",
+      "article_count": 5,
+      "safe_to_push": true,
+      "blockers": 0,
+      "note": "Passed after local metadata/sync-state original hash repair to current original.md hashes."
+    },
+    "validate": {
+      "status": "PASS",
+      "article_count": 5,
+      "valid": true,
+      "blockers": 0,
+      "warnings": "component-usage.json warnings only"
+    },
+    "ui_block_edits": {
+      "status": "PASS",
+      "article_count": 5,
+      "blockers": 0,
+      "warnings": 0
+    },
+    "source_audit_apply_gate": {
+      "status": "PASS",
+      "article_count": 5,
+      "blockers": 0,
+      "warnings": 0,
+      "legal_or_code_candidate": false,
+      "source_audit_required": true
+    },
+    "scoped_json_parse": {
+      "status": "PASS",
+      "files": 105,
+      "failures": 0
+    },
+    "marker_scan": {
+      "status": "PASS",
+      "files": 105,
+      "hits": 0,
+      "scope_note": "Excluded immutable original.md and generated compose/diff reports."
+    },
+    "source_hash_checks": {
+      "status": "PASS",
+      "checks": 6,
+      "results": [
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+          "expected": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+          "actual": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+          "pass": true
+        },
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+          "expected": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+          "actual": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+          "pass": true
+        },
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+          "expected": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+          "actual": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+          "pass": true
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+          "expected": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+          "actual": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+          "pass": true
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+          "expected": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+          "actual": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+          "pass": true
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+          "expected": "sha256:223efdc2dd963208910027eba08fe87b4919de1a04b76cac095bbd76a7a9a962",
+          "actual": "sha256:223efdc2dd963208910027eba08fe87b4919de1a04b76cac095bbd76a7a9a962",
+          "pass": true
+        }
+      ]
+    },
+    "question_edit_count": {
+      "status": "PASS",
+      "expected": 50,
+      "actual": 50
+    },
+    "stale_compose_error_check": {
+      "status": "PASS",
+      "files": 0
+    },
+    "targeted_content_audit_tests": {
+      "status": "PASS",
+      "files": [
+        "scripts/content-audit/content-audit.test.ts",
+        "scripts/content-audit/source-verification-invariants.test.ts"
+      ],
+      "pass": 34,
+      "fail": 0,
+      "expect_calls": 328
+    },
+    "scoped_git_diff_check": {
+      "status": "PASS",
+      "command": "git diff --check -- .ai/03_plans/source-audited-local-first-batches-handoff.md .ai/content-audit-export/sync-state.json .ai/content-audit-export/source-audited-article-batch-080-local-first-report.md .ai/content-audit-export/source-audited-article-batch-080-local-first-ledger.json .ai/content-audit-export/source-audited-article-batch-080-local-first-scoped-checks.json <selected Batch 080 article folders>"
+    }
+  },
+  "local_publication_boundary": {
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false
+  },
+  "unresolved_blockers": [],
+  "next_batch_readiness": "Batch 081 may begin with inherited blocker status blockers=0."
+}

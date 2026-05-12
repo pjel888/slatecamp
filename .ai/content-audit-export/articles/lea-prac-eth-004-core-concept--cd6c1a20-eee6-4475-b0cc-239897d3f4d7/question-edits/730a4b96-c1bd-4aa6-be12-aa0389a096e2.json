@@ -1,0 +1,72 @@
+{
+  "question_id": "730a4b96-c1bd-4aa6-be12-aa0389a096e2",
+  "baseline_hash": "sha256:8b9eba6adbec090e99d0dca5a264e5955c0a171369a0ad72c4846f1dd6c20651",
+  "action": "replace",
+  "reason": "source-audited-article-batch-017-local-first rewrote linked question to match the locally checked UAP Code of Ethics source for lea-prac-eth-004-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-017",
+  "approved_at": "2026-05-10T23:30:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "cd6c1a20-eee6-4475-b0cc-239897d3f4d7",
+    "parent_article_slug": "lea-prac-eth-004-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UAP Document Code of Ethics, Section 2 and related supplier-benefit rule in Section 4-b, raw markdown lines 47-63 and 82-89",
+    "checked_markdown_lines": [
+      "raw markdown lines 47-63",
+      "raw markdown lines 82-89"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+        "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+        "source_id": "uap-document-code-of-ethics",
+        "locator": "UAP Document Code of Ethics, Section 2 and related supplier-benefit rule in Section 4-b, raw markdown lines 47-63 and 82-89"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
+        "sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
+        "source_id": "uap-document-code-of-ethics-raw-markdown",
+        "locator": "UAP Document Code of Ethics, Section 2 and related supplier-benefit rule in Section 4-b, raw markdown lines 47-63 and 82-89"
+      }
+    ],
+    "local_source_safe_action": "Question was rewritten to avoid unverified PRBoA-resolution, hierarchy, or enforcement claims and to use only statements anchored in the raw UAP Code of Ethics source."
+  },
+  "proposed": {
+    "text": "Which statement about cost estimates matches Section 2-d?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Explain their conditional character and do not guarantee or mislead about probable cost."
+      },
+      {
+        "id": "b",
+        "text": "Guarantee all estimates to secure the commission."
+      },
+      {
+        "id": "c",
+        "text": "Hide the conditional character of estimates."
+      },
+      {
+        "id": "d",
+        "text": "Use estimates only after a contractor gives a gift."
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "Section 2-d requires explaining conditional estimates and bars guaranteeing estimates or misleading the client about probable cost.",
+    "explanation": "Section 2-d requires explaining conditional estimates and bars guaranteeing estimates or misleading the client about probable cost.",
+    "code_citation": "UAP Document Code of Ethics, line 55",
+    "bloom_level": "understand",
+    "application_context": "professional_practice",
+    "practice_context": [
+      "Code of Ethical Conduct",
+      "Professional ethics"
+    ],
+    "difficulty": 0.7,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-ETH-004-008"
+  }
+}

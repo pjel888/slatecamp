@@ -1,0 +1,49 @@
+{
+  "question_id": "c25955f6-1c88-4260-afcb-925dac06acd4",
+  "baseline_hash": "sha256:a02db0f3ba646dee17a95b940e114bed7456e164e679139aa3e4535a9d93e891",
+  "action": "replace",
+  "reason": "source-audited-article-batch-039-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-039",
+  "approved_at": "2026-05-11T13:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-039-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 1390-1450",
+          "PD 1096 RIRR refined markdown lines 1452-1462"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 706"
+  },
+  "proposed": {
+    "text": "How should a reviewer treat Section 706 in an exam problem?",
+    "options": [
+      {
+        "id": "b039-9a20-23-a",
+        "text": "As a conditional increase subject to stated site conditions and Building Official approval"
+      },
+      {
+        "id": "b039-9a20-23-b",
+        "text": "As an automatic foreign-code formula"
+      },
+      {
+        "id": "b039-9a20-23-c",
+        "text": "As a guaranteed increase for every corner lot"
+      },
+      {
+        "id": "b039-9a20-23-d",
+        "text": "As unrelated to public space, streets, or yards"
+      }
+    ],
+    "correct_option_id": "b039-9a20-23-a",
+    "rationale": "Correct answer: As a conditional increase subject to stated site conditions and Building Official approval. This is directly supported by PD 1096 2004 Revised IRR, Section 706.",
+    "explanation": "The Batch 039 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 706.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 706"
+  }
+}

@@ -1,7 +1,32 @@
 {
   "article_id": "82862aca-27a6-4121-ba3f-6d53160d2e3c",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "source_count": 0,
-  "sources": []
+  "sources_hash": "sha256:5579cbba1f7db452e803cd8ffc0c7d24c713e9a00e60cd3d751806f609621871",
+  "source_count": 2,
+  "sources": [
+    {
+      "source_id": "batch006-lea-prac-law-012-quasi-delict-and-tort-in-archit-source-01",
+      "article_id": "82862aca-27a6-4121-ba3f-6d53160d2e3c",
+      "label": "Civil Code of the Philippines",
+      "url": null,
+      "source_type": "civil_code",
+      "description": "civil_code; raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code of the Phils.pdf; raw_pdf_sha256=sha256:95b8d7bf26fabeab9d27c661a53729273b69c88fc8565cc2a7146243df693400; checked_pdf_pages=82,123,159,160; articles=1146,1150,1723,2176,2180,2192,2194",
+      "is_verified": true,
+      "sort_order": 0,
+      "created_at": "2026-05-10T22:30:00+08:00",
+      "updated_at": "2026-05-10T22:30:00+08:00"
+    },
+    {
+      "source_id": "batch006-lea-prac-law-012-quasi-delict-and-tort-in-archit-source-02",
+      "article_id": "82862aca-27a6-4121-ba3f-6d53160d2e3c",
+      "label": "RA 9266 IRR Architecture Act of 2004",
+      "url": null,
+      "source_type": "implementing_rules",
+      "description": "ra9266_irr; raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf; raw_pdf_sha256=sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574; checked_pdf_pages=2,19; sections=3(2),32",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-10T22:30:00+08:00",
+      "updated_at": "2026-05-10T22:30:00+08:00"
+    }
+  ]
 }

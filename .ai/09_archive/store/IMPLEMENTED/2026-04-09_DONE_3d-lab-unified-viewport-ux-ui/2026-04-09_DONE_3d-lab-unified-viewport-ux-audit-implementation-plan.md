@@ -516,7 +516,7 @@ In `src/features/3d-lab/types/templates.ts`, update the default widths:
 // BEFORE: parametric right = 280
 // AFTER:
 parametric: {
-  shell: { 
+  shell: {
     leftSidebar: { width: 340, title: 'Controls', mobileTabLabel: 'Controls' },
     rightSidebar: { width: 320, title: 'Compliance', mobileTabLabel: 'Compliance' },
   },
@@ -560,7 +560,7 @@ Add to `ViewportCapabilities` in `templates.ts`:
 ```typescript
 export interface ViewportCapabilities {
   // ... existing fields ...
-  
+
   /** Floating toolbar items (grid, dimensions, x-ray, layers, screenshot, fullscreen) */
   floatingToolbar?: FloatingToolbarConfig
   /** KPI metrics bar at bottom of viewport */
@@ -847,7 +847,7 @@ graph TD
 
 **Consequences:** DevControls keeps its own layout but shares toolbar/bar components with the shell. Two layout systems coexist, but the user-facing chrome is visually identical. Full DevControls migration is deferred to a future phase once shared components are stable.
 
-**Follow-ups:** 
+**Follow-ups:**
 - Wall Configurator v1→v2 merge can leverage the standardized shell to bring v1 costing/sponsor features into the unified layout.
 - DevControls full migration to ViewportShell (Phase 4b) after shared components stabilize.
 - Note: DevControls has two camera bar exports — `FloatingCameraBar` (viewport overlay, line 74 of CameraPresetBar.tsx) and `CameraPresetBar` (mobile/legacy). The shared component should be based on `FloatingCameraBar` as the primary pattern.

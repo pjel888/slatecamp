@@ -1,0 +1,111 @@
+{
+  "artifact_type": "source_audit_evidence",
+  "batch_id": "source-audited-article-batch-060-local-first",
+  "batch_number": 60,
+  "audit_mode": "local_first_raw_pdf_primary",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T21:02:00.000+08:00",
+  "target": {
+    "article_id": "cb07f9cb-7506-496e-941a-4080a05c323f",
+    "slug": "lea-theo-004-07-core-concept",
+    "title": "Biophilic Design",
+    "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f",
+    "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/question-edits",
+    "linked_questions": 10,
+    "question_edits": 10,
+    "candidate_sha256": "sha256:f7873f58ee2fc7824c54ed53bcca335db8e3341b1fbf44e05e2534343ccbb12e"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth": "vitruvius-connection/001_Raw-Source-Layer local raw PDFs",
+    "derivative_or_search_layers_used_as_primary_truth": false,
+    "refined_markdown_used_only_as_locator": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": [],
+    "checked_sources": [
+      {
+        "source_id": "toa4-tropical-architecture-local-raw-pdf--b060-cb07f9cb-01",
+        "label": "TOA 4 Tropical Architecture - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+        "raw_pdf_sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+        "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+        "locator": "TOA 4 Tropical Architecture refined markdown lines 884-931, 1562-1573, 1648-1665, 1679, and raw PDF pages 104, 180-181, 187, and 194"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "theory-of-architecture-tropical-design",
+    "contains_legal_or_code_claims": false,
+    "source_risk_tier": "medium",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": [
+      "a9c2a381-6626-461a-a9b2-39bb5d376d6b",
+      "7e763bc9-2296-443f-8418-e6d209da8218",
+      "dc3c76ef-5d1b-4d07-a873-5465db5c7b0d",
+      "d8c2ac1b-2e38-4d32-a630-475c1d7a5b59",
+      "12e6232e-d6a7-4463-b355-a2342e37c1d1",
+      "3dcf9d67-1490-412b-938b-03dba01490a4",
+      "0d101c07-3afe-4f47-b5ae-e0de8b616392",
+      "ff5f61f5-824d-4dd7-b6a0-c771a39fd303",
+      "671ef0a4-da32-412f-9fcf-bade35805abf",
+      "7458086f-9aa2-4f81-bd75-2635168513e2"
+    ],
+    "scenario_policy_status": "eligible-deferred",
+    "scenario_policy_reason": "A realistic tropical-site scenario could be useful, but Batch 060 defers scenario enrichment so source-audited article/question correctness remains the only blocking gate."
+  },
+  "claims": [
+    {
+      "claim_id": "lea-theo-004-07-core-concept-b060-claim-01",
+      "claim_text": "Biophilic Design is limited to checked local raw PDF TOA 4 Tropical Architecture source locators recorded for this article.",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+        "quoted_pdf_excerpt": "TOA 4 Tropical Architecture refined markdown lines 884-931, 1562-1573, 1648-1665, 1679, and raw PDF pages 104, 180-181, 187, and 194",
+        "source_ids": [
+          "toa4-tropical-architecture-local-raw-pdf--b060-cb07f9cb-01"
+        ]
+      },
+      "audit_result": "PASS"
+    }
+  ],
+  "checked_markdown_lines": [
+    "TOA 4 Tropical Architecture refined markdown lines 884-931",
+    "TOA 4 Tropical Architecture refined markdown lines 1562-1573",
+    "TOA 4 Tropical Architecture refined markdown lines 1648-1665, 1679"
+  ],
+  "checked_pdf_pages": "raw PDF pages 71-78, 81-84, 87-90, 92-100, 104, 106-110, 121, 140, 143-148, 151, 163, 172, 180-181, 187, and 194",
+  "unverified_or_rejected_claims": [],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "local_first_only": true,
+    "supabase_write_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json",
+    "diff_gate": "safe_true_blockers_zero",
+    "validate_gate": "valid_true_blockers_zero",
+    "ui_block_edits_gate": "valid_true_blockers_zero"
+  },
+  "sme_review": {
+    "required": false,
+    "required_before_publication": true,
+    "status": "not_started_local_first_batch",
+    "note": "Local-first source audit is ready for later human/SME review before final publishing."
+  },
+  "overall": {
+    "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": [
+      "Human/SME review remains pending before final publishing."
+    ]
+  }
+}

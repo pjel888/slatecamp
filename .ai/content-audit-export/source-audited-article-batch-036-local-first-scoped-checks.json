@@ -1,0 +1,84 @@
+{
+  "schema_version": "batch-scoped-checks-v1",
+  "batch_id": "source-audited-article-batch-036-local-first",
+  "generated_at": "2026-05-11T05:18:00.000Z",
+  "status": "PASS",
+  "blockers": [],
+  "counts": {
+    "article_count": 5,
+    "json_parse_count": 127,
+    "linked_question_count": 63,
+    "question_edit_count": 63,
+    "source_rows_written": 12,
+    "unique_raw_pdf_files_checked": 8,
+    "source_hash_checks": 24,
+    "placeholder_internal_source_gap_matches": 0,
+    "stale_compose_error_files": 0
+  },
+  "article_results": [
+    {
+      "article_id": "4985ca3b-6fc2-49b9-a7f5-64030c17b5d3",
+      "slug": "fixtures-and-small-items-in-common-areas",
+      "article_folder": ".ai/content-audit-export/articles/fixtures-and-small-items-in-common-areas--4985ca3b-6fc2-49b9-a7f5-64030c17b5d3",
+      "linked_questions": 11,
+      "question_edits": 11,
+      "candidate_hash": "sha256:3b39acf2b7772a1d1cf3caf4c28f780397936b5c454931c71a2d2f5249623d72",
+      "compose_blockers": [],
+      "diff_safe_to_push": true,
+      "source_audit_status": "PASS",
+      "source_count": 1
+    },
+    {
+      "article_id": "85529595-d219-4b10-9bd9-383d125da8c3",
+      "slug": "lea-prac-frm-019-project-management-in-an-architectural-firm-scope-schedule-budget-and-communication-control",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-frm-019-project-management-in-an-architectural-firm-scope-schedule-budget-and-communication--85529595-d219-4b10-9bd9-383d125da8c3",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "candidate_hash": "sha256:f18879463b90de1f3e5252e0af854a844ba9b748be132a5cb6fb23c9f48ef58a",
+      "compose_blockers": [],
+      "diff_safe_to_push": true,
+      "source_audit_status": "PASS",
+      "source_count": 3
+    },
+    {
+      "article_id": "47317c8d-e2d6-4d17-b18a-3c469b73080c",
+      "slug": "lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-architect-s-responsibility",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-frm-020-technical-specifications-writing-csi-masterformat-specification-types-and-the-archi--47317c8d-e2d6-4d17-b18a-3c469b73080c",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "candidate_hash": "sha256:b70d5168abfc8937e90a7899b6a104112ae30414308ecc48e5f0c2e1491b63d8",
+      "compose_blockers": [],
+      "diff_safe_to_push": true,
+      "source_audit_status": "PASS",
+      "source_count": 4
+    },
+    {
+      "article_id": "7a48ab8a-3609-484d-b7e3-76f2fc1f6040",
+      "slug": "lea-prac-svc-024-value-engineering-as-an-architectural-service-concept-process-and-practice-ethics",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-024-value-engineering-as-an-architectural-service-concept-process-and-practice-ethics--7a48ab8a-3609-484d-b7e3-76f2fc1f6040",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "candidate_hash": "sha256:0e903f57e62c8bde1cccb6f27a500dec9155865aaa2d6b7d274d4dfb37784ea2",
+      "compose_blockers": [],
+      "diff_safe_to_push": true,
+      "source_audit_status": "PASS",
+      "source_count": 2
+    },
+    {
+      "article_id": "c712ee78-2625-434c-bb18-fa7b0f477b33",
+      "slug": "plastics-in-construction",
+      "article_folder": ".ai/content-audit-export/articles/plastics-in-construction--c712ee78-2625-434c-bb18-fa7b0f477b33",
+      "linked_questions": 22,
+      "question_edits": 22,
+      "candidate_hash": "sha256:779ec88778e1c5c3b6cb0611ba9cf09d4e3cfe267396da20aba995d6b01501e3",
+      "compose_blockers": [],
+      "diff_safe_to_push": true,
+      "source_audit_status": "PASS",
+      "source_count": 2
+    }
+  ],
+  "source_hash_mismatches": [],
+  "marker_matches": [],
+  "stale_compose_errors": [],
+  "post_artifact_git_diff_check": "PASS"
+}

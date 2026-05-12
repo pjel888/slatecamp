@@ -355,7 +355,7 @@ SECTION HEADER: "Active Laws"
 [●] BP 344 Accessibility    [shown if accessible route toggled]
 [●] RA 9514 Fire Code       [shown if exit stair toggled]
 
-Note: Each law badge shows its hex color swatch. No user toggle available — 
+Note: Each law badge shows its hex color swatch. No user toggle available —
 the law either applies to this project type or it doesn't.
 ```
 
@@ -420,7 +420,7 @@ The right panel is the **output engine**. It shows the per-law compliance status
 │ Riser Height                        │
 │                                     │
 │ PD 1096 requires ≤ 200 mm           │  ← Baseline
-│ BP 220 allows ≤ 250 mm              │  ← Exception                  
+│ BP 220 allows ≤ 250 mm              │  ← Exception
 │                                     │
 │ A conflict is not noncompliance.    │
 │ BP 220 is a legally authorized      │

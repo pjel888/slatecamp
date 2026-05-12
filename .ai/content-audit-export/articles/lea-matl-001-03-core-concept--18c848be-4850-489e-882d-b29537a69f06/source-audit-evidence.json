@@ -1,0 +1,242 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-082-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T05:45:00.000+08:00",
+  "target": {
+    "article_id": "18c848be-4850-489e-882d-b29537a69f06",
+    "slug": "lea-matl-001-03-core-concept",
+    "title": "Wood Connections",
+    "article_folder": ".ai/content-audit-export/articles/lea-matl-001-03-core-concept--18c848be-4850-489e-882d-b29537a69f06",
+    "normalized_sha256": "sha256:15e7236de1fcbb7d267f5af8fd6e005138e1283cc8788e719a3edbe8684a04c2",
+    "candidate_sha256": "sha256:15e7236de1fcbb7d267f5af8fd6e005138e1283cc8788e719a3edbe8684a04c2",
+    "candidate_path": ".ai/content-audit-export/articles/lea-matl-001-03-core-concept--18c848be-4850-489e-882d-b29537a69f06/candidate.md"
+  },
+  "classification": {
+    "topic_family": "wood_connections",
+    "local_first_batch": "082",
+    "source_sensitivity": "technical_materials_estimating",
+    "contains_legal_or_code_claims": false,
+    "source_risk_tier": "source_bound_materials",
+    "requires_raw_pdf_audit": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdfs_checked_first": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "local_pdf_extraction_method": "python_pymupdf_local",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "building-construction-illustrated-b082",
+      "label": "Building Construction Illustrated, 5th Edition",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+      "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+      "refined_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "locator": "Building Construction Illustrated refined markdown lines 2141-2153; raw PDF hash checked locally."
+    },
+    {
+      "source_id": "woods-and-plastics-lecture-b082",
+      "label": "Woods and Plastics Lecture",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Woods and Plastics Lecture.pdf",
+      "sha256": "sha256:39c03f9cea2f61b1859620a606b139a3a1c5897a68ef51c954432e15ea722d61",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Woods and Plastics Lecture.md",
+      "refined_markdown_sha256": "sha256:7b78053474dfa985c87d49c632e3f8626c5518f13bb9ccd16b901d85d423df27",
+      "locator": "Woods and Plastics Lecture refined markdown lines 38-90, 108-245, and 285-520; raw PDF pages 3, 16, 22, and 34 checked by local PyMuPDF extraction."
+    },
+    {
+      "source_id": "george-salvan-building-materials-b082",
+      "label": "George Salvan Architectural Building Materials",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+      "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+      "refined_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+      "locator": "George Salvan Architectural Building Materials refined markdown lines 1280-1435, 1569, and 2682-2725; raw PDF pages 47 and 50 checked by local PyMuPDF extraction."
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-matl-001-03-core-concept-article-b082",
+      "claim_text": "Article lea-matl-001-03-core-concept was rewritten to the checked wood_connections source scope.",
+      "claim_type": "article_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "Building Construction Illustrated refined markdown lines 2141-2153; raw PDF hash checked locally. Woods and Plastics Lecture refined markdown lines 38-90, 108-245, and 285-520; raw PDF pages 3, 16, 22, and 34 checked by local PyMuPDF extraction. George Salvan Architectural Building Materials refined markdown lines 1280-1435, 1569, and 2682-2725; raw PDF pages 47 and 50 checked by local PyMuPDF extraction.",
+        "quoted_pdf_excerpt": "Primary locators were checked in the local raw PDF extraction before the article rewrite."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-d89ed715-60ec-4d98-87d3-11d3a0c845f7-b082",
+      "claim_text": "Question d89ed715-60ec-4d98-87d3-11d3a0c845f7 was rewritten to the checked wood_connections source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "Building Construction Illustrated refined markdown lines 2141-2153; raw PDF hash checked locally. Woods and Plastics Lecture refined markdown lines 38-90, 108-245, and 285-520; raw PDF pages 3, 16, 22, and 34 checked by local PyMuPDF extraction. George Salvan Architectural Building Materials refined markdown lines 1280-1435, 1569, and 2682-2725; raw PDF pages 47 and 50 checked by local PyMuPDF extraction.",
+        "quoted_pdf_excerpt": "A butt joint is the simplest meeting of members and normally needs a mediating element such as a fastener or connector."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-e35deae5-e22f-418f-a317-b849a1ab7f69-b082",
+      "claim_text": "Question e35deae5-e22f-418f-a317-b849a1ab7f69 was rewritten to the checked wood_connections source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "Building Construction Illustrated refined markdown lines 2141-2153; raw PDF hash checked locally. Woods and Plastics Lecture refined markdown lines 38-90, 108-245, and 285-520; raw PDF pages 3, 16, 22, and 34 checked by local PyMuPDF extraction. George Salvan Architectural Building Materials refined markdown lines 1280-1435, 1569, and 2682-2725; raw PDF pages 47 and 50 checked by local PyMuPDF extraction.",
+        "quoted_pdf_excerpt": "An overlapping joint develops the connection by allowing one member to overlap or bypass another."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-394d9c7b-1067-4916-a394-4f9713a3758d-b082",
+      "claim_text": "Question 394d9c7b-1067-4916-a394-4f9713a3758d was rewritten to the checked wood_connections source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "Building Construction Illustrated refined markdown lines 2141-2153; raw PDF hash checked locally. Woods and Plastics Lecture refined markdown lines 38-90, 108-245, and 285-520; raw PDF pages 3, 16, 22, and 34 checked by local PyMuPDF extraction. George Salvan Architectural Building Materials refined markdown lines 1280-1435, 1569, and 2682-2725; raw PDF pages 47 and 50 checked by local PyMuPDF extraction.",
+        "quoted_pdf_excerpt": "The checked connection taxonomy identifies a bolt as a point connector and glue as a surface connector."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-e807d481-8ec7-4cc4-b82c-d58626eb5f3a-b082",
+      "claim_text": "Question e807d481-8ec7-4cc4-b82c-d58626eb5f3a was rewritten to the checked wood_connections source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "Building Construction Illustrated refined markdown lines 2141-2153; raw PDF hash checked locally. Woods and Plastics Lecture refined markdown lines 38-90, 108-245, and 285-520; raw PDF pages 3, 16, 22, and 34 checked by local PyMuPDF extraction. George Salvan Architectural Building Materials refined markdown lines 1280-1435, 1569, and 2682-2725; raw PDF pages 47 and 50 checked by local PyMuPDF extraction.",
+        "quoted_pdf_excerpt": "A pinned joint allows rotation, unlike a rigid or fixed joint that maintains angular relationship."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-1e287c4b-eaf3-45de-bad0-08e4921339d4-b082",
+      "claim_text": "Question 1e287c4b-eaf3-45de-bad0-08e4921339d4 was rewritten to the checked wood_connections source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "Building Construction Illustrated refined markdown lines 2141-2153; raw PDF hash checked locally. Woods and Plastics Lecture refined markdown lines 38-90, 108-245, and 285-520; raw PDF pages 3, 16, 22, and 34 checked by local PyMuPDF extraction. George Salvan Architectural Building Materials refined markdown lines 1280-1435, 1569, and 2682-2725; raw PDF pages 47 and 50 checked by local PyMuPDF extraction.",
+        "quoted_pdf_excerpt": "A rigid or fixed joint keeps the connected members from changing angle relative to each other."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-09449a32-52b5-44d4-b705-6334e0a58c1e-b082",
+      "claim_text": "Question 09449a32-52b5-44d4-b705-6334e0a58c1e was rewritten to the checked wood_connections source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "Building Construction Illustrated refined markdown lines 2141-2153; raw PDF hash checked locally. Woods and Plastics Lecture refined markdown lines 38-90, 108-245, and 285-520; raw PDF pages 3, 16, 22, and 34 checked by local PyMuPDF extraction. George Salvan Architectural Building Materials refined markdown lines 1280-1435, 1569, and 2682-2725; raw PDF pages 47 and 50 checked by local PyMuPDF extraction.",
+        "quoted_pdf_excerpt": "The wood source identifies quartersawn lumber as more dimensionally stable, with less shrinkage and distortion."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-33d54f2b-77f3-4f88-9936-0f77aa9909ed-b082",
+      "claim_text": "Question 33d54f2b-77f3-4f88-9936-0f77aa9909ed was rewritten to the checked wood_connections source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "Building Construction Illustrated refined markdown lines 2141-2153; raw PDF hash checked locally. Woods and Plastics Lecture refined markdown lines 38-90, 108-245, and 285-520; raw PDF pages 3, 16, 22, and 34 checked by local PyMuPDF extraction. George Salvan Architectural Building Materials refined markdown lines 1280-1435, 1569, and 2682-2725; raw PDF pages 47 and 50 checked by local PyMuPDF extraction.",
+        "quoted_pdf_excerpt": "Seasoned lumber has reduced moisture-related movement and better nail-holding behavior than green lumber."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-dc98b005-2b4d-4c39-9645-f886d522f52f-b082",
+      "claim_text": "Question dc98b005-2b4d-4c39-9645-f886d522f52f was rewritten to the checked wood_connections source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "Building Construction Illustrated refined markdown lines 2141-2153; raw PDF hash checked locally. Woods and Plastics Lecture refined markdown lines 38-90, 108-245, and 285-520; raw PDF pages 3, 16, 22, and 34 checked by local PyMuPDF extraction. George Salvan Architectural Building Materials refined markdown lines 1280-1435, 1569, and 2682-2725; raw PDF pages 47 and 50 checked by local PyMuPDF extraction.",
+        "quoted_pdf_excerpt": "Green lumber still contains excess moisture, so shrinkage, warping, and weaker nail-holding can affect the connection."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-8cc2d01f-922e-42f8-a0f7-20b187f1f610-b082",
+      "claim_text": "Question 8cc2d01f-922e-42f8-a0f7-20b187f1f610 was rewritten to the checked wood_connections source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "Building Construction Illustrated refined markdown lines 2141-2153; raw PDF hash checked locally. Woods and Plastics Lecture refined markdown lines 38-90, 108-245, and 285-520; raw PDF pages 3, 16, 22, and 34 checked by local PyMuPDF extraction. George Salvan Architectural Building Materials refined markdown lines 1280-1435, 1569, and 2682-2725; raw PDF pages 47 and 50 checked by local PyMuPDF extraction.",
+        "quoted_pdf_excerpt": "George Salvan supports plywood taking nails or screws close to the edge with less splitting."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-bae6dcc0-fb26-45b6-b0a7-8aa304175d25-b082",
+      "claim_text": "Question bae6dcc0-fb26-45b6-b0a7-8aa304175d25 was rewritten to the checked wood_connections source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "Building Construction Illustrated refined markdown lines 2141-2153; raw PDF hash checked locally. Woods and Plastics Lecture refined markdown lines 38-90, 108-245, and 285-520; raw PDF pages 3, 16, 22, and 34 checked by local PyMuPDF extraction. George Salvan Architectural Building Materials refined markdown lines 1280-1435, 1569, and 2682-2725; raw PDF pages 47 and 50 checked by local PyMuPDF extraction.",
+        "quoted_pdf_excerpt": "The checked material source distinguishes adhesive families by water resistance. Phenolic resin is the safer water-resistant choice; casein is not safe for high-humidity or wet-dry exposure."
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "scenario_enrichment": {
+    "policy_status": "pending",
+    "eligibility_status": "eligible-deferred",
+    "blocker_status": "nonblocking",
+    "notes": "No Real World Scenario section added; source correctness and linked-question safety remained the controlling gates."
+  },
+  "sme_review": {
+    "required": false,
+    "status": "not_required"
+  },
+  "local_first_publication": {
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "note": "Local-first Batch 082 only. Supabase remains final publishing only after a separate stale-check/apply phase."
+  }
+}

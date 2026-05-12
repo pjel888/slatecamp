@@ -1,0 +1,79 @@
+{
+  "question_id": "00130a06-ee25-47fc-a1a5-50b4da92e666",
+  "baseline_hash": "sha256:b96e60a71d97dc09cdeeebdc38318df9d3c10466582f0fc130a3b7829b41fe37",
+  "action": "replace",
+  "reason": "source-audited-article-batch-086-local-first aligned linked question with checked local raw PDF/source evidence for lea-plan-007-01-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-086",
+  "approved_at": "2026-05-12T09:30:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "8a8a6153-844c-4671-aae6-b42b5a9435dd",
+    "parent_article_slug": "lea-plan-007-01-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "EO 90 refined markdown lines 19-27; RA 11201 IRR lines 40-44, 145-162, and 261-263; RA 7279 lines 165-189 and 301-313.",
+    "checked_markdown_lines": [
+      "EO 90 refined markdown lines 19-27, 30-43, 51-63, and 79-106; raw PDF pages 1, 2, 3, 4, and 6 checked by local PyMuPDF extraction.",
+      "RA 11201 IRR refined markdown lines 40-44, 68-75, 93-100, 116-121, 134-162, 261-263, 280-289, 335, 389, and 392; raw PDF pages 3, 6, 7, 13, 15, 19, and 35 checked by local PyMuPDF extraction.",
+      "RA 7279 refined markdown lines 11-35, 37-85, 131-155, 165-189, 231-235, 301-313, and 319; raw PDF pages 1, 2, 3, 7, 8, and 11 checked by local PyMuPDF extraction."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "eo-90-shelter-program-b086",
+        "label": "EO 90 - NGO for Shelter Program",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/EO/EO 90 NGO for Shelter Program.pdf",
+        "sha256": "sha256:22b0d40bfdd91f9636f7e57df542496b19fcca84fc7d48df4911a9e65d7cd501",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/EO/EO 90 NGO for Shelter Program.md",
+        "refined_markdown_sha256": "sha256:0edf1d2a41c71751479f8bbe0d7ff31adcda7b8b544f59dc88f3de9f6319d43b",
+        "locator": "EO 90 refined markdown lines 19-27, 30-43, 51-63, and 79-106; raw PDF pages 1, 2, 3, 4, and 6 checked by local PyMuPDF extraction."
+      },
+      {
+        "source_id": "ra-11201-irr-dhsud-act-b086",
+        "label": "RA 11201 IRR - DHSUD Act Implementing Rules",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "refined_markdown_sha256": "sha256:40f1a5041c69b3a4aea7c8ba138a9d570bc686bea48aa5618ea6423a6a719528",
+        "locator": "RA 11201 IRR refined markdown lines 40-44, 68-75, 93-100, 116-121, 134-162, 261-263, 280-289, 335, 389, and 392; raw PDF pages 3, 6, 7, 13, 15, 19, and 35 checked by local PyMuPDF extraction."
+      },
+      {
+        "source_id": "ra-7279-urban-development-housing-act-b086",
+        "label": "RA 7279 - Urban Development and Housing Act",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7279/RA 7279 Urban Development and Housing Act 2009.pdf",
+        "sha256": "sha256:23efa9c0278519d79ed424d9ced016b24619ebb42a19e75a05dc9bb8bf1c4696",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7279/RA 7279 Urban Development and Housing Act 2009.md",
+        "refined_markdown_sha256": "sha256:f52859fb18fec28c403348851c3e53caca2e678cb9cec43fbca28d8d5c3a323e",
+        "locator": "RA 7279 refined markdown lines 11-35, 37-85, 131-155, 165-189, 231-235, 301-313, and 319; raw PDF pages 1, 2, 3, 7, 8, and 11 checked by local PyMuPDF extraction."
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 086 local raw-source-audited nha_shfc_shelter_roles scope."
+  },
+  "proposed": {
+    "text": "Which role best matches SHFC in RA 11201 IRR?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lead agency for social housing programs and community-driven shelter finance solutions"
+      },
+      {
+        "id": "b",
+        "text": "The sole issuer of building permits"
+      },
+      {
+        "id": "c",
+        "text": "A fire-code inspection office"
+      },
+      {
+        "id": "d",
+        "text": "A private furniture lender"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "RA 11201 IRR identifies SHFC as lead agency for social housing programs.",
+    "explanation": "RA 11201 IRR identifies SHFC as lead agency for social housing programs.",
+    "code_citation": "EO 90 - NGO for Shelter Program; RA 11201 IRR - DHSUD Act Implementing Rules; RA 7279 - Urban Development and Housing Act",
+    "bloom_level": "understand",
+    "application_context": "source_audited_local_first_batch_086",
+    "practice_context": [],
+    "difficulty": 0.55
+  }
+}

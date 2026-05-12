@@ -141,7 +141,7 @@ Free: "Your Readiness Score is 34/100 — here's what that means."
      [Heatmap shown briefly, then blurred]
      [You need Pro to track your progress and act on this.]
 
-Pro: Live score. Score history. Sub-scores by taxonomy. 
+Pro: Live score. Score history. Sub-scores by taxonomy.
      The Heatmap is your map. Pro makes it your GPS.
 ```
 

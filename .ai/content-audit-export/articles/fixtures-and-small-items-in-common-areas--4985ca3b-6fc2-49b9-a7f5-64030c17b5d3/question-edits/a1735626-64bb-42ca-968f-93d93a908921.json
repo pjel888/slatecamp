@@ -1,0 +1,50 @@
+{
+  "question_id": "a1735626-64bb-42ca-968f-93d93a908921",
+  "baseline_hash": "sha256:95fb90774bdb562619c2a64515f0bf57b75cc95722cde656b030baf2b5272d70",
+  "action": "replace",
+  "reason": "source-audited-article-batch-036-local-first: source-safe replacement grounded in local raw PDF/source family evidence; removes unsupported, stale, or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-036",
+  "approved_at": "2026-05-11T12:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-036-local-first",
+    "checked_sources": [
+      {
+        "source_id": "bp-344-2024-revised-irr-ncda-local",
+        "label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "checked_markdown_lines": [
+          "BP 344 2024 Revised IRR refined markdown lines 1090-1135",
+          "BP 344 2024 Revised IRR refined markdown lines 1296-1306",
+          "BP 344 2024 Revised IRR refined markdown lines 1493-1514"
+        ]
+      }
+    ],
+    "citation": "BP 344 2024 Revised IRR, Drinking Water Facilities"
+  },
+  "proposed": {
+    "text": "What knee clearance is required under an accessible drinking fountain?",
+    "options": [
+      {
+        "id": "b036-4985-10-a",
+        "text": "750 mm wide, 200 mm deep, and 650 mm high"
+      },
+      {
+        "id": "b036-4985-10-b",
+        "text": "900 mm wide, 300 mm deep, and 750 mm high"
+      },
+      {
+        "id": "b036-4985-10-c",
+        "text": "600 mm wide, 150 mm deep, and 450 mm high"
+      },
+      {
+        "id": "b036-4985-10-d",
+        "text": "1200 mm wide, 450 mm deep, and 900 mm high"
+      }
+    ],
+    "correct_option_id": "b036-4985-10-a",
+    "rationale": "Correct answer: 750 mm wide, 200 mm deep, and 650 mm high. This is directly supported by BP 344 2024 Revised IRR, Drinking Water Facilities.",
+    "explanation": "The source-audited correction uses only the local raw PDF family and locator-checked refined markdown for BP 344 2024 Revised IRR, Drinking Water Facilities.",
+    "code_citation": "BP 344 2024 Revised IRR, Drinking Water Facilities"
+  }
+}

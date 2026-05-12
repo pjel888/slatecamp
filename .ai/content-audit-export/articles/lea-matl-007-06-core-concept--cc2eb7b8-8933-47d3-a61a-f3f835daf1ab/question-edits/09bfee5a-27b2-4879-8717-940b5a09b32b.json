@@ -1,0 +1,65 @@
+{
+  "question_id": "09bfee5a-27b2-4879-8717-940b5a09b32b",
+  "baseline_hash": "sha256:9cb9c51bab7ad24c1fe857f791ebb7ae454d978048d6c7b5da0946eb7f007551",
+  "action": "replace",
+  "reason": "source-audited-article-batch-079-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-007-06-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-079",
+  "approved_at": "2026-05-12T06:20:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "cc2eb7b8-8933-47d3-a61a-f3f835daf1ab",
+    "parent_article_slug": "lea-matl-007-06-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "BCI refined markdown lines 13754-13820; raw PDF page 372 checked by local PyMuPDF extraction",
+    "checked_markdown_lines": [
+      "BCI refined markdown lines 13754-13820; raw PDF page 372 checked by local PyMuPDF extraction",
+      "Salvan refined markdown lines 1916-1920 and 2630-2710; raw PDF pages 59 and 92 checked by local PyMuPDF extraction"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "bci-5e-b079",
+        "label": "Building Construction Illustrated, 5th Edition",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "raw_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "locator": "BCI refined markdown lines 13754-13820; raw PDF page 372 checked by local PyMuPDF extraction"
+      },
+      {
+        "source_id": "salvan-building-materials-b079",
+        "label": "George Salvan Architectural Building Materials",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+        "raw_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+        "locator": "Salvan refined markdown lines 1916-1920 and 2630-2710; raw PDF pages 59 and 92 checked by local PyMuPDF extraction"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 079 local raw-source-audited countertop_materials scope."
+  },
+  "proposed": {
+    "text": "Which answer best coordinates a plastic-laminate countertop detail?",
+    "options": [
+      {
+        "id": "a",
+        "text": "High-pressure laminate, smooth core, correct adhesive, backer sheet, and protected edge"
+      },
+      {
+        "id": "b",
+        "text": "Only a color name"
+      },
+      {
+        "id": "c",
+        "text": "Only a lockset type"
+      },
+      {
+        "id": "d",
+        "text": "Only a window operation type"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "BCI supports coordinating laminate type, core material, bonding method, panel balance, and edge treatment.",
+    "explanation": "BCI supports coordinating laminate type, core material, bonding method, panel balance, and edge treatment.",
+    "code_citation": "Building Construction Illustrated, 5th Edition; George Salvan Architectural Building Materials"
+  }
+}

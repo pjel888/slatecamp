@@ -1,0 +1,59 @@
+{
+  "question_id": "cd317beb-bc62-49c6-a718-0a41f478643e",
+  "baseline_hash": "sha256:52d2ef0d2e102c52b457e0bdb87ae8ebd6b2940f9d1529ab47de592fac76ca15",
+  "action": "replace",
+  "reason": "source-audited-article-batch-059-local-first: local raw PDF backed replacement constrained to checked Batch 059 TOA 4 Tropical Architecture source family.",
+  "approved_by": "codex-local-first-batch-059",
+  "approved_at": "2026-05-11T20:48:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "567ba614-9dcd-4c76-8bf3-74478fd1291f",
+    "parent_article_slug": "lea-theo-004-01-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "TOA 4 Tropical Architecture refined markdown lines 79-122, 281-283, 373-397, 420-467, and raw PDF pages 1, 5-11, 13, 15-18, 20-21, 23-24, 28, and 41",
+    "checked_markdown_lines": [
+      "TOA 4 Tropical Architecture refined markdown lines 79-122",
+      "TOA 4 Tropical Architecture refined markdown lines 281-283",
+      "TOA 4 Tropical Architecture refined markdown lines 373-397",
+      "TOA 4 Tropical Architecture refined markdown lines 420-467"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "toa4-tropical-architecture-local-raw-pdf--b059-567ba614-01",
+        "label": "TOA 4 Tropical Architecture - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+        "sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+        "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+        "locator": "TOA 4 Tropical Architecture refined markdown lines 79-122, 281-283, 373-397, 420-467, and raw PDF pages 1, 5-11, 13, 15-18, 20-21, 23-24, 28, and 41"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 059 checked local raw PDF source scope."
+  },
+  "proposed": {
+    "text": "What is the exam use of climate classification in this topic?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It frames the form, orientation, ventilation, and shading choices appropriate to the site."
+      },
+      {
+        "id": "b",
+        "text": "It replaces the need to analyze the building program."
+      },
+      {
+        "id": "c",
+        "text": "It proves that every site uses identical openings."
+      },
+      {
+        "id": "d",
+        "text": "It is only a geography label with no design consequence."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "It frames the form, orientation, ventilation, and shading choices appropriate to the site. This answer is supported by the checked Batch 059 local TOA 4 Tropical Architecture raw PDF source family for Philippine archipelago presents a unique climate.",
+    "explanation": "It frames the form, orientation, ventilation, and shading choices appropriate to the site. The Batch 059 source audit used the local raw PDF first and refined markdown only as locator evidence for Philippine archipelago presents a unique climate.",
+    "code_citation": "TOA 4 Tropical Architecture refined markdown lines 79-122, 281-283, 373-397, 420-467, and raw PDF pages 1, 5-11, 13, 15-18, 20-21, 23-24, 28, and 41"
+  },
+  "batch_question_template_index": 12
+}

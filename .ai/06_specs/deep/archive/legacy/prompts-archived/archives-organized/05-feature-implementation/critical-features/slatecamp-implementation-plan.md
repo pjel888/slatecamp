@@ -1,6 +1,6 @@
 # SlateCamp — Claude Code Implementation Plan
-**Source:** Feature Research Report (March 2026) cross-document analysis  
-**Stack:** Next.js 15 App Router · Supabase · Tailwind CSS · shadcn/ui · Zustand · React Three Fiber  
+**Source:** Feature Research Report (March 2026) cross-document analysis
+**Stack:** Next.js 15 App Router · Supabase · Tailwind CSS · shadcn/ui · Zustand · React Three Fiber
 **Instruction style:** Each task is self-contained. Read the task fully before writing code. Never skip acceptance criteria.
 
 ---
@@ -24,8 +24,8 @@ Work top to bottom. Each sprint must be complete before starting the next. Tasks
 ---
 
 ### TASK 0.1 — Readiness Score: PRC Area Weighting
-**Priority:** BLOCKING — every score is mathematically wrong until this ships  
-**Estimated complexity:** Medium  
+**Priority:** BLOCKING — every score is mathematically wrong until this ships
+**Estimated complexity:** Medium
 
 **Context:** Area C (ALE-DSGN) = 40% of the exam. Currently the Readiness Score treats a Design node the same as a History node. This is wrong. The PRC area weights are stored in `taxonomy_tree.prc_area` and `taxonomy_tree.area_weight_pct`.
 
@@ -45,7 +45,7 @@ app/dashboard/_components/ReadinessScoreCard.tsx
 
 const PRC_AREA_WEIGHTS = {
   'A': 0.30,  // History + Theory + Planning + Practice
-  'B': 0.30,  // Structural + Materials + Utilities  
+  'B': 0.30,  // Structural + Materials + Utilities
   'C': 0.40,  // Architectural Design — 40% of exam
 }
 
@@ -64,7 +64,7 @@ export function computeReadinessScore(userNodeMastery: NodeMastery[]): Readiness
     overallScore: number,        // 0-100, PRC-weighted
     subScores: SubjectScore[],   // per subject, for floor alert
     dayOneScore: number,         // Areas A subjects only
-    dayTwoScore: number,         // Areas B+C subjects only  
+    dayTwoScore: number,         // Areas B+C subjects only
     belowFloorSubjects: string[] // subjects below 50% threshold
   }
 }
@@ -79,8 +79,8 @@ export function computeReadinessScore(userNodeMastery: NodeMastery[]): Readiness
 ---
 
 ### TASK 0.2 — Heatmap: Exclude ALE-LAWS and Deprecated Nodes
-**Priority:** BLOCKING — must deploy before Taxonomy v5.0 import Step 2  
-**Estimated complexity:** Small  
+**Priority:** BLOCKING — must deploy before Taxonomy v5.0 import Step 2
+**Estimated complexity:** Small
 
 **Context:** When ALE-LAWS nodes are seeded, they will appear in the student heatmap without this fix. `is_cross_ref_only = true` nodes must be excluded. Deprecated nodes (`deprecated_at IS NOT NULL`) must also be excluded.
 
@@ -121,8 +121,8 @@ const heatmapQuery = supabase
 ---
 
 ### TASK 0.3 — Subject Floor Alert System
-**Priority:** CRITICAL — prevents the most common surprise ALE failure  
-**Estimated complexity:** Medium  
+**Priority:** CRITICAL — prevents the most common surprise ALE failure
+**Estimated complexity:** Medium
 
 **Context:** The ALE requires minimum 50% per subject. A student at 74% overall with 47% in Structural Design fails. The platform must alert this. Data comes from TASK 0.1's `subScores` output and `disciplines.subject_floor_pct` (= 50).
 
@@ -150,7 +150,7 @@ app/dashboard/page.tsx           (add SubjectFloorAlert above the heatmap)
 // UI spec:
 // - Signal Red background (#E63329)
 // - White text
-// - Icon: ⚠️ 
+// - Icon: ⚠️
 // - Headline: "Warning: [Subject Name] is at [X]%"
 // - Body: "The ALE requires at least 50% in every subject to pass — regardless of your overall score. This subject will determine your result."
 // - CTA button: "Study [Subject Name] Now →"
@@ -171,8 +171,8 @@ app/dashboard/page.tsx           (add SubjectFloorAlert above the heatmap)
 ---
 
 ### TASK 0.4 — Retaker Onboarding Flow
-**Priority:** CRITICAL — highest-willingness-to-pay segment, zero current support  
-**Estimated complexity:** Medium-High  
+**Priority:** CRITICAL — highest-willingness-to-pay segment, zero current support
+**Estimated complexity:** Medium-High
 
 **Context:** Filipino architecture exam culture has deep shame (hiya) around failure. Retakers will not self-identify publicly. The word "retake" and "failure" must NEVER appear in user-facing copy. Use "returning reviewer" instead.
 
@@ -238,8 +238,8 @@ ALTER TABLE public.profiles
 ---
 
 ### TASK 0.5 — Personal Cram Card Generator
-**Priority:** CRITICAL — documented real reviewer behavior, high word-of-mouth  
-**Estimated complexity:** Medium  
+**Priority:** CRITICAL — documented real reviewer behavior, high word-of-mouth
+**Estimated complexity:** Medium
 
 **Context:** Every serious ALE reviewer manually compiles the 15–25 numerical values they keep getting wrong. SlateCamp has the wrong-answer data in `user_interactions`. This feature builds it automatically after 20+ sessions.
 
@@ -263,7 +263,7 @@ lib/cram-card.ts                                   (generation logic)
 
 // SQL for cram card candidates:
 /*
-SELECT 
+SELECT
   tt.ale_id,
   tt.name as subtopic_name,
   tt.exam_frequency,
@@ -309,8 +309,8 @@ LIMIT 20
 ---
 
 ### TASK 0.6 — Results Day Activation Flow
-**Priority:** CRITICAL — highest single-day engagement moment of the year  
-**Estimated complexity:** Medium-High  
+**Priority:** CRITICAL — highest single-day engagement moment of the year
+**Estimated complexity:** Medium-High
 
 **Context:** PRC results day is when every SlateCamp user is on the platform simultaneously. The product must have a distinct flow for passers AND non-passers that fires on or near the result announcement date.
 
@@ -333,7 +333,7 @@ ALTER TABLE public.profiles
   ADD COLUMN IF NOT EXISTS ale_result TEXT DEFAULT NULL
     CHECK (ale_result IN ('passed', 'failed', 'pending', NULL));
 
-ALTER TABLE public.profiles  
+ALTER TABLE public.profiles
   ADD COLUMN IF NOT EXISTS oath_taking_date DATE DEFAULT NULL;
 ```
 
@@ -358,8 +358,8 @@ ALTER TABLE public.profiles
 // Internal: profiles.ale_result = 'failed'
 // User-facing: NO shame language. No "you failed."
 // Show: "Your heatmap from this cycle is saved."
-// Body: "The June 2026 exam window opens registration on [calculated date]. 
-//        Your Camp Trail picks up exactly where you left off — with everything 
+// Body: "The June 2026 exam window opens registration on [calculated date].
+//        Your Camp Trail picks up exactly where you left off — with everything
 //        you learned this cycle already accounted for."
 // DO NOT ask "what happened?" or "where do you think you went wrong?"
 // Show the heatmap snapshot from before their exam date — let the data speak.
@@ -381,8 +381,8 @@ ALTER TABLE public.profiles
 ---
 
 ### TASK 1.1 — Camp Trail: Bloom's Level Sequencing
-**Priority:** High  
-**Estimated complexity:** Medium  
+**Priority:** High
+**Estimated complexity:** Medium
 
 **Files to modify:**
 ```
@@ -412,12 +412,12 @@ SELECT * FROM taxonomy_tree
 WHERE parent_id = $topicId
   AND is_leaf = true
   AND deprecated_at IS NULL
-ORDER BY 
-  CASE bloom_level 
-    WHEN 'remember' THEN 1 
-    WHEN 'understand' THEN 2 
-    WHEN 'apply' THEN 3 
-    WHEN 'analyze' THEN 4 
+ORDER BY
+  CASE bloom_level
+    WHEN 'remember' THEN 1
+    WHEN 'understand' THEN 2
+    WHEN 'apply' THEN 3
+    WHEN 'analyze' THEN 4
   END,
   difficulty ASC
 */
@@ -432,8 +432,8 @@ ORDER BY
 ---
 
 ### TASK 1.2 — Blindspot Protocol: Frequency + Type Weighting
-**Priority:** High  
-**Estimated complexity:** Small  
+**Priority:** High
+**Estimated complexity:** Small
 
 **Files to modify:**
 ```
@@ -480,8 +480,8 @@ const TYPE_WEIGHTS = {
 ---
 
 ### TASK 1.3 — Wiki Renderer: Typed wiki_items Display
-**Priority:** High  
-**Estimated complexity:** Medium  
+**Priority:** High
+**Estimated complexity:** Medium
 
 **Files to modify:**
 ```
@@ -527,8 +527,8 @@ const WIKI_ITEM_RENDERERS = {
 ---
 
 ### TASK 1.4 — Re-engagement Email: Show the Specific Position
-**Priority:** High  
-**Estimated complexity:** Small  
+**Priority:** High
+**Estimated complexity:** Small
 
 **Files to modify:**
 ```
@@ -576,8 +576,8 @@ supabase/functions/reengagement/index.ts
 ---
 
 ### TASK 1.5 — Onboarding: Review Center Coexistence Question
-**Priority:** High  
-**Estimated complexity:** Small  
+**Priority:** High
+**Estimated complexity:** Small
 
 **Files to modify:**
 ```
@@ -602,8 +602,8 @@ ALTER TABLE public.profiles
 // Show a one-screen positioning statement:
 // Title: "SlateCamp works alongside [Review Center]."
 // Body: "Your heatmap will tell you which sessions to prioritize.
-//        If your [JPT/ATLAS-CDC] schedule covers History this week 
-//        but your heatmap shows Structural as your biggest gap — 
+//        If your [JPT/ATLAS-CDC] schedule covers History this week
+//        but your heatmap shows Structural as your biggest gap —
 //        SlateCamp will tell you. You'll never waste a study session."
 // CTA: "Got it. Let's see my gaps →"
 
@@ -623,8 +623,8 @@ ALTER TABLE public.profiles
 ---
 
 ### TASK 1.6 — Endurance Cycle: Reframe as Area C Preparation
-**Priority:** High  
-**Estimated complexity:** Small (copy + UI changes, no schema)  
+**Priority:** High
+**Estimated complexity:** Small (copy + UI changes, no schema)
 
 **Files to modify:**
 ```
@@ -672,8 +672,8 @@ Context tooltip (add to the (?) icon):
 ---
 
 ### TASK 2.1 — Area C Preparation: Development Controls Calculator
-**Priority:** Critical — 40% of ALE is unaddressed  
-**Estimated complexity:** High  
+**Priority:** Critical — 40% of ALE is unaddressed
+**Estimated complexity:** High
 
 **Files to create:**
 ```
@@ -733,8 +733,8 @@ interface CalculatedOutputs {
 ---
 
 ### TASK 2.2 — Area C Preparation: Design Problem Library
-**Priority:** Critical  
-**Estimated complexity:** Medium  
+**Priority:** Critical
+**Estimated complexity:** Medium
 
 **Files to create:**
 ```
@@ -807,8 +807,8 @@ CREATE TABLE IF NOT EXISTS public.design_problem_sessions (
 ---
 
 ### TASK 2.3 — Comprehensive Exam Bridge Onboarding
-**Priority:** High  
-**Estimated complexity:** Small-Medium  
+**Priority:** High
+**Estimated complexity:** Small-Medium
 
 **Files to create:**
 ```
@@ -835,7 +835,7 @@ app/onboarding/comp-exam/_components/CompExamImport.tsx
 
 // Step 3: Map scores to heatmap seed:
 //   Score < 50%: mark ALL leaf nodes for that subject as 'red'
-//   Score 50-69%: mark as 'amber' 
+//   Score 50-69%: mark as 'amber'
 //   Score ≥ 70%: mark as 'green'
 //   (This is a rough seed — the diagnostic quiz will refine it)
 
@@ -868,8 +868,8 @@ ALTER TABLE public.profiles
 ---
 
 ### TASK 2.4 — 21 Critical ALE Numbers Flash Module
-**Priority:** High  
-**Estimated complexity:** Medium  
+**Priority:** High
+**Estimated complexity:** Medium
 
 **Files to create:**
 ```
@@ -916,7 +916,7 @@ const FLASH_CATEGORIES = {
     { front: "CPD units required per renewal cycle", back: "45 units per 3-year compliance period", code_ref: "RA 10912 + PRBoA Resolution" },
     { front: "DAE minimum years required", back: "2 years (1 year if with MArch)", code_ref: "RA 9266 Sec. 13" },
     { front: "SPP 202 Phase 3 fee percentage", back: "40% of total fee (Contract Documents)", code_ref: "UAP SPP Doc 202" },
-    // ... more practice values  
+    // ... more practice values
   ]
 }
 
@@ -937,8 +937,8 @@ const FLASH_CATEGORIES = {
 ---
 
 ### TASK 2.5 — Bloom Cognitive Level Tracker in Dashboard
-**Priority:** Medium  
-**Estimated complexity:** Medium  
+**Priority:** Medium
+**Estimated complexity:** Medium
 
 **Files to create:**
 ```
@@ -1004,8 +1004,8 @@ GROUP BY ui.user_id, tt.subject_area, tt.bloom_level;
 ---
 
 ### TASK 2.6 — Post-ALE Account Transition to Professional Mode
-**Priority:** High  
-**Estimated complexity:** Small-Medium  
+**Priority:** High
+**Estimated complexity:** Small-Medium
 
 **Files to create:**
 ```
@@ -1060,8 +1060,8 @@ ALTER TABLE public.profiles
 ---
 
 ### TASK 2.7 — Oath-Taking Moment Email
-**Priority:** High  
-**Estimated complexity:** Small  
+**Priority:** High
+**Estimated complexity:** Small
 
 **Files to modify:**
 ```
@@ -1131,8 +1131,8 @@ CREATE TABLE IF NOT EXISTS public.oath_taking_schedules (
 ---
 
 ### TASK 3.1 — DAE Maintenance Mode
-**Dependencies:** profiles.reviewer_type column, DAE-tagged questions in question bank  
-**Estimated complexity:** High  
+**Dependencies:** profiles.reviewer_type column, DAE-tagged questions in question bank
+**Estimated complexity:** High
 
 **Files to create:**
 ```
@@ -1146,7 +1146,7 @@ app/dae-mode/_components/DAEQuizSession.tsx
 -- Tag questions with practice context
 ALTER TABLE public.questions
   ADD COLUMN IF NOT EXISTS practice_context TEXT[]  DEFAULT '{}'::text[];
-  -- Values: 'building_permit', 'construction_supervision', 'design_development', 
+  -- Values: 'building_permit', 'construction_supervision', 'design_development',
   --         'pre_design', 'government_practice', 'contract_administration'
 ```
 
@@ -1162,8 +1162,8 @@ Weekly prompt: "What are you working on this week?"
 ---
 
 ### TASK 3.2 — Code Update Alert System
-**Dependencies:** taxonomy_sources table, SME team workflow  
-**Estimated complexity:** Medium  
+**Dependencies:** taxonomy_sources table, SME team workflow
+**Estimated complexity:** Medium
 
 **Files to create:**
 ```
@@ -1195,8 +1195,8 @@ CREATE TABLE public.code_updates (
 ---
 
 ### TASK 3.3 — Studio Mode for BSA Students
-**Dependencies:** Student pricing tier, student account flow  
-**Estimated complexity:** Medium  
+**Dependencies:** Student pricing tier, student account flow
+**Estimated complexity:** Medium
 
 **Core spec summary:**
 ```
@@ -1211,8 +1211,8 @@ All interactions still feed mastery engine silently (invisible compounding)
 ---
 
 ### TASK 3.4 — Study Pod Accountability Loop
-**Dependencies:** User authentication, Campfire community infrastructure  
-**Estimated complexity:** High  
+**Dependencies:** User authentication, Campfire community infrastructure
+**Estimated complexity:** High
 
 **Schema changes:**
 ```sql
@@ -1290,7 +1290,7 @@ ALTER TABLE public.profiles
 
 ## ENVIRONMENT VARIABLES NEEDED
 
-No new environment variables required for Sprint 0 or Sprint 1.  
+No new environment variables required for Sprint 0 or Sprint 1.
 Sprint 2 additions when email is set up:
 ```
 RESEND_API_KEY=           # or existing email provider
@@ -1311,8 +1311,8 @@ CRON_SECRET=              # for securing cron endpoints
 
 ---
 
-*SlateCamp Implementation Plan — March 2026 — For Claude Code*  
-*Source: Feature Research Report (cross-document analysis of 4 SlateCamp documents)*  
+*SlateCamp Implementation Plan — March 2026 — For Claude Code*
+*Source: Feature Research Report (cross-document analysis of 4 SlateCamp documents)*
 *Stack: Next.js 15 App Router · Supabase · Tailwind CSS · shadcn/ui · Zustand*
 
 

@@ -1,0 +1,157 @@
+{
+  "artifact_type": "source_audit_evidence",
+  "batch_id": "source-audited-article-batch-014-local-first",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T23:05:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "status": "local_pass_ready_for_final_publishing_review",
+  "target": {
+    "article_id": "569f5a05-ad46-4617-8170-a19e2f5d5db1",
+    "slug": "lea-dsgn-007-07-core-concept",
+    "title": "Development control calculations",
+    "folder": ".ai/content-audit-export/articles/lea-dsgn-007-07-core-concept--569f5a05-ad46-4617-8170-a19e2f5d5db1",
+    "normalized_path": ".ai/content-audit-export/articles/lea-dsgn-007-07-core-concept--569f5a05-ad46-4617-8170-a19e2f5d5db1/normalized.md",
+    "candidate_path": ".ai/content-audit-export/articles/lea-dsgn-007-07-core-concept--569f5a05-ad46-4617-8170-a19e2f5d5db1/candidate.md",
+    "sources_path": ".ai/content-audit-export/articles/lea-dsgn-007-07-core-concept--569f5a05-ad46-4617-8170-a19e2f5d5db1/sources.json",
+    "question_edits_folder": ".ai/content-audit-export/articles/lea-dsgn-007-07-core-concept--569f5a05-ad46-4617-8170-a19e2f5d5db1/question-edits",
+    "original_hash": "sha256:96aa61ba886fcfaa296133fe71d0f9ce4543b7e85c468f051891320c5414c977",
+    "normalized_hash": "sha256:96aa61ba886fcfaa296133fe71d0f9ce4543b7e85c468f051891320c5414c977",
+    "candidate_hash": "sha256:8cfe3a5f8aa0576bf88310ddbebae9b1a47cb16b47d1b07ca7c3182e8389b30e",
+    "sources_hash": "sha256:b8d78e983363054ab34c08f7e3c91e1480bede3b38b3ab58787815356ddd2a38",
+    "linked_questions_hash": "sha256:e93ba48a023626a829fd8e82999dac7196d6f276646b0c15a4646ac412ec2b8e",
+    "question_edit_count": 10
+  },
+  "source_status_summary": "supported_with_problem_stated_zoning_inputs",
+  "local_sources": [
+    {
+      "source_id": "pd-1096-rule-7-8-development-controls",
+      "label": "PD 1096 IRR - Rules 7 and 8 Light Ventilation and Development Controls",
+      "authority": "Philippine National Building Code local source packet",
+      "source_type": "primary_law_raw_conversion",
+      "source_locator": "FLAR, AMBF, PSO, BHL, GFA/TGFA formulas and development-control workflow",
+      "paths": [
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 IRR - Rules 7 and 8 Light Ventilation and Development Controls.pdf",
+          "sha256": "sha256:3fd01acd4ec7f37dbff97dba72c107502b46a05f59803df9973dfea62907a55d"
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 IRR - Rules 7 and 8 Light Ventilation and Development Controls.md",
+          "sha256": "sha256:9e1dedb0554ace070c0401c37625b68205b9eb43e6c77cae5f98237b94a95309"
+        }
+      ],
+      "checked_markdown_lines": [
+        "raw markdown lines 1664-1685, 1761-1785, 1793-1825, 1834-1840"
+      ],
+      "use": "supports development-control formulas and sequence; exact zoning inputs remain problem/LGU-specific",
+      "local_source_checked": true
+    },
+    {
+      "source_id": "pd-1096-full-irr-occupancy-development-controls",
+      "label": "PD 1096 IRR - Full Implementing Rules and Regulations",
+      "authority": "Philippine National Building Code local source packet",
+      "source_type": "primary_law_raw_conversion",
+      "source_locator": "Occupancy groups, funeral parlors/memorial chapels in zoning tables, PSO/MACA/TOSL definitions, window openings",
+      "paths": [
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.pdf",
+          "sha256": "sha256:8e98d8afd4b5972ba5a82d33a65e59e800cd41661b764a0dfc4112d29697b341"
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.md",
+          "sha256": "sha256:74351a12fcecb23ef611e23e40f1e73b87e2bdb8f9a625e886dc1b906e83c940"
+        },
+        {
+          "path": "vitruvius-connection/003_Canonical-Knowledge-Layer/shared/sources/implementing-rules-and-regulations.md",
+          "sha256": "sha256:2c8c7c95eb110e83065c11b1370051dc5e191cb46932c11d2d37a5e7647537a5"
+        }
+      ],
+      "checked_markdown_lines": [
+        "raw markdown lines 1607-1665, 2495, 2595, 4020-4087, 7055, 7097, 7170, 7184, 9655",
+        "canonical source lines 1607-1665, 2495, 2595"
+      ],
+      "use": "supports occupancy classification, funeral use rows, development-control definitions, and 10% window-opening rule",
+      "local_source_checked": true
+    }
+  ],
+  "exported_source_records": [
+    {
+      "source_id": "2681c3da-81c7-4926-ad97-6636a582626d",
+      "article_id": "569f5a05-ad46-4617-8170-a19e2f5d5db1",
+      "label": "PD 1096 (National Building Code of the Philippines) & 2004 Revised IRR",
+      "url": null,
+      "source_type": "implementing_rules",
+      "description": null,
+      "is_verified": false,
+      "sort_order": 0,
+      "created_at": "2026-03-24T04:33:58.214974+00:00",
+      "updated_at": "2026-03-24T04:33:58.214974+00:00"
+    },
+    {
+      "source_id": "5df769c9-6471-49bf-8617-e4d4f17de7f8",
+      "article_id": "569f5a05-ad46-4617-8170-a19e2f5d5db1",
+      "label": "Local Government Unit (LGU) Zoning Ordinances",
+      "url": null,
+      "source_type": "reference_standard",
+      "description": null,
+      "is_verified": false,
+      "sort_order": 1,
+      "created_at": "2026-03-24T04:33:58.214974+00:00",
+      "updated_at": "2026-03-24T04:33:58.214974+00:00"
+    },
+    {
+      "source_id": "c0d66547-3077-4d9d-9ceb-4f8f0ea6de69",
+      "article_id": "569f5a05-ad46-4617-8170-a19e2f5d5db1",
+      "label": "BP 344 (Accessibility Law) for specific site requirements",
+      "url": null,
+      "source_type": "primary_law",
+      "description": null,
+      "is_verified": false,
+      "sort_order": 2,
+      "created_at": "2026-03-24T04:33:58.214974+00:00",
+      "updated_at": "2026-03-24T04:33:58.214974+00:00"
+    }
+  ],
+  "local_edits": {
+    "normalized_repaired": true,
+    "candidate_composed": true,
+    "ui_blocks_reviewed": true,
+    "question_edits_created": 10,
+    "answer_key_fields_changed": false,
+    "source_safe_rewrite_question_edits": 4,
+    "unresolved_external_source_gap_question_edits": 0
+  },
+  "source_gap_blockers": [],
+  "validation": {
+    "compose": {
+      "safe_to_diff": true,
+      "blockers": []
+    },
+    "diff": {
+      "changed": true,
+      "safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+      ]
+    },
+    "bundle_validate_dry_run": {
+      "valid": true,
+      "blockers": [],
+      "warnings": [
+        "component-usage.json has not been generated for this article yet."
+      ]
+    }
+  },
+  "question_edit_files": [
+    ".ai/content-audit-export/articles/lea-dsgn-007-07-core-concept--569f5a05-ad46-4617-8170-a19e2f5d5db1/question-edits/390172bf-1214-409a-b677-14b287b34c96.json",
+    ".ai/content-audit-export/articles/lea-dsgn-007-07-core-concept--569f5a05-ad46-4617-8170-a19e2f5d5db1/question-edits/8d589381-b75c-4736-8cad-6843b7247bc5.json",
+    ".ai/content-audit-export/articles/lea-dsgn-007-07-core-concept--569f5a05-ad46-4617-8170-a19e2f5d5db1/question-edits/838e4c1b-dfda-4604-9bf5-49113e822d16.json",
+    ".ai/content-audit-export/articles/lea-dsgn-007-07-core-concept--569f5a05-ad46-4617-8170-a19e2f5d5db1/question-edits/280c9bba-34f6-41ec-945a-d309896dbcfe.json",
+    ".ai/content-audit-export/articles/lea-dsgn-007-07-core-concept--569f5a05-ad46-4617-8170-a19e2f5d5db1/question-edits/d403f5e5-5678-484a-b599-cb97b6d35385.json",
+    ".ai/content-audit-export/articles/lea-dsgn-007-07-core-concept--569f5a05-ad46-4617-8170-a19e2f5d5db1/question-edits/859d5142-6fc7-4f71-bde6-cf91404c644e.json",
+    ".ai/content-audit-export/articles/lea-dsgn-007-07-core-concept--569f5a05-ad46-4617-8170-a19e2f5d5db1/question-edits/fee22955-47bf-4b8b-835f-0be2fb9b1437.json",
+    ".ai/content-audit-export/articles/lea-dsgn-007-07-core-concept--569f5a05-ad46-4617-8170-a19e2f5d5db1/question-edits/5c4f9e3d-3f64-4f69-9501-9be7ef2d88fb.json",
+    ".ai/content-audit-export/articles/lea-dsgn-007-07-core-concept--569f5a05-ad46-4617-8170-a19e2f5d5db1/question-edits/97ee3719-36f9-4d3d-9bb9-36cdc3f4df39.json",
+    ".ai/content-audit-export/articles/lea-dsgn-007-07-core-concept--569f5a05-ad46-4617-8170-a19e2f5d5db1/question-edits/b2a2200c-96e6-466f-a03e-8aeabf3fc714.json"
+  ]
+}

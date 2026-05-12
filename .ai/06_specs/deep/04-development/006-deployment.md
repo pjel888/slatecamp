@@ -1,8 +1,8 @@
 # Deployment
 
-**Status:** Active  
-**Version:** 1.0  
-**Last Updated:** 2026-04-06  
+**Status:** Active
+**Version:** 1.0
+**Last Updated:** 2026-04-06
 **Source-of-Truth:** `vercel.json`, `CLAUDE.md`
 
 ---

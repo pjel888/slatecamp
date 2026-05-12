@@ -1,0 +1,83 @@
+{
+  "question_id": "a64d2971-b0e2-4678-bfcb-ade7501b5dc4",
+  "baseline_hash": "sha256:f82979c4ed6d98f33f38b67702ee9db706eee79c40ac6f44f1d3a900b20b89be",
+  "action": "replace",
+  "reason": "source-audited-article-batch-035-local-first aligned linked professional-practice question with audited local raw PDF source language for lea-prac-cmp-003-project-construction-cost-pcc-definition-inclusions-and-what-the-architect-s-fee-is-based-on.",
+  "approved_by": "codex-local-source-audit-batch-035",
+  "approved_at": "2026-05-11T11:27:41+08:00",
+  "source_audit_support": {
+    "parent_article_id": "5967e69f-d295-4dd2-9eb7-b4f1a321db4d",
+    "parent_article_slug": "lea-prac-cmp-003-project-construction-cost-pcc-definition-inclusions-and-what-the-architect-s-fee-is-based-on",
+    "parent_article_title": "Project Construction Cost PCC Definition Inclusions",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UAP Standards of Professional Practice refined markdown lines 539-547; UAP Standards of Professional Practice refined markdown lines 549-551; UAP Document 401-402 refined markdown lines 77-89, 105-106, 128-129",
+    "checked_sources": [
+      {
+        "source_id": "uap-standards-professional-practice2-local",
+        "label": "UAP Standards of Professional Practice - compiled SPP source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+        "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+        "source_locator": "UAP Standards of Professional Practice refined markdown lines 539-547; UAP Standards of Professional Practice refined markdown lines 549-551; UAP Document 401-402 refined markdown lines 77-89, 105-106, 128-129",
+        "checked_markdown_lines": [
+          "UAP Standards of Professional Practice refined markdown lines 539-547",
+          "UAP Standards of Professional Practice refined markdown lines 549-551",
+          "UAP Document 401-402 refined markdown lines 77-89, 105-106, 128-129"
+        ]
+      },
+      {
+        "source_id": "uap-document-401-402-local",
+        "label": "UAP Document 401-402 - Architect-Owner Agreement",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+        "raw_pdf_sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
+        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
+        "refined_markdown_sha256": "sha256:ea7f84c966467b46fe9058778d4f9a0821db94a5dbc0a4fb02a2cfd69e215d05",
+        "source_locator": "UAP Standards of Professional Practice refined markdown lines 539-547; UAP Standards of Professional Practice refined markdown lines 549-551; UAP Document 401-402 refined markdown lines 77-89, 105-106, 128-129",
+        "checked_markdown_lines": [
+          "UAP Standards of Professional Practice refined markdown lines 539-547",
+          "UAP Standards of Professional Practice refined markdown lines 549-551",
+          "UAP Document 401-402 refined markdown lines 77-89, 105-106, 128-129"
+        ]
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer key, rationale, explanation, and code citation rewritten to audited local article scope."
+  },
+  "proposed": {
+    "text": "If the Owner furnishes material below market cost, how should that material be treated for PCC?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Exclude it entirely because the Owner supplied it"
+      },
+      {
+        "id": "b",
+        "text": "Use only the discounted purchase amount"
+      },
+      {
+        "id": "c",
+        "text": "Compute the material and labor on current fair market value"
+      },
+      {
+        "id": "d",
+        "text": "Add the Architect fee to offset the discount"
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": {
+      "a": "SPP 202 does not exclude owner-furnished material simply because the Owner supplied it.",
+      "b": "SPP 202 rejects an artificially low amount when market value is higher.",
+      "c": "SPP 202 Section 7.17 says owner-furnished labor or material below market cost is still computed on current fair market value.",
+      "d": "Professional fees are excluded from the PCC base.",
+      "correct": "SPP 202 Section 7.17 says owner-furnished labor or material below market cost is still computed on current fair market value.",
+      "takeaway": "The fair-market rule prevents an artificial reduction of the construction-cost base."
+    },
+    "explanation": "SPP 202 Section 7.17 says owner-furnished labor or material below market cost is still computed on current fair market value. The fair-market rule prevents an artificial reduction of the construction-cost base.",
+    "code_citation": "UAP Standards of Professional Practice refined markdown lines 539-547"
+  }
+}

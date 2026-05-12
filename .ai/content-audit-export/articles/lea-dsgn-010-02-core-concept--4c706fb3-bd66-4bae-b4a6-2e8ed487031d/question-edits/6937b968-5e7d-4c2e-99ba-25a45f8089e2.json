@@ -1,0 +1,32 @@
+{
+  "question_id": "6937b968-5e7d-4c2e-99ba-25a45f8089e2",
+  "baseline_hash": "sha256:ecd53845088f4f26bfb69644f25ba3fc59fd614c95c49a260749d81a1e2c55ef",
+  "reason": "Batch 003 source audit removed unsupported parking-structure geometry locators. PD 1096 Rule VII supports slot/loading sizes and plan indication; BP 344 supports accessible parking details. Rule XIX, Section 803, and Section 904 are not parking geometry locators.",
+  "approved_by": "codex-local-source-audit-batch-003",
+  "approved_at": "2026-05-10T18:00:00+08:00",
+  "proposed": {
+    "text": "What plan-checking requirement for parking slots is source-backed by the checked PD 1096 Rule VII text?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Parking aisles must use a 6.1 m module in all cases"
+      },
+      {
+        "id": "b",
+        "text": "Parking slots must be drawn to scale and the total number indicated on the plans"
+      },
+      {
+        "id": "c",
+        "text": "Vehicle ramps must always be 1:6"
+      },
+      {
+        "id": "d",
+        "text": "Structural columns must always be spaced at 15 m"
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": "The checked PD 1096 text requires parking slots to be drawn to scale with the total number indicated on the plans.",
+    "explanation": "The old structural-module question relied on unsupported geometry standards.",
+    "code_citation": "PD 1096 2004 Revised IRR, Rule VII parking slot requirements"
+  }
+}

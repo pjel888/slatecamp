@@ -1,0 +1,34 @@
+{
+  "question_id": "322640fd-b891-4827-a284-4f0ecb707c05",
+  "baseline_hash": "sha256:d2d7b4daeb8c5ee9503a6c327e0d4e3bf7193db6220796cc1737b6a7832619fe",
+  "reason": "Batch 005 local source audit aligned LEA Eligibility: Academic Credentials, DAE, and Moral Character linked question ALE-PRAC-LAW-007-008 to verified RA 9266 IRR raw-source claims.",
+  "approved_by": "codex-local-source-audit-batch-005",
+  "approved_at": "2026-05-10T21:30:00+08:00",
+  "proposed": {
+    "code_citation": "RA 9266 IRR Sections 3(29) and 13",
+    "explanation": "Source-audited against RA 9266 IRR Sections 3(29) and 13 in the checked local RA 9266 IRR PDF. This edit removes unsupported locators or assumptions and keeps the question aligned to the audited article cluster.",
+    "text": "Which mentor-related documents does the checked RA 9266 IRR require with the DAE application materials?",
+    "options": [
+      {
+        "id": "a",
+        "text": "An Architect-Mentor affidavit plus photocopies of the mentor's valid PIC, PTR, and IAPOA number."
+      },
+      {
+        "id": "b",
+        "text": "Only the mentor's business card."
+      },
+      {
+        "id": "c",
+        "text": "Only a notarized letter from the applicant without mentor documentation."
+      },
+      {
+        "id": "d",
+        "text": "A building permit issued to the applicant."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "correct": "Section 13 lists the Architect-Mentor affidavit and photocopies of the mentor's valid PIC, PTR, and IAPOA number. The checked source does not state a separate mid-period PTR-expiry rule."
+    }
+  }
+}

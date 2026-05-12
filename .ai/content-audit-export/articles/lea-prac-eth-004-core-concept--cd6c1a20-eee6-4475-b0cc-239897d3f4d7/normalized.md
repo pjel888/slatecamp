@@ -1,126 +1,29 @@
+# Section 2 Of The Code: Responsibilities In Relation To The Client
 
+Section 2 of the UAP Code of Ethical Conduct states that the architect's relation to the client depends on good faith. It treats the architect's position as one that carries moral obligations to the client and to the architect.
 
-## Board Exam Quick Check
+## Client Engagement Duties
 
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+Section 2-a allows the architect to introduce professional services to a prospective client through examples of professional experience, but it bars offering free preliminary sketches or other services without an agreement for legitimate compensation.
 
-**Common mistake:** treating a familiar keyword in **Lea Prac Eth 004 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+Section 2-b requires the architect, at the inception of the business relationship, to ascertain the exact nature and scope of services and the corresponding professional charges.
 
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
-## What You Need to Know for the LEA
-## Learning Goal
+Section 2-c requires the architect to advise a client against proceeding with a project whose practicability may be questionable due to financial, legal, or other exigent conditions, even if the advice may cause the loss of a prospective commission.
 
-After reading this article, you should be able to:
+Section 2-d requires the architect to explain that estimates are conditional unless they are actual contractor proposals. It also bars guaranteeing estimates or misleading the client about probable cost to secure a commission.
 
-- Define the fiduciary nature of the architect-client relationship and the architect's duty of unquestioned loyalty.
-- Identify disclosure obligations: conflicts of interest, third-party compensation, and material relationships.
-- Explain the prohibition on accepting compensation from third parties without client knowledge and consent.
-- Apply fiduciary duty principles to LEA scenarios involving conflicts of interest, client trust, and ethical obligations.
+## Fees, Construction Role, And Conflicts
 
-The architect-client relationship rests on good faith and the architect's unquestioned loyalty to the client. The architect must disclose all conflicts of interest, refuse compensation from third parties without client consent, and prioritize client welfare even when this conflicts with fee maximization.
+Section 2-e requires the architect to consider the client's needs and stipulations, and also the effects of the work on the life and well-being of the public and community.
 
-## Core Concept
+Section 2-f requires a professional fee commensurate with the work, professional standing, and experience, based on the Basic Minimum Fee prescribed under the Standards of Professional Practice.
 
-Section 2 of the Code establishes that the architect-client relationship is "depended upon good faith" and that the architect's position "carries with it certain moral obligations to his Client and to himself." This creates a **fiduciary relationship** — the architect is a trusted adviser who places the client's interests above the architect's own profit.
+Section 2-g bars the architect from undertaking, under a fixed contract sum agreement, construction of a project based on plans prepared by the architect, except where the work conforms to the SPP conditions for Construction Services, Comprehensive Services, or Design-Build Services.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code="ra9266", section="Section 2 (a-j)", title="Client Obligations — The Fiduciary Standard"
-- Text: Section 2 of the Code establishes the architect's fiduciary duty to the client. Key subsections: (b) ascertain scope and fees at inception; (c) advise against impractical projects; (f) charge fair fees per Basic Minimum Fee standards; (g) cannot undertake fixed-sum construction of own designs; (h) shall not accept returns from any source other than the client; (i) disclose conflicts of interest; (j) include arbitration clause in agreements.
-[/SLATECAMP_UI_BLOCK]
+Section 2-h requires compensation solely through the professional fee charged directly to the client, with no other returns from interested sources. Section 2-i requires the architect to avoid business interests that weaken professional standing as an unprejudiced adviser, and to inform the client when a business interest will relate to or affect the client's interest.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-eth004-client-duties", layout="single", variant="contained", type="image", status="placeholder", aspectRatio="16:9", title="Duties to the Client — Fiduciary Obligations", alt="Hub-and-spoke diagram of fiduciary obligations to clients", placementIntent="ethics-framework", suggestedSearchQuery="architect fiduciary duties to client Code of Ethics Section 2 loyalty confidentiality", suggestedAsset="Diagram or reference image", caption="Future diagram: hub-and-spoke diagram of fiduciary obligations to clients"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+Section 2-j requires the client agreement to include an arbitration clause for settlement of disputes.
 
-The obligation has six interconnected dimensions:
+## LEA Study Anchor
 
-1. **Absolute loyalty** — defined in §2-h as receiving compensation "solely through his professional fee charged directly to the Client" with "no other returns in whatever form from any interested source other than the Client."
-
-2. **Conflict of interest disclosure** — Section 2-i requires: "If the Architect has any business interest which will relate to, or affect the interest of his Client, he should inform his Client of such condition or situation."
-
-3. **No money from third parties** — Section 2-h is unambiguous: the architect "shall not accept nor ask for any other returns in whatever form from any interested source other than the Client."
-
-4. **Confidentiality** — Implied from the fiduciary duty; the architect cannot disclose the client's budget, timeline, negotiating position, or proprietary information.
-
-5. **Truthful advice** — Section 2-c requires: "The Architect shall advise a Client against proceeding with any project whose practicability may be questionable due to financial, legal or arresting or exigent conditions, even if such advice may mean the loss of a prospective commission to the Architect."
-
-6. **Fair and transparent fees** — Section 2-f requires fees "commensurate with the work involved and with his professional standing and experience based upon the Basic Minimum Fee prescribed under the 'Standards of Professional Practice.'"
-
-## Key Provisions
-
-| Provision | Source | LEA Relevance |
-|-----------|--------|---------------|
-| Good faith relationship | Code §2 Statement | Foundation: architect is fiduciary |
-| Loyalty to client | Code §2-h | Cannot accept payments from suppliers/contractors |
-| Disclose conflicts of interest | Code §2-i | Must inform client of any business interest affecting advice |
-| No compensation except from client | Code §2-h | All third-party compensation violates duty |
-| Advise against impractical projects | Code §2-c | Must risk commission loss to protect client |
-| Fair, professional fees | Code §2-f | Must comply with Basic Minimum Fee standard |
-| Cannot undertake fixed-sum construction | Code §2-g | Architect cannot be contractor for own designs under fixed-sum |
-| Disclose financial interests | Code §2-i | "Tend to weaken... standing" test applies broadly |
-| Maintain confidentiality | Code §2 (implied) | Client information is privileged |
-| Include arbitration clause | Code §2-j | Disputes resolved through arbitration, not litigation |
-
-## Philippine Practice Context
-
-Under RA 9266 §33, the architect retains copyright in all drawings and specifications prepared, but the client receives a right to use these documents for the commissioned project only. This ownership distinction reinforces the fiduciary relationship: the architect owns the intellectual property but serves the client's interests. The architect cannot reuse design solutions or documents from one client's project for another client without explicit consent.
-
-The PRBoA has consistently disciplined architects who accepted contractor payments, discounts, or commissions without client knowledge. In one case, an architect received 5% from a preferred contractor in exchange for steering contracts; this resulted in suspension. The Board views such arrangements as inherent conflicts that distort professional judgment.
-
-Architects employed by government agencies face heightened scrutiny: their loyalty obligation extends to the public (as taxpayers), not just to the government entity as contracting party.
-
-[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Common Exam Trap:** The LEA frequently tests whether "small" gifts or discounts are acceptable if disclosed. The answer is NO under §2-h — ANY compensation from third parties is prohibited unless it is a market discount credited to the client under §4-b. Verbal disclosure to the client does not make it permissible; the architect must refuse or pass the benefit to the client.
-[/SLATECAMP_UI_BLOCK]
-
-## How It's Tested
-
-**Pattern 1: Undisclosed Compensation**
-A contractor offers architect 8% commission on project costs. Architect accepts. Violation: §2-h (undisclosed compensation violates sole-source requirement).
-
-**Pattern 2: Conflict of Interest Concealment**
-Architect is part-owner of a building supply company and specifies that company's materials. Client not informed. Violation: §2-i (undisclosed conflict of interest).
-
-**Pattern 3: Impractical Project Advice**
-Client requests design the architect knows is financially unfeasible. Architect proceeds to avoid losing the commission. Violation: §2-c (duty to advise against impractical projects).
-
-**Pattern 4: Fixed-Sum Construction Contract**
-Architect designs building, then agrees to construct it for fixed lump sum. Violation: §2-g (architect "shall not undertake, under a fixed contract sum agreement, the construction of any project based on plans prepared by him").
-
-[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Watch:** Apply the "FAIR" test for client obligation questions: (F)iduciary duty to act in client's best interest; (A)dvise truthfully even at cost to yourself; (I)nterested parties must be disclosed; (R)eceived only from client — no third-party compensation. Anything that weakens the architect's standing as "unprejudiced and honest adviser" violates §2-i.
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0005 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Memory Aid: "FAIR"—Fiduciary, Advised truthfully, Interested parties disclosed, Received only from client.** If a question involves third-party compensation, conflicts of interest, or impractical project advice, apply the FAIR test. Anything that weakens the architect's standing as "unprejudiced and honest adviser" violates §2-i.
-[/SLATECAMP_UI_BLOCK]
-
-## Common Mistakes
-
-[SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\n    \"Believing 'small' supplier discounts or commissions are acceptable without disclosure — §2-h prohibits ANY compensation 'in whatever form from any interested source other than the Client' except market discounts credited to client per §4-b\",\n    \"Confusing 'market discount' with 'commission' — market discounts must be credited to the client and are the only permissible third-party benefit\",\n    \"Assuming conflicts of interest can be concealed if they 'don't affect this specific project' — §2-i requires disclosure of ANY business interest that 'affect[s] the interest of his Client' or 'weaken[s]... standing as unprejudiced adviser'\",\n    \"Thinking architect can advise client truthfully and still accept contractor/supplier payment — the two are incompatible under §2-h and §2-i\",\n    \"Accepting fixed-sum construction contracts thinking §2-g only applies if architect designed the building — §2-g explicitly prohibits this 'under a fixed contract sum agreement... based on plans prepared by him'\",\n    \"Overlooking confidentiality as part of client obligation — fiduciary duty includes protecting client information from competitors and third parties\",\n  ]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
----
-
-## Related Articles
-
-- [RA 9266: Legal Framework](lea-prac-law-001)
-- [Prohibited Acts and Penalties](lea-prac-law-003)
-- [Grounds for Suspension and Revocation](lea-prac-eth-008)
-- [Non-Poaching and Professional Courtesy](lea-prac-eth-006)
-- [Obligations to Contractors](lea-prac-eth-007)
-- [Conflict of Interest](lea-prac-eth-010)
-- [Scope of Practice](lea-prac-law-002)
-- [Signing and Sealing Prohibition](lea-prac-law-017)
+For client-duty questions, look for scope and fee clarity at engagement start, free preliminary services, questionable project advice, conditional cost estimates, public impact, professional fees, fixed-sum construction limits, outside returns, conflict disclosure, and arbitration. Supplier benefits are generally tested under Section 4-b, but they reinforce the Section 2 rule that compensation should come directly from the client.

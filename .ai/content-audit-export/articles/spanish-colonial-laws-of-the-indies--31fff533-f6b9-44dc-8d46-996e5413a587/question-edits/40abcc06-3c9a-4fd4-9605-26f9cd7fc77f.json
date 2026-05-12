@@ -1,0 +1,57 @@
+{
+  "question_id": "40abcc06-3c9a-4fd4-9605-26f9cd7fc77f",
+  "baseline_hash": "sha256:ad1c8a1570745d92751515ec63ee796db1b104dafbc65129be361de08171742e",
+  "action": "replace",
+  "reason": "source-audited-article-batch-049-local-first: local raw-source-backed replacement constrained to checked Batch 049 source families.",
+  "approved_by": "codex-local-first-batch-049",
+  "approved_at": "2026-05-11T20:35:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "31fff533-f6b9-44dc-8d46-996e5413a587",
+    "parent_article_slug": "spanish-colonial-laws-of-the-indies",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "HOA Module 4 P1 refined markdown lines 278-365 and 700-760",
+    "checked_markdown_lines": [
+      "HOA Module 4 P1 refined markdown lines 278-365",
+      "HOA Module 4 P1 refined markdown lines 700-760"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "hoa4p1-local-raw-pdf--b049-31fff533-01",
+        "label": "HOA Module 4 P1 - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/HOA MODULE 4 P1.pdf",
+        "sha256": "sha256:c89f7f79b3dd8272c7aa7d8848ea72c196d6c418f33105a32fb1ed2cfadbffb3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/HOA MODULE 4 P1.md",
+        "refined_markdown_sha256": "sha256:e515c8c5203118d4aeef0fe1f288c7deb76d75d3e3e1a779291712420c7df047",
+        "locator": "HOA Module 4 P1 refined markdown lines 278-365 and 700-760"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 049 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "What does reduccion mean in the checked Spanish colonial urbanism source?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The consolidation of formerly scattered barangays into larger compact communities for religious conversion and cultural change."
+      },
+      {
+        "id": "b",
+        "text": "The replacement of a plaza by a highway interchange."
+      },
+      {
+        "id": "c",
+        "text": "The isolation of all civic buildings outside the town center."
+      },
+      {
+        "id": "d",
+        "text": "The elimination of the cabecera and poblacion hierarchy."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The consolidation of formerly scattered barangays into larger compact communities for religious conversion and cultural change. HOA Module 4 P1 describes reduccion as compact resettlement of scattered barangays.",
+    "explanation": "The consolidation of formerly scattered barangays into larger compact communities for religious conversion and cultural change. HOA Module 4 P1 describes reduccion as compact resettlement of scattered barangays.",
+    "code_citation": "HOA Module 4 P1 refined markdown lines 278-365 and 700-760"
+  },
+  "batch_question_template_index": 1
+}

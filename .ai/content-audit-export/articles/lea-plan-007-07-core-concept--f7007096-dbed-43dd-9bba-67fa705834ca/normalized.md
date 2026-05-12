@@ -1,68 +1,23 @@
-
+# United Architects of the Philippines (UAP)
 
 ## Board Exam Quick Check
 
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+For UAP questions, anchor the answer to RA 9266 and its IRR. The source-safe identity is IAPOA: the Integrated and Accredited Professional Organization of Architects, identified in the RA 9266 IRR as the same as the United Architects of the Philippines, Inc.
 
-**Common mistake:** treating a familiar keyword in **Lea Plan 007 07 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
-
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
-## Learning Goal
-Identify professional organizations (UAP, PIEP, PICE) and their enabling laws (RA 9266, RA 10587, RA 544), distinguish architect from environmental planner scopes of practice, and apply ethical standards to professional practice scenarios.
+The RA 9266 IRR defines IAPOA as the integrated accredited professional organization of architects and identifies UAP as the United Architects of the Philippines, Inc. It also states that the architecture profession is integrated into one national organization accredited by the Board and approved by the Commission, and that UAP is the existing integrated and accredited professional organization of registered architects.
 
-Professional organizations and enabling legislation establish standards for architects, planners, and environmental planners in the Philippines. These organizations and laws create licensing frameworks, ethical standards, and professional credentials that govern practice.
+The UAP role should not be confused with the PRC or the Professional Regulatory Board of Architecture. The Board and Commission prescribe or adopt the Code of Ethical Conduct and Standards of Professional Practice and enforce RA 9266 and its IRR. UAP/IAPOA is the professional organization named in the IRR and in the SPP documents.
 
-## Core Concept
+The 2010 Standards of Professional Practice are part of the RA 9266 IRR framework. The SPP defines professional service documents and roles for registered and licensed architects, architectural firms, architectural design competitions, design-build, construction management, and professional consulting services.
 
-**United Architects of the Philippines (UAP)** is the principal professional organization for architects. Under **RA 9266** (Architecture Act of 2004), architects are licensed professionals required to pass the Architect's Licensure Examination. RA 9266 defines architecture practice, sets examination standards, and establishes ethical requirements. Architects may engage in site planning and design under RA 9266, though comprehensive urban and community planning is the specialized mandate of environmental planners under RA 10587.
+The UAP Code of Ethics frames professional conduct around public confidence, impartiality, client good faith, professional fees commensurate with services, and the public/community effects of architectural work. Keep ethics answers within the UAP Code of Ethics and RA 9266/SPP framework, especially when an item asks only about UAP.
 
-**Philippine Institute of Environmental Planners (PIEP)** represents environmental planners as a profession. **RA 10587** (Environmental Planning Act, 2013) creates the licensed profession of Environmental Planner (EnP). Unlike architecture, which is older and broader, environmental planning is a specialized licensed profession created more recently. Environmental Planners have the explicit mandate to prepare comprehensive land use plans under national law.
+## Exam Focus
 
-The distinction is important: While architects may practice planning under RA 9266, Environmental Planners have the legal mandate for comprehensive land use planning (CLUPs) and are regulated through RA 10587. Both professions contribute to urban and regional planning, but from different legal bases.
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-plan-007-07-core-concept", type="image", caption="Professional Planning Organizations — UAP, PIEP, PICE Scope Comparison", description="Comparison diagram of professional organizations: UAP (RA 9266, architects), PIEP (RA 10587, environmental planners), PICE (RA 544, civil engineers). Scopes of practice overlap, enabling laws, and ethical standards for professional practice in planning.", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-## Key Provisions
-
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
-Extracted summary:
-- Props: headers="{[\"Organization / Law\", \"Profession Governed\", \"Key Requirements\", \"Scope of Practice\"]}", rows=true, UAP=true, United=true, Architects=true, of=true, the=true, Philippines=true, IAPOA=true, Architecture=true, License=true, from=true
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-## Philippine Context
-
-UAP is the older, larger professional body—nearly all architects in the Philippines are UAP members. The organization maintains practice standards, continuing professional development requirements, and disciplinary procedures. PIEP is newer (RA 10587 was 2013) and represents the professionalization of planning as distinct from architecture. A professional may be both an architect and an environmental planner, or may specialize in one discipline.
-
-In practice, CLUPs are prepared by planning teams that may include architects (UAP), environmental planners (PIEP), engineers, social scientists, and other professionals. However, RA 10587 establishes that environmental planners have the statutory mandate for comprehensive planning.
-
-## How It's Tested
-
-1. **Law identification:** "Which law governs architect licensure?" → RA 9266. "Which law creates the environmental planner profession?" → RA 10587.
-2. **Organization role:** "Which organization represents architects?" → UAP. "Which organization represents environmental planners?" → PIEP.
-3. **Practice scope:** "Can an architect practice planning?" → Yes, under RA 9266. "Is planning a separate licensed profession?" → Yes, under RA 10587.
-
-[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Memory aid:** UAP + RA 9266 = architects (older profession, broader scope). PIEP + RA 10587 = environmental planners (newer profession, planning-specific mandate). Both can contribute to planning; EnPs have the statutory CLUP mandate.
-[/SLATECAMP_UI_BLOCK]
-
-**Exam Tip:** RA 9266 (Architecture Act of 2004) governs architects. RA 10587 (Environmental Planning Act of 2013) governs environmental planners. An architect CAN do site planning under RA 9266 but CANNOT claim the title 'environmental planner' without RA 10587 licensure.
-
-## Cross-References
-
-See **LEA-PLAN-007-06** (Key Figures) for professionals in practice, **LEA-PLAN-001-05** (CLUP Process) for Environmental Planner mandate, and **LEA-DSGN-007-04** (Design Process) for architect scope under RA 9266.
-
-## Common Mistakes
-
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\"Confusing RA 9266 (architects) with RA 10587 (environmental planners)—they are different professions with separate licenses\", \"Stating that only architects can practice planning—environmental planners have a separate professional track\", \"Forgetting that RA 10587 is recent (2013)—environmental planning as a licensed profession is newer than architecture\", \"Saying environmental planners are architects—EnPs are a distinct profession with their own exam and licensure\", \"Omitting PIEP as a professional body—PIEP is as significant as UAP, just newer and smaller\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+- UAP equals the existing IAPOA for architects under the RA 9266 IRR.
+- PRBoA/PRC regulate and enforce the law; UAP/IAPOA is the integrated professional organization.
+- SPP and Code of Ethical Conduct are adopted within the RA 9266/IRR professional-practice framework.
+- IAPOA numbers and professional identifiers matter on official architectural documents under the IRR.
+- Ethics questions should be answered from client good faith, impartiality, public welfare, and fee standards.

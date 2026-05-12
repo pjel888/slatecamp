@@ -1,0 +1,29 @@
+{
+  "question_id": "173e7e9f-7f2f-427b-90e3-c4a24a4495e2",
+  "baseline_hash": "sha256:44e09155dc5c4b63e61d5e952fd8640909d2b7dd11eea0bdcb1139d4ebff783c",
+  "reason": "Batch 006 local source audit aligned linked question ALE-PRAC-LAW-013-008 to verified raw-source claims for lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights.",
+  "approved_by": "codex-local-source-audit-batch-006",
+  "approved_at": "2026-05-10T22:30:00+08:00",
+  "proposed": {
+    "code_citation": "RA 9266 IRR Sections 3(27), 3(32), 20(4), and 33",
+    "explanation": "Source-audited against RA 9266 IRR Sections 3(27), 3(32), 20(4), and 33; the answer turns on retained copyright ownership, original-project use, and written consent for repetition or other projects.",
+    "options": [
+      {
+        "id": "a",
+        "text": "The architect loses all claims because payment alone waives ownership"
+      },
+      {
+        "id": "b",
+        "text": "The architect retains ownership unless a written stipulation provides otherwise; the missing Section 33 notice is a contract-compliance problem, not automatic transfer"
+      },
+      {
+        "id": "c",
+        "text": "Copyright automatically transfers to the client who paid for the work"
+      },
+      {
+        "id": "d",
+        "text": "Both architect and client automatically become equal co-owners"
+      }
+    ]
+  }
+}

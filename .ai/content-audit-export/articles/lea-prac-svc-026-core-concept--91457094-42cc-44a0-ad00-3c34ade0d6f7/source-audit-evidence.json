@@ -1,0 +1,339 @@
+{
+  "batch_id": "source-audited-article-batch-025-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T18:30:00.000+08:00",
+  "article_id": "91457094-42cc-44a0-ad00-3c34ade0d6f7",
+  "slug": "lea-prac-svc-026-core-concept",
+  "title": "Site Development Planning (SDP)",
+  "status": "local_pass_ready_for_final_publishing_review",
+  "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-026-core-concept--91457094-42cc-44a0-ad00-3c34ade0d6f7",
+  "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-026-core-concept--91457094-42cc-44a0-ad00-3c34ade0d6f7",
+  "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-svc-026-core-concept--91457094-42cc-44a0-ad00-3c34ade0d6f7/question-edits",
+  "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-026-core-concept--91457094-42cc-44a0-ad00-3c34ade0d6f7/question-edits",
+  "linked_questions": 10,
+  "question_edits_created": 10,
+  "source_safe_rewrite_question_edits": 10,
+  "classification": {
+    "content_domain": "professional_practice",
+    "requires_raw_pdf_audit": true,
+    "legal_or_code_source": true
+  },
+  "target": {
+    "article_id": "91457094-42cc-44a0-ad00-3c34ade0d6f7",
+    "slug": "lea-prac-svc-026-core-concept",
+    "normalized_sha256": "sha256:8fce557f6b3f145b2e0ad6a8f461a6e608551bb7c589b795e20b2f96a85e5307",
+    "candidate_sha256": "sha256:8fce557f6b3f145b2e0ad6a8f461a6e608551bb7c589b795e20b2f96a85e5307"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_only": true,
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "source_audit": {
+    "checked_sources": [
+      {
+        "source_id": "uap-standards-local-lea-prac-svc-026-core-concept",
+        "label": "UAP Document Standards of Professional Practice - Site Development Planning (SDP)",
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "source_type": "professional_practice_pdf",
+        "source_locator": "UAP Standards lines 691-716; UAP Standards lines 1138-1152",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "checked_markdown_lines": [
+          "UAP Standards lines 691-716",
+          "UAP Standards lines 1138-1152"
+        ],
+        "use": "Local UAP standards source checked for Site Development Planning scope, specialist consultant boundaries, bidding assistance, and compensation notes.",
+        "local_source_checked": true
+      },
+      {
+        "source_id": "spp203-specialized-allied-services-local",
+        "label": "SPP 203 - Specialized Allied Services",
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "source_type": "professional_practice_pdf",
+        "source_locator": "SPP 203 lines 101-111",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+        "raw_pdf_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+        "refined_markdown_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+        "checked_markdown_lines": [
+          "SPP 203 lines 101-111"
+        ],
+        "use": "Local SPP 203 raw PDF and refined markdown checked as the article-specific source listing Site Development Planning under specialized allied services.",
+        "local_source_checked": true
+      }
+    ],
+    "source_locator": "UAP Standards lines 691-716, 1138-1152; SPP 203 refined markdown lines 101-111",
+    "checked_markdown_lines": [
+      "UAP Standards lines 691-716",
+      "UAP Standards lines 1138-1152",
+      "SPP 203 lines 101-111"
+    ]
+  },
+  "article_repair": {
+    "normalized_md_rewritten": true,
+    "candidate_md_pending_compose": false,
+    "placeholders_removed": true,
+    "internal_notes_removed": true,
+    "source_gap_notes_removed": true,
+    "unsupported_claims_rewritten_or_removed": true,
+    "candidate_md_composed": true,
+    "diff_report_generated": true
+  },
+  "claims": [
+    {
+      "claim_id": "batch-025-lea-prac-svc-026-core-concept-question-001",
+      "claim_text": "Question 73bd0b6e-94b9-4d9d-8294-4535d864f2ec / model BATCH-025-lea-prac-svc-026-core-concept-001 rewritten to local source-safe form.",
+      "question_id": "73bd0b6e-94b9-4d9d-8294-4535d864f2ec",
+      "model_id": "BATCH-025-lea-prac-svc-026-core-concept-001",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-local-lea-prac-svc-026-core-concept",
+        "spp203-specialized-allied-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards lines 691-716, 1138-1152; SPP 203 refined markdown lines 101-111",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-025-lea-prac-svc-026-core-concept-question-002",
+      "claim_text": "Question 7873bcdc-ff83-499b-b934-7dabf40d206a / model BATCH-025-lea-prac-svc-026-core-concept-002 rewritten to local source-safe form.",
+      "question_id": "7873bcdc-ff83-499b-b934-7dabf40d206a",
+      "model_id": "BATCH-025-lea-prac-svc-026-core-concept-002",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-local-lea-prac-svc-026-core-concept",
+        "spp203-specialized-allied-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards lines 691-716, 1138-1152; SPP 203 refined markdown lines 101-111",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-025-lea-prac-svc-026-core-concept-question-003",
+      "claim_text": "Question 4a984cc9-dd1e-41ce-bc1d-516f6e945389 / model BATCH-025-lea-prac-svc-026-core-concept-003 rewritten to local source-safe form.",
+      "question_id": "4a984cc9-dd1e-41ce-bc1d-516f6e945389",
+      "model_id": "BATCH-025-lea-prac-svc-026-core-concept-003",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-local-lea-prac-svc-026-core-concept",
+        "spp203-specialized-allied-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards lines 691-716, 1138-1152; SPP 203 refined markdown lines 101-111",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-025-lea-prac-svc-026-core-concept-question-004",
+      "claim_text": "Question 078289cd-2f90-4419-b541-f9173199efc4 / model BATCH-025-lea-prac-svc-026-core-concept-004 rewritten to local source-safe form.",
+      "question_id": "078289cd-2f90-4419-b541-f9173199efc4",
+      "model_id": "BATCH-025-lea-prac-svc-026-core-concept-004",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-local-lea-prac-svc-026-core-concept",
+        "spp203-specialized-allied-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards lines 691-716, 1138-1152; SPP 203 refined markdown lines 101-111",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-025-lea-prac-svc-026-core-concept-question-005",
+      "claim_text": "Question c0fca0ce-4250-43a5-b5b9-a997ff438b85 / model BATCH-025-lea-prac-svc-026-core-concept-005 rewritten to local source-safe form.",
+      "question_id": "c0fca0ce-4250-43a5-b5b9-a997ff438b85",
+      "model_id": "BATCH-025-lea-prac-svc-026-core-concept-005",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-local-lea-prac-svc-026-core-concept",
+        "spp203-specialized-allied-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards lines 691-716, 1138-1152; SPP 203 refined markdown lines 101-111",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-025-lea-prac-svc-026-core-concept-question-006",
+      "claim_text": "Question 2af8ab33-3dd0-472a-95a7-6c3d49ea0fe0 / model BATCH-025-lea-prac-svc-026-core-concept-006 rewritten to local source-safe form.",
+      "question_id": "2af8ab33-3dd0-472a-95a7-6c3d49ea0fe0",
+      "model_id": "BATCH-025-lea-prac-svc-026-core-concept-006",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-local-lea-prac-svc-026-core-concept",
+        "spp203-specialized-allied-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards lines 691-716, 1138-1152; SPP 203 refined markdown lines 101-111",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-025-lea-prac-svc-026-core-concept-question-007",
+      "claim_text": "Question 9e051673-b13e-4e46-9347-8f9f46277866 / model BATCH-025-lea-prac-svc-026-core-concept-007 rewritten to local source-safe form.",
+      "question_id": "9e051673-b13e-4e46-9347-8f9f46277866",
+      "model_id": "BATCH-025-lea-prac-svc-026-core-concept-007",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-local-lea-prac-svc-026-core-concept",
+        "spp203-specialized-allied-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards lines 691-716, 1138-1152; SPP 203 refined markdown lines 101-111",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-025-lea-prac-svc-026-core-concept-question-008",
+      "claim_text": "Question b8250a57-8c92-4754-a429-64c4628d0b5c / model BATCH-025-lea-prac-svc-026-core-concept-008 rewritten to local source-safe form.",
+      "question_id": "b8250a57-8c92-4754-a429-64c4628d0b5c",
+      "model_id": "BATCH-025-lea-prac-svc-026-core-concept-008",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-local-lea-prac-svc-026-core-concept",
+        "spp203-specialized-allied-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards lines 691-716, 1138-1152; SPP 203 refined markdown lines 101-111",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-025-lea-prac-svc-026-core-concept-question-009",
+      "claim_text": "Question 731a7a60-fd34-4707-9a3e-72572752c5ed / model BATCH-025-lea-prac-svc-026-core-concept-009 rewritten to local source-safe form.",
+      "question_id": "731a7a60-fd34-4707-9a3e-72572752c5ed",
+      "model_id": "BATCH-025-lea-prac-svc-026-core-concept-009",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-local-lea-prac-svc-026-core-concept",
+        "spp203-specialized-allied-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards lines 691-716, 1138-1152; SPP 203 refined markdown lines 101-111",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-025-lea-prac-svc-026-core-concept-question-010",
+      "claim_text": "Question 241ddc8c-c915-4d4b-9e75-35388a925489 / model BATCH-025-lea-prac-svc-026-core-concept-010 rewritten to local source-safe form.",
+      "question_id": "241ddc8c-c915-4d4b-9e75-35388a925489",
+      "model_id": "BATCH-025-lea-prac-svc-026-core-concept-010",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-local-lea-prac-svc-026-core-concept",
+        "spp203-specialized-allied-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards lines 691-716, 1138-1152; SPP 203 refined markdown lines 101-111",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    }
+  ],
+  "question_edits": [
+    {
+      "question_id": "73bd0b6e-94b9-4d9d-8294-4535d864f2ec",
+      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-026-core-concept--91457094-42cc-44a0-ad00-3c34ade0d6f7/question-edits/73bd0b6e-94b9-4d9d-8294-4535d864f2ec.json",
+      "support_status": "PASS"
+    },
+    {
+      "question_id": "7873bcdc-ff83-499b-b934-7dabf40d206a",
+      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-026-core-concept--91457094-42cc-44a0-ad00-3c34ade0d6f7/question-edits/7873bcdc-ff83-499b-b934-7dabf40d206a.json",
+      "support_status": "PASS"
+    },
+    {
+      "question_id": "4a984cc9-dd1e-41ce-bc1d-516f6e945389",
+      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-026-core-concept--91457094-42cc-44a0-ad00-3c34ade0d6f7/question-edits/4a984cc9-dd1e-41ce-bc1d-516f6e945389.json",
+      "support_status": "PASS"
+    },
+    {
+      "question_id": "078289cd-2f90-4419-b541-f9173199efc4",
+      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-026-core-concept--91457094-42cc-44a0-ad00-3c34ade0d6f7/question-edits/078289cd-2f90-4419-b541-f9173199efc4.json",
+      "support_status": "PASS"
+    },
+    {
+      "question_id": "c0fca0ce-4250-43a5-b5b9-a997ff438b85",
+      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-026-core-concept--91457094-42cc-44a0-ad00-3c34ade0d6f7/question-edits/c0fca0ce-4250-43a5-b5b9-a997ff438b85.json",
+      "support_status": "PASS"
+    },
+    {
+      "question_id": "2af8ab33-3dd0-472a-95a7-6c3d49ea0fe0",
+      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-026-core-concept--91457094-42cc-44a0-ad00-3c34ade0d6f7/question-edits/2af8ab33-3dd0-472a-95a7-6c3d49ea0fe0.json",
+      "support_status": "PASS"
+    },
+    {
+      "question_id": "9e051673-b13e-4e46-9347-8f9f46277866",
+      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-026-core-concept--91457094-42cc-44a0-ad00-3c34ade0d6f7/question-edits/9e051673-b13e-4e46-9347-8f9f46277866.json",
+      "support_status": "PASS"
+    },
+    {
+      "question_id": "b8250a57-8c92-4754-a429-64c4628d0b5c",
+      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-026-core-concept--91457094-42cc-44a0-ad00-3c34ade0d6f7/question-edits/b8250a57-8c92-4754-a429-64c4628d0b5c.json",
+      "support_status": "PASS"
+    },
+    {
+      "question_id": "731a7a60-fd34-4707-9a3e-72572752c5ed",
+      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-026-core-concept--91457094-42cc-44a0-ad00-3c34ade0d6f7/question-edits/731a7a60-fd34-4707-9a3e-72572752c5ed.json",
+      "support_status": "PASS"
+    },
+    {
+      "question_id": "241ddc8c-c915-4d4b-9e75-35388a925489",
+      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-026-core-concept--91457094-42cc-44a0-ad00-3c34ade0d6f7/question-edits/241ddc8c-c915-4d4b-9e75-35388a925489.json",
+      "support_status": "PASS"
+    }
+  ]
+}

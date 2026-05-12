@@ -1,0 +1,32 @@
+{
+  "question_id": "b1ab6227-5854-444a-8e67-51ed411c3884",
+  "baseline_hash": "sha256:203b4c7f2bd32ce0c7fbd443cd6bb0ee27daeee67c5850bc87d09090a9b99b9b",
+  "reason": "Batch 003 source audit removed unsupported penalty ranges, restitution amounts, dollar values, and scenario statistics; questions now use RA 9266 IRR and UAP Code of Ethics conduct categories.",
+  "approved_by": "codex-local-source-audit-batch-003",
+  "approved_at": "2026-05-10T18:00:00+08:00",
+  "proposed": {
+    "text": "During construction administration, an architect identifies a life-safety nonconformance but fails to take the required professional action. Which source-backed category is implicated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No issue because the architect noticed it"
+      },
+      {
+        "id": "b",
+        "text": "A mandatory fixed fine only"
+      },
+      {
+        "id": "c",
+        "text": "Neglect of duty, gross negligence, incompetence, or unprofessional conduct depending the facts"
+      },
+      {
+        "id": "d",
+        "text": "A supplier-commission violation"
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": "RA 9266 IRR includes neglect of duty, gross negligence, incompetence, and unprofessional conduct in the disciplinary frame.",
+    "explanation": "The edit removes unsupported PRBoA outcome wording.",
+    "code_citation": "RA 9266 IRR grounds for discipline"
+  }
+}

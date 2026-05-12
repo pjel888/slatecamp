@@ -1,0 +1,166 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-050-local-first",
+  "batch_number": 50,
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T21:35:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "162054b5-5f86-4a99-ab8b-f7991bbab899",
+    "slug": "modern-filipino-identity",
+    "title": "Modern Filipino Identity",
+    "article_folder": ".ai/content-audit-export/articles/modern-filipino-identity--162054b5-5f86-4a99-ab8b-f7991bbab899",
+    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/modern-filipino-identity--162054b5-5f86-4a99-ab8b-f7991bbab899",
+    "candidate_path": ".ai/content-audit-export/articles/modern-filipino-identity--162054b5-5f86-4a99-ab8b-f7991bbab899/candidate.md",
+    "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/modern-filipino-identity--162054b5-5f86-4a99-ab8b-f7991bbab899/candidate.md",
+    "question_edits_folder": ".ai/content-audit-export/articles/modern-filipino-identity--162054b5-5f86-4a99-ab8b-f7991bbab899/question-edits",
+    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/modern-filipino-identity--162054b5-5f86-4a99-ab8b-f7991bbab899/question-edits",
+    "normalized_sha256": "sha256:6062d7285cfc3cc4e5cea045e379314d2b9c92b516cce70ec8a1ad0b09526fa0",
+    "candidate_sha256": "sha256:6062d7285cfc3cc4e5cea045e379314d2b9c92b516cce70ec8a1ad0b09526fa0",
+    "linked_questions_sha256": "sha256:a015701439b11b532a9471ea398f6b75e5b51391e9a9f0bd2cdfcc4443a6b576",
+    "sources_sha256": "sha256:2d8adbd20587797780881d796e9090ddf1009a6d298f81bc80f748d463255980"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "refined_markdown_role": "locator_only",
+    "derivative_or_search_layer_as_primary": false,
+    "source_families_checked": [
+      {
+        "label": "Filipino Architecture - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Filipino Architecture.pdf",
+        "raw_pdf_sha256": "sha256:3d6f220218c46fe78e37d152d1c51504fd3c7d413cf14e71b39e93c7e1a5831d",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Filipino Architecture.md",
+        "refined_markdown_sha256": "sha256:f60dacc37e4b6634875ed68c18a55288e455476697fc250905460bbe6ac25ce1",
+        "locator": "Filipino Architecture refined markdown lines 40-118, 160-178, 680-700, 830-887, 905-917, and 1037-1039"
+      },
+      {
+        "label": "Module - Architectural History - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Module - Architectural History.pdf",
+        "raw_pdf_sha256": "sha256:d88ccdfaad42e15b3a9f844539aba0b0d614b165d4ef33f082537d72ba13531d",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Module - Architectural History.md",
+        "refined_markdown_sha256": "sha256:d3fc240b16da21c71b8467f6c3bf8599cd422b4c8055e2e9647f0aa2b2e042a1",
+        "locator": "Module - Architectural History refined markdown lines 4863-4915, 4913-4945, 5038-5045, and 5377-5395"
+      },
+      {
+        "label": "HOA Module 4 P1 - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/HOA MODULE 4 P1.pdf",
+        "raw_pdf_sha256": "sha256:c89f7f79b3dd8272c7aa7d8848ea72c196d6c418f33105a32fb1ed2cfadbffb3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/HOA MODULE 4 P1.md",
+        "refined_markdown_sha256": "sha256:e515c8c5203118d4aeef0fe1f288c7deb76d75d3e3e1a779291712420c7df047",
+        "locator": "HOA Module 4 P1 refined markdown lines 1-235, 278-365, and 681-760"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "modern_filipino_identity_article",
+    "contains_legal_or_code_claims": false,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 31,
+    "question_edits_created": [
+      "4e3dbe80-a8b4-4f8b-8a5c-0a5b22589476",
+      "bafb5497-efcb-4dc0-96b7-205f1248b79c",
+      "d5ffc0ae-f004-4474-9e47-bc61af6dd07c",
+      "21868d7a-9f76-4988-a422-0768e1808886",
+      "86d8aab1-cd00-4f17-bbc1-b93a4ea5ed1e",
+      "2dbadbd5-f730-4c73-94f8-0bd41c1df5c1",
+      "134463e7-49ee-4c13-b536-2a77185acd11",
+      "08b8cf43-705c-4c92-9e52-0cfe4bcbd48d",
+      "85de45cb-991b-4d86-8972-ab19b0f00ccd",
+      "9872e0f4-7d78-4564-b742-5c27c2f82716",
+      "10f7c28f-1dc8-4fc0-b624-e6ebea4b8b3a",
+      "8feb8b8c-362a-475c-98dd-9028395dd801",
+      "81a6eb20-15c2-4cfd-a8ac-a0151c79405a",
+      "de4f480c-4a65-4af1-83cc-f198bd4cb800",
+      "c6e95243-0066-4ce6-a367-4551affcc339",
+      "fc893594-b737-42b8-8f7f-edcef08e91ce",
+      "5a3b83d2-2177-400f-906b-513ff932eb5e",
+      "be07ef0d-8a1f-4228-9136-2f803f511b8a",
+      "a711e2ed-d9cd-4eb9-8610-f8e1d839a9f4",
+      "35e6b24a-f753-49a1-8bf9-728f33a7e234",
+      "18efe155-c205-40a5-88d3-e39dc379e102",
+      "173c7547-ec52-4bfe-b850-d25fde6ff3df",
+      "3df1b862-38e2-46fb-8d1d-e3020f953cff",
+      "f0219965-396b-4b5f-a287-f82e31d4a0ca",
+      "7137be6c-78f3-4f95-b2fb-bd7b78f7e7db",
+      "5e723f73-cd95-4137-b480-aec3f3a65714",
+      "44f50c87-5072-43b6-b95e-5c757a8e1bf4",
+      "aa8cf0fa-b7b8-4866-89ab-d0c338ae7858",
+      "5222f32e-b726-4ed9-ad0c-e04bb9948833",
+      "dab2727e-cf4a-4423-83e0-6bb63b387df5",
+      "5acb00d7-ef56-4db4-ad92-db1c526b3a2a"
+    ]
+  },
+  "claims": [
+    {
+      "claim_id": "modern-filipino-identity-b050-claim-01",
+      "claim_text": "Modern Filipino identity is grounded in climate-responsive dwelling, hybrid colonial forms, professional institutions, and twentieth-century architects.",
+      "source_support": [
+        "fil-local-raw-pdf--b050-162054b5-01",
+        "mod-local-raw-pdf--b050-162054b5-02",
+        "hoa-local-raw-pdf--b050-162054b5-03"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "modern-filipino-identity-b050-claim-02",
+      "claim_text": "The Filipino Architecture source characterizes Philippine architecture as tropical, open, transparent, and light.",
+      "source_support": [
+        "fil-local-raw-pdf--b050-162054b5-01",
+        "mod-local-raw-pdf--b050-162054b5-02",
+        "hoa-local-raw-pdf--b050-162054b5-03"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "modern-filipino-identity-b050-claim-03",
+      "claim_text": "Bahay na Bato is connected to Bahay Kubo traits and to hybrid indigenous-Hispanic construction.",
+      "source_support": [
+        "fil-local-raw-pdf--b050-162054b5-01",
+        "mod-local-raw-pdf--b050-162054b5-02",
+        "hoa-local-raw-pdf--b050-162054b5-03"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "modern-filipino-identity-b050-claim-04",
+      "claim_text": "Local history sources identify Juan Nakpil, Pablo Antonio, and Leandro Locsin as National Artist anchors.",
+      "source_support": [
+        "fil-local-raw-pdf--b050-162054b5-01",
+        "mod-local-raw-pdf--b050-162054b5-02",
+        "hoa-local-raw-pdf--b050-162054b5-03"
+      ],
+      "audit_result": "PASS"
+    }
+  ],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "removed_risk_notes": [
+      "Question sidecars replaced with checked local raw-source citations.",
+      "Article body rewritten from local raw PDF families and refined markdown locators only.",
+      "Legacy compose-error sidecars are removed after selected bundle compose passes."
+    ]
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_batch_050_complete": true,
+    "remote_publish_status": "not_attempted_by_request",
+    "remaining_local_blockers": []
+  },
+  "local_validation": {
+    "status": "PASS",
+    "valid": true,
+    "blockers": 0,
+    "checked_at": "2026-05-11T21:35:00.000+08:00",
+    "commands": [
+      "bun run content-audit:compose -- --article-id 162054b5-5f86-4a99-ab8b-f7991bbab899 --overwrite --strict",
+      "bun run content-audit:diff -- --article-id 162054b5-5f86-4a99-ab8b-f7991bbab899 --strict --summary",
+      "bun run content-audit:validate -- --article-id 162054b5-5f86-4a99-ab8b-f7991bbab899 --summary",
+      "bun run content-audit:ui-block-edits -- --article-id 162054b5-5f86-4a99-ab8b-f7991bbab899"
+    ]
+  }
+}

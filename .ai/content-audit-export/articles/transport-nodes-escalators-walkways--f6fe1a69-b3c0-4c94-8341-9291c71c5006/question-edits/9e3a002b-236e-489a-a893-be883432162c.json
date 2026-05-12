@@ -1,0 +1,63 @@
+{
+  "question_id": "9e3a002b-236e-489a-a893-be883432162c",
+  "baseline_hash": "sha256:10380b7eee7f231dfff360a0d1520a9152d090af4111d10fa68091c632ba2cdd",
+  "action": "replace",
+  "reason": "source-audited-article-batch-023-local-first rewrote the item to match locally checked BP 344 and PD 1096 source evidence.",
+  "approved_by": "codex-local-source-audit-batch-023",
+  "approved_at": "2026-05-10T18:16:14.069Z",
+  "source_audit_support": {
+    "parent_article_id": "f6fe1a69-b3c0-4c94-8341-9291c71c5006",
+    "parent_article_slug": "transport-nodes-escalators-walkways",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "checked_sources": [
+      {
+        "source_id": "bp344-2024-revised-irr-accessibility-local",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+        "source_locator": "BP 344 2024 IRR refined markdown lines 40-70, 230-305, 450-463, 539-541, 621-704, 772-792, 992-1003, 1062-1088, 1580-1613, and 1649"
+      }
+    ],
+    "local_source_safe_action": "Replaced the prior item with a source-bounded MCQ using only checked local raw-source locators."
+  },
+  "proposed": {
+    "text": "Can an escalator be counted as the accessible route under BP 344?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No, the accessible route must be free of escalators"
+      },
+      {
+        "id": "b",
+        "text": "Yes, if it has tactile warnings"
+      },
+      {
+        "id": "c",
+        "text": "Yes, if the escalator is at least S800-type"
+      },
+      {
+        "id": "d",
+        "text": "Only when it is next to a stair"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "BP 344 excludes escalators from the accessible route; elevators, ramps, lifts, and clear floor spaces carry the accessible-route function.",
+    "explanation": "BP 344 excludes escalators from the accessible route; elevators, ramps, lifts, and clear floor spaces carry the accessible-route function.",
+    "code_citation": "BP 344 2024 IRR, accessible route definition",
+    "bloom_level": "analyze",
+    "application_context": "lea_code_and_accessibility_review",
+    "practice_context": [
+      "Transport Nodes, Escalators, and Walkways",
+      "LEA Accessibility and Transport Design"
+    ],
+    "difficulty": 0.5,
+    "is_assessment": false,
+    "model_id": "BATCH-023-transport-nodes-escalators-walkways-011"
+  }
+}

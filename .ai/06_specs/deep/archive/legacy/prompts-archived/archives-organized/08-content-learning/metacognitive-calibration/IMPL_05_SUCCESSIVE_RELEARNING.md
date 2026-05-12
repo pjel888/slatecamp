@@ -1,7 +1,7 @@
 # IMPL_05: Successive Relearning Mode
 
-**Priority:** P2  
-**Effort:** ~3 days  
+**Priority:** P2
+**Effort:** ~3 days
 **Research basis:** Successive relearning (retrieval to criterion + spaced re-test) is the gold standard protocol for durable learning in cognitive psychology.
 
 ---

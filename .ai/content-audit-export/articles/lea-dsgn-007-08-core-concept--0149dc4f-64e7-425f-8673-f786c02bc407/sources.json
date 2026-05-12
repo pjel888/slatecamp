@@ -1,20 +1,32 @@
 {
   "article_id": "0149dc4f-64e7-425f-8673-f786c02bc407",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:80c4d1494fb59ddce1f9f82df472573c7620b779cafaa4f2f5f30aa05950fc0e",
-  "source_count": 1,
+  "sources_hash": "sha256:a4490b84d20274febfd8db6f836dbef92d31a820ae9f7607c1166df3d7e84167",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "cdbcb59b-7d44-4aa3-bc7e-ed9fe1ee8a99",
+      "source_id": "building-structures-illustrated-b072",
       "article_id": "0149dc4f-64e7-425f-8673-f786c02bc407",
-      "label": "National Building Code of the Philippines (NBC), Chapter 2 Building Planning; ASEP Guidelines for Mid-Rise Residential Buildings; PCA (Philippine Contractors Association) Construction Standards",
+      "label": "Building Structures Illustrated 2nd Edition",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "professional_reference_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-072-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf; raw_pdf_sha256=sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md; refined_markdown_sha256=sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491; checked_locator=Building Structures Illustrated refined markdown lines 84-117, 499-511, 696-714, 770-801, 855-864, and 1016-1045; raw PDF pages 9, 12, 15, 32, 46, 48, and 54-58 checked by local PyMuPDF extraction",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:33:58.214974+00:00",
-      "updated_at": "2026-03-24T04:33:58.214974+00:00"
+      "created_at": "2026-05-12T01:24:18+08:00",
+      "updated_at": "2026-05-12T01:24:18+08:00"
+    },
+    {
+      "source_id": "pd1096-rirr-2004-b072",
+      "article_id": "0149dc4f-64e7-425f-8673-f786c02bc407",
+      "label": "PD 1096 2004 Revised IRR - National Building Code",
+      "url": null,
+      "source_type": "primary_law_irr_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-072-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf; raw_pdf_sha256=sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md; refined_markdown_sha256=sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7; checked_locator=PD 1096 refined markdown lines 548-570, 2085-2089, and 2352-2412; raw PDF pages 19, 24, 33, 88, 93, 108, 192, 204, and 352 checked by local PyMuPDF extraction",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-12T01:24:18+08:00",
+      "updated_at": "2026-05-12T01:24:18+08:00"
     }
   ]
 }

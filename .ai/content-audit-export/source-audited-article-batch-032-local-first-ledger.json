@@ -1,0 +1,217 @@
+{
+  "batch_id": "source-audited-article-batch-032-local-first",
+  "generated_at": "2026-05-11T09:19:39+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "local_first_only": true,
+  "constraints": {
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false
+  },
+  "selection": {
+    "batch_number": 32,
+    "selected_article_ids": [
+      "571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+      "ee1f8beb-e236-4831-a0a8-1ddce447a3b8"
+    ],
+    "selection_rule": "five high-value LEA accessibility/code clusters with linked questions and local BP 344/PD 1096 raw PDFs, excluding IDs recorded in source-audited Batch 001 through Batch 031 artifacts",
+    "prior_batch_exclusion_check": "PASS"
+  },
+  "counts": {
+    "selected_articles": 5,
+    "locally_passed_articles": 5,
+    "linked_questions": 55,
+    "source_safe_question_edits_created": 55,
+    "source_rows": 6,
+    "unique_raw_pdf_files_checked": 2,
+    "remaining_local_blockers": 0
+  },
+  "exact_paths": [
+    {
+      "index": 1,
+      "article_id": "571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "slug": "accessible-seating-in-assembly-areas",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2/question-edits"
+    },
+    {
+      "index": 2,
+      "article_id": "6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "slug": "bp-344-accessible-washrooms",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b/question-edits"
+    },
+    {
+      "index": 3,
+      "article_id": "5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "slug": "bp-344-elevator-dimensions",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6/question-edits"
+    },
+    {
+      "index": 4,
+      "article_id": "5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+      "slug": "bp-344-tactile-and-visual-alarms",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478/question-edits"
+    },
+    {
+      "index": 5,
+      "article_id": "ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
+      "slug": "bp-344-vs-pd-1096-conflicts",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/bp-344-vs-pd-1096-conflicts--ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/bp-344-vs-pd-1096-conflicts--ee1f8beb-e236-4831-a0a8-1ddce447a3b8/question-edits"
+    }
+  ],
+  "raw_sources_checked": [
+    {
+      "source_id": "bp-344-2024-revised-irr-ncda-local",
+      "label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "expected_raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "expected_refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "checked_locators": "BP 344 2024 Revised IRR refined markdown lines 317-356, 362-511, 891-951, 990-1037, 1193-1211, 1235-1255, 1446-1458, 1501-1508, 1529-1545",
+      "status": "PASS"
+    },
+    {
+      "source_id": "pd-1096-2004-revised-irr-dpwh-official-local",
+      "label": "PD 1096 2004 Revised IRR - DPWH Official",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "expected_raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "expected_refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "checked_locators": "PD 1096 2004 Revised IRR refined markdown lines 75-81, 110-118, 142, 179-184, 488-507, 589-599, 625-626",
+      "status": "PASS"
+    }
+  ],
+  "validation": {
+    "compose": "PASS for 5/5: bun run content-audit:compose -- --article-id <Batch 032 id> --overwrite --strict; changed candidates; blockers=0",
+    "diff": "PASS for 5/5: bun run content-audit:diff -- --article-id <Batch 032 id> --summary --strict; changed=true; safe_to_push=true; blockers=0",
+    "validate": "PASS for 5/5: bun run content-audit:validate -- --article-id <Batch 032 id> --summary; valid=true; blockers=0; expected component-usage.json warnings only",
+    "targeted_tests": "PASS: bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts; 34 pass, 0 fail, 328 expects",
+    "scoped_checks": "PASS",
+    "post_artifact_check": "PASS"
+  },
+  "artifacts": {
+    "ledger": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-032-local-first-ledger.json",
+    "report": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-032-local-first-report.md",
+    "scoped_checks": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-032-local-first-scoped-checks.json",
+    "handoff": "/Users/philiplewis/slatecamp/.ai/03_plans/source-audited-local-first-batches-handoff.md"
+  },
+  "blockers": [],
+  "articles": [
+    {
+      "article_id": "571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "slug": "accessible-seating-in-assembly-areas",
+      "title": "Accessible Seating in Assembly Areas",
+      "folder": ".ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "absolute_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "question_edits_folder": ".ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2/question-edits",
+      "json_files_checked": 21,
+      "linked_questions": 11,
+      "question_edits": 11,
+      "source_rows": 1,
+      "candidate_hash": "sha256:2b500f685a6aa97b740eecb5beb6a65f237663c4c227eaa15b9761658ec0818f",
+      "normalized_hash": "sha256:2b500f685a6aa97b740eecb5beb6a65f237663c4c227eaa15b9761658ec0818f",
+      "placeholder_matches": [],
+      "compose_blockers": [],
+      "diff_blockers": [],
+      "raw_pdf_gate": "PASS",
+      "blockers": []
+    },
+    {
+      "article_id": "6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "slug": "bp-344-accessible-washrooms",
+      "title": "BP 344 Accessible Washrooms",
+      "folder": ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "absolute_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "question_edits_folder": ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b/question-edits",
+      "json_files_checked": 21,
+      "linked_questions": 11,
+      "question_edits": 11,
+      "source_rows": 1,
+      "candidate_hash": "sha256:4bf52409caa38980ee0e66bf053d708766cc00cc9c3ff5eca92eaf0420feeec2",
+      "normalized_hash": "sha256:4bf52409caa38980ee0e66bf053d708766cc00cc9c3ff5eca92eaf0420feeec2",
+      "placeholder_matches": [],
+      "compose_blockers": [],
+      "diff_blockers": [],
+      "raw_pdf_gate": "PASS",
+      "blockers": []
+    },
+    {
+      "article_id": "5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "slug": "bp-344-elevator-dimensions",
+      "title": "BP 344 Elevator Dimensions",
+      "folder": ".ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "absolute_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "question_edits_folder": ".ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6/question-edits",
+      "json_files_checked": 21,
+      "linked_questions": 11,
+      "question_edits": 11,
+      "source_rows": 1,
+      "candidate_hash": "sha256:933c518175ae8a9e46477a1a18cb43b37d2b45eba71d4e4fb98028561068faa6",
+      "normalized_hash": "sha256:933c518175ae8a9e46477a1a18cb43b37d2b45eba71d4e4fb98028561068faa6",
+      "placeholder_matches": [],
+      "compose_blockers": [],
+      "diff_blockers": [],
+      "raw_pdf_gate": "PASS",
+      "blockers": []
+    },
+    {
+      "article_id": "5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+      "slug": "bp-344-tactile-and-visual-alarms",
+      "title": "BP 344 Tactile and Visual Alarms",
+      "folder": ".ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+      "absolute_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+      "question_edits_folder": ".ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478/question-edits",
+      "json_files_checked": 21,
+      "linked_questions": 11,
+      "question_edits": 11,
+      "source_rows": 1,
+      "candidate_hash": "sha256:b3142f12568a148022a37d7ec0efae35764c285346e2ec0b38e1225163d00926",
+      "normalized_hash": "sha256:b3142f12568a148022a37d7ec0efae35764c285346e2ec0b38e1225163d00926",
+      "placeholder_matches": [],
+      "compose_blockers": [],
+      "diff_blockers": [],
+      "raw_pdf_gate": "PASS",
+      "blockers": []
+    },
+    {
+      "article_id": "ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
+      "slug": "bp-344-vs-pd-1096-conflicts",
+      "title": "BP 344 vs PD 1096 Conflicts",
+      "folder": ".ai/content-audit-export/articles/bp-344-vs-pd-1096-conflicts--ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
+      "absolute_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/bp-344-vs-pd-1096-conflicts--ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
+      "question_edits_folder": ".ai/content-audit-export/articles/bp-344-vs-pd-1096-conflicts--ee1f8beb-e236-4831-a0a8-1ddce447a3b8/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/bp-344-vs-pd-1096-conflicts--ee1f8beb-e236-4831-a0a8-1ddce447a3b8/question-edits",
+      "json_files_checked": 21,
+      "linked_questions": 11,
+      "question_edits": 11,
+      "source_rows": 2,
+      "candidate_hash": "sha256:4db69f17a048e96588eaaf3c915355ab5736b87cde00749b74df8204a8386f09",
+      "normalized_hash": "sha256:4db69f17a048e96588eaaf3c915355ab5736b87cde00749b74df8204a8386f09",
+      "placeholder_matches": [],
+      "compose_blockers": [],
+      "diff_blockers": [],
+      "raw_pdf_gate": "PASS",
+      "blockers": []
+    }
+  ]
+}

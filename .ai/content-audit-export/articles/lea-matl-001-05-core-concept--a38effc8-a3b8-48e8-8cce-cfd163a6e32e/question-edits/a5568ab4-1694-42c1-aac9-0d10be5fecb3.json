@@ -1,0 +1,68 @@
+{
+  "question_id": "a5568ab4-1694-42c1-aac9-0d10be5fecb3",
+  "baseline_hash": "sha256:b4e6b157241b9a39cc009a28dbdf2fec6da7fd78215104d995fe027778282846",
+  "action": "replace",
+  "reason": "source-audited-article-batch-082-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-001-05-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-082",
+  "approved_at": "2026-05-12T05:45:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "a38effc8-a3b8-48e8-8cce-cfd163a6e32e",
+    "parent_article_slug": "lea-matl-001-05-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Woods and Plastics Lecture refined markdown lines 38-90, 108-245, and 285-520; raw PDF pages 3, 16, 22, and 34 checked by local PyMuPDF extraction. George Salvan Architectural Building Materials refined markdown lines 1280-1435, 1569, and 2682-2725; raw PDF pages 47 and 50 checked by local PyMuPDF extraction.",
+    "checked_markdown_lines": [
+      "Woods and Plastics Lecture refined markdown lines 38-90, 108-245, and 285-520; raw PDF pages 3, 16, 22, and 34 checked by local PyMuPDF extraction. George Salvan Architectural Building Materials refined markdown lines 1280-1435, 1569, and 2682-2725; raw PDF pages 47 and 50 checked by local PyMuPDF extraction."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "woods-and-plastics-lecture-b082",
+        "label": "Woods and Plastics Lecture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Woods and Plastics Lecture.pdf",
+        "sha256": "sha256:39c03f9cea2f61b1859620a606b139a3a1c5897a68ef51c954432e15ea722d61",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Woods and Plastics Lecture.md",
+        "raw_markdown_sha256": "sha256:7b78053474dfa985c87d49c632e3f8626c5518f13bb9ccd16b901d85d423df27",
+        "locator": "Woods and Plastics Lecture refined markdown lines 38-90, 108-245, and 285-520; raw PDF pages 3, 16, 22, and 34 checked by local PyMuPDF extraction."
+      },
+      {
+        "source_id": "george-salvan-building-materials-b082",
+        "label": "George Salvan Architectural Building Materials",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+        "raw_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+        "locator": "George Salvan Architectural Building Materials refined markdown lines 1280-1435, 1569, and 2682-2725; raw PDF pages 47 and 50 checked by local PyMuPDF extraction."
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 082 local raw-source-audited board_foot_measurement scope."
+  },
+  "proposed": {
+    "text": "If actual dimensions are explicitly given as 0.75 in x 5.5 in for 200 linear ft, what board-foot quantity results?",
+    "options": [
+      {
+        "id": "a",
+        "text": "68.75 board feet"
+      },
+      {
+        "id": "b",
+        "text": "91.67 board feet"
+      },
+      {
+        "id": "c",
+        "text": "825 board feet"
+      },
+      {
+        "id": "d",
+        "text": "12 board feet"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Use the dimensions given: 0.75 x 5.5 x 200 / 12 = 68.75 board feet.",
+    "explanation": "Use the dimensions given: 0.75 x 5.5 x 200 / 12 = 68.75 board feet.",
+    "code_citation": "Woods and Plastics Lecture; George Salvan Architectural Building Materials",
+    "bloom_level": "apply",
+    "application_context": "source_audited_local_first_batch_082",
+    "practice_context": [],
+    "difficulty": 0.5
+  }
+}

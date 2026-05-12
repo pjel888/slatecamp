@@ -1,0 +1,377 @@
+{
+  "batch_id": "source-audited-article-batch-017-local-first",
+  "generated_at": "2026-05-10T23:35:00.000+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "mode": "local_first_only",
+  "constraints": {
+    "supabase_push": false,
+    "deploy": false,
+    "commit": false,
+    "worktree_scope": "/Users/philiplewis/slatecamp only"
+  },
+  "selection_policy": {
+    "selected_count": 5,
+    "avoided_prior_batches": "001 through 016",
+    "prior_artifacts_checked": [
+      ".ai/content-audit-export/source-audited-article-batch-001-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-002-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-003-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-003-local-first-recovery-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-003-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-004-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-004-local-first-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-005-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-005-local-first-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-006-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-006-local-first-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-007-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-007-local-first-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-008-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-008-local-first-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-009-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-009-local-first-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-010-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-010-local-first-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-011-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-011-local-first-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-012-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-012-local-first-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-013-blocker-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-013-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-013-local-first-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-014-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-014-local-first-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-015-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-015-local-first-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-016-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-016-local-first-report-2026-05-10.md"
+    ],
+    "preferred_domains": [
+      "LEA Professional Practice",
+      "Professional ethics",
+      "Code of Ethical Conduct"
+    ],
+    "raw_pdf_required": true,
+    "linked_questions_required": true
+  },
+  "counts": {
+    "articles": 5,
+    "linked_questions": 50,
+    "question_edits": 50,
+    "verified_sources": 5,
+    "raw_pdfs_checked": 1,
+    "raw_markdown_sources_checked": 1,
+    "compose_passed": 5,
+    "diff_safe": 5,
+    "validate_valid": 5,
+    "unresolved_local_blockers": 0
+  },
+  "source_files_checked": [
+    "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+    "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md"
+  ],
+  "selected_articles": [
+    {
+      "article_id": "6604a199-6687-435d-aeb1-ffdc46be7d23",
+      "slug": "lea-prac-eth-001-core-concept",
+      "title": "Code of Ethical Conduct (SPP Document 200)",
+      "prior_batches_001_through_016": "not_found",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-prac-eth-001-core-concept--6604a199-6687-435d-aeb1-ffdc46be7d23",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-eth-001-core-concept--6604a199-6687-435d-aeb1-ffdc46be7d23",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-eth-001-core-concept--6604a199-6687-435d-aeb1-ffdc46be7d23/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-eth-001-core-concept--6604a199-6687-435d-aeb1-ffdc46be7d23/question-edits",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-eth-001-core-concept--6604a199-6687-435d-aeb1-ffdc46be7d23/source-audit-evidence.json",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "sources_count": 1,
+      "sources": [
+        {
+          "source_id": "uap-code-of-ethics-lea-prac-eth-001-core-concept",
+          "label": "UAP Document Code of Ethics - Architect's Credo and Code of Ethical Conduct",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+          "raw_pdf_sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+          "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
+          "raw_markdown_sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
+          "checked_markdown_lines": [
+            "raw markdown lines 23-29",
+            "raw markdown lines 31-118"
+          ],
+          "source_locator": "UAP Document Code of Ethics, introduction and Sections 1 through 5, raw markdown lines 23-118"
+        }
+      ],
+      "hashes": {
+        "original": "sha256:6990994997770f91082d39c5713929976a2d8dfea21cedf8292ce9604bf5ebbb",
+        "normalized": "sha256:0e4a232b0e4a3c52d728f9562467e76e1e3e4357d5cb42cfb649ea442018a6f1",
+        "candidate": "sha256:0e4a232b0e4a3c52d728f9562467e76e1e3e4357d5cb42cfb649ea442018a6f1",
+        "sources": "sha256:0cb9d3324a930e638e6b1fc00d1c2086cc2e79cbf6ee25cbac15cb47fb75efce"
+      },
+      "compose": {
+        "passed": true,
+        "blockers": [],
+        "unresolved_placeholders": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "locally_safe_to_push": true,
+        "blockers": [],
+        "warnings": [
+          "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+        ]
+      },
+      "validate": {
+        "valid": true,
+        "blockers": [],
+        "warnings": [
+          "component-usage.json has not been generated for this article yet."
+        ]
+      },
+      "status": "local_passed"
+    },
+    {
+      "article_id": "f769b43e-e467-4ce4-afd9-2d0152fe8d46",
+      "slug": "lea-prac-eth-002-core-concept",
+      "title": "Architect's Credo",
+      "prior_batches_001_through_016": "not_found",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-prac-eth-002-core-concept--f769b43e-e467-4ce4-afd9-2d0152fe8d46",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-eth-002-core-concept--f769b43e-e467-4ce4-afd9-2d0152fe8d46",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-eth-002-core-concept--f769b43e-e467-4ce4-afd9-2d0152fe8d46/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-eth-002-core-concept--f769b43e-e467-4ce4-afd9-2d0152fe8d46/question-edits",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-eth-002-core-concept--f769b43e-e467-4ce4-afd9-2d0152fe8d46/source-audit-evidence.json",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "sources_count": 1,
+      "sources": [
+        {
+          "source_id": "uap-code-of-ethics-lea-prac-eth-002-core-concept",
+          "label": "UAP Document Code of Ethics - Architect's Credo and Code of Ethical Conduct",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+          "raw_pdf_sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+          "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
+          "raw_markdown_sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
+          "checked_markdown_lines": [
+            "raw markdown lines 1-21"
+          ],
+          "source_locator": "UAP Document Code of Ethics, Architect's Credo, raw markdown lines 1-21"
+        }
+      ],
+      "hashes": {
+        "original": "sha256:706435b86e24446f746d3066796b4881a6a469fdea5ac48188ffc33ff3616633",
+        "normalized": "sha256:553a976b9ff45bd7bcd6ff5dbb9eb52cd128388288f57b94c4b92efda962efad",
+        "candidate": "sha256:553a976b9ff45bd7bcd6ff5dbb9eb52cd128388288f57b94c4b92efda962efad",
+        "sources": "sha256:84f2579748878b02e69d6eeba24412ad65b6d2fcc6a0b4a6f34373854cb5c5be"
+      },
+      "compose": {
+        "passed": true,
+        "blockers": [],
+        "unresolved_placeholders": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "locally_safe_to_push": true,
+        "blockers": [],
+        "warnings": [
+          "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+        ]
+      },
+      "validate": {
+        "valid": true,
+        "blockers": [],
+        "warnings": [
+          "component-usage.json has not been generated for this article yet."
+        ]
+      },
+      "status": "local_passed"
+    },
+    {
+      "article_id": "9bc92dcd-8cce-4970-9111-13e21a72fb68",
+      "slug": "lea-prac-eth-003-core-concept",
+      "title": "Code of Ethical Conduct",
+      "prior_batches_001_through_016": "not_found",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-prac-eth-003-core-concept--9bc92dcd-8cce-4970-9111-13e21a72fb68",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-eth-003-core-concept--9bc92dcd-8cce-4970-9111-13e21a72fb68",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-eth-003-core-concept--9bc92dcd-8cce-4970-9111-13e21a72fb68/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-eth-003-core-concept--9bc92dcd-8cce-4970-9111-13e21a72fb68/question-edits",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-eth-003-core-concept--9bc92dcd-8cce-4970-9111-13e21a72fb68/source-audit-evidence.json",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "sources_count": 1,
+      "sources": [
+        {
+          "source_id": "uap-code-of-ethics-lea-prac-eth-003-core-concept",
+          "label": "UAP Document Code of Ethics - Architect's Credo and Code of Ethical Conduct",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+          "raw_pdf_sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+          "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
+          "raw_markdown_sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
+          "checked_markdown_lines": [
+            "raw markdown lines 23-29",
+            "raw markdown lines 31-44"
+          ],
+          "source_locator": "UAP Document Code of Ethics, Code introduction and Section 1, raw markdown lines 23-44"
+        }
+      ],
+      "hashes": {
+        "original": "sha256:bb17b20dc8a847acb91b6de02f75a547d6c8f12b7166e7517980263fa616f4a5",
+        "normalized": "sha256:128dcc88d39a3306c680b812247595d28441998f80f353780b0d51f05a401abe",
+        "candidate": "sha256:128dcc88d39a3306c680b812247595d28441998f80f353780b0d51f05a401abe",
+        "sources": "sha256:3ae47258e9df4d4d4489cbae023343407fc595b778ed557c1aa30227b46c3eb4"
+      },
+      "compose": {
+        "passed": true,
+        "blockers": [],
+        "unresolved_placeholders": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "locally_safe_to_push": true,
+        "blockers": [],
+        "warnings": [
+          "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+        ]
+      },
+      "validate": {
+        "valid": true,
+        "blockers": [],
+        "warnings": [
+          "component-usage.json has not been generated for this article yet."
+        ]
+      },
+      "status": "local_passed"
+    },
+    {
+      "article_id": "cd6c1a20-eee6-4475-b0cc-239897d3f4d7",
+      "slug": "lea-prac-eth-004-core-concept",
+      "title": "Section 2 of the Code",
+      "prior_batches_001_through_016": "not_found",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-prac-eth-004-core-concept--cd6c1a20-eee6-4475-b0cc-239897d3f4d7",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-eth-004-core-concept--cd6c1a20-eee6-4475-b0cc-239897d3f4d7",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-eth-004-core-concept--cd6c1a20-eee6-4475-b0cc-239897d3f4d7/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-eth-004-core-concept--cd6c1a20-eee6-4475-b0cc-239897d3f4d7/question-edits",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-eth-004-core-concept--cd6c1a20-eee6-4475-b0cc-239897d3f4d7/source-audit-evidence.json",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "sources_count": 1,
+      "sources": [
+        {
+          "source_id": "uap-code-of-ethics-lea-prac-eth-004-core-concept",
+          "label": "UAP Document Code of Ethics - Architect's Credo and Code of Ethical Conduct",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+          "raw_pdf_sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+          "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
+          "raw_markdown_sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
+          "checked_markdown_lines": [
+            "raw markdown lines 47-63",
+            "raw markdown lines 82-89"
+          ],
+          "source_locator": "UAP Document Code of Ethics, Section 2 and related supplier-benefit rule in Section 4-b, raw markdown lines 47-63 and 82-89"
+        }
+      ],
+      "hashes": {
+        "original": "sha256:354ff34b7e2200218151b72f94ba9e244e02a978082044c307ec9e8db7ebaa18",
+        "normalized": "sha256:357c7f34d090d6663c74c8c86336e3e1657a0dcdd6f1e1e01c704ad365c3684c",
+        "candidate": "sha256:357c7f34d090d6663c74c8c86336e3e1657a0dcdd6f1e1e01c704ad365c3684c",
+        "sources": "sha256:0ff17d3790420a982c3482012e6140512c40c04f6525f83a8eb7950b46dc9f3d"
+      },
+      "compose": {
+        "passed": true,
+        "blockers": [],
+        "unresolved_placeholders": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "locally_safe_to_push": true,
+        "blockers": [],
+        "warnings": [
+          "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+        ]
+      },
+      "validate": {
+        "valid": true,
+        "blockers": [],
+        "warnings": [
+          "component-usage.json has not been generated for this article yet."
+        ]
+      },
+      "status": "local_passed"
+    },
+    {
+      "article_id": "504b1844-1db1-44f8-9aa9-5b78705ca37e",
+      "slug": "lea-prac-eth-005-core-concept",
+      "title": "Section 5 of the Code",
+      "prior_batches_001_through_016": "not_found",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-prac-eth-005-core-concept--504b1844-1db1-44f8-9aa9-5b78705ca37e",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-eth-005-core-concept--504b1844-1db1-44f8-9aa9-5b78705ca37e",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-eth-005-core-concept--504b1844-1db1-44f8-9aa9-5b78705ca37e/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-eth-005-core-concept--504b1844-1db1-44f8-9aa9-5b78705ca37e/question-edits",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-eth-005-core-concept--504b1844-1db1-44f8-9aa9-5b78705ca37e/source-audit-evidence.json",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "sources_count": 1,
+      "sources": [
+        {
+          "source_id": "uap-code-of-ethics-lea-prac-eth-005-core-concept",
+          "label": "UAP Document Code of Ethics - Architect's Credo and Code of Ethical Conduct",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+          "raw_pdf_sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+          "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
+          "raw_markdown_sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
+          "checked_markdown_lines": [
+            "raw markdown lines 92-118"
+          ],
+          "source_locator": "UAP Document Code of Ethics, Section 5, raw markdown lines 92-118"
+        }
+      ],
+      "hashes": {
+        "original": "sha256:010d1dafb4b4df6ceb974d5798a55007487588b3fbe6d8e639c62a5e9b9a8dc1",
+        "normalized": "sha256:1be4b10377f1cefd4ec6dabc83b388b773b17e8fa0c25701b2e4b95b6f2a1028",
+        "candidate": "sha256:1be4b10377f1cefd4ec6dabc83b388b773b17e8fa0c25701b2e4b95b6f2a1028",
+        "sources": "sha256:7c698a2d6b66302b5647321c05cf09e175c8a28bca0584b9ef9e6285fef2a3da"
+      },
+      "compose": {
+        "passed": true,
+        "blockers": [],
+        "unresolved_placeholders": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "locally_safe_to_push": true,
+        "blockers": [],
+        "warnings": [
+          "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+        ]
+      },
+      "validate": {
+        "valid": true,
+        "blockers": [],
+        "warnings": [
+          "component-usage.json has not been generated for this article yet."
+        ]
+      },
+      "status": "local_passed"
+    }
+  ],
+  "validation": {
+    "compose": "5/5 passed, blockers=0",
+    "diff": "5/5 changed=true and safe=true, blockers=0",
+    "validate": "5/5 valid=true, blockers=0, warning only component-usage.json missing",
+    "scoped_json_parse": "pass, 100 JSON files parsed",
+    "scoped_forbidden_marker_scan": "pass, no UI markers/TODO/source-gap/unsupported markers in normalized.md/candidate.md/question-edits",
+    "scoped_source_path_hash_check": "pass, raw PDF and Markdown paths exist and SHA-256 match sources.json",
+    "scoped_question_edit_check": "pass, 50 replacement edits with source support",
+    "test": "bun test scripts/content-audit/content-audit.test.ts -> 27 pass, 0 fail",
+    "git_diff_check": "pass after trimming EOF blank line in first normalized article"
+  },
+  "warnings": [
+    "component-usage.json has not been generated for these articles yet; validate treats this as warning, not blocker."
+  ],
+  "blockers": [],
+  "next_phase_readiness": {
+    "ready": true,
+    "condition": "Local article/question clusters are source-audited and locally valid. Supabase publishing remains a later explicit final-publishing step requiring remote stale checks."
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "question_id": "2ce1c900-2ee0-406b-af7b-a437fb24d3ac",
+  "baseline_hash": "sha256:55ce957332ea5b990af1d719b0b8d18d2a249ddb82a27d5cf59edd3e839c1c0d",
+  "reason": "Batch 003 source audit replaced unsupported agency/mandate and procurement assertions with source-backed RA 9266, Civil Code Article 1723, RA 9184, RA 7160/COA, RA 11201, and EO 90 framing.",
+  "approved_by": "codex-local-source-audit-batch-003",
+  "approved_at": "2026-05-10T18:00:00+08:00",
+  "proposed": {
+    "text": "Which law governs government procurement of architectural consulting services and infrastructure projects?",
+    "options": [
+      {
+        "id": "a",
+        "text": "RA 9184, the Government Procurement Reform Act"
+      },
+      {
+        "id": "b",
+        "text": "RA 9266, as the procurement law"
+      },
+      {
+        "id": "c",
+        "text": "Civil Code Article 1723"
+      },
+      {
+        "id": "d",
+        "text": "BP 344"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "RA 9184 governs procurement of government infrastructure projects, goods, and consulting services. RA 9266 governs professional practice.",
+    "explanation": "The repaired article separates RA 9266 professional responsibility from RA 9184 public procurement.",
+    "code_citation": "RA 9184 Government Procurement Reform Act"
+  }
+}

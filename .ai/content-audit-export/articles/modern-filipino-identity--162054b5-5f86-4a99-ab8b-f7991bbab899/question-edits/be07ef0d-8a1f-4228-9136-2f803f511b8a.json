@@ -1,0 +1,86 @@
+{
+  "question_id": "be07ef0d-8a1f-4228-9136-2f803f511b8a",
+  "baseline_hash": "sha256:45eabb8a3a6ff39389fb9aa8fde4dced775c001e1047a3e3a8f15e3c7c1a0805",
+  "action": "replace",
+  "reason": "source-audited-article-batch-050-local-first: local raw-source-backed replacement constrained to checked Batch 050 source families.",
+  "approved_by": "codex-local-first-batch-050",
+  "approved_at": "2026-05-11T21:20:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "162054b5-5f86-4a99-ab8b-f7991bbab899",
+    "parent_article_slug": "modern-filipino-identity",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Filipino Architecture refined markdown lines 40-118, 160-178, 680-700, 830-887, 905-917, and 1037-1039; Module - Architectural History refined markdown lines 4863-4915, 4913-4945, 5038-5045, and 5377-5395; HOA Module 4 P1 refined markdown lines 1-235, 278-365, and 681-760",
+    "checked_markdown_lines": [
+      "Filipino Architecture refined markdown lines 40-118",
+      "Filipino Architecture refined markdown lines 160-178",
+      "Filipino Architecture refined markdown lines 680-700",
+      "Filipino Architecture refined markdown lines 830-887",
+      "Filipino Architecture refined markdown lines 905-917",
+      "Filipino Architecture refined markdown lines 1037-1039",
+      "Module - Architectural History refined markdown lines 4863-4915",
+      "Module - Architectural History refined markdown lines 4913-4945",
+      "Module - Architectural History refined markdown lines 5038-5045",
+      "Module - Architectural History refined markdown lines 5377-5395",
+      "HOA Module 4 P1 refined markdown lines 1-235",
+      "HOA Module 4 P1 refined markdown lines 278-365",
+      "HOA Module 4 P1 refined markdown lines 681-760"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "fil-local-raw-pdf--b050-162054b5-01",
+        "label": "Filipino Architecture - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Filipino Architecture.pdf",
+        "sha256": "sha256:3d6f220218c46fe78e37d152d1c51504fd3c7d413cf14e71b39e93c7e1a5831d",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Filipino Architecture.md",
+        "refined_markdown_sha256": "sha256:f60dacc37e4b6634875ed68c18a55288e455476697fc250905460bbe6ac25ce1",
+        "locator": "Filipino Architecture refined markdown lines 40-118, 160-178, 680-700, 830-887, 905-917, and 1037-1039"
+      },
+      {
+        "source_id": "mod-local-raw-pdf--b050-162054b5-02",
+        "label": "Module - Architectural History - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Module - Architectural History.pdf",
+        "sha256": "sha256:d88ccdfaad42e15b3a9f844539aba0b0d614b165d4ef33f082537d72ba13531d",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Module - Architectural History.md",
+        "refined_markdown_sha256": "sha256:d3fc240b16da21c71b8467f6c3bf8599cd422b4c8055e2e9647f0aa2b2e042a1",
+        "locator": "Module - Architectural History refined markdown lines 4863-4915, 4913-4945, 5038-5045, and 5377-5395"
+      },
+      {
+        "source_id": "hoa-local-raw-pdf--b050-162054b5-03",
+        "label": "HOA Module 4 P1 - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/HOA MODULE 4 P1.pdf",
+        "sha256": "sha256:c89f7f79b3dd8272c7aa7d8848ea72c196d6c418f33105a32fb1ed2cfadbffb3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/HOA MODULE 4 P1.md",
+        "refined_markdown_sha256": "sha256:e515c8c5203118d4aeef0fe1f288c7deb76d75d3e3e1a779291712420c7df047",
+        "locator": "HOA Module 4 P1 refined markdown lines 1-235, 278-365, and 681-760"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 050 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "Which set best captures the climate-responsive base named in the checked sources?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bahay Kubo, wood, bamboo, palm leaves, openness, lightness, and adaptation to tropical climate."
+      },
+      {
+        "id": "b",
+        "text": "Underground stone vaults designed for cold climates only."
+      },
+      {
+        "id": "c",
+        "text": "Windowless masonry blocks with no relation to ventilation."
+      },
+      {
+        "id": "d",
+        "text": "Purely symbolic forms with no material or climate reading."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Bahay Kubo, wood, bamboo, palm leaves, openness, lightness, and adaptation to tropical climate. The Filipino Architecture locator describes the pre-Spanish house and tropical architectural character.",
+    "explanation": "Bahay Kubo, wood, bamboo, palm leaves, openness, lightness, and adaptation to tropical climate. The Filipino Architecture locator describes the pre-Spanish house and tropical architectural character.",
+    "code_citation": "Filipino Architecture refined markdown lines 40-118, 160-178, 680-700, 830-887, 905-917, and 1037-1039; Module - Architectural History refined markdown lines 4863-4915, 4913-4945, 5038-5045, and 5377-5395; HOA Module 4 P1 refined markdown lines 1-235, 278-365, and 681-760"
+  },
+  "batch_question_template_index": 1
+}

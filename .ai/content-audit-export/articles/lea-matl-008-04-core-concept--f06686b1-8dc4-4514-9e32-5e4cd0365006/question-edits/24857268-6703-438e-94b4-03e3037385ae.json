@@ -1,0 +1,65 @@
+{
+  "question_id": "24857268-6703-438e-94b4-03e3037385ae",
+  "baseline_hash": "sha256:0db8504ba5f99f2f84cc40d68021ca26d9e14b34c50182595afa199e02754e87",
+  "action": "replace",
+  "reason": "source-audited-article-batch-079-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-008-04-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-079",
+  "approved_at": "2026-05-12T06:20:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "f06686b1-8dc4-4514-9e32-5e4cd0365006",
+    "parent_article_slug": "lea-matl-008-04-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "BCI refined markdown lines 10594-10790; raw PDF pages 297-301 checked by local PyMuPDF extraction",
+    "checked_markdown_lines": [
+      "BCI refined markdown lines 10594-10790; raw PDF pages 297-301 checked by local PyMuPDF extraction",
+      "Salvan refined markdown lines 13190-13198 and 11664-11678; raw PDF pages 355 and 317 checked by local PyMuPDF extraction"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "bci-5e-b079",
+        "label": "Building Construction Illustrated, 5th Edition",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "raw_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "locator": "BCI refined markdown lines 10594-10790; raw PDF pages 297-301 checked by local PyMuPDF extraction"
+      },
+      {
+        "source_id": "salvan-building-materials-b079",
+        "label": "George Salvan Architectural Building Materials",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+        "raw_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+        "locator": "Salvan refined markdown lines 13190-13198 and 11664-11678; raw PDF pages 355 and 317 checked by local PyMuPDF extraction"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 079 local raw-source-audited window_operations scope."
+  },
+  "proposed": {
+    "text": "What is a fixed window?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A frame with a stationary sash"
+      },
+      {
+        "id": "b",
+        "text": "A side-hinged sash that swings outward"
+      },
+      {
+        "id": "c",
+        "text": "A bottom-hinged sash that swings inward"
+      },
+      {
+        "id": "d",
+        "text": "A louver system that pivots together"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "BCI defines fixed windows as consisting of a frame and stationary sash.",
+    "explanation": "BCI defines fixed windows as consisting of a frame and stationary sash.",
+    "code_citation": "Building Construction Illustrated, 5th Edition; George Salvan Architectural Building Materials"
+  }
+}

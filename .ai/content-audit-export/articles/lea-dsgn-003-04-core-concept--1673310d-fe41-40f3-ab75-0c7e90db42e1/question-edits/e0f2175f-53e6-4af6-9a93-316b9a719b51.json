@@ -1,0 +1,117 @@
+{
+  "question_id": "e0f2175f-53e6-4af6-9a93-316b9a719b51",
+  "baseline_hash": "sha256:283a1c09432573090bf654ec8c918a5639568313c7ef1db9e2bc256862b8da9a",
+  "action": "replace",
+  "reason": "source-audited-article-batch-071-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes stale numeric, legal, or stale article claims where present.",
+  "approved_by": "codex-local-first-batch-071",
+  "approved_at": "2026-05-12T01:00:34+08:00",
+  "source_audit_support": {
+    "parent_article_id": "1673310d-fe41-40f3-ab75-0c7e90db42e1",
+    "parent_article_slug": "lea-dsgn-003-04-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "BP 220 refined markdown lines 227-231, 235-264, 291-306, and 420-465; raw PDF pages 6, 20-21, and 24-25 checked by local PyMuPDF extraction; PD 1096 refined markdown lines 75-80, 112, 337-340, 562-626, 1088-1120, 1174-1212, 1629-1631, 2246-2279, 4190, and 6113-6201; raw PDF pages 23, 47, 126, 278, 292, and 295 checked by local PyMuPDF extraction; PD 957 IRR refined markdown lines 151-161, 213-224, and 258-302; raw PDF pages 11-14 checked by local PyMuPDF extraction; PD 1096 official appendix accessibility text refined markdown lines 6113-6152 and 6170-6201; raw PDF pages 292 and 295 checked by local PyMuPDF extraction. Separate BP 344 raw PDF family hash checked locally: sha256:7fe6c2de016c0640002029b089c0468a6e0bcb5856be722c93acc97fadf19618",
+    "checked_markdown_lines": [
+      "BP 220 lines 227-231",
+      "BP 220 lines 235-264",
+      "BP 220 lines 291-306",
+      "BP 220 lines 420-465",
+      "PD 1096 lines 1088-1120",
+      "PD 1096 lines 1174-1212",
+      "PD 1096 lines 6113-6201"
+    ],
+    "checked_raw_pdf_pages": [
+      "BP 220 raw PDF pages 6, 20-21, and 24-25",
+      "PD 1096 raw PDF pages 47, 292, and 295",
+      "PD 957 IRR raw PDF pages 11-14"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "bp220-revised-irr-2008-b071",
+        "label": "BP 220 Revised IRR 2008 - Economic and Socialized Housing Standards",
+        "source_type": "primary_law_irr_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-220/Revised_IRR_BP220_2008.pdf",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-220/Revised_IRR_BP220_2008.md",
+        "source_locator": "BP 220 refined markdown lines 227-231, 235-264, 291-306, and 420-465; raw PDF pages 6, 20-21, and 24-25 checked by local PyMuPDF extraction",
+        "raw_pdf_sha256": "sha256:7392741260c227647afe39de283f3efa979465692da8905e59be8857c8651614",
+        "refined_markdown_sha256": "sha256:4d66a5ce3891d6405324d52ae8b874f75321da0e5f00213489be43d754d27be1"
+      },
+      {
+        "source_id": "pd1096-rirr-2004-b071",
+        "label": "PD 1096 2004 Revised IRR - National Building Code",
+        "source_type": "primary_law_irr_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 refined markdown lines 75-80, 112, 337-340, 562-626, 1088-1120, 1174-1212, 1629-1631, 2246-2279, 4190, and 6113-6201; raw PDF pages 23, 47, 126, 278, 292, and 295 checked by local PyMuPDF extraction",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7"
+      },
+      {
+        "source_id": "pd957-irr-subdivision-condominium-b071",
+        "label": "PD 957 IRR - Subdivision and Condominium Standards",
+        "source_type": "primary_law_irr_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-957/PD 957 IRR - Subdivision and Condominium IRR.pdf",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-957/PD 957 IRR - Subdivision and Condominium IRR.md",
+        "source_locator": "PD 957 IRR refined markdown lines 151-161, 213-224, and 258-302; raw PDF pages 11-14 checked by local PyMuPDF extraction",
+        "raw_pdf_sha256": "sha256:1f9ab17a816885cfdbafafc03e3e9b64470a737447129a32a459836d6773f9ea",
+        "refined_markdown_sha256": "sha256:0edd45f5293044779c45c36e5219904d3863cfa747d200864959fc1bf6a9ff7b"
+      },
+      {
+        "source_id": "bp344-accessibility-appendix-b071",
+        "label": "BP 344 accessibility provisions as reproduced in the PD 1096 official appendix",
+        "source_type": "accessibility_law_appendix_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 official appendix accessibility text refined markdown lines 6113-6152 and 6170-6201; raw PDF pages 292 and 295 checked by local PyMuPDF extraction. Separate BP 344 raw PDF family hash checked locally: sha256:7fe6c2de016c0640002029b089c0468a6e0bcb5856be722c93acc97fadf19618",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, and citation rewritten to the Batch 071 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "What BP 220 minimum floor-area pair is supported by the checked local source?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Socialized 18 sqm; economic 22 sqm"
+      },
+      {
+        "id": "b",
+        "text": "Socialized 18 sqm; economic 24 sqm"
+      },
+      {
+        "id": "c",
+        "text": "Socialized 22 sqm; economic 18 sqm"
+      },
+      {
+        "id": "d",
+        "text": "Socialized 28 sqm; economic 36 sqm"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Correct. This option follows the checked local raw-source evidence.",
+      "b": "Incorrect. This option changes the source rule, value, or condition.",
+      "c": "Incorrect. This option changes the source rule, value, or condition.",
+      "d": "Incorrect. This option changes the source rule, value, or condition.",
+      "correct": "The checked BP 220 floor-area requirement is 18 sqm for socialized housing and 22 sqm for economic housing.",
+      "takeaway": "Use the local raw-source condition before applying the rule."
+    },
+    "explanation": "The checked BP 220 floor-area requirement is 18 sqm for socialized housing and 22 sqm for economic housing.",
+    "code_citation": "BP 220 refined markdown lines 227-231, 235-264, 291-306, and 420-465; raw PDF pages 6, 20-21, and 24-25 checked by local PyMuPDF extraction; PD 1096 refined markdown lines 75-80, 112, 337-340, 562-626, 1088-1120, 1174-1212, 1629-1631, 2246-2279, 4190, and 6113-6201; raw PDF pages 23, 47, 126, 278, 292, and 295 checked by local PyMuPDF extraction; PD 957 IRR refined markdown lines 151-161, 213-224, and 258-302; raw PDF pages 11-14 checked by local PyMuPDF extraction; PD 1096 official appendix accessibility text refined markdown lines 6113-6152 and 6170-6201; raw PDF pages 292 and 295 checked by local PyMuPDF extraction. Separate BP 344 raw PDF family hash checked locally: sha256:7fe6c2de016c0640002029b089c0468a6e0bcb5856be722c93acc97fadf19618",
+    "bloom_level": "apply",
+    "application_context": "code_interpretation",
+    "practice_context": [
+      "source-audited-local-first-batch-071"
+    ],
+    "difficulty": 0.55,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false
+  }
+}

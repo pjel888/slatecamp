@@ -1,0 +1,77 @@
+{
+  "question_id": "f9ebb355-80bb-4298-80f9-e5969565634a",
+  "baseline_hash": "sha256:e0430f66c5b66bd662fe6f26514d6059d6ccddbd840ce1f058cd407181bcd28a",
+  "action": "replace",
+  "reason": "source-audited-article-batch-055-local-first: local raw PDF backed replacement constrained to checked Batch 055 source families.",
+  "approved_by": "codex-local-first-batch-055",
+  "approved_at": "2026-05-11T19:38:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "458cde1d-fd31-41f1-b90e-d5cd728e9e23",
+    "parent_article_slug": "lea-theo-002-09-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "George Salvan Architectural Theories of Design refined markdown lines 1026 and 12770-12776; TOA 1 Intro to Theory refined markdown lines 147-151; theory refined markdown lines 11-12",
+    "checked_markdown_lines": [
+      "George Salvan Architectural Theories of Design refined markdown line 1026",
+      "George Salvan Architectural Theories of Design refined markdown lines 12770-12776",
+      "TOA 1 Intro to Theory refined markdown lines 147-151",
+      "theory refined markdown lines 11-12"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "salvan-theory-local-raw-pdf--b055-458cde1d-01",
+        "label": "George Salvan Architectural Theories of Design - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
+        "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
+        "locator": "George Salvan Architectural Theories of Design refined markdown lines 1026 and 12770-12776"
+      },
+      {
+        "source_id": "toa1-intro-local-raw-pdf--b055-458cde1d-02",
+        "label": "TOA 1 Intro to Theory - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 1 (Intro to Theory).pdf",
+        "sha256": "sha256:17ee07310eaf7fbd71aeb3cb3b57a6ffb623e2b8b1957543d74b706a5184d0e0",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md",
+        "refined_markdown_sha256": "sha256:fc665ed41ea62ddb69c88ba02c7b92628481ba6792a075bc21694ca072b150d6",
+        "locator": "TOA 1 Intro to Theory refined markdown lines 147-151"
+      },
+      {
+        "source_id": "theory-local-raw-pdf--b055-458cde1d-03",
+        "label": "theory - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+        "sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+        "refined_markdown_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+        "locator": "theory refined markdown lines 11-12"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 055 checked local raw PDF source scope."
+  },
+  "proposed": {
+    "text": "What does degree of enclosure affect?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Perception of orientation and the overall form of space."
+      },
+      {
+        "id": "b",
+        "text": "The chemical action of a battery."
+      },
+      {
+        "id": "c",
+        "text": "The exact law governing PWD incentives."
+      },
+      {
+        "id": "d",
+        "text": "The name of every late landmark."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Perception of orientation and the overall form of space. This answer is supported by the checked Batch 055 local raw PDF source families for Enclosure and Openings by Francis D.K. Ching.",
+    "explanation": "Perception of orientation and the overall form of space. The Batch 055 source audit used local raw PDFs first and refined markdown only as locator evidence for Enclosure and Openings by Francis D.K. Ching.",
+    "code_citation": "George Salvan Architectural Theories of Design refined markdown lines 12770-12776"
+  },
+  "batch_question_template_index": 4
+}

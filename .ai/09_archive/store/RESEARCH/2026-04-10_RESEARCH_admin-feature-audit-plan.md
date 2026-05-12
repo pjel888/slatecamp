@@ -1,6 +1,6 @@
 # Admin Deep Dive Audit & Implementation Plan
 
-**Date:** 2026-04-10  
+**Date:** 2026-04-10
 **Status:** FINAL - All Redline Edits Applied
 **Scope:** All /admin routes, data sources, server actions, permissions, workflows
 **Reference:** `.ai/prompts/admin-route-issues.md`, `.ai/docs/01-product/009-admin-feature-specification.md`
@@ -59,7 +59,7 @@
 
 ```typescript
 // canManageContent = super_admin OR content_admin
-// canReviewContent = super_admin OR content_admin OR sme_reviewer  
+// canReviewContent = super_admin OR content_admin OR sme_reviewer
 // canManageUsers = super_admin only
 ```
 
@@ -160,7 +160,7 @@ These are **intentional architecture**, not defects.
 The test must verify:
 1. Publish succeeds
 2. Admin knowledge surfaces refresh correctly
-3. Wiki view refreshes correctly  
+3. Wiki view refreshes correctly
 4. **Cache-tag invalidation is confirmed, not assumed** (NEW REQUIREMENT)
 
 ---
@@ -244,5 +244,5 @@ All P0 and P1 items have been implemented and verified via unit tests or code re
 
 ---
 
-**Plan finalized: 2026-04-10**  
+**Plan finalized: 2026-04-10**
 **Redline applied**: Fixed permission matrix, added audit/spec mismatch section, reworded loading findings, reprioritized backlog, added release-readiness verdict

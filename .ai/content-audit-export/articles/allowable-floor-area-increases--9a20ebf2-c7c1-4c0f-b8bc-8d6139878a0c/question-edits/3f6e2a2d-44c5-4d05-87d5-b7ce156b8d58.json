@@ -1,0 +1,49 @@
+{
+  "question_id": "3f6e2a2d-44c5-4d05-87d5-b7ce156b8d58",
+  "baseline_hash": "sha256:a79f6d52ee122fcfb2823843f0da975e9911a71851413bbbf3e4bb042ee89744",
+  "action": "replace",
+  "reason": "source-audited-article-batch-039-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-039",
+  "approved_at": "2026-05-11T13:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-039-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 1390-1450",
+          "PD 1096 RIRR refined markdown lines 1452-1462"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 705"
+  },
+  "proposed": {
+    "text": "If the allowable maximum TGFA exceeds the AMVB, what happens under Section 705?",
+    "options": [
+      {
+        "id": "b039-9a20-12-a",
+        "text": "The maximum allowable TGFA must be adjusted because AMVB prevails"
+      },
+      {
+        "id": "b039-9a20-12-b",
+        "text": "The AMVB is ignored"
+      },
+      {
+        "id": "b039-9a20-12-c",
+        "text": "The TGFA automatically doubles"
+      },
+      {
+        "id": "b039-9a20-12-d",
+        "text": "Only the building permit fee changes"
+      }
+    ],
+    "correct_option_id": "b039-9a20-12-a",
+    "rationale": "Correct answer: The maximum allowable TGFA must be adjusted because AMVB prevails. This is directly supported by PD 1096 2004 Revised IRR, Section 705.",
+    "explanation": "The Batch 039 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 705.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 705"
+  }
+}

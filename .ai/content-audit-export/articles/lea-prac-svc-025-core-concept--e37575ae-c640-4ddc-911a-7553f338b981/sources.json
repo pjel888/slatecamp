@@ -1,44 +1,48 @@
 {
   "article_id": "e37575ae-c640-4ddc-911a-7553f338b981",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:5686dab701631becc92d021208ec2cd25bd32da7f904ae7e558b0010bb63e04c",
-  "source_count": 3,
+  "sources_hash": "sha256:f45aefddb841563abca0ae763bce04b0bf9e6283d9faa84d576bc84810b7f60d",
+  "source_count": 1,
   "sources": [
     {
-      "source_id": "558736ae-d609-49a9-96af-0b7add6f780a",
-      "article_id": "e37575ae-c640-4ddc-911a-7553f338b981",
-      "label": "RA 9266 (The Architecture Act of 2004), Sections 3(4)(g) and 14(3)",
-      "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:01.68074+00:00",
-      "updated_at": "2026-03-24T04:34:01.68074+00:00"
-    },
-    {
-      "source_id": "3c57a3d1-c753-4fe0-8fb4-5a33bc49ff64",
-      "article_id": "e37575ae-c640-4ddc-911a-7553f338b981",
-      "label": "SPP Doc 203 (Standards of Professional Practice for Specialized Architectural Services), Section 203.1, Sections 2.3.1–2.3.6, Section 4.1 (Compensation), Section 4.3 (Payment Schedule)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 1,
-      "created_at": "2026-03-24T04:34:01.68074+00:00",
-      "updated_at": "2026-03-24T04:34:01.68074+00:00"
-    },
-    {
-      "source_id": "c512e06c-a32b-493b-ab2a-2312a65bf3bf",
-      "article_id": "e37575ae-c640-4ddc-911a-7553f338b981",
-      "label": "Architect's Guidelines (UAP Doc 210 / PRBoA Res. No. 6, s. 2016), Methods of Compensation and Schedule of Fees, Group 8 (Extensive Detailing and Architectural Interiors)",
-      "url": null,
-      "source_type": "regulatory_body",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:34:01.68074+00:00",
-      "updated_at": "2026-03-24T04:34:01.68074+00:00"
+      "source_id": "spp-203-uap-local-raw-pdf",
+      "label": "SPP Document 203 - Specialized Architectural Services",
+      "authority": "United Architects of the Philippines Standards of Professional Practice source bundle",
+      "source_type": "local_raw_pdf_with_local_ocr_conversion",
+      "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 101-117; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 121-150; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 228-231",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+      "raw_pdf_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+      "ocr_pdf_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/ocr_pdf/UAP/SPP 203.pdf",
+      "ocr_pdf_sha256": "sha256:b7885f5019524c8f33c9718529c9c42a82f62732ec634bb02b1901cfd57840bc",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/SPP 203.md",
+      "raw_markdown_sha256": "sha256:3fa3203163878c783bdf4c70246dd1870123ed0de4395bbdba51c2a72550bf36",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+      "refined_markdown_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+      "checked_markdown_lines": [
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+          "checked_lines": [
+            "101-117"
+          ],
+          "note": "Specialized architectural services list includes Architectural Interiors and related services."
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+          "checked_lines": [
+            "121-150"
+          ],
+          "note": "Continuation of the specialized architectural services list."
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+          "checked_lines": [
+            "228-231"
+          ],
+          "note": "Manner of providing Architectural Interiors services."
+        }
+      ],
+      "use": "Primary local source for article and question repair.",
+      "local_source_checked": true
     }
   ]
 }

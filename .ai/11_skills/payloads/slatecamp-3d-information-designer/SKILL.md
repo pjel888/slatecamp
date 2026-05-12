@@ -38,16 +38,16 @@ Every 3D Lab module has four information layers, revealed progressively:
 Layer 0: THE MODEL (always visible)
   The 3D geometry itself IS information. Shape, proportion, spatial
   relationships communicate before any label appears.
-  
+
 Layer 1: ORIENTATION LABELS (visible on load)
   2-4 persistent labels that name the major elements.
   Student knows WHAT they're looking at within 3 seconds.
-  
+
 Layer 2: EXPLORATION HOTSPOTS (visible on orbit/interaction)
   4-8 hotspot dots appear as the student explores.
   Each reveals a single concept: code requirement, dimension, or principle.
   Student discovers information through spatial exploration.
-  
+
 Layer 3: DEEP KNOWLEDGE (revealed on demand)
   Code citations, full explanations, wiki links, related quiz questions.
   Only shown when the student explicitly requests it (click, tap).

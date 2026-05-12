@@ -1,0 +1,228 @@
+{
+  "schema_version": "source-audit-evidence-v1-local-first",
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-042-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T15:15:23.383+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "184a1593-2137-45ee-80d4-99c1c4595e84",
+    "slug": "widths-slopes",
+    "title": "Widths & Slopes",
+    "article_folder": ".ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84",
+    "candidate_path": ".ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84/candidate.md",
+    "candidate_sha256": "sha256:440e21ae19d6d8c0a69e49cca47fde88372bc0be1e3703a9286ecf0f7808b2bc",
+    "normalized_sha256": "sha256:440e21ae19d6d8c0a69e49cca47fde88372bc0be1e3703a9286ecf0f7808b2bc",
+    "linked_questions_sha256": "sha256:02287ce0ede87f1f4d9748a931a76e712d68cf929834362e9323621a2e55dcda",
+    "sources_sha256": "sha256:d8a6e561120517c3f37a0f812fb23493ac16f2baae6d8c87304ed65604bc38b4"
+  },
+  "classification": {
+    "content_domain": "LEA Accessibility - widths and slopes",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high_value_accessibility_code",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 21,
+    "question_edits_created": [
+      "9b2ccd47-6e9d-46d7-8531-e4760135cde1",
+      "5717e947-91cf-4cd0-b4ca-85796983369a",
+      "1008d795-548f-4735-b76a-0bc4c4d5a047",
+      "02f12692-30d5-427e-8af2-a57f81b536d6",
+      "58acf34a-a3d7-4813-9689-9830476d111d",
+      "66dd1b43-5520-4d31-840a-a38bf10eef86",
+      "9e4d0d9e-460a-47eb-bb19-ac33ea1cc310",
+      "4c4ac490-3277-4124-813a-fba1b2ce71da",
+      "7e590635-10e1-42c2-adbc-8d80b11a14fc",
+      "2b46ae08-25b5-4813-a16c-7c8a5a07ad41",
+      "f6d3b69c-1cf4-4904-a94d-4fc7fe16f2d2",
+      "5b6d3db1-7092-4da2-9212-6a0a034b6e55",
+      "9e5421f9-b245-4e35-a000-a6c4954234ea",
+      "9eecd114-629a-4025-ac67-cba4d031804e",
+      "5128b254-e801-49f7-ac85-6643190bf9fa",
+      "e96eb7f0-6813-4c35-b781-37123932c59d",
+      "0536e414-fdf0-416d-82e5-c7516f46c6ad",
+      "0b778124-7584-4a91-8468-c609b8d9a48e",
+      "3a4b3933-18b3-4615-b6e4-650b482149ad",
+      "41bb2a2e-9aee-403a-8202-c67af2778dd6",
+      "f0d0998b-8f89-41c0-b69d-245d3dc534af"
+    ]
+  },
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84/question-edits/9b2ccd47-6e9d-46d7-8531-e4760135cde1.json",
+      ".ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84/question-edits/5717e947-91cf-4cd0-b4ca-85796983369a.json",
+      ".ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84/question-edits/1008d795-548f-4735-b76a-0bc4c4d5a047.json",
+      ".ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84/question-edits/02f12692-30d5-427e-8af2-a57f81b536d6.json",
+      ".ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84/question-edits/58acf34a-a3d7-4813-9689-9830476d111d.json",
+      ".ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84/question-edits/66dd1b43-5520-4d31-840a-a38bf10eef86.json",
+      ".ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84/question-edits/9e4d0d9e-460a-47eb-bb19-ac33ea1cc310.json",
+      ".ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84/question-edits/4c4ac490-3277-4124-813a-fba1b2ce71da.json",
+      ".ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84/question-edits/7e590635-10e1-42c2-adbc-8d80b11a14fc.json",
+      ".ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84/question-edits/2b46ae08-25b5-4813-a16c-7c8a5a07ad41.json",
+      ".ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84/question-edits/f6d3b69c-1cf4-4904-a94d-4fc7fe16f2d2.json",
+      ".ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84/question-edits/5b6d3db1-7092-4da2-9212-6a0a034b6e55.json",
+      ".ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84/question-edits/9e5421f9-b245-4e35-a000-a6c4954234ea.json",
+      ".ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84/question-edits/9eecd114-629a-4025-ac67-cba4d031804e.json",
+      ".ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84/question-edits/5128b254-e801-49f7-ac85-6643190bf9fa.json",
+      ".ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84/question-edits/e96eb7f0-6813-4c35-b781-37123932c59d.json",
+      ".ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84/question-edits/0536e414-fdf0-416d-82e5-c7516f46c6ad.json",
+      ".ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84/question-edits/0b778124-7584-4a91-8468-c609b8d9a48e.json",
+      ".ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84/question-edits/3a4b3933-18b3-4615-b6e4-650b482149ad.json",
+      ".ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84/question-edits/41bb2a2e-9aee-403a-8202-c67af2778dd6.json",
+      ".ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84/question-edits/f0d0998b-8f89-41c0-b69d-245d3dc534af.json"
+    ]
+  },
+  "raw_sources": [
+    {
+      "source_id": "bp-344-2024-rirr-ncda-local",
+      "label": "BP 344 2024 Revised IRR - NCDA local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "source_locator": "BP 344 2024 IRR refined markdown lines 40-70; BP 344 2024 IRR refined markdown lines 198-224; BP 344 2024 IRR refined markdown lines 619-727; BP 344 2024 IRR refined markdown lines 739-760",
+      "checked_markdown_lines": [
+        "BP 344 2024 IRR refined markdown lines 40-70",
+        "BP 344 2024 IRR refined markdown lines 198-224",
+        "BP 344 2024 IRR refined markdown lines 619-727",
+        "BP 344 2024 IRR refined markdown lines 739-760"
+      ]
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "bp-344-2024-rirr-ncda-local",
+      "label": "BP 344 2024 Revised IRR - NCDA local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "source_locator": "BP 344 2024 IRR refined markdown lines 40-70; BP 344 2024 IRR refined markdown lines 198-224; BP 344 2024 IRR refined markdown lines 619-727; BP 344 2024 IRR refined markdown lines 739-760",
+      "checked_markdown_lines": [
+        "BP 344 2024 IRR refined markdown lines 40-70",
+        "BP 344 2024 IRR refined markdown lines 198-224",
+        "BP 344 2024 IRR refined markdown lines 619-727",
+        "BP 344 2024 IRR refined markdown lines 739-760"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "b042-width-01",
+      "claim_text": "Accessible ramps have a minimum clear width of 1200 mm.",
+      "claim_type": "accessibility_or_building_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - NCDA local raw PDF",
+        "locator": "BP 344 refined markdown line 44",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "minimum clear width of 1200 mm"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b042-width-02",
+      "claim_text": "Ramp handrails are installed at 700 mm and 900 mm, with 300 mm end extensions.",
+      "claim_type": "accessibility_or_building_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - NCDA local raw PDF",
+        "locator": "BP 344 refined markdown lines 61-63 and 198-208",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "handrails at 700 mm and 900 mm with 300 mm horizontal extension"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b042-width-03",
+      "claim_text": "Sidewalks/walkways have 1:20 running gradient where possible, 1:100 cross gradient, 1500 mm minimum width, and 1800 mm width where two wheelchairs pass.",
+      "claim_type": "accessibility_or_building_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - NCDA local raw PDF",
+        "locator": "BP 344 refined markdown lines 679-685",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "sidewalk gradient not steeper than 1:20; maximum cross gradient 1:100; minimum width 1500 mm; 1800 mm for two wheelchairs"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b042-width-04",
+      "claim_text": "Curb ramps are limited to conditions where sidewalk width and turning area are not reduced; loading-bay curb ramps have 900 mm minimum width and 1:15 maximum gradient.",
+      "claim_type": "accessibility_or_building_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - NCDA local raw PDF",
+        "locator": "BP 344 refined markdown lines 656-667",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "curb ramps shall only be allowed when they do not obstruct or lessen width; loading bay width 900 mm; gradient not steeper than 1:15"
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [
+    "Unchecked derivative-only accessibility dimensions and non-local rule claims were excluded from the Batch 042 repaired content and question edits."
+  ],
+  "removed_or_rewritten_material": [
+    "Removed exported UI-block marker tokens from normalized article content where present.",
+    "Rewrote linked question files to stay inside checked BP 344 and PD 1096 evidence."
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdf_first": true,
+    "derivative_layers_used_only_as_locators": true,
+    "checked_raw_pdf_families": [
+      "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf"
+    ]
+  },
+  "gate_results": {
+    "source_audit": "PASS",
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_validation": "PASS",
+    "question_edit_count_check": "PASS",
+    "scoped_json_parse": "PASS",
+    "marker_scan": "PASS",
+    "source_hash_check": "PASS",
+    "stale_compose_error_check": "PASS"
+  },
+  "source_safe_repair": {
+    "status": "COMPLETE_LOCAL_VALIDATED",
+    "article_normalized_rewritten": true,
+    "sources_json_updated": true,
+    "source_audit_evidence_updated": true,
+    "question_edits_created": 21,
+    "blockers": []
+  },
+  "local_validation": {
+    "status": "PASS_LOCAL_VALIDATION",
+    "validated_at": "2026-05-11T15:15:23.383+08:00",
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_validation": "PASS",
+    "scoped_checks": "PASS",
+    "blockers": []
+  },
+  "sme_review": {
+    "required_before_supabase_publish": true,
+    "completed": false
+  },
+  "overall": {
+    "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+    "blockers": []
+  }
+}

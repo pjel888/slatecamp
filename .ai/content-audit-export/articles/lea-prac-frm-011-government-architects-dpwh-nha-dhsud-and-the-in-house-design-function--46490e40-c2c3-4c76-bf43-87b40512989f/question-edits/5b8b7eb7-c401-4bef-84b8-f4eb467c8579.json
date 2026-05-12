@@ -1,0 +1,32 @@
+{
+  "question_id": "5b8b7eb7-c401-4bef-84b8-f4eb467c8579",
+  "baseline_hash": "sha256:14656298742d1fe84bfc6d6dfac1dc978398736aa0d722c06ba12b2efb760734",
+  "reason": "Batch 003 source audit replaced unsupported agency/mandate and procurement assertions with source-backed RA 9266, Civil Code Article 1723, RA 9184, RA 7160/COA, RA 11201, and EO 90 framing.",
+  "approved_by": "codex-local-source-audit-batch-003",
+  "approved_at": "2026-05-10T18:00:00+08:00",
+  "proposed": {
+    "text": "For this topic, which source family controls a government architect's professional responsibility for architectural documents?",
+    "options": [
+      {
+        "id": "a",
+        "text": "RA 9184 alone"
+      },
+      {
+        "id": "b",
+        "text": "RA 9266 IRR and architect-of-record provisions"
+      },
+      {
+        "id": "c",
+        "text": "RA 11201 alone"
+      },
+      {
+        "id": "d",
+        "text": "COA circulars alone"
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": "RA 9266 IRR controls professional architectural responsibility. Procurement and agency laws may shape the project route but do not replace architect-of-record responsibility.",
+    "explanation": "The original agency-mandate question was unsupported in the local cited sources.",
+    "code_citation": "RA 9266 IRR, architect-of-record provisions"
+  }
+}

@@ -1,14 +1,14 @@
 # Architectural Correction Mandate: Taxonomy and Article Schema Separation
 
 ## Executive Summary
-The current database schema is structurally compromised. The `taxonomy_tree` table is improperly storing level 3 content (articles) alongside level 1 and 2 organizers (subjects, subtopics). This execution mandate dictates the strict, sequential process for migrating articles to a dedicated `wiki_articles` table, establishing proper relational constraints, and refactoring the frontend `taxonomy-tree.tsx` component to handle the updated data pipeline. 
+The current database schema is structurally compromised. The `taxonomy_tree` table is improperly storing level 3 content (articles) alongside level 1 and 2 organizers (subjects, subtopics). This execution mandate dictates the strict, sequential process for migrating articles to a dedicated `wiki_articles` table, establishing proper relational constraints, and refactoring the frontend `taxonomy-tree.tsx` component to handle the updated data pipeline.
 
 The agent is strictly prohibited from skipping validation steps.
 
 ## Phase 1: Database Schema Overhaul & Structural Integrity
 The database is the bedrock. We must establish the correct tables and relationships before writing any application logic.
 
-1. **Schema Definition:** The agent must update the schema file (e.g., Prisma, SQL) to define the new `wiki_articles` table. 
+1. **Schema Definition:** The agent must update the schema file (e.g., Prisma, SQL) to define the new `wiki_articles` table.
 2. **Column Specifications (`wiki_articles`):** This new table must include the article content, title, slug, and a mandatory foreign key `taxonomy_id` (or `parent_id`) that directly references the primary key of the `taxonomy_tree` table.
 3. **Constraint Enforcement:** The agent must implement a strict one-to-many relationship. The foreign key must have an `ON DELETE CASCADE` or `RESTRICT` rule to prevent orphaned articles if a subtopic is deleted.
 4. **Taxonomy Cleanup:** The `taxonomy_tree` schema must be formally redefined to only expect hierarchical organizers.
@@ -25,8 +25,8 @@ Existing data must be transferred without loss.
 The data delivery pipelines must be rebuilt to serve the new separated structure efficiently.
 
 1. **Endpoint Refactoring:** The agent must locate the API route responsible for serving the taxonomy tree.
-2. **Fetch Logic:** The query must be rewritten. It must first fetch the clean `taxonomy_tree` (Subjects and Subtopics). 
-3. **Relational Joining:** Depending on the required frontend load, the backend must either use a SQL `JOIN` (or ORM equivalent) to attach the relevant `wiki_articles` to their respective subtopics before sending the payload, or establish a secondary route for fetching articles strictly by their `taxonomy_id`. 
+2. **Fetch Logic:** The query must be rewritten. It must first fetch the clean `taxonomy_tree` (Subjects and Subtopics).
+3. **Relational Joining:** Depending on the required frontend load, the backend must either use a SQL `JOIN` (or ORM equivalent) to attach the relevant `wiki_articles` to their respective subtopics before sending the payload, or establish a secondary route for fetching articles strictly by their `taxonomy_id`.
 4. **Type Definitions:** The agent must update all backend TypeScript interfaces or types to reflect this separated payload structure.
 
 ## Phase 4: Frontend UI Overhaul (`taxonomy-tree.tsx`)

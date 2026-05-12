@@ -1,106 +1,55 @@
-
-
 ## Board Exam Quick Check
 
-Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+For lump sum or fixed fee, keep the answer narrow unless the question supplies a contract clause. The checked SPP sources recognize the method and mention government-project paperwork/time demands; they do not provide broad numerical contingency rules.
 
-**Common mistake:** treating a familiar keyword in **Lea Prac Cmp 009 Lump Sum Fixed Fee Scope Discipline Risk Allocation And Appropriate Use** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
-## Lump Sum Fixed Fee — Scope Discipline, Risk Allocation, and Appropriate Use
+## Lump Sum or Fixed Fee: Source-Supported Scope and Limits
 
 ## Learning Goal
 
-After studying this article, you should be able to:
-
-- Define lump sum or fixed fee compensation.
-- Explain the scope, discipline, and risk allocation of a fixed fee.
-- Identify when a lump sum fee is appropriate vs. risky.
-- Distinguish lump sum from percentage-of-PCC and MDPE.
+After studying this article, you should be able to identify Lump Sum or Fixed Fee as a recognized compensation method, state the source-backed government-project rationale, and avoid unsupported risk-allocation or contingency heuristics.
 
 ---
-### Definition and Characteristics of Lump Sum Fixed Fee
 
-A Lump Sum Fixed Fee is a single, predetermined amount for all design services from Schematic Design through Construction Administration. The fee does not increase if the architect works additional hours, implements scope expansion, or responds to client changes. Conversely, the fee does not decrease if the architect completes the project more efficiently than estimated. Lump sum fees are attractive to clients because they provide budget certainty and eliminate surprise invoicing; they are risky for architects because they transfer cost risk.
+### Recognized Compensation Method
 
-### Appropriate Uses of Lump Sum Fixed Fee
+SPP Document 202, Section 5.4 lists Lump Sum or Fixed Fee as a compensation method. SPP Document 201, Section 4.3 also recognizes Lump Sum or Fixed Fee. The source-backed statement is narrow but important: this method may be applied to government projects because they entail more paperwork and time-consuming efforts.
 
-Lump sum fees are appropriate for projects with clearly defined, stable scope where the architect has extensive experience and high confidence in estimating effort. Straightforward residential projects where the architect has completed similar projects are candidates for lump sum fees. Small, standardized commercial buildings with conventional systems may justify lump sum compensation if scope is crystal clear.
+<ExamTip>
+If the board asks whether Lump Sum or Fixed Fee is recognized, answer yes. If it asks for the specific source-backed rationale in these SPP documents, remember government projects, paperwork, and time-consuming effort.
+</ExamTip>
 
-Lump sum fees work best when the client's program is fixed and approved, when the site is well-understood, when building systems are conventional and predictable, and when the architect has completed similar projects recently. Renovation projects may justify lump sum fees if existing conditions are fully documented and understood before design begins.
+### What the Source Does Not Say
 
-Lump sum fees are also appropriate when the architect has internal efficiency advantages that allow cost recovery at a negotiated fixed price below what competitors would charge. This requires confidence that the firm can deliver quality services within the estimated scope without loss.
+The checked sources do not give a 10-20% contingency rule. They do not say lump sum should be 10-20% lower than MDPE. They do not provide a 2.2 multiplier example. They also do not provide a detailed list saying lump sum is best for every stable-scope, renovation, design-build, or demanding-client scenario.
 
-### Inappropriate Uses of Lump Sum Fixed Fee
+Those statements may sound practical, but for source-grounded LEA content they cannot be taught as rules unless another verified source supports them.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Priority — Fee Computation:** Know the five compensation methods (percentage-of-PCC, MDPE, lump sum, per diem/retainer, reimbursable expenses). Master the sliding scale for Groups 1-3 (5%→4%→3%→2%→1% for successive ₱50M brackets). Remember: DAEDS = all disciplines; DADS ≈ 60% of DAEDS (architecture only). Group 9 renovation = 150% of base group rate.
-[/SLATECAMP_UI_BLOCK]
+### Professional Practice Logic
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code="irr", section="Architect's Guidelines / SPP 202", title="Fee Computation — Regulatory Basis"
-- Text: Fee computation under the Architect's Guidelines follows SPP 202 classification groups and the DAEDS/DADS framework. The percentage-of-PCC method applies group-specific rates to Project Construction Cost. MDPE uses direct personnel expense multiplied by an agreed factor. Lump-sum fees are negotiated based on scope. All methods must be documented in the owner-architect agreement.
-[/SLATECAMP_UI_BLOCK]
+A lump sum fee fixes the fee amount by agreement rather than computing the fee only after counting hours or applying a percentage. Because the fee is fixed, scope definition matters. The Owner-Architect Agreement should be clear about what services are included, what deliverables are expected, and how additional services or changes will be handled. That is a contract-management inference, not a replacement for the source-backed SPP statement.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="KeyValues" status="preserved"]
-Extracted summary:
-- Props: items="[", value=true, label=true, DAEDS=true, Fee=true, Range=true, PCC=true, Bracket=true, Threshold=true, Groups=true, Project=true, Classification=true
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-Lump sum fees are highly risky for projects with uncertain scope, innovative design, emerging programs, or complex site conditions. Projects involving significant pre-design work (programming, feasibility analysis) should not use lump sum fees because scope is not adequately defined. Design-Build or CM at Risk projects with evolving scope are unsuitable for lump sum architect fees because the architect's scope changes as the project develops.
+### Real-World Application
 
-Lump sum fees are inappropriate for projects with constrained timelines, demanding regulatory environments, or complex stakeholder coordination where scope creep is predictable. Projects with client uncertainty about program or aesthetics should avoid lump sum fees; the inevitable design revisions and refinements will exhaust the architect's fee.
+Suppose an architect is negotiating with an LGU for a small public facility. The LGU prefers a fixed fee because procurement documents need a definite amount. The architect can recognize Lump Sum or Fixed Fee as a valid compensation method and can explain that the SPP source specifically mentions government projects because they require more paperwork and time-consuming effort. The architect should then make the agreement clear: included services, deliverables, approval points, reimbursables if any, and what happens when the Owner requests work outside the agreed scope. For the board, the key is not to invent a percentage discount or contingency. The key is to identify the method and its source-backed rationale.
 
-### Establishing Appropriate Lump Sum Fees
+### Exam Traps
 
-To establish lump sum fees, the architect must: (1) completely understand the project scope and create detailed scope documentation; (2) estimate the effort required at each phase (Schematic Design, Design Development, Contract Documents, Bidding Assistance, Construction Administration); (3) apply standard phase percentages (15–20–50–5–10) to understand effort distribution; (4) calculate fully-loaded hourly costs for expected team composition; (5) multiply hours by hourly costs to estimate effort cost; (6) apply overhead and profit multiplier; and (7) add contingency.
+- Do not memorize a 10-20% contingency as an SPP rule for lump sum.
+- Do not say lump sum is always lower than MDPE by a fixed percentage.
+- Do not compute lump sum from an unsupported 2.2 multiplier unless the problem itself supplies that as a contract assumption.
+- Do not turn practical risk advice into source law.
 
-Example: A straightforward small office building scope is clearly defined. Estimated effort is 800 design hours plus 200 coordination hours. Average fully-loaded hourly cost is 500 pesos per hour. Base effort cost is 1,000 × 500 = 500,000 pesos. Applying 2.2 multiplier (overhead and profit) yields 1.1 million pesos. Adding 15% contingency for scope variations yields final lump sum of 1.265 million pesos.
+### Source Locator
 
-### Scope Definition and Lump Sum Certainty
-
-Lump sum fees require exceptionally detailed scope documentation. The Owner-Architect Agreement must specify: what deliverables the architect will provide (specific drawing sets, specifications, schedules), what coordination the architect will perform with consultants (will the architect coordinate MEP and structural, or only document consultant work?), how many design review cycles the client receives before issuing Contract Documents, what revisions the architect will make based on client comments, what happens if the client changes the program or aesthetics after Schematic Design approval, and what constitutes the end of each phase.
-
-Without clear scope documentation, the architect faces scope creep: unwritten expectations that the architect will provide additional services beyond the fee scope. The client believes certain services are included; the architect believes they are excluded. The architect must invest additional uncompensated hours or refuse to provide services, damaging the client relationship.
-
-### Contingency and Risk Management in Lump Sum Fees
-
-Even with clear scope, unexpected conditions arise. The architect should include contingency—typically 10–20%—in the lump sum fee to cover minor scope variations, additional client review cycles, or unexpected coordination requirements. Projects with higher uncertainty or greater interaction complexity should apply larger contingencies (15–20%). Straightforward projects with minimal uncertainty may apply smaller contingencies (10–15%).
-
-The contingency belongs to the architect to cover variations within the scope. If the project requires work materially beyond the scope definition (such as significant program changes, extensive regulatory revisions, or major schedule delays), the architect should invoke the contract's scope change provision and invoice additional fees.
-
-### Lump Sum vs. Percentage-of-PCC and MDPE Comparison
-
-Lump sum fees are highest-risk for the architect but provide greatest budget certainty for the client. Percentage-of-PCC shares risk between architect and client: if construction costs increase, architect fee increases proportionally. MDPE shares risk through hourly accounting: if the project requires more hours, the architect bills additional hours (if not capped). Lump sum places all risk on the architect: the fee does not adjust regardless of hours or costs.
-
-For equivalent projects, lump sum fees should be lower than MDPE or percentage-of-PCC to reflect the architect's assumption of scope and cost risk. If the architect estimates 1.5 million pesos MDPE fee, the lump sum fee should be 10–20% lower (1.2–1.35 million) to reflect risk transfer.
-
-### Payment Structure for Lump Sum Fees
-
-Lump sum fees should still follow standard phase percentages for invoicing: 15% at Schematic Design completion, 20% at Design Development completion, 50% at Contract Documents completion, 5% at Bidding completion, 10% at Construction Administration completion. This structure ensures the architect receives payment as milestones are achieved rather than invoicing the entire fee in advance or at project completion.
-
-Some lump sum contracts establish monthly or periodic invoicing based on estimated completion percentage of work. The contract must specify invoicing methodology to prevent disputes about payment timing.
-
-### Change Orders and Scope Modifications in Lump Sum Contracts
-
-The contract must establish clear procedures for handling scope changes. If the client requests services beyond the documented scope (additional building additions, significant aesthetic revisions, expanded site work), the architect should issue a change order documenting the additional scope and additional fee. The owner-architect agreement should establish the process for change order approval and fee adjustment.
-
-Without clear change order procedures, the architect faces pressure to accommodate scope expansion within the fixed fee, either by stretching resources or accepting losses. Explicit scope definition and change order procedures protect both parties.
-
----
+- Standards of Professional Practice2.pdf, SPP Document 202, Section 5.4, refined markdown lines 441-443.
+- SPP 201.pdf, methods of compensation slides, refined markdown lines 204-207.
 
 ## Related Articles
 
-- [Project Classification Groups](lea-prac-cmp-001)
-- [Factors Determining Classification](lea-prac-cmp-002)
 - [Project Construction Cost](lea-prac-cmp-003)
 - [Schedule of Payments](lea-prac-cmp-004)
 - [MDPE Formula](lea-prac-cmp-006)
 - [MDPE Multipliers](lea-prac-cmp-007)
-- [MDPE vs. Percentage of PCC](lea-prac-cmp-008)
-- [Reimbursable Expenses](lea-prac-cmp-011)
-- [SPP Doc 202 Phase Framework](lea-prac-svc-004)
-- [Standard Owner-Architect Agreement](lea-prac-ctr-001)
+- [Lump Sum Fixed Fee](lea-prac-cmp-009)
 
 <!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->

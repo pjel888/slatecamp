@@ -1,7 +1,7 @@
 # Final Push Command Plan
 
-**Generated:** 2026-05-03  
-**Purpose:** Exact command sequence for live Supabase push of content-audit export.  
+**Generated:** 2026-05-03
+**Purpose:** Exact command sequence for live Supabase push of content-audit export.
 **Authorization required:** **`PUSH TO SUPABASE NOW`** (exact phrase)
 
 ---

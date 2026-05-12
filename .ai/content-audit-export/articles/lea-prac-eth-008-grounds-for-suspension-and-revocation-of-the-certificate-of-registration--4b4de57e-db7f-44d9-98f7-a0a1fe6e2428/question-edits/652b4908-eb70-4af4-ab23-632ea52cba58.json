@@ -1,0 +1,83 @@
+{
+  "question_id": "652b4908-eb70-4af4-ab23-632ea52cba58",
+  "baseline_hash": "sha256:0274e7573b82754872356850cad2d929499c8d4deb2b168ddae06d0bf4fec3ba",
+  "action": "replace",
+  "reason": "source-audited-article-batch-018-local-first rewrote linked question to match locally checked raw source evidence for lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration.",
+  "approved_by": "codex-local-source-audit-batch-018",
+  "approved_at": "2026-05-10T23:42:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "4b4de57e-db7f-44d9-98f7-a0a1fe6e2428",
+    "parent_article_slug": "lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 9266 IRR Section 23 and Section 24, raw markdown lines 629-666",
+    "checked_markdown_lines": [
+      "RA 9266 raw markdown lines 629-666"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "ra-9266-irr-architecture-act-2004",
+        "locator": "RA 9266 IRR Section 23 and Section 24, raw markdown lines 629-666"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+        "source_id": "ra-9266-irr-architecture-act-2004-raw-markdown",
+        "locator": "RA 9266 IRR Section 23 and Section 24, raw markdown lines 629-666"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+        "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+        "source_id": "uap-document-code-of-ethics",
+        "locator": "UAP Document Code of Ethics, responsibilities to colleagues and subordinates, raw markdown lines 92-118"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
+        "sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
+        "source_id": "uap-document-code-of-ethics-raw-markdown",
+        "locator": "UAP Document Code of Ethics, responsibilities to colleagues and subordinates, raw markdown lines 92-118"
+      }
+    ],
+    "local_source_safe_action": "Question was rewritten to remove unverified or over-specific claims and use only statements anchored in the checked local raw source packet."
+  },
+  "proposed": {
+    "text": "Which broad violation category is included in Section 23(f)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Violation of RA 9266, its IRR, the Code of Ethical Conduct, or the Standards of Professional Practice"
+      },
+      {
+        "id": "b",
+        "text": "Any design choice disliked by a client"
+      },
+      {
+        "id": "c",
+        "text": "Any project delay regardless of cause"
+      },
+      {
+        "id": "d",
+        "text": "Any use of subcontractors"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "Section 23(f) includes violations of RA 9266, its IRR, the Code, and the Standards of Professional Practice.",
+    "explanation": "Section 23(f) includes violations of RA 9266, its IRR, the Code, and the Standards of Professional Practice.",
+    "code_citation": "RA 9266 IRR, Section 23(f), lines 653-656",
+    "bloom_level": "understand",
+    "application_context": "professional_practice",
+    "practice_context": [
+      "Code of Ethical Conduct",
+      "Professional ethics"
+    ],
+    "difficulty": 0.5,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-ETH-008-003"
+  }
+}

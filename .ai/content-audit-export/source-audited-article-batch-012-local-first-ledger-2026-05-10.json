@@ -1,0 +1,348 @@
+{
+  "batch_id": "source-audited-article-batch-012-local-first",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T20:50:00.000+08:00",
+  "mode": "LOCAL_FIRST_ONLY",
+  "constraints": {
+    "workspace_only": "/Users/philiplewis/slatecamp",
+    "supabase_push": false,
+    "deploy": false,
+    "commit": false
+  },
+  "status": "local_pass_ready_for_next_phase",
+  "selection_policy": {
+    "avoided_prior_batches": "batch 001 through batch 011 report and ledger article IDs",
+    "preferred_content": "high-value LEA legal, code, accessibility, and professional-practice clusters with linked questions and local raw PDF support",
+    "selected_article_ids": [
+      "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+      "578ca1ef-6eff-4810-b5dd-3b52c9bcb76b",
+      "5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "9a800f21-b26e-4e3e-94c8-2f4127eccd42"
+    ],
+    "skipped_candidates": [
+      {
+        "folder": "allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+        "reason": "linked questions depend heavily on non-local IBC, IRC, and Fire Code materials outside the available local raw PDFs"
+      },
+      {
+        "folder": "vent-shafts-and-ventilation--4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+        "reason": "linked questions include a vent-shaft formula ambiguity against the local raw conversion that should be checked against the PDF image before final publishing"
+      }
+    ]
+  },
+  "counts": {
+    "selected_articles": 5,
+    "local_pass_articles": 5,
+    "linked_questions": 84,
+    "question_edits_created": 84,
+    "source_records_created": 6,
+    "raw_pdf_sources_used": 3
+  },
+  "improved_article_folder_paths": [
+    ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743",
+    ".ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b",
+    ".ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+    ".ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2",
+    ".ai/content-audit-export/articles/spp-doc-203-specialized-architectural-services--9a800f21-b26e-4e3e-94c8-2f4127eccd42"
+  ],
+  "question_edits_folder_paths": [
+    ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits",
+    ".ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b/question-edits",
+    ".ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6/question-edits",
+    ".ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2/question-edits",
+    ".ai/content-audit-export/articles/spp-doc-203-specialized-architectural-services--9a800f21-b26e-4e3e-94c8-2f4127eccd42/question-edits"
+  ],
+  "articles": [
+    {
+      "article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+      "slug": "pedestrian-protection-during-construction",
+      "title": "Pedestrian Protection During Construction",
+      "status": "local_pass_ready_for_final_publishing_review",
+      "improved_article_folder_path": ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits",
+      "linked_question_count": 32,
+      "question_edit_count": 32,
+      "source_count": 1,
+      "raw_sources": [
+        {
+          "source_id": "pd1096-rirr-2004-dpwh-official",
+          "label": "PD 1096 2004 Revised IRR (DPWH Official)",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+          "source_locator": "PD 1096 Rule XI Sections 1101 to 1108; related Rule III, IV, IX, and XV crosslinks for linked questions",
+          "checked_markdown_lines": [
+            "PD 1096 raw markdown lines 981-982, 1040-1041, 1061-1070, 1126-1131, 3434-3568, 3735-3754, and 4974-4983"
+          ]
+        }
+      ],
+      "hashes": {
+        "original": "sha256:827f46c5526739495348da7254beee4460657b868be81d52bd70fcf8a43428e8",
+        "normalized": "sha256:66199a55a74d55b9c253a719e8cdf29c95c7dfa8cb1e7b304edef1caee0d4797",
+        "candidate": "sha256:66199a55a74d55b9c253a719e8cdf29c95c7dfa8cb1e7b304edef1caee0d4797",
+        "sources": "sha256:62517acb42ff01fcb3f1e081626003fe42fdc26c0d4fba121403ba5da1fa4a7e",
+        "linked_questions": "sha256:742ed79bccc4edef7d0a92970542f96f83097576284298f436a2e15bb1e6397a"
+      },
+      "paths": {
+        "article_folder": ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743",
+        "normalized": ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/candidate.md",
+        "sources": ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/sources.json",
+        "source_audit_evidence": ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/source-audit-evidence.json",
+        "question_edits_folder": ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits"
+      },
+      "validation": {
+        "compose_blockers": [],
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "bundle_validate_dry_run_valid": true,
+        "bundle_validate_warning": "component-usage.json has not been generated for this article yet."
+      }
+    },
+    {
+      "article_id": "578ca1ef-6eff-4810-b5dd-3b52c9bcb76b",
+      "slug": "stairs-handrails-guardrails",
+      "title": "Stairs Handrails Guardrails",
+      "status": "local_pass_ready_for_final_publishing_review",
+      "improved_article_folder_path": ".ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b/question-edits",
+      "linked_question_count": 20,
+      "question_edit_count": 20,
+      "source_count": 2,
+      "raw_sources": [
+        {
+          "source_id": "pd1096-rirr-2004-dpwh-official",
+          "label": "PD 1096 2004 Revised IRR (DPWH Official)",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+          "source_locator": "PD 1096 Rule XII Section 1207 and related guardrail provisions",
+          "checked_markdown_lines": [
+            "PD 1096 raw markdown lines 3958-4058, 4200-4211, and 4280-4282"
+          ]
+        },
+        {
+          "source_id": "bp344-2024-revised-irr-ncda",
+          "label": "2024 Revised IRR of BP 344 (NCDA)",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+          "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+          "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+          "raw_markdown_sha256": "sha256:a621bcb059a5c023dc5056939a6fa8ae44b5f60a29918f628d81657b9639692a",
+          "source_locator": "BP 344 2024 Revised IRR handrails and accessible stair provisions",
+          "checked_markdown_lines": [
+            "BP 344 raw markdown lines 204-238 and 564-610"
+          ]
+        }
+      ],
+      "hashes": {
+        "original": "sha256:85fa8e33dbba7226c2d3c030b327ca380051ae4c9675ba5332be7fe78c229bbb",
+        "normalized": "sha256:8924f6b22b9a6896234446ba750476db2bcbfe4030def78f970ced9b5a05cdf2",
+        "candidate": "sha256:8924f6b22b9a6896234446ba750476db2bcbfe4030def78f970ced9b5a05cdf2",
+        "sources": "sha256:bdb453f86ab5ab4afd2c861f7535c1e10b9a8e8c1948443c5ff28ca261f496f9",
+        "linked_questions": "sha256:e6b5e8f70f50898e6aeeb8185ce63aacf9ad611d29d097756cd1f5546d4aa0bd"
+      },
+      "paths": {
+        "article_folder": ".ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b",
+        "normalized": ".ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b/candidate.md",
+        "sources": ".ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b/sources.json",
+        "source_audit_evidence": ".ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b/source-audit-evidence.json",
+        "question_edits_folder": ".ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b/question-edits"
+      },
+      "validation": {
+        "compose_blockers": [],
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "bundle_validate_dry_run_valid": true,
+        "bundle_validate_warning": "component-usage.json has not been generated for this article yet."
+      }
+    },
+    {
+      "article_id": "5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "slug": "bp-344-elevator-dimensions",
+      "title": "BP 344 Elevator Dimensions",
+      "status": "local_pass_ready_for_final_publishing_review",
+      "improved_article_folder_path": ".ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6/question-edits",
+      "linked_question_count": 11,
+      "question_edit_count": 11,
+      "source_count": 1,
+      "raw_sources": [
+        {
+          "source_id": "bp344-2024-revised-irr-ncda",
+          "label": "2024 Revised IRR of BP 344 (NCDA)",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+          "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+          "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+          "raw_markdown_sha256": "sha256:a621bcb059a5c023dc5056939a6fa8ae44b5f60a29918f628d81657b9639692a",
+          "source_locator": "BP 344 2024 Revised IRR Section C.8 accessible elevators",
+          "checked_markdown_lines": [
+            "BP 344 raw markdown lines 1037-1088"
+          ]
+        }
+      ],
+      "hashes": {
+        "original": "sha256:cfffd81f3b70a0a98016de409856678dd884af2036058e69eb8fe0b989d29038",
+        "normalized": "sha256:36eb3b562e604b3c8f994c42834109e086ab7a72174e94e9c5cdad38d923d77c",
+        "candidate": "sha256:36eb3b562e604b3c8f994c42834109e086ab7a72174e94e9c5cdad38d923d77c",
+        "sources": "sha256:b767e6c62b7626a031f96e1b70a8043ef0894aebd13dfdf75d70c23fbadc4967",
+        "linked_questions": "sha256:0fa70366c1f2fd30e11f782ae83777e162942036e17a56bcf7413a4b76374319"
+      },
+      "paths": {
+        "article_folder": ".ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+        "normalized": ".ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6/candidate.md",
+        "sources": ".ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6/sources.json",
+        "source_audit_evidence": ".ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6/source-audit-evidence.json",
+        "question_edits_folder": ".ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6/question-edits"
+      },
+      "validation": {
+        "compose_blockers": [],
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "bundle_validate_dry_run_valid": true,
+        "bundle_validate_warning": "component-usage.json has not been generated for this article yet."
+      }
+    },
+    {
+      "article_id": "571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "slug": "accessible-seating-in-assembly-areas",
+      "title": "Accessible Seating in Assembly Areas",
+      "status": "local_pass_ready_for_final_publishing_review",
+      "improved_article_folder_path": ".ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2/question-edits",
+      "linked_question_count": 11,
+      "question_edit_count": 11,
+      "source_count": 1,
+      "raw_sources": [
+        {
+          "source_id": "bp344-2024-revised-irr-ncda",
+          "label": "2024 Revised IRR of BP 344 (NCDA)",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+          "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+          "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+          "raw_markdown_sha256": "sha256:a621bcb059a5c023dc5056939a6fa8ae44b5f60a29918f628d81657b9639692a",
+          "source_locator": "BP 344 2024 Revised IRR Appendix D assembly seating and waiting-area seating provisions",
+          "checked_markdown_lines": [
+            "BP 344 raw markdown lines 1342-1353, 1588-1589, and 1618-1632"
+          ]
+        }
+      ],
+      "hashes": {
+        "original": "sha256:ddc41717dbf1ee09433fd1fab90bea96674bb59a78922ce3a578d8c7b1f80977",
+        "normalized": "sha256:2cc67ec766e6d4385b1ce448f6134fb840c58519a710626194c3e887c65d92a7",
+        "candidate": "sha256:2cc67ec766e6d4385b1ce448f6134fb840c58519a710626194c3e887c65d92a7",
+        "sources": "sha256:b9c61736d45c83bc0fe725c52d79b7935f83011701e8004e522cd185ad58341b",
+        "linked_questions": "sha256:15fa5a2b1704909a2ee2a49b6f3204394df58e684cc244da889740d1d4b4b2bd"
+      },
+      "paths": {
+        "article_folder": ".ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2",
+        "normalized": ".ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2/candidate.md",
+        "sources": ".ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2/sources.json",
+        "source_audit_evidence": ".ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2/source-audit-evidence.json",
+        "question_edits_folder": ".ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2/question-edits"
+      },
+      "validation": {
+        "compose_blockers": [],
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "bundle_validate_dry_run_valid": true,
+        "bundle_validate_warning": "component-usage.json has not been generated for this article yet."
+      }
+    },
+    {
+      "article_id": "9a800f21-b26e-4e3e-94c8-2f4127eccd42",
+      "slug": "spp-doc-203-specialized-architectural-services",
+      "title": "SPP Doc 203: Specialized Architectural Services",
+      "status": "local_pass_ready_for_final_publishing_review",
+      "improved_article_folder_path": ".ai/content-audit-export/articles/spp-doc-203-specialized-architectural-services--9a800f21-b26e-4e3e-94c8-2f4127eccd42",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/spp-doc-203-specialized-architectural-services--9a800f21-b26e-4e3e-94c8-2f4127eccd42/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 1,
+      "raw_sources": [
+        {
+          "source_id": "uap-standards-of-professional-practice-2",
+          "label": "UAP Standards of Professional Practice",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+          "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+          "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
+          "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
+          "source_locator": "SPP Document 203 specialized architectural services",
+          "checked_markdown_lines": [
+            "UAP SPP raw markdown lines 596-638, 846-883, 905-950, 968-970, and 1220-1274"
+          ]
+        }
+      ],
+      "hashes": {
+        "original": "sha256:3db173e4e90fcf26afa64673e0846db694f539515563f8cf0bfd0f406de76a35",
+        "normalized": "sha256:21dc44c70e51f217e1c590d90e84b4ad4d328cc776664c190aee4f4c18000bb4",
+        "candidate": "sha256:21dc44c70e51f217e1c590d90e84b4ad4d328cc776664c190aee4f4c18000bb4",
+        "sources": "sha256:5118a145dcd57ab3bca2b9429276de5b262a29a1d17347007a7119c4dee6aefc",
+        "linked_questions": "sha256:6dd9876c986a9db6f8936664c377a87c3d49c1239e7ffbbf76827710ccd08533"
+      },
+      "paths": {
+        "article_folder": ".ai/content-audit-export/articles/spp-doc-203-specialized-architectural-services--9a800f21-b26e-4e3e-94c8-2f4127eccd42",
+        "normalized": ".ai/content-audit-export/articles/spp-doc-203-specialized-architectural-services--9a800f21-b26e-4e3e-94c8-2f4127eccd42/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/spp-doc-203-specialized-architectural-services--9a800f21-b26e-4e3e-94c8-2f4127eccd42/candidate.md",
+        "sources": ".ai/content-audit-export/articles/spp-doc-203-specialized-architectural-services--9a800f21-b26e-4e3e-94c8-2f4127eccd42/sources.json",
+        "source_audit_evidence": ".ai/content-audit-export/articles/spp-doc-203-specialized-architectural-services--9a800f21-b26e-4e3e-94c8-2f4127eccd42/source-audit-evidence.json",
+        "question_edits_folder": ".ai/content-audit-export/articles/spp-doc-203-specialized-architectural-services--9a800f21-b26e-4e3e-94c8-2f4127eccd42/question-edits"
+      },
+      "validation": {
+        "compose_blockers": [],
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "bundle_validate_dry_run_valid": true,
+        "bundle_validate_warning": "component-usage.json has not been generated for this article yet."
+      }
+    }
+  ],
+  "local_validation": {
+    "compose_diff_validate": "passed for all five selected articles; each dry-run bundle validation returned valid=true with only missing component-usage.json warnings",
+    "scoped_checks_pending_at_ledger_write": [],
+    "supabase_final_publishing_only": true,
+    "scoped_checks": {
+      "json_parse_count_check": {
+        "status": "passed",
+        "selected_articles": 5,
+        "json_files_parsed": 129,
+        "question_edits": 84,
+        "failures": []
+      },
+      "placeholder_scan": {
+        "status": "passed",
+        "files_scanned": 94,
+        "placeholder_hits": 0
+      },
+      "content_audit_unit_test": {
+        "status": "passed",
+        "command": "bun test scripts/content-audit/content-audit.test.ts",
+        "tests_passed": 27,
+        "tests_failed": 0,
+        "expect_calls": 84
+      },
+      "git_diff_check": {
+        "status": "passed",
+        "command": "git diff --check -- <batch 012 artifacts plus sync-state.json>"
+      }
+    }
+  },
+  "artifacts": {
+    "ledger_path": ".ai/content-audit-export/source-audited-article-batch-012-local-first-ledger-2026-05-10.json",
+    "report_path": ".ai/content-audit-export/source-audited-article-batch-012-local-first-report-2026-05-10.md",
+    "evidence_paths": [
+      ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/source-audit-evidence.json",
+      ".ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b/source-audit-evidence.json",
+      ".ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6/source-audit-evidence.json",
+      ".ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2/source-audit-evidence.json",
+      ".ai/content-audit-export/articles/spp-doc-203-specialized-architectural-services--9a800f21-b26e-4e3e-94c8-2f4127eccd42/source-audit-evidence.json"
+    ],
+    "sync_state_path": ".ai/content-audit-export/sync-state.json"
+  },
+  "next_phase_readiness": "ready for final publishing review; Supabase remains final publishing only and requires stale checks before mutation"
+}

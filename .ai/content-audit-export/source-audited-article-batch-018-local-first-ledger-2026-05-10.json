@@ -1,0 +1,338 @@
+{
+  "batch_id": "source-audited-article-batch-018-local-first",
+  "artifact_type": "local-first-ledger",
+  "audit_date": "2026-05-10",
+  "completed_at": "2026-05-10T23:52:12+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "mode": "local_first_no_supabase_no_deploy_no_commit",
+  "selection_policy": {
+    "selected_next_five_not_recorded_in_batches_001_through_017": true,
+    "prior_batch_artifacts_checked": [
+      ".ai/content-audit-export/source-audited-article-batch-001-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-002-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-003-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-003-local-first-recovery-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-003-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-004-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-004-local-first-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-005-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-005-local-first-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-006-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-006-local-first-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-007-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-007-local-first-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-008-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-008-local-first-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-009-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-009-local-first-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-010-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-010-local-first-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-011-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-011-local-first-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-012-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-012-local-first-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-013-blocker-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-013-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-013-local-first-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-014-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-014-local-first-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-015-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-015-local-first-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-016-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-016-local-first-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-017-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-017-local-first-report-2026-05-10.md"
+    ],
+    "prior_batch_collision_count": 0,
+    "prior_batch_collisions": [],
+    "preference": "high-value LEA legal/code/professional-practice ethics articles with linked questions and local raw PDFs"
+  },
+  "counts": {
+    "selected_articles": 5,
+    "locally_passed_articles": 5,
+    "linked_questions_covered": 50,
+    "source_safe_question_edit_json_files": 50,
+    "source_records_refreshed": 6,
+    "unique_raw_pdfs_checked": 2,
+    "unique_raw_markdown_sources_checked": 2,
+    "compose_passed": 5,
+    "diff_safe": 5,
+    "validate_passed": 5,
+    "unresolved_local_blockers": 0
+  },
+  "raw_sources_checked": {
+    "pdfs": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+        "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea"
+      }
+    ],
+    "raw_markdown": [
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
+        "sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933"
+      }
+    ]
+  },
+  "validation": {
+    "compose_diff_validate": "PASS for all five selected articles; each validate run had blockers=0 and one non-blocking component-usage.json warning.",
+    "scoped_json_placeholder_source_gap_diff_checks": "PASS",
+    "bun_test": "PASS: bun test scripts/content-audit/content-audit.test.ts; 27 pass, 0 fail, 84 expect() calls.",
+    "git_diff_check": "PASS: git diff --check scoped to the five selected article folders and Batch 018 ledger/report artifacts."
+  },
+  "articles": [
+    {
+      "article_id": "bceaa05b-1eaa-4369-a29c-fbd8aef6937b",
+      "slug": "lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-courtesy",
+      "title": "Obligations to Fellow Architects",
+      "status": "local_passed",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-cou--bceaa05b-1eaa-4369-a29c-fbd8aef6937b",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-cou--bceaa05b-1eaa-4369-a29c-fbd8aef6937b",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-cou--bceaa05b-1eaa-4369-a29c-fbd8aef6937b/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-cou--bceaa05b-1eaa-4369-a29c-fbd8aef6937b/question-edits",
+      "question_edit_files": [
+        ".ai/content-audit-export/articles/lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-cou--bceaa05b-1eaa-4369-a29c-fbd8aef6937b/question-edits/289f3ba1-701f-4679-87ca-221e79094490.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-cou--bceaa05b-1eaa-4369-a29c-fbd8aef6937b/question-edits/3c37ce65-ddb9-402a-8161-761296c04b0d.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-cou--bceaa05b-1eaa-4369-a29c-fbd8aef6937b/question-edits/3eae681f-aafe-47ab-a487-d32ffb07c686.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-cou--bceaa05b-1eaa-4369-a29c-fbd8aef6937b/question-edits/3f2cba45-3bc0-47a1-80b5-e19d635a0e18.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-cou--bceaa05b-1eaa-4369-a29c-fbd8aef6937b/question-edits/77b369b6-b629-47a0-bff2-5ad10c50dfa8.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-cou--bceaa05b-1eaa-4369-a29c-fbd8aef6937b/question-edits/831e3646-d71e-4263-88e8-87bc73789bb1.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-cou--bceaa05b-1eaa-4369-a29c-fbd8aef6937b/question-edits/8fc4caed-7300-4425-b013-f3b901f57a76.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-cou--bceaa05b-1eaa-4369-a29c-fbd8aef6937b/question-edits/999f0705-6283-4f33-976c-3df679bfcd31.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-cou--bceaa05b-1eaa-4369-a29c-fbd8aef6937b/question-edits/ef7f6bf9-a270-4a1b-a7fd-ed8669343a72.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-006-obligations-to-fellow-architects-non-poaching-non-interference-and-professional-cou--bceaa05b-1eaa-4369-a29c-fbd8aef6937b/question-edits/fc9c8b45-c99f-40f2-8ca2-8e0df0ae22a2.json"
+      ],
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "sources_count": 1,
+      "source_locator_summary": "UAP Document Code of Ethics, responsibilities to colleagues and subordinates, raw markdown lines 92-118",
+      "normalized_hash": "sha256:e43e830621dd96d2af56bd50e17d5623519adb19e72084c106e25b3862f22a60",
+      "candidate_hash": "sha256:e43e830621dd96d2af56bd50e17d5623519adb19e72084c106e25b3862f22a60",
+      "sources_hash": "sha256:d21710fd329f063dd101d42c0fac3a12a1939ec93e89e40d967e5b4afade4bb5",
+      "compose": {
+        "passed": true,
+        "blockers": 0
+      },
+      "diff": {
+        "passed": true,
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": 0
+      },
+      "validate": {
+        "passed": true,
+        "blockers": 0,
+        "warnings": 1,
+        "warning_summary": "component-usage.json missing only"
+      },
+      "blockers": []
+    },
+    {
+      "article_id": "92d4ab9e-b544-4812-96b7-72ca589f102c",
+      "slug": "lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality",
+      "title": "Obligations to Contractors and Suppliers",
+      "status": "local_passed",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality--92d4ab9e-b544-4812-96b7-72ca589f102c",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality--92d4ab9e-b544-4812-96b7-72ca589f102c",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality--92d4ab9e-b544-4812-96b7-72ca589f102c/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality--92d4ab9e-b544-4812-96b7-72ca589f102c/question-edits",
+      "question_edit_files": [
+        ".ai/content-audit-export/articles/lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality--92d4ab9e-b544-4812-96b7-72ca589f102c/question-edits/215b49ad-ce9c-4843-a3d6-bb1124cf7cea.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality--92d4ab9e-b544-4812-96b7-72ca589f102c/question-edits/2ff5b9df-3d2e-42aa-a409-4f51dbf406e2.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality--92d4ab9e-b544-4812-96b7-72ca589f102c/question-edits/6097f8ef-9ea1-41f4-95e4-83195b35d11d.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality--92d4ab9e-b544-4812-96b7-72ca589f102c/question-edits/7031488b-005f-4395-8d0a-76df392a5889.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality--92d4ab9e-b544-4812-96b7-72ca589f102c/question-edits/7a9d4cfb-7fc1-457e-92dc-b4f6d75aad00.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality--92d4ab9e-b544-4812-96b7-72ca589f102c/question-edits/7db0b242-4918-4bf2-8284-f36a194f0719.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality--92d4ab9e-b544-4812-96b7-72ca589f102c/question-edits/b115192d-3fd5-4d21-b052-b4e2fae2ca56.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality--92d4ab9e-b544-4812-96b7-72ca589f102c/question-edits/b4dd359c-ce6e-4f7f-9a2c-aa1c74ba09a2.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality--92d4ab9e-b544-4812-96b7-72ca589f102c/question-edits/d1cb71cf-000b-4308-b705-588edc3e3d62.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality--92d4ab9e-b544-4812-96b7-72ca589f102c/question-edits/e4c7ecba-d157-4e3d-bac3-e339b60ac20c.json"
+      ],
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "sources_count": 1,
+      "source_locator_summary": "UAP Document Code of Ethics, contractor/supplier duties, raw markdown lines 66-89",
+      "normalized_hash": "sha256:7960ee3ad54cc8cc6a449fc5a769bfd92373c0f9abf7679858023257d5d8d7a1",
+      "candidate_hash": "sha256:7960ee3ad54cc8cc6a449fc5a769bfd92373c0f9abf7679858023257d5d8d7a1",
+      "sources_hash": "sha256:6adb57ecafbae2ae7effebce519bc12af2c3317a1d12ab19f357b8ccd0a508c5",
+      "compose": {
+        "passed": true,
+        "blockers": 0
+      },
+      "diff": {
+        "passed": true,
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": 0
+      },
+      "validate": {
+        "passed": true,
+        "blockers": 0,
+        "warnings": 1,
+        "warning_summary": "component-usage.json missing only"
+      },
+      "blockers": []
+    },
+    {
+      "article_id": "4b4de57e-db7f-44d9-98f7-a0a1fe6e2428",
+      "slug": "lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration",
+      "title": "Grounds for Suspension and Revocation",
+      "status": "local_passed",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration--4b4de57e-db7f-44d9-98f7-a0a1fe6e2428",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration--4b4de57e-db7f-44d9-98f7-a0a1fe6e2428",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration--4b4de57e-db7f-44d9-98f7-a0a1fe6e2428/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration--4b4de57e-db7f-44d9-98f7-a0a1fe6e2428/question-edits",
+      "question_edit_files": [
+        ".ai/content-audit-export/articles/lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration--4b4de57e-db7f-44d9-98f7-a0a1fe6e2428/question-edits/5d63ff24-f6fa-465d-947a-fefee59f2da0.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration--4b4de57e-db7f-44d9-98f7-a0a1fe6e2428/question-edits/652b4908-eb70-4af4-ab23-632ea52cba58.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration--4b4de57e-db7f-44d9-98f7-a0a1fe6e2428/question-edits/b10b3f85-1a7b-434a-9777-7068ce7b7cbb.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration--4b4de57e-db7f-44d9-98f7-a0a1fe6e2428/question-edits/b38b4c8d-0a6a-401e-af49-b07ea4c552f7.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration--4b4de57e-db7f-44d9-98f7-a0a1fe6e2428/question-edits/b3d6f710-676b-4588-91f1-56761f20ee38.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration--4b4de57e-db7f-44d9-98f7-a0a1fe6e2428/question-edits/b72282c0-da4a-4363-856a-fadd7a58025d.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration--4b4de57e-db7f-44d9-98f7-a0a1fe6e2428/question-edits/b8567397-e957-4c58-9548-7eaf89823e2b.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration--4b4de57e-db7f-44d9-98f7-a0a1fe6e2428/question-edits/edc79348-a89f-4dd0-ae20-c272683bb96c.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration--4b4de57e-db7f-44d9-98f7-a0a1fe6e2428/question-edits/f7d55217-14d9-485b-a78d-73d723319728.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration--4b4de57e-db7f-44d9-98f7-a0a1fe6e2428/question-edits/fd15b249-13dc-4a96-86c6-5511f26d3a60.json"
+      ],
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "sources_count": 2,
+      "source_locator_summary": "RA 9266 IRR Section 23 and Section 24, raw markdown lines 629-666",
+      "normalized_hash": "sha256:55676e0a2e160aea7929e38b0fd48c1f725780c8a809a752acc6787efdca3f20",
+      "candidate_hash": "sha256:55676e0a2e160aea7929e38b0fd48c1f725780c8a809a752acc6787efdca3f20",
+      "sources_hash": "sha256:d7e4a41d2272686d0e8288cb7fe891e81af7d43da3074601cc64a48fe2285a89",
+      "compose": {
+        "passed": true,
+        "blockers": 0
+      },
+      "diff": {
+        "passed": true,
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": 0
+      },
+      "validate": {
+        "passed": true,
+        "blockers": 0,
+        "warnings": 1,
+        "warning_summary": "component-usage.json missing only"
+      },
+      "blockers": []
+    },
+    {
+      "article_id": "17350925-ae83-47a1-a30f-a96eb5c1d942",
+      "slug": "lea-prac-eth-011-introduction",
+      "title": "Conflict of Interest in Architectural Practice",
+      "status": "local_passed",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-prac-eth-011-introduction--17350925-ae83-47a1-a30f-a96eb5c1d942",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-eth-011-introduction--17350925-ae83-47a1-a30f-a96eb5c1d942",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-eth-011-introduction--17350925-ae83-47a1-a30f-a96eb5c1d942/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-eth-011-introduction--17350925-ae83-47a1-a30f-a96eb5c1d942/question-edits",
+      "question_edit_files": [
+        ".ai/content-audit-export/articles/lea-prac-eth-011-introduction--17350925-ae83-47a1-a30f-a96eb5c1d942/question-edits/14c37c46-61b0-4f4d-a61d-941c0b389cc6.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-011-introduction--17350925-ae83-47a1-a30f-a96eb5c1d942/question-edits/4a4b232d-52c5-4a92-995d-15187854f640.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-011-introduction--17350925-ae83-47a1-a30f-a96eb5c1d942/question-edits/5c8e4951-3070-4c75-b9d2-3f0c293b8adb.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-011-introduction--17350925-ae83-47a1-a30f-a96eb5c1d942/question-edits/62d56437-f1b2-4311-afb0-0dc5c860d753.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-011-introduction--17350925-ae83-47a1-a30f-a96eb5c1d942/question-edits/6fdf4077-a9d5-44ae-bdcc-d34dc8f6b291.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-011-introduction--17350925-ae83-47a1-a30f-a96eb5c1d942/question-edits/78589ec6-3902-46e7-b155-0a60610189a8.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-011-introduction--17350925-ae83-47a1-a30f-a96eb5c1d942/question-edits/81d5f0a4-5de9-4f36-bcca-cbd66784eb1b.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-011-introduction--17350925-ae83-47a1-a30f-a96eb5c1d942/question-edits/a6c5ce7d-e16e-4810-aefc-ac000f3d3c5d.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-011-introduction--17350925-ae83-47a1-a30f-a96eb5c1d942/question-edits/a90cf197-75b1-4f5e-848f-3372822297e9.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-011-introduction--17350925-ae83-47a1-a30f-a96eb5c1d942/question-edits/fff1f9b0-8855-4687-a434-a09435c6e28d.json"
+      ],
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "sources_count": 1,
+      "source_locator_summary": "UAP Document Code of Ethics, client/contractor/supplier duties, raw markdown lines 47-89",
+      "normalized_hash": "sha256:7b7b146fb37c9c90fe2183b133a693ca986b51beaaad724c5ab5c982ed876fdd",
+      "candidate_hash": "sha256:7b7b146fb37c9c90fe2183b133a693ca986b51beaaad724c5ab5c982ed876fdd",
+      "sources_hash": "sha256:b34598cc02519fffc91d8bf26b8e3d0d1c93ccb72f14c6de6f8a7f52264b1274",
+      "compose": {
+        "passed": true,
+        "blockers": 0
+      },
+      "diff": {
+        "passed": true,
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": 0
+      },
+      "validate": {
+        "passed": true,
+        "blockers": 0,
+        "warnings": 1,
+        "warning_summary": "component-usage.json missing only"
+      },
+      "blockers": []
+    },
+    {
+      "article_id": "5f341f81-5e43-49d6-a821-2a67c5d07c59",
+      "slug": "lea-prac-eth-012-introduction",
+      "title": "Outside Returns, Discounts, and Kickbacks",
+      "status": "local_passed",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-prac-eth-012-introduction--5f341f81-5e43-49d6-a821-2a67c5d07c59",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-eth-012-introduction--5f341f81-5e43-49d6-a821-2a67c5d07c59",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-eth-012-introduction--5f341f81-5e43-49d6-a821-2a67c5d07c59/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-eth-012-introduction--5f341f81-5e43-49d6-a821-2a67c5d07c59/question-edits",
+      "question_edit_files": [
+        ".ai/content-audit-export/articles/lea-prac-eth-012-introduction--5f341f81-5e43-49d6-a821-2a67c5d07c59/question-edits/2063e4be-3358-499d-9bbd-13c447cd3f91.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-012-introduction--5f341f81-5e43-49d6-a821-2a67c5d07c59/question-edits/34c8613d-3874-49de-964b-82fe709a428d.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-012-introduction--5f341f81-5e43-49d6-a821-2a67c5d07c59/question-edits/418fe8a3-e45c-44a1-a6d5-551e90580eaf.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-012-introduction--5f341f81-5e43-49d6-a821-2a67c5d07c59/question-edits/73790153-4b1a-452a-9c9c-665f06c5ea78.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-012-introduction--5f341f81-5e43-49d6-a821-2a67c5d07c59/question-edits/905d8e38-c30f-470c-bbe8-a1412475183b.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-012-introduction--5f341f81-5e43-49d6-a821-2a67c5d07c59/question-edits/9794bfb2-7c51-4fa9-9681-3987cc91b01d.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-012-introduction--5f341f81-5e43-49d6-a821-2a67c5d07c59/question-edits/a1bb23ae-f705-4595-8b48-26a7e6a84a59.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-012-introduction--5f341f81-5e43-49d6-a821-2a67c5d07c59/question-edits/c8b976b8-3a7a-49b4-9ba9-db28fdd03951.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-012-introduction--5f341f81-5e43-49d6-a821-2a67c5d07c59/question-edits/cd0086ea-52b8-46c9-9046-d2311ba8387d.json",
+        ".ai/content-audit-export/articles/lea-prac-eth-012-introduction--5f341f81-5e43-49d6-a821-2a67c5d07c59/question-edits/d2ae36fb-dcf9-48cc-b980-a669cc97c0c5.json"
+      ],
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "sources_count": 1,
+      "source_locator_summary": "UAP Document Code of Ethics, professional fee/outside returns and contractor/supplier benefits, raw markdown lines 57-89",
+      "normalized_hash": "sha256:7f0ce22a1c13c433e192b7e0ecb91d024952041ee1521f727d123623a1be507f",
+      "candidate_hash": "sha256:7f0ce22a1c13c433e192b7e0ecb91d024952041ee1521f727d123623a1be507f",
+      "sources_hash": "sha256:541b60de5139cf0b150430d98ca9f8b42dde6acf04bc9fcafd15c8ad36bdef73",
+      "compose": {
+        "passed": true,
+        "blockers": 0
+      },
+      "diff": {
+        "passed": true,
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": 0
+      },
+      "validate": {
+        "passed": true,
+        "blockers": 0,
+        "warnings": 1,
+        "warning_summary": "component-usage.json missing only"
+      },
+      "blockers": []
+    }
+  ],
+  "artifacts": {
+    "ledger_path": ".ai/content-audit-export/source-audited-article-batch-018-local-first-ledger-2026-05-10.json",
+    "report_path": ".ai/content-audit-export/source-audited-article-batch-018-local-first-report-2026-05-10.md"
+  },
+  "restrictions_observed": {
+    "supabase_push": false,
+    "deploy": false,
+    "commit": false
+  },
+  "next_phase_readiness": {
+    "ready_for_final_publishing_review": true,
+    "supabase_final_publishing_only": true,
+    "remote_stale_check_required_before_publish": true,
+    "unresolved_local_blockers": 0
+  }
+}

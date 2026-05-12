@@ -1,93 +1,51 @@
-
-
 ## Board Exam Quick Check
 
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+In a change-order question, first ask what is changing: work scope, contract sum, completion time, payment entitlement, or documented extra cost. Then ask who has authority to approve the financial or time effect. The architect can evaluate, interpret, certify, and administer the contract, but owner financial commitments must be grounded in the contract and documented.
 
-**Common mistake:** treating a familiar keyword in **Lea Prac Ctr 016 Change Orders Types Authority Limits And The Documentation Process** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
-
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
-## Change Orders — Types, Authority Limits, and the Documentation Process
-
-
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-prac-ctr-016-change-orders-0", type="image", caption="Change Order Process Flow — Documentation and Authorization Workflow", description="Flowchart showing the change order lifecycle: Change request submitted → Architect evaluates scope/cost/schedule impact → Owner approval → Change Order issued → Contractor implements → Architect verifies. Decision diamonds for: Does change affect cost? Does change affect schedule? Is change within architect's authority limit? Document flow arrows showing AIA G701 equivalent documentation."
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 ## Learning Goal
 
 After reading this article, you should be able to:
 
-- Define a Change Order and distinguish it from other contract modifications (Change Directive, Field Order).
-- Identify the types of changes: owner-initiated, field-discovered, deficiency, regulatory, and force majeure.
-- Explain the Architect's authority limits for issuing Change Orders and when Owner authorization is required.
-- Describe the Change Order documentation process and how cost and schedule adjustments are documented and approved.
+- Recognize when a source-backed change order is needed.
+- Identify the 15-day notice rule for extra-cost claims in the checked sources.
+- Distinguish a claim or request from an approved change order.
+- Apply the architect's payment-request role without giving the architect unlimited owner authority.
 
-Change orders formalize modifications to the scope of work, establishing new contract terms when conditions require deviation from the original design or scope.
+## What a Change Order Does
 
-### Definition and Necessity of Change Orders
+CIAP Document 102 defines a change order as a written order to the contractor that covers a change in the work and can adjust contract price or completion time. The source also links change orders to emergency work, quantity or scope increases, subsurface-condition changes, acceptance of nonconforming work with price reduction, and owner-requested acceleration where the owner benefits or causes delay.
 
-A change order is a formal modification to the original contract scope of work. Change orders address unanticipated site conditions, design modifications requested by the owner, errors discovered in contract documents, regulatory requirement changes, and other circumstances requiring work outside the original contract scope. Without a change order process, disputes arise regarding what work is included in the contract price and what constitutes extra work.
+UAP Document 301 also connects change orders with cost consequences. Its revisions state that if the contractor is compelled to suspend work due to listed hardships or difficulties, reasonable shutdown, delay, and startup costs are added to the contract sum by appropriate change order.
 
-The change order serves as a formal contract amendment documenting the modification, specifying what additional or revised work is required, establishing responsibility for cost and schedule impacts, and recording the agreement of all parties to the modification. This formal documentation prevents future disputes over whether specific work was authorized and what the contractor's compensation should be for the modified scope.
+## Claims Are Not Automatically Approved Change Orders
 
-### Types of Changes and Their Causes
+The checked sources support a documentation sequence. A contractor who claims extra cost from an owner instruction, post-bid drawings or specifications, or owner-caused delay must give written notice within the source-stated time limit. UAP Document 301's time-limit table states the notice is given to the architect within 15 days after receipt of an instruction involving extra cost or after recognition of delay due to the owner's fault. CIAP Document 102 similarly states a 15-day written notice path for extra-cost claims.
 
-Changes fall into several categories. _Owner-initiated changes_ occur when the owner requests design modifications, additional scope, or specification changes. These changes increase the contract scope beyond the original documents. _Field-discovered changes_ arise from unforeseen site conditions like subsurface obstacles, underground utilities, or structural deficiencies not apparent from initial documents. _Deficiency changes_ address errors in the contract documents, such as conflicting specifications or impossible design requirements requiring clarification.
+The exam distinction is simple: a claim or notice starts the documentation path; an approved change order records the agreed or authorized adjustment.
 
-_Regulatory changes_ result from code changes or new requirements imposed by authorities having jurisdiction during construction. _Force majeure changes_ may arise from extraordinary circumstances like natural disasters, though these are often addressed by contract provisions rather than formal change orders.
+## Architect's Role and Limits
 
-### The Change Order Documentation Process
+The architect can interpret contract documents, evaluate work, certify payment, withhold a payment request with written reasons, and certify the amount the architect can represent to the owner when the contractor and architect cannot agree on a revised amount. UAP Document 301 states the architect acts on a payment request within 15 days after receipt.
 
-When a change is identified, the architect documents the proposed modification in detail. The change order proposal includes a clear description of the work to be added, deleted, or modified, specifications and standards to be applied, drawings or sketches showing the change, and a cost estimate for the additional work. The architect requests the contractor's proposal regarding cost, schedule impact, and resource allocation for the change.
+Those powers do not make the architect the unlimited source of owner funding. If a change affects contract sum or time, keep the documentation tied to contract authority, written notice, owner approval where needed, and an appropriate change order.
 
-The contractor provides a proposal including the cost of performing the changed work, any schedule delay caused by the change, and modifications to resource allocation if required. The contractor's proposal may include overhead and profit calculations. The architect evaluates the contractor's proposal against industry standards and similar completed work to assess reasonableness.
+## Practical Documentation Chain
 
-### Cost Adjustments and Schedule Impacts
+A source-safe change-order workflow is:
 
-Change orders must address both cost and schedule implications. An addition to the scope increases the contract price; a deletion reduces it. Deductions may be based on a reduction in material quantities, labor hours eliminated, or scope of equipment rental reduced. The change order must specify exactly how the contract price is adjusted and the basis for the adjustment.
+1. Identify the changed condition, instruction, work, or delay.
+2. Give written notice or request within the contract time limit when the source requires it.
+3. Let the architect evaluate the contract basis, amount, work quality, or payment request.
+4. Obtain required owner authorization for financial or time commitments.
+5. Record the approved adjustment in a written change order.
 
-Schedule impacts are equally important. Many changes delay the project schedule. The change order should quantify delay impact and establish a revised substantial completion date. If a change is directed by the owner and causes delay, the contractor may be entitled to a time extension allowing extended performance without liquidated damages. The change order documents this time adjustment formally.
+## How It Is Tested
 
-### Types of Change Order Provisions
+Expect questions about extra-cost notice, payment-request action, emergency work, nonconforming work accepted with price reduction, owner-requested acceleration, suspension costs, and the difference between architect certification and owner approval.
 
-Change orders may be _additive_, increasing both cost and scope. They may be _deductive_, reducing cost and scope. _Directive changes_ are owner directives requiring specific modifications, sometimes issued before the cost and schedule impacts are fully determined, with final pricing determined later. _Constructive changes_ arise when the architect's direction or the owner's actions effectively require modified work even though no formal change order has been issued—these create disputes requiring careful documentation.
+## Common Mistakes
 
-A _force account change_ is performed on a time-and-materials basis with the contractor billing for actual labor, materials, and equipment time with overhead and profit markups applied. This approach is used when the scope change cannot be estimated precisely before work begins and the actual cost will be determined by what is ultimately performed.
-
-### Documentation Requirements and Record-Keeping
-
-Complete documentation of all changes is essential. The architect maintains a change order log tracking all proposed and approved modifications. Each change order should be numbered sequentially and cross-referenced to the contract documents and project records. Copies are distributed to the contractor, owner, and all relevant parties.
-
-The contractor maintains daily logs documenting all work performed on changed scope, materials incorporated, equipment utilized, and schedule impacts. These records support the contractor's cost documentation if disputes later arise regarding what work was actually performed or what scope modifications occurred. The architect's inspection records should similarly document observation of the changed work as it is performed.
-
-### Cumulative Impact and Pricing
-
-Over a project's duration, multiple changes accumulate, potentially creating significant pricing and scheduling impacts. Some contracts include provisions addressing cumulative change impact, requiring the architect to re-evaluate overhead, profit, and resource allocation as the total modified scope increases. A contractor whose original contract work was substantially modified by multiple changes may have justification for additional compensation reflecting the increased complexity and resource impact of extensive modifications.
-
-Disputes frequently arise regarding whether the contractor is entitled to overhead and profit adjustments when multiple changes substantially alter the original contract conditions. Clear change order language addressing pricing methodology for cumulative changes prevents these disputes.
-
-[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code="nbcp", section="RA 9266", title="Architecture Act of 2004"
-- Text: RA 9266 governs architectural practice and contract requirements. Agreements must specify scope, compensation, termination, and dispute resolution per SPP Document 201.
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0003 component="ProcessFlow" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Proposal — Scope definition and fee negotiation Contract Execution — Signing of UAP Doc 301 Service Delivery — Performance of defined phases Payment Processing — Progress billing and certificates Close-out — Final certificate, retention release
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Under UAP Doc 301, basic services = all 6 phases. Additional services (feasibility, supervision) are separately compensated. Verify exclusions.
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0005 component="KeyValues" status="preserved"]
-Extracted summary:
-- Props: items="{[{\"value\": \"10%\", \"label\": \"Standard Retention\"}", value=true, days=true, label=true, Payment=true, Period=true, COLA=true, Escalation=true, Max=true, CD=true, Phase=true, Fee=true
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+- Treating a contractor's request as an approved change order.
+- Missing the 15-day written-notice path for extra-cost claims.
+- Letting the architect approve owner-funded scope increases without contract authority.
+- Forgetting that acceptance of nonconforming work may require a change order reflecting a price reduction.

@@ -1,0 +1,50 @@
+{
+  "question_id": "1d681c23-e1f2-4786-831d-a9b28d536a38",
+  "baseline_hash": "sha256:55fdeae230c00ee21320ba154e9f71a9ae57f56c52ea5960df8a4c53d2405f81",
+  "action": "replace",
+  "reason": "source-audited-article-batch-036-local-first: source-safe replacement grounded in local raw PDF/source family evidence; removes unsupported, stale, or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-036",
+  "approved_at": "2026-05-11T12:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-036-local-first",
+    "checked_sources": [
+      {
+        "source_id": "bp-344-2024-revised-irr-ncda-local",
+        "label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "checked_markdown_lines": [
+          "BP 344 2024 Revised IRR refined markdown lines 1090-1135",
+          "BP 344 2024 Revised IRR refined markdown lines 1296-1306",
+          "BP 344 2024 Revised IRR refined markdown lines 1493-1514"
+        ]
+      }
+    ],
+    "citation": "BP 344 2024 Revised IRR, Public Telephones"
+  },
+  "proposed": {
+    "text": "Where an establishment provides public telephones, which accessible-phone distribution rule applies?",
+    "options": [
+      {
+        "id": "b036-4985-04-a",
+        "text": "One for each floor and one for every group of two or more phones"
+      },
+      {
+        "id": "b036-4985-04-b",
+        "text": "One only at the main lobby"
+      },
+      {
+        "id": "b036-4985-04-c",
+        "text": "One for every ten phones only"
+      },
+      {
+        "id": "b036-4985-04-d",
+        "text": "One only where a security desk is present"
+      }
+    ],
+    "correct_option_id": "b036-4985-04-a",
+    "rationale": "Correct answer: One for each floor and one for every group of two or more phones. This is directly supported by BP 344 2024 Revised IRR, Public Telephones.",
+    "explanation": "The source-audited correction uses only the local raw PDF family and locator-checked refined markdown for BP 344 2024 Revised IRR, Public Telephones.",
+    "code_citation": "BP 344 2024 Revised IRR, Public Telephones"
+  }
+}

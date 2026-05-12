@@ -1,0 +1,428 @@
+{
+  "batch_id": "source-audited-article-batch-011",
+  "audit_date": "2026-05-10",
+  "completed_at": "2026-05-10T19:20:00.000+08:00",
+  "mode": "LOCAL_FIRST_NO_SUPABASE_NO_DEPLOY_NO_COMMIT",
+  "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+  "selection_policy": {
+    "selected_articles": 5,
+    "selected_ids": [
+      "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+      "6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+      "8e546a58-36c2-4cd3-8340-2cb9d1189b13",
+      "24b0a3db-e6bc-45d0-a9a1-d83009112efb"
+    ],
+    "avoided_prior_batches": [
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "009",
+      "010"
+    ],
+    "preference": "High-value LEA legal/code/professional-practice articles with linked questions and available local raw PDFs under vitruvius-connection/001_Raw-Source-Layer.",
+    "notes": "No selected article ID appears in the recorded source-audited batch 001-010 selections."
+  },
+  "counts": {
+    "selected_articles": 5,
+    "passed_articles": 5,
+    "parked_articles": 0,
+    "linked_questions": 67,
+    "question_edit_files": 67,
+    "source_records": 6,
+    "distinct_raw_source_files": 5,
+    "compose_blockers": 0,
+    "diff_blockers": 0,
+    "validate_blockers": 0
+  },
+  "raw_sources": [
+    {
+      "key": "fire-alarm-systems",
+      "label": "RA 9514 2019 Revised IRR, Fire Code of the Philippines",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+      "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+      "raw_markdown_sha256": "sha256:eb992b1c0090e1f8f34ee3ad24d20be3b4ffaa34ec3ab9d341b6f1596865dd26",
+      "used_by_article_ids": [
+        "1d37a355-c8bf-4d5e-a41b-07a9817a4427"
+      ]
+    },
+    {
+      "key": "bp344-washrooms",
+      "label": "2024 Revised IRR of BP 344, National Council on Disability Affairs",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "raw_markdown_sha256": "sha256:a621bcb059a5c023dc5056939a6fa8ae44b5f60a29918f628d81657b9639692a",
+      "used_by_article_ids": [
+        "6d5e0e55-215a-4806-a679-dac7aea5a99b",
+        "5aeda107-bc0d-4d0d-ab40-44e13fd95478"
+      ]
+    },
+    {
+      "key": "ra9184-procurement",
+      "label": "RA 9184 Government Procurement Reform Act",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/RA 9184 - Government Procurement Reform Act.pdf",
+      "raw_pdf_sha256": "sha256:c7cdc5c69dc447a185be6682f1cedfe3f55aa584f20a5ecbe4915504c2d7b8e8",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9184/RA 9184 - Government Procurement Reform Act.md",
+      "raw_markdown_sha256": "sha256:fcca884cef63406e220513da501b08c66cf34f95375eebd442e4968c0c9440cb",
+      "used_by_article_ids": [
+        "8e546a58-36c2-4cd3-8340-2cb9d1189b13"
+      ]
+    },
+    {
+      "key": "ra9184-procurement",
+      "label": "RA 9184 IRR, Government Procurement IRR",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/RA 9184 IRR - Government Procurement IRR.pdf",
+      "raw_pdf_sha256": "sha256:19dda526ccf537bf664f79b3fd86521ea37191a84811aefa5482d70f08fc6b95",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9184/RA 9184 IRR - Government Procurement IRR.md",
+      "raw_markdown_sha256": "sha256:32dd794a3030d72e05a60ff1faa9745543c1d1d75da0e0c1052fda845afa0197",
+      "used_by_article_ids": [
+        "8e546a58-36c2-4cd3-8340-2cb9d1189b13"
+      ]
+    },
+    {
+      "key": "spp202-regular-design-services",
+      "label": "UAP Standards of Professional Practice, SPP Document 202",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+      "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
+      "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
+      "used_by_article_ids": [
+        "24b0a3db-e6bc-45d0-a9a1-d83009112efb"
+      ]
+    }
+  ],
+  "improved_article_folder_paths": [
+    {
+      "article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+      "article_folder": ".ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+      "normalized_path": ".ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/candidate.md"
+    },
+    {
+      "article_id": "6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "article_folder": ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "normalized_path": ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b/candidate.md"
+    },
+    {
+      "article_id": "5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+      "article_folder": ".ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+      "normalized_path": ".ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478/candidate.md"
+    },
+    {
+      "article_id": "8e546a58-36c2-4cd3-8340-2cb9d1189b13",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions--8e546a58-36c2-4cd3-8340-2cb9d1189b13",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions--8e546a58-36c2-4cd3-8340-2cb9d1189b13",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions--8e546a58-36c2-4cd3-8340-2cb9d1189b13/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions--8e546a58-36c2-4cd3-8340-2cb9d1189b13/candidate.md"
+    },
+    {
+      "article_id": "24b0a3db-e6bc-45d0-a9a1-d83009112efb",
+      "article_folder": ".ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb",
+      "normalized_path": ".ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/candidate.md"
+    }
+  ],
+  "question_edits_folder_paths": [
+    {
+      "article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits",
+      "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits",
+      "question_edit_files": 25
+    },
+    {
+      "article_id": "6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "question_edits_folder": ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b/question-edits",
+      "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b/question-edits",
+      "question_edit_files": 11
+    },
+    {
+      "article_id": "5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+      "question_edits_folder": ".ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478/question-edits",
+      "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478/question-edits",
+      "question_edit_files": 11
+    },
+    {
+      "article_id": "8e546a58-36c2-4cd3-8340-2cb9d1189b13",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions--8e546a58-36c2-4cd3-8340-2cb9d1189b13/question-edits",
+      "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions--8e546a58-36c2-4cd3-8340-2cb9d1189b13/question-edits",
+      "question_edit_files": 10
+    },
+    {
+      "article_id": "24b0a3db-e6bc-45d0-a9a1-d83009112efb",
+      "question_edits_folder": ".ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/question-edits",
+      "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/question-edits",
+      "question_edit_files": 10
+    }
+  ],
+  "articles": [
+    {
+      "article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+      "title": "Fire Detection and Alarm Systems",
+      "slug": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr",
+      "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+      "article_folder": ".ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+      "normalized_path": ".ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/sources.json",
+      "evidence_path": ".ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/source-audit-evidence.json",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits",
+      "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits",
+      "source_count": 1,
+      "linked_questions": 25,
+      "question_edit_files": 25,
+      "compose": {
+        "blockers": 0,
+        "warnings": 0,
+        "candidate_hash": "sha256:7ebba222d3aaa6e0e09dec6c4e97fdc3362beee4788c5d0107342bbcdad6c337"
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": 0,
+        "warnings": 1,
+        "candidate_hash": "sha256:7ebba222d3aaa6e0e09dec6c4e97fdc3362beee4788c5d0107342bbcdad6c337",
+        "summary": "Locally safe after recomposition; remote stale check still required before push."
+      },
+      "validate": {
+        "valid": true,
+        "blockers": 0,
+        "warnings": 1,
+        "warning_summary": "component-usage.json has not been generated for this article yet; non-blocking in dry-run validation."
+      },
+      "evidence_claims": 26,
+      "raw_source_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
+      "markdown_lines_checked": [
+        "3991-4060",
+        "4624-4627",
+        "6098-6106",
+        "6743-6770"
+      ],
+      "candidate_sha256": "sha256:7ebba222d3aaa6e0e09dec6c4e97fdc3362beee4788c5d0107342bbcdad6c337",
+      "local_integrity_note": "metadata original/content hash and sync-state original hash were reconciled to the actual local original.md hash before final diff/validate."
+    },
+    {
+      "article_id": "6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "title": "BP 344 Accessible Washrooms",
+      "slug": "bp-344-accessible-washrooms",
+      "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+      "article_folder": ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b",
+      "normalized_path": ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b/sources.json",
+      "evidence_path": ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b/source-audit-evidence.json",
+      "question_edits_folder": ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b/question-edits",
+      "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b/question-edits",
+      "source_count": 1,
+      "linked_questions": 11,
+      "question_edit_files": 11,
+      "compose": {
+        "blockers": 0,
+        "warnings": 0,
+        "candidate_hash": "sha256:eaa312f11bfa6146e7737900dbe87b5c65c2784ac67042433ec891f2a314f0f5"
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": 0,
+        "warnings": 1,
+        "candidate_hash": "sha256:eaa312f11bfa6146e7737900dbe87b5c65c2784ac67042433ec891f2a314f0f5",
+        "summary": "Locally safe after recomposition; remote stale check still required before push."
+      },
+      "validate": {
+        "valid": true,
+        "blockers": 0,
+        "warnings": 1,
+        "warning_summary": "component-usage.json has not been generated for this article yet; non-blocking in dry-run validation."
+      },
+      "evidence_claims": 12,
+      "raw_source_locator": "2024 Revised IRR of BP 344, Appendix A, Section 6 Toilets and Baths",
+      "markdown_lines_checked": [
+        "931-995"
+      ],
+      "candidate_sha256": "sha256:eaa312f11bfa6146e7737900dbe87b5c65c2784ac67042433ec891f2a314f0f5",
+      "local_integrity_note": "metadata original/content hash and sync-state original hash were reconciled to the actual local original.md hash before final diff/validate."
+    },
+    {
+      "article_id": "5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+      "title": "BP 344 Tactile and Visual Alarms",
+      "slug": "bp-344-tactile-and-visual-alarms",
+      "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+      "article_folder": ".ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+      "normalized_path": ".ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478/sources.json",
+      "evidence_path": ".ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478/source-audit-evidence.json",
+      "question_edits_folder": ".ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478/question-edits",
+      "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478/question-edits",
+      "source_count": 1,
+      "linked_questions": 11,
+      "question_edit_files": 11,
+      "compose": {
+        "blockers": 0,
+        "warnings": 0,
+        "candidate_hash": "sha256:dde731a1fa69f710bdb608e897ccef311050541cb2474d90706eb8038bdfe259"
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": 0,
+        "warnings": 1,
+        "candidate_hash": "sha256:dde731a1fa69f710bdb608e897ccef311050541cb2474d90706eb8038bdfe259",
+        "summary": "Locally safe after recomposition; remote stale check still required before push."
+      },
+      "validate": {
+        "valid": true,
+        "blockers": 0,
+        "warnings": 1,
+        "warning_summary": "component-usage.json has not been generated for this article yet; non-blocking in dry-run validation."
+      },
+      "evidence_claims": 12,
+      "raw_source_locator": "2024 Revised IRR of BP 344, Appendix A, tactile floor surfaces and audio/visual/vibrating fire alarm systems",
+      "markdown_lines_checked": [
+        "378-523",
+        "992-994",
+        "1526-1538"
+      ],
+      "candidate_sha256": "sha256:dde731a1fa69f710bdb608e897ccef311050541cb2474d90706eb8038bdfe259",
+      "local_integrity_note": "metadata original/content hash and sync-state original hash were reconciled to the actual local original.md hash before final diff/validate."
+    },
+    {
+      "article_id": "8e546a58-36c2-4cd3-8340-2cb9d1189b13",
+      "title": "RA 9184 Government Procurement Reform Act Architecture Relevant Provisions",
+      "slug": "lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions",
+      "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions--8e546a58-36c2-4cd3-8340-2cb9d1189b13",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions--8e546a58-36c2-4cd3-8340-2cb9d1189b13",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions--8e546a58-36c2-4cd3-8340-2cb9d1189b13/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions--8e546a58-36c2-4cd3-8340-2cb9d1189b13/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions--8e546a58-36c2-4cd3-8340-2cb9d1189b13/sources.json",
+      "evidence_path": ".ai/content-audit-export/articles/lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions--8e546a58-36c2-4cd3-8340-2cb9d1189b13/source-audit-evidence.json",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions--8e546a58-36c2-4cd3-8340-2cb9d1189b13/question-edits",
+      "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions--8e546a58-36c2-4cd3-8340-2cb9d1189b13/question-edits",
+      "source_count": 2,
+      "linked_questions": 10,
+      "question_edit_files": 10,
+      "compose": {
+        "blockers": 0,
+        "warnings": 0,
+        "candidate_hash": "sha256:31e70f69541b47e5f1e63715969d22a4865a42fef65c59e80358fec7243756dc"
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": 0,
+        "warnings": 1,
+        "candidate_hash": "sha256:31e70f69541b47e5f1e63715969d22a4865a42fef65c59e80358fec7243756dc",
+        "summary": "Locally safe after recomposition; remote stale check still required before push."
+      },
+      "validate": {
+        "valid": true,
+        "blockers": 0,
+        "warnings": 1,
+        "warning_summary": "component-usage.json has not been generated for this article yet; non-blocking in dry-run validation."
+      },
+      "evidence_claims": 11,
+      "raw_source_locator": "RA 9184 Sections 3, 4, 5, 10, 11, and 12; RA 9184 IRR-A Sections 10, 11, 12, and 48",
+      "markdown_lines_checked": [
+        "RA 9184 Act raw markdown lines 20-82 and 239-286",
+        "RA 9184 IRR raw markdown lines 140-157 and 1393-1458"
+      ],
+      "candidate_sha256": "sha256:31e70f69541b47e5f1e63715969d22a4865a42fef65c59e80358fec7243756dc",
+      "local_integrity_note": "metadata original/content hash and sync-state original hash were reconciled to the actual local original.md hash before final diff/validate."
+    },
+    {
+      "article_id": "24b0a3db-e6bc-45d0-a9a1-d83009112efb",
+      "title": "SPP Doc 202: Regular Design Services",
+      "slug": "spp-doc-202-regular-design-services",
+      "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+      "article_folder": ".ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb",
+      "normalized_path": ".ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/sources.json",
+      "evidence_path": ".ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/source-audit-evidence.json",
+      "question_edits_folder": ".ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/question-edits",
+      "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/question-edits",
+      "source_count": 1,
+      "linked_questions": 10,
+      "question_edit_files": 10,
+      "compose": {
+        "blockers": 0,
+        "warnings": 0,
+        "candidate_hash": "sha256:fccda72e844d0d3132144a0bd124ddbdbb3b4d5182843b98f7f4d384b365420f"
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": 0,
+        "warnings": 1,
+        "candidate_hash": "sha256:fccda72e844d0d3132144a0bd124ddbdbb3b4d5182843b98f7f4d384b365420f",
+        "summary": "Locally safe after recomposition; remote stale check still required before push."
+      },
+      "validate": {
+        "valid": true,
+        "blockers": 0,
+        "warnings": 1,
+        "warning_summary": "component-usage.json has not been generated for this article yet; non-blocking in dry-run validation."
+      },
+      "evidence_claims": 11,
+      "raw_source_locator": "UAP Standards of Professional Practice, SPP Document 202, Sections 1, 2, and 5",
+      "markdown_lines_checked": [
+        "283-382",
+        "449-492",
+        "496-518"
+      ],
+      "candidate_sha256": "sha256:fccda72e844d0d3132144a0bd124ddbdbb3b4d5182843b98f7f4d384b365420f",
+      "local_integrity_note": "metadata original/content hash and sync-state original hash were reconciled to the actual local original.md hash before final diff/validate."
+    }
+  ],
+  "validation": {
+    "compose": "PASS: bun run content-audit:compose -- --article-id <id> --overwrite for all five selected articles; blockers=0.",
+    "diff": "PASS: bun run content-audit:diff -- --article-id <id> --summary for all five selected articles; safe_to_push=true and blockers=0. Supabase stale check remains final publishing only.",
+    "validate": "PASS: bun run content-audit:validate -- --article-id <id> --summary --dry-run for all five selected articles; valid=true and blockers=0. Each has one non-blocking component-usage warning.",
+    "scoped_checks": {
+      "json_parse_and_question_counts": "PASS: 103 JSON files parsed; linked_questions=67 and question_edit_files=67.",
+      "placeholder_internal_note_scan": "PASS: rg scan over selected normalized.md, candidate.md, and question-edits found no UI placeholders, TODO/FIXME markers, file/web stubs, internal notes, or placeholder text.",
+      "targeted_unit_test": "PASS: bun test scripts/content-audit/content-audit.test.ts; 27 pass, 0 fail.",
+      "diff_check": "PASS: git diff --check on selected five article folders plus Batch 011 ledger/report returned clean."
+    }
+  },
+  "artifacts": {
+    "ledger": ".ai/content-audit-export/source-audited-article-batch-011-local-first-ledger-2026-05-10.json",
+    "ledger_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-011-local-first-ledger-2026-05-10.json",
+    "report": ".ai/content-audit-export/source-audited-article-batch-011-local-first-report-2026-05-10.md",
+    "report_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-011-local-first-report-2026-05-10.md",
+    "per_article_evidence_files": [
+      ".ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/source-audit-evidence.json",
+      ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b/source-audit-evidence.json",
+      ".ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478/source-audit-evidence.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-012-ra-9184-government-procurement-reform-act-architecture-relevant-provisions--8e546a58-36c2-4cd3-8340-2cb9d1189b13/source-audit-evidence.json",
+      ".ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/source-audit-evidence.json"
+    ]
+  },
+  "next_phase_readiness": {
+    "local_first_batch_011_ready": true,
+    "ready_for_supabase_final_publishing_review": true,
+    "requires_before_publish": [
+      "fresh Supabase dry-run stale check",
+      "human/editorial acceptance of question-edit drafts",
+      "no deploy/commit performed in this batch"
+    ]
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-055-local-first",
+  "batch_number": 55,
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T19:38:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "1f47e3ab-3e9f-4bd1-b3b1-402e515059b0",
+    "slug": "lea-theo-002-05-core-concept",
+    "title": "Francis D.K. Ching: Circulation Patterns",
+    "article_folder": ".ai/content-audit-export/articles/lea-theo-002-05-core-concept--1f47e3ab-3e9f-4bd1-b3b1-402e515059b0",
+    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-05-core-concept--1f47e3ab-3e9f-4bd1-b3b1-402e515059b0",
+    "candidate_path": ".ai/content-audit-export/articles/lea-theo-002-05-core-concept--1f47e3ab-3e9f-4bd1-b3b1-402e515059b0/candidate.md",
+    "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-05-core-concept--1f47e3ab-3e9f-4bd1-b3b1-402e515059b0/candidate.md",
+    "question_edits_folder": ".ai/content-audit-export/articles/lea-theo-002-05-core-concept--1f47e3ab-3e9f-4bd1-b3b1-402e515059b0/question-edits",
+    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-05-core-concept--1f47e3ab-3e9f-4bd1-b3b1-402e515059b0/question-edits",
+    "normalized_sha256": "sha256:00699cedbebfe5a2ca5113ad0111d414f5122cea643b6957ad6089f3a868e4ef",
+    "candidate_sha256": "sha256:00699cedbebfe5a2ca5113ad0111d414f5122cea643b6957ad6089f3a868e4ef",
+    "linked_questions_sha256": "sha256:cffbca6a01edfd68fe4a578da50016b82ada2250f771fa87ccdde5c2a7a4813a",
+    "sources_sha256": "sha256:d3eff183053207bf932f14b856f5aba9781732dfe6415ccdba6a8d87afe7810d"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "refined_markdown_role": "locator_only",
+    "derivative_or_search_layer_as_primary": false,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": [],
+    "source_families_checked": [
+      {
+        "label": "George Salvan Architectural Theories of Design - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "raw_pdf_sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
+        "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
+        "locator": "George Salvan Architectural Theories of Design refined markdown lines 9735-10148"
+      },
+      {
+        "label": "theory - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+        "raw_pdf_sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+        "refined_markdown_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+        "locator": "theory refined markdown lines 40-44"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "theory-of-architecture",
+    "contains_legal_or_code_claims": false,
+    "source_risk_tier": "medium",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 14,
+    "question_edits_created": [
+      "92e8071b-b59a-488c-a0eb-c53044dbdf5a",
+      "270b06ac-8b00-4477-98eb-a9406e79cb19",
+      "570dc48e-99ad-47c3-8602-11ed6c400031",
+      "b75518e2-3eb9-4889-a516-79a0a1062f13",
+      "da5295a3-434b-4785-8478-d6691415923c",
+      "15ee9d07-c0e8-423a-94df-a7b09e02f175",
+      "a4eee2d4-3798-4bd4-b576-323c5fbd28e9",
+      "5ef94110-427e-4f4b-8df6-ca79db9639ec",
+      "106df0d2-4bbb-40cf-8525-0d662df88981",
+      "49f5737f-a4d3-4328-96ce-6da01eff5a89",
+      "7347c538-0f5a-4758-8dcc-41d1ef8ba25a",
+      "7c04eaaf-9b8f-423e-9069-37bd5d87ed05",
+      "5608bfa5-da1e-4631-9b77-1bc9b7ed2402",
+      "8809601d-96bb-4896-a7aa-5ca926c12817"
+    ]
+  },
+  "checked_markdown_lines": [
+    "George Salvan Architectural Theories of Design refined markdown lines 9735-10148",
+    "theory refined markdown lines 40-44"
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-theo-002-05-core-concept-b055-claim-01",
+      "claim_text": "Francis D.K. Ching: Circulation Patterns in Batch 055 is limited to checked local raw PDF source families and the refined markdown locators recorded for this article.",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "quoted_pdf_excerpt": "George Salvan Architectural Theories of Design refined markdown lines 9735-10148; theory refined markdown lines 40-44",
+        "source_ids": [
+          "salvan-theory-local-raw-pdf--b055-1f47e3ab-01",
+          "theory-local-raw-pdf--b055-1f47e3ab-02"
+        ]
+      },
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-theo-002-05-core-concept-b055-claim-questions",
+      "claim_text": "Batch 055 question edits audited for lea-theo-002-05-core-concept: 92e8071b-b59a-488c-a0eb-c53044dbdf5a, 270b06ac-8b00-4477-98eb-a9406e79cb19, 570dc48e-99ad-47c3-8602-11ed6c400031, b75518e2-3eb9-4889-a516-79a0a1062f13, da5295a3-434b-4785-8478-d6691415923c, 15ee9d07-c0e8-423a-94df-a7b09e02f175, a4eee2d4-3798-4bd4-b576-323c5fbd28e9, 5ef94110-427e-4f4b-8df6-ca79db9639ec, 106df0d2-4bbb-40cf-8525-0d662df88981, 49f5737f-a4d3-4328-96ce-6da01eff5a89, 7347c538-0f5a-4758-8dcc-41d1ef8ba25a, 7c04eaaf-9b8f-423e-9069-37bd5d87ed05, 5608bfa5-da1e-4631-9b77-1bc9b7ed2402, 8809601d-96bb-4896-a7aa-5ca926c12817",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "quoted_pdf_excerpt": "George Salvan Architectural Theories of Design refined markdown lines 9735-10148; theory refined markdown lines 40-44",
+        "source_ids": [
+          "salvan-theory-local-raw-pdf--b055-1f47e3ab-01",
+          "theory-local-raw-pdf--b055-1f47e3ab-02"
+        ]
+      },
+      "audit_result": "PASS"
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "local_first_only": true,
+    "supabase_write_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json"
+  },
+  "sme_review": {
+    "required": false,
+    "status": "not_required"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

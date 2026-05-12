@@ -1,0 +1,434 @@
+{
+  "batch_id": "source-audited-article-batch-047-local-first",
+  "batch_number": 47,
+  "generated_at": "2026-05-11T18:58:00.000+08:00",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "local_only": true,
+  "supabase_push": "NOT_ATTEMPTED",
+  "deploy": "NOT_ATTEMPTED",
+  "commit": "NOT_ATTEMPTED",
+  "inherited_blocker_status": "Batch 046 blockers=0",
+  "blockers": [],
+  "next_batch_readiness": "READY_FOR_BATCH_048_SELECTION",
+  "selection_rule": "Next five high-value LEA utilities/code/design clusters with linked questions and local PEC, RA 11285, DOE, Salvan Utilities 3 Lighting and Acoustics, and Handouts for Lighting and Acoustics raw PDF family support; exclude IDs recorded in Batches 001-046.",
+  "counts": {
+    "selected_articles": 5,
+    "linked_questions": 75,
+    "question_edits": 75,
+    "source_rows": 10,
+    "unique_raw_pdfs": 5,
+    "json_parse": 130,
+    "source_hash_checks": 20,
+    "marker_scanned_files": 95,
+    "marker_matches": 0,
+    "stale_compose_error_files": 0
+  },
+  "articles": [
+    {
+      "ordinal": 1,
+      "article_id": "29d54ad6-6af8-4c7b-b504-fa6e0a1e5220",
+      "slug": "lea-util-003-08-summary-for-exam-preparation",
+      "title": "Solar photovoltaic (PV) systems",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-util-003-08-summary-for-exam-preparation--29d54ad6-6af8-4c7b-b504-fa6e0a1e5220",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-08-summary-for-exam-preparation--29d54ad6-6af8-4c7b-b504-fa6e0a1e5220",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-util-003-08-summary-for-exam-preparation--29d54ad6-6af8-4c7b-b504-fa6e0a1e5220/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-08-summary-for-exam-preparation--29d54ad6-6af8-4c7b-b504-fa6e0a1e5220/question-edits",
+      "linked_questions": 15,
+      "question_edits": 15,
+      "source_rows": 2,
+      "original_hash": "sha256:9b9191767499a5b513c38a645eabb6672d6a2a907ad9ae3893c73be2ea83c993",
+      "normalized_hash": "sha256:cb8da04c9e0698baac9d8251397532edde7f79b2781d632daedc3ddc1f5a55ac",
+      "candidate_hash": "sha256:cb8da04c9e0698baac9d8251397532edde7f79b2781d632daedc3ddc1f5a55ac",
+      "sources_hash": "sha256:e561f18290a0f9eccc37ba84d17fac12b29b34b47759bd6ff57c8cfbcd55b5a5",
+      "checked_markdown_lines": [
+        "PEC refined markdown lines 29231-29720",
+        "RA 11285 refined markdown lines 31-145",
+        "RA 11285 refined markdown lines 1060-1135"
+      ],
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-08-summary-for-exam-preparation--29d54ad6-6af8-4c7b-b504-fa6e0a1e5220/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-08-summary-for-exam-preparation--29d54ad6-6af8-4c7b-b504-fa6e0a1e5220/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-08-summary-for-exam-preparation--29d54ad6-6af8-4c7b-b504-fa6e0a1e5220/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-08-summary-for-exam-preparation--29d54ad6-6af8-4c7b-b504-fa6e0a1e5220/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-08-summary-for-exam-preparation--29d54ad6-6af8-4c7b-b504-fa6e0a1e5220/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-08-summary-for-exam-preparation--29d54ad6-6af8-4c7b-b504-fa6e0a1e5220/ui-blocks.json"
+      ],
+      "question_edit_files": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-08-summary-for-exam-preparation--29d54ad6-6af8-4c7b-b504-fa6e0a1e5220/question-edits/1e4ca699-e662-4045-9e86-dafd78e26144.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-08-summary-for-exam-preparation--29d54ad6-6af8-4c7b-b504-fa6e0a1e5220/question-edits/2bfa9ead-92d2-4512-b0e6-8cd891c527bd.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-08-summary-for-exam-preparation--29d54ad6-6af8-4c7b-b504-fa6e0a1e5220/question-edits/650a00d0-3592-4e01-9b99-c751b770fbee.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-08-summary-for-exam-preparation--29d54ad6-6af8-4c7b-b504-fa6e0a1e5220/question-edits/65275b85-2e63-4081-9a10-2a2edbdd5918.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-08-summary-for-exam-preparation--29d54ad6-6af8-4c7b-b504-fa6e0a1e5220/question-edits/707888fc-cd60-4944-bff6-aaadd3b75076.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-08-summary-for-exam-preparation--29d54ad6-6af8-4c7b-b504-fa6e0a1e5220/question-edits/77f9a30f-5705-4de7-aadf-33038f4684c9.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-08-summary-for-exam-preparation--29d54ad6-6af8-4c7b-b504-fa6e0a1e5220/question-edits/7c428f52-60c7-40c5-ad6e-644be0928905.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-08-summary-for-exam-preparation--29d54ad6-6af8-4c7b-b504-fa6e0a1e5220/question-edits/7e4f7f10-bbc1-4e17-b2e0-d13cc723f767.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-08-summary-for-exam-preparation--29d54ad6-6af8-4c7b-b504-fa6e0a1e5220/question-edits/81614ce2-8812-4597-b3cb-aaf98484f382.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-08-summary-for-exam-preparation--29d54ad6-6af8-4c7b-b504-fa6e0a1e5220/question-edits/91dc3f80-3ccd-43b3-81d0-216b40a60262.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-08-summary-for-exam-preparation--29d54ad6-6af8-4c7b-b504-fa6e0a1e5220/question-edits/94bfd0a7-f9b5-40a0-9fde-25dcdec849cc.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-08-summary-for-exam-preparation--29d54ad6-6af8-4c7b-b504-fa6e0a1e5220/question-edits/a931bd9c-871e-4538-8ceb-3e7a0b07d5b2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-08-summary-for-exam-preparation--29d54ad6-6af8-4c7b-b504-fa6e0a1e5220/question-edits/af781c7d-9e8b-45d7-8998-4928600cbcad.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-08-summary-for-exam-preparation--29d54ad6-6af8-4c7b-b504-fa6e0a1e5220/question-edits/d60eece4-283d-4149-b28b-296778d93771.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-08-summary-for-exam-preparation--29d54ad6-6af8-4c7b-b504-fa6e0a1e5220/question-edits/f60b7368-b3c8-477f-b587-12fd5c0beb58.json"
+      ],
+      "gates": {
+        "compose": "PASS",
+        "diff": "PASS",
+        "validate": "PASS",
+        "ui_block_validation": "PASS",
+        "source_audit": "PASS"
+      }
+    },
+    {
+      "ordinal": 2,
+      "article_id": "dd8ec17f-7f5c-4652-9257-65811b1ead0c",
+      "slug": "lea-util-006-02-what-you-need-to-know-for-the-lea",
+      "title": "Reverberation time (RT60)",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-util-006-02-what-you-need-to-know-for-the-lea--dd8ec17f-7f5c-4652-9257-65811b1ead0c",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-02-what-you-need-to-know-for-the-lea--dd8ec17f-7f5c-4652-9257-65811b1ead0c",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-util-006-02-what-you-need-to-know-for-the-lea--dd8ec17f-7f5c-4652-9257-65811b1ead0c/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-02-what-you-need-to-know-for-the-lea--dd8ec17f-7f5c-4652-9257-65811b1ead0c/question-edits",
+      "linked_questions": 15,
+      "question_edits": 15,
+      "source_rows": 2,
+      "original_hash": "sha256:37a014ed5464f4d6ff46280445fbbc167fb80cc3d7024cc617381d33b6a1a06e",
+      "normalized_hash": "sha256:1af2680c0611fd0c767c71cb2bee22304f7154fbbcd9602a2c9cb115a24ac97f",
+      "candidate_hash": "sha256:1af2680c0611fd0c767c71cb2bee22304f7154fbbcd9602a2c9cb115a24ac97f",
+      "sources_hash": "sha256:55e5fa05278bb7b642e3a2cb437b816f0487bd5cc3c06c5b36ecd4bea726e844",
+      "checked_markdown_lines": [
+        "Handouts for Lighting and Acoustics refined markdown lines 100-314",
+        "Salvan Utilities 3 refined markdown lines 3796-3861",
+        "Salvan Utilities 3 refined markdown lines 4383-4385"
+      ],
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-02-what-you-need-to-know-for-the-lea--dd8ec17f-7f5c-4652-9257-65811b1ead0c/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-02-what-you-need-to-know-for-the-lea--dd8ec17f-7f5c-4652-9257-65811b1ead0c/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-02-what-you-need-to-know-for-the-lea--dd8ec17f-7f5c-4652-9257-65811b1ead0c/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-02-what-you-need-to-know-for-the-lea--dd8ec17f-7f5c-4652-9257-65811b1ead0c/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-02-what-you-need-to-know-for-the-lea--dd8ec17f-7f5c-4652-9257-65811b1ead0c/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-02-what-you-need-to-know-for-the-lea--dd8ec17f-7f5c-4652-9257-65811b1ead0c/ui-blocks.json"
+      ],
+      "question_edit_files": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-02-what-you-need-to-know-for-the-lea--dd8ec17f-7f5c-4652-9257-65811b1ead0c/question-edits/008457a2-ebe4-44c0-840c-12551953ba61.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-02-what-you-need-to-know-for-the-lea--dd8ec17f-7f5c-4652-9257-65811b1ead0c/question-edits/09bf6f0b-12b5-4c6e-a3e8-4ca29d3d5a6e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-02-what-you-need-to-know-for-the-lea--dd8ec17f-7f5c-4652-9257-65811b1ead0c/question-edits/16a064f7-5c21-4e38-984f-d1daa9bd7557.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-02-what-you-need-to-know-for-the-lea--dd8ec17f-7f5c-4652-9257-65811b1ead0c/question-edits/19e3404d-eabb-4cda-b8f0-dc26cde084c4.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-02-what-you-need-to-know-for-the-lea--dd8ec17f-7f5c-4652-9257-65811b1ead0c/question-edits/44a5397b-82d6-4658-b901-d4b41c3a44b3.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-02-what-you-need-to-know-for-the-lea--dd8ec17f-7f5c-4652-9257-65811b1ead0c/question-edits/557c4837-8386-4d5c-a381-f5f540ff0268.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-02-what-you-need-to-know-for-the-lea--dd8ec17f-7f5c-4652-9257-65811b1ead0c/question-edits/583dfd6d-45da-4ef7-bf3b-b6e99810e49b.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-02-what-you-need-to-know-for-the-lea--dd8ec17f-7f5c-4652-9257-65811b1ead0c/question-edits/5ed8e869-46aa-41e8-8ecd-a1a0c1096561.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-02-what-you-need-to-know-for-the-lea--dd8ec17f-7f5c-4652-9257-65811b1ead0c/question-edits/600a3602-57f3-481c-b1b0-234c5a66bbdf.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-02-what-you-need-to-know-for-the-lea--dd8ec17f-7f5c-4652-9257-65811b1ead0c/question-edits/7e54ad9b-d546-4915-a275-311e7c3efb97.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-02-what-you-need-to-know-for-the-lea--dd8ec17f-7f5c-4652-9257-65811b1ead0c/question-edits/9f7882bb-98d6-4f2f-96be-2085dfbac202.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-02-what-you-need-to-know-for-the-lea--dd8ec17f-7f5c-4652-9257-65811b1ead0c/question-edits/c6d05e08-637b-4fda-8d4e-4f7d7698a68f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-02-what-you-need-to-know-for-the-lea--dd8ec17f-7f5c-4652-9257-65811b1ead0c/question-edits/d628ce11-9148-4b23-94fe-fb5350d0bc78.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-02-what-you-need-to-know-for-the-lea--dd8ec17f-7f5c-4652-9257-65811b1ead0c/question-edits/df1752ba-bf24-47ab-9216-5f81aefa8411.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-02-what-you-need-to-know-for-the-lea--dd8ec17f-7f5c-4652-9257-65811b1ead0c/question-edits/ec24aa70-02b4-40fd-9e72-79dbd9042d2e.json"
+      ],
+      "gates": {
+        "compose": "PASS",
+        "diff": "PASS",
+        "validate": "PASS",
+        "ui_block_validation": "PASS",
+        "source_audit": "PASS"
+      }
+    },
+    {
+      "ordinal": 3,
+      "article_id": "bbb05afe-2df6-4bdc-b8b8-43f6115533d3",
+      "slug": "lea-util-006-03-what-you-need-to-know-for-the-lea",
+      "title": "Sound transmission and isolation",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-util-006-03-what-you-need-to-know-for-the-lea--bbb05afe-2df6-4bdc-b8b8-43f6115533d3",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-03-what-you-need-to-know-for-the-lea--bbb05afe-2df6-4bdc-b8b8-43f6115533d3",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-util-006-03-what-you-need-to-know-for-the-lea--bbb05afe-2df6-4bdc-b8b8-43f6115533d3/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-03-what-you-need-to-know-for-the-lea--bbb05afe-2df6-4bdc-b8b8-43f6115533d3/question-edits",
+      "linked_questions": 15,
+      "question_edits": 15,
+      "source_rows": 2,
+      "original_hash": "sha256:c094e3fdc585708ae35d87e5c0b940f296dd7c3e6cd75860312ff86696b4c4e9",
+      "normalized_hash": "sha256:2e1cd58209dd544ee81bb815bc05c56b1fe820981f4a6b79d1f79444e81b5853",
+      "candidate_hash": "sha256:2e1cd58209dd544ee81bb815bc05c56b1fe820981f4a6b79d1f79444e81b5853",
+      "sources_hash": "sha256:b5374dea2445ef9bf98df1fa31eb134c315db0887fb38489c343ab42757cc45b",
+      "checked_markdown_lines": [
+        "Salvan Utilities 3 refined markdown lines 5739-5990",
+        "Salvan Utilities 3 refined markdown lines 6015-6055",
+        "Salvan Utilities 3 refined markdown lines 19270-19292",
+        "Handouts for Lighting and Acoustics refined markdown lines 100-230"
+      ],
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-03-what-you-need-to-know-for-the-lea--bbb05afe-2df6-4bdc-b8b8-43f6115533d3/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-03-what-you-need-to-know-for-the-lea--bbb05afe-2df6-4bdc-b8b8-43f6115533d3/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-03-what-you-need-to-know-for-the-lea--bbb05afe-2df6-4bdc-b8b8-43f6115533d3/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-03-what-you-need-to-know-for-the-lea--bbb05afe-2df6-4bdc-b8b8-43f6115533d3/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-03-what-you-need-to-know-for-the-lea--bbb05afe-2df6-4bdc-b8b8-43f6115533d3/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-03-what-you-need-to-know-for-the-lea--bbb05afe-2df6-4bdc-b8b8-43f6115533d3/ui-blocks.json"
+      ],
+      "question_edit_files": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-03-what-you-need-to-know-for-the-lea--bbb05afe-2df6-4bdc-b8b8-43f6115533d3/question-edits/0588d3c6-a183-4dde-ac51-a0c3e1b07631.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-03-what-you-need-to-know-for-the-lea--bbb05afe-2df6-4bdc-b8b8-43f6115533d3/question-edits/104a989b-05e0-42c5-a6b1-7e9e7639edf3.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-03-what-you-need-to-know-for-the-lea--bbb05afe-2df6-4bdc-b8b8-43f6115533d3/question-edits/2fadf096-8aee-48cb-bf50-b8fe0e8d0170.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-03-what-you-need-to-know-for-the-lea--bbb05afe-2df6-4bdc-b8b8-43f6115533d3/question-edits/4593bcd1-9077-49a0-ada3-341356910e44.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-03-what-you-need-to-know-for-the-lea--bbb05afe-2df6-4bdc-b8b8-43f6115533d3/question-edits/4fa84301-4f29-49dd-a9ed-0c0e14bd4bf9.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-03-what-you-need-to-know-for-the-lea--bbb05afe-2df6-4bdc-b8b8-43f6115533d3/question-edits/62413dcd-cd81-4006-8c4f-1b3c8310323a.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-03-what-you-need-to-know-for-the-lea--bbb05afe-2df6-4bdc-b8b8-43f6115533d3/question-edits/62737c32-d734-4f81-99f0-f373ee9e999b.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-03-what-you-need-to-know-for-the-lea--bbb05afe-2df6-4bdc-b8b8-43f6115533d3/question-edits/9ed48709-6b8a-4321-8cff-bf8eea47606d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-03-what-you-need-to-know-for-the-lea--bbb05afe-2df6-4bdc-b8b8-43f6115533d3/question-edits/a72f4b62-0ba3-4fe0-8d9b-efd00d2b157f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-03-what-you-need-to-know-for-the-lea--bbb05afe-2df6-4bdc-b8b8-43f6115533d3/question-edits/a9de78bb-5139-4e93-9532-4cefe6ceebef.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-03-what-you-need-to-know-for-the-lea--bbb05afe-2df6-4bdc-b8b8-43f6115533d3/question-edits/b6a00aab-0894-4474-8933-6b820cfbd6f9.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-03-what-you-need-to-know-for-the-lea--bbb05afe-2df6-4bdc-b8b8-43f6115533d3/question-edits/bd9dbe00-98e6-46b7-a297-4e2df2bdf66c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-03-what-you-need-to-know-for-the-lea--bbb05afe-2df6-4bdc-b8b8-43f6115533d3/question-edits/c9f5a2a7-6b72-48c6-9f30-14768351ac43.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-03-what-you-need-to-know-for-the-lea--bbb05afe-2df6-4bdc-b8b8-43f6115533d3/question-edits/d1ed7c53-9f1d-4ec0-b650-ce35d1a7d3bc.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-03-what-you-need-to-know-for-the-lea--bbb05afe-2df6-4bdc-b8b8-43f6115533d3/question-edits/e60121d6-b028-44b5-be5d-9750f1abcb99.json"
+      ],
+      "gates": {
+        "compose": "PASS",
+        "diff": "PASS",
+        "validate": "PASS",
+        "ui_block_validation": "PASS",
+        "source_audit": "PASS"
+      }
+    },
+    {
+      "ordinal": 4,
+      "article_id": "f815c409-77f7-4489-b3b9-7cb2f3010ad9",
+      "slug": "lea-util-006-05-recommended-illumination-levels-by-space-type",
+      "title": "Illumination levels directly impact occupant productivity",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-util-006-05-recommended-illumination-levels-by-space-type--f815c409-77f7-4489-b3b9-7cb2f3010ad9",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-05-recommended-illumination-levels-by-space-type--f815c409-77f7-4489-b3b9-7cb2f3010ad9",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-util-006-05-recommended-illumination-levels-by-space-type--f815c409-77f7-4489-b3b9-7cb2f3010ad9/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-05-recommended-illumination-levels-by-space-type--f815c409-77f7-4489-b3b9-7cb2f3010ad9/question-edits",
+      "linked_questions": 15,
+      "question_edits": 15,
+      "source_rows": 2,
+      "original_hash": "sha256:11b0ef49b9a616aa0695518b3e71364eac5e9494c34f96d8a925fc70f47b10bc",
+      "normalized_hash": "sha256:1215291c4cb8c42e5560332061bb5c489b10e23eb4b388d1288c6ebea68742ae",
+      "candidate_hash": "sha256:1215291c4cb8c42e5560332061bb5c489b10e23eb4b388d1288c6ebea68742ae",
+      "sources_hash": "sha256:bf04003cdd7fbfc28d026aab7133e7d7a5d8444494f73d65a312a03346d08430",
+      "checked_markdown_lines": [
+        "DOE Guidelines refined markdown lines 323-405",
+        "DOE Guidelines refined markdown lines 458-476",
+        "Handouts for Lighting and Acoustics refined markdown lines 51-70"
+      ],
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-05-recommended-illumination-levels-by-space-type--f815c409-77f7-4489-b3b9-7cb2f3010ad9/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-05-recommended-illumination-levels-by-space-type--f815c409-77f7-4489-b3b9-7cb2f3010ad9/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-05-recommended-illumination-levels-by-space-type--f815c409-77f7-4489-b3b9-7cb2f3010ad9/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-05-recommended-illumination-levels-by-space-type--f815c409-77f7-4489-b3b9-7cb2f3010ad9/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-05-recommended-illumination-levels-by-space-type--f815c409-77f7-4489-b3b9-7cb2f3010ad9/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-05-recommended-illumination-levels-by-space-type--f815c409-77f7-4489-b3b9-7cb2f3010ad9/ui-blocks.json"
+      ],
+      "question_edit_files": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-05-recommended-illumination-levels-by-space-type--f815c409-77f7-4489-b3b9-7cb2f3010ad9/question-edits/081eebe8-f507-4af7-b288-783db6a3fce5.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-05-recommended-illumination-levels-by-space-type--f815c409-77f7-4489-b3b9-7cb2f3010ad9/question-edits/0eab051f-e0fd-4331-93c8-b52115910828.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-05-recommended-illumination-levels-by-space-type--f815c409-77f7-4489-b3b9-7cb2f3010ad9/question-edits/2a420569-5a81-4878-b6ab-d7986e8f1f38.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-05-recommended-illumination-levels-by-space-type--f815c409-77f7-4489-b3b9-7cb2f3010ad9/question-edits/417114a6-689d-4bb0-8ade-b78440f4fdab.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-05-recommended-illumination-levels-by-space-type--f815c409-77f7-4489-b3b9-7cb2f3010ad9/question-edits/4e65f0c0-d2ff-4bac-897b-e739415182ac.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-05-recommended-illumination-levels-by-space-type--f815c409-77f7-4489-b3b9-7cb2f3010ad9/question-edits/69766551-0f0c-4cd4-b59a-3b3bcefe596c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-05-recommended-illumination-levels-by-space-type--f815c409-77f7-4489-b3b9-7cb2f3010ad9/question-edits/6bd7a10c-c65a-4b59-85d7-798f9a529d40.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-05-recommended-illumination-levels-by-space-type--f815c409-77f7-4489-b3b9-7cb2f3010ad9/question-edits/b761cd1c-3adb-4190-a5c9-71ef272c55b8.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-05-recommended-illumination-levels-by-space-type--f815c409-77f7-4489-b3b9-7cb2f3010ad9/question-edits/c14dd7e9-243c-462d-a6ed-e2e10243e517.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-05-recommended-illumination-levels-by-space-type--f815c409-77f7-4489-b3b9-7cb2f3010ad9/question-edits/c9c232c4-fe07-43e9-b0ee-e6e0e18cee50.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-05-recommended-illumination-levels-by-space-type--f815c409-77f7-4489-b3b9-7cb2f3010ad9/question-edits/d31bcd1a-10d9-4c8a-9356-206ce3d52938.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-05-recommended-illumination-levels-by-space-type--f815c409-77f7-4489-b3b9-7cb2f3010ad9/question-edits/d9b5f4e3-065c-453f-8016-0d52c846bd43.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-05-recommended-illumination-levels-by-space-type--f815c409-77f7-4489-b3b9-7cb2f3010ad9/question-edits/e18cbb8c-819b-47b1-8e05-582ec52fa320.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-05-recommended-illumination-levels-by-space-type--f815c409-77f7-4489-b3b9-7cb2f3010ad9/question-edits/e80b2b3f-4431-4bca-abc3-f76f309bcd74.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-05-recommended-illumination-levels-by-space-type--f815c409-77f7-4489-b3b9-7cb2f3010ad9/question-edits/ee42877a-4fc5-41d1-938c-6c823f9df94b.json"
+      ],
+      "gates": {
+        "compose": "PASS",
+        "diff": "PASS",
+        "validate": "PASS",
+        "ui_block_validation": "PASS",
+        "source_audit": "PASS"
+      }
+    },
+    {
+      "ordinal": 5,
+      "article_id": "b862f4a8-fa65-4cf7-bcb8-bec5b330d837",
+      "slug": "lea-util-006-06-daylighting-design-strategy",
+      "title": "Lighting design in the Philippines",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837/question-edits",
+      "linked_questions": 15,
+      "question_edits": 15,
+      "source_rows": 2,
+      "original_hash": "sha256:401d01e1cb55786540bd43a367b9e68257e78af6dc8c02648e553756a4b1cdc0",
+      "normalized_hash": "sha256:fbe4c1553e9ea60081edd523b0e099896bbf0926c465ece2b076ff9db9c8469d",
+      "candidate_hash": "sha256:fbe4c1553e9ea60081edd523b0e099896bbf0926c465ece2b076ff9db9c8469d",
+      "sources_hash": "sha256:c33768ba750674b42f23938508b572457504325c2030347385501968314b12bc",
+      "checked_markdown_lines": [
+        "DOE Guidelines refined markdown lines 323-405",
+        "DOE Guidelines refined markdown lines 785-803",
+        "Salvan Utilities 3 refined markdown lines 18699-18729",
+        "Salvan Utilities 3 refined markdown lines 20050-20053"
+      ],
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837/ui-blocks.json"
+      ],
+      "question_edit_files": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837/question-edits/013bbc93-24a0-4999-83f0-3320ee51b9e5.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837/question-edits/08683fcb-75ca-4ab8-a35f-2f725d6cd8b8.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837/question-edits/0a82e2cc-156e-490b-93d5-9e1c2aded78e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837/question-edits/119292af-df20-455f-bbb9-1ba101f94f16.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837/question-edits/197d7b75-eefe-46ba-a900-8dd41e8e2adb.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837/question-edits/202dd7a6-d6fd-47d4-acc5-9faac836d074.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837/question-edits/33f43696-1bee-4a9b-9eae-65e9ca9ff7bd.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837/question-edits/45d20cd9-69af-4655-8207-922eb104d050.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837/question-edits/631192e4-b89d-4364-8208-810bfd00c50c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837/question-edits/842c8fe9-8897-486b-bc53-c646a0f38365.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837/question-edits/b08563c2-2800-47e3-bf96-53d84d124cc0.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837/question-edits/b2f1b8cf-fb41-4ba8-ab92-09b7d8d39dae.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837/question-edits/b6c64212-62bf-460b-9eac-313be0bc1488.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837/question-edits/cdec8652-8c0f-4567-be8f-d2507ae4c48e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837/question-edits/fb237cdd-0da5-4484-90bf-eb014d02c2fc.json"
+      ],
+      "gates": {
+        "compose": "PASS",
+        "diff": "PASS",
+        "validate": "PASS",
+        "ui_block_validation": "PASS",
+        "source_audit": "PASS"
+      }
+    }
+  ],
+  "source_evidence": [
+    {
+      "label": "Philippine Electrical Code - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+      "raw_pdf_sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+      "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3"
+    },
+    {
+      "label": "RA 11285 Energy Efficiency and Conservation Act - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf",
+      "raw_pdf_sha256": "sha256:316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.md",
+      "refined_markdown_sha256": "sha256:d2baa0e8d4ffe0059688783a4d31ac0e121517daca939f18a048fe053e76cdd4"
+    },
+    {
+      "label": "Handouts for Lighting and Acoustics - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Handouts for Lighting _ Acoustics.pdf",
+      "raw_pdf_sha256": "sha256:ba9a313f0fa4072866d2f922a34b24ef91a07e58128f67cd12c7b901c91d33bb",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Handouts for Lighting _ Acoustics.md",
+      "refined_markdown_sha256": "sha256:807e9a5c684407cee85c75e33290d25971f924c8b923e1b86e52d0b5ec061bd3"
+    },
+    {
+      "label": "George Salvan Architectural Utilities 3 Lighting and Acoustics - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George-Salvan-Architectural-Utilities-3-Lighting-and-Acoustics.pdf",
+      "raw_pdf_sha256": "sha256:935c71b1dc8fa190a945570c6a4aab0888096f6a8cbdecc75f53dc09b57fdab6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George-Salvan-Architectural-Utilities-3-Lighting-and-Acoustics.md",
+      "refined_markdown_sha256": "sha256:72f99f7131415798ceb8e0c867af177091e85775c5f2c20e5463ceefad246231"
+    },
+    {
+      "label": "DOE Guidelines on Energy Conserving Design on Buildings - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+      "raw_pdf_sha256": "sha256:9a1a4019b500ffc2873625db6f04ac50b39aea7cadac9159464f9ed716e8126c",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.md",
+      "refined_markdown_sha256": "sha256:477f0990a67359eee303e8280a00be449d0aa413252161db7b5b1bafec3012b9"
+    }
+  ],
+  "validation": {
+    "scoped_json_parse": {
+      "status": "PASS",
+      "parsed_files": 130,
+      "failures": []
+    },
+    "marker_scan": {
+      "status": "PASS",
+      "scanned_files": 95,
+      "matches": []
+    },
+    "source_hash_checks": {
+      "status": "PASS",
+      "checked": 20,
+      "failures": []
+    },
+    "question_edit_count_checks": {
+      "status": "PASS",
+      "checks": [
+        {
+          "article_id": "29d54ad6-6af8-4c7b-b504-fa6e0a1e5220",
+          "slug": "lea-util-003-08-summary-for-exam-preparation",
+          "expected": 15,
+          "actual": 15,
+          "pass": true
+        },
+        {
+          "article_id": "dd8ec17f-7f5c-4652-9257-65811b1ead0c",
+          "slug": "lea-util-006-02-what-you-need-to-know-for-the-lea",
+          "expected": 15,
+          "actual": 15,
+          "pass": true
+        },
+        {
+          "article_id": "bbb05afe-2df6-4bdc-b8b8-43f6115533d3",
+          "slug": "lea-util-006-03-what-you-need-to-know-for-the-lea",
+          "expected": 15,
+          "actual": 15,
+          "pass": true
+        },
+        {
+          "article_id": "f815c409-77f7-4489-b3b9-7cb2f3010ad9",
+          "slug": "lea-util-006-05-recommended-illumination-levels-by-space-type",
+          "expected": 15,
+          "actual": 15,
+          "pass": true
+        },
+        {
+          "article_id": "b862f4a8-fa65-4cf7-bcb8-bec5b330d837",
+          "slug": "lea-util-006-06-daylighting-design-strategy",
+          "expected": 15,
+          "actual": 15,
+          "pass": true
+        }
+      ],
+      "failures": []
+    },
+    "stale_compose_error_check": {
+      "status": "PASS",
+      "stale_compose_error_files": []
+    },
+    "compose": {
+      "status": "PASS",
+      "passed": 5,
+      "total": 5,
+      "command": "bun run content-audit:compose -- --article-id <id> --overwrite --strict"
+    },
+    "diff": {
+      "status": "PASS",
+      "passed": 5,
+      "total": 5,
+      "command": "bun run content-audit:diff -- --article-id <id> --strict --summary"
+    },
+    "validate": {
+      "status": "PASS",
+      "passed": 5,
+      "total": 5,
+      "warnings": "component-usage.json missing warnings only",
+      "command": "bun run content-audit:validate -- --article-id <id> --summary"
+    },
+    "ui_block_validation": {
+      "status": "PASS",
+      "passed": 5,
+      "total": 5,
+      "command": "bun run content-audit:ui-block-edits -- --article-id <id>"
+    },
+    "targeted_tests": {
+      "status": "PASS",
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "tests": 34,
+      "expect_calls": 328
+    },
+    "scoped_git_diff_check": {
+      "status": "PASS",
+      "command": "git diff --check -- <Batch 047 article folders, report, ledger, scoped checks, handoff>"
+    }
+  }
+}

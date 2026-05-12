@@ -1,0 +1,59 @@
+{
+  "question_id": "7cfe2e9f-aa79-4eea-8caa-4a806b69c86d",
+  "baseline_hash": "sha256:892f73921eecc445df11eabec8b3bca00ec741a240fb7150e61d125f92a8eaf5",
+  "action": "replace",
+  "reason": "source-audited-article-batch-085-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-005-07-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-085",
+  "approved_at": "2026-05-12T07:55:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
+    "parent_article_slug": "lea-matl-005-07-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Green Building Illustrated refined markdown lines 7501-7535 and 7549-7583.",
+    "checked_markdown_lines": [
+      "Green Building Illustrated refined markdown lines 7501-7535, 7549-7583, and 7709-7727; raw PDF pages 228-230 and 235-236 checked by local PyMuPDF extraction."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "green-building-illustrated-b085",
+        "label": "Green Building Illustrated",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Green Building Illustrated.pdf",
+        "sha256": "sha256:b23f127ca4581eb2d733b14e2a3739d022c9d04b343729b0ecdebdf92d0bdc70",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Green Building Illustrated.md",
+        "refined_markdown_sha256": "sha256:4c754dad2867dea176cd93c2f93788b7874ccbbe557096bb64cbb0ab3a0165d2",
+        "locator": "Green Building Illustrated refined markdown lines 7501-7535, 7549-7583, and 7709-7727; raw PDF pages 228-230 and 235-236 checked by local PyMuPDF extraction."
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 085 local raw-source-audited embodied_energy_and_recycled_content scope."
+  },
+  "proposed": {
+    "text": "What should an LEA answer do if a green-rating point value is not locally audited?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Avoid the point value and answer from source-checked material principles"
+      },
+      {
+        "id": "b",
+        "text": "Treat the point value as automatically true"
+      },
+      {
+        "id": "c",
+        "text": "Convert it into a bolt grade"
+      },
+      {
+        "id": "d",
+        "text": "Ignore the question scope"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Avoid the point value and answer from source-checked material principles. The audited source supports material life-cycle and embodied-energy principles without unsupported carbon factors or certification point claims.",
+    "explanation": "Avoid the point value and answer from source-checked material principles. The audited source supports material life-cycle and embodied-energy principles without unsupported carbon factors or certification point claims.",
+    "code_citation": "Green Building Illustrated",
+    "bloom_level": "apply",
+    "application_context": "source_audited_local_first_batch_085",
+    "practice_context": [],
+    "difficulty": 0.7
+  }
+}

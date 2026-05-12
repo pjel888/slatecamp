@@ -1,0 +1,225 @@
+{
+  "batch_id": "source-audited-article-batch-028-local-first",
+  "generated_at": "2026-05-10T20:10:51.871Z",
+  "status": "PASS",
+  "valid": true,
+  "local_first_only": true,
+  "supabase_push_attempted": false,
+  "deploy_attempted": false,
+  "commit_attempted": false,
+  "counts": {
+    "selected_articles": 5,
+    "locally_passed_articles": 5,
+    "linked_questions": 50,
+    "question_edits_created": 50,
+    "source_rows": 12,
+    "unique_raw_pdf_files_checked": 4,
+    "blockers": 0,
+    "warnings": 0
+  },
+  "checks": {
+    "json_parse": "PASS",
+    "output_placeholder_internal_source_gap_scan": "PASS",
+    "compose_reports": "PASS",
+    "diff_reports": "PASS",
+    "bundle_validation": "PASS_WITH_EXPECTED_COMPONENT_USAGE_WARNINGS",
+    "source_audit_evidence": "PASS",
+    "raw_pdf_hashes": "PASS",
+    "question_edits": "PASS"
+  },
+  "raw_pdf_files_checked": [
+    "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+    "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+    "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+    "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf"
+  ],
+  "blockers": [],
+  "warnings": [],
+  "articles": [
+    {
+      "article_id": "97befd70-258f-4f5a-8b02-77387b51ccfb",
+      "slug": "lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement",
+      "title": "Suspension and Termination of the Owner Architect Agreement",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement--97befd70-258f-4f5a-8b02-77387b51ccfb",
+      "absolute_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement--97befd70-258f-4f5a-8b02-77387b51ccfb",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement--97befd70-258f-4f5a-8b02-77387b51ccfb/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement--97befd70-258f-4f5a-8b02-77387b51ccfb/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 4,
+      "hashes": {
+        "original": "sha256:8c067a47c11de28908a843490511c39fa2aed42d8e021bbec7dc74818483ccd9",
+        "normalized": "sha256:f54ead1da24ca306c7637b8584580ccd3b8530fbaa451587578d7867be4a34a9",
+        "candidate": "sha256:f54ead1da24ca306c7637b8584580ccd3b8530fbaa451587578d7867be4a34a9",
+        "sources": "sha256:1c9878da197e772f7e03ae6dc691fe5ed262d0a586e1a697ed2dfe66ea6e3108"
+      },
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": [],
+        "unresolved_placeholders": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": [],
+        "unresolved_placeholders_count": 0,
+        "ui_blocks_changed_count": 0
+      },
+      "source_audit": {
+        "status": "PASS",
+        "raw_pdf_gate": "PASS",
+        "safe_for_supabase_upload": true
+      },
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "article_id": "2baaafee-44d6-4593-8805-eb22f73335f8",
+      "slug": "lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship",
+      "title": "UAP DOC 301 Overview Purpose Structure",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship--2baaafee-44d6-4593-8805-eb22f73335f8",
+      "absolute_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship--2baaafee-44d6-4593-8805-eb22f73335f8",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship--2baaafee-44d6-4593-8805-eb22f73335f8/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-004-uap-doc-301-overview-purpose-structure-and-the-three-party-relationship--2baaafee-44d6-4593-8805-eb22f73335f8/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 2,
+      "hashes": {
+        "original": "sha256:781b1986db9df731ef6e2beea17cf78ce62a954eee6bfb8f99f5f8d7ed4031d1",
+        "normalized": "sha256:fc92d8019f7542d02a26cca08cc9a2fd4a791587bbea03b117a35e1904b1f8e5",
+        "candidate": "sha256:fc92d8019f7542d02a26cca08cc9a2fd4a791587bbea03b117a35e1904b1f8e5",
+        "sources": "sha256:ec269e8a41a4386b37659e9063ed695ccf6c414f3f6545fea5a5e51fc6518c2e"
+      },
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": [],
+        "unresolved_placeholders": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": [],
+        "unresolved_placeholders_count": 0,
+        "ui_blocks_changed_count": 0
+      },
+      "source_audit": {
+        "status": "PASS",
+        "raw_pdf_gate": "PASS",
+        "safe_for_supabase_upload": true
+      },
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "article_id": "367ef654-f42a-4eed-861d-b00648f5dba4",
+      "slug": "lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period",
+      "title": "The Contractor's Obligations Scope Compliance Standards",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period--367ef654-f42a-4eed-861d-b00648f5dba4",
+      "absolute_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period--367ef654-f42a-4eed-861d-b00648f5dba4",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period--367ef654-f42a-4eed-861d-b00648f5dba4/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period--367ef654-f42a-4eed-861d-b00648f5dba4/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 2,
+      "hashes": {
+        "original": "sha256:1dd49f884514064766af72d40eb5adce9058fa099e70c833c2bfcc275a1305a6",
+        "normalized": "sha256:94fe9ce9f8b48e8baf14e69c6dd4ec8bbcbf2f022cbbbb9621b25d5df89b7100",
+        "candidate": "sha256:94fe9ce9f8b48e8baf14e69c6dd4ec8bbcbf2f022cbbbb9621b25d5df89b7100",
+        "sources": "sha256:e32d7ed2ceea41c9824057fc17412e5224883c81bf40a2b22e6e2255b7135e83"
+      },
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": [],
+        "unresolved_placeholders": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": [],
+        "unresolved_placeholders_count": 0,
+        "ui_blocks_changed_count": 0
+      },
+      "source_audit": {
+        "status": "PASS",
+        "raw_pdf_gate": "PASS",
+        "safe_for_supabase_upload": true
+      },
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "article_id": "0c598f14-db0d-490d-827d-d3088108b47f",
+      "slug": "lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures",
+      "title": "Private Bidding Competitive Bidding Negotiated",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f",
+      "absolute_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 2,
+      "hashes": {
+        "original": "sha256:8936caa8f2b3b8bc2b69de55ff4b4896ea48cd7ed491dfb27a823d505a612873",
+        "normalized": "sha256:831099f2e83971870d74c00e69ecdfeea4e7237957ee1a73d2fe6cd76a558003",
+        "candidate": "sha256:831099f2e83971870d74c00e69ecdfeea4e7237957ee1a73d2fe6cd76a558003",
+        "sources": "sha256:dddad0825565d38005e12a62bd773188d3a4fcfde4f95a6896c80a136e8b7d8b"
+      },
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": [],
+        "unresolved_placeholders": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": [],
+        "unresolved_placeholders_count": 0,
+        "ui_blocks_changed_count": 0
+      },
+      "source_audit": {
+        "status": "PASS",
+        "raw_pdf_gate": "PASS",
+        "safe_for_supabase_upload": true
+      },
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "article_id": "a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
+      "slug": "lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda",
+      "title": "Bid Documents Contents Interpretation and Issuing Addenda",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda--a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
+      "absolute_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda--a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda--a6eaa2f0-1220-44ea-9bf3-3e90f791b71f/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda--a6eaa2f0-1220-44ea-9bf3-3e90f791b71f/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 2,
+      "hashes": {
+        "original": "sha256:c203aa042ecde05cc11689535f67f2a98a5758ff2416b2fc98ccd8932df01fdf",
+        "normalized": "sha256:f4723a6575431a810fb6183f064b4b8df4ced825fcea0b683d547d5882f39d49",
+        "candidate": "sha256:f4723a6575431a810fb6183f064b4b8df4ced825fcea0b683d547d5882f39d49",
+        "sources": "sha256:3ea1357110556cd8198a38e3abca68641e3b082851929c2f7ff9e8eea44f5437"
+      },
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": [],
+        "unresolved_placeholders": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": [],
+        "unresolved_placeholders_count": 0,
+        "ui_blocks_changed_count": 0
+      },
+      "source_audit": {
+        "status": "PASS",
+        "raw_pdf_gate": "PASS",
+        "safe_for_supabase_upload": true
+      },
+      "blockers": [],
+      "warnings": []
+    }
+  ]
+}

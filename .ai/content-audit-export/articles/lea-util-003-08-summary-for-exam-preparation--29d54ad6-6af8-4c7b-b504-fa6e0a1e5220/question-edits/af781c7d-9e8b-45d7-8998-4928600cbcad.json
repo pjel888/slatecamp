@@ -1,0 +1,66 @@
+{
+  "question_id": "af781c7d-9e8b-45d7-8998-4928600cbcad",
+  "baseline_hash": "sha256:a1cd38a29543ffbad404fedbd90b193cc7d9457ad30da57c1637c626f21cbb3e",
+  "action": "replace",
+  "reason": "source-audited-article-batch-047-local-first: local raw-source-backed replacement constrained to checked Batch 047 source families.",
+  "approved_by": "codex-local-first-batch-047",
+  "approved_at": "2026-05-11T18:48:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "29d54ad6-6af8-4c7b-b504-fa6e0a1e5220",
+    "parent_article_slug": "lea-util-003-08-summary-for-exam-preparation",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "PEC refined markdown lines 29498-29512",
+    "checked_markdown_lines": [
+      "PEC refined markdown lines 29231-29720",
+      "RA 11285 refined markdown lines 31-145",
+      "RA 11285 refined markdown lines 1060-1135"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "philippine-electrical-code-local-raw-pdf--b047-29d54ad6",
+        "label": "Philippine Electrical Code - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+        "sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+        "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3",
+        "locator": "PEC refined markdown lines 29231-29720"
+      },
+      {
+        "source_id": "ra-11285-energy-efficiency-and-conservation-act-local-raw-pdf--b047-29d54ad6",
+        "label": "RA 11285 Energy Efficiency and Conservation Act - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf",
+        "sha256": "sha256:316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.md",
+        "refined_markdown_sha256": "sha256:d2baa0e8d4ffe0059688783a4d31ac0e121517daca939f18a048fe053e76cdd4",
+        "locator": "RA 11285 refined markdown lines 31-145; RA 11285 refined markdown lines 1060-1135"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 047 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "For a PV source circuit, how does PEC establish maximum current for parallel module strings?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use the sum of parallel module short-circuit currents multiplied by 125 percent."
+      },
+      {
+        "id": "b",
+        "text": "Use the building demand load divided by voltage only."
+      },
+      {
+        "id": "c",
+        "text": "Use the inverter nameplate output current divided by two."
+      },
+      {
+        "id": "d",
+        "text": "Use the branch-circuit rating serving the nearest panelboard."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Use the sum of parallel module short-circuit currents multiplied by 125 percent. This answer matches PEC refined markdown lines 29498-29512.",
+    "explanation": "Use the sum of parallel module short-circuit currents multiplied by 125 percent. This answer matches PEC refined markdown lines 29498-29512.",
+    "code_citation": "PEC refined markdown lines 29498-29512"
+  }
+}

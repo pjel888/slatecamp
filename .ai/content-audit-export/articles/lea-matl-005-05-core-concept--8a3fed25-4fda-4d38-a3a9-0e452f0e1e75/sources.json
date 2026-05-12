@@ -1,68 +1,44 @@
 {
   "article_id": "8a3fed25-4fda-4d38-a3a9-0e452f0e1e75",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:ed3334b19a65ecfe3beb90f9a07f73eee25c8c0d0bbfddaa8beec80a22e8cfce",
-  "source_count": 5,
+  "sources_hash": "sha256:5fdc649b43bea9df7770e26173ee22a5d368c1ca8a05322da9b24d6b18a6c915",
+  "source_count": 3,
   "sources": [
     {
-      "source_id": "0dd6cc0d-25b7-4095-82e8-1bc5367a6314",
+      "source_id": "building-construction-illustrated-b085",
       "article_id": "8a3fed25-4fda-4d38-a3a9-0e452f0e1e75",
-      "label": "ACI 347R-14 Guide to Formwork for Concrete",
+      "label": "Building Construction Illustrated, 5th Edition",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "primary_technology_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-085-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf; raw_pdf_sha256=sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md; refined_markdown_sha256=sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a; checked_locator=Building Construction Illustrated refined markdown lines 4583-4623; raw PDF pages 151-152 checked by local PyMuPDF extraction.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:00.685475+00:00",
-      "updated_at": "2026-03-24T04:34:00.685475+00:00"
+      "created_at": "2026-05-12T07:55:00.000+08:00",
+      "updated_at": "2026-05-12T07:55:00.000+08:00"
     },
     {
-      "source_id": "eddb4055-176c-48f3-ab15-300fbbf42ce4",
+      "source_id": "chudley-greeno-handbook-b085",
       "article_id": "8a3fed25-4fda-4d38-a3a9-0e452f0e1e75",
-      "label": "ACI 301 Specifications for Structural Concrete",
+      "label": "Buidling Construction Handbook 7th Ed by Chudley _ Greeno",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "primary_technology_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-085-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf; raw_pdf_sha256=sha256:2efa493fac06a3efb9367111a397129ff8647778d88160bbe0174403cbb9e0bb; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.md; refined_markdown_sha256=sha256:485fe968d55ca680cbde52d24fcee5f512a63591026db19e46835f1bc530dcbb; checked_locator=Chudley/Greeno refined markdown lines 691-717 and 732-738; raw PDF pages 138, 145, 146, and 151 checked by local PyMuPDF extraction.",
+      "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:00.685475+00:00",
-      "updated_at": "2026-03-24T04:34:00.685475+00:00"
+      "created_at": "2026-05-12T07:55:00.000+08:00",
+      "updated_at": "2026-05-12T07:55:00.000+08:00"
     },
     {
-      "source_id": "529c920c-063b-4931-b958-f497cddd661d",
+      "source_id": "building-tech-illustrated-b085",
       "article_id": "8a3fed25-4fda-4d38-a3a9-0e452f0e1e75",
-      "label": "OSHA Construction Standards 1926.500+ (Scaffolding, Fall Protection)",
+      "label": "Building Tech Illustrated",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "primary_technology_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-085-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Tech Illustrated.pdf; raw_pdf_sha256=sha256:231e15abee34d44e518dff7478fc503ba3285b8d6b4080a096e637a5aeec8dec; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Tech Illustrated.md; refined_markdown_sha256=sha256:016d54a7798e5b450043d3be89f7cf940184f05494644033f0e52e03d49f64ad; checked_locator=Building Tech Illustrated refined markdown lines 481, 585, and 601-627; raw PDF pages 34, 41, and 43 checked by local PyMuPDF extraction.",
+      "is_verified": true,
       "sort_order": 2,
-      "created_at": "2026-03-24T04:34:00.685475+00:00",
-      "updated_at": "2026-03-24T04:34:00.685475+00:00"
-    },
-    {
-      "source_id": "d0635766-e083-4434-bfbb-7f999da233e8",
-      "article_id": "8a3fed25-4fda-4d38-a3a9-0e452f0e1e75",
-      "label": "NSCP 2015 Chapter 34 (Construction Standards and Safety)",
-      "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:34:00.685475+00:00",
-      "updated_at": "2026-03-24T04:34:00.685475+00:00"
-    },
-    {
-      "source_id": "97414dfe-c005-4cfd-8540-2819b747c275",
-      "article_id": "8a3fed25-4fda-4d38-a3a9-0e452f0e1e75",
-      "label": "Philippine tube/clamp manufacturers and coco lumber suppliers",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 4,
-      "created_at": "2026-03-24T04:34:00.685475+00:00",
-      "updated_at": "2026-03-24T04:34:00.685475+00:00"
+      "created_at": "2026-05-12T07:55:00.000+08:00",
+      "updated_at": "2026-05-12T07:55:00.000+08:00"
     }
   ]
 }

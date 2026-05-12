@@ -1,0 +1,32 @@
+{
+  "question_id": "4a042acc-e141-4956-af63-4891be445ae0",
+  "baseline_hash": "sha256:b575714f01b76aaab3706946eb99089b1eb3f6ba98bd4646385b1a787df5c2b3",
+  "reason": "Batch 003 source audit corrected the wrong Group D storage premise. PD 1096 classifies Group D as Institutional and Group G as Storage and Hazardous; RA 9514 supplies protected-exit and special-hazard rules.",
+  "approved_by": "codex-local-source-audit-batch-003",
+  "approved_at": "2026-05-10T18:00:00+08:00",
+  "proposed": {
+    "text": "A required central exit stair connects four or more storeys, but the architect specifies only 1-hour protected-exit separation. Is this compliant under RA 9514?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Yes, because 1-hour is enough for all protected exits"
+      },
+      {
+        "id": "b",
+        "text": "Yes, if the building is an office"
+      },
+      {
+        "id": "c",
+        "text": "No, four or more storeys require at least 2-hour fire resistance"
+      },
+      {
+        "id": "d",
+        "text": "No, all protected exits require 4-hour separation"
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": "RA 9514 Section 10.2.5.2(B) requires at least two-hour fire resistance where a protected exit connects four or more storeys.",
+    "explanation": "This keeps the original issue but cites the checked source precisely.",
+    "code_citation": "RA 9514 2019 RIRR Section 10.2.5.2(B)"
+  }
+}

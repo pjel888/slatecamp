@@ -1,0 +1,48 @@
+{
+  "question_id": "fa19fd2f-3d1e-4726-82e1-1300a17010b7",
+  "baseline_hash": "sha256:69bcac244537716cbc39b92fd577b4c31b7ee732a78b34138d9fdd64d2996895",
+  "action": "replace",
+  "reason": "source-audited-article-batch-038-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-038",
+  "approved_at": "2026-05-11T13:26:35+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-038-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 3447-3470"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 1205"
+  },
+  "proposed": {
+    "text": "What is required of floors under Section 1205?",
+    "options": [
+      {
+        "id": "b038-66b5-24-a",
+        "text": "They must be framed and secured into the framework and supporting walls as an integral part of the whole building"
+      },
+      {
+        "id": "b038-66b5-24-b",
+        "text": "They may be independent of supporting walls"
+      },
+      {
+        "id": "b038-66b5-24-c",
+        "text": "They are governed only by room occupancy"
+      },
+      {
+        "id": "b038-66b5-24-d",
+        "text": "They need no lateral buckling control"
+      }
+    ],
+    "correct_option_id": "b038-66b5-24-a",
+    "rationale": "Correct answer: They must be framed and secured into the framework and supporting walls as an integral part of the whole building. This is directly supported by PD 1096 2004 Revised IRR, Section 1205.",
+    "explanation": "The Batch 038 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 1205.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 1205"
+  }
+}

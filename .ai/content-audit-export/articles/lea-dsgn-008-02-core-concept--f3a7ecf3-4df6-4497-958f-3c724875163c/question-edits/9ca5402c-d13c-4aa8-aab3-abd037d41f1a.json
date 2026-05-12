@@ -1,0 +1,32 @@
+{
+  "question_id": "9ca5402c-d13c-4aa8-aab3-abd037d41f1a",
+  "baseline_hash": "sha256:a9dc8f84449bbbf069e03d6e57a0371e6267ab8f41e0acc613086c4eb24d5727",
+  "reason": "Batch 003 source audit corrected the wrong Group D storage premise. PD 1096 classifies Group D as Institutional and Group G as Storage and Hazardous; RA 9514 supplies protected-exit and special-hazard rules.",
+  "approved_by": "codex-local-source-audit-batch-003",
+  "approved_at": "2026-05-10T18:00:00+08:00",
+  "proposed": {
+    "text": "A paint storage room has a hazard greater than normal office occupancy. Which source-backed protection path should the architect check first?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Treat it as Group D storage and use a 2-hour rule"
+      },
+      {
+        "id": "b",
+        "text": "Use ordinary corridor rules"
+      },
+      {
+        "id": "c",
+        "text": "Apply the RA 9514 special-hazard rule: at least four-hour fire resistance, automatic fire protection, or both; high hazard requires both"
+      },
+      {
+        "id": "d",
+        "text": "Use parking-structure geometry rules"
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": "RA 9514 Section 10.2.6.10(A) controls hazards greater than normal occupancy.",
+    "explanation": "The old concrete-block typical-rating claim was not verified in local raw sources.",
+    "code_citation": "RA 9514 2019 RIRR Section 10.2.6.10(A); PD 1096 Rule VII Group G"
+  }
+}

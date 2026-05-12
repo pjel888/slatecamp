@@ -1,32 +1,32 @@
 {
   "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:6e1d99867b633db1da2400edefca5041c0141b07b9e6b683f60afb9ad605beb1",
+  "sources_hash": "sha256:95cd1590271f91ffbe9e4f80b9014f098e567f4893103f5fc14103341af93571",
   "source_count": 2,
   "sources": [
     {
-      "source_id": "e1492ab5-3373-4c66-8384-5c94eb93c832",
+      "source_id": "bci-5e-b079",
       "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
-      "label": "Based on [ANSI/BHMA Standards for Builders Hardware](https://buildershardware.com/ANSI-BHMA-Standards)",
+      "label": "Building Construction Illustrated, 5th Edition",
       "url": null,
-      "source_type": "implementing_rules",
-      "description": "[ANSI/BHMA Lock Grades Explained](https://goteamtrust.com/blog/locksmith/ansi-bhma-lock-standards-compliance-guide), BP 344 2024 Revised IRR (Accessibility Code), and RA 9514 (Fire Code of the Philippines)",
-      "is_verified": false,
+      "source_type": "primary_building_construction_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-079-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf; raw_pdf_sha256=sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md; refined_markdown_sha256=sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a; checked_locator=BCI refined markdown lines 10332-10535; raw PDF pages 291-294 checked by local PyMuPDF extraction",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:00.685475+00:00",
-      "updated_at": "2026-03-24T04:34:00.685475+00:00"
+      "created_at": "2026-05-12T06:20:00.000+08:00",
+      "updated_at": "2026-05-12T06:20:00.000+08:00"
     },
     {
-      "source_id": "2f7dcd87-3243-4449-8a48-43ecfeb7b54e",
+      "source_id": "salvan-building-materials-b079",
       "article_id": "72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
-      "label": "Philippine supplier references: Yale Philippines, Dorma Filippines, Geze Southeast Asia",
+      "label": "George Salvan Architectural Building Materials",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "primary_building_materials_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-079-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf; raw_pdf_sha256=sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md; refined_markdown_sha256=sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42; checked_locator=Salvan refined markdown lines 5941-5960, 6117-6208, and 6486-6578; raw PDF pages 173, 177, and 181-183 checked by local PyMuPDF extraction",
+      "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:00.685475+00:00",
-      "updated_at": "2026-03-24T04:34:00.685475+00:00"
+      "created_at": "2026-05-12T06:20:00.000+08:00",
+      "updated_at": "2026-05-12T06:20:00.000+08:00"
     }
   ]
 }

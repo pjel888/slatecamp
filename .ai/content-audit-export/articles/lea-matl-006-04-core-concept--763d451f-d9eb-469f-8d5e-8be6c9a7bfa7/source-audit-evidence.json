@@ -1,0 +1,233 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-077-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T04:10:00.000+08:00",
+  "target": {
+    "article_id": "763d451f-d9eb-469f-8d5e-8be6c9a7bfa7",
+    "slug": "lea-matl-006-04-core-concept",
+    "title": "Thermal Insulation reduces heat transmission through",
+    "article_folder": ".ai/content-audit-export/articles/lea-matl-006-04-core-concept--763d451f-d9eb-469f-8d5e-8be6c9a7bfa7",
+    "normalized_sha256": "sha256:cd1b2decb45aab15c74b606dc4e511905723d9e0b8745a53aaeec06f463d7b6a",
+    "candidate_sha256": "sha256:cd1b2decb45aab15c74b606dc4e511905723d9e0b8745a53aaeec06f463d7b6a",
+    "candidate_path": ".ai/content-audit-export/articles/lea-matl-006-04-core-concept--763d451f-d9eb-469f-8d5e-8be6c9a7bfa7/candidate.md"
+  },
+  "classification": {
+    "topic_family": "thermal_insulation",
+    "local_first_batch": "077",
+    "source_sensitivity": "technical_materials",
+    "contains_legal_or_code_claims": false,
+    "source_risk_tier": "source_bound_materials",
+    "requires_raw_pdf_audit": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdfs_checked_first": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "local_pdf_extraction_method": "python_pymupdf_local",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "salvan-building-materials-b077",
+      "label": "George Salvan Architectural Building Materials",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+      "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+      "refined_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+      "locator": "Salvan refined markdown lines 2676-2854, 2874-3025, 3070-3470, 4332-4468, 5919-5948, and 13397-13417; raw PDF pages 92-96, 99-102, 107-115, 145-146, and 361 checked by local PyMuPDF extraction"
+    },
+    {
+      "source_id": "bci-5e-b077",
+      "label": "Building Construction Illustrated, 5th Edition",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+      "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+      "refined_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "locator": "BCI refined markdown lines 695-710, 1493-1498, 2469-2492, 6412-6454, 7990-8012, 9073-9223, 9286-9335, and 9490-9558; raw PDF pages 30, 92, 197, 225, 264-265, and 274 checked by local PyMuPDF extraction"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-matl-006-04-core-concept-article-b077",
+      "claim_text": "Article lea-matl-006-04-core-concept was rewritten to the checked thermal_insulation source scope.",
+      "claim_type": "article_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "BCI refined markdown lines 9073-9223, 9286-9335, and 7990-8012; Salvan refined markdown lines 2874-3025; raw PDF pages 99-102 and 264-265 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "control the flow or transfer of heat"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-5cc8794e-0930-4790-8438-c7014cc210c6-ALE-MATL-006-04-009-b077",
+      "claim_text": "Question 5cc8794e-0930-4790-8438-c7014cc210c6 ALE-MATL-006-04-009 was rewritten to the checked thermal_insulation source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "BCI refined markdown lines 9073-9223, 9286-9335, and 7990-8012; Salvan refined markdown lines 2874-3025; raw PDF pages 99-102 and 264-265 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "control the flow or transfer of heat"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-cc29799c-e70f-4e78-b92d-7bf467fdcbe3-ALE-MATL-006-04-008-b077",
+      "claim_text": "Question cc29799c-e70f-4e78-b92d-7bf467fdcbe3 ALE-MATL-006-04-008 was rewritten to the checked thermal_insulation source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "BCI refined markdown lines 9073-9223, 9286-9335, and 7990-8012; Salvan refined markdown lines 2874-3025; raw PDF pages 99-102 and 264-265 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "control the flow or transfer of heat"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-8a8b8d25-2b14-4c30-85d3-2d8260f6aee4-ALE-MATL-006-04-007-b077",
+      "claim_text": "Question 8a8b8d25-2b14-4c30-85d3-2d8260f6aee4 ALE-MATL-006-04-007 was rewritten to the checked thermal_insulation source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "BCI refined markdown lines 9073-9223, 9286-9335, and 7990-8012; Salvan refined markdown lines 2874-3025; raw PDF pages 99-102 and 264-265 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "control the flow or transfer of heat"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-d43372cf-f536-4457-ae95-95291181c73c-ALE-MATL-006-04-006-b077",
+      "claim_text": "Question d43372cf-f536-4457-ae95-95291181c73c ALE-MATL-006-04-006 was rewritten to the checked thermal_insulation source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "BCI refined markdown lines 9073-9223, 9286-9335, and 7990-8012; Salvan refined markdown lines 2874-3025; raw PDF pages 99-102 and 264-265 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "control the flow or transfer of heat"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-23798e74-081b-4ab5-8bc6-e28883a91cb8-ALE-MATL-006-04-003-b077",
+      "claim_text": "Question 23798e74-081b-4ab5-8bc6-e28883a91cb8 ALE-MATL-006-04-003 was rewritten to the checked thermal_insulation source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "BCI refined markdown lines 9073-9223, 9286-9335, and 7990-8012; Salvan refined markdown lines 2874-3025; raw PDF pages 99-102 and 264-265 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "control the flow or transfer of heat"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-4e491cc9-809e-499c-ac93-ab08605ce1f5-ALE-MATL-006-04-002-b077",
+      "claim_text": "Question 4e491cc9-809e-499c-ac93-ab08605ce1f5 ALE-MATL-006-04-002 was rewritten to the checked thermal_insulation source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "BCI refined markdown lines 9073-9223, 9286-9335, and 7990-8012; Salvan refined markdown lines 2874-3025; raw PDF pages 99-102 and 264-265 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "control the flow or transfer of heat"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-02cc16b6-1743-43b3-a9dc-5313535cd6aa-ALE-MATL-006-04-005-b077",
+      "claim_text": "Question 02cc16b6-1743-43b3-a9dc-5313535cd6aa ALE-MATL-006-04-005 was rewritten to the checked thermal_insulation source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "BCI refined markdown lines 9073-9223, 9286-9335, and 7990-8012; Salvan refined markdown lines 2874-3025; raw PDF pages 99-102 and 264-265 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "control the flow or transfer of heat"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-7d7228b7-af46-482e-8ae9-67742a9f90fb-ALE-MATL-006-04-010-b077",
+      "claim_text": "Question 7d7228b7-af46-482e-8ae9-67742a9f90fb ALE-MATL-006-04-010 was rewritten to the checked thermal_insulation source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "BCI refined markdown lines 9073-9223, 9286-9335, and 7990-8012; Salvan refined markdown lines 2874-3025; raw PDF pages 99-102 and 264-265 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "control the flow or transfer of heat"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-76ccbbe1-82e0-4fc2-b48e-05788412909a-ALE-MATL-006-04-004-b077",
+      "claim_text": "Question 76ccbbe1-82e0-4fc2-b48e-05788412909a ALE-MATL-006-04-004 was rewritten to the checked thermal_insulation source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "BCI refined markdown lines 9073-9223, 9286-9335, and 7990-8012; Salvan refined markdown lines 2874-3025; raw PDF pages 99-102 and 264-265 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "control the flow or transfer of heat"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-d926901d-e273-4e49-91af-5cf49525b7ba-ALE-MATL-006-04-001-b077",
+      "claim_text": "Question d926901d-e273-4e49-91af-5cf49525b7ba ALE-MATL-006-04-001 was rewritten to the checked thermal_insulation source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "BCI refined markdown lines 9073-9223, 9286-9335, and 7990-8012; Salvan refined markdown lines 2874-3025; raw PDF pages 99-102 and 264-265 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "control the flow or transfer of heat"
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "scenario_enrichment": {
+    "policy_status": "pending",
+    "eligibility_status": "eligible-deferred",
+    "blocker_status": "nonblocking",
+    "notes": "No Real World Scenario section added; source correctness and linked-question safety remained the controlling gates."
+  },
+  "sme_review": {
+    "required": false,
+    "status": "not_required"
+  },
+  "local_first_publication": {
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "ready_for_final_publishing_review": true
+  }
+}

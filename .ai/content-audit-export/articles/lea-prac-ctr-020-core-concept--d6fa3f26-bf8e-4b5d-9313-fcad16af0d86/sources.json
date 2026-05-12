@@ -1,20 +1,87 @@
 {
   "article_id": "d6fa3f26-bf8e-4b5d-9313-fcad16af0d86",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:e971e11f4c03821edfab8a2f69f1c583d144919d5b59eda50c0120d687381f5a",
-  "source_count": 1,
+  "source_count": 3,
+  "sources_hash": "sha256:d604ff777d54786dffbec2ebb96d0cb9489fa76b037224a6cb596ae4870697b6",
   "sources": [
     {
-      "source_id": "95ee9788-0fee-4d90-b6ce-3eb16c28f28b",
+      "source_id": "ciap-document-102-private-construction-contract-local",
       "article_id": "d6fa3f26-bf8e-4b5d-9313-fcad16af0d86",
-      "label": "UAP Document 301 — General Conditions; Claims provisions; Documentation requirements; Submission deadlines; Architect's Role in Claims Evaluation",
+      "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
       "url": null,
-      "source_type": "reference_standard",
-      "description": "Philippine Arbitration Practice standards for claims substantiation",
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:01.68074+00:00",
-      "updated_at": "2026-03-24T04:34:01.68074+00:00"
+      "source_type": "construction_contract_pdf",
+      "description": "Local raw PDF and refined markdown checked for CIAP Document 102 refined markdown lines 522, 667, 848, 870-874 and 901-905.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-11T08:28:21.061+08:00",
+      "updated_at": "2026-05-11T08:28:21.061+08:00",
+      "local_source_audit": {
+        "authority": "Construction Industry Authority of the Philippines / DTI private construction contract source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+        "refined_markdown_sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
+        "source_locator": "CIAP Document 102 refined markdown lines 522, 667, 848, 870-874 and 901-905",
+        "checked_markdown_lines": [
+          "CIAP Document 102 line 522",
+          "CIAP Document 102 line 667",
+          "CIAP Document 102 line 848",
+          "CIAP Document 102 lines 870-874",
+          "CIAP Document 102 lines 901-905"
+        ],
+        "local_source_checked": true
+      }
+    },
+    {
+      "source_id": "uap-document-301-general-conditions-local",
+      "article_id": "d6fa3f26-bf8e-4b5d-9313-fcad16af0d86",
+      "label": "UAP Document 301 - General Conditions",
+      "url": null,
+      "source_type": "professional_practice_contract_pdf",
+      "description": "Local raw PDF and refined markdown checked for UAP Document 301 refined markdown lines 775, 1019-1026 and 1068.",
+      "is_verified": true,
+      "sort_order": 2,
+      "created_at": "2026-05-11T08:28:21.061+08:00",
+      "updated_at": "2026-05-11T08:28:21.061+08:00",
+      "local_source_audit": {
+        "authority": "United Architects of the Philippines / PRC Board approved general conditions source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "refined_markdown_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+        "source_locator": "UAP Document 301 refined markdown lines 775, 1019-1026 and 1068",
+        "checked_markdown_lines": [
+          "UAP Document 301 line 775",
+          "UAP Document 301 lines 1019-1026",
+          "UAP Document 301 line 1068"
+        ],
+        "local_source_checked": true
+      }
+    },
+    {
+      "source_id": "ra-386-civil-code-local",
+      "article_id": "d6fa3f26-bf8e-4b5d-9313-fcad16af0d86",
+      "label": "RA 386 - Civil Code of the Philippines",
+      "url": null,
+      "source_type": "law_pdf",
+      "description": "Local raw PDF and refined markdown checked for Civil Code refined markdown lines 349, 359-360.",
+      "is_verified": true,
+      "sort_order": 3,
+      "created_at": "2026-05-11T08:28:21.061+08:00",
+      "updated_at": "2026-05-11T08:28:21.061+08:00",
+      "local_source_audit": {
+        "authority": "Civil Code of the Philippines local legal source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code.pdf",
+        "raw_pdf_sha256": "sha256:c3551f7d92abed808a64071fdf08832b1f27dc87375775416f52cbc25b4bcba5",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-386/RA-386 Civil Code.md",
+        "refined_markdown_sha256": "sha256:8215f8acdd208b9b2f4a981bdf6c7227acbfd26186dac703133b187fc6d96adf",
+        "source_locator": "Civil Code refined markdown lines 349, 359-360",
+        "checked_markdown_lines": [
+          "RA 386 Civil Code line 349",
+          "RA 386 Civil Code lines 359-360"
+        ],
+        "local_source_checked": true
+      }
     }
   ]
 }

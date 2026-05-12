@@ -1,0 +1,302 @@
+{
+  "batch_id": "source-audited-article-batch-063-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T21:58:00.000+08:00",
+  "target": {
+    "article_id": "d4dfe9dc-a807-43db-925e-6992297ce1ff",
+    "slug": "lea-dsgn-004-06-core-concept",
+    "title": "Libraries and archives",
+    "article_folder": ".ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff",
+    "normalized_sha256": "sha256:c6ee356fe600b05050ee3472c23ea0130840c747ec7a5c594d70c757fbbf1a9c",
+    "candidate_sha256": "sha256:c6ee356fe600b05050ee3472c23ea0130840c747ec7a5c594d70c757fbbf1a9c"
+  },
+  "classification": {
+    "legal_or_code_candidate": true,
+    "requires_raw_pdf_audit": true,
+    "source_domains": [
+      "PD 1096 occupancy classification",
+      "RA 9514 fire and life safety",
+      "Fire Code life-safety source family"
+    ]
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdfs_checked_first": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "pd1096-rirr-2004-occupancy-classification-dpwh-local-b063",
+      "label": "PD 1096 RIRR 2004 - occupancy classification and public-use matrices",
+      "authority": "DPWH official revised IRR local raw PDF conversion",
+      "source_type": "building_code_irr_pdf",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1141 and 1193-1272; raw PDF pages 47-70 checked for matching occupancy text",
+      "checked_markdown_lines": [
+        "PD 1096 RIRR DPWH Official refined markdown lines 1088-1141",
+        "PD 1096 RIRR DPWH Official refined markdown lines 1193-1272"
+      ],
+      "checked_raw_pdf_pages": [
+        "PD 1096 RIRR DPWH Official raw PDF pages 47-70"
+      ],
+      "local_source_checked": true
+    },
+    {
+      "source_id": "ra9514-rirr-2019-fire-life-safety-local-b063",
+      "label": "RA 9514 Revised IRR 2019 - classification, means of egress, and assembly fire-safety rules",
+      "authority": "Bureau of Fire Protection revised IRR local raw PDF conversion",
+      "source_type": "fire_code_irr_pdf",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+      "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+      "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+      "source_locator": "RA 9514 RIRR refined markdown lines 1463-1544, 2266-2313, 2515-2532, 2665-2728, 3982-4210, and 4273-4360; raw PDF pages 66, 84, 91, 134, and 138 checked for matching text",
+      "checked_markdown_lines": [
+        "RA 9514 RIRR refined markdown lines 1463-1544",
+        "RA 9514 RIRR refined markdown lines 2266-2313",
+        "RA 9514 RIRR refined markdown lines 2515-2532",
+        "RA 9514 RIRR refined markdown lines 2665-2728",
+        "RA 9514 RIRR refined markdown lines 3982-4210",
+        "RA 9514 RIRR refined markdown lines 4273-4360"
+      ],
+      "checked_raw_pdf_pages": [
+        "RA 9514 RIRR raw PDF pages 66, 84, 91, 134, and 138"
+      ],
+      "local_source_checked": true
+    },
+    {
+      "source_id": "pd9514-fire-code-life-safety-local-b063",
+      "label": "Fire Code source family - life-safety and egress general requirements",
+      "authority": "Fire Code local raw PDF conversion",
+      "source_type": "fire_code_pdf",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf",
+      "raw_pdf_sha256": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-9514/PD 9514 - Fire Code of the Philippines.md",
+      "refined_markdown_sha256": "sha256:5eb0584f1bcbfa87044e28f2e59a75c6364c7160a98edfdd888c6aef849b01b2",
+      "source_locator": "PD 9514 Fire Code refined markdown lines 1599-1629; raw PDF pages 57-58 checked for matching life-safety text",
+      "checked_markdown_lines": [
+        "PD 9514 Fire Code refined markdown lines 1599-1629"
+      ],
+      "checked_raw_pdf_pages": [
+        "PD 9514 Fire Code raw PDF pages 57-58"
+      ],
+      "local_source_checked": true
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "article-pd1096",
+      "claim_text": "PD 1096 lists libraries with museums, exhibition halls, and art galleries in checked public-use classification lines.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "pd1096-rirr-2004-occupancy-classification-dpwh-local-b063",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1141 and 1193-1272; raw PDF pages 47-70 checked for matching occupancy text",
+        "quoted_pdf_excerpt": "Libraries, museums, exhibition halls and art galleries"
+      }
+    },
+    {
+      "claim_id": "article-ra9514",
+      "claim_text": "RA 9514 includes libraries in assembly occupancies when capacity and use conditions apply.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9514-rirr-2019-fire-life-safety-local-b063",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 RIRR refined markdown lines 1463-1544, 2266-2313, 2515-2532, 2665-2728, 3982-4210, and 4273-4360; raw PDF pages 66, 84, 91, 134, and 138 checked for matching text",
+        "quoted_pdf_excerpt": "libraries; Internet shops of over fifty persons capacity"
+      }
+    },
+    {
+      "claim_id": "article-egress",
+      "claim_text": "RA 9514 provides general means-of-egress capacity, width, number, and recognizable-access rules.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9514-rirr-2019-fire-life-safety-local-b063",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 RIRR refined markdown lines 1463-1544, 2266-2313, 2515-2532, 2665-2728, 3982-4210, and 4273-4360; raw PDF pages 66, 84, 91, 134, and 138 checked for matching text",
+        "quoted_pdf_excerpt": "The width of any means of egress shall not be less than nine hundred fifteen millimeters"
+      }
+    },
+    {
+      "claim_id": "question-a1b364c5-c529-438d-9ae3-1a8455474e1f",
+      "claim_text": "Question edit a1b364c5-c529-438d-9ae3-1a8455474e1f model ALE-DSGN-004-06-003 is rewritten to the Batch 063 checked local raw-source scope for lea-dsgn-004-06-core-concept.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9514-rirr-2019-fire-life-safety-local-b063",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 RIRR refined markdown lines 1463-1544, 2266-2313, 2515-2532, 2665-2728, 3982-4210, and 4273-4360; raw PDF pages 66, 84, 91, 134, and 138 checked for matching text",
+        "quoted_pdf_excerpt": "Assembly occupancies include theaters; assembly halls; auditoriums"
+      }
+    },
+    {
+      "claim_id": "question-c85b3fde-89cb-4638-bb15-c842ca9de437",
+      "claim_text": "Question edit c85b3fde-89cb-4638-bb15-c842ca9de437 model ALE-DSGN-004-06-004 is rewritten to the Batch 063 checked local raw-source scope for lea-dsgn-004-06-core-concept.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9514-rirr-2019-fire-life-safety-local-b063",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 RIRR refined markdown lines 1463-1544, 2266-2313, 2515-2532, 2665-2728, 3982-4210, and 4273-4360; raw PDF pages 66, 84, 91, 134, and 138 checked for matching text",
+        "quoted_pdf_excerpt": "provided with exits sufficient to permit prompt and safe escape"
+      }
+    },
+    {
+      "claim_id": "question-9ad2da53-e02a-429c-9140-33722727c6fe",
+      "claim_text": "Question edit 9ad2da53-e02a-429c-9140-33722727c6fe model ALE-DSGN-004-06-002 is rewritten to the Batch 063 checked local raw-source scope for lea-dsgn-004-06-core-concept.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9514-rirr-2019-fire-life-safety-local-b063",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 RIRR refined markdown lines 1463-1544, 2266-2313, 2515-2532, 2665-2728, 3982-4210, and 4273-4360; raw PDF pages 66, 84, 91, 134, and 138 checked for matching text",
+        "quoted_pdf_excerpt": "Assembly occupancies include theaters; assembly halls; auditoriums"
+      }
+    },
+    {
+      "claim_id": "question-a699f6c5-0598-488c-8f86-1f553a113681",
+      "claim_text": "Question edit a699f6c5-0598-488c-8f86-1f553a113681 model ALE-DSGN-004-06-010 is rewritten to the Batch 063 checked local raw-source scope for lea-dsgn-004-06-core-concept.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9514-rirr-2019-fire-life-safety-local-b063",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 RIRR refined markdown lines 1463-1544, 2266-2313, 2515-2532, 2665-2728, 3982-4210, and 4273-4360; raw PDF pages 66, 84, 91, 134, and 138 checked for matching text",
+        "quoted_pdf_excerpt": "provided with exits sufficient to permit prompt and safe escape"
+      }
+    },
+    {
+      "claim_id": "question-cf26855e-b885-4a53-b8fb-03b919d9730c",
+      "claim_text": "Question edit cf26855e-b885-4a53-b8fb-03b919d9730c model ALE-DSGN-004-06-005 is rewritten to the Batch 063 checked local raw-source scope for lea-dsgn-004-06-core-concept.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9514-rirr-2019-fire-life-safety-local-b063",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 RIRR refined markdown lines 1463-1544, 2266-2313, 2515-2532, 2665-2728, 3982-4210, and 4273-4360; raw PDF pages 66, 84, 91, 134, and 138 checked for matching text",
+        "quoted_pdf_excerpt": "Assembly occupancies include theaters; assembly halls; auditoriums"
+      }
+    },
+    {
+      "claim_id": "question-58a848db-1e22-46b2-bfce-cbc0b4825639",
+      "claim_text": "Question edit 58a848db-1e22-46b2-bfce-cbc0b4825639 model ALE-DSGN-004-06-001 is rewritten to the Batch 063 checked local raw-source scope for lea-dsgn-004-06-core-concept.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9514-rirr-2019-fire-life-safety-local-b063",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 RIRR refined markdown lines 1463-1544, 2266-2313, 2515-2532, 2665-2728, 3982-4210, and 4273-4360; raw PDF pages 66, 84, 91, 134, and 138 checked for matching text",
+        "quoted_pdf_excerpt": "provided with exits sufficient to permit prompt and safe escape"
+      }
+    },
+    {
+      "claim_id": "question-203bf119-1164-45f3-8454-b0f17d342800",
+      "claim_text": "Question edit 203bf119-1164-45f3-8454-b0f17d342800 model ALE-DSGN-004-06-007 is rewritten to the Batch 063 checked local raw-source scope for lea-dsgn-004-06-core-concept.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9514-rirr-2019-fire-life-safety-local-b063",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 RIRR refined markdown lines 1463-1544, 2266-2313, 2515-2532, 2665-2728, 3982-4210, and 4273-4360; raw PDF pages 66, 84, 91, 134, and 138 checked for matching text",
+        "quoted_pdf_excerpt": "Assembly occupancies include theaters; assembly halls; auditoriums"
+      }
+    },
+    {
+      "claim_id": "question-2ac6cabd-4309-4117-ab4a-864a332651c9",
+      "claim_text": "Question edit 2ac6cabd-4309-4117-ab4a-864a332651c9 model ALE-DSGN-004-06-008 is rewritten to the Batch 063 checked local raw-source scope for lea-dsgn-004-06-core-concept.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9514-rirr-2019-fire-life-safety-local-b063",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 RIRR refined markdown lines 1463-1544, 2266-2313, 2515-2532, 2665-2728, 3982-4210, and 4273-4360; raw PDF pages 66, 84, 91, 134, and 138 checked for matching text",
+        "quoted_pdf_excerpt": "provided with exits sufficient to permit prompt and safe escape"
+      }
+    },
+    {
+      "claim_id": "question-6a0d73cd-6a0b-4d9c-8079-9b7d3ddc39e8",
+      "claim_text": "Question edit 6a0d73cd-6a0b-4d9c-8079-9b7d3ddc39e8 model ALE-DSGN-004-06-009 is rewritten to the Batch 063 checked local raw-source scope for lea-dsgn-004-06-core-concept.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9514-rirr-2019-fire-life-safety-local-b063",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 RIRR refined markdown lines 1463-1544, 2266-2313, 2515-2532, 2665-2728, 3982-4210, and 4273-4360; raw PDF pages 66, 84, 91, 134, and 138 checked for matching text",
+        "quoted_pdf_excerpt": "Assembly occupancies include theaters; assembly halls; auditoriums"
+      }
+    },
+    {
+      "claim_id": "question-ce3207df-054e-4a37-9e1c-67dd472d387d",
+      "claim_text": "Question edit ce3207df-054e-4a37-9e1c-67dd472d387d model ALE-DSGN-004-06-006 is rewritten to the Batch 063 checked local raw-source scope for lea-dsgn-004-06-core-concept.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9514-rirr-2019-fire-life-safety-local-b063",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 RIRR refined markdown lines 1463-1544, 2266-2313, 2515-2532, 2665-2728, 3982-4210, and 4273-4360; raw PDF pages 66, 84, 91, 134, and 138 checked for matching text",
+        "quoted_pdf_excerpt": "provided with exits sufficient to permit prompt and safe escape"
+      }
+    }
+  ],
+  "local_repairs": {
+    "normalized_rewritten": true,
+    "candidate_recomposed_pending": true,
+    "ui_tokens_removed": true,
+    "private_draft_notes_removed": true,
+    "source_records_created": 3,
+    "question_edits_created": 10,
+    "source_safe_rewrite_question_edits": 10,
+    "non_source_claims_removed_or_rewritten": true
+  },
+  "scenario_enrichment_policy": {
+    "status": "eligible-deferred",
+    "reason": "Scenario expansion was not needed to complete source-audited article and question correctness for this batch."
+  },
+  "unverified_or_rejected_claims": [],
+  "sme_review": {
+    "required": false,
+    "status": "not_required"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

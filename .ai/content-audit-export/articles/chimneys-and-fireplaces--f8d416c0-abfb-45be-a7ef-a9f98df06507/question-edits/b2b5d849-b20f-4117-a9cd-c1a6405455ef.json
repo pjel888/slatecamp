@@ -1,0 +1,49 @@
+{
+  "question_id": "b2b5d849-b20f-4117-a9cd-c1a6405455ef",
+  "baseline_hash": "sha256:6a0e0fbc3af514d5b7ddbbfc66a87c36d87c15629d18de0b899530dd54fd4688",
+  "action": "replace",
+  "reason": "source-audited-article-batch-037-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-037",
+  "approved_at": "2026-05-11T13:16:58+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-037-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR 2004 DPWH Official refined markdown lines 968-990",
+          "PD 1096 RIRR 2004 DPWH Official refined markdown lines 3789-3897"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 1211"
+  },
+  "proposed": {
+    "text": "What minimum height rule applies to a chimney above the roof under Section 1211?",
+    "options": [
+      {
+        "id": "b037-f8d4-33-a",
+        "text": "600 mm above the roof and 600 mm above the highest part within 3.00 m"
+      },
+      {
+        "id": "b037-f8d4-33-b",
+        "text": "300 mm above the roof only"
+      },
+      {
+        "id": "b037-f8d4-33-c",
+        "text": "1.80 m above grade only"
+      },
+      {
+        "id": "b037-f8d4-33-d",
+        "text": "150 mm above any roof joist"
+      }
+    ],
+    "correct_option_id": "b037-f8d4-33-a",
+    "rationale": "Correct answer: 600 mm above the roof and 600 mm above the highest part within 3.00 m. This is directly supported by PD 1096 2004 Revised IRR, Section 1211.",
+    "explanation": "The Batch 037 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 1211.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 1211"
+  }
+}

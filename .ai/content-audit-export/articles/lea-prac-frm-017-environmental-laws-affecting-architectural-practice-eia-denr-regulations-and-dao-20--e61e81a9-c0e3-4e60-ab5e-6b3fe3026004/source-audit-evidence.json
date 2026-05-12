@@ -1,0 +1,57 @@
+{
+  "batch_id": "source-audited-article-batch-021-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T10:30:00.000+08:00",
+  "article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
+  "slug": "lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30",
+  "title": "Environmental Laws Affecting Architectural Practice EIA DENR",
+  "status": "local_pass_ready_for_final_publishing_review",
+  "article_folder": ".ai/content-audit-export/articles/lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-20--e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
+  "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-20--e61e81a9-c0e3-4e60-ab5e-6b3fe3026004/question-edits",
+  "linked_questions": 10,
+  "question_edits_created": 10,
+  "source_safe_rewrite_question_edits": 10,
+  "source_audit": {
+    "checked_sources": [
+      {
+        "source_id": "denr-dao-2003-30-eis-system-local",
+        "label": "DENR DAO 2003-30 EIS System Implementing Rules",
+        "authority": "Department of Environment and Natural Resources",
+        "source_type": "administrative_order_pdf",
+        "source_locator": "DAO 2003-30 refined markdown lines 13-150 and 150-360",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DENR/DENR DAO 2003-30 - EIS System Implementing Rules.pdf",
+        "raw_pdf_sha256": "sha256:079285ca972d0be053faa148fe6770c12c396408c35e6739929b81685e775fb7",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DENR/DENR DAO 2003-30 - EIS System Implementing Rules.md",
+        "refined_markdown_sha256": "sha256:3a77a918f5e5a62043b3a3e75d9583372031da82056f882b49c317e94f119763",
+        "checked_markdown_lines": [
+          "DAO 2003-30 refined markdown lines 13-150",
+          "DAO 2003-30 refined markdown lines 150-360"
+        ],
+        "use": "primary local source for environmental-practice article repair and linked-question replacement drafts",
+        "local_source_checked": true
+      }
+    ],
+    "source_locator": "DENR DAO 2003-30 EIS System Implementing Rules checked from local raw PDF and refined Markdown",
+    "checked_markdown_lines": [
+      "DAO 2003-30 refined markdown lines 13-150",
+      "DAO 2003-30 refined markdown lines 150-360"
+    ]
+  },
+  "local_repairs": {
+    "normalized_rewritten": true,
+    "candidate_recomposed": true,
+    "placeholders_removed": true,
+    "source_records_created": 1,
+    "question_edits_created": 10,
+    "source_safe_rewrite_question_edits": 10,
+    "non_source_claims_removed_or_rewritten": true
+  },
+  "validation": {
+    "compose_blockers": [],
+    "diff_safe_to_push": true,
+    "diff_blockers": [],
+    "validate_valid": true,
+    "validate_blockers": []
+  },
+  "blockers": []
+}

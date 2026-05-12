@@ -1,32 +1,39 @@
 {
   "article_id": "dcea38f3-027c-4839-8bc5-f79991e7772c",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:95e276b53e3c1164070390122908f607cb57caf3b159e32845e789a4d02816d4",
+  "sources_hash": "sha256:4a26ca0d5be6cba264bfd967b05ebe56bafcd3bb1b074221b99832688aceaf22",
   "source_count": 2,
   "sources": [
     {
-      "source_id": "a9267269-5115-407c-b776-4f6bdb78805d",
-      "article_id": "dcea38f3-027c-4839-8bc5-f79991e7772c",
-      "label": "PD 1096: National Building Code of the Philippines, Rule XIX (Off-Street Parking), Section 1903–1905",
-      "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:33:58.214974+00:00",
-      "updated_at": "2026-03-24T04:33:58.214974+00:00"
+      "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+      "title": "PD 1096 2004 Revised IRR - DPWH Official",
+      "source_type": "local_raw_pdf_with_locator_checked_refined_markdown",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "source_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+      "derivative_layer_role": "locator aid only",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "checked_markdown_lines": [
+        "PD 1096 RIRR refined markdown lines 1627-1766",
+        "PD 1096 RIRR refined markdown lines 1784-1786"
+      ],
+      "source_locator": "PD 1096 RIRR refined markdown lines 1627-1766; PD 1096 RIRR refined markdown lines 1784-1786"
     },
     {
-      "source_id": "fd47f214-ddd8-42b0-b68e-716780324e86",
-      "article_id": "dcea38f3-027c-4839-8bc5-f79991e7772c",
-      "label": "BP 344: Accessibility Law and its 2024 Revised IRR",
-      "url": null,
-      "source_type": "implementing_rules",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 1,
-      "created_at": "2026-03-24T04:33:58.214974+00:00",
-      "updated_at": "2026-03-24T04:33:58.214974+00:00"
+      "source_id": "bp-344-2024-rirr-ncda-local",
+      "title": "BP 344 2024 Revised IRR - NCDA",
+      "source_type": "local_raw_pdf_with_locator_checked_refined_markdown",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "source_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+      "derivative_layer_role": "locator aid only",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "checked_markdown_lines": [
+        "BP 344 2024 IRR refined markdown lines 228-305"
+      ],
+      "source_locator": "BP 344 2024 IRR refined markdown lines 228-305"
     }
   ]
 }

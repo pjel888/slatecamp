@@ -1,77 +1,37 @@
+# HUDCC coordinated shelter policy before DHSUD consolidated the housing mandate
 
-
-## Board Exam Quick Check
-
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
-
-**Common mistake:** treating a familiar keyword in **Lea Plan 007 04 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
-
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
-## Learning Goal
-Describe HUDCC's historical coordination role (1986-2019) among housing agencies, identify EO 90 as its creation authority, and explain its supersession by DHSUD under RA 11201.
-
-The Housing and Urban Development Coordinating Council (HUDCC), created in 1986 by Executive Order No. 90, was a high-level inter-agency body that coordinated housing policy among multiple government agencies. [Requires verification against RA 11201 text; search results do not confirm this claim]
+HUDCC questions must be read by date and legal context. EO 90 created HUDCC to coordinate the National Shelter Program and formulate national objectives, while RA 11201 and its IRR consolidated HUDCC and HLURB functions into DHSUD as the primary housing and urban development department.
 
 ## Core Concept
 
-HUDCC was a _coordination mechanism_, not a regulatory or production agency. It brought together DHSUD (policy), NHA (production), Pag-IBIG (finance), SHFC (community finance), SSS, GSIS, PCUP (urban poor advocacy), and other agencies to align their programs toward common housing goals.
+- EO 90 created HUDCC under the Office of the President to coordinate the activities of government housing agencies for the National Shelter Program.
+- EO 90 gave HUDCC functions such as formulating national housing and urban-development objectives, coordinating agency participation, monitoring and evaluating performance, encouraging private-sector participation, and recommending legislation.
+- RA 11201 IRR states that DHSUD was created through consolidation of HUDCC and HLURB, with HUDCC functions and HLURB planning and regulatory functions transferred to DHSUD.
+- RA 11201 IRR identifies DHSUD as the primary planning, policy-making, regulatory, program coordination, and performance monitoring entity for housing, human settlements, and urban development.
 
-The key distinction: HUDCC _coordinated_ (brought agencies to the same table); it did NOT:
-- Regulate developers (that was HLURB's role, now DHSUD's)
-- Build housing (that is NHA's role)
-- Finance housing (that is Pag-IBIG's, SSS's, GSIS's, SHFC's role)
+## How It Is Tested
 
-HUDCC's primary functions were:
-1. **Policy harmonization:** Ensuring government housing programs did not conflict or duplicate
-2. **Inter-agency alignment:** Resolving conflicts between agencies with different mandates
-3. **Strategic planning:** Formulating national housing strategy and goals
-4. **Implementation monitoring:** Tracking collective progress toward targets
+- Distinguish HUDCC under EO 90 from DHSUD under RA 11201 IRR.
+- Identify coordination versus regulation when the question names the governing source.
+- Avoid treating a superseded coordination body as the current consolidated department unless the stem is historical.
 
-When HUDCC was dissolved in 2019 (RA 11201), its coordination functions were transferred to DHSUD, which now chairs coordination meetings and integrates sectoral strategies (housing, urban development, land use planning).
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-plan-007-04-core-concept", type="image", caption="HUDCC Historical Coordination Role — Housing Agency Timeline 1986-2019", description="Timeline diagram of HUDCC (Housing and Urban Development Coordinating Council, EO 90): coordination role among housing agencies (NHA, Pag-IBIG, SHFC, NHMFC, HLURB) from 1986 to supersession by DHSUD under RA 11201 in 2019. Organizational evolution.", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+## Real World Scenario
 
-## Key Provisions
-
-HUDCC's legacy remains visible in the multi-agency structure of Philippine housing governance, even though the council itself no longer exists. Understanding HUDCC's historical role helps explain why Philippine housing has multiple specialized agencies rather than a single unified authority.
-
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
-Extracted summary:
-- Props: headers="{[\"Function\", \"HUDCC Role (Historical)\", \"Current Home (Post-2019)\"]}", rows=true, Inter-agency=true, coordination=true, Convened=true, agencies=true, to=true, align=true, programs=true, DHSUD=true, chairs=true, Housing=true
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-## Philippine Context
-
-During HUDCC's 33-year existence (1986–2019), it coordinated the shift from centralized housing authority (pre-1992) to the current segmented, multi-agency system. HUDCC's presence was most visible during major housing policy initiatives (e.g., post-disaster resettlement coordination, balanced housing implementation, informal settlement upgrades). Since its dissolution, DHSUD has assumed the convening role, though with less formality than HUDCC's regular plenary sessions.
-
-## How It's Tested
-
-1. **Historical knowledge:** "What was HUDCC?" → Coordination council (now dissolved, functions transferred to DHSUD).
-2. **Functional distinction:** "Did HUDCC regulate developers or coordinate agencies?" → Coordinated agencies (regulation was HLURB's role).
-3. **Post-2019 context:** "Where do HUDCC's functions reside today?" → DHSUD.
-
-[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Memory aid:** HUDCC = **C**ouncil = **C**oordination = bringing agencies together (not regulation, not production, not finance). Now DHSUD's role.
-[/SLATECAMP_UI_BLOCK]
-
-**Exam Tip:** HUDCC was created by EO 90 (1986), NOT by legislation. It was a coordinating council, not a regulatory body. Superseded by DHSUD under RA 11201 (2019). This history question appears occasionally on the LEA.
-
-## Cross-References
-
-See **LEA-PLAN-007-02** (DHSUD) for post-2019 regulatory framework, **LEA-PLAN-001-05** (CLUP Process) for planning system evolution, and **LEA-PLAN-007-01** (NHA) for production agency context.
+A question set contrasts a 1987 shelter-policy memo with a post-DHSUD implementation question. In the EO 90 setting, HUDCC is the coordinating council for shelter agencies and national objectives. In the RA 11201 IRR setting, DHSUD is the consolidated department that absorbed HUDCC and HLURB functions and carries planning, policy, regulatory, coordination, and monitoring authority.
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\"Confusing HUDCC (coordination) with HLURB (regulation)—HUDCC coordinated; HLURB regulated\", \"Saying HUDCC still exists—HUDCC was dissolved 2019 under RA 11201\", \"Stating HUDCC issued regulations or licenses—DHSUD (formerly HLURB) did that\", \"Treating HUDCC as a producer or financer—HUDCC only coordinated; agencies did the work\", \"Forgetting that HUDCC's dissolution was part of the 2019 restructuring (RA 11201)\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+- Do not answer a post-DHSUD question as if HUDCC still held the consolidated department role.
+- Do not ignore HLURB function transfer when the stem asks about DHSUD regulation.
+- Do not invent section numbers beyond the checked locators.
+
+## Sources Checked
+
+- EO 90 - NGO for Shelter Program: EO 90 refined markdown lines 19-27, 30-43, 51-63, and 79-106; raw PDF pages 1, 2, 3, 4, and 6 checked by local PyMuPDF extraction.
+- RA 11201 IRR - DHSUD Act Implementing Rules: RA 11201 IRR refined markdown lines 40-44, 68-75, 93-100, 116-121, 134-162, 261-263, 280-289, 335, 389, and 392; raw PDF pages 3, 6, 7, 13, 15, 19, and 35 checked by local PyMuPDF extraction.
+
+## Scenario Enrichment Status
+
+eligible-added: Batch 086 added a concise historical-governance scenario supported by EO 90 and RA 11201 IRR raw-source locators.

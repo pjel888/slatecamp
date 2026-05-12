@@ -22,7 +22,7 @@ Refactor the application layout to transition the sidebar from an overlay behavi
 
 ### PHASE 3: STRUCTURAL LAYOUT REFACTORING
 1.  Modify the parent container within `SharedPageLayout.tsx` to support a side-by-side dynamic layout. Base this on the existing layout methodology used in the file, whether that is Grid or Flexbox.
-2.  Bind the sidebar state to the parent layout wrapper. 
+2.  Bind the sidebar state to the parent layout wrapper.
 3.  Implement the structural logic so that the sidebar container dictates a fixed width when expanded.
 4.  Implement the structural logic so the main dashboard content container flexes or spans to consume the remaining available space.
 

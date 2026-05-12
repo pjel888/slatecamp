@@ -1,0 +1,245 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-085-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T07:55:00.000+08:00",
+  "target": {
+    "article_id": "d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc",
+    "slug": "lea-matl-005-08-core-concept",
+    "title": "Vernacular sustainable materials require suitability, protection, and approval evidence",
+    "article_folder": ".ai/content-audit-export/articles/lea-matl-005-08-core-concept--d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc",
+    "normalized_sha256": "sha256:f39916a87f3cb32e845fd13ce13ceda36cafc1fa1c4b956154cd23ac581e52ae",
+    "candidate_sha256": "sha256:f39916a87f3cb32e845fd13ce13ceda36cafc1fa1c4b956154cd23ac581e52ae",
+    "candidate_path": ".ai/content-audit-export/articles/lea-matl-005-08-core-concept--d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc/candidate.md"
+  },
+  "classification": {
+    "topic_family": "vernacular_natural_and_local_materials",
+    "local_first_batch": "085",
+    "source_sensitivity": "legal_and_technical_construction",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "source_bound_technology",
+    "requires_raw_pdf_audit": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdfs_checked_first": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "local_pdf_extraction_method": "python_pymupdf_local",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "green-building-illustrated-b085",
+      "label": "Green Building Illustrated",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Green Building Illustrated.pdf",
+      "sha256": "sha256:b23f127ca4581eb2d733b14e2a3739d022c9d04b343729b0ecdebdf92d0bdc70",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Green Building Illustrated.md",
+      "refined_markdown_sha256": "sha256:4c754dad2867dea176cd93c2f93788b7874ccbbe557096bb64cbb0ab3a0165d2",
+      "locator": "Green Building Illustrated refined markdown lines 7501-7535, 7549-7583, and 7709-7727; raw PDF pages 228-230 and 235-236 checked by local PyMuPDF extraction."
+    },
+    {
+      "source_id": "good-building-handbook-ph-b085",
+      "label": "Good Building Handbook in the Philippines",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Good Building Handbook in the PH.pdf",
+      "sha256": "sha256:e8925f0c617c24df41784a002fa9c3f1a237a5dda96196d82f14653bfd9b870c",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Good Building Handbook in the PH.md",
+      "refined_markdown_sha256": "sha256:11584339e25de3d586d64a2a31d1e8af03cfb876371bec764c224eaad6e11c9d",
+      "locator": "Good Building Handbook in the PH refined markdown lines 420-491; raw PDF pages 50, 56, and 60 checked by local PyMuPDF extraction."
+    },
+    {
+      "source_id": "pd-1096-national-building-code-b085",
+      "label": "PD 1096 - National Building Code",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 - National Building Code.pdf",
+      "sha256": "sha256:0bd869faac8d949359aa9e3c5bea7026e85e348f61ce1e87a09d48991c5ba796",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 - National Building Code.md",
+      "refined_markdown_sha256": "sha256:d7df246271ae1bcb14ed8e4ba881ed75cfa8381cca9f465986d9947397f353d9",
+      "locator": "PD 1096 refined markdown lines 199-241 and 354; raw PDF pages 7, 8, and 14 checked by local PyMuPDF extraction."
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-matl-005-08-core-concept-article-b085",
+      "claim_text": "Article lea-matl-005-08-core-concept was rewritten to the checked vernacular_natural_and_local_materials source scope.",
+      "claim_type": "article_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Green Building Illustrated.pdf",
+        "raw_pdf_sha256": "sha256:b23f127ca4581eb2d733b14e2a3739d022c9d04b343729b0ecdebdf92d0bdc70",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Green Building Illustrated.md",
+        "source_locator": "Green Building Illustrated refined markdown lines 7549-7583; Good Building Handbook in the PH refined markdown lines 420-491; PD 1096 refined markdown lines 199-241 and 354.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-36ffe7e1-c38f-470d-b609-3950ee9ef786-b085",
+      "claim_text": "Question 36ffe7e1-c38f-470d-b609-3950ee9ef786 was rewritten to the checked vernacular_natural_and_local_materials source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Green Building Illustrated.pdf",
+        "raw_pdf_sha256": "sha256:b23f127ca4581eb2d733b14e2a3739d022c9d04b343729b0ecdebdf92d0bdc70",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Green Building Illustrated.md",
+        "source_locator": "Green Building Illustrated refined markdown lines 7549-7583; Good Building Handbook in the PH refined markdown lines 420-491; PD 1096 refined markdown lines 199-241 and 354.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-06997570-950b-44fc-a816-c0f194894e33-b085",
+      "claim_text": "Question 06997570-950b-44fc-a816-c0f194894e33 was rewritten to the checked vernacular_natural_and_local_materials source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Green Building Illustrated.pdf",
+        "raw_pdf_sha256": "sha256:b23f127ca4581eb2d733b14e2a3739d022c9d04b343729b0ecdebdf92d0bdc70",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Green Building Illustrated.md",
+        "source_locator": "Green Building Illustrated refined markdown lines 7549-7583; Good Building Handbook in the PH refined markdown lines 420-491; PD 1096 refined markdown lines 199-241 and 354.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-a17b9aec-066a-4e0a-8cdb-d2e51c16e4ed-b085",
+      "claim_text": "Question a17b9aec-066a-4e0a-8cdb-d2e51c16e4ed was rewritten to the checked vernacular_natural_and_local_materials source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Green Building Illustrated.pdf",
+        "raw_pdf_sha256": "sha256:b23f127ca4581eb2d733b14e2a3739d022c9d04b343729b0ecdebdf92d0bdc70",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Green Building Illustrated.md",
+        "source_locator": "Green Building Illustrated refined markdown lines 7549-7583; Good Building Handbook in the PH refined markdown lines 420-491; PD 1096 refined markdown lines 199-241 and 354.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-084b56f4-b977-4330-8657-111008dd05d9-b085",
+      "claim_text": "Question 084b56f4-b977-4330-8657-111008dd05d9 was rewritten to the checked vernacular_natural_and_local_materials source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Green Building Illustrated.pdf",
+        "raw_pdf_sha256": "sha256:b23f127ca4581eb2d733b14e2a3739d022c9d04b343729b0ecdebdf92d0bdc70",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Green Building Illustrated.md",
+        "source_locator": "Green Building Illustrated refined markdown lines 7549-7583; Good Building Handbook in the PH refined markdown lines 420-491; PD 1096 refined markdown lines 199-241 and 354.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-f05bc8d4-5e16-4cd8-b43c-489ef5a14001-b085",
+      "claim_text": "Question f05bc8d4-5e16-4cd8-b43c-489ef5a14001 was rewritten to the checked vernacular_natural_and_local_materials source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Green Building Illustrated.pdf",
+        "raw_pdf_sha256": "sha256:b23f127ca4581eb2d733b14e2a3739d022c9d04b343729b0ecdebdf92d0bdc70",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Green Building Illustrated.md",
+        "source_locator": "Green Building Illustrated refined markdown lines 7549-7583; Good Building Handbook in the PH refined markdown lines 420-491; PD 1096 refined markdown lines 199-241 and 354.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-8b7274ec-e06f-4429-83d8-a4a59370329c-b085",
+      "claim_text": "Question 8b7274ec-e06f-4429-83d8-a4a59370329c was rewritten to the checked vernacular_natural_and_local_materials source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Green Building Illustrated.pdf",
+        "raw_pdf_sha256": "sha256:b23f127ca4581eb2d733b14e2a3739d022c9d04b343729b0ecdebdf92d0bdc70",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Green Building Illustrated.md",
+        "source_locator": "Green Building Illustrated refined markdown lines 7549-7583; Good Building Handbook in the PH refined markdown lines 420-491; PD 1096 refined markdown lines 199-241 and 354.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-a32398a9-7f7c-4579-aaaa-5b2e3a6a4691-b085",
+      "claim_text": "Question a32398a9-7f7c-4579-aaaa-5b2e3a6a4691 was rewritten to the checked vernacular_natural_and_local_materials source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Green Building Illustrated.pdf",
+        "raw_pdf_sha256": "sha256:b23f127ca4581eb2d733b14e2a3739d022c9d04b343729b0ecdebdf92d0bdc70",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Green Building Illustrated.md",
+        "source_locator": "Green Building Illustrated refined markdown lines 7549-7583; Good Building Handbook in the PH refined markdown lines 420-491; PD 1096 refined markdown lines 199-241 and 354.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-69510623-f5f7-4277-ba9a-4d4a571758e2-b085",
+      "claim_text": "Question 69510623-f5f7-4277-ba9a-4d4a571758e2 was rewritten to the checked vernacular_natural_and_local_materials source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Green Building Illustrated.pdf",
+        "raw_pdf_sha256": "sha256:b23f127ca4581eb2d733b14e2a3739d022c9d04b343729b0ecdebdf92d0bdc70",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Green Building Illustrated.md",
+        "source_locator": "Green Building Illustrated refined markdown lines 7549-7583; Good Building Handbook in the PH refined markdown lines 420-491; PD 1096 refined markdown lines 199-241 and 354.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-776ef887-a08d-4774-bc90-7724a8adeb0c-b085",
+      "claim_text": "Question 776ef887-a08d-4774-bc90-7724a8adeb0c was rewritten to the checked vernacular_natural_and_local_materials source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Green Building Illustrated.pdf",
+        "raw_pdf_sha256": "sha256:b23f127ca4581eb2d733b14e2a3739d022c9d04b343729b0ecdebdf92d0bdc70",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Green Building Illustrated.md",
+        "source_locator": "Green Building Illustrated refined markdown lines 7549-7583; Good Building Handbook in the PH refined markdown lines 420-491; PD 1096 refined markdown lines 199-241 and 354.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-b075eefc-5e27-4c7f-a671-eb3d042ee235-b085",
+      "claim_text": "Question b075eefc-5e27-4c7f-a671-eb3d042ee235 was rewritten to the checked vernacular_natural_and_local_materials source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Green Building Illustrated.pdf",
+        "raw_pdf_sha256": "sha256:b23f127ca4581eb2d733b14e2a3739d022c9d04b343729b0ecdebdf92d0bdc70",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Green Building Illustrated.md",
+        "source_locator": "Green Building Illustrated refined markdown lines 7549-7583; Good Building Handbook in the PH refined markdown lines 420-491; PD 1096 refined markdown lines 199-241 and 354.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "question_edit_audit": {
+    "linked_question_count": 10,
+    "question_edit_count": 10,
+    "answer_key_fields_changed": true,
+    "source_safe_rewrite": true,
+    "blockers": []
+  },
+  "scenario_enrichment": {
+    "status": "eligible-deferred",
+    "reason": "Vernacular material adaptation has scenario potential, but Batch 085 deferred added scenarios while removing unsupported species, agency-specific, and service-life claims."
+  },
+  "roundtrip": {
+    "normalized_md_owns_article_prose": true,
+    "ui_blocks_json_owns_raw_ui_blocks": true,
+    "candidate_md_generated_by_compose": true,
+    "raw_ui_block_edits_supported_in_this_batch": false,
+    "note": "Exported UI summary markers were removed because ui-blocks.json has zero preserved raw blocks; compose must generate candidate.md from normalized.md.",
+    "unresolved_ui_summary_markers_removed": true
+  }
+}

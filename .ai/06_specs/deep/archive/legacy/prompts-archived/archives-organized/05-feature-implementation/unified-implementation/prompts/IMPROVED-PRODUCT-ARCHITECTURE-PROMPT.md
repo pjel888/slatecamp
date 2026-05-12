@@ -174,7 +174,7 @@ User clicks "Start Session" (mode: camp | storm | blindspot | proof)
     → If mode needs IRT: call select_next_item RPC for first question
     → If mode is blindspot: use blindspot_queues, then IRT within that node
     → Return: session_id + first question
-  
+
 User answers question
   → Server Action: submitAnswer(sessionId, questionId, answerId, responseTimeMs)
     → INSERT into user_interactions (triggers EMA update)
@@ -187,7 +187,7 @@ User answers question
 User opens Review tab
   → Server Component: fetch get_review_deck RPC
   → Display: "You have N nodes to review today"
-  
+
 User starts review session
   → Same adaptive quiz flow, but question pool is scoped to due SRS nodes
   → On session complete: call update_srs_card for each reviewed node

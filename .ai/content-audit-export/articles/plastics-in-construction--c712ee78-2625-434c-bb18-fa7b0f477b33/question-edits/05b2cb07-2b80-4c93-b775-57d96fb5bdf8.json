@@ -1,0 +1,57 @@
+{
+  "question_id": "05b2cb07-2b80-4c93-b775-57d96fb5bdf8",
+  "baseline_hash": "sha256:3a37596f541b62c8e9c375a728dca665ee71b57a9941ef76a8668027308dae86",
+  "action": "replace",
+  "reason": "source-audited-article-batch-036-local-first: source-safe replacement grounded in local raw PDF/source family evidence; removes unsupported, stale, or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-036",
+  "approved_at": "2026-05-11T12:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-036-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-national-building-code-local",
+        "label": "PD 1096 National Building Code - Plastics Provisions",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 - National Building Code.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 - National Building Code.md",
+        "checked_markdown_lines": [
+          "PD 1096 National Building Code refined markdown lines 1909-1998"
+        ]
+      },
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR 2004 DPWH Official refined markdown lines 4377-4442"
+        ]
+      }
+    ],
+    "citation": "PD 1096, Section 1605"
+  },
+  "proposed": {
+    "text": "What lower-edge condition applies to plastic panels in monitors and sawtooth roofs?",
+    "options": [
+      {
+        "id": "b036-c712-11-a",
+        "text": "The lower edge must be at least 150 mm above the adjoining roof surface"
+      },
+      {
+        "id": "b036-c712-11-b",
+        "text": "The lower edge must touch the roof surface"
+      },
+      {
+        "id": "b036-c712-11-c",
+        "text": "The lower edge must be below the roof surface"
+      },
+      {
+        "id": "b036-c712-11-d",
+        "text": "The Code gives only a color requirement"
+      }
+    ],
+    "correct_option_id": "b036-c712-11-a",
+    "rationale": "Correct answer: The lower edge must be at least 150 mm above the adjoining roof surface. This is directly supported by PD 1096, Section 1605.",
+    "explanation": "The source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096, Section 1605.",
+    "code_citation": "PD 1096, Section 1605"
+  }
+}

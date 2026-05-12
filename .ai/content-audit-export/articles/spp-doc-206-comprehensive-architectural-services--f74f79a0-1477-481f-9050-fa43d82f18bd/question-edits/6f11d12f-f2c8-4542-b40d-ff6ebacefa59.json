@@ -1,0 +1,84 @@
+{
+  "question_id": "6f11d12f-f2c8-4542-b40d-ff6ebacefa59",
+  "baseline_hash": "sha256:7bb746f3f2cc21495850d4ac4ae8ddf78ea953d44f6b6afc3e239b60b5e1ced9",
+  "action": "replace",
+  "reason": "source-audited-article-batch-024-local-first rewrote this linked question to align with the local source audit for spp-doc-206-comprehensive-architectural-services.",
+  "approved_by": "codex-local-source-audit-batch-024",
+  "approved_at": "2026-05-11T14:30:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "f74f79a0-1477-481f-9050-fa43d82f18bd",
+    "parent_article_slug": "spp-doc-206-comprehensive-architectural-services",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UAP Standards refined markdown lines 1091-1216; SPP 206 refined markdown lines 713-823",
+    "checked_markdown_lines": [
+      "UAP Standards lines 1091-1216",
+      "SPP 206 lines 713-823"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "source_id": "uap-standards-spp206-cas-pm-local",
+        "locator": "UAP Standards refined markdown lines 1091-1216"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "source_id": "uap-standards-spp206-cas-pm-local",
+        "locator": "UAP Standards refined markdown lines 1091-1216"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 206.pdf",
+        "sha256": "sha256:d140c57e69f990af217f914a1dac51b6d6aae02a1b42aadd4a3f26b6cebf72b7",
+        "source_id": "spp206-comprehensive-architectural-services-local",
+        "locator": "SPP 206 refined markdown lines 713-823"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 206.md",
+        "sha256": "sha256:1ed62c21499c67d14265fb41468a137d00983893797b04a3bd18b6fde4f3b283",
+        "source_id": "spp206-comprehensive-architectural-services-local",
+        "locator": "SPP 206 refined markdown lines 713-823"
+      }
+    ],
+    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+  },
+  "proposed": {
+    "text": "What is the source-safe compensation statement for a Project Manager under SPP 206?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The PM is compensated on a percentage basis as described in the Architect's Guidelines"
+      },
+      {
+        "id": "b",
+        "text": "The PM is always paid 2-5% of PCC under the checked source"
+      },
+      {
+        "id": "c",
+        "text": "The PM is paid only through MDPE"
+      },
+      {
+        "id": "d",
+        "text": "The PM receives no separate compensation when regular design services are also performed"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "The checked source states percentage basis and separately compensates regular design services under SPP 202 when the architect as PM performs them.",
+    "explanation": "This Batch 024 replacement removes non-source-backed or over-specific wording and ties the answer to the checked local UAP source locator.",
+    "code_citation": "UAP Standards lines 1091-1216; SPP 206 refined markdown lines 713-823",
+    "bloom_level": "remember",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited batch 024"
+    ],
+    "difficulty": 0.48,
+    "is_assessment": false,
+    "model_id": "BATCH-024-spp-doc-206-comprehensive-architectural-services-001"
+  }
+}

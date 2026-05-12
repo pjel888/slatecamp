@@ -1,8 +1,8 @@
 # SlateCamp IP Implementation Plan: Behavioral Signal Capture & Cognitive State Inference System
 
-**Document Classification:** CONFIDENTIAL — Trade Secret  
-**Version:** 1.0  
-**Date:** April 2026  
+**Document Classification:** CONFIDENTIAL — Trade Secret
+**Version:** 1.0
+**Date:** April 2026
 **Audience:** Founding Engineering Team Only
 
 ---

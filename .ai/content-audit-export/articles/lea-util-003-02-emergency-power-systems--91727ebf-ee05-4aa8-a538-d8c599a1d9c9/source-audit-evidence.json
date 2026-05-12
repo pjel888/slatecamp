@@ -1,0 +1,243 @@
+{
+  "schema_version": "source-audit-evidence-v1-local-first",
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-041-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T14:40:06.021+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
+    "slug": "lea-util-003-02-emergency-power-systems",
+    "title": "Emergency and alternative power systems",
+    "article_folder": ".ai/content-audit-export/articles/lea-util-003-02-emergency-power-systems--91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-02-emergency-power-systems--91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
+    "candidate_path": ".ai/content-audit-export/articles/lea-util-003-02-emergency-power-systems--91727ebf-ee05-4aa8-a538-d8c599a1d9c9/candidate.md",
+    "candidate_sha256": "sha256:88a304d9f1253532cb49822dd7e0c5fcccf2b220dd02e14c1d7860ffd61486b7",
+    "normalized_sha256": "sha256:88a304d9f1253532cb49822dd7e0c5fcccf2b220dd02e14c1d7860ffd61486b7",
+    "linked_questions_sha256": "sha256:129e27a43b4ae11d56c4bb756a2b15c18348e03106e14ba6e8038bf85b36949e",
+    "sources_sha256": "sha256:d654b3ab50520482f5cc31b35044b6f0097d241837d584757c0db20e346d3c59"
+  },
+  "classification": {
+    "content_domain": "LEA Building Utilities - emergency power",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high_value_building_utilities_code",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 15,
+    "question_edits_created": [
+      "d542544c-6183-4423-88ab-84e86b445fcc",
+      "2ab35a6f-b37d-4dbd-b6fa-bea8a6ae4950",
+      "dd564551-4368-45d9-a5d2-d80bb42b6890",
+      "7184835c-f3df-4159-b0cb-b139df258411",
+      "ac18be37-47ec-40c1-95a2-b85e4ca963e7",
+      "5e382f17-d5d9-4f9d-9739-aa2c1e23b0a0",
+      "be26c746-90b0-41dd-9ea1-0445b9314fba",
+      "8afc9cb1-7d96-44ab-826e-7025d0097f2a",
+      "c4f63e05-e11d-4150-a48d-f8f4ece16db6",
+      "d458fd34-49f0-4125-a13d-fb2baf6dced6",
+      "e193c510-7e59-4ad8-b7a2-875538b761ae",
+      "6dafd58f-9afd-44ee-9231-6819e0824e19",
+      "0e83ea53-ac38-4071-b382-9a69afca9f7f",
+      "8012bb51-586a-4907-8818-89d6d177f600",
+      "acf616f0-eb67-4456-84fe-4a2bd5a941f3"
+    ]
+  },
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/lea-util-003-02-emergency-power-systems--91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-02-emergency-power-systems--91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/lea-util-003-02-emergency-power-systems--91727ebf-ee05-4aa8-a538-d8c599a1d9c9/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-02-emergency-power-systems--91727ebf-ee05-4aa8-a538-d8c599a1d9c9/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/lea-util-003-02-emergency-power-systems--91727ebf-ee05-4aa8-a538-d8c599a1d9c9/question-edits/d542544c-6183-4423-88ab-84e86b445fcc.json",
+      ".ai/content-audit-export/articles/lea-util-003-02-emergency-power-systems--91727ebf-ee05-4aa8-a538-d8c599a1d9c9/question-edits/2ab35a6f-b37d-4dbd-b6fa-bea8a6ae4950.json",
+      ".ai/content-audit-export/articles/lea-util-003-02-emergency-power-systems--91727ebf-ee05-4aa8-a538-d8c599a1d9c9/question-edits/dd564551-4368-45d9-a5d2-d80bb42b6890.json",
+      ".ai/content-audit-export/articles/lea-util-003-02-emergency-power-systems--91727ebf-ee05-4aa8-a538-d8c599a1d9c9/question-edits/7184835c-f3df-4159-b0cb-b139df258411.json",
+      ".ai/content-audit-export/articles/lea-util-003-02-emergency-power-systems--91727ebf-ee05-4aa8-a538-d8c599a1d9c9/question-edits/ac18be37-47ec-40c1-95a2-b85e4ca963e7.json",
+      ".ai/content-audit-export/articles/lea-util-003-02-emergency-power-systems--91727ebf-ee05-4aa8-a538-d8c599a1d9c9/question-edits/5e382f17-d5d9-4f9d-9739-aa2c1e23b0a0.json",
+      ".ai/content-audit-export/articles/lea-util-003-02-emergency-power-systems--91727ebf-ee05-4aa8-a538-d8c599a1d9c9/question-edits/be26c746-90b0-41dd-9ea1-0445b9314fba.json",
+      ".ai/content-audit-export/articles/lea-util-003-02-emergency-power-systems--91727ebf-ee05-4aa8-a538-d8c599a1d9c9/question-edits/8afc9cb1-7d96-44ab-826e-7025d0097f2a.json",
+      ".ai/content-audit-export/articles/lea-util-003-02-emergency-power-systems--91727ebf-ee05-4aa8-a538-d8c599a1d9c9/question-edits/c4f63e05-e11d-4150-a48d-f8f4ece16db6.json",
+      ".ai/content-audit-export/articles/lea-util-003-02-emergency-power-systems--91727ebf-ee05-4aa8-a538-d8c599a1d9c9/question-edits/d458fd34-49f0-4125-a13d-fb2baf6dced6.json",
+      ".ai/content-audit-export/articles/lea-util-003-02-emergency-power-systems--91727ebf-ee05-4aa8-a538-d8c599a1d9c9/question-edits/e193c510-7e59-4ad8-b7a2-875538b761ae.json",
+      ".ai/content-audit-export/articles/lea-util-003-02-emergency-power-systems--91727ebf-ee05-4aa8-a538-d8c599a1d9c9/question-edits/6dafd58f-9afd-44ee-9231-6819e0824e19.json",
+      ".ai/content-audit-export/articles/lea-util-003-02-emergency-power-systems--91727ebf-ee05-4aa8-a538-d8c599a1d9c9/question-edits/0e83ea53-ac38-4071-b382-9a69afca9f7f.json",
+      ".ai/content-audit-export/articles/lea-util-003-02-emergency-power-systems--91727ebf-ee05-4aa8-a538-d8c599a1d9c9/question-edits/8012bb51-586a-4907-8818-89d6d177f600.json",
+      ".ai/content-audit-export/articles/lea-util-003-02-emergency-power-systems--91727ebf-ee05-4aa8-a538-d8c599a1d9c9/question-edits/acf616f0-eb67-4456-84fe-4a2bd5a941f3.json"
+    ]
+  },
+  "raw_sources": [
+    {
+      "source_id": "pec-2017-local-phil-electrical-code",
+      "label": "Philippine Electrical Code local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+      "raw_pdf_sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+      "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3",
+      "source_locator": "Phil Electrical Code refined markdown lines 360-424; Phil Electrical Code refined markdown lines 498-636; Phil Electrical Code refined markdown lines 670-724",
+      "checked_markdown_lines": [
+        "Phil Electrical Code refined markdown lines 360-424",
+        "Phil Electrical Code refined markdown lines 498-636",
+        "Phil Electrical Code refined markdown lines 670-724"
+      ]
+    },
+    {
+      "source_id": "fajardo-electrical-layout-estimate-2nd-ed-local",
+      "label": "Electrical Layout and Estimate, 2nd Edition, Max B. Fajardo Jr. and Leo R. Fajardo local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.pdf",
+      "raw_pdf_sha256": "sha256:3cc20c7a3681cd41b427df17784582d578f8d772f1f50808a9c66d9390cbf244",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.md",
+      "refined_markdown_sha256": "sha256:e68e20c6b6a0dbb331c151d0814e182037564f63cf17a07284a6e126de62fc45",
+      "source_locator": "Electrical Layout and Estimate refined markdown lines 4305-4438",
+      "checked_markdown_lines": [
+        "Electrical Layout and Estimate refined markdown lines 4305-4438"
+      ]
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "pec-2017-local-phil-electrical-code",
+      "label": "Philippine Electrical Code local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+      "raw_pdf_sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+      "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3",
+      "source_locator": "Phil Electrical Code refined markdown lines 360-424; Phil Electrical Code refined markdown lines 498-636; Phil Electrical Code refined markdown lines 670-724",
+      "checked_markdown_lines": [
+        "Phil Electrical Code refined markdown lines 360-424",
+        "Phil Electrical Code refined markdown lines 498-636",
+        "Phil Electrical Code refined markdown lines 670-724"
+      ]
+    },
+    {
+      "source_id": "fajardo-electrical-layout-estimate-2nd-ed-local",
+      "label": "Electrical Layout and Estimate, 2nd Edition, Max B. Fajardo Jr. and Leo R. Fajardo local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.pdf",
+      "raw_pdf_sha256": "sha256:3cc20c7a3681cd41b427df17784582d578f8d772f1f50808a9c66d9390cbf244",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.md",
+      "refined_markdown_sha256": "sha256:e68e20c6b6a0dbb331c151d0814e182037564f63cf17a07284a6e126de62fc45",
+      "source_locator": "Electrical Layout and Estimate refined markdown lines 4305-4438",
+      "checked_markdown_lines": [
+        "Electrical Layout and Estimate refined markdown lines 4305-4438"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "b041-emergency-01",
+      "claim_text": "Premises wiring may originate from sources such as a battery, photovoltaic system, generator, transformer, or converter and extend to outlets.",
+      "claim_type": "electrical_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "Philippine Electrical Code local raw PDF",
+        "locator": "Phil Electrical Code refined markdown lines 360-424",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+        "raw_pdf_sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+        "quoted_pdf_excerpt": "premises wiring includes conductors and equipment from service point or source to outlets"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b041-emergency-02",
+      "claim_text": "A transfer switch transfers one or more load conductor connections from one power source to another.",
+      "claim_type": "electrical_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "Philippine Electrical Code local raw PDF",
+        "locator": "Phil Electrical Code refined markdown line 422",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+        "raw_pdf_sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+        "quoted_pdf_excerpt": "transfer switch: device that transfers one or more load conductor connections from one power source to another"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b041-emergency-03",
+      "claim_text": "Electrical plans with emergency power or lighting must show complete emergency power and emergency lighting wiring when present.",
+      "claim_type": "electrical_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "Philippine Electrical Code local raw PDF",
+        "locator": "Phil Electrical Code refined markdown lines 612-631",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+        "raw_pdf_sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+        "quoted_pdf_excerpt": "complete emergency power system or emergency lighting system wiring where present"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b041-emergency-04",
+      "claim_text": "Emergency systems may use battery, inverter, generator, and transfer-switch arrangements for selected emergency loads.",
+      "claim_type": "electrical_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "Electrical Layout and Estimate, 2nd Edition, Max B. Fajardo Jr. and Leo R. Fajardo local raw PDF",
+        "locator": "Electrical Layout and Estimate refined markdown lines 4305-4438",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.pdf",
+        "raw_pdf_sha256": "sha256:3cc20c7a3681cd41b427df17784582d578f8d772f1f50808a9c66d9390cbf244",
+        "quoted_pdf_excerpt": "emergency electric supply arrangements include battery, inverter, generator, and transfer switch"
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [
+    "Non-local fuel secondary-containment percentages, external emergency-generator fuel-room requirements, and unchecked demand shortcuts were excluded from the Batch 041 repaired content and question edits."
+  ],
+  "removed_or_rewritten_material": [
+    "Removed exported UI-block marker tokens from normalized article content.",
+    "Rewrote linked question files to stay inside checked PEC and Electrical Layout and Estimate evidence."
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdf_first": true,
+    "derivative_layers_used_only_as_locators": true,
+    "checked_raw_pdf_families": [
+      "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+      "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.pdf"
+    ]
+  },
+  "gate_results": {
+    "source_audit": "PASS",
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_validation": "PASS",
+    "question_edit_count_check": "PASS",
+    "scoped_json_parse": "PASS",
+    "marker_scan": "PASS",
+    "source_hash_check": "PASS",
+    "stale_compose_error_check": "PASS"
+  },
+  "source_safe_repair": {
+    "status": "COMPLETE_LOCAL_VALIDATED",
+    "article_normalized_rewritten": true,
+    "sources_json_updated": true,
+    "source_audit_evidence_updated": true,
+    "question_edits_created": 15,
+    "blockers": []
+  },
+  "local_validation": {
+    "status": "PASS_LOCAL_VALIDATION",
+    "validated_at": "2026-05-11T14:40:06.021+08:00",
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_validation": "PASS",
+    "scoped_checks": "PASS",
+    "blockers": []
+  },
+  "sme_review": {
+    "required_before_supabase_publish": true,
+    "completed": false
+  },
+  "overall": {
+    "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+    "blockers": []
+  }
+}

@@ -1,7 +1,7 @@
 # IMPL_13: Adaptive Daily Dose & Study Session Micro-Planning
 
-**Priority:** P0  
-**Effort:** ~3 days  
+**Priority:** P0
+**Effort:** ~3 days
 **Research basis:** Decision fatigue is the #1 reason students open a study app and close it without studying. Removing the "what should I study?" question increases session initiation by 40%+ in EdTech benchmarks.
 
 ---

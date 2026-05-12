@@ -1,0 +1,59 @@
+{
+  "question_id": "dafd69c9-8cd4-4dcf-8caf-0392b9c32f52",
+  "baseline_hash": "sha256:390efd74f5443dbee71e16a0bc4c672e85039b4c9db728903d5793b5d907bc98",
+  "action": "replace",
+  "reason": "source-audited-article-batch-085-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-005-07-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-085",
+  "approved_at": "2026-05-12T07:55:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
+    "parent_article_slug": "lea-matl-005-07-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Green Building Illustrated refined markdown lines 7501-7535 and 7549-7583.",
+    "checked_markdown_lines": [
+      "Green Building Illustrated refined markdown lines 7501-7535, 7549-7583, and 7709-7727; raw PDF pages 228-230 and 235-236 checked by local PyMuPDF extraction."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "green-building-illustrated-b085",
+        "label": "Green Building Illustrated",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Green Building Illustrated.pdf",
+        "sha256": "sha256:b23f127ca4581eb2d733b14e2a3739d022c9d04b343729b0ecdebdf92d0bdc70",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Green Building Illustrated.md",
+        "refined_markdown_sha256": "sha256:4c754dad2867dea176cd93c2f93788b7874ccbbe557096bb64cbb0ab3a0165d2",
+        "locator": "Green Building Illustrated refined markdown lines 7501-7535, 7549-7583, and 7709-7727; raw PDF pages 228-230 and 235-236 checked by local PyMuPDF extraction."
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 085 local raw-source-audited embodied_energy_and_recycled_content scope."
+  },
+  "proposed": {
+    "text": "What is a good first step before selecting previously unused materials?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Minimize material use and maximize reuse or recycling where appropriate"
+      },
+      {
+        "id": "b",
+        "text": "Maximize waste first"
+      },
+      {
+        "id": "c",
+        "text": "Ignore product suitability"
+      },
+      {
+        "id": "d",
+        "text": "Choose only the cheapest label"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Minimize material use and maximize reuse or recycling where appropriate. The audited source supports material life-cycle and embodied-energy principles without unsupported carbon factors or certification point claims.",
+    "explanation": "Minimize material use and maximize reuse or recycling where appropriate. The audited source supports material life-cycle and embodied-energy principles without unsupported carbon factors or certification point claims.",
+    "code_citation": "Green Building Illustrated",
+    "bloom_level": "apply",
+    "application_context": "source_audited_local_first_batch_085",
+    "practice_context": [],
+    "difficulty": 0.7
+  }
+}

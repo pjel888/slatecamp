@@ -1,7 +1,7 @@
 # IMPL_09: Wrong Answer Taxonomy & Concept Confusion Detector
 
-**Priority:** P1  
-**Effort:** ~3 days  
+**Priority:** P1
+**Effort:** ~3 days
 **Research basis:** Elaborative interrogation (addressing the specific misconception) is significantly more effective than simply revealing the correct answer. Concept confusion pairs represent the highest-leverage content to create.
 
 ---

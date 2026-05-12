@@ -1,0 +1,68 @@
+{
+  "question_id": "70dbc3a4-1e80-42f5-8d49-911144987c01",
+  "baseline_hash": "sha256:4b177dfc3260ce4e15028ef1c0ecd144c757354bfabc5b2f76ea6fa9e1a78312",
+  "action": "replace",
+  "reason": "source-audited-article-batch-055-local-first: local raw PDF backed replacement constrained to checked Batch 055 source families.",
+  "approved_by": "codex-local-first-batch-055",
+  "approved_at": "2026-05-11T19:38:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "7872fb73-5087-4167-a5b3-e799ce11eccc",
+    "parent_article_slug": "lea-theo-002-08-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "George Salvan Architectural Theories of Design refined markdown lines 813, 9972, 10123-10148; TOA 1 Intro to Theory refined markdown lines 147-151",
+    "checked_markdown_lines": [
+      "George Salvan Architectural Theories of Design refined markdown line 813",
+      "George Salvan Architectural Theories of Design refined markdown line 9972",
+      "George Salvan Architectural Theories of Design refined markdown lines 10123-10148",
+      "TOA 1 Intro to Theory refined markdown lines 147-151"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "salvan-theory-local-raw-pdf--b055-7872fb73-01",
+        "label": "George Salvan Architectural Theories of Design - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
+        "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
+        "locator": "George Salvan Architectural Theories of Design refined markdown lines 813, 9972, 10123-10148"
+      },
+      {
+        "source_id": "toa1-intro-local-raw-pdf--b055-7872fb73-02",
+        "label": "TOA 1 Intro to Theory - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 1 (Intro to Theory).pdf",
+        "sha256": "sha256:17ee07310eaf7fbd71aeb3cb3b57a6ffb623e2b8b1957543d74b706a5184d0e0",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md",
+        "refined_markdown_sha256": "sha256:fc665ed41ea62ddb69c88ba02c7b92628481ba6792a075bc21694ca072b150d6",
+        "locator": "TOA 1 Intro to Theory refined markdown lines 147-151"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 055 checked local raw PDF source scope."
+  },
+  "proposed": {
+    "text": "What determines scale in the checked source?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Size relative to other forms in context."
+      },
+      {
+        "id": "b",
+        "text": "Only the absolute length of one wall."
+      },
+      {
+        "id": "c",
+        "text": "The number of electrical circuits."
+      },
+      {
+        "id": "d",
+        "text": "The roof material of a hut."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Size relative to other forms in context. This answer is supported by the checked Batch 055 local raw PDF source families for Scale in Architecture by Francis D.K. Ching.",
+    "explanation": "Size relative to other forms in context. The Batch 055 source audit used local raw PDFs first and refined markdown only as locator evidence for Scale in Architecture by Francis D.K. Ching.",
+    "code_citation": "George Salvan Architectural Theories of Design refined markdown line 813"
+  },
+  "batch_question_template_index": 1
+}

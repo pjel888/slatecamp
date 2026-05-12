@@ -1,0 +1,77 @@
+{
+  "question_id": "15acfdf1-1eae-4743-8db8-a191c01033cc",
+  "baseline_hash": "sha256:78fbe95cec477916ba2b93b6742ec9c39caf102f617c22f4aa7b206705561ce3",
+  "action": "replace",
+  "reason": "source-audited-article-batch-083-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-002-04-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-083",
+  "approved_at": "2026-05-12T06:25:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
+    "parent_article_slug": "lea-matl-002-04-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Masonry Lecture refined markdown lines 109-255; George Salvan Architectural Building Materials lines 1084-1140; Building Construction Illustrated lines 15715-15740; raw PDF pages 17, 18, 20, 37, 38, and 428 checked by local PyMuPDF extraction.",
+    "checked_markdown_lines": [
+      "Masonry Lecture refined markdown lines 109-255; George Salvan Architectural Building Materials lines 1084-1140; Building Construction Illustrated lines 15715-15740; raw PDF pages 17, 18, 20, 37, 38, and 428 checked by local PyMuPDF extraction."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "masonry-lecture-b083",
+        "label": "Masonry Lecture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Masonry Lecture.pdf",
+        "sha256": "sha256:4e3fc56f93fce4d78c98bdaff6b8a41eaf0fd4389a11b69bb42d66fc996d6bd1",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Masonry Lecture.md",
+        "raw_markdown_sha256": "sha256:0386c6ebd73ac17ff6dc3cee97b63cd83b7e4168d8f3cf50c41a3347935d7ab4",
+        "locator": "Masonry Lecture refined markdown lines 109-255; raw PDF pages 17, 18, and 20 checked by local PyMuPDF extraction."
+      },
+      {
+        "source_id": "george-salvan-building-materials-b083",
+        "label": "George Salvan Architectural Building Materials",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+        "raw_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+        "locator": "George Salvan Architectural Building Materials refined markdown lines 285-565 and 1084-1140; raw PDF pages 16, 18, 37, and 38 checked by local PyMuPDF extraction."
+      },
+      {
+        "source_id": "building-construction-illustrated-b083",
+        "label": "Building Construction Illustrated, 5th Edition",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "raw_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "locator": "Building Construction Illustrated refined markdown lines 3378-3570, 6616-6792, 15420-15510, and 15680-15745; raw PDF pages 121, 422, 423, 427, and 428 checked by local PyMuPDF extraction."
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 083 local raw-source-audited natural_stone scope."
+  },
+  "proposed": {
+    "text": "According to the checked Salvan source, marble is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A metamorphic rock formed from recrystallized limestone or dolomite"
+      },
+      {
+        "id": "b",
+        "text": "A zinc-coated steel sheet"
+      },
+      {
+        "id": "c",
+        "text": "A hollow concrete masonry unit"
+      },
+      {
+        "id": "d",
+        "text": "A solder alloy"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Salvan identifies marble as metamorphic rock formed when limestone and dolomite recrystallize.",
+    "explanation": "Salvan identifies marble as metamorphic rock formed when limestone and dolomite recrystallize.",
+    "code_citation": "Masonry Lecture; George Salvan Architectural Building Materials; Building Construction Illustrated",
+    "bloom_level": "understand",
+    "application_context": "source_audited_local_first_batch_083",
+    "practice_context": [],
+    "difficulty": 0.5
+  }
+}

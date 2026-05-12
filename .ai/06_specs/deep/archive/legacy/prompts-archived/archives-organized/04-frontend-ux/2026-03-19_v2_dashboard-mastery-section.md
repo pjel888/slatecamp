@@ -82,20 +82,20 @@ Fonts:
    ```sql
    -- What subjects exist?
    SELECT DISTINCT subject FROM questions ORDER BY subject;
-   
+
    -- How is mastery tracked? Check for a mastery/progress table
-   SELECT table_name FROM information_schema.tables 
-   WHERE table_schema = 'public' 
+   SELECT table_name FROM information_schema.tables
+   WHERE table_schema = 'public'
    AND table_name ILIKE '%mastery%' OR table_name ILIKE '%progress%' OR table_name ILIKE '%topic%';
-   
+
    -- Check quiz_sessions or responses for per-subject data
-   SELECT column_name, data_type FROM information_schema.columns 
+   SELECT column_name, data_type FROM information_schema.columns
    WHERE table_name = 'quiz_responses' OR table_name = 'quiz_sessions'
    ORDER BY table_name, ordinal_position;
-   
+
    -- Sample: per-subject accuracy for the current user
    -- (adjust table/column names based on what you find above)
-   SELECT 
+   SELECT
      q.subject,
      COUNT(*) as total_answers,
      SUM(CASE WHEN qr.is_correct THEN 1 ELSE 0 END) as correct,
@@ -182,7 +182,7 @@ Each bar row contains:
 
 **Below the bars, show a summary line:**
 ```
-"3 of 7 subjects above passing" or "All subjects explored" 
+"3 of 7 subjects above passing" or "All subjects explored"
 in Inter 12px, #6B6B6B
 ```
 
@@ -279,7 +279,7 @@ Col 2-3 combined:
 <div className="lg:col-span-2 flex flex-col gap-2">
   {/* Resume banner — conditionally rendered */}
   {hasActiveSession && <ResumeSessionBanner session={activeSession} />}
-  
+
   {/* Mastery visualizations — side by side */}
   <div className="grid grid-cols-1 md:grid-cols-2 gap-2 flex-1 min-h-0">
     <SubjectRadarChart data={subjectMastery} />
@@ -311,7 +311,7 @@ async function getSubjectMastery(userId: string): Promise<SubjectMastery[]> {
 
   // Aggregate by subject
   const bySubject = new Map<string, { correct: number; total: number }>()
-  
+
   for (const row of data) {
     const subject = row.questions.subject
     const existing = bySubject.get(subject) || { correct: 0, total: 0 }
@@ -323,7 +323,7 @@ async function getSubjectMastery(userId: string): Promise<SubjectMastery[]> {
   return ALL_ALE_SUBJECTS.map(s => ({
     subject: s.name,
     shortLabel: s.shortLabel,
-    mastery: bySubject.has(s.name) 
+    mastery: bySubject.has(s.name)
       ? Math.round((bySubject.get(s.name)!.correct / bySubject.get(s.name)!.total) * 100)
       : 0,
     questionsAnswered: bySubject.get(s.name)?.total || 0

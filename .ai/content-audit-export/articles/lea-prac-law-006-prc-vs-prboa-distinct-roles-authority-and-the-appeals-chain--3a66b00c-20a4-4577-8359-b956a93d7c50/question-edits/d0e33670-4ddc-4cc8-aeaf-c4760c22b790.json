@@ -1,0 +1,34 @@
+{
+  "question_id": "d0e33670-4ddc-4cc8-aeaf-c4760c22b790",
+  "baseline_hash": "sha256:7318850799c75b8678e04c1b529773c6b9dde2bcd1515dde7214956fb830af2c",
+  "reason": "Batch 005 local source audit aligned PRC vs PRBoA: Supervision, Board Powers, and Appeals linked question ALE-PRAC-LAW-006-007 to verified RA 9266 IRR raw-source claims.",
+  "approved_by": "codex-local-source-audit-batch-005",
+  "approved_at": "2026-05-10T21:30:00+08:00",
+  "proposed": {
+    "code_citation": "RA 9266 IRR Sections 4, 7, 8, 9, and 40",
+    "explanation": "Source-audited against RA 9266 IRR Sections 4, 7, 8, 9, and 40 in the checked local RA 9266 IRR PDF. This edit removes unsupported locators or assumptions and keeps the question aligned to the audited article cluster.",
+    "text": "Under the checked RA 9266 IRR appeal rule, where may a Commission decision in a disciplinary matter be appealed?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Court of Appeals"
+      },
+      {
+        "id": "b",
+        "text": "IAPOA Ethics Committee"
+      },
+      {
+        "id": "c",
+        "text": "Regional Trial Court as an initial appeal"
+      },
+      {
+        "id": "d",
+        "text": "The Board secretary without Commission action"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "correct": "Section 7 states that the Board decision becomes final after fifteen days unless appealed to the Commission, and that the Commission decision is appealable to the Court of Appeals. The audited source does not state a Court of Appeals standard of review."
+    }
+  }
+}

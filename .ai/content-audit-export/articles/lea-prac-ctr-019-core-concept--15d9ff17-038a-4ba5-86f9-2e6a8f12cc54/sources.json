@@ -1,20 +1,33 @@
 {
   "article_id": "15d9ff17-038a-4ba5-86f9-2e6a8f12cc54",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:e9a45948040acd07f0255b09341d14560c1720d46b2fcdc21f5cfba24cbaf000",
+  "sources_hash": "sha256:207ddcd35f1c59ec257399de2b9654b27cfef46a0e7e15db53b17e836eecbbcc",
   "source_count": 1,
   "sources": [
     {
-      "source_id": "8abd2158-f33c-4cd0-947f-02f348266c2e",
+      "source_id": "pd1096-rirr-2004-section-309-local",
       "article_id": "15d9ff17-038a-4ba5-86f9-2e6a8f12cc54",
-      "label": "National Building Code of the Philippines; Building Official authority and Certificate of Occupancy requirements; UAP Document 301",
+      "label": "PD 1096 2004 Revised IRR - Certificate of Occupancy",
       "url": null,
-      "source_type": "reference_standard",
-      "description": "Architect's role in occupancy process coordination and construction compliance",
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:01.68074+00:00",
-      "updated_at": "2026-03-24T04:34:01.68074+00:00"
+      "source_type": "building_code_pdf",
+      "description": "Local PD 1096 2004 Revised IRR raw PDF and refined markdown checked for Certificate of Occupancy application, inspection, FSIC, issuance, use, and partial occupancy rules.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-11T20:30:00.000+08:00",
+      "updated_at": "2026-05-11T20:30:00.000+08:00",
+      "local_source_audit": {
+        "authority": "Department of Public Works and Highways / National Building Code of the Philippines IRR",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR lines 858-862",
+          "PD 1096 RIRR lines 906-923"
+        ],
+        "local_source_checked": true
+      }
     }
   ]
 }

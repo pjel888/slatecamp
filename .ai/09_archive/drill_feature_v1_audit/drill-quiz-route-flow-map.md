@@ -22,7 +22,7 @@ graph TD
     B -->|Start Session Action| C[Session: /quiz/:mode/session/:sessionId]
     C -->|Submit All / End Action| D[Results: /quiz/:mode/session/:sessionId/results]
     D -->|Enter Review Mode| E[Review: /quiz/:mode/session/:sessionId/review]
-    
+
     C -->|User Exit| A
     E -->|Back| D
     D -->|Back| A

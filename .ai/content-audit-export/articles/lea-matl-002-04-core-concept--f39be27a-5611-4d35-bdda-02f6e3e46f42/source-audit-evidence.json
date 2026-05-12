@@ -1,0 +1,244 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-083-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T06:25:00.000+08:00",
+  "target": {
+    "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
+    "slug": "lea-matl-002-04-core-concept",
+    "title": "Natural stone",
+    "article_folder": ".ai/content-audit-export/articles/lea-matl-002-04-core-concept--f39be27a-5611-4d35-bdda-02f6e3e46f42",
+    "normalized_sha256": "sha256:821fcab24d28771979f738f904d36fab9fce97f42c39c823e69b854294aee4a5",
+    "candidate_sha256": "sha256:821fcab24d28771979f738f904d36fab9fce97f42c39c823e69b854294aee4a5",
+    "candidate_path": ".ai/content-audit-export/articles/lea-matl-002-04-core-concept--f39be27a-5611-4d35-bdda-02f6e3e46f42/candidate.md"
+  },
+  "classification": {
+    "topic_family": "natural_stone",
+    "local_first_batch": "083",
+    "source_sensitivity": "technical_materials",
+    "contains_legal_or_code_claims": false,
+    "source_risk_tier": "source_bound_materials",
+    "requires_raw_pdf_audit": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdfs_checked_first": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "local_pdf_extraction_method": "python_pymupdf_local",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "masonry-lecture-b083",
+      "label": "Masonry Lecture",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Masonry Lecture.pdf",
+      "sha256": "sha256:4e3fc56f93fce4d78c98bdaff6b8a41eaf0fd4389a11b69bb42d66fc996d6bd1",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Masonry Lecture.md",
+      "refined_markdown_sha256": "sha256:0386c6ebd73ac17ff6dc3cee97b63cd83b7e4168d8f3cf50c41a3347935d7ab4",
+      "locator": "Masonry Lecture refined markdown lines 109-255; raw PDF pages 17, 18, and 20 checked by local PyMuPDF extraction."
+    },
+    {
+      "source_id": "george-salvan-building-materials-b083",
+      "label": "George Salvan Architectural Building Materials",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+      "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+      "refined_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+      "locator": "George Salvan Architectural Building Materials refined markdown lines 285-565 and 1084-1140; raw PDF pages 16, 18, 37, and 38 checked by local PyMuPDF extraction."
+    },
+    {
+      "source_id": "building-construction-illustrated-b083",
+      "label": "Building Construction Illustrated, 5th Edition",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+      "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+      "refined_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "locator": "Building Construction Illustrated refined markdown lines 3378-3570, 6616-6792, 15420-15510, and 15680-15745; raw PDF pages 121, 422, 423, 427, and 428 checked by local PyMuPDF extraction."
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-matl-002-04-core-concept-article-b083",
+      "claim_text": "Article lea-matl-002-04-core-concept was rewritten to the checked natural_stone source scope.",
+      "claim_type": "article_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Masonry Lecture.pdf",
+        "raw_pdf_sha256": "sha256:4e3fc56f93fce4d78c98bdaff6b8a41eaf0fd4389a11b69bb42d66fc996d6bd1",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Masonry Lecture.md",
+        "source_locator": "Masonry Lecture refined markdown lines 109-255; George Salvan Architectural Building Materials lines 1084-1140; Building Construction Illustrated lines 15715-15740; raw PDF pages 17, 18, 20, 37, 38, and 428 checked by local PyMuPDF extraction.",
+        "quoted_pdf_excerpt": "Primary locators were checked in the local raw PDF extraction before the article rewrite."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-88e587a6-8889-4a80-9940-3836dea4de15-b083",
+      "claim_text": "Question 88e587a6-8889-4a80-9940-3836dea4de15 was rewritten to the checked natural_stone source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Masonry Lecture.pdf",
+        "raw_pdf_sha256": "sha256:4e3fc56f93fce4d78c98bdaff6b8a41eaf0fd4389a11b69bb42d66fc996d6bd1",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Masonry Lecture.md",
+        "source_locator": "Masonry Lecture refined markdown lines 109-255; George Salvan Architectural Building Materials lines 1084-1140; Building Construction Illustrated lines 15715-15740; raw PDF pages 17, 18, 20, 37, 38, and 428 checked by local PyMuPDF extraction.",
+        "quoted_pdf_excerpt": "Question edit is constrained to the same local raw-source-audited scope as the parent article."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-12e30555-cad1-4952-933d-efcc74db00d3-b083",
+      "claim_text": "Question 12e30555-cad1-4952-933d-efcc74db00d3 was rewritten to the checked natural_stone source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Masonry Lecture.pdf",
+        "raw_pdf_sha256": "sha256:4e3fc56f93fce4d78c98bdaff6b8a41eaf0fd4389a11b69bb42d66fc996d6bd1",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Masonry Lecture.md",
+        "source_locator": "Masonry Lecture refined markdown lines 109-255; George Salvan Architectural Building Materials lines 1084-1140; Building Construction Illustrated lines 15715-15740; raw PDF pages 17, 18, 20, 37, 38, and 428 checked by local PyMuPDF extraction.",
+        "quoted_pdf_excerpt": "Question edit is constrained to the same local raw-source-audited scope as the parent article."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-3995d43f-1bf2-4b59-9cf4-1864bd87c334-b083",
+      "claim_text": "Question 3995d43f-1bf2-4b59-9cf4-1864bd87c334 was rewritten to the checked natural_stone source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Masonry Lecture.pdf",
+        "raw_pdf_sha256": "sha256:4e3fc56f93fce4d78c98bdaff6b8a41eaf0fd4389a11b69bb42d66fc996d6bd1",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Masonry Lecture.md",
+        "source_locator": "Masonry Lecture refined markdown lines 109-255; George Salvan Architectural Building Materials lines 1084-1140; Building Construction Illustrated lines 15715-15740; raw PDF pages 17, 18, 20, 37, 38, and 428 checked by local PyMuPDF extraction.",
+        "quoted_pdf_excerpt": "Question edit is constrained to the same local raw-source-audited scope as the parent article."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-f4dfa4e2-0bcb-45ea-bc31-878d00ab8610-b083",
+      "claim_text": "Question f4dfa4e2-0bcb-45ea-bc31-878d00ab8610 was rewritten to the checked natural_stone source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Masonry Lecture.pdf",
+        "raw_pdf_sha256": "sha256:4e3fc56f93fce4d78c98bdaff6b8a41eaf0fd4389a11b69bb42d66fc996d6bd1",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Masonry Lecture.md",
+        "source_locator": "Masonry Lecture refined markdown lines 109-255; George Salvan Architectural Building Materials lines 1084-1140; Building Construction Illustrated lines 15715-15740; raw PDF pages 17, 18, 20, 37, 38, and 428 checked by local PyMuPDF extraction.",
+        "quoted_pdf_excerpt": "Question edit is constrained to the same local raw-source-audited scope as the parent article."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-15acfdf1-1eae-4743-8db8-a191c01033cc-b083",
+      "claim_text": "Question 15acfdf1-1eae-4743-8db8-a191c01033cc was rewritten to the checked natural_stone source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Masonry Lecture.pdf",
+        "raw_pdf_sha256": "sha256:4e3fc56f93fce4d78c98bdaff6b8a41eaf0fd4389a11b69bb42d66fc996d6bd1",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Masonry Lecture.md",
+        "source_locator": "Masonry Lecture refined markdown lines 109-255; George Salvan Architectural Building Materials lines 1084-1140; Building Construction Illustrated lines 15715-15740; raw PDF pages 17, 18, 20, 37, 38, and 428 checked by local PyMuPDF extraction.",
+        "quoted_pdf_excerpt": "Question edit is constrained to the same local raw-source-audited scope as the parent article."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-d3ab72e4-30ff-4855-aaf4-6cf76f531983-b083",
+      "claim_text": "Question d3ab72e4-30ff-4855-aaf4-6cf76f531983 was rewritten to the checked natural_stone source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Masonry Lecture.pdf",
+        "raw_pdf_sha256": "sha256:4e3fc56f93fce4d78c98bdaff6b8a41eaf0fd4389a11b69bb42d66fc996d6bd1",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Masonry Lecture.md",
+        "source_locator": "Masonry Lecture refined markdown lines 109-255; George Salvan Architectural Building Materials lines 1084-1140; Building Construction Illustrated lines 15715-15740; raw PDF pages 17, 18, 20, 37, 38, and 428 checked by local PyMuPDF extraction.",
+        "quoted_pdf_excerpt": "Question edit is constrained to the same local raw-source-audited scope as the parent article."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-e4e2391e-dc72-4f32-94bd-fe7b5076e477-b083",
+      "claim_text": "Question e4e2391e-dc72-4f32-94bd-fe7b5076e477 was rewritten to the checked natural_stone source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Masonry Lecture.pdf",
+        "raw_pdf_sha256": "sha256:4e3fc56f93fce4d78c98bdaff6b8a41eaf0fd4389a11b69bb42d66fc996d6bd1",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Masonry Lecture.md",
+        "source_locator": "Masonry Lecture refined markdown lines 109-255; George Salvan Architectural Building Materials lines 1084-1140; Building Construction Illustrated lines 15715-15740; raw PDF pages 17, 18, 20, 37, 38, and 428 checked by local PyMuPDF extraction.",
+        "quoted_pdf_excerpt": "Question edit is constrained to the same local raw-source-audited scope as the parent article."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-060f9472-d89b-439f-a5a4-0bf87c3f995a-b083",
+      "claim_text": "Question 060f9472-d89b-439f-a5a4-0bf87c3f995a was rewritten to the checked natural_stone source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Masonry Lecture.pdf",
+        "raw_pdf_sha256": "sha256:4e3fc56f93fce4d78c98bdaff6b8a41eaf0fd4389a11b69bb42d66fc996d6bd1",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Masonry Lecture.md",
+        "source_locator": "Masonry Lecture refined markdown lines 109-255; George Salvan Architectural Building Materials lines 1084-1140; Building Construction Illustrated lines 15715-15740; raw PDF pages 17, 18, 20, 37, 38, and 428 checked by local PyMuPDF extraction.",
+        "quoted_pdf_excerpt": "Question edit is constrained to the same local raw-source-audited scope as the parent article."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-bbdc625a-aed1-4fcd-a6ac-553e02ff7b31-b083",
+      "claim_text": "Question bbdc625a-aed1-4fcd-a6ac-553e02ff7b31 was rewritten to the checked natural_stone source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Masonry Lecture.pdf",
+        "raw_pdf_sha256": "sha256:4e3fc56f93fce4d78c98bdaff6b8a41eaf0fd4389a11b69bb42d66fc996d6bd1",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Masonry Lecture.md",
+        "source_locator": "Masonry Lecture refined markdown lines 109-255; George Salvan Architectural Building Materials lines 1084-1140; Building Construction Illustrated lines 15715-15740; raw PDF pages 17, 18, 20, 37, 38, and 428 checked by local PyMuPDF extraction.",
+        "quoted_pdf_excerpt": "Question edit is constrained to the same local raw-source-audited scope as the parent article."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-e621d7c1-75cc-4c48-9289-9087d30913f8-b083",
+      "claim_text": "Question e621d7c1-75cc-4c48-9289-9087d30913f8 was rewritten to the checked natural_stone source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Masonry Lecture.pdf",
+        "raw_pdf_sha256": "sha256:4e3fc56f93fce4d78c98bdaff6b8a41eaf0fd4389a11b69bb42d66fc996d6bd1",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Masonry Lecture.md",
+        "source_locator": "Masonry Lecture refined markdown lines 109-255; George Salvan Architectural Building Materials lines 1084-1140; Building Construction Illustrated lines 15715-15740; raw PDF pages 17, 18, 20, 37, 38, and 428 checked by local PyMuPDF extraction.",
+        "quoted_pdf_excerpt": "Question edit is constrained to the same local raw-source-audited scope as the parent article."
+      },
+      "blockers": []
+    }
+  ],
+  "question_edit_audit": {
+    "linked_question_count": 10,
+    "question_edit_count": 10,
+    "answer_key_fields_changed": true,
+    "source_safe_rewrite": true,
+    "blockers": []
+  },
+  "scenario_enrichment": {
+    "status": "eligible-deferred",
+    "reason": "Natural-stone selection can support scenario practice, but Batch 083 prioritized raw-source alignment and linked-question repair."
+  },
+  "roundtrip": {
+    "normalized_md_owns_article_prose": true,
+    "ui_blocks_json_owns_raw_ui_blocks": true,
+    "candidate_md_generated_by_compose": true,
+    "raw_ui_block_edits_supported_in_this_batch": false,
+    "note": "Exported UI summary markers were removed where ui-blocks.json had zero preserved raw blocks, allowing compose to complete without unresolved UI markers.",
+    "unresolved_ui_summary_markers_removed": true
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "article_id": "3e530aa4-6004-4664-a241-9634a725bd5c",
+  "slug": "lea-prac-svc-010-core-concept",
+  "batch_id": "source-audited-article-batch-020-local-first",
+  "generated_at": "2026-05-10T16:41:51.472Z",
+  "mode": "local_first_no_supabase_no_deploy_no_commit",
+  "status": "locally_source_audited",
+  "raw_pdf_audit": [
+    {
+      "source_id": "spp-208-uap-local-raw-pdf",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 208.pdf",
+      "raw_pdf_sha256": "sha256:c491ea6b2a58eb052b37ca4bee7145ffc98b5da9ef076cf30aa59b04b100c074",
+      "ocr_pdf_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/ocr_pdf/UAP/SPP 208.pdf",
+      "ocr_pdf_sha256": "sha256:42dbb6ec53dcd7d0187f5470a5da999754522acb93244ceef9dcacb4e4eb74d7",
+      "checked_markdown_lines": [
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md",
+          "checked_lines": [
+            "3-8"
+          ],
+          "note": "Document title identifies Architectural Design Competitions."
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md",
+          "checked_lines": [
+            "111-151"
+          ],
+          "note": "Owner definition and owner financing/invitation role."
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/SPP 208.md",
+          "checked_lines": [
+            "155-173"
+          ],
+          "note": "Jury definition, juror label, architect majority, lay juror, nomination and approval."
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md",
+          "checked_lines": [
+            "179-201"
+          ],
+          "note": "Professional Advisor role."
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md",
+          "checked_lines": [
+            "205-241"
+          ],
+          "note": "Technical Advisors and Competition Secretariat roles."
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md",
+          "checked_lines": [
+            "253-259"
+          ],
+          "note": "IAPOA ADC Committee role."
+        }
+      ],
+      "note": "Raw PDF is retained as the authority file; local OCR/refined Markdown was used for line-level verification."
+    }
+  ],
+  "article_repair": {
+    "normalized_md_rewritten": true,
+    "candidate_md_to_be_recomposed": true,
+    "ui_blocks_removed_from_current_candidate": true,
+    "old_internal_generation_notes_removed": true,
+    "risky_claims_removed_or_rewritten": [
+      "Removed irrelevant Architectural Interiors framing.",
+      "Removed unrelated SPP 202 fee distribution material.",
+      "Removed garbled and unverified article-specific wording from the prior normalized file."
+    ]
+  },
+  "claim_support": [
+    {
+      "claim": "SPP 208 is the SPP document for Architectural Design Competitions.",
+      "support_status": "source_supported",
+      "support_sources": [
+        {
+          "source_id": "spp-208-uap-local-raw-pdf",
+          "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 3-8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 111-151; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/SPP 208.md lines 155-173; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 179-201; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 205-241; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 253-259"
+        }
+      ]
+    },
+    {
+      "claim": "The Owner undertakes or promotes the ADC, invites architects, and finances the ADC.",
+      "support_status": "source_supported",
+      "support_sources": [
+        {
+          "source_id": "spp-208-uap-local-raw-pdf",
+          "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 3-8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 111-151; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/SPP 208.md lines 155-173; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 179-201; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 205-241; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 253-259"
+        }
+      ]
+    },
+    {
+      "claim": "The Jury assesses entries; jurors are its members, with architect majority and lay juror support in the checked source.",
+      "support_status": "source_supported",
+      "support_sources": [
+        {
+          "source_id": "spp-208-uap-local-raw-pdf",
+          "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 3-8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 111-151; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/SPP 208.md lines 155-173; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 179-201; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 205-241; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 253-259"
+        }
+      ]
+    },
+    {
+      "claim": "The Professional Advisor organizes the ADC on behalf of the Owner after nomination and IAPOA approval.",
+      "support_status": "source_supported",
+      "support_sources": [
+        {
+          "source_id": "spp-208-uap-local-raw-pdf",
+          "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 3-8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 111-151; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/SPP 208.md lines 155-173; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 179-201; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 205-241; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 253-259"
+        }
+      ]
+    },
+    {
+      "claim": "Technical Advisors, the Competition Secretariat, and the IAPOA ADC Committee have source-backed roles in SPP 208.",
+      "support_status": "source_supported",
+      "support_sources": [
+        {
+          "source_id": "spp-208-uap-local-raw-pdf",
+          "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 3-8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 111-151; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/SPP 208.md lines 155-173; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 179-201; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 205-241; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 253-259"
+        }
+      ]
+    }
+  ],
+  "question_repair_policy": {
+    "action": "replace_linked_questions_with_source_safe_versions",
+    "answer_key_changes_expected": true,
+    "allowed_question_scope": "Only concepts directly supported by the checked SPP source lines are used."
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "question_id": "a092a4ff-3969-47b7-ad14-6ff6bb8d3b04",
+  "baseline_hash": "sha256:8408dad77dde76c2c78c7dce975898cffe5d25e99f69dbfd3170e7d124ce24d4",
+  "action": "replace",
+  "reason": "source-audited-article-batch-039-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-039",
+  "approved_at": "2026-05-11T13:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-039-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 3946-3997"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 1213"
+  },
+  "proposed": {
+    "text": "What minimum occupancy separation applies to rooms accessory to the stage?",
+    "options": [
+      {
+        "id": "b039-1a46-26-a",
+        "text": "Not less than one-hour fire-resistive occupancy separation"
+      },
+      {
+        "id": "b039-1a46-26-b",
+        "text": "No separation if accessory to the stage"
+      },
+      {
+        "id": "b039-1a46-26-c",
+        "text": "Two-hour separation in all cases"
+      },
+      {
+        "id": "b039-1a46-26-d",
+        "text": "Four-hour separation in all cases"
+      }
+    ],
+    "correct_option_id": "b039-1a46-26-a",
+    "rationale": "Correct answer: Not less than one-hour fire-resistive occupancy separation. This is directly supported by PD 1096 2004 Revised IRR, Section 1213.",
+    "explanation": "The Batch 039 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 1213.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 1213"
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "batch_id": "source-audited-article-batch-016-local-first",
+  "mode": "local-first",
+  "generated_at": "2026-05-10T23:58:00.000+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "no_supabase_push": true,
+  "no_deploy": true,
+  "no_commit": true,
+  "selection_policy": {
+    "selected_from": ".ai/content-audit-export/articles",
+    "avoided_prior_batches": "Batch 001 through Batch 015 report/ledger artifacts were scanned for selected article IDs.",
+    "prior_artifacts_scanned": [
+      ".ai/content-audit-export/source-audited-article-batch-001-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-002-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-003-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-003-local-first-recovery-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-003-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-004-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-004-local-first-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-005-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-005-local-first-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-006-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-006-local-first-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-007-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-007-local-first-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-008-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-008-local-first-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-009-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-009-local-first-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-010-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-010-local-first-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-011-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-011-local-first-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-012-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-012-local-first-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-013-blocker-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-013-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-013-local-first-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-014-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-014-local-first-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-015-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-015-local-first-report-2026-05-10.md"
+    ],
+    "preference": "high-value LEA professional-practice clusters with linked questions and local raw PDFs under vitruvius-connection/001_Raw-Source-Layer"
+  },
+  "counts": {
+    "selected_articles": 5,
+    "local_pass_articles": 5,
+    "blocked_articles": 0,
+    "linked_questions_covered": 50,
+    "question_edit_json_files_created": 50,
+    "source_records_created": 10,
+    "source_safe_rewritten_question_edits": 50,
+    "unresolved_external_source_gap_question_edits": 0,
+    "placeholder_matches_in_scoped_scan": 0
+  },
+  "selected_articles": [
+    {
+      "index": 1,
+      "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+      "title": "SPP DOC 202 Overview the Six Phase Framework and its Design Logic",
+      "slug": "lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic",
+      "status": "local_pass_ready_for_final_publishing_review",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001/question-edits",
+      "linked_questions": 10,
+      "question_edits_created": 10,
+      "source_records_created": 2,
+      "source_safe_rewrite_question_edits": 10,
+      "candidate_hash": "sha256:d58da29e61a97d81cf95b6d13e9db75c9917e26a7fc7dec44c82f125553b0e53",
+      "diff_changed": true,
+      "diff_safe_to_push": true,
+      "diff_blockers": [],
+      "validate_blockers": [],
+      "prior_batch_selection_check": "passed: article id not found in Batch 001-015 report/ledger artifacts"
+    },
+    {
+      "index": 2,
+      "article_id": "b3d5ae5b-09a9-426c-9feb-00932e5555aa",
+      "title": "Phase 1 Schematic Design Deliverables Decisions and Fee",
+      "slug": "lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-the-second-phase-under-spp-2022-following-project-definition-this-phase-translates-the-project-defini",
+      "status": "local_pass_ready_for_final_publishing_review",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t--b3d5ae5b-09a9-426c-9feb-00932e5555aa",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t--b3d5ae5b-09a9-426c-9feb-00932e5555aa/question-edits",
+      "linked_questions": 10,
+      "question_edits_created": 10,
+      "source_records_created": 2,
+      "source_safe_rewrite_question_edits": 10,
+      "candidate_hash": "sha256:a8d6680073652ef2473431f4fe0088b19373ffb2a99e3f31b5f763f2d6a4f34c",
+      "diff_changed": true,
+      "diff_safe_to_push": true,
+      "diff_blockers": [],
+      "validate_blockers": [],
+      "prior_batch_selection_check": "passed: article id not found in Batch 001-015 report/ledger artifacts"
+    },
+    {
+      "index": 3,
+      "article_id": "bdc69dbd-c7fb-405f-b8f7-38a6a8fce526",
+      "title": "Phase 2 Design Development Coordination Engineering Integration",
+      "slug": "lea-prac-svc-006-phase-2-design-development-coordination-engineering-integration-and-fee",
+      "status": "local_pass_ready_for_final_publishing_review",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-006-phase-2-design-development-coordination-engineering-integration-and-fee--bdc69dbd-c7fb-405f-b8f7-38a6a8fce526",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-svc-006-phase-2-design-development-coordination-engineering-integration-and-fee--bdc69dbd-c7fb-405f-b8f7-38a6a8fce526/question-edits",
+      "linked_questions": 10,
+      "question_edits_created": 10,
+      "source_records_created": 2,
+      "source_safe_rewrite_question_edits": 10,
+      "candidate_hash": "sha256:363b07e04807b859c0d8f44cc64903237d5ff7496aaff0a148652cf26910c26e",
+      "diff_changed": true,
+      "diff_safe_to_push": true,
+      "diff_blockers": [],
+      "validate_blockers": [],
+      "prior_batch_selection_check": "passed: article id not found in Batch 001-015 report/ledger artifacts"
+    },
+    {
+      "index": 4,
+      "article_id": "617cdac3-3b02-44b0-b81f-f8827fc4242e",
+      "title": "Phase 3 Contract Documents Working Drawings Specifications",
+      "slug": "lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee",
+      "status": "local_pass_ready_for_final_publishing_review",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee--617cdac3-3b02-44b0-b81f-f8827fc4242e",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee--617cdac3-3b02-44b0-b81f-f8827fc4242e/question-edits",
+      "linked_questions": 10,
+      "question_edits_created": 10,
+      "source_records_created": 2,
+      "source_safe_rewrite_question_edits": 10,
+      "candidate_hash": "sha256:ad69c308de928c2dbe84e4738dd4040c6718b5917396ea7d2a40b693a8a93b7c",
+      "diff_changed": true,
+      "diff_safe_to_push": true,
+      "diff_blockers": [],
+      "validate_blockers": [],
+      "prior_batch_selection_check": "passed: article id not found in Batch 001-015 report/ledger artifacts"
+    },
+    {
+      "index": 5,
+      "article_id": "3a00f9dd-5b51-4ce3-9004-5ef0eec99a26",
+      "title": "Phases 4 and 5 Bidding Assistance",
+      "slug": "lea-prac-svc-008-phases-4-and-5-bidding-assistance-and-construction-administration-under-spp-202",
+      "status": "local_pass_ready_for_final_publishing_review",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-008-phases-4-and-5-bidding-assistance-and-construction-administration-under-spp-202--3a00f9dd-5b51-4ce3-9004-5ef0eec99a26",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-svc-008-phases-4-and-5-bidding-assistance-and-construction-administration-under-spp-202--3a00f9dd-5b51-4ce3-9004-5ef0eec99a26/question-edits",
+      "linked_questions": 10,
+      "question_edits_created": 10,
+      "source_records_created": 2,
+      "source_safe_rewrite_question_edits": 10,
+      "candidate_hash": "sha256:3532b7d94e43cfa6f8fd9425ede8e52b708fa6864d16f447955c10a9c0c0c194",
+      "diff_changed": true,
+      "diff_safe_to_push": true,
+      "diff_blockers": [],
+      "validate_blockers": [],
+      "prior_batch_selection_check": "passed: article id not found in Batch 001-015 report/ledger artifacts"
+    }
+  ],
+  "source_audit": {
+    "sources_checked": [
+      {
+        "label": "UAP Document Standards of Professional Practice PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b"
+      },
+      {
+        "label": "UAP Document Standards of Professional Practice raw markdown",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5"
+      },
+      {
+        "label": "UAP Document 401-402 PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+        "sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f"
+      },
+      {
+        "label": "UAP Document 401-402 raw markdown",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document 401-402.md",
+        "sha256": "sha256:0b9cfd569b9f964c95dec13761812c8606b2c0fe38b9043df13efad361286a53"
+      }
+    ],
+    "checked_markdown_lines": [
+      "UAP Document Standards raw markdown lines 283-297",
+      "UAP Document Standards raw markdown lines 301-344",
+      "UAP Document Standards raw markdown lines 347-382",
+      "UAP Document 401-402 raw markdown lines 88-100",
+      "UAP Document 401-402 raw markdown lines 138-145"
+    ],
+    "source_scope": "SPP 202 regular design service phases plus UAP Document 401-402 payment milestones.",
+    "repairs": "Article bodies were rewritten to remove generated UI media summaries and to replace stale fee-allocation wording with source-safe cumulative payment milestones.",
+    "raw_pdf_gate": "passed locally for the selected SPP 202 professional-practice claims"
+  },
+  "validation": {
+    "compose": "passed for all five Batch 016 article IDs with blockers=0",
+    "diff": "passed for all five Batch 016 article IDs with safe_to_push=true and blockers=[]",
+    "validate": "passed for all five Batch 016 article IDs with valid=true and blockers=[]; component-usage.json warning only",
+    "json_parse": "selected Batch 016 JSON artifacts parsed with jq empty",
+    "placeholder_internal_note_source_gap_scan": "selected Batch 016 normalized/candidate/source/evidence/question-edit artifacts returned zero matches",
+    "tests": "bun test scripts/content-audit/content-audit.test.ts passed: 27 pass, 0 fail",
+    "git_diff_check": "scoped git diff --check passed for Batch 016 article/report/ledger artifacts after final artifact write"
+  },
+  "known_warnings": [
+    "component-usage.json has not been generated for these five article folders; scoped validate treats this as a warning, not a blocker."
+  ],
+  "blockers": [],
+  "artifacts": {
+    "ledger_path": ".ai/content-audit-export/source-audited-article-batch-016-local-first-ledger-2026-05-10.json",
+    "ledger_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-016-local-first-ledger-2026-05-10.json",
+    "report_path": ".ai/content-audit-export/source-audited-article-batch-016-local-first-report-2026-05-10.md",
+    "report_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-016-local-first-report-2026-05-10.md",
+    "per_article_evidence": "Each selected article folder contains source-audit-evidence.json.",
+    "per_article_question_edits": "Each selected article folder contains question-edits/*.json."
+  },
+  "next_phase_readiness": "Ready for final publishing review after human/editor review and remote stale checks. Supabase remains final publishing only; no Supabase mutation, deployment, commit, or push was attempted."
+}

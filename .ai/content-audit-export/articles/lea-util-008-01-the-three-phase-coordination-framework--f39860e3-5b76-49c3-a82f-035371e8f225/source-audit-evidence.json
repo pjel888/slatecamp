@@ -1,0 +1,162 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-049-local-first",
+  "batch_number": 49,
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T20:55:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "f39860e3-5b76-49c3-a82f-035371e8f225",
+    "slug": "lea-util-008-01-the-three-phase-coordination-framework",
+    "title": "MEPF coordination with architecture",
+    "article_folder": ".ai/content-audit-export/articles/lea-util-008-01-the-three-phase-coordination-framework--f39860e3-5b76-49c3-a82f-035371e8f225",
+    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-008-01-the-three-phase-coordination-framework--f39860e3-5b76-49c3-a82f-035371e8f225",
+    "candidate_path": ".ai/content-audit-export/articles/lea-util-008-01-the-three-phase-coordination-framework--f39860e3-5b76-49c3-a82f-035371e8f225/candidate.md",
+    "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-008-01-the-three-phase-coordination-framework--f39860e3-5b76-49c3-a82f-035371e8f225/candidate.md",
+    "question_edits_folder": ".ai/content-audit-export/articles/lea-util-008-01-the-three-phase-coordination-framework--f39860e3-5b76-49c3-a82f-035371e8f225/question-edits",
+    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-008-01-the-three-phase-coordination-framework--f39860e3-5b76-49c3-a82f-035371e8f225/question-edits",
+    "normalized_sha256": "sha256:66fc8662970549691856f9d374a70d10a28d4b62fecaeab0344cf9577c6e107a",
+    "candidate_sha256": "sha256:66fc8662970549691856f9d374a70d10a28d4b62fecaeab0344cf9577c6e107a",
+    "linked_questions_sha256": "sha256:86bffd29e83b36d894f3ce4ce3d63cac030d024e6bbebbbdce77d01edaa33f57",
+    "sources_sha256": "sha256:3f2dd9fea4419222b0f306f44917744e61c22b67eb173e6bc62df43aad0acdba"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "refined_markdown_role": "locator_only",
+    "derivative_or_search_layer_as_primary": false,
+    "source_families_checked": [
+      {
+        "label": "RA 9266 IRR Architecture Act - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+        "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "locator": "RA 9266 IRR refined markdown lines 31-84 and 130-134"
+      },
+      {
+        "label": "1979 UAP Documents - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/1979 UAP Documents.pdf",
+        "raw_pdf_sha256": "sha256:54d42c8d39cb6c1e8622ef21a65e63cb09d90c302ca905efa95442614e5f0b5b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/1979 UAP Documents.md",
+        "refined_markdown_sha256": "sha256:ada40ce7a1046bb6ca99a34b095250ef650a05285458e2dafd0ed4be68870b8e",
+        "locator": "1979 UAP Documents refined markdown lines 371-379, 722-756, 811-813, 1055-1161, 1427-1449, and 1560-1605"
+      },
+      {
+        "label": "Mechanical and Electrical Systems - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Mechanical and Electrical Systems.pdf",
+        "raw_pdf_sha256": "sha256:b657bfd1e3cdaceb0632ef105f7604df2df2667f1b75a1534762e1dae28ec5d9",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Mechanical and Electrical Systems.md",
+        "refined_markdown_sha256": "sha256:e041473193aa7cd57d017dcec252bd84de7e1589bd831ae22b2a5c7591e1daed",
+        "locator": "Mechanical and Electrical Systems refined markdown lines 365-474 and 548-592"
+      },
+      {
+        "label": "Mechanical and Electrical Systems 2 - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Mechanical and Electrical Systems 2.pdf",
+        "raw_pdf_sha256": "sha256:e76b064a28ace4247b5074bddecb4b720e103d90c122adbcf0366a1c4c6baea6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Mechanical and Electrical Systems 2.md",
+        "refined_markdown_sha256": "sha256:29be259d41a1f4812ed0e9467d106bb8a2b91452862a0dbc76b0e7e04630a199",
+        "locator": "Mechanical and Electrical Systems 2 refined markdown lines 153-183"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "mepf_coordination_article",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 15,
+    "question_edits_created": [
+      "b7046144-71a4-4722-98b3-e0d856010c72",
+      "5171aeed-b508-4a05-9d96-14ef0d3fad97",
+      "99c074a7-064f-43bc-9300-faf33d9a46ad",
+      "83a61677-5bb3-4a19-962c-34a38c83fb34",
+      "7242acb5-f7bb-4174-a1cd-f64c39696527",
+      "caf4f98a-13cd-42c7-a3fe-d8ad9ff9bc73",
+      "4ec5b27f-22b4-40c3-8eaa-9f47de128f4c",
+      "3bc1b825-86b5-434e-8338-b0387dc1d435",
+      "630a2fc3-1f6f-4b39-bcfc-d521ccf6373d",
+      "43cbfcbd-6340-450c-8bec-076918a2ffdb",
+      "6909815b-027e-43da-96cc-e72d0d2d1ade",
+      "a3dd0607-3354-47ce-9088-3ecd15e35d3b",
+      "4984d1d5-f80a-4261-882d-2005749b6d73",
+      "a80f2183-0c5a-44ec-a289-c928fd0c77ff",
+      "ffee499e-745f-4c18-b78f-151e6790e59b"
+    ]
+  },
+  "claims": [
+    {
+      "claim_id": "lea-util-008-01-the-three-phase-coordination-framework-b049-claim-01",
+      "claim_text": "RA 9266 IRR includes orderly coordination and utility-system architectural layouting within architectural practice.",
+      "source_support": [
+        "ra9266-local-raw-pdf--b049-f39860e3-01",
+        "uap1979-local-raw-pdf--b049-f39860e3-02",
+        "mech1-local-raw-pdf--b049-f39860e3-03",
+        "mech2-local-raw-pdf--b049-f39860e3-04"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-util-008-01-the-three-phase-coordination-framework-b049-claim-02",
+      "claim_text": "The UAP documents describe construction documents as including architectural, structural, electrical, plumbing and sanitary, mechanical and air-conditioning, civil work plans, specifications, and bid documents.",
+      "source_support": [
+        "ra9266-local-raw-pdf--b049-f39860e3-01",
+        "uap1979-local-raw-pdf--b049-f39860e3-02",
+        "mech1-local-raw-pdf--b049-f39860e3-03",
+        "mech2-local-raw-pdf--b049-f39860e3-04"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-util-008-01-the-three-phase-coordination-framework-b049-claim-03",
+      "claim_text": "Construction coordination includes meetings, inspections of utility installations, interpretation of documents, and coordination of specialty trades.",
+      "source_support": [
+        "ra9266-local-raw-pdf--b049-f39860e3-01",
+        "uap1979-local-raw-pdf--b049-f39860e3-02",
+        "mech1-local-raw-pdf--b049-f39860e3-03",
+        "mech2-local-raw-pdf--b049-f39860e3-04"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-util-008-01-the-three-phase-coordination-framework-b049-claim-04",
+      "claim_text": "Electrical service equipment, risers, telephone service entrances, and riser shafts create architectural space and access requirements.",
+      "source_support": [
+        "ra9266-local-raw-pdf--b049-f39860e3-01",
+        "uap1979-local-raw-pdf--b049-f39860e3-02",
+        "mech1-local-raw-pdf--b049-f39860e3-03",
+        "mech2-local-raw-pdf--b049-f39860e3-04"
+      ],
+      "audit_result": "PASS"
+    }
+  ],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "removed_risk_notes": [
+      "Question sidecars replaced with checked local raw-source citations.",
+      "Article body rewritten from local raw PDF families and refined markdown locators only.",
+      "Legacy compose-error sidecars are removed after selected bundle compose passes."
+    ]
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_batch_049_complete": true,
+    "remote_publish_status": "not_attempted_by_request",
+    "remaining_local_blockers": []
+  },
+  "local_validation": {
+    "status": "PASS",
+    "valid": true,
+    "blockers": 0,
+    "checked_at": "2026-05-11T20:55:00.000+08:00",
+    "commands": [
+      "bun run content-audit:compose -- --article-id f39860e3-5b76-49c3-a82f-035371e8f225 --overwrite --strict",
+      "bun run content-audit:diff -- --article-id f39860e3-5b76-49c3-a82f-035371e8f225 --strict --summary",
+      "bun run content-audit:validate -- --article-id f39860e3-5b76-49c3-a82f-035371e8f225 --summary",
+      "bun run content-audit:ui-block-edits -- --article-id f39860e3-5b76-49c3-a82f-035371e8f225"
+    ]
+  }
+}

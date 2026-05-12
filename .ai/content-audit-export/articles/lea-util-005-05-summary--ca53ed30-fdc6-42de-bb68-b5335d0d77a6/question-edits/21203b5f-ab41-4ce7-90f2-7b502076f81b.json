@@ -1,0 +1,67 @@
+{
+  "question_id": "21203b5f-ab41-4ce7-90f2-7b502076f81b",
+  "baseline_hash": "sha256:6663a5dcc940200ebb29c0e1732f7cb4d94dc8c836040fb27870e45982c86bda",
+  "action": "replace",
+  "reason": "source-audited-article-batch-046-local-first: local raw-source-backed replacement constrained to checked Batch 046 source families.",
+  "approved_by": "codex-local-first-batch-046",
+  "approved_at": "2026-05-11T17:58:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "ca53ed30-fdc6-42de-bb68-b5335d0d77a6",
+    "parent_article_slug": "lea-util-005-05-summary",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Communication refined markdown lines 416-532; PEC refined markdown lines 32160-32302, 32838-32920, 33412-33534",
+    "checked_markdown_lines": [
+      "Communication refined markdown lines 416-532",
+      "PEC refined markdown lines 32160-32302",
+      "PEC refined markdown lines 32838-32920",
+      "PEC refined markdown lines 33412-33534"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "communication-and-signal-systems-lecture-local-raw-pdf--b046",
+        "label": "Communication and Signal Systems Lecture - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Communication and Signal Systems Lecture.pdf",
+        "sha256": "sha256:f5c9a95be0f68853cac1ddfd16c80c47356731147a18e345ab8e297e9fbdcd2d",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Communication and Signal Systems Lecture.md",
+        "refined_markdown_sha256": "sha256:8e202c5683c0c465ecbe070242344f83e2cd95c371e152f5de074b06cfc3661f",
+        "locator": "Communication refined markdown lines 416-532"
+      },
+      {
+        "source_id": "philippine-electrical-code-local-raw-pdf--b046",
+        "label": "Philippine Electrical Code - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+        "sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+        "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3",
+        "locator": "PEC refined markdown lines 32160-32302, 32838-32920, 33412-33534"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 046 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "When does a TV antenna distribution system generally need a booster amplifier?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only when the building has no elevator."
+      },
+      {
+        "id": "b",
+        "text": "When the system has two or more outlets."
+      },
+      {
+        "id": "c",
+        "text": "Only if all outlets are on one wall."
+      },
+      {
+        "id": "d",
+        "text": "Never, because wall outlets amplify signals."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": "When the system has two or more outlets. This answer matches Communication refined markdown lines 432-440.",
+    "explanation": "When the system has two or more outlets. This answer matches Communication refined markdown lines 432-440.",
+    "code_citation": "Communication refined markdown lines 432-440"
+  }
+}

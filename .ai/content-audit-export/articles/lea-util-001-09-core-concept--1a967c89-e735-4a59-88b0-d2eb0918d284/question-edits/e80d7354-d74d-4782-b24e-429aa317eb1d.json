@@ -1,0 +1,59 @@
+{
+  "question_id": "e80d7354-d74d-4782-b24e-429aa317eb1d",
+  "baseline_hash": "sha256:81f39e01d19493409dde61807d2e1fb5db6a51430f7a6f3f675fb2a563101039",
+  "action": "replace",
+  "reason": "source-audited-article-batch-043-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes stale or non-local framing where present.",
+  "approved_by": "codex-local-first-batch-043",
+  "approved_at": "2026-05-11T15:45:43.683+08:00",
+  "source_audit_support": {
+    "parent_article_id": "1a967c89-e735-4a59-88b0-d2eb0918d284",
+    "parent_article_slug": "lea-util-001-09-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RNPC refined markdown lines 570, 645, 651-655, 1689-1691, 1721, 4706-4728, 4745-4822, 5241-5245",
+    "checked_markdown_lines": [
+      "RNPC refined markdown lines 570, 645, 651-655",
+      "RNPC refined markdown lines 1689-1691 and 1721",
+      "RNPC refined markdown lines 4706-4728",
+      "RNPC refined markdown lines 4745-4822",
+      "RNPC refined markdown lines 5241-5245"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "rnpc-ph-local-raw-pdf--b043-1",
+        "label": "Revised National Plumbing Code of the Philippines - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf",
+        "sha256": "sha256:c4ec30ec3ffe3b39513a033ebc2cfa614bd201d25c5578e1847e7f359fed3f5d",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Revised National Plumbing Code of the Philippines.md",
+        "refined_markdown_sha256": "sha256:7cea224bfc6c54d0883fe69c89b97cf134e45acaab6c8950b8af3621059c9a91",
+        "locator": "RNPC refined markdown lines 570, 645, 651-655, 1689-1691, 1721, 4706-4728, 4745-4822, 5241-5245"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 043 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "For an LEA item on roof rainwater drainage, what is the best source-safe sizing basis under the checked RNPC family?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use maximum rainfall intensity together with the roof area served."
+      },
+      {
+        "id": "b",
+        "text": "Size every roof drain only by the number of occupants."
+      },
+      {
+        "id": "c",
+        "text": "Treat rainwater pipe sizing as the same calculation as fixture-unit sanitary drainage."
+      },
+      {
+        "id": "d",
+        "text": "Use a product brochure as the controlling sizing rule."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The RNPC rainwater section sizes storm drainage by rainfall intensity and roof area, with local rainfall intensity used for the locality.",
+    "explanation": "The RNPC rainwater section sizes storm drainage by rainfall intensity and roof area, with local rainfall intensity used for the locality.",
+    "code_citation": "RNPC refined markdown lines 4745-4822"
+  }
+}

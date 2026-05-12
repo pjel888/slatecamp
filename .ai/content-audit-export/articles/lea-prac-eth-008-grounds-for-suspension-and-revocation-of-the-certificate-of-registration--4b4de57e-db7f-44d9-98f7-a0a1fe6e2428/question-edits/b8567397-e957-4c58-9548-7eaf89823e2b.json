@@ -1,0 +1,83 @@
+{
+  "question_id": "b8567397-e957-4c58-9548-7eaf89823e2b",
+  "baseline_hash": "sha256:37e21a274d2cc7d2179712b2b8c30976085bc2cb17b527c911ffcfec9c06e16f",
+  "action": "replace",
+  "reason": "source-audited-article-batch-018-local-first rewrote linked question to match locally checked raw source evidence for lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration.",
+  "approved_by": "codex-local-source-audit-batch-018",
+  "approved_at": "2026-05-10T23:42:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "4b4de57e-db7f-44d9-98f7-a0a1fe6e2428",
+    "parent_article_slug": "lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 9266 IRR Section 23 and Section 24, raw markdown lines 629-666",
+    "checked_markdown_lines": [
+      "RA 9266 raw markdown lines 629-666"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "ra-9266-irr-architecture-act-2004",
+        "locator": "RA 9266 IRR Section 23 and Section 24, raw markdown lines 629-666"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+        "source_id": "ra-9266-irr-architecture-act-2004-raw-markdown",
+        "locator": "RA 9266 IRR Section 23 and Section 24, raw markdown lines 629-666"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+        "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+        "source_id": "uap-document-code-of-ethics",
+        "locator": "UAP Document Code of Ethics, responsibilities to colleagues and subordinates, raw markdown lines 92-118"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
+        "sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
+        "source_id": "uap-document-code-of-ethics-raw-markdown",
+        "locator": "UAP Document Code of Ethics, responsibilities to colleagues and subordinates, raw markdown lines 92-118"
+      }
+    ],
+    "local_source_safe_action": "Question was rewritten to remove unverified or over-specific claims and use only statements anchored in the checked local raw source packet."
+  },
+  "proposed": {
+    "text": "What impersonation-related conduct appears in Section 23?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Falsely impersonating a practitioner or practicing under an assumed, fictitious, or improper corporate name"
+      },
+      {
+        "id": "b",
+        "text": "Using the registered architect's own lawful name"
+      },
+      {
+        "id": "c",
+        "text": "Listing a firm address on a drawing title block"
+      },
+      {
+        "id": "d",
+        "text": "Signing a document after direct supervision"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "Section 23(c) covers false impersonation and practicing under an assumed, fictitious, or corporate name other than that of the registered architect.",
+    "explanation": "Section 23(c) covers false impersonation and practicing under an assumed, fictitious, or corporate name other than that of the registered architect.",
+    "code_citation": "RA 9266 IRR, Section 23(c), lines 641-643",
+    "bloom_level": "understand",
+    "application_context": "professional_practice",
+    "practice_context": [
+      "Code of Ethical Conduct",
+      "Professional ethics"
+    ],
+    "difficulty": 0.5,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-ETH-008-002"
+  }
+}

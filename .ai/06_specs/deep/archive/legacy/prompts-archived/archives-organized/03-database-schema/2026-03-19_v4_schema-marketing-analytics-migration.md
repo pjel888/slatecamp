@@ -32,8 +32,8 @@ After migrations: update `DATABASE_SCHEMA.sql` to reflect the full current schem
 
 ### Current Schema Core Tables (verified)
 ```
-disciplines, taxonomy_tree, questions, quiz_sessions, 
-user_interactions, user_node_mastery, user_global_stats, 
+disciplines, taxonomy_tree, questions, quiz_sessions,
+user_interactions, user_node_mastery, user_global_stats,
 readiness_score_snapshots, organizations, organization_members,
 user_subscriptions
 ```
@@ -58,51 +58,51 @@ Run ALL of these queries in a single Supabase MCP batch. Do not write any code u
 
 ```sql
 -- 1. All tables in public schema
-SELECT table_name FROM information_schema.tables 
+SELECT table_name FROM information_schema.tables
 WHERE table_schema = 'public' ORDER BY table_name;
 
 -- 2. Check if profiles table exists and its columns
 SELECT column_name, data_type, column_default, is_nullable
-FROM information_schema.columns 
+FROM information_schema.columns
 WHERE table_name = 'profiles' ORDER BY ordinal_position;
 
 -- 3. Check user_global_stats columns (where attribution might go)
 SELECT column_name, data_type, column_default
-FROM information_schema.columns 
+FROM information_schema.columns
 WHERE table_name = 'user_global_stats' ORDER BY ordinal_position;
 
 -- 4. Check user_node_mastery columns (need updated_at?)
 SELECT column_name, data_type, column_default
-FROM information_schema.columns 
+FROM information_schema.columns
 WHERE table_name = 'user_node_mastery' ORDER BY ordinal_position;
 
 -- 5. Check readiness_score_snapshots columns
 SELECT column_name, data_type, column_default
-FROM information_schema.columns 
+FROM information_schema.columns
 WHERE table_name = 'readiness_score_snapshots' ORDER BY ordinal_position;
 
 -- 6. Check existing triggers
 SELECT trigger_name, event_object_table, action_statement
-FROM information_schema.triggers 
+FROM information_schema.triggers
 WHERE trigger_schema = 'public';
 
 -- 7. Check existing functions
 SELECT routine_name, routine_type
-FROM information_schema.routines 
+FROM information_schema.routines
 WHERE routine_schema = 'public' AND routine_type = 'FUNCTION';
 
 -- 8. Check existing RLS policies on tables we'll touch
-SELECT tablename, policyname, cmd, qual 
-FROM pg_policies 
-WHERE schemaname = 'public' 
+SELECT tablename, policyname, cmd, qual
+FROM pg_policies
+WHERE schemaname = 'public'
 AND tablename IN ('user_global_stats', 'user_node_mastery', 'readiness_score_snapshots');
 
 -- 9. Check if analytics_events already exists
-SELECT column_name, data_type FROM information_schema.columns 
+SELECT column_name, data_type FROM information_schema.columns
 WHERE table_name = 'analytics_events' ORDER BY ordinal_position;
 
 -- 10. Check if user_mastery_history already exists
-SELECT column_name, data_type FROM information_schema.columns 
+SELECT column_name, data_type FROM information_schema.columns
 WHERE table_name = 'user_mastery_history' ORDER BY ordinal_position;
 
 -- 11. Sample quiz_sessions.config to document JSONB shape
@@ -480,28 +480,28 @@ Run these verification queries:
 
 ```sql
 -- Verify all new tables exist
-SELECT table_name FROM information_schema.tables 
-WHERE table_schema = 'public' 
+SELECT table_name FROM information_schema.tables
+WHERE table_schema = 'public'
 AND table_name IN ('profiles', 'analytics_events', 'user_mastery_history')
 ORDER BY table_name;
 
 -- Verify new columns on user_global_stats
-SELECT column_name FROM information_schema.columns 
-WHERE table_name = 'user_global_stats' 
+SELECT column_name FROM information_schema.columns
+WHERE table_name = 'user_global_stats'
 AND column_name IN ('signup_source', 'utm_campaign', 'utm_medium', 'first_session_at', 'onboarding_completed_at');
 
 -- Verify updated_at on user_node_mastery
-SELECT column_name FROM information_schema.columns 
+SELECT column_name FROM information_schema.columns
 WHERE table_name = 'user_node_mastery' AND column_name = 'updated_at';
 
 -- Verify triggers
-SELECT trigger_name, event_object_table FROM information_schema.triggers 
-WHERE trigger_schema = 'public' 
+SELECT trigger_name, event_object_table FROM information_schema.triggers
+WHERE trigger_schema = 'public'
 AND trigger_name IN ('trg_snapshot_readiness', 'trg_log_mastery_history', 'profiles_updated_at', 'user_node_mastery_updated_at');
 
 -- Verify RLS is enabled
-SELECT tablename, rowsecurity FROM pg_tables 
-WHERE schemaname = 'public' 
+SELECT tablename, rowsecurity FROM pg_tables
+WHERE schemaname = 'public'
 AND tablename IN ('profiles', 'analytics_events', 'user_mastery_history');
 
 -- Verify analytics helper works (insert a test event, then delete it)
@@ -510,7 +510,7 @@ AND tablename IN ('profiles', 'analytics_events', 'user_mastery_history');
 
 Also verify the app still works:
 - [ ] Dashboard loads without errors
-- [ ] Testing page loads without errors  
+- [ ] Testing page loads without errors
 - [ ] Starting a quiz session works
 - [ ] Completing a quiz session works
 - [ ] No TypeScript errors (`npm run build` or `npx tsc --noEmit`)

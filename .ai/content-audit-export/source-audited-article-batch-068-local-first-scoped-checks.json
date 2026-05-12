@@ -1,0 +1,204 @@
+{
+  "batch_id": "source-audited-article-batch-068-local-first",
+  "batch_number": 68,
+  "generated_at": "2026-05-12T00:10:00+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "pass": true,
+  "blockers": [],
+  "warnings": [
+    "component-usage.json warnings are expected for these local audit bundles and are non-blocking."
+  ],
+  "article_count": 5,
+  "total_question_edits": 50,
+  "expected_question_edits": 50,
+  "article_ids": [
+    "63c2455e-8c3f-4a0b-b111-855094b3c1d9",
+    "23e30450-bce4-4d06-91f7-e2ec86a82ef9",
+    "9098a3d8-b4d7-42f4-ac2b-0df1509c2507",
+    "ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
+    "c24cb79a-074d-48ed-9eb0-b7a7400ed3e8"
+  ],
+  "slugs": [
+    "lea-plan-001-05-core-concept",
+    "lea-plan-007-05-core-concept",
+    "lea-plan-007-02-core-concept",
+    "lea-plan-002-04-core-concept",
+    "lea-plan-004-07-core-concept"
+  ],
+  "checks": {
+    "compose": {
+      "pass": true,
+      "articles": 5,
+      "blockers": 0
+    },
+    "diff": {
+      "pass": true,
+      "articles": 5,
+      "safe_to_push_all": true,
+      "blockers": 0
+    },
+    "validate": {
+      "pass": true,
+      "articles": 5,
+      "valid_all": true,
+      "blockers": 0,
+      "warning": "component-usage.json missing warning only"
+    },
+    "ui_block_edits": {
+      "pass": true,
+      "articles": 5,
+      "blockers": 0,
+      "warnings": 0
+    },
+    "scoped_json_parse": {
+      "pass": true,
+      "json_files": 105,
+      "errors": 0
+    },
+    "placeholder_internal_note_source_gap_scan": {
+      "pass": true,
+      "hits": 0
+    },
+    "stale_compose_error_scan": {
+      "pass": true,
+      "hits": 0
+    },
+    "source_hash_checks": {
+      "pass": true,
+      "source_families": [
+        {
+          "source_family": "RA7160",
+          "use": "used",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7160/RA 7160 The Local Government Code.pdf",
+          "raw_pdf_sha256": "sha256:e270e8bc7bd84ba8ad7b6fe6780c12a3e5a6103e2b9395db13084266a5ff1fff",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7160/RA 7160 The Local Government Code.md",
+          "refined_markdown_sha256": "sha256:9f95493bd12c7f4b0989913d7e8783cdbc6235891fea9977c2aa77238c3dd392",
+          "status": "PASS"
+        },
+        {
+          "source_family": "RA11201 Act",
+          "use": "used",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 - DHSUD Act of 2019.pdf",
+          "raw_pdf_sha256": "sha256:59cf831669ddd0dc6f8fb569583e0ea75baf475c25677559aa21ea0979546c8d",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 - DHSUD Act of 2019.md",
+          "refined_markdown_sha256": "sha256:8dff6d78e0fc0da08fe7516b5fa8b693e370493dee73b87199f649dd0efa5451",
+          "status": "PASS"
+        },
+        {
+          "source_family": "RA11201 IRR",
+          "use": "used",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+          "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+          "refined_markdown_sha256": "sha256:40f1a5041c69b3a4aea7c8ba138a9d570bc686bea48aa5618ea6423a6a719528",
+          "status": "PASS"
+        },
+        {
+          "source_family": "EO72",
+          "use": "used",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/EO/EO 72 Comprehensive Land use.pdf",
+          "raw_pdf_sha256": "sha256:57de2c585b2f2f0e5687bbf95754f9cd4f2bae68c51c6ae0d8d60e81d24c8cbd",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/EO/EO 72 Comprehensive Land use.md",
+          "refined_markdown_sha256": "sha256:478ae44ef1b4ced33ce16138db0558d38c0fad4a4ca02e35c9f192994e89c871",
+          "status": "PASS"
+        },
+        {
+          "source_family": "HLURB_CLUP_Guidebook_Vol_1_11042015",
+          "use": "expected_not_used",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/HLURB_CLUP_Guidebook_Vol_1_11042015.pdf",
+          "raw_pdf_sha256": "sha256:5b8e141fa204a4fc8ce74a0c165c55bd8c166691b0ccc393f24f61db57690c6f",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/HLURB_CLUP_Guidebook_Vol_1_11042015.md",
+          "refined_markdown_sha256": "sha256:26067221888dd0b950bf65719ba7ce8308694b7d799dca6f8f238ad7d7f49025",
+          "status": "PASS"
+        },
+        {
+          "source_family": "HLURB_CLUP_Vol_1",
+          "use": "used",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/HLURB_CLUP_Vol_1.pdf",
+          "raw_pdf_sha256": "sha256:34888ecf03576719d36e8abe21ff90da92e18263a4debb9db3fbbc41a7878762",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/HLURB_CLUP_Vol_1.md",
+          "refined_markdown_sha256": "sha256:6b574d861c0942a232fec321c2863754673532019af8f983e84550e54afc04e3",
+          "status": "PASS"
+        },
+        {
+          "source_family": "HLURB_CLUP_Vol_2",
+          "use": "expected_not_used",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/HLURB_CLUP_Vol_2.pdf",
+          "raw_pdf_sha256": "sha256:0da4f5c9abbab99eeae05a870c9bbce549ef2e7c36aa3d433d05821736b713bc",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/HLURB_CLUP_Vol_2.md",
+          "refined_markdown_sha256": "sha256:7f71db9d9b919381ebf71b3641e21c40f7f0fc6e43f4e845a18bd4084173c0fa",
+          "status": "PASS"
+        },
+        {
+          "source_family": "RPS 2008",
+          "use": "used",
+          "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/RPS (2008).pdf",
+          "raw_pdf_sha256": "sha256:1331576aa80a6e5ab2d4079aa091e7294b7574c3c91b41a499e02cd1f8df91a3",
+          "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/RPS (2008).md",
+          "refined_markdown_sha256": "sha256:a86183e25f99faee458dfbb5bdb6045b98e309abe56e3d9fc4b65aee43312c96",
+          "status": "PASS"
+        }
+      ]
+    },
+    "question_edit_count_checks": {
+      "pass": true,
+      "expected": 50,
+      "actual": 50
+    },
+    "targeted_tests": {
+      "pass": true,
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "tests_passed": 34,
+      "tests_failed": 0,
+      "expect_calls": 328
+    },
+    "git_diff_check": {
+      "status": "PASS",
+      "command": "git diff --check -- <Batch 068 scoped files>",
+      "checked_at": "2026-05-12T00:13:34+08:00"
+    }
+  },
+  "completed_articles": [
+    {
+      "article_id": "63c2455e-8c3f-4a0b-b111-855094b3c1d9",
+      "slug": "lea-plan-001-05-core-concept",
+      "question_edit_count": 10,
+      "candidate_hash": "sha256:2db3864274b08477f7ab4cca361beb934fbda56a84627dc828ca77a2e1c5147d",
+      "source_count": 6,
+      "scenario_enrichment_status": "eligible-deferred"
+    },
+    {
+      "article_id": "23e30450-bce4-4d06-91f7-e2ec86a82ef9",
+      "slug": "lea-plan-007-05-core-concept",
+      "question_edit_count": 10,
+      "candidate_hash": "sha256:e13c1af9add5db46e87a226a5dff68cf74c80b563131564848657a4fa0826db0",
+      "source_count": 5,
+      "scenario_enrichment_status": "eligible-deferred"
+    },
+    {
+      "article_id": "9098a3d8-b4d7-42f4-ac2b-0df1509c2507",
+      "slug": "lea-plan-007-02-core-concept",
+      "question_edit_count": 10,
+      "candidate_hash": "sha256:ffa17a9f3b676f852522bc5ff8c7e9b7931a5d5807ebd5338cec80227a544728",
+      "source_count": 4,
+      "scenario_enrichment_status": "eligible-deferred"
+    },
+    {
+      "article_id": "ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
+      "slug": "lea-plan-002-04-core-concept",
+      "question_edit_count": 10,
+      "candidate_hash": "sha256:8f7532ffbf21cabf0820969ca2616d1288e10e3a76eff826b3690acfec32caeb",
+      "source_count": 5,
+      "scenario_enrichment_status": "eligible-deferred"
+    },
+    {
+      "article_id": "c24cb79a-074d-48ed-9eb0-b7a7400ed3e8",
+      "slug": "lea-plan-004-07-core-concept",
+      "question_edit_count": 10,
+      "candidate_hash": "sha256:d1472f8f97ade4bfd5cd45a45de49e8a0b6b286182740fc89abf2c05ae5fdc94",
+      "source_count": 5,
+      "scenario_enrichment_status": "eligible-deferred"
+    }
+  ],
+  "next_batch_readiness": "READY_FOR_BATCH_069_SELECTION"
+}

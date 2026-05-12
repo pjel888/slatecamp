@@ -1,0 +1,32 @@
+{
+  "question_id": "207d3a2a-6a2e-466a-b84a-a50c25347f17",
+  "baseline_hash": "sha256:030f89b2b3280b0c4102053013688b6e7158bcb7c49e1e98a7118a69f5dd0ef4",
+  "reason": "Batch 003 source audit corrected the wrong Group D storage premise. PD 1096 classifies Group D as Institutional and Group G as Storage and Hazardous; RA 9514 supplies protected-exit and special-hazard rules.",
+  "approved_by": "codex-local-source-audit-batch-003",
+  "approved_at": "2026-05-10T18:00:00+08:00",
+  "proposed": {
+    "text": "A question describes a \"Group D storage\" room beside a Group B office. What is the first source-backed correction?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Answer 2-hour because all storage is Group D"
+      },
+      {
+        "id": "b",
+        "text": "Answer 1-hour because it is an office building"
+      },
+      {
+        "id": "c",
+        "text": "Flag the premise: PD 1096 Group D is Institutional; storage/hazardous uses belong under Group G or the special-hazard rule"
+      },
+      {
+        "id": "d",
+        "text": "Use PD 1096 Rule XIX"
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": "PD 1096 Group D is Institutional, not Storage. Storage and hazardous uses are Group G.",
+    "explanation": "This directly fixes the parked blocker.",
+    "code_citation": "PD 1096 Rule VII Section 701, Group D and Group G"
+  }
+}

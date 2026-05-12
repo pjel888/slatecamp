@@ -1,0 +1,50 @@
+{
+  "question_id": "913d3df8-cd8d-4211-820c-f0e14b52ad8c",
+  "baseline_hash": "sha256:acfdce8def185df4778eac4c59bb5b2fa999e9fccc1d0227be4d6845a3317fb3",
+  "action": "replace",
+  "reason": "source-audited-article-batch-036-local-first: source-safe replacement grounded in local raw PDF/source family evidence; removes unsupported, stale, or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-036",
+  "approved_at": "2026-05-11T12:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-036-local-first",
+    "checked_sources": [
+      {
+        "source_id": "bp-344-2024-revised-irr-ncda-local",
+        "label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "checked_markdown_lines": [
+          "BP 344 2024 Revised IRR refined markdown lines 1090-1135",
+          "BP 344 2024 Revised IRR refined markdown lines 1296-1306",
+          "BP 344 2024 Revised IRR refined markdown lines 1493-1514"
+        ]
+      }
+    ],
+    "citation": "BP 344 2024 Revised IRR, Drinking Water Facilities"
+  },
+  "proposed": {
+    "text": "For drinking fountains, what spout-height range does BP 344 require?",
+    "options": [
+      {
+        "id": "b036-4985-09-a",
+        "text": "750 mm to 900 mm above the floor"
+      },
+      {
+        "id": "b036-4985-09-b",
+        "text": "450 mm to 600 mm above the floor"
+      },
+      {
+        "id": "b036-4985-09-c",
+        "text": "900 mm to 1200 mm above the floor"
+      },
+      {
+        "id": "b036-4985-09-d",
+        "text": "1200 mm to 1500 mm above the floor"
+      }
+    ],
+    "correct_option_id": "b036-4985-09-a",
+    "rationale": "Correct answer: 750 mm to 900 mm above the floor. This is directly supported by BP 344 2024 Revised IRR, Drinking Water Facilities.",
+    "explanation": "The source-audited correction uses only the local raw PDF family and locator-checked refined markdown for BP 344 2024 Revised IRR, Drinking Water Facilities.",
+    "code_citation": "BP 344 2024 Revised IRR, Drinking Water Facilities"
+  }
+}

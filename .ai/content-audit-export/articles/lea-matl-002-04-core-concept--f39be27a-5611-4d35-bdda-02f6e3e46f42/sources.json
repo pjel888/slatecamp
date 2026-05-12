@@ -1,104 +1,44 @@
 {
   "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:f189f12a0ea926cc8fe498d7c119990b7cdd7fe9ef261f20217169bf18334439",
-  "source_count": 8,
+  "sources_hash": "sha256:b6d913bda7693e06566de6fc972ef7eb13c1e6ce6c570e2ce25c2aa5b9478a02",
+  "source_count": 3,
   "sources": [
     {
-      "source_id": "708b6cdc-8ff0-477e-9aee-eb396d27a03d",
+      "source_id": "masonry-lecture-b083",
       "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
-      "label": "ASTM C615: Standard Specification for Granite Dimension Stone",
+      "label": "Masonry Lecture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "primary_materials_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-083-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/Masonry Lecture.pdf; raw_pdf_sha256=sha256:4e3fc56f93fce4d78c98bdaff6b8a41eaf0fd4389a11b69bb42d66fc996d6bd1; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Masonry Lecture.md; refined_markdown_sha256=sha256:0386c6ebd73ac17ff6dc3cee97b63cd83b7e4168d8f3cf50c41a3347935d7ab4; checked_locator=Masonry Lecture refined markdown lines 109-255; raw PDF pages 17, 18, and 20 checked by local PyMuPDF extraction.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
+      "created_at": "2026-05-12T06:25:00.000+08:00",
+      "updated_at": "2026-05-12T06:25:00.000+08:00"
     },
     {
-      "source_id": "0cc28a6d-0883-49ad-92cb-1e1b58ee96dc",
+      "source_id": "george-salvan-building-materials-b083",
       "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
-      "label": "ASTM C503: Standard Specification for Marble (Calcite) Dimension Stone",
+      "label": "George Salvan Architectural Building Materials",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "primary_materials_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-083-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf; raw_pdf_sha256=sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md; refined_markdown_sha256=sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42; checked_locator=George Salvan Architectural Building Materials refined markdown lines 285-565 and 1084-1140; raw PDF pages 16, 18, 37, and 38 checked by local PyMuPDF extraction.",
+      "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
+      "created_at": "2026-05-12T06:25:00.000+08:00",
+      "updated_at": "2026-05-12T06:25:00.000+08:00"
     },
     {
-      "source_id": "e3df7d26-e5b1-454f-bc78-5efc8a394d20",
+      "source_id": "building-construction-illustrated-b083",
       "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
-      "label": "ASTM C568: Standard Specification for Limestone Dimension Stone",
+      "label": "Building Construction Illustrated, 5th Edition",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "primary_materials_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-083-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf; raw_pdf_sha256=sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md; refined_markdown_sha256=sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a; checked_locator=Building Construction Illustrated refined markdown lines 3378-3570, 6616-6792, 15420-15510, and 15680-15745; raw PDF pages 121, 422, 423, 427, and 428 checked by local PyMuPDF extraction.",
+      "is_verified": true,
       "sort_order": 2,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
-    },
-    {
-      "source_id": "37bcad8d-7959-4dcb-a9af-aa95dcdf6513",
-      "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
-      "label": "ASTM C616: Standard Specification for Slate Dimension Stone",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
-    },
-    {
-      "source_id": "a236aa6d-8745-420e-9dd0-f96db79a534b",
-      "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
-      "label": "ASTM C1527: Standard Specification for Travertine Dimension Stone",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 4,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
-    },
-    {
-      "source_id": "cbad32ea-703c-4fbc-8d00-d672cdd2c343",
-      "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
-      "label": "NSCP 2015: National Structural Code of the Philippines, Section 2402 (Masonry Design), referencing stone properties",
-      "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 5,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
-    },
-    {
-      "source_id": "c24817ee-ab2a-4ca2-bcbd-4fffae7481de",
-      "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
-      "label": "Romblon Paradise Island official tourism and commerce documentation (marble industry overview)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 6,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
-    },
-    {
-      "source_id": "41603642-0704-4db8-be35-242eb0c2f73f",
-      "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
-      "label": "Philippine Department of Environment and Natural Resources (DENR) stone quarry classifications and regulations",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 7,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
+      "created_at": "2026-05-12T06:25:00.000+08:00",
+      "updated_at": "2026-05-12T06:25:00.000+08:00"
     }
   ]
 }

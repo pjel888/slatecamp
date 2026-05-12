@@ -1,0 +1,250 @@
+{
+  "schema_version": "source-audit-evidence-v1-local-first",
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-033-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T09:31:19+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
+    "slug": "site-planning-accessible-routes-vs-open-space",
+    "title": "Site Planning Accessible Routes vs Open Space",
+    "article_folder": ".ai/content-audit-export/articles/site-planning-accessible-routes-vs-open-space--3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/site-planning-accessible-routes-vs-open-space--3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
+    "candidate_path": ".ai/content-audit-export/articles/site-planning-accessible-routes-vs-open-space--3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046/candidate.md",
+    "candidate_sha256": "sha256:1309e55a5e451acb6697d15fc303689b174eca755be299e4b4569c4081fa3e7a",
+    "normalized_sha256": "sha256:1309e55a5e451acb6697d15fc303689b174eca755be299e4b4569c4081fa3e7a",
+    "linked_questions_sha256": "sha256:c182a6307dfc39857429ba2a1a51bd83ef09f5d3bcd9ac5090cf9197d9d3d784",
+    "sources_sha256": "sha256:77a892b335409d3b1a5e143346d6df0cb7c777885ba3ced6a1e189e8d0969eb6"
+  },
+  "classification": {
+    "content_domain": "LEA Accessibility and Building Code",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high_value_accessibility_code",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 21,
+    "question_edits_created": [
+      "e896b494-f1ca-4a15-b6bb-555ed0b03b1f",
+      "61dfd2ef-ae5f-4a08-8161-305169c8aa6b",
+      "3168a4f1-b5e4-48d4-8a3d-d7bd408f37e5",
+      "d9be8186-b9d0-4c75-ac76-b72cb05d3766",
+      "323a40c2-63c6-4344-92d6-3fb1671dab3e",
+      "7f992425-81f5-4b66-bdf7-af9c356e33e2",
+      "e2598a13-c50e-423c-b52c-5deb8d383064",
+      "f3465472-290a-4e6d-9bc6-e338e4847d3f",
+      "0c26594a-af9b-490f-ba4a-b33caf61aa6e",
+      "fb9d5320-3359-42c9-8cf7-683d7c547ce4",
+      "360b4394-108c-41d9-bef9-95e41d5a8999",
+      "9bad1f05-247b-4780-ae05-7ebef7e66e2b",
+      "cec56c5f-9740-4746-bcb3-021c307c555e",
+      "2ece119c-3916-44a3-8b0c-9da3c30593b4",
+      "76599e11-2b07-4a6a-8342-21cb9863b03c",
+      "85f0eaf7-1d2f-4fb0-ba46-f44b8b54edf4",
+      "38f3e67a-2178-4749-b934-e1fdfffca3f6",
+      "af12c266-e97b-4459-a83d-f1d6fdf72913",
+      "1e2e5bc1-a183-4993-ba5c-8101eacb90dd",
+      "092ec790-9f98-4253-b1a2-68d26981b12e",
+      "e910f627-24d7-4268-bd2a-9e45ce8da858"
+    ]
+  },
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/site-planning-accessible-routes-vs-open-space--3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/site-planning-accessible-routes-vs-open-space--3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/site-planning-accessible-routes-vs-open-space--3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/site-planning-accessible-routes-vs-open-space--3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/site-planning-accessible-routes-vs-open-space--3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046/question-edits/e896b494-f1ca-4a15-b6bb-555ed0b03b1f.json",
+      ".ai/content-audit-export/articles/site-planning-accessible-routes-vs-open-space--3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046/question-edits/61dfd2ef-ae5f-4a08-8161-305169c8aa6b.json",
+      ".ai/content-audit-export/articles/site-planning-accessible-routes-vs-open-space--3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046/question-edits/3168a4f1-b5e4-48d4-8a3d-d7bd408f37e5.json",
+      ".ai/content-audit-export/articles/site-planning-accessible-routes-vs-open-space--3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046/question-edits/d9be8186-b9d0-4c75-ac76-b72cb05d3766.json",
+      ".ai/content-audit-export/articles/site-planning-accessible-routes-vs-open-space--3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046/question-edits/323a40c2-63c6-4344-92d6-3fb1671dab3e.json",
+      ".ai/content-audit-export/articles/site-planning-accessible-routes-vs-open-space--3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046/question-edits/7f992425-81f5-4b66-bdf7-af9c356e33e2.json",
+      ".ai/content-audit-export/articles/site-planning-accessible-routes-vs-open-space--3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046/question-edits/e2598a13-c50e-423c-b52c-5deb8d383064.json",
+      ".ai/content-audit-export/articles/site-planning-accessible-routes-vs-open-space--3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046/question-edits/f3465472-290a-4e6d-9bc6-e338e4847d3f.json",
+      ".ai/content-audit-export/articles/site-planning-accessible-routes-vs-open-space--3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046/question-edits/0c26594a-af9b-490f-ba4a-b33caf61aa6e.json",
+      ".ai/content-audit-export/articles/site-planning-accessible-routes-vs-open-space--3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046/question-edits/fb9d5320-3359-42c9-8cf7-683d7c547ce4.json",
+      ".ai/content-audit-export/articles/site-planning-accessible-routes-vs-open-space--3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046/question-edits/360b4394-108c-41d9-bef9-95e41d5a8999.json",
+      ".ai/content-audit-export/articles/site-planning-accessible-routes-vs-open-space--3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046/question-edits/9bad1f05-247b-4780-ae05-7ebef7e66e2b.json",
+      ".ai/content-audit-export/articles/site-planning-accessible-routes-vs-open-space--3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046/question-edits/cec56c5f-9740-4746-bcb3-021c307c555e.json",
+      ".ai/content-audit-export/articles/site-planning-accessible-routes-vs-open-space--3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046/question-edits/2ece119c-3916-44a3-8b0c-9da3c30593b4.json",
+      ".ai/content-audit-export/articles/site-planning-accessible-routes-vs-open-space--3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046/question-edits/76599e11-2b07-4a6a-8342-21cb9863b03c.json",
+      ".ai/content-audit-export/articles/site-planning-accessible-routes-vs-open-space--3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046/question-edits/85f0eaf7-1d2f-4fb0-ba46-f44b8b54edf4.json",
+      ".ai/content-audit-export/articles/site-planning-accessible-routes-vs-open-space--3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046/question-edits/38f3e67a-2178-4749-b934-e1fdfffca3f6.json",
+      ".ai/content-audit-export/articles/site-planning-accessible-routes-vs-open-space--3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046/question-edits/af12c266-e97b-4459-a83d-f1d6fdf72913.json",
+      ".ai/content-audit-export/articles/site-planning-accessible-routes-vs-open-space--3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046/question-edits/1e2e5bc1-a183-4993-ba5c-8101eacb90dd.json",
+      ".ai/content-audit-export/articles/site-planning-accessible-routes-vs-open-space--3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046/question-edits/092ec790-9f98-4253-b1a2-68d26981b12e.json",
+      ".ai/content-audit-export/articles/site-planning-accessible-routes-vs-open-space--3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046/question-edits/e910f627-24d7-4268-bd2a-9e45ce8da858.json"
+    ]
+  },
+  "raw_sources": [
+    {
+      "source_id": "bp-344-2024-revised-irr-ncda-local",
+      "label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "source_locator": "BP 344 2024 Revised IRR refined markdown lines 679-727",
+      "checked_markdown_lines": [
+        "BP 344 2024 Revised IRR refined markdown lines 679-727"
+      ]
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "bp-344-2024-revised-irr-ncda-local",
+      "label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "source_locator": "BP 344 2024 Revised IRR refined markdown lines 679-727",
+      "checked_markdown_lines": [
+        "BP 344 2024 Revised IRR refined markdown lines 679-727"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "b033-route-01",
+      "claim_text": "Sidewalks and walkways should be as level as possible, slip resistant, not steeper than 1:20 where possible, and have a maximum 1:100 cross gradient.",
+      "claim_type": "accessibility_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "locator": "BP 344 refined markdown lines 679-683",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "The source sets level/slip-resistant walkways, 1:20 or 5 percent gradient where possible, and 1:100 or 1 percent cross gradient."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b033-route-02",
+      "claim_text": "Sidewalks, walkways, and pathways need 1500 mm minimum width, or 1800 mm where two wheelchair users pass.",
+      "claim_type": "accessibility_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "locator": "BP 344 refined markdown line 685",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "Minimum width is 1500 mm; two wheelchair users require 1800 mm."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b033-route-03",
+      "claim_text": "Rest or passing spaces must be 1800 mm clear, spaced up to 12000 mm apart, with turnabout spaces near dead-end corridors.",
+      "claim_type": "accessibility_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "locator": "BP 344 refined markdown line 698",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "Spaces have 1800 mm clear dimension, maximum 12000 mm between rest stops, and turnabouts within 3500 mm of dead-end corridors."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b033-route-04",
+      "claim_text": "Sidewalk/walkway headroom must not be less than 2200 mm, and barriers must leave at least 900 mm clear passage.",
+      "claim_type": "accessibility_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "locator": "BP 344 refined markdown lines 711-713",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "Headroom is not less than 2200 mm; barriers require at least 900 mm clearance."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b033-route-05",
+      "claim_text": "Open spaces need defined edges/tactile surfaces, and direct drops of 200 mm or more need edge protection at least 100 mm high and 100 mm wide.",
+      "claim_type": "accessibility_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "locator": "BP 344 refined markdown lines 721-727",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "Open spaces use defined edges and tactile surfaces; direct drops of 200 mm or more need 100 mm by 100 mm edge protection."
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "removed_or_rewritten_material": [
+    "Learner article text was rewritten to local BP 344 source-supported accessibility/code claims only.",
+    "Legacy UI marker blocks were removed from normalized.md so candidate.md composes without unresolved markers.",
+    "Linked questions were rewritten to source-safe wording, answer keys, rationales, and citations."
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "gate_results": {
+    "compose": "PASS: bun run content-audit:compose -- --article-id <Batch 033 id> --overwrite --strict; changed candidates; blockers=0",
+    "diff": "PASS: bun run content-audit:diff -- --article-id <Batch 033 id> --summary --strict; changed=true; safe_to_push=true; blockers=0",
+    "validate": "PASS: bun run content-audit:validate -- --article-id <Batch 033 id> --summary; valid=true; blockers=0; expected component-usage.json warning only",
+    "push_dry_run": "not_attempted_local_first; Supabase remote fetch/publish is final publishing only",
+    "supabase_mutation": "not_attempted_by_request"
+  },
+  "source_safe_repair": {
+    "normalized_md_rewritten": true,
+    "candidate_md_composed": true,
+    "sources_json_refreshed_to_checked_raw_sources": true,
+    "source_audit_evidence_json_created": true,
+    "question_edits_created": 21,
+    "answer_key_fields_changed": true,
+    "ui_markers_removed_from_normalized": true,
+    "external_business_claims_limited_to_source_safe_form": true
+  },
+  "local_validation": {
+    "compose": {
+      "passed": true,
+      "blockers": [],
+      "candidate_hash": "sha256:1309e55a5e451acb6697d15fc303689b174eca755be299e4b4569c4081fa3e7a",
+      "safe_to_diff": true
+    },
+    "diff": {
+      "passed": true,
+      "blockers": [],
+      "safe_to_push": true,
+      "changed": true
+    },
+    "validate": {
+      "passed": true,
+      "blockers": [],
+      "warnings": [
+        "expected component-usage.json warning only"
+      ]
+    },
+    "scoped_checks": {
+      "passed": true,
+      "blockers": [],
+      "placeholder_matches": []
+    }
+  },
+  "sme_review": {
+    "required": false,
+    "status": "PASS"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

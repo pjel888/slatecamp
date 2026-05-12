@@ -1,0 +1,67 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-072-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T01:24:18+08:00",
+  "target": {
+    "article_id": "bf583e70-ccc8-4e6e-8b6a-1794533a4d7f",
+    "slug": "lea-dsgn-011-02-core-concept",
+    "title": "Elevations",
+    "article_folder": ".ai/content-audit-export/articles/lea-dsgn-011-02-core-concept--bf583e70-ccc8-4e6e-8b6a-1794533a4d7f",
+    "normalized_sha256": "sha256:cf95f40987a636da7d9c13d9b51045539dd32daffd5b94e3fe50241413d07cbc",
+    "candidate_sha256": "sha256:cf95f40987a636da7d9c13d9b51045539dd32daffd5b94e3fe50241413d07cbc",
+    "candidate_path": ".ai/content-audit-export/articles/lea-dsgn-011-02-core-concept--bf583e70-ccc8-4e6e-8b6a-1794533a4d7f/candidate.md"
+  },
+  "classification": {
+    "topic_family": "architectural_drawings_elevations_sections",
+    "local_first_batch": "072",
+    "source_sensitivity": "building_permit_documentation",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdfs_checked_first": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "local_pdf_extraction_method": "python_pymupdf_local",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "pd1096-rirr-2004-b072",
+      "label": "PD 1096 2004 Revised IRR - National Building Code",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "locator": "PD 1096 refined markdown lines 548-570, 2085-2089, and 2352-2412; raw PDF pages 19, 24, 33, 88, 93, 108, 192, 204, and 352 checked by local PyMuPDF extraction"
+    }
+  ],
+  "claims": [
+    "Elevations and sections are grounded in checked PD 1096 architectural-document requirements.",
+    "Unsupported universal 3.0 m floor-to-floor and miscited elevation rules are removed."
+  ],
+  "unverified_or_rejected_claims": [
+    "Unsupported EDGE, LEED, ASHRAE, hospital ACH, NGR, elevator-count, typical span, universal 3.0 m floor-to-floor, and uncited structural/MEP sizing claims were not retained unless specifically supported by checked sources or problem-given data."
+  ],
+  "scenario_enrichment": {
+    "policy_status": "pending",
+    "eligibility_status": "not-applicable",
+    "blocker_status": "nonblocking",
+    "note": "No Real World Scenario section was added; source correctness and question safety remained the blocking criteria."
+  },
+  "sme_review": {
+    "status": "local_agent_source_audited",
+    "reviewer": "codex-local-first-batch-072"
+  }
+}

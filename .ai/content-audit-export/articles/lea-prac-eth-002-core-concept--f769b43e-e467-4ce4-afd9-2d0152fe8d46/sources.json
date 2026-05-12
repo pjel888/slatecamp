@@ -1,20 +1,28 @@
 {
   "article_id": "f769b43e-e467-4ce4-afd9-2d0152fe8d46",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:72089be1ed36ed46778c0487460764d71c759d9f92048107410ff65ed2e5264c",
+  "sources_hash": "sha256:84f2579748878b02e69d6eeba24412ad65b6d2fcc6a0b4a6f34373854cb5c5be",
   "source_count": 1,
   "sources": [
     {
-      "source_id": "3ca0da37-bda6-412e-b515-fd473fe41de7",
+      "source_id": "uap-code-of-ethics-lea-prac-eth-002-core-concept",
       "article_id": "f769b43e-e467-4ce4-afd9-2d0152fe8d46",
-      "label": "Architects Credo (PRBoA Resolution No. 02, Series of 2006) Code of Ethics (original 1979 Architect's Code of Ethics",
+      "label": "UAP Document Code of Ethics - Architect's Credo and Code of Ethical Conduct",
       "url": null,
-      "source_type": "regulatory_body",
-      "description": "foundational principles) UAP Document Code of Ethics.pdf (United Architects of the Philippines ethical framework and credo adoption context)",
-      "is_verified": false,
+      "source_type": "raw_pdf_and_markdown_source_audit",
+      "description": "Batch 017 local-first source audit for Architect's Credo; UAP Document Code of Ethics, Architect's Credo, raw markdown lines 1-21.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:01.68074+00:00",
-      "updated_at": "2026-03-24T04:34:01.68074+00:00"
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+      "raw_pdf_sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
+      "raw_markdown_sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
+      "checked_markdown_lines": [
+        "raw markdown lines 1-21"
+      ],
+      "source_locator": "UAP Document Code of Ethics, Architect's Credo, raw markdown lines 1-21",
+      "local_source_audit_batch": "source-audited-article-batch-017-local-first",
+      "audited_at": "2026-05-10T23:30:00.000+08:00"
     }
   ]
 }

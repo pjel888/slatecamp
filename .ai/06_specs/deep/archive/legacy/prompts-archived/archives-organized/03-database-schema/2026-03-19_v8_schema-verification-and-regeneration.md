@@ -63,7 +63,7 @@ FROM information_schema.table_constraints
 WHERE table_name = 'models_3d' AND constraint_type = 'UNIQUE';
 
 -- 6. ALL UNIQUE constraints on trail tables
-SELECT tc.table_name, tc.constraint_name, 
+SELECT tc.table_name, tc.constraint_name,
   string_agg(kcu.column_name, ', ' ORDER BY kcu.ordinal_position) as columns
 FROM information_schema.table_constraints tc
 JOIN information_schema.key_column_usage kcu ON tc.constraint_name = kcu.constraint_name

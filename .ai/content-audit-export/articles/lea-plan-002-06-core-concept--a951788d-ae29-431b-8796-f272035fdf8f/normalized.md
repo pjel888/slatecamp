@@ -1,74 +1,29 @@
-
+# Urban Design, Streets, and Public Realm
 
 ## Board Exam Quick Check
 
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+Urban planning and urban design are related but not interchangeable. For LEA answers, planning allocates land use and long-term spatial direction; urban design shapes the public realm, building edges, streets, open spaces, mobility, and human-scale experience that make those plans visible on the ground.
 
-**Common mistake:** treating a familiar keyword in **Lea Plan 002 06 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
-
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
-## Learning Goal
-Apply urban design principles — height-to-width ratios, streetscape quality, complete streets, human scale — identify key theorists (Jacobs, Gehl, Cullen) and their contributions, and evaluate street-level urban quality using measurable design criteria.
+The DHSUD resilient urban design guidelines state that urban design supports CLUP and zoning ordinance work by providing tools and strategies for livable, green, and resilient urban renewal and development. The guide links urban design to climate resilience, disaster resilience, active transportation, environment and ecology, social equity, crime prevention, and local identity.
 
-Urban design applies measurable principles—height-to-width ratios, streetscape quality, complete streets, and human-centered design—to create walkable, livable environments. Three names anchor this subject: Jane Jacobs (urban vitality), Jan Gehl (human scale), Gordon Cullen (visual experience).
+Urban design principles in the guidelines include connectivity and permeability, sense of place, ease of change, sense of well-being and amenity, equity and inclusivity, and ease of understanding. These principles are tested as practical design judgments, not as abstract slogans.
 
-## Core Concept
+The public realm includes streets, sidewalks, carriageways, parks, and open spaces that are accessible to the public. Private development still matters because development controls in the zoning ordinance can influence how private buildings meet streets, sidewalks, and public spaces.
 
-Urban design differs from planning: planning allocates land uses across space (zoning); urban design shapes the quality and experience of streets, public spaces, and building faces. Urban design is measured and tactical—specific ratios, material choices, sight lines, program mix. Three foundational concepts structure the field.
+Complete streets are a source-safe urban design strategy. The guidelines define them as streets planned, designed, built, operated, and maintained for safe access by pedestrians, bicyclists, motorists, and public-transit riders of all ages and abilities. Key elements include pedestrian facilities, bicycle facilities, transit facilities, places, and street value.
 
-**Height-to-Width Ratio (H:W)** is a measurable tool developed by Jan Gehl and others to evaluate street enclosure. A street's sense of enclosure depends on the proportion between building height (H) and street width (W). An H:W of **1:2** (building 10m tall, street 20m wide) feels comfortably enclosed—people feel oriented and safe without feeling claustrophobic. An H:W of **1:4** (building 10m, street 40m) feels exposed and wide—pedestrians feel unprotected. An H:W of **2:1** (building 20m, street 10m) feels oppressive and canyon-like—unsafe and unpleasant. Cities optimize for comfort (1:2), not extremes.
+Transit-oriented development is another urban design strategy. The DHSUD guide describes TOD as mixed-use, compact development within walking distance of high-quality transit, with pedestrian connectivity, open and green spaces, and a strong sense of place.
 
-**Jane Jacobs' "Eyes on the Street"** principle (from _The Death and Life of Great American Cities_, 1961) states that pedestrian safety and street vitality depend on mixed uses, dense activity, and continuous ground-floor activation. Shops, cafés, and dwellings facing the street create informal surveillance—"eyes on the street" watching and caring. Blank walls, single-use zones, and car-dependent streets eliminate this surveillance and create unsafe, dead zones. This principle is _not_ Lynch's; attributing it to Lynch is a frequent error.
+## Exam Focus
 
-**Gordon Cullen's Townscape** (1961) emphasizes serial vision—how the city reveals itself sequentially as you move through it. Cullen analyzed visual relationships between buildings, spaces, and transitions. A successful streetscape creates a sense of "here" vs. "there"—visual surprises, enclosure, then opening, creating memorable sequences. This differs from modernist towers-in-a-park (isolated objects with neutral surroundings) and focuses on the lived experience of pedestrians.
+- Planning decides spatial allocation and policy direction; urban design shapes streets, public spaces, urban form, and the public realm.
+- Complete streets prioritize safe multimodal access for all users.
+- TOD links density, mixed use, walking, transit access, open space, and sense of place.
+- Public realm quality is a design issue, but zoning controls can influence private development edges.
+- Use Philippine DHSUD sources for local urban design and climate-resilient planning claims.
 
-**Complete Streets** is a modern implementation of these principles: streets designed for pedestrians, cyclists, transit users, and cars (in that priority order). Complete streets include sidewalks, cycle tracks, tree canopy, and street parking buffers. They prioritize ground-floor mixed use (retail, offices, housing) and human-scale building facades. The philosophy: streets are public spaces first, traffic corridors second.
+## How It Is Tested
 
-Urban design is not arbitrary. Every principle is grounded in human behavior and perception: people move more if streets are shaded and bounded; they stay longer if seating and food exist; they feel safer if uses are mixed and streets active.
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-plan-002-06-core-concept", type="image", caption="Urban Design Principles — Height-to-Width Ratio and Streetscape Quality", description="Street section diagram showing height-to-width ratio (H:W = 1:1 comfortable canyon, 1:2 open, 2:1 deep canyon), complete street components (pedestrian zone, bike lane, vehicle lanes, sidewalk cafes), and human scale design elements per Jacobs, Gehl, and Cullen.", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-## Key Provisions
-
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
-Extracted summary:
-- Props: rows="{[{\"heading\":\"Urban Design Principle\",\"description\":\"Definition and Application\"}", content=true, Height-to-Width=true, Ratio=true, H:W=true, description=true, Comfortable=true, enclosure=true, building=true, height=true, street=true, width=true
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-## Philippine Context
-
-Manila's EDSA exemplifies poor urban design despite being a major path: wide, divided, car-oriented, with minimal enclosure, blank walls, and dangerous pedestrian conditions. Ground-floor inactivation (banks with blank walls; parking garages) kills vitality. In contrast, Escolta Street (historically) and modern BGC (mixed-use with street-front activity) show how design choices enable or discourage street life. Provincial towns often over-invest in wide roads (bad H:W ratio: 1:6 or wider) and neglect ground-floor activation. The 400-meter 5-minute walk principle of New Urbanism is directly applicable to Philippine compact cities and transit-oriented development.
-
-## How It's Tested
-
-- "A street is 15 meters wide. What building height creates a comfortable H:W ratio?" → 7.5–10m (H:W of 1:1.5 to 1:2).
-- "Which of the following kills street vitality?" → Blank walls, single-use zoning, car-dependent design (all correct).
-- "Who attributed 'eyes on the street' to urban vitality?" → Jane Jacobs (not Lynch, not Gehl).
-- "Complete streets prioritize mode—what is the typical priority order?" → Pedestrians > cyclists > transit > cars.
-- "In Gordon Cullen's townscape, what is 'serial vision'?" → How the city reveals itself sequentially as you move through it.
-
-[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: H:W comfortable = 1:2 (not 2:1). "Eyes on the street" = Jane Jacobs (not Lynch). Complete streets = pedestrian first, car last. These three attributions are the highest-frequency urban design errors.
-[/SLATECAMP_UI_BLOCK]
-
-**Exam Tip:** Know who said what: Jane Jacobs = "eyes on the street" (mixed use, safety). Jan Gehl = human scale (3-5m facade detail, ground floor activity). Gordon Cullen = serial vision (visual experience of moving through city).
-
-## Cross-References
-
-See **LEA-PLAN-002-05** (Lynch Elements) for urban image foundations, **LEA-PLAN-008-03** (Sustainable Development) for complete streets integration, and **LEA-PLAN-002-02** (Contemporary Models) for new urbanism design codes.
-
-## Common Mistakes
-
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\"Inverting the H:W ratio — saying 2:1 is comfortable (oppressive), or 1:4 is oppressive (exposed) — memorize: 1:2 comfortable, 1:4 exposed, 2:1 oppressive\",\"Attributing 'eyes on the street' to Kevin Lynch or Jan Gehl — it is Jane Jacobs' principle, from The Death and Life of Great American Cities (1961)\",\"Confusing Kevin Lynch elements with Jane Jacobs vitality principles — Lynch describes HOW people navigate (elements); Jacobs describes WHY streets feel safe and alive (mixed use, activity)\",\"Thinking 'complete streets' means removing cars — it means prioritizing pedestrians, cyclists, and transit over cars. Cars remain, but not dominant.\",\"Underestimating the importance of ground-floor activation — a wide street with blank-walled buildings fails to generate 'eyes on the street' no matter how good the H:W ratio\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+Expect questions comparing land-use allocation with street-level design, asking whether a scenario is planning, urban design, complete streets, or TOD. If the item mentions sidewalks, crossings, trees, transit stops, public spaces, street activation, or building edges, the safer answer is urban design or public realm strategy rather than zoning alone.

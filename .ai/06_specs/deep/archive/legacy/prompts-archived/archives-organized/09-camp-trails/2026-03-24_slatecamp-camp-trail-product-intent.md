@@ -1,6 +1,6 @@
 # Camp Trail — Product Intent Document
-**SlateCamp Internal · Product Architect**  
-**Version:** 1.0 · March 2026  
+**SlateCamp Internal · Product Architect**
+**Version:** 1.0 · March 2026
 **Classification:** Internal · Feature Specification
 
 ---
@@ -364,7 +364,7 @@ The governing question is always: *does this make a student more likely to pass 
 
 ---
 
-*Camp Trail Product Intent Document · v1.0 · March 2026*  
-*SlateCamp Internal · Product Architect*  
+*Camp Trail Product Intent Document · v1.0 · March 2026*
+*SlateCamp Internal · Product Architect*
 *Source references: Product Architecture Map v2.1, Camp Trail Feature Spec, 3D Visual Learning Research, Taxonomy v5.0, Feature Research Report, UX Research Deep-Dive, DB Architect Conversations*
 

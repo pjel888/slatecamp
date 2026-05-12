@@ -53,7 +53,7 @@ Restart your server (`bun dev`). A persistent **Amber warning border** and a "DE
 
 ## Part 2: Setup for Crawler Agents (Boneyard, Playwright, etc.)
 
-Headless Chromium agents and automated auditing tools (like Boneyard) frequently struggle with magic links, OTPs, and complex OAuth flows. 
+Headless Chromium agents and automated auditing tools (like Boneyard) frequently struggle with magic links, OTPs, and complex OAuth flows.
 
 With this strategy, **no login script is required.**
 
@@ -69,13 +69,13 @@ import { test, expect } from '@playwright/test';
 
 test('Agent explores the dashboard', async ({ page }) => {
   // Note: DEV_FORCE_USER_ID must be set in the environment running the Next.js app
-  
+
   // The agent navigates directly to a protected route
   await page.goto('http://localhost:3000/dashboard');
-  
+
   // The agent is automatically authenticated
   await expect(page.locator('text=Your Sessions')).toBeVisible();
-  
+
   // The agent can audit the DOM, click links, and run visual regressions
 });
 ```

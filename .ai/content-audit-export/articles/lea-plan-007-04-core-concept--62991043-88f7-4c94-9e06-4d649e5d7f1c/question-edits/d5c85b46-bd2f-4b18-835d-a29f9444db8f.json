@@ -1,0 +1,69 @@
+{
+  "question_id": "d5c85b46-bd2f-4b18-835d-a29f9444db8f",
+  "baseline_hash": "sha256:1e66a7ab1423c37d9226c71bda02c9917648f48c414de88e5d2f793afde06ecd",
+  "action": "replace",
+  "reason": "source-audited-article-batch-086-local-first aligned linked question with checked local raw PDF/source evidence for lea-plan-007-04-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-086",
+  "approved_at": "2026-05-12T09:30:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "62991043-88f7-4c94-9e06-4d649e5d7f1c",
+    "parent_article_slug": "lea-plan-007-04-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "EO 90 refined markdown lines 40-63; RA 11201 IRR refined markdown lines 145-162, 280-289, and 335-392.",
+    "checked_markdown_lines": [
+      "EO 90 refined markdown lines 19-27, 30-43, 51-63, and 79-106; raw PDF pages 1, 2, 3, 4, and 6 checked by local PyMuPDF extraction.",
+      "RA 11201 IRR refined markdown lines 40-44, 68-75, 93-100, 116-121, 134-162, 261-263, 280-289, 335, 389, and 392; raw PDF pages 3, 6, 7, 13, 15, 19, and 35 checked by local PyMuPDF extraction."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "eo-90-shelter-program-b086",
+        "label": "EO 90 - NGO for Shelter Program",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/EO/EO 90 NGO for Shelter Program.pdf",
+        "sha256": "sha256:22b0d40bfdd91f9636f7e57df542496b19fcca84fc7d48df4911a9e65d7cd501",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/EO/EO 90 NGO for Shelter Program.md",
+        "refined_markdown_sha256": "sha256:0edf1d2a41c71751479f8bbe0d7ff31adcda7b8b544f59dc88f3de9f6319d43b",
+        "locator": "EO 90 refined markdown lines 19-27, 30-43, 51-63, and 79-106; raw PDF pages 1, 2, 3, 4, and 6 checked by local PyMuPDF extraction."
+      },
+      {
+        "source_id": "ra-11201-irr-dhsud-act-b086",
+        "label": "RA 11201 IRR - DHSUD Act Implementing Rules",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "refined_markdown_sha256": "sha256:40f1a5041c69b3a4aea7c8ba138a9d570bc686bea48aa5618ea6423a6a719528",
+        "locator": "RA 11201 IRR refined markdown lines 40-44, 68-75, 93-100, 116-121, 134-162, 261-263, 280-289, 335, 389, and 392; raw PDF pages 3, 6, 7, 13, 15, 19, and 35 checked by local PyMuPDF extraction."
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 086 local raw-source-audited hudcc_to_dhsud_governance scope."
+  },
+  "proposed": {
+    "text": "What happened to HUDCC functions under RA 11201 IRR?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They were transferred into DHSUD through consolidation with HLURB functions"
+      },
+      {
+        "id": "b",
+        "text": "They became private bank functions only"
+      },
+      {
+        "id": "c",
+        "text": "They moved to the fire bureau"
+      },
+      {
+        "id": "d",
+        "text": "They were converted into architectural board exams"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "RA 11201 IRR describes DHSUD creation through HUDCC and HLURB consolidation and function transfer.",
+    "explanation": "RA 11201 IRR describes DHSUD creation through HUDCC and HLURB consolidation and function transfer.",
+    "code_citation": "EO 90 - NGO for Shelter Program; RA 11201 IRR - DHSUD Act Implementing Rules",
+    "bloom_level": "understand",
+    "application_context": "source_audited_local_first_batch_086",
+    "practice_context": [],
+    "difficulty": 0.55
+  }
+}

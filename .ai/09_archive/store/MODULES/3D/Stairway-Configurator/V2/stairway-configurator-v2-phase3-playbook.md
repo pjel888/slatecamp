@@ -319,7 +319,7 @@ graph TD
    ```typescript
    // ── Egress Requirements ──────────────────────────────────────────────────
    // Source: RA 9514 IRR Rule 10 + PD 1096 Rule X
-   
+
    // Occupant Load Factors (sqm per person) — RA 9514 IRR Rule 10 §1004
    export const OCCUPANT_LOAD_FACTORS: Record<string, number> = {
      assembly: 0.65,       // RA 9514 IRR Rule 10 §1004
@@ -329,7 +329,7 @@ graph TD
      mercantile: 2.8,      // RA 9514 IRR Rule 10 §1004
      industrial: 9.3,      // RA 9514 IRR Rule 10 §1004
    } as const
-   
+
    // Required Exits by Occupant Load — RA 9514 IRR Rule 10 §1005
    export const RA9514_EXIT_THRESHOLDS = [
      { maxOccupants: 10, minExits: 1 },   // RA 9514 IRR Rule 10 §1005
@@ -337,14 +337,14 @@ graph TD
      { maxOccupants: 500, minExits: 3 },   // RA 9514 IRR Rule 10 §1005
      { maxOccupants: Infinity, minExits: 4 }, // RA 9514 IRR Rule 10 §1005
    ] as const
-   
+
    // PD 1096 Floor Area Threshold for Minimum 2 Exits
    export const PD1096_LARGE_FLOOR_AREA_MM2 = 500    // PD 1096 Rule X §1004 (500 sqm)
-   
+
    // Exit Width Capacity — RA 9514 IRR Rule 10 §10.2.5
    export const RA9514_WIDTH_PER_PERSON_MM = 5.1     // RA 9514 IRR Rule 10 §10.2.5
    export const RA9514_MIN_EXIT_WIDTH_MM = 710        // RA 9514 IRR Rule 10 §1008
-   
+
    // Travel Distance Limits (meters) — RA 9514 IRR Rule 10 §1016
    export const TRAVEL_DISTANCE_UNSPRINKLERED: Record<string, number> = {
      assembly: 46,     // RA 9514 IRR Rule 10 §1016
@@ -354,7 +354,7 @@ graph TD
      mercantile: 30,   // RA 9514 IRR Rule 10 §1016
      industrial: 31,   // RA 9514 IRR Rule 10 §1016
    } as const
-   
+
    export const TRAVEL_DISTANCE_SPRINKLERED: Record<string, number> = {
      assembly: 61,     // RA 9514 IRR Rule 10 §1016
      business: 61,     // RA 9514 IRR Rule 10 §1016
@@ -382,7 +382,7 @@ graph TD
      travelDistanceLimit: number    // meters
      isSprinklered: boolean
    }
-   
+
    export const computeEgressRequirements = (
      floorArea: number,
      occupancyType: string,
@@ -465,7 +465,7 @@ graph TD
 
 2. Create `EgressCalculatorPanel.tsx`:
    - Reads floor area, occupancy type, provided exits from store
-   - Calls `computeEgressRequirements()` 
+   - Calls `computeEgressRequirements()`
    - Displays:
      - **Occupant Load:** "462 persons" (bold, large)
      - **Required Exits:** "3 exits" with color (green if provided ≥ required, red if not)

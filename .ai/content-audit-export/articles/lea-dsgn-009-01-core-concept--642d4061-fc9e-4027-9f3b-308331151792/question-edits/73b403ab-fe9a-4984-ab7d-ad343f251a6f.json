@@ -1,0 +1,59 @@
+{
+  "question_id": "73b403ab-fe9a-4984-ab7d-ad343f251a6f",
+  "baseline_hash": "sha256:d7a6c28093e7819528d7e35685c6cf232657bf10a454b54864718d1c5da7f8e4",
+  "action": "replace",
+  "reason": "source-audited-article-batch-060-local-first: local raw PDF backed replacement constrained to checked Batch 060 TOA 4 Tropical Architecture source family.",
+  "approved_by": "codex-local-first-batch-060",
+  "approved_at": "2026-05-11T21:02:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "642d4061-fc9e-4027-9f3b-308331151792",
+    "parent_article_slug": "lea-dsgn-009-01-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "TOA 4 Tropical Architecture refined markdown lines 513-591, 622-670, 708-874, 1201-1247, and raw PDF pages 71-78, 81-84, 87-90, 92-100, 104, 106-110, 121, and 140",
+    "checked_markdown_lines": [
+      "TOA 4 Tropical Architecture refined markdown lines 513-591",
+      "TOA 4 Tropical Architecture refined markdown lines 622-670",
+      "TOA 4 Tropical Architecture refined markdown lines 708-874",
+      "TOA 4 Tropical Architecture refined markdown lines 1201-1247"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "toa4-tropical-architecture-local-raw-pdf--b060-642d4061-01",
+        "label": "TOA 4 Tropical Architecture - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+        "sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+        "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+        "locator": "TOA 4 Tropical Architecture refined markdown lines 513-591, 622-670, 708-874, 1201-1247, and raw PDF pages 71-78, 81-84, 87-90, 92-100, 104, 106-110, 121, and 140"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 060 checked local raw PDF source scope."
+  },
+  "proposed": {
+    "text": "How should daylight be admitted in passive design?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Through shaded windows or other shaded daylighting strategies."
+      },
+      {
+        "id": "b",
+        "text": "Through unprotected glass regardless of heat gain."
+      },
+      {
+        "id": "c",
+        "text": "Only through sealed opaque walls."
+      },
+      {
+        "id": "d",
+        "text": "Only by mechanical cooling."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Through shaded windows or other shaded daylighting strategies. This answer is supported by the checked Batch 060 local TOA 4 Tropical Architecture raw PDF source family for Passive design.",
+    "explanation": "Through shaded windows or other shaded daylighting strategies. The Batch 060 source audit used the local raw PDF first and refined markdown only as locator evidence for Passive design.",
+    "code_citation": "TOA 4 Tropical Architecture refined markdown lines 513-591, 622-670, 708-874, 1201-1247, and raw PDF pages 71-78, 81-84, 87-90, 92-100, 104, 106-110, 121, and 140"
+  },
+  "batch_question_template_index": 9
+}

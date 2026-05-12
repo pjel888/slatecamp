@@ -1,104 +1,62 @@
 {
   "article_id": "958cf8ad-c743-41b3-a7fd-47da9421a09b",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:6962d977698fdc9b054671d34609cfe389b148b486f5de8109b560adab1b2b55",
-  "source_count": 8,
+  "sources_hash": "sha256:0bf72d3c18169bd1635c089ca628fb4131fe96dc190fa4e4efdd9b50f03f56b4",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "7e5e1274-a1ad-44fb-bac2-1a870f092b26",
+      "source_id": "ra9266-irr-board-discipline-cpd-local",
       "article_id": "958cf8ad-c743-41b3-a7fd-47da9421a09b",
-      "label": "Republic Act No. 9266 (Architecture Act of 2004) — Sections 7, 23, 37, 39",
+      "label": "RA 9266 IRR - Board powers, disciplinary grounds, CPD, and enforcement",
       "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:01.68074+00:00",
-      "updated_at": "2026-03-24T04:34:01.68074+00:00"
-    },
-    {
-      "source_id": "064649d8-ee2b-43c5-959a-1544af8cd556",
-      "article_id": "958cf8ad-c743-41b3-a7fd-47da9421a09b",
-      "label": "Implementing Rules and Regulations of RA 9266 — Administrative Procedures for Disciplinary Cases",
-      "url": null,
-      "source_type": "implementing_rules",
-      "description": null,
-      "is_verified": false,
+      "source_type": "primary_law_irr_pdf",
+      "description": "Local raw PDF and refined markdown checked for PRBoA authority, suspension/revocation grounds, CPD, and enforcement claims.",
+      "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:01.68074+00:00",
-      "updated_at": "2026-03-24T04:34:01.68074+00:00"
+      "created_at": "2026-05-11T11:45:00.000+08:00",
+      "updated_at": "2026-05-11T11:45:00.000+08:00",
+      "local_source_audit": {
+        "authority": "Professional Regulatory Board of Architecture / PRC",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_locator": "RA 9266 IRR refined markdown lines 296-323, 588-630, 670-680, and 855-873",
+        "checked_markdown_lines": [
+          "RA 9266 IRR lines 296-323",
+          "RA 9266 IRR lines 588-630",
+          "RA 9266 IRR lines 670-680",
+          "RA 9266 IRR lines 855-873"
+        ],
+        "local_source_checked": true
+      }
     },
     {
-      "source_id": "276bd16c-d4fb-41f3-9b00-04032fe24944",
+      "source_id": "uap-code-ethics-client-contractor-colleague-local",
       "article_id": "958cf8ad-c743-41b3-a7fd-47da9421a09b",
-      "label": "Code of Ethical Conduct for Architects (PRC/PRBoA) — Professional Responsibilities",
+      "label": "UAP Architect's Code of Ethics - client, contractor, and colleague duties",
       "url": null,
-      "source_type": "regulatory_body",
-      "description": null,
-      "is_verified": false,
+      "source_type": "professional_ethics_pdf",
+      "description": "Local raw PDF and refined markdown checked for architect impartiality, client-charge disclosure, contractor duties, and colleague duties.",
+      "is_verified": true,
       "sort_order": 2,
-      "created_at": "2026-03-24T04:34:01.68074+00:00",
-      "updated_at": "2026-03-24T04:34:01.68074+00:00"
-    },
-    {
-      "source_id": "f432af3c-49dc-48ab-9263-a81f2e655956",
-      "article_id": "958cf8ad-c743-41b3-a7fd-47da9421a09b",
-      "label": "Standards of Professional Practice for Regular Design Services (SPP Doc 202)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:34:01.68074+00:00",
-      "updated_at": "2026-03-24T04:34:01.68074+00:00"
-    },
-    {
-      "source_id": "76d27f3d-0343-4201-af06-fa9aa7e59c3a",
-      "article_id": "958cf8ad-c743-41b3-a7fd-47da9421a09b",
-      "label": "PRC Board of Architecture Resolutions on Non-Licensed Practitioners (updated post-2008)",
-      "url": null,
-      "source_type": "regulatory_body",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 4,
-      "created_at": "2026-03-24T04:34:01.68074+00:00",
-      "updated_at": "2026-03-24T04:34:01.68074+00:00"
-    },
-    {
-      "source_id": "664be90e-5cc9-4405-bade-394b5cf8095f",
-      "article_id": "958cf8ad-c743-41b3-a7fd-47da9421a09b",
-      "label": "Court of Appeals Rules on Administrative Case Review",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 5,
-      "created_at": "2026-03-24T04:34:01.68074+00:00",
-      "updated_at": "2026-03-24T04:34:01.68074+00:00"
-    },
-    {
-      "source_id": "53c48caa-b3fa-4eb4-ba47-63339a203936",
-      "article_id": "958cf8ad-c743-41b3-a7fd-47da9421a09b",
-      "label": "A Comprehensive Guide on the Cost and Process of Filing a Case Against an Architect in the Philippines — Respicio & Co. (Lawyer-Philippines.com)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 6,
-      "created_at": "2026-03-24T04:34:01.68074+00:00",
-      "updated_at": "2026-03-24T04:34:01.68074+00:00"
-    },
-    {
-      "source_id": "70eab5c6-2bc9-400e-aa4f-3d1eae7bcf27",
-      "article_id": "958cf8ad-c743-41b3-a7fd-47da9421a09b",
-      "label": "Professional Regulatory Board of Architecture (Wikipedia)",
-      "url": null,
-      "source_type": "regulatory_body",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 7,
-      "created_at": "2026-03-24T04:34:01.68074+00:00",
-      "updated_at": "2026-03-24T04:34:01.68074+00:00"
+      "created_at": "2026-05-11T11:45:00.000+08:00",
+      "updated_at": "2026-05-11T11:45:00.000+08:00",
+      "local_source_audit": {
+        "authority": "United Architects of the Philippines / PRC-Board approved code source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+        "raw_pdf_sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+        "refined_markdown_sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+        "source_locator": "UAP Code of Ethics refined markdown lines 23-29, 31-58, 60-71, and 81-99",
+        "checked_markdown_lines": [
+          "UAP Code of Ethics lines 23-29",
+          "UAP Code of Ethics lines 31-58",
+          "UAP Code of Ethics lines 60-71",
+          "UAP Code of Ethics lines 81-99"
+        ],
+        "local_source_checked": true
+      }
     }
   ]
 }

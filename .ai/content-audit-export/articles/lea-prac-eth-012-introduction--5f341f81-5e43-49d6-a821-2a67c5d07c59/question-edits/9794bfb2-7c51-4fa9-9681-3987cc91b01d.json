@@ -1,0 +1,72 @@
+{
+  "question_id": "9794bfb2-7c51-4fa9-9681-3987cc91b01d",
+  "baseline_hash": "sha256:5d6339c0bb4a725073cd4622404a204428b85b792332e050dc77be196a22f73f",
+  "action": "replace",
+  "reason": "source-audited-article-batch-018-local-first rewrote linked question to match locally checked raw source evidence for lea-prac-eth-012-introduction.",
+  "approved_by": "codex-local-source-audit-batch-018",
+  "approved_at": "2026-05-10T23:42:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "5f341f81-5e43-49d6-a821-2a67c5d07c59",
+    "parent_article_slug": "lea-prac-eth-012-introduction",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UAP Document Code of Ethics, outside returns and contractor/supplier benefit provisions, raw markdown lines 58-62 and 77-89",
+    "checked_markdown_lines": [
+      "raw markdown lines 58-62",
+      "raw markdown lines 77-89"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+        "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+        "source_id": "uap-document-code-of-ethics",
+        "locator": "UAP Document Code of Ethics, outside returns and contractor/supplier benefit provisions, raw markdown lines 58-62 and 77-89"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
+        "sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
+        "source_id": "uap-document-code-of-ethics-raw-markdown",
+        "locator": "UAP Document Code of Ethics, outside returns and contractor/supplier benefit provisions, raw markdown lines 58-62 and 77-89"
+      }
+    ],
+    "local_source_safe_action": "Question was rewritten to remove unverified or over-specific claims and use only statements anchored in the checked local raw source packet."
+  },
+  "proposed": {
+    "text": "What is the safest source-backed statement about an architect's compensation under the Code?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It should be solely through the professional fee charged directly to the client"
+      },
+      {
+        "id": "b",
+        "text": "It may include hidden supplier commissions"
+      },
+      {
+        "id": "c",
+        "text": "It should mainly come from contractors"
+      },
+      {
+        "id": "d",
+        "text": "It may be replaced by gifts from agents"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "The Code states that the architect shall be compensated solely through the professional fee charged directly to the client.",
+    "explanation": "The Code states that the architect shall be compensated solely through the professional fee charged directly to the client.",
+    "code_citation": "UAP Document Code of Ethics, line 61",
+    "bloom_level": "understand",
+    "application_context": "professional_practice",
+    "practice_context": [
+      "Code of Ethical Conduct",
+      "Professional ethics"
+    ],
+    "difficulty": 0.5,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-ETH-012-007"
+  }
+}

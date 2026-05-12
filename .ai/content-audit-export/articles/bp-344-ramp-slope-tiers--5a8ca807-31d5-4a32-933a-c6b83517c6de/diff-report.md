@@ -1,26 +1,26 @@
 # Content Diff Report: bp-344-ramp-slope-tiers
 
-Generated: 2026-05-10T04:50:01.199Z
+Generated: 2026-05-11T01:27:49.061Z
 Article ID: 5a8ca807-31d5-4a32-933a-c6b83517c6de
-Changed: false
+Changed: true
 Safe to push locally: true
 
 ## Hashes
 
 - Original: `sha256:59f1707fa8ebc489c5de0a4fdbeda48e481127972158c96ad8c9e99af0aef103`
-- Normalized: `sha256:2e0733fa98677f175285210447aa4a11a62ce71f32130e52b70acd5b2f9eb673`
-- Candidate: `sha256:59f1707fa8ebc489c5de0a4fdbeda48e481127972158c96ad8c9e99af0aef103`
+- Normalized: `sha256:85a3281bd23ec2a85c47274f607725aaf72de0a5db999672eb9767a744393c3e`
+- Candidate: `sha256:85a3281bd23ec2a85c47274f607725aaf72de0a5db999672eb9767a744393c3e`
 
 ## Line summary
 
-- Changed lines: 0
+- Changed lines: 51
 - Inserted lines: 0
-- Deleted lines: 0
+- Deleted lines: 37
 
 ## UI block preservation
 
-- UI blocks expected: 1
-- UI blocks preserved: 1
+- UI blocks expected: 0
+- UI blocks preserved: 0
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 

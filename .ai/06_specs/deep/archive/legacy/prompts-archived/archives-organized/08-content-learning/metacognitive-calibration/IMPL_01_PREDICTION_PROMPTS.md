@@ -1,7 +1,7 @@
 # IMPL_01: Pre-Session Prediction & Post-Session Postdiction
 
-**Priority:** P0 — Cheapest, highest-impact calibration feature  
-**Effort:** ~4 hours  
+**Priority:** P0 — Cheapest, highest-impact calibration feature
+**Effort:** ~4 hours
 **Research basis:** Effect size g = –0.75 for prediction + feedback interventions (Miller & Geraci, 2014; Callender et al.)
 
 ---

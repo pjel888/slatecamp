@@ -1,0 +1,75 @@
+{
+  "question_id": "dc6bdc0a-f45d-4283-a195-d4feb0ac5c16",
+  "baseline_hash": "sha256:fd369983b7b9cc4cdb5f9c4d222433251daad2ecc4a5f0412580887b15c41502",
+  "action": "replace",
+  "reason": "source-audited-article-batch-075-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-009-01-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-075",
+  "approved_at": "2026-05-12T02:55:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "f6bd1cea-ecd5-4587-80ba-3015beb4b820",
+    "parent_article_slug": "lea-matl-009-01-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 3-5, 14, and 19 checked by local PyMuPDF extraction; SPP 202 refined markdown lines 173-183; raw PDF checked locally for readability; SPP 203 refined markdown lines 101-140; raw PDF pages 7 and 95 checked by local PyMuPDF extraction",
+    "checked_markdown_lines": [
+      "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 3-5, 14, and 19 checked by local PyMuPDF extraction",
+      "SPP 202 refined markdown lines 173-183; raw PDF checked locally for readability",
+      "SPP 203 refined markdown lines 101-140; raw PDF pages 7 and 95 checked by local PyMuPDF extraction"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "ra9266-irr-architecture-act-b075",
+        "label": "RA 9266 IRR - Architecture Act of 2004",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+        "raw_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 3-5, 14, and 19 checked by local PyMuPDF extraction"
+      },
+      {
+        "source_id": "uap-spp-202-regular-design-services-b075",
+        "label": "UAP SPP 202 - Regular Design Services",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+        "sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+        "raw_markdown_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+        "locator": "SPP 202 refined markdown lines 173-183; raw PDF checked locally for readability"
+      },
+      {
+        "source_id": "uap-spp-203-specialized-services-b075",
+        "label": "UAP SPP 203 - Specialized Architectural Services",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+        "sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+        "raw_markdown_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+        "locator": "SPP 203 refined markdown lines 101-140; raw PDF pages 7 and 95 checked by local PyMuPDF extraction"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 075 local raw-source-audited article scope."
+  },
+  "proposed": {
+    "text": "A question asks who may approve architectural plans or specifications not prepared in accord with RA 9266. What is the source-safe answer?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Government officers charged with enforcement shall not accept or approve such documents."
+      },
+      {
+        "id": "b",
+        "text": "Any contractor may approve them."
+      },
+      {
+        "id": "c",
+        "text": "The client may waive all RA 9266 requirements."
+      },
+      {
+        "id": "d",
+        "text": "A supplier invoice is enough."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The checked RA 9266 IRR text states enforcement officers shall not accept or approve architectural plans or specifications not prepared and submitted in accord with RA 9266.",
+    "explanation": "The checked RA 9266 IRR text states enforcement officers shall not accept or approve architectural plans or specifications not prepared and submitted in accord with RA 9266.",
+    "code_citation": "RA 9266 IRR"
+  }
+}

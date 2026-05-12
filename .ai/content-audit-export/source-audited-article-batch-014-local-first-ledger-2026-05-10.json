@@ -1,0 +1,143 @@
+{
+  "batch_id": "source-audited-article-batch-014-local-first",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T23:05:00.000+08:00",
+  "mode": "local_first_no_supabase_no_deploy_no_commit",
+  "status": "local_pass_ready_for_final_publishing_review",
+  "selection_policy": "Next five compose-eligible article/question clusters not found in source-audited local-pass ledgers/reports for batches 001-013; SPP candidates with unresolved compose placeholders were skipped for this batch.",
+  "constraints": [
+    "work in /Users/philiplewis/slatecamp only",
+    "no Supabase push",
+    "no deploy",
+    "no commit",
+    "Supabase remains final publishing only"
+  ],
+  "counts": {
+    "selected_articles": 5,
+    "local_pass_articles": 5,
+    "blocked_articles": 0,
+    "linked_questions_covered": 50,
+    "question_edit_json_files_created": 50,
+    "source_records_created": 5,
+    "source_safe_rewrite_question_edits": 21,
+    "unresolved_external_source_gap_question_edits": 0,
+    "placeholder_matches_in_scoped_scan": 0
+  },
+  "improved_article_folder_paths": [
+    ".ai/content-audit-export/articles/lea-dsgn-005-11-core-concept--cd18af9a-b1e1-42d4-a254-ff5244838f19",
+    ".ai/content-audit-export/articles/lea-dsgn-007-06-core-concept--17acdb19-55dc-4136-862d-62825aa8fb4b",
+    ".ai/content-audit-export/articles/lea-dsgn-007-07-core-concept--569f5a05-ad46-4617-8170-a19e2f5d5db1",
+    ".ai/content-audit-export/articles/lea-dsgn-007-10-core-concept--81a065b0-77f6-4f96-98cd-a3239c6beae4",
+    ".ai/content-audit-export/articles/lea-dsgn-009-02-core-concept--f5c0e7a8-8017-4c9b-a1d1-8938a338471f"
+  ],
+  "question_edits_folder_paths": [
+    ".ai/content-audit-export/articles/lea-dsgn-005-11-core-concept--cd18af9a-b1e1-42d4-a254-ff5244838f19/question-edits",
+    ".ai/content-audit-export/articles/lea-dsgn-007-06-core-concept--17acdb19-55dc-4136-862d-62825aa8fb4b/question-edits",
+    ".ai/content-audit-export/articles/lea-dsgn-007-07-core-concept--569f5a05-ad46-4617-8170-a19e2f5d5db1/question-edits",
+    ".ai/content-audit-export/articles/lea-dsgn-007-10-core-concept--81a065b0-77f6-4f96-98cd-a3239c6beae4/question-edits",
+    ".ai/content-audit-export/articles/lea-dsgn-009-02-core-concept--f5c0e7a8-8017-4c9b-a1d1-8938a338471f/question-edits"
+  ],
+  "articles": [
+    {
+      "article_id": "cd18af9a-b1e1-42d4-a254-ff5244838f19",
+      "slug": "lea-dsgn-005-11-core-concept",
+      "title": "Funeral Homes",
+      "status": "local_pass_ready_for_final_publishing_review",
+      "article_folder": ".ai/content-audit-export/articles/lea-dsgn-005-11-core-concept--cd18af9a-b1e1-42d4-a254-ff5244838f19",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-dsgn-005-11-core-concept--cd18af9a-b1e1-42d4-a254-ff5244838f19/question-edits",
+      "linked_questions": 10,
+      "question_edits_created": 10,
+      "source_safe_rewrite_question_edits": 8,
+      "source_status_summary": "source_safe_rewrite_for_unsourced_funeral_room_hvac_and_area_numbers",
+      "compose_blockers": [],
+      "diff_safe_to_push": true,
+      "diff_blockers": [],
+      "validate_valid": true,
+      "validate_blockers": []
+    },
+    {
+      "article_id": "17acdb19-55dc-4136-862d-62825aa8fb4b",
+      "slug": "lea-dsgn-007-06-core-concept",
+      "title": "Circulation",
+      "status": "local_pass_ready_for_final_publishing_review",
+      "article_folder": ".ai/content-audit-export/articles/lea-dsgn-007-06-core-concept--17acdb19-55dc-4136-862d-62825aa8fb4b",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-dsgn-007-06-core-concept--17acdb19-55dc-4136-862d-62825aa8fb4b/question-edits",
+      "linked_questions": 10,
+      "question_edits_created": 10,
+      "source_safe_rewrite_question_edits": 2,
+      "source_status_summary": "supported_with_practice_guidance_qualified_as_not_code",
+      "compose_blockers": [],
+      "diff_safe_to_push": true,
+      "diff_blockers": [],
+      "validate_valid": true,
+      "validate_blockers": []
+    },
+    {
+      "article_id": "569f5a05-ad46-4617-8170-a19e2f5d5db1",
+      "slug": "lea-dsgn-007-07-core-concept",
+      "title": "Development control calculations",
+      "status": "local_pass_ready_for_final_publishing_review",
+      "article_folder": ".ai/content-audit-export/articles/lea-dsgn-007-07-core-concept--569f5a05-ad46-4617-8170-a19e2f5d5db1",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-dsgn-007-07-core-concept--569f5a05-ad46-4617-8170-a19e2f5d5db1/question-edits",
+      "linked_questions": 10,
+      "question_edits_created": 10,
+      "source_safe_rewrite_question_edits": 4,
+      "source_status_summary": "supported_with_problem_stated_zoning_inputs",
+      "compose_blockers": [],
+      "diff_safe_to_push": true,
+      "diff_blockers": [],
+      "validate_valid": true,
+      "validate_blockers": []
+    },
+    {
+      "article_id": "81a065b0-77f6-4f96-98cd-a3239c6beae4",
+      "slug": "lea-dsgn-007-10-core-concept",
+      "title": "Stair Design",
+      "status": "local_pass_ready_for_final_publishing_review",
+      "article_folder": ".ai/content-audit-export/articles/lea-dsgn-007-10-core-concept--81a065b0-77f6-4f96-98cd-a3239c6beae4",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-dsgn-007-10-core-concept--81a065b0-77f6-4f96-98cd-a3239c6beae4/question-edits",
+      "linked_questions": 10,
+      "question_edits_created": 10,
+      "source_safe_rewrite_question_edits": 6,
+      "source_status_summary": "supported_with_governing_code_version_qualified",
+      "compose_blockers": [],
+      "diff_safe_to_push": true,
+      "diff_blockers": [],
+      "validate_valid": true,
+      "validate_blockers": []
+    },
+    {
+      "article_id": "f5c0e7a8-8017-4c9b-a1d1-8938a338471f",
+      "slug": "lea-dsgn-009-02-core-concept",
+      "title": "Daylighting",
+      "status": "local_pass_ready_for_final_publishing_review",
+      "article_folder": ".ai/content-audit-export/articles/lea-dsgn-009-02-core-concept--f5c0e7a8-8017-4c9b-a1d1-8938a338471f",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-dsgn-009-02-core-concept--f5c0e7a8-8017-4c9b-a1d1-8938a338471f/question-edits",
+      "linked_questions": 10,
+      "question_edits_created": 10,
+      "source_safe_rewrite_question_edits": 1,
+      "source_status_summary": "supported_for_10_percent_window_rule_design_heuristics_qualified",
+      "compose_blockers": [],
+      "diff_safe_to_push": true,
+      "diff_blockers": [],
+      "validate_valid": true,
+      "validate_blockers": []
+    }
+  ],
+  "source_audit_notes": [
+    "PD 1096, RA 9514, and BP 344 local raw/conversion/canonical layers were used before creating proposed learner-facing edits.",
+    "Unsupported exact funeral-home room/HVAC numbers were removed or rewritten as project-specific verification requirements.",
+    "Development-control zoning values are treated as problem/LGU inputs, not universal national constants.",
+    "Daylighting depth and circulation-efficiency values are retained only as design heuristics, not statutory claims."
+  ],
+  "validation_summary": {
+    "compose": "passed for all five selected Batch 014 article IDs with blockers=0 after source-safe article-body repairs",
+    "diff": "passed for all five selected Batch 014 article IDs with safe_to_push=true and blockers=[]; remote stale checks remain Supabase final-publishing responsibility",
+    "validate": "passed for all five selected Batch 014 article IDs with valid=true and blockers=[]; only component-usage.json warning remains",
+    "json_parse": "226 scoped Batch 013/014 JSON files parsed with jq empty",
+    "placeholder_scan": "268 scoped Batch 013/014 JSON/markdown artifact files scanned clean for placeholder/source-gap markers",
+    "tests": "bun test scripts/content-audit/content-audit.test.ts passed 27/27 tests with 84 expect calls",
+    "git_diff_check": "scoped git diff --check passed for Batch 013/014 article/report/ledger artifacts"
+  },
+  "next_phase_readiness": "Supabase final publishing only after remote stale checks; no remote mutation attempted."
+}

@@ -1,0 +1,32 @@
+{
+  "question_id": "5bed0a27-b385-49d6-9b23-e865f4a0c234",
+  "baseline_hash": "sha256:edbecde76bb4fef72c4ab4f4cc1b4184a83d9a5390dad7193761bee662ecd7c0",
+  "reason": "Batch 003 source audit removed unsupported parking-structure geometry locators. PD 1096 Rule VII supports slot/loading sizes and plan indication; BP 344 supports accessible parking details. Rule XIX, Section 803, and Section 904 are not parking geometry locators.",
+  "approved_by": "codex-local-source-audit-batch-003",
+  "approved_at": "2026-05-10T18:00:00+08:00",
+  "proposed": {
+    "text": "Which statement is source-safe for parking-structure geometry claims after the checking the cited sources?",
+    "options": [
+      {
+        "id": "a",
+        "text": "PD 1096 Section 904 is the local source for parking aisle widths"
+      },
+      {
+        "id": "b",
+        "text": "PD 1096 Rule XIX is the local source for off-street parking geometry"
+      },
+      {
+        "id": "c",
+        "text": "Aisle widths, turning radii, and structural bay modules still matter, but this bundle did not verify them as PD 1096 Rule XIX, Section 803, or Section 904 requirements"
+      },
+      {
+        "id": "d",
+        "text": "Section 803 is the parking ramp section"
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": "The checked PD 1096 source showed Rule XIX is Use of Computers, Section 803 is Percentage of Site Occupancy, and Section 904 is Storm Drainage System.",
+    "explanation": "The old U-turn/centerline question relied on unsupported turning-radius geometry.",
+    "code_citation": "PD 1096 2004 Revised IRR, Rule VII parking provisions; Rule VIII Section 803; Rule IX Section 904; Rule XIX"
+  }
+}

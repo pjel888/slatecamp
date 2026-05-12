@@ -1,0 +1,292 @@
+{
+  "batch_id": "source-audited-article-batch-043-local-first",
+  "batch_number": 43,
+  "generated_at": "2026-05-11T07:53:32.901Z",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "local_only": true,
+  "supabase_push": "not_attempted",
+  "deploy": "not_attempted",
+  "commit": "not_attempted",
+  "inherited_blocker_status": "Batch 042 blockers=0",
+  "selection_rule": "five high-value building utilities/code clusters with linked questions and local plumbing, electrical, fire, energy-efficiency, and mechanical utilities raw PDF families, excluding IDs recorded in source-audited Batch 001 through Batch 042 artifacts",
+  "counts": {
+    "selected_articles": 5,
+    "linked_questions": 85,
+    "question_edits": 85,
+    "source_rows": 13,
+    "unique_raw_pdfs": 6,
+    "json_parse": 142,
+    "source_hash_checks": 26,
+    "marker_matches": 0,
+    "stale_compose_error_files": 0
+  },
+  "source_evidence": [
+    "Revised National Plumbing Code local raw PDF family for rainwater/storm drainage, pipe separation, roof drains, rainfall-intensity sizing, slope, and discharge limits.",
+    "Philippine Electrical Code local raw PDF family for electrical metering/service equipment, load schedules, working space, headroom, illumination, and dedicated electrical space.",
+    "RA 9514 RIRR 2019 local raw PDF family for sprinkler/standpipe/fire pump criteria, hydraulic calculations, supervision, testing, and hydrant supply.",
+    "RA 11285 local raw PDF family and DOE Energy Conserving Design Guidelines for designated establishments, ECCR/audits/records, energy metering, HVAC load/sizing/controls, EER, and ventilation.",
+    "George Salvan Architectural Utilities 2 local raw PDF family for mechanical/electrical space planning, air-conditioning system types, chilled water, air handling, room units, and utility coordination."
+  ],
+  "validation": {
+    "compose": {
+      "status": "PASS",
+      "passed": 5,
+      "total": 5
+    },
+    "diff": {
+      "status": "PASS",
+      "passed": 5,
+      "total": 5
+    },
+    "validate": {
+      "status": "PASS",
+      "passed": 5,
+      "total": 5,
+      "warnings": "component-usage.json missing warnings only"
+    },
+    "ui_block_validation": {
+      "status": "PASS",
+      "passed": 5,
+      "total": 5
+    },
+    "scoped_json_parse": {
+      "status": "PASS",
+      "parsed_files": 142,
+      "failures": []
+    },
+    "marker_scan": {
+      "status": "PASS",
+      "scanned_files": 105,
+      "matches": []
+    },
+    "source_hash_checks": {
+      "status": "PASS",
+      "checked": 26,
+      "failures": []
+    },
+    "question_edit_count_checks": {
+      "status": "PASS",
+      "checks": [
+        {
+          "article_id": "1a967c89-e735-4a59-88b0-d2eb0918d284",
+          "slug": "lea-util-001-09-core-concept",
+          "expected": 25,
+          "actual": 25,
+          "pass": true
+        },
+        {
+          "article_id": "62733840-d170-40de-a27e-31fa31c30c69",
+          "slug": "lea-util-007-02-smart-metering-infrastructure-ami",
+          "expected": 15,
+          "actual": 15,
+          "pass": true
+        },
+        {
+          "article_id": "b75b3e00-5fe7-4717-95d0-b65ea5b2bb28",
+          "slug": "lea-util-004-07-core-concepts-and-formulas",
+          "expected": 15,
+          "actual": 15,
+          "pass": true
+        },
+        {
+          "article_id": "bec5c222-dd65-4e9c-8d5e-fe3758fa4d8e",
+          "slug": "lea-util-008-02-mechanical-spaces",
+          "expected": 15,
+          "actual": 15,
+          "pass": true
+        },
+        {
+          "article_id": "635013a5-2aa6-4d97-a79a-e4f44d3aa3ee",
+          "slug": "lea-util-002-04-system-types-and-applications",
+          "expected": 15,
+          "actual": 15,
+          "pass": true
+        }
+      ],
+      "failures": []
+    },
+    "stale_compose_error_check": {
+      "status": "PASS",
+      "stale_compose_error_files": []
+    },
+    "targeted_tests": {
+      "status": "PASS",
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "tests": 34,
+      "expect_calls": 328
+    },
+    "scoped_git_diff_check": {
+      "status": "PASS",
+      "command": "git diff --check -- <Batch 043 article folders, report, ledger, scoped checks, handoff>"
+    }
+  },
+  "blockers": [],
+  "next_batch_readiness": "READY_FOR_BATCH_044_SELECTION",
+  "articles": [
+    {
+      "ordinal": 1,
+      "article_id": "1a967c89-e735-4a59-88b0-d2eb0918d284",
+      "slug": "lea-util-001-09-core-concept",
+      "title": "Rainwater harvesting systems",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284/question-edits",
+      "linked_questions": 25,
+      "question_edits": 25,
+      "source_rows": 1,
+      "candidate_hash": "sha256:2648b7353a2d26f9031e8797c8a71361013929832ce71d878931fdb8022d2965",
+      "normalized_hash": "sha256:2648b7353a2d26f9031e8797c8a71361013929832ce71d878931fdb8022d2965",
+      "original_hash": "sha256:24dda00ed63615e7a01f59a85dd801399c687ef02208cc8c12468e31d3aed9a5",
+      "sources_hash": "sha256:ee2dd01f5490e6b3c7d5a463ee25d45a14e39f26edadb1cf419a4bfef4c6591b",
+      "gates": {
+        "compose": "PASS",
+        "diff": "PASS",
+        "validate": "PASS",
+        "ui_block_validation": "PASS",
+        "source_audit": "PASS"
+      },
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284/ui-blocks.json"
+      ]
+    },
+    {
+      "ordinal": 2,
+      "article_id": "62733840-d170-40de-a27e-31fa31c30c69",
+      "slug": "lea-util-007-02-smart-metering-infrastructure-ami",
+      "title": "Smart metering and energy analytics",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-util-007-02-smart-metering-infrastructure-ami--62733840-d170-40de-a27e-31fa31c30c69",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-007-02-smart-metering-infrastructure-ami--62733840-d170-40de-a27e-31fa31c30c69",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-util-007-02-smart-metering-infrastructure-ami--62733840-d170-40de-a27e-31fa31c30c69/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-007-02-smart-metering-infrastructure-ami--62733840-d170-40de-a27e-31fa31c30c69/question-edits",
+      "linked_questions": 15,
+      "question_edits": 15,
+      "source_rows": 3,
+      "candidate_hash": "sha256:cb5b60506390f957cf0475dcee406b6888fcd4ab90f3bb88506480e40b2da36f",
+      "normalized_hash": "sha256:cb5b60506390f957cf0475dcee406b6888fcd4ab90f3bb88506480e40b2da36f",
+      "original_hash": "sha256:288bb053470df4e858c1b62944a41d31bc7a6ec4a809d7df969ab9896de4b530",
+      "sources_hash": "sha256:5b41a127a386e0da83c84724ba4968458da67d9d5fc4f1c8618e8ee1b80e9ed9",
+      "gates": {
+        "compose": "PASS",
+        "diff": "PASS",
+        "validate": "PASS",
+        "ui_block_validation": "PASS",
+        "source_audit": "PASS"
+      },
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-007-02-smart-metering-infrastructure-ami--62733840-d170-40de-a27e-31fa31c30c69/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-007-02-smart-metering-infrastructure-ami--62733840-d170-40de-a27e-31fa31c30c69/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-007-02-smart-metering-infrastructure-ami--62733840-d170-40de-a27e-31fa31c30c69/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-007-02-smart-metering-infrastructure-ami--62733840-d170-40de-a27e-31fa31c30c69/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-007-02-smart-metering-infrastructure-ami--62733840-d170-40de-a27e-31fa31c30c69/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-007-02-smart-metering-infrastructure-ami--62733840-d170-40de-a27e-31fa31c30c69/ui-blocks.json"
+      ]
+    },
+    {
+      "ordinal": 3,
+      "article_id": "b75b3e00-5fe7-4717-95d0-b65ea5b2bb28",
+      "slug": "lea-util-004-07-core-concepts-and-formulas",
+      "title": "Fire pump sizing and hydraulic calculations",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-util-004-07-core-concepts-and-formulas--b75b3e00-5fe7-4717-95d0-b65ea5b2bb28",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-07-core-concepts-and-formulas--b75b3e00-5fe7-4717-95d0-b65ea5b2bb28",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-util-004-07-core-concepts-and-formulas--b75b3e00-5fe7-4717-95d0-b65ea5b2bb28/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-07-core-concepts-and-formulas--b75b3e00-5fe7-4717-95d0-b65ea5b2bb28/question-edits",
+      "linked_questions": 15,
+      "question_edits": 15,
+      "source_rows": 1,
+      "candidate_hash": "sha256:96202fbc3ff13063a7d6d72552bde83d8300ea2d5eb05f2a577400c828227a74",
+      "normalized_hash": "sha256:96202fbc3ff13063a7d6d72552bde83d8300ea2d5eb05f2a577400c828227a74",
+      "original_hash": "sha256:da057d8c4f3dfc452bbda5b8924de1d4bbb466dfc23d01669cce4bf03dd2148a",
+      "sources_hash": "sha256:f299c3a5becfc77072cf67b613bdfdab8eb0acaa21c1610ec4b737b9958a835a",
+      "gates": {
+        "compose": "PASS",
+        "diff": "PASS",
+        "validate": "PASS",
+        "ui_block_validation": "PASS",
+        "source_audit": "PASS"
+      },
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-07-core-concepts-and-formulas--b75b3e00-5fe7-4717-95d0-b65ea5b2bb28/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-07-core-concepts-and-formulas--b75b3e00-5fe7-4717-95d0-b65ea5b2bb28/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-07-core-concepts-and-formulas--b75b3e00-5fe7-4717-95d0-b65ea5b2bb28/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-07-core-concepts-and-formulas--b75b3e00-5fe7-4717-95d0-b65ea5b2bb28/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-07-core-concepts-and-formulas--b75b3e00-5fe7-4717-95d0-b65ea5b2bb28/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-07-core-concepts-and-formulas--b75b3e00-5fe7-4717-95d0-b65ea5b2bb28/ui-blocks.json"
+      ]
+    },
+    {
+      "ordinal": 4,
+      "article_id": "bec5c222-dd65-4e9c-8d5e-fe3758fa4d8e",
+      "slug": "lea-util-008-02-mechanical-spaces",
+      "title": "MEPF (Mechanical, Electrical, Plumbing, and Fire",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-util-008-02-mechanical-spaces--bec5c222-dd65-4e9c-8d5e-fe3758fa4d8e",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-008-02-mechanical-spaces--bec5c222-dd65-4e9c-8d5e-fe3758fa4d8e",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-util-008-02-mechanical-spaces--bec5c222-dd65-4e9c-8d5e-fe3758fa4d8e/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-008-02-mechanical-spaces--bec5c222-dd65-4e9c-8d5e-fe3758fa4d8e/question-edits",
+      "linked_questions": 15,
+      "question_edits": 15,
+      "source_rows": 5,
+      "candidate_hash": "sha256:1b2df78fb87efeb04cadfe8ef2b5b7fca69da6dba7b05c26e84b6b6c09c6a505",
+      "normalized_hash": "sha256:1b2df78fb87efeb04cadfe8ef2b5b7fca69da6dba7b05c26e84b6b6c09c6a505",
+      "original_hash": "sha256:391a3e17a1103a80a40aa4b6b4357139a01828b0d2c415ca60c7b2ee0176aaec",
+      "sources_hash": "sha256:0994b7a15b63a64159a3e353625b56f0550711347fd82f5a9394de435fd74590",
+      "gates": {
+        "compose": "PASS",
+        "diff": "PASS",
+        "validate": "PASS",
+        "ui_block_validation": "PASS",
+        "source_audit": "PASS"
+      },
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-008-02-mechanical-spaces--bec5c222-dd65-4e9c-8d5e-fe3758fa4d8e/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-008-02-mechanical-spaces--bec5c222-dd65-4e9c-8d5e-fe3758fa4d8e/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-008-02-mechanical-spaces--bec5c222-dd65-4e9c-8d5e-fe3758fa4d8e/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-008-02-mechanical-spaces--bec5c222-dd65-4e9c-8d5e-fe3758fa4d8e/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-008-02-mechanical-spaces--bec5c222-dd65-4e9c-8d5e-fe3758fa4d8e/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-008-02-mechanical-spaces--bec5c222-dd65-4e9c-8d5e-fe3758fa4d8e/ui-blocks.json"
+      ]
+    },
+    {
+      "ordinal": 5,
+      "article_id": "635013a5-2aa6-4d97-a79a-e4f44d3aa3ee",
+      "slug": "lea-util-002-04-system-types-and-applications",
+      "title": "HVAC system selection in the Philippines requires matching",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-util-002-04-system-types-and-applications--635013a5-2aa6-4d97-a79a-e4f44d3aa3ee",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-04-system-types-and-applications--635013a5-2aa6-4d97-a79a-e4f44d3aa3ee",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-util-002-04-system-types-and-applications--635013a5-2aa6-4d97-a79a-e4f44d3aa3ee/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-04-system-types-and-applications--635013a5-2aa6-4d97-a79a-e4f44d3aa3ee/question-edits",
+      "linked_questions": 15,
+      "question_edits": 15,
+      "source_rows": 3,
+      "candidate_hash": "sha256:7ff5cca70ccb111fba8d58391afe5734bec2dbd16458d39e1841da17cace1bf9",
+      "normalized_hash": "sha256:7ff5cca70ccb111fba8d58391afe5734bec2dbd16458d39e1841da17cace1bf9",
+      "original_hash": "sha256:195eb550e16159af1ce8a12ff5f774e03849bbdf5c270b9f566fc00d74058801",
+      "sources_hash": "sha256:d9f78009b4e0c0c36941f33c0301a7f0020c02c14d6472e326bc80f8e582774d",
+      "gates": {
+        "compose": "PASS",
+        "diff": "PASS",
+        "validate": "PASS",
+        "ui_block_validation": "PASS",
+        "source_audit": "PASS"
+      },
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-04-system-types-and-applications--635013a5-2aa6-4d97-a79a-e4f44d3aa3ee/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-04-system-types-and-applications--635013a5-2aa6-4d97-a79a-e4f44d3aa3ee/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-04-system-types-and-applications--635013a5-2aa6-4d97-a79a-e4f44d3aa3ee/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-04-system-types-and-applications--635013a5-2aa6-4d97-a79a-e4f44d3aa3ee/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-04-system-types-and-applications--635013a5-2aa6-4d97-a79a-e4f44d3aa3ee/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-04-system-types-and-applications--635013a5-2aa6-4d97-a79a-e4f44d3aa3ee/ui-blocks.json"
+      ]
+    }
+  ],
+  "artifacts": [
+    ".ai/content-audit-export/source-audited-article-batch-043-local-first-ledger.json",
+    ".ai/content-audit-export/source-audited-article-batch-043-local-first-report.md",
+    ".ai/content-audit-export/source-audited-article-batch-043-local-first-scoped-checks.json"
+  ]
+}

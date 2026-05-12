@@ -28,7 +28,7 @@
    - First: Run `NEW_unique_constraints.sql` (adds unique indexes)
    - Second: Run `NEW_query_optimization.sql` (adds partial indexes)
    - Third: Run `NEW_rls_completion.sql` (completes RLS policies)
-   
+
 2. **No external NPM packages required** - all optimization uses PostgreSQL native features.
 
 3. **Testing prerequisite:** Ensure `bun test` passes before migration to validate existing functionality.
@@ -46,12 +46,12 @@
   if (interactedIds.length > 0) {
     unseenQuery = unseenQuery.not('question_id', 'in', `(${interactedIds.join(',')})`)
   }
-  
+
   // AFTER (new logic):
   // Use subquery to avoid passing large array to NOT IN
   // The subquery filters questions never interacted with by this user
   if (userId) {
-    unseenQuery = unseenQuery.not('question_id', 'in', 
+    unseenQuery = unseenQuery.not('question_id', 'in',
       `(SELECT question_id FROM user_interactions WHERE user_id = '${userId}')`)
   }
   ```
@@ -61,7 +61,7 @@
 - **File:** `src/lib/quiz/to-client-question.ts`
 - **Action:** REWRITE `buildTaxonomyBreadcrumbMap` function
 - **Logic Required:**
-  - Create PostgreSQL function `get_taxonomy_breadcrumbs(topic_ids TEXT[])` 
+  - Create PostgreSQL function `get_taxonomy_breadcrumbs(topic_ids TEXT[])`
   - Function uses recursive CTE to fetch all ancestor paths in single query
   - Returns `Map<string, string>` mapping topic_id → breadcrumb string
   - Single database call instead of N sequential queries
@@ -80,9 +80,9 @@
 - **SQL Required:**
   ```sql
   -- Add unique constraint to question_interactions for idempotency
-  CREATE UNIQUE INDEX IF NOT EXISTS idx_question_interactions_unique 
+  CREATE UNIQUE INDEX IF NOT EXISTS idx_question_interactions_unique
   ON question_interactions (user_id, session_id, question_id);
-  
+
   -- Add unique constraint to user_question_states
   CREATE UNIQUE INDEX IF NOT EXISTS idx_user_question_states_unique
   ON user_question_states (user_id, question_id);
@@ -94,15 +94,15 @@
 - **SQL Required:**
   ```sql
   -- Partial index for non-deleted questions
-  CREATE INDEX IF NOT EXISTS idx_questions_active ON questions (question_id) 
+  CREATE INDEX IF NOT EXISTS idx_questions_active ON questions (question_id)
   WHERE deleted_at IS NULL;
-  
+
   -- Partial index for published articles
-  CREATE INDEX IF NOT EXISTS idx_articles_published ON wiki_articles (article_id) 
+  CREATE INDEX IF NOT EXISTS idx_articles_published ON wiki_articles (article_id)
   WHERE status = 'published';
-  
+
   -- Partial index for in-progress sessions
-  CREATE INDEX IF NOT EXISTS idx_sessions_active ON quiz_sessions (session_id) 
+  CREATE INDEX IF NOT EXISTS idx_sessions_active ON quiz_sessions (session_id)
   WHERE status = 'in_progress';
   ```
 
@@ -115,11 +115,11 @@
   const current = await getStats(userId)
   const newScore = current.score + delta
   await updateStats(userId, { score: newScore })
-  
+
   // AFTER (atomic):
-  await supabase.rpc('increment_user_score', { 
-    user_id: userId, 
-    delta: delta 
+  await supabase.rpc('increment_user_score', {
+    user_id: userId,
+    delta: delta
   })
   ```
 - **Required:** Create PostgreSQL function `increment_user_score`
@@ -140,7 +140,7 @@
       correct: isCorrect,
       // ... other fields
     }, { onConflict: 'user_id,session_id,question_id' })
-  
+
   if (error?.code === '23505') {
     // Unique constraint violation - interaction already exists
     // Return existing result, don't create duplicate
@@ -163,10 +163,10 @@
 - **SQL Required:**
   ```sql
   CREATE OR REPLACE VIEW user_capabilities AS
-  SELECT 
+  SELECT
     p.user_id,
     p.email,
-    CASE 
+    CASE
       WHEN us.tier = 'pro' AND us.status = 'active' THEN 'pro'
       WHEN us.tier = 'enterprise' AND us.status = 'active' THEN 'enterprise'
       ELSE 'free'

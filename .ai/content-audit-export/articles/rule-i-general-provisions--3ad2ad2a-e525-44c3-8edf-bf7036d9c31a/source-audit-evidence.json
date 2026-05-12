@@ -1,0 +1,611 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-009",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T18:42:00.579+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "protocols_applied": [
+    "AGENTS.md local-first content-audit workflow",
+    ".ai/AGENTS.md additive operational artifact rules",
+    "ph-arch-construction-law source-grounding",
+    "ph-arch-professional-context LEA exam relevance"
+  ],
+  "target": {
+    "article_id": "3ad2ad2a-e525-44c3-8edf-bf7036d9c31a",
+    "slug": "rule-i-general-provisions",
+    "title": "Rule I General Provisions",
+    "article_folder": ".ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a",
+    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a",
+    "normalized_path": ".ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/normalized.md",
+    "candidate_path": ".ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/candidate.md",
+    "sources_path": ".ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/sources.json",
+    "question_edits_folder": ".ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits",
+    "normalized_sha256": "sha256:1f9e90dbafd85b46e8af64b15a3cb0743ba41c6b36bdcda53a1fe0d9a1807658",
+    "candidate_sha256": "sha256:1f9e90dbafd85b46e8af64b15a3cb0743ba41c6b36bdcda53a1fe0d9a1807658",
+    "linked_questions_sha256": "sha256:28c5626ef856615edfb8a9c8ee43f6ec39c072212ae416750c8adf129c37091c",
+    "sources_sha256": "sha256:8711fdb38d772858c63c860e37343f7f60ba302ef3a26f8242bc1277d489de47"
+  },
+  "classification": {
+    "content_type": "pd1096_general_provisions_article",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 30,
+    "question_edits_created": [
+      "bb02603a-d17b-43db-806f-51dd28233602",
+      "c9874e0d-3fd2-41a5-b93a-6846af94904b",
+      "09105dcb-65cc-4b6a-ac03-086f28052994",
+      "fc2aa1ef-f2d8-44bc-9df4-84e1bb6aacd7",
+      "d1bac795-7a2e-4d0c-8ccd-b30bf7e8661a",
+      "6837c822-9d22-4fb8-8c51-489cb783597f",
+      "957083f0-99d3-4f45-aee3-4cb664edaf6c",
+      "e384f1f4-a728-49c6-b1be-9e29da9d747f",
+      "2318d9e8-9ace-4600-af59-84885dd312dc",
+      "4971c6c9-763d-4365-970c-1e103a48ec42",
+      "f3f1adf9-1898-4a57-97b0-f20ea4b7ad4f",
+      "1575b69d-0939-47ca-8a16-8f26a996c0e8",
+      "f24ab40f-c8f6-4033-b554-580e446a1622",
+      "2e0e27ed-7071-401e-94f1-cd6872ef8fb9",
+      "aaadc687-d7e2-4421-be01-56fbdbad1cb2",
+      "85b4644e-b89b-45e8-932e-968298a1203d",
+      "c5eaca60-aeca-4ed2-879d-11efc8951d3c",
+      "ae045358-0675-4129-ad58-4e70e22c05f3",
+      "5c1d3e74-2370-4e4f-a8c9-5908368082af",
+      "c37560cc-b423-4f89-a589-0fd9feb699a9",
+      "aed42c7b-ee02-47c7-9c27-4a4c2832ecae",
+      "b1579a42-ec15-41f4-ba3a-991174424788",
+      "f91f3d92-dc16-4f2e-9e30-cff0ebf73aa7",
+      "20ee162d-8918-4c63-9848-f4db16c2faba",
+      "185cdf12-e8cb-402e-8fad-7ad7aee2ec15",
+      "c3cdff3c-61ec-43dd-94a0-722e93ff9a44",
+      "14d547aa-c86e-4e68-8a42-6ab93a4c5de1",
+      "035e16b7-0f2f-42f5-b920-f880b8e4e79c",
+      "fcb68a72-47a5-4f6e-a3bf-aa40c28688cb",
+      "9d282d92-100e-44f3-9ea5-e9817d53efb6"
+    ]
+  },
+  "raw_sources": [
+    {
+      "key": "pd1096_2004_revised_irr",
+      "label": "PD 1096 2004 Revised IRR, DPWH Official Publication",
+      "source_type": "implementing_rules",
+      "source_id": "batch009-rule-i-general-provisions-source-01",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "extraction_method": "Local raw markdown conversion checked against verified raw PDF file hash",
+      "source_locator": "Rule I Sections 101-106",
+      "markdown_lines_checked": [
+        "69-112"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "B009-rule-i-general-provisions-ARTICLE-01",
+      "claim_text": "Rule I General Provisions: Section 101 title was checked against the local raw PD 1096 source and used to repair the article candidate.",
+      "claim_class": "article_source_repair",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "Rule I Sections 101-106",
+        "markdown_lines_checked": [
+          "69-112"
+        ]
+      }
+    },
+    {
+      "claim_id": "B009-rule-i-general-provisions-ARTICLE-02",
+      "claim_text": "Rule I General Provisions: Section 102 declaration of policy was checked against the local raw PD 1096 source and used to repair the article candidate.",
+      "claim_class": "article_source_repair",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "Rule I Sections 101-106",
+        "markdown_lines_checked": [
+          "69-112"
+        ]
+      }
+    },
+    {
+      "claim_id": "B009-rule-i-general-provisions-ARTICLE-03",
+      "claim_text": "Rule I General Provisions: Section 103 scope and application was checked against the local raw PD 1096 source and used to repair the article candidate.",
+      "claim_class": "article_source_repair",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "Rule I Sections 101-106",
+        "markdown_lines_checked": [
+          "69-112"
+        ]
+      }
+    },
+    {
+      "claim_id": "B009-rule-i-general-provisions-ARTICLE-04",
+      "claim_text": "Rule I General Provisions: Section 104 general building requirements was checked against the local raw PD 1096 source and used to repair the article candidate.",
+      "claim_class": "article_source_repair",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "Rule I Sections 101-106",
+        "markdown_lines_checked": [
+          "69-112"
+        ]
+      }
+    },
+    {
+      "claim_id": "B009-rule-i-general-provisions-ARTICLE-05",
+      "claim_text": "Rule I General Provisions: Section 105 site requirements was checked against the local raw PD 1096 source and used to repair the article candidate.",
+      "claim_class": "article_source_repair",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "Rule I Sections 101-106",
+        "markdown_lines_checked": [
+          "69-112"
+        ]
+      }
+    },
+    {
+      "claim_id": "B009-rule-i-general-provisions-ARTICLE-06",
+      "claim_text": "Rule I General Provisions: Section 106 definitions was checked against the local raw PD 1096 source and used to repair the article candidate.",
+      "claim_class": "article_source_repair",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "Rule I Sections 101-106",
+        "markdown_lines_checked": [
+          "69-112"
+        ]
+      }
+    },
+    {
+      "claim_id": "B009-rule-i-general-provisions-QUESTION-001",
+      "claim_text": "Question bb02603a-d17b-43db-806f-51dd28233602 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits for the repaired Rule I General Provisions article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "parent_article_locator": "Rule I Sections 101-106",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B009-rule-i-general-provisions-QUESTION-002",
+      "claim_text": "Question c9874e0d-3fd2-41a5-b93a-6846af94904b has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits for the repaired Rule I General Provisions article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "parent_article_locator": "Rule I Sections 101-106",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B009-rule-i-general-provisions-QUESTION-003",
+      "claim_text": "Question 09105dcb-65cc-4b6a-ac03-086f28052994 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits for the repaired Rule I General Provisions article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "parent_article_locator": "Rule I Sections 101-106",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B009-rule-i-general-provisions-QUESTION-004",
+      "claim_text": "Question fc2aa1ef-f2d8-44bc-9df4-84e1bb6aacd7 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits for the repaired Rule I General Provisions article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "parent_article_locator": "Rule I Sections 101-106",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B009-rule-i-general-provisions-QUESTION-005",
+      "claim_text": "Question d1bac795-7a2e-4d0c-8ccd-b30bf7e8661a has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits for the repaired Rule I General Provisions article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "parent_article_locator": "Rule I Sections 101-106",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B009-rule-i-general-provisions-QUESTION-006",
+      "claim_text": "Question 6837c822-9d22-4fb8-8c51-489cb783597f has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits for the repaired Rule I General Provisions article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "parent_article_locator": "Rule I Sections 101-106",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B009-rule-i-general-provisions-QUESTION-007",
+      "claim_text": "Question 957083f0-99d3-4f45-aee3-4cb664edaf6c has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits for the repaired Rule I General Provisions article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "parent_article_locator": "Rule I Sections 101-106",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B009-rule-i-general-provisions-QUESTION-008",
+      "claim_text": "Question e384f1f4-a728-49c6-b1be-9e29da9d747f has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits for the repaired Rule I General Provisions article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "parent_article_locator": "Rule I Sections 101-106",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B009-rule-i-general-provisions-QUESTION-009",
+      "claim_text": "Question 2318d9e8-9ace-4600-af59-84885dd312dc has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits for the repaired Rule I General Provisions article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "parent_article_locator": "Rule I Sections 101-106",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B009-rule-i-general-provisions-QUESTION-010",
+      "claim_text": "Question 4971c6c9-763d-4365-970c-1e103a48ec42 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits for the repaired Rule I General Provisions article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "parent_article_locator": "Rule I Sections 101-106",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B009-rule-i-general-provisions-QUESTION-011",
+      "claim_text": "Question f3f1adf9-1898-4a57-97b0-f20ea4b7ad4f has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits for the repaired Rule I General Provisions article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "parent_article_locator": "Rule I Sections 101-106",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B009-rule-i-general-provisions-QUESTION-012",
+      "claim_text": "Question 1575b69d-0939-47ca-8a16-8f26a996c0e8 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits for the repaired Rule I General Provisions article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "parent_article_locator": "Rule I Sections 101-106",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B009-rule-i-general-provisions-QUESTION-013",
+      "claim_text": "Question f24ab40f-c8f6-4033-b554-580e446a1622 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits for the repaired Rule I General Provisions article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "parent_article_locator": "Rule I Sections 101-106",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B009-rule-i-general-provisions-QUESTION-014",
+      "claim_text": "Question 2e0e27ed-7071-401e-94f1-cd6872ef8fb9 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits for the repaired Rule I General Provisions article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "parent_article_locator": "Rule I Sections 101-106",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B009-rule-i-general-provisions-QUESTION-015",
+      "claim_text": "Question aaadc687-d7e2-4421-be01-56fbdbad1cb2 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits for the repaired Rule I General Provisions article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "parent_article_locator": "Rule I Sections 101-106",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B009-rule-i-general-provisions-QUESTION-016",
+      "claim_text": "Question 85b4644e-b89b-45e8-932e-968298a1203d has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits for the repaired Rule I General Provisions article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "parent_article_locator": "Rule I Sections 101-106",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B009-rule-i-general-provisions-QUESTION-017",
+      "claim_text": "Question c5eaca60-aeca-4ed2-879d-11efc8951d3c has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits for the repaired Rule I General Provisions article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "parent_article_locator": "Rule I Sections 101-106",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B009-rule-i-general-provisions-QUESTION-018",
+      "claim_text": "Question ae045358-0675-4129-ad58-4e70e22c05f3 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits for the repaired Rule I General Provisions article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "parent_article_locator": "Rule I Sections 101-106",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B009-rule-i-general-provisions-QUESTION-019",
+      "claim_text": "Question 5c1d3e74-2370-4e4f-a8c9-5908368082af has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits for the repaired Rule I General Provisions article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "parent_article_locator": "Rule I Sections 101-106",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B009-rule-i-general-provisions-QUESTION-020",
+      "claim_text": "Question c37560cc-b423-4f89-a589-0fd9feb699a9 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits for the repaired Rule I General Provisions article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "parent_article_locator": "Rule I Sections 101-106",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B009-rule-i-general-provisions-QUESTION-021",
+      "claim_text": "Question aed42c7b-ee02-47c7-9c27-4a4c2832ecae has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits for the repaired Rule I General Provisions article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "parent_article_locator": "Rule I Sections 101-106",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B009-rule-i-general-provisions-QUESTION-022",
+      "claim_text": "Question b1579a42-ec15-41f4-ba3a-991174424788 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits for the repaired Rule I General Provisions article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "parent_article_locator": "Rule I Sections 101-106",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B009-rule-i-general-provisions-QUESTION-023",
+      "claim_text": "Question f91f3d92-dc16-4f2e-9e30-cff0ebf73aa7 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits for the repaired Rule I General Provisions article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "parent_article_locator": "Rule I Sections 101-106",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B009-rule-i-general-provisions-QUESTION-024",
+      "claim_text": "Question 20ee162d-8918-4c63-9848-f4db16c2faba has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits for the repaired Rule I General Provisions article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "parent_article_locator": "Rule I Sections 101-106",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B009-rule-i-general-provisions-QUESTION-025",
+      "claim_text": "Question 185cdf12-e8cb-402e-8fad-7ad7aee2ec15 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits for the repaired Rule I General Provisions article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "parent_article_locator": "Rule I Sections 101-106",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B009-rule-i-general-provisions-QUESTION-026",
+      "claim_text": "Question c3cdff3c-61ec-43dd-94a0-722e93ff9a44 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits for the repaired Rule I General Provisions article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "parent_article_locator": "Rule I Sections 101-106",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B009-rule-i-general-provisions-QUESTION-027",
+      "claim_text": "Question 14d547aa-c86e-4e68-8a42-6ab93a4c5de1 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits for the repaired Rule I General Provisions article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "parent_article_locator": "Rule I Sections 101-106",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B009-rule-i-general-provisions-QUESTION-028",
+      "claim_text": "Question 035e16b7-0f2f-42f5-b920-f880b8e4e79c has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits for the repaired Rule I General Provisions article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "parent_article_locator": "Rule I Sections 101-106",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B009-rule-i-general-provisions-QUESTION-029",
+      "claim_text": "Question fcb68a72-47a5-4f6e-a3bf-aa40c28688cb has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits for the repaired Rule I General Provisions article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "parent_article_locator": "Rule I Sections 101-106",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B009-rule-i-general-provisions-QUESTION-030",
+      "claim_text": "Question 9d282d92-100e-44f3-9ea5-e9817d53efb6 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits for the repaired Rule I General Provisions article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "parent_article_locator": "Rule I Sections 101-106",
+        "answer_key_fields_changed": false
+      }
+    }
+  ],
+  "unsupported_or_removed_claims": [
+    {
+      "removal_id": "B009-rule-i-general-provisions-REMOVED-01",
+      "description": "UI placeholders and extracted-summary notes",
+      "disposition": "removed_or_rewritten_in_normalized_and_candidate"
+    },
+    {
+      "removal_id": "B009-rule-i-general-provisions-REMOVED-02",
+      "description": "unsupported claims treating Rule I as a source for later-rule dimensions",
+      "disposition": "removed_or_rewritten_in_normalized_and_candidate"
+    },
+    {
+      "removal_id": "B009-rule-i-general-provisions-REMOVED-03",
+      "description": "claims not tied to Sections 101-106",
+      "disposition": "removed_or_rewritten_in_normalized_and_candidate"
+    }
+  ],
+  "gate_results": {
+    "raw_pdf_sha256_verified": true,
+    "compose": {
+      "status": "PASS",
+      "blockers": 0,
+      "candidate_hash": "sha256:1f9e90dbafd85b46e8af64b15a3cb0743ba41c6b36bdcda53a1fe0d9a1807658"
+    },
+    "diff": {
+      "status": "PASS",
+      "changed": true,
+      "safe_to_push": true,
+      "blockers": 0,
+      "warnings": 1
+    },
+    "validate": {
+      "status": "PASS",
+      "blockers": 0,
+      "warnings": 0
+    },
+    "supabase": "not_attempted_by_request",
+    "deploy": "not_attempted_by_request",
+    "commit": "not_attempted_by_request"
+  },
+  "remaining_blockers": [],
+  "overall": {
+    "source_audit_status": "PASS",
+    "local_first_status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+    "safe_for_supabase_upload": true,
+    "publishing_note": "Final publishing still requires Supabase dry-run stale checks and human/editor review before any apply."
+  }
+}

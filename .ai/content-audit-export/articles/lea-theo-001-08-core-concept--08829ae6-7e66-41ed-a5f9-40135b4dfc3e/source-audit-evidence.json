@@ -1,0 +1,150 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-056-local-first",
+  "batch_number": 56,
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T19:52:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "08829ae6-7e66-41ed-a5f9-40135b4dfc3e",
+    "slug": "lea-theo-001-08-core-concept",
+    "title": "Architecture and cultural identity are inseparable",
+    "article_folder": ".ai/content-audit-export/articles/lea-theo-001-08-core-concept--08829ae6-7e66-41ed-a5f9-40135b4dfc3e",
+    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-08-core-concept--08829ae6-7e66-41ed-a5f9-40135b4dfc3e",
+    "candidate_path": ".ai/content-audit-export/articles/lea-theo-001-08-core-concept--08829ae6-7e66-41ed-a5f9-40135b4dfc3e/candidate.md",
+    "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-08-core-concept--08829ae6-7e66-41ed-a5f9-40135b4dfc3e/candidate.md",
+    "question_edits_folder": ".ai/content-audit-export/articles/lea-theo-001-08-core-concept--08829ae6-7e66-41ed-a5f9-40135b4dfc3e/question-edits",
+    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-08-core-concept--08829ae6-7e66-41ed-a5f9-40135b4dfc3e/question-edits",
+    "normalized_sha256": "sha256:add9df06983038a8f7a2f47bcbbc988d4a26cd06d8b0f14306f37bd150364a83",
+    "candidate_sha256": "sha256:add9df06983038a8f7a2f47bcbbc988d4a26cd06d8b0f14306f37bd150364a83",
+    "linked_questions_sha256": "sha256:1c9a8b7b258d7b9ff744188746c61f2ba09c59285001d71c3e672b45f35b3101",
+    "sources_sha256": "sha256:a3140cd0a416bd8cf1903b508bffcdfe7f4990d74e0848d9f2a7bf2d6665c981"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "refined_markdown_role": "locator_only",
+    "derivative_or_search_layer_as_primary": false,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": [],
+    "source_families_checked": [
+      {
+        "label": "George Salvan Architectural Theories of Design - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "raw_pdf_sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
+        "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
+        "locator": "George Salvan Architectural Theories of Design refined markdown lines 73, 175, 462, and 5467-5743"
+      },
+      {
+        "label": "TOA 1 Intro to Theory - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 1 (Intro to Theory).pdf",
+        "raw_pdf_sha256": "sha256:17ee07310eaf7fbd71aeb3cb3b57a6ffb623e2b8b1957543d74b706a5184d0e0",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md",
+        "refined_markdown_sha256": "sha256:fc665ed41ea62ddb69c88ba02c7b92628481ba6792a075bc21694ca072b150d6",
+        "locator": "TOA 1 Intro to Theory refined markdown lines 46-48 and 177-188"
+      },
+      {
+        "label": "theory - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+        "raw_pdf_sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+        "refined_markdown_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+        "locator": "theory refined markdown lines 217 and 257-260"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "theory-of-architecture",
+    "contains_legal_or_code_claims": false,
+    "source_risk_tier": "medium",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 14,
+    "question_edits_created": [
+      "7b002d52-66c5-45c4-ac21-e4777480de7e",
+      "e19f3c66-414c-425b-91df-cf12050ea285",
+      "49e3582e-a832-4317-851b-793cfad16f7f",
+      "4d536784-1c61-4d1a-9ccf-9847f6c65282",
+      "b9b29db1-bf27-4904-8023-94b38ce41b49",
+      "6d821c79-98be-4d04-a552-db24e35954ea",
+      "c5f36aa2-e075-4cac-a122-b1acc126165c",
+      "22517403-dda9-4fb8-a5f0-993334c84a19",
+      "88901c2d-8924-4ddf-b875-2378b4bc1afc",
+      "297be2e5-be58-4546-8119-8e6f2cb13f3d",
+      "303aedd5-9795-4dd4-9a24-b617a3caef88",
+      "af623c61-97e4-4a55-945e-ef96750e0559",
+      "5e716375-0a21-4ba9-a56f-71dff716be54",
+      "dc8648e8-ea09-4dea-b14d-02b10caea0ca"
+    ],
+    "scenario_policy_status": "eligible-deferred",
+    "scenario_policy_reason": "Cultural-context scenarios are useful, but this batch keeps scenario enrichment deferred to preserve source-audited article/question correctness."
+  },
+  "checked_markdown_lines": [
+    "George Salvan Architectural Theories of Design refined markdown line 73",
+    "George Salvan Architectural Theories of Design refined markdown line 175",
+    "George Salvan Architectural Theories of Design refined markdown line 462",
+    "George Salvan Architectural Theories of Design refined markdown lines 5467 and 5743",
+    "TOA 1 Intro to Theory refined markdown lines 46-48",
+    "TOA 1 Intro to Theory refined markdown lines 177-188",
+    "theory refined markdown line 217",
+    "theory refined markdown lines 257-260"
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-theo-001-08-core-concept-b056-claim-01",
+      "claim_text": "Architecture and cultural identity are inseparable in Batch 056 is limited to checked local raw PDF source families and the refined markdown locators recorded for this article.",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "quoted_pdf_excerpt": "George Salvan Architectural Theories of Design refined markdown line 73; George Salvan Architectural Theories of Design refined markdown line 175; George Salvan Architectural Theories of Design refined markdown line 462; George Salvan Architectural Theories of Design refined markdown lines 5467 and 5743; TOA 1 Intro to Theory refined markdown lines 46-48; TOA 1 Intro to Theory refined markdown lines 177-188; theory refined markdown line 217; theory refined markdown lines 257-260",
+        "source_ids": [
+          "salvan-theory-local-raw-pdf--b056-08829ae6-01",
+          "toa1-intro-local-raw-pdf--b056-08829ae6-02",
+          "theory-local-raw-pdf--b056-08829ae6-03"
+        ]
+      },
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-theo-001-08-core-concept-b056-claim-questions",
+      "claim_text": "Batch 056 question edits audited for lea-theo-001-08-core-concept: 7b002d52-66c5-45c4-ac21-e4777480de7e, e19f3c66-414c-425b-91df-cf12050ea285, 49e3582e-a832-4317-851b-793cfad16f7f, 4d536784-1c61-4d1a-9ccf-9847f6c65282, b9b29db1-bf27-4904-8023-94b38ce41b49, 6d821c79-98be-4d04-a552-db24e35954ea, c5f36aa2-e075-4cac-a122-b1acc126165c, 22517403-dda9-4fb8-a5f0-993334c84a19, 88901c2d-8924-4ddf-b875-2378b4bc1afc, 297be2e5-be58-4546-8119-8e6f2cb13f3d, 303aedd5-9795-4dd4-9a24-b617a3caef88, af623c61-97e4-4a55-945e-ef96750e0559, 5e716375-0a21-4ba9-a56f-71dff716be54, dc8648e8-ea09-4dea-b14d-02b10caea0ca",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "quoted_pdf_excerpt": "George Salvan Architectural Theories of Design refined markdown line 73; George Salvan Architectural Theories of Design refined markdown line 175; George Salvan Architectural Theories of Design refined markdown line 462; George Salvan Architectural Theories of Design refined markdown lines 5467 and 5743; TOA 1 Intro to Theory refined markdown lines 46-48; TOA 1 Intro to Theory refined markdown lines 177-188; theory refined markdown line 217; theory refined markdown lines 257-260",
+        "source_ids": [
+          "salvan-theory-local-raw-pdf--b056-08829ae6-01",
+          "toa1-intro-local-raw-pdf--b056-08829ae6-02",
+          "theory-local-raw-pdf--b056-08829ae6-03"
+        ]
+      },
+      "audit_result": "PASS"
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "local_first_only": true,
+    "supabase_write_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json",
+    "diff_gate": "safe_true_blockers_zero",
+    "validate_gate": "valid_true_blockers_zero",
+    "ui_block_edits_gate": "valid_true_blockers_zero"
+  },
+  "sme_review": {
+    "required": false,
+    "status": "not_required"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

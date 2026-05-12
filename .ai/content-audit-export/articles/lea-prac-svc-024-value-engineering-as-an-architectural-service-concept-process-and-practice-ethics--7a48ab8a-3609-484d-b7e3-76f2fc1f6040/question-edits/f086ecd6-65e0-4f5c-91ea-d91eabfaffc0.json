@@ -1,0 +1,65 @@
+{
+  "question_id": "f086ecd6-65e0-4f5c-91ea-d91eabfaffc0",
+  "baseline_hash": "sha256:865660eee6c4f911873bf2cf915d7c68f7d7ad0aeeac4664c6a4a2dd7c7ffb8e",
+  "action": "replace",
+  "reason": "source-audited-article-batch-036-local-first: source-safe replacement grounded in local raw PDF/source family evidence; removes unsupported, stale, or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-036",
+  "approved_at": "2026-05-11T12:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-036-local-first",
+    "checked_sources": [
+      {
+        "source_id": "construction-project-management-handbook-shadan-fleming-local",
+        "label": "Construction Project Management Handbook by Shadan and Fleming",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/004-Technology/Construction Project Management Handbook by Shadan _ Fleming.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Construction Project Management Handbook by Shadan _ Fleming.md",
+        "checked_markdown_lines": [
+          "Construction Project Management Handbook refined markdown lines 253-257",
+          "Construction Project Management Handbook refined markdown lines 287-301",
+          "Construction Project Management Handbook refined markdown lines 387-429",
+          "Construction Project Management Handbook refined markdown lines 1544-1577",
+          "Construction Project Management Handbook refined markdown lines 1614-1664",
+          "Construction Project Management Handbook refined markdown lines 1680-1722",
+          "Construction Project Management Handbook refined markdown lines 1808-1819"
+        ]
+      },
+      {
+        "source_id": "uap-document-401-402-local",
+        "label": "UAP Document 401-402 - Architect-Owner Agreement",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
+        "checked_markdown_lines": [
+          "UAP Document 401-402 refined markdown lines 45-72",
+          "UAP Document 401-402 refined markdown lines 77-89",
+          "UAP Document 401-402 refined markdown lines 105-119"
+        ]
+      }
+    ],
+    "citation": "Construction Project Management Handbook"
+  },
+  "proposed": {
+    "text": "How are VE decisions tied to preliminary engineering review?",
+    "options": [
+      {
+        "id": "b036-7a48-08-a",
+        "text": "Preliminary engineering should resolve major design concepts and VE recommendations before final design proceeds"
+      },
+      {
+        "id": "b036-7a48-08-b",
+        "text": "VE decisions are never resolved before bidding"
+      },
+      {
+        "id": "b036-7a48-08-c",
+        "text": "VE recommendations replace the scope document"
+      },
+      {
+        "id": "b036-7a48-08-d",
+        "text": "VE is unrelated to design reviews"
+      }
+    ],
+    "correct_option_id": "b036-7a48-08-a",
+    "rationale": "Correct answer: Preliminary engineering should resolve major design concepts and VE recommendations before final design proceeds. This is directly supported by Construction Project Management Handbook.",
+    "explanation": "The source-audited correction uses only the local raw PDF family and locator-checked refined markdown for Construction Project Management Handbook.",
+    "code_citation": "Construction Project Management Handbook"
+  }
+}

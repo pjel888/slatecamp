@@ -28,11 +28,11 @@ migrate: (persistedState: any, version: number) => {
 - **Implementation**:
 ```sql
 BEGIN;
-  UPDATE quiz_sessions 
+  UPDATE quiz_sessions
   SET config = jsonb_set(config, '{mode}', '"focused"')
   WHERE config->>'mode' = 'focus-review';
 
-  UPDATE quiz_sessions 
+  UPDATE quiz_sessions
   SET config = jsonb_set(config, '{mode}', '"article_review"')
   WHERE config->>'mode' = 'article-review';
 COMMIT;

@@ -1,0 +1,51 @@
+{
+  "question_id": "c08aaf25-9d88-4677-acae-0c233a2e0c8f",
+  "baseline_hash": "sha256:b81a965ba0745c1c578a8ef3b9b82447d66518a47c8773ed062e50c83a5acb3c",
+  "action": "replace",
+  "reason": "source-audited-article-batch-040-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-040",
+  "approved_at": "2026-05-11T14:04:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-040-local-first",
+    "checked_sources": [
+      {
+        "source_id": "bp-344-2024-rirr-ncda-local",
+        "label": "BP 344 2024 Revised IRR - NCDA",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "checked_markdown_lines": [
+          "BP 344 2024 IRR refined markdown lines 36-70",
+          "BP 344 2024 IRR refined markdown lines 198-224",
+          "BP 344 2024 IRR refined markdown lines 228-305",
+          "BP 344 2024 IRR refined markdown lines 770-850"
+        ]
+      }
+    ],
+    "citation": "BP 344 2024 Revised IRR, Accessible Parking"
+  },
+  "proposed": {
+    "text": "What minimum clear walkway width must be provided between the front ends of parked cars for accessible parking?",
+    "options": [
+      {
+        "id": "b040-a7cb-16-a",
+        "text": "1200 mm"
+      },
+      {
+        "id": "b040-a7cb-16-b",
+        "text": "900 mm"
+      },
+      {
+        "id": "b040-a7cb-16-c",
+        "text": "1500 mm"
+      },
+      {
+        "id": "b040-a7cb-16-d",
+        "text": "1800 mm"
+      }
+    ],
+    "correct_option_id": "b040-a7cb-16-a",
+    "rationale": "Correct answer: 1200 mm. This is directly supported by BP 344 2024 Revised IRR, Accessible Parking.",
+    "explanation": "The Batch 040 source-audited correction uses only local raw PDF families and locator-checked refined markdown for BP 344 2024 Revised IRR, Accessible Parking.",
+    "code_citation": "BP 344 2024 Revised IRR, Accessible Parking"
+  }
+}

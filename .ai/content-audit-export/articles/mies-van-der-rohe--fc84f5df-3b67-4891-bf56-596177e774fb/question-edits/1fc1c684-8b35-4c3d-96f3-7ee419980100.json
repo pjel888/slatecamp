@@ -1,0 +1,102 @@
+{
+  "question_id": "1fc1c684-8b35-4c3d-96f3-7ee419980100",
+  "baseline_hash": "sha256:fd4de4308ae829ab668704287de0744f2f31079ef97d0acdddede80ffa7be100",
+  "action": "replace",
+  "reason": "source-audited-article-batch-052-local-first: local raw PDF backed replacement constrained to checked Batch 052 source families.",
+  "approved_by": "codex-local-first-batch-052",
+  "approved_at": "2026-05-11T18:46:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "fc84f5df-3b67-4891-bf56-596177e774fb",
+    "parent_article_slug": "mies-van-der-rohe",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "HOA Module 2 P3 refined markdown lines 252-274, 278-313, 315-338, 340-457, and 477-488; 20th Century Architects 2 refined markdown lines 1-66 and 70-104; Modern Architectures in History USA refined markdown lines 763-769, 1433-1441, 1546-1548, 1751-1763, 1803-1805, 1828-1834, 1902-1906, and 1950-1956; TOA 5 Masters of Architecture refined markdown lines 256-262, 608-612, 648-652, 707-711, and 742-789",
+    "checked_markdown_lines": [
+      "HOA Module 2 P3 refined markdown lines 252-274",
+      "HOA Module 2 P3 refined markdown lines 278-313",
+      "HOA Module 2 P3 refined markdown lines 315-338",
+      "HOA Module 2 P3 refined markdown lines 340-457",
+      "HOA Module 2 P3 refined markdown lines 477-488",
+      "20th Century Architects 2 refined markdown lines 1-66",
+      "20th Century Architects 2 refined markdown lines 70-104",
+      "Modern Architectures in History USA refined markdown lines 763-769",
+      "Modern Architectures in History USA refined markdown lines 1433-1441",
+      "Modern Architectures in History USA refined markdown lines 1546-1548",
+      "Modern Architectures in History USA refined markdown lines 1751-1763",
+      "Modern Architectures in History USA refined markdown lines 1803-1805",
+      "Modern Architectures in History USA refined markdown lines 1828-1834",
+      "Modern Architectures in History USA refined markdown lines 1902-1906",
+      "Modern Architectures in History USA refined markdown lines 1950-1956",
+      "TOA 5 Masters of Architecture refined markdown lines 256-262",
+      "TOA 5 Masters of Architecture refined markdown lines 608-612",
+      "TOA 5 Masters of Architecture refined markdown lines 648-652",
+      "TOA 5 Masters of Architecture refined markdown lines 707-711",
+      "TOA 5 Masters of Architecture refined markdown lines 742-789"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "hoa2p3-local-raw-pdf--b052-fc84f5df-01",
+        "label": "HOA Module 2 P3 - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/HOA MODULE 2 P3.pdf",
+        "sha256": "sha256:b62daa7737b464ab7dc573d64f0f8701998462f8ac0fe933d96e8ecfe8040ba2",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/HOA MODULE 2 P3.md",
+        "refined_markdown_sha256": "sha256:d53cf6de56725d4b046a9f6b72665039b32d0bd932abc4d158ec0b2ba4b290e8",
+        "locator": "HOA Module 2 P3 refined markdown lines 252-274, 278-313, 315-338, 340-457, and 477-488"
+      },
+      {
+        "source_id": "twentieth2-local-raw-pdf--b052-fc84f5df-02",
+        "label": "20th Century Architects 2 - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/20th Century Architects 2.pdf",
+        "sha256": "sha256:04d2fb9222f474da725504c3a3f776798bb85e5757d95a1571ed10ada8a23ce5",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/20th Century Architects 2.md",
+        "refined_markdown_sha256": "sha256:10cac18548220ee6ef65bc4b693e58152f1aa1cad78e6fddeb30924f0cc54912",
+        "locator": "20th Century Architects 2 refined markdown lines 1-66 and 70-104"
+      },
+      {
+        "source_id": "modernusa-local-raw-pdf--b052-fc84f5df-03",
+        "label": "Modern Architectures in History USA - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Modern Architectures in History (USA) - Gwendolyn Wright.pdf",
+        "sha256": "sha256:2910fe1d48df8a3822e69d8dcbe830b8bd5948af1da991028f0dc6d062cd578d",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Modern Architectures in History (USA) - Gwendolyn Wright.md",
+        "refined_markdown_sha256": "sha256:97479009e43ab4d8b3c2df4ef9285ce36947f8b7a66370527a470994d0fbd70d",
+        "locator": "Modern Architectures in History USA refined markdown lines 763-769, 1433-1441, 1546-1548, 1751-1763, 1803-1805, 1828-1834, 1902-1906, and 1950-1956"
+      },
+      {
+        "source_id": "toa5-local-raw-pdf--b052-fc84f5df-04",
+        "label": "TOA 5 Masters of Architecture - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 5 (Masters of Architecture).pdf",
+        "sha256": "sha256:a157cf70f7d2017ffe960858e3565de6f1280f49c1237139e51f7cf0ecf8008b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 5 (Masters of Architecture).md",
+        "refined_markdown_sha256": "sha256:06c5f34a17ef793bddfb801de237e2eb3a09f371b92d41b7205679a20b381423",
+        "locator": "TOA 5 Masters of Architecture refined markdown lines 256-262, 608-612, 648-652, 707-711, and 742-789"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 052 checked local raw PDF source scope."
+  },
+  "proposed": {
+    "text": "Which phrase is the checked board anchor for Mies van der Rohe?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Less is more."
+      },
+      {
+        "id": "b",
+        "text": "Less is a bore."
+      },
+      {
+        "id": "c",
+        "text": "The duck versus decorated shed."
+      },
+      {
+        "id": "d",
+        "text": "Architecture without architects."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Less is more. This answer is supported by the checked Batch 052 local raw PDF source families for Mies van der Rohe.",
+    "explanation": "Less is more. The Batch 052 source audit used local raw PDFs first and refined markdown only as locator evidence for Mies van der Rohe.",
+    "code_citation": "HOA Module 2 P3 refined markdown lines 252-274, 278-313, 315-338, 340-457, and 477-488; 20th Century Architects 2 refined markdown lines 1-66 and 70-104; Modern Architectures in History USA refined markdown lines 763-769, 1433-1441, 1546-1548, 1751-1763, 1803-1805, 1828-1834, 1902-1906, and 1950-1956; TOA 5 Masters of Architecture refined markdown lines 256-262, 608-612, 648-652, 707-711, and 742-789"
+  },
+  "batch_question_template_index": 0
+}

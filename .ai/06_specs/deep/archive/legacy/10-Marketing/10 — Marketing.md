@@ -59,21 +59,21 @@ All copy follows a strict three-layer hierarchy. Every piece of communication �
 **Layer 1 — The Promise (Emotional)**
 
 > Eliminate exam-day panic. Know you'll win before you sit down.
-> 
+>
 
 This is the hook. It speaks to the anxiety that keeps reviewees awake at 2 AM. It does not describe *how* we deliver the outcome. It states the outcome.
 
 **Layer 2 — The Mechanism (Logical)**
 
 > SlateCamp maps the entire Licensure Exam syllabus, measures your mastery of every topic, and shows you — in real time — exactly where your blind spots are. You study what matters. You skip what you have already mastered.
-> 
+>
 
 This is the bridge. It answers "How?" with enough specificity to be credible, without drowning in technical details.
 
 **Layer 3 — The Proof (Evidential)**
 
 > Your Readiness Score is calculated using Exponential Moving Average weighting and Item Response Theory. It reflects who you are today, not who you were three months ago. The Taxonomy Heatmap shows green for mastered, red for critical, and grey for unexplored — across every node in the syllabus.
-> 
+>
 
 This is the close. It converts skeptics by showing the rigor behind the claim.
 
@@ -90,19 +90,19 @@ This is the close. It converts skeptics by showing the rigor behind the claim.
 **Message to this segment:**
 
 > You have spent thousands on review centers and hundreds of hours re-reading the same notes. You still cannot answer the only question that matters: *Am I going to pass?*
-> 
+>
 
-> 
-> 
+>
+>
 
 > SlateCamp answers that question with data. Your Readiness Score calculates your probability of passing based on every answer you have given, weighted by difficulty and recency. Your Taxonomy Heatmap shows you — visually, in seconds — every topic you have mastered and every blind spot that will cost you points.
-> 
+>
 
-> 
-> 
+>
+>
 
 > Stop guessing. Start knowing.
-> 
+>
 
 **Channel priority:** TikTok/Reels, Instagram, Discord, campus ambassadors
 
@@ -115,19 +115,19 @@ This is the close. It converts skeptics by showing the rigor behind the claim.
 **Message to this segment:**
 
 > Your professor drew a setback calculation on a whiteboard. You copied it down. You still do not understand it.
-> 
+>
 
-> 
-> 
+>
+>
 
 > SlateCamp lets you build that setback in 3D. Drag a slider and watch the building respond. Exceed the legal limit and the model turns red, citing the exact code you violated. You are not memorizing a formula. You are learning the law by breaking it.
-> 
+>
 
-> 
-> 
+>
+>
 
 > The students who start now do not panic during review season.
-> 
+>
 
 **Channel priority:** Campus ambassadors, SEO content, university partnerships
 
@@ -140,13 +140,13 @@ This is the close. It converts skeptics by showing the rigor behind the claim.
 **Message to this segment:**
 
 > Your passing rate is your reputation. Right now, you find out which students are failing *after* they have already failed.
-> 
+>
 
-> 
-> 
+>
+>
 
 > SlateCamp gives you a cohort-level Taxonomy Heatmap — six months before the exam. See which subjects are bleeding red across your entire batch. Intervene with targeted remediation while there is still time. Protect your passing rate. Protect your enrollment.
-> 
+>
 
 **Channel priority:** Direct outreach, conference presentations, university admin referrals
 
@@ -251,19 +251,19 @@ Free users receive enough value to experience the transformation — but not eno
 ### Conversion Copy (Paywall Screen)
 
 > **You have answered 20 questions today.**
-> 
+>
 
 > Your Readiness Score is 58%. You have 12 topics in the critical zone.
-> 
+>
 
 > Upgrade to Camp to keep studying — or come back tomorrow and hope your blind spots do not show up on the exam.
-> 
+>
 
-> 
-> 
+>
+>
 
 > **Upgrade to Camp — ₱499/month**
-> 
+>
 
 No countdown timers. No fake urgency. The urgency is real: the exam date does not move.
 
@@ -272,21 +272,21 @@ No countdown timers. No fake urgency. The urgency is real: the exam date does no
 The 6-month Insurance tier is not positioned as a subscription. It is positioned as **exam insurance.**
 
 > A physical review center costs ₱15,000–₱40,000. It gives you lectures, handouts, and hope.
-> 
+>
 
 > SlateCamp Insurance costs ₱3,999. It gives you the entire syllabus, unlimited practice, a personal AI tutor, and a Readiness Score that tells you — before exam day — whether you are going to pass.
-> 
+>
 
-> 
-> 
+>
+>
 
 > One is a cost. The other is a guarantee.
-> 
+>
 
 **Parent-targeted variant:** This tier is often purchased by parents. The messaging shifts accordingly:
 
 > You have already invested years of tuition and months of review fees. SlateCamp Insurance is the final layer of preparation — the one that proves your child is ready. ₱3,999. Less than a single month of review center fees.
-> 
+>
 
 ---
 
@@ -356,13 +356,13 @@ The brand earns trust by refusing to manufacture excitement. The product generat
 ### Section 1: The Problem
 
 > You have 500 blurry PDFs. Three review center handouts. A mountain of highlighters. And zero idea whether you are actually ready.
-> 
+>
 
-> 
-> 
+>
+>
 
 > You are not studying. You are guessing.
-> 
+>
 
 ### Section 2: The Solution (No Feature Names)
 
@@ -390,13 +390,13 @@ The brand earns trust by refusing to manufacture excitement. The product generat
 ### Section 5: CTA (Repeat)
 
 > Your exam date is fixed. Your preparation does not have to be chaos.
-> 
+>
 
-> 
-> 
+>
+>
 
 > **Start your diagnostic — free.**
-> 
+>
 
 ---
 

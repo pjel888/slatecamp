@@ -1,0 +1,216 @@
+{
+  "schema_version": "source-audit-evidence-v1-local-first",
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-032-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T09:19:39+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+    "slug": "bp-344-tactile-and-visual-alarms",
+    "title": "BP 344 Tactile and Visual Alarms",
+    "article_folder": ".ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+    "candidate_path": ".ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478/candidate.md",
+    "candidate_sha256": "sha256:b3142f12568a148022a37d7ec0efae35764c285346e2ec0b38e1225163d00926",
+    "normalized_sha256": "sha256:b3142f12568a148022a37d7ec0efae35764c285346e2ec0b38e1225163d00926",
+    "linked_questions_sha256": "sha256:47fede5783ca0e864102a3583547a38f97931e4d3d14ec84c7b376d83ab8beaf",
+    "sources_sha256": "sha256:69116402615eca1a90806ce125ac9579fce5d382e2614efc4856adff1edc938c"
+  },
+  "classification": {
+    "content_domain": "LEA Accessibility and Building Code",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high_value_accessibility_code",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 11,
+    "question_edits_created": [
+      "f3fa6643-5347-480c-bb92-51befc4be31f",
+      "44a4311e-e622-4087-923d-e736094eb0f6",
+      "35261eda-1bfd-4e22-ac31-f54fbe56448d",
+      "847853b4-e9a6-4940-bc5d-909decb1abb4",
+      "fdf42db6-781b-4ffc-99fc-c07be1ad24d8",
+      "f4bde46f-92ab-48f9-ba53-1b3f2a87675a",
+      "06cfafd5-f5e8-4a00-aed3-809db03483a6",
+      "cd1a2205-3f90-4afb-ad3e-0e8529ad148b",
+      "14330dfe-cd58-487e-912a-dbfab23a7319",
+      "a023e9f0-dbdb-41c9-a9ca-618fb7325498",
+      "0d65dd1e-bced-42a4-a96e-734b204742a2"
+    ]
+  },
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478/question-edits/f3fa6643-5347-480c-bb92-51befc4be31f.json",
+      ".ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478/question-edits/44a4311e-e622-4087-923d-e736094eb0f6.json",
+      ".ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478/question-edits/35261eda-1bfd-4e22-ac31-f54fbe56448d.json",
+      ".ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478/question-edits/847853b4-e9a6-4940-bc5d-909decb1abb4.json",
+      ".ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478/question-edits/fdf42db6-781b-4ffc-99fc-c07be1ad24d8.json",
+      ".ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478/question-edits/f4bde46f-92ab-48f9-ba53-1b3f2a87675a.json",
+      ".ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478/question-edits/06cfafd5-f5e8-4a00-aed3-809db03483a6.json",
+      ".ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478/question-edits/cd1a2205-3f90-4afb-ad3e-0e8529ad148b.json",
+      ".ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478/question-edits/14330dfe-cd58-487e-912a-dbfab23a7319.json",
+      ".ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478/question-edits/a023e9f0-dbdb-41c9-a9ca-618fb7325498.json",
+      ".ai/content-audit-export/articles/bp-344-tactile-and-visual-alarms--5aeda107-bc0d-4d0d-ab40-44e13fd95478/question-edits/0d65dd1e-bced-42a4-a96e-734b204742a2.json"
+    ]
+  },
+  "raw_sources": [
+    {
+      "source_id": "bp-344-2024-revised-irr-ncda-local",
+      "label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "source_locator": "BP 344 2024 Revised IRR refined markdown lines 317-356, 362-511, 891-951, 990-1037, 1193-1211, 1446-1458, 1529-1545",
+      "checked_markdown_lines": [
+        "BP 344 2024 Revised IRR refined markdown lines 317-356, 362-511, 891-951, 990-1037, 1193-1211, 1446-1458, 1529-1545"
+      ]
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "bp-344-2024-revised-irr-ncda-local",
+      "label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "source_locator": "BP 344 2024 Revised IRR refined markdown lines 317-356, 362-511, 891-951, 990-1037, 1193-1211, 1446-1458, 1529-1545",
+      "checked_markdown_lines": [
+        "BP 344 2024 Revised IRR refined markdown lines 317-356, 362-511, 891-951, 990-1037, 1193-1211, 1446-1458, 1529-1545"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "b032-tactile-01",
+      "claim_text": "BP 344 requires audio, visual, and tactile directional and information signage.",
+      "claim_type": "accessibility_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "locator": "BP 344 refined markdown lines 317-319",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "Audio, Visual, and Tactile directional and information signage shall be located at points that can be conveniently seen, heard, and felt."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b032-tactile-02",
+      "claim_text": "Tactile floor surfaces must guide people with visual disabilities and be at least 600 mm clear from hazards or confusing elements.",
+      "claim_type": "accessibility_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "locator": "BP 344 refined markdown lines 362-366",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "Tactile floor surfaces shall guide people with visual disabilities and be situated at a minimum clear width of 600 mm away from tripping hazards and other elements."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b032-tactile-03",
+      "claim_text": "Warning tactile blocks have a depth of 600 mm and a 300 mm setback.",
+      "claim_type": "accessibility_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "locator": "BP 344 refined markdown lines 475-479",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "Warning tactile blocks shall have a depth of 600 mm and be placed with a 300 mm setback."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b032-tactile-04",
+      "claim_text": "Audio and visual alarm systems must be installed on all floors in compliance with the latest Fire Code.",
+      "claim_type": "accessibility_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "locator": "BP 344 refined markdown lines 1446-1452",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "Audio and Visual alarm systems shall be installed on all floors in compliance with the latest Fire Code."
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "removed_or_rewritten_material": [
+    "Learner-facing article text was rewritten to local source-supported accessibility/code claims only.",
+    "Legacy UI marker blocks were removed from normalized.md so candidate.md composes without unresolved markers.",
+    "Linked questions were rewritten to source-safe wording, answer keys, rationales, and citations."
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "gate_results": {
+    "compose": "PASS: bun run content-audit:compose -- --article-id <Batch 032 id> --overwrite --strict; changed candidates; blockers=0",
+    "diff": "PASS: bun run content-audit:diff -- --article-id <Batch 032 id> --summary --strict; changed=true; safe_to_push=true; blockers=0",
+    "validate": "PASS: bun run content-audit:validate -- --article-id <Batch 032 id> --summary; valid=true; blockers=0; expected component-usage.json warning only",
+    "push_dry_run": "not_attempted_local_first; Supabase remote fetch/publish is final publishing only",
+    "supabase_mutation": "not_attempted_by_request"
+  },
+  "source_safe_repair": {
+    "normalized_md_rewritten": true,
+    "candidate_md_composed": true,
+    "sources_json_refreshed_to_checked_raw_sources": true,
+    "source_audit_evidence_json_created": true,
+    "question_edits_created": 11,
+    "answer_key_fields_changed": true,
+    "ui_markers_removed_from_normalized": true,
+    "external_business_claims_limited_to_source_safe_form": true
+  },
+  "local_validation": {
+    "compose": {
+      "passed": true,
+      "blockers": [],
+      "candidate_hash": "sha256:b3142f12568a148022a37d7ec0efae35764c285346e2ec0b38e1225163d00926",
+      "safe_to_diff": true
+    },
+    "diff": {
+      "passed": true,
+      "blockers": [],
+      "safe_to_push": true,
+      "changed": true
+    },
+    "validate": {
+      "passed": true,
+      "blockers": [],
+      "warnings": [
+        "expected component-usage.json warning only"
+      ]
+    },
+    "scoped_checks": {
+      "passed": true,
+      "blockers": [],
+      "placeholder_matches": []
+    }
+  },
+  "sme_review": {
+    "required": false,
+    "status": "PASS"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "batch_id": "source-audited-article-batch-015-local-first",
+  "mode": "local-first",
+  "status": "local_pass_ready_for_final_publishing_review",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T23:45:00.000+08:00",
+  "constraints": [
+    "Work in /Users/philiplewis/slatecamp only.",
+    "No Supabase push.",
+    "No deploy.",
+    "No commit.",
+    "Use local raw PDF/markdown evidence before creating article and question edits."
+  ],
+  "selection_policy": "Selected the next five unpreviously batched high-value BP 344 accessibility/design clusters with linked questions and local raw PDF support.",
+  "counts": {
+    "selected_articles": 5,
+    "local_pass_articles": 5,
+    "blocked_articles": 0,
+    "linked_questions_covered": 98,
+    "question_edit_json_files_created": 98,
+    "source_records_created": 5,
+    "source_safe_rewrite_question_edits": 98,
+    "unresolved_external_source_gap_question_edits": 0,
+    "placeholder_matches_in_scoped_scan": 0
+  },
+  "improved_article_folder_paths": [
+    ".ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84",
+    ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc",
+    ".ai/content-audit-export/articles/site-planning-accessible-routes-vs-open-space--3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
+    ".ai/content-audit-export/articles/public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9",
+    ".ai/content-audit-export/articles/lodging-and-residential-accessibility--7a3b0ff7-407f-40cc-b398-fca6358f4db7"
+  ],
+  "question_edits_folder_paths": [
+    ".ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84/question-edits",
+    ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc/question-edits",
+    ".ai/content-audit-export/articles/site-planning-accessible-routes-vs-open-space--3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046/question-edits",
+    ".ai/content-audit-export/articles/public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9/question-edits",
+    ".ai/content-audit-export/articles/lodging-and-residential-accessibility--7a3b0ff7-407f-40cc-b398-fca6358f4db7/question-edits"
+  ],
+  "source_audit_notes": [
+    "BP 344 2024 Revised IRR local raw PDF and raw markdown were checked before article and question rewrites.",
+    "RA 7277, RA 9442, and other legal claims without local raw-source evidence were not used in Batch 015 article bodies or question replacements.",
+    "Prior values such as a default 1:12 BP 344 ramp rule and an 1800 mm parking access aisle were replaced with BP 344 values visible in the checked local source."
+  ],
+  "validation_summary": {
+    "compose": "passed for all five selected Batch 015 article IDs with blockers=0 after BP 344 article repairs",
+    "diff": "passed for all five selected Batch 015 article IDs with safe_to_push=true and blockers=[]; remote stale checks remain final-publishing responsibility",
+    "validate": "passed for all five selected Batch 015 article IDs with valid=true and blockers=[]; existing component-usage.json warning may remain",
+    "json_parse": "scoped Batch 015 JSON files parsed with jq empty",
+    "placeholder_scan": "scoped Batch 015 generated article/candidate/source/evidence/question-edit artifacts scanned clean for placeholder and internal-note markers",
+    "tests": "bun test scripts/content-audit/content-audit.test.ts passed",
+    "git_diff_check": "scoped git diff --check passed for Batch 015 article/report/ledger artifacts"
+  },
+  "next_phase_readiness": "Ready for final publishing review after remote stale checks. Supabase remains final publishing only; no remote mutation was attempted.",
+  "articles": [
+    {
+      "article_id": "184a1593-2137-45ee-80d4-99c1c4595e84",
+      "slug": "widths-slopes",
+      "title": "Widths & Slopes",
+      "status": "local_pass_ready_for_final_publishing_review",
+      "article_folder": ".ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84",
+      "question_edits_folder": ".ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84/question-edits",
+      "linked_questions": 21,
+      "question_edits_created": 21,
+      "source_safe_rewrite_question_edits": 21,
+      "source_status_summary": "bp344_local_raw_pdf_markdown_supported_source_safe_rewrite",
+      "compose_blockers": [],
+      "diff_safe_to_push": true,
+      "diff_blockers": [],
+      "validate_valid": true,
+      "validate_blockers": []
+    },
+    {
+      "article_id": "1a02a1a5-27e5-4a26-85d2-fceac4433edc",
+      "slug": "wheelchair-maneuvering-and-parking-slots",
+      "title": "Wheelchair Maneuvering and Parking Slots",
+      "status": "local_pass_ready_for_final_publishing_review",
+      "article_folder": ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc",
+      "question_edits_folder": ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc/question-edits",
+      "linked_questions": 21,
+      "question_edits_created": 21,
+      "source_safe_rewrite_question_edits": 21,
+      "source_status_summary": "bp344_local_raw_pdf_markdown_supported_source_safe_rewrite",
+      "compose_blockers": [],
+      "diff_safe_to_push": true,
+      "diff_blockers": [],
+      "validate_valid": true,
+      "validate_blockers": []
+    },
+    {
+      "article_id": "3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
+      "slug": "site-planning-accessible-routes-vs-open-space",
+      "title": "Site Planning Accessible Routes vs Open Space",
+      "status": "local_pass_ready_for_final_publishing_review",
+      "article_folder": ".ai/content-audit-export/articles/site-planning-accessible-routes-vs-open-space--3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
+      "question_edits_folder": ".ai/content-audit-export/articles/site-planning-accessible-routes-vs-open-space--3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046/question-edits",
+      "linked_questions": 21,
+      "question_edits_created": 21,
+      "source_safe_rewrite_question_edits": 21,
+      "source_status_summary": "bp344_local_raw_pdf_markdown_supported_source_safe_rewrite",
+      "compose_blockers": [],
+      "diff_safe_to_push": true,
+      "diff_blockers": [],
+      "validate_valid": true,
+      "validate_blockers": []
+    },
+    {
+      "article_id": "3c69e570-a75c-4168-ad09-914e2c1062f9",
+      "slug": "public-service-counters-and-atms",
+      "title": "Public Service Counters and ATMs",
+      "status": "local_pass_ready_for_final_publishing_review",
+      "article_folder": ".ai/content-audit-export/articles/public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9",
+      "question_edits_folder": ".ai/content-audit-export/articles/public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9/question-edits",
+      "linked_questions": 19,
+      "question_edits_created": 19,
+      "source_safe_rewrite_question_edits": 19,
+      "source_status_summary": "bp344_local_raw_pdf_markdown_supported_source_safe_rewrite",
+      "compose_blockers": [],
+      "diff_safe_to_push": true,
+      "diff_blockers": [],
+      "validate_valid": true,
+      "validate_blockers": []
+    },
+    {
+      "article_id": "7a3b0ff7-407f-40cc-b398-fca6358f4db7",
+      "slug": "lodging-and-residential-accessibility",
+      "title": "Lodging and Residential Accessibility",
+      "status": "local_pass_ready_for_final_publishing_review",
+      "article_folder": ".ai/content-audit-export/articles/lodging-and-residential-accessibility--7a3b0ff7-407f-40cc-b398-fca6358f4db7",
+      "question_edits_folder": ".ai/content-audit-export/articles/lodging-and-residential-accessibility--7a3b0ff7-407f-40cc-b398-fca6358f4db7/question-edits",
+      "linked_questions": 16,
+      "question_edits_created": 16,
+      "source_safe_rewrite_question_edits": 16,
+      "source_status_summary": "bp344_local_raw_pdf_markdown_supported_source_safe_rewrite",
+      "compose_blockers": [],
+      "diff_safe_to_push": true,
+      "diff_blockers": [],
+      "validate_valid": true,
+      "validate_blockers": []
+    }
+  ]
+}

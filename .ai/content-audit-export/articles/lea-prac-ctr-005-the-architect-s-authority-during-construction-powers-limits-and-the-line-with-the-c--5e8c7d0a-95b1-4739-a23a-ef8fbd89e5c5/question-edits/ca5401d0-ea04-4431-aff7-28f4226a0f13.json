@@ -1,0 +1,90 @@
+{
+  "question_id": "ca5401d0-ea04-4431-aff7-28f4226a0f13",
+  "baseline_hash": "sha256:6d8c577534554d6a7273d3a9e366e322f296b4d3c92cc0669287504803b8c027",
+  "action": "replace",
+  "reason": "source-audited-article-batch-022-local-first rewrote this linked question to align with the local source audit for lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor.",
+  "approved_by": "codex-local-source-audit-batch-022",
+  "approved_at": "2026-05-11T11:45:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5",
+    "parent_article_slug": "lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080; UAP Code of Ethics refined markdown lines 23-29, 31-58, 60-71, and 81-99",
+    "checked_markdown_lines": [
+      "UAP Document 301 lines 41-71",
+      "UAP Document 301 lines 482-520",
+      "UAP Document 301 lines 1019-1051",
+      "UAP Document 301 lines 1062-1080",
+      "UAP Code of Ethics lines 23-29",
+      "UAP Code of Ethics lines 31-58",
+      "UAP Code of Ethics lines 60-71",
+      "UAP Code of Ethics lines 81-99"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "source_id": "uap-document-301-general-conditions-local",
+        "locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+        "source_id": "uap-document-301-general-conditions-local",
+        "locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+        "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+        "source_id": "uap-code-ethics-client-contractor-colleague-local",
+        "locator": "UAP Code of Ethics refined markdown lines 23-29, 31-58, 60-71, and 81-99"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+        "sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+        "source_id": "uap-code-ethics-client-contractor-colleague-local",
+        "locator": "UAP Code of Ethics refined markdown lines 23-29, 31-58, 60-71, and 81-99"
+      }
+    ],
+    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+  },
+  "proposed": {
+    "text": "Which ethics principle supports the architect’s construction-administration role?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The architect’s advice should be unprejudiced and impartial between client and contractor"
+      },
+      {
+        "id": "b",
+        "text": "The architect should conceal nonconforming work"
+      },
+      {
+        "id": "c",
+        "text": "The architect should always represent the contractor only"
+      },
+      {
+        "id": "d",
+        "text": "The architect should avoid contract documents"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "The UAP Code of Ethics describes impartial professional and judicial functions.",
+    "explanation": "The incorrect options import a different actor, service category, timing rule, or authority path that the checked local source does not support.",
+    "code_citation": "UAP Code of Ethics lines 23-29 and 60-71",
+    "bloom_level": "remember",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited batch 022"
+    ],
+    "difficulty": 0.54,
+    "is_assessment": false,
+    "model_id": "BATCH-022-lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor-009"
+  }
+}

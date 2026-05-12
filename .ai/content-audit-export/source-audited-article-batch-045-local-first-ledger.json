@@ -1,0 +1,378 @@
+{
+  "batch_id": "source-audited-article-batch-045-local-first",
+  "batch_number": 45,
+  "generated_at": "2026-05-11T09:45:00.000Z",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "local_only": true,
+  "supabase_push": "not_attempted",
+  "deploy": "not_attempted",
+  "commit": "not_attempted",
+  "inherited_blocker_status": "Batch 044 blockers=0",
+  "selection_rule": "five high-value building utilities/code clusters with linked questions and local communication/signal, Salvan Utilities, acoustics, RA 11285, DOE, and PEC raw PDF families, excluding IDs recorded in source-audited Batch 001 through Batch 044 artifacts",
+  "counts": {
+    "selected_articles": 5,
+    "linked_questions": 76,
+    "question_edits": 76,
+    "source_rows": 14,
+    "unique_raw_pdfs": 7,
+    "json_parse": 131,
+    "source_hash_checks": 28,
+    "marker_matches": 0,
+    "stale_compose_error_files": 0
+  },
+  "source_evidence": [
+    "Communication and Signal Systems Lecture local raw PDF family for signal-system components, CCTV/intercom/telephone families, intrusion detection, card-reader entry control, guard tour, TV distribution, PABX, and telephone service entrance.",
+    "George Salvan Architectural Utilities 2 local raw PDF family for electrical design coordination, service equipment, emergency signal loads, central monitoring, card-reader entry levels, watchmen tour, intrusion detection, paging, and industrial fire alarm context.",
+    "Handouts for Lighting and Acoustics and Salvan Utilities 3 local raw PDF families for sound range, decibel logic, material absorption/transmission, pipe and duct wrap, reverberation, RT60, and Sabine formula.",
+    "RA 11285 local raw PDF family for energy-efficiency policy, renewable-energy technology use, building energy performance, energy audits, and designated-establishment obligations.",
+    "Philippine Electrical Code local raw PDF family for premises wiring, electrical plan requirements, working-space clearances, signal/communication plan content, and Article 6.90 solar photovoltaic systems.",
+    "DOE Energy Conserving Design Guidelines local raw PDF family for energy-conserving design purpose, metering for energy auditing, data logging, solar heat gain, and use of solar energy for hot water support."
+  ],
+  "validation": {
+    "scoped_json_parse": {
+      "status": "PASS",
+      "parsed_files": 131,
+      "failures": []
+    },
+    "marker_scan": {
+      "status": "PASS",
+      "scanned_files": 96,
+      "matches": []
+    },
+    "source_hash_checks": {
+      "status": "PASS",
+      "checked": 28,
+      "failures": []
+    },
+    "question_edit_count_checks": {
+      "status": "PASS",
+      "checks": [
+        {
+          "article_id": "1edce199-0fc2-42e8-bad6-f3a74243626e",
+          "slug": "lea-util-004-06-cctv-systems",
+          "expected": 16,
+          "actual": 16,
+          "pass": true
+        },
+        {
+          "article_id": "f52e3126-774f-4eec-8456-8417769bb34a",
+          "slug": "lea-util-005-04-communication-protocols-technologies",
+          "expected": 15,
+          "actual": 15,
+          "pass": true
+        },
+        {
+          "article_id": "0c236406-a3aa-46b6-9833-b2aa88a6e131",
+          "slug": "lea-util-006-07-mepf-equipment-noise-sources-and-output-levels",
+          "expected": 15,
+          "actual": 15,
+          "pass": true
+        },
+        {
+          "article_id": "06c6e7dc-b3cd-4ff8-a25a-fed405c47830",
+          "slug": "lea-util-007-04-solar-photovoltaic-pv-systems",
+          "expected": 15,
+          "actual": 15,
+          "pass": true
+        },
+        {
+          "article_id": "e956216b-4b72-4a6a-a471-5cb42162c054",
+          "slug": "lea-util-008-03-electrical-utility-connection",
+          "expected": 15,
+          "actual": 15,
+          "pass": true
+        }
+      ],
+      "failures": []
+    },
+    "stale_compose_error_check": {
+      "status": "PASS",
+      "stale_compose_error_files": []
+    },
+    "compose": {
+      "status": "PASS",
+      "passed": 5,
+      "total": 5,
+      "command": "bun run content-audit:compose -- --article-id <id> --overwrite --strict"
+    },
+    "diff": {
+      "status": "PASS",
+      "passed": 5,
+      "total": 5,
+      "command": "bun run content-audit:diff -- --article-id <id> --strict --summary"
+    },
+    "validate": {
+      "status": "PASS",
+      "passed": 5,
+      "total": 5,
+      "warnings": "component-usage.json missing warnings only",
+      "command": "bun run content-audit:validate -- --article-id <id> --summary"
+    },
+    "ui_block_validation": {
+      "status": "PASS",
+      "passed": 5,
+      "total": 5,
+      "command": "bun run content-audit:ui-block-edits -- --article-id <id>"
+    },
+    "targeted_tests": {
+      "status": "PASS",
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "tests": 34,
+      "expect_calls": 328
+    },
+    "scoped_git_diff_check": {
+      "status": "PASS_PENDING_FINAL_COMMAND",
+      "command": "git diff --check -- <Batch 045 article folders, report, ledger, scoped checks, handoff, sync-state, validation-report, ui-block-edit-validation>"
+    }
+  },
+  "blockers": [],
+  "next_batch_readiness": "READY_FOR_BATCH_046_SELECTION",
+  "articles": [
+    {
+      "ordinal": 1,
+      "article_id": "1edce199-0fc2-42e8-bad6-f3a74243626e",
+      "slug": "lea-util-004-06-cctv-systems",
+      "title": "Security systems in buildings serve",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-util-004-06-cctv-systems--1edce199-0fc2-42e8-bad6-f3a74243626e",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-06-cctv-systems--1edce199-0fc2-42e8-bad6-f3a74243626e",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-util-004-06-cctv-systems--1edce199-0fc2-42e8-bad6-f3a74243626e/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-06-cctv-systems--1edce199-0fc2-42e8-bad6-f3a74243626e/question-edits",
+      "linked_questions": 16,
+      "question_edits": 16,
+      "source_rows": 3,
+      "candidate_hash": "sha256:a6817a6cb4d7f2bf492c38b015fabb9ddde2fb12ab7ecd1de5192f3fee8a86f2",
+      "normalized_hash": "sha256:a6817a6cb4d7f2bf492c38b015fabb9ddde2fb12ab7ecd1de5192f3fee8a86f2",
+      "original_hash": "sha256:c2b13485618b472a64491a321800c987df98cc3b3bd5c7029fc2b983504761fc",
+      "sources_hash": "sha256:d272d20ce367d717b02906b93e111beaea0a3d434b232169cfb81ac7abc6fea0",
+      "gates": {
+        "compose": "PASS",
+        "diff": "PASS",
+        "validate": "PASS",
+        "ui_block_validation": "PASS",
+        "source_audit": "PASS"
+      },
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-06-cctv-systems--1edce199-0fc2-42e8-bad6-f3a74243626e/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-06-cctv-systems--1edce199-0fc2-42e8-bad6-f3a74243626e/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-06-cctv-systems--1edce199-0fc2-42e8-bad6-f3a74243626e/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-06-cctv-systems--1edce199-0fc2-42e8-bad6-f3a74243626e/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-06-cctv-systems--1edce199-0fc2-42e8-bad6-f3a74243626e/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-06-cctv-systems--1edce199-0fc2-42e8-bad6-f3a74243626e/ui-blocks.json"
+      ],
+      "question_edit_files": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-06-cctv-systems--1edce199-0fc2-42e8-bad6-f3a74243626e/question-edits/07d58579-11e3-4ed5-8fb6-5dc7be036efb.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-06-cctv-systems--1edce199-0fc2-42e8-bad6-f3a74243626e/question-edits/19ef3454-cab4-474a-80e7-1653dcc7b299.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-06-cctv-systems--1edce199-0fc2-42e8-bad6-f3a74243626e/question-edits/1aeba322-18c6-4db2-9140-f9ff44dce2ce.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-06-cctv-systems--1edce199-0fc2-42e8-bad6-f3a74243626e/question-edits/3262c3f5-1a71-44ef-8ea0-cba350558f80.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-06-cctv-systems--1edce199-0fc2-42e8-bad6-f3a74243626e/question-edits/35ad8a3f-1d96-4bf4-a547-e69e32da480e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-06-cctv-systems--1edce199-0fc2-42e8-bad6-f3a74243626e/question-edits/4935a426-335e-42d9-99d1-8ed6324a0d4b.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-06-cctv-systems--1edce199-0fc2-42e8-bad6-f3a74243626e/question-edits/56548989-e885-4a33-aa33-c808af8a4b9f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-06-cctv-systems--1edce199-0fc2-42e8-bad6-f3a74243626e/question-edits/5a47df91-c4d8-4e13-99aa-c82fb8c2b4e6.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-06-cctv-systems--1edce199-0fc2-42e8-bad6-f3a74243626e/question-edits/81576a26-fa28-45e1-afc1-8b07fd2ed73c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-06-cctv-systems--1edce199-0fc2-42e8-bad6-f3a74243626e/question-edits/8175576d-1b78-4e27-a845-e7518e2872de.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-06-cctv-systems--1edce199-0fc2-42e8-bad6-f3a74243626e/question-edits/817cdf9f-82b4-4a22-814f-539acb385a6d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-06-cctv-systems--1edce199-0fc2-42e8-bad6-f3a74243626e/question-edits/a2219d23-f6d9-4427-b70d-254ad7a2d359.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-06-cctv-systems--1edce199-0fc2-42e8-bad6-f3a74243626e/question-edits/accef436-2780-487e-afe8-a87836820df7.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-06-cctv-systems--1edce199-0fc2-42e8-bad6-f3a74243626e/question-edits/c2a74a89-8973-49fe-b0f9-88369bc6caab.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-06-cctv-systems--1edce199-0fc2-42e8-bad6-f3a74243626e/question-edits/cafc2538-906a-4a3f-ab41-fa34b3dad9bc.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-06-cctv-systems--1edce199-0fc2-42e8-bad6-f3a74243626e/question-edits/f162130e-e0b0-4cfc-b227-cb02246aba51.json"
+      ]
+    },
+    {
+      "ordinal": 2,
+      "article_id": "f52e3126-774f-4eec-8456-8417769bb34a",
+      "slug": "lea-util-005-04-communication-protocols-technologies",
+      "title": "Security and access control systems",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/question-edits",
+      "linked_questions": 15,
+      "question_edits": 15,
+      "source_rows": 3,
+      "candidate_hash": "sha256:3778ffde11e928062a11d9aee32e2a68d6bdfaf8662f38cd5b858b886de3f234",
+      "normalized_hash": "sha256:3778ffde11e928062a11d9aee32e2a68d6bdfaf8662f38cd5b858b886de3f234",
+      "original_hash": "sha256:eb0458d521b7eca96b734c9ebdfa2dab34cc9b5f871fa3b7229a9f50cc60e8a9",
+      "sources_hash": "sha256:642422f8300fe54873134c6e44b82de3db7100222ee2d115ead9cb94c94e7b1d",
+      "gates": {
+        "compose": "PASS",
+        "diff": "PASS",
+        "validate": "PASS",
+        "ui_block_validation": "PASS",
+        "source_audit": "PASS"
+      },
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/ui-blocks.json"
+      ],
+      "question_edit_files": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/question-edits/028e920a-269e-4453-994f-b5027ead68f8.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/question-edits/2cff9738-f6fa-43f0-bc15-193eb27aa2bf.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/question-edits/4043fba2-585d-4962-b639-c7372d4a4a2a.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/question-edits/44d2f59f-abee-4590-ab52-de9e0a0e6137.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/question-edits/4a8de0d6-ec81-400f-8d88-67ad658a8a3e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/question-edits/4f56848f-2403-4e60-906d-3f2b4c8116c8.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/question-edits/5d78ef55-599b-4002-a8e8-aa31951ab9f0.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/question-edits/83a757ec-4488-441c-812b-993eb67f7282.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/question-edits/8428e210-b245-4b16-be18-d482bda8f1bd.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/question-edits/ae6a1ff0-b4d9-4c67-b99d-7f494df6df08.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/question-edits/b78d8690-1339-4fef-a3da-19bcd1f16a4d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/question-edits/d31806e0-1733-42af-84c5-6bbd6328999d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/question-edits/e2c8705e-36c7-4ff9-82c7-f06bdc39ff79.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/question-edits/e377f90c-4040-4f0d-bcfd-e96b04e16dc1.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/question-edits/fc215e71-0ee3-403f-a2cb-3b48d4109081.json"
+      ]
+    },
+    {
+      "ordinal": 3,
+      "article_id": "0c236406-a3aa-46b6-9833-b2aa88a6e131",
+      "slug": "lea-util-006-07-mepf-equipment-noise-sources-and-output-levels",
+      "title": "Noise control in mechanical, electrical, plumbing, and fire",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/question-edits",
+      "linked_questions": 15,
+      "question_edits": 15,
+      "source_rows": 2,
+      "candidate_hash": "sha256:8782f2da56184e911b5966b342d7179d6209dfb21d55106fbc2ed2c520bc49b9",
+      "normalized_hash": "sha256:8782f2da56184e911b5966b342d7179d6209dfb21d55106fbc2ed2c520bc49b9",
+      "original_hash": "sha256:d3b4189afb9bd5bffee2a2d9cf1ff4040df50ae591e64c7ccfb3baa672cebb05",
+      "sources_hash": "sha256:39968055937543131d5471e03255002c9c963b3befa0cdb8ee449c3aa39341d8",
+      "gates": {
+        "compose": "PASS",
+        "diff": "PASS",
+        "validate": "PASS",
+        "ui_block_validation": "PASS",
+        "source_audit": "PASS"
+      },
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/ui-blocks.json"
+      ],
+      "question_edit_files": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/question-edits/059c8c19-5d80-46a5-b810-b2b70f05310c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/question-edits/0b8bb1cc-a6cb-4989-9bf2-0aff3b695ab4.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/question-edits/29605ab9-d42e-4436-a818-4c1a865d9980.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/question-edits/31a3dde5-2d63-4543-8d86-cecc572615d5.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/question-edits/32e37f8f-3cc7-44e7-82ad-21cfaaaedf2a.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/question-edits/4b21976b-389f-46fc-9ba2-7be7f612449f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/question-edits/4c01e366-2b98-4197-b9af-c1f2acd0e89c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/question-edits/5baaab42-9918-4909-ae15-0068a8a9356d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/question-edits/84992241-8a45-400a-91ad-123866d139c2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/question-edits/a4bafc8a-9b31-43fb-9cf8-5bd8837f5c40.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/question-edits/bd1044d6-dc61-418f-b931-e0ae71527d6b.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/question-edits/c9d72107-2797-4191-91f6-ad26abb9bdc2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/question-edits/cb6cfb1d-6d74-4bc6-9ab1-ef3b427b42b2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/question-edits/e04b845f-478f-4d7a-a2c2-7b23178781fa.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/question-edits/e494ec90-a6c1-41fd-b156-f1a6252e26f1.json"
+      ]
+    },
+    {
+      "ordinal": 4,
+      "article_id": "06c6e7dc-b3cd-4ff8-a25a-fed405c47830",
+      "slug": "lea-util-007-04-solar-photovoltaic-pv-systems",
+      "title": "Renewable energy systems in buildings",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/question-edits",
+      "linked_questions": 15,
+      "question_edits": 15,
+      "source_rows": 3,
+      "candidate_hash": "sha256:828e57aadccb02a9e5a8138f0d2e83927a1505297f78d2ed339f3b7d4bc093ee",
+      "normalized_hash": "sha256:828e57aadccb02a9e5a8138f0d2e83927a1505297f78d2ed339f3b7d4bc093ee",
+      "original_hash": "sha256:fa7756ee0f73b183f2475097976f399598280bdac56dfb40d329d3ad8544aa4b",
+      "sources_hash": "sha256:a43b2d68fcbbab5d0057a061402cf097877f9e9407171ad73c886cfee21df346",
+      "gates": {
+        "compose": "PASS",
+        "diff": "PASS",
+        "validate": "PASS",
+        "ui_block_validation": "PASS",
+        "source_audit": "PASS"
+      },
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/ui-blocks.json"
+      ],
+      "question_edit_files": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/question-edits/09e94efc-5682-4839-87f4-0f7442408e32.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/question-edits/0c32d43a-35b6-4fd7-88ea-76eb61cd7f94.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/question-edits/197c1744-01ae-4e44-88d7-38b376301a30.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/question-edits/1f7428cb-97ef-4e1e-ab1b-f974b15b39f0.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/question-edits/2ae5639a-b45a-4f18-971f-4d4877ecadf8.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/question-edits/4cf29e1b-fe44-4a86-b8de-2604ceb50dbc.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/question-edits/6666284f-668d-4c9e-8bb7-4f339747bf82.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/question-edits/7773622a-5d1e-40e4-ba5b-509787c66a53.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/question-edits/78facbb9-7d08-4eba-a4ff-b9aab66bef2e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/question-edits/8f98493f-d92a-4b2c-83f3-867353e95a24.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/question-edits/aad6391a-f10e-4912-894d-423415dcba70.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/question-edits/d2b0656e-f731-4e50-81b2-efd7638028ea.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/question-edits/d6e826ec-546f-405a-8283-d6f70e169a09.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/question-edits/d77e3868-95d8-4957-b4cb-e8d5c4451fcf.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/question-edits/e3078693-ac7a-40b6-88eb-ccd255cadc09.json"
+      ]
+    },
+    {
+      "ordinal": 5,
+      "article_id": "e956216b-4b72-4a6a-a471-5cb42162c054",
+      "slug": "lea-util-008-03-electrical-utility-connection",
+      "title": "Building utilities infrastructure",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-util-008-03-electrical-utility-connection--e956216b-4b72-4a6a-a471-5cb42162c054",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-008-03-electrical-utility-connection--e956216b-4b72-4a6a-a471-5cb42162c054",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-util-008-03-electrical-utility-connection--e956216b-4b72-4a6a-a471-5cb42162c054/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-008-03-electrical-utility-connection--e956216b-4b72-4a6a-a471-5cb42162c054/question-edits",
+      "linked_questions": 15,
+      "question_edits": 15,
+      "source_rows": 3,
+      "candidate_hash": "sha256:8fb2bbbbcfb159b3d301beed1d40e8fdc5a5d4f9439fc56ffdd1fe7b7e85412e",
+      "normalized_hash": "sha256:8fb2bbbbcfb159b3d301beed1d40e8fdc5a5d4f9439fc56ffdd1fe7b7e85412e",
+      "original_hash": "sha256:c25d9cf9df71307f16a9be2382493dfc3d00ff344029ebc1dd86ae8676145c67",
+      "sources_hash": "sha256:b83f1b251810641acba20e29b3071d06fb325cbf8564a87cb123933a7e5d7aa7",
+      "gates": {
+        "compose": "PASS",
+        "diff": "PASS",
+        "validate": "PASS",
+        "ui_block_validation": "PASS",
+        "source_audit": "PASS"
+      },
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-008-03-electrical-utility-connection--e956216b-4b72-4a6a-a471-5cb42162c054/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-008-03-electrical-utility-connection--e956216b-4b72-4a6a-a471-5cb42162c054/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-008-03-electrical-utility-connection--e956216b-4b72-4a6a-a471-5cb42162c054/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-008-03-electrical-utility-connection--e956216b-4b72-4a6a-a471-5cb42162c054/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-008-03-electrical-utility-connection--e956216b-4b72-4a6a-a471-5cb42162c054/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-008-03-electrical-utility-connection--e956216b-4b72-4a6a-a471-5cb42162c054/ui-blocks.json"
+      ],
+      "question_edit_files": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-008-03-electrical-utility-connection--e956216b-4b72-4a6a-a471-5cb42162c054/question-edits/145d2f61-4b09-421d-9e13-082675486e66.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-008-03-electrical-utility-connection--e956216b-4b72-4a6a-a471-5cb42162c054/question-edits/1d8db920-dec8-4a55-89d4-f89578ee0edc.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-008-03-electrical-utility-connection--e956216b-4b72-4a6a-a471-5cb42162c054/question-edits/201db60a-4a97-47f1-875a-bec084a9bde0.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-008-03-electrical-utility-connection--e956216b-4b72-4a6a-a471-5cb42162c054/question-edits/296a1efe-0fa6-4d7f-8f86-746ef39cb598.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-008-03-electrical-utility-connection--e956216b-4b72-4a6a-a471-5cb42162c054/question-edits/29f18069-dc27-4ba3-91fe-ea9231c5864f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-008-03-electrical-utility-connection--e956216b-4b72-4a6a-a471-5cb42162c054/question-edits/35873514-26be-410d-b3c3-8567ae29c6ca.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-008-03-electrical-utility-connection--e956216b-4b72-4a6a-a471-5cb42162c054/question-edits/3a1be750-9d48-4e28-84d8-063a46d88f3a.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-008-03-electrical-utility-connection--e956216b-4b72-4a6a-a471-5cb42162c054/question-edits/55fd3d8e-98fe-4809-9ee2-92fdb1418cc3.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-008-03-electrical-utility-connection--e956216b-4b72-4a6a-a471-5cb42162c054/question-edits/8edd38cb-b494-470e-b357-2641cb994486.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-008-03-electrical-utility-connection--e956216b-4b72-4a6a-a471-5cb42162c054/question-edits/906391d3-0a38-432a-870d-d098bdd69c1e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-008-03-electrical-utility-connection--e956216b-4b72-4a6a-a471-5cb42162c054/question-edits/9a0a682a-2d15-4b6d-93c9-fe632a287de6.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-008-03-electrical-utility-connection--e956216b-4b72-4a6a-a471-5cb42162c054/question-edits/b5bad62b-902b-4d7a-a2b6-4a7f8eb97777.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-008-03-electrical-utility-connection--e956216b-4b72-4a6a-a471-5cb42162c054/question-edits/b9419883-0cbb-4284-888c-1d599ae785a7.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-008-03-electrical-utility-connection--e956216b-4b72-4a6a-a471-5cb42162c054/question-edits/f6caea19-6b54-4e31-a2f0-87c8f8dec3bd.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-008-03-electrical-utility-connection--e956216b-4b72-4a6a-a471-5cb42162c054/question-edits/f8ced8ba-5edd-4765-863e-853a333c4d9a.json"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "question_id": "6e0c23ce-f077-4800-9eb5-e29f1854208e",
+  "baseline_hash": "sha256:d42287cca5b393db16e0ecde788c3e277f49e2d4a0a5274cb776c5bde0ebe4f4",
+  "action": "replace",
+  "reason": "source-audited-article-batch-054-local-first: local raw PDF backed replacement constrained to checked Batch 054 source families.",
+  "approved_by": "codex-local-first-batch-054",
+  "approved_at": "2026-05-11T19:22:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "fe7216ee-46ed-41b3-88ef-accb3f912a4c",
+    "parent_article_slug": "inca-architecture-ashlar-masonry",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "George Salvan Architectural Character refined markdown lines 1339, 1361-1377, 1385-1387, 1397-1401, and 1407-1409",
+    "checked_markdown_lines": [
+      "George Salvan Architectural Character refined markdown line 1339",
+      "George Salvan Architectural Character refined markdown lines 1361-1377",
+      "George Salvan Architectural Character refined markdown lines 1385-1387",
+      "George Salvan Architectural Character refined markdown lines 1397-1401",
+      "George Salvan Architectural Character refined markdown lines 1407-1409"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "salvan-character-local-raw-pdf--b054-fe7216ee-01",
+        "label": "George Salvan Architectural Character and the History of Architecture - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Character and the History of Architecture.pdf",
+        "sha256": "sha256:55c4fa2d43bbfd27cffb86d0aac4ad960032e178e1e25c29d4eb351297bfc069",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Character and the History of Architecture.md",
+        "refined_markdown_sha256": "sha256:be8e760bef8f7ceb573742d996dabb202f0353e19b4ab9283ec2de7dfc1fccea",
+        "locator": "George Salvan Architectural Character refined markdown lines 1339, 1361-1377, 1385-1387, 1397-1401, and 1407-1409"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 054 checked local raw PDF source scope."
+  },
+  "proposed": {
+    "text": "Which description matches the checked source for Inca stone faces?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bevelled edges and cushion-like dressed faces."
+      },
+      {
+        "id": "b",
+        "text": "Color-coded mechanical ducts."
+      },
+      {
+        "id": "c",
+        "text": "Pendentives over square bays."
+      },
+      {
+        "id": "d",
+        "text": "Palm leaves bound over mud walls."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Bevelled edges and cushion-like dressed faces. This answer is supported by the checked Batch 054 local raw PDF source families for Inca Architecture Ashlar Masonry.",
+    "explanation": "Bevelled edges and cushion-like dressed faces. The Batch 054 source audit used local raw PDFs first and refined markdown only as locator evidence for Inca Architecture Ashlar Masonry.",
+    "code_citation": "George Salvan Architectural Character refined markdown lines 1361-1377"
+  },
+  "batch_question_template_index": 3
+}

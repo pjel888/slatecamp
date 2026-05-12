@@ -1,0 +1,59 @@
+{
+  "question_id": "ce27e409-5c1f-4518-b030-9f569898a24a",
+  "baseline_hash": "sha256:6bd089325ee92d68c8dbdf4d6e98601e977536bfc01830e2aa170daef5da342b",
+  "action": "replace",
+  "reason": "source-audited-article-batch-043-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes stale or non-local framing where present.",
+  "approved_by": "codex-local-first-batch-043",
+  "approved_at": "2026-05-11T15:45:43.683+08:00",
+  "source_audit_support": {
+    "parent_article_id": "b75b3e00-5fe7-4717-95d0-b65ea5b2bb28",
+    "parent_article_slug": "lea-util-004-07-core-concepts-and-formulas",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 9514 RIRR refined markdown lines 1138-1154, 1295-1299, 1882-1888, 2308-2344, 2408-2418, 3690-3723, 13284-13291",
+    "checked_markdown_lines": [
+      "RA 9514 RIRR refined markdown lines 1138-1154",
+      "RA 9514 RIRR refined markdown lines 1295-1299 and 1882-1888",
+      "RA 9514 RIRR refined markdown lines 2308-2344",
+      "RA 9514 RIRR refined markdown lines 2408-2418 and 3690-3723",
+      "RA 9514 RIRR refined markdown lines 13284-13291"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "ra-9514-rirr-2019-local-raw-pdf--b043-1",
+        "label": "RA 9514 RIRR 2019 - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "locator": "RA 9514 RIRR refined markdown lines 1138-1154, 1295-1299, 1882-1888, 2308-2344, 2408-2418, 3690-3723, 13284-13291"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 043 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "For an LEA review item on hydrant supply, which checked RA 9514 RIRR statement is safest?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The RIRR gives hydrant supply criteria including 3,785 L/min for one hour and a fire reserve portion of the tank."
+      },
+      {
+        "id": "b",
+        "text": "Hydrant supply is always omitted when a building has interior finishes."
+      },
+      {
+        "id": "c",
+        "text": "The hydrant rule is chosen by the owner after occupancy."
+      },
+      {
+        "id": "d",
+        "text": "Hydrant supply is based only on the number of toilets."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The checked RIRR family includes hydrant spacing/supply criteria and a fire reserve reference.",
+    "explanation": "The checked RIRR family includes hydrant spacing/supply criteria and a fire reserve reference.",
+    "code_citation": "RA 9514 RIRR refined markdown lines 13284-13291"
+  }
+}

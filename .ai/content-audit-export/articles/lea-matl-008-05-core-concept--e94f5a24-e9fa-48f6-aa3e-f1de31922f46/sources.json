@@ -1,32 +1,32 @@
 {
   "article_id": "e94f5a24-e9fa-48f6-aa3e-f1de31922f46",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:9d20fd3305263dda94ffc471f907ded7a70830e0bc5a75aeb66527261d316535",
+  "sources_hash": "sha256:ef18bff69673ff8ba57088664cdd6fb53d38ae27b2fe621893ff103ced4629d2",
   "source_count": 2,
   "sources": [
     {
-      "source_id": "f71eb281-b4bb-4367-a7c2-df099ffe18b6",
+      "source_id": "bci-5e-b080",
       "article_id": "e94f5a24-e9fa-48f6-aa3e-f1de31922f46",
-      "label": "Based on [ASTM C920 Elastomeric Joint Sealant Standard](https://usmadesupply.com/resources/building-codes-standards/astm-ul-general/astm-c920)",
+      "label": "Building Construction Illustrated, 5th Edition",
       "url": null,
-      "source_type": "reference_standard",
-      "description": "[ASTM C920 Joint Movement Capability Classification](https://www.buildinggreen.com/blog/how-choose-sealant-works), ASTM D2382 (Epoxy Adhesives), and product data from manufacturer specifications for tropical climate applications",
-      "is_verified": false,
+      "source_type": "primary_building_construction_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-080-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf; raw_pdf_sha256=sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md; refined_markdown_sha256=sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a; checked_locator=BCI refined markdown lines 16020-16145; raw PDF page 438 checked by local PyMuPDF extraction",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:00.685475+00:00",
-      "updated_at": "2026-03-24T04:34:00.685475+00:00"
+      "created_at": "2026-05-12T07:05:00.000+08:00",
+      "updated_at": "2026-05-12T07:05:00.000+08:00"
     },
     {
-      "source_id": "9068a2fa-8c3a-4d64-a7cb-10701787b459",
+      "source_id": "salvan-building-materials-b080",
       "article_id": "e94f5a24-e9fa-48f6-aa3e-f1de31922f46",
-      "label": "Philippine construction standards adopt ASTM specifications; climate derating factors based on engineering practice in tropical regions",
+      "label": "George Salvan Architectural Building Materials",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "primary_building_materials_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-080-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf; raw_pdf_sha256=sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md; refined_markdown_sha256=sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42; checked_locator=Salvan refined markdown lines 2678-2854; raw PDF pages 91-94 checked by local PyMuPDF extraction",
+      "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:00.685475+00:00",
-      "updated_at": "2026-03-24T04:34:00.685475+00:00"
+      "created_at": "2026-05-12T07:05:00.000+08:00",
+      "updated_at": "2026-05-12T07:05:00.000+08:00"
     }
   ]
 }

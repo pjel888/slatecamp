@@ -1,0 +1,287 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-069-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T00:24:00+08:00",
+  "target": {
+    "article_id": "f7007096-dbed-43dd-9bba-67fa705834ca",
+    "slug": "lea-plan-007-07-core-concept",
+    "title": "United Architects of the Philippines (UAP)",
+    "article_folder": ".ai/content-audit-export/articles/lea-plan-007-07-core-concept--f7007096-dbed-43dd-9bba-67fa705834ca",
+    "normalized_sha256": "sha256:c2dc96bc6d78426c81a439a8db0a262f79521bdb08b6118eb916e68e855b1f88",
+    "candidate_sha256": "sha256:c2dc96bc6d78426c81a439a8db0a262f79521bdb08b6118eb916e68e855b1f88",
+    "candidate_path": ".ai/content-audit-export/articles/lea-plan-007-07-core-concept--f7007096-dbed-43dd-9bba-67fa705834ca/candidate.md"
+  },
+  "classification": {
+    "legal_or_code_candidate": true,
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "source_risk_tier": "high",
+    "source_domains": [
+      "RA 9266 IRR - IAPOA, UAP, SPP, and Code of Ethical Conduct",
+      "UAP 2010 Standards of Professional Practice",
+      "UAP Document Code of Ethics"
+    ]
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdfs_checked_first": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "local_pdf_extraction_method": "python_pymupdf_local",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "ra9266-irr-iapoa-spp-ethics-local-b069",
+      "label": "RA 9266 IRR - IAPOA, UAP, SPP, and Code of Ethical Conduct",
+      "authority": "Local raw PDF and refined markdown conversion",
+      "source_type": "architecture_law_irr_pdf",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "source_locator": "RA 9266 IRR refined markdown lines 5-9, 152, 218, 251-260, 313-319, 670-672, 819-831, and 847-855; raw PDF pages 3-8, 17, 21-22 checked by local PDF extraction",
+      "checked_markdown_lines": [
+        "RA 9266 IRR lines 5-9",
+        "RA 9266 IRR lines 152 and 218",
+        "RA 9266 IRR lines 251-260",
+        "RA 9266 IRR lines 313-319",
+        "RA 9266 IRR lines 670-672",
+        "RA 9266 IRR lines 819-831",
+        "RA 9266 IRR lines 847-855"
+      ],
+      "checked_raw_pdf_pages": [
+        "RA 9266 IRR raw PDF pages 3-8",
+        "RA 9266 IRR raw PDF page 17",
+        "RA 9266 IRR raw PDF pages 21-22"
+      ],
+      "use": "primary source for IAPOA/UAP, SPP, Code of Ethical Conduct, CPD, and practice-document claims",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+      "local_source_checked": true
+    },
+    {
+      "source_id": "uap-spp-2010-local-b069",
+      "label": "UAP 2010 Standards of Professional Practice",
+      "authority": "Local raw PDF and refined markdown conversion",
+      "source_type": "professional_standard_pdf",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+      "source_locator": "UAP SPP refined markdown lines 25-60, 71, 115-123, 1274, 1299-1322, and 1659-1680; raw PDF pages 1-6, 42, 51-52, and 69 checked by local PDF extraction",
+      "checked_markdown_lines": [
+        "UAP SPP lines 25-60",
+        "UAP SPP line 71",
+        "UAP SPP lines 115-123",
+        "UAP SPP line 1274",
+        "UAP SPP lines 1299-1322",
+        "UAP SPP lines 1659-1680"
+      ],
+      "checked_raw_pdf_pages": [
+        "UAP SPP raw PDF pages 1-6",
+        "UAP SPP raw PDF page 42",
+        "UAP SPP raw PDF pages 51-52",
+        "UAP SPP raw PDF page 69"
+      ],
+      "use": "primary source for SPP scope, IAPOA references, competition, and consulting-services claims",
+      "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+      "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+      "local_source_checked": true
+    },
+    {
+      "source_id": "uap-code-ethics-local-b069",
+      "label": "UAP Document Code of Ethics",
+      "authority": "Local raw PDF and refined markdown conversion",
+      "source_type": "professional_ethics_pdf",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+      "source_locator": "UAP Code of Ethics refined markdown lines 29 and 54 plus client/public-interest responsibility passages; raw PDF pages 1-4 checked by local PDF extraction",
+      "checked_markdown_lines": [
+        "UAP Code of Ethics lines 29 and 54",
+        "UAP Code of Ethics client/public-interest passages"
+      ],
+      "checked_raw_pdf_pages": [
+        "UAP Code of Ethics raw PDF pages 1-4"
+      ],
+      "use": "primary source for ethics and professional fee framing",
+      "raw_pdf_sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+      "refined_markdown_sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+      "local_source_checked": true
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "article-source-scope",
+      "claim_text": "United Architects of the Philippines (UAP) was rewritten to checked Batch 069 local raw-source scope.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9266-irr-iapoa-spp-ethics-local-b069",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_locator": "RA 9266 IRR refined markdown lines 5-9, 152, 218, 251-260, 313-319, 670-672, 819-831, and 847-855; raw PDF pages 3-8, 17, 21-22 checked by local PDF extraction; UAP SPP refined markdown lines 25-60, 71, 115-123, 1274, 1299-1322, and 1659-1680; raw PDF pages 1-6, 42, 51-52, and 69 checked by local PDF extraction; UAP Code of Ethics refined markdown lines 29 and 54 plus client/public-interest responsibility passages; raw PDF pages 1-4 checked by local PDF extraction",
+        "quoted_pdf_excerpt": "Article uses source-safe paraphrase only; raw PDF pages and refined line locators are recorded."
+      }
+    },
+    {
+      "claim_id": "question-edit-1",
+      "claim_text": "Question edit 1 for lea-plan-007-07-core-concept is rewritten within the Batch 069 checked local raw-source scope.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9266-irr-iapoa-spp-ethics-local-b069",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_locator": "RA 9266 IRR refined markdown lines 5-9, 152, 218, 251-260, 313-319, 670-672, 819-831, and 847-855; raw PDF pages 3-8, 17, 21-22 checked by local PDF extraction; UAP SPP refined markdown lines 25-60, 71, 115-123, 1274, 1299-1322, and 1659-1680; raw PDF pages 1-6, 42, 51-52, and 69 checked by local PDF extraction; UAP Code of Ethics refined markdown lines 29 and 54 plus client/public-interest responsibility passages; raw PDF pages 1-4 checked by local PDF extraction",
+        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
+      }
+    },
+    {
+      "claim_id": "question-edit-2",
+      "claim_text": "Question edit 2 for lea-plan-007-07-core-concept is rewritten within the Batch 069 checked local raw-source scope.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9266-irr-iapoa-spp-ethics-local-b069",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_locator": "RA 9266 IRR refined markdown lines 5-9, 152, 218, 251-260, 313-319, 670-672, 819-831, and 847-855; raw PDF pages 3-8, 17, 21-22 checked by local PDF extraction; UAP SPP refined markdown lines 25-60, 71, 115-123, 1274, 1299-1322, and 1659-1680; raw PDF pages 1-6, 42, 51-52, and 69 checked by local PDF extraction; UAP Code of Ethics refined markdown lines 29 and 54 plus client/public-interest responsibility passages; raw PDF pages 1-4 checked by local PDF extraction",
+        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
+      }
+    },
+    {
+      "claim_id": "question-edit-3",
+      "claim_text": "Question edit 3 for lea-plan-007-07-core-concept is rewritten within the Batch 069 checked local raw-source scope.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9266-irr-iapoa-spp-ethics-local-b069",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_locator": "RA 9266 IRR refined markdown lines 5-9, 152, 218, 251-260, 313-319, 670-672, 819-831, and 847-855; raw PDF pages 3-8, 17, 21-22 checked by local PDF extraction; UAP SPP refined markdown lines 25-60, 71, 115-123, 1274, 1299-1322, and 1659-1680; raw PDF pages 1-6, 42, 51-52, and 69 checked by local PDF extraction; UAP Code of Ethics refined markdown lines 29 and 54 plus client/public-interest responsibility passages; raw PDF pages 1-4 checked by local PDF extraction",
+        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
+      }
+    },
+    {
+      "claim_id": "question-edit-4",
+      "claim_text": "Question edit 4 for lea-plan-007-07-core-concept is rewritten within the Batch 069 checked local raw-source scope.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9266-irr-iapoa-spp-ethics-local-b069",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_locator": "RA 9266 IRR refined markdown lines 5-9, 152, 218, 251-260, 313-319, 670-672, 819-831, and 847-855; raw PDF pages 3-8, 17, 21-22 checked by local PDF extraction; UAP SPP refined markdown lines 25-60, 71, 115-123, 1274, 1299-1322, and 1659-1680; raw PDF pages 1-6, 42, 51-52, and 69 checked by local PDF extraction; UAP Code of Ethics refined markdown lines 29 and 54 plus client/public-interest responsibility passages; raw PDF pages 1-4 checked by local PDF extraction",
+        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
+      }
+    },
+    {
+      "claim_id": "question-edit-5",
+      "claim_text": "Question edit 5 for lea-plan-007-07-core-concept is rewritten within the Batch 069 checked local raw-source scope.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9266-irr-iapoa-spp-ethics-local-b069",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_locator": "RA 9266 IRR refined markdown lines 5-9, 152, 218, 251-260, 313-319, 670-672, 819-831, and 847-855; raw PDF pages 3-8, 17, 21-22 checked by local PDF extraction; UAP SPP refined markdown lines 25-60, 71, 115-123, 1274, 1299-1322, and 1659-1680; raw PDF pages 1-6, 42, 51-52, and 69 checked by local PDF extraction; UAP Code of Ethics refined markdown lines 29 and 54 plus client/public-interest responsibility passages; raw PDF pages 1-4 checked by local PDF extraction",
+        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
+      }
+    },
+    {
+      "claim_id": "question-edit-6",
+      "claim_text": "Question edit 6 for lea-plan-007-07-core-concept is rewritten within the Batch 069 checked local raw-source scope.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9266-irr-iapoa-spp-ethics-local-b069",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_locator": "RA 9266 IRR refined markdown lines 5-9, 152, 218, 251-260, 313-319, 670-672, 819-831, and 847-855; raw PDF pages 3-8, 17, 21-22 checked by local PDF extraction; UAP SPP refined markdown lines 25-60, 71, 115-123, 1274, 1299-1322, and 1659-1680; raw PDF pages 1-6, 42, 51-52, and 69 checked by local PDF extraction; UAP Code of Ethics refined markdown lines 29 and 54 plus client/public-interest responsibility passages; raw PDF pages 1-4 checked by local PDF extraction",
+        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
+      }
+    },
+    {
+      "claim_id": "question-edit-7",
+      "claim_text": "Question edit 7 for lea-plan-007-07-core-concept is rewritten within the Batch 069 checked local raw-source scope.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9266-irr-iapoa-spp-ethics-local-b069",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_locator": "RA 9266 IRR refined markdown lines 5-9, 152, 218, 251-260, 313-319, 670-672, 819-831, and 847-855; raw PDF pages 3-8, 17, 21-22 checked by local PDF extraction; UAP SPP refined markdown lines 25-60, 71, 115-123, 1274, 1299-1322, and 1659-1680; raw PDF pages 1-6, 42, 51-52, and 69 checked by local PDF extraction; UAP Code of Ethics refined markdown lines 29 and 54 plus client/public-interest responsibility passages; raw PDF pages 1-4 checked by local PDF extraction",
+        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
+      }
+    },
+    {
+      "claim_id": "question-edit-8",
+      "claim_text": "Question edit 8 for lea-plan-007-07-core-concept is rewritten within the Batch 069 checked local raw-source scope.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9266-irr-iapoa-spp-ethics-local-b069",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_locator": "RA 9266 IRR refined markdown lines 5-9, 152, 218, 251-260, 313-319, 670-672, 819-831, and 847-855; raw PDF pages 3-8, 17, 21-22 checked by local PDF extraction; UAP SPP refined markdown lines 25-60, 71, 115-123, 1274, 1299-1322, and 1659-1680; raw PDF pages 1-6, 42, 51-52, and 69 checked by local PDF extraction; UAP Code of Ethics refined markdown lines 29 and 54 plus client/public-interest responsibility passages; raw PDF pages 1-4 checked by local PDF extraction",
+        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
+      }
+    },
+    {
+      "claim_id": "question-edit-9",
+      "claim_text": "Question edit 9 for lea-plan-007-07-core-concept is rewritten within the Batch 069 checked local raw-source scope.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9266-irr-iapoa-spp-ethics-local-b069",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_locator": "RA 9266 IRR refined markdown lines 5-9, 152, 218, 251-260, 313-319, 670-672, 819-831, and 847-855; raw PDF pages 3-8, 17, 21-22 checked by local PDF extraction; UAP SPP refined markdown lines 25-60, 71, 115-123, 1274, 1299-1322, and 1659-1680; raw PDF pages 1-6, 42, 51-52, and 69 checked by local PDF extraction; UAP Code of Ethics refined markdown lines 29 and 54 plus client/public-interest responsibility passages; raw PDF pages 1-4 checked by local PDF extraction",
+        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
+      }
+    },
+    {
+      "claim_id": "question-edit-10",
+      "claim_text": "Question edit 10 for lea-plan-007-07-core-concept is rewritten within the Batch 069 checked local raw-source scope.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra9266-irr-iapoa-spp-ethics-local-b069",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_locator": "RA 9266 IRR refined markdown lines 5-9, 152, 218, 251-260, 313-319, 670-672, 819-831, and 847-855; raw PDF pages 3-8, 17, 21-22 checked by local PDF extraction; UAP SPP refined markdown lines 25-60, 71, 115-123, 1274, 1299-1322, and 1659-1680; raw PDF pages 1-6, 42, 51-52, and 69 checked by local PDF extraction; UAP Code of Ethics refined markdown lines 29 and 54 plus client/public-interest responsibility passages; raw PDF pages 1-4 checked by local PDF extraction",
+        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
+      }
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "sme_review": {
+    "required": false,
+    "status": "PASS",
+    "reason": "Local-first source audit only; no Supabase publish performed."
+  },
+  "scenario_enrichment": {
+    "policy_status": "pending",
+    "eligibility_status": "eligible-deferred",
+    "blocker_status": "nonblocking",
+    "note": "No Real World Scenario section was added; source correctness and question safety remained the blocking criteria."
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

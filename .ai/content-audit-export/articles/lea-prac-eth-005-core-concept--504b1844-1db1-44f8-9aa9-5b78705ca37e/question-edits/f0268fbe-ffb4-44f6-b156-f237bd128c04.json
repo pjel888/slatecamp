@@ -1,0 +1,71 @@
+{
+  "question_id": "f0268fbe-ffb4-44f6-b156-f237bd128c04",
+  "baseline_hash": "sha256:80971003fc9f75448f6c35cebb7acc46eeebe98cc7d94b76b9f8e071d4540ecc",
+  "action": "replace",
+  "reason": "source-audited-article-batch-017-local-first rewrote linked question to match the locally checked UAP Code of Ethics source for lea-prac-eth-005-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-017",
+  "approved_at": "2026-05-10T23:30:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "504b1844-1db1-44f8-9aa9-5b78705ca37e",
+    "parent_article_slug": "lea-prac-eth-005-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UAP Document Code of Ethics, Section 5, raw markdown lines 92-118",
+    "checked_markdown_lines": [
+      "raw markdown lines 92-118"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+        "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+        "source_id": "uap-document-code-of-ethics",
+        "locator": "UAP Document Code of Ethics, Section 5, raw markdown lines 92-118"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
+        "sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
+        "source_id": "uap-document-code-of-ethics-raw-markdown",
+        "locator": "UAP Document Code of Ethics, Section 5, raw markdown lines 92-118"
+      }
+    ],
+    "local_source_safe_action": "Question was rewritten to avoid unverified PRBoA-resolution, hierarchy, or enforcement claims and to use only statements anchored in the raw UAP Code of Ethics source."
+  },
+  "proposed": {
+    "text": "What does Section 5-c say about commissions already known to be endowed to another architect?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The architect shall not seek them, whether agreed or still under negotiation."
+      },
+      {
+        "id": "b",
+        "text": "The architect may seek them if the fee is lower."
+      },
+      {
+        "id": "c",
+        "text": "The architect may seek them if no drawings are complete."
+      },
+      {
+        "id": "d",
+        "text": "The architect must seek them to protect the client."
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "Section 5-c bars seeking commissions already known to be endowed to another architect, whether agreed or still under negotiation.",
+    "explanation": "Section 5-c bars seeking commissions already known to be endowed to another architect, whether agreed or still under negotiation.",
+    "code_citation": "UAP Document Code of Ethics, line 103",
+    "bloom_level": "understand",
+    "application_context": "professional_practice",
+    "practice_context": [
+      "Code of Ethical Conduct",
+      "Professional ethics"
+    ],
+    "difficulty": 0.7,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-ETH-005-008"
+  }
+}

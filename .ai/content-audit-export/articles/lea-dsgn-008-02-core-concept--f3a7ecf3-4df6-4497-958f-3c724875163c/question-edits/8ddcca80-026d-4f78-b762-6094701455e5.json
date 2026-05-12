@@ -1,0 +1,32 @@
+{
+  "question_id": "8ddcca80-026d-4f78-b762-6094701455e5",
+  "baseline_hash": "sha256:2ebb85c55d203ea27b7cece2f09ee49e26dd1061de2a45f4fbfbbb9846998a20",
+  "reason": "Batch 003 source audit corrected the wrong Group D storage premise. PD 1096 classifies Group D as Institutional and Group G as Storage and Hazardous; RA 9514 supplies protected-exit and special-hazard rules.",
+  "approved_by": "codex-local-source-audit-batch-003",
+  "approved_at": "2026-05-10T18:00:00+08:00",
+  "proposed": {
+    "text": "Which statement is source-safe when evaluating whether a wall or floor is fire-rated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A material name alone proves the hourly rating"
+      },
+      {
+        "id": "b",
+        "text": "Untaped gypsum board automatically satisfies any two-hour requirement"
+      },
+      {
+        "id": "c",
+        "text": "A fire rating is unnecessary if the finish schedule lists noncombustible materials"
+      },
+      {
+        "id": "d",
+        "text": "The required rating must be tied to the code condition and a verified rated assembly or tested/listed construction"
+      }
+    ],
+    "correct_option_id": "d",
+    "rationale": "The repaired article keeps source-backed code conditions and avoids unsupported material shortcuts.",
+    "explanation": "The old material-specific claim was not supported by the cited sources.",
+    "code_citation": "PD 1096 fire-resistive definitions; RA 9514 protected-exit and hazard provisions"
+  }
+}

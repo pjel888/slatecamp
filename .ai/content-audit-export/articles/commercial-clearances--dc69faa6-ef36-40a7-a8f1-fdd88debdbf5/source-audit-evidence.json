@@ -1,0 +1,145 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "artifact_type": "article_source_audit",
+  "batch_id": "source-audited-article-batch-038-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T13:26:35+08:00",
+  "target": {
+    "article_id": "dc69faa6-ef36-40a7-a8f1-fdd88debdbf5",
+    "slug": "commercial-clearances",
+    "candidate_sha256": "sha256:60d2554d8c173ae111bdd3de2950f5667351fd879954d419bab482f9f24f3127",
+    "normalized_sha256": "sha256:60d2554d8c173ae111bdd3de2950f5667351fd879954d419bab482f9f24f3127"
+  },
+  "classification": {
+    "requires_raw_pdf_audit": true,
+    "source_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "derivative_layer_role": "locator aid only",
+    "legal_or_code_sensitive": true
+  },
+  "paths": {
+    "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/commercial-clearances--dc69faa6-ef36-40a7-a8f1-fdd88debdbf5",
+    "normalized_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/commercial-clearances--dc69faa6-ef36-40a7-a8f1-fdd88debdbf5/normalized.md",
+    "candidate_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/commercial-clearances--dc69faa6-ef36-40a7-a8f1-fdd88debdbf5/candidate.md",
+    "sources_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/commercial-clearances--dc69faa6-ef36-40a7-a8f1-fdd88debdbf5/sources.json",
+    "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/commercial-clearances--dc69faa6-ef36-40a7-a8f1-fdd88debdbf5/question-edits"
+  },
+  "raw_sources": [
+    {
+      "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+      "label": "PD 1096 2004 Revised IRR - DPWH Official",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "source_locator": "PD 1096 RIRR refined markdown lines 2087-2138; PD 1096 RIRR refined markdown lines 2246-2310; PD 1096 RIRR refined markdown lines 2352-2356",
+      "checked_markdown_lines": [
+        "PD 1096 RIRR refined markdown lines 2087-2138",
+        "PD 1096 RIRR refined markdown lines 2246-2310",
+        "PD 1096 RIRR refined markdown lines 2352-2356"
+      ]
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+      "label": "PD 1096 2004 Revised IRR - DPWH Official",
+      "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "checked_markdown_lines": [
+        "PD 1096 RIRR refined markdown lines 2087-2138",
+        "PD 1096 RIRR refined markdown lines 2246-2310",
+        "PD 1096 RIRR refined markdown lines 2352-2356"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "commercial-pso-tosl",
+      "claim_text": "Rule VIII Table VIII.1 gives commercial PSO, impervious surface, unpaved surface, and TOSL controls for C-1, C-2, and C-3 classes.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "pd-1096-rirr-2004-dpwh-official-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "quoted_pdf_excerpt": "Rule VIII Table VIII.1 gives commercial PSO, impervious surface, unpaved surface, and TOSL controls for C-1, C-2, and C-3 classes.",
+        "locator": "PD 1096 RIRR refined markdown lines 2129-2138"
+      }
+    },
+    {
+      "claim_id": "commercial-setbacks",
+      "claim_text": "Rule VIII Table VIII.3 gives front, side, and rear setback requirements for commercial, industrial, institutional, and recreational buildings based on RROW width.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "pd-1096-rirr-2004-dpwh-official-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "quoted_pdf_excerpt": "Rule VIII Table VIII.3 gives front, side, and rear setback requirements for commercial, industrial, institutional, and recreational buildings based on RROW width.",
+        "locator": "PD 1096 RIRR refined markdown lines 2246-2310"
+      }
+    },
+    {
+      "claim_id": "ceiling-clearance",
+      "claim_text": "Rule VIII Section 805 gives minimum ceiling heights for habitable rooms, including artificial and natural ventilation conditions and mezzanine clear height.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "pd-1096-rirr-2004-dpwh-official-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "quoted_pdf_excerpt": "Rule VIII Section 805 gives minimum ceiling heights for habitable rooms, including artificial and natural ventilation conditions and mezzanine clear height.",
+        "locator": "PD 1096 RIRR refined markdown lines 2352-2356"
+      }
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "removed_or_rewritten_material": [
+    "Rewrote article and linked-question material to local raw-source-supported PD 1096 RIRR claims only."
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_pdf_families_checked": [
+      "PD 1096 2004 Revised IRR - DPWH Official"
+    ],
+    "blockers": []
+  },
+  "gate_results": {
+    "ui_markers_removed_or_resolved": true,
+    "internal_notes_removed": true,
+    "non_local_claims_removed": true,
+    "sources_json_updated": true,
+    "question_edits_created": true
+  },
+  "source_safe_repair": {
+    "performed": true,
+    "repair_notes": "Local-first article and question repairs were limited to claims supported by listed local raw PDFs and locator-checked refined markdown."
+  },
+  "local_validation": {
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_edits": "PASS",
+    "scoped_checks": "PASS",
+    "targeted_tests": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "sme_review": {
+    "required": false,
+    "status": "PASS",
+    "rationale": "Batch is local-first source-audited repair; final publishing review remains separate."
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

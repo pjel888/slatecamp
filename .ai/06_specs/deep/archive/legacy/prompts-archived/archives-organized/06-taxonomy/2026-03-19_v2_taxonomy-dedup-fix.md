@@ -1,7 +1,7 @@
 # SlateCamp — Taxonomy Deduplication Fix Plan
-**Prepared by:** Database Architect  
-**Date:** 2026-03-19  
-**Priority:** 🔴 URGENT — breaks Wiki sidebar, heatmap, quiz engine topic routing  
+**Prepared by:** Database Architect
+**Date:** 2026-03-19
+**Priority:** 🔴 URGENT — breaks Wiki sidebar, heatmap, quiz engine topic routing
 **Root cause:** v5.0 taxonomy nodes were imported but v1 nodes were never deprecated (Import Pipeline Step 12 was not executed)
 
 ---
@@ -185,9 +185,9 @@ WHERE tt.ale_id IS NULL;
 
 ## Part 3 — Migration 031: Taxonomy Deduplication
 
-**File:** `031_taxonomy_deduplication.sql`  
-**Run order:** After app fix is deployed, after diagnostics are reviewed  
-**Idempotent:** Yes — all operations use conflict guards  
+**File:** `031_taxonomy_deduplication.sql`
+**Run order:** After app fix is deployed, after diagnostics are reviewed
+**Idempotent:** Yes — all operations use conflict guards
 **Risk:** Medium — re-links live data. Run in Supabase SQL editor with transaction wrapping.
 
 ```sql
@@ -683,5 +683,5 @@ Two things will prevent this in the future:
 
 ---
 
-*SlateCamp — Taxonomy Deduplication Fix Plan*  
+*SlateCamp — Taxonomy Deduplication Fix Plan*
 *DB Architect + Philip (Founder) · 2026-03-19*

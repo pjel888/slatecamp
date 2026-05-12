@@ -1,0 +1,49 @@
+{
+  "question_id": "53bbb60d-d87d-4396-a73e-8bfa82c5bdaf",
+  "baseline_hash": "sha256:704101e9bf140cd6a139f107ca8ff8fd2637459578cc9bb44b34c4e76f4ff4c8",
+  "action": "replace",
+  "reason": "source-audited-article-batch-037-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-037",
+  "approved_at": "2026-05-11T13:16:58+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-037-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR 2004 DPWH Official refined markdown lines 968-990",
+          "PD 1096 RIRR 2004 DPWH Official refined markdown lines 3789-3897"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 1211"
+  },
+  "proposed": {
+    "text": "What minimum firebox depth is stated for fireplaces under Section 1211?",
+    "options": [
+      {
+        "id": "b037-f8d4-12-a",
+        "text": "500 mm"
+      },
+      {
+        "id": "b037-f8d4-12-b",
+        "text": "300 mm"
+      },
+      {
+        "id": "b037-f8d4-12-c",
+        "text": "450 mm"
+      },
+      {
+        "id": "b037-f8d4-12-d",
+        "text": "600 mm"
+      }
+    ],
+    "correct_option_id": "b037-f8d4-12-a",
+    "rationale": "Correct answer: 500 mm. This is directly supported by PD 1096 2004 Revised IRR, Section 1211.",
+    "explanation": "The Batch 037 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 1211.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 1211"
+  }
+}

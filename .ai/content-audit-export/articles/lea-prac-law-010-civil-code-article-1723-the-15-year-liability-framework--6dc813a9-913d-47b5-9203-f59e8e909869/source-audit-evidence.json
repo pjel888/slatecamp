@@ -1,0 +1,143 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T20:15:00+08:00",
+  "audit_mode": "local_source_audit_no_supabase",
+  "protocols_applied": [
+    ".ai/CONTENT_EXCELLENCE_GOAL.md",
+    ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
+    ".ai/00_system/vitruvius-source-reference.md"
+  ],
+  "target": {
+    "article_id": "6dc813a9-913d-47b5-9203-f59e8e909869",
+    "slug": "lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework",
+    "title": "Civil Code Article 1723: The 15-Year Liability Framework",
+    "article_folder": ".ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/candidate.md",
+    "candidate_sha256": "sha256:235e759539b600dd06a1bc451f92e659387f3a6aee0455783de2a46a6f2ce7c0",
+    "normalized_sha256": "sha256:235e759539b600dd06a1bc451f92e659387f3a6aee0455783de2a46a6f2ce7c0",
+    "linked_questions_sha256": "sha256:397847afa67604e38dff09ca584a3dc7736d8f1b23f51543fd05993d4be3fd92",
+    "sources_sha256": "sha256:7c7dccd7cc7987e294ddcd79d59c9cf9aaafbc7088f7a440acd8f32cdf491bd4"
+  },
+  "classification": {
+    "content_type": "civil_code_article_1723_article",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": [
+      "76fe3143-368f-4db5-9bb9-348640000e3a",
+      "8578dc0a-0d66-42db-9904-5a6d4a700b46",
+      "023017de-e780-41ba-aadd-3b647271ca32",
+      "fee18dcf-2494-4930-b87f-aa50f7b703a6",
+      "4a71ac43-563a-48f4-b2cb-891a5dc3d61f",
+      "6e10941c-0f97-41d1-b596-f91b42f47356",
+      "760d5fa8-81e7-4039-bccb-08b972eec248",
+      "e4a0bc5f-3648-4ac0-ba70-3a46174589e7",
+      "e966f7b8-e605-4866-884d-60b4ee51c577",
+      "f93a2068-4c06-44ed-b97e-3c43eacee196"
+    ]
+  },
+  "raw_sources": [
+    {
+      "key": "civil_code_1723",
+      "label": "Civil Code of the Philippines, Article 1723",
+      "source_type": "statute",
+      "source_id": "batch004-law010-source-01",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code of the Phils.pdf",
+      "raw_pdf_sha256": "sha256:95b8d7bf26fabeab9d27c661a53729273b69c88fc8565cc2a7146243df693400",
+      "checked_pdf_pages": [
+        123
+      ]
+    },
+    {
+      "key": "ra9266_irr",
+      "label": "RA 9266 IRR Architecture Act of 2004",
+      "source_type": "implementing_rules",
+      "source_id": "batch004-law010-source-02",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "checked_pdf_pages": [
+        2,
+        18,
+        19
+      ]
+    }
+  ],
+  "gate_results": {
+    "compose": "PASS: content-audit:compose -- --article-id <id> --overwrite; blockers=0",
+    "diff": "PASS: content-audit:diff -- --article-id <id>; changed=true safe_to_push=true blockers=0",
+    "validate": "PASS: content-audit:validate -- --article-id <id> --summary --dry-run; valid=true blockers=0 warnings=0",
+    "push_dry_run": "not_attempted_local_first; Supabase remote fetch is final publishing only and is intentionally non-blocking here",
+    "supabase_mutation": "not_attempted"
+  },
+  "claims": [
+    {
+      "claim_id": "law010-claim-01",
+      "claim_text": "Civil Code Article 1723 makes the engineer or architect who drew plans/specifications liable if the building collapses within fifteen years from completion due to defects in plans/specifications or ground defects.",
+      "source_support": [
+        "civil_code_1723"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "law010-claim-02",
+      "claim_text": "Civil Code Article 1723 makes the contractor responsible if the edifice falls within the same period because of construction defects, inferior materials furnished by the contractor, or violation of contract terms.",
+      "source_support": [
+        "civil_code_1723"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "law010-claim-03",
+      "claim_text": "Civil Code Article 1723 states that if the engineer or architect supervises construction, that professional is solidarily liable with the contractor.",
+      "source_support": [
+        "civil_code_1723"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "law010-claim-04",
+      "claim_text": "Civil Code Article 1723 states that acceptance after completion does not imply waiver and that the action must be brought within ten years following collapse.",
+      "source_support": [
+        "civil_code_1723"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "law010-claim-05",
+      "claim_text": "RA 9266 IRR Section 3(2)(a)-(b) and Section 32 support AoR/AiCC terminology and connect the AoR signature/seal with Article 1723 civil liability.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework-linked-question-edits",
+      "claim_text": "Question edits staged locally for linked question IDs/model IDs: 76fe3143-368f-4db5-9bb9-348640000e3a (ALE-PRAC-LAW-010-008), 8578dc0a-0d66-42db-9904-5a6d4a700b46 (ALE-PRAC-LAW-010-010), 023017de-e780-41ba-aadd-3b647271ca32 (ALE-PRAC-LAW-010-009), fee18dcf-2494-4930-b87f-aa50f7b703a6 (ALE-PRAC-LAW-010-005), 4a71ac43-563a-48f4-b2cb-891a5dc3d61f (ALE-PRAC-LAW-010-004), 6e10941c-0f97-41d1-b596-f91b42f47356 (ALE-PRAC-LAW-010-002), 760d5fa8-81e7-4039-bccb-08b972eec248 (ALE-PRAC-LAW-010-006), e4a0bc5f-3648-4ac0-ba70-3a46174589e7 (ALE-PRAC-LAW-010-007), e966f7b8-e605-4866-884d-60b4ee51c577 (ALE-PRAC-LAW-010-003), f93a2068-4c06-44ed-b97e-3c43eacee196 (ALE-PRAC-LAW-010-001)",
+      "audit_result": "PASS",
+      "source_support": [
+        "civil_code_1723",
+        "ra9266_irr"
+      ]
+    }
+  ],
+  "unsupported_or_removed_claims": [
+    "Removed learner-visible preserved UI placeholder blocks and internal replacement notes from normalized/candidate content.",
+    "Removed unsupported overstatement that Article 1723 imposes general strict liability beyond the collapse and cause conditions stated in the Civil Code."
+  ],
+  "remaining_local_blockers": [],
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_recovery_complete": true,
+    "remote_publish_status": "not_attempted_by_request",
+    "remaining_local_blockers": []
+  },
+  "local_validation": {
+    "command": "bun run content-audit:validate -- --article-id 6dc813a9-913d-47b5-9203-f59e8e909869 --summary --dry-run",
+    "valid": true,
+    "blockers": 0,
+    "warnings": [],
+    "checked_at": "2026-05-10T16:39:34+08:00"
+  }
+}

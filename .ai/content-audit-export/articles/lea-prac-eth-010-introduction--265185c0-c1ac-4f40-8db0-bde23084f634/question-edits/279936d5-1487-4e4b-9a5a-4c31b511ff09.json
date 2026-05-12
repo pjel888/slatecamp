@@ -1,0 +1,32 @@
+{
+  "question_id": "279936d5-1487-4e4b-9a5a-4c31b511ff09",
+  "baseline_hash": "sha256:5846af29e39eed891c38d7fa97d7324437f0c54e97171b2ea5ee1529d93f2204",
+  "reason": "Batch 003 source audit removed unsupported penalty ranges, restitution amounts, dollar values, and scenario statistics; questions now use RA 9266 IRR and UAP Code of Ethics conduct categories.",
+  "approved_by": "codex-local-source-audit-batch-003",
+  "approved_at": "2026-05-10T18:00:00+08:00",
+  "proposed": {
+    "text": "An architect's certificate or professional identification card is not current, but the architect accepts a commission and seals documents before renewal. What is the source-backed issue?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No issue if renewal happens later"
+      },
+      {
+        "id": "b",
+        "text": "Improper practice/sealing while the authority to practice or seal is not in force"
+      },
+      {
+        "id": "c",
+        "text": "RA 9184 procurement violation"
+      },
+      {
+        "id": "d",
+        "text": "A fixed 2-year suspension automatically applies"
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": "RA 9266 IRR supports current certificate/PIC and sealing authority; later renewal does not make the expired-period act source-safe.",
+    "explanation": "The edit removes unsupported section-number and citation markers while keeping the source-backed violation category.",
+    "code_citation": "RA 9266 IRR certificate/PIC and seal provisions"
+  }
+}

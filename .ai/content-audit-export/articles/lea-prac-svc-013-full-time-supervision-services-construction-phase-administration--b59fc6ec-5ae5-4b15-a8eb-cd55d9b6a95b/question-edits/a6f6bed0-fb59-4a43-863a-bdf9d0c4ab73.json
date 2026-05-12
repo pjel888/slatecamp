@@ -1,0 +1,61 @@
+{
+  "question_id": "a6f6bed0-fb59-4a43-863a-bdf9d0c4ab73",
+  "baseline_hash": "sha256:bf258f84162a138a76d0a72e6519520ff013472a5e8f0bb649c0b3d863a0c7dc",
+  "action": "replace",
+  "reason": "source-audited-article-batch-020-local-first rewrote the question to match only locally checked source evidence.",
+  "approved_by": "codex-local-source-audit-batch-020",
+  "approved_at": "2026-05-10T16:41:51.472Z",
+  "source_audit_support": {
+    "parent_article_id": "b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b",
+    "parent_article_slug": "lea-prac-svc-013-full-time-supervision-services-construction-phase-administration",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "checked_sources": [
+      {
+        "source_id": "spp-204a-uap-local-raw-pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204A.pdf",
+        "raw_pdf_sha256": "sha256:ec08811ae8611f077fda9f0d1106cc7fab6a1e6210fe6d617637adaa6de083b8",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md lines 3-8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md lines 201-206"
+      }
+    ],
+    "local_source_safe_action": "Replaced the prior item with a source-bounded MCQ using only checked SPP source lines."
+  },
+  "proposed": {
+    "text": "Which answer should be avoided in this repaired SPP 204-A cluster without a separate verified source?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A compensation percentage or Civil Code liability rule."
+      },
+      {
+        "id": "b",
+        "text": "Quality Control."
+      },
+      {
+        "id": "c",
+        "text": "Evaluation of Construction Work."
+      },
+      {
+        "id": "d",
+        "text": "Preparation of Daily Inspection Reports."
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "The local audit verified the title and four scope items, not compensation or liability details.",
+    "explanation": "The local audit verified the title and four scope items, not compensation or liability details.",
+    "code_citation": "SPP Document 204-A",
+    "bloom_level": "analyze",
+    "application_context": "professional_practice",
+    "practice_context": [
+      "SPP Document 204-A",
+      "Fulltime Supervision Services: Construction-Phase Administration"
+    ],
+    "difficulty": 0.55,
+    "is_assessment": false,
+    "model_id": "BATCH-020-lea-prac-svc-013-full-time-supervision-services-construction-phase-administration-007"
+  }
+}

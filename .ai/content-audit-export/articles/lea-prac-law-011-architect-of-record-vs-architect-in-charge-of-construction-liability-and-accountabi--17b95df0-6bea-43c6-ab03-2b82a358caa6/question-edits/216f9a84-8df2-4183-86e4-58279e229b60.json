@@ -1,0 +1,31 @@
+{
+  "question_id": "216f9a84-8df2-4183-86e4-58279e229b60",
+  "baseline_hash": "sha256:acd160468193add0bff96e5967af29b0ce9b74b439db1ab4bb3c2255abba8a16",
+  "reason": "Batch 006 local source audit aligned linked question ALE-PRAC-LAW-011-010 to verified raw-source claims for lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountability.",
+  "approved_by": "codex-local-source-audit-batch-006",
+  "approved_at": "2026-05-10T22:30:00+08:00",
+  "proposed": {
+    "code_citation": "RA 9266 IRR Sections 3(2), 20, and 32; Civil Code Article 1723",
+    "explanation": "RA 9266 separates the AOR design-document role from the AiCC construction-supervision role; risk management starts with documenting which duties the architect actually accepts.",
+    "text": "How should an architect manage responsibility when the facts may involve both Architect-of-Record and Architect-in-Charge of Construction duties?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Treat the two role labels as interchangeable once construction begins"
+      },
+      {
+        "id": "b",
+        "text": "Define and document whether the architect is accepting design-document responsibility, construction-supervision responsibility, or both"
+      },
+      {
+        "id": "c",
+        "text": "Assume the contractor alone answers for all construction-stage defects"
+      },
+      {
+        "id": "d",
+        "text": "Assume the professional seal eliminates Article 1723 exposure"
+      }
+    ],
+    "correct_option_id": "b"
+  }
+}

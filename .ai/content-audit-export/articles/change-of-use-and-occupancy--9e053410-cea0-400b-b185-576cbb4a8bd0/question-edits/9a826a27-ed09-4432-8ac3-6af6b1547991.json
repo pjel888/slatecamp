@@ -1,0 +1,77 @@
+{
+  "question_id": "9a826a27-ed09-4432-8ac3-6af6b1547991",
+  "baseline_hash": "sha256:807cbb92637e89415b862e841e2b1c9e0c5080167c226d468be7a44b154fb894",
+  "action": "replace",
+  "reason": "source-audited-article-batch-048-local-first: local raw-source-backed replacement constrained to checked Batch 048 source families.",
+  "approved_by": "codex-local-first-batch-048",
+  "approved_at": "2026-05-11T19:48:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "9e053410-cea0-400b-b185-576cbb4a8bd0",
+    "parent_article_slug": "change-of-use-and-occupancy",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Start by choosing an extinguisher label.",
+    "checked_markdown_lines": [
+      "PD 1096 National Building Code refined markdown lines 243-251",
+      "PD 1096 National Building Code refined markdown lines 356-473",
+      "PD 1096 IRR refined markdown lines 1243-1252",
+      "PD 1096 IRR refined markdown lines 8715-8810",
+      "RA 9514 RIRR refined markdown lines 2285-2456"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "pd1096-national-building-code-local-raw-pdf--b048-9e053410-01",
+        "label": "PD 1096 National Building Code - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 - National Building Code.pdf",
+        "sha256": "sha256:0bd869faac8d949359aa9e3c5bea7026e85e348f61ce1e87a09d48991c5ba796",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 - National Building Code.md",
+        "refined_markdown_sha256": "sha256:d7df246271ae1bcb14ed8e4ba881ed75cfa8381cca9f465986d9947397f353d9",
+        "locator": "PD 1096 National Building Code refined markdown lines 243-251, 356-473, 1050-1225, and 1786-1822"
+      },
+      {
+        "source_id": "pd1096-irr-full-local-raw-pdf--b048-9e053410-02",
+        "label": "PD 1096 IRR Full Implementing Rules and Regulations - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.pdf",
+        "sha256": "sha256:8e98d8afd4b5972ba5a82d33a65e59e800cd41661b764a0dfc4112d29697b341",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.md",
+        "refined_markdown_sha256": "sha256:a43068979bbca37450a11ed16cbb966e2aff6d682cdded1ab3bf22b1d541efd0",
+        "locator": "PD 1096 IRR refined markdown lines 1243-1252, 1334-1378, 3009-3138, 3750-3825, 8637-8810, and 9180-9514"
+      },
+      {
+        "source_id": "ra9514-rirr-2019-local-raw-pdf--b048-9e053410-03",
+        "label": "RA 9514 Fire Code RIRR 2019 - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "locator": "RA 9514 RIRR refined markdown lines 2285-2456"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 048 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "What is the first step in a PD 1096 change-of-use question?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Identify the existing and proposed occupancy groups under Section 701."
+      },
+      {
+        "id": "b",
+        "text": "S"
+      },
+      {
+        "id": "c",
+        "text": "t"
+      },
+      {
+        "id": "d",
+        "text": "a"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Identify the existing and proposed occupancy groups under Section 701. This is supported by Start by computing exit width only..",
+    "explanation": "Identify the existing and proposed occupancy groups under Section 701. The cited local source family controls this item: Start by computing exit width only..",
+    "code_citation": "Start by choosing an extinguisher label."
+  }
+}

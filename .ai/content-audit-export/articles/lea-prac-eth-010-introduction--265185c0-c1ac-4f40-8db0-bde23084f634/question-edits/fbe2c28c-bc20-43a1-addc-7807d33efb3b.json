@@ -1,0 +1,32 @@
+{
+  "question_id": "fbe2c28c-bc20-43a1-addc-7807d33efb3b",
+  "baseline_hash": "sha256:66657f31a40c8f6e120c31171abd4f65e882daf503fbf62d5b9a6ccaa3a9283a",
+  "reason": "Batch 003 source audit removed unsupported penalty ranges, restitution amounts, dollar values, and scenario statistics; questions now use RA 9266 IRR and UAP Code of Ethics conduct categories.",
+  "approved_by": "codex-local-source-audit-batch-003",
+  "approved_at": "2026-05-10T18:00:00+08:00",
+  "proposed": {
+    "text": "A repeated professional-conduct violation appears after a prior discipline history. What source-safe conclusion can be taught from the checked ethics article?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Prior discipline is irrelevant"
+      },
+      {
+        "id": "b",
+        "text": "Repeat conduct can aggravate seriousness, but the checked sources do not support a fixed automatic penalty range"
+      },
+      {
+        "id": "c",
+        "text": "Every repeat case automatically becomes criminal prosecution"
+      },
+      {
+        "id": "d",
+        "text": "The client must receive a fixed restitution amount"
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": "The repaired article identifies repeated conduct as a seriousness factor but removes unsupported fixed suspension/revocation ranges.",
+    "explanation": "The edit resolves unsupported repeat-violation penalty claims.",
+    "code_citation": "RA 9266 IRR grounds for discipline; RA 9266 IRR and UAP Code of Ethics"
+  }
+}

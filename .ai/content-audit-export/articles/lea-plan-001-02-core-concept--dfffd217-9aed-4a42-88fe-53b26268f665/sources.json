@@ -1,116 +1,130 @@
 {
   "article_id": "dfffd217-9aed-4a42-88fe-53b26268f665",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:fe53da644c8ccc07bbfbb3799b7ab3093bc316989d15ec0d1fa59b78ab3630f2",
-  "source_count": 9,
+  "sources_hash": "sha256:34146c70c1b6559787a3cd7ade0132ef27cb07fc8b16779c7eef2371d145d500",
+  "source_count": 5,
   "sources": [
     {
-      "source_id": "c0187398-4b83-4c4a-b397-6aa4119ef638",
-      "article_id": "dfffd217-9aed-4a42-88fe-53b26268f665",
-      "label": "Primary references:",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:01.097723+00:00",
-      "updated_at": "2026-03-24T04:34:01.097723+00:00"
+      "source_id": "ra7160-planning-foundations-local-b069",
+      "label": "RA 7160 Local Government Code - planning, CLUP, and zoning foundations",
+      "authority": "Local raw PDF and refined markdown conversion",
+      "source_type": "primary_law_pdf",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7160/RA 7160 The Local Government Code.pdf",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7160/RA 7160 The Local Government Code.md",
+      "source_locator": "RA 7160 refined markdown lines 197-209, 712-746, 2665-2668, 2902-2905, and 3130; raw PDF pages 15, 51-52, 194, 213, and 232 checked by local PDF extraction",
+      "checked_markdown_lines": [
+        "RA 7160 lines 197-209",
+        "RA 7160 lines 712-746",
+        "RA 7160 lines 2665-2668",
+        "RA 7160 lines 2902-2905",
+        "RA 7160 line 3130"
+      ],
+      "checked_raw_pdf_pages": [
+        "RA 7160 raw PDF page 15",
+        "RA 7160 raw PDF pages 51-52",
+        "RA 7160 raw PDF page 194",
+        "RA 7160 raw PDF page 213",
+        "RA 7160 raw PDF page 232"
+      ],
+      "use": "primary source for Philippine local planning and CLUP/zoning authority",
+      "raw_pdf_sha256": "sha256:e270e8bc7bd84ba8ad7b6fe6780c12a3e5a6103e2b9395db13084266a5ff1fff",
+      "refined_markdown_sha256": "sha256:9f95493bd12c7f4b0989913d7e8783cdbc6235891fea9977c2aa77238c3dd392",
+      "local_source_checked": true
     },
     {
-      "source_id": "305b9a3f-22c0-416c-9c00-bb4f415fde36",
-      "article_id": "dfffd217-9aed-4a42-88fe-53b26268f665",
-      "label": "Herbert Simon, Administrative Behavior (1947); work on bounded rationality and decision-making",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 1,
-      "created_at": "2026-03-24T04:34:01.381895+00:00",
-      "updated_at": "2026-03-24T04:34:01.381895+00:00"
+      "source_id": "eo72-planning-review-local-b069",
+      "label": "Executive Order No. 72 - CLUP preparation, review, and implementation",
+      "authority": "Local raw PDF and refined markdown conversion",
+      "source_type": "executive_order_pdf",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/EO/EO 72 Comprehensive Land use.pdf",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/EO/EO 72 Comprehensive Land use.md",
+      "source_locator": "EO 72 refined markdown lines 1-90; raw PDF pages 1-4 checked by local PDF extraction",
+      "checked_markdown_lines": [
+        "EO 72 lines 1-90"
+      ],
+      "checked_raw_pdf_pages": [
+        "EO 72 raw PDF pages 1-4"
+      ],
+      "use": "primary source for CLUP review and implementation path",
+      "raw_pdf_sha256": "sha256:57de2c585b2f2f0e5687bbf95754f9cd4f2bae68c51c6ae0d8d60e81d24c8cbd",
+      "refined_markdown_sha256": "sha256:478ae44ef1b4ced33ce16138db0558d38c0fad4a4ca02e35c9f192994e89c871",
+      "local_source_checked": true
     },
     {
-      "source_id": "59a1dcfd-fc58-44e9-802e-9135506d1eea",
-      "article_id": "dfffd217-9aed-4a42-88fe-53b26268f665",
-      "label": "Charles Lindblom, \"The Science of 'Muddling Through,'\" Public Administration Review (1959)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:34:01.381895+00:00",
-      "updated_at": "2026-03-24T04:34:01.381895+00:00"
+      "source_id": "ra11201-irr-planning-monitoring-local-b069",
+      "label": "RA 11201 IRR - DHSUD land-use planning and monitoring functions",
+      "authority": "Local raw PDF and refined markdown conversion",
+      "source_type": "implementing_rules_pdf",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+      "source_locator": "RA 11201 IRR refined markdown lines 45, 145-159, 344-368, and 488-501; raw PDF pages 3, 9, 17-18, and 24 checked by local PDF extraction",
+      "checked_markdown_lines": [
+        "RA 11201 IRR line 45",
+        "RA 11201 IRR lines 145-159",
+        "RA 11201 IRR lines 344-368",
+        "RA 11201 IRR lines 488-501"
+      ],
+      "checked_raw_pdf_pages": [
+        "RA 11201 IRR raw PDF page 3",
+        "RA 11201 IRR raw PDF page 9",
+        "RA 11201 IRR raw PDF pages 17-18",
+        "RA 11201 IRR raw PDF page 24"
+      ],
+      "use": "primary source for DHSUD standards/review/monitoring role",
+      "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+      "refined_markdown_sha256": "sha256:40f1a5041c69b3a4aea7c8ba138a9d570bc686bea48aa5618ea6423a6a719528",
+      "local_source_checked": true
     },
     {
-      "source_id": "807f886c-8f42-4e86-bb47-d19eaa0f67db",
-      "article_id": "dfffd217-9aed-4a42-88fe-53b26268f665",
-      "label": "Paul Davidoff, \"Advocacy and Pluralism in Planning,\" Journal of the American Institute of Planners (1965)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:34:01.381895+00:00",
-      "updated_at": "2026-03-24T04:34:01.381895+00:00"
+      "source_id": "hlurb-clup-vol1-foundations-local-b069",
+      "label": "HLURB CLUP Guidebook Volume 1 - planning process and spatial plan hierarchy",
+      "authority": "Local raw PDF and refined markdown conversion",
+      "source_type": "technical_guide_pdf",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/HLURB_CLUP_Vol_1.pdf",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/HLURB_CLUP_Vol_1.md",
+      "source_locator": "HLURB CLUP Vol. 1 refined markdown lines 304-330, 434-448, 1988-2009, 2025-2084, 2119-2129, and 8461; raw PDF pages 5, 18-20, 70, 75, and 225 checked by local PDF extraction",
+      "checked_markdown_lines": [
+        "HLURB CLUP Vol. 1 lines 304-330",
+        "HLURB CLUP Vol. 1 lines 434-448",
+        "HLURB CLUP Vol. 1 lines 1988-2009",
+        "HLURB CLUP Vol. 1 lines 2025-2084",
+        "HLURB CLUP Vol. 1 lines 2119-2129",
+        "HLURB CLUP Vol. 1 line 8461"
+      ],
+      "checked_raw_pdf_pages": [
+        "HLURB CLUP Vol. 1 raw PDF page 5",
+        "HLURB CLUP Vol. 1 raw PDF pages 18-20",
+        "HLURB CLUP Vol. 1 raw PDF page 70",
+        "HLURB CLUP Vol. 1 raw PDF page 75",
+        "HLURB CLUP Vol. 1 raw PDF page 225"
+      ],
+      "use": "primary source for CLUP scope, hierarchy, sectoral data, and planning process",
+      "raw_pdf_sha256": "sha256:34888ecf03576719d36e8abe21ff90da92e18263a4debb9db3fbbc41a7878762",
+      "refined_markdown_sha256": "sha256:6b574d861c0942a232fec321c2863754673532019af8f983e84550e54afc04e3",
+      "local_source_checked": true
     },
     {
-      "source_id": "3a4306f6-961b-42f7-9610-a7ddb9abf47e",
-      "article_id": "dfffd217-9aed-4a42-88fe-53b26268f665",
-      "label": "Patsy Healey, Collaborative Planning: Shaping Places in Fragmented Societies (1997)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 4,
-      "created_at": "2026-03-24T04:34:01.381895+00:00",
-      "updated_at": "2026-03-24T04:34:01.381895+00:00"
-    },
-    {
-      "source_id": "4f32c48b-78d5-45b5-a817-416f0bf0cfe8",
-      "article_id": "dfffd217-9aed-4a42-88fe-53b26268f665",
-      "label": "Pierre Clavel and John Forester, The Deliberative Practitioner: Encouraging Participatory Planning Processes (1994)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 5,
-      "created_at": "2026-03-24T04:34:01.381895+00:00",
-      "updated_at": "2026-03-24T04:34:01.381895+00:00"
-    },
-    {
-      "source_id": "6c25dc65-ac7a-4688-874a-2bf72d012395",
-      "article_id": "dfffd217-9aed-4a42-88fe-53b26268f665",
-      "label": "Republic Act 7160 (Local Government Code, 1991)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 6,
-      "created_at": "2026-03-24T04:34:01.381895+00:00",
-      "updated_at": "2026-03-24T04:34:01.381895+00:00"
-    },
-    {
-      "source_id": "3209389e-4e6f-4017-804a-b55d220c205b",
-      "article_id": "dfffd217-9aed-4a42-88fe-53b26268f665",
-      "label": "Republic Act 10587 (Environmental Planning Act, 2013)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 7,
-      "created_at": "2026-03-24T04:34:01.381895+00:00",
-      "updated_at": "2026-03-24T04:34:01.381895+00:00"
-    },
-    {
-      "source_id": "924f5d50-e4fc-4a23-8713-b92b4bc2024e",
-      "article_id": "dfffd217-9aed-4a42-88fe-53b26268f665",
-      "label": "RA 11201 (2019) — created DHSUD",
-      "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 8,
-      "created_at": "2026-03-24T04:34:01.381895+00:00",
-      "updated_at": "2026-03-24T04:34:01.381895+00:00"
+      "source_id": "rps2008-planning-system-local-b069",
+      "label": "Rationalizing the Local Planning System 2008",
+      "authority": "Local raw PDF and refined markdown conversion",
+      "source_type": "technical_guide_pdf",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/RPS (2008).pdf",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/RPS (2008).md",
+      "source_locator": "RPS 2008 refined markdown lines 63-85, 125-165, 203-223, and 251-265; raw PDF pages 5-10 and 28 checked by local PDF extraction",
+      "checked_markdown_lines": [
+        "RPS 2008 lines 63-85",
+        "RPS 2008 lines 125-165",
+        "RPS 2008 lines 203-223",
+        "RPS 2008 lines 251-265"
+      ],
+      "checked_raw_pdf_pages": [
+        "RPS 2008 raw PDF pages 5-10",
+        "RPS 2008 raw PDF page 28"
+      ],
+      "use": "primary source for planning structure, political/technical roles, and CLUP/CDP implementation",
+      "raw_pdf_sha256": "sha256:1331576aa80a6e5ab2d4079aa091e7294b7574c3c91b41a499e02cd1f8df91a3",
+      "refined_markdown_sha256": "sha256:a86183e25f99faee458dfbb5bdb6045b98e309abe56e3d9fc4b65aee43312c96",
+      "local_source_checked": true
     }
   ]
 }

@@ -1,0 +1,34 @@
+{
+  "question_id": "c7cd772a-ccb9-48ec-8f02-b183400fa519",
+  "baseline_hash": "sha256:07b7dae9147575d09f2eead70a11ab432ee601f302f8a42d90c1dc7e82666008",
+  "reason": "Batch 005 local source audit aligned LEA Structure: Subjects, Rating, Results, and Reapplication Boundaries linked question ALE-PRAC-LAW-008-010 to verified RA 9266 IRR raw-source claims.",
+  "approved_by": "codex-local-source-audit-batch-005",
+  "approved_at": "2026-05-10T21:30:00+08:00",
+  "proposed": {
+    "code_citation": "RA 9266 IRR Sections 7(j), 8, 12, 13, 14, 15, and 16",
+    "explanation": "Source-audited against RA 9266 IRR Sections 7(j), 8, 12, 13, 14, 15, and 16 in the checked local RA 9266 IRR PDF. This edit removes unsupported locators or assumptions and keeps the question aligned to the audited article cluster.",
+    "text": "How do the LEA passing rule and the Board's CPD authority fit together in the checked RA 9266 IRR?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Section 15 sets the LEA passing thresholds, while Section 7 authorizes the Board to adopt CPD guidelines; these are separate competence controls."
+      },
+      {
+        "id": "b",
+        "text": "CPD replaces the LEA passing standard for first registration."
+      },
+      {
+        "id": "c",
+        "text": "The LEA has no minimum subject-grade requirement if CPD is completed."
+      },
+      {
+        "id": "d",
+        "text": "CPD is the same as the post-exam oath requirement."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "correct": "Section 15 sets the 70 percent weighted average and no-below-50 subject-grade rule. Section 7 authorizes CPD guidelines and also states CPD is not mandatory for PIC renewal in the checked source."
+    }
+  }
+}

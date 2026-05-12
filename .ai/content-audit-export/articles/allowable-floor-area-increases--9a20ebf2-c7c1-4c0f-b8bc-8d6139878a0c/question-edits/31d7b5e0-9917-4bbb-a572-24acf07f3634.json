@@ -1,0 +1,49 @@
+{
+  "question_id": "31d7b5e0-9917-4bbb-a572-24acf07f3634",
+  "baseline_hash": "sha256:5335744583efe29640433682921ec0f7737127b3489ac2d0d318bfefe3c63eda",
+  "action": "replace",
+  "reason": "source-audited-article-batch-039-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-039",
+  "approved_at": "2026-05-11T13:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-039-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 1390-1450",
+          "PD 1096 RIRR refined markdown lines 1452-1462"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 705"
+  },
+  "proposed": {
+    "text": "After allowable maximum TGFA is initially established, what control must it be crosschecked against?",
+    "options": [
+      {
+        "id": "b039-9a20-19-a",
+        "text": "Allowable Maximum Volume of Building (AMVB)"
+      },
+      {
+        "id": "b039-9a20-19-b",
+        "text": "Only the minimum parking count"
+      },
+      {
+        "id": "b039-9a20-19-c",
+        "text": "Only the room occupancy load"
+      },
+      {
+        "id": "b039-9a20-19-d",
+        "text": "Only the contractor's staging area"
+      }
+    ],
+    "correct_option_id": "b039-9a20-19-a",
+    "rationale": "Correct answer: Allowable Maximum Volume of Building (AMVB). This is directly supported by PD 1096 2004 Revised IRR, Section 705.",
+    "explanation": "The Batch 039 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 705.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 705"
+  }
+}

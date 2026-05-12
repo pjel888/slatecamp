@@ -1,8 +1,8 @@
 # Testing Guide
 
-**Status:** Active  
-**Version:** 1.0  
-**Last Updated:** 2026-04-06  
+**Status:** Active
+**Version:** 1.0
+**Last Updated:** 2026-04-06
 **Source-of-Truth:** `CLAUDE.md`, `package.json`
 
 ---
@@ -102,12 +102,12 @@ import { describe, it, expect, mock } from 'bun:test'
 describe('createSession', () => {
   it('creates a session for authenticated user', async () => {
     const mockUser = { id: '123', role: 'user' }
-    
+
     // Mock dependencies
     mock.module('@/lib/auth', () => ({
       getCurrentUser: () => Promise.resolve(mockUser),
     }))
-    
+
     const session = await createSession({ mode: 'camp', questionCount: 10 })
     expect(session.success).toBe(true)
   })
@@ -142,8 +142,8 @@ Use these files for consistent test data across the suite.
 
 ### mode-presets.test.ts Failure
 
-**File:** `src/lib/quiz/mode-presets.test.ts`  
-**Expected:** `MODE_PRESETS.camp.navigation.backAllowed = false`  
+**File:** `src/lib/quiz/mode-presets.test.ts`
+**Expected:** `MODE_PRESETS.camp.navigation.backAllowed = false`
 **Received:** `MODE_PRESETS.camp.navigation.backAllowed = true`
 
 This suggests the default value for `backAllowed` in `camp` mode navigation was recently changed to `true`, but the test was not updated.

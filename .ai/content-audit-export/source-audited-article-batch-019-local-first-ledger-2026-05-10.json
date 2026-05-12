@@ -1,0 +1,253 @@
+{
+  "schema_version": "source-audited-article-local-first-ledger-v1",
+  "batch_id": "source-audited-article-batch-019-local-first",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T23:59:30+08:00",
+  "worktree": "/Users/philiplewis/slatecamp",
+  "mode": "LOCAL_FIRST_NO_SUPABASE_NO_DEPLOY_NO_COMMIT",
+  "selection": {
+    "selected_article_count": 5,
+    "prior_batches_avoided": "001 through 018",
+    "prior_batch_collision_check": "PASS: selected IDs absent from /private/tmp/slatecamp-batch-001-018-uuids.txt",
+    "criteria": "high-value LEA professional-practice/legal clusters with linked questions and raw RA 9266/UAP SPP PDFs available under vitruvius-connection/001_Raw-Source-Layer"
+  },
+  "counts": {
+    "articles_selected": 5,
+    "articles_locally_passed": 5,
+    "source_rows_created": 10,
+    "linked_questions_observed": 50,
+    "question_edits_created": 50,
+    "compose_passed": 5,
+    "diff_safe_passed": 5,
+    "validate_passed": 5,
+    "unresolved_blockers": 0,
+    "supabase_pushes": 0,
+    "deploys": 0,
+    "commits": 0
+  },
+  "artifacts": {
+    "ledger_path": ".ai/content-audit-export/source-audited-article-batch-019-local-first-ledger-2026-05-10.json",
+    "ledger_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-019-local-first-ledger-2026-05-10.json",
+    "report_path": ".ai/content-audit-export/source-audited-article-batch-019-local-first-report-2026-05-10.md",
+    "report_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-019-local-first-report-2026-05-10.md",
+    "source_audit_evidence_paths": [
+      ".ai/content-audit-export/articles/lea-prac-frm-001-sole-proprietorship-in-architectural-practice--7a53c305-43d6-424a-9a4d-fc4f86de1805/source-audit-evidence.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2/source-audit-evidence.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-003-corporate-practice-of-architecture--19da4ac7-d56b-4ec8-ae4a-8141d4058c30/source-audit-evidence.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-004-joint-venture-in-architecture--846e0ded-f254-441a-a9d2-67af1f617ba5/source-audit-evidence.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-007-reciprocity-principles-in-architectural-practice--e51e9a56-7251-460e-8d00-5feaa3884f0a/source-audit-evidence.json"
+    ]
+  },
+  "articles": [
+    {
+      "article_id": "7a53c305-43d6-424a-9a4d-fc4f86de1805",
+      "slug": "lea-prac-frm-001-sole-proprietorship-in-architectural-practice",
+      "title": "Sole Proprietorship in Architectural Practice",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-prac-frm-001-sole-proprietorship-in-architectural-practice--7a53c305-43d6-424a-9a4d-fc4f86de1805",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-001-sole-proprietorship-in-architectural-practice--7a53c305-43d6-424a-9a4d-fc4f86de1805",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-frm-001-sole-proprietorship-in-architectural-practice--7a53c305-43d6-424a-9a4d-fc4f86de1805/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-001-sole-proprietorship-in-architectural-practice--7a53c305-43d6-424a-9a4d-fc4f86de1805/question-edits",
+      "question_edit_files": [
+        ".ai/content-audit-export/articles/lea-prac-frm-001-sole-proprietorship-in-architectural-practice--7a53c305-43d6-424a-9a4d-fc4f86de1805/question-edits/1310980b-cdaa-45d5-99b7-1621fdab30d9.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-001-sole-proprietorship-in-architectural-practice--7a53c305-43d6-424a-9a4d-fc4f86de1805/question-edits/2320173f-8c9c-44c5-bc2a-17a5b34ff8be.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-001-sole-proprietorship-in-architectural-practice--7a53c305-43d6-424a-9a4d-fc4f86de1805/question-edits/23a7314d-0191-4196-8042-7679f21f88c5.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-001-sole-proprietorship-in-architectural-practice--7a53c305-43d6-424a-9a4d-fc4f86de1805/question-edits/384df538-9908-4d30-868f-77cbc06dcb05.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-001-sole-proprietorship-in-architectural-practice--7a53c305-43d6-424a-9a4d-fc4f86de1805/question-edits/5c5c5684-a547-42b2-9dfb-ee06e587269b.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-001-sole-proprietorship-in-architectural-practice--7a53c305-43d6-424a-9a4d-fc4f86de1805/question-edits/9506e74a-efbf-49cb-b067-2fe8641fcad5.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-001-sole-proprietorship-in-architectural-practice--7a53c305-43d6-424a-9a4d-fc4f86de1805/question-edits/b7a62be8-c1e9-4eae-a8fb-fb3859460e31.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-001-sole-proprietorship-in-architectural-practice--7a53c305-43d6-424a-9a4d-fc4f86de1805/question-edits/c8a2fa0d-4752-49fd-b995-063c9cb0e16e.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-001-sole-proprietorship-in-architectural-practice--7a53c305-43d6-424a-9a4d-fc4f86de1805/question-edits/cff4b330-3fd4-4e08-aa1b-950290c18e0b.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-001-sole-proprietorship-in-architectural-practice--7a53c305-43d6-424a-9a4d-fc4f86de1805/question-edits/d697c05b-7f29-4a3e-b1a1-ece1ad54a2c5.json"
+      ],
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_hash": "sha256:02324a17baaac3579c595263cac308bcb80809a260442e404d6035f475a9a451",
+      "candidate_hash": "sha256:02324a17baaac3579c595263cac308bcb80809a260442e404d6035f475a9a451",
+      "linked_questions_hash": "sha256:679117d05313693582bad76fa83ac0631e5af633564f24a469eb02f409a56f1e",
+      "sources_hash": "sha256:c118c1d7e90c8ccadcecb9a3b6e2fabe9918d9a1efb19282a47899ab15101e28",
+      "source_count": 2,
+      "compose_blockers": 0,
+      "diff_safe_to_push": true,
+      "diff_blockers": 0,
+      "validate_status": "PASS with non-blocking component-usage warning",
+      "warnings": [
+        "component-usage.json has not been generated for this article yet."
+      ],
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-frm-001-sole-proprietorship-in-architectural-practice--7a53c305-43d6-424a-9a4d-fc4f86de1805/source-audit-evidence.json",
+      "status": "PASS"
+    },
+    {
+      "article_id": "387760f0-6468-40d6-b78e-a463c9f543b2",
+      "slug": "lea-prac-frm-002-partnership-in-architectural-practice",
+      "title": "Partnership in Architectural Practice",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2/question-edits",
+      "question_edit_files": [
+        ".ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2/question-edits/279ac190-da6a-4f8a-b895-2e5d601dbd4f.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2/question-edits/363574ac-92a6-4b1a-a67e-0a045eede11a.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2/question-edits/4593060f-de75-41a6-b054-d392166457c9.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2/question-edits/5d3fe44c-6796-41f3-8b25-ed9dcc1ccaeb.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2/question-edits/645a6629-fb7a-4a0a-acbf-661170bc30fb.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2/question-edits/6ed190bf-7179-411d-8679-c37526278754.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2/question-edits/89e628df-64a1-4dc5-8915-1acd4f5f104d.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2/question-edits/9732576b-20ce-4638-83c5-6a2f7386c224.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2/question-edits/99921fdc-dab4-4199-9be7-656de5ed1b37.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2/question-edits/d03029e0-65d4-4ae7-baf3-d43e488ecd6e.json"
+      ],
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_hash": "sha256:c15be10044868a86e3749940c9a8917558ab39b47e9c07ad3337a26245bd9eee",
+      "candidate_hash": "sha256:c15be10044868a86e3749940c9a8917558ab39b47e9c07ad3337a26245bd9eee",
+      "linked_questions_hash": "sha256:86a636db6244d64d4fee1659e08f245bf8e8d1ecf7294abdbbe4096dd682040d",
+      "sources_hash": "sha256:c9b01cb9a12c8b75a2a28e1e6efe8a37f752f9d942937330cd0264e519e2cbfc",
+      "source_count": 2,
+      "compose_blockers": 0,
+      "diff_safe_to_push": true,
+      "diff_blockers": 0,
+      "validate_status": "PASS with non-blocking component-usage warning",
+      "warnings": [
+        "component-usage.json has not been generated for this article yet."
+      ],
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2/source-audit-evidence.json",
+      "status": "PASS"
+    },
+    {
+      "article_id": "19da4ac7-d56b-4ec8-ae4a-8141d4058c30",
+      "slug": "lea-prac-frm-003-corporate-practice-of-architecture",
+      "title": "Corporate Practice of Architecture",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-prac-frm-003-corporate-practice-of-architecture--19da4ac7-d56b-4ec8-ae4a-8141d4058c30",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-003-corporate-practice-of-architecture--19da4ac7-d56b-4ec8-ae4a-8141d4058c30",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-frm-003-corporate-practice-of-architecture--19da4ac7-d56b-4ec8-ae4a-8141d4058c30/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-003-corporate-practice-of-architecture--19da4ac7-d56b-4ec8-ae4a-8141d4058c30/question-edits",
+      "question_edit_files": [
+        ".ai/content-audit-export/articles/lea-prac-frm-003-corporate-practice-of-architecture--19da4ac7-d56b-4ec8-ae4a-8141d4058c30/question-edits/0574d350-1e16-4231-a6ac-a3d2abaef628.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-003-corporate-practice-of-architecture--19da4ac7-d56b-4ec8-ae4a-8141d4058c30/question-edits/3229b4c1-bdd9-4a5c-bc70-9730665a9be2.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-003-corporate-practice-of-architecture--19da4ac7-d56b-4ec8-ae4a-8141d4058c30/question-edits/391c4ef4-ac81-481e-9d36-6e5502d7e11f.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-003-corporate-practice-of-architecture--19da4ac7-d56b-4ec8-ae4a-8141d4058c30/question-edits/523f4cda-70b4-485f-be17-bf65265e98b7.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-003-corporate-practice-of-architecture--19da4ac7-d56b-4ec8-ae4a-8141d4058c30/question-edits/5d143f9c-28b9-404f-a59b-e6f14f9c6364.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-003-corporate-practice-of-architecture--19da4ac7-d56b-4ec8-ae4a-8141d4058c30/question-edits/752b4bc9-a4c2-4ade-b7df-00ec7b9bcc4c.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-003-corporate-practice-of-architecture--19da4ac7-d56b-4ec8-ae4a-8141d4058c30/question-edits/773d5663-7ac1-4279-9a8f-945cca8e9175.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-003-corporate-practice-of-architecture--19da4ac7-d56b-4ec8-ae4a-8141d4058c30/question-edits/d32e8f62-9843-444d-8cd7-53b4221fb775.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-003-corporate-practice-of-architecture--19da4ac7-d56b-4ec8-ae4a-8141d4058c30/question-edits/d4e98688-b5e4-4c4c-9861-82118e717e40.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-003-corporate-practice-of-architecture--19da4ac7-d56b-4ec8-ae4a-8141d4058c30/question-edits/e9a7dcd5-5300-4d8d-8966-dd2a8ebe1725.json"
+      ],
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_hash": "sha256:c44e70fe335388debc5c2e0677eb0a76c7fe5a5d0973afbc710d8660a7b71723",
+      "candidate_hash": "sha256:c44e70fe335388debc5c2e0677eb0a76c7fe5a5d0973afbc710d8660a7b71723",
+      "linked_questions_hash": "sha256:86659756dfa867d7e9bbb0dec761e4853368b5d0d49e8c316e3717ca9a588c98",
+      "sources_hash": "sha256:61be679e48d68afb8aa4cd4e8148f9423b64c988aacf9f68f7409cab2204fdb3",
+      "source_count": 2,
+      "compose_blockers": 0,
+      "diff_safe_to_push": true,
+      "diff_blockers": 0,
+      "validate_status": "PASS with non-blocking component-usage warning",
+      "warnings": [
+        "component-usage.json has not been generated for this article yet."
+      ],
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-frm-003-corporate-practice-of-architecture--19da4ac7-d56b-4ec8-ae4a-8141d4058c30/source-audit-evidence.json",
+      "status": "PASS"
+    },
+    {
+      "article_id": "846e0ded-f254-441a-a9d2-67af1f617ba5",
+      "slug": "lea-prac-frm-004-joint-venture-in-architecture",
+      "title": "Joint Venture in Architecture",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-prac-frm-004-joint-venture-in-architecture--846e0ded-f254-441a-a9d2-67af1f617ba5",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-004-joint-venture-in-architecture--846e0ded-f254-441a-a9d2-67af1f617ba5",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-frm-004-joint-venture-in-architecture--846e0ded-f254-441a-a9d2-67af1f617ba5/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-004-joint-venture-in-architecture--846e0ded-f254-441a-a9d2-67af1f617ba5/question-edits",
+      "question_edit_files": [
+        ".ai/content-audit-export/articles/lea-prac-frm-004-joint-venture-in-architecture--846e0ded-f254-441a-a9d2-67af1f617ba5/question-edits/1a019629-1c95-4de5-9c22-2bb90fd2adbb.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-004-joint-venture-in-architecture--846e0ded-f254-441a-a9d2-67af1f617ba5/question-edits/1ef1d552-2633-47fa-8a9a-6171fc5a1cfb.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-004-joint-venture-in-architecture--846e0ded-f254-441a-a9d2-67af1f617ba5/question-edits/3c1bf2e8-35df-4007-8ab9-e72d8357f16f.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-004-joint-venture-in-architecture--846e0ded-f254-441a-a9d2-67af1f617ba5/question-edits/46831bcc-706b-4cb9-a6d2-c801d95e833e.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-004-joint-venture-in-architecture--846e0ded-f254-441a-a9d2-67af1f617ba5/question-edits/55803950-4023-4f50-be30-c69321b3a809.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-004-joint-venture-in-architecture--846e0ded-f254-441a-a9d2-67af1f617ba5/question-edits/8b8e905c-e3c3-49ee-90fb-e826cefebeb7.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-004-joint-venture-in-architecture--846e0ded-f254-441a-a9d2-67af1f617ba5/question-edits/a2b595b3-52db-4308-80f3-33420696dcfa.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-004-joint-venture-in-architecture--846e0ded-f254-441a-a9d2-67af1f617ba5/question-edits/b66d5faa-5b9b-4322-bad2-4c237fd02215.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-004-joint-venture-in-architecture--846e0ded-f254-441a-a9d2-67af1f617ba5/question-edits/c1f92440-a4a1-433f-9f50-839d229b86b9.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-004-joint-venture-in-architecture--846e0ded-f254-441a-a9d2-67af1f617ba5/question-edits/e01c7bc9-ffde-4607-be87-dff9525e1ebc.json"
+      ],
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_hash": "sha256:ab9fe51a5502fc939a649bc0ae24511de0bec70a50111cba5b4328b2a1823d16",
+      "candidate_hash": "sha256:ab9fe51a5502fc939a649bc0ae24511de0bec70a50111cba5b4328b2a1823d16",
+      "linked_questions_hash": "sha256:aadb07f6701229b6810a3c41788d6e2804e1f418fae22a57278f7c3ff8db6a56",
+      "sources_hash": "sha256:cb756e07f3e02aec71aeaafa1439d2103b366603aa6ced3060b1b2dd31521ebb",
+      "source_count": 2,
+      "compose_blockers": 0,
+      "diff_safe_to_push": true,
+      "diff_blockers": 0,
+      "validate_status": "PASS with non-blocking component-usage warning",
+      "warnings": [
+        "component-usage.json has not been generated for this article yet."
+      ],
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-frm-004-joint-venture-in-architecture--846e0ded-f254-441a-a9d2-67af1f617ba5/source-audit-evidence.json",
+      "status": "PASS"
+    },
+    {
+      "article_id": "e51e9a56-7251-460e-8d00-5feaa3884f0a",
+      "slug": "lea-prac-frm-007-reciprocity-principles-in-architectural-practice",
+      "title": "Reciprocity Principles in Architectural Practice",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-prac-frm-007-reciprocity-principles-in-architectural-practice--e51e9a56-7251-460e-8d00-5feaa3884f0a",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-007-reciprocity-principles-in-architectural-practice--e51e9a56-7251-460e-8d00-5feaa3884f0a",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-frm-007-reciprocity-principles-in-architectural-practice--e51e9a56-7251-460e-8d00-5feaa3884f0a/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-007-reciprocity-principles-in-architectural-practice--e51e9a56-7251-460e-8d00-5feaa3884f0a/question-edits",
+      "question_edit_files": [
+        ".ai/content-audit-export/articles/lea-prac-frm-007-reciprocity-principles-in-architectural-practice--e51e9a56-7251-460e-8d00-5feaa3884f0a/question-edits/02c48c83-807e-4ada-876e-6329d8030ae8.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-007-reciprocity-principles-in-architectural-practice--e51e9a56-7251-460e-8d00-5feaa3884f0a/question-edits/29c88c97-2e22-4c46-a825-d8465e805671.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-007-reciprocity-principles-in-architectural-practice--e51e9a56-7251-460e-8d00-5feaa3884f0a/question-edits/2c785f40-5853-43f7-aac4-d625a389fb59.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-007-reciprocity-principles-in-architectural-practice--e51e9a56-7251-460e-8d00-5feaa3884f0a/question-edits/39e32c3f-ef26-49ae-b227-992489e1185e.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-007-reciprocity-principles-in-architectural-practice--e51e9a56-7251-460e-8d00-5feaa3884f0a/question-edits/749e15b5-067f-4c38-a4fb-f105bd61cf72.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-007-reciprocity-principles-in-architectural-practice--e51e9a56-7251-460e-8d00-5feaa3884f0a/question-edits/a0780570-b344-4882-b84d-8171e14f8d34.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-007-reciprocity-principles-in-architectural-practice--e51e9a56-7251-460e-8d00-5feaa3884f0a/question-edits/e1aefbf8-56d8-497c-97c2-9fc50cb56b9e.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-007-reciprocity-principles-in-architectural-practice--e51e9a56-7251-460e-8d00-5feaa3884f0a/question-edits/f1d8b55e-144a-4637-bcd6-d3c47fcd89cd.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-007-reciprocity-principles-in-architectural-practice--e51e9a56-7251-460e-8d00-5feaa3884f0a/question-edits/fb69fe01-691f-43e0-837b-b3cc4165ad25.json",
+        ".ai/content-audit-export/articles/lea-prac-frm-007-reciprocity-principles-in-architectural-practice--e51e9a56-7251-460e-8d00-5feaa3884f0a/question-edits/fffa260f-fb8a-45fc-90fc-b4c9918cbcb0.json"
+      ],
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_hash": "sha256:dd408e777fc0c9f6467c2b9b2808314fd95839b7dbf7d3606eb0ad86bffcc48f",
+      "candidate_hash": "sha256:dd408e777fc0c9f6467c2b9b2808314fd95839b7dbf7d3606eb0ad86bffcc48f",
+      "linked_questions_hash": "sha256:dcfb90051cae3ad1b19dca3c9ea66dba33a3e3fcaa7b45eb37345fe2988c3c16",
+      "sources_hash": "sha256:6c9c9355f2ac35c60ee3081c6ff78b27d32b92210b060b692b6fea74c3f9be5e",
+      "source_count": 2,
+      "compose_blockers": 0,
+      "diff_safe_to_push": true,
+      "diff_blockers": 0,
+      "validate_status": "PASS with non-blocking component-usage warning",
+      "warnings": [
+        "component-usage.json has not been generated for this article yet."
+      ],
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-frm-007-reciprocity-principles-in-architectural-practice--e51e9a56-7251-460e-8d00-5feaa3884f0a/source-audit-evidence.json",
+      "status": "PASS"
+    }
+  ],
+  "validation": {
+    "commands_run": [
+      "bun run content-audit:compose -- --article-id <id> --overwrite (5/5 PASS)",
+      "bun run content-audit:diff -- --article-id <id> --summary (5/5 safe_to_push=true)",
+      "bun run content-audit:validate -- --article-id <id> --summary (5/5 valid=true; component-usage warning only)",
+      "scoped JSON/placeholder/source-gap/diff/test checks (PASS)"
+    ],
+    "expected_remaining_warnings": [
+      "component-usage.json has not been generated for this article yet."
+    ],
+    "blockers": [],
+    "scoped_checks": {
+      "json_parse": "PASS: jq empty over 86 Batch 019 JSON files",
+      "placeholder_internal_scan": "PASS: repaired normalized.md/candidate.md/question-edits contain no scoped placeholder/internal-note markers",
+      "source_gap_diff_count": "PASS: 5/5 source-gap/diff/count checks passed",
+      "git_diff_check": "PASS: git diff --check over Batch 019 paths",
+      "content_audit_tests": "PASS: bun test scripts/content-audit/content-audit.test.ts (27 pass, 0 fail)"
+    }
+  },
+  "next_phase_readiness": {
+    "ready_for_next_local_batch": true,
+    "ready_for_supabase_final_publishing_review": true,
+    "blocker_status": "none_after_scoped_checks",
+    "note": "Supabase push/deploy/commit were not attempted by request."
+  }
+}

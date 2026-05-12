@@ -1,7 +1,23 @@
 {
   "article_id": "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "source_count": 0,
-  "sources": []
+  "sources_hash": "sha256:32780cd0f1923ff15a972edb71cfc7b5125729f23ce464bbb5134f0c479968a9",
+  "source_count": 1,
+  "sources": [
+    {
+      "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+      "title": "PD 1096 2004 Revised IRR - DPWH Official",
+      "source_type": "local_raw_pdf_with_locator_checked_refined_markdown",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "source_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+      "derivative_layer_role": "locator aid only",
+      "checked_markdown_lines": [
+        "PD 1096 RIRR refined markdown lines 3946-3997"
+      ],
+      "source_locator": "PD 1096 RIRR refined markdown lines 3946-3997"
+    }
+  ]
 }

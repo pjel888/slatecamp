@@ -1,0 +1,51 @@
+{
+  "question_id": "c248fce5-53d2-4c78-ace5-d26bc40ae6e6",
+  "baseline_hash": "sha256:db6c3cb84e52408ddec7f18f0eb865bd2c4a59af8a02e39a4ff6ac4fea8a0c74",
+  "action": "replace",
+  "reason": "source-audited-article-batch-040-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-040",
+  "approved_at": "2026-05-11T14:04:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-040-local-first",
+    "checked_sources": [
+      {
+        "source_id": "bp-344-2024-rirr-ncda-local",
+        "label": "BP 344 2024 Revised IRR - NCDA",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "checked_markdown_lines": [
+          "BP 344 2024 IRR refined markdown lines 36-70",
+          "BP 344 2024 IRR refined markdown lines 198-224",
+          "BP 344 2024 IRR refined markdown lines 228-305",
+          "BP 344 2024 IRR refined markdown lines 770-850"
+        ]
+      }
+    ],
+    "citation": "BP 344 2024 Revised IRR, Accessible Stairs"
+  },
+  "proposed": {
+    "text": "What maximum riser and minimum tread dimensions are listed for accessible stairs?",
+    "options": [
+      {
+        "id": "b040-a7cb-12-a",
+        "text": "150 mm maximum riser and 300 mm minimum tread"
+      },
+      {
+        "id": "b040-a7cb-12-b",
+        "text": "170 mm maximum riser and 250 mm minimum tread"
+      },
+      {
+        "id": "b040-a7cb-12-c",
+        "text": "200 mm maximum riser and 250 mm minimum tread"
+      },
+      {
+        "id": "b040-a7cb-12-d",
+        "text": "120 mm maximum riser and 200 mm minimum tread"
+      }
+    ],
+    "correct_option_id": "b040-a7cb-12-a",
+    "rationale": "Correct answer: 150 mm maximum riser and 300 mm minimum tread. This is directly supported by BP 344 2024 Revised IRR, Accessible Stairs.",
+    "explanation": "The Batch 040 source-audited correction uses only local raw PDF families and locator-checked refined markdown for BP 344 2024 Revised IRR, Accessible Stairs.",
+    "code_citation": "BP 344 2024 Revised IRR, Accessible Stairs"
+  }
+}

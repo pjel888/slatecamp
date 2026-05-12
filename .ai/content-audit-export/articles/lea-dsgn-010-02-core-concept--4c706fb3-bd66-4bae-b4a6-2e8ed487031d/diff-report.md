@@ -1,32 +1,32 @@
 # Content Diff Report: lea-dsgn-010-02-core-concept
 
-Generated: 2026-05-10T05:25:22.608Z
+Generated: 2026-05-10T08:12:30.014Z
 Article ID: 4c706fb3-bd66-4bae-b4a6-2e8ed487031d
 Changed: true
-Safe to push locally: false
+Safe to push locally: true
 
 ## Hashes
 
 - Original: `sha256:c62eec49d881eba38edfbde1926477389bffa923e34d7d2b72df1a1a57eb9e8c`
-- Normalized: `sha256:c62eec49d881eba38edfbde1926477389bffa923e34d7d2b72df1a1a57eb9e8c`
-- Candidate: `sha256:c9b6fbf25c3fe2b23f6db955f5cf0960e94be9ca522bbd530270052ca57aa6b2`
+- Normalized: `sha256:de9c94cb5a14d54a97f81ab7390a916c7c7320e0fbf7687edacf6129bf724cd0`
+- Candidate: `sha256:de9c94cb5a14d54a97f81ab7390a916c7c7320e0fbf7687edacf6129bf724cd0`
 
 ## Line summary
 
-- Changed lines: 58
+- Changed lines: 88
 - Inserted lines: 0
-- Deleted lines: 6
+- Deleted lines: 29
 
 ## UI block preservation
 
-- UI blocks expected: 3
-- UI blocks preserved: 3
+- UI blocks expected: 0
+- UI blocks preserved: 0
 - UI blocks changed/missing: 0
 - Unresolved placeholders: 0
 
 ## Blockers
 
-- original.md hash does not match article metadata export hash.
+- None
 
 ## Warnings
 

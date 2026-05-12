@@ -1,0 +1,145 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-049-local-first",
+  "batch_number": 49,
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T20:55:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "31fff533-f6b9-44dc-8d46-996e5413a587",
+    "slug": "spanish-colonial-laws-of-the-indies",
+    "title": "Spanish Colonial Laws of the Indies",
+    "article_folder": ".ai/content-audit-export/articles/spanish-colonial-laws-of-the-indies--31fff533-f6b9-44dc-8d46-996e5413a587",
+    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spanish-colonial-laws-of-the-indies--31fff533-f6b9-44dc-8d46-996e5413a587",
+    "candidate_path": ".ai/content-audit-export/articles/spanish-colonial-laws-of-the-indies--31fff533-f6b9-44dc-8d46-996e5413a587/candidate.md",
+    "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spanish-colonial-laws-of-the-indies--31fff533-f6b9-44dc-8d46-996e5413a587/candidate.md",
+    "question_edits_folder": ".ai/content-audit-export/articles/spanish-colonial-laws-of-the-indies--31fff533-f6b9-44dc-8d46-996e5413a587/question-edits",
+    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spanish-colonial-laws-of-the-indies--31fff533-f6b9-44dc-8d46-996e5413a587/question-edits",
+    "normalized_sha256": "sha256:6c5f8f287c934909c9728753a6d5d0146a12b1bf5b58b46afc81cad5985844e6",
+    "candidate_sha256": "sha256:6c5f8f287c934909c9728753a6d5d0146a12b1bf5b58b46afc81cad5985844e6",
+    "linked_questions_sha256": "sha256:acfe572f458fcf6de991db07199a81b94b48cbad78d7e299b5668cc81903133b",
+    "sources_sha256": "sha256:ea5b0bd70fc340cc725ac0fec0bd21af25965757e638c248b4e9c16d6837d659"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "refined_markdown_role": "locator_only",
+    "derivative_or_search_layer_as_primary": false,
+    "source_families_checked": [
+      {
+        "label": "HOA Module 4 P1 - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/HOA MODULE 4 P1.pdf",
+        "raw_pdf_sha256": "sha256:c89f7f79b3dd8272c7aa7d8848ea72c196d6c418f33105a32fb1ed2cfadbffb3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/HOA MODULE 4 P1.md",
+        "refined_markdown_sha256": "sha256:e515c8c5203118d4aeef0fe1f288c7deb76d75d3e3e1a779291712420c7df047",
+        "locator": "HOA Module 4 P1 refined markdown lines 278-365 and 700-760"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "spanish_colonial_laws_of_the_indies_article",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 34,
+    "question_edits_created": [
+      "d2493bac-057a-41e9-9846-bbf1e0ed11bc",
+      "9d5ca7b4-9ad7-4d56-ae73-cccf0a21e1da",
+      "2d16e556-1463-4008-8e48-34e060112044",
+      "4c66c809-79d4-4b13-81e4-ddb985f64963",
+      "53b7010f-a15a-4589-8a50-8f8f9074c0fc",
+      "6bbb6148-dadf-4da6-9bd0-d12a1e38b33d",
+      "b760f974-7ba3-4972-9a69-1f4c4f09a40a",
+      "1927e515-d9db-4186-9439-d6c33151ff59",
+      "45dbad15-7b08-4db4-aa34-90e4510090c8",
+      "e1740380-44e6-4250-8bf5-8adf48ef0de0",
+      "d6a78198-653b-4b82-800d-a5249fcadb95",
+      "bfed5dd7-2dca-48dc-98ad-671900b57122",
+      "34356455-346b-4dbf-a243-530d009d8815",
+      "f09f2e3a-d5d3-4467-a924-fd2f2ad50555",
+      "5857edd3-0982-419f-8ecd-ce4f98fdf292",
+      "18f2192a-dacd-4dd7-bbec-8e8fc35a94d0",
+      "233e6386-f1ba-4c1f-b00a-c9cd78f9ddcd",
+      "40abcc06-3c9a-4fd4-9605-26f9cd7fc77f",
+      "5feb8fe2-ed72-435c-a796-8f3b4937a6b5",
+      "64dbec6a-c221-4960-837b-33b0dbc95b75",
+      "f9c676ac-712b-4e1b-a997-b573a7024198",
+      "5757b2e6-d688-4150-bb8c-4da60359d88f",
+      "e414b4e1-6ca7-440b-aebf-a0af1cd1fcc0",
+      "146dc38c-ff0b-4579-be3c-0e544f50b51c",
+      "5ee097e7-935b-4707-93b1-cce01ac6c96d",
+      "6b8d2058-fee7-4276-8685-b80522a4f39d",
+      "56918c84-33d8-41e9-a961-ba385c65fcf4",
+      "d1428028-d1be-4cd7-86f0-f58826ec0abc",
+      "28f5146f-698a-492f-b50f-535060062d01",
+      "87547490-0559-4833-84c0-facf8ef59316",
+      "16cbbf15-b926-4116-b969-a550c4e555be",
+      "34d14ecc-2e6f-4a89-9d8b-a86b44e3210d",
+      "0f359b84-c215-4e9f-9a82-5ed809c5ffe3",
+      "59c5665c-bb24-41f7-b2c1-f1195cda8643"
+    ]
+  },
+  "claims": [
+    {
+      "claim_id": "spanish-colonial-laws-of-the-indies-b049-claim-01",
+      "claim_text": "The checked history source lists reduccion, encomienda, settlement hierarchy, cuadricula, and colonial infrastructure as Spanish colonial urban instruments.",
+      "source_support": [
+        "hoa4p1-local-raw-pdf--b049-31fff533-01"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "spanish-colonial-laws-of-the-indies-b049-claim-02",
+      "claim_text": "The Laws of the Indies are tied to elevated location, grid, plaza, defensive wall, and civic-religious-functional zones.",
+      "source_support": [
+        "hoa4p1-local-raw-pdf--b049-31fff533-01"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "spanish-colonial-laws-of-the-indies-b049-claim-03",
+      "claim_text": "The plaza complex centers the main plaza with church, tribunal, government buildings, and marketplace around it.",
+      "source_support": [
+        "hoa4p1-local-raw-pdf--b049-31fff533-01"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "spanish-colonial-laws-of-the-indies-b049-claim-04",
+      "claim_text": "Intramuros and extramuros describe inside and outside wall conditions within Spanish colonial urbanism.",
+      "source_support": [
+        "hoa4p1-local-raw-pdf--b049-31fff533-01"
+      ],
+      "audit_result": "PASS"
+    }
+  ],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "removed_risk_notes": [
+      "Question sidecars replaced with checked local raw-source citations.",
+      "Article body rewritten from local raw PDF families and refined markdown locators only.",
+      "Legacy compose-error sidecars are removed after selected bundle compose passes."
+    ]
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_batch_049_complete": true,
+    "remote_publish_status": "not_attempted_by_request",
+    "remaining_local_blockers": []
+  },
+  "local_validation": {
+    "status": "PASS",
+    "valid": true,
+    "blockers": 0,
+    "checked_at": "2026-05-11T20:55:00.000+08:00",
+    "commands": [
+      "bun run content-audit:compose -- --article-id 31fff533-f6b9-44dc-8d46-996e5413a587 --overwrite --strict",
+      "bun run content-audit:diff -- --article-id 31fff533-f6b9-44dc-8d46-996e5413a587 --strict --summary",
+      "bun run content-audit:validate -- --article-id 31fff533-f6b9-44dc-8d46-996e5413a587 --summary",
+      "bun run content-audit:ui-block-edits -- --article-id 31fff533-f6b9-44dc-8d46-996e5413a587"
+    ]
+  }
+}

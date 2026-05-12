@@ -156,7 +156,7 @@ Used everywhere: status indicators, mastery tiers, session modes, difficulty lab
 ### Semantic presets (convenience wrappers)
 ```typescript
 <StatusBadge status="published" />        // Success variant, "Published" text
-<StatusBadge status="draft" />            // Warning variant, "Draft" text  
+<StatusBadge status="draft" />            // Warning variant, "Draft" text
 <VerificationBadge status="clean" />      // Success + checkmark icon
 <VerificationBadge status="has_issues" count={3} />  // Danger + alert icon + count
 <VerificationBadge status="unverified" /> // Default, no icon

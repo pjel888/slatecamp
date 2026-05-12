@@ -1,80 +1,62 @@
 {
   "article_id": "5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:518cf4999daa6d588b45c23983057e8ebc51360717cad914fec3ebbc40349923",
-  "source_count": 6,
+  "sources_hash": "sha256:4115169fdb2c35727e3a21765ba0e968b263048fceacd7817af4a02770e84c20",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "f296f79b-8416-4208-9dcb-0791c54ebd2c",
+      "source_id": "uap-document-301-general-conditions-local",
       "article_id": "5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5",
-      "label": "If the Contractor installs defective materials, equipment, or performs work that deviates from specifications or drawings, the Architect issues a written directive requiring removal and replacement",
+      "label": "UAP Document 301 - General Conditions, architect authority, claims, payments, and project representatives",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:01.68074+00:00",
-      "updated_at": "2026-03-24T04:34:01.68074+00:00"
-    },
-    {
-      "source_id": "f82fb63f-8c37-434a-9f59-c911db7efb12",
-      "article_id": "5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5",
-      "label": "The Contractor must comply without additional compensation unless a Change Order is issued",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "professional_practice_contract_pdf",
+      "description": "Local raw PDF and refined markdown checked for construction-stage architect authority, impartiality, payment action, project representatives, time limits, and change-order-linked claims.",
+      "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:01.68074+00:00",
-      "updated_at": "2026-03-24T04:34:01.68074+00:00"
+      "created_at": "2026-05-11T11:45:00.000+08:00",
+      "updated_at": "2026-05-11T11:45:00.000+08:00",
+      "local_source_audit": {
+        "authority": "United Architects of the Philippines / PRC Board approved general conditions source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "refined_markdown_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+        "source_locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080",
+        "checked_markdown_lines": [
+          "UAP Document 301 lines 41-71",
+          "UAP Document 301 lines 482-520",
+          "UAP Document 301 lines 1019-1051",
+          "UAP Document 301 lines 1062-1080"
+        ],
+        "local_source_checked": true
+      }
     },
     {
-      "source_id": "1d2a09ca-b1e1-4f30-acd7-4ee1b7738d38",
+      "source_id": "uap-code-ethics-client-contractor-colleague-local",
       "article_id": "5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5",
-      "label": "If removal requires demolition of adjacent completed work, the Contractor must perform the demolition and restoration at the Contractor's cost, as the defect is the Contractor's responsibility",
+      "label": "UAP Architect's Code of Ethics - client, contractor, and colleague duties",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "professional_ethics_pdf",
+      "description": "Local raw PDF and refined markdown checked for architect impartiality, client-charge disclosure, contractor duties, and colleague duties.",
+      "is_verified": true,
       "sort_order": 2,
-      "created_at": "2026-03-24T04:34:01.68074+00:00",
-      "updated_at": "2026-03-24T04:34:01.68074+00:00"
-    },
-    {
-      "source_id": "edd1b70b-7929-4dae-8640-649d79d81c47",
-      "article_id": "5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5",
-      "label": "The Architect may require the Contractor to remove and replace work even if the Owner is not present or has not seen the defect",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:34:01.68074+00:00",
-      "updated_at": "2026-03-24T04:34:01.68074+00:00"
-    },
-    {
-      "source_id": "e4ea26d3-ff92-498e-b538-9c9ef05e52b5",
-      "article_id": "5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5",
-      "label": "The Owner is not required to inspect or approve each component before it is covered; the Architect's directive, based on the contract requirements, is sufficient",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 4,
-      "created_at": "2026-03-24T04:34:01.68074+00:00",
-      "updated_at": "2026-03-24T04:34:01.68074+00:00"
-    },
-    {
-      "source_id": "bf0c9769-0c93-4d51-9194-98cc4d3f7d87",
-      "article_id": "5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5",
-      "label": "However, if the Architect allows defective work to be covered (e.g., concrete poured over defective rebar placement, walls painted over unfinished surface preparation)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": "the Architect may later be unable to require removal without demolishing adjacent components, reducing the practicality of correction",
-      "is_verified": false,
-      "sort_order": 5,
-      "created_at": "2026-03-24T04:34:01.68074+00:00",
-      "updated_at": "2026-03-24T04:34:01.68074+00:00"
+      "created_at": "2026-05-11T11:45:00.000+08:00",
+      "updated_at": "2026-05-11T11:45:00.000+08:00",
+      "local_source_audit": {
+        "authority": "United Architects of the Philippines / PRC-Board approved code source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+        "raw_pdf_sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+        "refined_markdown_sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+        "source_locator": "UAP Code of Ethics refined markdown lines 23-29, 31-58, 60-71, and 81-99",
+        "checked_markdown_lines": [
+          "UAP Code of Ethics lines 23-29",
+          "UAP Code of Ethics lines 31-58",
+          "UAP Code of Ethics lines 60-71",
+          "UAP Code of Ethics lines 81-99"
+        ],
+        "local_source_checked": true
+      }
     }
   ]
 }

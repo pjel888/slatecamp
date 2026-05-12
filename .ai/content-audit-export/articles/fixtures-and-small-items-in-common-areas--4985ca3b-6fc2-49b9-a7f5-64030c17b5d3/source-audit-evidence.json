@@ -1,0 +1,143 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "artifact_type": "article_source_audit",
+  "batch_id": "source-audited-article-batch-036-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T12:45:00+08:00",
+  "target": {
+    "article_id": "4985ca3b-6fc2-49b9-a7f5-64030c17b5d3",
+    "slug": "fixtures-and-small-items-in-common-areas",
+    "candidate_sha256": "sha256:3b39acf2b7772a1d1cf3caf4c28f780397936b5c454931c71a2d2f5249623d72",
+    "normalized_sha256": "sha256:8a2324051d3352ab42eec8238a805ca61e5c7b77c33361ae1dccf24f5e27b204"
+  },
+  "classification": {
+    "requires_raw_pdf_audit": true,
+    "source_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "derivative_layer_role": "locator aid only",
+    "legal_or_code_sensitive": true
+  },
+  "paths": {
+    "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fixtures-and-small-items-in-common-areas--4985ca3b-6fc2-49b9-a7f5-64030c17b5d3",
+    "normalized_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fixtures-and-small-items-in-common-areas--4985ca3b-6fc2-49b9-a7f5-64030c17b5d3/normalized.md",
+    "candidate_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fixtures-and-small-items-in-common-areas--4985ca3b-6fc2-49b9-a7f5-64030c17b5d3/candidate.md",
+    "sources_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fixtures-and-small-items-in-common-areas--4985ca3b-6fc2-49b9-a7f5-64030c17b5d3/sources.json",
+    "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fixtures-and-small-items-in-common-areas--4985ca3b-6fc2-49b9-a7f5-64030c17b5d3/question-edits"
+  },
+  "raw_sources": [
+    {
+      "source_id": "bp-344-2024-revised-irr-ncda-local",
+      "label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "source_locator": "BP 344 2024 Revised IRR refined markdown lines 1090-1135, 1296-1306, 1493-1514",
+      "checked_markdown_lines": [
+        "BP 344 2024 Revised IRR refined markdown lines 1090-1135",
+        "BP 344 2024 Revised IRR refined markdown lines 1296-1306",
+        "BP 344 2024 Revised IRR refined markdown lines 1493-1514"
+      ]
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "bp-344-2024-revised-irr-ncda-local",
+      "label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+      "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "checked_markdown_lines": [
+        "BP 344 2024 Revised IRR refined markdown lines 1090-1135",
+        "BP 344 2024 Revised IRR refined markdown lines 1296-1306",
+        "BP 344 2024 Revised IRR refined markdown lines 1493-1514"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "bp344-telephone",
+      "claim_text": "Public telephones require volume control, at least 200 lux beside the telephone, controls not higher than 1200 mm, and 1800 mm by 1800 mm clear space.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "bp-344-2024-revised-irr-ncda-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "quoted_pdf_excerpt": "Public telephones require volume control, at least 200 lux beside the telephone, controls not higher than 1200 mm, and 1800 mm by 1800 mm clear space.",
+        "locator": "BP 344 2024 Revised IRR refined markdown lines 1090-1103"
+      }
+    },
+    {
+      "claim_id": "bp344-atm",
+      "claim_text": "ATMs, kiosks, and ticket machines require 1800 mm by 1800 mm clear space, accessible speech/output information, and controls from 900 mm to 1200 mm.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "bp-344-2024-revised-irr-ncda-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "quoted_pdf_excerpt": "ATMs, kiosks, and ticket machines require 1800 mm by 1800 mm clear space, accessible speech/output information, and controls from 900 mm to 1200 mm.",
+        "locator": "BP 344 2024 Revised IRR refined markdown lines 1105-1127"
+      }
+    },
+    {
+      "claim_id": "bp344-drinking-fountain",
+      "claim_text": "Drinking fountains require dual access where provided, spout height of 750 mm to 900 mm, 1800 mm by 1800 mm clear floor space, and defined knee and toe clearances.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "bp-344-2024-revised-irr-ncda-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "quoted_pdf_excerpt": "Drinking fountains require dual access where provided, spout height of 750 mm to 900 mm, 1800 mm by 1800 mm clear floor space, and defined knee and toe clearances.",
+        "locator": "BP 344 2024 Revised IRR refined markdown lines 1296-1306"
+      }
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "removed_or_rewritten_material": [
+    "Removed or rewrote unsupported imported comparisons, generated placeholders, broad practice claims, and stale source labels not grounded in the local raw PDFs for this batch."
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_pdf_families_checked": [
+      "BP 344 2024 Revised IRR - National Council on Disability Affairs"
+    ]
+  },
+  "gate_results": {
+    "placeholders_removed_or_resolved": true,
+    "internal_notes_removed": true,
+    "unsupported_claims_removed": true,
+    "sources_json_updated": true,
+    "question_edits_created": true
+  },
+  "source_safe_repair": {
+    "performed": true,
+    "repair_notes": "Local-first article and question repairs were limited to claims supported by the listed raw PDFs and locator-checked refined markdown."
+  },
+  "local_validation": {
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_edits": "PASS",
+    "scoped_checks": "PASS",
+    "targeted_tests": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "sme_review": {
+    "required": false,
+    "status": "PASS",
+    "rationale": "Batch is local-first source-audited repair; final publishing review remains separate."
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "blockers": []
+  }
+}

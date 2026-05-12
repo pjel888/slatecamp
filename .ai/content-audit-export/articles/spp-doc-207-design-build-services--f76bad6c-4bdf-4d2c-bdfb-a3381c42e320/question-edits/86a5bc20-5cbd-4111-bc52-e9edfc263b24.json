@@ -1,0 +1,61 @@
+{
+  "question_id": "86a5bc20-5cbd-4111-bc52-e9edfc263b24",
+  "baseline_hash": "sha256:1be897e95e5870a3c775bcd49fb1bc01f2820640b7237acc9c6719fc5f911363",
+  "action": "replace",
+  "reason": "source-audited-article-batch-020-local-first rewrote the question to match only locally checked source evidence.",
+  "approved_by": "codex-local-source-audit-batch-020",
+  "approved_at": "2026-05-10T16:41:51.472Z",
+  "source_audit_support": {
+    "parent_article_id": "f76bad6c-4bdf-4d2c-bdfb-a3381c42e320",
+    "parent_article_slug": "spp-doc-207-design-build-services",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "checked_sources": [
+      {
+        "source_id": "spp-207-uap-local-raw-pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 207.pdf",
+        "raw_pdf_sha256": "sha256:7050b0c7bd152694587f39ead8b682ed71b882ba50fce5c4a614206f32b5b610",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md lines 3-8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md lines 147-153; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/SPP 207.md lines 429-432"
+      }
+    ],
+    "local_source_safe_action": "Replaced the prior item with a source-bounded MCQ using only checked SPP source lines."
+  },
+  "proposed": {
+    "text": "What is the safest scope for repaired SPP 207 questions in this batch?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Document title, two service types, and two manners of providing service."
+      },
+      {
+        "id": "b",
+        "text": "Unverified fee percentages and unrelated liability statutes."
+      },
+      {
+        "id": "c",
+        "text": "ADC owner and jury roles only."
+      },
+      {
+        "id": "d",
+        "text": "BP 344 accessibility measurements only."
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "The repaired questions are limited to the checked SPP 207 source lines.",
+    "explanation": "The repaired questions are limited to the checked SPP 207 source lines.",
+    "code_citation": "SPP Document 207",
+    "bloom_level": "analyze",
+    "application_context": "professional_practice",
+    "practice_context": [
+      "SPP Document 207",
+      "SPP Doc 207: Design-Build Services"
+    ],
+    "difficulty": 0.55,
+    "is_assessment": false,
+    "model_id": "BATCH-020-spp-doc-207-design-build-services-010"
+  }
+}

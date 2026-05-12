@@ -1,0 +1,241 @@
+{
+  "schema_version": "source-audit-evidence-v1-local-first",
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-031-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T08:56:01+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "75ef7a25-2d9d-455d-8d89-e6eb0b691240",
+    "slug": "lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice-services",
+    "title": "Building Condition Assessment, Adaptive Reuse, and Heritage Conservation",
+    "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice---75ef7a25-2d9d-455d-8d89-e6eb0b691240",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice---75ef7a25-2d9d-455d-8d89-e6eb0b691240",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice---75ef7a25-2d9d-455d-8d89-e6eb0b691240/candidate.md",
+    "candidate_sha256": "sha256:9b528208bb4fdad3042a9eca23ca4a9792d569dff61608ef9f9798393fd7767d",
+    "normalized_sha256": "sha256:9b528208bb4fdad3042a9eca23ca4a9792d569dff61608ef9f9798393fd7767d",
+    "linked_questions_sha256": "sha256:9565431ef0ad2b1812c376727e2bd9aef4a4c46b7829b4ef84eb310f7e204eee",
+    "sources_sha256": "sha256:bc584cfe6bef631bd712c2f10908ed92b9c7fad23c6c7c1be9d097a27f14d330"
+  },
+  "classification": {
+    "content_domain": "LEA Professional Practice and Jurisprudence",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high_value_lea_professional_practice",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": [
+      "8bf70084-ecca-4e0c-afe2-9662e9f5237e",
+      "048c28fc-8ffb-4709-867b-dcd9125b9c60",
+      "962aa12e-2083-4bf1-8c0e-90d72e711c90",
+      "aa56867e-1624-4bf2-885d-3d4bb9253086",
+      "ae3684de-a518-4714-b587-34846f5dc6b6",
+      "86d5dd88-b1e2-4326-8708-24d6022bae06",
+      "ef109051-2a55-45b7-a5d5-e6eef8d36250",
+      "ac5d146f-55af-490e-8ffd-5a4ab4c063af",
+      "b924280b-20ce-4e74-bf37-31ec5fdc6cd1",
+      "457e8ba6-4512-4332-9baa-92be64d22706"
+    ]
+  },
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice---75ef7a25-2d9d-455d-8d89-e6eb0b691240",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice---75ef7a25-2d9d-455d-8d89-e6eb0b691240",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice---75ef7a25-2d9d-455d-8d89-e6eb0b691240/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice---75ef7a25-2d9d-455d-8d89-e6eb0b691240/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice---75ef7a25-2d9d-455d-8d89-e6eb0b691240/question-edits/8bf70084-ecca-4e0c-afe2-9662e9f5237e.json",
+      ".ai/content-audit-export/articles/lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice---75ef7a25-2d9d-455d-8d89-e6eb0b691240/question-edits/048c28fc-8ffb-4709-867b-dcd9125b9c60.json",
+      ".ai/content-audit-export/articles/lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice---75ef7a25-2d9d-455d-8d89-e6eb0b691240/question-edits/962aa12e-2083-4bf1-8c0e-90d72e711c90.json",
+      ".ai/content-audit-export/articles/lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice---75ef7a25-2d9d-455d-8d89-e6eb0b691240/question-edits/aa56867e-1624-4bf2-885d-3d4bb9253086.json",
+      ".ai/content-audit-export/articles/lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice---75ef7a25-2d9d-455d-8d89-e6eb0b691240/question-edits/ae3684de-a518-4714-b587-34846f5dc6b6.json",
+      ".ai/content-audit-export/articles/lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice---75ef7a25-2d9d-455d-8d89-e6eb0b691240/question-edits/86d5dd88-b1e2-4326-8708-24d6022bae06.json",
+      ".ai/content-audit-export/articles/lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice---75ef7a25-2d9d-455d-8d89-e6eb0b691240/question-edits/ef109051-2a55-45b7-a5d5-e6eef8d36250.json",
+      ".ai/content-audit-export/articles/lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice---75ef7a25-2d9d-455d-8d89-e6eb0b691240/question-edits/ac5d146f-55af-490e-8ffd-5a4ab4c063af.json",
+      ".ai/content-audit-export/articles/lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice---75ef7a25-2d9d-455d-8d89-e6eb0b691240/question-edits/b924280b-20ce-4e74-bf37-31ec5fdc6cd1.json",
+      ".ai/content-audit-export/articles/lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice---75ef7a25-2d9d-455d-8d89-e6eb0b691240/question-edits/457e8ba6-4512-4332-9baa-92be64d22706.json"
+    ]
+  },
+  "raw_sources": [
+    {
+      "source_id": "ra-10066-national-cultural-heritage-act-local",
+      "label": "RA 10066 - National Cultural Heritage Act of 2009",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-10066/ra 10066.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-10066/ra 10066.pdf",
+      "raw_pdf_sha256": "sha256:98aefeeecfc07c329eac6e9ff9b784bf94e22c319dc2987d51ded09343b2bd95",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-10066/ra 10066.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-10066/ra 10066.md",
+      "refined_markdown_sha256": "sha256:9dd244f4545b120ea56288340cb426236781e873a7ad9139779f0971e08b220c",
+      "source_locator": "RA 10066 refined markdown lines 37-48, 60, 81-97, 177-199",
+      "checked_markdown_lines": [
+        "RA 10066 refined markdown lines 37-48, 60, 81-97, 177-199"
+      ]
+    },
+    {
+      "source_id": "uap-spp-203-specialized-architectural-services-local",
+      "label": "UAP SPP 203 - Specialized Architectural Services",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+      "raw_pdf_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+      "refined_markdown_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+      "source_locator": "SPP 203 refined markdown lines 101-149 and 1465-1469",
+      "checked_markdown_lines": [
+        "SPP 203 refined markdown lines 101-149 and 1465-1469"
+      ]
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "ra-10066-national-cultural-heritage-act-local",
+      "label": "RA 10066 - National Cultural Heritage Act of 2009",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-10066/ra 10066.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-10066/ra 10066.pdf",
+      "raw_pdf_sha256": "sha256:98aefeeecfc07c329eac6e9ff9b784bf94e22c319dc2987d51ded09343b2bd95",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-10066/ra 10066.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-10066/ra 10066.md",
+      "refined_markdown_sha256": "sha256:9dd244f4545b120ea56288340cb426236781e873a7ad9139779f0971e08b220c",
+      "source_locator": "RA 10066 refined markdown lines 37-48, 60, 81-97, 177-199",
+      "checked_markdown_lines": [
+        "RA 10066 refined markdown lines 37-48, 60, 81-97, 177-199"
+      ]
+    },
+    {
+      "source_id": "uap-spp-203-specialized-architectural-services-local",
+      "label": "UAP SPP 203 - Specialized Architectural Services",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+      "raw_pdf_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+      "refined_markdown_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+      "source_locator": "SPP 203 refined markdown lines 101-149 and 1465-1469",
+      "checked_markdown_lines": [
+        "SPP 203 refined markdown lines 101-149 and 1465-1469"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "svc018-claim-01",
+      "claim_text": "RA 10066 defines adaptive reuse as using valuable buildings, structures, or sites for other purposes to conserve the site, engineering integrity, and design authenticity.",
+      "claim_type": "legal_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "RA 10066 - National Cultural Heritage Act of 2009",
+        "locator": "RA 10066 refined markdown line 60",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-10066/ra 10066.pdf",
+        "raw_pdf_sha256": "sha256:98aefeeecfc07c329eac6e9ff9b784bf94e22c319dc2987d51ded09343b2bd95",
+        "quoted_pdf_excerpt": "Adaptive reuse means utilization of buildings, structures, or sites of value for other purposes to conserve the site, engineering integrity, and authenticity of design."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "svc018-claim-02",
+      "claim_text": "RA 10066 includes architectural and engineering structures, settings, and landscapes in built heritage when they have historical or cultural significance.",
+      "claim_type": "legal_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "RA 10066 - National Cultural Heritage Act of 2009",
+        "locator": "RA 10066 refined markdown lines 81-97",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-10066/ra 10066.pdf",
+        "raw_pdf_sha256": "sha256:98aefeeecfc07c329eac6e9ff9b784bf94e22c319dc2987d51ded09343b2bd95",
+        "quoted_pdf_excerpt": "Built heritage includes architectural and engineering structures and their settings and landscapes with historical or cultural significance."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "svc018-claim-03",
+      "claim_text": "RA 10066 conservation includes preservation, restoration, reconstruction, protection, adaptation, or combinations that maintain cultural significance.",
+      "claim_type": "legal_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "RA 10066 - National Cultural Heritage Act of 2009",
+        "locator": "RA 10066 refined markdown lines 95-97",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-10066/ra 10066.pdf",
+        "raw_pdf_sha256": "sha256:98aefeeecfc07c329eac6e9ff9b784bf94e22c319dc2987d51ded09343b2bd95",
+        "quoted_pdf_excerpt": "Conservation includes preservation, restoration, reconstruction, protection, adaptation, or any combination."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "svc018-claim-04",
+      "claim_text": "SPP 203 lists historic and cultural heritage conservation and planning among specialized architectural services.",
+      "claim_type": "legal_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "UAP SPP 203 - Specialized Architectural Services",
+        "locator": "SPP 203 refined markdown lines 121-149",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+        "raw_pdf_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+        "quoted_pdf_excerpt": "SPP 203 lists Historic and Cultural Heritage Conservation and Planning under Specialized Architectural Services."
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "removed_or_rewritten_material": [
+    "Learner-facing article text was rewritten to local source-supported claims only.",
+    "Legacy UI marker blocks were removed from normalized.md so candidate.md composes without unresolved markers.",
+    "Linked questions were rewritten to source-safe wording, answer keys, rationales, and citations."
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "gate_results": {
+    "compose": "PASS: bun run content-audit:compose -- --article-id 75ef7a25-2d9d-455d-8d89-e6eb0b691240 --overwrite --strict; blockers=0",
+    "diff": "PASS: bun run content-audit:diff -- --article-id 75ef7a25-2d9d-455d-8d89-e6eb0b691240 --summary --strict; safe_to_push=true blockers=0",
+    "validate": "PASS: bun run content-audit:validate -- --article-id 75ef7a25-2d9d-455d-8d89-e6eb0b691240 --summary; valid=true blockers=0 warnings=1 component-usage-only",
+    "push_dry_run": "not_attempted_local_first; Supabase remote fetch/publish is final publishing only",
+    "supabase_mutation": "not_attempted_by_request"
+  },
+  "source_safe_repair": {
+    "normalized_md_rewritten": true,
+    "candidate_md_composed": true,
+    "sources_json_refreshed_to_checked_raw_sources": true,
+    "source_audit_evidence_json_created": true,
+    "question_edits_created": 10,
+    "answer_key_fields_changed": true,
+    "ui_markers_removed_from_normalized": true,
+    "external_business_claims_limited_to_source_safe_form": true
+  },
+  "local_validation": {
+    "compose": {
+      "passed": true,
+      "blockers": [],
+      "candidate_hash": "sha256:9b528208bb4fdad3042a9eca23ca4a9792d569dff61608ef9f9798393fd7767d"
+    },
+    "diff": {
+      "passed": true,
+      "blockers": [],
+      "safe_to_push": true
+    },
+    "validate": {
+      "passed": true,
+      "blockers": [],
+      "warnings": [
+        "component-usage.json has not been generated for this article yet."
+      ]
+    },
+    "scoped_checks": {
+      "json_parse": "PASS",
+      "output_placeholder_internal_source_gap_scan": "PASS",
+      "source_audit_evidence": "PASS",
+      "question_edits": "PASS"
+    }
+  },
+  "sme_review": {
+    "required": false,
+    "status": "PASS"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

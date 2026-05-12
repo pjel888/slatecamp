@@ -1,80 +1,98 @@
 {
   "article_id": "68dc5ecb-7b3f-4394-a7b7-770336b3ce98",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:7a9e9520182a6bacfa93330c6ab6ed331c130cd8ab8f280e83039d7c76484af1",
-  "source_count": 6,
+  "sources_hash": "sha256:499dfd71cd4a4de516fa9ea5c1a63e35b4ff6b2483788e4acfe7ce3bcc2ba24f",
+  "source_count": 5,
   "sources": [
     {
-      "source_id": "62001ae2-f53a-4f6c-b6af-95b9e3b0fc31",
-      "article_id": "68dc5ecb-7b3f-4394-a7b7-770336b3ce98",
-      "label": "Revised National Plumbing Code of the Philippines (2009): Sections 303 (Waste Disposal), 305 (Septic Tanks), 307 (Grease Traps), 309 (Sewage Treatment Plants); Table 1 (Septic Tank Capacity)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:06.222594+00:00",
-      "updated_at": "2026-03-24T04:34:06.222594+00:00"
+      "source_id": "ra-9003-ecological-solid-waste-management-local",
+      "title": "RA 9003 Ecological Solid Waste Management Act",
+      "source_type": "local_raw_pdf_with_locator_checked_refined_markdown",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.pdf",
+      "raw_pdf_sha256": "sha256:d3939c8bad4085e76186be1fa0465b9011ceb639bdb8611e7d869fac454d59fe",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.md",
+      "refined_markdown_sha256": "sha256:f0e42aa0bb840899b2ef0a87d79fa7e9cb47e97d090731fc48b119711144eadc",
+      "checked_markdown_lines": [
+        "RA 9003 refined markdown lines 11-19",
+        "RA 9003 refined markdown lines 57-74",
+        "RA 9003 refined markdown lines 108-123"
+      ],
+      "source_locator": "RA 9003 refined markdown lines 11-19; RA 9003 refined markdown lines 57-74; RA 9003 refined markdown lines 108-123",
+      "source_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+      "derivative_layer_role": "locator aid only"
     },
     {
-      "source_id": "b31e739f-438a-42ae-b522-1d4c92be20c4",
-      "article_id": "68dc5ecb-7b3f-4394-a7b7-770336b3ce98",
-      "label": "PD 1096 – National Building Code of the Philippines (1977): Rule VIII §1207 (Garbage Chutes/Storage)",
-      "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 1,
-      "created_at": "2026-03-24T04:34:06.222594+00:00",
-      "updated_at": "2026-03-24T04:34:06.222594+00:00"
+      "source_id": "ra-9275-clean-water-act-local",
+      "title": "RA 9275 Philippine Clean Water Act",
+      "source_type": "local_raw_pdf_with_locator_checked_refined_markdown",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9257/RA 9275 PH Clean Water Act.pdf",
+      "raw_pdf_sha256": "sha256:125e87be94dbecfe40e9a5a698359e7a0e3aabf1b0a3fd08004c90ec9b17b0a9",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9257/RA 9275 PH Clean Water Act.md",
+      "refined_markdown_sha256": "sha256:209d1be42efa2e2ced9438610f041537b50ef9059911daf21bf1ece2ff89a7ee",
+      "checked_markdown_lines": [
+        "RA 9275 refined markdown lines 24-54",
+        "RA 9275 refined markdown lines 86-100",
+        "RA 9275 refined markdown lines 125-139",
+        "RA 9275 refined markdown lines 172-180"
+      ],
+      "source_locator": "RA 9275 refined markdown lines 24-54; RA 9275 refined markdown lines 86-100; RA 9275 refined markdown lines 125-139; RA 9275 refined markdown lines 172-180",
+      "source_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+      "derivative_layer_role": "locator aid only"
     },
     {
-      "source_id": "3b866c7c-0258-4549-b463-637e17295620",
-      "article_id": "68dc5ecb-7b3f-4394-a7b7-770336b3ce98",
-      "label": "RA 9003 – Ecological Solid Waste Management Act (2001): Sections 3–4 (Waste Classification and Segregation), Section 11 (Municipal and Community Waste Management)",
-      "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:34:06.222594+00:00",
-      "updated_at": "2026-03-24T04:34:06.222594+00:00"
+      "source_id": "pd-856-code-on-sanitation-local",
+      "title": "PD 856 Code on Sanitation of the Philippines",
+      "source_type": "local_raw_pdf_with_locator_checked_refined_markdown",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-856/phi201040.pdf",
+      "raw_pdf_sha256": "sha256:aae564835045721c19b32bdbb2c7e9bf821ee3a52d26d824f853b0ae2c8b1cbf",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-856/phi201040.md",
+      "refined_markdown_sha256": "sha256:c321fd3ea87a67da56443289b09c0ff33092174c0e57c87ed6f8d380793ad39e",
+      "checked_markdown_lines": [
+        "PD 856 refined markdown lines 195-198",
+        "PD 856 refined markdown lines 1067-1138",
+        "PD 856 refined markdown lines 1162-1267"
+      ],
+      "source_locator": "PD 856 refined markdown lines 195-198; PD 856 refined markdown lines 1067-1138; PD 856 refined markdown lines 1162-1267",
+      "source_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+      "derivative_layer_role": "locator aid only"
     },
     {
-      "source_id": "04d0ace5-bddc-438c-b77f-567873f15136",
-      "article_id": "68dc5ecb-7b3f-4394-a7b7-770336b3ce98",
-      "label": "RA 9275 – Clean Water Act (2004): Section 20 (Water Quality Standards), Schedule of Effluent Standards for Class B, C Waters",
-      "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:34:06.222594+00:00",
-      "updated_at": "2026-03-24T04:34:06.222594+00:00"
+      "source_id": "rnpc-revised-national-plumbing-code-local",
+      "title": "Revised National Plumbing Code of the Philippines",
+      "source_type": "local_raw_pdf_with_locator_checked_refined_markdown",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf",
+      "raw_pdf_sha256": "sha256:c4ec30ec3ffe3b39513a033ebc2cfa614bd201d25c5578e1847e7f359fed3f5d",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Revised National Plumbing Code of the Philippines.md",
+      "refined_markdown_sha256": "sha256:7cea224bfc6c54d0883fe69c89b97cf134e45acaab6c8950b8af3621059c9a91",
+      "checked_markdown_lines": [
+        "Revised National Plumbing Code refined markdown lines 75-110",
+        "Revised National Plumbing Code refined markdown lines 147-196",
+        "Revised National Plumbing Code refined markdown lines 224-251",
+        "Revised National Plumbing Code refined markdown lines 453-477",
+        "Revised National Plumbing Code refined markdown lines 1338-1370",
+        "Revised National Plumbing Code refined markdown lines 3390-3419",
+        "Revised National Plumbing Code refined markdown lines 3660-3674",
+        "Revised National Plumbing Code refined markdown lines 4213-4260"
+      ],
+      "source_locator": "Revised National Plumbing Code refined markdown lines 75-110; Revised National Plumbing Code refined markdown lines 147-196; Revised National Plumbing Code refined markdown lines 224-251; Revised National Plumbing Code refined markdown lines 453-477; Revised National Plumbing Code refined markdown lines 1338-1370; Revised National Plumbing Code refined markdown lines 3390-3419; Revised National Plumbing Code refined markdown lines 3660-3674; Revised National Plumbing Code refined markdown lines 4213-4260",
+      "source_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+      "derivative_layer_role": "locator aid only"
     },
     {
-      "source_id": "aa1b5e94-10d1-48ed-8f20-b160bfd35fd9",
-      "article_id": "68dc5ecb-7b3f-4394-a7b7-770336b3ce98",
-      "label": "DENR-EMB Effluent Standards (Revised 2016): BOD, TSS, pH limits for wastewater discharge to surface and ground waters",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 4,
-      "created_at": "2026-03-24T04:34:06.222594+00:00",
-      "updated_at": "2026-03-24T04:34:06.222594+00:00"
-    },
-    {
-      "source_id": "d029d0e8-651f-4039-af87-c5aab793039c",
-      "article_id": "68dc5ecb-7b3f-4394-a7b7-770336b3ce98",
-      "label": "Revised National Plumbing Code Commentary & Case Studies (PCCII, Professional Regulation Commission)",
-      "url": null,
-      "source_type": "regulatory_body",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 5,
-      "created_at": "2026-03-24T04:34:06.222594+00:00",
-      "updated_at": "2026-03-24T04:34:06.222594+00:00"
+      "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+      "title": "PD 1096 2004 Revised IRR - DPWH Official",
+      "source_type": "local_raw_pdf_with_locator_checked_refined_markdown",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "checked_markdown_lines": [
+        "PD 1096 RIRR 2004 DPWH Official refined markdown lines 968-990",
+        "PD 1096 RIRR 2004 DPWH Official refined markdown lines 3789-3897"
+      ],
+      "source_locator": "PD 1096 RIRR 2004 DPWH Official refined markdown lines 968-990; PD 1096 RIRR 2004 DPWH Official refined markdown lines 3789-3897",
+      "source_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+      "derivative_layer_role": "locator aid only"
     }
   ]
 }

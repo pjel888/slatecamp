@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-05-10T18:17:49.477Z",
+  "input": "/Users/philiplewis/slatecamp/.ai/content-audit-export",
+  "article_count": 1,
+  "valid": true,
+  "blockers": [],
+  "warnings": [
+    "transport-nodes-escalators-walkways--f6fe1a69-b3c0-4c94-8341-9291c71c5006: component-usage.json has not been generated for this article yet."
+  ],
+  "articles": [
+    {
+      "article_id": "f6fe1a69-b3c0-4c94-8341-9291c71c5006",
+      "slug": "transport-nodes-escalators-walkways",
+      "folder": "transport-nodes-escalators-walkways--f6fe1a69-b3c0-4c94-8341-9291c71c5006",
+      "valid": true,
+      "blockers": [],
+      "warnings": [
+        "component-usage.json has not been generated for this article yet."
+      ],
+      "files": {
+        "metadata": true,
+        "original": true,
+        "normalized": true,
+        "uiBlocks": true,
+        "parserErrors": true,
+        "uiBlockEdits": true,
+        "linkedQuestions": true,
+        "sources": true,
+        "taxonomy": true,
+        "componentUsage": false,
+        "candidate": true,
+        "diffReport": true,
+        "diffReportMarkdown": true,
+        "pushReport": false,
+        "pushResult": false
+      },
+      "hashes": {
+        "original": "sha256:f5c8d133756e4a0a4e1a1159d2716758038d73d6312a3a966bc0310d37c54359",
+        "normalized": "sha256:97eff161df726e76be0067680c11b19655751e127ba9fd0f36482021580e7e24",
+        "candidate": "sha256:97eff161df726e76be0067680c11b19655751e127ba9fd0f36482021580e7e24",
+        "ui_blocks": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    }
+  ]
+}

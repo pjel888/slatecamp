@@ -1,0 +1,117 @@
+{
+  "question_id": "7be94c15-2df0-4cf2-8d2f-1317f457c215",
+  "baseline_hash": "sha256:69845ff8cee3a8daf28784ed0bc52418fbd7c1b03eb03d332a79359702891180",
+  "action": "replace",
+  "reason": "source-audited-article-batch-014-local-first aligned linked question with local-first source audit for lea-dsgn-005-11-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-014",
+  "approved_at": "2026-05-10T23:05:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "cd18af9a-b1e1-42d4-a254-ff5244838f19",
+    "parent_article_slug": "lea-dsgn-005-11-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "PD 1096 local sources support Group E business/mercantile occupancy, assembly occupancy principles, and funeral parlors/memorial chapels as commercial uses; RA 9514/PD 1096 support egress/accessibility checks. Unsupported room-area, cold-storage, and HVAC numeric claims were removed or rewritten as project-specific design verification.",
+    "checked_markdown_lines": [
+      "raw markdown lines 1607-1665, 2495, 2595, 4020-4087, 7055, 7097, 7170, 7184, 9655",
+      "canonical source lines 1607-1665, 2495, 2595",
+      "raw markdown lines 436, 719-721, 743, 758, 872",
+      "raw markdown lines 2865-2900, 2936-2959, 3150-3208, 3255-3261, 3470-3479",
+      "raw markdown lines 1037-1048, 1054-1084, 1096-1107"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.pdf",
+        "sha256": "sha256:8e98d8afd4b5972ba5a82d33a65e59e800cd41661b764a0dfc4112d29697b341",
+        "source_id": "pd-1096-full-irr-occupancy-development-controls",
+        "locator": "Occupancy groups, funeral parlors/memorial chapels in zoning tables, PSO/MACA/TOSL definitions, window openings"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.md",
+        "sha256": "sha256:74351a12fcecb23ef611e23e40f1e73b87e2bdb8f9a625e886dc1b906e83c940",
+        "source_id": "pd-1096-full-irr-occupancy-development-controls",
+        "locator": "Occupancy groups, funeral parlors/memorial chapels in zoning tables, PSO/MACA/TOSL definitions, window openings"
+      },
+      {
+        "path": "vitruvius-connection/003_Canonical-Knowledge-Layer/shared/sources/implementing-rules-and-regulations.md",
+        "sha256": "sha256:2c8c7c95eb110e83065c11b1370051dc5e191cb46932c11d2d37a5e7647537a5",
+        "source_id": "pd-1096-full-irr-occupancy-development-controls",
+        "locator": "Occupancy groups, funeral parlors/memorial chapels in zoning tables, PSO/MACA/TOSL definitions, window openings"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 - National Building Code Summary.pdf",
+        "sha256": "sha256:8923385a06f3122c2435989184e6691aa07bead89655d811d16071545e77f70e",
+        "source_id": "pd-1096-summary-light-egress-stair",
+        "locator": "Window openings, egress width/travel distance, corridor and stair summary provisions"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 - National Building Code Summary.md",
+        "sha256": "sha256:897f4d4af3b9e673af24d36d77244f1cfc290d68bbd8be9934d36912c42838ca",
+        "source_id": "pd-1096-summary-light-egress-stair",
+        "locator": "Window openings, egress width/travel distance, corridor and stair summary provisions"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "source_id": "ra-9514-rirr-2019-egress-stairs-dead-end",
+        "locator": "Means of egress, dead-end limits, capacity factors, stair dimensions, ramp dimensions"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "sha256": "sha256:eb992b1c0090e1f8f34ee3ad24d20be3b4ffaa34ec3ab9d341b6f1596865dd26",
+        "source_id": "ra-9514-rirr-2019-egress-stairs-dead-end",
+        "locator": "Means of egress, dead-end limits, capacity factors, stair dimensions, ramp dimensions"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "source_id": "bp-344-2024-accessibility-elevator",
+        "locator": "Accessible elevators and vertical access provisions"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "sha256": "sha256:a621bcb059a5c023dc5056939a6fa8ae44b5f60a29918f628d81657b9639692a",
+        "source_id": "bp-344-2024-accessibility-elevator",
+        "locator": "Accessible elevators and vertical access provisions"
+      }
+    ],
+    "local_source_safe_action": "proposed learner-facing text/options/explanation rewritten to remove or qualify an exact claim not supported by the checked local source packet"
+  },
+  "proposed": {
+    "text": "For a funeral home, which source-safe regulatory framing should the learner use?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only PD 1096 applies, because funeral homes are ordinary commercial buildings"
+      },
+      {
+        "id": "b",
+        "text": "Use PD 1096/RA 9514/BP 344 for building, fire, and accessibility checks, and verify separate health or professional operating rules from the applicable authority"
+      },
+      {
+        "id": "c",
+        "text": "Only the Fire Code applies, because funeral chapels are assembly spaces"
+      },
+      {
+        "id": "d",
+        "text": "Only the local zoning ordinance applies once the use is listed as commercial"
+      }
+    ],
+    "correct_option_id": "b",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "The local packet supports building, fire, accessibility, and funeral-use zoning checks. Operating/licensing claims need their own authority before being stated as exact requirements.",
+    "explanation": "For source-audited learning content, separate building-code classification from operating/licensing regulation. Verify funeral-service operating rules from the applicable local health or professional authority before citing them.",
+    "code_citation": "PD 1096; RA 9514; BP 344; project-specific health/mechanical verification",
+    "bloom_level": "analyze",
+    "application_context": "code_interpretation",
+    "practice_context": [
+      "philippine regulation",
+      "funeral services"
+    ],
+    "difficulty": 0.9,
+    "is_assessment": false,
+    "model_id": "ALE-DSGN-005-11-010"
+  }
+}

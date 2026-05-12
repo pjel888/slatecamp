@@ -204,7 +204,7 @@ If ALE-LAWS nodes appear in the heatmap, the student experiences:
 
 #### Why deprecated nodes must be excluded
 
-Deprecated nodes (`deprecated_at IS NOT NULL`) represent content that has been retired — either because it was covered by a code update (BP 344 2024 IRR superseding older provisions), because the taxonomy was restructured, or because the exam no longer tests this area. 
+Deprecated nodes (`deprecated_at IS NOT NULL`) represent content that has been retired — either because it was covered by a code update (BP 344 2024 IRR superseding older provisions), because the taxonomy was restructured, or because the exam no longer tests this area.
 
 A student seeing a deprecated node on their heatmap experiences:
 1. Studying content that will not appear on the exam
@@ -796,7 +796,7 @@ With all four features shipped, the dashboard presents information in a strict p
 
 2. ReadinessScoreCard with PRC weighting ← CURRENT STATE
    "Here is your accurate overall readiness"
-   
+
 3. Sub-score breakdown by Area A/B/C ← CONTEXT
    "Here is how each area contributes"
 

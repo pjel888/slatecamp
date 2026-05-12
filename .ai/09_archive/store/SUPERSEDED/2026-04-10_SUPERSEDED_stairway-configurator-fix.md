@@ -1,16 +1,16 @@
 Yes. I’ve read the configurator as a system, not just as isolated files.
 
-My verdict: the overall design is strong, disciplined, and worth keeping. The biggest issue is not the architecture. It is rule drift, where computation, geometry, overlays, click targets, and egress logic can start telling slightly different stories about the same stair. In a compliance tool, that is the real danger.   
+My verdict: the overall design is strong, disciplined, and worth keeping. The biggest issue is not the architecture. It is rule drift, where computation, geometry, overlays, click targets, and egress logic can start telling slightly different stories about the same stair. In a compliance tool, that is the real danger.
 
 ## Overall assessment
 
 This is a well-structured v2 refactor. The core idea is sound:
 
-* `stairway-computation.ts` is a pure computation engine with no Three.js, React, or store imports. That is exactly the right backbone for a compliance-driven configurator. 
-* `stairway-egress.ts` is also pure and isolated, which is good separation of concerns. 
-* `stairway-configurator.ts` acts as the adapter and scene assembly layer, routing from computed state to straight, L-shape, or U-shape geometry. 
-* The “parallel law” model is the right legal and pedagogical model. The configurator explicitly says each law evaluates independently, conflicts are flagged, and values are not averaged or merged. That is a strong design decision for Philippine code conditions. 
-* The type model is good. `ComputedStairState` is clearly intended as the single source of truth. 
+* `stairway-computation.ts` is a pure computation engine with no Three.js, React, or store imports. That is exactly the right backbone for a compliance-driven configurator.
+* `stairway-egress.ts` is also pure and isolated, which is good separation of concerns.
+* `stairway-configurator.ts` acts as the adapter and scene assembly layer, routing from computed state to straight, L-shape, or U-shape geometry.
+* The “parallel law” model is the right legal and pedagogical model. The configurator explicitly says each law evaluates independently, conflicts are flagged, and values are not averaged or merged. That is a strong design decision for Philippine code conditions.
+* The type model is good. `ComputedStairState` is clearly intended as the single source of truth.
 
 So the foundation is good. This is not a bad codebase. This is a good codebase with some dangerous inconsistencies.
 
@@ -18,19 +18,19 @@ So the foundation is good. This is not a bad codebase. This is a good codebase w
 
 ### 1. The computation architecture is correct
 
-The engine computes classification flags, comfort, pitch, total rise/run, landing need, per-dimension compliance, color resolution, tolerance variation data, and international comparison deltas in one place before geometry is built. That is exactly how this should be structured. 
+The engine computes classification flags, comfort, pitch, total rise/run, landing need, per-dimension compliance, color resolution, tolerance variation data, and international comparison deltas in one place before geometry is built. That is exactly how this should be structured.
 
 ### 2. The legal logic model is intellectually correct
 
-The `ComplianceResult` and `ConflictFlag` model is one of the best parts of the whole system. It acknowledges that one stair can pass one regime and fail another, and that conflicts themselves are meaningful information. That is the right way to teach code overlays.  
+The `ComplianceResult` and `ConflictFlag` model is one of the best parts of the whole system. It acknowledges that one stair can pass one regime and fail another, and that conflicts themselves are meaningful information. That is the right way to teach code overlays.
 
 ### 3. The teaching layer is thoughtful
 
-The presets are not random. They are clearly pedagogical, with scenarios like “All Laws Happy” and “Everything Wrong.” That is useful for guided learning and challenge mode. 
+The presets are not random. They are clearly pedagogical, with scenarios like “All Laws Happy” and “Everything Wrong.” That is useful for guided learning and challenge mode.
 
 ### 4. The code is honest about uncertainty
 
-The international constants file explicitly warns that the IBC, ADA, and IRC values are unverified and not for production compliance without SME review. That is the correct posture. 
+The international constants file explicitly warns that the IBC, ADA, and IRC values are unverified and not for production compliance without SME review. That is the correct posture.
 
 ## The main problems
 
@@ -47,7 +47,7 @@ The same rule logic appears in:
 * click-target mapping
 * egress logic
 
-That means the system is exposed to drift. You can already see this happening.    
+That means the system is exposed to drift. You can already see this happening.
 
 A compliance tool must not have five semi-independent interpretations of the same stair.
 
@@ -57,13 +57,13 @@ This is a real issue.
 
 `computeHandrailCompliance()` treats BP 344 as a strict exact-value requirement:
 
-`passes: handrailHeight === BP344_HANDRAIL_UPPER_HEIGHT_MM` 
+`passes: handrailHeight === BP344_HANDRAIL_UPPER_HEIGHT_MM`
 
-But `resolveHandrailColor()` ignores BP 344 entirely and only colors PD 1096 handrail violations. So the computation engine can say the accessible handrail is noncompliant, while the geometry color layer does not visually reflect that violation at all.  
+But `resolveHandrailColor()` ignores BP 344 entirely and only colors PD 1096 handrail violations. So the computation engine can say the accessible handrail is noncompliant, while the geometry color layer does not visually reflect that violation at all.
 
 That is exactly the kind of mismatch that destroys trust in a code visualizer.
 
-Also, the configurator draws BP 344 ghost rails at 900 mm and 700 mm for accessible routes, but the main handrail color logic still does not reflect BP 344 failure state.  
+Also, the configurator draws BP 344 ghost rails at 900 mm and 700 mm for accessible routes, but the main handrail color logic still does not reflect BP 344 failure state.
 
 ## 3. International comparison deltas are oversimplified and can mislead
 
@@ -72,20 +72,20 @@ Also, the configurator draws BP 344 ghost rails at 900 mm and 700 mm for accessi
 * `BP220_MIN_WIDTH_MM`, or
 * `PD1096_MIN_WIDTH_RESIDENTIAL_MM`
 
-It does not account for high-occupancy, commercial, BP 344 accessibility overlay, or RA 9514 exit overlay, even though those conditions are part of the main compliance logic elsewhere.  
+It does not account for high-occupancy, commercial, BP 344 accessibility overlay, or RA 9514 exit overlay, even though those conditions are part of the main compliance logic elsewhere.
 
-So the international comparison panel can easily present the wrong “Philippine baseline” for the actual scenario. That is a conceptual bug, not just a UI issue. 
+So the international comparison panel can easily present the wrong “Philippine baseline” for the actual scenario. That is a conceptual bug, not just a UI issue.
 
 ## 4. The U-shape intermediate landing placement appears wrong
 
-In `stairway-geometry-u-shape.ts`, the landing width and center are computed, but the X position is set using `landingCenterX / 2`. 
+In `stairway-geometry-u-shape.ts`, the landing width and center are computed, but the X position is set using `landingCenterX / 2`.
 
 Given:
 
 * `totalLandingWidth = sW * 2 + gapBetweenFlights`
 * `landingCenterX = (sW + gapBetweenFlights) / 2`
 
-placing the landing at `landingCenterX / 2` appears to shift it left of the intended center. 
+placing the landing at `landingCenterX / 2` appears to shift it left of the intended center.
 
 That looks like a genuine geometry bug.
 
@@ -93,13 +93,13 @@ That looks like a genuine geometry bug.
 
 Both the L-shape and U-shape builders compute landing depth as:
 
-`Math.min(sW, LANDING_MIN_DEPTH_MM / 1000)`  
+`Math.min(sW, LANDING_MIN_DEPTH_MM / 1000)`
 
-Because the constant is named `LANDING_MIN_DEPTH_MM`, using `Math.min` means the rendered landing depth will be capped by stair width instead of being enforced to at least the minimum. That may be intentional as a visual simplification, but if so the naming is misleading. If it is not intentional, then the geometry is under-representing the required landing depth.  
+Because the constant is named `LANDING_MIN_DEPTH_MM`, using `Math.min` means the rendered landing depth will be capped by stair width instead of being enforced to at least the minimum. That may be intentional as a visual simplification, but if so the naming is misleading. If it is not intentional, then the geometry is under-representing the required landing depth.
 
 ## 6. Click-to-inspect coverage is incomplete
 
-The click target registry covers tread, riser, handrail, headroom plane, base/top landing, BP 344 rails/extensions, width gaps, and comparison geometry. 
+The click target registry covers tread, riser, handrail, headroom plane, base/top landing, BP 344 rails/extensions, width gaps, and comparison geometry.
 
 But the geometry layer also creates IDs such as:
 
@@ -107,37 +107,37 @@ But the geometry layer also creates IDs such as:
 * `handrail-cross-section`
 * `children-rail-711-*`
 * `nosing-detail-*`
-* `evac-dot-*`    
+* `evac-dot-*`
 
-Those do not appear in the click target registry, so parts of the experience likely cannot be inspected through the same interaction model. 
+Those do not appear in the click target registry, so parts of the experience likely cannot be inspected through the same interaction model.
 
 ## 7. Determinism is inconsistent
 
-Tolerance mode is deterministic. It uses a seeded PRNG (`mulberry32`) and a fixed default seed, which is good for teaching, testing, and reproducibility. 
+Tolerance mode is deterministic. It uses a seeded PRNG (`mulberry32`) and a fixed default seed, which is good for teaching, testing, and reproducibility.
 
-But the evacuation overlay uses `Math.random()` directly inside geometry generation for dot spread. 
+But the evacuation overlay uses `Math.random()` directly inside geometry generation for dot spread.
 
 That means one educational overlay is reproducible and another is not. For a training tool, that is sloppy. The evacuation visualization should also be seeded.
 
 ## 8. Egress logic is useful, but not fully aligned with stair compliance logic
 
-`computeEgressRequirements()` calculates width per exit using `providedExits`, not `effectiveRequiredExits`. 
+`computeEgressRequirements()` calculates width per exit using `providedExits`, not `effectiveRequiredExits`.
 
 That means if the user provides too few exits, the width-per-exit number is based on the wrong denominator from a code-planning perspective. It may still be mathematically intentional, but pedagogically it can confuse users.
 
-More importantly, `stairCountsAsExit` only checks whether stair width is at least `RA9514_MIN_EXIT_WIDTH_MM`, which is 710 mm.  
+More importantly, `stairCountsAsExit` only checks whether stair width is at least `RA9514_MIN_EXIT_WIDTH_MM`, which is 710 mm.
 
-But the stair compliance logic elsewhere uses `RA9514_MIN_WIDTH_MM` for exit-stair dimensional checking. 
+But the stair compliance logic elsewhere uses `RA9514_MIN_WIDTH_MM` for exit-stair dimensional checking.
 
-So one part of the system can imply “this stair counts as an exit” while another part says “this exit stair is too narrow.” That is not necessarily legally impossible, but within this tool it needs very explicit wording or the user will think the tool contradicts itself.  
+So one part of the system can imply “this stair counts as an exit” while another part says “this exit stair is too narrow.” That is not necessarily legally impossible, but within this tool it needs very explicit wording or the user will think the tool contradicts itself.
 
 ## 9. Some UI controls are ahead of implementation
 
 The detail-view geometry is more advanced than a placeholder, but not all controls are genuinely wired through.
 
-The nosing builder accepts `_riserUndercutDeg` and `_contrastStripWidthMm` as parameters in the file signature, but those underscore prefixes indicate they are currently unused. The detail UI exposes those sliders, yet the actual geometry appears driven primarily by nosing projection and radius. This is feature drift between UI and implementation. 
+The nosing builder accepts `_riserUndercutDeg` and `_contrastStripWidthMm` as parameters in the file signature, but those underscore prefixes indicate they are currently unused. The detail UI exposes those sliders, yet the actual geometry appears driven primarily by nosing projection and radius. This is feature drift between UI and implementation.
 
-Similarly, the handrail detail view creates a circular profile from `handrailDiameter`, but the UI also exposes `handrailProfile` and `wallClearance`. In the inspected geometry path, the cross-section is always generated as a circle and the clearance/profile options are not reflected there. 
+Similarly, the handrail detail view creates a circular profile from `handrailDiameter`, but the UI also exposes `handrailProfile` and `wallClearance`. In the inspected geometry path, the cross-section is always generated as a circle and the clearance/profile options are not reflected there.
 
 ## 10. Tests are decent, but not nearly enough for this kind of tool
 
@@ -147,7 +147,7 @@ The existing tests cover:
 * pitch classification
 * some preset validation
 * egress basics
-* stair type parsing for L-shape  
+* stair type parsing for L-shape
 
 That is a respectable start.
 
@@ -164,13 +164,13 @@ But there are no visible tests here for:
 * international comparison deltas
 * intermediate landing placement in U-shape
 
-For a compliance visualizer, that missing coverage is substantial. 
+For a compliance visualizer, that missing coverage is substantial.
 
-Also, one test name is misleading: it says `too-stretched (2R+T=650)` but the expected status is `comfortable`. The implementation treats values greater than 650 as too stretched, so the expectation is consistent with code, but the test label is wrong and can mislead future maintainers.  
+Also, one test name is misleading: it says `too-stretched (2R+T=650)` but the expected status is `comfortable`. The implementation treats values greater than 650 as too stretched, so the expectation is consistent with code, but the test label is wrong and can mislead future maintainers.
 
 ## 11. Types and comments have drifted
 
-`stairway-types.ts` says `stairType` is “Phase 1: always straight,” but the actual type union includes `straight`, `l-shape`, and `u-shape`, and the tests explicitly validate L-shape parsing.  
+`stairway-types.ts` says `stairType` is “Phase 1: always straight,” but the actual type union includes `straight`, `l-shape`, and `u-shape`, and the tests explicitly validate L-shape parsing.
 
 That is minor, but it is evidence of documentation drift.
 
@@ -185,42 +185,42 @@ Keep:
 * the conflict flag idea
 * the adapter pattern from config to computed state to geometry
 * the preset-based teaching workflow
-* the explicit warning system for unverified international comparisons    
+* the explicit warning system for unverified international comparisons
 
 That is the right skeleton.
 
 ## Priority fixes, in order
 
 1. **Create one canonical rule engine API**
-   All colors, scene violations, annotations, click popovers, and comparison panels should derive from the computed compliance objects, not from duplicated threshold checks scattered across files.  
+   All colors, scene violations, annotations, click popovers, and comparison panels should derive from the computed compliance objects, not from duplicated threshold checks scattered across files.
 
 2. **Fix the handrail inconsistency**
-   BP 344 handrail failure must be reflected visually, not just in the computation object. Also decide whether exact equality at 900 mm is truly the intended rule model for this tool.  
+   BP 344 handrail failure must be reflected visually, not just in the computation object. Also decide whether exact equality at 900 mm is truly the intended rule model for this tool.
 
 3. **Fix international comparison logic**
-   The Philippine baseline shown there must reflect the actual active scenario, not just residential-or-BP220 simplification. 
+   The Philippine baseline shown there must reflect the actual active scenario, not just residential-or-BP220 simplification.
 
 4. **Fix U-shape landing placement**
-   The `landingCenterX / 2` issue should be checked first. That looks like a real scene bug. 
+   The `landingCenterX / 2` issue should be checked first. That looks like a real scene bug.
 
 5. **Clarify or correct landing minimum-depth behavior**
-   Either rename it as a visual simplification, or enforce the minimum properly.  
+   Either rename it as a visual simplification, or enforce the minimum properly.
 
 6. **Expand click target coverage**
-   Every meaningful geometry artifact should either be inspectable or intentionally excluded. Right now it looks mixed.   
+   Every meaningful geometry artifact should either be inspectable or intentionally excluded. Right now it looks mixed.
 
 7. **Make evacuation visualization deterministic**
-   Use the same seeded approach used in tolerance mode.  
+   Use the same seeded approach used in tolerance mode.
 
 8. **Align egress wording with stair-width compliance wording**
-   The tool should explain clearly when “counts as exit capacity element” differs from “passes exit stair geometry rules,” or unify the logic if that distinction is not intended.  
+   The tool should explain clearly when “counts as exit capacity element” differs from “passes exit stair geometry rules,” or unify the logic if that distinction is not intended.
 
 9. **Add geometry and interaction tests**
-   Right now the riskiest code paths are the least tested. 
+   Right now the riskiest code paths are the least tested.
 
 ## Final judgment
 
-This configurator is serious work. It is not toy code. The separation of computation from rendering is the right move, and the parallel-law model is genuinely good.  
+This configurator is serious work. It is not toy code. The separation of computation from rendering is the right move, and the parallel-law model is genuinely good.
 
 But it is at the stage where polish is no longer the priority. Consistency is. The system now needs one round of hardening focused on legal logic alignment, geometry correctness, and test coverage. That is what will make it trustworthy.
 
@@ -654,7 +654,7 @@ That order is what keeps a configurator clean.
 
 ## Overview
 
-Yes. The right move now is to formalize geometry generation so every stair is built from explicit join boundaries, then run a validator over the generated geometry before it is considered valid for rendering. The current builders place bottom and top landings with center-based formulas, and the straight stair handrail is generated as one full sloped cylinder from aggregate rise and run. That is exactly the kind of setup that produces the endpoint clashes visible in your screenshot. The same general pattern also exists in the L-shape and U-shape builders.    
+Yes. The right move now is to formalize geometry generation so every stair is built from explicit join boundaries, then run a validator over the generated geometry before it is considered valid for rendering. The current builders place bottom and top landings with center-based formulas, and the straight stair handrail is generated as one full sloped cylinder from aggregate rise and run. That is exactly the kind of setup that produces the endpoint clashes visible in your screenshot. The same general pattern also exists in the L-shape and U-shape builders.
 
 The concrete fix is a 4-part system:
 
@@ -667,7 +667,7 @@ That is how this stops being a recurring bug and becomes a controlled system.
 
 ## Point 01: Exact formulas to replace in the straight stair builder
 
-Right now the straight stair builder places the bottom landing at `z = tD / 2` with depth `tD`, while the first tread is centered at `z = 0` with the same depth. It places the top landing at `-((n - 1) * tD + tD / 2)`, which likewise overlaps the last tread. The handrail is then derived from `totalRise = n * rH` and `totalRun = (n - 1) * tD`, which overextends the rail into the stair endpoints instead of trimming it to the actual stair run.  
+Right now the straight stair builder places the bottom landing at `z = tD / 2` with depth `tD`, while the first tread is centered at `z = 0` with the same depth. It places the top landing at `-((n - 1) * tD + tD / 2)`, which likewise overlaps the last tread. The handrail is then derived from `totalRise = n * rH` and `totalRun = (n - 1) * tD`, which overextends the rail into the stair endpoints instead of trimming it to the actual stair run.
 
 ### Replace the current straight landing logic with edge-based join planes
 
@@ -762,11 +762,11 @@ for (const s of [-1, 1] as const) {
 }
 ```
 
-That change alone will eliminate most of the endpoint nonsense you are seeing in the straight stair. It replaces convenience math with actual start and end points. The need for this is directly supported by the current center-based straight builder and the screenshot showing conflicts at both ends.  
+That change alone will eliminate most of the endpoint nonsense you are seeing in the straight stair. It replaces convenience math with actual start and end points. The need for this is directly supported by the current center-based straight builder and the screenshot showing conflicts at both ends.
 
 ## Point 02: Introduce a join-contract model
 
-Right now each builder is doing local placement math. That is the real root problem. The builders need a common contract that defines where one piece is allowed to end and where the next piece must begin. The current files already use stable IDs and explicit stair-type models, so the codebase is ready for this kind of formalization.  
+Right now each builder is doing local placement math. That is the real root problem. The builders need a common contract that defines where one piece is allowed to end and where the next piece must begin. The current files already use stable IDs and explicit stair-type models, so the codebase is ready for this kind of formalization.
 
 ### Add this to `stairway-types.ts`
 
@@ -879,7 +879,7 @@ This gives every geometry builder a single legal boundary set to obey. No more g
 
 ## Point 03: Add a geometry validator API
 
-The current builders generate `GeometryInstruction[]`, and the click-target registry already classifies pieces by ID pattern. That means you can add a validator without reworking the entire rendering engine.  
+The current builders generate `GeometryInstruction[]`, and the click-target registry already classifies pieces by ID pattern. That means you can add a validator without reworking the entire rendering engine.
 
 ### Create `stairway-geometry-validator.ts`
 
@@ -986,7 +986,7 @@ export const DEFAULT_GEOMETRY_POLICIES: GeometryPolicy[] = [
 ]
 ```
 
-That policy structure works well with your existing ID naming approach. 
+That policy structure works well with your existing ID naming approach.
 
 ## Point 04: How to wire the validator into the configurator
 
@@ -1021,7 +1021,7 @@ const geometry = (p: StairParams): GeometryInstruction[] => {
 }
 ```
 
-That gives you immediate QA during development without blocking production initially. The reason this fits naturally is that your architecture already routes through `computeStairState()` and then through a builder function.  
+That gives you immediate QA during development without blocking production initially. The reason this fits naturally is that your architecture already routes through `computeStairState()` and then through a builder function.
 
 ## Point 05: Debug tooling you should add now
 
@@ -1032,7 +1032,7 @@ The screenshot proves manual visual review is useful, but manual review alone is
 * isolate overlap pair
 * explode by category
 
-Your current interface already has toggles for compare mode, history, tolerance, detail views, and evacuation, so a debug layer is consistent with how the configurator is already structured. 
+Your current interface already has toggles for compare mode, history, tolerance, detail views, and evacuation, so a debug layer is consistent with how the configurator is already structured.
 
 ### Suggested new params in `stairway-configurator.ts`
 
@@ -1064,7 +1064,7 @@ Then generate debug `GeometryInstruction`s from the validator report when enable
 
 ## Point 06: Apply the same contract model to L-shape and U-shape
 
-Both turn builders are doing the same class of work by hand, including center-based landing placement, and both use `Math.min(sW, LANDING_MIN_DEPTH_MM / 1000)` for landing depth. The U-shape builder also places the landing at `landingCenterX / 2`, which should be corrected immediately.  
+Both turn builders are doing the same class of work by hand, including center-based landing placement, and both use `Math.min(sW, LANDING_MIN_DEPTH_MM / 1000)` for landing depth. The U-shape builder also places the landing at `landingCenterX / 2`, which should be corrected immediately.
 
 ### Immediate fixes
 
@@ -1086,11 +1086,11 @@ For both `stairway-geometry-l-shape.ts` and `stairway-geometry-u-shape.ts`, stop
 * landing start and end planes
 * flight 2 start plane
 
-and then place geometry from those boundaries, not from approximate center arithmetic. The need for that is directly shown in both turning builders.  
+and then place geometry from those boundaries, not from approximate center arithmetic. The need for that is directly shown in both turning builders.
 
 ## Point 07: Test plan that prevents recurrence
 
-The current codebase has computation tests, but geometry needs its own hard tests now. The stair-type abstraction is already explicit in `stairway-types.ts`, which makes this straightforward to test builder by builder. 
+The current codebase has computation tests, but geometry needs its own hard tests now. The stair-type abstraction is already explicit in `stairway-types.ts`, which makes this straightforward to test builder by builder.
 
 ### Add these test files
 
@@ -1126,15 +1126,15 @@ That is the standard you need. If a new geometry formula breaks join cleanliness
 
 ### Phase 1
 
-Patch straight stair joins and straight handrail endpoints in `stairway-configurator.ts`. This gives immediate visual relief where the screenshot is already showing defects.  
+Patch straight stair joins and straight handrail endpoints in `stairway-configurator.ts`. This gives immediate visual relief where the screenshot is already showing defects.
 
 ### Phase 2
 
-Create `stairway-geometry-validator.ts` and the new types in `stairway-types.ts`. Wire validator warnings into development mode. 
+Create `stairway-geometry-validator.ts` and the new types in `stairway-types.ts`. Wire validator warnings into development mode.
 
 ### Phase 3
 
-Fix U-shape landing center and migrate both turn builders onto join contracts.  
+Fix U-shape landing center and migrate both turn builders onto join contracts.
 
 ### Phase 4
 

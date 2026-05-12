@@ -1,0 +1,59 @@
+{
+  "question_id": "62acc661-3783-4fb5-ae07-092e6fce82c2",
+  "baseline_hash": "sha256:e70e1ecb737286152fa392eea8748bac086556605eb49adc65e901b3ab1b67e2",
+  "action": "replace",
+  "reason": "source-audited-article-batch-082-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-010-08-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-082",
+  "approved_at": "2026-05-12T05:45:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "0b83bfa7-6ca2-48f8-9f23-52428c85d02a",
+    "parent_article_slug": "lea-matl-010-08-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Estimating Excavation refined markdown lines 1120-1260, 1580-1605, and 1980-1992; raw PDF pages 42, 45, 49-50, and 56 checked by local PyMuPDF extraction.",
+    "checked_markdown_lines": [
+      "Estimating Excavation refined markdown lines 1120-1260, 1580-1605, and 1980-1992; raw PDF pages 42, 45, 49-50, and 56 checked by local PyMuPDF extraction."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "estimating-excavation-b082",
+        "label": "Estimating Excavation",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Estimating Excavation.pdf",
+        "sha256": "sha256:5ef347fe40c8dfa4a1e3d3f937d266e431ce69bcbce09390f46917ee9e5b6fff",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Estimating Excavation.md",
+        "raw_markdown_sha256": "sha256:c62cb8751aa5c66ef7ae7fe9d4d0948913eb945de639399ac5a946aed683dd4c",
+        "locator": "Estimating Excavation refined markdown lines 1120-1260, 1580-1605, and 1980-1992; raw PDF pages 42, 45, 49-50, and 56 checked by local PyMuPDF extraction."
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 082 local raw-source-audited earthwork_volume scope."
+  },
+  "proposed": {
+    "text": "Which setup is source-safe when an item gives only two end areas and a length?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use the average end area method with only the stated areas and length"
+      },
+      {
+        "id": "b",
+        "text": "Add a swell factor even if none is given"
+      },
+      {
+        "id": "c",
+        "text": "Assume the prismoidal correction is always required"
+      },
+      {
+        "id": "d",
+        "text": "Treat the result as borrow volume automatically"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "For a two-end-area item, the source-safe action is to use the stated end areas and length. Extra swell, borrow, and correction factors need explicit support in the problem.",
+    "explanation": "For a two-end-area item, the source-safe action is to use the stated end areas and length. Extra swell, borrow, and correction factors need explicit support in the problem.",
+    "code_citation": "Estimating Excavation",
+    "bloom_level": "understand",
+    "application_context": "source_audited_local_first_batch_082",
+    "practice_context": [],
+    "difficulty": 0.5
+  }
+}

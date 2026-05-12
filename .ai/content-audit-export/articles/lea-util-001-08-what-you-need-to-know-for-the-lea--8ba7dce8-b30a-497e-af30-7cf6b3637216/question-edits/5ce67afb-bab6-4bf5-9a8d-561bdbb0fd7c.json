@@ -1,0 +1,76 @@
+{
+  "question_id": "5ce67afb-bab6-4bf5-9a8d-561bdbb0fd7c",
+  "baseline_hash": "sha256:0ee4bcd792b4359bd8ad51929ec392bee5f282071488138f6d581260f4696b80",
+  "action": "replace",
+  "reason": "source-audited-article-batch-037-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-037",
+  "approved_at": "2026-05-11T13:16:58+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-037-local-first",
+    "checked_sources": [
+      {
+        "source_id": "ra-1378-master-plumbing-law-local",
+        "label": "RA 1378 Master Plumbing Law",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-1378/MASTER PLUMBING LAW.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-1378/MASTER PLUMBING LAW.md",
+        "checked_markdown_lines": [
+          "RA 1378 Master Plumbing Law refined markdown lines 7-10",
+          "RA 1378 Master Plumbing Law refined markdown lines 16-40",
+          "RA 1378 Master Plumbing Law refined markdown lines 55-83"
+        ]
+      },
+      {
+        "source_id": "rnpc-revised-national-plumbing-code-local",
+        "label": "Revised National Plumbing Code of the Philippines",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Revised National Plumbing Code of the Philippines.md",
+        "checked_markdown_lines": [
+          "Revised National Plumbing Code refined markdown lines 75-110",
+          "Revised National Plumbing Code refined markdown lines 147-196",
+          "Revised National Plumbing Code refined markdown lines 224-251",
+          "Revised National Plumbing Code refined markdown lines 453-477",
+          "Revised National Plumbing Code refined markdown lines 1338-1370",
+          "Revised National Plumbing Code refined markdown lines 3390-3419",
+          "Revised National Plumbing Code refined markdown lines 3660-3674",
+          "Revised National Plumbing Code refined markdown lines 4213-4260"
+        ]
+      },
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR 2004 DPWH Official refined markdown lines 968-990",
+          "PD 1096 RIRR 2004 DPWH Official refined markdown lines 3789-3897"
+        ]
+      }
+    ],
+    "citation": "Revised National Plumbing Code"
+  },
+  "proposed": {
+    "text": "What approval is required before connecting to water, sewer, or storm-drain systems?",
+    "options": [
+      {
+        "id": "b037-8ba7-04-a",
+        "text": "Approval by the Administrative Authority"
+      },
+      {
+        "id": "b037-8ba7-04-b",
+        "text": "Approval by any occupant only"
+      },
+      {
+        "id": "b037-8ba7-04-c",
+        "text": "No approval if the pipe is small"
+      },
+      {
+        "id": "b037-8ba7-04-d",
+        "text": "Only structural engineer approval"
+      }
+    ],
+    "correct_option_id": "b037-8ba7-04-a",
+    "rationale": "Correct answer: Approval by the Administrative Authority. This is directly supported by Revised National Plumbing Code.",
+    "explanation": "The Batch 037 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for Revised National Plumbing Code.",
+    "code_citation": "Revised National Plumbing Code"
+  }
+}

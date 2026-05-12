@@ -1,0 +1,32 @@
+{
+  "question_id": "e426a54f-6b8b-4c98-9004-50385e5c847e",
+  "baseline_hash": "sha256:04571489e1af8354f0a2073c02a74f8cef5d8d95caa04a3a5d9af03bdb3cbbbc",
+  "reason": "Batch 003 source audit removed unsupported parking-structure geometry locators. PD 1096 Rule VII supports slot/loading sizes and plan indication; BP 344 supports accessible parking details. Rule XIX, Section 803, and Section 904 are not parking geometry locators.",
+  "approved_by": "codex-local-source-audit-batch-003",
+  "approved_at": "2026-05-10T18:00:00+08:00",
+  "proposed": {
+    "text": "A reviewer asks whether a vehicle ramp gradient can be cited to PD 1096 Rule XIX or Section 904 in this cited sources. What is the correct source-backed answer?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Yes, Rule XIX is the off-street parking rule"
+      },
+      {
+        "id": "b",
+        "text": "Yes, Section 904 gives drive-aisle and ramp-gradient values"
+      },
+      {
+        "id": "c",
+        "text": "No. The checked PD 1096 source did not verify vehicle ramp gradient under Rule XIX or Section 904; use a verified parking-design source or project standard before teaching that value"
+      },
+      {
+        "id": "d",
+        "text": "No, because ramp gradients are never design-relevant"
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": "Rule XIX is The Use of Computers and Section 904 is Storm Drainage System in the checked PD 1096 IRR.",
+    "explanation": "The old 1:8/1:6 ramp-gradient question used the wrong local-source locator.",
+    "code_citation": "PD 1096 2004 Revised IRR, Rule IX Section 904; Rule XIX; PD 1096 locator correction"
+  }
+}

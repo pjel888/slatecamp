@@ -1,0 +1,288 @@
+{
+  "schema_version": "source-audited-article-local-first-ledger-v1",
+  "batch_id": "source-audited-article-batch-021-local-first",
+  "generated_at": "2026-05-10T17:13:06.444Z",
+  "mode": "local_first_no_supabase_no_deploy_no_commit",
+  "selected_article_count": 5,
+  "prior_batch_id_check": {
+    "checked_batches": "001-020",
+    "prior_uuid_count": 263,
+    "selected_article_ids_not_in_prior_batches": true,
+    "selected_article_ids": [
+      "9eb0b48e-110e-4c75-8a0c-4f83063001cf",
+      "0d2e80df-4f76-484e-9b1f-5502da9e35be",
+      "db248a33-44f2-411c-a069-9685200a588c",
+      "6a928e7c-ea49-43ae-9241-e3cacfe291cf",
+      "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004"
+    ]
+  },
+  "articles": [
+    {
+      "article_id": "9eb0b48e-110e-4c75-8a0c-4f83063001cf",
+      "slug": "lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty",
+      "title": "Universal Design in Practice BP 344 RA 7277",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty--9eb0b48e-110e-4c75-8a0c-4f83063001cf",
+      "absolute_article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty--9eb0b48e-110e-4c75-8a0c-4f83063001cf",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty--9eb0b48e-110e-4c75-8a0c-4f83063001cf/question-edits",
+      "absolute_question_edits_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty--9eb0b48e-110e-4c75-8a0c-4f83063001cf/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "sources": [
+        {
+          "source_id": "bp344-2024-revised-irr-universal-design",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+          "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+          "source_locator": "BP 344 2024 Revised IRR, accessible parking, signage, routes, entrances, toilets, and elevators"
+        }
+      ],
+      "normalized_hash": "sha256:5b9a65a46c3743cabdb2a1650818ea144cfa36a36af8863141f2fa14fc1b0378",
+      "candidate_hash": "sha256:5b9a65a46c3743cabdb2a1650818ea144cfa36a36af8863141f2fa14fc1b0378",
+      "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "sources_hash": "sha256:ff6720db290be5c11a33b5d948d5fd7250ba6641e67ac955017b546dbb869a90",
+      "local_status": "locally_passed",
+      "validation": {
+        "compose_blockers": 0,
+        "compose_warnings": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "bundle_validate_valid": true,
+        "bundle_validate_blockers": [],
+        "bundle_validate_warnings": [
+          "lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty--9eb0b48e-110e-4c75-8a0c-4f83063001cf: component-usage.json has not been generated for this article yet."
+        ],
+        "scoped_validate_report": ".ai/content-audit-export/articles/lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty--9eb0b48e-110e-4c75-8a0c-4f83063001cf/batch-021-validate-report.json"
+      }
+    },
+    {
+      "article_id": "0d2e80df-4f76-484e-9b1f-5502da9e35be",
+      "slug": "lea-plan-003-01-what-you-need-to-know-for-the-lea",
+      "title": "Philippine Housing Law Framework",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-plan-003-01-what-you-need-to-know-for-the-lea--0d2e80df-4f76-484e-9b1f-5502da9e35be",
+      "absolute_article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-003-01-what-you-need-to-know-for-the-lea--0d2e80df-4f76-484e-9b1f-5502da9e35be",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-plan-003-01-what-you-need-to-know-for-the-lea--0d2e80df-4f76-484e-9b1f-5502da9e35be/question-edits",
+      "absolute_question_edits_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-003-01-what-you-need-to-know-for-the-lea--0d2e80df-4f76-484e-9b1f-5502da9e35be/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "sources": [
+        {
+          "source_id": "pd957-subdivision-condominium-buyers-protective-decree-local",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-957/PD 957 - Subdivision and Condominium Buyers Protective Decree.pdf",
+          "raw_pdf_sha256": "sha256:1f9ab17a816885cfdbafafc03e3e9b64470a737447129a32a459836d6773f9ea",
+          "source_locator": "PD 957 refined markdown lines 100-240, site criteria, open spaces, and 70/30 land allocation"
+        },
+        {
+          "source_id": "bp220-revised-irr-2008-local",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-220/Revised_IRR_BP220_2008.pdf",
+          "raw_pdf_sha256": "sha256:7392741260c227647afe39de283f3efa979465692da8905e59be8857c8651614",
+          "source_locator": "BP 220 refined markdown lines 130-560, economic and socialized housing standards"
+        },
+        {
+          "source_id": "ra7279-urban-development-housing-act-local",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7279/RA 7279 Urban Development and Housing Act 2009.pdf",
+          "raw_pdf_sha256": "sha256:23efa9c0278519d79ed424d9ced016b24619ebb42a19e75a05dc9bb8bf1c4696",
+          "source_locator": "RA 7279 refined markdown lines 70-190, socialized housing definition, eligibility, and balanced housing"
+        }
+      ],
+      "normalized_hash": "sha256:14e3dd7ac619c6e8ecbb3ec01f716575837c8a6f1578c39f0d05b79b99e6bf02",
+      "candidate_hash": "sha256:14e3dd7ac619c6e8ecbb3ec01f716575837c8a6f1578c39f0d05b79b99e6bf02",
+      "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "sources_hash": "sha256:f5073643ed3dcedd1ea6e43ee2f7911aeb4b990a7987332716e562a51b5a0948",
+      "local_status": "locally_passed",
+      "validation": {
+        "compose_blockers": 0,
+        "compose_warnings": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "bundle_validate_valid": true,
+        "bundle_validate_blockers": [],
+        "bundle_validate_warnings": [
+          "lea-plan-003-01-what-you-need-to-know-for-the-lea--0d2e80df-4f76-484e-9b1f-5502da9e35be: component-usage.json has not been generated for this article yet."
+        ],
+        "scoped_validate_report": ".ai/content-audit-export/articles/lea-plan-003-01-what-you-need-to-know-for-the-lea--0d2e80df-4f76-484e-9b1f-5502da9e35be/batch-021-validate-report.json"
+      }
+    },
+    {
+      "article_id": "db248a33-44f2-411c-a069-9685200a588c",
+      "slug": "lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method",
+      "title": "Pre Design Services Scope Deliverables and Compensation Method",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c",
+      "absolute_article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c/question-edits",
+      "absolute_question_edits_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "sources": [
+        {
+          "source_id": "spp-201-predesign-services-local-raw-pdf",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+          "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+          "source_locator": "SPP 201 refined markdown lines 245-255, 268-415, and 425-447"
+        }
+      ],
+      "normalized_hash": "sha256:ca9eb55020ef7601d9a453d899466e11a2cfe2999783d33959fbceaaebaf325b",
+      "candidate_hash": "sha256:ca9eb55020ef7601d9a453d899466e11a2cfe2999783d33959fbceaaebaf325b",
+      "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "sources_hash": "sha256:1d3d2726f0971c85cf0984224d88123498aa25156f60e4bfad2ebcea4a8b9a91",
+      "local_status": "locally_passed",
+      "validation": {
+        "compose_blockers": 0,
+        "compose_warnings": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "bundle_validate_valid": true,
+        "bundle_validate_blockers": [],
+        "bundle_validate_warnings": [
+          "lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c: component-usage.json has not been generated for this article yet."
+        ],
+        "scoped_validate_report": ".ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c/batch-021-validate-report.json"
+      }
+    },
+    {
+      "article_id": "6a928e7c-ea49-43ae-9241-e3cacfe291cf",
+      "slug": "lea-dsgn-008-01-core-concept",
+      "title": "Fire egress",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-dsgn-008-01-core-concept--6a928e7c-ea49-43ae-9241-e3cacfe291cf",
+      "absolute_article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-008-01-core-concept--6a928e7c-ea49-43ae-9241-e3cacfe291cf",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-dsgn-008-01-core-concept--6a928e7c-ea49-43ae-9241-e3cacfe291cf/question-edits",
+      "absolute_question_edits_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-008-01-core-concept--6a928e7c-ea49-43ae-9241-e3cacfe291cf/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "sources": [
+        {
+          "source_id": "ra9514-2019-rirr-means-of-egress-local",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+          "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+          "source_locator": "RA 9514 refined markdown lines 2627-2725 and 2807-2935"
+        }
+      ],
+      "normalized_hash": "sha256:b4c4ca622d9889159f892a222e344e5ba23bdf095bb3ef23add6e01fb40dcd6d",
+      "candidate_hash": "sha256:b4c4ca622d9889159f892a222e344e5ba23bdf095bb3ef23add6e01fb40dcd6d",
+      "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "sources_hash": "sha256:9cfc24cb7641692fd84e6429cdda0797bd051b8c9e82835fc0179e24723e0f3e",
+      "local_status": "locally_passed",
+      "validation": {
+        "compose_blockers": 0,
+        "compose_warnings": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "bundle_validate_valid": true,
+        "bundle_validate_blockers": [],
+        "bundle_validate_warnings": [
+          "lea-dsgn-008-01-core-concept--6a928e7c-ea49-43ae-9241-e3cacfe291cf: component-usage.json has not been generated for this article yet."
+        ],
+        "scoped_validate_report": ".ai/content-audit-export/articles/lea-dsgn-008-01-core-concept--6a928e7c-ea49-43ae-9241-e3cacfe291cf/batch-021-validate-report.json"
+      }
+    },
+    {
+      "article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
+      "slug": "lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30",
+      "title": "Environmental Laws Affecting Architectural Practice EIA DENR",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-20--e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
+      "absolute_article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-20--e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-20--e61e81a9-c0e3-4e60-ab5e-6b3fe3026004/question-edits",
+      "absolute_question_edits_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-20--e61e81a9-c0e3-4e60-ab5e-6b3fe3026004/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "sources": [
+        {
+          "source_id": "denr-dao-2003-30-eis-system-local",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DENR/DENR DAO 2003-30 - EIS System Implementing Rules.pdf",
+          "raw_pdf_sha256": "sha256:079285ca972d0be053faa148fe6770c12c396408c35e6739929b81685e775fb7",
+          "source_locator": "DAO 2003-30 refined markdown lines 13-150 and 150-360"
+        }
+      ],
+      "normalized_hash": "sha256:8421b9b63d1f2e3e4c0f5f3bce974d00f62c9f9a5ea227f8e03824465b2d256d",
+      "candidate_hash": "sha256:8421b9b63d1f2e3e4c0f5f3bce974d00f62c9f9a5ea227f8e03824465b2d256d",
+      "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "sources_hash": "sha256:d1bfda4d4bdb41ad174b999ddf222632f81fafaebf809bf274cdfcfa702e48b0",
+      "local_status": "locally_passed",
+      "validation": {
+        "compose_blockers": 0,
+        "compose_warnings": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "bundle_validate_valid": true,
+        "bundle_validate_blockers": [],
+        "bundle_validate_warnings": [
+          "lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-20--e61e81a9-c0e3-4e60-ab5e-6b3fe3026004: component-usage.json has not been generated for this article yet."
+        ],
+        "scoped_validate_report": ".ai/content-audit-export/articles/lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-20--e61e81a9-c0e3-4e60-ab5e-6b3fe3026004/batch-021-validate-report.json"
+      }
+    }
+  ],
+  "artifact_paths": {
+    "ledger": ".ai/content-audit-export/source-audited-article-batch-021-local-first-ledger-2026-05-11.json",
+    "report": ".ai/content-audit-export/source-audited-article-batch-021-local-first-report-2026-05-11.md",
+    "apply_summary": ".ai/content-audit-export/source-audited-article-batch-021-local-first-apply-summary-2026-05-11.json"
+  },
+  "counts": {
+    "selected_articles": 5,
+    "locally_passed_articles": 5,
+    "linked_questions": 50,
+    "question_edits_created": 50,
+    "source_records_created": 7,
+    "distinct_raw_pdfs_audited": 7
+  },
+  "validation": {
+    "compose": {
+      "command": "bun run content-audit:compose -- --article-id <id> --overwrite",
+      "passed": true,
+      "per_article_blockers": [
+        {
+          "article_id": "9eb0b48e-110e-4c75-8a0c-4f83063001cf",
+          "blockers": 0
+        },
+        {
+          "article_id": "0d2e80df-4f76-484e-9b1f-5502da9e35be",
+          "blockers": 0
+        },
+        {
+          "article_id": "db248a33-44f2-411c-a069-9685200a588c",
+          "blockers": 0
+        },
+        {
+          "article_id": "6a928e7c-ea49-43ae-9241-e3cacfe291cf",
+          "blockers": 0
+        },
+        {
+          "article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
+          "blockers": 0
+        }
+      ]
+    },
+    "diff": {
+      "command": "bun run content-audit:diff -- --article-id <id>",
+      "passed": true,
+      "safe_to_push_count": 5,
+      "blockers": []
+    },
+    "validate": {
+      "command": "bun run content-audit:validate -- --article-id <id> --summary",
+      "passed": true,
+      "valid_count": 5,
+      "blockers": []
+    },
+    "scoped_checks": {
+      "json_parse": true,
+      "placeholder_scan": true,
+      "source_gap_scan": true,
+      "question_edit_count": true,
+      "raw_pdf_hashes": true
+    },
+    "tests": {
+      "command": "bun test scripts/content-audit/content-audit.test.ts",
+      "passed": true,
+      "pass_count": 27,
+      "fail_count": 0
+    }
+  },
+  "next_phase_readiness": {
+    "status": "ready_for_final_publishing_review_only",
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "blockers": []
+  },
+  "generated_local_at": "2026-05-11T10:30:00.000+08:00",
+  "generated_local_timezone": "Asia/Manila"
+}

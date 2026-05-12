@@ -1,0 +1,75 @@
+{
+  "batch": "069",
+  "generated_at": "2026-05-11T16:26:50.772Z",
+  "scope": [
+    ".ai/content-audit-export/articles/lea-plan-007-07-core-concept--f7007096-dbed-43dd-9bba-67fa705834ca",
+    ".ai/content-audit-export/articles/lea-plan-001-01-core-concept--d28bf43f-a588-4be3-8b79-8759d930aea4",
+    ".ai/content-audit-export/articles/lea-plan-001-02-core-concept--dfffd217-9aed-4a42-88fe-53b26268f665",
+    ".ai/content-audit-export/articles/lea-plan-001-03-core-concept--9c379f3b-c567-4615-957c-96e5bb791522",
+    ".ai/content-audit-export/articles/lea-plan-005-03-what-you-need-to-know-for-the-lea--341161bb-c24a-4d65-8f8b-79a3e1b01076"
+  ],
+  "local_only": true,
+  "supabase_push": false,
+  "deploy": false,
+  "commit": false,
+  "checks": {
+    "compose": {
+      "articles": 5,
+      "passed": 5,
+      "blockers": 0
+    },
+    "diff": {
+      "articles": 5,
+      "safe_to_push": 5,
+      "blockers": 0
+    },
+    "validate": {
+      "articles": 5,
+      "valid": 5,
+      "blockers": 0,
+      "warnings": 5,
+      "warning_note": "Only expected missing component-usage.json warnings."
+    },
+    "ui_block_edits": {
+      "articles": 5,
+      "valid": 5,
+      "blockers": 0,
+      "warnings": 0
+    },
+    "scoped_json_parse": {
+      "files": 105,
+      "errors": 0
+    },
+    "placeholder_internal_source_gap_scan": {
+      "scanned_text_or_question_files": 60,
+      "hits": 0
+    },
+    "stale_compose_error_scan": {
+      "hits": 0
+    },
+    "source_hash_checks": {
+      "articles": 5,
+      "sources": 23,
+      "passed": true
+    },
+    "question_edit_count_checks": {
+      "articles": 5,
+      "expected_per_article": 10,
+      "total_question_edits": 50,
+      "passed": true
+    },
+    "targeted_tests": {
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "pass": 34,
+      "fail": 0,
+      "expect_calls": 328
+    },
+    "scoped_git_diff_check": {
+      "status": "PASS",
+      "command": "git diff --check -- scoped Batch 069 handoff/artifacts/article folders",
+      "checked_at": "2026-05-12T00:29:02+08:00",
+      "output": ""
+    }
+  },
+  "blockers": []
+}

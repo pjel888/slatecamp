@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-05-10T18:39:00.683Z",
+  "input": "/Users/philiplewis/slatecamp/.ai/content-audit-export",
+  "article_count": 1,
+  "valid": true,
+  "blockers": [],
+  "warnings": [
+    "spp-doc-206-comprehensive-architectural-services--f74f79a0-1477-481f-9050-fa43d82f18bd: component-usage.json has not been generated for this article yet."
+  ],
+  "articles": [
+    {
+      "article_id": "f74f79a0-1477-481f-9050-fa43d82f18bd",
+      "slug": "spp-doc-206-comprehensive-architectural-services",
+      "folder": "spp-doc-206-comprehensive-architectural-services--f74f79a0-1477-481f-9050-fa43d82f18bd",
+      "valid": true,
+      "blockers": [],
+      "warnings": [
+        "component-usage.json has not been generated for this article yet."
+      ],
+      "files": {
+        "metadata": true,
+        "original": true,
+        "normalized": true,
+        "uiBlocks": true,
+        "parserErrors": true,
+        "uiBlockEdits": true,
+        "linkedQuestions": true,
+        "sources": true,
+        "taxonomy": true,
+        "componentUsage": false,
+        "candidate": true,
+        "diffReport": true,
+        "diffReportMarkdown": true,
+        "pushReport": false,
+        "pushResult": false
+      },
+      "hashes": {
+        "original": "sha256:f73e398b9e23f27188735d2295d0024cf3557320a55fc618a0c9e06dc533b231",
+        "normalized": "sha256:b2d8b74bb8b19ed5355f2b8f48c93a5fb79a1f478bcc14e93be42c0a69fa2041",
+        "candidate": "sha256:b2d8b74bb8b19ed5355f2b8f48c93a5fb79a1f478bcc14e93be42c0a69fa2041",
+        "ui_blocks": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    }
+  ]
+}

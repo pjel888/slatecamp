@@ -1,8 +1,8 @@
 # Coding Standards
 
-**Status:** Active  
-**Version:** 1.0  
-**Last Updated:** 2026-04-06  
+**Status:** Active
+**Version:** 1.0
+**Last Updated:** 2026-04-06
 **Source-of-Truth:** `CLAUDE.md`, `AGENTS.md`
 
 ---
@@ -15,7 +15,7 @@
   ```typescript
   // ✅ CORRECT
   const handleClick = () => { /* ... */ }
-  
+
   // ❌ WRONG
   function handleClick() { /* ... */ }
   ```
@@ -32,7 +32,7 @@
   ```tsx
   // ✅ CORRECT
   <div className="bg-primary text-foreground" />
-  
+
   // ❌ WRONG
   <div style={{ backgroundColor: '#1B3FC4' }} />
   ```
@@ -43,7 +43,7 @@
   ```typescript
   // ✅ CORRECT
   supabase.from('users').select('id, email, full_name')
-  
+
   // ❌ WRONG
   supabase.from('users').select('*')
   ```
@@ -79,7 +79,7 @@
     getUserSessions(userId),
     getUserMastery(userId),
   ])
-  
+
   // ❌ WRONG — sequential
   const user = await getUser(userId)
   const sessions = await getUserSessions(userId)
@@ -132,11 +132,11 @@ export const createSession = async (input: z.infer<typeof CreateSessionSchema>) 
   try {
     const user = await getCurrentUser()
     if (!user) throw new Error('Unauthorized')
-    
+
     const validated = CreateSessionSchema.parse(input)
-    
+
     // ... mutation logic
-    
+
     revalidatePath('/dashboard/testing')
     return { success: true, data: session }
   } catch (error) {

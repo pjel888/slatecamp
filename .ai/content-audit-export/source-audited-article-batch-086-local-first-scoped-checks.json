@@ -1,0 +1,230 @@
+{
+  "batch_id": "source-audited-article-batch-086-local-first",
+  "checked_at": "2026-05-12T09:30:00.000+08:00",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "blockers": [],
+  "article_count": 5,
+  "linked_question_count": 50,
+  "question_edit_count": 50,
+  "source_evidence_claim_count": 60,
+  "scenario_enrichment": {
+    "eligible_added": 5,
+    "eligible_deferred": 0,
+    "not_applicable": 0
+  },
+  "checks": {
+    "compose": {
+      "pass_count": 5,
+      "total": 5,
+      "blockers": []
+    },
+    "diff": {
+      "pass_count": 5,
+      "total": 5,
+      "blockers": []
+    },
+    "validate": {
+      "status": "PASS_FROM_SCOPED_BUNDLE_VALIDATION_AND_COMMAND_OUTPUT",
+      "expected_command": "bun run content-audit:validate -- --article-id <id> --summary"
+    },
+    "ui_block_edits": {
+      "pass_count": 5,
+      "total": 5
+    },
+    "json_parse": {
+      "status": "PASS",
+      "files": 105,
+      "failures": []
+    },
+    "placeholder_internal_source_gap_scan": {
+      "status": "PASS",
+      "files": 70,
+      "hits": []
+    },
+    "source_hash_checks": {
+      "status": "PASS",
+      "checks": 32,
+      "failures": []
+    },
+    "question_edit_count": {
+      "status": "PASS",
+      "linked_questions": 50,
+      "question_edits": 50
+    },
+    "stale_compose_error": {
+      "status": "PASS",
+      "files": []
+    },
+    "targeted_tests": {
+      "status": "PASS",
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "result": "34 pass, 0 fail, 328 expect calls"
+    },
+    "scoped_git_diff_check": {
+      "status": "PASS",
+      "note": "Run after final handoff update; tracked scoped diff and supplemental untracked whitespace scan passed."
+    }
+  },
+  "articles": [
+    {
+      "article_id": "5723752b-4d29-442d-87ec-30e60b8569a3",
+      "slug": "lea-plan-003-03-core-concept",
+      "title": "Housing finance in the Philippines works through distinct shelter roles",
+      "folder": ".ai/content-audit-export/articles/lea-plan-003-03-core-concept--5723752b-4d29-442d-87ec-30e60b8569a3",
+      "normalized_path": ".ai/content-audit-export/articles/lea-plan-003-03-core-concept--5723752b-4d29-442d-87ec-30e60b8569a3/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-plan-003-03-core-concept--5723752b-4d29-442d-87ec-30e60b8569a3/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/lea-plan-003-03-core-concept--5723752b-4d29-442d-87ec-30e60b8569a3/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-plan-003-03-core-concept--5723752b-4d29-442d-87ec-30e60b8569a3/source-audit-evidence.json",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-plan-003-03-core-concept--5723752b-4d29-442d-87ec-30e60b8569a3/question-edits",
+      "question_edit_files": [
+        ".ai/content-audit-export/articles/lea-plan-003-03-core-concept--5723752b-4d29-442d-87ec-30e60b8569a3/question-edits/0be5f048-239b-4bbb-8eef-5af1fd997713.json",
+        ".ai/content-audit-export/articles/lea-plan-003-03-core-concept--5723752b-4d29-442d-87ec-30e60b8569a3/question-edits/11f6c4bd-ed89-4568-ae6d-aad07aacb6b2.json",
+        ".ai/content-audit-export/articles/lea-plan-003-03-core-concept--5723752b-4d29-442d-87ec-30e60b8569a3/question-edits/221e5cf6-ee12-4da5-adf0-7271dfc5b428.json",
+        ".ai/content-audit-export/articles/lea-plan-003-03-core-concept--5723752b-4d29-442d-87ec-30e60b8569a3/question-edits/3eda8a25-835d-40c4-91b5-05da4af5367a.json",
+        ".ai/content-audit-export/articles/lea-plan-003-03-core-concept--5723752b-4d29-442d-87ec-30e60b8569a3/question-edits/87a33320-f07d-4bb0-b995-e050b22087db.json",
+        ".ai/content-audit-export/articles/lea-plan-003-03-core-concept--5723752b-4d29-442d-87ec-30e60b8569a3/question-edits/89b1efa7-73e4-46bd-98bc-9de5f9688836.json",
+        ".ai/content-audit-export/articles/lea-plan-003-03-core-concept--5723752b-4d29-442d-87ec-30e60b8569a3/question-edits/89d7065a-b01c-4559-a356-380926d13570.json",
+        ".ai/content-audit-export/articles/lea-plan-003-03-core-concept--5723752b-4d29-442d-87ec-30e60b8569a3/question-edits/ae0ea563-0d32-452f-a0ee-805c2e3d80bc.json",
+        ".ai/content-audit-export/articles/lea-plan-003-03-core-concept--5723752b-4d29-442d-87ec-30e60b8569a3/question-edits/e61e2f78-e3c6-49d2-b492-2f6c6b1b5bf7.json",
+        ".ai/content-audit-export/articles/lea-plan-003-03-core-concept--5723752b-4d29-442d-87ec-30e60b8569a3/question-edits/e679eb23-bc00-40ba-983b-73b09f4795eb.json"
+      ],
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_sha256": "sha256:fdbade3481b42116f9b09c4a440344f362370fe4112b1e797f8bd4b14b502036",
+      "candidate_sha256": "sha256:fdbade3481b42116f9b09c4a440344f362370fe4112b1e797f8bd4b14b502036",
+      "compose_pass": true,
+      "diff_pass": true,
+      "ui_block_edits_pass": true,
+      "source_evidence_claim_count": 12,
+      "scenario_enrichment_status": "eligible-added"
+    },
+    {
+      "article_id": "a43232f4-9396-4156-bfec-4606a44b4a72",
+      "slug": "lea-plan-003-07-core-concept",
+      "title": "Special housing concerns use People's Plans, socialized housing, and risk-sensitive CLUP work",
+      "folder": ".ai/content-audit-export/articles/lea-plan-003-07-core-concept--a43232f4-9396-4156-bfec-4606a44b4a72",
+      "normalized_path": ".ai/content-audit-export/articles/lea-plan-003-07-core-concept--a43232f4-9396-4156-bfec-4606a44b4a72/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-plan-003-07-core-concept--a43232f4-9396-4156-bfec-4606a44b4a72/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/lea-plan-003-07-core-concept--a43232f4-9396-4156-bfec-4606a44b4a72/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-plan-003-07-core-concept--a43232f4-9396-4156-bfec-4606a44b4a72/source-audit-evidence.json",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-plan-003-07-core-concept--a43232f4-9396-4156-bfec-4606a44b4a72/question-edits",
+      "question_edit_files": [
+        ".ai/content-audit-export/articles/lea-plan-003-07-core-concept--a43232f4-9396-4156-bfec-4606a44b4a72/question-edits/2099f6e7-74a0-4318-b95a-b5265944907b.json",
+        ".ai/content-audit-export/articles/lea-plan-003-07-core-concept--a43232f4-9396-4156-bfec-4606a44b4a72/question-edits/33fcd5e0-4253-49a2-9295-2c5aea60b44b.json",
+        ".ai/content-audit-export/articles/lea-plan-003-07-core-concept--a43232f4-9396-4156-bfec-4606a44b4a72/question-edits/3a4f4cbc-1f5d-45be-8851-300eeaee1130.json",
+        ".ai/content-audit-export/articles/lea-plan-003-07-core-concept--a43232f4-9396-4156-bfec-4606a44b4a72/question-edits/6e1ff2cb-3f16-42ee-b391-3414c262f2fc.json",
+        ".ai/content-audit-export/articles/lea-plan-003-07-core-concept--a43232f4-9396-4156-bfec-4606a44b4a72/question-edits/72da896c-cc53-4703-888f-0f2121c75884.json",
+        ".ai/content-audit-export/articles/lea-plan-003-07-core-concept--a43232f4-9396-4156-bfec-4606a44b4a72/question-edits/c454a1ba-6fb0-4949-9912-1a7698127a12.json",
+        ".ai/content-audit-export/articles/lea-plan-003-07-core-concept--a43232f4-9396-4156-bfec-4606a44b4a72/question-edits/d4c1affb-3c2a-41d5-a43f-c8095c387c70.json",
+        ".ai/content-audit-export/articles/lea-plan-003-07-core-concept--a43232f4-9396-4156-bfec-4606a44b4a72/question-edits/dc04ad0e-93db-4dc2-8829-ae1760ee1072.json",
+        ".ai/content-audit-export/articles/lea-plan-003-07-core-concept--a43232f4-9396-4156-bfec-4606a44b4a72/question-edits/f23e182c-d100-47f5-b624-83b7aab273c0.json",
+        ".ai/content-audit-export/articles/lea-plan-003-07-core-concept--a43232f4-9396-4156-bfec-4606a44b4a72/question-edits/fef2e489-9ad1-4ccb-ba2c-1f5f7764922b.json"
+      ],
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_sha256": "sha256:1075f2de44ddedd00c08fbea1b04f15a90c135e50231c4628a8fb539bf630c93",
+      "candidate_sha256": "sha256:1075f2de44ddedd00c08fbea1b04f15a90c135e50231c4628a8fb539bf630c93",
+      "compose_pass": true,
+      "diff_pass": true,
+      "ui_block_edits_pass": true,
+      "source_evidence_claim_count": 12,
+      "scenario_enrichment_status": "eligible-added"
+    },
+    {
+      "article_id": "8a8a6153-844c-4671-aae6-b42b5a9435dd",
+      "slug": "lea-plan-007-01-core-concept",
+      "title": "NHA and SHFC serve different shelter delivery functions",
+      "folder": ".ai/content-audit-export/articles/lea-plan-007-01-core-concept--8a8a6153-844c-4671-aae6-b42b5a9435dd",
+      "normalized_path": ".ai/content-audit-export/articles/lea-plan-007-01-core-concept--8a8a6153-844c-4671-aae6-b42b5a9435dd/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-plan-007-01-core-concept--8a8a6153-844c-4671-aae6-b42b5a9435dd/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/lea-plan-007-01-core-concept--8a8a6153-844c-4671-aae6-b42b5a9435dd/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-plan-007-01-core-concept--8a8a6153-844c-4671-aae6-b42b5a9435dd/source-audit-evidence.json",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-plan-007-01-core-concept--8a8a6153-844c-4671-aae6-b42b5a9435dd/question-edits",
+      "question_edit_files": [
+        ".ai/content-audit-export/articles/lea-plan-007-01-core-concept--8a8a6153-844c-4671-aae6-b42b5a9435dd/question-edits/00130a06-ee25-47fc-a1a5-50b4da92e666.json",
+        ".ai/content-audit-export/articles/lea-plan-007-01-core-concept--8a8a6153-844c-4671-aae6-b42b5a9435dd/question-edits/317073ad-b389-4523-bafd-a9bf553e4ba0.json",
+        ".ai/content-audit-export/articles/lea-plan-007-01-core-concept--8a8a6153-844c-4671-aae6-b42b5a9435dd/question-edits/348cda39-4655-485d-b2ea-f1dd5ab2e734.json",
+        ".ai/content-audit-export/articles/lea-plan-007-01-core-concept--8a8a6153-844c-4671-aae6-b42b5a9435dd/question-edits/38f0e388-8f66-425f-8667-5eecca8b54af.json",
+        ".ai/content-audit-export/articles/lea-plan-007-01-core-concept--8a8a6153-844c-4671-aae6-b42b5a9435dd/question-edits/50c84b9b-1933-4cad-b5a9-3ec620cc1494.json",
+        ".ai/content-audit-export/articles/lea-plan-007-01-core-concept--8a8a6153-844c-4671-aae6-b42b5a9435dd/question-edits/64b0a20b-1620-465a-9b1c-4bba9d990e24.json",
+        ".ai/content-audit-export/articles/lea-plan-007-01-core-concept--8a8a6153-844c-4671-aae6-b42b5a9435dd/question-edits/823c185a-63c4-4ac6-a9c0-f10af5ff3b6f.json",
+        ".ai/content-audit-export/articles/lea-plan-007-01-core-concept--8a8a6153-844c-4671-aae6-b42b5a9435dd/question-edits/99a84b41-92bf-4f72-9f59-6cfa88027b2a.json",
+        ".ai/content-audit-export/articles/lea-plan-007-01-core-concept--8a8a6153-844c-4671-aae6-b42b5a9435dd/question-edits/a2d3bdd1-c176-4caf-98bf-3139e81fc46e.json",
+        ".ai/content-audit-export/articles/lea-plan-007-01-core-concept--8a8a6153-844c-4671-aae6-b42b5a9435dd/question-edits/a542ae5f-d3e5-4e1b-bcaa-07ab45561265.json"
+      ],
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_sha256": "sha256:e6fce823bcd81f99f6a92df4fdbfdc0d6a4871eaabe84fe681ab24c53a00c0a1",
+      "candidate_sha256": "sha256:e6fce823bcd81f99f6a92df4fdbfdc0d6a4871eaabe84fe681ab24c53a00c0a1",
+      "compose_pass": true,
+      "diff_pass": true,
+      "ui_block_edits_pass": true,
+      "source_evidence_claim_count": 12,
+      "scenario_enrichment_status": "eligible-added"
+    },
+    {
+      "article_id": "973b8e3d-c930-437d-b01d-eb33f4a047d8",
+      "slug": "lea-plan-007-03-core-concept",
+      "title": "Housing finance institutions are identified by member base and finance function",
+      "folder": ".ai/content-audit-export/articles/lea-plan-007-03-core-concept--973b8e3d-c930-437d-b01d-eb33f4a047d8",
+      "normalized_path": ".ai/content-audit-export/articles/lea-plan-007-03-core-concept--973b8e3d-c930-437d-b01d-eb33f4a047d8/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-plan-007-03-core-concept--973b8e3d-c930-437d-b01d-eb33f4a047d8/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/lea-plan-007-03-core-concept--973b8e3d-c930-437d-b01d-eb33f4a047d8/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-plan-007-03-core-concept--973b8e3d-c930-437d-b01d-eb33f4a047d8/source-audit-evidence.json",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-plan-007-03-core-concept--973b8e3d-c930-437d-b01d-eb33f4a047d8/question-edits",
+      "question_edit_files": [
+        ".ai/content-audit-export/articles/lea-plan-007-03-core-concept--973b8e3d-c930-437d-b01d-eb33f4a047d8/question-edits/0f627493-d770-4b26-995a-f27672ae83b8.json",
+        ".ai/content-audit-export/articles/lea-plan-007-03-core-concept--973b8e3d-c930-437d-b01d-eb33f4a047d8/question-edits/38f7fd22-5035-4d1e-9361-31efc2460e20.json",
+        ".ai/content-audit-export/articles/lea-plan-007-03-core-concept--973b8e3d-c930-437d-b01d-eb33f4a047d8/question-edits/48a4f17a-8ac8-4710-ab34-6ba64a0cf569.json",
+        ".ai/content-audit-export/articles/lea-plan-007-03-core-concept--973b8e3d-c930-437d-b01d-eb33f4a047d8/question-edits/73484eb2-e939-469f-be07-a01041c5da9b.json",
+        ".ai/content-audit-export/articles/lea-plan-007-03-core-concept--973b8e3d-c930-437d-b01d-eb33f4a047d8/question-edits/a8933443-9fb5-4ed1-8616-9f57661217ba.json",
+        ".ai/content-audit-export/articles/lea-plan-007-03-core-concept--973b8e3d-c930-437d-b01d-eb33f4a047d8/question-edits/c400bd49-7216-498f-82ec-e62f66dc5d9d.json",
+        ".ai/content-audit-export/articles/lea-plan-007-03-core-concept--973b8e3d-c930-437d-b01d-eb33f4a047d8/question-edits/cd0a51d3-1ae2-464a-b264-265a744ec84e.json",
+        ".ai/content-audit-export/articles/lea-plan-007-03-core-concept--973b8e3d-c930-437d-b01d-eb33f4a047d8/question-edits/d54d23f2-0c30-4dcf-8286-b4a7b36da45d.json",
+        ".ai/content-audit-export/articles/lea-plan-007-03-core-concept--973b8e3d-c930-437d-b01d-eb33f4a047d8/question-edits/dd22ba33-9cd8-4434-ba48-e9f901353dc5.json",
+        ".ai/content-audit-export/articles/lea-plan-007-03-core-concept--973b8e3d-c930-437d-b01d-eb33f4a047d8/question-edits/f3357688-7bbc-416c-a93c-1cb39b3be2ef.json"
+      ],
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_sha256": "sha256:477e89cfde6ed28da663e6e5a1ae97d37141fce6349c8b43498e1d21f7d41c67",
+      "candidate_sha256": "sha256:477e89cfde6ed28da663e6e5a1ae97d37141fce6349c8b43498e1d21f7d41c67",
+      "compose_pass": true,
+      "diff_pass": true,
+      "ui_block_edits_pass": true,
+      "source_evidence_claim_count": 12,
+      "scenario_enrichment_status": "eligible-added"
+    },
+    {
+      "article_id": "62991043-88f7-4c94-9e06-4d649e5d7f1c",
+      "slug": "lea-plan-007-04-core-concept",
+      "title": "HUDCC coordinated shelter policy before DHSUD consolidated the housing mandate",
+      "folder": ".ai/content-audit-export/articles/lea-plan-007-04-core-concept--62991043-88f7-4c94-9e06-4d649e5d7f1c",
+      "normalized_path": ".ai/content-audit-export/articles/lea-plan-007-04-core-concept--62991043-88f7-4c94-9e06-4d649e5d7f1c/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-plan-007-04-core-concept--62991043-88f7-4c94-9e06-4d649e5d7f1c/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/lea-plan-007-04-core-concept--62991043-88f7-4c94-9e06-4d649e5d7f1c/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-plan-007-04-core-concept--62991043-88f7-4c94-9e06-4d649e5d7f1c/source-audit-evidence.json",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-plan-007-04-core-concept--62991043-88f7-4c94-9e06-4d649e5d7f1c/question-edits",
+      "question_edit_files": [
+        ".ai/content-audit-export/articles/lea-plan-007-04-core-concept--62991043-88f7-4c94-9e06-4d649e5d7f1c/question-edits/004f92de-f391-455d-92f6-aea7e1fba992.json",
+        ".ai/content-audit-export/articles/lea-plan-007-04-core-concept--62991043-88f7-4c94-9e06-4d649e5d7f1c/question-edits/09c55602-d84a-444a-8b4e-6a7085f1cbad.json",
+        ".ai/content-audit-export/articles/lea-plan-007-04-core-concept--62991043-88f7-4c94-9e06-4d649e5d7f1c/question-edits/32f5e13e-af2f-47a2-9d32-09fb9bd8f3fe.json",
+        ".ai/content-audit-export/articles/lea-plan-007-04-core-concept--62991043-88f7-4c94-9e06-4d649e5d7f1c/question-edits/6320e15d-7803-408b-a931-f6c65313b5c5.json",
+        ".ai/content-audit-export/articles/lea-plan-007-04-core-concept--62991043-88f7-4c94-9e06-4d649e5d7f1c/question-edits/7fa788b1-8c72-4ea9-996e-023cc8cd8a86.json",
+        ".ai/content-audit-export/articles/lea-plan-007-04-core-concept--62991043-88f7-4c94-9e06-4d649e5d7f1c/question-edits/91bab790-b581-4a89-9ebc-24647f21c440.json",
+        ".ai/content-audit-export/articles/lea-plan-007-04-core-concept--62991043-88f7-4c94-9e06-4d649e5d7f1c/question-edits/c0ae348b-fb1d-41de-8b7d-13761ef6f907.json",
+        ".ai/content-audit-export/articles/lea-plan-007-04-core-concept--62991043-88f7-4c94-9e06-4d649e5d7f1c/question-edits/d5c85b46-bd2f-4b18-835d-a29f9444db8f.json",
+        ".ai/content-audit-export/articles/lea-plan-007-04-core-concept--62991043-88f7-4c94-9e06-4d649e5d7f1c/question-edits/d99723ed-9fc1-4231-8c18-f85de622e05c.json",
+        ".ai/content-audit-export/articles/lea-plan-007-04-core-concept--62991043-88f7-4c94-9e06-4d649e5d7f1c/question-edits/ffdb6c40-0702-406f-a7e6-33d778279630.json"
+      ],
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_sha256": "sha256:040ab9dae83cb5cac3536cc06b3f9b7eb0d0928a255cd89ae85c6849eeb0597e",
+      "candidate_sha256": "sha256:040ab9dae83cb5cac3536cc06b3f9b7eb0d0928a255cd89ae85c6849eeb0597e",
+      "compose_pass": true,
+      "diff_pass": true,
+      "ui_block_edits_pass": true,
+      "source_evidence_claim_count": 12,
+      "scenario_enrichment_status": "eligible-added"
+    }
+  ]
+}

@@ -39,16 +39,16 @@ SELECT table_name FROM information_schema.tables WHERE table_schema = 'public' O
 
 -- 2. All columns on tables we'll modify
 SELECT table_name, column_name, data_type, column_default, is_nullable
-FROM information_schema.columns 
+FROM information_schema.columns
 WHERE table_name IN (
-  'user_global_stats', 'user_node_mastery', 'user_interactions', 
+  'user_global_stats', 'user_node_mastery', 'user_interactions',
   'quiz_sessions', 'questions', 'readiness_score_snapshots',
   'user_subscriptions', 'taxonomy_tree'
 )
 ORDER BY table_name, ordinal_position;
 
 -- 3. All existing triggers
-SELECT trigger_name, event_object_table, action_timing, event_manipulation, 
+SELECT trigger_name, event_object_table, action_timing, event_manipulation,
   action_statement
 FROM information_schema.triggers WHERE trigger_schema = 'public';
 
@@ -61,15 +61,15 @@ SELECT tablename, policyname, cmd, qual, with_check
 FROM pg_policies WHERE schemaname = 'public' ORDER BY tablename;
 
 -- 6. Check which target tables already exist
-SELECT table_name FROM information_schema.tables 
-WHERE table_schema = 'public' 
+SELECT table_name FROM information_schema.tables
+WHERE table_schema = 'public'
 AND table_name IN (
   'analytics_events', 'exam_outcomes', 'user_node_mastery_history',
   'blindspot_queues', 'churn_risk_log', 'acquisition_touchpoints'
 );
 
 -- 7. Check existing enums
-SELECT typname FROM pg_type 
+SELECT typname FROM pg_type
 WHERE typnamespace = (SELECT oid FROM pg_namespace WHERE nspname = 'public') AND typtype = 'e';
 
 -- 8. Readiness Score diagnostic — is it computing?
@@ -81,7 +81,7 @@ FROM user_global_stats g
 ORDER BY interactions DESC LIMIT 10;
 
 -- 9. readiness_score_snapshots exact schema
-SELECT column_name, data_type, column_default 
+SELECT column_name, data_type, column_default
 FROM information_schema.columns WHERE table_name = 'readiness_score_snapshots' ORDER BY ordinal_position;
 
 -- 10. quiz_sessions config JSONB sample
@@ -337,11 +337,11 @@ CREATE TABLE IF NOT EXISTS public.exam_outcomes (
   total_sessions_completed INTEGER,
   total_questions_answered INTEGER,
   days_active INTEGER,                                   -- DISTINCT dates with completed sessions
-  
+
   -- Acquisition correlation (Marketing L1 → L5 loop)
   signup_source TEXT,                                    -- copied from user_global_stats at survey time
   customer_archetype TEXT,                               -- copied from user_global_stats
-  
+
   -- Meta
   reported_at TIMESTAMPTZ DEFAULT NOW(),
   verified BOOLEAN DEFAULT false,                        -- admin-verified against PRC results
@@ -462,7 +462,7 @@ export function computeReadinessScore(
   totalTaxonomyNodes: number  // from Phase 1 query #13
 ): ReadinessResult {
   const activeNodes = nodes.filter(n => n.total_attempts > 0)
-  
+
   if (activeNodes.length === 0) {
     return { score: 0, sub_scores: {}, coverage: 0, node_count: 0 }
   }
@@ -473,12 +473,12 @@ export function computeReadinessScore(
   for (const node of activeNodes) {
     // Attempt confidence: more attempts = more reliable signal
     const attemptWeight = Math.min(node.total_attempts / 10, 1)
-    
+
     // Recency: EMA-style decay with ~30-day half-life
     const lastSeen = new Date(node.last_encountered)
     const daysSince = (Date.now() - lastSeen.getTime()) / (1000 * 60 * 60 * 24)
     const recencyWeight = Math.exp(-0.023 * daysSince)
-    
+
     const weight = attemptWeight * recencyWeight
     weightedSum += node.current_mastery_weight * weight
     totalWeight += weight
@@ -523,7 +523,7 @@ const result = computeReadinessScore(masteryNodes || [], totalNodes || 50)
 // 4. Write to user_global_stats
 await supabase
   .from('user_global_stats')
-  .update({ 
+  .update({
     global_readiness_score: result.score,
     updated_at: new Date().toISOString()
   })
@@ -538,8 +538,8 @@ Read the function. Trace the data. Fix. Test.
 
 **Verify after fix:**
 ```sql
-SELECT user_id, global_readiness_score 
-FROM user_global_stats 
+SELECT user_id, global_readiness_score
+FROM user_global_stats
 WHERE user_id IN (
   SELECT DISTINCT user_id FROM user_interactions
 )
@@ -713,7 +713,7 @@ Create: `src/lib/readiness/velocity.ts`
  * Compute 7-day Readiness Score velocity (points per day).
  * DS Report velocity states:
  *   > +0.8 pts/day  = Accelerating
- *   +0.2 to +0.8    = Steady  
+ *   +0.2 to +0.8    = Steady
  *   -0.2 to +0.2    = Plateaued
  *   < -0.2          = Declining
  */
@@ -722,7 +722,7 @@ export function computeScoreVelocity(
 ): { velocity: number; state: 'accelerating' | 'steady' | 'plateaued' | 'declining' } {
   if (snapshots.length < 2) return { velocity: 0, state: 'plateaued' }
 
-  const sorted = [...snapshots].sort((a, b) => 
+  const sorted = [...snapshots].sort((a, b) =>
     new Date(b.created_at).getTime() - new Date(a.created_at).getTime()
   )
 
@@ -807,7 +807,7 @@ const velocity = computeScoreVelocity(recentSnapshots || [])
 // Update velocity on user_global_stats
 await supabase
   .from('user_global_stats')
-  .update({ 
+  .update({
     score_velocity_7d: velocity.velocity,
     score_velocity_updated_at: new Date().toISOString()
   })
@@ -849,7 +849,7 @@ export async function prepopulateExamOutcomes(
     .select('user_id')
     .gte('started_at', ninetyDaysBefore.toISOString())
     .eq('status', 'completed')
-  
+
   const uniqueUserIds = [...new Set(activeUsers?.map(u => u.user_id) || [])]
 
   for (const userId of uniqueUserIds) {
@@ -925,8 +925,8 @@ export async function prepopulateExamOutcomes(
 
 ```sql
 -- Add to migration if not already present:
-ALTER TABLE public.exam_outcomes 
-  ADD CONSTRAINT IF NOT EXISTS exam_outcomes_user_batch_unique 
+ALTER TABLE public.exam_outcomes
+  ADD CONSTRAINT IF NOT EXISTS exam_outcomes_user_batch_unique
   UNIQUE (user_id, exam_batch);
 ```
 
@@ -939,13 +939,13 @@ ALTER TABLE public.exam_outcomes
 ### Schema verification:
 ```sql
 -- All new tables
-SELECT table_name FROM information_schema.tables 
-WHERE table_schema = 'public' 
+SELECT table_name FROM information_schema.tables
+WHERE table_schema = 'public'
 AND table_name IN ('analytics_events', 'user_node_mastery_history', 'exam_outcomes', 'blindspot_queues');
 
 -- All new columns on user_global_stats
-SELECT column_name FROM information_schema.columns 
-WHERE table_name = 'user_global_stats' 
+SELECT column_name FROM information_schema.columns
+WHERE table_name = 'user_global_stats'
 AND column_name IN (
   'signup_source', 'utm_campaign', 'utm_medium', 'first_touch_source',
   'last_touch_source', 'acquisition_touchpoints', 'first_session_at',
@@ -954,7 +954,7 @@ AND column_name IN (
 );
 
 -- All new columns on other tables
-SELECT table_name, column_name FROM information_schema.columns 
+SELECT table_name, column_name FROM information_schema.columns
 WHERE (table_name = 'user_interactions' AND column_name = 'error_type')
    OR (table_name = 'quiz_sessions' AND column_name = 'pre_session_confidence_ratings')
    OR (table_name = 'questions' AND column_name = 'is_assessment')
@@ -965,12 +965,12 @@ WHERE (table_name = 'user_interactions' AND column_name = 'error_type')
 SELECT trigger_name, event_object_table FROM information_schema.triggers WHERE trigger_schema = 'public';
 
 -- RLS on all new tables
-SELECT tablename, rowsecurity FROM pg_tables 
+SELECT tablename, rowsecurity FROM pg_tables
 WHERE schemaname = 'public' AND tablename IN ('analytics_events', 'user_node_mastery_history', 'exam_outcomes', 'blindspot_queues');
 
 -- Readiness Score is non-zero for users with data
-SELECT user_id, global_readiness_score FROM user_global_stats 
-WHERE user_id IN (SELECT DISTINCT user_id FROM user_interactions) 
+SELECT user_id, global_readiness_score FROM user_global_stats
+WHERE user_id IN (SELECT DISTINCT user_id FROM user_interactions)
 AND global_readiness_score > 0;
 ```
 

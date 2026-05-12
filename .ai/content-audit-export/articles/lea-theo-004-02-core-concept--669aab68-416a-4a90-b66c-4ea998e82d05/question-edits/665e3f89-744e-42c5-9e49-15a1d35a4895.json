@@ -1,0 +1,58 @@
+{
+  "question_id": "665e3f89-744e-42c5-9e49-15a1d35a4895",
+  "baseline_hash": "sha256:f97b180dec35d1d2c7d4b3f11ef3bfe0c897c5bffffe7061c68bfeb7d6348c94",
+  "action": "replace",
+  "reason": "source-audited-article-batch-059-local-first: local raw PDF backed replacement constrained to checked Batch 059 TOA 4 Tropical Architecture source family.",
+  "approved_by": "codex-local-first-batch-059",
+  "approved_at": "2026-05-11T20:48:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
+    "parent_article_slug": "lea-theo-004-02-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "TOA 4 Tropical Architecture refined markdown lines 513-591, 622-660, 708-710, and raw PDF pages 71-78, 81-84, 87-90",
+    "checked_markdown_lines": [
+      "TOA 4 Tropical Architecture refined markdown lines 513-591",
+      "TOA 4 Tropical Architecture refined markdown lines 622-660",
+      "TOA 4 Tropical Architecture refined markdown lines 708-710"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "toa4-tropical-architecture-local-raw-pdf--b059-669aab68-01",
+        "label": "TOA 4 Tropical Architecture - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+        "sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+        "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+        "locator": "TOA 4 Tropical Architecture refined markdown lines 513-591, 622-660, 708-710, and raw PDF pages 71-78, 81-84, 87-90"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 059 checked local raw PDF source scope."
+  },
+  "proposed": {
+    "text": "Which set of choices belongs under avoiding heat gain?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Orient for reduced sun exposure, shade walls and windows, use light colors or reflective surfaces."
+      },
+      {
+        "id": "b",
+        "text": "Expose every glass surface to direct sun."
+      },
+      {
+        "id": "c",
+        "text": "Use high thermal mass everywhere as the default hot-humid answer."
+      },
+      {
+        "id": "d",
+        "text": "Block all wind from occupied rooms."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Orient for reduced sun exposure, shade walls and windows, use light colors or reflective surfaces. This answer is supported by the checked Batch 059 local TOA 4 Tropical Architecture raw PDF source family for Passive design in tropical climates operates.",
+    "explanation": "Orient for reduced sun exposure, shade walls and windows, use light colors or reflective surfaces. The Batch 059 source audit used the local raw PDF first and refined markdown only as locator evidence for Passive design in tropical climates operates.",
+    "code_citation": "TOA 4 Tropical Architecture refined markdown lines 513-591, 622-660, 708-710, and raw PDF pages 71-78, 81-84, 87-90"
+  },
+  "batch_question_template_index": 3
+}

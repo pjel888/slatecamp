@@ -1,0 +1,32 @@
+{
+  "question_id": "d33e7760-a031-47e6-b19c-8094362a0513",
+  "baseline_hash": "sha256:5fe8d8099bd501b005204132a30e47b97f6739d93859594431f952f183791ee1",
+  "reason": "Batch 003 source audit removed unsupported parking-structure geometry locators. PD 1096 Rule VII supports slot/loading sizes and plan indication; BP 344 supports accessible parking details. Rule XIX, Section 803, and Section 904 are not parking geometry locators.",
+  "approved_by": "codex-local-source-audit-batch-003",
+  "approved_at": "2026-05-10T18:00:00+08:00",
+  "proposed": {
+    "text": "Which BP 344 2024 accessible parking detail is source-backed in the checked local source?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Accessible slots may be placed farthest from the accessible entrance"
+      },
+      {
+        "id": "b",
+        "text": "A 3.70 m stall width remains the source-backed value"
+      },
+      {
+        "id": "c",
+        "text": "Accessible parking should connect to an accessible route, with a 1200 mm minimum clear walkway between the front ends of parked cars"
+      },
+      {
+        "id": "d",
+        "text": "Accessible parking signage is optional"
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": "BP 344 2024 supports accessible route connection and a 1200 mm minimum clear walkway between the front ends of parked cars.",
+    "explanation": "The old vertical-clearance route question cited unsupported PD 1096 parking geometry.",
+    "code_citation": "BP 344 2024 Revised IRR, Accessible Parking Slots"
+  }
+}

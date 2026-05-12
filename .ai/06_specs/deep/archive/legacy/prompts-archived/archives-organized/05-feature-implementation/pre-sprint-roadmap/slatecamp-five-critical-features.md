@@ -1,5 +1,5 @@
 # SlateCamp — Five Critical Unbuilt Features
-**Product Architect · March 2026 · Internal**  
+**Product Architect · March 2026 · Internal**
 **Source:** Global Codebase Audit Report (2026-03-25) cross-referenced against product architecture decisions
 
 ---
@@ -450,8 +450,8 @@ A dashboard alert component that reads the most recent `readiness_score_snapshot
 - No X icon — removing this alert from view is not an available action
 
 **Copy template (per flagged subject):**
-> ⚠️ **[Subject Name] is at [X%]**  
-> The ALE requires at least 50% in every subject to pass — regardless of your overall score. This subject will determine your result.  
+> ⚠️ **[Subject Name] is at [X%]**
+> The ALE requires at least 50% in every subject to pass — regardless of your overall score. This subject will determine your result.
 > **Study [Subject Name] Now →**
 
 The CTA routes to a Subject Mode session filtered to the flagged subject, or to the filtered Camp Trail library showing subject mastery paths for that subject.
@@ -493,6 +493,6 @@ For the analytics dashboard and the Readiness Score card: same `sub_scores` JSON
 
 ---
 
-*SlateCamp — Five Critical Unbuilt Features · March 2026 · Internal · Product Architect*  
+*SlateCamp — Five Critical Unbuilt Features · March 2026 · Internal · Product Architect*
 *Based on: Global Codebase Audit (2026-03-25) · Product Architecture v2.1 · Session decisions*
 

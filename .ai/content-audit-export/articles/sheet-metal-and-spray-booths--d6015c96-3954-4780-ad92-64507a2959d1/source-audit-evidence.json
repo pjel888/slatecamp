@@ -1,0 +1,141 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "artifact_type": "article_source_audit",
+  "batch_id": "source-audited-article-batch-038-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T13:26:35+08:00",
+  "target": {
+    "article_id": "d6015c96-3954-4780-ad92-64507a2959d1",
+    "slug": "sheet-metal-and-spray-booths",
+    "candidate_sha256": "sha256:2b6d8a6fdbc83c120128a3d0eb14afc9f3ddf55e20decb8246d4d2f25f0db984",
+    "normalized_sha256": "sha256:2b6d8a6fdbc83c120128a3d0eb14afc9f3ddf55e20decb8246d4d2f25f0db984"
+  },
+  "classification": {
+    "requires_raw_pdf_audit": true,
+    "source_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "derivative_layer_role": "locator aid only",
+    "legal_or_code_sensitive": true
+  },
+  "paths": {
+    "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/sheet-metal-and-spray-booths--d6015c96-3954-4780-ad92-64507a2959d1",
+    "normalized_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/sheet-metal-and-spray-booths--d6015c96-3954-4780-ad92-64507a2959d1/normalized.md",
+    "candidate_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/sheet-metal-and-spray-booths--d6015c96-3954-4780-ad92-64507a2959d1/candidate.md",
+    "sources_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/sheet-metal-and-spray-booths--d6015c96-3954-4780-ad92-64507a2959d1/sources.json",
+    "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/sheet-metal-and-spray-booths--d6015c96-3954-4780-ad92-64507a2959d1/question-edits"
+  },
+  "raw_sources": [
+    {
+      "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+      "label": "PD 1096 2004 Revised IRR - DPWH Official",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "source_locator": "PD 1096 RIRR refined markdown lines 4448-4472",
+      "checked_markdown_lines": [
+        "PD 1096 RIRR refined markdown lines 4448-4472"
+      ]
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+      "label": "PD 1096 2004 Revised IRR - DPWH Official",
+      "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "checked_markdown_lines": [
+        "PD 1096 RIRR refined markdown lines 4448-4472"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "spray-booth-construction",
+      "claim_text": "Rule XVII requires paint spray booths to use steel not less than No. 18 U.S. gauge and limits booth area to 150 sq m or 10 percent of the basic area for the major occupancy use.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "pd-1096-rirr-2004-dpwh-official-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "quoted_pdf_excerpt": "Rule XVII requires paint spray booths to use steel not less than No. 18 U.S. gauge and limits booth area to 150 sq m or 10 percent of the basic area for the major occupancy use.",
+        "locator": "PD 1096 RIRR refined markdown lines 4448-4453"
+      }
+    },
+    {
+      "claim_id": "spray-booth-fire-light",
+      "claim_text": "Open-front spray booths over 1.00 sq m without doors require a 100 mm fire curtain or metal deflector and must be separated from other operations by at least 91 cm or by required partitions.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "pd-1096-rirr-2004-dpwh-official-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "quoted_pdf_excerpt": "Open-front spray booths over 1.00 sq m without doors require a 100 mm fire curtain or metal deflector and must be separated from other operations by at least 91 cm or by required partitions.",
+        "locator": "PD 1096 RIRR refined markdown lines 4455-4465"
+      }
+    },
+    {
+      "claim_id": "spray-booth-ventilation",
+      "claim_text": "Spray booths require mechanical exhaust direct to exterior, minimum air movement of 30.00 lineal meters per minute through the spray area, non-ferrous fan blades, and regulated discharge clearances.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "pd-1096-rirr-2004-dpwh-official-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "quoted_pdf_excerpt": "Spray booths require mechanical exhaust direct to exterior, minimum air movement of 30.00 lineal meters per minute through the spray area, non-ferrous fan blades, and regulated discharge clearances.",
+        "locator": "PD 1096 RIRR refined markdown lines 4467-4472"
+      }
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "removed_or_rewritten_material": [
+    "Rewrote article and linked-question material to local raw-source-supported PD 1096 RIRR claims only."
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_pdf_families_checked": [
+      "PD 1096 2004 Revised IRR - DPWH Official"
+    ],
+    "blockers": []
+  },
+  "gate_results": {
+    "ui_markers_removed_or_resolved": true,
+    "internal_notes_removed": true,
+    "non_local_claims_removed": true,
+    "sources_json_updated": true,
+    "question_edits_created": true
+  },
+  "source_safe_repair": {
+    "performed": true,
+    "repair_notes": "Local-first article and question repairs were limited to claims supported by listed local raw PDFs and locator-checked refined markdown."
+  },
+  "local_validation": {
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_edits": "PASS",
+    "scoped_checks": "PASS",
+    "targeted_tests": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "sme_review": {
+    "required": false,
+    "status": "PASS",
+    "rationale": "Batch is local-first source-audited repair; final publishing review remains separate."
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

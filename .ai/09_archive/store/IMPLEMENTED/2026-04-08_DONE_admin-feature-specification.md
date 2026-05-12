@@ -38,19 +38,19 @@ src/app/admin/
   page.tsx                            # Server -- admin dashboard (stats, charts, quick actions)
   loading.tsx                         # Skeleton loader for dashboard
   error.tsx                           # Client -- error boundary with retry
-  
+
   _components/
     AdminShell.tsx                    # Client -- PortalLayout shell, sidebar nav, CommandPalette
     AdminRoleBadge.tsx               # Server -- role badge display (super_admin/content_admin/sme_reviewer)
-  
+
   login/
     page.tsx                          # Client -- Google OAuth login (public, bypasses shell)
     loading.tsx
-  
+
   dashboard/
     page.tsx                          # Server -- redirects or secondary dashboard
     loading.tsx
-  
+
   knowledge/                          # *** THE UNIFIED KNOWLEDGE HUB ***
     page.tsx                          # Server -- ContentEditorIndex (taxonomy sidebar + article/question list)
     loading.tsx
@@ -77,7 +77,7 @@ src/app/admin/
     analytics/
       page.tsx                        # Content quality analytics
       loading.tsx
-  
+
   articles/                           # LEGACY -- superseded by /knowledge
     page.tsx
     new/
@@ -85,14 +85,14 @@ src/app/admin/
     [id]/
       page.tsx
       loading.tsx
-  
+
   content/                            # LEGACY -- superseded by /knowledge
     page.tsx
     new/
       page.tsx
     [id]/
       page.tsx
-  
+
   questions/                          # LEGACY -- superseded by /knowledge/questions
     page.tsx
     new/
@@ -103,47 +103,47 @@ src/app/admin/
       page.tsx
     analytics/
       page.tsx
-  
+
   taxonomy/
     page.tsx                          # Server -- TaxonomyEditor component
     loading.tsx
     coverage/
       page.tsx                        # Coverage map (questions vs articles by topic)
       loading.tsx
-  
+
   pipeline/
     page.tsx                          # Server -- Kanban-style publish pipeline
     loading.tsx
     _components/
       PipelineCard.tsx               # Individual article card in pipeline
       PipelineClient.tsx             # Client -- 3-column (draft/review/published) board
-  
+
   reviews/
     page.tsx                          # Server -- SMEReviewQueue component
     loading.tsx
-  
+
   search/
     layout.tsx                        # Search layout wrapper
     page.tsx                          # Full-text content search
     loading.tsx
     _components/
       ContentSearchClient.tsx         # Client -- real-time Supabase search
-  
+
   audit/
     page.tsx                          # Server -- AuditLogViewer (super_admin only)
     loading.tsx
-  
+
   activity/
     page.tsx                          # Server -- activity feed from audit_logs
     loading.tsx
-  
+
   assets/
     page.tsx                          # Server -- 3D asset manager (upload + list)
     loading.tsx
     [id]/
       page.tsx                        # Asset detail view
       loading.tsx
-  
+
   3d-models/
     page.tsx                          # 3D model registry
     loading.tsx
@@ -153,11 +153,11 @@ src/app/admin/
       ModelRegistryTree.tsx
     _lib/
       model-registry-data.ts
-  
+
   preview/
     [previewId]/
       page.tsx                        # Server -- iframe preview of draft article as student view
-  
+
   settings/
     page.tsx                          # Server -- user role management (super_admin only)
     loading.tsx
@@ -292,10 +292,10 @@ graph TD
     D --> G[Search Input]
     D --> H[Article Row -> Link to /knowledge/id]
     E --> I[Topic-filtered Questions]
-    
+
     J[TaxonomyEditor Page] --> K[TaxonomyEditor Component]
     K --> L[Tree CRUD: create/update/delete nodes]
-    
+
     M[Pipeline Page] --> N[PipelineClient]
     N --> O[Draft Column]
     N --> P[Review Column]
@@ -468,7 +468,7 @@ sequenceDiagram
     DB-->>Server: Success/Error
     Server-->>SaveBar: SaveItemResult[]
     SaveBar->>Editor: resetAllDirty() on success
-    
+
     Note over Admin: Status change: draft -> review -> published
     Admin->>Editor: Change status to "published"
     Editor->>SaveBar: Save with new status

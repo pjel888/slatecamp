@@ -1,0 +1,85 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-072-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T01:24:18+08:00",
+  "target": {
+    "article_id": "246c66db-c0cf-4cd3-8f52-9491451e7c76",
+    "slug": "lea-dsgn-009-04-core-concept",
+    "title": "Green building design",
+    "article_folder": ".ai/content-audit-export/articles/lea-dsgn-009-04-core-concept--246c66db-c0cf-4cd3-8f52-9491451e7c76",
+    "normalized_sha256": "sha256:b4f00d651cd1a216d7b77c0a60b0f66ed21719d4c57ed210b7ea5c3d85693a8a",
+    "candidate_sha256": "sha256:b4f00d651cd1a216d7b77c0a60b0f66ed21719d4c57ed210b7ea5c3d85693a8a",
+    "candidate_path": ".ai/content-audit-export/articles/lea-dsgn-009-04-core-concept--246c66db-c0cf-4cd3-8f52-9491451e7c76/candidate.md"
+  },
+  "classification": {
+    "topic_family": "green_building_design",
+    "local_first_batch": "072",
+    "source_sensitivity": "green_building_code_policy",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdfs_checked_first": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "local_pdf_extraction_method": "python_pymupdf_local",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "berde-v5-user-guide-b072",
+      "label": "BERDE Buildings Version 5.0.0 User Guide",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.pdf",
+      "sha256": "sha256:59f4e0a3a485f73f93f211bc4250932a9c9d2b114b4f571b2ab8f6a58c426bb4",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.md",
+      "refined_markdown_sha256": "sha256:36537e2d7fae0f6f9eaf85589873086d118008fbb757f48f845876ab8585b5fc",
+      "locator": "BERDE refined markdown lines 119-135, 137-171, and 238-281; raw PDF pages 8, 16, 18-19, 22-24, 26, 31, 53-54, and 59 checked by local PyMuPDF extraction"
+    },
+    {
+      "source_id": "doe-energy-conserving-design-b072",
+      "label": "DOE Guidelines on Energy Conserving Design of Buildings 2008",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+      "sha256": "sha256:9a1a4019b500ffc2873625db6f04ac50b39aea7cadac9159464f9ed716e8126c",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.md",
+      "refined_markdown_sha256": "sha256:477f0990a67359eee303e8280a00be449d0aa413252161db7b5b1bafec3012b9",
+      "locator": "DOE refined markdown lines 258-273, 321-365, and 711-795; raw PDF pages 33, 35-36, 42, and 44 checked by local PyMuPDF extraction"
+    },
+    {
+      "source_id": "ra11285-energy-efficiency-act-b072",
+      "label": "RA 11285 Energy Efficiency and Conservation Act 2019",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf",
+      "sha256": "sha256:316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.md",
+      "refined_markdown_sha256": "sha256:d2baa0e8d4ffe0059688783a4d31ac0e121517daca939f18a048fe053e76cdd4",
+      "locator": "RA 11285 refined markdown lines 17-31, 33-39, 61-81, and 91-111; raw PDF pages 1-4 checked by local PyMuPDF extraction"
+    }
+  ],
+  "claims": [
+    "BERDE is treated as the checked Philippine national voluntary green building rating system source, not as an interchangeable LEED or EDGE substitute.",
+    "Energy design claims are limited to DOE building-energy guidance and RA 11285 policy scope that were checked locally."
+  ],
+  "unverified_or_rejected_claims": [
+    "Unsupported EDGE, LEED, ASHRAE, hospital ACH, NGR, elevator-count, typical span, universal 3.0 m floor-to-floor, and uncited structural/MEP sizing claims were not retained unless specifically supported by checked sources or problem-given data."
+  ],
+  "scenario_enrichment": {
+    "policy_status": "pending",
+    "eligibility_status": "eligible-deferred",
+    "blocker_status": "nonblocking",
+    "note": "No Real World Scenario section was added; source correctness and question safety remained the blocking criteria."
+  },
+  "sme_review": {
+    "status": "local_agent_source_audited",
+    "reviewer": "codex-local-first-batch-072"
+  }
+}

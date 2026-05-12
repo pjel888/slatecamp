@@ -1,0 +1,240 @@
+{
+  "schema_version": "source-audit-evidence-v1-local-first",
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-019-local-first",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T23:59:30+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "387760f0-6468-40d6-b78e-a463c9f543b2",
+    "slug": "lea-prac-frm-002-partnership-in-architectural-practice",
+    "title": "Partnership in Architectural Practice",
+    "article_folder": ".ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2/candidate.md",
+    "candidate_sha256": "sha256:c15be10044868a86e3749940c9a8917558ab39b47e9c07ad3337a26245bd9eee",
+    "normalized_sha256": "sha256:c15be10044868a86e3749940c9a8917558ab39b47e9c07ad3337a26245bd9eee",
+    "linked_questions_sha256": "sha256:86a636db6244d64d4fee1659e08f245bf8e8d1ecf7294abdbbe4096dd682040d",
+    "sources_sha256": "sha256:c9b01cb9a12c8b75a2a28e1e6efe8a37f752f9d942937330cd0264e519e2cbfc"
+  },
+  "classification": {
+    "content_domain": "LEA Professional Practice and Jurisprudence",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high_value_lea_professional_practice",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": [
+      "279ac190-da6a-4f8a-b895-2e5d601dbd4f",
+      "363574ac-92a6-4b1a-a67e-0a045eede11a",
+      "4593060f-de75-41a6-b054-d392166457c9",
+      "5d3fe44c-6796-41f3-8b25-ed9dcc1ccaeb",
+      "645a6629-fb7a-4a0a-acbf-661170bc30fb",
+      "6ed190bf-7179-411d-8679-c37526278754",
+      "89e628df-64a1-4dc5-8915-1acd4f5f104d",
+      "9732576b-20ce-4638-83c5-6a2f7386c224",
+      "99921fdc-dab4-4199-9be7-656de5ed1b37",
+      "d03029e0-65d4-4ae7-baf3-d43e488ecd6e"
+    ]
+  },
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2/question-edits/279ac190-da6a-4f8a-b895-2e5d601dbd4f.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2/question-edits/363574ac-92a6-4b1a-a67e-0a045eede11a.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2/question-edits/4593060f-de75-41a6-b054-d392166457c9.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2/question-edits/5d3fe44c-6796-41f3-8b25-ed9dcc1ccaeb.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2/question-edits/645a6629-fb7a-4a0a-acbf-661170bc30fb.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2/question-edits/6ed190bf-7179-411d-8679-c37526278754.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2/question-edits/89e628df-64a1-4dc5-8915-1acd4f5f104d.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2/question-edits/9732576b-20ce-4638-83c5-6a2f7386c224.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2/question-edits/99921fdc-dab4-4199-9be7-656de5ed1b37.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-002-partnership-in-architectural-practice--387760f0-6468-40d6-b78e-a463c9f543b2/question-edits/d03029e0-65d4-4ae7-baf3-d43e488ecd6e.json"
+    ]
+  },
+  "raw_sources": [
+    {
+      "source_key": "ra-9266-irr-architecture-act-2004",
+      "label": "RA 9266 IRR Architecture Act of 2004",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "raw_markdown_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+      "source_locator": "raw markdown lines 96-99, 123-146, 233-235, 672-691, 782-824"
+    },
+    {
+      "source_key": "uap-standards-of-professional-practice",
+      "label": "UAP Document Standards of Professional Practice",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+      "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+      "raw_markdown_sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+      "source_locator": "raw markdown lines 58-63, 128-132, 293-297, 1639-1648, 1854-1857"
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "ra-9266-irr-architecture-act-2004",
+      "label": "RA 9266 IRR Architecture Act of 2004",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "raw_markdown_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+      "source_locator": "raw markdown lines 96-99, 123-146, 233-235, 672-691, 782-824",
+      "checked_markdown_lines": [
+        "raw markdown lines 96-99, 123-146, 233-235, 672-691, 782-824"
+      ]
+    },
+    {
+      "source_id": "uap-standards-of-professional-practice",
+      "label": "UAP Document Standards of Professional Practice",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+      "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+      "raw_markdown_sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+      "source_locator": "raw markdown lines 58-63, 128-132, 293-297, 1639-1648, 1854-1857",
+      "checked_markdown_lines": [
+        "raw markdown lines 58-63, 128-132, 293-297, 1639-1648, 1854-1857"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "frm002-claim-01",
+      "claim_text": "Architectural partnership means two or more Architects registered with SEC and then with the Board of Architecture.",
+      "claim_type": "legal_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "RA 9266 IRR",
+        "locator": "raw markdown lines 144-146",
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf"
+        ],
+        "raw_pdf_sha256": [
+          "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b"
+        ]
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "frm002-claim-02",
+      "claim_text": "Registered and licensed architects must compose at least 75 percent of applicable ownership/control categories.",
+      "claim_type": "legal_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "RA 9266 IRR",
+        "locator": "raw markdown lines 782-801",
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf"
+        ],
+        "raw_pdf_sha256": [
+          "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b"
+        ]
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "frm002-claim-03",
+      "claim_text": "Members are responsible for individual and collective acts as an entity and as provided by law.",
+      "claim_type": "legal_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "RA 9266 IRR",
+        "locator": "raw markdown lines 794-796",
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf"
+        ],
+        "raw_pdf_sha256": [
+          "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b"
+        ]
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [
+    "Learner-visible UI marker summaries, internal repair notes, and over-specific business-risk statements were removed from normalized.md and candidate.md.",
+    "Business-liability, insurance, investment, succession, and country-list details were rewritten as separate-source-required where not located in the audited raw sources."
+  ],
+  "removed_or_rewritten_material": [
+    "Removed SLATECAMP_UI_BLOCK marker blocks from normalized.md so candidate.md has no unresolved UI placeholders.",
+    "Rewrote linked questions into source-safe wording aligned to RA 9266 IRR and UAP SPP."
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "gate_results": {
+    "compose": "PASS: bun run content-audit:compose -- --article-id 387760f0-6468-40d6-b78e-a463c9f543b2 --overwrite; blockers=0",
+    "diff": "PASS: bun run content-audit:diff -- --article-id 387760f0-6468-40d6-b78e-a463c9f543b2 --summary; safe_to_push=true blockers=0",
+    "validate": "PASS: bun run content-audit:validate -- --article-id 387760f0-6468-40d6-b78e-a463c9f543b2 --summary; valid=true blockers=0 warnings=1 component-usage-only",
+    "push_dry_run": "not_attempted_local_first; Supabase remote fetch/publish is final publishing only",
+    "supabase_mutation": "not_attempted_by_request"
+  },
+  "source_safe_repair": {
+    "normalized_md_rewritten": true,
+    "candidate_md_composed": true,
+    "sources_json_refreshed_to_checked_raw_sources": true,
+    "source_audit_evidence_json_created": true,
+    "question_edits_created": 10,
+    "answer_key_fields_changed": true,
+    "ui_markers_removed_from_normalized": true,
+    "external_business_claims_limited_to_source_safe_form": true
+  },
+  "local_validation": {
+    "compose": {
+      "passed": true,
+      "blockers": [],
+      "candidate_hash": "sha256:c15be10044868a86e3749940c9a8917558ab39b47e9c07ad3337a26245bd9eee"
+    },
+    "diff": {
+      "passed": true,
+      "blockers": [],
+      "safe_to_push": true
+    },
+    "validate": {
+      "passed": true,
+      "blockers": [],
+      "warnings": [
+        "component-usage.json has not been generated for this article yet."
+      ]
+    },
+    "scoped_checks": {
+      "json_parse": "PASS: jq empty over 86 Batch 019 JSON files",
+      "placeholder_marker_scan": "PASS: no learner-visible SLATECAMP_UI_BLOCK, placeholder, previous-version, internal-note, TODO/FIXME/VERIFY, or unsupported markers in normalized/candidate/question-edits",
+      "source_hashes": "PASS: sources.json and evidence raw sources present",
+      "linked_question_edit_count": "PASS",
+      "prior_batch_collision_check": "PASS",
+      "diff_check": "PASS: git diff --check scoped to Batch 019 paths",
+      "test_check": "PASS: bun test scripts/content-audit/content-audit.test.ts (27 pass, 0 fail)"
+    },
+    "checked_at": "2026-05-10T23:59:30+08:00"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "local_first_recovery_complete": true,
+    "remote_publish_status": "not_attempted_by_request",
+    "blockers": [],
+    "warnings": [
+      "component-usage.json has not been generated for this article yet; validate treats this as a non-blocking warning."
+    ]
+  },
+  "supabase": {
+    "pushed": false,
+    "deployed": false,
+    "committed": false,
+    "final_publishing_only": true
+  }
+}

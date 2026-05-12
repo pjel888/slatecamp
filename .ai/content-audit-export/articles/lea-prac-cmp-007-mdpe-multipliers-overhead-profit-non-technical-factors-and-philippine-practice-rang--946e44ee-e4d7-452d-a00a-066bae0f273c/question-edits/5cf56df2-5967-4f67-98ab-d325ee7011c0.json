@@ -1,0 +1,81 @@
+{
+  "question_id": "5cf56df2-5967-4f67-98ab-d325ee7011c0",
+  "baseline_hash": "sha256:d97cdbcdd8868a0da479a407cd2068baeb7bac5b08592746e2d291745717dbcd",
+  "action": "replace",
+  "reason": "source-audited-article-batch-035-local-first aligned linked professional-practice question with audited local raw PDF source language for lea-prac-cmp-007-mdpe-multipliers-overhead-profit-non-technical-factors-and-philippine-practice-ranges.",
+  "approved_by": "codex-local-source-audit-batch-035",
+  "approved_at": "2026-05-11T11:27:41+08:00",
+  "source_audit_support": {
+    "parent_article_id": "946e44ee-e4d7-452d-a00a-066bae0f273c",
+    "parent_article_slug": "lea-prac-cmp-007-mdpe-multipliers-overhead-profit-non-technical-factors-and-philippine-practice-ranges",
+    "parent_article_title": "MDPE Multipliers Overhead Profit Non Technical Factors",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UAP Standards of Professional Practice refined markdown lines 419-435; SPP 201 refined markdown lines 165-188",
+    "checked_sources": [
+      {
+        "source_id": "uap-standards-professional-practice2-local",
+        "label": "UAP Standards of Professional Practice - compiled SPP source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+        "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+        "source_locator": "UAP Standards of Professional Practice refined markdown lines 419-435; SPP 201 refined markdown lines 165-188",
+        "checked_markdown_lines": [
+          "UAP Standards of Professional Practice refined markdown lines 419-435",
+          "SPP 201 refined markdown lines 165-188"
+        ]
+      },
+      {
+        "source_id": "uap-spp-201-local",
+        "label": "UAP SPP Document 201 - Pre-design Services / Compensation Slides",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+        "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+        "refined_markdown_sha256": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
+        "source_locator": "UAP Standards of Professional Practice refined markdown lines 419-435; SPP 201 refined markdown lines 165-188",
+        "checked_markdown_lines": [
+          "UAP Standards of Professional Practice refined markdown lines 419-435",
+          "SPP 201 refined markdown lines 165-188"
+        ]
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer key, rationale, explanation, and code citation rewritten to audited local article scope."
+  },
+  "proposed": {
+    "text": "Which statement correctly distinguishes multiplier M from reimbursable expenses R?",
+    "options": [
+      {
+        "id": "a",
+        "text": "M covers overhead and reasonable profit; R covers reimbursable project cost items added after Fee"
+      },
+      {
+        "id": "b",
+        "text": "M is a reimbursable expense and R is a profit multiplier"
+      },
+      {
+        "id": "c",
+        "text": "M is always 3.5 and R is always zero"
+      },
+      {
+        "id": "d",
+        "text": "M and R are both land acquisition costs"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "a": "The formula defines M as overhead/reasonable profit and R as reimbursable expenses; Total Cost of Service equals Fee + R.",
+      "b": "This reverses the formula variables.",
+      "c": "This conflicts with the checked range and reimbursable examples.",
+      "d": "Neither variable is land acquisition cost.",
+      "correct": "The formula defines M as overhead/reasonable profit and R as reimbursable expenses; Total Cost of Service equals Fee + R.",
+      "takeaway": "Keep multiplier and reimbursables separate."
+    },
+    "explanation": "The formula defines M as overhead/reasonable profit and R as reimbursable expenses; Total Cost of Service equals Fee + R. Keep multiplier and reimbursables separate.",
+    "code_citation": "UAP Standards of Professional Practice refined markdown lines 427-435"
+  }
+}

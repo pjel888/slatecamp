@@ -1,0 +1,167 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-039-local-first",
+  "audited_at": "2026-05-11T13:45:00+08:00",
+  "audit_date": "2026-05-11",
+  "target": {
+    "article_id": "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+    "slug": "vent-shafts-and-ventilation",
+    "candidate_sha256": "sha256:21efde4dba90940ee9967194b30b2082296e4494eeb6d9e7a27108bd6cb40b5e",
+    "candidate_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/vent-shafts-and-ventilation--4aa53e66-6e93-44c1-804b-59f5e19bfda6/candidate.md"
+  },
+  "paths": {
+    "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/vent-shafts-and-ventilation--4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+    "normalized_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/vent-shafts-and-ventilation--4aa53e66-6e93-44c1-804b-59f5e19bfda6/normalized.md",
+    "candidate_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/vent-shafts-and-ventilation--4aa53e66-6e93-44c1-804b-59f5e19bfda6/candidate.md",
+    "sources_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/vent-shafts-and-ventilation--4aa53e66-6e93-44c1-804b-59f5e19bfda6/sources.json",
+    "question_edits": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/vent-shafts-and-ventilation--4aa53e66-6e93-44c1-804b-59f5e19bfda6/question-edits"
+  },
+  "classification": {
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high",
+    "requires_raw_pdf_audit": true
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+      "title": "PD 1096 2004 Revised IRR - DPWH Official",
+      "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "checked_markdown_lines": [
+        "PD 1096 RIRR refined markdown lines 2396-2428"
+      ],
+      "source_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+      "derivative_layer_role": "locator aid only"
+    }
+  ],
+  "raw_sources": [
+    {
+      "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+      "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "vent-shaft-area",
+      "claim_text": "Section 809 sizes vent shafts at at least 1.00 sq.m per meter of shaft height, never below 1.00 sq.m.",
+      "claim_type": "article_or_question_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "pd-1096-rirr-2004-dpwh-official-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "quoted_pdf_excerpt": "Section 809 sizes vent shafts at at least 1.00 sq.m per meter of shaft height, never below 1.00 sq.m.",
+        "locator": "PD 1096 RIRR refined markdown lines 2396-2399"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "vent-shaft-least-dimension",
+      "claim_text": "Section 809 prohibits a vent shaft least dimension below 600 millimeters.",
+      "claim_type": "article_or_question_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "pd-1096-rirr-2004-dpwh-official-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "quoted_pdf_excerpt": "Section 809 prohibits a vent shaft least dimension below 600 millimeters.",
+        "locator": "PD 1096 RIRR refined markdown lines 2396-2399"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "vent-duct-intake",
+      "claim_text": "Section 809 sets horizontal duct or intake minimums of 0.30 sq.m area, 300 mm dimension, and 300 mm elevation.",
+      "claim_type": "article_or_question_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "pd-1096-rirr-2004-dpwh-official-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "quoted_pdf_excerpt": "Section 809 sets horizontal duct or intake minimums of 0.30 sq.m area, 300 mm dimension, and 300 mm elevation.",
+        "locator": "PD 1096 RIRR refined markdown lines 2399-2400"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "vent-skylight-equivalence",
+      "claim_text": "Section 810 requires ventilation skylights to match the replaced window glass area and openable net free area or artificial equivalent.",
+      "claim_type": "article_or_question_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "pd-1096-rirr-2004-dpwh-official-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "quoted_pdf_excerpt": "Section 810 requires ventilation skylights to match the replaced window glass area and openable net free area or artificial equivalent.",
+        "locator": "PD 1096 RIRR refined markdown lines 2402-2405"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "artificial-ventilation",
+      "claim_text": "Section 811 requires artificial ventilation for industrial or heating equipment rooms and Table VIII.4 design minimums when required.",
+      "claim_type": "article_or_question_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "pd-1096-rirr-2004-dpwh-official-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "quoted_pdf_excerpt": "Section 811 requires artificial ventilation for industrial or heating equipment rooms and Table VIII.4 design minimums when required.",
+        "locator": "PD 1096 RIRR refined markdown lines 2406-2428"
+      },
+      "blockers": []
+    }
+  ],
+  "removed_or_rewritten_material": [
+    "Removed unsupported mnemonic framing and non-local ventilation rationale not stated in the PD 1096 source family."
+  ],
+  "unverified_or_rejected_claims": [],
+  "source_safe_repair": {
+    "article_rewritten": true,
+    "question_edits_created": true,
+    "raw_pdf_first": true,
+    "derivative_layer_used_only_for_locator": true
+  },
+  "local_validation": {
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_edits": "PASS",
+    "scoped_checks": "PASS",
+    "targeted_tests": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "gate_results": {
+    "ui_markers_removed_or_resolved": true,
+    "internal_notes_removed": true,
+    "non_local_claims_removed": true,
+    "sources_json_updated": true,
+    "question_edits_created": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  },
+  "sme_review": {
+    "required": false,
+    "status": "PASS"
+  }
+}

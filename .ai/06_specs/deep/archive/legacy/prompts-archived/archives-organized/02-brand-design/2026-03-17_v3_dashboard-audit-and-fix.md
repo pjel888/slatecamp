@@ -83,7 +83,7 @@ The Readiness Score is the ENTIRE product promise. It should be the second-most 
       {readinessScore}%
     </p>
     <p className="text-sm text-[#555555] mt-1">
-      {readinessScore >= 70 
+      {readinessScore >= 70
         ? "You're building real momentum. Keep it up."
         : readinessScore >= 40
         ? `${subjectsToImprove} subjects need focused review.`
@@ -127,13 +127,13 @@ Below the Readiness Score, add a subject breakdown showing mastery per ALE subje
       <div key={subject.id} className="flex items-center gap-3">
         <span className="text-sm text-[#555555] w-[160px] truncate">{subject.name}</span>
         <div className="flex-1 h-2 bg-[#F2F0EB] rounded-full overflow-hidden">
-          <div 
+          <div
             className="h-full rounded-full transition-all duration-500 ease-out"
-            style={{ 
+            style={{
               width: `${subject.mastery}%`,
-              backgroundColor: subject.mastery >= 70 ? '#1B7A3C' 
-                : subject.mastery >= 40 ? '#E8853A' 
-                : subject.mastery > 0 ? '#E63329' 
+              backgroundColor: subject.mastery >= 70 ? '#1B7A3C'
+                : subject.mastery >= 40 ? '#E8853A'
+                : subject.mastery > 0 ? '#E63329'
                 : '#E8E4DC'
             }}
           />

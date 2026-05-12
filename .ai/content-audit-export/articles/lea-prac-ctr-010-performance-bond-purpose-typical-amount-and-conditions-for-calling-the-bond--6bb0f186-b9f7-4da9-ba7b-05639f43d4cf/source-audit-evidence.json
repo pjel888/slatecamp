@@ -1,0 +1,278 @@
+{
+  "batch_id": "source-audited-article-batch-029-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T16:20:00.000+08:00",
+  "article_id": "6bb0f186-b9f7-4da9-ba7b-05639f43d4cf",
+  "slug": "lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond",
+  "title": "Performance Bond Purpose Typical Amount",
+  "status": "local_pass_ready_for_final_publishing_review",
+  "article_folder": ".ai/content-audit-export/articles/lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond--6bb0f186-b9f7-4da9-ba7b-05639f43d4cf",
+  "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond--6bb0f186-b9f7-4da9-ba7b-05639f43d4cf",
+  "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond--6bb0f186-b9f7-4da9-ba7b-05639f43d4cf/question-edits",
+  "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond--6bb0f186-b9f7-4da9-ba7b-05639f43d4cf/question-edits",
+  "linked_questions": 10,
+  "question_edits_created": 10,
+  "source_safe_rewrite_question_edits": 10,
+  "classification": {
+    "legal_or_code_content": true,
+    "requires_raw_pdf_audit": true,
+    "local_first_only": true
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "local_first_only": true,
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "blockers": [],
+    "warnings": [
+      "Local-first content batch only; final Supabase publishing requires separate review/apply phase."
+    ]
+  },
+  "source_audit": {
+    "checked_sources": [
+      {
+        "source_id": "uap-document-301-general-conditions-local",
+        "label": "UAP Document 301 - General Conditions",
+        "authority": "United Architects of the Philippines / PRC Board approved general conditions source",
+        "source_type": "professional_practice_contract_pdf",
+        "source_locator": "UAP Document 301 refined markdown lines 488-492 and 1087-1090",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "refined_markdown_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+        "checked_markdown_lines": [
+          "UAP Document 301 lines 488-492",
+          "UAP Document 301 lines 1087-1090"
+        ],
+        "use": "primary local source for source-safe article and question rewrite claims",
+        "local_source_checked": true
+      },
+      {
+        "source_id": "ciap-document-102-private-construction-contract-local",
+        "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
+        "authority": "Construction Industry Authority of the Philippines / DTI private construction contract source",
+        "source_type": "construction_contract_pdf",
+        "source_locator": "CIAP Document 102 refined markdown lines 813-814 and 823-832",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+        "refined_markdown_sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
+        "checked_markdown_lines": [
+          "CIAP Document 102 lines 813-814",
+          "CIAP Document 102 lines 823-832"
+        ],
+        "use": "primary local source for source-safe article and question rewrite claims",
+        "local_source_checked": true
+      }
+    ],
+    "source_locator": "UAP Document 301 refined markdown lines 488-492 and 1087-1090; CIAP Document 102 refined markdown lines 813-814 and 823-832",
+    "checked_markdown_lines": [
+      "UAP Document 301 lines 488-492",
+      "UAP Document 301 lines 1087-1090",
+      "CIAP Document 102 lines 813-814",
+      "CIAP Document 102 lines 823-832"
+    ]
+  },
+  "claims": [
+    {
+      "claim_id": "batch-029-lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond-question-001",
+      "claim_text": "Question 38b20dde-4fbc-40e4-9899-e6bba8cbe035 / model BATCH-029-lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond-001 rewritten to source-safe local form.",
+      "question_id": "38b20dde-4fbc-40e4-9899-e6bba8cbe035",
+      "model_id": "BATCH-029-lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond-001",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 lines 488-492",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-029-lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond-question-002",
+      "claim_text": "Question 9f3402fb-2784-4dd1-a705-0454bc9fb7be / model BATCH-029-lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond-002 rewritten to source-safe local form.",
+      "question_id": "9f3402fb-2784-4dd1-a705-0454bc9fb7be",
+      "model_id": "BATCH-029-lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond-002",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "CIAP Document 102 lines 813-814",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-029-lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond-question-003",
+      "claim_text": "Question 343cc065-9c3a-4278-8a0c-b8fb45001e0d / model BATCH-029-lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond-003 rewritten to source-safe local form.",
+      "question_id": "343cc065-9c3a-4278-8a0c-b8fb45001e0d",
+      "model_id": "BATCH-029-lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond-003",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "CIAP Document 102 lines 813-814",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-029-lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond-question-004",
+      "claim_text": "Question 4487ced3-34c9-4331-b336-3b29aba82574 / model BATCH-029-lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond-004 rewritten to source-safe local form.",
+      "question_id": "4487ced3-34c9-4331-b336-3b29aba82574",
+      "model_id": "BATCH-029-lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond-004",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "CIAP Document 102 lines 813-814",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-029-lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond-question-005",
+      "claim_text": "Question 4fb31612-442e-4de5-8ebf-b89a1f4936d0 / model BATCH-029-lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond-005 rewritten to source-safe local form.",
+      "question_id": "4fb31612-442e-4de5-8ebf-b89a1f4936d0",
+      "model_id": "BATCH-029-lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond-005",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "CIAP Document 102 lines 813-814",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-029-lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond-question-006",
+      "claim_text": "Question d34b1926-bae4-4535-a89c-7899e624f61a / model BATCH-029-lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond-006 rewritten to source-safe local form.",
+      "question_id": "d34b1926-bae4-4535-a89c-7899e624f61a",
+      "model_id": "BATCH-029-lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond-006",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 lines 488-492",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-029-lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond-question-007",
+      "claim_text": "Question 7e5679e8-f4dc-47bc-967d-be1eb13dd00f / model BATCH-029-lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond-007 rewritten to source-safe local form.",
+      "question_id": "7e5679e8-f4dc-47bc-967d-be1eb13dd00f",
+      "model_id": "BATCH-029-lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond-007",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "CIAP Document 102 lines 823-832",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-029-lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond-question-008",
+      "claim_text": "Question 8d634057-738c-41d8-8f27-06f80e79feb5 / model BATCH-029-lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond-008 rewritten to source-safe local form.",
+      "question_id": "8d634057-738c-41d8-8f27-06f80e79feb5",
+      "model_id": "BATCH-029-lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond-008",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "CIAP Document 102 lines 823-832",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-029-lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond-question-009",
+      "claim_text": "Question 5b2613aa-3be5-41e4-8d89-ed36ddba7b2a / model BATCH-029-lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond-009 rewritten to source-safe local form.",
+      "question_id": "5b2613aa-3be5-41e4-8d89-ed36ddba7b2a",
+      "model_id": "BATCH-029-lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond-009",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "CIAP Document 102 lines 813-814",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-029-lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond-question-010",
+      "claim_text": "Question 17bc3333-8e02-4cd7-bbe2-f27f45493f30 / model BATCH-029-lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond-010 rewritten to source-safe local form.",
+      "question_id": "17bc3333-8e02-4cd7-bbe2-f27f45493f30",
+      "model_id": "BATCH-029-lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond-010",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "CIAP Document 102 lines 813-814",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    }
+  ]
+}

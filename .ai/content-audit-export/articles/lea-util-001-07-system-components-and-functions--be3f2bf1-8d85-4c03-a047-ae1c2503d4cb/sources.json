@@ -1,7 +1,63 @@
 {
   "article_id": "be3f2bf1-8d85-4c03-a047-ae1c2503d4cb",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "source_count": 0,
-  "sources": []
+  "sources_hash": "sha256:add5007c853843372f811701c2a2c2573e2cb73dcd22a5720e5c4172bc783c2f",
+  "source_count": 3,
+  "sources": [
+    {
+      "source_id": "rnpc-revised-national-plumbing-code-local",
+      "title": "Revised National Plumbing Code of the Philippines",
+      "source_type": "local_raw_pdf_with_locator_checked_refined_markdown",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf",
+      "raw_pdf_sha256": "sha256:c4ec30ec3ffe3b39513a033ebc2cfa614bd201d25c5578e1847e7f359fed3f5d",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Revised National Plumbing Code of the Philippines.md",
+      "refined_markdown_sha256": "sha256:7cea224bfc6c54d0883fe69c89b97cf134e45acaab6c8950b8af3621059c9a91",
+      "checked_markdown_lines": [
+        "Revised National Plumbing Code refined markdown lines 75-110",
+        "Revised National Plumbing Code refined markdown lines 147-196",
+        "Revised National Plumbing Code refined markdown lines 224-251",
+        "Revised National Plumbing Code refined markdown lines 453-477",
+        "Revised National Plumbing Code refined markdown lines 1338-1370",
+        "Revised National Plumbing Code refined markdown lines 3390-3419",
+        "Revised National Plumbing Code refined markdown lines 3660-3674",
+        "Revised National Plumbing Code refined markdown lines 4213-4260"
+      ],
+      "source_locator": "Revised National Plumbing Code refined markdown lines 75-110; Revised National Plumbing Code refined markdown lines 147-196; Revised National Plumbing Code refined markdown lines 224-251; Revised National Plumbing Code refined markdown lines 453-477; Revised National Plumbing Code refined markdown lines 1338-1370; Revised National Plumbing Code refined markdown lines 3390-3419; Revised National Plumbing Code refined markdown lines 3660-3674; Revised National Plumbing Code refined markdown lines 4213-4260",
+      "source_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+      "derivative_layer_role": "locator aid only"
+    },
+    {
+      "source_id": "ra-1378-master-plumbing-law-local",
+      "title": "RA 1378 Master Plumbing Law",
+      "source_type": "local_raw_pdf_with_locator_checked_refined_markdown",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-1378/MASTER PLUMBING LAW.pdf",
+      "raw_pdf_sha256": "sha256:84bd43fb9ae236195bc2bded5ccb6ede4339a3195e7d19fa89cbf036ff8ea5a5",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-1378/MASTER PLUMBING LAW.md",
+      "refined_markdown_sha256": "sha256:1ecd95c9aaa63e36bfa074b928d8589c42906c93ccb5621dcd0052629b0d530d",
+      "checked_markdown_lines": [
+        "RA 1378 Master Plumbing Law refined markdown lines 7-10",
+        "RA 1378 Master Plumbing Law refined markdown lines 16-40",
+        "RA 1378 Master Plumbing Law refined markdown lines 55-83"
+      ],
+      "source_locator": "RA 1378 Master Plumbing Law refined markdown lines 7-10; RA 1378 Master Plumbing Law refined markdown lines 16-40; RA 1378 Master Plumbing Law refined markdown lines 55-83",
+      "source_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+      "derivative_layer_role": "locator aid only"
+    },
+    {
+      "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+      "title": "PD 1096 2004 Revised IRR - DPWH Official",
+      "source_type": "local_raw_pdf_with_locator_checked_refined_markdown",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "checked_markdown_lines": [
+        "PD 1096 RIRR 2004 DPWH Official refined markdown lines 968-990",
+        "PD 1096 RIRR 2004 DPWH Official refined markdown lines 3789-3897"
+      ],
+      "source_locator": "PD 1096 RIRR 2004 DPWH Official refined markdown lines 968-990; PD 1096 RIRR 2004 DPWH Official refined markdown lines 3789-3897",
+      "source_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+      "derivative_layer_role": "locator aid only"
+    }
+  ]
 }

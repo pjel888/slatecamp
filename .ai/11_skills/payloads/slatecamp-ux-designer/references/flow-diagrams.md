@@ -25,7 +25,7 @@
   - Can pause and resume (saves state)
     ↓ 45/45 complete
 [Score Reveal Screen] ← HIGHEST STAKES MOMENT
-    ↓ 
+    ↓
 [Free user → see score, then paywall after 3 sec delay]
 [Pro user → see score + Trail setup prompt]
     ↓ (free user clicks "Not yet")
@@ -126,10 +126,10 @@
 [Blindspot Protocol Screen]
   Title: "Blindspot Protocol"
   Subtitle: "Building Laws — Targeted Remediation"
-  
+
   Shows: node cluster (Building Laws topics in red)
   Estimated: 4 sessions over 5 days
-  
+
   CTA: "Start Remediation" (accept)
   CTA: "Remind me later" (defer)
     ↓ Accept
@@ -155,11 +155,11 @@
   Title: "The Proof Run"
   "This is the real exam — rehearsed.
    Same number of questions. Same time limit. No explanations."
-   
+
   Duration: 4 hours
   Questions: 150 (or exam standard)
   Mode: Storm Mode (timed, no feedback)
-  
+
   CTA: "I'm ready. Start."
   CTA: "Not today"
     ↓
@@ -171,13 +171,13 @@
 [Proof Run Results Screen]
   Score: 78
   "Under exam conditions. Same room. Same pressure."
-  
+
   Breakdown by discipline (bar chart)
   Weakest: Site Planning (54%)
   Strongest: Building Laws (88%)
-  
+
   Time analysis: "You averaged 92 sec/question. Exam allows 96 sec."
-  
+
   CTA: "See Full Breakdown"
   CTA: "Back to Camp Trail"
 ```

@@ -1,0 +1,50 @@
+{
+  "question_id": "5fade63d-e0ec-4d5e-b919-470699b22cf8",
+  "baseline_hash": "sha256:ceca6f88fe54c255e2f7911f52ed53a10c094a15bcccb6720414d480706291cc",
+  "action": "replace",
+  "reason": "source-audited-article-batch-036-local-first: source-safe replacement grounded in local raw PDF/source family evidence; removes unsupported, stale, or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-036",
+  "approved_at": "2026-05-11T12:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-036-local-first",
+    "checked_sources": [
+      {
+        "source_id": "bp-344-2024-revised-irr-ncda-local",
+        "label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "checked_markdown_lines": [
+          "BP 344 2024 Revised IRR refined markdown lines 1090-1135",
+          "BP 344 2024 Revised IRR refined markdown lines 1296-1306",
+          "BP 344 2024 Revised IRR refined markdown lines 1493-1514"
+        ]
+      }
+    ],
+    "citation": "BP 344 2024 Revised IRR, Public Telephones"
+  },
+  "proposed": {
+    "text": "Which public telephone controls or features must be within the maximum 1200 mm finished-floor height?",
+    "options": [
+      {
+        "id": "b036-4985-02-a",
+        "text": "Dialing controls, coin slots, receivers, and instructional signs"
+      },
+      {
+        "id": "b036-4985-02-b",
+        "text": "Only the receiver and handset cord"
+      },
+      {
+        "id": "b036-4985-02-c",
+        "text": "Only emergency call buttons"
+      },
+      {
+        "id": "b036-4985-02-d",
+        "text": "Only visual signage above the phone"
+      }
+    ],
+    "correct_option_id": "b036-4985-02-a",
+    "rationale": "Correct answer: Dialing controls, coin slots, receivers, and instructional signs. This is directly supported by BP 344 2024 Revised IRR, Public Telephones.",
+    "explanation": "The source-audited correction uses only the local raw PDF family and locator-checked refined markdown for BP 344 2024 Revised IRR, Public Telephones.",
+    "code_citation": "BP 344 2024 Revised IRR, Public Telephones"
+  }
+}

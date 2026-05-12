@@ -1,0 +1,48 @@
+{
+  "question_id": "3d0d33bf-b1db-4adf-a7a5-d7a23ae6c014",
+  "baseline_hash": "sha256:6cf2485a7a38e1cca7243d14cd3d0beba4104838c8ca38b43bceacee97094910",
+  "action": "replace",
+  "reason": "source-audited-article-batch-038-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-038",
+  "approved_at": "2026-05-11T13:26:35+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-038-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 3447-3470"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 1204"
+  },
+  "proposed": {
+    "text": "Where must rubbish and linen chute openings not be located in non-Group A occupancies?",
+    "options": [
+      {
+        "id": "b038-66b5-03-a",
+        "text": "Required exit corridors or stairways"
+      },
+      {
+        "id": "b038-66b5-03-b",
+        "text": "Mechanical rooms only"
+      },
+      {
+        "id": "b038-66b5-03-c",
+        "text": "Roof decks only"
+      },
+      {
+        "id": "b038-66b5-03-d",
+        "text": "Parking spaces only"
+      }
+    ],
+    "correct_option_id": "b038-66b5-03-a",
+    "rationale": "Correct answer: Required exit corridors or stairways. This is directly supported by PD 1096 2004 Revised IRR, Section 1204.",
+    "explanation": "The Batch 038 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 1204.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 1204"
+  }
+}

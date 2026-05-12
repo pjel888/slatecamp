@@ -1,0 +1,74 @@
+{
+  "question_id": "7f7e349e-103d-444d-a9c5-d3b9ab52591f",
+  "baseline_hash": "sha256:575163353af702d75796644abd9d79b642f90b9f09f7a9aad26b4e518c2d9c8a",
+  "action": "replace",
+  "reason": "source-audited-article-batch-050-local-first: local raw-source-backed replacement constrained to checked Batch 050 source families.",
+  "approved_by": "codex-local-first-batch-050",
+  "approved_at": "2026-05-11T21:20:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "146e1210-2b6a-42fb-85c2-3e1b1fd082c2",
+    "parent_article_slug": "masters-of-the-golden-age",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Filipino Architecture refined markdown lines 40-118, 160-178, 680-700, 830-887, 905-917, and 1037-1039; Module - Architectural History refined markdown lines 4863-4915, 4913-4945, 5038-5045, and 5377-5395",
+    "checked_markdown_lines": [
+      "Filipino Architecture refined markdown lines 40-118",
+      "Filipino Architecture refined markdown lines 160-178",
+      "Filipino Architecture refined markdown lines 680-700",
+      "Filipino Architecture refined markdown lines 830-887",
+      "Filipino Architecture refined markdown lines 905-917",
+      "Filipino Architecture refined markdown lines 1037-1039",
+      "Module - Architectural History refined markdown lines 4863-4915",
+      "Module - Architectural History refined markdown lines 4913-4945",
+      "Module - Architectural History refined markdown lines 5038-5045",
+      "Module - Architectural History refined markdown lines 5377-5395"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "fil-local-raw-pdf--b050-146e1210-01",
+        "label": "Filipino Architecture - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Filipino Architecture.pdf",
+        "sha256": "sha256:3d6f220218c46fe78e37d152d1c51504fd3c7d413cf14e71b39e93c7e1a5831d",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Filipino Architecture.md",
+        "refined_markdown_sha256": "sha256:f60dacc37e4b6634875ed68c18a55288e455476697fc250905460bbe6ac25ce1",
+        "locator": "Filipino Architecture refined markdown lines 40-118, 160-178, 680-700, 830-887, 905-917, and 1037-1039"
+      },
+      {
+        "source_id": "mod-local-raw-pdf--b050-146e1210-02",
+        "label": "Module - Architectural History - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Module - Architectural History.pdf",
+        "sha256": "sha256:d88ccdfaad42e15b3a9f844539aba0b0d614b165d4ef33f082537d72ba13531d",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Module - Architectural History.md",
+        "refined_markdown_sha256": "sha256:d3fc240b16da21c71b8467f6c3bf8599cd422b4c8055e2e9647f0aa2b2e042a1",
+        "locator": "Module - Architectural History refined markdown lines 4863-4915, 4913-4945, 5038-5045, and 5377-5395"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 050 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "How should golden-age architect questions be answered?",
+    "options": [
+      {
+        "id": "a",
+        "text": "By matching names to the checked period and work anchors rather than treating them as isolated trivia."
+      },
+      {
+        "id": "b",
+        "text": "By ignoring works and choosing the longest architect name."
+      },
+      {
+        "id": "c",
+        "text": "By assuming every named building belongs to Juan Nakpil."
+      },
+      {
+        "id": "d",
+        "text": "By using utility-code provisions for architect recognition."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "By matching names to the checked period and work anchors rather than treating them as isolated trivia. The article organizes the source-backed recognition anchors by architect and work.",
+    "explanation": "By matching names to the checked period and work anchors rather than treating them as isolated trivia. The article organizes the source-backed recognition anchors by architect and work.",
+    "code_citation": "Filipino Architecture refined markdown lines 40-118, 160-178, 680-700, 830-887, 905-917, and 1037-1039; Module - Architectural History refined markdown lines 4863-4915, 4913-4945, 5038-5045, and 5377-5395"
+  },
+  "batch_question_template_index": 3
+}

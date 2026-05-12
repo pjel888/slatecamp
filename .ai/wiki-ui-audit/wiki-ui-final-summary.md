@@ -1,8 +1,8 @@
 # Wiki UI Audit & Improvement — Final Summary
 
-**Date:** 2026-05-04  
-**Agent:** Hermes (DeepSeek v4 Flash via OpenCode Go)  
-**Duration:** ~20 minutes  
+**Date:** 2026-05-04
+**Agent:** Hermes (DeepSeek v4 Flash via OpenCode Go)
+**Duration:** ~20 minutes
 **State:** ✅ COMPLETE_VERIFIED
 
 ---

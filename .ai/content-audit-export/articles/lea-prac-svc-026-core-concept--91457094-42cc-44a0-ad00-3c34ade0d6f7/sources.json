@@ -1,20 +1,57 @@
 {
   "article_id": "91457094-42cc-44a0-ad00-3c34ade0d6f7",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:dcbb9815dc3cbeaf75a2f3fccd2a0c09fe523f0ae54f89f1ddab46955d849799",
-  "source_count": 1,
+  "sources_hash": "sha256:24fdbbb01e7fe710accd982bcae4434282a9a54b857ec6a3bf24ecf7f0c932d3",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "5f4f8aee-4522-43da-89aa-fb10a120e001",
+      "source_id": "uap-standards-local-lea-prac-svc-026-core-concept",
       "article_id": "91457094-42cc-44a0-ad00-3c34ade0d6f7",
-      "label": "SPP Doc 203, Section 203.4 — Site Development Planning (SDP) Services SPP Doc 203 — Professional Architectural Services (sub-services 203.1–203.23) Architect's Guidelines",
+      "label": "UAP Document Standards of Professional Practice - Site Development Planning (SDP)",
       "url": null,
-      "source_type": "reference_standard",
-      "description": "Project Classification (Group 8 includes development planning/design projects) SPP Doc 209 — Professional Architectural Consulting Services (PACS) [cited for contrast to clarify SDP scope]",
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:01.68074+00:00",
-      "updated_at": "2026-03-24T04:34:01.68074+00:00"
+      "source_type": "professional_practice_pdf",
+      "description": "Local UAP standards source checked for Site Development Planning scope, specialist consultant boundaries, bidding assistance, and compensation notes.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-11T18:30:00.000+08:00",
+      "updated_at": "2026-05-11T18:30:00.000+08:00",
+      "local_source_audit": {
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "source_locator": "UAP Standards lines 691-716; UAP Standards lines 1138-1152",
+        "checked_markdown_lines": [
+          "UAP Standards lines 691-716",
+          "UAP Standards lines 1138-1152"
+        ],
+        "local_source_checked": true
+      }
+    },
+    {
+      "source_id": "spp203-specialized-allied-services-local",
+      "article_id": "91457094-42cc-44a0-ad00-3c34ade0d6f7",
+      "label": "SPP 203 - Specialized Allied Services",
+      "url": null,
+      "source_type": "professional_practice_pdf",
+      "description": "Local SPP 203 raw PDF and refined markdown checked as the article-specific source listing Site Development Planning under specialized allied services.",
+      "is_verified": true,
+      "sort_order": 2,
+      "created_at": "2026-05-11T18:30:00.000+08:00",
+      "updated_at": "2026-05-11T18:30:00.000+08:00",
+      "local_source_audit": {
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+        "raw_pdf_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+        "refined_markdown_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+        "source_locator": "SPP 203 lines 101-111",
+        "checked_markdown_lines": [
+          "SPP 203 lines 101-111"
+        ],
+        "local_source_checked": true
+      }
     }
   ]
 }

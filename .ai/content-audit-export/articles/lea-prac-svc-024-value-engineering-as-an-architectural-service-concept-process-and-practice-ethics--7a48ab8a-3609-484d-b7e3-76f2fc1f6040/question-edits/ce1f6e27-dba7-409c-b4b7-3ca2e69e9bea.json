@@ -1,0 +1,65 @@
+{
+  "question_id": "ce1f6e27-dba7-409c-b4b7-3ca2e69e9bea",
+  "baseline_hash": "sha256:faf70a08fb266490d386715b8eacd89ede82795fb2606785565ee5675198237e",
+  "action": "replace",
+  "reason": "source-audited-article-batch-036-local-first: source-safe replacement grounded in local raw PDF/source family evidence; removes unsupported, stale, or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-036",
+  "approved_at": "2026-05-11T12:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-036-local-first",
+    "checked_sources": [
+      {
+        "source_id": "construction-project-management-handbook-shadan-fleming-local",
+        "label": "Construction Project Management Handbook by Shadan and Fleming",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/004-Technology/Construction Project Management Handbook by Shadan _ Fleming.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Construction Project Management Handbook by Shadan _ Fleming.md",
+        "checked_markdown_lines": [
+          "Construction Project Management Handbook refined markdown lines 253-257",
+          "Construction Project Management Handbook refined markdown lines 287-301",
+          "Construction Project Management Handbook refined markdown lines 387-429",
+          "Construction Project Management Handbook refined markdown lines 1544-1577",
+          "Construction Project Management Handbook refined markdown lines 1614-1664",
+          "Construction Project Management Handbook refined markdown lines 1680-1722",
+          "Construction Project Management Handbook refined markdown lines 1808-1819"
+        ]
+      },
+      {
+        "source_id": "uap-document-401-402-local",
+        "label": "UAP Document 401-402 - Architect-Owner Agreement",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
+        "checked_markdown_lines": [
+          "UAP Document 401-402 refined markdown lines 45-72",
+          "UAP Document 401-402 refined markdown lines 77-89",
+          "UAP Document 401-402 refined markdown lines 105-119"
+        ]
+      }
+    ],
+    "citation": "Construction Project Management Handbook"
+  },
+  "proposed": {
+    "text": "What ethical response fits a VE proposal that weakens required function or safety?",
+    "options": [
+      {
+        "id": "b036-7a48-07-a",
+        "text": "Reject or revise it and record the reason because required functions and safety remain constraints"
+      },
+      {
+        "id": "b036-7a48-07-b",
+        "text": "Approve it if it lowers first cost"
+      },
+      {
+        "id": "b036-7a48-07-c",
+        "text": "Hide the effect from the owner"
+      },
+      {
+        "id": "b036-7a48-07-d",
+        "text": "Treat it as a styling preference only"
+      }
+    ],
+    "correct_option_id": "b036-7a48-07-a",
+    "rationale": "Correct answer: Reject or revise it and record the reason because required functions and safety remain constraints. This is directly supported by Construction Project Management Handbook.",
+    "explanation": "The source-audited correction uses only the local raw PDF family and locator-checked refined markdown for Construction Project Management Handbook.",
+    "code_citation": "Construction Project Management Handbook"
+  }
+}

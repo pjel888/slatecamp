@@ -1,0 +1,168 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "artifact_type": "article_source_audit",
+  "batch_id": "source-audited-article-batch-036-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T12:45:00+08:00",
+  "target": {
+    "article_id": "c712ee78-2625-434c-bb18-fa7b0f477b33",
+    "slug": "plastics-in-construction",
+    "candidate_sha256": "sha256:779ec88778e1c5c3b6cb0611ba9cf09d4e3cfe267396da20aba995d6b01501e3",
+    "normalized_sha256": "sha256:94e0ee536488c4e3e7e4ab1339e08399c7217cb629c739720cb5db09978681b3"
+  },
+  "classification": {
+    "requires_raw_pdf_audit": true,
+    "source_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "derivative_layer_role": "locator aid only",
+    "legal_or_code_sensitive": true
+  },
+  "paths": {
+    "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/plastics-in-construction--c712ee78-2625-434c-bb18-fa7b0f477b33",
+    "normalized_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/plastics-in-construction--c712ee78-2625-434c-bb18-fa7b0f477b33/normalized.md",
+    "candidate_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/plastics-in-construction--c712ee78-2625-434c-bb18-fa7b0f477b33/candidate.md",
+    "sources_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/plastics-in-construction--c712ee78-2625-434c-bb18-fa7b0f477b33/sources.json",
+    "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/plastics-in-construction--c712ee78-2625-434c-bb18-fa7b0f477b33/question-edits"
+  },
+  "raw_sources": [
+    {
+      "source_id": "pd-1096-national-building-code-local",
+      "label": "PD 1096 National Building Code - Plastics Provisions",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 - National Building Code.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 - National Building Code.pdf",
+      "raw_pdf_sha256": "sha256:0bd869faac8d949359aa9e3c5bea7026e85e348f61ce1e87a09d48991c5ba796",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 - National Building Code.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 - National Building Code.md",
+      "refined_markdown_sha256": "sha256:d7df246271ae1bcb14ed8e4ba881ed75cfa8381cca9f465986d9947397f353d9",
+      "source_locator": "PD 1096 National Building Code refined markdown lines 1909-1998",
+      "checked_markdown_lines": [
+        "PD 1096 National Building Code refined markdown lines 1909-1998"
+      ]
+    },
+    {
+      "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+      "label": "PD 1096 2004 Revised IRR - DPWH Official",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "source_locator": "PD 1096 RIRR 2004 DPWH Official refined markdown lines 4377-4442",
+      "checked_markdown_lines": [
+        "PD 1096 RIRR 2004 DPWH Official refined markdown lines 4377-4442"
+      ]
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "pd-1096-national-building-code-local",
+      "label": "PD 1096 National Building Code - Plastics Provisions",
+      "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 - National Building Code.pdf",
+      "raw_pdf_sha256": "sha256:0bd869faac8d949359aa9e3c5bea7026e85e348f61ce1e87a09d48991c5ba796",
+      "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 - National Building Code.md",
+      "refined_markdown_sha256": "sha256:d7df246271ae1bcb14ed8e4ba881ed75cfa8381cca9f465986d9947397f353d9",
+      "checked_markdown_lines": [
+        "PD 1096 National Building Code refined markdown lines 1909-1998"
+      ]
+    },
+    {
+      "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+      "label": "PD 1096 2004 Revised IRR - DPWH Official",
+      "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "checked_markdown_lines": [
+        "PD 1096 RIRR 2004 DPWH Official refined markdown lines 4377-4442"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "pd1096-approved-plastics",
+      "claim_text": "Approved plastics require flame-spread rating of 225 or less, smoke density not greater than untreated wood, and combustion products no more toxic than untreated wood.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "pd-1096-national-building-code-local",
+          "pd-1096-rirr-2004-dpwh-official-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 - National Building Code.pdf",
+        "quoted_pdf_excerpt": "Approved plastics require flame-spread rating of 225 or less, smoke density not greater than untreated wood, and combustion products no more toxic than untreated wood.",
+        "locator": "PD 1096 refined markdown lines 1909-1911 and DPWH RIRR lines 4377-4379"
+      }
+    },
+    {
+      "claim_id": "pd1096-skylights",
+      "claim_text": "Approved plastic skylights have limits on construction types, property-line distance, separation, area, aggregate area, and curb requirements.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "pd-1096-national-building-code-local",
+          "pd-1096-rirr-2004-dpwh-official-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 - National Building Code.pdf",
+        "quoted_pdf_excerpt": "Approved plastic skylights have limits on construction types, property-line distance, separation, area, aggregate area, and curb requirements.",
+        "locator": "PD 1096 refined markdown lines 1939-1974 and DPWH RIRR lines 4395-4412"
+      }
+    },
+    {
+      "claim_id": "pd1096-veneer",
+      "claim_text": "Plastic exterior veneer is limited by storey/height, section area, and vertical/horizontal separation.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "pd-1096-national-building-code-local",
+          "pd-1096-rirr-2004-dpwh-official-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 - National Building Code.pdf",
+        "quoted_pdf_excerpt": "Plastic exterior veneer is limited by storey/height, section area, and vertical/horizontal separation.",
+        "locator": "PD 1096 RIRR refined markdown lines 4431-4437"
+      }
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "removed_or_rewritten_material": [
+    "Removed or rewrote unsupported imported comparisons, generated placeholders, broad practice claims, and stale source labels not grounded in the local raw PDFs for this batch."
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_pdf_families_checked": [
+      "PD 1096 National Building Code - Plastics Provisions",
+      "PD 1096 2004 Revised IRR - DPWH Official"
+    ]
+  },
+  "gate_results": {
+    "placeholders_removed_or_resolved": true,
+    "internal_notes_removed": true,
+    "unsupported_claims_removed": true,
+    "sources_json_updated": true,
+    "question_edits_created": true
+  },
+  "source_safe_repair": {
+    "performed": true,
+    "repair_notes": "Local-first article and question repairs were limited to claims supported by the listed raw PDFs and locator-checked refined markdown."
+  },
+  "local_validation": {
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_edits": "PASS",
+    "scoped_checks": "PASS",
+    "targeted_tests": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "sme_review": {
+    "required": false,
+    "status": "PASS",
+    "rationale": "Batch is local-first source-audited repair; final publishing review remains separate."
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "blockers": []
+  }
+}

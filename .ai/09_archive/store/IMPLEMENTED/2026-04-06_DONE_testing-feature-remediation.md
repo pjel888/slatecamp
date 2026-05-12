@@ -1,8 +1,8 @@
 # Testing Feature Remediation Plan
 
-**Date:** 2026-04-06  
-**Status:** Completed / Verified  
-**Supersedes:** `.ai/plans/testing-feature-audit.md`  
+**Date:** 2026-04-06
+**Status:** Completed / Verified
+**Supersedes:** `.ai/plans/testing-feature-audit.md`
 **Primary Objective:** Convert the current testing-feature audit into an executable fix list that closes the real correctness, security, data-contract, and verification gaps in the quiz engine.
 
 ## Final Outcome
@@ -40,19 +40,19 @@ This plan assumes the code is the source of truth and that the old audit is now 
 
 These decisions should be treated as the default implementation path unless a stronger alternative is explicitly chosen during execution:
 
-1. **Server owns session finalization.**  
+1. **Server owns session finalization.**
    The final answer should cause exactly one server-side completion flow, and that completion flow must run after post-interaction hooks finish.
 
-2. **The server derives question slices from the session.**  
+2. **The server derives question slices from the session.**
    The client should never send arbitrary `questionIds` to retrieve question payloads.
 
-3. **Immediate diagnostics and persisted diagnostics are separate concerns.**  
+3. **Immediate diagnostics and persisted diagnostics are separate concerns.**
    The UI can receive a lightweight immediate diagnostic in the submit response, while durable classification can still be written in the background.
 
-4. **One client-question mapper should shape all quiz question payloads.**  
+4. **One client-question mapper should shape all quiz question payloads.**
    `startSession`, resume loading, and background hydration must all return the same question contract.
 
-5. **No "done" claim until verification is honest.**  
+5. **No "done" claim until verification is honest.**
    The testing feature cannot be marked complete while the audit says build/type-check/test are green when they are not.
 
 ## 3. Definition of Done

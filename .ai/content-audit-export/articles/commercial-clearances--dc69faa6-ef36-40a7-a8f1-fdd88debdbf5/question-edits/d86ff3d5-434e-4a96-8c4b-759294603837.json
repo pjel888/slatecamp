@@ -1,0 +1,50 @@
+{
+  "question_id": "d86ff3d5-434e-4a96-8c4b-759294603837",
+  "baseline_hash": "sha256:0e65311ba70dbc10f282e59e60fb4abf345efab0a658d74875e97b0f8f90295f",
+  "action": "replace",
+  "reason": "source-audited-article-batch-038-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-038",
+  "approved_at": "2026-05-11T13:26:35+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-038-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 2087-2138",
+          "PD 1096 RIRR refined markdown lines 2246-2310",
+          "PD 1096 RIRR refined markdown lines 2352-2356"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Table VIII.1"
+  },
+  "proposed": {
+    "text": "Which commercial class row in Table VIII.1 shows 80 or 90 percent maximum PSO depending on the table condition?",
+    "options": [
+      {
+        "id": "b038-dc69-19-a",
+        "text": "Commercial 3 (C-3)"
+      },
+      {
+        "id": "b038-dc69-19-b",
+        "text": "Commercial 1 (C-1)"
+      },
+      {
+        "id": "b038-dc69-19-c",
+        "text": "Residential 1 (R-1)"
+      },
+      {
+        "id": "b038-dc69-19-d",
+        "text": "Basic Residential 2 (R-2)"
+      }
+    ],
+    "correct_option_id": "b038-dc69-19-a",
+    "rationale": "Correct answer: Commercial 3 (C-3). This is directly supported by PD 1096 2004 Revised IRR, Table VIII.1.",
+    "explanation": "The Batch 038 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Table VIII.1.",
+    "code_citation": "PD 1096 2004 Revised IRR, Table VIII.1"
+  }
+}

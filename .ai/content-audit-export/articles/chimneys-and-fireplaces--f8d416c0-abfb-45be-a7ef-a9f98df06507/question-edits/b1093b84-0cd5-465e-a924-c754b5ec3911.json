@@ -1,0 +1,49 @@
+{
+  "question_id": "b1093b84-0cd5-465e-a924-c754b5ec3911",
+  "baseline_hash": "sha256:19e8a277e1a77c4ae86b155af78ea7149d61c5ac00e396f662e69a32b8275278",
+  "action": "replace",
+  "reason": "source-audited-article-batch-037-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-037",
+  "approved_at": "2026-05-11T13:16:58+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-037-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR 2004 DPWH Official refined markdown lines 968-990",
+          "PD 1096 RIRR 2004 DPWH Official refined markdown lines 3789-3897"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 1211"
+  },
+  "proposed": {
+    "text": "For a chimney serving a medium-heat appliance, what lining rule does Section 1211 state?",
+    "options": [
+      {
+        "id": "b037-f8d4-08-a",
+        "text": "A 100 mm firebrick lining beginning 600 mm below the chimney connector entrance"
+      },
+      {
+        "id": "b037-f8d4-08-b",
+        "text": "A 25 mm metal lining above the roof only"
+      },
+      {
+        "id": "b037-f8d4-08-c",
+        "text": "No lining if the chimney is under 7.50 m high"
+      },
+      {
+        "id": "b037-f8d4-08-d",
+        "text": "A wood liner protected by sheet metal"
+      }
+    ],
+    "correct_option_id": "b037-f8d4-08-a",
+    "rationale": "Correct answer: A 100 mm firebrick lining beginning 600 mm below the chimney connector entrance. This is directly supported by PD 1096 2004 Revised IRR, Section 1211.",
+    "explanation": "The Batch 037 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 1211.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 1211"
+  }
+}

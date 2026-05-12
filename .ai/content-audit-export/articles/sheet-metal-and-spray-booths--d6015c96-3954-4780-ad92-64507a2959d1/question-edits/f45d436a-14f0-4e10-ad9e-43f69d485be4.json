@@ -1,0 +1,48 @@
+{
+  "question_id": "f45d436a-14f0-4e10-ad9e-43f69d485be4",
+  "baseline_hash": "sha256:24957509b67a4cef6830ef00c28c9fac39735224c8fad5fad07ae03289bd5ec4",
+  "action": "replace",
+  "reason": "source-audited-article-batch-038-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-038",
+  "approved_at": "2026-05-11T13:26:35+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-038-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 4448-4472"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 1701"
+  },
+  "proposed": {
+    "text": "What minimum steel gauge does Rule XVII require for paint spray booth construction?",
+    "options": [
+      {
+        "id": "b038-d601-31-a",
+        "text": "No. 18 U.S. gauge"
+      },
+      {
+        "id": "b038-d601-31-b",
+        "text": "No. 26 U.S. gauge"
+      },
+      {
+        "id": "b038-d601-31-c",
+        "text": "No. 12 U.S. gauge"
+      },
+      {
+        "id": "b038-d601-31-d",
+        "text": "No specified steel gauge"
+      }
+    ],
+    "correct_option_id": "b038-d601-31-a",
+    "rationale": "Correct answer: No. 18 U.S. gauge. This is directly supported by PD 1096 2004 Revised IRR, Section 1701.",
+    "explanation": "The Batch 038 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 1701.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 1701"
+  }
+}

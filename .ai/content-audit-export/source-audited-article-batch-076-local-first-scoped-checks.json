@@ -1,0 +1,350 @@
+{
+  "batch": "076",
+  "batch_id": "source-audited-article-batch-076-local-first",
+  "generated_at": "2026-05-12T03:28:00.000+08:00",
+  "local_only": true,
+  "selected_article_ids": [
+    "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
+    "b835f8bb-bb09-44fa-855a-37128197c63b",
+    "69313849-9d45-4777-84fc-4b47430c30b8",
+    "303f8a75-b42b-4405-8c39-082b4d7b6322",
+    "b4052c5b-03bd-4542-bbc6-3f75d8936103"
+  ],
+  "json_parse": {
+    "status": "PASS",
+    "files_checked": 105,
+    "failures": []
+  },
+  "marker_scan": {
+    "status": "PASS",
+    "files_checked": 90,
+    "hits": [],
+    "scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, ui block sidecars, article metadata, parser-errors, and question-edits only; original.md and generated compose/diff reports excluded as immutable/generated baselines."
+  },
+  "source_hash_checks": {
+    "status": "PASS",
+    "checks": 30,
+    "results": [
+      {
+        "article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
+        "source_id": "design-process-b076",
+        "kind": "raw_pdf",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
+        "expected": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+        "actual": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+        "pass": true
+      },
+      {
+        "article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
+        "source_id": "design-process-b076",
+        "kind": "refined_markdown",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
+        "expected": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
+        "actual": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
+        "pass": true
+      },
+      {
+        "article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
+        "source_id": "ra9266-irr-b076",
+        "kind": "raw_pdf",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+        "expected": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "actual": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "pass": true
+      },
+      {
+        "article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
+        "source_id": "ra9266-irr-b076",
+        "kind": "refined_markdown",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+        "expected": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "actual": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "pass": true
+      },
+      {
+        "article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
+        "source_id": "pd1096-rirr-b076",
+        "kind": "raw_pdf",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "expected": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "actual": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "pass": true
+      },
+      {
+        "article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
+        "source_id": "pd1096-rirr-b076",
+        "kind": "refined_markdown",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "expected": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "actual": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "pass": true
+      },
+      {
+        "article_id": "b835f8bb-bb09-44fa-855a-37128197c63b",
+        "source_id": "ra9266-irr-b076",
+        "kind": "raw_pdf",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+        "expected": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "actual": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "pass": true
+      },
+      {
+        "article_id": "b835f8bb-bb09-44fa-855a-37128197c63b",
+        "source_id": "ra9266-irr-b076",
+        "kind": "refined_markdown",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+        "expected": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "actual": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "pass": true
+      },
+      {
+        "article_id": "b835f8bb-bb09-44fa-855a-37128197c63b",
+        "source_id": "pd1096-rirr-b076",
+        "kind": "raw_pdf",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "expected": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "actual": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "pass": true
+      },
+      {
+        "article_id": "b835f8bb-bb09-44fa-855a-37128197c63b",
+        "source_id": "pd1096-rirr-b076",
+        "kind": "refined_markdown",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "expected": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "actual": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "pass": true
+      },
+      {
+        "article_id": "b835f8bb-bb09-44fa-855a-37128197c63b",
+        "source_id": "uap-spp203-b076",
+        "kind": "raw_pdf",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+        "expected": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+        "actual": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+        "pass": true
+      },
+      {
+        "article_id": "b835f8bb-bb09-44fa-855a-37128197c63b",
+        "source_id": "uap-spp203-b076",
+        "kind": "refined_markdown",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+        "expected": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+        "actual": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+        "pass": true
+      },
+      {
+        "article_id": "69313849-9d45-4777-84fc-4b47430c30b8",
+        "source_id": "pd1096-rirr-b076",
+        "kind": "raw_pdf",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "expected": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "actual": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "pass": true
+      },
+      {
+        "article_id": "69313849-9d45-4777-84fc-4b47430c30b8",
+        "source_id": "pd1096-rirr-b076",
+        "kind": "refined_markdown",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "expected": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "actual": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "pass": true
+      },
+      {
+        "article_id": "69313849-9d45-4777-84fc-4b47430c30b8",
+        "source_id": "ra9266-irr-b076",
+        "kind": "raw_pdf",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+        "expected": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "actual": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "pass": true
+      },
+      {
+        "article_id": "69313849-9d45-4777-84fc-4b47430c30b8",
+        "source_id": "ra9266-irr-b076",
+        "kind": "refined_markdown",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+        "expected": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "actual": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "pass": true
+      },
+      {
+        "article_id": "69313849-9d45-4777-84fc-4b47430c30b8",
+        "source_id": "uap-spp203-b076",
+        "kind": "raw_pdf",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+        "expected": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+        "actual": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+        "pass": true
+      },
+      {
+        "article_id": "69313849-9d45-4777-84fc-4b47430c30b8",
+        "source_id": "uap-spp203-b076",
+        "kind": "refined_markdown",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+        "expected": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+        "actual": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+        "pass": true
+      },
+      {
+        "article_id": "69313849-9d45-4777-84fc-4b47430c30b8",
+        "source_id": "design-process-b076",
+        "kind": "raw_pdf",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
+        "expected": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+        "actual": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+        "pass": true
+      },
+      {
+        "article_id": "69313849-9d45-4777-84fc-4b47430c30b8",
+        "source_id": "design-process-b076",
+        "kind": "refined_markdown",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
+        "expected": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
+        "actual": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
+        "pass": true
+      },
+      {
+        "article_id": "303f8a75-b42b-4405-8c39-082b4d7b6322",
+        "source_id": "ra9266-irr-b076",
+        "kind": "raw_pdf",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+        "expected": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "actual": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "pass": true
+      },
+      {
+        "article_id": "303f8a75-b42b-4405-8c39-082b4d7b6322",
+        "source_id": "ra9266-irr-b076",
+        "kind": "refined_markdown",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+        "expected": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "actual": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "pass": true
+      },
+      {
+        "article_id": "303f8a75-b42b-4405-8c39-082b4d7b6322",
+        "source_id": "uap-spp203-b076",
+        "kind": "raw_pdf",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+        "expected": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+        "actual": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+        "pass": true
+      },
+      {
+        "article_id": "303f8a75-b42b-4405-8c39-082b4d7b6322",
+        "source_id": "uap-spp203-b076",
+        "kind": "refined_markdown",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+        "expected": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+        "actual": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+        "pass": true
+      },
+      {
+        "article_id": "303f8a75-b42b-4405-8c39-082b4d7b6322",
+        "source_id": "pd1096-rirr-b076",
+        "kind": "raw_pdf",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "expected": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "actual": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "pass": true
+      },
+      {
+        "article_id": "303f8a75-b42b-4405-8c39-082b4d7b6322",
+        "source_id": "pd1096-rirr-b076",
+        "kind": "refined_markdown",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "expected": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "actual": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "pass": true
+      },
+      {
+        "article_id": "b4052c5b-03bd-4542-bbc6-3f75d8936103",
+        "source_id": "ra9266-irr-b076",
+        "kind": "raw_pdf",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+        "expected": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "actual": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "pass": true
+      },
+      {
+        "article_id": "b4052c5b-03bd-4542-bbc6-3f75d8936103",
+        "source_id": "ra9266-irr-b076",
+        "kind": "refined_markdown",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+        "expected": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "actual": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "pass": true
+      },
+      {
+        "article_id": "b4052c5b-03bd-4542-bbc6-3f75d8936103",
+        "source_id": "pd1096-rirr-b076",
+        "kind": "raw_pdf",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "expected": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "actual": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "pass": true
+      },
+      {
+        "article_id": "b4052c5b-03bd-4542-bbc6-3f75d8936103",
+        "source_id": "pd1096-rirr-b076",
+        "kind": "refined_markdown",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "expected": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "actual": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "pass": true
+      }
+    ]
+  },
+  "question_edit_count": {
+    "status": "PASS",
+    "expected": 50,
+    "actual": 50
+  },
+  "stale_compose_error_check": {
+    "status": "PASS",
+    "files": []
+  },
+  "compose": {
+    "status": "PASS",
+    "articles": 5,
+    "blockers": 0
+  },
+  "diff": {
+    "status": "PASS",
+    "articles": 5,
+    "blockers": 0
+  },
+  "validate": {
+    "status": "PASS",
+    "articles": 5,
+    "blockers": 0,
+    "warnings": "component-usage.json warnings only"
+  },
+  "ui_block_edits": {
+    "status": "PASS",
+    "articles": 5,
+    "blockers": 0,
+    "warnings": 0
+  },
+  "source_audit_apply_gate": {
+    "status": "PASS",
+    "articles": 5,
+    "blockers": 0,
+    "warnings": 0
+  },
+  "targeted_content_audit_tests": {
+    "status": "PASS",
+    "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+    "tests": 34,
+    "failures": 0,
+    "expect_calls": 328
+  },
+  "scoped_git_diff_check": {
+    "status": "PASS",
+    "command": "git diff --check -- .ai/03_plans/source-audited-local-first-batches-handoff.md .ai/content-audit-export/sync-state.json .ai/content-audit-export/source-audited-article-batch-076-local-first-report.md .ai/content-audit-export/source-audited-article-batch-076-local-first-ledger.json .ai/content-audit-export/source-audited-article-batch-076-local-first-scoped-checks.json <five Batch 076 article folders>",
+    "blockers": []
+  },
+  "unresolved_blockers": []
+}

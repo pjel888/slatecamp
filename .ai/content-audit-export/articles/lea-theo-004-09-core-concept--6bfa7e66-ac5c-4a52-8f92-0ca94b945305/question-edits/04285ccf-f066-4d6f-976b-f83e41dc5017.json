@@ -1,0 +1,59 @@
+{
+  "question_id": "04285ccf-f066-4d6f-976b-f83e41dc5017",
+  "baseline_hash": "sha256:78379781367f3d0d50ad0007a8d7379197c18c3766a2cc88737db887e28cfef6",
+  "action": "replace",
+  "reason": "source-audited-article-batch-059-local-first: local raw PDF backed replacement constrained to checked Batch 059 TOA 4 Tropical Architecture source family.",
+  "approved_by": "codex-local-first-batch-059",
+  "approved_at": "2026-05-11T20:48:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "6bfa7e66-ac5c-4a52-8f92-0ca94b945305",
+    "parent_article_slug": "lea-theo-004-09-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "TOA 4 Tropical Architecture refined markdown lines 809-874, 1155-1172, 1386-1420, 1648-1665, 1685-1703, and raw PDF pages 82, 84, 104, 106-110, 163, and 187",
+    "checked_markdown_lines": [
+      "TOA 4 Tropical Architecture refined markdown lines 809-874",
+      "TOA 4 Tropical Architecture refined markdown lines 1155-1172",
+      "TOA 4 Tropical Architecture refined markdown lines 1386-1420",
+      "TOA 4 Tropical Architecture refined markdown lines 1648-1665, 1685-1703"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "toa4-tropical-architecture-local-raw-pdf--b059-6bfa7e66-01",
+        "label": "TOA 4 Tropical Architecture - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+        "sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+        "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+        "locator": "TOA 4 Tropical Architecture refined markdown lines 809-874, 1155-1172, 1386-1420, 1648-1665, 1685-1703, and raw PDF pages 82, 84, 104, 106-110, 163, and 187"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 059 checked local raw PDF source scope."
+  },
+  "proposed": {
+    "text": "Why can air movement help in hot-humid design?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Moving air over the body can create a cooling sensation through evaporation from the skin."
+      },
+      {
+        "id": "b",
+        "text": "It always lowers outdoor air temperature before entry."
+      },
+      {
+        "id": "c",
+        "text": "It increases solar heat gain."
+      },
+      {
+        "id": "d",
+        "text": "It replaces the need for all shading."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Moving air over the body can create a cooling sensation through evaporation from the skin. This answer is supported by the checked Batch 059 local TOA 4 Tropical Architecture raw PDF source family for Natural Ventilation.",
+    "explanation": "Moving air over the body can create a cooling sensation through evaporation from the skin. The Batch 059 source audit used the local raw PDF first and refined markdown only as locator evidence for Natural Ventilation.",
+    "code_citation": "TOA 4 Tropical Architecture refined markdown lines 809-874, 1155-1172, 1386-1420, 1648-1665, 1685-1703, and raw PDF pages 82, 84, 104, 106-110, 163, and 187"
+  },
+  "batch_question_template_index": 2
+}

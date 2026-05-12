@@ -1,0 +1,69 @@
+{
+  "question_id": "1f5dac3c-7d9b-41a9-abbb-8d412a90820c",
+  "baseline_hash": "sha256:bc8b153411ac8a0dd73c97332e2fba2bcbfc1d2485bfcfdb670d329e8ea6cb5e",
+  "action": "replace",
+  "reason": "source-audited-article-batch-085-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-003-07-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-085",
+  "approved_at": "2026-05-12T07:55:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "22192e7e-6cdf-4613-9b2c-bddf1ee3091f",
+    "parent_article_slug": "lea-matl-003-07-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "European Building Construction Illustrated refined markdown lines 3537-3605; Metals Lecture refined markdown lines 26 and 405.",
+    "checked_markdown_lines": [
+      "European Building Construction Illustrated refined markdown lines 3537-3605; raw PDF page 121 checked by local PyMuPDF extraction.",
+      "Metals Lecture refined markdown lines 26 and 405; raw PDF pages 2 and 28 checked by local PyMuPDF extraction."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "european-building-construction-illustrated-b085",
+        "label": "European Building Construction Illustrated",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/European Building Construction Illustrated.pdf",
+        "sha256": "sha256:440f21385df13b75ce4041026f77d9d34872d6235fd18fa770c11609a283d19c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/European Building Construction Illustrated.md",
+        "refined_markdown_sha256": "sha256:f2ec82d918f32d6c050f9f5ea0274b6c68f409c009ddcd311ab45e3567041e8c",
+        "locator": "European Building Construction Illustrated refined markdown lines 3537-3605; raw PDF page 121 checked by local PyMuPDF extraction."
+      },
+      {
+        "source_id": "metals-lecture-b085",
+        "label": "Metals Lecture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Metals Lecture.pdf",
+        "sha256": "sha256:cd9cd4ee534bda9a974447c4ec73b13b12d5abf1c14df1fca408a2c4530650dd",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Metals Lecture.md",
+        "refined_markdown_sha256": "sha256:4e9e0a042f2eef2c80d33af81512ca2cf32778cae64351af9dc54df58db3694c",
+        "locator": "Metals Lecture refined markdown lines 26 and 405; raw PDF pages 2 and 28 checked by local PyMuPDF extraction."
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 085 local raw-source-audited structural_bolts_and_steel_connections scope."
+  },
+  "proposed": {
+    "text": "Which connection type is described as maintaining its original beam-column angle with very little deformation under loading?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A rigid or full-strength connection"
+      },
+      {
+        "id": "b",
+        "text": "A simple pinned shear connection"
+      },
+      {
+        "id": "c",
+        "text": "A temporary storage connection"
+      },
+      {
+        "id": "d",
+        "text": "A nonstructural finish connection"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "A rigid or full-strength connection. The audited sources support steel connection behavior, on-site bolting, and high-strength friction grip bolt use without relying on unsupported grade tables.",
+    "explanation": "A rigid or full-strength connection. The audited sources support steel connection behavior, on-site bolting, and high-strength friction grip bolt use without relying on unsupported grade tables.",
+    "code_citation": "European Building Construction Illustrated; Metals Lecture",
+    "bloom_level": "understand",
+    "application_context": "source_audited_local_first_batch_085",
+    "practice_context": [],
+    "difficulty": 0.5
+  }
+}

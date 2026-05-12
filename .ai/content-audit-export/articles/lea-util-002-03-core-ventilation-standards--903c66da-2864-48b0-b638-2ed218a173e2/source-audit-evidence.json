@@ -1,0 +1,263 @@
+{
+  "schema_version": "source-audit-evidence-v1-local-first",
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-044-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T16:22:00.000+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "903c66da-2864-48b0-b638-2ed218a173e2",
+    "slug": "lea-util-002-03-core-ventilation-standards",
+    "title": "Ventilation standards in the Philippines",
+    "article_folder": ".ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2",
+    "candidate_path": ".ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/candidate.md",
+    "candidate_sha256": "sha256:1cf561a34cea2eabffd65807d2ed424634c80472a0791528992032d6b55a3053",
+    "normalized_sha256": "sha256:1cf561a34cea2eabffd65807d2ed424634c80472a0791528992032d6b55a3053",
+    "linked_questions_sha256": "sha256:bd792e6d746105c82969f9ab7360d47bce9c5a74f2d3a729570a9f73525db81f",
+    "sources_sha256": "sha256:faab5ed72751407779e330d67d7bcfb059b094f8a5a416b230f9b8f95220056b"
+  },
+  "classification": {
+    "content_domain": "LEA Utilities - ventilation standards",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high_value_utilities_mechanical_ventilation",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 15,
+    "question_edits_created": [
+      "d74562c2-7c59-4b22-9f47-3151d48e343d",
+      "d85c7b82-227c-4982-a327-4589345040de",
+      "7fc68c58-4c59-47a6-b932-5ccb07da8759",
+      "a0b03c52-6ea1-471f-a70a-429cebccca31",
+      "68608e1a-1095-4beb-bec9-623a840930c5",
+      "4deaf49c-4833-4415-bd02-225efacc8523",
+      "40e680d8-8ee7-46dd-80ca-c678d73ea63c",
+      "f4d29277-a92d-48ad-886e-1945ad8aa918",
+      "b576c52e-01be-4aa6-941b-2ae47ee15dd0",
+      "6e26901e-52b7-4ab6-9722-be89f6455a19",
+      "71ee0b56-53f1-46a3-9612-2db00e49e754",
+      "7242f16d-6ca8-4993-a228-2ee5b78154e2",
+      "7336ac57-ca19-4981-a279-af16a8456366",
+      "cf36d6a2-3f9a-4a56-a5d9-90b255759c84",
+      "086186b1-ce6c-422b-9f71-d9d075a22f04"
+    ]
+  },
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/question-edits/d74562c2-7c59-4b22-9f47-3151d48e343d.json",
+      ".ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/question-edits/d85c7b82-227c-4982-a327-4589345040de.json",
+      ".ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/question-edits/7fc68c58-4c59-47a6-b932-5ccb07da8759.json",
+      ".ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/question-edits/a0b03c52-6ea1-471f-a70a-429cebccca31.json",
+      ".ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/question-edits/68608e1a-1095-4beb-bec9-623a840930c5.json",
+      ".ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/question-edits/4deaf49c-4833-4415-bd02-225efacc8523.json",
+      ".ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/question-edits/40e680d8-8ee7-46dd-80ca-c678d73ea63c.json",
+      ".ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/question-edits/f4d29277-a92d-48ad-886e-1945ad8aa918.json",
+      ".ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/question-edits/b576c52e-01be-4aa6-941b-2ae47ee15dd0.json",
+      ".ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/question-edits/6e26901e-52b7-4ab6-9722-be89f6455a19.json",
+      ".ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/question-edits/71ee0b56-53f1-46a3-9612-2db00e49e754.json",
+      ".ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/question-edits/7242f16d-6ca8-4993-a228-2ee5b78154e2.json",
+      ".ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/question-edits/7336ac57-ca19-4981-a279-af16a8456366.json",
+      ".ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/question-edits/cf36d6a2-3f9a-4a56-a5d9-90b255759c84.json",
+      ".ai/content-audit-export/articles/lea-util-002-03-core-ventilation-standards--903c66da-2864-48b0-b638-2ed218a173e2/question-edits/086186b1-ce6c-422b-9f71-d9d075a22f04.json"
+    ]
+  },
+  "raw_sources": [
+    {
+      "source_id": "doe-energy-conserving-design-guidelines-local-raw-pdf--b044",
+      "label": "DOE Energy Conserving Design Guidelines - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+      "raw_pdf_sha256": "sha256:9a1a4019b500ffc2873625db6f04ac50b39aea7cadac9159464f9ed716e8126c",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.md",
+      "refined_markdown_sha256": "sha256:477f0990a67359eee303e8280a00be449d0aa413252161db7b5b1bafec3012b9",
+      "source_locator": "DOE refined markdown lines 49, 1115, 1244-1246, 1409-1439, 1489-1527, 1560-1612, 1680-1695",
+      "checked_markdown_lines": [
+        "DOE refined markdown lines 49 and 1115",
+        "DOE refined markdown lines 1244-1246",
+        "DOE refined markdown lines 1409-1439",
+        "DOE refined markdown lines 1489-1527",
+        "DOE refined markdown lines 1560-1612",
+        "DOE refined markdown lines 1680-1695"
+      ]
+    },
+    {
+      "source_id": "salvan-architectural-utilities-2-local-raw-pdf--b044",
+      "label": "George Salvan Architectural Utilities 2 - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+      "raw_pdf_sha256": "sha256:ff7231f0059a1febaf4a0996a425caca3b7676c23c729f922e385af4e4c20d28",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
+      "refined_markdown_sha256": "sha256:1b9249c90c0b86c57c6df2f20f0ab210ac112a10230bd9bce584461773d75215",
+      "source_locator": "Salvan refined markdown lines 1478-1489, 1515, 1684, 1718, 1741, 1785-1792, 5172, 11099-11105, 12249-12417, 16731-16783",
+      "checked_markdown_lines": [
+        "Salvan refined markdown lines 1478-1489 and 1515",
+        "Salvan refined markdown lines 1684, 1718, 1741, 1785-1792",
+        "Salvan refined markdown lines 5172 and 11099-11105",
+        "Salvan refined markdown lines 12249-12417",
+        "Salvan refined markdown lines 16731-16783"
+      ]
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "doe-energy-conserving-design-guidelines-local-raw-pdf--b044",
+      "label": "DOE Energy Conserving Design Guidelines - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+      "raw_pdf_sha256": "sha256:9a1a4019b500ffc2873625db6f04ac50b39aea7cadac9159464f9ed716e8126c",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.md",
+      "refined_markdown_sha256": "sha256:477f0990a67359eee303e8280a00be449d0aa413252161db7b5b1bafec3012b9",
+      "source_locator": "DOE refined markdown lines 49, 1115, 1244-1246, 1409-1439, 1489-1527, 1560-1612, 1680-1695",
+      "checked_markdown_lines": [
+        "DOE refined markdown lines 49 and 1115",
+        "DOE refined markdown lines 1244-1246",
+        "DOE refined markdown lines 1409-1439",
+        "DOE refined markdown lines 1489-1527",
+        "DOE refined markdown lines 1560-1612",
+        "DOE refined markdown lines 1680-1695"
+      ]
+    },
+    {
+      "source_id": "salvan-architectural-utilities-2-local-raw-pdf--b044",
+      "label": "George Salvan Architectural Utilities 2 - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+      "raw_pdf_sha256": "sha256:ff7231f0059a1febaf4a0996a425caca3b7676c23c729f922e385af4e4c20d28",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
+      "refined_markdown_sha256": "sha256:1b9249c90c0b86c57c6df2f20f0ab210ac112a10230bd9bce584461773d75215",
+      "source_locator": "Salvan refined markdown lines 1478-1489, 1515, 1684, 1718, 1741, 1785-1792, 5172, 11099-11105, 12249-12417, 16731-16783",
+      "checked_markdown_lines": [
+        "Salvan refined markdown lines 1478-1489 and 1515",
+        "Salvan refined markdown lines 1684, 1718, 1741, 1785-1792",
+        "Salvan refined markdown lines 5172 and 11099-11105",
+        "Salvan refined markdown lines 12249-12417",
+        "Salvan refined markdown lines 16731-16783"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "b044-vent-01",
+      "claim_text": "The DOE guidelines treat ventilation as important in the Philippine tropical context.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "DOE Energy Conserving Design Guidelines - local raw PDF",
+        "locator": "DOE refined markdown lines 1409-1415",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+        "raw_pdf_sha256": "sha256:9a1a4019b500ffc2873625db6f04ac50b39aea7cadac9159464f9ed716e8126c",
+        "quoted_pdf_excerpt": "tropical climate; ventilation, air movement, and heat gain"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b044-vent-02",
+      "claim_text": "The DOE guidelines give practical ventilation rates of 2.8 to 5.7 m3/min per person for body-heat conditions.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "DOE Energy Conserving Design Guidelines - local raw PDF",
+        "locator": "DOE refined markdown lines 1425-1427",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+        "raw_pdf_sha256": "sha256:9a1a4019b500ffc2873625db6f04ac50b39aea7cadac9159464f9ed716e8126c",
+        "quoted_pdf_excerpt": "2.8 m3/min to 5.7 m3/min per person"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b044-vent-03",
+      "claim_text": "The DOE cross-ventilation equation depends on design wind speed, opening effectiveness, and opening area.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "DOE Energy Conserving Design Guidelines - local raw PDF",
+        "locator": "DOE refined markdown lines 1433-1439",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+        "raw_pdf_sha256": "sha256:9a1a4019b500ffc2873625db6f04ac50b39aea7cadac9159464f9ed716e8126c",
+        "quoted_pdf_excerpt": "Q = 17 Ce V A"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b044-vent-04",
+      "claim_text": "Mechanical ventilation may substitute where natural ventilation cannot meet the building regulation requirement, using specified fresh-air rates.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "DOE Energy Conserving Design Guidelines - local raw PDF",
+        "locator": "DOE refined markdown lines 1517-1527 and 1680-1695",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+        "raw_pdf_sha256": "sha256:9a1a4019b500ffc2873625db6f04ac50b39aea7cadac9159464f9ed716e8126c",
+        "quoted_pdf_excerpt": "mechanical ventilation as substitute; Table 6.8"
+      },
+      "blockers": []
+    }
+  ],
+  "removed_or_rewritten_material": [
+    "Removed exported UI block marker text from normalized article content where present.",
+    "Rewrote linked question files to stay inside checked local raw-source evidence.",
+    "Replaced derivative-only numeric examples with local source-family statements."
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdf_first": true,
+    "derivative_layers_used_only_as_locators": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "checked_raw_pdf_families": [
+      "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+      "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf"
+    ],
+    "blockers": []
+  },
+  "gate_results": {
+    "source_audit": "PASS",
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_validation": "PASS",
+    "question_edit_count_check": "PASS",
+    "scoped_json_parse": "PASS",
+    "marker_scan": "PASS",
+    "source_hash_check": "PASS",
+    "stale_compose_error_check": "PASS"
+  },
+  "source_safe_repair": {
+    "status": "COMPLETE_LOCAL_VALIDATED",
+    "article_normalized_rewritten": true,
+    "sources_json_updated": true,
+    "source_audit_evidence_updated": true,
+    "question_edits_created": 15,
+    "blockers": []
+  },
+  "local_validation": {
+    "status": "PASS_LOCAL_VALIDATION",
+    "validated_at": "2026-05-11T16:34:00.000+08:00",
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_validation": "PASS",
+    "scoped_checks": "PASS",
+    "blockers": []
+  },
+  "sme_review": {
+    "required_before_supabase_publish": true,
+    "completed": false
+  },
+  "overall": {
+    "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

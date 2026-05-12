@@ -1,0 +1,34 @@
+{
+  "question_id": "c9aa0743-2dd3-4765-9cf9-de31b1015494",
+  "baseline_hash": "sha256:ffb7df5b1ac6e9266817719ea5c19fd5f46721b63d51e2de3fce5687eb87cac6",
+  "reason": "Batch 005 local source audit aligned PRC vs PRBoA: Supervision, Board Powers, and Appeals linked question ALE-PRAC-LAW-006-009 to verified RA 9266 IRR raw-source claims.",
+  "approved_by": "codex-local-source-audit-batch-005",
+  "approved_at": "2026-05-10T21:30:00+08:00",
+  "proposed": {
+    "code_citation": "RA 9266 IRR Sections 4, 7, 8, 9, and 40",
+    "explanation": "Source-audited against RA 9266 IRR Sections 4, 7, 8, 9, and 40 in the checked local RA 9266 IRR PDF. This edit removes unsupported locators or assumptions and keeps the question aligned to the audited article cluster.",
+    "text": "What appeal sequence is stated in the checked RA 9266 IRR for a Board disciplinary decision?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Board decision, appeal to the Commission, then appeal of the Commission decision to the Court of Appeals."
+      },
+      {
+        "id": "b",
+        "text": "Board decision, automatic appeal to the IAPOA, then appeal to the President."
+      },
+      {
+        "id": "c",
+        "text": "Board decision directly to the Supreme Court with no Commission review."
+      },
+      {
+        "id": "d",
+        "text": "Board decision directly to the Building Official."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "correct": "The checked Section 7 text supports the Board to Commission to Court of Appeals sequence. A Supreme Court step is not added from this source."
+    }
+  }
+}

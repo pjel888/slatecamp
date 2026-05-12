@@ -455,11 +455,11 @@ export function deriveQualityRating(params: {
 }): number {
   if (!params.isCorrect) return 1 // Wrong answer = quality 1
   if (params.isSuspectedLuckyGuess) return 2 // Lucky guess = low quality even if correct
-  
-  const timeRatio = params.avgTimeMs > 0 
-    ? params.timeSpentMs / params.avgTimeMs 
+
+  const timeRatio = params.avgTimeMs > 0
+    ? params.timeSpentMs / params.avgTimeMs
     : 1
-  
+
   if (params.confidence === 'sure' && timeRatio < 1.5) return 5 // Confident + fast
   if (params.confidence === 'sure') return 4 // Confident but slow
   if (timeRatio < 1.2) return 4 // Fast but not sure
@@ -486,7 +486,7 @@ This function runs nightly (via Edge Function or cron) OR on-demand from the das
 /**
  * Generate a Blindspot queue for a user.
  * Identifies the 3 weakest taxonomy nodes and creates a 12-item quiz queue.
- * 
+ *
  * Architecture spec: Nightly scan → identify Red/Grey nodes → generate queue
  */
 export async function generateBlindspotQueue(
@@ -658,7 +658,7 @@ const { data: interactions } = await supabase
 
 if (interactions && interactions.length > 0) {
   const blocks = computeAccuracyByBlock(interactions)
-  
+
   // Write to session
   await supabase
     .from('quiz_sessions')
@@ -830,7 +830,7 @@ if (ratedSessions && ratedSessions.length >= 3) {
   // Compute calibration: how often prediction matched outcome
   let totalPredictions = 0
   let correctPredictions = 0
-  
+
   for (const session of ratedSessions) {
     const ratings = session.pre_session_confidence_ratings as Record<string, number>
     // For each rated subject, compare prediction to actual accuracy

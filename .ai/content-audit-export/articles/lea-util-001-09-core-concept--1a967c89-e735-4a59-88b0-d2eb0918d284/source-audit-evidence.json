@@ -1,0 +1,239 @@
+{
+  "schema_version": "source-audit-evidence-v1-local-first",
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-043-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T15:53:32.715+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "1a967c89-e735-4a59-88b0-d2eb0918d284",
+    "slug": "lea-util-001-09-core-concept",
+    "title": "Rainwater harvesting systems",
+    "article_folder": ".ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284",
+    "candidate_path": ".ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284/candidate.md",
+    "candidate_sha256": "sha256:2648b7353a2d26f9031e8797c8a71361013929832ce71d878931fdb8022d2965",
+    "normalized_sha256": "sha256:2648b7353a2d26f9031e8797c8a71361013929832ce71d878931fdb8022d2965",
+    "linked_questions_sha256": "sha256:8586de07467f2a22ac66423efa7b6b758f9ffad2d09308b7caf4234bba5420fa",
+    "sources_sha256": "sha256:ee2dd01f5490e6b3c7d5a463ee25d45a14e39f26edadb1cf419a4bfef4c6591b"
+  },
+  "classification": {
+    "content_domain": "LEA Utilities - rainwater harvesting and storm drainage",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high_value_utilities_plumbing_code",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 25,
+    "question_edits_created": [
+      "73d7fde1-ef22-432d-9445-cd440fbbd588",
+      "082f4cc2-db98-40ca-8ff0-3eb8ffd883e9",
+      "a720d619-690d-4af3-9ab6-7215d9fcc75e",
+      "1ae094fb-23b8-43ea-bcd6-cb4f33f43c56",
+      "1fd6bef1-0ec5-4c4a-a872-84b09baac46b",
+      "28079f99-5db1-4987-af76-bca00b7228d1",
+      "88752233-8555-48d5-bc2b-867ffdf33300",
+      "fd8ab0be-1f83-4fa2-a084-7753875e2a37",
+      "4221b80d-9e94-4a04-b3b7-a06ba76b2343",
+      "60f0fa35-5900-4f0d-9ce8-1ab202e4d283",
+      "3755d5bd-46d1-44c4-8d9a-46216cc968ed",
+      "045aa0c3-e797-45db-86e7-02ce04e9c544",
+      "46d60cf4-849e-4cc7-9d3a-e7dbe055ab7a",
+      "88f805ec-1de8-47a0-a29e-2fb0ffa2f366",
+      "a1167db0-fdc1-4669-8779-4bf98d5c68fe",
+      "b999174d-9b5f-41b5-95ee-197d5ceabb54",
+      "e80d7354-d74d-4782-b24e-429aa317eb1d",
+      "f36e04c6-cf7f-4b6d-93ef-2a9d1b95f832",
+      "668064be-11c5-46f9-876d-6d83bcfdd00f",
+      "ccb185a1-e572-440f-a3af-8664e7b54499",
+      "acd4fc26-970b-4d20-b1cf-eed46398f78a",
+      "f9deac16-873d-4bdb-be53-e0fd2997cbaa",
+      "ddaf216d-391f-4972-8f3f-6ca52865b425",
+      "056de2e1-84f9-4567-adc8-1b9df6e005bc",
+      "341786f3-91ff-41c7-bf3c-54cd674c61af"
+    ]
+  },
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284/question-edits/73d7fde1-ef22-432d-9445-cd440fbbd588.json",
+      ".ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284/question-edits/082f4cc2-db98-40ca-8ff0-3eb8ffd883e9.json",
+      ".ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284/question-edits/a720d619-690d-4af3-9ab6-7215d9fcc75e.json",
+      ".ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284/question-edits/1ae094fb-23b8-43ea-bcd6-cb4f33f43c56.json",
+      ".ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284/question-edits/1fd6bef1-0ec5-4c4a-a872-84b09baac46b.json",
+      ".ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284/question-edits/28079f99-5db1-4987-af76-bca00b7228d1.json",
+      ".ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284/question-edits/88752233-8555-48d5-bc2b-867ffdf33300.json",
+      ".ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284/question-edits/fd8ab0be-1f83-4fa2-a084-7753875e2a37.json",
+      ".ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284/question-edits/4221b80d-9e94-4a04-b3b7-a06ba76b2343.json",
+      ".ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284/question-edits/60f0fa35-5900-4f0d-9ce8-1ab202e4d283.json",
+      ".ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284/question-edits/3755d5bd-46d1-44c4-8d9a-46216cc968ed.json",
+      ".ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284/question-edits/045aa0c3-e797-45db-86e7-02ce04e9c544.json",
+      ".ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284/question-edits/46d60cf4-849e-4cc7-9d3a-e7dbe055ab7a.json",
+      ".ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284/question-edits/88f805ec-1de8-47a0-a29e-2fb0ffa2f366.json",
+      ".ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284/question-edits/a1167db0-fdc1-4669-8779-4bf98d5c68fe.json",
+      ".ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284/question-edits/b999174d-9b5f-41b5-95ee-197d5ceabb54.json",
+      ".ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284/question-edits/e80d7354-d74d-4782-b24e-429aa317eb1d.json",
+      ".ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284/question-edits/f36e04c6-cf7f-4b6d-93ef-2a9d1b95f832.json",
+      ".ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284/question-edits/668064be-11c5-46f9-876d-6d83bcfdd00f.json",
+      ".ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284/question-edits/ccb185a1-e572-440f-a3af-8664e7b54499.json",
+      ".ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284/question-edits/acd4fc26-970b-4d20-b1cf-eed46398f78a.json",
+      ".ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284/question-edits/f9deac16-873d-4bdb-be53-e0fd2997cbaa.json",
+      ".ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284/question-edits/ddaf216d-391f-4972-8f3f-6ca52865b425.json",
+      ".ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284/question-edits/056de2e1-84f9-4567-adc8-1b9df6e005bc.json",
+      ".ai/content-audit-export/articles/lea-util-001-09-core-concept--1a967c89-e735-4a59-88b0-d2eb0918d284/question-edits/341786f3-91ff-41c7-bf3c-54cd674c61af.json"
+    ]
+  },
+  "raw_sources": [
+    {
+      "source_id": "rnpc-ph-local-raw-pdf--b043-1",
+      "label": "Revised National Plumbing Code of the Philippines - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf",
+      "raw_pdf_sha256": "sha256:c4ec30ec3ffe3b39513a033ebc2cfa614bd201d25c5578e1847e7f359fed3f5d",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Revised National Plumbing Code of the Philippines.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Revised National Plumbing Code of the Philippines.md",
+      "refined_markdown_sha256": "sha256:7cea224bfc6c54d0883fe69c89b97cf134e45acaab6c8950b8af3621059c9a91",
+      "source_locator": "RNPC refined markdown lines 570, 645, 651-655, 1689-1691, 1721, 4706-4728, 4745-4822, 5241-5245",
+      "checked_markdown_lines": [
+        "RNPC refined markdown lines 570, 645, 651-655",
+        "RNPC refined markdown lines 1689-1691 and 1721",
+        "RNPC refined markdown lines 4706-4728",
+        "RNPC refined markdown lines 4745-4822",
+        "RNPC refined markdown lines 5241-5245"
+      ]
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "rnpc-ph-local-raw-pdf--b043-1",
+      "label": "Revised National Plumbing Code of the Philippines - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf",
+      "raw_pdf_sha256": "sha256:c4ec30ec3ffe3b39513a033ebc2cfa614bd201d25c5578e1847e7f359fed3f5d",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Revised National Plumbing Code of the Philippines.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Revised National Plumbing Code of the Philippines.md",
+      "refined_markdown_sha256": "sha256:7cea224bfc6c54d0883fe69c89b97cf134e45acaab6c8950b8af3621059c9a91",
+      "source_locator": "RNPC refined markdown lines 570, 645, 651-655, 1689-1691, 1721, 4706-4728, 4745-4822, 5241-5245",
+      "checked_markdown_lines": [
+        "RNPC refined markdown lines 570, 645, 651-655",
+        "RNPC refined markdown lines 1689-1691 and 1721",
+        "RNPC refined markdown lines 4706-4728",
+        "RNPC refined markdown lines 4745-4822",
+        "RNPC refined markdown lines 5241-5245"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "b043-rain-01",
+      "claim_text": "Rainwater drainage sizing is based on rainfall intensity and roof area served.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "Revised National Plumbing Code of the Philippines - local raw PDF",
+        "locator": "RNPC refined markdown lines 4745-4822",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf",
+        "raw_pdf_sha256": "sha256:c4ec30ec3ffe3b39513a033ebc2cfa614bd201d25c5578e1847e7f359fed3f5d",
+        "quoted_pdf_excerpt": "sizes rainwater piping by maximum rainfall intensity and roof area"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b043-rain-02",
+      "claim_text": "Rainwater piping is kept separate from soil, waste, and vent piping.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "Revised National Plumbing Code of the Philippines - local raw PDF",
+        "locator": "RNPC refined markdown lines 4706-4712 and 5241-5245",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf",
+        "raw_pdf_sha256": "sha256:c4ec30ec3ffe3b39513a033ebc2cfa614bd201d25c5578e1847e7f359fed3f5d",
+        "quoted_pdf_excerpt": "not used as soil, waste, or vent piping"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b043-rain-03",
+      "claim_text": "Roof drains need strainers with sufficient net inlet area.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "Revised National Plumbing Code of the Philippines - local raw PDF",
+        "locator": "RNPC refined markdown lines 4714-4728",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf",
+        "raw_pdf_sha256": "sha256:c4ec30ec3ffe3b39513a033ebc2cfa614bd201d25c5578e1847e7f359fed3f5d",
+        "quoted_pdf_excerpt": "roof drains strainers net inlet area"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b043-rain-04",
+      "claim_text": "Horizontal drainage piping has a checked minimum slope rule.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "Revised National Plumbing Code of the Philippines - local raw PDF",
+        "locator": "RNPC refined markdown lines 1689-1691",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf",
+        "raw_pdf_sha256": "sha256:c4ec30ec3ffe3b39513a033ebc2cfa614bd201d25c5578e1847e7f359fed3f5d",
+        "quoted_pdf_excerpt": "20 mm per meter; limited 10 mm per meter approval condition"
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [
+    "Derivative-only tariff, product, market, and case-study numbers were excluded from the Batch 043 repaired content and question edits."
+  ],
+  "removed_or_rewritten_material": [
+    "Removed exported UI-block marker tokens from normalized article content where present.",
+    "Rewrote linked question files to stay inside checked local raw-source evidence.",
+    "Replaced stale derivative-only numeric examples with code-family statements supported by local source families."
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdf_first": true,
+    "derivative_layers_used_only_as_locators": true,
+    "checked_raw_pdf_families": [
+      "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf"
+    ]
+  },
+  "gate_results": {
+    "source_audit": "PASS",
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_validation": "PASS",
+    "question_edit_count_check": "PASS",
+    "scoped_json_parse": "PASS",
+    "marker_scan": "PASS",
+    "source_hash_check": "PASS",
+    "stale_compose_error_check": "PASS"
+  },
+  "source_safe_repair": {
+    "status": "COMPLETE_LOCAL_VALIDATED",
+    "article_normalized_rewritten": true,
+    "sources_json_updated": true,
+    "source_audit_evidence_updated": true,
+    "question_edits_created": 25,
+    "blockers": []
+  },
+  "local_validation": {
+    "status": "PASS_LOCAL_VALIDATION",
+    "validated_at": "2026-05-11T15:53:32.715+08:00",
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_validation": "PASS",
+    "scoped_checks": "PASS",
+    "blockers": []
+  },
+  "sme_review": {
+    "required_before_supabase_publish": true,
+    "completed": false
+  },
+  "overall": {
+    "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+    "blockers": []
+  }
+}

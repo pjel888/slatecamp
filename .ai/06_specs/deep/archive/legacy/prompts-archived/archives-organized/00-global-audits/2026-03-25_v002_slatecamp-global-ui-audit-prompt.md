@@ -349,7 +349,7 @@ and make the codebase harder to onboard new engineers to.]
 ### Tier 1: Critical (Build Immediately)
 [Components where data inconsistency could mislead students]
 
-### Tier 2: High (Build This Sprint)  
+### Tier 2: High (Build This Sprint)
 [Components with visible inconsistency on student-facing pages]
 
 ### Tier 3: Medium (Build Next Sprint)
@@ -370,12 +370,12 @@ and make the codebase harder to onboard new engineers to.]
 src/components/shared/ — this is where all new modular components live.
 
 ### Step 2: Build primitives first, composed second
-Order: SectionHeader → ScoreBadge → Card → Badge → Button audit → 
+Order: SectionHeader → ScoreBadge → Card → Badge → Button audit →
        MetricCard → TaxonomyPicker → QuestionCard → DataTable → EmptyState
 
 ### Step 3: Migration protocol (per component)
 1. Build the new component in src/components/shared/
-2. Write it to handle every variant and state found in the audit  
+2. Write it to handle every variant and state found in the audit
 3. Add it to the design system gallery page (/developer/design-system)
 4. Find every file listed in the audit for that component
 5. Replace the ad-hoc implementation with the new component import
@@ -390,7 +390,7 @@ Order: SectionHeader → ScoreBadge → Card → Badge → Button audit →
 ## Appendix: Files Not Readable
 [List any files the audit could not access, with the reason]
 
-## Appendix: Shadcn UI Inventory  
+## Appendix: Shadcn UI Inventory
 [Complete list of available Shadcn components and whether each is being used]
 ```
 

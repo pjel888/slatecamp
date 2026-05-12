@@ -1,6 +1,6 @@
 # Content Diff Report: plastics-in-construction
 
-Generated: 2026-05-10T03:11:41.188Z
+Generated: 2026-05-11T04:58:26.419Z
 Article ID: c712ee78-2625-434c-bb18-fa7b0f477b33
 Changed: true
 Safe to push locally: true
@@ -8,14 +8,14 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:2e668f8c882b92343fc1239792d291d52928d941ccd913d66261ec770ecbb983`
-- Normalized: `sha256:ab9a0c23f7db51c9fbfcb05b7adc27baaf47987774e80a4590bf64df2d37dd81`
-- Candidate: `sha256:6f49471c232317e2b5e6456dbb3fd2f03f36f8516a7b8a27711d1af32186d6a8`
+- Normalized: `sha256:94e0ee536488c4e3e7e4ab1339e08399c7217cb629c739720cb5db09978681b3`
+- Candidate: `sha256:779ec88778e1c5c3b6cb0611ba9cf09d4e3cfe267396da20aba995d6b01501e3`
 
 ## Line summary
 
-- Changed lines: 13
+- Changed lines: 456
 - Inserted lines: 0
-- Deleted lines: 0
+- Deleted lines: 428
 
 ## UI block preservation
 

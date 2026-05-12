@@ -1,0 +1,97 @@
+{
+  "question_id": "139cc26b-88c6-4da4-951c-333a99d81f07",
+  "baseline_hash": "sha256:1d9c8984a6c0ad01d4c4dec77648946b9cfef0bb002d1f677a87e34960d83f59",
+  "action": "replace",
+  "reason": "source-audited-article-batch-021-local-first rewrote this linked question to align with the local source audit for lea-plan-003-01-what-you-need-to-know-for-the-lea.",
+  "approved_by": "codex-local-source-audit-batch-021",
+  "approved_at": "2026-05-11T10:30:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "0d2e80df-4f76-484e-9b1f-5502da9e35be",
+    "parent_article_slug": "lea-plan-003-01-what-you-need-to-know-for-the-lea",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "PD 957 IRR, BP 220 Revised IRR, and RA 7279 housing provisions checked from local raw PDFs",
+    "checked_markdown_lines": [
+      "PD 957 refined markdown lines 100-240",
+      "BP 220 refined markdown lines 130-560",
+      "RA 7279 refined markdown lines 70-190"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-957/PD 957 - Subdivision and Condominium Buyers Protective Decree.pdf",
+        "sha256": "sha256:1f9ab17a816885cfdbafafc03e3e9b64470a737447129a32a459836d6773f9ea",
+        "source_id": "pd957-subdivision-condominium-buyers-protective-decree-local",
+        "locator": "PD 957 refined markdown lines 100-240, site criteria, open spaces, and 70/30 land allocation"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-957/PD 957 - Subdivision and Condominium Buyers Protective Decree.md",
+        "sha256": "sha256:5a118e6b9e678d495ffac7a715d08deb0787e5905105fe25b9847cb226af7080",
+        "source_id": "pd957-subdivision-condominium-buyers-protective-decree-local",
+        "locator": "PD 957 refined markdown lines 100-240, site criteria, open spaces, and 70/30 land allocation"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-220/Revised_IRR_BP220_2008.pdf",
+        "sha256": "sha256:7392741260c227647afe39de283f3efa979465692da8905e59be8857c8651614",
+        "source_id": "bp220-revised-irr-2008-local",
+        "locator": "BP 220 refined markdown lines 130-560, economic and socialized housing standards"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-220/Revised_IRR_BP220_2008.md",
+        "sha256": "sha256:4d66a5ce3891d6405324d52ae8b874f75321da0e5f00213489be43d754d27be1",
+        "source_id": "bp220-revised-irr-2008-local",
+        "locator": "BP 220 refined markdown lines 130-560, economic and socialized housing standards"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7279/RA 7279 Urban Development and Housing Act 2009.pdf",
+        "sha256": "sha256:23efa9c0278519d79ed424d9ced016b24619ebb42a19e75a05dc9bb8bf1c4696",
+        "source_id": "ra7279-urban-development-housing-act-local",
+        "locator": "RA 7279 refined markdown lines 70-190, socialized housing definition, eligibility, and balanced housing"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7279/RA 7279 Urban Development and Housing Act 2009.md",
+        "sha256": "sha256:f52859fb18fec28c403348851c3e53caca2e678cb9cec43fbca28d8d5c3a323e",
+        "source_id": "ra7279-urban-development-housing-act-local",
+        "locator": "RA 7279 refined markdown lines 70-190, socialized housing definition, eligibility, and balanced housing"
+      }
+    ],
+    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+  },
+  "proposed": {
+    "text": "For an open-market or medium-cost subdivision of at least one hectare, what minimum non-saleable area does the checked PD 957 source require?",
+    "options": [
+      {
+        "id": "a",
+        "text": "10 percent of gross area"
+      },
+      {
+        "id": "b",
+        "text": "20 percent of gross area"
+      },
+      {
+        "id": "c",
+        "text": "30 percent of gross area"
+      },
+      {
+        "id": "d",
+        "text": "40 percent of gross area"
+      }
+    ],
+    "correct_option_id": "c",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "The checked PD 957 source sets maximum saleable area at 70 percent and minimum non-saleable area at 30 percent of gross area.",
+    "explanation": "This applies to open-market and medium-cost subdivision projects of one hectare or more.",
+    "code_citation": "PD 957 refined markdown lines 213-224",
+    "bloom_level": "apply",
+    "application_context": "code_interpretation",
+    "practice_context": [
+      "housing law",
+      "pd957"
+    ],
+    "difficulty": 0.66,
+    "is_assessment": false,
+    "model_id": "BATCH-021-housing-001"
+  }
+}

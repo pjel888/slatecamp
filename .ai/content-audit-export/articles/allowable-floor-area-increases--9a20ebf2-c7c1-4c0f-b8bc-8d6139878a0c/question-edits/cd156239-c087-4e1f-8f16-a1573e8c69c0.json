@@ -1,0 +1,49 @@
+{
+  "question_id": "cd156239-c087-4e1f-8f16-a1573e8c69c0",
+  "baseline_hash": "sha256:94a9789fee9bfb6dc6fdb9ab4dbee9ca1dd58d496226beb0c6090ab8b306b4b8",
+  "action": "replace",
+  "reason": "source-audited-article-batch-039-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-039",
+  "approved_at": "2026-05-11T13:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-039-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 1390-1450",
+          "PD 1096 RIRR refined markdown lines 1452-1462"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 706"
+  },
+  "proposed": {
+    "text": "Under Section 706, what site condition can support an allowable floor area increase?",
+    "options": [
+      {
+        "id": "b039-9a20-13-a",
+        "text": "Public space, streets, or yards extending along and adjoining two or more sides of the building or structure"
+      },
+      {
+        "id": "b039-9a20-13-b",
+        "text": "Any one interior partition facing a corridor"
+      },
+      {
+        "id": "b039-9a20-13-c",
+        "text": "A larger mechanical room only"
+      },
+      {
+        "id": "b039-9a20-13-d",
+        "text": "A private stair serving one tenant"
+      }
+    ],
+    "correct_option_id": "b039-9a20-13-a",
+    "rationale": "Correct answer: Public space, streets, or yards extending along and adjoining two or more sides of the building or structure. This is directly supported by PD 1096 2004 Revised IRR, Section 706.",
+    "explanation": "The Batch 039 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 706.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 706"
+  }
+}

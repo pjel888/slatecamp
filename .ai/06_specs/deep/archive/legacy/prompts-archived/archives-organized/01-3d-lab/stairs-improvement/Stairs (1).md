@@ -214,5 +214,5 @@ You should place a short disclaimer in the app like this: [dpwh.gov](https://www
 > This tool compares Philippine stair standards across multiple legal regimes. A conflict does not automatically mean noncompliance; it may reflect different applicability rules, such as BP 220 for socialized housing or BP 344 accessibility overlays. [elibrary.judiciary.gov](https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/13859)
 
 If you want, next I can turn this into either:
-1. a **full normalized JSON dataset** for stairs, landings, handrails, and headroom, or  
+1. a **full normalized JSON dataset** for stairs, landings, handrails, and headroom, or
 2. a **single-file HTML prototype** of the comparison app.

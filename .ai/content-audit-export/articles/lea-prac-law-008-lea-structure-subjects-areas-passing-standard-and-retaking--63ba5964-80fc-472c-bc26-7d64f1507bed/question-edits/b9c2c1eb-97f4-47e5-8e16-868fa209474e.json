@@ -1,0 +1,34 @@
+{
+  "question_id": "b9c2c1eb-97f4-47e5-8e16-868fa209474e",
+  "baseline_hash": "sha256:e2aa4ca9cdfa2c906302f87b87efa486f3745e10e6662b1d0825ccf74db55409",
+  "reason": "Batch 005 local source audit aligned LEA Structure: Subjects, Rating, Results, and Reapplication Boundaries linked question ALE-PRAC-LAW-008-008 to verified RA 9266 IRR raw-source claims.",
+  "approved_by": "codex-local-source-audit-batch-005",
+  "approved_at": "2026-05-10T21:30:00+08:00",
+  "proposed": {
+    "code_citation": "RA 9266 IRR Sections 7(j), 8, 12, 13, 14, 15, and 16",
+    "explanation": "Source-audited against RA 9266 IRR Sections 7(j), 8, 12, 13, 14, 15, and 16 in the checked local RA 9266 IRR PDF. This edit removes unsupported locators or assumptions and keeps the question aligned to the audited article cluster.",
+    "text": "A candidate fails the LEA and wants to reapply. Based on the checked RA 9266 IRR source, what must she confirm before reapplying?",
+    "options": [
+      {
+        "id": "a",
+        "text": "That she still satisfies the Section 13 application requirements and submits truthful supporting documents."
+      },
+      {
+        "id": "b",
+        "text": "That no eligibility documents are needed after a first failed attempt."
+      },
+      {
+        "id": "c",
+        "text": "That the IAPOA automatically certifies all repeat applicants."
+      },
+      {
+        "id": "d",
+        "text": "That subject grades below 50 percent are ignored on repeat attempts."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "correct": "The checked pages do not state a maximum-attempt rule. They do support Section 13 eligibility and the Board authority to act on false evidence or information."
+    }
+  }
+}

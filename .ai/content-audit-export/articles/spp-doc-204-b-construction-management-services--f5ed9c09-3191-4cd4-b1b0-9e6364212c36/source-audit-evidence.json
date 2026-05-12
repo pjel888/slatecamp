@@ -1,0 +1,131 @@
+{
+  "artifact_type": "source_audit_evidence",
+  "batch_id": "source-audited-article-batch-013-local-first",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T22:25:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "status": "local_pass_ready_for_final_publishing_review",
+  "target": {
+    "article_id": "f5ed9c09-3191-4cd4-b1b0-9e6364212c36",
+    "slug": "spp-doc-204-b-construction-management-services",
+    "title": "SPP Doc 204-B: Construction Management Services",
+    "folder": ".ai/content-audit-export/articles/spp-doc-204-b-construction-management-services--f5ed9c09-3191-4cd4-b1b0-9e6364212c36",
+    "normalized_path": ".ai/content-audit-export/articles/spp-doc-204-b-construction-management-services--f5ed9c09-3191-4cd4-b1b0-9e6364212c36/normalized.md",
+    "candidate_path": ".ai/content-audit-export/articles/spp-doc-204-b-construction-management-services--f5ed9c09-3191-4cd4-b1b0-9e6364212c36/candidate.md",
+    "sources_path": ".ai/content-audit-export/articles/spp-doc-204-b-construction-management-services--f5ed9c09-3191-4cd4-b1b0-9e6364212c36/sources.json",
+    "question_edits_folder": ".ai/content-audit-export/articles/spp-doc-204-b-construction-management-services--f5ed9c09-3191-4cd4-b1b0-9e6364212c36/question-edits",
+    "original_hash": "sha256:83a55c5b407c51f9d250ac885debef17dc8ce7409c6f30c32a95d28d6bdd1846",
+    "normalized_hash": "sha256:73c06fa0b671756021925d1184dd4159e9443dbcd6ad3361532e9c233e0dce83",
+    "candidate_hash": "sha256:73c06fa0b671756021925d1184dd4159e9443dbcd6ad3361532e9c233e0dce83",
+    "sources_hash": "sha256:8dabc3a6144208f3d620cc2dc789ca37af106373ab8ad03d27b462b005795276",
+    "linked_questions_hash": "sha256:4d71e693bacc283d5ff71e3f8a1436a0544a8c81160785c4a1f383f6c36b63ff",
+    "question_edit_count": 10
+  },
+  "raw_sources": [
+    {
+      "source_id": "uap-standards-of-professional-practice-2",
+      "label": "UAP Standards of Professional Practice",
+      "authority": "United Architects of the Philippines / PRBoA SPP reference copy",
+      "source_type": "professional_practice_pdf",
+      "source_locator": "SPP Document 204-B construction management services",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+      "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
+      "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
+      "checked_markdown_lines": [
+        "UAP SPP raw markdown lines 1080-1140"
+      ],
+      "use": "primary source for article and linked-question support",
+      "local_source_checked": true
+    }
+  ],
+  "fee_support_sources": [
+    {
+      "source_id": "uap-1979-doc-206-project-manager-fee",
+      "label": "1979 UAP Documents - UAP Doc. 206 Project Manager fee",
+      "authority": "United Architects of the Philippines, Inc.",
+      "source_type": "professional_practice_fee_source",
+      "source_locator": "UAP Doc. 206, Method of Compensation, Section 8.1",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/1979 UAP Documents.pdf",
+      "raw_pdf_sha256": "sha256:54d42c8d39cb6c1e8622ef21a65e63cb09d90c302ca905efa95442614e5f0b5b",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/1979 UAP Documents.md",
+      "raw_markdown_sha256": "sha256:6ae33942ccaedc9a5541fd9f2727ec108aa66c522325c4ca1a2629caab002e38",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/1979 UAP Documents.md",
+      "refined_markdown_sha256": "sha256:ada40ce7a1046bb6ca99a34b095250ef650a05285458e2dafd0ed4be68870b8e",
+      "canonical_source_path": "vitruvius-connection/003_Canonical-Knowledge-Layer/shared/sources/1979-uap-documents.md",
+      "canonical_source_sha256": "sha256:e42f91a3324bd3ac7db9584a2b98affeec884f376c4f0e86aadf9fb92694372f",
+      "checked_markdown_lines": [
+        "raw markdown line 1876",
+        "refined markdown line 1738",
+        "canonical source line 1830",
+        "sidecar JSON content id 24411"
+      ],
+      "supported_claim": "Project Manager compensation is 2% to 5% of estimated Project Cost.",
+      "use": "exact fee-range support for question f9e2c759-3414-428b-b3da-76522aa33e95",
+      "local_source_checked": true
+    }
+  ],
+  "local_edits": {
+    "normalized_repaired": true,
+    "candidate_composed": true,
+    "ui_blocks_removed_from_repaired_markdown": true,
+    "sources_json_updated": true,
+    "question_edits_created": 10,
+    "answer_key_fields_changed": false,
+    "partial_source_support_question_edits": 0,
+    "unresolved_external_source_gap_question_edits": 0
+  },
+  "source_gap_blockers": [],
+  "resolved_source_gap_blockers": [
+    {
+      "blocker_id": "batch-013-spp-204-b-question-f9e2c759-unresolved-external-source-gap",
+      "question_id": "f9e2c759-3414-428b-b3da-76522aa33e95",
+      "question_edit_path": ".ai/content-audit-export/articles/spp-doc-204-b-construction-management-services--f5ed9c09-3191-4cd4-b1b0-9e6364212c36/question-edits/f9e2c759-3414-428b-b3da-76522aa33e95.json",
+      "blocker_file": ".ai/content-audit-export/source-audited-article-batch-013-blocker-ledger-2026-05-10.json",
+      "support_status": "supported",
+      "resolution": "Current SPP 206 supports the PM-as-CM linkage and percentage-basis compensation; 1979 UAP Documents UAP Doc. 206 Section 8.1 supplies the exact 2% to 5% Project Manager fee range.",
+      "supporting_local_sources": [
+        "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md lines 1311-1316, 1342-1356",
+        "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/1979 UAP Documents.md line 1876",
+        "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/1979 UAP Documents.md line 1738",
+        "vitruvius-connection/003_Canonical-Knowledge-Layer/shared/sources/1979-uap-documents.md line 1830"
+      ]
+    }
+  ],
+  "validation": {
+    "compose": {
+      "safe_to_diff": true,
+      "blockers": [],
+      "placeholders_found": 0,
+      "unresolved_placeholders": []
+    },
+    "diff": {
+      "changed": true,
+      "safe_to_push": true,
+      "locally_safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+      ]
+    },
+    "bundle_validate_dry_run": {
+      "valid": true,
+      "blockers": [],
+      "warnings": [
+        "component-usage.json has not been generated for this article yet."
+      ]
+    }
+  },
+  "question_edit_files": [
+    ".ai/content-audit-export/articles/spp-doc-204-b-construction-management-services--f5ed9c09-3191-4cd4-b1b0-9e6364212c36/question-edits/086d443c-3d48-4895-b65c-345a790ffec5.json",
+    ".ai/content-audit-export/articles/spp-doc-204-b-construction-management-services--f5ed9c09-3191-4cd4-b1b0-9e6364212c36/question-edits/0a52f269-3c24-4782-a9ce-c75818f28bd4.json",
+    ".ai/content-audit-export/articles/spp-doc-204-b-construction-management-services--f5ed9c09-3191-4cd4-b1b0-9e6364212c36/question-edits/6f141c7d-15d6-4587-9928-cc493a06995e.json",
+    ".ai/content-audit-export/articles/spp-doc-204-b-construction-management-services--f5ed9c09-3191-4cd4-b1b0-9e6364212c36/question-edits/72813afe-5c06-4412-a4d4-ea27b6d50cc8.json",
+    ".ai/content-audit-export/articles/spp-doc-204-b-construction-management-services--f5ed9c09-3191-4cd4-b1b0-9e6364212c36/question-edits/771b6134-205c-4ff2-94ad-2e74514c512d.json",
+    ".ai/content-audit-export/articles/spp-doc-204-b-construction-management-services--f5ed9c09-3191-4cd4-b1b0-9e6364212c36/question-edits/d2eb3032-a488-43f4-8ddd-8a2a734f35a4.json",
+    ".ai/content-audit-export/articles/spp-doc-204-b-construction-management-services--f5ed9c09-3191-4cd4-b1b0-9e6364212c36/question-edits/e5cac33d-10ec-4dbb-a425-0fca3fb17a7e.json",
+    ".ai/content-audit-export/articles/spp-doc-204-b-construction-management-services--f5ed9c09-3191-4cd4-b1b0-9e6364212c36/question-edits/e7ac4ce6-c506-4779-bd0d-c1c22cd0ca9d.json",
+    ".ai/content-audit-export/articles/spp-doc-204-b-construction-management-services--f5ed9c09-3191-4cd4-b1b0-9e6364212c36/question-edits/f5f0e82e-b43d-4121-993c-860d153d4b36.json",
+    ".ai/content-audit-export/articles/spp-doc-204-b-construction-management-services--f5ed9c09-3191-4cd4-b1b0-9e6364212c36/question-edits/f9e2c759-3414-428b-b3da-76522aa33e95.json"
+  ]
+}

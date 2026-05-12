@@ -1,0 +1,66 @@
+{
+  "question_id": "fd6b1164-58c0-42ff-bf1c-aa516bad8cf9",
+  "baseline_hash": "sha256:3cfe6662ff5af12ee794f5de41e6efd9488e92ab7cb1e5c3574343ce20496c01",
+  "action": "replace",
+  "reason": "source-audited-article-batch-055-local-first: local raw PDF backed replacement constrained to checked Batch 055 source families.",
+  "approved_by": "codex-local-first-batch-055",
+  "approved_at": "2026-05-11T19:38:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+    "parent_article_slug": "lea-theo-002-04-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "theory refined markdown lines 35-39; George Salvan Architectural Theories of Design refined markdown lines 8688-8810",
+    "checked_markdown_lines": [
+      "theory refined markdown lines 35-39",
+      "George Salvan Architectural Theories of Design refined markdown lines 8688-8810"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "theory-local-raw-pdf--b055-1ad3cb33-01",
+        "label": "theory - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+        "sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+        "refined_markdown_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+        "locator": "theory refined markdown lines 35-39"
+      },
+      {
+        "source_id": "salvan-theory-local-raw-pdf--b055-1ad3cb33-02",
+        "label": "George Salvan Architectural Theories of Design - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
+        "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
+        "locator": "George Salvan Architectural Theories of Design refined markdown lines 8688-8810"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 055 checked local raw PDF source scope."
+  },
+  "proposed": {
+    "text": "Which description matches centralized organization?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Secondary spaces grouped around a dominant central space."
+      },
+      {
+        "id": "b",
+        "text": "A single continuous path revolving away from a center."
+      },
+      {
+        "id": "c",
+        "text": "A palm-leaf roof on mud walls."
+      },
+      {
+        "id": "d",
+        "text": "A deconstructivist exploded form."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Secondary spaces grouped around a dominant central space. This answer is supported by the checked Batch 055 local raw PDF source families for Spatial Organization by Francis D.K. Ching.",
+    "explanation": "Secondary spaces grouped around a dominant central space. The Batch 055 source audit used local raw PDFs first and refined markdown only as locator evidence for Spatial Organization by Francis D.K. Ching.",
+    "code_citation": "George Salvan Architectural Theories of Design refined markdown lines 8688-8710"
+  },
+  "batch_question_template_index": 2
+}

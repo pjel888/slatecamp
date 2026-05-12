@@ -1,6 +1,6 @@
 # 00-meta
 
-**Status:** Preserved lineage, not current operational authority  
+**Status:** Preserved lineage, not current operational authority
 **Last Updated:** 2026-04-17
 
 This folder preserves the 2026-04-06 deep-docs migration scaffolding and its historical task trail.

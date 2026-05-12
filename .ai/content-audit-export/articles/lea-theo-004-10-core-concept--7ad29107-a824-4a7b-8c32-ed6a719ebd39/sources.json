@@ -1,56 +1,34 @@
 {
   "article_id": "7ad29107-a824-4a7b-8c32-ed6a719ebd39",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:daf372b399887c00fee18b044ef3456de5f9e43dd9a05aac6d6970f54cc0d382",
-  "source_count": 4,
+  "source_count": 1,
   "sources": [
     {
-      "source_id": "17145d94-039e-4dd5-9109-f1c255f70e27",
+      "source_id": "toa4-tropical-architecture-local-raw-pdf--b060-7ad29107-01",
       "article_id": "7ad29107-a824-4a7b-8c32-ed6a719ebd39",
-      "label": "[Wikipedia - Bahay kubo](https://en.wikipedia.org/wiki/Bahay_kubo)",
+      "label": "TOA 4 Tropical Architecture - local raw PDF",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_raw_pdf",
+      "description": "TOA 4 Tropical Architecture - local raw PDF; local raw PDF checked first; refined markdown used only as locator. TOA 4 Tropical Architecture refined markdown lines 1591-1604, 1621-1622, 1648-1665, 1679, 1685-1703, and raw PDF pages 187 and 194.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:02.295633+00:00",
-      "updated_at": "2026-03-24T04:34:02.295633+00:00"
-    },
-    {
-      "source_id": "f78e6f85-a9ca-40de-afd5-6ed3b9b15c97",
-      "article_id": "7ad29107-a824-4a7b-8c32-ed6a719ebd39",
-      "label": "[Wikipedia - Bahay na bato](https://en.wikipedia.org/wiki/Bahay_na_bato)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 1,
-      "created_at": "2026-03-24T04:34:02.295633+00:00",
-      "updated_at": "2026-03-24T04:34:02.295633+00:00"
-    },
-    {
-      "source_id": "8730a1a5-ac8d-4d41-b921-b153bc44e0df",
-      "article_id": "7ad29107-a824-4a7b-8c32-ed6a719ebd39",
-      "label": "[ArchitectureCourses.org - The Many Styles of Bahay Kubo](https://www.architecturecourses.org/design/many-styles-bahay-kubo-traditional-modern-tropical-homes/)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:34:02.295633+00:00",
-      "updated_at": "2026-03-24T04:34:02.295633+00:00"
-    },
-    {
-      "source_id": "27e7bbda-e74e-458c-a49a-02cd05924944",
-      "article_id": "7ad29107-a824-4a7b-8c32-ed6a719ebd39",
-      "label": "[Lifestyle.INQ - Francisco Mañosa's Crusade for Filipino Architecture](https://lifestyle.inquirer.net/129669/francisco-manosas-lonely-crusade-for-a-truly-filipino-architecture/)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:34:02.295633+00:00",
-      "updated_at": "2026-03-24T04:34:02.295633+00:00"
+      "created_at": "2026-05-11T21:02:00.000+08:00",
+      "updated_at": "2026-05-11T21:02:00.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+      "raw_pdf_sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+      "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+      "source_locator": "TOA 4 Tropical Architecture refined markdown lines 1591-1604, 1621-1622, 1648-1665, 1679, 1685-1703, and raw PDF pages 187 and 194",
+      "checked_markdown_lines": [
+        "TOA 4 Tropical Architecture refined markdown lines 1591-1604",
+        "TOA 4 Tropical Architecture refined markdown lines 1621-1622",
+        "TOA 4 Tropical Architecture refined markdown lines 1648-1665, 1679, 1685-1703"
+      ],
+      "checked_pdf_pages": "raw PDF pages 71-78, 81-84, 87-90, 92-100, 104, 106-110, 121, 140, 143-148, 151, 163, 172, 180-181, 187, and 194",
+      "local_audit_note": "Primary truth is the local raw PDF family; refined markdown line ranges are locator aids for the checked claims."
     }
-  ]
+  ],
+  "sources_hash": "sha256:33a869b0b2bcb2f55be45d09baa44cc3a52637d1775372b82ce0fec3f4796957"
 }

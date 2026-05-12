@@ -1,0 +1,341 @@
+{
+  "artifact_type": "source-audited-article-batch-006-local-first-ledger",
+  "batch": "006",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T22:40:00+08:00",
+  "mode": "local_first_no_supabase_no_deploy_no_commit",
+  "selection_rule": "Next five not-locally-passed high-value legal/professional-practice article clusters with linked questions and available raw PDFs under vitruvius-connection/001_Raw-Source-Layer; prior batch 001-005 selections excluded.",
+  "source_root": "vitruvius-connection/001_Raw-Source-Layer",
+  "prior_batches_excluded": [
+    "001",
+    "002",
+    "003",
+    "004",
+    "005"
+  ],
+  "counts": {
+    "articles_selected": 5,
+    "articles_passed": 5,
+    "articles_parked": 0,
+    "linked_questions_observed": 50,
+    "question_edits_created": 50,
+    "raw_sources_verified": 3,
+    "supabase_pushes": 0,
+    "commits": 0,
+    "deploys": 0
+  },
+  "articles": [
+    {
+      "article_id": "17b95df0-6bea-43c6-ab03-2b82a358caa6",
+      "slug": "lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountability",
+      "title": "Architect of Record vs Architect in Charge of Construction Liability",
+      "folder": ".ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6",
+      "focus": "AOR/AiCC role split, signing/sealing responsibility, Civil Code Article 1723 collapse liability",
+      "source_audit_status": "PASS",
+      "linked_questions": 10,
+      "question_edits_created": 10,
+      "raw_sources": [
+        {
+          "key": "ra9266_irr",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "checked_pdf_pages": [
+            2,
+            4,
+            14,
+            15,
+            19
+          ]
+        },
+        {
+          "key": "civil_code",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code of the Phils.pdf",
+          "sha256": "sha256:95b8d7bf26fabeab9d27c661a53729273b69c88fc8565cc2a7146243df693400",
+          "checked_pdf_pages": [
+            123
+          ]
+        }
+      ],
+      "compose": {
+        "status": "PASS",
+        "blockers": 0
+      },
+      "diff": {
+        "status": "PASS",
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": 0
+      },
+      "validate": {
+        "status": "PASS",
+        "valid": true,
+        "blockers": 0,
+        "warnings": 0
+      },
+      "supabase": "not_attempted_by_request",
+      "original_hash_reconciled": false,
+      "unsupported_or_removed_claims": [
+        "Removed insurance-policy advice and replaced it with source-backed role/scope risk framing.",
+        "Rewrote defective-material scenarios to use Article 1723 collapse and supervision language instead of unsupported cracking-only conclusions.",
+        "Corrected linked-question citations from generic RA 9266 labels to audited RA 9266 IRR and Civil Code locators."
+      ],
+      "artifacts": {
+        "normalized": ".ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6/candidate.md",
+        "sources": ".ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6/sources.json",
+        "evidence": ".ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6/source-audit-evidence.json",
+        "question_edits": ".ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6/question-edits/",
+        "diff_report": ".ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6/diff-report.json"
+      }
+    },
+    {
+      "article_id": "82862aca-27a6-4121-ba3f-6d53160d2e3c",
+      "slug": "lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194",
+      "title": "Quasi Delict and Tort in Architectural Practice Civil Code Articles",
+      "folder": ".ai/content-audit-export/articles/lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194--82862aca-27a6-4121-ba3f-6d53160d2e3c",
+      "focus": "Civil Code quasi-delict elements, prescription, employer responsibility, and Article 1723/2192 boundary",
+      "source_audit_status": "PASS",
+      "linked_questions": 10,
+      "question_edits_created": 10,
+      "raw_sources": [
+        {
+          "key": "civil_code",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code of the Phils.pdf",
+          "sha256": "sha256:95b8d7bf26fabeab9d27c661a53729273b69c88fc8565cc2a7146243df693400",
+          "checked_pdf_pages": [
+            82,
+            123,
+            159,
+            160
+          ]
+        },
+        {
+          "key": "ra9266_irr",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "checked_pdf_pages": [
+            2,
+            19
+          ]
+        }
+      ],
+      "compose": {
+        "status": "PASS",
+        "blockers": 0
+      },
+      "diff": {
+        "status": "PASS",
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": 0
+      },
+      "validate": {
+        "status": "PASS",
+        "valid": true,
+        "blockers": 0,
+        "warnings": 0
+      },
+      "supabase": "not_attempted_by_request",
+      "original_hash_reconciled": true,
+      "unsupported_or_removed_claims": [
+        "Removed Article 1155/discovery-date framing and replaced it with Articles 1146 and 1150.",
+        "Rewrote the sixteen-year collapse scenario to respect Article 2192 instead of bypassing Article 1723 through quasi-delict.",
+        "Changed no-collapse foundation-damage question alignment from Article 1723-plus-quasi-delict to quasi-delict where the collapse trigger is absent."
+      ],
+      "artifacts": {
+        "normalized": ".ai/content-audit-export/articles/lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194--82862aca-27a6-4121-ba3f-6d53160d2e3c/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194--82862aca-27a6-4121-ba3f-6d53160d2e3c/candidate.md",
+        "sources": ".ai/content-audit-export/articles/lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194--82862aca-27a6-4121-ba3f-6d53160d2e3c/sources.json",
+        "evidence": ".ai/content-audit-export/articles/lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194--82862aca-27a6-4121-ba3f-6d53160d2e3c/source-audit-evidence.json",
+        "question_edits": ".ai/content-audit-export/articles/lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194--82862aca-27a6-4121-ba3f-6d53160d2e3c/question-edits/",
+        "diff_report": ".ai/content-audit-export/articles/lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194--82862aca-27a6-4121-ba3f-6d53160d2e3c/diff-report.json"
+      }
+    },
+    {
+      "article_id": "76b6cfd5-d416-4c6d-8a90-76a2d2b91774",
+      "slug": "lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights",
+      "title": "Ownership of Architectural Plans RA 9266 Section 33 and Client Rights",
+      "folder": ".ai/content-audit-export/articles/lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights--76b6cfd5-d416-4c6d-8a90-76a2d2b91774",
+      "focus": "RA 9266 copyright ownership, commissioned-project use limits, and written-consent requirement",
+      "source_audit_status": "PASS",
+      "linked_questions": 10,
+      "question_edits_created": 10,
+      "raw_sources": [
+        {
+          "key": "ra9266_irr",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "checked_pdf_pages": [
+            5,
+            14,
+            19
+          ]
+        }
+      ],
+      "compose": {
+        "status": "PASS",
+        "blockers": 0
+      },
+      "diff": {
+        "status": "PASS",
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": 0
+      },
+      "validate": {
+        "status": "PASS",
+        "valid": true,
+        "blockers": 0,
+        "warnings": 0
+      },
+      "supabase": "not_attempted_by_request",
+      "original_hash_reconciled": false,
+      "unsupported_or_removed_claims": [
+        "Removed IP Code remedy language not source-audited in this batch.",
+        "Removed unsupported foreign-country/extraterritorial framing and rewrote reuse claims to the source-backed repetition/other-project rule.",
+        "Reframed assignment questions around the source-backed written-stipulation exception."
+      ],
+      "artifacts": {
+        "normalized": ".ai/content-audit-export/articles/lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights--76b6cfd5-d416-4c6d-8a90-76a2d2b91774/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights--76b6cfd5-d416-4c6d-8a90-76a2d2b91774/candidate.md",
+        "sources": ".ai/content-audit-export/articles/lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights--76b6cfd5-d416-4c6d-8a90-76a2d2b91774/sources.json",
+        "evidence": ".ai/content-audit-export/articles/lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights--76b6cfd5-d416-4c6d-8a90-76a2d2b91774/source-audit-evidence.json",
+        "question_edits": ".ai/content-audit-export/articles/lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights--76b6cfd5-d416-4c6d-8a90-76a2d2b91774/question-edits/",
+        "diff_report": ".ai/content-audit-export/articles/lea-prac-law-013-ownership-of-architectural-plans-ra-9266-section-33-and-client-rights--76b6cfd5-d416-4c6d-8a90-76a2d2b91774/diff-report.json"
+      }
+    },
+    {
+      "article_id": "f7691e1a-81f3-4a93-aef2-6ae6426100a2",
+      "slug": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component",
+      "title": "The Contract Document Package Who Draws and Who Signs Each Component",
+      "folder": ".ai/content-audit-export/articles/lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component--f7691e1a-81f3-4a93-aef2-6ae6426100a2",
+      "focus": "RA 9266 architectural documents and UAP Document 301 contract-document coordination rules",
+      "source_audit_status": "PASS",
+      "linked_questions": 10,
+      "question_edits_created": 10,
+      "raw_sources": [
+        {
+          "key": "ra9266_irr",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "checked_pdf_pages": [
+            4,
+            5,
+            14,
+            15,
+            19
+          ]
+        },
+        {
+          "key": "uap_doc_301",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+          "sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+          "checked_pdf_pages": [
+            16,
+            17,
+            18,
+            20
+          ]
+        }
+      ],
+      "compose": {
+        "status": "PASS",
+        "blockers": 0
+      },
+      "diff": {
+        "status": "PASS",
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": 0
+      },
+      "validate": {
+        "status": "PASS",
+        "valid": true,
+        "blockers": 0,
+        "warnings": 0
+      },
+      "supabase": "not_attempted_by_request",
+      "original_hash_reconciled": true,
+      "unsupported_or_removed_claims": [
+        "Removed unsupported RA 544 and National Electrical Code claims from question edits because those raw sources were not audited in this batch.",
+        "Corrected sealing typos and rewrote specialist-discipline questions into source-backed coordination and architectural-document questions.",
+        "Removed broad claims that the architect signs or directly supervises every specialist drawing."
+      ],
+      "artifacts": {
+        "normalized": ".ai/content-audit-export/articles/lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component--f7691e1a-81f3-4a93-aef2-6ae6426100a2/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component--f7691e1a-81f3-4a93-aef2-6ae6426100a2/candidate.md",
+        "sources": ".ai/content-audit-export/articles/lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component--f7691e1a-81f3-4a93-aef2-6ae6426100a2/sources.json",
+        "evidence": ".ai/content-audit-export/articles/lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component--f7691e1a-81f3-4a93-aef2-6ae6426100a2/source-audit-evidence.json",
+        "question_edits": ".ai/content-audit-export/articles/lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component--f7691e1a-81f3-4a93-aef2-6ae6426100a2/question-edits/",
+        "diff_report": ".ai/content-audit-export/articles/lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component--f7691e1a-81f3-4a93-aef2-6ae6426100a2/diff-report.json"
+      }
+    },
+    {
+      "article_id": "16e972e5-378d-426c-9269-d716204c52de",
+      "slug": "lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-exposure",
+      "title": "The Signing Sealing Prohibition Direct Supervision Delegation",
+      "folder": ".ai/content-audit-export/articles/lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-expo--16e972e5-378d-426c-9269-d716204c52de",
+      "focus": "Signing/sealing prohibition, immediate supervision, AOR responsibility, and Section 23 discipline exposure",
+      "source_audit_status": "PASS",
+      "linked_questions": 10,
+      "question_edits_created": 10,
+      "raw_sources": [
+        {
+          "key": "ra9266_irr",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "checked_pdf_pages": [
+            14,
+            15,
+            19
+          ]
+        }
+      ],
+      "compose": {
+        "status": "PASS",
+        "blockers": 0
+      },
+      "diff": {
+        "status": "PASS",
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": 0
+      },
+      "validate": {
+        "status": "PASS",
+        "valid": true,
+        "blockers": 0,
+        "warnings": 0
+      },
+      "supabase": "not_attempted_by_request",
+      "original_hash_reconciled": true,
+      "unsupported_or_removed_claims": [
+        "Corrected the linked-question consequence citation from Section 20(e) to Section 23.",
+        "Removed unsupported insurance-loss and automatic-consequence distractor framing from explanations.",
+        "Corrected sealing typos and narrowed specialist-coordination claims to source-backed architectural-document accountability."
+      ],
+      "artifacts": {
+        "normalized": ".ai/content-audit-export/articles/lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-expo--16e972e5-378d-426c-9269-d716204c52de/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-expo--16e972e5-378d-426c-9269-d716204c52de/candidate.md",
+        "sources": ".ai/content-audit-export/articles/lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-expo--16e972e5-378d-426c-9269-d716204c52de/sources.json",
+        "evidence": ".ai/content-audit-export/articles/lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-expo--16e972e5-378d-426c-9269-d716204c52de/source-audit-evidence.json",
+        "question_edits": ".ai/content-audit-export/articles/lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-expo--16e972e5-378d-426c-9269-d716204c52de/question-edits/",
+        "diff_report": ".ai/content-audit-export/articles/lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-expo--16e972e5-378d-426c-9269-d716204c52de/diff-report.json"
+      }
+    }
+  ],
+  "local_gates": [
+    "bun run content-audit:compose -- --article-id <id> --overwrite",
+    "bun run content-audit:diff -- --article-id <id>",
+    "bun run content-audit:validate -- --article-id <id> --summary --dry-run"
+  ],
+  "final_publish_boundary": "Supabase push/dry-run, deploy, and commit intentionally not attempted by request.",
+  "scoped_checks": {
+    "json_parse": "PASS: jq empty over selected article JSON plus batch 006 ledger",
+    "placeholder_internal_note_scan": "PASS: no matches in selected normalized.md, candidate.md, or question-edits for UI placeholders, extracted summaries, internal replacement notes, TODO/FIXME, PARKED, ArticleMedia, or selead typo",
+    "selected_diff_reports": "PASS: all five diff-report.json files changed=true safe_to_push=true blockers=0",
+    "scoped_diff_check": "PASS: git diff --check scoped to Batch 006 artifacts and sync-state",
+    "content_audit_tests": "PASS: bun test scripts/content-audit/content-audit.test.ts; 27 pass, 0 fail",
+    "full_diff_check": "BLOCKED_BY_UNRELATED_PREEXISTING_DIFF: git diff --check reports trailing whitespace in .ai/03_plans/content-editorial-pipeline-2026-05-05/pdf-extraction-sample-output.generated.md, outside Batch 006 scope"
+  }
+}

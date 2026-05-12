@@ -113,7 +113,7 @@ These signals tell us if the module is working or broken:
 
 One in-app survey question, surfaced once:
 
-> "Did this 3D module help you understand development controls better than reading about them?"  
+> "Did this 3D module help you understand development controls better than reading about them?"
 > `[Yes, much clearer] [Somewhat] [Not really] [I was already comfortable with this topic]`
 
 Follow-on (if "Not really"): "What would have made it more useful?" (open-ended)
@@ -167,8 +167,8 @@ This module targets **Level 3 — Interactive** (Moreno & Mayer, 2007), the high
 
 **The feedback loop that makes this Level 3:**
 ```
-Student moves slider → Geometry changes immediately → Scorecard updates → 
-Violation overlay activates if non-compliant → Student sees the consequence → 
+Student moves slider → Geometry changes immediately → Scorecard updates →
+Violation overlay activates if non-compliant → Student sees the consequence →
 Student learns the constraint
 ```
 
@@ -308,9 +308,9 @@ Sliders must use a custom SlateCamp slider component, not a native HTML range in
 ```
 Label row:
   EYEBROW: LOT WIDTH               15.0 m  ← value in DM Mono
-  [━━━━━━━━━━━━●━━━━━━━━━━━━━━━━━━] 
+  [━━━━━━━━━━━━●━━━━━━━━━━━━━━━━━━]
                                             (slider, no violation)
-  
+
   EYEBROW: LOT WIDTH               5.0 m  ← value in Alert Red
   [●━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━]        (violation — too small for setbacks)
   ⚠ Setbacks require at least 6m   ← Violation message below slider

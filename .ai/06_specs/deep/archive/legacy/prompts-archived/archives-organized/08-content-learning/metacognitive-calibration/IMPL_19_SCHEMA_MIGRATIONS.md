@@ -1,7 +1,7 @@
 # IMPL_19: Consolidated Schema Migrations
 
-**Priority:** P0 — Run before any feature implementation  
-**Effort:** ~2 hours  
+**Priority:** P0 — Run before any feature implementation
+**Effort:** ~2 hours
 **Note:** All migrations are additive. No existing columns are modified or dropped. Safe to run on production.
 
 ---

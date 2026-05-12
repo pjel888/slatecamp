@@ -1,0 +1,110 @@
+{
+  "question_id": "2dd938eb-a691-4ddb-bf19-a424943b49ec",
+  "baseline_hash": "sha256:2b7dea59b71bb6551a46169955fa95977c98a2f241b1e78db6f68935eae930d4",
+  "action": "replace",
+  "reason": "source-audited-article-batch-073-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes stale numeric, legal, or unsupported article claims where present.",
+  "approved_by": "codex-local-first-batch-073",
+  "approved_at": "2026-05-12T01:46:28+08:00",
+  "source_audit_support": {
+    "parent_article_id": "21880755-59f3-4749-9786-59e6cb53c6ed",
+    "parent_article_slug": "lea-dsgn-012-01-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "BCI refined markdown lines 245-272, 284-288, 333-356, 360, 733-737, 747-755, and 1328-1336; raw PDF pages 11, 17, 20, 31, 46, and 473-475 checked by local PyMuPDF extraction; DOE refined markdown lines 711-795; raw PDF pages 18-19, 33, 36, and 37 checked by local PyMuPDF extraction; PD 1096 refined markdown lines 560-570 and 2085-2089; raw PDF pages 23-24, 27, 33, and 352 checked by local PyMuPDF extraction",
+    "checked_markdown_lines": [
+      "BCI lines 245-272",
+      "BCI lines 284-288",
+      "BCI lines 333-356",
+      "BCI line 360",
+      "BCI lines 733-737",
+      "BCI lines 747-755",
+      "BCI lines 1328-1336",
+      "DOE lines 711-795",
+      "PD 1096 lines 560-570",
+      "PD 1096 lines 2085-2089"
+    ],
+    "checked_raw_pdf_pages": [
+      "BCI raw PDF pages 11, 17, 20, 31, 46, and 473-475",
+      "DOE raw PDF pages 18-19, 33, 36, and 37",
+      "PD 1096 raw PDF pages 23-24, 27, 33, and 352"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "building-construction-illustrated-b073",
+        "label": "Building Construction Illustrated 5th Edition",
+        "source_type": "professional_reference_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "BCI refined markdown lines 245-272, 284-288, 333-356, 360, 733-737, 747-755, and 1328-1336; raw PDF pages 11, 17, 20, 31, 46, and 473-475 checked by local PyMuPDF extraction",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a"
+      },
+      {
+        "source_id": "doe-energy-conserving-design-b073",
+        "label": "DOE Guidelines on Energy Conserving Design of Buildings 2008",
+        "source_type": "energy_guideline_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.md",
+        "source_locator": "DOE refined markdown lines 711-795; raw PDF pages 18-19, 33, 36, and 37 checked by local PyMuPDF extraction",
+        "raw_pdf_sha256": "sha256:9a1a4019b500ffc2873625db6f04ac50b39aea7cadac9159464f9ed716e8126c",
+        "refined_markdown_sha256": "sha256:477f0990a67359eee303e8280a00be449d0aa413252161db7b5b1bafec3012b9"
+      },
+      {
+        "source_id": "pd1096-rirr-2004-b073",
+        "label": "PD 1096 2004 Revised IRR - National Building Code",
+        "source_type": "primary_law_irr_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 refined markdown lines 560-570 and 2085-2089; raw PDF pages 23-24, 27, 33, and 352 checked by local PyMuPDF extraction",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, and citation rewritten to the Batch 073 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "What is a source-safe orientation warning for air-conditioned buildings?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Long east and west facade exposure can increase solar heat gain and cooling load."
+      },
+      {
+        "id": "b",
+        "text": "North arrows are unnecessary."
+      },
+      {
+        "id": "c",
+        "text": "Orientation never affects energy."
+      },
+      {
+        "id": "d",
+        "text": "All sites require the same plan orientation."
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Correct. This option follows the checked local raw-source evidence.",
+      "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+      "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+      "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+      "correct": "DOE guidance identifies east-west long-facade exposure as a heat-gain concern.",
+      "takeaway": "Use the checked local source condition before applying the rule."
+    },
+    "explanation": "DOE guidance identifies east-west long-facade exposure as a heat-gain concern.",
+    "code_citation": "BCI refined markdown lines 245-272, 284-288, 333-356, 360, 733-737, 747-755, and 1328-1336; raw PDF pages 11, 17, 20, 31, 46, and 473-475 checked by local PyMuPDF extraction; DOE refined markdown lines 711-795; raw PDF pages 18-19, 33, 36, and 37 checked by local PyMuPDF extraction; PD 1096 refined markdown lines 560-570 and 2085-2089; raw PDF pages 23-24, 27, 33, and 352 checked by local PyMuPDF extraction",
+    "bloom_level": "apply",
+    "application_context": "site_planning",
+    "practice_context": [
+      "source-audited-local-first-batch-073"
+    ],
+    "difficulty": 0.55,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false
+  }
+}

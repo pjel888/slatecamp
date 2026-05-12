@@ -1,0 +1,59 @@
+{
+  "question_id": "e49176a1-dadb-4c94-8758-cedaf4ab9925",
+  "baseline_hash": "sha256:429f62cd2fc7cc70b44ec95c3caa61b38084b89c9718829da7b64f8ead9e56c1",
+  "action": "replace",
+  "reason": "source-audited-article-batch-060-local-first: local raw PDF backed replacement constrained to checked Batch 060 TOA 4 Tropical Architecture source family.",
+  "approved_by": "codex-local-first-batch-060",
+  "approved_at": "2026-05-11T21:02:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "2e117d95-eb4c-4d96-8e3f-b31f18d26a64",
+    "parent_article_slug": "lea-theo-004-12-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "TOA 4 Tropical Architecture refined markdown lines 513-591, 622-660, 840-874, 1386-1420, and raw PDF pages 72, 75-78, 82, 84, 104, 106-110, 163, and 172",
+    "checked_markdown_lines": [
+      "TOA 4 Tropical Architecture refined markdown lines 513-591",
+      "TOA 4 Tropical Architecture refined markdown lines 622-660",
+      "TOA 4 Tropical Architecture refined markdown lines 840-874",
+      "TOA 4 Tropical Architecture refined markdown lines 1386-1420"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "toa4-tropical-architecture-local-raw-pdf--b060-2e117d95-01",
+        "label": "TOA 4 Tropical Architecture - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+        "sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+        "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+        "locator": "TOA 4 Tropical Architecture refined markdown lines 513-591, 622-660, 840-874, 1386-1420, and raw PDF pages 72, 75-78, 82, 84, 104, 106-110, 163, and 172"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 060 checked local raw PDF source scope."
+  },
+  "proposed": {
+    "text": "Which statement avoids the common trap?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Thermal comfort depends on heat gain, airflow, and body cooling sensation, not air temperature alone."
+      },
+      {
+        "id": "b",
+        "text": "Only thermometer reading matters."
+      },
+      {
+        "id": "c",
+        "text": "Air movement is irrelevant in hot-humid climates."
+      },
+      {
+        "id": "d",
+        "text": "Shade has no effect on comfort."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Thermal comfort depends on heat gain, airflow, and body cooling sensation, not air temperature alone. This answer is supported by the checked Batch 060 local TOA 4 Tropical Architecture raw PDF source family for Thermal Comfort.",
+    "explanation": "Thermal comfort depends on heat gain, airflow, and body cooling sensation, not air temperature alone. The Batch 060 source audit used the local raw PDF first and refined markdown only as locator evidence for Thermal Comfort.",
+    "code_citation": "TOA 4 Tropical Architecture refined markdown lines 513-591, 622-660, 840-874, 1386-1420, and raw PDF pages 72, 75-78, 82, 84, 104, 106-110, 163, and 172"
+  },
+  "batch_question_template_index": 8
+}

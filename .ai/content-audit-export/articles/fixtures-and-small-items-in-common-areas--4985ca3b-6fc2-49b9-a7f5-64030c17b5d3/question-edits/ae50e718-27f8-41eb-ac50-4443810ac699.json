@@ -1,0 +1,50 @@
+{
+  "question_id": "ae50e718-27f8-41eb-ac50-4443810ac699",
+  "baseline_hash": "sha256:e3e1013c7bf2f03b289b4b189bb50618c8cbea2940bf78686c7c803d3ac19476",
+  "action": "replace",
+  "reason": "source-audited-article-batch-036-local-first: source-safe replacement grounded in local raw PDF/source family evidence; removes unsupported, stale, or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-036",
+  "approved_at": "2026-05-11T12:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-036-local-first",
+    "checked_sources": [
+      {
+        "source_id": "bp-344-2024-revised-irr-ncda-local",
+        "label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "checked_markdown_lines": [
+          "BP 344 2024 Revised IRR refined markdown lines 1090-1135",
+          "BP 344 2024 Revised IRR refined markdown lines 1296-1306",
+          "BP 344 2024 Revised IRR refined markdown lines 1493-1514"
+        ]
+      }
+    ],
+    "citation": "BP 344 2024 Revised IRR, ATMs, Kiosks and Ticket Machines"
+  },
+  "proposed": {
+    "text": "Under BP 344 2024 Revised IRR, what clear space is required in front of ATMs?",
+    "options": [
+      {
+        "id": "b036-4985-05-a",
+        "text": "1800 mm by 1800 mm minimum clear unobstructed space"
+      },
+      {
+        "id": "b036-4985-05-b",
+        "text": "1500 mm by 1500 mm maximum clear space"
+      },
+      {
+        "id": "b036-4985-05-c",
+        "text": "900 mm by 1200 mm transfer space only"
+      },
+      {
+        "id": "b036-4985-05-d",
+        "text": "1200 mm by 1200 mm turning space"
+      }
+    ],
+    "correct_option_id": "b036-4985-05-a",
+    "rationale": "Correct answer: 1800 mm by 1800 mm minimum clear unobstructed space. This is directly supported by BP 344 2024 Revised IRR, ATMs, Kiosks and Ticket Machines.",
+    "explanation": "The source-audited correction uses only the local raw PDF family and locator-checked refined markdown for BP 344 2024 Revised IRR, ATMs, Kiosks and Ticket Machines.",
+    "code_citation": "BP 344 2024 Revised IRR, ATMs, Kiosks and Ticket Machines"
+  }
+}

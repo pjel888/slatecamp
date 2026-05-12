@@ -1,0 +1,49 @@
+{
+  "question_id": "417f06d7-a5d9-4869-a2bf-2b579947dc72",
+  "baseline_hash": "sha256:196f5a943b19767bc98b0e31da81ce525097bdbe83559da6af064fd18b3f08f1",
+  "action": "replace",
+  "reason": "source-audited-article-batch-039-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-039",
+  "approved_at": "2026-05-11T13:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-039-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 4007-4064",
+          "PD 1096 RIRR refined markdown lines 4109-4303"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 1301"
+  },
+  "proposed": {
+    "text": "Who must sign and seal plans and specifications for electrical installations under Section 1301?",
+    "options": [
+      {
+        "id": "b039-aeee-20-a",
+        "text": "A Professional Electrical Engineer"
+      },
+      {
+        "id": "b039-aeee-20-b",
+        "text": "A contractor only"
+      },
+      {
+        "id": "b039-aeee-20-c",
+        "text": "A materials supplier"
+      },
+      {
+        "id": "b039-aeee-20-d",
+        "text": "A building owner without a professional seal"
+      }
+    ],
+    "correct_option_id": "b039-aeee-20-a",
+    "rationale": "Correct answer: A Professional Electrical Engineer. This is directly supported by PD 1096 2004 Revised IRR, Section 1301.",
+    "explanation": "The Batch 039 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 1301.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 1301"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "schema_version": "batch-scoped-checks-v1",
+  "batch_id": "source-audited-article-batch-034-local-first",
+  "generated_at": "2026-05-11T03:21:18.714Z",
+  "status": "PASS",
+  "blockers": [],
+  "counts": {
+    "article_count": 5,
+    "json_parse_count": 100,
+    "linked_question_count": 50,
+    "question_edit_count": 50,
+    "source_hash_checks": 34,
+    "placeholder_internal_source_gap_matches": 0,
+    "stale_compose_error_files": 0
+  },
+  "article_results": [
+    {
+      "article_id": "ef8c505a-0fd2-459b-a6dc-6ca8e30f179f",
+      "slug": "lea-prac-cmp-005-core-concept",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-cmp-005-core-concept--ef8c505a-0fd2-459b-a6dc-6ca8e30f179f",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "candidate_hash": "sha256:d8bde9936c751b1e4ae65a5f2f64cc2465fb8b71bb2d719572987340734e2574",
+      "compose_blockers": [],
+      "diff_safe_to_push": true,
+      "source_audit_status": "PASS",
+      "source_count": 4
+    },
+    {
+      "article_id": "3a7ba43c-5ef5-4fd8-b054-ccb8a567d6f7",
+      "slug": "lea-prac-eth-013-introduction",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-eth-013-introduction--3a7ba43c-5ef5-4fd8-b054-ccb8a567d6f7",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "candidate_hash": "sha256:39b73d0016da71a124471e889a013197a4dfa1efe6692f5527a157494ecf74bb",
+      "compose_blockers": [],
+      "diff_safe_to_push": true,
+      "source_audit_status": "PASS",
+      "source_count": 3
+    },
+    {
+      "article_id": "debf8513-f91a-4e0a-9f32-8fe4f677ed71",
+      "slug": "lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation--debf8513-f91a-4e0a-9f32-8fe4f677ed71",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "candidate_hash": "sha256:ad30bb21f02340ca0988d645b08200244b675407a4fe225e68d1b0914d3dc23d",
+      "compose_blockers": [],
+      "diff_safe_to_push": true,
+      "source_audit_status": "PASS",
+      "source_count": 3
+    },
+    {
+      "article_id": "355981c3-3480-4441-991d-8d8e94cd20b5",
+      "slug": "lea-prac-svc-016-post-construction-services-building-administration-and-operations-support",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-016-post-construction-services-building-administration-and-operations-support--355981c3-3480-4441-991d-8d8e94cd20b5",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "candidate_hash": "sha256:7490315318afbaef08a2c06861f74590e0e70857b7f7010dce1961299178dc69",
+      "compose_blockers": [],
+      "diff_safe_to_push": true,
+      "source_audit_status": "PASS",
+      "source_count": 2
+    },
+    {
+      "article_id": "4ecfe37d-2ee5-4d7e-8878-65fee5a29770",
+      "slug": "lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-021-project-delivery-methods-compared-dbb-db-cm-at-risk-and-integrated-project-delivery--4ecfe37d-2ee5-4d7e-8878-65fee5a29770",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "candidate_hash": "sha256:cd236433a2723a29478ff9571b0f6d1fe2ad22faff29527ba76a83a9f05d56c6",
+      "compose_blockers": [],
+      "diff_safe_to_push": true,
+      "source_audit_status": "PASS",
+      "source_count": 5
+    }
+  ],
+  "source_hash_mismatches": [],
+  "marker_matches": [],
+  "stale_compose_errors": []
+}

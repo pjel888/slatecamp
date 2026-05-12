@@ -1,0 +1,115 @@
+{
+  "question_id": "aff35374-81ed-426a-868b-86682bfeb7df",
+  "baseline_hash": "sha256:ee7051b09c1c155aa3c1b63075a55ffea895dfeea73b427d216a3b73b017e934",
+  "action": "replace",
+  "reason": "source-audited-article-batch-074-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes out-of-scope or stale claims from the exported question.",
+  "approved_by": "codex-local-first-batch-074",
+  "approved_at": "2026-05-12T02:15:00.945+08:00",
+  "source_audit_support": {
+    "parent_article_id": "7c0e2fa5-7f3d-419a-b592-50346ac7ab2f",
+    "parent_article_slug": "lea-plan-003-02-what-you-need-to-know-for-the-lea",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "BP 220 refined markdown lines 105-147, 151-195, 215-264, 420-465, and 482-504; raw PDF pages 5-6, 8-10, and 12 checked by local PyMuPDF extraction; PD 957 refined markdown lines 105-123, 129-177, 198-224, 358-405, and 470-512; raw PDF pages 6-7 and 11-14 checked by local PyMuPDF extraction; RA 7279 refined markdown lines 13-85, 111-131, 230-253, 257-313, and 319-329; raw PDF pages 1-7 checked by local PyMuPDF extraction; RA 11201 IRR refined markdown lines 17-36, 40-99, 134-162, and 187-204; raw PDF pages 1-7 checked by local PyMuPDF extraction",
+    "checked_markdown_lines": [
+      "BP 220 refined markdown lines 105-147, 151-195, 215-264, 420-465, and 482-504",
+      "PD 957 refined markdown lines 105-123, 129-177, 198-224, 358-405, and 470-512",
+      "RA 7279 refined markdown lines 13-85, 111-131, 230-253, 257-313, and 319-329",
+      "RA 11201 IRR refined markdown lines 17-36, 40-99, 134-162, and 187-204"
+    ],
+    "checked_raw_pdf_pages": [
+      "Revised IRR of BP 220, 2008: 5-6, 8-10, and 12 checked by local PyMuPDF extraction",
+      "PD 957 IRR - Subdivision and Condominium Buyers Protective Decree: 6-7 and 11-14 checked by local PyMuPDF extraction",
+      "RA 7279 Urban Development and Housing Act: 1-7 checked by local PyMuPDF extraction",
+      "RA 11201 IRR - DHSUD Act Implementing Rules: 1-7 checked by local PyMuPDF extraction"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "bp220-irr-2008-b074",
+        "label": "Revised IRR of BP 220, 2008",
+        "source_type": "primary_law_irr_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-220/Revised_IRR_BP220_2008.pdf",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-220/Revised_IRR_BP220_2008.md",
+        "source_locator": "BP 220 refined markdown lines 105-147, 151-195, 215-264, 420-465, and 482-504; raw PDF pages 5-6, 8-10, and 12 checked by local PyMuPDF extraction",
+        "raw_pdf_sha256": "sha256:7392741260c227647afe39de283f3efa979465692da8905e59be8857c8651614",
+        "refined_markdown_sha256": "sha256:4d66a5ce3891d6405324d52ae8b874f75321da0e5f00213489be43d754d27be1"
+      },
+      {
+        "source_id": "pd957-irr-subdivision-condominium-b074",
+        "label": "PD 957 IRR - Subdivision and Condominium Buyers Protective Decree",
+        "source_type": "primary_law_irr_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-957/PD 957 IRR - Subdivision and Condominium IRR.pdf",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-957/PD 957 IRR - Subdivision and Condominium IRR.md",
+        "source_locator": "PD 957 refined markdown lines 105-123, 129-177, 198-224, 358-405, and 470-512; raw PDF pages 6-7 and 11-14 checked by local PyMuPDF extraction",
+        "raw_pdf_sha256": "sha256:1f9ab17a816885cfdbafafc03e3e9b64470a737447129a32a459836d6773f9ea",
+        "refined_markdown_sha256": "sha256:0edd45f5293044779c45c36e5219904d3863cfa747d200864959fc1bf6a9ff7b"
+      },
+      {
+        "source_id": "ra7279-udha-2009-b074",
+        "label": "RA 7279 Urban Development and Housing Act",
+        "source_type": "primary_law_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7279/RA 7279 Urban Development and Housing Act 2009.pdf",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7279/RA 7279 Urban Development and Housing Act 2009.md",
+        "source_locator": "RA 7279 refined markdown lines 13-85, 111-131, 230-253, 257-313, and 319-329; raw PDF pages 1-7 checked by local PyMuPDF extraction",
+        "raw_pdf_sha256": "sha256:23efa9c0278519d79ed424d9ced016b24619ebb42a19e75a05dc9bb8bf1c4696",
+        "refined_markdown_sha256": "sha256:f52859fb18fec28c403348851c3e53caca2e678cb9cec43fbca28d8d5c3a323e"
+      },
+      {
+        "source_id": "ra11201-irr-dhsud-b074",
+        "label": "RA 11201 IRR - DHSUD Act Implementing Rules",
+        "source_type": "primary_law_irr_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "source_locator": "RA 11201 IRR refined markdown lines 17-36, 40-99, 134-162, and 187-204; raw PDF pages 1-7 checked by local PyMuPDF extraction",
+        "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_sha256": "sha256:40f1a5041c69b3a4aea7c8ba138a9d570bc686bea48aa5618ea6423a6a719528"
+      }
+    ],
+    "local_source_safe_action": "Question text, answer, rationale, and citation rewritten to the source-audited-article-batch-074-local-first checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "A subdivision item gives a 120 sq m single detached lot and a 42 sq m minimum floor area. Which checked classification fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "PD 957 open market housing"
+      },
+      {
+        "id": "b",
+        "text": "BP 220 socialized housing"
+      },
+      {
+        "id": "c",
+        "text": "BP 220 economic rowhouse housing"
+      },
+      {
+        "id": "d",
+        "text": "RA 7279 Community Mortgage Program"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Correct. PD 957 open market housing uses 120 sq m for single detached lots and 42 sq m floor area.",
+      "b": "Incorrect. This changes the checked source condition or applies a different rule.",
+      "c": "Incorrect. This changes the checked source condition or applies a different rule.",
+      "d": "Incorrect. This changes the checked source condition or applies a different rule.",
+      "correct": "PD 957 open market housing uses 120 sq m for single detached lots and 42 sq m floor area.",
+      "takeaway": "Apply the checked local raw-source condition before choosing the answer."
+    },
+    "explanation": "PD 957 open market housing uses 120 sq m for single detached lots and 42 sq m floor area.",
+    "code_citation": "BP 220 refined markdown lines 105-147, 151-195, 215-264, 420-465, and 482-504; raw PDF pages 5-6, 8-10, and 12 checked by local PyMuPDF extraction; PD 957 refined markdown lines 105-123, 129-177, 198-224, 358-405, and 470-512; raw PDF pages 6-7 and 11-14 checked by local PyMuPDF extraction; RA 7279 refined markdown lines 13-85, 111-131, 230-253, 257-313, and 319-329; raw PDF pages 1-7 checked by local PyMuPDF extraction; RA 11201 IRR refined markdown lines 17-36, 40-99, 134-162, and 187-204; raw PDF pages 1-7 checked by local PyMuPDF extraction",
+    "bloom_level": "apply",
+    "application_context": "housing_classification",
+    "practice_context": [
+      "source-audited-article-batch-074-local-first"
+    ],
+    "difficulty": 0.62,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false
+  }
+}

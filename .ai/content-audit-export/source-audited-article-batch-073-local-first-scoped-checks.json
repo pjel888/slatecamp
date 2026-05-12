@@ -1,0 +1,169 @@
+{
+  "batch": "073",
+  "generated_at": "2026-05-12T01:52:46+08:00",
+  "mode": "local-first-source-audited-continuation",
+  "article_count": 5,
+  "question_edit_count": 50,
+  "selected_article_ids": [
+    "c9b1aadd-4843-4cf3-a551-6dd67678e508",
+    "21880755-59f3-4749-9786-59e6cb53c6ed",
+    "a59db1e5-3988-489e-841d-e71e4f37050c",
+    "5de12a80-903b-4488-bc66-e855e8cb4129",
+    "f8fb0ea9-fe68-4909-af36-534d144990ae"
+  ],
+  "checks": {
+    "compose": {
+      "status": "PASS",
+      "command": "bun run content-audit:compose -- --article-id <id> --overwrite --strict",
+      "article_count": 5,
+      "blockers": 0
+    },
+    "diff": {
+      "status": "PASS",
+      "command": "bun run content-audit:diff -- --article-id <id> --summary --strict",
+      "article_count": 5,
+      "safe_to_push": true,
+      "blockers": 0
+    },
+    "validate": {
+      "status": "PASS",
+      "command": "bun run content-audit:validate -- --article-id <id> --summary",
+      "article_count": 5,
+      "valid": true,
+      "blockers": 0,
+      "warnings": 5,
+      "warning_note": "component-usage.json warning only; unchanged expected local export warning."
+    },
+    "ui_block_edits": {
+      "status": "PASS",
+      "command": "bun run content-audit:ui-block-edits -- --article-id <id>",
+      "article_count": 5,
+      "valid": true,
+      "blockers": 0,
+      "warnings": 0
+    },
+    "scoped_json_parse": {
+      "status": "PASS",
+      "parsed_files": 105,
+      "failures": 0,
+      "blockers": 0,
+      "failure_details": []
+    },
+    "marker_internal_source_gap_scan": {
+      "status": "PASS",
+      "scanned_files": 95,
+      "hits": 0,
+      "hit_details": [],
+      "scan_scope_note": "Publication and proposal surfaces only; generated compose/diff report schema fields are excluded.",
+      "excluded_immutable_baselines": [
+        "original.md",
+        "linked-questions.json"
+      ],
+      "excluded_generated_reports": [
+        "compose-report.json",
+        "diff-report.json",
+        "diff-report.md",
+        "ui-block-edit-validation.json"
+      ]
+    },
+    "source_hash_check": {
+      "status": "PASS",
+      "checked_source_instances": 14,
+      "blockers": 0,
+      "failure_details": []
+    },
+    "question_edit_count_check": {
+      "status": "PASS",
+      "expected": 50,
+      "actual": 50,
+      "blockers": 0
+    },
+    "stale_compose_error_check": {
+      "status": "PASS",
+      "stale_compose_error_files": 0,
+      "blockers": 0,
+      "files": []
+    },
+    "targeted_tests": {
+      "status": "PASS",
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "tests": 34,
+      "failures": 0,
+      "expectations": 328
+    },
+    "scoped_git_diff_check": {
+      "status": "PASS",
+      "command": "git diff --check -- <batch-073 scoped paths>",
+      "checked_at": "2026-05-12T01:52:46+08:00",
+      "blockers": 0
+    }
+  },
+  "articles": [
+    {
+      "article_id": "c9b1aadd-4843-4cf3-a551-6dd67678e508",
+      "slug": "lea-dsgn-007-04-core-concept",
+      "article_folder": ".ai/content-audit-export/articles/lea-dsgn-007-04-core-concept--c9b1aadd-4843-4cf3-a551-6dd67678e508",
+      "question_edits_count": 10,
+      "source_count": 3,
+      "compose_blockers": 0,
+      "diff_safe_to_push": true,
+      "validation_valid": true,
+      "source_audit_status": "PASS",
+      "raw_pdf_gate": "PASS",
+      "scenario_enrichment_status": "eligible-deferred"
+    },
+    {
+      "article_id": "21880755-59f3-4749-9786-59e6cb53c6ed",
+      "slug": "lea-dsgn-012-01-core-concept",
+      "article_folder": ".ai/content-audit-export/articles/lea-dsgn-012-01-core-concept--21880755-59f3-4749-9786-59e6cb53c6ed",
+      "question_edits_count": 10,
+      "source_count": 3,
+      "compose_blockers": 0,
+      "diff_safe_to_push": true,
+      "validation_valid": true,
+      "source_audit_status": "PASS",
+      "raw_pdf_gate": "PASS",
+      "scenario_enrichment_status": "eligible-deferred"
+    },
+    {
+      "article_id": "a59db1e5-3988-489e-841d-e71e4f37050c",
+      "slug": "lea-dsgn-012-02-core-concept",
+      "article_folder": ".ai/content-audit-export/articles/lea-dsgn-012-02-core-concept--a59db1e5-3988-489e-841d-e71e4f37050c",
+      "question_edits_count": 10,
+      "source_count": 2,
+      "compose_blockers": 0,
+      "diff_safe_to_push": true,
+      "validation_valid": true,
+      "source_audit_status": "PASS",
+      "raw_pdf_gate": "PASS",
+      "scenario_enrichment_status": "eligible-deferred"
+    },
+    {
+      "article_id": "5de12a80-903b-4488-bc66-e855e8cb4129",
+      "slug": "lea-dsgn-012-03-core-concept",
+      "article_folder": ".ai/content-audit-export/articles/lea-dsgn-012-03-core-concept--5de12a80-903b-4488-bc66-e855e8cb4129",
+      "question_edits_count": 10,
+      "source_count": 2,
+      "compose_blockers": 0,
+      "diff_safe_to_push": true,
+      "validation_valid": true,
+      "source_audit_status": "PASS",
+      "raw_pdf_gate": "PASS",
+      "scenario_enrichment_status": "eligible-deferred"
+    },
+    {
+      "article_id": "f8fb0ea9-fe68-4909-af36-534d144990ae",
+      "slug": "lea-dsgn-012-05-core-concept",
+      "article_folder": ".ai/content-audit-export/articles/lea-dsgn-012-05-core-concept--f8fb0ea9-fe68-4909-af36-534d144990ae",
+      "question_edits_count": 10,
+      "source_count": 4,
+      "compose_blockers": 0,
+      "diff_safe_to_push": true,
+      "validation_valid": true,
+      "source_audit_status": "PASS",
+      "raw_pdf_gate": "PASS",
+      "scenario_enrichment_status": "eligible-deferred"
+    }
+  ],
+  "unresolved_blockers": []
+}

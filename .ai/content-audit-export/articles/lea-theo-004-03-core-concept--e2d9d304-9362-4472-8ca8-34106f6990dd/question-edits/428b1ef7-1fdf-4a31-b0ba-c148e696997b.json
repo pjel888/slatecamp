@@ -1,0 +1,59 @@
+{
+  "question_id": "428b1ef7-1fdf-4a31-b0ba-c148e696997b",
+  "baseline_hash": "sha256:147d3bcc418b09322e03636a5baeb96ccc2a38838aa096a06099930e9ef81dc0",
+  "action": "replace",
+  "reason": "source-audited-article-batch-060-local-first: local raw PDF backed replacement constrained to checked Batch 060 TOA 4 Tropical Architecture source family.",
+  "approved_by": "codex-local-first-batch-060",
+  "approved_at": "2026-05-11T21:02:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "e2d9d304-9362-4472-8ca8-34106f6990dd",
+    "parent_article_slug": "lea-theo-004-03-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "TOA 4 Tropical Architecture refined markdown lines 1562-1573, 513-591, 622-670, 708-874, and raw PDF pages 180-181, 71-78, 81-84, 87-90, and 104",
+    "checked_markdown_lines": [
+      "TOA 4 Tropical Architecture refined markdown lines 1562-1573",
+      "TOA 4 Tropical Architecture refined markdown lines 513-591",
+      "TOA 4 Tropical Architecture refined markdown lines 622-670",
+      "TOA 4 Tropical Architecture refined markdown lines 708-874"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "toa4-tropical-architecture-local-raw-pdf--b060-e2d9d304-01",
+        "label": "TOA 4 Tropical Architecture - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+        "sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+        "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+        "locator": "TOA 4 Tropical Architecture refined markdown lines 1562-1573, 513-591, 622-670, 708-874, and raw PDF pages 180-181, 71-78, 81-84, 87-90, and 104"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 060 checked local raw PDF source scope."
+  },
+  "proposed": {
+    "text": "Which objective best fits hot-humid green design?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Maximize filtered air movement and provide strong shade."
+      },
+      {
+        "id": "b",
+        "text": "Maximize heat gain and stop all wind."
+      },
+      {
+        "id": "c",
+        "text": "Use glass exposure as the first comfort strategy."
+      },
+      {
+        "id": "d",
+        "text": "Ignore humidity because only temperature matters."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Maximize filtered air movement and provide strong shade. This answer is supported by the checked Batch 060 local TOA 4 Tropical Architecture raw PDF source family for Green building in the Philippines operates at.",
+    "explanation": "Maximize filtered air movement and provide strong shade. The Batch 060 source audit used the local raw PDF first and refined markdown only as locator evidence for Green building in the Philippines operates at.",
+    "code_citation": "TOA 4 Tropical Architecture refined markdown lines 1562-1573, 513-591, 622-670, 708-874, and raw PDF pages 180-181, 71-78, 81-84, 87-90, and 104"
+  },
+  "batch_question_template_index": 2
+}

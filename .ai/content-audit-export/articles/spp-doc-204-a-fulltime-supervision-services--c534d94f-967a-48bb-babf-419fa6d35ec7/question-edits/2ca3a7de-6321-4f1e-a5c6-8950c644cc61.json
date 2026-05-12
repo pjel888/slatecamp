@@ -1,0 +1,61 @@
+{
+  "question_id": "2ca3a7de-6321-4f1e-a5c6-8950c644cc61",
+  "baseline_hash": "sha256:376e27c7ab5dc64c27a58a7e71c2222e1a6871ebd7445c4367d1c95179928f16",
+  "action": "replace",
+  "reason": "source-audited-article-batch-020-local-first rewrote the question to match only locally checked source evidence.",
+  "approved_by": "codex-local-source-audit-batch-020",
+  "approved_at": "2026-05-10T16:41:51.472Z",
+  "source_audit_support": {
+    "parent_article_id": "c534d94f-967a-48bb-babf-419fa6d35ec7",
+    "parent_article_slug": "spp-doc-204-a-fulltime-supervision-services",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "checked_sources": [
+      {
+        "source_id": "spp-204a-uap-local-raw-pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204A.pdf",
+        "raw_pdf_sha256": "sha256:ec08811ae8611f077fda9f0d1106cc7fab6a1e6210fe6d617637adaa6de083b8",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md lines 3-8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md lines 201-206"
+      }
+    ],
+    "local_source_safe_action": "Replaced the prior item with a source-bounded MCQ using only checked SPP source lines."
+  },
+  "proposed": {
+    "text": "Which item is included in the checked SPP 204-A scope list?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Evaluation of Construction Work."
+      },
+      {
+        "id": "b",
+        "text": "Competition secretariat administration."
+      },
+      {
+        "id": "c",
+        "text": "Owner financing of an ADC."
+      },
+      {
+        "id": "d",
+        "text": "Site and Physical Planning Services."
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "Evaluation of Construction Work is listed in the checked SPP 204-A scope.",
+    "explanation": "Evaluation of Construction Work is listed in the checked SPP 204-A scope.",
+    "code_citation": "SPP Document 204-A",
+    "bloom_level": "remember",
+    "application_context": "professional_practice",
+    "practice_context": [
+      "SPP Document 204-A",
+      "SPP Doc 204-A: Fulltime Supervision Services"
+    ],
+    "difficulty": 0.45,
+    "is_assessment": false,
+    "model_id": "BATCH-020-spp-doc-204-a-fulltime-supervision-services-003"
+  }
+}

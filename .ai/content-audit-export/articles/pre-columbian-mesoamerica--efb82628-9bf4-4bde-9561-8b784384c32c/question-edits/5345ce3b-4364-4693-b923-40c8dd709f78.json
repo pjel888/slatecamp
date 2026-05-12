@@ -1,0 +1,60 @@
+{
+  "question_id": "5345ce3b-4364-4693-b923-40c8dd709f78",
+  "baseline_hash": "sha256:28888921cbb81acd1e229d0e0a257b604ee882dbec6310d3ba01b54875373067",
+  "action": "replace",
+  "reason": "source-audited-article-batch-054-local-first: local raw PDF backed replacement constrained to checked Batch 054 source families.",
+  "approved_by": "codex-local-first-batch-054",
+  "approved_at": "2026-05-11T19:22:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "efb82628-9bf4-4bde-9561-8b784384c32c",
+    "parent_article_slug": "pre-columbian-mesoamerica",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "George Salvan Architectural Character refined markdown lines 1238-1315",
+    "checked_markdown_lines": [
+      "George Salvan Architectural Character refined markdown lines 1238-1241",
+      "George Salvan Architectural Character refined markdown lines 1245-1257",
+      "George Salvan Architectural Character refined markdown lines 1261-1265",
+      "George Salvan Architectural Character refined markdown lines 1273-1281",
+      "George Salvan Architectural Character refined markdown lines 1285-1315"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "salvan-character-local-raw-pdf--b054-efb82628-01",
+        "label": "George Salvan Architectural Character and the History of Architecture - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Character and the History of Architecture.pdf",
+        "sha256": "sha256:55c4fa2d43bbfd27cffb86d0aac4ad960032e178e1e25c29d4eb351297bfc069",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Character and the History of Architecture.md",
+        "refined_markdown_sha256": "sha256:be8e760bef8f7ceb573742d996dabb202f0353e19b4ab9283ec2de7dfc1fccea",
+        "locator": "George Salvan Architectural Character refined markdown lines 1238-1315"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 054 checked local raw PDF source scope."
+  },
+  "proposed": {
+    "text": "Which construction clue is tied to Maya architecture in the checked source?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Corbel or arch construction."
+      },
+      {
+        "id": "b",
+        "text": "Smooth Inca ashlar with cushion faces."
+      },
+      {
+        "id": "c",
+        "text": "Hardpacked snow blocks built spirally."
+      },
+      {
+        "id": "d",
+        "text": "Color-coded mechanical services."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Corbel or arch construction. This answer is supported by the checked Batch 054 local raw PDF source families for Pre-Columbian Mesoamerica.",
+    "explanation": "Corbel or arch construction. The Batch 054 source audit used local raw PDFs first and refined markdown only as locator evidence for Pre-Columbian Mesoamerica.",
+    "code_citation": "George Salvan Architectural Character refined markdown lines 1273-1281"
+  },
+  "batch_question_template_index": 4
+}

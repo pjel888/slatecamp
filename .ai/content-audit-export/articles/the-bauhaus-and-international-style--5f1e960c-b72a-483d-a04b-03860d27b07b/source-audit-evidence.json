@@ -1,0 +1,176 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-052-local-first",
+  "batch_number": 52,
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T18:46:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "5f1e960c-b72a-483d-a04b-03860d27b07b",
+    "slug": "the-bauhaus-and-international-style",
+    "title": "The Bauhaus and International Style",
+    "article_folder": ".ai/content-audit-export/articles/the-bauhaus-and-international-style--5f1e960c-b72a-483d-a04b-03860d27b07b",
+    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/the-bauhaus-and-international-style--5f1e960c-b72a-483d-a04b-03860d27b07b",
+    "candidate_path": ".ai/content-audit-export/articles/the-bauhaus-and-international-style--5f1e960c-b72a-483d-a04b-03860d27b07b/candidate.md",
+    "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/the-bauhaus-and-international-style--5f1e960c-b72a-483d-a04b-03860d27b07b/candidate.md",
+    "question_edits_folder": ".ai/content-audit-export/articles/the-bauhaus-and-international-style--5f1e960c-b72a-483d-a04b-03860d27b07b/question-edits",
+    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/the-bauhaus-and-international-style--5f1e960c-b72a-483d-a04b-03860d27b07b/question-edits",
+    "normalized_sha256": "sha256:0f0e33b8c6c408607fb4f05e6e75c7852073c92f4b04b11ad1589f9fe6def524",
+    "candidate_sha256": "sha256:0f0e33b8c6c408607fb4f05e6e75c7852073c92f4b04b11ad1589f9fe6def524",
+    "linked_questions_sha256": "sha256:341dd009ef4bcc3ec1a30d4996f8b3373fed0b00403b70e07b07243fb14b5437",
+    "sources_sha256": "sha256:76299b4df58c6a03e8f673701c9c880ff3c59cb38d3fe90e68c198442096f116"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "refined_markdown_role": "locator_only",
+    "derivative_or_search_layer_as_primary": false,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": [],
+    "source_families_checked": [
+      {
+        "label": "HOA Module 2 P3 - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/HOA MODULE 2 P3.pdf",
+        "raw_pdf_sha256": "sha256:b62daa7737b464ab7dc573d64f0f8701998462f8ac0fe933d96e8ecfe8040ba2",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/HOA MODULE 2 P3.md",
+        "refined_markdown_sha256": "sha256:d53cf6de56725d4b046a9f6b72665039b32d0bd932abc4d158ec0b2ba4b290e8",
+        "locator": "HOA Module 2 P3 refined markdown lines 252-274, 278-313, 315-338, 340-457, and 477-488"
+      },
+      {
+        "label": "20th Century Architects 2 - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/20th Century Architects 2.pdf",
+        "raw_pdf_sha256": "sha256:04d2fb9222f474da725504c3a3f776798bb85e5757d95a1571ed10ada8a23ce5",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/20th Century Architects 2.md",
+        "refined_markdown_sha256": "sha256:10cac18548220ee6ef65bc4b693e58152f1aa1cad78e6fddeb30924f0cc54912",
+        "locator": "20th Century Architects 2 refined markdown lines 1-66 and 70-104"
+      },
+      {
+        "label": "Modern Architectures in History USA - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Modern Architectures in History (USA) - Gwendolyn Wright.pdf",
+        "raw_pdf_sha256": "sha256:2910fe1d48df8a3822e69d8dcbe830b8bd5948af1da991028f0dc6d062cd578d",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Modern Architectures in History (USA) - Gwendolyn Wright.md",
+        "refined_markdown_sha256": "sha256:97479009e43ab4d8b3c2df4ef9285ce36947f8b7a66370527a470994d0fbd70d",
+        "locator": "Modern Architectures in History USA refined markdown lines 763-769, 1433-1441, 1546-1548, 1751-1763, 1803-1805, 1828-1834, 1902-1906, and 1950-1956"
+      },
+      {
+        "label": "TOA 5 Masters of Architecture - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 5 (Masters of Architecture).pdf",
+        "raw_pdf_sha256": "sha256:a157cf70f7d2017ffe960858e3565de6f1280f49c1237139e51f7cf0ecf8008b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 5 (Masters of Architecture).md",
+        "refined_markdown_sha256": "sha256:06c5f34a17ef793bddfb801de237e2eb3a09f371b92d41b7205679a20b381423",
+        "locator": "TOA 5 Masters of Architecture refined markdown lines 256-262, 608-612, 648-652, 707-711, and 742-789"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "bauhaus_international_style",
+    "contains_legal_or_code_claims": false,
+    "source_risk_tier": "medium",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 23,
+    "question_edits_created": [
+      "5640ac2d-0a6e-4513-8987-e561e433a968",
+      "2b19d471-9c99-4dbb-87d9-e25fe6945113",
+      "ce36df99-6d3d-406e-a750-c9d171f89327",
+      "c5dec4ac-cfd5-4c90-8c1c-c222b54cc3be",
+      "5ae24d86-bfb8-472b-ba41-fec3f598cf9e",
+      "a00fdc6e-cd4e-4964-949d-bc730b44e9cc",
+      "6e5a348c-1882-493d-b1a5-7b6a72da757b",
+      "6c2d525c-d9be-41d4-9693-6bdd358d9bc2",
+      "5a64b78f-d9d3-4733-8f91-fdd59a5b784d",
+      "41b6811a-3c41-48ea-9833-556cf779be56",
+      "5ac45513-8fa3-4d59-a3c6-379f878a8f73",
+      "6b21e775-9d64-4bf9-81ee-1a85145fe73d",
+      "c8939d3e-04c0-4ae3-b819-03a09fd7116c",
+      "0f72eac7-6197-458d-81b7-8d4b9c6340b7",
+      "7f0f40bd-53c5-4263-8283-b52efce45031",
+      "536aeedd-4dee-414a-a498-1692e22dc8de",
+      "615974b1-47c8-4093-bec8-90935573b394",
+      "785c7101-8d61-4b3f-95c1-d29b4a993fe2",
+      "6e2b406a-7838-4026-a76f-f5ed1ad2faae",
+      "a0351729-866b-49ef-b0dd-2ce9582cb6c4",
+      "318136be-db5f-4cf8-8920-4633bf22ed75",
+      "ac739880-5e4a-4826-9767-dbcd56021b39",
+      "e48da0f5-c8ae-43e9-9d02-4fac41649f0b"
+    ]
+  },
+  "checked_markdown_lines": [
+    "HOA Module 2 P3 refined markdown lines 252-274",
+    "HOA Module 2 P3 refined markdown lines 278-313",
+    "HOA Module 2 P3 refined markdown lines 315-338",
+    "HOA Module 2 P3 refined markdown lines 340-457",
+    "HOA Module 2 P3 refined markdown lines 477-488",
+    "20th Century Architects 2 refined markdown lines 1-66",
+    "20th Century Architects 2 refined markdown lines 70-104",
+    "Modern Architectures in History USA refined markdown lines 763-769",
+    "Modern Architectures in History USA refined markdown lines 1433-1441",
+    "Modern Architectures in History USA refined markdown lines 1546-1548",
+    "Modern Architectures in History USA refined markdown lines 1751-1763",
+    "Modern Architectures in History USA refined markdown lines 1803-1805",
+    "Modern Architectures in History USA refined markdown lines 1828-1834",
+    "Modern Architectures in History USA refined markdown lines 1902-1906",
+    "Modern Architectures in History USA refined markdown lines 1950-1956",
+    "TOA 5 Masters of Architecture refined markdown lines 256-262",
+    "TOA 5 Masters of Architecture refined markdown lines 608-612",
+    "TOA 5 Masters of Architecture refined markdown lines 648-652",
+    "TOA 5 Masters of Architecture refined markdown lines 707-711",
+    "TOA 5 Masters of Architecture refined markdown lines 742-789"
+  ],
+  "claims": [
+    {
+      "claim_id": "the-bauhaus-and-international-style-b052-claim-01",
+      "claim_text": "The Bauhaus and International Style should be distinguished as a school/training movement versus a formal modern architectural language grounded in function, simple geometry, glass, steel, reinforced concrete, and limited ornament.",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/HOA MODULE 2 P3.pdf",
+        "quoted_pdf_excerpt": "HOA Module 2 P3 refined markdown lines 252-274, 278-313, 315-338, 340-457, and 477-488; 20th Century Architects 2 refined markdown lines 1-66 and 70-104; Modern Architectures in History USA refined markdown lines 763-769, 1433-1441, 1546-1548, 1751-1763, 1803-1805, 1828-1834, 1902-1906, and 1950-1956; TOA 5 Masters of Architecture refined markdown lines 256-262, 608-612, 648-652, 707-711, and 742-789",
+        "source_ids": [
+          "hoa2p3-local-raw-pdf--b052-5f1e960c-01",
+          "twentieth2-local-raw-pdf--b052-5f1e960c-02",
+          "modernusa-local-raw-pdf--b052-5f1e960c-03",
+          "toa5-local-raw-pdf--b052-5f1e960c-04"
+        ]
+      },
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "the-bauhaus-and-international-style-b052-claim-questions",
+      "claim_text": "Batch 052 question edits audited for the-bauhaus-and-international-style: 5640ac2d-0a6e-4513-8987-e561e433a968, 2b19d471-9c99-4dbb-87d9-e25fe6945113, ce36df99-6d3d-406e-a750-c9d171f89327, c5dec4ac-cfd5-4c90-8c1c-c222b54cc3be, 5ae24d86-bfb8-472b-ba41-fec3f598cf9e, a00fdc6e-cd4e-4964-949d-bc730b44e9cc, 6e5a348c-1882-493d-b1a5-7b6a72da757b, 6c2d525c-d9be-41d4-9693-6bdd358d9bc2, 5a64b78f-d9d3-4733-8f91-fdd59a5b784d, 41b6811a-3c41-48ea-9833-556cf779be56, 5ac45513-8fa3-4d59-a3c6-379f878a8f73, 6b21e775-9d64-4bf9-81ee-1a85145fe73d, c8939d3e-04c0-4ae3-b819-03a09fd7116c, 0f72eac7-6197-458d-81b7-8d4b9c6340b7, 7f0f40bd-53c5-4263-8283-b52efce45031, 536aeedd-4dee-414a-a498-1692e22dc8de, 615974b1-47c8-4093-bec8-90935573b394, 785c7101-8d61-4b3f-95c1-d29b4a993fe2, 6e2b406a-7838-4026-a76f-f5ed1ad2faae, a0351729-866b-49ef-b0dd-2ce9582cb6c4, 318136be-db5f-4cf8-8920-4633bf22ed75, ac739880-5e4a-4826-9767-dbcd56021b39, e48da0f5-c8ae-43e9-9d02-4fac41649f0b",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/HOA MODULE 2 P3.pdf",
+        "quoted_pdf_excerpt": "HOA Module 2 P3 refined markdown lines 252-274, 278-313, 315-338, 340-457, and 477-488; 20th Century Architects 2 refined markdown lines 1-66 and 70-104; Modern Architectures in History USA refined markdown lines 763-769, 1433-1441, 1546-1548, 1751-1763, 1803-1805, 1828-1834, 1902-1906, and 1950-1956; TOA 5 Masters of Architecture refined markdown lines 256-262, 608-612, 648-652, 707-711, and 742-789",
+        "source_ids": [
+          "hoa2p3-local-raw-pdf--b052-5f1e960c-01",
+          "twentieth2-local-raw-pdf--b052-5f1e960c-02",
+          "modernusa-local-raw-pdf--b052-5f1e960c-03",
+          "toa5-local-raw-pdf--b052-5f1e960c-04"
+        ]
+      },
+      "audit_result": "PASS"
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "local_first_only": true,
+    "supabase_write_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json"
+  },
+  "sme_review": {
+    "required": false,
+    "status": "not_required"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

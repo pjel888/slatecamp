@@ -27,7 +27,7 @@ export const myAction = async (input: MyInput): Promise<MyOutput> => {
   const supabase = await createClient()
   const { data: { user } } = await getUser()
   if (!user) throw new Error('Unauthorized')
-  
+
   // Mutate...
   return result
 }

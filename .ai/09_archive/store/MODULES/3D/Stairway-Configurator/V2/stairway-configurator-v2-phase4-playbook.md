@@ -224,7 +224,7 @@ graph TD
 
 1. After the existing handrail geometry in each builder, check `rawParams.primaryUsers`:
    ```typescript
-   const isChildMode = str(rawParams.primaryUsers ?? 'general') === 'children' || 
+   const isChildMode = str(rawParams.primaryUsers ?? 'general') === 'children' ||
                         str(rawParams.primaryUsers ?? 'general') === 'mixed'
    ```
 

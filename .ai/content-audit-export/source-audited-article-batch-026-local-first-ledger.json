@@ -1,0 +1,343 @@
+{
+  "batch_id": "source-audited-article-batch-026-local-first",
+  "generated_at": "2026-05-11T20:45:00.000+08:00",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "local_first_constraints": {
+    "workspace_only": "/Users/philiplewis/slatecamp",
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "final_publishing_surface": "Supabase final publishing only; no mutation performed in Batch 026."
+  },
+  "prior_batch_exclusion": {
+    "prior_batch_range_checked": "001-025",
+    "prior_report_or_ledger_artifacts_checked": 54,
+    "prior_uuid_tokens_detected_in_artifacts": 461,
+    "selected_article_ids": [
+      "15d9ff17-038a-4ba5-86f9-2e6a8f12cc54",
+      "f95d5cc8-30d4-4f74-890f-1018d764da6e",
+      "fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0",
+      "218ac476-9857-4c14-9033-2f27c75da04b",
+      "a7751310-8582-4b9a-a71b-78f6e9216b79"
+    ],
+    "overlap_with_prior_batches": [],
+    "overlap_count": 0
+  },
+  "selection_rationale": "Selected five unselected high-value LEA legal/code/professional-practice clusters with linked questions and available local raw PDFs under vitruvius-connection/001_Raw-Source-Layer. CPD candidates surfaced next by score were skipped because their local raw CPD source was not available in the workspace.",
+  "counts": {
+    "selected_articles": 5,
+    "linked_questions": 50,
+    "source_safe_question_edits": 50,
+    "source_records": 9,
+    "distinct_raw_pdfs_checked": 3,
+    "distinct_refined_markdown_sources_checked": 3,
+    "json_files_parsed": 100,
+    "source_paths_hash_checked": 18,
+    "placeholder_gap_text_files_checked": 10,
+    "safe_diff_reports": 5,
+    "content_audit_tests_passed": 34,
+    "content_audit_tests_failed": 0
+  },
+  "validation": {
+    "compose": "PASS - 5/5 candidates composed with zero blockers.",
+    "diff": "PASS - 5/5 changed and locally safe with zero blockers.",
+    "validate": "PASS - 5/5 bundle validates true with zero blockers; component-usage warning is non-blocking and pre-existing for these article bundles.",
+    "scoped_checks": "PASS - scoped JSON/source/question-edit/placeholder checks passed.",
+    "bun_tests": "PASS - bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts: 34 pass, 0 fail."
+  },
+  "artifacts": {
+    "ledger_path": ".ai/content-audit-export/source-audited-article-batch-026-local-first-ledger.json",
+    "report_path": ".ai/content-audit-export/source-audited-article-batch-026-local-first-report.md",
+    "scoped_checks_path": ".ai/content-audit-export/source-audited-article-batch-026-local-first-scoped-checks.json"
+  },
+  "articles": [
+    {
+      "article_id": "15d9ff17-038a-4ba5-86f9-2e6a8f12cc54",
+      "title": "The Certificate of Occupancy",
+      "slug": "lea-prac-ctr-019-core-concept",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-ctr-019-core-concept--15d9ff17-038a-4ba5-86f9-2e6a8f12cc54",
+      "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-019-core-concept--15d9ff17-038a-4ba5-86f9-2e6a8f12cc54",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-ctr-019-core-concept--15d9ff17-038a-4ba5-86f9-2e6a8f12cc54/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-ctr-019-core-concept--15d9ff17-038a-4ba5-86f9-2e6a8f12cc54/candidate.md",
+      "sources_json_path": ".ai/content-audit-export/articles/lea-prac-ctr-019-core-concept--15d9ff17-038a-4ba5-86f9-2e6a8f12cc54/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-ctr-019-core-concept--15d9ff17-038a-4ba5-86f9-2e6a8f12cc54/source-audit-evidence.json",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-019-core-concept--15d9ff17-038a-4ba5-86f9-2e6a8f12cc54/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-019-core-concept--15d9ff17-038a-4ba5-86f9-2e6a8f12cc54/question-edits",
+      "linked_question_count": 10,
+      "question_edits_created": 10,
+      "source_count": 1,
+      "raw_pdf_sources": [
+        {
+          "source_id": "pd1096-rirr-2004-section-309-local",
+          "label": "PD 1096 2004 Revised IRR - Certificate of Occupancy",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "source_locator": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923"
+        }
+      ],
+      "hashes": {
+        "original": "sha256:8011db5e9ed74480d283a0bcad2b84cdf6d83f97e70670c1577426f1e8c7e9aa",
+        "normalized": "sha256:3fbcc90a00858d88ae3509ad69e2c4771b220969cad5dfbcd138768b43452378",
+        "candidate": "sha256:3fbcc90a00858d88ae3509ad69e2c4771b220969cad5dfbcd138768b43452378",
+        "sources": "sha256:207ddcd35f1c59ec257399de2b9654b27cfef46a0e7e15db53b17e836eecbbcc"
+      },
+      "validation": {
+        "compose_blockers": 0,
+        "compose_warnings": 0,
+        "diff_changed": true,
+        "diff_safe_to_push": true,
+        "diff_locally_safe_to_push": true,
+        "diff_blockers": 0,
+        "repo_validate_valid": true,
+        "repo_validate_blockers": 0,
+        "repo_validate_warnings": [
+          "lea-prac-ctr-019-core-concept--15d9ff17-038a-4ba5-86f9-2e6a8f12cc54: component-usage.json has not been generated for this article yet."
+        ],
+        "scoped_checks_valid": true,
+        "source_audit_status": "PASS"
+      },
+      "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW"
+    },
+    {
+      "article_id": "f95d5cc8-30d4-4f74-890f-1018d764da6e",
+      "title": "Fees for Repetitive Designs Reduced Fees and Their Justification",
+      "slug": "lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification--f95d5cc8-30d4-4f74-890f-1018d764da6e",
+      "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification--f95d5cc8-30d4-4f74-890f-1018d764da6e",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification--f95d5cc8-30d4-4f74-890f-1018d764da6e/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification--f95d5cc8-30d4-4f74-890f-1018d764da6e/candidate.md",
+      "sources_json_path": ".ai/content-audit-export/articles/lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification--f95d5cc8-30d4-4f74-890f-1018d764da6e/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification--f95d5cc8-30d4-4f74-890f-1018d764da6e/source-audit-evidence.json",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification--f95d5cc8-30d4-4f74-890f-1018d764da6e/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification--f95d5cc8-30d4-4f74-890f-1018d764da6e/question-edits",
+      "linked_question_count": 10,
+      "question_edits_created": 10,
+      "source_count": 2,
+      "raw_pdf_sources": [
+        {
+          "source_id": "uap-standards-spp202-project-classification-local",
+          "label": "UAP Document Standards of Professional Practice - SPP 202 Project Classification and Compensation",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+          "source_locator": "UAP Standards refined markdown lines 362-457 and 473-551"
+        },
+        {
+          "source_id": "spp202-regular-design-services-local",
+          "label": "SPP 202 - Regular Design Services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+          "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+          "refined_markdown_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+          "source_locator": "SPP 202 local raw PDF; UAP Standards refined markdown supplies readable line support for the same professional-practice topic"
+        }
+      ],
+      "hashes": {
+        "original": "sha256:6c0061337f618bc5594cedbde1df61bbd959b6a0f7b847f10307342b74c5b305",
+        "normalized": "sha256:d33b785f2aa3efca2667230e9b6f326ca4c2169071aab009f6dd53018fc9d849",
+        "candidate": "sha256:d33b785f2aa3efca2667230e9b6f326ca4c2169071aab009f6dd53018fc9d849",
+        "sources": "sha256:193c0afbc426164ce3de169171a65e18f24178672b380f1f140613bcbe5b2679"
+      },
+      "validation": {
+        "compose_blockers": 0,
+        "compose_warnings": 0,
+        "diff_changed": true,
+        "diff_safe_to_push": true,
+        "diff_locally_safe_to_push": true,
+        "diff_blockers": 0,
+        "repo_validate_valid": true,
+        "repo_validate_blockers": 0,
+        "repo_validate_warnings": [
+          "lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification--f95d5cc8-30d4-4f74-890f-1018d764da6e: component-usage.json has not been generated for this article yet."
+        ],
+        "scoped_checks_valid": true,
+        "source_audit_status": "PASS"
+      },
+      "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW"
+    },
+    {
+      "article_id": "fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0",
+      "title": "Architect's Guidelines",
+      "slug": "lea-prac-cmp-001-core-concept",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-cmp-001-core-concept--fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0",
+      "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-001-core-concept--fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-cmp-001-core-concept--fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-cmp-001-core-concept--fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0/candidate.md",
+      "sources_json_path": ".ai/content-audit-export/articles/lea-prac-cmp-001-core-concept--fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-cmp-001-core-concept--fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0/source-audit-evidence.json",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-cmp-001-core-concept--fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-001-core-concept--fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0/question-edits",
+      "linked_question_count": 10,
+      "question_edits_created": 10,
+      "source_count": 2,
+      "raw_pdf_sources": [
+        {
+          "source_id": "uap-standards-spp202-project-classification-local",
+          "label": "UAP Document Standards of Professional Practice - SPP 202 Project Classification and Compensation",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+          "source_locator": "UAP Standards refined markdown lines 362-457 and 473-551"
+        },
+        {
+          "source_id": "spp202-regular-design-services-local",
+          "label": "SPP 202 - Regular Design Services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+          "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+          "refined_markdown_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+          "source_locator": "SPP 202 local raw PDF; UAP Standards refined markdown supplies readable line support for the same professional-practice topic"
+        }
+      ],
+      "hashes": {
+        "original": "sha256:15d23569e6807405251b52e05d67e65e0a6a8bda89c9b9e4d0e5e915a582ff5e",
+        "normalized": "sha256:41bedb3d764ef6b635fb6c9ec22526a71c396daa6db015497dd55c3627eb60a2",
+        "candidate": "sha256:41bedb3d764ef6b635fb6c9ec22526a71c396daa6db015497dd55c3627eb60a2",
+        "sources": "sha256:63c3866532400ae6884043bc4b42c2255ebcb6f57d027faf4265717264c8481a"
+      },
+      "validation": {
+        "compose_blockers": 0,
+        "compose_warnings": 0,
+        "diff_changed": true,
+        "diff_safe_to_push": true,
+        "diff_locally_safe_to_push": true,
+        "diff_blockers": 0,
+        "repo_validate_valid": true,
+        "repo_validate_blockers": 0,
+        "repo_validate_warnings": [
+          "lea-prac-cmp-001-core-concept--fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0: component-usage.json has not been generated for this article yet."
+        ],
+        "scoped_checks_valid": true,
+        "source_audit_status": "PASS"
+      },
+      "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW"
+    },
+    {
+      "article_id": "218ac476-9857-4c14-9033-2f27c75da04b",
+      "title": "Factors That Determine Project Group Classification a Decision Framework",
+      "slug": "lea-prac-cmp-002-factors-that-determine-project-group-classification-a-decision-framework",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-cmp-002-factors-that-determine-project-group-classification-a-decision-framework--218ac476-9857-4c14-9033-2f27c75da04b",
+      "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-002-factors-that-determine-project-group-classification-a-decision-framework--218ac476-9857-4c14-9033-2f27c75da04b",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-cmp-002-factors-that-determine-project-group-classification-a-decision-framework--218ac476-9857-4c14-9033-2f27c75da04b/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-cmp-002-factors-that-determine-project-group-classification-a-decision-framework--218ac476-9857-4c14-9033-2f27c75da04b/candidate.md",
+      "sources_json_path": ".ai/content-audit-export/articles/lea-prac-cmp-002-factors-that-determine-project-group-classification-a-decision-framework--218ac476-9857-4c14-9033-2f27c75da04b/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-cmp-002-factors-that-determine-project-group-classification-a-decision-framework--218ac476-9857-4c14-9033-2f27c75da04b/source-audit-evidence.json",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-cmp-002-factors-that-determine-project-group-classification-a-decision-framework--218ac476-9857-4c14-9033-2f27c75da04b/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-002-factors-that-determine-project-group-classification-a-decision-framework--218ac476-9857-4c14-9033-2f27c75da04b/question-edits",
+      "linked_question_count": 10,
+      "question_edits_created": 10,
+      "source_count": 2,
+      "raw_pdf_sources": [
+        {
+          "source_id": "uap-standards-spp202-project-classification-local",
+          "label": "UAP Document Standards of Professional Practice - SPP 202 Project Classification and Compensation",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+          "source_locator": "UAP Standards refined markdown lines 362-457 and 473-551"
+        },
+        {
+          "source_id": "spp202-regular-design-services-local",
+          "label": "SPP 202 - Regular Design Services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+          "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+          "refined_markdown_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+          "source_locator": "SPP 202 local raw PDF; UAP Standards refined markdown supplies readable line support for the same professional-practice topic"
+        }
+      ],
+      "hashes": {
+        "original": "sha256:da6c11d3397fb01d1373c9af3347f667333cd5f0f5b582da0990437c71953ce1",
+        "normalized": "sha256:9b56b1f66c5255f55b26aa9c7d99a41736d07964df7cd7e8e1a926d96cb9e8f6",
+        "candidate": "sha256:9b56b1f66c5255f55b26aa9c7d99a41736d07964df7cd7e8e1a926d96cb9e8f6",
+        "sources": "sha256:faa88d3731960588647529f7826fb3f1e732fcf3f704a692bad549c903db5d6d"
+      },
+      "validation": {
+        "compose_blockers": 0,
+        "compose_warnings": 0,
+        "diff_changed": true,
+        "diff_safe_to_push": true,
+        "diff_locally_safe_to_push": true,
+        "diff_blockers": 0,
+        "repo_validate_valid": true,
+        "repo_validate_blockers": 0,
+        "repo_validate_warnings": [
+          "lea-prac-cmp-002-factors-that-determine-project-group-classification-a-decision-framework--218ac476-9857-4c14-9033-2f27c75da04b: component-usage.json has not been generated for this article yet."
+        ],
+        "scoped_checks_valid": true,
+        "source_audit_status": "PASS"
+      },
+      "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW"
+    },
+    {
+      "article_id": "a7751310-8582-4b9a-a71b-78f6e9216b79",
+      "title": "Choosing MDPE vs Percentage of PCC the Decision Matrix",
+      "slug": "lea-prac-cmp-008-choosing-mdpe-vs-percentage-of-pcc-the-decision-matrix",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-cmp-008-choosing-mdpe-vs-percentage-of-pcc-the-decision-matrix--a7751310-8582-4b9a-a71b-78f6e9216b79",
+      "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-008-choosing-mdpe-vs-percentage-of-pcc-the-decision-matrix--a7751310-8582-4b9a-a71b-78f6e9216b79",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-cmp-008-choosing-mdpe-vs-percentage-of-pcc-the-decision-matrix--a7751310-8582-4b9a-a71b-78f6e9216b79/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-cmp-008-choosing-mdpe-vs-percentage-of-pcc-the-decision-matrix--a7751310-8582-4b9a-a71b-78f6e9216b79/candidate.md",
+      "sources_json_path": ".ai/content-audit-export/articles/lea-prac-cmp-008-choosing-mdpe-vs-percentage-of-pcc-the-decision-matrix--a7751310-8582-4b9a-a71b-78f6e9216b79/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-cmp-008-choosing-mdpe-vs-percentage-of-pcc-the-decision-matrix--a7751310-8582-4b9a-a71b-78f6e9216b79/source-audit-evidence.json",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-cmp-008-choosing-mdpe-vs-percentage-of-pcc-the-decision-matrix--a7751310-8582-4b9a-a71b-78f6e9216b79/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-008-choosing-mdpe-vs-percentage-of-pcc-the-decision-matrix--a7751310-8582-4b9a-a71b-78f6e9216b79/question-edits",
+      "linked_question_count": 10,
+      "question_edits_created": 10,
+      "source_count": 2,
+      "raw_pdf_sources": [
+        {
+          "source_id": "uap-standards-spp202-project-classification-local",
+          "label": "UAP Document Standards of Professional Practice - SPP 202 Project Classification and Compensation",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+          "source_locator": "UAP Standards refined markdown lines 362-457 and 473-551"
+        },
+        {
+          "source_id": "spp202-regular-design-services-local",
+          "label": "SPP 202 - Regular Design Services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+          "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+          "refined_markdown_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+          "source_locator": "SPP 202 local raw PDF; UAP Standards refined markdown supplies readable line support for the same professional-practice topic"
+        }
+      ],
+      "hashes": {
+        "original": "sha256:e7defac6d85b8bd711ab76babe3951f07368bdf949827224c4a1140fcf8cce55",
+        "normalized": "sha256:daed94af2335f9b75ca46778c44fe64d73c235463614ab1882c0db2d1ce8c204",
+        "candidate": "sha256:daed94af2335f9b75ca46778c44fe64d73c235463614ab1882c0db2d1ce8c204",
+        "sources": "sha256:b8a031f69a81630e794113b24b14ffd44cbbfa63884db54e8fdcf0051f29bc4c"
+      },
+      "validation": {
+        "compose_blockers": 0,
+        "compose_warnings": 0,
+        "diff_changed": true,
+        "diff_safe_to_push": true,
+        "diff_locally_safe_to_push": true,
+        "diff_blockers": 0,
+        "repo_validate_valid": true,
+        "repo_validate_blockers": 0,
+        "repo_validate_warnings": [
+          "lea-prac-cmp-008-choosing-mdpe-vs-percentage-of-pcc-the-decision-matrix--a7751310-8582-4b9a-a71b-78f6e9216b79: component-usage.json has not been generated for this article yet."
+        ],
+        "scoped_checks_valid": true,
+        "source_audit_status": "PASS"
+      },
+      "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW"
+    }
+  ],
+  "remaining_local_blockers": [],
+  "next_phase_readiness": {
+    "ready_for_final_publishing_review": true,
+    "requires_remote_stale_check_before_supabase_apply": true,
+    "final_publishing_only": true,
+    "notes": "No Supabase push, deploy, or commit was attempted. Final publishing must perform remote compare-and-swap/stale checks before any mutation."
+  }
+}

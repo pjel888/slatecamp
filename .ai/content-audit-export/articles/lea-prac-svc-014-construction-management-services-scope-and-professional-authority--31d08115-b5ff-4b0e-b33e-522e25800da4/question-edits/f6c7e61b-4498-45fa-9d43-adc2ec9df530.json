@@ -1,0 +1,84 @@
+{
+  "question_id": "f6c7e61b-4498-45fa-9d43-adc2ec9df530",
+  "baseline_hash": "sha256:c4496b359b41e4e29814b135076af9ac2ed02d1738886d2fb7866446e1d16533",
+  "action": "replace",
+  "reason": "source-audited-article-batch-024-local-first rewrote this linked question to align with the local source audit for lea-prac-svc-014-construction-management-services-scope-and-professional-authority.",
+  "approved_by": "codex-local-source-audit-batch-024",
+  "approved_at": "2026-05-11T14:30:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "31d08115-b5ff-4b0e-b33e-522e25800da4",
+    "parent_article_slug": "lea-prac-svc-014-construction-management-services-scope-and-professional-authority",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UAP Standards refined markdown lines 983-1030; SPP 204B refined markdown lines 83-377",
+    "checked_markdown_lines": [
+      "UAP Standards lines 983-1030",
+      "SPP 204B lines 83-377"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "source_id": "uap-standards-spp204b-construction-management-local",
+        "locator": "UAP Standards refined markdown lines 983-1030"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "source_id": "uap-standards-spp204b-construction-management-local",
+        "locator": "UAP Standards refined markdown lines 983-1030"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204B.pdf",
+        "sha256": "sha256:b6bfffcf6e3ca7a4317121b28d5fab9237c2a4642b450573232516ef9dfb697e",
+        "source_id": "spp204b-construction-management-services-local",
+        "locator": "SPP 204B refined markdown lines 83-377"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204B.md",
+        "sha256": "sha256:b49b5fcffe1e1ad48cb618b70d6a369400a0c7460dd3fa7ea471ee5900dc53e8",
+        "source_id": "spp204b-construction-management-services-local",
+        "locator": "SPP 204B refined markdown lines 83-377"
+      }
+    ],
+    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+  },
+  "proposed": {
+    "text": "How may the CM work with the Construction Supervision Group under SPP 204-B?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The CM may hire the CSG under the CM's employ or supervise a CSG hired directly by the owner"
+      },
+      {
+        "id": "b",
+        "text": "The CM may not work with any CSG"
+      },
+      {
+        "id": "c",
+        "text": "The CSG always replaces the owner"
+      },
+      {
+        "id": "d",
+        "text": "The CSG is limited to design competitions"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "SPP 204-B states that the CM may hire the CSG or supervise the owner-hired CSG.",
+    "explanation": "This Batch 024 replacement removes non-source-backed or over-specific wording and ties the answer to the checked local UAP source locator.",
+    "code_citation": "UAP Standards lines 983-1030; SPP 204B refined markdown lines 83-377",
+    "bloom_level": "understand",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited batch 024"
+    ],
+    "difficulty": 0.5,
+    "is_assessment": false,
+    "model_id": "BATCH-024-lea-prac-svc-014-construction-management-services-scope-and-professional-authority-007"
+  }
+}

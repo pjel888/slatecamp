@@ -1,0 +1,81 @@
+{
+  "question_id": "b07620ce-a43c-474c-95ed-fe1dde743e57",
+  "baseline_hash": "sha256:900752b1cb06e77a9eb1fd29eb22edf73174729ffdd58463e26f127b435fdc9e",
+  "action": "replace",
+  "reason": "source-audited-article-batch-026-local-first rewrote this linked question to source-safe form against local raw PDF evidence for The Certificate of Occupancy.",
+  "approved_by": "codex-local-source-audit-batch-026",
+  "approved_at": "2026-05-11T20:30:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "15d9ff17-038a-4ba5-86f9-2e6a8f12cc54",
+    "parent_article_slug": "lea-prac-ctr-019-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
+    "checked_markdown_lines": [
+      "PD 1096 RIRR lines 858-862",
+      "PD 1096 RIRR lines 906-923"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "pd1096-rirr-2004-section-309-local",
+        "label": "PD 1096 2004 Revised IRR - Certificate of Occupancy",
+        "authority": "Department of Public Works and Highways / National Building Code of the Philippines IRR",
+        "source_type": "building_code_pdf",
+        "source_locator": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR lines 858-862",
+          "PD 1096 RIRR lines 906-923"
+        ],
+        "use": "Certificate of Occupancy, Certificate of Completion, logbook, as-built documents, FSIC, Building Official issuance, and partial occupancy.",
+        "local_source_checked": true
+      }
+    ],
+    "local_source_safe_action": "Replaced prior wording with a source-audited question, answer key, citation, and explanation."
+  },
+  "proposed": {
+    "text": "Which statement is safest for LEA purposes?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Substantial completion automatically authorizes occupancy"
+      },
+      {
+        "id": "b",
+        "text": "Owner acceptance automatically authorizes occupancy"
+      },
+      {
+        "id": "c",
+        "text": "Architect certification replaces the Building Official's occupancy decision"
+      },
+      {
+        "id": "d",
+        "text": "The Building Official's Certificate of Occupancy is the controlling authorization for use or occupancy"
+      }
+    ],
+    "correct_option_id": "d",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Incorrect. This choice is not the source-supported answer for the cited provision.",
+      "b": "Incorrect. This choice is not the source-supported answer for the cited provision.",
+      "c": "Incorrect. This choice is not the source-supported answer for the cited provision.",
+      "d": "Correct.",
+      "correct": "The source-safe answer keeps the legal authorization with the Building Official and does not substitute private project documents for the occupancy permit.",
+      "takeaway": "The source-safe answer keeps the legal authorization with the Building Official and does not substitute private project documents for the occupancy permit."
+    },
+    "explanation": "The source-safe answer keeps the legal authorization with the Building Official and does not substitute private project documents for the occupancy permit.",
+    "code_citation": "PD 1096 2004 Revised IRR, Rule III Section 309",
+    "bloom_level": "analyze",
+    "application_context": "code_interpretation",
+    "practice_context": [],
+    "difficulty": 0.65,
+    "is_assessment": false,
+    "model_id": "BATCH-026-lea-prac-ctr-019-core-concept-010"
+  }
+}

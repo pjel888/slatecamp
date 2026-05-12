@@ -3,8 +3,8 @@
 
 # Task 02: Archive Legacy Content
 
-**Status:** pending  
-**Created:** 2026-04-06  
+**Status:** pending
+**Created:** 2026-04-06
 **Objective:** Move deprecated numbered folders to `archive/legacy/` and clean up state files
 
 ---

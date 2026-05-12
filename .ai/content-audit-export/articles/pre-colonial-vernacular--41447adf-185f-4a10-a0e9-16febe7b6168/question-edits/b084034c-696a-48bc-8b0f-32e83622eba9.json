@@ -1,0 +1,73 @@
+{
+  "question_id": "b084034c-696a-48bc-8b0f-32e83622eba9",
+  "baseline_hash": "sha256:6acb425bea6deb2036f38e7529a12d5cb3dc91afa561068f8057978dd80da02c",
+  "action": "replace",
+  "reason": "source-audited-article-batch-050-local-first: local raw-source-backed replacement constrained to checked Batch 050 source families.",
+  "approved_by": "codex-local-first-batch-050",
+  "approved_at": "2026-05-11T21:20:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "41447adf-185f-4a10-a0e9-16febe7b6168",
+    "parent_article_slug": "pre-colonial-vernacular",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "HOA Module 4 P1 refined markdown lines 1-235, 278-365, and 681-760; Filipino Architecture refined markdown lines 40-118, 160-178, 680-700, 830-887, 905-917, and 1037-1039",
+    "checked_markdown_lines": [
+      "HOA Module 4 P1 refined markdown lines 1-235",
+      "HOA Module 4 P1 refined markdown lines 278-365",
+      "HOA Module 4 P1 refined markdown lines 681-760",
+      "Filipino Architecture refined markdown lines 40-118",
+      "Filipino Architecture refined markdown lines 160-178",
+      "Filipino Architecture refined markdown lines 680-700",
+      "Filipino Architecture refined markdown lines 830-887",
+      "Filipino Architecture refined markdown lines 905-917",
+      "Filipino Architecture refined markdown lines 1037-1039"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "hoa-local-raw-pdf--b050-41447adf-01",
+        "label": "HOA Module 4 P1 - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/HOA MODULE 4 P1.pdf",
+        "sha256": "sha256:c89f7f79b3dd8272c7aa7d8848ea72c196d6c418f33105a32fb1ed2cfadbffb3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/HOA MODULE 4 P1.md",
+        "refined_markdown_sha256": "sha256:e515c8c5203118d4aeef0fe1f288c7deb76d75d3e3e1a779291712420c7df047",
+        "locator": "HOA Module 4 P1 refined markdown lines 1-235, 278-365, and 681-760"
+      },
+      {
+        "source_id": "fil-local-raw-pdf--b050-41447adf-02",
+        "label": "Filipino Architecture - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Filipino Architecture.pdf",
+        "sha256": "sha256:3d6f220218c46fe78e37d152d1c51504fd3c7d413cf14e71b39e93c7e1a5831d",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Filipino Architecture.md",
+        "refined_markdown_sha256": "sha256:f60dacc37e4b6634875ed68c18a55288e455476697fc250905460bbe6ac25ce1",
+        "locator": "Filipino Architecture refined markdown lines 40-118, 160-178, 680-700, 830-887, 905-917, and 1037-1039"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 050 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "Why is the Bahay Kubo a key vernacular anchor?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is identified as a passively cooled lowland dwelling with porous surfaces, horizontal windows, overhangs, gardens, and light local materials."
+      },
+      {
+        "id": "b",
+        "text": "It is a stone fortress reserved for nobility inside Intramuros."
+      },
+      {
+        "id": "c",
+        "text": "It is a twentieth-century theater type associated with Art Deco."
+      },
+      {
+        "id": "d",
+        "text": "It is a utility room standard for switchgear."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "It is identified as a passively cooled lowland dwelling with porous surfaces, horizontal windows, overhangs, gardens, and light local materials. HOA Module 4 P1 and Filipino Architecture describe the Bahay Kubo as climate-responsive and materially light.",
+    "explanation": "It is identified as a passively cooled lowland dwelling with porous surfaces, horizontal windows, overhangs, gardens, and light local materials. HOA Module 4 P1 and Filipino Architecture describe the Bahay Kubo as climate-responsive and materially light.",
+    "code_citation": "HOA Module 4 P1 refined markdown lines 1-235, 278-365, and 681-760; Filipino Architecture refined markdown lines 40-118, 160-178, 680-700, 830-887, 905-917, and 1037-1039"
+  },
+  "batch_question_template_index": 2
+}

@@ -1,0 +1,67 @@
+{
+  "question_id": "716edfbf-e518-466a-bed6-225ffeb44114",
+  "baseline_hash": "sha256:dd5305e9a341e3725c28345b0a4c55e99a8abe3e8ef3948b6b29fd35790c3f89",
+  "action": "replace",
+  "reason": "source-audited-article-batch-054-local-first: local raw PDF backed replacement constrained to checked Batch 054 source families.",
+  "approved_by": "codex-local-first-batch-054",
+  "approved_at": "2026-05-11T19:22:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+    "parent_article_slug": "african-vernacular-earth-architecture",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "George Salvan Architectural Character refined markdown lines 479-487 and 4931-4935; history refined markdown line 177",
+    "checked_markdown_lines": [
+      "George Salvan Architectural Character refined markdown lines 479-487",
+      "George Salvan Architectural Character refined markdown lines 4931-4935",
+      "history refined markdown line 177"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "salvan-character-local-raw-pdf--b054-4a8c01ab-01",
+        "label": "George Salvan Architectural Character and the History of Architecture - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Character and the History of Architecture.pdf",
+        "sha256": "sha256:55c4fa2d43bbfd27cffb86d0aac4ad960032e178e1e25c29d4eb351297bfc069",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Character and the History of Architecture.md",
+        "refined_markdown_sha256": "sha256:be8e760bef8f7ceb573742d996dabb202f0353e19b4ab9283ec2de7dfc1fccea",
+        "locator": "George Salvan Architectural Character refined markdown lines 479-487 and 4931-4935"
+      },
+      {
+        "source_id": "history-local-raw-pdf--b054-4a8c01ab-02",
+        "label": "history - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/history.pdf",
+        "sha256": "sha256:7fc1e6e6a8433afecc676c9037a96172f02489985033931ea1606f29557b7d18",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/history.md",
+        "refined_markdown_sha256": "sha256:9a0ef73aa09f9ebcb61002014c6a1157bf1c7d6123f835ecf87bc4ac9374b0ce",
+        "locator": "history refined markdown line 177"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 054 checked local raw PDF source scope."
+  },
+  "proposed": {
+    "text": "Which settlement feature is named in the checked Islamic vernacular passage?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Courtyard dwellings."
+      },
+      {
+        "id": "b",
+        "text": "Flying buttresses."
+      },
+      {
+        "id": "c",
+        "text": "Corbelled Maya vaults."
+      },
+      {
+        "id": "d",
+        "text": "Parametric white shells."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Courtyard dwellings. This answer is supported by the checked Batch 054 local raw PDF source families for African Vernacular Earth Architecture.",
+    "explanation": "Courtyard dwellings. The Batch 054 source audit used local raw PDFs first and refined markdown only as locator evidence for African Vernacular Earth Architecture.",
+    "code_citation": "George Salvan Architectural Character refined markdown lines 4931-4935"
+  },
+  "batch_question_template_index": 2
+}

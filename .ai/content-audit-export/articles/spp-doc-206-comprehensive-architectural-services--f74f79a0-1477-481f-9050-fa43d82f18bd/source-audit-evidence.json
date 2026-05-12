@@ -1,0 +1,303 @@
+{
+  "batch_id": "source-audited-article-batch-024-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T14:30:00.000+08:00",
+  "article_id": "f74f79a0-1477-481f-9050-fa43d82f18bd",
+  "slug": "spp-doc-206-comprehensive-architectural-services",
+  "title": "SPP Doc 206: Comprehensive Architectural Services",
+  "status": "local_pass_ready_for_final_publishing_review",
+  "article_folder": ".ai/content-audit-export/articles/spp-doc-206-comprehensive-architectural-services--f74f79a0-1477-481f-9050-fa43d82f18bd",
+  "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-206-comprehensive-architectural-services--f74f79a0-1477-481f-9050-fa43d82f18bd",
+  "question_edits_folder": ".ai/content-audit-export/articles/spp-doc-206-comprehensive-architectural-services--f74f79a0-1477-481f-9050-fa43d82f18bd/question-edits",
+  "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-206-comprehensive-architectural-services--f74f79a0-1477-481f-9050-fa43d82f18bd/question-edits",
+  "linked_questions": 10,
+  "question_edits_created": 10,
+  "source_safe_rewrite_question_edits": 10,
+  "classification": {
+    "content_domain": "professional_practice",
+    "requires_raw_pdf_audit": true,
+    "legal_or_code_source": true
+  },
+  "target": {
+    "article_id": "f74f79a0-1477-481f-9050-fa43d82f18bd",
+    "slug": "spp-doc-206-comprehensive-architectural-services",
+    "normalized_sha256": "sha256:b2d8b74bb8b19ed5355f2b8f48c93a5fb79a1f478bcc14e93be42c0a69fa2041",
+    "candidate_sha256": "sha256:b2d8b74bb8b19ed5355f2b8f48c93a5fb79a1f478bcc14e93be42c0a69fa2041"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_only": true,
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "source_audit": {
+    "checked_sources": [
+      {
+        "source_id": "uap-standards-spp206-cas-pm-local",
+        "label": "UAP Standards of Professional Practice - SPP 206 CAS and PM",
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "source_type": "professional_practice_pdf",
+        "source_locator": "UAP Standards refined markdown lines 1091-1216",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "checked_markdown_lines": [
+          "UAP Standards lines 1091-1216"
+        ],
+        "use": "Local raw PDF and refined markdown checked for SPP 206 CAS scope, PM role, team approach, and compensation boundaries.",
+        "local_source_checked": true
+      },
+      {
+        "source_id": "spp206-comprehensive-architectural-services-local",
+        "label": "SPP 206 - Comprehensive Architectural Services",
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "source_type": "professional_practice_pdf",
+        "source_locator": "SPP 206 refined markdown lines 713-823",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 206.pdf",
+        "raw_pdf_sha256": "sha256:d140c57e69f990af217f914a1dac51b6d6aae02a1b42aadd4a3f26b6cebf72b7",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 206.md",
+        "refined_markdown_sha256": "sha256:1ed62c21499c67d14265fb41468a137d00983893797b04a3bd18b6fde4f3b283",
+        "checked_markdown_lines": [
+          "SPP 206 lines 713-823"
+        ],
+        "use": "Local SPP 206 raw PDF and OCR/refined markdown checked as the article-specific primary source.",
+        "local_source_checked": true
+      }
+    ],
+    "source_locator": "UAP Standards refined markdown lines 1091-1216; SPP 206 refined markdown lines 713-823",
+    "checked_markdown_lines": [
+      "UAP Standards lines 1091-1216",
+      "SPP 206 lines 713-823"
+    ]
+  },
+  "claims": [
+    {
+      "claim_id": "batch-024-spp-doc-206-comprehensive-architectural-services-question-001",
+      "claim_text": "Question 6f11d12f-f2c8-4542-b40d-ff6ebacefa59 / model BATCH-024-spp-doc-206-comprehensive-architectural-services-001 rewritten to source-safe local form.",
+      "question_id": "6f11d12f-f2c8-4542-b40d-ff6ebacefa59",
+      "model_id": "BATCH-024-spp-doc-206-comprehensive-architectural-services-001",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp206-cas-pm-local",
+        "spp206-comprehensive-architectural-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 1091-1216",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-024-spp-doc-206-comprehensive-architectural-services-question-002",
+      "claim_text": "Question 1d327aad-2f00-470b-a072-73c86592108e / model BATCH-024-spp-doc-206-comprehensive-architectural-services-002 rewritten to source-safe local form.",
+      "question_id": "1d327aad-2f00-470b-a072-73c86592108e",
+      "model_id": "BATCH-024-spp-doc-206-comprehensive-architectural-services-002",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp206-cas-pm-local",
+        "spp206-comprehensive-architectural-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 1091-1216",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-024-spp-doc-206-comprehensive-architectural-services-question-003",
+      "claim_text": "Question ec575392-5394-45da-97e1-fdec87985fa2 / model BATCH-024-spp-doc-206-comprehensive-architectural-services-003 rewritten to source-safe local form.",
+      "question_id": "ec575392-5394-45da-97e1-fdec87985fa2",
+      "model_id": "BATCH-024-spp-doc-206-comprehensive-architectural-services-003",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp206-cas-pm-local",
+        "spp206-comprehensive-architectural-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 1091-1216",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-024-spp-doc-206-comprehensive-architectural-services-question-004",
+      "claim_text": "Question 1b7cf899-e38f-443a-858c-c49688e67bf4 / model BATCH-024-spp-doc-206-comprehensive-architectural-services-004 rewritten to source-safe local form.",
+      "question_id": "1b7cf899-e38f-443a-858c-c49688e67bf4",
+      "model_id": "BATCH-024-spp-doc-206-comprehensive-architectural-services-004",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp206-cas-pm-local",
+        "spp206-comprehensive-architectural-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 1091-1216",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-024-spp-doc-206-comprehensive-architectural-services-question-005",
+      "claim_text": "Question b60a8e08-3cee-4c81-836d-d1c9f154a257 / model BATCH-024-spp-doc-206-comprehensive-architectural-services-005 rewritten to source-safe local form.",
+      "question_id": "b60a8e08-3cee-4c81-836d-d1c9f154a257",
+      "model_id": "BATCH-024-spp-doc-206-comprehensive-architectural-services-005",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp206-cas-pm-local",
+        "spp206-comprehensive-architectural-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 1091-1216",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-024-spp-doc-206-comprehensive-architectural-services-question-006",
+      "claim_text": "Question 2d264421-3dc4-4881-a033-81cfb75be92b / model BATCH-024-spp-doc-206-comprehensive-architectural-services-006 rewritten to source-safe local form.",
+      "question_id": "2d264421-3dc4-4881-a033-81cfb75be92b",
+      "model_id": "BATCH-024-spp-doc-206-comprehensive-architectural-services-006",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp206-cas-pm-local",
+        "spp206-comprehensive-architectural-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 1091-1216",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-024-spp-doc-206-comprehensive-architectural-services-question-007",
+      "claim_text": "Question 22ca1a75-136a-4a8d-ab93-db276e9d771a / model BATCH-024-spp-doc-206-comprehensive-architectural-services-007 rewritten to source-safe local form.",
+      "question_id": "22ca1a75-136a-4a8d-ab93-db276e9d771a",
+      "model_id": "BATCH-024-spp-doc-206-comprehensive-architectural-services-007",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp206-cas-pm-local",
+        "spp206-comprehensive-architectural-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 1091-1216",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-024-spp-doc-206-comprehensive-architectural-services-question-008",
+      "claim_text": "Question 9e0284a1-afca-4906-864d-d70315d03911 / model BATCH-024-spp-doc-206-comprehensive-architectural-services-008 rewritten to source-safe local form.",
+      "question_id": "9e0284a1-afca-4906-864d-d70315d03911",
+      "model_id": "BATCH-024-spp-doc-206-comprehensive-architectural-services-008",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp206-cas-pm-local",
+        "spp206-comprehensive-architectural-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 1091-1216",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-024-spp-doc-206-comprehensive-architectural-services-question-009",
+      "claim_text": "Question cdc8b26a-8f05-484e-89d9-720cfeea0b1e / model BATCH-024-spp-doc-206-comprehensive-architectural-services-009 rewritten to source-safe local form.",
+      "question_id": "cdc8b26a-8f05-484e-89d9-720cfeea0b1e",
+      "model_id": "BATCH-024-spp-doc-206-comprehensive-architectural-services-009",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp206-cas-pm-local",
+        "spp206-comprehensive-architectural-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 1091-1216",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-024-spp-doc-206-comprehensive-architectural-services-question-010",
+      "claim_text": "Question ad9d170a-fc28-410f-aac1-fd3ff9e68f5c / model BATCH-024-spp-doc-206-comprehensive-architectural-services-010 rewritten to source-safe local form.",
+      "question_id": "ad9d170a-fc28-410f-aac1-fd3ff9e68f5c",
+      "model_id": "BATCH-024-spp-doc-206-comprehensive-architectural-services-010",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp206-cas-pm-local",
+        "spp206-comprehensive-architectural-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 1091-1216",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    }
+  ],
+  "local_repairs": {
+    "normalized_rewritten": true,
+    "candidate_recomposed": true,
+    "source_records_created": 2,
+    "question_edits_created": 10,
+    "source_safe_rewrite_question_edits": 10,
+    "non_source_claims_removed_or_rewritten": true,
+    "ui_block_tokens_removed": true
+  },
+  "validation": {
+    "compose_blockers": [],
+    "diff_safe_to_push": true,
+    "diff_blockers": [],
+    "validate_valid": true,
+    "validate_blockers": [],
+    "validate_warnings": [
+      "spp-doc-206-comprehensive-architectural-services--f74f79a0-1477-481f-9050-fa43d82f18bd: component-usage.json has not been generated for this article yet."
+    ],
+    "scoped_validate_report": ".ai/content-audit-export/articles/spp-doc-206-comprehensive-architectural-services--f74f79a0-1477-481f-9050-fa43d82f18bd/batch-024-validate-report.json",
+    "compose_report": ".ai/content-audit-export/articles/spp-doc-206-comprehensive-architectural-services--f74f79a0-1477-481f-9050-fa43d82f18bd/compose-report.json",
+    "diff_report": ".ai/content-audit-export/articles/spp-doc-206-comprehensive-architectural-services--f74f79a0-1477-481f-9050-fa43d82f18bd/diff-report.json"
+  },
+  "blockers": [],
+  "unverified_or_rejected_claims": [],
+  "sme_review": {
+    "required": false,
+    "status": "not_required_for_local_first_batch"
+  }
+}

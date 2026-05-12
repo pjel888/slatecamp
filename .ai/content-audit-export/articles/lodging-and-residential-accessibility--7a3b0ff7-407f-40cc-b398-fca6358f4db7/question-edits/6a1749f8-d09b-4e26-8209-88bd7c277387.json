@@ -1,0 +1,56 @@
+{
+  "question_id": "6a1749f8-d09b-4e26-8209-88bd7c277387",
+  "action": "replace",
+  "reason": "source-audited-article-batch-033-local-first aligned linked accessibility/code question with audited local BP 344 source language for lodging-and-residential-accessibility.",
+  "approved_by": "codex-local-source-audit-batch-033",
+  "approved_at": "2026-05-11T09:27:32+08:00",
+  "source_audit_support": {
+    "parent_article_id": "7a3b0ff7-407f-40cc-b398-fca6358f4db7",
+    "parent_article_slug": "lodging-and-residential-accessibility",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "BP 344 2024 Revised IRR refined markdown lines 1219-1255",
+    "checked_sources": [
+      {
+        "source_id": "bp-344-2024-revised-irr-ncda-local",
+        "label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+        "source_locator": "BP 344 2024 Revised IRR refined markdown lines 1219-1255",
+        "checked_markdown_lines": [
+          "BP 344 2024 Revised IRR refined markdown lines 1219-1255"
+        ]
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer key, rationale, explanation, and code citation rewritten to the audited local article scope."
+  },
+  "proposed": {
+    "text": "What lower peephole height applies in accessible guest rooms?",
+    "options": [
+      {
+        "id": "a",
+        "text": "1000 mm from the floor"
+      },
+      {
+        "id": "b",
+        "text": "450 mm from the floor"
+      },
+      {
+        "id": "c",
+        "text": "1800 mm from the floor"
+      },
+      {
+        "id": "d",
+        "text": "No lower peephole"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "BP 344 specifies the lower peephole at 1000 mm from the floor.",
+    "explanation": "BP 344 specifies the lower peephole at 1000 mm from the floor.",
+    "code_citation": "BP 344 2024 Revised IRR refined markdown lines 1219-1255"
+  }
+}

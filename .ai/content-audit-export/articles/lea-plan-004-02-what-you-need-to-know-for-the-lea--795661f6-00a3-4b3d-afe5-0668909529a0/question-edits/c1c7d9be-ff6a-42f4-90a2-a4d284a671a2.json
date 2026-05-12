@@ -1,0 +1,170 @@
+{
+  "question_id": "c1c7d9be-ff6a-42f4-90a2-a4d284a671a2",
+  "baseline_hash": "sha256:880b9f560c8562db77284325b1968723f8dfe23e6e5348944f45fe0dfa036ce8",
+  "action": "replace",
+  "reason": "source-audited-article-batch-070-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes unsupported external-theory, hazard-number, or planning-law overclaims where present.",
+  "approved_by": "codex-local-first-batch-070",
+  "approved_at": "2026-05-12T00:42:00+08:00",
+  "source_audit_support": {
+    "parent_article_id": "795661f6-00a3-4b3d-afe5-0668909529a0",
+    "parent_article_slug": "lea-plan-004-02-what-you-need-to-know-for-the-lea",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "HLURB CLUP Vol. 1 refined markdown lines 434-452, 1988-1994, 2000-2009, 2025-2029, 2117-2130, and 8461-8467; raw PDF pages 23, 70, 74, and 225 checked by local PDF extraction; DHSUD RUDD refined markdown lines 41-65, 385-397, 399-429, 568-572, 621-629, 704-724, 781-786, 865-890, 907-924, 1290-1293, 1380-1397, 1409-1419, 1486-1503, 1525-1549, 1554, 2070, and 2715-2767; raw PDF pages 5, 8, 10, 34-37, 43, 62, 65-68, 71, 97, 123-128, and 150-153 checked by local PDF extraction; PD 1067 refined markdown lines 193 and 224-239; raw PDF page 9 checked by local PDF extraction; RA 9275 refined markdown lines 24, 88-108, 135-139, 213-241, and 255-257; raw PDF pages 2, 4-7, 10, and 12 checked by local PDF extraction; RA 9003 refined markdown lines 506-551, 596-622, 675-677, and 811; raw PDF pages 19, 22, 25-26, and 33 checked by local PDF extraction",
+    "checked_markdown_lines": [
+      "HLURB CLUP Vol. 1 lines 434-452",
+      "HLURB CLUP Vol. 1 lines 1988-1994",
+      "HLURB CLUP Vol. 1 lines 2000-2009",
+      "HLURB CLUP Vol. 1 lines 2025-2029",
+      "HLURB CLUP Vol. 1 lines 2117-2130",
+      "HLURB CLUP Vol. 1 lines 8461-8467",
+      "DHSUD RUDD lines 41-65",
+      "DHSUD RUDD lines 385-397",
+      "DHSUD RUDD lines 399-429",
+      "DHSUD RUDD lines 568-572",
+      "DHSUD RUDD lines 621-629",
+      "DHSUD RUDD lines 704-724",
+      "DHSUD RUDD lines 781-786",
+      "DHSUD RUDD lines 865-890",
+      "DHSUD RUDD lines 907-924",
+      "DHSUD RUDD lines 1290-1293",
+      "DHSUD RUDD lines 1380-1397",
+      "DHSUD RUDD lines 1409-1419",
+      "DHSUD RUDD lines 1486-1503",
+      "DHSUD RUDD lines 1525-1549",
+      "DHSUD RUDD line 1554",
+      "DHSUD RUDD line 2070",
+      "DHSUD RUDD lines 2715-2767",
+      "PD 1067 line 193",
+      "PD 1067 lines 224-239",
+      "RA 9275 line 24",
+      "RA 9275 lines 88-108",
+      "RA 9275 lines 135-139",
+      "RA 9275 lines 213-241",
+      "RA 9275 lines 255-257",
+      "RA 9003 lines 506-551",
+      "RA 9003 lines 596-622",
+      "RA 9003 lines 675-677",
+      "RA 9003 line 811"
+    ],
+    "checked_raw_pdf_pages": [
+      "HLURB CLUP Vol. 1 raw PDF page 23",
+      "HLURB CLUP Vol. 1 raw PDF page 70",
+      "HLURB CLUP Vol. 1 raw PDF page 74",
+      "HLURB CLUP Vol. 1 raw PDF page 225",
+      "DHSUD RUDD raw PDF page 5",
+      "DHSUD RUDD raw PDF page 8",
+      "DHSUD RUDD raw PDF page 10",
+      "DHSUD RUDD raw PDF pages 34-37",
+      "DHSUD RUDD raw PDF page 43",
+      "DHSUD RUDD raw PDF page 62",
+      "DHSUD RUDD raw PDF pages 65-68",
+      "DHSUD RUDD raw PDF page 71",
+      "DHSUD RUDD raw PDF page 97",
+      "DHSUD RUDD raw PDF pages 123-128",
+      "DHSUD RUDD raw PDF pages 150-153",
+      "PD 1067 raw PDF page 9",
+      "RA 9275 raw PDF page 2",
+      "RA 9275 raw PDF pages 4-7",
+      "RA 9275 raw PDF page 10",
+      "RA 9275 raw PDF page 12",
+      "RA 9003 raw PDF page 19",
+      "RA 9003 raw PDF page 22",
+      "RA 9003 raw PDF pages 25-26",
+      "RA 9003 raw PDF page 33"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "hlurb-clup-vol1-planning-process-b070",
+        "label": "HLURB CLUP Guidebook Volume 1 - planning process, participation, and maps",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/HLURB_CLUP_Vol_1.pdf",
+        "sha256": "sha256:34888ecf03576719d36e8abe21ff90da92e18263a4debb9db3fbbc41a7878762",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/HLURB_CLUP_Vol_1.md",
+        "refined_markdown_sha256": "sha256:6b574d861c0942a232fec321c2863754673532019af8f983e84550e54afc04e3",
+        "locator": "HLURB CLUP Vol. 1 refined markdown lines 434-452, 1988-1994, 2000-2009, 2025-2029, 2117-2130, and 8461-8467; raw PDF pages 23, 70, 74, and 225 checked by local PDF extraction"
+      },
+      {
+        "source_id": "dhsud-rudd-guidelines-b070",
+        "label": "DHSUD Resilient Urban Design and Development Guidelines",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf",
+        "sha256": "sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.md",
+        "refined_markdown_sha256": "sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7",
+        "locator": "DHSUD RUDD refined markdown lines 41-65, 385-397, 399-429, 568-572, 621-629, 704-724, 781-786, 865-890, 907-924, 1290-1293, 1380-1397, 1409-1419, 1486-1503, 1525-1549, 1554, 2070, and 2715-2767; raw PDF pages 5, 8, 10, 34-37, 43, 62, 65-68, 71, 97, 123-128, and 150-153 checked by local PDF extraction"
+      },
+      {
+        "source_id": "pd1067-water-code-easements-b070",
+        "label": "PD 1067 Water Code of the Philippines",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1067/PD 1067 - Water Code of the Philippines.pdf",
+        "sha256": "sha256:90fdccc66152977f0e628d47c9a7c6a0e5a93faa7d02c9344012679f1e0d4f07",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1067/PD 1067 - Water Code of the Philippines.md",
+        "refined_markdown_sha256": "sha256:1f64532d7d02f840e5d6c2710e6730d17a99f28fd1e1371839e7690174b942a7",
+        "locator": "PD 1067 refined markdown lines 193 and 224-239; raw PDF page 9 checked by local PDF extraction"
+      },
+      {
+        "source_id": "ra9275-clean-water-act-b070",
+        "label": "RA 9275 Philippine Clean Water Act",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9257/RA 9275 PH Clean Water Act.pdf",
+        "sha256": "sha256:125e87be94dbecfe40e9a5a698359e7a0e3aabf1b0a3fd08004c90ec9b17b0a9",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9257/RA 9275 PH Clean Water Act.md",
+        "refined_markdown_sha256": "sha256:209d1be42efa2e2ced9438610f041537b50ef9059911daf21bf1ece2ff89a7ee",
+        "locator": "RA 9275 refined markdown lines 24, 88-108, 135-139, 213-241, and 255-257; raw PDF pages 2, 4-7, 10, and 12 checked by local PDF extraction"
+      },
+      {
+        "source_id": "ra9003-solid-waste-management-b070",
+        "label": "RA 9003 Ecological Solid Waste Management Act",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.pdf",
+        "sha256": "sha256:d3939c8bad4085e76186be1fa0465b9011ceb639bdb8611e7d869fac454d59fe",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.md",
+        "refined_markdown_sha256": "sha256:f0e42aa0bb840899b2ef0a87d79fa7e9cb47e97d090731fc48b119711144eadc",
+        "locator": "RA 9003 refined markdown lines 506-551, 596-622, 675-677, and 811; raw PDF pages 19, 22, 25-26, and 33 checked by local PDF extraction"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, and citation rewritten to the Batch 070 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "Why are ecological studies part of site planning under the CLUP source family?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They provide natural, physical, biodiversity, drainage, and hazard data for land-use decisions."
+      },
+      {
+        "id": "b",
+        "text": "They are optional decoration after zoning approval."
+      },
+      {
+        "id": "c",
+        "text": "They replace all legal controls."
+      },
+      {
+        "id": "d",
+        "text": "They apply only to building color selection."
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Correct. This answer stays within the checked Batch 070 local raw-source scope.",
+      "b": "Incorrect. This option imports a different rule, scope, or unsupported condition.",
+      "c": "Incorrect. This option imports a different rule, scope, or unsupported condition.",
+      "d": "Incorrect. This option imports a different rule, scope, or unsupported condition.",
+      "correct": "Correct. This answer follows the checked Batch 070 source evidence and keeps the question inside the article scope.",
+      "takeaway": "Anchor the answer to the checked local source family before choosing the option."
+    },
+    "explanation": "Correct. This answer follows the checked Batch 070 source evidence and keeps the question inside the article scope.",
+    "code_citation": "HLURB CLUP Vol. 1 refined markdown lines 434-452, 1988-1994, 2000-2009, 2025-2029, 2117-2130, and 8461-8467; raw PDF pages 23, 70, 74, and 225 checked by local PDF extraction; DHSUD RUDD refined markdown lines 41-65, 385-397, 399-429, 568-572, 621-629, 704-724, 781-786, 865-890, 907-924, 1290-1293, 1380-1397, 1409-1419, 1486-1503, 1525-1549, 1554, 2070, and 2715-2767; raw PDF pages 5, 8, 10, 34-37, 43, 62, 65-68, 71, 97, 123-128, and 150-153 checked by local PDF extraction; PD 1067 refined markdown lines 193 and 224-239; raw PDF page 9 checked by local PDF extraction; RA 9275 refined markdown lines 24, 88-108, 135-139, 213-241, and 255-257; raw PDF pages 2, 4-7, 10, and 12 checked by local PDF extraction; RA 9003 refined markdown lines 506-551, 596-622, 675-677, and 811; raw PDF pages 19, 22, 25-26, and 33 checked by local PDF extraction",
+    "bloom_level": "remember",
+    "application_context": "recall",
+    "practice_context": [
+      "source-audited-local-first-batch-070"
+    ],
+    "difficulty": 0.3,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false
+  }
+}

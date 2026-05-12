@@ -1,0 +1,52 @@
+{
+  "question_id": "dbc263c6-67c3-43fc-96fd-045617a62d27",
+  "baseline_hash": "sha256:b75cc9d3c4532075aeeda86b61d0ca27a257a0b99ed2a27db85b400f4df6e6ab",
+  "action": "replace",
+  "reason": "source-audited-article-batch-040-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-040",
+  "approved_at": "2026-05-11T14:04:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-040-local-first",
+    "checked_sources": [
+      {
+        "source_id": "bp-344-2024-rirr-ncda-local",
+        "label": "BP 344 2024 Revised IRR - NCDA",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "checked_markdown_lines": [
+          "BP 344 2024 IRR refined markdown lines 36-70",
+          "BP 344 2024 IRR refined markdown lines 198-224",
+          "BP 344 2024 IRR refined markdown lines 539-585",
+          "BP 344 2024 IRR refined markdown lines 770-850",
+          "BP 344 2024 IRR refined markdown lines 317-469"
+        ]
+      }
+    ],
+    "citation": "BP 344 2024 Revised IRR, Accessible Ramps"
+  },
+  "proposed": {
+    "text": "What is the general maximum gradient for accessible ramps?",
+    "options": [
+      {
+        "id": "b040-5365-03-a",
+        "text": "Not steeper than 1:20"
+      },
+      {
+        "id": "b040-5365-03-b",
+        "text": "Not steeper than 1:5"
+      },
+      {
+        "id": "b040-5365-03-c",
+        "text": "Not steeper than 1:8"
+      },
+      {
+        "id": "b040-5365-03-d",
+        "text": "Not steeper than 1:100"
+      }
+    ],
+    "correct_option_id": "b040-5365-03-a",
+    "rationale": "Correct answer: Not steeper than 1:20. This is directly supported by BP 344 2024 Revised IRR, Accessible Ramps.",
+    "explanation": "The Batch 040 source-audited correction uses only local raw PDF families and locator-checked refined markdown for BP 344 2024 Revised IRR, Accessible Ramps.",
+    "code_citation": "BP 344 2024 Revised IRR, Accessible Ramps"
+  }
+}

@@ -1,44 +1,32 @@
 {
   "article_id": "5de12a80-903b-4488-bc66-e855e8cb4129",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:b1ab981d8d0e9322ef3b4ea0e1e205bdf54f64f96816ada2cc137be9ea8ede9e",
-  "source_count": 3,
+  "sources_hash": "sha256:85a7b1231b3c2176a8ef655e8c458244df27134514909f795096a941ccae3bc4",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "b1fa7288-93b7-41bb-ab68-a81532e8efb8",
+      "source_id": "building-construction-illustrated-b073",
       "article_id": "5de12a80-903b-4488-bc66-e855e8cb4129",
-      "label": "Primary: National Building Code of the Philippines (PD 1096), Rule XIII (Site Development); PD 1067 (Water Code); NSCP Section 404 (Grading and Drainage); ASAE Standards for Agricultural Drainage",
+      "label": "Building Construction Illustrated 5th Edition",
       "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
+      "source_type": "professional_reference_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-073-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf; raw_pdf_sha256=sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md; refined_markdown_sha256=sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a; checked_locator=BCI refined markdown lines 245-272, 284-288, 333-356, 360, 733-737, 747-755, and 1328-1336; raw PDF pages 11, 17, 20, 31, 46, and 473-475 checked by local PyMuPDF extraction",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:33:58.214974+00:00",
-      "updated_at": "2026-03-24T04:33:58.214974+00:00"
+      "created_at": "2026-05-12T01:46:28+08:00",
+      "updated_at": "2026-05-12T01:46:28+08:00"
     },
     {
-      "source_id": "ba67a02d-46bc-4c38-bc56-80c7540e8039",
+      "source_id": "pd1096-rirr-2004-b073",
       "article_id": "5de12a80-903b-4488-bc66-e855e8cb4129",
-      "label": "Secondary: DPWH Standard Specifications for Grading and Drainage; Philippine Geotechnical Society Guidelines for Slope Stability",
+      "label": "PD 1096 2004 Revised IRR - National Building Code",
       "url": null,
-      "source_type": "reference_standard",
-      "description": "ALE-DSGN-004-06 (Foundation Design) for subsurface drainage coordination",
-      "is_verified": false,
+      "source_type": "primary_law_irr_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-073-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf; raw_pdf_sha256=sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md; refined_markdown_sha256=sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7; checked_locator=PD 1096 refined markdown lines 560-570 and 2085-2089; raw PDF pages 23-24, 27, 33, and 352 checked by local PyMuPDF extraction",
+      "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-03-24T04:33:58.214974+00:00",
-      "updated_at": "2026-03-24T04:33:58.214974+00:00"
-    },
-    {
-      "source_id": "d15bfb57-20f0-41b5-8e38-850ab7d7f9b6",
-      "article_id": "5de12a80-903b-4488-bc66-e855e8cb4129",
-      "label": "Calculation Reference: NBC_CALCULATIONS_GUIDE, Slope Gradient and Drainage Design section",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:33:58.214974+00:00",
-      "updated_at": "2026-03-24T04:33:58.214974+00:00"
+      "created_at": "2026-05-12T01:46:28+08:00",
+      "updated_at": "2026-05-12T01:46:28+08:00"
     }
   ]
 }

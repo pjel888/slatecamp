@@ -1,0 +1,163 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-053-local-first",
+  "batch_number": 53,
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T19:04:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "b1233aee-06ed-44fd-a31a-e57086eab325",
+    "slug": "institutional-human-dimensions",
+    "title": "Institutional Human Dimensions",
+    "article_folder": ".ai/content-audit-export/articles/institutional-human-dimensions--b1233aee-06ed-44fd-a31a-e57086eab325",
+    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/institutional-human-dimensions--b1233aee-06ed-44fd-a31a-e57086eab325",
+    "candidate_path": ".ai/content-audit-export/articles/institutional-human-dimensions--b1233aee-06ed-44fd-a31a-e57086eab325/candidate.md",
+    "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/institutional-human-dimensions--b1233aee-06ed-44fd-a31a-e57086eab325/candidate.md",
+    "question_edits_folder": ".ai/content-audit-export/articles/institutional-human-dimensions--b1233aee-06ed-44fd-a31a-e57086eab325/question-edits",
+    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/institutional-human-dimensions--b1233aee-06ed-44fd-a31a-e57086eab325/question-edits",
+    "normalized_sha256": "sha256:96ceafc86494ab3837d52a91adc37d46d8dbfa0bbddf8a675d3003106187ebec",
+    "candidate_sha256": "sha256:96ceafc86494ab3837d52a91adc37d46d8dbfa0bbddf8a675d3003106187ebec",
+    "linked_questions_sha256": "sha256:84c5f72aa60021c3a554256ae001b502a3b22912be62b1880ec907667fd0506e",
+    "sources_sha256": "sha256:654c56b03a68e8cfcc92d4ab162bf814f977fedac6cc3e0cd8cf07276e2e2d8d"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "refined_markdown_role": "locator_only",
+    "derivative_or_search_layer_as_primary": false,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": [],
+    "source_families_checked": [
+      {
+        "label": "George Salvan Architectural Theories of Design - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "raw_pdf_sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
+        "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
+        "locator": "George Salvan Architectural Theories of Design refined markdown lines 3882-3888, 4089-4122, 15685-15691, 15749-15778, 15819-15831, 15871, 15923-15931, and 16194-16196"
+      },
+      {
+        "label": "TOA 3 Design Perception - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 3 (Design Perception).pdf",
+        "raw_pdf_sha256": "sha256:807be9f1a301d579123d8fa3ec680011b1906d6a4edcb6dc061c9a57e5ea9534",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 3 (Design Perception).md",
+        "refined_markdown_sha256": "sha256:49309b3dc5eea661ca7cad04cceb91897ac29fee6dd8e43cf6c3f60f163d404a",
+        "locator": "TOA 3 Design Perception refined markdown lines 508-514"
+      },
+      {
+        "label": "BP 344 2024 Revised IRR - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+        "locator": "BP 344 2024 Revised IRR refined markdown lines 40-64, 230-280, 305-348, 685-698, 776-808, 917-951, 1002-1018, 1157-1195, 1223-1225, and 1431-1441"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "institutional-human-dimensions",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "medium",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 21,
+    "question_edits_created": [
+      "8eb74cdf-c2a3-42f0-8edd-a903e1f786bd",
+      "fa0b8577-7b5e-4684-ac5e-dc9f098392dd",
+      "29424dd0-2882-4d05-bda3-46f40f1d31a8",
+      "68d10d65-10ea-402f-9adc-171335481cb2",
+      "8580cd4e-3dcc-41cb-b054-b453dddb16e6",
+      "51711e75-f9fe-4283-9cf0-a48c76836406",
+      "a308f00f-c039-46e5-bd27-df23619601af",
+      "9b50ebed-ad8d-4bdd-ba2d-be6cbc03befe",
+      "6b21b4ad-40f4-49ad-9c5e-1931e56fcb4d",
+      "3e92e825-fe17-450f-8986-b9a9eac23b74",
+      "cbf0a368-691d-411f-a072-cf3542a9d9c7",
+      "404fb2c4-b5ff-45e0-82ff-030993b5d57d",
+      "198eb759-2d2f-4d98-8199-294cdaf30839",
+      "afb7289c-2441-47d4-85fe-fe4c3f439070",
+      "0dd8d068-caa2-4b04-8fc4-789f1ec9ed37",
+      "cf1fe3ab-770f-4b97-ab36-9a8f12526e86",
+      "8480e20a-9f31-4e70-9ffd-c2bfc2745190",
+      "f4e0484c-8344-4f85-aa8d-08d6927310e7",
+      "9bf427e0-1cd7-4862-8bdc-caef8df7fd87",
+      "d9c61a2b-ccde-4da8-8236-a252d184d73a",
+      "8488cf4e-89bf-434f-836d-988ab27a878f"
+    ]
+  },
+  "checked_markdown_lines": [
+    "George Salvan Architectural Theories of Design refined markdown lines 3882-3888",
+    "George Salvan Architectural Theories of Design refined markdown lines 4089-4122",
+    "George Salvan Architectural Theories of Design refined markdown lines 15685-15691",
+    "George Salvan Architectural Theories of Design refined markdown lines 15749-15778",
+    "George Salvan Architectural Theories of Design refined markdown lines 15819-15831",
+    "George Salvan Architectural Theories of Design refined markdown line 15871",
+    "George Salvan Architectural Theories of Design refined markdown lines 15923-15931",
+    "George Salvan Architectural Theories of Design refined markdown lines 16194-16196",
+    "TOA 3 Design Perception refined markdown lines 508-514",
+    "BP 344 2024 Revised IRR refined markdown lines 40-64",
+    "BP 344 2024 Revised IRR refined markdown lines 230-280",
+    "BP 344 2024 Revised IRR refined markdown lines 305-348",
+    "BP 344 2024 Revised IRR refined markdown lines 685-698",
+    "BP 344 2024 Revised IRR refined markdown lines 776-808",
+    "BP 344 2024 Revised IRR refined markdown lines 917-951",
+    "BP 344 2024 Revised IRR refined markdown lines 1002-1018",
+    "BP 344 2024 Revised IRR refined markdown lines 1157-1195",
+    "BP 344 2024 Revised IRR refined markdown lines 1223-1225",
+    "BP 344 2024 Revised IRR refined markdown lines 1431-1441"
+  ],
+  "claims": [
+    {
+      "claim_id": "institutional-human-dimensions-b053-claim-01",
+      "claim_text": "Institutional human-dimension guidance is constrained to checked local evidence for psychological/social space, human-architectural interfaces, and BP 344 accessible built-interface dimensions.",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "quoted_pdf_excerpt": "George Salvan Architectural Theories of Design refined markdown lines 3882-3888, 4089-4122, 15685-15691, 15749-15778, 15819-15831, 15871, 15923-15931, and 16194-16196; TOA 3 Design Perception refined markdown lines 508-514; BP 344 2024 Revised IRR refined markdown lines 40-64, 230-280, 305-348, 685-698, 776-808, 917-951, 1002-1018, 1157-1195, 1223-1225, and 1431-1441",
+        "source_ids": [
+          "salvan-theory-local-raw-pdf--b053-b1233aee-01",
+          "toa3-design-perception-local-raw-pdf--b053-b1233aee-02",
+          "bp344-2024-local-raw-pdf--b053-b1233aee-03"
+        ]
+      },
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "institutional-human-dimensions-b053-claim-questions",
+      "claim_text": "Batch 053 question edits audited for institutional-human-dimensions: 8eb74cdf-c2a3-42f0-8edd-a903e1f786bd, fa0b8577-7b5e-4684-ac5e-dc9f098392dd, 29424dd0-2882-4d05-bda3-46f40f1d31a8, 68d10d65-10ea-402f-9adc-171335481cb2, 8580cd4e-3dcc-41cb-b054-b453dddb16e6, 51711e75-f9fe-4283-9cf0-a48c76836406, a308f00f-c039-46e5-bd27-df23619601af, 9b50ebed-ad8d-4bdd-ba2d-be6cbc03befe, 6b21b4ad-40f4-49ad-9c5e-1931e56fcb4d, 3e92e825-fe17-450f-8986-b9a9eac23b74, cbf0a368-691d-411f-a072-cf3542a9d9c7, 404fb2c4-b5ff-45e0-82ff-030993b5d57d, 198eb759-2d2f-4d98-8199-294cdaf30839, afb7289c-2441-47d4-85fe-fe4c3f439070, 0dd8d068-caa2-4b04-8fc4-789f1ec9ed37, cf1fe3ab-770f-4b97-ab36-9a8f12526e86, 8480e20a-9f31-4e70-9ffd-c2bfc2745190, f4e0484c-8344-4f85-aa8d-08d6927310e7, 9bf427e0-1cd7-4862-8bdc-caef8df7fd87, d9c61a2b-ccde-4da8-8236-a252d184d73a, 8488cf4e-89bf-434f-836d-988ab27a878f",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "quoted_pdf_excerpt": "George Salvan Architectural Theories of Design refined markdown lines 3882-3888, 4089-4122, 15685-15691, 15749-15778, 15819-15831, 15871, 15923-15931, and 16194-16196; TOA 3 Design Perception refined markdown lines 508-514; BP 344 2024 Revised IRR refined markdown lines 40-64, 230-280, 305-348, 685-698, 776-808, 917-951, 1002-1018, 1157-1195, 1223-1225, and 1431-1441",
+        "source_ids": [
+          "salvan-theory-local-raw-pdf--b053-b1233aee-01",
+          "toa3-design-perception-local-raw-pdf--b053-b1233aee-02",
+          "bp344-2024-local-raw-pdf--b053-b1233aee-03"
+        ]
+      },
+      "audit_result": "PASS"
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "local_first_only": true,
+    "supabase_write_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json"
+  },
+  "sme_review": {
+    "required": false,
+    "status": "not_required"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

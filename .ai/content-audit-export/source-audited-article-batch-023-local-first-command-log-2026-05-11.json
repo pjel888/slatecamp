@@ -1,0 +1,230 @@
+{
+  "generated_at": "2026-05-10T18:17:49.689Z",
+  "log": [
+    {
+      "label": "compose 850a66f9-db5d-4068-a763-0bc4c1d9872a",
+      "args": [
+        "bun",
+        "run",
+        "content-audit:compose",
+        "--",
+        "--article-id",
+        "850a66f9-db5d-4068-a763-0bc4c1d9872a",
+        "--overwrite"
+      ],
+      "stdout": "✓ compose 850a66f9-db5d-4068-a763-0bc4c1d9872a: changed; blockers=0\nComposed 1 candidate(s)",
+      "stderr": "$ bun scripts/content-audit/compose-candidates.ts --article-id \"850a66f9-db5d-4068-a763-0bc4c1d9872a\" --overwrite",
+      "code": 0
+    },
+    {
+      "label": "diff 850a66f9-db5d-4068-a763-0bc4c1d9872a",
+      "args": [
+        "bun",
+        "run",
+        "content-audit:diff",
+        "--",
+        "--article-id",
+        "850a66f9-db5d-4068-a763-0bc4c1d9872a",
+        "--summary"
+      ],
+      "stdout": "✓ diff 850a66f9-db5d-4068-a763-0bc4c1d9872a: changed=true safe=true\n[\n  {\n    \"article_id\": \"850a66f9-db5d-4068-a763-0bc4c1d9872a\",\n    \"slug\": \"minimum-parking-requirements\",\n    \"changed\": true,\n    \"safe_to_push\": true,\n    \"blockers\": []\n  }\n]",
+      "stderr": "$ bun scripts/content-audit/diff-candidates.ts --article-id \"850a66f9-db5d-4068-a763-0bc4c1d9872a\" --summary",
+      "code": 0
+    },
+    {
+      "label": "validate 850a66f9-db5d-4068-a763-0bc4c1d9872a",
+      "args": [
+        "bun",
+        "run",
+        "content-audit:validate",
+        "--",
+        "--article-id",
+        "850a66f9-db5d-4068-a763-0bc4c1d9872a",
+        "--summary"
+      ],
+      "stdout": "{\n  \"generated_at\": \"2026-05-10T18:17:48.710Z\",\n  \"input\": \"/Users/philiplewis/slatecamp/.ai/content-audit-export\",\n  \"article_count\": 1,\n  \"valid\": true,\n  \"blockers\": [],\n  \"warnings\": [\n    \"minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a: component-usage.json has not been generated for this article yet.\"\n  ],\n  \"articles\": [\n    {\n      \"article_id\": \"850a66f9-db5d-4068-a763-0bc4c1d9872a\",\n      \"slug\": \"minimum-parking-requirements\",\n      \"folder\": \"minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a\",\n      \"valid\": true,\n      \"blockers\": [],\n      \"warnings\": [\n        \"component-usage.json has not been generated for this article yet.\"\n      ],\n      \"files\": {\n        \"metadata\": true,\n        \"original\": true,\n        \"normalized\": true,\n        \"uiBlocks\": true,\n        \"parserErrors\": true,\n        \"uiBlockEdits\": true,\n        \"linkedQuestions\": true,\n        \"sources\": true,\n        \"taxonomy\": true,\n        \"componentUsage\": false,\n        \"candidate\": true,\n        \"diffReport\": true,\n        \"diffReportMarkdown\": true,\n        \"pushReport\": false,\n        \"pushResult\": false\n      },\n      \"hashes\": {\n        \"original\": \"sha256:069a853aaa76cf823cd2e44d8df42d839d5b62d0215739334cdf380c8d582415\",\n        \"normalized\": \"sha256:1f86af9278094aad603b7d3ec852939a32f445a54c0d424f34edb842a4cb4d3b\",\n        \"candidate\": \"sha256:1f86af9278094aad603b7d3ec852939a32f445a54c0d424f34edb842a4cb4d3b\",\n        \"ui_blocks\": \"sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\"\n      }\n    }\n  ]\n}",
+      "stderr": "$ bun scripts/content-audit/validate-bundles.ts --article-id \"850a66f9-db5d-4068-a763-0bc4c1d9872a\" --summary",
+      "code": 0
+    },
+    {
+      "label": "compose 3e488a13-943c-4dee-8e38-95b711bef107",
+      "args": [
+        "bun",
+        "run",
+        "content-audit:compose",
+        "--",
+        "--article-id",
+        "3e488a13-943c-4dee-8e38-95b711bef107",
+        "--overwrite"
+      ],
+      "stdout": "✓ compose 3e488a13-943c-4dee-8e38-95b711bef107: changed; blockers=0\nComposed 1 candidate(s)",
+      "stderr": "$ bun scripts/content-audit/compose-candidates.ts --article-id \"3e488a13-943c-4dee-8e38-95b711bef107\" --overwrite",
+      "code": 0
+    },
+    {
+      "label": "diff 3e488a13-943c-4dee-8e38-95b711bef107",
+      "args": [
+        "bun",
+        "run",
+        "content-audit:diff",
+        "--",
+        "--article-id",
+        "3e488a13-943c-4dee-8e38-95b711bef107",
+        "--summary"
+      ],
+      "stdout": "✓ diff 3e488a13-943c-4dee-8e38-95b711bef107: changed=true safe=true\n[\n  {\n    \"article_id\": \"3e488a13-943c-4dee-8e38-95b711bef107\",\n    \"slug\": \"wheelchair-maneuvering-and-parking\",\n    \"changed\": true,\n    \"safe_to_push\": true,\n    \"blockers\": []\n  }\n]",
+      "stderr": "$ bun scripts/content-audit/diff-candidates.ts --article-id \"3e488a13-943c-4dee-8e38-95b711bef107\" --summary",
+      "code": 0
+    },
+    {
+      "label": "validate 3e488a13-943c-4dee-8e38-95b711bef107",
+      "args": [
+        "bun",
+        "run",
+        "content-audit:validate",
+        "--",
+        "--article-id",
+        "3e488a13-943c-4dee-8e38-95b711bef107",
+        "--summary"
+      ],
+      "stdout": "{\n  \"generated_at\": \"2026-05-10T18:17:48.930Z\",\n  \"input\": \"/Users/philiplewis/slatecamp/.ai/content-audit-export\",\n  \"article_count\": 1,\n  \"valid\": true,\n  \"blockers\": [],\n  \"warnings\": [\n    \"wheelchair-maneuvering-and-parking--3e488a13-943c-4dee-8e38-95b711bef107: component-usage.json has not been generated for this article yet.\"\n  ],\n  \"articles\": [\n    {\n      \"article_id\": \"3e488a13-943c-4dee-8e38-95b711bef107\",\n      \"slug\": \"wheelchair-maneuvering-and-parking\",\n      \"folder\": \"wheelchair-maneuvering-and-parking--3e488a13-943c-4dee-8e38-95b711bef107\",\n      \"valid\": true,\n      \"blockers\": [],\n      \"warnings\": [\n        \"component-usage.json has not been generated for this article yet.\"\n      ],\n      \"files\": {\n        \"metadata\": true,\n        \"original\": true,\n        \"normalized\": true,\n        \"uiBlocks\": true,\n        \"parserErrors\": true,\n        \"uiBlockEdits\": true,\n        \"linkedQuestions\": true,\n        \"sources\": true,\n        \"taxonomy\": true,\n        \"componentUsage\": false,\n        \"candidate\": true,\n        \"diffReport\": true,\n        \"diffReportMarkdown\": true,\n        \"pushReport\": false,\n        \"pushResult\": false\n      },\n      \"hashes\": {\n        \"original\": \"sha256:7804a1ba40f054215a2d3b789d0873026e48fd28a74f36175efcf26bf6658713\",\n        \"normalized\": \"sha256:b90cd562aa9c60f45234cf39d779cd2c21c9be9aa789e4ab033219b3313946f1\",\n        \"candidate\": \"sha256:b90cd562aa9c60f45234cf39d779cd2c21c9be9aa789e4ab033219b3313946f1\",\n        \"ui_blocks\": \"sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\"\n      }\n    }\n  ]\n}",
+      "stderr": "$ bun scripts/content-audit/validate-bundles.ts --article-id \"3e488a13-943c-4dee-8e38-95b711bef107\" --summary",
+      "code": 0
+    },
+    {
+      "label": "compose 875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+      "args": [
+        "bun",
+        "run",
+        "content-audit:compose",
+        "--",
+        "--article-id",
+        "875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+        "--overwrite"
+      ],
+      "stdout": "✓ compose 875a991f-b8ca-4655-a252-8b5c9f1fc54d: changed; blockers=0\nComposed 1 candidate(s)",
+      "stderr": "$ bun scripts/content-audit/compose-candidates.ts --article-id \"875a991f-b8ca-4655-a252-8b5c9f1fc54d\" --overwrite",
+      "code": 0
+    },
+    {
+      "label": "diff 875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+      "args": [
+        "bun",
+        "run",
+        "content-audit:diff",
+        "--",
+        "--article-id",
+        "875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+        "--summary"
+      ],
+      "stdout": "✓ diff 875a991f-b8ca-4655-a252-8b5c9f1fc54d: changed=true safe=true\n[\n  {\n    \"article_id\": \"875a991f-b8ca-4655-a252-8b5c9f1fc54d\",\n    \"slug\": \"site-exterior-circulation\",\n    \"changed\": true,\n    \"safe_to_push\": true,\n    \"blockers\": []\n  }\n]",
+      "stderr": "$ bun scripts/content-audit/diff-candidates.ts --article-id \"875a991f-b8ca-4655-a252-8b5c9f1fc54d\" --summary",
+      "code": 0
+    },
+    {
+      "label": "validate 875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+      "args": [
+        "bun",
+        "run",
+        "content-audit:validate",
+        "--",
+        "--article-id",
+        "875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+        "--summary"
+      ],
+      "stdout": "{\n  \"generated_at\": \"2026-05-10T18:17:49.183Z\",\n  \"input\": \"/Users/philiplewis/slatecamp/.ai/content-audit-export\",\n  \"article_count\": 1,\n  \"valid\": true,\n  \"blockers\": [],\n  \"warnings\": [\n    \"site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d: component-usage.json has not been generated for this article yet.\"\n  ],\n  \"articles\": [\n    {\n      \"article_id\": \"875a991f-b8ca-4655-a252-8b5c9f1fc54d\",\n      \"slug\": \"site-exterior-circulation\",\n      \"folder\": \"site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d\",\n      \"valid\": true,\n      \"blockers\": [],\n      \"warnings\": [\n        \"component-usage.json has not been generated for this article yet.\"\n      ],\n      \"files\": {\n        \"metadata\": true,\n        \"original\": true,\n        \"normalized\": true,\n        \"uiBlocks\": true,\n        \"parserErrors\": true,\n        \"uiBlockEdits\": true,\n        \"linkedQuestions\": true,\n        \"sources\": true,\n        \"taxonomy\": true,\n        \"componentUsage\": false,\n        \"candidate\": true,\n        \"diffReport\": true,\n        \"diffReportMarkdown\": true,\n        \"pushReport\": false,\n        \"pushResult\": false\n      },\n      \"hashes\": {\n        \"original\": \"sha256:d766b454399d0cbbea0779775d05d4f04f693814ed5722846ed058f7470917c0\",\n        \"normalized\": \"sha256:d6ffb63b5d3d9c7d99435c5a9900d6ec5ce3627281a50bdd5ee08430af4b6d78\",\n        \"candidate\": \"sha256:d6ffb63b5d3d9c7d99435c5a9900d6ec5ce3627281a50bdd5ee08430af4b6d78\",\n        \"ui_blocks\": \"sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\"\n      }\n    }\n  ]\n}",
+      "stderr": "$ bun scripts/content-audit/validate-bundles.ts --article-id \"875a991f-b8ca-4655-a252-8b5c9f1fc54d\" --summary",
+      "code": 0
+    },
+    {
+      "label": "compose f6fe1a69-b3c0-4c94-8341-9291c71c5006",
+      "args": [
+        "bun",
+        "run",
+        "content-audit:compose",
+        "--",
+        "--article-id",
+        "f6fe1a69-b3c0-4c94-8341-9291c71c5006",
+        "--overwrite"
+      ],
+      "stdout": "✓ compose f6fe1a69-b3c0-4c94-8341-9291c71c5006: changed; blockers=0\nComposed 1 candidate(s)",
+      "stderr": "$ bun scripts/content-audit/compose-candidates.ts --article-id \"f6fe1a69-b3c0-4c94-8341-9291c71c5006\" --overwrite",
+      "code": 0
+    },
+    {
+      "label": "diff f6fe1a69-b3c0-4c94-8341-9291c71c5006",
+      "args": [
+        "bun",
+        "run",
+        "content-audit:diff",
+        "--",
+        "--article-id",
+        "f6fe1a69-b3c0-4c94-8341-9291c71c5006",
+        "--summary"
+      ],
+      "stdout": "✓ diff f6fe1a69-b3c0-4c94-8341-9291c71c5006: changed=true safe=true\n[\n  {\n    \"article_id\": \"f6fe1a69-b3c0-4c94-8341-9291c71c5006\",\n    \"slug\": \"transport-nodes-escalators-walkways\",\n    \"changed\": true,\n    \"safe_to_push\": true,\n    \"blockers\": []\n  }\n]",
+      "stderr": "$ bun scripts/content-audit/diff-candidates.ts --article-id \"f6fe1a69-b3c0-4c94-8341-9291c71c5006\" --summary",
+      "code": 0
+    },
+    {
+      "label": "validate f6fe1a69-b3c0-4c94-8341-9291c71c5006",
+      "args": [
+        "bun",
+        "run",
+        "content-audit:validate",
+        "--",
+        "--article-id",
+        "f6fe1a69-b3c0-4c94-8341-9291c71c5006",
+        "--summary"
+      ],
+      "stdout": "{\n  \"generated_at\": \"2026-05-10T18:17:49.477Z\",\n  \"input\": \"/Users/philiplewis/slatecamp/.ai/content-audit-export\",\n  \"article_count\": 1,\n  \"valid\": true,\n  \"blockers\": [],\n  \"warnings\": [\n    \"transport-nodes-escalators-walkways--f6fe1a69-b3c0-4c94-8341-9291c71c5006: component-usage.json has not been generated for this article yet.\"\n  ],\n  \"articles\": [\n    {\n      \"article_id\": \"f6fe1a69-b3c0-4c94-8341-9291c71c5006\",\n      \"slug\": \"transport-nodes-escalators-walkways\",\n      \"folder\": \"transport-nodes-escalators-walkways--f6fe1a69-b3c0-4c94-8341-9291c71c5006\",\n      \"valid\": true,\n      \"blockers\": [],\n      \"warnings\": [\n        \"component-usage.json has not been generated for this article yet.\"\n      ],\n      \"files\": {\n        \"metadata\": true,\n        \"original\": true,\n        \"normalized\": true,\n        \"uiBlocks\": true,\n        \"parserErrors\": true,\n        \"uiBlockEdits\": true,\n        \"linkedQuestions\": true,\n        \"sources\": true,\n        \"taxonomy\": true,\n        \"componentUsage\": false,\n        \"candidate\": true,\n        \"diffReport\": true,\n        \"diffReportMarkdown\": true,\n        \"pushReport\": false,\n        \"pushResult\": false\n      },\n      \"hashes\": {\n        \"original\": \"sha256:f5c8d133756e4a0a4e1a1159d2716758038d73d6312a3a966bc0310d37c54359\",\n        \"normalized\": \"sha256:97eff161df726e76be0067680c11b19655751e127ba9fd0f36482021580e7e24\",\n        \"candidate\": \"sha256:97eff161df726e76be0067680c11b19655751e127ba9fd0f36482021580e7e24\",\n        \"ui_blocks\": \"sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\"\n      }\n    }\n  ]\n}",
+      "stderr": "$ bun scripts/content-audit/validate-bundles.ts --article-id \"f6fe1a69-b3c0-4c94-8341-9291c71c5006\" --summary",
+      "code": 0
+    },
+    {
+      "label": "compose 6e84b3e6-5dd9-4557-8202-5085d24a3708",
+      "args": [
+        "bun",
+        "run",
+        "content-audit:compose",
+        "--",
+        "--article-id",
+        "6e84b3e6-5dd9-4557-8202-5085d24a3708",
+        "--overwrite"
+      ],
+      "stdout": "✓ compose 6e84b3e6-5dd9-4557-8202-5085d24a3708: changed; blockers=0\nComposed 1 candidate(s)",
+      "stderr": "$ bun scripts/content-audit/compose-candidates.ts --article-id \"6e84b3e6-5dd9-4557-8202-5085d24a3708\" --overwrite",
+      "code": 0
+    },
+    {
+      "label": "diff 6e84b3e6-5dd9-4557-8202-5085d24a3708",
+      "args": [
+        "bun",
+        "run",
+        "content-audit:diff",
+        "--",
+        "--article-id",
+        "6e84b3e6-5dd9-4557-8202-5085d24a3708",
+        "--summary"
+      ],
+      "stdout": "✓ diff 6e84b3e6-5dd9-4557-8202-5085d24a3708: changed=true safe=true\n[\n  {\n    \"article_id\": \"6e84b3e6-5dd9-4557-8202-5085d24a3708\",\n    \"slug\": \"top-50-traps-2024-irr\",\n    \"changed\": true,\n    \"safe_to_push\": true,\n    \"blockers\": []\n  }\n]",
+      "stderr": "$ bun scripts/content-audit/diff-candidates.ts --article-id \"6e84b3e6-5dd9-4557-8202-5085d24a3708\" --summary",
+      "code": 0
+    },
+    {
+      "label": "validate 6e84b3e6-5dd9-4557-8202-5085d24a3708",
+      "args": [
+        "bun",
+        "run",
+        "content-audit:validate",
+        "--",
+        "--article-id",
+        "6e84b3e6-5dd9-4557-8202-5085d24a3708",
+        "--summary"
+      ],
+      "stdout": "{\n  \"generated_at\": \"2026-05-10T18:17:49.682Z\",\n  \"input\": \"/Users/philiplewis/slatecamp/.ai/content-audit-export\",\n  \"article_count\": 1,\n  \"valid\": true,\n  \"blockers\": [],\n  \"warnings\": [\n    \"top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708: component-usage.json has not been generated for this article yet.\"\n  ],\n  \"articles\": [\n    {\n      \"article_id\": \"6e84b3e6-5dd9-4557-8202-5085d24a3708\",\n      \"slug\": \"top-50-traps-2024-irr\",\n      \"folder\": \"top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708\",\n      \"valid\": true,\n      \"blockers\": [],\n      \"warnings\": [\n        \"component-usage.json has not been generated for this article yet.\"\n      ],\n      \"files\": {\n        \"metadata\": true,\n        \"original\": true,\n        \"normalized\": true,\n        \"uiBlocks\": true,\n        \"parserErrors\": true,\n        \"uiBlockEdits\": true,\n        \"linkedQuestions\": true,\n        \"sources\": true,\n        \"taxonomy\": true,\n        \"componentUsage\": false,\n        \"candidate\": true,\n        \"diffReport\": true,\n        \"diffReportMarkdown\": true,\n        \"pushReport\": false,\n        \"pushResult\": false\n      },\n      \"hashes\": {\n        \"original\": \"sha256:17371b82afe0539467759f5b0c7fd39949d3b4fa0572206bd55d261dfdd0fff4\",\n        \"normalized\": \"sha256:0c81f4e4b526550a099cb126c827de5a16fdd34255be45f71d0a4e288f0b117a\",\n        \"candidate\": \"sha256:0c81f4e4b526550a099cb126c827de5a16fdd34255be45f71d0a4e288f0b117a\",\n        \"ui_blocks\": \"sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\"\n      }\n    }\n  ]\n}",
+      "stderr": "$ bun scripts/content-audit/validate-bundles.ts --article-id \"6e84b3e6-5dd9-4557-8202-5085d24a3708\" --summary",
+      "code": 0
+    }
+  ]
+}

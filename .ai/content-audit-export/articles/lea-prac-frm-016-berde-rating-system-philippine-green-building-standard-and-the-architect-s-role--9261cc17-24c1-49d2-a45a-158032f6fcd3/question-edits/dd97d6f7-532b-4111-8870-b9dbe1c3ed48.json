@@ -1,0 +1,57 @@
+{
+  "question_id": "dd97d6f7-532b-4111-8870-b9dbe1c3ed48",
+  "baseline_hash": "sha256:85427947a8d19349f066c73c7831534996ab1089e511afd0eae4aa20519878ac",
+  "action": "replace",
+  "reason": "source-audited-article-batch-031-local-first aligned linked question with audited local source language for lea-prac-frm-016-berde-rating-system-philippine-green-building-standard-and-the-architect-s-role.",
+  "approved_by": "codex-local-source-audit-batch-031",
+  "approved_at": "2026-05-11T08:56:01+08:00",
+  "source_audit_support": {
+    "parent_article_id": "9261cc17-24c1-49d2-a45a-158032f6fcd3",
+    "parent_article_slug": "lea-prac-frm-016-berde-rating-system-philippine-green-building-standard-and-the-architect-s-role",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "BERDE User Guide lines 123-135, 141-171, 242-269, 320-360, 544-548",
+    "checked_sources": [
+      {
+        "source_id": "berde-buildings-version-5-user-guide-local",
+        "label": "BERDE Buildings Version 5.0.0 User Guide",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.pdf",
+        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.pdf",
+        "raw_pdf_sha256": "sha256:59f4e0a3a485f73f93f211bc4250932a9c9d2b114b4f571b2ab8f6a58c426bb4",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.md",
+        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.md",
+        "refined_markdown_sha256": "sha256:36537e2d7fae0f6f9eaf85589873086d118008fbb757f48f845876ab8585b5fc",
+        "source_locator": "BERDE refined markdown lines 123-135, 141-171, 242-269, 320-360, 544-548",
+        "checked_markdown_lines": [
+          "BERDE refined markdown lines 123-135, 141-171, 242-269, 320-360, 544-548"
+        ]
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer key, rationale, explanation, and code citation rewritten to the audited local article scope."
+  },
+  "proposed": {
+    "text": "What is the focus of Stage 2 Construction?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Verifying implementation of awarded Stage 1 credits through review and on-site assessment"
+      },
+      {
+        "id": "b",
+        "text": "Preparing the architect board exam"
+      },
+      {
+        "id": "c",
+        "text": "Issuing a land title"
+      },
+      {
+        "id": "d",
+        "text": "Selling the completed units"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Stage 2 verifies construction or implementation of awarded Stage 1 credits.",
+    "explanation": "Stage 2 verifies construction or implementation of awarded Stage 1 credits.",
+    "code_citation": "BERDE User Guide lines 123-135, 141-171, 242-269, 320-360, 544-548"
+  }
+}

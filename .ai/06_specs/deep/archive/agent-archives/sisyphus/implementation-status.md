@@ -2,8 +2,8 @@
 
 # SlateCamp Master Implementation Plan
 
-> **Status:** Implementation Roadmap  
-> **Updated:** 2026-04-05  
+> **Status:** Implementation Roadmap
+> **Updated:** 2026-04-05
 > **Purpose:** Unified implementation tasks, dead code audit, and execution roadmap
 
 ---

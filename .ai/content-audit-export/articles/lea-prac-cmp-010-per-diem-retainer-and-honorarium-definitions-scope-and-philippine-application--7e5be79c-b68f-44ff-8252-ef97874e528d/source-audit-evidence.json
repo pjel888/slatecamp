@@ -1,0 +1,336 @@
+{
+  "batch_id": "source-audited-article-batch-027-local-first",
+  "article_id": "7e5be79c-b68f-44ff-8252-ef97874e528d",
+  "slug": "lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application",
+  "title": "Per Diem, Retainer, and Honorarium in Architectural Practice",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T00:00:00.000+08:00",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "classification": "legal_code_professional_practice_compensation_contracts",
+  "target": "local_first_source_audit_article_and_linked_questions",
+  "article_folder": ".ai/content-audit-export/articles/lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application--7e5be79c-b68f-44ff-8252-ef97874e528d",
+  "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application--7e5be79c-b68f-44ff-8252-ef97874e528d",
+  "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application--7e5be79c-b68f-44ff-8252-ef97874e528d/question-edits",
+  "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application--7e5be79c-b68f-44ff-8252-ef97874e528d/question-edits",
+  "question_edits_created": 10,
+  "linked_questions": [
+    {
+      "question_id": "2df2646d-a3a3-4465-90c1-f0c4fdf217ae",
+      "baseline_hash": "sha256:f08a1689268b8ba144ae06eafe8c97c056d450f14d2483f4e0c1b33aa7e9c3a8"
+    },
+    {
+      "question_id": "6279e7dd-2e02-4a48-a36f-2d28dfdb2830",
+      "baseline_hash": "sha256:e4fd804987289cb9427311423a1e4aa3f60161d5b9a5962ee1b264147faea9fc"
+    },
+    {
+      "question_id": "40de506c-0a09-4b52-8ec0-341d2b39319e",
+      "baseline_hash": "sha256:70f13e3972dd3ff8990726b4cb55dfcd14916b8ad893ec2d430e2fe91a17b2b0"
+    },
+    {
+      "question_id": "8468b618-86b5-4308-9bd3-2586ee34b2f4",
+      "baseline_hash": "sha256:9f9282bdd88f627d984c443035555fc13aa855b9c186eca912548e1ec531344b"
+    },
+    {
+      "question_id": "83471d91-83e3-4d3a-9760-61cccfa02a85",
+      "baseline_hash": "sha256:2272520ea66bac613032f08ad2ed0510378ac76f011b8b1d8ceb5ebe9210d78b"
+    },
+    {
+      "question_id": "839f4b18-0ba0-4320-bafe-423c76012141",
+      "baseline_hash": "sha256:2a2cc781c4f9e3484e6dba607da9cceab957fbb20cfa87dbdf88a30b6933944e"
+    },
+    {
+      "question_id": "e5622e36-d8ba-4f42-868c-8eb4f8e1b6c6",
+      "baseline_hash": "sha256:a4e5418eb28ee71d13030624acffe9fdbd77924a59697df3dca1e959caac499b"
+    },
+    {
+      "question_id": "344d9086-08d8-4c8f-89c6-c3123911855d",
+      "baseline_hash": "sha256:17d088731ede11a34c8d18404654c00f033ee954cb44144dd710c249400c3fbb"
+    },
+    {
+      "question_id": "7b933a55-74fa-48df-9e9c-1a3610f62987",
+      "baseline_hash": "sha256:cd1e47bc4a8322b5de99bc85608b02896f1871cd405ed6a2ea46618c03be9621"
+    },
+    {
+      "question_id": "3eedba70-19e9-4570-9278-05a0c4a19116",
+      "baseline_hash": "sha256:6f060abd991d6e9ca4c129b12d5909bdbd9c7b86dcdfa398f71ef0049214b493"
+    }
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "source_audit": {
+    "checked_sources": [
+      {
+        "source_id": "uap-standards-spp202-compensation-local",
+        "label": "UAP Document Standards of Professional Practice - SPP 202 compensation and service conditions",
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "source_type": "professional_practice_pdf",
+        "source_locator": "UAP Standards refined markdown lines 414-501 and 1608-1642",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "checked_markdown_lines": [
+          "UAP Standards lines 414-457",
+          "UAP Standards lines 459-501",
+          "UAP Standards lines 1608-1642"
+        ],
+        "use": "Local UAP Standards raw PDF and refined markdown checked for SPP 202 compensation methods, reimbursables, owner responsibilities, additional services, abandoned projects, and PCA compensation terms.",
+        "local_source_checked": true
+      },
+      {
+        "source_id": "spp202-regular-design-services-local",
+        "label": "SPP 202 - Regular Design Services",
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "source_type": "professional_practice_pdf",
+        "source_locator": "SPP 202 local raw PDF; UAP Standards refined markdown lines 414-501 used as readable local locator",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+        "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+        "refined_markdown_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+        "checked_markdown_lines": [
+          "SPP 202 local raw PDF checked",
+          "UAP Standards lines 414-501 used for readable source locators"
+        ],
+        "use": "Local SPP 202 raw PDF checked as the regular-design-services source counterpart; UAP Standards refined markdown provides readable local line locators for the same professional-practice provisions.",
+        "local_source_checked": true
+      }
+    ],
+    "source_locator": "UAP Standards refined markdown lines 414-457 and 1608-1642; SPP 202 local raw PDF checked",
+    "checked_markdown_lines": [
+      "UAP Standards lines 414-457",
+      "UAP Standards lines 459-501",
+      "UAP Standards lines 1608-1642",
+      "SPP 202 local raw PDF checked",
+      "UAP Standards lines 414-501 used for readable source locators"
+    ]
+  },
+  "article_repair": {
+    "normalized_md_rewritten": true,
+    "candidate_md_pending_compose": false,
+    "placeholders_removed": true,
+    "internal_notes_removed": true,
+    "source_safe_scope": true,
+    "normalized_hash": "sha256:32d070fe8633aa2f8310bd485e5cd7c4696c710a2ecdeba0565106370e759659",
+    "sources_hash": "sha256:5686a75d6b88cf27b549042cf6f376b39b89b4aaa949884c78c4769544359445",
+    "candidate_hash": "sha256:32d070fe8633aa2f8310bd485e5cd7c4696c710a2ecdeba0565106370e759659"
+  },
+  "claims": [
+    {
+      "claim_id": "batch-027-lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application-question-001",
+      "claim_text": "Question 2df2646d-a3a3-4465-90c1-f0c4fdf217ae / model BATCH-027-lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application-001 rewritten to local source-safe form.",
+      "question_id": "2df2646d-a3a3-4465-90c1-f0c4fdf217ae",
+      "model_id": "BATCH-027-lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application-001",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp202-compensation-local",
+        "spp202-regular-design-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 414-457 and 1608-1642; SPP 202 local raw PDF checked",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-027-lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application-question-002",
+      "claim_text": "Question 6279e7dd-2e02-4a48-a36f-2d28dfdb2830 / model BATCH-027-lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application-002 rewritten to local source-safe form.",
+      "question_id": "6279e7dd-2e02-4a48-a36f-2d28dfdb2830",
+      "model_id": "BATCH-027-lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application-002",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp202-compensation-local",
+        "spp202-regular-design-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 414-457 and 1608-1642; SPP 202 local raw PDF checked",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-027-lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application-question-003",
+      "claim_text": "Question 40de506c-0a09-4b52-8ec0-341d2b39319e / model BATCH-027-lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application-003 rewritten to local source-safe form.",
+      "question_id": "40de506c-0a09-4b52-8ec0-341d2b39319e",
+      "model_id": "BATCH-027-lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application-003",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp202-compensation-local",
+        "spp202-regular-design-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 414-457 and 1608-1642; SPP 202 local raw PDF checked",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-027-lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application-question-004",
+      "claim_text": "Question 8468b618-86b5-4308-9bd3-2586ee34b2f4 / model BATCH-027-lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application-004 rewritten to local source-safe form.",
+      "question_id": "8468b618-86b5-4308-9bd3-2586ee34b2f4",
+      "model_id": "BATCH-027-lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application-004",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp202-compensation-local",
+        "spp202-regular-design-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 414-457 and 1608-1642; SPP 202 local raw PDF checked",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-027-lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application-question-005",
+      "claim_text": "Question 83471d91-83e3-4d3a-9760-61cccfa02a85 / model BATCH-027-lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application-005 rewritten to local source-safe form.",
+      "question_id": "83471d91-83e3-4d3a-9760-61cccfa02a85",
+      "model_id": "BATCH-027-lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application-005",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp202-compensation-local",
+        "spp202-regular-design-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 414-457 and 1608-1642; SPP 202 local raw PDF checked",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-027-lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application-question-006",
+      "claim_text": "Question 839f4b18-0ba0-4320-bafe-423c76012141 / model BATCH-027-lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application-006 rewritten to local source-safe form.",
+      "question_id": "839f4b18-0ba0-4320-bafe-423c76012141",
+      "model_id": "BATCH-027-lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application-006",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp202-compensation-local",
+        "spp202-regular-design-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 414-457 and 1608-1642; SPP 202 local raw PDF checked",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-027-lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application-question-007",
+      "claim_text": "Question e5622e36-d8ba-4f42-868c-8eb4f8e1b6c6 / model BATCH-027-lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application-007 rewritten to local source-safe form.",
+      "question_id": "e5622e36-d8ba-4f42-868c-8eb4f8e1b6c6",
+      "model_id": "BATCH-027-lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application-007",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp202-compensation-local",
+        "spp202-regular-design-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 414-457 and 1608-1642; SPP 202 local raw PDF checked",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-027-lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application-question-008",
+      "claim_text": "Question 344d9086-08d8-4c8f-89c6-c3123911855d / model BATCH-027-lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application-008 rewritten to local source-safe form.",
+      "question_id": "344d9086-08d8-4c8f-89c6-c3123911855d",
+      "model_id": "BATCH-027-lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application-008",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp202-compensation-local",
+        "spp202-regular-design-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 414-457 and 1608-1642; SPP 202 local raw PDF checked",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-027-lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application-question-009",
+      "claim_text": "Question 7b933a55-74fa-48df-9e9c-1a3610f62987 / model BATCH-027-lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application-009 rewritten to local source-safe form.",
+      "question_id": "7b933a55-74fa-48df-9e9c-1a3610f62987",
+      "model_id": "BATCH-027-lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application-009",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp202-compensation-local",
+        "spp202-regular-design-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 414-457 and 1608-1642; SPP 202 local raw PDF checked",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-027-lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application-question-010",
+      "claim_text": "Question 3eedba70-19e9-4570-9278-05a0c4a19116 / model BATCH-027-lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application-010 rewritten to local source-safe form.",
+      "question_id": "3eedba70-19e9-4570-9278-05a0c4a19116",
+      "model_id": "BATCH-027-lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application-010",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp202-compensation-local",
+        "spp202-regular-design-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 414-457 and 1608-1642; SPP 202 local raw PDF checked",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    }
+  ],
+  "unsupported_or_removed_claims": [
+    "Removed the unsupported claim that per diem is charged regardless of hours worked.",
+    "Removed invented peso-rate examples and retainer rollover assumptions.",
+    "Replaced broad contract-document advice with source-safe compensation-scope boundaries."
+  ],
+  "source_safe_rewrite_question_edits": true,
+  "local_validation": {
+    "compose": "PASS: blockers=0",
+    "diff": "PASS: changed=true safe_to_push=true blockers=0",
+    "validate": "PASS: scoped content-audit:validate valid=true blockers=0",
+    "scoped_checks": "PASS: scoped JSON/source/placeholder/diff checks passed",
+    "tests": "PASS: bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts - 34 pass, 0 fail"
+  },
+  "remaining_local_blockers": [],
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_only": true,
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false
+  }
+}

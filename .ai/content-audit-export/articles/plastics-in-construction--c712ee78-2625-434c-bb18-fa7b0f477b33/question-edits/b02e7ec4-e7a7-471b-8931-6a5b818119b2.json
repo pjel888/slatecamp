@@ -1,0 +1,57 @@
+{
+  "question_id": "b02e7ec4-e7a7-471b-8931-6a5b818119b2",
+  "baseline_hash": "sha256:10efa5704e3592df68cd9e4bac278666eb595d0daa0fba8dd0608bde32ce7d0f",
+  "action": "replace",
+  "reason": "source-audited-article-batch-036-local-first: source-safe replacement grounded in local raw PDF/source family evidence; removes unsupported, stale, or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-036",
+  "approved_at": "2026-05-11T12:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-036-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-national-building-code-local",
+        "label": "PD 1096 National Building Code - Plastics Provisions",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 - National Building Code.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 - National Building Code.md",
+        "checked_markdown_lines": [
+          "PD 1096 National Building Code refined markdown lines 1909-1998"
+        ]
+      },
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR 2004 DPWH Official refined markdown lines 4377-4442"
+        ]
+      }
+    ],
+    "citation": "PD 1096, Sections 1601-1609"
+  },
+  "proposed": {
+    "text": "Which statement best distinguishes Section 1601 approval from later installation limits?",
+    "options": [
+      {
+        "id": "b036-c712-21-a",
+        "text": "Section 1601 defines approved plastic fire-performance criteria; later sections still control where and how approved plastics may be installed"
+      },
+      {
+        "id": "b036-c712-21-b",
+        "text": "Once plastic is approved under Section 1601, no other limits apply"
+      },
+      {
+        "id": "b036-c712-21-c",
+        "text": "Installation limits apply only to glass, not plastic"
+      },
+      {
+        "id": "b036-c712-21-d",
+        "text": "Only manufacturer warranty controls installation"
+      }
+    ],
+    "correct_option_id": "b036-c712-21-a",
+    "rationale": "Correct answer: Section 1601 defines approved plastic fire-performance criteria; later sections still control where and how approved plastics may be installed. This is directly supported by PD 1096, Sections 1601-1609.",
+    "explanation": "The source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096, Sections 1601-1609.",
+    "code_citation": "PD 1096, Sections 1601-1609"
+  }
+}

@@ -1,44 +1,35 @@
 {
   "article_id": "642d4061-fc9e-4027-9f3b-308331151792",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:6a2b7909ad727c7ce20fcc6eaff794fc995d02f56c804c9012df58d09209b441",
-  "source_count": 3,
+  "source_count": 1,
   "sources": [
     {
-      "source_id": "7f595f5d-8275-4109-809c-094552b9b54e",
+      "source_id": "toa4-tropical-architecture-local-raw-pdf--b060-642d4061-01",
       "article_id": "642d4061-fc9e-4027-9f3b-308331151792",
-      "label": "Passive design guidelines (not PD 1096 prescriptive requirements): ASHRAE Handbook, vernacular precedents",
+      "label": "TOA 4 Tropical Architecture - local raw PDF",
       "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_raw_pdf",
+      "description": "TOA 4 Tropical Architecture - local raw PDF; local raw PDF checked first; refined markdown used only as locator. TOA 4 Tropical Architecture refined markdown lines 513-591, 622-670, 708-874, 1201-1247, and raw PDF pages 71-78, 81-84, 87-90, 92-100, 104, 106-110, 121, and 140.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:33:58.214974+00:00",
-      "updated_at": "2026-03-24T04:33:58.214974+00:00"
-    },
-    {
-      "source_id": "7333f67e-aa07-4d77-8932-300199a8b77d",
-      "article_id": "642d4061-fc9e-4027-9f3b-308331151792",
-      "label": "Philippine Green Building Council (PHILGBC) BERDE Standard, Section 4 (voluntary green building guidelines)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 1,
-      "created_at": "2026-03-24T04:33:58.214974+00:00",
-      "updated_at": "2026-03-24T04:33:58.214974+00:00"
-    },
-    {
-      "source_id": "7bd16830-c8ef-45ce-a561-f6abf726c1ba",
-      "article_id": "642d4061-fc9e-4027-9f3b-308331151792",
-      "label": "ASHRAE Handbook: Fundamentals, Chapter 18 (Passive Solar Heating and Cooling)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:33:58.214974+00:00",
-      "updated_at": "2026-03-24T04:33:58.214974+00:00"
+      "created_at": "2026-05-11T21:02:00.000+08:00",
+      "updated_at": "2026-05-11T21:02:00.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+      "raw_pdf_sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+      "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+      "source_locator": "TOA 4 Tropical Architecture refined markdown lines 513-591, 622-670, 708-874, 1201-1247, and raw PDF pages 71-78, 81-84, 87-90, 92-100, 104, 106-110, 121, and 140",
+      "checked_markdown_lines": [
+        "TOA 4 Tropical Architecture refined markdown lines 513-591",
+        "TOA 4 Tropical Architecture refined markdown lines 622-670",
+        "TOA 4 Tropical Architecture refined markdown lines 708-874",
+        "TOA 4 Tropical Architecture refined markdown lines 1201-1247"
+      ],
+      "checked_pdf_pages": "raw PDF pages 71-78, 81-84, 87-90, 92-100, 104, 106-110, 121, 140, 143-148, 151, 163, 172, 180-181, 187, and 194",
+      "local_audit_note": "Primary truth is the local raw PDF family; refined markdown line ranges are locator aids for the checked claims."
     }
-  ]
+  ],
+  "sources_hash": "sha256:beab52385dd3dbbcdfc0555ea60ef0d322b91b3ef2f132e6b7249a61fd51a382"
 }

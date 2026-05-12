@@ -1,0 +1,56 @@
+{
+  "question_id": "4ed36f80-0e18-4383-8042-3bf9389ef5c4",
+  "baseline_hash": "sha256:9d1e05515084a481ceee44de6587088ff8889278b2814cd033d4c3eda9fc262d",
+  "action": "replace",
+  "reason": "source-audited-article-batch-046-local-first: local raw-source-backed replacement constrained to checked Batch 046 source families.",
+  "approved_by": "codex-local-first-batch-046",
+  "approved_at": "2026-05-11T17:58:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "b2310919-6f6c-4abc-92b7-521a362c63d9",
+    "parent_article_slug": "lea-util-002-08-core-principles-standards",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Salvan Utilities 2 refined markdown lines 13429-13535, 15087-15100",
+    "checked_markdown_lines": [
+      "Salvan Utilities 2 refined markdown lines 13429-13535",
+      "Salvan Utilities 2 refined markdown lines 15087-15100"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "salvan-architectural-utilities-2-local-raw-pdf--b046",
+        "label": "George Salvan Architectural Utilities 2 - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+        "sha256": "sha256:ff7231f0059a1febaf4a0996a425caca3b7676c23c729f922e385af4e4c20d28",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
+        "refined_markdown_sha256": "sha256:1b9249c90c0b86c57c6df2f20f0ab210ac112a10230bd9bce584461773d75215",
+        "locator": "Salvan Utilities 2 refined markdown lines 13429-13535, 15087-15100"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 046 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "What does interval mean in lobby dispatch analysis?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The distance between guide rails."
+      },
+      {
+        "id": "b",
+        "text": "The machine-room floor area."
+      },
+      {
+        "id": "c",
+        "text": "The average time between car departures from the lobby."
+      },
+      {
+        "id": "d",
+        "text": "The door opening width measured in meters."
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": "The average time between car departures from the lobby. This answer matches Salvan Utilities 2 refined markdown lines 13437-13445.",
+    "explanation": "The average time between car departures from the lobby. This answer matches Salvan Utilities 2 refined markdown lines 13437-13445.",
+    "code_citation": "Salvan Utilities 2 refined markdown lines 13437-13445"
+  }
+}

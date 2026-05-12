@@ -1,0 +1,350 @@
+{
+  "batch_id": "source-audited-article-batch-025-local-first",
+  "generated_at": "2026-05-11T19:15:00.000+08:00",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "local_first_constraints": {
+    "workspace_only": "/Users/philiplewis/slatecamp",
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "final_publishing_surface": "Supabase final publishing only; no mutation performed in Batch 025."
+  },
+  "prior_batch_exclusion": {
+    "prior_batch_range_checked": "001-024",
+    "prior_report_or_ledger_artifacts_checked": 52,
+    "prior_article_ids_detected_in_artifacts": 120,
+    "selected_article_ids": [
+      "3d1c062c-7fef-4972-9245-c4e404639c49",
+      "b912733e-1018-4559-bd53-6c4ca2506e0d",
+      "ecf888fd-c314-4d20-87e6-4841f84b71a0",
+      "2660de04-9a95-4581-83c1-792b09b79d48",
+      "91457094-42cc-44a0-ad00-3c34ade0d6f7"
+    ],
+    "overlap_with_prior_batches": [],
+    "overlap_count": 0
+  },
+  "selection_rationale": "Selected five unselected high-value LEA professional-practice/service clusters with linked questions and available local UAP SPP raw PDFs under vitruvius-connection/001_Raw-Source-Layer.",
+  "counts": {
+    "selected_articles": 5,
+    "locally_passed_articles": 5,
+    "linked_questions": 50,
+    "source_safe_question_edits": 50,
+    "source_records": 10,
+    "distinct_raw_pdfs_checked": 5,
+    "distinct_refined_markdown_sources_checked": 5,
+    "json_files_parsed": 100,
+    "source_paths_hash_checked": 20,
+    "placeholder_gap_text_files_checked": 10,
+    "safe_diff_reports": 5,
+    "content_audit_tests_passed": 34,
+    "content_audit_tests_failed": 0
+  },
+  "validation": {
+    "compose": "PASS - 5/5 candidates composed with zero blockers.",
+    "diff": "PASS - 5/5 changed and safe with zero blockers.",
+    "validate": "PASS - 5/5 bundle validates true with zero blockers; component-usage warning is non-blocking and pre-existing for these article bundles.",
+    "scoped_checks": "PASS - scoped JSON/source/question-edit/placeholder checks passed.",
+    "bun_tests": "PASS - bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts: 34 pass, 0 fail."
+  },
+  "artifacts": {
+    "ledger_path": ".ai/content-audit-export/source-audited-article-batch-025-local-first-ledger.json",
+    "report_path": ".ai/content-audit-export/source-audited-article-batch-025-local-first-report.md",
+    "scoped_checks_path": ".ai/content-audit-export/source-audited-article-batch-025-local-first-scoped-checks.json"
+  },
+  "articles": [
+    {
+      "article_id": "3d1c062c-7fef-4972-9245-c4e404639c49",
+      "title": "Space Programming Process Deliverables and Use in Design",
+      "slug": "lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design--3d1c062c-7fef-4972-9245-c4e404639c49",
+      "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design--3d1c062c-7fef-4972-9245-c4e404639c49",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design--3d1c062c-7fef-4972-9245-c4e404639c49/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design--3d1c062c-7fef-4972-9245-c4e404639c49/candidate.md",
+      "sources_json_path": ".ai/content-audit-export/articles/lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design--3d1c062c-7fef-4972-9245-c4e404639c49/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design--3d1c062c-7fef-4972-9245-c4e404639c49/source-audit-evidence.json",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design--3d1c062c-7fef-4972-9245-c4e404639c49/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design--3d1c062c-7fef-4972-9245-c4e404639c49/question-edits",
+      "linked_question_count": 10,
+      "question_edits_created": 10,
+      "source_count": 2,
+      "raw_pdf_sources": [
+        {
+          "source_id": "spp201-pre-design-services-local",
+          "label": "SPP 201 - Pre-Design Services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+          "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+          "refined_markdown_sha256": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
+          "source_locator": "SPP 201 lines 328-367"
+        },
+        {
+          "source_id": "uap-standards-local-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design",
+          "label": "UAP Document Standards of Professional Practice - Space Programming Process Deliverables and Use in Design",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+          "source_locator": "UAP Standards lines 1120-1125"
+        }
+      ],
+      "hashes": {
+        "original": "sha256:ca022b731beb8cf3e87a884c5eac243e9a579a4548aa6f6ff4dc7adefc25976e",
+        "normalized": "sha256:71611b393c33d93f518ba8552708ef30cd15418ca60220d358a930cd8f639d99",
+        "candidate": "sha256:71611b393c33d93f518ba8552708ef30cd15418ca60220d358a930cd8f639d99",
+        "sources": "sha256:469e32821c4d49509bf28b46c98ed6c625818d522ce8153be27daa9a2dbea3bd"
+      },
+      "validation": {
+        "compose_blockers": 0,
+        "compose_warnings": 0,
+        "diff_changed": true,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "repo_validate_valid": true,
+        "repo_validate_blockers": 0,
+        "repo_validate_warnings": [
+          "component-usage.json has not been generated for this article yet."
+        ],
+        "scoped_checks_valid": true,
+        "source_audit_status": "PASS"
+      },
+      "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW"
+    },
+    {
+      "article_id": "b912733e-1018-4559-bd53-6c4ca2506e0d",
+      "title": "Architectural Acoustics Lighting Design and Technical Specializations",
+      "slug": "lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations--b912733e-1018-4559-bd53-6c4ca2506e0d",
+      "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations--b912733e-1018-4559-bd53-6c4ca2506e0d",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations--b912733e-1018-4559-bd53-6c4ca2506e0d/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations--b912733e-1018-4559-bd53-6c4ca2506e0d/candidate.md",
+      "sources_json_path": ".ai/content-audit-export/articles/lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations--b912733e-1018-4559-bd53-6c4ca2506e0d/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations--b912733e-1018-4559-bd53-6c4ca2506e0d/source-audit-evidence.json",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations--b912733e-1018-4559-bd53-6c4ca2506e0d/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations--b912733e-1018-4559-bd53-6c4ca2506e0d/question-edits",
+      "linked_question_count": 10,
+      "question_edits_created": 10,
+      "source_count": 2,
+      "raw_pdf_sources": [
+        {
+          "source_id": "uap-standards-local-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations",
+          "label": "UAP Document Standards of Professional Practice - Architectural Acoustics, Lighting Design, and Technical Specializations",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+          "source_locator": "UAP Standards lines 560-583; UAP Standards lines 660-689; UAP Standards lines 1138-1152"
+        },
+        {
+          "source_id": "spp203-specialized-allied-services-local",
+          "label": "SPP 203 - Specialized Allied Services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+          "raw_pdf_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+          "refined_markdown_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+          "source_locator": "SPP 203 lines 101-135"
+        }
+      ],
+      "hashes": {
+        "original": "sha256:c1788318281c00ba6928e65aa0cb10fd26ffce73d6e7c49a24ff76b53d1a5856",
+        "normalized": "sha256:a7012f25495daad01e7098b97d280b259e552e84b750d3f77f624e71d160bd3a",
+        "candidate": "sha256:a7012f25495daad01e7098b97d280b259e552e84b750d3f77f624e71d160bd3a",
+        "sources": "sha256:f575eac5ebeee090c183aa0dc337ee31d9e6685f3c2bb3288e006348d7d0f3fb"
+      },
+      "validation": {
+        "compose_blockers": 0,
+        "compose_warnings": 0,
+        "diff_changed": true,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "repo_validate_valid": true,
+        "repo_validate_blockers": 0,
+        "repo_validate_warnings": [
+          "component-usage.json has not been generated for this article yet."
+        ],
+        "scoped_checks_valid": true,
+        "source_audit_status": "PASS"
+      },
+      "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW"
+    },
+    {
+      "article_id": "ecf888fd-c314-4d20-87e6-4841f84b71a0",
+      "title": "Design Build by Administration vs Design Build by Guaranteed Maximum",
+      "slug": "lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-critical-distinction",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti--ecf888fd-c314-4d20-87e6-4841f84b71a0",
+      "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti--ecf888fd-c314-4d20-87e6-4841f84b71a0",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti--ecf888fd-c314-4d20-87e6-4841f84b71a0/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti--ecf888fd-c314-4d20-87e6-4841f84b71a0/candidate.md",
+      "sources_json_path": ".ai/content-audit-export/articles/lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti--ecf888fd-c314-4d20-87e6-4841f84b71a0/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti--ecf888fd-c314-4d20-87e6-4841f84b71a0/source-audit-evidence.json",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti--ecf888fd-c314-4d20-87e6-4841f84b71a0/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti--ecf888fd-c314-4d20-87e6-4841f84b71a0/question-edits",
+      "linked_question_count": 10,
+      "question_edits_created": 10,
+      "source_count": 2,
+      "raw_pdf_sources": [
+        {
+          "source_id": "uap-standards-local-lea-prac-svc-020-design-build-by-administration-vs-design-build-by-guaranteed-maximum-cost-the-criti",
+          "label": "UAP Document Standards of Professional Practice - Design-Build by Administration vs Design-Build by Guaranteed Maximum Cost",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+          "source_locator": "UAP Standards lines 1228-1267"
+        },
+        {
+          "source_id": "spp207-design-build-services-local",
+          "label": "SPP 207 - Design-Build Services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 207.pdf",
+          "raw_pdf_sha256": "sha256:7050b0c7bd152694587f39ead8b682ed71b882ba50fce5c4a614206f32b5b610",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md",
+          "refined_markdown_sha256": "sha256:16375f49124440ba1bc938379786e14016249c3d42d0b7498a543ddb4f702e0a",
+          "source_locator": "SPP 207 lines 147-153"
+        }
+      ],
+      "hashes": {
+        "original": "sha256:67a7b7ff6df0bddf7186e05196cb80fdc95f8e19a20b4765b7d12e3cea6d2a22",
+        "normalized": "sha256:9607941960a5c5e98dc4b9376d26cb5cf9e6a59fae3bf3e5a2094ba1431ecb66",
+        "candidate": "sha256:9607941960a5c5e98dc4b9376d26cb5cf9e6a59fae3bf3e5a2094ba1431ecb66",
+        "sources": "sha256:8ca9e90505a798defcb6b5cf3e9ef99a75ed91b9b65f5777902c59a05d1a06a7"
+      },
+      "validation": {
+        "compose_blockers": 0,
+        "compose_warnings": 0,
+        "diff_changed": true,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "repo_validate_valid": true,
+        "repo_validate_blockers": 0,
+        "repo_validate_warnings": [
+          "component-usage.json has not been generated for this article yet."
+        ],
+        "scoped_checks_valid": true,
+        "source_audit_status": "PASS"
+      },
+      "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW"
+    },
+    {
+      "article_id": "2660de04-9a95-4581-83c1-792b09b79d48",
+      "title": "Architectural Design Competitions Types Rules",
+      "slug": "lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights--2660de04-9a95-4581-83c1-792b09b79d48",
+      "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights--2660de04-9a95-4581-83c1-792b09b79d48",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights--2660de04-9a95-4581-83c1-792b09b79d48/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights--2660de04-9a95-4581-83c1-792b09b79d48/candidate.md",
+      "sources_json_path": ".ai/content-audit-export/articles/lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights--2660de04-9a95-4581-83c1-792b09b79d48/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights--2660de04-9a95-4581-83c1-792b09b79d48/source-audit-evidence.json",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights--2660de04-9a95-4581-83c1-792b09b79d48/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights--2660de04-9a95-4581-83c1-792b09b79d48/question-edits",
+      "linked_question_count": 10,
+      "question_edits_created": 10,
+      "source_count": 2,
+      "raw_pdf_sources": [
+        {
+          "source_id": "uap-standards-local-lea-prac-svc-022-architectural-design-competitions-types-rules-and-the-architect-s-rights",
+          "label": "UAP Document Standards of Professional Practice - Architectural Design Competitions: Types, Rules, and the Architect's Rights",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+          "source_locator": "UAP Standards lines 1284-1410"
+        },
+        {
+          "source_id": "spp208-architectural-design-competitions-local",
+          "label": "SPP 208 - Architectural Design Competitions",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 208.pdf",
+          "raw_pdf_sha256": "sha256:c491ea6b2a58eb052b37ca4bee7145ffc98b5da9ef076cf30aa59b04b100c074",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md",
+          "refined_markdown_sha256": "sha256:7e180c6a98dc6d60693b3198d22aa42d8dd6d9dfd4a92a015f84d30d0af6ab60",
+          "source_locator": "SPP 208 lines 100-123; SPP 208 line 305"
+        }
+      ],
+      "hashes": {
+        "original": "sha256:657c8061d4607b9484c3ecb777f52904b4cf378cdf3f589e6048f3f45c4c05a4",
+        "normalized": "sha256:37ccd0b9be274c262b7d6c5f801c35f49cc047b92d41974fbadc3d5f3f33f655",
+        "candidate": "sha256:37ccd0b9be274c262b7d6c5f801c35f49cc047b92d41974fbadc3d5f3f33f655",
+        "sources": "sha256:d22b26ea265e3e71686e912b9a7a19da1cb4a4282fdb4edd1af51d6aaba4fa4c"
+      },
+      "validation": {
+        "compose_blockers": 0,
+        "compose_warnings": 0,
+        "diff_changed": true,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "repo_validate_valid": true,
+        "repo_validate_blockers": 0,
+        "repo_validate_warnings": [
+          "component-usage.json has not been generated for this article yet."
+        ],
+        "scoped_checks_valid": true,
+        "source_audit_status": "PASS"
+      },
+      "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW"
+    },
+    {
+      "article_id": "91457094-42cc-44a0-ad00-3c34ade0d6f7",
+      "title": "Site Development Planning (SDP)",
+      "slug": "lea-prac-svc-026-core-concept",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-026-core-concept--91457094-42cc-44a0-ad00-3c34ade0d6f7",
+      "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-026-core-concept--91457094-42cc-44a0-ad00-3c34ade0d6f7",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-svc-026-core-concept--91457094-42cc-44a0-ad00-3c34ade0d6f7/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-svc-026-core-concept--91457094-42cc-44a0-ad00-3c34ade0d6f7/candidate.md",
+      "sources_json_path": ".ai/content-audit-export/articles/lea-prac-svc-026-core-concept--91457094-42cc-44a0-ad00-3c34ade0d6f7/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-svc-026-core-concept--91457094-42cc-44a0-ad00-3c34ade0d6f7/source-audit-evidence.json",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-svc-026-core-concept--91457094-42cc-44a0-ad00-3c34ade0d6f7/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-026-core-concept--91457094-42cc-44a0-ad00-3c34ade0d6f7/question-edits",
+      "linked_question_count": 10,
+      "question_edits_created": 10,
+      "source_count": 2,
+      "raw_pdf_sources": [
+        {
+          "source_id": "uap-standards-local-lea-prac-svc-026-core-concept",
+          "label": "UAP Document Standards of Professional Practice - Site Development Planning (SDP)",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+          "source_locator": "UAP Standards lines 691-716; UAP Standards lines 1138-1152"
+        },
+        {
+          "source_id": "spp203-specialized-allied-services-local",
+          "label": "SPP 203 - Specialized Allied Services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+          "raw_pdf_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+          "refined_markdown_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+          "source_locator": "SPP 203 lines 101-111"
+        }
+      ],
+      "hashes": {
+        "original": "sha256:077675ca748de4d2ef0a2955a2671b0fa7578681182a6bb292354035f966a652",
+        "normalized": "sha256:8fce557f6b3f145b2e0ad6a8f461a6e608551bb7c589b795e20b2f96a85e5307",
+        "candidate": "sha256:8fce557f6b3f145b2e0ad6a8f461a6e608551bb7c589b795e20b2f96a85e5307",
+        "sources": "sha256:24fdbbb01e7fe710accd982bcae4434282a9a54b857ec6a3bf24ecf7f0c932d3"
+      },
+      "validation": {
+        "compose_blockers": 0,
+        "compose_warnings": 0,
+        "diff_changed": true,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "repo_validate_valid": true,
+        "repo_validate_blockers": 0,
+        "repo_validate_warnings": [
+          "component-usage.json has not been generated for this article yet."
+        ],
+        "scoped_checks_valid": true,
+        "source_audit_status": "PASS"
+      },
+      "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW"
+    }
+  ],
+  "blockers": [],
+  "warnings": [
+    "Repo validator reports component-usage.json missing for each selected bundle; this is a non-blocking existing warning and not a source-audit blocker."
+  ],
+  "next_phase_readiness": {
+    "ready_for_final_publishing_review": true,
+    "unresolved_local_blockers": 0,
+    "required_next_step": "Final publishing review can decide whether to dry-run/push these local candidates to Supabase in a later explicitly approved publishing batch."
+  }
+}

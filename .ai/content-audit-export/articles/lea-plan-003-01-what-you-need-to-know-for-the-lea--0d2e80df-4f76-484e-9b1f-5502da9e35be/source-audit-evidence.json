@@ -1,0 +1,89 @@
+{
+  "batch_id": "source-audited-article-batch-021-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T10:30:00.000+08:00",
+  "article_id": "0d2e80df-4f76-484e-9b1f-5502da9e35be",
+  "slug": "lea-plan-003-01-what-you-need-to-know-for-the-lea",
+  "title": "Philippine Housing Law Framework",
+  "status": "local_pass_ready_for_final_publishing_review",
+  "article_folder": ".ai/content-audit-export/articles/lea-plan-003-01-what-you-need-to-know-for-the-lea--0d2e80df-4f76-484e-9b1f-5502da9e35be",
+  "question_edits_folder": ".ai/content-audit-export/articles/lea-plan-003-01-what-you-need-to-know-for-the-lea--0d2e80df-4f76-484e-9b1f-5502da9e35be/question-edits",
+  "linked_questions": 10,
+  "question_edits_created": 10,
+  "source_safe_rewrite_question_edits": 10,
+  "source_audit": {
+    "checked_sources": [
+      {
+        "source_id": "pd957-subdivision-condominium-buyers-protective-decree-local",
+        "label": "PD 957 Subdivision and Condominium Buyers Protective Decree local PDF",
+        "authority": "Housing and Land Use Regulatory Board source conversion",
+        "source_type": "law_irr_pdf",
+        "source_locator": "PD 957 refined markdown lines 100-240, site criteria, open spaces, and 70/30 land allocation",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-957/PD 957 - Subdivision and Condominium Buyers Protective Decree.pdf",
+        "raw_pdf_sha256": "sha256:1f9ab17a816885cfdbafafc03e3e9b64470a737447129a32a459836d6773f9ea",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-957/PD 957 - Subdivision and Condominium Buyers Protective Decree.md",
+        "refined_markdown_sha256": "sha256:5a118e6b9e678d495ffac7a715d08deb0787e5905105fe25b9847cb226af7080",
+        "checked_markdown_lines": [
+          "PD 957 refined markdown lines 100-240"
+        ],
+        "use": "primary local source for open-market and medium-cost subdivision standards",
+        "local_source_checked": true
+      },
+      {
+        "source_id": "bp220-revised-irr-2008-local",
+        "label": "Revised IRR for BP 220 (2008)",
+        "authority": "Housing and Land Use Regulatory Board source conversion",
+        "source_type": "law_irr_pdf",
+        "source_locator": "BP 220 refined markdown lines 130-560, economic and socialized housing standards",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-220/Revised_IRR_BP220_2008.pdf",
+        "raw_pdf_sha256": "sha256:7392741260c227647afe39de283f3efa979465692da8905e59be8857c8651614",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-220/Revised_IRR_BP220_2008.md",
+        "refined_markdown_sha256": "sha256:4d66a5ce3891d6405324d52ae8b874f75321da0e5f00213489be43d754d27be1",
+        "checked_markdown_lines": [
+          "BP 220 refined markdown lines 130-560"
+        ],
+        "use": "primary local source for economic and socialized housing minimum standards",
+        "local_source_checked": true
+      },
+      {
+        "source_id": "ra7279-urban-development-housing-act-local",
+        "label": "RA 7279 Urban Development and Housing Act local PDF",
+        "authority": "local raw law PDF conversion",
+        "source_type": "law_pdf",
+        "source_locator": "RA 7279 refined markdown lines 70-190, socialized housing definition, eligibility, and balanced housing",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7279/RA 7279 Urban Development and Housing Act 2009.pdf",
+        "raw_pdf_sha256": "sha256:23efa9c0278519d79ed424d9ced016b24619ebb42a19e75a05dc9bb8bf1c4696",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7279/RA 7279 Urban Development and Housing Act 2009.md",
+        "refined_markdown_sha256": "sha256:f52859fb18fec28c403348851c3e53caca2e678cb9cec43fbca28d8d5c3a323e",
+        "checked_markdown_lines": [
+          "RA 7279 refined markdown lines 70-190"
+        ],
+        "use": "primary local source for socialized housing definition, eligibility, and balanced housing",
+        "local_source_checked": true
+      }
+    ],
+    "source_locator": "PD 957 IRR, BP 220 Revised IRR, and RA 7279 housing provisions checked from local raw PDFs",
+    "checked_markdown_lines": [
+      "PD 957 refined markdown lines 100-240",
+      "BP 220 refined markdown lines 130-560",
+      "RA 7279 refined markdown lines 70-190"
+    ]
+  },
+  "local_repairs": {
+    "normalized_rewritten": true,
+    "candidate_recomposed": true,
+    "placeholders_removed": true,
+    "source_records_created": 3,
+    "question_edits_created": 10,
+    "source_safe_rewrite_question_edits": 10,
+    "non_source_claims_removed_or_rewritten": true
+  },
+  "validation": {
+    "compose_blockers": [],
+    "diff_safe_to_push": true,
+    "diff_blockers": [],
+    "validate_valid": true,
+    "validate_blockers": []
+  },
+  "blockers": []
+}

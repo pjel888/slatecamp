@@ -1,0 +1,59 @@
+{
+  "question_id": "98d31146-e56d-4d85-a89a-d3e996b4e342",
+  "baseline_hash": "sha256:9c28319c59090e0e57aa19cdcd48f2d13e6f4c2813f573f09e2ad2a1145d7c8f",
+  "action": "replace",
+  "reason": "source-audited-article-batch-082-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-010-08-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-082",
+  "approved_at": "2026-05-12T05:45:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "0b83bfa7-6ca2-48f8-9f23-52428c85d02a",
+    "parent_article_slug": "lea-matl-010-08-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Estimating Excavation refined markdown lines 1120-1260, 1580-1605, and 1980-1992; raw PDF pages 42, 45, 49-50, and 56 checked by local PyMuPDF extraction.",
+    "checked_markdown_lines": [
+      "Estimating Excavation refined markdown lines 1120-1260, 1580-1605, and 1980-1992; raw PDF pages 42, 45, 49-50, and 56 checked by local PyMuPDF extraction."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "estimating-excavation-b082",
+        "label": "Estimating Excavation",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Estimating Excavation.pdf",
+        "sha256": "sha256:5ef347fe40c8dfa4a1e3d3f937d266e431ce69bcbce09390f46917ee9e5b6fff",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Estimating Excavation.md",
+        "raw_markdown_sha256": "sha256:c62cb8751aa5c66ef7ae7fe9d4d0948913eb945de639399ac5a946aed683dd4c",
+        "locator": "Estimating Excavation refined markdown lines 1120-1260, 1580-1605, and 1980-1992; raw PDF pages 42, 45, 49-50, and 56 checked by local PyMuPDF extraction."
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 082 local raw-source-audited earthwork_volume scope."
+  },
+  "proposed": {
+    "text": "For a 50 ft x 50 ft grid square, the average proposed elevation is 0.77 ft higher than the average existing elevation. What is the fill volume for one square?",
+    "options": [
+      {
+        "id": "a",
+        "text": "71.3 cu yd"
+      },
+      {
+        "id": "b",
+        "text": "77.0 cu yd"
+      },
+      {
+        "id": "c",
+        "text": "92.6 cu yd"
+      },
+      {
+        "id": "d",
+        "text": "1,925 cu yd"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "One grid square has 2,500 sq ft. Fill volume is 0.77 x 2,500 / 27 = 71.3 cu yd.",
+    "explanation": "One grid square has 2,500 sq ft. Fill volume is 0.77 x 2,500 / 27 = 71.3 cu yd.",
+    "code_citation": "Estimating Excavation",
+    "bloom_level": "apply",
+    "application_context": "source_audited_local_first_batch_082",
+    "practice_context": [],
+    "difficulty": 0.5
+  }
+}

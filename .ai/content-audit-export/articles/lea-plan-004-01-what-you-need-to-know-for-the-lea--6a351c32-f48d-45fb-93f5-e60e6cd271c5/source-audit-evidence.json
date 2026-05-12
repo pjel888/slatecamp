@@ -1,0 +1,256 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-074-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T02:15:02.998+08:00",
+  "target": {
+    "article_id": "6a351c32-f48d-45fb-93f5-e60e6cd271c5",
+    "slug": "lea-plan-004-01-what-you-need-to-know-for-the-lea",
+    "title": "Physical and aesthetic considerations",
+    "article_folder": ".ai/content-audit-export/articles/lea-plan-004-01-what-you-need-to-know-for-the-lea--6a351c32-f48d-45fb-93f5-e60e6cd271c5",
+    "normalized_sha256": "sha256:57077b0c8a14939cacc8c3e33c5c8399fc27c2dcb81677940f7cc1ee87298751",
+    "candidate_sha256": "sha256:57077b0c8a14939cacc8c3e33c5c8399fc27c2dcb81677940f7cc1ee87298751",
+    "candidate_path": ".ai/content-audit-export/articles/lea-plan-004-01-what-you-need-to-know-for-the-lea--6a351c32-f48d-45fb-93f5-e60e6cd271c5/candidate.md"
+  },
+  "classification": {
+    "topic_family": "physical_aesthetic_site_planning",
+    "local_first_batch": "074",
+    "source_sensitivity": "site_planning_and_energy_guidance",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "legal_or_code",
+    "requires_raw_pdf_audit": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdfs_checked_first": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "local_pdf_extraction_method": "python_pymupdf_local",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "building-construction-illustrated-b074",
+      "label": "Building Construction Illustrated, 5th Edition",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+      "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+      "refined_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "locator": "BCI refined markdown lines 245-288, 333-370, 407-455, 483-508, and 1328-1340; raw PDF pages 11-12, 17-18, and 20-21 checked by local PyMuPDF extraction"
+    },
+    {
+      "source_id": "bp220-irr-2008-b074",
+      "label": "Revised IRR of BP 220, 2008",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-220/Revised_IRR_BP220_2008.pdf",
+      "sha256": "sha256:7392741260c227647afe39de283f3efa979465692da8905e59be8857c8651614",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-220/Revised_IRR_BP220_2008.md",
+      "refined_markdown_sha256": "sha256:4d66a5ce3891d6405324d52ae8b874f75321da0e5f00213489be43d754d27be1",
+      "locator": "BP 220 refined markdown lines 105-147, 151-195, 215-264, 420-465, and 482-504; raw PDF pages 5-6, 8-10, and 12 checked by local PyMuPDF extraction"
+    },
+    {
+      "source_id": "pd957-irr-subdivision-condominium-b074",
+      "label": "PD 957 IRR - Subdivision and Condominium Buyers Protective Decree",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-957/PD 957 IRR - Subdivision and Condominium IRR.pdf",
+      "sha256": "sha256:1f9ab17a816885cfdbafafc03e3e9b64470a737447129a32a459836d6773f9ea",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-957/PD 957 IRR - Subdivision and Condominium IRR.md",
+      "refined_markdown_sha256": "sha256:0edd45f5293044779c45c36e5219904d3863cfa747d200864959fc1bf6a9ff7b",
+      "locator": "PD 957 refined markdown lines 105-123, 129-177, 198-224, 358-405, and 470-512; raw PDF pages 6-7 and 11-14 checked by local PyMuPDF extraction"
+    },
+    {
+      "source_id": "doe-energy-conserving-design-2008-b074",
+      "label": "DOE Guidelines on Energy Conserving Design of Buildings, 2008",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+      "sha256": "sha256:9a1a4019b500ffc2873625db6f04ac50b39aea7cadac9159464f9ed716e8126c",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.md",
+      "refined_markdown_sha256": "sha256:477f0990a67359eee303e8280a00be449d0aa413252161db7b5b1bafec3012b9",
+      "locator": "DOE Guidelines refined markdown lines 717-795, 1429-1450, and 1533-1537; raw PDF pages 33, 35-36, 39-40, and 42 checked by local PyMuPDF extraction"
+    },
+    {
+      "source_id": "design-process-b074",
+      "label": "Architectural Design Process",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
+      "sha256": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
+      "refined_markdown_sha256": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
+      "locator": "Design Process refined markdown lines 8, 21, and 23; raw PDF pages 8, 21, and 23 checked by local PyMuPDF extraction"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-plan-004-01-what-you-need-to-know-for-the-lea-article-b074",
+      "claim_text": "Article and linked question edits are limited to checked BCI, BP 220, PD 957, DOE, and design-process evidence on site analysis, grading, drainage, orientation, and aesthetics.",
+      "claim_type": "article_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "BCI refined markdown lines 245-288, 333-370, 407-455, 483-508, and 1328-1340; raw PDF pages 11-12, 17-18, and 20-21 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Site analysis includes boundaries, slope, soil, drainage, vegetation, climate, access, utilities, views, and noise; DOE guidance covers orientation, ventilation, daylighting, and shading."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-07770446-c75d-42dc-8453-c7cbc77642ea-ALE-PLAN-004-01-006-b074",
+      "claim_text": "Question 07770446-c75d-42dc-8453-c7cbc77642ea ALE-PLAN-004-01-006 was rewritten to the checked physical_aesthetic_site_planning source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "BCI refined markdown lines 245-288, 333-370, 407-455, 483-508, and 1328-1340; raw PDF pages 11-12, 17-18, and 20-21 checked by local PyMuPDF extraction; BP 220 refined markdown lines 105-147, 151-195, 215-264, 420-465, and 482-504; raw PDF pages 5-6, 8-10, and 12 checked by local PyMuPDF extraction; PD 957 refined markdown lines 105-123, 129-177, 198-224, 358-405, and 470-512; raw PDF pages 6-7 and 11-14 checked by local PyMuPDF extraction; DOE Guidelines refined markdown lines 717-795, 1429-1450, and 1533-1537; raw PDF pages 33, 35-36, 39-40, and 42 checked by local PyMuPDF extraction; Design Process refined markdown lines 8, 21, and 23; raw PDF pages 8, 21, and 23 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Site analysis includes boundaries, slope, soil, drainage, vegetation, climate, access, utilities, views, and noise; DOE guidance covers orientation, ventilation, daylighting, and shading."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-0d6486e2-500e-4a5f-8634-81b10d0973d5-ALE-PLAN-004-01-008-b074",
+      "claim_text": "Question 0d6486e2-500e-4a5f-8634-81b10d0973d5 ALE-PLAN-004-01-008 was rewritten to the checked physical_aesthetic_site_planning source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "BCI refined markdown lines 245-288, 333-370, 407-455, 483-508, and 1328-1340; raw PDF pages 11-12, 17-18, and 20-21 checked by local PyMuPDF extraction; BP 220 refined markdown lines 105-147, 151-195, 215-264, 420-465, and 482-504; raw PDF pages 5-6, 8-10, and 12 checked by local PyMuPDF extraction; PD 957 refined markdown lines 105-123, 129-177, 198-224, 358-405, and 470-512; raw PDF pages 6-7 and 11-14 checked by local PyMuPDF extraction; DOE Guidelines refined markdown lines 717-795, 1429-1450, and 1533-1537; raw PDF pages 33, 35-36, 39-40, and 42 checked by local PyMuPDF extraction; Design Process refined markdown lines 8, 21, and 23; raw PDF pages 8, 21, and 23 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Site analysis includes boundaries, slope, soil, drainage, vegetation, climate, access, utilities, views, and noise; DOE guidance covers orientation, ventilation, daylighting, and shading."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-0f0b1089-3832-4c59-836e-8ff1e31496fe-ALE-PLAN-004-01-005-b074",
+      "claim_text": "Question 0f0b1089-3832-4c59-836e-8ff1e31496fe ALE-PLAN-004-01-005 was rewritten to the checked physical_aesthetic_site_planning source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "BCI refined markdown lines 245-288, 333-370, 407-455, 483-508, and 1328-1340; raw PDF pages 11-12, 17-18, and 20-21 checked by local PyMuPDF extraction; BP 220 refined markdown lines 105-147, 151-195, 215-264, 420-465, and 482-504; raw PDF pages 5-6, 8-10, and 12 checked by local PyMuPDF extraction; PD 957 refined markdown lines 105-123, 129-177, 198-224, 358-405, and 470-512; raw PDF pages 6-7 and 11-14 checked by local PyMuPDF extraction; DOE Guidelines refined markdown lines 717-795, 1429-1450, and 1533-1537; raw PDF pages 33, 35-36, 39-40, and 42 checked by local PyMuPDF extraction; Design Process refined markdown lines 8, 21, and 23; raw PDF pages 8, 21, and 23 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Site analysis includes boundaries, slope, soil, drainage, vegetation, climate, access, utilities, views, and noise; DOE guidance covers orientation, ventilation, daylighting, and shading."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-1bb715b2-67b1-4d89-aa65-7a6982754930-ALE-PLAN-004-01-004-b074",
+      "claim_text": "Question 1bb715b2-67b1-4d89-aa65-7a6982754930 ALE-PLAN-004-01-004 was rewritten to the checked physical_aesthetic_site_planning source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "BCI refined markdown lines 245-288, 333-370, 407-455, 483-508, and 1328-1340; raw PDF pages 11-12, 17-18, and 20-21 checked by local PyMuPDF extraction; BP 220 refined markdown lines 105-147, 151-195, 215-264, 420-465, and 482-504; raw PDF pages 5-6, 8-10, and 12 checked by local PyMuPDF extraction; PD 957 refined markdown lines 105-123, 129-177, 198-224, 358-405, and 470-512; raw PDF pages 6-7 and 11-14 checked by local PyMuPDF extraction; DOE Guidelines refined markdown lines 717-795, 1429-1450, and 1533-1537; raw PDF pages 33, 35-36, 39-40, and 42 checked by local PyMuPDF extraction; Design Process refined markdown lines 8, 21, and 23; raw PDF pages 8, 21, and 23 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Site analysis includes boundaries, slope, soil, drainage, vegetation, climate, access, utilities, views, and noise; DOE guidance covers orientation, ventilation, daylighting, and shading."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-36b6f184-c1f7-4061-b31d-d4a4c55fe0da-ALE-PLAN-004-01-002-b074",
+      "claim_text": "Question 36b6f184-c1f7-4061-b31d-d4a4c55fe0da ALE-PLAN-004-01-002 was rewritten to the checked physical_aesthetic_site_planning source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "BCI refined markdown lines 245-288, 333-370, 407-455, 483-508, and 1328-1340; raw PDF pages 11-12, 17-18, and 20-21 checked by local PyMuPDF extraction; BP 220 refined markdown lines 105-147, 151-195, 215-264, 420-465, and 482-504; raw PDF pages 5-6, 8-10, and 12 checked by local PyMuPDF extraction; PD 957 refined markdown lines 105-123, 129-177, 198-224, 358-405, and 470-512; raw PDF pages 6-7 and 11-14 checked by local PyMuPDF extraction; DOE Guidelines refined markdown lines 717-795, 1429-1450, and 1533-1537; raw PDF pages 33, 35-36, 39-40, and 42 checked by local PyMuPDF extraction; Design Process refined markdown lines 8, 21, and 23; raw PDF pages 8, 21, and 23 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Site analysis includes boundaries, slope, soil, drainage, vegetation, climate, access, utilities, views, and noise; DOE guidance covers orientation, ventilation, daylighting, and shading."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-6378a29e-db42-4775-9145-3dccba0541f2-ALE-PLAN-004-01-009-b074",
+      "claim_text": "Question 6378a29e-db42-4775-9145-3dccba0541f2 ALE-PLAN-004-01-009 was rewritten to the checked physical_aesthetic_site_planning source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "BCI refined markdown lines 245-288, 333-370, 407-455, 483-508, and 1328-1340; raw PDF pages 11-12, 17-18, and 20-21 checked by local PyMuPDF extraction; BP 220 refined markdown lines 105-147, 151-195, 215-264, 420-465, and 482-504; raw PDF pages 5-6, 8-10, and 12 checked by local PyMuPDF extraction; PD 957 refined markdown lines 105-123, 129-177, 198-224, 358-405, and 470-512; raw PDF pages 6-7 and 11-14 checked by local PyMuPDF extraction; DOE Guidelines refined markdown lines 717-795, 1429-1450, and 1533-1537; raw PDF pages 33, 35-36, 39-40, and 42 checked by local PyMuPDF extraction; Design Process refined markdown lines 8, 21, and 23; raw PDF pages 8, 21, and 23 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Site analysis includes boundaries, slope, soil, drainage, vegetation, climate, access, utilities, views, and noise; DOE guidance covers orientation, ventilation, daylighting, and shading."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-6d78f957-75be-4148-b47f-3a2af938aea8-ALE-PLAN-004-01-010-b074",
+      "claim_text": "Question 6d78f957-75be-4148-b47f-3a2af938aea8 ALE-PLAN-004-01-010 was rewritten to the checked physical_aesthetic_site_planning source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "BCI refined markdown lines 245-288, 333-370, 407-455, 483-508, and 1328-1340; raw PDF pages 11-12, 17-18, and 20-21 checked by local PyMuPDF extraction; BP 220 refined markdown lines 105-147, 151-195, 215-264, 420-465, and 482-504; raw PDF pages 5-6, 8-10, and 12 checked by local PyMuPDF extraction; PD 957 refined markdown lines 105-123, 129-177, 198-224, 358-405, and 470-512; raw PDF pages 6-7 and 11-14 checked by local PyMuPDF extraction; DOE Guidelines refined markdown lines 717-795, 1429-1450, and 1533-1537; raw PDF pages 33, 35-36, 39-40, and 42 checked by local PyMuPDF extraction; Design Process refined markdown lines 8, 21, and 23; raw PDF pages 8, 21, and 23 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Site analysis includes boundaries, slope, soil, drainage, vegetation, climate, access, utilities, views, and noise; DOE guidance covers orientation, ventilation, daylighting, and shading."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-958e6b1f-6ace-4dbc-974c-0aa166d8c4c0-ALE-PLAN-004-01-007-b074",
+      "claim_text": "Question 958e6b1f-6ace-4dbc-974c-0aa166d8c4c0 ALE-PLAN-004-01-007 was rewritten to the checked physical_aesthetic_site_planning source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "BCI refined markdown lines 245-288, 333-370, 407-455, 483-508, and 1328-1340; raw PDF pages 11-12, 17-18, and 20-21 checked by local PyMuPDF extraction; BP 220 refined markdown lines 105-147, 151-195, 215-264, 420-465, and 482-504; raw PDF pages 5-6, 8-10, and 12 checked by local PyMuPDF extraction; PD 957 refined markdown lines 105-123, 129-177, 198-224, 358-405, and 470-512; raw PDF pages 6-7 and 11-14 checked by local PyMuPDF extraction; DOE Guidelines refined markdown lines 717-795, 1429-1450, and 1533-1537; raw PDF pages 33, 35-36, 39-40, and 42 checked by local PyMuPDF extraction; Design Process refined markdown lines 8, 21, and 23; raw PDF pages 8, 21, and 23 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Site analysis includes boundaries, slope, soil, drainage, vegetation, climate, access, utilities, views, and noise; DOE guidance covers orientation, ventilation, daylighting, and shading."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-c2b8d09e-d8df-4c1b-80d2-a40b6b687f1f-ALE-PLAN-004-01-003-b074",
+      "claim_text": "Question c2b8d09e-d8df-4c1b-80d2-a40b6b687f1f ALE-PLAN-004-01-003 was rewritten to the checked physical_aesthetic_site_planning source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "BCI refined markdown lines 245-288, 333-370, 407-455, 483-508, and 1328-1340; raw PDF pages 11-12, 17-18, and 20-21 checked by local PyMuPDF extraction; BP 220 refined markdown lines 105-147, 151-195, 215-264, 420-465, and 482-504; raw PDF pages 5-6, 8-10, and 12 checked by local PyMuPDF extraction; PD 957 refined markdown lines 105-123, 129-177, 198-224, 358-405, and 470-512; raw PDF pages 6-7 and 11-14 checked by local PyMuPDF extraction; DOE Guidelines refined markdown lines 717-795, 1429-1450, and 1533-1537; raw PDF pages 33, 35-36, 39-40, and 42 checked by local PyMuPDF extraction; Design Process refined markdown lines 8, 21, and 23; raw PDF pages 8, 21, and 23 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Site analysis includes boundaries, slope, soil, drainage, vegetation, climate, access, utilities, views, and noise; DOE guidance covers orientation, ventilation, daylighting, and shading."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-c62ad1f7-8a15-4a90-bcbb-c17e1b674914-ALE-PLAN-004-01-001-b074",
+      "claim_text": "Question c62ad1f7-8a15-4a90-bcbb-c17e1b674914 ALE-PLAN-004-01-001 was rewritten to the checked physical_aesthetic_site_planning source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "BCI refined markdown lines 245-288, 333-370, 407-455, 483-508, and 1328-1340; raw PDF pages 11-12, 17-18, and 20-21 checked by local PyMuPDF extraction; BP 220 refined markdown lines 105-147, 151-195, 215-264, 420-465, and 482-504; raw PDF pages 5-6, 8-10, and 12 checked by local PyMuPDF extraction; PD 957 refined markdown lines 105-123, 129-177, 198-224, 358-405, and 470-512; raw PDF pages 6-7 and 11-14 checked by local PyMuPDF extraction; DOE Guidelines refined markdown lines 717-795, 1429-1450, and 1533-1537; raw PDF pages 33, 35-36, 39-40, and 42 checked by local PyMuPDF extraction; Design Process refined markdown lines 8, 21, and 23; raw PDF pages 8, 21, and 23 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Site analysis includes boundaries, slope, soil, drainage, vegetation, climate, access, utilities, views, and noise; DOE guidance covers orientation, ventilation, daylighting, and shading."
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "scenario_enrichment": {
+    "policy_status": "pending",
+    "eligibility_status": "eligible-deferred",
+    "blocker_status": "nonblocking",
+    "note": "No Real World Scenario section was added; source correctness and linked-question safety remained the blocking criteria."
+  },
+  "sme_review": {
+    "required": false,
+    "status": "PASS",
+    "reviewer": "codex-local-first-batch-074"
+  },
+  "source_file_hash": "sha256:de13af522058bb23cf405a7d1a789b7b28ed96772fc27d287439b4b3fa0c2b09"
+}

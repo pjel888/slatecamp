@@ -1,20 +1,44 @@
 {
   "article_id": "973b8e3d-c930-437d-b01d-eb33f4a047d8",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:10a5fdf77fe11556ea98bb0c06a8af58b93c29c518a44d34cf5dad495f2afb07",
-  "source_count": 1,
+  "sources_hash": "sha256:e463d42ff0d8f5f53f4217e4535e0ec27d4ad07304092be09e9250c04530f018",
+  "source_count": 3,
   "sources": [
     {
-      "source_id": "6a75f931-65ba-4512-88af-84061841404d",
+      "source_id": "eo-90-shelter-program-b086",
       "article_id": "973b8e3d-c930-437d-b01d-eb33f4a047d8",
-      "label": "Pag-IBIG Fund official documentation, SSS housing program guidelines, GSIS housing program guidelines, NHMFC official reports, RA 10811 and related housing finance legislation",
+      "label": "EO 90 - NGO for Shelter Program",
       "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
+      "source_type": "primary_executive_order_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-086-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/EO/EO 90 NGO for Shelter Program.pdf; raw_pdf_sha256=sha256:22b0d40bfdd91f9636f7e57df542496b19fcca84fc7d48df4911a9e65d7cd501; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/EO/EO 90 NGO for Shelter Program.md; refined_markdown_sha256=sha256:0edf1d2a41c71751479f8bbe0d7ff31adcda7b8b544f59dc88f3de9f6319d43b; checked_locator=EO 90 refined markdown lines 19-27, 30-43, 51-63, and 79-106; raw PDF pages 1, 2, 3, 4, and 6 checked by local PyMuPDF extraction.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:01.381895+00:00",
-      "updated_at": "2026-03-24T04:34:01.381895+00:00"
+      "created_at": "2026-05-12T09:30:00.000+08:00",
+      "updated_at": "2026-05-12T09:30:00.000+08:00"
+    },
+    {
+      "source_id": "ra-11201-irr-dhsud-act-b086",
+      "article_id": "973b8e3d-c930-437d-b01d-eb33f4a047d8",
+      "label": "RA 11201 IRR - DHSUD Act Implementing Rules",
+      "url": null,
+      "source_type": "primary_law_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-086-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf; raw_pdf_sha256=sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md; refined_markdown_sha256=sha256:40f1a5041c69b3a4aea7c8ba138a9d570bc686bea48aa5618ea6423a6a719528; checked_locator=RA 11201 IRR refined markdown lines 40-44, 68-75, 93-100, 116-121, 134-162, 261-263, 280-289, 335, 389, and 392; raw PDF pages 3, 6, 7, 13, 15, 19, and 35 checked by local PyMuPDF extraction.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-12T09:30:00.000+08:00",
+      "updated_at": "2026-05-12T09:30:00.000+08:00"
+    },
+    {
+      "source_id": "ra-7160-local-government-code-b086",
+      "article_id": "973b8e3d-c930-437d-b01d-eb33f4a047d8",
+      "label": "RA 7160 - The Local Government Code",
+      "url": null,
+      "source_type": "primary_law_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-086-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7160/RA 7160 The Local Government Code.pdf; raw_pdf_sha256=sha256:e270e8bc7bd84ba8ad7b6fe6780c12a3e5a6103e2b9395db13084266a5ff1fff; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7160/RA 7160 The Local Government Code.md; refined_markdown_sha256=sha256:9f95493bd12c7f4b0989913d7e8783cdbc6235891fea9977c2aa77238c3dd392; checked_locator=RA 7160 refined markdown lines 155-162; raw PDF page 12 checked by local PyMuPDF extraction.",
+      "is_verified": true,
+      "sort_order": 2,
+      "created_at": "2026-05-12T09:30:00.000+08:00",
+      "updated_at": "2026-05-12T09:30:00.000+08:00"
     }
   ]
 }

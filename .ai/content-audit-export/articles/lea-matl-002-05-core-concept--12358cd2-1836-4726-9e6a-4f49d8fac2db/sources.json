@@ -1,68 +1,44 @@
 {
   "article_id": "12358cd2-1836-4726-9e6a-4f49d8fac2db",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:d4a3e0f9d664cd4a79ae699a9c5723565065b6d9d19e43b5847bdb4873a9fc33",
-  "source_count": 5,
+  "sources_hash": "sha256:0cb53358be6d66a2c03e49bb2fa99b36aab33eb1230ee18a8a3805ef18279c3c",
+  "source_count": 3,
   "sources": [
     {
-      "source_id": "84e09d78-1373-4194-9a2e-4d8077fb008a",
+      "source_id": "george-salvan-building-materials-b083",
       "article_id": "12358cd2-1836-4726-9e6a-4f49d8fac2db",
-      "label": "ACI 308R-16: Guide to External Curing of Concrete (American Concrete Institute, 2016)",
+      "label": "George Salvan Architectural Building Materials",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "primary_materials_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-083-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf; raw_pdf_sha256=sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md; refined_markdown_sha256=sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42; checked_locator=George Salvan Architectural Building Materials refined markdown lines 285-565 and 1084-1140; raw PDF pages 16, 18, 37, and 38 checked by local PyMuPDF extraction.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
+      "created_at": "2026-05-12T06:25:00.000+08:00",
+      "updated_at": "2026-05-12T06:25:00.000+08:00"
     },
     {
-      "source_id": "e5c271dc-d476-4cc2-b137-d3ba392f4382",
+      "source_id": "building-construction-illustrated-b083",
       "article_id": "12358cd2-1836-4726-9e6a-4f49d8fac2db",
-      "label": "ACI 305.1-06: Specification for Hot Weather Concreting (American Concrete Institute, 2006)",
+      "label": "Building Construction Illustrated, 5th Edition",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "primary_materials_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-083-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf; raw_pdf_sha256=sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md; refined_markdown_sha256=sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a; checked_locator=Building Construction Illustrated refined markdown lines 3378-3570, 6616-6792, 15420-15510, and 15680-15745; raw PDF pages 121, 422, 423, 427, and 428 checked by local PyMuPDF extraction.",
+      "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
+      "created_at": "2026-05-12T06:25:00.000+08:00",
+      "updated_at": "2026-05-12T06:25:00.000+08:00"
     },
     {
-      "source_id": "32fcc310-d35a-4919-a848-6cdd4e24a3f5",
+      "source_id": "european-building-construction-illustrated-b083",
       "article_id": "12358cd2-1836-4726-9e6a-4f49d8fac2db",
-      "label": "ASTM C309: Standard Specification for Liquid Membrane-Forming Compounds for Curing Concrete",
+      "label": "European Building Construction Illustrated",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "primary_materials_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-083-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/European Building Construction Illustrated.pdf; raw_pdf_sha256=sha256:440f21385df13b75ce4041026f77d9d34872d6235fd18fa770c11609a283d19c; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/European Building Construction Illustrated.md; refined_markdown_sha256=sha256:f2ec82d918f32d6c050f9f5ea0274b6c68f409c009ddcd311ab45e3567041e8c; checked_locator=European Building Construction Illustrated refined markdown lines 15745-16015; raw PDF pages 411 and 415 checked by local PyMuPDF extraction.",
+      "is_verified": true,
       "sort_order": 2,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
-    },
-    {
-      "source_id": "8a026a51-f71f-4915-aafe-2723df79c2d9",
-      "article_id": "12358cd2-1836-4726-9e6a-4f49d8fac2db",
-      "label": "NSCP 2015: National Structural Code of the Philippines, Section 1901 (Concrete), curing requirements",
-      "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
-    },
-    {
-      "source_id": "a96d2d77-2d56-450f-9240-e4ecc9d449ac",
-      "article_id": "12358cd2-1836-4726-9e6a-4f49d8fac2db",
-      "label": "Portland Cement Association (PCA): Design and Control of Concrete Mixtures (hot-weather concreting chapter)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 4,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
+      "created_at": "2026-05-12T06:25:00.000+08:00",
+      "updated_at": "2026-05-12T06:25:00.000+08:00"
     }
   ]
 }

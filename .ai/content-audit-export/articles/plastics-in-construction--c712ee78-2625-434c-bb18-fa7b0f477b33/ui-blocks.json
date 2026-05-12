@@ -4,7 +4,7 @@
   "normalized_created_at": "2026-05-10T03:11:11.558Z",
   "parser_version": "ui-block-parser-v1",
   "original_content_hash": "sha256:2e668f8c882b92343fc1239792d291d52928d941ccd913d66261ec770ecbb983",
-  "normalized_content_hash": "sha256:ab9a0c23f7db51c9fbfcb05b7adc27baaf47987774e80a4590bf64df2d37dd81",
+  "normalized_content_hash": "sha256:94e0ee536488c4e3e7e4ab1339e08399c7217cb629c739720cb5db09978681b3",
   "ui_block_count": 1,
   "total_blocks": 1,
   "blocks": [
@@ -12,21 +12,21 @@
       "block_id": "ui_0001",
       "block_type": "mdx_component",
       "component_name": "LawCallout",
-      "raw": "<LawCallout code=\"pd1096\" section=\"Rule IV - Plastics in Construction\">\nCorrect Answer: A — Approved under PD 1096 only; fails IBC 2021 requirements. PD 1096 Section 1601 (2004 IRR) requires flame-spread ≤ 225; a rating of 190 is compliant under Philippine law. IBC 2021 Section 2606 classifies light-transmitting plastics as CC1 (0–25) or CC2 (26–75); a rating of 190 exceeds the CC2 ceiling of 75 and is therefore not an approved light-transmitting plastic under the IBC. This illustrates one of the most significant divergences between PH and US standards.\n</LawCallout>",
-      "raw_hash": "sha256:64a075fa8433e1ccaf86a3a6554001b84b66aef8d0a8a4814c80b7eec56e606d",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: code=\"pd1096\", section=\"Rule IV - Plastics in Construction\"\n- Text: Correct Answer: A — Approved under PD 1096 only; fails IBC 2021 requirements. PD 1096 Section 1601 (2004 IRR) requires flame-spread ≤ 225; a rating of 190 is compliant under Philippine law. IBC 2021 Section 2606 classifies light-transmitting plastics as CC1 (0–25) or CC2 (26–75); a rating of 190 exceeds the CC2 ceiling of 75 and is therefore not an approved light-transmitting plastic under the IBC. This illustrates one of the most significant divergences between PH and US standards.\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:a1802a709364ef74cde1d1f67ed73595437d087c779ce88c3472593f2e9c702e",
+      "raw": "<LawCallout code=\"pd1096\" section=\"Sections 1601-1609 - Plastics\">\nPD 1096 treats approved plastics as a fire-performance category: flame-spread rating of 225 or less, smoke density not greater than untreated wood, and combustion products no more toxic than untreated wood. Passing Section 1601 is only the first gate; Sections 1602 to 1609 still control where and how approved plastics may be installed.\n</LawCallout>",
+      "raw_hash": "sha256:f7883aa49e55044ecea2d3e3f23c1f261f2e564bf4fdcb89782f144b99587e81",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: code=\"pd1096\" section=\"Sections 1601-1609 - Plastics\"\n- Text: PD 1096 treats approved plastics as a fire-performance category: flame-spread rating of 225 or less, smoke density not greater than untreated wood, and combustion products no more toxic than untreated wood. Passing Section 1601 is only the first gate; Sections 1602 to 1609 still control where and how approved plastics may be installed.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:6549e81762ceab3f73c013fda80896242c27eb5439ac8504cd775596fce99381",
       "props": {
         "code": "pd1096",
-        "section": "Rule IV - Plastics in Construction"
+        "section": "Sections 1601-1609 - Plastics"
       },
       "props_json": {
         "code": "pd1096",
-        "section": "Rule IV - Plastics in Construction"
+        "section": "Sections 1601-1609 - Plastics"
       },
-      "props_text": "code=\"pd1096\" section=\"Rule IV - Plastics in Construction\"",
-      "children_raw": "\nCorrect Answer: A — Approved under PD 1096 only; fails IBC 2021 requirements. PD 1096 Section 1601 (2004 IRR) requires flame-spread ≤ 225; a rating of 190 is compliant under Philippine law. IBC 2021 Section 2606 classifies light-transmitting plastics as CC1 (0–25) or CC2 (26–75); a rating of 190 exceeds the CC2 ceiling of 75 and is therefore not an approved light-transmitting plastic under the IBC. This illustrates one of the most significant divergences between PH and US standards.\n",
-      "children_text": "Correct Answer: A — Approved under PD 1096 only; fails IBC 2021 requirements. PD 1096 Section 1601 (2004 IRR) requires flame-spread ≤ 225; a rating of 190 is compliant under Philippine law. IBC 2021 Section 2606 classifies light-transmitting plastics as CC1 (0–25) or CC2 (26–75); a rating of 190 exceeds the CC2 ceiling of 75 and is therefore not an approved light-transmitting plastic under the IBC. This illustrates one of the most significant divergences between PH and US standards.",
+      "props_text": "code=\"pd1096\" section=\"Sections 1601-1609 - Plastics\"",
+      "children_raw": "\nPD 1096 treats approved plastics as a fire-performance category: flame-spread rating of 225 or less, smoke density not greater than untreated wood, and combustion products no more toxic than untreated wood. Passing Section 1601 is only the first gate; Sections 1602 to 1609 still control where and how approved plastics may be installed.\n",
+      "children_text": "PD 1096 treats approved plastics as a fire-performance category: flame-spread rating of 225 or less, smoke density not greater than untreated wood, and combustion products no more toxic than untreated wood. Passing Section 1601 is only the first gate; Sections 1602 to 1609 still control where and how approved plastics may be installed.",
       "start_offset": 28638,
       "end_offset": 29211,
       "line_start": 398,
@@ -39,5 +39,5 @@
   ],
   "unknown_blocks": [],
   "unresolved_critical_blocks": [],
-  "ui_blocks_hash": "sha256:b755d9d1255eaea6df229ffb67b3587cfc23011377bcf89fca93d627deb060f0"
+  "ui_blocks_hash": "sha256:bcb530a8e091548f6e9a7cb1e0b9e86f638c42640358e14671ee5739469f1dec"
 }

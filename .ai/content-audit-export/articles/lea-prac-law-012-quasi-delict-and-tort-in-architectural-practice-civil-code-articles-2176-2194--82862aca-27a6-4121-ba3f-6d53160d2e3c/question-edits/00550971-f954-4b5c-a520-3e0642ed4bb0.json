@@ -1,0 +1,31 @@
+{
+  "question_id": "00550971-f954-4b5c-a520-3e0642ed4bb0",
+  "baseline_hash": "sha256:72be2d62cd10faa7a20de0a25d80d00ec60f91b305e4585c7800568110b6940e",
+  "reason": "Batch 006 local source audit aligned linked question ALE-PRAC-LAW-012-002 to verified raw-source claims for lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194.",
+  "approved_by": "codex-local-source-audit-batch-006",
+  "approved_at": "2026-05-10T22:30:00+08:00",
+  "proposed": {
+    "code_citation": "Civil Code Articles 1146 and 1150",
+    "explanation": "Article 1146 gives four years for quasi-delict, and Article 1150 counts prescription from the day the action may be brought.",
+    "text": "What prescription rule applies to a quasi-delict claim based on negligent architectural work?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Two years from discovery of damage"
+      },
+      {
+        "id": "b",
+        "text": "Four years, counted from the day the action may be brought"
+      },
+      {
+        "id": "c",
+        "text": "Ten years from the negligent act in all cases"
+      },
+      {
+        "id": "d",
+        "text": "Fifteen years from completion of the building in all cases"
+      }
+    ],
+    "correct_option_id": "b"
+  }
+}

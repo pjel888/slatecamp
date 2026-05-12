@@ -1,0 +1,267 @@
+{
+  "schema_version": "source-audit-evidence-v1-local-first",
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-044-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T16:22:00.000+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "ad7d9469-c7a1-4c62-864d-728f38650891",
+    "slug": "lea-dsgn-008-03-core-concept",
+    "title": "Automatic Sprinkler and Fire Detection Systems",
+    "article_folder": ".ai/content-audit-export/articles/lea-dsgn-008-03-core-concept--ad7d9469-c7a1-4c62-864d-728f38650891",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-008-03-core-concept--ad7d9469-c7a1-4c62-864d-728f38650891",
+    "candidate_path": ".ai/content-audit-export/articles/lea-dsgn-008-03-core-concept--ad7d9469-c7a1-4c62-864d-728f38650891/candidate.md",
+    "candidate_sha256": "sha256:5c05ecb3e8e12ac7614c6b086b8f59057736873797a85be0a174a6e202919a94",
+    "normalized_sha256": "sha256:5c05ecb3e8e12ac7614c6b086b8f59057736873797a85be0a174a6e202919a94",
+    "linked_questions_sha256": "sha256:db14f20ba95cfa30c4e17f078e740273c0e673cb571a59b5dd5fd67bf2d732cb",
+    "sources_sha256": "sha256:9a13c57f571eb1491c591bbbc01f5fa2d3372fee9733df86ca985c5b294d0d3c"
+  },
+  "classification": {
+    "content_domain": "LEA Design - sprinkler and fire detection systems",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high_value_fire_safety_egress_sprinkler",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": [
+      "1e5828a9-5aaf-432b-a06b-12060b93ec43",
+      "4b5e2585-4ab6-4939-88fb-b18cc42ef79d",
+      "0e4cfadf-f36d-48a5-b66d-ff014628d95a",
+      "95130e59-4a0e-4116-8037-7db66a491fac",
+      "3900a4f9-8883-4fe4-b80c-9c2a00b010f7",
+      "df6deecd-50e5-4a62-82ae-4cba791235d3",
+      "518161ed-ef55-43db-acfe-3b98d1dac562",
+      "14db98aa-6127-428b-af32-ed555d832e17",
+      "71f6e828-bfc8-49de-9d8b-ae94ff2bf5dd",
+      "ee36195a-6b60-4475-8b2e-62fb629b2b58"
+    ]
+  },
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/lea-dsgn-008-03-core-concept--ad7d9469-c7a1-4c62-864d-728f38650891",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-008-03-core-concept--ad7d9469-c7a1-4c62-864d-728f38650891",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/lea-dsgn-008-03-core-concept--ad7d9469-c7a1-4c62-864d-728f38650891/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-008-03-core-concept--ad7d9469-c7a1-4c62-864d-728f38650891/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/lea-dsgn-008-03-core-concept--ad7d9469-c7a1-4c62-864d-728f38650891/question-edits/1e5828a9-5aaf-432b-a06b-12060b93ec43.json",
+      ".ai/content-audit-export/articles/lea-dsgn-008-03-core-concept--ad7d9469-c7a1-4c62-864d-728f38650891/question-edits/4b5e2585-4ab6-4939-88fb-b18cc42ef79d.json",
+      ".ai/content-audit-export/articles/lea-dsgn-008-03-core-concept--ad7d9469-c7a1-4c62-864d-728f38650891/question-edits/0e4cfadf-f36d-48a5-b66d-ff014628d95a.json",
+      ".ai/content-audit-export/articles/lea-dsgn-008-03-core-concept--ad7d9469-c7a1-4c62-864d-728f38650891/question-edits/95130e59-4a0e-4116-8037-7db66a491fac.json",
+      ".ai/content-audit-export/articles/lea-dsgn-008-03-core-concept--ad7d9469-c7a1-4c62-864d-728f38650891/question-edits/3900a4f9-8883-4fe4-b80c-9c2a00b010f7.json",
+      ".ai/content-audit-export/articles/lea-dsgn-008-03-core-concept--ad7d9469-c7a1-4c62-864d-728f38650891/question-edits/df6deecd-50e5-4a62-82ae-4cba791235d3.json",
+      ".ai/content-audit-export/articles/lea-dsgn-008-03-core-concept--ad7d9469-c7a1-4c62-864d-728f38650891/question-edits/518161ed-ef55-43db-acfe-3b98d1dac562.json",
+      ".ai/content-audit-export/articles/lea-dsgn-008-03-core-concept--ad7d9469-c7a1-4c62-864d-728f38650891/question-edits/14db98aa-6127-428b-af32-ed555d832e17.json",
+      ".ai/content-audit-export/articles/lea-dsgn-008-03-core-concept--ad7d9469-c7a1-4c62-864d-728f38650891/question-edits/71f6e828-bfc8-49de-9d8b-ae94ff2bf5dd.json",
+      ".ai/content-audit-export/articles/lea-dsgn-008-03-core-concept--ad7d9469-c7a1-4c62-864d-728f38650891/question-edits/ee36195a-6b60-4475-8b2e-62fb629b2b58.json"
+    ]
+  },
+  "raw_sources": [
+    {
+      "source_id": "ra9514-rirr-2019-local-raw-pdf--b044",
+      "label": "RA 9514 Revised IRR 2019 - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+      "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+      "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+      "source_locator": "RA 9514 refined markdown lines 1482, 1510, 1520, 1630, 2347, 2417-2422, 2488, 2513, 2702-2717, 3609-3645, 3684-3714, 5451-5464, 5919-5943, 5999-6025",
+      "checked_markdown_lines": [
+        "RA 9514 refined markdown lines 1482, 1510, 1520, 1630",
+        "RA 9514 refined markdown lines 2347 and 2417-2422",
+        "RA 9514 refined markdown lines 2488 and 2513",
+        "RA 9514 refined markdown lines 2702-2717 and 3609-3645",
+        "RA 9514 refined markdown lines 3684-3714",
+        "RA 9514 refined markdown lines 5451-5464, 5919-5943, 5999-6025"
+      ]
+    },
+    {
+      "source_id": "salvan-architectural-utilities-2-local-raw-pdf--b044",
+      "label": "George Salvan Architectural Utilities 2 - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+      "raw_pdf_sha256": "sha256:ff7231f0059a1febaf4a0996a425caca3b7676c23c729f922e385af4e4c20d28",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
+      "refined_markdown_sha256": "sha256:1b9249c90c0b86c57c6df2f20f0ab210ac112a10230bd9bce584461773d75215",
+      "source_locator": "Salvan refined markdown lines 1478-1489, 1515, 1684, 1718, 1741, 1785-1792, 5172, 11099-11105, 12249-12417, 16731-16783",
+      "checked_markdown_lines": [
+        "Salvan refined markdown lines 1478-1489 and 1515",
+        "Salvan refined markdown lines 1684, 1718, 1741, 1785-1792",
+        "Salvan refined markdown lines 5172 and 11099-11105",
+        "Salvan refined markdown lines 12249-12417",
+        "Salvan refined markdown lines 16731-16783"
+      ]
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "ra9514-rirr-2019-local-raw-pdf--b044",
+      "label": "RA 9514 Revised IRR 2019 - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+      "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+      "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+      "source_locator": "RA 9514 refined markdown lines 1482, 1510, 1520, 1630, 2347, 2417-2422, 2488, 2513, 2702-2717, 3609-3645, 3684-3714, 5451-5464, 5919-5943, 5999-6025",
+      "checked_markdown_lines": [
+        "RA 9514 refined markdown lines 1482, 1510, 1520, 1630",
+        "RA 9514 refined markdown lines 2347 and 2417-2422",
+        "RA 9514 refined markdown lines 2488 and 2513",
+        "RA 9514 refined markdown lines 2702-2717 and 3609-3645",
+        "RA 9514 refined markdown lines 3684-3714",
+        "RA 9514 refined markdown lines 5451-5464, 5919-5943, 5999-6025"
+      ]
+    },
+    {
+      "source_id": "salvan-architectural-utilities-2-local-raw-pdf--b044",
+      "label": "George Salvan Architectural Utilities 2 - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+      "raw_pdf_sha256": "sha256:ff7231f0059a1febaf4a0996a425caca3b7676c23c729f922e385af4e4c20d28",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
+      "refined_markdown_sha256": "sha256:1b9249c90c0b86c57c6df2f20f0ab210ac112a10230bd9bce584461773d75215",
+      "source_locator": "Salvan refined markdown lines 1478-1489, 1515, 1684, 1718, 1741, 1785-1792, 5172, 11099-11105, 12249-12417, 16731-16783",
+      "checked_markdown_lines": [
+        "Salvan refined markdown lines 1478-1489 and 1515",
+        "Salvan refined markdown lines 1684, 1718, 1741, 1785-1792",
+        "Salvan refined markdown lines 5172 and 11099-11105",
+        "Salvan refined markdown lines 12249-12417",
+        "Salvan refined markdown lines 16731-16783"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "b044-sprinkler-01",
+      "claim_text": "RA 9514 requires automatic sprinkler systems, when required by occupancy divisions, to follow NFPA 13 or NFPA 13R as applicable.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "RA 9514 Revised IRR 2019 - local raw PDF",
+        "locator": "RA 9514 refined markdown lines 3694-3697",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "quoted_pdf_excerpt": "NFPA 13; NFPA 13R; inspected, tested, and maintained"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b044-sprinkler-02",
+      "claim_text": "RA 9514 requires fire watch and notification when a required sprinkler system is out of service for more than four hours in a twenty-four-hour period.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "RA 9514 Revised IRR 2019 - local raw PDF",
+        "locator": "RA 9514 refined markdown line 3697",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "quoted_pdf_excerpt": "out of service for more than four hours; fire watch"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b044-sprinkler-03",
+      "claim_text": "RA 9514 business occupancy limits are 61 m travel distance when sprinklered throughout and 46 m otherwise.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "RA 9514 Revised IRR 2019 - local raw PDF",
+        "locator": "RA 9514 refined markdown lines 5942-5943",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "quoted_pdf_excerpt": "sixty-one meters; forty-six meters"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b044-sprinkler-04",
+      "claim_text": "RA 9514 business occupancy dead-end corridors are 15 m when sprinklered throughout and 6 m otherwise.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "RA 9514 Revised IRR 2019 - local raw PDF",
+        "locator": "RA 9514 refined markdown lines 5919-5920",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "quoted_pdf_excerpt": "fifteen meters; six meters"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b044-sprinkler-05",
+      "claim_text": "RA 9514 requires business occupancy buildings 15 m or more in height to have approved supervised sprinkler protection throughout.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "RA 9514 Revised IRR 2019 - local raw PDF",
+        "locator": "RA 9514 refined markdown line 5999",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "quoted_pdf_excerpt": "business occupancy buildings fifteen meters or more in height"
+      },
+      "blockers": []
+    }
+  ],
+  "removed_or_rewritten_material": [
+    "Removed exported UI block marker text from normalized article content where present.",
+    "Rewrote linked question files to stay inside checked local raw-source evidence.",
+    "Replaced derivative-only numeric examples with local source-family statements."
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdf_first": true,
+    "derivative_layers_used_only_as_locators": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "checked_raw_pdf_families": [
+      "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+      "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf"
+    ],
+    "blockers": []
+  },
+  "gate_results": {
+    "source_audit": "PASS",
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_validation": "PASS",
+    "question_edit_count_check": "PASS",
+    "scoped_json_parse": "PASS",
+    "marker_scan": "PASS",
+    "source_hash_check": "PASS",
+    "stale_compose_error_check": "PASS"
+  },
+  "source_safe_repair": {
+    "status": "COMPLETE_LOCAL_VALIDATED",
+    "article_normalized_rewritten": true,
+    "sources_json_updated": true,
+    "source_audit_evidence_updated": true,
+    "question_edits_created": 10,
+    "blockers": []
+  },
+  "local_validation": {
+    "status": "PASS_LOCAL_VALIDATION",
+    "validated_at": "2026-05-11T16:34:00.000+08:00",
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_validation": "PASS",
+    "scoped_checks": "PASS",
+    "blockers": []
+  },
+  "sme_review": {
+    "required_before_supabase_publish": true,
+    "completed": false
+  },
+  "overall": {
+    "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

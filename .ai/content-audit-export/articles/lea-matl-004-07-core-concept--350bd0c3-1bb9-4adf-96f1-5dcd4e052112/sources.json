@@ -1,68 +1,44 @@
 {
   "article_id": "350bd0c3-1bb9-4adf-96f1-5dcd4e052112",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:9ae783b1ff0a3b1abc7faa7e4d0f59e2f78022f9585d39ebe31e3ed07bc6627b",
-  "source_count": 5,
+  "sources_hash": "sha256:ece1b192bcecc84984b3836c2ee5948965d2c781cd7761a7d313552b3ecf1c84",
+  "source_count": 3,
   "sources": [
     {
-      "source_id": "6bb384fb-489b-4803-adde-90670b4da313",
+      "source_id": "building-construction-illustrated-b084",
       "article_id": "350bd0c3-1bb9-4adf-96f1-5dcd4e052112",
-      "label": "AISC 360-22 Specification for Structural Steel Buildings",
+      "label": "Building Construction Illustrated, 5th Edition",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "primary_technology_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-084-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf; raw_pdf_sha256=sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md; refined_markdown_sha256=sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a; checked_locator=Building Construction Illustrated refined markdown lines 288-322, 2850-2925, 3378-3605, 4037-4073, 6504-6552, 8492, and 8578-8605; raw PDF pages 18, 105, 121-126, 137-145, 248, and 459 checked by local PyMuPDF extraction.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:00.685475+00:00",
-      "updated_at": "2026-03-24T04:34:00.685475+00:00"
+      "created_at": "2026-05-12T06:55:00.000+08:00",
+      "updated_at": "2026-05-12T06:55:00.000+08:00"
     },
     {
-      "source_id": "6dfb91f6-e386-4514-861b-2c7b77576409",
+      "source_id": "chudley-greeno-handbook-b084",
       "article_id": "350bd0c3-1bb9-4adf-96f1-5dcd4e052112",
-      "label": "NSCP 2015 Chapter 5: Structural Steel",
+      "label": "Buidling Construction Handbook 7th Ed by Chudley _ Greeno",
       "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
+      "source_type": "primary_technology_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-084-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf; raw_pdf_sha256=sha256:2efa493fac06a3efb9367111a397129ff8647778d88160bbe0174403cbb9e0bb; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.md; refined_markdown_sha256=sha256:485fe968d55ca680cbde52d24fcee5f512a63591026db19e46835f1bc530dcbb; checked_locator=Chudley/Greeno refined markdown lines 18-23, 295-305, 433-519, 782-916, and 893-916; raw PDF pages 58, 96, 163-199, 471, 495, and 511 checked by local PyMuPDF extraction.",
+      "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:00.685475+00:00",
-      "updated_at": "2026-03-24T04:34:00.685475+00:00"
+      "created_at": "2026-05-12T06:55:00.000+08:00",
+      "updated_at": "2026-05-12T06:55:00.000+08:00"
     },
     {
-      "source_id": "ee179fe6-d2e1-404c-a6e0-6a305358ba2e",
+      "source_id": "metals-lecture-b084",
       "article_id": "350bd0c3-1bb9-4adf-96f1-5dcd4e052112",
-      "label": "AISC Design Guide 3: Design Practices for Smaller Steel Buildings",
+      "label": "Metals Lecture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "primary_technology_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-084-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/Metals Lecture.pdf; raw_pdf_sha256=sha256:cd9cd4ee534bda9a974447c4ec73b13b12d5abf1c14df1fca408a2c4530650dd; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Metals Lecture.md; refined_markdown_sha256=sha256:4e9e0a042f2eef2c80d33af81512ca2cf32778cae64351af9dc54df58db3694c; checked_locator=Metals Lecture refined markdown lines 329-405 and 856-939; raw PDF pages 23, 26, and 28 checked by local PyMuPDF extraction.",
+      "is_verified": true,
       "sort_order": 2,
-      "created_at": "2026-03-24T04:34:00.685475+00:00",
-      "updated_at": "2026-03-24T04:34:00.685475+00:00"
-    },
-    {
-      "source_id": "893392d0-d40e-4c40-8393-05d106348521",
-      "article_id": "350bd0c3-1bb9-4adf-96f1-5dcd4e052112",
-      "label": "American Institute of Steel Construction (2016). Steel Construction Manual",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:34:00.685475+00:00",
-      "updated_at": "2026-03-24T04:34:00.685475+00:00"
-    },
-    {
-      "source_id": "2292dd76-5aa5-4866-a1d6-a199ffc2e1e8",
-      "article_id": "350bd0c3-1bb9-4adf-96f1-5dcd4e052112",
-      "label": "OSHA Construction Standards 1926.500+ (Temporary Bracing, Fall Protection)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 4,
-      "created_at": "2026-03-24T04:34:00.685475+00:00",
-      "updated_at": "2026-03-24T04:34:00.685475+00:00"
+      "created_at": "2026-05-12T06:55:00.000+08:00",
+      "updated_at": "2026-05-12T06:55:00.000+08:00"
     }
   ]
 }

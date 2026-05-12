@@ -1,0 +1,65 @@
+{
+  "question_id": "a3167e74-3e6f-4147-ac53-9b9cf0146f41",
+  "baseline_hash": "sha256:b8b7c8cbfe4ce3b788955836f9c8fd1ca3c45a3e90313cfff786fef3635b3a80",
+  "action": "replace",
+  "reason": "source-audited-article-batch-078-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-007-01-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-078",
+  "approved_at": "2026-05-12T05:20:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "20f67594-cbef-4aac-b65d-db77bc3e2c9e",
+    "parent_article_slug": "lea-matl-007-01-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "BCI refined markdown lines 12549-12620 and 13036-13496; raw PDF pages 343-365 checked by local PyMuPDF extraction",
+    "checked_markdown_lines": [
+      "BCI refined markdown lines 12549-12620 and 13036-13496; raw PDF pages 343-365 checked by local PyMuPDF extraction",
+      "Salvan refined markdown lines 8010-8245, 8448-8505, and 8560-8665; raw PDF pages 235-254 checked by local PyMuPDF extraction"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "bci-5e-b078",
+        "label": "Building Construction Illustrated, 5th Edition",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "raw_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "locator": "BCI refined markdown lines 12549-12620 and 13036-13496; raw PDF pages 343-365 checked by local PyMuPDF extraction"
+      },
+      {
+        "source_id": "salvan-building-materials-b078",
+        "label": "George Salvan Architectural Building Materials",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+        "raw_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+        "locator": "Salvan refined markdown lines 8010-8245, 8448-8505, and 8560-8665; raw PDF pages 235-254 checked by local PyMuPDF extraction"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 078 local raw-source-audited floor_finishes scope."
+  },
+  "proposed": {
+    "text": "Which floor finish does BCI associate with visual and textural softness, resilience, warmth, and sound absorption?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Carpeting"
+      },
+      {
+        "id": "b",
+        "text": "Quarry tile only"
+      },
+      {
+        "id": "c",
+        "text": "Steel truss work"
+      },
+      {
+        "id": "d",
+        "text": "Gypsum board lath"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "BCI describes carpeting as providing softness, resilience, warmth, sound absorption, and impact-noise reduction.",
+    "explanation": "BCI describes carpeting as providing softness, resilience, warmth, sound absorption, and impact-noise reduction.",
+    "code_citation": "Building Construction Illustrated, 5th Edition; George Salvan Architectural Building Materials"
+  }
+}

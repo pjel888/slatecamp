@@ -1,0 +1,130 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-054-local-first",
+  "batch_number": 54,
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T19:22:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "fe7216ee-46ed-41b3-88ef-accb3f912a4c",
+    "slug": "inca-architecture-ashlar-masonry",
+    "title": "Inca Architecture Ashlar Masonry",
+    "article_folder": ".ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c",
+    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c",
+    "candidate_path": ".ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c/candidate.md",
+    "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c/candidate.md",
+    "question_edits_folder": ".ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c/question-edits",
+    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/inca-architecture-ashlar-masonry--fe7216ee-46ed-41b3-88ef-accb3f912a4c/question-edits",
+    "normalized_sha256": "sha256:cb4b4cf590b66211cb63566d2bdbf1ce99dc4e0f22e574a5a93fef1ee1decd0a",
+    "candidate_sha256": "sha256:cb4b4cf590b66211cb63566d2bdbf1ce99dc4e0f22e574a5a93fef1ee1decd0a",
+    "linked_questions_sha256": "sha256:580044283fb890af198dbf685d3550a8200b9868830c1facf55bcf64d24d3bfb",
+    "sources_sha256": "sha256:bdf697a6f249dda8bee4169a0376ec22b0480762a87ffd45a474b930afeb621c"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "refined_markdown_role": "locator_only",
+    "derivative_or_search_layer_as_primary": false,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": [],
+    "source_families_checked": [
+      {
+        "label": "George Salvan Architectural Character and the History of Architecture - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Character and the History of Architecture.pdf",
+        "raw_pdf_sha256": "sha256:55c4fa2d43bbfd27cffb86d0aac4ad960032e178e1e25c29d4eb351297bfc069",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Character and the History of Architecture.md",
+        "refined_markdown_sha256": "sha256:be8e760bef8f7ceb573742d996dabb202f0353e19b4ab9283ec2de7dfc1fccea",
+        "locator": "George Salvan Architectural Character refined markdown lines 1339, 1361-1377, 1385-1387, 1397-1401, and 1407-1409"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "history-of-architecture",
+    "contains_legal_or_code_claims": false,
+    "source_risk_tier": "medium",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 22,
+    "question_edits_created": [
+      "b6979907-f9eb-483f-8742-2dffb5bf6f20",
+      "48f785ec-9de2-4730-9d7a-caee3a3d5255",
+      "b42bf8d0-35d0-40a9-8a8e-aba1d6c176f9",
+      "c05e8892-4875-472a-a0dc-f90d35151732",
+      "5e8a61a4-3f5e-4a57-90bd-45fe877aac5d",
+      "a17db9b7-342f-4297-b626-bf2b504e68f8",
+      "8961da6f-4a0e-4918-9f8b-73e7b979fa35",
+      "1dca9bab-54e2-4042-acdf-14dd3480a958",
+      "edd29d81-96d3-44d2-840a-5022f0de40fd",
+      "4b6c0324-7b64-4811-ac8b-b086c43ab008",
+      "d8c04655-b939-4b0d-b25f-820201afa5f1",
+      "ad833160-d92a-4e57-a59e-01d54b337c45",
+      "2a560113-be80-4f4c-84ca-9af963ca8b61",
+      "7e99476c-6dac-46d8-ae29-ec528f7ac870",
+      "6e0c23ce-f077-4800-9eb5-e29f1854208e",
+      "2e820e32-0412-45c9-9125-e5ff96504833",
+      "acb82ee7-1a12-4d1a-8c6c-1a471e87b3a8",
+      "eeec577b-d49b-4fc9-8493-a25cffe5e8ec",
+      "0dc824ab-aa3e-412c-8735-c1c168cd6eff",
+      "75fa4d88-7247-49bc-9e56-4611615984ff",
+      "2bc2a2cd-3976-45e3-8fb6-b9c8a3b1de4e",
+      "53c0f354-4086-453d-bbd2-970f50a3dad5"
+    ]
+  },
+  "checked_markdown_lines": [
+    "George Salvan Architectural Character refined markdown line 1339",
+    "George Salvan Architectural Character refined markdown lines 1361-1377",
+    "George Salvan Architectural Character refined markdown lines 1385-1387",
+    "George Salvan Architectural Character refined markdown lines 1397-1401",
+    "George Salvan Architectural Character refined markdown lines 1407-1409"
+  ],
+  "claims": [
+    {
+      "claim_id": "inca-architecture-ashlar-masonry-b054-claim-01",
+      "claim_text": "Inca Architecture Ashlar Masonry in Batch 054 is limited to checked local raw PDF source families and the refined markdown locators recorded for this article.",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Character and the History of Architecture.pdf",
+        "quoted_pdf_excerpt": "George Salvan Architectural Character refined markdown lines 1339, 1361-1377, 1385-1387, 1397-1401, and 1407-1409",
+        "source_ids": [
+          "salvan-character-local-raw-pdf--b054-fe7216ee-01"
+        ]
+      },
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "inca-architecture-ashlar-masonry-b054-claim-questions",
+      "claim_text": "Batch 054 question edits audited for inca-architecture-ashlar-masonry: b6979907-f9eb-483f-8742-2dffb5bf6f20, 48f785ec-9de2-4730-9d7a-caee3a3d5255, b42bf8d0-35d0-40a9-8a8e-aba1d6c176f9, c05e8892-4875-472a-a0dc-f90d35151732, 5e8a61a4-3f5e-4a57-90bd-45fe877aac5d, a17db9b7-342f-4297-b626-bf2b504e68f8, 8961da6f-4a0e-4918-9f8b-73e7b979fa35, 1dca9bab-54e2-4042-acdf-14dd3480a958, edd29d81-96d3-44d2-840a-5022f0de40fd, 4b6c0324-7b64-4811-ac8b-b086c43ab008, d8c04655-b939-4b0d-b25f-820201afa5f1, ad833160-d92a-4e57-a59e-01d54b337c45, 2a560113-be80-4f4c-84ca-9af963ca8b61, 7e99476c-6dac-46d8-ae29-ec528f7ac870, 6e0c23ce-f077-4800-9eb5-e29f1854208e, 2e820e32-0412-45c9-9125-e5ff96504833, acb82ee7-1a12-4d1a-8c6c-1a471e87b3a8, eeec577b-d49b-4fc9-8493-a25cffe5e8ec, 0dc824ab-aa3e-412c-8735-c1c168cd6eff, 75fa4d88-7247-49bc-9e56-4611615984ff, 2bc2a2cd-3976-45e3-8fb6-b9c8a3b1de4e, 53c0f354-4086-453d-bbd2-970f50a3dad5",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Character and the History of Architecture.pdf",
+        "quoted_pdf_excerpt": "George Salvan Architectural Character refined markdown lines 1339, 1361-1377, 1385-1387, 1397-1401, and 1407-1409",
+        "source_ids": [
+          "salvan-character-local-raw-pdf--b054-fe7216ee-01"
+        ]
+      },
+      "audit_result": "PASS"
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "local_first_only": true,
+    "supabase_write_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json"
+  },
+  "sme_review": {
+    "required": false,
+    "status": "not_required"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

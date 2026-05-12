@@ -1,0 +1,65 @@
+{
+  "question_id": "dc4b2ccb-c761-48dd-b4a1-ce7289b975c5",
+  "baseline_hash": "sha256:2ac855ef53ca68c1ff231d71d23e49fc1f42f6002a5ee7af5a5f9b07e2a9177a",
+  "action": "replace",
+  "reason": "source-audited-article-batch-079-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-008-02-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-079",
+  "approved_at": "2026-05-12T06:20:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
+    "parent_article_slug": "lea-matl-008-02-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "BCI refined markdown lines 2139-2160, 5191-5238, and 9402-9465; raw PDF pages 67, 166, and 272-273 checked by local PyMuPDF extraction",
+    "checked_markdown_lines": [
+      "BCI refined markdown lines 2139-2160, 5191-5238, and 9402-9465; raw PDF pages 67, 166, and 272-273 checked by local PyMuPDF extraction",
+      "Salvan refined markdown lines 2039-2083, 2630-2662, and 13148-13149; raw PDF pages 59, 92, and 355 checked by local PyMuPDF extraction"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "bci-5e-b079",
+        "label": "Building Construction Illustrated, 5th Edition",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "raw_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "locator": "BCI refined markdown lines 2139-2160, 5191-5238, and 9402-9465; raw PDF pages 67, 166, and 272-273 checked by local PyMuPDF extraction"
+      },
+      {
+        "source_id": "salvan-building-materials-b079",
+        "label": "George Salvan Architectural Building Materials",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+        "raw_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+        "locator": "Salvan refined markdown lines 2039-2083, 2630-2662, and 13148-13149; raw PDF pages 59, 92, and 355 checked by local PyMuPDF extraction"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 079 local raw-source-audited structural_joints scope."
+  },
+  "proposed": {
+    "text": "What does an isolation joint do in BCI movement-joint vocabulary?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It divides a large or complex structure so differential movement or settlement can occur."
+      },
+      {
+        "id": "b",
+        "text": "It bonds plastic laminate to particleboard."
+      },
+      {
+        "id": "c",
+        "text": "It locks a door leaf."
+      },
+      {
+        "id": "d",
+        "text": "It changes a window into fixed glazing."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "BCI defines isolation joints as dividing a large or geometrically complex structure so differential movement or settlement can occur.",
+    "explanation": "BCI defines isolation joints as dividing a large or geometrically complex structure so differential movement or settlement can occur.",
+    "code_citation": "Building Construction Illustrated, 5th Edition; George Salvan Architectural Building Materials"
+  }
+}

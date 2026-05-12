@@ -1,0 +1,65 @@
+{
+  "question_id": "f44656c8-77a7-4412-819e-b31b330df916",
+  "baseline_hash": "sha256:0a67c8c085b7a8a72acaa23d79e5d2fed16f19d371f33a5f53bcf450882f2575",
+  "action": "replace",
+  "reason": "source-audited-article-batch-075-local-first aligned linked question with checked local raw PDF/source evidence for lea-theo-009-01-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-075",
+  "approved_at": "2026-05-12T02:55:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+    "parent_article_slug": "lea-theo-009-01-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430; raw PDF pages 6, 17, 25, and 33-35 checked by local PyMuPDF extraction; RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 3-5, 14, and 19 checked by local PyMuPDF extraction",
+    "checked_markdown_lines": [
+      "Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430; raw PDF pages 6, 17, 25, and 33-35 checked by local PyMuPDF extraction",
+      "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 3-5, 14, and 19 checked by local PyMuPDF extraction"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "design-process-programming-b075",
+        "label": "Design Process",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
+        "sha256": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
+        "raw_markdown_sha256": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
+        "locator": "Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430; raw PDF pages 6, 17, 25, and 33-35 checked by local PyMuPDF extraction"
+      },
+      {
+        "source_id": "ra9266-irr-architecture-act-b075",
+        "label": "RA 9266 IRR - Architecture Act of 2004",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+        "raw_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 3-5, 14, and 19 checked by local PyMuPDF extraction"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 075 local raw-source-audited article scope."
+  },
+  "proposed": {
+    "text": "Which statement best describes architectural programming in the checked Design Process source?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The construction phase where contractors select materials."
+      },
+      {
+        "id": "b",
+        "text": "The problem-seeking phase that defines the architectural problem and project requirements."
+      },
+      {
+        "id": "c",
+        "text": "The final drafting phase for sealed construction drawings."
+      },
+      {
+        "id": "d",
+        "text": "The occupancy inspection phase after project completion."
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": "The source defines architectural programming as the problem-seeking phase that organizes project information and articulates requirements.",
+    "explanation": "The source defines architectural programming as the problem-seeking phase that organizes project information and articulates requirements.",
+    "code_citation": "Design Process; RA 9266 IRR"
+  }
+}

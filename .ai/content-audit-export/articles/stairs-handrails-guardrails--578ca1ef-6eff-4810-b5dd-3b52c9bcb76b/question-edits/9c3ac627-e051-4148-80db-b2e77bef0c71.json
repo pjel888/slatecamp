@@ -1,0 +1,66 @@
+{
+  "question_id": "9c3ac627-e051-4148-80db-b2e77bef0c71",
+  "baseline_hash": "sha256:b4d4f951e5a9e8222a4b9227d047fa470c3497a68d7a3fb9d4c5c1f7f7de198e",
+  "action": "replace",
+  "reason": "source-audited-article-batch-042-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes stale or non-local framing where present.",
+  "approved_by": "codex-local-first-batch-042",
+  "approved_at": "2026-05-11T15:13:00.657+08:00",
+  "source_audit_support": {
+    "parent_article_id": "578ca1ef-6eff-4810-b5dd-3b52c9bcb76b",
+    "parent_article_slug": "stairs-handrails-guardrails",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "BP 344 2024 IRR refined markdown lines 198-224; BP 344 2024 IRR refined markdown lines 539-605 | PD 1096 RIRR refined markdown lines 3484-3583",
+    "checked_markdown_lines": [
+      "BP 344 2024 IRR refined markdown lines 198-224",
+      "BP 344 2024 IRR refined markdown lines 539-605",
+      "PD 1096 RIRR refined markdown lines 3484-3583"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "bp-344-2024-rirr-ncda-local",
+        "label": "BP 344 2024 Revised IRR - NCDA local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+        "locator": "BP 344 2024 IRR refined markdown lines 198-224; BP 344 2024 IRR refined markdown lines 539-605"
+      },
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "locator": "PD 1096 RIRR refined markdown lines 3484-3583"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 042 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "When does a protection railing of at least 1100 mm apply?",
+    "options": [
+      {
+        "id": "a",
+        "text": "When stairs, ramps, balconies, landings, or porches are more than 750 mm above adjacent grade."
+      },
+      {
+        "id": "b",
+        "text": "Use a furniture layout as the stair rule."
+      },
+      {
+        "id": "c",
+        "text": "Ignore occupant load and accessible route requirements."
+      },
+      {
+        "id": "d",
+        "text": "Delete handrails wherever space is tight."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The checked local source supports: When stairs, ramps, balconies, landings, or porches are more than 750 mm above adjacent grade.",
+    "explanation": "The checked local source supports: When stairs, ramps, balconies, landings, or porches are more than 750 mm above adjacent grade.",
+    "code_citation": "BP 344 railing provisions"
+  }
+}

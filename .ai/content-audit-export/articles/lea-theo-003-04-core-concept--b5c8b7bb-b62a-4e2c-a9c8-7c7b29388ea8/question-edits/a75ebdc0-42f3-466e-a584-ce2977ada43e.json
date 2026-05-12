@@ -1,0 +1,77 @@
+{
+  "question_id": "a75ebdc0-42f3-466e-a584-ce2977ada43e",
+  "baseline_hash": "sha256:0d9f4193aeefc7e7ec8d88f54d7f94e66819026c0b78d2cb45c8122b26f990c8",
+  "action": "replace",
+  "reason": "source-audited-article-batch-058-local-first: local raw PDF backed replacement constrained to checked Batch 058 source families.",
+  "approved_by": "codex-local-first-batch-058",
+  "approved_at": "2026-05-11T20:31:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "b5c8b7bb-b62a-4e2c-a9c8-7c7b29388ea8",
+    "parent_article_slug": "lea-theo-003-04-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "George Salvan Architectural Theories of Design refined markdown lines 7978-7984, 15740-15910, and raw PDF pages 473-478; theory refined markdown lines 140-191 and raw PDF pages 8 and 10; TOA 3 Design Perception refined markdown lines 500-514 and raw PDF pages 57-59",
+    "checked_markdown_lines": [
+      "George Salvan Architectural Theories of Design refined markdown lines 7978-7984",
+      "George Salvan Architectural Theories of Design refined markdown lines 15740-15910",
+      "theory refined markdown lines 140-191",
+      "TOA 3 Design Perception refined markdown lines 500-514"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "salvan-theory-local-raw-pdf--b058-b5c8b7bb-01",
+        "label": "George Salvan Architectural Theories of Design - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
+        "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
+        "locator": "George Salvan Architectural Theories of Design refined markdown lines 7978-7984, 15740-15910, and raw PDF pages 473-478"
+      },
+      {
+        "source_id": "theory-local-raw-pdf--b058-b5c8b7bb-02",
+        "label": "theory - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+        "sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+        "refined_markdown_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+        "locator": "theory refined markdown lines 140-191 and raw PDF pages 8 and 10"
+      },
+      {
+        "source_id": "toa3-design-perception-local-raw-pdf--b058-b5c8b7bb-03",
+        "label": "TOA 3 Design Perception - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 3 (Design Perception).pdf",
+        "sha256": "sha256:807be9f1a301d579123d8fa3ec680011b1906d6a4edcb6dc061c9a57e5ea9534",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 3 (Design Perception).md",
+        "refined_markdown_sha256": "sha256:49309b3dc5eea661ca7cad04cceb91897ac29fee6dd8e43cf6c3f60f163d404a",
+        "locator": "TOA 3 Design Perception refined markdown lines 500-514 and raw PDF pages 57-59"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 058 checked local raw PDF source scope."
+  },
+  "proposed": {
+    "text": "How does the source frame physical space?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It should be planned from human behavior and the function the space supports."
+      },
+      {
+        "id": "b",
+        "text": "It should ignore activities."
+      },
+      {
+        "id": "c",
+        "text": "It is only a graphic background."
+      },
+      {
+        "id": "d",
+        "text": "It is independent of perception."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "It should be planned from human behavior and the function the space supports. This answer is supported by the checked Batch 058 local raw PDF source families for Psychology of Space and Environmental Perception.",
+    "explanation": "It should be planned from human behavior and the function the space supports. The Batch 058 source audit used local raw PDFs first and refined markdown only as locator evidence for Psychology of Space and Environmental Perception.",
+    "code_citation": "George Salvan Architectural Theories of Design refined markdown lines 7978-7984, 15740-15910, and raw PDF pages 473-478"
+  },
+  "batch_question_template_index": 2
+}

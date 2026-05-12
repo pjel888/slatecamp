@@ -1,0 +1,112 @@
+{
+  "batch_id": "source-audited-article-batch-017-local-first",
+  "mode": "local_first_no_supabase_push",
+  "article_id": "cd6c1a20-eee6-4475-b0cc-239897d3f4d7",
+  "slug": "lea-prac-eth-004-core-concept",
+  "title": "Section 2 of the Code",
+  "article_folder_path": ".ai/content-audit-export/articles/lea-prac-eth-004-core-concept--cd6c1a20-eee6-4475-b0cc-239897d3f4d7",
+  "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-eth-004-core-concept--cd6c1a20-eee6-4475-b0cc-239897d3f4d7/question-edits",
+  "audited_at": "2026-05-10T23:30:00.000+08:00",
+  "status": "local_passed",
+  "classification": {
+    "content_domain": "LEA Professional Practice and Jurisprudence",
+    "legal_or_professional_practice": true,
+    "raw_pdf_audit_required": true,
+    "raw_pdf_audit_completed": true
+  },
+  "checked_sources": [
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+      "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+      "source_id": "uap-document-code-of-ethics",
+      "locator": "UAP Document Code of Ethics, Section 2 and related supplier-benefit rule in Section 4-b, raw markdown lines 47-63 and 82-89"
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
+      "sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
+      "source_id": "uap-document-code-of-ethics-raw-markdown",
+      "locator": "UAP Document Code of Ethics, Section 2 and related supplier-benefit rule in Section 4-b, raw markdown lines 47-63 and 82-89"
+    }
+  ],
+  "checked_markdown_lines": [
+    "raw markdown lines 47-63",
+    "raw markdown lines 82-89"
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-prac-eth-004-core-concept-claim-01",
+      "claim": "Section 2 states that the architect-client relationship depends on good faith.",
+      "audit_result": "pass",
+      "source_support": "UAP Document Code of Ethics, Section 2 and related supplier-benefit rule in Section 4-b, raw markdown lines 47-63 and 82-89"
+    },
+    {
+      "claim_id": "lea-prac-eth-004-core-concept-claim-02",
+      "claim": "Section 2-b requires exact nature, scope, services, and charges to be ascertained at engagement inception.",
+      "audit_result": "pass",
+      "source_support": "UAP Document Code of Ethics, Section 2 and related supplier-benefit rule in Section 4-b, raw markdown lines 47-63 and 82-89"
+    },
+    {
+      "claim_id": "lea-prac-eth-004-core-concept-claim-03",
+      "claim": "Sections 2-h and 2-i require compensation from the client and disclosure of business interests affecting the client.",
+      "audit_result": "pass",
+      "source_support": "UAP Document Code of Ethics, Section 2 and related supplier-benefit rule in Section 4-b, raw markdown lines 47-63 and 82-89"
+    }
+  ],
+  "source_safe_repair": {
+    "normalized_md_rewritten": true,
+    "candidate_md_pending_compose": false,
+    "sources_json_refreshed_to_checked_raw_sources": true,
+    "question_edits_created": 10,
+    "answer_key_fields_changed": true,
+    "ui_markers_removed_from_normalized": true,
+    "unverified_external_resolution_claims_removed": true,
+    "unverified_reporting_or_enforcement_claims_removed": true,
+    "candidate_md_composed": true
+  },
+  "blockers": [],
+  "supabase": {
+    "pushed": false,
+    "deployed": false,
+    "committed": false,
+    "final_publishing_only": true
+  },
+  "candidate_hash": "sha256:357c7f34d090d6663c74c8c86336e3e1657a0dcdd6f1e1e01c704ad365c3684c",
+  "normalized_hash": "sha256:357c7f34d090d6663c74c8c86336e3e1657a0dcdd6f1e1e01c704ad365c3684c",
+  "local_validation": {
+    "compose": {
+      "passed": true,
+      "blockers": [],
+      "placeholders_found": 0,
+      "unresolved_placeholders": []
+    },
+    "diff": {
+      "passed": true,
+      "changed": true,
+      "locally_safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+      ]
+    },
+    "validate": {
+      "passed": true,
+      "blockers": [],
+      "warnings": [
+        "component-usage.json has not been generated for this article yet."
+      ]
+    },
+    "scoped_checks": {
+      "json_parse": "pass",
+      "forbidden_marker_scan": "pass",
+      "source_path_hash_check": "pass",
+      "question_edit_schema_count": "pass",
+      "git_diff_check": "pass_after_eof_fix"
+    }
+  },
+  "next_phase_readiness": {
+    "local_first_ready": true,
+    "unresolved_local_blockers": 0,
+    "supabase_final_publishing_only": true,
+    "remote_stale_check_required_before_publish": true
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "question_id": "29f9b215-45f4-4bf1-878f-35e8c9dd8b6b",
+  "baseline_hash": "sha256:9b337d09844e9d4eae1ea6ec31a5cc2a1dbf86726acb2219b27b7329c6889450",
+  "action": "replace",
+  "reason": "source-audited-article-batch-043-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes stale or non-local framing where present.",
+  "approved_by": "codex-local-first-batch-043",
+  "approved_at": "2026-05-11T15:45:43.683+08:00",
+  "source_audit_support": {
+    "parent_article_id": "bec5c222-dd65-4e9c-8d5e-fe3758fa4d8e",
+    "parent_article_slug": "lea-util-008-02-mechanical-spaces",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "PEC refined markdown lines 120-160, 510-528, 556, 614-722, 986-1083, 1236-1242; DOE Guidelines refined markdown lines 37-43, 410-523, 586-653, 1075-1286, 1357-1387, 1653-1695; Salvan refined markdown lines 1707-1828, 5170-5172, 5858-5866, 6038-6053, 8518-8725, 11160-11273, 11555-11559; RNPC refined markdown lines 570, 645, 651-655, 1689-1691, 1721, 4706-4728, 4745-4822, 5241-5245; RA 9514 RIRR refined markdown lines 1138-1154, 1295-1299, 1882-1888, 2308-2344, 2408-2418, 3690-3723, 13284-13291",
+    "checked_markdown_lines": [
+      "PEC refined markdown lines 120-160",
+      "PEC refined markdown lines 510-528, 556, and 614-722",
+      "PEC refined markdown lines 986-1083",
+      "PEC refined markdown lines 1236-1242",
+      "DOE Guidelines refined markdown lines 37-43 and 410-523",
+      "DOE Guidelines refined markdown lines 586-653",
+      "DOE Guidelines refined markdown lines 1075-1286",
+      "DOE Guidelines refined markdown lines 1357-1387 and 1653-1695",
+      "Salvan refined markdown lines 1707-1828",
+      "Salvan refined markdown lines 5170-5172, 5858-5866, and 6038-6053",
+      "Salvan refined markdown lines 8518-8725",
+      "Salvan refined markdown lines 11160-11273 and 11555-11559",
+      "RNPC refined markdown lines 570, 645, 651-655",
+      "RNPC refined markdown lines 1689-1691 and 1721",
+      "RNPC refined markdown lines 4706-4728",
+      "RNPC refined markdown lines 4745-4822",
+      "RNPC refined markdown lines 5241-5245",
+      "RA 9514 RIRR refined markdown lines 1138-1154",
+      "RA 9514 RIRR refined markdown lines 1295-1299 and 1882-1888",
+      "RA 9514 RIRR refined markdown lines 2308-2344",
+      "RA 9514 RIRR refined markdown lines 2408-2418 and 3690-3723",
+      "RA 9514 RIRR refined markdown lines 13284-13291"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "pec-ph-local-raw-pdf--b043-1",
+        "label": "Philippine Electrical Code - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+        "sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+        "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3",
+        "locator": "PEC refined markdown lines 120-160, 510-528, 556, 614-722, 986-1083, 1236-1242"
+      },
+      {
+        "source_id": "doe-energy-conserving-design-2008-local-raw-pdf--b043-2",
+        "label": "DOE Guidelines on Energy Conserving Design on Buildings v2008 - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+        "sha256": "sha256:9a1a4019b500ffc2873625db6f04ac50b39aea7cadac9159464f9ed716e8126c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.md",
+        "refined_markdown_sha256": "sha256:477f0990a67359eee303e8280a00be449d0aa413252161db7b5b1bafec3012b9",
+        "locator": "DOE Guidelines refined markdown lines 37-43, 410-523, 586-653, 1075-1286, 1357-1387, 1653-1695"
+      },
+      {
+        "source_id": "salvan-architectural-utilities-2-local-raw-pdf--b043-3",
+        "label": "George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+        "sha256": "sha256:ff7231f0059a1febaf4a0996a425caca3b7676c23c729f922e385af4e4c20d28",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
+        "refined_markdown_sha256": "sha256:1b9249c90c0b86c57c6df2f20f0ab210ac112a10230bd9bce584461773d75215",
+        "locator": "Salvan refined markdown lines 1707-1828, 5170-5172, 5858-5866, 6038-6053, 8518-8725, 11160-11273, 11555-11559"
+      },
+      {
+        "source_id": "rnpc-ph-local-raw-pdf--b043-4",
+        "label": "Revised National Plumbing Code of the Philippines - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf",
+        "sha256": "sha256:c4ec30ec3ffe3b39513a033ebc2cfa614bd201d25c5578e1847e7f359fed3f5d",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Revised National Plumbing Code of the Philippines.md",
+        "refined_markdown_sha256": "sha256:7cea224bfc6c54d0883fe69c89b97cf134e45acaab6c8950b8af3621059c9a91",
+        "locator": "RNPC refined markdown lines 570, 645, 651-655, 1689-1691, 1721, 4706-4728, 4745-4822, 5241-5245"
+      },
+      {
+        "source_id": "ra-9514-rirr-2019-local-raw-pdf--b043-5",
+        "label": "RA 9514 RIRR 2019 - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "locator": "RA 9514 RIRR refined markdown lines 1138-1154, 1295-1299, 1882-1888, 2308-2344, 2408-2418, 3690-3723, 13284-13291"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 043 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "Which mechanical-space planning idea is supported by the checked Salvan utilities family?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Plan for access, maintenance, ventilation, expansion, and noise control around utility equipment."
+      },
+      {
+        "id": "b",
+        "text": "Use leftover space after architectural rooms are finalized."
+      },
+      {
+        "id": "c",
+        "text": "Treat equipment rooms as storage rooms by default."
+      },
+      {
+        "id": "d",
+        "text": "Avoid ventilation because mechanical rooms are not occupied."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The checked Salvan family emphasizes access, maintenance, ventilation, expandability, and noise considerations for utility equipment spaces.",
+    "explanation": "The checked Salvan family emphasizes access, maintenance, ventilation, expandability, and noise considerations for utility equipment spaces.",
+    "code_citation": "Salvan refined markdown lines 5170-5172 and 1707-1828"
+  }
+}

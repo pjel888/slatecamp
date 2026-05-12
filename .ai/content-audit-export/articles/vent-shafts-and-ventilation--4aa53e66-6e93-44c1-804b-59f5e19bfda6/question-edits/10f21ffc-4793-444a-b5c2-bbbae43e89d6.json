@@ -1,0 +1,48 @@
+{
+  "question_id": "10f21ffc-4793-444a-b5c2-bbbae43e89d6",
+  "baseline_hash": "sha256:95c56d188adefbb92179a664baabc1df9be5081075b67f0fcba97500a6badf96",
+  "action": "replace",
+  "reason": "source-audited-article-batch-039-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-039",
+  "approved_at": "2026-05-11T13:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-039-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 2396-2428"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 810"
+  },
+  "proposed": {
+    "text": "Under Section 810, what must a ventilation skylight provide if it replaces a required window?",
+    "options": [
+      {
+        "id": "b039-4aa5-28-a",
+        "text": "Glass area at least equal to the required replaced window area, with equivalent openable net free area or artificial ventilation"
+      },
+      {
+        "id": "b039-4aa5-28-b",
+        "text": "Only a fixed glass panel of any area"
+      },
+      {
+        "id": "b039-4aa5-28-c",
+        "text": "A roof hatch sized by occupant load"
+      },
+      {
+        "id": "b039-4aa5-28-d",
+        "text": "A skylight equal to one-half the replaced window area"
+      }
+    ],
+    "correct_option_id": "b039-4aa5-28-a",
+    "rationale": "Correct answer: Glass area at least equal to the required replaced window area, with equivalent openable net free area or artificial ventilation. This is directly supported by PD 1096 2004 Revised IRR, Section 810.",
+    "explanation": "The Batch 039 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 810.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 810"
+  }
+}

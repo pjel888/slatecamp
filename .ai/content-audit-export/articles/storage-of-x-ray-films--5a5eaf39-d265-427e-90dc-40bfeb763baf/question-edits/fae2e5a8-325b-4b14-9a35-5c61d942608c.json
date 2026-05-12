@@ -1,0 +1,48 @@
+{
+  "question_id": "fae2e5a8-325b-4b14-9a35-5c61d942608c",
+  "baseline_hash": "sha256:d4340ea42b76b3c27b5bc17ec55dde7ab28e00f5c738f869bad2c044fa4418ab",
+  "action": "replace",
+  "reason": "source-audited-article-batch-039-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-039",
+  "approved_at": "2026-05-11T13:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-039-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 4306-4329"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 1401"
+  },
+  "proposed": {
+    "text": "When unexposed films are stored in accepted safety shipping containers, what aggregate volume triggers automatic fire extinguishing systems?",
+    "options": [
+      {
+        "id": "b039-5a5e-01-a",
+        "text": "More than 14.00 cu.m"
+      },
+      {
+        "id": "b039-5a5e-01-b",
+        "text": "More than 1.40 cu.m"
+      },
+      {
+        "id": "b039-5a5e-01-c",
+        "text": "More than 4.50 cu.m"
+      },
+      {
+        "id": "b039-5a5e-01-d",
+        "text": "More than 45.00 cu.m"
+      }
+    ],
+    "correct_option_id": "b039-5a5e-01-a",
+    "rationale": "Correct answer: More than 14.00 cu.m. This is directly supported by PD 1096 2004 Revised IRR, Section 1401.",
+    "explanation": "The Batch 039 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 1401.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 1401"
+  }
+}

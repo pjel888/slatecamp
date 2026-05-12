@@ -1,0 +1,49 @@
+{
+  "question_id": "42f32ed3-4d07-42fb-963f-a96828c5b6b9",
+  "baseline_hash": "sha256:f05bdfe29f20760de19060db89d182de24d539d3403ee01149a9d9a6cda21a90",
+  "action": "replace",
+  "reason": "source-audited-article-batch-039-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-039",
+  "approved_at": "2026-05-11T13:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-039-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 1390-1450",
+          "PD 1096 RIRR refined markdown lines 1452-1462"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 705"
+  },
+  "proposed": {
+    "text": "Under Section 705, what source controls the allowable maximum TGFA of a proposed building or structure?",
+    "options": [
+      {
+        "id": "b039-9a20-17-a",
+        "text": "Rule VII of the 2004 Revised IRR of PD 1096"
+      },
+      {
+        "id": "b039-9a20-17-b",
+        "text": "A foreign-code frontage formula"
+      },
+      {
+        "id": "b039-9a20-17-c",
+        "text": "The designer's preferred floor area ratio only"
+      },
+      {
+        "id": "b039-9a20-17-d",
+        "text": "A fixed national value regardless of occupancy"
+      }
+    ],
+    "correct_option_id": "b039-9a20-17-a",
+    "rationale": "Correct answer: Rule VII of the 2004 Revised IRR of PD 1096. This is directly supported by PD 1096 2004 Revised IRR, Section 705.",
+    "explanation": "The Batch 039 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 705.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 705"
+  }
+}

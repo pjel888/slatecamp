@@ -1,7 +1,30 @@
 {
   "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "source_count": 0,
-  "sources": []
+  "sources_hash": "sha256:d52ad2362febf29a1e53491a56cf85a8084a85e0736e33ed094cfaf451837b53",
+  "source_count": 2,
+  "sources": [
+    {
+      "source_id": "pd1096-2004-rirr-dpwh-official-local",
+      "label": "PD 1096 Revised Implementing Rules and Regulations, 2004 DPWH Official",
+      "source_type": "raw_pdf_with_refined_markdown",
+      "jurisdiction": "Philippines",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "source_locator": "PD 1096 RIRR refined markdown lines 1627-1694, 2703-2747, and 2788-2805"
+    },
+    {
+      "source_id": "bp344-2024-revised-irr-accessibility-local",
+      "label": "2024 Revised Implementing Rules and Regulations of Batas Pambansa Blg. 344",
+      "source_type": "raw_pdf_with_refined_markdown",
+      "jurisdiction": "Philippines",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "source_locator": "BP 344 2024 IRR refined markdown lines 40-70, 230-305, 450-463, 539-541, 621-704, 772-792, 992-1003, 1062-1088, 1580-1613, and 1649"
+    }
+  ]
 }

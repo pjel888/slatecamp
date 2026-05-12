@@ -214,11 +214,11 @@ Still true by design:
 - `npx gitnexus status`: up-to-date after analyze.
 
 ## 15. Final Verdict
-**Do all important `/admin` features and paths now work for the owner/admin?**  
+**Do all important `/admin` features and paths now work for the owner/admin?**
 Yes, for the important operational paths reviewed in this pass. The blocking defects in knowledge filtering, direct question creation, asset operations, preview-mode user actions, pipeline data loading, and misleading review/save affordances were fixed, and the admin surface now behaves materially closer to a trustworthy owner console.
 
-**Was the prior CRUD wiki/questions report fully implemented when this pass began?**  
+**Was the prior CRUD wiki/questions report fully implemented when this pass began?**
 No. It contained some real fixes, but its “Completed & Hardened” verdict was not justified across the broader `/admin` surface and even within wiki/questions some claims were only partially true until this hardening pass.
 
-**Is the prior CRUD report now fully implemented for its named wiki/questions fixes?**  
+**Is the prior CRUD report now fully implemented for its named wiki/questions fixes?**
 Yes. The named wiki/questions items in that report are now backed by the current codebase, but the original report still remains an incomplete description of the full `/admin` surface.

@@ -1,7 +1,48 @@
 {
   "article_id": "4b4de57e-db7f-44d9-98f7-a0a1fe6e2428",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "source_count": 0,
-  "sources": []
+  "sources_hash": "sha256:d7e4a41d2272686d0e8288cb7fe891e81af7d43da3074601cc64a48fe2285a89",
+  "source_count": 2,
+  "sources": [
+    {
+      "source_id": "ra-9266-irr-lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration",
+      "article_id": "4b4de57e-db7f-44d9-98f7-a0a1fe6e2428",
+      "label": "RA 9266 IRR - Suspension, Revocation, and Reinstatement",
+      "url": null,
+      "source_type": "raw_pdf_and_markdown_source_audit",
+      "description": "Batch 018 local-first source audit; RA 9266 IRR Section 23 and Section 24, raw markdown lines 629-666.",
+      "is_verified": true,
+      "sort_order": 0,
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "raw_markdown_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+      "checked_markdown_lines": [
+        "RA 9266 raw markdown lines 629-666"
+      ],
+      "source_locator": "RA 9266 IRR Section 23 and Section 24, raw markdown lines 629-666",
+      "local_source_audit_batch": "source-audited-article-batch-018-local-first",
+      "audited_at": "2026-05-10T23:42:00.000+08:00"
+    },
+    {
+      "source_id": "uap-code-of-ethics-lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration",
+      "article_id": "4b4de57e-db7f-44d9-98f7-a0a1fe6e2428",
+      "label": "UAP Document Code of Ethics - Direct Supervision and Professional Conduct Cross-Check",
+      "url": null,
+      "source_type": "raw_pdf_and_markdown_source_audit",
+      "description": "Batch 018 local-first source audit; UAP Document Code of Ethics, responsibilities to colleagues and subordinates, raw markdown lines 92-118.",
+      "is_verified": true,
+      "sort_order": 1,
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+      "raw_pdf_sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
+      "raw_markdown_sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
+      "checked_markdown_lines": [
+        "raw markdown lines 92-118"
+      ],
+      "source_locator": "UAP Document Code of Ethics, responsibilities to colleagues and subordinates, raw markdown lines 92-118",
+      "local_source_audit_batch": "source-audited-article-batch-018-local-first",
+      "audited_at": "2026-05-10T23:42:00.000+08:00"
+    }
+  ]
 }

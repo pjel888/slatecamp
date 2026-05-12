@@ -1,0 +1,87 @@
+{
+  "question_id": "9f3402fb-2784-4dd1-a705-0454bc9fb7be",
+  "baseline_hash": "sha256:b61bcae89ffd5725cfeb16b7356a4130a828daf9f750623bf6231bf572c74992",
+  "action": "replace",
+  "reason": "source-audited-article-batch-029-local-first rewrote this linked question to source-safe local form for lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond.",
+  "approved_by": "codex-local-source-audit-batch-029",
+  "approved_at": "2026-05-11T16:20:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "6bb0f186-b9f7-4da9-ba7b-05639f43d4cf",
+    "parent_article_slug": "lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UAP Document 301 refined markdown lines 488-492 and 1087-1090; CIAP Document 102 refined markdown lines 813-814 and 823-832",
+    "checked_markdown_lines": [
+      "UAP Document 301 lines 488-492",
+      "UAP Document 301 lines 1087-1090",
+      "CIAP Document 102 lines 813-814",
+      "CIAP Document 102 lines 823-832"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "source_id": "uap-document-301-general-conditions-local",
+        "locator": "UAP Document 301 refined markdown lines 488-492 and 1087-1090"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+        "source_id": "uap-document-301-general-conditions-local",
+        "locator": "UAP Document 301 refined markdown lines 488-492 and 1087-1090"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+        "sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+        "source_id": "ciap-document-102-private-construction-contract-local",
+        "locator": "CIAP Document 102 refined markdown lines 813-814 and 823-832"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+        "sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
+        "source_id": "ciap-document-102-private-construction-contract-local",
+        "locator": "CIAP Document 102 refined markdown lines 813-814 and 823-832"
+      }
+    ],
+    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+  },
+  "proposed": {
+    "text": "Under CIAP Document 102, what performance bond amount is required before signing the contract?",
+    "options": [
+      {
+        "id": "a",
+        "text": "15% of the contract amount"
+      },
+      {
+        "id": "b",
+        "text": "100% of the contract amount"
+      },
+      {
+        "id": "c",
+        "text": "5% of the bid amount"
+      },
+      {
+        "id": "d",
+        "text": "The exact value of unpaid liens only"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "Correct because it follows CIAP Document 102 lines 813-814. The other options change the document, party, timing, amount, or legal effect stated in the checked local source.",
+    "explanation": "Use CIAP Document 102 lines 813-814 for this Batch 029 source-safe replacement.",
+    "code_citation": "CIAP Document 102 lines 813-814",
+    "bloom_level": "remember",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "contracts",
+      "source-audited-article-batch-029-local-first"
+    ],
+    "difficulty": 0.38,
+    "is_assessment": false,
+    "model_id": "BATCH-029-lea-prac-ctr-010-performance-bond-purpose-typical-amount-and-conditions-for-calling-the-bond-002"
+  }
+}

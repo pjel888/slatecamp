@@ -13,18 +13,18 @@ Complete content lifecycle from creation to publication, including versioning, a
 ```
 1. Creation (draft)
    └─ /admin/knowledge/new/
-   
+
 2. Editing
    └─ /admin/knowledge/[id]/
    └─ Auto-save draft
-   
+
 3. Submit for Review
    └─ Triggers SME notification
-   
+
 4. SME Review
    └─ /admin/reviews/
    └─ Approve / Request Changes / Reject
-   
+
 5. Publish
    └─ /admin/knowledge/[id]/
    └─ Revalidates /dashboard/wiki cache
@@ -38,20 +38,20 @@ Complete content lifecycle from creation to publication, including versioning, a
 1. Creation
    └─ /admin/knowledge/questions/new/
    └─ Context: optionally pre-loaded from article
-   
+
 2. Metadata Tagging
    └─ IRT parameters (difficulty, discrimination)
    └─ Bloom's level
    └─ LEA area
    └─ Topic assignment
-   
+
 3. Rationale Writing
    └─ Per-option rationales
    └─ Code citations
-   
+
 4. SME Review
    └─ /admin/reviews/
-   
+
 5. Publish
    └─ Available in quiz sessions
 ```
@@ -81,16 +81,16 @@ Deep-linked from `/admin/audit/` to the relevant content editor.
 ```
 Upload (GLB/GLTF)
   └─ /admin/assets/
-  
+
 Hotspot Configuration
   └─ Attach hotspots to geometry
-  
+
 Compliance Rules
   └─ Link PD 1096 rules to model
-  
+
 Module Assembly
   └─ Combine geometry + hotspots + rules = module
-  
+
 Publish
   └─ Available in /dashboard/3d-lab/
 ```

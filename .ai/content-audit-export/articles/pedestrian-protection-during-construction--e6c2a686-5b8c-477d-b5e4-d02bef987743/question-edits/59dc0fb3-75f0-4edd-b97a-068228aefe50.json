@@ -1,0 +1,24 @@
+{
+  "question_id": "59dc0fb3-75f0-4edd-b97a-068228aefe50",
+  "baseline_hash": "sha256:85733944ded3690632bf0593fc18250e1670acc8e3ef6a94f0aae7ef80e0be71",
+  "reason": "Batch 012 local source audit aligned linked question 59dc0fb3-75f0-4edd-b97a-068228aefe50 with the repaired Pedestrian Protection During Construction article and checked raw-source citations. This local draft updates citation and explanation context only and does not change answer-key fields.",
+  "approved_by": "codex-local-source-audit-batch-012",
+  "approved_at": "2026-05-10T20:40:00.000+08:00",
+  "source_audit_support": {
+    "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+    "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+    "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+    "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+    "source_locator": "PD 1096 Rule XI Sections 1101 to 1106",
+    "checked_markdown_lines": [
+      "PD 1096 raw markdown lines 3434-3495"
+    ],
+    "parent_article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+    "parent_article_slug": "pedestrian-protection-during-construction",
+    "answer_key_fields_changed": false
+  },
+  "proposed": {
+    "code_citation": "PD 1096 Rule XI, Sections 1101 to 1106",
+    "explanation": "The audited source covers authorization for public-way work, lighting of temporary public-property structures, temporary walkway dimensions, utility protection, and pedestrian railings, fences, and canopies."
+  }
+}

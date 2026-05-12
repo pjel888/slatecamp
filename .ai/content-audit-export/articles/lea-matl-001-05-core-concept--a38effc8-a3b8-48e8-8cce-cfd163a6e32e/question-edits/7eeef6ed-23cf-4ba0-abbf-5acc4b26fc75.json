@@ -1,0 +1,68 @@
+{
+  "question_id": "7eeef6ed-23cf-4ba0-abbf-5acc4b26fc75",
+  "baseline_hash": "sha256:3baed37c96bd584d690c18c7983ca3bf2fa377cd0d16222b653409fb07a99315",
+  "action": "replace",
+  "reason": "source-audited-article-batch-082-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-001-05-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-082",
+  "approved_at": "2026-05-12T05:45:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "a38effc8-a3b8-48e8-8cce-cfd163a6e32e",
+    "parent_article_slug": "lea-matl-001-05-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Woods and Plastics Lecture refined markdown lines 38-90, 108-245, and 285-520; raw PDF pages 3, 16, 22, and 34 checked by local PyMuPDF extraction. George Salvan Architectural Building Materials refined markdown lines 1280-1435, 1569, and 2682-2725; raw PDF pages 47 and 50 checked by local PyMuPDF extraction.",
+    "checked_markdown_lines": [
+      "Woods and Plastics Lecture refined markdown lines 38-90, 108-245, and 285-520; raw PDF pages 3, 16, 22, and 34 checked by local PyMuPDF extraction. George Salvan Architectural Building Materials refined markdown lines 1280-1435, 1569, and 2682-2725; raw PDF pages 47 and 50 checked by local PyMuPDF extraction."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "woods-and-plastics-lecture-b082",
+        "label": "Woods and Plastics Lecture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Woods and Plastics Lecture.pdf",
+        "sha256": "sha256:39c03f9cea2f61b1859620a606b139a3a1c5897a68ef51c954432e15ea722d61",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Woods and Plastics Lecture.md",
+        "raw_markdown_sha256": "sha256:7b78053474dfa985c87d49c632e3f8626c5518f13bb9ccd16b901d85d423df27",
+        "locator": "Woods and Plastics Lecture refined markdown lines 38-90, 108-245, and 285-520; raw PDF pages 3, 16, 22, and 34 checked by local PyMuPDF extraction."
+      },
+      {
+        "source_id": "george-salvan-building-materials-b082",
+        "label": "George Salvan Architectural Building Materials",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+        "raw_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+        "locator": "George Salvan Architectural Building Materials refined markdown lines 1280-1435, 1569, and 2682-2725; raw PDF pages 47 and 50 checked by local PyMuPDF extraction."
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 082 local raw-source-audited board_foot_measurement scope."
+  },
+  "proposed": {
+    "text": "How should an exam item be handled when it gives actual dressed dimensions instead of nominal dimensions?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use the actual dimensions stated in the problem"
+      },
+      {
+        "id": "b",
+        "text": "Ignore the actual dimensions and invent nominal dimensions"
+      },
+      {
+        "id": "c",
+        "text": "Convert the problem to cubic yards"
+      },
+      {
+        "id": "d",
+        "text": "Use mortar-joint thickness instead"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Use the dimensions supplied by the item. Actual dimensions are source-safe when the problem gives them explicitly.",
+    "explanation": "Use the dimensions supplied by the item. Actual dimensions are source-safe when the problem gives them explicitly.",
+    "code_citation": "Woods and Plastics Lecture; George Salvan Architectural Building Materials",
+    "bloom_level": "understand",
+    "application_context": "source_audited_local_first_batch_082",
+    "practice_context": [],
+    "difficulty": 0.5
+  }
+}

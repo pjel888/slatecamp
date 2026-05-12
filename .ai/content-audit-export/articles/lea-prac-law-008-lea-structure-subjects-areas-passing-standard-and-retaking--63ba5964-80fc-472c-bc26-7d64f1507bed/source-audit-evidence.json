@@ -1,0 +1,135 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T21:50:00+08:00",
+  "audit_mode": "local_source_audit_no_supabase",
+  "protocols_applied": [
+    ".ai/CONTENT_EXCELLENCE_GOAL.md",
+    ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
+    ".ai/00_system/vitruvius-source-reference.md"
+  ],
+  "target": {
+    "article_id": "63ba5964-80fc-472c-bc26-7d64f1507bed",
+    "slug": "lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking",
+    "title": "LEA Structure: Subjects, Rating, Results, and Reapplication Boundaries",
+    "article_folder": ".ai/content-audit-export/articles/lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking--63ba5964-80fc-472c-bc26-7d64f1507bed",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking--63ba5964-80fc-472c-bc26-7d64f1507bed/candidate.md",
+    "candidate_sha256": "sha256:fb216d5062309dfe0f323f2605a96dd5ca2d475124849d697f47fefd9fb3a459",
+    "normalized_sha256": "sha256:fb216d5062309dfe0f323f2605a96dd5ca2d475124849d697f47fefd9fb3a459",
+    "linked_questions_sha256": "sha256:a32a88d40964c9d60a4ebdd8e0eae0f75551e24904248d96ac061186ca573893",
+    "sources_sha256": "sha256:65f6e2147a89d1e045c61953a2e03dff070960ecee483bf30b636e89aa5180da"
+  },
+  "classification": {
+    "content_type": "ra9266_lea_structure_article",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": [
+      "9398b4db-9d97-454d-94d7-dd24e73f72bb",
+      "db8ae194-6572-4228-a72c-68d7d47b4c4d",
+      "c7cd772a-ccb9-48ec-8f02-b183400fa519",
+      "b9c2c1eb-97f4-47e5-8e16-868fa209474e",
+      "d6d27221-5bf9-4ea3-a9b0-e661375047b9",
+      "146e0b66-a573-42ba-b706-de5495310ca6",
+      "9b3bb3d8-ab63-41b4-ae11-47b27c5ca769",
+      "a238bbd2-f6d4-4fcf-9705-4e7284f976c5",
+      "e9bd18dd-61dd-4623-82e7-80199b6b1c48",
+      "f3735773-264e-4d66-9bf5-3e40e6ecca6a"
+    ]
+  },
+  "raw_sources": [
+    {
+      "key": "ra9266_irr",
+      "label": "RA 9266 IRR Architecture Act of 2004",
+      "source_type": "implementing_rules",
+      "source_id": "batch005-lea-prac-law-008-lea-structure-subjects-areas-pa-source-01",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "checked_pdf_pages": [
+        8,
+        10,
+        11,
+        12,
+        13
+      ]
+    }
+  ],
+  "gate_results": {
+    "compose": "PASS: content-audit:compose -- --article-id 63ba5964-80fc-472c-bc26-7d64f1507bed --overwrite; blockers=0",
+    "diff": "PASS: content-audit:diff -- --article-id 63ba5964-80fc-472c-bc26-7d64f1507bed; changed=true safe_to_push=true blockers=0",
+    "validate": "PASS: content-audit:validate -- --article-id 63ba5964-80fc-472c-bc26-7d64f1507bed --summary --dry-run; valid=true blockers=0 warnings=0",
+    "push_dry_run": "not_attempted_local_first; Supabase remote fetch is final publishing only and intentionally non-blocking here",
+    "supabase_mutation": "not_attempted_by_request"
+  },
+  "claims": [
+    {
+      "claim_id": "law008-claim-01",
+      "claim_text": "Section 12 requires each applicant for registration as an architect to pass a licensure examination.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "law008-claim-02",
+      "claim_text": "Section 14 lists four numbered examination subject groups.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "law008-claim-03",
+      "claim_text": "Section 15 requires a weighted general average of 70 percent and no grade lower than 50 percent in any given subject.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "law008-claim-04",
+      "claim_text": "Section 16 requires the Board to submit ratings to the Commission within thirty calendar days after the examination unless extended for just cause.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "law008-claim-05",
+      "claim_text": "Section 13 authorizes action against false evidence, false information, false swearing, and misrepresentation in applications.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking-linked-question-edits",
+      "claim_text": "Question edits staged locally for linked question IDs/model IDs: 9398b4db-9d97-454d-94d7-dd24e73f72bb (ALE-PRAC-LAW-008-005), db8ae194-6572-4228-a72c-68d7d47b4c4d (ALE-PRAC-LAW-008-007), c7cd772a-ccb9-48ec-8f02-b183400fa519 (ALE-PRAC-LAW-008-010), b9c2c1eb-97f4-47e5-8e16-868fa209474e (ALE-PRAC-LAW-008-008), d6d27221-5bf9-4ea3-a9b0-e661375047b9 (ALE-PRAC-LAW-008-006), 146e0b66-a573-42ba-b706-de5495310ca6 (ALE-PRAC-LAW-008-002), 9b3bb3d8-ab63-41b4-ae11-47b27c5ca769 (ALE-PRAC-LAW-008-009), a238bbd2-f6d4-4fcf-9705-4e7284f976c5 (ALE-PRAC-LAW-008-001), e9bd18dd-61dd-4623-82e7-80199b6b1c48 (ALE-PRAC-LAW-008-004), f3735773-264e-4d66-9bf5-3e40e6ecca6a (ALE-PRAC-LAW-008-003)",
+      "audit_result": "PASS",
+      "source_support": [
+        "ra9266_irr"
+      ]
+    }
+  ],
+  "unsupported_or_removed_claims": [
+    "Removed learner-visible UI placeholders, preserved placeholder blocks, extracted-summary notes, and internal replacement notes from normalized/candidate content.",
+    "Removed five-subject and subject-weight claims; Section 14 lists four numbered subject groups and no weights.",
+    "Corrected results rule from public announcement to submission of ratings to the Commission within thirty calendar days unless extended.",
+    "Removed no-maximum-attempts retake claim; retained source-backed Section 13 reapplication/truthfulness boundary."
+  ],
+  "remaining_local_blockers": [],
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_recovery_complete": true,
+    "remote_publish_status": "not_attempted_by_request",
+    "remaining_local_blockers": []
+  },
+  "local_validation": {
+    "command": "bun run content-audit:validate -- --article-id 63ba5964-80fc-472c-bc26-7d64f1507bed --summary --dry-run",
+    "valid": true,
+    "blockers": 0,
+    "warnings": [],
+    "checked_at": "2026-05-10T21:50:00+08:00"
+  }
+}

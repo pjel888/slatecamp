@@ -1,0 +1,57 @@
+{
+  "question_id": "0f359b84-c215-4e9f-9a82-5ed809c5ffe3",
+  "baseline_hash": "sha256:b875245e0f1b063fe2b9d21f44286a48b96b0f9b9a99e9a7b6bf778d80771cd9",
+  "action": "replace",
+  "reason": "source-audited-article-batch-049-local-first: local raw-source-backed replacement constrained to checked Batch 049 source families.",
+  "approved_by": "codex-local-first-batch-049",
+  "approved_at": "2026-05-11T20:35:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "31fff533-f6b9-44dc-8d46-996e5413a587",
+    "parent_article_slug": "spanish-colonial-laws-of-the-indies",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "HOA Module 4 P1 refined markdown lines 278-365 and 700-760",
+    "checked_markdown_lines": [
+      "HOA Module 4 P1 refined markdown lines 278-365",
+      "HOA Module 4 P1 refined markdown lines 700-760"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "hoa4p1-local-raw-pdf--b049-31fff533-01",
+        "label": "HOA Module 4 P1 - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/HOA MODULE 4 P1.pdf",
+        "sha256": "sha256:c89f7f79b3dd8272c7aa7d8848ea72c196d6c418f33105a32fb1ed2cfadbffb3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/HOA MODULE 4 P1.md",
+        "refined_markdown_sha256": "sha256:e515c8c5203118d4aeef0fe1f288c7deb76d75d3e3e1a779291712420c7df047",
+        "locator": "HOA Module 4 P1 refined markdown lines 278-365 and 700-760"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 049 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "Which urban pattern is most directly tied to the Laws of the Indies in the checked source?",
+    "options": [
+      {
+        "id": "a",
+        "text": "An elevated location, orderly street grid, central plaza, defensive wall, and zones for church, commerce, government, hospitals, and slaughterhouses."
+      },
+      {
+        "id": "b",
+        "text": "A scattered barangay pattern with no civic center."
+      },
+      {
+        "id": "c",
+        "text": "A purely decorative facade system with no planning rule."
+      },
+      {
+        "id": "d",
+        "text": "A modern garden-suburb plan centered on cul-de-sacs."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "An elevated location, orderly street grid, central plaza, defensive wall, and zones for church, commerce, government, hospitals, and slaughterhouses. HOA Module 4 P1 lists these Laws of the Indies characteristics.",
+    "explanation": "An elevated location, orderly street grid, central plaza, defensive wall, and zones for church, commerce, government, hospitals, and slaughterhouses. HOA Module 4 P1 lists these Laws of the Indies characteristics.",
+    "code_citation": "HOA Module 4 P1 refined markdown lines 278-365 and 700-760"
+  },
+  "batch_question_template_index": 0
+}

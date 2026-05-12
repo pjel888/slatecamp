@@ -1,0 +1,134 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T21:50:00+08:00",
+  "audit_mode": "local_source_audit_no_supabase",
+  "protocols_applied": [
+    ".ai/CONTENT_EXCELLENCE_GOAL.md",
+    ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
+    ".ai/00_system/vitruvius-source-reference.md"
+  ],
+  "target": {
+    "article_id": "3a66b00c-20a4-4577-8359-b956a93d7c50",
+    "slug": "lea-prac-law-006-prc-vs-prboa-distinct-roles-authority-and-the-appeals-chain",
+    "title": "PRC vs PRBoA: Supervision, Board Powers, and Appeals",
+    "article_folder": ".ai/content-audit-export/articles/lea-prac-law-006-prc-vs-prboa-distinct-roles-authority-and-the-appeals-chain--3a66b00c-20a4-4577-8359-b956a93d7c50",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-law-006-prc-vs-prboa-distinct-roles-authority-and-the-appeals-chain--3a66b00c-20a4-4577-8359-b956a93d7c50/candidate.md",
+    "candidate_sha256": "sha256:a51bfe93bb3a34417c02818d16eee5fc2d624f5b25eca0d8bdf9f643a55cba09",
+    "normalized_sha256": "sha256:a51bfe93bb3a34417c02818d16eee5fc2d624f5b25eca0d8bdf9f643a55cba09",
+    "linked_questions_sha256": "sha256:0ba871c78c6d2ac151050a40e0c2303708d5932dac6e44e62c534a2ded3a4beb",
+    "sources_sha256": "sha256:e678a7864147ab42c99899939709598bc3ac79c794d00aaaab68c786e5b86ad2"
+  },
+  "classification": {
+    "content_type": "ra9266_prc_prboa_appeals_article",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": [
+      "2904461d-bd7e-40a6-8ec5-e5f025acce17",
+      "72bb3f4f-8b19-47a6-a472-2649767649ff",
+      "1fb1753b-af27-470b-9a94-61383f1b0ebc",
+      "318cfcb0-3a93-413d-98fc-e215bbc67c62",
+      "29549d4e-32a1-4e47-9451-fcd854a4032b",
+      "c9aa0743-2dd3-4765-9cf9-de31b1015494",
+      "51f58799-f190-44a3-9bba-33dd12f7e456",
+      "d3ff9e75-a6c4-4c76-a9ca-873f73163d81",
+      "d0e33670-4ddc-4cc8-aeaf-c4760c22b790",
+      "30634494-d646-4114-8e7a-17f3e61c7b5d"
+    ]
+  },
+  "raw_sources": [
+    {
+      "key": "ra9266_irr",
+      "label": "RA 9266 IRR Architecture Act of 2004",
+      "source_type": "implementing_rules",
+      "source_id": "batch005-lea-prac-law-006-prc-vs-prboa-distinct-roles-aut-source-01",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "checked_pdf_pages": [
+        7,
+        8,
+        9,
+        22
+      ]
+    }
+  ],
+  "gate_results": {
+    "compose": "PASS: content-audit:compose -- --article-id 3a66b00c-20a4-4577-8359-b956a93d7c50 --overwrite; blockers=0",
+    "diff": "PASS: content-audit:diff -- --article-id 3a66b00c-20a4-4577-8359-b956a93d7c50; changed=true safe_to_push=true blockers=0",
+    "validate": "PASS: content-audit:validate -- --article-id 3a66b00c-20a4-4577-8359-b956a93d7c50 --summary --dry-run; valid=true blockers=0 warnings=0",
+    "push_dry_run": "not_attempted_local_first; Supabase remote fetch is final publishing only and intentionally non-blocking here",
+    "supabase_mutation": "not_attempted_by_request"
+  },
+  "claims": [
+    {
+      "claim_id": "law006-claim-01",
+      "claim_text": "Section 4 places the PRBoA under PRC supervision and administrative control.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "law006-claim-02",
+      "claim_text": "Section 7 lists Board powers including oath administration, certificate/PIC issuance and discipline, ethics/SPP enforcement, administrative cases, and examination functions.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "law006-claim-03",
+      "claim_text": "Section 7 states Board disciplinary decisions become final after fifteen days unless appealed to the Commission, and Commission decisions are appealable to the Court of Appeals.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "law006-claim-04",
+      "claim_text": "Section 8 places Board records under Commission custody and provides Commission support services.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "law006-claim-05",
+      "claim_text": "Section 9 lists grounds for suspension or removal of Board members.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-prac-law-006-prc-vs-prboa-distinct-roles-authority-and-the-appeals-chain-linked-question-edits",
+      "claim_text": "Question edits staged locally for linked question IDs/model IDs: 2904461d-bd7e-40a6-8ec5-e5f025acce17 (ALE-PRAC-LAW-006-001), 72bb3f4f-8b19-47a6-a472-2649767649ff (ALE-PRAC-LAW-006-008), 1fb1753b-af27-470b-9a94-61383f1b0ebc (ALE-PRAC-LAW-006-006), 318cfcb0-3a93-413d-98fc-e215bbc67c62 (ALE-PRAC-LAW-006-010), 29549d4e-32a1-4e47-9451-fcd854a4032b (ALE-PRAC-LAW-006-003), c9aa0743-2dd3-4765-9cf9-de31b1015494 (ALE-PRAC-LAW-006-009), 51f58799-f190-44a3-9bba-33dd12f7e456 (ALE-PRAC-LAW-006-004), d3ff9e75-a6c4-4c76-a9ca-873f73163d81 (ALE-PRAC-LAW-006-005), d0e33670-4ddc-4cc8-aeaf-c4760c22b790 (ALE-PRAC-LAW-006-007), 30634494-d646-4114-8e7a-17f3e61c7b5d (ALE-PRAC-LAW-006-002)",
+      "audit_result": "PASS",
+      "source_support": [
+        "ra9266_irr"
+      ]
+    }
+  ],
+  "unsupported_or_removed_claims": [
+    "Removed learner-visible UI placeholders, preserved placeholder blocks, extracted-summary notes, and internal replacement notes from normalized/candidate content.",
+    "Removed Supreme Court appeal-chain claim; the checked source states Commission then Court of Appeals only.",
+    "Removed Court of Appeals standard-of-review language not present in the checked RA 9266 IRR pages.",
+    "Corrected IAPOA locator from Section 41 to Sections 4 and 40."
+  ],
+  "remaining_local_blockers": [],
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_recovery_complete": true,
+    "remote_publish_status": "not_attempted_by_request",
+    "remaining_local_blockers": []
+  },
+  "local_validation": {
+    "command": "bun run content-audit:validate -- --article-id 3a66b00c-20a4-4577-8359-b956a93d7c50 --summary --dry-run",
+    "valid": true,
+    "blockers": 0,
+    "warnings": [],
+    "checked_at": "2026-05-10T21:50:00+08:00"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "question_id": "92ae060a-e88c-4b3d-90e0-9ef20ba56f82",
+  "baseline_hash": "sha256:47458d6fc0bad1378eb56d388594ee946cf7c234621abec1c578241ec33ff74d",
+  "action": "replace",
+  "reason": "source-audited-article-batch-079-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-007-06-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-079",
+  "approved_at": "2026-05-12T06:20:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "cc2eb7b8-8933-47d3-a61a-f3f835daf1ab",
+    "parent_article_slug": "lea-matl-007-06-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "BCI refined markdown lines 13754-13820; raw PDF page 372 checked by local PyMuPDF extraction",
+    "checked_markdown_lines": [
+      "BCI refined markdown lines 13754-13820; raw PDF page 372 checked by local PyMuPDF extraction",
+      "Salvan refined markdown lines 1916-1920 and 2630-2710; raw PDF pages 59 and 92 checked by local PyMuPDF extraction"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "bci-5e-b079",
+        "label": "Building Construction Illustrated, 5th Edition",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "raw_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "locator": "BCI refined markdown lines 13754-13820; raw PDF page 372 checked by local PyMuPDF extraction"
+      },
+      {
+        "source_id": "salvan-building-materials-b079",
+        "label": "George Salvan Architectural Building Materials",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+        "raw_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+        "locator": "Salvan refined markdown lines 1916-1920 and 2630-2710; raw PDF pages 59 and 92 checked by local PyMuPDF extraction"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 079 local raw-source-audited countertop_materials scope."
+  },
+  "proposed": {
+    "text": "What is the safer source-audited answer when a countertop question asks for unchecked quartz hardness values?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Stay within the checked laminate construction and installation evidence"
+      },
+      {
+        "id": "b",
+        "text": "Invent a Mohs value"
+      },
+      {
+        "id": "c",
+        "text": "Use a door-hardware finish chart"
+      },
+      {
+        "id": "d",
+        "text": "Use a window ventilation percentage"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The checked Batch 079 countertop sources support plastic laminate construction, core materials, adhesives, and edge treatments, not quartz hardness values.",
+    "explanation": "The checked Batch 079 countertop sources support plastic laminate construction, core materials, adhesives, and edge treatments, not quartz hardness values.",
+    "code_citation": "Building Construction Illustrated, 5th Edition; George Salvan Architectural Building Materials"
+  }
+}

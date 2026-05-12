@@ -1,0 +1,104 @@
+{
+  "batch_id": "source-audited-article-batch-040-local-first",
+  "schema_version": "source-audited-local-first-scoped-checks-v1",
+  "generated_at": "2026-05-11T06:06:21.923Z",
+  "status": "PASS",
+  "counts": {
+    "selected_articles": 5,
+    "linked_questions": 65,
+    "question_edits": 65,
+    "source_rows": 7,
+    "unique_raw_pdfs": 2,
+    "json_parse": 120,
+    "source_hash_checks": 14,
+    "marker_matches": 0,
+    "stale_compose_error_files": 0,
+    "targeted_tests_passed": 34
+  },
+  "article_results": [
+    {
+      "article_id": "a7cb156f-be70-4ff4-9d9c-95a92a8052d3",
+      "slug": "translating-pwd-rights",
+      "folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/translating-pwd-rights--a7cb156f-be70-4ff4-9d9c-95a92a8052d3",
+      "linked_questions": 21,
+      "question_edits": 21,
+      "source_rows": 1,
+      "compose": "PASS",
+      "diff": "PASS",
+      "validate": "PASS",
+      "ui_block_validation": "PASS",
+      "source_audit": "PASS",
+      "candidate_hash": "sha256:1e57851e7e505a365b97ccdebcaabe4fd5a44b26ad21a34d19f602551d2b5110"
+    },
+    {
+      "article_id": "ec61e112-1609-4f49-b1ad-343444eb6248",
+      "slug": "lea-theo-003-06-core-concept",
+      "folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-003-06-core-concept--ec61e112-1609-4f49-b1ad-343444eb6248",
+      "linked_questions": 13,
+      "question_edits": 13,
+      "source_rows": 1,
+      "compose": "PASS",
+      "diff": "PASS",
+      "validate": "PASS",
+      "ui_block_validation": "PASS",
+      "source_audit": "PASS",
+      "candidate_hash": "sha256:ab9e3ff3013fa967a398f9a38e44d263cce483911b5c2158d96d10a571acb03c"
+    },
+    {
+      "article_id": "5365637b-7058-45f6-85c5-ac8bc56de035",
+      "slug": "conflict-matrix-stairs-guards-elevators",
+      "folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/conflict-matrix-stairs-guards-elevators--5365637b-7058-45f6-85c5-ac8bc56de035",
+      "linked_questions": 11,
+      "question_edits": 11,
+      "source_rows": 1,
+      "compose": "PASS",
+      "diff": "PASS",
+      "validate": "PASS",
+      "ui_block_validation": "PASS",
+      "source_audit": "PASS",
+      "candidate_hash": "sha256:c7d2b32bf9e76ef6e19c0a37a730c9ab47728e4b8b5b9605c0fd5bf783ba0710"
+    },
+    {
+      "article_id": "dcea38f3-027c-4839-8bc5-f79991e7772c",
+      "slug": "lea-dsgn-010-01-core-concept",
+      "folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-010-01-core-concept--dcea38f3-027c-4839-8bc5-f79991e7772c",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_rows": 2,
+      "compose": "PASS",
+      "diff": "PASS",
+      "validate": "PASS",
+      "ui_block_validation": "PASS",
+      "source_audit": "PASS",
+      "candidate_hash": "sha256:767907c2fa8c62b4573be8cb42a829cd5b843e1b114ed7162f178ec1e5c444f7"
+    },
+    {
+      "article_id": "3570f70f-5eef-438a-aeec-5f26f9f5c1f9",
+      "slug": "lea-dsgn-010-03-core-concept",
+      "folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-010-03-core-concept--3570f70f-5eef-438a-aeec-5f26f9f5c1f9",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_rows": 2,
+      "compose": "PASS",
+      "diff": "PASS",
+      "validate": "PASS",
+      "ui_block_validation": "PASS",
+      "source_audit": "PASS",
+      "candidate_hash": "sha256:8b0f844c3997512888f2f095e8746bf2b8688efac161758b09ee1cc2de8eee85"
+    }
+  ],
+  "marker_matches": [],
+  "source_hash_mismatches": [],
+  "stale_compose_errors": [],
+  "targeted_tests": {
+    "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+    "status": "PASS",
+    "passed": 34,
+    "failed": 0
+  },
+  "post_artifact_git_diff_check": {
+    "command": "git diff --check -- <Batch 040 scoped paths>",
+    "status": "PASS"
+  },
+  "blockers": []
+}

@@ -4,8 +4,8 @@
 
 # Pedagogical Engine Rules
 
-**Source:** `src/lib/srs/`, `src/lib/readiness-score.ts`, `src/lib/actions/testing.ts`, `.ai/docs/01-product/`  
-**Last Verified:** 2026-04-10  
+**Source:** `src/lib/srs/`, `src/lib/readiness-score.ts`, `src/lib/actions/testing.ts`, `.ai/docs/01-product/`
+**Last Verified:** 2026-04-10
 **Applies To:** All agents working on quiz, testing, mastery, or analytics features
 
 ---

@@ -1,0 +1,72 @@
+{
+  "question_id": "78589ec6-3902-46e7-b155-0a60610189a8",
+  "baseline_hash": "sha256:f6228d5b25ee00973b43189a2963f56f8d073b060d5169e7c16a44e1628c9ca1",
+  "action": "replace",
+  "reason": "source-audited-article-batch-018-local-first rewrote linked question to match locally checked raw source evidence for lea-prac-eth-011-introduction.",
+  "approved_by": "codex-local-source-audit-batch-018",
+  "approved_at": "2026-05-10T23:42:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "17350925-ae83-47a1-a30f-a96eb5c1d942",
+    "parent_article_slug": "lea-prac-eth-011-introduction",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UAP Document Code of Ethics, client-interest and independence provisions, raw markdown lines 47-63 and 66-89",
+    "checked_markdown_lines": [
+      "raw markdown lines 47-63",
+      "raw markdown lines 66-89"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+        "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+        "source_id": "uap-document-code-of-ethics",
+        "locator": "UAP Document Code of Ethics, client-interest and independence provisions, raw markdown lines 47-63 and 66-89"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
+        "sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
+        "source_id": "uap-document-code-of-ethics-raw-markdown",
+        "locator": "UAP Document Code of Ethics, client-interest and independence provisions, raw markdown lines 47-63 and 66-89"
+      }
+    ],
+    "local_source_safe_action": "Question was rewritten to remove unverified or over-specific claims and use only statements anchored in the checked local raw source packet."
+  },
+  "proposed": {
+    "text": "What is the source-safe handling of a market discount from a material firm?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Credit the discount to the client"
+      },
+      {
+        "id": "b",
+        "text": "Keep it as a private benefit"
+      },
+      {
+        "id": "c",
+        "text": "Use it to avoid a client agreement"
+      },
+      {
+        "id": "d",
+        "text": "Treat it as a contractor gift"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "The Code permits a market discount only if credited to the client.",
+    "explanation": "The Code permits a market discount only if credited to the client.",
+    "code_citation": "UAP Document Code of Ethics, line 89",
+    "bloom_level": "understand",
+    "application_context": "professional_practice",
+    "practice_context": [
+      "Code of Ethical Conduct",
+      "Professional ethics"
+    ],
+    "difficulty": 0.5,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-ETH-011-002"
+  }
+}

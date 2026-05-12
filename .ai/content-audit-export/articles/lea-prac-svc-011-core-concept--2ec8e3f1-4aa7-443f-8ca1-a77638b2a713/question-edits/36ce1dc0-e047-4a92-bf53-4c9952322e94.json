@@ -1,0 +1,85 @@
+{
+  "question_id": "36ce1dc0-e047-4a92-bf53-4c9952322e94",
+  "baseline_hash": "sha256:1c40b1629046df1e05379b28a0644b55c18c164fe387fbeda9ff2b92ee35686f",
+  "action": "replace",
+  "reason": "source-audited-article-batch-024-local-first rewrote this linked question to align with the local source audit for lea-prac-svc-011-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-024",
+  "approved_at": "2026-05-11T14:30:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "2ec8e3f1-4aa7-443f-8ca1-a77638b2a713",
+    "parent_article_slug": "lea-prac-svc-011-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UAP Standards refined markdown lines 1418-1460 and 1544-1695; SPP 209 refined markdown lines 637-1099",
+    "checked_markdown_lines": [
+      "UAP Standards lines 1418-1460",
+      "UAP Standards lines 1544-1695",
+      "SPP 209 lines 637-1099"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "source_id": "uap-standards-spp209-pacs-local",
+        "locator": "UAP Standards refined markdown lines 1418-1460 and 1544-1695"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "source_id": "uap-standards-spp209-pacs-local",
+        "locator": "UAP Standards refined markdown lines 1418-1460 and 1544-1695"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 209.pdf",
+        "sha256": "sha256:c0e805e8bb71adb0a3d31fe1655447d718abba54f546d20cbac3c092268b03c5",
+        "source_id": "spp209-professional-architectural-consulting-services-local",
+        "locator": "SPP 209 refined markdown lines 637-1099"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 209.md",
+        "sha256": "sha256:d596d4cda9d7fc4551ac81786bf0f7063917ecfac79b89bc1810373e3655a4f2",
+        "source_id": "spp209-professional-architectural-consulting-services-local",
+        "locator": "SPP 209 refined markdown lines 637-1099"
+      }
+    ],
+    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+  },
+  "proposed": {
+    "text": "What rule applies if no qualified FPCA is available and a foreign architect or foreign consultant is engaged?",
+    "options": [
+      {
+        "id": "a",
+        "text": "At least two Filipino RLAs in the same specialization must be employed as understudies"
+      },
+      {
+        "id": "b",
+        "text": "No Filipino participation is required"
+      },
+      {
+        "id": "c",
+        "text": "Only one law student must be assigned"
+      },
+      {
+        "id": "d",
+        "text": "The project becomes exempt from RA 9184 and RA 9266"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "SPP 209 states the minimum two Filipino RLA understudy requirement in that circumstance.",
+    "explanation": "This Batch 024 replacement removes non-source-backed or over-specific wording and ties the answer to the checked local UAP source locator.",
+    "code_citation": "UAP Standards lines 1418-1460 and 1544-1695; SPP 209 refined markdown lines 637-1099",
+    "bloom_level": "apply",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited batch 024"
+    ],
+    "difficulty": 0.58,
+    "is_assessment": false,
+    "model_id": "BATCH-024-lea-prac-svc-011-core-concept-010"
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "schema_version": "source-audit-evidence-v1-local-first",
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-032-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T09:19:39+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+    "slug": "bp-344-elevator-dimensions",
+    "title": "BP 344 Elevator Dimensions",
+    "article_folder": ".ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+    "candidate_path": ".ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6/candidate.md",
+    "candidate_sha256": "sha256:933c518175ae8a9e46477a1a18cb43b37d2b45eba71d4e4fb98028561068faa6",
+    "normalized_sha256": "sha256:933c518175ae8a9e46477a1a18cb43b37d2b45eba71d4e4fb98028561068faa6",
+    "linked_questions_sha256": "sha256:0fa70366c1f2fd30e11f782ae83777e162942036e17a56bcf7413a4b76374319",
+    "sources_sha256": "sha256:a1438592cde5ba619d7425d017ec864984bf75a1ecbf7306cde8f726586a24bc"
+  },
+  "classification": {
+    "content_domain": "LEA Accessibility and Building Code",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high_value_accessibility_code",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 11,
+    "question_edits_created": [
+      "3a02b862-6bcb-421a-bbe0-7390023e56d1",
+      "74ef0a31-d5e4-4b92-a30c-c55192514e4a",
+      "0cfc8500-66d3-43f7-8b1e-d631fd6d6c44",
+      "d752e07a-5772-4127-987e-38dbe7a03a03",
+      "14e1fe5d-0b68-41e5-bb3b-a008ab213333",
+      "5a156fd4-5a1b-44e2-8ef0-6aaf6711bca5",
+      "da07b616-7211-4255-9794-bdbbd0b3ddc8",
+      "233368c2-56f7-430c-9b0f-0dd58bb0c3ab",
+      "524f50c6-5b68-4f28-bf5f-62334ee18bcd",
+      "d86e6822-87dd-4d0c-aad1-fb4e2404dc93",
+      "e67995d3-de1e-4f60-bf6f-1127bc709b16"
+    ]
+  },
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6/question-edits/3a02b862-6bcb-421a-bbe0-7390023e56d1.json",
+      ".ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6/question-edits/74ef0a31-d5e4-4b92-a30c-c55192514e4a.json",
+      ".ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6/question-edits/0cfc8500-66d3-43f7-8b1e-d631fd6d6c44.json",
+      ".ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6/question-edits/d752e07a-5772-4127-987e-38dbe7a03a03.json",
+      ".ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6/question-edits/14e1fe5d-0b68-41e5-bb3b-a008ab213333.json",
+      ".ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6/question-edits/5a156fd4-5a1b-44e2-8ef0-6aaf6711bca5.json",
+      ".ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6/question-edits/da07b616-7211-4255-9794-bdbbd0b3ddc8.json",
+      ".ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6/question-edits/233368c2-56f7-430c-9b0f-0dd58bb0c3ab.json",
+      ".ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6/question-edits/524f50c6-5b68-4f28-bf5f-62334ee18bcd.json",
+      ".ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6/question-edits/d86e6822-87dd-4d0c-aad1-fb4e2404dc93.json",
+      ".ai/content-audit-export/articles/bp-344-elevator-dimensions--5f620c42-ef55-4c0e-824b-49f0ff9d47e6/question-edits/e67995d3-de1e-4f60-bf6f-1127bc709b16.json"
+    ]
+  },
+  "raw_sources": [
+    {
+      "source_id": "bp-344-2024-revised-irr-ncda-local",
+      "label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "source_locator": "BP 344 2024 Revised IRR refined markdown lines 317-356, 362-511, 891-951, 990-1037, 1193-1211, 1446-1458, 1529-1545",
+      "checked_markdown_lines": [
+        "BP 344 2024 Revised IRR refined markdown lines 317-356, 362-511, 891-951, 990-1037, 1193-1211, 1446-1458, 1529-1545"
+      ]
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "bp-344-2024-revised-irr-ncda-local",
+      "label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "source_locator": "BP 344 2024 Revised IRR refined markdown lines 317-356, 362-511, 891-951, 990-1037, 1193-1211, 1446-1458, 1529-1545",
+      "checked_markdown_lines": [
+        "BP 344 2024 Revised IRR refined markdown lines 317-356, 362-511, 891-951, 990-1037, 1193-1211, 1446-1458, 1529-1545"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "b032-elev-01",
+      "claim_text": "Accessible elevator cars must have minimum clear dimensions of 1400 mm depth by 1200 mm width and a clear door opening of at least 900 mm.",
+      "claim_type": "accessibility_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "locator": "BP 344 refined markdown lines 990-1002",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "Accessible elevator cars shall have a minimum clear dimension of 1400 mm in depth and 1200 mm in width, with a clear door opening of not less than 900 mm."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b032-elev-02",
+      "claim_text": "Accessible elevators must be located not more than 30 meters from the entrance and be easy to locate with directional signs.",
+      "claim_type": "accessibility_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "locator": "BP 344 refined markdown lines 996-998",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "Accessible elevators shall be located not more than thirty meters from the entrance and easy to locate with directional signs."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b032-elev-03",
+      "claim_text": "Elevator handrails and car operating panels are placed at 900 mm from the floor.",
+      "claim_type": "accessibility_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "locator": "BP 344 refined markdown lines 1008-1017",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "Handrails shall be placed at 900 mm; the car operating panel shall be installed at 900 mm on center from the floor."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b032-elev-04",
+      "claim_text": "Elevator lobbies must have a minimum clear space of 1800 mm x 1800 mm.",
+      "claim_type": "accessibility_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "locator": "BP 344 refined markdown line 1037",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "Elevator lobbies shall have a minimum clear space of at least 1800 x 1800 mm."
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "removed_or_rewritten_material": [
+    "Learner-facing article text was rewritten to local source-supported accessibility/code claims only.",
+    "Legacy UI marker blocks were removed from normalized.md so candidate.md composes without unresolved markers.",
+    "Linked questions were rewritten to source-safe wording, answer keys, rationales, and citations."
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "gate_results": {
+    "compose": "PASS: bun run content-audit:compose -- --article-id <Batch 032 id> --overwrite --strict; changed candidates; blockers=0",
+    "diff": "PASS: bun run content-audit:diff -- --article-id <Batch 032 id> --summary --strict; changed=true; safe_to_push=true; blockers=0",
+    "validate": "PASS: bun run content-audit:validate -- --article-id <Batch 032 id> --summary; valid=true; blockers=0; expected component-usage.json warning only",
+    "push_dry_run": "not_attempted_local_first; Supabase remote fetch/publish is final publishing only",
+    "supabase_mutation": "not_attempted_by_request"
+  },
+  "source_safe_repair": {
+    "normalized_md_rewritten": true,
+    "candidate_md_composed": true,
+    "sources_json_refreshed_to_checked_raw_sources": true,
+    "source_audit_evidence_json_created": true,
+    "question_edits_created": 11,
+    "answer_key_fields_changed": true,
+    "ui_markers_removed_from_normalized": true,
+    "external_business_claims_limited_to_source_safe_form": true
+  },
+  "local_validation": {
+    "compose": {
+      "passed": true,
+      "blockers": [],
+      "candidate_hash": "sha256:933c518175ae8a9e46477a1a18cb43b37d2b45eba71d4e4fb98028561068faa6",
+      "safe_to_diff": true
+    },
+    "diff": {
+      "passed": true,
+      "blockers": [],
+      "safe_to_push": true,
+      "changed": true
+    },
+    "validate": {
+      "passed": true,
+      "blockers": [],
+      "warnings": [
+        "expected component-usage.json warning only"
+      ]
+    },
+    "scoped_checks": {
+      "passed": true,
+      "blockers": [],
+      "placeholder_matches": []
+    }
+  },
+  "sme_review": {
+    "required": false,
+    "status": "PASS"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

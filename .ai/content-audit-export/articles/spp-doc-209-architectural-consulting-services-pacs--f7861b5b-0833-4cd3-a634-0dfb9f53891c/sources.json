@@ -1,7 +1,24 @@
 {
   "article_id": "f7861b5b-0833-4cd3-a634-0dfb9f53891c",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "source_count": 0,
-  "sources": []
+  "source_count": 1,
+  "sources": [
+    {
+      "source_id": "uap-standards-of-professional-practice-2",
+      "label": "UAP Standards of Professional Practice",
+      "authority": "United Architects of the Philippines / PRBoA SPP reference copy",
+      "source_type": "professional_practice_pdf",
+      "source_locator": "SPP Document 209 Professional Architectural Consulting Services",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+      "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
+      "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
+      "checked_markdown_lines": [
+        "UAP SPP raw markdown lines 1581-1866"
+      ],
+      "use": "primary source for article and linked-question support",
+      "local_source_checked": true
+    }
+  ],
+  "sources_hash": "sha256:200ae5c1fb823da11c82f48007a1cd0870a8f7d96edde54e07f9cc80463e7a4e"
 }

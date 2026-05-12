@@ -1,0 +1,34 @@
+{
+  "question_id": "9f917c1e-317b-4a35-aeaf-327ce7c41298",
+  "baseline_hash": "sha256:1b34bd308f9d622717c9dfd4768d69af064b8a89533b44eeb1c32e44d33aa2a3",
+  "reason": "Batch 005 local source audit aligned LEA Eligibility: Academic Credentials, DAE, and Moral Character linked question ALE-PRAC-LAW-007-001 to verified RA 9266 IRR raw-source claims.",
+  "approved_by": "codex-local-source-audit-batch-005",
+  "approved_at": "2026-05-10T21:30:00+08:00",
+  "proposed": {
+    "code_citation": "RA 9266 IRR Sections 3(29) and 13",
+    "explanation": "Source-audited against RA 9266 IRR Sections 3(29) and 13 in the checked local RA 9266 IRR PDF. This edit removes unsupported locators or assumptions and keeps the question aligned to the audited article cluster.",
+    "text": "How does the checked RA 9266 IRR define the required Diversified Architectural Experience for LEA eligibility?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Two years or equivalent post-baccalaureate, pre-licensure DAE with varied architectural-service experience."
+      },
+      {
+        "id": "b",
+        "text": "A fixed hour total with no variation requirement."
+      },
+      {
+        "id": "c",
+        "text": "One year for every applicant, regardless of degree or experience."
+      },
+      {
+        "id": "d",
+        "text": "No practical experience requirement after graduation."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "correct": "Sections 3(29) and 13 support two years or equivalent DAE with varied architectural-service experience."
+    }
+  }
+}

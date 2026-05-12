@@ -1,0 +1,364 @@
+{
+  "batch": 63,
+  "generated_at": "2026-05-11T22:05:00.000+08:00",
+  "selected_article_count": 5,
+  "json_parse": {
+    "files": 105,
+    "failures": []
+  },
+  "marker_scan": {
+    "files": 105,
+    "pattern": "ui-block-token/status marker/private-note/source-needs markers",
+    "hits": []
+  },
+  "source_hash_checks": {
+    "count": 30,
+    "failures": [],
+    "checks": [
+      {
+        "article_folder": ".ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9",
+        "source_id": "pd1096-rirr-2004-occupancy-classification-dpwh-local-b063",
+        "kind": "raw_pdf",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "expected": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "actual": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "pass": true
+      },
+      {
+        "article_folder": ".ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9",
+        "source_id": "pd1096-rirr-2004-occupancy-classification-dpwh-local-b063",
+        "kind": "refined_markdown",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "expected": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "actual": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "pass": true
+      },
+      {
+        "article_folder": ".ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9",
+        "source_id": "ra9514-rirr-2019-fire-life-safety-local-b063",
+        "kind": "raw_pdf",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "expected": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "actual": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "pass": true
+      },
+      {
+        "article_folder": ".ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9",
+        "source_id": "ra9514-rirr-2019-fire-life-safety-local-b063",
+        "kind": "refined_markdown",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "expected": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "actual": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "pass": true
+      },
+      {
+        "article_folder": ".ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9",
+        "source_id": "pd9514-fire-code-life-safety-local-b063",
+        "kind": "raw_pdf",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf",
+        "expected": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+        "actual": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+        "pass": true
+      },
+      {
+        "article_folder": ".ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9",
+        "source_id": "pd9514-fire-code-life-safety-local-b063",
+        "kind": "refined_markdown",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-9514/PD 9514 - Fire Code of the Philippines.md",
+        "expected": "sha256:5eb0584f1bcbfa87044e28f2e59a75c6364c7160a98edfdd888c6aef849b01b2",
+        "actual": "sha256:5eb0584f1bcbfa87044e28f2e59a75c6364c7160a98edfdd888c6aef849b01b2",
+        "pass": true
+      },
+      {
+        "article_folder": ".ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc",
+        "source_id": "pd1096-rirr-2004-occupancy-classification-dpwh-local-b063",
+        "kind": "raw_pdf",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "expected": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "actual": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "pass": true
+      },
+      {
+        "article_folder": ".ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc",
+        "source_id": "pd1096-rirr-2004-occupancy-classification-dpwh-local-b063",
+        "kind": "refined_markdown",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "expected": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "actual": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "pass": true
+      },
+      {
+        "article_folder": ".ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc",
+        "source_id": "ra9514-rirr-2019-fire-life-safety-local-b063",
+        "kind": "raw_pdf",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "expected": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "actual": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "pass": true
+      },
+      {
+        "article_folder": ".ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc",
+        "source_id": "ra9514-rirr-2019-fire-life-safety-local-b063",
+        "kind": "refined_markdown",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "expected": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "actual": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "pass": true
+      },
+      {
+        "article_folder": ".ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc",
+        "source_id": "pd9514-fire-code-life-safety-local-b063",
+        "kind": "raw_pdf",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf",
+        "expected": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+        "actual": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+        "pass": true
+      },
+      {
+        "article_folder": ".ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc",
+        "source_id": "pd9514-fire-code-life-safety-local-b063",
+        "kind": "refined_markdown",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-9514/PD 9514 - Fire Code of the Philippines.md",
+        "expected": "sha256:5eb0584f1bcbfa87044e28f2e59a75c6364c7160a98edfdd888c6aef849b01b2",
+        "actual": "sha256:5eb0584f1bcbfa87044e28f2e59a75c6364c7160a98edfdd888c6aef849b01b2",
+        "pass": true
+      },
+      {
+        "article_folder": ".ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6",
+        "source_id": "pd1096-rirr-2004-occupancy-classification-dpwh-local-b063",
+        "kind": "raw_pdf",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "expected": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "actual": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "pass": true
+      },
+      {
+        "article_folder": ".ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6",
+        "source_id": "pd1096-rirr-2004-occupancy-classification-dpwh-local-b063",
+        "kind": "refined_markdown",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "expected": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "actual": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "pass": true
+      },
+      {
+        "article_folder": ".ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6",
+        "source_id": "ra9514-rirr-2019-fire-life-safety-local-b063",
+        "kind": "raw_pdf",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "expected": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "actual": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "pass": true
+      },
+      {
+        "article_folder": ".ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6",
+        "source_id": "ra9514-rirr-2019-fire-life-safety-local-b063",
+        "kind": "refined_markdown",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "expected": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "actual": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "pass": true
+      },
+      {
+        "article_folder": ".ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6",
+        "source_id": "pd9514-fire-code-life-safety-local-b063",
+        "kind": "raw_pdf",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf",
+        "expected": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+        "actual": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+        "pass": true
+      },
+      {
+        "article_folder": ".ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6",
+        "source_id": "pd9514-fire-code-life-safety-local-b063",
+        "kind": "refined_markdown",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-9514/PD 9514 - Fire Code of the Philippines.md",
+        "expected": "sha256:5eb0584f1bcbfa87044e28f2e59a75c6364c7160a98edfdd888c6aef849b01b2",
+        "actual": "sha256:5eb0584f1bcbfa87044e28f2e59a75c6364c7160a98edfdd888c6aef849b01b2",
+        "pass": true
+      },
+      {
+        "article_folder": ".ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff",
+        "source_id": "pd1096-rirr-2004-occupancy-classification-dpwh-local-b063",
+        "kind": "raw_pdf",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "expected": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "actual": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "pass": true
+      },
+      {
+        "article_folder": ".ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff",
+        "source_id": "pd1096-rirr-2004-occupancy-classification-dpwh-local-b063",
+        "kind": "refined_markdown",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "expected": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "actual": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "pass": true
+      },
+      {
+        "article_folder": ".ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff",
+        "source_id": "ra9514-rirr-2019-fire-life-safety-local-b063",
+        "kind": "raw_pdf",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "expected": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "actual": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "pass": true
+      },
+      {
+        "article_folder": ".ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff",
+        "source_id": "ra9514-rirr-2019-fire-life-safety-local-b063",
+        "kind": "refined_markdown",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "expected": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "actual": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "pass": true
+      },
+      {
+        "article_folder": ".ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff",
+        "source_id": "pd9514-fire-code-life-safety-local-b063",
+        "kind": "raw_pdf",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf",
+        "expected": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+        "actual": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+        "pass": true
+      },
+      {
+        "article_folder": ".ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff",
+        "source_id": "pd9514-fire-code-life-safety-local-b063",
+        "kind": "refined_markdown",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-9514/PD 9514 - Fire Code of the Philippines.md",
+        "expected": "sha256:5eb0584f1bcbfa87044e28f2e59a75c6364c7160a98edfdd888c6aef849b01b2",
+        "actual": "sha256:5eb0584f1bcbfa87044e28f2e59a75c6364c7160a98edfdd888c6aef849b01b2",
+        "pass": true
+      },
+      {
+        "article_folder": ".ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7",
+        "source_id": "pd1096-rirr-2004-occupancy-classification-dpwh-local-b063",
+        "kind": "raw_pdf",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "expected": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "actual": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "pass": true
+      },
+      {
+        "article_folder": ".ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7",
+        "source_id": "pd1096-rirr-2004-occupancy-classification-dpwh-local-b063",
+        "kind": "refined_markdown",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "expected": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "actual": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "pass": true
+      },
+      {
+        "article_folder": ".ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7",
+        "source_id": "ra9514-rirr-2019-fire-life-safety-local-b063",
+        "kind": "raw_pdf",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "expected": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "actual": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "pass": true
+      },
+      {
+        "article_folder": ".ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7",
+        "source_id": "ra9514-rirr-2019-fire-life-safety-local-b063",
+        "kind": "refined_markdown",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "expected": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "actual": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "pass": true
+      },
+      {
+        "article_folder": ".ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7",
+        "source_id": "pd9514-fire-code-life-safety-local-b063",
+        "kind": "raw_pdf",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf",
+        "expected": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+        "actual": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+        "pass": true
+      },
+      {
+        "article_folder": ".ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7",
+        "source_id": "pd9514-fire-code-life-safety-local-b063",
+        "kind": "refined_markdown",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-9514/PD 9514 - Fire Code of the Philippines.md",
+        "expected": "sha256:5eb0584f1bcbfa87044e28f2e59a75c6364c7160a98edfdd888c6aef849b01b2",
+        "actual": "sha256:5eb0584f1bcbfa87044e28f2e59a75c6364c7160a98edfdd888c6aef849b01b2",
+        "pass": true
+      }
+    ]
+  },
+  "candidate_hash_checks": {
+    "count": 5,
+    "failures": [],
+    "checks": [
+      {
+        "article_folder": ".ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9",
+        "candidate_hash": "sha256:ee58bd853805f637e3c3fd8e9a841b8a32ccc7d6a8aa391d8919faaaacf18b29",
+        "evidence_candidate_sha256": "sha256:ee58bd853805f637e3c3fd8e9a841b8a32ccc7d6a8aa391d8919faaaacf18b29",
+        "pass": true
+      },
+      {
+        "article_folder": ".ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc",
+        "candidate_hash": "sha256:45110ede1d3e4fe7f0b7dfda40508c9f0fbca9883d520d5bba84c859a0f73538",
+        "evidence_candidate_sha256": "sha256:45110ede1d3e4fe7f0b7dfda40508c9f0fbca9883d520d5bba84c859a0f73538",
+        "pass": true
+      },
+      {
+        "article_folder": ".ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6",
+        "candidate_hash": "sha256:aca16faf857a3439c67dc696e841054d83a4a7faf7ac4b711194947efb8f9554",
+        "evidence_candidate_sha256": "sha256:aca16faf857a3439c67dc696e841054d83a4a7faf7ac4b711194947efb8f9554",
+        "pass": true
+      },
+      {
+        "article_folder": ".ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff",
+        "candidate_hash": "sha256:c6ee356fe600b05050ee3472c23ea0130840c747ec7a5c594d70c757fbbf1a9c",
+        "evidence_candidate_sha256": "sha256:c6ee356fe600b05050ee3472c23ea0130840c747ec7a5c594d70c757fbbf1a9c",
+        "pass": true
+      },
+      {
+        "article_folder": ".ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7",
+        "candidate_hash": "sha256:ffc69c03874d6f4b716a6d05439fb680155f5428a631283f96d382ed1d2f3ff8",
+        "evidence_candidate_sha256": "sha256:ffc69c03874d6f4b716a6d05439fb680155f5428a631283f96d382ed1d2f3ff8",
+        "pass": true
+      }
+    ]
+  },
+  "question_edit_counts": {
+    "total": 50,
+    "per_article": [
+      {
+        "article_folder": ".ai/content-audit-export/articles/lea-dsgn-005-13-core-concept--20ac90a7-f0e9-49cf-9459-86353d538af9",
+        "question_edits": 10
+      },
+      {
+        "article_folder": ".ai/content-audit-export/articles/lea-dsgn-005-06-core-concept--e64d9b46-f873-4371-95d2-1c2784d7ebfc",
+        "question_edits": 10
+      },
+      {
+        "article_folder": ".ai/content-audit-export/articles/lea-dsgn-004-05-core-concept--ea6d06eb-e659-4092-ad67-14d4956cc4c6",
+        "question_edits": 10
+      },
+      {
+        "article_folder": ".ai/content-audit-export/articles/lea-dsgn-004-06-core-concept--d4dfe9dc-a807-43db-925e-6992297ce1ff",
+        "question_edits": 10
+      },
+      {
+        "article_folder": ".ai/content-audit-export/articles/lea-dsgn-004-07-core-concept--77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7",
+        "question_edits": 10
+      }
+    ],
+    "failures": []
+  },
+  "stale_compose_error_files": [],
+  "validation_summary": {
+    "compose_blockers": 0,
+    "diff_blockers": 0,
+    "validate_blockers": 0,
+    "ui_block_edit_blockers": 0,
+    "targeted_tests_passed": 34,
+    "targeted_expect_calls": 328,
+    "scoped_git_diff_check": "PASS",
+    "scoped_git_diff_check_command": "git diff --check -- <Batch 063 scoped paths>"
+  },
+  "unresolved_blockers": []
+}

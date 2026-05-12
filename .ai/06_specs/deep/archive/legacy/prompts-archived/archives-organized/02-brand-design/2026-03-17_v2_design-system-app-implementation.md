@@ -125,7 +125,7 @@ Testing:
   "Zone 01 · Foundations" (already exists as text — restyle to DM Mono)
   "Zone 02 · Deliberate Practice"
   "Zone 03 · Exam Readiness"
-  
+
 Wiki:
   Subject category labels above article groups
 
@@ -165,7 +165,7 @@ The Readiness Score number (wherever it appears — dashboard, analytics, sessio
 Score number: Syne, 48px, weight 800, tracking -0.02em
 Color:
   ≥ 70%: Signal Green #1B7A3C
-  40-69%: Camp Orange #E8853A  
+  40-69%: Camp Orange #E8853A
   < 40%: Signal Red #E63329
 Context line: Inter, 14px, weight 400, color #555555
 ```
@@ -255,7 +255,7 @@ PRIMARY
   Cobalt Light:  #EEF2FC   (active backgrounds, hover tints)
   Cobalt Dark:   #1535A8   (button hover)
 
-ACCENT  
+ACCENT
   Signal Gold:   #F5A623   (warm highlights — tags, small accents ONLY in app)
   Signal Red:    #E63329   (low readiness, errors, incorrect — always + context)
   Signal Green:  #1B7A3C   (mastered, correct, passing)
@@ -298,7 +298,7 @@ Output a table: `| Page | Element | Current Style | Target Style |`
 ### PHASE 2: Typography Upgrade
 Apply changes 1-5:
 - Page H1s → Syne
-- Section H2s → Syne  
+- Section H2s → Syne
 - Add DM Mono eyebrows where missing
 - Readiness Score → Syne + dynamic color
 - Stat numbers → Syne
@@ -329,7 +329,7 @@ Visit every page and verify:
 - [ ] Page title uses Syne
 - [ ] Section headings use Syne
 - [ ] Eyebrow labels use DM Mono uppercase
-- [ ] Stat numbers use Syne  
+- [ ] Stat numbers use Syne
 - [ ] All buttons are 6px radius
 - [ ] All cards are 8px radius
 - [ ] All borders are #E8E4DC

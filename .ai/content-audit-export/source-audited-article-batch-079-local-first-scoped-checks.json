@@ -1,0 +1,118 @@
+{
+  "batch": "079",
+  "generated_at": "2026-05-12T06:40:00.000+08:00",
+  "local_only": true,
+  "scope": {
+    "handoff_path": ".ai/03_plans/source-audited-local-first-batches-handoff.md",
+    "report_path": ".ai/content-audit-export/source-audited-article-batch-079-local-first-report.md",
+    "ledger_path": ".ai/content-audit-export/source-audited-article-batch-079-local-first-ledger.json",
+    "scoped_checks_path": ".ai/content-audit-export/source-audited-article-batch-079-local-first-scoped-checks.json",
+    "sync_state_path": ".ai/content-audit-export/sync-state.json",
+    "article_folders": [
+      ".ai/content-audit-export/articles/lea-matl-007-06-core-concept--cc2eb7b8-8933-47d3-a61a-f3f835daf1ab",
+      ".ai/content-audit-export/articles/lea-matl-008-01-core-concept--72e04c5e-3e4c-4715-93a0-734bdf6dcbee",
+      ".ai/content-audit-export/articles/lea-matl-008-02-core-concept--b065eb65-5814-4a1f-b3ff-6fc9ab55fbb5",
+      ".ai/content-audit-export/articles/lea-matl-008-03-core-concept--f34aade8-a870-458c-9609-562419eb1238",
+      ".ai/content-audit-export/articles/lea-matl-008-04-core-concept--f06686b1-8dc4-4514-9e32-5e4cd0365006"
+    ]
+  },
+  "checks": {
+    "compose": {
+      "status": "PASS",
+      "article_count": 5,
+      "blockers": 0
+    },
+    "diff": {
+      "status": "PASS",
+      "article_count": 5,
+      "safe_to_push": true,
+      "blockers": 0
+    },
+    "validate": {
+      "status": "PASS",
+      "article_count": 5,
+      "valid": true,
+      "blockers": 0,
+      "warnings": "component-usage.json warnings only"
+    },
+    "ui_block_edits": {
+      "status": "PASS",
+      "article_count": 5,
+      "blockers": 0,
+      "warnings": 0
+    },
+    "source_audit_apply_gate": {
+      "status": "PASS",
+      "article_count": 5,
+      "blockers": 0,
+      "warnings": 0,
+      "legal_or_code_candidate": false,
+      "source_audit_required": true
+    },
+    "scoped_json_parse": {
+      "status": "PASS",
+      "files": 105,
+      "failures": 0
+    },
+    "marker_scan": {
+      "status": "PASS",
+      "files": 105,
+      "hits": 0,
+      "scope_note": "Excluded immutable original.md and generated compose/diff reports."
+    },
+    "source_hash_checks": {
+      "status": "PASS",
+      "checks": 4,
+      "results": [
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+          "expected": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+          "actual": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+          "pass": true
+        },
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+          "expected": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+          "actual": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+          "pass": true
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+          "expected": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+          "actual": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+          "pass": true
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+          "expected": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+          "actual": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+          "pass": true
+        }
+      ]
+    },
+    "question_edit_count": {
+      "status": "PASS",
+      "expected": 50,
+      "actual": 50
+    },
+    "stale_compose_error_check": {
+      "status": "PASS",
+      "files": 0
+    },
+    "targeted_content_audit_tests": {
+      "status": "PASS",
+      "files": [
+        "scripts/content-audit/content-audit.test.ts",
+        "scripts/content-audit/source-verification-invariants.test.ts"
+      ],
+      "pass": 34,
+      "fail": 0,
+      "expect_calls": 328
+    },
+    "scoped_git_diff_check": {
+      "status": "PASS",
+      "command": "git diff --check -- .ai/03_plans/source-audited-local-first-batches-handoff.md .ai/content-audit-export/sync-state.json .ai/content-audit-export/source-audited-article-batch-079-local-first-report.md .ai/content-audit-export/source-audited-article-batch-079-local-first-ledger.json .ai/content-audit-export/source-audited-article-batch-079-local-first-scoped-checks.json <selected Batch 079 article folders>"
+    }
+  },
+  "unresolved_blockers": []
+}

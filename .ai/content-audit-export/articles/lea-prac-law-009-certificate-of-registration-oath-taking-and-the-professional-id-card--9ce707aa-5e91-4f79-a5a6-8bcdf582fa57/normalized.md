@@ -1,94 +1,37 @@
+# Certificate of Registration, Oath, and Professional Identification Card
 
+Passing the LEA is not the entire legal transition into practice. RA 9266 IRR connects three post-exam items: the professional oath, the Certificate of Registration, and the Professional Identification Card.
 
-## Board Exam Quick Check
+## Certificate of Registration
 
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+Section 3(23) defines the Certificate of Registration as the document showing registration as an architect after the person has passed the Architect Licensure Examination.
 
-**Common mistake:** treating a familiar keyword in **Lea Prac Law 009 Certificate Of Registration Oath Taking And The Professional Id Card** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+Section 18 states that the Certificate of Registration and Professional Identification Card are issued to examinees who pass the LEA, subject to payment of prescribed fees. The Certificate of Registration is signed by the Commission chairperson and by the Board chairperson and members, and bears the official seals.
 
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
-## Certificate of Registration, Oath-Taking, and the Professional ID Card
+The Certificate of Registration remains in full force and effect until it is withdrawn, suspended, or revoked according to RA 9266.
 
-## Learning Goal
+## Professional Oath
 
-After studying this article, you should be able to:
+Section 17 requires successful candidates to take the professional oath before a Board member, an authorized government official under the PRC Modernization Act, or another person authorized by law, before entering professional practice.
 
-- Describe the Certificate of Registration and Professional ID Card issuance process.
-- Explain the oath-taking ceremony requirements and timeline.
-- State the grounds for non-issuance or revocation of the Certificate.
-- Identify the fees and documentary requirements for initial registration.
+For exam use, oath-taking is a legal step between passing the examination and entering practice. Do not reduce it to a ceremonial event.
 
-### Certificate of Registration and Legal Authority to Practice
+## Professional Identification Card
 
-Upon successful passage of the Licensure Examination for Architects, the Professional Regulation Commission issues a _Certificate of Registration_ to the candidate, signifying legal authorization to practice architecture in the Philippines. The certificate, defined in RA 9266 Section 3, represents the candidate's entry into the professional register and constitutes legal proof of qualification. The Board of Architecture, as the regulatory authority, has sole power under RA 9266 Section 7(d) to _issue, suspend, revoke, or reinstate_ the Certificate and the Professional Identification Card. The certificate bears a registration number assigned by the Commission's database system, along with the candidate's name, examination date, and signature of the Board's authorized officer. Without a valid Certificate of Registration, no person may practice architecture or represent themselves as a registered architect to the public or in commerce.
+Section 3(37) defines the Professional Identification Card as a document bearing the registration number, date of issuance, and date of expiry. It is due for periodic renewal and is signed by the PRC chairperson.
 
-Extracted summary:
-- Props: variant="lea-watch", title="Exam Trap"
-- Text: Exam Trap — A Certificate of Registration is NOT the same as a Professional Identification Card (PIC). The Certificate is issued once and proves qualification; the PIC is renewed annually and proves current registration status. Many exam questions test this distinction.
+The checked IRR text says the PIC is issued upon payment of annual registration fees for three years and may be renewed upon payment of annual registration fees for another three years. Section 18 likewise uses a three-year renewal cycle.
 
-### Professional Identification Card and Annual Renewal
+RA 9266 IRR uses a three-year PIC fee and renewal cycle.
 
-The Professional Identification Card (PIC) is a tangible document bearing the registration number, date of issuance, expiry date, and the candidate's photograph. It serves as _proof of current registration status_ in all professional transactions and client communications. Under the IRR of RA 9266 Section 3 definition, the PIC is issued by the Professional Regulatory Board of Architecture and signed by its Chairperson. The card remains valid for a one (1)-year period from the date of issuance and requires annual renewal. Architects must apply for annual renewal at the Professional Regulation Commission's office, paying the prescribed annual fee. The renewed PIC maintains the same registration number but reflects the updated validity period. Failure to renew results in lapsed registration status, after which an architect may not legally practice until the PIC is restored.
+## Board Authority
 
-### Oath-Taking Ceremony and Professional Commitment
+Section 7 gives the Board authority to administer oaths and to issue, suspend, revoke, or reinstate Certificates of Registration and Professional Identification Cards. This connects professional standing to both the certificate and the card.
 
-RA 9266 Section 7(c) authorizes the Board to _administer oaths_ in connection with the regulation of architecture. Successful LEA candidates are required to take a professional oath before the Board or an authorized official, typically at a formal oath-taking ceremony held following examination results announcement. The oath commits the new architect to uphold the Code of Ethical Conduct, maintain high professional standards, and comply with RA 9266 and all applicable laws. The oath-taking ceremony represents the formal transition from candidate to professional practitioner and is a condition precedent to certificate issuance in many Board resolutions. Although the statute does not mandate a public ceremony, the Board customarily organizes formal events to solemnize the oath before invited guests, family members, and senior architects. Documentation of oath-taking is maintained in the candidate's professional file with the Commission.
+## Exam Guardrails
 
-### Rights and Restrictions on Certificate Validity
-
-A registered architect's Certificate remains valid indefinitely as long as annual renewal fees are paid and the holder maintains good standing under the Code of Ethical Conduct and Standards of Professional Practice. However, the Board may _suspend or revoke_ the certificate for violations of RA 9266, the Code of Ethical Conduct, breach of the service agreement, criminal conviction, or moral turpitude. During suspension, the architect may not practice; upon revocation, practice is prohibited until the Board reinstates the certificate following a formal application and investigation. Additionally, architeof statement requires reapplication and Board approval. The PIC is a non-transferable personal credential tied solely to the individual architect by name and registration number.
-
----
-
-## Related Articles
-
-- [RA 9266: Structure and Key Definitions](lea-prac-law-001)
-- [Scope of Practice](lea-prac-law-002)
-- [PRBoA Powers and Functions](lea-prac-law-005)
-- [PRC vs. PRBoA](lea-prac-law-006)
-- [Civil Code Article 1723 Liability](lea-prac-law-010)
-- [Signing and Sealing Rules](lea-prac-law-017)
-- [Code of Ethical Conduct](lea-prac-eth-001)
-- [Professional Practice Forms](lea-prac-frm-001)
-
-Extracted summary:
-- Props: (none)
-- Text: The PRC ID contains: registrant's name, registration number, date of registration, expiration date, professional tax receipt (PTR) number, and the registrant's signature and photograph. Know that the PTR must be updated annually.
-
-[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code="ra9266", section="Section 17 - Oath Taking"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0003 component="Callout" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0005 component="Note" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->
+- COR = proof of registration after passing the LEA.
+- Oath = required before entering practice.
+- PIC = registration number, issuance date, expiry date, and periodic renewal.
+- PIC cycle in RA 9266 IRR = three years, not one year.
+- COR remains effective until withdrawn, suspended, or revoked.

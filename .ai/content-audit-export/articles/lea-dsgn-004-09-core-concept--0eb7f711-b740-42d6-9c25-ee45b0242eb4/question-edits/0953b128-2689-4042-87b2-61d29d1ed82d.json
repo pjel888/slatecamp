@@ -1,0 +1,122 @@
+{
+  "question_id": "0953b128-2689-4042-87b2-61d29d1ed82d",
+  "baseline_hash": "sha256:a689d4f4145059cda52706fc2b5b815fd650e3f34d6afab2c1953f9c1abb8b23",
+  "action": "replace",
+  "reason": "source-audited-article-batch-065-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes prior off-scope framing where present.",
+  "approved_by": "codex-local-first-batch-065",
+  "approved_at": "2026-05-11T23:18:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "0eb7f711-b740-42d6-9c25-ee45b0242eb4",
+    "parent_article_slug": "lea-dsgn-004-09-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1128, 1174-1190, 1265-1272, 1659-1667, 1681-1698, and 1735-1736; raw PDF pages 47-48, 53, 57, 72, and 101-103 checked for matching text by local PDF extraction; RA 9514 RIRR refined markdown lines 1435, 1628, 1648-1650, 1702, 1807, 2521-2591, 3984-3994, 4275-4303, 5390-5476, and 6152-6200; raw PDF pages 64, 68, 91-93, 142, 168, 171, and 189 checked for matching text by local PDF extraction; PD 9514 Fire Code refined markdown lines 1599-1629, 1655-1719, 2654, 2849-2855, and 3644-3728; raw PDF pages 57-63 and 111 checked for matching text by local PDF extraction",
+    "checked_markdown_lines": [
+      "PD 1096 RIRR DPWH Official refined markdown lines 1088-1128",
+      "PD 1096 RIRR DPWH Official refined markdown lines 1174-1190",
+      "PD 1096 RIRR DPWH Official refined markdown lines 1265-1272",
+      "PD 1096 RIRR DPWH Official refined markdown lines 1659-1667",
+      "PD 1096 RIRR DPWH Official refined markdown lines 1681-1698",
+      "PD 1096 RIRR DPWH Official refined markdown lines 1735-1736",
+      "RA 9514 RIRR refined markdown line 1435",
+      "RA 9514 RIRR refined markdown line 1628",
+      "RA 9514 RIRR refined markdown lines 1648-1650",
+      "RA 9514 RIRR refined markdown lines 1702 and 1807",
+      "RA 9514 RIRR refined markdown lines 2521-2591",
+      "RA 9514 RIRR refined markdown lines 3984-3994",
+      "RA 9514 RIRR refined markdown lines 4275-4303",
+      "RA 9514 RIRR refined markdown lines 5390-5476",
+      "RA 9514 RIRR refined markdown lines 6152-6200",
+      "PD 9514 Fire Code refined markdown lines 1599-1629",
+      "PD 9514 Fire Code refined markdown lines 1655-1719",
+      "PD 9514 Fire Code refined markdown line 2654",
+      "PD 9514 Fire Code refined markdown lines 2849-2855",
+      "PD 9514 Fire Code refined markdown lines 3644-3728"
+    ],
+    "checked_raw_pdf_pages": [
+      "PD 1096 RIRR DPWH Official raw PDF pages 47-48",
+      "PD 1096 RIRR DPWH Official raw PDF page 53",
+      "PD 1096 RIRR DPWH Official raw PDF page 57",
+      "PD 1096 RIRR DPWH Official raw PDF page 72",
+      "PD 1096 RIRR DPWH Official raw PDF pages 101-103",
+      "RA 9514 RIRR raw PDF page 64",
+      "RA 9514 RIRR raw PDF page 68",
+      "RA 9514 RIRR raw PDF pages 91-93",
+      "RA 9514 RIRR raw PDF page 142",
+      "RA 9514 RIRR raw PDF page 168",
+      "RA 9514 RIRR raw PDF page 171",
+      "RA 9514 RIRR raw PDF page 189",
+      "PD 9514 Fire Code raw PDF pages 57-63",
+      "PD 9514 Fire Code raw PDF page 111"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "pd1096-rirr-2004-occupancy-mixed-facility-local-b065",
+        "label": "PD 1096 RIRR 2004 - occupancy classification for residential, institutional, business, industrial, storage, assembly, resort, school, hospital, restaurant, and parking/loading references",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1128, 1174-1190, 1265-1272, 1659-1667, 1681-1698, and 1735-1736; raw PDF pages 47-48, 53, 57, 72, and 101-103 checked for matching text by local PDF extraction"
+      },
+      {
+        "source_id": "ra9514-rirr-2019-occupancy-egress-storage-hotel-local-b065",
+        "label": "RA 9514 Revised IRR 2019 - occupancy classification, mixed occupancy, assembly load, educational exits, hotel/dormitory protection, and storage egress",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "locator": "RA 9514 RIRR refined markdown lines 1435, 1628, 1648-1650, 1702, 1807, 2521-2591, 3984-3994, 4275-4303, 5390-5476, and 6152-6200; raw PDF pages 64, 68, 91-93, 142, 168, 171, and 189 checked for matching text by local PDF extraction"
+      },
+      {
+        "source_id": "pd9514-fire-code-life-safety-occupancy-local-b065",
+        "label": "Fire Code source family - general life-safety, occupancy, and egress requirements",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf",
+        "sha256": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-9514/PD 9514 - Fire Code of the Philippines.md",
+        "refined_markdown_sha256": "sha256:5eb0584f1bcbfa87044e28f2e59a75c6364c7160a98edfdd888c6aef849b01b2",
+        "locator": "PD 9514 Fire Code refined markdown lines 1599-1629, 1655-1719, 2654, 2849-2855, and 3644-3728; raw PDF pages 57-63 and 111 checked for matching text by local PDF extraction"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, and citation rewritten to the Batch 065 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "Which Fire Code framing is source-safe for restaurant exits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Exits must match occupancy character, occupant count, fire protection, height, and construction type."
+      },
+      {
+        "id": "b",
+        "text": "One exit is always enough for every restaurant."
+      },
+      {
+        "id": "c",
+        "text": "Counter height determines exit count."
+      },
+      {
+        "id": "d",
+        "text": "Kitchen size alone determines exit capacity."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The Fire Code source family requires exits appropriate to building and occupancy conditions.",
+    "explanation": "The Fire Code source family requires exits appropriate to building and occupancy conditions.",
+    "code_citation": "PD 9514 refined markdown lines 1599-1620",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "bloom_level": "understand",
+    "application_context": "code_interpretation",
+    "practice_context": [
+      "occupancy classification",
+      "fire code review"
+    ],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false
+  }
+}

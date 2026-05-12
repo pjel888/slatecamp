@@ -1,0 +1,52 @@
+{
+  "question_id": "bf19afe2-e949-4034-ab14-452ceccb3ea7",
+  "baseline_hash": "sha256:739ea65a0d41b74d888848b9d3ff7c284d8cf7ce782323905eb4f0d8e3a0ef1b",
+  "action": "replace",
+  "reason": "source-audited-article-batch-040-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-040",
+  "approved_at": "2026-05-11T14:04:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-040-local-first",
+    "checked_sources": [
+      {
+        "source_id": "bp-344-2024-rirr-ncda-local",
+        "label": "BP 344 2024 Revised IRR - NCDA",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "checked_markdown_lines": [
+          "BP 344 2024 IRR refined markdown lines 36-70",
+          "BP 344 2024 IRR refined markdown lines 198-224",
+          "BP 344 2024 IRR refined markdown lines 539-585",
+          "BP 344 2024 IRR refined markdown lines 770-850",
+          "BP 344 2024 IRR refined markdown lines 317-469"
+        ]
+      }
+    ],
+    "citation": "BP 344 2024 Revised IRR, Handrails"
+  },
+  "proposed": {
+    "text": "What horizontal handrail extension is required at the start and end of ramps and stairs?",
+    "options": [
+      {
+        "id": "b040-5365-06-a",
+        "text": "300 mm"
+      },
+      {
+        "id": "b040-5365-06-b",
+        "text": "100 mm"
+      },
+      {
+        "id": "b040-5365-06-c",
+        "text": "600 mm"
+      },
+      {
+        "id": "b040-5365-06-d",
+        "text": "1200 mm"
+      }
+    ],
+    "correct_option_id": "b040-5365-06-a",
+    "rationale": "Correct answer: 300 mm. This is directly supported by BP 344 2024 Revised IRR, Handrails.",
+    "explanation": "The Batch 040 source-audited correction uses only local raw PDF families and locator-checked refined markdown for BP 344 2024 Revised IRR, Handrails.",
+    "code_citation": "BP 344 2024 Revised IRR, Handrails"
+  }
+}

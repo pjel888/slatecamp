@@ -1,0 +1,160 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-052-local-first",
+  "batch_number": 52,
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T18:46:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "ae17af26-de0c-448e-a6d2-d64748f904fe",
+    "slug": "post-modernism",
+    "title": "Post-Modernism",
+    "article_folder": ".ai/content-audit-export/articles/post-modernism--ae17af26-de0c-448e-a6d2-d64748f904fe",
+    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/post-modernism--ae17af26-de0c-448e-a6d2-d64748f904fe",
+    "candidate_path": ".ai/content-audit-export/articles/post-modernism--ae17af26-de0c-448e-a6d2-d64748f904fe/candidate.md",
+    "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/post-modernism--ae17af26-de0c-448e-a6d2-d64748f904fe/candidate.md",
+    "question_edits_folder": ".ai/content-audit-export/articles/post-modernism--ae17af26-de0c-448e-a6d2-d64748f904fe/question-edits",
+    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/post-modernism--ae17af26-de0c-448e-a6d2-d64748f904fe/question-edits",
+    "normalized_sha256": "sha256:2cafde390f0df6ba513d2791377fae795be617871bc945ce890fd51d74a186f4",
+    "candidate_sha256": "sha256:2cafde390f0df6ba513d2791377fae795be617871bc945ce890fd51d74a186f4",
+    "linked_questions_sha256": "sha256:6e47cacca0626070753c3572e2d425e0c3ebc68f7f344529331b8e39347b71f8",
+    "sources_sha256": "sha256:826fa340f0deefbd60bc1a63fea045bde42c6473664ea9fc38f6a59fc8994407"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "refined_markdown_role": "locator_only",
+    "derivative_or_search_layer_as_primary": false,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": [],
+    "source_families_checked": [
+      {
+        "label": "HOA Module 2 P3 - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/HOA MODULE 2 P3.pdf",
+        "raw_pdf_sha256": "sha256:b62daa7737b464ab7dc573d64f0f8701998462f8ac0fe933d96e8ecfe8040ba2",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/HOA MODULE 2 P3.md",
+        "refined_markdown_sha256": "sha256:d53cf6de56725d4b046a9f6b72665039b32d0bd932abc4d158ec0b2ba4b290e8",
+        "locator": "HOA Module 2 P3 refined markdown lines 252-274, 278-313, 315-338, 340-457, and 477-488"
+      },
+      {
+        "label": "20th Century Architects - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/20th Century Architects.pdf",
+        "raw_pdf_sha256": "sha256:f089bb71bb762908a02114546a988147d8041d34b386d2b1a78d7517a7acd7c8",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/20th Century Architects.md",
+        "refined_markdown_sha256": "sha256:d0c57daf6466283881f2e8d52286956ee76bb64433082a694f5bf4952ef9cfc1",
+        "locator": "20th Century Architects refined markdown lines 45-77"
+      },
+      {
+        "label": "Modern Architectures in History USA - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Modern Architectures in History (USA) - Gwendolyn Wright.pdf",
+        "raw_pdf_sha256": "sha256:2910fe1d48df8a3822e69d8dcbe830b8bd5948af1da991028f0dc6d062cd578d",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Modern Architectures in History (USA) - Gwendolyn Wright.md",
+        "refined_markdown_sha256": "sha256:97479009e43ab4d8b3c2df4ef9285ce36947f8b7a66370527a470994d0fbd70d",
+        "locator": "Modern Architectures in History USA refined markdown lines 763-769, 1433-1441, 1546-1548, 1751-1763, 1803-1805, 1828-1834, 1902-1906, and 1950-1956"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "postmodernism",
+    "contains_legal_or_code_claims": false,
+    "source_risk_tier": "medium",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 23,
+    "question_edits_created": [
+      "25a63837-bead-468a-b23d-d49cd2c4d05d",
+      "cf768e18-b50c-4101-97f0-8aee116d40bb",
+      "181f3148-d640-40bd-a54a-75a10b51f1b4",
+      "c642b354-c48a-45d8-ab84-0eb8250547e1",
+      "ccdd6a91-e1f8-4986-bfdc-ee9bdd0e6158",
+      "51c0cefd-b7e1-4960-8fc1-0041b88ab34b",
+      "4c1d1071-331f-4054-8d2f-323632951a8d",
+      "ec45fa35-a934-4f0a-a5ff-98d29a898269",
+      "0edab66c-41da-413e-8810-3401b8430a5f",
+      "dd6dd307-924d-4acb-888f-cccb48f6e9a3",
+      "853d922e-cb6e-4dc6-b015-61fa37f4cdb1",
+      "051128bf-20dd-4583-a9af-2c381c311224",
+      "50541647-91b3-4c92-a17a-1fb74df6cfa1",
+      "620a04d8-be1d-47e3-bebb-2933033cf966",
+      "ce6f3b7b-e9ad-48c4-b65d-e5c6b59223a5",
+      "93e2d212-a9d6-4b83-b108-d9351fcc7ead",
+      "7fb7ce42-9544-4142-ac30-227bd7e77ae0",
+      "6b6e2c4a-6467-4b91-b89d-91c2de2afb3f",
+      "bb496e18-7032-486f-b9c0-f11fd15b587b",
+      "0a2711a0-4260-431b-99f2-8382fa341919",
+      "3c5d0c64-51c4-4756-bfc3-c6e49f837489",
+      "063fbe29-b9ae-4d57-b726-8c0681dad140",
+      "73b30690-7c21-4568-a998-cff0ba775690"
+    ]
+  },
+  "checked_markdown_lines": [
+    "HOA Module 2 P3 refined markdown lines 252-274",
+    "HOA Module 2 P3 refined markdown lines 278-313",
+    "HOA Module 2 P3 refined markdown lines 315-338",
+    "HOA Module 2 P3 refined markdown lines 340-457",
+    "HOA Module 2 P3 refined markdown lines 477-488",
+    "20th Century Architects refined markdown lines 45-77",
+    "Modern Architectures in History USA refined markdown lines 763-769",
+    "Modern Architectures in History USA refined markdown lines 1433-1441",
+    "Modern Architectures in History USA refined markdown lines 1546-1548",
+    "Modern Architectures in History USA refined markdown lines 1751-1763",
+    "Modern Architectures in History USA refined markdown lines 1803-1805",
+    "Modern Architectures in History USA refined markdown lines 1828-1834",
+    "Modern Architectures in History USA refined markdown lines 1902-1906",
+    "Modern Architectures in History USA refined markdown lines 1950-1956"
+  ],
+  "claims": [
+    {
+      "claim_id": "post-modernism-b052-claim-01",
+      "claim_text": "Post-Modernism in the checked sources is identified by its reaction against orthodox Modernism, renewed historical reference, plural meaning, color, pattern, ornament, and key works by Venturi, Johnson, and Graves.",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/HOA MODULE 2 P3.pdf",
+        "quoted_pdf_excerpt": "HOA Module 2 P3 refined markdown lines 252-274, 278-313, 315-338, 340-457, and 477-488; 20th Century Architects refined markdown lines 45-77; Modern Architectures in History USA refined markdown lines 763-769, 1433-1441, 1546-1548, 1751-1763, 1803-1805, 1828-1834, 1902-1906, and 1950-1956",
+        "source_ids": [
+          "hoa2p3-local-raw-pdf--b052-ae17af26-01",
+          "twentieth1-local-raw-pdf--b052-ae17af26-02",
+          "modernusa-local-raw-pdf--b052-ae17af26-03"
+        ]
+      },
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "post-modernism-b052-claim-questions",
+      "claim_text": "Batch 052 question edits audited for post-modernism: 25a63837-bead-468a-b23d-d49cd2c4d05d, cf768e18-b50c-4101-97f0-8aee116d40bb, 181f3148-d640-40bd-a54a-75a10b51f1b4, c642b354-c48a-45d8-ab84-0eb8250547e1, ccdd6a91-e1f8-4986-bfdc-ee9bdd0e6158, 51c0cefd-b7e1-4960-8fc1-0041b88ab34b, 4c1d1071-331f-4054-8d2f-323632951a8d, ec45fa35-a934-4f0a-a5ff-98d29a898269, 0edab66c-41da-413e-8810-3401b8430a5f, dd6dd307-924d-4acb-888f-cccb48f6e9a3, 853d922e-cb6e-4dc6-b015-61fa37f4cdb1, 051128bf-20dd-4583-a9af-2c381c311224, 50541647-91b3-4c92-a17a-1fb74df6cfa1, 620a04d8-be1d-47e3-bebb-2933033cf966, ce6f3b7b-e9ad-48c4-b65d-e5c6b59223a5, 93e2d212-a9d6-4b83-b108-d9351fcc7ead, 7fb7ce42-9544-4142-ac30-227bd7e77ae0, 6b6e2c4a-6467-4b91-b89d-91c2de2afb3f, bb496e18-7032-486f-b9c0-f11fd15b587b, 0a2711a0-4260-431b-99f2-8382fa341919, 3c5d0c64-51c4-4756-bfc3-c6e49f837489, 063fbe29-b9ae-4d57-b726-8c0681dad140, 73b30690-7c21-4568-a998-cff0ba775690",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/HOA MODULE 2 P3.pdf",
+        "quoted_pdf_excerpt": "HOA Module 2 P3 refined markdown lines 252-274, 278-313, 315-338, 340-457, and 477-488; 20th Century Architects refined markdown lines 45-77; Modern Architectures in History USA refined markdown lines 763-769, 1433-1441, 1546-1548, 1751-1763, 1803-1805, 1828-1834, 1902-1906, and 1950-1956",
+        "source_ids": [
+          "hoa2p3-local-raw-pdf--b052-ae17af26-01",
+          "twentieth1-local-raw-pdf--b052-ae17af26-02",
+          "modernusa-local-raw-pdf--b052-ae17af26-03"
+        ]
+      },
+      "audit_result": "PASS"
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "local_first_only": true,
+    "supabase_write_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json"
+  },
+  "sme_review": {
+    "required": false,
+    "status": "not_required"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

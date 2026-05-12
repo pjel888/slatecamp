@@ -1,0 +1,412 @@
+{
+  "artifact_type": "batch_004_local_first_ledger",
+  "generated_at": "2026-05-10T16:39:34+08:00",
+  "scope": "LOCAL_FIRST_NO_SUPABASE_NO_DEPLOY_NO_COMMIT",
+  "selection_policy": {
+    "source_pool": ".ai/content-audit-export/articles",
+    "excluded_prior_locally_passed_batches": {
+      "batch_001": [
+        "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+        "16bb270e-6887-4bbe-a62e-eace6c4d3fdb",
+        "ae4bdc43-1451-4aa5-8c12-65283f4bbdfd"
+      ],
+      "batch_002": [
+        "5967e69f-d295-4dd2-9eb7-b4f1a321db4d",
+        "0c599071-cf6f-4b07-9d5f-a6230dd77b36",
+        "d18569e9-4401-4d85-8d59-d545240ef106",
+        "946e44ee-e4d7-452d-a00a-066bae0f273c",
+        "660b2a38-cfad-4aa2-8ff3-85b4ee8fb32d"
+      ],
+      "batch_003": [
+        "46490e40-c2c3-4c76-bf43-87b40512989f",
+        "f3a7ecf3-4df6-4497-958f-3c724875163c",
+        "4c706fb3-bd66-4bae-b4a6-2e8ed487031d",
+        "ee1f8beb-e236-4831-a0a8-1ddce447a3b8",
+        "265185c0-c1ac-4f40-8db0-bde23084f634"
+      ]
+    },
+    "criteria": [
+      "not already locally passed in batch 001/002/003",
+      "high-value LEA legal/code/professional-practice article",
+      "linked questions present",
+      "raw source PDFs available under vitruvius-connection/001_Raw-Source-Layer",
+      "source gap recoverable locally without Supabase"
+    ]
+  },
+  "articles_locally_improved": 5,
+  "question_edits_created": 50,
+  "local_validation_blockers": 0,
+  "remaining_local_blockers": 0,
+  "validation": {
+    "articles_valid": 5,
+    "blockers": 0,
+    "warnings": 0,
+    "compose": "5/5 PASS; blockers=0",
+    "diff": "5/5 PASS; safe_to_push=true; blockers=0",
+    "bundle_validate": "5/5 PASS; blockers=0; warnings=0"
+  },
+  "remote_publish": {
+    "supabase_push": "not_attempted_by_request",
+    "deploy": "not_attempted_by_request",
+    "commit": "not_attempted_by_request"
+  },
+  "raw_source_roots_used": [
+    "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+    "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code of the Phils.pdf"
+  ],
+  "articles": [
+    {
+      "article_id": "7e511a5d-edb1-4622-8f0f-29c1a631c145",
+      "slug": "lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not",
+      "title": "Scope of Practice What Architecture Covers and What It Does Not",
+      "folder": ".ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145",
+      "status": "LOCAL_PASS",
+      "selection_rationale": "High-value LEA legal/professional-practice article with linked questions and audited local raw source PDFs.",
+      "raw_sources": [
+        {
+          "key": "ra9266_irr",
+          "label": "RA 9266 IRR Architecture Act of 2004",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "checked_pdf_pages": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "source_count": 1,
+      "question_edits_created": 10,
+      "question_edit_files": [
+        ".ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/question-edits/08a1c4ca-fe39-4ded-81c4-94909a6d362c.json",
+        ".ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/question-edits/470f33bb-24f1-4eb2-a76e-ce255a50ae41.json",
+        ".ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/question-edits/5799550f-7a5e-4e16-a921-a7551b075bc0.json",
+        ".ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/question-edits/64f87401-24fd-4f73-803f-d7f9a006c03a.json",
+        ".ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/question-edits/7d7ae21c-dcec-43f0-8403-b4117dcd1c89.json",
+        ".ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/question-edits/ae2dd470-af9a-49d3-b2ae-03968c51a4a1.json",
+        ".ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/question-edits/c47a6715-b32f-4649-8692-cc3e1a1a63b3.json",
+        ".ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/question-edits/c7d3979b-6241-480e-a37d-28cfd4af00d8.json",
+        ".ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/question-edits/cfc6c973-ed50-4948-9c47-48a8fadf5dd7.json",
+        ".ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/question-edits/d64a8825-1fc6-469c-85a7-b67fea123907.json"
+      ],
+      "diagnosed_blockers_resolved": [
+        "Removed learner-visible preserved UI placeholder blocks and internal replacement notes from normalized/candidate content.",
+        "Corrected linked-question locator from Section 20 to the verified RA 9266 IRR Section 3(4) scope list."
+      ],
+      "repaired_outputs": [
+        ".ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/normalized.md",
+        ".ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/candidate.md",
+        ".ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/sources.json",
+        ".ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/source-audit-evidence.json",
+        ".ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/component-usage.json"
+      ],
+      "compose": {
+        "candidate_matches_original": false,
+        "candidate_hash": "sha256:167c86ddfd4c651a1781714b3f03de430714fbfe958c51696c2a78a6a65fe708",
+        "blockers": 0
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": 0
+      },
+      "validation": {
+        "command": "bun run content-audit:validate -- --article-id 7e511a5d-edb1-4622-8f0f-29c1a631c145 --summary --dry-run",
+        "valid": true,
+        "blockers": 0,
+        "warnings": [],
+        "checked_at": "2026-05-10T16:39:34+08:00"
+      },
+      "candidate_sha256": "sha256:167c86ddfd4c651a1781714b3f03de430714fbfe958c51696c2a78a6a65fe708",
+      "normalized_sha256": "sha256:167c86ddfd4c651a1781714b3f03de430714fbfe958c51696c2a78a6a65fe708",
+      "source_audit_evidence": ".ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/source-audit-evidence.json",
+      "remaining_local_blockers": []
+    },
+    {
+      "article_id": "3d48211b-8add-4934-8dab-ae8bdae74035",
+      "slug": "lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement",
+      "title": "Prohibited Acts Criminal Penalties and Enforcement",
+      "folder": ".ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035",
+      "status": "LOCAL_PASS",
+      "selection_rationale": "High-value LEA legal/professional-practice article with linked questions and audited local raw source PDFs.",
+      "raw_sources": [
+        {
+          "key": "ra9266_irr",
+          "label": "RA 9266 IRR Architecture Act of 2004",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "checked_pdf_pages": [
+            14,
+            15,
+            16,
+            17,
+            18
+          ]
+        }
+      ],
+      "source_count": 1,
+      "question_edits_created": 10,
+      "question_edit_files": [
+        ".ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/question-edits/032522de-2664-4f28-9890-c071c8ff7958.json",
+        ".ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/question-edits/14eecec5-5617-4dea-96d5-d97a3e498ea2.json",
+        ".ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/question-edits/37651fee-ec17-4001-8ca1-1dedf550b986.json",
+        ".ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/question-edits/5b1da138-7d1f-42b4-9ab2-ba065604422a.json",
+        ".ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/question-edits/9e2f8b9a-0377-4a5c-8b74-1e92e96122b9.json",
+        ".ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/question-edits/a0bd7489-e809-4020-b40b-6aa2cd56d95d.json",
+        ".ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/question-edits/bd2377d1-d87e-40d9-9db3-0de5bfd8652f.json",
+        ".ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/question-edits/dacb2eeb-a43c-47fe-a044-fe3eed4ff9b3.json",
+        ".ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/question-edits/dd652c66-c567-4c87-834f-17eac39c7133.json",
+        ".ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/question-edits/e7d85e00-c727-4cf6-a9a1-b882d204aa15.json"
+      ],
+      "diagnosed_blockers_resolved": [
+        "Removed learner-visible preserved UI placeholder blocks and internal replacement notes from normalized/candidate content."
+      ],
+      "repaired_outputs": [
+        ".ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/normalized.md",
+        ".ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/candidate.md",
+        ".ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/sources.json",
+        ".ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/source-audit-evidence.json",
+        ".ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/component-usage.json"
+      ],
+      "compose": {
+        "candidate_matches_original": false,
+        "candidate_hash": "sha256:1d10455296c673d01347972f61c4a418931f0b017d926ac36a24d865c3e219b0",
+        "blockers": 0
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": 0
+      },
+      "validation": {
+        "command": "bun run content-audit:validate -- --article-id 3d48211b-8add-4934-8dab-ae8bdae74035 --summary --dry-run",
+        "valid": true,
+        "blockers": 0,
+        "warnings": [],
+        "checked_at": "2026-05-10T16:39:34+08:00"
+      },
+      "candidate_sha256": "sha256:1d10455296c673d01347972f61c4a418931f0b017d926ac36a24d865c3e219b0",
+      "normalized_sha256": "sha256:1d10455296c673d01347972f61c4a418931f0b017d926ac36a24d865c3e219b0",
+      "source_audit_evidence": ".ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/source-audit-evidence.json",
+      "remaining_local_blockers": []
+    },
+    {
+      "article_id": "1532843e-c068-4666-8c85-2e44982075c1",
+      "slug": "lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office",
+      "title": "PRBOA Composition Qualifications and Terms of Office",
+      "folder": ".ai/content-audit-export/articles/lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office--1532843e-c068-4666-8c85-2e44982075c1",
+      "status": "LOCAL_PASS",
+      "selection_rationale": "High-value LEA legal/professional-practice article with linked questions and audited local raw source PDFs.",
+      "raw_sources": [
+        {
+          "key": "ra9266_irr",
+          "label": "RA 9266 IRR Architecture Act of 2004",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "checked_pdf_pages": [
+            7,
+            8
+          ]
+        }
+      ],
+      "source_count": 1,
+      "question_edits_created": 10,
+      "question_edit_files": [
+        ".ai/content-audit-export/articles/lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office--1532843e-c068-4666-8c85-2e44982075c1/question-edits/0658f7fc-6b28-4f6e-a031-fc0ebabef8e5.json",
+        ".ai/content-audit-export/articles/lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office--1532843e-c068-4666-8c85-2e44982075c1/question-edits/5c083d41-aeca-4fa3-8910-df15564475fe.json",
+        ".ai/content-audit-export/articles/lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office--1532843e-c068-4666-8c85-2e44982075c1/question-edits/5d458084-7e5a-4dad-b26e-345108c54d0d.json",
+        ".ai/content-audit-export/articles/lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office--1532843e-c068-4666-8c85-2e44982075c1/question-edits/729b292d-7855-41ff-b926-aae5ae91b777.json",
+        ".ai/content-audit-export/articles/lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office--1532843e-c068-4666-8c85-2e44982075c1/question-edits/7ce02099-96a7-40ad-8faf-64f6a437a552.json",
+        ".ai/content-audit-export/articles/lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office--1532843e-c068-4666-8c85-2e44982075c1/question-edits/a2b5fcde-a74b-4d0b-b9c2-e772e671f512.json",
+        ".ai/content-audit-export/articles/lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office--1532843e-c068-4666-8c85-2e44982075c1/question-edits/a4aca274-c4bb-4f23-9188-9bceac28e9a6.json",
+        ".ai/content-audit-export/articles/lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office--1532843e-c068-4666-8c85-2e44982075c1/question-edits/bf893554-e3c1-486c-b99d-ad07c2b6ac23.json",
+        ".ai/content-audit-export/articles/lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office--1532843e-c068-4666-8c85-2e44982075c1/question-edits/eb2c6186-152b-45f4-8c04-bef82f0a63b0.json",
+        ".ai/content-audit-export/articles/lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office--1532843e-c068-4666-8c85-2e44982075c1/question-edits/f81a080d-b7f2-4d92-88a9-2332124cf7b1.json"
+      ],
+      "diagnosed_blockers_resolved": [
+        "Removed learner-visible preserved UI placeholder blocks and internal replacement notes from normalized/candidate content."
+      ],
+      "repaired_outputs": [
+        ".ai/content-audit-export/articles/lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office--1532843e-c068-4666-8c85-2e44982075c1/normalized.md",
+        ".ai/content-audit-export/articles/lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office--1532843e-c068-4666-8c85-2e44982075c1/candidate.md",
+        ".ai/content-audit-export/articles/lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office--1532843e-c068-4666-8c85-2e44982075c1/sources.json",
+        ".ai/content-audit-export/articles/lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office--1532843e-c068-4666-8c85-2e44982075c1/source-audit-evidence.json",
+        ".ai/content-audit-export/articles/lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office--1532843e-c068-4666-8c85-2e44982075c1/component-usage.json"
+      ],
+      "compose": {
+        "candidate_matches_original": false,
+        "candidate_hash": "sha256:10866df5e2ae4f6aa350d728250bc3f28650896ba07797b411ab232b1d9d5970",
+        "blockers": 0
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": 0
+      },
+      "validation": {
+        "command": "bun run content-audit:validate -- --article-id 1532843e-c068-4666-8c85-2e44982075c1 --summary --dry-run",
+        "valid": true,
+        "blockers": 0,
+        "warnings": [],
+        "checked_at": "2026-05-10T16:39:34+08:00"
+      },
+      "candidate_sha256": "sha256:10866df5e2ae4f6aa350d728250bc3f28650896ba07797b411ab232b1d9d5970",
+      "normalized_sha256": "sha256:10866df5e2ae4f6aa350d728250bc3f28650896ba07797b411ab232b1d9d5970",
+      "source_audit_evidence": ".ai/content-audit-export/articles/lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office--1532843e-c068-4666-8c85-2e44982075c1/source-audit-evidence.json",
+      "remaining_local_blockers": []
+    },
+    {
+      "article_id": "ab6d74a1-744c-4961-816a-b088bb707848",
+      "slug": "lea-prac-law-005-prboa-powers-and-functions-section-7-in-full",
+      "title": "PRBOA Powers and Functions Section 7 in Full",
+      "folder": ".ai/content-audit-export/articles/lea-prac-law-005-prboa-powers-and-functions-section-7-in-full--ab6d74a1-744c-4961-816a-b088bb707848",
+      "status": "LOCAL_PASS",
+      "selection_rationale": "High-value LEA legal/professional-practice article with linked questions and audited local raw source PDFs.",
+      "raw_sources": [
+        {
+          "key": "ra9266_irr",
+          "label": "RA 9266 IRR Architecture Act of 2004",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "checked_pdf_pages": [
+            8,
+            9
+          ]
+        }
+      ],
+      "source_count": 1,
+      "question_edits_created": 10,
+      "question_edit_files": [
+        ".ai/content-audit-export/articles/lea-prac-law-005-prboa-powers-and-functions-section-7-in-full--ab6d74a1-744c-4961-816a-b088bb707848/question-edits/13145816-156c-45ea-b398-01c581aceb61.json",
+        ".ai/content-audit-export/articles/lea-prac-law-005-prboa-powers-and-functions-section-7-in-full--ab6d74a1-744c-4961-816a-b088bb707848/question-edits/2f304c4d-f66b-4e8b-a741-c2d07d30a15e.json",
+        ".ai/content-audit-export/articles/lea-prac-law-005-prboa-powers-and-functions-section-7-in-full--ab6d74a1-744c-4961-816a-b088bb707848/question-edits/73030b31-b2f2-4ae5-810a-0ffc12e67007.json",
+        ".ai/content-audit-export/articles/lea-prac-law-005-prboa-powers-and-functions-section-7-in-full--ab6d74a1-744c-4961-816a-b088bb707848/question-edits/88d3ea68-4936-4cb1-8425-025c61cd3f51.json",
+        ".ai/content-audit-export/articles/lea-prac-law-005-prboa-powers-and-functions-section-7-in-full--ab6d74a1-744c-4961-816a-b088bb707848/question-edits/926e3a06-edb7-4617-ba84-521369613223.json",
+        ".ai/content-audit-export/articles/lea-prac-law-005-prboa-powers-and-functions-section-7-in-full--ab6d74a1-744c-4961-816a-b088bb707848/question-edits/af782bb3-3ff2-4f17-b655-60337518147a.json",
+        ".ai/content-audit-export/articles/lea-prac-law-005-prboa-powers-and-functions-section-7-in-full--ab6d74a1-744c-4961-816a-b088bb707848/question-edits/bba310f4-fefb-4a88-bd79-73fb1f5c863f.json",
+        ".ai/content-audit-export/articles/lea-prac-law-005-prboa-powers-and-functions-section-7-in-full--ab6d74a1-744c-4961-816a-b088bb707848/question-edits/e179007d-bbb5-40e1-9468-9c99805b3372.json",
+        ".ai/content-audit-export/articles/lea-prac-law-005-prboa-powers-and-functions-section-7-in-full--ab6d74a1-744c-4961-816a-b088bb707848/question-edits/e84de21b-133d-411e-9761-b26d4ebc1cc8.json",
+        ".ai/content-audit-export/articles/lea-prac-law-005-prboa-powers-and-functions-section-7-in-full--ab6d74a1-744c-4961-816a-b088bb707848/question-edits/f96f80fe-0919-4fbc-8a73-6f0235e73b5e.json"
+      ],
+      "diagnosed_blockers_resolved": [
+        "Removed learner-visible preserved UI placeholder blocks and internal replacement notes from normalized/candidate content."
+      ],
+      "repaired_outputs": [
+        ".ai/content-audit-export/articles/lea-prac-law-005-prboa-powers-and-functions-section-7-in-full--ab6d74a1-744c-4961-816a-b088bb707848/normalized.md",
+        ".ai/content-audit-export/articles/lea-prac-law-005-prboa-powers-and-functions-section-7-in-full--ab6d74a1-744c-4961-816a-b088bb707848/candidate.md",
+        ".ai/content-audit-export/articles/lea-prac-law-005-prboa-powers-and-functions-section-7-in-full--ab6d74a1-744c-4961-816a-b088bb707848/sources.json",
+        ".ai/content-audit-export/articles/lea-prac-law-005-prboa-powers-and-functions-section-7-in-full--ab6d74a1-744c-4961-816a-b088bb707848/source-audit-evidence.json",
+        ".ai/content-audit-export/articles/lea-prac-law-005-prboa-powers-and-functions-section-7-in-full--ab6d74a1-744c-4961-816a-b088bb707848/component-usage.json"
+      ],
+      "compose": {
+        "candidate_matches_original": false,
+        "candidate_hash": "sha256:bd90f08a255d5f2b392bd0138718ad659eb56d64f3aebf56bb8e2b8069791921",
+        "blockers": 0
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": 0
+      },
+      "validation": {
+        "command": "bun run content-audit:validate -- --article-id ab6d74a1-744c-4961-816a-b088bb707848 --summary --dry-run",
+        "valid": true,
+        "blockers": 0,
+        "warnings": [],
+        "checked_at": "2026-05-10T16:39:34+08:00"
+      },
+      "candidate_sha256": "sha256:bd90f08a255d5f2b392bd0138718ad659eb56d64f3aebf56bb8e2b8069791921",
+      "normalized_sha256": "sha256:bd90f08a255d5f2b392bd0138718ad659eb56d64f3aebf56bb8e2b8069791921",
+      "source_audit_evidence": ".ai/content-audit-export/articles/lea-prac-law-005-prboa-powers-and-functions-section-7-in-full--ab6d74a1-744c-4961-816a-b088bb707848/source-audit-evidence.json",
+      "remaining_local_blockers": []
+    },
+    {
+      "article_id": "6dc813a9-913d-47b5-9203-f59e8e909869",
+      "slug": "lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework",
+      "title": "Civil Code Article 1723 the 15 Year Liability Framework",
+      "folder": ".ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869",
+      "status": "LOCAL_PASS",
+      "selection_rationale": "High-value LEA legal/professional-practice article with linked questions and audited local raw source PDFs.",
+      "raw_sources": [
+        {
+          "key": "civil_code_1723",
+          "label": "Civil Code of the Philippines, Article 1723",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code of the Phils.pdf",
+          "raw_pdf_sha256": "sha256:95b8d7bf26fabeab9d27c661a53729273b69c88fc8565cc2a7146243df693400",
+          "checked_pdf_pages": [
+            123
+          ]
+        },
+        {
+          "key": "ra9266_irr",
+          "label": "RA 9266 IRR Architecture Act of 2004",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "checked_pdf_pages": [
+            2,
+            18,
+            19
+          ]
+        }
+      ],
+      "source_count": 2,
+      "question_edits_created": 10,
+      "question_edit_files": [
+        ".ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/question-edits/023017de-e780-41ba-aadd-3b647271ca32.json",
+        ".ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/question-edits/4a71ac43-563a-48f4-b2cb-891a5dc3d61f.json",
+        ".ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/question-edits/6e10941c-0f97-41d1-b596-f91b42f47356.json",
+        ".ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/question-edits/760d5fa8-81e7-4039-bccb-08b972eec248.json",
+        ".ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/question-edits/76fe3143-368f-4db5-9bb9-348640000e3a.json",
+        ".ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/question-edits/8578dc0a-0d66-42db-9904-5a6d4a700b46.json",
+        ".ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/question-edits/e4a0bc5f-3648-4ac0-ba70-3a46174589e7.json",
+        ".ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/question-edits/e966f7b8-e605-4866-884d-60b4ee51c577.json",
+        ".ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/question-edits/f93a2068-4c06-44ed-b97e-3c43eacee196.json",
+        ".ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/question-edits/fee18dcf-2494-4930-b87f-aa50f7b703a6.json"
+      ],
+      "diagnosed_blockers_resolved": [
+        "Removed learner-visible preserved UI placeholder blocks and internal replacement notes from normalized/candidate content.",
+        "Removed unsupported overstatement that Article 1723 imposes general strict liability beyond the collapse and cause conditions stated in the Civil Code."
+      ],
+      "repaired_outputs": [
+        ".ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/normalized.md",
+        ".ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/candidate.md",
+        ".ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/sources.json",
+        ".ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/source-audit-evidence.json",
+        ".ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/component-usage.json"
+      ],
+      "compose": {
+        "candidate_matches_original": false,
+        "candidate_hash": "sha256:235e759539b600dd06a1bc451f92e659387f3a6aee0455783de2a46a6f2ce7c0",
+        "blockers": 0
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": 0
+      },
+      "validation": {
+        "command": "bun run content-audit:validate -- --article-id 6dc813a9-913d-47b5-9203-f59e8e909869 --summary --dry-run",
+        "valid": true,
+        "blockers": 0,
+        "warnings": [],
+        "checked_at": "2026-05-10T16:39:34+08:00"
+      },
+      "candidate_sha256": "sha256:235e759539b600dd06a1bc451f92e659387f3a6aee0455783de2a46a6f2ce7c0",
+      "normalized_sha256": "sha256:235e759539b600dd06a1bc451f92e659387f3a6aee0455783de2a46a6f2ce7c0",
+      "source_audit_evidence": ".ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/source-audit-evidence.json",
+      "remaining_local_blockers": []
+    }
+  ],
+  "final_verification": {
+    "json_parse": "PASS: jq empty on selected article JSON files and batch-004 ledger",
+    "placeholder_internal_note_scan": "PASS: no matches in selected normalized.md/candidate.md for UI placeholders, replacement notes, suggestedSearchQuery, TODO/FIXME, unsupported/internal-note markers",
+    "content_audit_tests": "PASS: bun test scripts/content-audit/content-audit.test.ts; 27 pass, 0 fail",
+    "scoped_diff_check": "PASS: git diff --check over the five selected article folders, batch-004 ledger/report, and sync-state",
+    "full_diff_check": {
+      "status": "BLOCKED_BY_PRE_EXISTING_OUT_OF_SCOPE_WHITESPACE",
+      "command": "git diff --check",
+      "evidence": ".ai/03_plans/content-editorial-pipeline-2026-05-05/pdf-extraction-sample-output.generated.md has trailing whitespace outside the batch-004 work scope"
+    }
+  }
+}

@@ -1,0 +1,341 @@
+{
+  "batch_id": "source-audited-article-batch-025-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T18:30:00.000+08:00",
+  "article_id": "b912733e-1018-4559-bd53-6c4ca2506e0d",
+  "slug": "lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations",
+  "title": "Architectural Acoustics, Lighting Design, and Technical Specializations",
+  "status": "local_pass_ready_for_final_publishing_review",
+  "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations--b912733e-1018-4559-bd53-6c4ca2506e0d",
+  "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations--b912733e-1018-4559-bd53-6c4ca2506e0d",
+  "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations--b912733e-1018-4559-bd53-6c4ca2506e0d/question-edits",
+  "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations--b912733e-1018-4559-bd53-6c4ca2506e0d/question-edits",
+  "linked_questions": 10,
+  "question_edits_created": 10,
+  "source_safe_rewrite_question_edits": 10,
+  "classification": {
+    "content_domain": "professional_practice",
+    "requires_raw_pdf_audit": true,
+    "legal_or_code_source": true
+  },
+  "target": {
+    "article_id": "b912733e-1018-4559-bd53-6c4ca2506e0d",
+    "slug": "lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations",
+    "normalized_sha256": "sha256:a7012f25495daad01e7098b97d280b259e552e84b750d3f77f624e71d160bd3a",
+    "candidate_sha256": "sha256:a7012f25495daad01e7098b97d280b259e552e84b750d3f77f624e71d160bd3a"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_only": true,
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "source_audit": {
+    "checked_sources": [
+      {
+        "source_id": "uap-standards-local-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations",
+        "label": "UAP Document Standards of Professional Practice - Architectural Acoustics, Lighting Design, and Technical Specializations",
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "source_type": "professional_practice_pdf",
+        "source_locator": "UAP Standards lines 560-583; UAP Standards lines 660-689; UAP Standards lines 1138-1152",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "checked_markdown_lines": [
+          "UAP Standards lines 560-583",
+          "UAP Standards lines 660-689",
+          "UAP Standards lines 1138-1152"
+        ],
+        "use": "Local UAP standards source checked for SPP 203 specialized allied services and the lighting design service scope.",
+        "local_source_checked": true
+      },
+      {
+        "source_id": "spp203-specialized-allied-services-local",
+        "label": "SPP 203 - Specialized Allied Services",
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "source_type": "professional_practice_pdf",
+        "source_locator": "SPP 203 lines 101-135",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+        "raw_pdf_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+        "refined_markdown_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+        "checked_markdown_lines": [
+          "SPP 203 lines 101-135"
+        ],
+        "use": "Local SPP 203 raw PDF and refined markdown checked as the article-specific source for specialized allied services.",
+        "local_source_checked": true
+      }
+    ],
+    "source_locator": "UAP Standards lines 560-583, 660-689, 1138-1152; SPP 203 refined markdown lines 101-135",
+    "checked_markdown_lines": [
+      "UAP Standards lines 560-583",
+      "UAP Standards lines 660-689",
+      "UAP Standards lines 1138-1152",
+      "SPP 203 lines 101-135"
+    ]
+  },
+  "article_repair": {
+    "normalized_md_rewritten": true,
+    "candidate_md_pending_compose": false,
+    "placeholders_removed": true,
+    "internal_notes_removed": true,
+    "source_gap_notes_removed": true,
+    "unsupported_claims_rewritten_or_removed": true,
+    "candidate_md_composed": true,
+    "diff_report_generated": true
+  },
+  "claims": [
+    {
+      "claim_id": "batch-025-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations-question-001",
+      "claim_text": "Question 53445e63-acfb-4a3f-a3ba-388720f67116 / model BATCH-025-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations-001 rewritten to local source-safe form.",
+      "question_id": "53445e63-acfb-4a3f-a3ba-388720f67116",
+      "model_id": "BATCH-025-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations-001",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-local-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations",
+        "spp203-specialized-allied-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards lines 560-583, 660-689, 1138-1152; SPP 203 refined markdown lines 101-135",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-025-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations-question-002",
+      "claim_text": "Question 21051feb-3e54-40ec-a27d-672697596090 / model BATCH-025-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations-002 rewritten to local source-safe form.",
+      "question_id": "21051feb-3e54-40ec-a27d-672697596090",
+      "model_id": "BATCH-025-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations-002",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-local-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations",
+        "spp203-specialized-allied-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards lines 560-583, 660-689, 1138-1152; SPP 203 refined markdown lines 101-135",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-025-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations-question-003",
+      "claim_text": "Question 614b45c3-91ee-4eab-ab31-181b077f9fbf / model BATCH-025-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations-003 rewritten to local source-safe form.",
+      "question_id": "614b45c3-91ee-4eab-ab31-181b077f9fbf",
+      "model_id": "BATCH-025-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations-003",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-local-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations",
+        "spp203-specialized-allied-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards lines 560-583, 660-689, 1138-1152; SPP 203 refined markdown lines 101-135",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-025-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations-question-004",
+      "claim_text": "Question 1695f6e9-857b-476e-9825-7a671c13996c / model BATCH-025-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations-004 rewritten to local source-safe form.",
+      "question_id": "1695f6e9-857b-476e-9825-7a671c13996c",
+      "model_id": "BATCH-025-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations-004",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-local-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations",
+        "spp203-specialized-allied-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards lines 560-583, 660-689, 1138-1152; SPP 203 refined markdown lines 101-135",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-025-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations-question-005",
+      "claim_text": "Question 5fc485ae-8c6b-4196-a57b-e18c21d8bbaa / model BATCH-025-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations-005 rewritten to local source-safe form.",
+      "question_id": "5fc485ae-8c6b-4196-a57b-e18c21d8bbaa",
+      "model_id": "BATCH-025-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations-005",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-local-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations",
+        "spp203-specialized-allied-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards lines 560-583, 660-689, 1138-1152; SPP 203 refined markdown lines 101-135",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-025-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations-question-006",
+      "claim_text": "Question a5b92750-8d63-4321-a3ff-85ca017b3b4e / model BATCH-025-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations-006 rewritten to local source-safe form.",
+      "question_id": "a5b92750-8d63-4321-a3ff-85ca017b3b4e",
+      "model_id": "BATCH-025-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations-006",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-local-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations",
+        "spp203-specialized-allied-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards lines 560-583, 660-689, 1138-1152; SPP 203 refined markdown lines 101-135",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-025-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations-question-007",
+      "claim_text": "Question c10e5add-6408-4c7d-9e7c-89fb0017b442 / model BATCH-025-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations-007 rewritten to local source-safe form.",
+      "question_id": "c10e5add-6408-4c7d-9e7c-89fb0017b442",
+      "model_id": "BATCH-025-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations-007",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-local-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations",
+        "spp203-specialized-allied-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards lines 560-583, 660-689, 1138-1152; SPP 203 refined markdown lines 101-135",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-025-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations-question-008",
+      "claim_text": "Question d7bee01c-0d5f-464d-8c67-02b3a086a4fc / model BATCH-025-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations-008 rewritten to local source-safe form.",
+      "question_id": "d7bee01c-0d5f-464d-8c67-02b3a086a4fc",
+      "model_id": "BATCH-025-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations-008",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-local-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations",
+        "spp203-specialized-allied-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards lines 560-583, 660-689, 1138-1152; SPP 203 refined markdown lines 101-135",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-025-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations-question-009",
+      "claim_text": "Question e366f3d0-0b5b-40e9-9791-652a1d76b832 / model BATCH-025-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations-009 rewritten to local source-safe form.",
+      "question_id": "e366f3d0-0b5b-40e9-9791-652a1d76b832",
+      "model_id": "BATCH-025-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations-009",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-local-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations",
+        "spp203-specialized-allied-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards lines 560-583, 660-689, 1138-1152; SPP 203 refined markdown lines 101-135",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-025-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations-question-010",
+      "claim_text": "Question 33ce8f73-1908-4b48-b6f9-ec295230325a / model BATCH-025-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations-010 rewritten to local source-safe form.",
+      "question_id": "33ce8f73-1908-4b48-b6f9-ec295230325a",
+      "model_id": "BATCH-025-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations-010",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-local-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations",
+        "spp203-specialized-allied-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards lines 560-583, 660-689, 1138-1152; SPP 203 refined markdown lines 101-135",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    }
+  ],
+  "question_edits": [
+    {
+      "question_id": "53445e63-acfb-4a3f-a3ba-388720f67116",
+      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations--b912733e-1018-4559-bd53-6c4ca2506e0d/question-edits/53445e63-acfb-4a3f-a3ba-388720f67116.json",
+      "support_status": "PASS"
+    },
+    {
+      "question_id": "21051feb-3e54-40ec-a27d-672697596090",
+      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations--b912733e-1018-4559-bd53-6c4ca2506e0d/question-edits/21051feb-3e54-40ec-a27d-672697596090.json",
+      "support_status": "PASS"
+    },
+    {
+      "question_id": "614b45c3-91ee-4eab-ab31-181b077f9fbf",
+      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations--b912733e-1018-4559-bd53-6c4ca2506e0d/question-edits/614b45c3-91ee-4eab-ab31-181b077f9fbf.json",
+      "support_status": "PASS"
+    },
+    {
+      "question_id": "1695f6e9-857b-476e-9825-7a671c13996c",
+      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations--b912733e-1018-4559-bd53-6c4ca2506e0d/question-edits/1695f6e9-857b-476e-9825-7a671c13996c.json",
+      "support_status": "PASS"
+    },
+    {
+      "question_id": "5fc485ae-8c6b-4196-a57b-e18c21d8bbaa",
+      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations--b912733e-1018-4559-bd53-6c4ca2506e0d/question-edits/5fc485ae-8c6b-4196-a57b-e18c21d8bbaa.json",
+      "support_status": "PASS"
+    },
+    {
+      "question_id": "a5b92750-8d63-4321-a3ff-85ca017b3b4e",
+      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations--b912733e-1018-4559-bd53-6c4ca2506e0d/question-edits/a5b92750-8d63-4321-a3ff-85ca017b3b4e.json",
+      "support_status": "PASS"
+    },
+    {
+      "question_id": "c10e5add-6408-4c7d-9e7c-89fb0017b442",
+      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations--b912733e-1018-4559-bd53-6c4ca2506e0d/question-edits/c10e5add-6408-4c7d-9e7c-89fb0017b442.json",
+      "support_status": "PASS"
+    },
+    {
+      "question_id": "d7bee01c-0d5f-464d-8c67-02b3a086a4fc",
+      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations--b912733e-1018-4559-bd53-6c4ca2506e0d/question-edits/d7bee01c-0d5f-464d-8c67-02b3a086a4fc.json",
+      "support_status": "PASS"
+    },
+    {
+      "question_id": "e366f3d0-0b5b-40e9-9791-652a1d76b832",
+      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations--b912733e-1018-4559-bd53-6c4ca2506e0d/question-edits/e366f3d0-0b5b-40e9-9791-652a1d76b832.json",
+      "support_status": "PASS"
+    },
+    {
+      "question_id": "33ce8f73-1908-4b48-b6f9-ec295230325a",
+      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations--b912733e-1018-4559-bd53-6c4ca2506e0d/question-edits/33ce8f73-1908-4b48-b6f9-ec295230325a.json",
+      "support_status": "PASS"
+    }
+  ]
+}

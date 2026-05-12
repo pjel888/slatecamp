@@ -1,0 +1,247 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-074-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T02:15:02.998+08:00",
+  "target": {
+    "article_id": "7c0e2fa5-7f3d-419a-b592-50346ac7ab2f",
+    "slug": "lea-plan-003-02-what-you-need-to-know-for-the-lea",
+    "title": "Philippine Housing Classifications",
+    "article_folder": ".ai/content-audit-export/articles/lea-plan-003-02-what-you-need-to-know-for-the-lea--7c0e2fa5-7f3d-419a-b592-50346ac7ab2f",
+    "normalized_sha256": "sha256:e6aa18a01fb4009ba9755cfd68cd2438d73ed73ba130a339f717db480f976cea",
+    "candidate_sha256": "sha256:e6aa18a01fb4009ba9755cfd68cd2438d73ed73ba130a339f717db480f976cea",
+    "candidate_path": ".ai/content-audit-export/articles/lea-plan-003-02-what-you-need-to-know-for-the-lea--7c0e2fa5-7f3d-419a-b592-50346ac7ab2f/candidate.md"
+  },
+  "classification": {
+    "topic_family": "housing_classification",
+    "local_first_batch": "074",
+    "source_sensitivity": "legal_housing_standards",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "legal_or_code",
+    "requires_raw_pdf_audit": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdfs_checked_first": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "local_pdf_extraction_method": "python_pymupdf_local",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "bp220-irr-2008-b074",
+      "label": "Revised IRR of BP 220, 2008",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-220/Revised_IRR_BP220_2008.pdf",
+      "sha256": "sha256:7392741260c227647afe39de283f3efa979465692da8905e59be8857c8651614",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-220/Revised_IRR_BP220_2008.md",
+      "refined_markdown_sha256": "sha256:4d66a5ce3891d6405324d52ae8b874f75321da0e5f00213489be43d754d27be1",
+      "locator": "BP 220 refined markdown lines 105-147, 151-195, 215-264, 420-465, and 482-504; raw PDF pages 5-6, 8-10, and 12 checked by local PyMuPDF extraction"
+    },
+    {
+      "source_id": "pd957-irr-subdivision-condominium-b074",
+      "label": "PD 957 IRR - Subdivision and Condominium Buyers Protective Decree",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-957/PD 957 IRR - Subdivision and Condominium IRR.pdf",
+      "sha256": "sha256:1f9ab17a816885cfdbafafc03e3e9b64470a737447129a32a459836d6773f9ea",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-957/PD 957 IRR - Subdivision and Condominium IRR.md",
+      "refined_markdown_sha256": "sha256:0edd45f5293044779c45c36e5219904d3863cfa747d200864959fc1bf6a9ff7b",
+      "locator": "PD 957 refined markdown lines 105-123, 129-177, 198-224, 358-405, and 470-512; raw PDF pages 6-7 and 11-14 checked by local PyMuPDF extraction"
+    },
+    {
+      "source_id": "ra7279-udha-2009-b074",
+      "label": "RA 7279 Urban Development and Housing Act",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7279/RA 7279 Urban Development and Housing Act 2009.pdf",
+      "sha256": "sha256:23efa9c0278519d79ed424d9ced016b24619ebb42a19e75a05dc9bb8bf1c4696",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7279/RA 7279 Urban Development and Housing Act 2009.md",
+      "refined_markdown_sha256": "sha256:f52859fb18fec28c403348851c3e53caca2e678cb9cec43fbca28d8d5c3a323e",
+      "locator": "RA 7279 refined markdown lines 13-85, 111-131, 230-253, 257-313, and 319-329; raw PDF pages 1-7 checked by local PyMuPDF extraction"
+    },
+    {
+      "source_id": "ra11201-irr-dhsud-b074",
+      "label": "RA 11201 IRR - DHSUD Act Implementing Rules",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+      "sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+      "refined_markdown_sha256": "sha256:40f1a5041c69b3a4aea7c8ba138a9d570bc686bea48aa5618ea6423a6a719528",
+      "locator": "RA 11201 IRR refined markdown lines 17-36, 40-99, 134-162, and 187-204; raw PDF pages 1-7 checked by local PyMuPDF extraction"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-plan-003-02-what-you-need-to-know-for-the-lea-article-b074",
+      "claim_text": "Article and linked question edits are limited to checked BP 220, PD 957, RA 7279, and RA 11201 IRR housing-classification evidence.",
+      "claim_type": "article_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-220/Revised_IRR_BP220_2008.pdf",
+        "raw_pdf_sha256": "sha256:7392741260c227647afe39de283f3efa979465692da8905e59be8857c8651614",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-220/Revised_IRR_BP220_2008.md",
+        "source_locator": "BP 220 refined markdown lines 105-147, 151-195, 215-264, 420-465, and 482-504; raw PDF pages 5-6, 8-10, and 12 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Minimum design standards for economic and socialized housing; open market and medium cost subdivision standards; socialized housing for underprivileged and homeless citizens."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-0b9007bf-064f-4550-a673-4ce7b1b04ff1-ALE-PLAN-003-02-001-b074",
+      "claim_text": "Question 0b9007bf-064f-4550-a673-4ce7b1b04ff1 ALE-PLAN-003-02-001 was rewritten to the checked housing_classification source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-220/Revised_IRR_BP220_2008.pdf",
+        "raw_pdf_sha256": "sha256:7392741260c227647afe39de283f3efa979465692da8905e59be8857c8651614",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-220/Revised_IRR_BP220_2008.md",
+        "source_locator": "BP 220 refined markdown lines 105-147, 151-195, 215-264, 420-465, and 482-504; raw PDF pages 5-6, 8-10, and 12 checked by local PyMuPDF extraction; PD 957 refined markdown lines 105-123, 129-177, 198-224, 358-405, and 470-512; raw PDF pages 6-7 and 11-14 checked by local PyMuPDF extraction; RA 7279 refined markdown lines 13-85, 111-131, 230-253, 257-313, and 319-329; raw PDF pages 1-7 checked by local PyMuPDF extraction; RA 11201 IRR refined markdown lines 17-36, 40-99, 134-162, and 187-204; raw PDF pages 1-7 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Minimum design standards for economic and socialized housing; open market and medium cost subdivision standards; socialized housing for underprivileged and homeless citizens."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-227b7948-69a6-4e36-8789-7623a308e833-ALE-PLAN-003-02-005-b074",
+      "claim_text": "Question 227b7948-69a6-4e36-8789-7623a308e833 ALE-PLAN-003-02-005 was rewritten to the checked housing_classification source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-220/Revised_IRR_BP220_2008.pdf",
+        "raw_pdf_sha256": "sha256:7392741260c227647afe39de283f3efa979465692da8905e59be8857c8651614",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-220/Revised_IRR_BP220_2008.md",
+        "source_locator": "BP 220 refined markdown lines 105-147, 151-195, 215-264, 420-465, and 482-504; raw PDF pages 5-6, 8-10, and 12 checked by local PyMuPDF extraction; PD 957 refined markdown lines 105-123, 129-177, 198-224, 358-405, and 470-512; raw PDF pages 6-7 and 11-14 checked by local PyMuPDF extraction; RA 7279 refined markdown lines 13-85, 111-131, 230-253, 257-313, and 319-329; raw PDF pages 1-7 checked by local PyMuPDF extraction; RA 11201 IRR refined markdown lines 17-36, 40-99, 134-162, and 187-204; raw PDF pages 1-7 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Minimum design standards for economic and socialized housing; open market and medium cost subdivision standards; socialized housing for underprivileged and homeless citizens."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-2309b5fc-a042-4323-8996-adcdcffd775c-ALE-PLAN-003-02-010-b074",
+      "claim_text": "Question 2309b5fc-a042-4323-8996-adcdcffd775c ALE-PLAN-003-02-010 was rewritten to the checked housing_classification source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-220/Revised_IRR_BP220_2008.pdf",
+        "raw_pdf_sha256": "sha256:7392741260c227647afe39de283f3efa979465692da8905e59be8857c8651614",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-220/Revised_IRR_BP220_2008.md",
+        "source_locator": "BP 220 refined markdown lines 105-147, 151-195, 215-264, 420-465, and 482-504; raw PDF pages 5-6, 8-10, and 12 checked by local PyMuPDF extraction; PD 957 refined markdown lines 105-123, 129-177, 198-224, 358-405, and 470-512; raw PDF pages 6-7 and 11-14 checked by local PyMuPDF extraction; RA 7279 refined markdown lines 13-85, 111-131, 230-253, 257-313, and 319-329; raw PDF pages 1-7 checked by local PyMuPDF extraction; RA 11201 IRR refined markdown lines 17-36, 40-99, 134-162, and 187-204; raw PDF pages 1-7 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Minimum design standards for economic and socialized housing; open market and medium cost subdivision standards; socialized housing for underprivileged and homeless citizens."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-2384ffae-9525-4761-a0e6-cbda9ab10f05-ALE-PLAN-003-02-009-b074",
+      "claim_text": "Question 2384ffae-9525-4761-a0e6-cbda9ab10f05 ALE-PLAN-003-02-009 was rewritten to the checked housing_classification source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-220/Revised_IRR_BP220_2008.pdf",
+        "raw_pdf_sha256": "sha256:7392741260c227647afe39de283f3efa979465692da8905e59be8857c8651614",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-220/Revised_IRR_BP220_2008.md",
+        "source_locator": "BP 220 refined markdown lines 105-147, 151-195, 215-264, 420-465, and 482-504; raw PDF pages 5-6, 8-10, and 12 checked by local PyMuPDF extraction; PD 957 refined markdown lines 105-123, 129-177, 198-224, 358-405, and 470-512; raw PDF pages 6-7 and 11-14 checked by local PyMuPDF extraction; RA 7279 refined markdown lines 13-85, 111-131, 230-253, 257-313, and 319-329; raw PDF pages 1-7 checked by local PyMuPDF extraction; RA 11201 IRR refined markdown lines 17-36, 40-99, 134-162, and 187-204; raw PDF pages 1-7 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Minimum design standards for economic and socialized housing; open market and medium cost subdivision standards; socialized housing for underprivileged and homeless citizens."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-28dda3e0-c6b8-4cf2-9217-414bd56ceecb-ALE-PLAN-003-02-007-b074",
+      "claim_text": "Question 28dda3e0-c6b8-4cf2-9217-414bd56ceecb ALE-PLAN-003-02-007 was rewritten to the checked housing_classification source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-220/Revised_IRR_BP220_2008.pdf",
+        "raw_pdf_sha256": "sha256:7392741260c227647afe39de283f3efa979465692da8905e59be8857c8651614",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-220/Revised_IRR_BP220_2008.md",
+        "source_locator": "BP 220 refined markdown lines 105-147, 151-195, 215-264, 420-465, and 482-504; raw PDF pages 5-6, 8-10, and 12 checked by local PyMuPDF extraction; PD 957 refined markdown lines 105-123, 129-177, 198-224, 358-405, and 470-512; raw PDF pages 6-7 and 11-14 checked by local PyMuPDF extraction; RA 7279 refined markdown lines 13-85, 111-131, 230-253, 257-313, and 319-329; raw PDF pages 1-7 checked by local PyMuPDF extraction; RA 11201 IRR refined markdown lines 17-36, 40-99, 134-162, and 187-204; raw PDF pages 1-7 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Minimum design standards for economic and socialized housing; open market and medium cost subdivision standards; socialized housing for underprivileged and homeless citizens."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-6d31daa8-4a33-47a3-a307-9a547b31a54e-ALE-PLAN-003-02-006-b074",
+      "claim_text": "Question 6d31daa8-4a33-47a3-a307-9a547b31a54e ALE-PLAN-003-02-006 was rewritten to the checked housing_classification source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-220/Revised_IRR_BP220_2008.pdf",
+        "raw_pdf_sha256": "sha256:7392741260c227647afe39de283f3efa979465692da8905e59be8857c8651614",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-220/Revised_IRR_BP220_2008.md",
+        "source_locator": "BP 220 refined markdown lines 105-147, 151-195, 215-264, 420-465, and 482-504; raw PDF pages 5-6, 8-10, and 12 checked by local PyMuPDF extraction; PD 957 refined markdown lines 105-123, 129-177, 198-224, 358-405, and 470-512; raw PDF pages 6-7 and 11-14 checked by local PyMuPDF extraction; RA 7279 refined markdown lines 13-85, 111-131, 230-253, 257-313, and 319-329; raw PDF pages 1-7 checked by local PyMuPDF extraction; RA 11201 IRR refined markdown lines 17-36, 40-99, 134-162, and 187-204; raw PDF pages 1-7 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Minimum design standards for economic and socialized housing; open market and medium cost subdivision standards; socialized housing for underprivileged and homeless citizens."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-8a104e51-5afc-47fa-9850-cc211ace8fb5-ALE-PLAN-003-02-003-b074",
+      "claim_text": "Question 8a104e51-5afc-47fa-9850-cc211ace8fb5 ALE-PLAN-003-02-003 was rewritten to the checked housing_classification source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-220/Revised_IRR_BP220_2008.pdf",
+        "raw_pdf_sha256": "sha256:7392741260c227647afe39de283f3efa979465692da8905e59be8857c8651614",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-220/Revised_IRR_BP220_2008.md",
+        "source_locator": "BP 220 refined markdown lines 105-147, 151-195, 215-264, 420-465, and 482-504; raw PDF pages 5-6, 8-10, and 12 checked by local PyMuPDF extraction; PD 957 refined markdown lines 105-123, 129-177, 198-224, 358-405, and 470-512; raw PDF pages 6-7 and 11-14 checked by local PyMuPDF extraction; RA 7279 refined markdown lines 13-85, 111-131, 230-253, 257-313, and 319-329; raw PDF pages 1-7 checked by local PyMuPDF extraction; RA 11201 IRR refined markdown lines 17-36, 40-99, 134-162, and 187-204; raw PDF pages 1-7 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Minimum design standards for economic and socialized housing; open market and medium cost subdivision standards; socialized housing for underprivileged and homeless citizens."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-a675b69d-07f4-46a6-a971-6400a7f57adf-ALE-PLAN-003-02-002-b074",
+      "claim_text": "Question a675b69d-07f4-46a6-a971-6400a7f57adf ALE-PLAN-003-02-002 was rewritten to the checked housing_classification source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-220/Revised_IRR_BP220_2008.pdf",
+        "raw_pdf_sha256": "sha256:7392741260c227647afe39de283f3efa979465692da8905e59be8857c8651614",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-220/Revised_IRR_BP220_2008.md",
+        "source_locator": "BP 220 refined markdown lines 105-147, 151-195, 215-264, 420-465, and 482-504; raw PDF pages 5-6, 8-10, and 12 checked by local PyMuPDF extraction; PD 957 refined markdown lines 105-123, 129-177, 198-224, 358-405, and 470-512; raw PDF pages 6-7 and 11-14 checked by local PyMuPDF extraction; RA 7279 refined markdown lines 13-85, 111-131, 230-253, 257-313, and 319-329; raw PDF pages 1-7 checked by local PyMuPDF extraction; RA 11201 IRR refined markdown lines 17-36, 40-99, 134-162, and 187-204; raw PDF pages 1-7 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Minimum design standards for economic and socialized housing; open market and medium cost subdivision standards; socialized housing for underprivileged and homeless citizens."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-aff35374-81ed-426a-868b-86682bfeb7df-ALE-PLAN-003-02-004-b074",
+      "claim_text": "Question aff35374-81ed-426a-868b-86682bfeb7df ALE-PLAN-003-02-004 was rewritten to the checked housing_classification source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-220/Revised_IRR_BP220_2008.pdf",
+        "raw_pdf_sha256": "sha256:7392741260c227647afe39de283f3efa979465692da8905e59be8857c8651614",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-220/Revised_IRR_BP220_2008.md",
+        "source_locator": "BP 220 refined markdown lines 105-147, 151-195, 215-264, 420-465, and 482-504; raw PDF pages 5-6, 8-10, and 12 checked by local PyMuPDF extraction; PD 957 refined markdown lines 105-123, 129-177, 198-224, 358-405, and 470-512; raw PDF pages 6-7 and 11-14 checked by local PyMuPDF extraction; RA 7279 refined markdown lines 13-85, 111-131, 230-253, 257-313, and 319-329; raw PDF pages 1-7 checked by local PyMuPDF extraction; RA 11201 IRR refined markdown lines 17-36, 40-99, 134-162, and 187-204; raw PDF pages 1-7 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Minimum design standards for economic and socialized housing; open market and medium cost subdivision standards; socialized housing for underprivileged and homeless citizens."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-bcb2ae02-73dc-4a18-9193-d76376e91575-ALE-PLAN-003-02-008-b074",
+      "claim_text": "Question bcb2ae02-73dc-4a18-9193-d76376e91575 ALE-PLAN-003-02-008 was rewritten to the checked housing_classification source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-220/Revised_IRR_BP220_2008.pdf",
+        "raw_pdf_sha256": "sha256:7392741260c227647afe39de283f3efa979465692da8905e59be8857c8651614",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-220/Revised_IRR_BP220_2008.md",
+        "source_locator": "BP 220 refined markdown lines 105-147, 151-195, 215-264, 420-465, and 482-504; raw PDF pages 5-6, 8-10, and 12 checked by local PyMuPDF extraction; PD 957 refined markdown lines 105-123, 129-177, 198-224, 358-405, and 470-512; raw PDF pages 6-7 and 11-14 checked by local PyMuPDF extraction; RA 7279 refined markdown lines 13-85, 111-131, 230-253, 257-313, and 319-329; raw PDF pages 1-7 checked by local PyMuPDF extraction; RA 11201 IRR refined markdown lines 17-36, 40-99, 134-162, and 187-204; raw PDF pages 1-7 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Minimum design standards for economic and socialized housing; open market and medium cost subdivision standards; socialized housing for underprivileged and homeless citizens."
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "scenario_enrichment": {
+    "policy_status": "pending",
+    "eligibility_status": "eligible-deferred",
+    "blocker_status": "nonblocking",
+    "note": "No Real World Scenario section was added; source correctness and linked-question safety remained the blocking criteria."
+  },
+  "sme_review": {
+    "required": false,
+    "status": "PASS",
+    "reviewer": "codex-local-first-batch-074"
+  },
+  "source_file_hash": "sha256:be6a0dc7176047d4b9c851f7c9b4eb546581aab5dc057f7805b950ff94e4e716"
+}

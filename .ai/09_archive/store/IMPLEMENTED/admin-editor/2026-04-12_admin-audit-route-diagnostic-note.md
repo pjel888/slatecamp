@@ -1,7 +1,7 @@
 # Admin Audit Route Diagnostic Note
 
 ## Final diagnostic outcome
-**True `audit_logs` access was not restored in this environment.**  
+**True `audit_logs` access was not restored in this environment.**
 The environment still does not expose `public.audit_logs` in the schema cache.
 
 ## What was fixed in code

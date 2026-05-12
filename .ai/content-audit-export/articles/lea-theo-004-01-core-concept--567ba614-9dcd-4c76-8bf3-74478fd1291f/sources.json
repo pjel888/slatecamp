@@ -1,56 +1,35 @@
 {
   "article_id": "567ba614-9dcd-4c76-8bf3-74478fd1291f",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:dc27a04741734372eafec7a6d328b2467d406c03f6d13c52d723a4aaa29ac006",
-  "source_count": 4,
+  "source_count": 1,
   "sources": [
     {
-      "source_id": "e318ccbe-4d96-42c0-8594-caa5e2c072e1",
+      "source_id": "toa4-tropical-architecture-local-raw-pdf--b059-567ba614-01",
       "article_id": "567ba614-9dcd-4c76-8bf3-74478fd1291f",
-      "label": "Philippine Atmospheric, Geophysical and Astronomical Services Administration (PAGASA). \"Climate of the Philippines.\" https://www.pagasa.dost.gov.ph/information/climate-philippines",
+      "label": "TOA 4 Tropical Architecture - local raw PDF",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_raw_pdf",
+      "description": "TOA 4 Tropical Architecture - local raw PDF; local raw PDF checked first; refined markdown used only as locator. TOA 4 Tropical Architecture refined markdown lines 79-122, 281-283, 373-397, 420-467, and raw PDF pages 1, 5-11, 13, 15-18, 20-21, 23-24, 28, and 41.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:02.295633+00:00",
-      "updated_at": "2026-03-24T04:34:02.295633+00:00"
-    },
-    {
-      "source_id": "0cd346cd-d37a-4503-96ed-a262ddf65b99",
-      "article_id": "567ba614-9dcd-4c76-8bf3-74478fd1291f",
-      "label": "Department of Energy Philippines. \"Energy Conserving Design for Buildings.\" https://legacy.doe.gov.ph/gecdb",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 1,
-      "created_at": "2026-03-24T04:34:02.295633+00:00",
-      "updated_at": "2026-03-24T04:34:02.295633+00:00"
-    },
-    {
-      "source_id": "9eae6a1a-4306-4805-a55e-9fa5bfa56a4e",
-      "article_id": "567ba614-9dcd-4c76-8bf3-74478fd1291f",
-      "label": "Asian Disaster Reduction Center. \"Typhoon Belt and Philippines Climate Data.\" https://www.adrc.asia/nationinformation.php?NationCode=608&Lang=en",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:34:02.295633+00:00",
-      "updated_at": "2026-03-24T04:34:02.295633+00:00"
-    },
-    {
-      "source_id": "a96971c4-54ec-48a1-9f72-abea3a2f2397",
-      "article_id": "567ba614-9dcd-4c76-8bf3-74478fd1291f",
-      "label": "Climates to Travel. \"Philippines Climate: Temperature, Rain, When to Go.\" https://www.climatestotravel.com/climate/philippines",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:34:02.295633+00:00",
-      "updated_at": "2026-03-24T04:34:02.295633+00:00"
+      "created_at": "2026-05-11T20:48:00.000+08:00",
+      "updated_at": "2026-05-11T20:48:00.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+      "raw_pdf_sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+      "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+      "source_locator": "TOA 4 Tropical Architecture refined markdown lines 79-122, 281-283, 373-397, 420-467, and raw PDF pages 1, 5-11, 13, 15-18, 20-21, 23-24, 28, and 41",
+      "checked_markdown_lines": [
+        "TOA 4 Tropical Architecture refined markdown lines 79-122",
+        "TOA 4 Tropical Architecture refined markdown lines 281-283",
+        "TOA 4 Tropical Architecture refined markdown lines 373-397",
+        "TOA 4 Tropical Architecture refined markdown lines 420-467"
+      ],
+      "checked_pdf_pages": "raw PDF pages 1, 5-11, 13, 15-18, 20-21, 23-24, 28, 41, 71-78, 81-84, 87-90, 92-100, 104, 106-110, 121, 140, 143-148, 151, 163, 172, 180-181, and 187",
+      "local_audit_note": "Primary truth is the local raw PDF family; refined markdown line ranges are locator aids for the checked claims."
     }
-  ]
+  ],
+  "sources_hash": "sha256:2efab5954192c367b968006ddca7f34b83efd36ef2625c8c33813245d4ea9661"
 }

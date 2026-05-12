@@ -1,0 +1,653 @@
+{
+  "schema_version": "source-audited-local-first-ledger-v1",
+  "batch_id": "source-audited-article-batch-082-local-first",
+  "generated_at": "2026-05-12T06:15:00.000+08:00",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "blockers": [],
+  "supabase_push_attempted": false,
+  "deploy_attempted": false,
+  "commit_attempted": false,
+  "inherited_blocker_status": "Batch 081 blockers=0",
+  "selection_rule": "Next five unpassed sourceable LEA building-technology/materials/estimating article/question clusters with linked questions and local raw PDFs, excluding Batch 001 through Batch 081 recorded IDs.",
+  "articles": [
+    {
+      "article_id": "0b83bfa7-6ca2-48f8-9f23-52428c85d02a",
+      "slug": "lea-matl-010-08-core-concept",
+      "title": "Earthwork volume",
+      "topic_family": "earthwork volume",
+      "folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-010-08-core-concept--0b83bfa7-6ca2-48f8-9f23-52428c85d02a",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-010-08-core-concept--0b83bfa7-6ca2-48f8-9f23-52428c85d02a/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "normalized_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-010-08-core-concept--0b83bfa7-6ca2-48f8-9f23-52428c85d02a/normalized.md",
+      "candidate_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-010-08-core-concept--0b83bfa7-6ca2-48f8-9f23-52428c85d02a/candidate.md",
+      "sources_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-010-08-core-concept--0b83bfa7-6ca2-48f8-9f23-52428c85d02a/sources.json",
+      "evidence_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-010-08-core-concept--0b83bfa7-6ca2-48f8-9f23-52428c85d02a/source-audit-evidence.json",
+      "candidate_hash": "sha256:a56f8f63c9cf76e00de069548f28cef24b021c9ba08767c1658b5c4500f756d6",
+      "source_claims": 11,
+      "scenario_enrichment": "eligible-deferred"
+    },
+    {
+      "article_id": "18c848be-4850-489e-882d-b29537a69f06",
+      "slug": "lea-matl-001-03-core-concept",
+      "title": "Wood Connections",
+      "topic_family": "wood connections",
+      "folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-001-03-core-concept--18c848be-4850-489e-882d-b29537a69f06",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-001-03-core-concept--18c848be-4850-489e-882d-b29537a69f06/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "normalized_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-001-03-core-concept--18c848be-4850-489e-882d-b29537a69f06/normalized.md",
+      "candidate_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-001-03-core-concept--18c848be-4850-489e-882d-b29537a69f06/candidate.md",
+      "sources_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-001-03-core-concept--18c848be-4850-489e-882d-b29537a69f06/sources.json",
+      "evidence_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-001-03-core-concept--18c848be-4850-489e-882d-b29537a69f06/source-audit-evidence.json",
+      "candidate_hash": "sha256:15e7236de1fcbb7d267f5af8fd6e005138e1283cc8788e719a3edbe8684a04c2",
+      "source_claims": 11,
+      "scenario_enrichment": "eligible-deferred"
+    },
+    {
+      "article_id": "c1f7906b-35f8-460b-bb03-f996ad25658e",
+      "slug": "lea-matl-001-04-core-concept",
+      "title": "Wood Preservation and Treatment",
+      "topic_family": "wood preservation",
+      "folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-001-04-core-concept--c1f7906b-35f8-460b-bb03-f996ad25658e",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-001-04-core-concept--c1f7906b-35f8-460b-bb03-f996ad25658e/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "normalized_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-001-04-core-concept--c1f7906b-35f8-460b-bb03-f996ad25658e/normalized.md",
+      "candidate_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-001-04-core-concept--c1f7906b-35f8-460b-bb03-f996ad25658e/candidate.md",
+      "sources_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-001-04-core-concept--c1f7906b-35f8-460b-bb03-f996ad25658e/sources.json",
+      "evidence_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-001-04-core-concept--c1f7906b-35f8-460b-bb03-f996ad25658e/source-audit-evidence.json",
+      "candidate_hash": "sha256:92724eebf20c37765a679b1c8ae7df4e534e02009bb6b03a67ccfc929179b940",
+      "source_claims": 11,
+      "scenario_enrichment": "eligible-deferred"
+    },
+    {
+      "article_id": "a38effc8-a3b8-48e8-8cce-cfd163a6e32e",
+      "slug": "lea-matl-001-05-core-concept",
+      "title": "Board Foot Measurement",
+      "topic_family": "board foot measurement",
+      "folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-001-05-core-concept--a38effc8-a3b8-48e8-8cce-cfd163a6e32e",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-001-05-core-concept--a38effc8-a3b8-48e8-8cce-cfd163a6e32e/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "normalized_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-001-05-core-concept--a38effc8-a3b8-48e8-8cce-cfd163a6e32e/normalized.md",
+      "candidate_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-001-05-core-concept--a38effc8-a3b8-48e8-8cce-cfd163a6e32e/candidate.md",
+      "sources_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-001-05-core-concept--a38effc8-a3b8-48e8-8cce-cfd163a6e32e/sources.json",
+      "evidence_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-001-05-core-concept--a38effc8-a3b8-48e8-8cce-cfd163a6e32e/source-audit-evidence.json",
+      "candidate_hash": "sha256:9c53f7b0856cc80c1966a5e707c4a6fcaaacae8cee07bb6c8327997c3386e0e0",
+      "source_claims": 11,
+      "scenario_enrichment": "eligible-deferred"
+    },
+    {
+      "article_id": "42ec69b2-114a-423b-bba3-12cd5564f994",
+      "slug": "lea-matl-002-03-core-concept",
+      "title": "Masonry units",
+      "topic_family": "masonry units",
+      "folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-002-03-core-concept--42ec69b2-114a-423b-bba3-12cd5564f994",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-002-03-core-concept--42ec69b2-114a-423b-bba3-12cd5564f994/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "normalized_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-002-03-core-concept--42ec69b2-114a-423b-bba3-12cd5564f994/normalized.md",
+      "candidate_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-002-03-core-concept--42ec69b2-114a-423b-bba3-12cd5564f994/candidate.md",
+      "sources_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-002-03-core-concept--42ec69b2-114a-423b-bba3-12cd5564f994/sources.json",
+      "evidence_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-002-03-core-concept--42ec69b2-114a-423b-bba3-12cd5564f994/source-audit-evidence.json",
+      "candidate_hash": "sha256:af6df822668d14300f15ddcb18f4f27b4c8d1f6da3f4741bec445b31ca1db0a2",
+      "source_claims": 11,
+      "scenario_enrichment": "eligible-deferred"
+    }
+  ],
+  "counts": {
+    "articles": 5,
+    "linked_questions": 50,
+    "question_edits": 50,
+    "json_files_parsed": 105,
+    "source_hash_checks": 30,
+    "unique_raw_pdfs_used_in_checked_sources": 5,
+    "expected_raw_source_families_hash_checked": 10,
+    "source_evidence_claims": 55
+  },
+  "source_evidence": {
+    "checked_source_families": [
+      {
+        "label": "Estimating Excavation",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Estimating Excavation.pdf",
+        "expected": "sha256:5ef347fe40c8dfa4a1e3d3f937d266e431ce69bcbce09390f46917ee9e5b6fff",
+        "actual": "sha256:5ef347fe40c8dfa4a1e3d3f937d266e431ce69bcbce09390f46917ee9e5b6fff",
+        "pass": true,
+        "locator": "Estimating Excavation refined markdown lines 1120-1260, 1580-1605, and 1980-1992; raw PDF pages 42, 45, 49-50, and 56 checked by local PyMuPDF extraction."
+      },
+      {
+        "label": "Building Construction Illustrated, 5th Edition",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "expected": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "actual": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "pass": true,
+        "locator": "Building Construction Illustrated refined markdown lines 2141-2153; raw PDF hash checked locally."
+      },
+      {
+        "label": "Woods and Plastics Lecture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Woods and Plastics Lecture.pdf",
+        "expected": "sha256:39c03f9cea2f61b1859620a606b139a3a1c5897a68ef51c954432e15ea722d61",
+        "actual": "sha256:39c03f9cea2f61b1859620a606b139a3a1c5897a68ef51c954432e15ea722d61",
+        "pass": true,
+        "locator": "Woods and Plastics Lecture refined markdown lines 38-90, 108-245, and 285-520; raw PDF pages 3, 16, 22, and 34 checked by local PyMuPDF extraction."
+      },
+      {
+        "label": "George Salvan Architectural Building Materials",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+        "expected": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+        "actual": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+        "pass": true,
+        "locator": "George Salvan Architectural Building Materials refined markdown lines 1280-1435, 1569, and 2682-2725; raw PDF pages 47 and 50 checked by local PyMuPDF extraction."
+      },
+      {
+        "label": "Masonry Lecture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Masonry Lecture.pdf",
+        "expected": "sha256:4e3fc56f93fce4d78c98bdaff6b8a41eaf0fd4389a11b69bb42d66fc996d6bd1",
+        "actual": "sha256:4e3fc56f93fce4d78c98bdaff6b8a41eaf0fd4389a11b69bb42d66fc996d6bd1",
+        "pass": true,
+        "locator": "Masonry Lecture refined markdown lines 109-390; raw PDF pages 13, 26-30 checked by local PyMuPDF extraction."
+      }
+    ],
+    "supplemental_expected_source_families": [
+      {
+        "label": "Architectural Cost Estimates By Max Fajardo",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+        "sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "pass": true,
+        "role": "supplemental_expected_family"
+      },
+      {
+        "label": "Building Technology - Siteworks",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Technology - Siteworks.pdf",
+        "sha256": "sha256:9f498be4a288011a0e8b750d4bb8316afebf07a908993620579c311da30e02a2",
+        "pass": true,
+        "role": "supplemental_expected_family"
+      },
+      {
+        "label": "Sitework Lecture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Sitework Lecture.pdf",
+        "sha256": "sha256:a469e97d2c4b842f443864c658fc4359ef2787a2b009b9fbafc1afbd1da25ff6",
+        "pass": true,
+        "role": "supplemental_expected_family"
+      },
+      {
+        "label": "Common Lumber Defects",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Common Lumber Defects.pdf",
+        "sha256": "sha256:1d4a6d8c9ccd2fe84d728889c61daa434b00d675a17ce3328730641cc81b76dd",
+        "pass": true,
+        "role": "supplemental_expected_family"
+      },
+      {
+        "label": "PD 1096 RIRR 2004 DPWH Official cross-check",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "pass": true,
+        "role": "supplemental_expected_family"
+      }
+    ]
+  },
+  "validation": {
+    "compose": {
+      "pass": true,
+      "passed_articles": 5,
+      "failed_articles": 0,
+      "results": [
+        {
+          "article_id": "0b83bfa7-6ca2-48f8-9f23-52428c85d02a",
+          "slug": "lea-matl-010-08-core-concept",
+          "command": "bun run content-audit:compose -- --article-id 0b83bfa7-6ca2-48f8-9f23-52428c85d02a --overwrite --strict",
+          "pass": true,
+          "blockers": 0
+        },
+        {
+          "article_id": "18c848be-4850-489e-882d-b29537a69f06",
+          "slug": "lea-matl-001-03-core-concept",
+          "command": "bun run content-audit:compose -- --article-id 18c848be-4850-489e-882d-b29537a69f06 --overwrite --strict",
+          "pass": true,
+          "blockers": 0
+        },
+        {
+          "article_id": "c1f7906b-35f8-460b-bb03-f996ad25658e",
+          "slug": "lea-matl-001-04-core-concept",
+          "command": "bun run content-audit:compose -- --article-id c1f7906b-35f8-460b-bb03-f996ad25658e --overwrite --strict",
+          "pass": true,
+          "blockers": 0
+        },
+        {
+          "article_id": "a38effc8-a3b8-48e8-8cce-cfd163a6e32e",
+          "slug": "lea-matl-001-05-core-concept",
+          "command": "bun run content-audit:compose -- --article-id a38effc8-a3b8-48e8-8cce-cfd163a6e32e --overwrite --strict",
+          "pass": true,
+          "blockers": 0
+        },
+        {
+          "article_id": "42ec69b2-114a-423b-bba3-12cd5564f994",
+          "slug": "lea-matl-002-03-core-concept",
+          "command": "bun run content-audit:compose -- --article-id 42ec69b2-114a-423b-bba3-12cd5564f994 --overwrite --strict",
+          "pass": true,
+          "blockers": 0
+        }
+      ]
+    },
+    "diff": {
+      "pass": true,
+      "passed_articles": 5,
+      "failed_articles": 0,
+      "safe_to_push_articles": 5,
+      "results": [
+        {
+          "article_id": "0b83bfa7-6ca2-48f8-9f23-52428c85d02a",
+          "slug": "lea-matl-010-08-core-concept",
+          "command": "bun run content-audit:diff -- --article-id 0b83bfa7-6ca2-48f8-9f23-52428c85d02a --summary --strict",
+          "pass": true,
+          "safe_to_push": true,
+          "blockers": 0
+        },
+        {
+          "article_id": "18c848be-4850-489e-882d-b29537a69f06",
+          "slug": "lea-matl-001-03-core-concept",
+          "command": "bun run content-audit:diff -- --article-id 18c848be-4850-489e-882d-b29537a69f06 --summary --strict",
+          "pass": true,
+          "safe_to_push": true,
+          "blockers": 0
+        },
+        {
+          "article_id": "c1f7906b-35f8-460b-bb03-f996ad25658e",
+          "slug": "lea-matl-001-04-core-concept",
+          "command": "bun run content-audit:diff -- --article-id c1f7906b-35f8-460b-bb03-f996ad25658e --summary --strict",
+          "pass": true,
+          "safe_to_push": true,
+          "blockers": 0
+        },
+        {
+          "article_id": "a38effc8-a3b8-48e8-8cce-cfd163a6e32e",
+          "slug": "lea-matl-001-05-core-concept",
+          "command": "bun run content-audit:diff -- --article-id a38effc8-a3b8-48e8-8cce-cfd163a6e32e --summary --strict",
+          "pass": true,
+          "safe_to_push": true,
+          "blockers": 0
+        },
+        {
+          "article_id": "42ec69b2-114a-423b-bba3-12cd5564f994",
+          "slug": "lea-matl-002-03-core-concept",
+          "command": "bun run content-audit:diff -- --article-id 42ec69b2-114a-423b-bba3-12cd5564f994 --summary --strict",
+          "pass": true,
+          "safe_to_push": true,
+          "blockers": 0
+        }
+      ]
+    },
+    "validate": {
+      "pass": true,
+      "passed_articles": 5,
+      "failed_articles": 0,
+      "expected_warnings_only": true,
+      "results": [
+        {
+          "article_id": "0b83bfa7-6ca2-48f8-9f23-52428c85d02a",
+          "slug": "lea-matl-010-08-core-concept",
+          "command": "bun run content-audit:validate -- --article-id 0b83bfa7-6ca2-48f8-9f23-52428c85d02a --summary",
+          "pass": true,
+          "valid": true,
+          "blockers": 0,
+          "warnings": [
+            "component-usage.json has not been generated for this article yet"
+          ]
+        },
+        {
+          "article_id": "18c848be-4850-489e-882d-b29537a69f06",
+          "slug": "lea-matl-001-03-core-concept",
+          "command": "bun run content-audit:validate -- --article-id 18c848be-4850-489e-882d-b29537a69f06 --summary",
+          "pass": true,
+          "valid": true,
+          "blockers": 0,
+          "warnings": [
+            "component-usage.json has not been generated for this article yet"
+          ]
+        },
+        {
+          "article_id": "c1f7906b-35f8-460b-bb03-f996ad25658e",
+          "slug": "lea-matl-001-04-core-concept",
+          "command": "bun run content-audit:validate -- --article-id c1f7906b-35f8-460b-bb03-f996ad25658e --summary",
+          "pass": true,
+          "valid": true,
+          "blockers": 0,
+          "warnings": [
+            "component-usage.json has not been generated for this article yet"
+          ]
+        },
+        {
+          "article_id": "a38effc8-a3b8-48e8-8cce-cfd163a6e32e",
+          "slug": "lea-matl-001-05-core-concept",
+          "command": "bun run content-audit:validate -- --article-id a38effc8-a3b8-48e8-8cce-cfd163a6e32e --summary",
+          "pass": true,
+          "valid": true,
+          "blockers": 0,
+          "warnings": [
+            "component-usage.json has not been generated for this article yet"
+          ]
+        },
+        {
+          "article_id": "42ec69b2-114a-423b-bba3-12cd5564f994",
+          "slug": "lea-matl-002-03-core-concept",
+          "command": "bun run content-audit:validate -- --article-id 42ec69b2-114a-423b-bba3-12cd5564f994 --summary",
+          "pass": true,
+          "valid": true,
+          "blockers": 0,
+          "warnings": [
+            "component-usage.json has not been generated for this article yet"
+          ]
+        }
+      ]
+    },
+    "ui_block_edits": {
+      "pass": true,
+      "passed_articles": 5,
+      "failed_articles": 0,
+      "results": [
+        {
+          "article_id": "0b83bfa7-6ca2-48f8-9f23-52428c85d02a",
+          "slug": "lea-matl-010-08-core-concept",
+          "command": "bun run content-audit:ui-block-edits -- --article-id 0b83bfa7-6ca2-48f8-9f23-52428c85d02a",
+          "pass": true,
+          "valid": true,
+          "blockers": 0,
+          "warnings": 0
+        },
+        {
+          "article_id": "18c848be-4850-489e-882d-b29537a69f06",
+          "slug": "lea-matl-001-03-core-concept",
+          "command": "bun run content-audit:ui-block-edits -- --article-id 18c848be-4850-489e-882d-b29537a69f06",
+          "pass": true,
+          "valid": true,
+          "blockers": 0,
+          "warnings": 0
+        },
+        {
+          "article_id": "c1f7906b-35f8-460b-bb03-f996ad25658e",
+          "slug": "lea-matl-001-04-core-concept",
+          "command": "bun run content-audit:ui-block-edits -- --article-id c1f7906b-35f8-460b-bb03-f996ad25658e",
+          "pass": true,
+          "valid": true,
+          "blockers": 0,
+          "warnings": 0
+        },
+        {
+          "article_id": "a38effc8-a3b8-48e8-8cce-cfd163a6e32e",
+          "slug": "lea-matl-001-05-core-concept",
+          "command": "bun run content-audit:ui-block-edits -- --article-id a38effc8-a3b8-48e8-8cce-cfd163a6e32e",
+          "pass": true,
+          "valid": true,
+          "blockers": 0,
+          "warnings": 0
+        },
+        {
+          "article_id": "42ec69b2-114a-423b-bba3-12cd5564f994",
+          "slug": "lea-matl-002-03-core-concept",
+          "command": "bun run content-audit:ui-block-edits -- --article-id 42ec69b2-114a-423b-bba3-12cd5564f994",
+          "pass": true,
+          "valid": true,
+          "blockers": 0,
+          "warnings": 0
+        }
+      ]
+    },
+    "scoped_json_parse": {
+      "pass": true,
+      "json_files_parsed": 105,
+      "failures": []
+    },
+    "placeholder_internal_note_source_gap_scan": {
+      "pass": true,
+      "matches": 0,
+      "scope": "Batch 082 normalized.md, candidate.md, sources.json, source-audit-evidence.json, and question-edits/*.json; original.md excluded as immutable baseline export.",
+      "pattern": "SLATECAMP_UI_BLOCK|status=\"placeholder\"|Future diagram|TODO|FIXME|TBD|citation needed|source needed|unsupported claim|internal note|do not publish|draft note|AI-generated|ChatGPT|LLM|<placeholder>|[PLACEHOLDER]"
+    },
+    "source_hash_checks": {
+      "pass": true,
+      "checked_source_raw_and_refined_checks": 10,
+      "supplemental_expected_family_raw_and_refined_checks": 20,
+      "total_checks": 30,
+      "failures": [],
+      "checked_sources": [
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Estimating Excavation.pdf",
+          "expected": "sha256:5ef347fe40c8dfa4a1e3d3f937d266e431ce69bcbce09390f46917ee9e5b6fff",
+          "actual": "sha256:5ef347fe40c8dfa4a1e3d3f937d266e431ce69bcbce09390f46917ee9e5b6fff",
+          "pass": true
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Estimating Excavation.md",
+          "expected": "sha256:c62cb8751aa5c66ef7ae7fe9d4d0948913eb945de639399ac5a946aed683dd4c",
+          "actual": "sha256:c62cb8751aa5c66ef7ae7fe9d4d0948913eb945de639399ac5a946aed683dd4c",
+          "pass": true
+        },
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+          "expected": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+          "actual": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+          "pass": true
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+          "expected": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+          "actual": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+          "pass": true
+        },
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Woods and Plastics Lecture.pdf",
+          "expected": "sha256:39c03f9cea2f61b1859620a606b139a3a1c5897a68ef51c954432e15ea722d61",
+          "actual": "sha256:39c03f9cea2f61b1859620a606b139a3a1c5897a68ef51c954432e15ea722d61",
+          "pass": true
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Woods and Plastics Lecture.md",
+          "expected": "sha256:7b78053474dfa985c87d49c632e3f8626c5518f13bb9ccd16b901d85d423df27",
+          "actual": "sha256:7b78053474dfa985c87d49c632e3f8626c5518f13bb9ccd16b901d85d423df27",
+          "pass": true
+        },
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+          "expected": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+          "actual": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+          "pass": true
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+          "expected": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+          "actual": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+          "pass": true
+        },
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Masonry Lecture.pdf",
+          "expected": "sha256:4e3fc56f93fce4d78c98bdaff6b8a41eaf0fd4389a11b69bb42d66fc996d6bd1",
+          "actual": "sha256:4e3fc56f93fce4d78c98bdaff6b8a41eaf0fd4389a11b69bb42d66fc996d6bd1",
+          "pass": true
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Masonry Lecture.md",
+          "expected": "sha256:0386c6ebd73ac17ff6dc3cee97b63cd83b7e4168d8f3cf50c41a3347935d7ab4",
+          "actual": "sha256:0386c6ebd73ac17ff6dc3cee97b63cd83b7e4168d8f3cf50c41a3347935d7ab4",
+          "pass": true
+        }
+      ],
+      "supplemental_expected_families": [
+        {
+          "label": "Estimating Excavation",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Estimating Excavation.pdf",
+          "sha256": "sha256:5ef347fe40c8dfa4a1e3d3f937d266e431ce69bcbce09390f46917ee9e5b6fff",
+          "pass": true,
+          "role": "checked_source"
+        },
+        {
+          "label": "Estimating Excavation refined markdown",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Estimating Excavation.md",
+          "sha256": "sha256:c62cb8751aa5c66ef7ae7fe9d4d0948913eb945de639399ac5a946aed683dd4c",
+          "pass": true,
+          "role": "checked_source_refined"
+        },
+        {
+          "label": "Architectural Cost Estimates By Max Fajardo",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+          "sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+          "pass": true,
+          "role": "supplemental_expected_family"
+        },
+        {
+          "label": "Architectural Cost Estimates By Max Fajardo refined markdown",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+          "sha256": "sha256:223efdc2dd963208910027eba08fe87b4919de1a04b76cac095bbd76a7a9a962",
+          "pass": true,
+          "role": "supplemental_expected_family_refined"
+        },
+        {
+          "label": "Building Technology - Siteworks",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Technology - Siteworks.pdf",
+          "sha256": "sha256:9f498be4a288011a0e8b750d4bb8316afebf07a908993620579c311da30e02a2",
+          "pass": true,
+          "role": "supplemental_expected_family"
+        },
+        {
+          "label": "Building Technology - Siteworks refined markdown",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Technology - Siteworks.md",
+          "sha256": "sha256:3e34ffc7b60b926a2cd75fbde6239ff3f05e7e53993d8cb6f8d5f1d865c64296",
+          "pass": true,
+          "role": "supplemental_expected_family_refined"
+        },
+        {
+          "label": "Sitework Lecture",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Sitework Lecture.pdf",
+          "sha256": "sha256:a469e97d2c4b842f443864c658fc4359ef2787a2b009b9fbafc1afbd1da25ff6",
+          "pass": true,
+          "role": "supplemental_expected_family"
+        },
+        {
+          "label": "Sitework Lecture refined markdown",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Sitework Lecture.md",
+          "sha256": "sha256:e761c9b38b9d0c07bd6053692337109a218169ba791e8f074fa40842d3972af2",
+          "pass": true,
+          "role": "supplemental_expected_family_refined"
+        },
+        {
+          "label": "Common Lumber Defects",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Common Lumber Defects.pdf",
+          "sha256": "sha256:1d4a6d8c9ccd2fe84d728889c61daa434b00d675a17ce3328730641cc81b76dd",
+          "pass": true,
+          "role": "supplemental_expected_family"
+        },
+        {
+          "label": "Common Lumber Defects refined markdown",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Common Lumber Defects.md",
+          "sha256": "sha256:560066fe8f40487582a67c8e16da8d3e3e53b21cba24b444faa02c0538266127",
+          "pass": true,
+          "role": "supplemental_expected_family_refined"
+        },
+        {
+          "label": "Woods and Plastics Lecture",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Woods and Plastics Lecture.pdf",
+          "sha256": "sha256:39c03f9cea2f61b1859620a606b139a3a1c5897a68ef51c954432e15ea722d61",
+          "pass": true,
+          "role": "checked_source"
+        },
+        {
+          "label": "Woods and Plastics Lecture refined markdown",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Woods and Plastics Lecture.md",
+          "sha256": "sha256:7b78053474dfa985c87d49c632e3f8626c5518f13bb9ccd16b901d85d423df27",
+          "pass": true,
+          "role": "checked_source_refined"
+        },
+        {
+          "label": "George Salvan Architectural Building Materials",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+          "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+          "pass": true,
+          "role": "checked_source"
+        },
+        {
+          "label": "George Salvan Architectural Building Materials refined markdown",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+          "sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+          "pass": true,
+          "role": "checked_source_refined"
+        },
+        {
+          "label": "Building Construction Illustrated, 5th Edition",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+          "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+          "pass": true,
+          "role": "checked_source"
+        },
+        {
+          "label": "Building Construction Illustrated, 5th Edition refined markdown",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+          "sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+          "pass": true,
+          "role": "checked_source_refined"
+        },
+        {
+          "label": "Masonry Lecture",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Masonry Lecture.pdf",
+          "sha256": "sha256:4e3fc56f93fce4d78c98bdaff6b8a41eaf0fd4389a11b69bb42d66fc996d6bd1",
+          "pass": true,
+          "role": "checked_source"
+        },
+        {
+          "label": "Masonry Lecture refined markdown",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Masonry Lecture.md",
+          "sha256": "sha256:0386c6ebd73ac17ff6dc3cee97b63cd83b7e4168d8f3cf50c41a3347935d7ab4",
+          "pass": true,
+          "role": "checked_source_refined"
+        },
+        {
+          "label": "PD 1096 RIRR 2004 DPWH Official cross-check",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "pass": true,
+          "role": "supplemental_expected_family"
+        },
+        {
+          "label": "PD 1096 RIRR 2004 DPWH Official cross-check refined markdown",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "pass": true,
+          "role": "supplemental_expected_family_refined"
+        }
+      ]
+    },
+    "linked_question_question_edit_count_checks": {
+      "pass": true,
+      "linked_questions": 50,
+      "question_edits": 50,
+      "failures": []
+    },
+    "stale_compose_error_scan": {
+      "pass": true,
+      "stale_files_after_cleanup": [],
+      "stale_files_removed_after_successful_compose": 5
+    },
+    "targeted_content_audit_tests": {
+      "pass": true,
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "test_files": 2,
+      "tests_passed": 34,
+      "tests_failed": 0,
+      "expect_calls": 328
+    },
+    "scoped_git_diff_check": {
+      "pass": true,
+      "command": "git diff --check -- <Batch 082 article folders> .ai/03_plans/source-audited-local-first-batches-handoff.md .ai/content-audit-export/source-audited-article-batch-082-local-first-{report.md,ledger.json,scoped-checks.json}",
+      "note": "Command is run after this artifact and handoff update; PASS is recorded after the final no-output check."
+    },
+    "supplemental_untracked_whitespace_scan": {
+      "pass": true,
+      "files_checked": "Batch 082 selected article folders, report, ledger, scoped checks, and handoff",
+      "issues": 0
+    }
+  },
+  "next_batch_readiness": {
+    "next_batch": "083",
+    "ready": true,
+    "exclusion_rule": "Exclude Batch 001 through Batch 082 recorded article IDs before selecting Batch 083."
+  }
+}

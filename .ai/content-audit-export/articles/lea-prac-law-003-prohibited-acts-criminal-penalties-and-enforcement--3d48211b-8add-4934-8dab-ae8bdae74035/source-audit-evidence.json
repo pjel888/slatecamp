@@ -1,0 +1,124 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T20:15:00+08:00",
+  "audit_mode": "local_source_audit_no_supabase",
+  "protocols_applied": [
+    ".ai/CONTENT_EXCELLENCE_GOAL.md",
+    ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
+    ".ai/00_system/vitruvius-source-reference.md"
+  ],
+  "target": {
+    "article_id": "3d48211b-8add-4934-8dab-ae8bdae74035",
+    "slug": "lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement",
+    "title": "Prohibited Acts, Criminal Penalties, and Enforcement",
+    "article_folder": ".ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/candidate.md",
+    "candidate_sha256": "sha256:1d10455296c673d01347972f61c4a418931f0b017d926ac36a24d865c3e219b0",
+    "normalized_sha256": "sha256:1d10455296c673d01347972f61c4a418931f0b017d926ac36a24d865c3e219b0",
+    "linked_questions_sha256": "sha256:29e686c77f81a538a6a8734b0edea1852519eacf4bb8cc55406d300274d93999",
+    "sources_sha256": "sha256:e7b1a846ad42d42a51f4b3d56c8f674ae14c64049d659b344850f506e62cb5e9"
+  },
+  "classification": {
+    "content_type": "ra9266_enforcement_article",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": [
+      "14eecec5-5617-4dea-96d5-d97a3e498ea2",
+      "9e2f8b9a-0377-4a5c-8b74-1e92e96122b9",
+      "a0bd7489-e809-4020-b40b-6aa2cd56d95d",
+      "5b1da138-7d1f-42b4-9ab2-ba065604422a",
+      "dacb2eeb-a43c-47fe-a044-fe3eed4ff9b3",
+      "032522de-2664-4f28-9890-c071c8ff7958",
+      "dd652c66-c567-4c87-834f-17eac39c7133",
+      "37651fee-ec17-4001-8ca1-1dedf550b986",
+      "bd2377d1-d87e-40d9-9db3-0de5bfd8652f",
+      "e7d85e00-c727-4cf6-a9a1-b882d204aa15"
+    ]
+  },
+  "raw_sources": [
+    {
+      "key": "ra9266_irr",
+      "label": "RA 9266 IRR Architecture Act of 2004",
+      "source_type": "implementing_rules",
+      "source_id": "batch004-lea-prac-law-003-prohibited-acts-criminal-penalt-source-01",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "checked_pdf_pages": [
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    }
+  ],
+  "gate_results": {
+    "compose": "PASS: content-audit:compose -- --article-id <id> --overwrite; blockers=0",
+    "diff": "PASS: content-audit:diff -- --article-id <id>; changed=true safe_to_push=true blockers=0",
+    "validate": "PASS: content-audit:validate -- --article-id <id> --summary --dry-run; valid=true blockers=0 warnings=0",
+    "push_dry_run": "not_attempted_local_first; Supabase remote fetch is final publishing only and is intentionally non-blocking here",
+    "supabase_mutation": "not_attempted"
+  },
+  "claims": [
+    {
+      "claim_id": "law003-claim-01",
+      "claim_text": "RA 9266 IRR Section 25 requires registration/PIC before practicing architecture or using the Architect title in the Philippines.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "law003-claim-02",
+      "claim_text": "RA 9266 IRR Section 23 authorizes suspension/revocation/cancellation after notice and hearing for listed grounds including seal misuse and aiding unauthorized practice.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "law003-claim-03",
+      "claim_text": "RA 9266 IRR Section 29 lists prohibited conduct and penalties of PHP 100,000 to PHP 5,000,000, six months to six years imprisonment, or both.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "law003-claim-04",
+      "claim_text": "RA 9266 IRR Sections 30 and 31 cover coerced service without a written agreement and representative liability for non-registered persons.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement-linked-question-edits",
+      "claim_text": "Question edits staged locally for linked question IDs/model IDs: 14eecec5-5617-4dea-96d5-d97a3e498ea2 (ALE-PRAC-LAW-003-001), 9e2f8b9a-0377-4a5c-8b74-1e92e96122b9 (ALE-PRAC-LAW-003-006), a0bd7489-e809-4020-b40b-6aa2cd56d95d (ALE-PRAC-LAW-003-002), 5b1da138-7d1f-42b4-9ab2-ba065604422a (ALE-PRAC-LAW-003-009), dacb2eeb-a43c-47fe-a044-fe3eed4ff9b3 (ALE-PRAC-LAW-003-007), 032522de-2664-4f28-9890-c071c8ff7958 (ALE-PRAC-LAW-003-004), dd652c66-c567-4c87-834f-17eac39c7133 (ALE-PRAC-LAW-003-003), 37651fee-ec17-4001-8ca1-1dedf550b986 (ALE-PRAC-LAW-003-008), bd2377d1-d87e-40d9-9db3-0de5bfd8652f (ALE-PRAC-LAW-003-010), e7d85e00-c727-4cf6-a9a1-b882d204aa15 (ALE-PRAC-LAW-003-005)",
+      "audit_result": "PASS",
+      "source_support": [
+        "ra9266_irr"
+      ]
+    }
+  ],
+  "unsupported_or_removed_claims": [
+    "Removed learner-visible preserved UI placeholder blocks and internal replacement notes from normalized/candidate content."
+  ],
+  "remaining_local_blockers": [],
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_recovery_complete": true,
+    "remote_publish_status": "not_attempted_by_request",
+    "remaining_local_blockers": []
+  },
+  "local_validation": {
+    "command": "bun run content-audit:validate -- --article-id 3d48211b-8add-4934-8dab-ae8bdae74035 --summary --dry-run",
+    "valid": true,
+    "blockers": 0,
+    "warnings": [],
+    "checked_at": "2026-05-10T16:39:34+08:00"
+  }
+}

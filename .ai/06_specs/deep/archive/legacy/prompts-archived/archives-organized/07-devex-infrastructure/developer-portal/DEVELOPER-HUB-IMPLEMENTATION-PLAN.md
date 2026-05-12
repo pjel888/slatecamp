@@ -1,9 +1,9 @@
 # SlateCamp Developer Hub — Comprehensive Implementation Plan
 
-**Version:** 1.0  
-**Date:** March 25, 2026  
-**Status:** Ready for Execution  
-**Estimated Duration:** 6 Phases · ~4–5 Working Days  
+**Version:** 1.0
+**Date:** March 25, 2026
+**Status:** Ready for Execution
+**Estimated Duration:** 6 Phases · ~4–5 Working Days
 
 ---
 
@@ -316,7 +316,7 @@ This is the root layout for all `/developer/*` routes. It renders the top bar, s
 
 ### Task 1.4: Sidebar Component
 
-**File:** `src/components/developer/Sidebar.tsx`  
+**File:** `src/components/developer/Sidebar.tsx`
 **Directive:** `'use client'` (required: `useState`, `usePathname`, keyboard listeners)
 
 **Requirements:**
@@ -352,7 +352,7 @@ This is the root layout for all `/developer/*` routes. It renders the top bar, s
 
 ### Task 1.5: Breadcrumbs Component
 
-**File:** `src/components/developer/Breadcrumbs.tsx`  
+**File:** `src/components/developer/Breadcrumbs.tsx`
 **Directive:** `'use client'` (uses `usePathname`)
 
 **Requirements:**
@@ -532,7 +532,7 @@ A central registry mapping every component slug to its `ComponentPageData`. This
 
 ### Task 2.3: ComponentShowcase Layout
 
-**File:** `src/components/developer/ComponentShowcase.tsx`  
+**File:** `src/components/developer/ComponentShowcase.tsx`
 **Directive:** `'use client'` (uses `useState` for tab switching)
 
 This is the master template for every component page.
@@ -599,7 +599,7 @@ interface ComponentShowcaseProps {
 
 ### Task 2.4: PreviewArea Component
 
-**File:** `src/components/developer/PreviewArea.tsx`  
+**File:** `src/components/developer/PreviewArea.tsx`
 **Directive:** `'use client'` (uses `useState` for theme toggle)
 
 **Requirements:**
@@ -626,7 +626,7 @@ background-size: 20px 20px;
 
 ### Task 2.5: PropsTable Component
 
-**File:** `src/components/developer/PropsTable.tsx`  
+**File:** `src/components/developer/PropsTable.tsx`
 **Directive:** Server Component (no hooks needed — pure rendering)
 
 **Requirements:**
@@ -651,7 +651,7 @@ background-size: 20px 20px;
 
 ### Task 2.6: CodeBlock Component
 
-**File:** `src/components/developer/CodeBlock.tsx`  
+**File:** `src/components/developer/CodeBlock.tsx`
 **Directive:** `'use client'` (clipboard API, hover state)
 
 **Requirements:**
@@ -919,7 +919,7 @@ Every mock function must be `async`, return a typed response, and match the exac
 export async function getDatabaseStatus(): Promise<DatabaseStatus> {
   // Simulate network delay
   await new Promise(resolve => setTimeout(resolve, 200))
-  
+
   return {
     connections: { active: 12, idle: 8, max: 20 },
     tables: [
@@ -946,7 +946,7 @@ export async function getDatabaseStatus(): Promise<DatabaseStatus> {
 
 export async function getInfrastructureStatus(): Promise<InfrastructureStatus> {
   await new Promise(resolve => setTimeout(resolve, 200))
-  
+
   return {
     apiLatency: { p50: 45, p95: 189, p99: 342, unit: 'ms' },
     edgeFunctions: [
@@ -1142,7 +1142,7 @@ interface StatusBadgeProps {
 
 ### Task 5.1: Command Palette
 
-**File:** `src/components/developer/CommandPalette.tsx`  
+**File:** `src/components/developer/CommandPalette.tsx`
 **Directive:** `'use client'`
 
 **Dependencies:**

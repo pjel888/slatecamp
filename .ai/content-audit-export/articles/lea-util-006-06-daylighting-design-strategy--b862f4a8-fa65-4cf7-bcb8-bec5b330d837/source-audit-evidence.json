@@ -1,0 +1,256 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "artifact_type": "local_first_source_audit_evidence",
+  "batch_id": "source-audited-article-batch-047-local-first",
+  "audit_mode": "local_first_no_supabase_push",
+  "audit_date": "2026-05-11T18:48:00.000+08:00",
+  "audited_at": "2026-05-11T18:58:00.000+08:00",
+  "target": {
+    "article_id": "b862f4a8-fa65-4cf7-bcb8-bec5b330d837",
+    "slug": "lea-util-006-06-daylighting-design-strategy",
+    "title": "Lighting design in the Philippines"
+  },
+  "classification": "utilities_code_or_professional_practice_content",
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837/question-edits/119292af-df20-455f-bbb9-1ba101f94f16.json",
+      ".ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837/question-edits/b08563c2-2800-47e3-bf96-53d84d124cc0.json",
+      ".ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837/question-edits/202dd7a6-d6fd-47d4-acc5-9faac836d074.json",
+      ".ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837/question-edits/cdec8652-8c0f-4567-be8f-d2507ae4c48e.json",
+      ".ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837/question-edits/45d20cd9-69af-4655-8207-922eb104d050.json",
+      ".ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837/question-edits/013bbc93-24a0-4999-83f0-3320ee51b9e5.json",
+      ".ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837/question-edits/631192e4-b89d-4364-8208-810bfd00c50c.json",
+      ".ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837/question-edits/b2f1b8cf-fb41-4ba8-ab92-09b7d8d39dae.json",
+      ".ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837/question-edits/0a82e2cc-156e-490b-93d5-9e1c2aded78e.json",
+      ".ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837/question-edits/842c8fe9-8897-486b-bc53-c646a0f38365.json",
+      ".ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837/question-edits/fb237cdd-0da5-4484-90bf-eb014d02c2fc.json",
+      ".ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837/question-edits/08683fcb-75ca-4ab8-a35f-2f725d6cd8b8.json",
+      ".ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837/question-edits/197d7b75-eefe-46ba-a900-8dd41e8e2adb.json",
+      ".ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837/question-edits/b6c64212-62bf-460b-9eac-313be0bc1488.json",
+      ".ai/content-audit-export/articles/lea-util-006-06-daylighting-design-strategy--b862f4a8-fa65-4cf7-bcb8-bec5b330d837/question-edits/33f43696-1bee-4a9b-9eae-65e9ca9ff7bd.json"
+    ]
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdf_first": true,
+    "derivative_layers_used_only_as_locators": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "checked_raw_pdf_families": [
+      "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+      "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George-Salvan-Architectural-Utilities-3-Lighting-and-Acoustics.pdf"
+    ],
+    "blockers": []
+  },
+  "raw_sources": [
+    {
+      "source_id": "doe-energy-conserving-design-guidelines-local-raw-pdf--b047-b862f4a8",
+      "article_id": "b862f4a8-fa65-4cf7-bcb8-bec5b330d837",
+      "label": "DOE Guidelines on Energy Conserving Design on Buildings - local raw PDF",
+      "url": null,
+      "source_type": "local_raw_pdf",
+      "description": "Daylighting coordination, glare, brightness imbalance, heat buildup, OTTV daylighting credit, automatic controls, 4-meter exterior-wall zone, and visible transmittance threshold.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-11T18:48:00.000+08:00",
+      "updated_at": "2026-05-11T18:48:00.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+      "raw_pdf_sha256": "sha256:9a1a4019b500ffc2873625db6f04ac50b39aea7cadac9159464f9ed716e8126c",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.md",
+      "refined_markdown_sha256": "sha256:477f0990a67359eee303e8280a00be449d0aa413252161db7b5b1bafec3012b9",
+      "source_locator": "DOE Guidelines refined markdown lines 323-405; DOE Guidelines refined markdown lines 785-803",
+      "checked_markdown_lines": [
+        "DOE Guidelines refined markdown lines 323-405",
+        "DOE Guidelines refined markdown lines 785-803"
+      ],
+      "local_audit_note": "Batch 047 local-first source audit checked the raw PDF family before using refined markdown line locators."
+    },
+    {
+      "source_id": "salvan-architectural-utilities-3-lighting-and-acoustics-local-raw-pdf--b047-b862f4a8",
+      "article_id": "b862f4a8-fa65-4cf7-bcb8-bec5b330d837",
+      "label": "George Salvan Architectural Utilities 3 Lighting and Acoustics - local raw PDF",
+      "url": null,
+      "source_type": "local_raw_pdf",
+      "description": "Daylight and artificial-light balance, daylight penetration limits, glare reduction, task comfort, and practical daylighting design cautions.",
+      "is_verified": true,
+      "sort_order": 2,
+      "created_at": "2026-05-11T18:48:00.000+08:00",
+      "updated_at": "2026-05-11T18:48:00.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George-Salvan-Architectural-Utilities-3-Lighting-and-Acoustics.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George-Salvan-Architectural-Utilities-3-Lighting-and-Acoustics.pdf",
+      "raw_pdf_sha256": "sha256:935c71b1dc8fa190a945570c6a4aab0888096f6a8cbdecc75f53dc09b57fdab6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George-Salvan-Architectural-Utilities-3-Lighting-and-Acoustics.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George-Salvan-Architectural-Utilities-3-Lighting-and-Acoustics.md",
+      "refined_markdown_sha256": "sha256:72f99f7131415798ceb8e0c867af177091e85775c5f2c20e5463ceefad246231",
+      "source_locator": "Salvan Utilities 3 refined markdown lines 18699-18729; Salvan Utilities 3 refined markdown lines 20050-20053",
+      "checked_markdown_lines": [
+        "Salvan Utilities 3 refined markdown lines 18699-18729",
+        "Salvan Utilities 3 refined markdown lines 20050-20053"
+      ],
+      "local_audit_note": "Batch 047 local-first source audit checked the raw PDF family before using refined markdown line locators."
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "doe-energy-conserving-design-guidelines-local-raw-pdf--b047-b862f4a8",
+      "article_id": "b862f4a8-fa65-4cf7-bcb8-bec5b330d837",
+      "label": "DOE Guidelines on Energy Conserving Design on Buildings - local raw PDF",
+      "url": null,
+      "source_type": "local_raw_pdf",
+      "description": "Daylighting coordination, glare, brightness imbalance, heat buildup, OTTV daylighting credit, automatic controls, 4-meter exterior-wall zone, and visible transmittance threshold.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-11T18:48:00.000+08:00",
+      "updated_at": "2026-05-11T18:48:00.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+      "raw_pdf_sha256": "sha256:9a1a4019b500ffc2873625db6f04ac50b39aea7cadac9159464f9ed716e8126c",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.md",
+      "refined_markdown_sha256": "sha256:477f0990a67359eee303e8280a00be449d0aa413252161db7b5b1bafec3012b9",
+      "source_locator": "DOE Guidelines refined markdown lines 323-405; DOE Guidelines refined markdown lines 785-803",
+      "checked_markdown_lines": [
+        "DOE Guidelines refined markdown lines 323-405",
+        "DOE Guidelines refined markdown lines 785-803"
+      ],
+      "local_audit_note": "Batch 047 local-first source audit checked the raw PDF family before using refined markdown line locators."
+    },
+    {
+      "source_id": "salvan-architectural-utilities-3-lighting-and-acoustics-local-raw-pdf--b047-b862f4a8",
+      "article_id": "b862f4a8-fa65-4cf7-bcb8-bec5b330d837",
+      "label": "George Salvan Architectural Utilities 3 Lighting and Acoustics - local raw PDF",
+      "url": null,
+      "source_type": "local_raw_pdf",
+      "description": "Daylight and artificial-light balance, daylight penetration limits, glare reduction, task comfort, and practical daylighting design cautions.",
+      "is_verified": true,
+      "sort_order": 2,
+      "created_at": "2026-05-11T18:48:00.000+08:00",
+      "updated_at": "2026-05-11T18:48:00.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George-Salvan-Architectural-Utilities-3-Lighting-and-Acoustics.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George-Salvan-Architectural-Utilities-3-Lighting-and-Acoustics.pdf",
+      "raw_pdf_sha256": "sha256:935c71b1dc8fa190a945570c6a4aab0888096f6a8cbdecc75f53dc09b57fdab6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George-Salvan-Architectural-Utilities-3-Lighting-and-Acoustics.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George-Salvan-Architectural-Utilities-3-Lighting-and-Acoustics.md",
+      "refined_markdown_sha256": "sha256:72f99f7131415798ceb8e0c867af177091e85775c5f2c20e5463ceefad246231",
+      "source_locator": "Salvan Utilities 3 refined markdown lines 18699-18729; Salvan Utilities 3 refined markdown lines 20050-20053",
+      "checked_markdown_lines": [
+        "Salvan Utilities 3 refined markdown lines 18699-18729",
+        "Salvan Utilities 3 refined markdown lines 20050-20053"
+      ],
+      "local_audit_note": "Batch 047 local-first source audit checked the raw PDF family before using refined markdown line locators."
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "b047-lea-util-006-06-daylighting-design-strategy-article",
+      "claim_text": "Lighting design in the Philippines article content was rewritten to the checked Batch 047 local raw-source families.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "locator": "DOE Guidelines refined markdown lines 323-405; DOE Guidelines refined markdown lines 785-803; Salvan Utilities 3 refined markdown lines 18699-18729; Salvan Utilities 3 refined markdown lines 20050-20053",
+        "checked_sources": [
+          {
+            "source_label": "DOE Guidelines on Energy Conserving Design on Buildings - local raw PDF",
+            "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+            "raw_pdf_sha256": "sha256:9a1a4019b500ffc2873625db6f04ac50b39aea7cadac9159464f9ed716e8126c",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.md",
+            "refined_markdown_sha256": "sha256:477f0990a67359eee303e8280a00be449d0aa413252161db7b5b1bafec3012b9",
+            "locator": "DOE Guidelines refined markdown lines 323-405; DOE Guidelines refined markdown lines 785-803"
+          },
+          {
+            "source_label": "George Salvan Architectural Utilities 3 Lighting and Acoustics - local raw PDF",
+            "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George-Salvan-Architectural-Utilities-3-Lighting-and-Acoustics.pdf",
+            "raw_pdf_sha256": "sha256:935c71b1dc8fa190a945570c6a4aab0888096f6a8cbdecc75f53dc09b57fdab6",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George-Salvan-Architectural-Utilities-3-Lighting-and-Acoustics.md",
+            "refined_markdown_sha256": "sha256:72f99f7131415798ceb8e0c867af177091e85775c5f2c20e5463ceefad246231",
+            "locator": "Salvan Utilities 3 refined markdown lines 18699-18729; Salvan Utilities 3 refined markdown lines 20050-20053"
+          }
+        ]
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b047-lea-util-006-06-daylighting-design-strategy-questions",
+      "claim_text": "15 linked question edits were rewritten to the same checked local raw-source scope as the parent article.",
+      "claim_type": "linked_question_repair_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "locator": "DOE Guidelines refined markdown lines 323-405; DOE Guidelines refined markdown lines 785-803; Salvan Utilities 3 refined markdown lines 18699-18729; Salvan Utilities 3 refined markdown lines 20050-20053",
+        "question_ids": [
+          "119292af-df20-455f-bbb9-1ba101f94f16",
+          "b08563c2-2800-47e3-bf96-53d84d124cc0",
+          "202dd7a6-d6fd-47d4-acc5-9faac836d074",
+          "cdec8652-8c0f-4567-be8f-d2507ae4c48e",
+          "45d20cd9-69af-4655-8207-922eb104d050",
+          "013bbc93-24a0-4999-83f0-3320ee51b9e5",
+          "631192e4-b89d-4364-8208-810bfd00c50c",
+          "b2f1b8cf-fb41-4ba8-ab92-09b7d8d39dae",
+          "0a82e2cc-156e-490b-93d5-9e1c2aded78e",
+          "842c8fe9-8897-486b-bc53-c646a0f38365",
+          "fb237cdd-0da5-4484-90bf-eb014d02c2fc",
+          "08683fcb-75ca-4ab8-a35f-2f725d6cd8b8",
+          "197d7b75-eefe-46ba-a900-8dd41e8e2adb",
+          "b6c64212-62bf-460b-9eac-313be0bc1488",
+          "33f43696-1bee-4a9b-9eae-65e9ca9ff7bd"
+        ],
+        "checked_sources": [
+          {
+            "source_label": "DOE Guidelines on Energy Conserving Design on Buildings - local raw PDF",
+            "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+            "raw_pdf_sha256": "sha256:9a1a4019b500ffc2873625db6f04ac50b39aea7cadac9159464f9ed716e8126c",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.md",
+            "refined_markdown_sha256": "sha256:477f0990a67359eee303e8280a00be449d0aa413252161db7b5b1bafec3012b9",
+            "locator": "DOE Guidelines refined markdown lines 323-405; DOE Guidelines refined markdown lines 785-803"
+          },
+          {
+            "source_label": "George Salvan Architectural Utilities 3 Lighting and Acoustics - local raw PDF",
+            "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George-Salvan-Architectural-Utilities-3-Lighting-and-Acoustics.pdf",
+            "raw_pdf_sha256": "sha256:935c71b1dc8fa190a945570c6a4aab0888096f6a8cbdecc75f53dc09b57fdab6",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George-Salvan-Architectural-Utilities-3-Lighting-and-Acoustics.md",
+            "refined_markdown_sha256": "sha256:72f99f7131415798ceb8e0c867af177091e85775c5f2c20e5463ceefad246231",
+            "locator": "Salvan Utilities 3 refined markdown lines 18699-18729; Salvan Utilities 3 refined markdown lines 20050-20053"
+          }
+        ]
+      },
+      "blockers": []
+    }
+  ],
+  "removed_or_rewritten_material": [
+    "Removed exported UI block marker text from normalized article content where present.",
+    "Rewrote linked question files to stay inside checked local raw-source evidence.",
+    "Replaced derivative-only or over-specific scenario claims with checked source-family statements."
+  ],
+  "source_safe_repair": {
+    "status": "COMPLETE_LOCAL_VALIDATED",
+    "article_normalized_rewritten": true,
+    "sources_json_updated": true,
+    "source_audit_evidence_updated": true,
+    "question_edits_created": 15,
+    "blockers": []
+  },
+  "gate_results": {
+    "source_audit": "PASS",
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_validation": "PASS",
+    "question_edit_count_check": "PASS",
+    "scoped_json_parse": "PASS",
+    "marker_scan": "PASS",
+    "source_hash_check": "PASS",
+    "stale_compose_error_check": "PASS"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "blockers": []
+  },
+  "blockers": []
+}

@@ -1,60 +1,31 @@
-
-
 ## Board Exam Quick Check
 
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+For Batch 062, answer utility-infrastructure assessment from the checked local source families only: PD 1067, the PD 1067 IRR, Sitework Lecture, and Building Technology - Siteworks.
 
-**Common mistake:** treating a familiar keyword in **Lea Plan 004 06 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+**Common mistake:** importing telecom, Clean Water Act, or resiliency claims that were not verified in the local raw PDFs for this batch.
 
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
+**Retrieval prompt:** Which source-backed constraint makes the proposed development feasible or infeasible: capacity, drainage outlet, easement, protected water area, pollution control, or sitework access?
+
 ## What You Need to Know for the LEA
 
 ## Learning Goal
-Assess whether existing utilities (water supply, power, sewage, stormwater, telecom) can serve a proposed development, identify infrastructure capacity deficiencies, and specify required utility upgrades or new connections.
-
-During site planning, designers must assess whether utilities and infrastructure systems (water supply, power, sewage, stormwater, telecommunications) can adequately serve the proposed development. This assessment determines feasibility and informs engineering design.
+Assess site utility infrastructure by checking whether the proposed development can be served without violating water, drainage, easement, pollution, or sitework constraints verified in the local source audit.
 
 ## Core Concept
+Site planning utility assessment is a feasibility check. The planner asks whether the development can connect to or build infrastructure in a way that protects water resources, drains lawfully, respects margins and protected areas, and can be constructed over suitable earthwork and paving conditions.
 
-Site planning requires comprehensive utility and infrastructure assessment to ensure that proposed developments can be served by existing systems or require new infrastructure investment. Unlike LEA-UTIL (which covers utility service provision policies across broader regions), this assessment occurs at the project scale to verify water supply capacity, electrical distribution adequacy, wastewater treatment capability, drainage system readiness, and telecommunications coverage.
+PD 1067 supports the water and drainage portion of this check. It identifies factors for water-permit decisions such as availability of water, water-supply need for beneficial use, possible adverse effects, and land-use economics. It requires drainage systems to use approved outlets, requires artificial drainage to minimize damage to lower land, recognizes natural flow obligations, sets public-use easements along banks and shores, and authorizes flood-control and protected-area controls. It also restricts acts that introduce sewage, industrial waste, or pollutants into water sources.
 
-The site engineer checks whether existing water mains can supply the projected demand, whether power lines have capacity, whether sewerage systems (including treatment plants per RA 9275) can accept flows, and whether stormwater drainage infrastructure exists. If systems are undersized, the development contract may require developer contributions to upgrade regional infrastructure. Telecommunications networks are increasingly important for smart city readiness.
+The PD 1067 IRR adds practical planning evidence: drainage applications describe the project, show layout maps, show the drainage route, and identify the outlet, which should be a natural body of water or natural waterway. It also explains how public-use easements are reckoned and identifies discharge controls. Sitework sources then connect infrastructure assessment to construction: soil classification, drainage and bearing capacity, fill material, geotextiles, erosion controls, roads, parking, and paving over prepared base.
 
-Assessment phases typically include: (1) inventory of existing infrastructure capacity, (2) projection of development demand, (3) comparison of supply vs. demand, and (4) design of on-site or off-site infrastructure solutions. The assessment is also constrained by Philippine laws: RA 9275 requires sewage treatment plants (STP) for commercial and high-density residential buildings; PD 1067 establishes easements around water bodies; and local building codes specify service standards.
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-plan-004-06-core-concept", type="image", caption="Utility Infrastructure Capacity Assessment — Water, Power, and Sewer Analysis", description="Site utility assessment diagram showing: water supply capacity (line size, pressure, daily demand), electrical service (transformer capacity, load calculations), sanitary sewer (line capacity, treatment plant loading), stormwater drainage (pipe sizes, detention needs), telecom connectivity.", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+A source-safe LEA answer does not assume that a subdivision, commercial site, or mixed-use project is feasible just because a utility line exists nearby. It checks capacity and constraints, then identifies whether on-site works, off-site improvements, routing changes, drainage controls, or water-margin protection are required.
 
-## Key Provisions
+## Source-Safe Exam Takeaways
 
-ssment reveals significant capacity constraints in developing LGUs. Water supply systems frequently operate below design capacity during dry season; power grids in provincial areas often require augmentation; and centralized sewage treatment is limited to major urban centers, making on-site STP design mandatory for most suburban and rural projects. PD 1067 easement compliance is critical — many informal settlements violate water body easements, and formal development must respect these protected areas. Post-Yolanda zoning (40m no-build zone from mean high tide) requires careful site assessment in coastal areas.
+- Infrastructure assessment compares proposed demand with available service capacity and source-backed constraints.
+- Drainage planning must identify the outlet and avoid routing that damages lower land or disrupts natural flow.
+- Water-source protection, flood-control areas, protected areas, and public-use easements can limit site layout.
+- Roads, parking, and utility corridors depend on subgrade, base, fill, erosion control, and paving conditions.
+- If a question depends on an unverified law or formula, rewrite the answer around the checked source scope instead of inventing details.
 
-## How It's Tested
-
-**Pattern 1 — Identification:** "If a proposed subdivision has 500 units and existing water main has capacity for 200 units, what must the developer do?" → Assess capacity gap; calculate augmentation need.
-
-**Pattern 2 — Constraint application:** "A site is 300 meters from nearest sewer main; no RA 9275 equivalent treatment is available. What infrastructure must be designed?" → On-site STP required by RA 9275.
-
-**Pattern 3 — Law application:** "A development abuts a 12-meter-wide river. What PD 1067 easement applies?" → 20 meters (rivers ≥6m wide).
-
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Infrastructure assessment = matching site demand to system capacity.** If capacity is insufficient, the gap must be filled (either by developer investment or infrastructure upgrade agreement). Always check Philippine law constraints (RA 9275 for STP, PD 1067 for easements).
-[/SLATECAMP_UI_BLOCK]
-
-**Exam Tip:** Verify utility capacity BEFORE finalizing development program. Common deficiencies: water supply insufficient for peak demand, sewage treatment under capacity, storm drainage undersized for 10-year or 25-year storm event.
-
-## Cross-References
-
-See **LEA-DSGN-012-05** (Site Utilities) for utility layout design, **LEA-PLAN-005-06** (Drainage) for stormwater infrastructure, and **LEA-PLAN-004-07** (Zoning Analysis) for utility easement requirements.
-
-## Common Mistakes
-
-[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\"Confusing utilities infrastructure assessment (site planning) with utilities policy (LEA-UTIL subject)\",\"Stating STP is not required if 'the municipal treatment plant is nearby' — RA 9275 requires on-site STP for commercial and high-density residential regardless of municipal capacity\",\"Applying PD 1067 easement distance of 10m instead of correct values (3m/20m/40m depending on water body type)\",\"Forgetting that post-Yolanda 40m no-build zone applies to coastal sites in certain provinces\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+Scenario enrichment status: eligible-deferred. A realistic infrastructure-capacity scenario could help, but Batch 062 keeps scenario enrichment non-blocking so source-audited article/question correctness remains the gate.

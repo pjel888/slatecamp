@@ -1,7 +1,7 @@
 # SlateCamp Wiki Embedded Interactives — Implementation Plan (Schema-Reconciled)
-**Prepared by:** Database Architect  
-**Date:** 2026-03-19  
-**Schema version:** 44 tables · 13 enums · 9 functions · 31 triggers · 77 RLS policies · 128 indexes  
+**Prepared by:** Database Architect
+**Date:** 2026-03-19
+**Schema version:** 44 tables · 13 enums · 9 functions · 31 triggers · 77 RLS policies · 128 indexes
 **Supersedes:** Previous EI plan (written against the 41-table schema)
 
 ---
@@ -114,9 +114,9 @@ Any attempt to delete a prompt that has responses will fail with a FK violation.
 
 ## Part 3 — Migration 030 (Updated for New Schema)
 
-**File:** `030_wiki_ei_schema_fixes.sql`  
-**One item removed from the previous plan:** `tr_wiki_ei_prompts_updated_at` trigger is already live — removed from this migration.  
-**One item updated:** Admin policy uses `raw_app_meta_data` pattern to match new taxonomy tables.  
+**File:** `030_wiki_ei_schema_fixes.sql`
+**One item removed from the previous plan:** `tr_wiki_ei_prompts_updated_at` trigger is already live — removed from this migration.
+**One item updated:** Admin policy uses `raw_app_meta_data` pattern to match new taxonomy tables.
 **Everything else:** Identical to the previous plan's analysis — all 8 blockers still need resolution.
 
 ```sql
@@ -665,6 +665,6 @@ When the Phase 2 mastery signal is implemented (correct MCQ EI response → `use
 
 ---
 
-*SlateCamp Wiki Embedded Interactives — Implementation Plan (Schema-Reconciled)*  
-*DB Architect + Philip (Founder) · 2026-03-19*  
+*SlateCamp Wiki Embedded Interactives — Implementation Plan (Schema-Reconciled)*
+*DB Architect + Philip (Founder) · 2026-03-19*
 *Prerequisites: Migration 030 applied and all 8 verification queries pass before any application code is written*

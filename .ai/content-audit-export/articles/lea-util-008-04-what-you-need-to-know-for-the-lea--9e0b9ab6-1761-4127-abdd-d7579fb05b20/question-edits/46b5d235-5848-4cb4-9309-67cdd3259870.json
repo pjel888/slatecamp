@@ -1,0 +1,99 @@
+{
+  "question_id": "46b5d235-5848-4cb4-9309-67cdd3259870",
+  "baseline_hash": "sha256:3b2bc3b2673460abe3c0ca1dc4a9fa874a1d0ca65d3ad5cfe277b1376fb4a424",
+  "action": "replace",
+  "reason": "source-audited-article-batch-049-local-first: local raw-source-backed replacement constrained to checked Batch 049 source families.",
+  "approved_by": "codex-local-first-batch-049",
+  "approved_at": "2026-05-11T20:35:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "9e0b9ab6-1761-4127-abdd-d7579fb05b20",
+    "parent_article_slug": "lea-util-008-04-what-you-need-to-know-for-the-lea",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Philippine Electrical Code refined markdown lines 29229-29315, 29472-29504, 29595-29610, 29694-29723, and 29830-29855; Revised National Plumbing Code refined markdown lines 71-112, 145-151, 175-182, and 209-230; RA 11285 refined markdown lines 31-105, 599-613, 719-775, and 1086-1124; DOE Guidelines refined markdown lines 21-43, 260-273, 321-425, and 707-785",
+    "checked_markdown_lines": [
+      "Philippine Electrical Code refined markdown lines 29229-29315",
+      "Philippine Electrical Code refined markdown lines 29472-29504",
+      "Philippine Electrical Code refined markdown lines 29595-29610",
+      "Philippine Electrical Code refined markdown lines 29694-29723",
+      "Philippine Electrical Code refined markdown lines 29830-29855",
+      "Revised National Plumbing Code refined markdown lines 71-112",
+      "Revised National Plumbing Code refined markdown lines 145-151",
+      "Revised National Plumbing Code refined markdown lines 175-182",
+      "Revised National Plumbing Code refined markdown lines 209-230",
+      "RA 11285 refined markdown lines 31-105",
+      "RA 11285 refined markdown lines 599-613",
+      "RA 11285 refined markdown lines 719-775",
+      "RA 11285 refined markdown lines 1086-1124",
+      "DOE Guidelines refined markdown lines 21-43",
+      "DOE Guidelines refined markdown lines 260-273",
+      "DOE Guidelines refined markdown lines 321-425",
+      "DOE Guidelines refined markdown lines 707-785"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "pec-local-raw-pdf--b049-9e0b9ab6-01",
+        "label": "Philippine Electrical Code - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+        "sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+        "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3",
+        "locator": "Philippine Electrical Code refined markdown lines 29229-29315, 29472-29504, 29595-29610, 29694-29723, and 29830-29855"
+      },
+      {
+        "source_id": "plumbing-local-raw-pdf--b049-9e0b9ab6-02",
+        "label": "Revised National Plumbing Code of the Philippines - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf",
+        "sha256": "sha256:c4ec30ec3ffe3b39513a033ebc2cfa614bd201d25c5578e1847e7f359fed3f5d",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Revised National Plumbing Code of the Philippines.md",
+        "refined_markdown_sha256": "sha256:7cea224bfc6c54d0883fe69c89b97cf134e45acaab6c8950b8af3621059c9a91",
+        "locator": "Revised National Plumbing Code refined markdown lines 71-112, 145-151, 175-182, and 209-230"
+      },
+      {
+        "source_id": "ra11285-local-raw-pdf--b049-9e0b9ab6-03",
+        "label": "RA 11285 Energy Efficiency and Conservation Act - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf",
+        "sha256": "sha256:316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.md",
+        "refined_markdown_sha256": "sha256:d2baa0e8d4ffe0059688783a4d31ac0e121517daca939f18a048fe053e76cdd4",
+        "locator": "RA 11285 refined markdown lines 31-105, 599-613, 719-775, and 1086-1124"
+      },
+      {
+        "source_id": "doe-local-raw-pdf--b049-9e0b9ab6-04",
+        "label": "DOE Guidelines on Energy Conserving Design of Buildings - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+        "sha256": "sha256:9a1a4019b500ffc2873625db6f04ac50b39aea7cadac9159464f9ed716e8126c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.md",
+        "refined_markdown_sha256": "sha256:477f0990a67359eee303e8280a00be449d0aa413252161db7b5b1bafec3012b9",
+        "locator": "DOE Guidelines refined markdown lines 21-43, 260-273, 321-425, and 707-785"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 049 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "Which source family should control a solar PV interconnection question?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The Philippine Electrical Code, especially Article 6.90 for PV system scope, disconnects, grounding, plaques, and points of connection."
+      },
+      {
+        "id": "b",
+        "text": "The plumbing code because PV modules are usually near roof drains."
+      },
+      {
+        "id": "c",
+        "text": "A history source because solar panels change the building appearance."
+      },
+      {
+        "id": "d",
+        "text": "Only the DOE energy guideline, with no electrical-code coordination."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The Philippine Electrical Code, especially Article 6.90 for PV system scope, disconnects, grounding, plaques, and points of connection. PEC Article 6.90 is the checked local source for PV electrical-system requirements.",
+    "explanation": "The Philippine Electrical Code, especially Article 6.90 for PV system scope, disconnects, grounding, plaques, and points of connection. PEC Article 6.90 is the checked local source for PV electrical-system requirements.",
+    "code_citation": "Philippine Electrical Code refined markdown lines 29229-29315, 29472-29504, 29595-29610, 29694-29723, and 29830-29855; Revised National Plumbing Code refined markdown lines 71-112, 145-151, 175-182, and 209-230; RA 11285 refined markdown lines 31-105, 599-613, 719-775, and 1086-1124; DOE Guidelines refined markdown lines 21-43, 260-273, 321-425, and 707-785"
+  },
+  "batch_question_template_index": 0
+}

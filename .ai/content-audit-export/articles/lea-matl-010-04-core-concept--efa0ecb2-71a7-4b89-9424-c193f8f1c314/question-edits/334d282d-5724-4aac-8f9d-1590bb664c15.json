@@ -1,0 +1,55 @@
+{
+  "question_id": "334d282d-5724-4aac-8f9d-1590bb664c15",
+  "baseline_hash": "sha256:5bfb9fd5a1fd1f6d53c146f7aeb871519342b95d777eb4ebf4a92fa7aae97a6c",
+  "action": "replace",
+  "reason": "source-audited-article-batch-080-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-010-04-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-080",
+  "approved_at": "2026-05-12T07:05:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "efa0ecb2-71a7-4b89-9424-c193f8f1c314",
+    "parent_article_slug": "lea-matl-010-04-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Fajardo refined markdown lines 9058-9213; raw PDF pages 73-74 checked by local PyMuPDF extraction",
+    "checked_markdown_lines": [
+      "Fajardo refined markdown lines 9058-9213; raw PDF pages 73-74 checked by local PyMuPDF extraction"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "fajardo-cost-estimates-b080",
+        "label": "Architectural Cost Estimates By Max Fajardo",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+        "sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+        "raw_markdown_sha256": "sha256:223efdc2dd963208910027eba08fe87b4919de1a04b76cac095bbd76a7a9a962",
+        "locator": "Fajardo refined markdown lines 9058-9213; raw PDF pages 73-74 checked by local PyMuPDF extraction"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 080 local raw-source-audited board_foot_lumber_estimating scope."
+  },
+  "proposed": {
+    "text": "What common mistake occurs when the number of pieces is omitted?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The total board feet is understated"
+      },
+      {
+        "id": "b",
+        "text": "The formula becomes more accurate"
+      },
+      {
+        "id": "c",
+        "text": "The length changes to meters automatically"
+      },
+      {
+        "id": "d",
+        "text": "The lumber becomes CHB"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The number of pieces is part of the total board-foot calculation.",
+    "explanation": "The number of pieces is part of the total board-foot calculation.",
+    "code_citation": "Architectural Cost Estimates By Max Fajardo"
+  }
+}

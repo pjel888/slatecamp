@@ -1,0 +1,61 @@
+{
+  "question_id": "4753af53-ba8d-43ce-b394-9b296fbf0ddc",
+  "baseline_hash": "sha256:2631a41729e8e41ddee10cff1c356946f5c86d531ccc580e37fde04cf29055fb",
+  "action": "replace",
+  "reason": "source-audited-article-batch-020-local-first rewrote the question to match only locally checked source evidence.",
+  "approved_by": "codex-local-source-audit-batch-020",
+  "approved_at": "2026-05-10T16:41:51.472Z",
+  "source_audit_support": {
+    "parent_article_id": "c534d94f-967a-48bb-babf-419fa6d35ec7",
+    "parent_article_slug": "spp-doc-204-a-fulltime-supervision-services",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "checked_sources": [
+      {
+        "source_id": "spp-204a-uap-local-raw-pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204A.pdf",
+        "raw_pdf_sha256": "sha256:ec08811ae8611f077fda9f0d1106cc7fab6a1e6210fe6d617637adaa6de083b8",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md lines 3-8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md lines 201-206"
+      }
+    ],
+    "local_source_safe_action": "Replaced the prior item with a source-bounded MCQ using only checked SPP source lines."
+  },
+  "proposed": {
+    "text": "How should repaired questions for this SPP 204-A cluster be answered?",
+    "options": [
+      {
+        "id": "a",
+        "text": "By using the verified title and four-item scope list."
+      },
+      {
+        "id": "b",
+        "text": "By using unverified fee percentages."
+      },
+      {
+        "id": "c",
+        "text": "By using unrelated design-competition roles."
+      },
+      {
+        "id": "d",
+        "text": "By using SPP 203 Architectural Interiors roles only."
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "The source-safe repair is limited to the checked SPP 204-A title and scope list.",
+    "explanation": "The source-safe repair is limited to the checked SPP 204-A title and scope list.",
+    "code_citation": "SPP Document 204-A",
+    "bloom_level": "analyze",
+    "application_context": "professional_practice",
+    "practice_context": [
+      "SPP Document 204-A",
+      "SPP Doc 204-A: Fulltime Supervision Services"
+    ],
+    "difficulty": 0.5,
+    "is_assessment": false,
+    "model_id": "BATCH-020-spp-doc-204-a-fulltime-supervision-services-010"
+  }
+}

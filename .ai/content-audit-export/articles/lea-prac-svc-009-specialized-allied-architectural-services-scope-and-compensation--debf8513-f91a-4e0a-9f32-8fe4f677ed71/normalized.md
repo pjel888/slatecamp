@@ -1,106 +1,11 @@
+# Specialized Architectural Services Scope and Compensation
 
+SPP Document 203 is the source anchor for Specialized Architectural Services. These services deal with specific expertise that further enhances the architectural interior and exterior components of a project.
 
-## Board Exam Quick Check
+The source list includes Architectural Interiors, Acoustic Design, Architectural Lighting Layout and Design, Site Development Planning, Site and Physical Planning Services, Comprehensive Development Planning, Historic and Cultural Heritage Conservation and Planning, Security Evaluation and Planning, Building Systems Design, Facilities Maintenance Support, Building Testing and Commissioning, Building Environmental Certification, Forensic Architecture, Building Appraisal, Structural Conceptualization, Preliminary Services, Contract Documentation and Review, Post-Design Services, Dispute Avoidance and Resolution, Architectural Research Methods, Special Building or Facility Planning and Design, Building Components, and Management of Architectural Practices.
 
-Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+Architectural Interiors has a specific source definition. It involves detailed planning and design of indoor or enclosed areas of a proposed building or structure, including retrofit, renovation, rehabilitation, or expansion work, and it covers architectural and utility aspects including architectural lay-outing of building engineering systems.
 
-**Common mistake:** treating a familiar keyword in **Lea Prac Svc 009 Specialized Allied Architectural Services Scope And Compensation** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
-## Specialized Allied Architectural Services: Scope and Compensation
-## Learning Goal
+For compensation, the compiled SPP treats specialized services as additional or extra services when applicable. Compensation may be through man-months, with 22 man-days multiplied by 8 man-hours and by a factor for direct and indirect costs, or another applicable fee mode stated in SPP Documents 201 and 202 and the Architect's Guidelines.
 
-After reading this article, you should be able to:
-
-- Define Specialized Allied Architectural Services under SPP Doc 203 and distinguish them from regular design services.
-- Identify the seventeen service categories under SPP 203, including acoustic design, lighting design, interior design, and heritage conservation.
-- Explain the compensation framework for specialized services: separate agreements, professional fee plus overhead, or percentage of construction cost.
-- Apply SPP 203 classifications to LEA scenarios involving non-traditional architectural engagements.
-
-Specialized Allied Architectural Services encompass a broad range of professional offerings beyond traditional architectural design. These services address specific technical, aesthetic, and functional requirements that projects demand. SPP Doc 203 establishes the framework for scope, compensation, and professional responsibilities across seventeen distinct service categories. Understanding these services enables architects to expand their practice and provide comprehensive solutions to clients.
-
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-prac-svc-009-specialized-allied-arch", type="image", caption="SPP Doc 203 — Seventeen Specialized Allied Architectural Service Categories", description="Process flow diagram showing the 17 specialized service categories under SPP Doc 203: acoustic design, lighting design, architectural interiors, site development planning, heritage conservation, security evaluation, building systems design, facilities maintenance, testing/commissioning, environmental certification, forensic architecture, building appraisal, structural conceptualization, preliminary services, contract documentation, post-design services, dispute avoidance, architectural research, special building planning, and building components management.", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-### Acoustic Design and Lighting Design Services
-
-Acoustic design involves the analysis and planning of sound behavior within architectural spaces. This service addresses noise control, reverberation times, sound absorption, and acoustic isolation between spaces. Lighting design services encompass both natural and artificial light planning, including luminance calculations, color rendering, and energy efficiency optimization. Both services require specialized knowledge beyond general architectural training and command compensation appropriate to their technical complexity.
-
-### Site Development Planning and Heritage Conservation
-
-Site development planning integrates landscape design, grading, utilities coordination, and environmental assessment. This service shapes the relationship between buildings and their surrounding contexts. Heritage conservation addresses the preservation, restoration, and adaptive reuse of historically significant structures. This service requires specialized expertise in historical documentation, material conservation, building codes compliance, and cultural significance assessment.
-
-### Security Evaluation and Building Systems Design
-
-Security evaluation services analyze vulnerabilities in building access, surveillance, emergency egress, and perimeter control. These services protect occupant safety and asset security through comprehensive risk assessment. Building systems design services coordinate mechanical, electrical, plumbing, and specialized systems integration. This service requires collaboration with engineers and manufacturers to ensure optimal performance and code compliance.
-
-[SLATECAMP_UI_BLOCK:ui_0002 component="KeyValues" status="preserved"]
-Extracted summary:
-- Props: pairs="{[[\"SPP Document\", \"201 (Pre-Design), 202 (Regular Design), 203 (Specialized)\"], [\"Compensation\", \"MDPE, Lump Sum, Per Diem, Professional Fee + Expenses\"], [\"Fee Basis\", \"Percentage of PCC or MDPE\"]]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-### Facilities Maintenance and Testing/Commissioning Services
-
-Facilities maintenance services establish protocols for equipment preservation, cleaning schedules, and preventive maintenance programs. These services extend building asset life and ensure operational efficiency. Testing and commissioning services verify that all building systems perform according to design specifications before occupancy. This service involves systematic testing protocols, documentation, and performance validation across all major building systems.
-
-[SLATECAMP_UI_BLOCK:ui_0003 component="KeyValues" status="preserved"]
-Extracted summary:
-- Props: pairs="{[[\"SPP Document\", \"201 (Pre-Design), 202 (Regular Design), 203 (Specialized)\"], [\"Compensation\", \"MDPE, Lump Sum, Per Diem, Professional Fee + Expenses\"], [\"Fee Basis\", \"Percentage of PCC or MDPE\"]]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-### Environmental Certification and Forensic Architecture
-
-Environmental certification services guide projects through sustainability rating systems such as LEED and BREEAM compliance. These services address energy efficiency, water conservation, material sourcing, and indoor environmental quality. Forensic architecture services investigate building failures, material degradation, and structural damage through technical analysis and documentation. This service supports legal proceedings and informs remediation strategies.
-
-### Building Appraisal and Structural Conceptualization
-
-[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Pattern:** Expect scenario-based questions where you must determine which phase a specific deliverable belongs to. Key percentages to memorize: Schematic Design (15%), Design Development (35%), Contract Documents (50%).
-[/SLATECAMP_UI_BLOCK]
-
-Building appraisal services establish market value, condition assessment, and income-generating potential of properties. These services support investment decisions, insurance valuations, and financial planning. Structural conceptualization services develop early-stage structural systems before detailed engineering. This service optimizes structural efficiency, cost, and constructability during the conceptual design phase.
-
-[SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Pattern:** Expect scenario-based questions where you must determine which phase a specific deliverable belongs to. Key percentages to memorize: Schematic Design (15%), Design Development (35%), Contract Documents (50%).
-[/SLATECAMP_UI_BLOCK]
-
-### Additional Specialized Services
-
-Preliminary services, contract documentation, and post-design services constitute additional offerings within SPP Doc 203. Dispute avoidance services address potential conflicts through mediation and documentation review. Architectural research services investigate design precedents, materials, and methodologies. Special building planning addresses unique facility types including laboratories, hospitals, and specialized industrial facilities. Building components management coordinates the sourcing, testing, and integration of complex building assemblies and systems.
-
-### Compensation and Professional Responsibility
-
-[SLATECAMP_UI_BLOCK:ui_0006 component="ProcessFlow" status="preserved"]
-Extracted summary:
-- Props: steps="{[\"Identify client needs\", \"Define scope of services\", \"Prepare proposal/contract\", \"Execute pre-design activities\", \"Deliver phase outputs\", \"Submit for owner approval\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0007 component="ProcessFlow" status="preserved"]
-Extracted summary:
-- Props: steps="{[\"Identify client needs\", \"Define scope of services\", \"Prepare proposal/contract\", \"Execute pre-design activities\", \"Deliver phase outputs\", \"Submit for owner approval\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-Compensation for specialized services varies according to service complexity, duration, and deliverable scope. Methods include percentage of project construction cost, hourly rates, fixed fees, or hybrid arrangements. Professional responsibility encompasses standard of care, schedule adherence, and deliverable accuracy. Architects providing specialized services assume liability for the quality, accuracy, and completeness of technical work within their area of specialization.
-
----
-
-## Related Articles
-
-- [SPP Doc 202 Six-Phase Framework](lea-prac-svc-004)
-- [Schematic Design Phase](lea-prac-svc-005)
-- [Design Development Phase](lea-prac-svc-006)
-- [Contract Documents Phase](lea-prac-svc-007)
-- [Bidding and Construction Admin](lea-prac-svc-008)
-- [Pre-Design Services](lea-prac-svc-001)
-- [Specialized Services](lea-prac-svc-009)
-- [Design-Build Delivery](lea-prac-svc-019)
-- [Fee Compensation Methods](lea-prac-cmp-001)
-- [Owner-Architect Agreement](lea-prac-ctr-001)
+The exam-safe move is to name the source category, define the service boundary, and keep compensation separate from Regular Design Services unless the agreement clearly includes it. Specialized work is not assumed free just because the same architect also performs regular design services.

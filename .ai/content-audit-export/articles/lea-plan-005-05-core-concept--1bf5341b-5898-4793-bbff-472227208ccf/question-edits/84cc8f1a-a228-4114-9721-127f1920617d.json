@@ -1,0 +1,76 @@
+{
+  "question_id": "84cc8f1a-a228-4114-9721-127f1920617d",
+  "baseline_hash": "sha256:f54df0c9d4b15a8cb913fef6ae8000e23e030c78c185463ff7fbbf5ccbe57eab",
+  "action": "replace",
+  "reason": "source-audited-article-batch-062-local-first: local raw PDF backed replacement constrained to checked Batch 062 source scope for Grading refers to the modification of site terrain through.",
+  "approved_by": "codex-local-first-batch-062",
+  "approved_at": "2026-05-11T21:35:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "1bf5341b-5898-4793-bbff-472227208ccf",
+    "parent_article_slug": "lea-plan-005-05-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Sitework Lecture refined markdown lines 1-90, 130-230, and 560-625; raw PDF pages for Div 02 Sitework earthworks, AASHTO soil classification, fill, riprap, gabions, geosynthetics, roads/parking, and paving slides; Building Technology - Siteworks refined markdown lines 1-80, 112-219, and 440-485; raw PDF pages for Div 02 Sitework earthworks, AASHTO soil classification, fill, riprap, gabions, geosynthetics, and paving slides; PD 1067 refined markdown lines 180-193, 201-205, 226-227, and 238-245; raw PDF pages for drainage, natural flow, easements, flood-control, protected-area, and water-pollution provisions",
+    "checked_markdown_lines": [
+      "Sitework Lecture refined markdown lines 1-90, 130-230, and 560-625; raw PDF pages for Div 02 Sitework earthworks, AASHTO soil classification, fill, riprap, gabions, geosynthetics, roads/parking, and paving slides",
+      "Building Technology - Siteworks refined markdown lines 1-80, 112-219, and 440-485; raw PDF pages for Div 02 Sitework earthworks, AASHTO soil classification, fill, riprap, gabions, geosynthetics, and paving slides",
+      "PD 1067 refined markdown lines 180-193, 201-205, 226-227, and 238-245; raw PDF pages for drainage, natural flow, easements, flood-control, protected-area, and water-pollution provisions"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "sitework-lecture-local-raw-pdf--b062-1bf5341b-01",
+        "label": "Sitework Lecture - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Sitework Lecture.pdf",
+        "sha256": "sha256:a469e97d2c4b842f443864c658fc4359ef2787a2b009b9fbafc1afbd1da25ff6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Sitework Lecture.md",
+        "refined_markdown_sha256": "sha256:e761c9b38b9d0c07bd6053692337109a218169ba791e8f074fa40842d3972af2",
+        "locator": "Sitework Lecture refined markdown lines 1-90, 130-230, and 560-625; raw PDF pages for Div 02 Sitework earthworks, AASHTO soil classification, fill, riprap, gabions, geosynthetics, roads/parking, and paving slides"
+      },
+      {
+        "source_id": "building-technology-siteworks-local-raw-pdf--b062-1bf5341b-02",
+        "label": "Building Technology - Siteworks - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Technology - Siteworks.pdf",
+        "sha256": "sha256:9f498be4a288011a0e8b750d4bb8316afebf07a908993620579c311da30e02a2",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Technology - Siteworks.md",
+        "refined_markdown_sha256": "sha256:3e34ffc7b60b926a2cd75fbde6239ff3f05e7e53993d8cb6f8d5f1d865c64296",
+        "locator": "Building Technology - Siteworks refined markdown lines 1-80, 112-219, and 440-485; raw PDF pages for Div 02 Sitework earthworks, AASHTO soil classification, fill, riprap, gabions, geosynthetics, and paving slides"
+      },
+      {
+        "source_id": "pd-1067-water-code-local-raw-pdf--b062-1bf5341b-03",
+        "label": "PD 1067 - Water Code of the Philippines - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1067/PD 1067 - Water Code of the Philippines.pdf",
+        "sha256": "sha256:90fdccc66152977f0e628d47c9a7c6a0e5a93faa7d02c9344012679f1e0d4f07",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1067/PD 1067 - Water Code of the Philippines.md",
+        "refined_markdown_sha256": "sha256:1f64532d7d02f840e5d6c2710e6730d17a99f28fd1e1371839e7690174b942a7",
+        "locator": "PD 1067 refined markdown lines 180-193, 201-205, 226-227, and 238-245; raw PDF pages for drainage, natural flow, easements, flood-control, protected-area, and water-pollution provisions"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 062 checked local raw PDF source scope for Grading refers to the modification of site terrain through."
+  },
+  "proposed": {
+    "text": "Which answer best matches the checked Batch 062 local raw PDF source scope for Grading refers to the modification of site terrain through?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Base the grading answer on earthworks: soil suitability for drainage and bearing capacity, fill and prepared base conditions, erosion controls such as riprap or gabions, geotextile drainage or filtration, and PD 1067 drainage/easement constraints."
+      },
+      {
+        "id": "b",
+        "text": "Use unsupported slope-threshold rules as if they came from the checked source family."
+      },
+      {
+        "id": "c",
+        "text": "Grade across a creek, riverbank, or drainage path without checking PD 1067 constraints."
+      },
+      {
+        "id": "d",
+        "text": "Ignore soil, fill, bearing, erosion, and drainage conditions."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Base the grading answer on earthworks: soil suitability for drainage and bearing capacity, fill and prepared base conditions, erosion controls such as riprap or gabions, geotextile drainage or filtration, and PD 1067 drainage/easement constraints. This answer is supported by the checked Batch 062 local raw PDF source family for Grading refers to the modification of site terrain through.",
+    "explanation": "Base the grading answer on earthworks: soil suitability for drainage and bearing capacity, fill and prepared base conditions, erosion controls such as riprap or gabions, geotextile drainage or filtration, and PD 1067 drainage/easement constraints. Batch 062 used the local raw PDFs first and refined markdown only as locator evidence for Grading refers to the modification of site terrain through.",
+    "code_citation": "Sitework Lecture refined markdown lines 1-90, 130-230, and 560-625; raw PDF pages for Div 02 Sitework earthworks, AASHTO soil classification, fill, riprap, gabions, geosynthetics, roads/parking, and paving slides; Building Technology - Siteworks refined markdown lines 1-80, 112-219, and 440-485; raw PDF pages for Div 02 Sitework earthworks, AASHTO soil classification, fill, riprap, gabions, geosynthetics, and paving slides; PD 1067 refined markdown lines 180-193, 201-205, 226-227, and 238-245; raw PDF pages for drainage, natural flow, easements, flood-control, protected-area, and water-pollution provisions"
+  },
+  "batch_question_template_index": 3
+}

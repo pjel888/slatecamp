@@ -1,0 +1,118 @@
+{
+  "batch_id": "source-audited-article-batch-016-local-first",
+  "article_id": "bdc69dbd-c7fb-405f-b8f7-38a6a8fce526",
+  "slug": "lea-prac-svc-006-phase-2-design-development-coordination-engineering-integration-and-fee",
+  "title": "Phase 2 Design Development Coordination Engineering Integration",
+  "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-006-phase-2-design-development-coordination-engineering-integration-and-fee--bdc69dbd-c7fb-405f-b8f7-38a6a8fce526",
+  "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-svc-006-phase-2-design-development-coordination-engineering-integration-and-fee--bdc69dbd-c7fb-405f-b8f7-38a6a8fce526/question-edits",
+  "audited_at": "2026-05-10T23:58:00.000+08:00",
+  "audit_date": "2026-05-10",
+  "status": "local_pass_ready_for_final_publishing_review",
+  "target": {
+    "article_id": "bdc69dbd-c7fb-405f-b8f7-38a6a8fce526",
+    "candidate_sha256": "sha256:363b07e04807b859c0d8f44cc64903237d5ff7496aaff0a148652cf26910c26e"
+  },
+  "classification": {
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "content_domain": "professional_practice_spp_202"
+  },
+  "source_audit": {
+    "primary_sources_checked": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "source_id": "uap-spp-202-standards-of-professional-practice",
+        "locator": "SPP Document 202, Regular Design Services scope and phase duties"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+        "source_id": "uap-spp-202-standards-of-professional-practice",
+        "locator": "Converted local text for SPP Document 202 line anchoring"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+        "sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+        "source_id": "uap-doc-401-402-owner-architect-agreement",
+        "locator": "Architect fee and manner of payment milestones"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document 401-402.md",
+        "sha256": "sha256:0b9cfd569b9f964c95dec13761812c8606b2c0fe38b9043df13efad361286a53",
+        "source_id": "uap-doc-401-402-owner-architect-agreement",
+        "locator": "Converted local text for payment milestone line anchoring"
+      }
+    ],
+    "checked_markdown_lines": [
+      "UAP Document Standards raw markdown lines 283-297",
+      "UAP Document Standards raw markdown lines 301-344",
+      "UAP Document Standards raw markdown lines 347-382",
+      "UAP Document 401-402 raw markdown lines 88-100",
+      "UAP Document 401-402 raw markdown lines 138-145"
+    ],
+    "source_scope": "SPP 202 regular design services plus UAP Document 401-402 payment milestones",
+    "local_source_checked": true,
+    "claims_repaired": [
+      "Removed generated media/component summary blocks from the student-facing article body.",
+      "Replaced standalone Bidding Assistance 5% and Construction Administration 10% fee allocation language with source-safe payment milestone wording.",
+      "Rewrote Contract Documents fee wording to the supported cumulative 85% milestone."
+    ]
+  },
+  "claims": [
+    {
+      "claim_id": "svc006-spp-202-phase-scope",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "checked_markdown_lines": [
+          "UAP Document Standards raw markdown lines 283-297",
+          "UAP Document Standards raw markdown lines 301-344",
+          "UAP Document Standards raw markdown lines 347-382"
+        ],
+        "support_summary": "SPP 202 source text lists regular design service scope and phase duties."
+      }
+    },
+    {
+      "claim_id": "svc006-payment-milestones",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+        "raw_pdf_sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document 401-402.md",
+        "checked_markdown_lines": [
+          "UAP Document 401-402 raw markdown lines 88-100",
+          "UAP Document 401-402 raw markdown lines 138-145"
+        ],
+        "support_summary": "UAP Document 401-402 supports cumulative payment milestones and remaining-fee breakdown."
+      }
+    }
+  ],
+  "linked_questions": 10,
+  "question_edits_created": 10,
+  "source_safe_rewrite_question_edits": 10,
+  "blockers": [],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_local_candidate_validation": true,
+    "safe_for_supabase_upload": false,
+    "supabase_final_publishing_required": true
+  },
+  "validation": {
+    "compose": "passed with blockers=0",
+    "diff": "passed with safe_to_push=true and blockers=[]",
+    "validate": "passed with valid=true and blockers=[]; component-usage.json warning only",
+    "json_parse": "passed for selected Batch 016 JSON files",
+    "tests": "bun test scripts/content-audit/content-audit.test.ts passed: 27 pass, 0 fail",
+    "git_diff_check": "passed for selected Batch 016 paths",
+    "clean_artifact_scan": "passed with zero matches"
+  }
+}

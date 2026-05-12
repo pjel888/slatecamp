@@ -1,131 +1,42 @@
+# MEP space allocation
 
-
-## Board Exam Quick Check
-
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
-
-**Common mistake:** treating a familiar keyword in **Lea Dsgn 007 09 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
-
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 ## Learning Goal
-Coordinate structural, mechanical, electrical, plumbing, and fire protection systems within the architectural design, identify spatial requirements for each system, resolve system conflicts, and prepare integrated ceiling plans.
+Coordinate architectural planning with mechanical, electrical, plumbing, sanitary, electronics, lighting, sprinkler, and ventilation requirements early enough to protect code compliance, usable floor area, ceiling clearances, equipment access, and future maintenance.
 
-Mechanical, electrical, and plumbing (MEP) systems require dedicated space within a building envelope. For the LEA, you must understand how much of your total floor area is consumed by MEP and related support areas — and how to budget for them during architectural planning so usable space is not compromised.
+MEP space allocation is the architectural discipline of reserving space for building services before the plan becomes too fixed to coordinate. It includes vertical shafts, risers, ducts, piping, cable routes, switchgear and transformer areas, pump and equipment rooms, air intakes, exhaust paths, access panels, ceiling zones, and reflected ceiling conflicts.
 
-## Core Concept
+PD 1096 makes clear that building documentation is coordinated across professions. Electrical documents are signed by a Professional Electrical Engineer, mechanical documents by a Professional Mechanical Engineer, sanitary documents by a Sanitary Engineer, plumbing documents by a Master Plumber, and electronics documents by an Electronics Engineer. The architect does not size every service component, but the architectural plan must leave the service routes and rooms that allow those systems to work.
 
-MEP space allocation begins with understanding the **net-to-gross ratio** (NGR), which quantifies the proportion of built space used for structure, MEP, and circulation versus actual usable area.
+The reflected ceiling plan requirement is a practical reminder of MEP coordination. PD 1096 lists lighting fixtures, diffusers, decorations, air-conditioning exhaust and return grilles, and sprinkler nozzles as items shown in the reflected ceiling plan. A ceiling is therefore not empty finish space. It is a coordination surface.
 
-**NGR = Usable Floor Area ÷ Total Built Area**
+Mechanical and electrical design references emphasize that early design decisions affect operating costs, maintenance needs, comfort, enjoyment, and productivity for years. Predesign should establish the project brief or owner requirements; design criteria should define how success will be measured; and tools or equipment choices should serve those criteria, not replace them.
 
-Or inverted:
+| Architectural decision | MEP consequence |
+| --- | --- |
+| Core location | Controls riser length, shaft grouping, toilet stacking, electrical distribution, and maintenance access. |
+| Structural grid | Affects duct runs, beam penetrations, ceiling zones, pipe slopes, and equipment support. |
+| Floor-to-floor height | Must accommodate structural depth, services, ceiling finishes, and required clear height. |
+| Parking and basement planning | Competes with boilers, chillers, tanks, switchgear, ventilation routes, and vertical transportation. |
+| Reflected ceiling design | Must coordinate lights, diffusers, return/exhaust grilles, sprinklers, access panels, and finishes. |
 
-**Structure + MEP + Circulation (as % of GFA) = 100% − NGR**
+Do not rely on fixed net-to-gross ratios, generic elevator counts, or mechanical-room percentages unless the problem gives them or a checked source packet supports them. In source-audited LEA work, the safer answer is usually procedural: coordinate early, reserve service space, verify code and consultant requirements, and protect maintainability.
 
-Typical NGR ranges by building type (planning norms, not code):
+Passive and active systems also need architectural integration. A natural ventilation strategy relies on openings, pressure paths, and plan depth. A mechanical cooling strategy relies on equipment, ducts, diffusers, returns, condensate, drainage, controls, and access. Many buildings use hybrid strategies, so the architect must make room for both the passive intent and the active backup or supplement.
 
-- **Hospital**: 0.55–0.65 (about 35–45% consumed by structure, MEP, shafts, and circulation)
-- **Office (standard / A-Class)**: 0.70–0.80 (about 20–30% consumed)
-- **Residential**: 0.75–0.85 (about 15–25% consumed)
-- **Retail**: 0.80–0.90 (about 10–20% consumed)
+## What to Watch For
 
-### Why High MEP Demand?
+A plan that maximizes saleable area by deleting shafts is not efficient; it is incomplete.
 
-1. **Vertical systems**: Mechanical rooms, electrical rooms, and plumbing cores occupy a noticeable percentage of the footprint and repeat vertically.
-2. **Horizontal runs**: HVAC ducts, electrical conduits, and water lines under floors and above ceilings occupy depth within the floor-to-floor height and compete with structure.
-3. **Shafts**: Elevator, stair, and utility cores run continuously, reducing assignable floor area per level while satisfying egress and services.
-4. **Redundancy**: Hospitals and critical facilities require emergency power, backup water, and redundant HVAC systems, multiplying MEP space demand.
+A low floor-to-floor height may look economical, but it can fail if beams, ducts, sprinklers, lighting, ceiling finishes, and clear height cannot coexist.
 
-### Standard MEP-Related Allocations (Order-of-Magnitude Planning)
+A reflected ceiling plan that ignores diffusers, returns, sprinklers, or lighting is not a finished coordination document.
 
-**Mechanical Room Size (central equipment)**
-- Small office (about 10 storeys, ~5,000 sqm total typical floors): on the order of 150–200 sqm for central mechanical plant.
-- Mid-size office (about 20 storeys, ~4,000 sqm total typical floors): on the order of 250–350 sqm, often split between a central plant and fan rooms.
-- Hospital per 100 beds: several hundred square meters (e.g., 400–500 sqm) distributed across multiple mechanical and support rooms.
+## Key Takeaways
 
-**Electrical Room Size**
-- Office / residential: roughly 50–80 sqm per floor or per zone, depending on distribution strategy and equipment.
-- Hospital: larger electrical rooms (on the order of 100 sqm and up) due to redundancy, emergency power, and specialized systems.
+MEP space is a planning requirement, not a late drafting cleanup.
 
-**Plumbing Core**
-- Vertical stacks and risers typically occupy a modest but continuous percentage of the plan, often bundled with toilets and wet areas.
-- Sanitary, storm, and water supply risers require coordinated shafts; exact diameters are determined by engineers from load calculations rather than fixed exam numbers.
+Reserve shafts, plant rooms, ceiling zones, service access, and distribution paths before finalizing the plan.
 
-**Vertical Circulation and Cores**
-- Elevator and stair cores are part of the gross area, not usable area, and typically contribute a significant share of the “non-assignable” component.
-- Total core and circulation area commonly falls within the non-usable fraction reflected in the NGR ranges above.
-
-### Floor-to-Floor Impact on MEP
-
-A floor-to-floor height of about 3.0 m (common in many RC buildings) must accommodate:
-
-- Structural slab and beams.
-- MEP runs (HVAC ducts, fire protection, electrical, plumbing).
-- Suspended ceiling and finishes where provided.
-
-If MEP depth is underestimated, clear finished ceiling height is reduced, creating comfort and proportion issues and potentially breaching minimum ceiling height standards (e.g., PD 1096 requires at least 2.40 m for upper-storey habitable rooms, with 2.70 m minimum at the first storey). Proper early allocation of vertical depth protects both compliance and design quality.
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-dsgn-007-09-core-concept", type="image", caption="Building Systems Coordination — Integrated Ceiling Plan Diagram", description="Composite reflected ceiling plan showing coordination of: structural grid, mechanical ductwork, electrical lighting layout, plumbing, fire sprinkler heads, and fire alarm devices. Conflict resolution zones highlighted with annotation.", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-## Key Provisions
-
-| Building Type          | NGR (approx.) | Non-Usable % of GFA* | Typical Issues                                      |
-|------------------------|---------------|----------------------|----------------------------------------------------|
-| **Hospital**           | 0.55–0.65     | ~35–45%              | Redundant systems, sterile and support zones       |
-| **Office (A-Class)**   | 0.70–0.80     | ~20–30%              | Dense cabling, HVAC zoning, large cores            |
-| **Residential**        | 0.75–0.85     | ~15–25%              | Vertical stacks, small cores distributed by stacks |
-| **Retail**             | 0.80–0.90     | ~10–20%              | Simple services, large open spaces                 |
-| **Hotel**              | 0.70–0.78     | ~22–30%              | Services to rooms, laundry, back-of-house support  |
-
-\*Non-usable includes structure, MEP, circulation, and non-assignable support areas.
-
-**Shaft and Plant Zoning by Building Height (Planning Patterns)**
-
-- **1–5 storeys**: A single main mechanical/electrical core with distributed plumbing in walls may be adequate.
-- **6–15 storeys**: A central mechanical core, electrical distribution per floor or per zone, and duplicated plumbing stacks for efficiency and redundancy.
-- **16+ storeys**: Zoned mechanical floors (mechanical “interstitial” levels or sky lobbies) every several floors, redundant electrical feeds, and multiple pressure zones for plumbing.
-
-## Philippine Practice Context
-
-In the Philippines, MEP space has historically been under-allocated in many projects, resulting in congested ceiling spaces, difficult retrofits, and service visibility in supposedly finished areas. Contemporary practice allocates more realistic percentages for cores, risers, and plant rooms, especially in hospitals and high-rise offices, where 20–30% (or more for hospitals) of GFA may be used by non-assignable space. High-rise residential towers commonly require carefully planned mechanical floors and service zones to handle water pressure, vertical distribution, and fire protection. Poor acoustic separation of plumbing risers and inadequate shaft sizing remain frequent pain points, and LEA questions often test your ability to foresee these issues from the planning stage.
-
-## How It's Tested
-
-1. **NGR and Area Breakdown**
-   Given a total GFA and a target NGR for a specific building type, you compute usable floor area versus space consumed by structure, MEP, and circulation.
-
-2. **Floor-to-Floor and Ceiling Height Trade-Offs**
-   You analyze how increased MEP depth affects clear ceiling height and whether the resulting height still complies with PD 1096 minimums and meets comfort and market expectations (e.g., office ceilings versus residential).
-
-3. **Core and Shaft Planning**
-   You design or evaluate the size and location of mechanical, electrical, and plumbing cores for a mid- or high-rise building, justifying whether they are adequate for the stated occupancy, storey count, and redundancy requirements.
-
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **“MEP is invisible but not free.”** If you design to an aggressive net-to-gross ratio without reserving enough space for plant, risers, and cores, the “missing” area will reappear later as exposed services, cramped ceilings, and costly revisions. Budget MEP and core space explicitly from day one.
-[/SLATECAMP_UI_BLOCK]
-
-**Exam Tip:** Ceiling plenum depth (typically 600-900mm) accommodates ductwork, piping, and conduit. Coordinate structural depth (+500-800mm) with MEP zone for total floor-to-floor height calculation.
-[SLATECAMP_UI_BLOCK:ui_0003 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-dsgn-007-09-core-concept", type="image", caption="Integrated Ceiling Plan — MEP, Structural, and Lighting Coordination", description="Reflected ceiling plan showing coordination of: structural beams and soffits, HVAC duct routing (with diffusers), lighting fixtures (recessed, pendant, emergency), sprinkler head coverage, and ceiling grid. Conflict zones where structural, MEP, and architectural elements intersect are highlighted.", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-## Cross-References
-
-See **LEA-DSGN-007-06** (Building Integration) for system coordination process, **LEA-DSGN-008-03** (Sprinkler Systems) for fire protection integration, and **LEA-DSGN-009-03** (IAQ) for mechanical ventilation coordination.
-
-## Common Mistakes
-
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\n    'Designing to a high NGR target without checking whether core, MEP, and structure can realistically fit within the remaining percentage',\n    'Allocating a single small electrical or mechanical room for a high-rise building that requires zoned or per-floor distribution',\n    'Underestimating riser and shaft sizes, resulting in last-minute encroachment into rentable or sleaable areas',\n    'Placing all major mechanical equipment only on the roof in tall buildings, leading to excessive duct and pipe runs and energy penalties',\n    'Ignoring plumbing and mechanical noise transmission when locating risers adjacent to bedrooms or quiet spaces'\n  ]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+Use project-specific data and checked sources for numeric ratios; do not invent NGR, elevator, or equipment-room rules.

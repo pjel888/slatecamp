@@ -1,0 +1,48 @@
+{
+  "question_id": "b1624663-8ac4-4349-b6ad-c652eeaa2266",
+  "baseline_hash": "sha256:2f989bd49863864236a09bc0b74a731e53430859a9abd191bdde2dd745acbf42",
+  "action": "replace",
+  "reason": "source-audited-article-batch-038-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-038",
+  "approved_at": "2026-05-11T13:26:35+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-038-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 4448-4472"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 1701"
+  },
+  "proposed": {
+    "text": "What is the maximum paint spray booth area under Rule XVII?",
+    "options": [
+      {
+        "id": "b038-d601-22-a",
+        "text": "150 sq m or 10 percent of the basic area permitted for the major building use, whichever controls"
+      },
+      {
+        "id": "b038-d601-22-b",
+        "text": "300 sq m without occupancy limit"
+      },
+      {
+        "id": "b038-d601-22-c",
+        "text": "10 percent of the lot area only"
+      },
+      {
+        "id": "b038-d601-22-d",
+        "text": "The same as the full fire area"
+      }
+    ],
+    "correct_option_id": "b038-d601-22-a",
+    "rationale": "Correct answer: 150 sq m or 10 percent of the basic area permitted for the major building use, whichever controls. This is directly supported by PD 1096 2004 Revised IRR, Section 1701.",
+    "explanation": "The Batch 038 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 1701.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 1701"
+  }
+}

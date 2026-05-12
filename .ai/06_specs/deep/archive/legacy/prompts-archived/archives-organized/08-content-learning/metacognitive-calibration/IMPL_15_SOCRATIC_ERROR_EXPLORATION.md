@@ -1,7 +1,7 @@
 # IMPL_15: Socratic Error Exploration & AI Content Intelligence
 
-**Priority:** P2  
-**Effort:** ~1 week  
+**Priority:** P2
+**Effort:** ~1 week
 **Research basis:** Socratic questioning produces deeper understanding than direct instruction. Generation of explanations activates elaborative retrieval (Carpenter, 2011).
 
 ---

@@ -1,7 +1,107 @@
 {
   "article_id": "f39860e3-5b76-49c3-a82f-035371e8f225",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "source_count": 0,
-  "sources": []
+  "sources_hash": "sha256:3f2dd9fea4419222b0f306f44917744e61c22b67eb173e6bc62df43aad0acdba",
+  "source_count": 4,
+  "sources": [
+    {
+      "source_id": "ra9266-local-raw-pdf--b049-f39860e3-01",
+      "article_id": "f39860e3-5b76-49c3-a82f-035371e8f225",
+      "label": "RA 9266 IRR Architecture Act - local raw PDF",
+      "url": null,
+      "source_type": "local_raw_pdf",
+      "description": "RA 9266 IRR Architecture Act - local raw PDF; local raw PDF checked first; refined markdown used only as locator. RA 9266 IRR refined markdown lines 31-84 and 130-134.",
+      "is_verified": true,
+      "sort_order": 0,
+      "created_at": "2026-05-11T20:35:00.000+08:00",
+      "updated_at": "2026-05-11T20:35:00.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+      "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+      "source_locator": "RA 9266 IRR refined markdown lines 31-84 and 130-134",
+      "checked_markdown_lines": [
+        "RA 9266 IRR refined markdown lines 31-84",
+        "RA 9266 IRR refined markdown lines 130-134"
+      ],
+      "local_audit_note": "Primary truth is the local raw PDF family; refined markdown line ranges are locator aids for the checked provisions."
+    },
+    {
+      "source_id": "uap1979-local-raw-pdf--b049-f39860e3-02",
+      "article_id": "f39860e3-5b76-49c3-a82f-035371e8f225",
+      "label": "1979 UAP Documents - local raw PDF",
+      "url": null,
+      "source_type": "local_raw_pdf",
+      "description": "1979 UAP Documents - local raw PDF; local raw PDF checked first; refined markdown used only as locator. 1979 UAP Documents refined markdown lines 371-379, 722-756, 811-813, 1055-1161, 1427-1449, and 1560-1605.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-11T20:35:00.000+08:00",
+      "updated_at": "2026-05-11T20:35:00.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/1979 UAP Documents.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/1979 UAP Documents.pdf",
+      "raw_pdf_sha256": "sha256:54d42c8d39cb6c1e8622ef21a65e63cb09d90c302ca905efa95442614e5f0b5b",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/1979 UAP Documents.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/1979 UAP Documents.md",
+      "refined_markdown_sha256": "sha256:ada40ce7a1046bb6ca99a34b095250ef650a05285458e2dafd0ed4be68870b8e",
+      "source_locator": "1979 UAP Documents refined markdown lines 371-379, 722-756, 811-813, 1055-1161, 1427-1449, and 1560-1605",
+      "checked_markdown_lines": [
+        "1979 UAP Documents refined markdown lines 371-379",
+        "1979 UAP Documents refined markdown lines 722-756",
+        "1979 UAP Documents refined markdown lines 811-813",
+        "1979 UAP Documents refined markdown lines 1055-1161",
+        "1979 UAP Documents refined markdown lines 1427-1449",
+        "1979 UAP Documents refined markdown lines 1560-1605"
+      ],
+      "local_audit_note": "Primary truth is the local raw PDF family; refined markdown line ranges are locator aids for the checked provisions."
+    },
+    {
+      "source_id": "mech1-local-raw-pdf--b049-f39860e3-03",
+      "article_id": "f39860e3-5b76-49c3-a82f-035371e8f225",
+      "label": "Mechanical and Electrical Systems - local raw PDF",
+      "url": null,
+      "source_type": "local_raw_pdf",
+      "description": "Mechanical and Electrical Systems - local raw PDF; local raw PDF checked first; refined markdown used only as locator. Mechanical and Electrical Systems refined markdown lines 365-474 and 548-592.",
+      "is_verified": true,
+      "sort_order": 2,
+      "created_at": "2026-05-11T20:35:00.000+08:00",
+      "updated_at": "2026-05-11T20:35:00.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Mechanical and Electrical Systems.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Mechanical and Electrical Systems.pdf",
+      "raw_pdf_sha256": "sha256:b657bfd1e3cdaceb0632ef105f7604df2df2667f1b75a1534762e1dae28ec5d9",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Mechanical and Electrical Systems.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Mechanical and Electrical Systems.md",
+      "refined_markdown_sha256": "sha256:e041473193aa7cd57d017dcec252bd84de7e1589bd831ae22b2a5c7591e1daed",
+      "source_locator": "Mechanical and Electrical Systems refined markdown lines 365-474 and 548-592",
+      "checked_markdown_lines": [
+        "Mechanical and Electrical Systems refined markdown lines 365-474",
+        "Mechanical and Electrical Systems refined markdown lines 548-592"
+      ],
+      "local_audit_note": "Primary truth is the local raw PDF family; refined markdown line ranges are locator aids for the checked provisions."
+    },
+    {
+      "source_id": "mech2-local-raw-pdf--b049-f39860e3-04",
+      "article_id": "f39860e3-5b76-49c3-a82f-035371e8f225",
+      "label": "Mechanical and Electrical Systems 2 - local raw PDF",
+      "url": null,
+      "source_type": "local_raw_pdf",
+      "description": "Mechanical and Electrical Systems 2 - local raw PDF; local raw PDF checked first; refined markdown used only as locator. Mechanical and Electrical Systems 2 refined markdown lines 153-183.",
+      "is_verified": true,
+      "sort_order": 3,
+      "created_at": "2026-05-11T20:35:00.000+08:00",
+      "updated_at": "2026-05-11T20:35:00.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Mechanical and Electrical Systems 2.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Mechanical and Electrical Systems 2.pdf",
+      "raw_pdf_sha256": "sha256:e76b064a28ace4247b5074bddecb4b720e103d90c122adbcf0366a1c4c6baea6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Mechanical and Electrical Systems 2.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Mechanical and Electrical Systems 2.md",
+      "refined_markdown_sha256": "sha256:29be259d41a1f4812ed0e9467d106bb8a2b91452862a0dbc76b0e7e04630a199",
+      "source_locator": "Mechanical and Electrical Systems 2 refined markdown lines 153-183",
+      "checked_markdown_lines": [
+        "Mechanical and Electrical Systems 2 refined markdown lines 153-183"
+      ],
+      "local_audit_note": "Primary truth is the local raw PDF family; refined markdown line ranges are locator aids for the checked provisions."
+    }
+  ]
 }

@@ -1,0 +1,303 @@
+{
+  "batch_id": "source-audited-article-batch-024-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T14:30:00.000+08:00",
+  "article_id": "31d08115-b5ff-4b0e-b33e-522e25800da4",
+  "slug": "lea-prac-svc-014-construction-management-services-scope-and-professional-authority",
+  "title": "Construction Management Services Scope and Professional Authority",
+  "status": "local_pass_ready_for_final_publishing_review",
+  "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-014-construction-management-services-scope-and-professional-authority--31d08115-b5ff-4b0e-b33e-522e25800da4",
+  "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-014-construction-management-services-scope-and-professional-authority--31d08115-b5ff-4b0e-b33e-522e25800da4",
+  "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-svc-014-construction-management-services-scope-and-professional-authority--31d08115-b5ff-4b0e-b33e-522e25800da4/question-edits",
+  "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-014-construction-management-services-scope-and-professional-authority--31d08115-b5ff-4b0e-b33e-522e25800da4/question-edits",
+  "linked_questions": 10,
+  "question_edits_created": 10,
+  "source_safe_rewrite_question_edits": 10,
+  "classification": {
+    "content_domain": "professional_practice",
+    "requires_raw_pdf_audit": true,
+    "legal_or_code_source": true
+  },
+  "target": {
+    "article_id": "31d08115-b5ff-4b0e-b33e-522e25800da4",
+    "slug": "lea-prac-svc-014-construction-management-services-scope-and-professional-authority",
+    "normalized_sha256": "sha256:8116505382fe45201191ac2fec50702160354bbb437d01fec3f86ab2149fa66d",
+    "candidate_sha256": "sha256:8116505382fe45201191ac2fec50702160354bbb437d01fec3f86ab2149fa66d"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_only": true,
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "source_audit": {
+    "checked_sources": [
+      {
+        "source_id": "uap-standards-spp204b-construction-management-local",
+        "label": "UAP Standards of Professional Practice - SPP 204-B Construction Management",
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "source_type": "professional_practice_pdf",
+        "source_locator": "UAP Standards refined markdown lines 983-1030",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "checked_markdown_lines": [
+          "UAP Standards lines 983-1030"
+        ],
+        "use": "Local raw PDF and refined markdown checked for CM rationale, functions, authority limits, qualifications, and separate compensation.",
+        "local_source_checked": true
+      },
+      {
+        "source_id": "spp204b-construction-management-services-local",
+        "label": "SPP 204-B - Construction Management Services",
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "source_type": "professional_practice_pdf",
+        "source_locator": "SPP 204B refined markdown lines 83-377",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204B.pdf",
+        "raw_pdf_sha256": "sha256:b6bfffcf6e3ca7a4317121b28d5fab9237c2a4642b450573232516ef9dfb697e",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204B.md",
+        "refined_markdown_sha256": "sha256:b49b5fcffe1e1ad48cb618b70d6a369400a0c7460dd3fa7ea471ee5900dc53e8",
+        "checked_markdown_lines": [
+          "SPP 204B lines 83-377"
+        ],
+        "use": "Local SPP 204-B raw PDF and refined markdown checked as article-specific source.",
+        "local_source_checked": true
+      }
+    ],
+    "source_locator": "UAP Standards refined markdown lines 983-1030; SPP 204B refined markdown lines 83-377",
+    "checked_markdown_lines": [
+      "UAP Standards lines 983-1030",
+      "SPP 204B lines 83-377"
+    ]
+  },
+  "claims": [
+    {
+      "claim_id": "batch-024-lea-prac-svc-014-construction-management-services-scope-and-professional-authority-question-001",
+      "claim_text": "Question 69712cf4-a584-4b6c-b5ff-87f0e27d385d / model BATCH-024-lea-prac-svc-014-construction-management-services-scope-and-professional-authority-001 rewritten to source-safe local form.",
+      "question_id": "69712cf4-a584-4b6c-b5ff-87f0e27d385d",
+      "model_id": "BATCH-024-lea-prac-svc-014-construction-management-services-scope-and-professional-authority-001",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp204b-construction-management-local",
+        "spp204b-construction-management-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 983-1030",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-024-lea-prac-svc-014-construction-management-services-scope-and-professional-authority-question-002",
+      "claim_text": "Question 1b1098cb-d60d-444e-b6f1-aa2fe2810161 / model BATCH-024-lea-prac-svc-014-construction-management-services-scope-and-professional-authority-002 rewritten to source-safe local form.",
+      "question_id": "1b1098cb-d60d-444e-b6f1-aa2fe2810161",
+      "model_id": "BATCH-024-lea-prac-svc-014-construction-management-services-scope-and-professional-authority-002",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp204b-construction-management-local",
+        "spp204b-construction-management-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 983-1030",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-024-lea-prac-svc-014-construction-management-services-scope-and-professional-authority-question-003",
+      "claim_text": "Question 2a156f09-7030-4e37-a362-9597b459680f / model BATCH-024-lea-prac-svc-014-construction-management-services-scope-and-professional-authority-003 rewritten to source-safe local form.",
+      "question_id": "2a156f09-7030-4e37-a362-9597b459680f",
+      "model_id": "BATCH-024-lea-prac-svc-014-construction-management-services-scope-and-professional-authority-003",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp204b-construction-management-local",
+        "spp204b-construction-management-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 983-1030",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-024-lea-prac-svc-014-construction-management-services-scope-and-professional-authority-question-004",
+      "claim_text": "Question dbf7e720-9ac6-4383-ad42-e9f436162024 / model BATCH-024-lea-prac-svc-014-construction-management-services-scope-and-professional-authority-004 rewritten to source-safe local form.",
+      "question_id": "dbf7e720-9ac6-4383-ad42-e9f436162024",
+      "model_id": "BATCH-024-lea-prac-svc-014-construction-management-services-scope-and-professional-authority-004",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp204b-construction-management-local",
+        "spp204b-construction-management-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 983-1030",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-024-lea-prac-svc-014-construction-management-services-scope-and-professional-authority-question-005",
+      "claim_text": "Question 1d653a53-5ede-43ab-bd9a-a0d6c963ac2f / model BATCH-024-lea-prac-svc-014-construction-management-services-scope-and-professional-authority-005 rewritten to source-safe local form.",
+      "question_id": "1d653a53-5ede-43ab-bd9a-a0d6c963ac2f",
+      "model_id": "BATCH-024-lea-prac-svc-014-construction-management-services-scope-and-professional-authority-005",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp204b-construction-management-local",
+        "spp204b-construction-management-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 983-1030",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-024-lea-prac-svc-014-construction-management-services-scope-and-professional-authority-question-006",
+      "claim_text": "Question 008ab79e-185d-43ad-bbc8-6445beb9f26b / model BATCH-024-lea-prac-svc-014-construction-management-services-scope-and-professional-authority-006 rewritten to source-safe local form.",
+      "question_id": "008ab79e-185d-43ad-bbc8-6445beb9f26b",
+      "model_id": "BATCH-024-lea-prac-svc-014-construction-management-services-scope-and-professional-authority-006",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp204b-construction-management-local",
+        "spp204b-construction-management-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 983-1030",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-024-lea-prac-svc-014-construction-management-services-scope-and-professional-authority-question-007",
+      "claim_text": "Question f6c7e61b-4498-45fa-9d43-adc2ec9df530 / model BATCH-024-lea-prac-svc-014-construction-management-services-scope-and-professional-authority-007 rewritten to source-safe local form.",
+      "question_id": "f6c7e61b-4498-45fa-9d43-adc2ec9df530",
+      "model_id": "BATCH-024-lea-prac-svc-014-construction-management-services-scope-and-professional-authority-007",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp204b-construction-management-local",
+        "spp204b-construction-management-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 983-1030",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-024-lea-prac-svc-014-construction-management-services-scope-and-professional-authority-question-008",
+      "claim_text": "Question bd7a7fd3-7d13-4eb8-a449-42ede25cdbd2 / model BATCH-024-lea-prac-svc-014-construction-management-services-scope-and-professional-authority-008 rewritten to source-safe local form.",
+      "question_id": "bd7a7fd3-7d13-4eb8-a449-42ede25cdbd2",
+      "model_id": "BATCH-024-lea-prac-svc-014-construction-management-services-scope-and-professional-authority-008",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp204b-construction-management-local",
+        "spp204b-construction-management-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 983-1030",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-024-lea-prac-svc-014-construction-management-services-scope-and-professional-authority-question-009",
+      "claim_text": "Question 615f6330-3d53-43a7-8f9e-e6cb0b012892 / model BATCH-024-lea-prac-svc-014-construction-management-services-scope-and-professional-authority-009 rewritten to source-safe local form.",
+      "question_id": "615f6330-3d53-43a7-8f9e-e6cb0b012892",
+      "model_id": "BATCH-024-lea-prac-svc-014-construction-management-services-scope-and-professional-authority-009",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp204b-construction-management-local",
+        "spp204b-construction-management-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 983-1030",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-024-lea-prac-svc-014-construction-management-services-scope-and-professional-authority-question-010",
+      "claim_text": "Question fa3a69f6-cef9-49eb-8348-822ee08aad75 / model BATCH-024-lea-prac-svc-014-construction-management-services-scope-and-professional-authority-010 rewritten to source-safe local form.",
+      "question_id": "fa3a69f6-cef9-49eb-8348-822ee08aad75",
+      "model_id": "BATCH-024-lea-prac-svc-014-construction-management-services-scope-and-professional-authority-010",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp204b-construction-management-local",
+        "spp204b-construction-management-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 983-1030",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    }
+  ],
+  "local_repairs": {
+    "normalized_rewritten": true,
+    "candidate_recomposed": true,
+    "source_records_created": 2,
+    "question_edits_created": 10,
+    "source_safe_rewrite_question_edits": 10,
+    "non_source_claims_removed_or_rewritten": true,
+    "ui_block_tokens_removed": true
+  },
+  "validation": {
+    "compose_blockers": [],
+    "diff_safe_to_push": true,
+    "diff_blockers": [],
+    "validate_valid": true,
+    "validate_blockers": [],
+    "validate_warnings": [
+      "lea-prac-svc-014-construction-management-services-scope-and-professional-authority--31d08115-b5ff-4b0e-b33e-522e25800da4: component-usage.json has not been generated for this article yet."
+    ],
+    "scoped_validate_report": ".ai/content-audit-export/articles/lea-prac-svc-014-construction-management-services-scope-and-professional-authority--31d08115-b5ff-4b0e-b33e-522e25800da4/batch-024-validate-report.json",
+    "compose_report": ".ai/content-audit-export/articles/lea-prac-svc-014-construction-management-services-scope-and-professional-authority--31d08115-b5ff-4b0e-b33e-522e25800da4/compose-report.json",
+    "diff_report": ".ai/content-audit-export/articles/lea-prac-svc-014-construction-management-services-scope-and-professional-authority--31d08115-b5ff-4b0e-b33e-522e25800da4/diff-report.json"
+  },
+  "blockers": [],
+  "unverified_or_rejected_claims": [],
+  "sme_review": {
+    "required": false,
+    "status": "not_required_for_local_first_batch"
+  }
+}

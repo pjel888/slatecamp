@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-05-10T18:18:36.188Z",
+  "input": "/Users/philiplewis/slatecamp/.ai/content-audit-export",
+  "article_count": 1,
+  "valid": true,
+  "blockers": [],
+  "warnings": [
+    "top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708: component-usage.json has not been generated for this article yet."
+  ],
+  "articles": [
+    {
+      "article_id": "6e84b3e6-5dd9-4557-8202-5085d24a3708",
+      "slug": "top-50-traps-2024-irr",
+      "folder": "top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708",
+      "valid": true,
+      "blockers": [],
+      "warnings": [
+        "component-usage.json has not been generated for this article yet."
+      ],
+      "files": {
+        "metadata": true,
+        "original": true,
+        "normalized": true,
+        "uiBlocks": true,
+        "parserErrors": true,
+        "uiBlockEdits": true,
+        "linkedQuestions": true,
+        "sources": true,
+        "taxonomy": true,
+        "componentUsage": false,
+        "candidate": true,
+        "diffReport": true,
+        "diffReportMarkdown": true,
+        "pushReport": false,
+        "pushResult": false
+      },
+      "hashes": {
+        "original": "sha256:17371b82afe0539467759f5b0c7fd39949d3b4fa0572206bd55d261dfdd0fff4",
+        "normalized": "sha256:99f43e18737abc0a7f3fbc6b1ae991dbe2f34b30a4511bb6ebddde586b7809d7",
+        "candidate": "sha256:99f43e18737abc0a7f3fbc6b1ae991dbe2f34b30a4511bb6ebddde586b7809d7",
+        "ui_blocks": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    }
+  ]
+}

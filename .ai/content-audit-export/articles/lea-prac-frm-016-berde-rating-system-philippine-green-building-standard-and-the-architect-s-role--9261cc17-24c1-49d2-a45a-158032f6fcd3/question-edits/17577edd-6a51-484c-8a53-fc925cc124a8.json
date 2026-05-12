@@ -1,0 +1,57 @@
+{
+  "question_id": "17577edd-6a51-484c-8a53-fc925cc124a8",
+  "baseline_hash": "sha256:c03e8feea5f1cf751809d271b7373863d790c888c0d3e03468e746750676e89a",
+  "action": "replace",
+  "reason": "source-audited-article-batch-031-local-first aligned linked question with audited local source language for lea-prac-frm-016-berde-rating-system-philippine-green-building-standard-and-the-architect-s-role.",
+  "approved_by": "codex-local-source-audit-batch-031",
+  "approved_at": "2026-05-11T08:56:01+08:00",
+  "source_audit_support": {
+    "parent_article_id": "9261cc17-24c1-49d2-a45a-158032f6fcd3",
+    "parent_article_slug": "lea-prac-frm-016-berde-rating-system-philippine-green-building-standard-and-the-architect-s-role",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "BERDE User Guide lines 123-135, 141-171, 242-269, 320-360, 544-548",
+    "checked_sources": [
+      {
+        "source_id": "berde-buildings-version-5-user-guide-local",
+        "label": "BERDE Buildings Version 5.0.0 User Guide",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.pdf",
+        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.pdf",
+        "raw_pdf_sha256": "sha256:59f4e0a3a485f73f93f211bc4250932a9c9d2b114b4f571b2ab8f6a58c426bb4",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.md",
+        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.md",
+        "refined_markdown_sha256": "sha256:36537e2d7fae0f6f9eaf85589873086d118008fbb757f48f845876ab8585b5fc",
+        "source_locator": "BERDE refined markdown lines 123-135, 141-171, 242-269, 320-360, 544-548",
+        "checked_markdown_lines": [
+          "BERDE refined markdown lines 123-135, 141-171, 242-269, 320-360, 544-548"
+        ]
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer key, rationale, explanation, and code citation rewritten to the audited local article scope."
+  },
+  "proposed": {
+    "text": "Which architect-role statement stays within the audited guide?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The architect may help align design and documentation with BERDE target credits as part of the project team"
+      },
+      {
+        "id": "b",
+        "text": "Every project is legally required to be BERDE Certified"
+      },
+      {
+        "id": "c",
+        "text": "The architect alone certifies BERDE ratings"
+      },
+      {
+        "id": "d",
+        "text": "BERDE replaces all building and environmental laws"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The guide supports architects as building professionals and project-team participants, but not those overstatements.",
+    "explanation": "The guide supports architects as building professionals and project-team participants, but not those overstatements.",
+    "code_citation": "BERDE User Guide lines 123-135, 141-171, 242-269, 320-360, 544-548"
+  }
+}

@@ -1,0 +1,424 @@
+{
+  "artifact_type": "source_audited_article_batch_ledger",
+  "batch_id": "source-audited-article-batch-061-local-first",
+  "batch_number": 61,
+  "generated_at": "2026-05-11T21:23:00.000+08:00",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "constraints": {
+    "local_first_only": true,
+    "supabase_write_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false
+  },
+  "inherited_blockers": "Batch 060 blockers=0",
+  "selected_articles": [
+    {
+      "article_id": "c9b1aadd-4843-4cf3-a551-6dd67678e508",
+      "slug": "lea-dsgn-007-04-core-concept",
+      "title": "Architectural design process",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-04-core-concept--c9b1aadd-4843-4cf3-a551-6dd67678e508",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-04-core-concept--c9b1aadd-4843-4cf3-a551-6dd67678e508/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "scenario_policy_status": "eligible-deferred",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-04-core-concept--c9b1aadd-4843-4cf3-a551-6dd67678e508/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-04-core-concept--c9b1aadd-4843-4cf3-a551-6dd67678e508/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-04-core-concept--c9b1aadd-4843-4cf3-a551-6dd67678e508/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-04-core-concept--c9b1aadd-4843-4cf3-a551-6dd67678e508/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-04-core-concept--c9b1aadd-4843-4cf3-a551-6dd67678e508/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-04-core-concept--c9b1aadd-4843-4cf3-a551-6dd67678e508/ui-blocks.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-04-core-concept--c9b1aadd-4843-4cf3-a551-6dd67678e508/ui-block-edits.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-04-core-concept--c9b1aadd-4843-4cf3-a551-6dd67678e508/parser-errors.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-04-core-concept--c9b1aadd-4843-4cf3-a551-6dd67678e508/compose-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-04-core-concept--c9b1aadd-4843-4cf3-a551-6dd67678e508/diff-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-04-core-concept--c9b1aadd-4843-4cf3-a551-6dd67678e508/diff-report.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-04-core-concept--c9b1aadd-4843-4cf3-a551-6dd67678e508/ui-block-edit-validation.json"
+      ],
+      "source_ids": [
+        "design-process-local-raw-pdf--b061-c9b1aadd-01"
+      ],
+      "source_locators": [
+        "Design Process refined markdown lines 52-69, 72-105, and 112-214; raw PDF pages for Design Stages and Architectural Programming slides, including pages 27, 32, 37, 42, 47, 52, 58, 63, 69, 74, 79, 84, 89, 94, and 99"
+      ]
+    },
+    {
+      "article_id": "3067e127-60c0-4570-ab86-d85af25fb9b2",
+      "slug": "lea-dsgn-007-05-core-concept",
+      "title": "Design brief",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-05-core-concept--3067e127-60c0-4570-ab86-d85af25fb9b2",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-05-core-concept--3067e127-60c0-4570-ab86-d85af25fb9b2/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "scenario_policy_status": "eligible-deferred",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-05-core-concept--3067e127-60c0-4570-ab86-d85af25fb9b2/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-05-core-concept--3067e127-60c0-4570-ab86-d85af25fb9b2/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-05-core-concept--3067e127-60c0-4570-ab86-d85af25fb9b2/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-05-core-concept--3067e127-60c0-4570-ab86-d85af25fb9b2/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-05-core-concept--3067e127-60c0-4570-ab86-d85af25fb9b2/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-05-core-concept--3067e127-60c0-4570-ab86-d85af25fb9b2/ui-blocks.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-05-core-concept--3067e127-60c0-4570-ab86-d85af25fb9b2/ui-block-edits.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-05-core-concept--3067e127-60c0-4570-ab86-d85af25fb9b2/parser-errors.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-05-core-concept--3067e127-60c0-4570-ab86-d85af25fb9b2/compose-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-05-core-concept--3067e127-60c0-4570-ab86-d85af25fb9b2/diff-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-05-core-concept--3067e127-60c0-4570-ab86-d85af25fb9b2/diff-report.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-05-core-concept--3067e127-60c0-4570-ab86-d85af25fb9b2/ui-block-edit-validation.json"
+      ],
+      "source_ids": [
+        "design-process-local-raw-pdf--b061-3067e127-01"
+      ],
+      "source_locators": [
+        "Design Process refined markdown lines 52-69, 72-105, and 112-214; raw PDF pages for Design Stages and Architectural Programming slides, including pages 27, 32, 37, 42, 47, 52, 58, 63, 69, 74, 79, 84, 89, 94, and 99"
+      ]
+    },
+    {
+      "article_id": "21880755-59f3-4749-9786-59e6cb53c6ed",
+      "slug": "lea-dsgn-012-01-core-concept",
+      "title": "Site analysis",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-01-core-concept--21880755-59f3-4749-9786-59e6cb53c6ed",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-01-core-concept--21880755-59f3-4749-9786-59e6cb53c6ed/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "scenario_policy_status": "eligible-deferred",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-01-core-concept--21880755-59f3-4749-9786-59e6cb53c6ed/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-01-core-concept--21880755-59f3-4749-9786-59e6cb53c6ed/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-01-core-concept--21880755-59f3-4749-9786-59e6cb53c6ed/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-01-core-concept--21880755-59f3-4749-9786-59e6cb53c6ed/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-01-core-concept--21880755-59f3-4749-9786-59e6cb53c6ed/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-01-core-concept--21880755-59f3-4749-9786-59e6cb53c6ed/ui-blocks.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-01-core-concept--21880755-59f3-4749-9786-59e6cb53c6ed/ui-block-edits.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-01-core-concept--21880755-59f3-4749-9786-59e6cb53c6ed/parser-errors.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-01-core-concept--21880755-59f3-4749-9786-59e6cb53c6ed/compose-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-01-core-concept--21880755-59f3-4749-9786-59e6cb53c6ed/diff-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-01-core-concept--21880755-59f3-4749-9786-59e6cb53c6ed/diff-report.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-01-core-concept--21880755-59f3-4749-9786-59e6cb53c6ed/ui-block-edit-validation.json"
+      ],
+      "source_ids": [
+        "sitework-lecture-local-raw-pdf--b061-21880755-01",
+        "building-technology-siteworks-local-raw-pdf--b061-21880755-02"
+      ],
+      "source_locators": [
+        "Sitework Lecture refined markdown lines 1-80 and 560-620; raw PDF pages for Div 02 Sitework earthworks, soil classification, fill, roads, parking, and paving slides, including pages 1-8 and 47-52",
+        "Building Technology - Siteworks refined markdown lines 1-63 and 440-485; raw PDF pages for Div 02 Sitework earthworks, AASHTO soil classification, fill material, and paving slides, including pages 1-8 and 47-52"
+      ]
+    },
+    {
+      "article_id": "a59db1e5-3988-489e-841d-e71e4f37050c",
+      "slug": "lea-dsgn-012-02-core-concept",
+      "title": "Site development planning",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-02-core-concept--a59db1e5-3988-489e-841d-e71e4f37050c",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-02-core-concept--a59db1e5-3988-489e-841d-e71e4f37050c/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "scenario_policy_status": "eligible-deferred",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-02-core-concept--a59db1e5-3988-489e-841d-e71e4f37050c/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-02-core-concept--a59db1e5-3988-489e-841d-e71e4f37050c/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-02-core-concept--a59db1e5-3988-489e-841d-e71e4f37050c/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-02-core-concept--a59db1e5-3988-489e-841d-e71e4f37050c/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-02-core-concept--a59db1e5-3988-489e-841d-e71e4f37050c/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-02-core-concept--a59db1e5-3988-489e-841d-e71e4f37050c/ui-blocks.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-02-core-concept--a59db1e5-3988-489e-841d-e71e4f37050c/ui-block-edits.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-02-core-concept--a59db1e5-3988-489e-841d-e71e4f37050c/parser-errors.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-02-core-concept--a59db1e5-3988-489e-841d-e71e4f37050c/compose-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-02-core-concept--a59db1e5-3988-489e-841d-e71e4f37050c/diff-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-02-core-concept--a59db1e5-3988-489e-841d-e71e4f37050c/diff-report.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-02-core-concept--a59db1e5-3988-489e-841d-e71e4f37050c/ui-block-edit-validation.json"
+      ],
+      "source_ids": [
+        "sitework-lecture-local-raw-pdf--b061-a59db1e5-01",
+        "building-technology-siteworks-local-raw-pdf--b061-a59db1e5-02"
+      ],
+      "source_locators": [
+        "Sitework Lecture refined markdown lines 1-80 and 560-620; raw PDF pages for Div 02 Sitework earthworks, soil classification, fill, roads, parking, and paving slides, including pages 1-8 and 47-52",
+        "Building Technology - Siteworks refined markdown lines 1-63 and 440-485; raw PDF pages for Div 02 Sitework earthworks, AASHTO soil classification, fill material, and paving slides, including pages 1-8 and 47-52"
+      ]
+    },
+    {
+      "article_id": "5de12a80-903b-4488-bc66-e855e8cb4129",
+      "slug": "lea-dsgn-012-03-core-concept",
+      "title": "Site grading",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-03-core-concept--5de12a80-903b-4488-bc66-e855e8cb4129",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-03-core-concept--5de12a80-903b-4488-bc66-e855e8cb4129/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "scenario_policy_status": "eligible-deferred",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-03-core-concept--5de12a80-903b-4488-bc66-e855e8cb4129/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-03-core-concept--5de12a80-903b-4488-bc66-e855e8cb4129/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-03-core-concept--5de12a80-903b-4488-bc66-e855e8cb4129/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-03-core-concept--5de12a80-903b-4488-bc66-e855e8cb4129/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-03-core-concept--5de12a80-903b-4488-bc66-e855e8cb4129/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-03-core-concept--5de12a80-903b-4488-bc66-e855e8cb4129/ui-blocks.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-03-core-concept--5de12a80-903b-4488-bc66-e855e8cb4129/ui-block-edits.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-03-core-concept--5de12a80-903b-4488-bc66-e855e8cb4129/parser-errors.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-03-core-concept--5de12a80-903b-4488-bc66-e855e8cb4129/compose-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-03-core-concept--5de12a80-903b-4488-bc66-e855e8cb4129/diff-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-03-core-concept--5de12a80-903b-4488-bc66-e855e8cb4129/diff-report.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-03-core-concept--5de12a80-903b-4488-bc66-e855e8cb4129/ui-block-edit-validation.json"
+      ],
+      "source_ids": [
+        "sitework-lecture-local-raw-pdf--b061-5de12a80-01",
+        "building-technology-siteworks-local-raw-pdf--b061-5de12a80-02"
+      ],
+      "source_locators": [
+        "Sitework Lecture refined markdown lines 1-80 and 560-620; raw PDF pages for Div 02 Sitework earthworks, soil classification, fill, roads, parking, and paving slides, including pages 1-8 and 47-52",
+        "Building Technology - Siteworks refined markdown lines 1-63 and 440-485; raw PDF pages for Div 02 Sitework earthworks, AASHTO soil classification, fill material, and paving slides, including pages 1-8 and 47-52"
+      ]
+    }
+  ],
+  "improved_paths": [
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-04-core-concept--c9b1aadd-4843-4cf3-a551-6dd67678e508/normalized.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-04-core-concept--c9b1aadd-4843-4cf3-a551-6dd67678e508/candidate.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-04-core-concept--c9b1aadd-4843-4cf3-a551-6dd67678e508/sources.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-04-core-concept--c9b1aadd-4843-4cf3-a551-6dd67678e508/source-audit-evidence.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-04-core-concept--c9b1aadd-4843-4cf3-a551-6dd67678e508/article-metadata.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-04-core-concept--c9b1aadd-4843-4cf3-a551-6dd67678e508/ui-blocks.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-04-core-concept--c9b1aadd-4843-4cf3-a551-6dd67678e508/ui-block-edits.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-04-core-concept--c9b1aadd-4843-4cf3-a551-6dd67678e508/parser-errors.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-04-core-concept--c9b1aadd-4843-4cf3-a551-6dd67678e508/compose-report.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-04-core-concept--c9b1aadd-4843-4cf3-a551-6dd67678e508/diff-report.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-04-core-concept--c9b1aadd-4843-4cf3-a551-6dd67678e508/diff-report.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-04-core-concept--c9b1aadd-4843-4cf3-a551-6dd67678e508/ui-block-edit-validation.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-05-core-concept--3067e127-60c0-4570-ab86-d85af25fb9b2/normalized.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-05-core-concept--3067e127-60c0-4570-ab86-d85af25fb9b2/candidate.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-05-core-concept--3067e127-60c0-4570-ab86-d85af25fb9b2/sources.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-05-core-concept--3067e127-60c0-4570-ab86-d85af25fb9b2/source-audit-evidence.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-05-core-concept--3067e127-60c0-4570-ab86-d85af25fb9b2/article-metadata.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-05-core-concept--3067e127-60c0-4570-ab86-d85af25fb9b2/ui-blocks.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-05-core-concept--3067e127-60c0-4570-ab86-d85af25fb9b2/ui-block-edits.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-05-core-concept--3067e127-60c0-4570-ab86-d85af25fb9b2/parser-errors.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-05-core-concept--3067e127-60c0-4570-ab86-d85af25fb9b2/compose-report.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-05-core-concept--3067e127-60c0-4570-ab86-d85af25fb9b2/diff-report.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-05-core-concept--3067e127-60c0-4570-ab86-d85af25fb9b2/diff-report.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-05-core-concept--3067e127-60c0-4570-ab86-d85af25fb9b2/ui-block-edit-validation.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-01-core-concept--21880755-59f3-4749-9786-59e6cb53c6ed/normalized.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-01-core-concept--21880755-59f3-4749-9786-59e6cb53c6ed/candidate.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-01-core-concept--21880755-59f3-4749-9786-59e6cb53c6ed/sources.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-01-core-concept--21880755-59f3-4749-9786-59e6cb53c6ed/source-audit-evidence.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-01-core-concept--21880755-59f3-4749-9786-59e6cb53c6ed/article-metadata.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-01-core-concept--21880755-59f3-4749-9786-59e6cb53c6ed/ui-blocks.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-01-core-concept--21880755-59f3-4749-9786-59e6cb53c6ed/ui-block-edits.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-01-core-concept--21880755-59f3-4749-9786-59e6cb53c6ed/parser-errors.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-01-core-concept--21880755-59f3-4749-9786-59e6cb53c6ed/compose-report.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-01-core-concept--21880755-59f3-4749-9786-59e6cb53c6ed/diff-report.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-01-core-concept--21880755-59f3-4749-9786-59e6cb53c6ed/diff-report.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-01-core-concept--21880755-59f3-4749-9786-59e6cb53c6ed/ui-block-edit-validation.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-02-core-concept--a59db1e5-3988-489e-841d-e71e4f37050c/normalized.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-02-core-concept--a59db1e5-3988-489e-841d-e71e4f37050c/candidate.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-02-core-concept--a59db1e5-3988-489e-841d-e71e4f37050c/sources.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-02-core-concept--a59db1e5-3988-489e-841d-e71e4f37050c/source-audit-evidence.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-02-core-concept--a59db1e5-3988-489e-841d-e71e4f37050c/article-metadata.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-02-core-concept--a59db1e5-3988-489e-841d-e71e4f37050c/ui-blocks.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-02-core-concept--a59db1e5-3988-489e-841d-e71e4f37050c/ui-block-edits.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-02-core-concept--a59db1e5-3988-489e-841d-e71e4f37050c/parser-errors.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-02-core-concept--a59db1e5-3988-489e-841d-e71e4f37050c/compose-report.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-02-core-concept--a59db1e5-3988-489e-841d-e71e4f37050c/diff-report.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-02-core-concept--a59db1e5-3988-489e-841d-e71e4f37050c/diff-report.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-02-core-concept--a59db1e5-3988-489e-841d-e71e4f37050c/ui-block-edit-validation.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-03-core-concept--5de12a80-903b-4488-bc66-e855e8cb4129/normalized.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-03-core-concept--5de12a80-903b-4488-bc66-e855e8cb4129/candidate.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-03-core-concept--5de12a80-903b-4488-bc66-e855e8cb4129/sources.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-03-core-concept--5de12a80-903b-4488-bc66-e855e8cb4129/source-audit-evidence.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-03-core-concept--5de12a80-903b-4488-bc66-e855e8cb4129/article-metadata.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-03-core-concept--5de12a80-903b-4488-bc66-e855e8cb4129/ui-blocks.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-03-core-concept--5de12a80-903b-4488-bc66-e855e8cb4129/ui-block-edits.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-03-core-concept--5de12a80-903b-4488-bc66-e855e8cb4129/parser-errors.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-03-core-concept--5de12a80-903b-4488-bc66-e855e8cb4129/compose-report.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-03-core-concept--5de12a80-903b-4488-bc66-e855e8cb4129/diff-report.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-03-core-concept--5de12a80-903b-4488-bc66-e855e8cb4129/diff-report.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-03-core-concept--5de12a80-903b-4488-bc66-e855e8cb4129/ui-block-edit-validation.json"
+  ],
+  "question_edits_paths": [
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-04-core-concept--c9b1aadd-4843-4cf3-a551-6dd67678e508/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-05-core-concept--3067e127-60c0-4570-ab86-d85af25fb9b2/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-01-core-concept--21880755-59f3-4749-9786-59e6cb53c6ed/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-02-core-concept--a59db1e5-3988-489e-841d-e71e4f37050c/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-012-03-core-concept--5de12a80-903b-4488-bc66-e855e8cb4129/question-edits"
+  ],
+  "counts": {
+    "selected_articles": 5,
+    "linked_questions": 50,
+    "question_edits": 50,
+    "source_rows": 8,
+    "unique_raw_pdfs": 3,
+    "json_parse": 105,
+    "marker_scan_files": 70,
+    "marker_matches": 0,
+    "source_hash_checks": 16,
+    "stale_compose_error_files": 0,
+    "targeted_tests": 34,
+    "targeted_expect_calls": 328,
+    "unresolved_blockers": 0
+  },
+  "source_evidence_summary": [
+    "Design Process local raw PDF for preparation, proposal-making, evaluation, iteration, and architectural programming.",
+    "Sitework Lecture and Building Technology - Siteworks local raw PDFs for earthworks, soil classification, drainage and bearing capacity, fill materials, roads, parking, and paving."
+  ],
+  "source_hash_checks": [
+    {
+      "article_id": "c9b1aadd-4843-4cf3-a551-6dd67678e508",
+      "slug": "lea-dsgn-007-04-core-concept",
+      "kind": "raw_pdf",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
+      "expected": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+      "actual": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+      "status": "PASS"
+    },
+    {
+      "article_id": "c9b1aadd-4843-4cf3-a551-6dd67678e508",
+      "slug": "lea-dsgn-007-04-core-concept",
+      "kind": "refined_markdown",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
+      "expected": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
+      "actual": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
+      "status": "PASS"
+    },
+    {
+      "article_id": "3067e127-60c0-4570-ab86-d85af25fb9b2",
+      "slug": "lea-dsgn-007-05-core-concept",
+      "kind": "raw_pdf",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
+      "expected": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+      "actual": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+      "status": "PASS"
+    },
+    {
+      "article_id": "3067e127-60c0-4570-ab86-d85af25fb9b2",
+      "slug": "lea-dsgn-007-05-core-concept",
+      "kind": "refined_markdown",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
+      "expected": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
+      "actual": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
+      "status": "PASS"
+    },
+    {
+      "article_id": "21880755-59f3-4749-9786-59e6cb53c6ed",
+      "slug": "lea-dsgn-012-01-core-concept",
+      "kind": "raw_pdf",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Sitework Lecture.pdf",
+      "expected": "sha256:a469e97d2c4b842f443864c658fc4359ef2787a2b009b9fbafc1afbd1da25ff6",
+      "actual": "sha256:a469e97d2c4b842f443864c658fc4359ef2787a2b009b9fbafc1afbd1da25ff6",
+      "status": "PASS"
+    },
+    {
+      "article_id": "21880755-59f3-4749-9786-59e6cb53c6ed",
+      "slug": "lea-dsgn-012-01-core-concept",
+      "kind": "refined_markdown",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Sitework Lecture.md",
+      "expected": "sha256:e761c9b38b9d0c07bd6053692337109a218169ba791e8f074fa40842d3972af2",
+      "actual": "sha256:e761c9b38b9d0c07bd6053692337109a218169ba791e8f074fa40842d3972af2",
+      "status": "PASS"
+    },
+    {
+      "article_id": "21880755-59f3-4749-9786-59e6cb53c6ed",
+      "slug": "lea-dsgn-012-01-core-concept",
+      "kind": "raw_pdf",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Technology - Siteworks.pdf",
+      "expected": "sha256:9f498be4a288011a0e8b750d4bb8316afebf07a908993620579c311da30e02a2",
+      "actual": "sha256:9f498be4a288011a0e8b750d4bb8316afebf07a908993620579c311da30e02a2",
+      "status": "PASS"
+    },
+    {
+      "article_id": "21880755-59f3-4749-9786-59e6cb53c6ed",
+      "slug": "lea-dsgn-012-01-core-concept",
+      "kind": "refined_markdown",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Technology - Siteworks.md",
+      "expected": "sha256:3e34ffc7b60b926a2cd75fbde6239ff3f05e7e53993d8cb6f8d5f1d865c64296",
+      "actual": "sha256:3e34ffc7b60b926a2cd75fbde6239ff3f05e7e53993d8cb6f8d5f1d865c64296",
+      "status": "PASS"
+    },
+    {
+      "article_id": "a59db1e5-3988-489e-841d-e71e4f37050c",
+      "slug": "lea-dsgn-012-02-core-concept",
+      "kind": "raw_pdf",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Sitework Lecture.pdf",
+      "expected": "sha256:a469e97d2c4b842f443864c658fc4359ef2787a2b009b9fbafc1afbd1da25ff6",
+      "actual": "sha256:a469e97d2c4b842f443864c658fc4359ef2787a2b009b9fbafc1afbd1da25ff6",
+      "status": "PASS"
+    },
+    {
+      "article_id": "a59db1e5-3988-489e-841d-e71e4f37050c",
+      "slug": "lea-dsgn-012-02-core-concept",
+      "kind": "refined_markdown",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Sitework Lecture.md",
+      "expected": "sha256:e761c9b38b9d0c07bd6053692337109a218169ba791e8f074fa40842d3972af2",
+      "actual": "sha256:e761c9b38b9d0c07bd6053692337109a218169ba791e8f074fa40842d3972af2",
+      "status": "PASS"
+    },
+    {
+      "article_id": "a59db1e5-3988-489e-841d-e71e4f37050c",
+      "slug": "lea-dsgn-012-02-core-concept",
+      "kind": "raw_pdf",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Technology - Siteworks.pdf",
+      "expected": "sha256:9f498be4a288011a0e8b750d4bb8316afebf07a908993620579c311da30e02a2",
+      "actual": "sha256:9f498be4a288011a0e8b750d4bb8316afebf07a908993620579c311da30e02a2",
+      "status": "PASS"
+    },
+    {
+      "article_id": "a59db1e5-3988-489e-841d-e71e4f37050c",
+      "slug": "lea-dsgn-012-02-core-concept",
+      "kind": "refined_markdown",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Technology - Siteworks.md",
+      "expected": "sha256:3e34ffc7b60b926a2cd75fbde6239ff3f05e7e53993d8cb6f8d5f1d865c64296",
+      "actual": "sha256:3e34ffc7b60b926a2cd75fbde6239ff3f05e7e53993d8cb6f8d5f1d865c64296",
+      "status": "PASS"
+    },
+    {
+      "article_id": "5de12a80-903b-4488-bc66-e855e8cb4129",
+      "slug": "lea-dsgn-012-03-core-concept",
+      "kind": "raw_pdf",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Sitework Lecture.pdf",
+      "expected": "sha256:a469e97d2c4b842f443864c658fc4359ef2787a2b009b9fbafc1afbd1da25ff6",
+      "actual": "sha256:a469e97d2c4b842f443864c658fc4359ef2787a2b009b9fbafc1afbd1da25ff6",
+      "status": "PASS"
+    },
+    {
+      "article_id": "5de12a80-903b-4488-bc66-e855e8cb4129",
+      "slug": "lea-dsgn-012-03-core-concept",
+      "kind": "refined_markdown",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Sitework Lecture.md",
+      "expected": "sha256:e761c9b38b9d0c07bd6053692337109a218169ba791e8f074fa40842d3972af2",
+      "actual": "sha256:e761c9b38b9d0c07bd6053692337109a218169ba791e8f074fa40842d3972af2",
+      "status": "PASS"
+    },
+    {
+      "article_id": "5de12a80-903b-4488-bc66-e855e8cb4129",
+      "slug": "lea-dsgn-012-03-core-concept",
+      "kind": "raw_pdf",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Technology - Siteworks.pdf",
+      "expected": "sha256:9f498be4a288011a0e8b750d4bb8316afebf07a908993620579c311da30e02a2",
+      "actual": "sha256:9f498be4a288011a0e8b750d4bb8316afebf07a908993620579c311da30e02a2",
+      "status": "PASS"
+    },
+    {
+      "article_id": "5de12a80-903b-4488-bc66-e855e8cb4129",
+      "slug": "lea-dsgn-012-03-core-concept",
+      "kind": "refined_markdown",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Technology - Siteworks.md",
+      "expected": "sha256:3e34ffc7b60b926a2cd75fbde6239ff3f05e7e53993d8cb6f8d5f1d865c64296",
+      "actual": "sha256:3e34ffc7b60b926a2cd75fbde6239ff3f05e7e53993d8cb6f8d5f1d865c64296",
+      "status": "PASS"
+    }
+  ],
+  "quality_protocol_results": {
+    "compose": "PASS 5/5, blockers=0",
+    "diff": "PASS 5/5, safe_to_push=true, blockers=0",
+    "validate": "PASS 5/5, valid=true, blockers=0; warnings limited to missing component-usage.json",
+    "ui_block_edits": "PASS 5/5, blockers=0, warnings=0",
+    "scoped_checks": "PASS",
+    "targeted_tests": "PASS, 34 tests, 328 expect calls",
+    "scoped_git_diff_check": "PASS"
+  },
+  "unresolved_blockers": [],
+  "safe_for_final_publishing_review": true,
+  "next_batch_readiness": "Batch 062 may start from unselected article/question clusters after excluding Batch 001 through Batch 061 artifacts.",
+  "artifacts": {
+    "ledger": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-061-local-first-ledger.json",
+    "report": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-061-local-first-report.md",
+    "scoped_checks": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-061-local-first-scoped-checks.json",
+    "handoff": "/Users/philiplewis/slatecamp/.ai/03_plans/source-audited-local-first-batches-handoff.md"
+  }
+}

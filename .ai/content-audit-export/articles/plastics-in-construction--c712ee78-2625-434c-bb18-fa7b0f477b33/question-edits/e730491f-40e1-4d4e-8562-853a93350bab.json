@@ -1,0 +1,57 @@
+{
+  "question_id": "e730491f-40e1-4d4e-8562-853a93350bab",
+  "baseline_hash": "sha256:497dc68ecb9e5f6c3a6f3342f1d1a8183e60f05ae89d362789ae738f003698fc",
+  "action": "replace",
+  "reason": "source-audited-article-batch-036-local-first: source-safe replacement grounded in local raw PDF/source family evidence; removes unsupported, stale, or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-036",
+  "approved_at": "2026-05-11T12:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-036-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-national-building-code-local",
+        "label": "PD 1096 National Building Code - Plastics Provisions",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 - National Building Code.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 - National Building Code.md",
+        "checked_markdown_lines": [
+          "PD 1096 National Building Code refined markdown lines 1909-1998"
+        ]
+      },
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR 2004 DPWH Official refined markdown lines 4377-4442"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 1608"
+  },
+  "proposed": {
+    "text": "What is the standard height rule for plastic exterior veneer?",
+    "options": [
+      {
+        "id": "b036-c712-15-a",
+        "text": "It shall not be attached above the first storey, subject to the stated exception outside highly restrictive fire zones"
+      },
+      {
+        "id": "b036-c712-15-b",
+        "text": "It may always reach any height"
+      },
+      {
+        "id": "b036-c712-15-c",
+        "text": "It is limited only by color"
+      },
+      {
+        "id": "b036-c712-15-d",
+        "text": "It is allowed only underground"
+      }
+    ],
+    "correct_option_id": "b036-c712-15-a",
+    "rationale": "Correct answer: It shall not be attached above the first storey, subject to the stated exception outside highly restrictive fire zones. This is directly supported by PD 1096 2004 Revised IRR, Section 1608.",
+    "explanation": "The source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 1608.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 1608"
+  }
+}

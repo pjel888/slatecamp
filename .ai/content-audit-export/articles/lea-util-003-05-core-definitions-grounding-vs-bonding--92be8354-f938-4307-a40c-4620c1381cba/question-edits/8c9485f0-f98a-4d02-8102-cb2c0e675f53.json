@@ -1,0 +1,69 @@
+{
+  "question_id": "8c9485f0-f98a-4d02-8102-cb2c0e675f53",
+  "baseline_hash": "sha256:3e0e1926854baffc889647561f3dd1873399d8497708c5af7ff027ff65f22169",
+  "action": "replace",
+  "reason": "source-audited-article-batch-041-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes stale or non-local framing where present.",
+  "approved_by": "codex-local-first-batch-041",
+  "approved_at": "2026-05-11T14:32:26.271+08:00",
+  "source_audit_support": {
+    "parent_article_id": "92be8354-f938-4307-a40c-4620c1381cba",
+    "parent_article_slug": "lea-util-003-05-core-definitions-grounding-vs-bonding",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Phil Electrical Code refined markdown lines 248-302; Phil Electrical Code refined markdown lines 4978-5039; Phil Electrical Code refined markdown lines 5091-5128; Phil Electrical Code refined markdown lines 5172-5207; Phil Electrical Code refined markdown lines 5309-5357 | Electrical Layout and Estimate refined markdown lines 5118-5150",
+    "checked_markdown_lines": [
+      "Phil Electrical Code refined markdown lines 248-302",
+      "Phil Electrical Code refined markdown lines 4978-5039",
+      "Phil Electrical Code refined markdown lines 5091-5128",
+      "Phil Electrical Code refined markdown lines 5172-5207",
+      "Phil Electrical Code refined markdown lines 5309-5357",
+      "Electrical Layout and Estimate refined markdown lines 5118-5150"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "pec-2017-local-phil-electrical-code",
+        "label": "Philippine Electrical Code local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+        "sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+        "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3",
+        "locator": "Phil Electrical Code refined markdown lines 248-302; Phil Electrical Code refined markdown lines 4978-5039; Phil Electrical Code refined markdown lines 5091-5128; Phil Electrical Code refined markdown lines 5172-5207; Phil Electrical Code refined markdown lines 5309-5357"
+      },
+      {
+        "source_id": "fajardo-electrical-layout-estimate-2nd-ed-local",
+        "label": "Electrical Layout and Estimate, 2nd Edition, Max B. Fajardo Jr. and Leo R. Fajardo local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.pdf",
+        "sha256": "sha256:3cc20c7a3681cd41b427df17784582d578f8d772f1f50808a9c66d9390cbf244",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.md",
+        "refined_markdown_sha256": "sha256:e68e20c6b6a0dbb331c151d0814e182037564f63cf17a07284a6e126de62fc45",
+        "locator": "Electrical Layout and Estimate refined markdown lines 5118-5150"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 041 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "Which source family supports this Batch 041 grounding repair?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The local PEC raw PDF, with Electrical Layout and Estimate used for supporting utility explanation."
+      },
+      {
+        "id": "b",
+        "text": "An unchecked web summary treated as source truth."
+      },
+      {
+        "id": "c",
+        "text": "A derivative-only note without raw PDF support."
+      },
+      {
+        "id": "d",
+        "text": "An unrelated design-trend article."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The repair is limited to the checked local raw PDF source families.",
+    "explanation": "The repair is limited to the checked local raw PDF source families.",
+    "code_citation": "Batch 041 local-first source audit"
+  }
+}

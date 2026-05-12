@@ -1,0 +1,271 @@
+{
+  "batch_id": "source-audited-article-batch-026-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T20:30:00.000+08:00",
+  "article_id": "15d9ff17-038a-4ba5-86f9-2e6a8f12cc54",
+  "slug": "lea-prac-ctr-019-core-concept",
+  "title": "The Certificate of Occupancy",
+  "status": "local_pass_ready_for_final_publishing_review",
+  "article_folder": ".ai/content-audit-export/articles/lea-prac-ctr-019-core-concept--15d9ff17-038a-4ba5-86f9-2e6a8f12cc54",
+  "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-019-core-concept--15d9ff17-038a-4ba5-86f9-2e6a8f12cc54",
+  "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-019-core-concept--15d9ff17-038a-4ba5-86f9-2e6a8f12cc54/question-edits",
+  "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-019-core-concept--15d9ff17-038a-4ba5-86f9-2e6a8f12cc54/question-edits",
+  "linked_questions": 10,
+  "question_edits_created": 10,
+  "source_safe_rewrite_question_edits": 10,
+  "classification": {
+    "content_domain": "building_code",
+    "requires_raw_pdf_audit": true,
+    "legal_or_code_source": true
+  },
+  "target": {
+    "article_id": "15d9ff17-038a-4ba5-86f9-2e6a8f12cc54",
+    "slug": "lea-prac-ctr-019-core-concept",
+    "normalized_sha256": "sha256:3fbcc90a00858d88ae3509ad69e2c4771b220969cad5dfbcd138768b43452378",
+    "candidate_sha256": "sha256:3fbcc90a00858d88ae3509ad69e2c4771b220969cad5dfbcd138768b43452378"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_only": true,
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "source_audit": {
+    "checked_sources": [
+      {
+        "source_id": "pd1096-rirr-2004-section-309-local",
+        "label": "PD 1096 2004 Revised IRR - Certificate of Occupancy",
+        "authority": "Department of Public Works and Highways / National Building Code of the Philippines IRR",
+        "source_type": "building_code_pdf",
+        "source_locator": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR lines 858-862",
+          "PD 1096 RIRR lines 906-923"
+        ],
+        "use": "Certificate of Occupancy, Certificate of Completion, logbook, as-built documents, FSIC, Building Official issuance, and partial occupancy.",
+        "local_source_checked": true
+      }
+    ],
+    "source_locator": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
+    "checked_markdown_lines": [
+      "PD 1096 RIRR lines 858-862",
+      "PD 1096 RIRR lines 906-923"
+    ]
+  },
+  "article_repair": {
+    "normalized_md_rewritten": true,
+    "candidate_md_pending_compose": false,
+    "placeholders_removed": true,
+    "internal_notes_removed": true,
+    "source_gap_notes_removed": true,
+    "unsupported_claims_rewritten_or_removed": true,
+    "candidate_md_composed": true,
+    "diff_report_generated": true
+  },
+  "claims": [
+    {
+      "claim_id": "batch-026-lea-prac-ctr-019-core-concept-question-001",
+      "claim_text": "Question 1aa545e5-78a5-4a02-a9fa-5dddeeb9461f / model BATCH-026-lea-prac-ctr-019-core-concept-001 rewritten to local source-safe form.",
+      "question_id": "1aa545e5-78a5-4a02-a9fa-5dddeeb9461f",
+      "model_id": "BATCH-026-lea-prac-ctr-019-core-concept-001",
+      "support_status": "PASS",
+      "source_ids": [
+        "pd1096-rirr-2004-section-309-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-026-lea-prac-ctr-019-core-concept-question-002",
+      "claim_text": "Question b3a498f5-b299-4efa-90df-93ccc5ade750 / model BATCH-026-lea-prac-ctr-019-core-concept-002 rewritten to local source-safe form.",
+      "question_id": "b3a498f5-b299-4efa-90df-93ccc5ade750",
+      "model_id": "BATCH-026-lea-prac-ctr-019-core-concept-002",
+      "support_status": "PASS",
+      "source_ids": [
+        "pd1096-rirr-2004-section-309-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-026-lea-prac-ctr-019-core-concept-question-003",
+      "claim_text": "Question 3f77b2cd-3809-46af-a773-eb1a34733dc4 / model BATCH-026-lea-prac-ctr-019-core-concept-003 rewritten to local source-safe form.",
+      "question_id": "3f77b2cd-3809-46af-a773-eb1a34733dc4",
+      "model_id": "BATCH-026-lea-prac-ctr-019-core-concept-003",
+      "support_status": "PASS",
+      "source_ids": [
+        "pd1096-rirr-2004-section-309-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-026-lea-prac-ctr-019-core-concept-question-004",
+      "claim_text": "Question 0b9b0dce-2c69-4871-855f-521fbff96210 / model BATCH-026-lea-prac-ctr-019-core-concept-004 rewritten to local source-safe form.",
+      "question_id": "0b9b0dce-2c69-4871-855f-521fbff96210",
+      "model_id": "BATCH-026-lea-prac-ctr-019-core-concept-004",
+      "support_status": "PASS",
+      "source_ids": [
+        "pd1096-rirr-2004-section-309-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-026-lea-prac-ctr-019-core-concept-question-005",
+      "claim_text": "Question 0e0adff4-13d5-49db-8d4f-69f6d433d7c6 / model BATCH-026-lea-prac-ctr-019-core-concept-005 rewritten to local source-safe form.",
+      "question_id": "0e0adff4-13d5-49db-8d4f-69f6d433d7c6",
+      "model_id": "BATCH-026-lea-prac-ctr-019-core-concept-005",
+      "support_status": "PASS",
+      "source_ids": [
+        "pd1096-rirr-2004-section-309-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-026-lea-prac-ctr-019-core-concept-question-006",
+      "claim_text": "Question 667a3387-0240-44fe-8e51-953e32b98a8b / model BATCH-026-lea-prac-ctr-019-core-concept-006 rewritten to local source-safe form.",
+      "question_id": "667a3387-0240-44fe-8e51-953e32b98a8b",
+      "model_id": "BATCH-026-lea-prac-ctr-019-core-concept-006",
+      "support_status": "PASS",
+      "source_ids": [
+        "pd1096-rirr-2004-section-309-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-026-lea-prac-ctr-019-core-concept-question-007",
+      "claim_text": "Question 8b50cf47-2a97-405c-9f03-4c367d5f1eda / model BATCH-026-lea-prac-ctr-019-core-concept-007 rewritten to local source-safe form.",
+      "question_id": "8b50cf47-2a97-405c-9f03-4c367d5f1eda",
+      "model_id": "BATCH-026-lea-prac-ctr-019-core-concept-007",
+      "support_status": "PASS",
+      "source_ids": [
+        "pd1096-rirr-2004-section-309-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-026-lea-prac-ctr-019-core-concept-question-008",
+      "claim_text": "Question ae3493cb-2dfe-4e41-8247-ee2e77a55e4d / model BATCH-026-lea-prac-ctr-019-core-concept-008 rewritten to local source-safe form.",
+      "question_id": "ae3493cb-2dfe-4e41-8247-ee2e77a55e4d",
+      "model_id": "BATCH-026-lea-prac-ctr-019-core-concept-008",
+      "support_status": "PASS",
+      "source_ids": [
+        "pd1096-rirr-2004-section-309-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-026-lea-prac-ctr-019-core-concept-question-009",
+      "claim_text": "Question c1eebcfc-f5dd-4ed7-82cd-c696bdf6389a / model BATCH-026-lea-prac-ctr-019-core-concept-009 rewritten to local source-safe form.",
+      "question_id": "c1eebcfc-f5dd-4ed7-82cd-c696bdf6389a",
+      "model_id": "BATCH-026-lea-prac-ctr-019-core-concept-009",
+      "support_status": "PASS",
+      "source_ids": [
+        "pd1096-rirr-2004-section-309-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-026-lea-prac-ctr-019-core-concept-question-010",
+      "claim_text": "Question b07620ce-a43c-474c-95ed-fe1dde743e57 / model BATCH-026-lea-prac-ctr-019-core-concept-010 rewritten to local source-safe form.",
+      "question_id": "b07620ce-a43c-474c-95ed-fe1dde743e57",
+      "model_id": "BATCH-026-lea-prac-ctr-019-core-concept-010",
+      "support_status": "PASS",
+      "source_ids": [
+        "pd1096-rirr-2004-section-309-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 2004 Revised IRR refined markdown lines 858-862 and 906-923",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    }
+  ],
+  "local_validation": {
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "scoped_checks": "PASS",
+    "tests": "PASS - bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts: 34 pass, 0 fail"
+  },
+  "remaining_local_blockers": [],
+  "unsupported_or_removed_claims": [
+    "Removed or rewrote stale UI placeholders, internal notes, unverified numeric fee claims, and source claims not supported by the checked local raw PDFs."
+  ]
+}

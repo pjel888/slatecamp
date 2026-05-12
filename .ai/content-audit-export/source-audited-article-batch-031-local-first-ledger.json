@@ -1,0 +1,374 @@
+{
+  "batch_id": "source-audited-article-batch-031-local-first",
+  "generated_at": "2026-05-11T09:00:23.705+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "local_first_only": true,
+  "constraints": {
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "publishing_surface": "Supabase final publishing only; not used in this run"
+  },
+  "selection": {
+    "current_batch_number": 31,
+    "selected_article_ids": [
+      "51800681-6d9e-47f4-9e3a-aaf9ca459bf0",
+      "6d669d7f-d03f-433f-af13-9443b6144033",
+      "9261cc17-24c1-49d2-a45a-158032f6fcd3",
+      "332b32e5-1890-4765-a7b3-317790804247",
+      "75ef7a25-2d9d-455d-8d89-e6eb0b691240"
+    ],
+    "rule": "Next five high-value LEA legal/code/professional-practice/design clusters with linked questions and local raw source families, excluding article IDs recorded in source-audited Batch 001 through Batch 030 artifacts.",
+    "prior_batch_exclusion_result": "PASS: none of the selected Batch 031 article IDs appeared in Batch 001 through Batch 030 source-audited reports/ledgers."
+  },
+  "counts": {
+    "selected_articles": 5,
+    "locally_passed_articles": 5,
+    "linked_questions": 50,
+    "source_safe_question_edits_created": 50,
+    "source_rows": 8,
+    "unique_raw_pdf_files_checked": 7,
+    "remaining_local_blockers": 0
+  },
+  "exact_paths": [
+    {
+      "article_id": "51800681-6d9e-47f4-9e3a-aaf9ca459bf0",
+      "slug": "lea-prac-ctr-021-core-concept",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-021-core-concept--51800681-6d9e-47f4-9e3a-aaf9ca459bf0",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-021-core-concept--51800681-6d9e-47f4-9e3a-aaf9ca459bf0/question-edits"
+    },
+    {
+      "article_id": "6d669d7f-d03f-433f-af13-9443b6144033",
+      "slug": "lea-prac-ctr-022-core-concept",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-022-core-concept--6d669d7f-d03f-433f-af13-9443b6144033",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-022-core-concept--6d669d7f-d03f-433f-af13-9443b6144033/question-edits"
+    },
+    {
+      "article_id": "9261cc17-24c1-49d2-a45a-158032f6fcd3",
+      "slug": "lea-prac-frm-016-berde-rating-system-philippine-green-building-standard-and-the-architect-s-role",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-016-berde-rating-system-philippine-green-building-standard-and-the-architect-s-role--9261cc17-24c1-49d2-a45a-158032f6fcd3",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-016-berde-rating-system-philippine-green-building-standard-and-the-architect-s-role--9261cc17-24c1-49d2-a45a-158032f6fcd3/question-edits"
+    },
+    {
+      "article_id": "332b32e5-1890-4765-a7b3-317790804247",
+      "slug": "lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role--332b32e5-1890-4765-a7b3-317790804247",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role--332b32e5-1890-4765-a7b3-317790804247/question-edits"
+    },
+    {
+      "article_id": "75ef7a25-2d9d-455d-8d89-e6eb0b691240",
+      "slug": "lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice-services",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice---75ef7a25-2d9d-455d-8d89-e6eb0b691240",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice---75ef7a25-2d9d-455d-8d89-e6eb0b691240/question-edits"
+    }
+  ],
+  "raw_sources_checked": [
+    {
+      "label": "BERDE Buildings Version 5.0.0 User Guide",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.pdf",
+      "absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.pdf",
+      "sha256": "sha256:59f4e0a3a485f73f93f211bc4250932a9c9d2b114b4f571b2ab8f6a58c426bb4",
+      "locators": [
+        "BERDE refined markdown lines 123-135, 141-171, 242-269, 320-360, 544-548"
+      ],
+      "source_ids": [
+        "berde-buildings-version-5-user-guide-local"
+      ]
+    },
+    {
+      "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+      "absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+      "sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+      "locators": [
+        "CIAP Document 102 refined markdown lines 538-554, 591, 626, 667, 681, 874"
+      ],
+      "source_ids": [
+        "ciap-document-102-private-construction-contract-local"
+      ]
+    },
+    {
+      "label": "Executive Order No. 1008 - Construction Industry Arbitration Law",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/EO/EO 1008 Construction Arbitration Law.pdf",
+      "absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/EO/EO 1008 Construction Arbitration Law.pdf",
+      "sha256": "sha256:63f4ed2272c98ab63a8dcd491069ee5583534492bbb98a65387ab4efc0c98624",
+      "locators": [
+        "EO 1008 refined markdown lines 23-27, 57-63, 76-78"
+      ],
+      "source_ids": [
+        "eo-1008-construction-industry-arbitration-law-local"
+      ]
+    },
+    {
+      "label": "RA 10066 - National Cultural Heritage Act of 2009",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-10066/ra 10066.pdf",
+      "absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-10066/ra 10066.pdf",
+      "sha256": "sha256:98aefeeecfc07c329eac6e9ff9b784bf94e22c319dc2987d51ded09343b2bd95",
+      "locators": [
+        "RA 10066 refined markdown lines 37-48, 60, 81-97, 177-199"
+      ],
+      "source_ids": [
+        "ra-10066-national-cultural-heritage-act-local"
+      ]
+    },
+    {
+      "label": "RA 386 - Civil Code of the Philippines",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code.pdf",
+      "absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code.pdf",
+      "sha256": "sha256:c3551f7d92abed808a64071fdf08832b1f27dc87375775416f52cbc25b4bcba5",
+      "locators": [
+        "RA 386 Civil Code refined markdown lines 40-48"
+      ],
+      "source_ids": [
+        "ra-386-civil-code-local"
+      ]
+    },
+    {
+      "label": "UAP SPP 201 - Pre-design Services",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+      "absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+      "sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+      "locators": [
+        "SPP 201 refined markdown lines 254, 268-324, 328-330, 437-447"
+      ],
+      "source_ids": [
+        "uap-spp-201-predesign-services-local"
+      ]
+    },
+    {
+      "label": "UAP SPP 203 - Specialized Architectural Services",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+      "absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+      "sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+      "locators": [
+        "SPP 203 refined markdown lines 101-149 and 1465-1469"
+      ],
+      "source_ids": [
+        "uap-spp-203-specialized-architectural-services-local"
+      ]
+    }
+  ],
+  "validation": {
+    "commands": {
+      "compose": [
+        "bun run content-audit:compose -- --article-id 51800681-6d9e-47f4-9e3a-aaf9ca459bf0 --overwrite --strict",
+        "bun run content-audit:compose -- --article-id 6d669d7f-d03f-433f-af13-9443b6144033 --overwrite --strict",
+        "bun run content-audit:compose -- --article-id 9261cc17-24c1-49d2-a45a-158032f6fcd3 --overwrite --strict",
+        "bun run content-audit:compose -- --article-id 332b32e5-1890-4765-a7b3-317790804247 --overwrite --strict",
+        "bun run content-audit:compose -- --article-id 75ef7a25-2d9d-455d-8d89-e6eb0b691240 --overwrite --strict"
+      ],
+      "diff": [
+        "bun run content-audit:diff -- --article-id 51800681-6d9e-47f4-9e3a-aaf9ca459bf0 --summary --strict",
+        "bun run content-audit:diff -- --article-id 6d669d7f-d03f-433f-af13-9443b6144033 --summary --strict",
+        "bun run content-audit:diff -- --article-id 9261cc17-24c1-49d2-a45a-158032f6fcd3 --summary --strict",
+        "bun run content-audit:diff -- --article-id 332b32e5-1890-4765-a7b3-317790804247 --summary --strict",
+        "bun run content-audit:diff -- --article-id 75ef7a25-2d9d-455d-8d89-e6eb0b691240 --summary --strict"
+      ],
+      "validate": [
+        "bun run content-audit:validate -- --article-id 51800681-6d9e-47f4-9e3a-aaf9ca459bf0 --summary",
+        "bun run content-audit:validate -- --article-id 6d669d7f-d03f-433f-af13-9443b6144033 --summary",
+        "bun run content-audit:validate -- --article-id 9261cc17-24c1-49d2-a45a-158032f6fcd3 --summary",
+        "bun run content-audit:validate -- --article-id 332b32e5-1890-4765-a7b3-317790804247 --summary",
+        "bun run content-audit:validate -- --article-id 75ef7a25-2d9d-455d-8d89-e6eb0b691240 --summary"
+      ],
+      "tests": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "git_diff_check": "git diff --check -- .ai/content-audit-export/articles/lea-prac-ctr-021-core-concept--51800681-6d9e-47f4-9e3a-aaf9ca459bf0 .ai/content-audit-export/articles/lea-prac-ctr-022-core-concept--6d669d7f-d03f-433f-af13-9443b6144033 .ai/content-audit-export/articles/lea-prac-frm-016-berde-rating-system-philippine-green-building-standard-and-the-architect-s-role--9261cc17-24c1-49d2-a45a-158032f6fcd3 .ai/content-audit-export/articles/lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role--332b32e5-1890-4765-a7b3-317790804247 .ai/content-audit-export/articles/lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice---75ef7a25-2d9d-455d-8d89-e6eb0b691240 .ai/content-audit-export/source-audited-article-batch-031-local-first-ledger.json .ai/content-audit-export/source-audited-article-batch-031-local-first-report.md .ai/content-audit-export/source-audited-article-batch-031-local-first-scoped-checks.json .ai/03_plans/source-audited-local-first-batches-handoff.md"
+    },
+    "compose": "PASS: 5/5 changed candidates, blockers=0",
+    "diff": "PASS: 5/5 changed=true safe_to_push=true blockers=0",
+    "validate": "PASS: 5/5 valid=true blockers=0; only expected component-usage.json warnings",
+    "scoped_checks_path": ".ai/content-audit-export/source-audited-article-batch-031-local-first-scoped-checks.json",
+    "scoped_checks": {
+      "json_parse": "PASS",
+      "output_placeholder_internal_source_gap_scan": "PASS",
+      "compose_reports": "PASS",
+      "diff_reports": "PASS",
+      "bundle_validation": "PASS_WITH_EXPECTED_COMPONENT_USAGE_WARNINGS",
+      "source_audit_evidence": "PASS",
+      "raw_pdf_hashes": "PASS",
+      "question_edits": "PASS",
+      "stale_compose_errors": "PASS"
+    },
+    "targeted_tests": {
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "result": "PASS: 34 pass, 0 fail, 328 expect() calls"
+    },
+    "post_artifact_diff_check": "PASS: git diff --check on Batch 031 folders, ledger, report, scoped checks, and handoff",
+    "remaining_local_blockers": 0
+  },
+  "artifacts": {
+    "ledger": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-031-local-first-ledger.json",
+    "report": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-031-local-first-report.md",
+    "scoped_checks": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-031-local-first-scoped-checks.json",
+    "handoff_plan": "/Users/philiplewis/slatecamp/.ai/03_plans/source-audited-local-first-batches-handoff.md"
+  },
+  "blockers": [],
+  "articles": [
+    {
+      "article_id": "51800681-6d9e-47f4-9e3a-aaf9ca459bf0",
+      "slug": "lea-prac-ctr-021-core-concept",
+      "title": "CIAC Jurisdiction for Construction Contract Disputes",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-021-core-concept--51800681-6d9e-47f4-9e3a-aaf9ca459bf0",
+      "absolute_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-021-core-concept--51800681-6d9e-47f4-9e3a-aaf9ca459bf0",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-021-core-concept--51800681-6d9e-47f4-9e3a-aaf9ca459bf0/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-021-core-concept--51800681-6d9e-47f4-9e3a-aaf9ca459bf0/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 2,
+      "hashes": {
+        "original": "sha256:8fa6f7728bf000dcb0eab6e4e95378713304a4fd56db502aedda24c12f5b99f9",
+        "normalized": "sha256:3f046f107b2ded2b43f9d5f24c78b277dc5d85d2790be90ae76f00ace1f0e60b",
+        "candidate": "sha256:3f046f107b2ded2b43f9d5f24c78b277dc5d85d2790be90ae76f00ace1f0e60b",
+        "sources": "sha256:dbed35c37a19218894bc5e0ecb29980390f5b28d7467c23c6f96f95c7f863f78"
+      },
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": [],
+        "unresolved_placeholders": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": []
+      },
+      "source_audit": {
+        "status": "PASS",
+        "raw_pdf_gate": "PASS"
+      },
+      "blockers": []
+    },
+    {
+      "article_id": "6d669d7f-d03f-433f-af13-9443b6144033",
+      "slug": "lea-prac-ctr-022-core-concept",
+      "title": "Liquidated Damages for Delay in Construction Contracts",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-022-core-concept--6d669d7f-d03f-433f-af13-9443b6144033",
+      "absolute_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-022-core-concept--6d669d7f-d03f-433f-af13-9443b6144033",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-022-core-concept--6d669d7f-d03f-433f-af13-9443b6144033/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-022-core-concept--6d669d7f-d03f-433f-af13-9443b6144033/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 2,
+      "hashes": {
+        "original": "sha256:bb1105448078cdc98b14ed792d13456709a76c947ce21de7fe55a32c818a90cb",
+        "normalized": "sha256:59ee06e2cba97a739444a4e8c39413bfe1a1c58facee15c7f09cf34a1a804210",
+        "candidate": "sha256:59ee06e2cba97a739444a4e8c39413bfe1a1c58facee15c7f09cf34a1a804210",
+        "sources": "sha256:0f4864427a03aa8588ca04930c9b509ef89ededf54e0830fa7dbecf2046922c1"
+      },
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": [],
+        "unresolved_placeholders": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": []
+      },
+      "source_audit": {
+        "status": "PASS",
+        "raw_pdf_gate": "PASS"
+      },
+      "blockers": []
+    },
+    {
+      "article_id": "9261cc17-24c1-49d2-a45a-158032f6fcd3",
+      "slug": "lea-prac-frm-016-berde-rating-system-philippine-green-building-standard-and-the-architect-s-role",
+      "title": "BERDE Rating System and the Architect's Role",
+      "folder": ".ai/content-audit-export/articles/lea-prac-frm-016-berde-rating-system-philippine-green-building-standard-and-the-architect-s-role--9261cc17-24c1-49d2-a45a-158032f6fcd3",
+      "absolute_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-016-berde-rating-system-philippine-green-building-standard-and-the-architect-s-role--9261cc17-24c1-49d2-a45a-158032f6fcd3",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-frm-016-berde-rating-system-philippine-green-building-standard-and-the-architect-s-role--9261cc17-24c1-49d2-a45a-158032f6fcd3/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-016-berde-rating-system-philippine-green-building-standard-and-the-architect-s-role--9261cc17-24c1-49d2-a45a-158032f6fcd3/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 1,
+      "hashes": {
+        "original": "sha256:83c221465d68b1ecd7192a6dc9ebcac4de03f353636f080215ace0c04eb6c096",
+        "normalized": "sha256:adb06acb6a56d4ad477815bff23c997af9d88f574b6245294f7c5d896a39522f",
+        "candidate": "sha256:adb06acb6a56d4ad477815bff23c997af9d88f574b6245294f7c5d896a39522f",
+        "sources": "sha256:f0d4b27a536ee33ab6a5b00dbebced5805165b151ddea93b1d3e4eebc2a898dd"
+      },
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": [],
+        "unresolved_placeholders": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": []
+      },
+      "source_audit": {
+        "status": "PASS",
+        "raw_pdf_gate": "PASS"
+      },
+      "blockers": []
+    },
+    {
+      "article_id": "332b32e5-1890-4765-a7b3-317790804247",
+      "slug": "lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role",
+      "title": "Feasibility Studies and the Architect's Distinct Role",
+      "folder": ".ai/content-audit-export/articles/lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role--332b32e5-1890-4765-a7b3-317790804247",
+      "absolute_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role--332b32e5-1890-4765-a7b3-317790804247",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role--332b32e5-1890-4765-a7b3-317790804247/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role--332b32e5-1890-4765-a7b3-317790804247/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 1,
+      "hashes": {
+        "original": "sha256:a47ef0aeda0425f46a093d55716738f60c0a5a33ce1f80ae3e377d83f3b325c4",
+        "normalized": "sha256:52928d7315dd824ad3a20986f893bdb69c095feaf1ae53c1df4dca1611d2a471",
+        "candidate": "sha256:52928d7315dd824ad3a20986f893bdb69c095feaf1ae53c1df4dca1611d2a471",
+        "sources": "sha256:d5faff68c1f251c52890ee7ab5d32be40e71cc2edcf39cfb504d3618f26f1cc2"
+      },
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": [],
+        "unresolved_placeholders": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": []
+      },
+      "source_audit": {
+        "status": "PASS",
+        "raw_pdf_gate": "PASS"
+      },
+      "blockers": []
+    },
+    {
+      "article_id": "75ef7a25-2d9d-455d-8d89-e6eb0b691240",
+      "slug": "lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice-services",
+      "title": "Building Condition Assessment, Adaptive Reuse, and Heritage Conservation",
+      "folder": ".ai/content-audit-export/articles/lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice---75ef7a25-2d9d-455d-8d89-e6eb0b691240",
+      "absolute_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice---75ef7a25-2d9d-455d-8d89-e6eb0b691240",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice---75ef7a25-2d9d-455d-8d89-e6eb0b691240/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice---75ef7a25-2d9d-455d-8d89-e6eb0b691240/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 2,
+      "hashes": {
+        "original": "sha256:9fb726017c71e5d2990841181d7344e89e6cba5875eefca3295a3191850dff23",
+        "normalized": "sha256:9b528208bb4fdad3042a9eca23ca4a9792d569dff61608ef9f9798393fd7767d",
+        "candidate": "sha256:9b528208bb4fdad3042a9eca23ca4a9792d569dff61608ef9f9798393fd7767d",
+        "sources": "sha256:bc584cfe6bef631bd712c2f10908ed92b9c7fad23c6c7c1be9d097a27f14d330"
+      },
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": [],
+        "unresolved_placeholders": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": []
+      },
+      "source_audit": {
+        "status": "PASS",
+        "raw_pdf_gate": "PASS"
+      },
+      "blockers": []
+    }
+  ]
+}

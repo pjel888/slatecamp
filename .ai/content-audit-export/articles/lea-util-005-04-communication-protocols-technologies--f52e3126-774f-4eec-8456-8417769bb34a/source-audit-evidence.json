@@ -1,0 +1,269 @@
+{
+  "schema_version": "source-audit-evidence-v1-local-first",
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-045-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T17:18:00.000+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "f52e3126-774f-4eec-8456-8417769bb34a",
+    "slug": "lea-util-005-04-communication-protocols-technologies",
+    "title": "Security and access control systems",
+    "article_folder": ".ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a",
+    "candidate_path": ".ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/candidate.md",
+    "candidate_sha256": "sha256:3778ffde11e928062a11d9aee32e2a68d6bdfaf8662f38cd5b858b886de3f234",
+    "normalized_sha256": "sha256:3778ffde11e928062a11d9aee32e2a68d6bdfaf8662f38cd5b858b886de3f234",
+    "linked_questions_sha256": "sha256:3bfa982776db68a5cc536cb676f77811fb8db0a48a842e6af6bfdaaf8efe72ff",
+    "sources_sha256": "sha256:642422f8300fe54873134c6e44b82de3db7100222ee2d115ead9cb94c94e7b1d"
+  },
+  "classification": {
+    "content_domain": "LEA Utilities - communication and access-control systems",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high_value_utilities_communication_access_control",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 15,
+    "question_edits_created": [
+      "b78d8690-1339-4fef-a3da-19bcd1f16a4d",
+      "e2c8705e-36c7-4ff9-82c7-f06bdc39ff79",
+      "44d2f59f-abee-4590-ab52-de9e0a0e6137",
+      "d31806e0-1733-42af-84c5-6bbd6328999d",
+      "4043fba2-585d-4962-b639-c7372d4a4a2a",
+      "ae6a1ff0-b4d9-4c67-b99d-7f494df6df08",
+      "e377f90c-4040-4f0d-bcfd-e96b04e16dc1",
+      "83a757ec-4488-441c-812b-993eb67f7282",
+      "028e920a-269e-4453-994f-b5027ead68f8",
+      "2cff9738-f6fa-43f0-bc15-193eb27aa2bf",
+      "4f56848f-2403-4e60-906d-3f2b4c8116c8",
+      "4a8de0d6-ec81-400f-8d88-67ad658a8a3e",
+      "5d78ef55-599b-4002-a8e8-aa31951ab9f0",
+      "fc215e71-0ee3-403f-a2cb-3b48d4109081",
+      "8428e210-b245-4b16-be18-d482bda8f1bd"
+    ]
+  },
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/question-edits/b78d8690-1339-4fef-a3da-19bcd1f16a4d.json",
+      ".ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/question-edits/e2c8705e-36c7-4ff9-82c7-f06bdc39ff79.json",
+      ".ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/question-edits/44d2f59f-abee-4590-ab52-de9e0a0e6137.json",
+      ".ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/question-edits/d31806e0-1733-42af-84c5-6bbd6328999d.json",
+      ".ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/question-edits/4043fba2-585d-4962-b639-c7372d4a4a2a.json",
+      ".ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/question-edits/ae6a1ff0-b4d9-4c67-b99d-7f494df6df08.json",
+      ".ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/question-edits/e377f90c-4040-4f0d-bcfd-e96b04e16dc1.json",
+      ".ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/question-edits/83a757ec-4488-441c-812b-993eb67f7282.json",
+      ".ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/question-edits/028e920a-269e-4453-994f-b5027ead68f8.json",
+      ".ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/question-edits/2cff9738-f6fa-43f0-bc15-193eb27aa2bf.json",
+      ".ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/question-edits/4f56848f-2403-4e60-906d-3f2b4c8116c8.json",
+      ".ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/question-edits/4a8de0d6-ec81-400f-8d88-67ad658a8a3e.json",
+      ".ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/question-edits/5d78ef55-599b-4002-a8e8-aa31951ab9f0.json",
+      ".ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/question-edits/fc215e71-0ee3-403f-a2cb-3b48d4109081.json",
+      ".ai/content-audit-export/articles/lea-util-005-04-communication-protocols-technologies--f52e3126-774f-4eec-8456-8417769bb34a/question-edits/8428e210-b245-4b16-be18-d482bda8f1bd.json"
+    ]
+  },
+  "raw_sources": [
+    {
+      "source_id": "communication-and-signal-systems-lecture-local-raw-pdf--b045",
+      "label": "Communication and Signal Systems Lecture - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Communication and Signal Systems Lecture.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Communication and Signal Systems Lecture.pdf",
+      "raw_pdf_sha256": "sha256:f5c9a95be0f68853cac1ddfd16c80c47356731147a18e345ab8e297e9fbdcd2d",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Communication and Signal Systems Lecture.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Communication and Signal Systems Lecture.md",
+      "refined_markdown_sha256": "sha256:8e202c5683c0c465ecbe070242344f83e2cd95c371e152f5de074b06cfc3661f",
+      "source_locator": "Communication refined markdown lines 48-54, 349-381, 393-432, 442-530",
+      "checked_markdown_lines": [
+        "Communication refined markdown lines 48-54",
+        "Communication refined markdown lines 349-381",
+        "Communication refined markdown lines 393-432",
+        "Communication refined markdown lines 442-530"
+      ]
+    },
+    {
+      "source_id": "salvan-architectural-utilities-2-local-raw-pdf--b045",
+      "label": "George Salvan Architectural Utilities 2 - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+      "raw_pdf_sha256": "sha256:ff7231f0059a1febaf4a0996a425caca3b7676c23c729f922e385af4e4c20d28",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
+      "refined_markdown_sha256": "sha256:1b9249c90c0b86c57c6df2f20f0ab210ac112a10230bd9bce584461773d75215",
+      "source_locator": "Salvan Utilities 2 refined markdown lines 5834-5866, 7730-7762, 12903-12996",
+      "checked_markdown_lines": [
+        "Salvan Utilities 2 refined markdown lines 5834-5866",
+        "Salvan Utilities 2 refined markdown lines 7730-7762",
+        "Salvan Utilities 2 refined markdown lines 12903-12996"
+      ]
+    },
+    {
+      "source_id": "philippine-electrical-code-local-raw-pdf--b045",
+      "label": "Philippine Electrical Code - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+      "raw_pdf_sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+      "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3",
+      "source_locator": "PEC refined markdown lines 362, 556-612, 986-1045, 29231-29466",
+      "checked_markdown_lines": [
+        "PEC refined markdown line 362",
+        "PEC refined markdown lines 556-612",
+        "PEC refined markdown lines 986-1045",
+        "PEC refined markdown lines 29231-29466"
+      ]
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "communication-and-signal-systems-lecture-local-raw-pdf--b045",
+      "label": "Communication and Signal Systems Lecture - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Communication and Signal Systems Lecture.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Communication and Signal Systems Lecture.pdf",
+      "raw_pdf_sha256": "sha256:f5c9a95be0f68853cac1ddfd16c80c47356731147a18e345ab8e297e9fbdcd2d",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Communication and Signal Systems Lecture.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Communication and Signal Systems Lecture.md",
+      "refined_markdown_sha256": "sha256:8e202c5683c0c465ecbe070242344f83e2cd95c371e152f5de074b06cfc3661f",
+      "source_locator": "Communication refined markdown lines 48-54, 349-381, 393-432, 442-530",
+      "checked_markdown_lines": [
+        "Communication refined markdown lines 48-54",
+        "Communication refined markdown lines 349-381",
+        "Communication refined markdown lines 393-432",
+        "Communication refined markdown lines 442-530"
+      ]
+    },
+    {
+      "source_id": "salvan-architectural-utilities-2-local-raw-pdf--b045",
+      "label": "George Salvan Architectural Utilities 2 - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+      "raw_pdf_sha256": "sha256:ff7231f0059a1febaf4a0996a425caca3b7676c23c729f922e385af4e4c20d28",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
+      "refined_markdown_sha256": "sha256:1b9249c90c0b86c57c6df2f20f0ab210ac112a10230bd9bce584461773d75215",
+      "source_locator": "Salvan Utilities 2 refined markdown lines 5834-5866, 7730-7762, 12903-12996",
+      "checked_markdown_lines": [
+        "Salvan Utilities 2 refined markdown lines 5834-5866",
+        "Salvan Utilities 2 refined markdown lines 7730-7762",
+        "Salvan Utilities 2 refined markdown lines 12903-12996"
+      ]
+    },
+    {
+      "source_id": "philippine-electrical-code-local-raw-pdf--b045",
+      "label": "Philippine Electrical Code - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+      "raw_pdf_sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+      "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3",
+      "source_locator": "PEC refined markdown lines 362, 556-612, 986-1045, 29231-29466",
+      "checked_markdown_lines": [
+        "PEC refined markdown line 362",
+        "PEC refined markdown lines 556-612",
+        "PEC refined markdown lines 986-1045",
+        "PEC refined markdown lines 29231-29466"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "b045-comm-01",
+      "claim_text": "Telephone, intercom, public television, and CCTV are audio and visual communication equipment in the checked source family.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "Communication and Signal Systems Lecture - local raw PDF",
+        "locator": "Communication refined markdown lines 48-54",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Communication and Signal Systems Lecture.pdf",
+        "raw_pdf_sha256": "sha256:f5c9a95be0f68853cac1ddfd16c80c47356731147a18e345ab8e297e9fbdcd2d",
+        "quoted_pdf_excerpt": "telephone, intercom, public TV and CCTV"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b045-comm-02",
+      "claim_text": "An intercom uses master and remote stations, with selective calling from the master station.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "Communication and Signal Systems Lecture - local raw PDF",
+        "locator": "Communication refined markdown lines 442-456",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Communication and Signal Systems Lecture.pdf",
+        "raw_pdf_sha256": "sha256:f5c9a95be0f68853cac1ddfd16c80c47356731147a18e345ab8e297e9fbdcd2d",
+        "quoted_pdf_excerpt": "master stations; remote stations; selective calling"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b045-comm-03",
+      "claim_text": "PABX supports many telephone and intercom functions such as internal dialing, transfer, forwarding, paging, and conference calling.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "Communication and Signal Systems Lecture - local raw PDF",
+        "locator": "Communication refined markdown lines 457-515",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Communication and Signal Systems Lecture.pdf",
+        "raw_pdf_sha256": "sha256:f5c9a95be0f68853cac1ddfd16c80c47356731147a18e345ab8e297e9fbdcd2d",
+        "quoted_pdf_excerpt": "PABX; direct dialing; conference; transfer"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b045-comm-04",
+      "claim_text": "Telephone service entrance, protector, and main terminal cabinet or room are part of building communication coordination.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "Communication and Signal Systems Lecture - local raw PDF",
+        "locator": "Communication refined markdown lines 516-530",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Communication and Signal Systems Lecture.pdf",
+        "raw_pdf_sha256": "sha256:f5c9a95be0f68853cac1ddfd16c80c47356731147a18e345ab8e297e9fbdcd2d",
+        "quoted_pdf_excerpt": "protector; main terminal cabinet; service entrance"
+      },
+      "blockers": []
+    }
+  ],
+  "removed_or_rewritten_material": [
+    "Removed exported UI block marker text from normalized article content where present.",
+    "Rewrote linked question files to stay inside checked local raw-source evidence.",
+    "Replaced derivative-only numeric examples and vendor-specific claims with checked source-family statements."
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdf_first": true,
+    "derivative_layers_used_only_as_locators": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "checked_raw_pdf_families": [
+      "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Communication and Signal Systems Lecture.pdf",
+      "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+      "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf"
+    ],
+    "blockers": []
+  },
+  "gate_results": {
+    "source_audit": "PASS",
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_validation": "PASS",
+    "question_edit_count_check": "PASS",
+    "scoped_json_parse": "PASS",
+    "marker_scan": "PASS",
+    "source_hash_check": "PASS",
+    "stale_compose_error_check": "PASS"
+  },
+  "source_safe_repair": {
+    "status": "COMPLETE_LOCAL_VALIDATED",
+    "article_normalized_rewritten": true,
+    "sources_json_updated": true,
+    "source_audit_evidence_updated": true,
+    "question_edits_created": 15,
+    "blockers": []
+  },
+  "blockers": []
+}

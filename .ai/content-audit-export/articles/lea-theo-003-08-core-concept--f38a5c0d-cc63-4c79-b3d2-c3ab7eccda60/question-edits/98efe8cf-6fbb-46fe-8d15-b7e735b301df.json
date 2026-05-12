@@ -1,0 +1,78 @@
+{
+  "question_id": "98efe8cf-6fbb-46fe-8d15-b7e735b301df",
+  "baseline_hash": "sha256:392637d6a8f0123b89566c5b65cb1738dfe1a6761384a9c3389f4ca75167851a",
+  "action": "replace",
+  "reason": "source-audited-article-batch-056-local-first: local raw PDF backed replacement constrained to checked Batch 056 source families.",
+  "approved_by": "codex-local-first-batch-056",
+  "approved_at": "2026-05-11T19:52:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "f38a5c0d-cc63-4c79-b3d2-c3ab7eccda60",
+    "parent_article_slug": "lea-theo-003-08-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "George Salvan Architectural Theories of Design refined markdown lines 5926-5942; George Salvan Architectural Theories of Design refined markdown lines 6152-6172; George Salvan Architectural Theories of Design refined markdown lines 6600-6602; theory refined markdown lines 186-191; TOA 3 Design Perception refined markdown lines 23-34",
+    "checked_markdown_lines": [
+      "George Salvan Architectural Theories of Design refined markdown lines 5926-5942",
+      "George Salvan Architectural Theories of Design refined markdown lines 6152-6172",
+      "George Salvan Architectural Theories of Design refined markdown lines 6600-6602",
+      "theory refined markdown lines 186-191",
+      "TOA 3 Design Perception refined markdown lines 23-34"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "salvan-theory-local-raw-pdf--b056-f38a5c0d-01",
+        "label": "George Salvan Architectural Theories of Design - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
+        "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
+        "locator": "George Salvan Architectural Theories of Design refined markdown lines 5926-5942, 6152-6172, and 6600-6602"
+      },
+      {
+        "source_id": "theory-local-raw-pdf--b056-f38a5c0d-02",
+        "label": "theory - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+        "sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+        "refined_markdown_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+        "locator": "theory refined markdown lines 186-191"
+      },
+      {
+        "source_id": "toa3-design-perception-local-raw-pdf--b056-f38a5c0d-03",
+        "label": "TOA 3 Design Perception - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 3 (Design Perception).pdf",
+        "sha256": "sha256:807be9f1a301d579123d8fa3ec680011b1906d6a4edcb6dc061c9a57e5ea9534",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 3 (Design Perception).md",
+        "refined_markdown_sha256": "sha256:49309b3dc5eea661ca7cad04cceb91897ac29fee6dd8e43cf6c3f60f163d404a",
+        "locator": "TOA 3 Design Perception refined markdown lines 23-34"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 056 checked local raw PDF source scope."
+  },
+  "proposed": {
+    "text": "Which answer best matches the checked source on Gestalt perception?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The viewer tends to organize shapes into perceived forms or arrangements."
+      },
+      {
+        "id": "b",
+        "text": "The viewer calculates pipe sizes."
+      },
+      {
+        "id": "c",
+        "text": "The viewer applies a building occupancy table."
+      },
+      {
+        "id": "d",
+        "text": "The viewer ignores nearby shapes."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The viewer tends to organize shapes into perceived forms or arrangements. This answer is supported by the checked Batch 056 local raw PDF source families for Gestalt Psychology and Visual Perception.",
+    "explanation": "The viewer tends to organize shapes into perceived forms or arrangements. The Batch 056 source audit used local raw PDFs first and refined markdown only as locator evidence for Gestalt Psychology and Visual Perception.",
+    "code_citation": "George Salvan Architectural Theories of Design refined markdown lines 6152-6172"
+  },
+  "batch_question_template_index": 1
+}

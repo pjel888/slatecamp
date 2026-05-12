@@ -720,16 +720,16 @@ interface GestureSignalState {
   events: GestureEvent[];
   isCapturing: boolean;
   gestureStartTime: number | null;
-  
+
   // CAGE state
   cageToken: string | null;
   responseHash: string | null;
   serverNonce: string | null;
   sequenceNumber: number;
-  
+
   // Submission state machine (client-side mirror)
   submissionState: 'idle' | 'gesture_active' | 'confirming' | 'submitted' | 'failed';
-  
+
   // Actions
   startCapture: () => void;
   recordEvent: (event: GestureEvent) => void;
@@ -744,11 +744,11 @@ interface CognitiveStateStore {
   itemConfidenceLevels: Map<string, ConfidenceLevel>;
   sessionEngagementScore: number | null;
   sessionConsistencyScore: number | null;
-  
+
   // Disengagement detection
   consecutiveLowEngagementCount: number;
   shouldShowIntervention: boolean;
-  
+
   // Adaptive feedback
   coachObservation: CoachObservation | null;
   adaptiveRecommendations: TopicRecommendation[];

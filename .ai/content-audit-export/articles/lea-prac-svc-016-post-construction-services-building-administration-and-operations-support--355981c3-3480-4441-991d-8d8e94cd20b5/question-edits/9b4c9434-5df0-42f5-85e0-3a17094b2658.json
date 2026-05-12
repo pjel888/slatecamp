@@ -1,0 +1,77 @@
+{
+  "question_id": "9b4c9434-5df0-42f5-85e0-3a17094b2658",
+  "baseline_hash": "sha256:bf18add1f0a8d9f32927eeed459e52fe434254e081821ee33a5aab0f5dc13ff4",
+  "action": "replace",
+  "reason": "source-audited-article-batch-034-local-first aligned linked professional-practice question with audited local raw PDF source language for lea-prac-svc-016-post-construction-services-building-administration-and-operations-support.",
+  "approved_by": "codex-local-source-audit-batch-034",
+  "approved_at": "2026-05-11T10:59:50+08:00",
+  "source_audit_support": {
+    "parent_article_id": "355981c3-3480-4441-991d-8d8e94cd20b5",
+    "parent_article_slug": "lea-prac-svc-016-post-construction-services-building-administration-and-operations-support",
+    "parent_article_title": "Post-Construction Services, Building Administration, and Operations Support",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UAP Standards of Professional Practice refined markdown lines 1046-1054",
+    "checked_sources": [
+      {
+        "source_id": "uap-spp-205-local",
+        "label": "UAP SPP Document 205 - Post-construction Services",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 205.pdf",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 205.md",
+        "source_locator": "UAP SPP 205 refined markdown lines 3-7, 119-129",
+        "checked_markdown_lines": [
+          "UAP SPP 205 refined markdown lines 3-7",
+          "UAP SPP 205 refined markdown lines 119-129"
+        ],
+        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 205.pdf",
+        "raw_pdf_sha256": "sha256:8511f90780e4d26f966c941142bde99395337280f12ce1035c68d3e7ebb41b33",
+        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 205.md",
+        "refined_markdown_sha256": "sha256:8a0b4833ce68e5daeb2ec4403d32ff95f7cfc192218a526e44618c41cf6e563a"
+      },
+      {
+        "source_id": "uap-standards-professional-practice2-local",
+        "label": "UAP Standards of Professional Practice - compiled SPP source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+        "source_locator": "UAP Standards of Professional Practice refined markdown lines 300-350, 362-418, 475-586, 1036-1077, 1097-1215",
+        "checked_markdown_lines": [
+          "UAP Standards of Professional Practice refined markdown lines 300-350",
+          "UAP Standards of Professional Practice refined markdown lines 362-418",
+          "UAP Standards of Professional Practice refined markdown lines 475-586",
+          "UAP Standards of Professional Practice refined markdown lines 1036-1077",
+          "UAP Standards of Professional Practice refined markdown lines 1097-1215"
+        ],
+        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+        "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer key, rationale, explanation, and code citation rewritten to audited local article scope."
+  },
+  "proposed": {
+    "text": "Which task belongs to Building Maintenance under Building and Facilities Administration?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Seeing that building parts are in good condition"
+      },
+      {
+        "id": "b",
+        "text": "Preparing the first schematic design"
+      },
+      {
+        "id": "c",
+        "text": "Issuing bid bulletins before bidding"
+      },
+      {
+        "id": "d",
+        "text": "Writing the contractor's payroll"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The compiled SPP places building condition, rules, security, and maintenance monitoring under Building Maintenance.",
+    "explanation": "The compiled SPP places building condition, rules, security, and maintenance monitoring under Building Maintenance.",
+    "code_citation": "UAP Standards of Professional Practice refined markdown lines 1046-1054"
+  }
+}

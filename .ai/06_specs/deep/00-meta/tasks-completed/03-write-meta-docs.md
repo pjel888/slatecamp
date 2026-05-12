@@ -3,8 +3,8 @@
 
 # Task 03: Write Meta Documentation
 
-**Status:** pending  
-**Created:** 2026-04-06  
+**Status:** pending
+**Created:** 2026-04-06
 **Objective:** Write `00-meta/001-index.md` and ensure `00-meta/002-changelog.md` exists
 
 ---

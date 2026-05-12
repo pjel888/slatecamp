@@ -1,0 +1,129 @@
+{
+  "artifact_type": "source_audit_evidence",
+  "batch_id": "source-audited-article-batch-062-local-first",
+  "batch_number": 62,
+  "audit_mode": "local_first_raw_pdf_primary",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T21:35:00.000+08:00",
+  "target": {
+    "article_id": "d4ab12a3-cec8-4104-b276-4fe649c2e35f",
+    "slug": "lea-plan-004-06-core-concept",
+    "title": "Site Planning Utility Infrastructure",
+    "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-06-core-concept--d4ab12a3-cec8-4104-b276-4fe649c2e35f",
+    "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-06-core-concept--d4ab12a3-cec8-4104-b276-4fe649c2e35f/question-edits",
+    "linked_questions": 10,
+    "question_edits": 10,
+    "candidate_sha256": "sha256:785775021b951ba76cbbdcd7f4503e29ded0014dbf414be831556b3619c17fcc"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth": "vitruvius-connection/001_Raw-Source-Layer local raw PDFs",
+    "derivative_or_search_layers_used_as_primary_truth": false,
+    "refined_markdown_used_only_as_locator": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": [],
+    "checked_sources": [
+      {
+        "source_id": "pd-1067-water-code-local-raw-pdf--b062-d4ab12a3-01",
+        "label": "PD 1067 - Water Code of the Philippines - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1067/PD 1067 - Water Code of the Philippines.pdf",
+        "raw_pdf_sha256": "sha256:90fdccc66152977f0e628d47c9a7c6a0e5a93faa7d02c9344012679f1e0d4f07",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1067/PD 1067 - Water Code of the Philippines.md",
+        "refined_markdown_sha256": "sha256:1f64532d7d02f840e5d6c2710e6730d17a99f28fd1e1371839e7690174b942a7",
+        "locator": "PD 1067 refined markdown lines 180-193, 201-205, 226-227, and 238-245; raw PDF pages for drainage, natural flow, easements, flood-control, protected-area, and water-pollution provisions"
+      },
+      {
+        "source_id": "pd-1067-irr-local-raw-pdf--b062-d4ab12a3-02",
+        "label": "PD 1067 IRR - Water Code Implementing Rules - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1067/PD 1067 IRR - Water Code Implementing Rules.pdf",
+        "raw_pdf_sha256": "sha256:233da4f0d1859197f82845ed945627dc9676f3e9b99e93e720ff30c54f751fc3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1067/PD 1067 IRR - Water Code Implementing Rules.md",
+        "refined_markdown_sha256": "sha256:635f6383c4f6cfc0e8f8c1a883987a0eb2abf0646c9a2d6cd69e2b186907dbe8",
+        "locator": "PD 1067 IRR refined markdown lines 61-84, 294-300, 468-486, and 496-502; raw PDF pages for drainage scheme maps/outlets, easement reckoning, minimum stream-flow, discharge, and drainage-system complaint provisions"
+      },
+      {
+        "source_id": "sitework-lecture-local-raw-pdf--b062-d4ab12a3-03",
+        "label": "Sitework Lecture - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Sitework Lecture.pdf",
+        "raw_pdf_sha256": "sha256:a469e97d2c4b842f443864c658fc4359ef2787a2b009b9fbafc1afbd1da25ff6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Sitework Lecture.md",
+        "refined_markdown_sha256": "sha256:e761c9b38b9d0c07bd6053692337109a218169ba791e8f074fa40842d3972af2",
+        "locator": "Sitework Lecture refined markdown lines 1-90, 130-230, and 560-625; raw PDF pages for Div 02 Sitework earthworks, AASHTO soil classification, fill, riprap, gabions, geosynthetics, roads/parking, and paving slides"
+      },
+      {
+        "source_id": "building-technology-siteworks-local-raw-pdf--b062-d4ab12a3-04",
+        "label": "Building Technology - Siteworks - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Technology - Siteworks.pdf",
+        "raw_pdf_sha256": "sha256:9f498be4a288011a0e8b750d4bb8316afebf07a908993620579c311da30e02a2",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Technology - Siteworks.md",
+        "refined_markdown_sha256": "sha256:3e34ffc7b60b926a2cd75fbde6239ff3f05e7e53993d8cb6f8d5f1d865c64296",
+        "locator": "Building Technology - Siteworks refined markdown lines 1-80, 112-219, and 440-485; raw PDF pages for Div 02 Sitework earthworks, AASHTO soil classification, fill, riprap, gabions, geosynthetics, and paving slides"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "site-planning-utility-infrastructure-assessment",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": [
+      "9c9927a6-1272-4c52-8ae9-2eea291e6c52",
+      "2232528d-2b14-424f-b81c-1d080f7b97ad",
+      "fc49276b-e9e1-4599-94b2-39fef69ae679",
+      "2713f23f-dea3-4356-a121-1bf064be885b",
+      "93ef0a84-fc4c-4990-827c-3a8e813f059a",
+      "8295131d-20ee-4bea-aedf-f07b25052593",
+      "cd26535a-073c-4fe3-99f0-a77d30c93cf4",
+      "e4d11e53-c00a-459f-b91a-81d11bee80c7",
+      "79ac76cf-9d0d-45b8-bccb-0d19cb28a740",
+      "ea2083c0-913f-4c1a-9137-13c182f17fa1"
+    ],
+    "scenario_policy_status": "eligible-deferred",
+    "scenario_policy_reason": "A realistic site/planning scenario could be useful, but Batch 062 defers scenario enrichment so source-audited article/question correctness remains the only blocking gate."
+  },
+  "claims": [
+    {
+      "claim_id": "lea-plan-004-06-core-concept-b062-claim-01",
+      "claim_text": "Site Planning Utility Infrastructure is limited to checked Batch 062 local raw PDF support for project-scale utility assessment limited to water/drainage capacity, drainage outlets, easements, protected areas, and roads/paving constructability.",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1067/PD 1067 - Water Code of the Philippines.pdf; vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1067/PD 1067 IRR - Water Code Implementing Rules.pdf; vitruvius-connection/001_Raw-Source-Layer/004-Technology/Sitework Lecture.pdf; vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Technology - Siteworks.pdf",
+        "quoted_pdf_excerpt": "PD 1067 refined markdown lines 180-193, 201-205, 226-227, and 238-245; raw PDF pages for drainage, natural flow, easements, flood-control, protected-area, and water-pollution provisions; PD 1067 IRR refined markdown lines 61-84, 294-300, 468-486, and 496-502; raw PDF pages for drainage scheme maps/outlets, easement reckoning, minimum stream-flow, discharge, and drainage-system complaint provisions; Sitework Lecture refined markdown lines 1-90, 130-230, and 560-625; raw PDF pages for Div 02 Sitework earthworks, AASHTO soil classification, fill, riprap, gabions, geosynthetics, roads/parking, and paving slides; Building Technology - Siteworks refined markdown lines 1-80, 112-219, and 440-485; raw PDF pages for Div 02 Sitework earthworks, AASHTO soil classification, fill, riprap, gabions, geosynthetics, and paving slides",
+        "source_ids": [
+          "pd-1067-water-code-local-raw-pdf--b062-d4ab12a3-01",
+          "pd-1067-irr-local-raw-pdf--b062-d4ab12a3-02",
+          "sitework-lecture-local-raw-pdf--b062-d4ab12a3-03",
+          "building-technology-siteworks-local-raw-pdf--b062-d4ab12a3-04"
+        ]
+      },
+      "disposition": "supported_after_rewrite"
+    },
+    {
+      "claim_id": "lea-plan-004-06-core-concept-b062-claim-02",
+      "claim_text": "Unsupported numeric formulas, learner-visible private draft notes, and unverified legal claims were removed or parked from the learner-facing article and question edits.",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1067/PD 1067 - Water Code of the Philippines.pdf; vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1067/PD 1067 IRR - Water Code Implementing Rules.pdf; vitruvius-connection/001_Raw-Source-Layer/004-Technology/Sitework Lecture.pdf; vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Technology - Siteworks.pdf",
+        "quoted_pdf_excerpt": "Removal decision based on absence from the checked local raw PDF locator scope recorded in this evidence file.",
+        "source_ids": [
+          "pd-1067-water-code-local-raw-pdf--b062-d4ab12a3-01",
+          "pd-1067-irr-local-raw-pdf--b062-d4ab12a3-02",
+          "sitework-lecture-local-raw-pdf--b062-d4ab12a3-03",
+          "building-technology-siteworks-local-raw-pdf--b062-d4ab12a3-04"
+        ]
+      },
+      "disposition": "unsupported_claims_removed"
+    }
+  ],
+  "quality_notes": {
+    "unsupported_claims_removed": true,
+    "sources_json_updated": true,
+    "question_edits_created": 10,
+    "supabase_push": false,
+    "deploy": false,
+    "commit": false,
+    "ui_tokens_removed": true,
+    "private_notes_removed": true
+  }
+}

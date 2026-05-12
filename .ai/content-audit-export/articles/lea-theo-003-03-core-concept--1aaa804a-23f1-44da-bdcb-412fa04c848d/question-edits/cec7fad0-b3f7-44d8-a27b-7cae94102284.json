@@ -1,0 +1,78 @@
+{
+  "question_id": "cec7fad0-b3f7-44d8-a27b-7cae94102284",
+  "baseline_hash": "sha256:95fbcfbf4dc963576cc3790466d4b16b9a98a172932e068e86fd9af2b9e50ed5",
+  "action": "replace",
+  "reason": "source-audited-article-batch-058-local-first: local raw PDF backed replacement constrained to checked Batch 058 source families.",
+  "approved_by": "codex-local-first-batch-058",
+  "approved_at": "2026-05-11T20:31:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "1aaa804a-23f1-44da-bdcb-412fa04c848d",
+    "parent_article_slug": "lea-theo-003-03-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "George Salvan Architectural Theories of Design refined markdown lines 3882-3888, 5938-5974, and raw PDF pages 180 and 288; TOA 3 Design Perception refined markdown lines 152-212 and raw PDF pages 22-26; theory refined markdown lines 11-13 and 140-142 and raw PDF page 1",
+    "checked_markdown_lines": [
+      "George Salvan Architectural Theories of Design refined markdown lines 3882-3888",
+      "George Salvan Architectural Theories of Design refined markdown lines 5938-5974",
+      "TOA 3 Design Perception refined markdown lines 152-212",
+      "theory refined markdown lines 11-13",
+      "theory refined markdown lines 140-142"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "salvan-theory-local-raw-pdf--b058-1aaa804a-01",
+        "label": "George Salvan Architectural Theories of Design - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
+        "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
+        "locator": "George Salvan Architectural Theories of Design refined markdown lines 3882-3888, 5938-5974, and raw PDF pages 180 and 288"
+      },
+      {
+        "source_id": "toa3-design-perception-local-raw-pdf--b058-1aaa804a-02",
+        "label": "TOA 3 Design Perception - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 3 (Design Perception).pdf",
+        "sha256": "sha256:807be9f1a301d579123d8fa3ec680011b1906d6a4edcb6dc061c9a57e5ea9534",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 3 (Design Perception).md",
+        "refined_markdown_sha256": "sha256:49309b3dc5eea661ca7cad04cceb91897ac29fee6dd8e43cf6c3f60f163d404a",
+        "locator": "TOA 3 Design Perception refined markdown lines 152-212 and raw PDF pages 22-26"
+      },
+      {
+        "source_id": "theory-local-raw-pdf--b058-1aaa804a-03",
+        "label": "theory - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+        "sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+        "refined_markdown_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+        "locator": "theory refined markdown lines 11-13 and 140-142 and raw PDF page 1"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 058 checked local raw PDF source scope."
+  },
+  "proposed": {
+    "text": "Why should circulation be treated as a design organizer?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Because movement patterns help users read sequence, orientation, and arrival."
+      },
+      {
+        "id": "b",
+        "text": "Because circulation is normally unrelated to perception."
+      },
+      {
+        "id": "c",
+        "text": "Because it replaces the need for spatial relationships."
+      },
+      {
+        "id": "d",
+        "text": "Because it matters only after furniture is selected."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Because movement patterns help users read sequence, orientation, and arrival. This answer is supported by the checked Batch 058 local raw PDF source families for Architectural Kinesthetics: Movement Through Space.",
+    "explanation": "Because movement patterns help users read sequence, orientation, and arrival. The Batch 058 source audit used local raw PDFs first and refined markdown only as locator evidence for Architectural Kinesthetics: Movement Through Space.",
+    "code_citation": "George Salvan Architectural Theories of Design refined markdown lines 3882-3888, 5938-5974, and raw PDF pages 180 and 288"
+  },
+  "batch_question_template_index": 2
+}

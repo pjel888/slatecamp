@@ -1,7 +1,7 @@
 # SlateCamp: Features to Win — Research-Backed Gap Analysis
 
-**Date:** March 26, 2026  
-**Basis:** Current codebase audit + learning science research synthesis  
+**Date:** March 26, 2026
+**Basis:** Current codebase audit + learning science research synthesis
 
 ---
 

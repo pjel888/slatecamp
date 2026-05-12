@@ -1,0 +1,594 @@
+{
+  "batch_id": "source-audited-article-batch-085-local-first",
+  "batch_number": "085",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "generated_at": "2026-05-12T08:05:00.000+08:00",
+  "local_only": true,
+  "supabase_push_attempted": false,
+  "deploy_attempted": false,
+  "commit_attempted": false,
+  "inherited_blocker_status": "Batch 084 blockers=0",
+  "blockers": [],
+  "counts": {
+    "articles": 5,
+    "linked_questions": 50,
+    "source_safe_question_edits": 50,
+    "source_evidence_claims": 55,
+    "checked_source_entries": 11,
+    "unique_raw_source_entries": 9,
+    "raw_and_refined_source_hash_checks": 22,
+    "unique_source_hash_values": 18,
+    "parsed_scoped_json_files": 105,
+    "blockers": 0
+  },
+  "selection_rule": "Selected five unpassed sourceable LEA building-materials/construction-sustainability clusters with linked questions and exact readable local raw source families, excluding IDs recorded in source-audited Batch 001 through Batch 084 artifacts.",
+  "source_evidence_summary": [
+    {
+      "article_id": "22192e7e-6cdf-4613-9b2c-bddf1ee3091f",
+      "slug": "lea-matl-003-07-core-concept",
+      "source_locators": [
+        {
+          "label": "European Building Construction Illustrated",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/European Building Construction Illustrated.pdf",
+          "raw_pdf_sha256": "sha256:440f21385df13b75ce4041026f77d9d34872d6235fd18fa770c11609a283d19c",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/European Building Construction Illustrated.md",
+          "refined_markdown_sha256": "sha256:f2ec82d918f32d6c050f9f5ea0274b6c68f409c009ddcd311ab45e3567041e8c",
+          "locator": "European Building Construction Illustrated refined markdown lines 3537-3605; raw PDF page 121 checked by local PyMuPDF extraction."
+        },
+        {
+          "label": "Metals Lecture",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Metals Lecture.pdf",
+          "raw_pdf_sha256": "sha256:cd9cd4ee534bda9a974447c4ec73b13b12d5abf1c14df1fca408a2c4530650dd",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Metals Lecture.md",
+          "refined_markdown_sha256": "sha256:4e9e0a042f2eef2c80d33af81512ca2cf32778cae64351af9dc54df58db3694c",
+          "locator": "Metals Lecture refined markdown lines 26 and 405; raw PDF pages 2 and 28 checked by local PyMuPDF extraction."
+        }
+      ]
+    },
+    {
+      "article_id": "8a3fed25-4fda-4d38-a3a9-0e452f0e1e75",
+      "slug": "lea-matl-005-05-core-concept",
+      "source_locators": [
+        {
+          "label": "Building Construction Illustrated, 5th Edition",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+          "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+          "refined_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+          "locator": "Building Construction Illustrated refined markdown lines 4583-4623; raw PDF pages 151-152 checked by local PyMuPDF extraction."
+        },
+        {
+          "label": "Buidling Construction Handbook 7th Ed by Chudley _ Greeno",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf",
+          "raw_pdf_sha256": "sha256:2efa493fac06a3efb9367111a397129ff8647778d88160bbe0174403cbb9e0bb",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.md",
+          "refined_markdown_sha256": "sha256:485fe968d55ca680cbde52d24fcee5f512a63591026db19e46835f1bc530dcbb",
+          "locator": "Chudley/Greeno refined markdown lines 691-717 and 732-738; raw PDF pages 138, 145, 146, and 151 checked by local PyMuPDF extraction."
+        },
+        {
+          "label": "Building Tech Illustrated",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Tech Illustrated.pdf",
+          "raw_pdf_sha256": "sha256:231e15abee34d44e518dff7478fc503ba3285b8d6b4080a096e637a5aeec8dec",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Tech Illustrated.md",
+          "refined_markdown_sha256": "sha256:016d54a7798e5b450043d3be89f7cf940184f05494644033f0e52e03d49f64ad",
+          "locator": "Building Tech Illustrated refined markdown lines 481, 585, and 601-627; raw PDF pages 34, 41, and 43 checked by local PyMuPDF extraction."
+        }
+      ]
+    },
+    {
+      "article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
+      "slug": "lea-matl-005-07-core-concept",
+      "source_locators": [
+        {
+          "label": "Green Building Illustrated",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Green Building Illustrated.pdf",
+          "raw_pdf_sha256": "sha256:b23f127ca4581eb2d733b14e2a3739d022c9d04b343729b0ecdebdf92d0bdc70",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Green Building Illustrated.md",
+          "refined_markdown_sha256": "sha256:4c754dad2867dea176cd93c2f93788b7874ccbbe557096bb64cbb0ab3a0165d2",
+          "locator": "Green Building Illustrated refined markdown lines 7501-7535, 7549-7583, and 7709-7727; raw PDF pages 228-230 and 235-236 checked by local PyMuPDF extraction."
+        }
+      ]
+    },
+    {
+      "article_id": "d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc",
+      "slug": "lea-matl-005-08-core-concept",
+      "source_locators": [
+        {
+          "label": "Green Building Illustrated",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Green Building Illustrated.pdf",
+          "raw_pdf_sha256": "sha256:b23f127ca4581eb2d733b14e2a3739d022c9d04b343729b0ecdebdf92d0bdc70",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Green Building Illustrated.md",
+          "refined_markdown_sha256": "sha256:4c754dad2867dea176cd93c2f93788b7874ccbbe557096bb64cbb0ab3a0165d2",
+          "locator": "Green Building Illustrated refined markdown lines 7501-7535, 7549-7583, and 7709-7727; raw PDF pages 228-230 and 235-236 checked by local PyMuPDF extraction."
+        },
+        {
+          "label": "Good Building Handbook in the Philippines",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Good Building Handbook in the PH.pdf",
+          "raw_pdf_sha256": "sha256:e8925f0c617c24df41784a002fa9c3f1a237a5dda96196d82f14653bfd9b870c",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Good Building Handbook in the PH.md",
+          "refined_markdown_sha256": "sha256:11584339e25de3d586d64a2a31d1e8af03cfb876371bec764c224eaad6e11c9d",
+          "locator": "Good Building Handbook in the PH refined markdown lines 420-491; raw PDF pages 50, 56, and 60 checked by local PyMuPDF extraction."
+        },
+        {
+          "label": "PD 1096 - National Building Code",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 - National Building Code.pdf",
+          "raw_pdf_sha256": "sha256:0bd869faac8d949359aa9e3c5bea7026e85e348f61ce1e87a09d48991c5ba796",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 - National Building Code.md",
+          "refined_markdown_sha256": "sha256:d7df246271ae1bcb14ed8e4ba881ed75cfa8381cca9f465986d9947397f353d9",
+          "locator": "PD 1096 refined markdown lines 199-241 and 354; raw PDF pages 7, 8, and 14 checked by local PyMuPDF extraction."
+        }
+      ]
+    },
+    {
+      "article_id": "7b1d04de-6310-4187-8cfc-39f1f30cf349",
+      "slug": "lea-matl-005-09-core-concept",
+      "source_locators": [
+        {
+          "label": "RA 9003 Ecological Solid Waste Management Act of 2000",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.pdf",
+          "raw_pdf_sha256": "sha256:d3939c8bad4085e76186be1fa0465b9011ceb639bdb8611e7d869fac454d59fe",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.md",
+          "refined_markdown_sha256": "sha256:f0e42aa0bb840899b2ef0a87d79fa7e9cb47e97d090731fc48b119711144eadc",
+          "locator": "RA 9003 refined markdown lines 11-125 and 491-555; raw PDF pages 1, 4, 5, 16, 18, and 37 checked by local PyMuPDF extraction."
+        },
+        {
+          "label": "Green Building Illustrated",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Green Building Illustrated.pdf",
+          "raw_pdf_sha256": "sha256:b23f127ca4581eb2d733b14e2a3739d022c9d04b343729b0ecdebdf92d0bdc70",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Green Building Illustrated.md",
+          "refined_markdown_sha256": "sha256:4c754dad2867dea176cd93c2f93788b7874ccbbe557096bb64cbb0ab3a0165d2",
+          "locator": "Green Building Illustrated refined markdown lines 7501-7535, 7549-7583, and 7709-7727; raw PDF pages 228-230 and 235-236 checked by local PyMuPDF extraction."
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "compose": {
+      "pass_count": 5,
+      "total": 5,
+      "blockers": []
+    },
+    "diff": {
+      "pass_count": 5,
+      "total": 5,
+      "blockers": []
+    },
+    "validate": {
+      "status": "PASS_FROM_SCOPED_COMMAND_OUTPUT",
+      "command": "bun run content-audit:validate -- --article-id <id> --summary",
+      "note": "All five Batch 085 article IDs returned valid=true, blockers=0; component-usage.json warnings only."
+    },
+    "ui_block_edits": {
+      "pass_count": 5,
+      "total": 5,
+      "blockers": []
+    },
+    "json_parse": {
+      "status": "PASS",
+      "files": 105,
+      "failures": []
+    },
+    "placeholder_internal_source_gap_scan": {
+      "status": "PASS",
+      "files": 70,
+      "hits": []
+    },
+    "old_unsupported_claim_marker_scan": {
+      "status": "PASS",
+      "hits": []
+    },
+    "source_hash_checks": {
+      "status": "PASS",
+      "checked_source_entries": 11,
+      "unique_raw_source_entries": 9,
+      "raw_and_refined_hash_checks": 22,
+      "unique_hash_values": 18,
+      "failures": []
+    },
+    "question_edit_count": {
+      "status": "PASS",
+      "linked_questions": 50,
+      "question_edits": 50
+    },
+    "stale_compose_error": {
+      "status": "PASS",
+      "files": []
+    },
+    "source_evidence": {
+      "status": "PASS",
+      "files": 5,
+      "claims": 55,
+      "blockers": []
+    },
+    "targeted_tests": {
+      "status": "PASS",
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "result": "34 pass, 0 fail, 328 expect calls"
+    },
+    "scoped_git_diff_check": {
+      "status": "PASS",
+      "command": "git diff --check -- .ai/03_plans/source-audited-local-first-batches-handoff.md .ai/content-audit-export/source-audited-article-batch-085-local-first-ledger.json .ai/content-audit-export/source-audited-article-batch-085-local-first-report.md .ai/content-audit-export/source-audited-article-batch-085-local-first-scoped-checks.json .ai/content-audit-export/articles/lea-matl-003-07-core-concept--22192e7e-6cdf-4613-9b2c-bddf1ee3091f .ai/content-audit-export/articles/lea-matl-005-05-core-concept--8a3fed25-4fda-4d38-a3a9-0e452f0e1e75 .ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08 .ai/content-audit-export/articles/lea-matl-005-08-core-concept--d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc .ai/content-audit-export/articles/lea-matl-005-09-core-concept--7b1d04de-6310-4187-8cfc-39f1f30cf349",
+      "note": "Final scoped git diff --check produced no output; supplemental scoped whitespace scan over tracked and untracked Batch 085 files passed."
+    }
+  },
+  "articles": [
+    {
+      "article_id": "22192e7e-6cdf-4613-9b2c-bddf1ee3091f",
+      "slug": "lea-matl-003-07-core-concept",
+      "title": "Structural bolts join steel members through frictional force or bearing action",
+      "folder": ".ai/content-audit-export/articles/lea-matl-003-07-core-concept--22192e7e-6cdf-4613-9b2c-bddf1ee3091f",
+      "absolute_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-003-07-core-concept--22192e7e-6cdf-4613-9b2c-bddf1ee3091f",
+      "normalized_path": ".ai/content-audit-export/articles/lea-matl-003-07-core-concept--22192e7e-6cdf-4613-9b2c-bddf1ee3091f/normalized.md",
+      "absolute_normalized_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-003-07-core-concept--22192e7e-6cdf-4613-9b2c-bddf1ee3091f/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-matl-003-07-core-concept--22192e7e-6cdf-4613-9b2c-bddf1ee3091f/candidate.md",
+      "absolute_candidate_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-003-07-core-concept--22192e7e-6cdf-4613-9b2c-bddf1ee3091f/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/lea-matl-003-07-core-concept--22192e7e-6cdf-4613-9b2c-bddf1ee3091f/sources.json",
+      "absolute_sources_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-003-07-core-concept--22192e7e-6cdf-4613-9b2c-bddf1ee3091f/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-matl-003-07-core-concept--22192e7e-6cdf-4613-9b2c-bddf1ee3091f/source-audit-evidence.json",
+      "absolute_source_audit_evidence_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-003-07-core-concept--22192e7e-6cdf-4613-9b2c-bddf1ee3091f/source-audit-evidence.json",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-matl-003-07-core-concept--22192e7e-6cdf-4613-9b2c-bddf1ee3091f/question-edits",
+      "absolute_question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-003-07-core-concept--22192e7e-6cdf-4613-9b2c-bddf1ee3091f/question-edits",
+      "question_edit_files": [
+        ".ai/content-audit-export/articles/lea-matl-003-07-core-concept--22192e7e-6cdf-4613-9b2c-bddf1ee3091f/question-edits/153b4448-6e26-42b8-b647-4a17abdd8d9e.json",
+        ".ai/content-audit-export/articles/lea-matl-003-07-core-concept--22192e7e-6cdf-4613-9b2c-bddf1ee3091f/question-edits/17b5a72a-c775-4e40-9489-e6e4a67275b1.json",
+        ".ai/content-audit-export/articles/lea-matl-003-07-core-concept--22192e7e-6cdf-4613-9b2c-bddf1ee3091f/question-edits/1f5dac3c-7d9b-41a9-abbb-8d412a90820c.json",
+        ".ai/content-audit-export/articles/lea-matl-003-07-core-concept--22192e7e-6cdf-4613-9b2c-bddf1ee3091f/question-edits/2cda0a48-a65f-4fed-988a-84397360aeff.json",
+        ".ai/content-audit-export/articles/lea-matl-003-07-core-concept--22192e7e-6cdf-4613-9b2c-bddf1ee3091f/question-edits/333652ec-0ddd-42e6-92e4-fe8bfe286211.json",
+        ".ai/content-audit-export/articles/lea-matl-003-07-core-concept--22192e7e-6cdf-4613-9b2c-bddf1ee3091f/question-edits/53c0a3d1-3843-45c7-a703-5bdc424a3a72.json",
+        ".ai/content-audit-export/articles/lea-matl-003-07-core-concept--22192e7e-6cdf-4613-9b2c-bddf1ee3091f/question-edits/8a863a38-d013-4506-acec-8322dc93e841.json",
+        ".ai/content-audit-export/articles/lea-matl-003-07-core-concept--22192e7e-6cdf-4613-9b2c-bddf1ee3091f/question-edits/a58834eb-23a2-49c3-81e1-09c49dbe2cd7.json",
+        ".ai/content-audit-export/articles/lea-matl-003-07-core-concept--22192e7e-6cdf-4613-9b2c-bddf1ee3091f/question-edits/b4b44890-d033-4205-9452-b82801b1f0b2.json",
+        ".ai/content-audit-export/articles/lea-matl-003-07-core-concept--22192e7e-6cdf-4613-9b2c-bddf1ee3091f/question-edits/b646f090-9f5e-42c6-97e4-77d65406b559.json"
+      ],
+      "absolute_question_edit_files": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-003-07-core-concept--22192e7e-6cdf-4613-9b2c-bddf1ee3091f/question-edits/153b4448-6e26-42b8-b647-4a17abdd8d9e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-003-07-core-concept--22192e7e-6cdf-4613-9b2c-bddf1ee3091f/question-edits/17b5a72a-c775-4e40-9489-e6e4a67275b1.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-003-07-core-concept--22192e7e-6cdf-4613-9b2c-bddf1ee3091f/question-edits/1f5dac3c-7d9b-41a9-abbb-8d412a90820c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-003-07-core-concept--22192e7e-6cdf-4613-9b2c-bddf1ee3091f/question-edits/2cda0a48-a65f-4fed-988a-84397360aeff.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-003-07-core-concept--22192e7e-6cdf-4613-9b2c-bddf1ee3091f/question-edits/333652ec-0ddd-42e6-92e4-fe8bfe286211.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-003-07-core-concept--22192e7e-6cdf-4613-9b2c-bddf1ee3091f/question-edits/53c0a3d1-3843-45c7-a703-5bdc424a3a72.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-003-07-core-concept--22192e7e-6cdf-4613-9b2c-bddf1ee3091f/question-edits/8a863a38-d013-4506-acec-8322dc93e841.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-003-07-core-concept--22192e7e-6cdf-4613-9b2c-bddf1ee3091f/question-edits/a58834eb-23a2-49c3-81e1-09c49dbe2cd7.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-003-07-core-concept--22192e7e-6cdf-4613-9b2c-bddf1ee3091f/question-edits/b4b44890-d033-4205-9452-b82801b1f0b2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-003-07-core-concept--22192e7e-6cdf-4613-9b2c-bddf1ee3091f/question-edits/b646f090-9f5e-42c6-97e4-77d65406b559.json"
+      ],
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_sha256": "sha256:bae3d8586753ee014c27f79029b196af893cf88d73ec237a2e9c5dfc0d0f49bd",
+      "candidate_sha256": "sha256:bae3d8586753ee014c27f79029b196af893cf88d73ec237a2e9c5dfc0d0f49bd",
+      "original_sha256": "sha256:7fc027e64b204a79b0373325cef030238b5b4f15245f503e2d3b0008ea4ebf5b",
+      "sources_content_sha256": "sha256:097a8f04741cd0314e177bccb225ca134debf60d96d493d3bea644c631ba1555",
+      "metadata_sources_hash": "sha256:03666eeed10bf36e13afb78203314dea24fb5639e9a6d349cacfaf5847601f08",
+      "compose_pass": true,
+      "diff_pass": true,
+      "ui_block_edits_pass": true,
+      "source_audit_pass": true,
+      "source_evidence_claim_count": 11,
+      "checked_source_count": 2,
+      "source_locators": [
+        {
+          "label": "European Building Construction Illustrated",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/European Building Construction Illustrated.pdf",
+          "raw_pdf_sha256": "sha256:440f21385df13b75ce4041026f77d9d34872d6235fd18fa770c11609a283d19c",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/European Building Construction Illustrated.md",
+          "refined_markdown_sha256": "sha256:f2ec82d918f32d6c050f9f5ea0274b6c68f409c009ddcd311ab45e3567041e8c",
+          "locator": "European Building Construction Illustrated refined markdown lines 3537-3605; raw PDF page 121 checked by local PyMuPDF extraction."
+        },
+        {
+          "label": "Metals Lecture",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Metals Lecture.pdf",
+          "raw_pdf_sha256": "sha256:cd9cd4ee534bda9a974447c4ec73b13b12d5abf1c14df1fca408a2c4530650dd",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Metals Lecture.md",
+          "refined_markdown_sha256": "sha256:4e9e0a042f2eef2c80d33af81512ca2cf32778cae64351af9dc54df58db3694c",
+          "locator": "Metals Lecture refined markdown lines 26 and 405; raw PDF pages 2 and 28 checked by local PyMuPDF extraction."
+        }
+      ],
+      "blockers": [],
+      "scenario_enrichment_status": "eligible-deferred"
+    },
+    {
+      "article_id": "8a3fed25-4fda-4d38-a3a9-0e452f0e1e75",
+      "slug": "lea-matl-005-05-core-concept",
+      "title": "Formwork temporarily supports fresh concrete until it can hold its shape",
+      "folder": ".ai/content-audit-export/articles/lea-matl-005-05-core-concept--8a3fed25-4fda-4d38-a3a9-0e452f0e1e75",
+      "absolute_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-05-core-concept--8a3fed25-4fda-4d38-a3a9-0e452f0e1e75",
+      "normalized_path": ".ai/content-audit-export/articles/lea-matl-005-05-core-concept--8a3fed25-4fda-4d38-a3a9-0e452f0e1e75/normalized.md",
+      "absolute_normalized_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-05-core-concept--8a3fed25-4fda-4d38-a3a9-0e452f0e1e75/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-matl-005-05-core-concept--8a3fed25-4fda-4d38-a3a9-0e452f0e1e75/candidate.md",
+      "absolute_candidate_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-05-core-concept--8a3fed25-4fda-4d38-a3a9-0e452f0e1e75/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/lea-matl-005-05-core-concept--8a3fed25-4fda-4d38-a3a9-0e452f0e1e75/sources.json",
+      "absolute_sources_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-05-core-concept--8a3fed25-4fda-4d38-a3a9-0e452f0e1e75/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-matl-005-05-core-concept--8a3fed25-4fda-4d38-a3a9-0e452f0e1e75/source-audit-evidence.json",
+      "absolute_source_audit_evidence_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-05-core-concept--8a3fed25-4fda-4d38-a3a9-0e452f0e1e75/source-audit-evidence.json",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-matl-005-05-core-concept--8a3fed25-4fda-4d38-a3a9-0e452f0e1e75/question-edits",
+      "absolute_question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-05-core-concept--8a3fed25-4fda-4d38-a3a9-0e452f0e1e75/question-edits",
+      "question_edit_files": [
+        ".ai/content-audit-export/articles/lea-matl-005-05-core-concept--8a3fed25-4fda-4d38-a3a9-0e452f0e1e75/question-edits/0161f464-237d-4b35-ab89-798fa7fb1c3a.json",
+        ".ai/content-audit-export/articles/lea-matl-005-05-core-concept--8a3fed25-4fda-4d38-a3a9-0e452f0e1e75/question-edits/244ccd5b-13d7-4db2-a33c-7cfb603e57f4.json",
+        ".ai/content-audit-export/articles/lea-matl-005-05-core-concept--8a3fed25-4fda-4d38-a3a9-0e452f0e1e75/question-edits/284755c4-dc45-4f7c-bba7-47b452b64c0b.json",
+        ".ai/content-audit-export/articles/lea-matl-005-05-core-concept--8a3fed25-4fda-4d38-a3a9-0e452f0e1e75/question-edits/3503e98d-b775-4adf-ba49-99bdc0437d08.json",
+        ".ai/content-audit-export/articles/lea-matl-005-05-core-concept--8a3fed25-4fda-4d38-a3a9-0e452f0e1e75/question-edits/451c8270-eb8e-4f65-99d5-ad59cef688e0.json",
+        ".ai/content-audit-export/articles/lea-matl-005-05-core-concept--8a3fed25-4fda-4d38-a3a9-0e452f0e1e75/question-edits/5c1adde4-b821-4943-ac54-9ee50362ff07.json",
+        ".ai/content-audit-export/articles/lea-matl-005-05-core-concept--8a3fed25-4fda-4d38-a3a9-0e452f0e1e75/question-edits/6213ca2c-db50-4081-a733-9f9da9ef384b.json",
+        ".ai/content-audit-export/articles/lea-matl-005-05-core-concept--8a3fed25-4fda-4d38-a3a9-0e452f0e1e75/question-edits/7b634817-1fab-421a-bd8e-6ebea66929a4.json",
+        ".ai/content-audit-export/articles/lea-matl-005-05-core-concept--8a3fed25-4fda-4d38-a3a9-0e452f0e1e75/question-edits/8e946cd9-f1b6-4ce3-b33a-8a42da7974c2.json",
+        ".ai/content-audit-export/articles/lea-matl-005-05-core-concept--8a3fed25-4fda-4d38-a3a9-0e452f0e1e75/question-edits/a0afcd79-e164-403c-b298-989acfc65d3c.json"
+      ],
+      "absolute_question_edit_files": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-05-core-concept--8a3fed25-4fda-4d38-a3a9-0e452f0e1e75/question-edits/0161f464-237d-4b35-ab89-798fa7fb1c3a.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-05-core-concept--8a3fed25-4fda-4d38-a3a9-0e452f0e1e75/question-edits/244ccd5b-13d7-4db2-a33c-7cfb603e57f4.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-05-core-concept--8a3fed25-4fda-4d38-a3a9-0e452f0e1e75/question-edits/284755c4-dc45-4f7c-bba7-47b452b64c0b.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-05-core-concept--8a3fed25-4fda-4d38-a3a9-0e452f0e1e75/question-edits/3503e98d-b775-4adf-ba49-99bdc0437d08.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-05-core-concept--8a3fed25-4fda-4d38-a3a9-0e452f0e1e75/question-edits/451c8270-eb8e-4f65-99d5-ad59cef688e0.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-05-core-concept--8a3fed25-4fda-4d38-a3a9-0e452f0e1e75/question-edits/5c1adde4-b821-4943-ac54-9ee50362ff07.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-05-core-concept--8a3fed25-4fda-4d38-a3a9-0e452f0e1e75/question-edits/6213ca2c-db50-4081-a733-9f9da9ef384b.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-05-core-concept--8a3fed25-4fda-4d38-a3a9-0e452f0e1e75/question-edits/7b634817-1fab-421a-bd8e-6ebea66929a4.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-05-core-concept--8a3fed25-4fda-4d38-a3a9-0e452f0e1e75/question-edits/8e946cd9-f1b6-4ce3-b33a-8a42da7974c2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-05-core-concept--8a3fed25-4fda-4d38-a3a9-0e452f0e1e75/question-edits/a0afcd79-e164-403c-b298-989acfc65d3c.json"
+      ],
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_sha256": "sha256:ecc6fe5015e26504b206d0eaaf959ce38db25600d368bf16d9138b1a850c1dc4",
+      "candidate_sha256": "sha256:ecc6fe5015e26504b206d0eaaf959ce38db25600d368bf16d9138b1a850c1dc4",
+      "original_sha256": "sha256:ed2942886c9a35e1331096cdf26f2d693faf2ba3c79fccee272cdd2057d54d17",
+      "sources_content_sha256": "sha256:3c9f483b7113d04df936d69226ad76744f4f6ad23bbd19e9179c249d8725ca7c",
+      "metadata_sources_hash": "sha256:5fdc649b43bea9df7770e26173ee22a5d368c1ca8a05322da9b24d6b18a6c915",
+      "compose_pass": true,
+      "diff_pass": true,
+      "ui_block_edits_pass": true,
+      "source_audit_pass": true,
+      "source_evidence_claim_count": 11,
+      "checked_source_count": 3,
+      "source_locators": [
+        {
+          "label": "Building Construction Illustrated, 5th Edition",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+          "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+          "refined_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+          "locator": "Building Construction Illustrated refined markdown lines 4583-4623; raw PDF pages 151-152 checked by local PyMuPDF extraction."
+        },
+        {
+          "label": "Buidling Construction Handbook 7th Ed by Chudley _ Greeno",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf",
+          "raw_pdf_sha256": "sha256:2efa493fac06a3efb9367111a397129ff8647778d88160bbe0174403cbb9e0bb",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.md",
+          "refined_markdown_sha256": "sha256:485fe968d55ca680cbde52d24fcee5f512a63591026db19e46835f1bc530dcbb",
+          "locator": "Chudley/Greeno refined markdown lines 691-717 and 732-738; raw PDF pages 138, 145, 146, and 151 checked by local PyMuPDF extraction."
+        },
+        {
+          "label": "Building Tech Illustrated",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Tech Illustrated.pdf",
+          "raw_pdf_sha256": "sha256:231e15abee34d44e518dff7478fc503ba3285b8d6b4080a096e637a5aeec8dec",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Tech Illustrated.md",
+          "refined_markdown_sha256": "sha256:016d54a7798e5b450043d3be89f7cf940184f05494644033f0e52e03d49f64ad",
+          "locator": "Building Tech Illustrated refined markdown lines 481, 585, and 601-627; raw PDF pages 34, 41, and 43 checked by local PyMuPDF extraction."
+        }
+      ],
+      "blockers": [],
+      "scenario_enrichment_status": "eligible-deferred"
+    },
+    {
+      "article_id": "20429844-ef79-45b9-8095-d9c64fd2bf08",
+      "slug": "lea-matl-005-07-core-concept",
+      "title": "Embodied carbon questions should be answered through material life-cycle evidence",
+      "folder": ".ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08",
+      "absolute_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08",
+      "normalized_path": ".ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08/normalized.md",
+      "absolute_normalized_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08/candidate.md",
+      "absolute_candidate_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08/sources.json",
+      "absolute_sources_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08/source-audit-evidence.json",
+      "absolute_source_audit_evidence_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08/source-audit-evidence.json",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08/question-edits",
+      "absolute_question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08/question-edits",
+      "question_edit_files": [
+        ".ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08/question-edits/12f6e4bd-8a17-4249-980d-c088256fe05f.json",
+        ".ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08/question-edits/33c1a1ff-0207-454b-a331-5a0c9bfb3bc3.json",
+        ".ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08/question-edits/4cef8884-ae4e-4a34-a7f5-f701d5afc563.json",
+        ".ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08/question-edits/6d69ce92-72bf-41c3-a22b-ed0781262a06.json",
+        ".ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08/question-edits/7cfe2e9f-aa79-4eea-8caa-4a806b69c86d.json",
+        ".ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08/question-edits/a626f590-1d39-4c72-bf95-6316bc9e17df.json",
+        ".ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08/question-edits/b5a74a76-7a2b-4b71-8864-dabe36cd7851.json",
+        ".ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08/question-edits/dafd69c9-8cd4-4dcf-8caf-0392b9c32f52.json",
+        ".ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08/question-edits/dfd24359-6cc3-4b09-8ba2-2a675d236c5c.json",
+        ".ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08/question-edits/fb5705f7-2d95-4692-b0e8-803e63989e06.json"
+      ],
+      "absolute_question_edit_files": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08/question-edits/12f6e4bd-8a17-4249-980d-c088256fe05f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08/question-edits/33c1a1ff-0207-454b-a331-5a0c9bfb3bc3.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08/question-edits/4cef8884-ae4e-4a34-a7f5-f701d5afc563.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08/question-edits/6d69ce92-72bf-41c3-a22b-ed0781262a06.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08/question-edits/7cfe2e9f-aa79-4eea-8caa-4a806b69c86d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08/question-edits/a626f590-1d39-4c72-bf95-6316bc9e17df.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08/question-edits/b5a74a76-7a2b-4b71-8864-dabe36cd7851.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08/question-edits/dafd69c9-8cd4-4dcf-8caf-0392b9c32f52.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08/question-edits/dfd24359-6cc3-4b09-8ba2-2a675d236c5c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-07-core-concept--20429844-ef79-45b9-8095-d9c64fd2bf08/question-edits/fb5705f7-2d95-4692-b0e8-803e63989e06.json"
+      ],
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_sha256": "sha256:e854af9a216ac6f2af7716cacc0820d75e212ab0690d5c2061280868f587e0f5",
+      "candidate_sha256": "sha256:e854af9a216ac6f2af7716cacc0820d75e212ab0690d5c2061280868f587e0f5",
+      "original_sha256": "sha256:72df3660e5f167e7db5366702e5138242051b681346935ca132577d65597d95d",
+      "sources_content_sha256": "sha256:3ed9902d484be44b1b7944088301d5eeb3e63cdd3efe7c4f5670bf77c45de3f4",
+      "metadata_sources_hash": "sha256:f1d5c6c6e4d5ab697edadad5452d8431014d0d070f450a73d7a9689baf41b9af",
+      "compose_pass": true,
+      "diff_pass": true,
+      "ui_block_edits_pass": true,
+      "source_audit_pass": true,
+      "source_evidence_claim_count": 11,
+      "checked_source_count": 1,
+      "source_locators": [
+        {
+          "label": "Green Building Illustrated",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Green Building Illustrated.pdf",
+          "raw_pdf_sha256": "sha256:b23f127ca4581eb2d733b14e2a3739d022c9d04b343729b0ecdebdf92d0bdc70",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Green Building Illustrated.md",
+          "refined_markdown_sha256": "sha256:4c754dad2867dea176cd93c2f93788b7874ccbbe557096bb64cbb0ab3a0165d2",
+          "locator": "Green Building Illustrated refined markdown lines 7501-7535, 7549-7583, and 7709-7727; raw PDF pages 228-230 and 235-236 checked by local PyMuPDF extraction."
+        }
+      ],
+      "blockers": [],
+      "scenario_enrichment_status": "eligible-deferred"
+    },
+    {
+      "article_id": "d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc",
+      "slug": "lea-matl-005-08-core-concept",
+      "title": "Vernacular sustainable materials require suitability, protection, and approval evidence",
+      "folder": ".ai/content-audit-export/articles/lea-matl-005-08-core-concept--d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc",
+      "absolute_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-08-core-concept--d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc",
+      "normalized_path": ".ai/content-audit-export/articles/lea-matl-005-08-core-concept--d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc/normalized.md",
+      "absolute_normalized_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-08-core-concept--d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-matl-005-08-core-concept--d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc/candidate.md",
+      "absolute_candidate_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-08-core-concept--d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/lea-matl-005-08-core-concept--d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc/sources.json",
+      "absolute_sources_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-08-core-concept--d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-matl-005-08-core-concept--d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc/source-audit-evidence.json",
+      "absolute_source_audit_evidence_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-08-core-concept--d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc/source-audit-evidence.json",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-matl-005-08-core-concept--d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc/question-edits",
+      "absolute_question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-08-core-concept--d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc/question-edits",
+      "question_edit_files": [
+        ".ai/content-audit-export/articles/lea-matl-005-08-core-concept--d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc/question-edits/06997570-950b-44fc-a816-c0f194894e33.json",
+        ".ai/content-audit-export/articles/lea-matl-005-08-core-concept--d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc/question-edits/084b56f4-b977-4330-8657-111008dd05d9.json",
+        ".ai/content-audit-export/articles/lea-matl-005-08-core-concept--d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc/question-edits/36ffe7e1-c38f-470d-b609-3950ee9ef786.json",
+        ".ai/content-audit-export/articles/lea-matl-005-08-core-concept--d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc/question-edits/69510623-f5f7-4277-ba9a-4d4a571758e2.json",
+        ".ai/content-audit-export/articles/lea-matl-005-08-core-concept--d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc/question-edits/776ef887-a08d-4774-bc90-7724a8adeb0c.json",
+        ".ai/content-audit-export/articles/lea-matl-005-08-core-concept--d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc/question-edits/8b7274ec-e06f-4429-83d8-a4a59370329c.json",
+        ".ai/content-audit-export/articles/lea-matl-005-08-core-concept--d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc/question-edits/a17b9aec-066a-4e0a-8cdb-d2e51c16e4ed.json",
+        ".ai/content-audit-export/articles/lea-matl-005-08-core-concept--d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc/question-edits/a32398a9-7f7c-4579-aaaa-5b2e3a6a4691.json",
+        ".ai/content-audit-export/articles/lea-matl-005-08-core-concept--d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc/question-edits/b075eefc-5e27-4c7f-a671-eb3d042ee235.json",
+        ".ai/content-audit-export/articles/lea-matl-005-08-core-concept--d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc/question-edits/f05bc8d4-5e16-4cd8-b43c-489ef5a14001.json"
+      ],
+      "absolute_question_edit_files": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-08-core-concept--d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc/question-edits/06997570-950b-44fc-a816-c0f194894e33.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-08-core-concept--d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc/question-edits/084b56f4-b977-4330-8657-111008dd05d9.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-08-core-concept--d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc/question-edits/36ffe7e1-c38f-470d-b609-3950ee9ef786.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-08-core-concept--d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc/question-edits/69510623-f5f7-4277-ba9a-4d4a571758e2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-08-core-concept--d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc/question-edits/776ef887-a08d-4774-bc90-7724a8adeb0c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-08-core-concept--d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc/question-edits/8b7274ec-e06f-4429-83d8-a4a59370329c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-08-core-concept--d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc/question-edits/a17b9aec-066a-4e0a-8cdb-d2e51c16e4ed.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-08-core-concept--d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc/question-edits/a32398a9-7f7c-4579-aaaa-5b2e3a6a4691.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-08-core-concept--d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc/question-edits/b075eefc-5e27-4c7f-a671-eb3d042ee235.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-08-core-concept--d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc/question-edits/f05bc8d4-5e16-4cd8-b43c-489ef5a14001.json"
+      ],
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_sha256": "sha256:f39916a87f3cb32e845fd13ce13ceda36cafc1fa1c4b956154cd23ac581e52ae",
+      "candidate_sha256": "sha256:f39916a87f3cb32e845fd13ce13ceda36cafc1fa1c4b956154cd23ac581e52ae",
+      "original_sha256": "sha256:fcec5bb276eed84ad0689bdecf24f4ebbb452864bf52f9464995676cf4b9d4d9",
+      "sources_content_sha256": "sha256:33e346af94094b3a29312f1ce135b3485f19c4334128ba339449008d3a792a36",
+      "metadata_sources_hash": "sha256:440fcf15fb6d988bc6fd2670fa0bb9ec37e02bf416215868375111240179e31b",
+      "compose_pass": true,
+      "diff_pass": true,
+      "ui_block_edits_pass": true,
+      "source_audit_pass": true,
+      "source_evidence_claim_count": 11,
+      "checked_source_count": 3,
+      "source_locators": [
+        {
+          "label": "Green Building Illustrated",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Green Building Illustrated.pdf",
+          "raw_pdf_sha256": "sha256:b23f127ca4581eb2d733b14e2a3739d022c9d04b343729b0ecdebdf92d0bdc70",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Green Building Illustrated.md",
+          "refined_markdown_sha256": "sha256:4c754dad2867dea176cd93c2f93788b7874ccbbe557096bb64cbb0ab3a0165d2",
+          "locator": "Green Building Illustrated refined markdown lines 7501-7535, 7549-7583, and 7709-7727; raw PDF pages 228-230 and 235-236 checked by local PyMuPDF extraction."
+        },
+        {
+          "label": "Good Building Handbook in the Philippines",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Good Building Handbook in the PH.pdf",
+          "raw_pdf_sha256": "sha256:e8925f0c617c24df41784a002fa9c3f1a237a5dda96196d82f14653bfd9b870c",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Good Building Handbook in the PH.md",
+          "refined_markdown_sha256": "sha256:11584339e25de3d586d64a2a31d1e8af03cfb876371bec764c224eaad6e11c9d",
+          "locator": "Good Building Handbook in the PH refined markdown lines 420-491; raw PDF pages 50, 56, and 60 checked by local PyMuPDF extraction."
+        },
+        {
+          "label": "PD 1096 - National Building Code",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 - National Building Code.pdf",
+          "raw_pdf_sha256": "sha256:0bd869faac8d949359aa9e3c5bea7026e85e348f61ce1e87a09d48991c5ba796",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 - National Building Code.md",
+          "refined_markdown_sha256": "sha256:d7df246271ae1bcb14ed8e4ba881ed75cfa8381cca9f465986d9947397f353d9",
+          "locator": "PD 1096 refined markdown lines 199-241 and 354; raw PDF pages 7, 8, and 14 checked by local PyMuPDF extraction."
+        }
+      ],
+      "blockers": [],
+      "scenario_enrichment_status": "eligible-deferred"
+    },
+    {
+      "article_id": "7b1d04de-6310-4187-8cfc-39f1f30cf349",
+      "slug": "lea-matl-005-09-core-concept",
+      "title": "Waste reduction starts with source reduction before reuse, recycling, recovery, and disposal",
+      "folder": ".ai/content-audit-export/articles/lea-matl-005-09-core-concept--7b1d04de-6310-4187-8cfc-39f1f30cf349",
+      "absolute_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-09-core-concept--7b1d04de-6310-4187-8cfc-39f1f30cf349",
+      "normalized_path": ".ai/content-audit-export/articles/lea-matl-005-09-core-concept--7b1d04de-6310-4187-8cfc-39f1f30cf349/normalized.md",
+      "absolute_normalized_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-09-core-concept--7b1d04de-6310-4187-8cfc-39f1f30cf349/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-matl-005-09-core-concept--7b1d04de-6310-4187-8cfc-39f1f30cf349/candidate.md",
+      "absolute_candidate_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-09-core-concept--7b1d04de-6310-4187-8cfc-39f1f30cf349/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/lea-matl-005-09-core-concept--7b1d04de-6310-4187-8cfc-39f1f30cf349/sources.json",
+      "absolute_sources_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-09-core-concept--7b1d04de-6310-4187-8cfc-39f1f30cf349/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-matl-005-09-core-concept--7b1d04de-6310-4187-8cfc-39f1f30cf349/source-audit-evidence.json",
+      "absolute_source_audit_evidence_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-09-core-concept--7b1d04de-6310-4187-8cfc-39f1f30cf349/source-audit-evidence.json",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-matl-005-09-core-concept--7b1d04de-6310-4187-8cfc-39f1f30cf349/question-edits",
+      "absolute_question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-09-core-concept--7b1d04de-6310-4187-8cfc-39f1f30cf349/question-edits",
+      "question_edit_files": [
+        ".ai/content-audit-export/articles/lea-matl-005-09-core-concept--7b1d04de-6310-4187-8cfc-39f1f30cf349/question-edits/5301c01a-f7f5-49c7-ae0e-831e34ca42e1.json",
+        ".ai/content-audit-export/articles/lea-matl-005-09-core-concept--7b1d04de-6310-4187-8cfc-39f1f30cf349/question-edits/6aecf565-2191-4ae5-9586-1ca5fb0911ae.json",
+        ".ai/content-audit-export/articles/lea-matl-005-09-core-concept--7b1d04de-6310-4187-8cfc-39f1f30cf349/question-edits/7c60ae97-22e9-4fd1-bb4c-80c6caf4a76a.json",
+        ".ai/content-audit-export/articles/lea-matl-005-09-core-concept--7b1d04de-6310-4187-8cfc-39f1f30cf349/question-edits/8d1fbe63-d7fa-44d9-b6cd-3b434efc9982.json",
+        ".ai/content-audit-export/articles/lea-matl-005-09-core-concept--7b1d04de-6310-4187-8cfc-39f1f30cf349/question-edits/96e238e3-a437-4b8e-ab69-96b81ca024e6.json",
+        ".ai/content-audit-export/articles/lea-matl-005-09-core-concept--7b1d04de-6310-4187-8cfc-39f1f30cf349/question-edits/9a380ddc-6a52-4573-9799-872ee7476219.json",
+        ".ai/content-audit-export/articles/lea-matl-005-09-core-concept--7b1d04de-6310-4187-8cfc-39f1f30cf349/question-edits/abc6b0b8-8be4-4a93-9806-445f19ca16d3.json",
+        ".ai/content-audit-export/articles/lea-matl-005-09-core-concept--7b1d04de-6310-4187-8cfc-39f1f30cf349/question-edits/c2adc4f4-4d40-41aa-888e-6d0c966eb5e6.json",
+        ".ai/content-audit-export/articles/lea-matl-005-09-core-concept--7b1d04de-6310-4187-8cfc-39f1f30cf349/question-edits/d3c1032f-ef99-4b3b-9c95-a3c6f437fc92.json",
+        ".ai/content-audit-export/articles/lea-matl-005-09-core-concept--7b1d04de-6310-4187-8cfc-39f1f30cf349/question-edits/fa5e3b6a-a4fe-4041-8abc-03d2022a43b8.json"
+      ],
+      "absolute_question_edit_files": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-09-core-concept--7b1d04de-6310-4187-8cfc-39f1f30cf349/question-edits/5301c01a-f7f5-49c7-ae0e-831e34ca42e1.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-09-core-concept--7b1d04de-6310-4187-8cfc-39f1f30cf349/question-edits/6aecf565-2191-4ae5-9586-1ca5fb0911ae.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-09-core-concept--7b1d04de-6310-4187-8cfc-39f1f30cf349/question-edits/7c60ae97-22e9-4fd1-bb4c-80c6caf4a76a.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-09-core-concept--7b1d04de-6310-4187-8cfc-39f1f30cf349/question-edits/8d1fbe63-d7fa-44d9-b6cd-3b434efc9982.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-09-core-concept--7b1d04de-6310-4187-8cfc-39f1f30cf349/question-edits/96e238e3-a437-4b8e-ab69-96b81ca024e6.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-09-core-concept--7b1d04de-6310-4187-8cfc-39f1f30cf349/question-edits/9a380ddc-6a52-4573-9799-872ee7476219.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-09-core-concept--7b1d04de-6310-4187-8cfc-39f1f30cf349/question-edits/abc6b0b8-8be4-4a93-9806-445f19ca16d3.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-09-core-concept--7b1d04de-6310-4187-8cfc-39f1f30cf349/question-edits/c2adc4f4-4d40-41aa-888e-6d0c966eb5e6.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-09-core-concept--7b1d04de-6310-4187-8cfc-39f1f30cf349/question-edits/d3c1032f-ef99-4b3b-9c95-a3c6f437fc92.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-005-09-core-concept--7b1d04de-6310-4187-8cfc-39f1f30cf349/question-edits/fa5e3b6a-a4fe-4041-8abc-03d2022a43b8.json"
+      ],
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "normalized_sha256": "sha256:7c0d1672b0f93408945e19b97143b7f31df3e6887109f1b1de6c52a4d37b1e74",
+      "candidate_sha256": "sha256:7c0d1672b0f93408945e19b97143b7f31df3e6887109f1b1de6c52a4d37b1e74",
+      "original_sha256": "sha256:68550d65a82b3e7fdefaf78fe9ef77a5ab4bb00a05ea845f1bbcbf507a88f639",
+      "sources_content_sha256": "sha256:77521f7e9d1fc64e6554cc90501c734716a62fe7a1063dc5bc5c2ba2a9392bfc",
+      "metadata_sources_hash": "sha256:32b84f6b37b8dec3b7cf6f47690a9b0a68ed5de30012cf641874fa11721b5540",
+      "compose_pass": true,
+      "diff_pass": true,
+      "ui_block_edits_pass": true,
+      "source_audit_pass": true,
+      "source_evidence_claim_count": 11,
+      "checked_source_count": 2,
+      "source_locators": [
+        {
+          "label": "RA 9003 Ecological Solid Waste Management Act of 2000",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.pdf",
+          "raw_pdf_sha256": "sha256:d3939c8bad4085e76186be1fa0465b9011ceb639bdb8611e7d869fac454d59fe",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.md",
+          "refined_markdown_sha256": "sha256:f0e42aa0bb840899b2ef0a87d79fa7e9cb47e97d090731fc48b119711144eadc",
+          "locator": "RA 9003 refined markdown lines 11-125 and 491-555; raw PDF pages 1, 4, 5, 16, 18, and 37 checked by local PyMuPDF extraction."
+        },
+        {
+          "label": "Green Building Illustrated",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Green Building Illustrated.pdf",
+          "raw_pdf_sha256": "sha256:b23f127ca4581eb2d733b14e2a3739d022c9d04b343729b0ecdebdf92d0bdc70",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Green Building Illustrated.md",
+          "refined_markdown_sha256": "sha256:4c754dad2867dea176cd93c2f93788b7874ccbbe557096bb64cbb0ab3a0165d2",
+          "locator": "Green Building Illustrated refined markdown lines 7501-7535, 7549-7583, and 7709-7727; raw PDF pages 228-230 and 235-236 checked by local PyMuPDF extraction."
+        }
+      ],
+      "blockers": [],
+      "scenario_enrichment_status": "eligible-deferred"
+    }
+  ]
+}

@@ -1,7 +1,56 @@
 {
   "article_id": "31d08115-b5ff-4b0e-b33e-522e25800da4",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "source_count": 0,
-  "sources": []
+  "sources_hash": "sha256:af33e427ab7c114b508476a78fd445b6928dea5a90afdf0ad513ad8790556284",
+  "source_count": 2,
+  "sources": [
+    {
+      "source_id": "uap-standards-spp204b-construction-management-local",
+      "article_id": "31d08115-b5ff-4b0e-b33e-522e25800da4",
+      "label": "UAP Standards of Professional Practice - SPP 204-B Construction Management",
+      "url": null,
+      "source_type": "professional_practice_pdf",
+      "description": "Local raw PDF and refined markdown checked for CM rationale, functions, authority limits, qualifications, and separate compensation.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-11T14:30:00.000+08:00",
+      "updated_at": "2026-05-11T14:30:00.000+08:00",
+      "local_source_audit": {
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "source_locator": "UAP Standards refined markdown lines 983-1030",
+        "checked_markdown_lines": [
+          "UAP Standards lines 983-1030"
+        ],
+        "local_source_checked": true
+      }
+    },
+    {
+      "source_id": "spp204b-construction-management-services-local",
+      "article_id": "31d08115-b5ff-4b0e-b33e-522e25800da4",
+      "label": "SPP 204-B - Construction Management Services",
+      "url": null,
+      "source_type": "professional_practice_pdf",
+      "description": "Local SPP 204-B raw PDF and refined markdown checked as article-specific source.",
+      "is_verified": true,
+      "sort_order": 2,
+      "created_at": "2026-05-11T14:30:00.000+08:00",
+      "updated_at": "2026-05-11T14:30:00.000+08:00",
+      "local_source_audit": {
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204B.pdf",
+        "raw_pdf_sha256": "sha256:b6bfffcf6e3ca7a4317121b28d5fab9237c2a4642b450573232516ef9dfb697e",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204B.md",
+        "refined_markdown_sha256": "sha256:b49b5fcffe1e1ad48cb618b70d6a369400a0c7460dd3fa7ea471ee5900dc53e8",
+        "source_locator": "SPP 204B refined markdown lines 83-377",
+        "checked_markdown_lines": [
+          "SPP 204B lines 83-377"
+        ],
+        "local_source_checked": true
+      }
+    }
+  ]
 }

@@ -1,0 +1,85 @@
+{
+  "schema_version": "batch-scoped-checks-v1",
+  "batch_id": "source-audited-article-batch-037-local-first",
+  "generated_at": "2026-05-11T05:19:23.332Z",
+  "status": "PASS",
+  "blockers": [],
+  "counts": {
+    "article_count": 5,
+    "json_parse_count": 169,
+    "linked_question_count": 114,
+    "question_edit_count": 114,
+    "source_rows_written": 15,
+    "unique_raw_pdf_files_checked": 6,
+    "source_hash_checks": 30,
+    "placeholder_internal_source_gap_matches": 0,
+    "stale_compose_error_files": 0
+  },
+  "article_results": [
+    {
+      "article_id": "f8d416c0-abfb-45be-a7ef-a9f98df06507",
+      "slug": "chimneys-and-fireplaces",
+      "article_folder": ".ai/content-audit-export/articles/chimneys-and-fireplaces--f8d416c0-abfb-45be-a7ef-a9f98df06507",
+      "linked_questions": 33,
+      "question_edits": 33,
+      "candidate_hash": "sha256:30abb45a16cb75d7e620adc9248793c5049bfdf24a38c80bde7f8e901154cf14",
+      "compose_blockers": [],
+      "diff_safe_to_push": true,
+      "source_audit_status": "PASS",
+      "source_count": 1
+    },
+    {
+      "article_id": "e5cd1de8-d1e5-4173-9dd2-985eda1562a9",
+      "slug": "sanitation-and-water-supply",
+      "article_folder": ".ai/content-audit-export/articles/sanitation-and-water-supply--e5cd1de8-d1e5-4173-9dd2-985eda1562a9",
+      "linked_questions": 26,
+      "question_edits": 26,
+      "candidate_hash": "sha256:d18b0e2cef4688d0b9eb3f85182a86c52683f1d0bce0373b1c9c519135f80328",
+      "compose_blockers": [],
+      "diff_safe_to_push": true,
+      "source_audit_status": "PASS",
+      "source_count": 3
+    },
+    {
+      "article_id": "68dc5ecb-7b3f-4394-a7b7-770336b3ce98",
+      "slug": "lea-util-001-06-core-concept",
+      "article_folder": ".ai/content-audit-export/articles/lea-util-001-06-core-concept--68dc5ecb-7b3f-4394-a7b7-770336b3ce98",
+      "linked_questions": 25,
+      "question_edits": 25,
+      "candidate_hash": "sha256:382713f12646bf5385089bd7f1346793d68e34ef84627a12eb61dcb830083f4a",
+      "compose_blockers": [],
+      "diff_safe_to_push": true,
+      "source_audit_status": "PASS",
+      "source_count": 5
+    },
+    {
+      "article_id": "be3f2bf1-8d85-4c03-a047-ae1c2503d4cb",
+      "slug": "lea-util-001-07-system-components-and-functions",
+      "article_folder": ".ai/content-audit-export/articles/lea-util-001-07-system-components-and-functions--be3f2bf1-8d85-4c03-a047-ae1c2503d4cb",
+      "linked_questions": 15,
+      "question_edits": 15,
+      "candidate_hash": "sha256:db394119c65d18ce3c9226373594f4f316a821c1f8ecb00e57f672c3dbf70271",
+      "compose_blockers": [],
+      "diff_safe_to_push": true,
+      "source_audit_status": "PASS",
+      "source_count": 3
+    },
+    {
+      "article_id": "8ba7dce8-b30a-497e-af30-7cf6b3637216",
+      "slug": "lea-util-001-08-what-you-need-to-know-for-the-lea",
+      "article_folder": ".ai/content-audit-export/articles/lea-util-001-08-what-you-need-to-know-for-the-lea--8ba7dce8-b30a-497e-af30-7cf6b3637216",
+      "linked_questions": 15,
+      "question_edits": 15,
+      "candidate_hash": "sha256:02231cc01cfaa6b2a071fb1c09d6a728c7c696be07fe5be985140a4e800ce576",
+      "compose_blockers": [],
+      "diff_safe_to_push": true,
+      "source_audit_status": "PASS",
+      "source_count": 3
+    }
+  ],
+  "source_hash_mismatches": [],
+  "marker_matches": [],
+  "stale_compose_errors": [],
+  "targeted_tests": "PASS: bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts (34 pass, 0 fail, 328 expects)",
+  "post_artifact_git_diff_check": "PASS"
+}

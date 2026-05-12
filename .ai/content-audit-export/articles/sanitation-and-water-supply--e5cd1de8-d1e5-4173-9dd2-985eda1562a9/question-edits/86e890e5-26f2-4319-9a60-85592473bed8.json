@@ -1,0 +1,76 @@
+{
+  "question_id": "86e890e5-26f2-4319-9a60-85592473bed8",
+  "baseline_hash": "sha256:f67951c35f1c6852a3435c04b03688cb47f38bf7b5be587cb8eaef078d9fe405",
+  "action": "replace",
+  "reason": "source-audited-article-batch-037-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-037",
+  "approved_at": "2026-05-11T13:16:58+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-037-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR 2004 DPWH Official refined markdown lines 968-990",
+          "PD 1096 RIRR 2004 DPWH Official refined markdown lines 3789-3897"
+        ]
+      },
+      {
+        "source_id": "rnpc-revised-national-plumbing-code-local",
+        "label": "Revised National Plumbing Code of the Philippines",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Revised National Plumbing Code of the Philippines.md",
+        "checked_markdown_lines": [
+          "Revised National Plumbing Code refined markdown lines 75-110",
+          "Revised National Plumbing Code refined markdown lines 147-196",
+          "Revised National Plumbing Code refined markdown lines 224-251",
+          "Revised National Plumbing Code refined markdown lines 453-477",
+          "Revised National Plumbing Code refined markdown lines 1338-1370",
+          "Revised National Plumbing Code refined markdown lines 3390-3419",
+          "Revised National Plumbing Code refined markdown lines 3660-3674",
+          "Revised National Plumbing Code refined markdown lines 4213-4260"
+        ]
+      },
+      {
+        "source_id": "pd-856-code-on-sanitation-local",
+        "label": "PD 856 Code on Sanitation of the Philippines",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-856/phi201040.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-856/phi201040.md",
+        "checked_markdown_lines": [
+          "PD 856 refined markdown lines 195-198",
+          "PD 856 refined markdown lines 1067-1138",
+          "PD 856 refined markdown lines 1162-1267"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 901"
+  },
+  "proposed": {
+    "text": "Which item is expressly part of PD 1096 RIRR Section 901 building sanitation requirements?",
+    "options": [
+      {
+        "id": "b037-e5cd-01-a",
+        "text": "Adequate and potable water supply"
+      },
+      {
+        "id": "b037-e5cd-01-b",
+        "text": "A private fire lane in every lot"
+      },
+      {
+        "id": "b037-e5cd-01-c",
+        "text": "A required roof deck garden"
+      },
+      {
+        "id": "b037-e5cd-01-d",
+        "text": "A fixed air-conditioning system for all rooms"
+      }
+    ],
+    "correct_option_id": "b037-e5cd-01-a",
+    "rationale": "Correct answer: Adequate and potable water supply. This is directly supported by PD 1096 2004 Revised IRR, Section 901.",
+    "explanation": "The Batch 037 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 901.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 901"
+  }
+}

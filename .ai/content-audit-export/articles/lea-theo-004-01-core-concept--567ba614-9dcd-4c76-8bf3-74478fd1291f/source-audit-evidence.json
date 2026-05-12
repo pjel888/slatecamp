@@ -1,0 +1,114 @@
+{
+  "artifact_type": "source_audit_evidence",
+  "batch_id": "source-audited-article-batch-059-local-first",
+  "batch_number": 59,
+  "audit_mode": "local_first_raw_pdf_primary",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T20:48:00.000+08:00",
+  "target": {
+    "article_id": "567ba614-9dcd-4c76-8bf3-74478fd1291f",
+    "slug": "lea-theo-004-01-core-concept",
+    "title": "Philippine archipelago presents a unique climate",
+    "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-01-core-concept--567ba614-9dcd-4c76-8bf3-74478fd1291f",
+    "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-01-core-concept--567ba614-9dcd-4c76-8bf3-74478fd1291f/question-edits",
+    "linked_questions": 12,
+    "question_edits": 12,
+    "candidate_sha256": "sha256:d9efaae24ad33561899b3733e4e3474d7b45aa223dfcdd6087a1092b21199f38"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth": "vitruvius-connection/001_Raw-Source-Layer local raw PDFs",
+    "derivative_or_search_layers_used_as_primary_truth": false,
+    "refined_markdown_used_only_as_locator": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": [],
+    "checked_sources": [
+      {
+        "source_id": "toa4-tropical-architecture-local-raw-pdf--b059-567ba614-01",
+        "label": "TOA 4 Tropical Architecture - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+        "raw_pdf_sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+        "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+        "locator": "TOA 4 Tropical Architecture refined markdown lines 79-122, 281-283, 373-397, 420-467, and raw PDF pages 1, 5-11, 13, 15-18, 20-21, 23-24, 28, and 41"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "theory-of-architecture-tropical-design",
+    "contains_legal_or_code_claims": false,
+    "source_risk_tier": "medium",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 12,
+    "question_edits_created": [
+      "7c54c3ce-69a6-46cb-8a13-f95dc113dd36",
+      "e9b5f7ef-b5f9-410c-8cb7-4e060e6d632a",
+      "5410035e-4097-4bd5-b9a6-7481aa02c66f",
+      "042ad368-3b3a-4cb8-8f1c-2b9b8150ae9c",
+      "561527e6-cb32-4c97-ba08-46279eb6f758",
+      "8d5861ed-0ad4-42a8-aa74-790043cfbcaa",
+      "d186c673-1ee4-44e2-a311-03f7b7ac690c",
+      "6a745678-7ed1-4540-a787-62f9df3c70dc",
+      "d139d08e-b2ad-484b-9cac-f7336c741ddf",
+      "16723f70-226b-4f7c-80b7-13c339467cef",
+      "7aea0d5a-3e24-4633-9581-19cc401d3bb1",
+      "cd317beb-bc62-49c6-a718-0a41f478643e"
+    ],
+    "scenario_policy_status": "eligible-deferred",
+    "scenario_policy_reason": "A realistic tropical-site design scenario could be useful, but Batch 059 defers scenario enrichment so source-audited article/question correctness remains the only blocking gate."
+  },
+  "claims": [
+    {
+      "claim_id": "lea-theo-004-01-core-concept-b059-claim-01",
+      "claim_text": "Philippine archipelago presents a unique climate is limited to checked local raw PDF TOA 4 Tropical Architecture source locators recorded for this article.",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+        "quoted_pdf_excerpt": "TOA 4 Tropical Architecture refined markdown lines 79-122, 281-283, 373-397, 420-467, and raw PDF pages 1, 5-11, 13, 15-18, 20-21, 23-24, 28, and 41",
+        "source_ids": [
+          "toa4-tropical-architecture-local-raw-pdf--b059-567ba614-01"
+        ]
+      },
+      "audit_result": "PASS"
+    }
+  ],
+  "checked_markdown_lines": [
+    "TOA 4 Tropical Architecture refined markdown lines 79-122",
+    "TOA 4 Tropical Architecture refined markdown lines 281-283",
+    "TOA 4 Tropical Architecture refined markdown lines 373-397",
+    "TOA 4 Tropical Architecture refined markdown lines 420-467"
+  ],
+  "checked_pdf_pages": "raw PDF pages 1, 5-11, 13, 15-18, 20-21, 23-24, 28, 41, 71-78, 81-84, 87-90, 92-100, 104, 106-110, 121, 140, 143-148, 151, 163, 172, 180-181, and 187",
+  "unverified_or_rejected_claims": [],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "local_first_only": true,
+    "supabase_write_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json",
+    "diff_gate": "safe_true_blockers_zero",
+    "validate_gate": "valid_true_blockers_zero",
+    "ui_block_edits_gate": "valid_true_blockers_zero"
+  },
+  "sme_review": {
+    "required": false,
+    "required_before_publication": true,
+    "status": "not_started_local_first_batch",
+    "note": "Local-first source audit is ready for later human/SME review before final publishing."
+  },
+  "overall": {
+    "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": [
+      "Human/SME review remains pending before final publishing."
+    ]
+  }
+}

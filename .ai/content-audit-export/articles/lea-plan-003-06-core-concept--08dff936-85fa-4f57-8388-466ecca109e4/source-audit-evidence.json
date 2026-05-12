@@ -1,0 +1,74 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-071-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T01:00:34+08:00",
+  "target": {
+    "article_id": "08dff936-85fa-4f57-8388-466ecca109e4",
+    "slug": "lea-plan-003-06-core-concept",
+    "title": "Informal settlement",
+    "article_folder": ".ai/content-audit-export/articles/lea-plan-003-06-core-concept--08dff936-85fa-4f57-8388-466ecca109e4",
+    "normalized_sha256": "sha256:a5a4cf3c5099e6fc55503f72c744419e2618f9411aa526f5cf2978c542531aa7",
+    "candidate_sha256": "sha256:a5a4cf3c5099e6fc55503f72c744419e2618f9411aa526f5cf2978c542531aa7",
+    "candidate_path": ".ai/content-audit-export/articles/lea-plan-003-06-core-concept--08dff936-85fa-4f57-8388-466ecca109e4/candidate.md"
+  },
+  "classification": {
+    "topic_family": "housing_planning_law",
+    "local_first_batch": "071",
+    "source_sensitivity": "housing_planning_law_water_code",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdfs_checked_first": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "local_pdf_extraction_method": "python_pymupdf_local",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "ra7279-udha-b071",
+      "label": "RA 7279 - Urban Development and Housing Act",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7279/RA 7279 Urban Development and Housing Act 2009.pdf",
+      "sha256": "sha256:23efa9c0278519d79ed424d9ced016b24619ebb42a19e75a05dc9bb8bf1c4696",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7279/RA 7279 Urban Development and Housing Act 2009.md",
+      "refined_markdown_sha256": "sha256:f52859fb18fec28c403348851c3e53caca2e678cb9cec43fbca28d8d5c3a323e",
+      "locator": "RA 7279 refined markdown lines 15, 61-69, 131, 217-233, 257-303, 313, 357, and 389"
+    },
+    {
+      "source_id": "pd1067-water-code-b071",
+      "label": "PD 1067 - Water Code of the Philippines",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1067/PD 1067 - Water Code of the Philippines.pdf",
+      "sha256": "sha256:90fdccc66152977f0e628d47c9a7c6a0e5a93faa7d02c9344012679f1e0d4f07",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1067/PD 1067 - Water Code of the Philippines.md",
+      "refined_markdown_sha256": "sha256:1f64532d7d02f840e5d6c2710e6730d17a99f28fd1e1371839e7690174b942a7",
+      "locator": "PD 1067 refined markdown lines 193-195"
+    }
+  ],
+  "claims": [
+    "RA 7279 on-site development, eviction/demolition safeguards, danger-area resettlement, and CMP claims are restricted to checked local source text.",
+    "PD 1067 water-easement values replace the prior post-disaster no-build-zone item."
+  ],
+  "unverified_or_rejected_claims": [],
+  "scenario_enrichment": {
+    "policy_status": "pending",
+    "eligibility_status": "eligible-deferred",
+    "blocker_status": "nonblocking",
+    "note": "No Real World Scenario section was added; source correctness and question safety remained the blocking criteria."
+  },
+  "sme_review": {
+    "status": "local_agent_source_audited",
+    "reviewer": "codex-local-first-batch-071"
+  }
+}

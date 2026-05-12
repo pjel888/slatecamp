@@ -1,0 +1,25 @@
+{
+  "question_id": "5d9ffbc5-b098-42f9-b5fe-5e5cd7fc8706",
+  "baseline_hash": "sha256:6bfdc1ccc9c0c8aaa65e42e107fe6754431f6aadf12abc818e6cb062612b1fd1",
+  "reason": "source-audited-article-batch-013-local-first aligned linked question with repaired source-audited article content and local raw-source evidence.",
+  "approved_by": "codex-local-source-audit-batch-013",
+  "approved_at": "2026-05-10T22:10:00.000+08:00",
+  "source_audit_support": {
+    "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+    "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+    "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
+    "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
+    "parent_article_id": "fba5f537-2da9-4fb3-b6eb-696d1937a92a",
+    "parent_article_slug": "spp-doc-208-architectural-design-competition-adc",
+    "answer_key_fields_changed": false,
+    "support_status": "source_supported",
+    "source_locator": "SPP Document 208, Sections 5 through 7 Conditions, anonymity, and Professional Advisor role",
+    "checked_markdown_lines": [
+      "UAP SPP raw markdown lines 1480-1500"
+    ]
+  },
+  "proposed": {
+    "code_citation": "SPP 208",
+    "explanation": "Under SPP 208, the Professional Advisor has no vote in Jury deliberations. The PA serves as a facilitator and compliance officer — ensuring competition conditions are met, advising on procedural matters, but never influencing the Jury's design evaluation."
+  }
+}

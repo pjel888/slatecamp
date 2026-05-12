@@ -1,0 +1,372 @@
+{
+  "artifact_type": "source_audited_article_batch_ledger",
+  "batch_id": "source-audited-article-batch-060-local-first",
+  "batch_number": 60,
+  "generated_at": "2026-05-11T21:07:00.000+08:00",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "constraints": {
+    "local_first_only": true,
+    "supabase_write_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false
+  },
+  "inherited_blockers": "Batch 059 blockers=0",
+  "selected_articles": [
+    {
+      "article_id": "642d4061-fc9e-4027-9f3b-308331151792",
+      "slug": "lea-dsgn-009-01-core-concept",
+      "title": "Passive design",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-009-01-core-concept--642d4061-fc9e-4027-9f3b-308331151792",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-009-01-core-concept--642d4061-fc9e-4027-9f3b-308331151792/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "scenario_policy_status": "eligible-deferred",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-009-01-core-concept--642d4061-fc9e-4027-9f3b-308331151792/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-009-01-core-concept--642d4061-fc9e-4027-9f3b-308331151792/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-009-01-core-concept--642d4061-fc9e-4027-9f3b-308331151792/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-009-01-core-concept--642d4061-fc9e-4027-9f3b-308331151792/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-009-01-core-concept--642d4061-fc9e-4027-9f3b-308331151792/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-009-01-core-concept--642d4061-fc9e-4027-9f3b-308331151792/ui-blocks.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-009-01-core-concept--642d4061-fc9e-4027-9f3b-308331151792/ui-block-edits.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-009-01-core-concept--642d4061-fc9e-4027-9f3b-308331151792/parser-errors.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-009-01-core-concept--642d4061-fc9e-4027-9f3b-308331151792/compose-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-009-01-core-concept--642d4061-fc9e-4027-9f3b-308331151792/diff-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-009-01-core-concept--642d4061-fc9e-4027-9f3b-308331151792/diff-report.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-009-01-core-concept--642d4061-fc9e-4027-9f3b-308331151792/ui-block-edit-validation.json"
+      ],
+      "source_ids": [
+        "toa4-tropical-architecture-local-raw-pdf--b060-642d4061-01"
+      ],
+      "source_locators": [
+        "TOA 4 Tropical Architecture refined markdown lines 513-591, 622-670, 708-874, 1201-1247, and raw PDF pages 71-78, 81-84, 87-90, 92-100, 104, 106-110, 121, and 140"
+      ]
+    },
+    {
+      "article_id": "e2d9d304-9362-4472-8ca8-34106f6990dd",
+      "slug": "lea-theo-004-03-core-concept",
+      "title": "Green building in the Philippines operates at",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/question-edits",
+      "linked_questions": 11,
+      "question_edits": 11,
+      "scenario_policy_status": "eligible-deferred",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/ui-blocks.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/ui-block-edits.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/parser-errors.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/compose-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/diff-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/diff-report.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/ui-block-edit-validation.json"
+      ],
+      "source_ids": [
+        "toa4-tropical-architecture-local-raw-pdf--b060-e2d9d304-01"
+      ],
+      "source_locators": [
+        "TOA 4 Tropical Architecture refined markdown lines 1562-1573, 513-591, 622-670, 708-874, and raw PDF pages 180-181, 71-78, 81-84, 87-90, and 104"
+      ]
+    },
+    {
+      "article_id": "cb07f9cb-7506-496e-941a-4080a05c323f",
+      "slug": "lea-theo-004-07-core-concept",
+      "title": "Biophilic Design",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "scenario_policy_status": "eligible-deferred",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/ui-blocks.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/ui-block-edits.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/parser-errors.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/compose-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/diff-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/diff-report.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/ui-block-edit-validation.json"
+      ],
+      "source_ids": [
+        "toa4-tropical-architecture-local-raw-pdf--b060-cb07f9cb-01"
+      ],
+      "source_locators": [
+        "TOA 4 Tropical Architecture refined markdown lines 884-931, 1562-1573, 1648-1665, 1679, and raw PDF pages 104, 180-181, 187, and 194"
+      ]
+    },
+    {
+      "article_id": "7ad29107-a824-4a7b-8c32-ed6a719ebd39",
+      "slug": "lea-theo-004-10-core-concept",
+      "title": "Bahay Kubo: Climate-Responsive Architecture",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-10-core-concept--7ad29107-a824-4a7b-8c32-ed6a719ebd39",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-10-core-concept--7ad29107-a824-4a7b-8c32-ed6a719ebd39/question-edits",
+      "linked_questions": 11,
+      "question_edits": 11,
+      "scenario_policy_status": "eligible-deferred",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-10-core-concept--7ad29107-a824-4a7b-8c32-ed6a719ebd39/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-10-core-concept--7ad29107-a824-4a7b-8c32-ed6a719ebd39/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-10-core-concept--7ad29107-a824-4a7b-8c32-ed6a719ebd39/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-10-core-concept--7ad29107-a824-4a7b-8c32-ed6a719ebd39/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-10-core-concept--7ad29107-a824-4a7b-8c32-ed6a719ebd39/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-10-core-concept--7ad29107-a824-4a7b-8c32-ed6a719ebd39/ui-blocks.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-10-core-concept--7ad29107-a824-4a7b-8c32-ed6a719ebd39/ui-block-edits.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-10-core-concept--7ad29107-a824-4a7b-8c32-ed6a719ebd39/parser-errors.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-10-core-concept--7ad29107-a824-4a7b-8c32-ed6a719ebd39/compose-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-10-core-concept--7ad29107-a824-4a7b-8c32-ed6a719ebd39/diff-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-10-core-concept--7ad29107-a824-4a7b-8c32-ed6a719ebd39/diff-report.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-10-core-concept--7ad29107-a824-4a7b-8c32-ed6a719ebd39/ui-block-edit-validation.json"
+      ],
+      "source_ids": [
+        "toa4-tropical-architecture-local-raw-pdf--b060-7ad29107-01"
+      ],
+      "source_locators": [
+        "TOA 4 Tropical Architecture refined markdown lines 1591-1604, 1621-1622, 1648-1665, 1679, 1685-1703, and raw PDF pages 187 and 194"
+      ]
+    },
+    {
+      "article_id": "2e117d95-eb4c-4d96-8e3f-b31f18d26a64",
+      "slug": "lea-theo-004-12-core-concept",
+      "title": "Thermal Comfort",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-12-core-concept--2e117d95-eb4c-4d96-8e3f-b31f18d26a64",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-12-core-concept--2e117d95-eb4c-4d96-8e3f-b31f18d26a64/question-edits",
+      "linked_questions": 11,
+      "question_edits": 11,
+      "scenario_policy_status": "eligible-deferred",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-12-core-concept--2e117d95-eb4c-4d96-8e3f-b31f18d26a64/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-12-core-concept--2e117d95-eb4c-4d96-8e3f-b31f18d26a64/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-12-core-concept--2e117d95-eb4c-4d96-8e3f-b31f18d26a64/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-12-core-concept--2e117d95-eb4c-4d96-8e3f-b31f18d26a64/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-12-core-concept--2e117d95-eb4c-4d96-8e3f-b31f18d26a64/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-12-core-concept--2e117d95-eb4c-4d96-8e3f-b31f18d26a64/ui-blocks.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-12-core-concept--2e117d95-eb4c-4d96-8e3f-b31f18d26a64/ui-block-edits.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-12-core-concept--2e117d95-eb4c-4d96-8e3f-b31f18d26a64/parser-errors.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-12-core-concept--2e117d95-eb4c-4d96-8e3f-b31f18d26a64/compose-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-12-core-concept--2e117d95-eb4c-4d96-8e3f-b31f18d26a64/diff-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-12-core-concept--2e117d95-eb4c-4d96-8e3f-b31f18d26a64/diff-report.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-12-core-concept--2e117d95-eb4c-4d96-8e3f-b31f18d26a64/ui-block-edit-validation.json"
+      ],
+      "source_ids": [
+        "toa4-tropical-architecture-local-raw-pdf--b060-2e117d95-01"
+      ],
+      "source_locators": [
+        "TOA 4 Tropical Architecture refined markdown lines 513-591, 622-660, 840-874, 1386-1420, and raw PDF pages 72, 75-78, 82, 84, 104, 106-110, 163, and 172"
+      ]
+    }
+  ],
+  "improved_paths": [
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-009-01-core-concept--642d4061-fc9e-4027-9f3b-308331151792/normalized.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-009-01-core-concept--642d4061-fc9e-4027-9f3b-308331151792/candidate.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-009-01-core-concept--642d4061-fc9e-4027-9f3b-308331151792/sources.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-009-01-core-concept--642d4061-fc9e-4027-9f3b-308331151792/source-audit-evidence.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-009-01-core-concept--642d4061-fc9e-4027-9f3b-308331151792/article-metadata.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-009-01-core-concept--642d4061-fc9e-4027-9f3b-308331151792/ui-blocks.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-009-01-core-concept--642d4061-fc9e-4027-9f3b-308331151792/ui-block-edits.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-009-01-core-concept--642d4061-fc9e-4027-9f3b-308331151792/parser-errors.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-009-01-core-concept--642d4061-fc9e-4027-9f3b-308331151792/compose-report.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-009-01-core-concept--642d4061-fc9e-4027-9f3b-308331151792/diff-report.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-009-01-core-concept--642d4061-fc9e-4027-9f3b-308331151792/diff-report.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-009-01-core-concept--642d4061-fc9e-4027-9f3b-308331151792/ui-block-edit-validation.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/normalized.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/candidate.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/sources.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/source-audit-evidence.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/article-metadata.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/ui-blocks.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/ui-block-edits.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/parser-errors.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/compose-report.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/diff-report.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/diff-report.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/ui-block-edit-validation.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/normalized.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/candidate.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/sources.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/source-audit-evidence.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/article-metadata.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/ui-blocks.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/ui-block-edits.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/parser-errors.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/compose-report.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/diff-report.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/diff-report.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/ui-block-edit-validation.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-10-core-concept--7ad29107-a824-4a7b-8c32-ed6a719ebd39/normalized.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-10-core-concept--7ad29107-a824-4a7b-8c32-ed6a719ebd39/candidate.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-10-core-concept--7ad29107-a824-4a7b-8c32-ed6a719ebd39/sources.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-10-core-concept--7ad29107-a824-4a7b-8c32-ed6a719ebd39/source-audit-evidence.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-10-core-concept--7ad29107-a824-4a7b-8c32-ed6a719ebd39/article-metadata.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-10-core-concept--7ad29107-a824-4a7b-8c32-ed6a719ebd39/ui-blocks.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-10-core-concept--7ad29107-a824-4a7b-8c32-ed6a719ebd39/ui-block-edits.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-10-core-concept--7ad29107-a824-4a7b-8c32-ed6a719ebd39/parser-errors.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-10-core-concept--7ad29107-a824-4a7b-8c32-ed6a719ebd39/compose-report.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-10-core-concept--7ad29107-a824-4a7b-8c32-ed6a719ebd39/diff-report.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-10-core-concept--7ad29107-a824-4a7b-8c32-ed6a719ebd39/diff-report.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-10-core-concept--7ad29107-a824-4a7b-8c32-ed6a719ebd39/ui-block-edit-validation.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-12-core-concept--2e117d95-eb4c-4d96-8e3f-b31f18d26a64/normalized.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-12-core-concept--2e117d95-eb4c-4d96-8e3f-b31f18d26a64/candidate.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-12-core-concept--2e117d95-eb4c-4d96-8e3f-b31f18d26a64/sources.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-12-core-concept--2e117d95-eb4c-4d96-8e3f-b31f18d26a64/source-audit-evidence.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-12-core-concept--2e117d95-eb4c-4d96-8e3f-b31f18d26a64/article-metadata.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-12-core-concept--2e117d95-eb4c-4d96-8e3f-b31f18d26a64/ui-blocks.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-12-core-concept--2e117d95-eb4c-4d96-8e3f-b31f18d26a64/ui-block-edits.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-12-core-concept--2e117d95-eb4c-4d96-8e3f-b31f18d26a64/parser-errors.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-12-core-concept--2e117d95-eb4c-4d96-8e3f-b31f18d26a64/compose-report.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-12-core-concept--2e117d95-eb4c-4d96-8e3f-b31f18d26a64/diff-report.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-12-core-concept--2e117d95-eb4c-4d96-8e3f-b31f18d26a64/diff-report.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-12-core-concept--2e117d95-eb4c-4d96-8e3f-b31f18d26a64/ui-block-edit-validation.json"
+  ],
+  "question_edits_paths": [
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-009-01-core-concept--642d4061-fc9e-4027-9f3b-308331151792/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-10-core-concept--7ad29107-a824-4a7b-8c32-ed6a719ebd39/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-12-core-concept--2e117d95-eb4c-4d96-8e3f-b31f18d26a64/question-edits"
+  ],
+  "counts": {
+    "selected_articles": 5,
+    "linked_questions": 53,
+    "question_edits": 53,
+    "source_rows": 5,
+    "unique_raw_pdfs": 1,
+    "json_parse": 108,
+    "marker_scan_files": 73,
+    "marker_matches": 0,
+    "source_hash_checks": 10,
+    "stale_compose_error_files": 0,
+    "targeted_tests": 34,
+    "targeted_expect_calls": 328,
+    "unresolved_blockers": 0
+  },
+  "source_evidence_summary": [
+    "TOA 4 Tropical Architecture for tropical green design, vegetation and microclimate, Bahay Kubo climate response, thermal comfort, and passive-design sequencing."
+  ],
+  "source_hash_checks": [
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+      "expected": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+      "actual": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+      "status": "PASS"
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+      "expected": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+      "actual": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+      "status": "PASS"
+    },
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+      "expected": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+      "actual": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+      "status": "PASS"
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+      "expected": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+      "actual": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+      "status": "PASS"
+    },
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+      "expected": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+      "actual": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+      "status": "PASS"
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+      "expected": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+      "actual": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+      "status": "PASS"
+    },
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+      "expected": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+      "actual": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+      "status": "PASS"
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+      "expected": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+      "actual": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+      "status": "PASS"
+    },
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+      "expected": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+      "actual": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+      "status": "PASS"
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+      "expected": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+      "actual": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+      "status": "PASS"
+    }
+  ],
+  "question_edit_count_checks": [
+    {
+      "article_id": "642d4061-fc9e-4027-9f3b-308331151792",
+      "slug": "lea-dsgn-009-01-core-concept",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "status": "PASS"
+    },
+    {
+      "article_id": "e2d9d304-9362-4472-8ca8-34106f6990dd",
+      "slug": "lea-theo-004-03-core-concept",
+      "linked_questions": 11,
+      "question_edits": 11,
+      "status": "PASS"
+    },
+    {
+      "article_id": "cb07f9cb-7506-496e-941a-4080a05c323f",
+      "slug": "lea-theo-004-07-core-concept",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "status": "PASS"
+    },
+    {
+      "article_id": "7ad29107-a824-4a7b-8c32-ed6a719ebd39",
+      "slug": "lea-theo-004-10-core-concept",
+      "linked_questions": 11,
+      "question_edits": 11,
+      "status": "PASS"
+    },
+    {
+      "article_id": "2e117d95-eb4c-4d96-8e3f-b31f18d26a64",
+      "slug": "lea-theo-004-12-core-concept",
+      "linked_questions": 11,
+      "question_edits": 11,
+      "status": "PASS"
+    }
+  ],
+  "scenario_policy": "eligible-deferred for all selected clusters; scenario enrichment did not block source-audited article/question correctness.",
+  "quality_protocol_results": {
+    "compose": "PASS 5/5 blockers=0",
+    "diff": "PASS 5/5 safe=true blockers=0",
+    "validate": "PASS 5/5 blockers=0 expected component-usage warnings only",
+    "ui-block-edits": "PASS 5/5 blockers=0 warnings=0",
+    "scoped_checks": "PASS",
+    "targeted_tests": "PASS 34 tests 328 expect calls",
+    "scoped_git_diff_check": "PASS"
+  },
+  "deferred_selection_note": "NSCP structural/seismic clusters remain deferred because the local NSCP 2015 file is not readable as a PDF. RA 9442 remains deferred because no exact RA 9442 raw-law PDF was found locally. Ching-specific clusters remain deferred because no exact local Francis D.K. Ching raw PDF was confirmed.",
+  "baseline_note": "Local export metadata, sync-state original hashes, and UI-block hashes for the five selected bundles were refreshed to current original, normalized, candidate, source, and UI-block hashes before final validation. Completion evidence is selected article-id scoped.",
+  "unresolved_blockers": [],
+  "safe_for_final_publishing_review": true,
+  "next_batch_readiness": "READY_FOR_BATCH_061_SELECTION",
+  "artifacts": {
+    "ledger": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-060-local-first-ledger.json",
+    "report": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-060-local-first-report.md",
+    "scoped_checks": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-060-local-first-scoped-checks.json"
+  }
+}

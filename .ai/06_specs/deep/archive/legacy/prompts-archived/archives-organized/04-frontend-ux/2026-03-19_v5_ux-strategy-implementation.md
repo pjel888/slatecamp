@@ -215,7 +215,7 @@ import { useEffect, useState } from 'react'
 
 export function AnimatedScore({ target, color }: { target: number; color: string }) {
   const [display, setDisplay] = useState(0)
-  
+
   useEffect(() => {
     const duration = 700
     const start = performance.now()
@@ -231,7 +231,7 @@ export function AnimatedScore({ target, color }: { target: number; color: string
   }, [target])
 
   return (
-    <span 
+    <span
       className="font-[family-name:var(--font-syne)] font-extrabold text-[80px] leading-none tracking-tight"
       style={{ color }}
     >
@@ -286,7 +286,7 @@ The quiz engine is **Built** per the audit. The assessment is a specialized sess
 ```typescript
 // 1. Compute initial readiness score from assessment answers
 // 2. Write to user_global_stats.assessment_completed_at
-// 3. Write to user_global_stats.assessment_score  
+// 3. Write to user_global_stats.assessment_score
 // 4. Write to user_global_stats.global_readiness_score
 // 5. Fire: trackServerEvent(userId, 'assessment_completed', { score })
 // 6. Redirect to /dashboard/score-reveal
@@ -452,7 +452,7 @@ No confetti. No celebration for routine sessions. Just factual progress. The hea
 
 ```typescript
 // Determine dashboard state
-const dashboardState = 
+const dashboardState =
   !assessmentCompletedAt ? 'needs_assessment' :
   !scoreRevealShownAt && tier === 'free' ? 'needs_score_reveal' :
   !trailEnrollment ? 'needs_trail' :

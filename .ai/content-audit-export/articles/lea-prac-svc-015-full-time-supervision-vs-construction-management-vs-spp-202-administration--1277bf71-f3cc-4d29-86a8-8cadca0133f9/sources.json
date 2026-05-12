@@ -1,68 +1,140 @@
 {
   "article_id": "1277bf71-f3cc-4d29-86a8-8cadca0133f9",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:c83ace6d973c73574d00adbc560b081d8ac93fdbc1deb34f081e125378908ef7",
+  "sources_hash": "sha256:f98cd48050a7bc21e1030215b499c705b95a94fde60360f38b9044507173a55c",
   "source_count": 5,
   "sources": [
     {
-      "source_id": "0c9fef2d-7821-472b-9de8-7609729a0987",
+      "source_id": "uap-standards-selection-compensation-supervision-cm-local",
       "article_id": "1277bf71-f3cc-4d29-86a8-8cadca0133f9",
-      "label": "Supervisors exercise authority limited to technical compliance verification",
+      "label": "UAP Standards of Professional Practice - selection, compensation, supervision, and construction management services",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:01.68074+00:00",
-      "updated_at": "2026-03-24T04:34:01.68074+00:00"
-    },
-    {
-      "source_id": "d2596f0c-9d9c-4c78-8360-538a9df44b34",
-      "article_id": "1277bf71-f3cc-4d29-86a8-8cadca0133f9",
-      "label": "Construction managers hold broader authority over scheduling, cost management, and vendor coordination within owner-defined limits",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "professional_practice_pdf",
+      "description": "Local raw PDF and refined markdown checked for service-selection methods, compensation methods, full-time supervision, SPP 202 phases, and construction management distinctions.",
+      "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:01.68074+00:00",
-      "updated_at": "2026-03-24T04:34:01.68074+00:00"
+      "created_at": "2026-05-11T11:45:00.000+08:00",
+      "updated_at": "2026-05-11T11:45:00.000+08:00",
+      "local_source_audit": {
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "source_locator": "UAP Standards refined markdown lines 79-100, 217-265, 416-458, 915-964, 1129-1168, and 1174-1216",
+        "checked_markdown_lines": [
+          "UAP Standards lines 79-100",
+          "UAP Standards lines 217-265",
+          "UAP Standards lines 416-458",
+          "UAP Standards lines 915-964",
+          "UAP Standards lines 1129-1168",
+          "UAP Standards lines 1174-1216"
+        ],
+        "local_source_checked": true
+      }
     },
     {
-      "source_id": "8b271348-b907-489f-b5ca-56709b7ef043",
+      "source_id": "spp-202-regular-design-services-local",
       "article_id": "1277bf71-f3cc-4d29-86a8-8cadca0133f9",
-      "label": "Design administrators coordinate all project phases with evolving authority appropriate to each phase",
+      "label": "SPP 202 - Regular Design Services phases",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "professional_practice_pdf",
+      "description": "Local raw PDF and refined markdown checked for regular design services phases.",
+      "is_verified": true,
       "sort_order": 2,
-      "created_at": "2026-03-24T04:34:01.68074+00:00",
-      "updated_at": "2026-03-24T04:34:01.68074+00:00"
+      "created_at": "2026-05-11T11:45:00.000+08:00",
+      "updated_at": "2026-05-11T11:45:00.000+08:00",
+      "local_source_audit": {
+        "authority": "United Architects of the Philippines / Standards of Professional Practice",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+        "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+        "refined_markdown_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+        "source_locator": "SPP 202 refined markdown lines 175-183, corroborated by UAP Standards lines 1129-1168",
+        "checked_markdown_lines": [
+          "SPP 202 lines 175-183",
+          "UAP Standards lines 1129-1168"
+        ],
+        "local_source_checked": true
+      }
     },
     {
-      "source_id": "b9f4f87c-2504-4576-a970-a2ee45b891f6",
+      "source_id": "spp-204a-full-time-supervision-local",
       "article_id": "1277bf71-f3cc-4d29-86a8-8cadca0133f9",
-      "label": "Authority clarification prevents role confusion and establishes clear responsibility boundaries",
+      "label": "SPP 204-A - Full-Time Supervision Services",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "professional_practice_pdf",
+      "description": "Local raw PDF and refined markdown checked for full-time supervision scope items.",
+      "is_verified": true,
       "sort_order": 3,
-      "created_at": "2026-03-24T04:34:01.68074+00:00",
-      "updated_at": "2026-03-24T04:34:01.68074+00:00"
+      "created_at": "2026-05-11T11:45:00.000+08:00",
+      "updated_at": "2026-05-11T11:45:00.000+08:00",
+      "local_source_audit": {
+        "authority": "United Architects of the Philippines / Standards of Professional Practice",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204A.pdf",
+        "raw_pdf_sha256": "sha256:ec08811ae8611f077fda9f0d1106cc7fab6a1e6210fe6d617637adaa6de083b8",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md",
+        "refined_markdown_sha256": "sha256:9044ca5193245c730509d0022e13d597b62ad9ea969e5e870bd2954faeb89500",
+        "source_locator": "SPP 204-A refined markdown lines 201-207, corroborated by UAP Standards lines 915-964 and 1129-1168",
+        "checked_markdown_lines": [
+          "SPP 204-A lines 201-207",
+          "UAP Standards lines 915-964",
+          "UAP Standards lines 1129-1168"
+        ],
+        "local_source_checked": true
+      }
     },
     {
-      "source_id": "97478f3e-73cb-4d4d-945f-8a2a07faaed3",
+      "source_id": "spp-204b-construction-management-local",
       "article_id": "1277bf71-f3cc-4d29-86a8-8cadca0133f9",
-      "label": "Contracts must explicitly define authority limitations to protect all parties",
+      "label": "SPP 204-B - Construction Management Services",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "professional_practice_pdf",
+      "description": "Local raw PDF and refined markdown checked for construction management service classification.",
+      "is_verified": true,
       "sort_order": 4,
-      "created_at": "2026-03-24T04:34:01.68074+00:00",
-      "updated_at": "2026-03-24T04:34:01.68074+00:00"
+      "created_at": "2026-05-11T11:45:00.000+08:00",
+      "updated_at": "2026-05-11T11:45:00.000+08:00",
+      "local_source_audit": {
+        "authority": "United Architects of the Philippines / Standards of Professional Practice",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204B.pdf",
+        "raw_pdf_sha256": "sha256:b6bfffcf6e3ca7a4317121b28d5fab9237c2a4642b450573232516ef9dfb697e",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204B.md",
+        "refined_markdown_sha256": "sha256:b49b5fcffe1e1ad48cb618b70d6a369400a0c7460dd3fa7ea471ee5900dc53e8",
+        "source_locator": "SPP 204-B refined markdown line 7, corroborated by UAP Standards lines 1174-1216",
+        "checked_markdown_lines": [
+          "SPP 204-B line 7",
+          "UAP Standards lines 1174-1216"
+        ],
+        "local_source_checked": true
+      }
+    },
+    {
+      "source_id": "uap-document-301-general-conditions-local",
+      "article_id": "1277bf71-f3cc-4d29-86a8-8cadca0133f9",
+      "label": "UAP Document 301 - General Conditions, architect authority, claims, payments, and project representatives",
+      "url": null,
+      "source_type": "professional_practice_contract_pdf",
+      "description": "Local raw PDF and refined markdown checked for construction-stage architect authority, impartiality, payment action, project representatives, time limits, and change-order-linked claims.",
+      "is_verified": true,
+      "sort_order": 5,
+      "created_at": "2026-05-11T11:45:00.000+08:00",
+      "updated_at": "2026-05-11T11:45:00.000+08:00",
+      "local_source_audit": {
+        "authority": "United Architects of the Philippines / PRC Board approved general conditions source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "refined_markdown_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+        "source_locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080",
+        "checked_markdown_lines": [
+          "UAP Document 301 lines 41-71",
+          "UAP Document 301 lines 482-520",
+          "UAP Document 301 lines 1019-1051",
+          "UAP Document 301 lines 1062-1080"
+        ],
+        "local_source_checked": true
+      }
     }
   ]
 }

@@ -1,0 +1,81 @@
+{
+  "question_id": "52c2e493-4a6b-44cf-8092-48c13c96fb97",
+  "baseline_hash": "sha256:7284a2e3b31d69cf21180016c276629a35cd68ad5ac46747638c3cf8ae325a71",
+  "action": "replace",
+  "reason": "source-audited-article-batch-072-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes stale numeric, legal, or unsupported article claims where present.",
+  "approved_by": "codex-local-first-batch-072",
+  "approved_at": "2026-05-12T01:24:18+08:00",
+  "source_audit_support": {
+    "parent_article_id": "bf583e70-ccc8-4e6e-8b6a-1794533a4d7f",
+    "parent_article_slug": "lea-dsgn-011-02-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "PD 1096 refined markdown lines 548-570, 2085-2089, and 2352-2412; raw PDF pages 19, 24, 33, 88, 93, 108, 192, 204, and 352 checked by local PyMuPDF extraction",
+    "checked_markdown_lines": [
+      "PD 1096 lines 548-570",
+      "PD 1096 lines 2085-2089",
+      "PD 1096 lines 2352-2412"
+    ],
+    "checked_raw_pdf_pages": [
+      "PD 1096 raw PDF pages 19, 24, 33, 88, 93, 108, 192, 204, and 352"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "pd1096-rirr-2004-b072",
+        "label": "PD 1096 2004 Revised IRR - National Building Code",
+        "source_type": "primary_law_irr_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 refined markdown lines 548-570, 2085-2089, and 2352-2412; raw PDF pages 19, 24, 33, 88, 93, 108, 192, 204, and 352 checked by local PyMuPDF extraction",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, and citation rewritten to the Batch 072 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "What is the safest takeaway for elevation questions?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use the checked PD 1096 drawing-content checklist and avoid unsupported floor-to-floor shortcuts."
+      },
+      {
+        "id": "b",
+        "text": "Memorize a single height for every project."
+      },
+      {
+        "id": "c",
+        "text": "Treat elevations as optional artwork."
+      },
+      {
+        "id": "d",
+        "text": "Ignore grade and adjoining structures."
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Correct. This option follows the checked local raw-source evidence.",
+      "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+      "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+      "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+      "correct": "The article anchors elevations, sections, and RCPs to checked drawing-content requirements.",
+      "takeaway": "Use the checked local source condition before applying the rule."
+    },
+    "explanation": "The article anchors elevations, sections, and RCPs to checked drawing-content requirements.",
+    "code_citation": "PD 1096 refined markdown lines 548-570, 2085-2089, and 2352-2412; raw PDF pages 19, 24, 33, 88, 93, 108, 192, 204, and 352 checked by local PyMuPDF extraction",
+    "bloom_level": "apply",
+    "application_context": "professional_practice",
+    "practice_context": [
+      "source-audited-local-first-batch-072"
+    ],
+    "difficulty": 0.55,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false
+  }
+}

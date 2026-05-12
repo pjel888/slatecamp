@@ -1,0 +1,57 @@
+{
+  "question_id": "412a83a5-c669-4bdf-9591-204d5152817c",
+  "baseline_hash": "sha256:afe5d9e28974b5556ceed52724c55fbc2a659069766f47cc8cc82e39dac150e2",
+  "action": "replace",
+  "reason": "source-audited-article-batch-036-local-first: source-safe replacement grounded in local raw PDF/source family evidence; removes unsupported, stale, or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-036",
+  "approved_at": "2026-05-11T12:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-036-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-national-building-code-local",
+        "label": "PD 1096 National Building Code - Plastics Provisions",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 - National Building Code.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 - National Building Code.md",
+        "checked_markdown_lines": [
+          "PD 1096 National Building Code refined markdown lines 1909-1998"
+        ]
+      },
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR 2004 DPWH Official refined markdown lines 4377-4442"
+        ]
+      }
+    ],
+    "citation": "PD 1096, Section 1601"
+  },
+  "proposed": {
+    "text": "Which three criteria must approved plastics satisfy under PD 1096 Section 1601?",
+    "options": [
+      {
+        "id": "b036-c712-01-a",
+        "text": "Flame-spread rating of 225 or less, smoke density not greater than untreated wood, and combustion products no more toxic than untreated wood"
+      },
+      {
+        "id": "b036-c712-01-b",
+        "text": "Flame-spread rating of 75 or less, ASTM label, and imported certification"
+      },
+      {
+        "id": "b036-c712-01-c",
+        "text": "Compressive strength, color stability, and UV warranty"
+      },
+      {
+        "id": "b036-c712-01-d",
+        "text": "Manufacturer reputation, recycled content, and warranty period"
+      }
+    ],
+    "correct_option_id": "b036-c712-01-a",
+    "rationale": "Correct answer: Flame-spread rating of 225 or less, smoke density not greater than untreated wood, and combustion products no more toxic than untreated wood. This is directly supported by PD 1096, Section 1601.",
+    "explanation": "The source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096, Section 1601.",
+    "code_citation": "PD 1096, Section 1601"
+  }
+}

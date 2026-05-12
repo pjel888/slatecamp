@@ -1,7 +1,7 @@
 # Duplicate Question Decision Note
 
-**Purpose:** Explain the duplicate question situation and present options for human decision.  
-**Scope:** 695 duplicate questions across 72 "Other Named" articles (~22% question bank inflation).  
+**Purpose:** Explain the duplicate question situation and present options for human decision.
+**Scope:** 695 duplicate questions across 72 "Other Named" articles (~22% question bank inflation).
 
 ---
 
@@ -78,7 +78,7 @@ No questions were deleted or modified. No `linked-questions.json` was changed.
 
 **Effect:** Cleanest output — no duplicate questions in the push payload at all. No trace of duplicates in the export.
 
-**Risk:** 
+**Risk:**
 - Irreversible without a fresh export
 - Risk of removing useful variations (confirmed all are exact copies, but human verification is recommended)
 - Some `duplicate_of` references would break if the kept question was also removed

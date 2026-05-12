@@ -1,0 +1,55 @@
+{
+  "question_id": "b09c5ce2-8a96-4dc2-9e56-513eb9ea6db5",
+  "baseline_hash": "sha256:f65996bffc97c68da4428e3bb3832aa8b1cb2e4f4fd5a89b69129f9a736bd766",
+  "action": "replace",
+  "reason": "source-audited-article-batch-080-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-010-02-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-080",
+  "approved_at": "2026-05-12T07:05:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "d0466bdc-3061-46b5-9400-2c41d7eb7c97",
+    "parent_article_slug": "lea-matl-010-02-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Fajardo refined markdown lines 2521-2678, 3166-3298, and 4202-4378; raw PDF pages 22-23 and 27-35 checked by local PyMuPDF extraction",
+    "checked_markdown_lines": [
+      "Fajardo refined markdown lines 2521-2678, 3166-3298, and 4202-4378; raw PDF pages 22-23 and 27-35 checked by local PyMuPDF extraction"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "fajardo-cost-estimates-b080",
+        "label": "Architectural Cost Estimates By Max Fajardo",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+        "sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+        "raw_markdown_sha256": "sha256:223efdc2dd963208910027eba08fe87b4919de1a04b76cac095bbd76a7a9a962",
+        "locator": "Fajardo refined markdown lines 2521-2678, 3166-3298, and 4202-4378; raw PDF pages 22-23 and 27-35 checked by local PyMuPDF extraction"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 080 local raw-source-audited chb_quantity_estimating scope."
+  },
+  "proposed": {
+    "text": "Why should posts or openings be subtracted before applying 12.5 blocks per sq m?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They are not net CHB wall area"
+      },
+      {
+        "id": "b",
+        "text": "They increase every block layer"
+      },
+      {
+        "id": "c",
+        "text": "They change board foot volume"
+      },
+      {
+        "id": "d",
+        "text": "They make cement unnecessary"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Only net CHB wall area should be multiplied by the block factor.",
+    "explanation": "Only net CHB wall area should be multiplied by the block factor.",
+    "code_citation": "Architectural Cost Estimates By Max Fajardo"
+  }
+}

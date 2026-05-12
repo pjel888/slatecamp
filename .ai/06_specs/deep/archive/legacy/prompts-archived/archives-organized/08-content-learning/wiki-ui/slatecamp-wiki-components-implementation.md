@@ -205,7 +205,7 @@ grep -rn "MDXRemote\|compileMDX\|serialize\|mdx\|dangerouslySetInnerHTML\|conten
 # 4. Find the MDX components map (where components are registered)
 grep -rn "components.*=" src/ --include="*.tsx" | grep -i "wiki\|mdx\|callout\|quiz" | head -15
 
-# 5. Find existing component directory structure  
+# 5. Find existing component directory structure
 find src/components -type d | sort
 ls -la src/components/wiki/ 2>/dev/null || ls -la src/components/Wiki/ 2>/dev/null
 

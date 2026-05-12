@@ -1,0 +1,71 @@
+{
+  "question_id": "2aa2c207-09d3-4c4e-8600-82d2222b80e6",
+  "baseline_hash": "sha256:49a0600094f88ce8b2dea3c9d0e1e19cda6838b3165de12e84fb2146f4cf1368",
+  "action": "replace",
+  "reason": "source-audited-article-batch-031-local-first aligned linked question with audited local source language for lea-prac-ctr-022-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-031",
+  "approved_at": "2026-05-11T08:56:01+08:00",
+  "source_audit_support": {
+    "parent_article_id": "6d669d7f-d03f-433f-af13-9443b6144033",
+    "parent_article_slug": "lea-prac-ctr-022-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "CIAP Document 102 lines 538-554 and 626; RA 386 lines 40-48",
+    "checked_sources": [
+      {
+        "source_id": "ciap-document-102-private-construction-contract-local",
+        "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+        "refined_markdown_sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
+        "source_locator": "CIAP Document 102 refined markdown lines 538-554, 591, 626, 667, 681, 874",
+        "checked_markdown_lines": [
+          "CIAP Document 102 refined markdown lines 538-554, 591, 626, 667, 681, 874"
+        ]
+      },
+      {
+        "source_id": "ra-386-civil-code-local",
+        "label": "RA 386 - Civil Code of the Philippines",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code.pdf",
+        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code.pdf",
+        "raw_pdf_sha256": "sha256:c3551f7d92abed808a64071fdf08832b1f27dc87375775416f52cbc25b4bcba5",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-386/RA-386 Civil Code.md",
+        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-386/RA-386 Civil Code.md",
+        "refined_markdown_sha256": "sha256:8215f8acdd208b9b2f4a981bdf6c7227acbfd26186dac703133b187fc6d96adf",
+        "source_locator": "RA 386 Civil Code refined markdown lines 40-48",
+        "checked_markdown_lines": [
+          "RA 386 Civil Code refined markdown lines 40-48"
+        ]
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer key, rationale, explanation, and code citation rewritten to the audited local article scope."
+  },
+  "proposed": {
+    "text": "What happens to delay liquidated damages after substantial completion under CIAP Document 102?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They do not accrue after substantial completion"
+      },
+      {
+        "id": "b",
+        "text": "They double automatically"
+      },
+      {
+        "id": "c",
+        "text": "They continue until all retention is released"
+      },
+      {
+        "id": "d",
+        "text": "They transfer to the architect"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The source states no liquidated damages for delay beyond completion time after substantial completion.",
+    "explanation": "The source states no liquidated damages for delay beyond completion time after substantial completion.",
+    "code_citation": "CIAP Document 102 lines 538-554 and 626; RA 386 lines 40-48"
+  }
+}

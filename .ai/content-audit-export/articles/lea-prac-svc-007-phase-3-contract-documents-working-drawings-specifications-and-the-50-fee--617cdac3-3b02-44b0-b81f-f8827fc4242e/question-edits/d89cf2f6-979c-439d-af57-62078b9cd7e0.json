@@ -1,0 +1,87 @@
+{
+  "question_id": "d89cf2f6-979c-439d-af57-62078b9cd7e0",
+  "baseline_hash": "sha256:1465a59ad7291272578d5ff66324971f9930a34f1c2b6f052dc561bee3dee447",
+  "action": "replace",
+  "reason": "source-audited-article-batch-016-local-first rewrote this linked question to align with the local SPP 202 source audit for lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee.",
+  "approved_by": "codex-local-source-audit-batch-016",
+  "approved_at": "2026-05-10T23:58:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "617cdac3-3b02-44b0-b81f-f8827fc4242e",
+    "parent_article_slug": "lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "SPP Document 202 scope, phase duties, and UAP payment milestones where payment is tested",
+    "checked_markdown_lines": [
+      "UAP Document Standards raw markdown lines 283-297",
+      "UAP Document Standards raw markdown lines 301-344",
+      "UAP Document Standards raw markdown lines 347-382",
+      "UAP Document 401-402 raw markdown lines 88-100",
+      "UAP Document 401-402 raw markdown lines 138-145"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "source_id": "uap-spp-202-standards-of-professional-practice",
+        "locator": "SPP Document 202, Regular Design Services scope and phase duties"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+        "source_id": "uap-spp-202-standards-of-professional-practice",
+        "locator": "Converted local text for SPP Document 202 line anchoring"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+        "sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+        "source_id": "uap-doc-401-402-owner-architect-agreement",
+        "locator": "Architect fee and manner of payment milestones"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document 401-402.md",
+        "sha256": "sha256:0b9cfd569b9f964c95dec13761812c8606b2c0fe38b9043df13efad361286a53",
+        "source_id": "uap-doc-401-402-owner-architect-agreement",
+        "locator": "Converted local text for payment milestone line anchoring"
+      }
+    ],
+    "local_source_safe_action": "replaced prior wording with a source-aligned question, answer key, citation, and explanation"
+  },
+  "proposed": {
+    "text": "Which phase assists the owner in filing required documents with government authorities having jurisdiction over the design?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Contract Document Phase"
+      },
+      {
+        "id": "b",
+        "text": "Project Definition Phase"
+      },
+      {
+        "id": "c",
+        "text": "Schematic Design Phase only"
+      },
+      {
+        "id": "d",
+        "text": "Post-occupancy phase"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "The filing-assistance duty is listed under the Contract Document Phase.",
+    "explanation": "The filing-assistance duty is listed under the Contract Document Phase.",
+    "code_citation": "SPP Document 202; UAP Document 401-402 where payment timing is tested",
+    "bloom_level": "understand",
+    "application_context": "professional_practice",
+    "practice_context": [
+      "SPP 202",
+      "regular design services"
+    ],
+    "difficulty": 0.72,
+    "is_assessment": false,
+    "model_id": "BATCH-016-lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee-005"
+  }
+}

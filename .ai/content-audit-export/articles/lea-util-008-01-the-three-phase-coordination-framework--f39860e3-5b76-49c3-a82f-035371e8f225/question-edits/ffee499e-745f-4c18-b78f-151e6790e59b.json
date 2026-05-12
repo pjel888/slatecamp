@@ -1,0 +1,93 @@
+{
+  "question_id": "ffee499e-745f-4c18-b78f-151e6790e59b",
+  "baseline_hash": "sha256:8e80a7f9272d24dc1a3d7e29dd53a27acca07c5f14ce961d82a47a363ccbd988",
+  "action": "replace",
+  "reason": "source-audited-article-batch-049-local-first: local raw-source-backed replacement constrained to checked Batch 049 source families.",
+  "approved_by": "codex-local-first-batch-049",
+  "approved_at": "2026-05-11T20:35:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "f39860e3-5b76-49c3-a82f-035371e8f225",
+    "parent_article_slug": "lea-util-008-01-the-three-phase-coordination-framework",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 9266 IRR refined markdown lines 31-84 and 130-134; 1979 UAP Documents refined markdown lines 371-379, 722-756, 811-813, 1055-1161, 1427-1449, and 1560-1605; Mechanical and Electrical Systems refined markdown lines 365-474 and 548-592; Mechanical and Electrical Systems 2 refined markdown lines 153-183",
+    "checked_markdown_lines": [
+      "RA 9266 IRR refined markdown lines 31-84",
+      "RA 9266 IRR refined markdown lines 130-134",
+      "1979 UAP Documents refined markdown lines 371-379",
+      "1979 UAP Documents refined markdown lines 722-756",
+      "1979 UAP Documents refined markdown lines 811-813",
+      "1979 UAP Documents refined markdown lines 1055-1161",
+      "1979 UAP Documents refined markdown lines 1427-1449",
+      "1979 UAP Documents refined markdown lines 1560-1605",
+      "Mechanical and Electrical Systems refined markdown lines 365-474",
+      "Mechanical and Electrical Systems refined markdown lines 548-592",
+      "Mechanical and Electrical Systems 2 refined markdown lines 153-183"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "ra9266-local-raw-pdf--b049-f39860e3-01",
+        "label": "RA 9266 IRR Architecture Act - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+        "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "locator": "RA 9266 IRR refined markdown lines 31-84 and 130-134"
+      },
+      {
+        "source_id": "uap1979-local-raw-pdf--b049-f39860e3-02",
+        "label": "1979 UAP Documents - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/1979 UAP Documents.pdf",
+        "sha256": "sha256:54d42c8d39cb6c1e8622ef21a65e63cb09d90c302ca905efa95442614e5f0b5b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/1979 UAP Documents.md",
+        "refined_markdown_sha256": "sha256:ada40ce7a1046bb6ca99a34b095250ef650a05285458e2dafd0ed4be68870b8e",
+        "locator": "1979 UAP Documents refined markdown lines 371-379, 722-756, 811-813, 1055-1161, 1427-1449, and 1560-1605"
+      },
+      {
+        "source_id": "mech1-local-raw-pdf--b049-f39860e3-03",
+        "label": "Mechanical and Electrical Systems - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Mechanical and Electrical Systems.pdf",
+        "sha256": "sha256:b657bfd1e3cdaceb0632ef105f7604df2df2667f1b75a1534762e1dae28ec5d9",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Mechanical and Electrical Systems.md",
+        "refined_markdown_sha256": "sha256:e041473193aa7cd57d017dcec252bd84de7e1589bd831ae22b2a5c7591e1daed",
+        "locator": "Mechanical and Electrical Systems refined markdown lines 365-474 and 548-592"
+      },
+      {
+        "source_id": "mech2-local-raw-pdf--b049-f39860e3-04",
+        "label": "Mechanical and Electrical Systems 2 - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Mechanical and Electrical Systems 2.pdf",
+        "sha256": "sha256:e76b064a28ace4247b5074bddecb4b720e103d90c122adbcf0366a1c4c6baea6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Mechanical and Electrical Systems 2.md",
+        "refined_markdown_sha256": "sha256:29be259d41a1f4812ed0e9467d106bb8a2b91452862a0dbc76b0e7e04630a199",
+        "locator": "Mechanical and Electrical Systems 2 refined markdown lines 153-183"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 049 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "Which electrical elements commonly require architectural space planning?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Service conductors, service equipment, transformer vaults, switchgear rooms, main switchboards, feeders, panelboards, and risers."
+      },
+      {
+        "id": "b",
+        "text": "Paint color schedules and loose furniture only."
+      },
+      {
+        "id": "c",
+        "text": "Only decorative lighting fixture shapes after turnover."
+      },
+      {
+        "id": "d",
+        "text": "Only the utility bill after occupancy."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Service conductors, service equipment, transformer vaults, switchgear rooms, main switchboards, feeders, panelboards, and risers. The mechanical and electrical systems source describes service entrance equipment, switchgear rooms, main switchboards, feeders, and riser diagrams.",
+    "explanation": "Service conductors, service equipment, transformer vaults, switchgear rooms, main switchboards, feeders, panelboards, and risers. The mechanical and electrical systems source describes service entrance equipment, switchgear rooms, main switchboards, feeders, and riser diagrams.",
+    "code_citation": "RA 9266 IRR refined markdown lines 31-84 and 130-134; 1979 UAP Documents refined markdown lines 371-379, 722-756, 811-813, 1055-1161, 1427-1449, and 1560-1605; Mechanical and Electrical Systems refined markdown lines 365-474 and 548-592; Mechanical and Electrical Systems 2 refined markdown lines 153-183"
+  },
+  "batch_question_template_index": 2
+}

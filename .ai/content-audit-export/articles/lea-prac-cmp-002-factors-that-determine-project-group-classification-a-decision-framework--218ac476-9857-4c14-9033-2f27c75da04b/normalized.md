@@ -1,119 +1,15 @@
+# Factors That Determine Project Group Classification: A Decision Framework
 
+SPP 202 states that project classification is based on the degree of complexity and creative skill required, within technical, functional, economic, and aesthetic constraints. That sentence is the safest decision framework: classify from the actual source categories, not from invented proxies such as project prestige, consultant count, assumed mechanical-system complexity, or a preferred fee result.
 
-## Board Exam Quick Check
+## Start with the source group descriptions
 
-Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+Group 1 is for projects of simplest utilization and character. Group 2 covers moderate complexity. Group 3 covers exceptional character and complexity. Group 4 covers residences and small residential projects. Group 5 covers monumental buildings and facilities. Groups 6 and 7 handle repeated-document use and one-site housing projects, respectively. Group 8 covers work requiring extensive detail, including built-in components, interiors, and development planning or design. Group 9 covers alterations, renovations, rehabilitation, retrofit, expansions, or additions to existing Groups 1 to 5. Group 10 covers opinion, advice, clarifications, or explanation on technical architectural matters.
 
-**Common mistake:** treating a familiar keyword in **Lea Prac Cmp 002 Factors That Determine Project Group Classification A Decision Framework** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
-## Factors That Determine Project Group Classification — A Decision Framework
+## Use classification facts, not assumptions
 
-## Learning Goal
+An LEA item should state enough facts to match a source group. A renovation of an existing Group 2 office building points to Group 9 because the source classification is tied to alterations and renovations of existing Groups 1 to 5. A one-site housing project with several residential units and one set of plans points to Group 7. Reuse of the same plan, design, and related contract documents without amending drawings and specifications points to Group 6.
 
-After studying this article, you should be able to:
+## Compensation follows classification and method selection
 
-- Explain the factors that determine project group classification.
-- Distinguish Groups 1–5 by complexity and building type.
-- Describe the decision framework for classifying a project.
-- Apply classification criteria to exam scenarios.
-
----
-### Building Type as Primary Indicator
-
-Building type serves as the initial classification anchor. Under Philippine SPP Document 202, project classifications are not a linear hierarchy of complexity from 1 to 10. Instead, the groups are structured categorically:
-
-- **Groups 1 to 3** classify standard building types by ascending complexity: simplest utilization (Group 1), moderate complexity (Group 2), and exceptional character (Group 3).
-- **Groups 4 to 5** address specific specialized typologies: residences (Group 4) and monumental buildings (Group 5).
-- **Groups 6 to 9** address specific execution conditions and scopes: repetitive construction (Group 6), housing projects (Group 7), extensive detailing (Group 8), and alterations/renovations (Group 9).
-- **Group 10** covers the rendering of professional opinions or advice, which is a consultative service categorically distinct from building design classifications.
-
-Within each applicable design category, the architect must evaluate whether the specific project exhibits characteristics typical of that group or requires elevation due to complexity, innovation, or constraints.
-
-### Structural System Complexity
-
-Structural sophistication profoundly influences classification. Simple structures using conventional cast-in-place concrete or light steel framing align with standard baseline classifications. Sophisticated systems—post-tensioned concrete, steel moment frames, innovative systems, or structures serving unconventional functions—indicate a higher degree of complexity. Site-specific structural challenges, such as deep foundations, unusual soil conditions, or seismic-resistant design in high-risk zones, further elevate the project's technical demands.
-
-[SLATECAMP_UI_BLOCK:ui_0001 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Priority — Fee Computation:** Know the five compensation methods (percentage-of-PCC, MDPE, lump sum, per diem/retainer, reimbursable expenses). Master the sliding scale for Groups 1-3 (5%→4%→3%→2%→1% for successive ₱50M brackets). Remember: DAEDS = all disciplines; DADS ≈ 60% of DAEDS (architecture only). Group 9 renovation = 150% of base group rate.
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code="irr", section="Architect's Guidelines / SPP 202", title="Fee Computation — Regulatory Basis"
-- Text: Fee computation under the Architect's Guidelines follows SPP 202 classification groups and the DAEDS/DADS framework. The percentage-of-PCC method applies group-specific rates to Project Construction Cost. MDPE uses direct personnel expense multiplied by an agreed factor. Lump-sum fees are negotiated based on scope. All methods must be documented in the owner-architect agreement.
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0003 component="KeyValues" status="preserved"]
-Extracted summary:
-- Props: items="[", value=true, label=true, DAEDS=true, Fee=true, Range=true, PCC=true, Bracket=true, Threshold=true, Groups=true, Project=true, Classification=true
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-### Mechanical and Electrical Systems Scope
-
-MEP scope directly correlates with project complexity. Simple systems, typical of Group 1 projects, include basic forced-air ventilation, standard electrical distribution, and simple plumbing. Moderate complexity, often seen in Group 2 and Group 4 (Residences) projects, involves more extensive HVAC with zone control, sophisticated electrical systems with emergency backup, and comprehensive plumbing with potential domestic water treatment. Exceptionally complex and monumental projects (Groups 3 and 5) demand chilled water plants, variable frequency drives, building automation systems, sophisticated fire protection, extensive power distribution with potential on-site generation, and specialized systems such as laboratory exhaust or surgical suite air handling. (Group 10 strictly covers professional opinions and does not involve building systems design).
-
-### Site and Geotechnical Conditions
-
-Site conditions shape classification decisions. Typical urban sites with standard soil conditions and conventional utility access support baseline classifications. Challenging conditions—steep slopes, difficult geology, poor soil bearing capacity, waterfront locations requiring specialized foundations, contaminated sites requiring remediation, limited site access, or constrained neighboring properties—elevate the project's complexity. Master-planned developments with complex site planning, multiple building phases, and shared infrastructure warrant advanced technical coordination.
-
-### Regulatory Environment and Code Compliance
-
-Regulatory complexity influences classification. Buildings in standard compliance categories follow predictable code paths. Projects requiring special occupancy classification, high-hazard uses, extensive variance applications, coordination with multiple permitting agencies, heritage conservation compliance, or compliance with specialized standards (healthcare facility licensing, laboratory standards, manufacturing compliance) indicate elevated technical demands.
-
-### Client Expectations and Project Delivery Method
-
-The client's expectations regarding design sophistication, sustainability performance, innovation, and schedule influence the project scope. Projects demanding cutting-edge design, LEED/BERDE certification, Net-Zero energy performance, or innovative systems command rigorous professional engagement. Delivery methods matter: Design-Bid-Build with traditional sequencing differs from Design-Build or CM at Risk models requiring early coordination, phased delivery, or value engineering involvement. Fast-track projects demand intensive coordination.
-
-### Coordination and Consultant Requirements
-
-Projects requiring coordination with numerous consultants and integration of specialized expertise merit recognition of higher complexity. Simple projects may need only structural and MEP consultants. Highly complex projects engage specialized consultants for acoustics, theater systems, laboratory design, food service systems, specialized HVAC, IT infrastructure, security systems, sustainability certification, and heritage conservation. The breadth and depth of consultant coordination directly correlate with the required level of professional service.
-
-### Innovation and Design Complexity
-
-Projects featuring innovative architectural solutions, sophisticated facade systems, complex spatial geometries, or specialized functional requirements command exceptional technical skill. The design process demands extensive development, iterative refinement, and coordination with consultants to manifest innovative intent while maintaining constructability and cost control.
-
-### Interior and Finishes Scope
-
-The scope of interior design and finishes influences the overall project demand. Base building with minimal interior specification supports baseline classifications. Comprehensive interior design, custom furnishings, specialized finishes (performance flooring, acoustic treatments, specialized lighting), or integrated interior-exterior design strategies require extensive detailing (often invoking principles similar to Group 8 services) and significantly more design effort.
-
-### Project Scale and Value
-
-Project scale and construction cost correlate with complexity, though not deterministically. Larger projects typically exhibit higher complexity, but a small specialized facility may outrank a larger conventional building in complexity assessment. Cost alone should not drive the determination of complexity; rather, the accurate classification dictates the appropriate fee percentage applied to the Project Construction Cost (PCC).
-
-### Decision Framework Application
-
-To apply this framework practically:
-
-1. Identify the primary building type and assign the baseline SPP 202 Group (e.g., Group 1, 2, 3, 4, or 5).
-2. Determine if the execution method shifts the project into a specialized category (e.g., Repetitive Construction under Group 6, or Alterations under Group 9).
-3. Assess structural system sophistication, MEP scope, and site conditions to evaluate technical demands.
-4. Review the regulatory environment, client expectations, and the number of specialized consultants required.
-5. Synthesize findings. When projects exhibit characteristics of multiple demanding factors, ensure the contract and professional fees accurately reflect the highest required level of architectural service and coordination.
-
-### Documentation and Client Communication
-
-Classification decisions should be clearly documented in proposals and contracts. When submitting proposals, the architect should briefly explain the classification rationale based on SPP 202 guidelines, demonstrating transparent fee determination. This practice establishes clarity, manages expectations, and provides a solid foundation for discussion if subsequent scope changes trigger reclassification.
-
----
-
-
-
-[SLATECAMP_UI_BLOCK:ui_0004 component="ArticleMedia" status="unknown"]
-Extracted summary:
-- Props: id="media-lea-prac-cmp-002-factors-that-determine-project-group-classification-a-decision-framework-image", type=true, caption="Project Group Classification — Decision Flowchart", description=true, Flowchart=true, showing=true, the=true, decision=true, process=true, for=true, classifying=true, a=true
-- Text: ₱50M). Annotated with key regulatory references." />
-[/SLATECAMP_UI_BLOCK]
-## Related Articles
-
-- [Project Classification Groups](lea-prac-cmp-001)
-- [Factors Determining Classification](lea-prac-cmp-002)
-- [Project Construction Cost](lea-prac-cmp-003)
-- [Schedule of Payments](lea-prac-cmp-004)
-- [MDPE Formula](lea-prac-cmp-006)
-- [MDPE Multipliers](lea-prac-cmp-007)
-- [MDPE vs. Percentage of PCC](lea-prac-cmp-008)
-- [Reimbursable Expenses](lea-prac-cmp-011)
-- [SPP Doc 202 Phase Framework](lea-prac-svc-004)
-- [Standard Owner-Architect Agreement](lea-prac-ctr-001)
+After the group is identified, the compensation method should also stay source-based. SPP 202 lists percentage of PCC, MDPE, professional fee plus expenses, lump sum or fixed fee, per diem or honorarium plus reimbursables, and mixed methods. The source says each project should be examined to determine the most appropriate method.

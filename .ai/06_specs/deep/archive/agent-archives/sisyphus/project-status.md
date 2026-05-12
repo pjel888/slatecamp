@@ -2,8 +2,8 @@
 
 # SlateCamp Master Status
 
-> **Status:** Project Status & Conflict Resolution  
-> **Updated:** 2026-04-04  
+> **Status:** Project Status & Conflict Resolution
+> **Updated:** 2026-04-04
 > **Purpose:** Current project status, conflicts resolved, and next steps
 
 ---
@@ -129,10 +129,10 @@ quiz-v2/: 58 files (new quiz engine)
 #### Task 4: ScoreDisplay Adoption
 **Description:** Promote ScoreDisplay component (267 LOC, 4 variants) to replace 90+ manual implementations
 
-**Files:** 
+**Files:**
 - `src/components/shared/score-display.tsx`
 
-**Action:** 
+**Action:**
 - Audit all manual score display implementations
 - Replace with ScoreDisplay component
 - Fix HeroCommandBar color inconsistency
@@ -216,7 +216,7 @@ grep -r "SessionShell" src/ --include="*.tsx" | grep -v "testing/session"
 grep -r "ScoreDisplay" src/ --include="*.tsx" | wc -l
 # Expected: ~6 (currently underutilized)
 
-# Count QuadrantOverlay usage  
+# Count QuadrantOverlay usage
 grep -r "QuadrantOverlay" src/ --include="*.tsx"
 # Expected: 0 (not integrated)
 ```

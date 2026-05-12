@@ -1,0 +1,113 @@
+{
+  "artifact_type": "source_audit_evidence",
+  "batch_id": "source-audited-article-batch-060-local-first",
+  "batch_number": 60,
+  "audit_mode": "local_first_raw_pdf_primary",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T21:02:00.000+08:00",
+  "target": {
+    "article_id": "2e117d95-eb4c-4d96-8e3f-b31f18d26a64",
+    "slug": "lea-theo-004-12-core-concept",
+    "title": "Thermal Comfort",
+    "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-12-core-concept--2e117d95-eb4c-4d96-8e3f-b31f18d26a64",
+    "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-12-core-concept--2e117d95-eb4c-4d96-8e3f-b31f18d26a64/question-edits",
+    "linked_questions": 11,
+    "question_edits": 11,
+    "candidate_sha256": "sha256:ef96ecc8cf547f7e90ddd240d49e469602391d42af08f213aa532c2564af5be8"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth": "vitruvius-connection/001_Raw-Source-Layer local raw PDFs",
+    "derivative_or_search_layers_used_as_primary_truth": false,
+    "refined_markdown_used_only_as_locator": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": [],
+    "checked_sources": [
+      {
+        "source_id": "toa4-tropical-architecture-local-raw-pdf--b060-2e117d95-01",
+        "label": "TOA 4 Tropical Architecture - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+        "raw_pdf_sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+        "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+        "locator": "TOA 4 Tropical Architecture refined markdown lines 513-591, 622-660, 840-874, 1386-1420, and raw PDF pages 72, 75-78, 82, 84, 104, 106-110, 163, and 172"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "theory-of-architecture-tropical-design",
+    "contains_legal_or_code_claims": false,
+    "source_risk_tier": "medium",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 11,
+    "question_edits_created": [
+      "16cdfe20-bbc4-4cb2-acd9-1f59d7e4c335",
+      "939fb946-227e-484d-8a66-e18ccdedb5cf",
+      "4af39100-8bc0-43c1-880e-e2a9e826547e",
+      "ee2b0edd-588a-4802-9531-be5bf6c66643",
+      "461cc71c-20aa-4b90-8123-ebe88f400df0",
+      "2d8952d3-1aa9-4b82-928a-a534259fd7e8",
+      "3504704d-b913-4d3a-ad55-11747e2b616e",
+      "e49176a1-dadb-4c94-8758-cedaf4ab9925",
+      "85583d31-1db4-49e7-a40c-5a502286d6e9",
+      "942b96fc-7324-404f-9a50-ed10943c9864",
+      "dcc2b4f3-df05-4352-9353-04e5317c0c05"
+    ],
+    "scenario_policy_status": "eligible-deferred",
+    "scenario_policy_reason": "A realistic tropical-site scenario could be useful, but Batch 060 defers scenario enrichment so source-audited article/question correctness remains the only blocking gate."
+  },
+  "claims": [
+    {
+      "claim_id": "lea-theo-004-12-core-concept-b060-claim-01",
+      "claim_text": "Thermal Comfort is limited to checked local raw PDF TOA 4 Tropical Architecture source locators recorded for this article.",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+        "quoted_pdf_excerpt": "TOA 4 Tropical Architecture refined markdown lines 513-591, 622-660, 840-874, 1386-1420, and raw PDF pages 72, 75-78, 82, 84, 104, 106-110, 163, and 172",
+        "source_ids": [
+          "toa4-tropical-architecture-local-raw-pdf--b060-2e117d95-01"
+        ]
+      },
+      "audit_result": "PASS"
+    }
+  ],
+  "checked_markdown_lines": [
+    "TOA 4 Tropical Architecture refined markdown lines 513-591",
+    "TOA 4 Tropical Architecture refined markdown lines 622-660",
+    "TOA 4 Tropical Architecture refined markdown lines 840-874",
+    "TOA 4 Tropical Architecture refined markdown lines 1386-1420"
+  ],
+  "checked_pdf_pages": "raw PDF pages 71-78, 81-84, 87-90, 92-100, 104, 106-110, 121, 140, 143-148, 151, 163, 172, 180-181, 187, and 194",
+  "unverified_or_rejected_claims": [],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "local_first_only": true,
+    "supabase_write_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json",
+    "diff_gate": "safe_true_blockers_zero",
+    "validate_gate": "valid_true_blockers_zero",
+    "ui_block_edits_gate": "valid_true_blockers_zero"
+  },
+  "sme_review": {
+    "required": false,
+    "required_before_publication": true,
+    "status": "not_started_local_first_batch",
+    "note": "Local-first source audit is ready for later human/SME review before final publishing."
+  },
+  "overall": {
+    "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": [
+      "Human/SME review remains pending before final publishing."
+    ]
+  }
+}

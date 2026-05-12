@@ -1,0 +1,210 @@
+{
+  "batch_id": "source-audited-article-batch-064-local-first",
+  "generated_at": "2026-05-11T22:40:00.000+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "mode": "local-first content audit only",
+  "supabase_push_attempted": false,
+  "deploy_attempted": false,
+  "commit_attempted": false,
+  "status": "PASS",
+  "blockers": [],
+  "warnings": [],
+  "counts": {
+    "selected_articles": 5,
+    "linked_questions": 50,
+    "question_edits": 50,
+    "source_rows": 15,
+    "unique_raw_pdfs": 3,
+    "json_parse": 105,
+    "marker_scan_files": 95,
+    "marker_matches": 0,
+    "source_hash_checks": 30,
+    "candidate_evidence_hash_checks": 5,
+    "stale_compose_error_files": 0,
+    "targeted_tests": 34,
+    "targeted_expect_calls": 328,
+    "unresolved_blockers": 0
+  },
+  "marker_scan_scope": "candidate.md, normalized.md, source/evidence JSON, metadata/UI/parser sidecars, UI validation, and question-edits; excludes original export, linked-question baseline, taxonomy, and compose/diff machine reports",
+  "raw_pdf_paths": [
+    "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+    "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf",
+    "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf"
+  ],
+  "article_checks": [
+    {
+      "article_id": "40479f68-42a9-482a-960f-9901f522d086",
+      "slug": "lea-dsgn-005-05-core-concept",
+      "folder": ".ai/content-audit-export/articles/lea-dsgn-005-05-core-concept--40479f68-42a9-482a-960f-9901f522d086",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_rows": 3,
+      "compose_blockers": 0,
+      "diff_safe_to_push": true,
+      "diff_blockers": [],
+      "ui_block_edit_valid": true,
+      "source_audit_status": "PASS",
+      "candidate_hash_matches_evidence": true,
+      "source_hash_results": [
+        {
+          "source_id": "pd1096-rirr-2004-occupancy-public-service-local-b064",
+          "raw_pdf_sha256_match": true,
+          "refined_markdown_sha256_match": true
+        },
+        {
+          "source_id": "ra9514-rirr-2019-health-daycare-assembly-egress-local-b064",
+          "raw_pdf_sha256_match": true,
+          "refined_markdown_sha256_match": true
+        },
+        {
+          "source_id": "pd9514-fire-code-life-safety-local-b064",
+          "raw_pdf_sha256_match": true,
+          "refined_markdown_sha256_match": true
+        }
+      ],
+      "stale_compose_error_present": false
+    },
+    {
+      "article_id": "d1f93f93-0f8c-4546-a481-a39ec727d354",
+      "slug": "lea-dsgn-005-07-core-concept",
+      "folder": ".ai/content-audit-export/articles/lea-dsgn-005-07-core-concept--d1f93f93-0f8c-4546-a481-a39ec727d354",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_rows": 3,
+      "compose_blockers": 0,
+      "diff_safe_to_push": true,
+      "diff_blockers": [],
+      "ui_block_edit_valid": true,
+      "source_audit_status": "PASS",
+      "candidate_hash_matches_evidence": true,
+      "source_hash_results": [
+        {
+          "source_id": "pd1096-rirr-2004-occupancy-public-service-local-b064",
+          "raw_pdf_sha256_match": true,
+          "refined_markdown_sha256_match": true
+        },
+        {
+          "source_id": "ra9514-rirr-2019-health-daycare-assembly-egress-local-b064",
+          "raw_pdf_sha256_match": true,
+          "refined_markdown_sha256_match": true
+        },
+        {
+          "source_id": "pd9514-fire-code-life-safety-local-b064",
+          "raw_pdf_sha256_match": true,
+          "refined_markdown_sha256_match": true
+        }
+      ],
+      "stale_compose_error_present": false
+    },
+    {
+      "article_id": "b0b7a2f3-8fe3-4ee2-a109-2f5165c9aff0",
+      "slug": "lea-dsgn-005-08-core-concept",
+      "folder": ".ai/content-audit-export/articles/lea-dsgn-005-08-core-concept--b0b7a2f3-8fe3-4ee2-a109-2f5165c9aff0",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_rows": 3,
+      "compose_blockers": 0,
+      "diff_safe_to_push": true,
+      "diff_blockers": [],
+      "ui_block_edit_valid": true,
+      "source_audit_status": "PASS",
+      "candidate_hash_matches_evidence": true,
+      "source_hash_results": [
+        {
+          "source_id": "pd1096-rirr-2004-occupancy-public-service-local-b064",
+          "raw_pdf_sha256_match": true,
+          "refined_markdown_sha256_match": true
+        },
+        {
+          "source_id": "ra9514-rirr-2019-health-daycare-assembly-egress-local-b064",
+          "raw_pdf_sha256_match": true,
+          "refined_markdown_sha256_match": true
+        },
+        {
+          "source_id": "pd9514-fire-code-life-safety-local-b064",
+          "raw_pdf_sha256_match": true,
+          "refined_markdown_sha256_match": true
+        }
+      ],
+      "stale_compose_error_present": false
+    },
+    {
+      "article_id": "e2d64eac-2ee3-40fd-ab3b-43969f3f268e",
+      "slug": "lea-dsgn-005-09-core-concept",
+      "folder": ".ai/content-audit-export/articles/lea-dsgn-005-09-core-concept--e2d64eac-2ee3-40fd-ab3b-43969f3f268e",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_rows": 3,
+      "compose_blockers": 0,
+      "diff_safe_to_push": true,
+      "diff_blockers": [],
+      "ui_block_edit_valid": true,
+      "source_audit_status": "PASS",
+      "candidate_hash_matches_evidence": true,
+      "source_hash_results": [
+        {
+          "source_id": "pd1096-rirr-2004-occupancy-public-service-local-b064",
+          "raw_pdf_sha256_match": true,
+          "refined_markdown_sha256_match": true
+        },
+        {
+          "source_id": "ra9514-rirr-2019-health-daycare-assembly-egress-local-b064",
+          "raw_pdf_sha256_match": true,
+          "refined_markdown_sha256_match": true
+        },
+        {
+          "source_id": "pd9514-fire-code-life-safety-local-b064",
+          "raw_pdf_sha256_match": true,
+          "refined_markdown_sha256_match": true
+        }
+      ],
+      "stale_compose_error_present": false
+    },
+    {
+      "article_id": "622a401a-b889-4744-9d44-f77daa1627b4",
+      "slug": "lea-dsgn-005-10-core-concept",
+      "folder": ".ai/content-audit-export/articles/lea-dsgn-005-10-core-concept--622a401a-b889-4744-9d44-f77daa1627b4",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_rows": 3,
+      "compose_blockers": 0,
+      "diff_safe_to_push": true,
+      "diff_blockers": [],
+      "ui_block_edit_valid": true,
+      "source_audit_status": "PASS",
+      "candidate_hash_matches_evidence": true,
+      "source_hash_results": [
+        {
+          "source_id": "pd1096-rirr-2004-occupancy-public-service-local-b064",
+          "raw_pdf_sha256_match": true,
+          "refined_markdown_sha256_match": true
+        },
+        {
+          "source_id": "ra9514-rirr-2019-health-daycare-assembly-egress-local-b064",
+          "raw_pdf_sha256_match": true,
+          "refined_markdown_sha256_match": true
+        },
+        {
+          "source_id": "pd9514-fire-code-life-safety-local-b064",
+          "raw_pdf_sha256_match": true,
+          "refined_markdown_sha256_match": true
+        }
+      ],
+      "stale_compose_error_present": false
+    }
+  ],
+  "marker_matches": [],
+  "post_artifact_git_diff_check": "PASS",
+  "post_artifact_git_diff_check_scope": [
+    ".ai/content-audit-export/articles/lea-dsgn-005-05-core-concept--40479f68-42a9-482a-960f-9901f522d086",
+    ".ai/content-audit-export/articles/lea-dsgn-005-07-core-concept--d1f93f93-0f8c-4546-a481-a39ec727d354",
+    ".ai/content-audit-export/articles/lea-dsgn-005-08-core-concept--b0b7a2f3-8fe3-4ee2-a109-2f5165c9aff0",
+    ".ai/content-audit-export/articles/lea-dsgn-005-09-core-concept--e2d64eac-2ee3-40fd-ab3b-43969f3f268e",
+    ".ai/content-audit-export/articles/lea-dsgn-005-10-core-concept--622a401a-b889-4744-9d44-f77daa1627b4",
+    ".ai/content-audit-export/source-audited-article-batch-064-local-first-report.md",
+    ".ai/content-audit-export/source-audited-article-batch-064-local-first-ledger.json",
+    ".ai/content-audit-export/source-audited-article-batch-064-local-first-scoped-checks.json",
+    ".ai/content-audit-export/sync-state.json",
+    ".ai/03_plans/source-audited-local-first-batches-handoff.md"
+  ]
+}

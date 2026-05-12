@@ -449,7 +449,7 @@ This generates "Uses" and "Used By" sections on each component page automaticall
 6. Pastes into their file:
    ```tsx
    import { Button } from "@/components/ui/button"
-   
+
    <Button variant="primary">Start Exam</Button>
    ```
 7. Component renders correctly with SlateCamp's theme applied automatically via CSS variables

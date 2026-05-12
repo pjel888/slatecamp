@@ -1,0 +1,58 @@
+{
+  "question_id": "ec7285b9-1a71-4698-a426-aa9873531189",
+  "baseline_hash": "sha256:5983aaaaae108e5c13cf184348da6277f5ba0a0896b1901ba8af98bfb33a53b4",
+  "action": "replace",
+  "reason": "source-audited-article-batch-040-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-040",
+  "approved_at": "2026-05-11T14:04:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-040-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 1627-1766",
+          "PD 1096 RIRR refined markdown lines 1784-1786"
+        ]
+      },
+      {
+        "source_id": "bp-344-2024-rirr-ncda-local",
+        "label": "BP 344 2024 Revised IRR - NCDA",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "checked_markdown_lines": [
+          "BP 344 2024 IRR refined markdown lines 228-305"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Rule VII parking requirements"
+  },
+  "proposed": {
+    "text": "Under PD 1096, what BP 344 rule applies to parking for buildings with features intended for users with disabilities?",
+    "options": [
+      {
+        "id": "b040-dcea-06-a",
+        "text": "BP 344 and its IRR parking provisions must be strictly observed"
+      },
+      {
+        "id": "b040-dcea-06-b",
+        "text": "BP 344 parking provisions are optional"
+      },
+      {
+        "id": "b040-dcea-06-c",
+        "text": "Only the ordinary car slot size applies"
+      },
+      {
+        "id": "b040-dcea-06-d",
+        "text": "Only the contractor decides accessible parking"
+      }
+    ],
+    "correct_option_id": "b040-dcea-06-a",
+    "rationale": "Correct answer: BP 344 and its IRR parking provisions must be strictly observed. This is directly supported by PD 1096 2004 Revised IRR, Rule VII parking requirements.",
+    "explanation": "The Batch 040 source-audited correction uses only local raw PDF families and locator-checked refined markdown for PD 1096 2004 Revised IRR, Rule VII parking requirements.",
+    "code_citation": "PD 1096 2004 Revised IRR, Rule VII parking requirements"
+  }
+}

@@ -1,7 +1,7 @@
 # EXECUTIVE DIRECTIVE: SESSION HISTORY ROUTING CONDITIONAL REFACTOR
 
 ## 1. STRATEGIC OBJECTIVE
-Resolve a critical routing failure in the testing dashboard's session history table. The current system blindly routes all "Review" actions to a generic results page. We must implement a conditional routing interceptor that directs standard testing modes to the results view while rerouting reading-based sessions (Article Review, Prequestion) directly to their source articles. 
+Resolve a critical routing failure in the testing dashboard's session history table. The current system blindly routes all "Review" actions to a generic results page. We must implement a conditional routing interceptor that directs standard testing modes to the results view while rerouting reading-based sessions (Article Review, Prequestion) directly to their source articles.
 
 ## 2. STRICT OPERATIONAL CONSTRAINTS
 * **ZERO STYLING INJECTION:** Do not generate, assume, or inject any CSS, Tailwind classes, or inline styles. You will utilize the existing UI framework natively.
@@ -12,8 +12,8 @@ Resolve a critical routing failure in the testing dashboard's session history ta
 
 ### PHASE 1: DATA MODEL AND STATE VERIFICATION
 1. Locate the component rendering the session history table within `/dashboard/testing`.
-2. Inspect the data payload for the session objects populating the table rows. 
-3. Identify the specific property that defines the session mode. 
+2. Inspect the data payload for the session objects populating the table rows.
+3. Identify the specific property that defines the session mode.
 4. Confirm the exact string values or enums used for the "article review" and "prequestion" modes.
 5. Verify that the session object contains a relational identifier to the source article (e.g., `articleId` or `slug`) necessary for the new redirect pathway.
 

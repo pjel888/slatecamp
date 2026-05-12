@@ -1,0 +1,31 @@
+{
+  "question_id": "8532bdb6-bdd8-4f4f-bd6e-1e5a9d11211c",
+  "baseline_hash": "sha256:8638ec4117b1d529d9800a25775686ce88e889f59975c929895c9261df3bdd6e",
+  "reason": "Batch 006 local source audit aligned linked question ALE-PRAC-LAW-012-008 to verified raw-source claims for lea-prac-law-012-quasi-delict-and-tort-in-architectural-practice-civil-code-articles-2176-2194.",
+  "approved_by": "codex-local-source-audit-batch-006",
+  "approved_at": "2026-05-10T22:30:00+08:00",
+  "proposed": {
+    "code_citation": "Civil Code Articles 1146, 1150, 1723, 2176, 2180, 2192, and 2194",
+    "explanation": "Article 2176 supplies negligence-based quasi-delict; Article 2180 extends responsibility to employers for employees acting within assigned tasks.",
+    "text": "An architect's employee makes a negligent coordination error within assigned design work, causing damage to a third party with no contract with the architect. Why can the architect or employer still be analyzed under quasi-delict?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Because Article 2176 imposes liability for every error without requiring negligence"
+      },
+      {
+        "id": "b",
+        "text": "Because Article 1723 covers every non-collapse coordination error"
+      },
+      {
+        "id": "c",
+        "text": "Because Article 2180 can make employers responsible for employees acting within assigned tasks, together with the Article 2176 negligence rule"
+      },
+      {
+        "id": "d",
+        "text": "Because payment of professional fees automatically transfers liability to the client"
+      }
+    ],
+    "correct_option_id": "c"
+  }
+}

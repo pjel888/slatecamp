@@ -1,0 +1,59 @@
+{
+  "question_id": "1d3caf7f-8bf2-4d2f-b377-e5a86b5e78c8",
+  "baseline_hash": "sha256:df34c10901050882f535975bfdf0ed703cefdb456b23c2ea342e1c1f14eb4943",
+  "action": "replace",
+  "reason": "source-audited-article-batch-081-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-010-05-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-081",
+  "approved_at": "2026-05-12T04:40:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "40dc0d6d-ae04-49de-b43a-36e9288a0622",
+    "parent_article_slug": "lea-matl-010-05-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Fajardo Architectural Cost Estimates refined markdown lines 19612-20382; raw PDF pages 153-154 checked by local PyMuPDF extraction",
+    "checked_markdown_lines": [
+      "Fajardo Architectural Cost Estimates refined markdown lines 19612-20382; raw PDF pages 153-154 checked by local PyMuPDF extraction"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "fajardo-cost-estimates-b081",
+        "label": "Architectural Cost Estimates By Max Fajardo",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+        "sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+        "raw_markdown_sha256": "sha256:223efdc2dd963208910027eba08fe87b4919de1a04b76cac095bbd76a7a9a962",
+        "locator": "Fajardo Architectural Cost Estimates refined markdown lines 19612-20382; raw PDF pages 153-154 checked by local PyMuPDF extraction"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 081 local raw-source-audited paint-estimating scope."
+  },
+  "proposed": {
+    "text": "A wall area is 360 sq m and one gallon covers 30 sq m for one coat. How many gallons are required for one coat?",
+    "options": [
+      {
+        "id": "a",
+        "text": "12 gallons"
+      },
+      {
+        "id": "b",
+        "text": "8 gallons"
+      },
+      {
+        "id": "c",
+        "text": "30 gallons"
+      },
+      {
+        "id": "d",
+        "text": "48 gallons"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Paint quantity is area divided by coverage: 360 / 30 = 12 gallons.",
+    "explanation": "Paint quantity is area divided by coverage: 360 / 30 = 12 gallons.",
+    "code_citation": "Architectural Cost Estimates By Max Fajardo",
+    "bloom_level": "apply",
+    "application_context": "source_audited_local_first_batch_081",
+    "practice_context": [],
+    "difficulty": 0.5
+  }
+}

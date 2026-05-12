@@ -1,8 +1,8 @@
 # Live Push Execution Report
 
-**Generated:** 2026-05-03  
-**Status:** **PARTIAL SUCCESS** — 498/567 articles pushed to Supabase  
-**Supabase production touched:** Yes, after explicit user authorization ("PUSH TO SUPABASE NOW")  
+**Generated:** 2026-05-03
+**Status:** **PARTIAL SUCCESS** — 498/567 articles pushed to Supabase
+**Supabase production touched:** Yes, after explicit user authorization ("PUSH TO SUPABASE NOW")
 
 ---
 

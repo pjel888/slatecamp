@@ -1,0 +1,262 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-086-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T09:30:00.000+08:00",
+  "target": {
+    "article_id": "8a8a6153-844c-4671-aae6-b42b5a9435dd",
+    "slug": "lea-plan-007-01-core-concept",
+    "title": "NHA and SHFC serve different shelter delivery functions",
+    "article_folder": ".ai/content-audit-export/articles/lea-plan-007-01-core-concept--8a8a6153-844c-4671-aae6-b42b5a9435dd",
+    "normalized_sha256": "sha256:e6fce823bcd81f99f6a92df4fdbfdc0d6a4871eaabe84fe681ab24c53a00c0a1",
+    "candidate_sha256": "sha256:e6fce823bcd81f99f6a92df4fdbfdc0d6a4871eaabe84fe681ab24c53a00c0a1",
+    "candidate_path": ".ai/content-audit-export/articles/lea-plan-007-01-core-concept--8a8a6153-844c-4671-aae6-b42b5a9435dd/candidate.md"
+  },
+  "classification": {
+    "topic_family": "nha_shfc_shelter_roles",
+    "local_first_batch": "086",
+    "source_sensitivity": "legal_planning_housing",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "legal_housing_agency_roles",
+    "requires_raw_pdf_audit": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdfs_checked_first": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "local_pdf_extraction_method": "python_pymupdf_local",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "eo-90-shelter-program-b086",
+      "label": "EO 90 - NGO for Shelter Program",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/EO/EO 90 NGO for Shelter Program.pdf",
+      "sha256": "sha256:22b0d40bfdd91f9636f7e57df542496b19fcca84fc7d48df4911a9e65d7cd501",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/EO/EO 90 NGO for Shelter Program.md",
+      "refined_markdown_sha256": "sha256:0edf1d2a41c71751479f8bbe0d7ff31adcda7b8b544f59dc88f3de9f6319d43b",
+      "locator": "EO 90 refined markdown lines 19-27, 30-43, 51-63, and 79-106; raw PDF pages 1, 2, 3, 4, and 6 checked by local PyMuPDF extraction."
+    },
+    {
+      "source_id": "ra-11201-irr-dhsud-act-b086",
+      "label": "RA 11201 IRR - DHSUD Act Implementing Rules",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+      "sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+      "refined_markdown_sha256": "sha256:40f1a5041c69b3a4aea7c8ba138a9d570bc686bea48aa5618ea6423a6a719528",
+      "locator": "RA 11201 IRR refined markdown lines 40-44, 68-75, 93-100, 116-121, 134-162, 261-263, 280-289, 335, 389, and 392; raw PDF pages 3, 6, 7, 13, 15, 19, and 35 checked by local PyMuPDF extraction."
+    },
+    {
+      "source_id": "ra-7279-urban-development-housing-act-b086",
+      "label": "RA 7279 - Urban Development and Housing Act",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7279/RA 7279 Urban Development and Housing Act 2009.pdf",
+      "sha256": "sha256:23efa9c0278519d79ed424d9ced016b24619ebb42a19e75a05dc9bb8bf1c4696",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7279/RA 7279 Urban Development and Housing Act 2009.md",
+      "refined_markdown_sha256": "sha256:f52859fb18fec28c403348851c3e53caca2e678cb9cec43fbca28d8d5c3a323e",
+      "locator": "RA 7279 refined markdown lines 11-35, 37-85, 131-155, 165-189, 231-235, 301-313, and 319; raw PDF pages 1, 2, 3, 7, 8, and 11 checked by local PyMuPDF extraction."
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-plan-007-01-core-concept-article-b086",
+      "claim_text": "Article lea-plan-007-01-core-concept was rewritten to the checked nha_shfc_shelter_roles source scope.",
+      "claim_type": "article_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "source_locator": "EO 90 refined markdown lines 19-27; RA 11201 IRR lines 40-44, 145-162, and 261-263; RA 7279 lines 165-189 and 301-313.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; derivative and search layers were not used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "lea-plan-007-01-core-concept-scenario-b086",
+      "claim_text": "Real World Scenario for lea-plan-007-01-core-concept was added from the checked nha_shfc_shelter_roles source scope.",
+      "claim_type": "scenario_enrichment",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "source_locator": "EO 90 refined markdown lines 19-27; RA 11201 IRR lines 40-44, 145-162, and 261-263; RA 7279 lines 165-189 and 301-313.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; derivative and search layers were not used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-317073ad-b389-4523-bafd-a9bf553e4ba0-b086",
+      "claim_text": "Question 317073ad-b389-4523-bafd-a9bf553e4ba0 was rewritten to the checked nha_shfc_shelter_roles source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "source_locator": "EO 90 refined markdown lines 19-27; RA 11201 IRR lines 40-44, 145-162, and 261-263; RA 7279 lines 165-189 and 301-313.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; derivative and search layers were not used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-00130a06-ee25-47fc-a1a5-50b4da92e666-b086",
+      "claim_text": "Question 00130a06-ee25-47fc-a1a5-50b4da92e666 was rewritten to the checked nha_shfc_shelter_roles source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "source_locator": "EO 90 refined markdown lines 19-27; RA 11201 IRR lines 40-44, 145-162, and 261-263; RA 7279 lines 165-189 and 301-313.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; derivative and search layers were not used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-38f0e388-8f66-425f-8667-5eecca8b54af-b086",
+      "claim_text": "Question 38f0e388-8f66-425f-8667-5eecca8b54af was rewritten to the checked nha_shfc_shelter_roles source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "source_locator": "EO 90 refined markdown lines 19-27; RA 11201 IRR lines 40-44, 145-162, and 261-263; RA 7279 lines 165-189 and 301-313.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; derivative and search layers were not used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-50c84b9b-1933-4cad-b5a9-3ec620cc1494-b086",
+      "claim_text": "Question 50c84b9b-1933-4cad-b5a9-3ec620cc1494 was rewritten to the checked nha_shfc_shelter_roles source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "source_locator": "EO 90 refined markdown lines 19-27; RA 11201 IRR lines 40-44, 145-162, and 261-263; RA 7279 lines 165-189 and 301-313.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; derivative and search layers were not used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-64b0a20b-1620-465a-9b1c-4bba9d990e24-b086",
+      "claim_text": "Question 64b0a20b-1620-465a-9b1c-4bba9d990e24 was rewritten to the checked nha_shfc_shelter_roles source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "source_locator": "EO 90 refined markdown lines 19-27; RA 11201 IRR lines 40-44, 145-162, and 261-263; RA 7279 lines 165-189 and 301-313.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; derivative and search layers were not used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-99a84b41-92bf-4f72-9f59-6cfa88027b2a-b086",
+      "claim_text": "Question 99a84b41-92bf-4f72-9f59-6cfa88027b2a was rewritten to the checked nha_shfc_shelter_roles source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "source_locator": "EO 90 refined markdown lines 19-27; RA 11201 IRR lines 40-44, 145-162, and 261-263; RA 7279 lines 165-189 and 301-313.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; derivative and search layers were not used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-823c185a-63c4-4ac6-a9c0-f10af5ff3b6f-b086",
+      "claim_text": "Question 823c185a-63c4-4ac6-a9c0-f10af5ff3b6f was rewritten to the checked nha_shfc_shelter_roles source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "source_locator": "EO 90 refined markdown lines 19-27; RA 11201 IRR lines 40-44, 145-162, and 261-263; RA 7279 lines 165-189 and 301-313.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; derivative and search layers were not used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-a2d3bdd1-c176-4caf-98bf-3139e81fc46e-b086",
+      "claim_text": "Question a2d3bdd1-c176-4caf-98bf-3139e81fc46e was rewritten to the checked nha_shfc_shelter_roles source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "source_locator": "EO 90 refined markdown lines 19-27; RA 11201 IRR lines 40-44, 145-162, and 261-263; RA 7279 lines 165-189 and 301-313.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; derivative and search layers were not used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-a542ae5f-d3e5-4e1b-bcaa-07ab45561265-b086",
+      "claim_text": "Question a542ae5f-d3e5-4e1b-bcaa-07ab45561265 was rewritten to the checked nha_shfc_shelter_roles source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "source_locator": "EO 90 refined markdown lines 19-27; RA 11201 IRR lines 40-44, 145-162, and 261-263; RA 7279 lines 165-189 and 301-313.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; derivative and search layers were not used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-348cda39-4655-485d-b2ea-f1dd5ab2e734-b086",
+      "claim_text": "Question 348cda39-4655-485d-b2ea-f1dd5ab2e734 was rewritten to the checked nha_shfc_shelter_roles source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "source_locator": "EO 90 refined markdown lines 19-27; RA 11201 IRR lines 40-44, 145-162, and 261-263; RA 7279 lines 165-189 and 301-313.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; derivative and search layers were not used as primary truth."
+      },
+      "blockers": []
+    }
+  ],
+  "removed_or_out_of_scope_claims": [
+    "Current loan amounts, amortization terms, program thresholds, and agency claims without a Batch 086 local raw-source locator were kept out of the repaired article and question edits."
+  ],
+  "question_edit_audit": {
+    "linked_question_count": 10,
+    "question_edit_count": 10,
+    "answer_key_fields_changed": true,
+    "source_safe_rewrite": true,
+    "blockers": []
+  },
+  "scenario_enrichment": {
+    "status": "eligible-added",
+    "reason": "eligible-added: Batch 086 added a concise NHA-versus-SHFC scenario supported by EO 90, RA 11201 IRR, and RA 7279 raw-source locators.",
+    "section_title": "Real World Scenario"
+  },
+  "roundtrip": {
+    "normalized_md_owns_article_prose": true,
+    "ui_blocks_json_owns_raw_ui_blocks": true,
+    "candidate_md_generated_by_compose": true,
+    "raw_ui_block_edits_supported_in_this_batch": false,
+    "note": "All selected Batch 086 folders had zero raw UI blocks; article prose is owned by normalized.md and candidate.md is generated by compose.",
+    "unresolved_ui_summary_markers_removed": true
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "question_id": "d3d33b7f-cb94-43f3-831c-658e47ea4de5",
+  "baseline_hash": "sha256:98e3b643f319d82978a21b519d3c70305c239b1894bd33013cf428ff046eac50",
+  "reason": "Batch 003 source audit replaced unsupported agency/mandate and procurement assertions with source-backed RA 9266, Civil Code Article 1723, RA 9184, RA 7160/COA, RA 11201, and EO 90 framing.",
+  "approved_by": "codex-local-source-audit-batch-003",
+  "approved_at": "2026-05-10T18:00:00+08:00",
+  "proposed": {
+    "text": "Under the checked RA 9266 IRR source, which statement about CPD and government architects is source-safe?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Government architects are exempt from professional development and professional regulation"
+      },
+      {
+        "id": "b",
+        "text": "CPD units are the procurement requirement for government architectural services"
+      },
+      {
+        "id": "c",
+        "text": "A CPD program exists, but the checked IRR source says CPD attendance is not mandatory for license renewal"
+      },
+      {
+        "id": "d",
+        "text": "CPD replaces the need for current professional registration"
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": "The RA 9266 IRR supports a CPD program while stating that CPD attendance is not mandatory for renewal in the checked text.",
+    "explanation": "The edit removes an overbroad CPD requirement.",
+    "code_citation": "RA 9266 IRR, CPD program and renewal provisions"
+  }
+}

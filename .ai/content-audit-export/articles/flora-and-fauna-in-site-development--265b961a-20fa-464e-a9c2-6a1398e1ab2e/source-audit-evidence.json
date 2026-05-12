@@ -1,0 +1,162 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-051-local-first",
+  "batch_number": 51,
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T18:44:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "265b961a-20fa-464e-a9c2-6a1398e1ab2e",
+    "slug": "flora-and-fauna-in-site-development",
+    "title": "Flora and Fauna in Site Development",
+    "article_folder": ".ai/content-audit-export/articles/flora-and-fauna-in-site-development--265b961a-20fa-464e-a9c2-6a1398e1ab2e",
+    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/flora-and-fauna-in-site-development--265b961a-20fa-464e-a9c2-6a1398e1ab2e",
+    "candidate_path": ".ai/content-audit-export/articles/flora-and-fauna-in-site-development--265b961a-20fa-464e-a9c2-6a1398e1ab2e/candidate.md",
+    "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/flora-and-fauna-in-site-development--265b961a-20fa-464e-a9c2-6a1398e1ab2e/candidate.md",
+    "question_edits_folder": ".ai/content-audit-export/articles/flora-and-fauna-in-site-development--265b961a-20fa-464e-a9c2-6a1398e1ab2e/question-edits",
+    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/flora-and-fauna-in-site-development--265b961a-20fa-464e-a9c2-6a1398e1ab2e/question-edits",
+    "normalized_sha256": "sha256:d30e71fbec50271b000c9730b7611e225a32ae2605a6fa750827915953006c25",
+    "candidate_sha256": "sha256:d30e71fbec50271b000c9730b7611e225a32ae2605a6fa750827915953006c25",
+    "linked_questions_sha256": "sha256:756ba5e516772777ba23fe0c59f67faad7761cb2b4e21f9e92497cb37ad4f4a7",
+    "sources_sha256": "sha256:42e72a2dfe68771b2c9c282fbadd00c1812138dabd7621e9a1504aa7ea441f57"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "refined_markdown_role": "locator_only",
+    "derivative_or_search_layer_as_primary": false,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": [],
+    "source_families_checked": [
+      {
+        "label": "Climate Resilience Reference Tool - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Reference-Tool-on-Urban-Planning-and-Design-for-Climate-Resilience-for-LGUs-Planning-Actors-in-the-Philippines_readable.pdf",
+        "raw_pdf_sha256": "sha256:4fb30dbbb3eb2d7d445418120bdd046c594e0eeea85b3bf32f93d401325f3bb8",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Reference-Tool-on-Urban-Planning-and-Design-for-Climate-Resilience-for-LGUs-Planning-Actors-in-the-Philippines_readable.md",
+        "refined_markdown_sha256": "sha256:2a1544c9d48eae33c8456f130dfa1c1c7b31c27befca17a2602069fa8086c455",
+        "locator": "Climate Resilience Reference Tool refined markdown lines 939-958, 1816-1830, 2526-2556, 4407-4411, 4690-4692, 4970-4990, 5108-5112, 5381-5385, 7000-7014, and 7107-7139"
+      },
+      {
+        "label": "Building Technology - Siteworks - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Technology - Siteworks.pdf",
+        "raw_pdf_sha256": "sha256:9f498be4a288011a0e8b750d4bb8316afebf07a908993620579c311da30e02a2",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Technology - Siteworks.md",
+        "refined_markdown_sha256": "sha256:3e34ffc7b60b926a2cd75fbde6239ff3f05e7e53993d8cb6f8d5f1d865c64296",
+        "locator": "Building Technology - Siteworks refined markdown lines 24-86, 108-146, 160-220, and 250-305"
+      },
+      {
+        "label": "Sitework Lecture - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Sitework Lecture.pdf",
+        "raw_pdf_sha256": "sha256:a469e97d2c4b842f443864c658fc4359ef2787a2b009b9fbafc1afbd1da25ff6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Sitework Lecture.md",
+        "refined_markdown_sha256": "sha256:e761c9b38b9d0c07bd6053692337109a218169ba791e8f074fa40842d3972af2",
+        "locator": "Sitework Lecture refined markdown lines 28-100, 134-190, 214-290, and 370-405"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "flora_fauna_site_development",
+    "contains_legal_or_code_claims": false,
+    "source_risk_tier": "medium",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 21,
+    "question_edits_created": [
+      "2f1ed5eb-90af-4a6d-a77d-724f162a9301",
+      "094afc37-4ba1-4625-bb95-7be24419f317",
+      "1efbdbf2-920f-495b-946c-946442c619a0",
+      "c5598b08-d3dc-4446-862e-1f937af3a817",
+      "008f0a12-2aa9-4850-8f7f-aaf700602527",
+      "cd5883c8-54ad-4551-9732-2ae63bb4da0d",
+      "72cc0e54-079c-492c-931f-8f0004cac4af",
+      "fbe32751-617c-4300-9472-8026c27f957b",
+      "62222953-930d-44f3-8b29-c8846d1f9a69",
+      "663b6fdb-19c6-4ba2-b2c2-98cdb52b1b72",
+      "e15ae189-9808-4613-96eb-5aea543c9be4",
+      "c98ca96a-8dff-4720-8035-617dff70a888",
+      "b510936c-fa3b-4acb-8f8a-7940bf2822e4",
+      "96860f3a-e766-4709-aa99-b86910943823",
+      "cbd016dd-2ce5-444b-ae3a-f1c572d3c19a",
+      "2ece38c9-f2bd-427e-93eb-451ad26383e9",
+      "420f4786-5609-47c2-9b7b-75482bcf79ca",
+      "62c6bec5-8fc6-4db7-9b7d-ef73584fa73a",
+      "c983427a-6443-40d5-add9-4af280cefb49",
+      "20a9c9d2-1024-41a7-96e9-2d2a930076ed",
+      "dbcfbbfa-d22b-46a3-8ecd-e9dff993128f"
+    ]
+  },
+  "checked_markdown_lines": [
+    "Climate Resilience Reference Tool refined markdown lines 939-958",
+    "Climate Resilience Reference Tool refined markdown lines 1816-1830",
+    "Climate Resilience Reference Tool refined markdown lines 2526-2556",
+    "Climate Resilience Reference Tool refined markdown lines 4407-4411",
+    "Climate Resilience Reference Tool refined markdown lines 4690-4692",
+    "Climate Resilience Reference Tool refined markdown lines 4970-4990",
+    "Climate Resilience Reference Tool refined markdown lines 5108-5112",
+    "Climate Resilience Reference Tool refined markdown lines 5381-5385",
+    "Climate Resilience Reference Tool refined markdown lines 7000-7014",
+    "Climate Resilience Reference Tool refined markdown lines 7107-7139",
+    "Building Technology - Siteworks refined markdown lines 24-86",
+    "Building Technology - Siteworks refined markdown lines 108-146",
+    "Building Technology - Siteworks refined markdown lines 160-220",
+    "Building Technology - Siteworks refined markdown lines 250-305",
+    "Sitework Lecture refined markdown lines 28-100",
+    "Sitework Lecture refined markdown lines 134-190",
+    "Sitework Lecture refined markdown lines 214-290",
+    "Sitework Lecture refined markdown lines 370-405"
+  ],
+  "claims": [
+    {
+      "claim_id": "flora-and-fauna-in-site-development-b051-claim-01",
+      "claim_text": "Flora and fauna controls protect ecosystem function while supporting climate adaptation, drainage, erosion control, and heat reduction.",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Reference-Tool-on-Urban-Planning-and-Design-for-Climate-Resilience-for-LGUs-Planning-Actors-in-the-Philippines_readable.pdf",
+        "quoted_pdf_excerpt": "Climate Resilience Reference Tool refined markdown lines 939-958, 1816-1830, 2526-2556, 4407-4411, 4690-4692, 4970-4990, 5108-5112, 5381-5385, 7000-7014, and 7107-7139",
+        "source_ids": [
+          "climate-local-raw-pdf--b051-265b961a-01",
+          "siteworks-local-raw-pdf--b051-265b961a-02",
+          "lecture-local-raw-pdf--b051-265b961a-03"
+        ]
+      },
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "flora-and-fauna-in-site-development-b051-claim-questions",
+      "claim_text": "Batch 051 question edits audited for flora-and-fauna-in-site-development: 2f1ed5eb-90af-4a6d-a77d-724f162a9301, 094afc37-4ba1-4625-bb95-7be24419f317, 1efbdbf2-920f-495b-946c-946442c619a0, c5598b08-d3dc-4446-862e-1f937af3a817, 008f0a12-2aa9-4850-8f7f-aaf700602527, cd5883c8-54ad-4551-9732-2ae63bb4da0d, 72cc0e54-079c-492c-931f-8f0004cac4af, fbe32751-617c-4300-9472-8026c27f957b, 62222953-930d-44f3-8b29-c8846d1f9a69, 663b6fdb-19c6-4ba2-b2c2-98cdb52b1b72, e15ae189-9808-4613-96eb-5aea543c9be4, c98ca96a-8dff-4720-8035-617dff70a888, b510936c-fa3b-4acb-8f8a-7940bf2822e4, 96860f3a-e766-4709-aa99-b86910943823, cbd016dd-2ce5-444b-ae3a-f1c572d3c19a, 2ece38c9-f2bd-427e-93eb-451ad26383e9, 420f4786-5609-47c2-9b7b-75482bcf79ca, 62c6bec5-8fc6-4db7-9b7d-ef73584fa73a, c983427a-6443-40d5-add9-4af280cefb49, 20a9c9d2-1024-41a7-96e9-2d2a930076ed, dbcfbbfa-d22b-46a3-8ecd-e9dff993128f",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Reference-Tool-on-Urban-Planning-and-Design-for-Climate-Resilience-for-LGUs-Planning-Actors-in-the-Philippines_readable.pdf",
+        "quoted_pdf_excerpt": "Climate Resilience Reference Tool refined markdown lines 939-958, 1816-1830, 2526-2556, 4407-4411, 4690-4692, 4970-4990, 5108-5112, 5381-5385, 7000-7014, and 7107-7139; Building Technology - Siteworks refined markdown lines 24-86, 108-146, 160-220, and 250-305; Sitework Lecture refined markdown lines 28-100, 134-190, 214-290, and 370-405",
+        "source_ids": [
+          "climate-local-raw-pdf--b051-265b961a-01",
+          "siteworks-local-raw-pdf--b051-265b961a-02",
+          "lecture-local-raw-pdf--b051-265b961a-03"
+        ]
+      },
+      "audit_result": "PASS"
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "local_first_only": true,
+    "supabase_write_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json"
+  },
+  "sme_review": {
+    "required": false,
+    "status": "not_required"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

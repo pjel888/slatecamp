@@ -1,0 +1,32 @@
+{
+  "question_id": "57372d7a-f13f-40c2-8544-e77079b95ce1",
+  "baseline_hash": "sha256:465033813c3c47b7cb48e3c409a18eec016dbcd46ffa95b051f0d4856a2d6c41",
+  "reason": "Batch 003 source audit removed unsupported penalty ranges, restitution amounts, dollar values, and scenario statistics; questions now use RA 9266 IRR and UAP Code of Ethics conduct categories.",
+  "approved_by": "codex-local-source-audit-batch-003",
+  "approved_at": "2026-05-10T18:00:00+08:00",
+  "proposed": {
+    "text": "A supplier offers the architect a commission or favor for specifying its product, creating reciprocal obligation. Which source-backed issue is tested?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No issue if the product is technically acceptable"
+      },
+      {
+        "id": "b",
+        "text": "Conflict of interest and prohibited commission/favor under the UAP Code of Ethics"
+      },
+      {
+        "id": "c",
+        "text": "Civil Code Article 1723 collapse liability only"
+      },
+      {
+        "id": "d",
+        "text": "A mandatory fixed restitution amount"
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": "The UAP Code of Ethics prohibits commissions, discounts, fees, gifts, or favors from material/equipment firms when they create reciprocal obligation, and market discounts belong to the client.",
+    "explanation": "The old contractor-side temporary-facility scenario was not supported by the checked local ethics sources.",
+    "code_citation": "UAP Code of Ethics, provision 4-b"
+  }
+}

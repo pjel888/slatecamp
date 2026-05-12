@@ -1,7 +1,7 @@
 # IMPL_06: Interleaved Topic Mixing & Hybrid Scheduling
 
-**Priority:** P1  
-**Effort:** ~2 days  
+**Priority:** P1
+**Effort:** ~2 days
 **Research basis:** Interleaving effect size d = 0.43 (Brunmair & Richter, 2019). Hybrid block-then-interleave outperforms pure interleaving for novices (Hwang, 2025).
 
 ---

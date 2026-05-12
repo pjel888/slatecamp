@@ -1,56 +1,34 @@
 {
   "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:84a93bf69f549f121ed92e8860973913d38813307716c9c59bd0818da959cb9e",
-  "source_count": 4,
+  "source_count": 1,
   "sources": [
     {
-      "source_id": "23b1ca40-f405-4070-9c54-60b8ba18064a",
+      "source_id": "toa4-tropical-architecture-local-raw-pdf--b059-669aab68-01",
       "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
-      "label": "Ledres, Jennifer. \"Living Architecture: The Bahay Kubo and Its Reflection of Philippine Identity.\" TU Delft Repository, https://repository.tudelft.nl/file/File_f8fdc5e6-f89a-4564-ad11-6be3ee0f0b89",
+      "label": "TOA 4 Tropical Architecture - local raw PDF",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_raw_pdf",
+      "description": "TOA 4 Tropical Architecture - local raw PDF; local raw PDF checked first; refined markdown used only as locator. TOA 4 Tropical Architecture refined markdown lines 513-591, 622-660, 708-710, and raw PDF pages 71-78, 81-84, 87-90.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:02.295633+00:00",
-      "updated_at": "2026-03-24T04:34:02.295633+00:00"
-    },
-    {
-      "source_id": "36bf021d-63f7-4a78-955c-ffbf4b7c1d86",
-      "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
-      "label": "Autodesk Forma Blog. \"Creating Sustainable Tropical Buildings Through Passive Design Strategies.\" August 2024",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": "https://blogs.autodesk.com/forma/2024/08/12/passive-design-strategies-for-sustainable-tropical-buildings/",
-      "is_verified": false,
-      "sort_order": 1,
-      "created_at": "2026-03-24T04:34:02.295633+00:00",
-      "updated_at": "2026-03-24T04:34:02.295633+00:00"
-    },
-    {
-      "source_id": "b08dfb27-d9ae-45dd-bb46-2265eb77408f",
-      "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
-      "label": "Gerard Lee Architects. \"Sustainable/Green Design in Tropical Climates: FAQ/Guide Implementation.\" http://www.gleearchitects.com/sustainablefaqtropic2.htm",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:34:02.295633+00:00",
-      "updated_at": "2026-03-24T04:34:02.295633+00:00"
-    },
-    {
-      "source_id": "68b9318f-5771-46bc-bb0b-8f88bbb05131",
-      "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
-      "label": "Architropics. \"Best Wall Materials For Staying Cool In Tropical Climates.\" https://architropics.com/best-wall-materials-for-staying-cool-in-tropical-climates/",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:34:02.295633+00:00",
-      "updated_at": "2026-03-24T04:34:02.295633+00:00"
+      "created_at": "2026-05-11T20:48:00.000+08:00",
+      "updated_at": "2026-05-11T20:48:00.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+      "raw_pdf_sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+      "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+      "source_locator": "TOA 4 Tropical Architecture refined markdown lines 513-591, 622-660, 708-710, and raw PDF pages 71-78, 81-84, 87-90",
+      "checked_markdown_lines": [
+        "TOA 4 Tropical Architecture refined markdown lines 513-591",
+        "TOA 4 Tropical Architecture refined markdown lines 622-660",
+        "TOA 4 Tropical Architecture refined markdown lines 708-710"
+      ],
+      "checked_pdf_pages": "raw PDF pages 1, 5-11, 13, 15-18, 20-21, 23-24, 28, 41, 71-78, 81-84, 87-90, 92-100, 104, 106-110, 121, 140, 143-148, 151, 163, 172, 180-181, and 187",
+      "local_audit_note": "Primary truth is the local raw PDF family; refined markdown line ranges are locator aids for the checked claims."
     }
-  ]
+  ],
+  "sources_hash": "sha256:5d10045fb944c09ea297843160b74fa83763ef1e90e6a353fa2046f54133d3d6"
 }

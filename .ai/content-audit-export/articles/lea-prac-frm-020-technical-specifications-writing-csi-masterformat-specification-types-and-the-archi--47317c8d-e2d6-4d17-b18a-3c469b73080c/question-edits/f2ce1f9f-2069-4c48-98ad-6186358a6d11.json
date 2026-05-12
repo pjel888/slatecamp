@@ -1,0 +1,83 @@
+{
+  "question_id": "f2ce1f9f-2069-4c48-98ad-6186358a6d11",
+  "baseline_hash": "sha256:34e46660f6933deef09a4091100904bf2f2fc958b151630f40e7b85b1229874b",
+  "action": "replace",
+  "reason": "source-audited-article-batch-036-local-first: source-safe replacement grounded in local raw PDF/source family evidence; removes unsupported, stale, or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-036",
+  "approved_at": "2026-05-11T12:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-036-local-first",
+    "checked_sources": [
+      {
+        "source_id": "uap-document-301-local",
+        "label": "UAP Document 301 - General Conditions",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "checked_markdown_lines": [
+          "UAP Document 301 refined markdown lines 478-529",
+          "UAP Document 301 refined markdown lines 531-573",
+          "UAP Document 301 refined markdown lines 579-604",
+          "UAP Document 301 refined markdown lines 608-662"
+        ]
+      },
+      {
+        "source_id": "ciap-document-102-local",
+        "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+        "checked_markdown_lines": [
+          "CIAP Document 102 refined markdown lines 180-213",
+          "CIAP Document 102 refined markdown lines 215-258"
+        ]
+      },
+      {
+        "source_id": "ra-9184-government-procurement-irr-local",
+        "label": "RA 9184 Government Procurement IRR",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/RA 9184 IRR - Government Procurement IRR.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9184/RA 9184 IRR - Government Procurement IRR.md",
+        "checked_markdown_lines": [
+          "RA 9184 IRR refined markdown lines 24-50",
+          "RA 9184 IRR refined markdown lines 145-151",
+          "RA 9184 IRR refined markdown lines 167-201"
+        ]
+      },
+      {
+        "source_id": "uap-document-401-402-local",
+        "label": "UAP Document 401-402 - Architect-Owner Agreement",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
+        "checked_markdown_lines": [
+          "UAP Document 401-402 refined markdown lines 45-72",
+          "UAP Document 401-402 refined markdown lines 77-89",
+          "UAP Document 401-402 refined markdown lines 105-119"
+        ]
+      }
+    ],
+    "citation": "UAP Document 301; RA 9184 IRR"
+  },
+  "proposed": {
+    "text": "What should a source-safe specification avoid?",
+    "options": [
+      {
+        "id": "b036-4731-10-a",
+        "text": "Vague unsupported quality words unless the contract defines measurable requirements, samples, or approval procedures"
+      },
+      {
+        "id": "b036-4731-10-b",
+        "text": "Written material requirements"
+      },
+      {
+        "id": "b036-4731-10-c",
+        "text": "Coordination with drawings"
+      },
+      {
+        "id": "b036-4731-10-d",
+        "text": "References to applicable laws and regulations"
+      }
+    ],
+    "correct_option_id": "b036-4731-10-a",
+    "rationale": "Correct answer: Vague unsupported quality words unless the contract defines measurable requirements, samples, or approval procedures. This is directly supported by UAP Document 301; RA 9184 IRR.",
+    "explanation": "The source-audited correction uses only the local raw PDF family and locator-checked refined markdown for UAP Document 301; RA 9184 IRR.",
+    "code_citation": "UAP Document 301; RA 9184 IRR"
+  }
+}

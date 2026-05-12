@@ -1,10 +1,10 @@
 # SlateCamp 3D Lab — UX/UI Research & Implementation Plan
 
-**Module:** Site Development Controls — 3D Lab  
-**Current Stack:** Next.js 14 · React Three Fiber · Zustand · Tailwind · Shadcn  
-**Design System:** SlateCamp Design System v1 (Rams Standard)  
-**Date:** April 2026  
-**Version:** 2.0 — UX Overhaul  
+**Module:** Site Development Controls — 3D Lab
+**Current Stack:** Next.js 14 · React Three Fiber · Zustand · Tailwind · Shadcn
+**Design System:** SlateCamp Design System v1 (Rams Standard)
+**Date:** April 2026
+**Version:** 2.0 — UX Overhaul
 
 ---
 
@@ -315,7 +315,7 @@ BUILDING PARAMETERS
 │  │ FLAR applied   2.20 │ │
 │  │ GFA allowable  660  │ │
 │  │ TGFA (FLAR)    990  │ │
-│  │ TGFA (BHL)     680  │ │ 
+│  │ TGFA (BHL)     680  │ │
 │  │ TGFA (govern)  680  │ │
 │  │ Max floors     5F   │ │
 │  └─────────────────────┘ │
@@ -975,12 +975,12 @@ Before shipping each phase, verify:
 ### SlateCamp Internal
 - SlateCamp Design System v1 (Rams Standard)
 - 3D Interaction Design Guide
-- 3D Visual Rendering Guide  
+- 3D Visual Rendering Guide
 - 3D Information Design Guide
 - PD 1096 Rules VII & VIII UX Implementation Plan
 - Lot Plotting UX/UI Guide
 
 ---
 
-*Document prepared by SlateCamp UX Design + 3D Lab Engineering*  
+*Document prepared by SlateCamp UX Design + 3D Lab Engineering*
 *April 2026*

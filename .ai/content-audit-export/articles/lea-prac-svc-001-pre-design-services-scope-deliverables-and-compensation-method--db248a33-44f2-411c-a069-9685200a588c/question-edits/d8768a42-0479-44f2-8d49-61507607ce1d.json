@@ -1,0 +1,73 @@
+{
+  "question_id": "d8768a42-0479-44f2-8d49-61507607ce1d",
+  "baseline_hash": "sha256:1fc72fedfc9524ae38ae40b0959df5163553d4e637176994e7362c7ede5fb43a",
+  "action": "replace",
+  "reason": "source-audited-article-batch-021-local-first rewrote this linked question to align with the local source audit for lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method.",
+  "approved_by": "codex-local-source-audit-batch-021",
+  "approved_at": "2026-05-11T10:30:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "db248a33-44f2-411c-a069-9685200a588c",
+    "parent_article_slug": "lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UAP SPP Document 201 local raw PDF and refined markdown, pre-design scope and compensation provisions",
+    "checked_markdown_lines": [
+      "SPP 201 refined markdown lines 245-255",
+      "SPP 201 refined markdown lines 268-415",
+      "SPP 201 refined markdown lines 425-447"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+        "sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+        "source_id": "spp-201-predesign-services-local-raw-pdf",
+        "locator": "SPP 201 refined markdown lines 245-255, 268-415, and 425-447"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+        "sha256": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
+        "source_id": "spp-201-predesign-services-local-raw-pdf",
+        "locator": "SPP 201 refined markdown lines 245-255, 268-415, and 425-447"
+      }
+    ],
+    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+  },
+  "proposed": {
+    "text": "Which compensation method is checked in the SPP 201 source for this local repair?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Percentage of project construction cost only"
+      },
+      {
+        "id": "b",
+        "text": "Technical-service costs multiplied by a multiplier for overhead and profit"
+      },
+      {
+        "id": "c",
+        "text": "A mandatory fixed lump sum for all pre-design work"
+      },
+      {
+        "id": "d",
+        "text": "A contractor cost-plus method"
+      }
+    ],
+    "correct_option_id": "b",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "The checked source computes compensation by adding technical-service costs and multiplying by a multiplier for overhead and profit.",
+    "explanation": "This repair does not carry forward unsupported compensation methods from the prior article.",
+    "code_citation": "SPP 201 refined markdown lines 437-447",
+    "bloom_level": "apply",
+    "application_context": "code_interpretation",
+    "practice_context": [
+      "professional practice",
+      "compensation"
+    ],
+    "difficulty": 0.66,
+    "is_assessment": false,
+    "model_id": "BATCH-021-spp201-003"
+  }
+}

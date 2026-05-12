@@ -1,9 +1,9 @@
 # SlateCamp — Readiness Score Anti-Inflation System
 ## Brief for the Database Architect
 
-**Prepared by:** Product Architect  
-**Date:** March 2026  
-**Classification:** Internal · Architecture Decision  
+**Prepared by:** Product Architect
+**Date:** March 2026
+**Classification:** Internal · Architecture Decision
 
 ---
 
@@ -278,5 +278,5 @@ The only visible change to existing data is `sub_scores` in `readiness_score_sna
 
 ---
 
-*SlateCamp · Readiness Score Anti-Inflation System Brief · March 2026*  
+*SlateCamp · Readiness Score Anti-Inflation System Brief · March 2026*
 *Prepared by: Product Architect · For: Database Architect*

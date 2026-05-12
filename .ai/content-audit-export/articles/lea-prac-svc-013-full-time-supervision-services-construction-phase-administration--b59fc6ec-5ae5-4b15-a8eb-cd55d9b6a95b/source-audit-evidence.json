@@ -1,0 +1,82 @@
+{
+  "article_id": "b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b",
+  "slug": "lea-prac-svc-013-full-time-supervision-services-construction-phase-administration",
+  "batch_id": "source-audited-article-batch-020-local-first",
+  "generated_at": "2026-05-10T16:41:51.472Z",
+  "mode": "local_first_no_supabase_no_deploy_no_commit",
+  "status": "locally_source_audited",
+  "raw_pdf_audit": [
+    {
+      "source_id": "spp-204a-uap-local-raw-pdf",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204A.pdf",
+      "raw_pdf_sha256": "sha256:ec08811ae8611f077fda9f0d1106cc7fab6a1e6210fe6d617637adaa6de083b8",
+      "ocr_pdf_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/ocr_pdf/UAP/SPP 204A.pdf",
+      "ocr_pdf_sha256": "sha256:39d9b58861880331c15e33c5ffa44c9a2d3e111679ed9763aa2d8c54a1109a8b",
+      "checked_markdown_lines": [
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md",
+          "checked_lines": [
+            "3-8"
+          ],
+          "note": "Document title identifies Fulltime Supervision Services."
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md",
+          "checked_lines": [
+            "201-206"
+          ],
+          "note": "Scope of services list: quality control, evaluation of construction work, daily inspection reports, filing of documents."
+        }
+      ],
+      "note": "Raw PDF is retained as the authority file; local OCR/refined Markdown was used for line-level verification."
+    }
+  ],
+  "article_repair": {
+    "normalized_md_rewritten": true,
+    "candidate_md_to_be_recomposed": true,
+    "ui_blocks_removed_from_current_candidate": true,
+    "old_internal_generation_notes_removed": true,
+    "risky_claims_removed_or_rewritten": [
+      "Removed prior historical evolution claims.",
+      "Removed unverified supervision-group organization and compensation method details.",
+      "Removed unrelated phase-fee UI material."
+    ]
+  },
+  "claim_support": [
+    {
+      "claim": "SPP 204-A identifies Fulltime Supervision Services.",
+      "support_status": "source_supported",
+      "support_sources": [
+        {
+          "source_id": "spp-204a-uap-local-raw-pdf",
+          "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md lines 3-8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md lines 201-206"
+        }
+      ]
+    },
+    {
+      "claim": "The checked SPP 204-A scope list includes quality control, evaluation of construction work, daily inspection reports, and filing of documents.",
+      "support_status": "source_supported",
+      "support_sources": [
+        {
+          "source_id": "spp-204a-uap-local-raw-pdf",
+          "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md lines 3-8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md lines 201-206"
+        }
+      ]
+    },
+    {
+      "claim": "This cluster is source-safe when it avoids broader construction-phase administration claims not verified in the checked lines.",
+      "support_status": "source_supported",
+      "support_sources": [
+        {
+          "source_id": "spp-204a-uap-local-raw-pdf",
+          "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md lines 3-8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md lines 201-206"
+        }
+      ]
+    }
+  ],
+  "question_repair_policy": {
+    "action": "replace_linked_questions_with_source_safe_versions",
+    "answer_key_changes_expected": true,
+    "allowed_question_scope": "Only concepts directly supported by the checked SPP source lines are used."
+  }
+}

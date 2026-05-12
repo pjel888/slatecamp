@@ -1,0 +1,77 @@
+{
+  "question_id": "f8c4fecf-8b7d-4bb2-878e-7f81e32de408",
+  "baseline_hash": "sha256:d15781ad37a8e909e43dd53dc9d978d451e5b302f0e4f2b763aff7de4501e7f2",
+  "action": "replace",
+  "reason": "source-audited-article-batch-083-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-003-05-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-083",
+  "approved_at": "2026-05-12T06:25:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "99ee4b30-1612-422c-af69-9a496deb6d79",
+    "parent_article_slug": "lea-matl-003-05-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Metals Lecture refined markdown lines 638-812; Building Construction Illustrated lines 3378-3570 and 6616-6792; Building Construction 1 Lecture lines 1099-1113; raw PDF pages 55, 57, 58, 121, and 23 checked by local PyMuPDF extraction.",
+    "checked_markdown_lines": [
+      "Metals Lecture refined markdown lines 638-812; Building Construction Illustrated lines 3378-3570 and 6616-6792; Building Construction 1 Lecture lines 1099-1113; raw PDF pages 55, 57, 58, 121, and 23 checked by local PyMuPDF extraction."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "metals-lecture-b083",
+        "label": "Metals Lecture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Metals Lecture.pdf",
+        "sha256": "sha256:cd9cd4ee534bda9a974447c4ec73b13b12d5abf1c14df1fca408a2c4530650dd",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Metals Lecture.md",
+        "raw_markdown_sha256": "sha256:4e9e0a042f2eef2c80d33af81512ca2cf32778cae64351af9dc54df58db3694c",
+        "locator": "Metals Lecture refined markdown lines 1-220, 420-555, and 638-812; raw PDF pages 2, 32, 55, 57, and 58 checked by local PyMuPDF extraction."
+      },
+      {
+        "source_id": "building-construction-illustrated-b083",
+        "label": "Building Construction Illustrated, 5th Edition",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "raw_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "locator": "Building Construction Illustrated refined markdown lines 3378-3570, 6616-6792, 15420-15510, and 15680-15745; raw PDF pages 121, 422, 423, 427, and 428 checked by local PyMuPDF extraction."
+      },
+      {
+        "source_id": "building-construction-1-lecture-b083",
+        "label": "Building Construction 1 Lecture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction 1 Lecture.pdf",
+        "sha256": "sha256:a53ebfbccb0c0f53503a8f76385836d46c6951cb4350c8af10420239fd23e231",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction 1 Lecture.md",
+        "raw_markdown_sha256": "sha256:298206511059efbfa480e3dc0d9caab8f0270aa5c1288bf8987ae53790caccec",
+        "locator": "Building Construction 1 Lecture refined markdown lines 1099-1113 and 1418-1444; raw PDF pages 23 and 30 checked by local PyMuPDF extraction."
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 083 local raw-source-audited welding_metal_joining scope."
+  },
+  "proposed": {
+    "text": "Why should soldering not be used where a strong joint is required?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Soldered joints have little tensile, shear, or impact strength"
+      },
+      {
+        "id": "b",
+        "text": "Soldering always makes steel stronger than welding"
+      },
+      {
+        "id": "c",
+        "text": "Soldering is the same as ashlar work"
+      },
+      {
+        "id": "d",
+        "text": "Soldering requires Portland cement"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The Metals Lecture warns that soldered joints have very little tensile, shear, or impact strength.",
+    "explanation": "The Metals Lecture warns that soldered joints have very little tensile, shear, or impact strength.",
+    "code_citation": "Metals Lecture; Building Construction Illustrated; Building Construction 1 Lecture",
+    "bloom_level": "understand",
+    "application_context": "source_audited_local_first_batch_083",
+    "practice_context": [],
+    "difficulty": 0.5
+  }
+}

@@ -1,0 +1,313 @@
+{
+  "batch_id": "source-audited-article-batch-028-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T15:30:00.000+08:00",
+  "article_id": "a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
+  "slug": "lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda",
+  "title": "Bid Documents Contents Interpretation and Issuing Addenda",
+  "status": "local_pass_ready_for_final_publishing_review",
+  "article_folder": ".ai/content-audit-export/articles/lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda--a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
+  "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda--a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
+  "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda--a6eaa2f0-1220-44ea-9bf3-3e90f791b71f/question-edits",
+  "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda--a6eaa2f0-1220-44ea-9bf3-3e90f791b71f/question-edits",
+  "linked_questions": 10,
+  "question_edits_created": 10,
+  "source_safe_rewrite_question_edits": 10,
+  "classification": {
+    "legal_or_code_content": true,
+    "requires_raw_pdf_audit": true,
+    "local_first_only": true
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "local_first_only": true,
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "blockers": [],
+    "warnings": [
+      "Local-first content batch only; final Supabase publishing requires separate review/apply phase."
+    ]
+  },
+  "source_audit": {
+    "checked_sources": [
+      {
+        "source_id": "uap-document-301-general-conditions-local",
+        "label": "UAP Document 301 - General Conditions for construction contract documents",
+        "authority": "United Architects of the Philippines / PRC Board approved general conditions source",
+        "source_type": "professional_practice_contract_pdf",
+        "source_locator": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "refined_markdown_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+        "checked_markdown_lines": [
+          "UAP Document 301 lines 472-545",
+          "UAP Document 301 lines 923-998",
+          "UAP Document 301 lines 1019-1051",
+          "UAP Document 301 lines 1062-1090"
+        ],
+        "use": "primary local source for source-safe article and question rewrite claims",
+        "local_source_checked": true
+      },
+      {
+        "source_id": "ciap-document-102-private-construction-contract-local",
+        "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
+        "authority": "Construction Industry Authority of the Philippines / DTI private construction contract source",
+        "source_type": "construction_contract_pdf",
+        "source_locator": "CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+        "refined_markdown_sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
+        "checked_markdown_lines": [
+          "CIAP Document 102 lines 169-258",
+          "CIAP Document 102 lines 712-761",
+          "CIAP Document 102 lines 807-820"
+        ],
+        "use": "primary local source for source-safe article and question rewrite claims",
+        "local_source_checked": true
+      }
+    ],
+    "source_locator": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090; CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820",
+    "checked_markdown_lines": [
+      "UAP Document 301 lines 472-545",
+      "UAP Document 301 lines 923-998",
+      "UAP Document 301 lines 1019-1051",
+      "UAP Document 301 lines 1062-1090",
+      "CIAP Document 102 lines 169-258",
+      "CIAP Document 102 lines 712-761",
+      "CIAP Document 102 lines 807-820"
+    ]
+  },
+  "claims": [
+    {
+      "claim_id": "batch-028-lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda-question-001",
+      "claim_text": "Question ff397f9a-d371-4697-b5f4-b3b01a03e96b / model BATCH-028-lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda-001 rewritten to source-safe local form.",
+      "question_id": "ff397f9a-d371-4697-b5f4-b3b01a03e96b",
+      "model_id": "BATCH-028-lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda-001",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "CIAP Document 102 lines 171-177",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-028-lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda-question-002",
+      "claim_text": "Question fe3e22fa-85cd-4ae3-b22f-0f596e04807a / model BATCH-028-lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda-002 rewritten to source-safe local form.",
+      "question_id": "fe3e22fa-85cd-4ae3-b22f-0f596e04807a",
+      "model_id": "BATCH-028-lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda-002",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 lines 472-480",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-028-lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda-question-003",
+      "claim_text": "Question ce9954fb-6292-4e96-9f0d-e3e9da602977 / model BATCH-028-lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda-003 rewritten to source-safe local form.",
+      "question_id": "ce9954fb-6292-4e96-9f0d-e3e9da602977",
+      "model_id": "BATCH-028-lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda-003",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 lines 523-527",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-028-lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda-question-004",
+      "claim_text": "Question 7d023e7b-6daa-4b36-87d3-456e06aed8e4 / model BATCH-028-lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda-004 rewritten to source-safe local form.",
+      "question_id": "7d023e7b-6daa-4b36-87d3-456e06aed8e4",
+      "model_id": "BATCH-028-lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda-004",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 lines 536-545",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-028-lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda-question-005",
+      "claim_text": "Question 0b29f2ec-57bf-451a-ac67-c7775c0f11a8 / model BATCH-028-lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda-005 rewritten to source-safe local form.",
+      "question_id": "0b29f2ec-57bf-451a-ac67-c7775c0f11a8",
+      "model_id": "BATCH-028-lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda-005",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "CIAP Document 102 lines 226-230",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-028-lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda-question-006",
+      "claim_text": "Question 38fea3d8-e0dd-4b98-91a2-d24f44bdd131 / model BATCH-028-lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda-006 rewritten to source-safe local form.",
+      "question_id": "38fea3d8-e0dd-4b98-91a2-d24f44bdd131",
+      "model_id": "BATCH-028-lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda-006",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "CIAP Document 102 lines 232-242",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-028-lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda-question-007",
+      "claim_text": "Question 48ae83be-231f-4def-bb0e-af02e62e895b / model BATCH-028-lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda-007 rewritten to source-safe local form.",
+      "question_id": "48ae83be-231f-4def-bb0e-af02e62e895b",
+      "model_id": "BATCH-028-lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda-007",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 lines 523-545",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-028-lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda-question-008",
+      "claim_text": "Question 81199809-d9c3-4622-be93-3d73f84313e5 / model BATCH-028-lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda-008 rewritten to source-safe local form.",
+      "question_id": "81199809-d9c3-4622-be93-3d73f84313e5",
+      "model_id": "BATCH-028-lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda-008",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "CIAP Document 102 lines 202-207",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-028-lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda-question-009",
+      "claim_text": "Question 7677ef3b-3338-4156-bc0b-70bb42d833a3 / model BATCH-028-lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda-009 rewritten to source-safe local form.",
+      "question_id": "7677ef3b-3338-4156-bc0b-70bb42d833a3",
+      "model_id": "BATCH-028-lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda-009",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "CIAP Document 102 lines 176-178",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-028-lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda-question-010",
+      "claim_text": "Question 5bb2b5cd-45f8-4af6-a730-dc886f4f4525 / model BATCH-028-lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda-010 rewritten to source-safe local form.",
+      "question_id": "5bb2b5cd-45f8-4af6-a730-dc886f4f4525",
+      "model_id": "BATCH-028-lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda-010",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "ciap-document-102-private-construction-contract-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 lines 523-545; CIAP Document 102 lines 219-258",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "sme_review": {
+    "required": false,
+    "status": "PASS"
+  },
+  "removed_or_rewritten_claims": [
+    "Removed unresolved SLATECAMP_UI_BLOCK placeholder sections because ui-blocks.json had zero preserved blocks for these bundles.",
+    "Removed unsupported RA 9184/private-award, AIA, cure-period, lien-remedy, and Civil Code liability claims unless supported by the checked local source set.",
+    "Rewrote linked questions to source-safe prompts and answer keys anchored to exact local source locators."
+  ],
+  "target": {
+    "article_id": "a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
+    "slug": "lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda",
+    "normalized_sha256": "sha256:f4723a6575431a810fb6183f064b4b8df4ced825fcea0b683d547d5882f39d49",
+    "candidate_sha256": "sha256:f4723a6575431a810fb6183f064b4b8df4ced825fcea0b683d547d5882f39d49",
+    "sources_sha256": "sha256:ae3a314521f50e4296cdfe75abf571c3e20ae3aed2b31fd65da78737bfb3b6ed",
+    "diff_report_sha256": "sha256:5ebdde797c2df2f7389b64bf619349e67dacef90c07505c4a6b2be107e62180b",
+    "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda--a6eaa2f0-1220-44ea-9bf3-3e90f791b71f/question-edits",
+    "question_edits_count": 10
+  },
+  "validation": {
+    "compose_blockers": [],
+    "diff_safe_to_push": true,
+    "diff_blockers": [],
+    "local_first_only": true,
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false
+  }
+}

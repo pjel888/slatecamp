@@ -1,0 +1,49 @@
+{
+  "question_id": "9d886b80-3510-4ba5-b735-0a8f6d3fa017",
+  "baseline_hash": "sha256:fe0770e4e83185b3b4de24a5f8c8826909a14b9c02f4fd5f2f105b67f40b32c8",
+  "action": "replace",
+  "reason": "source-audited-article-batch-039-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-039",
+  "approved_at": "2026-05-11T13:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-039-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 4007-4064",
+          "PD 1096 RIRR refined markdown lines 4109-4303"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 1302"
+  },
+  "proposed": {
+    "text": "What rated speed limit applies to escalators?",
+    "options": [
+      {
+        "id": "b039-aeee-13-a",
+        "text": "Not more than 38 m per minute"
+      },
+      {
+        "id": "b039-aeee-13-b",
+        "text": "Not more than 7.60 m per minute"
+      },
+      {
+        "id": "b039-aeee-13-c",
+        "text": "Not more than 50 m per minute"
+      },
+      {
+        "id": "b039-aeee-13-d",
+        "text": "No speed limit is stated"
+      }
+    ],
+    "correct_option_id": "b039-aeee-13-a",
+    "rationale": "Correct answer: Not more than 38 m per minute. This is directly supported by PD 1096 2004 Revised IRR, Section 1302.",
+    "explanation": "The Batch 039 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 1302.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 1302"
+  }
+}

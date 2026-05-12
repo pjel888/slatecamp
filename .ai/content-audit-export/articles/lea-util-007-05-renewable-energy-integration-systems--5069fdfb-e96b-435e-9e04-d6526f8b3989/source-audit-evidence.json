@@ -1,0 +1,162 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-049-local-first",
+  "batch_number": 49,
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T20:55:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "5069fdfb-e96b-435e-9e04-d6526f8b3989",
+    "slug": "lea-util-007-05-renewable-energy-integration-systems",
+    "title": "Alternative energy and sustainability systems",
+    "article_folder": ".ai/content-audit-export/articles/lea-util-007-05-renewable-energy-integration-systems--5069fdfb-e96b-435e-9e04-d6526f8b3989",
+    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-007-05-renewable-energy-integration-systems--5069fdfb-e96b-435e-9e04-d6526f8b3989",
+    "candidate_path": ".ai/content-audit-export/articles/lea-util-007-05-renewable-energy-integration-systems--5069fdfb-e96b-435e-9e04-d6526f8b3989/candidate.md",
+    "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-007-05-renewable-energy-integration-systems--5069fdfb-e96b-435e-9e04-d6526f8b3989/candidate.md",
+    "question_edits_folder": ".ai/content-audit-export/articles/lea-util-007-05-renewable-energy-integration-systems--5069fdfb-e96b-435e-9e04-d6526f8b3989/question-edits",
+    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-007-05-renewable-energy-integration-systems--5069fdfb-e96b-435e-9e04-d6526f8b3989/question-edits",
+    "normalized_sha256": "sha256:2a7d9b0c5281a4cbfaacc3d1f08969d9fc859e7f104788a320f58675245df0a1",
+    "candidate_sha256": "sha256:2a7d9b0c5281a4cbfaacc3d1f08969d9fc859e7f104788a320f58675245df0a1",
+    "linked_questions_sha256": "sha256:92eb2be980bd952ba3fe9a3d44e26ce3f64f482bec63c3b4becc3606f9dfbaac",
+    "sources_sha256": "sha256:5c3ba883e900e6258fe9ee1e7f7683731bdcc409f9f377d2523a561787634355"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "refined_markdown_role": "locator_only",
+    "derivative_or_search_layer_as_primary": false,
+    "source_families_checked": [
+      {
+        "label": "Philippine Electrical Code - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+        "raw_pdf_sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+        "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3",
+        "locator": "Philippine Electrical Code refined markdown lines 29229-29315, 29472-29504, 29595-29610, 29694-29723, and 29830-29855"
+      },
+      {
+        "label": "RA 11285 Energy Efficiency and Conservation Act - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf",
+        "raw_pdf_sha256": "sha256:316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.md",
+        "refined_markdown_sha256": "sha256:d2baa0e8d4ffe0059688783a4d31ac0e121517daca939f18a048fe053e76cdd4",
+        "locator": "RA 11285 refined markdown lines 31-105, 599-613, 719-775, and 1086-1124"
+      },
+      {
+        "label": "DOE Guidelines on Energy Conserving Design of Buildings - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+        "raw_pdf_sha256": "sha256:9a1a4019b500ffc2873625db6f04ac50b39aea7cadac9159464f9ed716e8126c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.md",
+        "refined_markdown_sha256": "sha256:477f0990a67359eee303e8280a00be449d0aa413252161db7b5b1bafec3012b9",
+        "locator": "DOE Guidelines refined markdown lines 21-43, 260-273, 321-425, and 707-785"
+      },
+      {
+        "label": "George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+        "raw_pdf_sha256": "sha256:ff7231f0059a1febaf4a0996a425caca3b7676c23c729f922e385af4e4c20d28",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
+        "refined_markdown_sha256": "sha256:1b9249c90c0b86c57c6df2f20f0ab210ac112a10230bd9bce584461773d75215",
+        "locator": "George Salvan Utilities 2 refined markdown lines 8600-8610, 9064-9128, 9146-9153, 9220-9244, 9427-9435, and 9465-9471"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "renewable_energy_integration_article",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 15,
+    "question_edits_created": [
+      "1102c25d-d45f-40e6-8fe1-11a7b4bce59c",
+      "1bbb69cf-3498-48aa-8266-ccccb2e3f839",
+      "68101518-19dd-48eb-b897-a802a67eb237",
+      "a13c93a6-dc75-4a25-8164-32d2274c4fa4",
+      "dd6dde75-770d-4fca-9bde-03c298386071",
+      "2acd59da-3aad-4f91-9e85-5797cad693f6",
+      "9240460a-6552-4a59-9dbc-194144e04ff7",
+      "3db1b469-ab4a-491b-8e6d-fd42cd10fe80",
+      "49a4daf1-6200-4a82-ba96-f4fdf5f2ccb6",
+      "4870bacb-e978-4b63-98d9-56172aa9226d",
+      "2a3732bb-7017-4fcf-820a-904cbd5eb6af",
+      "2201bf50-63f2-4331-9bfd-f118b74f205e",
+      "9a09c14e-2398-442e-b3ce-aa174e404db2",
+      "a1cad26e-643c-485e-b11a-5ff40f6936b1",
+      "9b2e0471-e56b-4065-b99d-6262d5933d90"
+    ]
+  },
+  "claims": [
+    {
+      "claim_id": "lea-util-007-05-renewable-energy-integration-systems-b049-claim-01",
+      "claim_text": "RA 11285 frames energy efficiency, conservation, and efficient renewable technologies as part of national energy policy.",
+      "source_support": [
+        "pec-local-raw-pdf--b049-5069fdfb-01",
+        "ra11285-local-raw-pdf--b049-5069fdfb-02",
+        "doe-local-raw-pdf--b049-5069fdfb-03",
+        "salvan2-local-raw-pdf--b049-5069fdfb-04"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-util-007-05-renewable-energy-integration-systems-b049-claim-02",
+      "claim_text": "DOE Guidelines apply to new buildings and expansions or modifications and address lighting, controls, daylighting coordination, and envelope OTTV.",
+      "source_support": [
+        "pec-local-raw-pdf--b049-5069fdfb-01",
+        "ra11285-local-raw-pdf--b049-5069fdfb-02",
+        "doe-local-raw-pdf--b049-5069fdfb-03",
+        "salvan2-local-raw-pdf--b049-5069fdfb-04"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-util-007-05-renewable-energy-integration-systems-b049-claim-03",
+      "claim_text": "PEC Article 6.90 covers solar photovoltaic systems including arrays, inverters, controllers, disconnects, grounding, plaques, and utility-interactive behavior.",
+      "source_support": [
+        "pec-local-raw-pdf--b049-5069fdfb-01",
+        "ra11285-local-raw-pdf--b049-5069fdfb-02",
+        "doe-local-raw-pdf--b049-5069fdfb-03",
+        "salvan2-local-raw-pdf--b049-5069fdfb-04"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-util-007-05-renewable-energy-integration-systems-b049-claim-04",
+      "claim_text": "Solar systems have architectural implications for thermal efficiency, orientation, insulation, shade control, and roof or wall integration.",
+      "source_support": [
+        "pec-local-raw-pdf--b049-5069fdfb-01",
+        "ra11285-local-raw-pdf--b049-5069fdfb-02",
+        "doe-local-raw-pdf--b049-5069fdfb-03",
+        "salvan2-local-raw-pdf--b049-5069fdfb-04"
+      ],
+      "audit_result": "PASS"
+    }
+  ],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "removed_risk_notes": [
+      "Question sidecars replaced with checked local raw-source citations.",
+      "Article body rewritten from local raw PDF families and refined markdown locators only.",
+      "Legacy compose-error sidecars are removed after selected bundle compose passes."
+    ]
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_batch_049_complete": true,
+    "remote_publish_status": "not_attempted_by_request",
+    "remaining_local_blockers": []
+  },
+  "local_validation": {
+    "status": "PASS",
+    "valid": true,
+    "blockers": 0,
+    "checked_at": "2026-05-11T20:55:00.000+08:00",
+    "commands": [
+      "bun run content-audit:compose -- --article-id 5069fdfb-e96b-435e-9e04-d6526f8b3989 --overwrite --strict",
+      "bun run content-audit:diff -- --article-id 5069fdfb-e96b-435e-9e04-d6526f8b3989 --strict --summary",
+      "bun run content-audit:validate -- --article-id 5069fdfb-e96b-435e-9e04-d6526f8b3989 --summary",
+      "bun run content-audit:ui-block-edits -- --article-id 5069fdfb-e96b-435e-9e04-d6526f8b3989"
+    ]
+  }
+}

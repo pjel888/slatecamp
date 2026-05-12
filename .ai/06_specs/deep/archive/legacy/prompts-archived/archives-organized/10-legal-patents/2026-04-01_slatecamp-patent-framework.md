@@ -320,7 +320,7 @@ Once a patent application is filed with IPOPHL (filing receipt alone is sufficie
 
 Target 28–30 total claims (3 independent, 25–27 dependent). This provides:
 - Broad method protection (Claim 1)
-- System-level apparatus protection (Claim 2)  
+- System-level apparatus protection (Claim 2)
 - CAGE-specific method protection (Claim 3 — strongest novel element, zero prior art)
 - Granular dependent coverage across signal capture, feature extraction, inference, security, adaptive output, and implementation layers
 

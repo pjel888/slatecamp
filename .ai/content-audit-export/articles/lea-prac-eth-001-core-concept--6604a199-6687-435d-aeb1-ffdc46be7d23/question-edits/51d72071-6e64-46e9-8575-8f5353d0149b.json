@@ -1,0 +1,72 @@
+{
+  "question_id": "51d72071-6e64-46e9-8575-8f5353d0149b",
+  "baseline_hash": "sha256:96f47a34b0eeae7115af4a875b4d4cee5aaa67c02463cd0c491039e9828dbe4e",
+  "action": "replace",
+  "reason": "source-audited-article-batch-017-local-first rewrote linked question to match the locally checked UAP Code of Ethics source for lea-prac-eth-001-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-017",
+  "approved_at": "2026-05-10T23:30:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "6604a199-6687-435d-aeb1-ffdc46be7d23",
+    "parent_article_slug": "lea-prac-eth-001-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UAP Document Code of Ethics, introduction and Sections 1 through 5, raw markdown lines 23-118",
+    "checked_markdown_lines": [
+      "raw markdown lines 23-29",
+      "raw markdown lines 31-118"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+        "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+        "source_id": "uap-document-code-of-ethics",
+        "locator": "UAP Document Code of Ethics, introduction and Sections 1 through 5, raw markdown lines 23-118"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
+        "sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
+        "source_id": "uap-document-code-of-ethics-raw-markdown",
+        "locator": "UAP Document Code of Ethics, introduction and Sections 1 through 5, raw markdown lines 23-118"
+      }
+    ],
+    "local_source_safe_action": "Question was rewritten to avoid unverified PRBoA-resolution, hierarchy, or enforcement claims and to use only statements anchored in the raw UAP Code of Ethics source."
+  },
+  "proposed": {
+    "text": "When acting as professional adviser to the client, what quality must characterize the architect's advice under the Code introduction?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It must be unprejudiced."
+      },
+      {
+        "id": "b",
+        "text": "It must favor the lowest bidder."
+      },
+      {
+        "id": "c",
+        "text": "It must follow supplier preferences."
+      },
+      {
+        "id": "d",
+        "text": "It must avoid all cost discussion."
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "The Code introduction states that the architect acts as professional adviser to the client and that the advice must be unprejudiced.",
+    "explanation": "The Code introduction states that the architect acts as professional adviser to the client and that the advice must be unprejudiced.",
+    "code_citation": "UAP Document Code of Ethics, lines 25-27",
+    "bloom_level": "understand",
+    "application_context": "professional_practice",
+    "practice_context": [
+      "Code of Ethical Conduct",
+      "Professional ethics"
+    ],
+    "difficulty": 0.7,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-ETH-001-007"
+  }
+}

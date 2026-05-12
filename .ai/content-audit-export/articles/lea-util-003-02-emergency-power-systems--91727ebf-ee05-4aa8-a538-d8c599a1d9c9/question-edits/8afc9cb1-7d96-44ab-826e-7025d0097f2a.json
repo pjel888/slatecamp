@@ -1,0 +1,67 @@
+{
+  "question_id": "8afc9cb1-7d96-44ab-826e-7025d0097f2a",
+  "baseline_hash": "sha256:4fe48fb3380f093280297de178535e2904073b940781c895bda613292848c70f",
+  "action": "replace",
+  "reason": "source-audited-article-batch-041-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes stale or non-local framing where present.",
+  "approved_by": "codex-local-first-batch-041",
+  "approved_at": "2026-05-11T14:32:26.271+08:00",
+  "source_audit_support": {
+    "parent_article_id": "91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
+    "parent_article_slug": "lea-util-003-02-emergency-power-systems",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Phil Electrical Code refined markdown lines 360-424; Phil Electrical Code refined markdown lines 498-636; Phil Electrical Code refined markdown lines 670-724 | Electrical Layout and Estimate refined markdown lines 4305-4438",
+    "checked_markdown_lines": [
+      "Phil Electrical Code refined markdown lines 360-424",
+      "Phil Electrical Code refined markdown lines 498-636",
+      "Phil Electrical Code refined markdown lines 670-724",
+      "Electrical Layout and Estimate refined markdown lines 4305-4438"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "pec-2017-local-phil-electrical-code",
+        "label": "Philippine Electrical Code local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+        "sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+        "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3",
+        "locator": "Phil Electrical Code refined markdown lines 360-424; Phil Electrical Code refined markdown lines 498-636; Phil Electrical Code refined markdown lines 670-724"
+      },
+      {
+        "source_id": "fajardo-electrical-layout-estimate-2nd-ed-local",
+        "label": "Electrical Layout and Estimate, 2nd Edition, Max B. Fajardo Jr. and Leo R. Fajardo local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.pdf",
+        "sha256": "sha256:3cc20c7a3681cd41b427df17784582d578f8d772f1f50808a9c66d9390cbf244",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.md",
+        "refined_markdown_sha256": "sha256:e68e20c6b6a0dbb331c151d0814e182037564f63cf17a07284a6e126de62fc45",
+        "locator": "Electrical Layout and Estimate refined markdown lines 4305-4438"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 041 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "Which drawing item best confirms that emergency power is coordinated with the rest of the electrical system?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A one-line or circuit layout showing source, transfer, feeders, branch circuits, and overcurrent protection."
+      },
+      {
+        "id": "b",
+        "text": "A perspective rendering only."
+      },
+      {
+        "id": "c",
+        "text": "A tile pattern schedule."
+      },
+      {
+        "id": "d",
+        "text": "A planting plan only."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The PEC plan requirements include circuiting, load schedules, overcurrent protection, and one-line information.",
+    "explanation": "The PEC plan requirements include circuiting, load schedules, overcurrent protection, and one-line information.",
+    "code_citation": "PEC plan and one-line diagram provisions"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "question_id": "590ed1a3-f9f3-4549-9618-b57d5cab408c",
+  "baseline_hash": "sha256:e4708fe4150c1c714ad3480c5c59e503b63704a86e773009d41d81338f70a77f",
+  "action": "replace",
+  "reason": "source-audited-article-batch-038-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-038",
+  "approved_at": "2026-05-11T13:26:35+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-038-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 2087-2138",
+          "PD 1096 RIRR refined markdown lines 2246-2310",
+          "PD 1096 RIRR refined markdown lines 2352-2356"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Table VIII.3"
+  },
+  "proposed": {
+    "text": "For commercial buildings with RROW of 30.00 m and above, what front setback is listed in Table VIII.3?",
+    "options": [
+      {
+        "id": "b038-dc69-07-a",
+        "text": "8.00 m"
+      },
+      {
+        "id": "b038-dc69-07-b",
+        "text": "5.00 m"
+      },
+      {
+        "id": "b038-dc69-07-c",
+        "text": "6.00 m"
+      },
+      {
+        "id": "b038-dc69-07-d",
+        "text": "2.00 m"
+      }
+    ],
+    "correct_option_id": "b038-dc69-07-a",
+    "rationale": "Correct answer: 8.00 m. This is directly supported by PD 1096 2004 Revised IRR, Table VIII.3.",
+    "explanation": "The Batch 038 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Table VIII.3.",
+    "code_citation": "PD 1096 2004 Revised IRR, Table VIII.3"
+  }
+}

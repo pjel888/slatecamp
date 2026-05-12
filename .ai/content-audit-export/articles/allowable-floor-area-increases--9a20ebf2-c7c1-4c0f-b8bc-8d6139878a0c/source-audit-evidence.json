@@ -1,0 +1,168 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-039-local-first",
+  "audited_at": "2026-05-11T13:45:00+08:00",
+  "audit_date": "2026-05-11",
+  "target": {
+    "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+    "slug": "allowable-floor-area-increases",
+    "candidate_sha256": "sha256:607ae35ebe9eaf2b8ad8c9272ccecca504da7ec78b99660c0aa2857ccd94708a",
+    "candidate_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c/candidate.md"
+  },
+  "paths": {
+    "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+    "normalized_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c/normalized.md",
+    "candidate_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c/candidate.md",
+    "sources_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c/sources.json",
+    "question_edits": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c/question-edits"
+  },
+  "classification": {
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high",
+    "requires_raw_pdf_audit": true
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+      "title": "PD 1096 2004 Revised IRR - DPWH Official",
+      "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "checked_markdown_lines": [
+        "PD 1096 RIRR refined markdown lines 1390-1450",
+        "PD 1096 RIRR refined markdown lines 1452-1462"
+      ],
+      "source_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+      "derivative_layer_role": "locator aid only"
+    }
+  ],
+  "raw_sources": [
+    {
+      "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+      "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "tgfa-rule",
+      "claim_text": "Section 705 says allowable maximum total gross floor area is only as allowed under Rule VII.",
+      "claim_type": "article_or_question_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "pd-1096-rirr-2004-dpwh-official-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "quoted_pdf_excerpt": "Section 705 says allowable maximum total gross floor area is only as allowed under Rule VII.",
+        "locator": "PD 1096 RIRR refined markdown lines 1390-1396"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "table-vii-percentages",
+      "claim_text": "Section 705 uses Table VII.1 percentages of total lot area, excluding storey multipliers, to initially determine allowable maximum TGFA.",
+      "claim_type": "article_or_question_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "pd-1096-rirr-2004-dpwh-official-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "quoted_pdf_excerpt": "Section 705 uses Table VII.1 percentages of total lot area, excluding storey multipliers, to initially determine allowable maximum TGFA.",
+        "locator": "PD 1096 RIRR refined markdown lines 1392-1446"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "amvb-prevails",
+      "claim_text": "Section 705 requires TGFA crosscheck against AMVB and says AMVB must always prevail if exceeded.",
+      "claim_type": "article_or_question_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "pd-1096-rirr-2004-dpwh-official-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "quoted_pdf_excerpt": "Section 705 requires TGFA crosscheck against AMVB and says AMVB must always prevail if exceeded.",
+        "locator": "PD 1096 RIRR refined markdown lines 1393-1396"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "floor-area-increase-condition",
+      "claim_text": "Section 706 allows floor-area increases only in specific instances and conditions based on public space, streets, or yards along two or more sides, subject to Building Official approval.",
+      "claim_type": "article_or_question_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "pd-1096-rirr-2004-dpwh-official-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "quoted_pdf_excerpt": "Section 706 allows floor-area increases only in specific instances and conditions based on public space, streets, or yards along two or more sides, subject to Building Official approval.",
+        "locator": "PD 1096 RIRR refined markdown lines 1448-1451"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "height-more-restrictive-rule",
+      "claim_text": "Section 707 says building height is as allowed under Rule VII or the local zoning ordinance, whichever is more restrictive.",
+      "claim_type": "article_or_question_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "pd-1096-rirr-2004-dpwh-official-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "quoted_pdf_excerpt": "Section 707 says building height is as allowed under Rule VII or the local zoning ordinance, whichever is more restrictive.",
+        "locator": "PD 1096 RIRR refined markdown lines 1452-1462"
+      },
+      "blockers": []
+    }
+  ],
+  "removed_or_rewritten_material": [
+    "Removed foreign-code formula comparisons and fire-zone/construction-type claims not supported by the selected Rule VII source locators."
+  ],
+  "unverified_or_rejected_claims": [],
+  "source_safe_repair": {
+    "article_rewritten": true,
+    "question_edits_created": true,
+    "raw_pdf_first": true,
+    "derivative_layer_used_only_for_locator": true
+  },
+  "local_validation": {
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_edits": "PASS",
+    "scoped_checks": "PASS",
+    "targeted_tests": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "gate_results": {
+    "ui_markers_removed_or_resolved": true,
+    "internal_notes_removed": true,
+    "non_local_claims_removed": true,
+    "sources_json_updated": true,
+    "question_edits_created": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  },
+  "sme_review": {
+    "required": false,
+    "status": "PASS"
+  }
+}

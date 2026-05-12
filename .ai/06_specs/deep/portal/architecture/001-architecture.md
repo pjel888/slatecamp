@@ -30,12 +30,12 @@ flowchart TD
         AdminPortal[["Admin Portal (Content)"]]
         CEOPortal[["CEO Portal (Analytics)"]]
         DevPortal[["Developer Portal (Internal)"]]
-        
+
         DashboardPortal --> DashWiki[Wiki]
         DashboardPortal --> DashTesting[Testing Hub]
         DashboardPortal --> DashAnalytics[Analytics]
         DashboardPortal --> Dash3DLab[3D Lab]
-        
+
         AdminPortal --> AdminContent[Articles / Questions CRUD]
         AdminPortal --> AdminTaxonomy[Taxonomy Editor]
         AdminPortal --> AdminReview[SME Review]
@@ -86,17 +86,17 @@ flowchart TD
     %% Data Flow
     Portals --> |Mutations| ServerActions
     Portals --> |Server Components Fetch| Queries
-    
+
     ServerActions --> PedagogicalEngine
     Queries --> PedagogicalEngine
 
     ServerActions --> Auth
     ServerActions --> Postgres
     Queries --> Postgres
-    
+
     PedagogicalEngine --> |Calculates Mastery| Postgres
     Cron --> |run Daily compute-signals| PedagogicalEngine
-    
+
     AdminPortal --> |Payment triggers| LemonSqueezy
     DashTesting --> |AI Contextual Tutor| Anthropic
 ```

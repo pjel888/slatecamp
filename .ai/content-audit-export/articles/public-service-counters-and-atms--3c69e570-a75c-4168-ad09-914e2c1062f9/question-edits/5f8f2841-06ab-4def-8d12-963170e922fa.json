@@ -1,0 +1,59 @@
+{
+  "question_id": "5f8f2841-06ab-4def-8d12-963170e922fa",
+  "baseline_hash": "sha256:be03c56e8b949e992b25a469bedb77f9ca9c2f475c7a789e666d24f4d85ed32f",
+  "action": "replace",
+  "reason": "source-audited-article-batch-042-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes stale or non-local framing where present.",
+  "approved_by": "codex-local-first-batch-042",
+  "approved_at": "2026-05-11T15:13:00.657+08:00",
+  "source_audit_support": {
+    "parent_article_id": "3c69e570-a75c-4168-ad09-914e2c1062f9",
+    "parent_article_slug": "public-service-counters-and-atms",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "BP 344 2024 IRR refined markdown lines 395-446; BP 344 2024 IRR refined markdown lines 529-529; BP 344 2024 IRR refined markdown lines 1100-1173; BP 344 2024 IRR refined markdown lines 1200-1200; BP 344 2024 IRR refined markdown lines 1550-1550",
+    "checked_markdown_lines": [
+      "BP 344 2024 IRR refined markdown lines 395-446",
+      "BP 344 2024 IRR refined markdown lines 529-529",
+      "BP 344 2024 IRR refined markdown lines 1100-1173",
+      "BP 344 2024 IRR refined markdown lines 1200-1200",
+      "BP 344 2024 IRR refined markdown lines 1550-1550"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "bp-344-2024-rirr-ncda-local",
+        "label": "BP 344 2024 Revised IRR - NCDA local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+        "locator": "BP 344 2024 IRR refined markdown lines 395-446; BP 344 2024 IRR refined markdown lines 529-529; BP 344 2024 IRR refined markdown lines 1100-1173; BP 344 2024 IRR refined markdown lines 1200-1200; BP 344 2024 IRR refined markdown lines 1550-1550"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 042 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "What information output is required for kiosks, ATMs, and ticket machines?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Audio output with adjustable volume plus visible instructions, feedback, and prompts."
+      },
+      {
+        "id": "b",
+        "text": "Use a single high counter only."
+      },
+      {
+        "id": "c",
+        "text": "Omit clear floor approach space."
+      },
+      {
+        "id": "d",
+        "text": "Treat signage and communication as optional."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The checked local source supports: Audio output with adjustable volume plus visible instructions, feedback, and prompts.",
+    "explanation": "The checked local source supports: Audio output with adjustable volume plus visible instructions, feedback, and prompts.",
+    "code_citation": "BP 344 ATM/kiosk provisions"
+  }
+}

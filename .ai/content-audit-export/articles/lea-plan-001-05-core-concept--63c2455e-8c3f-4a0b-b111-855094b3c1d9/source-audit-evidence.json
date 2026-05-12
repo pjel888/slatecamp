@@ -1,0 +1,365 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-068-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T23:58:12+08:00",
+  "target": {
+    "article_id": "63c2455e-8c3f-4a0b-b111-855094b3c1d9",
+    "slug": "lea-plan-001-05-core-concept",
+    "title": "The Comprehensive Land Use Plan (CLUP)",
+    "article_folder": ".ai/content-audit-export/articles/lea-plan-001-05-core-concept--63c2455e-8c3f-4a0b-b111-855094b3c1d9",
+    "normalized_sha256": "sha256:2db3864274b08477f7ab4cca361beb934fbda56a84627dc828ca77a2e1c5147d",
+    "candidate_sha256": "sha256:2db3864274b08477f7ab4cca361beb934fbda56a84627dc828ca77a2e1c5147d",
+    "candidate_path": ".ai/content-audit-export/articles/lea-plan-001-05-core-concept--63c2455e-8c3f-4a0b-b111-855094b3c1d9/candidate.md"
+  },
+  "classification": {
+    "legal_or_code_candidate": true,
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "source_risk_tier": "high",
+    "source_domains": [
+      "RA 7160 Local Government Code - CLUP, zoning, and Sanggunian authority",
+      "Executive Order No. 72 - CLUP preparation, review, approval, and implementation",
+      "RA 11201 DHSUD Act of 2019 - DHSUD mandate and transferred land-use functions",
+      "RA 11201 IRR - DHSUD land-use planning, CLUP/ZO review, and regional office functions",
+      "HLURB CLUP Guidebook Volume 1 - planning process, spatial plan hierarchy, and situation analysis",
+      "Rationalizing the Local Planning System 2008 - political/technical planning structure and CLUP-ZO implementation"
+    ]
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdfs_checked_first": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "local_pdf_extraction_method": "python_pymupdf_local_plus_tesseract_for_scanned_RA11201",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "ra7160-local-planning-zoning-local-b068",
+      "label": "RA 7160 Local Government Code - CLUP, zoning, and Sanggunian authority",
+      "authority": "Local raw PDF and refined markdown conversion",
+      "source_type": "primary_law_pdf",
+      "source_locator": "RA 7160 refined markdown lines 197-209, 712-746, 2665-2668, 2902-2905, and 3130; raw PDF pages 15, 51-52, 194, 213, and 232 checked by local PDF extraction",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7160/RA 7160 The Local Government Code.pdf",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7160/RA 7160 The Local Government Code.md",
+      "checked_markdown_lines": [
+        "RA 7160 lines 197-209",
+        "RA 7160 lines 712-746",
+        "RA 7160 lines 2665-2668",
+        "RA 7160 lines 2902-2905",
+        "RA 7160 line 3130"
+      ],
+      "checked_raw_pdf_pages": [
+        "RA 7160 raw PDF page 15",
+        "RA 7160 raw PDF pages 51-52",
+        "RA 7160 raw PDF page 194",
+        "RA 7160 raw PDF page 213",
+        "RA 7160 raw PDF page 232"
+      ],
+      "use": "primary source for local CLUP, land reclassification, zoning ordinance, and Sanggunian authority claims",
+      "raw_pdf_sha256": "sha256:e270e8bc7bd84ba8ad7b6fe6780c12a3e5a6103e2b9395db13084266a5ff1fff",
+      "refined_markdown_sha256": "sha256:9f95493bd12c7f4b0989913d7e8783cdbc6235891fea9977c2aa77238c3dd392",
+      "local_source_checked": true
+    },
+    {
+      "source_id": "eo72-clup-review-implementation-local-b068",
+      "label": "Executive Order No. 72 - CLUP preparation, review, approval, and implementation",
+      "authority": "Local raw PDF and refined markdown conversion",
+      "source_type": "executive_order_pdf",
+      "source_locator": "EO 72 refined markdown lines 1-90; raw PDF pages 1-4 checked by local PDF extraction",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/EO/EO 72 Comprehensive Land use.pdf",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/EO/EO 72 Comprehensive Land use.md",
+      "checked_markdown_lines": [
+        "EO 72 lines 1-90"
+      ],
+      "checked_raw_pdf_pages": [
+        "EO 72 raw PDF page 1",
+        "EO 72 raw PDF page 2",
+        "EO 72 raw PDF page 3",
+        "EO 72 raw PDF page 4"
+      ],
+      "use": "primary source for CLUP formulation, local technical support, Sanggunian enactment, review path, and locational-clearance implementation claims",
+      "raw_pdf_sha256": "sha256:57de2c585b2f2f0e5687bbf95754f9cd4f2bae68c51c6ae0d8d60e81d24c8cbd",
+      "refined_markdown_sha256": "sha256:478ae44ef1b4ced33ce16138db0558d38c0fad4a4ca02e35c9f192994e89c871",
+      "local_source_checked": true
+    },
+    {
+      "source_id": "ra11201-dhsud-act-local-b068",
+      "label": "RA 11201 DHSUD Act of 2019 - DHSUD mandate and transferred land-use functions",
+      "authority": "Local raw PDF OCR and refined markdown conversion",
+      "source_type": "primary_law_pdf",
+      "source_locator": "RA 11201 refined markdown lines 63-77, 227-249, 261-279, and 1090-1118; raw PDF pages 2-4 and 11-12 checked by local OCR extraction",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 - DHSUD Act of 2019.pdf",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 - DHSUD Act of 2019.md",
+      "checked_markdown_lines": [
+        "RA 11201 lines 63-77",
+        "RA 11201 lines 227-249",
+        "RA 11201 lines 261-279",
+        "RA 11201 lines 1090-1118"
+      ],
+      "checked_raw_pdf_pages": [
+        "RA 11201 raw PDF page 2",
+        "RA 11201 raw PDF pages 3-4",
+        "RA 11201 raw PDF pages 11-12"
+      ],
+      "use": "primary source for DHSUD creation, mandate, CLUP data/standards, and HLURB land-use function transfer claims",
+      "raw_pdf_sha256": "sha256:59cf831669ddd0dc6f8fb569583e0ea75baf475c25677559aa21ea0979546c8d",
+      "refined_markdown_sha256": "sha256:8dff6d78e0fc0da08fe7516b5fa8b693e370493dee73b87199f649dd0efa5451",
+      "local_source_checked": true
+    },
+    {
+      "source_id": "ra11201-irr-land-use-functions-local-b068",
+      "label": "RA 11201 IRR - DHSUD land-use planning, CLUP/ZO review, and regional office functions",
+      "authority": "Local raw PDF and refined markdown conversion",
+      "source_type": "implementing_rules_pdf",
+      "source_locator": "RA 11201 IRR refined markdown lines 45, 145-159, 344-368, and 488-501; raw PDF pages 3, 9, 17-18, and 24 checked by local PDF extraction",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+      "checked_markdown_lines": [
+        "RA 11201 IRR line 45",
+        "RA 11201 IRR lines 145-159",
+        "RA 11201 IRR lines 344-368",
+        "RA 11201 IRR lines 488-501"
+      ],
+      "checked_raw_pdf_pages": [
+        "RA 11201 IRR raw PDF page 3",
+        "RA 11201 IRR raw PDF page 9",
+        "RA 11201 IRR raw PDF pages 17-18",
+        "RA 11201 IRR raw PDF page 24"
+      ],
+      "use": "primary source for DHSUD CLUP/ZO assistance, review, monitoring, and land-use compliance claims",
+      "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+      "refined_markdown_sha256": "sha256:40f1a5041c69b3a4aea7c8ba138a9d570bc686bea48aa5618ea6423a6a719528",
+      "local_source_checked": true
+    },
+    {
+      "source_id": "hlurb-clup-vol1-planning-process-local-b068",
+      "label": "HLURB CLUP Guidebook Volume 1 - planning process, spatial plan hierarchy, and situation analysis",
+      "authority": "Local raw PDF and refined markdown conversion",
+      "source_type": "technical_guide_pdf",
+      "source_locator": "HLURB CLUP Vol. 1 refined markdown lines 304-330, 434-448, 1988-2009, 2025-2084, 2119-2129, and 8461; raw PDF pages 5, 18-20, 70, 75, and 225 checked by local PDF extraction",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/HLURB_CLUP_Vol_1.pdf",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/HLURB_CLUP_Vol_1.md",
+      "checked_markdown_lines": [
+        "HLURB CLUP Vol. 1 lines 304-330",
+        "HLURB CLUP Vol. 1 lines 434-448",
+        "HLURB CLUP Vol. 1 lines 1988-2009",
+        "HLURB CLUP Vol. 1 lines 2025-2084",
+        "HLURB CLUP Vol. 1 lines 2119-2129",
+        "HLURB CLUP Vol. 1 line 8461"
+      ],
+      "checked_raw_pdf_pages": [
+        "HLURB CLUP Vol. 1 raw PDF page 5",
+        "HLURB CLUP Vol. 1 raw PDF pages 18-20",
+        "HLURB CLUP Vol. 1 raw PDF page 70",
+        "HLURB CLUP Vol. 1 raw PDF page 75",
+        "HLURB CLUP Vol. 1 raw PDF page 225"
+      ],
+      "use": "primary source for CLUP scope, sectoral integration, data, projection, and hierarchy claims",
+      "raw_pdf_sha256": "sha256:34888ecf03576719d36e8abe21ff90da92e18263a4debb9db3fbbc41a7878762",
+      "refined_markdown_sha256": "sha256:6b574d861c0942a232fec321c2863754673532019af8f983e84550e54afc04e3",
+      "local_source_checked": true
+    },
+    {
+      "source_id": "rps2008-local-planning-system-local-b068",
+      "label": "Rationalizing the Local Planning System 2008 - political/technical planning structure and CLUP-ZO implementation",
+      "authority": "Local raw PDF and refined markdown conversion",
+      "source_type": "technical_guide_pdf",
+      "source_locator": "RPS 2008 refined markdown lines 63-85, 125-165, 203-223, and 251-265; raw PDF pages 5-10 and 28 checked by local PDF extraction",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/RPS (2008).pdf",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/RPS (2008).md",
+      "checked_markdown_lines": [
+        "RPS 2008 lines 63-85",
+        "RPS 2008 lines 125-165",
+        "RPS 2008 lines 203-223",
+        "RPS 2008 lines 251-265"
+      ],
+      "checked_raw_pdf_pages": [
+        "RPS 2008 raw PDF pages 5-10",
+        "RPS 2008 raw PDF page 28"
+      ],
+      "use": "primary source for Sanggunian policy role, technical planning support, sectoral committees, and zoning ordinance as implementation tool",
+      "raw_pdf_sha256": "sha256:1331576aa80a6e5ab2d4079aa091e7294b7574c3c91b41a499e02cd1f8df91a3",
+      "refined_markdown_sha256": "sha256:a86183e25f99faee458dfbb5bdb6045b98e309abe56e3d9fc4b65aee43312c96",
+      "local_source_checked": true
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "article-source-scope",
+      "claim_text": "The Comprehensive Land Use Plan (CLUP) was rewritten to checked Batch 068 local raw-source scope.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra7160-local-planning-zoning-local-b068",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7160/RA 7160 The Local Government Code.pdf",
+        "raw_pdf_sha256": "sha256:e270e8bc7bd84ba8ad7b6fe6780c12a3e5a6103e2b9395db13084266a5ff1fff",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7160/RA 7160 The Local Government Code.md",
+        "refined_markdown_sha256": "sha256:9f95493bd12c7f4b0989913d7e8783cdbc6235891fea9977c2aa77238c3dd392",
+        "source_locator": "RA 7160 refined markdown lines 197-209, 712-746, 2665-2668, 2902-2905, and 3130; raw PDF pages 15, 51-52, 194, 213, and 232 checked by local PDF extraction; EO 72 refined markdown lines 1-90; raw PDF pages 1-4 checked by local PDF extraction; RA 11201 refined markdown lines 63-77, 227-249, 261-279, and 1090-1118; raw PDF pages 2-4 and 11-12 checked by local OCR extraction; RA 11201 IRR refined markdown lines 45, 145-159, 344-368, and 488-501; raw PDF pages 3, 9, 17-18, and 24 checked by local PDF extraction; HLURB CLUP Vol. 1 refined markdown lines 304-330, 434-448, 1988-2009, 2025-2084, 2119-2129, and 8461; raw PDF pages 5, 18-20, 70, 75, and 225 checked by local PDF extraction; RPS 2008 refined markdown lines 63-85, 125-165, 203-223, and 251-265; raw PDF pages 5-10 and 28 checked by local PDF extraction",
+        "quoted_pdf_excerpt": "Article uses source-safe paraphrase only; raw PDF pages and refined line locators are recorded."
+      }
+    },
+    {
+      "claim_id": "question-edit-1",
+      "claim_text": "Question edit 1 for lea-plan-001-05-core-concept is rewritten within the Batch 068 checked local raw-source scope.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra7160-local-planning-zoning-local-b068",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7160/RA 7160 The Local Government Code.pdf",
+        "raw_pdf_sha256": "sha256:e270e8bc7bd84ba8ad7b6fe6780c12a3e5a6103e2b9395db13084266a5ff1fff",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7160/RA 7160 The Local Government Code.md",
+        "refined_markdown_sha256": "sha256:9f95493bd12c7f4b0989913d7e8783cdbc6235891fea9977c2aa77238c3dd392",
+        "source_locator": "RA 7160 refined markdown lines 197-209, 712-746, 2665-2668, 2902-2905, and 3130; raw PDF pages 15, 51-52, 194, 213, and 232 checked by local PDF extraction; EO 72 refined markdown lines 1-90; raw PDF pages 1-4 checked by local PDF extraction; RA 11201 refined markdown lines 63-77, 227-249, 261-279, and 1090-1118; raw PDF pages 2-4 and 11-12 checked by local OCR extraction; RA 11201 IRR refined markdown lines 45, 145-159, 344-368, and 488-501; raw PDF pages 3, 9, 17-18, and 24 checked by local PDF extraction; HLURB CLUP Vol. 1 refined markdown lines 304-330, 434-448, 1988-2009, 2025-2084, 2119-2129, and 8461; raw PDF pages 5, 18-20, 70, 75, and 225 checked by local PDF extraction; RPS 2008 refined markdown lines 63-85, 125-165, 203-223, and 251-265; raw PDF pages 5-10 and 28 checked by local PDF extraction",
+        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
+      }
+    },
+    {
+      "claim_id": "question-edit-2",
+      "claim_text": "Question edit 2 for lea-plan-001-05-core-concept is rewritten within the Batch 068 checked local raw-source scope.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra7160-local-planning-zoning-local-b068",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7160/RA 7160 The Local Government Code.pdf",
+        "raw_pdf_sha256": "sha256:e270e8bc7bd84ba8ad7b6fe6780c12a3e5a6103e2b9395db13084266a5ff1fff",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7160/RA 7160 The Local Government Code.md",
+        "refined_markdown_sha256": "sha256:9f95493bd12c7f4b0989913d7e8783cdbc6235891fea9977c2aa77238c3dd392",
+        "source_locator": "RA 7160 refined markdown lines 197-209, 712-746, 2665-2668, 2902-2905, and 3130; raw PDF pages 15, 51-52, 194, 213, and 232 checked by local PDF extraction; EO 72 refined markdown lines 1-90; raw PDF pages 1-4 checked by local PDF extraction; RA 11201 refined markdown lines 63-77, 227-249, 261-279, and 1090-1118; raw PDF pages 2-4 and 11-12 checked by local OCR extraction; RA 11201 IRR refined markdown lines 45, 145-159, 344-368, and 488-501; raw PDF pages 3, 9, 17-18, and 24 checked by local PDF extraction; HLURB CLUP Vol. 1 refined markdown lines 304-330, 434-448, 1988-2009, 2025-2084, 2119-2129, and 8461; raw PDF pages 5, 18-20, 70, 75, and 225 checked by local PDF extraction; RPS 2008 refined markdown lines 63-85, 125-165, 203-223, and 251-265; raw PDF pages 5-10 and 28 checked by local PDF extraction",
+        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
+      }
+    },
+    {
+      "claim_id": "question-edit-3",
+      "claim_text": "Question edit 3 for lea-plan-001-05-core-concept is rewritten within the Batch 068 checked local raw-source scope.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra7160-local-planning-zoning-local-b068",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7160/RA 7160 The Local Government Code.pdf",
+        "raw_pdf_sha256": "sha256:e270e8bc7bd84ba8ad7b6fe6780c12a3e5a6103e2b9395db13084266a5ff1fff",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7160/RA 7160 The Local Government Code.md",
+        "refined_markdown_sha256": "sha256:9f95493bd12c7f4b0989913d7e8783cdbc6235891fea9977c2aa77238c3dd392",
+        "source_locator": "RA 7160 refined markdown lines 197-209, 712-746, 2665-2668, 2902-2905, and 3130; raw PDF pages 15, 51-52, 194, 213, and 232 checked by local PDF extraction; EO 72 refined markdown lines 1-90; raw PDF pages 1-4 checked by local PDF extraction; RA 11201 refined markdown lines 63-77, 227-249, 261-279, and 1090-1118; raw PDF pages 2-4 and 11-12 checked by local OCR extraction; RA 11201 IRR refined markdown lines 45, 145-159, 344-368, and 488-501; raw PDF pages 3, 9, 17-18, and 24 checked by local PDF extraction; HLURB CLUP Vol. 1 refined markdown lines 304-330, 434-448, 1988-2009, 2025-2084, 2119-2129, and 8461; raw PDF pages 5, 18-20, 70, 75, and 225 checked by local PDF extraction; RPS 2008 refined markdown lines 63-85, 125-165, 203-223, and 251-265; raw PDF pages 5-10 and 28 checked by local PDF extraction",
+        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
+      }
+    },
+    {
+      "claim_id": "question-edit-4",
+      "claim_text": "Question edit 4 for lea-plan-001-05-core-concept is rewritten within the Batch 068 checked local raw-source scope.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra7160-local-planning-zoning-local-b068",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7160/RA 7160 The Local Government Code.pdf",
+        "raw_pdf_sha256": "sha256:e270e8bc7bd84ba8ad7b6fe6780c12a3e5a6103e2b9395db13084266a5ff1fff",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7160/RA 7160 The Local Government Code.md",
+        "refined_markdown_sha256": "sha256:9f95493bd12c7f4b0989913d7e8783cdbc6235891fea9977c2aa77238c3dd392",
+        "source_locator": "RA 7160 refined markdown lines 197-209, 712-746, 2665-2668, 2902-2905, and 3130; raw PDF pages 15, 51-52, 194, 213, and 232 checked by local PDF extraction; EO 72 refined markdown lines 1-90; raw PDF pages 1-4 checked by local PDF extraction; RA 11201 refined markdown lines 63-77, 227-249, 261-279, and 1090-1118; raw PDF pages 2-4 and 11-12 checked by local OCR extraction; RA 11201 IRR refined markdown lines 45, 145-159, 344-368, and 488-501; raw PDF pages 3, 9, 17-18, and 24 checked by local PDF extraction; HLURB CLUP Vol. 1 refined markdown lines 304-330, 434-448, 1988-2009, 2025-2084, 2119-2129, and 8461; raw PDF pages 5, 18-20, 70, 75, and 225 checked by local PDF extraction; RPS 2008 refined markdown lines 63-85, 125-165, 203-223, and 251-265; raw PDF pages 5-10 and 28 checked by local PDF extraction",
+        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
+      }
+    },
+    {
+      "claim_id": "question-edit-5",
+      "claim_text": "Question edit 5 for lea-plan-001-05-core-concept is rewritten within the Batch 068 checked local raw-source scope.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra7160-local-planning-zoning-local-b068",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7160/RA 7160 The Local Government Code.pdf",
+        "raw_pdf_sha256": "sha256:e270e8bc7bd84ba8ad7b6fe6780c12a3e5a6103e2b9395db13084266a5ff1fff",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7160/RA 7160 The Local Government Code.md",
+        "refined_markdown_sha256": "sha256:9f95493bd12c7f4b0989913d7e8783cdbc6235891fea9977c2aa77238c3dd392",
+        "source_locator": "RA 7160 refined markdown lines 197-209, 712-746, 2665-2668, 2902-2905, and 3130; raw PDF pages 15, 51-52, 194, 213, and 232 checked by local PDF extraction; EO 72 refined markdown lines 1-90; raw PDF pages 1-4 checked by local PDF extraction; RA 11201 refined markdown lines 63-77, 227-249, 261-279, and 1090-1118; raw PDF pages 2-4 and 11-12 checked by local OCR extraction; RA 11201 IRR refined markdown lines 45, 145-159, 344-368, and 488-501; raw PDF pages 3, 9, 17-18, and 24 checked by local PDF extraction; HLURB CLUP Vol. 1 refined markdown lines 304-330, 434-448, 1988-2009, 2025-2084, 2119-2129, and 8461; raw PDF pages 5, 18-20, 70, 75, and 225 checked by local PDF extraction; RPS 2008 refined markdown lines 63-85, 125-165, 203-223, and 251-265; raw PDF pages 5-10 and 28 checked by local PDF extraction",
+        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
+      }
+    },
+    {
+      "claim_id": "question-edit-6",
+      "claim_text": "Question edit 6 for lea-plan-001-05-core-concept is rewritten within the Batch 068 checked local raw-source scope.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra7160-local-planning-zoning-local-b068",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7160/RA 7160 The Local Government Code.pdf",
+        "raw_pdf_sha256": "sha256:e270e8bc7bd84ba8ad7b6fe6780c12a3e5a6103e2b9395db13084266a5ff1fff",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7160/RA 7160 The Local Government Code.md",
+        "refined_markdown_sha256": "sha256:9f95493bd12c7f4b0989913d7e8783cdbc6235891fea9977c2aa77238c3dd392",
+        "source_locator": "RA 7160 refined markdown lines 197-209, 712-746, 2665-2668, 2902-2905, and 3130; raw PDF pages 15, 51-52, 194, 213, and 232 checked by local PDF extraction; EO 72 refined markdown lines 1-90; raw PDF pages 1-4 checked by local PDF extraction; RA 11201 refined markdown lines 63-77, 227-249, 261-279, and 1090-1118; raw PDF pages 2-4 and 11-12 checked by local OCR extraction; RA 11201 IRR refined markdown lines 45, 145-159, 344-368, and 488-501; raw PDF pages 3, 9, 17-18, and 24 checked by local PDF extraction; HLURB CLUP Vol. 1 refined markdown lines 304-330, 434-448, 1988-2009, 2025-2084, 2119-2129, and 8461; raw PDF pages 5, 18-20, 70, 75, and 225 checked by local PDF extraction; RPS 2008 refined markdown lines 63-85, 125-165, 203-223, and 251-265; raw PDF pages 5-10 and 28 checked by local PDF extraction",
+        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
+      }
+    },
+    {
+      "claim_id": "question-edit-7",
+      "claim_text": "Question edit 7 for lea-plan-001-05-core-concept is rewritten within the Batch 068 checked local raw-source scope.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra7160-local-planning-zoning-local-b068",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7160/RA 7160 The Local Government Code.pdf",
+        "raw_pdf_sha256": "sha256:e270e8bc7bd84ba8ad7b6fe6780c12a3e5a6103e2b9395db13084266a5ff1fff",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7160/RA 7160 The Local Government Code.md",
+        "refined_markdown_sha256": "sha256:9f95493bd12c7f4b0989913d7e8783cdbc6235891fea9977c2aa77238c3dd392",
+        "source_locator": "RA 7160 refined markdown lines 197-209, 712-746, 2665-2668, 2902-2905, and 3130; raw PDF pages 15, 51-52, 194, 213, and 232 checked by local PDF extraction; EO 72 refined markdown lines 1-90; raw PDF pages 1-4 checked by local PDF extraction; RA 11201 refined markdown lines 63-77, 227-249, 261-279, and 1090-1118; raw PDF pages 2-4 and 11-12 checked by local OCR extraction; RA 11201 IRR refined markdown lines 45, 145-159, 344-368, and 488-501; raw PDF pages 3, 9, 17-18, and 24 checked by local PDF extraction; HLURB CLUP Vol. 1 refined markdown lines 304-330, 434-448, 1988-2009, 2025-2084, 2119-2129, and 8461; raw PDF pages 5, 18-20, 70, 75, and 225 checked by local PDF extraction; RPS 2008 refined markdown lines 63-85, 125-165, 203-223, and 251-265; raw PDF pages 5-10 and 28 checked by local PDF extraction",
+        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
+      }
+    },
+    {
+      "claim_id": "question-edit-8",
+      "claim_text": "Question edit 8 for lea-plan-001-05-core-concept is rewritten within the Batch 068 checked local raw-source scope.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra7160-local-planning-zoning-local-b068",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7160/RA 7160 The Local Government Code.pdf",
+        "raw_pdf_sha256": "sha256:e270e8bc7bd84ba8ad7b6fe6780c12a3e5a6103e2b9395db13084266a5ff1fff",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7160/RA 7160 The Local Government Code.md",
+        "refined_markdown_sha256": "sha256:9f95493bd12c7f4b0989913d7e8783cdbc6235891fea9977c2aa77238c3dd392",
+        "source_locator": "RA 7160 refined markdown lines 197-209, 712-746, 2665-2668, 2902-2905, and 3130; raw PDF pages 15, 51-52, 194, 213, and 232 checked by local PDF extraction; EO 72 refined markdown lines 1-90; raw PDF pages 1-4 checked by local PDF extraction; RA 11201 refined markdown lines 63-77, 227-249, 261-279, and 1090-1118; raw PDF pages 2-4 and 11-12 checked by local OCR extraction; RA 11201 IRR refined markdown lines 45, 145-159, 344-368, and 488-501; raw PDF pages 3, 9, 17-18, and 24 checked by local PDF extraction; HLURB CLUP Vol. 1 refined markdown lines 304-330, 434-448, 1988-2009, 2025-2084, 2119-2129, and 8461; raw PDF pages 5, 18-20, 70, 75, and 225 checked by local PDF extraction; RPS 2008 refined markdown lines 63-85, 125-165, 203-223, and 251-265; raw PDF pages 5-10 and 28 checked by local PDF extraction",
+        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
+      }
+    },
+    {
+      "claim_id": "question-edit-9",
+      "claim_text": "Question edit 9 for lea-plan-001-05-core-concept is rewritten within the Batch 068 checked local raw-source scope.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra7160-local-planning-zoning-local-b068",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7160/RA 7160 The Local Government Code.pdf",
+        "raw_pdf_sha256": "sha256:e270e8bc7bd84ba8ad7b6fe6780c12a3e5a6103e2b9395db13084266a5ff1fff",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7160/RA 7160 The Local Government Code.md",
+        "refined_markdown_sha256": "sha256:9f95493bd12c7f4b0989913d7e8783cdbc6235891fea9977c2aa77238c3dd392",
+        "source_locator": "RA 7160 refined markdown lines 197-209, 712-746, 2665-2668, 2902-2905, and 3130; raw PDF pages 15, 51-52, 194, 213, and 232 checked by local PDF extraction; EO 72 refined markdown lines 1-90; raw PDF pages 1-4 checked by local PDF extraction; RA 11201 refined markdown lines 63-77, 227-249, 261-279, and 1090-1118; raw PDF pages 2-4 and 11-12 checked by local OCR extraction; RA 11201 IRR refined markdown lines 45, 145-159, 344-368, and 488-501; raw PDF pages 3, 9, 17-18, and 24 checked by local PDF extraction; HLURB CLUP Vol. 1 refined markdown lines 304-330, 434-448, 1988-2009, 2025-2084, 2119-2129, and 8461; raw PDF pages 5, 18-20, 70, 75, and 225 checked by local PDF extraction; RPS 2008 refined markdown lines 63-85, 125-165, 203-223, and 251-265; raw PDF pages 5-10 and 28 checked by local PDF extraction",
+        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
+      }
+    },
+    {
+      "claim_id": "question-edit-10",
+      "claim_text": "Question edit 10 for lea-plan-001-05-core-concept is rewritten within the Batch 068 checked local raw-source scope.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_id": "ra7160-local-planning-zoning-local-b068",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7160/RA 7160 The Local Government Code.pdf",
+        "raw_pdf_sha256": "sha256:e270e8bc7bd84ba8ad7b6fe6780c12a3e5a6103e2b9395db13084266a5ff1fff",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7160/RA 7160 The Local Government Code.md",
+        "refined_markdown_sha256": "sha256:9f95493bd12c7f4b0989913d7e8783cdbc6235891fea9977c2aa77238c3dd392",
+        "source_locator": "RA 7160 refined markdown lines 197-209, 712-746, 2665-2668, 2902-2905, and 3130; raw PDF pages 15, 51-52, 194, 213, and 232 checked by local PDF extraction; EO 72 refined markdown lines 1-90; raw PDF pages 1-4 checked by local PDF extraction; RA 11201 refined markdown lines 63-77, 227-249, 261-279, and 1090-1118; raw PDF pages 2-4 and 11-12 checked by local OCR extraction; RA 11201 IRR refined markdown lines 45, 145-159, 344-368, and 488-501; raw PDF pages 3, 9, 17-18, and 24 checked by local PDF extraction; HLURB CLUP Vol. 1 refined markdown lines 304-330, 434-448, 1988-2009, 2025-2084, 2119-2129, and 8461; raw PDF pages 5, 18-20, 70, 75, and 225 checked by local PDF extraction; RPS 2008 refined markdown lines 63-85, 125-165, 203-223, and 251-265; raw PDF pages 5-10 and 28 checked by local PDF extraction",
+        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
+      }
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "sme_review": {
+    "required": false,
+    "status": "PASS",
+    "reason": "Local-first source audit only; no Supabase publish performed."
+  },
+  "scenario_enrichment": {
+    "policy_status": "pending",
+    "eligibility_status": "eligible-deferred",
+    "blocker_status": "nonblocking",
+    "note": "No Real World Scenario section was added; source correctness and question safety remained the blocking criteria."
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

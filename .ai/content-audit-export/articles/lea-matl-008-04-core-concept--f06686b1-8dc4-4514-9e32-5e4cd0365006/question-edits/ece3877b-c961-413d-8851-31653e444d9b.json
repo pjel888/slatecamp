@@ -1,0 +1,65 @@
+{
+  "question_id": "ece3877b-c961-413d-8851-31653e444d9b",
+  "baseline_hash": "sha256:15c1e78d1a9e29c714980a9d077d409f681d0f2c2f2da98d2e41865d185d33f8",
+  "action": "replace",
+  "reason": "source-audited-article-batch-079-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-008-04-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-079",
+  "approved_at": "2026-05-12T06:20:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "f06686b1-8dc4-4514-9e32-5e4cd0365006",
+    "parent_article_slug": "lea-matl-008-04-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "BCI refined markdown lines 10594-10790; raw PDF pages 297-301 checked by local PyMuPDF extraction",
+    "checked_markdown_lines": [
+      "BCI refined markdown lines 10594-10790; raw PDF pages 297-301 checked by local PyMuPDF extraction",
+      "Salvan refined markdown lines 13190-13198 and 11664-11678; raw PDF pages 355 and 317 checked by local PyMuPDF extraction"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "bci-5e-b079",
+        "label": "Building Construction Illustrated, 5th Edition",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "raw_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "locator": "BCI refined markdown lines 10594-10790; raw PDF pages 297-301 checked by local PyMuPDF extraction"
+      },
+      {
+        "source_id": "salvan-building-materials-b079",
+        "label": "George Salvan Architectural Building Materials",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+        "raw_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+        "locator": "Salvan refined markdown lines 13190-13198 and 11664-11678; raw PDF pages 355 and 317 checked by local PyMuPDF extraction"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 079 local raw-source-audited window_operations scope."
+  },
+  "proposed": {
+    "text": "Which material compatibility issue does BCI flag for aluminum frames?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Avoid direct contact with incompatible metals such as copper unless insulated."
+      },
+      {
+        "id": "b",
+        "text": "Use copper in direct contact with all aluminum."
+      },
+      {
+        "id": "c",
+        "text": "Ignore sealant at the frame joint."
+      },
+      {
+        "id": "d",
+        "text": "Use no weatherstripping."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "BCI notes aluminum is susceptible to galvanic action and incompatible metals should be insulated from direct contact.",
+    "explanation": "BCI notes aluminum is susceptible to galvanic action and incompatible metals should be insulated from direct contact.",
+    "code_citation": "Building Construction Illustrated, 5th Edition; George Salvan Architectural Building Materials"
+  }
+}

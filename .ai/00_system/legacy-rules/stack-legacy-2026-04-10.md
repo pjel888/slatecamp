@@ -4,8 +4,8 @@
 
 # Stack Implementation Rules
 
-**Source:** `CLAUDE.md`, `AGENTS.md`, `package.json`, `.ai/state/memory.md`, `.ai/docs/01-product/`  
-**Last Verified:** 2026-04-10  
+**Source:** `CLAUDE.md`, `AGENTS.md`, `package.json`, `.ai/state/memory.md`, `.ai/docs/01-product/`
+**Last Verified:** 2026-04-10
 **Applies To:** All agents building or modifying SlateCamp code
 
 ---
@@ -18,7 +18,7 @@
   ```typescript
   // ✅ CORRECT
   const handleClick = () => { /* ... */ }
-  
+
   // ❌ WRONG
   function handleClick() { /* ... */ }
   ```
@@ -40,7 +40,7 @@
   ```typescript
   // ✅ CORRECT
   supabase.from('users').select('id, email, full_name')
-  
+
   // ❌ WRONG
   supabase.from('users').select('*')
   ```
@@ -55,7 +55,7 @@
   ```tsx
   // ✅ CORRECT
   <div className="bg-primary text-foreground" />
-  
+
   // ❌ WRONG
   <div style={{ backgroundColor: '#1B3FC4' }} />
   ```

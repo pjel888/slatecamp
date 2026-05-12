@@ -1,0 +1,72 @@
+{
+  "question_id": "06f9bcef-2351-434f-840a-e7252d86d0fb",
+  "baseline_hash": "sha256:da91dd802465a0ca121dbc91983759bd70ad8ba420ed706e60d15a19913e9375",
+  "action": "replace",
+  "reason": "source-audited-article-batch-041-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes stale or non-local framing where present.",
+  "approved_by": "codex-local-first-batch-041",
+  "approved_at": "2026-05-11T14:32:26.271+08:00",
+  "source_audit_support": {
+    "parent_article_id": "f481f8cd-bb99-45b9-9183-4db41848e23d",
+    "parent_article_slug": "lea-util-003-06-the-distribution-hierarchy",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Phil Electrical Code refined markdown lines 248-302; Phil Electrical Code refined markdown lines 360-424; Phil Electrical Code refined markdown lines 498-724; Phil Electrical Code refined markdown lines 1721-1770; Phil Electrical Code refined markdown lines 1900-1918; Phil Electrical Code refined markdown lines 2125-2138 | Electrical Layout and Estimate refined markdown lines 53-68; Electrical Layout and Estimate refined markdown lines 3260-3350; Electrical Layout and Estimate refined markdown lines 4516-4720",
+    "checked_markdown_lines": [
+      "Phil Electrical Code refined markdown lines 248-302",
+      "Phil Electrical Code refined markdown lines 360-424",
+      "Phil Electrical Code refined markdown lines 498-724",
+      "Phil Electrical Code refined markdown lines 1721-1770",
+      "Phil Electrical Code refined markdown lines 1900-1918",
+      "Phil Electrical Code refined markdown lines 2125-2138",
+      "Electrical Layout and Estimate refined markdown lines 53-68",
+      "Electrical Layout and Estimate refined markdown lines 3260-3350",
+      "Electrical Layout and Estimate refined markdown lines 4516-4720"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "pec-2017-local-phil-electrical-code",
+        "label": "Philippine Electrical Code local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+        "sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+        "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3",
+        "locator": "Phil Electrical Code refined markdown lines 248-302; Phil Electrical Code refined markdown lines 360-424; Phil Electrical Code refined markdown lines 498-724; Phil Electrical Code refined markdown lines 1721-1770; Phil Electrical Code refined markdown lines 1900-1918; Phil Electrical Code refined markdown lines 2125-2138"
+      },
+      {
+        "source_id": "fajardo-electrical-layout-estimate-2nd-ed-local",
+        "label": "Electrical Layout and Estimate, 2nd Edition, Max B. Fajardo Jr. and Leo R. Fajardo local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.pdf",
+        "sha256": "sha256:3cc20c7a3681cd41b427df17784582d578f8d772f1f50808a9c66d9390cbf244",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.md",
+        "refined_markdown_sha256": "sha256:e68e20c6b6a0dbb331c151d0814e182037564f63cf17a07284a6e126de62fc45",
+        "locator": "Electrical Layout and Estimate refined markdown lines 53-68; Electrical Layout and Estimate refined markdown lines 3260-3350; Electrical Layout and Estimate refined markdown lines 4516-4720"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 041 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "Which statement is source-safe about branch-circuit quantity?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Branch circuits must be sufficient to supply the calculated load and must not exceed the permitted maximum load."
+      },
+      {
+        "id": "b",
+        "text": "One branch circuit always serves every building regardless of load."
+      },
+      {
+        "id": "c",
+        "text": "Branch-circuit load is unrelated to Article 2.20 calculations."
+      },
+      {
+        "id": "d",
+        "text": "Overcurrent protection is optional."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The checked PEC provisions connect required branch circuits to calculated loads and maximum loads.",
+    "explanation": "The checked PEC provisions connect required branch circuits to calculated loads and maximum loads.",
+    "code_citation": "PEC branch-circuit provisions refined markdown lines 1721-1770 and 1900-1918"
+  }
+}

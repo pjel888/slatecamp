@@ -1,0 +1,160 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-056-local-first",
+  "batch_number": 56,
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T19:52:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "6659e8a6-d013-4f2e-9711-b37269c069a3",
+    "slug": "lea-theo-003-02-core-concept",
+    "title": "Architecture does not exist in isolation from human",
+    "article_folder": ".ai/content-audit-export/articles/lea-theo-003-02-core-concept--6659e8a6-d013-4f2e-9711-b37269c069a3",
+    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-003-02-core-concept--6659e8a6-d013-4f2e-9711-b37269c069a3",
+    "candidate_path": ".ai/content-audit-export/articles/lea-theo-003-02-core-concept--6659e8a6-d013-4f2e-9711-b37269c069a3/candidate.md",
+    "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-003-02-core-concept--6659e8a6-d013-4f2e-9711-b37269c069a3/candidate.md",
+    "question_edits_folder": ".ai/content-audit-export/articles/lea-theo-003-02-core-concept--6659e8a6-d013-4f2e-9711-b37269c069a3/question-edits",
+    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-003-02-core-concept--6659e8a6-d013-4f2e-9711-b37269c069a3/question-edits",
+    "normalized_sha256": "sha256:5d3255ec09d101aba88a4924ea6cce20b4a735300ce165d4f92066b7de8f6d07",
+    "candidate_sha256": "sha256:5d3255ec09d101aba88a4924ea6cce20b4a735300ce165d4f92066b7de8f6d07",
+    "linked_questions_sha256": "sha256:f3b52c7e193d1765fa533aa12161cbecbf36dab5503d5e07c31321f5bba17151",
+    "sources_sha256": "sha256:81cd503bcfc2f06d5b55f7f183a3175cc452126d33b20d7e213c9de32eee9497"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "refined_markdown_role": "locator_only",
+    "derivative_or_search_layer_as_primary": false,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": [],
+    "source_families_checked": [
+      {
+        "label": "TOA 1 Intro to Theory - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 1 (Intro to Theory).pdf",
+        "raw_pdf_sha256": "sha256:17ee07310eaf7fbd71aeb3cb3b57a6ffb623e2b8b1957543d74b706a5184d0e0",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md",
+        "refined_markdown_sha256": "sha256:fc665ed41ea62ddb69c88ba02c7b92628481ba6792a075bc21694ca072b150d6",
+        "locator": "TOA 1 Intro to Theory refined markdown lines 31 and 46"
+      },
+      {
+        "label": "theory - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+        "raw_pdf_sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+        "refined_markdown_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+        "locator": "theory refined markdown lines 154-156 and 173"
+      },
+      {
+        "label": "George Salvan Architectural Theories of Design - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "raw_pdf_sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
+        "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
+        "locator": "George Salvan Architectural Theories of Design refined markdown lines 175, 6735-6737, and 8008"
+      },
+      {
+        "label": "TOA 3 Design Perception - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 3 (Design Perception).pdf",
+        "raw_pdf_sha256": "sha256:807be9f1a301d579123d8fa3ec680011b1906d6a4edcb6dc061c9a57e5ea9534",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 3 (Design Perception).md",
+        "refined_markdown_sha256": "sha256:49309b3dc5eea661ca7cad04cceb91897ac29fee6dd8e43cf6c3f60f163d404a",
+        "locator": "TOA 3 Design Perception refined markdown lines 23-34"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "theory-of-architecture",
+    "contains_legal_or_code_claims": false,
+    "source_risk_tier": "medium",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 14,
+    "question_edits_created": [
+      "6c364c0b-644b-44a1-ad42-1f37ad82443a",
+      "2c3d6a3f-5384-4c09-8d85-82aba9abc357",
+      "87430c02-b22d-46b5-9add-e2ff142db1b2",
+      "7ca50e21-a6c5-4da3-903f-50cff510ac6a",
+      "678ebbcf-6fa4-4202-ab22-8580672d74f3",
+      "f04fb0a9-bf8f-4faf-a9bd-9de9b2024cf2",
+      "485fe58f-2305-4c4f-8996-83cd36ff6510",
+      "95b90c1d-979a-4ca7-a862-d2bfd7744c55",
+      "bac6516e-a479-4fc7-b78d-0bfee91598d5",
+      "8faeba60-9f6a-4e5a-91fa-737370ff8831",
+      "0a479ae5-3d2f-4a41-aeb8-9f1755d3b425",
+      "42eb64fa-499b-4143-b951-5efa7a6163c5",
+      "8971467c-0162-447c-a33c-07b5de61517b",
+      "a37ac27b-2fc6-49a2-b3f2-f80af3c7305e"
+    ],
+    "scenario_policy_status": "eligible-deferred",
+    "scenario_policy_reason": "Human-behavior scenarios are pedagogically useful, but new scenarios are deferred to avoid unsupported exact distance or program claims."
+  },
+  "checked_markdown_lines": [
+    "TOA 1 Intro to Theory refined markdown line 31",
+    "TOA 1 Intro to Theory refined markdown line 46",
+    "theory refined markdown lines 154-156",
+    "theory refined markdown line 173",
+    "George Salvan Architectural Theories of Design refined markdown line 175",
+    "George Salvan Architectural Theories of Design refined markdown lines 6735-6737",
+    "George Salvan Architectural Theories of Design refined markdown line 8008",
+    "TOA 3 Design Perception refined markdown lines 23-34"
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-theo-003-02-core-concept-b056-claim-01",
+      "claim_text": "Architecture does not exist in isolation from human in Batch 056 is limited to checked local raw PDF source families and the refined markdown locators recorded for this article.",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 1 (Intro to Theory).pdf",
+        "quoted_pdf_excerpt": "TOA 1 Intro to Theory refined markdown line 31; TOA 1 Intro to Theory refined markdown line 46; theory refined markdown lines 154-156; theory refined markdown line 173; George Salvan Architectural Theories of Design refined markdown line 175; George Salvan Architectural Theories of Design refined markdown lines 6735-6737; George Salvan Architectural Theories of Design refined markdown line 8008; TOA 3 Design Perception refined markdown lines 23-34",
+        "source_ids": [
+          "toa1-intro-local-raw-pdf--b056-6659e8a6-01",
+          "theory-local-raw-pdf--b056-6659e8a6-02",
+          "salvan-theory-local-raw-pdf--b056-6659e8a6-03",
+          "toa3-design-perception-local-raw-pdf--b056-6659e8a6-04"
+        ]
+      },
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-theo-003-02-core-concept-b056-claim-questions",
+      "claim_text": "Batch 056 question edits audited for lea-theo-003-02-core-concept: 6c364c0b-644b-44a1-ad42-1f37ad82443a, 2c3d6a3f-5384-4c09-8d85-82aba9abc357, 87430c02-b22d-46b5-9add-e2ff142db1b2, 7ca50e21-a6c5-4da3-903f-50cff510ac6a, 678ebbcf-6fa4-4202-ab22-8580672d74f3, f04fb0a9-bf8f-4faf-a9bd-9de9b2024cf2, 485fe58f-2305-4c4f-8996-83cd36ff6510, 95b90c1d-979a-4ca7-a862-d2bfd7744c55, bac6516e-a479-4fc7-b78d-0bfee91598d5, 8faeba60-9f6a-4e5a-91fa-737370ff8831, 0a479ae5-3d2f-4a41-aeb8-9f1755d3b425, 42eb64fa-499b-4143-b951-5efa7a6163c5, 8971467c-0162-447c-a33c-07b5de61517b, a37ac27b-2fc6-49a2-b3f2-f80af3c7305e",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 1 (Intro to Theory).pdf",
+        "quoted_pdf_excerpt": "TOA 1 Intro to Theory refined markdown line 31; TOA 1 Intro to Theory refined markdown line 46; theory refined markdown lines 154-156; theory refined markdown line 173; George Salvan Architectural Theories of Design refined markdown line 175; George Salvan Architectural Theories of Design refined markdown lines 6735-6737; George Salvan Architectural Theories of Design refined markdown line 8008; TOA 3 Design Perception refined markdown lines 23-34",
+        "source_ids": [
+          "toa1-intro-local-raw-pdf--b056-6659e8a6-01",
+          "theory-local-raw-pdf--b056-6659e8a6-02",
+          "salvan-theory-local-raw-pdf--b056-6659e8a6-03",
+          "toa3-design-perception-local-raw-pdf--b056-6659e8a6-04"
+        ]
+      },
+      "audit_result": "PASS"
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "local_first_only": true,
+    "supabase_write_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json",
+    "diff_gate": "safe_true_blockers_zero",
+    "validate_gate": "valid_true_blockers_zero",
+    "ui_block_edits_gate": "valid_true_blockers_zero"
+  },
+  "sme_review": {
+    "required": false,
+    "status": "not_required"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

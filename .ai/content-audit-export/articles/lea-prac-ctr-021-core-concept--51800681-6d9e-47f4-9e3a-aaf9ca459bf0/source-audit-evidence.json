@@ -1,0 +1,241 @@
+{
+  "schema_version": "source-audit-evidence-v1-local-first",
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-031-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T08:56:01+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "51800681-6d9e-47f4-9e3a-aaf9ca459bf0",
+    "slug": "lea-prac-ctr-021-core-concept",
+    "title": "CIAC Jurisdiction for Construction Contract Disputes",
+    "article_folder": ".ai/content-audit-export/articles/lea-prac-ctr-021-core-concept--51800681-6d9e-47f4-9e3a-aaf9ca459bf0",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-021-core-concept--51800681-6d9e-47f4-9e3a-aaf9ca459bf0",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-ctr-021-core-concept--51800681-6d9e-47f4-9e3a-aaf9ca459bf0/candidate.md",
+    "candidate_sha256": "sha256:3f046f107b2ded2b43f9d5f24c78b277dc5d85d2790be90ae76f00ace1f0e60b",
+    "normalized_sha256": "sha256:3f046f107b2ded2b43f9d5f24c78b277dc5d85d2790be90ae76f00ace1f0e60b",
+    "linked_questions_sha256": "sha256:89c991d501cc504ea545a01808ad6c5ed4731268a60f72948e24311fead1be87",
+    "sources_sha256": "sha256:dbed35c37a19218894bc5e0ecb29980390f5b28d7467c23c6f96f95c7f863f78"
+  },
+  "classification": {
+    "content_domain": "LEA Professional Practice and Jurisprudence",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high_value_lea_professional_practice",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": [
+      "1a57fe63-3ca3-4663-b958-3b497b5f5859",
+      "862657b8-dd8f-441e-b37c-526c1a159839",
+      "225aa142-e35e-45c8-8e3a-54b7b14722a5",
+      "2ff95efa-142b-4be5-9ace-ba75f4b10383",
+      "31aa1e8f-a81a-4fd3-971d-89d1bfe09ff5",
+      "fc9eedd7-b22d-4e0f-a030-7474f7cfd0dc",
+      "cbe85002-2709-4141-80d5-c3a28e0f9d87",
+      "9beb0a8d-3e8c-4796-ac50-ae0c146b8f8a",
+      "6c92eeb7-83ba-4027-a312-df441bcaf615",
+      "8871dd43-1198-4e02-bac6-fb361238a2b9"
+    ]
+  },
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/lea-prac-ctr-021-core-concept--51800681-6d9e-47f4-9e3a-aaf9ca459bf0",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-021-core-concept--51800681-6d9e-47f4-9e3a-aaf9ca459bf0",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-ctr-021-core-concept--51800681-6d9e-47f4-9e3a-aaf9ca459bf0/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-021-core-concept--51800681-6d9e-47f4-9e3a-aaf9ca459bf0/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/lea-prac-ctr-021-core-concept--51800681-6d9e-47f4-9e3a-aaf9ca459bf0/question-edits/1a57fe63-3ca3-4663-b958-3b497b5f5859.json",
+      ".ai/content-audit-export/articles/lea-prac-ctr-021-core-concept--51800681-6d9e-47f4-9e3a-aaf9ca459bf0/question-edits/862657b8-dd8f-441e-b37c-526c1a159839.json",
+      ".ai/content-audit-export/articles/lea-prac-ctr-021-core-concept--51800681-6d9e-47f4-9e3a-aaf9ca459bf0/question-edits/225aa142-e35e-45c8-8e3a-54b7b14722a5.json",
+      ".ai/content-audit-export/articles/lea-prac-ctr-021-core-concept--51800681-6d9e-47f4-9e3a-aaf9ca459bf0/question-edits/2ff95efa-142b-4be5-9ace-ba75f4b10383.json",
+      ".ai/content-audit-export/articles/lea-prac-ctr-021-core-concept--51800681-6d9e-47f4-9e3a-aaf9ca459bf0/question-edits/31aa1e8f-a81a-4fd3-971d-89d1bfe09ff5.json",
+      ".ai/content-audit-export/articles/lea-prac-ctr-021-core-concept--51800681-6d9e-47f4-9e3a-aaf9ca459bf0/question-edits/fc9eedd7-b22d-4e0f-a030-7474f7cfd0dc.json",
+      ".ai/content-audit-export/articles/lea-prac-ctr-021-core-concept--51800681-6d9e-47f4-9e3a-aaf9ca459bf0/question-edits/cbe85002-2709-4141-80d5-c3a28e0f9d87.json",
+      ".ai/content-audit-export/articles/lea-prac-ctr-021-core-concept--51800681-6d9e-47f4-9e3a-aaf9ca459bf0/question-edits/9beb0a8d-3e8c-4796-ac50-ae0c146b8f8a.json",
+      ".ai/content-audit-export/articles/lea-prac-ctr-021-core-concept--51800681-6d9e-47f4-9e3a-aaf9ca459bf0/question-edits/6c92eeb7-83ba-4027-a312-df441bcaf615.json",
+      ".ai/content-audit-export/articles/lea-prac-ctr-021-core-concept--51800681-6d9e-47f4-9e3a-aaf9ca459bf0/question-edits/8871dd43-1198-4e02-bac6-fb361238a2b9.json"
+    ]
+  },
+  "raw_sources": [
+    {
+      "source_id": "eo-1008-construction-industry-arbitration-law-local",
+      "label": "Executive Order No. 1008 - Construction Industry Arbitration Law",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/EO/EO 1008 Construction Arbitration Law.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/EO/EO 1008 Construction Arbitration Law.pdf",
+      "raw_pdf_sha256": "sha256:63f4ed2272c98ab63a8dcd491069ee5583534492bbb98a65387ab4efc0c98624",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/EO/EO 1008 Construction Arbitration Law.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/EO/EO 1008 Construction Arbitration Law.md",
+      "refined_markdown_sha256": "sha256:0755335760c2f2452946207668923ce33034f5fae595c8d4796b6b2d56e6bd14",
+      "source_locator": "EO 1008 refined markdown lines 23-27, 57-63, 76-78",
+      "checked_markdown_lines": [
+        "EO 1008 refined markdown lines 23-27, 57-63, 76-78"
+      ]
+    },
+    {
+      "source_id": "ciap-document-102-private-construction-contract-local",
+      "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+      "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+      "refined_markdown_sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
+      "source_locator": "CIAP Document 102 refined markdown lines 538-554, 591, 626, 667, 681, 874",
+      "checked_markdown_lines": [
+        "CIAP Document 102 refined markdown lines 538-554, 591, 626, 667, 681, 874"
+      ]
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "eo-1008-construction-industry-arbitration-law-local",
+      "label": "Executive Order No. 1008 - Construction Industry Arbitration Law",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/EO/EO 1008 Construction Arbitration Law.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/EO/EO 1008 Construction Arbitration Law.pdf",
+      "raw_pdf_sha256": "sha256:63f4ed2272c98ab63a8dcd491069ee5583534492bbb98a65387ab4efc0c98624",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/EO/EO 1008 Construction Arbitration Law.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/EO/EO 1008 Construction Arbitration Law.md",
+      "refined_markdown_sha256": "sha256:0755335760c2f2452946207668923ce33034f5fae595c8d4796b6b2d56e6bd14",
+      "source_locator": "EO 1008 refined markdown lines 23-27, 57-63, 76-78",
+      "checked_markdown_lines": [
+        "EO 1008 refined markdown lines 23-27, 57-63, 76-78"
+      ]
+    },
+    {
+      "source_id": "ciap-document-102-private-construction-contract-local",
+      "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+      "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+      "refined_markdown_sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
+      "source_locator": "CIAP Document 102 refined markdown lines 538-554, 591, 626, 667, 681, 874",
+      "checked_markdown_lines": [
+        "CIAP Document 102 refined markdown lines 538-554, 591, 626, 667, 681, 874"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "ctr021-claim-01",
+      "claim_text": "EO 1008 creates CIAC within CIAP and gives it original and exclusive jurisdiction over construction contract disputes when parties agree to arbitration.",
+      "claim_type": "legal_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "Executive Order No. 1008 - Construction Industry Arbitration Law",
+        "locator": "EO 1008 refined markdown lines 23-25",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/EO/EO 1008 Construction Arbitration Law.pdf",
+        "raw_pdf_sha256": "sha256:63f4ed2272c98ab63a8dcd491069ee5583534492bbb98a65387ab4efc0c98624",
+        "quoted_pdf_excerpt": "CIAC shall have original and exclusive jurisdiction over disputes arising from, or connected with, construction contracts."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "ctr021-claim-02",
+      "claim_text": "CIAC jurisdiction covers disputes involving specifications, workmanship, contract terms, damages, delays, defects, payment defaults, and changes in contract cost.",
+      "claim_type": "legal_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "Executive Order No. 1008 - Construction Industry Arbitration Law",
+        "locator": "EO 1008 refined markdown line 27",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/EO/EO 1008 Construction Arbitration Law.pdf",
+        "raw_pdf_sha256": "sha256:63f4ed2272c98ab63a8dcd491069ee5583534492bbb98a65387ab4efc0c98624",
+        "quoted_pdf_excerpt": "EO 1008 includes disputes on specifications, workmanship, contract terms, damages, penalties, delays, defects, payment default, and changes in contract cost."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "ctr021-claim-03",
+      "claim_text": "EO 1008 allows a sole arbitrator or a tribunal of three arbitrators.",
+      "claim_type": "legal_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "Executive Order No. 1008 - Construction Industry Arbitration Law",
+        "locator": "EO 1008 refined markdown lines 57-63",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/EO/EO 1008 Construction Arbitration Law.pdf",
+        "raw_pdf_sha256": "sha256:63f4ed2272c98ab63a8dcd491069ee5583534492bbb98a65387ab4efc0c98624",
+        "quoted_pdf_excerpt": "Disputes may be heard by a sole arbitrator or by three arbitrators."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "ctr021-claim-04",
+      "claim_text": "CIAP Document 102 deems parties to submit connected contract disputes to CIAC.",
+      "claim_type": "legal_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
+        "locator": "CIAP Document 102 refined markdown line 874",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+        "quoted_pdf_excerpt": "Entering into the contract is deemed submitting to CIAC jurisdiction for disputes in connection with the contract."
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "removed_or_rewritten_material": [
+    "Learner-facing article text was rewritten to local source-supported claims only.",
+    "Legacy UI marker blocks were removed from normalized.md so candidate.md composes without unresolved markers.",
+    "Linked questions were rewritten to source-safe wording, answer keys, rationales, and citations."
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "gate_results": {
+    "compose": "PASS: bun run content-audit:compose -- --article-id 51800681-6d9e-47f4-9e3a-aaf9ca459bf0 --overwrite --strict; blockers=0",
+    "diff": "PASS: bun run content-audit:diff -- --article-id 51800681-6d9e-47f4-9e3a-aaf9ca459bf0 --summary --strict; safe_to_push=true blockers=0",
+    "validate": "PASS: bun run content-audit:validate -- --article-id 51800681-6d9e-47f4-9e3a-aaf9ca459bf0 --summary; valid=true blockers=0 warnings=1 component-usage-only",
+    "push_dry_run": "not_attempted_local_first; Supabase remote fetch/publish is final publishing only",
+    "supabase_mutation": "not_attempted_by_request"
+  },
+  "source_safe_repair": {
+    "normalized_md_rewritten": true,
+    "candidate_md_composed": true,
+    "sources_json_refreshed_to_checked_raw_sources": true,
+    "source_audit_evidence_json_created": true,
+    "question_edits_created": 10,
+    "answer_key_fields_changed": true,
+    "ui_markers_removed_from_normalized": true,
+    "external_business_claims_limited_to_source_safe_form": true
+  },
+  "local_validation": {
+    "compose": {
+      "passed": true,
+      "blockers": [],
+      "candidate_hash": "sha256:3f046f107b2ded2b43f9d5f24c78b277dc5d85d2790be90ae76f00ace1f0e60b"
+    },
+    "diff": {
+      "passed": true,
+      "blockers": [],
+      "safe_to_push": true
+    },
+    "validate": {
+      "passed": true,
+      "blockers": [],
+      "warnings": [
+        "component-usage.json has not been generated for this article yet."
+      ]
+    },
+    "scoped_checks": {
+      "json_parse": "PASS",
+      "output_placeholder_internal_source_gap_scan": "PASS",
+      "source_audit_evidence": "PASS",
+      "question_edits": "PASS"
+    }
+  },
+  "sme_review": {
+    "required": false,
+    "status": "PASS"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

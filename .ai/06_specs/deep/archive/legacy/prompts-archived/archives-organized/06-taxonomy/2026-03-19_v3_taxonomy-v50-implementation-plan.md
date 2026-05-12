@@ -1,8 +1,8 @@
 # SlateCamp — Taxonomy v5.0 Implementation Plan
-**Prepared by:** Database Architect  
-**Date:** 2026-03-19  
-**Basis:** Full reconciliation of DATABASE_SCHEMA.sql (live production) + slatecamp_taxonomy_v5.json  
-**Schema version upgrading to:** v5.0 (Complete)  
+**Prepared by:** Database Architect
+**Date:** 2026-03-19
+**Basis:** Full reconciliation of DATABASE_SCHEMA.sql (live production) + slatecamp_taxonomy_v5.json
+**Schema version upgrading to:** v5.0 (Complete)
 **Previous plan version superseded:** taxonomy-schema-reconciled-plan.md (Migration 027)
 
 ---
@@ -150,9 +150,9 @@ A junction table answers both directions with simple indexed queries and enforce
 
 ## Part 4 — Migration 027 (Comprehensive — covers v3.5 + v5.0 in one pass)
 
-**File:** `027_taxonomy_v50_schema.sql`  
-**Idempotent:** Yes — all operations use `IF NOT EXISTS` / `DO $$ ... EXCEPTION` guards  
-**Risk:** Zero — all additions are nullable or have safe defaults. Existing 148 v1 nodes are completely unaffected.  
+**File:** `027_taxonomy_v50_schema.sql`
+**Idempotent:** Yes — all operations use `IF NOT EXISTS` / `DO $$ ... EXCEPTION` guards
+**Risk:** Zero — all additions are nullable or have safe defaults. Existing 148 v1 nodes are completely unaffected.
 **Run:** Before taxonomy v5.0 import pipeline
 
 ```sql
@@ -616,8 +616,8 @@ Run these steps **after Migration 027 has been applied and verified**. The pipel
 
 ### The ALE-LAWS Rule — enforced at every step
 
-ALE-LAWS has zero exam weight. It is a cross-reference navigation layer.  
-`is_cross_ref_only = true` must be set on: ALE-LAWS subject + all 6 ALE-LAWS topics + all 33 ALE-LAWS subtopics.  
+ALE-LAWS has zero exam weight. It is a cross-reference navigation layer.
+`is_cross_ref_only = true` must be set on: ALE-LAWS subject + all 6 ALE-LAWS topics + all 33 ALE-LAWS subtopics.
 The trigger `trg_check_question_topic` makes this permanent and unbypassable.
 
 ### The Wiki Articles Safety Guarantee
@@ -1156,10 +1156,10 @@ ALTER TABLE public.taxonomy_tree
 
 ### Production table count after all migrations
 
-Current: 41 tables  
-After 027 (new tables): taxonomy_cross_references, taxonomy_sources, taxonomy_prerequisites → +3  
-After 028: session_questions → +1  
-After 029: user_attribution → +1  
+Current: 41 tables
+After 027 (new tables): taxonomy_cross_references, taxonomy_sources, taxonomy_prerequisites → +3
+After 028: session_questions → +1
+After 029: user_attribution → +1
 
 **Total: 46 tables**
 
@@ -1182,7 +1182,7 @@ These are critical factual corrections in the v5.0 JSON that are resolved automa
 
 ---
 
-*SlateCamp Database Architecture — Taxonomy v5.0 Implementation Plan*  
-*Basis: DATABASE_SCHEMA.sql (production, 2026-03-19) + slatecamp_taxonomy_v5.json (v5.0 Complete)*  
-*Maintained by: DB Architect + Philip (Founder)*  
+*SlateCamp Database Architecture — Taxonomy v5.0 Implementation Plan*
+*Basis: DATABASE_SCHEMA.sql (production, 2026-03-19) + slatecamp_taxonomy_v5.json (v5.0 Complete)*
+*Maintained by: DB Architect + Philip (Founder)*
 *Next review: After Migration 027 is applied and import pipeline Step 2 (subjects) is verified*

@@ -1,44 +1,32 @@
 {
   "article_id": "f30fd9ee-3ab3-46d0-a5bb-dba7e88ac4d1",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:0647ea77aed23a26da7983b767899836bd9501de9a0a3db93193dc0c7a7de7f4",
-  "source_count": 3,
+  "sources_hash": "sha256:045756bb9a5adb829be5554599fb05f98e1482a75e731ac35c0db9dea7bee3c3",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "bf542ab1-c220-4dbb-a2e4-b0b550623e25",
+      "source_id": "pd1096-rirr-2004-b072",
       "article_id": "f30fd9ee-3ab3-46d0-a5bb-dba7e88ac4d1",
-      "label": "PD 1096 (National Building Code), Rule VII, Section 811 (Artificial Ventilation)*PD 1096 Rule VII, Section 811n)",
+      "label": "PD 1096 2004 Revised IRR - National Building Code",
       "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
+      "source_type": "primary_law_irr_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-072-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf; raw_pdf_sha256=sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md; refined_markdown_sha256=sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7; checked_locator=PD 1096 refined markdown lines 548-570, 2085-2089, and 2352-2412; raw PDF pages 19, 24, 33, 88, 93, 108, 192, 204, and 352 checked by local PyMuPDF extraction",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:33:58.214974+00:00",
-      "updated_at": "2026-03-24T04:33:58.214974+00:00"
+      "created_at": "2026-05-12T01:24:18+08:00",
+      "updated_at": "2026-05-12T01:24:18+08:00"
     },
     {
-      "source_id": "bd1c1bfd-574e-4ebd-b1a6-1725e0f5d973",
+      "source_id": "meeb-design-context-b072",
       "article_id": "f30fd9ee-3ab3-46d0-a5bb-dba7e88ac4d1",
-      "label": "ASHRAE 62.1 (Ventilation for Acceptable Indoor Air Quality), adopted as reference standard",
+      "label": "Mechanical and Electrical Equipment for Buildings - Grondzik et al. 2010",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "professional_reference_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-072-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Mechanical and Electrical Equipment for Buildings - W. Grondzik, et al., (Wiley, 2010) BBS.pdf; raw_pdf_sha256=sha256:3dd95410e968c57f6bd7646a9582b9bd1f7a97335c56e1486536b78d0864aa5e; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Mechanical and Electrical Equipment for Buildings - W. Grondzik, et al., (Wiley, 2010) BBS.md; refined_markdown_sha256=sha256:d0650a86c65bb17008428fc309d59e388a372d6450da9c4b1464454f1ef384f9; checked_locator=MEEB refined markdown lines 1045-1087, 1160-1195, 1268-1275, and 2211-2217; raw PDF pages 7, 31-33, 35, 38, 45, 348, 970, and 1106 checked by local PyMuPDF extraction",
+      "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-03-24T04:33:58.214974+00:00",
-      "updated_at": "2026-03-24T04:33:58.214974+00:00"
-    },
-    {
-      "source_id": "551a4ccb-2a7c-40df-bd14-cd2b2696774c",
-      "article_id": "f30fd9ee-3ab3-46d0-a5bb-dba7e88ac4d1",
-      "label": "WHO Guidelines for Indoor Air Quality (Dampness and Mould, Particulate Matter, Ozone)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:33:58.214974+00:00",
-      "updated_at": "2026-03-24T04:33:58.214974+00:00"
+      "created_at": "2026-05-12T01:24:18+08:00",
+      "updated_at": "2026-05-12T01:24:18+08:00"
     }
   ]
 }

@@ -637,7 +637,7 @@ graph LR
 ## 🔒 Proprietary IP Layer — Architecture of the Moat
 
 > Full IP documentation, patent strategy, and AIPO filing roadmap: [SlateCamp USP & Patentable IP](https://www.notion.so/SlateCamp-USP-Patentable-IP-fe9118a0440e42c5b7ea8346c461e843?pvs=21)
-> 
+>
 
 Every proprietary mechanic in SlateCamp has a direct technical implementation in the architecture. This section maps each protectable IP asset to its database columns, algorithms, and system behavior.
 
@@ -805,7 +805,7 @@ Unified Educational OS — PostgreSQL Schema v1.0 MASTER (Supabase)
 **Status:** v1.0 MASTER · **Engine:** PostgreSQL 15+ (Supabase) · **Requires:** `pgvector` extension
 
 > The complete, production-ready schema for SlateCamp. Core Engine (Disciplines → Taxonomy → Content → Quizzing → Analytics) plus Extensions (Notes Workspace, Feedback System, Subscriptions). Integrates horizontal scaling, EMA scoring, IRT weighting, Zero-Data-Loss persistence, and pgvector RAG.
-> 
+>
 
 ---
 

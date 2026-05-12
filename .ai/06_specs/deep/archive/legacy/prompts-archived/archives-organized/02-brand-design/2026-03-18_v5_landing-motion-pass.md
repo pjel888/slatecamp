@@ -116,18 +116,18 @@ interface ScrollRevealProps {
   className?: string
 }
 
-export function ScrollReveal({ 
-  children, delay = 0, y = 16, duration = 0.4, className 
+export function ScrollReveal({
+  children, delay = 0, y = 16, duration = 0.4, className
 }: ScrollRevealProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
-      transition={{ 
-        duration, 
-        delay, 
-        ease: [0.16, 1, 0.3, 1] 
+      transition={{
+        duration,
+        delay,
+        ease: [0.16, 1, 0.3, 1]
       }}
       className={className}
     >
@@ -149,18 +149,18 @@ const container = {
 
 const item = {
   hidden: { opacity: 0, y: 16 },
-  show: { 
-    opacity: 1, y: 0, 
-    transition: { duration: 0.4, ease: [0.16, 1, 0.3, 1] } 
+  show: {
+    opacity: 1, y: 0,
+    transition: { duration: 0.4, ease: [0.16, 1, 0.3, 1] }
   }
 }
 
 export function StaggerParent({ children, className }: { children: React.ReactNode, className?: string }) {
   return (
-    <motion.div 
-      variants={container} 
-      initial="hidden" 
-      whileInView="show" 
+    <motion.div
+      variants={container}
+      initial="hidden"
+      whileInView="show"
       viewport={{ once: true, margin: "-80px" }}
       className={className}
     >

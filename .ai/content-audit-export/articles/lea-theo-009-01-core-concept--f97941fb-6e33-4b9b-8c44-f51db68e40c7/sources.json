@@ -1,68 +1,32 @@
 {
   "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:ffef732360eacdfe8d579aa1f0e13bf1f8e7a0cec52c454ecf3cf0367b2f306d",
-  "source_count": 5,
+  "sources_hash": "sha256:219a3e9614420a6be9221ba8ec6f5cfa50252ac5544f7b9d17165d0c5631b656",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "aeeac5b3-0c80-4ecf-a6f0-494ba4627ee5",
+      "source_id": "design-process-programming-b075",
       "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
-      "label": "American Institute of Architects. (2007). *Architectural Graphic Standards* (11th ed.)",
+      "label": "Design Process",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "primary_course_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-075-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf; raw_pdf_sha256=sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md; refined_markdown_sha256=sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80; checked_locator=Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430; raw PDF pages 6, 17, 25, and 33-35 checked by local PyMuPDF extraction",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
+      "created_at": "2026-05-12T02:55:00.000+08:00",
+      "updated_at": "2026-05-12T02:55:00.000+08:00"
     },
     {
-      "source_id": "48a4a05f-9078-47c0-8c8a-d6211cce756a",
+      "source_id": "ra9266-irr-architecture-act-b075",
       "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
-      "label": "John Wiley & Sons",
+      "label": "RA 9266 IRR - Architecture Act of 2004",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "primary_law_irr_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-075-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf; raw_pdf_sha256=sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md; refined_markdown_sha256=sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0; checked_locator=RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 3-5, 14, and 19 checked by local PyMuPDF extraction",
+      "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
-    },
-    {
-      "source_id": "850c30b4-7fbd-451e-8b16-ba9494fb715e",
-      "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
-      "label": "Peña, William M., & Parshall, Steven A. (2001). *Problem Seeking: An Architectural Programming Primer* (4th ed.)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
-    },
-    {
-      "source_id": "5b68e2ff-298d-4145-9783-6291eca4f91c",
-      "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
-      "label": "AIA Press",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
-    },
-    {
-      "source_id": "d814fbab-ad88-493a-9d5b-ac12aad05d34",
-      "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
-      "label": "Architectural Board of Review, Professional Regulation Commission. (2020). *Guidelines for the Architectural Design and Construction Program (ADCP) Examination*",
-      "url": null,
-      "source_type": "regulatory_body",
-      "description": "PRC. Philippine Institute of Architects. (2015). *Architectural Programming and Documentation Standards*. PIA Publications",
-      "is_verified": false,
-      "sort_order": 4,
-      "created_at": "2026-03-24T04:34:03.290033+00:00",
-      "updated_at": "2026-03-24T04:34:03.290033+00:00"
+      "created_at": "2026-05-12T02:55:00.000+08:00",
+      "updated_at": "2026-05-12T02:55:00.000+08:00"
     }
   ]
 }

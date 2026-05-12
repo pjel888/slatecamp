@@ -1,0 +1,164 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T18:13:43+08:00",
+  "audit_mode": "local_source_audit_no_supabase",
+  "protocols_applied": [
+    ".ai/06_specs/deep/05-reference/content-audit-editor-protocol/01-editor-operating-protocol.md",
+    ".ai/06_specs/deep/05-reference/content-audit-editor-protocol/02-article-editing-rules.md",
+    ".ai/06_specs/deep/05-reference/content-audit-editor-protocol/03-question-editing-rules.md",
+    ".ai/06_specs/deep/05-reference/content-audit-editor-protocol/04-fact-checking-and-source-policy.md"
+  ],
+  "target": {
+    "article_id": "16ba355e-811c-4191-98c2-c7fac22ca59b",
+    "slug": "location-on-property-and-exterior-walls",
+    "title": "Location on Property and Exterior Walls",
+    "article_folder": ".ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b",
+    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b",
+    "normalized_path": ".ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/normalized.md",
+    "normalized_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/normalized.md",
+    "candidate_path": ".ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/candidate.md",
+    "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/candidate.md",
+    "question_edits_folder": ".ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits",
+    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits",
+    "linked_questions_sha256": "sha256:0a7c8616325ad0fc79f07d388a18ce4f9d473c2ce98c16ed581c94e9604b8224",
+    "candidate_sha256": "sha256:df71e17fc68a7f4ee4b0c50ce3cf1716f7a0a4a9ffcc8df82bbcebb3b57b0e56",
+    "normalized_sha256": "sha256:df71e17fc68a7f4ee4b0c50ce3cf1716f7a0a4a9ffcc8df82bbcebb3b57b0e56",
+    "sources_sha256": "sha256:22abc592b25b3772cbaa006308467d60d4b0213b1fc2f43ba5ef6229a86e93c3"
+  },
+  "classification": {
+    "content_type": "pd1096_location_on_property_exterior_walls_article",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 40,
+    "question_edits_created": [
+      "0e318c9c-3ef2-42fb-84c7-271cfbe75f8e",
+      "477e44ee-af37-4bd2-8477-c3fc8223f552",
+      "2e393cbc-69e8-4130-b2ed-96f5f065d060",
+      "4407bb55-8935-4100-8404-afe06e6b7534",
+      "f622186b-d123-416c-8aea-69be04824223",
+      "057b331f-d5e9-4ecc-a6f0-df527fff5a2a",
+      "966f6415-d19f-47d0-b92d-92b6a1e4150c",
+      "77f34039-9792-482d-b180-d2d1cc657b09",
+      "1cf2fbe2-0529-446a-a17d-757e97807b0c",
+      "d729c1a8-be6a-4b28-bf33-53a02c62c9b8",
+      "83186ffb-656e-4a23-8798-ae53bde268d8",
+      "2b0f1216-08f8-4812-b552-d1bf3d49b7fe",
+      "ad0489eb-72a0-4c43-9900-91d200b8b9e9",
+      "27f938f9-4e49-4991-aebd-5587bb674f95",
+      "f83a8c1d-c537-47c0-88ef-d90c6ac6cf66",
+      "0aa679c6-8f46-4ece-bad7-3f36d5a4a27f",
+      "a7870827-248f-4086-9b36-b0031ca7a13d",
+      "b29f491f-da4c-480e-8cbb-4926b6c485fe",
+      "4d9b4473-df46-4c60-9b1f-8066c00c04cd",
+      "4db48437-52d6-4194-9cd8-5f5a43832bee",
+      "a8030770-69fb-46ff-aa87-a6329437b8ea",
+      "ccf5a29a-18ad-4a4e-94d6-d5c775856367",
+      "295b052e-b324-4b20-93bf-39f46382552f",
+      "01d1d3f2-b6da-4110-876f-33b8bc0cd224",
+      "3635588b-d376-49ec-afc0-861078ecd02d",
+      "4e2dc080-ec15-40ee-9ffd-a803a36e158b",
+      "6a4ad0c5-cc64-4706-998b-b055932fcc8d",
+      "f528f3b9-569c-4a01-8226-68fba2b792df",
+      "0812893e-d00e-4a98-b348-ce9f1119548c",
+      "fab2a39e-2db7-4f23-8830-9a279f45a9b9",
+      "c7853188-9b8b-4d9c-9e2f-ae596765ea9c",
+      "d52ef0b2-fffa-4a02-b2b3-c961d8947f1d",
+      "abf898f4-325b-4743-96ba-e28e5234b8a5",
+      "d08f62e9-2486-4402-ad4f-8b76430d9781",
+      "82be3561-1b2e-454c-bc4e-00bde7992d0b",
+      "904e5d8b-4f63-4988-90e9-fa816ef60407",
+      "852e5d4c-d4c7-4ba4-8954-87b147975280",
+      "a23c4d45-c1ae-42c7-8a6a-201e23ca8d9e",
+      "adfa3bc1-cccb-4445-bfa1-4ea0adf30624",
+      "84093cf0-4146-4946-a953-160b8a5a44f6"
+    ]
+  },
+  "raw_sources": [
+    {
+      "key": "pd1096_2004_revised_irr",
+      "label": "PD 1096 2004 Revised IRR, DPWH Official Publication",
+      "source_type": "implementing_rules",
+      "source_id": "batch008-location-on-property-and-exterior-walls-source-01",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "checked_pdf_pages": [
+        45,
+        81
+      ]
+    }
+  ],
+  "gate_results": {
+    "compose": "PASS: bun run content-audit:compose -- --article-id 16ba355e-811c-4191-98c2-c7fac22ca59b --overwrite; blockers=0",
+    "diff": "PASS: bun run content-audit:diff -- --article-id 16ba355e-811c-4191-98c2-c7fac22ca59b; changed=true safe_to_push=true blockers=0",
+    "validate": "PASS: bun run content-audit:validate -- --article-id 16ba355e-811c-4191-98c2-c7fac22ca59b --summary --dry-run; blockers=0 warnings=0",
+    "push_dry_run": "not_attempted_local_first; Supabase remote fetch is final publishing only and intentionally non-blocking here",
+    "supabase_mutation": "not_attempted"
+  },
+  "claims": [
+    {
+      "claim_id": "location-on-property-and-exterior-walls-claim-01",
+      "claim_text": "Rule VII Section 704 requires a building to adjoin or directly access a public space, yard, or street on at least one side.",
+      "source_support": [
+        "pd1096_2004_revised_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "location-on-property-and-exterior-walls-claim-02",
+      "claim_text": "Section 704 treats the centerline of an adjoining street or alley as the adjacent property line for the exterior-wall rules in that section.",
+      "source_support": [
+        "pd1096_2004_revised_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "location-on-property-and-exterior-walls-claim-03",
+      "claim_text": "Section 704 requires eaves over required windows to be at least 750mm from side and rear property lines.",
+      "source_support": [
+        "pd1096_2004_revised_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "location-on-property-and-exterior-walls-claim-04",
+      "claim_text": "Section 704 limits protected exterior wall openings in any storey to 50 percent of that storey wall area and limits projections by the one-third distance rule.",
+      "source_support": [
+        "pd1096_2004_revised_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "location-on-property-and-exterior-walls-claim-05",
+      "claim_text": "Section 704 gives an assumed-property-line and aggregate-area framework for multiple buildings on one property.",
+      "source_support": [
+        "pd1096_2004_revised_irr"
+      ],
+      "audit_result": "PASS"
+    }
+  ],
+  "unsupported_or_removed_claims": [
+    "Removed preserved UI placeholder text and extracted-summary notes.",
+    "Removed foreign-code comparison material not needed to answer PD 1096 Rule VII Section 704 items.",
+    "Separated the 750mm eaves rule from broader projection and exterior-opening rules."
+  ],
+  "remaining_local_blockers": [],
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_batch_008_complete": true,
+    "remote_publish_status": "not_attempted_by_request",
+    "remaining_local_blockers": []
+  },
+  "local_validation": {
+    "commands": [
+      "bun run content-audit:compose -- --article-id 16ba355e-811c-4191-98c2-c7fac22ca59b --overwrite",
+      "bun run content-audit:diff -- --article-id 16ba355e-811c-4191-98c2-c7fac22ca59b",
+      "bun run content-audit:validate -- --article-id 16ba355e-811c-4191-98c2-c7fac22ca59b --summary --dry-run"
+    ],
+    "valid": true,
+    "blockers": 0,
+    "warnings": 0,
+    "checked_at": "2026-05-10T18:18:27+08:00"
+  }
+}

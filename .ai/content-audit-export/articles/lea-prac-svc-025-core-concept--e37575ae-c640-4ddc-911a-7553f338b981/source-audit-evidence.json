@@ -1,0 +1,89 @@
+{
+  "article_id": "e37575ae-c640-4ddc-911a-7553f338b981",
+  "slug": "lea-prac-svc-025-core-concept",
+  "batch_id": "source-audited-article-batch-020-local-first",
+  "generated_at": "2026-05-10T16:41:51.472Z",
+  "mode": "local_first_no_supabase_no_deploy_no_commit",
+  "status": "locally_source_audited",
+  "raw_pdf_audit": [
+    {
+      "source_id": "spp-203-uap-local-raw-pdf",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+      "raw_pdf_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+      "ocr_pdf_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/ocr_pdf/UAP/SPP 203.pdf",
+      "ocr_pdf_sha256": "sha256:b7885f5019524c8f33c9718529c9c42a82f62732ec634bb02b1901cfd57840bc",
+      "checked_markdown_lines": [
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+          "checked_lines": [
+            "101-117"
+          ],
+          "note": "Specialized architectural services list includes Architectural Interiors and related services."
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+          "checked_lines": [
+            "121-150"
+          ],
+          "note": "Continuation of the specialized architectural services list."
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+          "checked_lines": [
+            "228-231"
+          ],
+          "note": "Manner of providing Architectural Interiors services."
+        }
+      ],
+      "note": "Raw PDF is retained as the authority file; local OCR/refined Markdown was used for line-level verification."
+    }
+  ],
+  "article_repair": {
+    "normalized_md_rewritten": true,
+    "candidate_md_to_be_recomposed": true,
+    "ui_blocks_removed_from_current_candidate": true,
+    "old_internal_generation_notes_removed": true,
+    "risky_claims_removed_or_rewritten": [
+      "Removed prior fee-percentage examples.",
+      "Removed unverified statute subsection wording.",
+      "Removed UI block summaries that carried unrelated phase-fee material."
+    ]
+  },
+  "claim_support": [
+    {
+      "claim": "SPP 203 lists Architectural Interiors among specialized architectural services.",
+      "support_status": "source_supported",
+      "support_sources": [
+        {
+          "source_id": "spp-203-uap-local-raw-pdf",
+          "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 101-117; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 121-150; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 228-231"
+        }
+      ]
+    },
+    {
+      "claim": "SPP 203 identifies dual-capacity and consulting-architect-only positions for Architectural Interiors services.",
+      "support_status": "source_supported",
+      "support_sources": [
+        {
+          "source_id": "spp-203-uap-local-raw-pdf",
+          "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 101-117; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 121-150; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 228-231"
+        }
+      ]
+    },
+    {
+      "claim": "Questions in this cluster should avoid unverified fee percentages and statute subsection labels.",
+      "support_status": "source_supported",
+      "support_sources": [
+        {
+          "source_id": "spp-203-uap-local-raw-pdf",
+          "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 101-117; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 121-150; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 228-231"
+        }
+      ]
+    }
+  ],
+  "question_repair_policy": {
+    "action": "replace_linked_questions_with_source_safe_versions",
+    "answer_key_changes_expected": true,
+    "allowed_question_scope": "Only concepts directly supported by the checked SPP source lines are used."
+  }
+}

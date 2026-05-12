@@ -1,0 +1,173 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-048-local-first",
+  "batch_number": 48,
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T19:48:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "93009368-9041-46e0-b93b-8786100311be",
+    "slug": "pd-1096-rule-xii-egress-and-corridors",
+    "title": "PD 1096 Rule XII Egress and Corridors",
+    "article_folder": ".ai/content-audit-export/articles/pd-1096-rule-xii-egress-and-corridors--93009368-9041-46e0-b93b-8786100311be",
+    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-xii-egress-and-corridors--93009368-9041-46e0-b93b-8786100311be",
+    "candidate_path": ".ai/content-audit-export/articles/pd-1096-rule-xii-egress-and-corridors--93009368-9041-46e0-b93b-8786100311be/candidate.md",
+    "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-xii-egress-and-corridors--93009368-9041-46e0-b93b-8786100311be/candidate.md",
+    "question_edits_folder": ".ai/content-audit-export/articles/pd-1096-rule-xii-egress-and-corridors--93009368-9041-46e0-b93b-8786100311be/question-edits",
+    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-xii-egress-and-corridors--93009368-9041-46e0-b93b-8786100311be/question-edits",
+    "normalized_sha256": "sha256:5a12c4487c2675fba66be7fb9f9687febc6d2a3e7435970c89c68e9d8fdf8162",
+    "candidate_sha256": "sha256:5a12c4487c2675fba66be7fb9f9687febc6d2a3e7435970c89c68e9d8fdf8162",
+    "linked_questions_sha256": "sha256:804862abcee35efc097b3023b7e41021ef606c30d8f30ac31948e4a589043267",
+    "sources_sha256": "sha256:c9a52c3dfb2032679e014955dba92055e57978bb0495ab9679246471c91d9300"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "refined_markdown_role": "locator_only",
+    "derivative_or_search_layer_as_primary": false,
+    "source_families_checked": [
+      {
+        "label": "PD 1096 National Building Code - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 - National Building Code.pdf",
+        "raw_pdf_sha256": "sha256:0bd869faac8d949359aa9e3c5bea7026e85e348f61ce1e87a09d48991c5ba796",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 - National Building Code.md",
+        "refined_markdown_sha256": "sha256:d7df246271ae1bcb14ed8e4ba881ed75cfa8381cca9f465986d9947397f353d9",
+        "locator": "PD 1096 National Building Code refined markdown lines 243-251, 356-473, 1050-1225, and 1786-1822"
+      },
+      {
+        "label": "PD 1096 IRR Full Implementing Rules and Regulations - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.pdf",
+        "raw_pdf_sha256": "sha256:8e98d8afd4b5972ba5a82d33a65e59e800cd41661b764a0dfc4112d29697b341",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.md",
+        "refined_markdown_sha256": "sha256:a43068979bbca37450a11ed16cbb966e2aff6d682cdded1ab3bf22b1d541efd0",
+        "locator": "PD 1096 IRR refined markdown lines 1243-1252, 1334-1378, 3009-3138, 3750-3825, 8637-8810, and 9180-9514"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "pd-1096-rule-xii-egress-and-corridors_article",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 41,
+    "question_edits_created": [
+      "b94d88fe-2d7a-4196-a267-2ed21166a4b6",
+      "43d29823-78d1-4e63-9a8b-82f8f3c36e26",
+      "a21f58c8-e06e-409c-b5a4-47cca8fa9803",
+      "05cdddaf-5afc-4a92-9ee8-77ae4e0f039e",
+      "c10602af-9c10-4fd7-ab69-11543cc447bb",
+      "007d351d-ba15-4143-be50-6ffc8d4ed1d9",
+      "85258bfa-601e-4f5c-b994-79a79db4fe72",
+      "1431af42-5cb8-4a4a-a32f-822e900c0543",
+      "941890ff-315e-4f97-b66d-d90b8e96a8e2",
+      "699350f0-8b02-478b-9576-2c1234b38393",
+      "7c1cab2a-0c6f-4a67-8023-8de9305b96e1",
+      "c04cdd00-9cd5-45d9-83f4-f60dfb5df37f",
+      "e47bd3ed-4135-4739-8b27-672c3cbbeea0",
+      "36a540ed-67e9-4611-bca5-307a6697e81a",
+      "4d3b5484-f685-46c5-91fe-0f8b0d84d9a5",
+      "9de725fa-7692-442d-a54f-7fea1729d514",
+      "ddc6191f-795e-4713-b980-f7cf6f4d3e2c",
+      "de571a32-7c95-4243-9ed7-ffd924f8adb1",
+      "eaabb6ac-60df-48d4-b529-a6f102080f32",
+      "f981a7a6-3af2-4230-82f0-feeb0fa682df",
+      "ab1aacfd-ef7f-451a-a0bd-75a225f9f4a2",
+      "cc8c8e3f-ebcf-48f8-aed2-a15512af915d",
+      "b2437050-323e-4f0d-89ef-b029a6a39cbb",
+      "81280da5-cea6-42ab-b936-d71039e551c4",
+      "eb4bf4a8-9422-47c5-9568-786be2863934",
+      "4986c4ed-1d6c-4112-9e7c-20bd19255d14",
+      "8027fdf3-92ce-457b-a35c-6a6941be181b",
+      "f3502bc4-898a-44d2-943b-fb78f1f2a02d",
+      "0aba2574-6975-476c-befc-c556ec7d7a9d",
+      "02245869-6264-4895-a3e8-f2f63b742923",
+      "b1b1cefa-97c9-4cb7-a172-a647fe91406e",
+      "05caa86a-1fb8-4ed8-ace8-01b32eceab13",
+      "d8b1a410-d6b0-4690-aca4-a41027f40d21",
+      "be639848-bd4a-4e28-bd40-447a96b044a3",
+      "c42f11cd-a803-4559-aa36-05aa9567cb5d",
+      "f7781f1f-d9a9-490e-a4a2-2d19c6102e46",
+      "c7352230-d819-437f-a5d8-774dd0332c29",
+      "43fe7501-c90d-45f5-a2a8-db7e5d024236",
+      "50fa34b7-2ea8-4706-b040-3b6c1eb3e695",
+      "200d6637-6c88-4bd1-9588-a777bb0712ae",
+      "0eefbd9f-5fa4-428a-b70d-43c9396ffae6"
+    ]
+  },
+  "claims": [
+    {
+      "claim_id": "pd-1096-rule-xii-egress-and-corridors-b048-claim-01",
+      "claim_text": "Rule XII Section 1207 ties stairs and exits to occupant load.",
+      "source_support": [
+        "pd1096-national-building-code-local-raw-pdf--b048-93009368-01",
+        "pd1096-irr-full-local-raw-pdf--b048-93009368-02"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "pd-1096-rule-xii-egress-and-corridors-b048-claim-02",
+      "claim_text": "Exit count, exit width, exit arrangement, travel distance, door swing, corridor width, stair dimensions, and enclosures have distinct numeric rules.",
+      "source_support": [
+        "pd1096-national-building-code-local-raw-pdf--b048-93009368-01",
+        "pd1096-irr-full-local-raw-pdf--b048-93009368-02"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "pd-1096-rule-xii-egress-and-corridors-b048-claim-03",
+      "claim_text": "Travel distance is 45 meters without a sprinkler system and may be 60 meters with a complete automatic fire-extinguishing system.",
+      "source_support": [
+        "pd1096-national-building-code-local-raw-pdf--b048-93009368-01",
+        "pd1096-irr-full-local-raw-pdf--b048-93009368-02"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "pd-1096-rule-xii-egress-and-corridors-b048-claim-04",
+      "claim_text": "Corridors serving required exits for more than ten occupants are at least 1.10 meters wide and dead ends are limited to 6 meters.",
+      "source_support": [
+        "pd1096-national-building-code-local-raw-pdf--b048-93009368-01",
+        "pd1096-irr-full-local-raw-pdf--b048-93009368-02"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "pd-1096-rule-xii-egress-and-corridors-b048-claim-05",
+      "claim_text": "Section 1214 gives projection-room construction, area, exit, doorway, and protection rules.",
+      "source_support": [
+        "pd1096-national-building-code-local-raw-pdf--b048-93009368-01",
+        "pd1096-irr-full-local-raw-pdf--b048-93009368-02"
+      ],
+      "audit_result": "PASS"
+    }
+  ],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "removed_risk_notes": [
+      "Old local-batch ownership markers in sidecars refreshed to Batch 048.",
+      "Question sidecars replaced with checked local raw-source citations.",
+      "Stale compose-error sidecars removed where selected bundle compose succeeds."
+    ]
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_batch_048_complete": true,
+    "remote_publish_status": "not_attempted_by_request",
+    "remaining_local_blockers": []
+  },
+  "local_validation": {
+    "status": "PASS",
+    "valid": true,
+    "blockers": 0,
+    "checked_at": "2026-05-11T19:58:00.000+08:00",
+    "commands": [
+      "bun run content-audit:compose -- --article-id 93009368-9041-46e0-b93b-8786100311be --overwrite --strict",
+      "bun run content-audit:diff -- --article-id 93009368-9041-46e0-b93b-8786100311be --strict --summary",
+      "bun run content-audit:validate -- --article-id 93009368-9041-46e0-b93b-8786100311be --summary",
+      "bun run content-audit:ui-block-edits -- --article-id 93009368-9041-46e0-b93b-8786100311be"
+    ]
+  }
+}

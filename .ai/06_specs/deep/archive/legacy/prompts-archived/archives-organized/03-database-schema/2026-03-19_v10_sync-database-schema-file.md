@@ -31,13 +31,13 @@ Run these queries. Do NOT skip any. Batch them if possible.
 
 ```sql
 -- A. All tables
-SELECT table_name 
-FROM information_schema.tables 
-WHERE table_schema = 'public' 
+SELECT table_name
+FROM information_schema.tables
+WHERE table_schema = 'public'
 ORDER BY table_name;
 
 -- B. All columns for every table (the big one)
-SELECT 
+SELECT
   t.table_name,
   c.column_name,
   c.data_type,
@@ -46,19 +46,19 @@ SELECT
   c.column_default,
   c.character_maximum_length
 FROM information_schema.tables t
-JOIN information_schema.columns c 
+JOIN information_schema.columns c
   ON c.table_name = t.table_name AND c.table_schema = t.table_schema
 WHERE t.table_schema = 'public'
 ORDER BY t.table_name, c.ordinal_position;
 
 -- C. All primary keys
-SELECT 
+SELECT
   tc.table_name,
   kcu.column_name
 FROM information_schema.table_constraints tc
-JOIN information_schema.key_column_usage kcu 
+JOIN information_schema.key_column_usage kcu
   ON tc.constraint_name = kcu.constraint_name
-WHERE tc.constraint_type = 'PRIMARY KEY' 
+WHERE tc.constraint_type = 'PRIMARY KEY'
   AND tc.table_schema = 'public'
 ORDER BY tc.table_name;
 
@@ -69,11 +69,11 @@ SELECT
   ccu.table_name AS referenced_table,
   ccu.column_name AS referenced_column
 FROM information_schema.table_constraints tc
-JOIN information_schema.key_column_usage kcu 
+JOIN information_schema.key_column_usage kcu
   ON tc.constraint_name = kcu.constraint_name
-JOIN information_schema.constraint_column_usage ccu 
+JOIN information_schema.constraint_column_usage ccu
   ON tc.constraint_name = ccu.constraint_name
-WHERE tc.constraint_type = 'FOREIGN KEY' 
+WHERE tc.constraint_type = 'FOREIGN KEY'
   AND tc.table_schema = 'public'
 ORDER BY tc.table_name;
 
@@ -83,9 +83,9 @@ SELECT
   tc.constraint_name,
   cc.check_clause
 FROM information_schema.table_constraints tc
-JOIN information_schema.check_constraints cc 
+JOIN information_schema.check_constraints cc
   ON tc.constraint_name = cc.constraint_name
-WHERE tc.constraint_type = 'CHECK' 
+WHERE tc.constraint_type = 'CHECK'
   AND tc.table_schema = 'public'
   AND tc.constraint_name NOT LIKE '%_not_null'
 ORDER BY tc.table_name;
@@ -100,7 +100,7 @@ WHERE schemaname = 'public'
 ORDER BY tablename, indexname;
 
 -- G. All triggers
-SELECT 
+SELECT
   trigger_name,
   event_manipulation,
   event_object_table,
@@ -111,7 +111,7 @@ WHERE trigger_schema = 'public'
 ORDER BY event_object_table, trigger_name;
 
 -- H. All functions
-SELECT 
+SELECT
   routine_name,
   routine_type,
   data_type AS return_type
@@ -120,7 +120,7 @@ WHERE routine_schema = 'public'
 ORDER BY routine_name;
 
 -- I. All RLS policies
-SELECT 
+SELECT
   schemaname,
   tablename,
   policyname,
@@ -134,7 +134,7 @@ WHERE schemaname = 'public'
 ORDER BY tablename, policyname;
 
 -- J. All enums (custom types)
-SELECT 
+SELECT
   t.typname AS enum_name,
   e.enumlabel AS enum_value
 FROM pg_type t
@@ -144,7 +144,7 @@ WHERE n.nspname = 'public'
 ORDER BY t.typname, e.enumsortorder;
 
 -- K. Row counts per table (for context)
-SELECT 
+SELECT
   schemaname,
   relname AS table_name,
   n_live_tup AS estimated_row_count

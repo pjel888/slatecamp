@@ -1,0 +1,49 @@
+{
+  "question_id": "a4c94fe3-d22a-4491-bc86-94f4d7e31280",
+  "baseline_hash": "sha256:9d7d5799cd2a710f10b9c8ce6a903c142714c6b876070eeefe631b005a347e33",
+  "action": "replace",
+  "reason": "source-audited-article-batch-039-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-039",
+  "approved_at": "2026-05-11T13:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-039-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 4007-4064",
+          "PD 1096 RIRR refined markdown lines 4109-4303"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 1302"
+  },
+  "proposed": {
+    "text": "If a building has four or more elevators, what is the minimum hoistway arrangement?",
+    "options": [
+      {
+        "id": "b039-aeee-10-a",
+        "text": "Not less than two hoistways, with not more than four elevators in one hoistway"
+      },
+      {
+        "id": "b039-aeee-10-b",
+        "text": "All elevators in one hoistway without limit"
+      },
+      {
+        "id": "b039-aeee-10-c",
+        "text": "Only one hoistway is always required"
+      },
+      {
+        "id": "b039-aeee-10-d",
+        "text": "No hoistway enclosure is required"
+      }
+    ],
+    "correct_option_id": "b039-aeee-10-a",
+    "rationale": "Correct answer: Not less than two hoistways, with not more than four elevators in one hoistway. This is directly supported by PD 1096 2004 Revised IRR, Section 1302.",
+    "explanation": "The Batch 039 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 1302.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 1302"
+  }
+}

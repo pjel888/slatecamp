@@ -1,0 +1,109 @@
+{
+  "question_id": "1739337c-b67d-4e37-b92e-e97729ce3394",
+  "baseline_hash": "sha256:97303e17e4f81f587645eba424ad804f92efbb7f60e334b03af5261c69584621",
+  "action": "replace",
+  "reason": "source-audited-article-batch-071-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes stale numeric, legal, or stale article claims where present.",
+  "approved_by": "codex-local-first-batch-071",
+  "approved_at": "2026-05-12T01:00:34+08:00",
+  "source_audit_support": {
+    "parent_article_id": "d4bd5a1a-c6b6-415f-9da3-c5c84f4ab96d",
+    "parent_article_slug": "lea-dsgn-005-12-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 10066 refined markdown lines 95-99, 177-196, 257-293, 386-393, and 603; raw PDF pages 3, 7, 11, 13, and 19 checked by local PyMuPDF extraction; PD 1096 refined markdown lines 75-80, 112, 337-340, 562-626, 1088-1120, 1174-1212, 1629-1631, 2246-2279, 4190, and 6113-6201; raw PDF pages 23, 47, 126, 278, 292, and 295 checked by local PyMuPDF extraction; PD 1096 official appendix accessibility text refined markdown lines 6113-6152 and 6170-6201; raw PDF pages 292 and 295 checked by local PyMuPDF extraction. Separate BP 344 raw PDF family hash checked locally: sha256:7fe6c2de016c0640002029b089c0468a6e0bcb5856be722c93acc97fadf19618",
+    "checked_markdown_lines": [
+      "RA 10066 lines 95-99",
+      "RA 10066 lines 177-196",
+      "RA 10066 lines 257-293",
+      "RA 10066 lines 386-393",
+      "RA 10066 line 603",
+      "PD 1096 lines 112",
+      "PD 1096 lines 337-340",
+      "PD 1096 lines 914-923",
+      "PD 1096 lines 1088-1120",
+      "PD 1096 lines 6113-6201"
+    ],
+    "checked_raw_pdf_pages": [
+      "RA 10066 raw PDF pages 3, 7, 11, 13, and 19",
+      "PD 1096 raw PDF pages 47, 278, 292, and 295"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "ra10066-cultural-heritage-act-b071",
+        "label": "RA 10066 - National Cultural Heritage Act of 2009",
+        "source_type": "primary_law_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-10066/ra 10066.pdf",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-10066/ra 10066.md",
+        "source_locator": "RA 10066 refined markdown lines 95-99, 177-196, 257-293, 386-393, and 603; raw PDF pages 3, 7, 11, 13, and 19 checked by local PyMuPDF extraction",
+        "raw_pdf_sha256": "sha256:98aefeeecfc07c329eac6e9ff9b784bf94e22c319dc2987d51ded09343b2bd95",
+        "refined_markdown_sha256": "sha256:9dd244f4545b120ea56288340cb426236781e873a7ad9139779f0971e08b220c"
+      },
+      {
+        "source_id": "pd1096-rirr-2004-b071",
+        "label": "PD 1096 2004 Revised IRR - National Building Code",
+        "source_type": "primary_law_irr_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 refined markdown lines 75-80, 112, 337-340, 562-626, 1088-1120, 1174-1212, 1629-1631, 2246-2279, 4190, and 6113-6201; raw PDF pages 23, 47, 126, 278, 292, and 295 checked by local PyMuPDF extraction",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7"
+      },
+      {
+        "source_id": "bp344-accessibility-appendix-b071",
+        "label": "BP 344 accessibility provisions as reproduced in the PD 1096 official appendix",
+        "source_type": "accessibility_law_appendix_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 official appendix accessibility text refined markdown lines 6113-6152 and 6170-6201; raw PDF pages 292 and 295 checked by local PyMuPDF extraction. Separate BP 344 raw PDF family hash checked locally: sha256:7fe6c2de016c0640002029b089c0468a6e0bcb5856be722c93acc97fadf19618",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, and citation rewritten to the Batch 071 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "A heritage doorway has only 0.75 m clear width and is proposed as the accessible entrance. What is the source-safe design response?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Accept it because heritage buildings are exempt from accessibility."
+      },
+      {
+        "id": "b",
+        "text": "Treat it as narrower than the checked 0.80 m clear-width value and coordinate a compliant accessible route or reviewed alternative with the proper authorities."
+      },
+      {
+        "id": "c",
+        "text": "Ignore the doorway because only new buildings need access."
+      },
+      {
+        "id": "d",
+        "text": "Call it compliant if the wall is older than 50 years."
+      }
+    ],
+    "correct_option_id": "b",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Incorrect. This option changes the source rule, value, or condition.",
+      "b": "Correct. This option follows the checked local raw-source evidence.",
+      "c": "Incorrect. This option changes the source rule, value, or condition.",
+      "d": "Incorrect. This option changes the source rule, value, or condition.",
+      "correct": "The checked accessibility text gives 0.80 m minimum clear door width. Heritage constraints require coordination, not an automatic waiver.",
+      "takeaway": "Use the local raw-source condition before applying the rule."
+    },
+    "explanation": "The checked accessibility text gives 0.80 m minimum clear door width. Heritage constraints require coordination, not an automatic waiver.",
+    "code_citation": "RA 10066 refined markdown lines 95-99, 177-196, 257-293, 386-393, and 603; raw PDF pages 3, 7, 11, 13, and 19 checked by local PyMuPDF extraction; PD 1096 refined markdown lines 75-80, 112, 337-340, 562-626, 1088-1120, 1174-1212, 1629-1631, 2246-2279, 4190, and 6113-6201; raw PDF pages 23, 47, 126, 278, 292, and 295 checked by local PyMuPDF extraction; PD 1096 official appendix accessibility text refined markdown lines 6113-6152 and 6170-6201; raw PDF pages 292 and 295 checked by local PyMuPDF extraction. Separate BP 344 raw PDF family hash checked locally: sha256:7fe6c2de016c0640002029b089c0468a6e0bcb5856be722c93acc97fadf19618",
+    "bloom_level": "apply",
+    "application_context": "code_interpretation",
+    "practice_context": [
+      "source-audited-local-first-batch-071"
+    ],
+    "difficulty": 0.55,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false
+  }
+}

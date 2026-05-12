@@ -1,0 +1,439 @@
+{
+  "schema_version": "source-audited-local-first-scoped-checks-v1",
+  "batch_id": "source-audited-article-batch-083-local-first",
+  "generated_at": "2026-05-12T06:45:00.000+08:00",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "scope": {
+    "handoff": "/Users/philiplewis/slatecamp/.ai/03_plans/source-audited-local-first-batches-handoff.md",
+    "report": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-083-local-first-report.md",
+    "ledger": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-083-local-first-ledger.json",
+    "scoped_checks": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-083-local-first-scoped-checks.json",
+    "article_folders": [
+      "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-002-04-core-concept--f39be27a-5611-4d35-bdda-02f6e3e46f42",
+      "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-002-05-core-concept--12358cd2-1836-4726-9e6a-4f49d8fac2db",
+      "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-002-06-core-concept--559d37e6-0821-46a0-9f03-5c2edfb9e375",
+      "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-003-04-core-concept--7dccfed0-8f85-47ad-b72b-8e5940d8276a",
+      "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-matl-003-05-core-concept--99ee4b30-1612-422c-af69-9a496deb6d79"
+    ]
+  },
+  "checks": {
+    "compose": [
+      {
+        "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
+        "slug": "lea-matl-002-04-core-concept",
+        "blockers": 0,
+        "pass": true
+      },
+      {
+        "article_id": "12358cd2-1836-4726-9e6a-4f49d8fac2db",
+        "slug": "lea-matl-002-05-core-concept",
+        "blockers": 0,
+        "pass": true
+      },
+      {
+        "article_id": "559d37e6-0821-46a0-9f03-5c2edfb9e375",
+        "slug": "lea-matl-002-06-core-concept",
+        "blockers": 0,
+        "pass": true
+      },
+      {
+        "article_id": "7dccfed0-8f85-47ad-b72b-8e5940d8276a",
+        "slug": "lea-matl-003-04-core-concept",
+        "blockers": 0,
+        "pass": true
+      },
+      {
+        "article_id": "99ee4b30-1612-422c-af69-9a496deb6d79",
+        "slug": "lea-matl-003-05-core-concept",
+        "blockers": 0,
+        "pass": true
+      }
+    ],
+    "diff": [
+      {
+        "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
+        "slug": "lea-matl-002-04-core-concept",
+        "safe_to_push": true,
+        "blockers": 0,
+        "pass": true
+      },
+      {
+        "article_id": "12358cd2-1836-4726-9e6a-4f49d8fac2db",
+        "slug": "lea-matl-002-05-core-concept",
+        "safe_to_push": true,
+        "blockers": 0,
+        "pass": true
+      },
+      {
+        "article_id": "559d37e6-0821-46a0-9f03-5c2edfb9e375",
+        "slug": "lea-matl-002-06-core-concept",
+        "safe_to_push": true,
+        "blockers": 0,
+        "pass": true
+      },
+      {
+        "article_id": "7dccfed0-8f85-47ad-b72b-8e5940d8276a",
+        "slug": "lea-matl-003-04-core-concept",
+        "safe_to_push": true,
+        "blockers": 0,
+        "pass": true
+      },
+      {
+        "article_id": "99ee4b30-1612-422c-af69-9a496deb6d79",
+        "slug": "lea-matl-003-05-core-concept",
+        "safe_to_push": true,
+        "blockers": 0,
+        "pass": true
+      }
+    ],
+    "validate": {
+      "status": "PASS",
+      "article_count": 5,
+      "blockers": 0,
+      "warnings": "expected component-usage.json warnings only"
+    },
+    "ui_block_edits": {
+      "status": "PASS",
+      "article_count": 5,
+      "blockers": 0,
+      "warnings": 0
+    },
+    "json_parse": {
+      "parsed": 105,
+      "failures": []
+    },
+    "placeholder_internal_source_gap_scan": {
+      "files_scanned": 70,
+      "matches": [],
+      "pass": true
+    },
+    "source_hash_checks": {
+      "count": 31,
+      "failures": [],
+      "checks": [
+        {
+          "label": "Masonry Lecture",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Masonry Lecture.pdf",
+          "expected": "sha256:4e3fc56f93fce4d78c98bdaff6b8a41eaf0fd4389a11b69bb42d66fc996d6bd1",
+          "actual": "sha256:4e3fc56f93fce4d78c98bdaff6b8a41eaf0fd4389a11b69bb42d66fc996d6bd1",
+          "pass": true
+        },
+        {
+          "label": "Masonry Lecture",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Masonry Lecture.md",
+          "expected": "sha256:0386c6ebd73ac17ff6dc3cee97b63cd83b7e4168d8f3cf50c41a3347935d7ab4",
+          "actual": "sha256:0386c6ebd73ac17ff6dc3cee97b63cd83b7e4168d8f3cf50c41a3347935d7ab4",
+          "pass": true
+        },
+        {
+          "label": "George Salvan Architectural Building Materials",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+          "expected": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+          "actual": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+          "pass": true
+        },
+        {
+          "label": "George Salvan Architectural Building Materials",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+          "expected": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+          "actual": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+          "pass": true
+        },
+        {
+          "label": "Building Construction Illustrated, 5th Edition",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+          "expected": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+          "actual": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+          "pass": true
+        },
+        {
+          "label": "Building Construction Illustrated, 5th Edition",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+          "expected": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+          "actual": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+          "pass": true
+        },
+        {
+          "label": "George Salvan Architectural Building Materials",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+          "expected": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+          "actual": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+          "pass": true
+        },
+        {
+          "label": "George Salvan Architectural Building Materials",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+          "expected": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+          "actual": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+          "pass": true
+        },
+        {
+          "label": "Building Construction Illustrated, 5th Edition",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+          "expected": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+          "actual": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+          "pass": true
+        },
+        {
+          "label": "Building Construction Illustrated, 5th Edition",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+          "expected": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+          "actual": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+          "pass": true
+        },
+        {
+          "label": "European Building Construction Illustrated",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/European Building Construction Illustrated.pdf",
+          "expected": "sha256:440f21385df13b75ce4041026f77d9d34872d6235fd18fa770c11609a283d19c",
+          "actual": "sha256:440f21385df13b75ce4041026f77d9d34872d6235fd18fa770c11609a283d19c",
+          "pass": true
+        },
+        {
+          "label": "European Building Construction Illustrated",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/European Building Construction Illustrated.md",
+          "expected": "sha256:f2ec82d918f32d6c050f9f5ea0274b6c68f409c009ddcd311ab45e3567041e8c",
+          "actual": "sha256:f2ec82d918f32d6c050f9f5ea0274b6c68f409c009ddcd311ab45e3567041e8c",
+          "pass": true
+        },
+        {
+          "label": "George Salvan Architectural Building Materials",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+          "expected": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+          "actual": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+          "pass": true
+        },
+        {
+          "label": "George Salvan Architectural Building Materials",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+          "expected": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+          "actual": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+          "pass": true
+        },
+        {
+          "label": "Building Construction Illustrated, 5th Edition",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+          "expected": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+          "actual": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+          "pass": true
+        },
+        {
+          "label": "Building Construction Illustrated, 5th Edition",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+          "expected": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+          "actual": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+          "pass": true
+        },
+        {
+          "label": "European Building Construction Illustrated",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/European Building Construction Illustrated.pdf",
+          "expected": "sha256:440f21385df13b75ce4041026f77d9d34872d6235fd18fa770c11609a283d19c",
+          "actual": "sha256:440f21385df13b75ce4041026f77d9d34872d6235fd18fa770c11609a283d19c",
+          "pass": true
+        },
+        {
+          "label": "European Building Construction Illustrated",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/European Building Construction Illustrated.md",
+          "expected": "sha256:f2ec82d918f32d6c050f9f5ea0274b6c68f409c009ddcd311ab45e3567041e8c",
+          "actual": "sha256:f2ec82d918f32d6c050f9f5ea0274b6c68f409c009ddcd311ab45e3567041e8c",
+          "pass": true
+        },
+        {
+          "label": "Metals Lecture",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Metals Lecture.pdf",
+          "expected": "sha256:cd9cd4ee534bda9a974447c4ec73b13b12d5abf1c14df1fca408a2c4530650dd",
+          "actual": "sha256:cd9cd4ee534bda9a974447c4ec73b13b12d5abf1c14df1fca408a2c4530650dd",
+          "pass": true
+        },
+        {
+          "label": "Metals Lecture",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Metals Lecture.md",
+          "expected": "sha256:4e9e0a042f2eef2c80d33af81512ca2cf32778cae64351af9dc54df58db3694c",
+          "actual": "sha256:4e9e0a042f2eef2c80d33af81512ca2cf32778cae64351af9dc54df58db3694c",
+          "pass": true
+        },
+        {
+          "label": "European Building Construction Illustrated",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/European Building Construction Illustrated.pdf",
+          "expected": "sha256:440f21385df13b75ce4041026f77d9d34872d6235fd18fa770c11609a283d19c",
+          "actual": "sha256:440f21385df13b75ce4041026f77d9d34872d6235fd18fa770c11609a283d19c",
+          "pass": true
+        },
+        {
+          "label": "European Building Construction Illustrated",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/European Building Construction Illustrated.md",
+          "expected": "sha256:f2ec82d918f32d6c050f9f5ea0274b6c68f409c009ddcd311ab45e3567041e8c",
+          "actual": "sha256:f2ec82d918f32d6c050f9f5ea0274b6c68f409c009ddcd311ab45e3567041e8c",
+          "pass": true
+        },
+        {
+          "label": "Building Construction Illustrated, 5th Edition",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+          "expected": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+          "actual": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+          "pass": true
+        },
+        {
+          "label": "Building Construction Illustrated, 5th Edition",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+          "expected": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+          "actual": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+          "pass": true
+        },
+        {
+          "label": "Metals Lecture",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Metals Lecture.pdf",
+          "expected": "sha256:cd9cd4ee534bda9a974447c4ec73b13b12d5abf1c14df1fca408a2c4530650dd",
+          "actual": "sha256:cd9cd4ee534bda9a974447c4ec73b13b12d5abf1c14df1fca408a2c4530650dd",
+          "pass": true
+        },
+        {
+          "label": "Metals Lecture",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Metals Lecture.md",
+          "expected": "sha256:4e9e0a042f2eef2c80d33af81512ca2cf32778cae64351af9dc54df58db3694c",
+          "actual": "sha256:4e9e0a042f2eef2c80d33af81512ca2cf32778cae64351af9dc54df58db3694c",
+          "pass": true
+        },
+        {
+          "label": "Building Construction Illustrated, 5th Edition",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+          "expected": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+          "actual": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+          "pass": true
+        },
+        {
+          "label": "Building Construction Illustrated, 5th Edition",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+          "expected": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+          "actual": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+          "pass": true
+        },
+        {
+          "label": "Building Construction 1 Lecture",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction 1 Lecture.pdf",
+          "expected": "sha256:a53ebfbccb0c0f53503a8f76385836d46c6951cb4350c8af10420239fd23e231",
+          "actual": "sha256:a53ebfbccb0c0f53503a8f76385836d46c6951cb4350c8af10420239fd23e231",
+          "pass": true
+        },
+        {
+          "label": "Building Construction 1 Lecture",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction 1 Lecture.md",
+          "expected": "sha256:298206511059efbfa480e3dc0d9caab8f0270aa5c1288bf8987ae53790caccec",
+          "actual": "sha256:298206511059efbfa480e3dc0d9caab8f0270aa5c1288bf8987ae53790caccec",
+          "pass": true
+        },
+        {
+          "label": "AISC Steel Construction Manual 13th supplemental",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/AISC Steel Construction Manual 13th.pdf",
+          "expected": "sha256:601c5d0c4d07548a0806f8b38f4dd52dd1af76cc3102f5aeccf96cb6a7956c1f",
+          "actual": "sha256:601c5d0c4d07548a0806f8b38f4dd52dd1af76cc3102f5aeccf96cb6a7956c1f",
+          "pass": true,
+          "supplemental_hash_only": true
+        }
+      ]
+    },
+    "question_edit_counts": {
+      "counts": [
+        {
+          "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
+          "slug": "lea-matl-002-04-core-concept",
+          "linked_questions": 10,
+          "question_edits": 10,
+          "pass": true
+        },
+        {
+          "article_id": "12358cd2-1836-4726-9e6a-4f49d8fac2db",
+          "slug": "lea-matl-002-05-core-concept",
+          "linked_questions": 10,
+          "question_edits": 10,
+          "pass": true
+        },
+        {
+          "article_id": "559d37e6-0821-46a0-9f03-5c2edfb9e375",
+          "slug": "lea-matl-002-06-core-concept",
+          "linked_questions": 10,
+          "question_edits": 10,
+          "pass": true
+        },
+        {
+          "article_id": "7dccfed0-8f85-47ad-b72b-8e5940d8276a",
+          "slug": "lea-matl-003-04-core-concept",
+          "linked_questions": 10,
+          "question_edits": 10,
+          "pass": true
+        },
+        {
+          "article_id": "99ee4b30-1612-422c-af69-9a496deb6d79",
+          "slug": "lea-matl-003-05-core-concept",
+          "linked_questions": 10,
+          "question_edits": 10,
+          "pass": true
+        }
+      ],
+      "linked_questions": 50,
+      "question_edits": 50,
+      "failures": 0
+    },
+    "stale_compose_error_scan": {
+      "stale_files": [],
+      "pass": true
+    },
+    "source_evidence": {
+      "files": 5,
+      "claims": 55,
+      "blockers": 0,
+      "pass": true
+    },
+    "scenario_enrichment": {
+      "status": "pending-policy-recorded",
+      "articles": [
+        {
+          "article_id": "f39be27a-5611-4d35-bdda-02f6e3e46f42",
+          "slug": "lea-matl-002-04-core-concept",
+          "status": "eligible-deferred"
+        },
+        {
+          "article_id": "12358cd2-1836-4726-9e6a-4f49d8fac2db",
+          "slug": "lea-matl-002-05-core-concept",
+          "status": "eligible-deferred"
+        },
+        {
+          "article_id": "559d37e6-0821-46a0-9f03-5c2edfb9e375",
+          "slug": "lea-matl-002-06-core-concept",
+          "status": "eligible-deferred"
+        },
+        {
+          "article_id": "7dccfed0-8f85-47ad-b72b-8e5940d8276a",
+          "slug": "lea-matl-003-04-core-concept",
+          "status": "eligible-deferred"
+        },
+        {
+          "article_id": "99ee4b30-1612-422c-af69-9a496deb6d79",
+          "slug": "lea-matl-003-05-core-concept",
+          "status": "eligible-deferred"
+        }
+      ],
+      "blocking": false
+    },
+    "targeted_tests": {
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "status": "PASS",
+      "tests_passed": 34,
+      "tests_failed": 0,
+      "expects": 328
+    },
+    "scoped_git_diff_check": {
+      "command": "git diff --check -- .ai/03_plans/source-audited-local-first-batches-handoff.md .ai/content-audit-export/articles/<batch-083-folders> .ai/content-audit-export/source-audited-article-batch-083-local-first-*",
+      "status": "PASS",
+      "supplemental_untracked_whitespace_scan": "PASS",
+      "supplemental_files_checked": 129,
+      "blockers": []
+    },
+    "local_original_hash_reconciliation": {
+      "status": "PASS",
+      "original_md_unchanged": true,
+      "metadata_and_ui_blocks_hashes_aligned": true,
+      "blockers": []
+    }
+  },
+  "blockers": []
+}

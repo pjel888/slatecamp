@@ -1,0 +1,238 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-074-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T02:15:02.998+08:00",
+  "target": {
+    "article_id": "ac9af0bb-dcf3-4a02-b409-d19bca68e514",
+    "slug": "lea-plan-003-05-core-concept",
+    "title": "Human settlement",
+    "article_folder": ".ai/content-audit-export/articles/lea-plan-003-05-core-concept--ac9af0bb-dcf3-4a02-b409-d19bca68e514",
+    "normalized_sha256": "sha256:0f6b5b3e6432c810d09d1d7e13e0d47e07eff97da2fedbf1ed188060dcdf60bf",
+    "candidate_sha256": "sha256:0f6b5b3e6432c810d09d1d7e13e0d47e07eff97da2fedbf1ed188060dcdf60bf",
+    "candidate_path": ".ai/content-audit-export/articles/lea-plan-003-05-core-concept--ac9af0bb-dcf3-4a02-b409-d19bca68e514/candidate.md"
+  },
+  "classification": {
+    "topic_family": "human_settlements",
+    "local_first_batch": "074",
+    "source_sensitivity": "legal_human_settlements_policy",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "legal_or_code",
+    "requires_raw_pdf_audit": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdfs_checked_first": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "local_pdf_extraction_method": "python_pymupdf_local",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "ra11201-irr-dhsud-b074",
+      "label": "RA 11201 IRR - DHSUD Act Implementing Rules",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+      "sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+      "refined_markdown_sha256": "sha256:40f1a5041c69b3a4aea7c8ba138a9d570bc686bea48aa5618ea6423a6a719528",
+      "locator": "RA 11201 IRR refined markdown lines 17-36, 40-99, 134-162, and 187-204; raw PDF pages 1-7 checked by local PyMuPDF extraction"
+    },
+    {
+      "source_id": "ra7279-udha-2009-b074",
+      "label": "RA 7279 Urban Development and Housing Act",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7279/RA 7279 Urban Development and Housing Act 2009.pdf",
+      "sha256": "sha256:23efa9c0278519d79ed424d9ced016b24619ebb42a19e75a05dc9bb8bf1c4696",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7279/RA 7279 Urban Development and Housing Act 2009.md",
+      "refined_markdown_sha256": "sha256:f52859fb18fec28c403348851c3e53caca2e678cb9cec43fbca28d8d5c3a323e",
+      "locator": "RA 7279 refined markdown lines 13-85, 111-131, 230-253, 257-313, and 319-329; raw PDF pages 1-7 checked by local PyMuPDF extraction"
+    },
+    {
+      "source_id": "local-shelter-planning-manual-2016-b074",
+      "label": "Local Shelter Planning Manual, 2016 Web Edition",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Local-Shelter-Planning-Manual-2016-Web-Edition.pdf",
+      "sha256": "sha256:c8dd5e9492a17cdd4c2fb05d21564eee75b8def86e9f8bb8052b71adf15edcec",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Local-Shelter-Planning-Manual-2016-Web-Edition.md",
+      "refined_markdown_sha256": "sha256:e94d42b03c750a104eb24daaf60e3f616c55c301af6d4be9b7aede5f1004794b",
+      "locator": "Local Shelter Planning Manual refined markdown lines 17-25, 37-45, 61-63, 303-384, 761-790, and 805-819; raw PDF pages 3, 5, 8-9, 12-13, and related planning-table pages checked by local PyMuPDF extraction"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-plan-003-05-core-concept-article-b074",
+      "claim_text": "Article and linked question edits are limited to checked RA 11201 IRR, RA 7279, and Local Shelter Planning Manual evidence on human settlements and shelter planning.",
+      "claim_type": "article_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "source_locator": "RA 11201 IRR refined markdown lines 17-36, 40-99, 134-162, and 187-204; raw PDF pages 1-7 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Human settlements comprise shelter and infrastructure plus services; housing includes livelihood access, tenure, cost, physical structure, and environment."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-17646b52-5990-42bb-835b-afb18a83435e-ALE-PLAN-003-05-001-b074",
+      "claim_text": "Question 17646b52-5990-42bb-835b-afb18a83435e ALE-PLAN-003-05-001 was rewritten to the checked human_settlements source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "source_locator": "RA 11201 IRR refined markdown lines 17-36, 40-99, 134-162, and 187-204; raw PDF pages 1-7 checked by local PyMuPDF extraction; RA 7279 refined markdown lines 13-85, 111-131, 230-253, 257-313, and 319-329; raw PDF pages 1-7 checked by local PyMuPDF extraction; Local Shelter Planning Manual refined markdown lines 17-25, 37-45, 61-63, 303-384, 761-790, and 805-819; raw PDF pages 3, 5, 8-9, 12-13, and related planning-table pages checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Human settlements comprise shelter and infrastructure plus services; housing includes livelihood access, tenure, cost, physical structure, and environment."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-4a8581e1-6b8e-4d83-b9bd-5e1bb4e2dda2-ALE-PLAN-003-05-003-b074",
+      "claim_text": "Question 4a8581e1-6b8e-4d83-b9bd-5e1bb4e2dda2 ALE-PLAN-003-05-003 was rewritten to the checked human_settlements source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "source_locator": "RA 11201 IRR refined markdown lines 17-36, 40-99, 134-162, and 187-204; raw PDF pages 1-7 checked by local PyMuPDF extraction; RA 7279 refined markdown lines 13-85, 111-131, 230-253, 257-313, and 319-329; raw PDF pages 1-7 checked by local PyMuPDF extraction; Local Shelter Planning Manual refined markdown lines 17-25, 37-45, 61-63, 303-384, 761-790, and 805-819; raw PDF pages 3, 5, 8-9, 12-13, and related planning-table pages checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Human settlements comprise shelter and infrastructure plus services; housing includes livelihood access, tenure, cost, physical structure, and environment."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-4cdca0f1-f9aa-4472-ba25-877a5f8e53d0-ALE-PLAN-003-05-006-b074",
+      "claim_text": "Question 4cdca0f1-f9aa-4472-ba25-877a5f8e53d0 ALE-PLAN-003-05-006 was rewritten to the checked human_settlements source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "source_locator": "RA 11201 IRR refined markdown lines 17-36, 40-99, 134-162, and 187-204; raw PDF pages 1-7 checked by local PyMuPDF extraction; RA 7279 refined markdown lines 13-85, 111-131, 230-253, 257-313, and 319-329; raw PDF pages 1-7 checked by local PyMuPDF extraction; Local Shelter Planning Manual refined markdown lines 17-25, 37-45, 61-63, 303-384, 761-790, and 805-819; raw PDF pages 3, 5, 8-9, 12-13, and related planning-table pages checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Human settlements comprise shelter and infrastructure plus services; housing includes livelihood access, tenure, cost, physical structure, and environment."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-5f125243-a930-409c-a8bf-997dac7f3e74-ALE-PLAN-003-05-007-b074",
+      "claim_text": "Question 5f125243-a930-409c-a8bf-997dac7f3e74 ALE-PLAN-003-05-007 was rewritten to the checked human_settlements source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "source_locator": "RA 11201 IRR refined markdown lines 17-36, 40-99, 134-162, and 187-204; raw PDF pages 1-7 checked by local PyMuPDF extraction; RA 7279 refined markdown lines 13-85, 111-131, 230-253, 257-313, and 319-329; raw PDF pages 1-7 checked by local PyMuPDF extraction; Local Shelter Planning Manual refined markdown lines 17-25, 37-45, 61-63, 303-384, 761-790, and 805-819; raw PDF pages 3, 5, 8-9, 12-13, and related planning-table pages checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Human settlements comprise shelter and infrastructure plus services; housing includes livelihood access, tenure, cost, physical structure, and environment."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-6389cc99-56de-4a7e-9b9c-c3f5d041c739-ALE-PLAN-003-05-010-b074",
+      "claim_text": "Question 6389cc99-56de-4a7e-9b9c-c3f5d041c739 ALE-PLAN-003-05-010 was rewritten to the checked human_settlements source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "source_locator": "RA 11201 IRR refined markdown lines 17-36, 40-99, 134-162, and 187-204; raw PDF pages 1-7 checked by local PyMuPDF extraction; RA 7279 refined markdown lines 13-85, 111-131, 230-253, 257-313, and 319-329; raw PDF pages 1-7 checked by local PyMuPDF extraction; Local Shelter Planning Manual refined markdown lines 17-25, 37-45, 61-63, 303-384, 761-790, and 805-819; raw PDF pages 3, 5, 8-9, 12-13, and related planning-table pages checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Human settlements comprise shelter and infrastructure plus services; housing includes livelihood access, tenure, cost, physical structure, and environment."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-6c985487-e0a9-4b61-8923-7cb219f0a286-ALE-PLAN-003-05-002-b074",
+      "claim_text": "Question 6c985487-e0a9-4b61-8923-7cb219f0a286 ALE-PLAN-003-05-002 was rewritten to the checked human_settlements source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "source_locator": "RA 11201 IRR refined markdown lines 17-36, 40-99, 134-162, and 187-204; raw PDF pages 1-7 checked by local PyMuPDF extraction; RA 7279 refined markdown lines 13-85, 111-131, 230-253, 257-313, and 319-329; raw PDF pages 1-7 checked by local PyMuPDF extraction; Local Shelter Planning Manual refined markdown lines 17-25, 37-45, 61-63, 303-384, 761-790, and 805-819; raw PDF pages 3, 5, 8-9, 12-13, and related planning-table pages checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Human settlements comprise shelter and infrastructure plus services; housing includes livelihood access, tenure, cost, physical structure, and environment."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-8a9e6f48-3946-41da-b222-1963a77b7437-ALE-PLAN-003-05-009-b074",
+      "claim_text": "Question 8a9e6f48-3946-41da-b222-1963a77b7437 ALE-PLAN-003-05-009 was rewritten to the checked human_settlements source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "source_locator": "RA 11201 IRR refined markdown lines 17-36, 40-99, 134-162, and 187-204; raw PDF pages 1-7 checked by local PyMuPDF extraction; RA 7279 refined markdown lines 13-85, 111-131, 230-253, 257-313, and 319-329; raw PDF pages 1-7 checked by local PyMuPDF extraction; Local Shelter Planning Manual refined markdown lines 17-25, 37-45, 61-63, 303-384, 761-790, and 805-819; raw PDF pages 3, 5, 8-9, 12-13, and related planning-table pages checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Human settlements comprise shelter and infrastructure plus services; housing includes livelihood access, tenure, cost, physical structure, and environment."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-bdf48688-79f2-46c6-8b00-e1ba777a3df2-ALE-PLAN-003-05-008-b074",
+      "claim_text": "Question bdf48688-79f2-46c6-8b00-e1ba777a3df2 ALE-PLAN-003-05-008 was rewritten to the checked human_settlements source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "source_locator": "RA 11201 IRR refined markdown lines 17-36, 40-99, 134-162, and 187-204; raw PDF pages 1-7 checked by local PyMuPDF extraction; RA 7279 refined markdown lines 13-85, 111-131, 230-253, 257-313, and 319-329; raw PDF pages 1-7 checked by local PyMuPDF extraction; Local Shelter Planning Manual refined markdown lines 17-25, 37-45, 61-63, 303-384, 761-790, and 805-819; raw PDF pages 3, 5, 8-9, 12-13, and related planning-table pages checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Human settlements comprise shelter and infrastructure plus services; housing includes livelihood access, tenure, cost, physical structure, and environment."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-cc17ecea-52f4-4cf2-82da-bde5f5bcdf36-ALE-PLAN-003-05-005-b074",
+      "claim_text": "Question cc17ecea-52f4-4cf2-82da-bde5f5bcdf36 ALE-PLAN-003-05-005 was rewritten to the checked human_settlements source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "source_locator": "RA 11201 IRR refined markdown lines 17-36, 40-99, 134-162, and 187-204; raw PDF pages 1-7 checked by local PyMuPDF extraction; RA 7279 refined markdown lines 13-85, 111-131, 230-253, 257-313, and 319-329; raw PDF pages 1-7 checked by local PyMuPDF extraction; Local Shelter Planning Manual refined markdown lines 17-25, 37-45, 61-63, 303-384, 761-790, and 805-819; raw PDF pages 3, 5, 8-9, 12-13, and related planning-table pages checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Human settlements comprise shelter and infrastructure plus services; housing includes livelihood access, tenure, cost, physical structure, and environment."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-ebe24994-1056-4f69-b006-eba355943cac-ALE-PLAN-003-05-004-b074",
+      "claim_text": "Question ebe24994-1056-4f69-b006-eba355943cac ALE-PLAN-003-05-004 was rewritten to the checked human_settlements source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "raw_pdf_sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "source_locator": "RA 11201 IRR refined markdown lines 17-36, 40-99, 134-162, and 187-204; raw PDF pages 1-7 checked by local PyMuPDF extraction; RA 7279 refined markdown lines 13-85, 111-131, 230-253, 257-313, and 319-329; raw PDF pages 1-7 checked by local PyMuPDF extraction; Local Shelter Planning Manual refined markdown lines 17-25, 37-45, 61-63, 303-384, 761-790, and 805-819; raw PDF pages 3, 5, 8-9, 12-13, and related planning-table pages checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Human settlements comprise shelter and infrastructure plus services; housing includes livelihood access, tenure, cost, physical structure, and environment."
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "scenario_enrichment": {
+    "policy_status": "pending",
+    "eligibility_status": "eligible-deferred",
+    "blocker_status": "nonblocking",
+    "note": "No Real World Scenario section was added; source correctness and linked-question safety remained the blocking criteria."
+  },
+  "sme_review": {
+    "required": false,
+    "status": "PASS",
+    "reviewer": "codex-local-first-batch-074"
+  },
+  "source_file_hash": "sha256:2b343b7510a416f7fd50962c6ac30dfa49293225d576141d782b80c46a5a78eb"
+}

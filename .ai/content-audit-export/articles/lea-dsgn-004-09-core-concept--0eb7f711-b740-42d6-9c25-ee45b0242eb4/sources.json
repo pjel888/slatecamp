@@ -1,68 +1,93 @@
 {
   "article_id": "0eb7f711-b740-42d6-9c25-ee45b0242eb4",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:1dcd9b055d521484a57da2e1e2382885a68e03d60a978872b65ef1dc1f382d56",
-  "source_count": 5,
+  "sources_hash": "sha256:d83de1a3f6bfe8167a0c979c3f33b3e9bef9e794a6d7bb7b9be5f85d89899331",
+  "source_count": 3,
   "sources": [
     {
-      "source_id": "fdce435d-88bc-42f4-9d12-f63cea46c898",
-      "article_id": "0eb7f711-b740-42d6-9c25-ee45b0242eb4",
-      "label": "Presidential Decree 1096 (National Building Code of the Philippines), Rule 7 (occupancy); RA 9514 (fire safety)",
-      "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:33:59.83296+00:00",
-      "updated_at": "2026-03-24T04:33:59.83296+00:00"
+      "source_id": "pd1096-rirr-2004-occupancy-mixed-facility-local-b065",
+      "label": "PD 1096 RIRR 2004 - occupancy classification for residential, institutional, business, industrial, storage, assembly, resort, school, hospital, restaurant, and parking/loading references",
+      "authority": "DPWH official revised IRR local raw PDF conversion",
+      "source_type": "building_code_irr_pdf",
+      "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1128, 1174-1190, 1265-1272, 1659-1667, 1681-1698, and 1735-1736; raw PDF pages 47-48, 53, 57, 72, and 101-103 checked for matching text by local PDF extraction",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "checked_markdown_lines": [
+        "PD 1096 RIRR DPWH Official refined markdown lines 1088-1128",
+        "PD 1096 RIRR DPWH Official refined markdown lines 1174-1190",
+        "PD 1096 RIRR DPWH Official refined markdown lines 1265-1272",
+        "PD 1096 RIRR DPWH Official refined markdown lines 1659-1667",
+        "PD 1096 RIRR DPWH Official refined markdown lines 1681-1698",
+        "PD 1096 RIRR DPWH Official refined markdown lines 1735-1736"
+      ],
+      "checked_raw_pdf_pages": [
+        "PD 1096 RIRR DPWH Official raw PDF pages 47-48",
+        "PD 1096 RIRR DPWH Official raw PDF page 53",
+        "PD 1096 RIRR DPWH Official raw PDF page 57",
+        "PD 1096 RIRR DPWH Official raw PDF page 72",
+        "PD 1096 RIRR DPWH Official raw PDF pages 101-103"
+      ],
+      "use": "primary local source for PD 1096 occupancy and parking/loading classification checks in Batch 065",
+      "local_source_checked": true
     },
     {
-      "source_id": "86811c17-ba87-4048-8cdf-ff239b12dd5b",
-      "article_id": "0eb7f711-b740-42d6-9c25-ee45b0242eb4",
-      "label": "RA 9514 (Occupant Load and Density calculations)",
-      "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 1,
-      "created_at": "2026-03-24T04:33:59.83296+00:00",
-      "updated_at": "2026-03-24T04:33:59.83296+00:00"
+      "source_id": "ra9514-rirr-2019-occupancy-egress-storage-hotel-local-b065",
+      "label": "RA 9514 Revised IRR 2019 - occupancy classification, mixed occupancy, assembly load, educational exits, hotel/dormitory protection, and storage egress",
+      "authority": "Bureau of Fire Protection revised IRR local raw PDF conversion",
+      "source_type": "fire_code_irr_pdf",
+      "source_locator": "RA 9514 RIRR refined markdown lines 1435, 1628, 1648-1650, 1702, 1807, 2521-2591, 3984-3994, 4275-4303, 5390-5476, and 6152-6200; raw PDF pages 64, 68, 91-93, 142, 168, 171, and 189 checked for matching text by local PDF extraction",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+      "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+      "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+      "checked_markdown_lines": [
+        "RA 9514 RIRR refined markdown line 1435",
+        "RA 9514 RIRR refined markdown line 1628",
+        "RA 9514 RIRR refined markdown lines 1648-1650",
+        "RA 9514 RIRR refined markdown lines 1702 and 1807",
+        "RA 9514 RIRR refined markdown lines 2521-2591",
+        "RA 9514 RIRR refined markdown lines 3984-3994",
+        "RA 9514 RIRR refined markdown lines 4275-4303",
+        "RA 9514 RIRR refined markdown lines 5390-5476",
+        "RA 9514 RIRR refined markdown lines 6152-6200"
+      ],
+      "checked_raw_pdf_pages": [
+        "RA 9514 RIRR raw PDF page 64",
+        "RA 9514 RIRR raw PDF page 68",
+        "RA 9514 RIRR raw PDF pages 91-93",
+        "RA 9514 RIRR raw PDF page 142",
+        "RA 9514 RIRR raw PDF page 168",
+        "RA 9514 RIRR raw PDF page 171",
+        "RA 9514 RIRR raw PDF page 189"
+      ],
+      "use": "primary local source for Fire Code classification, egress, alarm, sprinkler, educational, hotel/dormitory, assembly, storage, and mixed-occupancy checks in Batch 065",
+      "local_source_checked": true
     },
     {
-      "source_id": "fc99f7d4-c127-49ce-be90-423564f090ca",
-      "article_id": "0eb7f711-b740-42d6-9c25-ee45b0242eb4",
-      "label": "Food Safety and Drug Office (FSDO) / Department of Health (DOH) Food Establishment Sanitation Code",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:33:59.83296+00:00",
-      "updated_at": "2026-03-24T04:33:59.83296+00:00"
-    },
-    {
-      "source_id": "2870952f-d577-43f8-b502-f5c79df5ac8f",
-      "article_id": "0eb7f711-b740-42d6-9c25-ee45b0242eb4",
-      "label": "Accessibility Law (BP 344), §301 (ramps), §303 (doors)",
-      "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:33:59.83296+00:00",
-      "updated_at": "2026-03-24T04:33:59.83296+00:00"
-    },
-    {
-      "source_id": "c2c170ad-cb5e-4164-bf1e-a4ebd122e08e",
-      "article_id": "0eb7f711-b740-42d6-9c25-ee45b0242eb4",
-      "label": "Building Information Modeling (BIM) Standards: Kitchen planning per NFPA 101 Life Safety Code, adapted for Philippine context",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 4,
-      "created_at": "2026-03-24T04:33:59.83296+00:00",
-      "updated_at": "2026-03-24T04:33:59.83296+00:00"
+      "source_id": "pd9514-fire-code-life-safety-occupancy-local-b065",
+      "label": "Fire Code source family - general life-safety, occupancy, and egress requirements",
+      "authority": "Fire Code local raw PDF conversion",
+      "source_type": "fire_code_pdf",
+      "source_locator": "PD 9514 Fire Code refined markdown lines 1599-1629, 1655-1719, 2654, 2849-2855, and 3644-3728; raw PDF pages 57-63 and 111 checked for matching text by local PDF extraction",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf",
+      "raw_pdf_sha256": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-9514/PD 9514 - Fire Code of the Philippines.md",
+      "refined_markdown_sha256": "sha256:5eb0584f1bcbfa87044e28f2e59a75c6364c7160a98edfdd888c6aef849b01b2",
+      "checked_markdown_lines": [
+        "PD 9514 Fire Code refined markdown lines 1599-1629",
+        "PD 9514 Fire Code refined markdown lines 1655-1719",
+        "PD 9514 Fire Code refined markdown line 2654",
+        "PD 9514 Fire Code refined markdown lines 2849-2855",
+        "PD 9514 Fire Code refined markdown lines 3644-3728"
+      ],
+      "checked_raw_pdf_pages": [
+        "PD 9514 Fire Code raw PDF pages 57-63",
+        "PD 9514 Fire Code raw PDF page 111"
+      ],
+      "use": "supporting local source for general life-safety, occupancy classification, exits, warning systems, and egress checks in Batch 065",
+      "local_source_checked": true
     }
   ]
 }

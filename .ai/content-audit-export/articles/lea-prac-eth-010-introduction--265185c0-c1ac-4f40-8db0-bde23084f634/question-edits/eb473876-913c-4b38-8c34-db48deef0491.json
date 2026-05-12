@@ -1,0 +1,32 @@
+{
+  "question_id": "eb473876-913c-4b38-8c34-db48deef0491",
+  "baseline_hash": "sha256:38a5570b62455de5c9aa13559ce57fed0889e0c7103423513152c472b908bf6e",
+  "reason": "Batch 003 source audit removed unsupported penalty ranges, restitution amounts, dollar values, and scenario statistics; questions now use RA 9266 IRR and UAP Code of Ethics conduct categories.",
+  "approved_by": "codex-local-source-audit-batch-003",
+  "approved_at": "2026-05-10T18:00:00+08:00",
+  "proposed": {
+    "text": "A review note claims a fixed restitution amount after negligent architectural work. What is the source-backed response if the checked RA 9266/UAP sources do not state that amount?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use the review-note amount as law"
+      },
+      {
+        "id": "b",
+        "text": "Always order exactly half the damage amount"
+      },
+      {
+        "id": "c",
+        "text": "Ignore the negligence issue entirely"
+      },
+      {
+        "id": "d",
+        "text": "Remove the unsupported amount and classify only the source-backed conduct category"
+      }
+    ],
+    "correct_option_id": "d",
+    "rationale": "The checked sources support conduct categories, not the invented dollar/restoration amounts from the old question.",
+    "explanation": "This directly resolves the unsupported restitution blocker.",
+    "code_citation": "RA 9266 IRR grounds for discipline; UAP Code of Ethics where applicable"
+  }
+}

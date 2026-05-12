@@ -1,0 +1,77 @@
+{
+  "question_id": "720544b3-9f87-45ac-bce7-cadb0f6d0e41",
+  "baseline_hash": "sha256:664cd1fe388d86ff530d680e5e27781c896520cb376fc16276b146a73aa0418f",
+  "action": "replace",
+  "reason": "source-audited-article-batch-034-local-first aligned linked professional-practice question with audited local raw PDF source language for lea-prac-svc-016-post-construction-services-building-administration-and-operations-support.",
+  "approved_by": "codex-local-source-audit-batch-034",
+  "approved_at": "2026-05-11T10:59:50+08:00",
+  "source_audit_support": {
+    "parent_article_id": "355981c3-3480-4441-991d-8d8e94cd20b5",
+    "parent_article_slug": "lea-prac-svc-016-post-construction-services-building-administration-and-operations-support",
+    "parent_article_title": "Post-Construction Services, Building Administration, and Operations Support",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UAP Standards of Professional Practice refined markdown lines 1065-1069",
+    "checked_sources": [
+      {
+        "source_id": "uap-spp-205-local",
+        "label": "UAP SPP Document 205 - Post-construction Services",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 205.pdf",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 205.md",
+        "source_locator": "UAP SPP 205 refined markdown lines 3-7, 119-129",
+        "checked_markdown_lines": [
+          "UAP SPP 205 refined markdown lines 3-7",
+          "UAP SPP 205 refined markdown lines 119-129"
+        ],
+        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 205.pdf",
+        "raw_pdf_sha256": "sha256:8511f90780e4d26f966c941142bde99395337280f12ce1035c68d3e7ebb41b33",
+        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 205.md",
+        "refined_markdown_sha256": "sha256:8a0b4833ce68e5daeb2ec4403d32ff95f7cfc192218a526e44618c41cf6e563a"
+      },
+      {
+        "source_id": "uap-standards-professional-practice2-local",
+        "label": "UAP Standards of Professional Practice - compiled SPP source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+        "source_locator": "UAP Standards of Professional Practice refined markdown lines 300-350, 362-418, 475-586, 1036-1077, 1097-1215",
+        "checked_markdown_lines": [
+          "UAP Standards of Professional Practice refined markdown lines 300-350",
+          "UAP Standards of Professional Practice refined markdown lines 362-418",
+          "UAP Standards of Professional Practice refined markdown lines 475-586",
+          "UAP Standards of Professional Practice refined markdown lines 1036-1077",
+          "UAP Standards of Professional Practice refined markdown lines 1097-1215"
+        ],
+        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+        "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer key, rationale, explanation, and code citation rewritten to audited local article scope."
+  },
+  "proposed": {
+    "text": "Which activity belongs to Business Development and Management under SPP 205?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Signing another architect's plans"
+      },
+      {
+        "id": "b",
+        "text": "Issuing a bid bond"
+      },
+      {
+        "id": "c",
+        "text": "Preparing the schematic design study"
+      },
+      {
+        "id": "d",
+        "text": "Innovating schemes for occupancy and billing tenants for rentals and utilities"
+      }
+    ],
+    "correct_option_id": "d",
+    "rationale": "The compiled SPP lists occupancy schemes and tenant billing under Business Development and Management.",
+    "explanation": "The compiled SPP lists occupancy schemes and tenant billing under Business Development and Management.",
+    "code_citation": "UAP Standards of Professional Practice refined markdown lines 1065-1069"
+  }
+}

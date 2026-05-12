@@ -1,222 +1,44 @@
-
-
-## Board Exam Quick Check
-
-Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
-
-**Common mistake:** treating a familiar keyword in **Lea Util 002 07 Escalators Specifications And Design Parameters** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## What You Need to Know for the LEA
 
-## Learning Goal
+Escalators are moving circulation equipment. They are not a substitute for every required elevator, and they are not just decorative stairs. Board questions usually test location, capacity, landing space, safe geometry, control devices, and fire protection around floor openings.
 
-Apply escalator design parameters — width, rise, inclination angle (30° standard, 35° max), speed (0.5 m/s typical), and the 400-mm flat-step run-in/run-out requirement per BP 344 accessibility standards for escalator installations.
-## Escalators: Specifications and Design Parameters
+## Circulation Role
 
-### Standard Dimensions
+Salvan describes escalators as continuously receiving and discharging live load at constant speed, with little waiting at landings. Because the equipment is always moving and forms part of the pedestrian trip, it should be placed directly in the main circulation line where riders can locate it, recognize its destination, and approach it comfortably.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-util-002-07-escalators-specification", type="image", caption="Escalator Section Diagram — Step Width, Inclination, Handrail, Balustrade", description="Cross-section and elevation of a standard escalator showing: step widths (600mm, 800mm, 1000mm), inclination angle (30° standard, 35° max), handrail height (0.90-1.10m), balustrade, flat-step run-in/run-out (400mm per BP 344), and emergency stop button locations at top and bottom landings. Operating speed 0.5 m/s (max 0.65 m/s) labeled.", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+The discharge is continuous. That makes landing space important. The checked source warns that restricted or poorly marked discharge areas can cause hesitation and traffic backup. It gives minimum landing space in front of an escalator terminal of 1.80 m to 2.40 m for a 90 fpm unit and 3.00 m to 3.60 m for a 120 fpm unit.
 
+## Arrangement
 
-Escalator step widths are standardized in three common sizes:
+The source distinguishes crisscross and parallel arrangements. Crisscross arrangements are generally favored for lower cost, smaller floor-space demand, and lower structural requirements. Parallel arrangements can be visually impressive but are less efficient and more expensive; they are often used where a strong visual draw is useful, such as transportation terminals.
 
-- _600 mm (24 inches)_ — used in lower-traffic areas and secondary locations
-- _800 mm (32 inches)_ — most common in retail and transportation facilities
-- _1000 mm (40 inches)_ — deployed in high-traffic transit stations and commercial centers
+The arrangement must also consider how riders continue through a multi-floor trip. Insufficient transfer space between escalators can create crowding, pushing, and annoyance. If passengers must travel three or more floors, inadequate elevator service can make the escalator trip tiring and inefficient.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="KeyValues" status="preserved"]
-Extracted summary:
-- Props: items="[", value=true, lx=true, label=true, Office=true, Work=true, Lobby=true, Corridor=true, Parking=true, Detailed=true
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+## Geometry, Speed, and Width
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
-[/SLATECAMP_UI_BLOCK]
+Salvan's regulatory extract states that an escalator's angle of inclination must not exceed 35 degrees from horizontal. Its rated speed, measured along the incline, must not be more than 38 m per minute. Starting switches must be key-operated and located within sight of the escalator steps.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
-[/SLATECAMP_UI_BLOCK]
+The same regulatory extract requires balustrade width between 558 mm and 1.20 m, with that width not more than 330 mm wider than the steps. Balustrades must be solid and incombustible; glass balustrades must be tempered glass. Handrails must move in the same direction and at the same speed as the steps.
 
-These dimensions are industry standards for escalator design. Philippine Building Code (PD 1096) establishes safety and operational requirements for vertical transportation systems, though specific step width mandates are not explicitly detailed in the code.
+## Components and Safety Devices
 
-### Operating Speed
+The checked source identifies the truss, tracks, sprocket assembly, machine, controller, emergency brake, emergency stop button, handrail, and balustrade assembly as key parts of a standard escalator. The handrail is synchronized with tread motion to stabilize riders entering, riding, and leaving.
 
-Escalators operate at controlled speeds to balance passenger throughput with safety:
+Safety features include horizontal steps at each end, close clearances around combplates and step treads, a service brake for power or mechanical failure, a governor for over- or under-speed conditions, emergency stop switches near the combplate, and adequate illumination at landings and along the stairway.
 
-- _Standard speed: 0.5 m/s_ — the default design velocity in most applications
-- _Maximum speed: 0.65 m/s_ — permitted only in specific high-capacity installations with enhanced safety systems
+## Fire Protection and Reversibility
 
-Speed selection affects passenger comfort, safety guardrails, and emergency stop response capability.
+Escalator openings can create vertical paths for smoke and fire. Salvan lists protection approaches such as rolling shutters, smoke guards, and sprinkler-vent arrangements. Where escalators pierce more than two floors, a code-required fire-protection method must be considered.
 
-### Inclination and Rise
+Reversibility is useful where traffic is strongly directional. A pair of escalators can operate both up, both down, or one each way, depending on demand. The LEA logic is to match flow, capacity, fire protection, and safety controls instead of choosing an escalator only for appearance.
 
-Escalators are designed with controlled angle of inclination:
+## LEA Focus
 
-- _Standard inclination: 30°_ — standard angle in most commercial and residential buildings
-- _Maximum inclination: 35°_ — steep angle permitted only where headroom and structural constraints require it, with additional safety measures
+For escalator questions, check these in order:
 
-Inclination directly impacts step geometry, handrail design, and emergency egress pathways. Steeper angles require stronger balustrade systems and more robust emergency stop mechanisms.
-
-### Passenger Capacity
-
-A _1000 mm wide escalator operating at 0.5 m/s_ carries approximately _4,500 to 6,750 persons per hour_, depending on passenger loading patterns and step spacing. This is the baseline capacity used in transportation demand calculations based on industry engineering standards for escalator design.
-
-### Handrail and Balustrade Requirements
-
-Handrails must operate _synchronized with step speed_ to ensure passenger safety. Handrail height is regulated at _0.90 to 1.10 meters_ above step surface. Balustrades on both sides must prevent passenger entrapment and contact with moving parts.
-
-Emergency stop buttons must be positioned at _both top and bottom landings_ and must be easily accessible to operators and responding personnel.
-
-## Moving Walks: Horizontal and Inclined Conveyors
-
-### Inclination Limits
-
-Moving walks are designed for horizontal and low-angle service:
-
-- _0° (horizontal)_ — standard configuration in most corridors, retail spaces, and public areas
-- _Up to 12° maximum inclination_ — steep moving walks used only when vertical rise is unavoidable
-
-Inclined moving walks above 12° require reinforced balustrades, anti-slip surfaces, and emergency stopping protocols.
-
-### Speed and Capacity
-
-Moving walks typically operate at _0.5 to 0.65 m/s_, with similar capacity calculations to escalators. Horizontal moving walks in airports and transportation facilities commonly operate at the higher speed to maximize passenger throughput.
-
-### Safety Systems
-
-Moving walks require:
-
-- _Continuous handrails_ on both sides at _0.90 to 1.10 m_ height
-- _Non-slip surfaces_ on all treads and landings
-- _Emergency stop buttons_ at entry/exit points and at operator stations
-- _Safety toe boards_ or guards to prevent foot entrapment at transitions
-
-## Conveyors in Buildings: Dumbwaiters, Pneumatic Tubes, and Material Handling
-
-### Dumbwaiters
-
-Dumbwaiters are small freight elevators designed for delivering documents, food, and light materials between building levels. They operate at lower speeds than passenger elevators (typically 0.5 m/s) and carry loads of _50 to 100 kg_ maximum per unit specifications.
-
-### Pneumatic Tube Systems
-
-Pneumatic tube systems transport mail, documents, and small packages through pressurized pipe networks. They are commonly found in hospitals, offices, and retail facilities. Operating pressure is typically _40 to 80 kPa_, with carrier velocity of _6 to 8 m/s_.
-
-### Material Handling Conveyors
-
-Building-integrated material handling conveyors include:
-
-- _Baggage conveyors_ in hotels and airports
-- _Delivery conveyors_ in mail rooms
-- _Kitchen conveyors_ in food service facilities
-
-All material conveyors must have _guarded moving parts_, emergency stop access every 2 meters of run, and be designed for the specific load requirements of the application.
-
-## Fire Protection: Escalator Floor Openings
-
-Escalators create openings through fire-rated floor assemblies. PD 1096 requires one of two fire protection strategies:
-
-[SLATECAMP_UI_BLOCK:ui_0005 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-util-002-07-escalators-specification", type="image", caption="Escalator Fire Protection — Sprinkler Curtain and Rolling Shutter", description="Section through escalator floor opening showing two fire protection strategies: (1) Sprinkler curtain — automatic sprinkler heads above opening creating water barrier; (2) Rolling shutter — motorized fire-rated gate descending to seal opening upon fire detection. Both systems activate automatically per RA 9514 requirements.", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-
-### Sprinkler Curtain
-
-An _automatic sprinkler spray curtain_ deploys above the escalator opening when smoke or heat is detected. The curtain creates a barrier preventing fire and smoke spread between floors.
-
-### Rolling Shutter
-
-A _rolling shutter or fire-rated gate_ closes over the escalator opening when fire is detected, completely sealing the opening. This is the more common approach in high-rise buildings where compartmentalization is critical.
-
-Both systems must activate upon detection and be tested regularly per building maintenance protocols and applicable fire code requirements.
-
-## Accessibility: BP 344 and Vertical Transportation
-
-The Accessibility Law (BP 344) mandates accessible vertical transportation in buildings open to the public. _Escalators and moving walks do NOT count toward accessible vertical transportation requirements_.
-
-Buildings must provide _at least one accessible elevator_ for wheelchair users, persons with mobility disabilities, and people using assistive devices. Escalators may be installed as _supplementary_ rapid transit but cannot replace the required accessible elevator.
-
-For buildings with escalators only and no elevator, entry to upper floors is not accessible and constitutes a BP 344 violation. Accessible design requires redundancy: escalator for rapid traffic flow plus elevator for accessible use.
-
-## Electrical Systems: Philippine Standards
-
-All vertical transportation equipment operates on Philippine standard electrical supply:
-
-- _220V AC, 60 Hz_ single-phase or three-phase power
-- Motor power ratings: escalators typically require _15 to 45 kW_ depending on width and speed
-- Moving walks: _10 to 30 kW_
-- Emergency lighting: 220V UPS-backed circuits
-
-Electrical design must comply with National Electrical Code of the Philippines (NECP) adopted under PD 1096. Escalator and moving walk motors require soft-start drives to limit inrush current and protect building electrical distribution.
-
-## Energy Consumption and Standby Modes
-
-### Energy Use
-
-A fully loaded _1000 mm escalator at 0.5 m/s_ consumes approximately _20 to 30 kWh per day_ during normal operating hours. This varies significantly with:
-
-- _Traffic volume_ — higher occupancy increases motor load
-- _Inclination angle_ — steeper escalators consume more energy lifting passengers
-- _Speed_ — higher operating speeds increase power draw
-
-### Standby and Variable Speed Operation
-
-Modern escalators use variable frequency drives (VFDs) to reduce standby consumption:
-
-- _Active operation: full motor power_
-- _Low-traffic mode: 30 to 50% reduced speed reduces power to 20 to 30% of rated consumption_
-- _Standby (no passengers detected): 5 to 10% baseline power for control systems, lighting, and handrail drive_
-
-VFD-equipped escalators can reduce daily energy consumption by 20 to 40% compared to fixed-speed equipment, translating to significant annual cost savings for typical commercial installations.
-
-## Maintenance and Inspection Requirements
-
-### Routine Maintenance (Monthly)
-
-- Handrail and step surface cleaning
-- Visual inspection for cracks, corrosion, or damaged steps
-- Emergency stop button functional testing
-- Balustrade integrity check
-
-### Major Maintenance (Quarterly)
-
-- Complete moving walkway surface inspection
-- Bearing and sprocket wear assessment
-- Electrical connector and control system testing
-- Fire protection system (sprinkler curtain or shutter) functional test
-
-### Annual Certification
-
-All escalators and moving walks require _third-party certification_ by accredited testing organizations under PD 1096. Certification documents must be posted at landing areas and retained per applicable building maintenance and record-keeping requirements.
-
-## Key Takeaways for Design and Compliance
-
-1. _Escalators at 1000 mm width and 0.5 m/s speed_ provide the baseline capacity standard of 4,500 to 6,750 persons/hour for high-traffic applications.
-
-2. _Incline limits_ (30° standard, 35° maximum for escalators; 12° maximum for moving walks) are non-negotiable and directly affect safety system robustness.
-
-3. _Fire protection_ through sprinkler curtains or rolling shutters is mandatory at all floor penetrations and must activate within 30 seconds.
-
-4. _BP 344 compliance_ requires at least one accessible elevator in addition to escalators; escalators alone do not satisfy accessibility mandates.
-
-5. _Emergency stop access_ must be provided at both landing levels and at intermediate operator stations, with clear signage and regular functional testing per manufacturer specifications and building maintenance protocols.
-
-6. _Electrical supply_ at 220V/60Hz must be stable and protected; variable frequency drives reduce operating costs while maintaining safety margins.
-
-7. _Maintenance certification_ by accredited third parties is non-negotiable annually and represents a significant but essential operational cost.
-
-## Related Articles
-
-See also within HVAC and Mechanical Systems: **lea-util-002-03-core-concept**, **lea-util-002-04-core-concept**, **lea-util-002-05-core-concept**, **lea-util-002-06-core-concept**.
-
-> **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
+- Location in the main circulation path.
+- Clear and adequate landing/discharge space.
+- Crisscross or parallel arrangement fit to traffic and structure.
+- Inclination, speed, width, handrail, and balustrade requirements.
+- Emergency stop, brake, governor, illumination, and combplate safety.
+- Fire protection where floor openings are connected.

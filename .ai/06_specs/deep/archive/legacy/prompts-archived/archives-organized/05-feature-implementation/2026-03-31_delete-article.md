@@ -1,7 +1,7 @@
 # EXECUTION DIRECTIVE: ARTICLE DELETION WORKFLOW AND CONFIRMATION MODAL
 
 ## 1. STRATEGIC OBJECTIVE
-Implement a secure, two-step deletion workflow for articles to prevent accidental data loss. This requires a reusable confirmation modal integrated into two specific routing contexts: the article list view and the individual article detail view. 
+Implement a secure, two-step deletion workflow for articles to prevent accidental data loss. This requires a reusable confirmation modal integrated into two specific routing contexts: the article list view and the individual article detail view.
 
 ## 2. STRICT OPERATIONAL CONSTRAINTS
 * **NO ASSUMED STYLING:** You are strictly forbidden from generating, assuming, or injecting any CSS, Tailwind classes, or inline styles. You must inherit the existing UI framework and component library present in the codebase.

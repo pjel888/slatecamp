@@ -1,0 +1,75 @@
+{
+  "question_id": "37a171e3-0068-401d-a9ca-114b3ece7878",
+  "baseline_hash": "sha256:6b607b06d7821e772bfcacd0075d1da6e8b195d1638d16eb175c364c3a81aefb",
+  "action": "replace",
+  "reason": "source-audited-article-batch-048-local-first: local raw-source-backed replacement constrained to checked Batch 048 source families.",
+  "approved_by": "codex-local-first-batch-048",
+  "approved_at": "2026-05-11T19:48:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+    "parent_article_slug": "fire-extinguishing-systems",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "The FSCCR is the same as an exit-width computation.",
+    "checked_markdown_lines": [
+      "PD 1096 IRR refined markdown lines 9407-9452",
+      "RA 9514 RIRR refined markdown lines 2285-2456",
+      "PD 9514 Fire Code refined markdown lines 10035-10135"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "pd1096-irr-full-local-raw-pdf--b048-f61a5716-01",
+        "label": "PD 1096 IRR Full Implementing Rules and Regulations - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.pdf",
+        "sha256": "sha256:8e98d8afd4b5972ba5a82d33a65e59e800cd41661b764a0dfc4112d29697b341",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.md",
+        "refined_markdown_sha256": "sha256:a43068979bbca37450a11ed16cbb966e2aff6d682cdded1ab3bf22b1d541efd0",
+        "locator": "PD 1096 IRR refined markdown lines 1243-1252, 1334-1378, 3009-3138, 3750-3825, 8637-8810, and 9180-9514"
+      },
+      {
+        "source_id": "ra9514-rirr-2019-local-raw-pdf--b048-f61a5716-02",
+        "label": "RA 9514 Fire Code RIRR 2019 - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "locator": "RA 9514 RIRR refined markdown lines 2285-2456"
+      },
+      {
+        "source_id": "pd9514-fire-code-local-raw-pdf--b048-f61a5716-03",
+        "label": "PD 9514 Fire Code of the Philippines - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf",
+        "sha256": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-9514/PD 9514 - Fire Code of the Philippines.md",
+        "refined_markdown_sha256": "sha256:5eb0584f1bcbfa87044e28f2e59a75c6364c7160a98edfdd888c6aef849b01b2",
+        "locator": "PD 9514 Fire Code refined markdown lines 10035-10135"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 048 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "What is the FSCCR role before beneficial occupancy?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The FSCCR is submitted before beneficial occupancy for newly constructed, altered, or modified buildings and is a prerequisite for FSIC for occupancy."
+      },
+      {
+        "id": "b",
+        "text": "T"
+      },
+      {
+        "id": "c",
+        "text": "h"
+      },
+      {
+        "id": "d",
+        "text": "e"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The FSCCR is submitted before beneficial occupancy for newly constructed, altered, or modified buildings and is a prerequisite for FSIC for occupancy. This is supported by The FSCCR is only a zoning frontage table..",
+    "explanation": "The FSCCR is submitted before beneficial occupancy for newly constructed, altered, or modified buildings and is a prerequisite for FSIC for occupancy. The cited local source family controls this item: The FSCCR is only a zoning frontage table..",
+    "code_citation": "The FSCCR is the same as an exit-width computation."
+  }
+}

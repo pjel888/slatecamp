@@ -1,0 +1,142 @@
+{
+  "batch_id": "source-audited-article-batch-026-local-first",
+  "generated_at": "2026-05-11T20:45:00.000+08:00",
+  "valid": true,
+  "blockers": [],
+  "warnings": [
+    "Repo validate reports component-usage.json is not generated for these article bundles; this is non-blocking and consistent with prior local-first batches.",
+    "Diff reports retain the expected remote stale-check warning for final publishing; no Supabase mutation was attempted."
+  ],
+  "selected_article_ids": [
+    "15d9ff17-038a-4ba5-86f9-2e6a8f12cc54",
+    "f95d5cc8-30d4-4f74-890f-1018d764da6e",
+    "fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0",
+    "218ac476-9857-4c14-9033-2f27c75da04b",
+    "a7751310-8582-4b9a-a71b-78f6e9216b79"
+  ],
+  "counts": {
+    "selected_articles": 5,
+    "linked_questions": 50,
+    "source_safe_question_edits": 50,
+    "source_records": 9,
+    "distinct_raw_pdfs_checked": 3,
+    "distinct_refined_markdown_sources_checked": 3,
+    "json_files_parsed": 100,
+    "source_paths_hash_checked": 18,
+    "placeholder_gap_text_files_checked": 10,
+    "safe_diff_reports": 5,
+    "content_audit_tests_passed": 34,
+    "content_audit_tests_failed": 0
+  },
+  "checks": {
+    "json_parse": "PASS",
+    "source_paths_exist_and_hash_match": "PASS",
+    "normalized_candidate_hashes_match_metadata": "PASS",
+    "placeholder_gap_scan": "PASS",
+    "question_edits_complete": "PASS",
+    "compose_diff_validate": "PASS",
+    "test_command": "PASS"
+  },
+  "articles": [
+    {
+      "article_id": "15d9ff17-038a-4ba5-86f9-2e6a8f12cc54",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-019-core-concept--15d9ff17-038a-4ba5-86f9-2e6a8f12cc54",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-019-core-concept--15d9ff17-038a-4ba5-86f9-2e6a8f12cc54/question-edits",
+      "validation": {
+        "compose_blockers": 0,
+        "compose_warnings": 0,
+        "diff_changed": true,
+        "diff_safe_to_push": true,
+        "diff_locally_safe_to_push": true,
+        "diff_blockers": 0,
+        "repo_validate_valid": true,
+        "repo_validate_blockers": 0,
+        "repo_validate_warnings": [
+          "lea-prac-ctr-019-core-concept--15d9ff17-038a-4ba5-86f9-2e6a8f12cc54: component-usage.json has not been generated for this article yet."
+        ],
+        "scoped_checks_valid": true,
+        "source_audit_status": "PASS"
+      }
+    },
+    {
+      "article_id": "f95d5cc8-30d4-4f74-890f-1018d764da6e",
+      "folder": ".ai/content-audit-export/articles/lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification--f95d5cc8-30d4-4f74-890f-1018d764da6e",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification--f95d5cc8-30d4-4f74-890f-1018d764da6e/question-edits",
+      "validation": {
+        "compose_blockers": 0,
+        "compose_warnings": 0,
+        "diff_changed": true,
+        "diff_safe_to_push": true,
+        "diff_locally_safe_to_push": true,
+        "diff_blockers": 0,
+        "repo_validate_valid": true,
+        "repo_validate_blockers": 0,
+        "repo_validate_warnings": [
+          "lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification--f95d5cc8-30d4-4f74-890f-1018d764da6e: component-usage.json has not been generated for this article yet."
+        ],
+        "scoped_checks_valid": true,
+        "source_audit_status": "PASS"
+      }
+    },
+    {
+      "article_id": "fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0",
+      "folder": ".ai/content-audit-export/articles/lea-prac-cmp-001-core-concept--fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-cmp-001-core-concept--fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0/question-edits",
+      "validation": {
+        "compose_blockers": 0,
+        "compose_warnings": 0,
+        "diff_changed": true,
+        "diff_safe_to_push": true,
+        "diff_locally_safe_to_push": true,
+        "diff_blockers": 0,
+        "repo_validate_valid": true,
+        "repo_validate_blockers": 0,
+        "repo_validate_warnings": [
+          "lea-prac-cmp-001-core-concept--fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0: component-usage.json has not been generated for this article yet."
+        ],
+        "scoped_checks_valid": true,
+        "source_audit_status": "PASS"
+      }
+    },
+    {
+      "article_id": "218ac476-9857-4c14-9033-2f27c75da04b",
+      "folder": ".ai/content-audit-export/articles/lea-prac-cmp-002-factors-that-determine-project-group-classification-a-decision-framework--218ac476-9857-4c14-9033-2f27c75da04b",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-cmp-002-factors-that-determine-project-group-classification-a-decision-framework--218ac476-9857-4c14-9033-2f27c75da04b/question-edits",
+      "validation": {
+        "compose_blockers": 0,
+        "compose_warnings": 0,
+        "diff_changed": true,
+        "diff_safe_to_push": true,
+        "diff_locally_safe_to_push": true,
+        "diff_blockers": 0,
+        "repo_validate_valid": true,
+        "repo_validate_blockers": 0,
+        "repo_validate_warnings": [
+          "lea-prac-cmp-002-factors-that-determine-project-group-classification-a-decision-framework--218ac476-9857-4c14-9033-2f27c75da04b: component-usage.json has not been generated for this article yet."
+        ],
+        "scoped_checks_valid": true,
+        "source_audit_status": "PASS"
+      }
+    },
+    {
+      "article_id": "a7751310-8582-4b9a-a71b-78f6e9216b79",
+      "folder": ".ai/content-audit-export/articles/lea-prac-cmp-008-choosing-mdpe-vs-percentage-of-pcc-the-decision-matrix--a7751310-8582-4b9a-a71b-78f6e9216b79",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-cmp-008-choosing-mdpe-vs-percentage-of-pcc-the-decision-matrix--a7751310-8582-4b9a-a71b-78f6e9216b79/question-edits",
+      "validation": {
+        "compose_blockers": 0,
+        "compose_warnings": 0,
+        "diff_changed": true,
+        "diff_safe_to_push": true,
+        "diff_locally_safe_to_push": true,
+        "diff_blockers": 0,
+        "repo_validate_valid": true,
+        "repo_validate_blockers": 0,
+        "repo_validate_warnings": [
+          "lea-prac-cmp-008-choosing-mdpe-vs-percentage-of-pcc-the-decision-matrix--a7751310-8582-4b9a-a71b-78f6e9216b79: component-usage.json has not been generated for this article yet."
+        ],
+        "scoped_checks_valid": true,
+        "source_audit_status": "PASS"
+      }
+    }
+  ]
+}

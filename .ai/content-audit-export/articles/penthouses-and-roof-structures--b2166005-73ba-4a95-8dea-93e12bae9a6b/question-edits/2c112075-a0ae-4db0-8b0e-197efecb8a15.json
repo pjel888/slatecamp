@@ -1,0 +1,48 @@
+{
+  "question_id": "2c112075-a0ae-4db0-8b0e-197efecb8a15",
+  "baseline_hash": "sha256:32f0049ad0d4320179c8bc775a6d62b6db9ae8ff808fa4b7d18abdc1f87f2786",
+  "action": "replace",
+  "reason": "source-audited-article-batch-038-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-038",
+  "approved_at": "2026-05-11T13:26:35+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-038-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 3763-3787"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 1210"
+  },
+  "proposed": {
+    "text": "What is the maximum aggregate area of all penthouses and other roof structures?",
+    "options": [
+      {
+        "id": "b038-b216-23-a",
+        "text": "One third of the supporting roof area"
+      },
+      {
+        "id": "b038-b216-23-b",
+        "text": "One half of the lot area"
+      },
+      {
+        "id": "b038-b216-23-c",
+        "text": "150 sq m in every case"
+      },
+      {
+        "id": "b038-b216-23-d",
+        "text": "Ten percent of the building frontage"
+      }
+    ],
+    "correct_option_id": "b038-b216-23-a",
+    "rationale": "Correct answer: One third of the supporting roof area. This is directly supported by PD 1096 2004 Revised IRR, Section 1210.",
+    "explanation": "The Batch 038 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 1210.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 1210"
+  }
+}

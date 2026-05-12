@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-05-10T17:11:46.785Z",
+  "input": "/Users/philiplewis/slatecamp/.ai/content-audit-export",
+  "article_count": 1,
+  "valid": true,
+  "blockers": [],
+  "warnings": [
+    "lea-dsgn-008-01-core-concept--6a928e7c-ea49-43ae-9241-e3cacfe291cf: component-usage.json has not been generated for this article yet."
+  ],
+  "articles": [
+    {
+      "article_id": "6a928e7c-ea49-43ae-9241-e3cacfe291cf",
+      "slug": "lea-dsgn-008-01-core-concept",
+      "folder": "lea-dsgn-008-01-core-concept--6a928e7c-ea49-43ae-9241-e3cacfe291cf",
+      "valid": true,
+      "blockers": [],
+      "warnings": [
+        "component-usage.json has not been generated for this article yet."
+      ],
+      "files": {
+        "metadata": true,
+        "original": true,
+        "normalized": true,
+        "uiBlocks": true,
+        "parserErrors": true,
+        "uiBlockEdits": true,
+        "linkedQuestions": true,
+        "sources": true,
+        "taxonomy": true,
+        "componentUsage": false,
+        "candidate": true,
+        "diffReport": true,
+        "diffReportMarkdown": true,
+        "pushReport": false,
+        "pushResult": false
+      },
+      "hashes": {
+        "original": "sha256:5320fbfb4c13e1efa76734b42cdff798fe928b9dfb07bfd8ae7451209b35baf6",
+        "normalized": "sha256:b4c4ca622d9889159f892a222e344e5ba23bdf095bb3ef23add6e01fb40dcd6d",
+        "candidate": "sha256:b4c4ca622d9889159f892a222e344e5ba23bdf095bb3ef23add6e01fb40dcd6d",
+        "ui_blocks": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    }
+  ]
+}

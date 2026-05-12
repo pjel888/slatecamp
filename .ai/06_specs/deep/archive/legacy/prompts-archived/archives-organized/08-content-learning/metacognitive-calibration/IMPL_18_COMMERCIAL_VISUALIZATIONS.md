@@ -1,7 +1,7 @@
 # IMPL_18: Commercial & Marketing Visualizations
 
-**Priority:** P2  
-**Effort:** ~1 week  
+**Priority:** P2
+**Effort:** ~1 week
 **Purpose:** Dual-use visualizations that serve students AND function as marketing assets, pitch deck charts, institutional sales tools, and data licensing products.
 
 ---

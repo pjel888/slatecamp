@@ -1,0 +1,186 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-048-local-first",
+  "batch_number": 48,
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T19:48:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+    "slug": "fire-extinguishing-systems",
+    "title": "Fire Extinguishing Systems",
+    "article_folder": ".ai/content-audit-export/articles/fire-extinguishing-systems--f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-extinguishing-systems--f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+    "candidate_path": ".ai/content-audit-export/articles/fire-extinguishing-systems--f61a5716-97a1-41d5-8863-a2fc5fd4115f/candidate.md",
+    "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-extinguishing-systems--f61a5716-97a1-41d5-8863-a2fc5fd4115f/candidate.md",
+    "question_edits_folder": ".ai/content-audit-export/articles/fire-extinguishing-systems--f61a5716-97a1-41d5-8863-a2fc5fd4115f/question-edits",
+    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-extinguishing-systems--f61a5716-97a1-41d5-8863-a2fc5fd4115f/question-edits",
+    "normalized_sha256": "sha256:fc8e74865a7ec1d3ce8c9b97242b58a821be9bd1e6cf160e416af70d86c30daa",
+    "candidate_sha256": "sha256:fc8e74865a7ec1d3ce8c9b97242b58a821be9bd1e6cf160e416af70d86c30daa",
+    "linked_questions_sha256": "sha256:34fa60bded4c740d9e7b150e302bb47fce691ca9276e6bed7be18a5161ef9e50",
+    "sources_sha256": "sha256:730b67c969d3ff8f7484338e2f9079e38cc1c0352860b74f489eb2d3ffc56890"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "refined_markdown_role": "locator_only",
+    "derivative_or_search_layer_as_primary": false,
+    "source_families_checked": [
+      {
+        "label": "PD 1096 IRR Full Implementing Rules and Regulations - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.pdf",
+        "raw_pdf_sha256": "sha256:8e98d8afd4b5972ba5a82d33a65e59e800cd41661b764a0dfc4112d29697b341",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.md",
+        "refined_markdown_sha256": "sha256:a43068979bbca37450a11ed16cbb966e2aff6d682cdded1ab3bf22b1d541efd0",
+        "locator": "PD 1096 IRR refined markdown lines 1243-1252, 1334-1378, 3009-3138, 3750-3825, 8637-8810, and 9180-9514"
+      },
+      {
+        "label": "RA 9514 Fire Code RIRR 2019 - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "locator": "RA 9514 RIRR refined markdown lines 2285-2456"
+      },
+      {
+        "label": "PD 9514 Fire Code of the Philippines - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf",
+        "raw_pdf_sha256": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-9514/PD 9514 - Fire Code of the Philippines.md",
+        "refined_markdown_sha256": "sha256:5eb0584f1bcbfa87044e28f2e59a75c6364c7160a98edfdd888c6aef849b01b2",
+        "locator": "PD 9514 Fire Code refined markdown lines 10035-10135"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "fire-extinguishing-systems_article",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 41,
+    "question_edits_created": [
+      "858f204c-5ac2-45c5-a3d5-572528ec749f",
+      "944f0f23-e4a5-4366-881b-cf06c7f741ff",
+      "bfaf2a4a-d742-484a-ba17-c25db1aa0f22",
+      "c9cc5aed-0064-4a80-b151-d8e406600b96",
+      "f51bd590-3b9b-4ea5-b008-d93ec0265e75",
+      "35d0056c-cd57-4386-a9f7-1e0c94b0be78",
+      "7edc64fa-9362-4058-97c3-fbca7e4cab62",
+      "aea865fe-a4fd-4bd8-9f88-e35a8a587fa1",
+      "24aa53f1-6fed-4c0c-9c03-3c4c8fabef56",
+      "eb3ce0e5-a720-45eb-8881-4f8db4f43606",
+      "dcb1d738-ff81-4e48-89be-1bafd0627e6f",
+      "a1f1b80d-7c78-44bf-8dc9-771875698fa7",
+      "78b250f8-ca86-4ff4-b933-406423a82d01",
+      "92e35a3e-50ae-4fd6-9b43-a517fb1cc619",
+      "88e80958-6678-416a-b54a-3f9071348f9b",
+      "e3dfe7ec-69be-487c-b454-5259e7b2d6ea",
+      "5aab16f7-7fef-49ec-93e2-01fe5f46ea75",
+      "37a171e3-0068-401d-a9ca-114b3ece7878",
+      "d941bf63-5b8e-4f2c-b6b6-a0e95cb09a57",
+      "63983fab-611d-4c14-8e35-cf714e86b9b4",
+      "51eead7a-0b53-4a2d-a0ff-c31b523dafba",
+      "0b2f239d-a7dd-4445-b7c4-dff727df536d",
+      "73359a85-6548-4215-b5e6-dadee36ecbc6",
+      "20639203-33b0-4735-bdb5-d7bab486332e",
+      "ff6136d9-b858-442d-9152-c6e17e42f59b",
+      "0d2ff4eb-1e90-4f75-a50e-5ce81df7ebed",
+      "c47e0509-969a-4985-a8be-184a4d5538d9",
+      "88742453-a584-469f-a770-7032a32de27c",
+      "e88ab2e1-d8de-4fbf-833f-2e6595d28a09",
+      "12f56e4f-0ddc-4708-b0ac-f5c25b22268b",
+      "2606020a-6128-408e-9a7b-2b029cc177b2",
+      "9bf46c42-7b80-4b78-b8ac-463786f48ae4",
+      "3a6c9ad9-030b-4814-8a4c-1ec8c4905337",
+      "6bf023e0-f3c2-4842-960a-956b4c85f784",
+      "345b827f-e13a-4e3d-8807-4072ca0573c0",
+      "f69c9c16-4b85-4b89-af7c-96aaef1d95f1",
+      "32c80363-5733-4575-b815-f698538ff53e",
+      "b055aae8-0a73-4377-94a7-8b16f3c5eb6b",
+      "65f7aa10-0c99-4a47-aa61-10d586816e52",
+      "ddf15ba1-b238-4aa3-9b06-1074614dab16",
+      "bb0c7d80-dd92-44be-8708-ca7e73595f90"
+    ]
+  },
+  "claims": [
+    {
+      "claim_id": "fire-extinguishing-systems-b048-claim-01",
+      "claim_text": "PD 1096 Section 1212 covers automatic fire-extinguishing systems, dry standpipes, wet standpipes, water supply, pumps, hose, and approval or testing.",
+      "source_support": [
+        "pd1096-irr-full-local-raw-pdf--b048-f61a5716-01",
+        "ra9514-rirr-2019-local-raw-pdf--b048-f61a5716-02",
+        "pd9514-fire-code-local-raw-pdf--b048-f61a5716-03"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "fire-extinguishing-systems-b048-claim-02",
+      "claim_text": "Dry standpipes are required in buildings four or more storeys in height.",
+      "source_support": [
+        "pd1096-irr-full-local-raw-pdf--b048-f61a5716-01",
+        "ra9514-rirr-2019-local-raw-pdf--b048-f61a5716-02",
+        "pd9514-fire-code-local-raw-pdf--b048-f61a5716-03"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "fire-extinguishing-systems-b048-claim-03",
+      "claim_text": "Wet standpipes are required by occupancy, height, and area categories, with a limited Group H exception.",
+      "source_support": [
+        "pd1096-irr-full-local-raw-pdf--b048-f61a5716-01",
+        "ra9514-rirr-2019-local-raw-pdf--b048-f61a5716-02",
+        "pd9514-fire-code-local-raw-pdf--b048-f61a5716-03"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "fire-extinguishing-systems-b048-claim-04",
+      "claim_text": "RA 9514 Rule 9 links completion inspection, FSCCR, and FSIC to occupancy and permit clearance.",
+      "source_support": [
+        "pd1096-irr-full-local-raw-pdf--b048-f61a5716-01",
+        "ra9514-rirr-2019-local-raw-pdf--b048-f61a5716-02",
+        "pd9514-fire-code-local-raw-pdf--b048-f61a5716-03"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "fire-extinguishing-systems-b048-claim-05",
+      "claim_text": "PD 9514 covers extinguisher classification, labels, servicing, maintenance, competency, prohibited types, and prohibited acts.",
+      "source_support": [
+        "pd1096-irr-full-local-raw-pdf--b048-f61a5716-01",
+        "ra9514-rirr-2019-local-raw-pdf--b048-f61a5716-02",
+        "pd9514-fire-code-local-raw-pdf--b048-f61a5716-03"
+      ],
+      "audit_result": "PASS"
+    }
+  ],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "removed_risk_notes": [
+      "Old local-batch ownership markers in sidecars refreshed to Batch 048.",
+      "Question sidecars replaced with checked local raw-source citations.",
+      "Stale compose-error sidecars removed where selected bundle compose succeeds."
+    ]
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_batch_048_complete": true,
+    "remote_publish_status": "not_attempted_by_request",
+    "remaining_local_blockers": []
+  },
+  "local_validation": {
+    "status": "PASS",
+    "valid": true,
+    "blockers": 0,
+    "checked_at": "2026-05-11T19:58:00.000+08:00",
+    "commands": [
+      "bun run content-audit:compose -- --article-id f61a5716-97a1-41d5-8863-a2fc5fd4115f --overwrite --strict",
+      "bun run content-audit:diff -- --article-id f61a5716-97a1-41d5-8863-a2fc5fd4115f --strict --summary",
+      "bun run content-audit:validate -- --article-id f61a5716-97a1-41d5-8863-a2fc5fd4115f --summary",
+      "bun run content-audit:ui-block-edits -- --article-id f61a5716-97a1-41d5-8863-a2fc5fd4115f"
+    ]
+  }
+}

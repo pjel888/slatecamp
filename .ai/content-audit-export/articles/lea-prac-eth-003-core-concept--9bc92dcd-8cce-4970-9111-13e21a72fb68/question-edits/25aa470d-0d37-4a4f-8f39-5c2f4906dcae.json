@@ -1,0 +1,72 @@
+{
+  "question_id": "25aa470d-0d37-4a4f-8f39-5c2f4906dcae",
+  "baseline_hash": "sha256:2f698fba3bc0e53a1fac281303d312e82b4277ba7f19aaead5d357028d1db8ef",
+  "action": "replace",
+  "reason": "source-audited-article-batch-017-local-first rewrote linked question to match the locally checked UAP Code of Ethics source for lea-prac-eth-003-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-017",
+  "approved_at": "2026-05-10T23:30:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "9bc92dcd-8cce-4970-9111-13e21a72fb68",
+    "parent_article_slug": "lea-prac-eth-003-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UAP Document Code of Ethics, Code introduction and Section 1, raw markdown lines 23-44",
+    "checked_markdown_lines": [
+      "raw markdown lines 23-29",
+      "raw markdown lines 31-44"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+        "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+        "source_id": "uap-document-code-of-ethics",
+        "locator": "UAP Document Code of Ethics, Code introduction and Section 1, raw markdown lines 23-44"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
+        "sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
+        "source_id": "uap-document-code-of-ethics-raw-markdown",
+        "locator": "UAP Document Code of Ethics, Code introduction and Section 1, raw markdown lines 23-44"
+      }
+    ],
+    "local_source_safe_action": "Question was rewritten to avoid unverified PRBoA-resolution, hierarchy, or enforcement claims and to use only statements anchored in the raw UAP Code of Ethics source."
+  },
+  "proposed": {
+    "text": "When may specialization claims avoid being misleading under Section 1-f?",
+    "options": [
+      {
+        "id": "a",
+        "text": "When the qualifications are well-known facts or sanctioned by professional consensus and years of experience"
+      },
+      {
+        "id": "b",
+        "text": "Whenever the claim sounds impressive"
+      },
+      {
+        "id": "c",
+        "text": "Whenever a supplier sponsors the claim"
+      },
+      {
+        "id": "d",
+        "text": "Whenever the client requests the claim"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "Section 1-f bars specialization claims unless qualifications are well-known facts or sanctioned by professional consensus and years of experience.",
+    "explanation": "Section 1-f bars specialization claims unless qualifications are well-known facts or sanctioned by professional consensus and years of experience.",
+    "code_citation": "UAP Document Code of Ethics, line 44",
+    "bloom_level": "understand",
+    "application_context": "professional_practice",
+    "practice_context": [
+      "Code of Ethical Conduct",
+      "Professional ethics"
+    ],
+    "difficulty": 0.3,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-ETH-003-002"
+  }
+}

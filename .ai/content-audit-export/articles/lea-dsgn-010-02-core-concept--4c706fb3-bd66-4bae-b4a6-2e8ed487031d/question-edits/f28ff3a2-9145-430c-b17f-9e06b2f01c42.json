@@ -1,0 +1,32 @@
+{
+  "question_id": "f28ff3a2-9145-430c-b17f-9e06b2f01c42",
+  "baseline_hash": "sha256:fa99d60f858d55dd0f78ab784808b2e7b5811c6f7f98e2f0c5edd9d5fe165404",
+  "reason": "Batch 003 source audit removed unsupported parking-structure geometry locators. PD 1096 Rule VII supports slot/loading sizes and plan indication; BP 344 supports accessible parking details. Rule XIX, Section 803, and Section 904 are not parking geometry locators.",
+  "approved_by": "codex-local-source-audit-batch-003",
+  "approved_at": "2026-05-10T18:00:00+08:00",
+  "proposed": {
+    "text": "Under BP 344 2024 Revised IRR, what is the minimum size of an accessible parking slot?",
+    "options": [
+      {
+        "id": "a",
+        "text": "2.50 m x 5.00 m"
+      },
+      {
+        "id": "b",
+        "text": "3.70 m x 5.00 m"
+      },
+      {
+        "id": "c",
+        "text": "4000 mm x 5000 mm"
+      },
+      {
+        "id": "d",
+        "text": "3600 mm x 12000 mm"
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": "The checked BP 344 2024 parking section supports a 4000 mm x 5000 mm accessible parking slot.",
+    "explanation": "The old vertical-clearance question was not supported by the checked local sources.",
+    "code_citation": "BP 344 2024 Revised IRR, Accessible Parking Slots"
+  }
+}

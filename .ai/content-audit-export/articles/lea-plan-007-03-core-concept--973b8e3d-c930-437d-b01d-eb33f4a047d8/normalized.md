@@ -1,75 +1,38 @@
+# Housing finance institutions are identified by member base and finance function
 
-
-## Board Exam Quick Check
-
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
-
-**Common mistake:** treating a familiar keyword in **Lea Plan 007 03 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
-
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
-## Learning Goal
-Distinguish the four housing finance institutions — Pag-IBIG/HDMF (employed workers), SSS (private sector), GSIS (government employees), NHMFC (secondary mortgage) — by target sector, membership basis, and financial products.
-
-Four primary institutions provide housing finance to different sectors of the Philippine population: **Pag-IBIG/HDMF** finances employed workers (mandatory membership); **SSS** finances private sector workers (insurance + housing); **GSIS** finances government employees (insurance + housing); **NHMFC** operates as the secondary mortgage market, enabling lenders to recycle capital.
+Housing-finance institution questions should be answered by function and beneficiary base. EO 90 separates NHMFC, HDMF, SSS, and GSIS roles, while RA 11201 IRR adds the SHFC/CMP social housing finance lane and RA 7160 clarifies the local low-cost housing carveout for SSS, GSIS, and HDMF-funded programs.
 
 ## Core Concept
 
-The Philippine housing finance system is _employment-based_ and _segmented by sector_. There is no single national housing bank—instead, four specialized institutions serve different populations.
+- EO 90 identifies NHMFC as the major government home mortgage institution and ties it to the home mortgage market function in the checked source.
+- EO 90 identifies HDMF with provident fund contributions and use of available funds for housing loans and financial assistance.
+- EO 90 links SSS to housing loans to private-sector employees and GSIS to housing loans to government employees.
+- RA 11201 IRR places SHFC in social housing programs and defines CMP as SHFC mortgage financing for organized underprivileged and homeless citizen associations.
 
-**Pag-IBIG (Home Development Mutual Fund, HDMF)** is the primary housing finance institution. Membership is mandatory for all employees (private and government). Monthly contributions from employer and employee fund the program. Pag-IBIG offers tiered loans:
-- **Socialized housing loan:** Up to ₱580,000 (as of 2024; verify current threshold)
-- **Low-cost housing loan:** For units priced ₱1–2 million
-- **Open-market housing loan:** Up to ₱6 million for any residential property
+## How It Is Tested
 
-**SSS (Social Security System)** and **GSIS (Government Service Insurance System)** are primarily social insurance institutions, but both offer housing loans as ancillary programs:
-- SSS housing loans for private sector workers
-- GSIS housing loans for government employees
+- Match SSS, GSIS, HDMF, NHMFC, and SHFC to source-checked roles.
+- Separate individual member finance from community mortgage finance.
+- Avoid numeric current-policy details unless the exact local source is present.
 
-**NHMFC (National Home Mortgage Finance Corporation)** operates the secondary mortgage market. When Pag-IBIG, banks, or other primary lenders originate a housing loan, NHMFC can purchase that loan, returning capital to the lender so they can issue new loans. This recycling mechanism is critical for loan availability.
+## Real World Scenario
 
-The critical distinction: These agencies _finance_ housing (they issue loans to end-buyers). They do NOT _build_ housing (that is NHA's role) and do NOT _regulate_ developers (that is DHSUD's role).
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-plan-007-03-core-concept", type="image", caption="Housing Finance Institutions — Pag-IBIG, SSS, GSIS, NHMFC Comparison", description="Four-panel comparison of housing finance institutions: Pag-IBIG/HDMF (employed workers, mandatory), SSS (private sector, housing loans), GSIS (government employees), NHMFC (secondary mortgage market, liquidity). Target sector, membership basis, and financial products per institution.", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-## Key Provisions
-
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
-Extracted summary:
-- Props: headers="{[\"Institution\", \"Primary Sector Served\", \"Membership/Eligibility\", \"Loan Range\", \"Ancillary Function\"]}", rows="{[[\"**Pag-IBIG/HDMF**\", \"All employed workers (private and government sectors)\", \"Mandatory for all employees\", \"Socialized (≤₱580K) to Open-market (up to ₱6M)\", \"Housing savings accumulation (membership contributions)\"], [\"**SSS**\", \"Private sector workers\", \"Contributors to SSS insurance\", \"Housing loans for members\", \"Social insurance for private sector\"], [\"**GSIS**\", \"Government employees\", \"Contributors to GSIS insurance\", \"Housing loans for government employees\", \"Life and disability insurance\"], [\"**NHMFC**\", \"Lenders and loan portfolio investors\", \"Buys loans from Pag-IBIG, banks\", \"Purchases loans from primary lenders\", \"Secondary mortgage market operation\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-## Philippine Context
-
-Pag-IBIG is ubiquitous in Philippine housing—nearly every employed person contributes monthly and has a Pag-IBIG housing loan account. The system has financed millions of housing units for the employed sector. SSS and GSIS housing programs are more modest but serve important constituencies (private and government employees respectively). NHMFC's role is less visible but essential: without secondary mortgage market purchases, primary lenders would exhaust capital and stop issuing new loans.
-
-## How It's Tested
-
-1. **Agency identification by sector:** "Who provides housing loans to private sector workers?" → SSS or Pag-IBIG. "Who provides housing loans to government employees?" → GSIS or Pag-IBIG.
-2. **Loan amount identification:** "A teacher on a government salary applies for a ₱2.5 million housing loan. Which institution would typically serve this request?" → GSIS or Pag-IBIG.
-3. **System role:** "Who recycles housing loans in the secondary market?" → NHMFC.
-
-[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Memory aid:** Pag-IBIG = **P**rimary lender for all **employed** (government + private). SSS = private sector workers (extra benefit beyond insurance). GSIS = government employees (extra benefit). NHMFC = secondary market (buys loans so lenders can lend again).
-[/SLATECAMP_UI_BLOCK]
-
-**Exam Tip:** Pag-IBIG = employed workers (mandatory, 2% EE + 2% ER). SSS = private sector (insurance + housing loan). GSIS = government (insurance + housing). NHMFC = secondary market (buys mortgages from originators, not direct lending).
-
-## Cross-References
-
-See **LEA-PLAN-003-03** (Housing Finance) for Pag-IBIG/SHFC/NHA finance roles, **LEA-PLAN-007-01** (NHA) for non-finance housing production, and **LEA-PLAN-003-01** (Housing Law Framework) for Maceda Law protections.
+A board item lists four applicants: a private-sector employee, a government employee, a provident-fund member using HDMF, and an association seeking community-owned land. The source-safe answer starts by matching member base or finance function: SSS for private-sector employee loans, GSIS for government-employee loans, HDMF for provident-fund based housing finance, and SHFC/CMP for association-based community mortgage financing.
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\"Confusing Pag-IBIG (finance) with NHA (production)—Pag-IBIG loans; NHA builds\", \"Stating SSS or GSIS are primary housing lenders—they are ancillary; Pag-IBIG is primary\", \"Forgetting that NHMFC does not issue loans; it purchases them from primary lenders\", \"Saying Pag-IBIG is for low-income only—Pag-IBIG serves all employed sectors (including open-market loans up to ₱6M)\", \"Confusing SHFC (community-based) with Pag-IBIG (individual)—different sectors, different mechanisms\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+- Do not answer every housing finance stem with HDMF.
+- Do not swap SSS and GSIS beneficiary sectors.
+- Do not add loan ceilings, interest rates, or updated program parameters unless they are locally source-checked.
+
+## Sources Checked
+
+- EO 90 - NGO for Shelter Program: EO 90 refined markdown lines 19-27, 30-43, 51-63, and 79-106; raw PDF pages 1, 2, 3, 4, and 6 checked by local PyMuPDF extraction.
+- RA 11201 IRR - DHSUD Act Implementing Rules: RA 11201 IRR refined markdown lines 40-44, 68-75, 93-100, 116-121, 134-162, 261-263, 280-289, 335, 389, and 392; raw PDF pages 3, 6, 7, 13, 15, 19, and 35 checked by local PyMuPDF extraction.
+- RA 7160 - The Local Government Code: RA 7160 refined markdown lines 155-162; raw PDF page 12 checked by local PyMuPDF extraction.
+
+## Scenario Enrichment Status
+
+eligible-added: Batch 086 added a concise member-base matching scenario supported by EO 90, RA 11201 IRR, and RA 7160 raw-source locators.

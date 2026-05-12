@@ -3,8 +3,8 @@
 
 # Task 05: Write Design Documentation
 
-**Status:** pending  
-**Created:** 2026-04-06  
+**Status:** pending
+**Created:** 2026-04-06
 **Objective:** Write all `03-design/` documents sourced from `globals.css`
 
 ---

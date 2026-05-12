@@ -1,56 +1,32 @@
 {
   "article_id": "889fae0f-f8dd-4b3c-9ddf-4f9d32742282",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:a9640e589da7fbd03ca55079ce465aa043aeaac6ac117c4b013af9b9522acb73",
-  "source_count": 4,
+  "sources_hash": "sha256:010e3b3c2fe55aa70267ba0617fddf9b3cf018566e41ae0279a28035a1152c19",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "9cb68787-9de3-48e4-8c92-96308f9eeec9",
+      "source_id": "pd1096-rirr-2004-b071",
       "article_id": "889fae0f-f8dd-4b3c-9ddf-4f9d32742282",
-      "label": "National Building Code of the Philippines (PD 1096), 2004 Revised IRR, Rule XVIII (Mechanical Regulations)",
+      "label": "PD 1096 2004 Revised IRR - National Building Code",
       "url": null,
-      "source_type": "implementing_rules",
-      "description": null,
-      "is_verified": false,
+      "source_type": "primary_law_irr_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-071-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf; raw_pdf_sha256=sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md; refined_markdown_sha256=sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7; checked_locator=PD 1096 refined markdown lines 75-80, 112, 337-340, 562-626, 1088-1120, 1174-1212, 1629-1631, 2246-2279, 4190, and 6113-6201; raw PDF pages 23, 47, 126, 278, 292, and 295 checked by local PyMuPDF extraction",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:33:58.214974+00:00",
-      "updated_at": "2026-03-24T04:33:58.214974+00:00"
+      "created_at": "2026-05-12T01:00:34+08:00",
+      "updated_at": "2026-05-12T01:00:34+08:00"
     },
     {
-      "source_id": "850b7ee0-628f-47b3-9290-c245dd0d0776",
+      "source_id": "bp344-accessibility-appendix-b071",
       "article_id": "889fae0f-f8dd-4b3c-9ddf-4f9d32742282",
-      "label": "BP 344: 2024 Revised IRR (Accessibility Law)",
+      "label": "BP 344 accessibility provisions as reproduced in the PD 1096 official appendix",
       "url": null,
-      "source_type": "implementing_rules",
-      "description": null,
-      "is_verified": false,
+      "source_type": "accessibility_law_appendix_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-071-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf; raw_pdf_sha256=sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md; refined_markdown_sha256=sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7; checked_locator=PD 1096 official appendix accessibility text refined markdown lines 6113-6152 and 6170-6201; raw PDF pages 292 and 295 checked by local PyMuPDF extraction. Separate BP 344 raw PDF family hash checked locally: sha256:7fe6c2de016c0640002029b089c0468a6e0bcb5856be722c93acc97fadf19618",
+      "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-03-24T04:33:58.214974+00:00",
-      "updated_at": "2026-03-24T04:33:58.214974+00:00"
-    },
-    {
-      "source_id": "55678724-eac8-44b2-b266-7eb39cfd6411",
-      "article_id": "889fae0f-f8dd-4b3c-9ddf-4f9d32742282",
-      "label": "Ching, Frank D. Architectural Graphics, 6th ed., Wiley (2015)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:33:58.214974+00:00",
-      "updated_at": "2026-03-24T04:33:58.214974+00:00"
-    },
-    {
-      "source_id": "7a0e1e98-89c6-4916-bc0b-3f227a46875e",
-      "article_id": "889fae0f-f8dd-4b3c-9ddf-4f9d32742282",
-      "label": "Ramsey & Sleeper. Architectural Graphic Standards, 12th ed., Wiley (2007)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:33:58.214974+00:00",
-      "updated_at": "2026-03-24T04:33:58.214974+00:00"
+      "created_at": "2026-05-12T01:00:34+08:00",
+      "updated_at": "2026-05-12T01:00:34+08:00"
     }
   ]
 }

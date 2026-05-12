@@ -1,0 +1,57 @@
+{
+  "question_id": "a541745f-5193-4d6e-b851-d4e138507398",
+  "baseline_hash": "sha256:71fa0dd41257c9674b04f28e8006f7c2345cd48e05706aa75702e268fa43663b",
+  "action": "replace",
+  "reason": "source-audited-article-batch-059-local-first: local raw PDF backed replacement constrained to checked Batch 059 TOA 4 Tropical Architecture source family.",
+  "approved_by": "codex-local-first-batch-059",
+  "approved_at": "2026-05-11T20:48:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "8a812be4-c5c0-40ec-a3ff-74acb39e24bc",
+    "parent_article_slug": "lea-theo-004-08-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "TOA 4 Tropical Architecture refined markdown lines 708-810, 1201-1247, and raw PDF pages 90, 92-100, 121, 140, and 143-148",
+    "checked_markdown_lines": [
+      "TOA 4 Tropical Architecture refined markdown lines 708-810",
+      "TOA 4 Tropical Architecture refined markdown lines 1201-1247"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "toa4-tropical-architecture-local-raw-pdf--b059-8a812be4-01",
+        "label": "TOA 4 Tropical Architecture - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+        "sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+        "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+        "locator": "TOA 4 Tropical Architecture refined markdown lines 708-810, 1201-1247, and raw PDF pages 90, 92-100, 121, 140, and 143-148"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 059 checked local raw PDF source scope."
+  },
+  "proposed": {
+    "text": "How should walls be treated for minimum heat gain?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Design so walls are shaded from the sun as much as possible."
+      },
+      {
+        "id": "b",
+        "text": "Expose every wall to direct sun."
+      },
+      {
+        "id": "c",
+        "text": "Use shading only on interior partitions."
+      },
+      {
+        "id": "d",
+        "text": "Ignore wall exposure and study only furniture."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Design so walls are shaded from the sun as much as possible. This answer is supported by the checked Batch 059 local TOA 4 Tropical Architecture raw PDF source family for Solar Geometry Fundamentals.",
+    "explanation": "Design so walls are shaded from the sun as much as possible. The Batch 059 source audit used the local raw PDF first and refined markdown only as locator evidence for Solar Geometry Fundamentals.",
+    "code_citation": "TOA 4 Tropical Architecture refined markdown lines 708-810, 1201-1247, and raw PDF pages 90, 92-100, 121, 140, and 143-148"
+  },
+  "batch_question_template_index": 6
+}

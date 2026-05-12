@@ -1,0 +1,34 @@
+{
+  "question_id": "f3735773-264e-4d66-9bf5-3e40e6ecca6a",
+  "baseline_hash": "sha256:4a2b5b48527efdb3aa7995b996daf4b71e9c1de09a25342e1c57bb9abf3d6e4f",
+  "reason": "Batch 005 local source audit aligned LEA Structure: Subjects, Rating, Results, and Reapplication Boundaries linked question ALE-PRAC-LAW-008-003 to verified RA 9266 IRR raw-source claims.",
+  "approved_by": "codex-local-source-audit-batch-005",
+  "approved_at": "2026-05-10T21:30:00+08:00",
+  "proposed": {
+    "code_citation": "RA 9266 IRR Sections 7(j), 8, 12, 13, 14, 15, and 16",
+    "explanation": "Source-audited against RA 9266 IRR Sections 7(j), 8, 12, 13, 14, 15, and 16 in the checked local RA 9266 IRR PDF. This edit removes unsupported locators or assumptions and keeps the question aligned to the audited article cluster.",
+    "text": "Within what timeframe must the Board submit LEA ratings to the Commission after the examination, unless extended for just cause?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Within thirty calendar days after the examination."
+      },
+      {
+        "id": "b",
+        "text": "Within five working days after the examination."
+      },
+      {
+        "id": "c",
+        "text": "Within one year after the examination."
+      },
+      {
+        "id": "d",
+        "text": "Only when the IAPOA requests the ratings."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "correct": "Section 16 requires the Board to submit ratings to the Commission within thirty calendar days after the examination, unless extended for just cause. The source says submit ratings, not announce results."
+    }
+  }
+}

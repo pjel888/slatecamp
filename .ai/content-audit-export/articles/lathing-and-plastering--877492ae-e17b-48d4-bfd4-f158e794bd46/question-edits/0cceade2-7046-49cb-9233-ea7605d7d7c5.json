@@ -1,0 +1,92 @@
+{
+  "question_id": "0cceade2-7046-49cb-9233-ea7605d7d7c5",
+  "baseline_hash": "sha256:8fdcf0d7bc59dd039f9432ffbf2db23c5b4c24b1940a21cedfe84c8ea1abeab3",
+  "action": "replace",
+  "reason": "source-audited-article-batch-053-local-first: local raw PDF backed replacement constrained to checked Batch 053 source families.",
+  "approved_by": "codex-local-first-batch-053",
+  "approved_at": "2026-05-11T19:04:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "877492ae-e17b-48d4-bfd4-f158e794bd46",
+    "parent_article_slug": "lathing-and-plastering",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "PD 1096 National Building Code refined markdown lines 1826-1828; PD 1096 RIRR 2004 refined markdown lines 1615-1620 and 4464-4466; Metals Lecture refined markdown lines 344-356, 856-863, and 904-914; George Salvan Architectural Building Materials refined markdown lines 1200-1231, 6418-6422, 8641-8649, and 9192-9202",
+    "checked_markdown_lines": [
+      "PD 1096 National Building Code refined markdown lines 1826-1828",
+      "PD 1096 RIRR 2004 refined markdown lines 1615-1620",
+      "PD 1096 RIRR 2004 refined markdown lines 4464-4466",
+      "Metals Lecture refined markdown lines 344-356",
+      "Metals Lecture refined markdown lines 856-863",
+      "Metals Lecture refined markdown lines 904-914",
+      "George Salvan Architectural Building Materials refined markdown lines 1200-1231",
+      "George Salvan Architectural Building Materials refined markdown lines 6418-6422",
+      "George Salvan Architectural Building Materials refined markdown lines 8641-8649",
+      "George Salvan Architectural Building Materials refined markdown lines 9192-9202"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "pd1096-basic-local-raw-pdf--b053-877492ae-01",
+        "label": "PD 1096 National Building Code - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 - National Building Code.pdf",
+        "sha256": "sha256:0bd869faac8d949359aa9e3c5bea7026e85e348f61ce1e87a09d48991c5ba796",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 - National Building Code.md",
+        "refined_markdown_sha256": "sha256:d7df246271ae1bcb14ed8e4ba881ed75cfa8381cca9f465986d9947397f353d9",
+        "locator": "PD 1096 National Building Code refined markdown lines 1826-1828"
+      },
+      {
+        "source_id": "pd1096-rirr-2004-local-raw-pdf--b053-877492ae-02",
+        "label": "PD 1096 RIRR 2004 Architecture Board - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (Architecture Board).pdf",
+        "sha256": "sha256:15176ec14a361d821d2106cea302b6d837578ba021f4045a7c7f169f31af5dd3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (Architecture Board).md",
+        "refined_markdown_sha256": "sha256:d87f379d3831becb818a268892f4df577256e2ebc31d40190323c6f0f69677e7",
+        "locator": "PD 1096 RIRR 2004 refined markdown lines 1615-1620 and 4464-4466"
+      },
+      {
+        "source_id": "metals-lecture-local-raw-pdf--b053-877492ae-03",
+        "label": "Metals Lecture - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Metals Lecture.pdf",
+        "sha256": "sha256:cd9cd4ee534bda9a974447c4ec73b13b12d5abf1c14df1fca408a2c4530650dd",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Metals Lecture.md",
+        "refined_markdown_sha256": "sha256:4e9e0a042f2eef2c80d33af81512ca2cf32778cae64351af9dc54df58db3694c",
+        "locator": "Metals Lecture refined markdown lines 344-356, 856-863, and 904-914"
+      },
+      {
+        "source_id": "salvan-building-materials-local-raw-pdf--b053-877492ae-04",
+        "label": "George Salvan Architectural Building Materials - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+        "refined_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+        "locator": "George Salvan Architectural Building Materials refined markdown lines 1200-1231, 6418-6422, 8641-8649, and 9192-9202"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 053 checked local raw PDF source scope."
+  },
+  "proposed": {
+    "text": "What does the checked Building Materials source say gypsum lath is used for?",
+    "options": [
+      {
+        "id": "a",
+        "text": "As a base for plaster, providing adhesion for gypsum plaster."
+      },
+      {
+        "id": "b",
+        "text": "As exterior portland-cement stucco."
+      },
+      {
+        "id": "c",
+        "text": "As an accessible parking placard."
+      },
+      {
+        "id": "d",
+        "text": "As a personal-space measurement."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "As a base for plaster, providing adhesion for gypsum plaster. This answer is supported by the checked Batch 053 local raw PDF source families for Lathing and Plastering.",
+    "explanation": "As a base for plaster, providing adhesion for gypsum plaster. The Batch 053 source audit used local raw PDFs first and refined markdown only as locator evidence for Lathing and Plastering.",
+    "code_citation": "PD 1096 National Building Code refined markdown lines 1826-1828; PD 1096 RIRR 2004 refined markdown lines 1615-1620 and 4464-4466; Metals Lecture refined markdown lines 344-356, 856-863, and 904-914; George Salvan Architectural Building Materials refined markdown lines 1200-1231, 6418-6422, 8641-8649, and 9192-9202"
+  },
+  "batch_question_template_index": 2
+}

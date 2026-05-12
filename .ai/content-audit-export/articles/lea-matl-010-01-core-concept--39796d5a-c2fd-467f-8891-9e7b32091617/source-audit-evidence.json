@@ -1,0 +1,224 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-080-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T07:05:00.000+08:00",
+  "target": {
+    "article_id": "39796d5a-c2fd-467f-8891-9e7b32091617",
+    "slug": "lea-matl-010-01-core-concept",
+    "title": "Concrete volume",
+    "article_folder": ".ai/content-audit-export/articles/lea-matl-010-01-core-concept--39796d5a-c2fd-467f-8891-9e7b32091617",
+    "normalized_sha256": "sha256:7640dc8ddaa2ee8f0720036c6b1a9a5d26f57c13b8aa2ab558ce2688a0620dc5",
+    "candidate_sha256": "sha256:7640dc8ddaa2ee8f0720036c6b1a9a5d26f57c13b8aa2ab558ce2688a0620dc5",
+    "candidate_path": ".ai/content-audit-export/articles/lea-matl-010-01-core-concept--39796d5a-c2fd-467f-8891-9e7b32091617/candidate.md"
+  },
+  "classification": {
+    "topic_family": "concrete_volume_estimating",
+    "local_first_batch": "080",
+    "source_sensitivity": "technical_materials_estimating",
+    "contains_legal_or_code_claims": false,
+    "source_risk_tier": "source_bound_materials",
+    "requires_raw_pdf_audit": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdfs_checked_first": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "local_pdf_extraction_method": "python_pymupdf_local",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "fajardo-cost-estimates-b080",
+      "label": "Architectural Cost Estimates By Max Fajardo",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+      "sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+      "refined_markdown_sha256": "sha256:223efdc2dd963208910027eba08fe87b4919de1a04b76cac095bbd76a7a9a962",
+      "locator": "Fajardo refined markdown lines 605-843; raw PDF pages 8-9 checked by local PyMuPDF extraction"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-matl-010-01-core-concept-article-b080",
+      "claim_text": "Article lea-matl-010-01-core-concept was rewritten to the checked concrete_volume_estimating source scope.",
+      "claim_type": "article_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+        "raw_pdf_sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+        "source_locator": "Fajardo refined markdown lines 605-843; raw PDF pages 8-9 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Find the volume of the floor slab."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-6ee80a53-2217-46fa-b6b4-e1a61da2c28f-b080-b080",
+      "claim_text": "Question 6ee80a53-2217-46fa-b6b4-e1a61da2c28f was rewritten to the checked concrete_volume_estimating source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+        "raw_pdf_sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+        "source_locator": "Fajardo refined markdown lines 605-843; raw PDF pages 8-9 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Find the volume of the floor slab."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-28a96af7-a201-47ff-a1d0-f56bca78c045-b080-b080",
+      "claim_text": "Question 28a96af7-a201-47ff-a1d0-f56bca78c045 was rewritten to the checked concrete_volume_estimating source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+        "raw_pdf_sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+        "source_locator": "Fajardo refined markdown lines 605-843; raw PDF pages 8-9 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Find the volume of the floor slab."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-0f696315-b04f-4279-b9a4-51e25bd4f063-b080-b080",
+      "claim_text": "Question 0f696315-b04f-4279-b9a4-51e25bd4f063 was rewritten to the checked concrete_volume_estimating source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+        "raw_pdf_sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+        "source_locator": "Fajardo refined markdown lines 605-843; raw PDF pages 8-9 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Find the volume of the floor slab."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-c5ae97d2-00d7-4c9e-93f7-f411977a1981-b080-b080",
+      "claim_text": "Question c5ae97d2-00d7-4c9e-93f7-f411977a1981 was rewritten to the checked concrete_volume_estimating source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+        "raw_pdf_sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+        "source_locator": "Fajardo refined markdown lines 605-843; raw PDF pages 8-9 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Find the volume of the floor slab."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-c485c22f-5d41-4385-80db-c1d746f2763e-b080-b080",
+      "claim_text": "Question c485c22f-5d41-4385-80db-c1d746f2763e was rewritten to the checked concrete_volume_estimating source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+        "raw_pdf_sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+        "source_locator": "Fajardo refined markdown lines 605-843; raw PDF pages 8-9 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Find the volume of the floor slab."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-d63a7e64-7299-413e-98f1-448e30d7b228-b080-b080",
+      "claim_text": "Question d63a7e64-7299-413e-98f1-448e30d7b228 was rewritten to the checked concrete_volume_estimating source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+        "raw_pdf_sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+        "source_locator": "Fajardo refined markdown lines 605-843; raw PDF pages 8-9 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Find the volume of the floor slab."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-ced3543b-b7b0-4aa2-a36b-b09ca928568b-b080-b080",
+      "claim_text": "Question ced3543b-b7b0-4aa2-a36b-b09ca928568b was rewritten to the checked concrete_volume_estimating source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+        "raw_pdf_sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+        "source_locator": "Fajardo refined markdown lines 605-843; raw PDF pages 8-9 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Find the volume of the floor slab."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-4cf03943-3b63-47d7-9e92-102e8ec3dcb4-b080-b080",
+      "claim_text": "Question 4cf03943-3b63-47d7-9e92-102e8ec3dcb4 was rewritten to the checked concrete_volume_estimating source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+        "raw_pdf_sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+        "source_locator": "Fajardo refined markdown lines 605-843; raw PDF pages 8-9 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Find the volume of the floor slab."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-1b928fc0-4465-430a-bea5-7d369769528b-b080-b080",
+      "claim_text": "Question 1b928fc0-4465-430a-bea5-7d369769528b was rewritten to the checked concrete_volume_estimating source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+        "raw_pdf_sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+        "source_locator": "Fajardo refined markdown lines 605-843; raw PDF pages 8-9 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Find the volume of the floor slab."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-8051bdb4-6602-4773-834c-cad43b1cf584-b080-b080",
+      "claim_text": "Question 8051bdb4-6602-4773-834c-cad43b1cf584 was rewritten to the checked concrete_volume_estimating source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+        "raw_pdf_sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+        "source_locator": "Fajardo refined markdown lines 605-843; raw PDF pages 8-9 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Find the volume of the floor slab."
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "scenario_enrichment": {
+    "policy_status": "pending",
+    "eligibility_status": "eligible-deferred",
+    "blocker_status": "nonblocking",
+    "notes": "No Real World Scenario section added; source correctness and linked-question safety remained the controlling gates."
+  },
+  "sme_review": {
+    "required": false,
+    "status": "not_required"
+  },
+  "local_first_publication": {
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "ready_for_final_publishing_review": true
+  }
+}

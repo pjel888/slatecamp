@@ -1,0 +1,24 @@
+{
+  "question_id": "52f21bce-da91-4474-9dba-96c018798aaa",
+  "baseline_hash": "sha256:c20732c5ea65437de2673328111f93a2dcfd683200dff559ce592e4d5e573649",
+  "reason": "Batch 012 local source audit aligned linked question 52f21bce-da91-4474-9dba-96c018798aaa with the repaired SPP Doc 203: Specialized Architectural Services article and checked raw-source citations. This local draft updates citation and explanation context only and does not change answer-key fields.",
+  "approved_by": "codex-local-source-audit-batch-012",
+  "approved_at": "2026-05-10T20:40:00.000+08:00",
+  "source_audit_support": {
+    "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+    "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+    "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
+    "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
+    "source_locator": "SPP Document 203 introduction and service list",
+    "checked_markdown_lines": [
+      "UAP SPP raw markdown lines 596-638 and 1220-1274"
+    ],
+    "parent_article_id": "9a800f21-b26e-4e3e-94c8-2f4127eccd42",
+    "parent_article_slug": "spp-doc-203-specialized-architectural-services",
+    "answer_key_fields_changed": false
+  },
+  "proposed": {
+    "code_citation": "SPP Document 203",
+    "explanation": "The source lists the specialized architectural services under SPP 203 and places them within Comprehensive Architectural Services alongside pre-design, regular design, construction, and post-construction services."
+  }
+}

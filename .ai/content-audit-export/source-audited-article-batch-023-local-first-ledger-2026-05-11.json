@@ -1,0 +1,485 @@
+{
+  "schema_version": "source-audited-article-batch-ledger-v1-local-first",
+  "batch_id": "source-audited-article-batch-023-local-first",
+  "mode": "local-first only; no Supabase push, no deploy, no commit",
+  "generated_at": "2026-05-10T18:21:14.059Z",
+  "generated_local_at": "2026-05-10T18:21:14.059Z",
+  "generated_local_timezone": "Asia/Manila",
+  "selected_article_count": 5,
+  "selection_rationale": "Selected next five unpassed high-value LEA accessibility/code/design clusters with linked questions and local raw PDF support from BP 344 2024 IRR and PD 1096 RIRR.",
+  "prior_batch_id_check": {
+    "scanned_batch_range": "001-022",
+    "scanned_artifact_count": 45,
+    "unique_uuid_count": 273,
+    "selected_article_id_collisions": [],
+    "passed": true
+  },
+  "counts": {
+    "selected_articles": 5,
+    "locally_passed_articles": 5,
+    "linked_questions_covered": 110,
+    "source_safe_question_edits_created": 110,
+    "source_records_created": 7,
+    "distinct_local_raw_pdfs_checked": 2
+  },
+  "articles": [
+    {
+      "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
+      "slug": "minimum-parking-requirements",
+      "title": "Minimum Parking Requirements",
+      "article_folder_path": ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a",
+      "absolute_article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits",
+      "absolute_question_edits_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits",
+      "linked_question_count": 28,
+      "question_edit_count": 28,
+      "question_edit_files": [
+        ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/52c59f23-53a5-4910-8232-41854c315f12.json",
+        ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/c0a7e645-33eb-41b9-a933-5e2f49ea9e2d.json",
+        ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/18e7e8dd-abaa-41f1-a4ac-5c9309a38f76.json",
+        ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/b918195c-be77-4c3f-965c-2a6cd4154240.json",
+        ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/bf4f2007-6c3c-4160-8697-2867f0b8ba53.json",
+        ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/2f1ae785-1019-4512-8ee8-cf98169f4537.json",
+        ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/8c93e456-3440-4c36-912f-8f3503377667.json",
+        ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/b1e19bb8-ca5e-4dd4-aa89-63c857c729cb.json",
+        ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/a3932901-e999-49f9-bad0-80120c66fa72.json",
+        ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/9908157a-a669-47d9-90e3-83b4df496405.json",
+        ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/6f3e2c37-0d0c-4ca6-abef-c697719fb462.json",
+        ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/bf4d568f-9342-4e41-9e86-262d7d482c66.json",
+        ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/ac0c6da1-945a-41b9-8e87-4f91abeaf072.json",
+        ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/52d28326-aaf0-49c0-9e3e-157225c9a353.json",
+        ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/2772895e-5e13-4851-b033-8c6a38242e48.json",
+        ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/28963736-b95c-474d-9bcf-785de04c663a.json",
+        ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/ac331568-9433-410b-adfc-7ff7582f9893.json",
+        ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/f41cd511-730f-4e06-b116-cc6d58e5a920.json",
+        ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/a3b9fc07-da66-4818-b524-1f4fbd4c498e.json",
+        ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/e23fc4cf-7e7d-427c-ad8d-50c178f9dd6b.json",
+        ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/e2eb01bd-e3c4-492f-b9b8-fc53730332d3.json",
+        ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/aed28d28-9e94-456a-a4cf-d3aafec14080.json",
+        ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/2c59c765-06b3-4273-8f2a-5be9565a8aa4.json",
+        ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/f078ffef-43b6-491c-b974-c39ffec88a6c.json",
+        ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/e206144d-cf97-41fc-b6c3-5c23cabfa274.json",
+        ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/549ef370-167f-4dfc-ac1b-00ce22ad7c98.json",
+        ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/bdb9c17e-9ee0-4588-a6d8-e4051fc08ed8.json",
+        ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/a8ec5051-9268-461e-873b-5c8182674535.json"
+      ],
+      "source_count": 2,
+      "sources": [
+        {
+          "source_id": "pd1096-2004-rirr-dpwh-official-local",
+          "label": "PD 1096 Revised Implementing Rules and Regulations, 2004 DPWH Official",
+          "source_type": "raw_pdf_with_refined_markdown",
+          "jurisdiction": "Philippines",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "source_locator": "PD 1096 RIRR refined markdown lines 1627-1694, 2703-2747, and 2788-2805"
+        },
+        {
+          "source_id": "bp344-2024-revised-irr-accessibility-local",
+          "label": "2024 Revised Implementing Rules and Regulations of Batas Pambansa Blg. 344",
+          "source_type": "raw_pdf_with_refined_markdown",
+          "jurisdiction": "Philippines",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+          "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+          "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+          "source_locator": "BP 344 2024 IRR refined markdown lines 40-70, 230-305, 450-463, 539-541, 621-704, 772-792, 992-1003, 1062-1088, 1580-1613, and 1649"
+        }
+      ],
+      "normalized_hash": "sha256:1f86af9278094aad603b7d3ec852939a32f445a54c0d424f34edb842a4cb4d3b",
+      "candidate_hash": "sha256:1f86af9278094aad603b7d3ec852939a32f445a54c0d424f34edb842a4cb4d3b",
+      "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "sources_hash": "sha256:d52ad2362febf29a1e53491a56cf85a8084a85e0736e33ed094cfaf451837b53",
+      "source_audit_status": "PASS",
+      "safe_for_supabase_upload_after_final_review": true,
+      "local_status": "locally_passed",
+      "validation": {
+        "compose_blockers": 0,
+        "compose_warnings": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "diff_warnings": [
+          "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+        ],
+        "bundle_validate_valid": true,
+        "bundle_validate_blockers": [],
+        "bundle_validate_warnings": [
+          "minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a: component-usage.json has not been generated for this article yet."
+        ],
+        "scoped_validate_report": ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/batch-023-validate-report.json"
+      }
+    },
+    {
+      "article_id": "3e488a13-943c-4dee-8e38-95b711bef107",
+      "slug": "wheelchair-maneuvering-and-parking",
+      "title": "Wheelchair Maneuvering and Parking",
+      "article_folder_path": ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking--3e488a13-943c-4dee-8e38-95b711bef107",
+      "absolute_article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/wheelchair-maneuvering-and-parking--3e488a13-943c-4dee-8e38-95b711bef107",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking--3e488a13-943c-4dee-8e38-95b711bef107/question-edits",
+      "absolute_question_edits_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/wheelchair-maneuvering-and-parking--3e488a13-943c-4dee-8e38-95b711bef107/question-edits",
+      "linked_question_count": 21,
+      "question_edit_count": 21,
+      "question_edit_files": [
+        ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking--3e488a13-943c-4dee-8e38-95b711bef107/question-edits/07cde6fb-8569-462c-87bb-dfc7911a7eec.json",
+        ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking--3e488a13-943c-4dee-8e38-95b711bef107/question-edits/cc3f0f11-3827-4736-9c76-ebb24afc0873.json",
+        ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking--3e488a13-943c-4dee-8e38-95b711bef107/question-edits/74c7c149-b73e-434f-a1a9-1e22ec30fb15.json",
+        ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking--3e488a13-943c-4dee-8e38-95b711bef107/question-edits/4e8c3031-8284-485c-8105-84c017490b3f.json",
+        ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking--3e488a13-943c-4dee-8e38-95b711bef107/question-edits/8475d9eb-8f55-4019-914b-7bfb5a90a677.json",
+        ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking--3e488a13-943c-4dee-8e38-95b711bef107/question-edits/74087161-e1a1-4f0b-924a-31be39e7cadc.json",
+        ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking--3e488a13-943c-4dee-8e38-95b711bef107/question-edits/4be787cf-f8ce-4b78-9110-09993135782e.json",
+        ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking--3e488a13-943c-4dee-8e38-95b711bef107/question-edits/e572cd61-756d-4776-b217-67cc4f3bdba8.json",
+        ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking--3e488a13-943c-4dee-8e38-95b711bef107/question-edits/0861fa62-232d-463f-befe-e7c721d4f972.json",
+        ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking--3e488a13-943c-4dee-8e38-95b711bef107/question-edits/c6b1ec05-dbb3-4582-a943-e8901fbef11f.json",
+        ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking--3e488a13-943c-4dee-8e38-95b711bef107/question-edits/403be275-614c-40a9-8b3d-af7cd7d0f044.json",
+        ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking--3e488a13-943c-4dee-8e38-95b711bef107/question-edits/ef8fd92e-1ec4-468c-8a1e-c59fcc261801.json",
+        ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking--3e488a13-943c-4dee-8e38-95b711bef107/question-edits/89b86fef-6a87-4356-9c87-a77bc063fc81.json",
+        ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking--3e488a13-943c-4dee-8e38-95b711bef107/question-edits/63125245-216e-4977-be5d-b3d5d6ed37d0.json",
+        ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking--3e488a13-943c-4dee-8e38-95b711bef107/question-edits/75816d26-6469-45c7-81d2-ae4d53021780.json",
+        ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking--3e488a13-943c-4dee-8e38-95b711bef107/question-edits/ed9caa2f-5204-428c-8e1e-ea4c85f1dbf9.json",
+        ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking--3e488a13-943c-4dee-8e38-95b711bef107/question-edits/ccd59bbc-c129-4084-8f91-16b445172dbc.json",
+        ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking--3e488a13-943c-4dee-8e38-95b711bef107/question-edits/b7d5e742-cbc0-4546-ba88-cf4664a489b2.json",
+        ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking--3e488a13-943c-4dee-8e38-95b711bef107/question-edits/72796d5e-8ebb-43d0-ac4b-b255fca47b18.json",
+        ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking--3e488a13-943c-4dee-8e38-95b711bef107/question-edits/6ac53d2b-fd5f-4d33-b7bb-7c50de900d68.json",
+        ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking--3e488a13-943c-4dee-8e38-95b711bef107/question-edits/beb5fa2e-fcfe-4f61-98a5-7baf6bfa5fdd.json"
+      ],
+      "source_count": 1,
+      "sources": [
+        {
+          "source_id": "bp344-2024-revised-irr-accessibility-local",
+          "label": "2024 Revised Implementing Rules and Regulations of Batas Pambansa Blg. 344",
+          "source_type": "raw_pdf_with_refined_markdown",
+          "jurisdiction": "Philippines",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+          "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+          "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+          "source_locator": "BP 344 2024 IRR refined markdown lines 40-70, 230-305, 450-463, 539-541, 621-704, 772-792, 992-1003, 1062-1088, 1580-1613, and 1649"
+        }
+      ],
+      "normalized_hash": "sha256:b90cd562aa9c60f45234cf39d779cd2c21c9be9aa789e4ab033219b3313946f1",
+      "candidate_hash": "sha256:b90cd562aa9c60f45234cf39d779cd2c21c9be9aa789e4ab033219b3313946f1",
+      "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "sources_hash": "sha256:e33539821e205267da740c4dd412adcfc1faf64821ee7f3f441df06b55a41e87",
+      "source_audit_status": "PASS",
+      "safe_for_supabase_upload_after_final_review": true,
+      "local_status": "locally_passed",
+      "validation": {
+        "compose_blockers": 0,
+        "compose_warnings": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "diff_warnings": [
+          "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+        ],
+        "bundle_validate_valid": true,
+        "bundle_validate_blockers": [],
+        "bundle_validate_warnings": [
+          "wheelchair-maneuvering-and-parking--3e488a13-943c-4dee-8e38-95b711bef107: component-usage.json has not been generated for this article yet."
+        ],
+        "scoped_validate_report": ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking--3e488a13-943c-4dee-8e38-95b711bef107/batch-023-validate-report.json"
+      }
+    },
+    {
+      "article_id": "875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+      "slug": "site-exterior-circulation",
+      "title": "Site Exterior Circulation",
+      "article_folder_path": ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+      "absolute_article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits",
+      "absolute_question_edits_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits",
+      "linked_question_count": 20,
+      "question_edit_count": 20,
+      "question_edit_files": [
+        ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits/84bba32f-6fc8-4b02-aba3-4d02c8fc02d8.json",
+        ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits/c8b79f82-3696-416c-9421-d96229d0f475.json",
+        ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits/e5d3a940-c336-43c6-a17f-fd6a9b07c538.json",
+        ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits/bb1a66d5-d453-4033-a509-48efabfcd821.json",
+        ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits/3598ede4-f486-47b7-add1-61caffcc969a.json",
+        ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits/33f9a32b-22bf-46f1-958f-ea811483362c.json",
+        ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits/594b5943-8f2b-4e3f-80dc-e91cab87f060.json",
+        ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits/80188f77-dcd4-427f-a609-61fe8794324c.json",
+        ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits/e7405b7e-69fc-4173-a9e4-d7d186fdc637.json",
+        ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits/51033569-04fe-44b9-aa48-74a104458a8a.json",
+        ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits/2b3592eb-11ba-492f-b80c-0d9e235ccd22.json",
+        ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits/99f80a23-c795-4eb1-9a2a-4a7286d7dffe.json",
+        ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits/fbd8fe43-65dd-406f-973d-fe0ec4a4acf2.json",
+        ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits/568ff715-8693-4a24-bb74-34278fc6c67e.json",
+        ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits/5d81dbaf-4172-4cd8-b367-8bdc5e2d0129.json",
+        ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits/72c13f6d-eef5-4655-a698-42541f621d18.json",
+        ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits/e71d283b-10ca-4d2c-8467-dd7ee6ea65b7.json",
+        ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits/70546d76-192c-4e65-ac3d-c726a0507e9e.json",
+        ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits/2b44eb63-81fb-4466-883d-c4cc28f42875.json",
+        ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits/277e1888-a6f2-469c-a99d-349aee0252fa.json"
+      ],
+      "source_count": 2,
+      "sources": [
+        {
+          "source_id": "bp344-2024-revised-irr-accessibility-local",
+          "label": "2024 Revised Implementing Rules and Regulations of Batas Pambansa Blg. 344",
+          "source_type": "raw_pdf_with_refined_markdown",
+          "jurisdiction": "Philippines",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+          "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+          "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+          "source_locator": "BP 344 2024 IRR refined markdown lines 40-70, 230-305, 450-463, 539-541, 621-704, 772-792, 992-1003, 1062-1088, 1580-1613, and 1649"
+        },
+        {
+          "source_id": "pd1096-2004-rirr-dpwh-official-local",
+          "label": "PD 1096 Revised Implementing Rules and Regulations, 2004 DPWH Official",
+          "source_type": "raw_pdf_with_refined_markdown",
+          "jurisdiction": "Philippines",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "source_locator": "PD 1096 RIRR refined markdown lines 1627-1694, 2703-2747, and 2788-2805"
+        }
+      ],
+      "normalized_hash": "sha256:d6ffb63b5d3d9c7d99435c5a9900d6ec5ce3627281a50bdd5ee08430af4b6d78",
+      "candidate_hash": "sha256:d6ffb63b5d3d9c7d99435c5a9900d6ec5ce3627281a50bdd5ee08430af4b6d78",
+      "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "sources_hash": "sha256:67bc46b523b19f5a3e93744e8175c68a48d11e3d48adf8931deea3acc7ff5309",
+      "source_audit_status": "PASS",
+      "safe_for_supabase_upload_after_final_review": true,
+      "local_status": "locally_passed",
+      "validation": {
+        "compose_blockers": 0,
+        "compose_warnings": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "diff_warnings": [
+          "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+        ],
+        "bundle_validate_valid": true,
+        "bundle_validate_blockers": [],
+        "bundle_validate_warnings": [
+          "site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d: component-usage.json has not been generated for this article yet."
+        ],
+        "scoped_validate_report": ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/batch-023-validate-report.json"
+      }
+    },
+    {
+      "article_id": "f6fe1a69-b3c0-4c94-8341-9291c71c5006",
+      "slug": "transport-nodes-escalators-walkways",
+      "title": "Transport Nodes Escalators Walkways",
+      "article_folder_path": ".ai/content-audit-export/articles/transport-nodes-escalators-walkways--f6fe1a69-b3c0-4c94-8341-9291c71c5006",
+      "absolute_article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/transport-nodes-escalators-walkways--f6fe1a69-b3c0-4c94-8341-9291c71c5006",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/transport-nodes-escalators-walkways--f6fe1a69-b3c0-4c94-8341-9291c71c5006/question-edits",
+      "absolute_question_edits_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/transport-nodes-escalators-walkways--f6fe1a69-b3c0-4c94-8341-9291c71c5006/question-edits",
+      "linked_question_count": 21,
+      "question_edit_count": 21,
+      "question_edit_files": [
+        ".ai/content-audit-export/articles/transport-nodes-escalators-walkways--f6fe1a69-b3c0-4c94-8341-9291c71c5006/question-edits/7bc8e242-85f7-4802-b69e-6dd7d7441224.json",
+        ".ai/content-audit-export/articles/transport-nodes-escalators-walkways--f6fe1a69-b3c0-4c94-8341-9291c71c5006/question-edits/1183bb56-d613-4684-b791-0411f8b866e8.json",
+        ".ai/content-audit-export/articles/transport-nodes-escalators-walkways--f6fe1a69-b3c0-4c94-8341-9291c71c5006/question-edits/598e798a-7d0c-4862-b07c-506672eb0bed.json",
+        ".ai/content-audit-export/articles/transport-nodes-escalators-walkways--f6fe1a69-b3c0-4c94-8341-9291c71c5006/question-edits/b5902efa-9f90-40b5-855e-2ad14518fb7a.json",
+        ".ai/content-audit-export/articles/transport-nodes-escalators-walkways--f6fe1a69-b3c0-4c94-8341-9291c71c5006/question-edits/73580627-d46d-44bd-9acf-db82d82fe393.json",
+        ".ai/content-audit-export/articles/transport-nodes-escalators-walkways--f6fe1a69-b3c0-4c94-8341-9291c71c5006/question-edits/b6757ce0-7acb-456f-ac68-6fba926bc0f5.json",
+        ".ai/content-audit-export/articles/transport-nodes-escalators-walkways--f6fe1a69-b3c0-4c94-8341-9291c71c5006/question-edits/62139968-0d89-46cb-b1db-7d3b2c5dae23.json",
+        ".ai/content-audit-export/articles/transport-nodes-escalators-walkways--f6fe1a69-b3c0-4c94-8341-9291c71c5006/question-edits/2eeff351-44c9-4787-9b83-43d28d63b562.json",
+        ".ai/content-audit-export/articles/transport-nodes-escalators-walkways--f6fe1a69-b3c0-4c94-8341-9291c71c5006/question-edits/27db2b54-35a6-47ed-8252-f568be0d059f.json",
+        ".ai/content-audit-export/articles/transport-nodes-escalators-walkways--f6fe1a69-b3c0-4c94-8341-9291c71c5006/question-edits/4cc6197c-84ed-4ab5-a3aa-ac6c39d08e96.json",
+        ".ai/content-audit-export/articles/transport-nodes-escalators-walkways--f6fe1a69-b3c0-4c94-8341-9291c71c5006/question-edits/9e3a002b-236e-489a-a893-be883432162c.json",
+        ".ai/content-audit-export/articles/transport-nodes-escalators-walkways--f6fe1a69-b3c0-4c94-8341-9291c71c5006/question-edits/a713c0ad-37cd-438c-b948-fa0c90ec9780.json",
+        ".ai/content-audit-export/articles/transport-nodes-escalators-walkways--f6fe1a69-b3c0-4c94-8341-9291c71c5006/question-edits/e60f6e23-72b6-4801-abb0-992f0df65d05.json",
+        ".ai/content-audit-export/articles/transport-nodes-escalators-walkways--f6fe1a69-b3c0-4c94-8341-9291c71c5006/question-edits/824cf8cd-8889-499c-a781-346a32bf22c3.json",
+        ".ai/content-audit-export/articles/transport-nodes-escalators-walkways--f6fe1a69-b3c0-4c94-8341-9291c71c5006/question-edits/b4ce84a6-afd5-4d25-b65f-ab8cf284da13.json",
+        ".ai/content-audit-export/articles/transport-nodes-escalators-walkways--f6fe1a69-b3c0-4c94-8341-9291c71c5006/question-edits/c1485305-99e9-4830-8fed-9bf92a6078aa.json",
+        ".ai/content-audit-export/articles/transport-nodes-escalators-walkways--f6fe1a69-b3c0-4c94-8341-9291c71c5006/question-edits/0f9c3679-3429-460a-978e-849da53cf488.json",
+        ".ai/content-audit-export/articles/transport-nodes-escalators-walkways--f6fe1a69-b3c0-4c94-8341-9291c71c5006/question-edits/37dcf2c3-94a0-4bb6-b12a-5874a88ff4d1.json",
+        ".ai/content-audit-export/articles/transport-nodes-escalators-walkways--f6fe1a69-b3c0-4c94-8341-9291c71c5006/question-edits/88cc76d3-3de6-4030-951f-bc108fc383c8.json",
+        ".ai/content-audit-export/articles/transport-nodes-escalators-walkways--f6fe1a69-b3c0-4c94-8341-9291c71c5006/question-edits/84875579-dd5b-423c-82f2-d8c2e2b9374e.json",
+        ".ai/content-audit-export/articles/transport-nodes-escalators-walkways--f6fe1a69-b3c0-4c94-8341-9291c71c5006/question-edits/8635f4c6-f508-46f7-b8ba-7c41c6a5f36b.json"
+      ],
+      "source_count": 1,
+      "sources": [
+        {
+          "source_id": "bp344-2024-revised-irr-accessibility-local",
+          "label": "2024 Revised Implementing Rules and Regulations of Batas Pambansa Blg. 344",
+          "source_type": "raw_pdf_with_refined_markdown",
+          "jurisdiction": "Philippines",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+          "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+          "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+          "source_locator": "BP 344 2024 IRR refined markdown lines 40-70, 230-305, 450-463, 539-541, 621-704, 772-792, 992-1003, 1062-1088, 1580-1613, and 1649"
+        }
+      ],
+      "normalized_hash": "sha256:97eff161df726e76be0067680c11b19655751e127ba9fd0f36482021580e7e24",
+      "candidate_hash": "sha256:97eff161df726e76be0067680c11b19655751e127ba9fd0f36482021580e7e24",
+      "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "sources_hash": "sha256:e33539821e205267da740c4dd412adcfc1faf64821ee7f3f441df06b55a41e87",
+      "source_audit_status": "PASS",
+      "safe_for_supabase_upload_after_final_review": true,
+      "local_status": "locally_passed",
+      "validation": {
+        "compose_blockers": 0,
+        "compose_warnings": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "diff_warnings": [
+          "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+        ],
+        "bundle_validate_valid": true,
+        "bundle_validate_blockers": [],
+        "bundle_validate_warnings": [
+          "transport-nodes-escalators-walkways--f6fe1a69-b3c0-4c94-8341-9291c71c5006: component-usage.json has not been generated for this article yet."
+        ],
+        "scoped_validate_report": ".ai/content-audit-export/articles/transport-nodes-escalators-walkways--f6fe1a69-b3c0-4c94-8341-9291c71c5006/batch-023-validate-report.json"
+      }
+    },
+    {
+      "article_id": "6e84b3e6-5dd9-4557-8202-5085d24a3708",
+      "slug": "top-50-traps-2024-irr",
+      "title": "Top 50 Traps 2024 IRR",
+      "article_folder_path": ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708",
+      "absolute_article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits",
+      "absolute_question_edits_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits",
+      "linked_question_count": 20,
+      "question_edit_count": 20,
+      "question_edit_files": [
+        ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits/e823b7b7-556a-415e-892c-d312397c2d40.json",
+        ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits/ac87b27f-1936-43a2-929c-21c0ac0cf4fd.json",
+        ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits/568b0651-65e3-4527-8260-bd6c4d60d5d6.json",
+        ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits/6250c528-080c-4288-a507-99d0eab1ffcf.json",
+        ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits/5a7cc630-f407-4fc0-b23e-438a19907a79.json",
+        ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits/a0e57be3-a613-4367-85c0-c0ac3141db55.json",
+        ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits/4fa976c5-34f6-4890-9233-fe96f4843612.json",
+        ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits/9c2e5ec4-a1fa-458a-a3e2-63990308393d.json",
+        ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits/9babaf0d-fe63-4275-813b-3d96f31dde19.json",
+        ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits/2e6f0f19-1ab0-42a7-be09-aa314504c060.json",
+        ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits/bc692c6e-e082-481c-aedd-22fad129106d.json",
+        ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits/a980ed3f-8cd6-45a6-a1c0-fe11e9c983d7.json",
+        ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits/98974938-7ae2-47bd-b97e-f944db6f7831.json",
+        ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits/eca40314-9982-4e59-b989-ec889175f636.json",
+        ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits/57f2f805-413f-488f-bb1a-85ecac9e23d3.json",
+        ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits/6d0924bd-490e-43a6-a736-41fab500887e.json",
+        ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits/afa6129b-9e72-4648-b7bd-b69f594d9a57.json",
+        ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits/abf66f59-3fde-41a7-b8a9-aab3e4333794.json",
+        ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits/d52d4293-6e5c-4ef1-ab90-f830b0e9c662.json",
+        ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits/f6d28712-a36d-4b73-8e46-97d22e10e630.json"
+      ],
+      "source_count": 1,
+      "sources": [
+        {
+          "source_id": "bp344-2024-revised-irr-accessibility-local",
+          "label": "2024 Revised Implementing Rules and Regulations of Batas Pambansa Blg. 344",
+          "source_type": "raw_pdf_with_refined_markdown",
+          "jurisdiction": "Philippines",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+          "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+          "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+          "source_locator": "BP 344 2024 IRR refined markdown lines 40-70, 230-305, 450-463, 539-541, 621-704, 772-792, 992-1003, 1062-1088, 1580-1613, and 1649"
+        }
+      ],
+      "normalized_hash": "sha256:99f43e18737abc0a7f3fbc6b1ae991dbe2f34b30a4511bb6ebddde586b7809d7",
+      "candidate_hash": "sha256:99f43e18737abc0a7f3fbc6b1ae991dbe2f34b30a4511bb6ebddde586b7809d7",
+      "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "sources_hash": "sha256:e33539821e205267da740c4dd412adcfc1faf64821ee7f3f441df06b55a41e87",
+      "source_audit_status": "PASS",
+      "safe_for_supabase_upload_after_final_review": true,
+      "local_status": "locally_passed",
+      "validation": {
+        "compose_blockers": 0,
+        "compose_warnings": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "diff_warnings": [
+          "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+        ],
+        "bundle_validate_valid": true,
+        "bundle_validate_blockers": [],
+        "bundle_validate_warnings": [
+          "top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708: component-usage.json has not been generated for this article yet."
+        ],
+        "scoped_validate_report": ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/batch-023-validate-report.json"
+      }
+    }
+  ],
+  "source_evidence": [
+    {
+      "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
+      "source_id": "pd1096-2004-rirr-dpwh-official-local",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "locator": "PD 1096 RIRR refined markdown lines 1627-1694, 2703-2747, and 2788-2805"
+    },
+    {
+      "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
+      "source_id": "bp344-2024-revised-irr-accessibility-local",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "locator": "BP 344 2024 IRR refined markdown lines 40-70, 230-305, 450-463, 539-541, 621-704, 772-792, 992-1003, 1062-1088, 1580-1613, and 1649"
+    },
+    {
+      "article_id": "3e488a13-943c-4dee-8e38-95b711bef107",
+      "source_id": "bp344-2024-revised-irr-accessibility-local",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "locator": "BP 344 2024 IRR refined markdown lines 40-70, 230-305, 450-463, 539-541, 621-704, 772-792, 992-1003, 1062-1088, 1580-1613, and 1649"
+    },
+    {
+      "article_id": "875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+      "source_id": "bp344-2024-revised-irr-accessibility-local",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "locator": "BP 344 2024 IRR refined markdown lines 40-70, 230-305, 450-463, 539-541, 621-704, 772-792, 992-1003, 1062-1088, 1580-1613, and 1649"
+    },
+    {
+      "article_id": "875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+      "source_id": "pd1096-2004-rirr-dpwh-official-local",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "locator": "PD 1096 RIRR refined markdown lines 1627-1694, 2703-2747, and 2788-2805"
+    },
+    {
+      "article_id": "f6fe1a69-b3c0-4c94-8341-9291c71c5006",
+      "source_id": "bp344-2024-revised-irr-accessibility-local",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "locator": "BP 344 2024 IRR refined markdown lines 40-70, 230-305, 450-463, 539-541, 621-704, 772-792, 992-1003, 1062-1088, 1580-1613, and 1649"
+    },
+    {
+      "article_id": "6e84b3e6-5dd9-4557-8202-5085d24a3708",
+      "source_id": "bp344-2024-revised-irr-accessibility-local",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "locator": "BP 344 2024 IRR refined markdown lines 40-70, 230-305, 450-463, 539-541, 621-704, 772-792, 992-1003, 1062-1088, 1580-1613, and 1649"
+    }
+  ],
+  "validation": {
+    "compose_diff_validate": "PASS: 5/5 compose, diff, and validate locally passed",
+    "json_parse": "PASS: 170 selected Batch 023 JSON files parsed with jq empty",
+    "marker_scan": "PASS: selected normalized.md/candidate.md and question-edits JSON have no prohibited marker residue",
+    "source_gap": "PASS: source counts >0, raw_pdf_gate PASS, edit counts match linked question counts",
+    "test": "PASS: bun run test:source-verification (7 pass, 0 fail)",
+    "whitespace_check": "PASS: git diff --check scoped to Batch 023 paths"
+  },
+  "artifact_paths": {
+    "ledger": ".ai/content-audit-export/source-audited-article-batch-023-local-first-ledger-2026-05-11.json",
+    "report": ".ai/content-audit-export/source-audited-article-batch-023-local-first-report-2026-05-11.md",
+    "generation_summary": ".ai/content-audit-export/source-audited-article-batch-023-local-first-generation-summary-2026-05-11.json",
+    "command_log": ".ai/content-audit-export/source-audited-article-batch-023-local-first-command-log-2026-05-11.json",
+    "top_traps_rerun": ".ai/content-audit-export/source-audited-article-batch-023-top-traps-rerun-2026-05-11.json"
+  },
+  "safety": {
+    "supabase_pushed": false,
+    "deployed": false,
+    "committed": false,
+    "final_publishing_only": true
+  },
+  "next_phase_readiness": {
+    "status": "ready_for_final_publishing_review_only",
+    "blockers": [],
+    "required_next_phase_gates": [
+      "remote stale check",
+      "Supabase dry-run",
+      "separately authorized final publishing"
+    ]
+  }
+}

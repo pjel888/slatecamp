@@ -1,8 +1,8 @@
 # Phase 1 Calculator Suite — Codebase Audit & Componentization Plan
 
-**Document type:** Architecture audit + refactoring specification  
-**Date:** April 2026  
-**Status:** Pre-implementation — must be completed before any Calculator Suite module code is written  
+**Document type:** Architecture audit + refactoring specification
+**Date:** April 2026
+**Status:** Pre-implementation — must be completed before any Calculator Suite module code is written
 **Scope:** Audit existing 3D Lab infrastructure, identify reusable components, define extraction strategy for the Calculator Suite
 
 ---

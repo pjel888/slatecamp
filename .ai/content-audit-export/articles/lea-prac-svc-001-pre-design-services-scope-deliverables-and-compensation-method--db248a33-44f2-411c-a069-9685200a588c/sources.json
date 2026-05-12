@@ -1,7 +1,26 @@
 {
   "article_id": "db248a33-44f2-411c-a069-9685200a588c",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "source_count": 0,
-  "sources": []
+  "sources_hash": "sha256:1d3d2726f0971c85cf0984224d88123498aa25156f60e4bfad2ebcea4a8b9a91",
+  "source_count": 1,
+  "sources": [
+    {
+      "source_id": "spp-201-predesign-services-local-raw-pdf",
+      "label": "UAP SPP Document 201 - Pre-Design Services",
+      "authority": "United Architects of the Philippines source conversion",
+      "source_type": "professional_practice_pdf",
+      "source_locator": "SPP 201 refined markdown lines 245-255, 268-415, and 425-447",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+      "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+      "refined_markdown_sha256": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
+      "checked_markdown_lines": [
+        "SPP 201 refined markdown lines 245-255",
+        "SPP 201 refined markdown lines 268-415",
+        "SPP 201 refined markdown lines 425-447"
+      ],
+      "use": "primary local source for pre-design services scope and compensation repair",
+      "local_source_checked": true
+    }
+  ]
 }

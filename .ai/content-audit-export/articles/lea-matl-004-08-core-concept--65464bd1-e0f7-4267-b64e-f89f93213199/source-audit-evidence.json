@@ -1,0 +1,254 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-084-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T06:55:00.000+08:00",
+  "target": {
+    "article_id": "65464bd1-e0f7-4267-b64e-f89f93213199",
+    "slug": "lea-matl-004-08-core-concept",
+    "title": "Pre-construction planning ensures site readiness before work starts",
+    "article_folder": ".ai/content-audit-export/articles/lea-matl-004-08-core-concept--65464bd1-e0f7-4267-b64e-f89f93213199",
+    "normalized_sha256": "sha256:c6fd71ecee8768332b8935fee2081ef67dcee953d38faa1e022f47ef80903918",
+    "candidate_sha256": "sha256:c6fd71ecee8768332b8935fee2081ef67dcee953d38faa1e022f47ef80903918",
+    "candidate_path": ".ai/content-audit-export/articles/lea-matl-004-08-core-concept--65464bd1-e0f7-4267-b64e-f89f93213199/candidate.md"
+  },
+  "classification": {
+    "topic_family": "preconstruction_site_readiness",
+    "local_first_batch": "084",
+    "source_sensitivity": "legal_code_project_management",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "legal_code_and_project_management",
+    "requires_raw_pdf_audit": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdfs_checked_first": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "local_pdf_extraction_method": "python_pymupdf_local",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "construction-project-management-handbook-b084",
+      "label": "Construction Project Management Handbook by Shadan _ Fleming",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Construction Project Management Handbook by Shadan _ Fleming.pdf",
+      "sha256": "sha256:01dd25a5de726377eb53bafb502127a806cc007ffc05e8dad745479b0ad6ad17",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Construction Project Management Handbook by Shadan _ Fleming.md",
+      "refined_markdown_sha256": "sha256:9d7f7c772d1efcce9db4c8f1e59cc5d19711cd99448799ae6ce783ebb6b78c77",
+      "locator": "Construction Project Management Handbook refined markdown lines 253-293, 1001-1068, 2243-2245, 2694-2704, and 3052-3056; raw PDF pages 5, 7, 43-47, 82, 84, 97, 100, 105, and 125 checked by local PyMuPDF extraction."
+    },
+    {
+      "source_id": "pd-1096-rirr-dpwh-b084",
+      "label": "PD 1096 RIRR 2004 - Revised IRR (DPWH Official)",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "locator": "PD 1096 RIRR DPWH refined markdown lines 488-507, 653, 848-860, 916-918, and 3047-3099; raw PDF pages 14, 34, 35, 38, 168, 169, and 244-245 checked by local PyMuPDF extraction."
+    },
+    {
+      "source_id": "uap-document-301-b084",
+      "label": "UAP Document 301",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+      "sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+      "refined_markdown_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+      "locator": "UAP Document 301 refined markdown lines 575-604, 678-684, 786, and 858-859; raw PDF pages 10, 20, 21, 25, 32, and 37 checked by local PyMuPDF extraction."
+    },
+    {
+      "source_id": "chudley-greeno-handbook-b084",
+      "label": "Buidling Construction Handbook 7th Ed by Chudley _ Greeno",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf",
+      "sha256": "sha256:2efa493fac06a3efb9367111a397129ff8647778d88160bbe0174403cbb9e0bb",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.md",
+      "refined_markdown_sha256": "sha256:485fe968d55ca680cbde52d24fcee5f512a63591026db19e46835f1bc530dcbb",
+      "locator": "Chudley/Greeno refined markdown lines 18-23, 295-305, 433-519, 782-916, and 893-916; raw PDF pages 58, 96, 163-199, 471, 495, and 511 checked by local PyMuPDF extraction."
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-matl-004-08-core-concept-article-b084",
+      "claim_text": "Article lea-matl-004-08-core-concept was rewritten to the checked preconstruction_site_readiness source scope.",
+      "claim_type": "article_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Construction Project Management Handbook by Shadan _ Fleming.pdf",
+        "raw_pdf_sha256": "sha256:01dd25a5de726377eb53bafb502127a806cc007ffc05e8dad745479b0ad6ad17",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Construction Project Management Handbook by Shadan _ Fleming.md",
+        "source_locator": "Construction Project Management Handbook refined markdown lines 1001-1068; PD 1096 RIRR refined markdown lines 488-507, 848-860, and 916-918; UAP Document 301 lines 575-604, 786, and 858-859; Chudley/Greeno lines 433-519.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-d4c05cda-d4ab-4b49-8aca-e7c0344b9599-b084",
+      "claim_text": "Question d4c05cda-d4ab-4b49-8aca-e7c0344b9599 was rewritten to the checked preconstruction_site_readiness source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Construction Project Management Handbook by Shadan _ Fleming.pdf",
+        "raw_pdf_sha256": "sha256:01dd25a5de726377eb53bafb502127a806cc007ffc05e8dad745479b0ad6ad17",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Construction Project Management Handbook by Shadan _ Fleming.md",
+        "source_locator": "Construction Project Management Handbook refined markdown lines 1001-1068; PD 1096 RIRR refined markdown lines 488-507, 848-860, and 916-918; UAP Document 301 lines 575-604, 786, and 858-859; Chudley/Greeno lines 433-519.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-25826fee-b3f0-4112-8e1d-2b1cb0f8220f-b084",
+      "claim_text": "Question 25826fee-b3f0-4112-8e1d-2b1cb0f8220f was rewritten to the checked preconstruction_site_readiness source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Construction Project Management Handbook by Shadan _ Fleming.pdf",
+        "raw_pdf_sha256": "sha256:01dd25a5de726377eb53bafb502127a806cc007ffc05e8dad745479b0ad6ad17",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Construction Project Management Handbook by Shadan _ Fleming.md",
+        "source_locator": "Construction Project Management Handbook refined markdown lines 1001-1068; PD 1096 RIRR refined markdown lines 488-507, 848-860, and 916-918; UAP Document 301 lines 575-604, 786, and 858-859; Chudley/Greeno lines 433-519.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-3c26d2dd-1811-403e-9184-9550e25af76a-b084",
+      "claim_text": "Question 3c26d2dd-1811-403e-9184-9550e25af76a was rewritten to the checked preconstruction_site_readiness source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Construction Project Management Handbook by Shadan _ Fleming.pdf",
+        "raw_pdf_sha256": "sha256:01dd25a5de726377eb53bafb502127a806cc007ffc05e8dad745479b0ad6ad17",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Construction Project Management Handbook by Shadan _ Fleming.md",
+        "source_locator": "Construction Project Management Handbook refined markdown lines 1001-1068; PD 1096 RIRR refined markdown lines 488-507, 848-860, and 916-918; UAP Document 301 lines 575-604, 786, and 858-859; Chudley/Greeno lines 433-519.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-720c7a3a-f0f7-4848-8232-c608b4b6e5ff-b084",
+      "claim_text": "Question 720c7a3a-f0f7-4848-8232-c608b4b6e5ff was rewritten to the checked preconstruction_site_readiness source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Construction Project Management Handbook by Shadan _ Fleming.pdf",
+        "raw_pdf_sha256": "sha256:01dd25a5de726377eb53bafb502127a806cc007ffc05e8dad745479b0ad6ad17",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Construction Project Management Handbook by Shadan _ Fleming.md",
+        "source_locator": "Construction Project Management Handbook refined markdown lines 1001-1068; PD 1096 RIRR refined markdown lines 488-507, 848-860, and 916-918; UAP Document 301 lines 575-604, 786, and 858-859; Chudley/Greeno lines 433-519.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-06f4a429-b1fb-4084-9caa-4a4283a2baf5-b084",
+      "claim_text": "Question 06f4a429-b1fb-4084-9caa-4a4283a2baf5 was rewritten to the checked preconstruction_site_readiness source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Construction Project Management Handbook by Shadan _ Fleming.pdf",
+        "raw_pdf_sha256": "sha256:01dd25a5de726377eb53bafb502127a806cc007ffc05e8dad745479b0ad6ad17",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Construction Project Management Handbook by Shadan _ Fleming.md",
+        "source_locator": "Construction Project Management Handbook refined markdown lines 1001-1068; PD 1096 RIRR refined markdown lines 488-507, 848-860, and 916-918; UAP Document 301 lines 575-604, 786, and 858-859; Chudley/Greeno lines 433-519.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-407d4843-5f62-41fe-8753-c90f89d73335-b084",
+      "claim_text": "Question 407d4843-5f62-41fe-8753-c90f89d73335 was rewritten to the checked preconstruction_site_readiness source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Construction Project Management Handbook by Shadan _ Fleming.pdf",
+        "raw_pdf_sha256": "sha256:01dd25a5de726377eb53bafb502127a806cc007ffc05e8dad745479b0ad6ad17",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Construction Project Management Handbook by Shadan _ Fleming.md",
+        "source_locator": "Construction Project Management Handbook refined markdown lines 1001-1068; PD 1096 RIRR refined markdown lines 488-507, 848-860, and 916-918; UAP Document 301 lines 575-604, 786, and 858-859; Chudley/Greeno lines 433-519.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-40b90f0c-0167-486b-8e69-4c8e11e51719-b084",
+      "claim_text": "Question 40b90f0c-0167-486b-8e69-4c8e11e51719 was rewritten to the checked preconstruction_site_readiness source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Construction Project Management Handbook by Shadan _ Fleming.pdf",
+        "raw_pdf_sha256": "sha256:01dd25a5de726377eb53bafb502127a806cc007ffc05e8dad745479b0ad6ad17",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Construction Project Management Handbook by Shadan _ Fleming.md",
+        "source_locator": "Construction Project Management Handbook refined markdown lines 1001-1068; PD 1096 RIRR refined markdown lines 488-507, 848-860, and 916-918; UAP Document 301 lines 575-604, 786, and 858-859; Chudley/Greeno lines 433-519.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-5b89802d-b51c-4253-8820-4c369dac7f66-b084",
+      "claim_text": "Question 5b89802d-b51c-4253-8820-4c369dac7f66 was rewritten to the checked preconstruction_site_readiness source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Construction Project Management Handbook by Shadan _ Fleming.pdf",
+        "raw_pdf_sha256": "sha256:01dd25a5de726377eb53bafb502127a806cc007ffc05e8dad745479b0ad6ad17",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Construction Project Management Handbook by Shadan _ Fleming.md",
+        "source_locator": "Construction Project Management Handbook refined markdown lines 1001-1068; PD 1096 RIRR refined markdown lines 488-507, 848-860, and 916-918; UAP Document 301 lines 575-604, 786, and 858-859; Chudley/Greeno lines 433-519.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-62b3a071-e9c2-4a38-a9d0-3ea2ab593177-b084",
+      "claim_text": "Question 62b3a071-e9c2-4a38-a9d0-3ea2ab593177 was rewritten to the checked preconstruction_site_readiness source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Construction Project Management Handbook by Shadan _ Fleming.pdf",
+        "raw_pdf_sha256": "sha256:01dd25a5de726377eb53bafb502127a806cc007ffc05e8dad745479b0ad6ad17",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Construction Project Management Handbook by Shadan _ Fleming.md",
+        "source_locator": "Construction Project Management Handbook refined markdown lines 1001-1068; PD 1096 RIRR refined markdown lines 488-507, 848-860, and 916-918; UAP Document 301 lines 575-604, 786, and 858-859; Chudley/Greeno lines 433-519.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-77ad610c-e0a9-43e1-b1fd-e76831b59e70-b084",
+      "claim_text": "Question 77ad610c-e0a9-43e1-b1fd-e76831b59e70 was rewritten to the checked preconstruction_site_readiness source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Construction Project Management Handbook by Shadan _ Fleming.pdf",
+        "raw_pdf_sha256": "sha256:01dd25a5de726377eb53bafb502127a806cc007ffc05e8dad745479b0ad6ad17",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Construction Project Management Handbook by Shadan _ Fleming.md",
+        "source_locator": "Construction Project Management Handbook refined markdown lines 1001-1068; PD 1096 RIRR refined markdown lines 488-507, 848-860, and 916-918; UAP Document 301 lines 575-604, 786, and 858-859; Chudley/Greeno lines 433-519.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; no derivative or search layer was used as primary truth."
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "question_edit_audit": {
+    "linked_question_count": 10,
+    "question_edit_count": 10,
+    "answer_key_fields_changed": true,
+    "source_safe_rewrite": true,
+    "blockers": []
+  },
+  "scenario_enrichment": {
+    "status": "eligible-deferred",
+    "reason": "Pre-construction readiness has scenario potential around permits, investigations, utilities, and closeout documents, but Batch 084 deferred scenario additions to protect legal/source accuracy."
+  },
+  "roundtrip": {
+    "normalized_md_owns_article_prose": true,
+    "ui_blocks_json_owns_raw_ui_blocks": true,
+    "candidate_md_generated_by_compose": true,
+    "raw_ui_block_edits_supported_in_this_batch": false,
+    "note": "Exported UI summary markers were removed where ui-blocks.json had zero preserved raw blocks, allowing compose to complete without unresolved UI markers.",
+    "unresolved_ui_summary_markers_removed": true
+  }
+}

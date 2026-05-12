@@ -6,8 +6,8 @@
 
 # SlateCamp PRD
 
-**Last Updated:** 2026-04-06  
-**Version:** 5.0  
+**Last Updated:** 2026-04-06
+**Version:** 5.0
 **Source:** `README.md`, `src/app/*/AGENTS.md`
 
 ---

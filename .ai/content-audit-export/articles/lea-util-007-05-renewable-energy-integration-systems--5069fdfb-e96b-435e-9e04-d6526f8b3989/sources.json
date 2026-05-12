@@ -1,7 +1,115 @@
 {
   "article_id": "5069fdfb-e96b-435e-9e04-d6526f8b3989",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "source_count": 0,
-  "sources": []
+  "sources_hash": "sha256:5c3ba883e900e6258fe9ee1e7f7683731bdcc409f9f377d2523a561787634355",
+  "source_count": 4,
+  "sources": [
+    {
+      "source_id": "pec-local-raw-pdf--b049-5069fdfb-01",
+      "article_id": "5069fdfb-e96b-435e-9e04-d6526f8b3989",
+      "label": "Philippine Electrical Code - local raw PDF",
+      "url": null,
+      "source_type": "local_raw_pdf",
+      "description": "Philippine Electrical Code - local raw PDF; local raw PDF checked first; refined markdown used only as locator. Philippine Electrical Code refined markdown lines 29229-29315, 29472-29504, 29595-29610, 29694-29723, and 29830-29855.",
+      "is_verified": true,
+      "sort_order": 0,
+      "created_at": "2026-05-11T20:35:00.000+08:00",
+      "updated_at": "2026-05-11T20:35:00.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+      "raw_pdf_sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+      "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3",
+      "source_locator": "Philippine Electrical Code refined markdown lines 29229-29315, 29472-29504, 29595-29610, 29694-29723, and 29830-29855",
+      "checked_markdown_lines": [
+        "Philippine Electrical Code refined markdown lines 29229-29315",
+        "Philippine Electrical Code refined markdown lines 29472-29504",
+        "Philippine Electrical Code refined markdown lines 29595-29610",
+        "Philippine Electrical Code refined markdown lines 29694-29723",
+        "Philippine Electrical Code refined markdown lines 29830-29855"
+      ],
+      "local_audit_note": "Primary truth is the local raw PDF family; refined markdown line ranges are locator aids for the checked provisions."
+    },
+    {
+      "source_id": "ra11285-local-raw-pdf--b049-5069fdfb-02",
+      "article_id": "5069fdfb-e96b-435e-9e04-d6526f8b3989",
+      "label": "RA 11285 Energy Efficiency and Conservation Act - local raw PDF",
+      "url": null,
+      "source_type": "local_raw_pdf",
+      "description": "RA 11285 Energy Efficiency and Conservation Act - local raw PDF; local raw PDF checked first; refined markdown used only as locator. RA 11285 refined markdown lines 31-105, 599-613, 719-775, and 1086-1124.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-11T20:35:00.000+08:00",
+      "updated_at": "2026-05-11T20:35:00.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf",
+      "raw_pdf_sha256": "sha256:316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.md",
+      "refined_markdown_sha256": "sha256:d2baa0e8d4ffe0059688783a4d31ac0e121517daca939f18a048fe053e76cdd4",
+      "source_locator": "RA 11285 refined markdown lines 31-105, 599-613, 719-775, and 1086-1124",
+      "checked_markdown_lines": [
+        "RA 11285 refined markdown lines 31-105",
+        "RA 11285 refined markdown lines 599-613",
+        "RA 11285 refined markdown lines 719-775",
+        "RA 11285 refined markdown lines 1086-1124"
+      ],
+      "local_audit_note": "Primary truth is the local raw PDF family; refined markdown line ranges are locator aids for the checked provisions."
+    },
+    {
+      "source_id": "doe-local-raw-pdf--b049-5069fdfb-03",
+      "article_id": "5069fdfb-e96b-435e-9e04-d6526f8b3989",
+      "label": "DOE Guidelines on Energy Conserving Design of Buildings - local raw PDF",
+      "url": null,
+      "source_type": "local_raw_pdf",
+      "description": "DOE Guidelines on Energy Conserving Design of Buildings - local raw PDF; local raw PDF checked first; refined markdown used only as locator. DOE Guidelines refined markdown lines 21-43, 260-273, 321-425, and 707-785.",
+      "is_verified": true,
+      "sort_order": 2,
+      "created_at": "2026-05-11T20:35:00.000+08:00",
+      "updated_at": "2026-05-11T20:35:00.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+      "raw_pdf_sha256": "sha256:9a1a4019b500ffc2873625db6f04ac50b39aea7cadac9159464f9ed716e8126c",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.md",
+      "refined_markdown_sha256": "sha256:477f0990a67359eee303e8280a00be449d0aa413252161db7b5b1bafec3012b9",
+      "source_locator": "DOE Guidelines refined markdown lines 21-43, 260-273, 321-425, and 707-785",
+      "checked_markdown_lines": [
+        "DOE Guidelines refined markdown lines 21-43",
+        "DOE Guidelines refined markdown lines 260-273",
+        "DOE Guidelines refined markdown lines 321-425",
+        "DOE Guidelines refined markdown lines 707-785"
+      ],
+      "local_audit_note": "Primary truth is the local raw PDF family; refined markdown line ranges are locator aids for the checked provisions."
+    },
+    {
+      "source_id": "salvan2-local-raw-pdf--b049-5069fdfb-04",
+      "article_id": "5069fdfb-e96b-435e-9e04-d6526f8b3989",
+      "label": "George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment - local raw PDF",
+      "url": null,
+      "source_type": "local_raw_pdf",
+      "description": "George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment - local raw PDF; local raw PDF checked first; refined markdown used only as locator. George Salvan Utilities 2 refined markdown lines 8600-8610, 9064-9128, 9146-9153, 9220-9244, 9427-9435, and 9465-9471.",
+      "is_verified": true,
+      "sort_order": 3,
+      "created_at": "2026-05-11T20:35:00.000+08:00",
+      "updated_at": "2026-05-11T20:35:00.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+      "raw_pdf_sha256": "sha256:ff7231f0059a1febaf4a0996a425caca3b7676c23c729f922e385af4e4c20d28",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
+      "refined_markdown_sha256": "sha256:1b9249c90c0b86c57c6df2f20f0ab210ac112a10230bd9bce584461773d75215",
+      "source_locator": "George Salvan Utilities 2 refined markdown lines 8600-8610, 9064-9128, 9146-9153, 9220-9244, 9427-9435, and 9465-9471",
+      "checked_markdown_lines": [
+        "George Salvan Utilities 2 refined markdown lines 8600-8610",
+        "George Salvan Utilities 2 refined markdown lines 9064-9128",
+        "George Salvan Utilities 2 refined markdown lines 9146-9153",
+        "George Salvan Utilities 2 refined markdown lines 9220-9244",
+        "George Salvan Utilities 2 refined markdown lines 9427-9435",
+        "George Salvan Utilities 2 refined markdown lines 9465-9471"
+      ],
+      "local_audit_note": "Primary truth is the local raw PDF family; refined markdown line ranges are locator aids for the checked provisions."
+    }
+  ]
 }

@@ -191,9 +191,9 @@ The atomic unit of the dashboard. Every stat is a `MetricCard`.
 ```
 ┌──────────────────────────┐
 │  MONTHLY RECURRING REVENUE   ← DM Mono 9px eyebrow
-│                              
+│
 │  ₱14,392                     ← DM Mono 600 2xl, tabular-nums
-│                              
+│
 │  ↑ +₱2,800 (+24%)            ← colored delta: green if up, neutral if down
 │  vs. last month              ← Inter 12px muted
 └──────────────────────────┘
@@ -213,7 +213,7 @@ The single most important number for a bootstrapped startup. Visual design based
     │  ██████████│
     │____________│
     E    6    12  18+
-         
+
     At current burn: March 2028
     "Secure" threshold: 12 months ↑
 ```
@@ -806,7 +806,7 @@ Step 1 — Navigate to /ceo
 
 Step 2 — Empty state guidance (NOT error pages)
 
-  MRR MetricCard: 
+  MRR MetricCard:
   "₱0 MRR — No paying subscribers yet.
    Revenue tracking will activate with your first conversion."
 

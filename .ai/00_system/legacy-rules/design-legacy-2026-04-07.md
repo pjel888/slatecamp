@@ -6,8 +6,8 @@
 
 # Design System Rules
 
-**Source:** `src/app/globals.css`, `CLAUDE.md`, `package.json`, `.ai/state/memory.md`  
-**Last Verified:** 2026-04-10  
+**Source:** `src/app/globals.css`, `CLAUDE.md`, `package.json`, `.ai/state/memory.md`
+**Last Verified:** 2026-04-10
 **Applies To:** All agents writing UI code
 
 ---
@@ -138,7 +138,7 @@ Loaded via `next/font/google` in `src/app/layout.tsx`. Do not import fonts direc
 | Normal | `duration-200` |
 | Slow | `duration-300` |
 
-**Easing:** `ease-out` only — never `ease-in-out`, `bounce`, or `spring`  
+**Easing:** `ease-out` only — never `ease-in-out`, `bounce`, or `spring`
 **Duration:** Max 300ms — never longer
 
 ---

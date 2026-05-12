@@ -1,0 +1,124 @@
+{
+  "artifact_type": "source_audit_evidence",
+  "batch_id": "source-audited-article-batch-058-local-first",
+  "batch_number": 58,
+  "audit_mode": "local_first_raw_pdf_primary",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T20:31:00.000+08:00",
+  "target": {
+    "article_id": "2ec5e562-50a1-4c7c-a95e-a17166d4631b",
+    "slug": "lea-theo-003-09-core-concept",
+    "title": "Spatial Legibility and Environmental Perception",
+    "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-003-09-core-concept--2ec5e562-50a1-4c7c-a95e-a17166d4631b",
+    "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-003-09-core-concept--2ec5e562-50a1-4c7c-a95e-a17166d4631b/question-edits",
+    "linked_questions": 13,
+    "question_edits": 13
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth": "vitruvius-connection/001_Raw-Source-Layer local raw PDFs",
+    "derivative_or_search_layers_used_as_primary_truth": false,
+    "refined_markdown_used_only_as_locator": true,
+    "checked_sources": [
+      {
+        "source_id": "toa3-design-perception-local-raw-pdf--b058-2ec5e562-01",
+        "label": "TOA 3 Design Perception - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 3 (Design Perception).pdf",
+        "raw_pdf_sha256": "sha256:807be9f1a301d579123d8fa3ec680011b1906d6a4edcb6dc061c9a57e5ea9534",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 3 (Design Perception).md",
+        "refined_markdown_sha256": "sha256:49309b3dc5eea661ca7cad04cceb91897ac29fee6dd8e43cf6c3f60f163d404a",
+        "locator": "TOA 3 Design Perception refined markdown lines 43-56, 152-212, and raw PDF pages 8, 22-26"
+      },
+      {
+        "source_id": "salvan-theory-local-raw-pdf--b058-2ec5e562-02",
+        "label": "George Salvan Architectural Theories of Design - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "raw_pdf_sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
+        "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
+        "locator": "George Salvan Architectural Theories of Design refined markdown lines 7861-7984, 10479-10493, 15905-15910, and raw PDF pages 320, 473-478"
+      },
+      {
+        "source_id": "theory-local-raw-pdf--b058-2ec5e562-03",
+        "label": "theory - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+        "raw_pdf_sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+        "refined_markdown_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+        "locator": "theory refined markdown lines 11-13 and 186-191 and raw PDF pages 1 and 10"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "theory-of-architecture-design-perception",
+    "contains_legal_or_code_claims": false,
+    "source_risk_tier": "medium",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 13,
+    "question_edits_created": [
+      "ccf715a9-8537-4d49-837d-bc9f1fa379e4",
+      "5228f039-c9b2-4f00-ad56-0d71da974b93",
+      "d94f11d7-e15b-4e07-b745-316c466a0a93",
+      "4bb1a6ad-74be-4b11-9520-819c7623ee2e",
+      "70da2952-4697-4bd8-9d43-9bf2e81ae3cb",
+      "d61a9c8e-36e8-4d5f-89c9-a421e4f9fb1d",
+      "8968702c-6522-4cd7-b7a4-164e2a360053",
+      "48fc4ad7-184f-4de2-8de4-6068e76bd60e",
+      "f63305b4-e50b-4623-8963-d5ddee5d1295",
+      "d3cbd5d7-ea62-4686-bcef-bc45720fda6c",
+      "2b388bf3-a459-4802-a604-1a8d2cc68d70",
+      "61fd148f-c7d2-405f-96b5-84380bb20ff2",
+      "e621fbc3-6943-40cc-aa66-de5146c8d878"
+    ],
+    "scenario_policy_status": "eligible-deferred",
+    "scenario_policy_reason": "A campus wayfinding or exit-perception scenario would be useful, but scenario enrichment is deferred to keep Batch 058 source repair bounded."
+  },
+  "claims": [
+    {
+      "claim_id": "lea-theo-003-09-core-concept-b058-claim-01",
+      "claim_text": "Spatial Legibility and Environmental Perception is limited to checked local raw PDF source families and the refined markdown locators recorded for this article.",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 3 (Design Perception).pdf",
+        "quoted_pdf_excerpt": "TOA 3 Design Perception refined markdown lines 43-56, 152-212, and raw PDF pages 8, 22-26; George Salvan Architectural Theories of Design refined markdown lines 7861-7984, 10479-10493, 15905-15910, and raw PDF pages 320, 473-478; theory refined markdown lines 11-13 and 186-191 and raw PDF pages 1 and 10",
+        "source_ids": [
+          "toa3-design-perception-local-raw-pdf--b058-2ec5e562-01",
+          "salvan-theory-local-raw-pdf--b058-2ec5e562-02",
+          "theory-local-raw-pdf--b058-2ec5e562-03"
+        ]
+      },
+      "audit_result": "PASS"
+    }
+  ],
+  "checked_markdown_lines": [
+    "TOA 3 Design Perception refined markdown lines 43-56",
+    "TOA 3 Design Perception refined markdown lines 152-212",
+    "George Salvan Architectural Theories of Design refined markdown lines 7861-7984",
+    "George Salvan Architectural Theories of Design refined markdown lines 10479-10493",
+    "George Salvan Architectural Theories of Design refined markdown lines 15905-15910",
+    "theory refined markdown lines 186-191"
+  ],
+  "unverified_or_rejected_claims": [],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "local_first_only": true,
+    "supabase_write_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json",
+    "diff_gate": "safe_true_blockers_zero",
+    "validate_gate": "valid_true_blockers_zero",
+    "ui_block_edits_gate": "valid_true_blockers_zero"
+  },
+  "sme_review": {
+    "required_before_publication": true,
+    "status": "not_started_local_first_batch",
+    "note": "Local-first source audit is ready for later human/SME review before final publishing."
+  },
+  "overall": {
+    "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+    "blockers": []
+  }
+}

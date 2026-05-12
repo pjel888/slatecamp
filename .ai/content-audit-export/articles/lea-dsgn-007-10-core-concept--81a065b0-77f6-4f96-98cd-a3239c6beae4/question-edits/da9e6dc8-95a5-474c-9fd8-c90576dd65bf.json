@@ -1,0 +1,130 @@
+{
+  "question_id": "da9e6dc8-95a5-474c-9fd8-c90576dd65bf",
+  "baseline_hash": "sha256:24d30d8d3848c84722171e99c732e9990deb27713b3591ac1c86272cae79e6a2",
+  "action": "replace",
+  "reason": "source-audited-article-batch-066-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes prior off-scope framing where present.",
+  "approved_by": "codex-local-first-batch-066",
+  "approved_at": "2026-05-11T23:46:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "81a065b0-77f6-4f96-98cd-a3239c6beae4",
+    "parent_article_slug": "lea-dsgn-007-10-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "BP 344 2024 refined markdown lines 40-70, 198-230, 230-304, 338-350, 450-465, 1349-1350, 1560-1604, 1645-1651, 1661, 1749, and 1827; raw PDF pages 2, 7, 10, 16, 56, 65-67, 70, and 74 checked by local PDF extraction; PD 1096 RIRR DPWH Official refined markdown lines 560-592, 625-631, and 3488-3567; raw PDF pages 23-28 and 193-195 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2601-2658, 4275-4321, and 4381-4394; raw PDF pages 102, 142-143, and 149 checked by local PDF extraction; PD 9514 Fire Code refined markdown lines 1599-1629 and 1655-1719; raw PDF pages 57-63 checked for matching life-safety and occupancy text",
+    "checked_markdown_lines": [
+      "BP 344 2024 refined markdown lines 40-70",
+      "BP 344 2024 refined markdown lines 198-230",
+      "BP 344 2024 refined markdown lines 230-304",
+      "BP 344 2024 refined markdown lines 338-350",
+      "BP 344 2024 refined markdown lines 450-465",
+      "BP 344 2024 refined markdown lines 1349-1350",
+      "BP 344 2024 refined markdown lines 1560-1604",
+      "BP 344 2024 refined markdown lines 1645-1651",
+      "BP 344 2024 refined markdown line 1661",
+      "BP 344 2024 refined markdown line 1749",
+      "BP 344 2024 refined markdown line 1827",
+      "PD 1096 RIRR DPWH Official refined markdown lines 560-592",
+      "PD 1096 RIRR DPWH Official refined markdown lines 625-631",
+      "PD 1096 RIRR DPWH Official refined markdown lines 3488-3567",
+      "RA 9514 RIRR refined markdown lines 2601-2658",
+      "RA 9514 RIRR refined markdown lines 4275-4321",
+      "RA 9514 RIRR refined markdown lines 4381-4394",
+      "PD 9514 Fire Code refined markdown lines 1599-1629",
+      "PD 9514 Fire Code refined markdown lines 1655-1719"
+    ],
+    "checked_raw_pdf_pages": [
+      "BP 344 2024 raw PDF page 2",
+      "BP 344 2024 raw PDF page 7",
+      "BP 344 2024 raw PDF page 10",
+      "BP 344 2024 raw PDF page 16",
+      "BP 344 2024 raw PDF page 56",
+      "BP 344 2024 raw PDF pages 65-67",
+      "BP 344 2024 raw PDF page 70",
+      "BP 344 2024 raw PDF page 74",
+      "PD 1096 RIRR DPWH Official raw PDF pages 23-28",
+      "PD 1096 RIRR DPWH Official raw PDF pages 193-195",
+      "RA 9514 RIRR raw PDF page 102",
+      "RA 9514 RIRR raw PDF pages 142-143",
+      "RA 9514 RIRR raw PDF page 149",
+      "PD 9514 Fire Code raw PDF pages 57-63"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "bp344-2024-accessibility-routes-ramps-parking-local-b066",
+        "label": "BP 344 2024 Revised IRR - accessible routes, ramps, parking, signs, stairs, elevators, and public-use building definitions",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+        "locator": "BP 344 2024 refined markdown lines 40-70, 198-230, 230-304, 338-350, 450-465, 1349-1350, 1560-1604, 1645-1651, 1661, 1749, and 1827; raw PDF pages 2, 7, 10, 16, 56, 65-67, 70, and 74 checked by local PDF extraction"
+      },
+      {
+        "source_id": "pd1096-rirr-plan-egress-stair-local-b066",
+        "label": "PD 1096 RIRR 2004 - architectural documents, accessibility facility details, exits, corridors, doors, and stairways",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "locator": "PD 1096 RIRR DPWH Official refined markdown lines 560-592, 625-631, and 3488-3567; raw PDF pages 23-28 and 193-195 checked by local PDF extraction"
+      },
+      {
+        "source_id": "ra9514-rirr-egress-separation-education-local-b066",
+        "label": "RA 9514 Revised IRR 2019 - means of egress, exit enclosure, educational exits, corridors, dead ends, and hazardous-area separation",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "locator": "RA 9514 RIRR refined markdown lines 2601-2658, 4275-4321, and 4381-4394; raw PDF pages 102, 142-143, and 149 checked by local PDF extraction"
+      },
+      {
+        "source_id": "pd9514-fire-code-life-safety-local-b066",
+        "label": "PD 9514 Fire Code source family - general life-safety and egress requirements",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf",
+        "sha256": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-9514/PD 9514 - Fire Code of the Philippines.md",
+        "refined_markdown_sha256": "sha256:5eb0584f1bcbfa87044e28f2e59a75c6364c7160a98edfdd888c6aef849b01b2",
+        "locator": "PD 9514 Fire Code refined markdown lines 1599-1629 and 1655-1719; raw PDF pages 57-63 checked for matching life-safety and occupancy text"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, and citation rewritten to the Batch 066 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "Under checked PD 1096, where must stair handrails generally be placed?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Not less than 800 mm nor more than 900 mm above stair tread nosing."
+      },
+      {
+        "id": "b",
+        "text": "At exactly 1200 mm only."
+      },
+      {
+        "id": "c",
+        "text": "At the landing only."
+      },
+      {
+        "id": "d",
+        "text": "Only on exterior stairs."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "PD 1096 states stair handrails are placed not less than 800 mm nor more than 900 mm above nosing, with stated exceptions.",
+    "explanation": "PD 1096 states stair handrails are placed not less than 800 mm nor more than 900 mm above nosing, with stated exceptions.",
+    "code_citation": "PD 1096 refined markdown line 3554",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "bloom_level": "understand",
+    "application_context": "code_interpretation",
+    "practice_context": [
+      "accessibility compliance",
+      "egress review"
+    ],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false
+  }
+}

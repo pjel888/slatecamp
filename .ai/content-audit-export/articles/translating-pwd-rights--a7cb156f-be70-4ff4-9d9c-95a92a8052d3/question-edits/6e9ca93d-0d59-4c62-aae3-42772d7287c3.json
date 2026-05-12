@@ -1,0 +1,51 @@
+{
+  "question_id": "6e9ca93d-0d59-4c62-aae3-42772d7287c3",
+  "baseline_hash": "sha256:5612c17a961ed8a3aaecc792c4418188a6d11093fd38a21ff5ea831139db0313",
+  "action": "replace",
+  "reason": "source-audited-article-batch-040-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-040",
+  "approved_at": "2026-05-11T14:04:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-040-local-first",
+    "checked_sources": [
+      {
+        "source_id": "bp-344-2024-rirr-ncda-local",
+        "label": "BP 344 2024 Revised IRR - NCDA",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "checked_markdown_lines": [
+          "BP 344 2024 IRR refined markdown lines 36-70",
+          "BP 344 2024 IRR refined markdown lines 198-224",
+          "BP 344 2024 IRR refined markdown lines 228-305",
+          "BP 344 2024 IRR refined markdown lines 770-850"
+        ]
+      }
+    ],
+    "citation": "BP 344 2024 Revised IRR, Doors"
+  },
+  "proposed": {
+    "text": "Where should door handles, pulls, latches, and lever-type locksets be centered?",
+    "options": [
+      {
+        "id": "b040-a7cb-10-a",
+        "text": "900 mm above floor finish level"
+      },
+      {
+        "id": "b040-a7cb-10-b",
+        "text": "700 mm above floor finish level"
+      },
+      {
+        "id": "b040-a7cb-10-c",
+        "text": "1200 mm above floor finish level"
+      },
+      {
+        "id": "b040-a7cb-10-d",
+        "text": "1500 mm above floor finish level"
+      }
+    ],
+    "correct_option_id": "b040-a7cb-10-a",
+    "rationale": "Correct answer: 900 mm above floor finish level. This is directly supported by BP 344 2024 Revised IRR, Doors.",
+    "explanation": "The Batch 040 source-audited correction uses only local raw PDF families and locator-checked refined markdown for BP 344 2024 Revised IRR, Doors.",
+    "code_citation": "BP 344 2024 Revised IRR, Doors"
+  }
+}

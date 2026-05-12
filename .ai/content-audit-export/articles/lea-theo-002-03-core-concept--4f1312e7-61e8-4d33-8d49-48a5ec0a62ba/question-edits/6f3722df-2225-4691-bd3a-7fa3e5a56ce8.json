@@ -1,0 +1,68 @@
+{
+  "question_id": "6f3722df-2225-4691-bd3a-7fa3e5a56ce8",
+  "baseline_hash": "sha256:b4f1992bd54bcd6fdca8cb879e813aa20ecb5a663caef4e56ebb23529c6f7026",
+  "action": "replace",
+  "reason": "source-audited-article-batch-055-local-first: local raw PDF backed replacement constrained to checked Batch 055 source families.",
+  "approved_by": "codex-local-first-batch-055",
+  "approved_at": "2026-05-11T19:38:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "4f1312e7-61e8-4d33-8d49-48a5ec0a62ba",
+    "parent_article_slug": "lea-theo-002-03-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Theory of Architecture Reviewer refined markdown line 8; George Salvan Architectural Theories of Design refined markdown lines 675-685, 1176-1186, and 1298-1300",
+    "checked_markdown_lines": [
+      "Theory of Architecture Reviewer refined markdown line 8",
+      "George Salvan Architectural Theories of Design refined markdown lines 675-685",
+      "George Salvan Architectural Theories of Design refined markdown lines 1176-1186",
+      "George Salvan Architectural Theories of Design refined markdown lines 1298-1300"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "theory-reviewer-local-raw-pdf--b055-4f1312e7-01",
+        "label": "Theory of Architecture Reviewer - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Theory of Architecture Reviewer.pdf",
+        "sha256": "sha256:19bdef33f5fd4c0d1e95c735fa3b1f64c61d366eb8fe4d7e7b565a33e7cd17e5",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Theory of Architecture Reviewer.md",
+        "refined_markdown_sha256": "sha256:d02f9477115e6aa0329a3edcc5da5b6400c7bd07c67f8eff1fd6fda7756d42d7",
+        "locator": "Theory of Architecture Reviewer refined markdown line 8"
+      },
+      {
+        "source_id": "salvan-theory-local-raw-pdf--b055-4f1312e7-02",
+        "label": "George Salvan Architectural Theories of Design - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
+        "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
+        "locator": "George Salvan Architectural Theories of Design refined markdown lines 675-685, 1176-1186, and 1298-1300"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 055 checked local raw PDF source scope."
+  },
+  "proposed": {
+    "text": "Which concept best fits a vertical or horizontal direction of mass?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Axis."
+      },
+      {
+        "id": "b",
+        "text": "Color harmony."
+      },
+      {
+        "id": "c",
+        "text": "Acoustic absorption."
+      },
+      {
+        "id": "d",
+        "text": "Drainage slope."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Axis. This answer is supported by the checked Batch 055 local raw PDF source families for Axis is the most elementary means of organizing.",
+    "explanation": "Axis. The Batch 055 source audit used local raw PDFs first and refined markdown only as locator evidence for Axis is the most elementary means of organizing.",
+    "code_citation": "George Salvan Architectural Theories of Design refined markdown lines 675-685"
+  },
+  "batch_question_template_index": 2
+}

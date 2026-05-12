@@ -1,0 +1,33 @@
+# Content Diff Report: lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration
+
+Generated: 2026-05-10T17:58:08.193Z
+Article ID: 1277bf71-f3cc-4d29-86a8-8cadca0133f9
+Changed: true
+Safe to push locally: true
+
+## Hashes
+
+- Original: `sha256:f91f13926131b7c282982ae8dd44881d893f78fe3ad199b667e4d420bbe5ce9c`
+- Normalized: `sha256:39034b54cdb869ddbbe87b784a47110f78383dde05b6952783f2473918772d02`
+- Candidate: `sha256:39034b54cdb869ddbbe87b784a47110f78383dde05b6952783f2473918772d02`
+
+## Line summary
+
+- Changed lines: 66
+- Inserted lines: 0
+- Deleted lines: 34
+
+## UI block preservation
+
+- UI blocks expected: 0
+- UI blocks preserved: 0
+- UI blocks changed/missing: 0
+- Unresolved placeholders: 0
+
+## Blockers
+
+- None
+
+## Warnings
+
+- Remote stale check has not been run by diff; push command must verify Supabase before mutation.

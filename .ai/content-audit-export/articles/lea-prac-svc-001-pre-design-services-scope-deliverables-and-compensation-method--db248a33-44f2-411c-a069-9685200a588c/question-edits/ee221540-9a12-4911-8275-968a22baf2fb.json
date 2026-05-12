@@ -1,0 +1,73 @@
+{
+  "question_id": "ee221540-9a12-4911-8275-968a22baf2fb",
+  "baseline_hash": "sha256:f62e2ff1740d71d6eee3b61f93d66c65887ed7001ae48bc01f72904bf2594a7b",
+  "action": "replace",
+  "reason": "source-audited-article-batch-021-local-first rewrote this linked question to align with the local source audit for lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method.",
+  "approved_by": "codex-local-source-audit-batch-021",
+  "approved_at": "2026-05-11T10:30:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "db248a33-44f2-411c-a069-9685200a588c",
+    "parent_article_slug": "lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UAP SPP Document 201 local raw PDF and refined markdown, pre-design scope and compensation provisions",
+    "checked_markdown_lines": [
+      "SPP 201 refined markdown lines 245-255",
+      "SPP 201 refined markdown lines 268-415",
+      "SPP 201 refined markdown lines 425-447"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+        "sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+        "source_id": "spp-201-predesign-services-local-raw-pdf",
+        "locator": "SPP 201 refined markdown lines 245-255, 268-415, and 425-447"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+        "sha256": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
+        "source_id": "spp-201-predesign-services-local-raw-pdf",
+        "locator": "SPP 201 refined markdown lines 245-255, 268-415, and 425-447"
+      }
+    ],
+    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+  },
+  "proposed": {
+    "text": "Which set of outputs best matches the checked SPP 201 pre-design scope?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Space programs, site studies, feasibility analysis, and design brief preparation"
+      },
+      {
+        "id": "b",
+        "text": "As-built drawings, warranty certificates, and punch lists only"
+      },
+      {
+        "id": "c",
+        "text": "Final shop drawings and contractor submittals"
+      },
+      {
+        "id": "d",
+        "text": "Occupancy permits and tax declarations only"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "The checked service list includes feasibility studies, site selection and analysis, programming, space planning, and design brief preparation.",
+    "explanation": "Those outputs belong to pre-design reasoning, while the other choices belong to later stages.",
+    "code_citation": "SPP 201 refined markdown lines 278-395",
+    "bloom_level": "apply",
+    "application_context": "code_interpretation",
+    "practice_context": [
+      "professional practice",
+      "pre-design services"
+    ],
+    "difficulty": 0.66,
+    "is_assessment": false,
+    "model_id": "BATCH-021-spp201-006"
+  }
+}

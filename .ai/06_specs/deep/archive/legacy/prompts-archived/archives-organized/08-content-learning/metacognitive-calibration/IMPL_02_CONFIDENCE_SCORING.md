@@ -1,7 +1,7 @@
 # IMPL_02: Confidence-Weighted Scoring & 2×2 Diagnostic Matrix
 
-**Priority:** P0  
-**Effort:** ~1 day  
+**Priority:** P0
+**Effort:** ~1 day
 **Research basis:** Confidence judgments improve metacognitive monitoring accuracy (Barenberg & Dutke, 2019). The "confident but wrong" quadrant is the highest-risk zone for exam failure.
 
 ---

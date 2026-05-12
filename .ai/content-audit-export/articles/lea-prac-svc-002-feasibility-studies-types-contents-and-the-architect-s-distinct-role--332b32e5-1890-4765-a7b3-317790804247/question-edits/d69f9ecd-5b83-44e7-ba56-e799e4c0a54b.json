@@ -1,0 +1,57 @@
+{
+  "question_id": "d69f9ecd-5b83-44e7-ba56-e799e4c0a54b",
+  "baseline_hash": "sha256:eb4a61577220ea22a5df719e4ca47113114bede0475b01da165b9d19b652626b",
+  "action": "replace",
+  "reason": "source-audited-article-batch-031-local-first aligned linked question with audited local source language for lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role.",
+  "approved_by": "codex-local-source-audit-batch-031",
+  "approved_at": "2026-05-11T08:56:01+08:00",
+  "source_audit_support": {
+    "parent_article_id": "332b32e5-1890-4765-a7b3-317790804247",
+    "parent_article_slug": "lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "SPP 201 lines 254, 268-324, 328-330, 437-447",
+    "checked_sources": [
+      {
+        "source_id": "uap-spp-201-predesign-services-local",
+        "label": "UAP SPP 201 - Pre-design Services",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+        "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+        "refined_markdown_sha256": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
+        "source_locator": "SPP 201 refined markdown lines 254, 268-324, 328-330, 437-447",
+        "checked_markdown_lines": [
+          "SPP 201 refined markdown lines 254, 268-324, 328-330, 437-447"
+        ]
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer key, rationale, explanation, and code citation rewritten to the audited local article scope."
+  },
+  "proposed": {
+    "text": "What does SPP 201 say feasibility studies require?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Primary data gathering and analysis"
+      },
+      {
+        "id": "b",
+        "text": "Only oral guesses"
+      },
+      {
+        "id": "c",
+        "text": "Only a completed building"
+      },
+      {
+        "id": "d",
+        "text": "Only contractor invoices"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "SPP 201 states that feasibility studies require primary data gathering and analysis.",
+    "explanation": "SPP 201 states that feasibility studies require primary data gathering and analysis.",
+    "code_citation": "SPP 201 lines 254, 268-324, 328-330, 437-447"
+  }
+}

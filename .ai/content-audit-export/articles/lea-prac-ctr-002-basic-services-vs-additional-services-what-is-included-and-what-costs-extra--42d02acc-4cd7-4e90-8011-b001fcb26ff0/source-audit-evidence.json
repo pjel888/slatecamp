@@ -1,0 +1,336 @@
+{
+  "batch_id": "source-audited-article-batch-027-local-first",
+  "article_id": "42d02acc-4cd7-4e90-8011-b001fcb26ff0",
+  "slug": "lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra",
+  "title": "Basic Services, Additional Services, and Separate Compensation",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T00:00:00.000+08:00",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "classification": "legal_code_professional_practice_compensation_contracts",
+  "target": "local_first_source_audit_article_and_linked_questions",
+  "article_folder": ".ai/content-audit-export/articles/lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra--42d02acc-4cd7-4e90-8011-b001fcb26ff0",
+  "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra--42d02acc-4cd7-4e90-8011-b001fcb26ff0",
+  "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra--42d02acc-4cd7-4e90-8011-b001fcb26ff0/question-edits",
+  "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra--42d02acc-4cd7-4e90-8011-b001fcb26ff0/question-edits",
+  "question_edits_created": 10,
+  "linked_questions": [
+    {
+      "question_id": "c064ad24-3fcd-4f16-8ce5-9e9a19b48169",
+      "baseline_hash": "sha256:bfb6f111529303ef66a858a2966125dd1379c2ab28d6b8e774414c8763e7d897"
+    },
+    {
+      "question_id": "28811d5b-307d-4299-9c9c-68e9c18c513a",
+      "baseline_hash": "sha256:71e1c3f44541803416bf3cd29d7c4deeb4998a46f9a0552fb86b8eb9620efa47"
+    },
+    {
+      "question_id": "1aa2e99f-b3fa-4ba3-8373-2c7d7d185291",
+      "baseline_hash": "sha256:e4cc9a7eb90b5ec13f40430d5a4f6a5b893e4c47e1c24d1b7f4ac34760c413d7"
+    },
+    {
+      "question_id": "8228ce1d-a60e-47bc-9038-9e2a4a7ffdf3",
+      "baseline_hash": "sha256:2a611638b6597b6faed4d6376b096846fea733f496ecefcdb7fa10f5705c3170"
+    },
+    {
+      "question_id": "4a10ba09-3f01-447e-9bf6-0d5069470067",
+      "baseline_hash": "sha256:6796c50cee718df6df196cd07eaa6c0ccacabdf613e5c7556211a8e5faa42e4a"
+    },
+    {
+      "question_id": "4e9bc666-2915-4637-9645-3f6ad3bb6308",
+      "baseline_hash": "sha256:0b4d4542a5e8d18c18c88fef8941fa633ce26538648e995329ac184ac9eef2a5"
+    },
+    {
+      "question_id": "444c77cd-9fb9-4b00-90f3-9fdd35bffa98",
+      "baseline_hash": "sha256:2d457016048db37a1713195f1909e425032b98d0e0262fbd244d0e2d6f3c8085"
+    },
+    {
+      "question_id": "78b7b1dc-6ccd-480d-9601-e0118b0f18b3",
+      "baseline_hash": "sha256:234b7717610bbeea1fd9ce00c0d4902b873ba2768bf6ae1c794f4870c7b1299a"
+    },
+    {
+      "question_id": "7e642bcb-a967-49cc-9f62-de7e052edd84",
+      "baseline_hash": "sha256:f98d0321098c2e8af7cac15f0f8bc4798249861bf259be5595dd19e348dfa3d3"
+    },
+    {
+      "question_id": "ab08f9ca-2834-4afd-89e7-c8875c520df4",
+      "baseline_hash": "sha256:006db3dd21fbe891b78d5c4a788c9072e33d6fe3f2b280ac15ed4b9cc5450f70"
+    }
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "source_audit": {
+    "checked_sources": [
+      {
+        "source_id": "uap-standards-spp202-compensation-local",
+        "label": "UAP Document Standards of Professional Practice - SPP 202 compensation and service conditions",
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "source_type": "professional_practice_pdf",
+        "source_locator": "UAP Standards refined markdown lines 414-501 and 1608-1642",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "checked_markdown_lines": [
+          "UAP Standards lines 414-457",
+          "UAP Standards lines 459-501",
+          "UAP Standards lines 1608-1642"
+        ],
+        "use": "Local UAP Standards raw PDF and refined markdown checked for SPP 202 compensation methods, reimbursables, owner responsibilities, additional services, abandoned projects, and PCA compensation terms.",
+        "local_source_checked": true
+      },
+      {
+        "source_id": "spp202-regular-design-services-local",
+        "label": "SPP 202 - Regular Design Services",
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "source_type": "professional_practice_pdf",
+        "source_locator": "SPP 202 local raw PDF; UAP Standards refined markdown lines 414-501 used as readable local locator",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+        "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+        "refined_markdown_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+        "checked_markdown_lines": [
+          "SPP 202 local raw PDF checked",
+          "UAP Standards lines 414-501 used for readable source locators"
+        ],
+        "use": "Local SPP 202 raw PDF checked as the regular-design-services source counterpart; UAP Standards refined markdown provides readable local line locators for the same professional-practice provisions.",
+        "local_source_checked": true
+      }
+    ],
+    "source_locator": "UAP Standards refined markdown lines 414-501; SPP 202 local raw PDF checked",
+    "checked_markdown_lines": [
+      "UAP Standards lines 414-457",
+      "UAP Standards lines 459-501",
+      "UAP Standards lines 1608-1642",
+      "SPP 202 local raw PDF checked",
+      "UAP Standards lines 414-501 used for readable source locators"
+    ]
+  },
+  "article_repair": {
+    "normalized_md_rewritten": true,
+    "candidate_md_pending_compose": false,
+    "placeholders_removed": true,
+    "internal_notes_removed": true,
+    "source_safe_scope": true,
+    "normalized_hash": "sha256:44462f1510aad4e759ded43e9d3049b1c831ea1029f6cda9fc731dbaa84a457b",
+    "sources_hash": "sha256:25e8d32f65ace7ec56bc12f22fe4a1c971967c63919062243e96a6b81505d3fc",
+    "candidate_hash": "sha256:44462f1510aad4e759ded43e9d3049b1c831ea1029f6cda9fc731dbaa84a457b"
+  },
+  "claims": [
+    {
+      "claim_id": "batch-027-lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra-question-001",
+      "claim_text": "Question c064ad24-3fcd-4f16-8ce5-9e9a19b48169 / model BATCH-027-lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra-001 rewritten to local source-safe form.",
+      "question_id": "c064ad24-3fcd-4f16-8ce5-9e9a19b48169",
+      "model_id": "BATCH-027-lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra-001",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp202-compensation-local",
+        "spp202-regular-design-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 414-501; SPP 202 local raw PDF checked",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-027-lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra-question-002",
+      "claim_text": "Question 28811d5b-307d-4299-9c9c-68e9c18c513a / model BATCH-027-lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra-002 rewritten to local source-safe form.",
+      "question_id": "28811d5b-307d-4299-9c9c-68e9c18c513a",
+      "model_id": "BATCH-027-lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra-002",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp202-compensation-local",
+        "spp202-regular-design-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 414-501; SPP 202 local raw PDF checked",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-027-lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra-question-003",
+      "claim_text": "Question 1aa2e99f-b3fa-4ba3-8373-2c7d7d185291 / model BATCH-027-lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra-003 rewritten to local source-safe form.",
+      "question_id": "1aa2e99f-b3fa-4ba3-8373-2c7d7d185291",
+      "model_id": "BATCH-027-lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra-003",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp202-compensation-local",
+        "spp202-regular-design-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 414-501; SPP 202 local raw PDF checked",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-027-lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra-question-004",
+      "claim_text": "Question 8228ce1d-a60e-47bc-9038-9e2a4a7ffdf3 / model BATCH-027-lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra-004 rewritten to local source-safe form.",
+      "question_id": "8228ce1d-a60e-47bc-9038-9e2a4a7ffdf3",
+      "model_id": "BATCH-027-lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra-004",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp202-compensation-local",
+        "spp202-regular-design-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 414-501; SPP 202 local raw PDF checked",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-027-lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra-question-005",
+      "claim_text": "Question 4a10ba09-3f01-447e-9bf6-0d5069470067 / model BATCH-027-lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra-005 rewritten to local source-safe form.",
+      "question_id": "4a10ba09-3f01-447e-9bf6-0d5069470067",
+      "model_id": "BATCH-027-lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra-005",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp202-compensation-local",
+        "spp202-regular-design-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 414-501; SPP 202 local raw PDF checked",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-027-lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra-question-006",
+      "claim_text": "Question 4e9bc666-2915-4637-9645-3f6ad3bb6308 / model BATCH-027-lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra-006 rewritten to local source-safe form.",
+      "question_id": "4e9bc666-2915-4637-9645-3f6ad3bb6308",
+      "model_id": "BATCH-027-lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra-006",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp202-compensation-local",
+        "spp202-regular-design-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 414-501; SPP 202 local raw PDF checked",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-027-lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra-question-007",
+      "claim_text": "Question 444c77cd-9fb9-4b00-90f3-9fdd35bffa98 / model BATCH-027-lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra-007 rewritten to local source-safe form.",
+      "question_id": "444c77cd-9fb9-4b00-90f3-9fdd35bffa98",
+      "model_id": "BATCH-027-lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra-007",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp202-compensation-local",
+        "spp202-regular-design-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 414-501; SPP 202 local raw PDF checked",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-027-lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra-question-008",
+      "claim_text": "Question 78b7b1dc-6ccd-480d-9601-e0118b0f18b3 / model BATCH-027-lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra-008 rewritten to local source-safe form.",
+      "question_id": "78b7b1dc-6ccd-480d-9601-e0118b0f18b3",
+      "model_id": "BATCH-027-lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra-008",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp202-compensation-local",
+        "spp202-regular-design-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 414-501; SPP 202 local raw PDF checked",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-027-lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra-question-009",
+      "claim_text": "Question 7e642bcb-a967-49cc-9f62-de7e052edd84 / model BATCH-027-lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra-009 rewritten to local source-safe form.",
+      "question_id": "7e642bcb-a967-49cc-9f62-de7e052edd84",
+      "model_id": "BATCH-027-lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra-009",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp202-compensation-local",
+        "spp202-regular-design-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 414-501; SPP 202 local raw PDF checked",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-027-lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra-question-010",
+      "claim_text": "Question ab08f9ca-2834-4afd-89e7-c8875c520df4 / model BATCH-027-lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra-010 rewritten to local source-safe form.",
+      "question_id": "ab08f9ca-2834-4afd-89e7-c8875c520df4",
+      "model_id": "BATCH-027-lea-prac-ctr-002-basic-services-vs-additional-services-what-is-included-and-what-costs-extra-010",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp202-compensation-local",
+        "spp202-regular-design-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 414-501; SPP 202 local raw PDF checked",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    }
+  ],
+  "unsupported_or_removed_claims": [
+    "Removed unsupported universal inclusions in the basic fee.",
+    "Replaced vague extra-service rules with SPP 202 additional-compensation, owner-approval, and reimbursable-expense boundaries.",
+    "Removed invented notice formats and rates not present in the checked local sources."
+  ],
+  "source_safe_rewrite_question_edits": true,
+  "local_validation": {
+    "compose": "PASS: blockers=0",
+    "diff": "PASS: changed=true safe_to_push=true blockers=0",
+    "validate": "PASS: scoped content-audit:validate valid=true blockers=0",
+    "scoped_checks": "PASS: scoped JSON/source/placeholder/diff checks passed",
+    "tests": "PASS: bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts - 34 pass, 0 fail"
+  },
+  "remaining_local_blockers": [],
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_only": true,
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false
+  }
+}

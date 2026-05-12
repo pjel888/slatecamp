@@ -1,0 +1,176 @@
+{
+  "batch": "074",
+  "generated_at": "2026-05-12T02:19:20.708+08:00",
+  "mode": "local-first-source-audited-continuation",
+  "article_count": 5,
+  "question_edit_count": 50,
+  "selected_article_ids": [
+    "7c0e2fa5-7f3d-419a-b592-50346ac7ab2f",
+    "c684727d-d3e3-4303-b213-590c4b8ab766",
+    "ac9af0bb-dcf3-4a02-b409-d19bca68e514",
+    "6a351c32-f48d-45fb-93f5-e60e6cd271c5",
+    "f5374d6a-fc70-475e-83ce-7feb64056655"
+  ],
+  "checks": {
+    "compose": {
+      "status": "PASS",
+      "command": "bun run content-audit:compose -- --article-id <id> --overwrite --strict",
+      "article_count": 5,
+      "blockers": 0
+    },
+    "diff": {
+      "status": "PASS",
+      "command": "bun run content-audit:diff -- --article-id <id> --summary --strict",
+      "article_count": 5,
+      "safe_to_push": true,
+      "blockers": 0
+    },
+    "validate": {
+      "status": "PASS",
+      "command": "bun run content-audit:validate -- --article-id <id> --summary",
+      "article_count": 5,
+      "valid": true,
+      "blockers": 0,
+      "warnings": 5,
+      "warning_note": "component-usage.json warning only; unchanged expected local export warning."
+    },
+    "ui_block_edits": {
+      "status": "PASS",
+      "command": "bun run content-audit:ui-block-edits -- --article-id <id>",
+      "article_count": 5,
+      "valid": true,
+      "blockers": 0,
+      "warnings": 0
+    },
+    "source_audit_apply_gate": {
+      "status": "PASS",
+      "command": "bun -e import evaluateSourceAuditGate from scripts/content-audit/lib.ts over selected folders",
+      "article_count": 5,
+      "blockers": 0,
+      "warnings": 0
+    },
+    "scoped_json_parse": {
+      "status": "PASS",
+      "parsed_files": 105,
+      "failures": 0,
+      "blockers": 0,
+      "failure_details": []
+    },
+    "marker_internal_source_gap_scan": {
+      "status": "PASS",
+      "scanned_files": 85,
+      "hits": 0,
+      "hit_details": [],
+      "scan_scope_note": "Publication and proposal surfaces only; generated compose/diff report schema fields are excluded.",
+      "excluded_immutable_baselines": [
+        "original.md",
+        "linked-questions.json"
+      ],
+      "excluded_generated_reports": [
+        "compose-report.json",
+        "diff-report.json",
+        "diff-report.md",
+        "ui-block-edit-validation.json"
+      ]
+    },
+    "source_hash_check": {
+      "status": "PASS",
+      "checked_source_instances": 21,
+      "blockers": 0,
+      "failure_details": []
+    },
+    "question_edit_count_check": {
+      "status": "PASS",
+      "expected": 50,
+      "actual": 50,
+      "blockers": 0
+    },
+    "stale_compose_error_check": {
+      "status": "PASS",
+      "stale_compose_error_files": 0,
+      "blockers": 0,
+      "files": []
+    },
+    "targeted_tests": {
+      "status": "PASS",
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "tests": 34,
+      "failures": 0,
+      "expectations": 328
+    },
+    "scoped_git_diff_check": {
+      "status": "PASS",
+      "command": "git diff --check -- <batch-074 scoped paths>",
+      "checked_at": "2026-05-12T02:19:20.708+08:00",
+      "blockers": 0
+    }
+  },
+  "articles": [
+    {
+      "article_id": "7c0e2fa5-7f3d-419a-b592-50346ac7ab2f",
+      "slug": "lea-plan-003-02-what-you-need-to-know-for-the-lea",
+      "article_folder": ".ai/content-audit-export/articles/lea-plan-003-02-what-you-need-to-know-for-the-lea--7c0e2fa5-7f3d-419a-b592-50346ac7ab2f",
+      "question_edits_count": 10,
+      "source_count": 4,
+      "compose_blockers": 0,
+      "diff_safe_to_push": true,
+      "validation_valid": true,
+      "source_audit_status": "PASS",
+      "raw_pdf_gate": "PASS",
+      "scenario_enrichment_status": "eligible-deferred"
+    },
+    {
+      "article_id": "c684727d-d3e3-4303-b213-590c4b8ab766",
+      "slug": "lea-plan-003-04-core-concept",
+      "article_folder": ".ai/content-audit-export/articles/lea-plan-003-04-core-concept--c684727d-d3e3-4303-b213-590c4b8ab766",
+      "question_edits_count": 10,
+      "source_count": 3,
+      "compose_blockers": 0,
+      "diff_safe_to_push": true,
+      "validation_valid": true,
+      "source_audit_status": "PASS",
+      "raw_pdf_gate": "PASS",
+      "scenario_enrichment_status": "eligible-deferred"
+    },
+    {
+      "article_id": "ac9af0bb-dcf3-4a02-b409-d19bca68e514",
+      "slug": "lea-plan-003-05-core-concept",
+      "article_folder": ".ai/content-audit-export/articles/lea-plan-003-05-core-concept--ac9af0bb-dcf3-4a02-b409-d19bca68e514",
+      "question_edits_count": 10,
+      "source_count": 3,
+      "compose_blockers": 0,
+      "diff_safe_to_push": true,
+      "validation_valid": true,
+      "source_audit_status": "PASS",
+      "raw_pdf_gate": "PASS",
+      "scenario_enrichment_status": "eligible-deferred"
+    },
+    {
+      "article_id": "6a351c32-f48d-45fb-93f5-e60e6cd271c5",
+      "slug": "lea-plan-004-01-what-you-need-to-know-for-the-lea",
+      "article_folder": ".ai/content-audit-export/articles/lea-plan-004-01-what-you-need-to-know-for-the-lea--6a351c32-f48d-45fb-93f5-e60e6cd271c5",
+      "question_edits_count": 10,
+      "source_count": 5,
+      "compose_blockers": 0,
+      "diff_safe_to_push": true,
+      "validation_valid": true,
+      "source_audit_status": "PASS",
+      "raw_pdf_gate": "PASS",
+      "scenario_enrichment_status": "eligible-deferred"
+    },
+    {
+      "article_id": "f5374d6a-fc70-475e-83ce-7feb64056655",
+      "slug": "lea-plan-005-01-what-you-need-to-know-for-the-lea",
+      "article_folder": ".ai/content-audit-export/articles/lea-plan-005-01-what-you-need-to-know-for-the-lea--f5374d6a-fc70-475e-83ce-7feb64056655",
+      "question_edits_count": 10,
+      "source_count": 6,
+      "compose_blockers": 0,
+      "diff_safe_to_push": true,
+      "validation_valid": true,
+      "source_audit_status": "PASS",
+      "raw_pdf_gate": "PASS",
+      "scenario_enrichment_status": "eligible-deferred"
+    }
+  ],
+  "unresolved_blockers": []
+}

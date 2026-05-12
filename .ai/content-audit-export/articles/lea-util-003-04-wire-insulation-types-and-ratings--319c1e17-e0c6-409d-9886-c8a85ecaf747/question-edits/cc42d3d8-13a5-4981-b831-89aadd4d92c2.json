@@ -1,0 +1,70 @@
+{
+  "question_id": "cc42d3d8-13a5-4981-b831-89aadd4d92c2",
+  "baseline_hash": "sha256:9ea2815e7e4466453a60c166deda118c84372a945984c820a349392b28a45ed5",
+  "action": "replace",
+  "reason": "source-audited-article-batch-041-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes stale or non-local framing where present.",
+  "approved_by": "codex-local-first-batch-041",
+  "approved_at": "2026-05-11T14:32:26.271+08:00",
+  "source_audit_support": {
+    "parent_article_id": "319c1e17-e0c6-409d-9886-c8a85ecaf747",
+    "parent_article_slug": "lea-util-003-04-wire-insulation-types-and-ratings",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Phil Electrical Code refined markdown lines 120-188; Phil Electrical Code refined markdown lines 840-882; Phil Electrical Code refined markdown lines 6930-7092; Phil Electrical Code refined markdown lines 7178-7222 | Electrical Layout and Estimate refined markdown lines 1418-1450; Electrical Layout and Estimate refined markdown lines 1690-1744; Electrical Layout and Estimate refined markdown lines 2153-2190",
+    "checked_markdown_lines": [
+      "Phil Electrical Code refined markdown lines 120-188",
+      "Phil Electrical Code refined markdown lines 840-882",
+      "Phil Electrical Code refined markdown lines 6930-7092",
+      "Phil Electrical Code refined markdown lines 7178-7222",
+      "Electrical Layout and Estimate refined markdown lines 1418-1450",
+      "Electrical Layout and Estimate refined markdown lines 1690-1744",
+      "Electrical Layout and Estimate refined markdown lines 2153-2190"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "pec-2017-local-phil-electrical-code",
+        "label": "Philippine Electrical Code local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+        "sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+        "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3",
+        "locator": "Phil Electrical Code refined markdown lines 120-188; Phil Electrical Code refined markdown lines 840-882; Phil Electrical Code refined markdown lines 6930-7092; Phil Electrical Code refined markdown lines 7178-7222"
+      },
+      {
+        "source_id": "fajardo-electrical-layout-estimate-2nd-ed-local",
+        "label": "Electrical Layout and Estimate, 2nd Edition, Max B. Fajardo Jr. and Leo R. Fajardo local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.pdf",
+        "sha256": "sha256:3cc20c7a3681cd41b427df17784582d578f8d772f1f50808a9c66d9390cbf244",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.md",
+        "refined_markdown_sha256": "sha256:e68e20c6b6a0dbb331c151d0814e182037564f63cf17a07284a6e126de62fc45",
+        "locator": "Electrical Layout and Estimate refined markdown lines 1418-1450; Electrical Layout and Estimate refined markdown lines 1690-1744; Electrical Layout and Estimate refined markdown lines 2153-2190"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 041 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "Why is insulation rating not enough by itself to size a conductor?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ampacity also depends on conductor size, material, installation conditions, and temperature rating."
+      },
+      {
+        "id": "b",
+        "text": "Conductor size is never considered."
+      },
+      {
+        "id": "c",
+        "text": "Overcurrent protection is unrelated to conductors."
+      },
+      {
+        "id": "d",
+        "text": "Wet or dry location has no effect."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The checked sources connect insulation type to ampacity, location condition, and conductor sizing.",
+    "explanation": "The checked sources connect insulation type to ampacity, location condition, and conductor sizing.",
+    "code_citation": "PEC conductor provisions; Electrical Layout and Estimate conductor sizing"
+  }
+}

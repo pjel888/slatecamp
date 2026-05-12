@@ -1,0 +1,50 @@
+{
+  "question_id": "e038c620-e24a-469b-8f32-067aa44f14a6",
+  "baseline_hash": "sha256:958ca4d05401934148a9b20cc44183b07858c2f8bc4a43057df7feab3f5c7988",
+  "action": "replace",
+  "reason": "source-audited-article-batch-036-local-first: source-safe replacement grounded in local raw PDF/source family evidence; removes unsupported, stale, or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-036",
+  "approved_at": "2026-05-11T12:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-036-local-first",
+    "checked_sources": [
+      {
+        "source_id": "bp-344-2024-revised-irr-ncda-local",
+        "label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "checked_markdown_lines": [
+          "BP 344 2024 Revised IRR refined markdown lines 1090-1135",
+          "BP 344 2024 Revised IRR refined markdown lines 1296-1306",
+          "BP 344 2024 Revised IRR refined markdown lines 1493-1514"
+        ]
+      }
+    ],
+    "citation": "BP 344 2024 Revised IRR, ATMs, Kiosks and Ticket Machines"
+  },
+  "proposed": {
+    "text": "What height range does BP 344 give for ATM controls, buttons, bill dispensers, and card slots?",
+    "options": [
+      {
+        "id": "b036-4985-07-a",
+        "text": "900 mm to 1200 mm"
+      },
+      {
+        "id": "b036-4985-07-b",
+        "text": "750 mm to 900 mm"
+      },
+      {
+        "id": "b036-4985-07-c",
+        "text": "1000 mm to 1400 mm"
+      },
+      {
+        "id": "b036-4985-07-d",
+        "text": "650 mm to 1100 mm"
+      }
+    ],
+    "correct_option_id": "b036-4985-07-a",
+    "rationale": "Correct answer: 900 mm to 1200 mm. This is directly supported by BP 344 2024 Revised IRR, ATMs, Kiosks and Ticket Machines.",
+    "explanation": "The source-audited correction uses only the local raw PDF family and locator-checked refined markdown for BP 344 2024 Revised IRR, ATMs, Kiosks and Ticket Machines.",
+    "code_citation": "BP 344 2024 Revised IRR, ATMs, Kiosks and Ticket Machines"
+  }
+}

@@ -1,7 +1,7 @@
 # IMPL_03: Calibration Score Algorithm & Visualization
 
-**Priority:** P1  
-**Effort:** ~2 days  
+**Priority:** P1
+**Effort:** ~2 days
 **Research basis:** Brier Score decomposition; calibration curve methodology from psychometric literature
 
 ---

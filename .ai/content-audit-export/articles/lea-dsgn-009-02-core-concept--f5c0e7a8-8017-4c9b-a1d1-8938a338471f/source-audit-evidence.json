@@ -1,0 +1,157 @@
+{
+  "artifact_type": "source_audit_evidence",
+  "batch_id": "source-audited-article-batch-014-local-first",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T23:05:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "status": "local_pass_ready_for_final_publishing_review",
+  "target": {
+    "article_id": "f5c0e7a8-8017-4c9b-a1d1-8938a338471f",
+    "slug": "lea-dsgn-009-02-core-concept",
+    "title": "Daylighting",
+    "folder": ".ai/content-audit-export/articles/lea-dsgn-009-02-core-concept--f5c0e7a8-8017-4c9b-a1d1-8938a338471f",
+    "normalized_path": ".ai/content-audit-export/articles/lea-dsgn-009-02-core-concept--f5c0e7a8-8017-4c9b-a1d1-8938a338471f/normalized.md",
+    "candidate_path": ".ai/content-audit-export/articles/lea-dsgn-009-02-core-concept--f5c0e7a8-8017-4c9b-a1d1-8938a338471f/candidate.md",
+    "sources_path": ".ai/content-audit-export/articles/lea-dsgn-009-02-core-concept--f5c0e7a8-8017-4c9b-a1d1-8938a338471f/sources.json",
+    "question_edits_folder": ".ai/content-audit-export/articles/lea-dsgn-009-02-core-concept--f5c0e7a8-8017-4c9b-a1d1-8938a338471f/question-edits",
+    "original_hash": "sha256:bf2e242fb8461fcc19eba3111a0818a071b672df8f41fd201db9e7ac412382f7",
+    "normalized_hash": "sha256:8fedc80181e3e370a526053043d9d7560b421f1a048555aad0c0ada8f54446ea",
+    "candidate_hash": "sha256:0552bb16180a2c8fd500801051ef6b766328a47a95bd52c76180f2e509bde7aa",
+    "sources_hash": "sha256:fe953e55f1d0c18073229e64cc9169b1f9dd472ffe0b40040558097dca8abe42",
+    "linked_questions_hash": "sha256:6480f5e721aab25f838fe16ace8f5662b9ee9dca22e8a66159786c6c1f5eab74",
+    "question_edit_count": 10
+  },
+  "source_status_summary": "supported_for_10_percent_window_rule_design_heuristics_qualified",
+  "local_sources": [
+    {
+      "source_id": "pd-1096-summary-light-egress-stair",
+      "label": "PD 1096 National Building Code Summary",
+      "authority": "Philippine National Building Code local source packet",
+      "source_type": "primary_law_summary_conversion",
+      "source_locator": "Window openings, egress width/travel distance, corridor and stair summary provisions",
+      "paths": [
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 - National Building Code Summary.pdf",
+          "sha256": "sha256:8923385a06f3122c2435989184e6691aa07bead89655d811d16071545e77f70e"
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 - National Building Code Summary.md",
+          "sha256": "sha256:897f4d4af3b9e673af24d36d77244f1cfc290d68bbd8be9934d36912c42838ca"
+        }
+      ],
+      "checked_markdown_lines": [
+        "raw markdown lines 436, 719-721, 743, 758, 872"
+      ],
+      "use": "supports window-opening ratio, corridor width, exit width, travel distance, and PD 1096 stair geometry references",
+      "local_source_checked": true
+    },
+    {
+      "source_id": "pd-1096-full-irr-occupancy-development-controls",
+      "label": "PD 1096 IRR - Full Implementing Rules and Regulations",
+      "authority": "Philippine National Building Code local source packet",
+      "source_type": "primary_law_raw_conversion",
+      "source_locator": "Occupancy groups, funeral parlors/memorial chapels in zoning tables, PSO/MACA/TOSL definitions, window openings",
+      "paths": [
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.pdf",
+          "sha256": "sha256:8e98d8afd4b5972ba5a82d33a65e59e800cd41661b764a0dfc4112d29697b341"
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.md",
+          "sha256": "sha256:74351a12fcecb23ef611e23e40f1e73b87e2bdb8f9a625e886dc1b906e83c940"
+        },
+        {
+          "path": "vitruvius-connection/003_Canonical-Knowledge-Layer/shared/sources/implementing-rules-and-regulations.md",
+          "sha256": "sha256:2c8c7c95eb110e83065c11b1370051dc5e191cb46932c11d2d37a5e7647537a5"
+        }
+      ],
+      "checked_markdown_lines": [
+        "raw markdown lines 1607-1665, 2495, 2595, 4020-4087, 7055, 7097, 7170, 7184, 9655",
+        "canonical source lines 1607-1665, 2495, 2595"
+      ],
+      "use": "supports occupancy classification, funeral use rows, development-control definitions, and 10% window-opening rule",
+      "local_source_checked": true
+    }
+  ],
+  "exported_source_records": [
+    {
+      "source_id": "21715481-e765-4773-aec9-043f072a4309",
+      "article_id": "f5c0e7a8-8017-4c9b-a1d1-8938a338471f",
+      "label": "PD 1096: National Building Code of the Philippines, Rule VIII, Sections 808–809",
+      "url": null,
+      "source_type": "primary_law",
+      "description": null,
+      "is_verified": false,
+      "sort_order": 0,
+      "created_at": "2026-03-24T04:33:58.214974+00:00",
+      "updated_at": "2026-03-24T04:33:58.214974+00:00"
+    },
+    {
+      "source_id": "38af815c-0d21-42dc-96c7-64c9b9eb1790",
+      "article_id": "f5c0e7a8-8017-4c9b-a1d1-8938a338471f",
+      "label": "IES Handbook: Fundamentals and Applications, Chapter 9 (Daylighting)",
+      "url": null,
+      "source_type": "reference_standard",
+      "description": null,
+      "is_verified": false,
+      "sort_order": 1,
+      "created_at": "2026-03-24T04:33:58.214974+00:00",
+      "updated_at": "2026-03-24T04:33:58.214974+00:00"
+    },
+    {
+      "source_id": "63c15c3d-af97-4668-aaaf-129ad9f26e8e",
+      "article_id": "f5c0e7a8-8017-4c9b-a1d1-8938a338471f",
+      "label": "ANSI/IES LM-83: Approved Method: IES Spatial Daylight Autonomy",
+      "url": null,
+      "source_type": "reference_standard",
+      "description": null,
+      "is_verified": false,
+      "sort_order": 2,
+      "created_at": "2026-03-24T04:33:58.214974+00:00",
+      "updated_at": "2026-03-24T04:33:58.214974+00:00"
+    }
+  ],
+  "local_edits": {
+    "normalized_repaired": true,
+    "candidate_composed": true,
+    "ui_blocks_reviewed": true,
+    "question_edits_created": 10,
+    "answer_key_fields_changed": false,
+    "source_safe_rewrite_question_edits": 1,
+    "unresolved_external_source_gap_question_edits": 0
+  },
+  "source_gap_blockers": [],
+  "validation": {
+    "compose": {
+      "safe_to_diff": true,
+      "blockers": []
+    },
+    "diff": {
+      "changed": true,
+      "safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+      ]
+    },
+    "bundle_validate_dry_run": {
+      "valid": true,
+      "blockers": [],
+      "warnings": [
+        "component-usage.json has not been generated for this article yet."
+      ]
+    }
+  },
+  "question_edit_files": [
+    ".ai/content-audit-export/articles/lea-dsgn-009-02-core-concept--f5c0e7a8-8017-4c9b-a1d1-8938a338471f/question-edits/77f9ca20-f908-4b1d-846d-951099e0690c.json",
+    ".ai/content-audit-export/articles/lea-dsgn-009-02-core-concept--f5c0e7a8-8017-4c9b-a1d1-8938a338471f/question-edits/a86fbe5a-9226-473c-93b0-56c54b183167.json",
+    ".ai/content-audit-export/articles/lea-dsgn-009-02-core-concept--f5c0e7a8-8017-4c9b-a1d1-8938a338471f/question-edits/ac6d0468-5371-439e-82ac-657907c70e51.json",
+    ".ai/content-audit-export/articles/lea-dsgn-009-02-core-concept--f5c0e7a8-8017-4c9b-a1d1-8938a338471f/question-edits/2faad393-8600-4cf1-a5ef-3457667d7726.json",
+    ".ai/content-audit-export/articles/lea-dsgn-009-02-core-concept--f5c0e7a8-8017-4c9b-a1d1-8938a338471f/question-edits/d061e52e-e7e7-443a-a37f-e33880da175f.json",
+    ".ai/content-audit-export/articles/lea-dsgn-009-02-core-concept--f5c0e7a8-8017-4c9b-a1d1-8938a338471f/question-edits/8eb3969c-521a-4c4e-b25c-9d3529550db4.json",
+    ".ai/content-audit-export/articles/lea-dsgn-009-02-core-concept--f5c0e7a8-8017-4c9b-a1d1-8938a338471f/question-edits/217c974c-57bb-441d-b398-8ed9565040f7.json",
+    ".ai/content-audit-export/articles/lea-dsgn-009-02-core-concept--f5c0e7a8-8017-4c9b-a1d1-8938a338471f/question-edits/c9774f9c-8e63-4f0d-a4a1-dc710e7cd04a.json",
+    ".ai/content-audit-export/articles/lea-dsgn-009-02-core-concept--f5c0e7a8-8017-4c9b-a1d1-8938a338471f/question-edits/89b9fc9b-5119-44df-8bba-54bb55658cc3.json",
+    ".ai/content-audit-export/articles/lea-dsgn-009-02-core-concept--f5c0e7a8-8017-4c9b-a1d1-8938a338471f/question-edits/3a026507-6375-45fb-80ff-90df74ee593b.json"
+  ]
+}

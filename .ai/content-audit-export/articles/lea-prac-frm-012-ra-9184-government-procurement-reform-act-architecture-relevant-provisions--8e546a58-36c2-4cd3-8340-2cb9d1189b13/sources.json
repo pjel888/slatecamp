@@ -1,7 +1,32 @@
 {
   "article_id": "8e546a58-36c2-4cd3-8340-2cb9d1189b13",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "source_count": 0,
-  "sources": []
+  "source_count": 2,
+  "sources": [
+    {
+      "source_id": "batch011-ra9184-procurement-source-01",
+      "article_id": "8e546a58-36c2-4cd3-8340-2cb9d1189b13",
+      "label": "RA 9184 Government Procurement Reform Act",
+      "url": null,
+      "source_type": "statute",
+      "description": "RA 9184 Sections 3, 4, 5, 10, 11, and 12; raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/RA 9184 - Government Procurement Reform Act.pdf; raw_pdf_sha256=sha256:c7cdc5c69dc447a185be6682f1cedfe3f55aa584f20a5ecbe4915504c2d7b8e8; raw_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9184/RA 9184 - Government Procurement Reform Act.md; raw_markdown_sha256=sha256:fcca884cef63406e220513da501b08c66cf34f95375eebd442e4968c0c9440cb; checked_markdown_lines=20-82, 239-286",
+      "is_verified": true,
+      "sort_order": 0,
+      "created_at": "2026-05-10T12:05:00.000+08:00",
+      "updated_at": "2026-05-10T12:05:00.000+08:00"
+    },
+    {
+      "source_id": "batch011-ra9184-procurement-source-02",
+      "article_id": "8e546a58-36c2-4cd3-8340-2cb9d1189b13",
+      "label": "RA 9184 IRR, Government Procurement IRR",
+      "url": null,
+      "source_type": "implementing_rules",
+      "description": "RA 9184 IRR-A Sections 10, 11, 12, and 48; raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/RA 9184 IRR - Government Procurement IRR.pdf; raw_pdf_sha256=sha256:19dda526ccf537bf664f79b3fd86521ea37191a84811aefa5482d70f08fc6b95; raw_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9184/RA 9184 IRR - Government Procurement IRR.md; raw_markdown_sha256=sha256:32dd794a3030d72e05a60ff1faa9745543c1d1d75da0e0c1052fda845afa0197; checked_markdown_lines=140-157, 1393-1458",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-10T12:05:00.000+08:00",
+      "updated_at": "2026-05-10T12:05:00.000+08:00"
+    }
+  ],
+  "sources_hash": "sha256:113012be44f0163654d465f6ceecce3614705584b9b9b73a16108f69b9ab500e"
 }

@@ -289,7 +289,7 @@ async function getMRR() {
     `)
     .eq('status', 'active')
     .gte('current_period_start', startOfMonth)
-  
+
   return subscriptions.data.reduce((sum, sub) => {
     const price = sub.subscription_tiers.price_monthly_usd
     const proRata = calculateProRata(sub.current_period_start, sub.current_period_end)
@@ -316,7 +316,7 @@ async function getUnitEconomics() {
     getChurnedUsers(monthStart),
     getAcquisitionCosts(monthStart)
   ])
-  
+
   return {
     mrr,
     arr: mrr * 12,
@@ -640,12 +640,12 @@ src/lib/queries/
 export async function GET(req: Request) {
   const user = await requireServerAuth()
   const profile = await getProfile(user.id)
-  
+
   // ONLY super_admin can use DB Inspector
   if (profile.role !== 'super_admin') {
     return Response.json({ error: 'Forbidden' }, { status: 403 })
   }
-  
+
   // Mask PII in results
   const results = await executeQuery(req.nextUrl.searchParams.get('sql'))
   return Response.json(maskPII(results))
@@ -669,8 +669,8 @@ CREATE TABLE subscription_snapshots (
 );
 
 -- MRR query uses snapshots
-SELECT SUM(price_usd) FROM subscription_snapshots 
-WHERE recorded_at >= startOfMonth 
+SELECT SUM(price_usd) FROM subscription_snapshots
+WHERE recorded_at >= startOfMonth
 AND recorded_at < startOfNextMonth;
 ```
 
@@ -754,7 +754,7 @@ SELECT
   p.email,
   p.created_at as signup_date,
   p.last_login,
-  
+
   -- 30-day metrics
   COUNT(DISTINCT qs.id) FILTER (
     WHERE qs.created_at >= NOW() - INTERVAL '30 days'
@@ -762,7 +762,7 @@ SELECT
   COUNT(DISTINCT qi.id) FILTER (
     WHERE qi.created_at >= NOW() - INTERVAL '30 days'
   ) as questions_30d,
-  
+
   -- 7-day metrics
   COUNT(DISTINCT qs.id) FILTER (
     WHERE qs.created_at >= NOW() - INTERVAL '7 days'
@@ -770,10 +770,10 @@ SELECT
   COUNT(DISTINCT qi.id) FILTER (
     WHERE qi.created_at >= NOW() - INTERVAL '7 days'
   ) as questions_7d,
-  
+
   -- Last activity
   MAX(qs.created_at) as last_activity,
-  
+
   -- Engagement tier
   CASE
     WHEN COUNT(DISTINCT qs.id) FILTER (WHERE qs.created_at >= NOW() - INTERVAL '7 days') > 0
@@ -784,7 +784,7 @@ SELECT
     THEN 'new'
     ELSE 'dormant'
   END as engagement_tier,
-  
+
   -- Mastery summary
   AVG(um.mastery) as avg_mastery
 
@@ -813,7 +813,7 @@ interface DBQueryResult {
   rows: Record<string, unknown>[]  // Data rows
   rowCount: number
   executionTimeMs: number
-  
+
   // PII fields (should be masked but currently exposed):
   // - profiles.email
   // - profiles.full_name
@@ -846,16 +846,16 @@ interface LogEntry {
   timestamp: string                // ISO 8601
   level: 'DEBUG' | 'INFO' | 'WARN' | 'ERROR'
   source: 'server' | 'client' | 'database' | 'auth' | 'ai'
-  
+
   // Message and context:
   message: string
   metadata: Record<string, unknown>
-  
+
   // Correlation:
   user_id?: string                // If authenticated
   session_id?: string              // If quiz session
   trace_id?: string                // For distributed tracing
-  
+
   // Source detail:
   file?: string                    // 'src/lib/quiz/session.ts:45'
   function?: string
@@ -873,14 +873,14 @@ interface UptimeData {
     latencyMs: number              // Average response time
     errors: number                // Error count
   }>
-  
+
   summary: {
     uptime24h: number            // Overall 24h uptime %
     avgLatency: number            // Average latency
     maxLatency: number           // Peak latency
     totalErrors: number
   }
-  
+
   lastUpdated: string             // ISO timestamp of data
 }
 ```

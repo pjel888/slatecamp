@@ -1,7 +1,44 @@
 {
   "article_id": "92be8354-f938-4307-a40c-4620c1381cba",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "source_count": 0,
-  "sources": []
+  "sources_hash": "sha256:16a68faab91f978410ebff0172a6347b5ff514e7d1c38338507d1d1847b97ac5",
+  "source_count": 2,
+  "sources": [
+    {
+      "source_id": "pec-2017-local-phil-electrical-code",
+      "title": "Philippine Electrical Code local raw PDF",
+      "label": "Philippine Electrical Code local raw PDF",
+      "source_type": "local_raw_pdf_with_locator_checked_refined_markdown",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+      "source_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+      "derivative_layer_role": "locator aid only",
+      "raw_pdf_sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+      "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3",
+      "checked_markdown_lines": [
+        "Phil Electrical Code refined markdown lines 248-302",
+        "Phil Electrical Code refined markdown lines 4978-5039",
+        "Phil Electrical Code refined markdown lines 5091-5128",
+        "Phil Electrical Code refined markdown lines 5172-5207",
+        "Phil Electrical Code refined markdown lines 5309-5357"
+      ],
+      "source_locator": "Phil Electrical Code refined markdown lines 248-302; Phil Electrical Code refined markdown lines 4978-5039; Phil Electrical Code refined markdown lines 5091-5128; Phil Electrical Code refined markdown lines 5172-5207; Phil Electrical Code refined markdown lines 5309-5357"
+    },
+    {
+      "source_id": "fajardo-electrical-layout-estimate-2nd-ed-local",
+      "title": "Electrical Layout and Estimate, 2nd Edition, Max B. Fajardo Jr. and Leo R. Fajardo local raw PDF",
+      "label": "Electrical Layout and Estimate, 2nd Edition, Max B. Fajardo Jr. and Leo R. Fajardo local raw PDF",
+      "source_type": "local_raw_pdf_with_locator_checked_refined_markdown",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.pdf",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.md",
+      "source_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+      "derivative_layer_role": "locator aid only",
+      "raw_pdf_sha256": "sha256:3cc20c7a3681cd41b427df17784582d578f8d772f1f50808a9c66d9390cbf244",
+      "refined_markdown_sha256": "sha256:e68e20c6b6a0dbb331c151d0814e182037564f63cf17a07284a6e126de62fc45",
+      "checked_markdown_lines": [
+        "Electrical Layout and Estimate refined markdown lines 5118-5150"
+      ],
+      "source_locator": "Electrical Layout and Estimate refined markdown lines 5118-5150"
+    }
+  ]
 }

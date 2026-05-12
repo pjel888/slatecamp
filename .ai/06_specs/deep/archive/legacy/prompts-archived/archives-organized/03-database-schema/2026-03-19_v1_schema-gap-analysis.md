@@ -1,7 +1,7 @@
 # SlateCamp — Schema Gap Analysis vs. UX Strategy
-**Prepared by:** Database Architect  
-**Date:** 2026-03-19  
-**Sources:** UX Research & Strategic Implementation Plan v1.0 · Implementation Prompt v1.0 · DATABASE_SCHEMA.sql (live, 2026-03-19)  
+**Prepared by:** Database Architect
+**Date:** 2026-03-19
+**Sources:** UX Research & Strategic Implementation Plan v1.0 · Implementation Prompt v1.0 · DATABASE_SCHEMA.sql (live, 2026-03-19)
 **Governing Question:** Does this make a student more likely to win their Licensure Exam?
 
 ---
@@ -42,7 +42,7 @@ These six gaps directly block revenue. They must be resolved before any marketin
 
 ### 1.1 🔴 `score_reveal_shown_at` — Missing
 
-**What the UX Strategy requires:**  
+**What the UX Strategy requires:**
 The Score Reveal is described as "THE MOST IMPORTANT SCREEN." It must show exactly once for free users — the moment they see their score for the first time is the emotional peak that drives conversion. After they've seen it, the score locks and the Pro paywall pitch becomes: *"Your score has updated N times since your diagnostic. Upgrade to see it live."*
 
 Without `score_reveal_shown_at`, the application cannot enforce the shown-once mechanic. A free user could refresh the page and re-trigger the reveal indefinitely, destroying the scarcity that drives the paywall conversion.
@@ -66,14 +66,14 @@ COMMENT ON COLUMN public.user_global_stats.score_reveal_shown_at IS
   'Set when free user views their Score Reveal for the first time. NULL = not yet seen. Used to enforce shown-once mechanic and power the locked score widget copy.';
 ```
 
-**Paywall copy this enables:**  
+**Paywall copy this enables:**
 `"Your score has updated N times since your diagnostic."` — where N = count of `readiness_score_snapshots` rows after `score_reveal_shown_at`. This specific-loss framing is documented to outperform generic feature lists by 2–3× in A/B tests.
 
 ---
 
 ### 1.2 🔴 `free_questions_today` + `free_cap_reset_date` — Missing
 
-**What the UX Strategy requires:**  
+**What the UX Strategy requires:**
 The paywall comparison table explicitly lists "20 Q/day" for free vs. "Unlimited" for Pro. The implementation prompt references this as: *"Free tier daily cap (20 questions/day) has no enforcement column."*
 
 Without these columns, the daily cap is aspirational — any free user can answer unlimited questions. This removes the primary usage friction that drives Pro conversion and makes the paywall comparison table dishonest.
@@ -105,7 +105,7 @@ COMMENT ON COLUMN public.user_subscriptions.free_cap_reset_date IS
 
 ### 1.3 🔴 SRS Columns on `user_node_mastery` — Missing
 
-**What the UX Strategy requires:**  
+**What the UX Strategy requires:**
 The product state table explicitly flags: *"SRS algorithm not implemented — surfacing by difficulty, not interval."* Spaced Repetition is listed with effect size d=0.46–0.80, and the SM-2 algorithm is named as the target implementation. Sprint 2 roadmap item: *"SRS scheduling columns + SM-2 algorithm."*
 
 The SRS dashboard widget ("12 items due for review today · ~15 min") requires knowing which nodes are *due* for review. Without `next_review_at`, the system cannot schedule items — it can only surface items by mastery weight, which is a fundamentally different (and less effective) approach.
@@ -152,7 +152,7 @@ else:
 
 ### 1.4 🔴 Endurance Cycle — Zero Schema
 
-**What the UX Strategy requires:**  
+**What the UX Strategy requires:**
 The Endurance Cycle is explicitly flagged as *"🔴 No Schema — Cannot Build."* It is also the gate that blocks Proof Simulation (*"Mostly Ready — Blocked by Endurance Schema"*). The Proof Simulation gate requires: *"Endurance window must cover ≥80% of exam duration."*
 
 The Endurance Cycle tracks cognitive stamina — how many questions a student can answer before accuracy degrades. It requires:
@@ -226,7 +226,7 @@ ALTER TABLE public.quiz_sessions
 
 ### 1.5 🔴 Study Streak Columns — Missing
 
-**What the UX Strategy requires:**  
+**What the UX Strategy requires:**
 Study Streak ("Trail Streak") is Priority 1 in the gamification strategy, described as the most powerful retention driver. The retention stack shows streaks driving 3.6× retention at 7-day milestone (Duolingo benchmark). The implementation prompt explicitly provides the SQL:
 
 > `ALTER TABLE user_trail_enrollments ADD COLUMN current_streak INTEGER DEFAULT 0, longest_streak INTEGER DEFAULT 0, grace_days_used_this_week INTEGER DEFAULT 0;`
@@ -262,7 +262,7 @@ COMMENT ON COLUMN public.user_trail_enrollments.grace_days_used_this_week IS
 
 ### 1.6 🔴 Pre-Assessment Anonymous Session — Architectural Gap
 
-**What the UX Strategy requires:**  
+**What the UX Strategy requires:**
 *"Let users answer 5–10 diagnostic questions before account gate."* The research note: *"Duolingo A/B tested delayed sign-up vs. front-loaded — delayed always wins."*
 
 **The problem:** `quiz_sessions.user_id` is `NOT NULL REFERENCES auth.users(id)`. An unauthenticated user cannot have a quiz session in the current schema.
@@ -309,7 +309,7 @@ These gaps block specific features in the second sprint. Schema can be designed 
 
 ### 2.1 🟡 `is_retaker` — Missing from Onboarding State
 
-**What the UX Strategy requires:**  
+**What the UX Strategy requires:**
 The onboarding flow asks: *"Have you taken the ALE before?"* This single answer dramatically changes the entire onboarding tone. Retaker path has different copy, different trail recommendation, different score reveal framing. *"Never reference the failure directly in any UI copy."*
 
 The current schema has `exam_attempt_number INTEGER DEFAULT 1` on `user_global_stats` — this is close but semantically different. `exam_attempt_number = 1` is ambiguous: is this their first attempt or are they about to take it for the first time?
@@ -329,7 +329,7 @@ COMMENT ON COLUMN public.user_global_stats.is_retaker IS
 
 ### 2.2 🟡 Onboarding Dropout Recovery State — Incomplete
 
-**What the UX Strategy requires:**  
+**What the UX Strategy requires:**
 The error/dropout paths table defines multiple recovery states, each requiring a different dashboard CTA:
 
 | Dropout Point | Signal Needed |
@@ -355,7 +355,7 @@ ALTER TABLE public.user_global_stats
 
 ### 2.3 🟡 Metacognitive Calibration Score — Missing Storage
 
-**What the UX Strategy requires:**  
+**What the UX Strategy requires:**
 *"A separate Calibration Score alongside the Readiness Score. Shows how accurately the student predicts their own performance."* This is listed as P2 gamification with effect size d=0.35–0.55.
 
 The `pre_session_confidence_ratings JSONB` already exists on `quiz_sessions` ✅ — this captures the raw input. What's missing is the computed calibration score and its storage.
@@ -378,7 +378,7 @@ COMMENT ON COLUMN public.user_computed_signals.calibration_score IS
 
 ### 2.4 🟡 Push Notification System — No Schema
 
-**What the UX Strategy requires:**  
+**What the UX Strategy requires:**
 A comprehensive, channel-protected push notification system with strict rules: max 1 push/day, only during `preferred_study_window`, 7 defined trigger types. The strategy explicitly cites Duolingo's insight: *"over-sending permanently damages opt-in health."*
 
 Currently there is no schema to store:
@@ -443,7 +443,7 @@ CREATE TRIGGER tr_push_tokens_updated_at
 
 ### 2.5 🟡 Wiki Article Read Tracking — Missing
 
-**What the UX Strategy requires:**  
+**What the UX Strategy requires:**
 Camp Trail steps of type `wiki` are marked complete when the user reaches the end of the article (*"or via explicit 'Mark as Read' button for those who skim"*). Step completion writes to `user_trail_progress` — but that table only records that a step was completed, not that a specific wiki article was read.
 
 The deeper issue: the note temporal resurface feature (*"A note written in second year resurfaces at the right moment during board review"*) and the end-of-article CTA (*"Test what you just read: 5 questions on this topic"*) both require knowing when a user last read each article.
@@ -481,7 +481,7 @@ CREATE INDEX idx_wiki_reads_user_recent ON public.wiki_article_reads(user_id, re
 
 ### 2.6 🟡 Trail Milestone Tracking — Missing
 
-**What the UX Strategy requires:**  
+**What the UX Strategy requires:**
 Fresh Start Effect milestones at Day 7, Day 14, Day 28 (*"+33–50% motivation at temporal landmarks"*). The Day Complete screen at milestone days shows a special acknowledgment: *"Week 2 complete. 14 sessions. Score: 48% → 57%."*
 
 The data for this exists across tables, but there's no flag to track whether a milestone acknowledgment has already been shown (preventing repeat milestone triggers).
@@ -508,7 +508,7 @@ These items should be designed into the schema now to avoid future migration pai
 
 ### 3.1 🟠 Elaborative Interrogation Prompts — No Schema
 
-**What the UX Strategy requires:**  
+**What the UX Strategy requires:**
 *"At a strategically placed point, the article pauses. A 'Why?' prompt appears before the article reveals the rationale and continues."* The implementation prompt specifies parsing `[EI_PROMPT]...[/EI_PROMPT]` tags from wiki content — but storing EI prompts in the article body text is a maintenance nightmare and makes them untrackable.
 
 A dedicated table is cleaner and enables analytics on which EI prompts drive the most engagement.
@@ -554,7 +554,7 @@ CREATE INDEX idx_ei_prompts_article ON public.wiki_ei_prompts(article_id);
 
 ### 3.2 🟠 Campfire / Community — No Schema
 
-**What the UX Strategy requires:**  
+**What the UX Strategy requires:**
 Campfire is the social proof layer — not a leaderboard, but passive context: *"8 students with your score passed the ALE in June 2025."* The strategy correctly distinguishes this from social competition. Phase 3.
 
 ```sql
@@ -585,7 +585,7 @@ CREATE POLICY "Anyone can read featured testimonials"
 
 ### 3.3 🟠 Proof Simulation Gate Progress — Computed Column Gap
 
-**What the UX Strategy requires:**  
+**What the UX Strategy requires:**
 Two visible progress bars on the locked Proof Simulation card:
 1. Node coverage: `≥70% of taxonomy nodes at Amber or above`
 2. Endurance window: `≥80% of exam duration`
@@ -608,7 +608,7 @@ COMMENT ON COLUMN public.user_global_stats.proof_simulation_unlocked_at IS
 
 ### 3.4 🟠 Proof Simulation 24-Hour Diagnostic Delay — Missing State
 
-**What the UX Strategy requires:**  
+**What the UX Strategy requires:**
 *"Detailed breakdown available tomorrow at [time]. Let that sit tonight."* The 24-hour delay must be enforced at the data layer, not just the UI. Without a column tracking when the analysis becomes available, the UI could show the full breakdown early (if cached), or a browser refresh could bypass the UI gate.
 
 ```sql
@@ -783,8 +783,8 @@ Contents:
 
 ---
 
-*SlateCamp Database Architecture — Internal Reference*  
-*Maintained by: DB Architect + Philip (Founder)*  
+*SlateCamp Database Architecture — Internal Reference*
+*Maintained by: DB Architect + Philip (Founder)*
 *Based on: UX Research & Strategic Implementation Plan v1.0 · DB Audit v3 · DATABASE_SCHEMA.sql 2026-03-19*
 
 

@@ -1,0 +1,90 @@
+{
+  "question_id": "9aeb9d49-efce-46ac-8143-bf1fd5426c9b",
+  "baseline_hash": "sha256:a0acbfb44972b094095782aa065d50c130eb8f27da8bd5695c5c314eca47b280",
+  "action": "replace",
+  "reason": "source-audited-article-batch-022-local-first rewrote this linked question to align with the local source audit for lea-prac-eth-009-introduction.",
+  "approved_by": "codex-local-source-audit-batch-022",
+  "approved_at": "2026-05-11T11:45:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "958cf8ad-c743-41b3-a7fd-47da9421a09b",
+    "parent_article_slug": "lea-prac-eth-009-introduction",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 9266 IRR refined markdown lines 296-323, 588-630, 670-680, and 855-873; UAP Code of Ethics refined markdown lines 23-29, 31-58, 60-71, and 81-99",
+    "checked_markdown_lines": [
+      "RA 9266 IRR lines 296-323",
+      "RA 9266 IRR lines 588-630",
+      "RA 9266 IRR lines 670-680",
+      "RA 9266 IRR lines 855-873",
+      "UAP Code of Ethics lines 23-29",
+      "UAP Code of Ethics lines 31-58",
+      "UAP Code of Ethics lines 60-71",
+      "UAP Code of Ethics lines 81-99"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "ra9266-irr-board-discipline-cpd-local",
+        "locator": "RA 9266 IRR refined markdown lines 296-323, 588-630, 670-680, and 855-873"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_id": "ra9266-irr-board-discipline-cpd-local",
+        "locator": "RA 9266 IRR refined markdown lines 296-323, 588-630, 670-680, and 855-873"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+        "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+        "source_id": "uap-code-ethics-client-contractor-colleague-local",
+        "locator": "UAP Code of Ethics refined markdown lines 23-29, 31-58, 60-71, and 81-99"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+        "sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+        "source_id": "uap-code-ethics-client-contractor-colleague-local",
+        "locator": "UAP Code of Ethics refined markdown lines 23-29, 31-58, 60-71, and 81-99"
+      }
+    ],
+    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+  },
+  "proposed": {
+    "text": "In contractor-facing administration, what ethical duty is source-backed?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Provide clear, definite, and consistent information in contract documents"
+      },
+      {
+        "id": "b",
+        "text": "Approve all materials requested by the contractor"
+      },
+      {
+        "id": "c",
+        "text": "Withhold certificates even when the phase complies"
+      },
+      {
+        "id": "d",
+        "text": "Let the contractor interpret the drawings alone"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "The Code requires clear contract information and source-backed certificate duties tied to compliant work.",
+    "explanation": "The incorrect options import a different actor, service category, timing rule, or authority path that the checked local source does not support.",
+    "code_citation": "UAP Code of Ethics lines 60-71",
+    "bloom_level": "apply",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited batch 022"
+    ],
+    "difficulty": 0.46,
+    "is_assessment": false,
+    "model_id": "BATCH-022-lea-prac-eth-009-introduction-007"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "question_id": "e02a4fa5-dff1-4efd-9167-9578c9e23ffa",
+  "baseline_hash": "sha256:d4908464d3eab1b9a2496e801d01f5080fb73cf520a427d83f14dcc22334e04a",
+  "action": "replace",
+  "reason": "source-audited-article-batch-040-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-040",
+  "approved_at": "2026-05-11T14:04:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-040-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 1627-1766",
+          "PD 1096 RIRR refined markdown lines 1784-1786"
+        ]
+      },
+      {
+        "source_id": "bp-344-2024-rirr-ncda-local",
+        "label": "BP 344 2024 Revised IRR - NCDA",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "checked_markdown_lines": [
+          "BP 344 2024 IRR refined markdown lines 228-305"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Rule VII parking requirements"
+  },
+  "proposed": {
+    "text": "Under PD 1096, how is a fraction of 50 percent and above treated when computing parking slots?",
+    "options": [
+      {
+        "id": "b040-dcea-05-a",
+        "text": "It is counted as one car parking slot"
+      },
+      {
+        "id": "b040-dcea-05-b",
+        "text": "It is ignored in all cases"
+      },
+      {
+        "id": "b040-dcea-05-c",
+        "text": "It is counted only for hotels"
+      },
+      {
+        "id": "b040-dcea-05-d",
+        "text": "It always becomes two parking slots"
+      }
+    ],
+    "correct_option_id": "b040-dcea-05-a",
+    "rationale": "Correct answer: It is counted as one car parking slot. This is directly supported by PD 1096 2004 Revised IRR, Rule VII parking requirements.",
+    "explanation": "The Batch 040 source-audited correction uses only local raw PDF families and locator-checked refined markdown for PD 1096 2004 Revised IRR, Rule VII parking requirements.",
+    "code_citation": "PD 1096 2004 Revised IRR, Rule VII parking requirements"
+  }
+}

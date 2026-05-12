@@ -1,44 +1,32 @@
 {
   "article_id": "20f67594-cbef-4aac-b65d-db77bc3e2c9e",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:9fd888824dfe75c4c54dea3cd5f0fd8edbeefc7d5c3d4cec4851bea6daaa87ea",
-  "source_count": 3,
+  "sources_hash": "sha256:bfcef1319ee46fb7aaed848c65b38f249e8cfaa6a2ffbb4dc3b8ca0027df97a1",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "cac6dd2f-9ab8-4f2f-b7f3-6e1612216e7a",
+      "source_id": "bci-5e-b078",
       "article_id": "20f67594-cbef-4aac-b65d-db77bc3e2c9e",
-      "label": "Standards cited: ASTM C373 (water absorption), ASTM C1028/ANSI A137.1 (slip resistance), PEI Rating System, BP 344 (Philippine Accessibility Law), ANSI A108.02 (tile installation)",
+      "label": "Building Construction Illustrated, 5th Edition",
       "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
+      "source_type": "primary_building_construction_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-078-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf; raw_pdf_sha256=sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md; refined_markdown_sha256=sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a; checked_locator=BCI refined markdown lines 12549-12620 and 13036-13496; raw PDF pages 343-365 checked by local PyMuPDF extraction",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:00.685475+00:00",
-      "updated_at": "2026-03-24T04:34:00.685475+00:00"
+      "created_at": "2026-05-12T05:20:00.000+08:00",
+      "updated_at": "2026-05-12T05:20:00.000+08:00"
     },
     {
-      "source_id": "e8d8127e-1de1-4110-a41e-fee5811b26cb",
+      "source_id": "salvan-building-materials-b078",
       "article_id": "20f67594-cbef-4aac-b65d-db77bc3e2c9e",
-      "label": "Field data: residential service life 20-30 years, commercial 15-25 years",
+      "label": "George Salvan Architectural Building Materials",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "primary_building_materials_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-078-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf; raw_pdf_sha256=sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md; refined_markdown_sha256=sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42; checked_locator=Salvan refined markdown lines 8010-8245, 8448-8505, and 8560-8665; raw PDF pages 235-254 checked by local PyMuPDF extraction",
+      "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:00.685475+00:00",
-      "updated_at": "2026-03-24T04:34:00.685475+00:00"
-    },
-    {
-      "source_id": "48f3c4cb-a397-44ac-8042-03eff76c5243",
-      "article_id": "20f67594-cbef-4aac-b65d-db77bc3e2c9e",
-      "label": "Philippine context: Mariwasa Siam Ceramics, Niro Granite market share and local tile sizes",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:34:00.685475+00:00",
-      "updated_at": "2026-03-24T04:34:00.685475+00:00"
+      "created_at": "2026-05-12T05:20:00.000+08:00",
+      "updated_at": "2026-05-12T05:20:00.000+08:00"
     }
   ]
 }

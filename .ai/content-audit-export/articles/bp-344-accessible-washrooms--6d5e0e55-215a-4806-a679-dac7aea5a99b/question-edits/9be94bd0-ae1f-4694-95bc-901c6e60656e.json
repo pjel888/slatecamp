@@ -1,0 +1,57 @@
+{
+  "question_id": "9be94bd0-ae1f-4694-95bc-901c6e60656e",
+  "baseline_hash": "sha256:d189561726f0046e0360848d995093701777e701c1d05da4214215d3a9bff17a",
+  "action": "replace",
+  "reason": "source-audited-article-batch-032-local-first aligned linked accessibility/code question with audited local source language for bp-344-accessible-washrooms.",
+  "approved_by": "codex-local-source-audit-batch-032",
+  "approved_at": "2026-05-11T09:12:50+08:00",
+  "source_audit_support": {
+    "parent_article_id": "6d5e0e55-215a-4806-a679-dac7aea5a99b",
+    "parent_article_slug": "bp-344-accessible-washrooms",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "BP 344 2024 Revised IRR lines 891-951",
+    "checked_sources": [
+      {
+        "source_id": "bp-344-2024-revised-irr-ncda-local",
+        "label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+        "source_locator": "BP 344 2024 Revised IRR refined markdown lines 317-356, 362-511, 891-951, 990-1037, 1193-1211, 1446-1458, 1529-1545",
+        "checked_markdown_lines": [
+          "BP 344 2024 Revised IRR refined markdown lines 317-356, 362-511, 891-951, 990-1037, 1193-1211, 1446-1458, 1529-1545"
+        ]
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer key, rationale, explanation, and code citation rewritten to the audited local article scope."
+  },
+  "proposed": {
+    "text": "Which answer should be rejected in a BP 344 washroom problem?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use generic comfort-room dimensions without checking BP 344"
+      },
+      {
+        "id": "b",
+        "text": "Use the 1800 mm x 1800 mm cubicle minimum"
+      },
+      {
+        "id": "c",
+        "text": "Use the 450 mm toilet seat height"
+      },
+      {
+        "id": "d",
+        "text": "Provide required grab bars"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The source-safe answer must use the BP 344 washroom requirements.",
+    "explanation": "The source-safe answer must use the BP 344 washroom requirements.",
+    "code_citation": "BP 344 2024 Revised IRR lines 891-951"
+  }
+}

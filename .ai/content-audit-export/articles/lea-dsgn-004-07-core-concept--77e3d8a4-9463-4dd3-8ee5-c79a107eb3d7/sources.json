@@ -1,56 +1,71 @@
 {
   "article_id": "77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:e20183dbaf722079668e5da9f42ae508eebe1b3a80fba6d5b25210e4ef3873b4",
-  "source_count": 4,
+  "sources_hash": "sha256:142e5d6a2dadea7f0b4e24e5d1175864b9fb25c8cb6e722a0423e06b0edd9a3a",
+  "source_count": 3,
   "sources": [
     {
-      "source_id": "179f4abd-5972-469c-b323-c7834e264bb0",
-      "article_id": "77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7",
-      "label": "PD 1096: National Building Code, Section 303 and Rule XIX Appendix A Table IX (Parking)",
-      "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:33:59.83296+00:00",
-      "updated_at": "2026-03-24T04:33:59.83296+00:00"
+      "source_id": "pd1096-rirr-2004-occupancy-classification-dpwh-local-b063",
+      "label": "PD 1096 RIRR 2004 - occupancy classification and public-use matrices",
+      "authority": "DPWH official revised IRR local raw PDF conversion",
+      "source_type": "building_code_irr_pdf",
+      "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1141 and 1193-1272; raw PDF pages 47-70 checked for matching occupancy text",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "checked_markdown_lines": [
+        "PD 1096 RIRR DPWH Official refined markdown lines 1088-1141",
+        "PD 1096 RIRR DPWH Official refined markdown lines 1193-1272"
+      ],
+      "checked_raw_pdf_pages": [
+        "PD 1096 RIRR DPWH Official raw PDF pages 47-70"
+      ],
+      "use": "primary local source for occupancy classification and public-use category checks",
+      "local_source_checked": true
     },
     {
-      "source_id": "f6ac2b7b-6b7f-4dee-8179-53aa57363000",
-      "article_id": "77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7",
-      "label": "RA 9514: Fire Code 2019 IRR, Division 10 Section 1005 (Egress)",
-      "url": null,
-      "source_type": "implementing_rules",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 1,
-      "created_at": "2026-03-24T04:33:59.83296+00:00",
-      "updated_at": "2026-03-24T04:33:59.83296+00:00"
+      "source_id": "ra9514-rirr-2019-fire-life-safety-local-b063",
+      "label": "RA 9514 Revised IRR 2019 - classification, means of egress, and assembly fire-safety rules",
+      "authority": "Bureau of Fire Protection revised IRR local raw PDF conversion",
+      "source_type": "fire_code_irr_pdf",
+      "source_locator": "RA 9514 RIRR refined markdown lines 1463-1544, 2266-2313, 2515-2532, 2665-2728, 3982-4210, and 4273-4360; raw PDF pages 66, 84, 91, 134, and 138 checked for matching text",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+      "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+      "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+      "checked_markdown_lines": [
+        "RA 9514 RIRR refined markdown lines 1463-1544",
+        "RA 9514 RIRR refined markdown lines 2266-2313",
+        "RA 9514 RIRR refined markdown lines 2515-2532",
+        "RA 9514 RIRR refined markdown lines 2665-2728",
+        "RA 9514 RIRR refined markdown lines 3982-4210",
+        "RA 9514 RIRR refined markdown lines 4273-4360"
+      ],
+      "checked_raw_pdf_pages": [
+        "RA 9514 RIRR raw PDF pages 66, 84, 91, 134, and 138"
+      ],
+      "use": "primary local source for Fire Code classification, FSIC, egress, alarm, sprinkler, and assembly rules",
+      "local_source_checked": true
     },
     {
-      "source_id": "a980b39f-ad80-4099-81fd-5f27060a77c8",
-      "article_id": "77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7",
-      "label": "BP 344: Accessibility Law 2024 Revised IRR (Ramps and Parking)",
-      "url": null,
-      "source_type": "implementing_rules",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:33:59.83296+00:00",
-      "updated_at": "2026-03-24T04:33:59.83296+00:00"
-    },
-    {
-      "source_id": "dfea2a6f-e799-4407-b6c7-673929034e62",
-      "article_id": "77e3d8a4-9463-4dd3-8ee5-c79a107eb3d7",
-      "label": "Theater Standards: Seating (0.9 sqm/person) and Stage (9.0 m x 12.0 m)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:33:59.83296+00:00",
-      "updated_at": "2026-03-24T04:33:59.83296+00:00"
+      "source_id": "pd9514-fire-code-life-safety-local-b063",
+      "label": "Fire Code source family - life-safety and egress general requirements",
+      "authority": "Fire Code local raw PDF conversion",
+      "source_type": "fire_code_pdf",
+      "source_locator": "PD 9514 Fire Code refined markdown lines 1599-1629; raw PDF pages 57-58 checked for matching life-safety text",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf",
+      "raw_pdf_sha256": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-9514/PD 9514 - Fire Code of the Philippines.md",
+      "refined_markdown_sha256": "sha256:5eb0584f1bcbfa87044e28f2e59a75c6364c7160a98edfdd888c6aef849b01b2",
+      "checked_markdown_lines": [
+        "PD 9514 Fire Code refined markdown lines 1599-1629"
+      ],
+      "checked_raw_pdf_pages": [
+        "PD 9514 Fire Code raw PDF pages 57-58"
+      ],
+      "use": "supporting local source for general life-safety, exits, warning systems, and common-area responsibility language",
+      "local_source_checked": true
     }
   ]
 }

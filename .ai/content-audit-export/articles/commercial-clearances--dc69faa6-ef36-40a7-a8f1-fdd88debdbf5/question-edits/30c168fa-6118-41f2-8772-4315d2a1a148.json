@@ -1,0 +1,50 @@
+{
+  "question_id": "30c168fa-6118-41f2-8772-4315d2a1a148",
+  "baseline_hash": "sha256:577dc34be6a0d27ad219681d54f7d158d9d67ea1572a9ab1c7ca03473bb4444e",
+  "action": "replace",
+  "reason": "source-audited-article-batch-038-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-038",
+  "approved_at": "2026-05-11T13:26:35+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-038-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 2087-2138",
+          "PD 1096 RIRR refined markdown lines 2246-2310",
+          "PD 1096 RIRR refined markdown lines 2352-2356"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Table VIII.3"
+  },
+  "proposed": {
+    "text": "For commercial buildings with RROW below 10.00 m, what side and rear setbacks are listed in Table VIII.3?",
+    "options": [
+      {
+        "id": "b038-dc69-08-a",
+        "text": "2.00 m side and 2.00 m rear"
+      },
+      {
+        "id": "b038-dc69-08-b",
+        "text": "5.00 m side and 5.00 m rear"
+      },
+      {
+        "id": "b038-dc69-08-c",
+        "text": "3.00 m side and 3.00 m rear"
+      },
+      {
+        "id": "b038-dc69-08-d",
+        "text": "No side or rear setback"
+      }
+    ],
+    "correct_option_id": "b038-dc69-08-a",
+    "rationale": "Correct answer: 2.00 m side and 2.00 m rear. This is directly supported by PD 1096 2004 Revised IRR, Table VIII.3.",
+    "explanation": "The Batch 038 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Table VIII.3.",
+    "code_citation": "PD 1096 2004 Revised IRR, Table VIII.3"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "question_id": "a90cf197-75b1-4f5e-848f-3372822297e9",
+  "baseline_hash": "sha256:c5d7af60078025966807b285aa2f033cf01a959eeafc6a97a8922cd584acedaf",
+  "action": "replace",
+  "reason": "source-audited-article-batch-018-local-first rewrote linked question to match locally checked raw source evidence for lea-prac-eth-011-introduction.",
+  "approved_by": "codex-local-source-audit-batch-018",
+  "approved_at": "2026-05-10T23:42:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "17350925-ae83-47a1-a30f-a96eb5c1d942",
+    "parent_article_slug": "lea-prac-eth-011-introduction",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UAP Document Code of Ethics, client-interest and independence provisions, raw markdown lines 47-63 and 66-89",
+    "checked_markdown_lines": [
+      "raw markdown lines 47-63",
+      "raw markdown lines 66-89"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+        "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+        "source_id": "uap-document-code-of-ethics",
+        "locator": "UAP Document Code of Ethics, client-interest and independence provisions, raw markdown lines 47-63 and 66-89"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
+        "sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
+        "source_id": "uap-document-code-of-ethics-raw-markdown",
+        "locator": "UAP Document Code of Ethics, client-interest and independence provisions, raw markdown lines 47-63 and 66-89"
+      }
+    ],
+    "local_source_safe_action": "Question was rewritten to remove unverified or over-specific claims and use only statements anchored in the checked local raw source packet."
+  },
+  "proposed": {
+    "text": "Which Code provision most directly supports client disclosure of a related business interest?",
+    "options": [
+      {
+        "id": "a",
+        "text": "If the architect has a business interest that relates to or affects the client's interest, the architect should inform the client"
+      },
+      {
+        "id": "b",
+        "text": "The architect may keep all outside interests private"
+      },
+      {
+        "id": "c",
+        "text": "Only the contractor must be informed"
+      },
+      {
+        "id": "d",
+        "text": "Disclosure is needed only after a dispute is filed"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "The Code states that a business interest relating to or affecting the client's interest should be disclosed to the client.",
+    "explanation": "The Code states that a business interest relating to or affecting the client's interest should be disclosed to the client.",
+    "code_citation": "UAP Document Code of Ethics, line 62",
+    "bloom_level": "apply",
+    "application_context": "professional_practice",
+    "practice_context": [
+      "Code of Ethical Conduct",
+      "Professional ethics"
+    ],
+    "difficulty": 0.7,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-ETH-011-008"
+  }
+}

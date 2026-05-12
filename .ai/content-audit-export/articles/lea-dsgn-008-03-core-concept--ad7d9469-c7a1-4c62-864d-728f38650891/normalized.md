@@ -1,80 +1,44 @@
+# Automatic sprinkler and fire detection systems
 
+Sprinkler and fire detection questions should be answered from RA 9514 before using general fire-safety memory. The checked local source family supports sprinkler supervision, water-flow alarm initiation, travel-distance effects in specific occupancies, and maintenance records.
 
-## Board Exam Quick Check
+## Exam Anchor
 
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+First identify the occupancy and the condition. A sprinklered business occupancy, an unsprinklered business occupancy, a hotel, a parking structure, and a general egress rule can have different values. Do not apply a sprinkler allowance unless the item says the building is protected throughout by an approved, supervised automatic sprinkler system.
 
-**Common mistake:** treating a familiar keyword in **Lea Dsgn 008 03 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+## What The Checked Sources Support
 
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
-## What You Need to Know for the LEA
+RA 9514 requires automatic sprinklers, when required by the relevant occupancy division, to be installed in accordance with NFPA 13 or NFPA 13R as applicable. Required sprinkler and standpipe systems are inspected, tested, and maintained in accordance with NFPA 25, with records submitted together with the Fire Safety Maintenance Report.
 
-## Learning Goal
-Apply sprinkler system impact on egress — increased travel distance (46m → 61m) and dead-end corridor allowance (6m → 15m), identify when sprinklers are required per RA 9514, and specify fire detection and alarm system components.
-Sprinkler systems and fire detection change two critical egress parameters: sprinklers increase the allowable travel distance from **$46\text{m}$ to $61\text{m}$** and extend the allowable length of dead-end corridors from **$6\text{m}$ to $15\text{m}$**. This is one of the highest-impact code relationships in fire safety design for the Licensure Examination for Architects.
+Where a required sprinkler system is out of service for more than four hours in a twenty-four-hour period, RA 9514 requires notification to the nearest fire station and assignment of fire watch until the system is returned to service. Where sprinkler supervision is required, supervisory attachments are monitored for integrity, and water-flow alarms are transmitted to an approved receiving facility or fire station.
 
-## Core Concept
-Automatic sprinkler systems, combined with fire detection and alarm systems, significantly reduce the probability that a fire will grow unchecked. Under **RA 9514**, buildings with functioning sprinkler systems are granted longer travel distances and dead-end corridors because early detection and suppression buy occupants more time to evacuate safely.
+For business occupancies, RA 9514 gives a clear tested relationship. Dead-end corridors in buildings protected throughout by an approved, supervised automatic sprinkler system must not exceed 15 m. In other business buildings, dead-end corridors must not exceed 6 m. Common path of travel is 30 m in sprinklered business buildings and 23 m in other business buildings. Travel distance is 61 m in sprinklered business buildings and 46 m in other business buildings.
 
-* **Mechanism**: Sprinklers suppress flames and cool smoke, while detection systems leart occupants faster.
-* **Design Metric**: Sprinklers do not reduce the required number of exits; they only extend the *distance* an occupant can travel before reaching a protected exit route.
-* **System Components**: These systems consist of a water supply, branch lines, and sprinkler heads designed for specific discharge densities (typically $5\text{--}10 \text{ GPM/m}^2$ for common occupancies).
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-dsgn-008-03-core-concept", type="image", caption="Sprinkler System Impact on Egress — Travel Distance and Dead-End Extensions", description="Comparative diagram showing egress parameters without sprinklers (45m travel, 6m dead-end) vs. with sprinklers (60m travel, 15m dead-end). Cross-section showing sprinkler head coverage, detection zones, and alarm system integration per RA 9514.", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+RA 9514 also requires all business occupancy buildings 15 m or more in height to be provided throughout with an approved, supervised sprinkler system designed in accordance with NFPA 13. For hotels and dormitories, the RIRR requires sprinkler protection for four storeys or more, with NFPA 13R for four storeys and below and NFPA 13 for five storeys and above.
 
-## Key Provisions (RA 9514 / Fire Code)
+Sprinklers do not replace every other life-safety requirement. RA 9514 still requires portable fire extinguishers even where the property has sprinklers, standpipes, or other fixed fire protection equipment. Fire alarm rules also remain relevant: where a sprinkler system provides automatic detection and alarm initiation, water flow must operate the alarm initiation device.
 
-| Condition | Travel Distance (Max) | Dead-End Corridor (Max) | Notes |
-|:--- |:--- |:--- |:--- |
-| **Unsprinklered** | $46\text{m}$ | $6\text{m}$ | Baseline/Strict limits |
-| **Sprinklered** | $61\text{m}$ | $15\text{m}$ | Code-mandated bonus |
-| **Alarm Only** | $46\text{m}$ | $6\text{m}$ | Alarms do not extend distance |
+## Safe Answer Workflow
 
-### When Sprinklers are Required
-Per the **2019 IRR of RA 9514**, automatic sprinklers are mandatory for:
-* All **High-Rise Buildings** (where the highest floor is $>15\text{m}$ above fire department access).
-* All **Institutional Occupancies** (hospitals, nursing homes, jails).
-* **Specific Hazard Thresholds**: For example, Mercantile occupancies exceeding $1,115\text{sqm}$ or more than 3 stories.
-
----
-
-## Philippine Practice Context
-The Philippines' high ambient humidity requires sprinkler systems to be resilient against corrosion, especially in coastal areas. The **Bureau of Fire Protection (BFP)** enforces strict compliance through quarterly flow tests and mandatory sprinkler certificates prior to the issuance of an Occupancy Permit. While these systems add $15\text{--}25\%$ to initial mechanical costs, they are considered cost-effective due to life-safety benefits and lower insurance premiums.
-
-## How It's Tested
-
-**Scenario 1: Travel Distance Bonus**
-A floor plan shows a $55\text{m}$ travel distance from a remote room to an exit.
-* **If Unsprinklered**: Non-compliant (Limit is $46\text{m}$).
-* **If Sprinklered**: Compliant (Limit is $61\text{m}$).
-
-**Scenario 2: Dead-End Corridors**
-A proposed design has a $10\text{m}$ dead-end corridor.
-* **Requirement**: This design requires an automatic sprinkler system, as the limit for unsprinklered corridors is strictly $6\text{m}$.
-
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **"Sprinklers = 61/15; No Sprinklers = 46/6."** Memorizing these two pairs covers the majority of egress-bonus questions in the LEA. The bonus reflects the roughly $33\%$ increase in safety margin provided by suppression.
-[/SLATECAMP_UI_BLOCK]
-
-**Exam Tip — ERR-DSGN-011:** Sprinklers increase travel distance from 45m to 60m AND dead-end corridors from 6m to 15m (or 12m to 22.5m depending on code edition). These are the MOST tested code values in fire safety.
-[SLATECAMP_UI_BLOCK:ui_0003 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-dsgn-008-03-core-concept", type="image", caption="Sprinkler Impact — Egress Parameter Comparison Diagram", description="Side-by-side comparison of egress parameters with and without sprinklers: travel distance (46m→61m), dead-end corridor (6m→15m), common path of travel limits, and exit spacing. RA 9514 IRR conditions for sprinkler allowances highlighted.", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-## Cross-References
-
-See **LEA-DSGN-008-01** (Fire Egress) for travel distance and dead-end corridor adjustments, **LEA-DSGN-008-02** (Fire Separation) for sprinkler trade-offs with fire ratings, and **LEA-DSGN-007-09** (Building Systems) for MEP coordination.
+1. Confirm the occupancy.
+2. Confirm whether the building is protected throughout by an approved, supervised automatic sprinkler system.
+3. Use the occupancy-specific travel-distance, dead-end, and common-path values.
+4. Check whether height, storey count, or occupancy rules require sprinklers.
+5. Remember that sprinkler water flow can initiate the fire alarm system, but sprinklers do not remove the need for required alarms, extinguishers, records, or fire watch.
 
 ## Common Mistakes
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\n \"Assuming fire alarms alone grant travel distance bonuses (Only sprinklers do)\",\n \"ERR-DSGN-102: Using 12m for dead-ends instead of the 15m allowed for sprinklered business/mercantile occupancies in the 2019 IRR\",\n \"Swapping values: thinking unsprinklered allows more distance than sprinklered\",\n \"Applying the 61m bonus to high-hazard (Group G) spaces which may have much tighter restrictions\",\n \"Forgetting the high-rise threshold (15m height) that triggers mandatory sprinkler installation\"\n]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+
+- Applying the business-occupancy 61 m travel distance to every occupancy.
+- Giving the sprinklered dead-end allowance to an unsprinklered building.
+- Treating a fire alarm system alone as if it grants the sprinklered egress allowance.
+- Forgetting the 15 m high-rise trigger for business occupancy sprinkler protection.
+- Ignoring impairment procedures when a required sprinkler system is out of service.
+
+## How It Is Tested
+
+LEA-style questions usually give a travel distance, a dead-end length, a height or storey count, and a sprinkler condition. The safe answer is the option that follows the RA 9514 occupancy rule named by the facts.
+
+## Checked Local Sources
+
+- RA 9514 Revised IRR, automatic sprinkler and standpipe requirements, NFPA 13 and NFPA 13R references, inspection and maintenance, supervisory signals, water-flow alarms, business occupancy egress limits, business occupancy sprinkler height trigger, and hotel/dormitory sprinkler requirements.
+- George Salvan, Architectural Utilities 2, sprinkler alarm and water-flow switch discussion.

@@ -1,0 +1,79 @@
+{
+  "question_id": "7c51503e-1a06-4087-a462-0b77207825f0",
+  "baseline_hash": "sha256:e34e93f99e827abd5acfa4ff0a981ab23d188f6edc03850bf01685f4e1fc2cd1",
+  "action": "replace",
+  "reason": "source-audited-article-batch-084-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-004-07-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-084",
+  "approved_at": "2026-05-12T06:55:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "350bd0c3-1bb9-4adf-96f1-5dcd4e052112",
+    "parent_article_slug": "lea-matl-004-07-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Building Construction Illustrated refined markdown lines 3378-3605; Chudley/Greeno lines 18-23; Metals Lecture lines 329-405.",
+    "checked_markdown_lines": [
+      "Building Construction Illustrated refined markdown lines 288-322, 2850-2925, 3378-3605, 4037-4073, 6504-6552, 8492, and 8578-8605; raw PDF pages 18, 105, 121-126, 137-145, 248, and 459 checked by local PyMuPDF extraction.",
+      "Chudley/Greeno refined markdown lines 18-23, 295-305, 433-519, 782-916, and 893-916; raw PDF pages 58, 96, 163-199, 471, 495, and 511 checked by local PyMuPDF extraction.",
+      "Metals Lecture refined markdown lines 329-405 and 856-939; raw PDF pages 23, 26, and 28 checked by local PyMuPDF extraction."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "building-construction-illustrated-b084",
+        "label": "Building Construction Illustrated, 5th Edition",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "refined_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "locator": "Building Construction Illustrated refined markdown lines 288-322, 2850-2925, 3378-3605, 4037-4073, 6504-6552, 8492, and 8578-8605; raw PDF pages 18, 105, 121-126, 137-145, 248, and 459 checked by local PyMuPDF extraction."
+      },
+      {
+        "source_id": "chudley-greeno-handbook-b084",
+        "label": "Buidling Construction Handbook 7th Ed by Chudley _ Greeno",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf",
+        "sha256": "sha256:2efa493fac06a3efb9367111a397129ff8647778d88160bbe0174403cbb9e0bb",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.md",
+        "refined_markdown_sha256": "sha256:485fe968d55ca680cbde52d24fcee5f512a63591026db19e46835f1bc530dcbb",
+        "locator": "Chudley/Greeno refined markdown lines 18-23, 295-305, 433-519, 782-916, and 893-916; raw PDF pages 58, 96, 163-199, 471, 495, and 511 checked by local PyMuPDF extraction."
+      },
+      {
+        "source_id": "metals-lecture-b084",
+        "label": "Metals Lecture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Metals Lecture.pdf",
+        "sha256": "sha256:cd9cd4ee534bda9a974447c4ec73b13b12d5abf1c14df1fca408a2c4530650dd",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Metals Lecture.md",
+        "refined_markdown_sha256": "sha256:4e9e0a042f2eef2c80d33af81512ca2cf32778cae64351af9dc54df58db3694c",
+        "locator": "Metals Lecture refined markdown lines 329-405 and 856-939; raw PDF pages 23, 26, and 28 checked by local PyMuPDF extraction."
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 084 local raw-source-audited structural_steel_construction scope."
+  },
+  "proposed": {
+    "text": "Which steel-frame statement is source-safe for Batch 084?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bolts and welds are common connection methods, but exact design values need a checked table before being asserted"
+      },
+      {
+        "id": "b",
+        "text": "Any remembered AISC value may be inserted without a locator"
+      },
+      {
+        "id": "c",
+        "text": "All steel connections behave identically"
+      },
+      {
+        "id": "d",
+        "text": "Welds are decorative and cannot carry load"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The batch supports connection concepts, not unchecked standard table values.",
+    "explanation": "The batch supports connection concepts, not unchecked standard table values.",
+    "code_citation": "Building Construction Illustrated, 5th Edition; Buidling Construction Handbook 7th Ed by Chudley _ Greeno; Metals Lecture",
+    "bloom_level": "understand",
+    "application_context": "source_audited_local_first_batch_084",
+    "practice_context": [],
+    "difficulty": 0.5
+  }
+}

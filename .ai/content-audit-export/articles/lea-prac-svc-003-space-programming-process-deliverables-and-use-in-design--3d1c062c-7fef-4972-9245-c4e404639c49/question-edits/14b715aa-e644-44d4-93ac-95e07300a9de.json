@@ -1,0 +1,84 @@
+{
+  "question_id": "14b715aa-e644-44d4-93ac-95e07300a9de",
+  "baseline_hash": "sha256:1170cf504cff2fb272abb1f6a94cddb52fb97778d36ff537234758fdb5a347c4",
+  "action": "replace",
+  "reason": "source-audited-article-batch-025-local-first rewrote this linked question to align with the local source audit for lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design.",
+  "approved_by": "codex-local-source-audit-batch-025",
+  "approved_at": "2026-05-11T18:30:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "3d1c062c-7fef-4972-9245-c4e404639c49",
+    "parent_article_slug": "lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "SPP 201 refined markdown lines 328-367; UAP Standards lines 1120-1125",
+    "checked_markdown_lines": [
+      "SPP 201 lines 328-367",
+      "UAP Standards lines 1120-1125"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+        "sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+        "source_id": "spp201-pre-design-services-local",
+        "locator": "SPP 201 lines 328-367"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+        "sha256": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
+        "source_id": "spp201-pre-design-services-local",
+        "locator": "SPP 201 lines 328-367"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "source_id": "uap-standards-local-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design",
+        "locator": "UAP Standards lines 1120-1125"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "source_id": "uap-standards-local-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design",
+        "locator": "UAP Standards lines 1120-1125"
+      }
+    ],
+    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+  },
+  "proposed": {
+    "text": "Under SPP 201, what is architectural programming primarily concerned with?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Selecting the contractor before design starts"
+      },
+      {
+        "id": "b",
+        "text": "Identifying project requirements through an analytical, problem-seeking pre-design process"
+      },
+      {
+        "id": "c",
+        "text": "Issuing construction change orders"
+      },
+      {
+        "id": "d",
+        "text": "Approving occupancy after construction"
+      }
+    ],
+    "correct_option_id": "b",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "SPP 201 describes architectural programming as an analytical problem-seeking process for identifying requirements before design.",
+    "explanation": "This Batch 025 replacement is tied to the checked local UAP source locator and removes wording that was not needed for source-safe assessment.",
+    "code_citation": "SPP 201 refined markdown lines 328-367; UAP Standards lines 1120-1125",
+    "bloom_level": "remember",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited batch 025"
+    ],
+    "difficulty": 0.42,
+    "is_assessment": false,
+    "model_id": "BATCH-025-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design-001"
+  }
+}

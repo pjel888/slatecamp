@@ -1,0 +1,124 @@
+{
+  "artifact_type": "source_audit_evidence",
+  "batch_id": "source-audited-article-batch-057-local-first",
+  "batch_number": 57,
+  "audit_mode": "local_first_raw_pdf_primary",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T20:10:30.000+08:00",
+  "target": {
+    "article_id": "62274e90-5cb3-4bc0-85a1-639858e47736",
+    "slug": "lea-theo-002-01-core-concept",
+    "title": "Classification of Buildings by Human Need",
+    "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-01-core-concept--62274e90-5cb3-4bc0-85a1-639858e47736",
+    "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-01-core-concept--62274e90-5cb3-4bc0-85a1-639858e47736/question-edits",
+    "linked_questions": 13,
+    "question_edits": 13
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth": "vitruvius-connection/001_Raw-Source-Layer local raw PDFs",
+    "derivative_or_search_layers_used_as_primary_truth": false,
+    "refined_markdown_used_only_as_locator": true,
+    "checked_sources": [
+      {
+        "source_id": "salvan-theory-local-raw-pdf--b057-62274e90-01",
+        "label": "George Salvan Architectural Theories of Design - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "raw_pdf_sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
+        "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
+        "locator": "George Salvan Architectural Theories of Design refined markdown lines 195, 223-230, 542-548, and 7982"
+      },
+      {
+        "source_id": "theory-local-raw-pdf--b057-62274e90-02",
+        "label": "theory - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+        "raw_pdf_sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+        "refined_markdown_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+        "locator": "theory refined markdown line 184"
+      },
+      {
+        "source_id": "toa1-intro-local-raw-pdf--b057-62274e90-03",
+        "label": "TOA 1 Intro to Theory - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 1 (Intro to Theory).pdf",
+        "raw_pdf_sha256": "sha256:17ee07310eaf7fbd71aeb3cb3b57a6ffb623e2b8b1957543d74b706a5184d0e0",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md",
+        "refined_markdown_sha256": "sha256:fc665ed41ea62ddb69c88ba02c7b92628481ba6792a075bc21694ca072b150d6",
+        "locator": "TOA 1 Intro to Theory refined markdown line 46"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "theory-of-architecture",
+    "contains_legal_or_code_claims": false,
+    "source_risk_tier": "medium",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 13,
+    "question_edits_created": [
+      "b52aef0e-bf29-4862-8504-1043690499dc",
+      "3bda1e21-1685-4e01-a715-cf7a8de8688c",
+      "4db989c7-3aea-4d33-aef7-f9576d9a8bd3",
+      "77ada63b-b941-424c-bb47-08e999b3b5ff",
+      "30f34bc4-098b-44b7-bba3-d3ea6ee6fa69",
+      "b26b6881-a570-410c-bfd2-743872506172",
+      "4ec523c4-078a-4cc7-876b-f79972285e54",
+      "ef6f21c7-eed0-4da6-a9e5-c5daafa36b93",
+      "c7f8268e-4ac0-4de7-b3ec-12d3e1ed7f69",
+      "89a429b7-0b31-4483-bdd3-9ff1fe7af716",
+      "6e077e5c-3cec-4fd9-8b60-2017fb3f00d1",
+      "dcc60bc7-d9cb-471c-b54a-f95a36ab7ef4",
+      "df265b55-38ec-48da-a497-d4b411de462c"
+    ],
+    "scenario_policy_status": "eligible-deferred",
+    "scenario_policy_reason": "Building-need scenarios are useful, but this batch keeps scenario enrichment deferred to preserve source-audited article/question correctness."
+  },
+  "claims": [
+    {
+      "claim_id": "lea-theo-002-01-core-concept-b057-claim-01",
+      "claim_text": "Classification of Buildings by Human Need is limited to checked local raw PDF source families and the refined markdown locators recorded for this article.",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "quoted_pdf_excerpt": "George Salvan Architectural Theories of Design refined markdown lines 195, 223-230, 542-548, and 7982; theory refined markdown line 184; TOA 1 Intro to Theory refined markdown line 46",
+        "source_ids": [
+          "salvan-theory-local-raw-pdf--b057-62274e90-01",
+          "theory-local-raw-pdf--b057-62274e90-02",
+          "toa1-intro-local-raw-pdf--b057-62274e90-03"
+        ]
+      },
+      "audit_result": "PASS"
+    }
+  ],
+  "checked_markdown_lines": [
+    "George Salvan Architectural Theories of Design refined markdown line 195",
+    "George Salvan Architectural Theories of Design refined markdown lines 223-230",
+    "George Salvan Architectural Theories of Design refined markdown lines 542-548",
+    "George Salvan Architectural Theories of Design refined markdown line 7982",
+    "theory refined markdown line 184",
+    "TOA 1 Intro to Theory refined markdown line 46"
+  ],
+  "unverified_or_rejected_claims": [],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "local_first_only": true,
+    "supabase_write_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json",
+    "diff_gate": "safe_true_blockers_zero",
+    "validate_gate": "valid_true_blockers_zero",
+    "ui_block_edits_gate": "valid_true_blockers_zero"
+  },
+  "sme_review": {
+    "required_before_publication": true,
+    "status": "not_started_local_first_batch",
+    "note": "Local-first source audit is ready for later human/SME review before final publishing."
+  },
+  "overall": {
+    "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+    "blockers": []
+  }
+}

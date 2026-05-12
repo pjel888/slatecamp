@@ -1,0 +1,130 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-054-local-first",
+  "batch_number": 54,
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T19:22:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "efb82628-9bf4-4bde-9561-8b784384c32c",
+    "slug": "pre-columbian-mesoamerica",
+    "title": "Pre-Columbian Mesoamerica",
+    "article_folder": ".ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c",
+    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c",
+    "candidate_path": ".ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c/candidate.md",
+    "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c/candidate.md",
+    "question_edits_folder": ".ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c/question-edits",
+    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pre-columbian-mesoamerica--efb82628-9bf4-4bde-9561-8b784384c32c/question-edits",
+    "normalized_sha256": "sha256:217acf7be1005c7e160f35e8e81f14ea19609d2a9f53856f1032edba4b2d1256",
+    "candidate_sha256": "sha256:217acf7be1005c7e160f35e8e81f14ea19609d2a9f53856f1032edba4b2d1256",
+    "linked_questions_sha256": "sha256:0e23420c69a77b08ddbbcc8c4cfb69ad9c6ea3dcbebb434e87e4107f63076bdf",
+    "sources_sha256": "sha256:46e3de84d00c718e6b1d6881303ff61fd8b1ebbb139b7845f7d617b54f5d5c6b"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "refined_markdown_role": "locator_only",
+    "derivative_or_search_layer_as_primary": false,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": [],
+    "source_families_checked": [
+      {
+        "label": "George Salvan Architectural Character and the History of Architecture - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Character and the History of Architecture.pdf",
+        "raw_pdf_sha256": "sha256:55c4fa2d43bbfd27cffb86d0aac4ad960032e178e1e25c29d4eb351297bfc069",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Character and the History of Architecture.md",
+        "refined_markdown_sha256": "sha256:be8e760bef8f7ceb573742d996dabb202f0353e19b4ab9283ec2de7dfc1fccea",
+        "locator": "George Salvan Architectural Character refined markdown lines 1238-1315"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "history-of-architecture",
+    "contains_legal_or_code_claims": false,
+    "source_risk_tier": "medium",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 22,
+    "question_edits_created": [
+      "e86e9e26-e319-41d1-abbb-a3118249a3af",
+      "18e4ff83-dfef-4edf-ac51-74cb5b2bb03b",
+      "fc6daeb3-8e4f-471e-8464-fec1057a5371",
+      "5345ce3b-4364-4693-b923-40c8dd709f78",
+      "63bd338d-6109-40e1-b12d-926b887579bb",
+      "1189823e-20bc-453e-a3d7-465c226ba29c",
+      "998f17a8-23f2-4649-bb9c-0443224c47e2",
+      "53e484c3-aa57-4b45-97db-4c605e7e207d",
+      "f7fa7dd3-c7c5-4566-bdc8-9066b655d966",
+      "687c6271-c77a-4f68-8ad3-ca61280cdd21",
+      "cf37815d-477f-404d-a77f-52af21baeacf",
+      "b08a1a50-33e9-414a-93cc-b2d050639af0",
+      "3befb5a4-d6b2-4e0d-abf4-52a46f943c44",
+      "fa82eacf-b6a1-44ff-9698-b25104b1cdca",
+      "d09bbf3e-744a-4248-b850-2b3ec5c588df",
+      "de97a38d-c512-4e59-9872-a5885a399cf7",
+      "b7b31282-7677-4aa1-bb86-f9a7509a8931",
+      "1ab5490a-a144-46d5-88cd-e69e4fa4cda0",
+      "db9ab8e0-5a83-463b-949a-582c34ffd455",
+      "d5587968-86d8-422a-bfa8-712194dc836d",
+      "092736ff-5c5e-4537-9434-826ee5ec8bea",
+      "45080159-4b8b-460b-8af9-328123d75ef5"
+    ]
+  },
+  "checked_markdown_lines": [
+    "George Salvan Architectural Character refined markdown lines 1238-1241",
+    "George Salvan Architectural Character refined markdown lines 1245-1257",
+    "George Salvan Architectural Character refined markdown lines 1261-1265",
+    "George Salvan Architectural Character refined markdown lines 1273-1281",
+    "George Salvan Architectural Character refined markdown lines 1285-1315"
+  ],
+  "claims": [
+    {
+      "claim_id": "pre-columbian-mesoamerica-b054-claim-01",
+      "claim_text": "Pre-Columbian Mesoamerica in Batch 054 is limited to checked local raw PDF source families and the refined markdown locators recorded for this article.",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Character and the History of Architecture.pdf",
+        "quoted_pdf_excerpt": "George Salvan Architectural Character refined markdown lines 1238-1315",
+        "source_ids": [
+          "salvan-character-local-raw-pdf--b054-efb82628-01"
+        ]
+      },
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "pre-columbian-mesoamerica-b054-claim-questions",
+      "claim_text": "Batch 054 question edits audited for pre-columbian-mesoamerica: e86e9e26-e319-41d1-abbb-a3118249a3af, 18e4ff83-dfef-4edf-ac51-74cb5b2bb03b, fc6daeb3-8e4f-471e-8464-fec1057a5371, 5345ce3b-4364-4693-b923-40c8dd709f78, 63bd338d-6109-40e1-b12d-926b887579bb, 1189823e-20bc-453e-a3d7-465c226ba29c, 998f17a8-23f2-4649-bb9c-0443224c47e2, 53e484c3-aa57-4b45-97db-4c605e7e207d, f7fa7dd3-c7c5-4566-bdc8-9066b655d966, 687c6271-c77a-4f68-8ad3-ca61280cdd21, cf37815d-477f-404d-a77f-52af21baeacf, b08a1a50-33e9-414a-93cc-b2d050639af0, 3befb5a4-d6b2-4e0d-abf4-52a46f943c44, fa82eacf-b6a1-44ff-9698-b25104b1cdca, d09bbf3e-744a-4248-b850-2b3ec5c588df, de97a38d-c512-4e59-9872-a5885a399cf7, b7b31282-7677-4aa1-bb86-f9a7509a8931, 1ab5490a-a144-46d5-88cd-e69e4fa4cda0, db9ab8e0-5a83-463b-949a-582c34ffd455, d5587968-86d8-422a-bfa8-712194dc836d, 092736ff-5c5e-4537-9434-826ee5ec8bea, 45080159-4b8b-460b-8af9-328123d75ef5",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Character and the History of Architecture.pdf",
+        "quoted_pdf_excerpt": "George Salvan Architectural Character refined markdown lines 1238-1315",
+        "source_ids": [
+          "salvan-character-local-raw-pdf--b054-efb82628-01"
+        ]
+      },
+      "audit_result": "PASS"
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "local_first_only": true,
+    "supabase_write_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json"
+  },
+  "sme_review": {
+    "required": false,
+    "status": "not_required"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

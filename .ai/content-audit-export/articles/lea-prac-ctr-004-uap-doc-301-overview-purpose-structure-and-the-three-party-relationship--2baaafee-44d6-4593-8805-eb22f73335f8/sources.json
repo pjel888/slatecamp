@@ -1,7 +1,61 @@
 {
   "article_id": "2baaafee-44d6-4593-8805-eb22f73335f8",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "source_count": 0,
-  "sources": []
+  "sources_hash": "sha256:ec269e8a41a4386b37659e9063ed695ccf6c414f3f6545fea5a5e51fc6518c2e",
+  "source_count": 2,
+  "sources": [
+    {
+      "source_id": "uap-document-301-general-conditions-local",
+      "article_id": "2baaafee-44d6-4593-8805-eb22f73335f8",
+      "label": "UAP Document 301 - General Conditions for construction contract documents",
+      "url": null,
+      "source_type": "professional_practice_contract_pdf",
+      "description": "Local raw PDF and refined markdown checked for UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-11T15:30:00.000+08:00",
+      "updated_at": "2026-05-11T15:30:00.000+08:00",
+      "local_source_audit": {
+        "authority": "United Architects of the Philippines / PRC Board approved general conditions source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "refined_markdown_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+        "source_locator": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090",
+        "checked_markdown_lines": [
+          "UAP Document 301 lines 472-545",
+          "UAP Document 301 lines 923-998",
+          "UAP Document 301 lines 1019-1051",
+          "UAP Document 301 lines 1062-1090"
+        ],
+        "local_source_checked": true
+      }
+    },
+    {
+      "source_id": "ciap-document-102-private-construction-contract-local",
+      "article_id": "2baaafee-44d6-4593-8805-eb22f73335f8",
+      "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
+      "url": null,
+      "source_type": "construction_contract_pdf",
+      "description": "Local raw PDF and refined markdown checked for CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820.",
+      "is_verified": true,
+      "sort_order": 2,
+      "created_at": "2026-05-11T15:30:00.000+08:00",
+      "updated_at": "2026-05-11T15:30:00.000+08:00",
+      "local_source_audit": {
+        "authority": "Construction Industry Authority of the Philippines / DTI private construction contract source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+        "refined_markdown_sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
+        "source_locator": "CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820",
+        "checked_markdown_lines": [
+          "CIAP Document 102 lines 169-258",
+          "CIAP Document 102 lines 712-761",
+          "CIAP Document 102 lines 807-820"
+        ],
+        "local_source_checked": true
+      }
+    }
+  ]
 }

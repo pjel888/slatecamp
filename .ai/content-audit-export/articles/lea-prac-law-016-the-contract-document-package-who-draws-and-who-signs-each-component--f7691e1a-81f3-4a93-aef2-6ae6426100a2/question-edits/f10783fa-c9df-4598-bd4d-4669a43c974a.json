@@ -1,0 +1,31 @@
+{
+  "question_id": "f10783fa-c9df-4598-bd4d-4669a43c974a",
+  "baseline_hash": "sha256:835dff9350d18768bd843376840f272b56b12982fe75b0279d26c2df026a9fdb",
+  "reason": "Batch 006 local source audit aligned linked question ALE-PRAC-LAW-016-002 to verified raw-source claims for lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component.",
+  "approved_by": "codex-local-source-audit-batch-006",
+  "approved_at": "2026-05-10T22:30:00+08:00",
+  "proposed": {
+    "code_citation": "RA 9266 IRR Sections 3(18), 20, and 32",
+    "explanation": "Source-audited against RA 9266 IRR Sections 3(18), 3(26), 20, 23, and 32 plus UAP Document 301; the answer turns on architectural-document signing/sealing and coordinated contract documents.",
+    "text": "Which professional may sign and seal architectural drawings, specifications, and other architectural documents under RA 9266?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The client's project representative"
+      },
+      {
+        "id": "b",
+        "text": "A registered and licensed architect acting within the architectural scope"
+      },
+      {
+        "id": "c",
+        "text": "The contractor's project manager"
+      },
+      {
+        "id": "d",
+        "text": "Any registered professional on the project, regardless of discipline"
+      }
+    ],
+    "correct_option_id": "b"
+  }
+}

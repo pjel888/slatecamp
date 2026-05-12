@@ -1,0 +1,406 @@
+{
+  "schema_version": "source-audit-evidence-v1-local-first",
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-034-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T10:59:50+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "355981c3-3480-4441-991d-8d8e94cd20b5",
+    "slug": "lea-prac-svc-016-post-construction-services-building-administration-and-operations-support",
+    "title": "Post-Construction Services, Building Administration, and Operations Support",
+    "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-016-post-construction-services-building-administration-and-operations-support--355981c3-3480-4441-991d-8d8e94cd20b5",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-016-post-construction-services-building-administration-and-operations-support--355981c3-3480-4441-991d-8d8e94cd20b5",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-svc-016-post-construction-services-building-administration-and-operations-support--355981c3-3480-4441-991d-8d8e94cd20b5/candidate.md",
+    "candidate_sha256": "sha256:7490315318afbaef08a2c06861f74590e0e70857b7f7010dce1961299178dc69",
+    "normalized_sha256": "sha256:7490315318afbaef08a2c06861f74590e0e70857b7f7010dce1961299178dc69",
+    "linked_questions_sha256": "sha256:4d23d110f3556e63d5522e72a1886cfddf63d7c2df056871f93730283ecd7aff",
+    "sources_sha256": "sha256:11853a81a6fb80f03de4d04812694afdebbacd10c4f7b5f7f73731d0080035d9"
+  },
+  "classification": {
+    "content_domain": "LEA Professional Services",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high_value_professional_services",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": [
+      "4155ce7a-5914-41b3-a5e3-d0649ee23756",
+      "2d9599f4-a566-4675-af86-f79ecb07de33",
+      "2ec36ffb-76bb-4559-8bbf-d3e7c4995416",
+      "9b4c9434-5df0-42f5-85e0-3a17094b2658",
+      "49953045-b8b1-4005-8136-e6fef30067bf",
+      "81a83ed9-b149-4b23-8a0a-23b0815eee59",
+      "720544b3-9f87-45ac-bce7-cadb0f6d0e41",
+      "ee958e99-3286-4bc9-be12-1eee004491bd",
+      "ef92ceb1-26fd-44b3-a4ab-cca004e2ada8",
+      "783f0334-4f83-4027-8db4-5563ac278ac1"
+    ]
+  },
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/lea-prac-svc-016-post-construction-services-building-administration-and-operations-support--355981c3-3480-4441-991d-8d8e94cd20b5",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-016-post-construction-services-building-administration-and-operations-support--355981c3-3480-4441-991d-8d8e94cd20b5",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-svc-016-post-construction-services-building-administration-and-operations-support--355981c3-3480-4441-991d-8d8e94cd20b5/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-016-post-construction-services-building-administration-and-operations-support--355981c3-3480-4441-991d-8d8e94cd20b5/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/lea-prac-svc-016-post-construction-services-building-administration-and-operations-support--355981c3-3480-4441-991d-8d8e94cd20b5/question-edits/4155ce7a-5914-41b3-a5e3-d0649ee23756.json",
+      ".ai/content-audit-export/articles/lea-prac-svc-016-post-construction-services-building-administration-and-operations-support--355981c3-3480-4441-991d-8d8e94cd20b5/question-edits/2d9599f4-a566-4675-af86-f79ecb07de33.json",
+      ".ai/content-audit-export/articles/lea-prac-svc-016-post-construction-services-building-administration-and-operations-support--355981c3-3480-4441-991d-8d8e94cd20b5/question-edits/2ec36ffb-76bb-4559-8bbf-d3e7c4995416.json",
+      ".ai/content-audit-export/articles/lea-prac-svc-016-post-construction-services-building-administration-and-operations-support--355981c3-3480-4441-991d-8d8e94cd20b5/question-edits/9b4c9434-5df0-42f5-85e0-3a17094b2658.json",
+      ".ai/content-audit-export/articles/lea-prac-svc-016-post-construction-services-building-administration-and-operations-support--355981c3-3480-4441-991d-8d8e94cd20b5/question-edits/49953045-b8b1-4005-8136-e6fef30067bf.json",
+      ".ai/content-audit-export/articles/lea-prac-svc-016-post-construction-services-building-administration-and-operations-support--355981c3-3480-4441-991d-8d8e94cd20b5/question-edits/81a83ed9-b149-4b23-8a0a-23b0815eee59.json",
+      ".ai/content-audit-export/articles/lea-prac-svc-016-post-construction-services-building-administration-and-operations-support--355981c3-3480-4441-991d-8d8e94cd20b5/question-edits/720544b3-9f87-45ac-bce7-cadb0f6d0e41.json",
+      ".ai/content-audit-export/articles/lea-prac-svc-016-post-construction-services-building-administration-and-operations-support--355981c3-3480-4441-991d-8d8e94cd20b5/question-edits/ee958e99-3286-4bc9-be12-1eee004491bd.json",
+      ".ai/content-audit-export/articles/lea-prac-svc-016-post-construction-services-building-administration-and-operations-support--355981c3-3480-4441-991d-8d8e94cd20b5/question-edits/ef92ceb1-26fd-44b3-a4ab-cca004e2ada8.json",
+      ".ai/content-audit-export/articles/lea-prac-svc-016-post-construction-services-building-administration-and-operations-support--355981c3-3480-4441-991d-8d8e94cd20b5/question-edits/783f0334-4f83-4027-8db4-5563ac278ac1.json"
+    ]
+  },
+  "raw_sources": [
+    {
+      "source_id": "uap-spp-205-local",
+      "label": "UAP SPP Document 205 - Post-construction Services",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 205.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 205.pdf",
+      "raw_pdf_sha256": "sha256:8511f90780e4d26f966c941142bde99395337280f12ce1035c68d3e7ebb41b33",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 205.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 205.md",
+      "refined_markdown_sha256": "sha256:8a0b4833ce68e5daeb2ec4403d32ff95f7cfc192218a526e44618c41cf6e563a",
+      "source_locator": "UAP SPP 205 refined markdown lines 3-7, 119-129",
+      "checked_markdown_lines": [
+        "UAP SPP 205 refined markdown lines 3-7",
+        "119-129"
+      ]
+    },
+    {
+      "source_id": "uap-standards-professional-practice2-local",
+      "label": "UAP Standards of Professional Practice - compiled SPP source",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+      "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+      "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+      "source_locator": "UAP Standards of Professional Practice refined markdown lines 300-350, 362-418, 475-586, 1036-1077, 1097-1215",
+      "checked_markdown_lines": [
+        "UAP Standards of Professional Practice refined markdown lines 300-350",
+        "362-418",
+        "475-586",
+        "1036-1077",
+        "1097-1215"
+      ]
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "uap-spp-205-local",
+      "label": "UAP SPP Document 205 - Post-construction Services",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 205.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 205.pdf",
+      "raw_pdf_sha256": "sha256:8511f90780e4d26f966c941142bde99395337280f12ce1035c68d3e7ebb41b33",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 205.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 205.md",
+      "refined_markdown_sha256": "sha256:8a0b4833ce68e5daeb2ec4403d32ff95f7cfc192218a526e44618c41cf6e563a",
+      "source_locator": "UAP SPP 205 refined markdown lines 3-7, 119-129",
+      "checked_markdown_lines": [
+        "UAP SPP 205 refined markdown lines 3-7",
+        "119-129"
+      ]
+    },
+    {
+      "source_id": "uap-standards-professional-practice2-local",
+      "label": "UAP Standards of Professional Practice - compiled SPP source",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+      "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+      "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+      "source_locator": "UAP Standards of Professional Practice refined markdown lines 300-350, 362-418, 475-586, 1036-1077, 1097-1215",
+      "checked_markdown_lines": [
+        "UAP Standards of Professional Practice refined markdown lines 300-350",
+        "362-418",
+        "475-586",
+        "1036-1077",
+        "1097-1215"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "b034-svc016-01",
+      "claim_text": "SPP 205 anchors Post-construction Services.",
+      "claim_type": "professional_practice_source_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "UAP SPP Document 205 - Post-construction Services",
+        "locator": "UAP SPP 205 refined markdown lines 3-7",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 205.pdf",
+        "raw_pdf_sha256": "sha256:8511f90780e4d26f966c941142bde99395337280f12ce1035c68d3e7ebb41b33",
+        "quoted_pdf_excerpt": "SPP 205 title identifies Post-construction Services."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b034-svc016-02",
+      "claim_text": "Post-construction services keep communication open for performance and upkeep information.",
+      "claim_type": "professional_practice_source_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "UAP Standards of Professional Practice - compiled SPP source",
+        "locator": "UAP Standards of Professional Practice refined markdown lines 1040-1044",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+        "quoted_pdf_excerpt": "The compiled SPP describes post-construction communication channels."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b034-svc016-03",
+      "claim_text": "Building and Facilities Administration includes maintenance, grounds, equipment, and business tasks.",
+      "claim_type": "professional_practice_source_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "UAP Standards of Professional Practice - compiled SPP source",
+        "locator": "UAP Standards of Professional Practice refined markdown lines 1046-1069",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+        "quoted_pdf_excerpt": "The compiled SPP lists post-construction administration tasks."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b034-svc016-04",
+      "claim_text": "Post-Construction Evaluation compares design program to actual use and evaluates systems and defects.",
+      "claim_type": "professional_practice_source_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "UAP Standards of Professional Practice - compiled SPP source",
+        "locator": "UAP Standards of Professional Practice refined markdown lines 1070-1077",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+        "quoted_pdf_excerpt": "The compiled SPP lists post-construction evaluation tasks."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b034-svc016-05",
+      "claim_text": "Post-construction services include Building and Facilities Administration and Post-Construction Evaluation.",
+      "claim_type": "professional_practice_source_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "UAP Standards of Professional Practice - compiled SPP source",
+        "locator": "UAP Standards of Professional Practice refined markdown lines 1170-1172",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+        "quoted_pdf_excerpt": "The compiled SPP names the two post-construction categories."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b034-question-4155ce7a-5914-41b3-a5e3-d0649ee23756",
+      "claim_text": "Question 4155ce7a-5914-41b3-a5e3-d0649ee23756 / ALE-PRAC-SVC-016-001 has a source-safe question-edits rewrite aligned to lea-prac-svc-016-post-construction-services-building-administration-and-operations-support.",
+      "claim_type": "linked_question_source_safe_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "UAP SPP Document 205 - Post-construction Services",
+        "locator": "UAP SPP 205 refined markdown lines 3-7, 119-129",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 205.pdf",
+        "raw_pdf_sha256": "sha256:8511f90780e4d26f966c941142bde99395337280f12ce1035c68d3e7ebb41b33",
+        "quoted_pdf_excerpt": "Linked question rewrite is tied to the audited source family and article claims."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b034-question-2d9599f4-a566-4675-af86-f79ecb07de33",
+      "claim_text": "Question 2d9599f4-a566-4675-af86-f79ecb07de33 / ALE-PRAC-SVC-016-010 has a source-safe question-edits rewrite aligned to lea-prac-svc-016-post-construction-services-building-administration-and-operations-support.",
+      "claim_type": "linked_question_source_safe_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "UAP SPP Document 205 - Post-construction Services",
+        "locator": "UAP SPP 205 refined markdown lines 3-7, 119-129",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 205.pdf",
+        "raw_pdf_sha256": "sha256:8511f90780e4d26f966c941142bde99395337280f12ce1035c68d3e7ebb41b33",
+        "quoted_pdf_excerpt": "Linked question rewrite is tied to the audited source family and article claims."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b034-question-2ec36ffb-76bb-4559-8bbf-d3e7c4995416",
+      "claim_text": "Question 2ec36ffb-76bb-4559-8bbf-d3e7c4995416 / ALE-PRAC-SVC-016-005 has a source-safe question-edits rewrite aligned to lea-prac-svc-016-post-construction-services-building-administration-and-operations-support.",
+      "claim_type": "linked_question_source_safe_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "UAP SPP Document 205 - Post-construction Services",
+        "locator": "UAP SPP 205 refined markdown lines 3-7, 119-129",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 205.pdf",
+        "raw_pdf_sha256": "sha256:8511f90780e4d26f966c941142bde99395337280f12ce1035c68d3e7ebb41b33",
+        "quoted_pdf_excerpt": "Linked question rewrite is tied to the audited source family and article claims."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b034-question-9b4c9434-5df0-42f5-85e0-3a17094b2658",
+      "claim_text": "Question 9b4c9434-5df0-42f5-85e0-3a17094b2658 / ALE-PRAC-SVC-016-007 has a source-safe question-edits rewrite aligned to lea-prac-svc-016-post-construction-services-building-administration-and-operations-support.",
+      "claim_type": "linked_question_source_safe_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "UAP SPP Document 205 - Post-construction Services",
+        "locator": "UAP SPP 205 refined markdown lines 3-7, 119-129",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 205.pdf",
+        "raw_pdf_sha256": "sha256:8511f90780e4d26f966c941142bde99395337280f12ce1035c68d3e7ebb41b33",
+        "quoted_pdf_excerpt": "Linked question rewrite is tied to the audited source family and article claims."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b034-question-49953045-b8b1-4005-8136-e6fef30067bf",
+      "claim_text": "Question 49953045-b8b1-4005-8136-e6fef30067bf / ALE-PRAC-SVC-016-004 has a source-safe question-edits rewrite aligned to lea-prac-svc-016-post-construction-services-building-administration-and-operations-support.",
+      "claim_type": "linked_question_source_safe_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "UAP SPP Document 205 - Post-construction Services",
+        "locator": "UAP SPP 205 refined markdown lines 3-7, 119-129",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 205.pdf",
+        "raw_pdf_sha256": "sha256:8511f90780e4d26f966c941142bde99395337280f12ce1035c68d3e7ebb41b33",
+        "quoted_pdf_excerpt": "Linked question rewrite is tied to the audited source family and article claims."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b034-question-81a83ed9-b149-4b23-8a0a-23b0815eee59",
+      "claim_text": "Question 81a83ed9-b149-4b23-8a0a-23b0815eee59 / ALE-PRAC-SVC-016-002 has a source-safe question-edits rewrite aligned to lea-prac-svc-016-post-construction-services-building-administration-and-operations-support.",
+      "claim_type": "linked_question_source_safe_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "UAP SPP Document 205 - Post-construction Services",
+        "locator": "UAP SPP 205 refined markdown lines 3-7, 119-129",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 205.pdf",
+        "raw_pdf_sha256": "sha256:8511f90780e4d26f966c941142bde99395337280f12ce1035c68d3e7ebb41b33",
+        "quoted_pdf_excerpt": "Linked question rewrite is tied to the audited source family and article claims."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b034-question-720544b3-9f87-45ac-bce7-cadb0f6d0e41",
+      "claim_text": "Question 720544b3-9f87-45ac-bce7-cadb0f6d0e41 / ALE-PRAC-SVC-016-003 has a source-safe question-edits rewrite aligned to lea-prac-svc-016-post-construction-services-building-administration-and-operations-support.",
+      "claim_type": "linked_question_source_safe_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "UAP SPP Document 205 - Post-construction Services",
+        "locator": "UAP SPP 205 refined markdown lines 3-7, 119-129",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 205.pdf",
+        "raw_pdf_sha256": "sha256:8511f90780e4d26f966c941142bde99395337280f12ce1035c68d3e7ebb41b33",
+        "quoted_pdf_excerpt": "Linked question rewrite is tied to the audited source family and article claims."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b034-question-ee958e99-3286-4bc9-be12-1eee004491bd",
+      "claim_text": "Question ee958e99-3286-4bc9-be12-1eee004491bd / ALE-PRAC-SVC-016-009 has a source-safe question-edits rewrite aligned to lea-prac-svc-016-post-construction-services-building-administration-and-operations-support.",
+      "claim_type": "linked_question_source_safe_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "UAP SPP Document 205 - Post-construction Services",
+        "locator": "UAP SPP 205 refined markdown lines 3-7, 119-129",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 205.pdf",
+        "raw_pdf_sha256": "sha256:8511f90780e4d26f966c941142bde99395337280f12ce1035c68d3e7ebb41b33",
+        "quoted_pdf_excerpt": "Linked question rewrite is tied to the audited source family and article claims."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b034-question-ef92ceb1-26fd-44b3-a4ab-cca004e2ada8",
+      "claim_text": "Question ef92ceb1-26fd-44b3-a4ab-cca004e2ada8 / ALE-PRAC-SVC-016-006 has a source-safe question-edits rewrite aligned to lea-prac-svc-016-post-construction-services-building-administration-and-operations-support.",
+      "claim_type": "linked_question_source_safe_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "UAP SPP Document 205 - Post-construction Services",
+        "locator": "UAP SPP 205 refined markdown lines 3-7, 119-129",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 205.pdf",
+        "raw_pdf_sha256": "sha256:8511f90780e4d26f966c941142bde99395337280f12ce1035c68d3e7ebb41b33",
+        "quoted_pdf_excerpt": "Linked question rewrite is tied to the audited source family and article claims."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b034-question-783f0334-4f83-4027-8db4-5563ac278ac1",
+      "claim_text": "Question 783f0334-4f83-4027-8db4-5563ac278ac1 / ALE-PRAC-SVC-016-008 has a source-safe question-edits rewrite aligned to lea-prac-svc-016-post-construction-services-building-administration-and-operations-support.",
+      "claim_type": "linked_question_source_safe_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "UAP SPP Document 205 - Post-construction Services",
+        "locator": "UAP SPP 205 refined markdown lines 3-7, 119-129",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 205.pdf",
+        "raw_pdf_sha256": "sha256:8511f90780e4d26f966c941142bde99395337280f12ce1035c68d3e7ebb41b33",
+        "quoted_pdf_excerpt": "Linked question rewrite is tied to the audited source family and article claims."
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "removed_or_rewritten_material": [
+    "Article body rewritten to local raw-source-supported professional-practice claims.",
+    "Legacy generated UI placeholders removed from normalized markdown.",
+    "Linked questions rewritten in question-edits JSON with source-safe answer keys, rationales, and citations."
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "gate_results": {
+    "compose": "PASS: bun run content-audit:compose -- --article-id <Batch 034 id> --overwrite --strict; changed candidates; blockers=0",
+    "diff": "PASS: bun run content-audit:diff -- --article-id <Batch 034 id> --summary --strict; changed=true; safe_to_push=true; blockers=0",
+    "validate": "PASS: bun run content-audit:validate -- --article-id <Batch 034 id> --summary; valid=true; blockers=0; expected component-usage.json warning only",
+    "push_dry_run": "not_attempted_local_first; Supabase remote fetch/publish is final publishing only",
+    "supabase_mutation": "not_attempted_by_request"
+  },
+  "source_safe_repair": {
+    "normalized_md_rewritten": true,
+    "candidate_md_composed": true,
+    "sources_json_refreshed_to_checked_raw_sources": true,
+    "source_audit_evidence_json_created": true,
+    "question_edits_created": 10,
+    "answer_key_fields_changed": true,
+    "ui_markers_removed_from_normalized": true,
+    "external_business_claims_limited_to_source_safe_form": true
+  },
+  "local_validation": {
+    "compose": {
+      "passed": true,
+      "blockers": [],
+      "candidate_hash": "sha256:7490315318afbaef08a2c06861f74590e0e70857b7f7010dce1961299178dc69",
+      "safe_to_diff": true
+    },
+    "diff": {
+      "passed": true,
+      "blockers": [],
+      "safe_to_push": true,
+      "changed": true
+    },
+    "validate": {
+      "passed": true,
+      "blockers": [],
+      "warnings": [
+        "expected component-usage.json warning only"
+      ]
+    },
+    "scoped_checks": {
+      "passed": true,
+      "blockers": [],
+      "placeholder_matches": []
+    }
+  },
+  "sme_review": {
+    "required": false,
+    "status": "PASS"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

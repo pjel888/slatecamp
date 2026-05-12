@@ -1,0 +1,400 @@
+{
+  "batch_id": "source-audited-article-batch-030-local-first",
+  "generated_at": "2026-05-11T08:32:40.226+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "local_first_only": true,
+  "constraints": {
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "publishing_surface": "Supabase final publishing only; not used in this run"
+  },
+  "selection": {
+    "current_batch_number": 30,
+    "selected_article_ids": [
+      "c36a3b99-3f1c-4478-9c38-be9f76697d6b",
+      "af5e9418-3dd1-4123-beb3-6d6472714254",
+      "33f0a370-4f6f-46ba-b06f-edcce2168cdd",
+      "5e99dd5d-1394-46bc-998e-8915e2595b0b",
+      "d6fa3f26-bf8e-4b5d-9313-fcad16af0d86"
+    ],
+    "rule": "Next five high-value LEA professional-practice contract clusters with linked questions and local raw source families, excluding article IDs recorded in source-audited Batch 001 through Batch 029 artifacts.",
+    "prior_batch_exclusion_result": "PASS: none of the selected Batch 030 article IDs appeared in Batch 001 through Batch 029 source-audited reports/ledgers."
+  },
+  "counts": {
+    "selected_articles": 5,
+    "locally_passed_articles": 5,
+    "linked_questions": 50,
+    "source_safe_question_edits_created": 50,
+    "source_rows": 11,
+    "unique_raw_pdf_files_checked": 3,
+    "remaining_local_blockers": 0
+  },
+  "exact_paths": [
+    {
+      "article_id": "c36a3b99-3f1c-4478-9c38-be9f76697d6b",
+      "slug": "lea-prac-ctr-014-certificate-of-payment-issuance-process-architect-s-certification-role-and-legal-implications",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-014-certificate-of-payment-issuance-process-architect-s-certification-role-and-legal-im--c36a3b99-3f1c-4478-9c38-be9f76697d6b",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-014-certificate-of-payment-issuance-process-architect-s-certification-role-and-legal-im--c36a3b99-3f1c-4478-9c38-be9f76697d6b/question-edits"
+    },
+    {
+      "article_id": "af5e9418-3dd1-4123-beb3-6d6472714254",
+      "slug": "lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions--af5e9418-3dd1-4123-beb3-6d6472714254",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions--af5e9418-3dd1-4123-beb3-6d6472714254/question-edits"
+    },
+    {
+      "article_id": "33f0a370-4f6f-46ba-b06f-edcce2168cdd",
+      "slug": "lea-prac-ctr-017-core-concept",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-017-core-concept--33f0a370-4f6f-46ba-b06f-edcce2168cdd",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-017-core-concept--33f0a370-4f6f-46ba-b06f-edcce2168cdd/question-edits"
+    },
+    {
+      "article_id": "5e99dd5d-1394-46bc-998e-8915e2595b0b",
+      "slug": "lea-prac-ctr-018-core-concept",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-018-core-concept--5e99dd5d-1394-46bc-998e-8915e2595b0b",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-018-core-concept--5e99dd5d-1394-46bc-998e-8915e2595b0b/question-edits"
+    },
+    {
+      "article_id": "d6fa3f26-bf8e-4b5d-9313-fcad16af0d86",
+      "slug": "lea-prac-ctr-020-core-concept",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-020-core-concept--d6fa3f26-bf8e-4b5d-9313-fcad16af0d86",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-020-core-concept--d6fa3f26-bf8e-4b5d-9313-fcad16af0d86/question-edits"
+    }
+  ],
+  "raw_sources_checked": [
+    {
+      "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+      "absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+      "sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+      "locators": [
+        "CIAP Document 102 line 193",
+        "CIAP Document 102 line 522",
+        "CIAP Document 102 line 634",
+        "CIAP Document 102 line 667",
+        "CIAP Document 102 line 681",
+        "CIAP Document 102 line 814",
+        "CIAP Document 102 line 848",
+        "CIAP Document 102 line 905",
+        "CIAP Document 102 line 911",
+        "CIAP Document 102 lines 538-566",
+        "CIAP Document 102 lines 550-568",
+        "CIAP Document 102 lines 623-627",
+        "CIAP Document 102 lines 634-640",
+        "CIAP Document 102 lines 652-667",
+        "CIAP Document 102 lines 870-874",
+        "CIAP Document 102 lines 901-905",
+        "CIAP Document 102 refined markdown lines 193, 634, 681, 814, 848 and 905",
+        "CIAP Document 102 refined markdown lines 522, 667, 848, 870-874 and 901-905",
+        "CIAP Document 102 refined markdown lines 538-566 and 623-627",
+        "CIAP Document 102 refined markdown lines 550-568 and 911",
+        "CIAP Document 102 refined markdown lines 634-640 and 652-667"
+      ],
+      "source_ids": [
+        "ciap-document-102-private-construction-contract-local"
+      ]
+    },
+    {
+      "label": "RA 386 - Civil Code of the Philippines",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code.pdf",
+      "absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code.pdf",
+      "sha256": "sha256:c3551f7d92abed808a64071fdf08832b1f27dc87375775416f52cbc25b4bcba5",
+      "locators": [
+        "Civil Code refined markdown lines 349, 359-360",
+        "RA 386 Civil Code line 349",
+        "RA 386 Civil Code lines 359-360"
+      ],
+      "source_ids": [
+        "ra-386-civil-code-local"
+      ]
+    },
+    {
+      "label": "UAP Document 301 - General Conditions",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+      "absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+      "sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+      "locators": [
+        "UAP Document 301 line 1007",
+        "UAP Document 301 line 1068",
+        "UAP Document 301 line 1072",
+        "UAP Document 301 line 1078",
+        "UAP Document 301 line 775",
+        "UAP Document 301 line 811",
+        "UAP Document 301 line 816",
+        "UAP Document 301 line 878",
+        "UAP Document 301 lines 1019-1026",
+        "UAP Document 301 lines 69",
+        "UAP Document 301 lines 786-790",
+        "UAP Document 301 lines 825-827",
+        "UAP Document 301 lines 840-846",
+        "UAP Document 301 refined markdown lines 69, 825-827, 840-846",
+        "UAP Document 301 refined markdown lines 775, 1019-1026 and 1068",
+        "UAP Document 301 refined markdown lines 786-790 and 1078",
+        "UAP Document 301 refined markdown lines 786-790 and 811",
+        "UAP Document 301 refined markdown lines 816, 878, 1007 and 1072"
+      ],
+      "source_ids": [
+        "uap-document-301-general-conditions-local"
+      ]
+    }
+  ],
+  "validation": {
+    "commands": {
+      "compose": [
+        "bun run content-audit:compose -- --article-id c36a3b99-3f1c-4478-9c38-be9f76697d6b --overwrite --strict",
+        "bun run content-audit:compose -- --article-id af5e9418-3dd1-4123-beb3-6d6472714254 --overwrite --strict",
+        "bun run content-audit:compose -- --article-id 33f0a370-4f6f-46ba-b06f-edcce2168cdd --overwrite --strict",
+        "bun run content-audit:compose -- --article-id 5e99dd5d-1394-46bc-998e-8915e2595b0b --overwrite --strict",
+        "bun run content-audit:compose -- --article-id d6fa3f26-bf8e-4b5d-9313-fcad16af0d86 --overwrite --strict"
+      ],
+      "diff": [
+        "bun run content-audit:diff -- --article-id c36a3b99-3f1c-4478-9c38-be9f76697d6b --summary --strict",
+        "bun run content-audit:diff -- --article-id af5e9418-3dd1-4123-beb3-6d6472714254 --summary --strict",
+        "bun run content-audit:diff -- --article-id 33f0a370-4f6f-46ba-b06f-edcce2168cdd --summary --strict",
+        "bun run content-audit:diff -- --article-id 5e99dd5d-1394-46bc-998e-8915e2595b0b --summary --strict",
+        "bun run content-audit:diff -- --article-id d6fa3f26-bf8e-4b5d-9313-fcad16af0d86 --summary --strict"
+      ],
+      "validate": [
+        "bun run content-audit:validate -- --article-id c36a3b99-3f1c-4478-9c38-be9f76697d6b --summary",
+        "bun run content-audit:validate -- --article-id af5e9418-3dd1-4123-beb3-6d6472714254 --summary",
+        "bun run content-audit:validate -- --article-id 33f0a370-4f6f-46ba-b06f-edcce2168cdd --summary",
+        "bun run content-audit:validate -- --article-id 5e99dd5d-1394-46bc-998e-8915e2595b0b --summary",
+        "bun run content-audit:validate -- --article-id d6fa3f26-bf8e-4b5d-9313-fcad16af0d86 --summary"
+      ],
+      "tests": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "git_diff_check": "git diff --check -- .ai/content-audit-export/articles/lea-prac-ctr-014-certificate-of-payment-issuance-process-architect-s-certification-role-and-legal-im--c36a3b99-3f1c-4478-9c38-be9f76697d6b .ai/content-audit-export/articles/lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions--af5e9418-3dd1-4123-beb3-6d6472714254 .ai/content-audit-export/articles/lea-prac-ctr-017-core-concept--33f0a370-4f6f-46ba-b06f-edcce2168cdd .ai/content-audit-export/articles/lea-prac-ctr-018-core-concept--5e99dd5d-1394-46bc-998e-8915e2595b0b .ai/content-audit-export/articles/lea-prac-ctr-020-core-concept--d6fa3f26-bf8e-4b5d-9313-fcad16af0d86 .ai/03_plans/source-audited-local-first-batches-handoff.md .ai/content-audit-export/source-audited-article-batch-030-local-first-ledger.json .ai/content-audit-export/source-audited-article-batch-030-local-first-report.md .ai/content-audit-export/source-audited-article-batch-030-local-first-scoped-checks.json"
+    },
+    "compose": "PASS: 5/5 changed candidates, blockers=0",
+    "diff": "PASS: 5/5 changed=true safe_to_push=true blockers=0",
+    "validate": "PASS: 5/5 valid=true blockers=0 after normalized hash repair; only expected component-usage.json warnings",
+    "scoped_checks_path": ".ai/content-audit-export/source-audited-article-batch-030-local-first-scoped-checks.json",
+    "scoped_checks": {
+      "json_parse": "PASS",
+      "output_placeholder_internal_source_gap_scan": "PASS",
+      "compose_reports": "PASS",
+      "diff_reports": "PASS",
+      "bundle_validation": "PASS_WITH_EXPECTED_COMPONENT_USAGE_WARNINGS",
+      "source_audit_evidence": "PASS",
+      "raw_pdf_hashes": "PASS",
+      "question_edits": "PASS",
+      "stale_compose_errors": "PASS"
+    },
+    "targeted_tests": {
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "result": "PASS: 34 pass, 0 fail, 328 expect() calls"
+    },
+    "remaining_local_blockers": 0
+  },
+  "artifacts": {
+    "ledger": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-030-local-first-ledger.json",
+    "report": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-030-local-first-report.md",
+    "scoped_checks": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-030-local-first-scoped-checks.json",
+    "handoff_plan": "/Users/philiplewis/slatecamp/.ai/03_plans/source-audited-local-first-batches-handoff.md"
+  },
+  "blockers": [],
+  "articles": [
+    {
+      "article_id": "c36a3b99-3f1c-4478-9c38-be9f76697d6b",
+      "slug": "lea-prac-ctr-014-certificate-of-payment-issuance-process-architect-s-certification-role-and-legal-implications",
+      "title": "Certificate of Payment Issuance Process Architect's Certification",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-014-certificate-of-payment-issuance-process-architect-s-certification-role-and-legal-im--c36a3b99-3f1c-4478-9c38-be9f76697d6b",
+      "absolute_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-014-certificate-of-payment-issuance-process-architect-s-certification-role-and-legal-im--c36a3b99-3f1c-4478-9c38-be9f76697d6b",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-014-certificate-of-payment-issuance-process-architect-s-certification-role-and-legal-im--c36a3b99-3f1c-4478-9c38-be9f76697d6b/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-014-certificate-of-payment-issuance-process-architect-s-certification-role-and-legal-im--c36a3b99-3f1c-4478-9c38-be9f76697d6b/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 2,
+      "hashes": {
+        "original": "sha256:8cc970a25ab807d33e8895a827283bd0d7b4c5d9267647342f812ec6e496307d",
+        "normalized": "sha256:d07d54e4e1d44ec5166325e6113c3a8b0758a39d3b8129e23b76091da678f66b",
+        "candidate": "sha256:d07d54e4e1d44ec5166325e6113c3a8b0758a39d3b8129e23b76091da678f66b",
+        "sources": "sha256:d0e73326e4b15fdfb208290215de7e27fb3dfbcc3b96223d1e2570d97bb762a5"
+      },
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": [],
+        "unresolved_placeholders": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": [],
+        "unresolved_placeholders_count": 0,
+        "ui_blocks_changed_count": 0
+      },
+      "source_audit": {
+        "status": "PASS",
+        "raw_pdf_gate": "PASS",
+        "safe_for_supabase_upload": true,
+        "supabase_push_attempted": false,
+        "deploy_attempted": false,
+        "commit_attempted": false
+      },
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "article_id": "af5e9418-3dd1-4123-beb3-6d6472714254",
+      "slug": "lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions",
+      "title": "Retention Money Standard Rates Purpose and Release Conditions",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions--af5e9418-3dd1-4123-beb3-6d6472714254",
+      "absolute_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions--af5e9418-3dd1-4123-beb3-6d6472714254",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions--af5e9418-3dd1-4123-beb3-6d6472714254/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-015-retention-money-standard-rates-purpose-and-release-conditions--af5e9418-3dd1-4123-beb3-6d6472714254/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 2,
+      "hashes": {
+        "original": "sha256:8c6a9a7c5c5cfd7997480a028a948817242763b467821bb6e475b70c92bb5634",
+        "normalized": "sha256:0e3d337d5cb2836d0a620621407d76729c6fe0d44d8176f42fed401ccbef01cc",
+        "candidate": "sha256:0e3d337d5cb2836d0a620621407d76729c6fe0d44d8176f42fed401ccbef01cc",
+        "sources": "sha256:828493f56a8a6c4fa9f716f5acebcb09ce98a802d4c155bbb31a46107f9a9a9d"
+      },
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": [],
+        "unresolved_placeholders": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": [],
+        "unresolved_placeholders_count": 0,
+        "ui_blocks_changed_count": 0
+      },
+      "source_audit": {
+        "status": "PASS",
+        "raw_pdf_gate": "PASS",
+        "safe_for_supabase_upload": true,
+        "supabase_push_attempted": false,
+        "deploy_attempted": false,
+        "commit_attempted": false
+      },
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "article_id": "33f0a370-4f6f-46ba-b06f-edcce2168cdd",
+      "slug": "lea-prac-ctr-017-core-concept",
+      "title": "Substantial Completion",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-017-core-concept--33f0a370-4f6f-46ba-b06f-edcce2168cdd",
+      "absolute_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-017-core-concept--33f0a370-4f6f-46ba-b06f-edcce2168cdd",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-017-core-concept--33f0a370-4f6f-46ba-b06f-edcce2168cdd/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-017-core-concept--33f0a370-4f6f-46ba-b06f-edcce2168cdd/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 2,
+      "hashes": {
+        "original": "sha256:247bbf1a96fa55e0b48d09e6cc7966f9aaa0dad735479e5e1fabb2853054bf9d",
+        "normalized": "sha256:228bd242968b8f5eaed08902bb7c044cf7ef917e768fbb7ce57e21c6f44dec85",
+        "candidate": "sha256:228bd242968b8f5eaed08902bb7c044cf7ef917e768fbb7ce57e21c6f44dec85",
+        "sources": "sha256:814f8e791675dd5117d803a61f070bbe563b1303a36475dc83e8c6495ce5cc39"
+      },
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": [],
+        "unresolved_placeholders": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": [],
+        "unresolved_placeholders_count": 0,
+        "ui_blocks_changed_count": 0
+      },
+      "source_audit": {
+        "status": "PASS",
+        "raw_pdf_gate": "PASS",
+        "safe_for_supabase_upload": true,
+        "supabase_push_attempted": false,
+        "deploy_attempted": false,
+        "commit_attempted": false
+      },
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "article_id": "5e99dd5d-1394-46bc-998e-8915e2595b0b",
+      "slug": "lea-prac-ctr-018-core-concept",
+      "title": "Punch list",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-018-core-concept--5e99dd5d-1394-46bc-998e-8915e2595b0b",
+      "absolute_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-018-core-concept--5e99dd5d-1394-46bc-998e-8915e2595b0b",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-018-core-concept--5e99dd5d-1394-46bc-998e-8915e2595b0b/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-018-core-concept--5e99dd5d-1394-46bc-998e-8915e2595b0b/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 2,
+      "hashes": {
+        "original": "sha256:769ae570c6eda7fa278f8deb2b52acf31ffb7e4c0ff9eaae8000a37b460169ed",
+        "normalized": "sha256:cb6840af5599d7c5232bf1be7e8c6794b73acc93da1b6ff1de2feb55d9554e08",
+        "candidate": "sha256:cb6840af5599d7c5232bf1be7e8c6794b73acc93da1b6ff1de2feb55d9554e08",
+        "sources": "sha256:ea0b8dd30846cba583e34cc8b6c9f92e316809cf1bf50b7731fd47d396b4d307"
+      },
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": [],
+        "unresolved_placeholders": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": [],
+        "unresolved_placeholders_count": 0,
+        "ui_blocks_changed_count": 0
+      },
+      "source_audit": {
+        "status": "PASS",
+        "raw_pdf_gate": "PASS",
+        "safe_for_supabase_upload": true,
+        "supabase_push_attempted": false,
+        "deploy_attempted": false,
+        "commit_attempted": false
+      },
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "article_id": "d6fa3f26-bf8e-4b5d-9313-fcad16af0d86",
+      "slug": "lea-prac-ctr-020-core-concept",
+      "title": "Construction claims",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-020-core-concept--d6fa3f26-bf8e-4b5d-9313-fcad16af0d86",
+      "absolute_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-020-core-concept--d6fa3f26-bf8e-4b5d-9313-fcad16af0d86",
+      "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-020-core-concept--d6fa3f26-bf8e-4b5d-9313-fcad16af0d86/question-edits",
+      "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-020-core-concept--d6fa3f26-bf8e-4b5d-9313-fcad16af0d86/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 3,
+      "hashes": {
+        "original": "sha256:b7b4b60a2f2b2f3fa1c438e19a060cf16777de99f64e3a2160c86236263d0c50",
+        "normalized": "sha256:c600fcdb787489277fd7492dab19108f5ac5d911c77fac57545044be1fd53bce",
+        "candidate": "sha256:c600fcdb787489277fd7492dab19108f5ac5d911c77fac57545044be1fd53bce",
+        "sources": "sha256:d604ff777d54786dffbec2ebb96d0cb9489fa76b037224a6cb596ae4870697b6"
+      },
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": [],
+        "unresolved_placeholders": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": [],
+        "unresolved_placeholders_count": 0,
+        "ui_blocks_changed_count": 0
+      },
+      "source_audit": {
+        "status": "PASS",
+        "raw_pdf_gate": "PASS",
+        "safe_for_supabase_upload": true,
+        "supabase_push_attempted": false,
+        "deploy_attempted": false,
+        "commit_attempted": false
+      },
+      "blockers": [],
+      "warnings": []
+    }
+  ],
+  "next_phase_readiness": "Batch 030 is locally ready for final publishing review. Batch 031 may be selected under the recorded exclusion rules. No Supabase push, deploy, or commit was attempted."
+}

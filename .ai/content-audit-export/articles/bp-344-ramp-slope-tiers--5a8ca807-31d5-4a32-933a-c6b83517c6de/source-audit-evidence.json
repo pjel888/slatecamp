@@ -1,158 +1,169 @@
 {
+  "schema_version": "source-audit-evidence-v1-local-first",
   "artifact_type": "source-audit-evidence",
-  "audit_date": "2026-05-10",
-  "audited_at": "2026-05-10T12:52:00+08:00",
-  "audit_mode": "local_source_audit_no_supabase",
-  "protocols_applied": [
-    ".ai/CONTENT_EXCELLENCE_GOAL.md",
-    ".ai/00_system/slatecamp-learning-material-depth-protocol.md"
-  ],
+  "batch_id": "source-audited-article-batch-033-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T09:31:19+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
   "target": {
     "article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
     "slug": "bp-344-ramp-slope-tiers",
     "title": "BP 344 Ramp Slope Tiers",
+    "article_folder": ".ai/content-audit-export/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de",
     "candidate_path": ".ai/content-audit-export/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de/candidate.md",
-    "candidate_sha256": "sha256:59f1707fa8ebc489c5de0a4fdbeda48e481127972158c96ad8c9e99af0aef103",
-    "normalized_sha256": "sha256:2e0733fa98677f175285210447aa4a11a62ce71f32130e52b70acd5b2f9eb673",
-    "linked_questions_sha256": "sha256:0d759447f62bb9d5415eb2b19fcfcb4c659a8250380b7b073c84b32aa994ab8f"
+    "candidate_sha256": "sha256:85a3281bd23ec2a85c47274f607725aaf72de0a5db999672eb9767a744393c3e",
+    "normalized_sha256": "sha256:85a3281bd23ec2a85c47274f607725aaf72de0a5db999672eb9767a744393c3e",
+    "linked_questions_sha256": "sha256:9d8df22007a44ceddba7f6afa1ab9751b8249dcfa7b02053187ad0d8a4b53d75",
+    "sources_sha256": "sha256:7713c8533dbae04b2dc2e9c8b4b1933a7d579f3ec148b1f6824e3c8040583a2a"
   },
   "classification": {
-    "content_type": "legal_code_accessibility_article",
+    "content_domain": "LEA Accessibility and Building Code",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high_value_accessibility_code",
     "requires_raw_pdf_audit": true,
-    "linked_questions_audited": 10,
+    "linked_questions_observed": 10,
     "question_edits_created": [
-      "a2aafc8a-50b3-4379-863c-ddfb9d51ecce"
+      "00115b59-c190-476b-8ef2-fae152241b7e",
+      "a2555ae7-ee40-4d1a-a83d-38e1f6145674",
+      "0a31a28e-0935-4565-a118-60b76c0a2c0c",
+      "a2aafc8a-50b3-4379-863c-ddfb9d51ecce",
+      "069dd3a1-aa7d-4221-9a9b-53e3360e278b",
+      "70215fdc-8b37-4339-8c09-b1ff12840f34",
+      "9b6d0315-ba0b-4c42-8bda-d437595c72f9",
+      "2c9264f8-b339-405d-ab6c-df182954b6bd",
+      "4c92b571-c5f6-45e7-accd-4567ebe47393",
+      "b7afac22-7103-40b4-9fca-b6cf8b0b6707"
+    ]
+  },
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de/question-edits/00115b59-c190-476b-8ef2-fae152241b7e.json",
+      ".ai/content-audit-export/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de/question-edits/a2555ae7-ee40-4d1a-a83d-38e1f6145674.json",
+      ".ai/content-audit-export/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de/question-edits/0a31a28e-0935-4565-a118-60b76c0a2c0c.json",
+      ".ai/content-audit-export/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de/question-edits/a2aafc8a-50b3-4379-863c-ddfb9d51ecce.json",
+      ".ai/content-audit-export/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de/question-edits/069dd3a1-aa7d-4221-9a9b-53e3360e278b.json",
+      ".ai/content-audit-export/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de/question-edits/70215fdc-8b37-4339-8c09-b1ff12840f34.json",
+      ".ai/content-audit-export/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de/question-edits/9b6d0315-ba0b-4c42-8bda-d437595c72f9.json",
+      ".ai/content-audit-export/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de/question-edits/2c9264f8-b339-405d-ab6c-df182954b6bd.json",
+      ".ai/content-audit-export/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de/question-edits/4c92b571-c5f6-45e7-accd-4567ebe47393.json",
+      ".ai/content-audit-export/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de/question-edits/b7afac22-7103-40b4-9fca-b6cf8b0b6707.json"
     ]
   },
   "raw_sources": [
     {
-      "key": "bp344_2024_irr",
+      "source_id": "bp-344-2024-revised-irr-ncda-local",
+      "label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
       "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
-      "extraction_method": "PyMuPDF local text extraction from raw PDF",
-      "pages_checked": [
-        2,
-        7,
-        8
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "source_locator": "BP 344 2024 Revised IRR refined markdown lines 40-70",
+      "checked_markdown_lines": [
+        "BP 344 2024 Revised IRR refined markdown lines 40-70"
       ]
-    },
+    }
+  ],
+  "checked_sources": [
     {
-      "key": "pd1096_2004_irr",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-      "extraction_method": "PyMuPDF local text extraction from raw PDF",
-      "pages_checked": [
-        195
+      "source_id": "bp-344-2024-revised-irr-ncda-local",
+      "label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "source_locator": "BP 344 2024 Revised IRR refined markdown lines 40-70",
+      "checked_markdown_lines": [
+        "BP 344 2024 Revised IRR refined markdown lines 40-70"
       ]
     }
   ],
   "claims": [
     {
-      "claim_id": "BP344-RAMP-001",
-      "claim_text": "Article and questions 4c92b571-c5f6-45e7-accd-4567ebe47393, a2555ae7-ee40-4d1a-a83d-38e1f6145674: accessible ramps require 1200 mm minimum clear width and a general gradient not steeper than 1:20.",
-      "claim_class": "dimension_and_slope",
+      "claim_id": "b033-ramp-01",
+      "claim_text": "Accessible ramps have a minimum clear width of 1200 mm and a gradient not steeper than 1:20 unless a source-limited special case applies.",
+      "claim_type": "accessibility_code_claim",
       "audit_result": "PASS",
       "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "locator": "BP 344 refined markdown lines 40-47",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
         "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
-        "raw_pdf_page": 2,
-        "source_locator": "Appendix A, Accessible Ramps, Items 1-2",
-        "quoted_pdf_excerpt": "Minimum clear width of 1200 mm ... Gradient not steeper than 1:20."
-      }
+        "quoted_pdf_excerpt": "Accessible ramps list minimum clear width of 1200 mm and gradient not steeper than 1:20, with special cases depending on length."
+      },
+      "blockers": []
     },
     {
-      "claim_id": "BP344-RAMP-002",
-      "claim_text": "Article and questions 00115b59-c190-476b-8ef2-fae152241b7e, 2c9264f8-b339-405d-ab6c-df182954b6bd, 70215fdc-8b37-4339-8c09-b1ff12840f34: the 1:15 row has 10.50 m maximum length, 700 mm maximum rise, and 10 m landing interval.",
-      "claim_class": "dimension_and_slope_table",
+      "claim_id": "b033-ramp-02",
+      "claim_text": "The BP 344 ramp table identifies a 1:15 special case with 10.50 m maximum length, 700 mm maximum rise, and 10 m landing interval.",
+      "claim_type": "accessibility_code_claim",
       "audit_result": "PASS",
       "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "locator": "BP 344 refined markdown lines 47-50",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
         "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
-        "raw_pdf_page": 2,
-        "source_locator": "Appendix A, Accessible Ramps, Table A.1.1",
-        "quoted_pdf_excerpt": "1:15 10.50m 700mm 10m Table A.1.1.: Accessible Ramps."
-      }
+        "quoted_pdf_excerpt": "Table A.1.1 lists 1:15 with 10.50 m maximum length, 700 mm maximum rise, and 10 m landing interval."
+      },
+      "blockers": []
     },
     {
-      "claim_id": "BP344-RAMP-003",
-      "claim_text": "Article and questions 9b6d0315-ba0b-4c42-8bda-d437595c72f9, 70215fdc-8b37-4339-8c09-b1ff12840f34: ramps longer than 10.50 m require intermediate landings with 1800 mm minimum length, and upper/lower level areas are not less than 1800 mm.",
-      "claim_class": "landing_dimension",
+      "claim_id": "b033-ramp-03",
+      "claim_text": "Ramps longer than 10.50 m need intermediate landings with a minimum length of 1800 mm and 1800 mm level areas at ramp ends.",
+      "claim_type": "accessibility_code_claim",
       "audit_result": "PASS",
       "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "locator": "BP 344 refined markdown lines 56-60",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
         "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
-        "raw_pdf_page": 2,
-        "source_locator": "Appendix A, Accessible Ramps, Items 10-11",
-        "quoted_pdf_excerpt": "total length longer than 10.50m ... intermediate landings with a minimum length of 1800 mm ... Level area not less than 1800 mm."
-      }
+        "quoted_pdf_excerpt": "Accessible ramps longer than 10.50 m require intermediate landings of 1800 mm, and level areas not less than 1800 mm at ends."
+      },
+      "blockers": []
     },
     {
-      "claim_id": "BP344-RAMP-004",
-      "claim_text": "Article and questions 0a31a28e-0935-4565-a118-60b76c0c2c, b7afac22-7103-40b4-9fca-b6cf8b0b6707: accessible ramp and stair handrails use 900 mm and 700 mm heights and are required for accessible ramps for grade changes higher than 170 mm.",
-      "claim_class": "handrail_height",
+      "claim_id": "b033-ramp-04",
+      "claim_text": "Ramp handrails are required on both sides at 700 mm and 900 mm, with 300 mm horizontal extensions.",
+      "claim_type": "accessibility_code_claim",
       "audit_result": "PASS",
       "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "locator": "BP 344 refined markdown lines 60-63",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
         "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
-        "raw_pdf_page": 7,
-        "source_locator": "Appendix A, Handrails and Grab Bars",
-        "quoted_pdf_excerpt": "Handrails shall be required for accessible ramps for changes in grade higher than 170 mm ... installed at 900 mm and 700 mm above ramps and stairs."
-      }
+        "quoted_pdf_excerpt": "Handrails on both sides are 700 mm and 900 mm high, with 300 mm horizontal extension at upper and lower ends."
+      },
+      "blockers": []
     },
     {
-      "claim_id": "BP344-RAMP-005",
-      "claim_text": "Article: handrails require a 300 mm horizontal extension and closed/returned end.",
-      "claim_class": "handrail_extension",
+      "claim_id": "b033-ramp-05",
+      "claim_text": "Ramp edges need at least 100 mm raised protection, and tactile warning blocks are 600 mm deep.",
+      "claim_type": "accessibility_code_claim",
       "audit_result": "PASS",
       "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "locator": "BP 344 refined markdown lines 63-68",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
         "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
-        "raw_pdf_page": 7,
-        "source_locator": "Appendix A, Handrails and Grab Bars",
-        "quoted_pdf_excerpt": "A 300 mm long horizontal extension of the handrail shall be provided before the start and after the end."
-      }
-    },
-    {
-      "claim_id": "BP344-RAMP-006",
-      "claim_text": "Article: wall-attached handrails require 50 mm minimum clear distance, ledge handrails require 40 mm, and handrails are continuous around landings less than 2100 mm long.",
-      "claim_class": "handrail_clearance_continuity",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
-        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
-        "raw_pdf_page": 8,
-        "source_locator": "Appendix A, Handrails and Grab Bars",
-        "quoted_pdf_excerpt": "minimum clear distance of 50 mm from the wall ... 40 mm ... continuous throughout the entire length and around landings less than 2100 mm."
-      }
-    },
-    {
-      "claim_id": "BP344-RAMP-007",
-      "claim_text": "Question edit a2aafc8a-50b3-4379-863c-ddfb9d51ecce: raised ramp edge minimum height is 100 mm.",
-      "claim_class": "question_edit_dimension",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
-        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
-        "raw_pdf_page": 2,
-        "source_locator": "Appendix A, Accessible Ramps, Item 14",
-        "quoted_pdf_excerpt": "Raised edge on both sides of the ramp with a minimum height of 100 mm."
-      }
-    },
-    {
-      "claim_id": "BP344-RAMP-008",
-      "claim_text": "Question b7afac22-7103-40b4-9fca-b6cf8b0b6707: PD 1096 general stair handrails are 800 mm to 900 mm above nosing of treads.",
-      "claim_class": "cross_source_question",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_pdf_page": 195,
-        "source_locator": "PD 1096 2004 Revised IRR, Rule XII, Stairways, handrails paragraph",
-        "quoted_pdf_excerpt": "Handrails shall be placed not less than 800 millimeters nor more than 900 millimeters above the nosing of treads."
-      }
+        "quoted_pdf_excerpt": "Raised edges are minimum 100 mm high; tactile warning strips have 600 mm depth and are installed at the head, foot, and landings."
+      },
+      "blockers": []
     }
   ],
   "unverified_or_rejected_claims": [],
+  "removed_or_rewritten_material": [
+    "Learner article text was rewritten to local BP 344 source-supported accessibility/code claims only.",
+    "Legacy UI marker blocks were removed from normalized.md so candidate.md composes without unresolved markers.",
+    "Linked questions were rewritten to source-safe wording, answer keys, rationales, and citations."
+  ],
   "raw_pdf_gate": {
     "status": "PASS",
     "all_legal_code_claims_have_pdf_locator": true,
@@ -160,18 +171,58 @@
     "no_derivative_text_used_as_source_of_truth": true,
     "blockers": []
   },
+  "gate_results": {
+    "compose": "PASS: bun run content-audit:compose -- --article-id <Batch 033 id> --overwrite --strict; changed candidates; blockers=0",
+    "diff": "PASS: bun run content-audit:diff -- --article-id <Batch 033 id> --summary --strict; changed=true; safe_to_push=true; blockers=0",
+    "validate": "PASS: bun run content-audit:validate -- --article-id <Batch 033 id> --summary; valid=true; blockers=0; expected component-usage.json warning only",
+    "push_dry_run": "not_attempted_local_first; Supabase remote fetch/publish is final publishing only",
+    "supabase_mutation": "not_attempted_by_request"
+  },
+  "source_safe_repair": {
+    "normalized_md_rewritten": true,
+    "candidate_md_composed": true,
+    "sources_json_refreshed_to_checked_raw_sources": true,
+    "source_audit_evidence_json_created": true,
+    "question_edits_created": 10,
+    "answer_key_fields_changed": true,
+    "ui_markers_removed_from_normalized": true,
+    "external_business_claims_limited_to_source_safe_form": true
+  },
+  "local_validation": {
+    "compose": {
+      "passed": true,
+      "blockers": [],
+      "candidate_hash": "sha256:85a3281bd23ec2a85c47274f607725aaf72de0a5db999672eb9767a744393c3e",
+      "safe_to_diff": true
+    },
+    "diff": {
+      "passed": true,
+      "blockers": [],
+      "safe_to_push": true,
+      "changed": true
+    },
+    "validate": {
+      "passed": true,
+      "blockers": [],
+      "warnings": [
+        "expected component-usage.json warning only"
+      ]
+    },
+    "scoped_checks": {
+      "passed": true,
+      "blockers": [],
+      "placeholder_matches": []
+    }
+  },
   "sme_review": {
     "required": false,
-    "status": "NOT_REQUIRED"
+    "status": "PASS"
   },
   "overall": {
     "source_audit_status": "PASS",
     "safe_for_batch_apply": true,
     "safe_for_supabase_upload": true,
     "blockers": [],
-    "warnings": [
-      "No Supabase mutation was performed in this batch.",
-      "One linked-question correction is staged in question-edits; linked-questions.json remains the exported baseline."
-    ]
+    "warnings": []
   }
 }

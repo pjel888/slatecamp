@@ -1,0 +1,86 @@
+{
+  "question_id": "e4d11e53-c00a-459f-b91a-81d11bee80c7",
+  "baseline_hash": "sha256:d8b2e8fe5c45fe5dd1be5543c37700b65c15bb8875a367fe87945c7fa0a145fd",
+  "action": "replace",
+  "reason": "source-audited-article-batch-062-local-first: local raw PDF backed replacement constrained to checked Batch 062 source scope for Site Planning Utility Infrastructure.",
+  "approved_by": "codex-local-first-batch-062",
+  "approved_at": "2026-05-11T21:35:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "d4ab12a3-cec8-4104-b276-4fe649c2e35f",
+    "parent_article_slug": "lea-plan-004-06-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "PD 1067 refined markdown lines 180-193, 201-205, 226-227, and 238-245; raw PDF pages for drainage, natural flow, easements, flood-control, protected-area, and water-pollution provisions; PD 1067 IRR refined markdown lines 61-84, 294-300, 468-486, and 496-502; raw PDF pages for drainage scheme maps/outlets, easement reckoning, minimum stream-flow, discharge, and drainage-system complaint provisions; Sitework Lecture refined markdown lines 1-90, 130-230, and 560-625; raw PDF pages for Div 02 Sitework earthworks, AASHTO soil classification, fill, riprap, gabions, geosynthetics, roads/parking, and paving slides; Building Technology - Siteworks refined markdown lines 1-80, 112-219, and 440-485; raw PDF pages for Div 02 Sitework earthworks, AASHTO soil classification, fill, riprap, gabions, geosynthetics, and paving slides",
+    "checked_markdown_lines": [
+      "PD 1067 refined markdown lines 180-193, 201-205, 226-227, and 238-245; raw PDF pages for drainage, natural flow, easements, flood-control, protected-area, and water-pollution provisions",
+      "PD 1067 IRR refined markdown lines 61-84, 294-300, 468-486, and 496-502; raw PDF pages for drainage scheme maps/outlets, easement reckoning, minimum stream-flow, discharge, and drainage-system complaint provisions",
+      "Sitework Lecture refined markdown lines 1-90, 130-230, and 560-625; raw PDF pages for Div 02 Sitework earthworks, AASHTO soil classification, fill, riprap, gabions, geosynthetics, roads/parking, and paving slides",
+      "Building Technology - Siteworks refined markdown lines 1-80, 112-219, and 440-485; raw PDF pages for Div 02 Sitework earthworks, AASHTO soil classification, fill, riprap, gabions, geosynthetics, and paving slides"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "pd-1067-water-code-local-raw-pdf--b062-d4ab12a3-01",
+        "label": "PD 1067 - Water Code of the Philippines - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1067/PD 1067 - Water Code of the Philippines.pdf",
+        "sha256": "sha256:90fdccc66152977f0e628d47c9a7c6a0e5a93faa7d02c9344012679f1e0d4f07",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1067/PD 1067 - Water Code of the Philippines.md",
+        "refined_markdown_sha256": "sha256:1f64532d7d02f840e5d6c2710e6730d17a99f28fd1e1371839e7690174b942a7",
+        "locator": "PD 1067 refined markdown lines 180-193, 201-205, 226-227, and 238-245; raw PDF pages for drainage, natural flow, easements, flood-control, protected-area, and water-pollution provisions"
+      },
+      {
+        "source_id": "pd-1067-irr-local-raw-pdf--b062-d4ab12a3-02",
+        "label": "PD 1067 IRR - Water Code Implementing Rules - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1067/PD 1067 IRR - Water Code Implementing Rules.pdf",
+        "sha256": "sha256:233da4f0d1859197f82845ed945627dc9676f3e9b99e93e720ff30c54f751fc3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1067/PD 1067 IRR - Water Code Implementing Rules.md",
+        "refined_markdown_sha256": "sha256:635f6383c4f6cfc0e8f8c1a883987a0eb2abf0646c9a2d6cd69e2b186907dbe8",
+        "locator": "PD 1067 IRR refined markdown lines 61-84, 294-300, 468-486, and 496-502; raw PDF pages for drainage scheme maps/outlets, easement reckoning, minimum stream-flow, discharge, and drainage-system complaint provisions"
+      },
+      {
+        "source_id": "sitework-lecture-local-raw-pdf--b062-d4ab12a3-03",
+        "label": "Sitework Lecture - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Sitework Lecture.pdf",
+        "sha256": "sha256:a469e97d2c4b842f443864c658fc4359ef2787a2b009b9fbafc1afbd1da25ff6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Sitework Lecture.md",
+        "refined_markdown_sha256": "sha256:e761c9b38b9d0c07bd6053692337109a218169ba791e8f074fa40842d3972af2",
+        "locator": "Sitework Lecture refined markdown lines 1-90, 130-230, and 560-625; raw PDF pages for Div 02 Sitework earthworks, AASHTO soil classification, fill, riprap, gabions, geosynthetics, roads/parking, and paving slides"
+      },
+      {
+        "source_id": "building-technology-siteworks-local-raw-pdf--b062-d4ab12a3-04",
+        "label": "Building Technology - Siteworks - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Technology - Siteworks.pdf",
+        "sha256": "sha256:9f498be4a288011a0e8b750d4bb8316afebf07a908993620579c311da30e02a2",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Technology - Siteworks.md",
+        "refined_markdown_sha256": "sha256:3e34ffc7b60b926a2cd75fbde6239ff3f05e7e53993d8cb6f8d5f1d865c64296",
+        "locator": "Building Technology - Siteworks refined markdown lines 1-80, 112-219, and 440-485; raw PDF pages for Div 02 Sitework earthworks, AASHTO soil classification, fill, riprap, gabions, geosynthetics, and paving slides"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 062 checked local raw PDF source scope for Site Planning Utility Infrastructure."
+  },
+  "proposed": {
+    "text": "Which answer best matches the checked Batch 062 local raw PDF source scope for Site Planning Utility Infrastructure?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Treat utility infrastructure assessment as a feasibility check: compare the proposal with available service capacity, approved drainage outlets, natural-flow limits, water-source protection, water-margin easements, and sitework access or paving constraints."
+      },
+      {
+        "id": "b",
+        "text": "Assume existing off-site utilities are adequate without checking capacity or source constraints."
+      },
+      {
+        "id": "c",
+        "text": "Use RA 9275, telecom, or post-disaster rules not verified in the checked Batch 062 sources."
+      },
+      {
+        "id": "d",
+        "text": "Approve the plan while ignoring drainage outlets, easements, protected areas, and constructability."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Treat utility infrastructure assessment as a feasibility check: compare the proposal with available service capacity, approved drainage outlets, natural-flow limits, water-source protection, water-margin easements, and sitework access or paving constraints. This answer is supported by the checked Batch 062 local raw PDF source family for Site Planning Utility Infrastructure.",
+    "explanation": "Treat utility infrastructure assessment as a feasibility check: compare the proposal with available service capacity, approved drainage outlets, natural-flow limits, water-source protection, water-margin easements, and sitework access or paving constraints. Batch 062 used the local raw PDFs first and refined markdown only as locator evidence for Site Planning Utility Infrastructure.",
+    "code_citation": "PD 1067 refined markdown lines 180-193, 201-205, 226-227, and 238-245; raw PDF pages for drainage, natural flow, easements, flood-control, protected-area, and water-pollution provisions; PD 1067 IRR refined markdown lines 61-84, 294-300, 468-486, and 496-502; raw PDF pages for drainage scheme maps/outlets, easement reckoning, minimum stream-flow, discharge, and drainage-system complaint provisions; Sitework Lecture refined markdown lines 1-90, 130-230, and 560-625; raw PDF pages for Div 02 Sitework earthworks, AASHTO soil classification, fill, riprap, gabions, geosynthetics, roads/parking, and paving slides; Building Technology - Siteworks refined markdown lines 1-80, 112-219, and 440-485; raw PDF pages for Div 02 Sitework earthworks, AASHTO soil classification, fill, riprap, gabions, geosynthetics, and paving slides"
+  },
+  "batch_question_template_index": 8
+}

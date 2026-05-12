@@ -1,0 +1,105 @@
+{
+  "question_id": "bf1a9166-fbef-4a7f-94ea-fb7f3c301917",
+  "baseline_hash": "sha256:dbfe0c1ffb6a476bb82e18aea5ee06c0c2413b25704b7ca36b3510f8354f1a75",
+  "action": "replace",
+  "reason": "source-audited-article-batch-030-local-first rewrote this linked question to source-safe local form for lea-prac-ctr-020-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-030",
+  "approved_at": "2026-05-11T08:28:21.061+08:00",
+  "source_audit_support": {
+    "parent_article_id": "d6fa3f26-bf8e-4b5d-9313-fcad16af0d86",
+    "parent_article_slug": "lea-prac-ctr-020-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "CIAP Document 102 refined markdown lines 522, 667, 848, 870-874 and 901-905; UAP Document 301 refined markdown lines 775, 1019-1026 and 1068; Civil Code refined markdown lines 349, 359-360",
+    "checked_markdown_lines": [
+      "CIAP Document 102 line 522",
+      "CIAP Document 102 line 667",
+      "CIAP Document 102 line 848",
+      "CIAP Document 102 lines 870-874",
+      "CIAP Document 102 lines 901-905",
+      "UAP Document 301 line 775",
+      "UAP Document 301 lines 1019-1026",
+      "UAP Document 301 line 1068",
+      "RA 386 Civil Code line 349",
+      "RA 386 Civil Code lines 359-360"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+        "sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+        "source_id": "ciap-document-102-private-construction-contract-local",
+        "locator": "CIAP Document 102 refined markdown lines 522, 667, 848, 870-874 and 901-905"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+        "sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
+        "source_id": "ciap-document-102-private-construction-contract-local",
+        "locator": "CIAP Document 102 refined markdown lines 522, 667, 848, 870-874 and 901-905"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "source_id": "uap-document-301-general-conditions-local",
+        "locator": "UAP Document 301 refined markdown lines 775, 1019-1026 and 1068"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+        "source_id": "uap-document-301-general-conditions-local",
+        "locator": "UAP Document 301 refined markdown lines 775, 1019-1026 and 1068"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code.pdf",
+        "sha256": "sha256:c3551f7d92abed808a64071fdf08832b1f27dc87375775416f52cbc25b4bcba5",
+        "source_id": "ra-386-civil-code-local",
+        "locator": "Civil Code refined markdown lines 349, 359-360"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-386/RA-386 Civil Code.md",
+        "sha256": "sha256:8215f8acdd208b9b2f4a981bdf6c7227acbfd26186dac703133b187fc6d96adf",
+        "source_id": "ra-386-civil-code-local",
+        "locator": "Civil Code refined markdown lines 349, 359-360"
+      }
+    ],
+    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+  },
+  "proposed": {
+    "text": "Under Civil Code Article 1729, what protection is given to laborers or material suppliers for work undertaken by a contractor?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They may have an action against the owner up to the amount owing from the owner to the contractor when the claim is made"
+      },
+      {
+        "id": "b",
+        "text": "They automatically own the building"
+      },
+      {
+        "id": "c",
+        "text": "They become the architect of record"
+      },
+      {
+        "id": "d",
+        "text": "They receive the proposal bond"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "Correct because it follows RA 386 Civil Code line 360. The other options change the timing, party, document, amount, or legal effect stated in the checked local source.",
+    "explanation": "Use RA 386 Civil Code line 360 for this Batch 030 source-safe replacement.",
+    "code_citation": "RA 386 Civil Code line 360",
+    "bloom_level": "apply",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "contracts",
+      "source-audited-article-batch-030-local-first"
+    ],
+    "difficulty": 0.43,
+    "is_assessment": false,
+    "model_id": "BATCH-030-lea-prac-ctr-020-core-concept-010"
+  }
+}

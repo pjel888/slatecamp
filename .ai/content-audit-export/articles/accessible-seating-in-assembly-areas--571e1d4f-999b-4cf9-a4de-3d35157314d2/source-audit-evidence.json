@@ -1,0 +1,216 @@
+{
+  "schema_version": "source-audit-evidence-v1-local-first",
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-032-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T09:19:39+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "571e1d4f-999b-4cf9-a4de-3d35157314d2",
+    "slug": "accessible-seating-in-assembly-areas",
+    "title": "Accessible Seating in Assembly Areas",
+    "article_folder": ".ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2",
+    "candidate_path": ".ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2/candidate.md",
+    "candidate_sha256": "sha256:2b500f685a6aa97b740eecb5beb6a65f237663c4c227eaa15b9761658ec0818f",
+    "normalized_sha256": "sha256:2b500f685a6aa97b740eecb5beb6a65f237663c4c227eaa15b9761658ec0818f",
+    "linked_questions_sha256": "sha256:15fa5a2b1704909a2ee2a49b6f3204394df58e684cc244da889740d1d4b4b2bd",
+    "sources_sha256": "sha256:8f0a18f0c7a1ce02cdd683f8ee05b0823b80a25b907b6a65ec2b837f6e25018c"
+  },
+  "classification": {
+    "content_domain": "LEA Accessibility and Building Code",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high_value_accessibility_code",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 11,
+    "question_edits_created": [
+      "45b86527-bd11-4ce4-9b1c-3e2a94f68138",
+      "1c4e9c82-9c5c-4ed9-8ee1-3dfb069fcaea",
+      "447f242f-f2fe-4e46-b760-96088aa9cb70",
+      "f304b641-6cd2-4174-83d8-1e99572eda8a",
+      "6275a855-a97b-4b41-91f2-1d59d366e599",
+      "b4bc3006-6beb-4731-b91f-16a186c743f8",
+      "7fc1c331-4b0b-40b6-9236-aeb7e4a89cb6",
+      "719a26b0-9c53-4dda-8014-9f5873f2def2",
+      "a731628a-6a5e-4913-9440-24f7ae4aaa79",
+      "94882d23-3f10-48c1-b81f-ddc00945cace",
+      "4b28640f-9b21-4577-91a3-a14869e161ce"
+    ]
+  },
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2/question-edits/45b86527-bd11-4ce4-9b1c-3e2a94f68138.json",
+      ".ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2/question-edits/1c4e9c82-9c5c-4ed9-8ee1-3dfb069fcaea.json",
+      ".ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2/question-edits/447f242f-f2fe-4e46-b760-96088aa9cb70.json",
+      ".ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2/question-edits/f304b641-6cd2-4174-83d8-1e99572eda8a.json",
+      ".ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2/question-edits/6275a855-a97b-4b41-91f2-1d59d366e599.json",
+      ".ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2/question-edits/b4bc3006-6beb-4731-b91f-16a186c743f8.json",
+      ".ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2/question-edits/7fc1c331-4b0b-40b6-9236-aeb7e4a89cb6.json",
+      ".ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2/question-edits/719a26b0-9c53-4dda-8014-9f5873f2def2.json",
+      ".ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2/question-edits/a731628a-6a5e-4913-9440-24f7ae4aaa79.json",
+      ".ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2/question-edits/94882d23-3f10-48c1-b81f-ddc00945cace.json",
+      ".ai/content-audit-export/articles/accessible-seating-in-assembly-areas--571e1d4f-999b-4cf9-a4de-3d35157314d2/question-edits/4b28640f-9b21-4577-91a3-a14869e161ce.json"
+    ]
+  },
+  "raw_sources": [
+    {
+      "source_id": "bp-344-2024-revised-irr-ncda-local",
+      "label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "source_locator": "BP 344 2024 Revised IRR refined markdown lines 317-356, 362-511, 891-951, 990-1037, 1193-1211, 1446-1458, 1529-1545",
+      "checked_markdown_lines": [
+        "BP 344 2024 Revised IRR refined markdown lines 317-356, 362-511, 891-951, 990-1037, 1193-1211, 1446-1458, 1529-1545"
+      ]
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "bp-344-2024-revised-irr-ncda-local",
+      "label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "source_locator": "BP 344 2024 Revised IRR refined markdown lines 317-356, 362-511, 891-951, 990-1037, 1193-1211, 1446-1458, 1529-1545",
+      "checked_markdown_lines": [
+        "BP 344 2024 Revised IRR refined markdown lines 317-356, 362-511, 891-951, 990-1037, 1193-1211, 1446-1458, 1529-1545"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "b032-seat-01",
+      "claim_text": "BP 344 requires wheelchair parking accommodations equal to 3 percent of total seating capacity in assembly areas.",
+      "claim_type": "accessibility_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "locator": "BP 344 refined markdown lines 1529-1531",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "Three percent of the total seating capacity of auditoriums, arenas, theaters, and other assembly areas shall be wheelchair parking accommodations."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b032-seat-02",
+      "claim_text": "Accessible routes shall not overlap wheelchair seating or block waiting spaces, and wheelchair viewing areas shall adjoin accessible circulation.",
+      "claim_type": "accessibility_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "locator": "BP 344 refined markdown lines 1533-1537",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "Accessible routes shall not overlap wheelchair seating or block waiting spaces; wheelchair viewing areas shall adjoin accessible circulation."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b032-seat-03",
+      "claim_text": "The minimum single wheelchair seating footprint is 900 mm by 1200 mm.",
+      "claim_type": "accessibility_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "locator": "BP 344 refined markdown line 1539",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "The minimum footprint for a single wheelchair seating space is 900 mm x 1200 mm."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b032-seat-04",
+      "claim_text": "Accessible seating must have 750 mm high handrails at the front and sides.",
+      "claim_type": "accessibility_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "locator": "BP 344 refined markdown line 1545",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "Accessible seating shall be provided with handrails 750 mm high at the front and sides."
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "removed_or_rewritten_material": [
+    "Learner-facing article text was rewritten to local source-supported accessibility/code claims only.",
+    "Legacy UI marker blocks were removed from normalized.md so candidate.md composes without unresolved markers.",
+    "Linked questions were rewritten to source-safe wording, answer keys, rationales, and citations."
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "gate_results": {
+    "compose": "PASS: bun run content-audit:compose -- --article-id <Batch 032 id> --overwrite --strict; changed candidates; blockers=0",
+    "diff": "PASS: bun run content-audit:diff -- --article-id <Batch 032 id> --summary --strict; changed=true; safe_to_push=true; blockers=0",
+    "validate": "PASS: bun run content-audit:validate -- --article-id <Batch 032 id> --summary; valid=true; blockers=0; expected component-usage.json warning only",
+    "push_dry_run": "not_attempted_local_first; Supabase remote fetch/publish is final publishing only",
+    "supabase_mutation": "not_attempted_by_request"
+  },
+  "source_safe_repair": {
+    "normalized_md_rewritten": true,
+    "candidate_md_composed": true,
+    "sources_json_refreshed_to_checked_raw_sources": true,
+    "source_audit_evidence_json_created": true,
+    "question_edits_created": 11,
+    "answer_key_fields_changed": true,
+    "ui_markers_removed_from_normalized": true,
+    "external_business_claims_limited_to_source_safe_form": true
+  },
+  "local_validation": {
+    "compose": {
+      "passed": true,
+      "blockers": [],
+      "candidate_hash": "sha256:2b500f685a6aa97b740eecb5beb6a65f237663c4c227eaa15b9761658ec0818f",
+      "safe_to_diff": true
+    },
+    "diff": {
+      "passed": true,
+      "blockers": [],
+      "safe_to_push": true,
+      "changed": true
+    },
+    "validate": {
+      "passed": true,
+      "blockers": [],
+      "warnings": [
+        "expected component-usage.json warning only"
+      ]
+    },
+    "scoped_checks": {
+      "passed": true,
+      "blockers": [],
+      "placeholder_matches": []
+    }
+  },
+  "sme_review": {
+    "required": false,
+    "status": "PASS"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

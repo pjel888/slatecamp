@@ -1,0 +1,61 @@
+{
+  "question_id": "5c487ac9-76e1-4d51-be18-767455d1fc4e",
+  "baseline_hash": "sha256:b55e5b640bbe5272a4097f1001dfb2524b0cf90e8611d7b62d975c1865fd8578",
+  "action": "replace",
+  "reason": "source-audited-article-batch-020-local-first rewrote the question to match only locally checked source evidence.",
+  "approved_by": "codex-local-source-audit-batch-020",
+  "approved_at": "2026-05-10T16:41:51.472Z",
+  "source_audit_support": {
+    "parent_article_id": "f76bad6c-4bdf-4d2c-bdfb-a3381c42e320",
+    "parent_article_slug": "spp-doc-207-design-build-services",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "checked_sources": [
+      {
+        "source_id": "spp-207-uap-local-raw-pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 207.pdf",
+        "raw_pdf_sha256": "sha256:7050b0c7bd152694587f39ead8b682ed71b882ba50fce5c4a614206f32b5b610",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md lines 3-8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md lines 147-153; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/SPP 207.md lines 429-432"
+      }
+    ],
+    "local_source_safe_action": "Replaced the prior item with a source-bounded MCQ using only checked SPP source lines."
+  },
+  "proposed": {
+    "text": "Which is one of the two checked types of Design-Build Services under SPP 207?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Design-Build Services by Administration."
+      },
+      {
+        "id": "b",
+        "text": "Architectural Design Competition by jury."
+      },
+      {
+        "id": "c",
+        "text": "Fulltime Supervision by daily report only."
+      },
+      {
+        "id": "d",
+        "text": "Acoustic Design by certification."
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "The checked source lists Design-Build Services by Administration as one type.",
+    "explanation": "The checked source lists Design-Build Services by Administration as one type.",
+    "code_citation": "SPP Document 207",
+    "bloom_level": "remember",
+    "application_context": "professional_practice",
+    "practice_context": [
+      "SPP Document 207",
+      "SPP Doc 207: Design-Build Services"
+    ],
+    "difficulty": 0.45,
+    "is_assessment": false,
+    "model_id": "BATCH-020-spp-doc-207-design-build-services-002"
+  }
+}

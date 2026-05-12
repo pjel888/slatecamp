@@ -1,6 +1,6 @@
 # Master Audit Plan: Full-Stack Testing Route Forensics
 
-**Current Status:** Full-Stack ILXP Route Audit Complete (2026-04-07)  
+**Current Status:** Full-Stack ILXP Route Audit Complete (2026-04-07)
 **Critical Findings:**
 - **Hostile Tier-Gating:** Raw `Error` throws in Server Actions hard-crash the client router.
 - **Database Scalability:** `intelligent-routing.ts` fetches and joins massive `interactedIds` arrays, risking query length failures.
@@ -11,7 +11,7 @@
 2. **Graceful Action Rejections:** Refactor `start-session.ts` to return typed `ActionResponse` objects instead of throwing raw errors.
 3. **Database-Side RPC:** Create a PostgreSQL function for question selection/exclusion to eliminate massive array transfers in `intelligent-routing.ts`.
 
-**Date:** 2026-04-07  
+**Date:** 2026-04-07
 **Scope:** Exhaustive Database, UX, Architecture, Tier-Gating, and State Analysis
 
 ## Section 1: Database & Query Autopsy
@@ -58,7 +58,7 @@ When `submitCurrentAnswer` runs in the Zustand store, it toggles `status: 'submi
 *Autopsy:* The offline fallback (`queueOfflineSubmission`) is robust, but the race condition guard is weak. A user spam-clicking options before `status === 'submitting'` commits to the React render cycle can queue duplicate actions.
 
 **3. Component Matrix:**
-- `StandardQuizShell.tsx`: A bloated God Component. It manages the timer interval, background data fetching, and renders the entire quiz tree. 
+- `StandardQuizShell.tsx`: A bloated God Component. It manages the timer interval, background data fetching, and renders the entire quiz tree.
 - `TimerTicker.tsx` / `TimerDisplay.tsx`: Because they hook into `useQuizTimerStore`, if they don't strictly use `useShallow`, they trigger re-renders up the tree.
 
 ## Section 3: DX & Tier-Gating Autopsy
@@ -74,7 +74,7 @@ if (!isPro && !isDevBypass) {
   throw new Error(`The ${modeDef.label} mode requires a Pro subscription.`)
 }
 ```
-*Autopsy:* Throwing a generic JavaScript `Error` inside a Server Action is a catastrophic DX anti-pattern in Next.js. It bypasses React error boundaries, hard-crashes the client-side router, and displays an unstyled console stack trace to the user. 
+*Autopsy:* Throwing a generic JavaScript `Error` inside a Server Action is a catastrophic DX anti-pattern in Next.js. It bypasses React error boundaries, hard-crashes the client-side router, and displays an unstyled console stack trace to the user.
 
 **3. Prop-Drilling over Context:**
 `ReviewHub.tsx` explicitly requires `userTier: string` as a prop. Every server page rendering the Hub must independently query the database for the user's tier and drill it down the component tree.
@@ -84,7 +84,7 @@ if (!isPro && !isDevBypass) {
 The Interactive Learning Experience Platform (ILXP) engine's state management is fragile.
 
 **1. Hydration Mismatch via Zustand Persist:**
-`useQuizStore` utilizes `zustand/persist` wired to `localStorage`. Because Next.js SSRs `StandardQuizShell` to HTML using the default empty state, the moment the client loads, Zustand injects the persisted `localStorage` answers. 
+`useQuizStore` utilizes `zustand/persist` wired to `localStorage`. Because Next.js SSRs `StandardQuizShell` to HTML using the default empty state, the moment the client loads, Zustand injects the persisted `localStorage` answers.
 *Autopsy:* This forces a severe hydration mismatch, flashing the UI and risking React tree corruption. The shell MUST be gated behind an `if (!hasHydrated) return <Loader />` block.
 
 **2. Re-Render Cascades:**
@@ -93,25 +93,25 @@ The Interactive Learning Experience Platform (ILXP) engine's state management is
 ## Section 5: The Execution Blueprint
 To rectify these profound architectural flaws, the following strict execution plan must be implemented:
 
-1. **Step 1: Centralize Auth/Tier Context:** 
-   - Create `src/providers/SubscriptionProvider.tsx` to fetch and provide the user's tier globally. 
+1. **Step 1: Centralize Auth/Tier Context:**
+   - Create `src/providers/SubscriptionProvider.tsx` to fetch and provide the user's tier globally.
    - Build a `<ProGate>` wrapper component.
    - Strip `userTier` prop drilling from all `/dashboard/testing` server pages and the `ReviewHub`.
 
-2. **Step 2: Graceful Action Rejections:** 
+2. **Step 2: Graceful Action Rejections:**
    - Refactor `start-session.ts` and all quiz Server Actions to return structured `ActionResponse` objects (e.g., `{ success: false, error: "requires_pro_tier" }`).
    - Catch these responses in the UI and trigger a `<PaywallModal />` or Toast.
 
-3. **Step 3: Fix Hydration Flaws & Render Cascades:** 
+3. **Step 3: Fix Hydration Flaws & Render Cascades:**
    - Refactor `StandardQuizShell` to strictly gate rendering behind `useQuizStore((s) => s._hasHydrated)`.
    - Audit `TimerDisplay.tsx` and enforce `useShallow((s) => s.elapsedMs)` on all Zustand timer subscriptions.
 
-4. **Step 4: Database Query Optimization:** 
+4. **Step 4: Database Query Optimization:**
    - Rewrite the chunking loop in `end-session.ts`'s `buildSubjectBreakdown` into a single, unified `.in()` query.
    - Trim the `.select()` payload in `submit-answer.ts` to only fetch `rationale` if the session's feedback timing explicitly requires it.
 
 ## Audit Run: 2026-04-07 03:08:17
-- **Section 1: ILXP Testing Modes & Configurations:** 
+- **Section 1: ILXP Testing Modes & Configurations:**
   The codebase defines modes in `src/lib/constants/testing-modes.ts` and `src/types/testing.ts`, with an evolving `v2` config in `src/types/quiz-config.ts`.
   | Key | Mode Source | Zone | Feedback | Timer | Pro? |
   | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -124,16 +124,16 @@ To rectify these profound architectural flaws, the following strict execution pl
   | `simulation` | `proof_simulation` | 3 | Deferred | Yes | Yes |
   | `endurance` | `extended_practice` | 3 | Immediate | No | Yes |
   | `article-review` | `article_review` | 1 | Immediate | No | No |
-  
+
   *Configuration Variances:*
   - `dbTestMode`: maps to `camp`, `chill`, `storm`.
   - `v2 config`: uses nested JSONB (`setup`, `timer`, `feedback`, `navigation`, `results`, `breaks`).
-  
+
   *Missing Implementations:*
   - `trail_quiz`, `assessment_quiz`, `blindspot_queue` are defined in `ModeSource` but lack entries in `MODE_DEFINITIONS` constant.
   - `fullexam` in `QuizMode` (v2) uses a different name than its `ModeSource` (`proof_simulation`).
 
-- **Section 2: Event-Driven UX Paths:** 
+- **Section 2: Event-Driven UX Paths:**
   1. **The Initialization Click ("Start Quiz"):**
      - `HeroConfigurator.tsx` uses `SlideToSubmit`.
      - `handleStart` sets `isLoading: true`.
@@ -150,17 +150,17 @@ To rectify these profound architectural flaws, the following strict execution pl
      - **Timer hits 0:00:** `useQuizTimerStore.ts` -> `tickTimer` calls `handleTimerExpiry(sessionId)` -> `endSession` (Server Action) with `endReason: 'timer_expired'`.
      - **Back Button:** NO navigation guard or `beforeunload` listener in the shells. `updateSessionProgress` (triggered by `currentIndex` changes) is the only persistent safeguard.
 
-- **Section 3: Database & Query Autopsy:** 
+- **Section 3: Database & Query Autopsy:**
   - **N+1 Logic:** `start-session.ts` uses while loops (depth 3) to resolve taxonomy leaf nodes (1 query per level). `end-session.ts` manually chunks `taxonomy_tree` lookups in batches of 80.
   - **Payload Bloat:** `intelligent-routing.ts` fetches *every* interaction ID for a user to exclude them in a `NOT IN` query. If a user has 5,000 interactions, the query string explodes.
   - **Security Risk:** `submit-answer.ts` uses `createServiceClient()` (service role) to bypass RLS for patent logging, but this pattern is leaking into standard quiz logic.
 
-- **Section 4: DX & Tier-Gating Autopsy:** 
+- **Section 4: DX & Tier-Gating Autopsy:**
   - **Hostile Tier-Gating:** `start-session.ts` throws a raw `Error` on Pro-check failure. This breaks the Next.js router and displays a stack trace instead of a paywall.
   - **Fragmented Logic:** Every action/page (100+ grep matches) independently queries `user_subscriptions`.
   - **Missing Abstraction:** No `<SubscriptionProvider>` or `<ProGate>` component exists.
 
-- **Section 5: The Execution Blueprint:** 
+- **Section 5: The Execution Blueprint:**
   1. **Immediate:** Create `src/providers/SubscriptionProvider.tsx` and wrap the root layout.
   2. **Immediate:** Refactor `start-session.ts` to return `{ success: false, error: 'requires_pro_tier' }` and implement a `<PaywallModal />`.
   3. **High Priority:** Rewrite `intelligent-routing.ts` to use a database-side RPC for excluding answered questions (eliminating the massive `question_id` array transfer).

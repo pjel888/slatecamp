@@ -1,0 +1,69 @@
+{
+  "question_id": "bb1a66d5-d453-4033-a509-48efabfcd821",
+  "baseline_hash": "sha256:cce269cc4ad5421a114d611a6c220931390e25a23b3ecdf8d22a82f8ae6604e2",
+  "action": "replace",
+  "reason": "source-audited-article-batch-042-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes stale or non-local framing where present.",
+  "approved_by": "codex-local-first-batch-042",
+  "approved_at": "2026-05-11T15:13:00.657+08:00",
+  "source_audit_support": {
+    "parent_article_id": "875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+    "parent_article_slug": "site-exterior-circulation",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "BP 344 2024 IRR refined markdown lines 338-467; BP 344 2024 IRR refined markdown lines 619-727; BP 344 2024 IRR refined markdown lines 739-860; BP 344 2024 IRR refined markdown lines 879-885 | PD 1096 RIRR refined markdown lines 2792-2795; PD 1096 RIRR refined markdown lines 3000-3009",
+    "checked_markdown_lines": [
+      "BP 344 2024 IRR refined markdown lines 338-467",
+      "BP 344 2024 IRR refined markdown lines 619-727",
+      "BP 344 2024 IRR refined markdown lines 739-860",
+      "BP 344 2024 IRR refined markdown lines 879-885",
+      "PD 1096 RIRR refined markdown lines 2792-2795",
+      "PD 1096 RIRR refined markdown lines 3000-3009"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "bp-344-2024-rirr-ncda-local",
+        "label": "BP 344 2024 Revised IRR - NCDA local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+        "locator": "BP 344 2024 IRR refined markdown lines 338-467; BP 344 2024 IRR refined markdown lines 619-727; BP 344 2024 IRR refined markdown lines 739-860; BP 344 2024 IRR refined markdown lines 879-885"
+      },
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "locator": "PD 1096 RIRR refined markdown lines 2792-2795; PD 1096 RIRR refined markdown lines 3000-3009"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 042 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "What minimum width applies to sidewalks, walkways, and pathways?",
+    "options": [
+      {
+        "id": "a",
+        "text": "1500 mm."
+      },
+      {
+        "id": "b",
+        "text": "Use the wall finish schedule instead."
+      },
+      {
+        "id": "c",
+        "text": "Ignore the accessible route requirement."
+      },
+      {
+        "id": "d",
+        "text": "Use an unchecked internet summary as the controlling rule."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The checked local source supports: 1500 mm.",
+    "explanation": "The checked local source supports: 1500 mm.",
+    "code_citation": "BP 344 sidewalk provisions"
+  }
+}

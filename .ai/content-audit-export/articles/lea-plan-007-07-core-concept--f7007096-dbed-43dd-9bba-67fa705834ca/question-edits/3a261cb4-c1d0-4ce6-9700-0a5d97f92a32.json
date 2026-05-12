@@ -1,0 +1,111 @@
+{
+  "question_id": "3a261cb4-c1d0-4ce6-9700-0a5d97f92a32",
+  "baseline_hash": "sha256:e9ba6a3b18a48e8b6a1655d1d9f35e7efbcf7e5f881d01f8465be99022c03fc2",
+  "action": "replace",
+  "reason": "source-audited-article-batch-069-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes unsupported external-theory, professional-scope, or environmental-law overclaims where present.",
+  "approved_by": "codex-local-first-batch-069",
+  "approved_at": "2026-05-12T00:24:00+08:00",
+  "source_audit_support": {
+    "parent_article_id": "f7007096-dbed-43dd-9bba-67fa705834ca",
+    "parent_article_slug": "lea-plan-007-07-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 9266 IRR refined markdown lines 5-9, 152, 218, 251-260, 313-319, 670-672, 819-831, and 847-855; raw PDF pages 3-8, 17, 21-22 checked by local PDF extraction; UAP SPP refined markdown lines 25-60, 71, 115-123, 1274, 1299-1322, and 1659-1680; raw PDF pages 1-6, 42, 51-52, and 69 checked by local PDF extraction; UAP Code of Ethics refined markdown lines 29 and 54 plus client/public-interest responsibility passages; raw PDF pages 1-4 checked by local PDF extraction",
+    "checked_markdown_lines": [
+      "RA 9266 IRR lines 5-9",
+      "RA 9266 IRR lines 152 and 218",
+      "RA 9266 IRR lines 251-260",
+      "RA 9266 IRR lines 313-319",
+      "RA 9266 IRR lines 670-672",
+      "RA 9266 IRR lines 819-831",
+      "RA 9266 IRR lines 847-855",
+      "UAP SPP lines 25-60",
+      "UAP SPP line 71",
+      "UAP SPP lines 115-123",
+      "UAP SPP line 1274",
+      "UAP SPP lines 1299-1322",
+      "UAP SPP lines 1659-1680",
+      "UAP Code of Ethics lines 29 and 54",
+      "UAP Code of Ethics client/public-interest passages"
+    ],
+    "checked_raw_pdf_pages": [
+      "RA 9266 IRR raw PDF pages 3-8",
+      "RA 9266 IRR raw PDF page 17",
+      "RA 9266 IRR raw PDF pages 21-22",
+      "UAP SPP raw PDF pages 1-6",
+      "UAP SPP raw PDF page 42",
+      "UAP SPP raw PDF pages 51-52",
+      "UAP SPP raw PDF page 69",
+      "UAP Code of Ethics raw PDF pages 1-4"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "ra9266-irr-iapoa-spp-ethics-local-b069",
+        "label": "RA 9266 IRR - IAPOA, UAP, SPP, and Code of Ethical Conduct",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "locator": "RA 9266 IRR refined markdown lines 5-9, 152, 218, 251-260, 313-319, 670-672, 819-831, and 847-855; raw PDF pages 3-8, 17, 21-22 checked by local PDF extraction"
+      },
+      {
+        "source_id": "uap-spp-2010-local-b069",
+        "label": "UAP 2010 Standards of Professional Practice",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "locator": "UAP SPP refined markdown lines 25-60, 71, 115-123, 1274, 1299-1322, and 1659-1680; raw PDF pages 1-6, 42, 51-52, and 69 checked by local PDF extraction"
+      },
+      {
+        "source_id": "uap-code-ethics-local-b069",
+        "label": "UAP Document Code of Ethics",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+        "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+        "refined_markdown_sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+        "locator": "UAP Code of Ethics refined markdown lines 29 and 54 plus client/public-interest responsibility passages; raw PDF pages 1-4 checked by local PDF extraction"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, and citation rewritten to the Batch 069 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "Under the RA 9266 IRR, what does IAPOA refer to?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The Integrated and Accredited Professional Organization of Architects, identified with UAP."
+      },
+      {
+        "id": "b",
+        "text": "A local building permit office."
+      },
+      {
+        "id": "c",
+        "text": "A subdivision homeowners association."
+      },
+      {
+        "id": "d",
+        "text": "A water quality board."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The RA 9266 IRR identifies IAPOA as the integrated accredited professional organization of architects and identifies UAP as United Architects of the Philippines, Inc.",
+    "explanation": "The RA 9266 IRR identifies IAPOA as the integrated accredited professional organization of architects and identifies UAP as United Architects of the Philippines, Inc.",
+    "code_citation": "RA 9266 IRR lines 5-9; UAP SPP lines 25-60; UAP Code of Ethics lines 29 and 54",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "bloom_level": "understand",
+    "application_context": "source-audited Philippine planning and professional-practice interpretation",
+    "practice_context": [
+      "source-audited interpretation",
+      "lea-plan-007-07-core-concept"
+    ],
+    "difficulty": 0.55,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false
+  }
+}

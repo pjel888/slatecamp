@@ -1,6 +1,6 @@
 # PDF Extraction Sample Output
 
-Generated: 2026-05-06T04:13:35.199Z
+Generated: 2026-05-10T07:33:21.746Z
 
 Local-only extraction sample. Text previews are snippets for extractor validation only; not source packs/chunks.
 

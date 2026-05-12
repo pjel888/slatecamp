@@ -1,0 +1,233 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-078-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T05:20:00.000+08:00",
+  "target": {
+    "article_id": "ac93167f-51ff-4126-ae62-34cf6a534d04",
+    "slug": "lea-matl-006-02-core-concept",
+    "title": "Roof trusses transfer roof loads through triangulated",
+    "article_folder": ".ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04",
+    "normalized_sha256": "sha256:c00c1938b8a8b3414134a1b66c2b4662cd0930ab9bc066037071c09e64355794",
+    "candidate_sha256": "sha256:c00c1938b8a8b3414134a1b66c2b4662cd0930ab9bc066037071c09e64355794",
+    "candidate_path": ".ai/content-audit-export/articles/lea-matl-006-02-core-concept--ac93167f-51ff-4126-ae62-34cf6a534d04/candidate.md"
+  },
+  "classification": {
+    "topic_family": "roof_trusses",
+    "local_first_batch": "078",
+    "source_sensitivity": "technical_materials",
+    "contains_legal_or_code_claims": false,
+    "source_risk_tier": "source_bound_materials",
+    "requires_raw_pdf_audit": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdfs_checked_first": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "local_pdf_extraction_method": "python_pymupdf_local",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "bci-5e-b078",
+      "label": "Building Construction Illustrated, 5th Edition",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+      "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+      "refined_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "locator": "BCI refined markdown lines 6614-6658 and 7376-7468; raw PDF pages 203 and 222-224 checked by local PyMuPDF extraction"
+    },
+    {
+      "source_id": "salvan-building-materials-b078",
+      "label": "George Salvan Architectural Building Materials",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+      "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+      "refined_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+      "locator": "Salvan raw PDF/source family checked for Batch 078; no article claim depends on Salvan-only truss span tables"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-matl-006-02-core-concept-article-b078",
+      "claim_text": "Article lea-matl-006-02-core-concept was rewritten to the checked roof_trusses source scope.",
+      "claim_type": "article_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "BCI refined markdown lines 6614-6658 and 7376-7468; raw PDF pages 203 and 222-224 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "loads should be applied at panel points"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-0aaee778-7a09-41f0-91b6-b483ec500ff9-ALE-MATL-006-02-008-b078",
+      "claim_text": "Question 0aaee778-7a09-41f0-91b6-b483ec500ff9 ALE-MATL-006-02-008 was rewritten to the checked roof_trusses source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "BCI refined markdown lines 6614-6658 and 7376-7468; raw PDF pages 203 and 222-224 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "loads should be applied at panel points"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-dbadb794-cc3c-4faa-bf1f-21cda09a81b1-ALE-MATL-006-02-010-b078",
+      "claim_text": "Question dbadb794-cc3c-4faa-bf1f-21cda09a81b1 ALE-MATL-006-02-010 was rewritten to the checked roof_trusses source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "BCI refined markdown lines 6614-6658 and 7376-7468; raw PDF pages 203 and 222-224 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "loads should be applied at panel points"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-76bebe1d-277a-43cc-a2ff-0985fc7b17d8-ALE-MATL-006-02-005-b078",
+      "claim_text": "Question 76bebe1d-277a-43cc-a2ff-0985fc7b17d8 ALE-MATL-006-02-005 was rewritten to the checked roof_trusses source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "BCI refined markdown lines 6614-6658 and 7376-7468; raw PDF pages 203 and 222-224 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "loads should be applied at panel points"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-8c5f0540-4251-4ba2-9829-c1ea1c7fac14-ALE-MATL-006-02-006-b078",
+      "claim_text": "Question 8c5f0540-4251-4ba2-9829-c1ea1c7fac14 ALE-MATL-006-02-006 was rewritten to the checked roof_trusses source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "BCI refined markdown lines 6614-6658 and 7376-7468; raw PDF pages 203 and 222-224 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "loads should be applied at panel points"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-b7d8abf2-0bdf-40b6-902a-4042401ad542-ALE-MATL-006-02-002-b078",
+      "claim_text": "Question b7d8abf2-0bdf-40b6-902a-4042401ad542 ALE-MATL-006-02-002 was rewritten to the checked roof_trusses source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "BCI refined markdown lines 6614-6658 and 7376-7468; raw PDF pages 203 and 222-224 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "loads should be applied at panel points"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-fc99634d-3876-409e-9a13-2f677b39c079-ALE-MATL-006-02-004-b078",
+      "claim_text": "Question fc99634d-3876-409e-9a13-2f677b39c079 ALE-MATL-006-02-004 was rewritten to the checked roof_trusses source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "BCI refined markdown lines 6614-6658 and 7376-7468; raw PDF pages 203 and 222-224 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "loads should be applied at panel points"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-584be4d0-a3c8-4e0e-a7c3-2028bf97e1fd-ALE-MATL-006-02-003-b078",
+      "claim_text": "Question 584be4d0-a3c8-4e0e-a7c3-2028bf97e1fd ALE-MATL-006-02-003 was rewritten to the checked roof_trusses source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "BCI refined markdown lines 6614-6658 and 7376-7468; raw PDF pages 203 and 222-224 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "loads should be applied at panel points"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-810cd2d3-796f-4b60-be52-fc44836ad4ed-ALE-MATL-006-02-007-b078",
+      "claim_text": "Question 810cd2d3-796f-4b60-be52-fc44836ad4ed ALE-MATL-006-02-007 was rewritten to the checked roof_trusses source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "BCI refined markdown lines 6614-6658 and 7376-7468; raw PDF pages 203 and 222-224 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "loads should be applied at panel points"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-3bd45ddd-62e4-4c58-8693-67f49dc8b745-ALE-MATL-006-02-009-b078",
+      "claim_text": "Question 3bd45ddd-62e4-4c58-8693-67f49dc8b745 ALE-MATL-006-02-009 was rewritten to the checked roof_trusses source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "BCI refined markdown lines 6614-6658 and 7376-7468; raw PDF pages 203 and 222-224 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "loads should be applied at panel points"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-9aa44c93-7e84-4863-a2d7-d4a69436f8ea-ALE-MATL-006-02-001-b078",
+      "claim_text": "Question 9aa44c93-7e84-4863-a2d7-d4a69436f8ea ALE-MATL-006-02-001 was rewritten to the checked roof_trusses source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "BCI refined markdown lines 6614-6658 and 7376-7468; raw PDF pages 203 and 222-224 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "loads should be applied at panel points"
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "scenario_enrichment": {
+    "policy_status": "pending",
+    "eligibility_status": "eligible-deferred",
+    "blocker_status": "nonblocking",
+    "notes": "No Real World Scenario section added; source correctness and linked-question safety remained the controlling gates."
+  },
+  "sme_review": {
+    "required": false,
+    "status": "not_required"
+  },
+  "local_first_publication": {
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "ready_for_final_publishing_review": true
+  }
+}

@@ -1,0 +1,303 @@
+{
+  "batch_id": "source-audited-article-batch-024-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T14:30:00.000+08:00",
+  "article_id": "9796e088-8c83-4a6c-9599-51afd69d0e81",
+  "slug": "lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role",
+  "title": "Design Build Services Overview Rationale and Architect's Role",
+  "status": "local_pass_ready_for_final_publishing_review",
+  "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role--9796e088-8c83-4a6c-9599-51afd69d0e81",
+  "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role--9796e088-8c83-4a6c-9599-51afd69d0e81",
+  "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role--9796e088-8c83-4a6c-9599-51afd69d0e81/question-edits",
+  "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role--9796e088-8c83-4a6c-9599-51afd69d0e81/question-edits",
+  "linked_questions": 10,
+  "question_edits_created": 10,
+  "source_safe_rewrite_question_edits": 10,
+  "classification": {
+    "content_domain": "professional_practice",
+    "requires_raw_pdf_audit": true,
+    "legal_or_code_source": true
+  },
+  "target": {
+    "article_id": "9796e088-8c83-4a6c-9599-51afd69d0e81",
+    "slug": "lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role",
+    "normalized_sha256": "sha256:c53223c8cd0a72cb4c86d90c2ada4d938d59153446f129e7e84878ba16fe41e9",
+    "candidate_sha256": "sha256:c53223c8cd0a72cb4c86d90c2ada4d938d59153446f129e7e84878ba16fe41e9"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_only": true,
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "source_audit": {
+    "checked_sources": [
+      {
+        "source_id": "uap-standards-spp207-design-build-local",
+        "label": "UAP Standards of Professional Practice - SPP 207 Design-Build",
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "source_type": "professional_practice_pdf",
+        "source_locator": "UAP Standards refined markdown lines 1222-1284",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "checked_markdown_lines": [
+          "UAP Standards lines 1222-1284"
+        ],
+        "use": "Local raw PDF and refined markdown checked for SPP 207 design-build models, scope, cost guarantee, and ethical boundaries.",
+        "local_source_checked": true
+      },
+      {
+        "source_id": "spp207-design-build-services-local",
+        "label": "SPP 207 - Design-Build Services",
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "source_type": "professional_practice_pdf",
+        "source_locator": "SPP 207 refined markdown lines 135-440",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 207.pdf",
+        "raw_pdf_sha256": "sha256:7050b0c7bd152694587f39ead8b682ed71b882ba50fce5c4a614206f32b5b610",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md",
+        "refined_markdown_sha256": "sha256:16375f49124440ba1bc938379786e14016249c3d42d0b7498a543ddb4f702e0a",
+        "checked_markdown_lines": [
+          "SPP 207 lines 135-440"
+        ],
+        "use": "Local SPP 207 raw PDF and refined markdown checked as article-specific source.",
+        "local_source_checked": true
+      }
+    ],
+    "source_locator": "UAP Standards refined markdown lines 1222-1284; SPP 207 refined markdown lines 135-440",
+    "checked_markdown_lines": [
+      "UAP Standards lines 1222-1284",
+      "SPP 207 lines 135-440"
+    ]
+  },
+  "claims": [
+    {
+      "claim_id": "batch-024-lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role-question-001",
+      "claim_text": "Question 8921948b-059c-40a5-97db-7ed85f187d27 / model BATCH-024-lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role-001 rewritten to source-safe local form.",
+      "question_id": "8921948b-059c-40a5-97db-7ed85f187d27",
+      "model_id": "BATCH-024-lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role-001",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp207-design-build-local",
+        "spp207-design-build-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 1222-1284",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-024-lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role-question-002",
+      "claim_text": "Question 1091b598-2b60-465d-9903-afddb3a6615e / model BATCH-024-lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role-002 rewritten to source-safe local form.",
+      "question_id": "1091b598-2b60-465d-9903-afddb3a6615e",
+      "model_id": "BATCH-024-lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role-002",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp207-design-build-local",
+        "spp207-design-build-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 1222-1284",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-024-lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role-question-003",
+      "claim_text": "Question 1b10e05a-209c-4e21-a0d9-eab9d81d9d0f / model BATCH-024-lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role-003 rewritten to source-safe local form.",
+      "question_id": "1b10e05a-209c-4e21-a0d9-eab9d81d9d0f",
+      "model_id": "BATCH-024-lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role-003",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp207-design-build-local",
+        "spp207-design-build-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 1222-1284",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-024-lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role-question-004",
+      "claim_text": "Question 46c9f96e-a5e9-4261-b032-683418ae68c5 / model BATCH-024-lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role-004 rewritten to source-safe local form.",
+      "question_id": "46c9f96e-a5e9-4261-b032-683418ae68c5",
+      "model_id": "BATCH-024-lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role-004",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp207-design-build-local",
+        "spp207-design-build-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 1222-1284",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-024-lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role-question-005",
+      "claim_text": "Question 7afe4c5a-9ef2-48e5-be76-180795d35cd0 / model BATCH-024-lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role-005 rewritten to source-safe local form.",
+      "question_id": "7afe4c5a-9ef2-48e5-be76-180795d35cd0",
+      "model_id": "BATCH-024-lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role-005",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp207-design-build-local",
+        "spp207-design-build-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 1222-1284",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-024-lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role-question-006",
+      "claim_text": "Question 1d41730f-e90c-48cd-9a8c-39e0728791a4 / model BATCH-024-lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role-006 rewritten to source-safe local form.",
+      "question_id": "1d41730f-e90c-48cd-9a8c-39e0728791a4",
+      "model_id": "BATCH-024-lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role-006",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp207-design-build-local",
+        "spp207-design-build-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 1222-1284",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-024-lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role-question-007",
+      "claim_text": "Question 24bb3d48-9f21-499e-9365-1148d1b275e0 / model BATCH-024-lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role-007 rewritten to source-safe local form.",
+      "question_id": "24bb3d48-9f21-499e-9365-1148d1b275e0",
+      "model_id": "BATCH-024-lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role-007",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp207-design-build-local",
+        "spp207-design-build-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 1222-1284",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-024-lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role-question-008",
+      "claim_text": "Question d81c1164-dbc3-4bbf-8401-f00d7ef64e3e / model BATCH-024-lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role-008 rewritten to source-safe local form.",
+      "question_id": "d81c1164-dbc3-4bbf-8401-f00d7ef64e3e",
+      "model_id": "BATCH-024-lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role-008",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp207-design-build-local",
+        "spp207-design-build-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 1222-1284",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-024-lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role-question-009",
+      "claim_text": "Question a4890e45-fa0a-41ea-bf70-dadea274cd7c / model BATCH-024-lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role-009 rewritten to source-safe local form.",
+      "question_id": "a4890e45-fa0a-41ea-bf70-dadea274cd7c",
+      "model_id": "BATCH-024-lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role-009",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp207-design-build-local",
+        "spp207-design-build-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 1222-1284",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-024-lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role-question-010",
+      "claim_text": "Question b0cf2014-96e7-4574-bc52-a7798e8a2415 / model BATCH-024-lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role-010 rewritten to source-safe local form.",
+      "question_id": "b0cf2014-96e7-4574-bc52-a7798e8a2415",
+      "model_id": "BATCH-024-lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role-010",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-standards-spp207-design-build-local",
+        "spp207-design-build-services-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "source_locator": "UAP Standards refined markdown lines 1222-1284",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    }
+  ],
+  "local_repairs": {
+    "normalized_rewritten": true,
+    "candidate_recomposed": true,
+    "source_records_created": 2,
+    "question_edits_created": 10,
+    "source_safe_rewrite_question_edits": 10,
+    "non_source_claims_removed_or_rewritten": true,
+    "ui_block_tokens_removed": true
+  },
+  "validation": {
+    "compose_blockers": [],
+    "diff_safe_to_push": true,
+    "diff_blockers": [],
+    "validate_valid": true,
+    "validate_blockers": [],
+    "validate_warnings": [
+      "lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role--9796e088-8c83-4a6c-9599-51afd69d0e81: component-usage.json has not been generated for this article yet."
+    ],
+    "scoped_validate_report": ".ai/content-audit-export/articles/lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role--9796e088-8c83-4a6c-9599-51afd69d0e81/batch-024-validate-report.json",
+    "compose_report": ".ai/content-audit-export/articles/lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role--9796e088-8c83-4a6c-9599-51afd69d0e81/compose-report.json",
+    "diff_report": ".ai/content-audit-export/articles/lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role--9796e088-8c83-4a6c-9599-51afd69d0e81/diff-report.json"
+  },
+  "blockers": [],
+  "unverified_or_rejected_claims": [],
+  "sme_review": {
+    "required": false,
+    "status": "not_required_for_local_first_batch"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "question_id": "8c035b01-26a5-443c-a161-5264981e503f",
+  "baseline_hash": "sha256:5657f686613bbef44c28aa89603d95c4972f1613467bbc7d5916021e9a5733ef",
+  "reason": "Batch 006 local source audit aligned linked question ALE-PRAC-LAW-016-004 to verified raw-source claims for lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component.",
+  "approved_by": "codex-local-source-audit-batch-006",
+  "approved_at": "2026-05-10T22:30:00+08:00",
+  "proposed": {
+    "code_citation": "UAP Document 301 Articles 2 and 3",
+    "explanation": "Source-audited against RA 9266 IRR Sections 3(18), 3(26), 20, 23, and 32 plus UAP Document 301; the answer turns on architectural-document signing/sealing and coordinated contract documents.",
+    "text": "Another discipline cannot finalize its work because a coordinated contract-document issue remains unresolved. What should happen before signatures and final issuance?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The discipline should sign based on assumptions and let the contractor resolve conflicts later"
+      },
+      {
+        "id": "b",
+        "text": "The discipline should sign preliminary documents as final if a disclaimer is added"
+      },
+      {
+        "id": "c",
+        "text": "No coordination is needed if each professional signs independently"
+      },
+      {
+        "id": "d",
+        "text": "The project team should coordinate and clarify the documents before final signatures are requested"
+      }
+    ],
+    "correct_option_id": "d"
+  }
+}

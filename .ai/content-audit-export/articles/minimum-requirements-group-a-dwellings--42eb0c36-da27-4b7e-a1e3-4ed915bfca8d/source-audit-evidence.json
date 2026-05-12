@@ -1,0 +1,619 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-010",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T10:55:01.585+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "protocols_applied": [
+    "AGENTS.md local-first content-audit workflow",
+    ".ai/AGENTS.md additive operational artifact rules",
+    "ph-arch-construction-law source-grounding",
+    "ph-arch-professional-context LEA exam relevance"
+  ],
+  "target": {
+    "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+    "slug": "minimum-requirements-group-a-dwellings",
+    "title": "Minimum Requirements Group A Dwellings",
+    "article_folder": ".ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+    "normalized_path": ".ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/normalized.md",
+    "candidate_path": ".ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/candidate.md",
+    "sources_path": ".ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/sources.json",
+    "question_edits_folder": ".ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits",
+    "normalized_sha256": "sha256:5fdb7650e3b7ed8f02c8643411c700c41435d761e47372bb58e9cdcf86ae1440",
+    "candidate_sha256": "sha256:5fdb7650e3b7ed8f02c8643411c700c41435d761e47372bb58e9cdcf86ae1440",
+    "linked_questions_sha256": "sha256:0e54d31b0aa10e068a97ca3544d658171f897b41f5034d411017bfb8902c7bce",
+    "sources_sha256": "sha256:a454c6592bbdd723e5ba085aafd2c35081131273d82b6527c33f6ee7d53c923b"
+  },
+  "classification": {
+    "content_type": "pd1096_group_a_dwelling_code_article",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 36,
+    "question_edits_created": [
+      "3d04f3d1-35bf-4e4a-954a-6ea4c2968cc9",
+      "2ec69fcf-6835-4a5a-b297-cf6e02e615b4",
+      "c3fc6e2d-a135-4000-a4f4-00b874124498",
+      "22e9cc59-a3fa-4dc8-8d95-62cd6daa5f96",
+      "8d8d21b1-8b5b-4760-8b98-7c3a7b446ed9",
+      "05a03094-bfc1-4a01-af40-ed2d38c56ef2",
+      "66b2e342-bc30-497a-a124-62fe020df3b3",
+      "663ffde0-a298-476c-9449-0fd20ef1fbce",
+      "82b49a21-bb6f-4f62-8895-3651c4854c24",
+      "3fbc7504-56f0-47c9-8b3c-e5a24f9e65fc",
+      "a70cbae0-1017-40d1-ba7e-8c6c53e0f61f",
+      "fd8d4c3a-1e4d-4295-a409-a3762bc9ec68",
+      "e85fe73e-2c43-4e3b-9a73-fb550140f30e",
+      "98e59a2d-897a-42d9-b1ad-20e2aeec1e76",
+      "00023dd0-c56b-4979-b54d-4eaf49d9671a",
+      "7395181d-4df6-4392-bdf4-1c6662e074a5",
+      "5e21dc7c-4adc-423f-94e6-9d3864c7a564",
+      "6098f97c-42a5-4542-8fba-ffd9e58ff49a",
+      "fa2bff60-c961-4cd2-a209-d258092ba734",
+      "66ccecba-c3c4-415c-bf90-92fa9f1e70f2",
+      "d72dd2a6-8668-4165-8610-c44c4b5331f1",
+      "eff3b897-d597-4a0c-bf25-f79d16bb193d",
+      "584b70c0-b9e8-4b56-8356-d48c57767fd7",
+      "f93a569b-da4f-4d0f-babd-22a666cd9ba4",
+      "f8366187-7119-44e4-a095-8d3403ad5bc5",
+      "3508fac1-13c5-4aaf-839f-6d48b2353b26",
+      "6aa9d02b-93e7-4bb0-b4f7-fee52ece76dc",
+      "66f04e4f-9c9e-430a-bbb1-fdea67a9b529",
+      "e55f1d30-7e99-4f6c-b247-80c21e7a4e23",
+      "2c86bbde-3990-4b1f-bf79-54bd0e051c06",
+      "064b483e-860d-4323-93f4-9c45d1ad6004",
+      "24e823b0-4b19-44e8-bba3-30eec81441e7",
+      "cda82dd1-4437-489a-be26-7f5b72009030",
+      "5263abc7-9147-404d-aca7-620f369e81a2",
+      "cc01076a-c00c-4704-951c-d0057846cdcd",
+      "aba5abc9-81d2-451b-9621-d1cea12a8f77"
+    ]
+  },
+  "raw_sources": [
+    {
+      "key": "pd1096_2004_revised_irr",
+      "label": "PD 1096 2004 Revised IRR, DPWH Official Publication",
+      "source_type": "implementing_rules",
+      "source_id": "batch010-minimum-requirements-group-a-dwellings-source-01",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+      "extraction_method": "Local raw markdown conversion checked against verified raw PDF file hash",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
+      "markdown_lines_checked": [
+        "2046-2108",
+        "2659-2693"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "B010-minimum-requirements-group-a-dwellings-ARTICLE-01",
+      "claim_text": "Minimum Requirements Group A Dwellings was repaired against PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808; unsupported placeholders, comparative foreign-code claims, and unverified practice statements were removed from normalized.md.",
+      "claim_class": "article_source_repair",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
+        "markdown_lines_checked": [
+          "2046-2108",
+          "2659-2693"
+        ]
+      }
+    },
+    {
+      "claim_id": "B010-minimum-requirements-group-a-dwellings-QUESTION-001",
+      "claim_text": "Question 3d04f3d1-35bf-4e4a-954a-6ea4c2968cc9 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits for the repaired Minimum Requirements Group A Dwellings article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-minimum-requirements-group-a-dwellings-QUESTION-002",
+      "claim_text": "Question 2ec69fcf-6835-4a5a-b297-cf6e02e615b4 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits for the repaired Minimum Requirements Group A Dwellings article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-minimum-requirements-group-a-dwellings-QUESTION-003",
+      "claim_text": "Question c3fc6e2d-a135-4000-a4f4-00b874124498 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits for the repaired Minimum Requirements Group A Dwellings article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-minimum-requirements-group-a-dwellings-QUESTION-004",
+      "claim_text": "Question 22e9cc59-a3fa-4dc8-8d95-62cd6daa5f96 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits for the repaired Minimum Requirements Group A Dwellings article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-minimum-requirements-group-a-dwellings-QUESTION-005",
+      "claim_text": "Question 8d8d21b1-8b5b-4760-8b98-7c3a7b446ed9 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits for the repaired Minimum Requirements Group A Dwellings article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-minimum-requirements-group-a-dwellings-QUESTION-006",
+      "claim_text": "Question 05a03094-bfc1-4a01-af40-ed2d38c56ef2 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits for the repaired Minimum Requirements Group A Dwellings article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-minimum-requirements-group-a-dwellings-QUESTION-007",
+      "claim_text": "Question 66b2e342-bc30-497a-a124-62fe020df3b3 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits for the repaired Minimum Requirements Group A Dwellings article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-minimum-requirements-group-a-dwellings-QUESTION-008",
+      "claim_text": "Question 663ffde0-a298-476c-9449-0fd20ef1fbce has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits for the repaired Minimum Requirements Group A Dwellings article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-minimum-requirements-group-a-dwellings-QUESTION-009",
+      "claim_text": "Question 82b49a21-bb6f-4f62-8895-3651c4854c24 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits for the repaired Minimum Requirements Group A Dwellings article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-minimum-requirements-group-a-dwellings-QUESTION-010",
+      "claim_text": "Question 3fbc7504-56f0-47c9-8b3c-e5a24f9e65fc has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits for the repaired Minimum Requirements Group A Dwellings article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-minimum-requirements-group-a-dwellings-QUESTION-011",
+      "claim_text": "Question a70cbae0-1017-40d1-ba7e-8c6c53e0f61f has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits for the repaired Minimum Requirements Group A Dwellings article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-minimum-requirements-group-a-dwellings-QUESTION-012",
+      "claim_text": "Question fd8d4c3a-1e4d-4295-a409-a3762bc9ec68 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits for the repaired Minimum Requirements Group A Dwellings article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-minimum-requirements-group-a-dwellings-QUESTION-013",
+      "claim_text": "Question e85fe73e-2c43-4e3b-9a73-fb550140f30e has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits for the repaired Minimum Requirements Group A Dwellings article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-minimum-requirements-group-a-dwellings-QUESTION-014",
+      "claim_text": "Question 98e59a2d-897a-42d9-b1ad-20e2aeec1e76 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits for the repaired Minimum Requirements Group A Dwellings article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-minimum-requirements-group-a-dwellings-QUESTION-015",
+      "claim_text": "Question 00023dd0-c56b-4979-b54d-4eaf49d9671a has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits for the repaired Minimum Requirements Group A Dwellings article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-minimum-requirements-group-a-dwellings-QUESTION-016",
+      "claim_text": "Question 7395181d-4df6-4392-bdf4-1c6662e074a5 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits for the repaired Minimum Requirements Group A Dwellings article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-minimum-requirements-group-a-dwellings-QUESTION-017",
+      "claim_text": "Question 5e21dc7c-4adc-423f-94e6-9d3864c7a564 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits for the repaired Minimum Requirements Group A Dwellings article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-minimum-requirements-group-a-dwellings-QUESTION-018",
+      "claim_text": "Question 6098f97c-42a5-4542-8fba-ffd9e58ff49a has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits for the repaired Minimum Requirements Group A Dwellings article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-minimum-requirements-group-a-dwellings-QUESTION-019",
+      "claim_text": "Question fa2bff60-c961-4cd2-a209-d258092ba734 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits for the repaired Minimum Requirements Group A Dwellings article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-minimum-requirements-group-a-dwellings-QUESTION-020",
+      "claim_text": "Question 66ccecba-c3c4-415c-bf90-92fa9f1e70f2 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits for the repaired Minimum Requirements Group A Dwellings article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-minimum-requirements-group-a-dwellings-QUESTION-021",
+      "claim_text": "Question d72dd2a6-8668-4165-8610-c44c4b5331f1 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits for the repaired Minimum Requirements Group A Dwellings article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-minimum-requirements-group-a-dwellings-QUESTION-022",
+      "claim_text": "Question eff3b897-d597-4a0c-bf25-f79d16bb193d has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits for the repaired Minimum Requirements Group A Dwellings article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-minimum-requirements-group-a-dwellings-QUESTION-023",
+      "claim_text": "Question 584b70c0-b9e8-4b56-8356-d48c57767fd7 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits for the repaired Minimum Requirements Group A Dwellings article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-minimum-requirements-group-a-dwellings-QUESTION-024",
+      "claim_text": "Question f93a569b-da4f-4d0f-babd-22a666cd9ba4 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits for the repaired Minimum Requirements Group A Dwellings article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-minimum-requirements-group-a-dwellings-QUESTION-025",
+      "claim_text": "Question f8366187-7119-44e4-a095-8d3403ad5bc5 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits for the repaired Minimum Requirements Group A Dwellings article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-minimum-requirements-group-a-dwellings-QUESTION-026",
+      "claim_text": "Question 3508fac1-13c5-4aaf-839f-6d48b2353b26 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits for the repaired Minimum Requirements Group A Dwellings article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-minimum-requirements-group-a-dwellings-QUESTION-027",
+      "claim_text": "Question 6aa9d02b-93e7-4bb0-b4f7-fee52ece76dc has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits for the repaired Minimum Requirements Group A Dwellings article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-minimum-requirements-group-a-dwellings-QUESTION-028",
+      "claim_text": "Question 66f04e4f-9c9e-430a-bbb1-fdea67a9b529 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits for the repaired Minimum Requirements Group A Dwellings article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-minimum-requirements-group-a-dwellings-QUESTION-029",
+      "claim_text": "Question e55f1d30-7e99-4f6c-b247-80c21e7a4e23 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits for the repaired Minimum Requirements Group A Dwellings article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-minimum-requirements-group-a-dwellings-QUESTION-030",
+      "claim_text": "Question 2c86bbde-3990-4b1f-bf79-54bd0e051c06 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits for the repaired Minimum Requirements Group A Dwellings article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-minimum-requirements-group-a-dwellings-QUESTION-031",
+      "claim_text": "Question 064b483e-860d-4323-93f4-9c45d1ad6004 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits for the repaired Minimum Requirements Group A Dwellings article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-minimum-requirements-group-a-dwellings-QUESTION-032",
+      "claim_text": "Question 24e823b0-4b19-44e8-bba3-30eec81441e7 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits for the repaired Minimum Requirements Group A Dwellings article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-minimum-requirements-group-a-dwellings-QUESTION-033",
+      "claim_text": "Question cda82dd1-4437-489a-be26-7f5b72009030 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits for the repaired Minimum Requirements Group A Dwellings article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-minimum-requirements-group-a-dwellings-QUESTION-034",
+      "claim_text": "Question 5263abc7-9147-404d-aca7-620f369e81a2 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits for the repaired Minimum Requirements Group A Dwellings article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-minimum-requirements-group-a-dwellings-QUESTION-035",
+      "claim_text": "Question cc01076a-c00c-4704-951c-d0057846cdcd has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits for the repaired Minimum Requirements Group A Dwellings article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-minimum-requirements-group-a-dwellings-QUESTION-036",
+      "claim_text": "Question aba5abc9-81d2-451b-9621-d1cea12a8f77 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits for the repaired Minimum Requirements Group A Dwellings article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    }
+  ],
+  "unsupported_claims_removed": [
+    "Removed unresolved [SLATECAMP_UI_BLOCK:*] placeholders from normalized learner content.",
+    "Removed comparative foreign-code tables and unsupported international practice claims not audited against local raw PDFs.",
+    "Removed or corrected unverified section/number claims that conflicted with the checked PD 1096 raw source."
+  ],
+  "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED"
+}

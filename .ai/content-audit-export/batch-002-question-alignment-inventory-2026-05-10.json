@@ -1,0 +1,325 @@
+{
+  "batch_id": "source-audited-article-batch-002-blocker-recovery",
+  "generated_at": "2026-05-10T13:58:00+08:00",
+  "items": [
+    {
+      "article_id": "5967e69f-d295-4dd2-9eb7-b4f1a321db4d",
+      "folder": "lea-prac-cmp-003-project-construction-cost-pcc-definition-inclusions-and-what-the-architect-s-fee-is--5967e69f-d295-4dd2-9eb7-b4f1a321db4d",
+      "candidate_sha256": "sha256:1408af3b567e4e38f4f5916226362c62e7b43c22a4cd89587e3d35b523c9ab80",
+      "raw_placeholder_count": 0,
+      "source_count": 2,
+      "linked_question_count": 10,
+      "question_blockers": [
+        {
+          "question_id": "c6907bc2-8c8b-4654-b167-7d65484931b7",
+          "model_id": "ALE-PRAC-CMP-003-005",
+          "text": "What is the typical accuracy range for cost estimates at the end of Design Development?",
+          "reason": [
+            "PCC question may rely on unsupported estimate-accuracy/contingency/final-cost adjustment claim"
+          ]
+        },
+        {
+          "question_id": "42b2e06c-d7f8-448e-a673-ec5acd552597",
+          "model_id": "ALE-PRAC-CMP-003-002",
+          "text": "Which of the following is included in Project Construction Cost (PCC)?",
+          "reason": [
+            "PCC question may rely on unsupported estimate-accuracy/contingency/final-cost adjustment claim"
+          ]
+        },
+        {
+          "question_id": "a64d2971-b0e2-4678-bfcb-ade7501b5dc4",
+          "model_id": "ALE-PRAC-CMP-003-001",
+          "text": "What is the primary purpose of Project Construction Cost (PCC) in architect fee calculation?",
+          "reason": [
+            "PCC question may rely on unsupported estimate-accuracy/contingency/final-cost adjustment claim"
+          ]
+        },
+        {
+          "question_id": "f16dd1cf-cf8d-455e-a76d-041a3d632051",
+          "model_id": "ALE-PRAC-CMP-003-006",
+          "text": "A project has an estimated construction cost of 50 million pesos. The owner establishes a 10 million peso contingency reserve for cost overruns. What amount should be used as the SPPCC basis for progressive fee calculation at this phase?",
+          "reason": [
+            "PCC question may rely on unsupported estimate-accuracy/contingency/final-cost adjustment claim"
+          ]
+        },
+        {
+          "question_id": "14616f99-a597-44f2-9bc4-2a22675aa078",
+          "model_id": "ALE-PRAC-CMP-003-007",
+          "text": "If the final construction bid (winning bid) is lower than the Statement of Probable Project Construction Cost (SPPCC) prepared during the Contract Documents phase, what typically occurs with the architect's percentage-of-cost fee under SPP 202?",
+          "reason": [
+            "PCC question may rely on unsupported estimate-accuracy/contingency/final-cost adjustment claim"
+          ]
+        }
+      ],
+      "state": "NEEDS_QUESTION_ALIGNMENT"
+    },
+    {
+      "article_id": "0c599071-cf6f-4b07-9d5f-a6230dd77b36",
+      "folder": "lea-prac-cmp-004-schedule-of-payments-phase-percentages-and-the-architect-s-invoicing-timeline--0c599071-cf6f-4b07-9d5f-a6230dd77b36",
+      "candidate_sha256": "sha256:3b7328ffe67521864ca5cac9c689f4db8a5e271927e47671de924ee07114ec49",
+      "raw_placeholder_count": 0,
+      "source_count": 2,
+      "linked_question_count": 10,
+      "question_blockers": [
+        {
+          "question_id": "1a6e4b92-c0bc-446b-84ca-9eee79ac5062",
+          "model_id": "ALE-PRAC-CMP-004-004",
+          "text": "Which activities are characteristic of the Design Development phase?",
+          "reason": [
+            "Schedule question may conflict with source-backed cumulative 15/35/85/remaining-15 framework"
+          ]
+        },
+        {
+          "question_id": "d93fb691-d568-4eba-b1ad-dcf85cb36ac1",
+          "model_id": "ALE-PRAC-CMP-004-009",
+          "text": "An architect is billing for completion of the Design Development phase. Which of the following invoices would be most appropriate in terms of payment documentation?",
+          "reason": [
+            "Schedule question may conflict with source-backed cumulative 15/35/85/remaining-15 framework"
+          ]
+        },
+        {
+          "question_id": "0d8dd6eb-66d9-43a3-bd99-599837f56dd3",
+          "model_id": "ALE-PRAC-CMP-004-001",
+          "text": "What percentage of the total architect fee is typically allocated to the Schematic Design phase under the recommended SPP 202 schedule per the Architect's Guidelines?",
+          "reason": [
+            "Schedule question may conflict with source-backed cumulative 15/35/85/remaining-15 framework"
+          ]
+        },
+        {
+          "question_id": "4a369211-8be9-4a03-bc5f-7f0ca4c4687e",
+          "model_id": "ALE-PRAC-CMP-004-002",
+          "text": "Which phase receives the largest percentage allocation of the architect fee under the typical SPP 202 schedule per the Architect's Guidelines?",
+          "reason": [
+            "Schedule question may conflict with source-backed cumulative 15/35/85/remaining-15 framework"
+          ]
+        },
+        {
+          "question_id": "c3bb9f1d-9a1b-4ef7-a311-d5f0aa06b5fc",
+          "model_id": "ALE-PRAC-CMP-004-010",
+          "text": "A project Owner retains 10% of each payment until final project completion. The total architect fee is 4 million pesos. What total amount will the architect have received by the time Contract Documents are complete, prior to final completion, assuming standard phase allocations?",
+          "reason": [
+            "Schedule question may conflict with source-backed cumulative 15/35/85/remaining-15 framework"
+          ]
+        },
+        {
+          "question_id": "ce2f74eb-b185-424c-89b5-7b52d249dad6",
+          "model_id": "ALE-PRAC-CMP-004-005",
+          "text": "What is the recommended percentage of the architect's fee paid during Construction Administration under the typical SPP 202 schedule per the Architect's Guidelines?",
+          "reason": [
+            "Schedule question may conflict with source-backed cumulative 15/35/85/remaining-15 framework"
+          ]
+        },
+        {
+          "question_id": "f3ad482f-b655-44e7-9b26-0c8bb610ef8f",
+          "model_id": "ALE-PRAC-CMP-004-006",
+          "text": "An architect has completed Contract Documents and they are ready for bidding. The total fee for the project is 2 million pesos. Based on the recommended schedule per the Architect's Guidelines, how much has the architect been paid through Contract Documents completion?",
+          "reason": [
+            "Schedule question may conflict with source-backed cumulative 15/35/85/remaining-15 framework"
+          ]
+        }
+      ],
+      "state": "NEEDS_QUESTION_ALIGNMENT"
+    },
+    {
+      "article_id": "d18569e9-4401-4d85-8d59-d545240ef106",
+      "folder": "lea-prac-cmp-006-multiple-of-direct-personnel-expense-mdpe-the-formula-components-and-logic--d18569e9-4401-4d85-8d59-d545240ef106",
+      "candidate_sha256": "sha256:99783ed4843ae2f68ebeeba4a9482ef5fb1bf9c2d156b4f95543dc49a90641fd",
+      "raw_placeholder_count": 0,
+      "source_count": 1,
+      "linked_question_count": 10,
+      "question_blockers": [
+        {
+          "question_id": "784da871-b661-4bd9-95e6-41cc531a2eaf",
+          "model_id": "ALE-PRAC-CMP-006-002",
+          "text": "Which costs are included in Direct Personnel Expense (DPE)?",
+          "reason": [
+            "MDPE question may rely on unsupported multiplier/payroll-decomposition claim"
+          ]
+        },
+        {
+          "question_id": "ee7b5d76-e3f1-4ed8-9bcc-35a5bbf02119",
+          "model_id": "ALE-PRAC-CMP-006-010",
+          "text": "An architect proposes MDPE compensation with a multiplier of 2.8 for a specialized research facility. How should the architect justify this multiplier to the client?",
+          "reason": [
+            "MDPE question may rely on unsupported multiplier/payroll-decomposition claim"
+          ]
+        },
+        {
+          "question_id": "381f5ac2-0e39-4b39-b2ff-63bfd8fec2e3",
+          "model_id": "ALE-PRAC-CMP-006-004",
+          "text": "What is the typical multiplier range for MDPE in Philippine architecture practice?",
+          "reason": [
+            "MDPE question may rely on unsupported multiplier/payroll-decomposition claim"
+          ]
+        },
+        {
+          "question_id": "e39f2cd6-f73e-4bbb-9fe9-8d48085e3375",
+          "model_id": "ALE-PRAC-CMP-006-003",
+          "text": "An architect earns 600,000 pesos annually with 80,000 pesos in benefits and works 1,800 billable hours per year. What is the fully-loaded hourly rate?",
+          "reason": [
+            "MDPE question may rely on unsupported multiplier/payroll-decomposition claim"
+          ]
+        },
+        {
+          "question_id": "4093f3c5-3cb0-410d-800f-d1db186ecd9d",
+          "model_id": "ALE-PRAC-CMP-006-001",
+          "text": "What is the basic MDPE fee calculation formula?",
+          "reason": [
+            "MDPE question may rely on unsupported multiplier/payroll-decomposition claim"
+          ]
+        },
+        {
+          "question_id": "344f3bfb-3dfc-4a00-aff4-11475a4b67d3",
+          "model_id": "ALE-PRAC-CMP-006-006",
+          "text": "Which of the following costs should NOT be included in Direct Personnel Expense?",
+          "reason": [
+            "MDPE question may rely on unsupported multiplier/payroll-decomposition claim"
+          ]
+        },
+        {
+          "question_id": "9e391e7d-a5b9-4447-8ff9-f3b5b8e8e775",
+          "model_id": "ALE-PRAC-CMP-006-007",
+          "text": "An MDPE multiplier of 2.5 can be decomposed as: 1.8 (overhead) + 0.5 (profit) + 0.2 (non-technical factors). For a straightforward project, should this multiplier be adjusted?",
+          "reason": [
+            "MDPE question may rely on unsupported multiplier/payroll-decomposition claim"
+          ]
+        }
+      ],
+      "state": "NEEDS_QUESTION_ALIGNMENT"
+    },
+    {
+      "article_id": "946e44ee-e4d7-452d-a00a-066bae0f273c",
+      "folder": "lea-prac-cmp-007-mdpe-multipliers-overhead-profit-non-technical-factors-and-philippine-practice-rang--946e44ee-e4d7-452d-a00a-066bae0f273c",
+      "candidate_sha256": "sha256:2627debfb63379a09aadace6e181045843dec90dbbb76acd5a58acfb91d6c414",
+      "raw_placeholder_count": 0,
+      "source_count": 2,
+      "linked_question_count": 10,
+      "question_blockers": [
+        {
+          "question_id": "6c238891-06d7-40cc-b7e3-dd87d108937d",
+          "model_id": "ALE-PRAC-CMP-007-005",
+          "text": "Which MDPE multiplier range is appropriate for straightforward projects such as single-family residences in Philippine practice?",
+          "reason": [
+            "MDPE multiplier question may exceed/source-drift beyond 1.5-2.5 and qualitative factors"
+          ]
+        },
+        {
+          "question_id": "c345f793-1b09-4d19-9f2d-e045303bff54",
+          "model_id": "ALE-PRAC-CMP-007-008",
+          "text": "What is the typical multiplier range for complex projects such as high-rise office buildings in Philippine practice?",
+          "reason": [
+            "MDPE multiplier question may exceed/source-drift beyond 1.5-2.5 and qualitative factors"
+          ]
+        },
+        {
+          "question_id": "79672571-9965-4604-b18d-9f4a18aa978b",
+          "model_id": "ALE-PRAC-CMP-007-002",
+          "text": "What does firm overhead typically include?",
+          "reason": [
+            "MDPE multiplier question may exceed/source-drift beyond 1.5-2.5 and qualitative factors"
+          ]
+        },
+        {
+          "question_id": "e8d5bd9e-79ea-460b-9487-c2e0050fdd80",
+          "model_id": "ALE-PRAC-CMP-007-009",
+          "text": "An architect proposes MDPE with estimated DPE of 3 million pesos, using a multiplier of 2.8, resulting in an 8.4 million peso fee. The estimated PCC is 150 million pesos. What is the effective percentage, and how does this compare to a Group 3 percentage-of-PCC approach?",
+          "reason": [
+            "MDPE multiplier question may exceed/source-drift beyond 1.5-2.5 and qualitative factors"
+          ]
+        },
+        {
+          "question_id": "e5b1465f-86fe-4e33-a1a6-bbe6c557d297",
+          "model_id": "ALE-PRAC-CMP-007-003",
+          "text": "What is the typical overhead multiplier component range for Philippine architecture firms?",
+          "reason": [
+            "MDPE multiplier question may exceed/source-drift beyond 1.5-2.5 and qualitative factors"
+          ]
+        },
+        {
+          "question_id": "5cf56df2-5967-4f67-98ab-d325ee7011c0",
+          "model_id": "ALE-PRAC-CMP-007-007",
+          "text": "How should an architect adjust the base multiplier for a project with innovative design and high regulatory complexity?",
+          "reason": [
+            "MDPE multiplier question may exceed/source-drift beyond 1.5-2.5 and qualitative factors"
+          ]
+        },
+        {
+          "question_id": "330e717d-6e2f-42e1-835e-d6de97657b7f",
+          "model_id": "ALE-PRAC-CMP-007-004",
+          "text": "If a firm has calculated overhead at 60% of direct personnel cost and targets 25% profit margin, what multiplier components result?",
+          "reason": [
+            "MDPE multiplier question may exceed/source-drift beyond 1.5-2.5 and qualitative factors"
+          ]
+        },
+        {
+          "question_id": "1b739814-7580-462e-83d4-7f4aca631188",
+          "model_id": "ALE-PRAC-CMP-007-006",
+          "text": "A firm estimates its overhead at 55% of direct personnel cost and targets 30% profit. Non-technical factors are estimated at 15%. What is the total multiplier?",
+          "reason": [
+            "MDPE multiplier question may exceed/source-drift beyond 1.5-2.5 and qualitative factors"
+          ]
+        },
+        {
+          "question_id": "2e5a5502-1f77-4d4d-a09d-e0f3e5bbaef0",
+          "model_id": "ALE-PRAC-CMP-007-010",
+          "text": "How should an architect present the MDPE multiplier to a client to maximize acceptance?",
+          "reason": [
+            "MDPE multiplier question may exceed/source-drift beyond 1.5-2.5 and qualitative factors"
+          ]
+        },
+        {
+          "question_id": "04d1074d-a52a-4812-8150-5fa13dee221b",
+          "model_id": "ALE-PRAC-CMP-007-001",
+          "text": "What are the three primary components of an MDPE multiplier?",
+          "reason": [
+            "MDPE multiplier question may exceed/source-drift beyond 1.5-2.5 and qualitative factors"
+          ]
+        }
+      ],
+      "state": "NEEDS_QUESTION_ALIGNMENT"
+    },
+    {
+      "article_id": "660b2a38-cfad-4aa2-8ff3-85b4ee8fb32d",
+      "folder": "lea-prac-cmp-009-lump-sum-fixed-fee-scope-discipline-risk-allocation-and-appropriate-use--660b2a38-cfad-4aa2-8ff3-85b4ee8fb32d",
+      "candidate_sha256": "sha256:f084ba4c6aeb2a5d5d9d2e2c4593639a5ee55c0fb5c27514b86749fbaffeb63a",
+      "raw_placeholder_count": 0,
+      "source_count": 2,
+      "linked_question_count": 10,
+      "question_blockers": [
+        {
+          "question_id": "2a74c38c-6810-48d4-8f2d-8b28ee94f1ab",
+          "model_id": "ALE-PRAC-CMP-009-006",
+          "text": "An architect estimates 800 design hours plus 200 coordination hours at 500 pesos per fully-loaded hourly rate, applying a 2.2 multiplier and 15% contingency. What is the appropriate Lump Sum Fixed Fee?",
+          "reason": [
+            "Lump-sum question may rely on unsupported contingency/discount/use-case heuristic"
+          ]
+        },
+        {
+          "question_id": "bbdc5fcf-5d03-439f-8a28-ea1fec1e6a84",
+          "model_id": "ALE-PRAC-CMP-009-010",
+          "text": "What should the Owner-Architect Agreement specify regarding payment structure for Lump Sum Fixed Fees?",
+          "reason": [
+            "Lump-sum question may rely on unsupported contingency/discount/use-case heuristic"
+          ]
+        },
+        {
+          "question_id": "e761a6a8-df27-4045-945b-e73882b6776e",
+          "model_id": "ALE-PRAC-CMP-009-009",
+          "text": "Comparing Lump Sum Fixed Fee with MDPE for the same project: if MDPE fee is estimated at 1.5 million pesos, what should be the approximate Lump Sum Fixed Fee to reflect the architect's risk assumption?",
+          "reason": [
+            "Lump-sum question may rely on unsupported contingency/discount/use-case heuristic"
+          ]
+        },
+        {
+          "question_id": "a6152e0b-9d96-4774-a845-7195b938263f",
+          "model_id": "ALE-PRAC-CMP-009-005",
+          "text": "What percentage contingency should an architect include in a Lump Sum Fixed Fee?",
+          "reason": [
+            "Lump-sum question may rely on unsupported contingency/discount/use-case heuristic"
+          ]
+        }
+      ],
+      "state": "NEEDS_QUESTION_ALIGNMENT"
+    }
+  ]
+}

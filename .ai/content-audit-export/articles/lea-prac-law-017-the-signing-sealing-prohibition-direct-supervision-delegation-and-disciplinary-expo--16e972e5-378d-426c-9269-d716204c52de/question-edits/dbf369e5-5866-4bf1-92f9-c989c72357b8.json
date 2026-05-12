@@ -1,0 +1,31 @@
+{
+  "question_id": "dbf369e5-5866-4bf1-92f9-c989c72357b8",
+  "baseline_hash": "sha256:168c0bd7815eb29865689a270cf4bdf4773671fb001160a539b561f1e15a68a9",
+  "reason": "Batch 006 local source audit aligned linked question ALE-PRAC-LAW-017-010 to verified raw-source claims for lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-exposure.",
+  "approved_by": "codex-local-source-audit-batch-006",
+  "approved_at": "2026-05-10T22:30:00+08:00",
+  "proposed": {
+    "code_citation": "RA 9266 IRR Sections 20, 23, and 32",
+    "explanation": "Source-audited against RA 9266 IRR Sections 20, 23, and 32; the answer turns on personal preparation, immediate supervision, and Section 23 discipline exposure.",
+    "text": "How does the signing and sealing rule affect coordination between architectural documents and specialist discipline documents?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The architect should sign and seal all specialist documents to unify the package"
+      },
+      {
+        "id": "b",
+        "text": "The architect has no need to coordinate any specialist work with the architectural documents"
+      },
+      {
+        "id": "c",
+        "text": "The architect should coordinate conflicts affecting the architectural design while each professional remains responsible for documents within that professional's own signing and sealing scope"
+      },
+      {
+        "id": "d",
+        "text": "The contractor alone resolves all discipline conflicts after construction starts"
+      }
+    ],
+    "correct_option_id": "c"
+  }
+}

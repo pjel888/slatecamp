@@ -1,0 +1,111 @@
+{
+  "artifact_type": "source_audit_evidence",
+  "batch_id": "source-audited-article-batch-059-local-first",
+  "batch_number": 59,
+  "audit_mode": "local_first_raw_pdf_primary",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T20:48:00.000+08:00",
+  "target": {
+    "article_id": "8a812be4-c5c0-40ec-a3ff-74acb39e24bc",
+    "slug": "lea-theo-004-08-core-concept",
+    "title": "Solar Geometry Fundamentals",
+    "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-08-core-concept--8a812be4-c5c0-40ec-a3ff-74acb39e24bc",
+    "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-08-core-concept--8a812be4-c5c0-40ec-a3ff-74acb39e24bc/question-edits",
+    "linked_questions": 11,
+    "question_edits": 11,
+    "candidate_sha256": "sha256:40858fe66a7114c16feefe75774518f24e72628aa9dbf48990443f637e0ed76b"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth": "vitruvius-connection/001_Raw-Source-Layer local raw PDFs",
+    "derivative_or_search_layers_used_as_primary_truth": false,
+    "refined_markdown_used_only_as_locator": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": [],
+    "checked_sources": [
+      {
+        "source_id": "toa4-tropical-architecture-local-raw-pdf--b059-8a812be4-01",
+        "label": "TOA 4 Tropical Architecture - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+        "raw_pdf_sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+        "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+        "locator": "TOA 4 Tropical Architecture refined markdown lines 708-810, 1201-1247, and raw PDF pages 90, 92-100, 121, 140, and 143-148"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "theory-of-architecture-tropical-design",
+    "contains_legal_or_code_claims": false,
+    "source_risk_tier": "medium",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 11,
+    "question_edits_created": [
+      "0fe73a9c-1e6c-4e6a-b901-27cbb2f10bad",
+      "0db01108-310c-47c0-ae63-62beb00f3393",
+      "9cba8f84-56b9-4c30-a28b-e716c7b3211d",
+      "1aa5f693-63e8-4105-912f-97332da0dd3a",
+      "1e1d8d78-740d-41b1-bf50-d55b37289c4c",
+      "a541745f-5193-4d6e-b851-d4e138507398",
+      "5d7dcf73-5a13-4bad-a3dd-881b31da706f",
+      "9486a5c8-3cf7-4f0d-bb8b-8c610c6d35fd",
+      "8af4b46d-e0df-404a-933d-91d555cdffcb",
+      "944592b3-28c3-45ef-9464-979a95bc45cb",
+      "dc6f5231-c321-44f5-9847-2ced45915217"
+    ],
+    "scenario_policy_status": "eligible-deferred",
+    "scenario_policy_reason": "A realistic tropical-site design scenario could be useful, but Batch 059 defers scenario enrichment so source-audited article/question correctness remains the only blocking gate."
+  },
+  "claims": [
+    {
+      "claim_id": "lea-theo-004-08-core-concept-b059-claim-01",
+      "claim_text": "Solar Geometry Fundamentals is limited to checked local raw PDF TOA 4 Tropical Architecture source locators recorded for this article.",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+        "quoted_pdf_excerpt": "TOA 4 Tropical Architecture refined markdown lines 708-810, 1201-1247, and raw PDF pages 90, 92-100, 121, 140, and 143-148",
+        "source_ids": [
+          "toa4-tropical-architecture-local-raw-pdf--b059-8a812be4-01"
+        ]
+      },
+      "audit_result": "PASS"
+    }
+  ],
+  "checked_markdown_lines": [
+    "TOA 4 Tropical Architecture refined markdown lines 708-810",
+    "TOA 4 Tropical Architecture refined markdown lines 1201-1247"
+  ],
+  "checked_pdf_pages": "raw PDF pages 1, 5-11, 13, 15-18, 20-21, 23-24, 28, 41, 71-78, 81-84, 87-90, 92-100, 104, 106-110, 121, 140, 143-148, 151, 163, 172, 180-181, and 187",
+  "unverified_or_rejected_claims": [],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "local_first_only": true,
+    "supabase_write_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json",
+    "diff_gate": "safe_true_blockers_zero",
+    "validate_gate": "valid_true_blockers_zero",
+    "ui_block_edits_gate": "valid_true_blockers_zero"
+  },
+  "sme_review": {
+    "required": false,
+    "required_before_publication": true,
+    "status": "not_started_local_first_batch",
+    "note": "Local-first source audit is ready for later human/SME review before final publishing."
+  },
+  "overall": {
+    "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": [
+      "Human/SME review remains pending before final publishing."
+    ]
+  }
+}

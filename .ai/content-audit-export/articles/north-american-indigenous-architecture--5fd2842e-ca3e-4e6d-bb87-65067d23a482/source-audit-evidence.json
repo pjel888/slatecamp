@@ -1,0 +1,126 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-054-local-first",
+  "batch_number": 54,
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T19:22:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "5fd2842e-ca3e-4e6d-bb87-65067d23a482",
+    "slug": "north-american-indigenous-architecture",
+    "title": "North American Indigenous Architecture",
+    "article_folder": ".ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482",
+    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482",
+    "candidate_path": ".ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482/candidate.md",
+    "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482/candidate.md",
+    "question_edits_folder": ".ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482/question-edits",
+    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/north-american-indigenous-architecture--5fd2842e-ca3e-4e6d-bb87-65067d23a482/question-edits",
+    "normalized_sha256": "sha256:629fe3474fee4cf182561fea56f1ad7870fef4bfe03abf7115edb8718aedadf3",
+    "candidate_sha256": "sha256:629fe3474fee4cf182561fea56f1ad7870fef4bfe03abf7115edb8718aedadf3",
+    "linked_questions_sha256": "sha256:e41fa027892dfb335823e3b8007a64a0db55f726e4c9ecb6ff095008b39ef321",
+    "sources_sha256": "sha256:c54c8fa2e1c9905e0773994a99e83616da5684f2c3c65451851ead04b6d7a806"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "refined_markdown_role": "locator_only",
+    "derivative_or_search_layer_as_primary": false,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": [],
+    "source_families_checked": [
+      {
+        "label": "George Salvan Architectural Character and the History of Architecture - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Character and the History of Architecture.pdf",
+        "raw_pdf_sha256": "sha256:55c4fa2d43bbfd27cffb86d0aac4ad960032e178e1e25c29d4eb351297bfc069",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Character and the History of Architecture.md",
+        "refined_markdown_sha256": "sha256:be8e760bef8f7ceb573742d996dabb202f0353e19b4ab9283ec2de7dfc1fccea",
+        "locator": "George Salvan Architectural Character refined markdown lines 479-487"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "history-of-architecture",
+    "contains_legal_or_code_claims": false,
+    "source_risk_tier": "medium",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 22,
+    "question_edits_created": [
+      "7863bedd-b863-4a56-9972-d17aad31958e",
+      "cb23c2e1-34ee-4d60-9c36-609872e1fd57",
+      "3cbf3921-5332-42a4-927c-e58f2f5fd32e",
+      "a88fe13e-5a47-4fca-9188-e7fd80a8e087",
+      "c9442842-9c39-452c-9acd-9eb77c88a6f0",
+      "2a1a96a9-b13b-4a1d-a8a7-869ace7a8035",
+      "68753697-4183-4805-9e26-e5001189032b",
+      "fe9dba3e-91fc-49ea-88fb-54e11e8af2f6",
+      "7f0b5739-bb69-47cf-aa7f-553691bcb183",
+      "c9b31198-eead-42b5-a929-8bc376b0aa93",
+      "22791b72-680d-4695-bfd7-9ecf00b3182a",
+      "b546b52b-2068-40a8-85d0-b73aed3db47c",
+      "5b2d0ba5-4fc2-4ec2-8644-9053280fbb57",
+      "6172a479-1a21-48db-a11b-7f9c0cca4395",
+      "9df32315-751b-4c90-8ea9-f43921b0b424",
+      "54b26d6f-43c0-4a29-83c5-acddd3e0c414",
+      "c678c816-e3e2-47f2-97a5-7354912b8278",
+      "ca8357d7-6da1-4354-a7e1-518e0b476a9c",
+      "4362320c-248e-460c-9fd6-ca464953f2d4",
+      "2e3664c8-8996-45ee-9fe7-dab4a0acb7af",
+      "4a92156a-1c8e-4866-b400-3e884359ffd7",
+      "c35c193e-3c9d-4de6-953a-3649f49c3c95"
+    ]
+  },
+  "checked_markdown_lines": [
+    "George Salvan Architectural Character refined markdown lines 479-487"
+  ],
+  "claims": [
+    {
+      "claim_id": "north-american-indigenous-architecture-b054-claim-01",
+      "claim_text": "North American Indigenous Architecture in Batch 054 is limited to checked local raw PDF source families and the refined markdown locators recorded for this article.",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Character and the History of Architecture.pdf",
+        "quoted_pdf_excerpt": "George Salvan Architectural Character refined markdown lines 479-487",
+        "source_ids": [
+          "salvan-character-local-raw-pdf--b054-5fd2842e-01"
+        ]
+      },
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "north-american-indigenous-architecture-b054-claim-questions",
+      "claim_text": "Batch 054 question edits audited for north-american-indigenous-architecture: 7863bedd-b863-4a56-9972-d17aad31958e, cb23c2e1-34ee-4d60-9c36-609872e1fd57, 3cbf3921-5332-42a4-927c-e58f2f5fd32e, a88fe13e-5a47-4fca-9188-e7fd80a8e087, c9442842-9c39-452c-9acd-9eb77c88a6f0, 2a1a96a9-b13b-4a1d-a8a7-869ace7a8035, 68753697-4183-4805-9e26-e5001189032b, fe9dba3e-91fc-49ea-88fb-54e11e8af2f6, 7f0b5739-bb69-47cf-aa7f-553691bcb183, c9b31198-eead-42b5-a929-8bc376b0aa93, 22791b72-680d-4695-bfd7-9ecf00b3182a, b546b52b-2068-40a8-85d0-b73aed3db47c, 5b2d0ba5-4fc2-4ec2-8644-9053280fbb57, 6172a479-1a21-48db-a11b-7f9c0cca4395, 9df32315-751b-4c90-8ea9-f43921b0b424, 54b26d6f-43c0-4a29-83c5-acddd3e0c414, c678c816-e3e2-47f2-97a5-7354912b8278, ca8357d7-6da1-4354-a7e1-518e0b476a9c, 4362320c-248e-460c-9fd6-ca464953f2d4, 2e3664c8-8996-45ee-9fe7-dab4a0acb7af, 4a92156a-1c8e-4866-b400-3e884359ffd7, c35c193e-3c9d-4de6-953a-3649f49c3c95",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Character and the History of Architecture.pdf",
+        "quoted_pdf_excerpt": "George Salvan Architectural Character refined markdown lines 479-487",
+        "source_ids": [
+          "salvan-character-local-raw-pdf--b054-5fd2842e-01"
+        ]
+      },
+      "audit_result": "PASS"
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "local_first_only": true,
+    "supabase_write_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json"
+  },
+  "sme_review": {
+    "required": false,
+    "status": "not_required"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

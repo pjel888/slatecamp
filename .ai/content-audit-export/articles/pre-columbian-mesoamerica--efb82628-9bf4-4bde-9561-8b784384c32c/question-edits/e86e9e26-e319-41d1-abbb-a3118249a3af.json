@@ -1,0 +1,60 @@
+{
+  "question_id": "e86e9e26-e319-41d1-abbb-a3118249a3af",
+  "baseline_hash": "sha256:b5ffa9afc34493fc3b6fcaa23dfab1e274d46eefa15fd58c302306515dd3de51",
+  "action": "replace",
+  "reason": "source-audited-article-batch-054-local-first: local raw PDF backed replacement constrained to checked Batch 054 source families.",
+  "approved_by": "codex-local-first-batch-054",
+  "approved_at": "2026-05-11T19:22:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "efb82628-9bf4-4bde-9561-8b784384c32c",
+    "parent_article_slug": "pre-columbian-mesoamerica",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "George Salvan Architectural Character refined markdown lines 1238-1315",
+    "checked_markdown_lines": [
+      "George Salvan Architectural Character refined markdown lines 1238-1241",
+      "George Salvan Architectural Character refined markdown lines 1245-1257",
+      "George Salvan Architectural Character refined markdown lines 1261-1265",
+      "George Salvan Architectural Character refined markdown lines 1273-1281",
+      "George Salvan Architectural Character refined markdown lines 1285-1315"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "salvan-character-local-raw-pdf--b054-efb82628-01",
+        "label": "George Salvan Architectural Character and the History of Architecture - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Character and the History of Architecture.pdf",
+        "sha256": "sha256:55c4fa2d43bbfd27cffb86d0aac4ad960032e178e1e25c29d4eb351297bfc069",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Character and the History of Architecture.md",
+        "refined_markdown_sha256": "sha256:be8e760bef8f7ceb573742d996dabb202f0353e19b4ab9283ec2de7dfc1fccea",
+        "locator": "George Salvan Architectural Character refined markdown lines 1238-1315"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 054 checked local raw PDF source scope."
+  },
+  "proposed": {
+    "text": "Which material set is source-backed for Batch 054 Mesoamerica?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Yucatan limestone, Mexico volcanic rock, adobe brick, and hardwoods."
+      },
+      {
+        "id": "b",
+        "text": "Yucay limestone, cushion stones, and Inca terraces only."
+      },
+      {
+        "id": "c",
+        "text": "Hardpacked snow blocks and bark shingles."
+      },
+      {
+        "id": "d",
+        "text": "Titanium cladding and exposed ducts."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Yucatan limestone, Mexico volcanic rock, adobe brick, and hardwoods. This answer is supported by the checked Batch 054 local raw PDF source families for Pre-Columbian Mesoamerica.",
+    "explanation": "Yucatan limestone, Mexico volcanic rock, adobe brick, and hardwoods. The Batch 054 source audit used local raw PDFs first and refined markdown only as locator evidence for Pre-Columbian Mesoamerica.",
+    "code_citation": "George Salvan Architectural Character refined markdown lines 1238-1241"
+  },
+  "batch_question_template_index": 1
+}

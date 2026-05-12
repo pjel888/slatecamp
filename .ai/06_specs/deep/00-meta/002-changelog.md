@@ -3,7 +3,7 @@
 > Historical deep-doc changelog only.
 > Current operational logs live under `../../../05_logs/` and current human-readable state lives under `../../../10_state/`.
 
-**Purpose:** Track historical changes to the deep reference corpus  
+**Purpose:** Track historical changes to the deep reference corpus
 **Source:** Historical deep-doc changelog; current human-readable logs live under `../../../05_logs/`
 
 ---

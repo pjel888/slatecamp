@@ -1,0 +1,66 @@
+{
+  "question_id": "0aba2574-6975-476c-befc-c556ec7d7a9d",
+  "baseline_hash": "sha256:9b017ff6a799b587c7b2d36729adc27dc6979d0cf3e43658f00a088f6996affe",
+  "action": "replace",
+  "reason": "source-audited-article-batch-048-local-first: local raw-source-backed replacement constrained to checked Batch 048 source families.",
+  "approved_by": "codex-local-first-batch-048",
+  "approved_at": "2026-05-11T19:48:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "93009368-9041-46e0-b93b-8786100311be",
+    "parent_article_slug": "pd-1096-rule-xii-egress-and-corridors",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "The stairway width is TLA divided by FLAR.",
+    "checked_markdown_lines": [
+      "PD 1096 National Building Code refined markdown lines 1050-1225",
+      "PD 1096 National Building Code refined markdown lines 1786-1822",
+      "PD 1096 IRR refined markdown lines 9180-9514"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "pd1096-national-building-code-local-raw-pdf--b048-93009368-01",
+        "label": "PD 1096 National Building Code - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 - National Building Code.pdf",
+        "sha256": "sha256:0bd869faac8d949359aa9e3c5bea7026e85e348f61ce1e87a09d48991c5ba796",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 - National Building Code.md",
+        "refined_markdown_sha256": "sha256:d7df246271ae1bcb14ed8e4ba881ed75cfa8381cca9f465986d9947397f353d9",
+        "locator": "PD 1096 National Building Code refined markdown lines 243-251, 356-473, 1050-1225, and 1786-1822"
+      },
+      {
+        "source_id": "pd1096-irr-full-local-raw-pdf--b048-93009368-02",
+        "label": "PD 1096 IRR Full Implementing Rules and Regulations - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.pdf",
+        "sha256": "sha256:8e98d8afd4b5972ba5a82d33a65e59e800cd41661b764a0dfc4112d29697b341",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.md",
+        "refined_markdown_sha256": "sha256:a43068979bbca37450a11ed16cbb966e2aff6d682cdded1ab3bf22b1d541efd0",
+        "locator": "PD 1096 IRR refined markdown lines 1243-1252, 1334-1378, 3009-3138, 3750-3825, 8637-8810, and 9180-9514"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 048 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "What stair width applies when the stair serves an occupant load greater than 50?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The stairway must be at least 1.10 meters wide."
+      },
+      {
+        "id": "b",
+        "text": "T"
+      },
+      {
+        "id": "c",
+        "text": "h"
+      },
+      {
+        "id": "d",
+        "text": "e"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The stairway must be at least 1.10 meters wide. This is supported by The stairway width is always 23 meters..",
+    "explanation": "The stairway must be at least 1.10 meters wide. The cited local source family controls this item: The stairway width is always 23 meters..",
+    "code_citation": "The stairway width is TLA divided by FLAR."
+  }
+}

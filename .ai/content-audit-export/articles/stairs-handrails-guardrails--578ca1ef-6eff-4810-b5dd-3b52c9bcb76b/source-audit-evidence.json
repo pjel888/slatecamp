@@ -1,0 +1,251 @@
+{
+  "schema_version": "source-audit-evidence-v1-local-first",
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-042-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T15:15:23.383+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "578ca1ef-6eff-4810-b5dd-3b52c9bcb76b",
+    "slug": "stairs-handrails-guardrails",
+    "title": "Stairs Handrails Guardrails",
+    "article_folder": ".ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b",
+    "candidate_path": ".ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b/candidate.md",
+    "candidate_sha256": "sha256:ba76ae56e88c00efac38170182a5b346e64ca0e3c4f6497e526221264d8cf560",
+    "normalized_sha256": "sha256:ba76ae56e88c00efac38170182a5b346e64ca0e3c4f6497e526221264d8cf560",
+    "linked_questions_sha256": "sha256:e6b5e8f70f50898e6aeeb8185ce63aacf9ad611d29d097756cd1f5546d4aa0bd",
+    "sources_sha256": "sha256:b1dcf9555cafbd3388f34fee42db10d8ef57f9f793ae78797cd51b3aff82c417"
+  },
+  "classification": {
+    "content_domain": "LEA Accessibility and Building Code - stairs handrails guardrails",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high_value_accessibility_code",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 20,
+    "question_edits_created": [
+      "cb55b274-b204-48c1-90f0-bcb56780e44c",
+      "ee6daee0-0d6d-4545-bfa8-278a0bc1a63d",
+      "d758f4aa-de6e-4ea4-97ce-02d449cddabb",
+      "1ffb0f0b-bc52-4294-b5ef-f654bf35297c",
+      "4f30a561-0186-4599-a319-8901c186fe2f",
+      "cfd1aa3b-243b-480e-806c-a1e893aea8c0",
+      "5e91345a-9382-4fb3-8a16-ccbcb2f500e8",
+      "4110f2f1-0865-4fbf-8ebb-c5db64c027e4",
+      "9c3ac627-e051-4148-80db-b2e77bef0c71",
+      "517c3e8d-83fd-41d2-921a-592b0f972bee",
+      "445ad081-1028-4cf0-8b7c-e31679ec219a",
+      "e63d310f-6be5-4e75-9ab2-56c6b35006a4",
+      "e5a3a35c-13d2-4d3f-8188-3abbc7f95d2d",
+      "8ddecc74-d4bc-4bae-86e4-36f319a2b208",
+      "60365ebe-02f3-4d1f-afae-421c884a5801",
+      "2c55027e-d0ed-4b55-aa0e-399aa91d46eb",
+      "a84b3445-674d-41cf-b86f-2da27c065277",
+      "1f8f6764-16d1-40d1-a3bc-dec64b569285",
+      "5c5b86c9-4343-4229-a1bb-3c2916120941",
+      "86b3deab-8d65-4ac7-af8e-865c7275a9e4"
+    ]
+  },
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b/question-edits/cb55b274-b204-48c1-90f0-bcb56780e44c.json",
+      ".ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b/question-edits/ee6daee0-0d6d-4545-bfa8-278a0bc1a63d.json",
+      ".ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b/question-edits/d758f4aa-de6e-4ea4-97ce-02d449cddabb.json",
+      ".ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b/question-edits/1ffb0f0b-bc52-4294-b5ef-f654bf35297c.json",
+      ".ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b/question-edits/4f30a561-0186-4599-a319-8901c186fe2f.json",
+      ".ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b/question-edits/cfd1aa3b-243b-480e-806c-a1e893aea8c0.json",
+      ".ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b/question-edits/5e91345a-9382-4fb3-8a16-ccbcb2f500e8.json",
+      ".ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b/question-edits/4110f2f1-0865-4fbf-8ebb-c5db64c027e4.json",
+      ".ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b/question-edits/9c3ac627-e051-4148-80db-b2e77bef0c71.json",
+      ".ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b/question-edits/517c3e8d-83fd-41d2-921a-592b0f972bee.json",
+      ".ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b/question-edits/445ad081-1028-4cf0-8b7c-e31679ec219a.json",
+      ".ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b/question-edits/e63d310f-6be5-4e75-9ab2-56c6b35006a4.json",
+      ".ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b/question-edits/e5a3a35c-13d2-4d3f-8188-3abbc7f95d2d.json",
+      ".ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b/question-edits/8ddecc74-d4bc-4bae-86e4-36f319a2b208.json",
+      ".ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b/question-edits/60365ebe-02f3-4d1f-afae-421c884a5801.json",
+      ".ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b/question-edits/2c55027e-d0ed-4b55-aa0e-399aa91d46eb.json",
+      ".ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b/question-edits/a84b3445-674d-41cf-b86f-2da27c065277.json",
+      ".ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b/question-edits/1f8f6764-16d1-40d1-a3bc-dec64b569285.json",
+      ".ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b/question-edits/5c5b86c9-4343-4229-a1bb-3c2916120941.json",
+      ".ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b/question-edits/86b3deab-8d65-4ac7-af8e-865c7275a9e4.json"
+    ]
+  },
+  "raw_sources": [
+    {
+      "source_id": "bp-344-2024-rirr-ncda-local",
+      "label": "BP 344 2024 Revised IRR - NCDA local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "source_locator": "BP 344 2024 IRR refined markdown lines 198-224; BP 344 2024 IRR refined markdown lines 539-605",
+      "checked_markdown_lines": [
+        "BP 344 2024 IRR refined markdown lines 198-224",
+        "BP 344 2024 IRR refined markdown lines 539-605"
+      ]
+    },
+    {
+      "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+      "label": "PD 1096 2004 Revised IRR - DPWH Official local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "source_locator": "PD 1096 RIRR refined markdown lines 3484-3583",
+      "checked_markdown_lines": [
+        "PD 1096 RIRR refined markdown lines 3484-3583"
+      ]
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "bp-344-2024-rirr-ncda-local",
+      "label": "BP 344 2024 Revised IRR - NCDA local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "source_locator": "BP 344 2024 IRR refined markdown lines 198-224; BP 344 2024 IRR refined markdown lines 539-605",
+      "checked_markdown_lines": [
+        "BP 344 2024 IRR refined markdown lines 198-224",
+        "BP 344 2024 IRR refined markdown lines 539-605"
+      ]
+    },
+    {
+      "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+      "label": "PD 1096 2004 Revised IRR - DPWH Official local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "source_locator": "PD 1096 RIRR refined markdown lines 3484-3583",
+      "checked_markdown_lines": [
+        "PD 1096 RIRR refined markdown lines 3484-3583"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "b042-stair-01",
+      "claim_text": "BP 344 requires complementary ramps, lifts, or escalators where staircases are present along an accessible route.",
+      "claim_type": "accessibility_or_building_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - NCDA local raw PDF",
+        "locator": "BP 344 refined markdown line 539",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "complementary ramps, lifts, or escalators shall be provided where staircases are present along an accessible route"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b042-stair-02",
+      "claim_text": "BP 344 accessible stairs have 1.50 m clear width, landings at intervals of 3 m or less, and landing depth not less than 1500 mm.",
+      "claim_type": "accessibility_or_building_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - NCDA local raw PDF",
+        "locator": "BP 344 refined markdown lines 573-577",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "accessible staircases shall have a clear width of 1.50m; landings at intervals of 3 meters or less; not less than 1500 mm"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b042-stair-03",
+      "claim_text": "BP 344 handrails use 900 mm and 700 mm heights, 300 mm extensions, and 1100 mm protection railings where required.",
+      "claim_type": "accessibility_or_building_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - NCDA local raw PDF",
+        "locator": "BP 344 refined markdown lines 198-208",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "handrails at 900 mm and 700 mm; 300 mm extension; railings for protection at 1100 mm minimum"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b042-stair-04",
+      "claim_text": "PD 1096 stair and egress rules tie stair width, rise/run, headroom, exit door swing, and corridor width to occupant load and required exits.",
+      "claim_type": "accessibility_or_building_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "PD 1096 2004 Revised IRR - DPWH Official local raw PDF",
+        "locator": "PD 1096 refined markdown lines 3484-3583",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "quoted_pdf_excerpt": "stairways serving occupant load over fifty not less than 1.10 meters; rise not exceed 200 mm; required stairway headroom not less than 2.00 meters"
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [
+    "Unchecked derivative-only accessibility dimensions and non-local rule claims were excluded from the Batch 042 repaired content and question edits."
+  ],
+  "removed_or_rewritten_material": [
+    "Removed exported UI-block marker tokens from normalized article content where present.",
+    "Rewrote linked question files to stay inside checked BP 344 and PD 1096 evidence."
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdf_first": true,
+    "derivative_layers_used_only_as_locators": true,
+    "checked_raw_pdf_families": [
+      "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf"
+    ]
+  },
+  "gate_results": {
+    "source_audit": "PASS",
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_validation": "PASS",
+    "question_edit_count_check": "PASS",
+    "scoped_json_parse": "PASS",
+    "marker_scan": "PASS",
+    "source_hash_check": "PASS",
+    "stale_compose_error_check": "PASS"
+  },
+  "source_safe_repair": {
+    "status": "COMPLETE_LOCAL_VALIDATED",
+    "article_normalized_rewritten": true,
+    "sources_json_updated": true,
+    "source_audit_evidence_updated": true,
+    "question_edits_created": 20,
+    "blockers": []
+  },
+  "local_validation": {
+    "status": "PASS_LOCAL_VALIDATION",
+    "validated_at": "2026-05-11T15:15:23.383+08:00",
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_validation": "PASS",
+    "scoped_checks": "PASS",
+    "blockers": []
+  },
+  "sme_review": {
+    "required_before_supabase_publish": true,
+    "completed": false
+  },
+  "overall": {
+    "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+    "blockers": []
+  }
+}

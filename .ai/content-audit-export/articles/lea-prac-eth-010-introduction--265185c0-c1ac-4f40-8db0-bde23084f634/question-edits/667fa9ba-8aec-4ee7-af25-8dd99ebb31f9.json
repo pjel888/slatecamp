@@ -1,0 +1,32 @@
+{
+  "question_id": "667fa9ba-8aec-4ee7-af25-8dd99ebb31f9",
+  "baseline_hash": "sha256:62a206dff5f2323ce93eb80a83abd9bd84f60cec54270a924cdabc2ad5a0ea0a",
+  "reason": "Batch 003 source audit removed unsupported penalty ranges, restitution amounts, dollar values, and scenario statistics; questions now use RA 9266 IRR and UAP Code of Ethics conduct categories.",
+  "approved_by": "codex-local-source-audit-batch-003",
+  "approved_at": "2026-05-10T18:00:00+08:00",
+  "proposed": {
+    "text": "An architect accepts a specialized facility commission without the needed expertise and without qualified specialist support. Which source-backed category best fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Normal marketing risk"
+      },
+      {
+        "id": "b",
+        "text": "Incompetence, neglect of duty, or gross negligence depending the facts"
+      },
+      {
+        "id": "c",
+        "text": "Government procurement fraud"
+      },
+      {
+        "id": "d",
+        "text": "No professional-conduct issue"
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": "RA 9266 IRR includes incompetence, neglect of duty, gross negligence, and unprofessional conduct in the disciplinary frame.",
+    "explanation": "The edit keeps the conduct category and removes unsupported sanction ranges.",
+    "code_citation": "RA 9266 IRR grounds for discipline"
+  }
+}

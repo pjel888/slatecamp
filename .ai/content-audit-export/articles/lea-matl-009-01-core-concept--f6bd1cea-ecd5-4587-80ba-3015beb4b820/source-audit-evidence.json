@@ -1,0 +1,237 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-075-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T03:00:00.000+08:00",
+  "target": {
+    "article_id": "f6bd1cea-ecd5-4587-80ba-3015beb4b820",
+    "slug": "lea-matl-009-01-core-concept",
+    "title": "Architectural specifications",
+    "article_folder": ".ai/content-audit-export/articles/lea-matl-009-01-core-concept--f6bd1cea-ecd5-4587-80ba-3015beb4b820",
+    "normalized_sha256": "sha256:6109addf1da986f8ef148eb039202c63839926b40db520091a19672aab717bd4",
+    "candidate_sha256": "sha256:6109addf1da986f8ef148eb039202c63839926b40db520091a19672aab717bd4",
+    "candidate_path": ".ai/content-audit-export/articles/lea-matl-009-01-core-concept--f6bd1cea-ecd5-4587-80ba-3015beb4b820/candidate.md"
+  },
+  "classification": {
+    "topic_family": "architectural_specifications",
+    "local_first_batch": "075",
+    "source_sensitivity": "legal_or_code",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "legal_or_code",
+    "requires_raw_pdf_audit": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdfs_checked_first": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "local_pdf_extraction_method": "python_pymupdf_local",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "ra9266-irr-architecture-act-b075",
+      "label": "RA 9266 IRR - Architecture Act of 2004",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+      "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+      "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+      "locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710"
+    },
+    {
+      "source_id": "uap-spp-202-regular-design-services-b075",
+      "label": "UAP SPP 202 - Regular Design Services",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+      "sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+      "refined_markdown_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+      "locator": "SPP 202 refined markdown lines 173-183"
+    },
+    {
+      "source_id": "uap-spp-203-specialized-services-b075",
+      "label": "UAP SPP 203 - Specialized Architectural Services",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+      "sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+      "refined_markdown_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+      "locator": "SPP 203 refined markdown lines 101-140"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-matl-009-01-core-concept-article-b075",
+      "claim_text": "Article lea-matl-009-01-core-concept was rewritten to the checked architectural_specifications source scope.",
+      "claim_type": "article_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+        "source_locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; SPP 202 refined markdown lines 173-183; SPP 203 refined markdown lines 101-140",
+        "quoted_pdf_excerpt": "Specifications are included in architectural documents and contract documents under RA 9266 IRR."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-cee7b716-cd29-4ef1-9e5c-214d6eb8be3b-ALE-MATL-009-01-004-b075",
+      "claim_text": "Question cee7b716-cd29-4ef1-9e5c-214d6eb8be3b ALE-MATL-009-01-004 was rewritten to the checked architectural_specifications source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+        "source_locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; SPP 202 refined markdown lines 173-183; SPP 203 refined markdown lines 101-140",
+        "quoted_pdf_excerpt": "Specifications are included in architectural documents and contract documents under RA 9266 IRR."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-f31d96d3-7317-4edf-a024-24ee4c6bff8c-ALE-MATL-009-01-001-b075",
+      "claim_text": "Question f31d96d3-7317-4edf-a024-24ee4c6bff8c ALE-MATL-009-01-001 was rewritten to the checked architectural_specifications source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+        "source_locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; SPP 202 refined markdown lines 173-183; SPP 203 refined markdown lines 101-140",
+        "quoted_pdf_excerpt": "Specifications are included in architectural documents and contract documents under RA 9266 IRR."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-192e884c-c76e-4a6a-ad14-5594b7c40a7c-ALE-MATL-009-01-009-b075",
+      "claim_text": "Question 192e884c-c76e-4a6a-ad14-5594b7c40a7c ALE-MATL-009-01-009 was rewritten to the checked architectural_specifications source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+        "source_locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; SPP 202 refined markdown lines 173-183; SPP 203 refined markdown lines 101-140",
+        "quoted_pdf_excerpt": "Specifications are included in architectural documents and contract documents under RA 9266 IRR."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-16a93424-b435-4d55-a838-5bd0d21ad34e-ALE-MATL-009-01-006-b075",
+      "claim_text": "Question 16a93424-b435-4d55-a838-5bd0d21ad34e ALE-MATL-009-01-006 was rewritten to the checked architectural_specifications source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+        "source_locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; SPP 202 refined markdown lines 173-183; SPP 203 refined markdown lines 101-140",
+        "quoted_pdf_excerpt": "Specifications are included in architectural documents and contract documents under RA 9266 IRR."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-4dc896b9-2c05-45d5-a130-d3b9ca4dd0eb-ALE-MATL-009-01-003-b075",
+      "claim_text": "Question 4dc896b9-2c05-45d5-a130-d3b9ca4dd0eb ALE-MATL-009-01-003 was rewritten to the checked architectural_specifications source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+        "source_locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; SPP 202 refined markdown lines 173-183; SPP 203 refined markdown lines 101-140",
+        "quoted_pdf_excerpt": "Specifications are included in architectural documents and contract documents under RA 9266 IRR."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-7b5a8cff-0c81-401a-ae5b-4d04f80ab8b0-ALE-MATL-009-01-008-b075",
+      "claim_text": "Question 7b5a8cff-0c81-401a-ae5b-4d04f80ab8b0 ALE-MATL-009-01-008 was rewritten to the checked architectural_specifications source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+        "source_locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; SPP 202 refined markdown lines 173-183; SPP 203 refined markdown lines 101-140",
+        "quoted_pdf_excerpt": "Specifications are included in architectural documents and contract documents under RA 9266 IRR."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-3ce2f5ff-77d2-4de0-9382-5df59eb73734-ALE-MATL-009-01-007-b075",
+      "claim_text": "Question 3ce2f5ff-77d2-4de0-9382-5df59eb73734 ALE-MATL-009-01-007 was rewritten to the checked architectural_specifications source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+        "source_locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; SPP 202 refined markdown lines 173-183; SPP 203 refined markdown lines 101-140",
+        "quoted_pdf_excerpt": "Specifications are included in architectural documents and contract documents under RA 9266 IRR."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-84244e30-e30a-41df-80ec-6e06b830ebc2-ALE-MATL-009-01-005-b075",
+      "claim_text": "Question 84244e30-e30a-41df-80ec-6e06b830ebc2 ALE-MATL-009-01-005 was rewritten to the checked architectural_specifications source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+        "source_locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; SPP 202 refined markdown lines 173-183; SPP 203 refined markdown lines 101-140",
+        "quoted_pdf_excerpt": "Specifications are included in architectural documents and contract documents under RA 9266 IRR."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-605d8ee7-f662-43b6-9bec-0e46a09ee7e0-ALE-MATL-009-01-010-b075",
+      "claim_text": "Question 605d8ee7-f662-43b6-9bec-0e46a09ee7e0 ALE-MATL-009-01-010 was rewritten to the checked architectural_specifications source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+        "source_locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; SPP 202 refined markdown lines 173-183; SPP 203 refined markdown lines 101-140",
+        "quoted_pdf_excerpt": "Specifications are included in architectural documents and contract documents under RA 9266 IRR."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-dc6bdc0a-f45d-4283-a195-d4feb0ac5c16-ALE-MATL-009-01-002-b075",
+      "claim_text": "Question dc6bdc0a-f45d-4283-a195-d4feb0ac5c16 ALE-MATL-009-01-002 was rewritten to the checked architectural_specifications source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+        "source_locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; SPP 202 refined markdown lines 173-183; SPP 203 refined markdown lines 101-140",
+        "quoted_pdf_excerpt": "Specifications are included in architectural documents and contract documents under RA 9266 IRR."
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "scenario_enrichment": {
+    "policy_status": "pending",
+    "eligibility_status": "eligible-deferred",
+    "blocker_status": "nonblocking",
+    "note": "No Real World Scenario section was added; scenario enrichment remained nonblocking while source correctness and question safety were completed."
+  },
+  "sme_review": {
+    "required": false,
+    "status": "not_required",
+    "notes": "Local raw-source audit only; no external SME review required for Batch 075 local-first gate."
+  }
+}

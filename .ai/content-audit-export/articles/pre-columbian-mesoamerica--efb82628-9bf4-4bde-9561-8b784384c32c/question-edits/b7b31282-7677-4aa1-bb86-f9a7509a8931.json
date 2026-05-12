@@ -1,0 +1,60 @@
+{
+  "question_id": "b7b31282-7677-4aa1-bb86-f9a7509a8931",
+  "baseline_hash": "sha256:651424ab523136b8b78b4c57e2b16664a927f3c16d3724ee60898932ad1c19d0",
+  "action": "replace",
+  "reason": "source-audited-article-batch-054-local-first: local raw PDF backed replacement constrained to checked Batch 054 source families.",
+  "approved_by": "codex-local-first-batch-054",
+  "approved_at": "2026-05-11T19:22:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "efb82628-9bf4-4bde-9561-8b784384c32c",
+    "parent_article_slug": "pre-columbian-mesoamerica",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "George Salvan Architectural Character refined markdown lines 1238-1315",
+    "checked_markdown_lines": [
+      "George Salvan Architectural Character refined markdown lines 1238-1241",
+      "George Salvan Architectural Character refined markdown lines 1245-1257",
+      "George Salvan Architectural Character refined markdown lines 1261-1265",
+      "George Salvan Architectural Character refined markdown lines 1273-1281",
+      "George Salvan Architectural Character refined markdown lines 1285-1315"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "salvan-character-local-raw-pdf--b054-efb82628-01",
+        "label": "George Salvan Architectural Character and the History of Architecture - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Character and the History of Architecture.pdf",
+        "sha256": "sha256:55c4fa2d43bbfd27cffb86d0aac4ad960032e178e1e25c29d4eb351297bfc069",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Character and the History of Architecture.md",
+        "refined_markdown_sha256": "sha256:be8e760bef8f7ceb573742d996dabb202f0353e19b4ab9283ec2de7dfc1fccea",
+        "locator": "George Salvan Architectural Character refined markdown lines 1238-1315"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 054 checked local raw PDF source scope."
+  },
+  "proposed": {
+    "text": "Which monument is named in the checked Mesoamerican source?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Temple I at Tikal."
+      },
+      {
+        "id": "b",
+        "text": "Vitra Fire Station."
+      },
+      {
+        "id": "c",
+        "text": "Machu Picchu."
+      },
+      {
+        "id": "d",
+        "text": "Sacsahuaman."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Temple I at Tikal. This answer is supported by the checked Batch 054 local raw PDF source families for Pre-Columbian Mesoamerica.",
+    "explanation": "Temple I at Tikal. The Batch 054 source audit used local raw PDFs first and refined markdown only as locator evidence for Pre-Columbian Mesoamerica.",
+    "code_citation": "George Salvan Architectural Character refined markdown lines 1285-1315"
+  },
+  "batch_question_template_index": 5
+}

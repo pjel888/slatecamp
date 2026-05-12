@@ -11,7 +11,7 @@ Camp Trails are structured study paths that guide students through the LEA curri
 ## Trail Types
 
 ```typescript
-type TrailType = 
+type TrailType =
   | 'time_gated'       // Fixed start date, daily milestones
   | 'subject_mastery'  // Master subjects in sequence
   | 'code_deep_dive'  // Intensive building code focus
@@ -24,7 +24,7 @@ type TrailType =
 ## Trail Intensity
 
 ```typescript
-type TrailIntensity = 
+type TrailIntensity =
   | 'intensive'       // 2+ hours/day
   | 'accelerated'     // 1.5 hours/day
   | 'standard'        // 1 hour/day

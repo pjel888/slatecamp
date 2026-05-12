@@ -1,0 +1,48 @@
+{
+  "question_id": "46202e34-3f19-434c-a643-8c33fdbe4d16",
+  "baseline_hash": "sha256:02c2daf91a4e7d7d989ae74d8a9c812ebebcc8760de8797feb5232a9d5c9ad9a",
+  "action": "replace",
+  "reason": "source-audited-article-batch-039-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-039",
+  "approved_at": "2026-05-11T13:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-039-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 4306-4329"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 1401"
+  },
+  "proposed": {
+    "text": "What type of electric lighting is permitted in x-ray film storage areas?",
+    "options": [
+      {
+        "id": "b039-5a5e-08-a",
+        "text": "Incandescent electric light protected with wire guards or vapor-proof globes or both"
+      },
+      {
+        "id": "b039-5a5e-08-b",
+        "text": "Portable lights on extension cords"
+      },
+      {
+        "id": "b039-5a5e-08-c",
+        "text": "Any unguarded task light"
+      },
+      {
+        "id": "b039-5a5e-08-d",
+        "text": "Open-flame inspection lights"
+      }
+    ],
+    "correct_option_id": "b039-5a5e-08-a",
+    "rationale": "Correct answer: Incandescent electric light protected with wire guards or vapor-proof globes or both. This is directly supported by PD 1096 2004 Revised IRR, Section 1401.",
+    "explanation": "The Batch 039 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 1401.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 1401"
+  }
+}

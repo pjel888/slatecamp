@@ -1,0 +1,217 @@
+{
+  "batch_id": "source-audited-article-batch-041-local-first",
+  "batch_number": 41,
+  "generated_at": "2026-05-11T06:40:06.014Z",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "local_only": true,
+  "supabase_push": false,
+  "deploy": false,
+  "commit": false,
+  "inherited_blocker_status": "Batch 040 blockers=0",
+  "selection_rule": "Five high-value electrical utility/code clusters with linked questions and local Philippine Electrical Code plus Electrical Layout and Estimate raw PDF families, excluding Batch 001-040 recorded IDs.",
+  "counts": {
+    "selected_articles": 5,
+    "linked_questions": 75,
+    "question_edits": 75,
+    "source_rows": 10,
+    "unique_raw_pdfs": 2,
+    "json_parse": 130,
+    "source_hash_checks": 20,
+    "source_hash_checks_passed": 20,
+    "marker_internal_source_gap_matches": 0,
+    "stale_compose_error_files": 0
+  },
+  "validation": {
+    "compose": "PASS 5/5",
+    "diff": "PASS 5/5",
+    "validate": "PASS 5/5",
+    "ui_block_validation": "PASS 5/5",
+    "scoped_json_parse": "PASS 130 JSON files",
+    "marker_internal_source_gap_scan": "PASS 0 matches on publication surfaces and question edits",
+    "source_hash_checks": "PASS 20/20",
+    "question_edit_count_checks": "PASS 75/75",
+    "stale_compose_error_checks": "PASS 0 stale files",
+    "targeted_content_audit_tests": "PASS 7 tests; 244 expect calls",
+    "scoped_git_diff_check": "PASS"
+  },
+  "blockers": [],
+  "source_evidence": {
+    "source_families": [
+      "Philippine Electrical Code raw PDF and refined locator for PEC definitions, plan requirements, conductor/insulation provisions, grounding/bonding provisions, branch-circuit/feeders/service calculations, and voltage-drop notes.",
+      "Electrical Layout and Estimate raw PDF and refined locator for emergency electric supply, conductor insulation/ampacity explanation, building circuitry, service entrance/feeders, and grounding explanation."
+    ],
+    "unique_raw_pdf_paths": [
+      "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+      "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.pdf"
+    ]
+  },
+  "artifacts": {
+    "report": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-041-local-first-report.md",
+    "ledger": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-041-local-first-ledger.json",
+    "scoped_checks": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-041-local-first-scoped-checks.json",
+    "handoff": "/Users/philiplewis/slatecamp/.ai/03_plans/source-audited-local-first-batches-handoff.md"
+  },
+  "next_batch_readiness": "READY_FOR_BATCH_042_SELECTION",
+  "articles": [
+    {
+      "ordinal": 1,
+      "article_id": "91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
+      "slug": "lea-util-003-02-emergency-power-systems",
+      "title": "Emergency and alternative power systems",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-util-003-02-emergency-power-systems--91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-02-emergency-power-systems--91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-util-003-02-emergency-power-systems--91727ebf-ee05-4aa8-a538-d8c599a1d9c9/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-02-emergency-power-systems--91727ebf-ee05-4aa8-a538-d8c599a1d9c9/question-edits",
+      "linked_questions": 15,
+      "question_edits": 15,
+      "source_rows": 2,
+      "candidate_hash": "sha256:88a304d9f1253532cb49822dd7e0c5fcccf2b220dd02e14c1d7860ffd61486b7",
+      "normalized_hash": "sha256:88a304d9f1253532cb49822dd7e0c5fcccf2b220dd02e14c1d7860ffd61486b7",
+      "original_hash": "sha256:f78cd58a3f0369ce52641e878c900d57546c8f834a2b9651ce47c9b2ac3b80a7",
+      "sources_hash": "sha256:d654b3ab50520482f5cc31b35044b6f0097d241837d584757c0db20e346d3c59",
+      "gates": {
+        "compose": "PASS",
+        "diff": "PASS",
+        "validate": "PASS",
+        "ui_block_validation": "PASS",
+        "source_audit": "PASS"
+      },
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-02-emergency-power-systems--91727ebf-ee05-4aa8-a538-d8c599a1d9c9/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-02-emergency-power-systems--91727ebf-ee05-4aa8-a538-d8c599a1d9c9/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-02-emergency-power-systems--91727ebf-ee05-4aa8-a538-d8c599a1d9c9/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-02-emergency-power-systems--91727ebf-ee05-4aa8-a538-d8c599a1d9c9/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-02-emergency-power-systems--91727ebf-ee05-4aa8-a538-d8c599a1d9c9/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-02-emergency-power-systems--91727ebf-ee05-4aa8-a538-d8c599a1d9c9/ui-blocks.json"
+      ]
+    },
+    {
+      "ordinal": 2,
+      "article_id": "319c1e17-e0c6-409d-9886-c8a85ecaf747",
+      "slug": "lea-util-003-04-wire-insulation-types-and-ratings",
+      "title": "Electrical wiring and cable selection",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-util-003-04-wire-insulation-types-and-ratings--319c1e17-e0c6-409d-9886-c8a85ecaf747",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-04-wire-insulation-types-and-ratings--319c1e17-e0c6-409d-9886-c8a85ecaf747",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-util-003-04-wire-insulation-types-and-ratings--319c1e17-e0c6-409d-9886-c8a85ecaf747/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-04-wire-insulation-types-and-ratings--319c1e17-e0c6-409d-9886-c8a85ecaf747/question-edits",
+      "linked_questions": 15,
+      "question_edits": 15,
+      "source_rows": 2,
+      "candidate_hash": "sha256:153fe9f16898a160212d0f2fd13f213c1187e39ecdaf944b0286cbd32c8af414",
+      "normalized_hash": "sha256:153fe9f16898a160212d0f2fd13f213c1187e39ecdaf944b0286cbd32c8af414",
+      "original_hash": "sha256:3404447479e7cd24d28a46043f075b32eee5176c6d7f96f1b713f5688018cd03",
+      "sources_hash": "sha256:f9070364ecdc9d79d81a0cf4fa014fb95a2c0c7e3a701122b3fbe936b0bbdfd6",
+      "gates": {
+        "compose": "PASS",
+        "diff": "PASS",
+        "validate": "PASS",
+        "ui_block_validation": "PASS",
+        "source_audit": "PASS"
+      },
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-04-wire-insulation-types-and-ratings--319c1e17-e0c6-409d-9886-c8a85ecaf747/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-04-wire-insulation-types-and-ratings--319c1e17-e0c6-409d-9886-c8a85ecaf747/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-04-wire-insulation-types-and-ratings--319c1e17-e0c6-409d-9886-c8a85ecaf747/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-04-wire-insulation-types-and-ratings--319c1e17-e0c6-409d-9886-c8a85ecaf747/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-04-wire-insulation-types-and-ratings--319c1e17-e0c6-409d-9886-c8a85ecaf747/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-04-wire-insulation-types-and-ratings--319c1e17-e0c6-409d-9886-c8a85ecaf747/ui-blocks.json"
+      ]
+    },
+    {
+      "ordinal": 3,
+      "article_id": "92be8354-f938-4307-a40c-4620c1381cba",
+      "slug": "lea-util-003-05-core-definitions-grounding-vs-bonding",
+      "title": "Grounding and electrical safety",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-util-003-05-core-definitions-grounding-vs-bonding--92be8354-f938-4307-a40c-4620c1381cba",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-05-core-definitions-grounding-vs-bonding--92be8354-f938-4307-a40c-4620c1381cba",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-util-003-05-core-definitions-grounding-vs-bonding--92be8354-f938-4307-a40c-4620c1381cba/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-05-core-definitions-grounding-vs-bonding--92be8354-f938-4307-a40c-4620c1381cba/question-edits",
+      "linked_questions": 15,
+      "question_edits": 15,
+      "source_rows": 2,
+      "candidate_hash": "sha256:ac3448054d6945ae9b501c0a998d38532c809c78e5441d59c49affc17d80d1e3",
+      "normalized_hash": "sha256:ac3448054d6945ae9b501c0a998d38532c809c78e5441d59c49affc17d80d1e3",
+      "original_hash": "sha256:86c1b6fbadc7216eebbdc78a92d318e078e7e1849173b5167415d77ac71a3d2a",
+      "sources_hash": "sha256:16a68faab91f978410ebff0172a6347b5ff514e7d1c38338507d1d1847b97ac5",
+      "gates": {
+        "compose": "PASS",
+        "diff": "PASS",
+        "validate": "PASS",
+        "ui_block_validation": "PASS",
+        "source_audit": "PASS"
+      },
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-05-core-definitions-grounding-vs-bonding--92be8354-f938-4307-a40c-4620c1381cba/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-05-core-definitions-grounding-vs-bonding--92be8354-f938-4307-a40c-4620c1381cba/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-05-core-definitions-grounding-vs-bonding--92be8354-f938-4307-a40c-4620c1381cba/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-05-core-definitions-grounding-vs-bonding--92be8354-f938-4307-a40c-4620c1381cba/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-05-core-definitions-grounding-vs-bonding--92be8354-f938-4307-a40c-4620c1381cba/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-05-core-definitions-grounding-vs-bonding--92be8354-f938-4307-a40c-4620c1381cba/ui-blocks.json"
+      ]
+    },
+    {
+      "ordinal": 4,
+      "article_id": "f481f8cd-bb99-45b9-9183-4db41848e23d",
+      "slug": "lea-util-003-06-the-distribution-hierarchy",
+      "title": "Electrical distribution system",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-util-003-06-the-distribution-hierarchy--f481f8cd-bb99-45b9-9183-4db41848e23d",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-06-the-distribution-hierarchy--f481f8cd-bb99-45b9-9183-4db41848e23d",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-util-003-06-the-distribution-hierarchy--f481f8cd-bb99-45b9-9183-4db41848e23d/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-06-the-distribution-hierarchy--f481f8cd-bb99-45b9-9183-4db41848e23d/question-edits",
+      "linked_questions": 15,
+      "question_edits": 15,
+      "source_rows": 2,
+      "candidate_hash": "sha256:81fd2406cc60b643c52062558da3568b406a548a25d739154ac79425b8ddb7d7",
+      "normalized_hash": "sha256:81fd2406cc60b643c52062558da3568b406a548a25d739154ac79425b8ddb7d7",
+      "original_hash": "sha256:68f898b89bf0f92306ed751a2f9249ab59b8a4ec3a791af52e4194354f681624",
+      "sources_hash": "sha256:6facb8ccc4fe7c06d72972f429f5c6cc2ab06edc403662f8e4e8da57ebff0b7a",
+      "gates": {
+        "compose": "PASS",
+        "diff": "PASS",
+        "validate": "PASS",
+        "ui_block_validation": "PASS",
+        "source_audit": "PASS"
+      },
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-06-the-distribution-hierarchy--f481f8cd-bb99-45b9-9183-4db41848e23d/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-06-the-distribution-hierarchy--f481f8cd-bb99-45b9-9183-4db41848e23d/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-06-the-distribution-hierarchy--f481f8cd-bb99-45b9-9183-4db41848e23d/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-06-the-distribution-hierarchy--f481f8cd-bb99-45b9-9183-4db41848e23d/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-06-the-distribution-hierarchy--f481f8cd-bb99-45b9-9183-4db41848e23d/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-06-the-distribution-hierarchy--f481f8cd-bb99-45b9-9183-4db41848e23d/ui-blocks.json"
+      ]
+    },
+    {
+      "ordinal": 5,
+      "article_id": "c9e0e01a-b54b-4957-8316-010c1780aea1",
+      "slug": "lea-util-003-07-residential-load-computation-pec-method",
+      "title": "Electrical load computation",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-util-003-07-residential-load-computation-pec-method--c9e0e01a-b54b-4957-8316-010c1780aea1",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-07-residential-load-computation-pec-method--c9e0e01a-b54b-4957-8316-010c1780aea1",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-util-003-07-residential-load-computation-pec-method--c9e0e01a-b54b-4957-8316-010c1780aea1/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-07-residential-load-computation-pec-method--c9e0e01a-b54b-4957-8316-010c1780aea1/question-edits",
+      "linked_questions": 15,
+      "question_edits": 15,
+      "source_rows": 2,
+      "candidate_hash": "sha256:b149766b120647e92b55a66a0ee21bd16136cc6733f889f2f763b8042a91ee0a",
+      "normalized_hash": "sha256:b149766b120647e92b55a66a0ee21bd16136cc6733f889f2f763b8042a91ee0a",
+      "original_hash": "sha256:cb65f3251e8d96c8e20963813138ea9b0abc8eebd73d35f7eae7bfbe06de325a",
+      "sources_hash": "sha256:4aff62fb2c2155bc33ed4b89de5855e96a3d0b5fada5e78ffb4e8a3a95647895",
+      "gates": {
+        "compose": "PASS",
+        "diff": "PASS",
+        "validate": "PASS",
+        "ui_block_validation": "PASS",
+        "source_audit": "PASS"
+      },
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-07-residential-load-computation-pec-method--c9e0e01a-b54b-4957-8316-010c1780aea1/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-07-residential-load-computation-pec-method--c9e0e01a-b54b-4957-8316-010c1780aea1/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-07-residential-load-computation-pec-method--c9e0e01a-b54b-4957-8316-010c1780aea1/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-07-residential-load-computation-pec-method--c9e0e01a-b54b-4957-8316-010c1780aea1/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-07-residential-load-computation-pec-method--c9e0e01a-b54b-4957-8316-010c1780aea1/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-07-residential-load-computation-pec-method--c9e0e01a-b54b-4957-8316-010c1780aea1/ui-blocks.json"
+      ]
+    }
+  ]
+}

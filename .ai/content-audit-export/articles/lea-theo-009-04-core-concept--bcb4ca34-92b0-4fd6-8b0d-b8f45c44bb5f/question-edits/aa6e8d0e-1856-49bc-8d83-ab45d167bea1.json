@@ -1,0 +1,75 @@
+{
+  "question_id": "aa6e8d0e-1856-49bc-8d83-ab45d167bea1",
+  "baseline_hash": "sha256:7238d6a9570ba0ede22b76bc40d2d3b7cac0fa13a736fb7d476b11b14a4e0c4f",
+  "action": "replace",
+  "reason": "source-audited-article-batch-076-local-first aligned linked question with checked local raw PDF/source evidence for lea-theo-009-04-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-076",
+  "approved_at": "2026-05-12T03:12:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
+    "parent_article_slug": "lea-theo-009-04-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430; RA 9266 IRR refined markdown lines 41-76 and 128-142; PD 1096 RIRR refined markdown lines 560-570, 1088-1155, and 5760-5783",
+    "checked_markdown_lines": [
+      "Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430; raw PDF pages 6, 18, 25, and 33-35 checked by local PyMuPDF extraction",
+      "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 2-5, 14, and 19 checked by local PyMuPDF extraction",
+      "PD 1096 RIRR refined markdown lines 75-85, 560-570, 1088-1155, 2915-2922, 3387-3402, 4363-4364, 4659-4663, 4732-4742, and 5760-5783; raw PDF pages 24, 186, 229, 244, 256, and 280 checked by local PyMuPDF extraction"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "design-process-b076",
+        "label": "Design Process",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
+        "sha256": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
+        "raw_markdown_sha256": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
+        "locator": "Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430; raw PDF pages 6, 18, 25, and 33-35 checked by local PyMuPDF extraction"
+      },
+      {
+        "source_id": "ra9266-irr-b076",
+        "label": "RA 9266 IRR - Architecture Act of 2004",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+        "raw_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 2-5, 14, and 19 checked by local PyMuPDF extraction"
+      },
+      {
+        "source_id": "pd1096-rirr-b076",
+        "label": "PD 1096 RIRR 2004 - DPWH Official",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "locator": "PD 1096 RIRR refined markdown lines 75-85, 560-570, 1088-1155, 2915-2922, 3387-3402, 4363-4364, 4659-4663, 4732-4742, and 5760-5783; raw PDF pages 24, 186, 229, 244, 256, and 280 checked by local PyMuPDF extraction"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 076 local raw-source-audited functional_zoning scope."
+  },
+  "proposed": {
+    "text": "A plan has clear room labels but conflicting service and visitor routes. What is the best LEA response?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Flag the adjacency/circulation conflict and relate it to the program requirements."
+      },
+      {
+        "id": "b",
+        "text": "Approve it because labels alone are enough."
+      },
+      {
+        "id": "c",
+        "text": "Reject it only because it lacks a three-point perspective."
+      },
+      {
+        "id": "d",
+        "text": "Classify it as Group J automatically."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Room identity is necessary, but zoning analysis also checks relationships and circulation against the program.",
+    "explanation": "Room identity is necessary, but zoning analysis also checks relationships and circulation against the program.",
+    "code_citation": "Design Process; RA 9266 IRR; PD 1096 RIRR"
+  }
+}

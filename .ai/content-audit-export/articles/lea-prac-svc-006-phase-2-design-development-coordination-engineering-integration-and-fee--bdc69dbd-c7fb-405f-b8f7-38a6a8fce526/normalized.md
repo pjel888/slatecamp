@@ -1,84 +1,31 @@
+# Design Development Under SPP 202
 
+## Source Scope
 
-## Board Exam Quick Check
+Use SPP Document 202 for Design Development duties. Use UAP Document 401-402 only for the cumulative payment milestone after Design Development Services are completed.
 
-Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
-
-**Common mistake:** treating a familiar keyword in **Lea Prac Svc 006 Phase 2 Design Development Coordination Engineering Integration And Fee** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
-## Phase 2: Design Development: Coordination, Engineering Integration, and Fee
 ## Learning Goal
 
-After reading this article, you should be able to:
+For LEA questions, recognize Design Development as the bridge from approved schematic concepts to coordinated technical direction. It is more detailed than Schematic Design but is not yet the complete Contract Document package.
 
-- Describe the deliverables of Design Development (Phase 3 under SPP 202): detailed drawings, specifications, and refined cost estimates.
-- Explain the coordination and integration of structural, MEP, and other engineering consultants during this phase.
-- Identify the fee allocation for Design Development (20% of total design fees under SPP 202).
-- Apply Design Development phase requirements to LEA scenarios involving technical documentation and consultant coordination.
+## Design Development Starts From Approved Schematics
 
-Design Development builds upon the approved schematic design to produce detailed drawings, specifications, and cost estimates. This phase earns 20% of the architect's total design fees and focuses on translating conceptual design into technical documents ready for contract document preparation.
+SPP 202 states that Design Development is based on approved schematics and conceptual plans. That phrase is the exam anchor: the owner has already accepted the schematic direction, and the architect is now refining the project in drawings, outline specifications, systems, and cost information.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-prac-svc-006-phase-2-design-developm", type="image", caption="SPP Doc 202 Six-Phase Framework — Design Development Phase in Context", description="Process flow highlighting Phase 3 (Design Development) within the six-phase SPP Doc 202 framework: Project Definition → Schematic Design → Design Development (20% fee, detailed drawings, outline specifications, consultant coordination, updated cost estimates) → Contract Documents → Bidding → Construction Admin.", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+## Source-Safe Deliverables
 
-### Design Development Deliverables
+| Design Development item | Source-safe meaning |
+|---|---|
+| Plans, elevations, sections, and other drawings | The design is developed beyond initial line drawings. |
+| Outline specifications | The architect fixes and illustrates the size and character of the project by materials and building systems. |
+| Systems covered | Structural, electrical, mechanical, sanitary, electronic, and communications systems are named in the source. |
+| Diagrammatic construction-system layout | The architect shows how construction systems are organized. |
+| Updated SPPCC | The architect submits an updated Statement of Probable Project Construction Cost to the owner. |
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="KeyValues" status="preserved"]
-Extracted summary:
-- Props: pairs="{[[\"SPP Document\", \"201 (Pre-Design), 202 (Regular Design), 203 (Specialized)\"], [\"Compensation\", \"MDPE, Lump Sum, Per Diem, Professional Fee + Expenses\"], [\"Fee Basis\", \"Percentage of PCC or MDPE\"]]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-Based on approved schematics and conceptual plans, the architect prepares Design Development documents consisting of plans, elevations, sections, and other drawings. Outline specifications are prepared fixing and illustrating the size and character of the entire project in terms of materials, type of structural, electrical, mechanical, sanitary, electronic, and communications systems. The architect also prepares a diagrammatic layout of construction systems showing how building components integrate. An updated Statement of Probable Project Construction Cost is submitted reflecting refinements in scope, requirements, or market conditions.
+## Payment Milestone
 
-### Engineering Coordination and Integration
+UAP Document 401-402 states that after Design Development Services are completed, total payments on the fee increase to 35% of the Basic Fee. Since Schematic Design is 15%, this is a cumulative milestone, not a claim that every project has a separate isolated 35% design-development fee.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="KeyValues" status="preserved"]
-Extracted summary:
-- Props: pairs="{[[\"SPP Document\", \"201 (Pre-Design), 202 (Regular Design), 203 (Specialized)\"], [\"Compensation\", \"MDPE, Lump Sum, Per Diem, Professional Fee + Expenses\"], [\"Fee Basis\", \"Percentage of PCC or MDPE\"]]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+## Exam Trap
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Pattern:** Expect scenario-based questions where you must determine which phase a specific deliverable belongs to. Key percentages to memorize: Schematic Design (15%), Design Development (35%), Contract Documents (50%).
-[/SLATECAMP_UI_BLOCK]
-Design Development requires active coordination among the architect and engineering consultants. The architect must ensure that structural, mechanical, electrical, and plumbing systems integrate effectively with the architectural design. This phase typically sees the greatest amount of consultant coordination, as systems must be refined from schematic concepts into coordinated technical designs. The architect acts as the lead professional coordinating all disciplines to achieve an integrated solution.
-
-[SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Pattern:** Expect scenario-based questions where you must determine which phase a specific deliverable belongs to. Key percentages to memorize: Schematic Design (15%), Design Development (35%), Contract Documents (50%).
-[/SLATECAMP_UI_BLOCK]
-### Fee Milestone and Cumulative Progress
-
-[SLATECAMP_UI_BLOCK:ui_0006 component="ProcessFlow" status="preserved"]
-Extracted summary:
-- Props: steps="{[\"Identify client needs\", \"Define scope of services\", \"Prepare proposal/contract\", \"Execute pre-design activities\", \"Deliver phase outputs\", \"Submit for owner approval\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0007 component="ProcessFlow" status="preserved"]
-Extracted summary:
-- Props: steps="{[\"Identify client needs\", \"Define scope of services\", \"Prepare proposal/contract\", \"Execute pre-design activities\", \"Deliver phase outputs\", \"Submit for owner approval\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-Upon completion of Design Development, the architect has earned 35% of the total design fees. This represents significant progress through the design phases, with substantial work accomplished on coordination and technical development. However, the largest fee milestone remains ahead in the Contract Documents Phase, where 50% of fees are earned for preparing the detailed working drawings and comprehensive specifications needed for construction procurement.
-
----
-
-## Related Articles
-
-- [SPP Doc 202 Six-Phase Framework](lea-prac-svc-004)
-- [Schematic Design Phase](lea-prac-svc-005)
-- [Design Development Phase](lea-prac-svc-006)
-- [Contract Documents Phase](lea-prac-svc-007)
-- [Bidding and Construction Admin](lea-prac-svc-008)
-- [Pre-Design Services](lea-prac-svc-001)
-- [Specialized Services](lea-prac-svc-009)
-- [Design-Build Delivery](lea-prac-svc-019)
-- [Fee Compensation Methods](lea-prac-cmp-001)
-- [Owner-Architect Agreement](lea-prac-ctr-001)
+Do not confuse outline specifications with final technical specifications. Outline specifications belong to Design Development. Full technical specifications describing type and quality of materials, finish, manner of construction, and general conditions belong to the Contract Document Phase.

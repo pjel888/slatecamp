@@ -1,0 +1,356 @@
+{
+  "batch_id": "source-audited-article-batch-013-local-first",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T22:25:00.000+08:00",
+  "mode": "LOCAL_FIRST_ONLY",
+  "constraints": {
+    "workspace_only": "/Users/philiplewis/slatecamp",
+    "supabase_push": false,
+    "deploy": false,
+    "commit": false
+  },
+  "status": "local_pass_ready_for_final_publishing_review",
+  "selection_policy": {
+    "avoided_prior_batches": "batch 001 through batch 012 source-audited report and ledger article IDs",
+    "preferred_content": "high-value LEA professional-practice clusters with linked questions and local raw PDF support under vitruvius-connection/001_Raw-Source-Layer",
+    "selected_article_ids": [
+      "f5ed9c09-3191-4cd4-b1b0-9e6364212c36",
+      "875396fa-1704-47b7-abb5-29f49c75fc78",
+      "fba5f537-2da9-4fb3-b6eb-696d1937a92a",
+      "f7861b5b-0833-4cd3-a634-0dfb9f53891c",
+      "f2c105fd-51fc-4b48-b53a-77242dbb91b0"
+    ],
+    "skipped_candidates": [
+      {
+        "folder": "spp-doc-206-comprehensive-architectural-services--4c8773fa-7cf6-4f6c-9eab-32fa50886d73",
+        "reason": "linked questions include exact percentage-fee assertions not found in the clean audited UAP SPP raw markdown excerpt"
+      },
+      {
+        "folder": "spp-doc-207-design-build-services--74cbb43c-09fe-4697-bf41-7a3944a6bff0",
+        "reason": "linked questions include exact percentage-fee assertions requiring a separate Architect Guidelines check before local pass selection"
+      },
+      {
+        "folder": "minimum-parking-requirements--3ac37d27-3a6e-4d91-9b0c-f5f457cd24dc",
+        "reason": "linked questions are mixed across nonlocal IBC/open-space/electrical topics instead of the local raw PD 1096 parking source"
+      }
+    ]
+  },
+  "counts": {
+    "selected_articles": 5,
+    "local_pass_articles": 5,
+    "blocked_articles": 0,
+    "linked_questions": 50,
+    "question_edits_created": 50,
+    "source_records_created": 5,
+    "raw_pdf_sources_used": 3,
+    "partial_source_support_question_edits": 0,
+    "unresolved_external_source_gap_question_edits": 0,
+    "placeholder_matches": 0,
+    "json_files_parsed_in_scoped_check": 109
+  },
+  "improved_article_folder_paths": [
+    ".ai/content-audit-export/articles/spp-doc-204-b-construction-management-services--f5ed9c09-3191-4cd4-b1b0-9e6364212c36",
+    ".ai/content-audit-export/articles/spp-doc-205-post-construction-services--875396fa-1704-47b7-abb5-29f49c75fc78",
+    ".ai/content-audit-export/articles/spp-doc-208-architectural-design-competition-adc--fba5f537-2da9-4fb3-b6eb-696d1937a92a",
+    ".ai/content-audit-export/articles/spp-doc-209-architectural-consulting-services-pacs--f7861b5b-0833-4cd3-a634-0dfb9f53891c",
+    ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0"
+  ],
+  "question_edits_folder_paths": [
+    ".ai/content-audit-export/articles/spp-doc-204-b-construction-management-services--f5ed9c09-3191-4cd4-b1b0-9e6364212c36/question-edits",
+    ".ai/content-audit-export/articles/spp-doc-205-post-construction-services--875396fa-1704-47b7-abb5-29f49c75fc78/question-edits",
+    ".ai/content-audit-export/articles/spp-doc-208-architectural-design-competition-adc--fba5f537-2da9-4fb3-b6eb-696d1937a92a/question-edits",
+    ".ai/content-audit-export/articles/spp-doc-209-architectural-consulting-services-pacs--f7861b5b-0833-4cd3-a634-0dfb9f53891c/question-edits",
+    ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits"
+  ],
+  "articles": [
+    {
+      "article_id": "f5ed9c09-3191-4cd4-b1b0-9e6364212c36",
+      "slug": "spp-doc-204-b-construction-management-services",
+      "title": "SPP Doc 204-B: Construction Management Services",
+      "status": "local_pass_ready_for_final_publishing_review",
+      "improved_article_folder_path": ".ai/content-audit-export/articles/spp-doc-204-b-construction-management-services--f5ed9c09-3191-4cd4-b1b0-9e6364212c36",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/spp-doc-204-b-construction-management-services--f5ed9c09-3191-4cd4-b1b0-9e6364212c36/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "partial_source_support_question_edits": 0,
+      "unresolved_external_source_gap_question_edits": 0,
+      "source_count": 1,
+      "raw_sources": [
+        {
+          "source_id": "uap-standards-of-professional-practice-2",
+          "label": "UAP Standards of Professional Practice",
+          "authority": "United Architects of the Philippines / PRBoA SPP reference copy",
+          "source_type": "professional_practice_pdf",
+          "source_locator": "SPP Document 204-B construction management services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+          "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+          "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
+          "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
+          "checked_markdown_lines": [
+            "UAP SPP raw markdown lines 1080-1140"
+          ],
+          "use": "primary source for article and linked-question support",
+          "local_source_checked": true
+        }
+      ],
+      "hashes": {
+        "original": "sha256:83a55c5b407c51f9d250ac885debef17dc8ce7409c6f30c32a95d28d6bdd1846",
+        "normalized": "sha256:73c06fa0b671756021925d1184dd4159e9443dbcd6ad3361532e9c233e0dce83",
+        "candidate": "sha256:73c06fa0b671756021925d1184dd4159e9443dbcd6ad3361532e9c233e0dce83",
+        "sources": "sha256:8dabc3a6144208f3d620cc2dc789ca37af106373ab8ad03d27b462b005795276",
+        "linked_questions": "sha256:4d71e693bacc283d5ff71e3f8a1436a0544a8c81160785c4a1f383f6c36b63ff"
+      },
+      "paths": {
+        "article_folder": ".ai/content-audit-export/articles/spp-doc-204-b-construction-management-services--f5ed9c09-3191-4cd4-b1b0-9e6364212c36",
+        "normalized": ".ai/content-audit-export/articles/spp-doc-204-b-construction-management-services--f5ed9c09-3191-4cd4-b1b0-9e6364212c36/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/spp-doc-204-b-construction-management-services--f5ed9c09-3191-4cd4-b1b0-9e6364212c36/candidate.md",
+        "sources": ".ai/content-audit-export/articles/spp-doc-204-b-construction-management-services--f5ed9c09-3191-4cd4-b1b0-9e6364212c36/sources.json",
+        "source_audit_evidence": ".ai/content-audit-export/articles/spp-doc-204-b-construction-management-services--f5ed9c09-3191-4cd4-b1b0-9e6364212c36/source-audit-evidence.json",
+        "question_edits_folder": ".ai/content-audit-export/articles/spp-doc-204-b-construction-management-services--f5ed9c09-3191-4cd4-b1b0-9e6364212c36/question-edits"
+      },
+      "validation": {
+        "compose_blockers": [],
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "bundle_validate_dry_run_valid": true,
+        "bundle_validate_warning": "component-usage.json has not been generated for this article yet."
+      },
+      "review_note": "Resolved: current SPP 206 supports the PM/CM relationship and percentage-basis compensation; 1979 UAP Documents UAP Doc. 206 Section 8.1 supplies the exact 2% to 5% Project Manager fee range as estimated Project Cost."
+    },
+    {
+      "article_id": "875396fa-1704-47b7-abb5-29f49c75fc78",
+      "slug": "spp-doc-205-post-construction-services",
+      "title": "SPP Doc 205: Post-Construction Services",
+      "status": "local_pass_ready_for_final_publishing_review",
+      "improved_article_folder_path": ".ai/content-audit-export/articles/spp-doc-205-post-construction-services--875396fa-1704-47b7-abb5-29f49c75fc78",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/spp-doc-205-post-construction-services--875396fa-1704-47b7-abb5-29f49c75fc78/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "partial_source_support_question_edits": 0,
+      "source_count": 1,
+      "raw_sources": [
+        {
+          "source_id": "uap-standards-of-professional-practice-2",
+          "label": "UAP Standards of Professional Practice",
+          "authority": "United Architects of the Philippines / PRBoA SPP reference copy",
+          "source_type": "professional_practice_pdf",
+          "source_locator": "SPP Document 205 post-construction services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+          "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+          "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
+          "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
+          "checked_markdown_lines": [
+            "UAP SPP raw markdown lines 1146-1205"
+          ],
+          "use": "primary source for article and linked-question support",
+          "local_source_checked": true
+        }
+      ],
+      "hashes": {
+        "original": "sha256:d964ca521659dfea22380344c7de6f8cfe37e065f35b67032d2e63ff7417dad8",
+        "normalized": "sha256:61730c2b8b09117b8e970f6d2addf9531dbbd4ec11f2eadeeef1da03de27c1ce",
+        "candidate": "sha256:61730c2b8b09117b8e970f6d2addf9531dbbd4ec11f2eadeeef1da03de27c1ce",
+        "sources": "sha256:5e218016039e009578655994189214df487edb7ad3d48b39af7ba948ffe89549",
+        "linked_questions": "sha256:08ae78f09f110cb5673f4a4bdb87b7fac3317634ed05533d1f5dbefe5b4daf9b"
+      },
+      "paths": {
+        "article_folder": ".ai/content-audit-export/articles/spp-doc-205-post-construction-services--875396fa-1704-47b7-abb5-29f49c75fc78",
+        "normalized": ".ai/content-audit-export/articles/spp-doc-205-post-construction-services--875396fa-1704-47b7-abb5-29f49c75fc78/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/spp-doc-205-post-construction-services--875396fa-1704-47b7-abb5-29f49c75fc78/candidate.md",
+        "sources": ".ai/content-audit-export/articles/spp-doc-205-post-construction-services--875396fa-1704-47b7-abb5-29f49c75fc78/sources.json",
+        "source_audit_evidence": ".ai/content-audit-export/articles/spp-doc-205-post-construction-services--875396fa-1704-47b7-abb5-29f49c75fc78/source-audit-evidence.json",
+        "question_edits_folder": ".ai/content-audit-export/articles/spp-doc-205-post-construction-services--875396fa-1704-47b7-abb5-29f49c75fc78/question-edits"
+      },
+      "validation": {
+        "compose_blockers": [],
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "bundle_validate_dry_run_valid": true,
+        "bundle_validate_warning": "component-usage.json has not been generated for this article yet."
+      },
+      "review_note": null
+    },
+    {
+      "article_id": "fba5f537-2da9-4fb3-b6eb-696d1937a92a",
+      "slug": "spp-doc-208-architectural-design-competition-adc",
+      "title": "SPP Doc 208: Architectural Design Competition (ADC)",
+      "status": "local_pass_ready_for_final_publishing_review",
+      "improved_article_folder_path": ".ai/content-audit-export/articles/spp-doc-208-architectural-design-competition-adc--fba5f537-2da9-4fb3-b6eb-696d1937a92a",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/spp-doc-208-architectural-design-competition-adc--fba5f537-2da9-4fb3-b6eb-696d1937a92a/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "partial_source_support_question_edits": 0,
+      "source_count": 1,
+      "raw_sources": [
+        {
+          "source_id": "uap-standards-of-professional-practice-2",
+          "label": "UAP Standards of Professional Practice",
+          "authority": "United Architects of the Philippines / PRBoA SPP reference copy",
+          "source_type": "professional_practice_pdf",
+          "source_locator": "SPP Document 208 architectural design competition",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+          "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+          "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
+          "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
+          "checked_markdown_lines": [
+            "UAP SPP raw markdown lines 1439-1577"
+          ],
+          "use": "primary source for article and linked-question support",
+          "local_source_checked": true
+        }
+      ],
+      "hashes": {
+        "original": "sha256:176e98f131205f9ca593bd012a0959009e352ae3eaec63674a82e455e1e5a14d",
+        "normalized": "sha256:3e70597e45ea59c65c8e99eae852694bfb7546611ef10dce2d10f79039a6e5f4",
+        "candidate": "sha256:3e70597e45ea59c65c8e99eae852694bfb7546611ef10dce2d10f79039a6e5f4",
+        "sources": "sha256:f331123bc8709b233bef6afafc5e87bacc83951ab555e855f6479e7594775e2e",
+        "linked_questions": "sha256:34375b261633b1c30741a83262f437ba6e9f3221dfe2ebf5b1407008a6d13ad4"
+      },
+      "paths": {
+        "article_folder": ".ai/content-audit-export/articles/spp-doc-208-architectural-design-competition-adc--fba5f537-2da9-4fb3-b6eb-696d1937a92a",
+        "normalized": ".ai/content-audit-export/articles/spp-doc-208-architectural-design-competition-adc--fba5f537-2da9-4fb3-b6eb-696d1937a92a/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/spp-doc-208-architectural-design-competition-adc--fba5f537-2da9-4fb3-b6eb-696d1937a92a/candidate.md",
+        "sources": ".ai/content-audit-export/articles/spp-doc-208-architectural-design-competition-adc--fba5f537-2da9-4fb3-b6eb-696d1937a92a/sources.json",
+        "source_audit_evidence": ".ai/content-audit-export/articles/spp-doc-208-architectural-design-competition-adc--fba5f537-2da9-4fb3-b6eb-696d1937a92a/source-audit-evidence.json",
+        "question_edits_folder": ".ai/content-audit-export/articles/spp-doc-208-architectural-design-competition-adc--fba5f537-2da9-4fb3-b6eb-696d1937a92a/question-edits"
+      },
+      "validation": {
+        "compose_blockers": [],
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "bundle_validate_dry_run_valid": true,
+        "bundle_validate_warning": "component-usage.json has not been generated for this article yet."
+      },
+      "review_note": null
+    },
+    {
+      "article_id": "f7861b5b-0833-4cd3-a634-0dfb9f53891c",
+      "slug": "spp-doc-209-architectural-consulting-services-pacs",
+      "title": "SPP Doc 209: Professional Architectural Consulting Services (PACS)",
+      "status": "local_pass_ready_for_final_publishing_review",
+      "improved_article_folder_path": ".ai/content-audit-export/articles/spp-doc-209-architectural-consulting-services-pacs--f7861b5b-0833-4cd3-a634-0dfb9f53891c",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/spp-doc-209-architectural-consulting-services-pacs--f7861b5b-0833-4cd3-a634-0dfb9f53891c/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "partial_source_support_question_edits": 0,
+      "source_count": 1,
+      "raw_sources": [
+        {
+          "source_id": "uap-standards-of-professional-practice-2",
+          "label": "UAP Standards of Professional Practice",
+          "authority": "United Architects of the Philippines / PRBoA SPP reference copy",
+          "source_type": "professional_practice_pdf",
+          "source_locator": "SPP Document 209 Professional Architectural Consulting Services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+          "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+          "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
+          "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
+          "checked_markdown_lines": [
+            "UAP SPP raw markdown lines 1581-1866"
+          ],
+          "use": "primary source for article and linked-question support",
+          "local_source_checked": true
+        }
+      ],
+      "hashes": {
+        "original": "sha256:df5f77465e1400bb4efc47262f568ac04f7838b8138b992819a3a7166decd52b",
+        "normalized": "sha256:b623dfa993c02af63351ccbb0f6e844af3ed842539f530fa5de297252a01dac4",
+        "candidate": "sha256:b623dfa993c02af63351ccbb0f6e844af3ed842539f530fa5de297252a01dac4",
+        "sources": "sha256:200ae5c1fb823da11c82f48007a1cd0870a8f7d96edde54e07f9cc80463e7a4e",
+        "linked_questions": "sha256:6044139ebb38fe748a55c17cc4c4e0490c70dcf5e3b3bdfda8eddc44f8e2d2cb"
+      },
+      "paths": {
+        "article_folder": ".ai/content-audit-export/articles/spp-doc-209-architectural-consulting-services-pacs--f7861b5b-0833-4cd3-a634-0dfb9f53891c",
+        "normalized": ".ai/content-audit-export/articles/spp-doc-209-architectural-consulting-services-pacs--f7861b5b-0833-4cd3-a634-0dfb9f53891c/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/spp-doc-209-architectural-consulting-services-pacs--f7861b5b-0833-4cd3-a634-0dfb9f53891c/candidate.md",
+        "sources": ".ai/content-audit-export/articles/spp-doc-209-architectural-consulting-services-pacs--f7861b5b-0833-4cd3-a634-0dfb9f53891c/sources.json",
+        "source_audit_evidence": ".ai/content-audit-export/articles/spp-doc-209-architectural-consulting-services-pacs--f7861b5b-0833-4cd3-a634-0dfb9f53891c/source-audit-evidence.json",
+        "question_edits_folder": ".ai/content-audit-export/articles/spp-doc-209-architectural-consulting-services-pacs--f7861b5b-0833-4cd3-a634-0dfb9f53891c/question-edits"
+      },
+      "validation": {
+        "compose_blockers": [],
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "bundle_validate_dry_run_valid": true,
+        "bundle_validate_warning": "component-usage.json has not been generated for this article yet."
+      },
+      "review_note": null
+    },
+    {
+      "article_id": "f2c105fd-51fc-4b48-b53a-77242dbb91b0",
+      "slug": "uap-spp-doc-standards-of-professional-practice-for-philippine-architects",
+      "title": "UAP SPP: General Standards",
+      "status": "local_pass_ready_for_final_publishing_review",
+      "improved_article_folder_path": ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "partial_source_support_question_edits": 0,
+      "source_count": 1,
+      "raw_sources": [
+        {
+          "source_id": "uap-standards-of-professional-practice-2",
+          "label": "UAP Standards of Professional Practice",
+          "authority": "United Architects of the Philippines / PRBoA SPP reference copy",
+          "source_type": "professional_practice_pdf",
+          "source_locator": "UAP Standards of Professional Practice Annex A and document map",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+          "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+          "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
+          "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
+          "checked_markdown_lines": [
+            "UAP SPP raw markdown lines 25-140, 287-343, and 560"
+          ],
+          "use": "primary source for article and linked-question support",
+          "local_source_checked": true
+        }
+      ],
+      "hashes": {
+        "original": "sha256:712933904177e2ab8f82af83f84c44ef7fdab38c771d10018f0b36d69642d813",
+        "normalized": "sha256:5f363f64eeb22959f64cf0270e823a1a604cc96357d2d76d9bfd921d8208276c",
+        "candidate": "sha256:5f363f64eeb22959f64cf0270e823a1a604cc96357d2d76d9bfd921d8208276c",
+        "sources": "sha256:955ebda3b142b482bb3525394dfc7a2cc1b2b85f301c20e5944f50efd6e613dd",
+        "linked_questions": "sha256:d6c9af942bb7b2f8a841d8f2f072e79b9033438ca7a38c19780e351d54577d6a"
+      },
+      "paths": {
+        "article_folder": ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0",
+        "normalized": ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/candidate.md",
+        "sources": ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/sources.json",
+        "source_audit_evidence": ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/source-audit-evidence.json",
+        "question_edits_folder": ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits"
+      },
+      "validation": {
+        "compose_blockers": [],
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "bundle_validate_dry_run_valid": true,
+        "bundle_validate_warning": "component-usage.json has not been generated for this article yet."
+      },
+      "review_note": null
+    }
+  ],
+  "validation_summary": {
+    "compose": "Fresh affected-article rerun passed: bun run content-audit:compose -- --input .ai/content-audit-export --article-id f5ed9c09-3191-4cd4-b1b0-9e6364212c36 --overwrite --strict; blockers=0.",
+    "diff": "Fresh affected-article rerun passed: bun run content-audit:diff -- --input .ai/content-audit-export --article-id f5ed9c09-3191-4cd4-b1b0-9e6364212c36 --summary --strict; safe_to_push=true, blockers=[].",
+    "validate": "Fresh affected-article rerun passed: bun run content-audit:validate -- --input .ai/content-audit-export --article-id f5ed9c09-3191-4cd4-b1b0-9e6364212c36 --summary --dry-run; valid=true, blockers=[], component-usage warning only.",
+    "json_parse": "Post-resolution scoped JSON parse passed: 109 JSON files parsed, including all five Batch 013 article folders plus local-first and blocker ledgers.",
+    "placeholder_scan": "Post-resolution placeholder scan of Batch 013 article folders plus report/ledger/blocker ledger returned no matches.",
+    "tests": "bun test scripts/content-audit/content-audit.test.ts passed: 27 pass, 0 fail, 84 expect() calls.",
+    "diff_check": "Scoped git diff --check passed after the Batch 013 blocker resolution."
+  },
+  "source_audit_notes": [
+    "Primary raw source for all five selected articles: vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf.",
+    "Raw conversion used for line checks: vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md.",
+    "SPP 206 local source lines 1311-1316 and 1342-1356 support PM/CM linkage and percentage-basis compensation.",
+    "The exact Project Manager fee range is supported by 1979 UAP Documents: raw markdown line 1876, refined markdown line 1738, canonical source line 1830, and sidecar JSON content id 24411 state 2% to 5% of estimated Project Cost.",
+    "Reviewer/QA 2%-5% hits remain corroboration only; question f9e2c759-3414-428b-b3da-76522aa33e95 is now supported by local source evidence."
+  ],
+  "next_phase_readiness": {
+    "local_artifacts_ready": true,
+    "supabase_final_publishing_only": true,
+    "required_before_publish": [
+      "run remote stale checks in the publishing lane before any Supabase mutation"
+    ]
+  }
+}

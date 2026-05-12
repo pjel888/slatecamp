@@ -1,0 +1,61 @@
+{
+  "question_id": "a4ec33ae-682c-4e73-a214-b210d02e33ba",
+  "baseline_hash": "sha256:f69fb84b3824716e547d98d84c7e76b8a0b6d36069d09373956bfe4ff9c86d71",
+  "action": "replace",
+  "reason": "source-audited-article-batch-020-local-first rewrote the question to match only locally checked source evidence.",
+  "approved_by": "codex-local-source-audit-batch-020",
+  "approved_at": "2026-05-10T16:41:51.472Z",
+  "source_audit_support": {
+    "parent_article_id": "f76bad6c-4bdf-4d2c-bdfb-a3381c42e320",
+    "parent_article_slug": "spp-doc-207-design-build-services",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "checked_sources": [
+      {
+        "source_id": "spp-207-uap-local-raw-pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 207.pdf",
+        "raw_pdf_sha256": "sha256:7050b0c7bd152694587f39ead8b682ed71b882ba50fce5c4a614206f32b5b610",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md lines 3-8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md lines 147-153; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/SPP 207.md lines 429-432"
+      }
+    ],
+    "local_source_safe_action": "Replaced the prior item with a source-bounded MCQ using only checked SPP source lines."
+  },
+  "proposed": {
+    "text": "What service is identified by SPP Document 207 in the checked source?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Design-Build Services."
+      },
+      {
+        "id": "b",
+        "text": "Fulltime Supervision Services."
+      },
+      {
+        "id": "c",
+        "text": "Architectural Design Competitions."
+      },
+      {
+        "id": "d",
+        "text": "Architectural Interiors only."
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "The checked title lines identify SPP 207 as Design-Build Services.",
+    "explanation": "The checked title lines identify SPP 207 as Design-Build Services.",
+    "code_citation": "SPP Document 207",
+    "bloom_level": "remember",
+    "application_context": "professional_practice",
+    "practice_context": [
+      "SPP Document 207",
+      "SPP Doc 207: Design-Build Services"
+    ],
+    "difficulty": 0.45,
+    "is_assessment": false,
+    "model_id": "BATCH-020-spp-doc-207-design-build-services-001"
+  }
+}

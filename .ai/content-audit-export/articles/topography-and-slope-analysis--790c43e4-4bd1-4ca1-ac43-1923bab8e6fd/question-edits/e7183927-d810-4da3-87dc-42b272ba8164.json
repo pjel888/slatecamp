@@ -1,0 +1,91 @@
+{
+  "question_id": "e7183927-d810-4da3-87dc-42b272ba8164",
+  "baseline_hash": "sha256:ab709229c8fede567d6f44e318e3dd0f4bd785c15eb017b473d2281691b8067b",
+  "action": "replace",
+  "reason": "source-audited-article-batch-051-local-first: local raw-source-backed replacement constrained to checked Batch 051 source families.",
+  "approved_by": "codex-local-first-batch-051",
+  "approved_at": "2026-05-11T18:38:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "790c43e4-4bd1-4ca1-ac43-1923bab8e6fd",
+    "parent_article_slug": "topography-and-slope-analysis",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Climate Resilience Reference Tool refined markdown lines 939-958, 1816-1830, 2526-2556, 4407-4411, 4690-4692, 4970-4990, 5108-5112, 5381-5385, 7000-7014, and 7107-7139; Building Technology - Siteworks refined markdown lines 24-86, 108-146, 160-220, and 250-305; Sitework Lecture refined markdown lines 28-100, 134-190, 214-290, and 370-405",
+    "checked_markdown_lines": [
+      "Climate Resilience Reference Tool refined markdown lines 939-958",
+      "Climate Resilience Reference Tool refined markdown lines 1816-1830",
+      "Climate Resilience Reference Tool refined markdown lines 2526-2556",
+      "Climate Resilience Reference Tool refined markdown lines 4407-4411",
+      "Climate Resilience Reference Tool refined markdown lines 4690-4692",
+      "Climate Resilience Reference Tool refined markdown lines 4970-4990",
+      "Climate Resilience Reference Tool refined markdown lines 5108-5112",
+      "Climate Resilience Reference Tool refined markdown lines 5381-5385",
+      "Climate Resilience Reference Tool refined markdown lines 7000-7014",
+      "Climate Resilience Reference Tool refined markdown lines 7107-7139",
+      "Building Technology - Siteworks refined markdown lines 24-86",
+      "Building Technology - Siteworks refined markdown lines 108-146",
+      "Building Technology - Siteworks refined markdown lines 160-220",
+      "Building Technology - Siteworks refined markdown lines 250-305",
+      "Sitework Lecture refined markdown lines 28-100",
+      "Sitework Lecture refined markdown lines 134-190",
+      "Sitework Lecture refined markdown lines 214-290",
+      "Sitework Lecture refined markdown lines 370-405"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "climate-local-raw-pdf--b051-790c43e4-01",
+        "label": "Climate Resilience Reference Tool - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Reference-Tool-on-Urban-Planning-and-Design-for-Climate-Resilience-for-LGUs-Planning-Actors-in-the-Philippines_readable.pdf",
+        "sha256": "sha256:4fb30dbbb3eb2d7d445418120bdd046c594e0eeea85b3bf32f93d401325f3bb8",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Reference-Tool-on-Urban-Planning-and-Design-for-Climate-Resilience-for-LGUs-Planning-Actors-in-the-Philippines_readable.md",
+        "refined_markdown_sha256": "sha256:2a1544c9d48eae33c8456f130dfa1c1c7b31c27befca17a2602069fa8086c455",
+        "locator": "Climate Resilience Reference Tool refined markdown lines 939-958, 1816-1830, 2526-2556, 4407-4411, 4690-4692, 4970-4990, 5108-5112, 5381-5385, 7000-7014, and 7107-7139"
+      },
+      {
+        "source_id": "siteworks-local-raw-pdf--b051-790c43e4-02",
+        "label": "Building Technology - Siteworks - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Technology - Siteworks.pdf",
+        "sha256": "sha256:9f498be4a288011a0e8b750d4bb8316afebf07a908993620579c311da30e02a2",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Technology - Siteworks.md",
+        "refined_markdown_sha256": "sha256:3e34ffc7b60b926a2cd75fbde6239ff3f05e7e53993d8cb6f8d5f1d865c64296",
+        "locator": "Building Technology - Siteworks refined markdown lines 24-86, 108-146, 160-220, and 250-305"
+      },
+      {
+        "source_id": "lecture-local-raw-pdf--b051-790c43e4-03",
+        "label": "Sitework Lecture - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Sitework Lecture.pdf",
+        "sha256": "sha256:a469e97d2c4b842f443864c658fc4359ef2787a2b009b9fbafc1afbd1da25ff6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Sitework Lecture.md",
+        "refined_markdown_sha256": "sha256:e761c9b38b9d0c07bd6053692337109a218169ba791e8f074fa40842d3972af2",
+        "locator": "Sitework Lecture refined markdown lines 28-100, 134-190, 214-290, and 370-405"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 051 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "What is the best exam distinction for slope analysis?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Slope analysis links landform, drainage, erosion, soil support, and hazard exposure."
+      },
+      {
+        "id": "b",
+        "text": "Slope analysis is only a drawing-scale issue."
+      },
+      {
+        "id": "c",
+        "text": "Slope analysis excludes fill and excavation."
+      },
+      {
+        "id": "d",
+        "text": "Slope analysis begins after landscaping is installed."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Slope analysis links landform, drainage, erosion, soil support, and hazard exposure. This answer is supported by the checked local raw-source families for Topography and Slope Analysis.",
+    "explanation": "Slope analysis links landform, drainage, erosion, soil support, and hazard exposure. The Batch 051 source audit used local raw PDFs first and refined markdown only as locator evidence for Topography and Slope Analysis.",
+    "code_citation": "Climate Resilience Reference Tool refined markdown lines 939-958, 1816-1830, 2526-2556, 4407-4411, 4690-4692, 4970-4990, 5108-5112, 5381-5385, 7000-7014, and 7107-7139; Building Technology - Siteworks refined markdown lines 24-86, 108-146, 160-220, and 250-305; Sitework Lecture refined markdown lines 28-100, 134-190, 214-290, and 370-405"
+  },
+  "batch_question_template_index": 3
+}

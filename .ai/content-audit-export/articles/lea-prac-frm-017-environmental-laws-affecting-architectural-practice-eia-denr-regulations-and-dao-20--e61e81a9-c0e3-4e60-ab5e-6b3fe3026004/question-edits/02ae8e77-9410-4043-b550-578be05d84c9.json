@@ -1,0 +1,72 @@
+{
+  "question_id": "02ae8e77-9410-4043-b550-578be05d84c9",
+  "baseline_hash": "sha256:f224ee8932717fd51ab8b12d58582100ece4121b75dee167effaa938b1f500b1",
+  "action": "replace",
+  "reason": "source-audited-article-batch-021-local-first rewrote this linked question to align with the local source audit for lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30.",
+  "approved_by": "codex-local-source-audit-batch-021",
+  "approved_at": "2026-05-11T10:30:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
+    "parent_article_slug": "lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "DENR DAO 2003-30 EIS System Implementing Rules checked from local raw PDF and refined Markdown",
+    "checked_markdown_lines": [
+      "DAO 2003-30 refined markdown lines 13-150",
+      "DAO 2003-30 refined markdown lines 150-360"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DENR/DENR DAO 2003-30 - EIS System Implementing Rules.pdf",
+        "sha256": "sha256:079285ca972d0be053faa148fe6770c12c396408c35e6739929b81685e775fb7",
+        "source_id": "denr-dao-2003-30-eis-system-local",
+        "locator": "DAO 2003-30 refined markdown lines 13-150 and 150-360"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DENR/DENR DAO 2003-30 - EIS System Implementing Rules.md",
+        "sha256": "sha256:3a77a918f5e5a62043b3a3e75d9583372031da82056f882b49c317e94f119763",
+        "source_id": "denr-dao-2003-30-eis-system-local",
+        "locator": "DAO 2003-30 refined markdown lines 13-150 and 150-360"
+      }
+    ],
+    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+  },
+  "proposed": {
+    "text": "What is Environmental Impact Assessment under the checked DAO 2003-30 source?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A marketing document for selling units"
+      },
+      {
+        "id": "b",
+        "text": "A process for evaluating and predicting likely project impacts and designing measures to address them"
+      },
+      {
+        "id": "c",
+        "text": "A structural load table"
+      },
+      {
+        "id": "d",
+        "text": "A tax declaration process"
+      }
+    ],
+    "correct_option_id": "b",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "The checked DAO 2003-30 definition describes EIA as evaluating and predicting likely impacts and designing preventive, mitigating, and enhancement measures.",
+    "explanation": "The process spans construction, commissioning, operation, and abandonment concerns.",
+    "code_citation": "DAO 2003-30 refined markdown lines 57-70",
+    "bloom_level": "apply",
+    "application_context": "code_interpretation",
+    "practice_context": [
+      "environmental compliance",
+      "EIA"
+    ],
+    "difficulty": 0.66,
+    "is_assessment": false,
+    "model_id": "BATCH-021-dao-005"
+  }
+}

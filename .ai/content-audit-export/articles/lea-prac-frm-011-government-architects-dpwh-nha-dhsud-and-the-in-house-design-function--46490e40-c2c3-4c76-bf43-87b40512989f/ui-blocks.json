@@ -4,66 +4,11 @@
   "normalized_created_at": "2026-05-09T17:04:22.296Z",
   "parser_version": "ui-block-parser-v1",
   "original_content_hash": "sha256:eb9845b7903febd2552ca4cb11696d7d9deaa98f0df5e01efa340111b8764fce",
-  "normalized_content_hash": "sha256:eb9845b7903febd2552ca4cb11696d7d9deaa98f0df5e01efa340111b8764fce",
-  "ui_block_count": 2,
-  "total_blocks": 2,
-  "blocks": [
-    {
-      "block_id": "ui_0001",
-      "block_type": "mdx_component",
-      "component_name": "Tip",
-      "raw": "<Tip>\nGovernment architects work under civil service rules and budget appropriations, not private service agreements. However, they must still uphold RA 9266 professional standards and comply with the same technical codes — National Building Code, BP 344, and environmental regulations — as private firms.\n</Tip>",
-      "raw_hash": "sha256:9802b4bcd2133462c33d32422343a32ab0e26bd1946021c400700d6f393420be",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Tip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: Government architects work under civil service rules and budget appropriations, not private service agreements. However, they must still uphold RA 9266 professional standards and comply with the same technical codes — National Building Code, BP 344, and environmental regulations — as private firms.\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:7246b13eef420a17f85adff2765c6e18218aeceb6dc6d6ad8672a8aa442e56df",
-      "props": {},
-      "props_json": {},
-      "props_text": null,
-      "children_raw": "\nGovernment architects work under civil service rules and budget appropriations, not private service agreements. However, they must still uphold RA 9266 professional standards and comply with the same technical codes — National Building Code, BP 344, and environmental regulations — as private firms.\n",
-      "children_text": "Government architects work under civil service rules and budget appropriations, not private service agreements. However, they must still uphold RA 9266 professional standards and comply with the same technical codes — National Building Code, BP 344, and environmental regulations — as private firms.",
-      "start_offset": 1899,
-      "end_offset": 2327,
-      "line_start": 25,
-      "line_end": 29,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    },
-    {
-      "block_id": "ui_0002",
-      "block_type": "mdx_component",
-      "component_name": "ArticleMedia",
-      "raw": "<ArticleMedia id=\"media-lea-prac-frm-011-government-ar-0\" type=\"image\" caption=\"Government Architect Offices — DPWH, NHA, DHSUD Organizational Roles\" description=\"Organizational diagram showing the three main government architect employer agencies: DPWH (public works infrastructure, largest employer of government architects), NHA (housing production and resettlement), DHSUD (human settlements regulation and policy). Each agency box shows: mandate, typical architect role, and in-house design function scope. Distinction between regulatory vs. design roles highlighted.\" />",
-      "raw_hash": "sha256:e4dc3208c8c56b7bc286810f59904b1ff36016c0750182aa267bc1ab27fc5521",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"ArticleMedia\" status=\"preserved\"]\nExtracted summary:\n- Props: id=\"media-lea-prac-frm-011-government-ar-0\", type=\"image\", caption=\"Government Architect Offices — DPWH, NHA, DHSUD Organizational Roles\", description=\"Organizational diagram showing the three main government architect employer agencies: DPWH (public works infrastructure, largest employer of government architects), NHA (housing production and resettlement), DHSUD (human settlements regulation and policy). Each agency box shows: mandate, typical architect role, and in-house design function scope. Distinction between regulatory vs. design roles highlighted.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:8e7560558be6ba0df88059e9988e4c59db9e13a299fcfa7d9ecbadb37c711b6b",
-      "props": {
-        "id": "media-lea-prac-frm-011-government-ar-0",
-        "type": "image",
-        "caption": "Government Architect Offices — DPWH, NHA, DHSUD Organizational Roles",
-        "description": "Organizational diagram showing the three main government architect employer agencies: DPWH (public works infrastructure, largest employer of government architects), NHA (housing production and resettlement), DHSUD (human settlements regulation and policy). Each agency box shows: mandate, typical architect role, and in-house design function scope. Distinction between regulatory vs. design roles highlighted."
-      },
-      "props_json": {
-        "id": "media-lea-prac-frm-011-government-ar-0",
-        "type": "image",
-        "caption": "Government Architect Offices — DPWH, NHA, DHSUD Organizational Roles",
-        "description": "Organizational diagram showing the three main government architect employer agencies: DPWH (public works infrastructure, largest employer of government architects), NHA (housing production and resettlement), DHSUD (human settlements regulation and policy). Each agency box shows: mandate, typical architect role, and in-house design function scope. Distinction between regulatory vs. design roles highlighted."
-      },
-      "props_text": "id=\"media-lea-prac-frm-011-government-ar-0\" type=\"image\" caption=\"Government Architect Offices — DPWH, NHA, DHSUD Organizational Roles\" description=\"Organizational diagram showing the three main government architect employer agencies: DPWH (public works infrastructure, largest employer of government architects), NHA (housing production and resettlement), DHSUD (human settlements regulation and policy). Each agency box shows: mandate, typical architect role, and in-house design function scope. Distinction between regulatory vs. design roles highlighted.\"",
-      "children_raw": null,
-      "children_text": null,
-      "start_offset": 6127,
-      "end_offset": 6836,
-      "line_start": 61,
-      "line_end": 65,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    }
-  ],
+  "normalized_content_hash": "sha256:357511191beb7d6444ef63d142ba20082a437803aa1a0f19597f8f26aa00957b",
+  "ui_block_count": 0,
+  "total_blocks": 0,
+  "blocks": [],
   "unknown_blocks": [],
   "unresolved_critical_blocks": [],
-  "ui_blocks_hash": "sha256:c24a1fbc98613a2a035bc7fa9b2e4c4b305b68fafb11db2d695829f02032c3f7"
+  "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
 }

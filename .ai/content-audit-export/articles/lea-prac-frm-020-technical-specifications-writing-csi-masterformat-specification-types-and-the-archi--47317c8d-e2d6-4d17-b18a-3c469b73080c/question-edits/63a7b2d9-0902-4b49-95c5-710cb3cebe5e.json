@@ -1,0 +1,83 @@
+{
+  "question_id": "63a7b2d9-0902-4b49-95c5-710cb3cebe5e",
+  "baseline_hash": "sha256:66f50bd6124e566f14350f9f91ffa75490efa535bc8163729195213a7d93c48c",
+  "action": "replace",
+  "reason": "source-audited-article-batch-036-local-first: source-safe replacement grounded in local raw PDF/source family evidence; removes unsupported, stale, or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-036",
+  "approved_at": "2026-05-11T12:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-036-local-first",
+    "checked_sources": [
+      {
+        "source_id": "uap-document-301-local",
+        "label": "UAP Document 301 - General Conditions",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "checked_markdown_lines": [
+          "UAP Document 301 refined markdown lines 478-529",
+          "UAP Document 301 refined markdown lines 531-573",
+          "UAP Document 301 refined markdown lines 579-604",
+          "UAP Document 301 refined markdown lines 608-662"
+        ]
+      },
+      {
+        "source_id": "ciap-document-102-local",
+        "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+        "checked_markdown_lines": [
+          "CIAP Document 102 refined markdown lines 180-213",
+          "CIAP Document 102 refined markdown lines 215-258"
+        ]
+      },
+      {
+        "source_id": "ra-9184-government-procurement-irr-local",
+        "label": "RA 9184 Government Procurement IRR",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9184/RA 9184 IRR - Government Procurement IRR.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9184/RA 9184 IRR - Government Procurement IRR.md",
+        "checked_markdown_lines": [
+          "RA 9184 IRR refined markdown lines 24-50",
+          "RA 9184 IRR refined markdown lines 145-151",
+          "RA 9184 IRR refined markdown lines 167-201"
+        ]
+      },
+      {
+        "source_id": "uap-document-401-402-local",
+        "label": "UAP Document 401-402 - Architect-Owner Agreement",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
+        "checked_markdown_lines": [
+          "UAP Document 401-402 refined markdown lines 45-72",
+          "UAP Document 401-402 refined markdown lines 77-89",
+          "UAP Document 401-402 refined markdown lines 105-119"
+        ]
+      }
+    ],
+    "citation": "RA 9184 IRR, Section 17"
+  },
+  "proposed": {
+    "text": "In public procurement under RA 9184, what must bidding documents include for infrastructure work?",
+    "options": [
+      {
+        "id": "b036-4731-05-a",
+        "text": "Plans and technical specifications"
+      },
+      {
+        "id": "b036-4731-05-b",
+        "text": "Only brand catalogues"
+      },
+      {
+        "id": "b036-4731-05-c",
+        "text": "Only post-construction photos"
+      },
+      {
+        "id": "b036-4731-05-d",
+        "text": "Only oral instructions"
+      }
+    ],
+    "correct_option_id": "b036-4731-05-a",
+    "rationale": "Correct answer: Plans and technical specifications. This is directly supported by RA 9184 IRR, Section 17.",
+    "explanation": "The source-audited correction uses only the local raw PDF family and locator-checked refined markdown for RA 9184 IRR, Section 17.",
+    "code_citation": "RA 9184 IRR, Section 17"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "question_id": "f9f75173-697b-495d-9b06-e3d5a56ec37a",
+  "baseline_hash": "sha256:8bf7ba20d3340460b3b61c56261a1fcd130554074c307adeb5c24a1008868831",
+  "action": "replace",
+  "reason": "source-audited-article-batch-072-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes stale numeric, legal, or unsupported article claims where present.",
+  "approved_by": "codex-local-first-batch-072",
+  "approved_at": "2026-05-12T01:24:18+08:00",
+  "source_audit_support": {
+    "parent_article_id": "246c66db-c0cf-4cd3-8f52-9491451e7c76",
+    "parent_article_slug": "lea-dsgn-009-04-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "BERDE refined markdown lines 119-135, 137-171, and 238-281; raw PDF pages 8, 16, 18-19, 22-24, 26, 31, 53-54, and 59 checked by local PyMuPDF extraction; DOE refined markdown lines 258-273, 321-365, and 711-795; raw PDF pages 33, 35-36, 42, and 44 checked by local PyMuPDF extraction; RA 11285 refined markdown lines 17-31, 33-39, 61-81, and 91-111; raw PDF pages 1-4 checked by local PyMuPDF extraction",
+    "checked_markdown_lines": [
+      "BERDE lines 119-135",
+      "BERDE lines 137-171",
+      "BERDE lines 238-281",
+      "DOE lines 258-273",
+      "DOE lines 321-365",
+      "DOE lines 711-795",
+      "RA 11285 lines 17-31",
+      "RA 11285 lines 33-39",
+      "RA 11285 lines 61-81",
+      "RA 11285 lines 91-111"
+    ],
+    "checked_raw_pdf_pages": [
+      "BERDE raw PDF pages 8, 16, 18-19, 22-24, 26, 31, 53-54, and 59",
+      "DOE raw PDF pages 33, 35-36, 42, and 44",
+      "RA 11285 raw PDF pages 1-4"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "berde-v5-user-guide-b072",
+        "label": "BERDE Buildings Version 5.0.0 User Guide",
+        "source_type": "green_rating_system_user_guide_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.pdf",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.md",
+        "source_locator": "BERDE refined markdown lines 119-135, 137-171, and 238-281; raw PDF pages 8, 16, 18-19, 22-24, 26, 31, 53-54, and 59 checked by local PyMuPDF extraction",
+        "raw_pdf_sha256": "sha256:59f4e0a3a485f73f93f211bc4250932a9c9d2b114b4f571b2ab8f6a58c426bb4",
+        "refined_markdown_sha256": "sha256:36537e2d7fae0f6f9eaf85589873086d118008fbb757f48f845876ab8585b5fc"
+      },
+      {
+        "source_id": "doe-energy-conserving-design-b072",
+        "label": "DOE Guidelines on Energy Conserving Design of Buildings 2008",
+        "source_type": "energy_guideline_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.md",
+        "source_locator": "DOE refined markdown lines 258-273, 321-365, and 711-795; raw PDF pages 33, 35-36, 42, and 44 checked by local PyMuPDF extraction",
+        "raw_pdf_sha256": "sha256:9a1a4019b500ffc2873625db6f04ac50b39aea7cadac9159464f9ed716e8126c",
+        "refined_markdown_sha256": "sha256:477f0990a67359eee303e8280a00be449d0aa413252161db7b5b1bafec3012b9"
+      },
+      {
+        "source_id": "ra11285-energy-efficiency-act-b072",
+        "label": "RA 11285 Energy Efficiency and Conservation Act 2019",
+        "source_type": "primary_law_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.md",
+        "source_locator": "RA 11285 refined markdown lines 17-31, 33-39, 61-81, and 91-111; raw PDF pages 1-4 checked by local PyMuPDF extraction",
+        "raw_pdf_sha256": "sha256:316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8",
+        "refined_markdown_sha256": "sha256:d2baa0e8d4ffe0059688783a4d31ac0e121517daca939f18a048fe053e76cdd4"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, and citation rewritten to the Batch 072 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "How should voluntary green certification relate to mandatory building requirements?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It sits above mandatory requirements and does not replace safety, health, environmental, or building compliance."
+      },
+      {
+        "id": "b",
+        "text": "It cancels all local code checks."
+      },
+      {
+        "id": "c",
+        "text": "It applies only to facade color."
+      },
+      {
+        "id": "d",
+        "text": "It is required for every private dwelling unit by this article."
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Correct. This option follows the checked local raw-source evidence.",
+      "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+      "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+      "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+      "correct": "BERDE assesses performance beyond existing laws and standards, while DOE energy guidance must not bypass other requirements.",
+      "takeaway": "Use the checked local source condition before applying the rule."
+    },
+    "explanation": "BERDE assesses performance beyond existing laws and standards, while DOE energy guidance must not bypass other requirements.",
+    "code_citation": "BERDE refined markdown lines 119-135, 137-171, and 238-281; raw PDF pages 8, 16, 18-19, 22-24, 26, 31, 53-54, and 59 checked by local PyMuPDF extraction; DOE refined markdown lines 258-273, 321-365, and 711-795; raw PDF pages 33, 35-36, 42, and 44 checked by local PyMuPDF extraction; RA 11285 refined markdown lines 17-31, 33-39, 61-81, and 91-111; raw PDF pages 1-4 checked by local PyMuPDF extraction",
+    "bloom_level": "understand",
+    "application_context": "professional_practice",
+    "practice_context": [
+      "source-audited-local-first-batch-072"
+    ],
+    "difficulty": 0.55,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false
+  }
+}

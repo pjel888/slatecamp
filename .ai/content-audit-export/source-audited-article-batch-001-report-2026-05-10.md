@@ -1,15 +1,15 @@
 # Source-Audited Article Batch 001 Report
 
-Date: 2026-05-10  
-Mode: local source-audited article improvement, no Supabase apply  
-Article root: `.ai/content-audit-export/articles`  
+Date: 2026-05-10
+Mode: local source-audited article improvement, no Supabase apply
+Article root: `.ai/content-audit-export/articles`
 Protocols applied: `.ai/CONTENT_EXCELLENCE_GOAL.md`; `.ai/00_system/slatecamp-learning-material-depth-protocol.md`
 
 ## Summary
 
 Processed 3 articles in this controlled batch. All 3 passed local source-audit evidence gates and article-bundle validation after one BP 344 metadata hash repair. Supabase apply was not attempted. Required dry-run pushes were executed, but all 3 dry-runs were blocked by remote fetch failure from this sandbox: `Failed to fetch current remote article: Error: Was there a typo in the url or port?`
 
-Counted as locally improved/source-audited: 3.  
+Counted as locally improved/source-audited: 3.
 Ready for Supabase apply: 0 until the dry-run push can reach the configured Supabase project and return clean remote/stale checks.
 
 No `normalized.md` content mutation was needed in this batch; the selected article text was already in improved local form. Changes made were source-audit evidence files, linked-question correction sidecars, and one local metadata hash repair for the BP 344 bundle. `linked-questions.json` and `original.md` were not edited.
@@ -96,11 +96,11 @@ The batch stopped at 3 PASS-source-audited articles rather than forcing 5 items.
 
 ## Final Gate
 
-Local source-audit gate: PASS for 3 selected articles.  
-Local article-bundle validation gate: PASS for 3 selected articles.  
-Supabase dry-run gate: BLOCKED by remote fetch failure in this environment.  
-Whitespace gate: PASS.  
-Supabase apply: NOT ATTEMPTED.  
+Local source-audit gate: PASS for 3 selected articles.
+Local article-bundle validation gate: PASS for 3 selected articles.
+Supabase dry-run gate: BLOCKED by remote fetch failure in this environment.
+Whitespace gate: PASS.
+Supabase apply: NOT ATTEMPTED.
 Commit: NOT CREATED.
 
 

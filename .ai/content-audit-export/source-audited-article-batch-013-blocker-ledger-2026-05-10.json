@@ -1,0 +1,77 @@
+{
+  "batch_id": "source-audited-article-batch-013-local-first",
+  "created_at": "2026-05-10T20:10:49+08:00",
+  "status": "resolved_zero_unresolved_blockers",
+  "rule": "Batch 013 may advance only when linked question fee claims are verified in the local authoritative or equivalent source layer, or rewritten to remove unsupported exact claims.",
+  "items": [
+    {
+      "blocker_id": "batch-013-spp-204-b-question-f9e2c759-unresolved-external-source-gap",
+      "state": "RESOLVED_SUPPORTED_LOCAL_SOURCE",
+      "article_id": "f5ed9c09-3191-4cd4-b1b0-9e6364212c36",
+      "article_slug": "spp-doc-204-b-construction-management-services",
+      "question_id": "f9e2c759-3414-428b-b3da-76522aa33e95",
+      "claim": "When a Project Manager also serves as Construction Manager, the applicable PM fee range is 2-5% of project cost.",
+      "local_source_result": "Supported by local-first source combination: current SPP 206 supports the PM/CM service relationship and percentage-basis compensation, and the 1979 UAP Documents UAP Doc. 206 Section 8.1 states that the Project Manager is compensated on a percentage basis of 2% to 5% of estimated Project Cost.",
+      "non_authoritative_corroboration": [
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Documents Reviewer.md",
+          "sha256": "sha256:6dd95802d89912881b865a4724b6ba81979e551f026c6d3a8f436948fe143dfb",
+          "locator": "lines 2962-2965",
+          "note": "Reviewer multiple-choice item lists 2%-5% for architect-as-project-manager compensation; retained as corroboration only."
+        },
+        {
+          "path": "vitruvius-connection/003_Canonical-Knowledge-Layer/shared/sources/uap-documents-q-a.md",
+          "locator": "line 2487",
+          "note": "Canonical reviewer QA derivative repeats the same item; retained as corroboration only."
+        }
+      ],
+      "authoritative_sources_checked": [
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
+          "sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
+          "locator": "SPP Document 206 lines 1311-1316, 1342-1356",
+          "result": "Supports PM/CM linkage and percentage-basis compensation; exact range supplied by 1979 UAP Documents."
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/SPP 206.md",
+          "sha256": "sha256:7a607fc72997d7d6fbfdc718fe4894c2d95a9635f58c9e08b1b6c2a0c961ed67",
+          "locator": "lines 789-793",
+          "result": "Method of Compensation section exposed only as heading/image OCR; no exact 2-5% range."
+        },
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 206.pdf",
+          "sha256": "sha256:d140c57e69f990af217f914a1dac51b6d6aae02a1b42aadd4a3f26b6cebf72b7",
+          "locator": "raw PDF",
+          "result": "Checked as local raw source; no extracted authoritative exact 2-5% locator available."
+        },
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/1979 UAP Documents.pdf",
+          "sha256": "sha256:54d42c8d39cb6c1e8622ef21a65e63cb09d90c302ca905efa95442614e5f0b5b",
+          "locator": "UAP Doc. 206, Method of Compensation, Section 8.1",
+          "result": "Raw source backing for the local UAP fee range."
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/1979 UAP Documents.md",
+          "sha256": "sha256:6ae33942ccaedc9a5541fd9f2727ec108aa66c522325c4ca1a2629caab002e38",
+          "locator": "line 1876",
+          "result": "States Project Manager compensation is 2% to 5% of estimated Project Cost."
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/1979 UAP Documents.md",
+          "sha256": "sha256:ada40ce7a1046bb6ca99a34b095250ef650a05285458e2dafd0ed4be68870b8e",
+          "locator": "line 1738",
+          "result": "Refined conversion repeats the 2% to 5% Project Manager fee range."
+        },
+        {
+          "path": "vitruvius-connection/003_Canonical-Knowledge-Layer/shared/sources/1979-uap-documents.md",
+          "sha256": "sha256:e42f91a3324bd3ac7db9584a2b98affeec884f376c4f0e86aadf9fb92694372f",
+          "locator": "line 1830",
+          "result": "Canonical source repeats the 2% to 5% Project Manager fee range."
+        }
+      ],
+      "question_edit_path": ".ai/content-audit-export/articles/spp-doc-204-b-construction-management-services--f5ed9c09-3191-4cd4-b1b0-9e6364212c36/question-edits/f9e2c759-3414-428b-b3da-76522aa33e95.json",
+      "resolution": "Question edit marked supported. Proposed learner-facing explanation now ties the PM-as-CM relationship to SPP 206 and the exact 2% to 5% fee range to the local UAP Doc. 206 fee source.",
+      "next_action": "No unresolved Batch 013 blocker remains."
+    }
+  ]
+}

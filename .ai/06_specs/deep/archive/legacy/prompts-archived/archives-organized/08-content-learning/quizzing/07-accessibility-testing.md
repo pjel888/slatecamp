@@ -323,7 +323,7 @@ Test: Complete a 5-question Camp Mode session using VoiceOver only
 Steps:
 1. Navigate to Mode Selector
    Expected: "Quiz modes. Camp Mode button. Instant feedback, full explanations..."
-   
+
 2. Activate Camp Mode
    Expected: "Session setup. Today's session. Structural Systems. 20 questions.
               Approximately 15 minutes. Begin Session button."

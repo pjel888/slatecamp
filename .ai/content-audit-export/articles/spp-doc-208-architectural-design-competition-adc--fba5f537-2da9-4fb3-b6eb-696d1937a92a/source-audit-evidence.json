@@ -1,0 +1,87 @@
+{
+  "artifact_type": "source_audit_evidence",
+  "batch_id": "source-audited-article-batch-013-local-first",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T22:25:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "status": "local_pass_ready_for_final_publishing_review",
+  "target": {
+    "article_id": "fba5f537-2da9-4fb3-b6eb-696d1937a92a",
+    "slug": "spp-doc-208-architectural-design-competition-adc",
+    "title": "SPP Doc 208: Architectural Design Competition (ADC)",
+    "folder": ".ai/content-audit-export/articles/spp-doc-208-architectural-design-competition-adc--fba5f537-2da9-4fb3-b6eb-696d1937a92a",
+    "normalized_path": ".ai/content-audit-export/articles/spp-doc-208-architectural-design-competition-adc--fba5f537-2da9-4fb3-b6eb-696d1937a92a/normalized.md",
+    "candidate_path": ".ai/content-audit-export/articles/spp-doc-208-architectural-design-competition-adc--fba5f537-2da9-4fb3-b6eb-696d1937a92a/candidate.md",
+    "sources_path": ".ai/content-audit-export/articles/spp-doc-208-architectural-design-competition-adc--fba5f537-2da9-4fb3-b6eb-696d1937a92a/sources.json",
+    "question_edits_folder": ".ai/content-audit-export/articles/spp-doc-208-architectural-design-competition-adc--fba5f537-2da9-4fb3-b6eb-696d1937a92a/question-edits",
+    "original_hash": "sha256:176e98f131205f9ca593bd012a0959009e352ae3eaec63674a82e455e1e5a14d",
+    "normalized_hash": "sha256:3e70597e45ea59c65c8e99eae852694bfb7546611ef10dce2d10f79039a6e5f4",
+    "candidate_hash": "sha256:3e70597e45ea59c65c8e99eae852694bfb7546611ef10dce2d10f79039a6e5f4",
+    "sources_hash": "sha256:f331123bc8709b233bef6afafc5e87bacc83951ab555e855f6479e7594775e2e",
+    "linked_questions_hash": "sha256:34375b261633b1c30741a83262f437ba6e9f3221dfe2ebf5b1407008a6d13ad4",
+    "question_edit_count": 10
+  },
+  "raw_sources": [
+    {
+      "source_id": "uap-standards-of-professional-practice-2",
+      "label": "UAP Standards of Professional Practice",
+      "authority": "United Architects of the Philippines / PRBoA SPP reference copy",
+      "source_type": "professional_practice_pdf",
+      "source_locator": "SPP Document 208 architectural design competition",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+      "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
+      "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
+      "checked_markdown_lines": [
+        "UAP SPP raw markdown lines 1439-1577"
+      ],
+      "use": "primary source for article and linked-question support",
+      "local_source_checked": true
+    }
+  ],
+  "local_edits": {
+    "normalized_repaired": true,
+    "candidate_composed": true,
+    "ui_blocks_removed_from_repaired_markdown": true,
+    "sources_json_updated": true,
+    "question_edits_created": 10,
+    "answer_key_fields_changed": false,
+    "partial_source_support_question_edits": 0
+  },
+  "validation": {
+    "compose": {
+      "safe_to_diff": true,
+      "blockers": [],
+      "placeholders_found": 0,
+      "unresolved_placeholders": []
+    },
+    "diff": {
+      "changed": true,
+      "safe_to_push": true,
+      "locally_safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+      ]
+    },
+    "bundle_validate_dry_run": {
+      "valid": true,
+      "blockers": [],
+      "warnings": [
+        "component-usage.json has not been generated for this article yet."
+      ]
+    }
+  },
+  "question_edit_files": [
+    ".ai/content-audit-export/articles/spp-doc-208-architectural-design-competition-adc--fba5f537-2da9-4fb3-b6eb-696d1937a92a/question-edits/24725c7b-3d65-40b2-a88c-c3dd878f72db.json",
+    ".ai/content-audit-export/articles/spp-doc-208-architectural-design-competition-adc--fba5f537-2da9-4fb3-b6eb-696d1937a92a/question-edits/46820419-4a6a-447c-bbfd-c62bfe9abd52.json",
+    ".ai/content-audit-export/articles/spp-doc-208-architectural-design-competition-adc--fba5f537-2da9-4fb3-b6eb-696d1937a92a/question-edits/549a1ed7-3bc8-4a0d-b90e-9b61ed582988.json",
+    ".ai/content-audit-export/articles/spp-doc-208-architectural-design-competition-adc--fba5f537-2da9-4fb3-b6eb-696d1937a92a/question-edits/5d9ffbc5-b098-42f9-b5fe-5e5cd7fc8706.json",
+    ".ai/content-audit-export/articles/spp-doc-208-architectural-design-competition-adc--fba5f537-2da9-4fb3-b6eb-696d1937a92a/question-edits/761d3861-42e5-4303-b4f8-2ac6120d15fa.json",
+    ".ai/content-audit-export/articles/spp-doc-208-architectural-design-competition-adc--fba5f537-2da9-4fb3-b6eb-696d1937a92a/question-edits/a4f2ad0c-dc83-4a77-9e5a-b0116886926e.json",
+    ".ai/content-audit-export/articles/spp-doc-208-architectural-design-competition-adc--fba5f537-2da9-4fb3-b6eb-696d1937a92a/question-edits/ad9eace6-7ffb-452b-9032-fa766bd199f6.json",
+    ".ai/content-audit-export/articles/spp-doc-208-architectural-design-competition-adc--fba5f537-2da9-4fb3-b6eb-696d1937a92a/question-edits/c5f79e71-7635-4383-82b9-4e83fa3ac71a.json",
+    ".ai/content-audit-export/articles/spp-doc-208-architectural-design-competition-adc--fba5f537-2da9-4fb3-b6eb-696d1937a92a/question-edits/e71af07d-73bf-4fca-84b6-01b7836e7c82.json",
+    ".ai/content-audit-export/articles/spp-doc-208-architectural-design-competition-adc--fba5f537-2da9-4fb3-b6eb-696d1937a92a/question-edits/ee1ce132-b846-4153-9929-297d3aa3bc66.json"
+  ]
+}

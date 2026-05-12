@@ -77,7 +77,7 @@ readiness_score_snapshots → periodic readiness score records
 ```
 Cobalt Blue:     #1B3FC4   (primary actions)
 Signal Green:    #1B7A3C   (correct, mastered ≥70%)
-Camp Orange:     #E8853A   (developing 40-69%)  
+Camp Orange:     #E8853A   (developing 40-69%)
 Signal Red:      #E63329   (incorrect, at-risk <40%)
 Cream:           #F2F0EB   (alt backgrounds)
 Cool Surface:    #F5F7FA   (quiz-taking background — reduces cognitive load)
@@ -163,7 +163,7 @@ Query `quiz_sessions` grouped by `test_mode` per user to populate these.
 - Flagged questions get a small indicator in the progress bar, and a dedicated review section in the debrief.
 
 **Principle 5: Navigation Clarity**
-- "Previous" and "Next" buttons always in the same position (bottom of screen, fixed). 
+- "Previous" and "Next" buttons always in the same position (bottom of screen, fixed).
 - "Previous" = ghost button (secondary). "Next" = Cobalt filled (primary).
 - On the last question: "Next" changes to "Submit" with a confirmation step in Storm Mode ("You answered 40 of 40. 3 flagged for review. Submit?").
 - A question grid/navigator (small numbered squares) should be accessible via a "Question Map" button — shows which are answered, flagged, and skipped. Critical for Storm Mode where students need to manage their time across all items.
@@ -277,7 +277,7 @@ CREATE TABLE IF NOT EXISTS user_mastery_history (
 );
 
 -- Index for fast user+topic timeline queries
-CREATE INDEX idx_mastery_history_user_topic 
+CREATE INDEX idx_mastery_history_user_topic
   ON user_mastery_history(user_id, topic_id, created_at DESC);
 
 -- RLS
@@ -289,7 +289,7 @@ CREATE POLICY "Users can view own mastery history" ON user_mastery_history FOR S
 
 ```sql
 -- Check first:
-SELECT column_name FROM information_schema.columns 
+SELECT column_name FROM information_schema.columns
 WHERE table_name = 'user_node_mastery' AND column_name = 'updated_at';
 
 -- If missing:
@@ -309,8 +309,8 @@ RETURNS TRIGGER AS $$
 BEGIN
   IF NEW.status = 'completed' AND OLD.status != 'completed' THEN
     INSERT INTO readiness_score_snapshots (user_id, score, snapshot_type, session_id)
-    SELECT 
-      NEW.user_id, 
+    SELECT
+      NEW.user_id,
       ugs.global_readiness_score,
       'session_complete',
       NEW.session_id
@@ -344,9 +344,9 @@ CREATE TABLE IF NOT EXISTS analytics_events (
 );
 
 -- Index for querying by event name and time
-CREATE INDEX idx_analytics_events_name_time 
+CREATE INDEX idx_analytics_events_name_time
   ON analytics_events(event_name, created_at DESC);
-CREATE INDEX idx_analytics_events_user 
+CREATE INDEX idx_analytics_events_user
   ON analytics_events(user_id, created_at DESC);
 
 -- RLS (admins can read all, users can read own)
@@ -384,13 +384,13 @@ Read every file found. Map the complete component tree for the testing feature.
 ```sql
 -- Get exact column names for all quiz-related tables
 SELECT table_name, column_name, data_type, is_nullable, column_default
-FROM information_schema.columns 
+FROM information_schema.columns
 WHERE table_name IN ('quiz_sessions', 'user_interactions', 'questions', 'taxonomy_tree', 'user_node_mastery', 'user_global_stats', 'readiness_score_snapshots', 'profiles')
 ORDER BY table_name, ordinal_position;
 
 -- Check existing RLS policies
-SELECT schemaname, tablename, policyname, permissive, roles, cmd, qual 
-FROM pg_policies 
+SELECT schemaname, tablename, policyname, permissive, roles, cmd, qual
+FROM pg_policies
 WHERE tablename IN ('quiz_sessions', 'user_interactions', 'user_node_mastery', 'profiles');
 
 -- Check what test_modes exist
@@ -409,8 +409,8 @@ SELECT column_name, data_type FROM information_schema.columns WHERE table_name =
 SELECT * FROM user_interactions LIMIT 3;
 
 -- Check existing triggers
-SELECT trigger_name, event_manipulation, event_object_table, action_statement 
-FROM information_schema.triggers 
+SELECT trigger_name, event_manipulation, event_object_table, action_statement
+FROM information_schema.triggers
 WHERE trigger_schema = 'public';
 ```
 

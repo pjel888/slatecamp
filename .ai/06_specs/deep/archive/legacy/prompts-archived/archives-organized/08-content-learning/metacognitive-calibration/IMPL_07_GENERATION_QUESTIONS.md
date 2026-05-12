@@ -1,7 +1,7 @@
 # IMPL_07: Generation Effect Questions
 
-**Priority:** P2  
-**Effort:** ~1 week  
+**Priority:** P2
+**Effort:** ~1 week
 **Research basis:** Generation effect d = 0.40+. Producing answers creates stronger memory traces than recognizing them.
 
 ---

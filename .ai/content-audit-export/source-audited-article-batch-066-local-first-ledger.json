@@ -1,0 +1,245 @@
+{
+  "batch_id": "source-audited-article-batch-066-local-first",
+  "batch_number": 66,
+  "generated_at": "2026-05-11T23:24:33+08:00",
+  "mode": "local-first",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_BATCH_067_SELECTION",
+  "selection_rule": "five unpassed LEA legal/code/accessibility/design clusters with linked questions and checked local raw PDF/source families, excluding article IDs recorded in source-audited Batch 001 through Batch 065 artifacts.",
+  "inherited_blocker_status": "Batch 065 blockers=0 and final scoped git diff --check passed.",
+  "completed_articles": [
+    {
+      "article_id": "02b9f8da-3c2e-460a-bd2b-0c5d68249b1b",
+      "slug": "legal-liability-and-enforcement-workflow",
+      "title": "Legal Liability and Enforcement Workflow",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/legal-liability-and-enforcement-workflow--02b9f8da-3c2e-460a-bd2b-0c5d68249b1b",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/legal-liability-and-enforcement-workflow--02b9f8da-3c2e-460a-bd2b-0c5d68249b1b/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/legal-liability-and-enforcement-workflow--02b9f8da-3c2e-460a-bd2b-0c5d68249b1b/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/legal-liability-and-enforcement-workflow--02b9f8da-3c2e-460a-bd2b-0c5d68249b1b/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/legal-liability-and-enforcement-workflow--02b9f8da-3c2e-460a-bd2b-0c5d68249b1b/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/legal-liability-and-enforcement-workflow--02b9f8da-3c2e-460a-bd2b-0c5d68249b1b/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/legal-liability-and-enforcement-workflow--02b9f8da-3c2e-460a-bd2b-0c5d68249b1b/ui-blocks.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/legal-liability-and-enforcement-workflow--02b9f8da-3c2e-460a-bd2b-0c5d68249b1b/ui-block-edits.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/legal-liability-and-enforcement-workflow--02b9f8da-3c2e-460a-bd2b-0c5d68249b1b/parser-errors.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/legal-liability-and-enforcement-workflow--02b9f8da-3c2e-460a-bd2b-0c5d68249b1b/compose-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/legal-liability-and-enforcement-workflow--02b9f8da-3c2e-460a-bd2b-0c5d68249b1b/diff-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/legal-liability-and-enforcement-workflow--02b9f8da-3c2e-460a-bd2b-0c5d68249b1b/diff-report.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/legal-liability-and-enforcement-workflow--02b9f8da-3c2e-460a-bd2b-0c5d68249b1b/ui-block-edit-validation.json"
+      ],
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/legal-liability-and-enforcement-workflow--02b9f8da-3c2e-460a-bd2b-0c5d68249b1b/question-edits",
+      "linked_question_count": 11,
+      "question_edit_count": 11,
+      "original_hash": "sha256:536675d712a4c4cc12fb905f8f49e51681200e0911a1177452f93ad1f36683fd",
+      "candidate_hash": "sha256:13f106064810656dd46f5590a3c2a57c2b4d5aa0f432c84526dca16a3fd4ac68",
+      "sources_hash": "sha256:2f695ab2dfd1568852b5cad203677759d6cf8613953565b523f81acc3e268c02",
+      "scenario_enrichment_status": "eligible-deferred"
+    },
+    {
+      "article_id": "9eb0b48e-110e-4c75-8a0c-4f83063001cf",
+      "slug": "lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty",
+      "title": "Universal Design in Practice BP 344 RA 7277",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty--9eb0b48e-110e-4c75-8a0c-4f83063001cf",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty--9eb0b48e-110e-4c75-8a0c-4f83063001cf/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty--9eb0b48e-110e-4c75-8a0c-4f83063001cf/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty--9eb0b48e-110e-4c75-8a0c-4f83063001cf/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty--9eb0b48e-110e-4c75-8a0c-4f83063001cf/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty--9eb0b48e-110e-4c75-8a0c-4f83063001cf/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty--9eb0b48e-110e-4c75-8a0c-4f83063001cf/ui-blocks.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty--9eb0b48e-110e-4c75-8a0c-4f83063001cf/ui-block-edits.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty--9eb0b48e-110e-4c75-8a0c-4f83063001cf/parser-errors.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty--9eb0b48e-110e-4c75-8a0c-4f83063001cf/compose-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty--9eb0b48e-110e-4c75-8a0c-4f83063001cf/diff-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty--9eb0b48e-110e-4c75-8a0c-4f83063001cf/diff-report.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty--9eb0b48e-110e-4c75-8a0c-4f83063001cf/ui-block-edit-validation.json"
+      ],
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty--9eb0b48e-110e-4c75-8a0c-4f83063001cf/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "original_hash": "sha256:79782414b64c130c6ace60c428c9235ae677f09abdb9373907a22fe45195d931",
+      "candidate_hash": "sha256:22ee950e16f71e6c150a597f72b1080383c8f9bbbf7789375ecb58b9838e92f0",
+      "sources_hash": "sha256:2f695ab2dfd1568852b5cad203677759d6cf8613953565b523f81acc3e268c02",
+      "scenario_enrichment_status": "eligible-deferred"
+    },
+    {
+      "article_id": "6c4f539a-c589-4f53-bbfe-d4396641a3e6",
+      "slug": "lea-dsgn-011-01-core-concept",
+      "title": "Floor Plans",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-011-01-core-concept--6c4f539a-c589-4f53-bbfe-d4396641a3e6",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-011-01-core-concept--6c4f539a-c589-4f53-bbfe-d4396641a3e6/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-011-01-core-concept--6c4f539a-c589-4f53-bbfe-d4396641a3e6/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-011-01-core-concept--6c4f539a-c589-4f53-bbfe-d4396641a3e6/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-011-01-core-concept--6c4f539a-c589-4f53-bbfe-d4396641a3e6/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-011-01-core-concept--6c4f539a-c589-4f53-bbfe-d4396641a3e6/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-011-01-core-concept--6c4f539a-c589-4f53-bbfe-d4396641a3e6/ui-blocks.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-011-01-core-concept--6c4f539a-c589-4f53-bbfe-d4396641a3e6/ui-block-edits.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-011-01-core-concept--6c4f539a-c589-4f53-bbfe-d4396641a3e6/parser-errors.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-011-01-core-concept--6c4f539a-c589-4f53-bbfe-d4396641a3e6/compose-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-011-01-core-concept--6c4f539a-c589-4f53-bbfe-d4396641a3e6/diff-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-011-01-core-concept--6c4f539a-c589-4f53-bbfe-d4396641a3e6/diff-report.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-011-01-core-concept--6c4f539a-c589-4f53-bbfe-d4396641a3e6/ui-block-edit-validation.json"
+      ],
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-011-01-core-concept--6c4f539a-c589-4f53-bbfe-d4396641a3e6/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "original_hash": "sha256:37cc1d98b17d63b56d78f824d8f6930e43ad4e0b466764a192ebaffb64d9908e",
+      "candidate_hash": "sha256:0260c5d83c0582509ac04bc1976305984cce39a8752c0577e514294a60d523e7",
+      "sources_hash": "sha256:2f695ab2dfd1568852b5cad203677759d6cf8613953565b523f81acc3e268c02",
+      "scenario_enrichment_status": "eligible-deferred"
+    },
+    {
+      "article_id": "17acdb19-55dc-4136-862d-62825aa8fb4b",
+      "slug": "lea-dsgn-007-06-core-concept",
+      "title": "Circulation",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-06-core-concept--17acdb19-55dc-4136-862d-62825aa8fb4b",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-06-core-concept--17acdb19-55dc-4136-862d-62825aa8fb4b/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-06-core-concept--17acdb19-55dc-4136-862d-62825aa8fb4b/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-06-core-concept--17acdb19-55dc-4136-862d-62825aa8fb4b/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-06-core-concept--17acdb19-55dc-4136-862d-62825aa8fb4b/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-06-core-concept--17acdb19-55dc-4136-862d-62825aa8fb4b/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-06-core-concept--17acdb19-55dc-4136-862d-62825aa8fb4b/ui-blocks.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-06-core-concept--17acdb19-55dc-4136-862d-62825aa8fb4b/ui-block-edits.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-06-core-concept--17acdb19-55dc-4136-862d-62825aa8fb4b/parser-errors.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-06-core-concept--17acdb19-55dc-4136-862d-62825aa8fb4b/compose-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-06-core-concept--17acdb19-55dc-4136-862d-62825aa8fb4b/diff-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-06-core-concept--17acdb19-55dc-4136-862d-62825aa8fb4b/diff-report.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-06-core-concept--17acdb19-55dc-4136-862d-62825aa8fb4b/ui-block-edit-validation.json"
+      ],
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-06-core-concept--17acdb19-55dc-4136-862d-62825aa8fb4b/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "original_hash": "sha256:8204098a9af7eb0243cbaad799601f5cdb5af3773d394e14def0e363bd99e871",
+      "candidate_hash": "sha256:feb467d440212dc6911413a641cb00db6e2067d338d6307be4f71e64f134d771",
+      "sources_hash": "sha256:2f695ab2dfd1568852b5cad203677759d6cf8613953565b523f81acc3e268c02",
+      "scenario_enrichment_status": "eligible-deferred"
+    },
+    {
+      "article_id": "81a065b0-77f6-4f96-98cd-a3239c6beae4",
+      "slug": "lea-dsgn-007-10-core-concept",
+      "title": "Stair Design",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-10-core-concept--81a065b0-77f6-4f96-98cd-a3239c6beae4",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-10-core-concept--81a065b0-77f6-4f96-98cd-a3239c6beae4/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-10-core-concept--81a065b0-77f6-4f96-98cd-a3239c6beae4/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-10-core-concept--81a065b0-77f6-4f96-98cd-a3239c6beae4/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-10-core-concept--81a065b0-77f6-4f96-98cd-a3239c6beae4/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-10-core-concept--81a065b0-77f6-4f96-98cd-a3239c6beae4/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-10-core-concept--81a065b0-77f6-4f96-98cd-a3239c6beae4/ui-blocks.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-10-core-concept--81a065b0-77f6-4f96-98cd-a3239c6beae4/ui-block-edits.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-10-core-concept--81a065b0-77f6-4f96-98cd-a3239c6beae4/parser-errors.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-10-core-concept--81a065b0-77f6-4f96-98cd-a3239c6beae4/compose-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-10-core-concept--81a065b0-77f6-4f96-98cd-a3239c6beae4/diff-report.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-10-core-concept--81a065b0-77f6-4f96-98cd-a3239c6beae4/diff-report.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-10-core-concept--81a065b0-77f6-4f96-98cd-a3239c6beae4/ui-block-edit-validation.json"
+      ],
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-dsgn-007-10-core-concept--81a065b0-77f6-4f96-98cd-a3239c6beae4/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "original_hash": "sha256:f787ead195d73b989c1a7ff76cc8185b158bf4cebeb1e7ca67dc51d87c655394",
+      "candidate_hash": "sha256:5cfd4f7e0294a634c61f64070579ea27a5e3058d35075e24fa0c543ad7f8a1bc",
+      "sources_hash": "sha256:2f695ab2dfd1568852b5cad203677759d6cf8613953565b523f81acc3e268c02",
+      "scenario_enrichment_status": "eligible-deferred"
+    }
+  ],
+  "counts": {
+    "article_count": 5,
+    "linked_question_count": 51,
+    "question_edit_count": 51,
+    "source_family_count": 4,
+    "unresolved_blocker_count": 0
+  },
+  "source_evidence": [
+    {
+      "label": "BP 344 2024 Revised IRR",
+      "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "checked_raw_pages": "2, 7, 10, 16, 56, 65-67, 70, 74",
+      "checked_locators": "refined lines 40-70; 198-230; 230-304; 338-350; 450-465; 1349-1350; 1560-1604; 1645-1651; 1661; 1749; 1827"
+    },
+    {
+      "label": "PD 1096 RIRR 2004",
+      "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "checked_raw_pages": "23-28, 193-195",
+      "checked_locators": "refined lines 560-592; 625-631; 3488-3567"
+    },
+    {
+      "label": "RA 9514 Revised IRR 2019",
+      "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+      "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+      "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+      "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+      "checked_raw_pages": "102, 142-143, 149",
+      "checked_locators": "refined lines 2601-2658; 4275-4321; 4381-4394"
+    },
+    {
+      "label": "PD 9514 Fire Code source family",
+      "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf",
+      "raw_pdf_sha256": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+      "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-9514/PD 9514 - Fire Code of the Philippines.md",
+      "refined_markdown_sha256": "sha256:5eb0584f1bcbfa87044e28f2e59a75c6364c7160a98edfdd888c6aef849b01b2",
+      "checked_raw_pages": "57-63",
+      "checked_locators": "refined lines 1599-1629; 1655-1719"
+    }
+  ],
+  "quality_protocol_results": {
+    "compose": {
+      "command": "bun run content-audit:compose -- --article-id <id> --overwrite --strict",
+      "article_count": 5,
+      "blockers": 0
+    },
+    "diff": {
+      "command": "bun run content-audit:diff -- --article-id <id> --summary --strict",
+      "article_count": 5,
+      "safe_to_push": true,
+      "blockers": 0
+    },
+    "validate": {
+      "command": "bun run content-audit:validate -- --article-id <id> --summary",
+      "article_count": 5,
+      "valid": true,
+      "blockers": 0,
+      "warnings": "component-usage.json missing warnings only"
+    },
+    "ui_block_edits": {
+      "command": "bun run content-audit:ui-block-edits -- --article-id <id> --summary",
+      "article_count": 5,
+      "valid": true,
+      "blockers": 0,
+      "warnings": 0
+    },
+    "scoped_checks": {
+      "path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-066-local-first-scoped-checks.json",
+      "pass": true,
+      "blockers": []
+    },
+    "targeted_tests": {
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "pass_count": 34,
+      "fail_count": 0,
+      "expect_call_count": 328
+    },
+    "git_diff_check": {
+      "command": "git diff --check -- .ai/03_plans/source-audited-local-first-batches-handoff.md .ai/content-audit-export/sync-state.json .ai/content-audit-export/source-audited-article-batch-066-local-first-report.md .ai/content-audit-export/source-audited-article-batch-066-local-first-ledger.json .ai/content-audit-export/source-audited-article-batch-066-local-first-scoped-checks.json <five Batch 066 article folders>",
+      "status": "PASS",
+      "checked_at": "2026-05-11T23:24:33+08:00",
+      "blockers": 0
+    }
+  },
+  "unresolved_blockers": [],
+  "next_batch_readiness": {
+    "status": "ready",
+    "next_batch_number": 67,
+    "note": "Batch 066 blockers=0, targeted tests passed, and final scoped git diff --check passed locally."
+  },
+  "supabase_push_attempted": false,
+  "deploy_attempted": false,
+  "commit_attempted": false
+}

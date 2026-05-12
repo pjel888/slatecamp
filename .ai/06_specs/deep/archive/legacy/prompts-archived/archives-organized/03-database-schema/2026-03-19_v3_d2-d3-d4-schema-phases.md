@@ -1,7 +1,7 @@
 # SlateCamp — Application Code Tasks: D2, D3, D4
-**For:** Claude Code  
-**Date:** 2026-03-19  
-**Classification:** Sprint 1 blockers (D2, D4) + June 2026 hard deadline (D3)  
+**For:** Claude Code
+**Date:** 2026-03-19
+**Classification:** Sprint 1 blockers (D2, D4) + June 2026 hard deadline (D3)
 **Context:** Schema is complete. These are application-layer implementations only.
 
 ---
@@ -174,8 +174,8 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
 Find the exact file for each touchpoint and add the call. **Do not guess the file paths — use the codebase map from Phase 1.**
 
 #### Event 1: `signup_completed`
-**Where:** Auth callback handler or the Server Action that handles account creation  
-**When:** Immediately after `supabase.auth.signUp()` succeeds  
+**Where:** Auth callback handler or the Server Action that handles account creation
+**When:** Immediately after `supabase.auth.signUp()` succeeds
 **What to pass:**
 ```typescript
 await trackServerEvent({
@@ -189,8 +189,8 @@ await trackServerEvent({
 ```
 
 #### Event 2: `assessment_started`
-**Where:** Server Action that creates the assessment quiz session  
-**When:** After `quiz_sessions` INSERT succeeds for an assessment session  
+**Where:** Server Action that creates the assessment quiz session
+**When:** After `quiz_sessions` INSERT succeeds for an assessment session
 **What to pass:**
 ```typescript
 await trackServerEvent({
@@ -207,8 +207,8 @@ await supabase.from('user_global_stats')
 ```
 
 #### Event 3: `assessment_completed`
-**Where:** Server Action that handles final question submission for assessment sessions  
-**When:** After session status is updated to 'completed' AND `assessment_completed_at` is written  
+**Where:** Server Action that handles final question submission for assessment sessions
+**When:** After session status is updated to 'completed' AND `assessment_completed_at` is written
 **What to pass:**
 ```typescript
 await trackServerEvent({
@@ -224,8 +224,8 @@ await trackServerEvent({
 ```
 
 #### Event 4: `score_reveal_viewed`
-**Where:** The Score Reveal page RSC (Server Component) — fire on render, not on click  
-**When:** Page renders AND `score_reveal_shown_at` is being set for the first time  
+**Where:** The Score Reveal page RSC (Server Component) — fire on render, not on click
+**When:** Page renders AND `score_reveal_shown_at` is being set for the first time
 **What to pass:**
 ```typescript
 // In the RSC page.tsx, after marking score as revealed:
@@ -242,8 +242,8 @@ await trackServerEvent({
 ```
 
 #### Event 5: `trail_enrolled`
-**Where:** Server Action that handles trail enrollment  
-**When:** After `user_trail_enrollments` INSERT succeeds  
+**Where:** Server Action that handles trail enrollment
+**When:** After `user_trail_enrollments` INSERT succeeds
 **What to pass:**
 ```typescript
 await trackServerEvent({
@@ -261,8 +261,8 @@ await trackServerEvent({
 ```
 
 #### Event 6: `upgrade_page_viewed`
-**Where:** Paywall page RSC — fire on render  
-**When:** Page renders  
+**Where:** Paywall page RSC — fire on render
+**When:** Page renders
 **What to pass:**
 ```typescript
 await trackServerEvent({
@@ -279,8 +279,8 @@ await trackServerEvent({
 ```
 
 #### Event 7: `pro_subscribed`
-**Where:** Payment success webhook handler or the Server Action that activates Pro after payment  
-**When:** After `user_subscriptions.tier` is updated to 'pro'  
+**Where:** Payment success webhook handler or the Server Action that activates Pro after payment
+**When:** After `user_subscriptions.tier` is updated to 'pro'
 **What to pass:**
 ```typescript
 await trackServerEvent({
@@ -729,5 +729,5 @@ grep -rn "trackServerEvent\|trackEvent" src/ --include="*.ts" --include="*.tsx" 
 
 ---
 
-*SlateCamp Application Implementation Guide — D2, D3, D4*  
+*SlateCamp Application Implementation Guide — D2, D3, D4*
 *Internal · Sprint 1 Blockers + June 2026 Pipeline*

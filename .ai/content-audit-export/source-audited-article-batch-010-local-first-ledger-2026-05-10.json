@@ -1,0 +1,415 @@
+{
+  "batch_id": "source-audited-article-batch-010",
+  "audit_date": "2026-05-10",
+  "completed_at": "2026-05-10T18:58:30.000+08:00",
+  "mode": "LOCAL_FIRST_NO_SUPABASE_NO_DEPLOY_NO_COMMIT",
+  "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+  "selection_policy": {
+    "selected_count": 5,
+    "avoided_prior_batches": [
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "009"
+    ],
+    "prior_batch_reports_or_ledgers_checked": [
+      ".ai/content-audit-export/source-audited-article-batch-001-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-002-report-2026-05-10.md",
+      ".ai/content-audit-export/source-audited-article-batch-003-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-004-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-005-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-006-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-007-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-008-local-first-ledger-2026-05-10.json",
+      ".ai/content-audit-export/source-audited-article-batch-009-local-first-ledger-2026-05-10.json"
+    ],
+    "prior_uuid_count": 102,
+    "selected_article_ids_seen_in_prior_batches": [],
+    "selection_basis": "High-value LEA legal/code/professional-practice PD 1096 clusters with linked questions and available raw PDF under vitruvius-connection/001_Raw-Source-Layer."
+  },
+  "counts": {
+    "selected_articles": 5,
+    "passed_articles": 5,
+    "parked_articles": 0,
+    "linked_questions_observed": 188,
+    "question_edit_files_created": 188,
+    "raw_pdf_sources_verified": 1,
+    "sources_records_created": 5,
+    "metadata_original_hash_reconciliations": 3,
+    "supabase_mutations": 0,
+    "deployments": 0,
+    "commits": 0
+  },
+  "raw_sources": [
+    {
+      "key": "pd1096_2004_revised_irr",
+      "label": "PD 1096 2004 Revised IRR, DPWH Official Publication",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+      "used_by_article_ids": [
+        "bd009a97-21fe-400e-8717-615d5a877cfd",
+        "3a28da11-0053-4b2f-85a8-f675a3d10a43",
+        "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+        "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d"
+      ]
+    }
+  ],
+  "improved_article_folder_paths": [
+    {
+      "article_id": "bd009a97-21fe-400e-8717-615d5a877cfd",
+      "article_folder": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd"
+    },
+    {
+      "article_id": "3a28da11-0053-4b2f-85a8-f675a3d10a43",
+      "article_folder": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43"
+    },
+    {
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "article_folder": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f"
+    },
+    {
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "article_folder": ".ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa"
+    },
+    {
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "article_folder": ".ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d"
+    }
+  ],
+  "question_edits_folder_paths": [
+    {
+      "article_id": "bd009a97-21fe-400e-8717-615d5a877cfd",
+      "question_edits_folder": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits",
+      "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits"
+    },
+    {
+      "article_id": "3a28da11-0053-4b2f-85a8-f675a3d10a43",
+      "question_edits_folder": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits",
+      "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits"
+    },
+    {
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "question_edits_folder": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits",
+      "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits"
+    },
+    {
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "question_edits_folder": ".ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits",
+      "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits"
+    },
+    {
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "question_edits_folder": ".ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits",
+      "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits"
+    }
+  ],
+  "articles": [
+    {
+      "article_id": "bd009a97-21fe-400e-8717-615d5a877cfd",
+      "title": "Excavation Foundation and Veneer",
+      "slug": "excavation-foundation-and-veneer",
+      "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+      "article_folder": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd",
+      "normalized_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/sources.json",
+      "evidence_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/source-audit-evidence.json",
+      "question_edits_folder": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits",
+      "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits",
+      "source_count": 1,
+      "linked_questions": 39,
+      "question_edit_files": 39,
+      "compose": {
+        "blockers": 0,
+        "warnings": 0,
+        "candidate_hash": "sha256:0ad890408fc293f778250eec958fdf761de1663d2b9a4aa5d5b6c281be78eb09"
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": 0,
+        "warnings": 1,
+        "candidate_hash": "sha256:0ad890408fc293f778250eec958fdf761de1663d2b9a4aa5d5b6c281be78eb09",
+        "summary": "Locally safe after recomposition; remote stale check still required before push."
+      },
+      "validate": {
+        "valid": true,
+        "blockers": 0,
+        "warnings": 1,
+        "warning_summary": "component-usage.json has not been generated for this article yet; non-blocking in dry-run validation."
+      },
+      "evidence_claims": 40,
+      "raw_source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "markdown_lines_checked": [
+        "3857-3897",
+        "3900-3911"
+      ],
+      "candidate_sha256": "sha256:0ad890408fc293f778250eec958fdf761de1663d2b9a4aa5d5b6c281be78eb09"
+    },
+    {
+      "article_id": "3a28da11-0053-4b2f-85a8-f675a3d10a43",
+      "title": "Glass and Glazing Area Limits",
+      "slug": "glass-and-glazing-area-limits",
+      "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+      "article_folder": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43",
+      "normalized_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/sources.json",
+      "evidence_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/source-audit-evidence.json",
+      "question_edits_folder": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits",
+      "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits",
+      "source_count": 1,
+      "linked_questions": 39,
+      "question_edit_files": 39,
+      "compose": {
+        "blockers": 0,
+        "warnings": 0,
+        "candidate_hash": "sha256:b92f34c2bc6c483756fcbfa92ca6fdafefdfdfbc7a99ff7345ca2da104357733"
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": 0,
+        "warnings": 1,
+        "candidate_hash": "sha256:b92f34c2bc6c483756fcbfa92ca6fdafefdfdfbc7a99ff7345ca2da104357733",
+        "summary": "Locally safe after recomposition; remote stale check still required before push."
+      },
+      "validate": {
+        "valid": true,
+        "blockers": 0,
+        "warnings": 1,
+        "warning_summary": "component-usage.json has not been generated for this article yet; non-blocking in dry-run validation."
+      },
+      "evidence_claims": 40,
+      "raw_source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
+      "markdown_lines_checked": [
+        "5110-5151"
+      ],
+      "candidate_sha256": "sha256:b92f34c2bc6c483756fcbfa92ca6fdafefdfdfbc7a99ff7345ca2da104357733"
+    },
+    {
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "title": "Ceiling Heights and Room Sizes",
+      "slug": "ceiling-heights-and-room-sizes",
+      "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+      "article_folder": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "normalized_path": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/sources.json",
+      "evidence_path": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/source-audit-evidence.json",
+      "question_edits_folder": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits",
+      "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits",
+      "source_count": 1,
+      "linked_questions": 37,
+      "question_edit_files": 37,
+      "compose": {
+        "blockers": 0,
+        "warnings": 0,
+        "candidate_hash": "sha256:2ca8b333b10abaedd0438eff65cadec07e5927ce49b3fd0e889abbd6fc2cead7"
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": 0,
+        "warnings": 1,
+        "candidate_hash": "sha256:2ca8b333b10abaedd0438eff65cadec07e5927ce49b3fd0e889abbd6fc2cead7",
+        "summary": "Locally safe after recomposition; remote stale check still required before push."
+      },
+      "validate": {
+        "valid": true,
+        "blockers": 0,
+        "warnings": 1,
+        "warning_summary": "component-usage.json has not been generated for this article yet; non-blocking in dry-run validation."
+      },
+      "evidence_claims": 38,
+      "raw_source_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+      "markdown_lines_checked": [
+        "2659-2693"
+      ],
+      "candidate_sha256": "sha256:2ca8b333b10abaedd0438eff65cadec07e5927ce49b3fd0e889abbd6fc2cead7"
+    },
+    {
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "title": "Signs Design and Construction",
+      "slug": "signs-design-and-construction",
+      "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+      "article_folder": ".ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "normalized_path": ".ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/sources.json",
+      "evidence_path": ".ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/source-audit-evidence.json",
+      "question_edits_folder": ".ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits",
+      "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits",
+      "source_count": 1,
+      "linked_questions": 37,
+      "question_edit_files": 37,
+      "compose": {
+        "blockers": 0,
+        "warnings": 0,
+        "candidate_hash": "sha256:7f4eefdd44794b0e5f1fb946dd01864a82bbd92ec665ddf464c0eabb132c514d"
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": 0,
+        "warnings": 1,
+        "candidate_hash": "sha256:7f4eefdd44794b0e5f1fb946dd01864a82bbd92ec665ddf464c0eabb132c514d",
+        "summary": "Locally safe after recomposition; remote stale check still required before push."
+      },
+      "validate": {
+        "valid": true,
+        "blockers": 0,
+        "warnings": 1,
+        "warning_summary": "component-usage.json has not been generated for this article yet; non-blocking in dry-run validation."
+      },
+      "evidence_claims": 38,
+      "raw_source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
+      "markdown_lines_checked": [
+        "5160-5251"
+      ],
+      "candidate_sha256": "sha256:7f4eefdd44794b0e5f1fb946dd01864a82bbd92ec665ddf464c0eabb132c514d"
+    },
+    {
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "title": "Minimum Requirements Group A Dwellings",
+      "slug": "minimum-requirements-group-a-dwellings",
+      "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+      "article_folder": ".ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "normalized_path": ".ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/sources.json",
+      "evidence_path": ".ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/source-audit-evidence.json",
+      "question_edits_folder": ".ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits",
+      "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits",
+      "source_count": 1,
+      "linked_questions": 36,
+      "question_edit_files": 36,
+      "compose": {
+        "blockers": 0,
+        "warnings": 0,
+        "candidate_hash": "sha256:5fdb7650e3b7ed8f02c8643411c700c41435d761e47372bb58e9cdcf86ae1440"
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": 0,
+        "warnings": 1,
+        "candidate_hash": "sha256:5fdb7650e3b7ed8f02c8643411c700c41435d761e47372bb58e9cdcf86ae1440",
+        "summary": "Locally safe after recomposition; remote stale check still required before push."
+      },
+      "validate": {
+        "valid": true,
+        "blockers": 0,
+        "warnings": 1,
+        "warning_summary": "component-usage.json has not been generated for this article yet; non-blocking in dry-run validation."
+      },
+      "evidence_claims": 37,
+      "raw_source_locator": "PD 1096 2004 Revised IRR, Rule VII Section 708 and Rule VIII Sections 805 through 808",
+      "markdown_lines_checked": [
+        "2046-2108",
+        "2659-2693"
+      ],
+      "candidate_sha256": "sha256:5fdb7650e3b7ed8f02c8643411c700c41435d761e47372bb58e9cdcf86ae1440"
+    }
+  ],
+  "validation": [
+    {
+      "check": "raw_pdf_hash",
+      "status": "PASS",
+      "evidence": "shasum -a 256 matched ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6 for the DPWH Official PD 1096 PDF."
+    },
+    {
+      "check": "raw_markdown_hash",
+      "status": "PASS",
+      "evidence": "shasum -a 256 matched 1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c for the local raw markdown conversion."
+    },
+    {
+      "check": "prior_batch_exclusion",
+      "status": "PASS",
+      "evidence": "Selected article IDs are absent from Batch 001-009 report/ledger UUIDs."
+    },
+    {
+      "check": "compose",
+      "status": "PASS",
+      "evidence": "5/5 bun run content-audit:compose -- --article-id <id> --overwrite; blockers=0."
+    },
+    {
+      "check": "diff",
+      "status": "PASS",
+      "evidence": "5/5 bun run content-audit:diff -- --article-id <id> --summary; changed=true safe_to_push=true blockers=0."
+    },
+    {
+      "check": "validate",
+      "status": "PASS",
+      "evidence": "5/5 bun run content-audit:validate -- --article-id <id> --summary --dry-run; valid=true blockers=0; only non-blocking component-usage warnings."
+    },
+    {
+      "check": "json_parse",
+      "status": "PASS",
+      "evidence": "Selected article JSON and question-edits parsed locally; 45 article-side JSON files plus 188 question-edits checked."
+    },
+    {
+      "check": "placeholder_scan",
+      "status": "PASS",
+      "evidence": "rg placeholder/internal marker scan returned no matches in selected normalized.md, candidate.md, or question-edits."
+    },
+    {
+      "check": "question_edit_consistency",
+      "status": "PASS",
+      "evidence": "Linked question count equals question-edit JSON count for all selected articles; total=188."
+    },
+    {
+      "check": "unit_test",
+      "status": "PASS",
+      "evidence": "bun test scripts/content-audit/content-audit.test.ts; 27 pass, 0 fail."
+    },
+    {
+      "check": "local_original_hash_reconciliation",
+      "status": "PASS",
+      "evidence": "Repaired stale local metadata/sync original hashes for three selected bundles to match existing local original.md; original.md content was not modified."
+    },
+    {
+      "check": "scoped_diff_check",
+      "status": "PASS",
+      "evidence": "git diff --check scoped to Batch 010 article folders plus report/ledger returned clean."
+    },
+    {
+      "check": "supabase",
+      "status": "NOT_ATTEMPTED",
+      "evidence": "Skipped by request; final publishing only."
+    },
+    {
+      "check": "deploy",
+      "status": "NOT_ATTEMPTED",
+      "evidence": "Skipped by request."
+    },
+    {
+      "check": "commit",
+      "status": "NOT_ATTEMPTED",
+      "evidence": "Skipped by request."
+    }
+  ],
+  "artifacts": {
+    "ledger": ".ai/content-audit-export/source-audited-article-batch-010-local-first-ledger-2026-05-10.json",
+    "report": ".ai/content-audit-export/source-audited-article-batch-010-local-first-report-2026-05-10.md"
+  },
+  "next_phase_readiness": "Batch 010 is ready for final publishing review in local-first mode. Final publishing still requires human/editor review and Supabase dry-run stale checks immediately before any apply. Supabase apply, deployment, and commit remain intentionally unattempted."
+}

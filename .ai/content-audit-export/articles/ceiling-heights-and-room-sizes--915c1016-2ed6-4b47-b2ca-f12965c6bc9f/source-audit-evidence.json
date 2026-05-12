@@ -1,0 +1,632 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-010",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T10:55:01.585+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "protocols_applied": [
+    "AGENTS.md local-first content-audit workflow",
+    ".ai/AGENTS.md additive operational artifact rules",
+    "ph-arch-construction-law source-grounding",
+    "ph-arch-professional-context LEA exam relevance"
+  ],
+  "target": {
+    "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+    "slug": "ceiling-heights-and-room-sizes",
+    "title": "Ceiling Heights and Room Sizes",
+    "article_folder": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+    "normalized_path": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/normalized.md",
+    "candidate_path": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/candidate.md",
+    "sources_path": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/sources.json",
+    "question_edits_folder": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits",
+    "normalized_sha256": "sha256:2ca8b333b10abaedd0438eff65cadec07e5927ce49b3fd0e889abbd6fc2cead7",
+    "candidate_sha256": "sha256:2ca8b333b10abaedd0438eff65cadec07e5927ce49b3fd0e889abbd6fc2cead7",
+    "linked_questions_sha256": "sha256:3b435e3f53f11fbd7efe0ea91da3c59671966a417572f1f019af4464fcda3020",
+    "sources_sha256": "sha256:55629688f12561bae4fa6d6fe26df9597ed239cc5aefc4270fb19aa3c0161fef"
+  },
+  "classification": {
+    "content_type": "pd1096_ceiling_room_size_code_article",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 37,
+    "question_edits_created": [
+      "a5605b5d-36c6-42ab-a2d3-09d452ffca60",
+      "ba5efc1a-a888-40c9-9964-035a2b5dd082",
+      "64cba10b-080e-476a-9fe6-0e58cd600c51",
+      "b74d0dc7-3d9d-48de-83ae-1b9c1b93cc34",
+      "658c86c0-033b-4076-a164-4f9f340d076d",
+      "02b7d88c-9cd9-490d-bee9-e99f8ea295d0",
+      "ec35cf94-47a4-4c0a-b302-abea950df2f9",
+      "ddc472c4-f686-4109-a605-fa711af4cbf3",
+      "d4c64da6-538a-4598-b181-b28685dd8846",
+      "9001b08a-4302-4112-b194-37e88f05a662",
+      "8396e018-430e-432e-be37-7e2d8f27ea74",
+      "93754360-2b5e-4017-8796-f072e145d4c8",
+      "82ddc730-b980-4e97-a5f6-ea52fb5e7059",
+      "a5d4ccae-043d-4145-8dc9-63535a4a36f9",
+      "f8cb0fd3-ca78-403d-8a32-07f4c0ab8533",
+      "54fa45bb-0cfb-40e2-b23f-ba61d5b78e49",
+      "b0bb7690-f58b-42ee-a4fd-f9e36e72c339",
+      "f4e27925-cce8-44c6-a8f0-9206def950bc",
+      "44efd846-6c7d-469f-8eef-67b0837f5b55",
+      "84242c90-2798-4184-8b81-cfb270542c8c",
+      "83e05bda-830d-4557-976c-762ca9969865",
+      "5daa649f-2caa-4db1-852d-e3d93e91d7e4",
+      "9c4f9a4c-3134-496f-addb-11c64caa7ed4",
+      "0b81eade-47c3-421a-90cb-8cf64be6283f",
+      "b9fa7052-9f99-4f9c-b30a-fe6e6d4cadbc",
+      "f19f1e60-ec7f-40c5-9559-d63ba98917f6",
+      "98e8f96f-d997-4284-a206-ce1cbefab663",
+      "115e5146-f058-4edb-93fa-26b1d316e9cb",
+      "971309c0-d432-46c8-88e4-ef4dac529382",
+      "65e69fd7-c1a2-4a3f-807f-816310ecece0",
+      "eea71aad-f800-48ef-875f-3466c1f1bd57",
+      "8daefa6f-69e4-4cf6-8aa8-4757a306142c",
+      "bb055257-0b90-462d-940c-2b7ce502a0da",
+      "c2b210d9-0e54-4b40-b0c3-e81360b04e64",
+      "af8bad86-c8b7-4877-b1e1-522950c8f8de",
+      "c12cb492-1860-412c-ac4c-9541252cc80c",
+      "f07c38ad-5cdd-41a8-a89e-19c1168edef2"
+    ]
+  },
+  "raw_sources": [
+    {
+      "key": "pd1096_2004_revised_irr",
+      "label": "PD 1096 2004 Revised IRR, DPWH Official Publication",
+      "source_type": "implementing_rules",
+      "source_id": "batch010-ceiling-heights-and-room-sizes-source-01",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+      "extraction_method": "Local raw markdown conversion checked against verified raw PDF file hash",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+      "markdown_lines_checked": [
+        "2659-2693"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "B010-ceiling-heights-and-room-sizes-ARTICLE-01",
+      "claim_text": "Ceiling Heights and Room Sizes was repaired against PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808; unsupported placeholders, comparative foreign-code claims, and unverified practice statements were removed from normalized.md.",
+      "claim_class": "article_source_repair",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+        "markdown_lines_checked": [
+          "2659-2693"
+        ]
+      }
+    },
+    {
+      "claim_id": "B010-ceiling-heights-and-room-sizes-QUESTION-001",
+      "claim_text": "Question a5605b5d-36c6-42ab-a2d3-09d452ffca60 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits for the repaired Ceiling Heights and Room Sizes article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-ceiling-heights-and-room-sizes-QUESTION-002",
+      "claim_text": "Question ba5efc1a-a888-40c9-9964-035a2b5dd082 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits for the repaired Ceiling Heights and Room Sizes article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-ceiling-heights-and-room-sizes-QUESTION-003",
+      "claim_text": "Question 64cba10b-080e-476a-9fe6-0e58cd600c51 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits for the repaired Ceiling Heights and Room Sizes article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-ceiling-heights-and-room-sizes-QUESTION-004",
+      "claim_text": "Question b74d0dc7-3d9d-48de-83ae-1b9c1b93cc34 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits for the repaired Ceiling Heights and Room Sizes article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-ceiling-heights-and-room-sizes-QUESTION-005",
+      "claim_text": "Question 658c86c0-033b-4076-a164-4f9f340d076d has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits for the repaired Ceiling Heights and Room Sizes article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-ceiling-heights-and-room-sizes-QUESTION-006",
+      "claim_text": "Question 02b7d88c-9cd9-490d-bee9-e99f8ea295d0 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits for the repaired Ceiling Heights and Room Sizes article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-ceiling-heights-and-room-sizes-QUESTION-007",
+      "claim_text": "Question ec35cf94-47a4-4c0a-b302-abea950df2f9 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits for the repaired Ceiling Heights and Room Sizes article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-ceiling-heights-and-room-sizes-QUESTION-008",
+      "claim_text": "Question ddc472c4-f686-4109-a605-fa711af4cbf3 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits for the repaired Ceiling Heights and Room Sizes article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-ceiling-heights-and-room-sizes-QUESTION-009",
+      "claim_text": "Question d4c64da6-538a-4598-b181-b28685dd8846 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits for the repaired Ceiling Heights and Room Sizes article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-ceiling-heights-and-room-sizes-QUESTION-010",
+      "claim_text": "Question 9001b08a-4302-4112-b194-37e88f05a662 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits for the repaired Ceiling Heights and Room Sizes article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-ceiling-heights-and-room-sizes-QUESTION-011",
+      "claim_text": "Question 8396e018-430e-432e-be37-7e2d8f27ea74 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits for the repaired Ceiling Heights and Room Sizes article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-ceiling-heights-and-room-sizes-QUESTION-012",
+      "claim_text": "Question 93754360-2b5e-4017-8796-f072e145d4c8 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits for the repaired Ceiling Heights and Room Sizes article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-ceiling-heights-and-room-sizes-QUESTION-013",
+      "claim_text": "Question 82ddc730-b980-4e97-a5f6-ea52fb5e7059 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits for the repaired Ceiling Heights and Room Sizes article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-ceiling-heights-and-room-sizes-QUESTION-014",
+      "claim_text": "Question a5d4ccae-043d-4145-8dc9-63535a4a36f9 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits for the repaired Ceiling Heights and Room Sizes article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-ceiling-heights-and-room-sizes-QUESTION-015",
+      "claim_text": "Question f8cb0fd3-ca78-403d-8a32-07f4c0ab8533 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits for the repaired Ceiling Heights and Room Sizes article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-ceiling-heights-and-room-sizes-QUESTION-016",
+      "claim_text": "Question 54fa45bb-0cfb-40e2-b23f-ba61d5b78e49 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits for the repaired Ceiling Heights and Room Sizes article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-ceiling-heights-and-room-sizes-QUESTION-017",
+      "claim_text": "Question b0bb7690-f58b-42ee-a4fd-f9e36e72c339 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits for the repaired Ceiling Heights and Room Sizes article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-ceiling-heights-and-room-sizes-QUESTION-018",
+      "claim_text": "Question f4e27925-cce8-44c6-a8f0-9206def950bc has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits for the repaired Ceiling Heights and Room Sizes article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-ceiling-heights-and-room-sizes-QUESTION-019",
+      "claim_text": "Question 44efd846-6c7d-469f-8eef-67b0837f5b55 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits for the repaired Ceiling Heights and Room Sizes article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-ceiling-heights-and-room-sizes-QUESTION-020",
+      "claim_text": "Question 84242c90-2798-4184-8b81-cfb270542c8c has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits for the repaired Ceiling Heights and Room Sizes article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-ceiling-heights-and-room-sizes-QUESTION-021",
+      "claim_text": "Question 83e05bda-830d-4557-976c-762ca9969865 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits for the repaired Ceiling Heights and Room Sizes article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-ceiling-heights-and-room-sizes-QUESTION-022",
+      "claim_text": "Question 5daa649f-2caa-4db1-852d-e3d93e91d7e4 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits for the repaired Ceiling Heights and Room Sizes article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-ceiling-heights-and-room-sizes-QUESTION-023",
+      "claim_text": "Question 9c4f9a4c-3134-496f-addb-11c64caa7ed4 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits for the repaired Ceiling Heights and Room Sizes article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-ceiling-heights-and-room-sizes-QUESTION-024",
+      "claim_text": "Question 0b81eade-47c3-421a-90cb-8cf64be6283f has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits for the repaired Ceiling Heights and Room Sizes article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-ceiling-heights-and-room-sizes-QUESTION-025",
+      "claim_text": "Question b9fa7052-9f99-4f9c-b30a-fe6e6d4cadbc has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits for the repaired Ceiling Heights and Room Sizes article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-ceiling-heights-and-room-sizes-QUESTION-026",
+      "claim_text": "Question f19f1e60-ec7f-40c5-9559-d63ba98917f6 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits for the repaired Ceiling Heights and Room Sizes article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-ceiling-heights-and-room-sizes-QUESTION-027",
+      "claim_text": "Question 98e8f96f-d997-4284-a206-ce1cbefab663 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits for the repaired Ceiling Heights and Room Sizes article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-ceiling-heights-and-room-sizes-QUESTION-028",
+      "claim_text": "Question 115e5146-f058-4edb-93fa-26b1d316e9cb has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits for the repaired Ceiling Heights and Room Sizes article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-ceiling-heights-and-room-sizes-QUESTION-029",
+      "claim_text": "Question 971309c0-d432-46c8-88e4-ef4dac529382 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits for the repaired Ceiling Heights and Room Sizes article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-ceiling-heights-and-room-sizes-QUESTION-030",
+      "claim_text": "Question 65e69fd7-c1a2-4a3f-807f-816310ecece0 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits for the repaired Ceiling Heights and Room Sizes article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-ceiling-heights-and-room-sizes-QUESTION-031",
+      "claim_text": "Question eea71aad-f800-48ef-875f-3466c1f1bd57 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits for the repaired Ceiling Heights and Room Sizes article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-ceiling-heights-and-room-sizes-QUESTION-032",
+      "claim_text": "Question 8daefa6f-69e4-4cf6-8aa8-4757a306142c has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits for the repaired Ceiling Heights and Room Sizes article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-ceiling-heights-and-room-sizes-QUESTION-033",
+      "claim_text": "Question bb055257-0b90-462d-940c-2b7ce502a0da has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits for the repaired Ceiling Heights and Room Sizes article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-ceiling-heights-and-room-sizes-QUESTION-034",
+      "claim_text": "Question c2b210d9-0e54-4b40-b0c3-e81360b04e64 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits for the repaired Ceiling Heights and Room Sizes article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-ceiling-heights-and-room-sizes-QUESTION-035",
+      "claim_text": "Question af8bad86-c8b7-4877-b1e1-522950c8f8de has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits for the repaired Ceiling Heights and Room Sizes article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-ceiling-heights-and-room-sizes-QUESTION-036",
+      "claim_text": "Question c12cb492-1860-412c-ac4c-9541252cc80c has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits for the repaired Ceiling Heights and Room Sizes article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    },
+    {
+      "claim_id": "B010-ceiling-heights-and-room-sizes-QUESTION-037",
+      "claim_text": "Question f07c38ad-5cdd-41a8-a89e-19c1168edef2 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits for the repaired Ceiling Heights and Room Sizes article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS_LOCAL_DRAFT",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 805 through 808",
+        "answer_key_fields_changed": false
+      }
+    }
+  ],
+  "unsupported_claims_removed": [
+    "Removed unresolved [SLATECAMP_UI_BLOCK:*] placeholders from normalized learner content.",
+    "Removed comparative foreign-code tables and unsupported international practice claims not audited against local raw PDFs.",
+    "Removed or corrected unverified section/number claims that conflicted with the checked PD 1096 raw source."
+  ],
+  "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED"
+}

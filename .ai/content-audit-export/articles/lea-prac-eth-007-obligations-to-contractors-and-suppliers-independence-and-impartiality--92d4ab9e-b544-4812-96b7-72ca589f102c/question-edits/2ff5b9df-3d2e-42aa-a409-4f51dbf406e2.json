@@ -1,0 +1,71 @@
+{
+  "question_id": "2ff5b9df-3d2e-42aa-a409-4f51dbf406e2",
+  "baseline_hash": "sha256:a3909470130f39eb95a4e5ec42cb5a272c744a6cb305a161b533b400b7c17e37",
+  "action": "replace",
+  "reason": "source-audited-article-batch-018-local-first rewrote linked question to match locally checked raw source evidence for lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality.",
+  "approved_by": "codex-local-source-audit-batch-018",
+  "approved_at": "2026-05-10T23:42:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "92d4ab9e-b544-4812-96b7-72ca589f102c",
+    "parent_article_slug": "lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UAP Document Code of Ethics, responsibilities to contractors and manufacturers/dealers/agents, raw markdown lines 66-89",
+    "checked_markdown_lines": [
+      "raw markdown lines 66-89"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+        "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+        "source_id": "uap-document-code-of-ethics",
+        "locator": "UAP Document Code of Ethics, responsibilities to contractors and manufacturers/dealers/agents, raw markdown lines 66-89"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
+        "sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
+        "source_id": "uap-document-code-of-ethics-raw-markdown",
+        "locator": "UAP Document Code of Ethics, responsibilities to contractors and manufacturers/dealers/agents, raw markdown lines 66-89"
+      }
+    ],
+    "local_source_safe_action": "Question was rewritten to remove unverified or over-specific claims and use only statements anchored in the checked local raw source packet."
+  },
+  "proposed": {
+    "text": "In relation to the contractor, what role does the UAP Code assign to the architect?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Safeguard fairly the contractor's interests as well as the client's interests"
+      },
+      {
+        "id": "b",
+        "text": "Favor the client in every contractor dispute regardless of documents"
+      },
+      {
+        "id": "c",
+        "text": "Accept gifts if the contractor says they are customary"
+      },
+      {
+        "id": "d",
+        "text": "Avoid inspecting completed phases when requested"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "The Code states that the contractor depends on the architect to safeguard fairly both contractor and client interests.",
+    "explanation": "The Code states that the contractor depends on the architect to safeguard fairly both contractor and client interests.",
+    "code_citation": "UAP Document Code of Ethics, lines 66-68",
+    "bloom_level": "understand",
+    "application_context": "professional_practice",
+    "practice_context": [
+      "Code of Ethical Conduct",
+      "Professional ethics"
+    ],
+    "difficulty": 0.5,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-ETH-007-002"
+  }
+}

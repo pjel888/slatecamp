@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-05-10T18:18:36.196Z",
+  "rerun": [
+    {
+      "label": "compose top traps",
+      "stdout": "✓ compose 6e84b3e6-5dd9-4557-8202-5085d24a3708: changed; blockers=0\nComposed 1 candidate(s)",
+      "stderr": "$ bun scripts/content-audit/compose-candidates.ts --article-id \"6e84b3e6-5dd9-4557-8202-5085d24a3708\" --overwrite"
+    },
+    {
+      "label": "diff top traps",
+      "stdout": "✓ diff 6e84b3e6-5dd9-4557-8202-5085d24a3708: changed=true safe=true\n[\n  {\n    \"article_id\": \"6e84b3e6-5dd9-4557-8202-5085d24a3708\",\n    \"slug\": \"top-50-traps-2024-irr\",\n    \"changed\": true,\n    \"safe_to_push\": true,\n    \"blockers\": []\n  }\n]",
+      "stderr": "$ bun scripts/content-audit/diff-candidates.ts --article-id \"6e84b3e6-5dd9-4557-8202-5085d24a3708\" --summary"
+    },
+    {
+      "label": "validate top traps",
+      "stdout": "{\n  \"generated_at\": \"2026-05-10T18:18:36.188Z\",\n  \"input\": \"/Users/philiplewis/slatecamp/.ai/content-audit-export\",\n  \"article_count\": 1,\n  \"valid\": true,\n  \"blockers\": [],\n  \"warnings\": [\n    \"top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708: component-usage.json has not been generated for this article yet.\"\n  ],\n  \"articles\": [\n    {\n      \"article_id\": \"6e84b3e6-5dd9-4557-8202-5085d24a3708\",\n      \"slug\": \"top-50-traps-2024-irr\",\n      \"folder\": \"top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708\",\n      \"valid\": true,\n      \"blockers\": [],\n      \"warnings\": [\n        \"component-usage.json has not been generated for this article yet.\"\n      ],\n      \"files\": {\n        \"metadata\": true,\n        \"original\": true,\n        \"normalized\": true,\n        \"uiBlocks\": true,\n        \"parserErrors\": true,\n        \"uiBlockEdits\": true,\n        \"linkedQuestions\": true,\n        \"sources\": true,\n        \"taxonomy\": true,\n        \"componentUsage\": false,\n        \"candidate\": true,\n        \"diffReport\": true,\n        \"diffReportMarkdown\": true,\n        \"pushReport\": false,\n        \"pushResult\": false\n      },\n      \"hashes\": {\n        \"original\": \"sha256:17371b82afe0539467759f5b0c7fd39949d3b4fa0572206bd55d261dfdd0fff4\",\n        \"normalized\": \"sha256:99f43e18737abc0a7f3fbc6b1ae991dbe2f34b30a4511bb6ebddde586b7809d7\",\n        \"candidate\": \"sha256:99f43e18737abc0a7f3fbc6b1ae991dbe2f34b30a4511bb6ebddde586b7809d7\",\n        \"ui_blocks\": \"sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\"\n      }\n    }\n  ]\n}",
+      "stderr": "$ bun scripts/content-audit/validate-bundles.ts --article-id \"6e84b3e6-5dd9-4557-8202-5085d24a3708\" --summary"
+    }
+  ]
+}

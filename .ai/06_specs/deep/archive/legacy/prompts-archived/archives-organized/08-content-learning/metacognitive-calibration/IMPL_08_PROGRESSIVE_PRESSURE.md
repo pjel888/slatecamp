@@ -1,7 +1,7 @@
 # IMPL_08: Progressive Pressure Ladder & Exam-Day Simulation Protocol
 
-**Priority:** P2  
-**Effort:** ~3 days  
+**Priority:** P2
+**Effort:** ~3 days
 **Research basis:** Stress inoculation training from sports psychology. Graduated exposure reduces performance anxiety.
 
 ---

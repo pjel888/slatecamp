@@ -1,7 +1,7 @@
 # IMPL_12: Storage Strength vs. Retrieval Strength Model
 
-**Priority:** P3  
-**Effort:** ~1 week  
+**Priority:** P3
+**Effort:** ~1 week
 **Research basis:** Bjork's New Theory of Disuse (1992, 2006). Storage strength (how deeply encoded) and retrieval strength (how easily accessed) are independent dimensions.
 
 ---

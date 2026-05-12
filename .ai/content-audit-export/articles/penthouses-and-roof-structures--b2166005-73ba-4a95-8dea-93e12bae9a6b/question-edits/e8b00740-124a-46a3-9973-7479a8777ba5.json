@@ -1,0 +1,48 @@
+{
+  "question_id": "e8b00740-124a-46a3-9973-7479a8777ba5",
+  "baseline_hash": "sha256:b41010100fe7b4f9203f5ed3b7f0597b4952914c8886546b416422aa6f094ada",
+  "action": "replace",
+  "reason": "source-audited-article-batch-038-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-038",
+  "approved_at": "2026-05-11T13:26:35+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-038-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 3763-3787"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 1210"
+  },
+  "proposed": {
+    "text": "What height limit applies to other roof projections under Section 1210?",
+    "options": [
+      {
+        "id": "b038-b216-07-a",
+        "text": "3.60 m above the roof"
+      },
+      {
+        "id": "b038-b216-07-b",
+        "text": "8.40 m in every case"
+      },
+      {
+        "id": "b038-b216-07-c",
+        "text": "20.00 m above grade"
+      },
+      {
+        "id": "b038-b216-07-d",
+        "text": "No height limit"
+      }
+    ],
+    "correct_option_id": "b038-b216-07-a",
+    "rationale": "Correct answer: 3.60 m above the roof. This is directly supported by PD 1096 2004 Revised IRR, Section 1210.",
+    "explanation": "The Batch 038 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 1210.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 1210"
+  }
+}

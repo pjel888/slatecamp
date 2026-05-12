@@ -1,0 +1,79 @@
+{
+  "question_id": "6e1ff2cb-3f16-42ee-b391-3414c262f2fc",
+  "baseline_hash": "sha256:50939dccd4211fa46f749699aa2c2a218f3ea776e1a3896765365bc5a91514a2",
+  "action": "replace",
+  "reason": "source-audited-article-batch-086-local-first aligned linked question with checked local raw PDF/source evidence for lea-plan-003-07-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-086",
+  "approved_at": "2026-05-12T09:30:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "a43232f4-9396-4156-bfec-4606a44b4a72",
+    "parent_article_slug": "lea-plan-003-07-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 11201 IRR refined markdown lines 93-100 and 116-121; RA 7279 lines 11-35, 37-85, 165-189, and 231-235; HLURB CLUP Volume 2 lines 39-41, 957, 1230, 2059-2061, 2187-2192, and 2290-2309.",
+    "checked_markdown_lines": [
+      "RA 11201 IRR refined markdown lines 40-44, 68-75, 93-100, 116-121, 134-162, 261-263, 280-289, 335, 389, and 392; raw PDF pages 3, 6, 7, 13, 15, 19, and 35 checked by local PyMuPDF extraction.",
+      "RA 7279 refined markdown lines 11-35, 37-85, 131-155, 165-189, 231-235, 301-313, and 319; raw PDF pages 1, 2, 3, 7, 8, and 11 checked by local PyMuPDF extraction.",
+      "HLURB CLUP Volume 2 refined markdown lines 39-41, 957, 1230, 1640-1648, 2059-2061, 2187-2192, and 2290-2309; raw PDF pages 5, 40, 71, 72, and 74 checked by local PyMuPDF extraction."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "ra-11201-irr-dhsud-act-b086",
+        "label": "RA 11201 IRR - DHSUD Act Implementing Rules",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "refined_markdown_sha256": "sha256:40f1a5041c69b3a4aea7c8ba138a9d570bc686bea48aa5618ea6423a6a719528",
+        "locator": "RA 11201 IRR refined markdown lines 40-44, 68-75, 93-100, 116-121, 134-162, 261-263, 280-289, 335, 389, and 392; raw PDF pages 3, 6, 7, 13, 15, 19, and 35 checked by local PyMuPDF extraction."
+      },
+      {
+        "source_id": "ra-7279-urban-development-housing-act-b086",
+        "label": "RA 7279 - Urban Development and Housing Act",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7279/RA 7279 Urban Development and Housing Act 2009.pdf",
+        "sha256": "sha256:23efa9c0278519d79ed424d9ced016b24619ebb42a19e75a05dc9bb8bf1c4696",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7279/RA 7279 Urban Development and Housing Act 2009.md",
+        "refined_markdown_sha256": "sha256:f52859fb18fec28c403348851c3e53caca2e678cb9cec43fbca28d8d5c3a323e",
+        "locator": "RA 7279 refined markdown lines 11-35, 37-85, 131-155, 165-189, 231-235, 301-313, and 319; raw PDF pages 1, 2, 3, 7, 8, and 11 checked by local PyMuPDF extraction."
+      },
+      {
+        "source_id": "hlurb-clup-volume-2-b086",
+        "label": "HLURB CLUP Guidebook Volume 2",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/HLURB_CLUP_Vol_2.pdf",
+        "sha256": "sha256:0da4f5c9abbab99eeae05a870c9bbce549ef2e7c36aa3d433d05821736b713bc",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/HLURB_CLUP_Vol_2.md",
+        "refined_markdown_sha256": "sha256:7f71db9d9b919381ebf71b3641e21c40f7f0fc6e43f4e845a18bd4084173c0fa",
+        "locator": "HLURB CLUP Volume 2 refined markdown lines 39-41, 957, 1230, 1640-1648, 2059-2061, 2187-2192, and 2290-2309; raw PDF pages 5, 40, 71, 72, and 74 checked by local PyMuPDF extraction."
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 086 local raw-source-audited special_housing_and_vulnerable_groups scope."
+  },
+  "proposed": {
+    "text": "What does RA 11201 IRR require a People's Plan to include in source-safe terms?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A beneficiary-association plan with site development aligned to LGU zoning plus community, livelihood, and welfare elements"
+      },
+      {
+        "id": "b",
+        "text": "Only a private developer brochure"
+      },
+      {
+        "id": "c",
+        "text": "Only a certificate of occupancy"
+      },
+      {
+        "id": "d",
+        "text": "Only a list of paint colors"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The checked definition ties People's Plans to beneficiary associations, zoning conformity, site development, and social concerns.",
+    "explanation": "The checked definition ties People's Plans to beneficiary associations, zoning conformity, site development, and social concerns.",
+    "code_citation": "RA 11201 IRR - DHSUD Act Implementing Rules; RA 7279 - Urban Development and Housing Act; HLURB CLUP Guidebook Volume 2",
+    "bloom_level": "understand",
+    "application_context": "source_audited_local_first_batch_086",
+    "practice_context": [],
+    "difficulty": 0.55
+  }
+}

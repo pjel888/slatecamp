@@ -1,0 +1,32 @@
+{
+  "question_id": "3e6e01eb-4252-4aa2-982c-199779c9fc00",
+  "baseline_hash": "sha256:b887a348a87c775a38a222465f6b321e13ff2dfc7090636066c8d6721fd114ec",
+  "reason": "Batch 003 source audit removed unsupported parking-structure geometry locators. PD 1096 Rule VII supports slot/loading sizes and plan indication; BP 344 supports accessible parking details. Rule XIX, Section 803, and Section 904 are not parking geometry locators.",
+  "approved_by": "codex-local-source-audit-batch-003",
+  "approved_at": "2026-05-10T18:00:00+08:00",
+  "proposed": {
+    "text": "Under PD 1096 Rule VII, what is the source-backed parking/loading/unloading slot size for a jeepney or shuttle?",
+    "options": [
+      {
+        "id": "a",
+        "text": "2.15 m x 6.00 m"
+      },
+      {
+        "id": "b",
+        "text": "3.00 m x 9.00 m"
+      },
+      {
+        "id": "c",
+        "text": "3.60 m x 12.00 m"
+      },
+      {
+        "id": "d",
+        "text": "3.60 m x 18.00 m"
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": "PD 1096 Rule VII supports 3.00 m x 9.00 m for jeepney or shuttle parking/loading/unloading slots.",
+    "explanation": "The old vehicle-ramp calculation used an unsupported local-source premise.",
+    "code_citation": "PD 1096 2004 Revised IRR, Rule VII parking/loading slot requirements"
+  }
+}

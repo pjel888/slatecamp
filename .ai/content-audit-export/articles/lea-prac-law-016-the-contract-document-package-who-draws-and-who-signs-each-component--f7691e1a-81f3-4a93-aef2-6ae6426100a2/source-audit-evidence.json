@@ -1,0 +1,138 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T22:40:00+08:00",
+  "audit_mode": "local_source_audit_no_supabase",
+  "protocols_applied": [
+    ".ai/CONTENT_EXCELLENCE_GOAL.md",
+    ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
+    ".ai/00_system/vitruvius-source-reference.md"
+  ],
+  "target": {
+    "article_id": "f7691e1a-81f3-4a93-aef2-6ae6426100a2",
+    "slug": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component",
+    "title": "The Contract Document Package Who Draws and Who Signs Each Component",
+    "article_folder": ".ai/content-audit-export/articles/lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component--f7691e1a-81f3-4a93-aef2-6ae6426100a2",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component--f7691e1a-81f3-4a93-aef2-6ae6426100a2/candidate.md",
+    "candidate_sha256": "sha256:0fcd2b08a537556fe41b657cbbc69a3266d8d8bdf5fc0f96c293ed29f60e6ff1",
+    "normalized_sha256": "sha256:0fcd2b08a537556fe41b657cbbc69a3266d8d8bdf5fc0f96c293ed29f60e6ff1",
+    "linked_questions_sha256": "sha256:2ce49ab7cca07498ee3b9403514f3455324125b8fb83175855872b5a2f3b74cc",
+    "sources_sha256": "sha256:b7f835307dac4cdebc5b9265bb135feeb9edbe57438bb7910c059ef03dac7d7b"
+  },
+  "classification": {
+    "content_type": "ra9266_uap301_contract_documents_article",
+    "focus": "RA 9266 architectural documents and UAP Document 301 contract-document coordination rules",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": [
+      "51c4a992-e7dd-4502-8f10-1253a3e035fe",
+      "d71e768c-eb25-4332-8572-f4912b035ae2",
+      "ddb0a3cb-6848-4533-ab0b-e34ea934d442",
+      "4b2b462f-75a5-4c20-b446-fc1c564f5335",
+      "bfd3fd73-7066-4d98-af8d-d5dbe2891eee",
+      "211f8944-0730-48ee-8827-4fd27f5fbf35",
+      "a05686b5-2d67-484a-b577-b643f7bb041c",
+      "8c035b01-26a5-443c-a161-5264981e503f",
+      "11c0ae86-0f14-4dc0-96aa-0c1d0a7b16d8",
+      "f10783fa-c9df-4598-bd4d-4669a43c974a"
+    ]
+  },
+  "raw_sources": [
+    {
+      "key": "ra9266_irr",
+      "label": "RA 9266 IRR Architecture Act of 2004",
+      "source_type": "implementing_rules",
+      "source_id": "batch006-lea-prac-law-016-the-contract-document-package-w-source-01",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "checked_pdf_pages": [
+        4,
+        5,
+        14,
+        15,
+        19
+      ]
+    },
+    {
+      "key": "uap_doc_301",
+      "label": "UAP Document 301",
+      "source_type": "professional_document",
+      "source_id": "batch006-lea-prac-law-016-the-contract-document-package-w-source-02",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+      "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+      "checked_pdf_pages": [
+        16,
+        17,
+        18,
+        20
+      ]
+    }
+  ],
+  "gate_results": {
+    "compose": "PASS: content-audit:compose -- --article-id f7691e1a-81f3-4a93-aef2-6ae6426100a2 --overwrite; blockers=0",
+    "diff": "PASS: content-audit:diff -- --article-id f7691e1a-81f3-4a93-aef2-6ae6426100a2; changed=true safe_to_push=true blockers=0",
+    "validate": "PASS: content-audit:validate -- --article-id f7691e1a-81f3-4a93-aef2-6ae6426100a2 --summary --dry-run; valid=true blockers=0 warnings=0",
+    "push_dry_run": "not_attempted_local_first; Supabase remote fetch is final publishing only and intentionally non-blocking here",
+    "supabase_mutation": "not_attempted_by_request"
+  },
+  "claims": [
+    {
+      "claim_id": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component-claim-01",
+      "claim_text": "RA 9266 IRR Section 3(18) states that architectural documents are outputs only an architect can sign and seal.",
+      "source_support": [
+        "ra9266_irr",
+        "uap_doc_301"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component-claim-02",
+      "claim_text": "RA 9266 IRR Section 3(26) lists the usual contract-document package components.",
+      "source_support": [
+        "ra9266_irr",
+        "uap_doc_301"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component-claim-03",
+      "claim_text": "UAP Document 301 supports the complementary reading and coordination of drawings and specifications.",
+      "source_support": [
+        "ra9266_irr",
+        "uap_doc_301"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-prac-law-016-the-contract-document-package-who-draws-and-who-signs-each-component-linked-question-edits",
+      "claim_text": "Question edits staged locally for linked question IDs/model IDs: 51c4a992-e7dd-4502-8f10-1253a3e035fe (ALE-PRAC-LAW-016-001), d71e768c-eb25-4332-8572-f4912b035ae2 (ALE-PRAC-LAW-016-006), ddb0a3cb-6848-4533-ab0b-e34ea934d442 (ALE-PRAC-LAW-016-005), 4b2b462f-75a5-4c20-b446-fc1c564f5335 (ALE-PRAC-LAW-016-010), bfd3fd73-7066-4d98-af8d-d5dbe2891eee (ALE-PRAC-LAW-016-003), 211f8944-0730-48ee-8827-4fd27f5fbf35 (ALE-PRAC-LAW-016-009), a05686b5-2d67-484a-b577-b643f7bb041c (ALE-PRAC-LAW-016-008), 8c035b01-26a5-443c-a161-5264981e503f (ALE-PRAC-LAW-016-004), 11c0ae86-0f14-4dc0-96aa-0c1d0a7b16d8 (ALE-PRAC-LAW-016-007), f10783fa-c9df-4598-bd4d-4669a43c974a (ALE-PRAC-LAW-016-002)",
+      "audit_result": "PASS",
+      "source_support": [
+        "ra9266_irr",
+        "uap_doc_301"
+      ]
+    }
+  ],
+  "unsupported_or_removed_claims": [
+    "Removed unsupported RA 544 and National Electrical Code claims from question edits because those raw sources were not audited in this batch.",
+    "Corrected sealing typos and rewrote specialist-discipline questions into source-backed coordination and architectural-document questions.",
+    "Removed broad claims that the architect signs or directly supervises every specialist drawing."
+  ],
+  "remaining_local_blockers": [],
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_recovery_complete": true,
+    "remote_publish_status": "not_attempted_by_request",
+    "remaining_local_blockers": []
+  },
+  "local_validation": {
+    "command": "bun run content-audit:validate -- --article-id f7691e1a-81f3-4a93-aef2-6ae6426100a2 --summary --dry-run",
+    "valid": true,
+    "blockers": 0,
+    "warnings": [],
+    "checked_at": "2026-05-10T22:40:00+08:00"
+  },
+  "bundle_integrity_repair": "Updated article-metadata.json content_hash/original_content_hash and sync-state original_hash to match the checked local original.md hash before final diff/validate."
+}

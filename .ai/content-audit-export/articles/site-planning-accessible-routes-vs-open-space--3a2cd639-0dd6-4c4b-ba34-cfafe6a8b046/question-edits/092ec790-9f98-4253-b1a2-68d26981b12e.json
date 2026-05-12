@@ -1,0 +1,56 @@
+{
+  "question_id": "092ec790-9f98-4253-b1a2-68d26981b12e",
+  "action": "replace",
+  "reason": "source-audited-article-batch-033-local-first aligned linked accessibility/code question with audited local BP 344 source language for site-planning-accessible-routes-vs-open-space.",
+  "approved_by": "codex-local-source-audit-batch-033",
+  "approved_at": "2026-05-11T09:27:32+08:00",
+  "source_audit_support": {
+    "parent_article_id": "3a2cd639-0dd6-4c4b-ba34-cfafe6a8b046",
+    "parent_article_slug": "site-planning-accessible-routes-vs-open-space",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "BP 344 2024 Revised IRR refined markdown lines 679-727",
+    "checked_sources": [
+      {
+        "source_id": "bp-344-2024-revised-irr-ncda-local",
+        "label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+        "source_locator": "BP 344 2024 Revised IRR refined markdown lines 679-727",
+        "checked_markdown_lines": [
+          "BP 344 2024 Revised IRR refined markdown lines 679-727"
+        ]
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer key, rationale, explanation, and code citation rewritten to the audited local article scope."
+  },
+  "proposed": {
+    "text": "What minimum clearance must remain around support pillars or similar barriers?",
+    "options": [
+      {
+        "id": "a",
+        "text": "At least 900 mm"
+      },
+      {
+        "id": "b",
+        "text": "At least 100 mm"
+      },
+      {
+        "id": "c",
+        "text": "At least 300 mm"
+      },
+      {
+        "id": "d",
+        "text": "At least 5000 mm"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "BP 344 requires a minimum clearance of at least 900 mm for unobstructed passage.",
+    "explanation": "BP 344 requires a minimum clearance of at least 900 mm for unobstructed passage.",
+    "code_citation": "BP 344 2024 Revised IRR refined markdown lines 679-727"
+  }
+}

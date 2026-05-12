@@ -1,96 +1,47 @@
+# Green building design
 
-
-## Board Exam Quick Check
-
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
-
-**Common mistake:** treating a familiar keyword in **Lea Dsgn 009 04 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
-
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 ## Learning Goal
-Distinguish the three Philippine-recognized green building certification systems (BERDE, EDGE, LEED) by scope, point systems, and applicable building types, identify rating levels, and apply sustainable design strategies for certification compliance.
+Apply Philippine-first green building design by distinguishing mandatory building/code compliance from voluntary certification, identifying BERDE as the checked local green rating system, and selecting passive and active energy strategies supported by DOE building-energy guidance.
 
-Green building and sustainability concepts integrate environmental performance into architectural design.
-## Core Concept
+Green building design is not a style or a checklist of expensive equipment. For LEA purposes, treat it as a source-controlled process: satisfy mandatory building, safety, health, and environmental requirements first, then use a verified rating or performance framework to organize higher-performance goals.
 
-Green building design addresses environmental impact across the full lifecycle of a building—site selection, energy use, water consumption, materials sourcing, indoor environmental quality, and waste management. The Philippines recognizes three major certification frameworks:
+In the checked local source packet, BERDE is the central certification reference. The BERDE user guide describes BERDE as the national voluntary green building rating system by the Philippine government through the Department of Energy, developed by PHILGBC. It assesses, measures, monitors, and certifies project performance above existing national and local laws, regulations, and mandatory standards. A project may claim BERDE certification only after completing the formal assessment, rating, and certification process, complying with minimum system requirements, and achieving at least the minimum rating.
 
-**BERDE (Building for Ecologically Responsive Design Excellence)** is the national sustainability rating system developed by the Philippine Green Building Council (PHILGBC). It prioritizes tropical climate adaptation, local material availability, and water management in a high-precipitation environment. BERDE categories include Energy Efficiency, Water Efficiency, Site Selection, Indoor Environmental Quality, Materials & Waste Management, and Innovations.
+For new construction and fit-out work, the BERDE process separates design and construction assessment stages. Stage 1 is Design and Stage 2 is Construction; operations-only improvement belongs to Stage 3. This matters in exams because a design-stage intent, a construction-stage verification, and an operations-stage policy are not the same evidence.
 
-**EDGE (Excellence in Design for Greater Efficiencies)**, administered by the International Finance Corporation (IFC), focuses on 20% improvement in energy, water, and embodied energy compared to baseline. EDGE emphasizes cost-effective, scalable measures accessible to developing economies and is gaining traction in Southeast Asian projects.
+The DOE energy-conserving design guidelines support the same design discipline from the energy side. Their purpose is to encourage energy-conserving design of buildings and services while protecting building function and occupant comfort, health, safety, and productivity. They also warn that energy guidelines must not be used to bypass other safety, health, or environmental requirements.
 
-**LEED (Leadership in Energy and Environmental Design)**, developed in the United States, operates globally with regional adaptations. LEED v4.1 includes prerequisites and points across Integrative Process, Location & Transportation, Sustainable Sites, Water Efficiency, Energy & Atmosphere, Materials & Resources, Indoor Environmental Quality, and Innovation.
+Key DOE strategies are architectural before they are mechanical. For air-conditioned buildings under the guideline scope, minimizing envelope heat gain is a first concern. The guidance points to siting and orientation that avoid exposing long facades to the east and west where feasible, using building shape to reduce envelope exposure, and selecting light-colored wall finishes to reflect solar radiation. Daylighting can reduce artificial-light demand, but it must be coordinated with glare control, brightness balance, and heat buildup.
 
-All three systems share core principles: reducing operational energy through insulation and efficient HVAC; water conservation via efficient fixtures and rainwater harvesting; site ecology through permeable surfaces and native plantings; material stewardship including low-VOC finishes and recycled content; and waste diversion during construction. The major distinction is compliance threshold—BERDE requires minimum performance in each prerequisite category, EDGE targets 20% efficiency gain, and LEED awards points on a scaled system.
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-dsgn-009-04-core-concept", type="image", caption="Green Building Certification — BERDE, EDGE, and LEED Comparison", description="Three-panel comparison of Philippine-recognized green certification systems: BERDE (PHILGBC, 4-level), EDGE (IFC, 3-tier), LEED (USGBC, 4-level). Scoring systems, applicable building types, and key credit categories shown side by side.", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+| LEA decision point | Source-safe answer |
+| --- | --- |
+| Local green certification | Use BERDE when the question asks for the checked Philippine voluntary green building rating system. |
+| Mandatory compliance | Do not treat voluntary certification as a replacement for building, safety, health, or environmental requirements. |
+| Energy strategy | Reduce heat gain through orientation, envelope choices, shading, light finishes, and efficient lighting before oversizing active systems. |
+| Certification claim | A claim requires the formal BERDE process, minimum system requirements, and at least the minimum rating. |
 
-## Key Provisions
+RA 11285 reinforces the broader policy setting by institutionalizing energy efficiency and conservation and promoting efficient, judicious energy use. It does not, by itself, prove a building is certified green. For article and question safety, keep policy claims separate from certification claims.
 
-| System | Origin | Threshold | Philippine Adoption | Key Focus |
-|--------|--------|-----------|----------------------|-----------|
-| **BERDE** | PHILGBC (2013) | Prerequisites required; 1–5 stars | National standard; integrated with NBC guidelines | Tropical climate, local materials, water management |
-| **EDGE** | IFC | 20% improvement vs. baseline | Growing in commercial sector; IFC-funded projects | Cost-effective efficiency gains |
-| **LEED** | USGBC | 40–110 points; Certified to Platinum | International projects, multinational clients | Comprehensive lifecycle assessment |
+## What to Watch For
 
-### BERDE Prerequisites (Mandatory):
-- Energy Efficiency: HVAC COP, lighting power density
-- Water Efficiency: Potable water reduction targets
-- Site Selection: Proximity to transit, environmental sensitivity
-- Materials: Documentation of sourcing
-- Waste Management: Construction waste diversion plan and targets per BERDE Materials & Waste category
+If an exam item compares BERDE, EDGE, and LEED, answer only from the verified source packet. In this local-first batch, BERDE, DOE energy design guidance, and RA 11285 were checked. EDGE and LEED thresholds should not be asserted unless their own source packets are present.
 
-### Design Integration Strategies:
-- **Passive Design**: Orientation, natural ventilation, thermal mass
-- **Active Systems**: High-efficiency equipment, smart controls
-- **Renewable Energy**: PV integration, where feasible
-- **Water Cycles**: Rainwater harvesting, greywater reuse, reduced irrigation
-- **Site Ecology**: Permeable hardscape, native vegetation, habitat restoration
-- **Material Circularity**: Reclaimed materials, salvage protocols, low-embodied-carbon specifications
+## Common Exam Moves
 
-**Source:** National Building Code Green Provisions (NBC Appendix or DOE Circular on Green Buildings), PHILGBC BERDE Rating System, IFC EDGE Certification Manual
+A project that uses efficient lighting, daylighting, and passive solar control is using green design strategies. It is not automatically BERDE-certified.
 
-## Philippine Practice Context
+A project that pursues BERDE for a new building should prepare for design and construction assessment evidence, not just an operations manual.
 
-The Philippines faces intense climate pressures—high rainfall (monsoon season), typhoons, and heat load in lowland areas—making water management and passive cooling critical. BERDE's local development and alignment with NBC guidelines makes it the pragmatic choice for domestic projects, particularly social housing and government buildings. International projects often pursue LEED or EDGE for investor confidence and global benchmarking. Most local practices integrate BERDE prerequisites into design baseline without pursuing formal certification, recognizing that energy and water efficiency reduce operational costs and building resilience.
+A facade with large unshaded east and west exposure is a warning sign in Philippine energy design because solar heat gain can increase cooling load.
 
-## How It's Tested
+## Key Takeaways
 
-**Pattern 1: System Recognition**
-Question asks which certification system best fits a project scenario (cost-sensitive commercial development, luxury hotel aiming for global recognition, government low-cost housing initiative). Requires knowing BERDE's domestic focus, EDGE's cost-effectiveness, LEED's prestige and global readability.
+BERDE is the checked Philippine voluntary green rating system for this article.
 
-**Pattern 2: Prerequisite Application**
-Scenario describes a building design and asks which BERDE, EDGE, or LEED requirement is NOT met. Tests understanding of mandatory vs. optional provisions and typical design solutions.
+DOE energy-conserving design guidance supports envelope, orientation, daylighting, lighting, and active-system efficiency decisions.
 
-**Pattern 3: Climate-Driven Strategy**
-Question presents a tropical climate challenge (high rainfall, solar heat gain, humidity) and asks which passive or active strategy is most appropriate. Tests integration of sustainability with Philippines context.
+Certification claims require process evidence. Design strategies alone are not certification.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Remember: **BERDE = Philippines**, EDGE = cost/efficiency (20%), LEED = global prestige. All three share core sustainability categories: energy, water, materials, site, waste.
-[/SLATECAMP_UI_BLOCK]
-
-**Exam Tip:** BERDE is Philippine-specific (managed by PHILGBC). EDGE is IFC/World Bank (focus on efficiency). LEED is USGBC (most comprehensive). Know which certification applies to which project type.
-[SLATECAMP_UI_BLOCK:ui_0003 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-dsgn-009-04-core-concept", type="image", caption="Green Building Certification — BERDE, EDGE, and LEED Comparison", description="Comparison diagram for three Philippine green building certifications: BERDE (PhilGBC, point-based, 5 levels), EDGE (IFC, resource efficiency, 20% savings), LEED (USGBC, 4 levels). Scope, point allocation categories, applicable building types, and rating thresholds shown side-by-side.", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-## Cross-References
-
-See **LEA-DSGN-009-01** (Passive Design) for passive strategies in green certification, **LEA-DSGN-012-02** (Site Development) for sustainable site design, and **LEA-PLAN-008-03** (Sustainable Urban Development) for neighborhood-scale sustainability.
-
-## Common Mistakes
-
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\"Confusing LEED as the Philippine standard—BERDE is the national system under PHILGBC\",\"Thinking EDGE requires 100% renewable energy—it targets 20% efficiency improvement only\",\"Assuming prerequisites are optional—all three systems have mandatory minimums in core areas\",\"Overlooking passive design in favor of technology—tropical Philippines benefits significantly from natural ventilation and thermal mass\",\"Treating green building as cosmetic—certification is a framework; operational discipline and maintenance culture drive real impact\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+Voluntary green building work sits above mandatory laws and standards; it does not replace them.

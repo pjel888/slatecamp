@@ -1,7 +1,7 @@
 # Drills Route Forensics & Refactor Blueprint (v2)
 
-**Generated:** 2026-04-07  
-**Version:** 2.0 (Upgraded)  
+**Generated:** 2026-04-07
+**Version:** 2.0 (Upgraded)
 **Purpose:** Pre-refactor audit for the "Drills" nomenclature shift (testing → drills) and testing hub UI/functionality fixes.
 
 ---
@@ -64,10 +64,10 @@ The dual-highlighting bug stems from **two independent active-state calculations
   tier: 'secondary',
   group: 'practice',
   children: [
-    { 
-      id: 'test-sessions', 
-      label: 'Sessions', 
-      href: '/dashboard/testing'         // ← CHILD HREF (IDENTICAL!) 
+    {
+      id: 'test-sessions',
+      label: 'Sessions',
+      href: '/dashboard/testing'         // ← CHILD HREF (IDENTICAL!)
     },
   ],
 }
@@ -100,9 +100,9 @@ The dual-highlighting bug stems from **two independent active-state calculations
   tier: 'secondary',
   group: 'practice',
   children: [
-    { 
-      id: 'test-sessions', 
-      label: 'Sessions', 
+    {
+      id: 'test-sessions',
+      label: 'Sessions',
       href: '/dashboard/drills/sessions'  // ← UNIQUE CHILD ROUTE
     },
   ],
@@ -144,7 +144,7 @@ const normalizePath = (p: string) => p.replace(/\/$/, '')
 
 The viewport boxing originates **inside `ReviewHub.tsx`**, NOT from any layout wrapper:
 
-**File:** `src/components/testing/hub/ReviewHub.tsx`  
+**File:** `src/components/testing/hub/ReviewHub.tsx`
 **Line:** 304
 
 ```tsx
@@ -291,9 +291,9 @@ Update `src/components/sidebar/sidebar-constants.ts`:
 
 ```tsx
 children: [
-  { 
-    id: 'test-sessions', 
-    label: 'Sessions', 
+  {
+    id: 'test-sessions',
+    label: 'Sessions',
     href: '/dashboard/drills/sessions'  // ← NEW ROUTE
   },
 ]
@@ -491,10 +491,10 @@ const isDevBypassEnabled = process.env.NEXT_PUBLIC_DEV_BYPASS === 'true'
 // MODIFY computeSimulationGate (lines 176-185):
 const computeSimulationGate = (readinessScore: number): SimulationGateStatus => {
   const required = 65
-  
+
   // Dev bypass: Allow full access in development
   const bypassEnabled = isDevEnvironment || isDevBypassEnabled
-  
+
   return {
     isUnlocked: bypassEnabled || readinessScore >= required,
     currentReadiness: readinessScore,
@@ -533,7 +533,7 @@ For **middleware** (more complex, consider adding `x-dev-bypass` header for loca
 
 ```tsx
 // src/lib/supabase/middleware.ts
-const isDevRequest = process.env.NODE_ENV === 'development' && 
+const isDevRequest = process.env.NODE_ENV === 'development' &&
   request.headers.get('x-dev-bypass') === 'true'
 
 if (isDevRequest) {
@@ -579,7 +579,7 @@ FULL PATH → REFERENCED STRING
 
 src/storybook/scenes/wiki/WikiArticleScene.stories.tsx → "/dashboard/testing"
 src/lib/actions/sessions.ts → "/dashboard/testing"
-src/lib/actions/session-actions.ts → "/dashboard/testing"  
+src/lib/actions/session-actions.ts → "/dashboard/testing"
 src/lib/routes.ts → "/dashboard/testing"
 src/lib/actions/quiz-v2/generate-recommendations.ts → "/dashboard/testing"
 src/lib/actions/quiz-v2/abandon-session.ts → "/dashboard/testing"
@@ -605,8 +605,8 @@ src/components/analytics/WeakestTopics.tsx → "/dashboard/testing"
 
 ```sql
 -- Check for hardcoded paths in quiz_sessions
-SELECT session_id, config 
-FROM quiz_sessions 
+SELECT session_id, config
+FROM quiz_sessions
 WHERE config::text LIKE '%/dashboard/testing%'
 LIMIT 10;
 ```

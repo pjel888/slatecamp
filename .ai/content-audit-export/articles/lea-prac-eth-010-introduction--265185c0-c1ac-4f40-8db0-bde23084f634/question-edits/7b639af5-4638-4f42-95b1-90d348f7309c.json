@@ -1,0 +1,32 @@
+{
+  "question_id": "7b639af5-4638-4f42-95b1-90d348f7309c",
+  "baseline_hash": "sha256:b2bc2f71733b6df00850a841c813ecfa9ac9baa0f30bbc0b2b5838ae3d3a6769",
+  "reason": "Batch 003 source audit removed unsupported penalty ranges, restitution amounts, dollar values, and scenario statistics; questions now use RA 9266 IRR and UAP Code of Ethics conduct categories.",
+  "approved_by": "codex-local-source-audit-batch-003",
+  "approved_at": "2026-05-10T18:00:00+08:00",
+  "proposed": {
+    "text": "An architect receives a supplier commission or discount connected to a product recommendation. What does the UAP Code of Ethics require?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The commission is always allowed if disclosed"
+      },
+      {
+        "id": "b",
+        "text": "The architect may keep any market discount personally"
+      },
+      {
+        "id": "c",
+        "text": "Commissions, discounts, fees, gifts, or favors that create reciprocal obligation are prohibited; market discounts are credited to the client"
+      },
+      {
+        "id": "d",
+        "text": "This is governed only by RA 9184"
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": "UAP Code of Ethics provision 4-b prohibits such benefits when they create reciprocal obligation and says market discounts belong to the client.",
+    "explanation": "The edit removes the unsupported 12 percent scenario while preserving the tested ethics rule.",
+    "code_citation": "UAP Code of Ethics, provision 4-b"
+  }
+}

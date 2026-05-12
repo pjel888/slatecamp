@@ -1,8 +1,8 @@
 # Final Local Pre-Push Readiness Report
 
-**Generated:** 2026-05-03  
-**Status:** ✅ GO for human pre-push review — **NO-GO for live push** until stale-remote re-export completed  
-**Supabase:** 0 pushes, production untouched  
+**Generated:** 2026-05-03
+**Status:** ✅ GO for human pre-push review — **NO-GO for live push** until stale-remote re-export completed
+**Supabase:** 0 pushes, production untouched
 
 ---
 
@@ -146,7 +146,7 @@ These 8 articles had UI blocks intentionally removed during content optimization
 _Strictly requires fresh Supabase export/rebase before live push._
 
 ```
-certificate-of-occupancy, conflict-matrix-stairs-guards-elevators, 
+certificate-of-occupancy, conflict-matrix-stairs-guards-elevators,
 fire-resistive-construction-ratings, fixtures-and-small-items-in-common-areas,
 interior-doors-and-hardware, lea-dsgn-007-07-core-concept,
 lea-dsgn-008-03-core-concept, lea-hist-001-01-core-concept, [and 50 more]

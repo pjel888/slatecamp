@@ -1,7 +1,32 @@
 {
   "article_id": "31fff533-f6b9-44dc-8d46-996e5413a587",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "source_count": 0,
-  "sources": []
+  "sources_hash": "sha256:ea5b0bd70fc340cc725ac0fec0bd21af25965757e638c248b4e9c16d6837d659",
+  "source_count": 1,
+  "sources": [
+    {
+      "source_id": "hoa4p1-local-raw-pdf--b049-31fff533-01",
+      "article_id": "31fff533-f6b9-44dc-8d46-996e5413a587",
+      "label": "HOA Module 4 P1 - local raw PDF",
+      "url": null,
+      "source_type": "local_raw_pdf",
+      "description": "HOA Module 4 P1 - local raw PDF; local raw PDF checked first; refined markdown used only as locator. HOA Module 4 P1 refined markdown lines 278-365 and 700-760.",
+      "is_verified": true,
+      "sort_order": 0,
+      "created_at": "2026-05-11T20:35:00.000+08:00",
+      "updated_at": "2026-05-11T20:35:00.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/HOA MODULE 4 P1.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/002-History/HOA MODULE 4 P1.pdf",
+      "raw_pdf_sha256": "sha256:c89f7f79b3dd8272c7aa7d8848ea72c196d6c418f33105a32fb1ed2cfadbffb3",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/HOA MODULE 4 P1.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/HOA MODULE 4 P1.md",
+      "refined_markdown_sha256": "sha256:e515c8c5203118d4aeef0fe1f288c7deb76d75d3e3e1a779291712420c7df047",
+      "source_locator": "HOA Module 4 P1 refined markdown lines 278-365 and 700-760",
+      "checked_markdown_lines": [
+        "HOA Module 4 P1 refined markdown lines 278-365",
+        "HOA Module 4 P1 refined markdown lines 700-760"
+      ],
+      "local_audit_note": "Primary truth is the local raw PDF family; refined markdown line ranges are locator aids for the checked provisions."
+    }
+  ]
 }

@@ -3,8 +3,8 @@
 
 # Task 01: Setup Folder Structure + Protocol Files
 
-**Status:** in_progress  
-**Created:** 2026-04-06  
+**Status:** in_progress
+**Created:** 2026-04-06
 **Objective:** Create all directories and core protocol files for Model Workspace Protocol
 
 ---

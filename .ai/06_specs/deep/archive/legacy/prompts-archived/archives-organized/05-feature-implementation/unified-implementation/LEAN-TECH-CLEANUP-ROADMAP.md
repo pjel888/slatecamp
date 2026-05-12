@@ -216,7 +216,7 @@ export async function fetchUserSessions(
 ```
 
 **Rules for every extracted query:**
-1. Comment with `// FEATURE: ComponentName` 
+1. Comment with `// FEATURE: ComponentName`
 2. Explicit column list — never `select('*')`
 3. Always `.eq('user_id', userId)` — even with RLS
 4. Return typed `QueryResult<T>` — never raw Supabase response

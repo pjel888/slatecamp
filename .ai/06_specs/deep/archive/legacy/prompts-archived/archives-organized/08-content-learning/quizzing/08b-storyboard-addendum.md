@@ -53,7 +53,7 @@ STATE 3: User swipes the selected option card to the right.
       · In deferred modes: neutral grey lemonsqueezy with ✓
     - The card fully exits to the right (300ms ease-out)
     - Haptic feedback fires at the threshold crossing (if device supports it)
-    
+
 STATE 4: Answer submitted.
   → Server call fires (same as current submitAnswer action)
   → Transition to F-011 (feedback) or F-012 (deferred toast)
@@ -111,7 +111,7 @@ On the user's very first quiz question ever (tracked via `user_preferences.has_s
     │  Swipe right to submit  →      │
     │  or tap "Check Answer" below   │
     └────────────────────────────────┘
-    (tooltip, Cobalt bg, white text, 
+    (tooltip, Cobalt bg, white text,
      auto-dismisses after 5 seconds
      or on first successful swipe)
 ```
@@ -502,11 +502,11 @@ const bind = useGesture({
 // In the submitCurrentAnswer action:
 async submitCurrentAnswer() {
   const result = await submitAnswer(/* ... */);
-  
+
   // Check if this was the last question
   const state = get();
   const isLastQuestion = state.currentIndex === state.totalQuestions - 1;
-  
+
   if (isLastQuestion) {
     // Auto-end session — no confirmation needed
     // For immediate feedback modes: wait for user to tap "See Your Results"
@@ -541,7 +541,7 @@ if (userProfile.subscription_tier === 'pro') {
     .select('question_id, is_correct, created_at')
     .eq('user_id', userId)
     .in('question_id', sessionQuestionIds);
-  
+
   // Aggregate per question
   const questionHistory: Record<string, QuestionHistory> = {};
   for (const interaction of historyData.data) {
@@ -558,7 +558,7 @@ if (userProfile.subscription_tier === 'pro') {
       h.lastSeenAt = interaction.created_at;
     }
   }
-  
+
   return { ...reviewData, questionHistory };
 }
 ```

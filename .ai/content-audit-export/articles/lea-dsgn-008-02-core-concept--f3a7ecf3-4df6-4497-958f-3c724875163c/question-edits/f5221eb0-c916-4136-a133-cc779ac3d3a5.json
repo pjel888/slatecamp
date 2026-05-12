@@ -1,0 +1,32 @@
+{
+  "question_id": "f5221eb0-c916-4136-a133-cc779ac3d3a5",
+  "baseline_hash": "sha256:bc55f9f1ed395f7dc46724e6a2763b8a3255107473d8fe41bd47a809f0d8a6af",
+  "reason": "Batch 003 source audit corrected the wrong Group D storage premise. PD 1096 classifies Group D as Institutional and Group G as Storage and Hazardous; RA 9514 supplies protected-exit and special-hazard rules.",
+  "approved_by": "codex-local-source-audit-batch-003",
+  "approved_at": "2026-05-10T18:00:00+08:00",
+  "proposed": {
+    "text": "Under RA 9514 Section 10.2.5.2(B), what fire-resistance rating is required for a protected exit separation when the exit connects four or more storeys?",
+    "options": [
+      {
+        "id": "a",
+        "text": "20 minutes"
+      },
+      {
+        "id": "b",
+        "text": "45 minutes"
+      },
+      {
+        "id": "c",
+        "text": "1-hour"
+      },
+      {
+        "id": "d",
+        "text": "2-hour"
+      }
+    ],
+    "correct_option_id": "d",
+    "rationale": "A protected exit connecting four or more storeys requires at least two-hour fire resistance.",
+    "explanation": "The edit removes unsupported fire-door rating wording and asks the source-backed protected-exit rating.",
+    "code_citation": "RA 9514 2019 RIRR Section 10.2.5.2(B)"
+  }
+}

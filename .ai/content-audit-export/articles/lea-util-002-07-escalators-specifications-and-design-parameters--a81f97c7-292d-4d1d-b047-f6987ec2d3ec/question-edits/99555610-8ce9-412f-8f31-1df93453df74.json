@@ -1,0 +1,57 @@
+{
+  "question_id": "99555610-8ce9-412f-8f31-1df93453df74",
+  "baseline_hash": "sha256:aa8a9416b830204b4d9a945f3b57015548665fc14c1cd594ec59b03c40cd1706",
+  "action": "replace",
+  "reason": "source-audited-article-batch-046-local-first: local raw-source-backed replacement constrained to checked Batch 046 source families.",
+  "approved_by": "codex-local-first-batch-046",
+  "approved_at": "2026-05-11T17:58:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "a81f97c7-292d-4d1d-b047-f6987ec2d3ec",
+    "parent_article_slug": "lea-util-002-07-escalators-specifications-and-design-parameters",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Salvan Utilities 2 refined markdown lines 1707-1736, 16126-16250, 16432-16523",
+    "checked_markdown_lines": [
+      "Salvan Utilities 2 refined markdown lines 1707-1736",
+      "Salvan Utilities 2 refined markdown lines 16126-16250",
+      "Salvan Utilities 2 refined markdown lines 16432-16523"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "salvan-architectural-utilities-2-local-raw-pdf--b046",
+        "label": "George Salvan Architectural Utilities 2 - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+        "sha256": "sha256:ff7231f0059a1febaf4a0996a425caca3b7676c23c729f922e385af4e4c20d28",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
+        "refined_markdown_sha256": "sha256:1b9249c90c0b86c57c6df2f20f0ab210ac112a10230bd9bce584461773d75215",
+        "locator": "Salvan Utilities 2 refined markdown lines 1707-1736, 16126-16250, 16432-16523"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 046 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "Which escalator geometry statement matches the checked regulatory extract?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Inclination must not exceed 35 degrees from horizontal."
+      },
+      {
+        "id": "b",
+        "text": "Inclination may be any angle if treads are illuminated."
+      },
+      {
+        "id": "c",
+        "text": "Inclination is selected only by mall tenant preference."
+      },
+      {
+        "id": "d",
+        "text": "Inclination does not affect code review."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Inclination must not exceed 35 degrees from horizontal. This answer matches Salvan Utilities 2 refined markdown lines 1727-1736.",
+    "explanation": "Inclination must not exceed 35 degrees from horizontal. This answer matches Salvan Utilities 2 refined markdown lines 1727-1736.",
+    "code_citation": "Salvan Utilities 2 refined markdown lines 1727-1736"
+  }
+}

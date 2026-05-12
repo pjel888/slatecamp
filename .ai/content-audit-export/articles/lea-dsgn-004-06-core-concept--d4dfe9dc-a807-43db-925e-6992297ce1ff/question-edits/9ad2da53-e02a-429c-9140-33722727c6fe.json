@@ -1,0 +1,100 @@
+{
+  "question_id": "9ad2da53-e02a-429c-9140-33722727c6fe",
+  "baseline_hash": "sha256:e51d8d69a25360eadc6f1b147cdb571ea98374ef43929f70b1fbda190308c26a",
+  "action": "replace",
+  "reason": "source-audited-article-batch-063-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes stale unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-063",
+  "approved_at": "2026-05-11T21:58:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "d4dfe9dc-a807-43db-925e-6992297ce1ff",
+    "parent_article_slug": "lea-dsgn-004-06-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1141 and 1193-1272; raw PDF pages 47-70 checked for matching occupancy text; RA 9514 RIRR refined markdown lines 1463-1544, 2266-2313, 2515-2532, 2665-2728, 3982-4210, and 4273-4360; raw PDF pages 66, 84, 91, 134, and 138 checked for matching text; PD 9514 Fire Code refined markdown lines 1599-1629; raw PDF pages 57-58 checked for matching life-safety text",
+    "checked_markdown_lines": [
+      "PD 1096 RIRR DPWH Official refined markdown lines 1088-1141",
+      "PD 1096 RIRR DPWH Official refined markdown lines 1193-1272",
+      "RA 9514 RIRR refined markdown lines 1463-1544",
+      "RA 9514 RIRR refined markdown lines 2266-2313",
+      "RA 9514 RIRR refined markdown lines 2515-2532",
+      "RA 9514 RIRR refined markdown lines 2665-2728",
+      "RA 9514 RIRR refined markdown lines 3982-4210",
+      "RA 9514 RIRR refined markdown lines 4273-4360",
+      "PD 9514 Fire Code refined markdown lines 1599-1629"
+    ],
+    "checked_raw_pdf_pages": [
+      "PD 1096 RIRR DPWH Official raw PDF pages 47-70",
+      "RA 9514 RIRR raw PDF pages 66, 84, 91, 134, and 138",
+      "PD 9514 Fire Code raw PDF pages 57-58"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "pd1096-rirr-2004-occupancy-classification-dpwh-local-b063",
+        "label": "PD 1096 RIRR 2004 - occupancy classification and public-use matrices",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "locator": "PD 1096 RIRR DPWH Official refined markdown lines 1088-1141 and 1193-1272; raw PDF pages 47-70 checked for matching occupancy text"
+      },
+      {
+        "source_id": "ra9514-rirr-2019-fire-life-safety-local-b063",
+        "label": "RA 9514 Revised IRR 2019 - classification, means of egress, and assembly fire-safety rules",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "locator": "RA 9514 RIRR refined markdown lines 1463-1544, 2266-2313, 2515-2532, 2665-2728, 3982-4210, and 4273-4360; raw PDF pages 66, 84, 91, 134, and 138 checked for matching text"
+      },
+      {
+        "source_id": "pd9514-fire-code-life-safety-local-b063",
+        "label": "Fire Code source family - life-safety and egress general requirements",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf",
+        "sha256": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-9514/PD 9514 - Fire Code of the Philippines.md",
+        "refined_markdown_sha256": "sha256:5eb0584f1bcbfa87044e28f2e59a75c6364c7160a98edfdd888c6aef849b01b2",
+        "locator": "PD 9514 Fire Code refined markdown lines 1599-1629; raw PDF pages 57-58 checked for matching life-safety text"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, and citation rewritten to the Batch 063 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "What is the general minimum width for means of egress under the checked RA 9514 rule?",
+    "options": [
+      {
+        "id": "a",
+        "text": "915 mm unless a specific occupancy division provides otherwise."
+      },
+      {
+        "id": "b",
+        "text": "300 mm for every library."
+      },
+      {
+        "id": "c",
+        "text": "2.40 m for every room."
+      },
+      {
+        "id": "d",
+        "text": "No minimum width applies."
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "RA 9514 states a 915 mm general minimum for means of egress unless another occupancy rule controls.",
+    "explanation": "RA 9514 states a 915 mm general minimum for means of egress unless another occupancy rule controls.",
+    "code_citation": "RA 9514 refined markdown lines 2671-2678",
+    "bloom_level": "understand",
+    "application_context": "code_interpretation",
+    "practice_context": [
+      "occupancy classification",
+      "fire code review"
+    ],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false
+  }
+}

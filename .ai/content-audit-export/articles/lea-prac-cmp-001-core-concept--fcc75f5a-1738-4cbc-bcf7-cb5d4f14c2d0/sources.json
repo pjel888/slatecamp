@@ -1,32 +1,59 @@
 {
   "article_id": "fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:9ee7f76cac00aa36d64f1e53221251b036146faa5c27dc2099c7d244e4e2b057",
+  "sources_hash": "sha256:63c3866532400ae6884043bc4b42c2255ebcb6f57d027faf4265717264c8481a",
   "source_count": 2,
   "sources": [
     {
-      "source_id": "1e7b4b55-afa7-4ba0-80a2-bbbcba296a8a",
+      "source_id": "uap-standards-spp202-project-classification-local",
       "article_id": "fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0",
-      "label": "Architect's Guidelines, Project Classification Groups 1–10. SPP Doc 202, Regular Design Services — percentage of PCC method",
+      "label": "UAP Document Standards of Professional Practice - SPP 202 Project Classification and Compensation",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:01.68074+00:00",
-      "updated_at": "2026-03-24T04:34:01.68074+00:00"
+      "source_type": "professional_practice_pdf",
+      "description": "Local UAP Document Standards raw PDF and refined markdown checked for SPP 202 project groups, methods of compensation, other fee conditions, and PCC definition.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-11T20:30:00.000+08:00",
+      "updated_at": "2026-05-11T20:30:00.000+08:00",
+      "local_source_audit": {
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "source_locator": "UAP Standards refined markdown lines 362-457 and 473-551",
+        "checked_markdown_lines": [
+          "UAP Standards lines 362-412",
+          "UAP Standards lines 414-457",
+          "UAP Standards lines 473-551"
+        ],
+        "local_source_checked": true
+      }
     },
     {
-      "source_id": "37f5c25a-9639-4045-9436-56a5ba487dcc",
+      "source_id": "spp202-regular-design-services-local",
       "article_id": "fcc75f5a-1738-4cbc-bcf7-cb5d4f14c2d0",
-      "label": "RA 9266, The Architecture Act of 2004",
+      "label": "SPP 202 - Regular Design Services",
       "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 1,
-      "created_at": "2026-03-24T04:34:01.68074+00:00",
-      "updated_at": "2026-03-24T04:34:01.68074+00:00"
+      "source_type": "professional_practice_pdf",
+      "description": "Local SPP 202 raw PDF and refined markdown checked as the local raw source counterpart for regular design services.",
+      "is_verified": true,
+      "sort_order": 2,
+      "created_at": "2026-05-11T20:30:00.000+08:00",
+      "updated_at": "2026-05-11T20:30:00.000+08:00",
+      "local_source_audit": {
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+        "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+        "refined_markdown_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+        "source_locator": "SPP 202 local raw PDF; UAP Standards refined markdown supplies readable line support for the same professional-practice topic",
+        "checked_markdown_lines": [
+          "SPP 202 local raw PDF checked",
+          "UAP Standards lines 362-457 and 473-551 used for readable source locators"
+        ],
+        "local_source_checked": true
+      }
     }
   ]
 }

@@ -1,0 +1,138 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T21:50:00+08:00",
+  "audit_mode": "local_source_audit_no_supabase",
+  "protocols_applied": [
+    ".ai/CONTENT_EXCELLENCE_GOAL.md",
+    ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
+    ".ai/00_system/vitruvius-source-reference.md"
+  ],
+  "target": {
+    "article_id": "02a5ba32-0443-4162-837d-326783ed77a2",
+    "slug": "lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions",
+    "title": "RA 9266 Overview: Core Legal Frame and Key Definitions",
+    "article_folder": ".ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/candidate.md",
+    "candidate_sha256": "sha256:56aa80491dcc5c0a9cbe6a3da233473064aec237b4f3fe8083cd5c32ec45d143",
+    "normalized_sha256": "sha256:56aa80491dcc5c0a9cbe6a3da233473064aec237b4f3fe8083cd5c32ec45d143",
+    "linked_questions_sha256": "sha256:608aaccef07b02277f317ec71d538ae55f5109fcf768c35f91f548b2cdf34013",
+    "sources_sha256": "sha256:1db81284ca1a97f45fd4509072a7a08bed234a145579ffcb82f5973639acef32"
+  },
+  "classification": {
+    "content_type": "ra9266_overview_definitions_article",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": [
+      "55e9adf2-fd59-4a65-b7e7-2ec8b42fd4a9",
+      "3ad6f461-c4c4-45e6-af3a-88e089afb52d",
+      "e7b2b739-2599-447b-a856-d291c32f294f",
+      "5095e2a0-1ee7-4e67-8c91-5a7e998b3b70",
+      "6c099536-f6a9-4cda-863a-a5a97be9870b",
+      "bff7aa91-e5a7-462b-8b38-8371a20d273c",
+      "fe23d295-5ba2-4572-b481-7b8eb472010f",
+      "7e4e697d-9af0-4014-abfc-d26db4d50092",
+      "16ddda97-9cf3-4b6d-9a7e-79b05fd2a19e",
+      "3a13ae21-70c5-44cd-884f-04f7305e3640"
+    ]
+  },
+  "raw_sources": [
+    {
+      "key": "ra9266_irr",
+      "label": "RA 9266 IRR Architecture Act of 2004",
+      "source_type": "implementing_rules",
+      "source_id": "batch005-lea-prac-law-001-ra-9266-overview-history-legisl-source-01",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "checked_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        22,
+        23
+      ]
+    }
+  ],
+  "gate_results": {
+    "compose": "PASS: content-audit:compose -- --article-id 02a5ba32-0443-4162-837d-326783ed77a2 --overwrite; blockers=0",
+    "diff": "PASS: content-audit:diff -- --article-id 02a5ba32-0443-4162-837d-326783ed77a2; changed=true safe_to_push=true blockers=0",
+    "validate": "PASS: content-audit:validate -- --article-id 02a5ba32-0443-4162-837d-326783ed77a2 --summary --dry-run; valid=true blockers=0 warnings=0",
+    "push_dry_run": "not_attempted_local_first; Supabase remote fetch is final publishing only and intentionally non-blocking here",
+    "supabase_mutation": "not_attempted_by_request"
+  },
+  "claims": [
+    {
+      "claim_id": "law001-claim-01",
+      "claim_text": "Section 1 identifies RA 9266 as the Architecture Act of 2004 and states that it repealed RA 545 as amended.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "law001-claim-02",
+      "claim_text": "Section 2 states the policy frame for regulation, registration, licensure, practice, and architecture education.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "law001-claim-03",
+      "claim_text": "Section 3 defines architecture, Architect, Architect-of-Record, Architect-in-Charge of Construction, Consulting Architect, scope of practice, and structural conceptualization.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "law001-claim-04",
+      "claim_text": "Section 4 creates the PRBoA under PRC supervision and administrative control and uses IAPOA nominees for Board appointments.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "law001-claim-05",
+      "claim_text": "Section 6 gives a three-year Board term and one full-term reappointment rule.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions-linked-question-edits",
+      "claim_text": "Question edits staged locally for linked question IDs/model IDs: 55e9adf2-fd59-4a65-b7e7-2ec8b42fd4a9 (ALE-PRAC-LAW-001-007), 3ad6f461-c4c4-45e6-af3a-88e089afb52d (ALE-PRAC-LAW-001-002), e7b2b739-2599-447b-a856-d291c32f294f (ALE-PRAC-LAW-001-004), 5095e2a0-1ee7-4e67-8c91-5a7e998b3b70 (ALE-PRAC-LAW-001-003), 6c099536-f6a9-4cda-863a-a5a97be9870b (ALE-PRAC-LAW-001-010), bff7aa91-e5a7-462b-8b38-8371a20d273c (ALE-PRAC-LAW-001-006), fe23d295-5ba2-4572-b481-7b8eb472010f (ALE-PRAC-LAW-001-005), 7e4e697d-9af0-4014-abfc-d26db4d50092 (ALE-PRAC-LAW-001-008), 16ddda97-9cf3-4b6d-9a7e-79b05fd2a19e (ALE-PRAC-LAW-001-009), 3a13ae21-70c5-44cd-884f-04f7305e3640 (ALE-PRAC-LAW-001-001)",
+      "audit_result": "PASS",
+      "source_support": [
+        "ra9266_irr"
+      ]
+    }
+  ],
+  "unsupported_or_removed_claims": [
+    "Removed learner-visible UI placeholders, preserved placeholder blocks, extracted-summary notes, and internal replacement notes from normalized/candidate content.",
+    "Removed exact signing-date test from article/question because the checked raw RA 9266 IRR PDF pages do not show that date.",
+    "Corrected Section 41/IAPOA nominee language to Section 4 for nominees and Section 40 for UAP/IAPOA integration.",
+    "Rewrote structural-conceptualization question to avoid unsupported engineering-document boundary claims."
+  ],
+  "remaining_local_blockers": [],
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_recovery_complete": true,
+    "remote_publish_status": "not_attempted_by_request",
+    "remaining_local_blockers": []
+  },
+  "local_validation": {
+    "command": "bun run content-audit:validate -- --article-id 02a5ba32-0443-4162-837d-326783ed77a2 --summary --dry-run",
+    "valid": true,
+    "blockers": 0,
+    "warnings": [],
+    "checked_at": "2026-05-10T21:50:00+08:00"
+  }
+}

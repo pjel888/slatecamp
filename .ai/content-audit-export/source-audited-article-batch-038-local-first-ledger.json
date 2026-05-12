@@ -1,0 +1,334 @@
+{
+  "batch_id": "source-audited-article-batch-038-local-first",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "generated_at": "2026-05-11T13:29:09+08:00",
+  "local_only": true,
+  "supabase_push": false,
+  "deploy": false,
+  "commit": false,
+  "inherited_blocker_status": "Batch 037 blockers=0",
+  "blockers": [],
+  "counts": {
+    "article_count": 5,
+    "json_parse_count": 187,
+    "linked_question_count": 132,
+    "question_edit_count": 132,
+    "source_rows_written": 5,
+    "unique_raw_pdf_files_checked": 1,
+    "source_hash_checks": 10,
+    "placeholder_internal_source_gap_matches": 0,
+    "stale_compose_error_files": 0
+  },
+  "articles": [
+    {
+      "index": 1,
+      "article_id": "d6015c96-3954-4780-ad92-64507a2959d1",
+      "slug": "sheet-metal-and-spray-booths",
+      "title": "Sheet Metal and Spray Booths",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/sheet-metal-and-spray-booths--d6015c96-3954-4780-ad92-64507a2959d1",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/sheet-metal-and-spray-booths--d6015c96-3954-4780-ad92-64507a2959d1/question-edits",
+      "exact_improved_paths": {
+        "normalized_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/sheet-metal-and-spray-booths--d6015c96-3954-4780-ad92-64507a2959d1/normalized.md",
+        "candidate_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/sheet-metal-and-spray-booths--d6015c96-3954-4780-ad92-64507a2959d1/candidate.md",
+        "sources_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/sheet-metal-and-spray-booths--d6015c96-3954-4780-ad92-64507a2959d1/sources.json",
+        "source_audit_evidence_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/sheet-metal-and-spray-booths--d6015c96-3954-4780-ad92-64507a2959d1/source-audit-evidence.json",
+        "ui_blocks_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/sheet-metal-and-spray-booths--d6015c96-3954-4780-ad92-64507a2959d1/ui-blocks.json",
+        "compose_report_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/sheet-metal-and-spray-booths--d6015c96-3954-4780-ad92-64507a2959d1/compose-report.json",
+        "diff_report_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/sheet-metal-and-spray-booths--d6015c96-3954-4780-ad92-64507a2959d1/diff-report.json"
+      },
+      "linked_questions": 34,
+      "question_edits": 34,
+      "source_rows": 1,
+      "candidate_hash": "sha256:2b6d8a6fdbc83c120128a3d0eb14afc9f3ddf55e20decb8246d4d2f25f0db984",
+      "normalized_hash": "sha256:2b6d8a6fdbc83c120128a3d0eb14afc9f3ddf55e20decb8246d4d2f25f0db984",
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": []
+      },
+      "validate": {
+        "valid": true,
+        "blockers": []
+      },
+      "source_audit": {
+        "status": "PASS",
+        "raw_pdf_gate": "PASS",
+        "blockers": []
+      },
+      "raw_sources": [
+        {
+          "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+          "label": "PD 1096 2004 Revised IRR - DPWH Official",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "source_locator": "PD 1096 RIRR refined markdown lines 4448-4472",
+          "checked_markdown_lines": [
+            "PD 1096 RIRR refined markdown lines 4448-4472"
+          ]
+        }
+      ],
+      "metadata_content_hash_note": "Local export baseline repaired to current original.md hash before final compose/diff/validate."
+    },
+    {
+      "index": 2,
+      "article_id": "66b5fe8b-8fda-4483-aa77-37d52adec286",
+      "slug": "vertical-openings-and-floor-roof-construction",
+      "title": "Vertical Openings and Floor Roof Construction",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/vertical-openings-and-floor-roof-construction--66b5fe8b-8fda-4483-aa77-37d52adec286",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/vertical-openings-and-floor-roof-construction--66b5fe8b-8fda-4483-aa77-37d52adec286/question-edits",
+      "exact_improved_paths": {
+        "normalized_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/vertical-openings-and-floor-roof-construction--66b5fe8b-8fda-4483-aa77-37d52adec286/normalized.md",
+        "candidate_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/vertical-openings-and-floor-roof-construction--66b5fe8b-8fda-4483-aa77-37d52adec286/candidate.md",
+        "sources_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/vertical-openings-and-floor-roof-construction--66b5fe8b-8fda-4483-aa77-37d52adec286/sources.json",
+        "source_audit_evidence_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/vertical-openings-and-floor-roof-construction--66b5fe8b-8fda-4483-aa77-37d52adec286/source-audit-evidence.json",
+        "ui_blocks_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/vertical-openings-and-floor-roof-construction--66b5fe8b-8fda-4483-aa77-37d52adec286/ui-blocks.json",
+        "compose_report_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/vertical-openings-and-floor-roof-construction--66b5fe8b-8fda-4483-aa77-37d52adec286/compose-report.json",
+        "diff_report_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/vertical-openings-and-floor-roof-construction--66b5fe8b-8fda-4483-aa77-37d52adec286/diff-report.json"
+      },
+      "linked_questions": 29,
+      "question_edits": 29,
+      "source_rows": 1,
+      "candidate_hash": "sha256:6a6f3c2b0c261d9d1f68ca2aea37d659ced62ba9a0bd00aa17f92d990673586c",
+      "normalized_hash": "sha256:6a6f3c2b0c261d9d1f68ca2aea37d659ced62ba9a0bd00aa17f92d990673586c",
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": []
+      },
+      "validate": {
+        "valid": true,
+        "blockers": []
+      },
+      "source_audit": {
+        "status": "PASS",
+        "raw_pdf_gate": "PASS",
+        "blockers": []
+      },
+      "raw_sources": [
+        {
+          "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+          "label": "PD 1096 2004 Revised IRR - DPWH Official",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "source_locator": "PD 1096 RIRR refined markdown lines 3447-3470",
+          "checked_markdown_lines": [
+            "PD 1096 RIRR refined markdown lines 3447-3470"
+          ]
+        }
+      ],
+      "metadata_content_hash_note": "Local export baseline repaired to current original.md hash before final compose/diff/validate."
+    },
+    {
+      "index": 3,
+      "article_id": "b2166005-73ba-4a95-8dea-93e12bae9a6b",
+      "slug": "penthouses-and-roof-structures",
+      "title": "Penthouses and Roof Structures",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/penthouses-and-roof-structures--b2166005-73ba-4a95-8dea-93e12bae9a6b",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/penthouses-and-roof-structures--b2166005-73ba-4a95-8dea-93e12bae9a6b/question-edits",
+      "exact_improved_paths": {
+        "normalized_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/penthouses-and-roof-structures--b2166005-73ba-4a95-8dea-93e12bae9a6b/normalized.md",
+        "candidate_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/penthouses-and-roof-structures--b2166005-73ba-4a95-8dea-93e12bae9a6b/candidate.md",
+        "sources_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/penthouses-and-roof-structures--b2166005-73ba-4a95-8dea-93e12bae9a6b/sources.json",
+        "source_audit_evidence_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/penthouses-and-roof-structures--b2166005-73ba-4a95-8dea-93e12bae9a6b/source-audit-evidence.json",
+        "ui_blocks_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/penthouses-and-roof-structures--b2166005-73ba-4a95-8dea-93e12bae9a6b/ui-blocks.json",
+        "compose_report_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/penthouses-and-roof-structures--b2166005-73ba-4a95-8dea-93e12bae9a6b/compose-report.json",
+        "diff_report_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/penthouses-and-roof-structures--b2166005-73ba-4a95-8dea-93e12bae9a6b/diff-report.json"
+      },
+      "linked_questions": 26,
+      "question_edits": 26,
+      "source_rows": 1,
+      "candidate_hash": "sha256:a8992f63c942efe766446a10aa1699be5a7b456d0c7c15eca64eae68862315f3",
+      "normalized_hash": "sha256:a8992f63c942efe766446a10aa1699be5a7b456d0c7c15eca64eae68862315f3",
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": []
+      },
+      "validate": {
+        "valid": true,
+        "blockers": []
+      },
+      "source_audit": {
+        "status": "PASS",
+        "raw_pdf_gate": "PASS",
+        "blockers": []
+      },
+      "raw_sources": [
+        {
+          "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+          "label": "PD 1096 2004 Revised IRR - DPWH Official",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "source_locator": "PD 1096 RIRR refined markdown lines 3763-3787",
+          "checked_markdown_lines": [
+            "PD 1096 RIRR refined markdown lines 3763-3787"
+          ]
+        }
+      ],
+      "metadata_content_hash_note": "Local export baseline repaired to current original.md hash before final compose/diff/validate."
+    },
+    {
+      "index": 4,
+      "article_id": "dc69faa6-ef36-40a7-a8f1-fdd88debdbf5",
+      "slug": "commercial-clearances",
+      "title": "Commercial Clearances",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/commercial-clearances--dc69faa6-ef36-40a7-a8f1-fdd88debdbf5",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/commercial-clearances--dc69faa6-ef36-40a7-a8f1-fdd88debdbf5/question-edits",
+      "exact_improved_paths": {
+        "normalized_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/commercial-clearances--dc69faa6-ef36-40a7-a8f1-fdd88debdbf5/normalized.md",
+        "candidate_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/commercial-clearances--dc69faa6-ef36-40a7-a8f1-fdd88debdbf5/candidate.md",
+        "sources_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/commercial-clearances--dc69faa6-ef36-40a7-a8f1-fdd88debdbf5/sources.json",
+        "source_audit_evidence_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/commercial-clearances--dc69faa6-ef36-40a7-a8f1-fdd88debdbf5/source-audit-evidence.json",
+        "ui_blocks_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/commercial-clearances--dc69faa6-ef36-40a7-a8f1-fdd88debdbf5/ui-blocks.json",
+        "compose_report_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/commercial-clearances--dc69faa6-ef36-40a7-a8f1-fdd88debdbf5/compose-report.json",
+        "diff_report_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/commercial-clearances--dc69faa6-ef36-40a7-a8f1-fdd88debdbf5/diff-report.json"
+      },
+      "linked_questions": 22,
+      "question_edits": 22,
+      "source_rows": 1,
+      "candidate_hash": "sha256:60d2554d8c173ae111bdd3de2950f5667351fd879954d419bab482f9f24f3127",
+      "normalized_hash": "sha256:60d2554d8c173ae111bdd3de2950f5667351fd879954d419bab482f9f24f3127",
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": []
+      },
+      "validate": {
+        "valid": true,
+        "blockers": []
+      },
+      "source_audit": {
+        "status": "PASS",
+        "raw_pdf_gate": "PASS",
+        "blockers": []
+      },
+      "raw_sources": [
+        {
+          "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+          "label": "PD 1096 2004 Revised IRR - DPWH Official",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "source_locator": "PD 1096 RIRR refined markdown lines 2087-2138; PD 1096 RIRR refined markdown lines 2246-2310; PD 1096 RIRR refined markdown lines 2352-2356",
+          "checked_markdown_lines": [
+            "PD 1096 RIRR refined markdown lines 2087-2138",
+            "PD 1096 RIRR refined markdown lines 2246-2310",
+            "PD 1096 RIRR refined markdown lines 2352-2356"
+          ]
+        }
+      ],
+      "metadata_content_hash_note": "Local export baseline repaired to current original.md hash before final compose/diff/validate."
+    },
+    {
+      "index": 5,
+      "article_id": "5ba0b022-0a85-4d27-af92-79d093a8d491",
+      "slug": "residential-clearances",
+      "title": "Residential Clearances",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/residential-clearances--5ba0b022-0a85-4d27-af92-79d093a8d491",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/residential-clearances--5ba0b022-0a85-4d27-af92-79d093a8d491/question-edits",
+      "exact_improved_paths": {
+        "normalized_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/residential-clearances--5ba0b022-0a85-4d27-af92-79d093a8d491/normalized.md",
+        "candidate_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/residential-clearances--5ba0b022-0a85-4d27-af92-79d093a8d491/candidate.md",
+        "sources_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/residential-clearances--5ba0b022-0a85-4d27-af92-79d093a8d491/sources.json",
+        "source_audit_evidence_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/residential-clearances--5ba0b022-0a85-4d27-af92-79d093a8d491/source-audit-evidence.json",
+        "ui_blocks_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/residential-clearances--5ba0b022-0a85-4d27-af92-79d093a8d491/ui-blocks.json",
+        "compose_report_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/residential-clearances--5ba0b022-0a85-4d27-af92-79d093a8d491/compose-report.json",
+        "diff_report_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/residential-clearances--5ba0b022-0a85-4d27-af92-79d093a8d491/diff-report.json"
+      },
+      "linked_questions": 21,
+      "question_edits": 21,
+      "source_rows": 1,
+      "candidate_hash": "sha256:514a5d41e42a7529fa80169eb5c154a1e14275ab29fbcd0abafd2c22845a2e84",
+      "normalized_hash": "sha256:514a5d41e42a7529fa80169eb5c154a1e14275ab29fbcd0abafd2c22845a2e84",
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": []
+      },
+      "validate": {
+        "valid": true,
+        "blockers": []
+      },
+      "source_audit": {
+        "status": "PASS",
+        "raw_pdf_gate": "PASS",
+        "blockers": []
+      },
+      "raw_sources": [
+        {
+          "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+          "label": "PD 1096 2004 Revised IRR - DPWH Official",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "source_locator": "PD 1096 RIRR refined markdown lines 2087-2138; PD 1096 RIRR refined markdown lines 2169-2190; PD 1096 RIRR refined markdown lines 2246-2310; PD 1096 RIRR refined markdown lines 2352-2356",
+          "checked_markdown_lines": [
+            "PD 1096 RIRR refined markdown lines 2087-2138",
+            "PD 1096 RIRR refined markdown lines 2169-2190",
+            "PD 1096 RIRR refined markdown lines 2246-2310",
+            "PD 1096 RIRR refined markdown lines 2352-2356"
+          ]
+        }
+      ],
+      "metadata_content_hash_note": "Local export baseline repaired to current original.md hash before final compose/diff/validate."
+    }
+  ],
+  "validation": {
+    "compose": "PASS for 5/5; blockers=0",
+    "diff": "PASS for 5/5; changed=true; safe_to_push=true; blockers=0",
+    "validate": "PASS for 5/5; valid=true; blockers=0; expected component-usage warnings only",
+    "ui_block_edits": "PASS for 5/5; blockers=0; warnings=0",
+    "scoped_checks": "PASS; JSON parse 187; question edits 132; source hash checks 10; marker matches 0; stale compose errors 0",
+    "targeted_tests": "PASS; 34 pass, 0 fail, 328 expects",
+    "git_diff_check": "PASS"
+  },
+  "artifacts": {
+    "ledger": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-038-local-first-ledger.json",
+    "report": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-038-local-first-report.md",
+    "scoped_checks": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-038-local-first-scoped-checks.json",
+    "handoff": "/Users/philiplewis/slatecamp/.ai/03_plans/source-audited-local-first-batches-handoff.md"
+  },
+  "next_batch_readiness": {
+    "ready": true,
+    "next_batch": "Batch 039",
+    "selection_rule": "Exclude article IDs recorded in Batches 001-038; prefer high-value LEA legal/code/professional-practice clusters with linked questions and raw PDF families available."
+  }
+}

@@ -627,7 +627,7 @@ SELECT * FROM selected ORDER BY random();  -- Shuffle final order
 ## 8. Offline Sync Architecture
 
 ```
-[Client] answer submitted → 
+[Client] answer submitted →
   TRY:
     Call submitAnswer Server Action
     IF success → remove from pendingSubmissions queue

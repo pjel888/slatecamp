@@ -1,0 +1,162 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-049-local-first",
+  "batch_number": 49,
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T20:55:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "9e0b9ab6-1761-4127-abdd-d7579fb05b20",
+    "slug": "lea-util-008-04-what-you-need-to-know-for-the-lea",
+    "title": "Philippine utility laws and standards",
+    "article_folder": ".ai/content-audit-export/articles/lea-util-008-04-what-you-need-to-know-for-the-lea--9e0b9ab6-1761-4127-abdd-d7579fb05b20",
+    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-008-04-what-you-need-to-know-for-the-lea--9e0b9ab6-1761-4127-abdd-d7579fb05b20",
+    "candidate_path": ".ai/content-audit-export/articles/lea-util-008-04-what-you-need-to-know-for-the-lea--9e0b9ab6-1761-4127-abdd-d7579fb05b20/candidate.md",
+    "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-008-04-what-you-need-to-know-for-the-lea--9e0b9ab6-1761-4127-abdd-d7579fb05b20/candidate.md",
+    "question_edits_folder": ".ai/content-audit-export/articles/lea-util-008-04-what-you-need-to-know-for-the-lea--9e0b9ab6-1761-4127-abdd-d7579fb05b20/question-edits",
+    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-008-04-what-you-need-to-know-for-the-lea--9e0b9ab6-1761-4127-abdd-d7579fb05b20/question-edits",
+    "normalized_sha256": "sha256:89a058c3318bf7d201d4611f6f6d15442c91ca539e484cc7e6c58302ae71181c",
+    "candidate_sha256": "sha256:89a058c3318bf7d201d4611f6f6d15442c91ca539e484cc7e6c58302ae71181c",
+    "linked_questions_sha256": "sha256:e41d6332fdabe2258598f2aaf7fd8fd782ca7c511e23ae5eb95109f844b25d5e",
+    "sources_sha256": "sha256:e7c2a42ce87e7ad45679e5b798df7c38b444f6c1abecad878b479147100118cb"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "refined_markdown_role": "locator_only",
+    "derivative_or_search_layer_as_primary": false,
+    "source_families_checked": [
+      {
+        "label": "Philippine Electrical Code - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+        "raw_pdf_sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+        "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3",
+        "locator": "Philippine Electrical Code refined markdown lines 29229-29315, 29472-29504, 29595-29610, 29694-29723, and 29830-29855"
+      },
+      {
+        "label": "Revised National Plumbing Code of the Philippines - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf",
+        "raw_pdf_sha256": "sha256:c4ec30ec3ffe3b39513a033ebc2cfa614bd201d25c5578e1847e7f359fed3f5d",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Revised National Plumbing Code of the Philippines.md",
+        "refined_markdown_sha256": "sha256:7cea224bfc6c54d0883fe69c89b97cf134e45acaab6c8950b8af3621059c9a91",
+        "locator": "Revised National Plumbing Code refined markdown lines 71-112, 145-151, 175-182, and 209-230"
+      },
+      {
+        "label": "RA 11285 Energy Efficiency and Conservation Act - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf",
+        "raw_pdf_sha256": "sha256:316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.md",
+        "refined_markdown_sha256": "sha256:d2baa0e8d4ffe0059688783a4d31ac0e121517daca939f18a048fe053e76cdd4",
+        "locator": "RA 11285 refined markdown lines 31-105, 599-613, 719-775, and 1086-1124"
+      },
+      {
+        "label": "DOE Guidelines on Energy Conserving Design of Buildings - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+        "raw_pdf_sha256": "sha256:9a1a4019b500ffc2873625db6f04ac50b39aea7cadac9159464f9ed716e8126c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.md",
+        "refined_markdown_sha256": "sha256:477f0990a67359eee303e8280a00be449d0aa413252161db7b5b1bafec3012b9",
+        "locator": "DOE Guidelines refined markdown lines 21-43, 260-273, 321-425, and 707-785"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "philippine_utility_laws_article",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 15,
+    "question_edits_created": [
+      "46b5d235-5848-4cb4-9309-67cdd3259870",
+      "253ea8ab-aee8-40d3-a579-42c9cb98df05",
+      "81c040bd-ec0d-4a75-bb72-141ee602749b",
+      "00f00e5c-8a24-4a5f-9bef-1f5f66140aad",
+      "75853a85-b945-43f4-a7d6-bbf42de64739",
+      "42d8f0ab-eac2-4e1f-9bb1-4b09bb9be51f",
+      "4fd23aec-9698-4183-ad57-9575ab1eb5f7",
+      "c5fe4c99-47d8-4b5f-bce3-88d652cfcc3c",
+      "ac7167a0-3864-4633-8665-aa0368205333",
+      "cf8f658c-2f51-4cf7-8ad4-74b104109b86",
+      "6b02f55d-25da-490b-b79b-a00081517dcd",
+      "556e3a8d-a19c-486b-be7c-0a0be4cccbda",
+      "5d9b57be-0834-4832-8dfe-677dbd285c17",
+      "ab936f82-45fd-4a22-8f2e-7e43336a77a3",
+      "4cb8116d-cfba-41e4-bd16-603f2c3c2aec"
+    ]
+  },
+  "claims": [
+    {
+      "claim_id": "lea-util-008-04-what-you-need-to-know-for-the-lea-b049-claim-01",
+      "claim_text": "PEC Articles 6.90 and 6.92 govern PV and fuel-cell electrical power-production systems.",
+      "source_support": [
+        "pec-local-raw-pdf--b049-9e0b9ab6-01",
+        "plumbing-local-raw-pdf--b049-9e0b9ab6-02",
+        "ra11285-local-raw-pdf--b049-9e0b9ab6-03",
+        "doe-local-raw-pdf--b049-9e0b9ab6-04"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-util-008-04-what-you-need-to-know-for-the-lea-b049-claim-02",
+      "claim_text": "The plumbing code requires water, drainage, sewage, permits, signed and sealed plans, administrative review, inspection, testing, and RMP involvement.",
+      "source_support": [
+        "pec-local-raw-pdf--b049-9e0b9ab6-01",
+        "plumbing-local-raw-pdf--b049-9e0b9ab6-02",
+        "ra11285-local-raw-pdf--b049-9e0b9ab6-03",
+        "doe-local-raw-pdf--b049-9e0b9ab6-04"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-util-008-04-what-you-need-to-know-for-the-lea-b049-claim-03",
+      "claim_text": "RA 11285 and DOE Guidelines govern building energy-efficiency performance for new construction and retrofits.",
+      "source_support": [
+        "pec-local-raw-pdf--b049-9e0b9ab6-01",
+        "plumbing-local-raw-pdf--b049-9e0b9ab6-02",
+        "ra11285-local-raw-pdf--b049-9e0b9ab6-03",
+        "doe-local-raw-pdf--b049-9e0b9ab6-04"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-util-008-04-what-you-need-to-know-for-the-lea-b049-claim-04",
+      "claim_text": "A utility-code answer should classify the system before selecting the controlling source family.",
+      "source_support": [
+        "pec-local-raw-pdf--b049-9e0b9ab6-01",
+        "plumbing-local-raw-pdf--b049-9e0b9ab6-02",
+        "ra11285-local-raw-pdf--b049-9e0b9ab6-03",
+        "doe-local-raw-pdf--b049-9e0b9ab6-04"
+      ],
+      "audit_result": "PASS"
+    }
+  ],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "removed_risk_notes": [
+      "Question sidecars replaced with checked local raw-source citations.",
+      "Article body rewritten from local raw PDF families and refined markdown locators only.",
+      "Legacy compose-error sidecars are removed after selected bundle compose passes."
+    ]
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_batch_049_complete": true,
+    "remote_publish_status": "not_attempted_by_request",
+    "remaining_local_blockers": []
+  },
+  "local_validation": {
+    "status": "PASS",
+    "valid": true,
+    "blockers": 0,
+    "checked_at": "2026-05-11T20:55:00.000+08:00",
+    "commands": [
+      "bun run content-audit:compose -- --article-id 9e0b9ab6-1761-4127-abdd-d7579fb05b20 --overwrite --strict",
+      "bun run content-audit:diff -- --article-id 9e0b9ab6-1761-4127-abdd-d7579fb05b20 --strict --summary",
+      "bun run content-audit:validate -- --article-id 9e0b9ab6-1761-4127-abdd-d7579fb05b20 --summary",
+      "bun run content-audit:ui-block-edits -- --article-id 9e0b9ab6-1761-4127-abdd-d7579fb05b20"
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "question_id": "5c4f9e3d-3f64-4f69-9501-9be7ef2d88fb",
+  "baseline_hash": "sha256:ca4bca7497f3dc97e1bcdede41eb207b7fd327f4a628d5778d9b081c86503bd1",
+  "action": "replace",
+  "reason": "source-audited-article-batch-014-local-first aligned linked question with local-first source audit for lea-dsgn-007-07-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-014",
+  "approved_at": "2026-05-10T23:05:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "569f5a05-ad46-4617-8170-a19e2f5d5db1",
+    "parent_article_slug": "lea-dsgn-007-07-core-concept",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "PD 1096 Rule 7/8 supports the development-control workflow: apply FLAR, compute/check AMBF through PSO, check BHL, calculate GFA/TGFA, and use problem/LGU zoning inputs for exact PSO/FLAR values.",
+    "checked_markdown_lines": [
+      "raw markdown lines 1664-1685, 1761-1785, 1793-1825, 1834-1840",
+      "raw markdown lines 1607-1665, 2495, 2595, 4020-4087, 7055, 7097, 7170, 7184, 9655",
+      "canonical source lines 1607-1665, 2495, 2595"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 IRR - Rules 7 and 8 Light Ventilation and Development Controls.pdf",
+        "sha256": "sha256:3fd01acd4ec7f37dbff97dba72c107502b46a05f59803df9973dfea62907a55d",
+        "source_id": "pd-1096-rule-7-8-development-controls",
+        "locator": "FLAR, AMBF, PSO, BHL, GFA/TGFA formulas and development-control workflow"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 IRR - Rules 7 and 8 Light Ventilation and Development Controls.md",
+        "sha256": "sha256:9e1dedb0554ace070c0401c37625b68205b9eb43e6c77cae5f98237b94a95309",
+        "source_id": "pd-1096-rule-7-8-development-controls",
+        "locator": "FLAR, AMBF, PSO, BHL, GFA/TGFA formulas and development-control workflow"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.pdf",
+        "sha256": "sha256:8e98d8afd4b5972ba5a82d33a65e59e800cd41661b764a0dfc4112d29697b341",
+        "source_id": "pd-1096-full-irr-occupancy-development-controls",
+        "locator": "Occupancy groups, funeral parlors/memorial chapels in zoning tables, PSO/MACA/TOSL definitions, window openings"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.md",
+        "sha256": "sha256:74351a12fcecb23ef611e23e40f1e73b87e2bdb8f9a625e886dc1b906e83c940",
+        "source_id": "pd-1096-full-irr-occupancy-development-controls",
+        "locator": "Occupancy groups, funeral parlors/memorial chapels in zoning tables, PSO/MACA/TOSL definitions, window openings"
+      },
+      {
+        "path": "vitruvius-connection/003_Canonical-Knowledge-Layer/shared/sources/implementing-rules-and-regulations.md",
+        "sha256": "sha256:2c8c7c95eb110e83065c11b1370051dc5e191cb46932c11d2d37a5e7647537a5",
+        "source_id": "pd-1096-full-irr-occupancy-development-controls",
+        "locator": "Occupancy groups, funeral parlors/memorial chapels in zoning tables, PSO/MACA/TOSL definitions, window openings"
+      }
+    ],
+    "local_source_safe_action": "proposed learner-facing text/options/explanation rewritten to remove or qualify an exact claim not supported by the checked local source packet"
+  },
+  "proposed": {
+    "text": "A C-2 commercial lot is 1,000 sqm with FLAR limit 12.0, BHL 50 m, 3.0 m floor-to-floor height, and a problem-stated AMBF of 750 sqm. How many complete floors fit both constraints?",
+    "options": [
+      {
+        "id": "a",
+        "text": "16 floors: BHL gives 16 full floors and 16 x 750 = 12,000 sqm, exactly at FLAR 12.0"
+      },
+      {
+        "id": "b",
+        "text": "14 floors because C-2 lots always use a lower national FLAR"
+      },
+      {
+        "id": "c",
+        "text": "12 floors as a conservative default"
+      },
+      {
+        "id": "d",
+        "text": "8 floors because both constraints always halve the BHL result"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "BHL permits floor(50/3) = 16 full floors. With the problem-stated AMBF of 750 sqm, 16 floors produce 12,000 sqm TGFA, which equals the stated FLAR cap of 1,000 x 12.0.",
+    "explanation": "Use the problem-stated local zoning values. Do not present the C-2 PSO/FLAR numbers as a universal national value unless the local ordinance is cited.",
+    "code_citation": "PD 1096 Rule VII/VIII; LGU zoning input stated in item",
+    "bloom_level": "apply",
+    "application_context": "code_interpretation",
+    "practice_context": [],
+    "difficulty": 0.7,
+    "is_assessment": false,
+    "model_id": "ALE-DSGN-007-07-003"
+  }
+}

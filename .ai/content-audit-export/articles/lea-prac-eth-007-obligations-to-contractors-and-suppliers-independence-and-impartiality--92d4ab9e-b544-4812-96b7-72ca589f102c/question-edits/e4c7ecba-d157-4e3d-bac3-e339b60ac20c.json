@@ -1,0 +1,71 @@
+{
+  "question_id": "e4c7ecba-d157-4e3d-bac3-e339b60ac20c",
+  "baseline_hash": "sha256:4ecdf09b42bd5b11e5ab149e4d9a03aec86cae1af51c6cd9ce2e0e5b012f3dd3",
+  "action": "replace",
+  "reason": "source-audited-article-batch-018-local-first rewrote linked question to match locally checked raw source evidence for lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality.",
+  "approved_by": "codex-local-source-audit-batch-018",
+  "approved_at": "2026-05-10T23:42:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "92d4ab9e-b544-4812-96b7-72ca589f102c",
+    "parent_article_slug": "lea-prac-eth-007-obligations-to-contractors-and-suppliers-independence-and-impartiality",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UAP Document Code of Ethics, responsibilities to contractors and manufacturers/dealers/agents, raw markdown lines 66-89",
+    "checked_markdown_lines": [
+      "raw markdown lines 66-89"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+        "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+        "source_id": "uap-document-code-of-ethics",
+        "locator": "UAP Document Code of Ethics, responsibilities to contractors and manufacturers/dealers/agents, raw markdown lines 66-89"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
+        "sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
+        "source_id": "uap-document-code-of-ethics-raw-markdown",
+        "locator": "UAP Document Code of Ethics, responsibilities to contractors and manufacturers/dealers/agents, raw markdown lines 66-89"
+      }
+    ],
+    "local_source_safe_action": "Question was rewritten to remove unverified or over-specific claims and use only statements anchored in the checked local raw source packet."
+  },
+  "proposed": {
+    "text": "After personal knowledge and inspection, what should the architect do with nonconforming materials or workmanship?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reject or condemn them promptly"
+      },
+      {
+        "id": "b",
+        "text": "Accept them to avoid delay"
+      },
+      {
+        "id": "c",
+        "text": "Ask the supplier to decide"
+      },
+      {
+        "id": "d",
+        "text": "Ignore them until final payment"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "The Code requires immediate rejection or condemnation of nonconforming materials, equipment, or workmanship after personal knowledge and inspection.",
+    "explanation": "The Code requires immediate rejection or condemnation of nonconforming materials, equipment, or workmanship after personal knowledge and inspection.",
+    "code_citation": "UAP Document Code of Ethics, line 76",
+    "bloom_level": "understand",
+    "application_context": "professional_practice",
+    "practice_context": [
+      "Code of Ethical Conduct",
+      "Professional ethics"
+    ],
+    "difficulty": 0.5,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-ETH-007-006"
+  }
+}

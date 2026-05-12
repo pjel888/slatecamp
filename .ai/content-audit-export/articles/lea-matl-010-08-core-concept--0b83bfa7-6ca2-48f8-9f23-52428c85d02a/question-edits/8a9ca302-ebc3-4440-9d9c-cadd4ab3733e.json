@@ -1,0 +1,59 @@
+{
+  "question_id": "8a9ca302-ebc3-4440-9d9c-cadd4ab3733e",
+  "baseline_hash": "sha256:39c45b80a3594ef79b98a31411713cb68effd7c136cd536c03e74ba07af01170",
+  "action": "replace",
+  "reason": "source-audited-article-batch-082-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-010-08-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-082",
+  "approved_at": "2026-05-12T05:45:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "0b83bfa7-6ca2-48f8-9f23-52428c85d02a",
+    "parent_article_slug": "lea-matl-010-08-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Estimating Excavation refined markdown lines 1120-1260, 1580-1605, and 1980-1992; raw PDF pages 42, 45, 49-50, and 56 checked by local PyMuPDF extraction.",
+    "checked_markdown_lines": [
+      "Estimating Excavation refined markdown lines 1120-1260, 1580-1605, and 1980-1992; raw PDF pages 42, 45, 49-50, and 56 checked by local PyMuPDF extraction."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "estimating-excavation-b082",
+        "label": "Estimating Excavation",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Estimating Excavation.pdf",
+        "sha256": "sha256:5ef347fe40c8dfa4a1e3d3f937d266e431ce69bcbce09390f46917ee9e5b6fff",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Estimating Excavation.md",
+        "raw_markdown_sha256": "sha256:c62cb8751aa5c66ef7ae7fe9d4d0948913eb945de639399ac5a946aed683dd4c",
+        "locator": "Estimating Excavation refined markdown lines 1120-1260, 1580-1605, and 1980-1992; raw PDF pages 42, 45, 49-50, and 56 checked by local PyMuPDF extraction."
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 082 local raw-source-audited earthwork_volume scope."
+  },
+  "proposed": {
+    "text": "Under the average end area method, two end areas are 150 sq ft and 475 sq ft, and the length is 50 ft. What is the earthwork volume in cubic yards?",
+    "options": [
+      {
+        "id": "a",
+        "text": "579 cu yd"
+      },
+      {
+        "id": "b",
+        "text": "625 cu yd"
+      },
+      {
+        "id": "c",
+        "text": "1,157 cu yd"
+      },
+      {
+        "id": "d",
+        "text": "312.5 cu yd"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Average the end areas first, then multiply by length and divide by 27: [(150 + 475) / 2] x 50 / 27 = 578.7 cu yd, rounded to 579 cu yd.",
+    "explanation": "Average the end areas first, then multiply by length and divide by 27: [(150 + 475) / 2] x 50 / 27 = 578.7 cu yd, rounded to 579 cu yd.",
+    "code_citation": "Estimating Excavation",
+    "bloom_level": "apply",
+    "application_context": "source_audited_local_first_batch_082",
+    "practice_context": [],
+    "difficulty": 0.5
+  }
+}

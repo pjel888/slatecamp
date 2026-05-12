@@ -1,0 +1,90 @@
+{
+  "question_id": "fca4a285-590e-4de8-8804-364f0404a54c",
+  "baseline_hash": "sha256:ae0e5a420b64044464bf1cc3dd32f221d6bcc443fefb613d9ebe5a0a74caeb3f",
+  "action": "replace",
+  "reason": "source-audited-article-batch-057-local-first: local raw PDF backed replacement constrained to checked Batch 057 source families.",
+  "approved_by": "codex-local-first-batch-057",
+  "approved_at": "2026-05-11T20:10:30.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "2a25a20f-fe57-48c9-abad-7c8b2f0d1dd6",
+    "parent_article_slug": "lea-theo-003-01-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "TOA 1 Intro to Theory refined markdown lines 31 and 46; theory refined markdown lines 141-142 and 161; TOA 3 Design Perception refined markdown lines 23-34 and 502-512; George Salvan Architectural Theories of Design refined markdown lines 4843 and 7982",
+    "checked_markdown_lines": [
+      "TOA 1 Intro to Theory refined markdown line 31",
+      "TOA 1 Intro to Theory refined markdown line 46",
+      "theory refined markdown lines 141-142",
+      "theory refined markdown line 161",
+      "TOA 3 Design Perception refined markdown lines 23-34",
+      "TOA 3 Design Perception refined markdown lines 502-512",
+      "George Salvan Architectural Theories of Design refined markdown line 4843",
+      "George Salvan Architectural Theories of Design refined markdown line 7982"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "toa1-intro-local-raw-pdf--b057-2a25a20f-01",
+        "label": "TOA 1 Intro to Theory - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 1 (Intro to Theory).pdf",
+        "sha256": "sha256:17ee07310eaf7fbd71aeb3cb3b57a6ffb623e2b8b1957543d74b706a5184d0e0",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md",
+        "refined_markdown_sha256": "sha256:fc665ed41ea62ddb69c88ba02c7b92628481ba6792a075bc21694ca072b150d6",
+        "locator": "TOA 1 Intro to Theory refined markdown lines 31 and 46"
+      },
+      {
+        "source_id": "theory-local-raw-pdf--b057-2a25a20f-02",
+        "label": "theory - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+        "sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+        "refined_markdown_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+        "locator": "theory refined markdown lines 141-142 and 161"
+      },
+      {
+        "source_id": "toa3-design-perception-local-raw-pdf--b057-2a25a20f-03",
+        "label": "TOA 3 Design Perception - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 3 (Design Perception).pdf",
+        "sha256": "sha256:807be9f1a301d579123d8fa3ec680011b1906d6a4edcb6dc061c9a57e5ea9534",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 3 (Design Perception).md",
+        "refined_markdown_sha256": "sha256:49309b3dc5eea661ca7cad04cceb91897ac29fee6dd8e43cf6c3f60f163d404a",
+        "locator": "TOA 3 Design Perception refined markdown lines 23-34 and 502-512"
+      },
+      {
+        "source_id": "salvan-theory-local-raw-pdf--b057-2a25a20f-04",
+        "label": "George Salvan Architectural Theories of Design - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
+        "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
+        "locator": "George Salvan Architectural Theories of Design refined markdown lines 4843 and 7982"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 057 checked local raw PDF source scope."
+  },
+  "proposed": {
+    "text": "Which answer best applies anthropometrics in architecture?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use human dimensions to size reach, movement, furnishings, and scale."
+      },
+      {
+        "id": "b",
+        "text": "Select room sizes without reference to users."
+      },
+      {
+        "id": "c",
+        "text": "Classify buildings only by era."
+      },
+      {
+        "id": "d",
+        "text": "Treat human comfort as irrelevant."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Use human dimensions to size reach, movement, furnishings, and scale. This answer is supported by the checked Batch 057 local raw PDF source families for Anthropometrics.",
+    "explanation": "Use human dimensions to size reach, movement, furnishings, and scale. The Batch 057 source audit used local raw PDFs first and refined markdown only as locator evidence for Anthropometrics.",
+    "code_citation": "George Salvan Architectural Theories of Design refined markdown lines 4843 and 7982"
+  },
+  "batch_question_template_index": 2
+}

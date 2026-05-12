@@ -1,0 +1,98 @@
+{
+  "question_id": "21e96485-54a8-4986-8be5-2c7cfccac2b1",
+  "baseline_hash": "sha256:4aee8fb09d9d55c78b169930cd23b0f927dc74ee63e281159d72affabc832604",
+  "action": "replace",
+  "reason": "source-audited-article-batch-072-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes stale numeric, legal, or unsupported article claims where present.",
+  "approved_by": "codex-local-first-batch-072",
+  "approved_at": "2026-05-12T01:24:18+08:00",
+  "source_audit_support": {
+    "parent_article_id": "0149dc4f-64e7-425f-8673-f786c02bc407",
+    "parent_article_slug": "lea-dsgn-007-08-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Building Structures Illustrated refined markdown lines 84-117, 499-511, 696-714, 770-801, 855-864, and 1016-1045; raw PDF pages 9, 12, 15, 32, 46, 48, and 54-58 checked by local PyMuPDF extraction; PD 1096 refined markdown lines 548-570, 2085-2089, and 2352-2412; raw PDF pages 19, 24, 33, 88, 93, 108, 192, 204, and 352 checked by local PyMuPDF extraction",
+    "checked_markdown_lines": [
+      "Building Structures Illustrated lines 84-117",
+      "Building Structures Illustrated lines 499-511",
+      "Building Structures Illustrated lines 696-714",
+      "Building Structures Illustrated lines 770-801",
+      "Building Structures Illustrated lines 855-864",
+      "Building Structures Illustrated lines 1016-1045",
+      "PD 1096 lines 548-570",
+      "PD 1096 lines 2085-2089",
+      "PD 1096 lines 2352-2412"
+    ],
+    "checked_raw_pdf_pages": [
+      "Building Structures Illustrated raw PDF pages 9, 12, 15, 32, 46, 48, and 54-58",
+      "PD 1096 raw PDF pages 19, 24, 33, 88, 93, 108, 192, 204, and 352"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "building-structures-illustrated-b072",
+        "label": "Building Structures Illustrated 2nd Edition",
+        "source_type": "professional_reference_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Structures Illustrated (2nd Edition).pdf",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Structures Illustrated (2nd Edition).md",
+        "source_locator": "Building Structures Illustrated refined markdown lines 84-117, 499-511, 696-714, 770-801, 855-864, and 1016-1045; raw PDF pages 9, 12, 15, 32, 46, 48, and 54-58 checked by local PyMuPDF extraction",
+        "raw_pdf_sha256": "sha256:85384eeb1e57ec663247abdc18c30130391af79ddcfe4c09466cfd2d5a584ace",
+        "refined_markdown_sha256": "sha256:bed4a7c0917288af4adf9af90e84346be2817e9e8f4d1338d334909fce0b9491"
+      },
+      {
+        "source_id": "pd1096-rirr-2004-b072",
+        "label": "PD 1096 2004 Revised IRR - National Building Code",
+        "source_type": "primary_law_irr_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 refined markdown lines 548-570, 2085-2089, and 2352-2412; raw PDF pages 19, 24, 33, 88, 93, 108, 192, 204, and 352 checked by local PyMuPDF extraction",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, and citation rewritten to the Batch 072 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "Which factor is essential when selecting a structural system?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Load path, grid, spans, lateral stability, constructibility, MEP integration, and architectural intent."
+      },
+      {
+        "id": "b",
+        "text": "Only the material name."
+      },
+      {
+        "id": "c",
+        "text": "Only the wall paint color."
+      },
+      {
+        "id": "d",
+        "text": "Only the number of windows in elevation."
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Correct. This option follows the checked local raw-source evidence.",
+      "b": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+      "c": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+      "d": "Incorrect. This option changes the source rule, condition, or evidence boundary.",
+      "correct": "The article emphasizes system fit rather than one-factor material shortcuts.",
+      "takeaway": "Use the checked local source condition before applying the rule."
+    },
+    "explanation": "The article emphasizes system fit rather than one-factor material shortcuts.",
+    "code_citation": "Building Structures Illustrated refined markdown lines 84-117, 499-511, 696-714, 770-801, 855-864, and 1016-1045; raw PDF pages 9, 12, 15, 32, 46, 48, and 54-58 checked by local PyMuPDF extraction; PD 1096 refined markdown lines 548-570, 2085-2089, and 2352-2412; raw PDF pages 19, 24, 33, 88, 93, 108, 192, 204, and 352 checked by local PyMuPDF extraction",
+    "bloom_level": "understand",
+    "application_context": "professional_practice",
+    "practice_context": [
+      "source-audited-local-first-batch-072"
+    ],
+    "difficulty": 0.55,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false
+  }
+}

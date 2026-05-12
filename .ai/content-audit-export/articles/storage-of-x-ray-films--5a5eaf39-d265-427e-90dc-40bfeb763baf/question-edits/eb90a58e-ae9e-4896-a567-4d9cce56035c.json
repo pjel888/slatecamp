@@ -1,0 +1,48 @@
+{
+  "question_id": "eb90a58e-ae9e-4896-a567-4d9cce56035c",
+  "baseline_hash": "sha256:295cb35bbdd3626d5bad09ceffb56b69853fe36c562cafccbb212e04fbc5680d",
+  "action": "replace",
+  "reason": "source-audited-article-batch-039-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-039",
+  "approved_at": "2026-05-11T13:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-039-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 4306-4329"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 1402"
+  },
+  "proposed": {
+    "text": "Which film class is expressly exempted by Section 1402?",
+    "options": [
+      {
+        "id": "b039-5a5e-11-a",
+        "text": "Dental x-ray film"
+      },
+      {
+        "id": "b039-5a5e-11-b",
+        "text": "All unexposed film in bulk storage"
+      },
+      {
+        "id": "b039-5a5e-11-c",
+        "text": "Film negatives in expanding envelopes"
+      },
+      {
+        "id": "b039-5a5e-11-d",
+        "text": "All film stored near heat sources"
+      }
+    ],
+    "correct_option_id": "b039-5a5e-11-a",
+    "rationale": "Correct answer: Dental x-ray film. This is directly supported by PD 1096 2004 Revised IRR, Section 1402.",
+    "explanation": "The Batch 039 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 1402.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 1402"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "question_id": "8b7274ec-e06f-4429-83d8-a4a59370329c",
+  "baseline_hash": "sha256:6fe9cb5d812c2a1b466df15f0ca4e97d4de2d4697f2afa6647e33e0105e47e7b",
+  "action": "replace",
+  "reason": "source-audited-article-batch-085-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-005-08-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-085",
+  "approved_at": "2026-05-12T07:55:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "d4b359e9-bd36-4a0f-bfce-ec0a49aa06fc",
+    "parent_article_slug": "lea-matl-005-08-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Green Building Illustrated refined markdown lines 7549-7583; Good Building Handbook in the PH refined markdown lines 420-491; PD 1096 refined markdown lines 199-241 and 354.",
+    "checked_markdown_lines": [
+      "Green Building Illustrated refined markdown lines 7501-7535, 7549-7583, and 7709-7727; raw PDF pages 228-230 and 235-236 checked by local PyMuPDF extraction.",
+      "Good Building Handbook in the PH refined markdown lines 420-491; raw PDF pages 50, 56, and 60 checked by local PyMuPDF extraction.",
+      "PD 1096 refined markdown lines 199-241 and 354; raw PDF pages 7, 8, and 14 checked by local PyMuPDF extraction."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "green-building-illustrated-b085",
+        "label": "Green Building Illustrated",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Green Building Illustrated.pdf",
+        "sha256": "sha256:b23f127ca4581eb2d733b14e2a3739d022c9d04b343729b0ecdebdf92d0bdc70",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Green Building Illustrated.md",
+        "refined_markdown_sha256": "sha256:4c754dad2867dea176cd93c2f93788b7874ccbbe557096bb64cbb0ab3a0165d2",
+        "locator": "Green Building Illustrated refined markdown lines 7501-7535, 7549-7583, and 7709-7727; raw PDF pages 228-230 and 235-236 checked by local PyMuPDF extraction."
+      },
+      {
+        "source_id": "good-building-handbook-ph-b085",
+        "label": "Good Building Handbook in the Philippines",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Good Building Handbook in the PH.pdf",
+        "sha256": "sha256:e8925f0c617c24df41784a002fa9c3f1a237a5dda96196d82f14653bfd9b870c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Good Building Handbook in the PH.md",
+        "refined_markdown_sha256": "sha256:11584339e25de3d586d64a2a31d1e8af03cfb876371bec764c224eaad6e11c9d",
+        "locator": "Good Building Handbook in the PH refined markdown lines 420-491; raw PDF pages 50, 56, and 60 checked by local PyMuPDF extraction."
+      },
+      {
+        "source_id": "pd-1096-national-building-code-b085",
+        "label": "PD 1096 - National Building Code",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 - National Building Code.pdf",
+        "sha256": "sha256:0bd869faac8d949359aa9e3c5bea7026e85e348f61ce1e87a09d48991c5ba796",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 - National Building Code.md",
+        "refined_markdown_sha256": "sha256:d7df246271ae1bcb14ed8e4ba881ed75cfa8381cca9f465986d9947397f353d9",
+        "locator": "PD 1096 refined markdown lines 199-241 and 354; raw PDF pages 7, 8, and 14 checked by local PyMuPDF extraction."
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 085 local raw-source-audited vernacular_natural_and_local_materials scope."
+  },
+  "proposed": {
+    "text": "What does PD 1096 require before a building permit is issued?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The Building Official must be satisfied that plans and specifications conform to code and other rules"
+      },
+      {
+        "id": "b",
+        "text": "The contractor may change approved plans at any time"
+      },
+      {
+        "id": "c",
+        "text": "Only the color schedule is checked"
+      },
+      {
+        "id": "d",
+        "text": "No professional documents are needed"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The Building Official must be satisfied that plans and specifications conform to code and other rules. The audited sources support natural/local material suitability, protection, material quality, and approved plan/specification control.",
+    "explanation": "The Building Official must be satisfied that plans and specifications conform to code and other rules. The audited sources support natural/local material suitability, protection, material quality, and approved plan/specification control.",
+    "code_citation": "Green Building Illustrated; Good Building Handbook in the Philippines; PD 1096 - National Building Code",
+    "bloom_level": "understand",
+    "application_context": "source_audited_local_first_batch_085",
+    "practice_context": [],
+    "difficulty": 0.5
+  }
+}

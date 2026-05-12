@@ -1,0 +1,32 @@
+{
+  "question_id": "ac4b612d-2523-4345-b59e-e9f2736623ff",
+  "baseline_hash": "sha256:c5649bb37e2068a8510d01930edcc47c4b2655f13e4d1527e1855f3ea4372877",
+  "reason": "Batch 003 source audit replaced unsupported agency/mandate and procurement assertions with source-backed RA 9266, Civil Code Article 1723, RA 9184, RA 7160/COA, RA 11201, and EO 90 framing.",
+  "approved_by": "codex-local-source-audit-batch-003",
+  "approved_at": "2026-05-10T18:00:00+08:00",
+  "proposed": {
+    "text": "When a private architect is engaged to work with a government in-house team, what is the most critical source-backed point in the service agreement?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The consultant should never sign any documents for a public project"
+      },
+      {
+        "id": "b",
+        "text": "The in-house office should absorb all Article 1723 responsibility automatically"
+      },
+      {
+        "id": "c",
+        "text": "The agreement must identify who prepares, reviews, signs, seals, and remains responsible for the architectural documents"
+      },
+      {
+        "id": "d",
+        "text": "RA 9184 eliminates the need for RA 9266 compliance"
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": "The project record must allocate document preparation, review, signature, seal, and approval roles.",
+    "explanation": "This aligns the question with the repaired article.",
+    "code_citation": "RA 9266 IRR; Civil Code Article 1723; RA 9184"
+  }
+}

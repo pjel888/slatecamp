@@ -1,0 +1,87 @@
+{
+  "artifact_type": "source_audit_evidence",
+  "batch_id": "source-audited-article-batch-013-local-first",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T22:25:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "status": "local_pass_ready_for_final_publishing_review",
+  "target": {
+    "article_id": "f7861b5b-0833-4cd3-a634-0dfb9f53891c",
+    "slug": "spp-doc-209-architectural-consulting-services-pacs",
+    "title": "SPP Doc 209: Professional Architectural Consulting Services (PACS)",
+    "folder": ".ai/content-audit-export/articles/spp-doc-209-architectural-consulting-services-pacs--f7861b5b-0833-4cd3-a634-0dfb9f53891c",
+    "normalized_path": ".ai/content-audit-export/articles/spp-doc-209-architectural-consulting-services-pacs--f7861b5b-0833-4cd3-a634-0dfb9f53891c/normalized.md",
+    "candidate_path": ".ai/content-audit-export/articles/spp-doc-209-architectural-consulting-services-pacs--f7861b5b-0833-4cd3-a634-0dfb9f53891c/candidate.md",
+    "sources_path": ".ai/content-audit-export/articles/spp-doc-209-architectural-consulting-services-pacs--f7861b5b-0833-4cd3-a634-0dfb9f53891c/sources.json",
+    "question_edits_folder": ".ai/content-audit-export/articles/spp-doc-209-architectural-consulting-services-pacs--f7861b5b-0833-4cd3-a634-0dfb9f53891c/question-edits",
+    "original_hash": "sha256:df5f77465e1400bb4efc47262f568ac04f7838b8138b992819a3a7166decd52b",
+    "normalized_hash": "sha256:b623dfa993c02af63351ccbb0f6e844af3ed842539f530fa5de297252a01dac4",
+    "candidate_hash": "sha256:b623dfa993c02af63351ccbb0f6e844af3ed842539f530fa5de297252a01dac4",
+    "sources_hash": "sha256:200ae5c1fb823da11c82f48007a1cd0870a8f7d96edde54e07f9cc80463e7a4e",
+    "linked_questions_hash": "sha256:6044139ebb38fe748a55c17cc4c4e0490c70dcf5e3b3bdfda8eddc44f8e2d2cb",
+    "question_edit_count": 10
+  },
+  "raw_sources": [
+    {
+      "source_id": "uap-standards-of-professional-practice-2",
+      "label": "UAP Standards of Professional Practice",
+      "authority": "United Architects of the Philippines / PRBoA SPP reference copy",
+      "source_type": "professional_practice_pdf",
+      "source_locator": "SPP Document 209 Professional Architectural Consulting Services",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+      "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
+      "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
+      "checked_markdown_lines": [
+        "UAP SPP raw markdown lines 1581-1866"
+      ],
+      "use": "primary source for article and linked-question support",
+      "local_source_checked": true
+    }
+  ],
+  "local_edits": {
+    "normalized_repaired": true,
+    "candidate_composed": true,
+    "ui_blocks_removed_from_repaired_markdown": true,
+    "sources_json_updated": true,
+    "question_edits_created": 10,
+    "answer_key_fields_changed": false,
+    "partial_source_support_question_edits": 0
+  },
+  "validation": {
+    "compose": {
+      "safe_to_diff": true,
+      "blockers": [],
+      "placeholders_found": 0,
+      "unresolved_placeholders": []
+    },
+    "diff": {
+      "changed": true,
+      "safe_to_push": true,
+      "locally_safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+      ]
+    },
+    "bundle_validate_dry_run": {
+      "valid": true,
+      "blockers": [],
+      "warnings": [
+        "component-usage.json has not been generated for this article yet."
+      ]
+    }
+  },
+  "question_edit_files": [
+    ".ai/content-audit-export/articles/spp-doc-209-architectural-consulting-services-pacs--f7861b5b-0833-4cd3-a634-0dfb9f53891c/question-edits/0e99ef65-ec45-4de4-a9aa-577395892a9b.json",
+    ".ai/content-audit-export/articles/spp-doc-209-architectural-consulting-services-pacs--f7861b5b-0833-4cd3-a634-0dfb9f53891c/question-edits/28bfac69-3fe2-4aa9-963c-6bce718767ff.json",
+    ".ai/content-audit-export/articles/spp-doc-209-architectural-consulting-services-pacs--f7861b5b-0833-4cd3-a634-0dfb9f53891c/question-edits/29b5c8fd-0c52-4092-b917-ca20356bb5a5.json",
+    ".ai/content-audit-export/articles/spp-doc-209-architectural-consulting-services-pacs--f7861b5b-0833-4cd3-a634-0dfb9f53891c/question-edits/3d685689-611d-498a-abcd-0c39aa58fa0d.json",
+    ".ai/content-audit-export/articles/spp-doc-209-architectural-consulting-services-pacs--f7861b5b-0833-4cd3-a634-0dfb9f53891c/question-edits/43a2b1da-c7d9-4549-8d54-394665f362e6.json",
+    ".ai/content-audit-export/articles/spp-doc-209-architectural-consulting-services-pacs--f7861b5b-0833-4cd3-a634-0dfb9f53891c/question-edits/78c797ef-44b4-4174-963b-87e1f8d8c1e3.json",
+    ".ai/content-audit-export/articles/spp-doc-209-architectural-consulting-services-pacs--f7861b5b-0833-4cd3-a634-0dfb9f53891c/question-edits/c0583aab-3475-4822-8421-5852dac895fd.json",
+    ".ai/content-audit-export/articles/spp-doc-209-architectural-consulting-services-pacs--f7861b5b-0833-4cd3-a634-0dfb9f53891c/question-edits/c1d66ccf-e159-4dec-a5b0-cf11e28b0b1b.json",
+    ".ai/content-audit-export/articles/spp-doc-209-architectural-consulting-services-pacs--f7861b5b-0833-4cd3-a634-0dfb9f53891c/question-edits/c8e7fd57-b2b8-490f-8cee-05ae9e1dc9d1.json",
+    ".ai/content-audit-export/articles/spp-doc-209-architectural-consulting-services-pacs--f7861b5b-0833-4cd3-a634-0dfb9f53891c/question-edits/e988f6a5-b5c4-438e-b0bf-a43eb7120182.json"
+  ]
+}

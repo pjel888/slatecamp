@@ -9,17 +9,17 @@ It has the right shape for a real engineering execution document:
 * verification logic
 * definition of done
 
-That said, there are still several places where it can be tightened so the implementer has less room to drift or over-engineer. 
+That said, there are still several places where it can be tightened so the implementer has less room to drift or over-engineer.
 
 ## What is already strong
 
 ### 1. The plan understands the actual bug class
 
-The best part of this document is that it correctly identifies the real issue as a **state-model contradiction**, not just a toolbar bug. It understands that persistent selection state and one-shot commands cannot safely live in the same field if you want both sticky highlight and same-button replay. That is the right diagnosis. 
+The best part of this document is that it correctly identifies the real issue as a **state-model contradiction**, not just a toolbar bug. It understands that persistent selection state and one-shot commands cannot safely live in the same field if you want both sticky highlight and same-button replay. That is the right diagnosis.
 
 ### 2. The scope guard is disciplined
 
-It keeps the patch focused and explicitly rejects a full camera-system rewrite. That is good judgment. These kinds of follow-up patches go bad when people try to "clean everything up" while fixing a real regression cluster. 
+It keeps the patch focused and explicitly rejects a full camera-system rewrite. That is good judgment. These kinds of follow-up patches go bad when people try to "clean everything up" while fixing a real regression cluster.
 
 ### 3. Hidden edge cases are well thought through
 
@@ -32,11 +32,11 @@ The plan does a good job surfacing tricky cases that usually get missed until QA
 * reset vs selected-view semantics
 * latest-command-wins behavior
 
-That section alone materially improves execution quality. 
+That section alone materially improves execution quality.
 
 ### 4. Verification is serious
 
-The manual QA list is strong and product-relevant. It is not just "click around and see." It checks semantics, interaction flow, and motion-mode parity. 
+The manual QA list is strong and product-relevant. It is not just "click around and see." It checks semantics, interaction flow, and motion-mode parity.
 
 ---
 
@@ -49,7 +49,7 @@ The plan says the implementation should converge on a shape equivalent to:
 * `selectedPresetId`
 * `cameraCommand`
 
-That is directionally correct, but still a bit loose. If different implementers touch this, they could interpret the contract differently. 
+That is directionally correct, but still a bit loose. If different implementers touch this, they could interpret the contract differently.
 
 ### Improvement
 
@@ -101,7 +101,7 @@ The plan currently says:
 * manual orbit invalidates sticky preset highlighting
 * panning alone should not invalidate sticky preset highlighting
 
-That is good, but still not precise enough for implementation. 
+That is good, but still not precise enough for implementation.
 
 ### Improvement
 
@@ -126,7 +126,7 @@ This is important because orbit invalidation bugs are the sort that feel random 
 
 ## 3. Reset semantics need one more level of clarity
 
-The plan says reset is a transient command whose resulting selected preset becomes `perspective`. Good. But it does not fully state whether reset also normalizes framing, target, zoom, and manual orbit flags in a canonical way. 
+The plan says reset is a transient command whose resulting selected preset becomes `perspective`. Good. But it does not fully state whether reset also normalizes framing, target, zoom, and manual orbit flags in a canonical way.
 
 ### Improvement
 
@@ -147,7 +147,7 @@ Otherwise two developers may both satisfy "reset leads to perspective" while pro
 
 ## 4. The plan should explicitly define source-of-truth ownership during snap
 
-Right now it separates selection state from transient command state, which is correct. But it should explicitly say **who computes the resulting selected preset after a command finishes**. 
+Right now it separates selection state from transient command state, which is correct. But it should explicitly say **who computes the resulting selected preset after a command finishes**.
 
 ### Improvement
 
@@ -168,7 +168,7 @@ This matters because if toolbar or shortcut layers start making their own assump
 
 ## 5. Alias normalization should be centralized even more explicitly
 
-The plan mentions normalizing `iso` to a canonical preset and routing all entry points through the same command surface. Good. But I would tighten this harder. 
+The plan mentions normalizing `iso` to a canonical preset and routing all entry points through the same command surface. Good. But I would tighten this harder.
 
 ### Improvement
 
@@ -184,7 +184,7 @@ That line removes ambiguity.
 
 ## 6. The BHL fix section is a little too thin
 
-The BHL section is serviceable, but compared with the camera work it feels under-specified. It says remove hardcoded `* 3` and ensure label output reflects active storey value plus current floor height, including computed and custom override states. Good, but it should define the expected truth source more clearly. 
+The BHL section is serviceable, but compared with the camera work it feels under-specified. It says remove hardcoded `* 3` and ensure label output reflects active storey value plus current floor height, including computed and custom override states. Good, but it should define the expected truth source more clearly.
 
 ### Improvement
 
@@ -208,7 +208,7 @@ That closes a likely inconsistency.
 
 ## 7. There is no explicit rollback rule if shared path regression appears
 
-The plan calls out divergence between `DevControlsCanvas.tsx` and `SceneConfig.tsx`, but it does not clearly define what to do if fixing both broadens the blast radius. 
+The plan calls out divergence between `DevControlsCanvas.tsx` and `SceneConfig.tsx`, but it does not clearly define what to do if fixing both broadens the blast radius.
 
 ### Improvement
 
@@ -224,7 +224,7 @@ This helps keep the patch bounded if reality gets messy.
 
 ## 8. Missing explicit non-goals around visual polish
 
-The plan says keep diff small and centered on semantics, not aesthetics. Good. But I would say it even more directly. 
+The plan says keep diff small and centered on semantics, not aesthetics. Good. But I would say it even more directly.
 
 ### Improvement
 
@@ -242,7 +242,7 @@ That reduces temptation.
 
 ## 9. Automated regression guidance should be stronger
 
-The plan recommends adding at least one focused automated regression if a lightweight test surface exists. That is good, but I would be firmer. 
+The plan recommends adding at least one focused automated regression if a lightweight test surface exists. That is good, but I would be firmer.
 
 ### Improvement
 
@@ -257,7 +257,7 @@ These are central to the chosen architecture. If you leave them optional, they a
 
 ## 10. The plan should define command supersession mechanics more concretely
 
-It says latest command wins and in-flight animation is cancelled or superseded. Good. But how does that happen mechanically from the perspective of state? 
+It says latest command wins and in-flight animation is cancelled or superseded. Good. But how does that happen mechanically from the perspective of state?
 
 ### Improvement
 
@@ -272,7 +272,7 @@ This is a classic source of stale highlight bugs after rapid input.
 
 ## 11. Missing observability or debug advice
 
-For a state-semantics patch like this, one lightweight debug aid can save a lot of time. The plan currently has none. 
+For a state-semantics patch like this, one lightweight debug aid can save a lot of time. The plan currently has none.
 
 ### Improvement
 
@@ -292,7 +292,7 @@ This is especially useful because camera bugs are often hard to reason about fro
 
 ## 12. The Definition of Done is good, but one item is missing
 
-The current DoD includes semantics, tests, typecheck, and QA. Good. 
+The current DoD includes semantics, tests, typecheck, and QA. Good.
 
 ### Improvement
 
@@ -346,7 +346,7 @@ Make two tests effectively mandatory if test surface exists.
 
 ## My overall verdict
 
-This is already a strong plan. I would rate it around **8.5 to 9 out of 10** as an execution document. 
+This is already a strong plan. I would rate it around **8.5 to 9 out of 10** as an execution document.
 
 Why it is strong:
 

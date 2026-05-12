@@ -1,0 +1,264 @@
+{
+  "schema_version": "source-audit-evidence-v1-local-first",
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-023-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-10T18:16:14.069Z",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
+    "slug": "minimum-parking-requirements",
+    "title": "Minimum Parking Requirements",
+    "article_folder": ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a",
+    "candidate_path": ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/candidate.md",
+    "candidate_sha256": "sha256:1f86af9278094aad603b7d3ec852939a32f445a54c0d424f34edb842a4cb4d3b",
+    "normalized_sha256": "sha256:1f86af9278094aad603b7d3ec852939a32f445a54c0d424f34edb842a4cb4d3b",
+    "linked_questions_sha256": "sha256:9ef9a883d050541ee902968506035ee52ac615b48e76616469349fa42b337c2c",
+    "sources_sha256": "sha256:d52ad2362febf29a1e53491a56cf85a8084a85e0736e33ed094cfaf451837b53"
+  },
+  "classification": {
+    "content_domain": "LEA Architectural Design and Site Planning",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high_value_lea_code_accessibility_design",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 28,
+    "question_edits_created": [
+      "52c59f23-53a5-4910-8232-41854c315f12",
+      "c0a7e645-33eb-41b9-a933-5e2f49ea9e2d",
+      "18e7e8dd-abaa-41f1-a4ac-5c9309a38f76",
+      "b918195c-be77-4c3f-965c-2a6cd4154240",
+      "bf4f2007-6c3c-4160-8697-2867f0b8ba53",
+      "2f1ae785-1019-4512-8ee8-cf98169f4537",
+      "8c93e456-3440-4c36-912f-8f3503377667",
+      "b1e19bb8-ca5e-4dd4-aa89-63c857c729cb",
+      "a3932901-e999-49f9-bad0-80120c66fa72",
+      "9908157a-a669-47d9-90e3-83b4df496405",
+      "6f3e2c37-0d0c-4ca6-abef-c697719fb462",
+      "bf4d568f-9342-4e41-9e86-262d7d482c66",
+      "ac0c6da1-945a-41b9-8e87-4f91abeaf072",
+      "52d28326-aaf0-49c0-9e3e-157225c9a353",
+      "2772895e-5e13-4851-b033-8c6a38242e48",
+      "28963736-b95c-474d-9bcf-785de04c663a",
+      "ac331568-9433-410b-adfc-7ff7582f9893",
+      "f41cd511-730f-4e06-b116-cc6d58e5a920",
+      "a3b9fc07-da66-4818-b524-1f4fbd4c498e",
+      "e23fc4cf-7e7d-427c-ad8d-50c178f9dd6b",
+      "e2eb01bd-e3c4-492f-b9b8-fc53730332d3",
+      "aed28d28-9e94-456a-a4cf-d3aafec14080",
+      "2c59c765-06b3-4273-8f2a-5be9565a8aa4",
+      "f078ffef-43b6-491c-b974-c39ffec88a6c",
+      "e206144d-cf97-41fc-b6c3-5c23cabfa274",
+      "549ef370-167f-4dfc-ac1b-00ce22ad7c98",
+      "bdb9c17e-9ee0-4588-a6d8-e4051fc08ed8",
+      "a8ec5051-9268-461e-873b-5c8182674535"
+    ]
+  },
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/52c59f23-53a5-4910-8232-41854c315f12.json",
+      ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/c0a7e645-33eb-41b9-a933-5e2f49ea9e2d.json",
+      ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/18e7e8dd-abaa-41f1-a4ac-5c9309a38f76.json",
+      ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/b918195c-be77-4c3f-965c-2a6cd4154240.json",
+      ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/bf4f2007-6c3c-4160-8697-2867f0b8ba53.json",
+      ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/2f1ae785-1019-4512-8ee8-cf98169f4537.json",
+      ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/8c93e456-3440-4c36-912f-8f3503377667.json",
+      ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/b1e19bb8-ca5e-4dd4-aa89-63c857c729cb.json",
+      ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/a3932901-e999-49f9-bad0-80120c66fa72.json",
+      ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/9908157a-a669-47d9-90e3-83b4df496405.json",
+      ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/6f3e2c37-0d0c-4ca6-abef-c697719fb462.json",
+      ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/bf4d568f-9342-4e41-9e86-262d7d482c66.json",
+      ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/ac0c6da1-945a-41b9-8e87-4f91abeaf072.json",
+      ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/52d28326-aaf0-49c0-9e3e-157225c9a353.json",
+      ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/2772895e-5e13-4851-b033-8c6a38242e48.json",
+      ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/28963736-b95c-474d-9bcf-785de04c663a.json",
+      ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/ac331568-9433-410b-adfc-7ff7582f9893.json",
+      ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/f41cd511-730f-4e06-b116-cc6d58e5a920.json",
+      ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/a3b9fc07-da66-4818-b524-1f4fbd4c498e.json",
+      ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/e23fc4cf-7e7d-427c-ad8d-50c178f9dd6b.json",
+      ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/e2eb01bd-e3c4-492f-b9b8-fc53730332d3.json",
+      ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/aed28d28-9e94-456a-a4cf-d3aafec14080.json",
+      ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/2c59c765-06b3-4273-8f2a-5be9565a8aa4.json",
+      ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/f078ffef-43b6-491c-b974-c39ffec88a6c.json",
+      ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/e206144d-cf97-41fc-b6c3-5c23cabfa274.json",
+      ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/549ef370-167f-4dfc-ac1b-00ce22ad7c98.json",
+      ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/bdb9c17e-9ee0-4588-a6d8-e4051fc08ed8.json",
+      ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/a8ec5051-9268-461e-873b-5c8182674535.json"
+    ]
+  },
+  "raw_sources": [
+    {
+      "source_id": "pd1096-2004-rirr-dpwh-official-local",
+      "label": "PD 1096 Revised Implementing Rules and Regulations, 2004 DPWH Official",
+      "source_type": "raw_pdf_with_refined_markdown",
+      "jurisdiction": "Philippines",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "source_locator": "PD 1096 RIRR refined markdown lines 1627-1694, 2703-2747, and 2788-2805"
+    },
+    {
+      "source_id": "bp344-2024-revised-irr-accessibility-local",
+      "label": "2024 Revised Implementing Rules and Regulations of Batas Pambansa Blg. 344",
+      "source_type": "raw_pdf_with_refined_markdown",
+      "jurisdiction": "Philippines",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "source_locator": "BP 344 2024 IRR refined markdown lines 40-70, 230-305, 450-463, 539-541, 621-704, 772-792, 992-1003, 1062-1088, 1580-1613, and 1649"
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "pd1096-2004-rirr-dpwh-official-local",
+      "label": "PD 1096 Revised Implementing Rules and Regulations, 2004 DPWH Official",
+      "source_type": "raw_pdf_with_refined_markdown",
+      "jurisdiction": "Philippines",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "source_locator": "PD 1096 RIRR refined markdown lines 1627-1694, 2703-2747, and 2788-2805",
+      "checked_markdown_lines": [
+        "PD 1096 RIRR refined markdown lines 1627-1694, 2703-2747, and 2788-2805"
+      ]
+    },
+    {
+      "source_id": "bp344-2024-revised-irr-accessibility-local",
+      "label": "2024 Revised Implementing Rules and Regulations of Batas Pambansa Blg. 344",
+      "source_type": "raw_pdf_with_refined_markdown",
+      "jurisdiction": "Philippines",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "source_locator": "BP 344 2024 IRR refined markdown lines 40-70, 230-305, 450-463, 539-541, 621-704, 772-792, 992-1003, 1062-1088, 1580-1613, and 1649",
+      "checked_markdown_lines": [
+        "BP 344 2024 IRR refined markdown lines 40-70, 230-305, 450-463, 539-541, 621-704, 772-792, 992-1003, 1062-1088, 1580-1613, and 1649"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "minimum-parking-requirements-claim-01",
+      "claim_text": "Article repair is bounded to PD 1096 RIRR refined markdown lines 1627-1694.",
+      "claim_type": "legal_or_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "locator": "PD 1096 RIRR refined markdown lines 1627-1694",
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf"
+        ],
+        "raw_pdf_sha256": [
+          "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953"
+        ]
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "minimum-parking-requirements-claim-02",
+      "claim_text": "Article repair is bounded to BP 344 2024 IRR refined markdown lines 230-305.",
+      "claim_type": "legal_or_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "locator": "BP 344 2024 IRR refined markdown lines 230-305",
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf"
+        ],
+        "raw_pdf_sha256": [
+          "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953"
+        ]
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rewritten_claims": [
+    "Removed unrelated IBC frontage-increase material from the linked question repair set.",
+    "Rewrote parking claims around PD 1096 Table VII.4 and the BP 344 2024 accessible-parking table."
+  ],
+  "removed_or_rewritten_material": [
+    "Removed web/file citation residue and UI marker blocks from normalized.md.",
+    "Rewrote linked questions into source-safe local JSON edit artifacts."
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "gate_results": {
+    "compose": "PASS: bun run content-audit:compose -- --article-id 850a66f9-db5d-4068-a763-0bc4c1d9872a --overwrite; blockers=0",
+    "diff": "PASS: bun run content-audit:diff -- --article-id 850a66f9-db5d-4068-a763-0bc4c1d9872a --summary; safe_to_push=true blockers=0",
+    "validate": "PASS: bun run content-audit:validate -- --article-id 850a66f9-db5d-4068-a763-0bc4c1d9872a --summary; valid=true blockers=0 warnings=1",
+    "push_dry_run": "not_attempted_local_first; Supabase remote fetch/publish is final publishing only",
+    "supabase_mutation": "not_attempted_by_request"
+  },
+  "source_safe_repair": {
+    "normalized_md_rewritten": true,
+    "candidate_md_composed": true,
+    "sources_json_refreshed_to_checked_raw_sources": true,
+    "source_audit_evidence_json_created": true,
+    "question_edits_created": 28,
+    "answer_key_fields_changed": true,
+    "ui_markers_removed_from_normalized": true
+  },
+  "local_validation": {
+    "compose": {
+      "passed": true,
+      "blockers": [],
+      "warnings": [],
+      "candidate_hash": "sha256:1f86af9278094aad603b7d3ec852939a32f445a54c0d424f34edb842a4cb4d3b"
+    },
+    "diff": {
+      "passed": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+      ],
+      "safe_to_push": true
+    },
+    "validate": {
+      "passed": true,
+      "blockers": [],
+      "warnings": [
+        "minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a: component-usage.json has not been generated for this article yet."
+      ]
+    },
+    "scoped_checks": {
+      "json_parse": "PASS: jq empty over 170 Batch 023 JSON files",
+      "learner_visible_marker_scan": "PASS: no web/file/UI marker, extraction, TODO/FIXME/VERIFY, local-first, source-safe, or internal-note strings in normalized.md/candidate.md",
+      "question_edit_marker_scan": "PASS: no web/file/UI marker, extraction, TODO/FIXME/VERIFY, or internal-note strings in question-edits JSON",
+      "source_gap_check": "PASS: all selected articles have raw PDF sources, PASS raw_pdf_gate, matching question-edit counts, compose blockers=0, diff safe=true, validate valid=true",
+      "test_check": "PASS: bun run test:source-verification (7 pass, 0 fail)"
+    },
+    "checked_at": "2026-05-10T18:21:14.059Z"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "local_first_recovery_complete": true,
+    "remote_publish_status": "not_attempted_by_request",
+    "blockers": [],
+    "warnings": [
+      "minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a: component-usage.json has not been generated for this article yet."
+    ]
+  },
+  "supabase": {
+    "pushed": false,
+    "deployed": false,
+    "committed": false,
+    "final_publishing_only": true
+  }
+}

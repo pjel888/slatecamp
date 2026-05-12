@@ -1,76 +1,27 @@
-
+# LGU Planning Authority under RA 7160
 
 ## Board Exam Quick Check
 
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+Local planning authority is devolved, but it is not leaderless. RA 7160 gives LGUs and their Sanggunians core land-use powers; EO 72 and RA 11201/its IRR keep national standards, review, technical assistance, and monitoring in the planning system.
 
-**Common mistake:** treating a familiar keyword in **Lea Plan 007 05 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
-
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
-## Learning Goal
-Describe LGU planning authority under RA 7160 — CLUP preparation, zoning ordinance adoption by Sanggunian, DHSUD conformity review — and identify the Planning Office as the LGU's technical planning arm.
+RA 7160 Section 20(c) says LGUs continue to prepare comprehensive land use plans enacted through zoning ordinances. For municipalities, the Sangguniang Bayan may adopt a comprehensive land use plan and enact integrated zoning ordinances in consonance with the approved CLUP. For cities, the Sangguniang Panlungsod holds the parallel power. Provinces review the CLUPs and zoning ordinances of component cities and municipalities and adopt the provincial land use plan.
 
-Local Government Units (LGUs) under the Local Government Code (RA 7160, 1991) have the authority and responsibility to prepare Comprehensive Land Use Plans (CLUPs) and implement them through zoning ordinances adopted by the Sanggunian (provincial, city, or municipal legislative body). The Planning Office is the LGU's technical arm for planning work.
+EO 72 gives a practical sequence for city and municipal CLUPs. The city or municipal development council initiates formulation or updating in consultation with community sectors. The CPDC or MPDC provides technical support. The plan is submitted to the Sanggunian for enactment into a zoning ordinance. Component city and municipal CLUPs are reviewed through the provincial review path, while provinces, highly urbanized cities, and independent component cities go through the regional/national review path described in EO 72.
 
-## Core Concept
+RPS 2008 explains why this is not merely a planning-office task. The local planning structure has a political component and a technical component. The political component includes the Sanggunian and Local Development Council; it defines local development direction. The technical component includes the local planning and development office, LGU departments, technical committees, national agencies operating locally, and other contributors; it supplies data, analysis, maps, and draft proposals.
 
-RA 7160 devolved planning authority from the national government to LGUs. Every province, city, and municipality must prepare a Comprehensive Land Use Plan (CLUP) enacted through zoning ordinances, as required under RA 7160. The CLUP must be consistent with national policies, with coordination as provided under RA 7160 and subsequent guidelines, but preparation, adoption, and enforcement are the LGU's responsibility.
+DHSUD's role does not erase LGU authority. RA 11201 and its IRR transfer land-use planning and monitoring functions to DHSUD, including standards, technical assistance, review participation, monitoring of CLUP/ZO implementation, and penalties or incentives for compliance. The LGU still prepares and implements its local plan and zoning ordinance through the local legislative and administrative process.
 
-**The CLUP Process:**
+## Exam Focus
 
-1. **Preparation:** The LGU's Planning Office drafts the CLUP through data collection, stakeholder consultation, and technical analysis. This is the technical/planning phase.
+- "Prepare" points to the LGU planning structure and development council process.
+- "Adopt" or "enact" points to the Sanggunian.
+- "Review for consistency" depends on EO 72: province/PLUC, RLUC, and DHSUD-transferred functions.
+- "Implement on the ground" points to the zoning ordinance, locational clearance, and local enforcement.
+- "Set standards/monitor compliance" points to DHSUD under RA 11201 and the RA 11201 IRR.
 
-2. **Legislative adoption:** The CLUP is submitted to the Sanggunian (legislative body—Sangguniang Bayan for municipalities, Sangguniang Panlungsod for cities, Sangguniang Panlalawigan for provinces). The Sanggunian adopts an ordinance that formally approves the CLUP.
+## Practice Cue
 
-3. **National approval:** The adopted CLUP is submitted to DHSUD for review and approval to ensure conformity with national policies (environmental protection, disaster risk reduction, agricultural preservation, etc.).
-
-4. **Implementation:** The Sanggunian adopts a zoning ordinance—the legal instrument that translates the CLUP into enforceable land use regulations. The zoning ordinance specifies which areas are residential, commercial, industrial, or agricultural; sets height limits; defines permitted uses; and establishes enforcement mechanisms.
-
-5. **Enforcement:** The LGU's Planning Office, Building Official, and Barangay officials enforce zoning through building permits, occupancy permits, and violations.
-
-**The key mistake students make:** Zoning ordinances are adopted by the _Sanggunian_ (legislative body), not the Mayor alone and not the Planning Office. The Mayor signs the ordinance after legislative passage, but legislative authority is required.
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-plan-007-05-core-concept", type="image", caption="LGU Planning Authority — RA 7160 Decentralization Framework", description="Diagram of LGU planning authority per RA 7160 LGC: CLUP preparation by Planning Office → Sanggunian adoption (zoning ordinance) → DHSUD conformity review → 10-year horizon + 3-year midterm. Key planning entities and their statutory mandates.", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-## Key Provisions
-
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
-Extracted summary:
-- Props: headers="{[\"Step\", \"Who Does It\", \"What It Is\", \"Based On\"]}", rows=true, CLUP=true, Preparation=true, LGU=true, Planning=true, Office=true, technical=true, Comprehensive=true, Land=true, Use=true, Plan=true
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-## Philippine Context
-
-Every barangay in the Philippines is subject to its municipality's or city's CLUP and zoning ordinance. The Planning Office is typically a small office (1–5 staff) in provincial, city, and municipal governments—they prepare CLUPs, respond to development inquiries, and support zoning enforcement. Planning Offices coordinate with DHSUD on CLUP approvals and with the Mayor on development priorities. Metro Manila's LGUs have more developed planning offices due to development pressure; rural municipalities may have minimal planning capacity.
-
-## How It's Tested
-
-1. **Authority identification:** "Who prepares CLUPs?" → LGU Planning Office. "Who approves CLUPs?" → Sanggunian (legislative adoption); DHSUD (national approval).
-2. **Process sequence:** "In what order do CLUP preparation, legislative adoption, and zoning ordinance passage occur?"
-3. **Zoning authority:** "Which body adopts the zoning ordinance?" → Sanggunian (legislative body).
-
-[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Memory aid:** LGU Planning = prepare. Sanggunian = adopt (legislative). DHSUD = approve (national). Mayor = sign (executive). All four steps are required for a complete CLUP process.
-[/SLATECAMP_UI_BLOCK]
-
-**Exam Tip:** RA 7160 devolved planning but NOT standard-setting. DHSUD still sets national standards and reviews CLUPs for conformity. The Sanggunian adopts the zoning ordinance (legislative), the Mayor only signs it (executive confirmation).
-
-## Cross-References
-
-See **LEA-PLAN-001-05** (CLUP Process) for LGU planning mandate, **LEA-PLAN-002-04** (Land Use Planning) for zoning ordinance adoption by Sanggunian, and **LEA-PLAN-004-07** (Zoning Analysis) for site-level LGU regulation.
-
-## Common Mistakes
-
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\"Saying the Planning Office adopts the CLUP ordinance—only the Sanggunian can adopt; Planning Office prepares\", \"Stating the Mayor adopts the zoning ordinance—Mayor signs after Sanggunian votes; legislative adoption comes first\", \"Forgetting that DHSUD must approve CLUPs—DHSUD approval (national conformity) is a separate step from Sanggunian adoption (local legislative)\", \"Confusing CLUP (10-year plan with 3-year review) with Sanggunian zoning (implementation ordinance)\", \"Saying zoning is prepared by the Mayor or Planning Office alone—it must be adopted as an ordinance by the Sanggunian\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+If an option says the mayor alone adopts the zoning ordinance, reject it. If an option says the planning office has final legislative authority, reject it. If an option says DHSUD prepares the LGU's CLUP for the LGU, reject it. The source-safe chain is technical preparation, Sanggunian enactment, EO 72/DHSUD-linked review, and zoning implementation.

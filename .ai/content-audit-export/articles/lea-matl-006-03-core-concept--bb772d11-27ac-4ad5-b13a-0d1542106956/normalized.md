@@ -1,92 +1,31 @@
-
-
 ## Board Exam Quick Check
 
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+For waterproofing questions, identify water exposure first: dampness without hydrostatic pressure, sustained water pressure, roof-deck water, wet-area splash, or a joint that needs a waterstop.
 
-**Common mistake:** treating a familiar keyword in **Lea Matl 006 03 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
-
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
+
 ## Learning Goal
 
-Distinguish waterproofing from damp-proofing by application method, material type (sheet membranes, liquid-applied, cementitious, bentonite), and the degree of water exposure each system is designed to resist in below-grade and wet-area applications.
+Distinguish dampproofing from waterproofing and classify source-supported waterproofing systems by where and how they resist water.
+
 ## Core Concept
 
-Waterproofing differs from damp-proofing (1-5 mm coatings stopping vapor) by forming impermeable barriers (5-50 mm thick systems) capable of withstanding sustained hydrostatic pressure. Four primary system categories exist: (1) Membrane Waterproofing includes torch-applied bituminous sheets (ASTM D2178), self-adhered sheets (ASTM D1970), and engineered polymerized materials. (2) Liquid-Applied Waterproofing uses elastomeric coatings (acrylic, polyurethane, silicone per ASTM D6083 and D7984) sprayed or rolled to 1.5-2.5 mm dry film thickness. (3) Sheet Membranes combine synthetic polymers (PVC, EPDM, TPO) with reinforcement, typically 45-60 mils (1.1-1.5 mm). (4) Cementitious Waterproofing employs capillary-break mortar or crystalline additives (potassium silicate reaction) for below-grade use.
+Dampproofing and waterproofing are not interchangeable. BCI applies dampproofing to a foundation wall when subsoil conditions indicate that hydrostatic pressure from groundwater will not occur. When hydrostatic pressure may occur, foundation walls should be waterproofed. That pressure distinction is more reliable than memorizing thickness values not found in the checked sources.
 
-Critical design distinction: Positive-side waterproofing (exposed to water source) is applied on the water-facing surface (exterior below-grade walls, roof decks). Negative-side waterproofing (interior-applied) blocks water after infiltration, suitable only for non-hydrostatic applications. Tropical climates demand positive-side systems because annual rainfall (1500-2500 mm) and monsoon intensity (200+ mm/hr) create intermittent hydrostatic pressure on foundations.
+BCI also describes practical foundation detailing: dampproofing or waterproofing membrane should extend from above grade down to the top of the footing; drainage mat or gravel backfill lets water flow down to footing drains; and the membrane should be protected during backfilling with drainage mat, rigid extruded polystyrene insulation, or protection board. At the wall-slab joint, bentonite clay or another waterstop can be used where waterproofing is required.
 
-Material selection hinges on substrate preparation (dust, efflorescence removal, dampness tolerance), cure conditions (tropical humidity 80-100% RH, temperatures 25-35°C), movement accommodation (concrete shrinkage ±0.1%, thermal expansion ±0.05% per °C), and post-cure traffic load timing. Polyurethane systems are preferred for tropical below-grade because they cure in high humidity and achieve rapid strength (walkable in 24-48 hours vs 7 days for acrylic). Torch-applied bituminous sheets require roof substrate stability and cannot tolerate damp concrete (cure incompatibility).
+Salvan classifies waterproofing into integral, membrane, and fluid-applied types. Membrane systems are used where direct rain or standing water is expected, while fluid-applied elastomeric systems can form a monolithic, seamless, flexible coating over substrates such as concrete, wood, brick, and steel. Salvan specifications also emphasize clean, dry, smooth substrates and written authorization before material substitutions.
 
-
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-waterproofing-system-chart", layout="single", type="image", status="placeholder", alt="Comparison chart of waterproofing systems: sheet membranes, liquid-applied, cementitious, and bentonite with application method, thickness, and water exposure rating", caption="Future chart: waterproofing vs damp-proofing — system types, materials, and applications", suggestedAsset="Material comparison chart with application illustrations", placementIntent="Helps learners distinguish waterproofing from damp-proofing and select appropriate system"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-## Key Provisions
-
-| Property | Value | Standard | LEA Relevance |
-|----------|-------|----------|---------------|
-| Acrylic waterproofing cure time | Tack-free: 24-48 hours; full cure: 5-7 days | ASTM D6083 | Full cure required before service loading or overcoating |
-| Elastomeric membrane minimum thickness | 45 mils (1.14 mm) | ASTM D4434 (PVC) | Puncture/root resistance |
-| Torch-applied bituminous sheet weight | 3.6-4.5 kg/m² | ASTM D2178 | Adhesion and durability |
-| Cementitious coating application | 2-3 mm per coat × 2 coats | ASTM C1315 | Minimum protection layer |
-| Positive-side waterproofing definition | Applied on water-facing surface | ASTM D6164 | Below-grade exterior, roof decks |
-| Negative-side waterproofing definition | Applied on interior after infiltration | ASTM D6164 | Interior walls (non-hydrostatic) |
-| Tropical rainfall intensity (PH) | 200+ mm/hr during typhoons | Meteorological Data | Design storm frequency |
-| Concrete substrate moisture limit (liquid coatings) | &lt;85% RH; damp OK for polyurethane | ASTM D6083, D7984 | Cure compatibility |
-| Thermal movement accommodation | ±0.05% per °C | Material Data | Crack bridging, adhesion |
-| Seam overlap on membranes | 50-75 mm | Installation Standards | Prevents water bypass |
-
-## Philippine Construction Context
-
-Philippine construction extensively uses torch-applied bituminous waterproofing for flat roof decks due to rapid installation and low material cost. Below-grade basement walls in Manila, Cebu, and coastal regions face intermittent hydrostatic pressure from water table fluctuation and monsoon rainfall; polyurethane liquid-applied systems are increasingly specified because they tolerate damp concrete and achieve rapid cure (24-48 hours walkable vs acrylic 5-7 days). Tropical climate factors include (a) high ambient humidity (80-100% RH), which slows evaporative cure and promotes tackiness, (b) UV degradation of exposed membranes (acrylic systems require topcoat), (c) osmotic blistering on roof decks (moisture vapor passing through substrate), and (d) salt spray attack on coastal concrete (efflorescence requires cleaning before coating). Negative-side interior waterproofing is rarely adequate for tropical below-grade applications because rain intensity (200+ mm/hr) causes water infiltration faster than absorption and interior drainage can manage.
-
-
-[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-waterproofing-application-detail", layout="single", type="image", status="placeholder", alt="Cross-section details of waterproofing application at below-grade walls, wet areas, and roof decks showing membrane placement and flashing", caption="Future diagram: waterproofing application details — below-grade, wet area, and roof deck", suggestedAsset="Cross-section detail drawings of waterproofing installations", placementIntent="Visualizes critical waterproofing details in different building locations"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
 ## How It's Tested
 
-**Pattern 1: System Type Selection** — "A basement wall in a typhoon-prone coastal area experiences intermittent hydrostatic pressure. Should waterproofing be applied positive-side or negative-side? Justify." (Answer: Positive-side; water pressure is too high for interior-applied systems to resist. Negative-side is only for non-hydrostatic damp situations.)
-
-**Pattern 2: Material Cure Compatibility** — "A polyurethane liquid waterproofing is specified for a damp (90% RH) concrete basement wall. Why is polyurethane preferred over acrylic for this application?" (Answer: Polyurethane cures in high humidity and with damp substrate; acrylic requires &lt;85% RH and dry concrete. Polyurethane cures faster (24-48 hr vs 5-7 days).)
-
-**Pattern 3: Thickness Calculation** — "An ASTM D6083 acrylic liquid coating is specified at 1.5 mm dry film thickness. If the coating has 60% solids by weight, how many liters per m² are required?" (Answer: 1.5 mm = 0.0015 m; 1 m² × 0.0015 m = 0.0015 m³ = 1.5 liters per m². Accounting for 60% solids, wet application = 1.5/0.6 = 2.5 liters/m² required.)
-
-**Pattern 4: Substrate Preparation** — "Concrete substrate shows efflorescence and salt deposits from tropical weather. What is the required preparation before liquid waterproofing application?" (Answer: Wire brush or chemical cleaning per ASTM D4259 to remove salts and mineral deposits; verify &lt;85% RH moisture content with calcium chloride test if using acrylic.)
-
-[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Memorize the distinction: Positive-side = applied on water source surface (exterior below-grade, roof deck). Negative-side = applied on interior (low moisture only). Tropical climates always demand positive-side for hydrostatic. Polyurethane cures in damp conditions; acrylic requires dry substrate.
-[/SLATECAMP_UI_BLOCK]
-Extracted summary:
-- Props: (none)
-- Text: Memorize the distinction: Positive-side = applied on water source surface (exterior below-grade, roof deck). Negative-side = applied on interior (low moisture only). Tropical climates always demand positive-side for hydrostatic. Polyurethane cures in damp conditions; acrylic requires dry substrate.
+A typical item gives a foundation or wet-area condition and asks whether dampproofing is enough. If the clue includes hydrostatic pressure, habitable below-grade space, membrane protection during backfilling, or waterstop coordination, the safer answer is waterproofing with drainage and protection details.
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
-Extracted summary:
-- Props: mistake="Specifying negative-side waterproofing (interior coatings) for below-grade basement walls in tropical monsoon regions, expecting interior drainage to manage 200+ mm/hr rainfall.", correction="Tropical rainfall intensity exceeds interior drainage capacity. Positive-side (exterior) waterproofing is mandatory for hydrostatic protection. Negative-side is only for non-hydrostatic damp."
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-Extracted summary:
-- Props: mistake="Specifying negative-side waterproofing (interior coatings) for below-grade basement walls in tropical monsoon regions, expecting interior drainage to manage 200+ mm/hr rainfall.", correction="Tropical rainfall intensity exceeds interior drainage capacity. Positive-side (exterior) waterproofing is mandatory for hydrostatic protection. Negative-side is only for non-hydrostatic damp."
-- Text: (none detected)
-
-ed"]
-[SLATECAMP_UI_BLOCK:ui_0005 component="Note" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+- Using dampproofing for conditions where groundwater pressure may occur.
+- Treating interior coatings as a substitute for exterior drainage and membrane protection.
+- Inventing rainfall rates, thicknesses, or standards not checked in the raw source PDFs.
+- Ignoring substrate preparation and protection during backfilling.
 
 ## Related Articles
 

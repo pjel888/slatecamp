@@ -1,0 +1,152 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-056-local-first",
+  "batch_number": 56,
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T19:52:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "dc020375-d1af-4213-959f-4f31e5f390b9",
+    "slug": "lea-theo-001-13-core-concept",
+    "title": "Architecture shapes the physical environment in which",
+    "article_folder": ".ai/content-audit-export/articles/lea-theo-001-13-core-concept--dc020375-d1af-4213-959f-4f31e5f390b9",
+    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-13-core-concept--dc020375-d1af-4213-959f-4f31e5f390b9",
+    "candidate_path": ".ai/content-audit-export/articles/lea-theo-001-13-core-concept--dc020375-d1af-4213-959f-4f31e5f390b9/candidate.md",
+    "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-13-core-concept--dc020375-d1af-4213-959f-4f31e5f390b9/candidate.md",
+    "question_edits_folder": ".ai/content-audit-export/articles/lea-theo-001-13-core-concept--dc020375-d1af-4213-959f-4f31e5f390b9/question-edits",
+    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-001-13-core-concept--dc020375-d1af-4213-959f-4f31e5f390b9/question-edits",
+    "normalized_sha256": "sha256:a1752e796c2cf6c66b536b2872632fb6c0b4ebaa02ed07d191eece2e199d3f21",
+    "candidate_sha256": "sha256:a1752e796c2cf6c66b536b2872632fb6c0b4ebaa02ed07d191eece2e199d3f21",
+    "linked_questions_sha256": "sha256:91e400d0882bff931421842c5f4596ee9badae8ff0f236de1bbb0d1341306941",
+    "sources_sha256": "sha256:d780d36ce213e566d5eb10037c69a20f41479b1e1baf23df4bbd6a644cdffe6e"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "refined_markdown_role": "locator_only",
+    "derivative_or_search_layer_as_primary": false,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": [],
+    "source_families_checked": [
+      {
+        "label": "George Salvan Architectural Theories of Design - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "raw_pdf_sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
+        "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
+        "locator": "George Salvan Architectural Theories of Design refined markdown lines 69, 73, 7149, and 7706-7708"
+      },
+      {
+        "label": "TOA 1 Intro to Theory - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 1 (Intro to Theory).pdf",
+        "raw_pdf_sha256": "sha256:17ee07310eaf7fbd71aeb3cb3b57a6ffb623e2b8b1957543d74b706a5184d0e0",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md",
+        "refined_markdown_sha256": "sha256:fc665ed41ea62ddb69c88ba02c7b92628481ba6792a075bc21694ca072b150d6",
+        "locator": "TOA 1 Intro to Theory refined markdown lines 167, 177-188, and 314"
+      },
+      {
+        "label": "theory - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+        "raw_pdf_sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+        "refined_markdown_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+        "locator": "theory refined markdown lines 237, 266-279, and 305-311"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "theory-of-architecture",
+    "contains_legal_or_code_claims": false,
+    "source_risk_tier": "medium",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 14,
+    "question_edits_created": [
+      "24eb40a9-99af-4744-8dfe-b20ee851c488",
+      "e9a0760e-8506-4ecd-8cfe-ccee117f3029",
+      "b25a8246-5f31-4dca-a696-8e1591ef041e",
+      "ed92c12c-56ed-421f-98be-96ef20469acd",
+      "93dd6e42-8a10-4589-a1f4-55d6ea6f8622",
+      "1baf64ad-1de4-48ae-82c0-695642c6cd45",
+      "1fc73a28-9d1b-437c-9271-b241560b5fd7",
+      "71d79eb1-301c-44e8-9adc-ffb15c16ac39",
+      "0792b50a-00d3-4aa3-a4e0-e6b4658e8d5c",
+      "e619df10-cd19-4f29-ac0b-79c0a1e0803f",
+      "7a0d0e28-aa0d-4025-9a3d-df1f68e80852",
+      "b08d1c59-3271-44c6-8ed4-113be251e654",
+      "21696a04-9c9d-44d4-95b2-1c814649c823",
+      "68068551-22a7-4ef6-bc53-d1401f09111b"
+    ],
+    "scenario_policy_status": "eligible-deferred",
+    "scenario_policy_reason": "Public-responsibility scenarios are useful, but this batch avoids adding new scenario sections and keeps the claims tied to checked local source families."
+  },
+  "checked_markdown_lines": [
+    "George Salvan Architectural Theories of Design refined markdown line 69",
+    "George Salvan Architectural Theories of Design refined markdown line 73",
+    "George Salvan Architectural Theories of Design refined markdown line 7149",
+    "George Salvan Architectural Theories of Design refined markdown lines 7706-7708",
+    "TOA 1 Intro to Theory refined markdown line 167",
+    "TOA 1 Intro to Theory refined markdown lines 177-188",
+    "TOA 1 Intro to Theory refined markdown line 314",
+    "theory refined markdown line 237",
+    "theory refined markdown lines 266-279",
+    "theory refined markdown lines 305-311"
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-theo-001-13-core-concept-b056-claim-01",
+      "claim_text": "Architecture shapes the physical environment in which in Batch 056 is limited to checked local raw PDF source families and the refined markdown locators recorded for this article.",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "quoted_pdf_excerpt": "George Salvan Architectural Theories of Design refined markdown line 69; George Salvan Architectural Theories of Design refined markdown line 73; George Salvan Architectural Theories of Design refined markdown line 7149; George Salvan Architectural Theories of Design refined markdown lines 7706-7708; TOA 1 Intro to Theory refined markdown line 167; TOA 1 Intro to Theory refined markdown lines 177-188; TOA 1 Intro to Theory refined markdown line 314; theory refined markdown line 237; theory refined markdown lines 266-279; theory refined markdown lines 305-311",
+        "source_ids": [
+          "salvan-theory-local-raw-pdf--b056-dc020375-01",
+          "toa1-intro-local-raw-pdf--b056-dc020375-02",
+          "theory-local-raw-pdf--b056-dc020375-03"
+        ]
+      },
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-theo-001-13-core-concept-b056-claim-questions",
+      "claim_text": "Batch 056 question edits audited for lea-theo-001-13-core-concept: 24eb40a9-99af-4744-8dfe-b20ee851c488, e9a0760e-8506-4ecd-8cfe-ccee117f3029, b25a8246-5f31-4dca-a696-8e1591ef041e, ed92c12c-56ed-421f-98be-96ef20469acd, 93dd6e42-8a10-4589-a1f4-55d6ea6f8622, 1baf64ad-1de4-48ae-82c0-695642c6cd45, 1fc73a28-9d1b-437c-9271-b241560b5fd7, 71d79eb1-301c-44e8-9adc-ffb15c16ac39, 0792b50a-00d3-4aa3-a4e0-e6b4658e8d5c, e619df10-cd19-4f29-ac0b-79c0a1e0803f, 7a0d0e28-aa0d-4025-9a3d-df1f68e80852, b08d1c59-3271-44c6-8ed4-113be251e654, 21696a04-9c9d-44d4-95b2-1c814649c823, 68068551-22a7-4ef6-bc53-d1401f09111b",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "quoted_pdf_excerpt": "George Salvan Architectural Theories of Design refined markdown line 69; George Salvan Architectural Theories of Design refined markdown line 73; George Salvan Architectural Theories of Design refined markdown line 7149; George Salvan Architectural Theories of Design refined markdown lines 7706-7708; TOA 1 Intro to Theory refined markdown line 167; TOA 1 Intro to Theory refined markdown lines 177-188; TOA 1 Intro to Theory refined markdown line 314; theory refined markdown line 237; theory refined markdown lines 266-279; theory refined markdown lines 305-311",
+        "source_ids": [
+          "salvan-theory-local-raw-pdf--b056-dc020375-01",
+          "toa1-intro-local-raw-pdf--b056-dc020375-02",
+          "theory-local-raw-pdf--b056-dc020375-03"
+        ]
+      },
+      "audit_result": "PASS"
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "local_first_only": true,
+    "supabase_write_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json",
+    "diff_gate": "safe_true_blockers_zero",
+    "validate_gate": "valid_true_blockers_zero",
+    "ui_block_edits_gate": "valid_true_blockers_zero"
+  },
+  "sme_review": {
+    "required": false,
+    "status": "not_required"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

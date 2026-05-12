@@ -1,80 +1,44 @@
 {
   "article_id": "21880755-59f3-4749-9786-59e6cb53c6ed",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:73bd4bc93d5169f9bf7b77c8171f41e08aa417ac57efedc1f0b029e5f1b10026",
-  "source_count": 6,
+  "sources_hash": "sha256:7ad198f8d2d84449814c9ef7608045196578accb4170f9aa21e563f00cbdebe7",
+  "source_count": 3,
   "sources": [
     {
-      "source_id": "a6e036d8-20cb-4135-9355-c4290c182161",
+      "source_id": "building-construction-illustrated-b073",
       "article_id": "21880755-59f3-4749-9786-59e6cb53c6ed",
-      "label": "Ching, Frank D., Barry Goody, and Paul Rochon. Site Planning, 4th ed., Wiley (2011) — Comprehensive site analysis and planning principles",
+      "label": "Building Construction Illustrated 5th Edition",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "professional_reference_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-073-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf; raw_pdf_sha256=sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md; refined_markdown_sha256=sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a; checked_locator=BCI refined markdown lines 245-272, 284-288, 333-356, 360, 733-737, 747-755, and 1328-1336; raw PDF pages 11, 17, 20, 31, 46, and 473-475 checked by local PyMuPDF extraction",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:33:58.214974+00:00",
-      "updated_at": "2026-03-24T04:33:58.214974+00:00"
+      "created_at": "2026-05-12T01:46:28+08:00",
+      "updated_at": "2026-05-12T01:46:28+08:00"
     },
     {
-      "source_id": "db6929f9-2e45-4e8a-957d-4a38f78e57ed",
+      "source_id": "doe-energy-conserving-design-b073",
       "article_id": "21880755-59f3-4749-9786-59e6cb53c6ed",
-      "label": "Dawson, David, and Paul Sherwood. Site Planning and Design Handbook, 2nd ed., McGraw-Hill (2009) — Detailed site analysis methodology",
+      "label": "DOE Guidelines on Energy Conserving Design of Buildings 2008",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "energy_guideline_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-073-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf; raw_pdf_sha256=sha256:9a1a4019b500ffc2873625db6f04ac50b39aea7cadac9159464f9ed716e8126c; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.md; refined_markdown_sha256=sha256:477f0990a67359eee303e8280a00be449d0aa413252161db7b5b1bafec3012b9; checked_locator=DOE refined markdown lines 711-795; raw PDF pages 18-19, 33, 36, and 37 checked by local PyMuPDF extraction",
+      "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-03-24T04:33:58.214974+00:00",
-      "updated_at": "2026-03-24T04:33:58.214974+00:00"
+      "created_at": "2026-05-12T01:46:28+08:00",
+      "updated_at": "2026-05-12T01:46:28+08:00"
     },
     {
-      "source_id": "92927f03-4ad3-4899-81aa-d6b6cea99cb0",
+      "source_id": "pd1096-rirr-2004-b073",
       "article_id": "21880755-59f3-4749-9786-59e6cb53c6ed",
-      "label": "Philippine Atmospheric, Geophysical and Astronomical Services Administration (PAGASA). Climate Data for Philippine Cities, including sun path and wind data at 14.5°N latitude (2020)",
+      "label": "PD 1096 2004 Revised IRR - National Building Code",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "primary_law_irr_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-073-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf; raw_pdf_sha256=sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md; refined_markdown_sha256=sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7; checked_locator=PD 1096 refined markdown lines 560-570 and 2085-2089; raw PDF pages 23-24, 27, 33, and 352 checked by local PyMuPDF extraction",
+      "is_verified": true,
       "sort_order": 2,
-      "created_at": "2026-03-24T04:33:58.214974+00:00",
-      "updated_at": "2026-03-24T04:33:58.214974+00:00"
-    },
-    {
-      "source_id": "a69578b1-2404-4b8d-9cdf-4973c12c2760",
-      "article_id": "21880755-59f3-4749-9786-59e6cb53c6ed",
-      "label": "National Building Code of the Philippines (NBC), Sections on site development, accessibility, and utilities",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:33:58.214974+00:00",
-      "updated_at": "2026-03-24T04:33:58.214974+00:00"
-    },
-    {
-      "source_id": "09a78de4-e020-4314-a444-0b32a66db4b4",
-      "article_id": "21880755-59f3-4749-9786-59e6cb53c6ed",
-      "label": "Department of Public Works and Highways (DPWH). Guidelines for Site Analysis and Slope Management (2015)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 4,
-      "created_at": "2026-03-24T04:33:58.214974+00:00",
-      "updated_at": "2026-03-24T04:33:58.214974+00:00"
-    },
-    {
-      "source_id": "4200cf09-b025-471f-badb-5b03da7e00b9",
-      "article_id": "21880755-59f3-4749-9786-59e6cb53c6ed",
-      "label": "Olgyay, Victor, and Aladar Olgyay. Design with Climate, 2nd ed., Princeton University Press (1992) — Solar orientation and climate-responsive design principles",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 5,
-      "created_at": "2026-03-24T04:33:58.214974+00:00",
-      "updated_at": "2026-03-24T04:33:58.214974+00:00"
+      "created_at": "2026-05-12T01:46:28+08:00",
+      "updated_at": "2026-05-12T01:46:28+08:00"
     }
   ]
 }

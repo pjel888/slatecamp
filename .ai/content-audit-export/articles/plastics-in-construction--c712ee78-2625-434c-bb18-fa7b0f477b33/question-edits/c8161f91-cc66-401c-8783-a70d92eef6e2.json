@@ -1,0 +1,57 @@
+{
+  "question_id": "c8161f91-cc66-401c-8783-a70d92eef6e2",
+  "baseline_hash": "sha256:f3d7716521b4b2284f29053eeb6bddf977f039d89aa237096c92b2216cf6f74c",
+  "action": "replace",
+  "reason": "source-audited-article-batch-036-local-first: source-safe replacement grounded in local raw PDF/source family evidence; removes unsupported, stale, or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-036",
+  "approved_at": "2026-05-11T12:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-036-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-national-building-code-local",
+        "label": "PD 1096 National Building Code - Plastics Provisions",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 - National Building Code.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 - National Building Code.md",
+        "checked_markdown_lines": [
+          "PD 1096 National Building Code refined markdown lines 1909-1998"
+        ]
+      },
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR 2004 DPWH Official refined markdown lines 4377-4442"
+        ]
+      }
+    ],
+    "citation": "PD 1096, Section 1604"
+  },
+  "proposed": {
+    "text": "What aggregate-area limit applies to plastics in skylights, monitors, and sawtooth glazing?",
+    "options": [
+      {
+        "id": "b036-c712-07-a",
+        "text": "Not more than 20 percent of the floor area of the room or occupancy sheltered"
+      },
+      {
+        "id": "b036-c712-07-b",
+        "text": "Not more than 50 percent of exterior wall area"
+      },
+      {
+        "id": "b036-c712-07-c",
+        "text": "Not more than 10 percent of site area"
+      },
+      {
+        "id": "b036-c712-07-d",
+        "text": "No aggregate limit is stated"
+      }
+    ],
+    "correct_option_id": "b036-c712-07-a",
+    "rationale": "Correct answer: Not more than 20 percent of the floor area of the room or occupancy sheltered. This is directly supported by PD 1096, Section 1604.",
+    "explanation": "The source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096, Section 1604.",
+    "code_citation": "PD 1096, Section 1604"
+  }
+}

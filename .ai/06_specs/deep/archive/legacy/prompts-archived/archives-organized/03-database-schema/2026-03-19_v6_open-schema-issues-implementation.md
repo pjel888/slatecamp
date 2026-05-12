@@ -332,8 +332,8 @@ RETURNS TRIGGER AS $$
 BEGIN
   IF NEW.status = 'completed' AND (OLD.status IS NULL OR OLD.status != 'completed') THEN
     INSERT INTO public.readiness_score_snapshots (
-      user_id, 
-      score, 
+      user_id,
+      score,
       session_id,           -- NEW
       is_proof_simulation   -- NEW
     )

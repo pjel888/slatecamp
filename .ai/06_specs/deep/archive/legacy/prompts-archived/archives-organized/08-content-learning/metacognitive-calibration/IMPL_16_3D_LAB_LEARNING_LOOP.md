@@ -1,7 +1,7 @@
 # IMPL_16: 3D Lab Learning Loop — In-Lab Quiz, Code Compliance Toggle, Bidirectional Links
 
-**Priority:** P1  
-**Effort:** ~1 week  
+**Priority:** P1
+**Effort:** ~1 week
 **Research basis:** Level 3 Interactivity (manipulate + receive feedback) produces the highest learning outcomes (Moreno & Mayer, 2007). Situated learning theory (Lave & Wenger, 1991) — learning in authentic contexts transfers to real performance.
 
 ---

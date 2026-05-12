@@ -131,21 +131,21 @@
   .animate-fade-in {
     animation: fadeIn 150ms ease-out forwards;
   }
-  
+
   .animate-slide-up {
     animation: slideUp 200ms ease-out forwards;
   }
-  
+
   @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
   }
-  
+
   @keyframes slideUp {
     from { transform: translateY(10px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
   }
-  
+
   /* Add to globals.css import */
   @import './animation-utils.css';
   ```
@@ -165,11 +165,11 @@
   ```typescript
   // Add to toast store/context:
   dismissAll: () => void
-  
+
   // In Toaster component:
-  <Button 
-    variant="ghost" 
-    size="sm" 
+  <Button
+    variant="ghost"
+    size="sm"
     onClick={() => toast.dismissAll()}
   >
     Dismiss all

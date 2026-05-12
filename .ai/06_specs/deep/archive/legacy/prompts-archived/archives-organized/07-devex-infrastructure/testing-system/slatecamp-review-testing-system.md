@@ -1,9 +1,9 @@
 # SlateCamp — Review & Testing System
 ## Comprehensive Product & Data Document
 
-**Prepared by:** Product Architect  
-**Date:** March 2026  
-**Classification:** Internal · Engineering + Product Reference  
+**Prepared by:** Product Architect
+**Date:** March 2026
+**Classification:** Internal · Engineering + Product Reference
 **Scope:** All quiz modes, testing mechanics, data contracts, schema, and planned additions
 
 ---
@@ -227,7 +227,7 @@ WHERE user_id = $userId;
 ## 3. Zone 01 — Foundations
 
 ### 3.1 Camp Mode (`test_mode = 'camp'`)
-**Subtitle:** Guided  
+**Subtitle:** Guided
 **Purpose:** The primary daily study mode. Immediate feedback after each answer. Expert rationale on every question. Algorithmic remediation. The mode that builds mastery incrementally.
 
 **Session behavior:**
@@ -266,8 +266,8 @@ WHERE user_id = $userId;
 ```
 
 **Mastery update on completion:**
-Every correct answer → updates `user_node_mastery.current_mastery_weight` using EMA.  
-Every wrong answer → decrements EMA, routes Blindspot Protocol to flag the node.  
+Every correct answer → updates `user_node_mastery.current_mastery_weight` using EMA.
+Every wrong answer → decrements EMA, routes Blindspot Protocol to flag the node.
 Lucky guess detected → correct answer contributes at 0.3× weight instead of 1.0×.
 
 **What Camp Mode feeds:**
@@ -281,7 +281,7 @@ Lucky guess detected → correct answer contributes at 0.3× weight instead of 1
 ---
 
 ### 3.2 Chill Mode (`test_mode = 'practice'`)
-**Subtitle:** Relaxed  
+**Subtitle:** Relaxed
 **Purpose:** Browse and absorb at low cognitive load. No pressure. Ideal for low-energy review sessions, end-of-day reinforcement, or when the student wants to explore unfamiliar topics without the anxiety of being graded.
 
 **Session behavior:**
@@ -316,7 +316,7 @@ Same pipeline as Camp Mode, but with reduced mastery weight multiplier in applic
 ## 4. Zone 02 — Deliberate Practice
 
 ### 4.1 Subject Mode (Camp Mode Variant, Subject-Filtered)
-**Subtitle:** Focused  
+**Subtitle:** Focused
 **Purpose:** Target a single ALE subject and go deep. Questions are scoped entirely to one subject's taxonomy nodes. Uses Camp Mode feedback (immediate). Good for deliberate gap closure on a specific subject identified by the heatmap.
 
 **Session behavior:**
@@ -359,7 +359,7 @@ LIMIT $questionCount;
 ---
 
 ### 4.2 Focus Review (Blindspot Protocol — Active Mode)
-**Subtitle:** Targeted  
+**Subtitle:** Targeted
 **Purpose:** Resurface the student's weakest, most persistently Red nodes with a focused remediation queue. This is the active, student-triggered version of the Blindspot Protocol (as opposed to the nightly automated queue).
 
 **The Blindspot Protocol — Full Specification:**
@@ -433,7 +433,7 @@ The `pre_queue_mastery` and `post_queue_mastery` JSONB snapshots enable post-ses
 ---
 
 ### 4.3 Custom Session
-**Subtitle:** Flexible  
+**Subtitle:** Flexible
 **Purpose:** Full student control. Choose topics, question count, difficulty range, and feedback style. Good for targeted practice on specific code sections or specific difficulty levels.
 
 **Student controls:**
@@ -462,7 +462,7 @@ The `pre_queue_mastery` and `post_queue_mastery` JSONB snapshots enable post-ses
 ## 5. Zone 03 — Exam Readiness
 
 ### 5.1 Storm Mode (`test_mode = 'timed'`)
-**Subtitle:** Timed  
+**Subtitle:** Timed
 **Purpose:** Simulate real exam conditions. No feedback until the session ends. Timer visible as a progress bar (never a countdown). No ability to review answers mid-session. Stripped UI — no navigation chrome, no subject labels. This is the mode that builds exam-day psychological readiness.
 
 **Session behavior:**
@@ -500,7 +500,7 @@ The `pre_queue_mastery` and `post_queue_mastery` JSONB snapshots enable post-ses
 ---
 
 ### 5.2 Full Exam Simulation — Proof Simulation (`is_proof_simulation = true`)
-**Subtitle:** Exam Day  
+**Subtitle:** Exam Day
 **Purpose:** The closest simulation to sitting the actual ALE. Full item count, real exam conditions, 24-hour cold score delivery, and a Readiness Score recalibration that incorporates a "pressure-tested component." Gated behind a competency threshold (Readiness Score ≥ 65% by default, stored in `camp_trails.recommended_min_score`).
 
 **Why gated:** Students below 65% readiness who take a full Proof Simulation and score 28% will not benefit from the experience. The gap is too large to be instructive. The gate exists to protect the student's psychological state from a premature cold failure.
@@ -551,10 +551,10 @@ ORDER BY computed_at DESC;
 ---
 
 ### 5.3 Extended Practice — Area C Endurance Training (`test_mode = 'camp'` with endurance config)
-**Subtitle:** Endurance  
+**Subtitle:** Endurance
 **Purpose:** Build cognitive stamina for the sustained performance ALE Day 2 demands. The ALE's Area C (Architectural Design) is 3+ hours under exam conditions. Most first-time failures on Area C are caused by cognitive fatigue, not lack of knowledge. Extended Practice builds the reliable performance window week by week.
 
-**Previously named:** "Endurance Cycle"  
+**Previously named:** "Endurance Cycle"
 **New positioning (as decided this session):** "Area C Endurance Training" — explicitly framed as preparation for the 3+ hour Day 2 requirement.
 
 **How it works:**
@@ -813,7 +813,7 @@ Every mode produces a post-session debrief screen. The data shown depends on the
 **All supported `source` values:**
 ```
 camp_mode
-chill_mode  
+chill_mode
 subject_mode
 focus_review
 custom_session
@@ -913,7 +913,7 @@ Applied to specific decisions:
 
 ---
 
-*SlateCamp — Review & Testing System · Comprehensive Product & Data Document*  
-*Version 1.0 · March 2026 · Internal · Engineering + Product Reference*  
+*SlateCamp — Review & Testing System · Comprehensive Product & Data Document*
+*Version 1.0 · March 2026 · Internal · Engineering + Product Reference*
 *Based on: DATABASE_SCHEMA.sql (production) · Product Architecture v2.1 · DB Audit v3 · UX Research sessions*
 

@@ -130,17 +130,17 @@ Micro       → 11px / 400 weight → Legal, footnotes (use sparingly)
 [Full-screen, centered]
 ─────────────────────
   "Your Readiness Score"          ← Label / 14px / muted
-  
+
        79                         ← Score / 80px / 700 / zone-colored
-       
+
   ████████████░░░  79%            ← Progress bar / zone-colored fill
-  
+
   "Green Zone — Solid Foundation" ← Zone label / H3 / zone-colored
-  
+
   "You're prepared in 14 of 20
    disciplines. Your Trail will
    focus on the 6 that matter."   ← Context sentence / Body / charcoal
-   
+
   [Primary CTA: "See Your Trail"] ← Camp Cobalt button, full-width
   [Secondary: "View Full Map"]    ← Tertiary text link
 ─────────────────────
@@ -213,12 +213,12 @@ Micro       → 11px / 400 weight → Legal, footnotes (use sparingly)
 [Today's Day Card — full-width, elevated]
   Day 14                          ← Label
   "Structural Systems Deep Dive"  ← H2
-  
+
   Estimated: 35 min
   3 sessions · 45 questions
-  
+
   Topics: Beam Design, Columns, Connections
-  
+
   [Primary: "Start Day 14"]       ← Camp Cobalt, full-width
   [Secondary: "Preview topics"]   ← Tertiary text link
 
@@ -247,12 +247,12 @@ Micro       → 11px / 400 weight → Legal, footnotes (use sparingly)
 
 [Question body — max width 640px centered]
   "Building Laws · Foundation Design"   ← Breadcrumb / Label / muted
-  
+
   Question 12 of 45
-  
+
   "Which of the following best describes
    the load path in a cantilever beam?"  ← H2 or H3, comfortable
-   
+
   [Answer options — full-width, 48px min height each]
   ○ A. From the free end to the fixed support
   ○ B. Distributed equally across the span
@@ -275,15 +275,15 @@ Micro       → 11px / 400 weight → Legal, footnotes (use sparingly)
 **Session completion screen:**
 ```
   Session Complete                ← H1
-  
+
   12/15 correct  ·  80%          ← Display size / zone-colored
-  
+
   ████████████░░░                ← Accuracy bar
-  
+
   Avg time: 42 sec/question
   Fastest: Building Laws (28 sec)
   Needs work: Structural Systems
-  
+
   [View Heatmap Changes]         ← Secondary
   [Start Next Session]           ← Primary
   [Go to Camp Trail]             ← Tertiary

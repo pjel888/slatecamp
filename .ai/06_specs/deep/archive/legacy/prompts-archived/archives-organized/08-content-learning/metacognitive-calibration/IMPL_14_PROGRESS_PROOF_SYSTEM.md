@@ -1,7 +1,7 @@
 # IMPL_14: Progress Proof System & Outcome Correlation
 
-**Priority:** P1  
-**Effort:** ~3 days  
+**Priority:** P1
+**Effort:** ~3 days
 **Research basis:** Progress visibility is a core retention driver. Passer outcome correlation is the ultimate product validation metric.
 
 ---

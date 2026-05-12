@@ -1,7 +1,25 @@
 {
   "article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "source_count": 0,
-  "sources": []
+  "sources_hash": "sha256:d1bfda4d4bdb41ad174b999ddf222632f81fafaebf809bf274cdfcfa702e48b0",
+  "source_count": 1,
+  "sources": [
+    {
+      "source_id": "denr-dao-2003-30-eis-system-local",
+      "label": "DENR DAO 2003-30 EIS System Implementing Rules",
+      "authority": "Department of Environment and Natural Resources",
+      "source_type": "administrative_order_pdf",
+      "source_locator": "DAO 2003-30 refined markdown lines 13-150 and 150-360",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DENR/DENR DAO 2003-30 - EIS System Implementing Rules.pdf",
+      "raw_pdf_sha256": "sha256:079285ca972d0be053faa148fe6770c12c396408c35e6739929b81685e775fb7",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DENR/DENR DAO 2003-30 - EIS System Implementing Rules.md",
+      "refined_markdown_sha256": "sha256:3a77a918f5e5a62043b3a3e75d9583372031da82056f882b49c317e94f119763",
+      "checked_markdown_lines": [
+        "DAO 2003-30 refined markdown lines 13-150",
+        "DAO 2003-30 refined markdown lines 150-360"
+      ],
+      "use": "primary local source for environmental-practice article repair and linked-question replacement drafts",
+      "local_source_checked": true
+    }
+  ]
 }

@@ -1,0 +1,251 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-081-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T04:50:00.000+08:00",
+  "target": {
+    "article_id": "3a00f23f-1eeb-49c4-bf44-e51354d14ce6",
+    "slug": "comprehensive-signage-package",
+    "title": "BP 344 signage package",
+    "article_folder": ".ai/content-audit-export/articles/comprehensive-signage-package--3a00f23f-1eeb-49c4-bf44-e51354d14ce6",
+    "normalized_sha256": "sha256:82532bf9572424a2b2f79b532040031ec437e3e7687a4892f024e19b1208893a",
+    "candidate_sha256": "sha256:82532bf9572424a2b2f79b532040031ec437e3e7687a4892f024e19b1208893a",
+    "candidate_path": ".ai/content-audit-export/articles/comprehensive-signage-package--3a00f23f-1eeb-49c4-bf44-e51354d14ce6/candidate.md"
+  },
+  "classification": {
+    "topic_family": "accessibility_code_signage",
+    "local_first_batch": "081",
+    "source_sensitivity": "code_accessibility",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "primary_code_dimensions",
+    "requires_raw_pdf_audit": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdfs_checked_first": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "local_pdf_extraction_method": "python_pymupdf_local",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "bp344-2024-irr-b081",
+      "label": "BP 344 2024 Revised IRR",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "locator": "BP 344 2024 IRR refined markdown lines 307-356 and 505-511; raw PDF pages 11-18 checked by local PyMuPDF extraction"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "comprehensive-signage-package-article-b081",
+      "claim_text": "Article comprehensive-signage-package was rewritten to the checked accessibility_code_signage source scope.",
+      "claim_type": "article_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "source_locator": "BP 344 2024 IRR refined markdown lines 307-356 and 505-511; raw PDF pages 11-18 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Primary code locators were checked in the local raw PDF extraction before the article rewrite."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-04f69414-1157-4553-9f83-e18a202d4aae-b081",
+      "claim_text": "Question 04f69414-1157-4553-9f83-e18a202d4aae was rewritten to the checked accessibility_code_signage source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "source_locator": "BP 344 2024 IRR refined markdown lines 307-356 and 505-511; raw PDF pages 11-18 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "The BP 344 distance table gives 500 mm minimum letter height at 50 m."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-0ce834a6-c997-4275-8d90-c1e2db7ff3d0-b081",
+      "claim_text": "Question 0ce834a6-c997-4275-8d90-c1e2db7ff3d0 was rewritten to the checked accessibility_code_signage source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "source_locator": "BP 344 2024 IRR refined markdown lines 307-356 and 505-511; raw PDF pages 11-18 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "The BP 344 distance table gives 100 mm minimum letter height at 10 m."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-2bfdad4b-75b6-48fa-8dab-2268fd597ef3-b081",
+      "claim_text": "Question 2bfdad4b-75b6-48fa-8dab-2268fd597ef3 was rewritten to the checked accessibility_code_signage source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "source_locator": "BP 344 2024 IRR refined markdown lines 307-356 and 505-511; raw PDF pages 11-18 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "BP 344 specifies 600 mm x 600 mm pole-mounted signage for accessible parking."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-2f48a7a0-11a9-40af-9ffb-855ebdf41d93-b081",
+      "claim_text": "Question 2f48a7a0-11a9-40af-9ffb-855ebdf41d93 was rewritten to the checked accessibility_code_signage source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "source_locator": "BP 344 2024 IRR refined markdown lines 307-356 and 505-511; raw PDF pages 11-18 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "BP 344 gives 200 mm x 200 mm for accessible toilet and shower door signage."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-3c35f23d-d558-4810-bbc4-3ba760a47e2a-b081",
+      "claim_text": "Question 3c35f23d-d558-4810-bbc4-3ba760a47e2a was rewritten to the checked accessibility_code_signage source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "source_locator": "BP 344 2024 IRR refined markdown lines 307-356 and 505-511; raw PDF pages 11-18 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "BP 344 sets raised characters at at least 16 mm high and not more than 50 mm high."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-5398cb0d-74f5-4b00-853b-2814a8176b8d-b081",
+      "claim_text": "Question 5398cb0d-74f5-4b00-853b-2814a8176b8d was rewritten to the checked accessibility_code_signage source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "source_locator": "BP 344 2024 IRR refined markdown lines 307-356 and 505-511; raw PDF pages 11-18 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "BP 344 uses ISA directional signs at passageways and points where routes change direction toward accessible facilities."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-7598672f-1882-4c4d-9552-177d94010326-b081",
+      "claim_text": "Question 7598672f-1882-4c4d-9552-177d94010326 was rewritten to the checked accessibility_code_signage source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "source_locator": "BP 344 2024 IRR refined markdown lines 307-356 and 505-511; raw PDF pages 11-18 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "BP 344 describes the ISA as a white wheelchair symbol on a United Nations Blue or Pantone 279 background."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-8220a4b6-1f45-4953-8ea1-b1631d64ce3c-b081",
+      "claim_text": "Question 8220a4b6-1f45-4953-8ea1-b1631d64ce3c was rewritten to the checked accessibility_code_signage source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "source_locator": "BP 344 2024 IRR refined markdown lines 307-356 and 505-511; raw PDF pages 11-18 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "BP 344 requires at least 2200 mm vertical clearance for a sign protruding into a route."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-8922a0c0-af20-431f-b8c3-4a1180eec8f8-b081",
+      "claim_text": "Question 8922a0c0-af20-431f-b8c3-4a1180eec8f8 was rewritten to the checked accessibility_code_signage source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "source_locator": "BP 344 2024 IRR refined markdown lines 307-356 and 505-511; raw PDF pages 11-18 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "The parking sign is mounted at a minimum clear height of 2200 mm from the parking floor."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-89367ddf-c050-48b0-9829-62fee58a4de3-b081",
+      "claim_text": "Question 89367ddf-c050-48b0-9829-62fee58a4de3 was rewritten to the checked accessibility_code_signage source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "source_locator": "BP 344 2024 IRR refined markdown lines 307-356 and 505-511; raw PDF pages 11-18 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "BP 344 requires raised characters to be accompanied by Grade 2 Braille."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-b06e8d2e-915b-40dd-b1ca-5fdff72c4669-b081",
+      "claim_text": "Question b06e8d2e-915b-40dd-b1ca-5fdff72c4669 was rewritten to the checked accessibility_code_signage source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "source_locator": "BP 344 2024 IRR refined markdown lines 307-356 and 505-511; raw PDF pages 11-18 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "BP 344 sets the center of wall and door graphic/text/Braille signs at not more than 1500 mm above finished floor."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-f9d3ca05-c92b-400a-b6db-325a7e74e7c8-b081",
+      "claim_text": "Question f9d3ca05-c92b-400a-b6db-325a7e74e7c8 was rewritten to the checked accessibility_code_signage source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "source_locator": "BP 344 2024 IRR refined markdown lines 307-356 and 505-511; raw PDF pages 11-18 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "BP 344 states signage should use contrasting colors and a minimum luminance contrast of 30 percent from surroundings."
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "scenario_enrichment": {
+    "policy_status": "pending",
+    "eligibility_status": "not-applicable",
+    "blocker_status": "nonblocking",
+    "notes": "No Real World Scenario section added; source-correct code/dimension coverage remained the controlling gate."
+  },
+  "sme_review": {
+    "required": false,
+    "status": "not_required"
+  },
+  "local_first_publication": {
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false
+  }
+}

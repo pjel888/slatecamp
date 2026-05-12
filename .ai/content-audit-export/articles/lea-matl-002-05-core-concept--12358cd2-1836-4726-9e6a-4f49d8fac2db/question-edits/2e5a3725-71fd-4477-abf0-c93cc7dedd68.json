@@ -1,0 +1,77 @@
+{
+  "question_id": "2e5a3725-71fd-4477-abf0-c93cc7dedd68",
+  "baseline_hash": "sha256:a4fb85688560830777aaed6478f89255b85e3c69de3c8d84459620d9196383da",
+  "action": "replace",
+  "reason": "source-audited-article-batch-083-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-002-05-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-083",
+  "approved_at": "2026-05-12T06:25:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "12358cd2-1836-4726-9e6a-4f49d8fac2db",
+    "parent_article_slug": "lea-matl-002-05-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "George Salvan Architectural Building Materials refined markdown lines 285-397 and 547-557; Building Construction Illustrated lines 15420-15483; European Building Construction Illustrated lines 15756-15817; raw PDF pages 16, 422, 423, and 411 checked by local PyMuPDF extraction.",
+    "checked_markdown_lines": [
+      "George Salvan Architectural Building Materials refined markdown lines 285-397 and 547-557; Building Construction Illustrated lines 15420-15483; European Building Construction Illustrated lines 15756-15817; raw PDF pages 16, 422, 423, and 411 checked by local PyMuPDF extraction."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "george-salvan-building-materials-b083",
+        "label": "George Salvan Architectural Building Materials",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+        "sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+        "raw_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+        "locator": "George Salvan Architectural Building Materials refined markdown lines 285-565 and 1084-1140; raw PDF pages 16, 18, 37, and 38 checked by local PyMuPDF extraction."
+      },
+      {
+        "source_id": "building-construction-illustrated-b083",
+        "label": "Building Construction Illustrated, 5th Edition",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "raw_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "locator": "Building Construction Illustrated refined markdown lines 3378-3570, 6616-6792, 15420-15510, and 15680-15745; raw PDF pages 121, 422, 423, 427, and 428 checked by local PyMuPDF extraction."
+      },
+      {
+        "source_id": "european-building-construction-illustrated-b083",
+        "label": "European Building Construction Illustrated",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/European Building Construction Illustrated.pdf",
+        "sha256": "sha256:440f21385df13b75ce4041026f77d9d34872d6235fd18fa770c11609a283d19c",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/European Building Construction Illustrated.md",
+        "raw_markdown_sha256": "sha256:f2ec82d918f32d6c050f9f5ea0274b6c68f409c009ddcd311ab45e3567041e8c",
+        "locator": "European Building Construction Illustrated refined markdown lines 15745-16015; raw PDF pages 411 and 415 checked by local PyMuPDF extraction."
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 083 local raw-source-audited cement_hydration_curing scope."
+  },
+  "proposed": {
+    "text": "Which property set is controlled by water-cement ratio according to BCI?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Strength, durability, and watertightness"
+      },
+      {
+        "id": "b",
+        "text": "Only color and gloss"
+      },
+      {
+        "id": "c",
+        "text": "Only electrical conductivity"
+      },
+      {
+        "id": "d",
+        "text": "Only acoustic insulation"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "BCI states that water-cement ratio controls the strength, durability, and watertightness of hardened concrete.",
+    "explanation": "BCI states that water-cement ratio controls the strength, durability, and watertightness of hardened concrete.",
+    "code_citation": "George Salvan Architectural Building Materials; Building Construction Illustrated; European Building Construction Illustrated",
+    "bloom_level": "understand",
+    "application_context": "source_audited_local_first_batch_083",
+    "practice_context": [],
+    "difficulty": 0.5
+  }
+}

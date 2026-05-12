@@ -1,0 +1,34 @@
+{
+  "question_id": "3a13ae21-70c5-44cd-884f-04f7305e3640",
+  "baseline_hash": "sha256:5f5aef803e63ef221f563cac19d1e9016077ea6947e0c23b556fa6c14fe1831d",
+  "reason": "Batch 005 local source audit aligned RA 9266 Overview: Core Legal Frame and Key Definitions linked question ALE-PRAC-LAW-001-001 to verified RA 9266 IRR raw-source claims.",
+  "approved_by": "codex-local-source-audit-batch-005",
+  "approved_at": "2026-05-10T21:30:00+08:00",
+  "proposed": {
+    "code_citation": "RA 9266 IRR Sections 1-7 and 40",
+    "explanation": "Source-audited against RA 9266 IRR Sections 1-7 and 40 in the checked local RA 9266 IRR PDF. This edit removes unsupported locators or assumptions and keeps the question aligned to the audited article cluster.",
+    "text": "According to RA 9266 IRR Section 1, what is the short title of Republic Act No. 9266?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Architecture Act of 2004"
+      },
+      {
+        "id": "b",
+        "text": "PRC Modernization Act of 2000"
+      },
+      {
+        "id": "c",
+        "text": "National Building Code of the Philippines"
+      },
+      {
+        "id": "d",
+        "text": "Civil Engineering Law"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "correct": "Section 1 of the checked RA 9266 IRR identifies the law by the short title Architecture Act of 2004. The exact signing date was not used because it is not visible in the audited local PDF pages for this batch."
+    }
+  }
+}

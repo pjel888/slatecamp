@@ -1,0 +1,138 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-054-local-first",
+  "batch_number": 54,
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T19:22:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+    "slug": "african-vernacular-earth-architecture",
+    "title": "African Vernacular Earth Architecture",
+    "article_folder": ".ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+    "candidate_path": ".ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce/candidate.md",
+    "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce/candidate.md",
+    "question_edits_folder": ".ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce/question-edits",
+    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/african-vernacular-earth-architecture--4a8c01ab-5515-44f5-aaf7-c1274d8c8dce/question-edits",
+    "normalized_sha256": "sha256:90532f48be04a86fc22753a255450a6fcb0363dd995ee31c5d66abe6a8f88315",
+    "candidate_sha256": "sha256:90532f48be04a86fc22753a255450a6fcb0363dd995ee31c5d66abe6a8f88315",
+    "linked_questions_sha256": "sha256:a83fd1e9679fa92052665219f5bc02b7508af8a1c0c0206a12e8f8e9a0de4df1",
+    "sources_sha256": "sha256:a949f428922e912b46a91c0c632397c5699e8a02ad769e8ab0dd5ffa63245dd1"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "refined_markdown_role": "locator_only",
+    "derivative_or_search_layer_as_primary": false,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": [],
+    "source_families_checked": [
+      {
+        "label": "George Salvan Architectural Character and the History of Architecture - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Character and the History of Architecture.pdf",
+        "raw_pdf_sha256": "sha256:55c4fa2d43bbfd27cffb86d0aac4ad960032e178e1e25c29d4eb351297bfc069",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Character and the History of Architecture.md",
+        "refined_markdown_sha256": "sha256:be8e760bef8f7ceb573742d996dabb202f0353e19b4ab9283ec2de7dfc1fccea",
+        "locator": "George Salvan Architectural Character refined markdown lines 479-487 and 4931-4935"
+      },
+      {
+        "label": "history - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/history.pdf",
+        "raw_pdf_sha256": "sha256:7fc1e6e6a8433afecc676c9037a96172f02489985033931ea1606f29557b7d18",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/history.md",
+        "refined_markdown_sha256": "sha256:9a0ef73aa09f9ebcb61002014c6a1157bf1c7d6123f835ecf87bc4ac9374b0ce",
+        "locator": "history refined markdown line 177"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "history-of-architecture",
+    "contains_legal_or_code_claims": false,
+    "source_risk_tier": "medium",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 22,
+    "question_edits_created": [
+      "e334631a-5c2a-4d3c-9a9e-cb134a555e57",
+      "7c9bb8e9-abc7-479e-91d7-a162299eb52c",
+      "0e1d8974-af5a-4091-b05a-791174346b17",
+      "56930853-eb80-4fc1-84bc-52631c005c89",
+      "1ef45fe7-ef7e-49c4-ad84-48950f4af93e",
+      "ce997611-af95-4d6e-8b1b-4f0f51cabcb6",
+      "d999bb17-5339-4227-bb42-abf4b1c00f29",
+      "a9579b4a-7fe8-4c57-aecc-2db8479f8111",
+      "d9950f0e-cf85-49a9-b3a4-cb59f02e6cbe",
+      "073e4da0-54b5-423b-88d1-a2743bd4cab7",
+      "46607040-9c33-4927-b5f2-3ef9f9474b58",
+      "5c5339f3-4fd1-4eb8-87bd-1310a731d4c1",
+      "a7a0aa70-9a61-40a6-84cd-18636fc664a1",
+      "716edfbf-e518-466a-bed6-225ffeb44114",
+      "85036b1c-a162-4d13-a612-e1be47f6c61b",
+      "b0fe625f-97c8-4fa2-af54-bc8a025648f1",
+      "51a689ba-59ce-44c0-8221-6ec2a8e90fd3",
+      "4cf639c8-3f9a-43d4-b54a-989537b44ca2",
+      "cf441e8c-49c5-41c6-9137-df78ec8934c8",
+      "cf6686d8-d00a-450b-b284-452812bdbad9",
+      "1163f95d-15ff-4c31-8ee5-6a6bb3c9bc93",
+      "a6115378-d37f-44a5-ad43-131eb64649d6"
+    ]
+  },
+  "checked_markdown_lines": [
+    "George Salvan Architectural Character refined markdown lines 479-487",
+    "George Salvan Architectural Character refined markdown lines 4931-4935",
+    "history refined markdown line 177"
+  ],
+  "claims": [
+    {
+      "claim_id": "african-vernacular-earth-architecture-b054-claim-01",
+      "claim_text": "African Vernacular Earth Architecture in Batch 054 is limited to checked local raw PDF source families and the refined markdown locators recorded for this article.",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Character and the History of Architecture.pdf",
+        "quoted_pdf_excerpt": "George Salvan Architectural Character refined markdown lines 479-487 and 4931-4935; history refined markdown line 177",
+        "source_ids": [
+          "salvan-character-local-raw-pdf--b054-4a8c01ab-01",
+          "history-local-raw-pdf--b054-4a8c01ab-02"
+        ]
+      },
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "african-vernacular-earth-architecture-b054-claim-questions",
+      "claim_text": "Batch 054 question edits audited for african-vernacular-earth-architecture: e334631a-5c2a-4d3c-9a9e-cb134a555e57, 7c9bb8e9-abc7-479e-91d7-a162299eb52c, 0e1d8974-af5a-4091-b05a-791174346b17, 56930853-eb80-4fc1-84bc-52631c005c89, 1ef45fe7-ef7e-49c4-ad84-48950f4af93e, ce997611-af95-4d6e-8b1b-4f0f51cabcb6, d999bb17-5339-4227-bb42-abf4b1c00f29, a9579b4a-7fe8-4c57-aecc-2db8479f8111, d9950f0e-cf85-49a9-b3a4-cb59f02e6cbe, 073e4da0-54b5-423b-88d1-a2743bd4cab7, 46607040-9c33-4927-b5f2-3ef9f9474b58, 5c5339f3-4fd1-4eb8-87bd-1310a731d4c1, a7a0aa70-9a61-40a6-84cd-18636fc664a1, 716edfbf-e518-466a-bed6-225ffeb44114, 85036b1c-a162-4d13-a612-e1be47f6c61b, b0fe625f-97c8-4fa2-af54-bc8a025648f1, 51a689ba-59ce-44c0-8221-6ec2a8e90fd3, 4cf639c8-3f9a-43d4-b54a-989537b44ca2, cf441e8c-49c5-41c6-9137-df78ec8934c8, cf6686d8-d00a-450b-b284-452812bdbad9, 1163f95d-15ff-4c31-8ee5-6a6bb3c9bc93, a6115378-d37f-44a5-ad43-131eb64649d6",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Character and the History of Architecture.pdf",
+        "quoted_pdf_excerpt": "George Salvan Architectural Character refined markdown lines 479-487 and 4931-4935; history refined markdown line 177",
+        "source_ids": [
+          "salvan-character-local-raw-pdf--b054-4a8c01ab-01",
+          "history-local-raw-pdf--b054-4a8c01ab-02"
+        ]
+      },
+      "audit_result": "PASS"
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "local_first_only": true,
+    "supabase_write_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json"
+  },
+  "sme_review": {
+    "required": false,
+    "status": "not_required"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

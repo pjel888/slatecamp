@@ -1,0 +1,271 @@
+{
+  "artifact_type": "source-audited-article-batch-005-local-first-ledger",
+  "batch": "005",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T21:50:00+08:00",
+  "mode": "local_first_no_supabase_no_deploy_no_commit",
+  "selection_rule": "Next five not-locally-passed RA 9266 legal/professional-practice article clusters with linked questions and available raw RA 9266 IRR PDF source.",
+  "source_root": "vitruvius-connection/001_Raw-Source-Layer",
+  "prior_batches_excluded": [
+    "001",
+    "002",
+    "003",
+    "004"
+  ],
+  "counts": {
+    "articles_selected": 5,
+    "articles_passed": 5,
+    "articles_parked": 0,
+    "linked_questions_observed": 50,
+    "question_edits_created": 50,
+    "raw_sources_verified": 1,
+    "supabase_pushes": 0,
+    "commits": 0,
+    "deploys": 0
+  },
+  "articles": [
+    {
+      "article_id": "02a5ba32-0443-4162-837d-326783ed77a2",
+      "slug": "lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions",
+      "title": "RA 9266 Overview: Core Legal Frame and Key Definitions",
+      "folder": ".ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2",
+      "focus": "RA 9266 title/policy, Section 3 definitions, PRBoA/IAPOA anchors, Board term rule",
+      "source_audit_status": "PASS",
+      "linked_questions": 10,
+      "question_edits_created": 10,
+      "raw_source": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_source_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "checked_pdf_pages": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        22,
+        23
+      ],
+      "compose": {
+        "status": "PASS",
+        "blockers": 0
+      },
+      "diff": {
+        "status": "PASS",
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": 0
+      },
+      "validate": {
+        "status": "PASS",
+        "valid": true,
+        "blockers": 0,
+        "warnings": 0
+      },
+      "supabase": "not_attempted_by_request",
+      "unsupported_or_removed_claims": [
+        "Removed exact signing-date test from article/question because the checked raw RA 9266 IRR PDF pages do not show that date.",
+        "Corrected Section 41/IAPOA nominee language to Section 4 for nominees and Section 40 for UAP/IAPOA integration.",
+        "Rewrote structural-conceptualization question to avoid unsupported engineering-document boundary claims."
+      ],
+      "artifacts": {
+        "normalized": ".ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/candidate.md",
+        "sources": ".ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/sources.json",
+        "evidence": ".ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/source-audit-evidence.json",
+        "question_edits": ".ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/question-edits/",
+        "diff_report": ".ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/diff-report.json"
+      }
+    },
+    {
+      "article_id": "3a66b00c-20a4-4577-8359-b956a93d7c50",
+      "slug": "lea-prac-law-006-prc-vs-prboa-distinct-roles-authority-and-the-appeals-chain",
+      "title": "PRC vs PRBoA: Supervision, Board Powers, and Appeals",
+      "folder": ".ai/content-audit-export/articles/lea-prac-law-006-prc-vs-prboa-distinct-roles-authority-and-the-appeals-chain--3a66b00c-20a4-4577-8359-b956a93d7c50",
+      "focus": "PRC supervision, Board powers, Commission review/approval, disciplinary appeal chain",
+      "source_audit_status": "PASS",
+      "linked_questions": 10,
+      "question_edits_created": 10,
+      "raw_source": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_source_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "checked_pdf_pages": [
+        7,
+        8,
+        9,
+        22
+      ],
+      "compose": {
+        "status": "PASS",
+        "blockers": 0
+      },
+      "diff": {
+        "status": "PASS",
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": 0
+      },
+      "validate": {
+        "status": "PASS",
+        "valid": true,
+        "blockers": 0,
+        "warnings": 0
+      },
+      "supabase": "not_attempted_by_request",
+      "unsupported_or_removed_claims": [
+        "Removed Supreme Court appeal-chain claim; the checked source states Commission then Court of Appeals only.",
+        "Removed Court of Appeals standard-of-review language not present in the checked RA 9266 IRR pages.",
+        "Corrected IAPOA locator from Section 41 to Sections 4 and 40."
+      ],
+      "artifacts": {
+        "normalized": ".ai/content-audit-export/articles/lea-prac-law-006-prc-vs-prboa-distinct-roles-authority-and-the-appeals-chain--3a66b00c-20a4-4577-8359-b956a93d7c50/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/lea-prac-law-006-prc-vs-prboa-distinct-roles-authority-and-the-appeals-chain--3a66b00c-20a4-4577-8359-b956a93d7c50/candidate.md",
+        "sources": ".ai/content-audit-export/articles/lea-prac-law-006-prc-vs-prboa-distinct-roles-authority-and-the-appeals-chain--3a66b00c-20a4-4577-8359-b956a93d7c50/sources.json",
+        "evidence": ".ai/content-audit-export/articles/lea-prac-law-006-prc-vs-prboa-distinct-roles-authority-and-the-appeals-chain--3a66b00c-20a4-4577-8359-b956a93d7c50/source-audit-evidence.json",
+        "question_edits": ".ai/content-audit-export/articles/lea-prac-law-006-prc-vs-prboa-distinct-roles-authority-and-the-appeals-chain--3a66b00c-20a4-4577-8359-b956a93d7c50/question-edits/",
+        "diff_report": ".ai/content-audit-export/articles/lea-prac-law-006-prc-vs-prboa-distinct-roles-authority-and-the-appeals-chain--3a66b00c-20a4-4577-8359-b956a93d7c50/diff-report.json"
+      }
+    },
+    {
+      "article_id": "9527e4a9-f8f1-4554-999e-0d46cc49bcd1",
+      "slug": "lea-prac-law-007-lea-eligibility-requirements-academic-credentials-dae-and-moral-character",
+      "title": "LEA Eligibility: Academic Credentials, DAE, and Moral Character",
+      "folder": ".ai/content-audit-export/articles/lea-prac-law-007-lea-eligibility-requirements-academic-credentials-dae-and-moral-character--9527e4a9-f8f1-4554-999e-0d46cc49bcd1",
+      "focus": "LEA applicant citizenship/reciprocity, degree, DAE, mentor documents, good moral character",
+      "source_audit_status": "PASS",
+      "linked_questions": 10,
+      "question_edits_created": 10,
+      "raw_source": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_source_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "checked_pdf_pages": [
+        5,
+        10
+      ],
+      "compose": {
+        "status": "PASS",
+        "blockers": 0
+      },
+      "diff": {
+        "status": "PASS",
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": 0
+      },
+      "validate": {
+        "status": "PASS",
+        "valid": true,
+        "blockers": 0,
+        "warnings": 0
+      },
+      "supabase": "not_attempted_by_request",
+      "unsupported_or_removed_claims": [
+        "Removed age-based eligibility language; the checked Section 13 page does not state a minimum age.",
+        "Removed fixed-hour DAE claims; the checked source states two years or equivalent DAE.",
+        "Rewrote mentor-PTR-expiry scenario to the verified mentor-document submission requirement."
+      ],
+      "artifacts": {
+        "normalized": ".ai/content-audit-export/articles/lea-prac-law-007-lea-eligibility-requirements-academic-credentials-dae-and-moral-character--9527e4a9-f8f1-4554-999e-0d46cc49bcd1/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/lea-prac-law-007-lea-eligibility-requirements-academic-credentials-dae-and-moral-character--9527e4a9-f8f1-4554-999e-0d46cc49bcd1/candidate.md",
+        "sources": ".ai/content-audit-export/articles/lea-prac-law-007-lea-eligibility-requirements-academic-credentials-dae-and-moral-character--9527e4a9-f8f1-4554-999e-0d46cc49bcd1/sources.json",
+        "evidence": ".ai/content-audit-export/articles/lea-prac-law-007-lea-eligibility-requirements-academic-credentials-dae-and-moral-character--9527e4a9-f8f1-4554-999e-0d46cc49bcd1/source-audit-evidence.json",
+        "question_edits": ".ai/content-audit-export/articles/lea-prac-law-007-lea-eligibility-requirements-academic-credentials-dae-and-moral-character--9527e4a9-f8f1-4554-999e-0d46cc49bcd1/question-edits/",
+        "diff_report": ".ai/content-audit-export/articles/lea-prac-law-007-lea-eligibility-requirements-academic-credentials-dae-and-moral-character--9527e4a9-f8f1-4554-999e-0d46cc49bcd1/diff-report.json"
+      }
+    },
+    {
+      "article_id": "63ba5964-80fc-472c-bc26-7d64f1507bed",
+      "slug": "lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking",
+      "title": "LEA Structure: Subjects, Rating, Results, and Reapplication Boundaries",
+      "folder": ".ai/content-audit-export/articles/lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking--63ba5964-80fc-472c-bc26-7d64f1507bed",
+      "focus": "LEA requirement, subject groups, passing rule, ratings submission, reapplication boundaries",
+      "source_audit_status": "PASS",
+      "linked_questions": 10,
+      "question_edits_created": 10,
+      "raw_source": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_source_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "checked_pdf_pages": [
+        8,
+        10,
+        11,
+        12,
+        13
+      ],
+      "compose": {
+        "status": "PASS",
+        "blockers": 0
+      },
+      "diff": {
+        "status": "PASS",
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": 0
+      },
+      "validate": {
+        "status": "PASS",
+        "valid": true,
+        "blockers": 0,
+        "warnings": 0
+      },
+      "supabase": "not_attempted_by_request",
+      "unsupported_or_removed_claims": [
+        "Removed five-subject and subject-weight claims; Section 14 lists four numbered subject groups and no weights.",
+        "Corrected results rule from public announcement to submission of ratings to the Commission within thirty calendar days unless extended.",
+        "Removed no-maximum-attempts retake claim; retained source-backed Section 13 reapplication/truthfulness boundary."
+      ],
+      "artifacts": {
+        "normalized": ".ai/content-audit-export/articles/lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking--63ba5964-80fc-472c-bc26-7d64f1507bed/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking--63ba5964-80fc-472c-bc26-7d64f1507bed/candidate.md",
+        "sources": ".ai/content-audit-export/articles/lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking--63ba5964-80fc-472c-bc26-7d64f1507bed/sources.json",
+        "evidence": ".ai/content-audit-export/articles/lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking--63ba5964-80fc-472c-bc26-7d64f1507bed/source-audit-evidence.json",
+        "question_edits": ".ai/content-audit-export/articles/lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking--63ba5964-80fc-472c-bc26-7d64f1507bed/question-edits/",
+        "diff_report": ".ai/content-audit-export/articles/lea-prac-law-008-lea-structure-subjects-areas-passing-standard-and-retaking--63ba5964-80fc-472c-bc26-7d64f1507bed/diff-report.json"
+      }
+    },
+    {
+      "article_id": "9ce707aa-5e91-4f79-a5a6-8bcdf582fa57",
+      "slug": "lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card",
+      "title": "Certificate of Registration, Oath, and Professional Identification Card",
+      "folder": ".ai/content-audit-export/articles/lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card--9ce707aa-5e91-4f79-a5a6-8bcdf582fa57",
+      "focus": "COR, professional oath, PIC contents, three-year PIC cycle, Board authority",
+      "source_audit_status": "PASS",
+      "linked_questions": 10,
+      "question_edits_created": 10,
+      "raw_source": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_source_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "checked_pdf_pages": [
+        4,
+        6,
+        8,
+        13
+      ],
+      "compose": {
+        "status": "PASS",
+        "blockers": 0
+      },
+      "diff": {
+        "status": "PASS",
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": 0
+      },
+      "validate": {
+        "status": "PASS",
+        "valid": true,
+        "blockers": 0,
+        "warnings": 0
+      },
+      "supabase": "not_attempted_by_request",
+      "unsupported_or_removed_claims": [
+        "Removed one-year or annual PIC-validity claim; the checked source supports a three-year fee/renewal cycle.",
+        "Removed unsupported photo/card-display claims not visible in Section 3(37).",
+        "Rewrote cancellation/return scenario to the source-backed rule that COR remains in force until withdrawn, suspended, or revoked."
+      ],
+      "artifacts": {
+        "normalized": ".ai/content-audit-export/articles/lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card--9ce707aa-5e91-4f79-a5a6-8bcdf582fa57/normalized.md",
+        "candidate": ".ai/content-audit-export/articles/lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card--9ce707aa-5e91-4f79-a5a6-8bcdf582fa57/candidate.md",
+        "sources": ".ai/content-audit-export/articles/lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card--9ce707aa-5e91-4f79-a5a6-8bcdf582fa57/sources.json",
+        "evidence": ".ai/content-audit-export/articles/lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card--9ce707aa-5e91-4f79-a5a6-8bcdf582fa57/source-audit-evidence.json",
+        "question_edits": ".ai/content-audit-export/articles/lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card--9ce707aa-5e91-4f79-a5a6-8bcdf582fa57/question-edits/",
+        "diff_report": ".ai/content-audit-export/articles/lea-prac-law-009-certificate-of-registration-oath-taking-and-the-professional-id-card--9ce707aa-5e91-4f79-a5a6-8bcdf582fa57/diff-report.json"
+      }
+    }
+  ]
+}

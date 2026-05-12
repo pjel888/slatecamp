@@ -3,7 +3,7 @@
 ## Before Closeout
 - **76** ArticleMedia articles triggering fallback
 - 52 backslash-escaped JSX attributes
-- 23 acorn-parse-error  
+- 23 acorn-parse-error
 - 1 other
 
 ## Repairs Applied

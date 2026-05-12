@@ -282,7 +282,7 @@ Chevron (.chevron):
 
 Content (when open):
   padding: 0 18px 16px
-  
+
 Content paragraph:
   font-size: 13px
   color: #3D3D3A (ink-2)

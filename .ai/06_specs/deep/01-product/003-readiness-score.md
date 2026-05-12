@@ -69,11 +69,11 @@ interface ReadinessScoreData {
   color: string;                    // CSS color class
 }
 
-type ReadinessLevel = 
-  | 'needs_work' 
-  | 'building_momentum' 
-  | 'getting_there' 
-  | 'strong' 
+type ReadinessLevel =
+  | 'needs_work'
+  | 'building_momentum'
+  | 'getting_there'
+  | 'strong'
   | 'exam_ready';
 ```
 

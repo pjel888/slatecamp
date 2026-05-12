@@ -1,0 +1,25 @@
+{
+  "question_id": "086d443c-3d48-4895-b65c-345a790ffec5",
+  "baseline_hash": "sha256:9395f292351bcb2c1756dc8de165c586f7e2afeb1d2da5734da3321343e5b917",
+  "reason": "source-audited-article-batch-013-local-first aligned linked question with repaired source-audited article content and local raw-source evidence.",
+  "approved_by": "codex-local-source-audit-batch-013",
+  "approved_at": "2026-05-10T22:10:00.000+08:00",
+  "source_audit_support": {
+    "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+    "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+    "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
+    "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
+    "parent_article_id": "f5ed9c09-3191-4cd4-b1b0-9e6364212c36",
+    "parent_article_slug": "spp-doc-204-b-construction-management-services",
+    "answer_key_fields_changed": false,
+    "support_status": "source_supported",
+    "source_locator": "SPP Document 204-B, Sections 3 and 4 authority limits and legal responsibility",
+    "checked_markdown_lines": [
+      "UAP SPP raw markdown lines 1114-1129"
+    ]
+  },
+  "proposed": {
+    "code_citation": "SPP 204-B",
+    "explanation": "SPP 204-B excludes the CM from liability under two specific conditions: (1) the CM was not consulted on the relevant decision, or (2) the CM provided professional advice that was overruled by the Owner. These protections ensure the CM is accountable only for matters within their control."
+  }
+}

@@ -1,7 +1,7 @@
 # Wiki UI Component Inventory
 
-**Audit Date:** 2026-05-04  
-**Total Components Audited:** 49  
+**Audit Date:** 2026-05-04
+**Total Components Audited:** 49
 **Workbench:** `/Users/philiplewis/slatecamp/src/components/wiki/`
 
 ---

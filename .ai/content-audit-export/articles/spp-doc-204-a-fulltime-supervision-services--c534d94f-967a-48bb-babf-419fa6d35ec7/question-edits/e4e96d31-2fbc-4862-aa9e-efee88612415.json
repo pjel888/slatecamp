@@ -1,0 +1,61 @@
+{
+  "question_id": "e4e96d31-2fbc-4862-aa9e-efee88612415",
+  "baseline_hash": "sha256:3152fc3434c5bdfc5b75c62ccd5a75d35a7022721e5ef08d3ed3b14e006c32c5",
+  "action": "replace",
+  "reason": "source-audited-article-batch-020-local-first rewrote the question to match only locally checked source evidence.",
+  "approved_by": "codex-local-source-audit-batch-020",
+  "approved_at": "2026-05-10T16:41:51.472Z",
+  "source_audit_support": {
+    "parent_article_id": "c534d94f-967a-48bb-babf-419fa6d35ec7",
+    "parent_article_slug": "spp-doc-204-a-fulltime-supervision-services",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "checked_sources": [
+      {
+        "source_id": "spp-204a-uap-local-raw-pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204A.pdf",
+        "raw_pdf_sha256": "sha256:ec08811ae8611f077fda9f0d1106cc7fab6a1e6210fe6d617637adaa6de083b8",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md lines 3-8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md lines 201-206"
+      }
+    ],
+    "local_source_safe_action": "Replaced the prior item with a source-bounded MCQ using only checked SPP source lines."
+  },
+  "proposed": {
+    "text": "What is the source-safe service title for SPP Doc 204-A?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fulltime Supervision Services"
+      },
+      {
+        "id": "b",
+        "text": "Architectural Design Competitions under SPP 208."
+      },
+      {
+        "id": "c",
+        "text": "Design-Build Services under SPP 207."
+      },
+      {
+        "id": "d",
+        "text": "Architectural Interiors under SPP 203."
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "The checked SPP 204-A title identifies Fulltime Supervision Services.",
+    "explanation": "The checked SPP 204-A title identifies Fulltime Supervision Services.",
+    "code_citation": "SPP Document 204-A",
+    "bloom_level": "remember",
+    "application_context": "professional_practice",
+    "practice_context": [
+      "SPP Document 204-A",
+      "SPP Doc 204-A: Fulltime Supervision Services"
+    ],
+    "difficulty": 0.45,
+    "is_assessment": false,
+    "model_id": "BATCH-020-spp-doc-204-a-fulltime-supervision-services-001"
+  }
+}

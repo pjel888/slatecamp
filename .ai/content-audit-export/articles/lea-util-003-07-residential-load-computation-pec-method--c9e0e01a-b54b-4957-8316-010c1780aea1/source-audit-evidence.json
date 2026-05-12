@@ -1,0 +1,251 @@
+{
+  "schema_version": "source-audit-evidence-v1-local-first",
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-041-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T14:40:06.021+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "c9e0e01a-b54b-4957-8316-010c1780aea1",
+    "slug": "lea-util-003-07-residential-load-computation-pec-method",
+    "title": "Residential load computation: PEC method",
+    "article_folder": ".ai/content-audit-export/articles/lea-util-003-07-residential-load-computation-pec-method--c9e0e01a-b54b-4957-8316-010c1780aea1",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-07-residential-load-computation-pec-method--c9e0e01a-b54b-4957-8316-010c1780aea1",
+    "candidate_path": ".ai/content-audit-export/articles/lea-util-003-07-residential-load-computation-pec-method--c9e0e01a-b54b-4957-8316-010c1780aea1/candidate.md",
+    "candidate_sha256": "sha256:b149766b120647e92b55a66a0ee21bd16136cc6733f889f2f763b8042a91ee0a",
+    "normalized_sha256": "sha256:b149766b120647e92b55a66a0ee21bd16136cc6733f889f2f763b8042a91ee0a",
+    "linked_questions_sha256": "sha256:2e0ff62fcb766f38ab3c28277327c2d816ed73232c7520dec3a4c036d2474e3b",
+    "sources_sha256": "sha256:4aff62fb2c2155bc33ed4b89de5855e96a3d0b5fada5e78ffb4e8a3a95647895"
+  },
+  "classification": {
+    "content_domain": "LEA Building Utilities - residential load computation",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high_value_building_utilities_code",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 15,
+    "question_edits_created": [
+      "e8c5f853-a3c6-4c3f-8e9e-5552e1b11de6",
+      "705ce4dd-594b-4812-8ecc-09a075b9b90c",
+      "8d4ffe20-11df-4585-a258-b2ba2bca0903",
+      "22b42d9d-04c7-4696-a9bd-3f28f6bf06fd",
+      "5ee480a3-3349-4bfe-807a-a9bdb31c8fc0",
+      "08d386a1-bb57-48a4-9163-4ec7676fd5e9",
+      "661764c3-d7a9-43fb-bef4-662aa28d99e4",
+      "88251a3f-7f50-4177-9242-541552adc9d0",
+      "b79dd7d4-1785-4073-8d6c-d6b400e79c5f",
+      "3b341a32-f51c-4426-98d1-f00b2fcd399c",
+      "56093fda-9f27-483b-a526-efcac8952184",
+      "89f0062e-92dc-411c-9f07-7c02ed8b32f0",
+      "16a4cdf8-648e-4735-8f4d-ccbb9edb522d",
+      "37255c0a-4467-48c3-a0ae-4836fd46b83b",
+      "46a7a805-91d9-42b2-8633-d87091a36b9c"
+    ]
+  },
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/lea-util-003-07-residential-load-computation-pec-method--c9e0e01a-b54b-4957-8316-010c1780aea1",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-07-residential-load-computation-pec-method--c9e0e01a-b54b-4957-8316-010c1780aea1",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/lea-util-003-07-residential-load-computation-pec-method--c9e0e01a-b54b-4957-8316-010c1780aea1/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-003-07-residential-load-computation-pec-method--c9e0e01a-b54b-4957-8316-010c1780aea1/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/lea-util-003-07-residential-load-computation-pec-method--c9e0e01a-b54b-4957-8316-010c1780aea1/question-edits/e8c5f853-a3c6-4c3f-8e9e-5552e1b11de6.json",
+      ".ai/content-audit-export/articles/lea-util-003-07-residential-load-computation-pec-method--c9e0e01a-b54b-4957-8316-010c1780aea1/question-edits/705ce4dd-594b-4812-8ecc-09a075b9b90c.json",
+      ".ai/content-audit-export/articles/lea-util-003-07-residential-load-computation-pec-method--c9e0e01a-b54b-4957-8316-010c1780aea1/question-edits/8d4ffe20-11df-4585-a258-b2ba2bca0903.json",
+      ".ai/content-audit-export/articles/lea-util-003-07-residential-load-computation-pec-method--c9e0e01a-b54b-4957-8316-010c1780aea1/question-edits/22b42d9d-04c7-4696-a9bd-3f28f6bf06fd.json",
+      ".ai/content-audit-export/articles/lea-util-003-07-residential-load-computation-pec-method--c9e0e01a-b54b-4957-8316-010c1780aea1/question-edits/5ee480a3-3349-4bfe-807a-a9bdb31c8fc0.json",
+      ".ai/content-audit-export/articles/lea-util-003-07-residential-load-computation-pec-method--c9e0e01a-b54b-4957-8316-010c1780aea1/question-edits/08d386a1-bb57-48a4-9163-4ec7676fd5e9.json",
+      ".ai/content-audit-export/articles/lea-util-003-07-residential-load-computation-pec-method--c9e0e01a-b54b-4957-8316-010c1780aea1/question-edits/661764c3-d7a9-43fb-bef4-662aa28d99e4.json",
+      ".ai/content-audit-export/articles/lea-util-003-07-residential-load-computation-pec-method--c9e0e01a-b54b-4957-8316-010c1780aea1/question-edits/88251a3f-7f50-4177-9242-541552adc9d0.json",
+      ".ai/content-audit-export/articles/lea-util-003-07-residential-load-computation-pec-method--c9e0e01a-b54b-4957-8316-010c1780aea1/question-edits/b79dd7d4-1785-4073-8d6c-d6b400e79c5f.json",
+      ".ai/content-audit-export/articles/lea-util-003-07-residential-load-computation-pec-method--c9e0e01a-b54b-4957-8316-010c1780aea1/question-edits/3b341a32-f51c-4426-98d1-f00b2fcd399c.json",
+      ".ai/content-audit-export/articles/lea-util-003-07-residential-load-computation-pec-method--c9e0e01a-b54b-4957-8316-010c1780aea1/question-edits/56093fda-9f27-483b-a526-efcac8952184.json",
+      ".ai/content-audit-export/articles/lea-util-003-07-residential-load-computation-pec-method--c9e0e01a-b54b-4957-8316-010c1780aea1/question-edits/89f0062e-92dc-411c-9f07-7c02ed8b32f0.json",
+      ".ai/content-audit-export/articles/lea-util-003-07-residential-load-computation-pec-method--c9e0e01a-b54b-4957-8316-010c1780aea1/question-edits/16a4cdf8-648e-4735-8f4d-ccbb9edb522d.json",
+      ".ai/content-audit-export/articles/lea-util-003-07-residential-load-computation-pec-method--c9e0e01a-b54b-4957-8316-010c1780aea1/question-edits/37255c0a-4467-48c3-a0ae-4836fd46b83b.json",
+      ".ai/content-audit-export/articles/lea-util-003-07-residential-load-computation-pec-method--c9e0e01a-b54b-4957-8316-010c1780aea1/question-edits/46a7a805-91d9-42b2-8633-d87091a36b9c.json"
+    ]
+  },
+  "raw_sources": [
+    {
+      "source_id": "pec-2017-local-phil-electrical-code",
+      "label": "Philippine Electrical Code local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+      "raw_pdf_sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+      "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3",
+      "source_locator": "Phil Electrical Code refined markdown lines 1721-1770; Phil Electrical Code refined markdown lines 2125-2138; Phil Electrical Code refined markdown lines 2202-2237; Phil Electrical Code refined markdown lines 2253-2311; Phil Electrical Code refined markdown lines 2337-2358",
+      "checked_markdown_lines": [
+        "Phil Electrical Code refined markdown lines 1721-1770",
+        "Phil Electrical Code refined markdown lines 2125-2138",
+        "Phil Electrical Code refined markdown lines 2202-2237",
+        "Phil Electrical Code refined markdown lines 2253-2311",
+        "Phil Electrical Code refined markdown lines 2337-2358"
+      ]
+    },
+    {
+      "source_id": "fajardo-electrical-layout-estimate-2nd-ed-local",
+      "label": "Electrical Layout and Estimate, 2nd Edition, Max B. Fajardo Jr. and Leo R. Fajardo local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.pdf",
+      "raw_pdf_sha256": "sha256:3cc20c7a3681cd41b427df17784582d578f8d772f1f50808a9c66d9390cbf244",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.md",
+      "refined_markdown_sha256": "sha256:e68e20c6b6a0dbb331c151d0814e182037564f63cf17a07284a6e126de62fc45",
+      "source_locator": "Electrical Layout and Estimate refined markdown lines 53-68; Electrical Layout and Estimate refined markdown lines 3260-3350; Electrical Layout and Estimate refined markdown lines 2153-2190",
+      "checked_markdown_lines": [
+        "Electrical Layout and Estimate refined markdown lines 53-68",
+        "Electrical Layout and Estimate refined markdown lines 3260-3350",
+        "Electrical Layout and Estimate refined markdown lines 2153-2190"
+      ]
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "pec-2017-local-phil-electrical-code",
+      "label": "Philippine Electrical Code local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+      "raw_pdf_sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+      "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3",
+      "source_locator": "Phil Electrical Code refined markdown lines 1721-1770; Phil Electrical Code refined markdown lines 2125-2138; Phil Electrical Code refined markdown lines 2202-2237; Phil Electrical Code refined markdown lines 2253-2311; Phil Electrical Code refined markdown lines 2337-2358",
+      "checked_markdown_lines": [
+        "Phil Electrical Code refined markdown lines 1721-1770",
+        "Phil Electrical Code refined markdown lines 2125-2138",
+        "Phil Electrical Code refined markdown lines 2202-2237",
+        "Phil Electrical Code refined markdown lines 2253-2311",
+        "Phil Electrical Code refined markdown lines 2337-2358"
+      ]
+    },
+    {
+      "source_id": "fajardo-electrical-layout-estimate-2nd-ed-local",
+      "label": "Electrical Layout and Estimate, 2nd Edition, Max B. Fajardo Jr. and Leo R. Fajardo local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.pdf",
+      "raw_pdf_sha256": "sha256:3cc20c7a3681cd41b427df17784582d578f8d772f1f50808a9c66d9390cbf244",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.md",
+      "refined_markdown_sha256": "sha256:e68e20c6b6a0dbb331c151d0814e182037564f63cf17a07284a6e126de62fc45",
+      "source_locator": "Electrical Layout and Estimate refined markdown lines 53-68; Electrical Layout and Estimate refined markdown lines 3260-3350; Electrical Layout and Estimate refined markdown lines 2153-2190",
+      "checked_markdown_lines": [
+        "Electrical Layout and Estimate refined markdown lines 53-68",
+        "Electrical Layout and Estimate refined markdown lines 3260-3350",
+        "Electrical Layout and Estimate refined markdown lines 2153-2190"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "b041-load-01",
+      "claim_text": "PEC Article 2.20 covers branch-circuit, feeder, and service load calculations.",
+      "claim_type": "electrical_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "Philippine Electrical Code local raw PDF",
+        "locator": "Phil Electrical Code refined markdown lines 2202-2237",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+        "raw_pdf_sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+        "quoted_pdf_excerpt": "Article 2.20 provides requirements for branch-circuit, feeder, and service calculations"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b041-load-02",
+      "claim_text": "Dwelling units require two or more 20-ampere small-appliance branch circuits and one 20-ampere laundry branch circuit.",
+      "claim_type": "electrical_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "Philippine Electrical Code local raw PDF",
+        "locator": "Phil Electrical Code refined markdown lines 1721-1742",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+        "raw_pdf_sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+        "quoted_pdf_excerpt": "two or more 20 ampere small-appliance branch circuits and at least one additional 20 ampere laundry branch circuit"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b041-load-03",
+      "claim_text": "Specific appliance and other outlet loads are calculated from the rating or from 180 volt-amperes per outlet where that rule applies.",
+      "claim_type": "electrical_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "Philippine Electrical Code local raw PDF",
+        "locator": "Phil Electrical Code refined markdown lines 2283-2311 and 2337-2358",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+        "raw_pdf_sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+        "quoted_pdf_excerpt": "specific appliances use ampere rating; outlets may use 180 volt-amperes per outlet under the checked provisions"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b041-load-04",
+      "claim_text": "Feeder ampacity must account for noncontinuous load plus 125 percent of continuous load.",
+      "claim_type": "electrical_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "Philippine Electrical Code local raw PDF",
+        "locator": "Phil Electrical Code refined markdown lines 2125-2138",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+        "raw_pdf_sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+        "quoted_pdf_excerpt": "feeder conductors have ampacity not less than noncontinuous load plus 125 percent of continuous load"
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [
+    "Non-local fuel secondary-containment percentages, external emergency-generator fuel-room requirements, and unchecked demand shortcuts were excluded from the Batch 041 repaired content and question edits."
+  ],
+  "removed_or_rewritten_material": [
+    "Removed exported UI-block marker tokens from normalized article content.",
+    "Rewrote linked question files to stay inside checked PEC and Electrical Layout and Estimate evidence."
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdf_first": true,
+    "derivative_layers_used_only_as_locators": true,
+    "checked_raw_pdf_families": [
+      "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+      "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Electrical Layout and Estimate (2nd Edition) by Max B. Fajardo, Jr. and Leo R. Fajardo.pdf"
+    ]
+  },
+  "gate_results": {
+    "source_audit": "PASS",
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_validation": "PASS",
+    "question_edit_count_check": "PASS",
+    "scoped_json_parse": "PASS",
+    "marker_scan": "PASS",
+    "source_hash_check": "PASS",
+    "stale_compose_error_check": "PASS"
+  },
+  "source_safe_repair": {
+    "status": "COMPLETE_LOCAL_VALIDATED",
+    "article_normalized_rewritten": true,
+    "sources_json_updated": true,
+    "source_audit_evidence_updated": true,
+    "question_edits_created": 15,
+    "blockers": []
+  },
+  "local_validation": {
+    "status": "PASS_LOCAL_VALIDATION",
+    "validated_at": "2026-05-11T14:40:06.021+08:00",
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_validation": "PASS",
+    "scoped_checks": "PASS",
+    "blockers": []
+  },
+  "sme_review": {
+    "required_before_supabase_publish": true,
+    "completed": false
+  },
+  "overall": {
+    "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+    "blockers": []
+  }
+}

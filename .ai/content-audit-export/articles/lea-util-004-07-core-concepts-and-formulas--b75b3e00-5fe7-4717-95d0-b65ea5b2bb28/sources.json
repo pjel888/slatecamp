@@ -1,80 +1,35 @@
 {
   "article_id": "b75b3e00-5fe7-4717-95d0-b65ea5b2bb28",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:a8401f0918675cc60ba610b6752461e60139ccf5e5892635fedf8072f37c75da",
-  "source_count": 6,
+  "source_count": 1,
+  "sources_hash": "sha256:f299c3a5becfc77072cf67b613bdfdab8eb0acaa21c1610ec4b737b9958a835a",
   "sources": [
     {
-      "source_id": "1c524e8c-2381-4537-969d-80f0f1d2a92a",
+      "source_id": "ra-9514-rirr-2019-local-raw-pdf--b043-1",
       "article_id": "b75b3e00-5fe7-4717-95d0-b65ea5b2bb28",
-      "label": "RA 9514: Fire Code of the Philippines and 2019 Revised Implementing Rules and Regulations (IRR)",
+      "label": "RA 9514 RIRR 2019 - local raw PDF",
       "url": null,
-      "source_type": "implementing_rules",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:06.222594+00:00",
-      "updated_at": "2026-03-24T04:34:06.222594+00:00"
-    },
-    {
-      "source_id": "eba707b4-8476-4cd3-b05c-9d4d19f0b6c8",
-      "article_id": "b75b3e00-5fe7-4717-95d0-b65ea5b2bb28",
-      "label": "NFPA 20: Installation of Stationary Centrifugal Fire Pumps (2019 edition, referenced in RA 9514 IRR)",
-      "url": null,
-      "source_type": "implementing_rules",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_raw_pdf",
+      "description": "Fire Safety Compliance Report criteria, sprinkler and standpipe references, fire pump capacities, hydraulic calculations, supervision, testing, and hydrant supply references.",
+      "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:06.222594+00:00",
-      "updated_at": "2026-03-24T04:34:06.222594+00:00"
-    },
-    {
-      "source_id": "d48511e4-1e2d-4532-8790-d0c1f7e298bf",
-      "article_id": "b75b3e00-5fe7-4717-95d0-b65ea5b2bb28",
-      "label": "NFPA 13: Installation of Sprinkler Systems (2019 edition, referenced in RA 9514 IRR)",
-      "url": null,
-      "source_type": "implementing_rules",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:34:06.222594+00:00",
-      "updated_at": "2026-03-24T04:34:06.222594+00:00"
-    },
-    {
-      "source_id": "5bf1d900-7d2b-4f4d-b9af-5611210d2886",
-      "article_id": "b75b3e00-5fe7-4717-95d0-b65ea5b2bb28",
-      "label": "AWWA M11: Steel Pipe: A Guide for Design and Installation (American Water Works Association, applied to Philippine water infrastructure standards)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:34:06.222594+00:00",
-      "updated_at": "2026-03-24T04:34:06.222594+00:00"
-    },
-    {
-      "source_id": "bd6743bb-7948-42de-8f38-28107115ba61",
-      "article_id": "b75b3e00-5fe7-4717-95d0-b65ea5b2bb28",
-      "label": "Philippine water utility service standards (Manila Water Company, Maynilad Services)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 4,
-      "created_at": "2026-03-24T04:34:06.222594+00:00",
-      "updated_at": "2026-03-24T04:34:06.222594+00:00"
-    },
-    {
-      "source_id": "4cb6e684-6814-4e80-9368-daba1eb0bee2",
-      "article_id": "b75b3e00-5fe7-4717-95d0-b65ea5b2bb28",
-      "label": "ISO 1167-1: Plastic piping systems—Thermoplastics pipes—Determination of the long-term hydrostatic strength (applied to sprinkler system design methodology)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 5,
-      "created_at": "2026-03-24T04:34:06.222594+00:00",
-      "updated_at": "2026-03-24T04:34:06.222594+00:00"
+      "created_at": "2026-05-11T15:45:43.683+08:00",
+      "updated_at": "2026-05-11T15:45:43.683+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+      "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+      "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+      "source_locator": "RA 9514 RIRR refined markdown lines 1138-1154, 1295-1299, 1882-1888, 2308-2344, 2408-2418, 3690-3723, 13284-13291",
+      "checked_markdown_lines": [
+        "RA 9514 RIRR refined markdown lines 1138-1154",
+        "RA 9514 RIRR refined markdown lines 1295-1299 and 1882-1888",
+        "RA 9514 RIRR refined markdown lines 2308-2344",
+        "RA 9514 RIRR refined markdown lines 2408-2418 and 3690-3723",
+        "RA 9514 RIRR refined markdown lines 13284-13291"
+      ],
+      "local_audit_note": "Batch 043 local-first source audit checked the raw PDF family before using refined markdown line locators."
     }
   ]
 }

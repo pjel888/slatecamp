@@ -1,0 +1,67 @@
+{
+  "question_id": "19f735fe-062c-4758-917b-3082c39235d9",
+  "baseline_hash": "sha256:7e3b2a280e0ffdd3b6c6b605d750a77d2164f2e7632da2ecfb0baf6192506c34",
+  "action": "replace",
+  "reason": "source-audited-article-batch-046-local-first: local raw-source-backed replacement constrained to checked Batch 046 source families.",
+  "approved_by": "codex-local-first-batch-046",
+  "approved_at": "2026-05-11T17:58:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "514f9f04-00a2-49c3-97c6-804fc2362ec7",
+    "parent_article_slug": "lea-util-002-06-regulatory-framework",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Salvan Utilities 2 refined markdown lines 1707-1736, 13019-13132, 15087-15100; PEC refined markdown lines 4483-4538",
+    "checked_markdown_lines": [
+      "Salvan Utilities 2 refined markdown lines 1707-1736",
+      "Salvan Utilities 2 refined markdown lines 13019-13132",
+      "Salvan Utilities 2 refined markdown lines 15087-15100",
+      "PEC refined markdown lines 4483-4538"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "salvan-architectural-utilities-2-local-raw-pdf--b046",
+        "label": "George Salvan Architectural Utilities 2 - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+        "sha256": "sha256:ff7231f0059a1febaf4a0996a425caca3b7676c23c729f922e385af4e4c20d28",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
+        "refined_markdown_sha256": "sha256:1b9249c90c0b86c57c6df2f20f0ab210ac112a10230bd9bce584461773d75215",
+        "locator": "Salvan Utilities 2 refined markdown lines 1707-1736, 13019-13132, 15087-15100"
+      },
+      {
+        "source_id": "philippine-electrical-code-local-raw-pdf--b046",
+        "label": "Philippine Electrical Code - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+        "sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+        "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3",
+        "locator": "PEC refined markdown lines 4483-4538"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 046 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "How should four or more elevators serving the same portion of a building be grouped?",
+    "options": [
+      {
+        "id": "a",
+        "text": "In at least two hoistways, with not more than four elevators in one hoistway."
+      },
+      {
+        "id": "b",
+        "text": "All in one hoistway to simplify shafts."
+      },
+      {
+        "id": "c",
+        "text": "Only by cab finish and lobby visibility."
+      },
+      {
+        "id": "d",
+        "text": "In any grouping if one elevator is fast enough."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "In at least two hoistways, with not more than four elevators in one hoistway. This answer matches Salvan Utilities 2 refined markdown lines 1717-1725.",
+    "explanation": "In at least two hoistways, with not more than four elevators in one hoistway. This answer matches Salvan Utilities 2 refined markdown lines 1717-1725.",
+    "code_citation": "Salvan Utilities 2 refined markdown lines 1717-1725"
+  }
+}

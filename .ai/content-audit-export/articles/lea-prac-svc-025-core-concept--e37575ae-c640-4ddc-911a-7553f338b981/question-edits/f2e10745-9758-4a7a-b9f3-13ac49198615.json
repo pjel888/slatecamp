@@ -1,0 +1,61 @@
+{
+  "question_id": "f2e10745-9758-4a7a-b9f3-13ac49198615",
+  "baseline_hash": "sha256:cc77f0d856191e14b799031d353b62d54b782a40eada395b16164a264fda5c79",
+  "action": "replace",
+  "reason": "source-audited-article-batch-020-local-first rewrote the question to match only locally checked source evidence.",
+  "approved_by": "codex-local-source-audit-batch-020",
+  "approved_at": "2026-05-10T16:41:51.472Z",
+  "source_audit_support": {
+    "parent_article_id": "e37575ae-c640-4ddc-911a-7553f338b981",
+    "parent_article_slug": "lea-prac-svc-025-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "checked_sources": [
+      {
+        "source_id": "spp-203-uap-local-raw-pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+        "raw_pdf_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 101-117; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 121-150; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 228-231"
+      }
+    ],
+    "local_source_safe_action": "Replaced the prior item with a source-bounded MCQ using only checked SPP source lines."
+  },
+  "proposed": {
+    "text": "Which service position is source-supported for Architectural Interiors under SPP 203?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Working in dual capacity as Architect-of-Record and Consulting Architect for Architectural Interiors services."
+      },
+      {
+        "id": "b",
+        "text": "Working only as a building official."
+      },
+      {
+        "id": "c",
+        "text": "Working as the contractor without any architectural service role."
+      },
+      {
+        "id": "d",
+        "text": "Working as a jury member for a design competition."
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "SPP 203 identifies the dual-capacity position for Architectural Interiors services.",
+    "explanation": "SPP 203 identifies the dual-capacity position for Architectural Interiors services.",
+    "code_citation": "SPP Document 203",
+    "bloom_level": "remember",
+    "application_context": "professional_practice",
+    "practice_context": [
+      "SPP Document 203",
+      "Architectural Interiors under SPP 203"
+    ],
+    "difficulty": 0.45,
+    "is_assessment": false,
+    "model_id": "BATCH-020-lea-prac-svc-025-core-concept-002"
+  }
+}

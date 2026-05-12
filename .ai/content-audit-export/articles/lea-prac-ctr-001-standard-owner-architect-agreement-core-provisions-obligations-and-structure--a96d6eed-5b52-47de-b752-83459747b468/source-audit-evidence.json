@@ -1,0 +1,336 @@
+{
+  "batch_id": "source-audited-article-batch-027-local-first",
+  "article_id": "a96d6eed-5b52-47de-b752-83459747b468",
+  "slug": "lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure",
+  "title": "Contract Documents and the Architect in UAP Document 301",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T00:00:00.000+08:00",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "classification": "legal_code_professional_practice_compensation_contracts",
+  "target": "local_first_source_audit_article_and_linked_questions",
+  "article_folder": ".ai/content-audit-export/articles/lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure--a96d6eed-5b52-47de-b752-83459747b468",
+  "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure--a96d6eed-5b52-47de-b752-83459747b468",
+  "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure--a96d6eed-5b52-47de-b752-83459747b468/question-edits",
+  "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure--a96d6eed-5b52-47de-b752-83459747b468/question-edits",
+  "question_edits_created": 10,
+  "linked_questions": [
+    {
+      "question_id": "4b69bb02-8caa-499c-a72a-3aadeb0bc19c",
+      "baseline_hash": "sha256:38a6e936debbc8e880b65381feb2abab4b3338da539f7d796e212a53da3b9d12"
+    },
+    {
+      "question_id": "0dd69157-c727-4956-b067-fd5210bf17a0",
+      "baseline_hash": "sha256:dc919a78baf35ebebe3eb91ffc29937fe0eb20ad85ff85e40797712ff5cc821d"
+    },
+    {
+      "question_id": "4e69b118-7314-42ca-98cc-b57b78d7ed80",
+      "baseline_hash": "sha256:e03167a0f8994d21d95753b249aa1d095f21ee47638091e6e3acd583e90cc0b7"
+    },
+    {
+      "question_id": "0388a435-8e3e-4751-8ce5-5c6519cc1bf5",
+      "baseline_hash": "sha256:db2a12635a5d8323a55e1120d41c76c1528243b2ae7030827e3354dbff6a6e0e"
+    },
+    {
+      "question_id": "26fb03aa-0b04-4327-b209-f5b8fbd95b93",
+      "baseline_hash": "sha256:a13bd2b4377cab520d911b2920cc57db4001a98c197c9b3d696cfb796ff756ae"
+    },
+    {
+      "question_id": "19b8b43b-5664-4808-b2d6-24baff8e5d78",
+      "baseline_hash": "sha256:102f6550952e5f2fe2e6bd51fa553fba1ceca4fe21a621378f629c15822fea4d"
+    },
+    {
+      "question_id": "6ffbc619-7639-4cb1-9b5b-e6457c65fd13",
+      "baseline_hash": "sha256:298ea3791cfdd0216939fd183cf9e1a730712f84bc0764de212196586f4df7a1"
+    },
+    {
+      "question_id": "c2634b6b-2804-4195-98dd-7ee246772755",
+      "baseline_hash": "sha256:7581d3d4b32c0b68036479384d362d4d734f4a086c38e51b7896376614c7a299"
+    },
+    {
+      "question_id": "83bcbf52-98e4-4c36-b460-26c1c6d35571",
+      "baseline_hash": "sha256:17214020b26d61e75f096a7b8ebbeffcc121c4ffb32ad765b354522657b643df"
+    },
+    {
+      "question_id": "e90788ac-9077-4075-91d8-8cbaa0474110",
+      "baseline_hash": "sha256:6acfa3096b5f6f294a6ffe11d104dca2e54db60fad60c171ed3631bf71b1fbfd"
+    }
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "source_audit": {
+    "checked_sources": [
+      {
+        "source_id": "uap-document-301-general-conditions-local",
+        "label": "UAP Document 301 - General Conditions for construction contract documents",
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "source_type": "professional_practice_pdf",
+        "source_locator": "UAP Document 301 refined markdown lines 472-540 and 730-842",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "refined_markdown_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+        "checked_markdown_lines": [
+          "UAP Document 301 lines 472-540",
+          "UAP Document 301 lines 730-842"
+        ],
+        "use": "Local UAP Document 301 raw PDF and refined markdown checked for contract document definitions, ownership of drawings, discrepancy handling, changes, payment certification, and substantial completion.",
+        "local_source_checked": true
+      },
+      {
+        "source_id": "uap-standards-spp202-compensation-local",
+        "label": "UAP Document Standards of Professional Practice - SPP 202 compensation and service conditions",
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "source_type": "professional_practice_pdf",
+        "source_locator": "UAP Standards refined markdown lines 414-501 and 1608-1642",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "checked_markdown_lines": [
+          "UAP Standards lines 414-457",
+          "UAP Standards lines 459-501",
+          "UAP Standards lines 1608-1642"
+        ],
+        "use": "Local UAP Standards raw PDF and refined markdown checked for SPP 202 compensation methods, reimbursables, owner responsibilities, additional services, abandoned projects, and PCA compensation terms.",
+        "local_source_checked": true
+      }
+    ],
+    "source_locator": "UAP Document 301 refined markdown lines 472-540 and 730-842; UAP Standards SPP 202 lines 459-501 for owner-architect service context",
+    "checked_markdown_lines": [
+      "UAP Document 301 lines 472-540",
+      "UAP Document 301 lines 730-842",
+      "UAP Standards lines 414-457",
+      "UAP Standards lines 459-501",
+      "UAP Standards lines 1608-1642"
+    ]
+  },
+  "article_repair": {
+    "normalized_md_rewritten": true,
+    "candidate_md_pending_compose": false,
+    "placeholders_removed": true,
+    "internal_notes_removed": true,
+    "source_safe_scope": true,
+    "normalized_hash": "sha256:3357404efc7cce7d2c178fd5fc62ba899e653ee8fe42db7d4ca92df38943049b",
+    "sources_hash": "sha256:7dc50793e8c4b528775f5b3f3ce91c4b293cdb18589f244bacb2ec151695170f",
+    "candidate_hash": "sha256:3357404efc7cce7d2c178fd5fc62ba899e653ee8fe42db7d4ca92df38943049b"
+  },
+  "claims": [
+    {
+      "claim_id": "batch-027-lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure-question-001",
+      "claim_text": "Question 4b69bb02-8caa-499c-a72a-3aadeb0bc19c / model BATCH-027-lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure-001 rewritten to local source-safe form.",
+      "question_id": "4b69bb02-8caa-499c-a72a-3aadeb0bc19c",
+      "model_id": "BATCH-027-lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure-001",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "uap-standards-spp202-compensation-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 472-540 and 730-842; UAP Standards SPP 202 lines 459-501 for owner-architect service context",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-027-lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure-question-002",
+      "claim_text": "Question 0dd69157-c727-4956-b067-fd5210bf17a0 / model BATCH-027-lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure-002 rewritten to local source-safe form.",
+      "question_id": "0dd69157-c727-4956-b067-fd5210bf17a0",
+      "model_id": "BATCH-027-lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure-002",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "uap-standards-spp202-compensation-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 472-540 and 730-842; UAP Standards SPP 202 lines 459-501 for owner-architect service context",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-027-lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure-question-003",
+      "claim_text": "Question 4e69b118-7314-42ca-98cc-b57b78d7ed80 / model BATCH-027-lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure-003 rewritten to local source-safe form.",
+      "question_id": "4e69b118-7314-42ca-98cc-b57b78d7ed80",
+      "model_id": "BATCH-027-lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure-003",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "uap-standards-spp202-compensation-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 472-540 and 730-842; UAP Standards SPP 202 lines 459-501 for owner-architect service context",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-027-lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure-question-004",
+      "claim_text": "Question 0388a435-8e3e-4751-8ce5-5c6519cc1bf5 / model BATCH-027-lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure-004 rewritten to local source-safe form.",
+      "question_id": "0388a435-8e3e-4751-8ce5-5c6519cc1bf5",
+      "model_id": "BATCH-027-lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure-004",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "uap-standards-spp202-compensation-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 472-540 and 730-842; UAP Standards SPP 202 lines 459-501 for owner-architect service context",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-027-lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure-question-005",
+      "claim_text": "Question 26fb03aa-0b04-4327-b209-f5b8fbd95b93 / model BATCH-027-lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure-005 rewritten to local source-safe form.",
+      "question_id": "26fb03aa-0b04-4327-b209-f5b8fbd95b93",
+      "model_id": "BATCH-027-lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure-005",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "uap-standards-spp202-compensation-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 472-540 and 730-842; UAP Standards SPP 202 lines 459-501 for owner-architect service context",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-027-lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure-question-006",
+      "claim_text": "Question 19b8b43b-5664-4808-b2d6-24baff8e5d78 / model BATCH-027-lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure-006 rewritten to local source-safe form.",
+      "question_id": "19b8b43b-5664-4808-b2d6-24baff8e5d78",
+      "model_id": "BATCH-027-lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure-006",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "uap-standards-spp202-compensation-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 472-540 and 730-842; UAP Standards SPP 202 lines 459-501 for owner-architect service context",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-027-lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure-question-007",
+      "claim_text": "Question 6ffbc619-7639-4cb1-9b5b-e6457c65fd13 / model BATCH-027-lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure-007 rewritten to local source-safe form.",
+      "question_id": "6ffbc619-7639-4cb1-9b5b-e6457c65fd13",
+      "model_id": "BATCH-027-lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure-007",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "uap-standards-spp202-compensation-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 472-540 and 730-842; UAP Standards SPP 202 lines 459-501 for owner-architect service context",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-027-lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure-question-008",
+      "claim_text": "Question c2634b6b-2804-4195-98dd-7ee246772755 / model BATCH-027-lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure-008 rewritten to local source-safe form.",
+      "question_id": "c2634b6b-2804-4195-98dd-7ee246772755",
+      "model_id": "BATCH-027-lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure-008",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "uap-standards-spp202-compensation-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 472-540 and 730-842; UAP Standards SPP 202 lines 459-501 for owner-architect service context",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-027-lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure-question-009",
+      "claim_text": "Question 83bcbf52-98e4-4c36-b460-26c1c6d35571 / model BATCH-027-lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure-009 rewritten to local source-safe form.",
+      "question_id": "83bcbf52-98e4-4c36-b460-26c1c6d35571",
+      "model_id": "BATCH-027-lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure-009",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "uap-standards-spp202-compensation-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 472-540 and 730-842; UAP Standards SPP 202 lines 459-501 for owner-architect service context",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-027-lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure-question-010",
+      "claim_text": "Question e90788ac-9077-4075-91d8-8cbaa0474110 / model BATCH-027-lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure-010 rewritten to local source-safe form.",
+      "question_id": "e90788ac-9077-4075-91d8-8cbaa0474110",
+      "model_id": "BATCH-027-lea-prac-ctr-001-standard-owner-architect-agreement-core-provisions-obligations-and-structure-010",
+      "support_status": "PASS",
+      "source_ids": [
+        "uap-document-301-general-conditions-local",
+        "uap-standards-spp202-compensation-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "source_locator": "UAP Document 301 refined markdown lines 472-540 and 730-842; UAP Standards SPP 202 lines 459-501 for owner-architect service context",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    }
+  ],
+  "unsupported_or_removed_claims": [
+    "Corrected the article boundary so UAP Document 301 is not treated as the standard owner-architect agreement.",
+    "Removed unsupported claims about mediation, insurance, and termination provisions not found in the checked local lines.",
+    "Rebuilt the cluster around source-supported contract document definitions and SPP 202 owner-architect service context."
+  ],
+  "source_safe_rewrite_question_edits": true,
+  "local_validation": {
+    "compose": "PASS: blockers=0",
+    "diff": "PASS: changed=true safe_to_push=true blockers=0",
+    "validate": "PASS: scoped content-audit:validate valid=true blockers=0",
+    "scoped_checks": "PASS: scoped JSON/source/placeholder/diff checks passed",
+    "tests": "PASS: bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts - 34 pass, 0 fail"
+  },
+  "remaining_local_blockers": [],
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_only": true,
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false
+  }
+}

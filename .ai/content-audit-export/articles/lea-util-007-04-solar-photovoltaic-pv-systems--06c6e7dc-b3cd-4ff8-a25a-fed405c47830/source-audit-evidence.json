@@ -1,0 +1,277 @@
+{
+  "schema_version": "source-audit-evidence-v1-local-first",
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-045-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T17:18:00.000+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "06c6e7dc-b3cd-4ff8-a25a-fed405c47830",
+    "slug": "lea-util-007-04-solar-photovoltaic-pv-systems",
+    "title": "Renewable energy systems in buildings",
+    "article_folder": ".ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830",
+    "candidate_path": ".ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/candidate.md",
+    "candidate_sha256": "sha256:828e57aadccb02a9e5a8138f0d2e83927a1505297f78d2ed339f3b7d4bc093ee",
+    "normalized_sha256": "sha256:828e57aadccb02a9e5a8138f0d2e83927a1505297f78d2ed339f3b7d4bc093ee",
+    "linked_questions_sha256": "sha256:a21b38b6366276f54256fcbe9201fdeb49c4f70a3708c15a3831f4900f6caca3",
+    "sources_sha256": "sha256:a43b2d68fcbbab5d0057a061402cf097877f9e9407171ad73c886cfee21df346"
+  },
+  "classification": {
+    "content_domain": "LEA Utilities - solar photovoltaic systems",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high_value_utilities_renewable_energy_pv",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 15,
+    "question_edits_created": [
+      "6666284f-668d-4c9e-8bb7-4f339747bf82",
+      "2ae5639a-b45a-4f18-971f-4d4877ecadf8",
+      "d6e826ec-546f-405a-8283-d6f70e169a09",
+      "1f7428cb-97ef-4e1e-ab1b-f974b15b39f0",
+      "8f98493f-d92a-4b2c-83f3-867353e95a24",
+      "78facbb9-7d08-4eba-a4ff-b9aab66bef2e",
+      "0c32d43a-35b6-4fd7-88ea-76eb61cd7f94",
+      "7773622a-5d1e-40e4-ba5b-509787c66a53",
+      "e3078693-ac7a-40b6-88eb-ccd255cadc09",
+      "4cf29e1b-fe44-4a86-b8de-2604ceb50dbc",
+      "197c1744-01ae-4e44-88d7-38b376301a30",
+      "d2b0656e-f731-4e50-81b2-efd7638028ea",
+      "aad6391a-f10e-4912-894d-423415dcba70",
+      "09e94efc-5682-4839-87f4-0f7442408e32",
+      "d77e3868-95d8-4957-b4cb-e8d5c4451fcf"
+    ]
+  },
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/question-edits/6666284f-668d-4c9e-8bb7-4f339747bf82.json",
+      ".ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/question-edits/2ae5639a-b45a-4f18-971f-4d4877ecadf8.json",
+      ".ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/question-edits/d6e826ec-546f-405a-8283-d6f70e169a09.json",
+      ".ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/question-edits/1f7428cb-97ef-4e1e-ab1b-f974b15b39f0.json",
+      ".ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/question-edits/8f98493f-d92a-4b2c-83f3-867353e95a24.json",
+      ".ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/question-edits/78facbb9-7d08-4eba-a4ff-b9aab66bef2e.json",
+      ".ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/question-edits/0c32d43a-35b6-4fd7-88ea-76eb61cd7f94.json",
+      ".ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/question-edits/7773622a-5d1e-40e4-ba5b-509787c66a53.json",
+      ".ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/question-edits/e3078693-ac7a-40b6-88eb-ccd255cadc09.json",
+      ".ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/question-edits/4cf29e1b-fe44-4a86-b8de-2604ceb50dbc.json",
+      ".ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/question-edits/197c1744-01ae-4e44-88d7-38b376301a30.json",
+      ".ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/question-edits/d2b0656e-f731-4e50-81b2-efd7638028ea.json",
+      ".ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/question-edits/aad6391a-f10e-4912-894d-423415dcba70.json",
+      ".ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/question-edits/09e94efc-5682-4839-87f4-0f7442408e32.json",
+      ".ai/content-audit-export/articles/lea-util-007-04-solar-photovoltaic-pv-systems--06c6e7dc-b3cd-4ff8-a25a-fed405c47830/question-edits/d77e3868-95d8-4957-b4cb-e8d5c4451fcf.json"
+    ]
+  },
+  "raw_sources": [
+    {
+      "source_id": "ra-11285-energy-efficiency-conservation-act-local-raw-pdf--b045",
+      "label": "RA 11285 Energy Efficiency and Conservation Act - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf",
+      "raw_pdf_sha256": "sha256:316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.md",
+      "refined_markdown_sha256": "sha256:d2baa0e8d4ffe0059688783a4d31ac0e121517daca939f18a048fe053e76cdd4",
+      "source_locator": "RA 11285 refined markdown lines 63, 135, 141-146, 769, 1086-1118, 1144-1158, 1304",
+      "checked_markdown_lines": [
+        "RA 11285 refined markdown lines 63 and 135",
+        "RA 11285 refined markdown lines 141-146",
+        "RA 11285 refined markdown line 769",
+        "RA 11285 refined markdown lines 1086-1118",
+        "RA 11285 refined markdown lines 1144-1158",
+        "RA 11285 refined markdown line 1304"
+      ]
+    },
+    {
+      "source_id": "philippine-electrical-code-local-raw-pdf--b045",
+      "label": "Philippine Electrical Code - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+      "raw_pdf_sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+      "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3",
+      "source_locator": "PEC refined markdown lines 362, 556-612, 986-1045, 29231-29466",
+      "checked_markdown_lines": [
+        "PEC refined markdown line 362",
+        "PEC refined markdown lines 556-612",
+        "PEC refined markdown lines 986-1045",
+        "PEC refined markdown lines 29231-29466"
+      ]
+    },
+    {
+      "source_id": "doe-energy-conserving-design-guidelines-local-raw-pdf--b045",
+      "label": "DOE Energy Conserving Design Guidelines - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+      "raw_pdf_sha256": "sha256:9a1a4019b500ffc2873625db6f04ac50b39aea7cadac9159464f9ed716e8126c",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.md",
+      "refined_markdown_sha256": "sha256:477f0990a67359eee303e8280a00be449d0aa413252161db7b5b1bafec3012b9",
+      "source_locator": "DOE refined markdown lines 25, 37, 632-642, 877-882, 717-793, 1798",
+      "checked_markdown_lines": [
+        "DOE refined markdown lines 25 and 37",
+        "DOE refined markdown lines 632-642",
+        "DOE refined markdown lines 877-882",
+        "DOE refined markdown lines 717-793",
+        "DOE refined markdown line 1798"
+      ]
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "ra-11285-energy-efficiency-conservation-act-local-raw-pdf--b045",
+      "label": "RA 11285 Energy Efficiency and Conservation Act - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf",
+      "raw_pdf_sha256": "sha256:316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.md",
+      "refined_markdown_sha256": "sha256:d2baa0e8d4ffe0059688783a4d31ac0e121517daca939f18a048fe053e76cdd4",
+      "source_locator": "RA 11285 refined markdown lines 63, 135, 141-146, 769, 1086-1118, 1144-1158, 1304",
+      "checked_markdown_lines": [
+        "RA 11285 refined markdown lines 63 and 135",
+        "RA 11285 refined markdown lines 141-146",
+        "RA 11285 refined markdown line 769",
+        "RA 11285 refined markdown lines 1086-1118",
+        "RA 11285 refined markdown lines 1144-1158",
+        "RA 11285 refined markdown line 1304"
+      ]
+    },
+    {
+      "source_id": "philippine-electrical-code-local-raw-pdf--b045",
+      "label": "Philippine Electrical Code - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+      "raw_pdf_sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+      "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3",
+      "source_locator": "PEC refined markdown lines 362, 556-612, 986-1045, 29231-29466",
+      "checked_markdown_lines": [
+        "PEC refined markdown line 362",
+        "PEC refined markdown lines 556-612",
+        "PEC refined markdown lines 986-1045",
+        "PEC refined markdown lines 29231-29466"
+      ]
+    },
+    {
+      "source_id": "doe-energy-conserving-design-guidelines-local-raw-pdf--b045",
+      "label": "DOE Energy Conserving Design Guidelines - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+      "raw_pdf_sha256": "sha256:9a1a4019b500ffc2873625db6f04ac50b39aea7cadac9159464f9ed716e8126c",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.md",
+      "refined_markdown_sha256": "sha256:477f0990a67359eee303e8280a00be449d0aa413252161db7b5b1bafec3012b9",
+      "source_locator": "DOE refined markdown lines 25, 37, 632-642, 877-882, 717-793, 1798",
+      "checked_markdown_lines": [
+        "DOE refined markdown lines 25 and 37",
+        "DOE refined markdown lines 632-642",
+        "DOE refined markdown lines 877-882",
+        "DOE refined markdown lines 717-793",
+        "DOE refined markdown line 1798"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "b045-pv-01",
+      "claim_text": "RA 11285 promotes development and utilization of renewable energy technologies and systems.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "RA 11285 Energy Efficiency and Conservation Act - local raw PDF",
+        "locator": "RA 11285 refined markdown lines 63, 135, and 769",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf",
+        "raw_pdf_sha256": "sha256:316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8",
+        "quoted_pdf_excerpt": "renewable energy technologies and systems"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b045-pv-02",
+      "claim_text": "PEC Article 6.90 applies to PV arrays, inverters, controllers, and interactive or stand-alone PV systems.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "RA 11285 Energy Efficiency and Conservation Act - local raw PDF",
+        "locator": "PEC refined markdown lines 29231-29303",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf",
+        "raw_pdf_sha256": "sha256:316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8",
+        "quoted_pdf_excerpt": "array; inverter; stand alone; interactive"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b045-pv-03",
+      "claim_text": "PV source and output circuits must not share raceways or similar fittings with feeders or branch circuits unless separated or connected together.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "RA 11285 Energy Efficiency and Conservation Act - local raw PDF",
+        "locator": "PEC refined markdown lines 29312-29341",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf",
+        "raw_pdf_sha256": "sha256:316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8",
+        "quoted_pdf_excerpt": "not contained in the same raceway"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b045-pv-04",
+      "claim_text": "PV currents are continuous and conductor and overcurrent sizing uses the Article 6.90 current rules.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "RA 11285 Energy Efficiency and Conservation Act - local raw PDF",
+        "locator": "PEC refined markdown lines 29359-29466",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf",
+        "raw_pdf_sha256": "sha256:316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8",
+        "quoted_pdf_excerpt": "125 percent; continuous"
+      },
+      "blockers": []
+    }
+  ],
+  "removed_or_rewritten_material": [
+    "Removed exported UI block marker text from normalized article content where present.",
+    "Rewrote linked question files to stay inside checked local raw-source evidence.",
+    "Replaced derivative-only numeric examples and vendor-specific claims with checked source-family statements."
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdf_first": true,
+    "derivative_layers_used_only_as_locators": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "checked_raw_pdf_families": [
+      "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf",
+      "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+      "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf"
+    ],
+    "blockers": []
+  },
+  "gate_results": {
+    "source_audit": "PASS",
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_validation": "PASS",
+    "question_edit_count_check": "PASS",
+    "scoped_json_parse": "PASS",
+    "marker_scan": "PASS",
+    "source_hash_check": "PASS",
+    "stale_compose_error_check": "PASS"
+  },
+  "source_safe_repair": {
+    "status": "COMPLETE_LOCAL_VALIDATED",
+    "article_normalized_rewritten": true,
+    "sources_json_updated": true,
+    "source_audit_evidence_updated": true,
+    "question_edits_created": 15,
+    "blockers": []
+  },
+  "blockers": []
+}

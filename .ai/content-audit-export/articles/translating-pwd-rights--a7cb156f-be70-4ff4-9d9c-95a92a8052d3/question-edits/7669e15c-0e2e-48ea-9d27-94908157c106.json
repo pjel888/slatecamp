@@ -1,0 +1,51 @@
+{
+  "question_id": "7669e15c-0e2e-48ea-9d27-94908157c106",
+  "baseline_hash": "sha256:2aa2565c2c84a5a5c0e492425cbe5c74f1c20bfb693bd9db37ea70d2972a9ca0",
+  "action": "replace",
+  "reason": "source-audited-article-batch-040-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-040",
+  "approved_at": "2026-05-11T14:04:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-040-local-first",
+    "checked_sources": [
+      {
+        "source_id": "bp-344-2024-rirr-ncda-local",
+        "label": "BP 344 2024 Revised IRR - NCDA",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "checked_markdown_lines": [
+          "BP 344 2024 IRR refined markdown lines 36-70",
+          "BP 344 2024 IRR refined markdown lines 198-224",
+          "BP 344 2024 IRR refined markdown lines 228-305",
+          "BP 344 2024 IRR refined markdown lines 770-850"
+        ]
+      }
+    ],
+    "citation": "BP 344 2024 Revised IRR, Doors"
+  },
+  "proposed": {
+    "text": "What minimum clear width is required for all doors?",
+    "options": [
+      {
+        "id": "b040-a7cb-07-a",
+        "text": "900 mm"
+      },
+      {
+        "id": "b040-a7cb-07-b",
+        "text": "750 mm"
+      },
+      {
+        "id": "b040-a7cb-07-c",
+        "text": "800 mm"
+      },
+      {
+        "id": "b040-a7cb-07-d",
+        "text": "1200 mm"
+      }
+    ],
+    "correct_option_id": "b040-a7cb-07-a",
+    "rationale": "Correct answer: 900 mm. This is directly supported by BP 344 2024 Revised IRR, Doors.",
+    "explanation": "The Batch 040 source-audited correction uses only local raw PDF families and locator-checked refined markdown for BP 344 2024 Revised IRR, Doors.",
+    "code_citation": "BP 344 2024 Revised IRR, Doors"
+  }
+}

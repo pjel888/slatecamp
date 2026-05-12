@@ -1,0 +1,68 @@
+{
+  "question_id": "625706e9-131b-4e60-ac20-80fb52960b98",
+  "baseline_hash": "sha256:6743bea6f5751a314e80ac817154581cec24b7fe1665118e8fa7228b8bbe28b1",
+  "action": "replace",
+  "reason": "source-audited-article-batch-081-local-first aligned linked question with checked local raw PDF/source evidence for exam-meta-deck-heights.",
+  "approved_by": "codex-local-source-audit-batch-081",
+  "approved_at": "2026-05-12T04:40:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "25bb445b-ebd5-452f-ad9e-f3912b17e740",
+    "parent_article_slug": "exam-meta-deck-heights",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "BP 344 2024 IRR refined markdown lines 194-208 and 557-577; PD 1096 RIRR refined markdown lines 3535-3554 and 3761-3763; raw PDF pages 7, 195, and 203 checked by local PyMuPDF extraction",
+    "checked_markdown_lines": [
+      "BP 344 2024 IRR refined markdown lines 194-208 and 557-577; PD 1096 RIRR refined markdown lines 3535-3554 and 3761-3763; raw PDF pages 7, 195, and 203 checked by local PyMuPDF extraction"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "bp344-2024-irr-b081",
+        "label": "BP 344 2024 Revised IRR",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "raw_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+        "locator": "BP 344 2024 IRR refined markdown lines 194-208 and 557-577; PD 1096 RIRR refined markdown lines 3535-3554 and 3761-3763; raw PDF pages 7, 195, and 203 checked by local PyMuPDF extraction"
+      },
+      {
+        "source_id": "pd1096-rirr-2004-b081",
+        "label": "PD 1096 RIRR 2004 - Revised IRR (DPWH Official)",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "locator": "BP 344 2024 IRR refined markdown lines 194-208 and 557-577; PD 1096 RIRR refined markdown lines 3535-3554 and 3761-3763; raw PDF pages 7, 195, and 203 checked by local PyMuPDF extraction"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 081 local raw-source-audited BP 344/PD 1096 guard and handrail scope."
+  },
+  "proposed": {
+    "text": "PD 1096 requires railings for balconies, landings, or porches when they are more than what height above grade?",
+    "options": [
+      {
+        "id": "a",
+        "text": "750 mm"
+      },
+      {
+        "id": "b",
+        "text": "300 mm"
+      },
+      {
+        "id": "c",
+        "text": "1500 mm"
+      },
+      {
+        "id": "d",
+        "text": "2200 mm"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "PD 1096 provides railings for balconies, landings, or porches more than 750 mm above grade.",
+    "explanation": "PD 1096 provides railings for balconies, landings, or porches more than 750 mm above grade.",
+    "code_citation": "BP 344 2024 Revised IRR; PD 1096 RIRR 2004 - Revised IRR (DPWH Official)",
+    "bloom_level": "apply",
+    "application_context": "source_audited_local_first_batch_081",
+    "practice_context": [],
+    "difficulty": 0.5
+  }
+}

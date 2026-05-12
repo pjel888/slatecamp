@@ -2,9 +2,9 @@
 ## Feature Implementation Plan (FIP)
 ### PD 1096 IRR Rules VII & VIII Interactive Learning Experience
 
-**Version:** 1.0  
-**Stack:** Next.js 14 · React 18 · React Three Fiber · Zustand · Supabase  
-**Regulatory Scope:** PD 1096 2004 Revised IRR — Rule VII (Setbacks) · Rule VIII (Development Controls)  
+**Version:** 1.0
+**Stack:** Next.js 14 · React 18 · React Three Fiber · Zustand · Supabase
+**Regulatory Scope:** PD 1096 2004 Revised IRR — Rule VII (Setbacks) · Rule VIII (Development Controls)
 **Classification:** Core ILX Module — Area C Exam Preparation
 
 ---
@@ -59,13 +59,13 @@ The root cause is that PD 1096's development controls are taught as a list of fo
 
 The feature implements a **three-stage cognitive scaffolding model:**
 
-**Stage 1 — Spatial Anchoring (Sandbox Mode)**  
+**Stage 1 — Spatial Anchoring (Sandbox Mode)**
 The student sees a fully computed, compliant lot. All values are within legal limits. Labels are visible. Formula hints are available on hover. The goal is to establish the spatial relationship between lot, setback envelope, buildable volume, and permitted floor area before any computation is demanded.
 
-**Stage 2 — Violation Discovery (Sandbox Mode — Parameter Manipulation)**  
+**Stage 2 — Violation Discovery (Sandbox Mode — Parameter Manipulation)**
 The student adjusts sliders and inputs. The scene responds. Violations appear in red. The student discovers — rather than memorizes — what causes an AMBF exceedance, a PSO failure, or a BHL violation. The `ComplianceScorecard` component updates in real time, naming each failing check with its code reference.
 
-**Stage 3 — Unaided Computation (Exam Mode)**  
+**Stage 3 — Unaided Computation (Exam Mode)**
 The `examState.mode` flag switches to `'exam'`. Formula hints are suppressed. The scene displays a lot with specified parameters and asks the student to derive a target value. The Readiness Score impact is active. Incorrect answers trigger a post-answer explanation, not a red X.
 
 ## 1.4 Strategic Importance
@@ -1255,5 +1255,5 @@ LotData + ZoningData
 
 ---
 
-*Feature Implementation Plan — SlateCamp Development Controls Lab*  
+*Feature Implementation Plan — SlateCamp Development Controls Lab*
 *Prepared for engineering handoff. All computation functions require unit test coverage before production deployment. BHL angular plane coefficient flagged for licensed architect review.*

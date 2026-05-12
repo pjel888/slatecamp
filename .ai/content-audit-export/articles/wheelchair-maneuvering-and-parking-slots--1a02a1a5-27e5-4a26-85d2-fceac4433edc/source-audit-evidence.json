@@ -1,0 +1,226 @@
+{
+  "schema_version": "source-audit-evidence-v1-local-first",
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-042-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T15:15:23.383+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "1a02a1a5-27e5-4a26-85d2-fceac4433edc",
+    "slug": "wheelchair-maneuvering-and-parking-slots",
+    "title": "Wheelchair Maneuvering and Parking Slots",
+    "article_folder": ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc",
+    "candidate_path": ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc/candidate.md",
+    "candidate_sha256": "sha256:c95c8eaa3eb4f0c723faf81d4a071f1b587c19f9a4748eef00877adf542c2a21",
+    "normalized_sha256": "sha256:c95c8eaa3eb4f0c723faf81d4a071f1b587c19f9a4748eef00877adf542c2a21",
+    "linked_questions_sha256": "sha256:a94bfa8979060990d5e84486969dc606168be84d7304721f1d0c2cbf4b938a59",
+    "sources_sha256": "sha256:1e7cb1d7b2fa09476231a5fdd1d4ff4fb5e17212bb16621eeedbd9f9278becb8"
+  },
+  "classification": {
+    "content_domain": "LEA Accessibility - wheelchair maneuvering and parking",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high_value_accessibility_code",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 21,
+    "question_edits_created": [
+      "98fe1db5-9578-44b5-aaf0-f7aa622c8aec",
+      "80695d64-b8cf-4a61-b855-f69caed50d49",
+      "664a737c-37c0-49e3-88b2-b71f6238b511",
+      "b0754bcf-452e-4581-b87e-4060490e6a41",
+      "7abf2dc6-24d0-4eac-84da-81868a926eb6",
+      "12e675d4-2b46-466d-afee-0e68a34b869f",
+      "e2bf9103-fb0c-489d-af58-a56d52f99afd",
+      "92e3243b-2371-4e5e-99a5-327bf17b25f7",
+      "c876af45-0686-4448-bf76-87edf5087827",
+      "10be362b-086f-45d8-97fe-15ec2a8b79c0",
+      "5bf6fe54-9056-4e9b-adce-e7d550c8b2c4",
+      "30ee6dd5-3ba7-4d82-80c6-8c08133fd29b",
+      "05e49a0d-17c6-44a0-af64-f90454cc30ef",
+      "65f2fadf-7420-497e-8407-9fb823269aa1",
+      "635d2a24-56bb-4159-9304-dc8d9b31f7d8",
+      "39ac20e3-9f51-46aa-a6ec-868fa067f88c",
+      "18004174-f8d0-4025-8b0f-8e1db7e89a30",
+      "3bbdbc9d-66a8-4bc4-b25c-ac5eec0a67e8",
+      "ebbe73cc-b82f-4054-b3bd-d7cda19fbdeb",
+      "b95646e9-4758-4e65-8535-7e4955fefd12",
+      "525f6a20-5cf5-4645-b346-9ddde18bb3e7"
+    ]
+  },
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc/question-edits/98fe1db5-9578-44b5-aaf0-f7aa622c8aec.json",
+      ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc/question-edits/80695d64-b8cf-4a61-b855-f69caed50d49.json",
+      ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc/question-edits/664a737c-37c0-49e3-88b2-b71f6238b511.json",
+      ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc/question-edits/b0754bcf-452e-4581-b87e-4060490e6a41.json",
+      ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc/question-edits/7abf2dc6-24d0-4eac-84da-81868a926eb6.json",
+      ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc/question-edits/12e675d4-2b46-466d-afee-0e68a34b869f.json",
+      ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc/question-edits/e2bf9103-fb0c-489d-af58-a56d52f99afd.json",
+      ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc/question-edits/92e3243b-2371-4e5e-99a5-327bf17b25f7.json",
+      ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc/question-edits/c876af45-0686-4448-bf76-87edf5087827.json",
+      ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc/question-edits/10be362b-086f-45d8-97fe-15ec2a8b79c0.json",
+      ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc/question-edits/5bf6fe54-9056-4e9b-adce-e7d550c8b2c4.json",
+      ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc/question-edits/30ee6dd5-3ba7-4d82-80c6-8c08133fd29b.json",
+      ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc/question-edits/05e49a0d-17c6-44a0-af64-f90454cc30ef.json",
+      ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc/question-edits/65f2fadf-7420-497e-8407-9fb823269aa1.json",
+      ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc/question-edits/635d2a24-56bb-4159-9304-dc8d9b31f7d8.json",
+      ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc/question-edits/39ac20e3-9f51-46aa-a6ec-868fa067f88c.json",
+      ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc/question-edits/18004174-f8d0-4025-8b0f-8e1db7e89a30.json",
+      ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc/question-edits/3bbdbc9d-66a8-4bc4-b25c-ac5eec0a67e8.json",
+      ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc/question-edits/ebbe73cc-b82f-4054-b3bd-d7cda19fbdeb.json",
+      ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc/question-edits/b95646e9-4758-4e65-8535-7e4955fefd12.json",
+      ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc/question-edits/525f6a20-5cf5-4645-b346-9ddde18bb3e7.json"
+    ]
+  },
+  "raw_sources": [
+    {
+      "source_id": "bp-344-2024-rirr-ncda-local",
+      "label": "BP 344 2024 Revised IRR - NCDA local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "source_locator": "BP 344 2024 IRR refined markdown lines 230-311; BP 344 2024 IRR refined markdown lines 879-912; BP 344 2024 IRR refined markdown lines 698-700",
+      "checked_markdown_lines": [
+        "BP 344 2024 IRR refined markdown lines 230-311",
+        "BP 344 2024 IRR refined markdown lines 879-912",
+        "BP 344 2024 IRR refined markdown lines 698-700"
+      ]
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "bp-344-2024-rirr-ncda-local",
+      "label": "BP 344 2024 Revised IRR - NCDA local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "source_locator": "BP 344 2024 IRR refined markdown lines 230-311; BP 344 2024 IRR refined markdown lines 879-912; BP 344 2024 IRR refined markdown lines 698-700",
+      "checked_markdown_lines": [
+        "BP 344 2024 IRR refined markdown lines 230-311",
+        "BP 344 2024 IRR refined markdown lines 879-912",
+        "BP 344 2024 IRR refined markdown lines 698-700"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "b042-parking-01",
+      "claim_text": "Accessible parking slots require enough transfer space and are located nearest accessible main entrances.",
+      "claim_type": "accessibility_or_building_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - NCDA local raw PDF",
+        "locator": "BP 344 refined markdown lines 262-266",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "allow enough space to transfer from a vehicle to a wheelchair; located nearest accessible main entrances"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b042-parking-02",
+      "claim_text": "Accessible parking slots are 4000 mm by 5000 mm, with a 1200 mm walkway between front ends of parked cars.",
+      "claim_type": "accessibility_or_building_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - NCDA local raw PDF",
+        "locator": "BP 344 refined markdown lines 272-281",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "minimum width of 4000 mm and length of 5000 mm; walkway with minimum clear width of 1200 mm"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b042-parking-03",
+      "claim_text": "Accessible parking slots are not located in ramped or sloping areas and are placed near accessible elevators or entrances.",
+      "claim_type": "accessibility_or_building_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - NCDA local raw PDF",
+        "locator": "BP 344 refined markdown lines 286-292",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "shall never be located in ramped or sloping areas; located right next to accessible elevators or closest entrances"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b042-parking-04",
+      "claim_text": "Accessible parking signage is 600 mm by 600 mm and mounted at 2200 mm minimum clear height.",
+      "claim_type": "accessibility_or_building_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - NCDA local raw PDF",
+        "locator": "BP 344 refined markdown lines 294-311",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "pole mounted parking signage, 600 mm x 600 mm; minimum clear height of 2200 mm"
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [
+    "Unchecked derivative-only accessibility dimensions and non-local rule claims were excluded from the Batch 042 repaired content and question edits."
+  ],
+  "removed_or_rewritten_material": [
+    "Removed exported UI-block marker tokens from normalized article content where present.",
+    "Rewrote linked question files to stay inside checked BP 344 and PD 1096 evidence."
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdf_first": true,
+    "derivative_layers_used_only_as_locators": true,
+    "checked_raw_pdf_families": [
+      "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf"
+    ]
+  },
+  "gate_results": {
+    "source_audit": "PASS",
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_validation": "PASS",
+    "question_edit_count_check": "PASS",
+    "scoped_json_parse": "PASS",
+    "marker_scan": "PASS",
+    "source_hash_check": "PASS",
+    "stale_compose_error_check": "PASS"
+  },
+  "source_safe_repair": {
+    "status": "COMPLETE_LOCAL_VALIDATED",
+    "article_normalized_rewritten": true,
+    "sources_json_updated": true,
+    "source_audit_evidence_updated": true,
+    "question_edits_created": 21,
+    "blockers": []
+  },
+  "local_validation": {
+    "status": "PASS_LOCAL_VALIDATION",
+    "validated_at": "2026-05-11T15:15:23.383+08:00",
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_validation": "PASS",
+    "scoped_checks": "PASS",
+    "blockers": []
+  },
+  "sme_review": {
+    "required_before_supabase_publish": true,
+    "completed": false
+  },
+  "overall": {
+    "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+    "blockers": []
+  }
+}

@@ -63,8 +63,8 @@ This phase is critical. You need to understand what EXISTS before building what'
 SELECT table_name FROM information_schema.tables WHERE table_schema = 'public' ORDER BY table_name;
 
 -- Check which Camp Trail tables already exist
-SELECT table_name FROM information_schema.tables 
-WHERE table_schema = 'public' 
+SELECT table_name FROM information_schema.tables
+WHERE table_schema = 'public'
 AND table_name IN ('camp_trails', 'trail_days', 'trail_steps', 'user_trail_enrollments', 'user_trail_progress', 'trail_day_completions', 'session_trail_credits');
 
 -- Check which enums already exist
@@ -233,8 +233,8 @@ CREATE INDEX IF NOT EXISTS idx_questions_assessment ON questions(is_assessment) 
 
 **After running the migration, verify:**
 ```sql
-SELECT table_name FROM information_schema.tables 
-WHERE table_schema = 'public' 
+SELECT table_name FROM information_schema.tables
+WHERE table_schema = 'public'
 AND table_name IN ('camp_trails', 'trail_days', 'trail_steps', 'user_trail_enrollments', 'user_trail_progress', 'trail_day_completions', 'session_trail_credits')
 ORDER BY table_name;
 ```
@@ -295,7 +295,7 @@ interface AssessmentConfig {
 1. Calculate per-subject accuracy from the 35 responses
 2. Compute initial Readiness Score (use existing readiness calculation if it exists, or simple weighted average)
 3. Write to `user_global_stats`: `assessment_completed_at`, `assessment_score`, `global_readiness_score`
-4. Write to `readiness_score_snapshots` 
+4. Write to `readiness_score_snapshots`
 5. Write to `user_node_mastery` for each subject/topic touched
 6. Redirect to Score Reveal page
 
@@ -321,7 +321,7 @@ The assessment should only be taken ONCE (for free users). Check `user_global_st
 
 1. **The number.** Readiness Score, large, honest. Inter 48px bold tabular-nums. Color-coded:
    - 0-49: `#E63329` (Red)
-   - 50-69: `#E8853A` (Orange)  
+   - 50-69: `#E8853A` (Orange)
    - 70-84: `#1B7A3C` (Green)
    - 85-100: `#1B7A3C` (Green, stronger messaging)
 
@@ -369,13 +369,13 @@ function recommendTrail(
   targetExamDate: Date | null,
   subjects: SubjectMastery[]
 ): TrailRecommendation {
-  const daysToExam = targetExamDate 
+  const daysToExam = targetExamDate
     ? Math.ceil((targetExamDate.getTime() - Date.now()) / (1000 * 60 * 60 * 24))
     : null
 
   // Logic from architecture doc Section 7.3:
   let recommendedIntensity: string
-  
+
   if (!daysToExam || daysToExam > 180) {
     recommendedIntensity = 'undergraduate'  // 6-month
   } else if (daysToExam <= 14) {
@@ -393,9 +393,9 @@ function recommendTrail(
   // Find the matching trail from camp_trails
   // Generate reasoning string
   // Find the weakest subject for week 1 preview
-  
+
   const weakestSubject = subjects.sort((a, b) => a.mastery - b.mastery)[0]
-  
+
   return {
     trail: matchedTrail,
     reasoning: `Based on your score of ${readinessScore}% and ${daysToExam} days until your exam, the ${matchedTrail.name} is the right fit.`,
@@ -471,7 +471,7 @@ Your Camp Trail · Day 14 of 56
 ──────────────────────────────────────────
 
 ☐ Read: Reinforced Concrete Fundamentals (~15 min)    [Open Wiki →]
-☐ Quiz: 15 items on Structural Systems (~20 min)      [Start Quiz →]  
+☐ Quiz: 15 items on Structural Systems (~20 min)      [Start Quiz →]
 ☐ 3D Lab: Structural Bay Framing (~10 min)            [Open Lab →]    (optional)
 
 ── Today's estimated time: ~45 minutes ──
@@ -528,8 +528,8 @@ Test the COMPLETE pipeline:
 ### Schema verification:
 ```sql
 -- Verify all tables exist
-SELECT table_name FROM information_schema.tables 
-WHERE table_schema = 'public' 
+SELECT table_name FROM information_schema.tables
+WHERE table_schema = 'public'
 AND table_name IN ('camp_trails', 'trail_days', 'trail_steps', 'user_trail_enrollments', 'user_trail_progress', 'trail_day_completions', 'session_trail_credits')
 ORDER BY table_name;
 
@@ -537,10 +537,10 @@ ORDER BY table_name;
 SELECT typname FROM pg_type WHERE typname IN ('trail_type', 'trail_intensity', 'trail_step_type', 'trail_enrollment_status');
 
 -- Verify assessment columns exist
-SELECT column_name FROM information_schema.columns 
+SELECT column_name FROM information_schema.columns
 WHERE table_name = 'questions' AND column_name = 'is_assessment';
 
-SELECT column_name FROM information_schema.columns 
+SELECT column_name FROM information_schema.columns
 WHERE table_name = 'user_global_stats' AND column_name IN ('assessment_completed_at', 'assessment_score');
 
 -- Verify seed data

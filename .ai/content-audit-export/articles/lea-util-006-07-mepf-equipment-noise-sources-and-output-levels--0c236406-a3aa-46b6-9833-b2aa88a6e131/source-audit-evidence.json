@@ -1,0 +1,234 @@
+{
+  "schema_version": "source-audit-evidence-v1-local-first",
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-045-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T17:18:00.000+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "0c236406-a3aa-46b6-9833-b2aa88a6e131",
+    "slug": "lea-util-006-07-mepf-equipment-noise-sources-and-output-levels",
+    "title": "Noise control in mechanical, electrical, plumbing, and fire",
+    "article_folder": ".ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131",
+    "candidate_path": ".ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/candidate.md",
+    "candidate_sha256": "sha256:8782f2da56184e911b5966b342d7179d6209dfb21d55106fbc2ed2c520bc49b9",
+    "normalized_sha256": "sha256:8782f2da56184e911b5966b342d7179d6209dfb21d55106fbc2ed2c520bc49b9",
+    "linked_questions_sha256": "sha256:05d2e32206b263fa2d39bef47bc27ef8095b2b3e7c2c5a7a17089aa8caeb1fd8",
+    "sources_sha256": "sha256:39968055937543131d5471e03255002c9c963b3befa0cdb8ee449c3aa39341d8"
+  },
+  "classification": {
+    "content_domain": "LEA Utilities - MEPF equipment noise and architectural acoustics",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high_value_utilities_acoustics_noise_control",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 15,
+    "question_edits_created": [
+      "0b8bb1cc-a6cb-4989-9bf2-0aff3b695ab4",
+      "31a3dde5-2d63-4543-8d86-cecc572615d5",
+      "32e37f8f-3cc7-44e7-82ad-21cfaaaedf2a",
+      "5baaab42-9918-4909-ae15-0068a8a9356d",
+      "e494ec90-a6c1-41fd-b156-f1a6252e26f1",
+      "84992241-8a45-400a-91ad-123866d139c2",
+      "cb6cfb1d-6d74-4bc6-9ab1-ef3b427b42b2",
+      "059c8c19-5d80-46a5-b810-b2b70f05310c",
+      "4c01e366-2b98-4197-b9af-c1f2acd0e89c",
+      "a4bafc8a-9b31-43fb-9cf8-5bd8837f5c40",
+      "29605ab9-d42e-4436-a818-4c1a865d9980",
+      "4b21976b-389f-46fc-9ba2-7be7f612449f",
+      "c9d72107-2797-4191-91f6-ad26abb9bdc2",
+      "bd1044d6-dc61-418f-b931-e0ae71527d6b",
+      "e04b845f-478f-4d7a-a2c2-7b23178781fa"
+    ]
+  },
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/question-edits/0b8bb1cc-a6cb-4989-9bf2-0aff3b695ab4.json",
+      ".ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/question-edits/31a3dde5-2d63-4543-8d86-cecc572615d5.json",
+      ".ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/question-edits/32e37f8f-3cc7-44e7-82ad-21cfaaaedf2a.json",
+      ".ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/question-edits/5baaab42-9918-4909-ae15-0068a8a9356d.json",
+      ".ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/question-edits/e494ec90-a6c1-41fd-b156-f1a6252e26f1.json",
+      ".ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/question-edits/84992241-8a45-400a-91ad-123866d139c2.json",
+      ".ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/question-edits/cb6cfb1d-6d74-4bc6-9ab1-ef3b427b42b2.json",
+      ".ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/question-edits/059c8c19-5d80-46a5-b810-b2b70f05310c.json",
+      ".ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/question-edits/4c01e366-2b98-4197-b9af-c1f2acd0e89c.json",
+      ".ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/question-edits/a4bafc8a-9b31-43fb-9cf8-5bd8837f5c40.json",
+      ".ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/question-edits/29605ab9-d42e-4436-a818-4c1a865d9980.json",
+      ".ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/question-edits/4b21976b-389f-46fc-9ba2-7be7f612449f.json",
+      ".ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/question-edits/c9d72107-2797-4191-91f6-ad26abb9bdc2.json",
+      ".ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/question-edits/bd1044d6-dc61-418f-b931-e0ae71527d6b.json",
+      ".ai/content-audit-export/articles/lea-util-006-07-mepf-equipment-noise-sources-and-output-levels--0c236406-a3aa-46b6-9833-b2aa88a6e131/question-edits/e04b845f-478f-4d7a-a2c2-7b23178781fa.json"
+    ]
+  },
+  "raw_sources": [
+    {
+      "source_id": "handouts-lighting-acoustics-local-raw-pdf--b045",
+      "label": "Handouts for Lighting and Acoustics - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Handouts for Lighting _ Acoustics.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Handouts for Lighting _ Acoustics.pdf",
+      "raw_pdf_sha256": "sha256:ba9a313f0fa4072866d2f922a34b24ef91a07e58128f67cd12c7b901c91d33bb",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Handouts for Lighting _ Acoustics.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Handouts for Lighting _ Acoustics.md",
+      "refined_markdown_sha256": "sha256:807e9a5c684407cee85c75e33290d25971f924c8b923e1b86e52d0b5ec061bd3",
+      "source_locator": "Handouts refined markdown lines 23-35, 102-114, 216-224, 262-312",
+      "checked_markdown_lines": [
+        "Handouts refined markdown lines 23-35",
+        "Handouts refined markdown lines 102-114",
+        "Handouts refined markdown lines 216-224",
+        "Handouts refined markdown lines 262-312"
+      ]
+    },
+    {
+      "source_id": "salvan-architectural-utilities-3-lighting-acoustics-local-raw-pdf--b045",
+      "label": "George Salvan Architectural Utilities 3 Lighting and Acoustics - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George-Salvan-Architectural-Utilities-3-Lighting-and-Acoustics.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George-Salvan-Architectural-Utilities-3-Lighting-and-Acoustics.pdf",
+      "raw_pdf_sha256": "sha256:935c71b1dc8fa190a945570c6a4aab0888096f6a8cbdecc75f53dc09b57fdab6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George-Salvan-Architectural-Utilities-3-Lighting-and-Acoustics.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George-Salvan-Architectural-Utilities-3-Lighting-and-Acoustics.md",
+      "refined_markdown_sha256": "sha256:72f99f7131415798ceb8e0c867af177091e85775c5f2c20e5463ceefad246231",
+      "source_locator": "Salvan Utilities 3 refined markdown lines 908-1132, 1527-1605, 1860-1936",
+      "checked_markdown_lines": [
+        "Salvan Utilities 3 refined markdown lines 908-1132",
+        "Salvan Utilities 3 refined markdown lines 1527-1605",
+        "Salvan Utilities 3 refined markdown lines 1860-1936"
+      ]
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "handouts-lighting-acoustics-local-raw-pdf--b045",
+      "label": "Handouts for Lighting and Acoustics - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Handouts for Lighting _ Acoustics.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Handouts for Lighting _ Acoustics.pdf",
+      "raw_pdf_sha256": "sha256:ba9a313f0fa4072866d2f922a34b24ef91a07e58128f67cd12c7b901c91d33bb",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Handouts for Lighting _ Acoustics.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Handouts for Lighting _ Acoustics.md",
+      "refined_markdown_sha256": "sha256:807e9a5c684407cee85c75e33290d25971f924c8b923e1b86e52d0b5ec061bd3",
+      "source_locator": "Handouts refined markdown lines 23-35, 102-114, 216-224, 262-312",
+      "checked_markdown_lines": [
+        "Handouts refined markdown lines 23-35",
+        "Handouts refined markdown lines 102-114",
+        "Handouts refined markdown lines 216-224",
+        "Handouts refined markdown lines 262-312"
+      ]
+    },
+    {
+      "source_id": "salvan-architectural-utilities-3-lighting-acoustics-local-raw-pdf--b045",
+      "label": "George Salvan Architectural Utilities 3 Lighting and Acoustics - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George-Salvan-Architectural-Utilities-3-Lighting-and-Acoustics.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George-Salvan-Architectural-Utilities-3-Lighting-and-Acoustics.pdf",
+      "raw_pdf_sha256": "sha256:935c71b1dc8fa190a945570c6a4aab0888096f6a8cbdecc75f53dc09b57fdab6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George-Salvan-Architectural-Utilities-3-Lighting-and-Acoustics.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George-Salvan-Architectural-Utilities-3-Lighting-and-Acoustics.md",
+      "refined_markdown_sha256": "sha256:72f99f7131415798ceb8e0c867af177091e85775c5f2c20e5463ceefad246231",
+      "source_locator": "Salvan Utilities 3 refined markdown lines 908-1132, 1527-1605, 1860-1936",
+      "checked_markdown_lines": [
+        "Salvan Utilities 3 refined markdown lines 908-1132",
+        "Salvan Utilities 3 refined markdown lines 1527-1605",
+        "Salvan Utilities 3 refined markdown lines 1860-1936"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "b045-noise-01",
+      "claim_text": "Sound is treated as a longitudinal pressure wave with audible sound levels and frequency range described in the checked handout.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "Handouts for Lighting and Acoustics - local raw PDF",
+        "locator": "Handouts refined markdown lines 23-35",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Handouts for Lighting _ Acoustics.pdf",
+        "raw_pdf_sha256": "sha256:ba9a313f0fa4072866d2f922a34b24ef91a07e58128f67cd12c7b901c91d33bb",
+        "quoted_pdf_excerpt": "0 dB to 140 dB; 15 Hz to 20,000 Hz"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b045-noise-02",
+      "claim_text": "Building materials affect whether sound is reflected, absorbed, or transmitted.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "Handouts for Lighting and Acoustics - local raw PDF",
+        "locator": "Handouts refined markdown lines 102-114",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Handouts for Lighting _ Acoustics.pdf",
+        "raw_pdf_sha256": "sha256:ba9a313f0fa4072866d2f922a34b24ef91a07e58128f67cd12c7b901c91d33bb",
+        "quoted_pdf_excerpt": "reflected, absorbed or transmitted"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b045-noise-03",
+      "claim_text": "High-density vinyl barrier can block sound transmission through assemblies and can wrap pipes or ducts to damp vibration.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "Handouts for Lighting and Acoustics - local raw PDF",
+        "locator": "Handouts refined markdown lines 216-224",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Handouts for Lighting _ Acoustics.pdf",
+        "raw_pdf_sha256": "sha256:ba9a313f0fa4072866d2f922a34b24ef91a07e58128f67cd12c7b901c91d33bb",
+        "quoted_pdf_excerpt": "block transmission; pipe and duct wrap"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b045-noise-04",
+      "claim_text": "RT60 depends on room volume and total absorption, with the checked handout giving RT60 = 0.049 V / a.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "Handouts for Lighting and Acoustics - local raw PDF",
+        "locator": "Handouts refined markdown lines 262-312",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Handouts for Lighting _ Acoustics.pdf",
+        "raw_pdf_sha256": "sha256:ba9a313f0fa4072866d2f922a34b24ef91a07e58128f67cd12c7b901c91d33bb",
+        "quoted_pdf_excerpt": "RT60 = .049 V/a"
+      },
+      "blockers": []
+    }
+  ],
+  "removed_or_rewritten_material": [
+    "Removed exported UI block marker text from normalized article content where present.",
+    "Rewrote linked question files to stay inside checked local raw-source evidence.",
+    "Replaced derivative-only numeric examples and vendor-specific claims with checked source-family statements."
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdf_first": true,
+    "derivative_layers_used_only_as_locators": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "checked_raw_pdf_families": [
+      "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Handouts for Lighting _ Acoustics.pdf",
+      "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George-Salvan-Architectural-Utilities-3-Lighting-and-Acoustics.pdf"
+    ],
+    "blockers": []
+  },
+  "gate_results": {
+    "source_audit": "PASS",
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_validation": "PASS",
+    "question_edit_count_check": "PASS",
+    "scoped_json_parse": "PASS",
+    "marker_scan": "PASS",
+    "source_hash_check": "PASS",
+    "stale_compose_error_check": "PASS"
+  },
+  "source_safe_repair": {
+    "status": "COMPLETE_LOCAL_VALIDATED",
+    "article_normalized_rewritten": true,
+    "sources_json_updated": true,
+    "source_audit_evidence_updated": true,
+    "question_edits_created": 15,
+    "blockers": []
+  },
+  "blockers": []
+}

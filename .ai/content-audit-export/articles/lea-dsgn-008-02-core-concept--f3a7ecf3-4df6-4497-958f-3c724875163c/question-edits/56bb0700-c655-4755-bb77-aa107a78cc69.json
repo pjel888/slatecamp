@@ -1,0 +1,32 @@
+{
+  "question_id": "56bb0700-c655-4755-bb77-aa107a78cc69",
+  "baseline_hash": "sha256:fa1df974088746fbfc6a4df85789432fc9bd8fa9ba7e3a005e8f59e3c0e5abcc",
+  "reason": "Batch 003 source audit corrected the wrong Group D storage premise. PD 1096 classifies Group D as Institutional and Group G as Storage and Hazardous; RA 9514 supplies protected-exit and special-hazard rules.",
+  "approved_by": "codex-local-source-audit-batch-003",
+  "approved_at": "2026-05-10T18:00:00+08:00",
+  "proposed": {
+    "text": "A laboratory contains a Group G high-hazard paint storage room beside a Group B office. What source-backed protection should the architect coordinate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No separation because both rooms are in one building"
+      },
+      {
+        "id": "b",
+        "text": "1-hour ordinary corridor separation"
+      },
+      {
+        "id": "c",
+        "text": "2-hour Group D storage separation"
+      },
+      {
+        "id": "d",
+        "text": "At least four-hour fire resistance, automatic fire protection, or both; high-hazard use requires both"
+      }
+    ],
+    "correct_option_id": "d",
+    "rationale": "RA 9514 special-hazard provisions apply to storage hazards greater than normal occupancy; high-hazard uses require both rated construction and automatic protection.",
+    "explanation": "The edit aligns with PD 1096 Group G and RA 9514 Section 10.2.6.10(A).",
+    "code_citation": "PD 1096 Rule VII Group G; RA 9514 2019 RIRR Section 10.2.6.10(A)"
+  }
+}

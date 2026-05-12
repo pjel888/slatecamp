@@ -862,7 +862,7 @@ STEP 4: CROSS-REFERENCE
   └─ Single source of truth: constants in `config/constants/{law-id}.ts`
 
 STEP 5: PEER REVIEW
-  └─ Legal citations must be verified by a licensed architect or 
+  └─ Legal citations must be verified by a licensed architect or
      cross-referenced against the actual law document text
 ```
 

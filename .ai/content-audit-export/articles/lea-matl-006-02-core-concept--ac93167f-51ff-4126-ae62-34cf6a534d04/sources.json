@@ -1,20 +1,32 @@
 {
   "article_id": "ac93167f-51ff-4126-ae62-34cf6a534d04",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:b4180566cfa4960446cd964c3d86bef8d95d49a724a3c6a2f3540ab06d0abf5f",
-  "source_count": 1,
+  "sources_hash": "sha256:9b0cdeb130563855be96d9efd28e60a6fc1acfd4b165ad6da0b8869a2a0346fa",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "8be15e01-be62-40c1-a299-d9beef000f4e",
+      "source_id": "bci-5e-b078",
       "article_id": "ac93167f-51ff-4126-ae62-34cf6a534d04",
-      "label": "ASTM D3737 (Standard Practice for Establishing Allowable Stresses for Round Timber Members), NSCP 2015 Chapter 4 (General Design Requirements) and Chapter 6 (Timber)",
+      "label": "Building Construction Illustrated, 5th Edition",
       "url": null,
-      "source_type": "primary_law",
-      "description": "NSCP 2015 Wind Load Map Appendix, Philippine Timber Standards, Truss Design Guides (TPI, BCSI)",
-      "is_verified": false,
+      "source_type": "primary_building_construction_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-078-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf; raw_pdf_sha256=sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md; refined_markdown_sha256=sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a; checked_locator=BCI refined markdown lines 6614-6658 and 7376-7468; raw PDF pages 203 and 222-224 checked by local PyMuPDF extraction",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:00.685475+00:00",
-      "updated_at": "2026-03-24T04:34:00.685475+00:00"
+      "created_at": "2026-05-12T05:20:00.000+08:00",
+      "updated_at": "2026-05-12T05:20:00.000+08:00"
+    },
+    {
+      "source_id": "salvan-building-materials-b078",
+      "article_id": "ac93167f-51ff-4126-ae62-34cf6a534d04",
+      "label": "George Salvan Architectural Building Materials",
+      "url": null,
+      "source_type": "primary_building_materials_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-078-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf; raw_pdf_sha256=sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md; refined_markdown_sha256=sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42; checked_locator=Salvan raw PDF/source family checked for Batch 078; no article claim depends on Salvan-only truss span tables",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-12T05:20:00.000+08:00",
+      "updated_at": "2026-05-12T05:20:00.000+08:00"
     }
   ]
 }

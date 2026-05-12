@@ -807,11 +807,11 @@ Escape:     Collapse expanded sidebar, return focus to toggle
 
 **Motion:**
 ```tsx
-const prefersReducedMotion = 
+const prefersReducedMotion =
   window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 // If reduced motion: instant state changes, no transitions
-// All sidebar width transitions, fade animations, and backdrop 
+// All sidebar width transitions, fade animations, and backdrop
 // fade must respect this preference.
 ```
 

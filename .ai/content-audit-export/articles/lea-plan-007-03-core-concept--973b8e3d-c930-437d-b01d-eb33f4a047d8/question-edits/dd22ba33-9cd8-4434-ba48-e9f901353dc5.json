@@ -1,0 +1,79 @@
+{
+  "question_id": "dd22ba33-9cd8-4434-ba48-e9f901353dc5",
+  "baseline_hash": "sha256:277142e71cfd2477a64e6ead60d0b682ae4fee4f0b90f44f84bbc9b8585f9df7",
+  "action": "replace",
+  "reason": "source-audited-article-batch-086-local-first aligned linked question with checked local raw PDF/source evidence for lea-plan-007-03-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-086",
+  "approved_at": "2026-05-12T09:30:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "973b8e3d-c930-437d-b01d-eb33f4a047d8",
+    "parent_article_slug": "lea-plan-007-03-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "EO 90 refined markdown lines 19-43 and 79-106; RA 11201 IRR lines 40-44 and 261-263; RA 7160 lines 155-162.",
+    "checked_markdown_lines": [
+      "EO 90 refined markdown lines 19-27, 30-43, 51-63, and 79-106; raw PDF pages 1, 2, 3, 4, and 6 checked by local PyMuPDF extraction.",
+      "RA 11201 IRR refined markdown lines 40-44, 68-75, 93-100, 116-121, 134-162, 261-263, 280-289, 335, 389, and 392; raw PDF pages 3, 6, 7, 13, 15, 19, and 35 checked by local PyMuPDF extraction.",
+      "RA 7160 refined markdown lines 155-162; raw PDF page 12 checked by local PyMuPDF extraction."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "eo-90-shelter-program-b086",
+        "label": "EO 90 - NGO for Shelter Program",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/EO/EO 90 NGO for Shelter Program.pdf",
+        "sha256": "sha256:22b0d40bfdd91f9636f7e57df542496b19fcca84fc7d48df4911a9e65d7cd501",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/EO/EO 90 NGO for Shelter Program.md",
+        "refined_markdown_sha256": "sha256:0edf1d2a41c71751479f8bbe0d7ff31adcda7b8b544f59dc88f3de9f6319d43b",
+        "locator": "EO 90 refined markdown lines 19-27, 30-43, 51-63, and 79-106; raw PDF pages 1, 2, 3, 4, and 6 checked by local PyMuPDF extraction."
+      },
+      {
+        "source_id": "ra-11201-irr-dhsud-act-b086",
+        "label": "RA 11201 IRR - DHSUD Act Implementing Rules",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf",
+        "sha256": "sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md",
+        "refined_markdown_sha256": "sha256:40f1a5041c69b3a4aea7c8ba138a9d570bc686bea48aa5618ea6423a6a719528",
+        "locator": "RA 11201 IRR refined markdown lines 40-44, 68-75, 93-100, 116-121, 134-162, 261-263, 280-289, 335, 389, and 392; raw PDF pages 3, 6, 7, 13, 15, 19, and 35 checked by local PyMuPDF extraction."
+      },
+      {
+        "source_id": "ra-7160-local-government-code-b086",
+        "label": "RA 7160 - The Local Government Code",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7160/RA 7160 The Local Government Code.pdf",
+        "sha256": "sha256:e270e8bc7bd84ba8ad7b6fe6780c12a3e5a6103e2b9395db13084266a5ff1fff",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7160/RA 7160 The Local Government Code.md",
+        "refined_markdown_sha256": "sha256:9f95493bd12c7f4b0989913d7e8783cdbc6235891fea9977c2aa77238c3dd392",
+        "locator": "RA 7160 refined markdown lines 155-162; raw PDF page 12 checked by local PyMuPDF extraction."
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 086 local raw-source-audited housing_finance_institutions scope."
+  },
+  "proposed": {
+    "text": "Which answer is source-safe for a private-sector employee housing-loan stem under EO 90?",
+    "options": [
+      {
+        "id": "a",
+        "text": "SSS"
+      },
+      {
+        "id": "b",
+        "text": "GSIS"
+      },
+      {
+        "id": "c",
+        "text": "SHFC/CMP"
+      },
+      {
+        "id": "d",
+        "text": "HLURB zoning ratification"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "EO 90 assigns private-sector employee housing loans to SSS in the checked scope.",
+    "explanation": "EO 90 assigns private-sector employee housing loans to SSS in the checked scope.",
+    "code_citation": "EO 90 - NGO for Shelter Program; RA 11201 IRR - DHSUD Act Implementing Rules; RA 7160 - The Local Government Code",
+    "bloom_level": "understand",
+    "application_context": "source_audited_local_first_batch_086",
+    "practice_context": [],
+    "difficulty": 0.55
+  }
+}

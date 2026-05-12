@@ -1,0 +1,72 @@
+{
+  "question_id": "28c5e131-a88c-4824-a632-f4fe77b846d0",
+  "baseline_hash": "sha256:37d4a873b60a2be353f58bf49f5b5c805811d8b466b814b48b012e42b3143f7e",
+  "action": "replace",
+  "reason": "source-audited-article-batch-017-local-first rewrote linked question to match the locally checked UAP Code of Ethics source for lea-prac-eth-003-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-017",
+  "approved_at": "2026-05-10T23:30:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "9bc92dcd-8cce-4970-9111-13e21a72fb68",
+    "parent_article_slug": "lea-prac-eth-003-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UAP Document Code of Ethics, Code introduction and Section 1, raw markdown lines 23-44",
+    "checked_markdown_lines": [
+      "raw markdown lines 23-29",
+      "raw markdown lines 31-44"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+        "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+        "source_id": "uap-document-code-of-ethics",
+        "locator": "UAP Document Code of Ethics, Code introduction and Section 1, raw markdown lines 23-44"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
+        "sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
+        "source_id": "uap-document-code-of-ethics-raw-markdown",
+        "locator": "UAP Document Code of Ethics, Code introduction and Section 1, raw markdown lines 23-44"
+      }
+    ],
+    "local_source_safe_action": "Question was rewritten to avoid unverified PRBoA-resolution, hierarchy, or enforcement claims and to use only statements anchored in the raw UAP Code of Ethics source."
+  },
+  "proposed": {
+    "text": "Which relationship does Section 1 of the Code address?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The architect's responsibilities in relation to the people"
+      },
+      {
+        "id": "b",
+        "text": "The architect's responsibilities in relation to the contractor only"
+      },
+      {
+        "id": "c",
+        "text": "The architect's responsibilities in relation to manufacturers only"
+      },
+      {
+        "id": "d",
+        "text": "The architect's responsibilities in relation to heirs and estates only"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "Section 1 is titled responsibilities in relation to the people.",
+    "explanation": "Section 1 is titled responsibilities in relation to the people.",
+    "code_citation": "UAP Document Code of Ethics, lines 31-33",
+    "bloom_level": "understand",
+    "application_context": "professional_practice",
+    "practice_context": [
+      "Code of Ethical Conduct",
+      "Professional ethics"
+    ],
+    "difficulty": 0.7,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-ETH-003-007"
+  }
+}

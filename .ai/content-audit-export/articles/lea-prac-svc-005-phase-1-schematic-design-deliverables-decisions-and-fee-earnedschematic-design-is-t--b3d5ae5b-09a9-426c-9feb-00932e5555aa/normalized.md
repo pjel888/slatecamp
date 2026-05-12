@@ -1,85 +1,31 @@
+# Schematic Design Under SPP 202
 
+## Source Scope
 
-## Board Exam Quick Check
+Use SPP Document 202 for the Schematic Design scope. Use UAP Document 401-402 only for the payment milestone tied to completion of Schematic Design Services.
 
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
-
-**Common mistake:** treating a familiar keyword in **Lea Prac Svc 005 Phase 1 Schematic Design Deliverables Decisions And Fee Earnedschematic Design Is The Second Phase Under Spp 2022 Following Project Definition This Phase Translates The Project Defini** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
-
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
-## Phase 1: Schematic Design: Deliverables, Decisions, and Fee EarnedSchematic Design is the second phase under SPP 2022 following Project Definition. This phase translates the project definition and space program into preliminary design solutions through conceptual plans, cost estimates, and key design decisions.
 ## Learning Goal
 
-After reading this article, you should be able to:
+For LEA items, recognize Schematic Design as the phase that converts the Project Definition output into conceptual design studies for owner review. Keep it separate from Design Development and Contract Documents.
 
-- Describe the deliverables and activities of Schematic Design (Phase 2 under SPP 202): conceptual plans, elevations, and preliminary cost estimates.
-- Identify the key design decisions made during Schematic Design: project delivery method, design concept, and updated SPPCC.
-- Explain the fee allocation for Schematic Design under SPP 202 and how it relates to the total design fee.
-- Apply Schematic Design phase requirements to LEA scenarios involving owner approval, cost feedback, and design progression.
+## Where Schematic Design Fits
 
-### Schematic Design Deliverables and Activities
+SPP 202 lists Schematic Design after Project Definition. Some study notes call it a first design phase, but the source sequence still begins with Project Definition. In exam answers, use the source wording: schematic design studies are derived from the Project Definition Phase and lead to conceptual plans.
 
-During schematic design, the architect evaluates the owner's program, schedule, budget, and site to propose project delivery methods. The architect prepares initial line drawings representing design studies that lead to a recommended conceptual solution. These drawings present the design concept with sufficient clarity for owner review and approval. The architect also submits to the owner an updated Statement of the Probable Project Construction Cost (SPPCC) based on current cost parameters, providing the owner with cost feedback at this early stage.
+## Source-Safe Duties
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-prac-svc-005-phase-1-schematic-desig", type="image", caption="SPP Doc 202 Six-Phase Framework — Schematic Design Phase in Context", description="Process flow highlighting Phase 2 (Schematic Design) within the six-phase SPP Doc 202 framework: Project Definition → Schematic Design (15% fee, conceptual plans, elevations, cost estimates, delivery method decisions) → Design Development → Contract Documents → Bidding → Construction Admin.", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+| Schematic Design duty | What to remember |
+|---|---|
+| Evaluate the project inputs | The architect evaluates the owner's program, schedule, budget, and site. |
+| Propose delivery methods | The architect proposes methods of project delivery. |
+| Prepare initial line drawings | These drawings represent design studies leading to a recommended solution. |
+| Describe the project for approval | The general description and recommended solution are for owner approval. |
+| Submit the SPPCC | The architect submits a Statement of the Probable Project Construction Cost based on current cost parameters. |
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="KeyValues" status="preserved"]
-Extracted summary:
-- Props: pairs="{[[\"SPP Document\", \"201 (Pre-Design), 202 (Regular Design), 203 (Specialized)\"], [\"Compensation\", \"MDPE, Lump Sum, Per Diem, Professional Fee + Expenses\"], [\"Fee Basis\", \"Percentage of PCC or MDPE\"]]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+## Payment Milestone
 
-### Key Decisions and Approvals
+UAP Document 401-402 states that upon completion of Schematic Design Services, the architect is paid a sum equal to 15% of the Basic Fee, computed on a reasonable estimated construction cost and less the mobilization amount already paid. Treat this as a payment milestone, not as a substitute for knowing the actual SPP 202 deliverables.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="KeyValues" status="preserved"]
-Extracted summary:
-- Props: pairs="{[[\"SPP Document\", \"201 (Pre-Design), 202 (Regular Design), 203 (Specialized)\"], [\"Compensation\", \"MDPE, Lump Sum, Per Diem, Professional Fee + Expenses\"], [\"Fee Basis\", \"Percentage of PCC or MDPE\"]]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-Schematic design requires critical decisions regarding massing, orientation, site utilization, structural systems, and project delivery approach. The owner must approve the schematic design concept and the probable construction cost estimate before the architect proceeds to design development. These approvals are essential, as changes to the approved concept in later phases typically result in additional compensation claims and schedule delays.
+## Exam Trap
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Pattern:** Expect scenario-based questions where you must determine which phase a specific deliverable belongs to. Key percentages to memorize: Schematic Design (15%), Design Development (35%), Contract Documents (50%).
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **LEA Pattern:** Expect scenario-based questions where you must determine which phase a specific deliverable belongs to. Key percentages to memorize: Schematic Design (15%), Design Development (35%), Contract Documents (50%).
-[/SLATECAMP_UI_BLOCK]
-### Fee Calculation and Milestone
-
-[SLATECAMP_UI_BLOCK:ui_0006 component="ProcessFlow" status="preserved"]
-Extracted summary:
-- Props: steps="{[\"Identify client needs\", \"Define scope of services\", \"Prepare proposal/contract\", \"Execute pre-design activities\", \"Deliver phase outputs\", \"Submit for owner approval\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0007 component="ProcessFlow" status="preserved"]
-Extracted summary:
-- Props: steps="{[\"Identify client needs\", \"Define scope of services\", \"Prepare proposal/contract\", \"Execute pre-design activities\", \"Deliver phase outputs\", \"Submit for owner approval\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-Owner approval of schematic design is required before proceeding to the next phase. This milestone payment reflects the significance of this conceptual phase but represents a relatively modest portion of total fees compared to later phases. The architect must clearly document the scope of schematic design work and obtain formal approval to mark the completion of this phase and transition to design development.
-
----
-
-## Related Articles
-
-- [SPP Doc 202 Six-Phase Framework](lea-prac-svc-004)
-- [Schematic Design Phase](lea-prac-svc-005)
-- [Design Development Phase](lea-prac-svc-006)
-- [Contract Documents Phase](lea-prac-svc-007)
-- [Bidding and Construction Admin](lea-prac-svc-008)
-- [Pre-Design Services](lea-prac-svc-001)
-- [Specialized Services](lea-prac-svc-009)
-- [Design-Build Delivery](lea-prac-svc-019)
-- [Fee Compensation Methods](lea-prac-cmp-001)
-- [Owner-Architect Agreement](lea-prac-ctr-001)
+If an option mentions outline specifications, system diagrams, detailed construction drawings, or permit sets, it is no longer Schematic Design. Those belong to later phases. The Schematic Design clue is conceptual plans supported by initial line drawings, owner approval, and an SPPCC based on current cost parameters.

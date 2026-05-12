@@ -1,0 +1,48 @@
+{
+  "question_id": "d7ae6d58-6111-4c88-9152-b2dadff9f375",
+  "baseline_hash": "sha256:4a992c0b93d3c7cc0ce44f3e29f688e458a81a114916a3341a53603536c4fc5f",
+  "action": "replace",
+  "reason": "source-audited-article-batch-039-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-039",
+  "approved_at": "2026-05-11T13:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-039-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 3946-3997"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 1213"
+  },
+  "proposed": {
+    "text": "How far must the proscenium wall extend above the auditorium roof?",
+    "options": [
+      {
+        "id": "b039-1a46-28-a",
+        "text": "At least 1.20 m"
+      },
+      {
+        "id": "b039-1a46-28-b",
+        "text": "At least 600 mm"
+      },
+      {
+        "id": "b039-1a46-28-c",
+        "text": "At least 900 mm"
+      },
+      {
+        "id": "b039-1a46-28-d",
+        "text": "At least 2.40 m"
+      }
+    ],
+    "correct_option_id": "b039-1a46-28-a",
+    "rationale": "Correct answer: At least 1.20 m. This is directly supported by PD 1096 2004 Revised IRR, Section 1213.",
+    "explanation": "The Batch 039 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 1213.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 1213"
+  }
+}

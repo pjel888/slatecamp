@@ -1,0 +1,219 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "artifact_type": "article_source_audit",
+  "batch_id": "source-audited-article-batch-037-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T13:16:58+08:00",
+  "target": {
+    "article_id": "e5cd1de8-d1e5-4173-9dd2-985eda1562a9",
+    "slug": "sanitation-and-water-supply",
+    "candidate_sha256": "sha256:d18b0e2cef4688d0b9eb3f85182a86c52683f1d0bce0373b1c9c519135f80328",
+    "normalized_sha256": "sha256:d18b0e2cef4688d0b9eb3f85182a86c52683f1d0bce0373b1c9c519135f80328"
+  },
+  "classification": {
+    "requires_raw_pdf_audit": true,
+    "source_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "derivative_layer_role": "locator aid only",
+    "legal_or_code_sensitive": true
+  },
+  "paths": {
+    "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/sanitation-and-water-supply--e5cd1de8-d1e5-4173-9dd2-985eda1562a9",
+    "normalized_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/sanitation-and-water-supply--e5cd1de8-d1e5-4173-9dd2-985eda1562a9/normalized.md",
+    "candidate_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/sanitation-and-water-supply--e5cd1de8-d1e5-4173-9dd2-985eda1562a9/candidate.md",
+    "sources_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/sanitation-and-water-supply--e5cd1de8-d1e5-4173-9dd2-985eda1562a9/sources.json",
+    "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/sanitation-and-water-supply--e5cd1de8-d1e5-4173-9dd2-985eda1562a9/question-edits"
+  },
+  "raw_sources": [
+    {
+      "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+      "label": "PD 1096 2004 Revised IRR - DPWH Official",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "source_locator": "PD 1096 RIRR 2004 DPWH Official refined markdown lines 968-990; PD 1096 RIRR 2004 DPWH Official refined markdown lines 3789-3897",
+      "checked_markdown_lines": [
+        "PD 1096 RIRR 2004 DPWH Official refined markdown lines 968-990",
+        "PD 1096 RIRR 2004 DPWH Official refined markdown lines 3789-3897"
+      ]
+    },
+    {
+      "source_id": "rnpc-revised-national-plumbing-code-local",
+      "label": "Revised National Plumbing Code of the Philippines",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf",
+      "raw_pdf_sha256": "sha256:c4ec30ec3ffe3b39513a033ebc2cfa614bd201d25c5578e1847e7f359fed3f5d",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Revised National Plumbing Code of the Philippines.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Revised National Plumbing Code of the Philippines.md",
+      "refined_markdown_sha256": "sha256:7cea224bfc6c54d0883fe69c89b97cf134e45acaab6c8950b8af3621059c9a91",
+      "source_locator": "Revised National Plumbing Code refined markdown lines 75-110; Revised National Plumbing Code refined markdown lines 147-196; Revised National Plumbing Code refined markdown lines 224-251; Revised National Plumbing Code refined markdown lines 453-477; Revised National Plumbing Code refined markdown lines 1338-1370; Revised National Plumbing Code refined markdown lines 3390-3419; Revised National Plumbing Code refined markdown lines 3660-3674; Revised National Plumbing Code refined markdown lines 4213-4260",
+      "checked_markdown_lines": [
+        "Revised National Plumbing Code refined markdown lines 75-110",
+        "Revised National Plumbing Code refined markdown lines 147-196",
+        "Revised National Plumbing Code refined markdown lines 224-251",
+        "Revised National Plumbing Code refined markdown lines 453-477",
+        "Revised National Plumbing Code refined markdown lines 1338-1370",
+        "Revised National Plumbing Code refined markdown lines 3390-3419",
+        "Revised National Plumbing Code refined markdown lines 3660-3674",
+        "Revised National Plumbing Code refined markdown lines 4213-4260"
+      ]
+    },
+    {
+      "source_id": "pd-856-code-on-sanitation-local",
+      "label": "PD 856 Code on Sanitation of the Philippines",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-856/phi201040.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-856/phi201040.pdf",
+      "raw_pdf_sha256": "sha256:aae564835045721c19b32bdbb2c7e9bf821ee3a52d26d824f853b0ae2c8b1cbf",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-856/phi201040.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-856/phi201040.md",
+      "refined_markdown_sha256": "sha256:c321fd3ea87a67da56443289b09c0ff33092174c0e57c87ed6f8d380793ad39e",
+      "source_locator": "PD 856 refined markdown lines 195-198; PD 856 refined markdown lines 1067-1138; PD 856 refined markdown lines 1162-1267",
+      "checked_markdown_lines": [
+        "PD 856 refined markdown lines 195-198",
+        "PD 856 refined markdown lines 1067-1138",
+        "PD 856 refined markdown lines 1162-1267"
+      ]
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+      "label": "PD 1096 2004 Revised IRR - DPWH Official",
+      "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "checked_markdown_lines": [
+        "PD 1096 RIRR 2004 DPWH Official refined markdown lines 968-990",
+        "PD 1096 RIRR 2004 DPWH Official refined markdown lines 3789-3897"
+      ]
+    },
+    {
+      "source_id": "rnpc-revised-national-plumbing-code-local",
+      "label": "Revised National Plumbing Code of the Philippines",
+      "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf",
+      "raw_pdf_sha256": "sha256:c4ec30ec3ffe3b39513a033ebc2cfa614bd201d25c5578e1847e7f359fed3f5d",
+      "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Revised National Plumbing Code of the Philippines.md",
+      "refined_markdown_sha256": "sha256:7cea224bfc6c54d0883fe69c89b97cf134e45acaab6c8950b8af3621059c9a91",
+      "checked_markdown_lines": [
+        "Revised National Plumbing Code refined markdown lines 75-110",
+        "Revised National Plumbing Code refined markdown lines 147-196",
+        "Revised National Plumbing Code refined markdown lines 224-251",
+        "Revised National Plumbing Code refined markdown lines 453-477",
+        "Revised National Plumbing Code refined markdown lines 1338-1370",
+        "Revised National Plumbing Code refined markdown lines 3390-3419",
+        "Revised National Plumbing Code refined markdown lines 3660-3674",
+        "Revised National Plumbing Code refined markdown lines 4213-4260"
+      ]
+    },
+    {
+      "source_id": "pd-856-code-on-sanitation-local",
+      "label": "PD 856 Code on Sanitation of the Philippines",
+      "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-856/phi201040.pdf",
+      "raw_pdf_sha256": "sha256:aae564835045721c19b32bdbb2c7e9bf821ee3a52d26d824f853b0ae2c8b1cbf",
+      "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-856/phi201040.md",
+      "refined_markdown_sha256": "sha256:c321fd3ea87a67da56443289b09c0ff33092174c0e57c87ed6f8d380793ad39e",
+      "checked_markdown_lines": [
+        "PD 856 refined markdown lines 195-198",
+        "PD 856 refined markdown lines 1067-1138",
+        "PD 856 refined markdown lines 1162-1267"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "pd1096-sanitation-core",
+      "claim_text": "PD 1096 RIRR Section 901 lists water supply, plumbing installation, wastewater disposal, storm drainage, vermin control, noise abatement, and health protection as building sanitation requirements.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "pd-1096-rirr-2004-dpwh-official-local",
+          "rnpc-revised-national-plumbing-code-local",
+          "pd-856-code-on-sanitation-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "quoted_pdf_excerpt": "PD 1096 RIRR Section 901 lists water supply, plumbing installation, wastewater disposal, storm drainage, vermin control, noise abatement, and health protection as building sanitation requirements.",
+        "locator": "PD 1096 RIRR refined markdown lines 968-970"
+      }
+    },
+    {
+      "claim_id": "water-supply-and-drainage-routing",
+      "claim_text": "PD 1096 RIRR Sections 902 to 904 route potable water, wastewater drainage, venting, and storm drainage to the applicable water, sanitation, DENR, and RNPC requirements.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "pd-1096-rirr-2004-dpwh-official-local",
+          "rnpc-revised-national-plumbing-code-local",
+          "pd-856-code-on-sanitation-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "quoted_pdf_excerpt": "PD 1096 RIRR Sections 902 to 904 route potable water, wastewater drainage, venting, and storm drainage to the applicable water, sanitation, DENR, and RNPC requirements.",
+        "locator": "PD 1096 RIRR refined markdown lines 972-990"
+      }
+    },
+    {
+      "claim_id": "pd856-sanitation-baseline",
+      "claim_text": "PD 856 establishes national sanitation requirements for water supply, sewage and excreta disposal, drainage, and refuse disposal.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "pd-1096-rirr-2004-dpwh-official-local",
+          "rnpc-revised-national-plumbing-code-local",
+          "pd-856-code-on-sanitation-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "quoted_pdf_excerpt": "PD 856 establishes national sanitation requirements for water supply, sewage and excreta disposal, drainage, and refuse disposal.",
+        "locator": "PD 856 refined markdown lines 195-198 and 1067-1267"
+      }
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "removed_or_rewritten_material": [
+    "Rewrote article and linked-question material to local raw-source-supported LEA code and professional-practice claims only."
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_pdf_families_checked": [
+      "PD 1096 2004 Revised IRR - DPWH Official",
+      "Revised National Plumbing Code of the Philippines",
+      "PD 856 Code on Sanitation of the Philippines"
+    ],
+    "blockers": []
+  },
+  "gate_results": {
+    "ui_markers_removed_or_resolved": true,
+    "internal_notes_removed": true,
+    "non_local_claims_removed": true,
+    "sources_json_updated": true,
+    "question_edits_created": true
+  },
+  "source_safe_repair": {
+    "performed": true,
+    "repair_notes": "Local-first article and question repairs were limited to claims supported by listed local raw PDFs and locator-checked refined markdown."
+  },
+  "local_validation": {
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_edits": "PASS",
+    "scoped_checks": "PASS",
+    "targeted_tests": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "sme_review": {
+    "required": false,
+    "status": "PASS",
+    "rationale": "Batch is local-first source-audited repair; final publishing review remains separate."
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

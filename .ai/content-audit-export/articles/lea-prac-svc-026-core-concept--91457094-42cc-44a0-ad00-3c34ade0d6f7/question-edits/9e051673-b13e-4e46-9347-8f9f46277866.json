@@ -1,0 +1,85 @@
+{
+  "question_id": "9e051673-b13e-4e46-9347-8f9f46277866",
+  "baseline_hash": "sha256:60a01a8619d8c56153abba4eafa021baf9c9c48142a9a7fca8245c24e94b184e",
+  "action": "replace",
+  "reason": "source-audited-article-batch-025-local-first rewrote this linked question to align with the local source audit for lea-prac-svc-026-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-025",
+  "approved_at": "2026-05-11T18:30:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "91457094-42cc-44a0-ad00-3c34ade0d6f7",
+    "parent_article_slug": "lea-prac-svc-026-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UAP Standards lines 691-716, 1138-1152; SPP 203 refined markdown lines 101-111",
+    "checked_markdown_lines": [
+      "UAP Standards lines 691-716",
+      "UAP Standards lines 1138-1152",
+      "SPP 203 lines 101-111"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "source_id": "uap-standards-local-lea-prac-svc-026-core-concept",
+        "locator": "UAP Standards lines 691-716; UAP Standards lines 1138-1152"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "source_id": "uap-standards-local-lea-prac-svc-026-core-concept",
+        "locator": "UAP Standards lines 691-716; UAP Standards lines 1138-1152"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+        "sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+        "source_id": "spp203-specialized-allied-services-local",
+        "locator": "SPP 203 lines 101-111"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+        "sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+        "source_id": "spp203-specialized-allied-services-local",
+        "locator": "SPP 203 lines 101-111"
+      }
+    ],
+    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+  },
+  "proposed": {
+    "text": "Which specifications are source-supported for SDP?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Civil works and utility specifications"
+      },
+      {
+        "id": "b",
+        "text": "Only securities registration forms"
+      },
+      {
+        "id": "c",
+        "text": "Only contractor payroll vouchers"
+      },
+      {
+        "id": "d",
+        "text": "Only final competition awards"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "The checked source includes civil works and utility specifications in the SDP scope.",
+    "explanation": "This Batch 025 replacement is tied to the checked local UAP source locator and removes wording that was not needed for source-safe assessment.",
+    "code_citation": "UAP Standards lines 691-716, 1138-1152; SPP 203 refined markdown lines 101-111",
+    "bloom_level": "understand",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited batch 025"
+    ],
+    "difficulty": 0.5,
+    "is_assessment": false,
+    "model_id": "BATCH-025-lea-prac-svc-026-core-concept-007"
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "schema_version": "source-audit-evidence-v1-local-first",
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-043-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T15:53:32.715+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "b75b3e00-5fe7-4717-95d0-b65ea5b2bb28",
+    "slug": "lea-util-004-07-core-concepts-and-formulas",
+    "title": "Fire pump sizing and hydraulic calculations",
+    "article_folder": ".ai/content-audit-export/articles/lea-util-004-07-core-concepts-and-formulas--b75b3e00-5fe7-4717-95d0-b65ea5b2bb28",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-07-core-concepts-and-formulas--b75b3e00-5fe7-4717-95d0-b65ea5b2bb28",
+    "candidate_path": ".ai/content-audit-export/articles/lea-util-004-07-core-concepts-and-formulas--b75b3e00-5fe7-4717-95d0-b65ea5b2bb28/candidate.md",
+    "candidate_sha256": "sha256:96202fbc3ff13063a7d6d72552bde83d8300ea2d5eb05f2a577400c828227a74",
+    "normalized_sha256": "sha256:96202fbc3ff13063a7d6d72552bde83d8300ea2d5eb05f2a577400c828227a74",
+    "linked_questions_sha256": "sha256:692fcc09ff4889c9955d481ca89a915629d3437363759f0b1cac0a7ac2d4be34",
+    "sources_sha256": "sha256:f299c3a5becfc77072cf67b613bdfdab8eb0acaa21c1610ec4b737b9958a835a"
+  },
+  "classification": {
+    "content_domain": "LEA Utilities - fire pump sizing and hydraulic calculations",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high_value_fire_code",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 15,
+    "question_edits_created": [
+      "034d8eb4-661f-4fd6-877a-af76e8a405f7",
+      "aec6e239-1017-4229-ac3c-087789fec118",
+      "7bf8a7ca-288c-4b39-b42f-c497b6b760e1",
+      "ce27e409-5c1f-4518-b030-9f569898a24a",
+      "4f18900d-6687-479b-88cc-b22942101701",
+      "b1097222-32d0-47fa-88fc-271f8985810c",
+      "a978081c-a721-4b2e-b530-81e3e6ca285e",
+      "4a8bf91d-a68d-41a6-b553-722d1c7b802b",
+      "05125ed5-8026-4b8f-8864-774c384da9b3",
+      "8cf31da8-c453-4afd-8e38-614ea581f84d",
+      "eb8ce49a-dcb6-45b7-84de-6c4716050625",
+      "efcebd67-39b7-4687-89f0-834d3d2dd9e2",
+      "c10d2868-9640-40a7-8e60-bfb33dd14ac0",
+      "e6c7cb32-4bf6-4c4f-8ae7-2909af38d5c2",
+      "b49f5293-717d-461f-8522-99e0b001beb3"
+    ]
+  },
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/lea-util-004-07-core-concepts-and-formulas--b75b3e00-5fe7-4717-95d0-b65ea5b2bb28",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-07-core-concepts-and-formulas--b75b3e00-5fe7-4717-95d0-b65ea5b2bb28",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/lea-util-004-07-core-concepts-and-formulas--b75b3e00-5fe7-4717-95d0-b65ea5b2bb28/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-07-core-concepts-and-formulas--b75b3e00-5fe7-4717-95d0-b65ea5b2bb28/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/lea-util-004-07-core-concepts-and-formulas--b75b3e00-5fe7-4717-95d0-b65ea5b2bb28/question-edits/034d8eb4-661f-4fd6-877a-af76e8a405f7.json",
+      ".ai/content-audit-export/articles/lea-util-004-07-core-concepts-and-formulas--b75b3e00-5fe7-4717-95d0-b65ea5b2bb28/question-edits/aec6e239-1017-4229-ac3c-087789fec118.json",
+      ".ai/content-audit-export/articles/lea-util-004-07-core-concepts-and-formulas--b75b3e00-5fe7-4717-95d0-b65ea5b2bb28/question-edits/7bf8a7ca-288c-4b39-b42f-c497b6b760e1.json",
+      ".ai/content-audit-export/articles/lea-util-004-07-core-concepts-and-formulas--b75b3e00-5fe7-4717-95d0-b65ea5b2bb28/question-edits/ce27e409-5c1f-4518-b030-9f569898a24a.json",
+      ".ai/content-audit-export/articles/lea-util-004-07-core-concepts-and-formulas--b75b3e00-5fe7-4717-95d0-b65ea5b2bb28/question-edits/4f18900d-6687-479b-88cc-b22942101701.json",
+      ".ai/content-audit-export/articles/lea-util-004-07-core-concepts-and-formulas--b75b3e00-5fe7-4717-95d0-b65ea5b2bb28/question-edits/b1097222-32d0-47fa-88fc-271f8985810c.json",
+      ".ai/content-audit-export/articles/lea-util-004-07-core-concepts-and-formulas--b75b3e00-5fe7-4717-95d0-b65ea5b2bb28/question-edits/a978081c-a721-4b2e-b530-81e3e6ca285e.json",
+      ".ai/content-audit-export/articles/lea-util-004-07-core-concepts-and-formulas--b75b3e00-5fe7-4717-95d0-b65ea5b2bb28/question-edits/4a8bf91d-a68d-41a6-b553-722d1c7b802b.json",
+      ".ai/content-audit-export/articles/lea-util-004-07-core-concepts-and-formulas--b75b3e00-5fe7-4717-95d0-b65ea5b2bb28/question-edits/05125ed5-8026-4b8f-8864-774c384da9b3.json",
+      ".ai/content-audit-export/articles/lea-util-004-07-core-concepts-and-formulas--b75b3e00-5fe7-4717-95d0-b65ea5b2bb28/question-edits/8cf31da8-c453-4afd-8e38-614ea581f84d.json",
+      ".ai/content-audit-export/articles/lea-util-004-07-core-concepts-and-formulas--b75b3e00-5fe7-4717-95d0-b65ea5b2bb28/question-edits/eb8ce49a-dcb6-45b7-84de-6c4716050625.json",
+      ".ai/content-audit-export/articles/lea-util-004-07-core-concepts-and-formulas--b75b3e00-5fe7-4717-95d0-b65ea5b2bb28/question-edits/efcebd67-39b7-4687-89f0-834d3d2dd9e2.json",
+      ".ai/content-audit-export/articles/lea-util-004-07-core-concepts-and-formulas--b75b3e00-5fe7-4717-95d0-b65ea5b2bb28/question-edits/c10d2868-9640-40a7-8e60-bfb33dd14ac0.json",
+      ".ai/content-audit-export/articles/lea-util-004-07-core-concepts-and-formulas--b75b3e00-5fe7-4717-95d0-b65ea5b2bb28/question-edits/e6c7cb32-4bf6-4c4f-8ae7-2909af38d5c2.json",
+      ".ai/content-audit-export/articles/lea-util-004-07-core-concepts-and-formulas--b75b3e00-5fe7-4717-95d0-b65ea5b2bb28/question-edits/b49f5293-717d-461f-8522-99e0b001beb3.json"
+    ]
+  },
+  "raw_sources": [
+    {
+      "source_id": "ra-9514-rirr-2019-local-raw-pdf--b043-1",
+      "label": "RA 9514 RIRR 2019 - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+      "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+      "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+      "source_locator": "RA 9514 RIRR refined markdown lines 1138-1154, 1295-1299, 1882-1888, 2308-2344, 2408-2418, 3690-3723, 13284-13291",
+      "checked_markdown_lines": [
+        "RA 9514 RIRR refined markdown lines 1138-1154",
+        "RA 9514 RIRR refined markdown lines 1295-1299 and 1882-1888",
+        "RA 9514 RIRR refined markdown lines 2308-2344",
+        "RA 9514 RIRR refined markdown lines 2408-2418 and 3690-3723",
+        "RA 9514 RIRR refined markdown lines 13284-13291"
+      ]
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "ra-9514-rirr-2019-local-raw-pdf--b043-1",
+      "label": "RA 9514 RIRR 2019 - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+      "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+      "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+      "source_locator": "RA 9514 RIRR refined markdown lines 1138-1154, 1295-1299, 1882-1888, 2308-2344, 2408-2418, 3690-3723, 13284-13291",
+      "checked_markdown_lines": [
+        "RA 9514 RIRR refined markdown lines 1138-1154",
+        "RA 9514 RIRR refined markdown lines 1295-1299 and 1882-1888",
+        "RA 9514 RIRR refined markdown lines 2308-2344",
+        "RA 9514 RIRR refined markdown lines 2408-2418 and 3690-3723",
+        "RA 9514 RIRR refined markdown lines 13284-13291"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "b043-firepump-01",
+      "claim_text": "FSCR content includes sprinkler/standpipe criteria, water supplies, fire pumps, capacities, and hydraulic calculations.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "RA 9514 RIRR 2019 - local raw PDF",
+        "locator": "RA 9514 RIRR refined markdown lines 2308-2344",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "quoted_pdf_excerpt": "fire pumps, capacities, and hydraulic calculations"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b043-firepump-02",
+      "claim_text": "The RIRR references NFPA 13, 14, 20, and 25 for relevant fire-protection systems.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "RA 9514 RIRR 2019 - local raw PDF",
+        "locator": "RA 9514 RIRR refined markdown lines 1138-1154 and 3690-3723",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "quoted_pdf_excerpt": "NFPA 13, 14, 20, and 25"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b043-firepump-03",
+      "claim_text": "Fire pump supervision and annual flow-test records are checked fire-protection operations topics.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "RA 9514 RIRR 2019 - local raw PDF",
+        "locator": "RA 9514 RIRR refined markdown lines 2408-2418 and 3700-3708",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "quoted_pdf_excerpt": "annual fire pump flow tests and fire pump running/power supervision"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b043-firepump-04",
+      "claim_text": "Hydrant supply criteria include a checked flow and duration reference.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "RA 9514 RIRR 2019 - local raw PDF",
+        "locator": "RA 9514 RIRR refined markdown lines 13284-13291",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "quoted_pdf_excerpt": "3,785 L/min for one hour and fire reserve"
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [
+    "Derivative-only tariff, product, market, and case-study numbers were excluded from the Batch 043 repaired content and question edits."
+  ],
+  "removed_or_rewritten_material": [
+    "Removed exported UI-block marker tokens from normalized article content where present.",
+    "Rewrote linked question files to stay inside checked local raw-source evidence.",
+    "Replaced stale derivative-only numeric examples with code-family statements supported by local source families."
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdf_first": true,
+    "derivative_layers_used_only_as_locators": true,
+    "checked_raw_pdf_families": [
+      "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf"
+    ]
+  },
+  "gate_results": {
+    "source_audit": "PASS",
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_validation": "PASS",
+    "question_edit_count_check": "PASS",
+    "scoped_json_parse": "PASS",
+    "marker_scan": "PASS",
+    "source_hash_check": "PASS",
+    "stale_compose_error_check": "PASS"
+  },
+  "source_safe_repair": {
+    "status": "COMPLETE_LOCAL_VALIDATED",
+    "article_normalized_rewritten": true,
+    "sources_json_updated": true,
+    "source_audit_evidence_updated": true,
+    "question_edits_created": 15,
+    "blockers": []
+  },
+  "local_validation": {
+    "status": "PASS_LOCAL_VALIDATION",
+    "validated_at": "2026-05-11T15:53:32.715+08:00",
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_validation": "PASS",
+    "scoped_checks": "PASS",
+    "blockers": []
+  },
+  "sme_review": {
+    "required_before_supabase_publish": true,
+    "completed": false
+  },
+  "overall": {
+    "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+    "blockers": []
+  }
+}

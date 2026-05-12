@@ -1,0 +1,515 @@
+{
+  "batch_id": "source-audited-article-batch-037-local-first",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "generated_at": "2026-05-11T13:20:45+08:00",
+  "local_only": true,
+  "supabase_push": false,
+  "deploy": false,
+  "commit": false,
+  "inherited_blocker_status": "Batch 036 blockers=0",
+  "blockers": [],
+  "counts": {
+    "article_count": 5,
+    "json_parse_count": 169,
+    "linked_question_count": 114,
+    "question_edit_count": 114,
+    "source_rows_written": 15,
+    "unique_raw_pdf_files_checked": 6,
+    "source_hash_checks": 30,
+    "placeholder_internal_source_gap_matches": 0,
+    "stale_compose_error_files": 0
+  },
+  "articles": [
+    {
+      "index": 1,
+      "article_id": "f8d416c0-abfb-45be-a7ef-a9f98df06507",
+      "slug": "chimneys-and-fireplaces",
+      "title": "Chimneys and Fireplaces",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/chimneys-and-fireplaces--f8d416c0-abfb-45be-a7ef-a9f98df06507",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/chimneys-and-fireplaces--f8d416c0-abfb-45be-a7ef-a9f98df06507/question-edits",
+      "exact_improved_paths": {
+        "normalized_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/chimneys-and-fireplaces--f8d416c0-abfb-45be-a7ef-a9f98df06507/normalized.md",
+        "candidate_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/chimneys-and-fireplaces--f8d416c0-abfb-45be-a7ef-a9f98df06507/candidate.md",
+        "sources_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/chimneys-and-fireplaces--f8d416c0-abfb-45be-a7ef-a9f98df06507/sources.json",
+        "source_audit_evidence_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/chimneys-and-fireplaces--f8d416c0-abfb-45be-a7ef-a9f98df06507/source-audit-evidence.json",
+        "ui_blocks_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/chimneys-and-fireplaces--f8d416c0-abfb-45be-a7ef-a9f98df06507/ui-blocks.json",
+        "compose_report_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/chimneys-and-fireplaces--f8d416c0-abfb-45be-a7ef-a9f98df06507/compose-report.json",
+        "diff_report_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/chimneys-and-fireplaces--f8d416c0-abfb-45be-a7ef-a9f98df06507/diff-report.json"
+      },
+      "linked_questions": 33,
+      "question_edits": 33,
+      "source_rows": 1,
+      "candidate_hash": "sha256:30abb45a16cb75d7e620adc9248793c5049bfdf24a38c80bde7f8e901154cf14",
+      "normalized_hash": "sha256:30abb45a16cb75d7e620adc9248793c5049bfdf24a38c80bde7f8e901154cf14",
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": []
+      },
+      "validate": {
+        "valid": true,
+        "blockers": []
+      },
+      "source_audit": {
+        "status": "PASS",
+        "raw_pdf_gate": "PASS",
+        "blockers": []
+      },
+      "raw_sources": [
+        {
+          "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+          "label": "PD 1096 2004 Revised IRR - DPWH Official",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "source_locator": "PD 1096 RIRR 2004 DPWH Official refined markdown lines 968-990; PD 1096 RIRR 2004 DPWH Official refined markdown lines 3789-3897",
+          "checked_markdown_lines": [
+            "PD 1096 RIRR 2004 DPWH Official refined markdown lines 968-990",
+            "PD 1096 RIRR 2004 DPWH Official refined markdown lines 3789-3897"
+          ]
+        }
+      ],
+      "metadata_content_hash_note": "Local export baseline repaired to current original.md hash before final compose/diff/validate."
+    },
+    {
+      "index": 2,
+      "article_id": "e5cd1de8-d1e5-4173-9dd2-985eda1562a9",
+      "slug": "sanitation-and-water-supply",
+      "title": "Sanitation and Water Supply",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/sanitation-and-water-supply--e5cd1de8-d1e5-4173-9dd2-985eda1562a9",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/sanitation-and-water-supply--e5cd1de8-d1e5-4173-9dd2-985eda1562a9/question-edits",
+      "exact_improved_paths": {
+        "normalized_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/sanitation-and-water-supply--e5cd1de8-d1e5-4173-9dd2-985eda1562a9/normalized.md",
+        "candidate_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/sanitation-and-water-supply--e5cd1de8-d1e5-4173-9dd2-985eda1562a9/candidate.md",
+        "sources_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/sanitation-and-water-supply--e5cd1de8-d1e5-4173-9dd2-985eda1562a9/sources.json",
+        "source_audit_evidence_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/sanitation-and-water-supply--e5cd1de8-d1e5-4173-9dd2-985eda1562a9/source-audit-evidence.json",
+        "ui_blocks_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/sanitation-and-water-supply--e5cd1de8-d1e5-4173-9dd2-985eda1562a9/ui-blocks.json",
+        "compose_report_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/sanitation-and-water-supply--e5cd1de8-d1e5-4173-9dd2-985eda1562a9/compose-report.json",
+        "diff_report_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/sanitation-and-water-supply--e5cd1de8-d1e5-4173-9dd2-985eda1562a9/diff-report.json"
+      },
+      "linked_questions": 26,
+      "question_edits": 26,
+      "source_rows": 3,
+      "candidate_hash": "sha256:d18b0e2cef4688d0b9eb3f85182a86c52683f1d0bce0373b1c9c519135f80328",
+      "normalized_hash": "sha256:d18b0e2cef4688d0b9eb3f85182a86c52683f1d0bce0373b1c9c519135f80328",
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": []
+      },
+      "validate": {
+        "valid": true,
+        "blockers": []
+      },
+      "source_audit": {
+        "status": "PASS",
+        "raw_pdf_gate": "PASS",
+        "blockers": []
+      },
+      "raw_sources": [
+        {
+          "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+          "label": "PD 1096 2004 Revised IRR - DPWH Official",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "source_locator": "PD 1096 RIRR 2004 DPWH Official refined markdown lines 968-990; PD 1096 RIRR 2004 DPWH Official refined markdown lines 3789-3897",
+          "checked_markdown_lines": [
+            "PD 1096 RIRR 2004 DPWH Official refined markdown lines 968-990",
+            "PD 1096 RIRR 2004 DPWH Official refined markdown lines 3789-3897"
+          ]
+        },
+        {
+          "source_id": "rnpc-revised-national-plumbing-code-local",
+          "label": "Revised National Plumbing Code of the Philippines",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf",
+          "raw_pdf_sha256": "sha256:c4ec30ec3ffe3b39513a033ebc2cfa614bd201d25c5578e1847e7f359fed3f5d",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Revised National Plumbing Code of the Philippines.md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Revised National Plumbing Code of the Philippines.md",
+          "refined_markdown_sha256": "sha256:7cea224bfc6c54d0883fe69c89b97cf134e45acaab6c8950b8af3621059c9a91",
+          "source_locator": "Revised National Plumbing Code refined markdown lines 75-110; Revised National Plumbing Code refined markdown lines 147-196; Revised National Plumbing Code refined markdown lines 224-251; Revised National Plumbing Code refined markdown lines 453-477; Revised National Plumbing Code refined markdown lines 1338-1370; Revised National Plumbing Code refined markdown lines 3390-3419; Revised National Plumbing Code refined markdown lines 3660-3674; Revised National Plumbing Code refined markdown lines 4213-4260",
+          "checked_markdown_lines": [
+            "Revised National Plumbing Code refined markdown lines 75-110",
+            "Revised National Plumbing Code refined markdown lines 147-196",
+            "Revised National Plumbing Code refined markdown lines 224-251",
+            "Revised National Plumbing Code refined markdown lines 453-477",
+            "Revised National Plumbing Code refined markdown lines 1338-1370",
+            "Revised National Plumbing Code refined markdown lines 3390-3419",
+            "Revised National Plumbing Code refined markdown lines 3660-3674",
+            "Revised National Plumbing Code refined markdown lines 4213-4260"
+          ]
+        },
+        {
+          "source_id": "pd-856-code-on-sanitation-local",
+          "label": "PD 856 Code on Sanitation of the Philippines",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-856/phi201040.pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-856/phi201040.pdf",
+          "raw_pdf_sha256": "sha256:aae564835045721c19b32bdbb2c7e9bf821ee3a52d26d824f853b0ae2c8b1cbf",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-856/phi201040.md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-856/phi201040.md",
+          "refined_markdown_sha256": "sha256:c321fd3ea87a67da56443289b09c0ff33092174c0e57c87ed6f8d380793ad39e",
+          "source_locator": "PD 856 refined markdown lines 195-198; PD 856 refined markdown lines 1067-1138; PD 856 refined markdown lines 1162-1267",
+          "checked_markdown_lines": [
+            "PD 856 refined markdown lines 195-198",
+            "PD 856 refined markdown lines 1067-1138",
+            "PD 856 refined markdown lines 1162-1267"
+          ]
+        }
+      ],
+      "metadata_content_hash_note": "Local export baseline repaired to current original.md hash before final compose/diff/validate."
+    },
+    {
+      "index": 3,
+      "article_id": "68dc5ecb-7b3f-4394-a7b7-770336b3ce98",
+      "slug": "lea-util-001-06-core-concept",
+      "title": "Building waste disposal encompasses both liquid",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-001-06-core-concept--68dc5ecb-7b3f-4394-a7b7-770336b3ce98",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-001-06-core-concept--68dc5ecb-7b3f-4394-a7b7-770336b3ce98/question-edits",
+      "exact_improved_paths": {
+        "normalized_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-001-06-core-concept--68dc5ecb-7b3f-4394-a7b7-770336b3ce98/normalized.md",
+        "candidate_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-001-06-core-concept--68dc5ecb-7b3f-4394-a7b7-770336b3ce98/candidate.md",
+        "sources_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-001-06-core-concept--68dc5ecb-7b3f-4394-a7b7-770336b3ce98/sources.json",
+        "source_audit_evidence_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-001-06-core-concept--68dc5ecb-7b3f-4394-a7b7-770336b3ce98/source-audit-evidence.json",
+        "ui_blocks_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-001-06-core-concept--68dc5ecb-7b3f-4394-a7b7-770336b3ce98/ui-blocks.json",
+        "compose_report_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-001-06-core-concept--68dc5ecb-7b3f-4394-a7b7-770336b3ce98/compose-report.json",
+        "diff_report_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-001-06-core-concept--68dc5ecb-7b3f-4394-a7b7-770336b3ce98/diff-report.json"
+      },
+      "linked_questions": 25,
+      "question_edits": 25,
+      "source_rows": 5,
+      "candidate_hash": "sha256:382713f12646bf5385089bd7f1346793d68e34ef84627a12eb61dcb830083f4a",
+      "normalized_hash": "sha256:382713f12646bf5385089bd7f1346793d68e34ef84627a12eb61dcb830083f4a",
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": []
+      },
+      "validate": {
+        "valid": true,
+        "blockers": []
+      },
+      "source_audit": {
+        "status": "PASS",
+        "raw_pdf_gate": "PASS",
+        "blockers": []
+      },
+      "raw_sources": [
+        {
+          "source_id": "ra-9003-ecological-solid-waste-management-local",
+          "label": "RA 9003 Ecological Solid Waste Management Act",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.pdf",
+          "raw_pdf_sha256": "sha256:d3939c8bad4085e76186be1fa0465b9011ceb639bdb8611e7d869fac454d59fe",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9003/RA 9003 Ecological Solid Waste Management Act 2000.md",
+          "refined_markdown_sha256": "sha256:f0e42aa0bb840899b2ef0a87d79fa7e9cb47e97d090731fc48b119711144eadc",
+          "source_locator": "RA 9003 refined markdown lines 11-19; RA 9003 refined markdown lines 57-74; RA 9003 refined markdown lines 108-123",
+          "checked_markdown_lines": [
+            "RA 9003 refined markdown lines 11-19",
+            "RA 9003 refined markdown lines 57-74",
+            "RA 9003 refined markdown lines 108-123"
+          ]
+        },
+        {
+          "source_id": "ra-9275-clean-water-act-local",
+          "label": "RA 9275 Philippine Clean Water Act",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9257/RA 9275 PH Clean Water Act.pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9257/RA 9275 PH Clean Water Act.pdf",
+          "raw_pdf_sha256": "sha256:125e87be94dbecfe40e9a5a698359e7a0e3aabf1b0a3fd08004c90ec9b17b0a9",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9257/RA 9275 PH Clean Water Act.md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9257/RA 9275 PH Clean Water Act.md",
+          "refined_markdown_sha256": "sha256:209d1be42efa2e2ced9438610f041537b50ef9059911daf21bf1ece2ff89a7ee",
+          "source_locator": "RA 9275 refined markdown lines 24-54; RA 9275 refined markdown lines 86-100; RA 9275 refined markdown lines 125-139; RA 9275 refined markdown lines 172-180",
+          "checked_markdown_lines": [
+            "RA 9275 refined markdown lines 24-54",
+            "RA 9275 refined markdown lines 86-100",
+            "RA 9275 refined markdown lines 125-139",
+            "RA 9275 refined markdown lines 172-180"
+          ]
+        },
+        {
+          "source_id": "pd-856-code-on-sanitation-local",
+          "label": "PD 856 Code on Sanitation of the Philippines",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-856/phi201040.pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-856/phi201040.pdf",
+          "raw_pdf_sha256": "sha256:aae564835045721c19b32bdbb2c7e9bf821ee3a52d26d824f853b0ae2c8b1cbf",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-856/phi201040.md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-856/phi201040.md",
+          "refined_markdown_sha256": "sha256:c321fd3ea87a67da56443289b09c0ff33092174c0e57c87ed6f8d380793ad39e",
+          "source_locator": "PD 856 refined markdown lines 195-198; PD 856 refined markdown lines 1067-1138; PD 856 refined markdown lines 1162-1267",
+          "checked_markdown_lines": [
+            "PD 856 refined markdown lines 195-198",
+            "PD 856 refined markdown lines 1067-1138",
+            "PD 856 refined markdown lines 1162-1267"
+          ]
+        },
+        {
+          "source_id": "rnpc-revised-national-plumbing-code-local",
+          "label": "Revised National Plumbing Code of the Philippines",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf",
+          "raw_pdf_sha256": "sha256:c4ec30ec3ffe3b39513a033ebc2cfa614bd201d25c5578e1847e7f359fed3f5d",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Revised National Plumbing Code of the Philippines.md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Revised National Plumbing Code of the Philippines.md",
+          "refined_markdown_sha256": "sha256:7cea224bfc6c54d0883fe69c89b97cf134e45acaab6c8950b8af3621059c9a91",
+          "source_locator": "Revised National Plumbing Code refined markdown lines 75-110; Revised National Plumbing Code refined markdown lines 147-196; Revised National Plumbing Code refined markdown lines 224-251; Revised National Plumbing Code refined markdown lines 453-477; Revised National Plumbing Code refined markdown lines 1338-1370; Revised National Plumbing Code refined markdown lines 3390-3419; Revised National Plumbing Code refined markdown lines 3660-3674; Revised National Plumbing Code refined markdown lines 4213-4260",
+          "checked_markdown_lines": [
+            "Revised National Plumbing Code refined markdown lines 75-110",
+            "Revised National Plumbing Code refined markdown lines 147-196",
+            "Revised National Plumbing Code refined markdown lines 224-251",
+            "Revised National Plumbing Code refined markdown lines 453-477",
+            "Revised National Plumbing Code refined markdown lines 1338-1370",
+            "Revised National Plumbing Code refined markdown lines 3390-3419",
+            "Revised National Plumbing Code refined markdown lines 3660-3674",
+            "Revised National Plumbing Code refined markdown lines 4213-4260"
+          ]
+        },
+        {
+          "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+          "label": "PD 1096 2004 Revised IRR - DPWH Official",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "source_locator": "PD 1096 RIRR 2004 DPWH Official refined markdown lines 968-990; PD 1096 RIRR 2004 DPWH Official refined markdown lines 3789-3897",
+          "checked_markdown_lines": [
+            "PD 1096 RIRR 2004 DPWH Official refined markdown lines 968-990",
+            "PD 1096 RIRR 2004 DPWH Official refined markdown lines 3789-3897"
+          ]
+        }
+      ],
+      "metadata_content_hash_note": "Local export baseline repaired to current original.md hash before final compose/diff/validate."
+    },
+    {
+      "index": 4,
+      "article_id": "be3f2bf1-8d85-4c03-a047-ae1c2503d4cb",
+      "slug": "lea-util-001-07-system-components-and-functions",
+      "title": "Sanitary drainage systems remove wastewater and human waste",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-001-07-system-components-and-functions--be3f2bf1-8d85-4c03-a047-ae1c2503d4cb",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-001-07-system-components-and-functions--be3f2bf1-8d85-4c03-a047-ae1c2503d4cb/question-edits",
+      "exact_improved_paths": {
+        "normalized_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-001-07-system-components-and-functions--be3f2bf1-8d85-4c03-a047-ae1c2503d4cb/normalized.md",
+        "candidate_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-001-07-system-components-and-functions--be3f2bf1-8d85-4c03-a047-ae1c2503d4cb/candidate.md",
+        "sources_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-001-07-system-components-and-functions--be3f2bf1-8d85-4c03-a047-ae1c2503d4cb/sources.json",
+        "source_audit_evidence_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-001-07-system-components-and-functions--be3f2bf1-8d85-4c03-a047-ae1c2503d4cb/source-audit-evidence.json",
+        "ui_blocks_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-001-07-system-components-and-functions--be3f2bf1-8d85-4c03-a047-ae1c2503d4cb/ui-blocks.json",
+        "compose_report_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-001-07-system-components-and-functions--be3f2bf1-8d85-4c03-a047-ae1c2503d4cb/compose-report.json",
+        "diff_report_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-001-07-system-components-and-functions--be3f2bf1-8d85-4c03-a047-ae1c2503d4cb/diff-report.json"
+      },
+      "linked_questions": 15,
+      "question_edits": 15,
+      "source_rows": 3,
+      "candidate_hash": "sha256:db394119c65d18ce3c9226373594f4f316a821c1f8ecb00e57f672c3dbf70271",
+      "normalized_hash": "sha256:db394119c65d18ce3c9226373594f4f316a821c1f8ecb00e57f672c3dbf70271",
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": []
+      },
+      "validate": {
+        "valid": true,
+        "blockers": []
+      },
+      "source_audit": {
+        "status": "PASS",
+        "raw_pdf_gate": "PASS",
+        "blockers": []
+      },
+      "raw_sources": [
+        {
+          "source_id": "rnpc-revised-national-plumbing-code-local",
+          "label": "Revised National Plumbing Code of the Philippines",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf",
+          "raw_pdf_sha256": "sha256:c4ec30ec3ffe3b39513a033ebc2cfa614bd201d25c5578e1847e7f359fed3f5d",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Revised National Plumbing Code of the Philippines.md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Revised National Plumbing Code of the Philippines.md",
+          "refined_markdown_sha256": "sha256:7cea224bfc6c54d0883fe69c89b97cf134e45acaab6c8950b8af3621059c9a91",
+          "source_locator": "Revised National Plumbing Code refined markdown lines 75-110; Revised National Plumbing Code refined markdown lines 147-196; Revised National Plumbing Code refined markdown lines 224-251; Revised National Plumbing Code refined markdown lines 453-477; Revised National Plumbing Code refined markdown lines 1338-1370; Revised National Plumbing Code refined markdown lines 3390-3419; Revised National Plumbing Code refined markdown lines 3660-3674; Revised National Plumbing Code refined markdown lines 4213-4260",
+          "checked_markdown_lines": [
+            "Revised National Plumbing Code refined markdown lines 75-110",
+            "Revised National Plumbing Code refined markdown lines 147-196",
+            "Revised National Plumbing Code refined markdown lines 224-251",
+            "Revised National Plumbing Code refined markdown lines 453-477",
+            "Revised National Plumbing Code refined markdown lines 1338-1370",
+            "Revised National Plumbing Code refined markdown lines 3390-3419",
+            "Revised National Plumbing Code refined markdown lines 3660-3674",
+            "Revised National Plumbing Code refined markdown lines 4213-4260"
+          ]
+        },
+        {
+          "source_id": "ra-1378-master-plumbing-law-local",
+          "label": "RA 1378 Master Plumbing Law",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-1378/MASTER PLUMBING LAW.pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-1378/MASTER PLUMBING LAW.pdf",
+          "raw_pdf_sha256": "sha256:84bd43fb9ae236195bc2bded5ccb6ede4339a3195e7d19fa89cbf036ff8ea5a5",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-1378/MASTER PLUMBING LAW.md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-1378/MASTER PLUMBING LAW.md",
+          "refined_markdown_sha256": "sha256:1ecd95c9aaa63e36bfa074b928d8589c42906c93ccb5621dcd0052629b0d530d",
+          "source_locator": "RA 1378 Master Plumbing Law refined markdown lines 7-10; RA 1378 Master Plumbing Law refined markdown lines 16-40; RA 1378 Master Plumbing Law refined markdown lines 55-83",
+          "checked_markdown_lines": [
+            "RA 1378 Master Plumbing Law refined markdown lines 7-10",
+            "RA 1378 Master Plumbing Law refined markdown lines 16-40",
+            "RA 1378 Master Plumbing Law refined markdown lines 55-83"
+          ]
+        },
+        {
+          "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+          "label": "PD 1096 2004 Revised IRR - DPWH Official",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "source_locator": "PD 1096 RIRR 2004 DPWH Official refined markdown lines 968-990; PD 1096 RIRR 2004 DPWH Official refined markdown lines 3789-3897",
+          "checked_markdown_lines": [
+            "PD 1096 RIRR 2004 DPWH Official refined markdown lines 968-990",
+            "PD 1096 RIRR 2004 DPWH Official refined markdown lines 3789-3897"
+          ]
+        }
+      ],
+      "metadata_content_hash_note": "Local export baseline repaired to current original.md hash before final compose/diff/validate."
+    },
+    {
+      "index": 5,
+      "article_id": "8ba7dce8-b30a-497e-af30-7cf6b3637216",
+      "slug": "lea-util-001-08-what-you-need-to-know-for-the-lea",
+      "title": "Philippines' plumbing regulatory framework",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-001-08-what-you-need-to-know-for-the-lea--8ba7dce8-b30a-497e-af30-7cf6b3637216",
+      "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-001-08-what-you-need-to-know-for-the-lea--8ba7dce8-b30a-497e-af30-7cf6b3637216/question-edits",
+      "exact_improved_paths": {
+        "normalized_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-001-08-what-you-need-to-know-for-the-lea--8ba7dce8-b30a-497e-af30-7cf6b3637216/normalized.md",
+        "candidate_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-001-08-what-you-need-to-know-for-the-lea--8ba7dce8-b30a-497e-af30-7cf6b3637216/candidate.md",
+        "sources_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-001-08-what-you-need-to-know-for-the-lea--8ba7dce8-b30a-497e-af30-7cf6b3637216/sources.json",
+        "source_audit_evidence_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-001-08-what-you-need-to-know-for-the-lea--8ba7dce8-b30a-497e-af30-7cf6b3637216/source-audit-evidence.json",
+        "ui_blocks_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-001-08-what-you-need-to-know-for-the-lea--8ba7dce8-b30a-497e-af30-7cf6b3637216/ui-blocks.json",
+        "compose_report_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-001-08-what-you-need-to-know-for-the-lea--8ba7dce8-b30a-497e-af30-7cf6b3637216/compose-report.json",
+        "diff_report_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-001-08-what-you-need-to-know-for-the-lea--8ba7dce8-b30a-497e-af30-7cf6b3637216/diff-report.json"
+      },
+      "linked_questions": 15,
+      "question_edits": 15,
+      "source_rows": 3,
+      "candidate_hash": "sha256:02231cc01cfaa6b2a071fb1c09d6a728c7c696be07fe5be985140a4e800ce576",
+      "normalized_hash": "sha256:02231cc01cfaa6b2a071fb1c09d6a728c7c696be07fe5be985140a4e800ce576",
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": []
+      },
+      "diff": {
+        "changed": true,
+        "safe_to_push": true,
+        "blockers": []
+      },
+      "validate": {
+        "valid": true,
+        "blockers": []
+      },
+      "source_audit": {
+        "status": "PASS",
+        "raw_pdf_gate": "PASS",
+        "blockers": []
+      },
+      "raw_sources": [
+        {
+          "source_id": "ra-1378-master-plumbing-law-local",
+          "label": "RA 1378 Master Plumbing Law",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-1378/MASTER PLUMBING LAW.pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-1378/MASTER PLUMBING LAW.pdf",
+          "raw_pdf_sha256": "sha256:84bd43fb9ae236195bc2bded5ccb6ede4339a3195e7d19fa89cbf036ff8ea5a5",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-1378/MASTER PLUMBING LAW.md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-1378/MASTER PLUMBING LAW.md",
+          "refined_markdown_sha256": "sha256:1ecd95c9aaa63e36bfa074b928d8589c42906c93ccb5621dcd0052629b0d530d",
+          "source_locator": "RA 1378 Master Plumbing Law refined markdown lines 7-10; RA 1378 Master Plumbing Law refined markdown lines 16-40; RA 1378 Master Plumbing Law refined markdown lines 55-83",
+          "checked_markdown_lines": [
+            "RA 1378 Master Plumbing Law refined markdown lines 7-10",
+            "RA 1378 Master Plumbing Law refined markdown lines 16-40",
+            "RA 1378 Master Plumbing Law refined markdown lines 55-83"
+          ]
+        },
+        {
+          "source_id": "rnpc-revised-national-plumbing-code-local",
+          "label": "Revised National Plumbing Code of the Philippines",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Revised National Plumbing Code of the Philippines.pdf",
+          "raw_pdf_sha256": "sha256:c4ec30ec3ffe3b39513a033ebc2cfa614bd201d25c5578e1847e7f359fed3f5d",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Revised National Plumbing Code of the Philippines.md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Revised National Plumbing Code of the Philippines.md",
+          "refined_markdown_sha256": "sha256:7cea224bfc6c54d0883fe69c89b97cf134e45acaab6c8950b8af3621059c9a91",
+          "source_locator": "Revised National Plumbing Code refined markdown lines 75-110; Revised National Plumbing Code refined markdown lines 147-196; Revised National Plumbing Code refined markdown lines 224-251; Revised National Plumbing Code refined markdown lines 453-477; Revised National Plumbing Code refined markdown lines 1338-1370; Revised National Plumbing Code refined markdown lines 3390-3419; Revised National Plumbing Code refined markdown lines 3660-3674; Revised National Plumbing Code refined markdown lines 4213-4260",
+          "checked_markdown_lines": [
+            "Revised National Plumbing Code refined markdown lines 75-110",
+            "Revised National Plumbing Code refined markdown lines 147-196",
+            "Revised National Plumbing Code refined markdown lines 224-251",
+            "Revised National Plumbing Code refined markdown lines 453-477",
+            "Revised National Plumbing Code refined markdown lines 1338-1370",
+            "Revised National Plumbing Code refined markdown lines 3390-3419",
+            "Revised National Plumbing Code refined markdown lines 3660-3674",
+            "Revised National Plumbing Code refined markdown lines 4213-4260"
+          ]
+        },
+        {
+          "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+          "label": "PD 1096 2004 Revised IRR - DPWH Official",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "source_locator": "PD 1096 RIRR 2004 DPWH Official refined markdown lines 968-990; PD 1096 RIRR 2004 DPWH Official refined markdown lines 3789-3897",
+          "checked_markdown_lines": [
+            "PD 1096 RIRR 2004 DPWH Official refined markdown lines 968-990",
+            "PD 1096 RIRR 2004 DPWH Official refined markdown lines 3789-3897"
+          ]
+        }
+      ],
+      "metadata_content_hash_note": "Local export baseline repaired to current original.md hash before final compose/diff/validate."
+    }
+  ],
+  "validation": {
+    "compose": "PASS for 5/5; blockers=0",
+    "diff": "PASS for 5/5; changed=true; safe_to_push=true; blockers=0",
+    "validate": "PASS for 5/5; valid=true; blockers=0; expected component-usage warnings only",
+    "ui_block_edits": "PASS for 5/5; blockers=0; warnings=0",
+    "scoped_checks": "PASS; JSON parse 169; question edits 114; source hash checks 30; marker matches 0; stale compose errors 0",
+    "targeted_tests": "PASS; 34 pass, 0 fail, 328 expects",
+    "git_diff_check": "PASS"
+  },
+  "artifacts": {
+    "ledger": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-037-local-first-ledger.json",
+    "report": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-037-local-first-report.md",
+    "scoped_checks": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-037-local-first-scoped-checks.json",
+    "handoff": "/Users/philiplewis/slatecamp/.ai/03_plans/source-audited-local-first-batches-handoff.md"
+  },
+  "next_batch_readiness": {
+    "ready": true,
+    "next_batch": "Batch 038",
+    "selection_rule": "Exclude article IDs recorded in Batches 001-037; prefer high-value LEA legal/code/professional-practice clusters with linked questions and raw PDF families available."
+  }
+}

@@ -1,87 +1,40 @@
-
+# Construction Management Services: Scope and Professional Authority
 
 ## Board Exam Quick Check
 
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+For SPP 204-B questions, keep construction management separate from regular design services and from the contractor's own work. The construction manager coordinates, controls, checks, and records. The CM does not take over the contractor's liability by directly doing the contractor's work.
 
-**Common mistake:** treating a familiar keyword in **Lea Prac Svc 014 Construction Management Services Scope And Professional Authority** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
-
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
-## Construction Management Services: Scope and Professional Authority
 ## Learning Goal
-After reading this article, you should understand the key concepts tested in the LEA for this topic, including relevant code provisions, dimensional standards, and common exam applications.
 
-Construction Management Services address the comprehensive coordination demands of modern construction projects. SPP Doc 204-B establishes standards for construction managers operating within the Philippine architectural profession. This service evolved from recognition that project complexity demands specialized management expertise beyond traditional supervision. Construction managers coordinate cost, schedule, quality, safety, and stakeholder relationships throughout project delivery.
+After reading this article, you should be able to identify why SPP 204-B exists, list the core CM functions, recognize the architect's authority limits as CM, and state the source-safe compensation rule.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-prac-svc-014-construction-management", type="image", caption="Construction Management Process Flow — Project Delivery Coordination", description="Workflow chart showing the construction management process: project assessment → team assembly → schedule coordination → multi-trade integration → cost tracking → value engineering → change management → quality assurance → safety oversight → project closeout. Based on SPP Doc 204-B.", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+## Why Construction Management Exists
 
-### Rationale and Scope of Construction Management
+SPP 204-B says construction projects have become more complex, creating demand for more effective cost control and faster implementation while maintaining high quality. Construction Management Services were instituted to answer that need in the construction industry.
 
-Construction complexity—including schedule coordination, multi-trade integration, cost control, and quality assurance—justifies specialized management roles. Construction Management services coordinate all project participants including contractors, suppliers, consultants, and regulatory authorities. The construction manager functions as the owner's representative, facilitating communication and resolving issues among project participants. This role differs fundamentally from supervision, which focuses on quality control and design verification.
+The CM may be a member of the owner's staff, an independent individual, or a firm hired by the owner to manage a particular project. An architect can serve as CM because architectural training in coordinating specialties helps with monitoring construction activities for quality, workmanship, and cost.
 
-### Construction Manager Roles and Responsibilities
+## Core Functions
 
-Construction managers coordinate multiple contractors, manage schedule progression, control project costs, and ensure quality assurance across all trades. Coordination responsibilities include scheduling, sequencing, and resource allocation across construction phases. Cost control involves budget tracking, value engineering, change management, and financial reporting. Quality assurance addresses material acceptance, workmanship standards, and compliance with design and specifications. Safety oversight ensures compliance with occupational health and safety standards.
+The CM's responsibilities include the functions of the Construction Supervision Group. SPP 204-B groups the CM's functions as coordination and supervision, cost and time control, quality control of work, and keeping of records. The CM may hire the CSG under the CM's employ or supervise a CSG hired directly by the owner.
 
-### Architect as Construction Manager
+## Authority Limits
 
-Architects frequently serve as construction managers, leveraging design knowledge and professional experience for management roles. Architects bring understanding of design intent, material properties, and construction methods essential to effective management. Professional responsibility requires architects to disclose any conflicts of interest between design and management roles. Architects as construction managers must maintain impartiality in dispute resolution and vendor selection decisions.
+The architect as CM must not involve himself directly with the contractor's work in a way that could be construed as assuming the contractor's liability under the Civil Code provision referenced by SPP 204-B. The architect as CM also must not impose methods, systems, or designs that substantially affect the construction schedule and impair the architect-of-record's design concept.
 
-### Qualification Requirements for Construction Managers
+The safe exam distinction is practical: CM is a management and coordination service, not a license to become the contractor or to override the designer's concept.
 
-Preferred qualifications include professional architecture licensure combined with significant construction experience. Deep knowledge of construction methods, material properties, and trade practices supports effective management. Financial management expertise addresses budget control and cost reporting. Project management certification and formal training enhance management capabilities. Language proficiency supports communication with contractors, suppliers, and regulatory authorities.
+## Responsibility, Qualifications, and Compensation
 
-### Hiring Arrangements and Authority Framework
+SPP 204-B makes the architect as CM directly responsible to the owner for programming, coordination, quality and cost control, and time management. It also qualifies that liability is not assumed for failures caused by plan/design deficiencies when the CM did not participate in plan/design review and approval, or by deficiencies in construction when the CM faithfully discharged CM functions.
 
-Hiring arrangements specify whether construction managers work directly for owners or through design firms. Direct owner employment establishes the construction manager as the owner's agent and primary decision maker. Design firm employment requires clear delineation of management responsibilities separate from design authority. Employment contracts establish compensation, decision-making authority, reporting relationships, and accountability frameworks. Limitation of authority specifies boundaries on unilateral spending, contractor selection, and design modification authority.
+The individual CM, or the principal of the CM firm, must be a state-regulated professional, preferably an architect with managerial capability and extensive construction experience. For an architect CM, the source expects RLA status, an updated professional identification card, and IAPOA good standing.
 
-### Method of Compensation for Construction Management
+The source-safe compensation rule is direct: construction management is not part of the architect's regular services, so services rendered by the architect as CM are separately compensated.
 
-Compensation methods include percentage of project construction cost, hourly rates, fixed fees, or contingency-based arrangements tied to cost and schedule performance. Percentage compensation aligns management interests with project scope and complexity. Fixed fees suit projects with stable scope and defined management tasks. Performance-based compensation creates incentives for cost control and schedule efficiency. Negotiated arrangements address specific project characteristics and owner preferences.
+## Common Mistakes
 
-### Legal Responsibility and Liability Framework
-
-Construction managers assume responsibility for coordination accuracy, cost management, and schedule control within their authority scope. Article 1723 liability for structural matters applies when construction managers direct structural work or approve structural submissions. Standard of care requires competent project administration, accurate documentation, and professional judgment. Limitation of authority protections apply when managers operate within defined contractual scope.
-
-[SLATECAMP_UI_BLOCK:ui_0002 component="KeyValues" status="preserved"]
-Extracted summary:
-- Props: items="{[{\"value\": \"15%\", \"label\": \"Schematic Design\"}", value=true, label=true, Design=true, Development=true, Contract=true, Docs=true, Bidding=true, Assist=true, Constr=true, Admin=true
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0003 component="ProcessFlow" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Project Definition — Problem identification Schematic Design — 15% fee; conceptual design Design Development — 20% fee; detailed design Contract Documents — 50% fee; construction docs Bidding/Negotiation — 5% fee; contractor selection Construction Admin. — 10% fee; site visits
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code="irr", section="SPP Documents", title="Professional Practice Framework"
-- Text: SPP Documents 201–209 establish standards for architectural services scope, fee structures, and professional responsibilities under RA 9266.
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Fee distribution: SD=15%, DD=20%, CD=50%, BA=5%, CA=10%. Contract Documents (50%) is the largest phase. Cumulative: 15%→35%→85%→90%→100%.
-[/SLATECAMP_UI_BLOCK]
-
----
-
-## Related Articles
-
-- [SPP Doc 202 Six-Phase Framework](lea-prac-svc-004)
-- [Schematic Design Phase](lea-prac-svc-005)
-- [Design Development Phase](lea-prac-svc-006)
-- [Contract Documents Phase](lea-prac-svc-007)
-- [Bidding and Construction Admin](lea-prac-svc-008)
-- [Pre-Design Services](lea-prac-svc-001)
-- [Specialized Services](lea-prac-svc-009)
-- [Design-Build Delivery](lea-prac-svc-019)
-- [Fee Compensation Methods](lea-prac-cmp-001)
-- [Owner-Architect Agreement](lea-prac-ctr-001)
+- Treating CM as part of regular design services with no separate compensation.
+- Making the CM the contractor's superintendent.
+- Overstating Article 1723 consequences beyond what SPP 204-B itself says.
+- Ignoring the source's authority limits on methods, systems, designs, and contractor work.

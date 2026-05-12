@@ -1,0 +1,299 @@
+{
+  "batch_id": "source-audited-article-batch-022-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T11:45:00.000+08:00",
+  "article_id": "958cf8ad-c743-41b3-a7fd-47da9421a09b",
+  "slug": "lea-prac-eth-009-introduction",
+  "title": "CPD Ethics and Compliance",
+  "status": "local_pass_ready_for_final_publishing_review",
+  "article_folder": ".ai/content-audit-export/articles/lea-prac-eth-009-introduction--958cf8ad-c743-41b3-a7fd-47da9421a09b",
+  "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-eth-009-introduction--958cf8ad-c743-41b3-a7fd-47da9421a09b",
+  "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-eth-009-introduction--958cf8ad-c743-41b3-a7fd-47da9421a09b/question-edits",
+  "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-eth-009-introduction--958cf8ad-c743-41b3-a7fd-47da9421a09b/question-edits",
+  "linked_questions": 10,
+  "question_edits_created": 10,
+  "source_safe_rewrite_question_edits": 10,
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_only": true,
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false
+  },
+  "source_audit": {
+    "checked_sources": [
+      {
+        "source_id": "ra9266-irr-board-discipline-cpd-local",
+        "label": "RA 9266 IRR - Board powers, disciplinary grounds, CPD, and enforcement",
+        "authority": "Professional Regulatory Board of Architecture / PRC",
+        "source_type": "primary_law_irr_pdf",
+        "source_locator": "RA 9266 IRR refined markdown lines 296-323, 588-630, 670-680, and 855-873",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "checked_markdown_lines": [
+          "RA 9266 IRR lines 296-323",
+          "RA 9266 IRR lines 588-630",
+          "RA 9266 IRR lines 670-680",
+          "RA 9266 IRR lines 855-873"
+        ],
+        "use": "primary local source for Board powers, disciplinary grounds, CPD, and enforcement",
+        "local_source_checked": true
+      },
+      {
+        "source_id": "uap-code-ethics-client-contractor-colleague-local",
+        "label": "UAP Architect's Code of Ethics - client, contractor, and colleague duties",
+        "authority": "United Architects of the Philippines / PRC-Board approved code source",
+        "source_type": "professional_ethics_pdf",
+        "source_locator": "UAP Code of Ethics refined markdown lines 23-29, 31-58, 60-71, and 81-99",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+        "raw_pdf_sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+        "refined_markdown_sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+        "checked_markdown_lines": [
+          "UAP Code of Ethics lines 23-29",
+          "UAP Code of Ethics lines 31-58",
+          "UAP Code of Ethics lines 60-71",
+          "UAP Code of Ethics lines 81-99"
+        ],
+        "use": "primary local source for professional ethics claim repair",
+        "local_source_checked": true
+      }
+    ],
+    "source_locator": "RA 9266 IRR refined markdown lines 296-323, 588-630, 670-680, and 855-873; UAP Code of Ethics refined markdown lines 23-29, 31-58, 60-71, and 81-99",
+    "checked_markdown_lines": [
+      "RA 9266 IRR lines 296-323",
+      "RA 9266 IRR lines 588-630",
+      "RA 9266 IRR lines 670-680",
+      "RA 9266 IRR lines 855-873",
+      "UAP Code of Ethics lines 23-29",
+      "UAP Code of Ethics lines 31-58",
+      "UAP Code of Ethics lines 60-71",
+      "UAP Code of Ethics lines 81-99"
+    ]
+  },
+  "claims": [
+    {
+      "claim_id": "batch-022-lea-prac-eth-009-introduction-question-001",
+      "claim_text": "Question 901938c1-a5e2-4468-934e-72c690090a13 / model BATCH-022-lea-prac-eth-009-introduction-001 rewritten to source-safe local form.",
+      "question_id": "901938c1-a5e2-4468-934e-72c690090a13",
+      "model_id": "BATCH-022-lea-prac-eth-009-introduction-001",
+      "support_status": "PASS",
+      "source_ids": [
+        "ra9266-irr-board-discipline-cpd-local",
+        "uap-code-ethics-client-contractor-colleague-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "source_locator": "RA 9266 IRR refined markdown lines 296-323, 588-630, 670-680, and 855-873",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-022-lea-prac-eth-009-introduction-question-002",
+      "claim_text": "Question 0b3e88c6-ef82-4a83-ac79-beb282106847 / model BATCH-022-lea-prac-eth-009-introduction-002 rewritten to source-safe local form.",
+      "question_id": "0b3e88c6-ef82-4a83-ac79-beb282106847",
+      "model_id": "BATCH-022-lea-prac-eth-009-introduction-002",
+      "support_status": "PASS",
+      "source_ids": [
+        "ra9266-irr-board-discipline-cpd-local",
+        "uap-code-ethics-client-contractor-colleague-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "source_locator": "RA 9266 IRR refined markdown lines 296-323, 588-630, 670-680, and 855-873",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-022-lea-prac-eth-009-introduction-question-003",
+      "claim_text": "Question 2909dd7a-ae02-4588-b951-e22e9afa586e / model BATCH-022-lea-prac-eth-009-introduction-003 rewritten to source-safe local form.",
+      "question_id": "2909dd7a-ae02-4588-b951-e22e9afa586e",
+      "model_id": "BATCH-022-lea-prac-eth-009-introduction-003",
+      "support_status": "PASS",
+      "source_ids": [
+        "ra9266-irr-board-discipline-cpd-local",
+        "uap-code-ethics-client-contractor-colleague-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "source_locator": "RA 9266 IRR refined markdown lines 296-323, 588-630, 670-680, and 855-873",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-022-lea-prac-eth-009-introduction-question-004",
+      "claim_text": "Question 07903847-d96f-487d-9d6b-77bc31dcb662 / model BATCH-022-lea-prac-eth-009-introduction-004 rewritten to source-safe local form.",
+      "question_id": "07903847-d96f-487d-9d6b-77bc31dcb662",
+      "model_id": "BATCH-022-lea-prac-eth-009-introduction-004",
+      "support_status": "PASS",
+      "source_ids": [
+        "ra9266-irr-board-discipline-cpd-local",
+        "uap-code-ethics-client-contractor-colleague-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "source_locator": "RA 9266 IRR refined markdown lines 296-323, 588-630, 670-680, and 855-873",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-022-lea-prac-eth-009-introduction-question-005",
+      "claim_text": "Question e5efaad5-2078-4e28-8630-8f79452369d3 / model BATCH-022-lea-prac-eth-009-introduction-005 rewritten to source-safe local form.",
+      "question_id": "e5efaad5-2078-4e28-8630-8f79452369d3",
+      "model_id": "BATCH-022-lea-prac-eth-009-introduction-005",
+      "support_status": "PASS",
+      "source_ids": [
+        "ra9266-irr-board-discipline-cpd-local",
+        "uap-code-ethics-client-contractor-colleague-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "source_locator": "RA 9266 IRR refined markdown lines 296-323, 588-630, 670-680, and 855-873",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-022-lea-prac-eth-009-introduction-question-006",
+      "claim_text": "Question 37540b83-58bb-40c0-b42f-e5fd55e5653e / model BATCH-022-lea-prac-eth-009-introduction-006 rewritten to source-safe local form.",
+      "question_id": "37540b83-58bb-40c0-b42f-e5fd55e5653e",
+      "model_id": "BATCH-022-lea-prac-eth-009-introduction-006",
+      "support_status": "PASS",
+      "source_ids": [
+        "ra9266-irr-board-discipline-cpd-local",
+        "uap-code-ethics-client-contractor-colleague-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "source_locator": "RA 9266 IRR refined markdown lines 296-323, 588-630, 670-680, and 855-873",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-022-lea-prac-eth-009-introduction-question-007",
+      "claim_text": "Question 9aeb9d49-efce-46ac-8143-bf1fd5426c9b / model BATCH-022-lea-prac-eth-009-introduction-007 rewritten to source-safe local form.",
+      "question_id": "9aeb9d49-efce-46ac-8143-bf1fd5426c9b",
+      "model_id": "BATCH-022-lea-prac-eth-009-introduction-007",
+      "support_status": "PASS",
+      "source_ids": [
+        "ra9266-irr-board-discipline-cpd-local",
+        "uap-code-ethics-client-contractor-colleague-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "source_locator": "RA 9266 IRR refined markdown lines 296-323, 588-630, 670-680, and 855-873",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-022-lea-prac-eth-009-introduction-question-008",
+      "claim_text": "Question 55911a4f-346f-4bc4-81fc-dad9174372b1 / model BATCH-022-lea-prac-eth-009-introduction-008 rewritten to source-safe local form.",
+      "question_id": "55911a4f-346f-4bc4-81fc-dad9174372b1",
+      "model_id": "BATCH-022-lea-prac-eth-009-introduction-008",
+      "support_status": "PASS",
+      "source_ids": [
+        "ra9266-irr-board-discipline-cpd-local",
+        "uap-code-ethics-client-contractor-colleague-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "source_locator": "RA 9266 IRR refined markdown lines 296-323, 588-630, 670-680, and 855-873",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-022-lea-prac-eth-009-introduction-question-009",
+      "claim_text": "Question 0f7c57fa-0b38-44b9-a746-3bc87fb8083a / model BATCH-022-lea-prac-eth-009-introduction-009 rewritten to source-safe local form.",
+      "question_id": "0f7c57fa-0b38-44b9-a746-3bc87fb8083a",
+      "model_id": "BATCH-022-lea-prac-eth-009-introduction-009",
+      "support_status": "PASS",
+      "source_ids": [
+        "ra9266-irr-board-discipline-cpd-local",
+        "uap-code-ethics-client-contractor-colleague-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "source_locator": "RA 9266 IRR refined markdown lines 296-323, 588-630, 670-680, and 855-873",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    },
+    {
+      "claim_id": "batch-022-lea-prac-eth-009-introduction-question-010",
+      "claim_text": "Question ed8aceea-0b83-40fa-b2ff-bff588bdd251 / model BATCH-022-lea-prac-eth-009-introduction-010 rewritten to source-safe local form.",
+      "question_id": "ed8aceea-0b83-40fa-b2ff-bff588bdd251",
+      "model_id": "BATCH-022-lea-prac-eth-009-introduction-010",
+      "support_status": "PASS",
+      "source_ids": [
+        "ra9266-irr-board-discipline-cpd-local",
+        "uap-code-ethics-client-contractor-colleague-local"
+      ],
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "source_locator": "RA 9266 IRR refined markdown lines 296-323, 588-630, 670-680, and 855-873",
+        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+      }
+    }
+  ],
+  "local_repairs": {
+    "normalized_rewritten": true,
+    "candidate_recomposed": true,
+    "placeholders_removed": true,
+    "source_records_created": 2,
+    "question_edits_created": 10,
+    "source_safe_rewrite_question_edits": 10,
+    "non_source_claims_removed_or_rewritten": true
+  },
+  "validation": {
+    "compose_blockers": [],
+    "diff_safe_to_push": true,
+    "diff_blockers": [],
+    "validate_valid": true,
+    "validate_blockers": [],
+    "validate_warnings": [
+      "lea-prac-eth-009-introduction--958cf8ad-c743-41b3-a7fd-47da9421a09b: component-usage.json has not been generated for this article yet."
+    ],
+    "scoped_validate_report": ".ai/content-audit-export/articles/lea-prac-eth-009-introduction--958cf8ad-c743-41b3-a7fd-47da9421a09b/batch-022-validate-report.json"
+  },
+  "blockers": [],
+  "unverified_or_rejected_claims": [],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "blockers": []
+  },
+  "sme_review": {
+    "required": false,
+    "status": "not_required_for_local_first_batch"
+  }
+}

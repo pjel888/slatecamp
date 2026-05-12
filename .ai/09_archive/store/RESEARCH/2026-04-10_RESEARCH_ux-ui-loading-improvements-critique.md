@@ -14,11 +14,11 @@ The current document already identifies the canonical primitives correctly: `Sla
 
 The document already gets several things right.
 
-It identifies the existing loading standard in the repo instead of inventing a new one. 
+It identifies the existing loading standard in the repo instead of inventing a new one.
 
-It correctly separates blocking overlays, inline button loading, route progress, and 3D-specific loading. 
+It correctly separates blocking overlays, inline button loading, route progress, and 3D-specific loading.
 
-It also recognizes that important buttons need immediate disabled state plus spinner feedback, which is absolutely correct. 
+It also recognizes that important buttons need immediate disabled state plus spinner feedback, which is absolutely correct.
 
 ### What is weak
 
@@ -82,7 +82,7 @@ The document should explicitly decide between:
 * success state
 * error recovery state
 
-Right now the document gestures in this direction, but it needs sharper decision rules. 
+Right now the document gestures in this direction, but it needs sharper decision rules.
 
 ### 4. Timing rules
 
@@ -121,7 +121,7 @@ This is the part the document should emphasize much more strongly.
 
 ## A. Drill flows
 
-This is the most important area in the product. Drills are the core learning engine. 
+This is the most important area in the product. Drills are the core learning engine.
 
 ### Critical gaps to address
 
@@ -161,7 +161,7 @@ The current document only mentions quiz shells in passing. That is not enough.
 
 ## B. Analytics dashboard
 
-Analytics is dense, multi-section, and Suspense-based. 
+Analytics is dense, multi-section, and Suspense-based.
 
 ### UX problem
 
@@ -192,7 +192,7 @@ The current document mentions analytics only indirectly through general route co
 
 ## C. 3D Lab
 
-The 3D Lab is a premium differentiator and performance-sensitive surface. 
+The 3D Lab is a premium differentiator and performance-sensitive surface.
 
 ### UX problem
 
@@ -225,7 +225,7 @@ It notes `CanvasLoadingOverlay`, which is good, but it does not push hard enough
 
 ## D. Wiki article transitions
 
-The wiki is content-heavy and server-first. 
+The wiki is content-heavy and server-first.
 
 ### UX problem
 
@@ -249,7 +249,7 @@ The current document treats route coverage as enough. It is not enough. The wiki
 
 ## E. Notes
 
-The notes system is persistence-sensitive. Users care whether their thought was saved. 
+The notes system is persistence-sensitive. Users care whether their thought was saved.
 
 ### UX problem
 
@@ -273,7 +273,7 @@ Notes are only briefly mentioned. They deserve a dedicated subsection because no
 
 ## F. Camp Trails
 
-Trails are programmatic and guided. 
+Trails are programmatic and guided.
 
 ### UX problem
 
@@ -294,7 +294,7 @@ Right now the mention is too shallow.
 
 ## G. Admin CMS
 
-Admin is a professional tool. Silent writes are unacceptable. 
+Admin is a professional tool. Silent writes are unacceptable.
 
 ### UX problem
 
@@ -411,7 +411,7 @@ This would include:
 
 ## How I would rewrite the priorities
 
-Your current priority list is too generic. 
+Your current priority list is too generic.
 
 I would rewrite it like this:
 

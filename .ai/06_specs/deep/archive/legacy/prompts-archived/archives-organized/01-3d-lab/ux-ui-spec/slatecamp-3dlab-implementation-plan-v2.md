@@ -1,8 +1,8 @@
 # MASTER IMPLEMENTATION PLAN: SLATECAMP 3D LEARNING LAB v2.0
 
-**Last updated:** 2026-03-24  
-**Status:** Pre-development  
-**Stack:** Next.js App Router · React Three Fiber · drei · Zustand · Supabase · Tailwind CSS · Shadcn  
+**Last updated:** 2026-03-24
+**Status:** Pre-development
+**Stack:** Next.js App Router · React Three Fiber · drei · Zustand · Supabase · Tailwind CSS · Shadcn
 **Target:** 60fps on mid-range Android (Snapdragon 680-tier), 375px+ viewports
 
 ---
@@ -26,27 +26,27 @@ These six principles override any local implementation decision. If a feature co
 
 ### 1. Guided discovery is the default mode
 
-Unassisted discovery underperforms explicit instruction (d = −0.38). Guided discovery — scaffolded sequencing with student-controlled pacing — produces the strongest outcomes (d = 0.50). Every module defaults to guided discovery. Free exploration is earned by completing the guided path and scoring ≥80% on the in-canvas quiz.  
+Unassisted discovery underperforms explicit instruction (d = −0.38). Guided discovery — scaffolded sequencing with student-controlled pacing — produces the strongest outcomes (d = 0.50). Every module defaults to guided discovery. Free exploration is earned by completing the guided path and scoring ≥80% on the in-canvas quiz.
 **Research basis:** Alfieri et al. 2011 meta-analysis (164 studies, 940 comparisons).
 
 ### 2. Cognitive load stays below the working memory ceiling
 
-No more than 5 hotspots visible simultaneously. No more than 40 words per annotation. Annotations appear adjacent to the element they describe (spatial contiguity, g = 0.63). Non-active geometry dims to 30% opacity during guided sequences. Seductive details (decorative geometry irrelevant to the code provision) are suppressed during learning.  
+No more than 5 hotspots visible simultaneously. No more than 40 words per annotation. Annotations appear adjacent to the element they describe (spatial contiguity, g = 0.63). Non-active geometry dims to 30% opacity during guided sequences. Seductive details (decorative geometry irrelevant to the code provision) are suppressed during learning.
 **Research basis:** Cowan's 4±1 working memory limit; Stull & Mayer 2007 (signaling saturation); Schroeder & Cenkci 2018 meta-analysis (58 comparisons).
 
 ### 3. Generation before instruction
 
-Parametric sliders require the student to set a dimension before the system reveals the correct value. This error-then-correction sequence exploits the generation effect (up to 40% recall improvement) and productive failure (g = 0.87). The slider does not hint at the answer.  
+Parametric sliders require the student to set a dimension before the system reveals the correct value. This error-then-correction sequence exploits the generation effect (up to 40% recall improvement) and productive failure (g = 0.87). The slider does not hint at the answer.
 **Research basis:** Slamecka & Graf 1978; Sinha & Kapur 2021 meta-analysis.
 
 ### 4. Student controls pacing — always
 
-Auto-rotate is disabled on load. Hotspots never auto-advance. The guided sequence advances only when the student taps "Next." If a student lingers >45 seconds on a single hotspot without interaction, a subtle "Ready for the next one? →" prompt appears — but never forces progression.  
+Auto-rotate is disabled on load. Hotspots never auto-advance. The guided sequence advances only when the student taps "Next." If a student lingers >45 seconds on a single hotspot without interaction, a subtle "Ready for the next one? →" prompt appears — but never forces progression.
 **Research basis:** Self-determination theory (autonomy); Mayer's pacing principle.
 
 ### 5. The 3D Lab must transfer to 2D exam performance
 
-The Philippine ALE tests spatial code knowledge on 2D plans, sections, and elevations. A 3D model only justifies its engineering cost if it produces spatial understanding that transfers to those 2D formats. Every module includes a 3D-to-2D bridge: preset architectural view buttons (Plan / Section / 3D) that teach dimensional translation, and at least one quiz question that presents information in a 2D format.  
+The Philippine ALE tests spatial code knowledge on 2D plans, sections, and elevations. A 3D model only justifies its engineering cost if it produces spatial understanding that transfers to those 2D formats. Every module includes a 3D-to-2D bridge: preset architectural view buttons (Plan / Section / 3D) that teach dimensional translation, and at least one quiz question that presents information in a 2D format.
 **Research basis:** Yamada & Hirokawa 2015 meta-analysis; Ohio State scaffolded VR study 2025.
 
 ### 6. Measure everything, assume nothing
@@ -369,7 +369,7 @@ autoRotate:      false (never, always)
 
 ### 2.3 — Loading, error, and empty states
 
-**LabLoadingState.tsx:**  
+**LabLoadingState.tsx:**
 The loading screen is a learning opportunity, not dead time. The pre-training principle (d = 0.75) means displaying relevant building code facts while the model loads.
 
 - Cream background renders immediately (never a blank white screen)
@@ -380,13 +380,13 @@ The loading screen is a learning opportunity, not dead time. The pre-training pr
 - Accelerating progress bar (feels 11% shorter than constant-speed bars per Harrison 2007)
 - **Abort threshold:** If loading exceeds 8 seconds, display a "View as 2D" fallback button
 
-**LabErrorState.tsx:**  
+**LabErrorState.tsx:**
 - Architectural line drawing (SVG placeholder) of the topic
 - "3D model unavailable. The wiki article has all the information you need."
 - Link to relevant wiki section
 - Never a red error message — calm, informative, redirects
 
-**LabEmptyState.tsx:**  
+**LabEmptyState.tsx:**
 - "No 3D model yet for this topic. Check back — we're building it."
 - DM Mono eyebrow, 2-line Inter body
 - Never "Coming soon" — honest about the current state

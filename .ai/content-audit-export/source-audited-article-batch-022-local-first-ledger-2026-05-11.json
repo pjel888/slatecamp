@@ -1,0 +1,329 @@
+{
+  "schema_version": "source-audited-article-local-first-ledger-v1",
+  "batch_id": "source-audited-article-batch-022-local-first",
+  "generated_at": "2026-05-10T17:56:15.182Z",
+  "generated_local_at": "2026-05-11T11:45:00.000+08:00",
+  "generated_local_timezone": "Asia/Manila",
+  "mode": "local_first_no_supabase_no_deploy_no_commit",
+  "selected_article_count": 5,
+  "prior_batch_id_check": {
+    "checked_batches": "001-021",
+    "checked_file_count": 53,
+    "prior_uuid_count": 314,
+    "selected_article_ids_not_in_prior_batches": true,
+    "selected_article_ids": [
+      "958cf8ad-c743-41b3-a7fd-47da9421a09b",
+      "01e537a7-be03-49ec-b745-258474c27f70",
+      "5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5",
+      "4e28889a-cba3-4bf4-805c-ff0526910ee3",
+      "1277bf71-f3cc-4d29-86a8-8cadca0133f9"
+    ],
+    "selected_prior_hits": []
+  },
+  "selection_rationale": "Selected high-value LEA professional-practice/legal/contract-administration clusters with linked questions and available local raw PDF sources; avoided IDs recorded in prior batch 001-021 artifacts.",
+  "articles": [
+    {
+      "article_id": "958cf8ad-c743-41b3-a7fd-47da9421a09b",
+      "slug": "lea-prac-eth-009-introduction",
+      "title": "CPD Ethics and Compliance",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-prac-eth-009-introduction--958cf8ad-c743-41b3-a7fd-47da9421a09b",
+      "absolute_article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-eth-009-introduction--958cf8ad-c743-41b3-a7fd-47da9421a09b",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-eth-009-introduction--958cf8ad-c743-41b3-a7fd-47da9421a09b/question-edits",
+      "absolute_question_edits_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-eth-009-introduction--958cf8ad-c743-41b3-a7fd-47da9421a09b/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 2,
+      "sources": [
+        {
+          "source_id": "ra9266-irr-board-discipline-cpd-local",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+          "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+          "source_locator": "RA 9266 IRR refined markdown lines 296-323, 588-630, 670-680, and 855-873"
+        },
+        {
+          "source_id": "uap-code-ethics-client-contractor-colleague-local",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+          "raw_pdf_sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+          "refined_markdown_sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+          "source_locator": "UAP Code of Ethics refined markdown lines 23-29, 31-58, 60-71, and 81-99"
+        }
+      ],
+      "normalized_hash": "sha256:4fa1d83be03e8fe8f673a698756cf8955cee3c28a3e85fe121639d5a0ad23a6b",
+      "candidate_hash": "sha256:4fa1d83be03e8fe8f673a698756cf8955cee3c28a3e85fe121639d5a0ad23a6b",
+      "ui_blocks_hash": "sha256:1d5ed2f5f006c35a97f46fadc75516ee904ca49b7bfd804e7f50f4a1e61265ab",
+      "sources_hash": "sha256:0bf72d3c18169bd1635c089ca628fb4131fe96dc190fa4e4efdd9b50f03f56b4",
+      "source_audit_status": "PASS",
+      "safe_for_supabase_upload_after_final_review": true,
+      "local_status": "locally_passed",
+      "validation": {
+        "compose_blockers": 0,
+        "compose_warnings": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "bundle_validate_valid": true,
+        "bundle_validate_blockers": [],
+        "bundle_validate_warnings": [
+          "lea-prac-eth-009-introduction--958cf8ad-c743-41b3-a7fd-47da9421a09b: component-usage.json has not been generated for this article yet."
+        ],
+        "scoped_validate_report": ".ai/content-audit-export/articles/lea-prac-eth-009-introduction--958cf8ad-c743-41b3-a7fd-47da9421a09b/batch-022-validate-report.json"
+      }
+    },
+    {
+      "article_id": "01e537a7-be03-49ec-b745-258474c27f70",
+      "slug": "lea-prac-svc-023-core-concept",
+      "title": "Architect's Guidelines (formerly 1979 UAP Doc 208-b",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-prac-svc-023-core-concept--01e537a7-be03-49ec-b745-258474c27f70",
+      "absolute_article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-023-core-concept--01e537a7-be03-49ec-b745-258474c27f70",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-svc-023-core-concept--01e537a7-be03-49ec-b745-258474c27f70/question-edits",
+      "absolute_question_edits_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-023-core-concept--01e537a7-be03-49ec-b745-258474c27f70/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 1,
+      "sources": [
+        {
+          "source_id": "uap-standards-selection-compensation-supervision-cm-local",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+          "source_locator": "UAP Standards refined markdown lines 79-100, 217-265, 416-458, 915-964, 1129-1168, and 1174-1216"
+        }
+      ],
+      "normalized_hash": "sha256:42bfb65949f3aa36fb9549f5882493b6a1d05b881ce6f3d59633e2a59e4d67ff",
+      "candidate_hash": "sha256:42bfb65949f3aa36fb9549f5882493b6a1d05b881ce6f3d59633e2a59e4d67ff",
+      "ui_blocks_hash": "sha256:d5e6932996b6907ff92d9c89aadb8ba201ff423aaad59c4c4a8fe2f2551bbf41",
+      "sources_hash": "sha256:e6e391efa9f2061ba76536bd339780cb7bb1758bd5722cf8be1a11d612513460",
+      "source_audit_status": "PASS",
+      "safe_for_supabase_upload_after_final_review": true,
+      "local_status": "locally_passed",
+      "validation": {
+        "compose_blockers": 0,
+        "compose_warnings": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "bundle_validate_valid": true,
+        "bundle_validate_blockers": [],
+        "bundle_validate_warnings": [
+          "lea-prac-svc-023-core-concept--01e537a7-be03-49ec-b745-258474c27f70: component-usage.json has not been generated for this article yet."
+        ],
+        "scoped_validate_report": ".ai/content-audit-export/articles/lea-prac-svc-023-core-concept--01e537a7-be03-49ec-b745-258474c27f70/batch-022-validate-report.json"
+      }
+    },
+    {
+      "article_id": "5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5",
+      "slug": "lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor",
+      "title": "Architect's Authority During Construction Powers Limits",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-c--5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5",
+      "absolute_article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-c--5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-c--5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5/question-edits",
+      "absolute_question_edits_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-c--5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 2,
+      "sources": [
+        {
+          "source_id": "uap-document-301-general-conditions-local",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+          "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+          "refined_markdown_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+          "source_locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080"
+        },
+        {
+          "source_id": "uap-code-ethics-client-contractor-colleague-local",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+          "raw_pdf_sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+          "refined_markdown_sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+          "source_locator": "UAP Code of Ethics refined markdown lines 23-29, 31-58, 60-71, and 81-99"
+        }
+      ],
+      "normalized_hash": "sha256:e0f2a975f48f00985cc5b766ac9104e120e715fb5174f590b2c67b012aecbd93",
+      "candidate_hash": "sha256:e0f2a975f48f00985cc5b766ac9104e120e715fb5174f590b2c67b012aecbd93",
+      "ui_blocks_hash": "sha256:101a7584379bfbc11c5cd289a38c5927e47dba0d331aa0d63a0b5f0f7b67f4e0",
+      "sources_hash": "sha256:4115169fdb2c35727e3a21765ba0e968b263048fceacd7817af4a02770e84c20",
+      "source_audit_status": "PASS",
+      "safe_for_supabase_upload_after_final_review": true,
+      "local_status": "locally_passed",
+      "validation": {
+        "compose_blockers": 0,
+        "compose_warnings": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "bundle_validate_valid": true,
+        "bundle_validate_blockers": [],
+        "bundle_validate_warnings": [
+          "lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-c--5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5: component-usage.json has not been generated for this article yet."
+        ],
+        "scoped_validate_report": ".ai/content-audit-export/articles/lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-c--5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5/batch-022-validate-report.json"
+      }
+    },
+    {
+      "article_id": "4e28889a-cba3-4bf4-805c-ff0526910ee3",
+      "slug": "lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process",
+      "title": "Change Orders Types Authority Limits and the Documentation Process",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process--4e28889a-cba3-4bf4-805c-ff0526910ee3",
+      "absolute_article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process--4e28889a-cba3-4bf4-805c-ff0526910ee3",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process--4e28889a-cba3-4bf4-805c-ff0526910ee3/question-edits",
+      "absolute_question_edits_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process--4e28889a-cba3-4bf4-805c-ff0526910ee3/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 2,
+      "sources": [
+        {
+          "source_id": "uap-document-301-general-conditions-local",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+          "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+          "refined_markdown_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+          "source_locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080"
+        },
+        {
+          "source_id": "ciap-document-102-change-orders-claims-local",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+          "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+          "refined_markdown_sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
+          "source_locator": "CIAP Document 102 refined markdown lines 21, 287, 468, 497, 507, 522, 573, 598, and 899-903"
+        }
+      ],
+      "normalized_hash": "sha256:a9f5d3e5f4d95a28e557c1e75be185eaf033fa12adecdfa7f5f617fbe8a8c562",
+      "candidate_hash": "sha256:a9f5d3e5f4d95a28e557c1e75be185eaf033fa12adecdfa7f5f617fbe8a8c562",
+      "ui_blocks_hash": "sha256:d3956c84f3de80a725e14fb077e13cf9a9aedf1b457c069957be2c18db99d684",
+      "sources_hash": "sha256:4c716a39dd85d3a56dcc90593e2679b308e27cce3e14b94705758b7196b768d8",
+      "source_audit_status": "PASS",
+      "safe_for_supabase_upload_after_final_review": true,
+      "local_status": "locally_passed",
+      "validation": {
+        "compose_blockers": 0,
+        "compose_warnings": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "bundle_validate_valid": true,
+        "bundle_validate_blockers": [],
+        "bundle_validate_warnings": [
+          "lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process--4e28889a-cba3-4bf4-805c-ff0526910ee3: component-usage.json has not been generated for this article yet."
+        ],
+        "scoped_validate_report": ".ai/content-audit-export/articles/lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process--4e28889a-cba3-4bf4-805c-ff0526910ee3/batch-022-validate-report.json"
+      }
+    },
+    {
+      "article_id": "1277bf71-f3cc-4d29-86a8-8cadca0133f9",
+      "slug": "lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration",
+      "title": "Full Time Supervision vs Construction Management vs SPP 202",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration--1277bf71-f3cc-4d29-86a8-8cadca0133f9",
+      "absolute_article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration--1277bf71-f3cc-4d29-86a8-8cadca0133f9",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration--1277bf71-f3cc-4d29-86a8-8cadca0133f9/question-edits",
+      "absolute_question_edits_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration--1277bf71-f3cc-4d29-86a8-8cadca0133f9/question-edits",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 5,
+      "sources": [
+        {
+          "source_id": "uap-standards-selection-compensation-supervision-cm-local",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+          "source_locator": "UAP Standards refined markdown lines 79-100, 217-265, 416-458, 915-964, 1129-1168, and 1174-1216"
+        },
+        {
+          "source_id": "spp-202-regular-design-services-local",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+          "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+          "refined_markdown_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+          "source_locator": "SPP 202 refined markdown lines 175-183, corroborated by UAP Standards lines 1129-1168"
+        },
+        {
+          "source_id": "spp-204a-full-time-supervision-local",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204A.pdf",
+          "raw_pdf_sha256": "sha256:ec08811ae8611f077fda9f0d1106cc7fab6a1e6210fe6d617637adaa6de083b8",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md",
+          "refined_markdown_sha256": "sha256:9044ca5193245c730509d0022e13d597b62ad9ea969e5e870bd2954faeb89500",
+          "source_locator": "SPP 204-A refined markdown lines 201-207, corroborated by UAP Standards lines 915-964 and 1129-1168"
+        },
+        {
+          "source_id": "spp-204b-construction-management-local",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204B.pdf",
+          "raw_pdf_sha256": "sha256:b6bfffcf6e3ca7a4317121b28d5fab9237c2a4642b450573232516ef9dfb697e",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204B.md",
+          "refined_markdown_sha256": "sha256:b49b5fcffe1e1ad48cb618b70d6a369400a0c7460dd3fa7ea471ee5900dc53e8",
+          "source_locator": "SPP 204-B refined markdown line 7, corroborated by UAP Standards lines 1174-1216"
+        },
+        {
+          "source_id": "uap-document-301-general-conditions-local",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+          "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+          "refined_markdown_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+          "source_locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080"
+        }
+      ],
+      "normalized_hash": "sha256:39034b54cdb869ddbbe87b784a47110f78383dde05b6952783f2473918772d02",
+      "candidate_hash": "sha256:39034b54cdb869ddbbe87b784a47110f78383dde05b6952783f2473918772d02",
+      "ui_blocks_hash": "sha256:05a65544e588fdd9ddbde0013012eab29d1062c0ff2279614e644502fe647b66",
+      "sources_hash": "sha256:f98cd48050a7bc21e1030215b499c705b95a94fde60360f38b9044507173a55c",
+      "source_audit_status": "PASS",
+      "safe_for_supabase_upload_after_final_review": true,
+      "local_status": "locally_passed",
+      "validation": {
+        "compose_blockers": 0,
+        "compose_warnings": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": [],
+        "bundle_validate_valid": true,
+        "bundle_validate_blockers": [],
+        "bundle_validate_warnings": [
+          "lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration--1277bf71-f3cc-4d29-86a8-8cadca0133f9: component-usage.json has not been generated for this article yet."
+        ],
+        "scoped_validate_report": ".ai/content-audit-export/articles/lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration--1277bf71-f3cc-4d29-86a8-8cadca0133f9/batch-022-validate-report.json"
+      }
+    }
+  ],
+  "artifact_paths": {
+    "ledger": ".ai/content-audit-export/source-audited-article-batch-022-local-first-ledger-2026-05-11.json",
+    "report": ".ai/content-audit-export/source-audited-article-batch-022-local-first-report-2026-05-11.md"
+  },
+  "counts": {
+    "selected_articles": 5,
+    "locally_passed_articles": 5,
+    "linked_questions": 50,
+    "question_edits_created": 50,
+    "source_records_created": 12,
+    "distinct_raw_pdfs_checked": 8,
+    "compose_passed": 5,
+    "diff_locally_safe": 5,
+    "bundle_validate_passed": 5
+  },
+  "validation": {
+    "json_parse_check": "passed",
+    "question_edit_count_check": "passed",
+    "source_file_hash_check": "passed",
+    "content_marker_scan": "passed",
+    "compose_diff_validate": "passed",
+    "content_audit_unit_test": "passed: bun test scripts/content-audit/content-audit.test.ts (27 pass, 0 fail)",
+    "git_diff_check_scoped": "passed: git diff --check over selected batch paths",
+    "nonblocking_warnings": [
+      "lea-prac-eth-009-introduction--958cf8ad-c743-41b3-a7fd-47da9421a09b: component-usage.json has not been generated for this article yet.",
+      "lea-prac-svc-023-core-concept--01e537a7-be03-49ec-b745-258474c27f70: component-usage.json has not been generated for this article yet.",
+      "lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-c--5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5: component-usage.json has not been generated for this article yet.",
+      "lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process--4e28889a-cba3-4bf4-805c-ff0526910ee3: component-usage.json has not been generated for this article yet.",
+      "lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration--1277bf71-f3cc-4d29-86a8-8cadca0133f9: component-usage.json has not been generated for this article yet."
+    ]
+  },
+  "safety": {
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "local_only": true
+  },
+  "next_phase_readiness": {
+    "status": "ready_for_final_publishing_review_only",
+    "blockers": [],
+    "required_next_gate": "Supabase final publishing review/dry-run/apply in a separate authorized phase only."
+  }
+}

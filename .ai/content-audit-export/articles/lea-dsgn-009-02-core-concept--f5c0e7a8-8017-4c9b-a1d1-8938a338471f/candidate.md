@@ -10,9 +10,9 @@ Before memorizing details from this topic, state the exam task in one sentence: 
 ## What You Need to Know for the LEA
 
 ## Learning Goal
-Apply daylighting strategies beyond NBC 1:10 minimum window-to-floor ratio, calculate daylight penetration depth (typically 2.5× window head height), specify glare control devices, and integrate daylight with artificial lighting controls.
+Apply daylighting strategies beyond the PD 1096 minimum window-opening requirement, distinguish code minimums from design heuristics, specify glare control devices, and integrate daylight with artificial lighting controls.
 
-Natural lighting design extends beyond the National Building Code's minimum window-to-floor ratio. The LEA tests whether candidates can optimize daylighting depth, glare control, and visual comfort while maintaining or exceeding code minimums. The NBC standard (**1:10 for light**, **1:20 for ventilation**) is a legal _baseline_, not a design target.
+Natural lighting design extends beyond the National Building Code's minimum window-opening requirement. The LEA tests whether candidates can optimize daylighting depth, glare control, and visual comfort while maintaining or exceeding code minimums. PD 1096 Section 808 is the legal baseline for window openings; daylight depth and glare control are design judgments layered on top of that baseline.
 
 ## Core Concept
 
@@ -20,27 +20,27 @@ Daylighting provides illumination, psychological benefits, and energy savings. H
 
 ### The Rule of Thumb: Daylighting Depth
 
-The **daylighting depth**—the distance from a window at which daylight becomes insufficient (typically &lt;50 lux)—is approximately **2.5 times the floor-to-ceiling height**.
+The **daylighting depth** is a design heuristic for estimating how far useful daylight reaches from a window. It is not a prescriptive PD 1096 limit.
 
-- **Example:** A 3.0 m tall office space gains adequate daylight up to 7.5 m from the facade.
-- **Note:** This is an international design guideline (IESNA) used for high-performance buildings; it is not a prescriptive limit in PD 1096, but it is frequently tested as a "best practice" metric in the LEA.
+- **Example:** A common rule-of-thumb estimates useful daylight at roughly 2.5 times the window-head or ceiling height.
+- **Note:** Treat this as design guidance from the cited daylighting reference material, not as a locally sourced statutory requirement.
 
 ### Statutory Minimums: Window-to-Floor Ratio (WFR)
 
 The **Window-to-Floor Ratio (WFR)** is the total window area divided by the floor area served.
 
-- **PD 1096 Rule VIII, Section 808:** Specifies **1:10 (10%)** window area minimum for light.
-- **PD 1096 Rule VIII, Section 808:** Specifies **1:20 (5%)** window area minimum for natural ventilation.
+- **PD 1096 Section 808:** Requires windows with total free area of openings equal to at least **10% of the room floor area** for rooms not provided with artificial ventilation, opening directly to an acceptable court, yard, street, alley, or open water course.
+- **Ventilation:** Verify natural or artificial ventilation requirements from the applicable PD 1096 ventilation provisions; do not infer a separate 1:20 ratio from the local source packet without a supporting citation.
 - **Critical Error:** Do not use 1:5 (20%). This is a common mistake (ERR-DSGN-034).
-<ArticleMedia id="media-lea-dsgn-009-02-core-concept" type="image" caption="Daylighting Strategy — Window-to-Floor Ratio and Light Penetration Depth" description="Building section showing daylight penetration: minimum 1:10 window-to-floor ratio, light penetration depth (2.5× window head height), glare control devices (lightshelves, louvers, fins), and integration with artificial lighting controls." suggestedAsset="Diagram or reference image" status="placeholder" />
+<ArticleMedia id="media-lea-dsgn-009-02-core-concept" type="image" caption="Daylighting Strategy — Window-to-Floor Ratio and Light Penetration Depth" description="Building section showing the PD 1096 1:10 window-opening minimum, daylight penetration as a design heuristic, glare control devices, and integration with artificial lighting controls." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Key Provisions
 
 | Design Goal | Metric | Standard | Source |
 |:---------------------- |:------------------------- |:----------------------- |:------------------------------ |
 | **Minimum Daylighting** | Window-to-floor ratio | **1:10 (10%)** | PD 1096 Sec. 808 |
-| **Minimum Ventilation** | Operable window ratio | **1:20 (5%)** | PD 1096 Sec. 808 |
-| **Daylighting Depth** | Effective penetration | **2.5 × ceiling height** | IESNA Guideline |
+| **Ventilation Check** | Natural or artificial ventilation | Verify applicable provision | PD 1096 ventilation provisions |
+| **Daylighting Depth** | Effective penetration | Rule-of-thumb only | Design guidance, not PD 1096 minimum |
 | **Glare Control** | Visible Transmittance (VT) | &lt;40% (South/West) | Design Best Practice |
 
 ## Philippine Practice Context
@@ -61,7 +61,7 @@ A 2,000 m² floor plate has 180 m² of exterior windows. Is it compliant for lig
 - **Answer:** **No.** 1:11.1 is less than the required 1:10 (10%).
 
 **Test Pattern 2: Depth Application**
-An office has a 3.0 m ceiling. How deep does "effective" daylight reach?
+An office has a 3.0 m ceiling. If the exam gives the 2.5× daylight-depth rule of thumb, how deep does "effective" daylight reach?
 
 - **Calculation:** $2.5 \times 3.0 = 7.5\text{ m}$.
 - **Application:** Beyond 7.5 m, artificial lighting or "secondary zones" are required.
@@ -72,8 +72,8 @@ The exam asks for the minimum window area for a 100 m² room.
 - **Answer:** 10 m² (1:10).
 - **Warning:** If you select 20 m² (1:5), you are applying a common misconception not supported by the NBCP.
 
-**Exam Tip:** NBC minimum = 1:10 window-to-floor ratio for light, 1:20 for ventilation. Daylight penetration depth ≈ 2.5× window head height. A 2m high window provides useful daylight ~5m into the room.
-<ArticleMedia id="media-lea-dsgn-009-02-core-concept" type="image" caption="Daylight Penetration — Section Showing Light Shelf and Glare Control" description="Section diagram showing daylight penetration depth (2.5× window head height), light shelf positioning (above eye level at 2.0m minimum), glare control devices (horizontal louvers, vertical fins), and minimum window-to-floor area ratio (1:10 per NBC). Interior daylight distribution zones labeled." suggestedAsset="Diagram or reference image" status="placeholder" />
+**Exam Tip:** PD 1096 Section 808 supports the 1:10 window-opening minimum for rooms not served by artificial ventilation. Treat daylight penetration rules such as 2.5× window-head height as design heuristics unless the question names the reference.
+<ArticleMedia id="media-lea-dsgn-009-02-core-concept" type="image" caption="Daylight Penetration — Section Showing Light Shelf and Glare Control" description="Section diagram showing daylight penetration as a design heuristic, light shelf positioning, glare control devices, and the minimum window-opening ratio of 1:10 per PD 1096. Interior daylight distribution zones labeled." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ## Cross-References
 
@@ -82,9 +82,9 @@ See **LEA-DSGN-009-01** (Passive Design) for solar control strategies, **LEA-DSG
 ## Common Mistakes
 
 <WikiMistakeList mistakes={[
- 'ERR-DSGN-034: Using 1:5 (20% WFR) instead of the correct 1:10 (10% WFR) for daylighting minimums.',
+ 'ERR-DSGN-034: Using 1:5 (20% WFR) instead of the correct 1:10 (10% WFR) for the PD 1096 window-opening minimum.',
  "Treating the 2.5× height rule as a legal 'limit' rather than a design optimization tool.",
- 'Confusing the 1:10 light requirement with the 1:20 ventilation requirement.',
+ 'Treating a ventilation ratio as locally supported without checking the applicable PD 1096 ventilation provision.',
  'Ignoring glare control; assuming more glass always equals better design (excessive glass leads to solar heat gain).',
  'Applying code minimums as the final design goal rather than the starting baseline.',
  ]} />

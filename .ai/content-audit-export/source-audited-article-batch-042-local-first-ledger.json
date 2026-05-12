@@ -1,0 +1,217 @@
+{
+  "batch_id": "source-audited-article-batch-042-local-first",
+  "batch_number": 42,
+  "generated_at": "2026-05-11T07:15:23.381Z",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "local_only": true,
+  "supabase_push": false,
+  "deploy": false,
+  "commit": false,
+  "inherited_blocker_status": "Batch 041 blockers=0",
+  "selection_rule": "Five high-value accessibility/circulation clusters with linked questions and local BP 344 2024 Revised IRR plus PD 1096 2004 Revised IRR raw PDF families, excluding Batch 001-041 recorded IDs.",
+  "counts": {
+    "selected_articles": 5,
+    "linked_questions": 101,
+    "question_edits": 101,
+    "source_rows": 7,
+    "unique_raw_pdfs": 2,
+    "json_parse": 157,
+    "source_hash_checks": 14,
+    "source_hash_checks_passed": 14,
+    "marker_internal_source_gap_matches": 0,
+    "stale_compose_error_files": 0
+  },
+  "validation": {
+    "compose": "PASS 5/5",
+    "diff": "PASS 5/5",
+    "validate": "PASS 5/5",
+    "ui_block_validation": "PASS 5/5",
+    "scoped_json_parse": "PASS 157 JSON files",
+    "marker_internal_source_gap_scan": "PASS 0 matches on publication surfaces and question edits",
+    "source_hash_checks": "PASS 14/14",
+    "question_edit_count_checks": "PASS 101/101",
+    "stale_compose_error_checks": "PASS 0 stale files",
+    "targeted_content_audit_tests": "PASS 7 tests; 244 expect calls",
+    "scoped_git_diff_check": "PASS"
+  },
+  "blockers": [],
+  "source_evidence": {
+    "source_families": [
+      "BP 344 2024 Revised IRR local raw PDF for accessible ramps/handrails, parking, site routes, sidewalks/walkways, curb ramps, doors/corridors, counters, ATMs, tactile guidance, and signage.",
+      "PD 1096 2004 Revised IRR local raw PDF for stair, egress, corridor, exit-door, sidewalk/entrance, and projection cross-checks where selected articles require it."
+    ],
+    "unique_raw_pdf_paths": [
+      "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf"
+    ]
+  },
+  "artifacts": {
+    "report": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-042-local-first-report.md",
+    "ledger": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-042-local-first-ledger.json",
+    "scoped_checks": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-042-local-first-scoped-checks.json",
+    "handoff": "/Users/philiplewis/slatecamp/.ai/03_plans/source-audited-local-first-batches-handoff.md"
+  },
+  "next_batch_readiness": "READY_FOR_BATCH_043_SELECTION",
+  "articles": [
+    {
+      "ordinal": 1,
+      "article_id": "184a1593-2137-45ee-80d4-99c1c4595e84",
+      "slug": "widths-slopes",
+      "title": "Widths & Slopes",
+      "article_folder_path": ".ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84/question-edits",
+      "linked_questions": 21,
+      "question_edits": 21,
+      "source_rows": 1,
+      "candidate_hash": "sha256:440e21ae19d6d8c0a69e49cca47fde88372bc0be1e3703a9286ecf0f7808b2bc",
+      "normalized_hash": "sha256:440e21ae19d6d8c0a69e49cca47fde88372bc0be1e3703a9286ecf0f7808b2bc",
+      "original_hash": "sha256:9e300210c2e0816e574c80ed8ef4dd4faf3d611b6a6a9c10ce12d1f554e8cf49",
+      "sources_hash": "sha256:d8a6e561120517c3f37a0f812fb23493ac16f2baae6d8c87304ed65604bc38b4",
+      "gates": {
+        "compose": "PASS",
+        "diff": "PASS",
+        "validate": "PASS",
+        "ui_block_validation": "PASS",
+        "source_audit": "PASS"
+      },
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/widths-slopes--184a1593-2137-45ee-80d4-99c1c4595e84/ui-blocks.json"
+      ]
+    },
+    {
+      "ordinal": 2,
+      "article_id": "1a02a1a5-27e5-4a26-85d2-fceac4433edc",
+      "slug": "wheelchair-maneuvering-and-parking-slots",
+      "title": "Wheelchair Maneuvering and Parking Slots",
+      "article_folder_path": ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc/question-edits",
+      "linked_questions": 21,
+      "question_edits": 21,
+      "source_rows": 1,
+      "candidate_hash": "sha256:c95c8eaa3eb4f0c723faf81d4a071f1b587c19f9a4748eef00877adf542c2a21",
+      "normalized_hash": "sha256:c95c8eaa3eb4f0c723faf81d4a071f1b587c19f9a4748eef00877adf542c2a21",
+      "original_hash": "sha256:7c629f5507233bbe66e1f7edd7382efb946c3859dddf01232b49126681ed0f76",
+      "sources_hash": "sha256:1e7cb1d7b2fa09476231a5fdd1d4ff4fb5e17212bb16621eeedbd9f9278becb8",
+      "gates": {
+        "compose": "PASS",
+        "diff": "PASS",
+        "validate": "PASS",
+        "ui_block_validation": "PASS",
+        "source_audit": "PASS"
+      },
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/wheelchair-maneuvering-and-parking-slots--1a02a1a5-27e5-4a26-85d2-fceac4433edc/ui-blocks.json"
+      ]
+    },
+    {
+      "ordinal": 3,
+      "article_id": "875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+      "slug": "site-exterior-circulation",
+      "title": "Site Exterior Circulation",
+      "article_folder_path": ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits",
+      "linked_questions": 20,
+      "question_edits": 20,
+      "source_rows": 2,
+      "candidate_hash": "sha256:9e91113c814794fe961028dd99b35ec604cbef1c8100ede16aa237dd99f9ebbc",
+      "normalized_hash": "sha256:9e91113c814794fe961028dd99b35ec604cbef1c8100ede16aa237dd99f9ebbc",
+      "original_hash": "sha256:d766b454399d0cbbea0779775d05d4f04f693814ed5722846ed058f7470917c0",
+      "sources_hash": "sha256:e8cd88cb93a6bab4fa12c7aed657c12841e2b224013d6f4d0a308e84024d4540",
+      "gates": {
+        "compose": "PASS",
+        "diff": "PASS",
+        "validate": "PASS",
+        "ui_block_validation": "PASS",
+        "source_audit": "PASS"
+      },
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/ui-blocks.json"
+      ]
+    },
+    {
+      "ordinal": 4,
+      "article_id": "578ca1ef-6eff-4810-b5dd-3b52c9bcb76b",
+      "slug": "stairs-handrails-guardrails",
+      "title": "Stairs Handrails Guardrails",
+      "article_folder_path": ".ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b/question-edits",
+      "linked_questions": 20,
+      "question_edits": 20,
+      "source_rows": 2,
+      "candidate_hash": "sha256:ba76ae56e88c00efac38170182a5b346e64ca0e3c4f6497e526221264d8cf560",
+      "normalized_hash": "sha256:ba76ae56e88c00efac38170182a5b346e64ca0e3c4f6497e526221264d8cf560",
+      "original_hash": "sha256:85fa8e33dbba7226c2d3c030b327ca380051ae4c9675ba5332be7fe78c229bbb",
+      "sources_hash": "sha256:b1dcf9555cafbd3388f34fee42db10d8ef57f9f793ae78797cd51b3aff82c417",
+      "gates": {
+        "compose": "PASS",
+        "diff": "PASS",
+        "validate": "PASS",
+        "ui_block_validation": "PASS",
+        "source_audit": "PASS"
+      },
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/stairs-handrails-guardrails--578ca1ef-6eff-4810-b5dd-3b52c9bcb76b/ui-blocks.json"
+      ]
+    },
+    {
+      "ordinal": 5,
+      "article_id": "3c69e570-a75c-4168-ad09-914e2c1062f9",
+      "slug": "public-service-counters-and-atms",
+      "title": "Public Service Counters and ATMs",
+      "article_folder_path": ".ai/content-audit-export/articles/public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9",
+      "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9",
+      "question_edits_folder_path": ".ai/content-audit-export/articles/public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9/question-edits",
+      "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9/question-edits",
+      "linked_questions": 19,
+      "question_edits": 19,
+      "source_rows": 1,
+      "candidate_hash": "sha256:78fdfa5ca494d36a6470f805b62221533a28de4ade917113c3d66d1b8627667f",
+      "normalized_hash": "sha256:78fdfa5ca494d36a6470f805b62221533a28de4ade917113c3d66d1b8627667f",
+      "original_hash": "sha256:2e5d175b09d9c2fd237aadaa33fc913f521314ebc9d9ddbaa2abc6dcdb8a8ff3",
+      "sources_hash": "sha256:b38a58a64f7f93663ef56113fcd515d6ac9430cf053416c4219261b0e6049152",
+      "gates": {
+        "compose": "PASS",
+        "diff": "PASS",
+        "validate": "PASS",
+        "ui_block_validation": "PASS",
+        "source_audit": "PASS"
+      },
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9/article-metadata.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/public-service-counters-and-atms--3c69e570-a75c-4168-ad09-914e2c1062f9/ui-blocks.json"
+      ]
+    }
+  ]
+}

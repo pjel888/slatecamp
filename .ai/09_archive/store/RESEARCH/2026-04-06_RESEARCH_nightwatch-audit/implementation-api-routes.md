@@ -54,15 +54,15 @@
   // src/lib/api/require-admin.ts
   import { createClient } from "@/lib/supabase/server";
   import { NextResponse } from "next/server";
-  
+
   export async function requireAdmin() {
     const supabase = await createClient();
     const { data: { user } } = await supabase.auth.getUser();
-    
+
     if (!user) {
       return { error: NextResponse.json({ error: "Unauthorized" }, { status: 401 }) };
     }
-    
+
     // Check user_roles for admin/super_admin
     const { data: role } = await supabase
       .from('user_roles')
@@ -70,11 +70,11 @@
       .eq('user_id', user.id)
       .in('role', ['admin', 'super_admin'])
       .maybeSingle();
-    
+
     if (!role) {
       return { error: NextResponse.json({ error: "Forbidden" }, { status: 403 }) };
     }
-    
+
     return { user, role: role.role };
   }
   ```
@@ -86,36 +86,36 @@
   ```typescript
   // src/lib/api/rate-limit-tier.ts
   import { createClient } from "@/lib/supabase/server";
-  
+
   const TIER_QUOTAS = {
     free: { ai_generate: 0, ai_tutor: 0, ai_embed: 50 },
     camp: { ai_generate: 10, ai_tutor: 100, ai_embed: 500 },
     insurance: { ai_generate: 50, ai_tutor: 500, ai_embed: 2000 },
     institutional: { ai_generate: -1, ai_tutor: -1, ai_embed: -1 } // unlimited
   }
-  
+
   export async function checkTierQuota(endpoint: 'ai_generate' | 'ai_tutor' | 'ai_embed') {
     const supabase = await createClient();
     const { data: { user } } = await supabase.auth.getUser();
-    
+
     if (!user) return { allowed: false, error: 'Unauthorized' };
-    
+
     // Get user tier
     const { data: sub } = await supabase
       .from('user_subscriptions')
       .select('tier')
       .eq('user_id', user.id)
       .maybeSingle();
-    
+
     const tier = sub?.tier || 'free';
     const quota = TIER_QUOTAS[tier]?.[endpoint];
-    
+
     if (quota === 0) {
       return { allowed: false, upgradeUrl: '/pricing', tier };
     }
-    
+
     if (quota === -1) return { allowed: true, tier }; // unlimited
-    
+
     // Check usage and return allowed
     return { allowed: true, remaining: quota, tier };
   }
@@ -149,8 +149,8 @@
     processed_at TIMESTAMPTZ DEFAULT now(),
     UNIQUE(provider, event_id)
   );
-  
-  CREATE INDEX idx_processed_webhook_events_provider 
+
+  CREATE INDEX idx_processed_webhook_events_provider
   ON processed_webhook_events(provider, event_id);
   ```
 
@@ -161,7 +161,7 @@
   ```typescript
   // Add after signature verification, before event processing:
   const eventId = event.id;
-  
+
   // Check idempotency
   const { data: existing } = await supabase
     .from('processed_webhook_events')
@@ -169,14 +169,14 @@
     .eq('provider', 'lemonsqueezy')
     .eq('event_id', eventId)
     .maybeSingle();
-  
+
   if (existing) {
     return NextResponse.json({ received: true, idempotent: true });
   }
-  
+
   // Process event (existing logic)
   // ...
-  
+
   // Mark as processed (in same transaction or after success)
   await supabase.from('processed_webhook_events').insert({
     provider: 'lemonsqueezy',
@@ -191,14 +191,14 @@
   ```typescript
   // In PATCH handler:
   const { updated_at: clientUpdatedAt } = await request.json();
-  
+
   if (clientUpdatedAt) {
     const { data: current } = await supabase
       .from('questions')
       .select('updated_at')
       .eq('id', questionId)
       .single();
-    
+
     if (new Date(current.updated_at) > new Date(clientUpdatedAt)) {
       return NextResponse.json(
         { error: 'Conflict: resource was modified' },
@@ -216,11 +216,11 @@
   // At start of handler:
   const headersList = await headers();
   const auth = headersList.get('authorization');
-  
+
   if (auth !== `Bearer ${process.env.CRON_SECRET}`) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
-  
+
   // Optional: Verify x-forwarded-for against Vercel IPs
   const forwardedFor = headersList.get('x-forwarded-for');
   // Add Vercel IP range check if needed
@@ -262,7 +262,7 @@
     difficulty: z.enum(['easy', 'medium', 'hard']).optional(),
     count: z.number().int().min(1).max(20).optional()
   });
-  
+
   const parsed = GenerateQuestionSchema.safeParse(await request.json());
   if (!parsed.success) {
     return NextResponse.json({ error: parsed.error.errors }, { status: 400 });

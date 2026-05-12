@@ -1,0 +1,55 @@
+{
+  "question_id": "e8780f64-13e6-4356-bf14-b60730a3b372",
+  "baseline_hash": "sha256:557b48caaf369c0e773c21309e40c6bf13ca14668db639abe64d05df574c574e",
+  "action": "replace",
+  "reason": "source-audited-article-batch-080-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-010-04-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-080",
+  "approved_at": "2026-05-12T07:05:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "efa0ecb2-71a7-4b89-9424-c193f8f1c314",
+    "parent_article_slug": "lea-matl-010-04-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Fajardo refined markdown lines 9058-9213; raw PDF pages 73-74 checked by local PyMuPDF extraction",
+    "checked_markdown_lines": [
+      "Fajardo refined markdown lines 9058-9213; raw PDF pages 73-74 checked by local PyMuPDF extraction"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "fajardo-cost-estimates-b080",
+        "label": "Architectural Cost Estimates By Max Fajardo",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+        "sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+        "raw_markdown_sha256": "sha256:223efdc2dd963208910027eba08fe87b4919de1a04b76cac095bbd76a7a9a962",
+        "locator": "Fajardo refined markdown lines 9058-9213; raw PDF pages 73-74 checked by local PyMuPDF extraction"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 080 local raw-source-audited board_foot_lumber_estimating scope."
+  },
+  "proposed": {
+    "text": "What must be done first if lumber dimensions are given in metric units?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Convert measurements before solving board feet"
+      },
+      {
+        "id": "b",
+        "text": "Ignore length"
+      },
+      {
+        "id": "c",
+        "text": "Use the CHB area factor"
+      },
+      {
+        "id": "d",
+        "text": "Use tie wire kilograms"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Fajardo notes metric measurements should be converted before solving board feet.",
+    "explanation": "Fajardo notes metric measurements should be converted before solving board feet.",
+    "code_citation": "Architectural Cost Estimates By Max Fajardo"
+  }
+}

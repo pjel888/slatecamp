@@ -1,7 +1,106 @@
 {
   "article_id": "877492ae-e17b-48d4-bfd4-f158e794bd46",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "source_count": 0,
-  "sources": []
+  "sources_hash": "sha256:01826a042728243f84fce6376a4cfda988857e71df51a6ee9e783a25ddbf847a",
+  "source_count": 4,
+  "sources": [
+    {
+      "source_id": "pd1096-basic-local-raw-pdf--b053-877492ae-01",
+      "article_id": "877492ae-e17b-48d4-bfd4-f158e794bd46",
+      "label": "PD 1096 National Building Code - local raw PDF",
+      "url": null,
+      "source_type": "local_raw_pdf",
+      "description": "PD 1096 National Building Code - local raw PDF; local raw PDF checked first; refined markdown used only as locator. PD 1096 National Building Code refined markdown lines 1826-1828.",
+      "is_verified": true,
+      "sort_order": 0,
+      "created_at": "2026-05-11T19:04:00.000+08:00",
+      "updated_at": "2026-05-11T19:04:00.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 - National Building Code.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 - National Building Code.pdf",
+      "raw_pdf_sha256": "sha256:0bd869faac8d949359aa9e3c5bea7026e85e348f61ce1e87a09d48991c5ba796",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 - National Building Code.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 - National Building Code.md",
+      "refined_markdown_sha256": "sha256:d7df246271ae1bcb14ed8e4ba881ed75cfa8381cca9f465986d9947397f353d9",
+      "source_locator": "PD 1096 National Building Code refined markdown lines 1826-1828",
+      "checked_markdown_lines": [
+        "PD 1096 National Building Code refined markdown lines 1826-1828"
+      ],
+      "local_audit_note": "Primary truth is the local raw PDF family; refined markdown line ranges are locator aids for the checked claims."
+    },
+    {
+      "source_id": "pd1096-rirr-2004-local-raw-pdf--b053-877492ae-02",
+      "article_id": "877492ae-e17b-48d4-bfd4-f158e794bd46",
+      "label": "PD 1096 RIRR 2004 Architecture Board - local raw PDF",
+      "url": null,
+      "source_type": "local_raw_pdf",
+      "description": "PD 1096 RIRR 2004 Architecture Board - local raw PDF; local raw PDF checked first; refined markdown used only as locator. PD 1096 RIRR 2004 refined markdown lines 1615-1620 and 4464-4466.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-11T19:04:00.000+08:00",
+      "updated_at": "2026-05-11T19:04:00.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (Architecture Board).pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (Architecture Board).pdf",
+      "raw_pdf_sha256": "sha256:15176ec14a361d821d2106cea302b6d837578ba021f4045a7c7f169f31af5dd3",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (Architecture Board).md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (Architecture Board).md",
+      "refined_markdown_sha256": "sha256:d87f379d3831becb818a268892f4df577256e2ebc31d40190323c6f0f69677e7",
+      "source_locator": "PD 1096 RIRR 2004 refined markdown lines 1615-1620 and 4464-4466",
+      "checked_markdown_lines": [
+        "PD 1096 RIRR 2004 refined markdown lines 1615-1620",
+        "PD 1096 RIRR 2004 refined markdown lines 4464-4466"
+      ],
+      "local_audit_note": "Primary truth is the local raw PDF family; refined markdown line ranges are locator aids for the checked claims."
+    },
+    {
+      "source_id": "metals-lecture-local-raw-pdf--b053-877492ae-03",
+      "article_id": "877492ae-e17b-48d4-bfd4-f158e794bd46",
+      "label": "Metals Lecture - local raw PDF",
+      "url": null,
+      "source_type": "local_raw_pdf",
+      "description": "Metals Lecture - local raw PDF; local raw PDF checked first; refined markdown used only as locator. Metals Lecture refined markdown lines 344-356, 856-863, and 904-914.",
+      "is_verified": true,
+      "sort_order": 2,
+      "created_at": "2026-05-11T19:04:00.000+08:00",
+      "updated_at": "2026-05-11T19:04:00.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Metals Lecture.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/004-Technology/Metals Lecture.pdf",
+      "raw_pdf_sha256": "sha256:cd9cd4ee534bda9a974447c4ec73b13b12d5abf1c14df1fca408a2c4530650dd",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Metals Lecture.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Metals Lecture.md",
+      "refined_markdown_sha256": "sha256:4e9e0a042f2eef2c80d33af81512ca2cf32778cae64351af9dc54df58db3694c",
+      "source_locator": "Metals Lecture refined markdown lines 344-356, 856-863, and 904-914",
+      "checked_markdown_lines": [
+        "Metals Lecture refined markdown lines 344-356",
+        "Metals Lecture refined markdown lines 856-863",
+        "Metals Lecture refined markdown lines 904-914"
+      ],
+      "local_audit_note": "Primary truth is the local raw PDF family; refined markdown line ranges are locator aids for the checked claims."
+    },
+    {
+      "source_id": "salvan-building-materials-local-raw-pdf--b053-877492ae-04",
+      "article_id": "877492ae-e17b-48d4-bfd4-f158e794bd46",
+      "label": "George Salvan Architectural Building Materials - local raw PDF",
+      "url": null,
+      "source_type": "local_raw_pdf",
+      "description": "George Salvan Architectural Building Materials - local raw PDF; local raw PDF checked first; refined markdown used only as locator. George Salvan Architectural Building Materials refined markdown lines 1200-1231, 6418-6422, 8641-8649, and 9192-9202.",
+      "is_verified": true,
+      "sort_order": 3,
+      "created_at": "2026-05-11T19:04:00.000+08:00",
+      "updated_at": "2026-05-11T19:04:00.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+      "raw_pdf_sha256": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+      "refined_markdown_sha256": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+      "source_locator": "George Salvan Architectural Building Materials refined markdown lines 1200-1231, 6418-6422, 8641-8649, and 9192-9202",
+      "checked_markdown_lines": [
+        "George Salvan Architectural Building Materials refined markdown lines 1200-1231",
+        "George Salvan Architectural Building Materials refined markdown lines 6418-6422",
+        "George Salvan Architectural Building Materials refined markdown lines 8641-8649",
+        "George Salvan Architectural Building Materials refined markdown lines 9192-9202"
+      ],
+      "local_audit_note": "Primary truth is the local raw PDF family; refined markdown line ranges are locator aids for the checked claims."
+    }
+  ]
 }

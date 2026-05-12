@@ -1,0 +1,141 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "artifact_type": "article_source_audit",
+  "batch_id": "source-audited-article-batch-038-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T13:26:35+08:00",
+  "target": {
+    "article_id": "b2166005-73ba-4a95-8dea-93e12bae9a6b",
+    "slug": "penthouses-and-roof-structures",
+    "candidate_sha256": "sha256:a8992f63c942efe766446a10aa1699be5a7b456d0c7c15eca64eae68862315f3",
+    "normalized_sha256": "sha256:a8992f63c942efe766446a10aa1699be5a7b456d0c7c15eca64eae68862315f3"
+  },
+  "classification": {
+    "requires_raw_pdf_audit": true,
+    "source_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "derivative_layer_role": "locator aid only",
+    "legal_or_code_sensitive": true
+  },
+  "paths": {
+    "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/penthouses-and-roof-structures--b2166005-73ba-4a95-8dea-93e12bae9a6b",
+    "normalized_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/penthouses-and-roof-structures--b2166005-73ba-4a95-8dea-93e12bae9a6b/normalized.md",
+    "candidate_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/penthouses-and-roof-structures--b2166005-73ba-4a95-8dea-93e12bae9a6b/candidate.md",
+    "sources_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/penthouses-and-roof-structures--b2166005-73ba-4a95-8dea-93e12bae9a6b/sources.json",
+    "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/penthouses-and-roof-structures--b2166005-73ba-4a95-8dea-93e12bae9a6b/question-edits"
+  },
+  "raw_sources": [
+    {
+      "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+      "label": "PD 1096 2004 Revised IRR - DPWH Official",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "source_locator": "PD 1096 RIRR refined markdown lines 3763-3787",
+      "checked_markdown_lines": [
+        "PD 1096 RIRR refined markdown lines 3763-3787"
+      ]
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+      "label": "PD 1096 2004 Revised IRR - DPWH Official",
+      "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "checked_markdown_lines": [
+        "PD 1096 RIRR refined markdown lines 3763-3787"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "penthouse-height-area",
+      "claim_text": "Section 1210 limits penthouse or roof projections to 8.40 m above the roof for tank or elevator enclosures and 3.60 m in other cases, and limits aggregate area to one third of the supporting roof.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "pd-1096-rirr-2004-dpwh-official-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "quoted_pdf_excerpt": "Section 1210 limits penthouse or roof projections to 8.40 m above the roof for tank or elevator enclosures and 3.60 m in other cases, and limits aggregate area to one third of the supporting roof.",
+        "locator": "PD 1096 RIRR refined markdown lines 3763-3772"
+      }
+    },
+    {
+      "claim_id": "penthouse-use",
+      "claim_text": "Section 1210 prohibits penthouses, bulkheads, or similar roof projections from uses other than shelter of mechanical equipment or shelter of roof vertical shaft openings unless treated as an additional storey.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "pd-1096-rirr-2004-dpwh-official-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "quoted_pdf_excerpt": "Section 1210 prohibits penthouses, bulkheads, or similar roof projections from uses other than shelter of mechanical equipment or shelter of roof vertical shaft openings unless treated as an additional storey.",
+        "locator": "PD 1096 RIRR refined markdown lines 3773-3775"
+      }
+    },
+    {
+      "claim_id": "tower-spire",
+      "claim_text": "Section 1210 controls tower and spire construction, frontage/base area, supporting frames, roof covering, and incombustible construction for tall skeleton towers on roofs.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "pd-1096-rirr-2004-dpwh-official-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "quoted_pdf_excerpt": "Section 1210 controls tower and spire construction, frontage/base area, supporting frames, roof covering, and incombustible construction for tall skeleton towers on roofs.",
+        "locator": "PD 1096 RIRR refined markdown lines 3777-3787"
+      }
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "removed_or_rewritten_material": [
+    "Rewrote article and linked-question material to local raw-source-supported PD 1096 RIRR claims only."
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_pdf_families_checked": [
+      "PD 1096 2004 Revised IRR - DPWH Official"
+    ],
+    "blockers": []
+  },
+  "gate_results": {
+    "ui_markers_removed_or_resolved": true,
+    "internal_notes_removed": true,
+    "non_local_claims_removed": true,
+    "sources_json_updated": true,
+    "question_edits_created": true
+  },
+  "source_safe_repair": {
+    "performed": true,
+    "repair_notes": "Local-first article and question repairs were limited to claims supported by listed local raw PDFs and locator-checked refined markdown."
+  },
+  "local_validation": {
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_edits": "PASS",
+    "scoped_checks": "PASS",
+    "targeted_tests": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "sme_review": {
+    "required": false,
+    "status": "PASS",
+    "rationale": "Batch is local-first source-audited repair; final publishing review remains separate."
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

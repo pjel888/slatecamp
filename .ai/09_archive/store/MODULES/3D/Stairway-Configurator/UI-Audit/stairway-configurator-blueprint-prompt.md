@@ -308,7 +308,7 @@ This module has more complex bindings than Site Dev Controls because:
 
 Document every chain:
 ```
-riserHeight slider → store.riserHeight → 
+riserHeight slider → store.riserHeight →
   → recompute totalRise, 2R+T
   → re-evaluate PD1096 riser check (max 200mm)
   → re-evaluate RA9514 riser check (max 180mm, if exit stair active)

@@ -1,0 +1,48 @@
+{
+  "question_id": "c05127c7-5756-490d-a6e6-4dd85feea199",
+  "baseline_hash": "sha256:257489f73b4a72b83950845bedbb3bf93d88171d3f04765174084fec7878fcf9",
+  "action": "replace",
+  "reason": "source-audited-article-batch-038-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-038",
+  "approved_at": "2026-05-11T13:26:35+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-038-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 4448-4472"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 1704"
+  },
+  "proposed": {
+    "text": "What minimum air movement does Rule XVII require through any portion of the paint spray area?",
+    "options": [
+      {
+        "id": "b038-d601-34-a",
+        "text": "30.00 lineal meters per minute"
+      },
+      {
+        "id": "b038-d601-34-b",
+        "text": "3.00 lineal meters per minute"
+      },
+      {
+        "id": "b038-d601-34-c",
+        "text": "8.00 lineal meters per minute"
+      },
+      {
+        "id": "b038-d601-34-d",
+        "text": "91 centimeters per minute"
+      }
+    ],
+    "correct_option_id": "b038-d601-34-a",
+    "rationale": "Correct answer: 30.00 lineal meters per minute. This is directly supported by PD 1096 2004 Revised IRR, Section 1704.",
+    "explanation": "The Batch 038 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 1704.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 1704"
+  }
+}

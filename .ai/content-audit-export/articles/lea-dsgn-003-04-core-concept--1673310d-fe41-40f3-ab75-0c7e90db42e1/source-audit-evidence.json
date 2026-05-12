@@ -1,0 +1,92 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-071-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T01:00:34+08:00",
+  "target": {
+    "article_id": "1673310d-fe41-40f3-ab75-0c7e90db42e1",
+    "slug": "lea-dsgn-003-04-core-concept",
+    "title": "Senior Living and Low-Income Housing",
+    "article_folder": ".ai/content-audit-export/articles/lea-dsgn-003-04-core-concept--1673310d-fe41-40f3-ab75-0c7e90db42e1",
+    "normalized_sha256": "sha256:754fa69e5d10ebc2924625d2f294ccd573bb97694ae9ce65dbce35a6f4d5dba3",
+    "candidate_sha256": "sha256:754fa69e5d10ebc2924625d2f294ccd573bb97694ae9ce65dbce35a6f4d5dba3",
+    "candidate_path": ".ai/content-audit-export/articles/lea-dsgn-003-04-core-concept--1673310d-fe41-40f3-ab75-0c7e90db42e1/candidate.md"
+  },
+  "classification": {
+    "topic_family": "housing_design_code",
+    "local_first_batch": "071",
+    "source_sensitivity": "legal_code_housing_design",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdfs_checked_first": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "local_pdf_extraction_method": "python_pymupdf_local",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "bp220-revised-irr-2008-b071",
+      "label": "BP 220 Revised IRR 2008 - Economic and Socialized Housing Standards",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-220/Revised_IRR_BP220_2008.pdf",
+      "sha256": "sha256:7392741260c227647afe39de283f3efa979465692da8905e59be8857c8651614",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-220/Revised_IRR_BP220_2008.md",
+      "refined_markdown_sha256": "sha256:4d66a5ce3891d6405324d52ae8b874f75321da0e5f00213489be43d754d27be1",
+      "locator": "BP 220 refined markdown lines 227-231, 235-264, 291-306, and 420-465"
+    },
+    {
+      "source_id": "pd1096-rirr-2004-b071",
+      "label": "PD 1096 2004 Revised IRR - National Building Code",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "locator": "PD 1096 refined markdown lines 75-80, 112, 337-340, 562-626, 1088-1120, 1174-1212, 1629-1631, 2246-2279, 4190, and 6113-6201"
+    },
+    {
+      "source_id": "pd957-irr-subdivision-condominium-b071",
+      "label": "PD 957 IRR - Subdivision and Condominium Standards",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-957/PD 957 IRR - Subdivision and Condominium IRR.pdf",
+      "sha256": "sha256:1f9ab17a816885cfdbafafc03e3e9b64470a737447129a32a459836d6773f9ea",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-957/PD 957 IRR - Subdivision and Condominium IRR.md",
+      "refined_markdown_sha256": "sha256:0edd45f5293044779c45c36e5219904d3863cfa747d200864959fc1bf6a9ff7b",
+      "locator": "PD 957 IRR refined markdown lines 151-161, 213-224, and 258-302"
+    },
+    {
+      "source_id": "bp344-accessibility-appendix-b071",
+      "label": "BP 344 accessibility provisions as reproduced in the PD 1096 official appendix",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "locator": "PD 1096 official appendix accessibility text refined markdown lines 6113-6152 and 6170-6201"
+    }
+  ],
+  "claims": [
+    "BP 220 lot-area and floor-area values are corrected to checked local source values.",
+    "PD 1096 senior-care and residential occupancy distinctions are restricted to checked use/occupancy descriptions."
+  ],
+  "unverified_or_rejected_claims": [],
+  "scenario_enrichment": {
+    "policy_status": "pending",
+    "eligibility_status": "eligible-deferred",
+    "blocker_status": "nonblocking",
+    "note": "No Real World Scenario section was added; source correctness and question safety remained the blocking criteria."
+  },
+  "sme_review": {
+    "status": "local_agent_source_audited",
+    "reviewer": "codex-local-first-batch-071"
+  }
+}

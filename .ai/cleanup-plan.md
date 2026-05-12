@@ -12,9 +12,9 @@
 - Mark docs mirrors as compatibility/reference.
 - Resolve dirty working tree and rerun build/test/lint/typecheck/design.
 
-**Risk:** Low to medium.  
-**Benefit:** avoids half-enabled launch surface.  
-**Verification:** build, Bun tests, lint, typecheck, design lint, launch-smoke e2e.  
+**Risk:** Low to medium.
+**Benefit:** avoids half-enabled launch surface.
+**Verification:** build, Bun tests, lint, typecheck, design lint, launch-smoke e2e.
 **Acceptance:** no public route links to stubbed payments/AI/legacy paths.
 
 ## Plan B — Recommended pre-launch cleanup
@@ -30,8 +30,8 @@
 - Reconcile schema/types and plan prelaunch migration squash/reset.
 - Rewrite e2e smoke to protect only canonical launch behavior.
 
-**Risk:** Medium.  
-**Benefit:** clean launch base without over-pruning core differentiators.  
+**Risk:** Medium.
+**Benefit:** clean launch base without over-pruning core differentiators.
 **Required verification:** route tests, entitlements tests, quiz/wiki/3D/SRS/calculator tests, selected Playwright launch smoke, full build.
 
 ## Plan C — Aggressive pre-launch reset
@@ -45,9 +45,9 @@
 - Remove AI endpoints and dependencies unless a single launch AI feature is chosen and verified.
 - Remove duplicate docs mirrors and old deep docs from active maps; archive only.
 
-**Risk:** High.  
-**Benefit:** simplest long-term launch codebase.  
-**Rollback:** requires git branch discipline and schema reset backups.  
+**Risk:** High.
+**Benefit:** simplest long-term launch codebase.
+**Rollback:** requires git branch discipline and schema reset backups.
 **Acceptance:** route count, schema table count, test matrix, and env surface all shrink to launch cutline.
 
 ## Recommended PR Roadmap

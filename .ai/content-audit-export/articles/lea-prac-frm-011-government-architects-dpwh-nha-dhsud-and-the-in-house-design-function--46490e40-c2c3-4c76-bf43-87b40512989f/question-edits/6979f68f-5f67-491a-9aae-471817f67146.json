@@ -1,0 +1,32 @@
+{
+  "question_id": "6979f68f-5f67-491a-9aae-471817f67146",
+  "baseline_hash": "sha256:0ce188a0c39969a6ea27ddfd00b36fa2a5946068ef35f9d1f320bb3e0e5717ed",
+  "reason": "Batch 003 source audit replaced unsupported agency/mandate and procurement assertions with source-backed RA 9266, Civil Code Article 1723, RA 9184, RA 7160/COA, RA 11201, and EO 90 framing.",
+  "approved_by": "codex-local-source-audit-batch-003",
+  "approved_at": "2026-05-10T18:00:00+08:00",
+  "proposed": {
+    "text": "When a government architect evaluates BIM, green-building, or universal-design practices for an in-house office, what is the source-safe approach?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Treat every innovation as mandatory under RA 9266 even without a cited rule"
+      },
+      {
+        "id": "b",
+        "text": "Ignore new technical standards because public agencies use only internal memos"
+      },
+      {
+        "id": "c",
+        "text": "Adopt useful tools only through the applicable law, code, agency standard, or approved project requirement, and cite that source for the specific element"
+      },
+      {
+        "id": "d",
+        "text": "Use RA 9184 as the technical design code for accessibility and fire safety"
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": "Identify the controlling law, technical code, agency standard, or project requirement for the element being designed.",
+    "explanation": "The parent article supports RA 9266 responsibility and technical-code compliance while avoiding unsupported BIM or green-building mandate claims.",
+    "code_citation": "RA 9266 IRR; applicable project technical codes and agency standards when separately verified"
+  }
+}

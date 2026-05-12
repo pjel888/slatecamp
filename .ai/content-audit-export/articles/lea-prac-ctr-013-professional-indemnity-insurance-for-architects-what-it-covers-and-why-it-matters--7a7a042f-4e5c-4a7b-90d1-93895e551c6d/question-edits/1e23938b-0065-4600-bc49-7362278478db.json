@@ -1,0 +1,99 @@
+{
+  "question_id": "1e23938b-0065-4600-bc49-7362278478db",
+  "baseline_hash": "sha256:4cba355eed4805cc97afd7bdab25507f947bb31f58c035183797096348f024d9",
+  "action": "replace",
+  "reason": "source-audited-article-batch-029-local-first rewrote this linked question to source-safe local form for lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters.",
+  "approved_by": "codex-local-source-audit-batch-029",
+  "approved_at": "2026-05-11T16:20:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
+    "parent_article_slug": "lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UAP Standards of Professional Practice refined markdown lines 1665-1668; RA 9266 IRR refined markdown lines 809-813 and 841-843; Civil Code Article 1723 refined markdown line 349",
+    "checked_markdown_lines": [
+      "UAP Standards of Professional Practice lines 1665-1668",
+      "RA 9266 IRR lines 809-813",
+      "RA 9266 IRR lines 841-843",
+      "RA 386 Civil Code line 349"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "source_id": "uap-standards-professional-practice-local",
+        "locator": "UAP Standards of Professional Practice refined markdown lines 1665-1668"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "source_id": "uap-standards-professional-practice-local",
+        "locator": "UAP Standards of Professional Practice refined markdown lines 1665-1668"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "ra-9266-irr-local",
+        "locator": "RA 9266 IRR refined markdown lines 809-813 and 841-843"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+        "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_id": "ra-9266-irr-local",
+        "locator": "RA 9266 IRR refined markdown lines 809-813 and 841-843"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code.pdf",
+        "sha256": "sha256:c3551f7d92abed808a64071fdf08832b1f27dc87375775416f52cbc25b4bcba5",
+        "source_id": "ra-386-civil-code-local",
+        "locator": "Civil Code Article 1723 refined markdown line 349"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-386/RA-386 Civil Code.md",
+        "sha256": "sha256:8215f8acdd208b9b2f4a981bdf6c7227acbfd26186dac703133b187fc6d96adf",
+        "source_id": "ra-386-civil-code-local",
+        "locator": "Civil Code Article 1723 refined markdown line 349"
+      }
+    ],
+    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+  },
+  "proposed": {
+    "text": "How does RA 9266 IRR size the liability insurance or equivalent bond for temporary or special permit practice?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Commensurate with the nature and magnitude of project involvement and compensation"
+      },
+      {
+        "id": "b",
+        "text": "Exactly equal to the retention released"
+      },
+      {
+        "id": "c",
+        "text": "Exactly 15% of the construction contract"
+      },
+      {
+        "id": "d",
+        "text": "Exactly the highest bid received"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "Correct because it follows RA 9266 IRR lines 809-813. The other options change the document, party, timing, amount, or legal effect stated in the checked local source.",
+    "explanation": "Use RA 9266 IRR lines 809-813 for this Batch 029 source-safe replacement.",
+    "code_citation": "RA 9266 IRR lines 809-813",
+    "bloom_level": "remember",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "contracts",
+      "source-audited-article-batch-029-local-first"
+    ],
+    "difficulty": 0.48,
+    "is_assessment": false,
+    "model_id": "BATCH-029-lea-prac-ctr-013-professional-indemnity-insurance-for-architects-what-it-covers-and-why-it-matters-005"
+  }
+}

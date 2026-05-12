@@ -1,0 +1,50 @@
+{
+  "question_id": "3f47cc0d-d062-47a3-a4cd-6ac05b1e8347",
+  "baseline_hash": "sha256:21380514d937114e845971475d9a11b1c2735b0dc787c93993f2a6896be6d4fc",
+  "action": "replace",
+  "reason": "source-audited-article-batch-038-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-038",
+  "approved_at": "2026-05-11T13:26:35+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-038-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 2087-2138",
+          "PD 1096 RIRR refined markdown lines 2246-2310",
+          "PD 1096 RIRR refined markdown lines 2352-2356"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 805"
+  },
+  "proposed": {
+    "text": "What minimum ceiling height applies to naturally ventilated habitable rooms under Section 805?",
+    "options": [
+      {
+        "id": "b038-dc69-15-a",
+        "text": "2.70 m"
+      },
+      {
+        "id": "b038-dc69-15-b",
+        "text": "2.10 m"
+      },
+      {
+        "id": "b038-dc69-15-c",
+        "text": "1.80 m"
+      },
+      {
+        "id": "b038-dc69-15-d",
+        "text": "3.60 m"
+      }
+    ],
+    "correct_option_id": "b038-dc69-15-a",
+    "rationale": "Correct answer: 2.70 m. This is directly supported by PD 1096 2004 Revised IRR, Section 805.",
+    "explanation": "The Batch 038 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 805.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 805"
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-080-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T07:05:00.000+08:00",
+  "target": {
+    "article_id": "efa0ecb2-71a7-4b89-9424-c193f8f1c314",
+    "slug": "lea-matl-010-04-core-concept",
+    "title": "Board Foot Lumber Estimation",
+    "article_folder": ".ai/content-audit-export/articles/lea-matl-010-04-core-concept--efa0ecb2-71a7-4b89-9424-c193f8f1c314",
+    "normalized_sha256": "sha256:ca51c459ba94fb700dade73e78562bc99f5396f04fa7ecb58333736883da1da7",
+    "candidate_sha256": "sha256:ca51c459ba94fb700dade73e78562bc99f5396f04fa7ecb58333736883da1da7",
+    "candidate_path": ".ai/content-audit-export/articles/lea-matl-010-04-core-concept--efa0ecb2-71a7-4b89-9424-c193f8f1c314/candidate.md"
+  },
+  "classification": {
+    "topic_family": "board_foot_lumber_estimating",
+    "local_first_batch": "080",
+    "source_sensitivity": "technical_materials_estimating",
+    "contains_legal_or_code_claims": false,
+    "source_risk_tier": "source_bound_materials",
+    "requires_raw_pdf_audit": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdfs_checked_first": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "local_pdf_extraction_method": "python_pymupdf_local",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "fajardo-cost-estimates-b080",
+      "label": "Architectural Cost Estimates By Max Fajardo",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+      "sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+      "refined_markdown_sha256": "sha256:223efdc2dd963208910027eba08fe87b4919de1a04b76cac095bbd76a7a9a962",
+      "locator": "Fajardo refined markdown lines 9058-9213; raw PDF pages 73-74 checked by local PyMuPDF extraction"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-matl-010-04-core-concept-article-b080",
+      "claim_text": "Article lea-matl-010-04-core-concept was rewritten to the checked board_foot_lumber_estimating source scope.",
+      "claim_type": "article_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+        "raw_pdf_sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+        "source_locator": "Fajardo refined markdown lines 9058-9213; raw PDF pages 73-74 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Board Foot is the unit of measure used in computing the volume of lumber."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-7dcace62-ba6c-4dd7-81c8-3a2e46d5e9fe-b080-b080",
+      "claim_text": "Question 7dcace62-ba6c-4dd7-81c8-3a2e46d5e9fe was rewritten to the checked board_foot_lumber_estimating source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+        "raw_pdf_sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+        "source_locator": "Fajardo refined markdown lines 9058-9213; raw PDF pages 73-74 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Board Foot is the unit of measure used in computing the volume of lumber."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-1149e2f7-5dcb-42e6-9193-7890719e1474-b080-b080",
+      "claim_text": "Question 1149e2f7-5dcb-42e6-9193-7890719e1474 was rewritten to the checked board_foot_lumber_estimating source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+        "raw_pdf_sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+        "source_locator": "Fajardo refined markdown lines 9058-9213; raw PDF pages 73-74 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Board Foot is the unit of measure used in computing the volume of lumber."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-abb4b97c-967a-43bb-98a0-d6d8308888a9-b080-b080",
+      "claim_text": "Question abb4b97c-967a-43bb-98a0-d6d8308888a9 was rewritten to the checked board_foot_lumber_estimating source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+        "raw_pdf_sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+        "source_locator": "Fajardo refined markdown lines 9058-9213; raw PDF pages 73-74 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Board Foot is the unit of measure used in computing the volume of lumber."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-911aad26-820e-4a51-bb06-9c7aa838b525-b080-b080",
+      "claim_text": "Question 911aad26-820e-4a51-bb06-9c7aa838b525 was rewritten to the checked board_foot_lumber_estimating source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+        "raw_pdf_sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+        "source_locator": "Fajardo refined markdown lines 9058-9213; raw PDF pages 73-74 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Board Foot is the unit of measure used in computing the volume of lumber."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-b3ec4c0d-9b83-46a8-b0ae-caafc8e5bdd0-b080-b080",
+      "claim_text": "Question b3ec4c0d-9b83-46a8-b0ae-caafc8e5bdd0 was rewritten to the checked board_foot_lumber_estimating source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+        "raw_pdf_sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+        "source_locator": "Fajardo refined markdown lines 9058-9213; raw PDF pages 73-74 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Board Foot is the unit of measure used in computing the volume of lumber."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-d14ca8de-df19-443f-9592-09655035f811-b080-b080",
+      "claim_text": "Question d14ca8de-df19-443f-9592-09655035f811 was rewritten to the checked board_foot_lumber_estimating source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+        "raw_pdf_sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+        "source_locator": "Fajardo refined markdown lines 9058-9213; raw PDF pages 73-74 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Board Foot is the unit of measure used in computing the volume of lumber."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-e8780f64-13e6-4356-bf14-b60730a3b372-b080-b080",
+      "claim_text": "Question e8780f64-13e6-4356-bf14-b60730a3b372 was rewritten to the checked board_foot_lumber_estimating source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+        "raw_pdf_sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+        "source_locator": "Fajardo refined markdown lines 9058-9213; raw PDF pages 73-74 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Board Foot is the unit of measure used in computing the volume of lumber."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-0eeee30e-3276-4334-99ca-c941a3fb78bb-b080-b080",
+      "claim_text": "Question 0eeee30e-3276-4334-99ca-c941a3fb78bb was rewritten to the checked board_foot_lumber_estimating source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+        "raw_pdf_sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+        "source_locator": "Fajardo refined markdown lines 9058-9213; raw PDF pages 73-74 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Board Foot is the unit of measure used in computing the volume of lumber."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-334d282d-5724-4aac-8f9d-1590bb664c15-b080-b080",
+      "claim_text": "Question 334d282d-5724-4aac-8f9d-1590bb664c15 was rewritten to the checked board_foot_lumber_estimating source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+        "raw_pdf_sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+        "source_locator": "Fajardo refined markdown lines 9058-9213; raw PDF pages 73-74 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Board Foot is the unit of measure used in computing the volume of lumber."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-0bb9d502-efaf-40cd-b345-6e187141c748-b080-b080",
+      "claim_text": "Question 0bb9d502-efaf-40cd-b345-6e187141c748 was rewritten to the checked board_foot_lumber_estimating source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Architectural Cost Estimates By Max Fajardo.pdf",
+        "raw_pdf_sha256": "sha256:69946a791ea6b98ebcdf67a33a3752117de9bc5fa604c524e143d81538f6cda2",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Architectural Cost Estimates By Max Fajardo.md",
+        "source_locator": "Fajardo refined markdown lines 9058-9213; raw PDF pages 73-74 checked by local PyMuPDF extraction",
+        "quoted_pdf_excerpt": "Board Foot is the unit of measure used in computing the volume of lumber."
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "scenario_enrichment": {
+    "policy_status": "pending",
+    "eligibility_status": "eligible-deferred",
+    "blocker_status": "nonblocking",
+    "notes": "No Real World Scenario section added; source correctness and linked-question safety remained the controlling gates."
+  },
+  "sme_review": {
+    "required": false,
+    "status": "not_required"
+  },
+  "local_first_publication": {
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "ready_for_final_publishing_review": true
+  }
+}

@@ -1,7 +1,7 @@
 # 3D Lab Feature Specification
 
 **Last Updated:** 2026-04-12
-**Status:** Active — Codebase Source of Truth  
+**Status:** Active — Codebase Source of Truth
 **Version:** 4.2 (Targeted GLB/GLTF Pipeline Readiness Audit)
 **Audit Source:** Deep codebase traversal of shell, template router, type system, asset pipeline, admin infrastructure, legacy GLTF paths, and database schema — focused on documenting the exact architectural truth needed to introduce a future `gltf-asset` template.
 

@@ -1,0 +1,89 @@
+{
+  "question_id": "2df09bb8-6825-4557-9bec-c792b7f29a33",
+  "baseline_hash": "sha256:b84a40040959368470f8ad66a260a40eecfdd10beeda9f9fbab3f8cc2e7a444f",
+  "action": "replace",
+  "reason": "source-audited-article-batch-084-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-004-06-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-084",
+  "approved_at": "2026-05-12T06:55:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "b055d93c-4f92-4608-b88b-ff729757f92e",
+    "parent_article_slug": "lea-matl-004-06-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Chudley/Greeno refined markdown lines 893-916 and 908-916; Building Construction Illustrated lines 2850-2925 and 1943-1944; Building Construction 1 Lecture lines 392 and 2238-2354; Metals Lecture lines 856-939.",
+    "checked_markdown_lines": [
+      "Chudley/Greeno refined markdown lines 18-23, 295-305, 433-519, 782-916, and 893-916; raw PDF pages 58, 96, 163-199, 471, 495, and 511 checked by local PyMuPDF extraction.",
+      "Building Construction Illustrated refined markdown lines 288-322, 2850-2925, 3378-3605, 4037-4073, 6504-6552, 8492, and 8578-8605; raw PDF pages 18, 105, 121-126, 137-145, 248, and 459 checked by local PyMuPDF extraction.",
+      "Building Construction 1 Lecture refined markdown lines 392, 2238, and 2340-2354; raw PDF pages 1-6 and 52 checked by local PyMuPDF extraction.",
+      "Metals Lecture refined markdown lines 329-405 and 856-939; raw PDF pages 23, 26, and 28 checked by local PyMuPDF extraction."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "chudley-greeno-handbook-b084",
+        "label": "Buidling Construction Handbook 7th Ed by Chudley _ Greeno",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf",
+        "sha256": "sha256:2efa493fac06a3efb9367111a397129ff8647778d88160bbe0174403cbb9e0bb",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.md",
+        "refined_markdown_sha256": "sha256:485fe968d55ca680cbde52d24fcee5f512a63591026db19e46835f1bc530dcbb",
+        "locator": "Chudley/Greeno refined markdown lines 18-23, 295-305, 433-519, 782-916, and 893-916; raw PDF pages 58, 96, 163-199, 471, 495, and 511 checked by local PyMuPDF extraction."
+      },
+      {
+        "source_id": "building-construction-illustrated-b084",
+        "label": "Building Construction Illustrated, 5th Edition",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "refined_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "locator": "Building Construction Illustrated refined markdown lines 288-322, 2850-2925, 3378-3605, 4037-4073, 6504-6552, 8492, and 8578-8605; raw PDF pages 18, 105, 121-126, 137-145, 248, and 459 checked by local PyMuPDF extraction."
+      },
+      {
+        "source_id": "building-construction-1-lecture-b084",
+        "label": "Building Construction 1 Lecture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction 1 Lecture.pdf",
+        "sha256": "sha256:a53ebfbccb0c0f53503a8f76385836d46c6951cb4350c8af10420239fd23e231",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction 1 Lecture.md",
+        "refined_markdown_sha256": "sha256:298206511059efbfa480e3dc0d9caab8f0270aa5c1288bf8987ae53790caccec",
+        "locator": "Building Construction 1 Lecture refined markdown lines 392, 2238, and 2340-2354; raw PDF pages 1-6 and 52 checked by local PyMuPDF extraction."
+      },
+      {
+        "source_id": "metals-lecture-b084",
+        "label": "Metals Lecture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Metals Lecture.pdf",
+        "sha256": "sha256:cd9cd4ee534bda9a974447c4ec73b13b12d5abf1c14df1fca408a2c4530650dd",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Metals Lecture.md",
+        "refined_markdown_sha256": "sha256:4e9e0a042f2eef2c80d33af81512ca2cf32778cae64351af9dc54df58db3694c",
+        "locator": "Metals Lecture refined markdown lines 329-405 and 856-939; raw PDF pages 23, 26, and 28 checked by local PyMuPDF extraction."
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 084 local raw-source-audited reinforced_concrete scope."
+  },
+  "proposed": {
+    "text": "When is a concrete pump a source-safe equipment choice?",
+    "options": [
+      {
+        "id": "a",
+        "text": "When large volumes of concrete must be moved efficiently from the pump position to the point of placing"
+      },
+      {
+        "id": "b",
+        "text": "When no concrete is being placed on site"
+      },
+      {
+        "id": "c",
+        "text": "When reinforcement should be omitted"
+      },
+      {
+        "id": "d",
+        "text": "When a purely hand-mixed finish coat is specified"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The checked plant discussion places pumps under concrete transport and placing methods.",
+    "explanation": "The checked plant discussion places pumps under concrete transport and placing methods.",
+    "code_citation": "Buidling Construction Handbook 7th Ed by Chudley _ Greeno; Building Construction Illustrated, 5th Edition; Building Construction 1 Lecture; Metals Lecture",
+    "bloom_level": "understand",
+    "application_context": "source_audited_local_first_batch_084",
+    "practice_context": [],
+    "difficulty": 0.5
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "question_id": "57256fbf-67c1-4bc6-8c51-dd27bd49e134",
+  "baseline_hash": "sha256:1a0999d89a05aef5cfe6a21173bc32a313fcdf5f666ba51b631fee6b1270cc72",
+  "reason": "Batch 003 source audit replaced unsupported agency/mandate and procurement assertions with source-backed RA 9266, Civil Code Article 1723, RA 9184, RA 7160/COA, RA 11201, and EO 90 framing.",
+  "approved_by": "codex-local-source-audit-batch-003",
+  "approved_at": "2026-05-10T18:00:00+08:00",
+  "proposed": {
+    "text": "When a private consultant works with a government in-house design team, what must the agreement and project record make clear?",
+    "options": [
+      {
+        "id": "a",
+        "text": "That the in-house office automatically becomes architect-of-record for all drawings"
+      },
+      {
+        "id": "b",
+        "text": "That responsibility follows the signed and sealed architectural documents, review authority, and approved procurement/contract role"
+      },
+      {
+        "id": "c",
+        "text": "That RA 9184 replaces professional responsibility under RA 9266"
+      },
+      {
+        "id": "d",
+        "text": "That Article 1723 applies only to private-sector projects"
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": "Responsibility allocation follows who prepared, reviewed, signed, sealed, and approved which documents.",
+    "explanation": "This removes the unsupported design-build/design-bid-build premise and aligns the question with RA 9266, Article 1723, and RA 9184.",
+    "code_citation": "RA 9266 IRR; Civil Code Article 1723; RA 9184"
+  }
+}

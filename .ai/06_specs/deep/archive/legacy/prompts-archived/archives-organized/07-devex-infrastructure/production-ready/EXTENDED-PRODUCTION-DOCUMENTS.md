@@ -194,13 +194,13 @@ SELECT count(*) FROM profiles;
 **What to include:**
 ```
 # Flow 1: First-Time User Onboarding
-Landing page → Sign up → Onboarding questions (exam date, school) → 
-Diagnostic Quiz (30 questions) → Readiness Score reveal → 
+Landing page → Sign up → Onboarding questions (exam date, school) →
+Diagnostic Quiz (30 questions) → Readiness Score reveal →
 Dashboard (heatmap + score) → Prompted to start Camp Trail
 
 Files involved: middleware.ts, /signup/page.tsx, /onboarding/page.tsx,
   actions/profile.ts, actions/quiz.ts, queries/dashboard.ts
-Tables touched: profiles, quiz_sessions, user_interactions, 
+Tables touched: profiles, quiz_sessions, user_interactions,
   user_node_mastery, readiness_score_snapshots
 
 # Flow 2: Daily Study Session (Core Loop)
@@ -208,7 +208,7 @@ Login → Dashboard → Choose quiz mode → Quiz engine (Zustand) →
 Answer 10–30 questions → Session complete → Mastery updated →
 Readiness Score refreshed → Dashboard reflects changes
 
-Files involved: queries/dashboard.ts, actions/quiz.ts, 
+Files involved: queries/dashboard.ts, actions/quiz.ts,
   stores/useSessionStore.ts, components/quiz/*
 Tables touched: quiz_sessions, user_interactions, user_node_mastery,
   readiness_score_snapshots
@@ -227,7 +227,7 @@ Subscription lapses → Grace period starts (30 days) →
 User sees "subscription expired" banner → Read-only access to own data →
 New quiz sessions blocked → After 30 days, full lock (paywall on every page)
 
-Files involved: middleware.ts, actions/subscription.ts, 
+Files involved: middleware.ts, actions/subscription.ts,
   components/SubscriptionBanner.tsx
 Tables touched: user_subscriptions
 
@@ -245,7 +245,7 @@ Enroll in trail → Complete Day 1 steps (quiz + wiki + optional 3D Lab) →
 Day 1 marked complete → Day 2 unlocks → Progress tracked →
 Trail completion → Certificate or milestone acknowledgment
 
-Files involved: actions/trail.ts, queries/trail.ts, 
+Files involved: actions/trail.ts, queries/trail.ts,
   components/trail/*
 Tables touched: user_trail_enrollments, user_trail_progress,
   trail_day_completions, session_trail_credits

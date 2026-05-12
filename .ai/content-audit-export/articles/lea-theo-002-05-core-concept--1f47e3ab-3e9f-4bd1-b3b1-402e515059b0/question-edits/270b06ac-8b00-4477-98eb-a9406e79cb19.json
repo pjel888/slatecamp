@@ -1,0 +1,66 @@
+{
+  "question_id": "270b06ac-8b00-4477-98eb-a9406e79cb19",
+  "baseline_hash": "sha256:542175a52e209660ed4396f12657a73ed7a55b46e5390fdee6fecc6f5d6d73b8",
+  "action": "replace",
+  "reason": "source-audited-article-batch-055-local-first: local raw PDF backed replacement constrained to checked Batch 055 source families.",
+  "approved_by": "codex-local-first-batch-055",
+  "approved_at": "2026-05-11T19:38:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "1f47e3ab-3e9f-4bd1-b3b1-402e515059b0",
+    "parent_article_slug": "lea-theo-002-05-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "George Salvan Architectural Theories of Design refined markdown lines 9735-10148; theory refined markdown lines 40-44",
+    "checked_markdown_lines": [
+      "George Salvan Architectural Theories of Design refined markdown lines 9735-10148",
+      "theory refined markdown lines 40-44"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "salvan-theory-local-raw-pdf--b055-1f47e3ab-01",
+        "label": "George Salvan Architectural Theories of Design - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
+        "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
+        "locator": "George Salvan Architectural Theories of Design refined markdown lines 9735-10148"
+      },
+      {
+        "source_id": "theory-local-raw-pdf--b055-1f47e3ab-02",
+        "label": "theory - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+        "sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+        "refined_markdown_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+        "locator": "theory refined markdown lines 40-44"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 055 checked local raw PDF source scope."
+  },
+  "proposed": {
+    "text": "Which item is the first phase of the circulation system?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Building approach."
+      },
+      {
+        "id": "b",
+        "text": "Panelboard distribution."
+      },
+      {
+        "id": "c",
+        "text": "Temple pyramid base."
+      },
+      {
+        "id": "d",
+        "text": "Ashlar fitting."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Building approach. This answer is supported by the checked Batch 055 local raw PDF source families for Francis D.K. Ching: Circulation Patterns.",
+    "explanation": "Building approach. The Batch 055 source audit used local raw PDFs first and refined markdown only as locator evidence for Francis D.K. Ching: Circulation Patterns.",
+    "code_citation": "George Salvan Architectural Theories of Design refined markdown lines 9739-9751"
+  },
+  "batch_question_template_index": 2
+}

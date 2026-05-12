@@ -1,0 +1,162 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-051-local-first",
+  "batch_number": 51,
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T18:44:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "9df7cae5-ca74-48cb-81ec-344ed71bcadf",
+    "slug": "hydrology-in-site-planning",
+    "title": "Hydrology in Site Planning",
+    "article_folder": ".ai/content-audit-export/articles/hydrology-in-site-planning--9df7cae5-ca74-48cb-81ec-344ed71bcadf",
+    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/hydrology-in-site-planning--9df7cae5-ca74-48cb-81ec-344ed71bcadf",
+    "candidate_path": ".ai/content-audit-export/articles/hydrology-in-site-planning--9df7cae5-ca74-48cb-81ec-344ed71bcadf/candidate.md",
+    "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/hydrology-in-site-planning--9df7cae5-ca74-48cb-81ec-344ed71bcadf/candidate.md",
+    "question_edits_folder": ".ai/content-audit-export/articles/hydrology-in-site-planning--9df7cae5-ca74-48cb-81ec-344ed71bcadf/question-edits",
+    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/hydrology-in-site-planning--9df7cae5-ca74-48cb-81ec-344ed71bcadf/question-edits",
+    "normalized_sha256": "sha256:404a639f6d544062eb8caef13157f3495975c4178d37d8bd95e879802138a238",
+    "candidate_sha256": "sha256:404a639f6d544062eb8caef13157f3495975c4178d37d8bd95e879802138a238",
+    "linked_questions_sha256": "sha256:177503e0eebd30552a0792e6d141f5411ca0bb51c5364e88a26158c1209ef54a",
+    "sources_sha256": "sha256:828efdac91b365e5d1b1aca925d6cbb616f44840eaf027b6364f34f4ca768c7b"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "refined_markdown_role": "locator_only",
+    "derivative_or_search_layer_as_primary": false,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": [],
+    "source_families_checked": [
+      {
+        "label": "Climate Resilience Reference Tool - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Reference-Tool-on-Urban-Planning-and-Design-for-Climate-Resilience-for-LGUs-Planning-Actors-in-the-Philippines_readable.pdf",
+        "raw_pdf_sha256": "sha256:4fb30dbbb3eb2d7d445418120bdd046c594e0eeea85b3bf32f93d401325f3bb8",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Reference-Tool-on-Urban-Planning-and-Design-for-Climate-Resilience-for-LGUs-Planning-Actors-in-the-Philippines_readable.md",
+        "refined_markdown_sha256": "sha256:2a1544c9d48eae33c8456f130dfa1c1c7b31c27befca17a2602069fa8086c455",
+        "locator": "Climate Resilience Reference Tool refined markdown lines 939-958, 1816-1830, 2526-2556, 4407-4411, 4690-4692, 4970-4990, 5108-5112, 5381-5385, 7000-7014, and 7107-7139"
+      },
+      {
+        "label": "Building Technology - Siteworks - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Technology - Siteworks.pdf",
+        "raw_pdf_sha256": "sha256:9f498be4a288011a0e8b750d4bb8316afebf07a908993620579c311da30e02a2",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Technology - Siteworks.md",
+        "refined_markdown_sha256": "sha256:3e34ffc7b60b926a2cd75fbde6239ff3f05e7e53993d8cb6f8d5f1d865c64296",
+        "locator": "Building Technology - Siteworks refined markdown lines 24-86, 108-146, 160-220, and 250-305"
+      },
+      {
+        "label": "Sitework Lecture - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Sitework Lecture.pdf",
+        "raw_pdf_sha256": "sha256:a469e97d2c4b842f443864c658fc4359ef2787a2b009b9fbafc1afbd1da25ff6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Sitework Lecture.md",
+        "refined_markdown_sha256": "sha256:e761c9b38b9d0c07bd6053692337109a218169ba791e8f074fa40842d3972af2",
+        "locator": "Sitework Lecture refined markdown lines 28-100, 134-190, 214-290, and 370-405"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "hydrology_site_planning",
+    "contains_legal_or_code_claims": false,
+    "source_risk_tier": "medium",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 21,
+    "question_edits_created": [
+      "23e3f4fa-cee6-4d14-8053-7f53eff46431",
+      "6e59465e-3479-44af-924f-95da1c07b073",
+      "d0b4613a-3d80-42a3-98d7-251d4e8ec303",
+      "58f0e2a6-9a02-4dc1-a902-c28122fdefb5",
+      "3d4b327a-cb86-489f-b1a0-f879ffccd409",
+      "56e93f4e-3eba-45b4-a7b9-eb6e98dcb4b1",
+      "1e9c02de-43a3-4f57-a78a-fd9525f6920b",
+      "1b21b0ff-b49a-4594-b831-0f779b6ae405",
+      "9813c067-efed-4047-9b27-94983d01e516",
+      "08984cf5-71f0-4229-8c37-4890f27bb6c1",
+      "ee72a2bf-f893-4aeb-a67c-d1574905f10f",
+      "1feaf93d-0388-40e0-a8dd-1674cca89081",
+      "938daf19-924b-4d42-9c2b-7f42f77fb3d4",
+      "4e7ee900-0bb6-4c68-817a-1c99ae65ea5b",
+      "f7304942-2618-462a-b326-ed5de5219483",
+      "b89183cf-1175-4494-9972-0307f9a14746",
+      "5024686b-98ce-4656-8ec0-5f2f9a7c5e2b",
+      "308349ea-5b7c-4f03-a206-8cdb88ee81d3",
+      "f5bdfe3a-aaa1-4c34-bf4d-2ae2f9a29389",
+      "b450603f-f67d-4cf9-98e4-dfa47ff2f0fc",
+      "a5b5ab05-8984-463c-99e0-b713514561ae"
+    ]
+  },
+  "checked_markdown_lines": [
+    "Climate Resilience Reference Tool refined markdown lines 939-958",
+    "Climate Resilience Reference Tool refined markdown lines 1816-1830",
+    "Climate Resilience Reference Tool refined markdown lines 2526-2556",
+    "Climate Resilience Reference Tool refined markdown lines 4407-4411",
+    "Climate Resilience Reference Tool refined markdown lines 4690-4692",
+    "Climate Resilience Reference Tool refined markdown lines 4970-4990",
+    "Climate Resilience Reference Tool refined markdown lines 5108-5112",
+    "Climate Resilience Reference Tool refined markdown lines 5381-5385",
+    "Climate Resilience Reference Tool refined markdown lines 7000-7014",
+    "Climate Resilience Reference Tool refined markdown lines 7107-7139",
+    "Building Technology - Siteworks refined markdown lines 24-86",
+    "Building Technology - Siteworks refined markdown lines 108-146",
+    "Building Technology - Siteworks refined markdown lines 160-220",
+    "Building Technology - Siteworks refined markdown lines 250-305",
+    "Sitework Lecture refined markdown lines 28-100",
+    "Sitework Lecture refined markdown lines 134-190",
+    "Sitework Lecture refined markdown lines 214-290",
+    "Sitework Lecture refined markdown lines 370-405"
+  ],
+  "claims": [
+    {
+      "claim_id": "hydrology-in-site-planning-b051-claim-01",
+      "claim_text": "Hydrology in site planning addresses water cycle, watershed improvement, runoff, drainage, storage, permeability, and river-corridor protection.",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Reference-Tool-on-Urban-Planning-and-Design-for-Climate-Resilience-for-LGUs-Planning-Actors-in-the-Philippines_readable.pdf",
+        "quoted_pdf_excerpt": "Climate Resilience Reference Tool refined markdown lines 939-958, 1816-1830, 2526-2556, 4407-4411, 4690-4692, 4970-4990, 5108-5112, 5381-5385, 7000-7014, and 7107-7139",
+        "source_ids": [
+          "climate-local-raw-pdf--b051-9df7cae5-01",
+          "siteworks-local-raw-pdf--b051-9df7cae5-02",
+          "lecture-local-raw-pdf--b051-9df7cae5-03"
+        ]
+      },
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "hydrology-in-site-planning-b051-claim-questions",
+      "claim_text": "Batch 051 question edits audited for hydrology-in-site-planning: 23e3f4fa-cee6-4d14-8053-7f53eff46431, 6e59465e-3479-44af-924f-95da1c07b073, d0b4613a-3d80-42a3-98d7-251d4e8ec303, 58f0e2a6-9a02-4dc1-a902-c28122fdefb5, 3d4b327a-cb86-489f-b1a0-f879ffccd409, 56e93f4e-3eba-45b4-a7b9-eb6e98dcb4b1, 1e9c02de-43a3-4f57-a78a-fd9525f6920b, 1b21b0ff-b49a-4594-b831-0f779b6ae405, 9813c067-efed-4047-9b27-94983d01e516, 08984cf5-71f0-4229-8c37-4890f27bb6c1, ee72a2bf-f893-4aeb-a67c-d1574905f10f, 1feaf93d-0388-40e0-a8dd-1674cca89081, 938daf19-924b-4d42-9c2b-7f42f77fb3d4, 4e7ee900-0bb6-4c68-817a-1c99ae65ea5b, f7304942-2618-462a-b326-ed5de5219483, b89183cf-1175-4494-9972-0307f9a14746, 5024686b-98ce-4656-8ec0-5f2f9a7c5e2b, 308349ea-5b7c-4f03-a206-8cdb88ee81d3, f5bdfe3a-aaa1-4c34-bf4d-2ae2f9a29389, b450603f-f67d-4cf9-98e4-dfa47ff2f0fc, a5b5ab05-8984-463c-99e0-b713514561ae",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Reference-Tool-on-Urban-Planning-and-Design-for-Climate-Resilience-for-LGUs-Planning-Actors-in-the-Philippines_readable.pdf",
+        "quoted_pdf_excerpt": "Climate Resilience Reference Tool refined markdown lines 939-958, 1816-1830, 2526-2556, 4407-4411, 4690-4692, 4970-4990, 5108-5112, 5381-5385, 7000-7014, and 7107-7139; Building Technology - Siteworks refined markdown lines 24-86, 108-146, 160-220, and 250-305; Sitework Lecture refined markdown lines 28-100, 134-190, 214-290, and 370-405",
+        "source_ids": [
+          "climate-local-raw-pdf--b051-9df7cae5-01",
+          "siteworks-local-raw-pdf--b051-9df7cae5-02",
+          "lecture-local-raw-pdf--b051-9df7cae5-03"
+        ]
+      },
+      "audit_result": "PASS"
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "local_first_only": true,
+    "supabase_write_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json"
+  },
+  "sme_review": {
+    "required": false,
+    "status": "not_required"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

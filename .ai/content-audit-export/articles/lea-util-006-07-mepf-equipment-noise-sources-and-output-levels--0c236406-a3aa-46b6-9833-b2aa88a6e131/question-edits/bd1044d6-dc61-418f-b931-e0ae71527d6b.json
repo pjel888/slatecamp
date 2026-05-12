@@ -1,0 +1,68 @@
+{
+  "question_id": "bd1044d6-dc61-418f-b931-e0ae71527d6b",
+  "baseline_hash": "sha256:65973eecc2118757d743a1471098f7f6a4ced903358a054c9f4006961c25bfe0",
+  "action": "replace",
+  "reason": "source-audited-article-batch-045-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes stale derivative-only framing where present.",
+  "approved_by": "codex-local-first-batch-045",
+  "approved_at": "2026-05-11T17:18:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "0c236406-a3aa-46b6-9833-b2aa88a6e131",
+    "parent_article_slug": "lea-util-006-07-mepf-equipment-noise-sources-and-output-levels",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Handouts refined markdown lines 23-35, 102-114, 216-224, 262-312; Salvan Utilities 3 refined markdown lines 908-1132, 1527-1605, 1860-1936",
+    "checked_markdown_lines": [
+      "Handouts refined markdown lines 23-35",
+      "Handouts refined markdown lines 102-114",
+      "Handouts refined markdown lines 216-224",
+      "Handouts refined markdown lines 262-312",
+      "Salvan Utilities 3 refined markdown lines 908-1132 and 1860-1936"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "handouts-lighting-acoustics-local-raw-pdf--b045",
+        "label": "Handouts for Lighting and Acoustics - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Handouts for Lighting _ Acoustics.pdf",
+        "sha256": "sha256:ba9a313f0fa4072866d2f922a34b24ef91a07e58128f67cd12c7b901c91d33bb",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Handouts for Lighting _ Acoustics.md",
+        "refined_markdown_sha256": "sha256:807e9a5c684407cee85c75e33290d25971f924c8b923e1b86e52d0b5ec061bd3",
+        "locator": "Handouts refined markdown lines 23-35, 102-114, 216-224, 262-312"
+      },
+      {
+        "source_id": "salvan-architectural-utilities-3-lighting-acoustics-local-raw-pdf--b045",
+        "label": "George Salvan Architectural Utilities 3 Lighting and Acoustics - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George-Salvan-Architectural-Utilities-3-Lighting-and-Acoustics.pdf",
+        "sha256": "sha256:935c71b1dc8fa190a945570c6a4aab0888096f6a8cbdecc75f53dc09b57fdab6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George-Salvan-Architectural-Utilities-3-Lighting-and-Acoustics.md",
+        "refined_markdown_sha256": "sha256:72f99f7131415798ceb8e0c867af177091e85775c5f2c20e5463ceefad246231",
+        "locator": "Salvan Utilities 3 refined markdown lines 908-1132, 1527-1605, 1860-1936"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, and citation rewritten to the Batch 045 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "What does RT60 measure?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The time for sound level to drop 60 dB in a room."
+      },
+      {
+        "id": "b",
+        "text": "The current rating of a PV inverter."
+      },
+      {
+        "id": "c",
+        "text": "The number of card-reader swipes per minute."
+      },
+      {
+        "id": "d",
+        "text": "The voltage of a service drop."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The time for sound level to drop 60 dB in a room. This matches the checked local source locator for the parent article.",
+    "explanation": "The time for sound level to drop 60 dB in a room. This matches the checked local source locator for the parent article.",
+    "code_citation": "Handouts refined markdown lines 262-312"
+  }
+}

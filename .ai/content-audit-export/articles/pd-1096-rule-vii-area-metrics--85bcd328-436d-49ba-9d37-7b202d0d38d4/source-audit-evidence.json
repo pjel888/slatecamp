@@ -1,0 +1,182 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-048-local-first",
+  "batch_number": 48,
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T19:48:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+    "slug": "pd-1096-rule-vii-area-metrics",
+    "title": "PD 1096 Rule VII Area Metrics",
+    "article_folder": ".ai/content-audit-export/articles/pd-1096-rule-vii-area-metrics--85bcd328-436d-49ba-9d37-7b202d0d38d4",
+    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-vii-area-metrics--85bcd328-436d-49ba-9d37-7b202d0d38d4",
+    "candidate_path": ".ai/content-audit-export/articles/pd-1096-rule-vii-area-metrics--85bcd328-436d-49ba-9d37-7b202d0d38d4/candidate.md",
+    "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-vii-area-metrics--85bcd328-436d-49ba-9d37-7b202d0d38d4/candidate.md",
+    "question_edits_folder": ".ai/content-audit-export/articles/pd-1096-rule-vii-area-metrics--85bcd328-436d-49ba-9d37-7b202d0d38d4/question-edits",
+    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-vii-area-metrics--85bcd328-436d-49ba-9d37-7b202d0d38d4/question-edits",
+    "normalized_sha256": "sha256:b7820ba0439b98432ca9708df994594e4df2626f33f64eccaf6fb00003fbffe0",
+    "candidate_sha256": "sha256:b7820ba0439b98432ca9708df994594e4df2626f33f64eccaf6fb00003fbffe0",
+    "linked_questions_sha256": "sha256:32b094510f3ada2cb9eb12c20b2c583323346c716c2b732fb15ba965043140c9",
+    "sources_sha256": "sha256:9be1cd42c55171e2f102e89eac194b642638be47b6fd6bd50206b1ac78b1be9b"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "refined_markdown_role": "locator_only",
+    "derivative_or_search_layer_as_primary": false,
+    "source_families_checked": [
+      {
+        "label": "PD 1096 IRR Full Implementing Rules and Regulations - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.pdf",
+        "raw_pdf_sha256": "sha256:8e98d8afd4b5972ba5a82d33a65e59e800cd41661b764a0dfc4112d29697b341",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.md",
+        "refined_markdown_sha256": "sha256:a43068979bbca37450a11ed16cbb966e2aff6d682cdded1ab3bf22b1d541efd0",
+        "locator": "PD 1096 IRR refined markdown lines 1243-1252, 1334-1378, 3009-3138, 3750-3825, 8637-8810, and 9180-9514"
+      },
+      {
+        "label": "PD 1096 Rules 7 and 8 - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/Rule 7 _ 8.pdf",
+        "raw_pdf_sha256": "sha256:3fd01acd4ec7f37dbff97dba72c107502b46a05f59803df9973dfea62907a55d",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/Rule 7 _ 8.md",
+        "refined_markdown_sha256": "sha256:b09a20f30c11dffd69d4a2a11e941d4ed42ad13d539ff0ca194ddb762dced634",
+        "locator": "PD 1096 Rules 7 and 8 refined markdown lines 1560-1765"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "pd-1096-rule-vii-area-metrics_article",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 50,
+    "question_edits_created": [
+      "06133b0b-3882-4cc9-b51a-ec5c8a24f377",
+      "538718e4-c17c-473f-b26e-eeb29a3cf606",
+      "7b1c6e8e-5257-4d81-95b3-3961e78fb143",
+      "fb132180-6847-480f-a925-2988f0d2cdf8",
+      "c8323e34-be21-4e20-be5c-646b0c31ec8c",
+      "7346c5f8-04d9-4e40-bd48-965f800f40be",
+      "a9b7c985-c91e-43f1-a4b4-c56eef047874",
+      "b937f3bb-eddf-4a90-8cc7-daff5d2c3241",
+      "07643f67-a9a1-4ad0-88bf-c4a40521613e",
+      "b9a9e104-25ed-4e19-8808-3ab45facc241",
+      "6e3e0016-250c-40ce-987c-97b0f38bea0a",
+      "bf7b7ef5-7999-4ae1-b6fd-47f1957b1335",
+      "8003a8c6-4cca-4dc4-ab50-49b3d4231dd6",
+      "e5b8f51e-c482-4a8f-b354-b295df9086c0",
+      "4c41b885-283c-4586-8eb7-82fcd354cbff",
+      "b678fc0d-5abf-4c44-ac7e-19b3a18727a7",
+      "5fb65716-df8f-445e-8642-0477ae727c0d",
+      "5ba34576-aab2-4ea0-b229-fa17e0e71102",
+      "6e4835c0-3685-479a-af06-31da0e3103a5",
+      "72cfa8e5-2ab0-4a62-8870-9190f12a1030",
+      "e12e2bed-7e56-4c36-b8ae-94776a5084d9",
+      "dbb66782-6a84-411c-890c-69cb51bc3a22",
+      "feef8d53-e59b-44e0-b5e9-1b32d1ca1813",
+      "1602ab82-7398-4bc1-a677-173991c7d770",
+      "7e6952b4-2a61-4ef9-bb4f-463446bb9080",
+      "4d4a0492-8dba-4185-942c-167bb8e7a1c6",
+      "17dae0be-6844-4c16-9ec0-3f014b8e9d76",
+      "fa55ad46-1bce-4878-9efe-e2b5a662013e",
+      "ff0f6f83-1be6-4945-ae74-1f95bfb46595",
+      "9c4e19c9-9083-4047-ab55-b199389d6294",
+      "5345b765-a74f-480a-8624-451ee3c45b59",
+      "1f97a853-d952-42d4-86dd-a23a1761c007",
+      "eb5da72f-d4e1-41bd-98e9-f511fdc3ff96",
+      "bd77090f-266c-4186-a1c4-3c7933f51bfd",
+      "60da3a6e-8834-46a7-bce7-f1632a67d2e1",
+      "a0c0c271-48b9-48c5-b7b3-1d48fcc14f30",
+      "6e00969b-7d4b-41c6-9169-ffea5146d25f",
+      "34fe3e91-a66c-4909-93db-5faa18928a23",
+      "47f70b98-6a57-4d34-9f01-961ee9159ba4",
+      "1471043e-5fa1-4a96-ae33-16a981dd9aa2",
+      "aa59d7dc-e5d6-40f3-ba88-a15a7e55b432",
+      "7862044d-ec3f-4930-a490-523b0f93a752",
+      "c2cdbadb-5a0d-4141-888e-7475b7a2980d",
+      "180be8fd-306c-4a1e-aef2-dec0c0b9c9cb",
+      "ca55d979-71b3-4182-b754-d861b0086c0c",
+      "43ca72b0-b5b7-4d63-87e6-bf74c265a1ca",
+      "6a8bd9c9-7cdb-4ff7-98f5-99c0b07cafe2",
+      "41ce9976-9bd8-49cc-bc5f-0396e2a63f54",
+      "20822728-5893-475c-a9e2-44fa7e2f739c",
+      "7b781f0e-e3ff-4d05-b500-7a2c77f714f6"
+    ]
+  },
+  "claims": [
+    {
+      "claim_id": "pd-1096-rule-vii-area-metrics-b048-claim-01",
+      "claim_text": "Rule VII uses TGFA, AMVB, FLAR, AMBF, OFB, and PSO as separate controls for building bulk and development capacity.",
+      "source_support": [
+        "pd1096-irr-full-local-raw-pdf--b048-85bcd328-01",
+        "pd1096-rule-7-8-local-raw-pdf--b048-85bcd328-02"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "pd-1096-rule-vii-area-metrics-b048-claim-02",
+      "claim_text": "Table VII.1 starts allowable maximum TGFA from BHL multiplied by an allowable maximum building-footprint percentage of TLA and remains subject to AMVB reduction.",
+      "source_support": [
+        "pd1096-irr-full-local-raw-pdf--b048-85bcd328-01",
+        "pd1096-rule-7-8-local-raw-pdf--b048-85bcd328-02"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "pd-1096-rule-vii-area-metrics-b048-claim-03",
+      "claim_text": "The Rule VII building-bulk guideline uses FLAR as the primary or initial determinant for the GFA/bulk check.",
+      "source_support": [
+        "pd1096-irr-full-local-raw-pdf--b048-85bcd328-01",
+        "pd1096-rule-7-8-local-raw-pdf--b048-85bcd328-02"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "pd-1096-rule-vii-area-metrics-b048-claim-04",
+      "claim_text": "Rule VIII Table VIII.1 supplies the PSO/open-space frame and the PSO plus ISA and PSO plus TOSL relationships.",
+      "source_support": [
+        "pd1096-irr-full-local-raw-pdf--b048-85bcd328-01",
+        "pd1096-rule-7-8-local-raw-pdf--b048-85bcd328-02"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "pd-1096-rule-vii-area-metrics-b048-claim-05",
+      "claim_text": "Section 706 area increase depends on qualifying public space, streets, or yards along and adjoining two or more sides and Building Official approval.",
+      "source_support": [
+        "pd1096-irr-full-local-raw-pdf--b048-85bcd328-01",
+        "pd1096-rule-7-8-local-raw-pdf--b048-85bcd328-02"
+      ],
+      "audit_result": "PASS"
+    }
+  ],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "removed_risk_notes": [
+      "Old local-batch ownership markers in sidecars refreshed to Batch 048.",
+      "Question sidecars replaced with checked local raw-source citations.",
+      "Stale compose-error sidecars removed where selected bundle compose succeeds."
+    ]
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_batch_048_complete": true,
+    "remote_publish_status": "not_attempted_by_request",
+    "remaining_local_blockers": []
+  },
+  "local_validation": {
+    "status": "PASS",
+    "valid": true,
+    "blockers": 0,
+    "checked_at": "2026-05-11T19:58:00.000+08:00",
+    "commands": [
+      "bun run content-audit:compose -- --article-id 85bcd328-436d-49ba-9d37-7b202d0d38d4 --overwrite --strict",
+      "bun run content-audit:diff -- --article-id 85bcd328-436d-49ba-9d37-7b202d0d38d4 --strict --summary",
+      "bun run content-audit:validate -- --article-id 85bcd328-436d-49ba-9d37-7b202d0d38d4 --summary",
+      "bun run content-audit:ui-block-edits -- --article-id 85bcd328-436d-49ba-9d37-7b202d0d38d4"
+    ]
+  }
+}

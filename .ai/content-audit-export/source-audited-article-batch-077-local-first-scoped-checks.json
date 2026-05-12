@@ -1,0 +1,116 @@
+{
+  "batch": "077",
+  "generated_at": "2026-05-12T04:30:00.000+08:00",
+  "local_only": true,
+  "scope": {
+    "handoff_path": ".ai/03_plans/source-audited-local-first-batches-handoff.md",
+    "report_path": ".ai/content-audit-export/source-audited-article-batch-077-local-first-report.md",
+    "ledger_path": ".ai/content-audit-export/source-audited-article-batch-077-local-first-ledger.json",
+    "scoped_checks_path": ".ai/content-audit-export/source-audited-article-batch-077-local-first-scoped-checks.json",
+    "sync_state_path": ".ai/content-audit-export/sync-state.json",
+    "article_folders": [
+      ".ai/content-audit-export/articles/lea-matl-007-04-core-concept--916cb394-9854-4d8e-ae0a-fd1747e37b3f",
+      ".ai/content-audit-export/articles/lea-matl-006-01-core-concept--bedac2b3-5478-4fe8-be94-d88f8e4ada3f",
+      ".ai/content-audit-export/articles/lea-matl-006-03-core-concept--bb772d11-27ac-4ad5-b13a-0d1542106956",
+      ".ai/content-audit-export/articles/lea-matl-006-04-core-concept--763d451f-d9eb-469f-8d5e-8be6c9a7bfa7",
+      ".ai/content-audit-export/articles/lea-matl-006-05-core-concept--cd21006c-647f-4c7b-8b17-fa65c51cbeb3"
+    ]
+  },
+  "checks": {
+    "compose": {
+      "status": "PASS",
+      "article_count": 5,
+      "blockers": 0
+    },
+    "diff": {
+      "status": "PASS",
+      "article_count": 5,
+      "safe_to_push": true,
+      "blockers": 0
+    },
+    "validate": {
+      "status": "PASS",
+      "article_count": 5,
+      "valid": true,
+      "blockers": 0,
+      "warnings": "component-usage.json warnings only"
+    },
+    "ui_block_edits": {
+      "status": "PASS",
+      "article_count": 5,
+      "blockers": 0,
+      "warnings": 0
+    },
+    "source_audit_apply_gate": {
+      "status": "PASS",
+      "article_count": 5,
+      "blockers": 0,
+      "warnings": 0
+    },
+    "scoped_json_parse": {
+      "status": "PASS",
+      "files": 105,
+      "failures": 0
+    },
+    "marker_scan": {
+      "status": "PASS",
+      "files": 105,
+      "hits": 0,
+      "scope_note": "Excluded immutable original.md and generated compose/diff reports."
+    },
+    "source_hash_checks": {
+      "status": "PASS",
+      "checks": 4,
+      "results": [
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/George-Salvan-Architectural-Building-Materials.pdf",
+          "expected": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+          "actual": "sha256:4c02c6429989abb79b987b456a3eca532ae75f5da90754c523f393303349e4ba",
+          "pass": true
+        },
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+          "expected": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+          "actual": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+          "pass": true
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/George-Salvan-Architectural-Building-Materials.md",
+          "expected": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+          "actual": "sha256:7433a19efa154a3f3b75f1300d459c0592da26fbc63ea40309d68303aadabf42",
+          "pass": true
+        },
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+          "expected": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+          "actual": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+          "pass": true
+        }
+      ]
+    },
+    "question_edit_count": {
+      "status": "PASS",
+      "expected": 50,
+      "actual": 50
+    },
+    "stale_compose_error_check": {
+      "status": "PASS",
+      "files": 0
+    },
+    "targeted_content_audit_tests": {
+      "status": "PASS",
+      "files": [
+        "scripts/content-audit/content-audit.test.ts",
+        "scripts/content-audit/source-verification-invariants.test.ts"
+      ],
+      "pass": 34,
+      "fail": 0,
+      "expect_calls": 328
+    },
+    "scoped_git_diff_check": {
+      "status": "PASS",
+      "command": "git diff --check -- <handoff> <sync-state> <batch artifacts> <selected folders>"
+    }
+  },
+  "unresolved_blockers": []
+}

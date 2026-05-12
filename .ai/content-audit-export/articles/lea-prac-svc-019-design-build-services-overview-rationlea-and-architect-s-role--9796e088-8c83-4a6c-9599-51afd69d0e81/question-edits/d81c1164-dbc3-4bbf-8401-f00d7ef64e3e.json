@@ -1,0 +1,84 @@
+{
+  "question_id": "d81c1164-dbc3-4bbf-8401-f00d7ef64e3e",
+  "baseline_hash": "sha256:dc66b0d23b5b0039ca62f82ff89e2203f8aa1954600dd94b2909059b0888f33f",
+  "action": "replace",
+  "reason": "source-audited-article-batch-024-local-first rewrote this linked question to align with the local source audit for lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role.",
+  "approved_by": "codex-local-source-audit-batch-024",
+  "approved_at": "2026-05-11T14:30:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "9796e088-8c83-4a6c-9599-51afd69d0e81",
+    "parent_article_slug": "lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UAP Standards refined markdown lines 1222-1284; SPP 207 refined markdown lines 135-440",
+    "checked_markdown_lines": [
+      "UAP Standards lines 1222-1284",
+      "SPP 207 lines 135-440"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "source_id": "uap-standards-spp207-design-build-local",
+        "locator": "UAP Standards refined markdown lines 1222-1284"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "source_id": "uap-standards-spp207-design-build-local",
+        "locator": "UAP Standards refined markdown lines 1222-1284"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 207.pdf",
+        "sha256": "sha256:7050b0c7bd152694587f39ead8b682ed71b882ba50fce5c4a614206f32b5b610",
+        "source_id": "spp207-design-build-services-local",
+        "locator": "SPP 207 refined markdown lines 135-440"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md",
+        "sha256": "sha256:16375f49124440ba1bc938379786e14016249c3d42d0b7498a543ddb4f702e0a",
+        "source_id": "spp207-design-build-services-local",
+        "locator": "SPP 207 refined markdown lines 135-440"
+      }
+    ],
+    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+  },
+  "proposed": {
+    "text": "What happens if actual cost exceeds the estimate plus ten percent under the SPP 207 guaranteed-maximum model, absent source-listed exceptions?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The architect is liable for the excess only up to the amount of the administration fee"
+      },
+      {
+        "id": "b",
+        "text": "The architect is liable without any limit"
+      },
+      {
+        "id": "c",
+        "text": "The owner must always bear every excess cost"
+      },
+      {
+        "id": "d",
+        "text": "The savings are divided equally"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "SPP 207 limits architect liability for the excess to the administration fee, while separately identifying owner-borne exception costs.",
+    "explanation": "This Batch 024 replacement removes non-source-backed or over-specific wording and ties the answer to the checked local UAP source locator.",
+    "code_citation": "UAP Standards lines 1222-1284; SPP 207 refined markdown lines 135-440",
+    "bloom_level": "analyze",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited batch 024"
+    ],
+    "difficulty": 0.64,
+    "is_assessment": false,
+    "model_id": "BATCH-024-lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role-008"
+  }
+}

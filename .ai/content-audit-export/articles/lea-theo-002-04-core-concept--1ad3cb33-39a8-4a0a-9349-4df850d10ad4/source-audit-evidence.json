@@ -1,0 +1,129 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-055-local-first",
+  "batch_number": 55,
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T19:38:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+    "slug": "lea-theo-002-04-core-concept",
+    "title": "Spatial Organization by Francis D.K. Ching",
+    "article_folder": ".ai/content-audit-export/articles/lea-theo-002-04-core-concept--1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-04-core-concept--1ad3cb33-39a8-4a0a-9349-4df850d10ad4",
+    "candidate_path": ".ai/content-audit-export/articles/lea-theo-002-04-core-concept--1ad3cb33-39a8-4a0a-9349-4df850d10ad4/candidate.md",
+    "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-04-core-concept--1ad3cb33-39a8-4a0a-9349-4df850d10ad4/candidate.md",
+    "question_edits_folder": ".ai/content-audit-export/articles/lea-theo-002-04-core-concept--1ad3cb33-39a8-4a0a-9349-4df850d10ad4/question-edits",
+    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-04-core-concept--1ad3cb33-39a8-4a0a-9349-4df850d10ad4/question-edits",
+    "normalized_sha256": "sha256:3a8f333a62db8f7d1d4d5381edc1e4b91027f23e7f25611643eaf6d04f41e6d7",
+    "candidate_sha256": "sha256:3a8f333a62db8f7d1d4d5381edc1e4b91027f23e7f25611643eaf6d04f41e6d7",
+    "linked_questions_sha256": "sha256:a8f73a67f4e25ccdbca2fb6364730a8acb6e0d7821ae8b948c74bf55eb97392a",
+    "sources_sha256": "sha256:d98ea501bbc038327fdeb99cd36a3d790ddb4f821df4a927998fb775837935a4"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "refined_markdown_role": "locator_only",
+    "derivative_or_search_layer_as_primary": false,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": [],
+    "source_families_checked": [
+      {
+        "label": "theory - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+        "raw_pdf_sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+        "refined_markdown_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+        "locator": "theory refined markdown lines 35-39"
+      },
+      {
+        "label": "George Salvan Architectural Theories of Design - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "raw_pdf_sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
+        "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
+        "locator": "George Salvan Architectural Theories of Design refined markdown lines 8688-8810"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "theory-of-architecture",
+    "contains_legal_or_code_claims": false,
+    "source_risk_tier": "medium",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 14,
+    "question_edits_created": [
+      "495649ef-4620-4a69-a2b3-63000b60c578",
+      "4161ac3a-be1e-4374-93e3-faa075b04258",
+      "5abd7118-e711-4338-b0f6-9d4c43d90dd6",
+      "e27e72dc-78d2-4de0-8365-8ae1f963d175",
+      "bf3a95a7-4d93-4603-854a-01abfc81194d",
+      "fd6b1164-58c0-42ff-bf1c-aa516bad8cf9",
+      "6f778d76-64aa-40e9-80ec-c69e605c08c8",
+      "c1dde7f6-3f3e-4a72-ad59-3f3d49b2c825",
+      "b4719f99-18ee-4052-ac1f-49d98df2b573",
+      "d1b86182-8c3d-4c65-abae-6f6305b0fbd8",
+      "20e1b5cb-0f24-4b81-bde3-52ef8d32d874",
+      "7b3e814f-726e-4877-ba15-4c54982c5d16",
+      "b17298e5-6508-400c-bf30-3a7d50a125c2",
+      "d6af9ccc-05e5-4a5a-be7d-f9a94aad3583"
+    ]
+  },
+  "checked_markdown_lines": [
+    "theory refined markdown lines 35-39",
+    "George Salvan Architectural Theories of Design refined markdown lines 8688-8810"
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-theo-002-04-core-concept-b055-claim-01",
+      "claim_text": "Spatial Organization by Francis D.K. Ching in Batch 055 is limited to checked local raw PDF source families and the refined markdown locators recorded for this article.",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+        "quoted_pdf_excerpt": "theory refined markdown lines 35-39; George Salvan Architectural Theories of Design refined markdown lines 8688-8810",
+        "source_ids": [
+          "theory-local-raw-pdf--b055-1ad3cb33-01",
+          "salvan-theory-local-raw-pdf--b055-1ad3cb33-02"
+        ]
+      },
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-theo-002-04-core-concept-b055-claim-questions",
+      "claim_text": "Batch 055 question edits audited for lea-theo-002-04-core-concept: 495649ef-4620-4a69-a2b3-63000b60c578, 4161ac3a-be1e-4374-93e3-faa075b04258, 5abd7118-e711-4338-b0f6-9d4c43d90dd6, e27e72dc-78d2-4de0-8365-8ae1f963d175, bf3a95a7-4d93-4603-854a-01abfc81194d, fd6b1164-58c0-42ff-bf1c-aa516bad8cf9, 6f778d76-64aa-40e9-80ec-c69e605c08c8, c1dde7f6-3f3e-4a72-ad59-3f3d49b2c825, b4719f99-18ee-4052-ac1f-49d98df2b573, d1b86182-8c3d-4c65-abae-6f6305b0fbd8, 20e1b5cb-0f24-4b81-bde3-52ef8d32d874, 7b3e814f-726e-4877-ba15-4c54982c5d16, b17298e5-6508-400c-bf30-3a7d50a125c2, d6af9ccc-05e5-4a5a-be7d-f9a94aad3583",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+        "quoted_pdf_excerpt": "theory refined markdown lines 35-39; George Salvan Architectural Theories of Design refined markdown lines 8688-8810",
+        "source_ids": [
+          "theory-local-raw-pdf--b055-1ad3cb33-01",
+          "salvan-theory-local-raw-pdf--b055-1ad3cb33-02"
+        ]
+      },
+      "audit_result": "PASS"
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "local_first_only": true,
+    "supabase_write_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json"
+  },
+  "sme_review": {
+    "required": false,
+    "status": "not_required"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

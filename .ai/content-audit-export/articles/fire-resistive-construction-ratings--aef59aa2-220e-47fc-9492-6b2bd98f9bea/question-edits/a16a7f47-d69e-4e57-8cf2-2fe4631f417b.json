@@ -1,0 +1,58 @@
+{
+  "question_id": "a16a7f47-d69e-4e57-8cf2-2fe4631f417b",
+  "baseline_hash": "sha256:98762dd80edfaedccaf24e6cbbff91f67db08a786b2af00ef1ef976d0d95b48b",
+  "action": "replace",
+  "reason": "source-audited-article-batch-048-local-first: local raw-source-backed replacement constrained to checked Batch 048 source families.",
+  "approved_by": "codex-local-first-batch-048",
+  "approved_at": "2026-05-11T19:48:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "aef59aa2-220e-47fc-9492-6b2bd98f9bea",
+    "parent_article_slug": "fire-resistive-construction-ratings",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "It describes the lot depth beside a public street.",
+    "checked_markdown_lines": [
+      "PD 1096 IRR refined markdown lines 1256-1277",
+      "PD 1096 IRR refined markdown lines 1334-1378",
+      "PD 1096 IRR refined markdown lines 8637-8715",
+      "PD 1096 IRR refined markdown lines 8790-8810"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "pd1096-irr-full-local-raw-pdf--b048-aef59aa2-01",
+        "label": "PD 1096 IRR Full Implementing Rules and Regulations - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.pdf",
+        "sha256": "sha256:8e98d8afd4b5972ba5a82d33a65e59e800cd41661b764a0dfc4112d29697b341",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 IRR - Full Implementing Rules and Regulations.md",
+        "refined_markdown_sha256": "sha256:a43068979bbca37450a11ed16cbb966e2aff6d682cdded1ab3bf22b1d541efd0",
+        "locator": "PD 1096 IRR refined markdown lines 1243-1252, 1334-1378, 3009-3138, 3750-3825, 8637-8810, and 9180-9514"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 048 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "What does fire-resistive time-period rating describe?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It describes the length of time a material can withstand being burned, such as one-hour, two-hour, three-hour, or four-hour ratings."
+      },
+      {
+        "id": "b",
+        "text": "I"
+      },
+      {
+        "id": "c",
+        "text": "t"
+      },
+      {
+        "id": "d",
+        "text": " "
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "It describes the length of time a material can withstand being burned, such as one-hour, two-hour, three-hour, or four-hour ratings. This is supported by It describes the operating period of a fire pump..",
+    "explanation": "It describes the length of time a material can withstand being burned, such as one-hour, two-hour, three-hour, or four-hour ratings. The cited local source family controls this item: It describes the operating period of a fire pump..",
+    "code_citation": "It describes the lot depth beside a public street."
+  }
+}

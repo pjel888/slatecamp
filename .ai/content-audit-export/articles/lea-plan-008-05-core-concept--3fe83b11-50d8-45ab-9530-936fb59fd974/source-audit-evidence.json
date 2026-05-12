@@ -1,0 +1,90 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-070-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T00:42:00+08:00",
+  "target": {
+    "article_id": "3fe83b11-50d8-45ab-9530-936fb59fd974",
+    "slug": "lea-plan-008-05-core-concept",
+    "title": "Urban Regeneration and Placemaking",
+    "article_folder": ".ai/content-audit-export/articles/lea-plan-008-05-core-concept--3fe83b11-50d8-45ab-9530-936fb59fd974",
+    "normalized_sha256": "sha256:8a6aae4c5d61b53f8f761fce9c75d2d5f80f447fd2a1b87bad343dbd4c455aa7",
+    "candidate_sha256": "sha256:8a6aae4c5d61b53f8f761fce9c75d2d5f80f447fd2a1b87bad343dbd4c455aa7",
+    "candidate_path": ".ai/content-audit-export/articles/lea-plan-008-05-core-concept--3fe83b11-50d8-45ab-9530-936fb59fd974/candidate.md"
+  },
+  "classification": {
+    "topic_family": "planning_housing_urban_design",
+    "local_first_batch": "070",
+    "source_sensitivity": "legal_planning_environment_design"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdfs_checked_first": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "local_pdf_extraction_method": "python_pymupdf_local",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "dhsud-rudd-guidelines-b070",
+      "label": "DHSUD Resilient Urban Design and Development Guidelines",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf",
+      "sha256": "sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.md",
+      "refined_markdown_sha256": "sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7",
+      "locator": "DHSUD RUDD refined markdown lines 41-65, 385-397, 399-429, 568-572, 621-629, 704-724, 781-786, 865-890, 907-924, 1290-1293, 1380-1397, 1409-1419, 1486-1503, 1525-1549, 1554, 2070, and 2715-2767; raw PDF pages 5, 8, 10, 34-37, 43, 62, 65-68, 71, 97, 123-128, and 150-153 checked by local PDF extraction"
+    },
+    {
+      "source_id": "dhsud-climate-resilience-reference-tool-b070",
+      "label": "DHSUD Urban Planning and Design for Climate Resilience Reference Tool",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Reference-Tool-on-Urban-Planning-and-Design-for-Climate-Resilience-for-LGUs-Planning-Actors-in-the-Philippines_readable.pdf",
+      "sha256": "sha256:4fb30dbbb3eb2d7d445418120bdd046c594e0eeea85b3bf32f93d401325f3bb8",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Reference-Tool-on-Urban-Planning-and-Design-for-Climate-Resilience-for-LGUs-Planning-Actors-in-the-Philippines_readable.md",
+      "refined_markdown_sha256": "sha256:2a1544c9d48eae33c8456f130dfa1c1c7b31c27befca17a2602069fa8086c455",
+      "locator": "DHSUD climate reference refined markdown lines 314-324, 338-350, 1396-1420, 1450-1458, 1618-1654, and 1660-1672; raw PDF pages 20-21 and 52-53 checked by local PDF extraction"
+    },
+    {
+      "source_id": "hlurb-clup-vol1-planning-process-b070",
+      "label": "HLURB CLUP Guidebook Volume 1 - planning process, participation, and maps",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/HLURB_CLUP_Vol_1.pdf",
+      "sha256": "sha256:34888ecf03576719d36e8abe21ff90da92e18263a4debb9db3fbbc41a7878762",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/HLURB_CLUP_Vol_1.md",
+      "refined_markdown_sha256": "sha256:6b574d861c0942a232fec321c2863754673532019af8f983e84550e54afc04e3",
+      "locator": "HLURB CLUP Vol. 1 refined markdown lines 434-452, 1988-1994, 2000-2009, 2025-2029, 2117-2130, and 8461-8467; raw PDF pages 23, 70, 74, and 225 checked by local PDF extraction"
+    },
+    {
+      "source_id": "rps-2008-local-planning-system-b070",
+      "label": "Rationalizing the Local Planning System 2008",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/RPS (2008).pdf",
+      "sha256": "sha256:1331576aa80a6e5ab2d4079aa091e7294b7574c3c91b41a499e02cd1f8df91a3",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/RPS (2008).md",
+      "refined_markdown_sha256": "sha256:a86183e25f99faee458dfbb5bdb6045b98e309abe56e3d9fc4b65aee43312c96",
+      "locator": "RPS 2008 refined markdown lines 63-85, 125-166, 203-223, 251-269, 769-795, and 1919-1925; raw PDF pages 5-10, 28, 85, and 97 checked by local PDF extraction"
+    }
+  ],
+  "claims": [
+    "Article and question edits are restricted to claims supported by checked local raw PDFs and refined markdown locators.",
+    "Unsupported external theory names, unverified hazard numbers, and nonlocal assertions were removed or rewritten into source-safe planning/design language."
+  ],
+  "unverified_or_rejected_claims": [],
+  "scenario_enrichment": {
+    "policy_status": "pending",
+    "eligibility_status": "eligible-deferred",
+    "blocker_status": "nonblocking",
+    "note": "No Real World Scenario section was added; source correctness and question safety remained the blocking criteria."
+  },
+  "sme_review": {
+    "status": "local_agent_source_audited",
+    "reviewer": "codex-local-first-batch-070"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "question_id": "d713fe2f-368d-47c1-b5be-7a707b9cdbc9",
+  "baseline_hash": "sha256:5dc51f4c8b099af4c290696f0b46675cd24ac265bac255898dd44a68a137d29e",
+  "action": "replace",
+  "reason": "source-audited-article-batch-043-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes stale or non-local framing where present.",
+  "approved_by": "codex-local-first-batch-043",
+  "approved_at": "2026-05-11T15:45:43.683+08:00",
+  "source_audit_support": {
+    "parent_article_id": "62733840-d170-40de-a27e-31fa31c30c69",
+    "parent_article_slug": "lea-util-007-02-smart-metering-infrastructure-ami",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "DOE Guidelines refined markdown lines 37-43, 410-523, 586-653, 1075-1286, 1357-1387, 1653-1695; RA 11285 refined markdown lines 31-81, 141-157, 205-227, 267-305, 599-613, 906-960, 1060-1166; PEC refined markdown lines 120-160, 510-528, 556, 614-722, 986-1083, 1236-1242",
+    "checked_markdown_lines": [
+      "DOE Guidelines refined markdown lines 37-43 and 410-523",
+      "DOE Guidelines refined markdown lines 586-653",
+      "DOE Guidelines refined markdown lines 1075-1286",
+      "DOE Guidelines refined markdown lines 1357-1387 and 1653-1695",
+      "RA 11285 refined markdown lines 31-81 and 141-157",
+      "RA 11285 refined markdown lines 205-227 and 267-305",
+      "RA 11285 refined markdown lines 599-613",
+      "RA 11285 refined markdown lines 906-960 and 1060-1166",
+      "PEC refined markdown lines 120-160",
+      "PEC refined markdown lines 510-528, 556, and 614-722",
+      "PEC refined markdown lines 986-1083",
+      "PEC refined markdown lines 1236-1242"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "doe-energy-conserving-design-2008-local-raw-pdf--b043-1",
+        "label": "DOE Guidelines on Energy Conserving Design on Buildings v2008 - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+        "sha256": "sha256:9a1a4019b500ffc2873625db6f04ac50b39aea7cadac9159464f9ed716e8126c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.md",
+        "refined_markdown_sha256": "sha256:477f0990a67359eee303e8280a00be449d0aa413252161db7b5b1bafec3012b9",
+        "locator": "DOE Guidelines refined markdown lines 37-43, 410-523, 586-653, 1075-1286, 1357-1387, 1653-1695"
+      },
+      {
+        "source_id": "ra-11285-local-raw-pdf--b043-2",
+        "label": "RA 11285 Energy Efficiency and Conservation Act - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf",
+        "sha256": "sha256:316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.md",
+        "refined_markdown_sha256": "sha256:d2baa0e8d4ffe0059688783a4d31ac0e121517daca939f18a048fe053e76cdd4",
+        "locator": "RA 11285 refined markdown lines 31-81, 141-157, 205-227, 267-305, 599-613, 906-960, 1060-1166"
+      },
+      {
+        "source_id": "pec-ph-local-raw-pdf--b043-3",
+        "label": "Philippine Electrical Code - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+        "sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+        "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3",
+        "locator": "PEC refined markdown lines 120-160, 510-528, 556, 614-722, 986-1083, 1236-1242"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 043 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "What is the safest LEA use of metering data under the checked DOE and RA 11285 families?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use measured end-use data to support energy audits, ECCR, records, and operational decisions."
+      },
+      {
+        "id": "b",
+        "text": "Use metering only for marketing dashboards and ignore audit records."
+      },
+      {
+        "id": "c",
+        "text": "Replace the CECO or CEM role with a vendor dashboard."
+      },
+      {
+        "id": "d",
+        "text": "Treat smart meters as a substitute for code-compliant electrical working space."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "RA 11285 covers audits, ECCR, records, and CECO/CEM responsibilities; DOE guidance supports metering and end-use grouping as a design and operations tool.",
+    "explanation": "RA 11285 covers audits, ECCR, records, and CECO/CEM responsibilities; DOE guidance supports metering and end-use grouping as a design and operations tool.",
+    "code_citation": "RA 11285 refined markdown lines 1086-1166; DOE Guidelines refined markdown lines 632-653"
+  }
+}

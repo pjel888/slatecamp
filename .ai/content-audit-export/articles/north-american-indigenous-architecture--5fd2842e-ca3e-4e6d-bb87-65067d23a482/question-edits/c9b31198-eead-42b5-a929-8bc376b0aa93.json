@@ -1,0 +1,56 @@
+{
+  "question_id": "c9b31198-eead-42b5-a929-8bc376b0aa93",
+  "baseline_hash": "sha256:611aa3552ffb810cceb7260bdedcd955bdd527601760807999eb2f8caed4eade",
+  "action": "replace",
+  "reason": "source-audited-article-batch-054-local-first: local raw PDF backed replacement constrained to checked Batch 054 source families.",
+  "approved_by": "codex-local-first-batch-054",
+  "approved_at": "2026-05-11T19:22:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "5fd2842e-ca3e-4e6d-bb87-65067d23a482",
+    "parent_article_slug": "north-american-indigenous-architecture",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "George Salvan Architectural Character refined markdown lines 479-487",
+    "checked_markdown_lines": [
+      "George Salvan Architectural Character refined markdown lines 479-487"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "salvan-character-local-raw-pdf--b054-5fd2842e-01",
+        "label": "George Salvan Architectural Character and the History of Architecture - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Character and the History of Architecture.pdf",
+        "sha256": "sha256:55c4fa2d43bbfd27cffb86d0aac4ad960032e178e1e25c29d4eb351297bfc069",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Character and the History of Architecture.md",
+        "refined_markdown_sha256": "sha256:be8e760bef8f7ceb573742d996dabb202f0353e19b4ab9283ec2de7dfc1fccea",
+        "locator": "George Salvan Architectural Character refined markdown lines 479-487"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 054 checked local raw PDF source scope."
+  },
+  "proposed": {
+    "text": "What should a Batch 054 question do with longhouse details?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use a separate checked source before relying on them."
+      },
+      {
+        "id": "b",
+        "text": "Treat them as the same as the igloo."
+      },
+      {
+        "id": "c",
+        "text": "Replace them with Inca ashlar evidence."
+      },
+      {
+        "id": "d",
+        "text": "Classify them as Deconstructivism."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Use a separate checked source before relying on them. This answer is supported by the checked Batch 054 local raw PDF source families for North American Indigenous Architecture.",
+    "explanation": "Use a separate checked source before relying on them. The Batch 054 source audit used local raw PDFs first and refined markdown only as locator evidence for North American Indigenous Architecture.",
+    "code_citation": "George Salvan Architectural Character refined markdown lines 479-487"
+  },
+  "batch_question_template_index": 4
+}

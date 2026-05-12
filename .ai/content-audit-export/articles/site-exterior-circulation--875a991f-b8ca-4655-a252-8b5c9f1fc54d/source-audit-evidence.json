@@ -1,0 +1,257 @@
+{
+  "schema_version": "source-audit-evidence-v1-local-first",
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-042-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T15:15:23.383+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+    "slug": "site-exterior-circulation",
+    "title": "Site Exterior Circulation",
+    "article_folder": ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+    "candidate_path": ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/candidate.md",
+    "candidate_sha256": "sha256:9e91113c814794fe961028dd99b35ec604cbef1c8100ede16aa237dd99f9ebbc",
+    "normalized_sha256": "sha256:9e91113c814794fe961028dd99b35ec604cbef1c8100ede16aa237dd99f9ebbc",
+    "linked_questions_sha256": "sha256:6ef5fc3f80435c27ddf822f2fbabab20ea8cfc53f3ecf4c259615d2e424c713b",
+    "sources_sha256": "sha256:e8cd88cb93a6bab4fa12c7aed657c12841e2b224013d6f4d0a308e84024d4540"
+  },
+  "classification": {
+    "content_domain": "LEA Accessibility - site exterior circulation",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high_value_accessibility_code",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 20,
+    "question_edits_created": [
+      "84bba32f-6fc8-4b02-aba3-4d02c8fc02d8",
+      "c8b79f82-3696-416c-9421-d96229d0f475",
+      "e5d3a940-c336-43c6-a17f-fd6a9b07c538",
+      "bb1a66d5-d453-4033-a509-48efabfcd821",
+      "3598ede4-f486-47b7-add1-61caffcc969a",
+      "33f9a32b-22bf-46f1-958f-ea811483362c",
+      "594b5943-8f2b-4e3f-80dc-e91cab87f060",
+      "80188f77-dcd4-427f-a609-61fe8794324c",
+      "e7405b7e-69fc-4173-a9e4-d7d186fdc637",
+      "51033569-04fe-44b9-aa48-74a104458a8a",
+      "2b3592eb-11ba-492f-b80c-0d9e235ccd22",
+      "99f80a23-c795-4eb1-9a2a-4a7286d7dffe",
+      "fbd8fe43-65dd-406f-973d-fe0ec4a4acf2",
+      "568ff715-8693-4a24-bb74-34278fc6c67e",
+      "5d81dbaf-4172-4cd8-b367-8bdc5e2d0129",
+      "72c13f6d-eef5-4655-a698-42541f621d18",
+      "e71d283b-10ca-4d2c-8467-dd7ee6ea65b7",
+      "70546d76-192c-4e65-ac3d-c726a0507e9e",
+      "2b44eb63-81fb-4466-883d-c4cc28f42875",
+      "277e1888-a6f2-469c-a99d-349aee0252fa"
+    ]
+  },
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits/84bba32f-6fc8-4b02-aba3-4d02c8fc02d8.json",
+      ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits/c8b79f82-3696-416c-9421-d96229d0f475.json",
+      ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits/e5d3a940-c336-43c6-a17f-fd6a9b07c538.json",
+      ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits/bb1a66d5-d453-4033-a509-48efabfcd821.json",
+      ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits/3598ede4-f486-47b7-add1-61caffcc969a.json",
+      ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits/33f9a32b-22bf-46f1-958f-ea811483362c.json",
+      ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits/594b5943-8f2b-4e3f-80dc-e91cab87f060.json",
+      ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits/80188f77-dcd4-427f-a609-61fe8794324c.json",
+      ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits/e7405b7e-69fc-4173-a9e4-d7d186fdc637.json",
+      ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits/51033569-04fe-44b9-aa48-74a104458a8a.json",
+      ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits/2b3592eb-11ba-492f-b80c-0d9e235ccd22.json",
+      ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits/99f80a23-c795-4eb1-9a2a-4a7286d7dffe.json",
+      ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits/fbd8fe43-65dd-406f-973d-fe0ec4a4acf2.json",
+      ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits/568ff715-8693-4a24-bb74-34278fc6c67e.json",
+      ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits/5d81dbaf-4172-4cd8-b367-8bdc5e2d0129.json",
+      ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits/72c13f6d-eef5-4655-a698-42541f621d18.json",
+      ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits/e71d283b-10ca-4d2c-8467-dd7ee6ea65b7.json",
+      ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits/70546d76-192c-4e65-ac3d-c726a0507e9e.json",
+      ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits/2b44eb63-81fb-4466-883d-c4cc28f42875.json",
+      ".ai/content-audit-export/articles/site-exterior-circulation--875a991f-b8ca-4655-a252-8b5c9f1fc54d/question-edits/277e1888-a6f2-469c-a99d-349aee0252fa.json"
+    ]
+  },
+  "raw_sources": [
+    {
+      "source_id": "bp-344-2024-rirr-ncda-local",
+      "label": "BP 344 2024 Revised IRR - NCDA local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "source_locator": "BP 344 2024 IRR refined markdown lines 338-467; BP 344 2024 IRR refined markdown lines 619-727; BP 344 2024 IRR refined markdown lines 739-860; BP 344 2024 IRR refined markdown lines 879-885",
+      "checked_markdown_lines": [
+        "BP 344 2024 IRR refined markdown lines 338-467",
+        "BP 344 2024 IRR refined markdown lines 619-727",
+        "BP 344 2024 IRR refined markdown lines 739-860",
+        "BP 344 2024 IRR refined markdown lines 879-885"
+      ]
+    },
+    {
+      "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+      "label": "PD 1096 2004 Revised IRR - DPWH Official local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "source_locator": "PD 1096 RIRR refined markdown lines 2792-2795; PD 1096 RIRR refined markdown lines 3000-3009",
+      "checked_markdown_lines": [
+        "PD 1096 RIRR refined markdown lines 2792-2795",
+        "PD 1096 RIRR refined markdown lines 3000-3009"
+      ]
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "bp-344-2024-rirr-ncda-local",
+      "label": "BP 344 2024 Revised IRR - NCDA local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "source_locator": "BP 344 2024 IRR refined markdown lines 338-467; BP 344 2024 IRR refined markdown lines 619-727; BP 344 2024 IRR refined markdown lines 739-860; BP 344 2024 IRR refined markdown lines 879-885",
+      "checked_markdown_lines": [
+        "BP 344 2024 IRR refined markdown lines 338-467",
+        "BP 344 2024 IRR refined markdown lines 619-727",
+        "BP 344 2024 IRR refined markdown lines 739-860",
+        "BP 344 2024 IRR refined markdown lines 879-885"
+      ]
+    },
+    {
+      "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+      "label": "PD 1096 2004 Revised IRR - DPWH Official local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "source_locator": "PD 1096 RIRR refined markdown lines 2792-2795; PD 1096 RIRR refined markdown lines 3000-3009",
+      "checked_markdown_lines": [
+        "PD 1096 RIRR refined markdown lines 2792-2795",
+        "PD 1096 RIRR refined markdown lines 3000-3009"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "b042-site-01",
+      "claim_text": "All public entrances are accessible and connect arrival/departure points to the interior lobby.",
+      "claim_type": "accessibility_or_building_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - NCDA local raw PDF",
+        "locator": "BP 344 refined markdown lines 772-780",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "all public entrances shall be accessible; entrances accessible from arrival and departure points to the interior lobby"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b042-site-02",
+      "claim_text": "Sidewalks/walkways have width, slope, cross-gradient, headroom, and obstruction controls.",
+      "claim_type": "accessibility_or_building_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - NCDA local raw PDF",
+        "locator": "BP 344 refined markdown lines 679-717",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "minimum width 1500 mm; 1800 mm for two wheelchairs; cross gradient 1:100; headroom 2200 mm"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b042-site-03",
+      "claim_text": "Tactile paths and warning blocks guide primary pedestrian routes and hazard points.",
+      "claim_type": "accessibility_or_building_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "BP 344 2024 Revised IRR - NCDA local raw PDF",
+        "locator": "BP 344 refined markdown lines 443-467 and 491-505",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "quoted_pdf_excerpt": "tactile paths on primary pedestrian route; warning tactile blocks at stairs, escalators, ramps"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b042-site-04",
+      "claim_text": "PD 1096 supports that entrance and exit ramps or steps should not intrude into sidewalk pavement.",
+      "claim_type": "accessibility_or_building_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "PD 1096 2004 Revised IRR - DPWH Official local raw PDF",
+        "locator": "PD 1096 refined markdown lines 2792-2795",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "quoted_pdf_excerpt": "no portion of entrance or exit ramps or steps shall intrude into the sidewalk pavement"
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [
+    "Unchecked derivative-only accessibility dimensions and non-local rule claims were excluded from the Batch 042 repaired content and question edits."
+  ],
+  "removed_or_rewritten_material": [
+    "Removed exported UI-block marker tokens from normalized article content where present.",
+    "Rewrote linked question files to stay inside checked BP 344 and PD 1096 evidence."
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdf_first": true,
+    "derivative_layers_used_only_as_locators": true,
+    "checked_raw_pdf_families": [
+      "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf"
+    ]
+  },
+  "gate_results": {
+    "source_audit": "PASS",
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_validation": "PASS",
+    "question_edit_count_check": "PASS",
+    "scoped_json_parse": "PASS",
+    "marker_scan": "PASS",
+    "source_hash_check": "PASS",
+    "stale_compose_error_check": "PASS"
+  },
+  "source_safe_repair": {
+    "status": "COMPLETE_LOCAL_VALIDATED",
+    "article_normalized_rewritten": true,
+    "sources_json_updated": true,
+    "source_audit_evidence_updated": true,
+    "question_edits_created": 20,
+    "blockers": []
+  },
+  "local_validation": {
+    "status": "PASS_LOCAL_VALIDATION",
+    "validated_at": "2026-05-11T15:15:23.383+08:00",
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_validation": "PASS",
+    "scoped_checks": "PASS",
+    "blockers": []
+  },
+  "sme_review": {
+    "required_before_supabase_publish": true,
+    "completed": false
+  },
+  "overall": {
+    "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+    "blockers": []
+  }
+}

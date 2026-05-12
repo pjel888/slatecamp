@@ -1,56 +1,35 @@
 {
   "article_id": "e2d9d304-9362-4472-8ca8-34106f6990dd",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:bf54f72b100515ea5f783ddf196f64e8659fc411cbc57d44995fde6f01129ed5",
-  "source_count": 4,
+  "source_count": 1,
   "sources": [
     {
-      "source_id": "0a70247f-078e-46d0-9610-3b1e5e598ee2",
+      "source_id": "toa4-tropical-architecture-local-raw-pdf--b060-e2d9d304-01",
       "article_id": "e2d9d304-9362-4472-8ca8-34106f6990dd",
-      "label": "Philippine Green Building Council. \"BERDE – Buildings – Version 5.0.0 – User Guide.\" https://docs.berdeonline.org/userguide/latest/",
+      "label": "TOA 4 Tropical Architecture - local raw PDF",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_raw_pdf",
+      "description": "TOA 4 Tropical Architecture - local raw PDF; local raw PDF checked first; refined markdown used only as locator. TOA 4 Tropical Architecture refined markdown lines 1562-1573, 513-591, 622-670, 708-874, and raw PDF pages 180-181, 71-78, 81-84, 87-90, and 104.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:02.295633+00:00",
-      "updated_at": "2026-03-24T04:34:02.295633+00:00"
-    },
-    {
-      "source_id": "3031eb99-9296-4600-ae39-474fdb2b8829",
-      "article_id": "e2d9d304-9362-4472-8ca8-34106f6990dd",
-      "label": "Department of Energy Philippines. \"Philippine Green Building Code (June 2015).\" https://www.iibh.org/kijun/pdf/Philippines_05_Green_Building_Code_of_Philippones_Y2015",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 1,
-      "created_at": "2026-03-24T04:34:02.295633+00:00",
-      "updated_at": "2026-03-24T04:34:02.295633+00:00"
-    },
-    {
-      "source_id": "001ee6d7-d5ec-45df-bae0-d7673c02c5a6",
-      "article_id": "e2d9d304-9362-4472-8ca8-34106f6990dd",
-      "label": "Climate Change Commission & DENR. \"Republic Act 9729: Philippine Climate Change Act of 2009.\" https://climate.gov.ph/about-us/ra-9729-climate-change-act",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 2,
-      "created_at": "2026-03-24T04:34:02.295633+00:00",
-      "updated_at": "2026-03-24T04:34:02.295633+00:00"
-    },
-    {
-      "source_id": "48d1852a-4a3e-435e-abd4-8f0ecd2886d1",
-      "article_id": "e2d9d304-9362-4472-8ca8-34106f6990dd",
-      "label": "Asian Development Bank. \"The Philippine Green Building Code, 2015 – Law and Policy Reform Program.\" https://lpr.adb.org/resource/philippine-green-building-code-2015",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:34:02.295633+00:00",
-      "updated_at": "2026-03-24T04:34:02.295633+00:00"
+      "created_at": "2026-05-11T21:02:00.000+08:00",
+      "updated_at": "2026-05-11T21:02:00.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
+      "raw_pdf_sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
+      "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
+      "source_locator": "TOA 4 Tropical Architecture refined markdown lines 1562-1573, 513-591, 622-670, 708-874, and raw PDF pages 180-181, 71-78, 81-84, 87-90, and 104",
+      "checked_markdown_lines": [
+        "TOA 4 Tropical Architecture refined markdown lines 1562-1573",
+        "TOA 4 Tropical Architecture refined markdown lines 513-591",
+        "TOA 4 Tropical Architecture refined markdown lines 622-670",
+        "TOA 4 Tropical Architecture refined markdown lines 708-874"
+      ],
+      "checked_pdf_pages": "raw PDF pages 71-78, 81-84, 87-90, 92-100, 104, 106-110, 121, 140, 143-148, 151, 163, 172, 180-181, 187, and 194",
+      "local_audit_note": "Primary truth is the local raw PDF family; refined markdown line ranges are locator aids for the checked claims."
     }
-  ]
+  ],
+  "sources_hash": "sha256:ed39c699b34b45200c9c29a6099f39325dff734aacb0ac9f02c83c21c1e72411"
 }

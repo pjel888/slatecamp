@@ -1,0 +1,51 @@
+{
+  "question_id": "7880e82d-b859-4177-afe6-63e1687fad32",
+  "baseline_hash": "sha256:5b9caf8ffc24a9dcd780dab0b51e5ad349b5e948f1f243b5ca2187e430d74bf5",
+  "action": "replace",
+  "reason": "source-audited-article-batch-040-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-040",
+  "approved_at": "2026-05-11T14:04:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-040-local-first",
+    "checked_sources": [
+      {
+        "source_id": "bp-344-2024-rirr-ncda-local",
+        "label": "BP 344 2024 Revised IRR - NCDA",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "checked_markdown_lines": [
+          "BP 344 2024 IRR refined markdown lines 317-469",
+          "BP 344 2024 IRR refined markdown lines 654-685",
+          "BP 344 2024 IRR refined markdown lines 770-850",
+          "BP 344 2024 IRR refined markdown lines 539-585"
+        ]
+      }
+    ],
+    "citation": "BP 344 2024 Revised IRR, Accessible Ramps"
+  },
+  "proposed": {
+    "text": "For accessible ramps longer than 10.50 m, what intermediate landing length is required?",
+    "options": [
+      {
+        "id": "b040-ec61-04-a",
+        "text": "1800 mm minimum"
+      },
+      {
+        "id": "b040-ec61-04-b",
+        "text": "900 mm minimum"
+      },
+      {
+        "id": "b040-ec61-04-c",
+        "text": "1200 mm minimum"
+      },
+      {
+        "id": "b040-ec61-04-d",
+        "text": "3000 mm minimum"
+      }
+    ],
+    "correct_option_id": "b040-ec61-04-a",
+    "rationale": "Correct answer: 1800 mm minimum. This is directly supported by BP 344 2024 Revised IRR, Accessible Ramps.",
+    "explanation": "The Batch 040 source-audited correction uses only local raw PDF families and locator-checked refined markdown for BP 344 2024 Revised IRR, Accessible Ramps.",
+    "code_citation": "BP 344 2024 Revised IRR, Accessible Ramps"
+  }
+}

@@ -1,0 +1,331 @@
+{
+  "schema_version": "source-audit-evidence-v1-local-first",
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-023-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-10T18:16:14.069Z",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "6e84b3e6-5dd9-4557-8202-5085d24a3708",
+    "slug": "top-50-traps-2024-irr",
+    "title": "Top 50 Traps: 2024 IRR",
+    "article_folder": ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708",
+    "candidate_path": ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/candidate.md",
+    "candidate_sha256": "sha256:99f43e18737abc0a7f3fbc6b1ae991dbe2f34b30a4511bb6ebddde586b7809d7",
+    "normalized_sha256": "sha256:99f43e18737abc0a7f3fbc6b1ae991dbe2f34b30a4511bb6ebddde586b7809d7",
+    "linked_questions_sha256": "sha256:9b9609977e6674fe27e8a05288f2da2ea0c133ad0f136c8e77ce7fd26ba155de",
+    "sources_sha256": "sha256:e33539821e205267da740c4dd412adcfc1faf64821ee7f3f441df06b55a41e87"
+  },
+  "classification": {
+    "content_domain": "LEA Accessibility Code Review",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high_value_lea_code_accessibility_design",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 20,
+    "question_edits_created": [
+      "e823b7b7-556a-415e-892c-d312397c2d40",
+      "ac87b27f-1936-43a2-929c-21c0ac0cf4fd",
+      "568b0651-65e3-4527-8260-bd6c4d60d5d6",
+      "6250c528-080c-4288-a507-99d0eab1ffcf",
+      "5a7cc630-f407-4fc0-b23e-438a19907a79",
+      "a0e57be3-a613-4367-85c0-c0ac3141db55",
+      "4fa976c5-34f6-4890-9233-fe96f4843612",
+      "9c2e5ec4-a1fa-458a-a3e2-63990308393d",
+      "9babaf0d-fe63-4275-813b-3d96f31dde19",
+      "2e6f0f19-1ab0-42a7-be09-aa314504c060",
+      "bc692c6e-e082-481c-aedd-22fad129106d",
+      "a980ed3f-8cd6-45a6-a1c0-fe11e9c983d7",
+      "98974938-7ae2-47bd-b97e-f944db6f7831",
+      "eca40314-9982-4e59-b989-ec889175f636",
+      "57f2f805-413f-488f-bb1a-85ecac9e23d3",
+      "6d0924bd-490e-43a6-a736-41fab500887e",
+      "afa6129b-9e72-4648-b7bd-b69f594d9a57",
+      "abf66f59-3fde-41a7-b8a9-aab3e4333794",
+      "d52d4293-6e5c-4ef1-ab90-f830b0e9c662",
+      "f6d28712-a36d-4b73-8e46-97d22e10e630"
+    ]
+  },
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits/e823b7b7-556a-415e-892c-d312397c2d40.json",
+      ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits/ac87b27f-1936-43a2-929c-21c0ac0cf4fd.json",
+      ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits/568b0651-65e3-4527-8260-bd6c4d60d5d6.json",
+      ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits/6250c528-080c-4288-a507-99d0eab1ffcf.json",
+      ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits/5a7cc630-f407-4fc0-b23e-438a19907a79.json",
+      ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits/a0e57be3-a613-4367-85c0-c0ac3141db55.json",
+      ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits/4fa976c5-34f6-4890-9233-fe96f4843612.json",
+      ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits/9c2e5ec4-a1fa-458a-a3e2-63990308393d.json",
+      ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits/9babaf0d-fe63-4275-813b-3d96f31dde19.json",
+      ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits/2e6f0f19-1ab0-42a7-be09-aa314504c060.json",
+      ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits/bc692c6e-e082-481c-aedd-22fad129106d.json",
+      ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits/a980ed3f-8cd6-45a6-a1c0-fe11e9c983d7.json",
+      ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits/98974938-7ae2-47bd-b97e-f944db6f7831.json",
+      ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits/eca40314-9982-4e59-b989-ec889175f636.json",
+      ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits/57f2f805-413f-488f-bb1a-85ecac9e23d3.json",
+      ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits/6d0924bd-490e-43a6-a736-41fab500887e.json",
+      ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits/afa6129b-9e72-4648-b7bd-b69f594d9a57.json",
+      ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits/abf66f59-3fde-41a7-b8a9-aab3e4333794.json",
+      ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits/d52d4293-6e5c-4ef1-ab90-f830b0e9c662.json",
+      ".ai/content-audit-export/articles/top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708/question-edits/f6d28712-a36d-4b73-8e46-97d22e10e630.json"
+    ]
+  },
+  "raw_sources": [
+    {
+      "source_id": "bp344-2024-revised-irr-accessibility-local",
+      "label": "2024 Revised Implementing Rules and Regulations of Batas Pambansa Blg. 344",
+      "source_type": "raw_pdf_with_refined_markdown",
+      "jurisdiction": "Philippines",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "source_locator": "BP 344 2024 IRR refined markdown lines 40-70, 230-305, 450-463, 539-541, 621-704, 772-792, 992-1003, 1062-1088, 1580-1613, and 1649"
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "bp344-2024-revised-irr-accessibility-local",
+      "label": "2024 Revised Implementing Rules and Regulations of Batas Pambansa Blg. 344",
+      "source_type": "raw_pdf_with_refined_markdown",
+      "jurisdiction": "Philippines",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+      "source_locator": "BP 344 2024 IRR refined markdown lines 40-70, 230-305, 450-463, 539-541, 621-704, 772-792, 992-1003, 1062-1088, 1580-1613, and 1649",
+      "checked_markdown_lines": [
+        "BP 344 2024 IRR refined markdown lines 40-70, 230-305, 450-463, 539-541, 621-704, 772-792, 992-1003, 1062-1088, 1580-1613, and 1649"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "top-50-traps-2024-irr-claim-01",
+      "claim_text": "Article repair is bounded to BP 344 2024 IRR refined markdown lines 40-70.",
+      "claim_type": "legal_or_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "locator": "BP 344 2024 IRR refined markdown lines 40-70",
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf"
+        ],
+        "raw_pdf_sha256": [
+          "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953"
+        ]
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "top-50-traps-2024-irr-claim-02",
+      "claim_text": "Article repair is bounded to BP 344 2024 IRR refined markdown lines 230-305.",
+      "claim_type": "legal_or_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "locator": "BP 344 2024 IRR refined markdown lines 230-305",
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf"
+        ],
+        "raw_pdf_sha256": [
+          "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953"
+        ]
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "top-50-traps-2024-irr-claim-03",
+      "claim_text": "Article repair is bounded to BP 344 2024 IRR refined markdown lines 450-463.",
+      "claim_type": "legal_or_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "locator": "BP 344 2024 IRR refined markdown lines 450-463",
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf"
+        ],
+        "raw_pdf_sha256": [
+          "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953"
+        ]
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "top-50-traps-2024-irr-claim-04",
+      "claim_text": "Article repair is bounded to BP 344 2024 IRR refined markdown lines 539-541.",
+      "claim_type": "legal_or_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "locator": "BP 344 2024 IRR refined markdown lines 539-541",
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf"
+        ],
+        "raw_pdf_sha256": [
+          "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953"
+        ]
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "top-50-traps-2024-irr-claim-05",
+      "claim_text": "Article repair is bounded to BP 344 2024 IRR refined markdown lines 621-704.",
+      "claim_type": "legal_or_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "locator": "BP 344 2024 IRR refined markdown lines 621-704",
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf"
+        ],
+        "raw_pdf_sha256": [
+          "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953"
+        ]
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "top-50-traps-2024-irr-claim-06",
+      "claim_text": "Article repair is bounded to BP 344 2024 IRR refined markdown lines 772-792.",
+      "claim_type": "legal_or_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "locator": "BP 344 2024 IRR refined markdown lines 772-792",
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf"
+        ],
+        "raw_pdf_sha256": [
+          "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953"
+        ]
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "top-50-traps-2024-irr-claim-07",
+      "claim_text": "Article repair is bounded to BP 344 2024 IRR refined markdown lines 1062-1088.",
+      "claim_type": "legal_or_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "locator": "BP 344 2024 IRR refined markdown lines 1062-1088",
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf"
+        ],
+        "raw_pdf_sha256": [
+          "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953"
+        ]
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "top-50-traps-2024-irr-claim-08",
+      "claim_text": "Article repair is bounded to BP 344 2024 IRR refined markdown lines 1580-1613.",
+      "claim_type": "legal_or_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "locator": "BP 344 2024 IRR refined markdown lines 1580-1613",
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf"
+        ],
+        "raw_pdf_sha256": [
+          "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953"
+        ]
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "top-50-traps-2024-irr-claim-09",
+      "claim_text": "Article repair is bounded to BP 344 2024 IRR refined markdown line 1649.",
+      "claim_type": "legal_or_code_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "locator": "BP 344 2024 IRR refined markdown line 1649",
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf"
+        ],
+        "raw_pdf_sha256": [
+          "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953"
+        ]
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rewritten_claims": [
+    "Replaced broad trap claims with source-located 2024 BP 344 IRR facts.",
+    "Reduced the visible list to checked high-yield traps instead of inventing the remaining count."
+  ],
+  "removed_or_rewritten_material": [
+    "Removed web/file citation residue and UI marker blocks from normalized.md.",
+    "Rewrote linked questions into source-safe local JSON edit artifacts."
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "gate_results": {
+    "compose": "PASS: bun run content-audit:compose -- --article-id 6e84b3e6-5dd9-4557-8202-5085d24a3708 --overwrite; blockers=0",
+    "diff": "PASS: bun run content-audit:diff -- --article-id 6e84b3e6-5dd9-4557-8202-5085d24a3708 --summary; safe_to_push=true blockers=0",
+    "validate": "PASS: bun run content-audit:validate -- --article-id 6e84b3e6-5dd9-4557-8202-5085d24a3708 --summary; valid=true blockers=0 warnings=1",
+    "push_dry_run": "not_attempted_local_first; Supabase remote fetch/publish is final publishing only",
+    "supabase_mutation": "not_attempted_by_request"
+  },
+  "source_safe_repair": {
+    "normalized_md_rewritten": true,
+    "candidate_md_composed": true,
+    "sources_json_refreshed_to_checked_raw_sources": true,
+    "source_audit_evidence_json_created": true,
+    "question_edits_created": 20,
+    "answer_key_fields_changed": true,
+    "ui_markers_removed_from_normalized": true
+  },
+  "local_validation": {
+    "compose": {
+      "passed": true,
+      "blockers": [],
+      "warnings": [],
+      "candidate_hash": "sha256:99f43e18737abc0a7f3fbc6b1ae991dbe2f34b30a4511bb6ebddde586b7809d7"
+    },
+    "diff": {
+      "passed": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+      ],
+      "safe_to_push": true
+    },
+    "validate": {
+      "passed": true,
+      "blockers": [],
+      "warnings": [
+        "top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708: component-usage.json has not been generated for this article yet."
+      ]
+    },
+    "scoped_checks": {
+      "json_parse": "PASS: jq empty over 170 Batch 023 JSON files",
+      "learner_visible_marker_scan": "PASS: no web/file/UI marker, extraction, TODO/FIXME/VERIFY, local-first, source-safe, or internal-note strings in normalized.md/candidate.md",
+      "question_edit_marker_scan": "PASS: no web/file/UI marker, extraction, TODO/FIXME/VERIFY, or internal-note strings in question-edits JSON",
+      "source_gap_check": "PASS: all selected articles have raw PDF sources, PASS raw_pdf_gate, matching question-edit counts, compose blockers=0, diff safe=true, validate valid=true",
+      "test_check": "PASS: bun run test:source-verification (7 pass, 0 fail)"
+    },
+    "checked_at": "2026-05-10T18:21:14.059Z"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "local_first_recovery_complete": true,
+    "remote_publish_status": "not_attempted_by_request",
+    "blockers": [],
+    "warnings": [
+      "top-50-traps-2024-irr--6e84b3e6-5dd9-4557-8202-5085d24a3708: component-usage.json has not been generated for this article yet."
+    ]
+  },
+  "supabase": {
+    "pushed": false,
+    "deployed": false,
+    "committed": false,
+    "final_publishing_only": true
+  }
+}

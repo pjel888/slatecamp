@@ -1,116 +1,41 @@
-
+# Site Plans
 
 ## Board Exam Quick Check
 
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+A site-plan question is usually asking what must be shown, measured, or checked before approval. Read the stem for the lot boundary, building position, access, parking, utilities, accessibility, and setback condition.
 
-**Common mistake:** treating a familiar keyword in **Lea Dsgn 011 03 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
-
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
-## Learning Goal
-Read and produce site plans showing property boundaries, setback compliance, building footprint, access routes, utilities, and landscaping at appropriate scales, and verify site plan compliance with zoning regulations and CLUP requirements.
+The checked PD 1096 source requires a site development plan to show the technical description, boundaries, orientation, and position of the proposed building or structure in relation to the lot. It must also show existing or proposed access roads and driveways, existing public utilities or services, existing buildings within and adjoining the lot, and distances between proposed and existing buildings.
 
-Site plans are scaled drawings that communicate the spatial relationship between a building and its context—showing property boundaries, setback compliance, access, utilities, and landscape. The LEA expects you to read and produce site plans that demonstrate understanding of zoning setback regulations and site organization principles.
+For drawing coordination, floor plans are drawn to scale and accessibility plans identify the specific locations and detailed design of accessibility facilities, including parking areas and outside building approaches.
 
-## Core Concept
+Setbacks are the yard widths between the outermost building face and property lines. The checked PD 1096 table gives these residential minimums for newly developed subdivisions:
 
-A **site plan** is an orthographic (top-down) view of a property showing the building footprint, adjacent landscape, utilities, and context features at a defined scale. It is the primary communication tool for demonstrating compliance with zoning and development regulations.
+| Residential use | Front | Side | Rear |
+| --- | ---: | ---: | ---: |
+| R-1 | 4.50 m | 2.00 m | 2.00 m |
+| Basic R-2 | 3.00 m | 2.00 m | 2.00 m |
+| R-5 | 6.00 m | 3.00 m | 3.00 m |
 
-**Essential site plan elements:**
+For commercial, industrial, institutional, and recreational buildings, the checked table ties setbacks to road right-of-way width, with a front setback of 5.00 m to 8.00 m depending on RROW width and side/rear setbacks from 2.00 m to 5.00 m.
 
-1. **Property lines** are shown as a heavy solid perimeter line. The dimensions of the property are noted (length, width, or boundary coordinates). This is the legal boundary within which the building must fit.
+Parking must be drawn to scale and counted. The checked PD 1096 source states that an average perpendicular or diagonal automobile parking slot is 2.50 m x 5.00 m, while parallel parking is 2.15 m x 6.00 m. For accessible parking in the checked accessibility appendix, the accessible slot minimum width is 3.70 m and a 1.20 m clear walkway is provided between front ends of parked cars.
 
-2. **Setback lines** are offset lines parallel to property boundaries, indicating the minimum distance a building must be set back from the edge. These ensure light, air, access to adjoining properties, and emergency egress. Setbacks are mandated by zoning code (PD 1096 in the Philippines).
+A north arrow is required for orientation, but source-safe drafting practice is to make it clear and unambiguous; the law source does not require it to be in a single fixed corner or to point toward the top of the sheet.
 
-3. **Building footprint** is the outline of the building's base, shown in a bold solid line or filled with a light tint. All stories have the same footprint unless there are stepped or cantilevered sections (indicated separately).
+## How It Is Tested
 
-4. **Driveway and parking layout** shows the number of parking stalls, access aisles, accessible parking spaces, and their relationship to building entries. Parking stalls are typically 2.5 m wide × 5.0 m long per standard (may vary by jurisdiction).
-
-5. **Utilities** include water supply connections, sewer/septic lines, electrical services, and gas lines (if applicable). These are shown as dashed or colored lines with labels. Locations of utilities must be verified with local utility authorities.
-
-6. **Landscape features** include trees, shrubs, planters, hardscape, and paving patterns. These communicate spatial character and stormwater management intent.
-
-7. **North arrow** is always included and prominently placed, usually in the upper right corner. This allows readers to understand orientation and interpret facade names (North Elevation, South-facing facade).
-
-8. **Scale** is shown graphically (a drawn scale bar) and numerically (e.g., 1:200, 1:500). The choice of scale depends on the size of the site and level of detail required.
-
-**Scale conventions for site plans:**
-- **1:500 or 1:1000**: For large sites (> 1 hectare) or master plans; shows overall layout.
-- **1:200 or 1:250**: For typical urban lots (0.5–1 hectare); shows building, parking, and immediate context.
-- **1:100**: For small infill sites; shows detailed parking layout and access.
-
-Site plans communicate not only building placement but also the designer's understanding of site constraints (slope, utilities, access), regulatory compliance (setbacks), and design intent (landscape, circulation, parking strategy).
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-dsgn-011-03-core-concept", type="image", caption="Site Plan Elements — Property Lines, Setbacks, and Site Development", description="Annotated site plan showing: property boundary lines, setback dimensions (front, side, rear per PD 1096 Rule VIII), building footprint, access routes (vehicular and pedestrian), utility easements, landscaping zones, and contour lines.", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-## Key Provisions
-
-| Provision | Requirement | Reference |
-|-----------|-------------|-----------|
-| **Setback—Front (0–6 m height)** | 4.5 m | PD 1096 |
-| **Setback—Side (0–6 m height)** | 2.0 m | PD 1096 |
-| **Setback—Rear (0–6 m height)** | 2.0 m | PD 1096 |
-| **Setback—Front (6–9 m height)** | 4.5 m | PD 1096 |
-| **Setback—Side (6–9 m height)** | 2.0 m | PD 1096 |
-| **Setback—Rear (6–9 m height)** | 2.0 m | PD 1096 |
-| **Setback—Front (9–12 m height)** | 6.0 m | PD 1096 |
-| **Setback—Side (9–12 m height)** | 2.0 m | PD 1096 |
-| **Setback—Rear (9–12 m height)** | 3.0 m | PD 1096 |
-| **Setback—Front (12–15 m height)** | 6.0 m | PD 1096 |
-| **Setback—Side (12–15 m height)** | 3.0 m | PD 1096 |
-| **Setback—Rear (12–15 m height)** | 3.0 m | PD 1096 |
-| **Parking stall (standard)** | 2.5 m × 5.0 m (local ordinance) | Local ordinance, Local standards |
-| **Accessible parking (ADA/BP 344)** | 3.6 m × 5.0 m | BP 344 |
-| **Aisle width (one-way)** | 3.5 m | NBC |
-| **Aisle width (two-way)** | 6.0 m | NBC |
-| **Drive aisle width to accessible stall** | 3.0 m min (single space) / 3.6 m (van) | BP 344 |
-
-**Recommended scale selection:**
-- Show the building and immediate context (adjacent buildings, streets, utilities) clearly.
-- A scale too small risks illegibility; a scale too large may not show sufficient context.
-- For exam drawings, 1:200 or 1:250 is typical for a standard urban lot.
-
-## Philippine Practice Context
-
-Under PD 1096 (National Building Code zoning provisions), setbacks vary by building height—a taller building must be set back farther from property lines to reduce shadow and wind impacts. In the Philippines, site plans must also account for prevailing wind direction (northeast in winter, southwest in summer) when placing buildings and planning ventilation. Utilities in the Philippines are often surface-mounted (electrical poles, water lines) and must be coordinated with setback and parking layouts. Sloping sites are common in upland areas; site plans must show contour lines and indicate how the building accommodates the grade change (through sections referenced from the site plan).
-
-## How It's Tested
-
-**Pattern 1: Setback compliance verification**
-A site plan shows a building 4.0 m from the front property line on a 9 m tall building. The candidate must verify whether this complies with PD 1096 (it does not—6.0 m required for 9–12 m height range) and state the required distance.
-
-**Pattern 2: Parking layout and access**
-A site plan shows 6 parking stalls with a single-direction aisle of width 3.0 m. The candidate must identify that aisles require minimum 3.5 m for one-way traffic and flag this as non-compliant.
-
-**Pattern 3: Site planning and context coordination**
-A site plan shows a building on a corner lot with utilities, adjacent buildings, access points, and landscape features. The candidate must assess whether the layout creates safe pedestrian access, complies with setbacks, and integrates utilities logically.
-
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Memory aid:** "PD 1096 Setback Rule" — For buildings up to 6–9 m, front=4.5 m, sides=2.0 m, rear=2.0 m. For taller buildings (9–15 m), front and rear increase; sides gradually increase. Always check building height first to determine the correct setback row in the table.
-[/SLATECAMP_UI_BLOCK]
-
-**Exam Tip:** Site plans must show property lines with dimensions, setbacks (front, side, rear), building footprint with dimensions, access driveways, parking layout, and utility connection points. Scale typically 1:200 or 1:500.
-[SLATECAMP_UI_BLOCK:ui_0003 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-dsgn-011-03-core-concept", type="image", caption="Site Plan Checklist — Required Elements for Permit Submission", description="Annotated site plan showing all required elements per PD 1096: property boundaries with metes and bounds, building footprint with setbacks, access drives and parking, utility lines (water, sewer, power, telecom), landscaped areas, easements, topography contours, flood hazard overlay, and north arrow with prevailing wind direction.", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-## Cross-References
-
-See **LEA-DSGN-012-01** (Site Analysis) for site conditions documentation, **LEA-DSGN-012-02** (Site Development) for buildable area determination, and **LEA-PLAN-004-07** (Zoning Analysis) for setback compliance verification.
+- Identify whether the drawing shows boundaries, orientation, building position, access, driveways, utilities, adjoining buildings, and distances.
+- Check the correct setback row before judging compliance.
+- Use the parking dimensions stated in the code source, not a guessed local convention.
+- Treat utility locations as coordination data that must be verified, not decoration.
+- Use scale math carefully: at 1:500, 1 mm on paper represents 0.5 m in actual distance.
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\"Applying the wrong setback row for building height; always determine building height (in meters) first, then select the corresponding setback category.\",\"Showing parking stalls at 2.0 m × 4.5 m instead of the standard 2.5 m × 5.0 m; always verify parking dimension standards.\",\"Omitting the north arrow or placing it ambiguously, making orientation unclear to plan readers.\",\"Not showing property lines or boundary dimensions; a site plan without clear property boundaries is incomplete.\",\"Misaligning the building footprint shown on the site plan with the floor plan above it (they should have identical footprint outlines).\",\"Failing to show utility connections (water, sewer, electrical, gas) and their locations relative to the building and property lines.\",\"Using a sclea that is too small, making details (parking, access) illegible; 1:200–1:250 is more appropriate than 1:500 for detailed site review.\",\"Not indicating driveway width or showing insufficient space for fire truck access (minimum 3.5 m for one-way, 6.0 m for two-way).\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+- Applying a commercial setback table to a residential lot.
+- Confusing an accessible parking slot width with a standard parking slot width.
+- Assuming a north arrow must always point up the sheet.
+- Showing parking, access, or utilities without scale or labels.
+- Ignoring existing buildings adjoining the lot when the site development plan requires distances.

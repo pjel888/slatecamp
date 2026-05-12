@@ -347,7 +347,7 @@ L_primer = A_primer_total / primerCoverageSqmPerLiter   [liters]
 For each product (topcoat, primer):
   Start from largest can size, fill greedily, round up final can.
   Example: 18.5L needed, cans [16, 4, 1] → 1×16L + 1×4L = 20L (nearest without under-buying)
-  
+
   // Greedy algorithm:
   remaining = liters_needed
   for each canSize in canSizesAvailable (descending):

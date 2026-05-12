@@ -1,0 +1,287 @@
+{
+  "schema_version": "source-audit-evidence-v1-local-first",
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-043-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T15:53:32.715+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "635013a5-2aa6-4d97-a79a-e4f44d3aa3ee",
+    "slug": "lea-util-002-04-system-types-and-applications",
+    "title": "HVAC system selection in the Philippines requires matching",
+    "article_folder": ".ai/content-audit-export/articles/lea-util-002-04-system-types-and-applications--635013a5-2aa6-4d97-a79a-e4f44d3aa3ee",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-04-system-types-and-applications--635013a5-2aa6-4d97-a79a-e4f44d3aa3ee",
+    "candidate_path": ".ai/content-audit-export/articles/lea-util-002-04-system-types-and-applications--635013a5-2aa6-4d97-a79a-e4f44d3aa3ee/candidate.md",
+    "candidate_sha256": "sha256:7ff5cca70ccb111fba8d58391afe5734bec2dbd16458d39e1841da17cace1bf9",
+    "normalized_sha256": "sha256:7ff5cca70ccb111fba8d58391afe5734bec2dbd16458d39e1841da17cace1bf9",
+    "linked_questions_sha256": "sha256:8eef01da418ccf2f679efbbc1cc5d98ca9ab99e81d465f180b93cb4a6df5df85",
+    "sources_sha256": "sha256:d9f78009b4e0c0c36941f33c0301a7f0020c02c14d6472e326bc80f8e582774d"
+  },
+  "classification": {
+    "content_domain": "LEA Utilities - HVAC system selection",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high_value_energy_hvac_design",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 15,
+    "question_edits_created": [
+      "b08e9bbb-d487-4826-85c8-ca15809b5b48",
+      "f84628ed-5627-410a-aae1-51947dbcd81a",
+      "50fd5833-bf12-4c70-b2e4-70188902e3cf",
+      "4b714ff0-dac0-4f73-8bef-4d8ff6bc5c89",
+      "baefce67-c8ea-40b6-bc7c-ce21d6852989",
+      "4c64749f-c1ce-4479-b8c3-8d30e8d0527b",
+      "520b4771-7f25-464f-9304-e039cd2f9cb5",
+      "274ef48a-9dc8-40c8-9f47-96918b9b84bb",
+      "797db3fb-3617-4001-a5ec-5fee5c21a4a5",
+      "8259316c-56bc-41ad-a426-657bb61ee231",
+      "5bb7abe7-fa3b-4910-98c1-df7d1b0b9648",
+      "dd898370-88d9-40d8-a6b0-17b3bf163f3e",
+      "57ad3d12-893b-4a04-8873-f02b583cf79f",
+      "bfd3ab3c-f843-429c-ac27-64eae9e037e5",
+      "80802b77-1d96-4717-a8e3-ed05716fb21e"
+    ]
+  },
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/lea-util-002-04-system-types-and-applications--635013a5-2aa6-4d97-a79a-e4f44d3aa3ee",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-04-system-types-and-applications--635013a5-2aa6-4d97-a79a-e4f44d3aa3ee",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/lea-util-002-04-system-types-and-applications--635013a5-2aa6-4d97-a79a-e4f44d3aa3ee/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-002-04-system-types-and-applications--635013a5-2aa6-4d97-a79a-e4f44d3aa3ee/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/lea-util-002-04-system-types-and-applications--635013a5-2aa6-4d97-a79a-e4f44d3aa3ee/question-edits/b08e9bbb-d487-4826-85c8-ca15809b5b48.json",
+      ".ai/content-audit-export/articles/lea-util-002-04-system-types-and-applications--635013a5-2aa6-4d97-a79a-e4f44d3aa3ee/question-edits/f84628ed-5627-410a-aae1-51947dbcd81a.json",
+      ".ai/content-audit-export/articles/lea-util-002-04-system-types-and-applications--635013a5-2aa6-4d97-a79a-e4f44d3aa3ee/question-edits/50fd5833-bf12-4c70-b2e4-70188902e3cf.json",
+      ".ai/content-audit-export/articles/lea-util-002-04-system-types-and-applications--635013a5-2aa6-4d97-a79a-e4f44d3aa3ee/question-edits/4b714ff0-dac0-4f73-8bef-4d8ff6bc5c89.json",
+      ".ai/content-audit-export/articles/lea-util-002-04-system-types-and-applications--635013a5-2aa6-4d97-a79a-e4f44d3aa3ee/question-edits/baefce67-c8ea-40b6-bc7c-ce21d6852989.json",
+      ".ai/content-audit-export/articles/lea-util-002-04-system-types-and-applications--635013a5-2aa6-4d97-a79a-e4f44d3aa3ee/question-edits/4c64749f-c1ce-4479-b8c3-8d30e8d0527b.json",
+      ".ai/content-audit-export/articles/lea-util-002-04-system-types-and-applications--635013a5-2aa6-4d97-a79a-e4f44d3aa3ee/question-edits/520b4771-7f25-464f-9304-e039cd2f9cb5.json",
+      ".ai/content-audit-export/articles/lea-util-002-04-system-types-and-applications--635013a5-2aa6-4d97-a79a-e4f44d3aa3ee/question-edits/274ef48a-9dc8-40c8-9f47-96918b9b84bb.json",
+      ".ai/content-audit-export/articles/lea-util-002-04-system-types-and-applications--635013a5-2aa6-4d97-a79a-e4f44d3aa3ee/question-edits/797db3fb-3617-4001-a5ec-5fee5c21a4a5.json",
+      ".ai/content-audit-export/articles/lea-util-002-04-system-types-and-applications--635013a5-2aa6-4d97-a79a-e4f44d3aa3ee/question-edits/8259316c-56bc-41ad-a426-657bb61ee231.json",
+      ".ai/content-audit-export/articles/lea-util-002-04-system-types-and-applications--635013a5-2aa6-4d97-a79a-e4f44d3aa3ee/question-edits/5bb7abe7-fa3b-4910-98c1-df7d1b0b9648.json",
+      ".ai/content-audit-export/articles/lea-util-002-04-system-types-and-applications--635013a5-2aa6-4d97-a79a-e4f44d3aa3ee/question-edits/dd898370-88d9-40d8-a6b0-17b3bf163f3e.json",
+      ".ai/content-audit-export/articles/lea-util-002-04-system-types-and-applications--635013a5-2aa6-4d97-a79a-e4f44d3aa3ee/question-edits/57ad3d12-893b-4a04-8873-f02b583cf79f.json",
+      ".ai/content-audit-export/articles/lea-util-002-04-system-types-and-applications--635013a5-2aa6-4d97-a79a-e4f44d3aa3ee/question-edits/bfd3ab3c-f843-429c-ac27-64eae9e037e5.json",
+      ".ai/content-audit-export/articles/lea-util-002-04-system-types-and-applications--635013a5-2aa6-4d97-a79a-e4f44d3aa3ee/question-edits/80802b77-1d96-4717-a8e3-ed05716fb21e.json"
+    ]
+  },
+  "raw_sources": [
+    {
+      "source_id": "doe-energy-conserving-design-2008-local-raw-pdf--b043-1",
+      "label": "DOE Guidelines on Energy Conserving Design on Buildings v2008 - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+      "raw_pdf_sha256": "sha256:9a1a4019b500ffc2873625db6f04ac50b39aea7cadac9159464f9ed716e8126c",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.md",
+      "refined_markdown_sha256": "sha256:477f0990a67359eee303e8280a00be449d0aa413252161db7b5b1bafec3012b9",
+      "source_locator": "DOE Guidelines refined markdown lines 37-43, 410-523, 586-653, 1075-1286, 1357-1387, 1653-1695",
+      "checked_markdown_lines": [
+        "DOE Guidelines refined markdown lines 37-43 and 410-523",
+        "DOE Guidelines refined markdown lines 586-653",
+        "DOE Guidelines refined markdown lines 1075-1286",
+        "DOE Guidelines refined markdown lines 1357-1387 and 1653-1695"
+      ]
+    },
+    {
+      "source_id": "ra-11285-local-raw-pdf--b043-2",
+      "label": "RA 11285 Energy Efficiency and Conservation Act - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf",
+      "raw_pdf_sha256": "sha256:316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.md",
+      "refined_markdown_sha256": "sha256:d2baa0e8d4ffe0059688783a4d31ac0e121517daca939f18a048fe053e76cdd4",
+      "source_locator": "RA 11285 refined markdown lines 31-81, 141-157, 205-227, 267-305, 599-613, 906-960, 1060-1166",
+      "checked_markdown_lines": [
+        "RA 11285 refined markdown lines 31-81 and 141-157",
+        "RA 11285 refined markdown lines 205-227 and 267-305",
+        "RA 11285 refined markdown lines 599-613",
+        "RA 11285 refined markdown lines 906-960 and 1060-1166"
+      ]
+    },
+    {
+      "source_id": "salvan-architectural-utilities-2-local-raw-pdf--b043-3",
+      "label": "George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+      "raw_pdf_sha256": "sha256:ff7231f0059a1febaf4a0996a425caca3b7676c23c729f922e385af4e4c20d28",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
+      "refined_markdown_sha256": "sha256:1b9249c90c0b86c57c6df2f20f0ab210ac112a10230bd9bce584461773d75215",
+      "source_locator": "Salvan refined markdown lines 1707-1828, 5170-5172, 5858-5866, 6038-6053, 8518-8725, 11160-11273, 11555-11559",
+      "checked_markdown_lines": [
+        "Salvan refined markdown lines 1707-1828",
+        "Salvan refined markdown lines 5170-5172, 5858-5866, and 6038-6053",
+        "Salvan refined markdown lines 8518-8725",
+        "Salvan refined markdown lines 11160-11273 and 11555-11559"
+      ]
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "doe-energy-conserving-design-2008-local-raw-pdf--b043-1",
+      "label": "DOE Guidelines on Energy Conserving Design on Buildings v2008 - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+      "raw_pdf_sha256": "sha256:9a1a4019b500ffc2873625db6f04ac50b39aea7cadac9159464f9ed716e8126c",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.md",
+      "refined_markdown_sha256": "sha256:477f0990a67359eee303e8280a00be449d0aa413252161db7b5b1bafec3012b9",
+      "source_locator": "DOE Guidelines refined markdown lines 37-43, 410-523, 586-653, 1075-1286, 1357-1387, 1653-1695",
+      "checked_markdown_lines": [
+        "DOE Guidelines refined markdown lines 37-43 and 410-523",
+        "DOE Guidelines refined markdown lines 586-653",
+        "DOE Guidelines refined markdown lines 1075-1286",
+        "DOE Guidelines refined markdown lines 1357-1387 and 1653-1695"
+      ]
+    },
+    {
+      "source_id": "ra-11285-local-raw-pdf--b043-2",
+      "label": "RA 11285 Energy Efficiency and Conservation Act - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf",
+      "raw_pdf_sha256": "sha256:316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.md",
+      "refined_markdown_sha256": "sha256:d2baa0e8d4ffe0059688783a4d31ac0e121517daca939f18a048fe053e76cdd4",
+      "source_locator": "RA 11285 refined markdown lines 31-81, 141-157, 205-227, 267-305, 599-613, 906-960, 1060-1166",
+      "checked_markdown_lines": [
+        "RA 11285 refined markdown lines 31-81 and 141-157",
+        "RA 11285 refined markdown lines 205-227 and 267-305",
+        "RA 11285 refined markdown lines 599-613",
+        "RA 11285 refined markdown lines 906-960 and 1060-1166"
+      ]
+    },
+    {
+      "source_id": "salvan-architectural-utilities-2-local-raw-pdf--b043-3",
+      "label": "George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment - local raw PDF",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf",
+      "raw_pdf_sha256": "sha256:ff7231f0059a1febaf4a0996a425caca3b7676c23c729f922e385af4e4c20d28",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.md",
+      "refined_markdown_sha256": "sha256:1b9249c90c0b86c57c6df2f20f0ab210ac112a10230bd9bce584461773d75215",
+      "source_locator": "Salvan refined markdown lines 1707-1828, 5170-5172, 5858-5866, 6038-6053, 8518-8725, 11160-11273, 11555-11559",
+      "checked_markdown_lines": [
+        "Salvan refined markdown lines 1707-1828",
+        "Salvan refined markdown lines 5170-5172, 5858-5866, and 6038-6053",
+        "Salvan refined markdown lines 8518-8725",
+        "Salvan refined markdown lines 11160-11273 and 11555-11559"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "b043-hvac-01",
+      "claim_text": "HVAC selection starts from accepted load calculations and design conditions.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "DOE Guidelines on Energy Conserving Design on Buildings v2008 - local raw PDF",
+        "locator": "DOE Guidelines refined markdown lines 1075-1108",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+        "raw_pdf_sha256": "sha256:9a1a4019b500ffc2873625db6f04ac50b39aea7cadac9159464f9ed716e8126c",
+        "quoted_pdf_excerpt": "design load and design conditions"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b043-hvac-02",
+      "claim_text": "DOE guidance supports system sizing close to load and part-load staging for larger systems.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "DOE Guidelines on Energy Conserving Design on Buildings v2008 - local raw PDF",
+        "locator": "DOE Guidelines refined markdown lines 1141-1286",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+        "raw_pdf_sha256": "sha256:9a1a4019b500ffc2873625db6f04ac50b39aea7cadac9159464f9ed716e8126c",
+        "quoted_pdf_excerpt": "system sizing close to load and multiple chiller units"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b043-hvac-03",
+      "claim_text": "DOE guidance supports monitoring/control, VSDs, pumping control, and zone control.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "DOE Guidelines on Energy Conserving Design on Buildings v2008 - local raw PDF",
+        "locator": "DOE Guidelines refined markdown lines 1141-1286",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+        "raw_pdf_sha256": "sha256:9a1a4019b500ffc2873625db6f04ac50b39aea7cadac9159464f9ed716e8126c",
+        "quoted_pdf_excerpt": "centralized monitoring/control, fan VSDs, pumping, zone controls"
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b043-hvac-04",
+      "claim_text": "Salvan utilities guidance distinguishes room units from central cooling, chilled-water, and air-handling systems.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_label": "DOE Guidelines on Energy Conserving Design on Buildings v2008 - local raw PDF",
+        "locator": "Salvan refined markdown lines 11160-11273 and 11555-11559",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+        "raw_pdf_sha256": "sha256:9a1a4019b500ffc2873625db6f04ac50b39aea7cadac9159464f9ed716e8126c",
+        "quoted_pdf_excerpt": "central cooling, chilled water, air handling, and room units"
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [
+    "Derivative-only tariff, product, market, and case-study numbers were excluded from the Batch 043 repaired content and question edits."
+  ],
+  "removed_or_rewritten_material": [
+    "Removed exported UI-block marker tokens from normalized article content where present.",
+    "Rewrote linked question files to stay inside checked local raw-source evidence.",
+    "Replaced stale derivative-only numeric examples with code-family statements supported by local source families."
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdf_first": true,
+    "derivative_layers_used_only_as_locators": true,
+    "checked_raw_pdf_families": [
+      "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf",
+      "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf",
+      "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/George Salvan Architectural Utilities 2 Electrical and Mechanical Equipment.pdf"
+    ]
+  },
+  "gate_results": {
+    "source_audit": "PASS",
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_validation": "PASS",
+    "question_edit_count_check": "PASS",
+    "scoped_json_parse": "PASS",
+    "marker_scan": "PASS",
+    "source_hash_check": "PASS",
+    "stale_compose_error_check": "PASS"
+  },
+  "source_safe_repair": {
+    "status": "COMPLETE_LOCAL_VALIDATED",
+    "article_normalized_rewritten": true,
+    "sources_json_updated": true,
+    "source_audit_evidence_updated": true,
+    "question_edits_created": 15,
+    "blockers": []
+  },
+  "local_validation": {
+    "status": "PASS_LOCAL_VALIDATION",
+    "validated_at": "2026-05-11T15:53:32.715+08:00",
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_validation": "PASS",
+    "scoped_checks": "PASS",
+    "blockers": []
+  },
+  "sme_review": {
+    "required_before_supabase_publish": true,
+    "completed": false
+  },
+  "overall": {
+    "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+    "blockers": []
+  }
+}

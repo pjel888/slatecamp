@@ -1,7 +1,7 @@
 # IMPL_10: Feed-Forward Recommendation Engine
 
-**Priority:** P0  
-**Effort:** ~2 days  
+**Priority:** P0
+**Effort:** ~2 days
 **Research basis:** Hattie & Timperley (2007) — feed-forward ("what to do next") is as important as feedback ("what just happened"). Students who know their next action outperform those who only know their last result.
 
 ---

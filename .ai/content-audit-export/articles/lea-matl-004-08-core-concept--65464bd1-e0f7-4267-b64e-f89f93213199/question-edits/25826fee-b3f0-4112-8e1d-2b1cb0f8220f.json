@@ -1,0 +1,89 @@
+{
+  "question_id": "25826fee-b3f0-4112-8e1d-2b1cb0f8220f",
+  "baseline_hash": "sha256:59e7ffe68b1311d0406a4d72d66c90b87afe5b1bed6eafa6af7b08a10317a1c8",
+  "action": "replace",
+  "reason": "source-audited-article-batch-084-local-first aligned linked question with checked local raw PDF/source evidence for lea-matl-004-08-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-084",
+  "approved_at": "2026-05-12T06:55:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "65464bd1-e0f7-4267-b64e-f89f93213199",
+    "parent_article_slug": "lea-matl-004-08-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Construction Project Management Handbook refined markdown lines 1001-1068; PD 1096 RIRR refined markdown lines 488-507, 848-860, and 916-918; UAP Document 301 lines 575-604, 786, and 858-859; Chudley/Greeno lines 433-519.",
+    "checked_markdown_lines": [
+      "Construction Project Management Handbook refined markdown lines 253-293, 1001-1068, 2243-2245, 2694-2704, and 3052-3056; raw PDF pages 5, 7, 43-47, 82, 84, 97, 100, 105, and 125 checked by local PyMuPDF extraction.",
+      "PD 1096 RIRR DPWH refined markdown lines 488-507, 653, 848-860, 916-918, and 3047-3099; raw PDF pages 14, 34, 35, 38, 168, 169, and 244-245 checked by local PyMuPDF extraction.",
+      "UAP Document 301 refined markdown lines 575-604, 678-684, 786, and 858-859; raw PDF pages 10, 20, 21, 25, 32, and 37 checked by local PyMuPDF extraction.",
+      "Chudley/Greeno refined markdown lines 18-23, 295-305, 433-519, 782-916, and 893-916; raw PDF pages 58, 96, 163-199, 471, 495, and 511 checked by local PyMuPDF extraction."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "construction-project-management-handbook-b084",
+        "label": "Construction Project Management Handbook by Shadan _ Fleming",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Construction Project Management Handbook by Shadan _ Fleming.pdf",
+        "sha256": "sha256:01dd25a5de726377eb53bafb502127a806cc007ffc05e8dad745479b0ad6ad17",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Construction Project Management Handbook by Shadan _ Fleming.md",
+        "refined_markdown_sha256": "sha256:9d7f7c772d1efcce9db4c8f1e59cc5d19711cd99448799ae6ce783ebb6b78c77",
+        "locator": "Construction Project Management Handbook refined markdown lines 253-293, 1001-1068, 2243-2245, 2694-2704, and 3052-3056; raw PDF pages 5, 7, 43-47, 82, 84, 97, 100, 105, and 125 checked by local PyMuPDF extraction."
+      },
+      {
+        "source_id": "pd-1096-rirr-dpwh-b084",
+        "label": "PD 1096 RIRR 2004 - Revised IRR (DPWH Official)",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "locator": "PD 1096 RIRR DPWH refined markdown lines 488-507, 653, 848-860, 916-918, and 3047-3099; raw PDF pages 14, 34, 35, 38, 168, 169, and 244-245 checked by local PyMuPDF extraction."
+      },
+      {
+        "source_id": "uap-document-301-b084",
+        "label": "UAP Document 301",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "refined_markdown_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+        "locator": "UAP Document 301 refined markdown lines 575-604, 678-684, 786, and 858-859; raw PDF pages 10, 20, 21, 25, 32, and 37 checked by local PyMuPDF extraction."
+      },
+      {
+        "source_id": "chudley-greeno-handbook-b084",
+        "label": "Buidling Construction Handbook 7th Ed by Chudley _ Greeno",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf",
+        "sha256": "sha256:2efa493fac06a3efb9367111a397129ff8647778d88160bbe0174403cbb9e0bb",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.md",
+        "refined_markdown_sha256": "sha256:485fe968d55ca680cbde52d24fcee5f512a63591026db19e46835f1bc530dcbb",
+        "locator": "Chudley/Greeno refined markdown lines 18-23, 295-305, 433-519, 782-916, and 893-916; raw PDF pages 58, 96, 163-199, 471, 495, and 511 checked by local PyMuPDF extraction."
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 084 local raw-source-audited preconstruction_site_readiness scope."
+  },
+  "proposed": {
+    "text": "What does PD 1096 RIRR require before constructing or altering a building or structure?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A building permit from the Building Official assigned to the place of work"
+      },
+      {
+        "id": "b",
+        "text": "Only an informal verbal approval"
+      },
+      {
+        "id": "c",
+        "text": "Only a furniture schedule"
+      },
+      {
+        "id": "d",
+        "text": "No permit if the contractor is experienced"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The checked PD 1096 locator states that construction, alteration, repair, moving, demolition, and similar work require a building permit.",
+    "explanation": "The checked PD 1096 locator states that construction, alteration, repair, moving, demolition, and similar work require a building permit.",
+    "code_citation": "Construction Project Management Handbook by Shadan _ Fleming; PD 1096 RIRR 2004 - Revised IRR (DPWH Official); UAP Document 301; Buidling Construction Handbook 7th Ed by Chudley _ Greeno",
+    "bloom_level": "understand",
+    "application_context": "source_audited_local_first_batch_084",
+    "practice_context": [],
+    "difficulty": 0.5
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "question_id": "f10e7910-cde6-4cdc-9ef7-9070fc68abc6",
+  "baseline_hash": "sha256:d7f075d64d0bf4f7fc04033e719d7261dd72e38028ac3f8a745d33ce916c3e33",
+  "action": "replace",
+  "reason": "source-audited-article-batch-031-local-first aligned linked question with audited local source language for lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role.",
+  "approved_by": "codex-local-source-audit-batch-031",
+  "approved_at": "2026-05-11T08:56:01+08:00",
+  "source_audit_support": {
+    "parent_article_id": "332b32e5-1890-4765-a7b3-317790804247",
+    "parent_article_slug": "lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "SPP 201 lines 254, 268-324, 328-330, 437-447",
+    "checked_sources": [
+      {
+        "source_id": "uap-spp-201-predesign-services-local",
+        "label": "UAP SPP 201 - Pre-design Services",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+        "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+        "refined_markdown_sha256": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
+        "source_locator": "SPP 201 refined markdown lines 254, 268-324, 328-330, 437-447",
+        "checked_markdown_lines": [
+          "SPP 201 refined markdown lines 254, 268-324, 328-330, 437-447"
+        ]
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer key, rationale, explanation, and code citation rewritten to the audited local article scope."
+  },
+  "proposed": {
+    "text": "Which service includes formulating site criteria and assisting in site evaluation?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Site selection and analysis"
+      },
+      {
+        "id": "b",
+        "text": "Final payment release"
+      },
+      {
+        "id": "c",
+        "text": "Arbitration award writing"
+      },
+      {
+        "id": "d",
+        "text": "Green certification issuance"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "SPP 201 describes site selection and analysis in those terms.",
+    "explanation": "SPP 201 describes site selection and analysis in those terms.",
+    "code_citation": "SPP 201 lines 254, 268-324, 328-330, 437-447"
+  }
+}

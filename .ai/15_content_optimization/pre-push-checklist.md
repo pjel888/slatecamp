@@ -1,6 +1,6 @@
 # Pre-Push Checklist
 
-**Purpose:** Steps to complete before any Supabase live push of the content-audit export.  
+**Purpose:** Steps to complete before any Supabase live push of the content-audit export.
 **Status:** Blocked pending human decisions (see Section A).
 
 ---

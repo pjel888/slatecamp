@@ -278,7 +278,7 @@ The current system supports two types: `box` and `cylinder`. The following new t
 The current geometry builder assumes a straight-run stair. To support L-shape and U-shape configurations, introduce a `StairTypeConfig` abstraction:
 
 ```
-StairTypeConfig = 
+StairTypeConfig =
   | { type: 'straight' }
   | { type: 'l-shape', turnDirection: 'left' | 'right', risersBeforeTurn: number }
   | { type: 'u-shape', risersBeforeTurn: number }

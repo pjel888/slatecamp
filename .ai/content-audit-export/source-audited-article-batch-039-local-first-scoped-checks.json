@@ -1,0 +1,104 @@
+{
+  "batch_id": "source-audited-article-batch-039-local-first",
+  "schema_version": "source-audited-local-first-scoped-checks-v1",
+  "generated_at": "2026-05-11T05:56:19.011Z",
+  "status": "PASS",
+  "counts": {
+    "selected_articles": 5,
+    "linked_questions": 145,
+    "question_edits": 145,
+    "source_rows": 5,
+    "unique_raw_pdfs": 1,
+    "json_parse": 200,
+    "source_hash_checks": 10,
+    "marker_matches": 0,
+    "stale_compose_error_files": 0,
+    "targeted_tests_passed": 34
+  },
+  "article_results": [
+    {
+      "article_id": "4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+      "slug": "vent-shafts-and-ventilation",
+      "folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/vent-shafts-and-ventilation--4aa53e66-6e93-44c1-804b-59f5e19bfda6",
+      "linked_questions": 33,
+      "question_edits": 33,
+      "source_rows": 1,
+      "compose": "PASS",
+      "diff": "PASS",
+      "validate": "PASS",
+      "ui_block_validation": "PASS",
+      "source_audit": "PASS",
+      "candidate_hash": "sha256:21efde4dba90940ee9967194b30b2082296e4494eeb6d9e7a27108bd6cb40b5e"
+    },
+    {
+      "article_id": "1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+      "slug": "stages-and-platforms",
+      "folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/stages-and-platforms--1a46c0de-3c18-45bc-874e-6dce4f13f5fe",
+      "linked_questions": 31,
+      "question_edits": 31,
+      "source_rows": 1,
+      "compose": "PASS",
+      "diff": "PASS",
+      "validate": "PASS",
+      "ui_block_validation": "PASS",
+      "source_audit": "PASS",
+      "candidate_hash": "sha256:a847c4c2f0f08362ff4de249ce1c8996bf1451f94d24a9f9cf4a4fa9045cdf0b"
+    },
+    {
+      "article_id": "5a5eaf39-d265-427e-90dc-40bfeb763baf",
+      "slug": "storage-of-x-ray-films",
+      "folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/storage-of-x-ray-films--5a5eaf39-d265-427e-90dc-40bfeb763baf",
+      "linked_questions": 31,
+      "question_edits": 31,
+      "source_rows": 1,
+      "compose": "PASS",
+      "diff": "PASS",
+      "validate": "PASS",
+      "ui_block_validation": "PASS",
+      "source_audit": "PASS",
+      "candidate_hash": "sha256:6bb298f5681d596714b1a2fdd505573be78ec83dd14d6397dcab904e8c3589e1"
+    },
+    {
+      "article_id": "9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "slug": "allowable-floor-area-increases",
+      "folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/allowable-floor-area-increases--9a20ebf2-c7c1-4c0f-b8bc-8d6139878a0c",
+      "linked_questions": 28,
+      "question_edits": 28,
+      "source_rows": 1,
+      "compose": "PASS",
+      "diff": "PASS",
+      "validate": "PASS",
+      "ui_block_validation": "PASS",
+      "source_audit": "PASS",
+      "candidate_hash": "sha256:607ae35ebe9eaf2b8ad8c9272ccecca504da7ec78b99660c0aa2857ccd94708a"
+    },
+    {
+      "article_id": "aeeecbe3-e245-4e6e-ba54-8dc7f65bcfca",
+      "slug": "electrical-and-mechanical-regulations",
+      "folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/electrical-and-mechanical-regulations--aeeecbe3-e245-4e6e-ba54-8dc7f65bcfca",
+      "linked_questions": 22,
+      "question_edits": 22,
+      "source_rows": 1,
+      "compose": "PASS",
+      "diff": "PASS",
+      "validate": "PASS",
+      "ui_block_validation": "PASS",
+      "source_audit": "PASS",
+      "candidate_hash": "sha256:56b9c7bc7808da41ab76263785baad19e19d30dcd92c0b91d536bf80864c74b8"
+    }
+  ],
+  "marker_matches": [],
+  "source_hash_mismatches": [],
+  "stale_compose_errors": [],
+  "targeted_tests": {
+    "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+    "status": "PASS",
+    "passed": 34,
+    "failed": 0
+  },
+  "post_artifact_git_diff_check": {
+    "command": "git diff --check -- <Batch 039 scoped paths>",
+    "status": "PASS"
+  },
+  "blockers": []
+}

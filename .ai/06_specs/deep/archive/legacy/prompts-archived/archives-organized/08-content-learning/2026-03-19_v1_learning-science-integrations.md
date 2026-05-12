@@ -184,7 +184,7 @@ Error Patterns (4 wrong answers tagged)
 Knowledge gap:      2 answers
 Distractor confusion: 2 answers
 
-→ Two of your errors came from similar-looking options. 
+→ Two of your errors came from similar-looking options.
   Compare: PD 1096 §808 vs §810 (ceiling height vs room area).
 ```
 
@@ -283,7 +283,7 @@ Add a study window selector to the onboarding flow (or to Profile Settings):
 When do you usually study?
 
 ○ Morning (before noon)
-○ Evening (after 5pm)  
+○ Evening (after 5pm)
 ○ Both
 ○ No preference
 ```
@@ -300,22 +300,22 @@ When rendering a trail day's steps, sort by `preferred_time` matched to the user
 
 ```typescript
 function sortStepsByStudyWindow(
-  steps: TrailStep[], 
+  steps: TrailStep[],
   userWindow: 'morning' | 'evening' | 'both' | 'any'
 ): TrailStep[] {
   if (userWindow === 'any') return steps // original order
-  
+
   // Morning users: quiz steps first (retrieval), wiki/lab later (new content)
   // Evening users: wiki/lab first (new content), quiz last (will consolidate overnight)
   // Both: wiki/lab in first half, quiz in second half
-  
+
   const conceptSteps = steps.filter(s => s.step_type === 'wiki' || s.step_type === 'lab')
   const retrievalSteps = steps.filter(s => s.step_type === 'quiz' || s.step_type === 'review')
-  
+
   if (userWindow === 'morning') {
     return [...retrievalSteps, ...conceptSteps] // retrieval first (overnight consolidation), new content later
   }
-  
+
   // evening or both: new content first, retrieval after
   return [...conceptSteps, ...retrievalSteps]
 }
@@ -340,14 +340,14 @@ These features need 1 new column and new frontend components.
 **Schema change: 1 new column**
 
 ```sql
-ALTER TABLE public.questions 
+ALTER TABLE public.questions
   ADD COLUMN IF NOT EXISTS application_context TEXT;
 -- Values: 'recall', 'calculation', 'design_application', 'code_interpretation', 'client_scenario'
 ```
 
 **Index:**
 ```sql
-CREATE INDEX IF NOT EXISTS idx_questions_application_context 
+CREATE INDEX IF NOT EXISTS idx_questions_application_context
   ON public.questions(topic_id, application_context);
 ```
 
@@ -379,7 +379,7 @@ async function selectContextualVariationQuestions(
   for (const nodeId of nodeIds) {
     for (const context of contexts) {
       if (selectedIds.length >= totalCount) break
-      
+
       const { data } = await supabase
         .from('questions')
         .select('question_id')
@@ -387,7 +387,7 @@ async function selectContextualVariationQuestions(
         .eq('application_context', context)
         .limit(1)
         .order('difficulty', { ascending: false }) // harder questions first
-      
+
       if (data?.[0]) selectedIds.push(data[0].question_id)
     }
   }
@@ -427,7 +427,7 @@ You've missed this one before. Let's lock it in.
 Implementation:
 1. After a wrong answer in Camp Mode, check: has this user answered this `question_id` incorrectly before?
    ```sql
-   SELECT COUNT(*) FROM user_interactions 
+   SELECT COUNT(*) FROM user_interactions
    WHERE user_id = $1 AND question_id = $2 AND is_correct = false
    ```
 2. If count > 0 (repeat failure): insert 3 additional questions from the same `topic_id` into the current session's question queue (at the NEXT position, not the end)
@@ -497,7 +497,7 @@ CREATE INDEX IF NOT EXISTS idx_teach_back_criteria_topic ON public.topic_teach_b
 
 Also add planned columns to `user_node_mastery`:
 ```sql
-ALTER TABLE public.user_node_mastery 
+ALTER TABLE public.user_node_mastery
   ADD COLUMN IF NOT EXISTS teach_back_attempted BOOLEAN DEFAULT false,
   ADD COLUMN IF NOT EXISTS teach_back_gap_count INTEGER DEFAULT 0;
 ```
@@ -525,7 +525,7 @@ ALTER TABLE public.user_node_mastery
 The student's response is sent to Claude API (temperature 0.0, bounded to SlateCamp database context) with the `topic_teach_back_criteria` for that topic:
 
 ```typescript
-const systemPrompt = `You are evaluating a student's explanation of "${topicName}" for the Philippine Architecture Licensure Exam. 
+const systemPrompt = `You are evaluating a student's explanation of "${topicName}" for the Philippine Architecture Licensure Exam.
 
 Required concepts: ${criteria.required_concepts.join(', ')}
 Required exceptions: ${criteria.required_exceptions.join(', ')}

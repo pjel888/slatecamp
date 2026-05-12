@@ -1,121 +1,23 @@
+# Fire Stations: Occupancy and Fire-Safety Review
 
+## Source Scope
 
-## Board Exam Quick Check
+This local repair is limited to the checked PD 1096 RIRR occupancy tables, the RA 9514 2019 Revised IRR, and the local Fire Code source family. Earlier claims about NSCP seismic importance factors, apparatus bay dimensions, bay-door dimensions, frontage-apron depths, and dormitory area factors are not carried forward because those values were not verified from the local raw PDFs in this batch.
 
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+## LEA Anchor
 
-**Common mistake:** treating a familiar keyword in **Lea Dsgn 005 13 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+Treat a fire-station item as a source-selection problem. First identify the code table named by the question, then answer only from that table. Do not import vehicle-bay planning rules, structural importance factors, or crew-housing assumptions unless the item supplies a verified source for them.
 
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
-## What You Need to Know for the LEA
+## Occupancy Classification
 
-## Learning Goal
-Classify fire stations as Group D-1 essential facilities with I=1.50 seismic importance factor per NSCP 2015, apply apparatus bay spatial standards, calculate crew dormitory and egress requirements, and verify Category I performance standards.
+PD 1096 Section 701 classifies buildings by use or character of occupancy. In the checked occupancy matrix, police and fire stations appear under Division D-1 for institutional, government, and health-service uses. The same checked source family also contains a business and mercantile row that mentions police and fire stations in another table context. For exam use, the controlling table and prompt wording matter: answer the classification named by the item, and do not treat a single phrase as a universal rule.
 
-Fire stations are **Group D, Division 1 occupancies** (institutional/essential facilities). They are classified as **Category I Essential Facilities** per NSCP 2015 Table 103-1, requiring a seismic importance factor of $I = 1.50$. They require specialized spatial standards for apparatus bays, crew dormitories, and egress that combine fire code requirements with operational functionality.
+## Fire-Safety Review
 
----
+RA 9514 places building plan review, fire safety inspection, and FSIC issuance under the city or municipal fire marshal having jurisdiction. Before occupancy, the inspector checks whether required fire safety construction, protective systems, and warning systems are installed according to approved plans and specifications. Fire safety construction includes walls, barriers, doors, windows, vents, means of egress, and similar building elements intended to reduce danger from fire, smoke, fumes, or panic before evacuation.
 
-## Core Concept
+The Fire Code source family also states that buildings for human occupancy must have exits sufficient for fast and safe escape. Exits must be appropriate to the occupancy, occupant count, fire protection available, building height, and construction type.
 
-Fire stations are classified as essential facilities. Under **PD 1096** occupancy groups, fire stations are typically classified as **Group D (Institutional)**. This classification requires enhanced structural design with a seismic importance factor of $I = 1.50$, reflecting their critical role in emergency response.
+## Exam Use
 
-Unlike general institutional buildings, fire stations contain unique programmatic elements:
-
-- **Apparatus Bays**: For vehicle storage and maintenance.
-- **Crew Dormitories**: For 24-hour shift personnel.
-- **Administrative/Community Spaces**: For management and public engagement.
-
-### The Apparatus Bay
-
-The apparatus bay is the functional heart of a fire station. Each vehicle requires a dedicated bay measuring approximately **7.5 meters wide by 14.0 meters deep** with a minimum clear height of **4.3 meters**. The overhead bay door measures **4.0 meters wide by 4.0 meters high**, allowing rapid vehicle deployment. The frontage apron extends **15.0 meters deep** from the building to provide a necessary turning radius and staging area.
-
-### Crew Dormitories
-
-Crew dormitories house firefighters during 24-hour shifts. Design standards allocate **5.5 square meters per firefighter** to accommodate bunking areas, lockers, and common spaces. Egress from dormitories must meet standard occupant load formulas while allowing rapid emergency exit.
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-dsgn-005-13-core-concept", type="image", caption="Fire Station — Essential Facility Space Program", description="Floor plan of a fire station showing apparatus bay (with vehicle turning radii), crew dormitory, watch room, equipment storage, and dispatch area. Annotated with I=1.50 seismic importance factor per NSCP 2015 and Category I performance standards.", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
----
-
-## Key Provisions
-
-| Element | Dimension/Standard | Notes |
-|:-------------------------------- |:-------------------------------------- |:---------------------------------------------------------- |
-| Apparatus Bay (per vehicle) | 7.5m W × 14.0m D × 4.3m H | Clear height minimum |
-| Overhead Bay Door | 4.0m W × 4.0m H | Single vehicle deployment |
-| Crew Dormitory | 5.5 sqm/firefighter | 24-hour shift accommodation |
-| Frontage Apron | 15.0m deep | Vehicle turning radius |
-| Seismic Importance Factor | $I = 1.50$ | Essential facility classification |
-| **Fire Exit Width (level/stair)** | **7.6 mm/person** | Per RA 9514 Rule 10 |
-| Travel Distance | 45m (unsprinklered) / 60m (sprinklered) | Maximum from any point to exit |
-| Min Stair Width | 1.12 m clear | Accessible egress |
-
-**Occupant Load Calculation:**
-
-- **Office spaces**: 1 person per 9.3 sqm.
-- **Apparatus bay**: Apparatus occupancy only (crew in transit).
-- **Community/assembly**: 1 person per 4.65 sqm.
-
-**Egress Formula:**
-$Exit Width (mm) = Occupant Load \times 7.6 mm/person$.
-
----
-
-## Philippine Practice Context
-
-Fire stations in the Philippines are designed per **NBCP (PD 1096)** provisions and **Bureau of Fire Protection (BFP)** standards. The seismic importance factor $I = 1.50$ reflects the need for uninterrupted emergency response capability.
-
-Philippine fire stations typically incorporate tropical climate design:
-
-- Ventilation systems specifically for apparatus bay fumes.
-- Weather-protected apparatus staging areas.
-- Provisions for monsoon-driven runoff.
-
-Local building departments verify apparatus bay clearances and emergency access routes during permit review.
-
----
-
-## How It's Tested
-
-**Pattern 1 — Apparatus Bay Sizing**
-A fire station design includes two fire engines and one ladder truck. Calculate the minimum apparatus bay dimensions needed. Answer requires recognizing the **7.5m × 14.0m** standard per vehicle.
-
-**Pattern 2 — Dormitory Occupancy**
-A fire station houses 24 firefighters in a dormitory (**5.5 sqm/person** allocated). Determine the dormitory floor area and apply the fire exit width formula.
-
-**Pattern 3 — Seismic Classification**
-Identify the seismic importance factor for a fire station ($I = 1.50$) and explain why it differs from a general office building ($I = 1.0$).
-
-> [SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: > **Fire Station Anchors:** Group D, $I = 1.50$. Apparatus bay = 7.5m × 14.0m > × 4.3m per vehicle. Dormitory = 5.5 sqm/firefighter. Exit width > (level/stair) = 7.6 mm/person. Frontage apron = 15.0m. [cite: > 277, 278] >
-[/SLATECAMP_UI_BLOCK]
-
----
-
-**Exam Tip — ERR-DSGN-028:** Fire stations are Category I Essential Facilities with I=1.50 seismic importance factor per NSCP 2015. This is the HIGHEST importance factor — higher than hospitals (I=1.25).
-[SLATECAMP_UI_BLOCK:ui_0003 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-dsgn-005-13-core-concept", type="image", caption="Fire Station — Essential Facility Planning and Apparatus Bay Layout", description="Floor plan of a fire station showing: apparatus bay with vehicle turning template overlay, crew dormitory (24hr shift capacity), watch room with site views, equipment storage, decontamination zone, and dispatch center. I=1.50 seismic importance factor and Category I performance annotations.", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-## Cross-References
-
-See **LEA-DSGN-005-05** (Health Facilities) for Group D-1 comparison, **LEA-DSGN-008-02** (Fire Separation) for essential facility fire ratings, and **LEA-DSGN-010-03** (Vehicular Circulation) for emergency access design.
-
-## Common Mistakes
-
-- Confusing Group D (fire station) with Group E (business/office).
-- Using a standard $I = 1.0$ seismic factor instead of the required **$I = 1.50$** for essential facilities.
-- Calculating overhead door dimensions as 3.0m × 4.0m instead of the required **4.0m × 4.0m**.
-- Applying office occupancy load (9.3 sqm/person) to dormitories instead of the **5.5 sqm/person** standard.
-- Forgetting the **15.0m frontage apron depth** in site layout planning.
-- Using 5 mm/person exit width without specifying component types, whereas level/stair components for these facilities are typically tested at **7.6 mm/person**.
-
----
+If the question asks for fire-station classification, use the exact PD 1096 table cited. If it asks about FSIC, plan review, alarm systems, fire protective devices, or egress, use RA 9514 and the Fire Code. Avoid unsupported apparatus-bay and NSCP shortcuts in source-audited answers.

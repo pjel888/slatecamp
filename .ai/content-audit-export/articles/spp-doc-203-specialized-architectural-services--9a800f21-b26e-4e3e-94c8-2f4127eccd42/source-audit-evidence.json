@@ -1,0 +1,86 @@
+{
+  "artifact_type": "source_audit_evidence",
+  "batch_id": "source-audited-article-batch-012-local-first",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T20:50:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "status": "local_pass_ready_for_final_publishing_review",
+  "target": {
+    "article_id": "9a800f21-b26e-4e3e-94c8-2f4127eccd42",
+    "slug": "spp-doc-203-specialized-architectural-services",
+    "title": "SPP Doc 203: Specialized Architectural Services",
+    "folder": ".ai/content-audit-export/articles/spp-doc-203-specialized-architectural-services--9a800f21-b26e-4e3e-94c8-2f4127eccd42",
+    "normalized_path": ".ai/content-audit-export/articles/spp-doc-203-specialized-architectural-services--9a800f21-b26e-4e3e-94c8-2f4127eccd42/normalized.md",
+    "candidate_path": ".ai/content-audit-export/articles/spp-doc-203-specialized-architectural-services--9a800f21-b26e-4e3e-94c8-2f4127eccd42/candidate.md",
+    "sources_path": ".ai/content-audit-export/articles/spp-doc-203-specialized-architectural-services--9a800f21-b26e-4e3e-94c8-2f4127eccd42/sources.json",
+    "question_edits_folder": ".ai/content-audit-export/articles/spp-doc-203-specialized-architectural-services--9a800f21-b26e-4e3e-94c8-2f4127eccd42/question-edits",
+    "original_hash": "sha256:3db173e4e90fcf26afa64673e0846db694f539515563f8cf0bfd0f406de76a35",
+    "normalized_hash": "sha256:21dc44c70e51f217e1c590d90e84b4ad4d328cc776664c190aee4f4c18000bb4",
+    "candidate_hash": "sha256:21dc44c70e51f217e1c590d90e84b4ad4d328cc776664c190aee4f4c18000bb4",
+    "sources_hash": "sha256:5118a145dcd57ab3bca2b9429276de5b262a29a1d17347007a7119c4dee6aefc",
+    "linked_questions_hash": "sha256:6dd9876c986a9db6f8936664c377a87c3d49c1239e7ffbbf76827710ccd08533",
+    "question_edit_count": 10
+  },
+  "raw_sources": [
+    {
+      "source_id": "uap-standards-of-professional-practice-2",
+      "label": "UAP Standards of Professional Practice",
+      "authority": "United Architects of the Philippines / PRBoA SPP reference copy",
+      "source_type": "professional_practice_pdf",
+      "source_locator": "SPP Document 203 specialized architectural services",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+      "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
+      "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
+      "checked_markdown_lines": [
+        "UAP SPP raw markdown lines 596-638, 846-883, 905-950, 968-970, and 1220-1274"
+      ],
+      "use": "primary source for article and linked-question support",
+      "local_source_checked": true
+    }
+  ],
+  "local_edits": {
+    "normalized_repaired": true,
+    "candidate_composed": true,
+    "ui_blocks_removed_from_repaired_markdown": true,
+    "sources_json_updated": true,
+    "question_edits_created": 10,
+    "answer_key_fields_changed": false
+  },
+  "validation": {
+    "compose": {
+      "safe_to_diff": true,
+      "blockers": [],
+      "placeholders_found": 0,
+      "unresolved_placeholders": []
+    },
+    "diff": {
+      "changed": true,
+      "safe_to_push": true,
+      "locally_safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+      ]
+    },
+    "bundle_validate_dry_run": {
+      "valid": true,
+      "blockers": [],
+      "warnings": [
+        "component-usage.json has not been generated for this article yet."
+      ]
+    }
+  },
+  "question_edit_files": [
+    ".ai/content-audit-export/articles/spp-doc-203-specialized-architectural-services--9a800f21-b26e-4e3e-94c8-2f4127eccd42/question-edits/43c9869f-554c-4995-aa6c-da3498a8bafb.json",
+    ".ai/content-audit-export/articles/spp-doc-203-specialized-architectural-services--9a800f21-b26e-4e3e-94c8-2f4127eccd42/question-edits/52f21bce-da91-4474-9dba-96c018798aaa.json",
+    ".ai/content-audit-export/articles/spp-doc-203-specialized-architectural-services--9a800f21-b26e-4e3e-94c8-2f4127eccd42/question-edits/689df8d6-744b-4966-b727-66894ebc538b.json",
+    ".ai/content-audit-export/articles/spp-doc-203-specialized-architectural-services--9a800f21-b26e-4e3e-94c8-2f4127eccd42/question-edits/6fe01e49-fba9-4e85-9e89-0e69b82830ed.json",
+    ".ai/content-audit-export/articles/spp-doc-203-specialized-architectural-services--9a800f21-b26e-4e3e-94c8-2f4127eccd42/question-edits/71ef8a32-7164-4180-aea3-4e9cced4573e.json",
+    ".ai/content-audit-export/articles/spp-doc-203-specialized-architectural-services--9a800f21-b26e-4e3e-94c8-2f4127eccd42/question-edits/77937dd5-3508-482b-a590-8f3525c3715f.json",
+    ".ai/content-audit-export/articles/spp-doc-203-specialized-architectural-services--9a800f21-b26e-4e3e-94c8-2f4127eccd42/question-edits/8bcb5c05-1eb8-4529-bcad-17d71f59d368.json",
+    ".ai/content-audit-export/articles/spp-doc-203-specialized-architectural-services--9a800f21-b26e-4e3e-94c8-2f4127eccd42/question-edits/bfe346e0-bbb5-42d9-880b-ddfa05624177.json",
+    ".ai/content-audit-export/articles/spp-doc-203-specialized-architectural-services--9a800f21-b26e-4e3e-94c8-2f4127eccd42/question-edits/de714ef0-32e2-4196-a43c-82b4a0542b27.json",
+    ".ai/content-audit-export/articles/spp-doc-203-specialized-architectural-services--9a800f21-b26e-4e3e-94c8-2f4127eccd42/question-edits/fbb25f2a-0077-4f66-9aee-a9fd00e6f3bd.json"
+  ]
+}

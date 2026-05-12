@@ -1,7 +1,7 @@
 # IMPL_17: Student-Facing Data Visualizations
 
-**Priority:** P1 (Calibration Curve), P2 (others)  
-**Effort:** ~1 week total  
+**Priority:** P1 (Calibration Curve), P2 (others)
+**Effort:** ~1 week total
 **Stack:** Recharts (existing), D3 for Knowledge Network Graph
 
 All visualizations live in `src/components/analytics/` and render in the Analytics Dashboard.

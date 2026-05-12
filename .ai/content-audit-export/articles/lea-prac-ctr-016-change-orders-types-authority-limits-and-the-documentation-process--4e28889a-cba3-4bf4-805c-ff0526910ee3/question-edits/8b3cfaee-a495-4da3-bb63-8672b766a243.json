@@ -1,0 +1,95 @@
+{
+  "question_id": "8b3cfaee-a495-4da3-bb63-8672b766a243",
+  "baseline_hash": "sha256:420e91964a2d8a0c7ae9d4f74a8cb4f14aa8e70334e3da7c9a4c2013e34322e4",
+  "action": "replace",
+  "reason": "source-audited-article-batch-022-local-first rewrote this linked question to align with the local source audit for lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process.",
+  "approved_by": "codex-local-source-audit-batch-022",
+  "approved_at": "2026-05-11T11:45:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "4e28889a-cba3-4bf4-805c-ff0526910ee3",
+    "parent_article_slug": "lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080; CIAP Document 102 refined markdown lines 21, 287, 468, 497, 507, 522, 573, 598, and 899-903",
+    "checked_markdown_lines": [
+      "UAP Document 301 lines 41-71",
+      "UAP Document 301 lines 482-520",
+      "UAP Document 301 lines 1019-1051",
+      "UAP Document 301 lines 1062-1080",
+      "CIAP 102 line 21",
+      "CIAP 102 line 287",
+      "CIAP 102 line 468",
+      "CIAP 102 line 497",
+      "CIAP 102 line 507",
+      "CIAP 102 line 522",
+      "CIAP 102 line 573",
+      "CIAP 102 line 598",
+      "CIAP 102 lines 899-903"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "source_id": "uap-document-301-general-conditions-local",
+        "locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+        "source_id": "uap-document-301-general-conditions-local",
+        "locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+        "sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+        "source_id": "ciap-document-102-change-orders-claims-local",
+        "locator": "CIAP Document 102 refined markdown lines 21, 287, 468, 497, 507, 522, 573, 598, and 899-903"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+        "sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
+        "source_id": "ciap-document-102-change-orders-claims-local",
+        "locator": "CIAP Document 102 refined markdown lines 21, 287, 468, 497, 507, 522, 573, 598, and 899-903"
+      }
+    ],
+    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+  },
+  "proposed": {
+    "text": "If the contractor and architect cannot agree on a revised amount, what does UAP 301 say the architect issues?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A certificate of payment for the amount the architect can represent to the owner"
+      },
+      {
+        "id": "b",
+        "text": "An unlimited blank check"
+      },
+      {
+        "id": "c",
+        "text": "A building permit"
+      },
+      {
+        "id": "d",
+        "text": "A disciplinary suspension"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "The source limits the certificate to the amount the architect can represent to the owner.",
+    "explanation": "The incorrect options import a different actor, service category, timing rule, or authority path that the checked local source does not support.",
+    "code_citation": "UAP Document 301 lines 41-71",
+    "bloom_level": "apply",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited batch 022"
+    ],
+    "difficulty": 0.46,
+    "is_assessment": false,
+    "model_id": "BATCH-022-lea-prac-ctr-016-change-orders-types-authority-limits-and-the-documentation-process-007"
+  }
+}

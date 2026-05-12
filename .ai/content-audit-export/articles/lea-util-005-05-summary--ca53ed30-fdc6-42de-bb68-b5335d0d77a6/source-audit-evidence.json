@@ -1,0 +1,317 @@
+{
+  "schema_version": "source-audit-evidence-v1-local-first",
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-046-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T17:58:00.000+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "ca53ed30-fdc6-42de-bb68-b5335d0d77a6",
+    "slug": "lea-util-005-05-summary",
+    "title": "Cable television, broadcasting, and wireless infrastructure",
+    "article_folder": ".ai/content-audit-export/articles/lea-util-005-05-summary--ca53ed30-fdc6-42de-bb68-b5335d0d77a6",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-05-summary--ca53ed30-fdc6-42de-bb68-b5335d0d77a6",
+    "candidate_path": ".ai/content-audit-export/articles/lea-util-005-05-summary--ca53ed30-fdc6-42de-bb68-b5335d0d77a6/candidate.md",
+    "candidate_sha256": "sha256:2601a61bec855276a85c9aeb6f5289af24cbac863f51a10378d7fbf0d3a60be6",
+    "normalized_sha256": "sha256:2601a61bec855276a85c9aeb6f5289af24cbac863f51a10378d7fbf0d3a60be6",
+    "linked_questions_sha256": "sha256:8d1d8c5289c5bdf79deb117cfde5342ad42f991ebf5a295f6fa39904f911227c",
+    "sources_sha256": "sha256:57906f7eaf33b809ccf1f1ad66172b6edc396958a73ff7fa7324ca71682ec3a2"
+  },
+  "classification": {
+    "content_domain": "LEA Utilities - cable television, broadcasting, and communications infrastructure",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high_value_communications_catv_infrastructure",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 15,
+    "question_edits_created": [
+      "2d03fa99-8f82-4c72-8f26-1d6e97d4d558",
+      "21203b5f-ab41-4ce7-90f2-7b502076f81b",
+      "24b44a48-baa1-4161-bb21-a61c558b3d20",
+      "f7958c12-2fcc-41a1-b99b-e63ea40f0b9f",
+      "b983d909-6968-48d1-98a9-88774d5b6aed",
+      "758a7181-25b8-48c3-8490-930184d71726",
+      "4b9cb172-778c-4c17-a1d2-11a63949431e",
+      "0a729ee2-580b-4a23-8bbf-0939fdb28acb",
+      "35d31958-7b81-447b-9a9e-bea831a43a61",
+      "c18406ab-44f7-496d-9efc-a650bfbeca3b",
+      "5aa7ccf8-6567-4ab9-8968-e03534ae984c",
+      "aeff315a-4d5c-44ad-b144-3f26e3e01d0c",
+      "39668ddf-2244-4e14-a0d7-558f091c7de3",
+      "b60c2fda-331c-4ab3-92d6-47010a0bed74",
+      "9f75e96d-2a31-4a86-9755-b18dfaf9e6bc"
+    ]
+  },
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/lea-util-005-05-summary--ca53ed30-fdc6-42de-bb68-b5335d0d77a6",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-05-summary--ca53ed30-fdc6-42de-bb68-b5335d0d77a6",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/lea-util-005-05-summary--ca53ed30-fdc6-42de-bb68-b5335d0d77a6/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-005-05-summary--ca53ed30-fdc6-42de-bb68-b5335d0d77a6/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/lea-util-005-05-summary--ca53ed30-fdc6-42de-bb68-b5335d0d77a6/question-edits/2d03fa99-8f82-4c72-8f26-1d6e97d4d558.json",
+      ".ai/content-audit-export/articles/lea-util-005-05-summary--ca53ed30-fdc6-42de-bb68-b5335d0d77a6/question-edits/21203b5f-ab41-4ce7-90f2-7b502076f81b.json",
+      ".ai/content-audit-export/articles/lea-util-005-05-summary--ca53ed30-fdc6-42de-bb68-b5335d0d77a6/question-edits/24b44a48-baa1-4161-bb21-a61c558b3d20.json",
+      ".ai/content-audit-export/articles/lea-util-005-05-summary--ca53ed30-fdc6-42de-bb68-b5335d0d77a6/question-edits/f7958c12-2fcc-41a1-b99b-e63ea40f0b9f.json",
+      ".ai/content-audit-export/articles/lea-util-005-05-summary--ca53ed30-fdc6-42de-bb68-b5335d0d77a6/question-edits/b983d909-6968-48d1-98a9-88774d5b6aed.json",
+      ".ai/content-audit-export/articles/lea-util-005-05-summary--ca53ed30-fdc6-42de-bb68-b5335d0d77a6/question-edits/758a7181-25b8-48c3-8490-930184d71726.json",
+      ".ai/content-audit-export/articles/lea-util-005-05-summary--ca53ed30-fdc6-42de-bb68-b5335d0d77a6/question-edits/4b9cb172-778c-4c17-a1d2-11a63949431e.json",
+      ".ai/content-audit-export/articles/lea-util-005-05-summary--ca53ed30-fdc6-42de-bb68-b5335d0d77a6/question-edits/0a729ee2-580b-4a23-8bbf-0939fdb28acb.json",
+      ".ai/content-audit-export/articles/lea-util-005-05-summary--ca53ed30-fdc6-42de-bb68-b5335d0d77a6/question-edits/35d31958-7b81-447b-9a9e-bea831a43a61.json",
+      ".ai/content-audit-export/articles/lea-util-005-05-summary--ca53ed30-fdc6-42de-bb68-b5335d0d77a6/question-edits/c18406ab-44f7-496d-9efc-a650bfbeca3b.json",
+      ".ai/content-audit-export/articles/lea-util-005-05-summary--ca53ed30-fdc6-42de-bb68-b5335d0d77a6/question-edits/5aa7ccf8-6567-4ab9-8968-e03534ae984c.json",
+      ".ai/content-audit-export/articles/lea-util-005-05-summary--ca53ed30-fdc6-42de-bb68-b5335d0d77a6/question-edits/aeff315a-4d5c-44ad-b144-3f26e3e01d0c.json",
+      ".ai/content-audit-export/articles/lea-util-005-05-summary--ca53ed30-fdc6-42de-bb68-b5335d0d77a6/question-edits/39668ddf-2244-4e14-a0d7-558f091c7de3.json",
+      ".ai/content-audit-export/articles/lea-util-005-05-summary--ca53ed30-fdc6-42de-bb68-b5335d0d77a6/question-edits/b60c2fda-331c-4ab3-92d6-47010a0bed74.json",
+      ".ai/content-audit-export/articles/lea-util-005-05-summary--ca53ed30-fdc6-42de-bb68-b5335d0d77a6/question-edits/9f75e96d-2a31-4a86-9755-b18dfaf9e6bc.json"
+    ]
+  },
+  "raw_sources": [
+    {
+      "source_id": "communication-and-signal-systems-lecture-local-raw-pdf--b046",
+      "article_id": "ca53ed30-fdc6-42de-bb68-b5335d0d77a6",
+      "label": "Communication and Signal Systems Lecture - local raw PDF",
+      "url": null,
+      "source_type": "local_raw_pdf",
+      "description": "TV antenna distribution, booster amplifier need, intercom master/remote stations, PABX functions, telephone service entrance, protector, and conduit clearance.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-11T17:58:00.000+08:00",
+      "updated_at": "2026-05-11T17:58:00.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Communication and Signal Systems Lecture.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Communication and Signal Systems Lecture.pdf",
+      "raw_pdf_sha256": "sha256:f5c9a95be0f68853cac1ddfd16c80c47356731147a18e345ab8e297e9fbdcd2d",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Communication and Signal Systems Lecture.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Communication and Signal Systems Lecture.md",
+      "refined_markdown_sha256": "sha256:8e202c5683c0c465ecbe070242344f83e2cd95c371e152f5de074b06cfc3661f",
+      "source_locator": "Communication refined markdown lines 416-532",
+      "checked_markdown_lines": [
+        "Communication refined markdown lines 416-532"
+      ],
+      "local_audit_note": "Batch 046 local-first source audit checked the raw PDF family before using refined markdown line locators."
+    },
+    {
+      "source_id": "philippine-electrical-code-local-raw-pdf--b046",
+      "article_id": "ca53ed30-fdc6-42de-bb68-b5335d0d77a6",
+      "label": "Philippine Electrical Code - local raw PDF",
+      "url": null,
+      "source_type": "local_raw_pdf",
+      "description": "Communications lightning separation, CATV coaxial shield grounding and bonding, and network-powered broadband cable separation/listing rules.",
+      "is_verified": true,
+      "sort_order": 2,
+      "created_at": "2026-05-11T17:58:00.000+08:00",
+      "updated_at": "2026-05-11T17:58:00.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+      "raw_pdf_sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+      "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3",
+      "source_locator": "PEC refined markdown lines 32160-32302, 32838-32920, 33412-33534",
+      "checked_markdown_lines": [
+        "PEC refined markdown lines 32160-32302",
+        "PEC refined markdown lines 32838-32920",
+        "PEC refined markdown lines 33412-33534"
+      ],
+      "local_audit_note": "Batch 046 local-first source audit checked the raw PDF family before using refined markdown line locators."
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "communication-and-signal-systems-lecture-local-raw-pdf--b046",
+      "article_id": "ca53ed30-fdc6-42de-bb68-b5335d0d77a6",
+      "label": "Communication and Signal Systems Lecture - local raw PDF",
+      "url": null,
+      "source_type": "local_raw_pdf",
+      "description": "TV antenna distribution, booster amplifier need, intercom master/remote stations, PABX functions, telephone service entrance, protector, and conduit clearance.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-11T17:58:00.000+08:00",
+      "updated_at": "2026-05-11T17:58:00.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Communication and Signal Systems Lecture.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Communication and Signal Systems Lecture.pdf",
+      "raw_pdf_sha256": "sha256:f5c9a95be0f68853cac1ddfd16c80c47356731147a18e345ab8e297e9fbdcd2d",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Communication and Signal Systems Lecture.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Communication and Signal Systems Lecture.md",
+      "refined_markdown_sha256": "sha256:8e202c5683c0c465ecbe070242344f83e2cd95c371e152f5de074b06cfc3661f",
+      "source_locator": "Communication refined markdown lines 416-532",
+      "checked_markdown_lines": [
+        "Communication refined markdown lines 416-532"
+      ],
+      "local_audit_note": "Batch 046 local-first source audit checked the raw PDF family before using refined markdown line locators."
+    },
+    {
+      "source_id": "philippine-electrical-code-local-raw-pdf--b046",
+      "article_id": "ca53ed30-fdc6-42de-bb68-b5335d0d77a6",
+      "label": "Philippine Electrical Code - local raw PDF",
+      "url": null,
+      "source_type": "local_raw_pdf",
+      "description": "Communications lightning separation, CATV coaxial shield grounding and bonding, and network-powered broadband cable separation/listing rules.",
+      "is_verified": true,
+      "sort_order": 2,
+      "created_at": "2026-05-11T17:58:00.000+08:00",
+      "updated_at": "2026-05-11T17:58:00.000+08:00",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+      "raw_pdf_sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+      "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3",
+      "source_locator": "PEC refined markdown lines 32160-32302, 32838-32920, 33412-33534",
+      "checked_markdown_lines": [
+        "PEC refined markdown lines 32160-32302",
+        "PEC refined markdown lines 32838-32920",
+        "PEC refined markdown lines 33412-33534"
+      ],
+      "local_audit_note": "Batch 046 local-first source audit checked the raw PDF family before using refined markdown line locators."
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "b046-catv-01",
+      "claim_text": "TV antenna systems distribute amplified antenna signals by cable to wall outlets and may need a booster for multiple outlets.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "locator": "Communication refined markdown lines 416-440",
+        "checked_sources": [
+          {
+            "source_label": "Communication and Signal Systems Lecture - local raw PDF",
+            "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Communication and Signal Systems Lecture.pdf",
+            "raw_pdf_sha256": "sha256:f5c9a95be0f68853cac1ddfd16c80c47356731147a18e345ab8e297e9fbdcd2d",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Communication and Signal Systems Lecture.md",
+            "refined_markdown_sha256": "sha256:8e202c5683c0c465ecbe070242344f83e2cd95c371e152f5de074b06cfc3661f"
+          },
+          {
+            "source_label": "Philippine Electrical Code - local raw PDF",
+            "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+            "raw_pdf_sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+            "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3"
+          }
+        ]
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b046-catv-02",
+      "claim_text": "Telephone and intercommunication infrastructure includes master/remote stations, PABX functions, service entrance, protectors, and conduit clearance.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "locator": "Communication refined markdown lines 442-532",
+        "checked_sources": [
+          {
+            "source_label": "Communication and Signal Systems Lecture - local raw PDF",
+            "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Communication and Signal Systems Lecture.pdf",
+            "raw_pdf_sha256": "sha256:f5c9a95be0f68853cac1ddfd16c80c47356731147a18e345ab8e297e9fbdcd2d",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Communication and Signal Systems Lecture.md",
+            "refined_markdown_sha256": "sha256:8e202c5683c0c465ecbe070242344f83e2cd95c371e152f5de074b06cfc3661f"
+          },
+          {
+            "source_label": "Philippine Electrical Code - local raw PDF",
+            "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+            "raw_pdf_sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+            "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3"
+          }
+        ]
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b046-catv-03",
+      "claim_text": "CATV coaxial shields are grounded near entrance and bonded to the power grounding electrode system when separate electrodes are used.",
+      "claim_type": "utilities_code_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "locator": "PEC refined markdown lines 32838-32920",
+        "checked_sources": [
+          {
+            "source_label": "Communication and Signal Systems Lecture - local raw PDF",
+            "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Communication and Signal Systems Lecture.pdf",
+            "raw_pdf_sha256": "sha256:f5c9a95be0f68853cac1ddfd16c80c47356731147a18e345ab8e297e9fbdcd2d",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Communication and Signal Systems Lecture.md",
+            "refined_markdown_sha256": "sha256:8e202c5683c0c465ecbe070242344f83e2cd95c371e152f5de074b06cfc3661f"
+          },
+          {
+            "source_label": "Philippine Electrical Code - local raw PDF",
+            "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+            "raw_pdf_sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+            "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3"
+          }
+        ]
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "b046-lea-util-005-05-summary-questions",
+      "claim_text": "Batch 046 question edits created for linked question IDs: 2d03fa99-8f82-4c72-8f26-1d6e97d4d558, 21203b5f-ab41-4ce7-90f2-7b502076f81b, 24b44a48-baa1-4161-bb21-a61c558b3d20, f7958c12-2fcc-41a1-b99b-e63ea40f0b9f, b983d909-6968-48d1-98a9-88774d5b6aed, 758a7181-25b8-48c3-8490-930184d71726, 4b9cb172-778c-4c17-a1d2-11a63949431e, 0a729ee2-580b-4a23-8bbf-0939fdb28acb, 35d31958-7b81-447b-9a9e-bea831a43a61, c18406ab-44f7-496d-9efc-a650bfbeca3b, 5aa7ccf8-6567-4ab9-8968-e03534ae984c, aeff315a-4d5c-44ad-b144-3f26e3e01d0c, 39668ddf-2244-4e14-a0d7-558f091c7de3, b60c2fda-331c-4ab3-92d6-47010a0bed74, 9f75e96d-2a31-4a86-9755-b18dfaf9e6bc",
+      "claim_type": "linked_question_source_safe_rewrite_claim",
+      "audit_result": "PASS",
+      "source_support": {
+        "locator": "Communication refined markdown lines 416-532; PEC refined markdown lines 32160-32302, 32838-32920, 33412-33534",
+        "checked_sources": [
+          {
+            "source_label": "Communication and Signal Systems Lecture - local raw PDF",
+            "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Communication and Signal Systems Lecture.pdf",
+            "raw_pdf_sha256": "sha256:f5c9a95be0f68853cac1ddfd16c80c47356731147a18e345ab8e297e9fbdcd2d",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Communication and Signal Systems Lecture.md",
+            "refined_markdown_sha256": "sha256:8e202c5683c0c465ecbe070242344f83e2cd95c371e152f5de074b06cfc3661f"
+          },
+          {
+            "source_label": "Philippine Electrical Code - local raw PDF",
+            "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf",
+            "raw_pdf_sha256": "sha256:587b722fd81214c7c908d7ea4255dd11a6868a255ccee09753d243f0c6fc6478",
+            "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/005-Utilities/refined_markdown/Phil Electrical Code.md",
+            "refined_markdown_sha256": "sha256:c4356b1f6f9f16145ae238ef18a16f6b7a186bf8c7cd3dbb3456b44f263668d3"
+          }
+        ]
+      },
+      "blockers": []
+    }
+  ],
+  "removed_or_rewritten_material": [
+    "Removed exported UI block marker text from normalized article content where present.",
+    "Rewrote linked question files to stay inside checked local raw-source evidence.",
+    "Replaced derivative-only or over-specific scenario claims with checked source-family statements."
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdf_first": true,
+    "derivative_layers_used_only_as_locators": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "checked_raw_pdf_families": [
+      "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Communication and Signal Systems Lecture.pdf",
+      "vitruvius-connection/001_Raw-Source-Layer/005-Utilities/Phil Electrical Code.pdf"
+    ],
+    "blockers": []
+  },
+  "gate_results": {
+    "source_audit": "PASS",
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_validation": "PASS",
+    "question_edit_count_check": "PASS",
+    "scoped_json_parse": "PASS",
+    "marker_scan": "PASS",
+    "source_hash_check": "PASS",
+    "stale_compose_error_check": "PASS"
+  },
+  "source_safe_repair": {
+    "status": "COMPLETE_LOCAL_VALIDATED",
+    "article_normalized_rewritten": true,
+    "sources_json_updated": true,
+    "source_audit_evidence_updated": true,
+    "question_edits_created": 15,
+    "blockers": []
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "blockers": []
+  },
+  "blockers": []
+}

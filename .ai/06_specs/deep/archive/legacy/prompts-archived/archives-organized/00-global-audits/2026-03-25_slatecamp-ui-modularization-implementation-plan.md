@@ -269,12 +269,12 @@ grep -rn "font-mono.*tabular-nums\|font-bold.*text-2xl.*%\|score.*%\|\.toFixed.*
 - Replace with a state-driven `ConfirmDialog`:
   ```tsx
   import { ConfirmDialog } from '@/components/ui/dialog' // or wherever it lives
-  
+
   const [showConfirm, setShowConfirm] = useState(false)
-  
+
   // Where confirm() was called:
   setShowConfirm(true)
-  
+
   // In JSX:
   <ConfirmDialog
     open={showConfirm}
@@ -401,7 +401,7 @@ grep -rn '<select\b' src/ --include="*.tsx" -l
 3. Replace with Shadcn Select:
    ```tsx
    import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
-   
+
    <Select value={value} onValueChange={setValue}>
      <SelectTrigger>
        <SelectValue placeholder="Select..." />
@@ -466,10 +466,10 @@ import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group'
    - Replace with the appropriate Shadcn Button variant:
      ```tsx
      import { Button } from '@/components/ui/button'
-     
+
      // Icon-only button:
      <Button variant="ghost" size="icon"><SomeIcon className="h-4 w-4" /></Button>
-     
+
      // Text button:
      <Button variant="secondary" size="sm">Save</Button>
      ```
@@ -643,7 +643,7 @@ Add a comment to each kept spinner explaining why it's acceptable:
    - Replace with `TaxonomyPicker` using the appropriate props:
      ```tsx
      import { TaxonomyPicker } from '@/components/shared/taxonomy-picker'
-     
+
      <TaxonomyPicker
        variant="dropdown"  // or "sidebar" or "inline"
        mode="single"       // or "multi"
@@ -665,7 +665,7 @@ Add a comment to each kept spinner explaining why it's acceptable:
 2. For each custom question rendering, evaluate migration to `QuestionCard`:
    ```tsx
    import { QuestionCard } from '@/components/shared/question-card'
-   
+
    <QuestionCard
      variant="quiz"
      stem={question.stem}

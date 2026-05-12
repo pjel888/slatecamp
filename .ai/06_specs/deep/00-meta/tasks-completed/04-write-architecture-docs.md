@@ -3,8 +3,8 @@
 
 # Task 04: Write Architecture Documentation
 
-**Status:** pending  
-**Created:** 2026-04-06  
+**Status:** pending
+**Created:** 2026-04-06
 **Objective:** Write all `02-architecture/` documents sourced from verified code
 
 ---

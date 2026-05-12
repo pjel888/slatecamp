@@ -1,0 +1,48 @@
+{
+  "question_id": "b573cea2-4940-4017-94ef-15d0eeb33030",
+  "baseline_hash": "sha256:d3ec8dc6d37c25d639ac2d3e8877c0a5ae851e0bae365abbcf9c4693c4e1cc94",
+  "action": "replace",
+  "reason": "source-audited-article-batch-039-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-039",
+  "approved_at": "2026-05-11T13:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-039-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 4306-4329"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 1401"
+  },
+  "proposed": {
+    "text": "Which envelope type is prohibited for film negatives?",
+    "options": [
+      {
+        "id": "b039-5a5e-15-a",
+        "text": "Expanding envelopes"
+      },
+      {
+        "id": "b039-5a5e-15-b",
+        "text": "Heavy Manila envelopes"
+      },
+      {
+        "id": "b039-5a5e-15-c",
+        "text": "Original roll-film packages"
+      },
+      {
+        "id": "b039-5a5e-15-d",
+        "text": "Accepted safety shipping containers"
+      }
+    ],
+    "correct_option_id": "b039-5a5e-15-a",
+    "rationale": "Correct answer: Expanding envelopes. This is directly supported by PD 1096 2004 Revised IRR, Section 1401.",
+    "explanation": "The Batch 039 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 1401.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 1401"
+  }
+}

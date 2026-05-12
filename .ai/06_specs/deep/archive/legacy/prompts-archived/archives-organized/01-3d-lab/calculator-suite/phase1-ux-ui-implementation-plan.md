@@ -1,9 +1,9 @@
 # Phase 1 Calculator Suite — UX & UI Implementation Plan
 
-**Document type:** Developer-ready UX/UI specification — user journeys, component mapping, state management, responsive layout, freemium gates, sponsor integration  
-**Date:** April 2026  
-**Status:** Build-ready  
-**Prerequisite reading:** `3d-calculator-suite-final.md` (product spec), `phase1-3d-canvas-spec.md` (3D canvas architecture), `3d-calculator-business-strategy.md` (revenue + funnel)  
+**Document type:** Developer-ready UX/UI specification — user journeys, component mapping, state management, responsive layout, freemium gates, sponsor integration
+**Date:** April 2026
+**Status:** Build-ready
+**Prerequisite reading:** `3d-calculator-suite-final.md` (product spec), `phase1-3d-canvas-spec.md` (3D canvas architecture), `3d-calculator-business-strategy.md` (revenue + funnel)
 **Design system authority:** SlateCamp Design System Engineering Guide (Rams Standard)
 
 ---

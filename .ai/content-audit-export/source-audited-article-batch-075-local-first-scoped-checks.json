@@ -1,0 +1,177 @@
+{
+  "batch": "075",
+  "generated_at": "2026-05-12T03:06:00.000+08:00",
+  "mode": "local-first-source-audited-continuation",
+  "article_count": 5,
+  "question_edit_count": 50,
+  "selected_article_ids": [
+    "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+    "c158e63c-6120-4b2f-9784-c853ef25baa5",
+    "249aff40-df16-413b-8b16-b78190fafeff",
+    "a1df237f-7291-4549-93bd-e7ed43f27107",
+    "f6bd1cea-ecd5-4587-80ba-3015beb4b820"
+  ],
+  "checks": {
+    "compose": {
+      "status": "PASS",
+      "command": "bun run content-audit:compose -- --article-id <id> --overwrite --strict",
+      "article_count": 5,
+      "blockers": 0
+    },
+    "diff": {
+      "status": "PASS",
+      "command": "bun run content-audit:diff -- --article-id <id> --summary --strict",
+      "article_count": 5,
+      "safe_to_push": true,
+      "blockers": 0
+    },
+    "validate": {
+      "status": "PASS",
+      "command": "bun run content-audit:validate -- --article-id <id> --summary",
+      "article_count": 5,
+      "valid": true,
+      "blockers": 0,
+      "warnings": 5,
+      "warning_note": "component-usage.json warning only; unchanged expected local export warning."
+    },
+    "ui_block_edits": {
+      "status": "PASS",
+      "command": "bun run content-audit:ui-block-edits -- --article-id <id> --summary",
+      "article_count": 5,
+      "valid": true,
+      "blockers": 0,
+      "warnings": 0
+    },
+    "source_audit_apply_gate": {
+      "status": "PASS",
+      "command": "bun run - import evaluateSourceAuditGate from scripts/content-audit/lib.ts over selected folders",
+      "article_count": 5,
+      "blockers": 0,
+      "warnings": 0
+    },
+    "scoped_json_parse": {
+      "status": "PASS",
+      "parsed_files": 105,
+      "failures": 0,
+      "blockers": 0,
+      "failure_details": []
+    },
+    "marker_internal_source_gap_scan": {
+      "status": "PASS",
+      "scanned_files": 95,
+      "hits": 0,
+      "hit_details": [],
+      "scan_scope_note": "Publication and proposal surfaces only; original.md and linked-questions.json excluded as immutable baselines; generated compose/diff validation reports excluded.",
+      "excluded_immutable_baselines": [
+        "original.md",
+        "linked-questions.json"
+      ],
+      "excluded_generated_reports": [
+        "compose-report.json",
+        "diff-report.json",
+        "diff-report.md",
+        "ui-block-edit-validation.json"
+      ]
+    },
+    "source_hash_check": {
+      "status": "PASS",
+      "checked_source_instances": 24,
+      "blockers": 0,
+      "failure_details": []
+    },
+    "question_edit_count_check": {
+      "status": "PASS",
+      "expected": 50,
+      "actual": 50,
+      "linked_questions": 50,
+      "blockers": 0
+    },
+    "stale_compose_error_check": {
+      "status": "PASS",
+      "stale_compose_error_files": 0,
+      "blockers": 0,
+      "files": []
+    },
+    "targeted_tests": {
+      "status": "PASS",
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "tests": 34,
+      "failures": 0,
+      "expectations": 328
+    },
+    "scoped_git_diff_check": {
+      "status": "PASS",
+      "command": "git diff --check -- <batch-075 scoped paths>",
+      "checked_at": "2026-05-12T03:06:00.000+08:00",
+      "blockers": 0
+    }
+  },
+  "articles": [
+    {
+      "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+      "slug": "lea-theo-009-01-core-concept",
+      "article_folder": ".ai/content-audit-export/articles/lea-theo-009-01-core-concept--f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+      "question_edits_count": 10,
+      "source_count": 2,
+      "compose_blockers": 0,
+      "diff_safe_to_push": true,
+      "validation_valid": true,
+      "source_audit_status": "PASS",
+      "raw_pdf_gate": "PASS",
+      "scenario_enrichment_status": "eligible-deferred"
+    },
+    {
+      "article_id": "c158e63c-6120-4b2f-9784-c853ef25baa5",
+      "slug": "lea-theo-009-02-core-concept",
+      "article_folder": ".ai/content-audit-export/articles/lea-theo-009-02-core-concept--c158e63c-6120-4b2f-9784-c853ef25baa5",
+      "question_edits_count": 10,
+      "source_count": 2,
+      "compose_blockers": 0,
+      "diff_safe_to_push": true,
+      "validation_valid": true,
+      "source_audit_status": "PASS",
+      "raw_pdf_gate": "PASS",
+      "scenario_enrichment_status": "eligible-deferred"
+    },
+    {
+      "article_id": "249aff40-df16-413b-8b16-b78190fafeff",
+      "slug": "lea-theo-009-03-core-concept",
+      "article_folder": ".ai/content-audit-export/articles/lea-theo-009-03-core-concept--249aff40-df16-413b-8b16-b78190fafeff",
+      "question_edits_count": 10,
+      "source_count": 2,
+      "compose_blockers": 0,
+      "diff_safe_to_push": true,
+      "validation_valid": true,
+      "source_audit_status": "PASS",
+      "raw_pdf_gate": "PASS",
+      "scenario_enrichment_status": "eligible-deferred"
+    },
+    {
+      "article_id": "a1df237f-7291-4549-93bd-e7ed43f27107",
+      "slug": "lea-theo-009-05-core-concept",
+      "article_folder": ".ai/content-audit-export/articles/lea-theo-009-05-core-concept--a1df237f-7291-4549-93bd-e7ed43f27107",
+      "question_edits_count": 10,
+      "source_count": 3,
+      "compose_blockers": 0,
+      "diff_safe_to_push": true,
+      "validation_valid": true,
+      "source_audit_status": "PASS",
+      "raw_pdf_gate": "PASS",
+      "scenario_enrichment_status": "eligible-deferred"
+    },
+    {
+      "article_id": "f6bd1cea-ecd5-4587-80ba-3015beb4b820",
+      "slug": "lea-matl-009-01-core-concept",
+      "article_folder": ".ai/content-audit-export/articles/lea-matl-009-01-core-concept--f6bd1cea-ecd5-4587-80ba-3015beb4b820",
+      "question_edits_count": 10,
+      "source_count": 3,
+      "compose_blockers": 0,
+      "diff_safe_to_push": true,
+      "validation_valid": true,
+      "source_audit_status": "PASS",
+      "raw_pdf_gate": "PASS",
+      "scenario_enrichment_status": "eligible-deferred"
+    }
+  ],
+  "unresolved_blockers": []
+}

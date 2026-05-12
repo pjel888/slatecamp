@@ -1,0 +1,48 @@
+{
+  "question_id": "6a26f091-27fb-44cc-883e-9833923903f1",
+  "baseline_hash": "sha256:a1fb88d12064781e94c81bfd3b9ae1755682b1e3e7873f339faeb6b0fdd3e7ac",
+  "action": "replace",
+  "reason": "source-audited-article-batch-038-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-038",
+  "approved_at": "2026-05-11T13:26:35+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-038-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 3447-3470"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 1204"
+  },
+  "proposed": {
+    "text": "What additional requirement applies to elevator shafts extending through more than two storeys?",
+    "options": [
+      {
+        "id": "b038-66b5-02-a",
+        "text": "Approved ventilation to and through the main roof"
+      },
+      {
+        "id": "b038-66b5-02-b",
+        "text": "A 1.50 m roof setback only"
+      },
+      {
+        "id": "b038-66b5-02-c",
+        "text": "No entrance-side protection"
+      },
+      {
+        "id": "b038-66b5-02-d",
+        "text": "Combustible shaft lining"
+      }
+    ],
+    "correct_option_id": "b038-66b5-02-a",
+    "rationale": "Correct answer: Approved ventilation to and through the main roof. This is directly supported by PD 1096 2004 Revised IRR, Section 1204.",
+    "explanation": "The Batch 038 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 1204.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 1204"
+  }
+}

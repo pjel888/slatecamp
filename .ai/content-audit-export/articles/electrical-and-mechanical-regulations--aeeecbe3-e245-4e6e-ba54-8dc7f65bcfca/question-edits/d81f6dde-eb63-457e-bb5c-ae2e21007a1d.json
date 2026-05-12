@@ -1,0 +1,49 @@
+{
+  "question_id": "d81f6dde-eb63-457e-bb5c-ae2e21007a1d",
+  "baseline_hash": "sha256:2847411d96c013fd7d948c5d396ed5c476c2ea9c3d77f2130dbf354a6867e2ae",
+  "action": "replace",
+  "reason": "source-audited-article-batch-039-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-039",
+  "approved_at": "2026-05-11T13:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-039-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 4007-4064",
+          "PD 1096 RIRR refined markdown lines 4109-4303"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 1301"
+  },
+  "proposed": {
+    "text": "What horizontal clearance is required from windows, doors, porches, fire escapes, and similar locations?",
+    "options": [
+      {
+        "id": "b039-aeee-06-a",
+        "text": "1.00 m"
+      },
+      {
+        "id": "b039-aeee-06-b",
+        "text": "300 mm"
+      },
+      {
+        "id": "b039-aeee-06-c",
+        "text": "1.80 m"
+      },
+      {
+        "id": "b039-aeee-06-d",
+        "text": "3.00 m"
+      }
+    ],
+    "correct_option_id": "b039-aeee-06-a",
+    "rationale": "Correct answer: 1.00 m. This is directly supported by PD 1096 2004 Revised IRR, Section 1301.",
+    "explanation": "The Batch 039 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 1301.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 1301"
+  }
+}

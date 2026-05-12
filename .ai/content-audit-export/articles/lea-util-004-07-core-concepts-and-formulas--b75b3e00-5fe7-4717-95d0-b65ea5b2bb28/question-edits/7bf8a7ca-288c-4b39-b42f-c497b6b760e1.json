@@ -1,0 +1,59 @@
+{
+  "question_id": "7bf8a7ca-288c-4b39-b42f-c497b6b760e1",
+  "baseline_hash": "sha256:ea3140ae9fc22ecf9b5861681e8913054f2a39c4667c300509166525ac78fabd",
+  "action": "replace",
+  "reason": "source-audited-article-batch-043-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes stale or non-local framing where present.",
+  "approved_by": "codex-local-first-batch-043",
+  "approved_at": "2026-05-11T15:45:43.683+08:00",
+  "source_audit_support": {
+    "parent_article_id": "b75b3e00-5fe7-4717-95d0-b65ea5b2bb28",
+    "parent_article_slug": "lea-util-004-07-core-concepts-and-formulas",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 9514 RIRR refined markdown lines 1138-1154, 1295-1299, 1882-1888, 2308-2344, 2408-2418, 3690-3723, 13284-13291",
+    "checked_markdown_lines": [
+      "RA 9514 RIRR refined markdown lines 1138-1154",
+      "RA 9514 RIRR refined markdown lines 1295-1299 and 1882-1888",
+      "RA 9514 RIRR refined markdown lines 2308-2344",
+      "RA 9514 RIRR refined markdown lines 2408-2418 and 3690-3723",
+      "RA 9514 RIRR refined markdown lines 13284-13291"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "ra-9514-rirr-2019-local-raw-pdf--b043-1",
+        "label": "RA 9514 RIRR 2019 - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "locator": "RA 9514 RIRR refined markdown lines 1138-1154, 1295-1299, 1882-1888, 2308-2344, 2408-2418, 3690-3723, 13284-13291"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 043 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "Which item belongs in ongoing fire-protection supervision or maintenance records under the checked source family?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fire pump power/running supervision and annual fire pump flow-test records."
+      },
+      {
+        "id": "b",
+        "text": "Only the paint finish of the fire pump casing."
+      },
+      {
+        "id": "c",
+        "text": "Only the building occupancy poster at the lobby."
+      },
+      {
+        "id": "d",
+        "text": "Only the number of parking slots on the site."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The checked RA 9514 RIRR family covers fire pump supervision signals and maintenance/testing records including annual fire pump flow tests.",
+    "explanation": "The checked RA 9514 RIRR family covers fire pump supervision signals and maintenance/testing records including annual fire pump flow tests.",
+    "code_citation": "RA 9514 RIRR refined markdown lines 2408-2418 and 3700-3708"
+  }
+}

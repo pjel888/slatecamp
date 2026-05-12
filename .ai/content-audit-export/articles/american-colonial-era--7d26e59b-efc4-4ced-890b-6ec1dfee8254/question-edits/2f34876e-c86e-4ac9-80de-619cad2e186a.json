@@ -1,0 +1,66 @@
+{
+  "question_id": "2f34876e-c86e-4ac9-80de-619cad2e186a",
+  "baseline_hash": "sha256:d7f14919879b22c3e1a8a6f59dfe2fb7697273f079e2c9588e99e2d55f39f8da",
+  "action": "replace",
+  "reason": "source-audited-article-batch-049-local-first: local raw-source-backed replacement constrained to checked Batch 049 source families.",
+  "approved_by": "codex-local-first-batch-049",
+  "approved_at": "2026-05-11T20:35:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "7d26e59b-efc4-4ced-890b-6ec1dfee8254",
+    "parent_article_slug": "american-colonial-era",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Filipino Architecture refined markdown lines 820-895; Module - Architectural History refined markdown lines 4830-4915",
+    "checked_markdown_lines": [
+      "Filipino Architecture refined markdown lines 820-895",
+      "Module - Architectural History refined markdown lines 4830-4915"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "filipinoarch-local-raw-pdf--b049-7d26e59b-01",
+        "label": "Filipino Architecture - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Filipino Architecture.pdf",
+        "sha256": "sha256:3d6f220218c46fe78e37d152d1c51504fd3c7d413cf14e71b39e93c7e1a5831d",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Filipino Architecture.md",
+        "refined_markdown_sha256": "sha256:f60dacc37e4b6634875ed68c18a55288e455476697fc250905460bbe6ac25ce1",
+        "locator": "Filipino Architecture refined markdown lines 820-895"
+      },
+      {
+        "source_id": "archhistory-local-raw-pdf--b049-7d26e59b-02",
+        "label": "Module - Architectural History - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Module - Architectural History.pdf",
+        "sha256": "sha256:d88ccdfaad42e15b3a9f844539aba0b0d614b165d4ef33f082537d72ba13531d",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Module - Architectural History.md",
+        "refined_markdown_sha256": "sha256:d3fc240b16da21c71b8467f6c3bf8599cd422b4c8055e2e9647f0aa2b2e042a1",
+        "locator": "Module - Architectural History refined markdown lines 4830-4915"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 049 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "Which pairing is supported by the checked American-period source families?",
+    "options": [
+      {
+        "id": "a",
+        "text": "William Parsons and the Philippine General Hospital; Juan Arellano and the Post Office Building."
+      },
+      {
+        "id": "b",
+        "text": "Daniel Burnham and Miagao Church; Tomas Mapua and Intramuros walls."
+      },
+      {
+        "id": "c",
+        "text": "Juan Arellano and Laws of the Indies; William Parsons and reduccion."
+      },
+      {
+        "id": "d",
+        "text": "Antonio Toledo and the plaza complex; Carlos Barredo and capiz windows."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "William Parsons and the Philippine General Hospital; Juan Arellano and the Post Office Building. The Filipino Architecture and Architectural History locators link Parsons to PGH and Arellano to the Post Office Building.",
+    "explanation": "William Parsons and the Philippine General Hospital; Juan Arellano and the Post Office Building. The Filipino Architecture and Architectural History locators link Parsons to PGH and Arellano to the Post Office Building.",
+    "code_citation": "Filipino Architecture refined markdown lines 820-895; Module - Architectural History refined markdown lines 4830-4915"
+  },
+  "batch_question_template_index": 2
+}

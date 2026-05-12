@@ -1,0 +1,294 @@
+{
+  "artifact_type": "source_audited_article_batch_scoped_checks",
+  "batch_id": "source-audited-article-batch-061-local-first",
+  "batch_number": 61,
+  "generated_at": "2026-05-11T21:23:00.000+08:00",
+  "selected_article_ids": [
+    "c9b1aadd-4843-4cf3-a551-6dd67678e508",
+    "3067e127-60c0-4570-ab86-d85af25fb9b2",
+    "21880755-59f3-4749-9786-59e6cb53c6ed",
+    "a59db1e5-3988-489e-841d-e71e4f37050c",
+    "5de12a80-903b-4488-bc66-e855e8cb4129"
+  ],
+  "counts": {
+    "selected_articles": 5,
+    "linked_questions": 50,
+    "question_edits": 50,
+    "source_rows": 8,
+    "unique_raw_pdfs": 3,
+    "json_parse": 105,
+    "marker_scan_files": 70,
+    "marker_matches": 0,
+    "source_hash_checks": 16,
+    "stale_compose_error_files": 0,
+    "targeted_tests": 34,
+    "targeted_expect_calls": 328,
+    "unresolved_blockers": 0
+  },
+  "checks": [
+    {
+      "name": "compose",
+      "command": "bun run content-audit:compose -- --article-id <selected> --overwrite --strict",
+      "result": "PASS",
+      "articles": 5,
+      "blockers": 0
+    },
+    {
+      "name": "diff",
+      "command": "bun run content-audit:diff -- --article-id <selected> --summary --strict",
+      "result": "PASS",
+      "articles": 5,
+      "safe_true": 5,
+      "blockers": 0
+    },
+    {
+      "name": "validate",
+      "command": "bun run content-audit:validate -- --article-id <selected> --summary",
+      "result": "PASS",
+      "articles": 5,
+      "blockers": 0,
+      "warnings": "component-usage.json missing only"
+    },
+    {
+      "name": "ui-block-edits",
+      "command": "bun run content-audit:ui-block-edits -- --article-id <selected> --summary",
+      "result": "PASS",
+      "articles": 5,
+      "blockers": 0,
+      "warnings": 0
+    },
+    {
+      "name": "scoped-json-parse",
+      "command": "node scoped Batch 061 JSON parse sweep",
+      "result": "PASS",
+      "files": 105,
+      "failures": []
+    },
+    {
+      "name": "placeholder-internal-note-source-gap-marker-scan",
+      "command": "node scoped Batch 061 marker scan",
+      "result": "PASS",
+      "files": 70,
+      "matches": []
+    },
+    {
+      "name": "source-hash-checks",
+      "command": "node scoped Batch 061 source hash sweep",
+      "result": "PASS",
+      "checks": [
+        {
+          "article_id": "c9b1aadd-4843-4cf3-a551-6dd67678e508",
+          "slug": "lea-dsgn-007-04-core-concept",
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
+          "expected": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+          "actual": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+          "status": "PASS"
+        },
+        {
+          "article_id": "c9b1aadd-4843-4cf3-a551-6dd67678e508",
+          "slug": "lea-dsgn-007-04-core-concept",
+          "kind": "refined_markdown",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
+          "expected": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
+          "actual": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
+          "status": "PASS"
+        },
+        {
+          "article_id": "3067e127-60c0-4570-ab86-d85af25fb9b2",
+          "slug": "lea-dsgn-007-05-core-concept",
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
+          "expected": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+          "actual": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+          "status": "PASS"
+        },
+        {
+          "article_id": "3067e127-60c0-4570-ab86-d85af25fb9b2",
+          "slug": "lea-dsgn-007-05-core-concept",
+          "kind": "refined_markdown",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
+          "expected": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
+          "actual": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
+          "status": "PASS"
+        },
+        {
+          "article_id": "21880755-59f3-4749-9786-59e6cb53c6ed",
+          "slug": "lea-dsgn-012-01-core-concept",
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Sitework Lecture.pdf",
+          "expected": "sha256:a469e97d2c4b842f443864c658fc4359ef2787a2b009b9fbafc1afbd1da25ff6",
+          "actual": "sha256:a469e97d2c4b842f443864c658fc4359ef2787a2b009b9fbafc1afbd1da25ff6",
+          "status": "PASS"
+        },
+        {
+          "article_id": "21880755-59f3-4749-9786-59e6cb53c6ed",
+          "slug": "lea-dsgn-012-01-core-concept",
+          "kind": "refined_markdown",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Sitework Lecture.md",
+          "expected": "sha256:e761c9b38b9d0c07bd6053692337109a218169ba791e8f074fa40842d3972af2",
+          "actual": "sha256:e761c9b38b9d0c07bd6053692337109a218169ba791e8f074fa40842d3972af2",
+          "status": "PASS"
+        },
+        {
+          "article_id": "21880755-59f3-4749-9786-59e6cb53c6ed",
+          "slug": "lea-dsgn-012-01-core-concept",
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Technology - Siteworks.pdf",
+          "expected": "sha256:9f498be4a288011a0e8b750d4bb8316afebf07a908993620579c311da30e02a2",
+          "actual": "sha256:9f498be4a288011a0e8b750d4bb8316afebf07a908993620579c311da30e02a2",
+          "status": "PASS"
+        },
+        {
+          "article_id": "21880755-59f3-4749-9786-59e6cb53c6ed",
+          "slug": "lea-dsgn-012-01-core-concept",
+          "kind": "refined_markdown",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Technology - Siteworks.md",
+          "expected": "sha256:3e34ffc7b60b926a2cd75fbde6239ff3f05e7e53993d8cb6f8d5f1d865c64296",
+          "actual": "sha256:3e34ffc7b60b926a2cd75fbde6239ff3f05e7e53993d8cb6f8d5f1d865c64296",
+          "status": "PASS"
+        },
+        {
+          "article_id": "a59db1e5-3988-489e-841d-e71e4f37050c",
+          "slug": "lea-dsgn-012-02-core-concept",
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Sitework Lecture.pdf",
+          "expected": "sha256:a469e97d2c4b842f443864c658fc4359ef2787a2b009b9fbafc1afbd1da25ff6",
+          "actual": "sha256:a469e97d2c4b842f443864c658fc4359ef2787a2b009b9fbafc1afbd1da25ff6",
+          "status": "PASS"
+        },
+        {
+          "article_id": "a59db1e5-3988-489e-841d-e71e4f37050c",
+          "slug": "lea-dsgn-012-02-core-concept",
+          "kind": "refined_markdown",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Sitework Lecture.md",
+          "expected": "sha256:e761c9b38b9d0c07bd6053692337109a218169ba791e8f074fa40842d3972af2",
+          "actual": "sha256:e761c9b38b9d0c07bd6053692337109a218169ba791e8f074fa40842d3972af2",
+          "status": "PASS"
+        },
+        {
+          "article_id": "a59db1e5-3988-489e-841d-e71e4f37050c",
+          "slug": "lea-dsgn-012-02-core-concept",
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Technology - Siteworks.pdf",
+          "expected": "sha256:9f498be4a288011a0e8b750d4bb8316afebf07a908993620579c311da30e02a2",
+          "actual": "sha256:9f498be4a288011a0e8b750d4bb8316afebf07a908993620579c311da30e02a2",
+          "status": "PASS"
+        },
+        {
+          "article_id": "a59db1e5-3988-489e-841d-e71e4f37050c",
+          "slug": "lea-dsgn-012-02-core-concept",
+          "kind": "refined_markdown",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Technology - Siteworks.md",
+          "expected": "sha256:3e34ffc7b60b926a2cd75fbde6239ff3f05e7e53993d8cb6f8d5f1d865c64296",
+          "actual": "sha256:3e34ffc7b60b926a2cd75fbde6239ff3f05e7e53993d8cb6f8d5f1d865c64296",
+          "status": "PASS"
+        },
+        {
+          "article_id": "5de12a80-903b-4488-bc66-e855e8cb4129",
+          "slug": "lea-dsgn-012-03-core-concept",
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Sitework Lecture.pdf",
+          "expected": "sha256:a469e97d2c4b842f443864c658fc4359ef2787a2b009b9fbafc1afbd1da25ff6",
+          "actual": "sha256:a469e97d2c4b842f443864c658fc4359ef2787a2b009b9fbafc1afbd1da25ff6",
+          "status": "PASS"
+        },
+        {
+          "article_id": "5de12a80-903b-4488-bc66-e855e8cb4129",
+          "slug": "lea-dsgn-012-03-core-concept",
+          "kind": "refined_markdown",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Sitework Lecture.md",
+          "expected": "sha256:e761c9b38b9d0c07bd6053692337109a218169ba791e8f074fa40842d3972af2",
+          "actual": "sha256:e761c9b38b9d0c07bd6053692337109a218169ba791e8f074fa40842d3972af2",
+          "status": "PASS"
+        },
+        {
+          "article_id": "5de12a80-903b-4488-bc66-e855e8cb4129",
+          "slug": "lea-dsgn-012-03-core-concept",
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Technology - Siteworks.pdf",
+          "expected": "sha256:9f498be4a288011a0e8b750d4bb8316afebf07a908993620579c311da30e02a2",
+          "actual": "sha256:9f498be4a288011a0e8b750d4bb8316afebf07a908993620579c311da30e02a2",
+          "status": "PASS"
+        },
+        {
+          "article_id": "5de12a80-903b-4488-bc66-e855e8cb4129",
+          "slug": "lea-dsgn-012-03-core-concept",
+          "kind": "refined_markdown",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Technology - Siteworks.md",
+          "expected": "sha256:3e34ffc7b60b926a2cd75fbde6239ff3f05e7e53993d8cb6f8d5f1d865c64296",
+          "actual": "sha256:3e34ffc7b60b926a2cd75fbde6239ff3f05e7e53993d8cb6f8d5f1d865c64296",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "name": "question-edit-count-checks",
+      "command": "node scoped Batch 061 linked question vs edit count sweep",
+      "result": "PASS",
+      "checks": [
+        {
+          "article_id": "c9b1aadd-4843-4cf3-a551-6dd67678e508",
+          "slug": "lea-dsgn-007-04-core-concept",
+          "linked_questions": 10,
+          "question_edits": 10,
+          "status": "PASS"
+        },
+        {
+          "article_id": "3067e127-60c0-4570-ab86-d85af25fb9b2",
+          "slug": "lea-dsgn-007-05-core-concept",
+          "linked_questions": 10,
+          "question_edits": 10,
+          "status": "PASS"
+        },
+        {
+          "article_id": "21880755-59f3-4749-9786-59e6cb53c6ed",
+          "slug": "lea-dsgn-012-01-core-concept",
+          "linked_questions": 10,
+          "question_edits": 10,
+          "status": "PASS"
+        },
+        {
+          "article_id": "a59db1e5-3988-489e-841d-e71e4f37050c",
+          "slug": "lea-dsgn-012-02-core-concept",
+          "linked_questions": 10,
+          "question_edits": 10,
+          "status": "PASS"
+        },
+        {
+          "article_id": "5de12a80-903b-4488-bc66-e855e8cb4129",
+          "slug": "lea-dsgn-012-03-core-concept",
+          "linked_questions": 10,
+          "question_edits": 10,
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "name": "stale-compose-error-check",
+      "command": "node scoped Batch 061 compose-error sweep",
+      "result": "PASS",
+      "files": []
+    },
+    {
+      "name": "targeted-content-audit-tests",
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "result": "PASS",
+      "tests": 34,
+      "failures": 0,
+      "expect_calls": 328
+    },
+    {
+      "name": "scoped-git-diff-check",
+      "command": "git diff --check -- .ai/03_plans/source-audited-local-first-batches-handoff.md .ai/content-audit-export/sync-state.json .ai/content-audit-export/source-audited-article-batch-061-local-first-ledger.json .ai/content-audit-export/source-audited-article-batch-061-local-first-report.md .ai/content-audit-export/source-audited-article-batch-061-local-first-scoped-checks.json .ai/content-audit-export/articles/lea-dsgn-007-04-core-concept--c9b1aadd-4843-4cf3-a551-6dd67678e508 .ai/content-audit-export/articles/lea-dsgn-007-05-core-concept--3067e127-60c0-4570-ab86-d85af25fb9b2 .ai/content-audit-export/articles/lea-dsgn-012-01-core-concept--21880755-59f3-4749-9786-59e6cb53c6ed .ai/content-audit-export/articles/lea-dsgn-012-02-core-concept--a59db1e5-3988-489e-841d-e71e4f37050c .ai/content-audit-export/articles/lea-dsgn-012-03-core-concept--5de12a80-903b-4488-bc66-e855e8cb4129",
+      "result": "PASS"
+    }
+  ],
+  "blockers": [],
+  "artifact_paths": [
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-061-local-first-ledger.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-061-local-first-report.md",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-061-local-first-scoped-checks.json",
+    "/Users/philiplewis/slatecamp/.ai/03_plans/source-audited-local-first-batches-handoff.md"
+  ]
+}

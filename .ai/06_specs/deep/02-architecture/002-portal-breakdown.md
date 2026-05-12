@@ -1,17 +1,17 @@
 # Portal Breakdown
 
-**Status:** Active  
-**Version:** 1.0  
-**Last Updated:** 2026-04-06  
+**Status:** Active
+**Version:** 1.0
+**Last Updated:** 2026-04-06
 **Source-of-Truth:** `src/app/*/AGENTS.md`, directory listings of each portal
 
 ---
 
 ## Dashboard Portal
 
-**Route:** `/dashboard`  
-**Pages:** 33  
-**Auth:** Supabase session (required)  
+**Route:** `/dashboard`
+**Pages:** 33
+**Auth:** Supabase session (required)
 **AGENTS.md:** `src/app/dashboard/AGENTS.md`
 
 ### Route Structure
@@ -51,9 +51,9 @@ dashboard/
 
 ## Admin Portal
 
-**Route:** `/admin`  
-**Pages:** 27  
-**Auth:** Admin role required  
+**Route:** `/admin`
+**Pages:** 27
+**Auth:** Admin role required
 **AGENTS.md:** `src/app/admin/AGENTS.md`
 
 ### Route Structure
@@ -86,9 +86,9 @@ admin/
 
 ## CEO Portal
 
-**Route:** `/ceo` (nested under `(protected)` route group)  
-**Pages:** 4  
-**Auth:** `ceo` or `super_admin` role required  
+**Route:** `/ceo` (nested under `(protected)` route group)
+**Pages:** 4
+**Auth:** `ceo` or `super_admin` role required
 **AGENTS.md:** `src/app/(protected)/ceo/AGENTS.md`
 
 ### Route Structure
@@ -114,9 +114,9 @@ CEO portal is nested under `(protected)` route group — route path is `src/app/
 
 ## Developer Portal
 
-**Route:** `/developer`  
-**Pages:** 21  
-**Auth:** Authenticated OR `ALLOW_DEV_PORTAL_BYPASS` env var  
+**Route:** `/developer`
+**Pages:** 21
+**Auth:** Authenticated OR `ALLOW_DEV_PORTAL_BYPASS` env var
 **AGENTS.md:** `src/app/developer/AGENTS.md`
 
 ### Route Structure

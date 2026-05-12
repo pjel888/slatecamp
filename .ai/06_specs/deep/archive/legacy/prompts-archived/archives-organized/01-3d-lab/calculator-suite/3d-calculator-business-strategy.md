@@ -65,7 +65,7 @@ Free calculator traffic (SEO, social, sponsor co-marketing)
     → Soft CTA: "This calculation is tested in the ALE.
        SlateCamp helps you master it."
       → Email capture on Save/Export (see Stream 3)
-        → Nurture sequence: 
+        → Nurture sequence:
            Email 1: "Here's your estimate PDF" (value delivery)
            Email 2: "3 ALE questions about [topic]" (education)
            Email 3: "Your Readiness Score — take the diagnostic" (activation)

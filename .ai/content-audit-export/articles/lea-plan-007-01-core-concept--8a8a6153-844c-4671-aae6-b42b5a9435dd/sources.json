@@ -1,20 +1,44 @@
 {
   "article_id": "8a8a6153-844c-4671-aae6-b42b5a9435dd",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:d21fdc160089de77086fd17baff7b49ff5dacd7c2b9a06800f2be2cf99f1b7eb",
-  "source_count": 1,
+  "sources_hash": "sha256:bc6f22a83b654aecfc67f476098299adbc697a06cb1faabfb7789271a067ebeb",
+  "source_count": 3,
   "sources": [
     {
-      "source_id": "457357b8-5ed7-4dc4-8874-7971ea3eb351",
+      "source_id": "eo-90-shelter-program-b086",
       "article_id": "8a8a6153-844c-4671-aae6-b42b5a9435dd",
-      "label": "Presidential Decree 757 (National Housing Authority Charter), as amended by RA 10811, RA 7279 (Urban Development and Housing Act), SHFC official documentation, Pag-IBIG Fund official guidelines",
+      "label": "EO 90 - NGO for Shelter Program",
       "url": null,
-      "source_type": "primary_law",
-      "description": null,
-      "is_verified": false,
+      "source_type": "primary_executive_order_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-086-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/EO/EO 90 NGO for Shelter Program.pdf; raw_pdf_sha256=sha256:22b0d40bfdd91f9636f7e57df542496b19fcca84fc7d48df4911a9e65d7cd501; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/EO/EO 90 NGO for Shelter Program.md; refined_markdown_sha256=sha256:0edf1d2a41c71751479f8bbe0d7ff31adcda7b8b544f59dc88f3de9f6319d43b; checked_locator=EO 90 refined markdown lines 19-27, 30-43, 51-63, and 79-106; raw PDF pages 1, 2, 3, 4, and 6 checked by local PyMuPDF extraction.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:01.381895+00:00",
-      "updated_at": "2026-03-24T04:34:01.381895+00:00"
+      "created_at": "2026-05-12T09:30:00.000+08:00",
+      "updated_at": "2026-05-12T09:30:00.000+08:00"
+    },
+    {
+      "source_id": "ra-11201-irr-dhsud-act-b086",
+      "article_id": "8a8a6153-844c-4671-aae6-b42b5a9435dd",
+      "label": "RA 11201 IRR - DHSUD Act Implementing Rules",
+      "url": null,
+      "source_type": "primary_law_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-086-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.pdf; raw_pdf_sha256=sha256:44705e2f0e700b9287afad08e4c32548679bb04d9a98b652431d05e0a7f2e171; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11201/RA 11201 IRR - DHSUD Act Implementing Rules.md; refined_markdown_sha256=sha256:40f1a5041c69b3a4aea7c8ba138a9d570bc686bea48aa5618ea6423a6a719528; checked_locator=RA 11201 IRR refined markdown lines 40-44, 68-75, 93-100, 116-121, 134-162, 261-263, 280-289, 335, 389, and 392; raw PDF pages 3, 6, 7, 13, 15, 19, and 35 checked by local PyMuPDF extraction.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-12T09:30:00.000+08:00",
+      "updated_at": "2026-05-12T09:30:00.000+08:00"
+    },
+    {
+      "source_id": "ra-7279-urban-development-housing-act-b086",
+      "article_id": "8a8a6153-844c-4671-aae6-b42b5a9435dd",
+      "label": "RA 7279 - Urban Development and Housing Act",
+      "url": null,
+      "source_type": "primary_law_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-086-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7279/RA 7279 Urban Development and Housing Act 2009.pdf; raw_pdf_sha256=sha256:23efa9c0278519d79ed424d9ced016b24619ebb42a19e75a05dc9bb8bf1c4696; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7279/RA 7279 Urban Development and Housing Act 2009.md; refined_markdown_sha256=sha256:f52859fb18fec28c403348851c3e53caca2e678cb9cec43fbca28d8d5c3a323e; checked_locator=RA 7279 refined markdown lines 11-35, 37-85, 131-155, 165-189, 231-235, 301-313, and 319; raw PDF pages 1, 2, 3, 7, 8, and 11 checked by local PyMuPDF extraction.",
+      "is_verified": true,
+      "sort_order": 2,
+      "created_at": "2026-05-12T09:30:00.000+08:00",
+      "updated_at": "2026-05-12T09:30:00.000+08:00"
     }
   ]
 }

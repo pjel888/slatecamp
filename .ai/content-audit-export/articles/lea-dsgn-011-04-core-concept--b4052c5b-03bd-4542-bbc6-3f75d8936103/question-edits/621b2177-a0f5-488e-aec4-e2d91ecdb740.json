@@ -1,0 +1,65 @@
+{
+  "question_id": "621b2177-a0f5-488e-aec4-e2d91ecdb740",
+  "baseline_hash": "sha256:878d6a4b0978f7ccb559aab4aebb3e5d77dc2e8e6d2fd1f4cd6675f39ed2b1eb",
+  "action": "replace",
+  "reason": "source-audited-article-batch-076-local-first aligned linked question with checked local raw PDF/source evidence for lea-dsgn-011-04-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-076",
+  "approved_at": "2026-05-12T03:12:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "b4052c5b-03bd-4542-bbc6-3f75d8936103",
+    "parent_article_slug": "lea-dsgn-011-04-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 9266 IRR refined markdown lines 128-142, 552-580, and 696-710; PD 1096 RIRR refined markdown lines 560-570; raw PDF pages 4, 14, 19, and 24 checked by local PyMuPDF extraction",
+    "checked_markdown_lines": [
+      "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 2-5, 14, and 19 checked by local PyMuPDF extraction",
+      "PD 1096 RIRR refined markdown lines 75-85, 560-570, 1088-1155, 2915-2922, 3387-3402, 4363-4364, 4659-4663, 4732-4742, and 5760-5783; raw PDF pages 24, 186, 229, 244, 256, and 280 checked by local PyMuPDF extraction"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "ra9266-irr-b076",
+        "label": "RA 9266 IRR - Architecture Act of 2004",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+        "raw_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "locator": "RA 9266 IRR refined markdown lines 41-76, 128-167, 552-580, and 696-710; raw PDF pages 2-5, 14, and 19 checked by local PyMuPDF extraction"
+      },
+      {
+        "source_id": "pd1096-rirr-b076",
+        "label": "PD 1096 RIRR 2004 - DPWH Official",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "locator": "PD 1096 RIRR refined markdown lines 75-85, 560-570, 1088-1155, 2915-2922, 3387-3402, 4363-4364, 4659-4663, 4732-4742, and 5760-5783; raw PDF pages 24, 186, 229, 244, 256, and 280 checked by local PyMuPDF extraction"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 076 local raw-source-audited perspective_drawings scope."
+  },
+  "proposed": {
+    "text": "Which vantage points are source-backed in PD 1096 RIRR?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bird's-eye view and eye level."
+      },
+      {
+        "id": "b",
+        "text": "Only worm's-eye view."
+      },
+      {
+        "id": "c",
+        "text": "Only interior one-point view."
+      },
+      {
+        "id": "d",
+        "text": "Only axonometric view."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "PD 1096 RIRR names bird's-eye and eye-level vantage points.",
+    "explanation": "PD 1096 RIRR names bird's-eye and eye-level vantage points.",
+    "code_citation": "RA 9266 IRR; PD 1096 RIRR"
+  }
+}

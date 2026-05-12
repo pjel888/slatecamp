@@ -1,7 +1,7 @@
 # SlateCamp — Codebase Cleanup & Implementation Plan
-**Version:** 1.0  
-**Date:** 2026-03-20  
-**Based on:** Codebase Health Audit (701 files, 42,887 LoC)  
+**Version:** 1.0
+**Date:** 2026-03-20
+**Based on:** Codebase Health Audit (701 files, 42,887 LoC)
 **Governing Rule:** The app must remain fully functional after every single task. One task = one commit = one verification.
 
 ---
@@ -66,7 +66,7 @@ Notes is a fully implemented feature with 12 components. A notes context at 0 im
 **The fonts flag is wrong**
 The audit says "Remove Syne and DM Mono — only Inter should be used per CLAUDE.md." This is incorrect. The SlateCamp design system explicitly specifies:
 - Syne 800 — Display/Headings
-- GeistSans — Hero name, large numerics  
+- GeistSans — Hero name, large numerics
 - Inter — Body/UI text
 - DM Mono uppercase — Labels, eyebrows, numbers
 
@@ -91,8 +91,8 @@ Everything in the "safe to delete" sections below has been independently verifie
 ---
 
 ### TASK 1.1 — Remove PII Logging from Dashboard Layout
-**Risk:** LOW  
-**Deletion risk:** None — removing a `console.log` line  
+**Risk:** LOW
+**Deletion risk:** None — removing a `console.log` line
 **Priority:** URGENT — live production PII exposure right now
 
 **What to do:**
@@ -126,8 +126,8 @@ git commit -m "security: remove PII logging from dashboard layout"
 ---
 
 ### TASK 1.2 — Move Client-Side DELETE to Server Action
-**Risk:** MEDIUM  
-**Deletion risk:** None — moving code, not deleting  
+**Risk:** MEDIUM
+**Deletion risk:** None — moving code, not deleting
 **Priority:** HIGH — client-side DB mutation bypasses audit trail
 
 **File:** `src/components/admin/QuestionList.tsx` line ~49
@@ -188,8 +188,8 @@ git commit -m "security: move admin question delete to server action"
 ---
 
 ### TASK 1.3 — Add Error Boundaries (`error.tsx`)
-**Risk:** LOW  
-**Deletion risk:** None — adding new files only  
+**Risk:** LOW
+**Deletion risk:** None — adding new files only
 **Priority:** HIGH — any unhandled error crashes to generic Next.js screen mid-quiz
 
 **Create these files in order of priority:**
@@ -310,7 +310,7 @@ git commit -m "feat: add error boundaries to root, dashboard, and auth routes"
 ---
 
 ### TASK 1.4 — Add Not-Found Pages (`not-found.tsx`)
-**Risk:** LOW  
+**Risk:** LOW
 **Deletion risk:** None — adding new files only
 
 **File 1:** `src/app/not-found.tsx`
@@ -379,7 +379,7 @@ git commit -m "feat: add not-found pages for root and dashboard routes"
 ---
 
 ### TASK 1.5 — Create `.env.example`
-**Risk:** LOW  
+**Risk:** LOW
 **Deletion risk:** None — creating a new file
 
 **Create:** `.env.example` at project root
@@ -430,7 +430,7 @@ git commit -m "docs: add .env.example with all required environment variables"
 ---
 
 ### TASK 1.6 — Audit and Fix Server Action Body Size Limit
-**Risk:** LOW  
+**Risk:** LOW
 **Deletion risk:** None — config change only
 
 **File:** `next.config.ts`
@@ -472,7 +472,7 @@ git commit -m "config: reduce serverActions bodySizeLimit to 4mb"
 ---
 
 ### TASK 2.1 — Remove Confirmed Dead npm Packages
-**Risk:** LOW  
+**Risk:** LOW
 **Deletion risk:** LOW — only removing packages with verified 0 usage
 
 **Before removing each package, run the grep verification. If grep returns any results, do NOT remove that package.**
@@ -537,7 +537,7 @@ git commit -m "deps: remove confirmed unused npm packages"
 ---
 
 ### TASK 2.2 — Remove Dead CSS Classes from `patterns.css`
-**Risk:** LOW  
+**Risk:** LOW
 **Deletion risk:** LOW — only removing classes with verified 0 references
 
 **File:** `src/components/graphics/patterns.css`
@@ -574,7 +574,7 @@ git commit -m "cleanup: remove unused CSS classes from patterns.css"
 ---
 
 ### TASK 2.3 — Remove Debug Console Logs from `wiki-actions.ts`
-**Risk:** LOW  
+**Risk:** LOW
 **Deletion risk:** None — only removing `console.log` debug statements, keeping `console.error`
 
 **File:** `src/lib/actions/wiki-actions.ts`
@@ -603,7 +603,7 @@ git commit -m "cleanup: remove debug console.log statements from wiki-actions an
 ---
 
 ### TASK 2.4 — Add Comments to Intentionally Retained Scaffolding
-**Risk:** NONE  
+**Risk:** NONE
 **Deletion risk:** None — adding comments only
 
 This task prevents future engineers (including future Claude sessions) from misidentifying planned code as dead code.
@@ -647,7 +647,7 @@ git commit -m "docs: add PLANNED/DEMO markers to intentionally retained scaffold
 ---
 
 ### TASK 2.5 — Extract Duplicate Correct-Answer Resolution Pattern
-**Risk:** LOW  
+**Risk:** LOW
 **Deletion risk:** None — extracting shared logic, not deleting
 
 The same logic appears in 4 files:
@@ -703,7 +703,7 @@ git commit -m "refactor: extract getCorrectOptionId to shared utility (4 call si
 ---
 
 ### TASK 2.6 — Extract Mastery Threshold Constants
-**Risk:** LOW  
+**Risk:** LOW
 **Deletion risk:** None — extracting constants, not deleting
 
 **File:** `src/lib/actions/dashboard-page.ts` lines 39–43 contain hardcoded thresholds:
@@ -819,7 +819,7 @@ grep -r "html2canvas" src/ --include="*.ts" --include="*.tsx" --include="*.js"
 grep -r "geist\|Geist" src/ next.config.ts --include="*.ts" --include="*.tsx"
 ```
 
-If `html2canvas` returns 0 results → add `npm uninstall html2canvas` to your next Bucket 2 commit.  
+If `html2canvas` returns 0 results → add `npm uninstall html2canvas` to your next Bucket 2 commit.
 If `geist` returns 0 results in src/ but exists in next.config.ts → it's used as a Next.js font → leave it.
 
 ---
@@ -909,15 +909,15 @@ The worst offenders to fix first:
 
 Three files exceed 500 lines and are candidates for splitting. Each split is a separate task:
 
-**`src/lib/actions/dashboard-page.ts` (~730 lines)**  
-Split into: `mastery-actions.ts`, `session-actions.ts`, `stats-actions.ts`, `streak-actions.ts`  
+**`src/lib/actions/dashboard-page.ts` (~730 lines)**
+Split into: `mastery-actions.ts`, `session-actions.ts`, `stats-actions.ts`, `streak-actions.ts`
 Keep `dashboard-page.ts` as an orchestrator that imports from the split files.
 
-**`src/lib/analytics.ts` (~640 lines)**  
+**`src/lib/analytics.ts` (~640 lines)**
 Split into: `analytics-tracking.ts` (event tracking), `analytics-queries.ts` (data fetching), `analytics-processing.ts` (data transformation)
 
-**`src/components/dashboard/QuizRenderer.tsx` (~530 lines)**  
-Split into: `QuizQuestion.tsx`, `QuizOptions.tsx`, `QuizNavigation.tsx`, `QuizProgress.tsx`  
+**`src/components/dashboard/QuizRenderer.tsx` (~530 lines)**
+Split into: `QuizQuestion.tsx`, `QuizOptions.tsx`, `QuizNavigation.tsx`, `QuizProgress.tsx`
 Keep `QuizRenderer.tsx` as the orchestrating parent.
 
 **Important:** Each split is its own task with its own commit and verification. Never split multiple files in the same commit.
@@ -1041,7 +1041,7 @@ These are explicitly out of scope. Do not modify them during this cleanup:
 
 ---
 
-*SlateCamp Codebase Cleanup Plan v1.0 · 2026-03-20*  
-*Read-only audit basis: 701 files, 42,887 LoC, analyzed 2026-03-20*  
+*SlateCamp Codebase Cleanup Plan v1.0 · 2026-03-20*
+*Read-only audit basis: 701 files, 42,887 LoC, analyzed 2026-03-20*
 *Do not skip the pre-flight. Do not combine tasks. One commit per task.*
 

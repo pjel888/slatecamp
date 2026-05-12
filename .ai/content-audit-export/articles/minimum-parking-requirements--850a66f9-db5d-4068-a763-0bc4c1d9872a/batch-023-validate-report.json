@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-05-10T18:17:48.710Z",
+  "input": "/Users/philiplewis/slatecamp/.ai/content-audit-export",
+  "article_count": 1,
+  "valid": true,
+  "blockers": [],
+  "warnings": [
+    "minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a: component-usage.json has not been generated for this article yet."
+  ],
+  "articles": [
+    {
+      "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
+      "slug": "minimum-parking-requirements",
+      "folder": "minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a",
+      "valid": true,
+      "blockers": [],
+      "warnings": [
+        "component-usage.json has not been generated for this article yet."
+      ],
+      "files": {
+        "metadata": true,
+        "original": true,
+        "normalized": true,
+        "uiBlocks": true,
+        "parserErrors": true,
+        "uiBlockEdits": true,
+        "linkedQuestions": true,
+        "sources": true,
+        "taxonomy": true,
+        "componentUsage": false,
+        "candidate": true,
+        "diffReport": true,
+        "diffReportMarkdown": true,
+        "pushReport": false,
+        "pushResult": false
+      },
+      "hashes": {
+        "original": "sha256:069a853aaa76cf823cd2e44d8df42d839d5b62d0215739334cdf380c8d582415",
+        "normalized": "sha256:1f86af9278094aad603b7d3ec852939a32f445a54c0d424f34edb842a4cb4d3b",
+        "candidate": "sha256:1f86af9278094aad603b7d3ec852939a32f445a54c0d424f34edb842a4cb4d3b",
+        "ui_blocks": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    }
+  ]
+}

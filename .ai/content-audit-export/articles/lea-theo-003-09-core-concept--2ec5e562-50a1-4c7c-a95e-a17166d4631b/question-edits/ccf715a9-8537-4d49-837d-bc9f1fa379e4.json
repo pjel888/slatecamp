@@ -1,0 +1,79 @@
+{
+  "question_id": "ccf715a9-8537-4d49-837d-bc9f1fa379e4",
+  "baseline_hash": "sha256:a3983f10464418d53c3785d9764b81053ff9d026afdf68c7009bc0330e5a956a",
+  "action": "replace",
+  "reason": "source-audited-article-batch-058-local-first: local raw PDF backed replacement constrained to checked Batch 058 source families.",
+  "approved_by": "codex-local-first-batch-058",
+  "approved_at": "2026-05-11T20:31:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "2ec5e562-50a1-4c7c-a95e-a17166d4631b",
+    "parent_article_slug": "lea-theo-003-09-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "TOA 3 Design Perception refined markdown lines 43-56, 152-212, and raw PDF pages 8, 22-26; George Salvan Architectural Theories of Design refined markdown lines 7861-7984, 10479-10493, 15905-15910, and raw PDF pages 320, 473-478; theory refined markdown lines 11-13 and 186-191 and raw PDF pages 1 and 10",
+    "checked_markdown_lines": [
+      "TOA 3 Design Perception refined markdown lines 43-56",
+      "TOA 3 Design Perception refined markdown lines 152-212",
+      "George Salvan Architectural Theories of Design refined markdown lines 7861-7984",
+      "George Salvan Architectural Theories of Design refined markdown lines 10479-10493",
+      "George Salvan Architectural Theories of Design refined markdown lines 15905-15910",
+      "theory refined markdown lines 186-191"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "toa3-design-perception-local-raw-pdf--b058-2ec5e562-01",
+        "label": "TOA 3 Design Perception - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 3 (Design Perception).pdf",
+        "sha256": "sha256:807be9f1a301d579123d8fa3ec680011b1906d6a4edcb6dc061c9a57e5ea9534",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 3 (Design Perception).md",
+        "refined_markdown_sha256": "sha256:49309b3dc5eea661ca7cad04cceb91897ac29fee6dd8e43cf6c3f60f163d404a",
+        "locator": "TOA 3 Design Perception refined markdown lines 43-56, 152-212, and raw PDF pages 8, 22-26"
+      },
+      {
+        "source_id": "salvan-theory-local-raw-pdf--b058-2ec5e562-02",
+        "label": "George Salvan Architectural Theories of Design - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
+        "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
+        "locator": "George Salvan Architectural Theories of Design refined markdown lines 7861-7984, 10479-10493, 15905-15910, and raw PDF pages 320, 473-478"
+      },
+      {
+        "source_id": "theory-local-raw-pdf--b058-2ec5e562-03",
+        "label": "theory - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+        "sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+        "refined_markdown_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+        "locator": "theory refined markdown lines 11-13 and 186-191 and raw PDF pages 1 and 10"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 058 checked local raw PDF source scope."
+  },
+  "proposed": {
+    "text": "Which answer best explains spatial legibility?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is the ease with which users understand routes, relationships, and environmental cues."
+      },
+      {
+        "id": "b",
+        "text": "It is the use of the most complex plan possible."
+      },
+      {
+        "id": "c",
+        "text": "It is only the size of printed signs."
+      },
+      {
+        "id": "d",
+        "text": "It is unrelated to perception."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "It is the ease with which users understand routes, relationships, and environmental cues. This answer is supported by the checked Batch 058 local raw PDF source families for Spatial Legibility and Environmental Perception.",
+    "explanation": "It is the ease with which users understand routes, relationships, and environmental cues. The Batch 058 source audit used local raw PDFs first and refined markdown only as locator evidence for Spatial Legibility and Environmental Perception.",
+    "code_citation": "TOA 3 Design Perception refined markdown lines 43-56, 152-212, and raw PDF pages 8, 22-26"
+  },
+  "batch_question_template_index": 1
+}

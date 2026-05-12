@@ -1,0 +1,32 @@
+{
+  "question_id": "798a01cb-ce49-4c22-bf47-1ffa389bf773",
+  "baseline_hash": "sha256:a4977e073bd9a392e32a9f2746b09d41e7aab7c36d59ce883278bb3937e54290",
+  "reason": "Batch 003 source audit corrected the wrong Group D storage premise. PD 1096 classifies Group D as Institutional and Group G as Storage and Hazardous; RA 9514 supplies protected-exit and special-hazard rules.",
+  "approved_by": "codex-local-source-audit-batch-003",
+  "approved_at": "2026-05-10T18:00:00+08:00",
+  "proposed": {
+    "text": "A four-storey building review shows: (1) a protected exit stair enclosure rated only 1.5 hours and (2) a Group G chemical storage room beside an office with only a 2-hour separation. How many of these two items are non-compliant under the checked source rules?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Zero"
+      },
+      {
+        "id": "b",
+        "text": "One"
+      },
+      {
+        "id": "c",
+        "text": "Two"
+      },
+      {
+        "id": "d",
+        "text": "Cannot be evaluated from any source"
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": "A protected exit connecting four or more storeys needs at least two-hour fire resistance, and hazardous storage greater than normal occupancy needs at least four-hour fire resistance, automatic protection, or both.",
+    "explanation": "The edit removes the old Group D storage item and keeps only source-backed RA 9514 conditions.",
+    "code_citation": "RA 9514 2019 RIRR Sections 10.2.5.2(B) and 10.2.6.10(A)"
+  }
+}

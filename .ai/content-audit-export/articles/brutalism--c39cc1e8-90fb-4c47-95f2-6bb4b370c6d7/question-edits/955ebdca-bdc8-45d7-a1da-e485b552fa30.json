@@ -1,0 +1,88 @@
+{
+  "question_id": "955ebdca-bdc8-45d7-a1da-e485b552fa30",
+  "baseline_hash": "sha256:0ab90d6062354a079d4c2af6517d804f12f1eb1bbd62b76ae72cdf1110a28639",
+  "action": "replace",
+  "reason": "source-audited-article-batch-052-local-first: local raw PDF backed replacement constrained to checked Batch 052 source families.",
+  "approved_by": "codex-local-first-batch-052",
+  "approved_at": "2026-05-11T18:46:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "c39cc1e8-90fb-4c47-95f2-6bb4b370c6d7",
+    "parent_article_slug": "brutalism",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "HOA Module 2 P3 refined markdown lines 252-274, 278-313, 315-338, 340-457, and 477-488; 20th Century Architects 3 refined markdown lines 293-320 and 333-345; Modern Architectures in History USA refined markdown lines 763-769, 1433-1441, 1546-1548, 1751-1763, 1803-1805, 1828-1834, 1902-1906, and 1950-1956",
+    "checked_markdown_lines": [
+      "HOA Module 2 P3 refined markdown lines 252-274",
+      "HOA Module 2 P3 refined markdown lines 278-313",
+      "HOA Module 2 P3 refined markdown lines 315-338",
+      "HOA Module 2 P3 refined markdown lines 340-457",
+      "HOA Module 2 P3 refined markdown lines 477-488",
+      "20th Century Architects 3 refined markdown lines 293-320",
+      "20th Century Architects 3 refined markdown lines 333-345",
+      "Modern Architectures in History USA refined markdown lines 763-769",
+      "Modern Architectures in History USA refined markdown lines 1433-1441",
+      "Modern Architectures in History USA refined markdown lines 1546-1548",
+      "Modern Architectures in History USA refined markdown lines 1751-1763",
+      "Modern Architectures in History USA refined markdown lines 1803-1805",
+      "Modern Architectures in History USA refined markdown lines 1828-1834",
+      "Modern Architectures in History USA refined markdown lines 1902-1906",
+      "Modern Architectures in History USA refined markdown lines 1950-1956"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "hoa2p3-local-raw-pdf--b052-c39cc1e8-01",
+        "label": "HOA Module 2 P3 - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/HOA MODULE 2 P3.pdf",
+        "sha256": "sha256:b62daa7737b464ab7dc573d64f0f8701998462f8ac0fe933d96e8ecfe8040ba2",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/HOA MODULE 2 P3.md",
+        "refined_markdown_sha256": "sha256:d53cf6de56725d4b046a9f6b72665039b32d0bd932abc4d158ec0b2ba4b290e8",
+        "locator": "HOA Module 2 P3 refined markdown lines 252-274, 278-313, 315-338, 340-457, and 477-488"
+      },
+      {
+        "source_id": "twentieth3-local-raw-pdf--b052-c39cc1e8-02",
+        "label": "20th Century Architects 3 - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/20th Century Architects 3.pdf",
+        "sha256": "sha256:a9917c491e54202408b1d58fd6871e29b4d7cd5ba0dc8ae001dfa8ad67ffa6c9",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/20th Century Architects 3.md",
+        "refined_markdown_sha256": "sha256:83ae1f2b668eb3c2d6d8bbb7b3ff8778dd9ec126c93680d74b68e3562ae962e6",
+        "locator": "20th Century Architects 3 refined markdown lines 293-320 and 333-345"
+      },
+      {
+        "source_id": "modernusa-local-raw-pdf--b052-c39cc1e8-03",
+        "label": "Modern Architectures in History USA - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Modern Architectures in History (USA) - Gwendolyn Wright.pdf",
+        "sha256": "sha256:2910fe1d48df8a3822e69d8dcbe830b8bd5948af1da991028f0dc6d062cd578d",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Modern Architectures in History (USA) - Gwendolyn Wright.md",
+        "refined_markdown_sha256": "sha256:97479009e43ab4d8b3c2df4ef9285ce36947f8b7a66370527a470994d0fbd70d",
+        "locator": "Modern Architectures in History USA refined markdown lines 763-769, 1433-1441, 1546-1548, 1751-1763, 1803-1805, 1828-1834, 1902-1906, and 1950-1956"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 052 checked local raw PDF source scope."
+  },
+  "proposed": {
+    "text": "Which building is the board-review example for Brutalism in the checked HOA source?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Art and Architecture Building at Yale by Paul Rudolph"
+      },
+      {
+        "id": "b",
+        "text": "Bauhaus Building at Dessau by Walter Gropius"
+      },
+      {
+        "id": "c",
+        "text": "Farnsworth House by Mies van der Rohe"
+      },
+      {
+        "id": "d",
+        "text": "AT&T Headquarters by Philip Johnson"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Art and Architecture Building at Yale by Paul Rudolph This answer is supported by the checked Batch 052 local raw PDF source families for Brutalism.",
+    "explanation": "Art and Architecture Building at Yale by Paul Rudolph The Batch 052 source audit used local raw PDFs first and refined markdown only as locator evidence for Brutalism.",
+    "code_citation": "HOA Module 2 P3 refined markdown lines 252-274, 278-313, 315-338, 340-457, and 477-488; 20th Century Architects 3 refined markdown lines 293-320 and 333-345; Modern Architectures in History USA refined markdown lines 763-769, 1433-1441, 1546-1548, 1751-1763, 1803-1805, 1828-1834, 1902-1906, and 1950-1956"
+  },
+  "batch_question_template_index": 2
+}

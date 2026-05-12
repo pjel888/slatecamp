@@ -1,80 +1,44 @@
 {
   "article_id": "99ee4b30-1612-422c-af69-9a496deb6d79",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:4cd743f2d51fcfa24ffb33f53c45ac2d6caa47e1c6aacb190dd9bdaeb169943a",
-  "source_count": 6,
+  "sources_hash": "sha256:bfc09daaf0068062ad3516fc36b0df18bd43c5fc2b80e414d1af1aabe8ad352b",
+  "source_count": 3,
   "sources": [
     {
-      "source_id": "6d19254e-9e8c-4e14-8d6d-79af13fdcaf0",
+      "source_id": "metals-lecture-b083",
       "article_id": "99ee4b30-1612-422c-af69-9a496deb6d79",
-      "label": "[AWS A2.4:2020 Standard Symbols for Welding, Brazing, and Nondestructive Examination](https://pubs.aws.org/p/1999/a242020-standard-symbols-for-welding-brazing-and-nondestructive-examination)",
+      "label": "Metals Lecture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "primary_materials_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-083-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/Metals Lecture.pdf; raw_pdf_sha256=sha256:cd9cd4ee534bda9a974447c4ec73b13b12d5abf1c14df1fca408a2c4530650dd; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Metals Lecture.md; refined_markdown_sha256=sha256:4e9e0a042f2eef2c80d33af81512ca2cf32778cae64351af9dc54df58db3694c; checked_locator=Metals Lecture refined markdown lines 1-220, 420-555, and 638-812; raw PDF pages 2, 32, 55, 57, and 58 checked by local PyMuPDF extraction.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:00.685475+00:00",
-      "updated_at": "2026-03-24T04:34:00.685475+00:00"
+      "created_at": "2026-05-12T06:25:00.000+08:00",
+      "updated_at": "2026-05-12T06:25:00.000+08:00"
     },
     {
-      "source_id": "b0be975b-fe14-4e6c-bed7-594a83a57756",
+      "source_id": "building-construction-illustrated-b083",
       "article_id": "99ee4b30-1612-422c-af69-9a496deb6d79",
-      "label": "AWS D1.1 (2020) Structural Welding Code—Steel",
+      "label": "Building Construction Illustrated, 5th Edition",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "primary_materials_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-083-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf; raw_pdf_sha256=sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md; refined_markdown_sha256=sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a; checked_locator=Building Construction Illustrated refined markdown lines 3378-3570, 6616-6792, 15420-15510, and 15680-15745; raw PDF pages 121, 422, 423, 427, and 428 checked by local PyMuPDF extraction.",
+      "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:00.685475+00:00",
-      "updated_at": "2026-03-24T04:34:00.685475+00:00"
+      "created_at": "2026-05-12T06:25:00.000+08:00",
+      "updated_at": "2026-05-12T06:25:00.000+08:00"
     },
     {
-      "source_id": "24ab12d6-07a1-4af3-b4e8-927b845c4810",
+      "source_id": "building-construction-1-lecture-b083",
       "article_id": "99ee4b30-1612-422c-af69-9a496deb6d79",
-      "label": "[TESDA NC II Shielded Metal Arc Welding](https://www.tesda.gov.ph/Downloadables/SMAW%20NC%20II)",
+      "label": "Building Construction 1 Lecture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "primary_materials_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-083-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction 1 Lecture.pdf; raw_pdf_sha256=sha256:a53ebfbccb0c0f53503a8f76385836d46c6951cb4350c8af10420239fd23e231; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction 1 Lecture.md; refined_markdown_sha256=sha256:298206511059efbfa480e3dc0d9caab8f0270aa5c1288bf8987ae53790caccec; checked_locator=Building Construction 1 Lecture refined markdown lines 1099-1113 and 1418-1444; raw PDF pages 23 and 30 checked by local PyMuPDF extraction.",
+      "is_verified": true,
       "sort_order": 2,
-      "created_at": "2026-03-24T04:34:00.685475+00:00",
-      "updated_at": "2026-03-24T04:34:00.685475+00:00"
-    },
-    {
-      "source_id": "b25be33d-5717-434b-966d-da39bef888c7",
-      "article_id": "99ee4b30-1612-422c-af69-9a496deb6d79",
-      "label": "National Structural Code of the Philippines 2015, Chapter 5: Structural Steel",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:34:00.685475+00:00",
-      "updated_at": "2026-03-24T04:34:00.685475+00:00"
-    },
-    {
-      "source_id": "70d3e7bf-3a11-4db8-9378-7892d0679af7",
-      "article_id": "99ee4b30-1612-422c-af69-9a496deb6d79",
-      "label": "AWS A5.1-12 Specification for Carbon Steel Electrodes for Shielded Metal Arc Welding",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 4,
-      "created_at": "2026-03-24T04:34:00.685475+00:00",
-      "updated_at": "2026-03-24T04:34:00.685475+00:00"
-    },
-    {
-      "source_id": "563bd938-8c2a-41e6-bca2-0bc2e9629766",
-      "article_id": "99ee4b30-1612-422c-af69-9a496deb6d79",
-      "label": "[AWS A5.18 Gas Metal Arc Welding Standards](https://www.foreseeusa.com/blogs/knowledge-tips/overview-of-aws-welding-codes-and-standards)",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 5,
-      "created_at": "2026-03-24T04:34:00.685475+00:00",
-      "updated_at": "2026-03-24T04:34:00.685475+00:00"
+      "created_at": "2026-05-12T06:25:00.000+08:00",
+      "updated_at": "2026-05-12T06:25:00.000+08:00"
     }
   ]
 }

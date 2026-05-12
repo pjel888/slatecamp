@@ -44,7 +44,7 @@
   if (!isPro && !isDevBypass) {
     throw new Error(`The ${modeDef.label} mode requires a Pro subscription.`)
   }
-  
+
   // AFTER (new pattern):
   if (!isPro && !isDevBypass) {
     return {
@@ -81,7 +81,7 @@
   // ADMIN ROLE GATING
   const ADMIN_PATHS = ['/admin/']
   const isAdminPath = ADMIN_PATHS.some(path => pathname.startsWith(path))
-  
+
   if (isAdminPath && user) {
     // Query user_roles table for admin/sme role
     const { data: roleData } = await supabase
@@ -90,7 +90,7 @@
       .eq('user_id', user.id)
       .in('role', ['admin', 'super_admin', 'sme'])
       .maybeSingle()
-    
+
     if (!roleData) {
       // User is logged in but not admin - redirect to dashboard
       return redirectWithCookies(ROUTES.DASHBOARD)
@@ -104,15 +104,15 @@
 - **Logic Required:**
   ```typescript
   import { useCallback, useMemo } from 'react'
-  
+
   // Inside TierProvider component (line 66-67):
   const hasAccess = useCallback((requiredTier: UserTier) => {
     return TIER_RANK[effectiveTier] >= TIER_RANK[requiredTier]
   }, [effectiveTier])
-  
+
   // Memoize capabilities to prevent unnecessary re-computation
-  const capabilities = useMemo(() => 
-    TIER_CAPABILITIES[effectiveTier], 
+  const capabilities = useMemo(() =>
+    TIER_CAPABILITIES[effectiveTier],
     [effectiveTier]
   )
   ```
@@ -124,7 +124,7 @@
   ```typescript
   // In layout.tsx (Server Component):
   const { tier, effectiveTier, isDevMode } = await getUserTierContext()
-  
+
   // Pass to TierProvider as props (not from localStorage):
   <TierProvider tier={tier} effectiveTier={effectiveTier} isDevMode={isDevMode}>
   ```
@@ -137,7 +137,7 @@
   // src/lib/rbac/index.ts
   import { canReviewContent, canManageUsers, canPublish, isSuperAdmin } from '@/lib/admin/roles'
   import { getUserRole } from '@/lib/admin/roles'
-  
+
   export const RBAC = {
     canReviewContent,
     canManageUsers,
@@ -145,7 +145,7 @@
     isSuperAdmin,
     getUserRole,
   }
-  
+
   // Helper for checking multiple roles
   export const hasAnyRole = (...roles: string[]) => async () => {
     const userRole = await getUserRole()
@@ -175,7 +175,7 @@
   ```typescript
   // After successful payment webhook:
   import { revalidatePath } from 'next/cache'
-  
+
   // Force refresh of user data after subscription update
   revalidatePath('/dashboard')
   revalidatePath('/api/user/profile')

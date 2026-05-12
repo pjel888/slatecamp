@@ -1,62 +1,77 @@
-
-
-## Board Exam Quick Check
-
-Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
-
-**Common mistake:** treating a familiar keyword in **Lea Prac Frm 011 Government Architects Dpwh Nha Dhsud And The In House Design Function** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
-## Government Architects—DPWH, NHA, DHSUD, and the In-House Design Function
-
-The Philippine government maintains its own architectural teams within key agencies: the Department of Public Works and Highways (DPWH), the National Housing Authority (NHA), and the Department of Human Settlements and Urban Development (DHSUD). These in-house design functions serve public infrastructure, housing, and urban development projects that shape national development priorities.
+# Government Architects, In-House Design, and Public Accountability
 
 ## Learning Goal
 
-After studying this article, you should be able to:
+After studying this article, you should be able to explain what changes when an architect works inside a government agency such as a public works, housing, or human settlements office. The key exam move is not to memorize an agency slogan. It is to identify which rule controls the professional act: RA 9266 for architectural responsibility, the Civil Code and RA 9266 IRR for architect-of-record liability, RA 9184 for public procurement, and public audit/accountability rules for government funds.
 
-- Describe the role of government architects in DPWH, NHA, DHSUD.
-- Explain the in-house design function of government agencies.
-- Distinguish government architectural practice from private practice.
-- Identify the legal basis for government architect roles.
+## Why This Matters on the LEA
 
-### In-House Architectural Practice vs. Private Practice
+Government practice often appears in Professional Practice questions as a trap. The question may name DPWH, NHA, DHSUD, an in-house design office, or a government consultant. The correct answer usually turns on the architect's responsibility, not the employer's name.
 
-Government architects operate within a distinct regulatory and contractual framework. Unlike private practitioners bound by service agreements and civil liability under Article 1723 of the Civil Code, government architects work under civil service rules and budget appropriations. However, they must still uphold the professional standards defined in RA 9266 and comply with the same technical codes—the National Building Code, BP 344, and environmental regulations—as private firms.
+An architect does not stop being an architect because the client is the government. A public-sector architect still prepares or reviews architectural documents under the professional discipline of RA 9266. The architect-of-record remains the professional who is directly and professionally responsible for the architectural documents issued under that architect's seal or authorized signature. Source: RA 9266 IRR, definitions and architect-of-record provisions.
 
-<Tip>
-Government architects work under civil service rules and budget appropriations, not private service agreements. However, they must still uphold RA 9266 professional standards and comply with the same technical codes — National Building Code, BP 344, and environmental regulations — as private firms.
-</Tip>
+## The Governing Source Map
 
-The architect-of-record for government projects must be a licensed, registered architect personally responsible for design quality and code compliance. This responsibility does not diminish whether the architect works in-house or as a private consultant. Government projects subject to public bidding must comply with RA 9184 (Government Procurement Reform Act) procedures, which may affect how design services are procured and delivered.
+| Exam issue | Governing source | What the learner should answer |
+| --- | --- | --- |
+| Who is professionally responsible for signed architectural documents? | RA 9266 IRR, architect-of-record provisions | The architect-of-record is responsible for the architectural documents issued under the architect's seal or authorized signature. |
+| Does government employment erase professional responsibility? | RA 9266 IRR, architect-of-record liability provision | No. The IRR states the architect-of-record rule applies to architects in government as well as architects employed by private firms. |
+| Which law governs procurement of government consulting services and infrastructure projects? | RA 9184 and its IRR-A, scope and policy provisions | RA 9184 governs procurement of infrastructure projects, goods, and consulting services by government procuring entities. |
+| What Civil Code article is usually tested for architect liability? | Civil Code, Article 1723 | Article 1723 is the collapse/damages liability article for the engineer or architect who drew plans and specifications. |
+| What is the audit mindset for public projects? | RA 9184 transparency/accountability/economy policy; local government accounting/audit provisions where LGUs are involved | Public project decisions must be documented so procurement, payments, changes, and technical decisions can be traced. |
 
-### Scope of In-House Design Services
+## In-House Design Is Not a Shortcut Around RA 9266
 
-DPWH architects design highways, bridges, flood control structures, and public facilities. NHA focuses on affordable housing and community development. DHSUD (formed from the merger of Housing and Land Use Regulatory Board and other entities) oversees shelter development and urban planning. Each agency has its own technical standards and design guidelines that align with national codes but may reflect agency-specific priorities for cost efficiency, sustainability, and social equity.
+An in-house government architect may be involved in programming, design review, standard details, permit coordination, technical evaluation, construction administration, or acceptance documentation. Those tasks happen inside a public agency chain of command, but the professional question remains the same: who prepared the architectural documents, who supervised them, who signed or sealed them, and what law controls the procurement or approval route?
 
-In-house architects may provide design from conceptual planning through construction administration. They prepare architectural documents—plans, specifications, details—with the same professional rigor as private practitioners. Structural conceptualization, material selection, accessibility compliance, and environmental impact considerations all fall within their scope.
+RA 9266 IRR is especially important because it connects the architect's signature, seal, PRC registration number, PTR, and IAPOA information with professional responsibility. The same IRR language says the architect-of-record rule applies to both government architects and architects employed by private firms. That means a government office cannot use "in-house" status as a substitute for responsible professional control.
 
-### Coordination with Private Consultants and Contractors
+## Public Procurement Changes the Delivery Route
 
-Government agencies frequently engage private architects and engineers through consulting contracts. When private architects work alongside government in-house teams, clear delineation of responsibility is essential. The service agreement must specify who holds the architect-of-record designation, which party assumes design liability, and how design decisions flow between in-house and private teams.
+RA 9184 governs procurement of government infrastructure projects, goods, and consulting services. It sets the public-sector frame: transparency, accountability, equity, efficiency, economy, competitiveness, and public bidding unless the law allows another method. For an architect, this changes how the commission or project package is obtained and documented.
 
-Construction projects may also involve design-build or design-bid-build delivery. In design-bid-build, the government architect typically retains oversight and approval authority over contractor submissions. In design-build, private architects and contractors assume greater design responsibility, but government still must verify compliance with original design intent and applicable codes.
+In private practice, the architect-client service agreement is usually the main delivery document. In government practice, the architect must also understand the procurement route, approved budget, terms of reference, bid documents, contract authority, change documentation, and acceptance records. A good LEA answer separates the two: RA 9266 governs the practice of architecture; RA 9184 governs how the government procures the project or service.
 
-### Professional Development and Technical Standards
+## Working With Private Consultants
 
-Government architects must maintain continuing professional development (CPD) hours under RA 9266 guidelines, even though attendance at accredited seminars is not mandatory for certificate renewal. Access to professional training, research, and industry developments strengthens in-house design capacity.
+Government agencies may engage private architects or technical consultants. The critical document question is responsibility allocation. The agreement should make clear which party prepares which documents, who signs and seals the architectural set, who reviews contractor submissions, and who has authority to approve design changes.
 
-Technical standards for government projects should reflect current best practices. This includes adoption of Building Information Modeling (BIM) for complex projects, green building principles aligned with BERDE standards, universal design consistent with BP 344, and environmental compliance under DAO 2003-30 and EIA requirements. Government design standards protect public safety and project quality across regional offices and staff transitions.
+If a private architect signs documents as architect-of-record, Article 1723 and the RA 9266 IRR architect-of-record provisions become relevant. If the in-house office reviews or administers the project, its approval notes should show what was reviewed, what was returned for correction, and what remained the responsibility of the consultant or contractor. The exam trap is to answer "government architect" or "private architect" automatically. The correct answer follows the signed documents and the contract role.
 
-### COA Oversight and Audit Compliance
+## Technical Codes Still Apply
 
-The Commission on Audit (COA) reviews publicly funded projects for regularity, legality, and economy. Government architects must maintain complete project documentation and design records for audit purposes. This includes preliminary studies, design development records, specifications changes, and construction administration notes. Audit findings may address design choices that affected project cost, schedule, or functionality.
+Government projects are still buildings and public facilities. PD 1096, BP 344, the Fire Code, structural standards, environmental review, and applicable agency design criteria remain relevant when the project scope triggers them. The fact that a project is publicly funded does not lower life-safety, accessibility, or professional-responsibility standards.
 
-Architects working on government projects must understand audit requirements and maintain documentation that demonstrates compliance with applicable codes, budget allocations, and procurement procedures. Design decisions should be traceable and defensible in terms of technical merit and cost justification.
+When an LEA question asks why government architects must comply with the same technical codes as private practitioners, the best answer is public safety and uniform code compliance. The Building Code and accessibility rules protect users, not the business model of the designer.
 
----
+## Real-World Application
 
+Suppose a city government is preparing a small public market upgrade. The city engineering office has an in-house architect who develops schematic layouts, but the city later procures a private consultant for the final architectural documents. The LEA-relevant issue is not simply who is employed by government. The architect must identify the controlling source for each decision. The procurement of the consultant belongs under RA 9184. The final architectural documents must be prepared, signed, and sealed under RA 9266 discipline. If the private consultant becomes architect-of-record, the service agreement should show that role clearly. If the in-house architect reviews the submission, review comments, corrected drawings, and approvals should be retained so the project record explains why the design was accepted. If a later audit questions a change in stall layout, roof span, accessibility route, or cost, the agency needs a traceable technical record, not an informal memory of meetings.
 
+## Common Traps
 
-<ArticleMedia id="media-lea-prac-frm-011-government-ar-0" type="image" caption="Government Architect Offices — DPWH, NHA, DHSUD Organizational Roles" description="Organizational diagram showing the three main government architect employer agencies: DPWH (public works infrastructure, largest employer of government architects), NHA (housing production and resettlement), DHSUD (human settlements regulation and policy). Each agency box shows: mandate, typical architect role, and in-house design function scope. Distinction between regulatory vs. design roles highlighted." />
+- Do not cite RA 9266 as the procurement law. Procurement of government infrastructure projects and consulting services is RA 9184 territory.
+- Do not cite RA 9184 as the law that defines the architect-of-record. That is RA 9266 IRR territory.
+- Do not say Civil Code Article 1723 is only a private-practice idea. RA 9266 IRR expressly links architect-of-record documents to Article 1723 liability and states the rule applies to government and private-firm architects.
+- Do not overstate agency mandates unless the agency charter or enabling law is actually cited. For this topic, the safer exam frame is public-sector architectural responsibility, procurement, and documentation.
+
+## Linked-Question Bridge
+
+You should now be able to answer which source governs a government architecture scenario:
+
+- RA 9266 IRR: professional responsibility and architect-of-record.
+- Civil Code Article 1723: liability for plans and specifications in the tested collapse/damages frame.
+- RA 9184: procurement of public infrastructure projects and consulting services.
+- Public audit/accountability rules: records must support legality, propriety, economy, and traceability of public spending and technical decisions.
+
+## Sources
+
+- Source: RA 9266 IRR, definitions and architect-of-record provisions.
+- Source: Civil Code of the Philippines, Article 1723.
+- Source: RA 9184 and IRR-A, scope and procurement policy provisions.
+- Source: RA 11201, DHSUD Act of 2019, policy coordination and human settlements mandate.
+- Source: Local Government Code provisions on local accounting, disbursement, and Commission on Audit access where LGU-funded projects are involved.
+
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)

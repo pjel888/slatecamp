@@ -1,0 +1,159 @@
+{
+  "question_id": "a393214b-d924-4cb3-bf53-83ee7d381ef9",
+  "baseline_hash": "sha256:69d87a9ec959cadf7e2695a027dee0a8f3227e2b0bf5002b06207b52288ecac0",
+  "action": "replace",
+  "reason": "source-audited-article-batch-070-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes unsupported external-theory, hazard-number, or planning-law overclaims where present.",
+  "approved_by": "codex-local-first-batch-070",
+  "approved_at": "2026-05-12T00:42:00+08:00",
+  "source_audit_support": {
+    "parent_article_id": "3fe83b11-50d8-45ab-9530-936fb59fd974",
+    "parent_article_slug": "lea-plan-008-05-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "DHSUD RUDD refined markdown lines 41-65, 385-397, 399-429, 568-572, 621-629, 704-724, 781-786, 865-890, 907-924, 1290-1293, 1380-1397, 1409-1419, 1486-1503, 1525-1549, 1554, 2070, and 2715-2767; raw PDF pages 5, 8, 10, 34-37, 43, 62, 65-68, 71, 97, 123-128, and 150-153 checked by local PDF extraction; DHSUD climate reference refined markdown lines 314-324, 338-350, 1396-1420, 1450-1458, 1618-1654, and 1660-1672; raw PDF pages 20-21 and 52-53 checked by local PDF extraction; HLURB CLUP Vol. 1 refined markdown lines 434-452, 1988-1994, 2000-2009, 2025-2029, 2117-2130, and 8461-8467; raw PDF pages 23, 70, 74, and 225 checked by local PDF extraction; RPS 2008 refined markdown lines 63-85, 125-166, 203-223, 251-269, 769-795, and 1919-1925; raw PDF pages 5-10, 28, 85, and 97 checked by local PDF extraction",
+    "checked_markdown_lines": [
+      "DHSUD RUDD lines 41-65",
+      "DHSUD RUDD lines 385-397",
+      "DHSUD RUDD lines 399-429",
+      "DHSUD RUDD lines 568-572",
+      "DHSUD RUDD lines 621-629",
+      "DHSUD RUDD lines 704-724",
+      "DHSUD RUDD lines 781-786",
+      "DHSUD RUDD lines 865-890",
+      "DHSUD RUDD lines 907-924",
+      "DHSUD RUDD lines 1290-1293",
+      "DHSUD RUDD lines 1380-1397",
+      "DHSUD RUDD lines 1409-1419",
+      "DHSUD RUDD lines 1486-1503",
+      "DHSUD RUDD lines 1525-1549",
+      "DHSUD RUDD line 1554",
+      "DHSUD RUDD line 2070",
+      "DHSUD RUDD lines 2715-2767",
+      "DHSUD climate reference lines 314-324",
+      "DHSUD climate reference lines 338-350",
+      "DHSUD climate reference lines 1396-1420",
+      "DHSUD climate reference lines 1450-1458",
+      "DHSUD climate reference lines 1618-1654",
+      "DHSUD climate reference lines 1660-1672",
+      "HLURB CLUP Vol. 1 lines 434-452",
+      "HLURB CLUP Vol. 1 lines 1988-1994",
+      "HLURB CLUP Vol. 1 lines 2000-2009",
+      "HLURB CLUP Vol. 1 lines 2025-2029",
+      "HLURB CLUP Vol. 1 lines 2117-2130",
+      "HLURB CLUP Vol. 1 lines 8461-8467",
+      "RPS 2008 lines 63-85",
+      "RPS 2008 lines 125-166",
+      "RPS 2008 lines 203-223",
+      "RPS 2008 lines 251-269",
+      "RPS 2008 lines 769-795",
+      "RPS 2008 lines 1919-1925"
+    ],
+    "checked_raw_pdf_pages": [
+      "DHSUD RUDD raw PDF page 5",
+      "DHSUD RUDD raw PDF page 8",
+      "DHSUD RUDD raw PDF page 10",
+      "DHSUD RUDD raw PDF pages 34-37",
+      "DHSUD RUDD raw PDF page 43",
+      "DHSUD RUDD raw PDF page 62",
+      "DHSUD RUDD raw PDF pages 65-68",
+      "DHSUD RUDD raw PDF page 71",
+      "DHSUD RUDD raw PDF page 97",
+      "DHSUD RUDD raw PDF pages 123-128",
+      "DHSUD RUDD raw PDF pages 150-153",
+      "DHSUD climate reference raw PDF pages 20-21",
+      "DHSUD climate reference raw PDF pages 52-53",
+      "HLURB CLUP Vol. 1 raw PDF page 23",
+      "HLURB CLUP Vol. 1 raw PDF page 70",
+      "HLURB CLUP Vol. 1 raw PDF page 74",
+      "HLURB CLUP Vol. 1 raw PDF page 225",
+      "RPS 2008 raw PDF pages 5-10",
+      "RPS 2008 raw PDF page 28",
+      "RPS 2008 raw PDF page 85",
+      "RPS 2008 raw PDF page 97"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "dhsud-rudd-guidelines-b070",
+        "label": "DHSUD Resilient Urban Design and Development Guidelines",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf",
+        "sha256": "sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.md",
+        "refined_markdown_sha256": "sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7",
+        "locator": "DHSUD RUDD refined markdown lines 41-65, 385-397, 399-429, 568-572, 621-629, 704-724, 781-786, 865-890, 907-924, 1290-1293, 1380-1397, 1409-1419, 1486-1503, 1525-1549, 1554, 2070, and 2715-2767; raw PDF pages 5, 8, 10, 34-37, 43, 62, 65-68, 71, 97, 123-128, and 150-153 checked by local PDF extraction"
+      },
+      {
+        "source_id": "dhsud-climate-resilience-reference-tool-b070",
+        "label": "DHSUD Urban Planning and Design for Climate Resilience Reference Tool",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Reference-Tool-on-Urban-Planning-and-Design-for-Climate-Resilience-for-LGUs-Planning-Actors-in-the-Philippines_readable.pdf",
+        "sha256": "sha256:4fb30dbbb3eb2d7d445418120bdd046c594e0eeea85b3bf32f93d401325f3bb8",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Reference-Tool-on-Urban-Planning-and-Design-for-Climate-Resilience-for-LGUs-Planning-Actors-in-the-Philippines_readable.md",
+        "refined_markdown_sha256": "sha256:2a1544c9d48eae33c8456f130dfa1c1c7b31c27befca17a2602069fa8086c455",
+        "locator": "DHSUD climate reference refined markdown lines 314-324, 338-350, 1396-1420, 1450-1458, 1618-1654, and 1660-1672; raw PDF pages 20-21 and 52-53 checked by local PDF extraction"
+      },
+      {
+        "source_id": "hlurb-clup-vol1-planning-process-b070",
+        "label": "HLURB CLUP Guidebook Volume 1 - planning process, participation, and maps",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/HLURB_CLUP_Vol_1.pdf",
+        "sha256": "sha256:34888ecf03576719d36e8abe21ff90da92e18263a4debb9db3fbbc41a7878762",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/HLURB_CLUP_Vol_1.md",
+        "refined_markdown_sha256": "sha256:6b574d861c0942a232fec321c2863754673532019af8f983e84550e54afc04e3",
+        "locator": "HLURB CLUP Vol. 1 refined markdown lines 434-452, 1988-1994, 2000-2009, 2025-2029, 2117-2130, and 8461-8467; raw PDF pages 23, 70, 74, and 225 checked by local PDF extraction"
+      },
+      {
+        "source_id": "rps-2008-local-planning-system-b070",
+        "label": "Rationalizing the Local Planning System 2008",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/RPS (2008).pdf",
+        "sha256": "sha256:1331576aa80a6e5ab2d4079aa091e7294b7574c3c91b41a499e02cd1f8df91a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/RPS (2008).md",
+        "refined_markdown_sha256": "sha256:a86183e25f99faee458dfbb5bdb6045b98e309abe56e3d9fc4b65aee43312c96",
+        "locator": "RPS 2008 refined markdown lines 63-85, 125-166, 203-223, 251-269, 769-795, and 1919-1925; raw PDF pages 5-10, 28, 85, and 97 checked by local PDF extraction"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, and citation rewritten to the Batch 070 checked local raw-source scope."
+  },
+  "proposed": {
+    "text": "A historic warehouse is converted for a new use while retaining its cultural value. What strategy is being applied?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Adaptive reuse."
+      },
+      {
+        "id": "b",
+        "text": "Open dumping."
+      },
+      {
+        "id": "c",
+        "text": "Fault tracing."
+      },
+      {
+        "id": "d",
+        "text": "Exclusive greenfield expansion."
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Correct. This answer stays within the checked Batch 070 local raw-source scope.",
+      "b": "Incorrect. This option imports a different rule, scope, or unsupported condition.",
+      "c": "Incorrect. This option imports a different rule, scope, or unsupported condition.",
+      "d": "Incorrect. This option imports a different rule, scope, or unsupported condition.",
+      "correct": "Correct. This answer follows the checked Batch 070 source evidence and keeps the question inside the article scope.",
+      "takeaway": "Anchor the answer to the checked local source family before choosing the option."
+    },
+    "explanation": "Correct. This answer follows the checked Batch 070 source evidence and keeps the question inside the article scope.",
+    "code_citation": "DHSUD RUDD refined markdown lines 41-65, 385-397, 399-429, 568-572, 621-629, 704-724, 781-786, 865-890, 907-924, 1290-1293, 1380-1397, 1409-1419, 1486-1503, 1525-1549, 1554, 2070, and 2715-2767; raw PDF pages 5, 8, 10, 34-37, 43, 62, 65-68, 71, 97, 123-128, and 150-153 checked by local PDF extraction; DHSUD climate reference refined markdown lines 314-324, 338-350, 1396-1420, 1450-1458, 1618-1654, and 1660-1672; raw PDF pages 20-21 and 52-53 checked by local PDF extraction; HLURB CLUP Vol. 1 refined markdown lines 434-452, 1988-1994, 2000-2009, 2025-2029, 2117-2130, and 8461-8467; raw PDF pages 23, 70, 74, and 225 checked by local PDF extraction; RPS 2008 refined markdown lines 63-85, 125-166, 203-223, 251-269, 769-795, and 1919-1925; raw PDF pages 5-10, 28, 85, and 97 checked by local PDF extraction",
+    "bloom_level": "apply",
+    "application_context": "recall",
+    "practice_context": [
+      "source-audited-local-first-batch-070"
+    ],
+    "difficulty": 0.45,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-055-local-first",
+  "batch_number": 55,
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T19:38:00.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "458cde1d-fd31-41f1-b90e-d5cd728e9e23",
+    "slug": "lea-theo-002-09-core-concept",
+    "title": "Enclosure and Openings by Francis D.K. Ching",
+    "article_folder": ".ai/content-audit-export/articles/lea-theo-002-09-core-concept--458cde1d-fd31-41f1-b90e-d5cd728e9e23",
+    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-09-core-concept--458cde1d-fd31-41f1-b90e-d5cd728e9e23",
+    "candidate_path": ".ai/content-audit-export/articles/lea-theo-002-09-core-concept--458cde1d-fd31-41f1-b90e-d5cd728e9e23/candidate.md",
+    "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-09-core-concept--458cde1d-fd31-41f1-b90e-d5cd728e9e23/candidate.md",
+    "question_edits_folder": ".ai/content-audit-export/articles/lea-theo-002-09-core-concept--458cde1d-fd31-41f1-b90e-d5cd728e9e23/question-edits",
+    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-002-09-core-concept--458cde1d-fd31-41f1-b90e-d5cd728e9e23/question-edits",
+    "normalized_sha256": "sha256:9ac20192fe3be2adaea44859f81def5faed844d3d9e8ff1e348bd3ffbe95c886",
+    "candidate_sha256": "sha256:9ac20192fe3be2adaea44859f81def5faed844d3d9e8ff1e348bd3ffbe95c886",
+    "linked_questions_sha256": "sha256:48aab46f2962f6470b312882456a69c6465febb6a3b21394dd57fc5e6192b8b3",
+    "sources_sha256": "sha256:46800551ea72574d6d4791264f770699cf3286fe812184476a67489717d16b64"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "primary_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "refined_markdown_role": "locator_only",
+    "derivative_or_search_layer_as_primary": false,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": [],
+    "source_families_checked": [
+      {
+        "label": "George Salvan Architectural Theories of Design - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "raw_pdf_sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
+        "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
+        "locator": "George Salvan Architectural Theories of Design refined markdown lines 1026 and 12770-12776"
+      },
+      {
+        "label": "TOA 1 Intro to Theory - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 1 (Intro to Theory).pdf",
+        "raw_pdf_sha256": "sha256:17ee07310eaf7fbd71aeb3cb3b57a6ffb623e2b8b1957543d74b706a5184d0e0",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md",
+        "refined_markdown_sha256": "sha256:fc665ed41ea62ddb69c88ba02c7b92628481ba6792a075bc21694ca072b150d6",
+        "locator": "TOA 1 Intro to Theory refined markdown lines 147-151"
+      },
+      {
+        "label": "theory - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+        "raw_pdf_sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+        "refined_markdown_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+        "locator": "theory refined markdown lines 11-12"
+      }
+    ]
+  },
+  "classification": {
+    "content_type": "theory-of-architecture",
+    "contains_legal_or_code_claims": false,
+    "source_risk_tier": "medium",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 14,
+    "question_edits_created": [
+      "59673c2d-fbab-4395-8994-5e1d495dd459",
+      "21177a82-9cf3-42e2-8245-32815d9ca9f4",
+      "81e45a77-1c19-4756-84ca-2866b7ed9ccb",
+      "f9ebb355-80bb-4298-80f9-e5969565634a",
+      "c3298607-44b3-4269-a8a4-fe69fd185316",
+      "7166dcdd-4a90-4a08-af6c-e10223345569",
+      "d553a483-33fe-4080-8e66-03d48c0e1ca5",
+      "6829f8f7-ef45-43df-86b8-3638d8a289ec",
+      "6f9f3afd-e76b-46ba-a7da-79b526b6fd8c",
+      "ef71fa56-1b43-45aa-9a8f-3089f41e2631",
+      "7d4f7fa5-8fc6-406a-9843-5a9b382f16ad",
+      "7e6dc778-716e-4825-ae9c-5c20bd7e07c8",
+      "32e29bde-61a8-41fa-b76d-c74b47295e94",
+      "33a59956-773b-4dfe-a283-638e102da0fa"
+    ]
+  },
+  "checked_markdown_lines": [
+    "George Salvan Architectural Theories of Design refined markdown line 1026",
+    "George Salvan Architectural Theories of Design refined markdown lines 12770-12776",
+    "TOA 1 Intro to Theory refined markdown lines 147-151",
+    "theory refined markdown lines 11-12"
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-theo-002-09-core-concept-b055-claim-01",
+      "claim_text": "Enclosure and Openings by Francis D.K. Ching in Batch 055 is limited to checked local raw PDF source families and the refined markdown locators recorded for this article.",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "quoted_pdf_excerpt": "George Salvan Architectural Theories of Design refined markdown lines 1026 and 12770-12776; TOA 1 Intro to Theory refined markdown lines 147-151; theory refined markdown lines 11-12",
+        "source_ids": [
+          "salvan-theory-local-raw-pdf--b055-458cde1d-01",
+          "toa1-intro-local-raw-pdf--b055-458cde1d-02",
+          "theory-local-raw-pdf--b055-458cde1d-03"
+        ]
+      },
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-theo-002-09-core-concept-b055-claim-questions",
+      "claim_text": "Batch 055 question edits audited for lea-theo-002-09-core-concept: 59673c2d-fbab-4395-8994-5e1d495dd459, 21177a82-9cf3-42e2-8245-32815d9ca9f4, 81e45a77-1c19-4756-84ca-2866b7ed9ccb, f9ebb355-80bb-4298-80f9-e5969565634a, c3298607-44b3-4269-a8a4-fe69fd185316, 7166dcdd-4a90-4a08-af6c-e10223345569, d553a483-33fe-4080-8e66-03d48c0e1ca5, 6829f8f7-ef45-43df-86b8-3638d8a289ec, 6f9f3afd-e76b-46ba-a7da-79b526b6fd8c, ef71fa56-1b43-45aa-9a8f-3089f41e2631, 7d4f7fa5-8fc6-406a-9843-5a9b382f16ad, 7e6dc778-716e-4825-ae9c-5c20bd7e07c8, 32e29bde-61a8-41fa-b76d-c74b47295e94, 33a59956-773b-4dfe-a283-638e102da0fa",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "quoted_pdf_excerpt": "George Salvan Architectural Theories of Design refined markdown lines 1026 and 12770-12776; TOA 1 Intro to Theory refined markdown lines 147-151; theory refined markdown lines 11-12",
+        "source_ids": [
+          "salvan-theory-local-raw-pdf--b055-458cde1d-01",
+          "toa1-intro-local-raw-pdf--b055-458cde1d-02",
+          "theory-local-raw-pdf--b055-458cde1d-03"
+        ]
+      },
+      "audit_result": "PASS"
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "quality_protocol": {
+    "roundtrip_protocol_preserved": true,
+    "ui_blocks_owner": "ui-blocks.json",
+    "normalized_owner": "normalized.md",
+    "candidate_generation": "compose_completed",
+    "local_first_only": true,
+    "supabase_write_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json"
+  },
+  "sme_review": {
+    "required": false,
+    "status": "not_required"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

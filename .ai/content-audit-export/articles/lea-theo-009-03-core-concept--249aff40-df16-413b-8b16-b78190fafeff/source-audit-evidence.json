@@ -1,0 +1,228 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-075-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T03:00:00.000+08:00",
+  "target": {
+    "article_id": "249aff40-df16-413b-8b16-b78190fafeff",
+    "slug": "lea-theo-009-03-core-concept",
+    "title": "Space standards serve three purposes: they ensure human",
+    "article_folder": ".ai/content-audit-export/articles/lea-theo-009-03-core-concept--249aff40-df16-413b-8b16-b78190fafeff",
+    "normalized_sha256": "sha256:6c47697fe0a11577c97319b6988f560d880738c1d2af1ed54b58715f08df1e52",
+    "candidate_sha256": "sha256:6c47697fe0a11577c97319b6988f560d880738c1d2af1ed54b58715f08df1e52",
+    "candidate_path": ".ai/content-audit-export/articles/lea-theo-009-03-core-concept--249aff40-df16-413b-8b16-b78190fafeff/candidate.md"
+  },
+  "classification": {
+    "topic_family": "space_standards",
+    "local_first_batch": "075",
+    "source_sensitivity": "legal_or_code",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "legal_or_code",
+    "requires_raw_pdf_audit": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdfs_checked_first": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "local_pdf_extraction_method": "python_pymupdf_local",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "pd1096-rirr-2004-dpwh-b075",
+      "label": "PD 1096 RIRR 2004 - Revised IRR (DPWH Official)",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "locator": "PD 1096 RIRR refined markdown lines 75-85, 457-458, 566-570, 914-923, 1088-1155, and 5764-5783"
+    },
+    {
+      "source_id": "design-process-programming-b075",
+      "label": "Design Process",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
+      "sha256": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
+      "refined_markdown_sha256": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
+      "locator": "Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-theo-009-03-core-concept-article-b075",
+      "claim_text": "Article lea-theo-009-03-core-concept was rewritten to the checked space_standards source scope.",
+      "claim_type": "article_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 RIRR refined markdown lines 75-85, 457-458, 566-570, 914-923, 1088-1155, and 5764-5783; Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430",
+        "quoted_pdf_excerpt": "The IRR regulates minimum standards and treats inadequate room sizes as an architectural deficiency."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-a9c96a9e-72d9-426c-a08a-b882d95ffe2e-ALE-THEO-009-03-006-b075",
+      "claim_text": "Question a9c96a9e-72d9-426c-a08a-b882d95ffe2e ALE-THEO-009-03-006 was rewritten to the checked space_standards source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 RIRR refined markdown lines 75-85, 457-458, 566-570, 914-923, 1088-1155, and 5764-5783; Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430",
+        "quoted_pdf_excerpt": "The IRR regulates minimum standards and treats inadequate room sizes as an architectural deficiency."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-ce51345d-5cbc-4dcc-9e71-d7810524bfe8-ALE-THEO-009-03-009-b075",
+      "claim_text": "Question ce51345d-5cbc-4dcc-9e71-d7810524bfe8 ALE-THEO-009-03-009 was rewritten to the checked space_standards source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 RIRR refined markdown lines 75-85, 457-458, 566-570, 914-923, 1088-1155, and 5764-5783; Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430",
+        "quoted_pdf_excerpt": "The IRR regulates minimum standards and treats inadequate room sizes as an architectural deficiency."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-c4744db4-0d45-4993-a11f-f701c6a87f0c-ALE-THEO-009-03-001-b075",
+      "claim_text": "Question c4744db4-0d45-4993-a11f-f701c6a87f0c ALE-THEO-009-03-001 was rewritten to the checked space_standards source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 RIRR refined markdown lines 75-85, 457-458, 566-570, 914-923, 1088-1155, and 5764-5783; Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430",
+        "quoted_pdf_excerpt": "The IRR regulates minimum standards and treats inadequate room sizes as an architectural deficiency."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-295a0582-404f-4ce5-bee1-ac9526cca0ad-ALE-THEO-009-03-002-b075",
+      "claim_text": "Question 295a0582-404f-4ce5-bee1-ac9526cca0ad ALE-THEO-009-03-002 was rewritten to the checked space_standards source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 RIRR refined markdown lines 75-85, 457-458, 566-570, 914-923, 1088-1155, and 5764-5783; Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430",
+        "quoted_pdf_excerpt": "The IRR regulates minimum standards and treats inadequate room sizes as an architectural deficiency."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-73a6caed-ed81-4968-bb20-8cb44561f7ed-ALE-THEO-009-03-003-b075",
+      "claim_text": "Question 73a6caed-ed81-4968-bb20-8cb44561f7ed ALE-THEO-009-03-003 was rewritten to the checked space_standards source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 RIRR refined markdown lines 75-85, 457-458, 566-570, 914-923, 1088-1155, and 5764-5783; Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430",
+        "quoted_pdf_excerpt": "The IRR regulates minimum standards and treats inadequate room sizes as an architectural deficiency."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-db16a5dc-5c7a-4bbc-bac3-686a7a605572-ALE-THEO-009-03-005-b075",
+      "claim_text": "Question db16a5dc-5c7a-4bbc-bac3-686a7a605572 ALE-THEO-009-03-005 was rewritten to the checked space_standards source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 RIRR refined markdown lines 75-85, 457-458, 566-570, 914-923, 1088-1155, and 5764-5783; Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430",
+        "quoted_pdf_excerpt": "The IRR regulates minimum standards and treats inadequate room sizes as an architectural deficiency."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-c8d4be55-c2d1-4fd4-b39a-b4c2406e7cda-ALE-THEO-009-03-007-b075",
+      "claim_text": "Question c8d4be55-c2d1-4fd4-b39a-b4c2406e7cda ALE-THEO-009-03-007 was rewritten to the checked space_standards source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 RIRR refined markdown lines 75-85, 457-458, 566-570, 914-923, 1088-1155, and 5764-5783; Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430",
+        "quoted_pdf_excerpt": "The IRR regulates minimum standards and treats inadequate room sizes as an architectural deficiency."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-31bfbd84-bcca-44c6-a47f-05ff4fd6386d-ALE-THEO-009-03-004-b075",
+      "claim_text": "Question 31bfbd84-bcca-44c6-a47f-05ff4fd6386d ALE-THEO-009-03-004 was rewritten to the checked space_standards source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 RIRR refined markdown lines 75-85, 457-458, 566-570, 914-923, 1088-1155, and 5764-5783; Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430",
+        "quoted_pdf_excerpt": "The IRR regulates minimum standards and treats inadequate room sizes as an architectural deficiency."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-a541b08f-849c-43e2-960d-93979b1c5b33-ALE-THEO-009-03-008-b075",
+      "claim_text": "Question a541b08f-849c-43e2-960d-93979b1c5b33 ALE-THEO-009-03-008 was rewritten to the checked space_standards source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 RIRR refined markdown lines 75-85, 457-458, 566-570, 914-923, 1088-1155, and 5764-5783; Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430",
+        "quoted_pdf_excerpt": "The IRR regulates minimum standards and treats inadequate room sizes as an architectural deficiency."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-cd54f247-3358-4e7e-b374-7cbfd9ed3952-no-model-id-b075",
+      "claim_text": "Question cd54f247-3358-4e7e-b374-7cbfd9ed3952  was rewritten to the checked space_standards source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 RIRR refined markdown lines 75-85, 457-458, 566-570, 914-923, 1088-1155, and 5764-5783; Design Process refined markdown lines 55-68, 78-86, 208-214, and 405-430",
+        "quoted_pdf_excerpt": "The IRR regulates minimum standards and treats inadequate room sizes as an architectural deficiency."
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "scenario_enrichment": {
+    "policy_status": "pending",
+    "eligibility_status": "eligible-deferred",
+    "blocker_status": "nonblocking",
+    "note": "No Real World Scenario section was added; scenario enrichment remained nonblocking while source correctness and question safety were completed."
+  },
+  "sme_review": {
+    "required": false,
+    "status": "not_required",
+    "notes": "Local raw-source audit only; no external SME review required for Batch 075 local-first gate."
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "question_id": "7fddbbb9-df88-4fe2-903e-8c499d93472b",
+  "baseline_hash": "sha256:1c991b0fa23123031a2fd53c6b6f8bb91b2e672b668159ff1827cffc7b1999fc",
+  "action": "replace",
+  "reason": "source-audited-article-batch-028-local-first rewrote this linked question to source-safe local form for lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement.",
+  "approved_by": "codex-local-source-audit-batch-028",
+  "approved_at": "2026-05-11T15:30:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "97befd70-258f-4f5a-8b02-77387b51ccfb",
+    "parent_article_slug": "lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UAP Standards refined markdown lines 414-501 and 505-517; SPP 202 local raw PDF; readable SPP 202 substance cross-checked through UAP Standards lines 414-501 and 505-517; UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090; CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820",
+    "checked_markdown_lines": [
+      "UAP Standards lines 414-501",
+      "UAP Standards lines 505-517",
+      "SPP 202 raw PDF local file checked",
+      "UAP Standards lines 414-501",
+      "UAP Standards lines 505-517",
+      "UAP Document 301 lines 472-545",
+      "UAP Document 301 lines 923-998",
+      "UAP Document 301 lines 1019-1051",
+      "UAP Document 301 lines 1062-1090",
+      "CIAP Document 102 lines 169-258",
+      "CIAP Document 102 lines 712-761",
+      "CIAP Document 102 lines 807-820"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "source_id": "uap-standards-spp202-suspended-abandoned-work-local",
+        "locator": "UAP Standards refined markdown lines 414-501 and 505-517"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "source_id": "uap-standards-spp202-suspended-abandoned-work-local",
+        "locator": "UAP Standards refined markdown lines 414-501 and 505-517"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+        "sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+        "source_id": "spp202-regular-design-services-local",
+        "locator": "SPP 202 local raw PDF; readable SPP 202 substance cross-checked through UAP Standards lines 414-501 and 505-517"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+        "sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+        "source_id": "spp202-regular-design-services-local",
+        "locator": "SPP 202 local raw PDF; readable SPP 202 substance cross-checked through UAP Standards lines 414-501 and 505-517"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+        "sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+        "source_id": "uap-document-301-general-conditions-local",
+        "locator": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+        "source_id": "uap-document-301-general-conditions-local",
+        "locator": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+        "sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+        "source_id": "ciap-document-102-private-construction-contract-local",
+        "locator": "CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+        "sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
+        "source_id": "ciap-document-102-private-construction-contract-local",
+        "locator": "CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820"
+      }
+    ],
+    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+  },
+  "proposed": {
+    "text": "Which document should you use for the Architect's compensation when regular design services are suspended or abandoned?",
+    "options": [
+      {
+        "id": "a",
+        "text": "SPP 202 / UAP Standards for Regular Design Services"
+      },
+      {
+        "id": "b",
+        "text": "A rule that changes the party named in the cited source"
+      },
+      {
+        "id": "c",
+        "text": "An answer that treats the article title as the controlling rule"
+      },
+      {
+        "id": "d",
+        "text": "A claim that changes the notice period, percentage, or party stated in the checked source"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "Correct because it follows UAP Standards lines 414-501. The other options change the party, period, percentage, or document rule stated in the audited source.",
+    "explanation": "Use UAP Standards lines 414-501 for this Batch 028 replacement.",
+    "code_citation": "UAP Standards lines 414-501",
+    "bloom_level": "remember",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "contracts",
+      "source-audited batch 028"
+    ],
+    "difficulty": 0.34,
+    "is_assessment": false,
+    "model_id": "BATCH-028-lea-prac-ctr-003-suspension-and-termination-of-the-owner-architect-agreement-002"
+  }
+}

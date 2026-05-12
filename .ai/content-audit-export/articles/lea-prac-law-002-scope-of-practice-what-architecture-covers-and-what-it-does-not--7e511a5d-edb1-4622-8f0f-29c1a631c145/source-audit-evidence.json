@@ -1,0 +1,124 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T20:15:00+08:00",
+  "audit_mode": "local_source_audit_no_supabase",
+  "protocols_applied": [
+    ".ai/CONTENT_EXCELLENCE_GOAL.md",
+    ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
+    ".ai/00_system/vitruvius-source-reference.md"
+  ],
+  "target": {
+    "article_id": "7e511a5d-edb1-4622-8f0f-29c1a631c145",
+    "slug": "lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not",
+    "title": "Scope of Practice: What Architecture Covers and What It Does Not",
+    "article_folder": ".ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/candidate.md",
+    "candidate_sha256": "sha256:167c86ddfd4c651a1781714b3f03de430714fbfe958c51696c2a78a6a65fe708",
+    "normalized_sha256": "sha256:167c86ddfd4c651a1781714b3f03de430714fbfe958c51696c2a78a6a65fe708",
+    "linked_questions_sha256": "sha256:9045353bdcc0017406301628c2c5c7414b7b06a64854df2218a3f41e16952551",
+    "sources_sha256": "sha256:b6753c9223a27f4f1d179fc0494e18c43799f1f7eb45ec5c2d514c11ab37cd6e"
+  },
+  "classification": {
+    "content_type": "ra9266_scope_of_practice_article",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": [
+      "ae2dd470-af9a-49d3-b2ae-03968c51a4a1",
+      "64f87401-24fd-4f73-803f-d7f9a006c03a",
+      "08a1c4ca-fe39-4ded-81c4-94909a6d362c",
+      "470f33bb-24f1-4eb2-a76e-ce255a50ae41",
+      "5799550f-7a5e-4e16-a921-a7551b075bc0",
+      "c47a6715-b32f-4649-8692-cc3e1a1a63b3",
+      "c7d3979b-6241-480e-a37d-28cfd4af00d8",
+      "cfc6c973-ed50-4948-9c47-48a8fadf5dd7",
+      "7d7ae21c-dcec-43f0-8403-b4117dcd1c89",
+      "d64a8825-1fc6-469c-85a7-b67fea123907"
+    ]
+  },
+  "raw_sources": [
+    {
+      "key": "ra9266_irr",
+      "label": "RA 9266 IRR Architecture Act of 2004",
+      "source_type": "implementing_rules",
+      "source_id": "batch004-lea-prac-law-002-scope-of-practice-what-architec-source-01",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "checked_pdf_pages": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ],
+  "gate_results": {
+    "compose": "PASS: content-audit:compose -- --article-id <id> --overwrite; blockers=0",
+    "diff": "PASS: content-audit:diff -- --article-id <id>; changed=true safe_to_push=true blockers=0",
+    "validate": "PASS: content-audit:validate -- --article-id <id> --summary --dry-run; valid=true blockers=0 warnings=0",
+    "push_dry_run": "not_attempted_local_first; Supabase remote fetch is final publishing only and is intentionally non-blocking here",
+    "supabase_mutation": "not_attempted"
+  },
+  "claims": [
+    {
+      "claim_id": "law002-claim-01",
+      "claim_text": "RA 9266 IRR Section 3(2) defines Architect, Architect-of-Record, Architect-in-Charge of Construction, and Consulting Architect.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "law002-claim-02",
+      "claim_text": "RA 9266 IRR Section 3(3) defines General Practice of Architecture to include planning, architectural design, structural conceptualization, specifying, supervision, and responsible direction.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "law002-claim-03",
+      "claim_text": "RA 9266 IRR Section 3(4) lists ten service categories under the scope of architectural practice.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "law002-claim-04",
+      "claim_text": "The prior learner-facing Section 20 locator for scope categories was removed and replaced with Section 3(4).",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
+    },
+    {
+      "claim_id": "lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not-linked-question-edits",
+      "claim_text": "Question edits staged locally for linked question IDs/model IDs: ae2dd470-af9a-49d3-b2ae-03968c51a4a1 (ALE-PRAC-LAW-002-001), 64f87401-24fd-4f73-803f-d7f9a006c03a (ALE-PRAC-LAW-002-010), 08a1c4ca-fe39-4ded-81c4-94909a6d362c (ALE-PRAC-LAW-002-004), 470f33bb-24f1-4eb2-a76e-ce255a50ae41 (ALE-PRAC-LAW-002-008), 5799550f-7a5e-4e16-a921-a7551b075bc0 (ALE-PRAC-LAW-002-006), c47a6715-b32f-4649-8692-cc3e1a1a63b3 (ALE-PRAC-LAW-002-002), c7d3979b-6241-480e-a37d-28cfd4af00d8 (ALE-PRAC-LAW-002-005), cfc6c973-ed50-4948-9c47-48a8fadf5dd7 (ALE-PRAC-LAW-002-007), 7d7ae21c-dcec-43f0-8403-b4117dcd1c89 (ALE-PRAC-LAW-002-003), d64a8825-1fc6-469c-85a7-b67fea123907 (ALE-PRAC-LAW-002-009)",
+      "audit_result": "PASS",
+      "source_support": [
+        "ra9266_irr"
+      ]
+    }
+  ],
+  "unsupported_or_removed_claims": [
+    "Removed learner-visible preserved UI placeholder blocks and internal replacement notes from normalized/candidate content.",
+    "Corrected linked-question locator from Section 20 to the verified RA 9266 IRR Section 3(4) scope list."
+  ],
+  "remaining_local_blockers": [],
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_recovery_complete": true,
+    "remote_publish_status": "not_attempted_by_request",
+    "remaining_local_blockers": []
+  },
+  "local_validation": {
+    "command": "bun run content-audit:validate -- --article-id 7e511a5d-edb1-4622-8f0f-29c1a631c145 --summary --dry-run",
+    "valid": true,
+    "blockers": 0,
+    "warnings": [],
+    "checked_at": "2026-05-10T16:39:34+08:00"
+  }
+}

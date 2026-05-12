@@ -1,0 +1,48 @@
+{
+  "question_id": "5904449c-0259-453a-94ce-67cff51f4298",
+  "baseline_hash": "sha256:c0d4f3847afa2e715dc88a25a005ac17b9f364b16eababd36c1773daccac47ed",
+  "action": "replace",
+  "reason": "source-audited-article-batch-039-local-first: source-safe replacement grounded in local raw PDF/source-family evidence; removes stale, derivative, non-local, or unsupported framing where present.",
+  "approved_by": "codex-local-first-batch-039",
+  "approved_at": "2026-05-11T13:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-039-local-first",
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official-local",
+        "label": "PD 1096 2004 Revised IRR - DPWH Official",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "checked_markdown_lines": [
+          "PD 1096 RIRR refined markdown lines 2396-2428"
+        ]
+      }
+    ],
+    "citation": "PD 1096 2004 Revised IRR, Section 809"
+  },
+  "proposed": {
+    "text": "How high above the street surface or court level must duct or intake openings be located?",
+    "options": [
+      {
+        "id": "b039-4aa5-07-a",
+        "text": "At least 300 mm"
+      },
+      {
+        "id": "b039-4aa5-07-b",
+        "text": "At least 150 mm"
+      },
+      {
+        "id": "b039-4aa5-07-c",
+        "text": "At least 600 mm"
+      },
+      {
+        "id": "b039-4aa5-07-d",
+        "text": "At least 900 mm"
+      }
+    ],
+    "correct_option_id": "b039-4aa5-07-a",
+    "rationale": "Correct answer: At least 300 mm. This is directly supported by PD 1096 2004 Revised IRR, Section 809.",
+    "explanation": "The Batch 039 source-audited correction uses only the local raw PDF family and locator-checked refined markdown for PD 1096 2004 Revised IRR, Section 809.",
+    "code_citation": "PD 1096 2004 Revised IRR, Section 809"
+  }
+}

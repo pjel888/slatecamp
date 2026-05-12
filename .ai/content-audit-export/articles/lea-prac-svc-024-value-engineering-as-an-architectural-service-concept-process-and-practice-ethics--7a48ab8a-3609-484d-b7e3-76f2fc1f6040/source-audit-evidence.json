@@ -1,0 +1,184 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "artifact_type": "article_source_audit",
+  "batch_id": "source-audited-article-batch-036-local-first",
+  "audit_date": "2026-05-11",
+  "audited_at": "2026-05-11T12:45:00+08:00",
+  "target": {
+    "article_id": "7a48ab8a-3609-484d-b7e3-76f2fc1f6040",
+    "slug": "lea-prac-svc-024-value-engineering-as-an-architectural-service-concept-process-and-practice-ethics",
+    "candidate_sha256": "sha256:0e903f57e62c8bde1cccb6f27a500dec9155865aaa2d6b7d274d4dfb37784ea2",
+    "normalized_sha256": "sha256:0e903f57e62c8bde1cccb6f27a500dec9155865aaa2d6b7d274d4dfb37784ea2"
+  },
+  "classification": {
+    "requires_raw_pdf_audit": true,
+    "source_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
+    "derivative_layer_role": "locator aid only",
+    "legal_or_code_sensitive": true
+  },
+  "paths": {
+    "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-024-value-engineering-as-an-architectural-service-concept-process-and-practice-ethics--7a48ab8a-3609-484d-b7e3-76f2fc1f6040",
+    "normalized_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-024-value-engineering-as-an-architectural-service-concept-process-and-practice-ethics--7a48ab8a-3609-484d-b7e3-76f2fc1f6040/normalized.md",
+    "candidate_md": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-024-value-engineering-as-an-architectural-service-concept-process-and-practice-ethics--7a48ab8a-3609-484d-b7e3-76f2fc1f6040/candidate.md",
+    "sources_json": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-024-value-engineering-as-an-architectural-service-concept-process-and-practice-ethics--7a48ab8a-3609-484d-b7e3-76f2fc1f6040/sources.json",
+    "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-024-value-engineering-as-an-architectural-service-concept-process-and-practice-ethics--7a48ab8a-3609-484d-b7e3-76f2fc1f6040/question-edits"
+  },
+  "raw_sources": [
+    {
+      "source_id": "construction-project-management-handbook-shadan-fleming-local",
+      "label": "Construction Project Management Handbook by Shadan and Fleming",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Construction Project Management Handbook by Shadan _ Fleming.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/004-Technology/Construction Project Management Handbook by Shadan _ Fleming.pdf",
+      "raw_pdf_sha256": "sha256:01dd25a5de726377eb53bafb502127a806cc007ffc05e8dad745479b0ad6ad17",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Construction Project Management Handbook by Shadan _ Fleming.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Construction Project Management Handbook by Shadan _ Fleming.md",
+      "refined_markdown_sha256": "sha256:9d7f7c772d1efcce9db4c8f1e59cc5d19711cd99448799ae6ce783ebb6b78c77",
+      "source_locator": "Construction Project Management Handbook refined markdown lines 253-257, 287-301, 387-429, 1544-1577, 1614-1664, 1680-1722, 1808-1819",
+      "checked_markdown_lines": [
+        "Construction Project Management Handbook refined markdown lines 253-257",
+        "Construction Project Management Handbook refined markdown lines 287-301",
+        "Construction Project Management Handbook refined markdown lines 387-429",
+        "Construction Project Management Handbook refined markdown lines 1544-1577",
+        "Construction Project Management Handbook refined markdown lines 1614-1664",
+        "Construction Project Management Handbook refined markdown lines 1680-1722",
+        "Construction Project Management Handbook refined markdown lines 1808-1819"
+      ]
+    },
+    {
+      "source_id": "uap-document-401-402-local",
+      "label": "UAP Document 401-402 - Architect-Owner Agreement",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+      "raw_pdf_sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
+      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
+      "refined_markdown_sha256": "sha256:ea7f84c966467b46fe9058778d4f9a0821db94a5dbc0a4fb02a2cfd69e215d05",
+      "source_locator": "UAP Document 401-402 refined markdown lines 45-72, 77-89, 105-119",
+      "checked_markdown_lines": [
+        "UAP Document 401-402 refined markdown lines 45-72",
+        "UAP Document 401-402 refined markdown lines 77-89",
+        "UAP Document 401-402 refined markdown lines 105-119"
+      ]
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "construction-project-management-handbook-shadan-fleming-local",
+      "label": "Construction Project Management Handbook by Shadan and Fleming",
+      "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/004-Technology/Construction Project Management Handbook by Shadan _ Fleming.pdf",
+      "raw_pdf_sha256": "sha256:01dd25a5de726377eb53bafb502127a806cc007ffc05e8dad745479b0ad6ad17",
+      "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Construction Project Management Handbook by Shadan _ Fleming.md",
+      "refined_markdown_sha256": "sha256:9d7f7c772d1efcce9db4c8f1e59cc5d19711cd99448799ae6ce783ebb6b78c77",
+      "checked_markdown_lines": [
+        "Construction Project Management Handbook refined markdown lines 253-257",
+        "Construction Project Management Handbook refined markdown lines 287-301",
+        "Construction Project Management Handbook refined markdown lines 387-429",
+        "Construction Project Management Handbook refined markdown lines 1544-1577",
+        "Construction Project Management Handbook refined markdown lines 1614-1664",
+        "Construction Project Management Handbook refined markdown lines 1680-1722",
+        "Construction Project Management Handbook refined markdown lines 1808-1819"
+      ]
+    },
+    {
+      "source_id": "uap-document-401-402-local",
+      "label": "UAP Document 401-402 - Architect-Owner Agreement",
+      "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+      "raw_pdf_sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+      "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
+      "refined_markdown_sha256": "sha256:ea7f84c966467b46fe9058778d4f9a0821db94a5dbc0a4fb02a2cfd69e215d05",
+      "checked_markdown_lines": [
+        "UAP Document 401-402 refined markdown lines 45-72",
+        "UAP Document 401-402 refined markdown lines 77-89",
+        "UAP Document 401-402 refined markdown lines 105-119"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "cpm-ve-definition",
+      "claim_text": "Value Engineering is a systematic, multidisciplined approach that optimizes value for each dollar spent.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "construction-project-management-handbook-shadan-fleming-local",
+          "uap-document-401-402-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/004-Technology/Construction Project Management Handbook by Shadan _ Fleming.pdf",
+        "quoted_pdf_excerpt": "Value Engineering is a systematic, multidisciplined approach that optimizes value for each dollar spent.",
+        "locator": "Construction Project Management Handbook refined markdown lines 1650-1656"
+      }
+    },
+    {
+      "claim_id": "cpm-ve-timing",
+      "claim_text": "VE should be performed early, at or near the end of preliminary design or before 30 percent design, before major decisions are completely incorporated.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "construction-project-management-handbook-shadan-fleming-local",
+          "uap-document-401-402-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/004-Technology/Construction Project Management Handbook by Shadan _ Fleming.pdf",
+        "quoted_pdf_excerpt": "VE should be performed early, at or near the end of preliminary design or before 30 percent design, before major decisions are completely incorporated.",
+        "locator": "Construction Project Management Handbook refined markdown lines 1658-1664"
+      }
+    },
+    {
+      "claim_id": "cpm-ve-response",
+      "claim_text": "The final VE response report should identify accepted proposals with revised costs and rejected proposals with reasons.",
+      "audit_result": "PASS",
+      "source_support": {
+        "source_ids": [
+          "construction-project-management-handbook-shadan-fleming-local",
+          "uap-document-401-402-local"
+        ],
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/004-Technology/Construction Project Management Handbook by Shadan _ Fleming.pdf",
+        "quoted_pdf_excerpt": "The final VE response report should identify accepted proposals with revised costs and rejected proposals with reasons.",
+        "locator": "Construction Project Management Handbook refined markdown lines 1680-1684"
+      }
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "removed_or_rewritten_material": [
+    "Removed or rewrote unsupported imported comparisons, generated placeholders, broad practice claims, and stale source labels not grounded in the local raw PDFs for this batch."
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_pdf_families_checked": [
+      "Construction Project Management Handbook by Shadan and Fleming",
+      "UAP Document 401-402 - Architect-Owner Agreement"
+    ]
+  },
+  "gate_results": {
+    "placeholders_removed_or_resolved": true,
+    "internal_notes_removed": true,
+    "unsupported_claims_removed": true,
+    "sources_json_updated": true,
+    "question_edits_created": true
+  },
+  "source_safe_repair": {
+    "performed": true,
+    "repair_notes": "Local-first article and question repairs were limited to claims supported by the listed raw PDFs and locator-checked refined markdown."
+  },
+  "local_validation": {
+    "compose": "PASS",
+    "diff": "PASS",
+    "validate": "PASS",
+    "ui_block_edits": "PASS",
+    "scoped_checks": "PASS",
+    "targeted_tests": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "sme_review": {
+    "required": false,
+    "status": "PASS",
+    "rationale": "Batch is local-first source-audited repair; final publishing review remains separate."
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "blockers": []
+  }
+}

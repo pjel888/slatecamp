@@ -1,7 +1,7 @@
 # Live-Push Freeze Note
 
-**Generated:** 2026-05-03  
-**Status:** FROZEN — awaiting explicit user authorization  
+**Generated:** 2026-05-03
+**Status:** FROZEN — awaiting explicit user authorization
 
 ---
 

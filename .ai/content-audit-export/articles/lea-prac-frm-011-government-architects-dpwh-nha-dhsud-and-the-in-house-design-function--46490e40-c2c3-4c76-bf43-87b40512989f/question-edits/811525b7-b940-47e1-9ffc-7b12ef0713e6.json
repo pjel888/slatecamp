@@ -1,0 +1,32 @@
+{
+  "question_id": "811525b7-b940-47e1-9ffc-7b12ef0713e6",
+  "baseline_hash": "sha256:917c26479384c0d9d20353be8441158633fe5c030a81c41f0d113c7b10b6c06c",
+  "reason": "Batch 003 source audit replaced unsupported agency/mandate and procurement assertions with source-backed RA 9266, Civil Code Article 1723, RA 9184, RA 7160/COA, RA 11201, and EO 90 framing.",
+  "approved_by": "codex-local-source-audit-batch-003",
+  "approved_at": "2026-05-10T18:00:00+08:00",
+  "proposed": {
+    "text": "For a government-funded architectural project, what audit-safe documentation posture should the architect maintain?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep only cost estimates because COA review is purely financial"
+      },
+      {
+        "id": "b",
+        "text": "Keep traceable procurement, payment, change, approval, and technical records that support legality, propriety, economy, and accountability"
+      },
+      {
+        "id": "c",
+        "text": "Keep no design records once the Building Official approves the permit"
+      },
+      {
+        "id": "d",
+        "text": "Keep only meeting minutes because RA 9266 replaces audit rules"
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": "Government-funded projects need records that support legality, propriety, economy, accountability, and traceability. Do not overstate COA as a design-review board.",
+    "explanation": "RA 9184 supplies transparency/accountability policy for procurement; RA 7160 accounting and audit provisions support legality/propriety and COA access where LGU funds are involved.",
+    "code_citation": "RA 9184 procurement policy; RA 7160 local accounting, disbursement, and COA access provisions"
+  }
+}

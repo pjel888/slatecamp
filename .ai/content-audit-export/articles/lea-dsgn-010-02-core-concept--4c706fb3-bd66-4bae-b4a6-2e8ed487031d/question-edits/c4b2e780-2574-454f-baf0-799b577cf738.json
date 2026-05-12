@@ -1,0 +1,32 @@
+{
+  "question_id": "c4b2e780-2574-454f-baf0-799b577cf738",
+  "baseline_hash": "sha256:01a446cb9489a891ed200b738edd33e66c34ed80b45b63f32c9340597013b620",
+  "reason": "Batch 003 source audit removed unsupported parking-structure geometry locators. PD 1096 Rule VII supports slot/loading sizes and plan indication; BP 344 supports accessible parking details. Rule XIX, Section 803, and Section 904 are not parking geometry locators.",
+  "approved_by": "codex-local-source-audit-batch-003",
+  "approved_at": "2026-05-10T18:00:00+08:00",
+  "proposed": {
+    "text": "Under PD 1096 Rule VII, what is the source-backed parking/loading slot size for a standard truck or bus?",
+    "options": [
+      {
+        "id": "a",
+        "text": "2.15 m x 6.00 m"
+      },
+      {
+        "id": "b",
+        "text": "2.50 m x 5.00 m"
+      },
+      {
+        "id": "c",
+        "text": "3.60 m x 12.00 m"
+      },
+      {
+        "id": "d",
+        "text": "3.60 m x 18.00 m"
+      }
+    ],
+    "correct_option_id": "c",
+    "rationale": "PD 1096 Rule VII supports 3.60 m x 12.00 m for standard truck or bus parking/loading slots.",
+    "explanation": "The old module-width question was not locally source-supported.",
+    "code_citation": "PD 1096 2004 Revised IRR, Rule VII parking/loading slot requirements"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "question_id": "fa2fecb1-8863-4366-ab64-ff53b5693dc5",
+  "baseline_hash": "sha256:5602af4cd034ca511cf9a0c5fcb4cf23052754445e26a3f75e31db274f1d8e62",
+  "action": "replace",
+  "reason": "source-audited-article-batch-020-local-first rewrote the question to match only locally checked source evidence.",
+  "approved_by": "codex-local-source-audit-batch-020",
+  "approved_at": "2026-05-10T16:41:51.472Z",
+  "source_audit_support": {
+    "parent_article_id": "e37575ae-c640-4ddc-911a-7553f338b981",
+    "parent_article_slug": "lea-prac-svc-025-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "checked_sources": [
+      {
+        "source_id": "spp-203-uap-local-raw-pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+        "raw_pdf_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 101-117; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 121-150; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md lines 228-231"
+      }
+    ],
+    "local_source_safe_action": "Replaced the prior item with a source-bounded MCQ using only checked SPP source lines."
+  },
+  "proposed": {
+    "text": "A question asks whether Architectural Interiors is part of SPP 203 specialized architectural services. What is the source-safe answer?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Yes, it is listed as a specialized architectural service."
+      },
+      {
+        "id": "b",
+        "text": "No, it is only a construction bond requirement."
+      },
+      {
+        "id": "c",
+        "text": "No, it is only an ADC secretariat role."
+      },
+      {
+        "id": "d",
+        "text": "No, it is only a post-occupancy permit."
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": "The checked SPP 203 list includes Architectural Interiors.",
+    "explanation": "The checked SPP 203 list includes Architectural Interiors.",
+    "code_citation": "SPP Document 203",
+    "bloom_level": "remember",
+    "application_context": "professional_practice",
+    "practice_context": [
+      "SPP Document 203",
+      "Architectural Interiors under SPP 203"
+    ],
+    "difficulty": 0.45,
+    "is_assessment": false,
+    "model_id": "BATCH-020-lea-prac-svc-025-core-concept-009"
+  }
+}

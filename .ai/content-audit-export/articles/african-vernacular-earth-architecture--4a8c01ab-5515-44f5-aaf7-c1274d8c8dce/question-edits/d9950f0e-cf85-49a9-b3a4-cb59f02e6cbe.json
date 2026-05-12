@@ -1,0 +1,67 @@
+{
+  "question_id": "d9950f0e-cf85-49a9-b3a4-cb59f02e6cbe",
+  "baseline_hash": "sha256:958a4e3741fae2cc72839f4b17539284110c3fdd7ef6b0116bf93907f94d7650",
+  "action": "replace",
+  "reason": "source-audited-article-batch-054-local-first: local raw PDF backed replacement constrained to checked Batch 054 source families.",
+  "approved_by": "codex-local-first-batch-054",
+  "approved_at": "2026-05-11T19:22:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+    "parent_article_slug": "african-vernacular-earth-architecture",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "George Salvan Architectural Character refined markdown lines 479-487 and 4931-4935; history refined markdown line 177",
+    "checked_markdown_lines": [
+      "George Salvan Architectural Character refined markdown lines 479-487",
+      "George Salvan Architectural Character refined markdown lines 4931-4935",
+      "history refined markdown line 177"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "salvan-character-local-raw-pdf--b054-4a8c01ab-01",
+        "label": "George Salvan Architectural Character and the History of Architecture - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Character and the History of Architecture.pdf",
+        "sha256": "sha256:55c4fa2d43bbfd27cffb86d0aac4ad960032e178e1e25c29d4eb351297bfc069",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Character and the History of Architecture.md",
+        "refined_markdown_sha256": "sha256:be8e760bef8f7ceb573742d996dabb202f0353e19b4ab9283ec2de7dfc1fccea",
+        "locator": "George Salvan Architectural Character refined markdown lines 479-487 and 4931-4935"
+      },
+      {
+        "source_id": "history-local-raw-pdf--b054-4a8c01ab-02",
+        "label": "history - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/history.pdf",
+        "sha256": "sha256:7fc1e6e6a8433afecc676c9037a96172f02489985033931ea1606f29557b7d18",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/history.md",
+        "refined_markdown_sha256": "sha256:9a0ef73aa09f9ebcb61002014c6a1157bf1c7d6123f835ecf87bc4ac9374b0ce",
+        "locator": "history refined markdown line 177"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 054 checked local raw PDF source scope."
+  },
+  "proposed": {
+    "text": "Which market term appears in the checked Islamic vernacular source?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bazaar or suq."
+      },
+      {
+        "id": "b",
+        "text": "Agora with Doric stoa."
+      },
+      {
+        "id": "c",
+        "text": "Chinampa farm grid."
+      },
+      {
+        "id": "d",
+        "text": "Piano nobile."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Bazaar or suq. This answer is supported by the checked Batch 054 local raw PDF source families for African Vernacular Earth Architecture.",
+    "explanation": "Bazaar or suq. The Batch 054 source audit used local raw PDFs first and refined markdown only as locator evidence for African Vernacular Earth Architecture.",
+    "code_citation": "George Salvan Architectural Character refined markdown lines 4931-4935"
+  },
+  "batch_question_template_index": 3
+}

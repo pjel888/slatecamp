@@ -1,0 +1,57 @@
+{
+  "question_id": "5c99d000-6567-4f0a-943f-0022135d1d4e",
+  "baseline_hash": "sha256:a4d947c260dd6b207dcdcf95c28031810639a84bef9309c35bd2c9a5374fc3ed",
+  "action": "replace",
+  "reason": "source-audited-article-batch-031-local-first aligned linked question with audited local source language for lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role.",
+  "approved_by": "codex-local-source-audit-batch-031",
+  "approved_at": "2026-05-11T08:56:01+08:00",
+  "source_audit_support": {
+    "parent_article_id": "332b32e5-1890-4765-a7b3-317790804247",
+    "parent_article_slug": "lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "SPP 201 lines 254, 268-324, 328-330, 437-447",
+    "checked_sources": [
+      {
+        "source_id": "uap-spp-201-predesign-services-local",
+        "label": "UAP SPP 201 - Pre-design Services",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+        "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+        "refined_markdown_sha256": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
+        "source_locator": "SPP 201 refined markdown lines 254, 268-324, 328-330, 437-447",
+        "checked_markdown_lines": [
+          "SPP 201 refined markdown lines 254, 268-324, 328-330, 437-447"
+        ]
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer key, rationale, explanation, and code citation rewritten to the audited local article scope."
+  },
+  "proposed": {
+    "text": "What is architectural research in SPP 201 used for?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Primary and secondary research assembled as a basis for conclusions"
+      },
+      {
+        "id": "b",
+        "text": "A substitute for the construction contract"
+      },
+      {
+        "id": "c",
+        "text": "A fixed design style requirement"
+      },
+      {
+        "id": "d",
+        "text": "A final occupancy permit"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "SPP 201 describes architectural research as primary and secondary research used as a basis for conclusions.",
+    "explanation": "SPP 201 describes architectural research as primary and secondary research used as a basis for conclusions.",
+    "code_citation": "SPP 201 lines 254, 268-324, 328-330, 437-447"
+  }
+}

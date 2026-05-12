@@ -1,0 +1,81 @@
+{
+  "question_id": "b9b29db1-bf27-4904-8023-94b38ce41b49",
+  "baseline_hash": "sha256:dc5d4de56ae145849fc5aec019e9a7541938a9eaf6fbfd4853f81d7cc8ce714d",
+  "action": "replace",
+  "reason": "source-audited-article-batch-056-local-first: local raw PDF backed replacement constrained to checked Batch 056 source families.",
+  "approved_by": "codex-local-first-batch-056",
+  "approved_at": "2026-05-11T19:52:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "08829ae6-7e66-41ed-a5f9-40135b4dfc3e",
+    "parent_article_slug": "lea-theo-001-08-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "George Salvan Architectural Theories of Design refined markdown line 73; George Salvan Architectural Theories of Design refined markdown line 175; George Salvan Architectural Theories of Design refined markdown line 462; George Salvan Architectural Theories of Design refined markdown lines 5467 and 5743; TOA 1 Intro to Theory refined markdown lines 46-48; TOA 1 Intro to Theory refined markdown lines 177-188; theory refined markdown line 217; theory refined markdown lines 257-260",
+    "checked_markdown_lines": [
+      "George Salvan Architectural Theories of Design refined markdown line 73",
+      "George Salvan Architectural Theories of Design refined markdown line 175",
+      "George Salvan Architectural Theories of Design refined markdown line 462",
+      "George Salvan Architectural Theories of Design refined markdown lines 5467 and 5743",
+      "TOA 1 Intro to Theory refined markdown lines 46-48",
+      "TOA 1 Intro to Theory refined markdown lines 177-188",
+      "theory refined markdown line 217",
+      "theory refined markdown lines 257-260"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "salvan-theory-local-raw-pdf--b056-08829ae6-01",
+        "label": "George Salvan Architectural Theories of Design - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
+        "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
+        "locator": "George Salvan Architectural Theories of Design refined markdown lines 73, 175, 462, and 5467-5743"
+      },
+      {
+        "source_id": "toa1-intro-local-raw-pdf--b056-08829ae6-02",
+        "label": "TOA 1 Intro to Theory - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 1 (Intro to Theory).pdf",
+        "sha256": "sha256:17ee07310eaf7fbd71aeb3cb3b57a6ffb623e2b8b1957543d74b706a5184d0e0",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 1 (Intro to Theory).md",
+        "refined_markdown_sha256": "sha256:fc665ed41ea62ddb69c88ba02c7b92628481ba6792a075bc21694ca072b150d6",
+        "locator": "TOA 1 Intro to Theory refined markdown lines 46-48 and 177-188"
+      },
+      {
+        "source_id": "theory-local-raw-pdf--b056-08829ae6-03",
+        "label": "theory - local raw PDF",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
+        "sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
+        "refined_markdown_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
+        "locator": "theory refined markdown lines 217 and 257-260"
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 056 checked local raw PDF source scope."
+  },
+  "proposed": {
+    "text": "Which theory keyword is source-backed for factoring cultural variations and contextual realities?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Critical regionalism."
+      },
+      {
+        "id": "b",
+        "text": "Social overcrowding."
+      },
+      {
+        "id": "c",
+        "text": "Mechanical scale."
+      },
+      {
+        "id": "d",
+        "text": "Additive transformation."
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Critical regionalism. This answer is supported by the checked Batch 056 local raw PDF source families for Architecture and cultural identity are inseparable.",
+    "explanation": "Critical regionalism. The Batch 056 source audit used local raw PDFs first and refined markdown only as locator evidence for Architecture and cultural identity are inseparable.",
+    "code_citation": "theory refined markdown lines 257-260"
+  },
+  "batch_question_template_index": 5
+}

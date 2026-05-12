@@ -194,7 +194,7 @@ interface DevStore {
   impersonatedTier: UserTier | null
   impersonatedOrgId: string | null     // For educational/corporate context
   featureOverrides: Record<string, boolean>
-  
+
   // Actions
   impersonateAs: (role: UserRole, tier: UserTier, orgId?: string) => void
   stopImpersonating: () => void
@@ -208,7 +208,7 @@ interface DevStore {
 function useUserRole(): UserRole {
   const realRole = useRealUserRole()  // From Supabase auth
   const devStore = useDevStore()
-  
+
   if (process.env.NODE_ENV === 'development' && devStore.isImpersonating) {
     return devStore.impersonatedRole!
   }

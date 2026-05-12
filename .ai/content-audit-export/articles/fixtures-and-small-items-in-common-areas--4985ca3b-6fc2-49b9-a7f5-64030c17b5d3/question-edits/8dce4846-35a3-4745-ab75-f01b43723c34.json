@@ -1,0 +1,50 @@
+{
+  "question_id": "8dce4846-35a3-4745-ab75-f01b43723c34",
+  "baseline_hash": "sha256:4e9095bdc1aa1b907281acda5827619a6e240f7dba49a68b60e1a8180401fb79",
+  "action": "replace",
+  "reason": "source-audited-article-batch-036-local-first: source-safe replacement grounded in local raw PDF/source family evidence; removes unsupported, stale, or non-local-source framing where present.",
+  "approved_by": "codex-local-first-batch-036",
+  "approved_at": "2026-05-11T12:45:00+08:00",
+  "source_audit_support": {
+    "batch_id": "source-audited-article-batch-036-local-first",
+    "checked_sources": [
+      {
+        "source_id": "bp-344-2024-revised-irr-ncda-local",
+        "label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "raw_pdf_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "checked_markdown_lines": [
+          "BP 344 2024 Revised IRR refined markdown lines 1090-1135",
+          "BP 344 2024 Revised IRR refined markdown lines 1296-1306",
+          "BP 344 2024 Revised IRR refined markdown lines 1493-1514"
+        ]
+      }
+    ],
+    "citation": "BP 344 2024 Revised IRR, Public Telephones"
+  },
+  "proposed": {
+    "text": "Under BP 344 2024 Revised IRR, what clear space is required in front of accessible public telephones?",
+    "options": [
+      {
+        "id": "b036-4985-01-a",
+        "text": "1800 mm by 1800 mm clear unobstructed space"
+      },
+      {
+        "id": "b036-4985-01-b",
+        "text": "1500 mm by 1500 mm clear unobstructed space"
+      },
+      {
+        "id": "b036-4985-01-c",
+        "text": "900 mm by 1200 mm clear floor space"
+      },
+      {
+        "id": "b036-4985-01-d",
+        "text": "750 mm by 1200 mm approach space"
+      }
+    ],
+    "correct_option_id": "b036-4985-01-a",
+    "rationale": "Correct answer: 1800 mm by 1800 mm clear unobstructed space. This is directly supported by BP 344 2024 Revised IRR, Public Telephones.",
+    "explanation": "The source-audited correction uses only the local raw PDF family and locator-checked refined markdown for BP 344 2024 Revised IRR, Public Telephones.",
+    "code_citation": "BP 344 2024 Revised IRR, Public Telephones"
+  }
+}

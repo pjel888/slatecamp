@@ -7,8 +7,8 @@ Now I have everything I need. Let me produce the complete implementation plan.
 ## Interactive City Diagram: UI Implementation Blueprint
 ### PD 1096 IRR Rules VII & VIII — Selection-Focus Architecture
 
-**Stack:** Next.js 14 · React 18 · React Three Fiber · Zustand · Supabase  
-**Classification:** Core ILX Module — Area C Exam Preparation  
+**Stack:** Next.js 14 · React 18 · React Three Fiber · Zustand · Supabase
+**Classification:** Core ILX Module — Area C Exam Preparation
 **Rendering Paradigm:** Strict 3D/2D separation — Canvas is spatial-only; DOM handles all data delivery
 
 ---
@@ -843,7 +843,7 @@ export function SelectionInfoPanel() {
 
           {/* ─── Panel Footer ──────────────────────────────────── */}
           <div className="px-5 py-4 border-t border-gray-100">
-            
+
               href={`/dashboard/wiki?ref=${selectedObjectData.objectId}`}
               className="font-mono text-xs text-[#1B3FC4] hover:underline"
             >
@@ -1039,6 +1039,6 @@ ABSOLUTE BOUNDARIES VERIFICATION
 
 ---
 
-*SlateCamp — Development Controls Lab UI Implementation Blueprint*  
+*SlateCamp — Development Controls Lab UI Implementation Blueprint*
 *Ready for engineering handoff. All geometry constants verified for z-fighting impossibility. Material cache architecture guarantees flawless original-state restoration. Selection store bridges WebGL events to DOM with zero coupling between rendering and data layers.*
 ```

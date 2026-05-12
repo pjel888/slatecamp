@@ -307,7 +307,7 @@ interface ReadinessScoreRingProps {
 // Empty: N/A — score always has a value after diagnostic
 // Error: Fallback text "Score unavailable — try refreshing"
 
-// 'use client': YES — uses useEffect for ring animation, 
+// 'use client': YES — uses useEffect for ring animation,
 // useRef for SVG circumference calculation
 
 // Accessibility:
@@ -322,7 +322,7 @@ interface ReadinessScoreRingProps {
 //   strong/green: text-[#1B7A3C] (Signal Green)
 //   amber: text-foreground (neutral — NOT amber/gold)
 //   needs-review: text-muted-foreground (gray — NEVER red)
-// - Delta: text-[#F5A623] (Signal Gold) for positive, 
+// - Delta: text-[#F5A623] (Signal Gold) for positive,
 //          text-muted-foreground for negative/zero
 // - Ring animation: CSS transition-all duration-1000 ease-out
 //   on strokeDashoffset
@@ -352,7 +352,7 @@ interface HeatmapNodeProps {
 // unexplored:  fill transparent, dashed border, muted
 
 // Accessibility:
-// - aria-label: "{topicName}: {stateLabel}" 
+// - aria-label: "{topicName}: {stateLabel}"
 //   e.g., "Foundation Design: Needs review"
 // - role="button" when onClick is provided
 // - Keyboard: Enter/Space triggers onClick
@@ -403,7 +403,7 @@ interface StatCardProps {
 }
 
 // Design tokens:
-// Eyebrow: font-mono text-[9px] font-medium uppercase tracking-widest 
+// Eyebrow: font-mono text-[9px] font-medium uppercase tracking-widest
 //          text-muted-foreground
 // Title: font-sans font-medium text-sm text-foreground
 // Value: font-mono font-medium tabular-nums text-2xl
@@ -442,7 +442,7 @@ interface TrailDayCardProps {
 // Locked: Muted card, lock icon, "Complete Day {N-1} first"
 
 // Accessibility:
-// - aria-label: "Camp Trail Day {dayNumber}: {topicName}. 
+// - aria-label: "Camp Trail Day {dayNumber}: {topicName}.
 //   {estimatedMinutes} minutes. Status: {status}."
 // - Locked state: aria-disabled="true"
 ```
@@ -482,7 +482,7 @@ interface SessionResultsProps {
 // States:
 // Default: Full results display
 // Loading: Skeleton with score ring placeholder
-// Error: "Results couldn't load. Your session was saved — 
+// Error: "Results couldn't load. Your session was saved —
 //         check your analytics."
 ```
 

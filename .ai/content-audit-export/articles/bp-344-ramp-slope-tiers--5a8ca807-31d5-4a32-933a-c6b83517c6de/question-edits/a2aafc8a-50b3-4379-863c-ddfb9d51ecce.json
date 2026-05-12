@@ -1,26 +1,56 @@
 {
   "question_id": "a2aafc8a-50b3-4379-863c-ddfb9d51ecce",
-  "baseline_hash": "sha256:88110056a8d0f2e0367ccbd1239f9e7e604d9c375418cd31e5e7482487ae5ea2",
-  "status": "proposed_source_audited_local_no_supabase",
-  "reason": "Fixes a typo in the learner-facing question text and adds the exact BP 344 2024 IRR locator for the 100 mm raised-edge value.",
-  "approved_by": "source-audit-local-agent",
-  "approved_at": "2026-05-10T12:40:00+08:00",
+  "action": "replace",
+  "reason": "source-audited-article-batch-033-local-first aligned linked accessibility/code question with audited local BP 344 source language for bp-344-ramp-slope-tiers.",
+  "approved_by": "codex-local-source-audit-batch-033",
+  "approved_at": "2026-05-11T09:27:32+08:00",
   "source_audit_support": {
-    "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
-    "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
-    "pdf_page": 2,
-    "source_locator": "Appendix A, Accessible Ramps, Item 14",
-    "quoted_pdf_excerpt": "Raised edge on both sides of the ramp with a minimum height of 100 mm."
+    "parent_article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+    "parent_article_slug": "bp-344-ramp-slope-tiers",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "BP 344 2024 Revised IRR refined markdown lines 40-70",
+    "checked_sources": [
+      {
+        "source_id": "bp-344-2024-revised-irr-ncda-local",
+        "label": "BP 344 2024 Revised IRR - National Council on Disability Affairs",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+        "source_locator": "BP 344 2024 Revised IRR refined markdown lines 40-70",
+        "checked_markdown_lines": [
+          "BP 344 2024 Revised IRR refined markdown lines 40-70"
+        ]
+      }
+    ],
+    "local_source_safe_action": "Question text, options, answer key, rationale, explanation, and code citation rewritten to the audited local article scope."
   },
   "proposed": {
-    "text": "Under the 2024 BP 344 IRR, what is the minimum height for edge protection curbs on accessible ramps, and what is the rationale for this requirement?",
-    "code_citation": "BP 344 2024 Revised IRR, Appendix A, Accessible Ramps, Item 14, PDF p.2.",
-    "rationale": "The 2024 BP 344 IRR Appendix A accessible-ramp excerpt requires a raised edge on both sides of the ramp with a minimum height of 100 mm. The edge protection helps keep wheels, canes, and other mobility aids from slipping off the ramp edge. The distractors either understate the source value, confuse edge protection with handrail height, or treat edge protection as optional."
-  },
-  "baseline_refresh": {
-    "reason": "Remote Supabase question row differed from stale linked-questions export; refreshed exact baseline hash before dry-run/apply, without changing proposed source-audited fields.",
-    "previous_baseline_hash": "sha256:0805b40b7abac8ef0da4e14b7e8123c0ab2c0298487bd8679ebef692d79df802",
-    "remote_hash_verified_before_apply": "sha256:88110056a8d0f2e0367ccbd1239f9e7e604d9c375418cd31e5e7482487ae5ea2",
-    "verified_at": "2026-05-10T12:58:00+08:00"
+    "text": "What maximum length is listed for the 1:15 ramp condition?",
+    "options": [
+      {
+        "id": "a",
+        "text": "10.50 m"
+      },
+      {
+        "id": "b",
+        "text": "15 m"
+      },
+      {
+        "id": "c",
+        "text": "30 m"
+      },
+      {
+        "id": "d",
+        "text": "1.20 m"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The BP 344 ramp table lists 10.50 m for the 1:15 condition.",
+    "explanation": "The BP 344 ramp table lists 10.50 m for the 1:15 condition.",
+    "code_citation": "BP 344 2024 Revised IRR refined markdown lines 40-70"
   }
 }
