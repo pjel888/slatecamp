@@ -1,0 +1,397 @@
+{
+  "batch_number": "087",
+  "manifest_status": "reserved_pre_start_not_complete",
+  "reserved_at": "2026-05-12T09:55:00+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "branch": "3dlab-gray-viewport-bg",
+  "baseline_commit": "dd531e9df5ce9d8b61d8cd2f9fdfcebc830db806",
+  "selection_rule": "Reserve five unreserved high-value LEA planning/design clusters with linked questions, excluding all article IDs recorded in source-audited Batches 001-086 ledgers, reports, scoped checks, dated blocker/recovery artifacts, and the local-first handoff. Prefer clusters with local raw planning/legal source families; reserve difficult source-family gaps only with blocker-resolution paths.",
+  "inherited_blocker_status": "Batch 086 blockers=0; Batch 087 is reserved only and not complete.",
+  "prior_batch_exclusion_check": {
+    "status": "PASS",
+    "exclusion_source": "Batches 001-086 source-audited ledgers, reports, scoped checks, dated blocker/recovery artifacts, and source-audited-local-first-batches-handoff.md",
+    "excluded_article_id_count": 396,
+    "selected_article_count": 5,
+    "selected_ids_found_in_exclusion_set": []
+  },
+  "selected_article_uuids_slugs": [
+    {
+      "article_id": "50d41d7e-57cd-4280-b850-e6d2f89414a6",
+      "slug": "lea-plan-002-01-core-concept"
+    },
+    {
+      "article_id": "4f38604e-70a2-4b6f-9710-b166fe83cbe6",
+      "slug": "lea-plan-002-02-core-concept"
+    },
+    {
+      "article_id": "1a6a6df8-8f58-42aa-a38b-e59fe737716f",
+      "slug": "lea-plan-002-05-core-concept"
+    },
+    {
+      "article_id": "dbac0a4a-cff7-4cb1-8e66-dcd6fb224283",
+      "slug": "lea-plan-002-07-core-concept"
+    },
+    {
+      "article_id": "f6b1d119-9ba2-436b-ba39-d62abceef5ed",
+      "slug": "lea-plan-005-04-core-concept"
+    }
+  ],
+  "counts": {
+    "selected_articles": 5,
+    "linked_questions_expected": 50,
+    "question_edits_expected": 50
+  },
+  "article_clusters": [
+    {
+      "article_id": "50d41d7e-57cd-4280-b850-e6d2f89414a6",
+      "slug": "lea-plan-002-01-core-concept",
+      "subject": "Planning, Housing & Urban Design",
+      "linked_question_count": 10,
+      "source_count": 10,
+      "existing_source_labels": [
+        "Primary:",
+        "Burgess, E. W. (1925). \"The Growth of the City.\" In The City: Suggestions for Investigation of Human Behavior in the Urban Environment. University of Chicago Press",
+        "Hoyt, H. (1939). The Structure and Growth of Residential Neighborhoods in American Cities. U.S. Federal Housing Administration",
+        "Harris, C. D., & Ullman, E. L. (1945). \"The Nature of Cities.\" Annals of the American Academy of Political and Social Science, 242, 7-17",
+        "Christaller, W. (1933). Die Zentralen Orte in Suddeutschland. (Translated: Central Places in Southern Germany, 1966.)",
+        "Zipf, G. K. (1949). Human Behavior and the Principle of Least Effort. Addison-Wesley",
+        "Jefferson, M. (1939). \"The Law of the Primate City.\" Geographical Review, 29(2), 226-232. Philippine Context:",
+        "Laquian, A. A. (1979). Basic Housing: Policies for Urban Development in the Philippines. PIDS",
+        "THEORY_ATTRIBUTION_GUIDE.md (SlateCamp)",
+        "VERIFIED_REFERENCE.md (SlateCamp)"
+      ],
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6",
+      "linked_questions_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/linked-questions.json",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits",
+      "expected_question_edit_file_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits/e3aeecb6-c72c-4010-9ec4-c77ff7f17422.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits/4ee128a4-3218-4dea-b45d-fca4f6f777fe.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits/0c5fb6b9-1a92-424d-99eb-e98798457031.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits/df8adb14-a0eb-40aa-9485-bb8d12578ec3.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits/819e5bda-4246-4c13-9a76-7acd0f8648d8.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits/474a92bc-e098-45ad-b16e-4b310890bead.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits/796c1c03-ed56-4ffe-b024-7d8948e0ddb9.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits/f25d8b6b-7719-4e66-88b7-f61ba7ef6547.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits/c75eab96-0b69-44cc-9f3d-43fcb3449239.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits/cec9245f-ad6b-48d5-b9c2-472cbccbb0fe.json"
+      ],
+      "source_audit_priority": "blocker-resolution-needed",
+      "blocker_resolution_needed": true,
+      "blocker_resolution_notes": [
+        "Primary urban-model theory labels are not yet represented by exact local raw PDFs. Audit may proceed only after source-family acquisition or after narrowing claims to local planning-guide-backed Philippine application."
+      ]
+    },
+    {
+      "article_id": "4f38604e-70a2-4b6f-9710-b166fe83cbe6",
+      "slug": "lea-plan-002-02-core-concept",
+      "subject": "Planning, Housing & Urban Design",
+      "linked_question_count": 10,
+      "source_count": 10,
+      "existing_source_labels": [
+        "Primary:",
+        "Howard, E. (1898). To-morrow: A Peaceful Path to Real Reform. (Revised as Garden Cities of To-morrow, 1902.) Swan Sonnenschein",
+        "Duany, A., Plater-Zyberk, E., & Speck, J. (2000). Suburban Nation: The Rise of Sprawl and the Decline of the American Dream. North Point Press",
+        "Calthorpe, P. (1993). The Next American Metropolis: Ecology, Community, and the American Dream. Princeton Architectural Press",
+        "Moreno, C. (2020). \"Le droit a la ville en 15 minutes.\" Vie publique / Territoires en transition",
+        "Le Corbusier. (1933). Athens Charter; (1987, English translation). The Athens Charter",
+        "Perroux, F. (1955). \"Note sur la notion de pole de croissance.\" Economie appliquee, 7, 307-320. Philippine Context:",
+        "THEORY_ATTRIBUTION_GUIDE.md (SlateCamp), Part 4",
+        "VERIFIED_REFERENCE.md (SlateCamp), Part 7",
+        "CROSS_REFERENCE_MAP.md (SlateCamp), Section 1 (PAIR-006)"
+      ],
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6",
+      "linked_questions_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/linked-questions.json",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits",
+      "expected_question_edit_file_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits/235f7569-3e57-4260-bf7c-928452bf5479.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits/336402f6-1899-4e9c-8b36-bde4e07d8d4c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits/dc8bb7ae-f790-4533-8bd4-59d5f2091c61.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits/6ebab89d-5143-4659-a0f7-fcf297463b45.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits/50617027-2f64-44e5-9118-dcddb7529163.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits/5a51aace-f447-4b35-9893-aedd60e421cd.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits/68e914a6-f016-4582-833f-1191640e5d02.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits/c12b8f34-f200-4f72-9d8d-fe668b8c6e66.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits/87d9bb79-27be-4628-88dd-da011f7a49f2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits/d4176670-983c-4bae-bced-37fef0d6bd8b.json"
+      ],
+      "source_audit_priority": "blocker-resolution-needed",
+      "blocker_resolution_needed": true,
+      "blocker_resolution_notes": [
+        "Contemporary urban-model theory labels are not yet represented by exact local raw PDFs. Audit may proceed only after source-family acquisition or after narrowing claims to local planning-guide-backed Philippine application."
+      ]
+    },
+    {
+      "article_id": "1a6a6df8-8f58-42aa-a38b-e59fe737716f",
+      "slug": "lea-plan-002-05-core-concept",
+      "subject": "Planning, Housing & Urban Design",
+      "linked_question_count": 10,
+      "source_count": 1,
+      "existing_source_labels": [
+        "Kevin Lynch, The Image of the City (1960); THEORY_ATTRIBUTION_GUIDE.md (verified Lynch definitions); Philippine urban case studies (Manila CBD, Intramuros, BGC wayfinding studies)"
+      ],
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f",
+      "linked_questions_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/linked-questions.json",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/question-edits",
+      "expected_question_edit_file_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/question-edits/162fec39-fb14-4a94-99c9-fd0ffd0448b7.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/question-edits/60889c28-ee6d-4f2c-aeb2-91d0c815c229.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/question-edits/12c2e70c-c8b6-45c0-81e2-bac0bc29ca74.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/question-edits/e24d0d10-5e86-4058-892d-9d395c1cb664.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/question-edits/a5c493f6-588f-4639-851b-dca9710c64ca.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/question-edits/602419cc-c3a9-4702-b5aa-fee1c617168a.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/question-edits/34cd791f-a3a5-46f2-b1a5-99996f07f9f4.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/question-edits/4d7b9926-3a43-459f-bf63-27a0c6fa4fbf.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/question-edits/24247123-2cbc-4e46-be38-b3a0c2795a92.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/question-edits/152fa07a-8165-49dd-b97e-051a50febb81.json"
+      ],
+      "source_audit_priority": "blocker-resolution-needed",
+      "blocker_resolution_needed": true,
+      "blocker_resolution_notes": [
+        "Kevin Lynch primary source is not currently visible in the local raw source layer. Keep only claims grounded in local wayfinding/site-planning sources unless the primary source is acquired locally first."
+      ]
+    },
+    {
+      "article_id": "dbac0a4a-cff7-4cb1-8e66-dcd6fb224283",
+      "slug": "lea-plan-002-07-core-concept",
+      "subject": "Planning, Housing & Urban Design",
+      "linked_question_count": 10,
+      "source_count": 1,
+      "existing_source_labels": [
+        "RA 7160 (CLUP mandate), RA 7279 (housing integration), Philippine urban case studies (Metro Manila, BGC, Laguna, Cavite, Cebu), Felino Palafox Jr. works and publications, DHSUD planning guidelines"
+      ],
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283",
+      "linked_questions_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/linked-questions.json",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/question-edits",
+      "expected_question_edit_file_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/question-edits/11a6f7b4-db33-440d-b94d-deb31dc5363f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/question-edits/95885061-42bf-4aeb-9835-ce3b3e99c71f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/question-edits/e764d8f5-5909-456d-8fb6-5fb027a2ab01.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/question-edits/f3df1648-1823-4ff2-a879-204919d3457d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/question-edits/0688b48b-7611-467e-b590-510e75a7d45d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/question-edits/4a01b852-3aad-432f-827c-4600fce93b6e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/question-edits/92c1adc3-a619-4d92-87c7-b9c177bb3b26.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/question-edits/1ff24db1-eff3-4b3c-9672-c5f83fec4e82.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/question-edits/0b101491-dc2d-4782-9625-027514ede20d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/question-edits/5f721bb3-a7d5-4671-8492-bb0ab0db1d08.json"
+      ],
+      "source_audit_priority": "high",
+      "blocker_resolution_needed": false,
+      "blocker_resolution_notes": []
+    },
+    {
+      "article_id": "f6b1d119-9ba2-436b-ba39-d62abceef5ed",
+      "slug": "lea-plan-005-04-core-concept",
+      "subject": "Planning, Housing & Urban Design",
+      "linked_question_count": 10,
+      "source_count": 1,
+      "existing_source_labels": [
+        "RA 10121 (Philippine Disaster Risk Reduction and Management Act, 2010); Post-Yolanda National Zoning Framework (2014); PHIVOLCS Active Fault Maps; National DRRM Plan"
+      ],
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed",
+      "linked_questions_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/linked-questions.json",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits",
+      "expected_question_edit_file_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits/412a5c9d-4442-42d8-a7f8-587c5355e54b.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits/2ba52cd1-9352-421d-ac3b-29f513929e57.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits/5cd1180c-4cb6-4fb5-963b-cf28f9fc2149.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits/169a96c8-f01e-4a00-97a8-a96b96536e76.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits/54ee072d-60aa-4363-b2d0-4928d0a7f1fa.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits/80463191-02dc-4b84-85b2-8267207f0719.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits/23941221-20b3-4b03-9157-d5687638db39.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits/972bdb07-0df4-4a39-b97d-29db3dcbe46d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits/b07093ca-4877-4435-8004-9bfcd8a5c321.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits/c51a6f2b-6cc0-405a-901d-1a6f66633826.json"
+      ],
+      "source_audit_priority": "blocker-resolution-needed",
+      "blocker_resolution_needed": true,
+      "blocker_resolution_notes": [
+        "RA 10121 and PHIVOLCS source-family files were not found in the current raw-source filename scan. Use local DRR/resilience planning manuals where claims fit; acquire exact RA 10121/PHIVOLCS raw sources before retaining statute/map-specific claims."
+      ]
+    }
+  ],
+  "exact_article_folder_paths": [
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed"
+  ],
+  "exact_question_edits_paths": [
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits"
+  ],
+  "expected_raw_pdf_source_families": [
+    {
+      "family": "HLURB CLUP Guidebook Vol. 1",
+      "status": "existing-local-raw-source",
+      "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/HLURB_CLUP_Guidebook_Vol_1_11042015.pdf",
+      "purpose": "Primary local planning process and CLUP authority/source family",
+      "exists_now": true
+    },
+    {
+      "family": "HLURB CLUP Volume 2",
+      "status": "existing-local-raw-source",
+      "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/HLURB_CLUP_Vol_2.pdf",
+      "purpose": "Planning sector and vulnerability-context checks",
+      "exists_now": true
+    },
+    {
+      "family": "HLURB CLUP GIS Guidebook",
+      "status": "existing-local-raw-source",
+      "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/CLUP GIS GUIDEBOOK HLURB.pdf",
+      "purpose": "GIS/spatial planning and smart-planning locator support",
+      "exists_now": true
+    },
+    {
+      "family": "RPS 2008",
+      "status": "existing-local-raw-source",
+      "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/RPS (2008).pdf",
+      "purpose": "Philippine planning standards cross-check",
+      "exists_now": true
+    },
+    {
+      "family": "Reference Tool on Urban Planning and Design for Climate Resilience",
+      "status": "existing-local-raw-source",
+      "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Reference-Tool-on-Urban-Planning-and-Design-for-Climate-Resilience-for-LGUs-Planning-Actors-in-the-Philippines_readable.pdf",
+      "purpose": "Climate/DRR planning support",
+      "exists_now": true
+    },
+    {
+      "family": "Resilient Urban Design and Development Guidelines",
+      "status": "existing-local-raw-source",
+      "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf",
+      "purpose": "DRR and resilient urban design support",
+      "exists_now": true
+    },
+    {
+      "family": "RA 7160 Local Government Code",
+      "status": "existing-local-raw-source",
+      "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7160/RA 7160 The Local Government Code.pdf",
+      "purpose": "CLUP/LGU planning authority cross-check",
+      "exists_now": true
+    },
+    {
+      "family": "RA 7279 UDHA",
+      "status": "existing-local-raw-source",
+      "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7279/RA 7279 Urban Development and Housing Act 2009.pdf",
+      "purpose": "Housing integration and urban development cross-check",
+      "exists_now": true
+    },
+    {
+      "family": "DepEd DRRR Manual Philippines",
+      "status": "existing-local-raw-source",
+      "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/DEPED/DepEd DRRR Manual Philippines.pdf",
+      "purpose": "Supplemental local DRR context where article claims fit",
+      "exists_now": true
+    },
+    {
+      "family": "RA 10121 Philippine DRRM Act",
+      "status": "blocker-resolution-needed-source-family-not-found-in-current-raw-layer",
+      "recommended_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-10121/RA 10121 Philippine DRRM Act.pdf",
+      "purpose": "Required before retaining statute-specific RA 10121 claims",
+      "reason": "No matching RA 10121 raw PDF found in current filename scan."
+    },
+    {
+      "family": "Kevin Lynch / Image of the City primary source",
+      "status": "blocker-resolution-needed-source-family-not-found-in-current-raw-layer",
+      "recommended_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Kevin Lynch - The Image of the City.pdf",
+      "purpose": "Required before retaining precise Lynch primary-source claims",
+      "reason": "No matching Lynch raw PDF found in current filename scan."
+    }
+  ],
+  "source_audit_priority": {
+    "overall": "mixed_high_and_blocker-resolution-needed",
+    "per_article": [
+      {
+        "article_id": "50d41d7e-57cd-4280-b850-e6d2f89414a6",
+        "slug": "lea-plan-002-01-core-concept",
+        "priority": "blocker-resolution-needed",
+        "blocker_resolution_needed": true,
+        "blocker_resolution_notes": [
+          "Primary urban-model theory labels are not yet represented by exact local raw PDFs. Audit may proceed only after source-family acquisition or after narrowing claims to local planning-guide-backed Philippine application."
+        ]
+      },
+      {
+        "article_id": "4f38604e-70a2-4b6f-9710-b166fe83cbe6",
+        "slug": "lea-plan-002-02-core-concept",
+        "priority": "blocker-resolution-needed",
+        "blocker_resolution_needed": true,
+        "blocker_resolution_notes": [
+          "Contemporary urban-model theory labels are not yet represented by exact local raw PDFs. Audit may proceed only after source-family acquisition or after narrowing claims to local planning-guide-backed Philippine application."
+        ]
+      },
+      {
+        "article_id": "1a6a6df8-8f58-42aa-a38b-e59fe737716f",
+        "slug": "lea-plan-002-05-core-concept",
+        "priority": "blocker-resolution-needed",
+        "blocker_resolution_needed": true,
+        "blocker_resolution_notes": [
+          "Kevin Lynch primary source is not currently visible in the local raw source layer. Keep only claims grounded in local wayfinding/site-planning sources unless the primary source is acquired locally first."
+        ]
+      },
+      {
+        "article_id": "dbac0a4a-cff7-4cb1-8e66-dcd6fb224283",
+        "slug": "lea-plan-002-07-core-concept",
+        "priority": "high",
+        "blocker_resolution_needed": false,
+        "blocker_resolution_notes": []
+      },
+      {
+        "article_id": "f6b1d119-9ba2-436b-ba39-d62abceef5ed",
+        "slug": "lea-plan-005-04-core-concept",
+        "priority": "blocker-resolution-needed",
+        "blocker_resolution_needed": true,
+        "blocker_resolution_notes": [
+          "RA 10121 and PHIVOLCS source-family files were not found in the current raw-source filename scan. Use local DRR/resilience planning manuals where claims fit; acquire exact RA 10121/PHIVOLCS raw sources before retaining statute/map-specific claims."
+        ]
+      }
+    ]
+  },
+  "scenario_enrichment_requirement": {
+    "required": true,
+    "instruction": "Add a Real World Scenario section when source-audited article shape is eligible; otherwise record not-applicable with reason in source-audit evidence and ledger. Scenario enrichment must not override raw-source correctness."
+  },
+  "validation_gates": [
+    "raw-PDF-first audit",
+    "roundtrip protocol",
+    "compose/diff/validate",
+    "UI-block-edit validation",
+    "scoped JSON parse",
+    "placeholder/internal-note/source-gap scans",
+    "source hash checks",
+    "linked-question/question-edit count checks",
+    "stale compose-error scan",
+    "targeted content-audit tests",
+    "scoped git diff --check",
+    "independent reviewer pass",
+    "serial coordinator acceptance",
+    "stage/commit/push after batch acceptance"
+  ],
+  "no_skip_blocker_resolution_policy": {
+    "permanent_skips_allowed": false,
+    "policy": "Difficult articles remain reserved. If an expected source family is missing or extraction is weak, mark blocker-resolution-needed with source families and the recommended path; do not silently replace the article with an easier candidate. Internet may be used only as supplemental discovery, not primary evidence. Primary evidence must be local raw sources under vitruvius-connection/001_Raw-Source-Layer.",
+    "stop_condition": "A batch may be accepted only after all selected article clusters either pass source audit with blockers=0 or have explicit coordinator-approved blocker-resolution notes; do not mark complete while blockers remain."
+  },
+  "allowed_write_scope": {
+    "current_reservation_task": [
+      "/Users/philiplewis/slatecamp/.ai/03_plans/production-line-batch-087-manifest.json",
+      "/Users/philiplewis/slatecamp/.ai/03_plans/source-audited-production-line-coordination.md"
+    ],
+    "future_batch_execution_after_serial_start": [
+      "Selected article folders listed in exact_article_folder_paths only",
+      "Selected question-edit file paths listed under article_clusters[].expected_question_edit_file_paths only",
+      "Batch-specific report, ledger, and scoped-check artifacts under /Users/philiplewis/slatecamp/.ai/content-audit-export only",
+      "Handoff/coordination pre-start or post-batch notes under /Users/philiplewis/slatecamp/.ai/03_plans only"
+    ],
+    "forbidden_now": [
+      "Supabase push/apply",
+      "deploy",
+      "commit",
+      "article content edits during reservation-only task",
+      "question edit mutations during reservation-only task"
+    ]
+  }
+}

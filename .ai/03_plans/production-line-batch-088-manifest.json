@@ -1,0 +1,373 @@
+{
+  "batch_number": "088",
+  "manifest_status": "reserved_pre_start_not_complete",
+  "reserved_at": "2026-05-12T09:55:00+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "branch": "3dlab-gray-viewport-bg",
+  "baseline_commit": "dd531e9df5ce9d8b61d8cd2f9fdfcebc830db806",
+  "selection_rule": "Reserve the next five unreserved high-value LEA design/planning/site-planning clusters with linked questions, excluding all article IDs recorded in source-audited Batches 001-086 and Batch 087 reservation. Prefer local design-process, sitework, open-space, green-building, and building-technology source families; mark exact source gaps as blocker-resolution-needed instead of skipping.",
+  "inherited_blocker_status": "Batch 086 blockers=0 at reservation; Batch 088 execution must wait for Batch 087 serial coordinator acceptance with blockers=0.",
+  "prior_batch_exclusion_check": {
+    "status": "PASS",
+    "exclusion_source": "Batches 001-086 source-audited ledgers, reports, scoped checks, dated blocker/recovery artifacts, and source-audited-local-first-batches-handoff.md",
+    "excluded_article_id_count": 396,
+    "selected_article_count": 5,
+    "selected_ids_found_in_exclusion_set": []
+  },
+  "selected_article_uuids_slugs": [
+    {
+      "article_id": "d2246ae0-2def-4144-b42d-f56172b13f67",
+      "slug": "lea-plan-004-03-what-you-need-to-know-for-the-lea"
+    },
+    {
+      "article_id": "b9ae0f63-0d28-4a66-b2bf-51641e6db739",
+      "slug": "lea-plan-004-04-what-you-need-to-know-for-the-lea"
+    },
+    {
+      "article_id": "f22ba499-94ce-41a3-999a-2d9ffdbc0b57",
+      "slug": "lea-plan-004-05-what-you-need-to-know-for-the-lea"
+    },
+    {
+      "article_id": "e59c8abc-5938-47ab-8009-97424baa78c7",
+      "slug": "lea-plan-005-02-what-you-need-to-know-for-the-lea"
+    },
+    {
+      "article_id": "ba36cb75-5bb4-4d12-802c-f5ab921f7949",
+      "slug": "prefabricated-constructions"
+    }
+  ],
+  "counts": {
+    "selected_articles": 5,
+    "linked_questions_expected": 54,
+    "question_edits_expected": 54
+  },
+  "article_clusters": [
+    {
+      "article_id": "d2246ae0-2def-4144-b42d-f56172b13f67",
+      "slug": "lea-plan-004-03-what-you-need-to-know-for-the-lea",
+      "subject": "Planning, Housing & Urban Design",
+      "linked_question_count": 10,
+      "source_count": 0,
+      "existing_source_labels": [],
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-03-what-you-need-to-know-for-the-lea--d2246ae0-2def-4144-b42d-f56172b13f67",
+      "linked_questions_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-03-what-you-need-to-know-for-the-lea--d2246ae0-2def-4144-b42d-f56172b13f67/linked-questions.json",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-03-what-you-need-to-know-for-the-lea--d2246ae0-2def-4144-b42d-f56172b13f67/question-edits",
+      "expected_question_edit_file_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-03-what-you-need-to-know-for-the-lea--d2246ae0-2def-4144-b42d-f56172b13f67/question-edits/c3e8c399-0340-4898-92d5-157dc4edff59.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-03-what-you-need-to-know-for-the-lea--d2246ae0-2def-4144-b42d-f56172b13f67/question-edits/1fb91500-8524-4972-899e-0cc8e4e7bcaf.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-03-what-you-need-to-know-for-the-lea--d2246ae0-2def-4144-b42d-f56172b13f67/question-edits/7a8bf283-e24e-4a04-a8ba-7acc67f999c2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-03-what-you-need-to-know-for-the-lea--d2246ae0-2def-4144-b42d-f56172b13f67/question-edits/ccae7dcb-3b36-4a2d-bde6-e68b06cbaf05.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-03-what-you-need-to-know-for-the-lea--d2246ae0-2def-4144-b42d-f56172b13f67/question-edits/31c940ca-89eb-4d3e-a062-2ad4d85b5606.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-03-what-you-need-to-know-for-the-lea--d2246ae0-2def-4144-b42d-f56172b13f67/question-edits/c05c5044-4a49-4e34-901a-8ddcde147821.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-03-what-you-need-to-know-for-the-lea--d2246ae0-2def-4144-b42d-f56172b13f67/question-edits/610892cf-0dae-40d9-94f4-98738e7a9c75.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-03-what-you-need-to-know-for-the-lea--d2246ae0-2def-4144-b42d-f56172b13f67/question-edits/7bb1bc9d-10f7-4e1a-9a92-bf7742d94fcd.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-03-what-you-need-to-know-for-the-lea--d2246ae0-2def-4144-b42d-f56172b13f67/question-edits/28c63043-eef8-4df8-8e01-0143be6e9199.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-03-what-you-need-to-know-for-the-lea--d2246ae0-2def-4144-b42d-f56172b13f67/question-edits/a21f4872-7187-4f49-ab80-4e940c190080.json"
+      ],
+      "source_audit_priority": "blocker-resolution-needed",
+      "blocker_resolution_needed": true,
+      "blocker_resolution_notes": [
+        "No current sources.json rows. Build claims from local design-process, open-space, and climate-resilient planning sources; remove or source-acquire any unsupported socio-psychology theory claims."
+      ]
+    },
+    {
+      "article_id": "b9ae0f63-0d28-4a66-b2bf-51641e6db739",
+      "slug": "lea-plan-004-04-what-you-need-to-know-for-the-lea",
+      "subject": "Planning, Housing & Urban Design",
+      "linked_question_count": 10,
+      "source_count": 0,
+      "existing_source_labels": [],
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-04-what-you-need-to-know-for-the-lea--b9ae0f63-0d28-4a66-b2bf-51641e6db739",
+      "linked_questions_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-04-what-you-need-to-know-for-the-lea--b9ae0f63-0d28-4a66-b2bf-51641e6db739/linked-questions.json",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-04-what-you-need-to-know-for-the-lea--b9ae0f63-0d28-4a66-b2bf-51641e6db739/question-edits",
+      "expected_question_edit_file_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-04-what-you-need-to-know-for-the-lea--b9ae0f63-0d28-4a66-b2bf-51641e6db739/question-edits/b9d7f853-fcfa-4667-b320-86fa0cc4b89e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-04-what-you-need-to-know-for-the-lea--b9ae0f63-0d28-4a66-b2bf-51641e6db739/question-edits/a01b3e8f-3f19-47b4-a7b8-36a00d1837dd.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-04-what-you-need-to-know-for-the-lea--b9ae0f63-0d28-4a66-b2bf-51641e6db739/question-edits/63961b23-5f58-4f8b-85ed-9114ddfd63ec.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-04-what-you-need-to-know-for-the-lea--b9ae0f63-0d28-4a66-b2bf-51641e6db739/question-edits/e0e26036-7ea4-4b4d-80f6-79da326f1363.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-04-what-you-need-to-know-for-the-lea--b9ae0f63-0d28-4a66-b2bf-51641e6db739/question-edits/e3b370b3-f9eb-464c-a6d4-e43c6fc76ddf.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-04-what-you-need-to-know-for-the-lea--b9ae0f63-0d28-4a66-b2bf-51641e6db739/question-edits/02a95960-deff-4085-9f7e-f69188de6002.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-04-what-you-need-to-know-for-the-lea--b9ae0f63-0d28-4a66-b2bf-51641e6db739/question-edits/37d1b786-8796-4aa7-8d34-e62b705a2c93.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-04-what-you-need-to-know-for-the-lea--b9ae0f63-0d28-4a66-b2bf-51641e6db739/question-edits/a28d4f8b-71d4-4ecb-a89d-88986ee70b97.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-04-what-you-need-to-know-for-the-lea--b9ae0f63-0d28-4a66-b2bf-51641e6db739/question-edits/b2fca00a-a78a-456c-9141-aebce42927f2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-04-what-you-need-to-know-for-the-lea--b9ae0f63-0d28-4a66-b2bf-51641e6db739/question-edits/916f7115-9905-4a21-aa2c-0b84e094568a.json"
+      ],
+      "source_audit_priority": "blocker-resolution-needed",
+      "blocker_resolution_needed": true,
+      "blocker_resolution_notes": [
+        "No current sources.json rows. Build management claims from local design-process and construction/project-management source families; remove unsupported management generalities."
+      ]
+    },
+    {
+      "article_id": "f22ba499-94ce-41a3-999a-2d9ffdbc0b57",
+      "slug": "lea-plan-004-05-what-you-need-to-know-for-the-lea",
+      "subject": "Planning, Housing & Urban Design",
+      "linked_question_count": 10,
+      "source_count": 0,
+      "existing_source_labels": [],
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-05-what-you-need-to-know-for-the-lea--f22ba499-94ce-41a3-999a-2d9ffdbc0b57",
+      "linked_questions_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-05-what-you-need-to-know-for-the-lea--f22ba499-94ce-41a3-999a-2d9ffdbc0b57/linked-questions.json",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-05-what-you-need-to-know-for-the-lea--f22ba499-94ce-41a3-999a-2d9ffdbc0b57/question-edits",
+      "expected_question_edit_file_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-05-what-you-need-to-know-for-the-lea--f22ba499-94ce-41a3-999a-2d9ffdbc0b57/question-edits/c1634584-4764-46d5-bcf3-3093356cc3fd.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-05-what-you-need-to-know-for-the-lea--f22ba499-94ce-41a3-999a-2d9ffdbc0b57/question-edits/d8266f8a-313e-492e-b4ec-fc54b638dd67.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-05-what-you-need-to-know-for-the-lea--f22ba499-94ce-41a3-999a-2d9ffdbc0b57/question-edits/dad68fd6-72ca-4bcf-859a-c2b3b0280b9d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-05-what-you-need-to-know-for-the-lea--f22ba499-94ce-41a3-999a-2d9ffdbc0b57/question-edits/5e90b67e-a334-4c8c-8f26-c35747a271f2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-05-what-you-need-to-know-for-the-lea--f22ba499-94ce-41a3-999a-2d9ffdbc0b57/question-edits/ad387d69-18f5-4b57-8122-7c4aeb2cbe86.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-05-what-you-need-to-know-for-the-lea--f22ba499-94ce-41a3-999a-2d9ffdbc0b57/question-edits/7e8807ad-f9f3-4ecb-8033-336bc86448fd.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-05-what-you-need-to-know-for-the-lea--f22ba499-94ce-41a3-999a-2d9ffdbc0b57/question-edits/0b4b2339-e783-45a1-ad4b-8fb66490f9a2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-05-what-you-need-to-know-for-the-lea--f22ba499-94ce-41a3-999a-2d9ffdbc0b57/question-edits/c30785c1-2779-4142-ad4c-67baa0bcaba7.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-05-what-you-need-to-know-for-the-lea--f22ba499-94ce-41a3-999a-2d9ffdbc0b57/question-edits/442dd015-9a4f-474f-9179-b9103e973fad.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-05-what-you-need-to-know-for-the-lea--f22ba499-94ce-41a3-999a-2d9ffdbc0b57/question-edits/816db117-f3c7-49d5-8ddc-062c8288121c.json"
+      ],
+      "source_audit_priority": "blocker-resolution-needed",
+      "blocker_resolution_needed": true,
+      "blocker_resolution_notes": [
+        "No current sources.json rows. Build maintenance claims from Good Building Handbook, Building Construction Illustrated, and sitework/local planning families; remove unsupported lifecycle claims."
+      ]
+    },
+    {
+      "article_id": "e59c8abc-5938-47ab-8009-97424baa78c7",
+      "slug": "lea-plan-005-02-what-you-need-to-know-for-the-lea",
+      "subject": "Planning, Housing & Urban Design",
+      "linked_question_count": 10,
+      "source_count": 0,
+      "existing_source_labels": [],
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-02-what-you-need-to-know-for-the-lea--e59c8abc-5938-47ab-8009-97424baa78c7",
+      "linked_questions_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-02-what-you-need-to-know-for-the-lea--e59c8abc-5938-47ab-8009-97424baa78c7/linked-questions.json",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-02-what-you-need-to-know-for-the-lea--e59c8abc-5938-47ab-8009-97424baa78c7/question-edits",
+      "expected_question_edit_file_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-02-what-you-need-to-know-for-the-lea--e59c8abc-5938-47ab-8009-97424baa78c7/question-edits/e19b9c3e-4e10-4e65-aa03-89b682e8090f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-02-what-you-need-to-know-for-the-lea--e59c8abc-5938-47ab-8009-97424baa78c7/question-edits/7734ead8-6601-44ee-ada1-f11845dae0ea.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-02-what-you-need-to-know-for-the-lea--e59c8abc-5938-47ab-8009-97424baa78c7/question-edits/0e28044c-20d3-4ffe-889f-b59ab7ccbf88.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-02-what-you-need-to-know-for-the-lea--e59c8abc-5938-47ab-8009-97424baa78c7/question-edits/6adb27f8-39f1-43ea-9627-a9d06aa955af.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-02-what-you-need-to-know-for-the-lea--e59c8abc-5938-47ab-8009-97424baa78c7/question-edits/6a4deba3-9824-427d-85e4-09dfd634223e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-02-what-you-need-to-know-for-the-lea--e59c8abc-5938-47ab-8009-97424baa78c7/question-edits/ee780da5-104e-4683-86de-d3c92ea9625f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-02-what-you-need-to-know-for-the-lea--e59c8abc-5938-47ab-8009-97424baa78c7/question-edits/9d9ec5e4-b493-4abf-b4eb-e9e5fe6c887b.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-02-what-you-need-to-know-for-the-lea--e59c8abc-5938-47ab-8009-97424baa78c7/question-edits/e7eed1b2-4d28-4ee2-bf85-abda02b11e88.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-02-what-you-need-to-know-for-the-lea--e59c8abc-5938-47ab-8009-97424baa78c7/question-edits/e841e37b-a250-41ab-973f-d7ff3b2a389b.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-02-what-you-need-to-know-for-the-lea--e59c8abc-5938-47ab-8009-97424baa78c7/question-edits/4ab9f3fc-dabd-446a-bca0-506fb581daa0.json"
+      ],
+      "source_audit_priority": "blocker-resolution-needed",
+      "blocker_resolution_needed": true,
+      "blocker_resolution_notes": [
+        "No current sources.json rows and no exact native-species source file found in filename scan. Use open-space/sitework sources for planting/site criteria; acquire an official local native-species source before retaining species-specific claims."
+      ]
+    },
+    {
+      "article_id": "ba36cb75-5bb4-4d12-802c-f5ab921f7949",
+      "slug": "prefabricated-constructions",
+      "subject": "LEA-DSGN - Architectural Design and Site Planning",
+      "linked_question_count": 14,
+      "source_count": 0,
+      "existing_source_labels": [],
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/prefabricated-constructions--ba36cb75-5bb4-4d12-802c-f5ab921f7949",
+      "linked_questions_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/prefabricated-constructions--ba36cb75-5bb4-4d12-802c-f5ab921f7949/linked-questions.json",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/prefabricated-constructions--ba36cb75-5bb4-4d12-802c-f5ab921f7949/question-edits",
+      "expected_question_edit_file_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/prefabricated-constructions--ba36cb75-5bb4-4d12-802c-f5ab921f7949/question-edits/65d73baf-6850-491a-aa2c-6ac69bfe1b2a.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/prefabricated-constructions--ba36cb75-5bb4-4d12-802c-f5ab921f7949/question-edits/aff27d36-142e-47e5-b54b-d8afe16d7915.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/prefabricated-constructions--ba36cb75-5bb4-4d12-802c-f5ab921f7949/question-edits/4bb6024d-1d73-4bff-90bb-1bfa86123602.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/prefabricated-constructions--ba36cb75-5bb4-4d12-802c-f5ab921f7949/question-edits/10423f29-b6c9-47c3-afb5-48a5faeecb54.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/prefabricated-constructions--ba36cb75-5bb4-4d12-802c-f5ab921f7949/question-edits/011b7f8b-2511-4b70-86cb-3d57e72bfe97.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/prefabricated-constructions--ba36cb75-5bb4-4d12-802c-f5ab921f7949/question-edits/a254acd2-18f0-4520-a08e-ba6fccbf77ae.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/prefabricated-constructions--ba36cb75-5bb4-4d12-802c-f5ab921f7949/question-edits/7e6370cf-9e6b-442a-991f-c9bdfabc0557.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/prefabricated-constructions--ba36cb75-5bb4-4d12-802c-f5ab921f7949/question-edits/ee499f3c-1f07-4aee-9ac1-37a2a1fabc61.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/prefabricated-constructions--ba36cb75-5bb4-4d12-802c-f5ab921f7949/question-edits/e5959b12-edd2-4956-9988-061f3525494d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/prefabricated-constructions--ba36cb75-5bb4-4d12-802c-f5ab921f7949/question-edits/88cf885c-df7e-4cb9-a598-9d7271fb5a38.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/prefabricated-constructions--ba36cb75-5bb4-4d12-802c-f5ab921f7949/question-edits/3031ae8a-dcfd-4fb0-ac66-ba324336b205.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/prefabricated-constructions--ba36cb75-5bb4-4d12-802c-f5ab921f7949/question-edits/f7c2dda1-7f12-40f4-9afe-eb50ba706133.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/prefabricated-constructions--ba36cb75-5bb4-4d12-802c-f5ab921f7949/question-edits/a665384f-d93a-4ee7-b69b-9a8f667f1618.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/prefabricated-constructions--ba36cb75-5bb4-4d12-802c-f5ab921f7949/question-edits/c15ec8d0-b82f-4e47-8b53-f75f6531d587.json"
+      ],
+      "source_audit_priority": "high",
+      "blocker_resolution_needed": false,
+      "blocker_resolution_notes": []
+    }
+  ],
+  "exact_article_folder_paths": [
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-03-what-you-need-to-know-for-the-lea--d2246ae0-2def-4144-b42d-f56172b13f67",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-04-what-you-need-to-know-for-the-lea--b9ae0f63-0d28-4a66-b2bf-51641e6db739",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-05-what-you-need-to-know-for-the-lea--f22ba499-94ce-41a3-999a-2d9ffdbc0b57",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-02-what-you-need-to-know-for-the-lea--e59c8abc-5938-47ab-8009-97424baa78c7",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/prefabricated-constructions--ba36cb75-5bb4-4d12-802c-f5ab921f7949"
+  ],
+  "exact_question_edits_paths": [
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-03-what-you-need-to-know-for-the-lea--d2246ae0-2def-4144-b42d-f56172b13f67/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-04-what-you-need-to-know-for-the-lea--b9ae0f63-0d28-4a66-b2bf-51641e6db739/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-05-what-you-need-to-know-for-the-lea--f22ba499-94ce-41a3-999a-2d9ffdbc0b57/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-02-what-you-need-to-know-for-the-lea--e59c8abc-5938-47ab-8009-97424baa78c7/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/prefabricated-constructions--ba36cb75-5bb4-4d12-802c-f5ab921f7949/question-edits"
+  ],
+  "expected_raw_pdf_source_families": [
+    {
+      "family": "Design Process",
+      "status": "existing-local-raw-source",
+      "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
+      "purpose": "Design/site-planning process support",
+      "exists_now": true
+    },
+    {
+      "family": "Sitework Lecture",
+      "status": "existing-local-raw-source",
+      "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/004-Technology/Sitework Lecture.pdf",
+      "purpose": "Site criteria, grading, planting, and sitework support",
+      "exists_now": true
+    },
+    {
+      "family": "Building Technology - Siteworks",
+      "status": "existing-local-raw-source",
+      "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Technology - Siteworks.pdf",
+      "purpose": "Sitework and construction-site support",
+      "exists_now": true
+    },
+    {
+      "family": "Open Space Development Guidelines",
+      "status": "existing-local-raw-source",
+      "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Open Space Development Guidelines.pdf",
+      "purpose": "Open-space and landscape planning support",
+      "exists_now": true
+    },
+    {
+      "family": "PD 1216 Open Space Requirements",
+      "status": "existing-local-raw-source",
+      "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1216/PD 1216 - Open Space Requirements in Subdivisions.pdf",
+      "purpose": "Subdivision/open-space statutory support",
+      "exists_now": true
+    },
+    {
+      "family": "Good Building Handbook in the PH",
+      "status": "existing-local-raw-source",
+      "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/004-Technology/Good Building Handbook in the PH.pdf",
+      "purpose": "Maintenance and buildability support",
+      "exists_now": true
+    },
+    {
+      "family": "Building Construction Illustrated 5th Edition",
+      "status": "existing-local-raw-source",
+      "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+      "purpose": "Prefabrication/construction systems support",
+      "exists_now": true
+    },
+    {
+      "family": "Building Construction Handbook 7th Ed by Chudley and Greeno",
+      "status": "existing-local-raw-source",
+      "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf",
+      "purpose": "Prefabrication/construction management support",
+      "exists_now": true
+    },
+    {
+      "family": "Construction Project Management Handbook",
+      "status": "existing-local-raw-source",
+      "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/004-Technology/Construction Project Management Handbook by Shadan _ Fleming.pdf",
+      "purpose": "Management and coordination support",
+      "exists_now": true
+    },
+    {
+      "family": "Green Building Illustrated",
+      "status": "existing-local-raw-source",
+      "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/004-Technology/Green Building Illustrated.pdf",
+      "purpose": "Sustainable maintenance and prefabrication support",
+      "exists_now": true
+    },
+    {
+      "family": "Official Philippine native-species planting source",
+      "status": "blocker-resolution-needed-source-family-not-found-in-current-raw-layer",
+      "recommended_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DENR/Official Philippine Native Species Planting Guide.pdf",
+      "purpose": "Required before retaining species-specific native planting claims",
+      "reason": "No matching native-species raw source found in current filename scan."
+    }
+  ],
+  "source_audit_priority": {
+    "overall": "mixed_high_and_blocker-resolution-needed",
+    "per_article": [
+      {
+        "article_id": "d2246ae0-2def-4144-b42d-f56172b13f67",
+        "slug": "lea-plan-004-03-what-you-need-to-know-for-the-lea",
+        "priority": "blocker-resolution-needed",
+        "blocker_resolution_needed": true,
+        "blocker_resolution_notes": [
+          "No current sources.json rows. Build claims from local design-process, open-space, and climate-resilient planning sources; remove or source-acquire any unsupported socio-psychology theory claims."
+        ]
+      },
+      {
+        "article_id": "b9ae0f63-0d28-4a66-b2bf-51641e6db739",
+        "slug": "lea-plan-004-04-what-you-need-to-know-for-the-lea",
+        "priority": "blocker-resolution-needed",
+        "blocker_resolution_needed": true,
+        "blocker_resolution_notes": [
+          "No current sources.json rows. Build management claims from local design-process and construction/project-management source families; remove unsupported management generalities."
+        ]
+      },
+      {
+        "article_id": "f22ba499-94ce-41a3-999a-2d9ffdbc0b57",
+        "slug": "lea-plan-004-05-what-you-need-to-know-for-the-lea",
+        "priority": "blocker-resolution-needed",
+        "blocker_resolution_needed": true,
+        "blocker_resolution_notes": [
+          "No current sources.json rows. Build maintenance claims from Good Building Handbook, Building Construction Illustrated, and sitework/local planning families; remove unsupported lifecycle claims."
+        ]
+      },
+      {
+        "article_id": "e59c8abc-5938-47ab-8009-97424baa78c7",
+        "slug": "lea-plan-005-02-what-you-need-to-know-for-the-lea",
+        "priority": "blocker-resolution-needed",
+        "blocker_resolution_needed": true,
+        "blocker_resolution_notes": [
+          "No current sources.json rows and no exact native-species source file found in filename scan. Use open-space/sitework sources for planting/site criteria; acquire an official local native-species source before retaining species-specific claims."
+        ]
+      },
+      {
+        "article_id": "ba36cb75-5bb4-4d12-802c-f5ab921f7949",
+        "slug": "prefabricated-constructions",
+        "priority": "high",
+        "blocker_resolution_needed": false,
+        "blocker_resolution_notes": []
+      }
+    ]
+  },
+  "scenario_enrichment_requirement": {
+    "required": true,
+    "instruction": "Add a Real World Scenario section when source-audited article shape is eligible; otherwise record not-applicable with reason in source-audit evidence and ledger. Scenario enrichment must not override raw-source correctness."
+  },
+  "validation_gates": [
+    "raw-PDF-first audit",
+    "roundtrip protocol",
+    "compose/diff/validate",
+    "UI-block-edit validation",
+    "scoped JSON parse",
+    "placeholder/internal-note/source-gap scans",
+    "source hash checks",
+    "linked-question/question-edit count checks",
+    "stale compose-error scan",
+    "targeted content-audit tests",
+    "scoped git diff --check",
+    "independent reviewer pass",
+    "serial coordinator acceptance",
+    "stage/commit/push after batch acceptance"
+  ],
+  "no_skip_blocker_resolution_policy": {
+    "permanent_skips_allowed": false,
+    "policy": "Difficult articles remain reserved. If an expected source family is missing or extraction is weak, mark blocker-resolution-needed with source families and the recommended path; do not silently replace the article with an easier candidate. Internet may be used only as supplemental discovery, not primary evidence. Primary evidence must be local raw sources under vitruvius-connection/001_Raw-Source-Layer.",
+    "stop_condition": "A batch may be accepted only after all selected article clusters either pass source audit with blockers=0 or have explicit coordinator-approved blocker-resolution notes; do not mark complete while blockers remain."
+  },
+  "allowed_write_scope": {
+    "current_reservation_task": [
+      "/Users/philiplewis/slatecamp/.ai/03_plans/production-line-batch-088-manifest.json",
+      "/Users/philiplewis/slatecamp/.ai/03_plans/source-audited-production-line-coordination.md"
+    ],
+    "future_batch_execution_after_serial_start": [
+      "Selected article folders listed in exact_article_folder_paths only",
+      "Selected question-edit file paths listed under article_clusters[].expected_question_edit_file_paths only",
+      "Batch-specific report, ledger, and scoped-check artifacts under /Users/philiplewis/slatecamp/.ai/content-audit-export only",
+      "Handoff/coordination pre-start or post-batch notes under /Users/philiplewis/slatecamp/.ai/03_plans only"
+    ],
+    "forbidden_now": [
+      "Supabase push/apply",
+      "deploy",
+      "commit",
+      "article content edits during reservation-only task",
+      "question edit mutations during reservation-only task"
+    ]
+  }
+}
