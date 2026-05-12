@@ -1,0 +1,89 @@
+{
+  "question_id": "4ab9f3fc-dabd-446a-bca0-506fb581daa0",
+  "baseline_hash": "sha256:d88dfd1b1b6cf25e57b1496ffaaa08d4b64d98a7f99845215851da197bd56976",
+  "action": "replace",
+  "reason": "source-audited-article-batch-088-local-first aligned linked question with checked local raw PDF/source evidence for lea-plan-005-02-what-you-need-to-know-for-the-lea.",
+  "approved_by": "codex-local-source-audit-batch-088",
+  "approved_at": "2026-05-12T11:55:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "e59c8abc-5938-47ab-8009-97424baa78c7",
+    "parent_article_slug": "lea-plan-005-02-what-you-need-to-know-for-the-lea",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Open Space Development Guidelines lines 36-60, 307-332, 374-376, 1753-1763; PD 1216 lines 53-90 and 214-240; Building Construction Illustrated lines 122, 252-266, 420, 448-479, 714-749, and 829-921; Green Building Illustrated lines 169, 1176-1234, 1396, 1479-1499, 9082, and 9150.",
+    "checked_markdown_lines": [
+      "Open Space Development Guidelines refined markdown lines 36-60, 307-332, 374-376, 1747-1763; raw PDF hash checked locally.",
+      "PD 1216 refined markdown lines 21-35, 53-90, and 214-240; raw PDF hash checked locally.",
+      "Building Construction Illustrated refined markdown lines 122, 252-266, 350-360, 420, 448-479, 714-749, 829-921, 1236-1265, 14349-14352, 14838-14848, 2141-2158, 3131-3151, and 3316-3457; raw PDF hash checked locally.",
+      "Green Building Illustrated refined markdown lines 169, 271, 779-787, 911-933, 1176-1234, 1396, 1479-1499, 9082, 9124, and 9150; raw PDF hash checked locally."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "open-space-development-guidelines-b088",
+        "label": "Open Space Development Guidelines",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Open Space Development Guidelines.pdf",
+        "sha256": "sha256:2ca6d61605d370035cdd8679a43cdd57d5f40deada47601ea56e5161733e0add",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Open Space Development Guidelines.md",
+        "refined_markdown_sha256": "sha256:2be9fa0f23c22913f06acedf5905c5ebf004240ee764b47a2b1c97e15b9d9b2b",
+        "locator": "Open Space Development Guidelines refined markdown lines 36-60, 307-332, 374-376, 1747-1763; raw PDF hash checked locally."
+      },
+      {
+        "source_id": "pd-1216-open-space-requirements-b088",
+        "label": "PD 1216 - Open Space Requirements in Subdivisions",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1216/PD 1216 - Open Space Requirements in Subdivisions.pdf",
+        "sha256": "sha256:bc878b419cb2714a81257ceccb711e312b3e5a0839c255ad2d5b88128784acc2",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1216/PD 1216 - Open Space Requirements in Subdivisions.md",
+        "refined_markdown_sha256": "sha256:a6374165776a14a8c85797220c57588f75adebbf98f9a41bd18dd9b70f3d4b17",
+        "locator": "PD 1216 refined markdown lines 21-35, 53-90, and 214-240; raw PDF hash checked locally."
+      },
+      {
+        "source_id": "building-construction-illustrated-5th-b088",
+        "label": "Building Construction Illustrated, 5th Edition",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "refined_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "locator": "Building Construction Illustrated refined markdown lines 122, 252-266, 350-360, 420, 448-479, 714-749, 829-921, 1236-1265, 14349-14352, 14838-14848, 2141-2158, 3131-3151, and 3316-3457; raw PDF hash checked locally."
+      },
+      {
+        "source_id": "green-building-illustrated-b088",
+        "label": "Green Building Illustrated",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Green Building Illustrated.pdf",
+        "sha256": "sha256:b23f127ca4581eb2d733b14e2a3739d022c9d04b343729b0ecdebdf92d0bdc70",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Green Building Illustrated.md",
+        "refined_markdown_sha256": "sha256:4c754dad2867dea176cd93c2f93788b7874ccbbe557096bb64cbb0ab3a0165d2",
+        "locator": "Green Building Illustrated refined markdown lines 169, 271, 779-787, 911-933, 1176-1234, 1396, 1479-1499, 9082, 9124, and 9150; raw PDF hash checked locally."
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 088 local raw-source-audited planting_open_space_and_site_ecology scope."
+  },
+  "proposed": {
+    "text": "In a campus landscape review, which answer is most source-safe?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Preserve healthy existing trees, coordinate vegetation with microclimate and hydrology, maintain accessible public open-space function, and document maintenance needs"
+      },
+      {
+        "id": "b",
+        "text": "Name an unsupported species as the only answer"
+      },
+      {
+        "id": "c",
+        "text": "Remove every shade tree to simplify paving"
+      },
+      {
+        "id": "d",
+        "text": "Ignore drainage and maintenance"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The combined local sources support a general planting and open-space evaluation path without unsupported species claims.",
+    "explanation": "The combined local sources support a general planting and open-space evaluation path without unsupported species claims.",
+    "code_citation": "Open Space Development Guidelines; PD 1216 - Open Space Requirements in Subdivisions; Building Construction Illustrated, 5th Edition; Green Building Illustrated",
+    "bloom_level": "understand",
+    "application_context": "source_audited_local_first_batch_088",
+    "practice_context": [],
+    "difficulty": 0.55
+  }
+}

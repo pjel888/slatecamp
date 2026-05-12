@@ -1,0 +1,109 @@
+{
+  "question_id": "5e90b67e-a334-4c8c-8f26-c35747a271f2",
+  "baseline_hash": "sha256:0b57d7a005b99afda2608e6159c23e60e15eb800199561231138fbf4b49e475b",
+  "action": "replace",
+  "reason": "source-audited-article-batch-088-local-first aligned linked question with checked local raw PDF/source evidence for lea-plan-004-05-what-you-need-to-know-for-the-lea.",
+  "approved_by": "codex-local-source-audit-batch-088",
+  "approved_at": "2026-05-12T11:55:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "f22ba499-94ce-41a3-999a-2d9ffdbc0b57",
+    "parent_article_slug": "lea-plan-004-05-what-you-need-to-know-for-the-lea",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Good Building Handbook lines 35, 170, 217-276, 379-380, 426-499, and 745; Building Construction Illustrated lines 714-749, 1236-1265, 14349-14352, and 14838-14848; Building Construction Handbook lines 162 and 295-300; Construction Project Management Handbook lines 595-604, 1534, 1996, 2029-2051, 2403-2427, 2587-2640, and 2670-2692; Sitework Lecture lines 253-288 and 414-461; Building Technology - Siteworks lines 308, 342, 388, and 406.",
+    "checked_markdown_lines": [
+      "Good Building Handbook in the PH refined markdown lines 35, 170, 217-276, 379-380, 426-499, and 745; raw PDF hash checked locally.",
+      "Building Construction Illustrated refined markdown lines 122, 252-266, 350-360, 420, 448-479, 714-749, 829-921, 1236-1265, 14349-14352, 14838-14848, 2141-2158, 3131-3151, and 3316-3457; raw PDF hash checked locally.",
+      "Building Construction Handbook refined markdown lines 54, 162, 295-300, 2222, 2276-2282, and 2291-2297; raw PDF hash checked locally.",
+      "Construction Project Management Handbook refined markdown lines 291-435, 595-604, 1534, 1996, 2029-2051, 2239, 2375-2427, 2587-2640, and 2670-2692; raw PDF hash checked locally.",
+      "Sitework Lecture refined markdown lines 34, 80, 218, 253-288, 334-365, 414-461, and 520-588; raw PDF hash checked locally.",
+      "Building Technology - Siteworks refined markdown lines 131, 252, 274, 308, 326, 342, 388, and 406; raw PDF hash checked locally."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "good-building-handbook-ph-b088",
+        "label": "Good Building Handbook in the PH",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Good Building Handbook in the PH.pdf",
+        "sha256": "sha256:e8925f0c617c24df41784a002fa9c3f1a237a5dda96196d82f14653bfd9b870c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Good Building Handbook in the PH.md",
+        "refined_markdown_sha256": "sha256:11584339e25de3d586d64a2a31d1e8af03cfb876371bec764c224eaad6e11c9d",
+        "locator": "Good Building Handbook in the PH refined markdown lines 35, 170, 217-276, 379-380, 426-499, and 745; raw PDF hash checked locally."
+      },
+      {
+        "source_id": "building-construction-illustrated-5th-b088",
+        "label": "Building Construction Illustrated, 5th Edition",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "refined_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "locator": "Building Construction Illustrated refined markdown lines 122, 252-266, 350-360, 420, 448-479, 714-749, 829-921, 1236-1265, 14349-14352, 14838-14848, 2141-2158, 3131-3151, and 3316-3457; raw PDF hash checked locally."
+      },
+      {
+        "source_id": "building-construction-handbook-7th-b088",
+        "label": "Building Construction Handbook, 7th Ed by Chudley and Greeno",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf",
+        "sha256": "sha256:2efa493fac06a3efb9367111a397129ff8647778d88160bbe0174403cbb9e0bb",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.md",
+        "refined_markdown_sha256": "sha256:485fe968d55ca680cbde52d24fcee5f512a63591026db19e46835f1bc530dcbb",
+        "locator": "Building Construction Handbook refined markdown lines 54, 162, 295-300, 2222, 2276-2282, and 2291-2297; raw PDF hash checked locally."
+      },
+      {
+        "source_id": "construction-project-management-handbook-b088",
+        "label": "Construction Project Management Handbook",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Construction Project Management Handbook by Shadan _ Fleming.pdf",
+        "sha256": "sha256:01dd25a5de726377eb53bafb502127a806cc007ffc05e8dad745479b0ad6ad17",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Construction Project Management Handbook by Shadan _ Fleming.md",
+        "refined_markdown_sha256": "sha256:9d7f7c772d1efcce9db4c8f1e59cc5d19711cd99448799ae6ce783ebb6b78c77",
+        "locator": "Construction Project Management Handbook refined markdown lines 291-435, 595-604, 1534, 1996, 2029-2051, 2239, 2375-2427, 2587-2640, and 2670-2692; raw PDF hash checked locally."
+      },
+      {
+        "source_id": "sitework-lecture-b088",
+        "label": "Sitework Lecture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Sitework Lecture.pdf",
+        "sha256": "sha256:a469e97d2c4b842f443864c658fc4359ef2787a2b009b9fbafc1afbd1da25ff6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Sitework Lecture.md",
+        "refined_markdown_sha256": "sha256:e761c9b38b9d0c07bd6053692337109a218169ba791e8f074fa40842d3972af2",
+        "locator": "Sitework Lecture refined markdown lines 34, 80, 218, 253-288, 334-365, 414-461, and 520-588; raw PDF hash checked locally."
+      },
+      {
+        "source_id": "building-technology-siteworks-b088",
+        "label": "Building Technology - Siteworks",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Technology - Siteworks.pdf",
+        "sha256": "sha256:9f498be4a288011a0e8b750d4bb8316afebf07a908993620579c311da30e02a2",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Technology - Siteworks.md",
+        "refined_markdown_sha256": "sha256:3e34ffc7b60b926a2cd75fbde6239ff3f05e7e53993d8cb6f8d5f1d865c64296",
+        "locator": "Building Technology - Siteworks refined markdown lines 131, 252, 274, 308, 326, 342, 388, and 406; raw PDF hash checked locally."
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 088 local raw-source-audited building_lifecycle_maintenance_and_closeout scope."
+  },
+  "proposed": {
+    "text": "What does the Good Building Handbook support in this batch?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Good materials, workmanship, foundation drainage, structural connections, rust protection, access over drains, and construction monitoring"
+      },
+      {
+        "id": "b",
+        "text": "Only furniture placement"
+      },
+      {
+        "id": "c",
+        "text": "Only lifecycle cost formulas"
+      },
+      {
+        "id": "d",
+        "text": "Only private branding"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The handbook supports practical construction quality and maintenance controls.",
+    "explanation": "The handbook supports practical construction quality and maintenance controls.",
+    "code_citation": "Good Building Handbook in the PH; Building Construction Illustrated, 5th Edition; Building Construction Handbook, 7th Ed by Chudley and Greeno; Construction Project Management Handbook; Sitework Lecture; Building Technology - Siteworks",
+    "bloom_level": "understand",
+    "application_context": "source_audited_local_first_batch_088",
+    "practice_context": [],
+    "difficulty": 0.55
+  }
+}

@@ -1,0 +1,524 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "final-content-audit-criteria.json",
+  "title": "Final Content Audit Criteria",
+  "description": "Machine-verifiable audit criteria for the post-local-first, pre-Supabase final content audit. Every criterion fails closed — missing or ambiguous evidence produces a non-pass result.",
+  "version": "1.0.0",
+  "generated": "2026-05-12T00:00:00+08:00",
+  "fail_closed_default": "All criteria default to fail. Evidence must be present, complete, and verifiable for a criterion to pass.",
+
+  "status_codes": {
+    "terminal_accept": [
+      {
+        "code": "PASS_LOCAL_FIRST",
+        "meaning": "All gates pass. Article is source-safe, internally consistent, and ready for final publishing review.",
+        "emits_passport": true,
+        "allows_batch_acceptance": true
+      }
+    ],
+    "remediation": [
+      {
+        "code": "NEEDS_REMEDIATION",
+        "meaning": "One or more mechanical gates failed with fixable defects.",
+        "examples": ["placeholders found", "counts mismatched", "stale error files", "JSON parse errors"],
+        "remediation": "Return to worker with exact gate failures and fix instructions."
+      },
+      {
+        "code": "BLOCKED_SOURCE_GAP",
+        "meaning": "One or more factual claims lack local raw-source support. Not fixable by editing alone.",
+        "remediation": "Record exact source families needed; park article until source acquired."
+      },
+      {
+        "code": "BLOCKED_ROUNDTRIP",
+        "meaning": "normalized.md != candidate.md and the diff is not accounted for by documented intentional edits.",
+        "remediation": "Re-run compose; if persistent, mark for manual diff review."
+      },
+      {
+        "code": "BLOCKED_QUESTION_MISMATCH",
+        "meaning": "Linked question count does not equal created question-edit count.",
+        "remediation": "Audit question list; resolve missing or extra question-edits."
+      },
+      {
+        "code": "BLOCKED_VALIDATION",
+        "meaning": "Compose, diff, or validate gate failed with documented errors.",
+        "remediation": "Fix root cause and re-run full validation gate list."
+      }
+    ]
+  },
+
+  "gates": [
+    {
+      "gate_id": "G1",
+      "name": "Article Folder Integrity",
+      "priority": "critical",
+      "fail_closed": true,
+      "automated": true,
+      "description": "Verify all required files exist with non-zero size in the article folder.",
+      "required_files": [
+        { "path": "<article_folder>/original.md", "purpose": "Original exported article baseline" },
+        { "path": "<article_folder>/normalized.md", "purpose": "Worker-improved article after source audit" },
+        { "path": "<article_folder>/candidate.md", "purpose": "Must be byte-identical to normalized.md" },
+        { "path": "<article_folder>/sources.json", "purpose": "Source citations with raw-pdf paths and sha256 hashes" },
+        { "path": "<article_folder>/source-audit-evidence.json", "purpose": "Per-claim source traceability ledger" },
+        { "path": "<article_folder>/linked-questions.json", "purpose": "Linked question IDs and metadata" },
+        { "path": "<article_folder>/ui-blocks.json", "purpose": "UI block inventory (may be empty array)" },
+        { "path": "<article_folder>/question-edits/", "purpose": "Directory with per-question edit JSON files" }
+      ],
+      "checks": [
+        {
+          "check_id": "G1.1",
+          "description": "Every required file exists and has non-zero size (or is a non-empty directory for question-edits/)",
+          "type": "file_existence",
+          "pass_condition": "all files exist and size > 0",
+          "fail_result": "NEEDS_REMEDIATION",
+          "fail_detail_field": "missing_files",
+          "fail_detail_type": "array of strings"
+        }
+      ]
+    },
+    {
+      "gate_id": "G2",
+      "name": "Raw-PDF-First Source Audit",
+      "priority": "critical",
+      "fail_closed": true,
+      "automated": true,
+      "description": "Every source in sources.json must be a local raw PDF with verified on-disk presence.",
+      "checks": [
+        {
+          "check_id": "G2.1",
+          "description": "Every source entry has url: null (no internet dependency)",
+          "type": "field_value",
+          "target_file": "sources.json",
+          "target_field": "sources[].url",
+          "expected_value": null,
+          "pass_condition": "all url fields are null",
+          "fail_result": "BLOCKED_SOURCE_GAP",
+          "fail_detail_field": "sources_with_urls",
+          "fail_detail_type": "array of {source_index, url_value}"
+        },
+        {
+          "check_id": "G2.2",
+          "description": "Every source has raw_pdf_path pointing to vitruvius-connection/001_Raw-Source-Layer/",
+          "type": "field_pattern",
+          "target_file": "sources.json",
+          "target_field": "sources[].raw_pdf_path",
+          "pattern": "^.*vitruvius-connection/001_Raw-Source-Layer/.*$",
+          "pass_condition": "all raw_pdf_path fields match pattern",
+          "fail_result": "BLOCKED_SOURCE_GAP",
+          "fail_detail_field": "sources_without_raw_path",
+          "fail_detail_type": "array of {source_index, raw_pdf_path}"
+        },
+        {
+          "check_id": "G2.3",
+          "description": "Every referenced raw PDF exists on disk at the stated path",
+          "type": "disk_verification",
+          "command": "test -f \"<raw_pdf_path>\"",
+          "pass_condition": "all PDF files exist on disk",
+          "fail_result": "BLOCKED_SOURCE_GAP",
+          "fail_detail_field": "missing_pdfs",
+          "fail_detail_type": "array of strings (paths)"
+        },
+        {
+          "check_id": "G2.4",
+          "description": "Every source has raw_pdf_sha256, refined_markdown_path with line locators, and is_verified: true",
+          "type": "field_presence",
+          "target_file": "sources.json",
+          "target_fields": ["sources[].raw_pdf_sha256", "sources[].refined_markdown_path", "sources[].is_verified"],
+          "required_values": { "is_verified": true },
+          "non_empty": ["raw_pdf_sha256", "refined_markdown_path"],
+          "pass_condition": "all fields present, non-empty, and is_verified is true",
+          "fail_result": "NEEDS_REMEDIATION",
+          "fail_detail_field": "incomplete_sources",
+          "fail_detail_type": "array of {source_index, missing_fields}"
+        }
+      ]
+    },
+    {
+      "gate_id": "G3",
+      "name": "Source Hash Verification",
+      "priority": "critical",
+      "fail_closed": true,
+      "automated": true,
+      "description": "Every sha256 hash in sources.json and source-audit-evidence.json matches the actual on-disk file hash.",
+      "checks": [
+        {
+          "check_id": "G3.1",
+          "description": "Compute actual sha256 of each raw PDF and compare to recorded hash",
+          "type": "hash_verification",
+          "command_template": "shasum -a 256 \"<raw_pdf_path>\"",
+          "expected_field": "raw_pdf_sha256",
+          "pass_condition": "all hashes match",
+          "fail_result": "NEEDS_REMEDIATION",
+          "fail_detail_field": "hash_mismatches",
+          "fail_detail_type": "array of {file, expected_hash, actual_hash}"
+        }
+      ]
+    },
+    {
+      "gate_id": "G4",
+      "name": "Claim-to-Source Traceability",
+      "priority": "critical",
+      "fail_closed": true,
+      "automated": true,
+      "description": "Every factual/legal/code/numeric claim in source-audit-evidence.json has at least one checked_source pointing to a local raw PDF.",
+      "checks": [
+        {
+          "check_id": "G4.1",
+          "description": "Every claim has at least one checked_source entry",
+          "type": "count_minimum",
+          "target_file": "source-audit-evidence.json",
+          "target_field": "checked_claims[].checked_sources",
+          "minimum_count": 1,
+          "pass_condition": "all claims have >= 1 checked_source",
+          "fail_result": "BLOCKED_SOURCE_GAP",
+          "fail_detail_field": "unsupported_claims",
+          "fail_detail_type": "array of {claim_index, claim_text_summary}"
+        },
+        {
+          "check_id": "G4.2",
+          "description": "No claim depends solely on SlateCamp-internal docs without raw-pdf backing",
+          "type": "source_type_filter",
+          "target_file": "source-audit-evidence.json",
+          "internal_source_patterns": [
+            "THEORY_ATTRIBUTION_GUIDE.md",
+            "VERIFIED_REFERENCE.md",
+            "CROSS_REFERENCE_MAP.md",
+            "PROFESSIONAL_PRACTICE_",
+            "slatecamp_"
+          ],
+          "pass_condition": "every claim has at least one non-internal source, or internal source itself links to a raw PDF",
+          "fail_result": "BLOCKED_SOURCE_GAP",
+          "fail_detail_field": "internal_only_claims",
+          "fail_detail_type": "array of {claim_index, internal_sources}"
+        }
+      ]
+    },
+    {
+      "gate_id": "G5",
+      "name": "Placeholder / Internal Note / Source Gap Scan",
+      "priority": "high",
+      "fail_closed": true,
+      "automated": true,
+      "description": "Scan improved article files for placeholder markers, internal notes, and unresolved source gaps.",
+      "scan_targets": ["normalized.md", "candidate.md", "sources.json", "source-audit-evidence.json", "question-edits/*.json"],
+      "exclude_from_scan": ["original.md"],
+      "checks": [
+        {
+          "check_id": "G5.1",
+          "description": "Zero occurrences of SLATECAMP_UI_BLOCK in improved files",
+          "type": "regex_scan",
+          "pattern": "SLATECAMP_UI_BLOCK",
+          "allowed_count": 0,
+          "pass_condition": "zero matches",
+          "fail_result": "NEEDS_REMEDIATION",
+          "fail_detail_field": "placeholder_hits",
+          "fail_detail_type": "array of {file, line, context}"
+        },
+        {
+          "check_id": "G5.2",
+          "description": "Zero occurrences of TODO, FIXME, HACK, XXX in improved files",
+          "type": "regex_scan",
+          "pattern": "\\b(TODO|FIXME|HACK|XXX)\\b",
+          "allowed_count": 0,
+          "pass_condition": "zero matches",
+          "fail_result": "NEEDS_REMEDIATION",
+          "fail_detail_field": "internal_note_hits",
+          "fail_detail_type": "array of {file, line, context}"
+        },
+        {
+          "check_id": "G5.3",
+          "description": "Zero occurrences of source-gap, unsupported-source, INTERNAL-NOTE markers",
+          "type": "regex_scan",
+          "pattern": "(source-gap|unsupported-source|INTERNAL-NOTE|NEEDS CITATION|VERIFY|CHECK)",
+          "case_insensitive": true,
+          "allowed_count": 0,
+          "pass_condition": "zero matches",
+          "fail_result": "NEEDS_REMEDIATION",
+          "fail_detail_field": "source_gap_hits",
+          "fail_detail_type": "array of {file, line, context}"
+        },
+        {
+          "check_id": "G5.4",
+          "description": "No excessive blank-line gaps (more than 3 consecutive empty lines) in normalized.md",
+          "type": "regex_scan",
+          "pattern": "(?m)^\\s*$\\n\\s*$\\n\\s*$\\n\\s*$",
+          "allowed_count": 0,
+          "pass_condition": "zero matches in normalized.md",
+          "fail_result": "NEEDS_REMEDIATION",
+          "fail_detail_field": "blank_gap_hits",
+          "fail_detail_type": "array of {file, line}"
+        }
+      ]
+    },
+    {
+      "gate_id": "G6",
+      "name": "Linked Question / Question Edit Count Match",
+      "priority": "critical",
+      "fail_closed": true,
+      "automated": true,
+      "description": "The number of questions in linked-questions.json must equal the number of .json files in question-edits/.",
+      "checks": [
+        {
+          "check_id": "G6.1",
+          "description": "linked_question_count == question_edit_count",
+          "type": "count_equality",
+          "source_a": { "file": "linked-questions.json", "count_method": "array_length" },
+          "source_b": { "file": "question-edits/", "count_method": "json_file_count_in_dir" },
+          "minimum": 1,
+          "pass_condition": "counts equal and >= 1",
+          "fail_result": "BLOCKED_QUESTION_MISMATCH",
+          "fail_detail_field": "count_mismatch",
+          "fail_detail_type": "{linked_count: number, edit_count: number}"
+        }
+      ]
+    },
+    {
+      "gate_id": "G7",
+      "name": "Question Edit Integrity",
+      "priority": "critical",
+      "fail_closed": true,
+      "automated": true,
+      "description": "Every question-edit JSON file is valid and contains all required fields.",
+      "checks": [
+        {
+          "check_id": "G7.1",
+          "description": "Every .json file in question-edits/ parses as valid JSON",
+          "type": "json_parse",
+          "pass_condition": "all files parse without error",
+          "fail_result": "NEEDS_REMEDIATION",
+          "fail_detail_field": "parse_errors",
+          "fail_detail_type": "array of {file, error_message}"
+        },
+        {
+          "check_id": "G7.2",
+          "description": "Every question-edit has required fields with expected values",
+          "type": "field_presence",
+          "required_fields": [
+            { "field": "baseline_hash", "type": "string", "non_empty": true },
+            { "field": "action", "type": "string", "expected_values": ["replace", "add", "remove", "no_change"] },
+            { "field": "answer_key_fields_changed", "type": "boolean", "expected_value": true },
+            { "field": "support_status", "type": "string", "expected_value": "source_safe_rewrite" },
+            { "field": "checked_sources", "type": "array", "minimum_length": 1 }
+          ],
+          "pass_condition": "all required fields present and valid in every question-edit",
+          "fail_result": "NEEDS_REMEDIATION",
+          "fail_detail_field": "invalid_edits",
+          "fail_detail_type": "array of {file, missing_fields, invalid_fields}"
+        },
+        {
+          "check_id": "G7.3",
+          "description": "Every checked_source in question-edits has raw_pdf_path, sha256, and locators",
+          "type": "nested_field_presence",
+          "target_fields": ["checked_sources[].raw_pdf_path", "checked_sources[].sha256", "checked_sources[].locators"],
+          "non_empty": ["raw_pdf_path", "sha256"],
+          "pass_condition": "all nested fields present and non-empty",
+          "fail_result": "NEEDS_REMEDIATION",
+          "fail_detail_field": "incomplete_checked_sources",
+          "fail_detail_type": "array of {question_edit_file, source_index, missing_fields}"
+        },
+        {
+          "check_id": "G7.4",
+          "description": "No placeholder markers in question-edits",
+          "type": "regex_scan",
+          "pattern": "SLATECAMP_UI_BLOCK|TODO|FIXME|source-gap|unsupported-source",
+          "allowed_count": 0,
+          "target_files": "question-edits/*.json",
+          "pass_condition": "zero matches",
+          "fail_result": "NEEDS_REMEDIATION",
+          "fail_detail_field": "question_edit_placeholder_hits",
+          "fail_detail_type": "array of {file, line, pattern}"
+        }
+      ]
+    },
+    {
+      "gate_id": "G8",
+      "name": "Rationale Source Safety",
+      "priority": "high",
+      "fail_closed": true,
+      "automated": true,
+      "description": "Every question-edit rationale traces to sources in the article's sources.json or source-audit-evidence.json.",
+      "checks": [
+        {
+          "check_id": "G8.1",
+          "description": "Every rationale's checked_sources reference raw-pdf paths that exist in the article's sources.json",
+          "type": "cross_reference",
+          "source_a": "question-edits/*.json → checked_sources[].raw_pdf_path",
+          "source_b": "sources.json → sources[].raw_pdf_path",
+          "pass_condition": "all question-edit source paths exist in article sources.json",
+          "fail_result": "BLOCKED_SOURCE_GAP",
+          "fail_detail_field": "orphan_rationale_sources",
+          "fail_detail_type": "array of {question_edit_file, orphan_paths}"
+        }
+      ]
+    },
+    {
+      "gate_id": "G9",
+      "name": "Scenario Status / Source Safety",
+      "priority": "medium",
+      "fail_closed": true,
+      "automated": true,
+      "description": "Scenario enrichment status is explicitly recorded and source-safe.",
+      "checks": [
+        {
+          "check_id": "G9.1",
+          "description": "Scenario enrichment status is present",
+          "type": "field_presence",
+          "target_file": "source-audit-evidence.json",
+          "target_fields": ["scenario_enrichment.status"],
+          "expected_values": ["eligible-added", "eligible-deferred", "not-applicable"],
+          "pass_condition": "status field present with valid value",
+          "fail_result": "NEEDS_REMEDIATION",
+          "fail_detail_field": "scenario_status_missing",
+          "fail_detail_type": "{actual_value: string|null}"
+        },
+        {
+          "check_id": "G9.2",
+          "description": "If eligible-added, scenario claims trace to local raw-source families",
+          "type": "conditional_check",
+          "condition_field": "source-audit-evidence.json → scenario_enrichment.status",
+          "condition_value": "eligible-added",
+          "then_check": {
+            "type": "source_type_filter",
+            "target_field": "scenario_enrichment.claims[].checked_sources",
+            "minimum_local_sources": 1,
+            "pass_condition": "all scenario claims have at least one local raw-source reference"
+          },
+          "fail_result": "NEEDS_REMEDIATION",
+          "fail_detail_field": "unsupported_scenario_claims",
+          "fail_detail_type": "array of {claim_text_summary}"
+        },
+        {
+          "check_id": "G9.3",
+          "description": "If not-applicable, a reason must be recorded",
+          "type": "conditional_check",
+          "condition_field": "source-audit-evidence.json → scenario_enrichment.status",
+          "condition_value": "not-applicable",
+          "then_check": {
+            "type": "field_presence",
+            "target_fields": ["scenario_enrichment.not_applicable_reason"],
+            "non_empty": true,
+            "pass_condition": "reason field present and non-empty"
+          },
+          "fail_result": "NEEDS_REMEDIATION",
+          "fail_detail_field": "missing_not_applicable_reason",
+          "fail_detail_type": "string"
+        }
+      ]
+    },
+    {
+      "gate_id": "G10",
+      "name": "Roundtrip Integrity (Compose / Diff / Validate)",
+      "priority": "critical",
+      "fail_closed": true,
+      "automated": true,
+      "description": "normalized.md and candidate.md must be byte-identical.",
+      "checks": [
+        {
+          "check_id": "G10.1",
+          "description": "normalized.md and candidate.md are byte-identical",
+          "type": "file_diff",
+          "file_a": "normalized.md",
+          "file_b": "candidate.md",
+          "command": "diff normalized.md candidate.md",
+          "expected_exit_code": 0,
+          "pass_condition": "files are identical (diff exits 0, no output)",
+          "fail_result": "BLOCKED_ROUNDTRIP",
+          "fail_detail_field": "diff_output",
+          "fail_detail_type": "string (diff output, first 2000 chars)"
+        }
+      ]
+    },
+    {
+      "gate_id": "G11",
+      "name": "JSON Parse Scan",
+      "priority": "high",
+      "fail_closed": true,
+      "automated": true,
+      "description": "Every .json file in the article folder parses without error.",
+      "checks": [
+        {
+          "check_id": "G11.1",
+          "description": "All JSON files parse successfully",
+          "type": "json_parse_all",
+          "target_pattern": "article_folder/**/*.json",
+          "pass_condition": "all JSON files parse without error",
+          "fail_result": "NEEDS_REMEDIATION",
+          "fail_detail_field": "parse_errors",
+          "fail_detail_type": "array of {file, error_message}"
+        }
+      ]
+    },
+    {
+      "gate_id": "G12",
+      "name": "Stale Compose-Error Scan",
+      "priority": "medium",
+      "fail_closed": true,
+      "automated": true,
+      "description": "No compose-error.json should exist in the article folder.",
+      "checks": [
+        {
+          "check_id": "G12.1",
+          "description": "compose-error.json does not exist",
+          "type": "file_absence",
+          "target_file": "<article_folder>/compose-error.json",
+          "pass_condition": "file does not exist",
+          "fail_result": "NEEDS_REMEDIATION",
+          "fail_detail_field": "stale_compose_error",
+          "fail_detail_type": "{file_exists: true, remediation: 'Remove compose-error.json and re-run compose'}"
+        }
+      ]
+    }
+  ],
+
+  "batch_level_criteria": {
+    "batch_acceptance_condition": "ALL articles in batch carry PASS_LOCAL_FIRST",
+    "exclusion_check": {
+      "description": "No article in this batch appears in any prior accepted batch",
+      "verification_source": "source-audited-local-first-batches-handoff.md and prior batch ledgers",
+      "fail_condition": "any article_id found in prior batch artifact set",
+      "fail_result": "BLOCKED_VALIDATION"
+    },
+    "required_artifacts": [
+      { "artifact": "Batch report", "format": "markdown", "content": "Aggregated summary of all article passports" },
+      { "artifact": "Batch ledger", "format": "json", "content": "Machine-readable summary with per-article statuses and gate results" },
+      { "artifact": "Scoped checks", "format": "json", "content": "Aggregated gate counts, hash verifications, parse results" },
+      { "artifact": "Independent QA review", "format": "markdown", "content": "Pass/fail verdict with evidence and sampling methodology" },
+      { "artifact": "Git diff --check", "format": "command_output", "content": "Clean output for batch paths" }
+    ]
+  },
+
+  "independent_qa_requirements": {
+    "minimum_deep_inspection": "2 articles or 40% of batch, whichever is greater",
+    "minimum_deep_inspect_criteria": "Prioritize articles with blocker-resolution-needed from manifest, or highest source-gap risk",
+    "required_checks": [
+      "Article folder file existence (count-verify all articles)",
+      "Placeholder/internal-note/source-gap scan (scan-verify all articles)",
+      "Raw PDF families existence on disk (hash-verify all claimed families)",
+      "Normalized == candidate diff (deep-inspect sampled)",
+      "Question-edit JSON validity (deep-inspect sampled)",
+      "Scenario enrichment status (deep-inspect sampled)",
+      "Source hash verification (spot-check sampled)",
+      "Git diff --check (run independently)"
+    ],
+    "veto_power": "Independent reviewer MAY fail a batch even if mechanical gates pass, if substantive quality issues are found (e.g., fabricated rationales, inaccurate source attribution, content not matching source). Veto must include specific evidence and affected article IDs."
+  },
+
+  "evidence_requirements_matrix": {
+    "required": [
+      { "evidence": "Local raw PDF exists on disk", "verification": "test -f <path>", "failure_is": "BLOCKED_SOURCE_GAP" },
+      { "evidence": "Raw PDF sha256 matches recorded hash", "verification": "shasum -a 256 <path>", "failure_is": "NEEDS_REMEDIATION" },
+      { "evidence": "Source JSON has url: null", "verification": "JSON field check", "failure_is": "BLOCKED_SOURCE_GAP" },
+      { "evidence": "All claims have checked sources", "verification": "Count check + field presence", "failure_is": "BLOCKED_SOURCE_GAP" },
+      { "evidence": "No placeholders in improved files", "verification": "Regex scan", "failure_is": "NEEDS_REMEDIATION" },
+      { "evidence": "No internal notes in improved files", "verification": "Regex scan", "failure_is": "NEEDS_REMEDIATION" },
+      { "evidence": "Question count matches edit count", "verification": "Directory listing count", "failure_is": "BLOCKED_QUESTION_MISMATCH" },
+      { "evidence": "Question-edits parse as valid JSON", "verification": "JSON parser", "failure_is": "NEEDS_REMEDIATION" },
+      { "evidence": "Question-edits have source_safe_rewrite support", "verification": "Field presence check", "failure_is": "NEEDS_REMEDIATION" },
+      { "evidence": "normalized.md == candidate.md", "verification": "diff", "failure_is": "BLOCKED_ROUNDTRIP" },
+      { "evidence": "No compose-error.json present", "verification": "File existence check", "failure_is": "NEEDS_REMEDIATION" },
+      { "evidence": "Scenario status recorded", "verification": "Field presence check", "failure_is": "NEEDS_REMEDIATION" },
+      { "evidence": "Independent QA completed", "verification": "QA document present", "failure_is": "BLOCKED_VALIDATION" },
+      { "evidence": "Coordinator acceptance recorded", "verification": "Acceptance field in passport", "failure_is": "BLOCKED_VALIDATION" }
+    ]
+  }
+}

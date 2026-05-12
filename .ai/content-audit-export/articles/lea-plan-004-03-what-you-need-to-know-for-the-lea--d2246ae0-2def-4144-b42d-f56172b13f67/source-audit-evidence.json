@@ -1,0 +1,280 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-088-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T11:55:00.000+08:00",
+  "target": {
+    "article_id": "d2246ae0-2def-4144-b42d-f56172b13f67",
+    "slug": "lea-plan-004-03-what-you-need-to-know-for-the-lea",
+    "title": "Human-use planning turns behavior claims into source-checked design tasks",
+    "article_folder": ".ai/content-audit-export/articles/lea-plan-004-03-what-you-need-to-know-for-the-lea--d2246ae0-2def-4144-b42d-f56172b13f67",
+    "normalized_sha256": "sha256:252d5d03f85817629235a5b227b35f2e718b79045bd08d3213e7373f32950ab1",
+    "candidate_sha256": "sha256:252d5d03f85817629235a5b227b35f2e718b79045bd08d3213e7373f32950ab1",
+    "candidate_path": ".ai/content-audit-export/articles/lea-plan-004-03-what-you-need-to-know-for-the-lea--d2246ae0-2def-4144-b42d-f56172b13f67/candidate.md"
+  },
+  "classification": {
+    "topic_family": "human_use_open_space_and_access_planning",
+    "local_first_batch": "088",
+    "source_sensitivity": "planning_building_technology_and_code",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "planning_accessibility_open_space",
+    "requires_raw_pdf_audit": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_final_publishing_review": true,
+    "blockers": [],
+    "warnings": []
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdfs_checked_first": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "local_pdf_extraction_method": "local_raw_file_hash_and_refined_locator_review",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "design-process-b088",
+      "label": "Design Process",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
+      "sha256": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
+      "refined_markdown_sha256": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
+      "locator": "Design Process refined markdown lines 52, 59, 67, and 178; raw PDF hash checked locally."
+    },
+    {
+      "source_id": "open-space-development-guidelines-b088",
+      "label": "Open Space Development Guidelines",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Open Space Development Guidelines.pdf",
+      "sha256": "sha256:2ca6d61605d370035cdd8679a43cdd57d5f40deada47601ea56e5161733e0add",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Open Space Development Guidelines.md",
+      "refined_markdown_sha256": "sha256:2be9fa0f23c22913f06acedf5905c5ebf004240ee764b47a2b1c97e15b9d9b2b",
+      "locator": "Open Space Development Guidelines refined markdown lines 36-60, 307-332, 374-376, 1747-1763; raw PDF hash checked locally."
+    },
+    {
+      "source_id": "pd-1216-open-space-requirements-b088",
+      "label": "PD 1216 - Open Space Requirements in Subdivisions",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1216/PD 1216 - Open Space Requirements in Subdivisions.pdf",
+      "sha256": "sha256:bc878b419cb2714a81257ceccb711e312b3e5a0839c255ad2d5b88128784acc2",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1216/PD 1216 - Open Space Requirements in Subdivisions.md",
+      "refined_markdown_sha256": "sha256:a6374165776a14a8c85797220c57588f75adebbf98f9a41bd18dd9b70f3d4b17",
+      "locator": "PD 1216 refined markdown lines 21-35, 53-90, and 214-240; raw PDF hash checked locally."
+    },
+    {
+      "source_id": "pd-1096-rirr-prefabricated-and-accessibility-b088",
+      "label": "PD 1096 RIRR 2004 - Revised IRR (DPWH Official)",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "locator": "PD 1096 RIRR refined markdown lines 4358-4369 for Rule XV Section 1501 and lines 6048-6135 for accessible walkways, crossings, parking, and entrances; raw PDF hash checked locally."
+    },
+    {
+      "source_id": "building-construction-illustrated-5th-b088",
+      "label": "Building Construction Illustrated, 5th Edition",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+      "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+      "refined_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "locator": "Building Construction Illustrated refined markdown lines 122, 252-266, 350-360, 420, 448-479, 714-749, 829-921, 1236-1265, 14349-14352, 14838-14848, 2141-2158, 3131-3151, and 3316-3457; raw PDF hash checked locally."
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-plan-004-03-what-you-need-to-know-for-the-lea-article-b088",
+      "claim_text": "Article lea-plan-004-03-what-you-need-to-know-for-the-lea was rewritten to the checked human_use_open_space_and_access_planning source scope.",
+      "claim_type": "article_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Open Space Development Guidelines.pdf",
+        "raw_pdf_sha256": "sha256:2ca6d61605d370035cdd8679a43cdd57d5f40deada47601ea56e5161733e0add",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Open Space Development Guidelines.md",
+        "source_locator": "Design Process lines 52, 59, 67, and 178; Open Space Development Guidelines lines 36-60, 307-332, 374-376, and 1747-1763; PD 1216 lines 21-35 and 53-90; PD 1096 RIRR lines 6048-6135; Building Construction Illustrated lines 122, 252-266, 420, 448-479, 714-749, and 907-921.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; refined markdown locators and local raw PDF hashes were used as primary evidence."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "lea-plan-004-03-what-you-need-to-know-for-the-lea-scenario-b088",
+      "claim_text": "Real World Scenario for lea-plan-004-03-what-you-need-to-know-for-the-lea was added from the checked human_use_open_space_and_access_planning source scope.",
+      "claim_type": "scenario_enrichment",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Open Space Development Guidelines.pdf",
+        "raw_pdf_sha256": "sha256:2ca6d61605d370035cdd8679a43cdd57d5f40deada47601ea56e5161733e0add",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Open Space Development Guidelines.md",
+        "source_locator": "Design Process lines 52, 59, 67, and 178; Open Space Development Guidelines lines 36-60, 307-332, 374-376, and 1747-1763; PD 1216 lines 21-35 and 53-90; PD 1096 RIRR lines 6048-6135; Building Construction Illustrated lines 122, 252-266, 420, 448-479, 714-749, and 907-921.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; refined markdown locators and local raw PDF hashes were used as primary evidence."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-c3e8c399-0340-4898-92d5-157dc4edff59-b088",
+      "claim_text": "Question c3e8c399-0340-4898-92d5-157dc4edff59 was rewritten to the checked human_use_open_space_and_access_planning source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Open Space Development Guidelines.pdf",
+        "raw_pdf_sha256": "sha256:2ca6d61605d370035cdd8679a43cdd57d5f40deada47601ea56e5161733e0add",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Open Space Development Guidelines.md",
+        "source_locator": "Design Process lines 52, 59, 67, and 178; Open Space Development Guidelines lines 36-60, 307-332, 374-376, and 1747-1763; PD 1216 lines 21-35 and 53-90; PD 1096 RIRR lines 6048-6135; Building Construction Illustrated lines 122, 252-266, 420, 448-479, 714-749, and 907-921.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; refined markdown locators and local raw PDF hashes were used as primary evidence."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-1fb91500-8524-4972-899e-0cc8e4e7bcaf-b088",
+      "claim_text": "Question 1fb91500-8524-4972-899e-0cc8e4e7bcaf was rewritten to the checked human_use_open_space_and_access_planning source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Open Space Development Guidelines.pdf",
+        "raw_pdf_sha256": "sha256:2ca6d61605d370035cdd8679a43cdd57d5f40deada47601ea56e5161733e0add",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Open Space Development Guidelines.md",
+        "source_locator": "Design Process lines 52, 59, 67, and 178; Open Space Development Guidelines lines 36-60, 307-332, 374-376, and 1747-1763; PD 1216 lines 21-35 and 53-90; PD 1096 RIRR lines 6048-6135; Building Construction Illustrated lines 122, 252-266, 420, 448-479, 714-749, and 907-921.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; refined markdown locators and local raw PDF hashes were used as primary evidence."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-7a8bf283-e24e-4a04-a8ba-7acc67f999c2-b088",
+      "claim_text": "Question 7a8bf283-e24e-4a04-a8ba-7acc67f999c2 was rewritten to the checked human_use_open_space_and_access_planning source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Open Space Development Guidelines.pdf",
+        "raw_pdf_sha256": "sha256:2ca6d61605d370035cdd8679a43cdd57d5f40deada47601ea56e5161733e0add",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Open Space Development Guidelines.md",
+        "source_locator": "Design Process lines 52, 59, 67, and 178; Open Space Development Guidelines lines 36-60, 307-332, 374-376, and 1747-1763; PD 1216 lines 21-35 and 53-90; PD 1096 RIRR lines 6048-6135; Building Construction Illustrated lines 122, 252-266, 420, 448-479, 714-749, and 907-921.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; refined markdown locators and local raw PDF hashes were used as primary evidence."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-ccae7dcb-3b36-4a2d-bde6-e68b06cbaf05-b088",
+      "claim_text": "Question ccae7dcb-3b36-4a2d-bde6-e68b06cbaf05 was rewritten to the checked human_use_open_space_and_access_planning source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Open Space Development Guidelines.pdf",
+        "raw_pdf_sha256": "sha256:2ca6d61605d370035cdd8679a43cdd57d5f40deada47601ea56e5161733e0add",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Open Space Development Guidelines.md",
+        "source_locator": "Design Process lines 52, 59, 67, and 178; Open Space Development Guidelines lines 36-60, 307-332, 374-376, and 1747-1763; PD 1216 lines 21-35 and 53-90; PD 1096 RIRR lines 6048-6135; Building Construction Illustrated lines 122, 252-266, 420, 448-479, 714-749, and 907-921.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; refined markdown locators and local raw PDF hashes were used as primary evidence."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-31c940ca-89eb-4d3e-a062-2ad4d85b5606-b088",
+      "claim_text": "Question 31c940ca-89eb-4d3e-a062-2ad4d85b5606 was rewritten to the checked human_use_open_space_and_access_planning source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Open Space Development Guidelines.pdf",
+        "raw_pdf_sha256": "sha256:2ca6d61605d370035cdd8679a43cdd57d5f40deada47601ea56e5161733e0add",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Open Space Development Guidelines.md",
+        "source_locator": "Design Process lines 52, 59, 67, and 178; Open Space Development Guidelines lines 36-60, 307-332, 374-376, and 1747-1763; PD 1216 lines 21-35 and 53-90; PD 1096 RIRR lines 6048-6135; Building Construction Illustrated lines 122, 252-266, 420, 448-479, 714-749, and 907-921.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; refined markdown locators and local raw PDF hashes were used as primary evidence."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-c05c5044-4a49-4e34-901a-8ddcde147821-b088",
+      "claim_text": "Question c05c5044-4a49-4e34-901a-8ddcde147821 was rewritten to the checked human_use_open_space_and_access_planning source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Open Space Development Guidelines.pdf",
+        "raw_pdf_sha256": "sha256:2ca6d61605d370035cdd8679a43cdd57d5f40deada47601ea56e5161733e0add",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Open Space Development Guidelines.md",
+        "source_locator": "Design Process lines 52, 59, 67, and 178; Open Space Development Guidelines lines 36-60, 307-332, 374-376, and 1747-1763; PD 1216 lines 21-35 and 53-90; PD 1096 RIRR lines 6048-6135; Building Construction Illustrated lines 122, 252-266, 420, 448-479, 714-749, and 907-921.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; refined markdown locators and local raw PDF hashes were used as primary evidence."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-610892cf-0dae-40d9-94f4-98738e7a9c75-b088",
+      "claim_text": "Question 610892cf-0dae-40d9-94f4-98738e7a9c75 was rewritten to the checked human_use_open_space_and_access_planning source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Open Space Development Guidelines.pdf",
+        "raw_pdf_sha256": "sha256:2ca6d61605d370035cdd8679a43cdd57d5f40deada47601ea56e5161733e0add",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Open Space Development Guidelines.md",
+        "source_locator": "Design Process lines 52, 59, 67, and 178; Open Space Development Guidelines lines 36-60, 307-332, 374-376, and 1747-1763; PD 1216 lines 21-35 and 53-90; PD 1096 RIRR lines 6048-6135; Building Construction Illustrated lines 122, 252-266, 420, 448-479, 714-749, and 907-921.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; refined markdown locators and local raw PDF hashes were used as primary evidence."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-7bb1bc9d-10f7-4e1a-9a92-bf7742d94fcd-b088",
+      "claim_text": "Question 7bb1bc9d-10f7-4e1a-9a92-bf7742d94fcd was rewritten to the checked human_use_open_space_and_access_planning source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Open Space Development Guidelines.pdf",
+        "raw_pdf_sha256": "sha256:2ca6d61605d370035cdd8679a43cdd57d5f40deada47601ea56e5161733e0add",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Open Space Development Guidelines.md",
+        "source_locator": "Design Process lines 52, 59, 67, and 178; Open Space Development Guidelines lines 36-60, 307-332, 374-376, and 1747-1763; PD 1216 lines 21-35 and 53-90; PD 1096 RIRR lines 6048-6135; Building Construction Illustrated lines 122, 252-266, 420, 448-479, 714-749, and 907-921.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; refined markdown locators and local raw PDF hashes were used as primary evidence."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-28c63043-eef8-4df8-8e01-0143be6e9199-b088",
+      "claim_text": "Question 28c63043-eef8-4df8-8e01-0143be6e9199 was rewritten to the checked human_use_open_space_and_access_planning source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Open Space Development Guidelines.pdf",
+        "raw_pdf_sha256": "sha256:2ca6d61605d370035cdd8679a43cdd57d5f40deada47601ea56e5161733e0add",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Open Space Development Guidelines.md",
+        "source_locator": "Design Process lines 52, 59, 67, and 178; Open Space Development Guidelines lines 36-60, 307-332, 374-376, and 1747-1763; PD 1216 lines 21-35 and 53-90; PD 1096 RIRR lines 6048-6135; Building Construction Illustrated lines 122, 252-266, 420, 448-479, 714-749, and 907-921.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; refined markdown locators and local raw PDF hashes were used as primary evidence."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-a21f4872-7187-4f49-ab80-4e940c190080-b088",
+      "claim_text": "Question a21f4872-7187-4f49-ab80-4e940c190080 was rewritten to the checked human_use_open_space_and_access_planning source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Open Space Development Guidelines.pdf",
+        "raw_pdf_sha256": "sha256:2ca6d61605d370035cdd8679a43cdd57d5f40deada47601ea56e5161733e0add",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Open Space Development Guidelines.md",
+        "source_locator": "Design Process lines 52, 59, 67, and 178; Open Space Development Guidelines lines 36-60, 307-332, 374-376, and 1747-1763; PD 1216 lines 21-35 and 53-90; PD 1096 RIRR lines 6048-6135; Building Construction Illustrated lines 122, 252-266, 420, 448-479, 714-749, and 907-921.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; refined markdown locators and local raw PDF hashes were used as primary evidence."
+      },
+      "blockers": []
+    }
+  ],
+  "removed_or_out_of_scope_claims": [
+    "Named socio-psychology theory claims, imported defensible-space labels, and density-number statements were removed or narrowed because Batch 088 uses local design-process, open-space, accessibility, and site-planning sources."
+  ],
+  "question_edit_audit": {
+    "linked_question_count": 10,
+    "question_edit_count": 10,
+    "answer_key_fields_changed": true,
+    "source_safe_rewrite": true,
+    "blockers": []
+  },
+  "scenario_enrichment": {
+    "status": "eligible-added",
+    "reason": "eligible-added: Batch 088 added a concise open-space and accessible-route scenario supported by local design-process, open-space, PD 1216, PD 1096, and BCI locators.",
+    "section_title": "Real World Scenario"
+  },
+  "roundtrip": {
+    "normalized_md_owns_article_prose": true,
+    "ui_blocks_json_owns_raw_ui_blocks": true,
+    "candidate_md_generated_by_compose": true,
+    "raw_ui_block_edits_supported_in_this_batch": false,
+    "note": "All selected Batch 088 folders have zero raw UI blocks; article prose is owned by normalized.md and candidate.md is generated by compose.",
+    "unresolved_ui_summary_markers_removed": true
+  }
+}

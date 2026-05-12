@@ -7399,3 +7399,113 @@ Batch 087 final state:
 - Status: `PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW`
 - Blockers: 0
 - Stop condition: Batch 087 complete; do not start Batch 088 in this run.
+
+## Batch 088 Pre-Start Checkpoint
+
+- Updated: 2026-05-12T11:20:00+08:00
+- Batch: 088
+- Manifest: `/Users/philiplewis/slatecamp/.ai/03_plans/production-line-batch-088-manifest.json`
+- Coordination doc: `/Users/philiplewis/slatecamp/.ai/03_plans/source-audited-production-line-coordination.md`
+- Selection rule used: execute exactly the five reserved Batch 088 article clusters from the fixed manifest; do not select or replace articles; read Batch 089 manifest only for exclusion awareness.
+- Batch 087 acceptance state: accepted, independently QA-passed, committed and pushed as `3f0c61a88`; inherited blockers=0.
+- Batch 089 exclusion awareness read-only IDs: `1262fe88-bb8f-4005-a9e8-0e8d6c03fe64`, `cd893cd9-7427-4093-bc07-edabf41a6cd7`, `fc0f6b12-8d7e-4309-b83c-daba0863ff30`, `4bb1957d-f513-47e1-b253-c7cbc65912b3`, `5d49cedb-dc14-445a-b075-41fe56873081`.
+- Current worker/session state: Batch 088 started locally; article and question-edits repairs pending; no Supabase push, deploy, or commit attempted.
+- Expected linked questions: 54.
+- Expected source-safe question edits: 54.
+- Known blocker-resolution-needed notes: `lea-plan-004-03-what-you-need-to-know-for-the-lea` has no current sources rows and must narrow unsupported socio-psychology theory claims to local design-process/open-space/climate-resilient planning support; `lea-plan-004-04-what-you-need-to-know-for-the-lea` has no current sources rows and must narrow unsupported management generalities to local design-process/project-management support; `lea-plan-004-05-what-you-need-to-know-for-the-lea` has no current sources rows and must narrow lifecycle/maintenance claims to Good Building Handbook, Building Construction Illustrated, and sitework/local planning support; `lea-plan-005-02-what-you-need-to-know-for-the-lea` has no current sources rows and no exact native-species raw source, so species-specific claims must be removed or source-acquired locally before retention; `prefabricated-constructions` is high-priority with no manifest blocker notes but still requires raw-source-first support.
+- Pending validation gates: raw-PDF-first audit, roundtrip protocol, compose/diff/validate, UI-block-edit validation, scoped JSON parse, placeholder/internal-note/source-gap scans, source hash checks, linked-question/question-edit count checks, stale compose-error scan, targeted content-audit tests, scoped `git diff --check`, Batch 088 report, Batch 088 ledger, Batch 088 scoped checks, and this handoff's Batch 088 post-batch completion update.
+
+| # | Article ID | Slug | Article folder | Question-edits folder | Linked questions |
+|---|---|---|---|---|---:|
+| 1 | `d2246ae0-2def-4144-b42d-f56172b13f67` | `lea-plan-004-03-what-you-need-to-know-for-the-lea` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-03-what-you-need-to-know-for-the-lea--d2246ae0-2def-4144-b42d-f56172b13f67` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-03-what-you-need-to-know-for-the-lea--d2246ae0-2def-4144-b42d-f56172b13f67/question-edits` | 10 |
+| 2 | `b9ae0f63-0d28-4a66-b2bf-51641e6db739` | `lea-plan-004-04-what-you-need-to-know-for-the-lea` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-04-what-you-need-to-know-for-the-lea--b9ae0f63-0d28-4a66-b2bf-51641e6db739` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-04-what-you-need-to-know-for-the-lea--b9ae0f63-0d28-4a66-b2bf-51641e6db739/question-edits` | 10 |
+| 3 | `f22ba499-94ce-41a3-999a-2d9ffdbc0b57` | `lea-plan-004-05-what-you-need-to-know-for-the-lea` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-05-what-you-need-to-know-for-the-lea--f22ba499-94ce-41a3-999a-2d9ffdbc0b57` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-05-what-you-need-to-know-for-the-lea--f22ba499-94ce-41a3-999a-2d9ffdbc0b57/question-edits` | 10 |
+| 4 | `e59c8abc-5938-47ab-8009-97424baa78c7` | `lea-plan-005-02-what-you-need-to-know-for-the-lea` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-02-what-you-need-to-know-for-the-lea--e59c8abc-5938-47ab-8009-97424baa78c7` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-02-what-you-need-to-know-for-the-lea--e59c8abc-5938-47ab-8009-97424baa78c7/question-edits` | 10 |
+| 5 | `ba36cb75-5bb4-4d12-802c-f5ab921f7949` | `prefabricated-constructions` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/prefabricated-constructions--ba36cb75-5bb4-4d12-802c-f5ab921f7949` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/prefabricated-constructions--ba36cb75-5bb4-4d12-802c-f5ab921f7949/question-edits` | 14 |
+
+Batch 088 expected local raw/source families:
+
+- Design Process: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf`
+- Sitework Lecture: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/004-Technology/Sitework Lecture.pdf`
+- Building Technology - Siteworks: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Technology - Siteworks.pdf`
+- Open Space Development Guidelines: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Open Space Development Guidelines.pdf`
+- PD 1216 Open Space Requirements: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1216/PD 1216 - Open Space Requirements in Subdivisions.pdf`
+- Good Building Handbook in the PH: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/004-Technology/Good Building Handbook in the PH.pdf`
+- Building Construction Illustrated, 5th Edition: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf`
+- Building Construction Handbook, 7th Ed by Chudley and Greeno: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf`
+- Construction Project Management Handbook: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/004-Technology/Construction Project Management Handbook by Shadan _ Fleming.pdf`
+- Green Building Illustrated: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/004-Technology/Green Building Illustrated.pdf`
+- Official Philippine native-species planting source remains missing unless acquired locally at `vitruvius-connection/001_Raw-Source-Layer/001-Laws/DENR/Official Philippine Native Species Planting Guide.pdf`; Batch 088 must remove or narrow species-specific claims if this source remains unavailable.
+
+Batch 088 unresolved blockers at this checkpoint: inherited=0; source-family risks are known and must be resolved by local raw-source acquisition/identification, source-safe narrowing, or explicit unresolved blocker recording before final status.
+
+## Batch 088 Post-Batch Completion Checkpoint
+
+- Updated: 2026-05-12T12:35:00+08:00
+- Batch: 088
+- Status: `PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW`
+- Local-only constraints: Supabase push not attempted; deploy not attempted; commit not attempted.
+- Fixed manifest used: `/Users/philiplewis/slatecamp/.ai/03_plans/production-line-batch-088-manifest.json`.
+- Coordination doc read: `/Users/philiplewis/slatecamp/.ai/03_plans/source-audited-production-line-coordination.md`.
+- Batch 089 manifest was read only for exclusion awareness and not modified.
+- Inherited blocker status: Batch 087 blockers=0 and accepted at commit `3f0c61a88`.
+- Unresolved blockers: 0.
+- Next batch readiness: Batch 089 may begin in a separate run because Batch 088 blockers=0; this run stopped after Batch 088.
+
+Batch 088 completed article clusters:
+
+| Article ID | Slug | Exact article folder path | Exact improved paths | Exact question-edits path | Scenario status |
+| --- | --- | --- | --- | --- | --- |
+| `d2246ae0-2def-4144-b42d-f56172b13f67` | `lea-plan-004-03-what-you-need-to-know-for-the-lea` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-03-what-you-need-to-know-for-the-lea--d2246ae0-2def-4144-b42d-f56172b13f67` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-03-what-you-need-to-know-for-the-lea--d2246ae0-2def-4144-b42d-f56172b13f67/normalized.md`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-03-what-you-need-to-know-for-the-lea--d2246ae0-2def-4144-b42d-f56172b13f67/candidate.md`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-03-what-you-need-to-know-for-the-lea--d2246ae0-2def-4144-b42d-f56172b13f67/sources.json`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-03-what-you-need-to-know-for-the-lea--d2246ae0-2def-4144-b42d-f56172b13f67/source-audit-evidence.json` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-03-what-you-need-to-know-for-the-lea--d2246ae0-2def-4144-b42d-f56172b13f67/question-edits` | `eligible-added` |
+| `b9ae0f63-0d28-4a66-b2bf-51641e6db739` | `lea-plan-004-04-what-you-need-to-know-for-the-lea` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-04-what-you-need-to-know-for-the-lea--b9ae0f63-0d28-4a66-b2bf-51641e6db739` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-04-what-you-need-to-know-for-the-lea--b9ae0f63-0d28-4a66-b2bf-51641e6db739/normalized.md`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-04-what-you-need-to-know-for-the-lea--b9ae0f63-0d28-4a66-b2bf-51641e6db739/candidate.md`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-04-what-you-need-to-know-for-the-lea--b9ae0f63-0d28-4a66-b2bf-51641e6db739/sources.json`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-04-what-you-need-to-know-for-the-lea--b9ae0f63-0d28-4a66-b2bf-51641e6db739/source-audit-evidence.json` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-04-what-you-need-to-know-for-the-lea--b9ae0f63-0d28-4a66-b2bf-51641e6db739/question-edits` | `eligible-added` |
+| `f22ba499-94ce-41a3-999a-2d9ffdbc0b57` | `lea-plan-004-05-what-you-need-to-know-for-the-lea` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-05-what-you-need-to-know-for-the-lea--f22ba499-94ce-41a3-999a-2d9ffdbc0b57` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-05-what-you-need-to-know-for-the-lea--f22ba499-94ce-41a3-999a-2d9ffdbc0b57/normalized.md`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-05-what-you-need-to-know-for-the-lea--f22ba499-94ce-41a3-999a-2d9ffdbc0b57/candidate.md`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-05-what-you-need-to-know-for-the-lea--f22ba499-94ce-41a3-999a-2d9ffdbc0b57/sources.json`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-05-what-you-need-to-know-for-the-lea--f22ba499-94ce-41a3-999a-2d9ffdbc0b57/source-audit-evidence.json` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-004-05-what-you-need-to-know-for-the-lea--f22ba499-94ce-41a3-999a-2d9ffdbc0b57/question-edits` | `eligible-added` |
+| `e59c8abc-5938-47ab-8009-97424baa78c7` | `lea-plan-005-02-what-you-need-to-know-for-the-lea` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-02-what-you-need-to-know-for-the-lea--e59c8abc-5938-47ab-8009-97424baa78c7` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-02-what-you-need-to-know-for-the-lea--e59c8abc-5938-47ab-8009-97424baa78c7/normalized.md`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-02-what-you-need-to-know-for-the-lea--e59c8abc-5938-47ab-8009-97424baa78c7/candidate.md`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-02-what-you-need-to-know-for-the-lea--e59c8abc-5938-47ab-8009-97424baa78c7/sources.json`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-02-what-you-need-to-know-for-the-lea--e59c8abc-5938-47ab-8009-97424baa78c7/source-audit-evidence.json` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-02-what-you-need-to-know-for-the-lea--e59c8abc-5938-47ab-8009-97424baa78c7/question-edits` | `eligible-added` |
+| `ba36cb75-5bb4-4d12-802c-f5ab921f7949` | `prefabricated-constructions` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/prefabricated-constructions--ba36cb75-5bb4-4d12-802c-f5ab921f7949` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/prefabricated-constructions--ba36cb75-5bb4-4d12-802c-f5ab921f7949/normalized.md`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/prefabricated-constructions--ba36cb75-5bb4-4d12-802c-f5ab921f7949/candidate.md`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/prefabricated-constructions--ba36cb75-5bb4-4d12-802c-f5ab921f7949/sources.json`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/prefabricated-constructions--ba36cb75-5bb4-4d12-802c-f5ab921f7949/source-audit-evidence.json` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/prefabricated-constructions--ba36cb75-5bb4-4d12-802c-f5ab921f7949/question-edits` | `eligible-added` |
+
+Batch 088 generated artifacts:
+
+- Report: `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-088-local-first-report.md`
+- Ledger: `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-088-local-first-ledger.json`
+- Scoped checks: `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-088-local-first-scoped-checks.json`
+
+Batch 088 counts:
+
+- Articles completed: 5
+- Linked questions checked: 54
+- Source-safe question edits created: 54
+- Source evidence claims recorded: 64
+- Source hash checks recorded: 48
+- Unique local raw source families checked: 11
+- Scoped article JSON files parsed: 109
+- Real World Scenario sections added: 5
+
+Batch 088 raw PDF/source evidence:
+
+- `lea-plan-004-03-what-you-need-to-know-for-the-lea`: Design Process, Open Space Development Guidelines, PD 1216, PD 1096 RIRR accessibility provisions, and Building Construction Illustrated raw PDFs checked first; imported socio-psychology theory claims were narrowed to source-backed design goals, access, public open-space function, shade, route clarity, drainage, and circulation.
+- `lea-plan-004-04-what-you-need-to-know-for-the-lea`: Design Process, Open Space Development Guidelines, Construction Project Management Handbook, Sitework Lecture, and Building Technology - Siteworks raw PDFs checked first; generic management claims were narrowed to source-backed scope, quality, safety, sitework, O&M, training, and closeout controls.
+- `lea-plan-004-05-what-you-need-to-know-for-the-lea`: Good Building Handbook in the PH, Building Construction Illustrated, Building Construction Handbook 7th Ed by Chudley and Greeno, Construction Project Management Handbook, Sitework Lecture, and Building Technology - Siteworks raw PDFs checked first; lifecycle claims were narrowed to build quality, drainage, access, maintenance, commissioning, O&M, and as-built evidence.
+- `lea-plan-005-02-what-you-need-to-know-for-the-lea`: Open Space Development Guidelines, PD 1216, Building Construction Illustrated, and Green Building Illustrated raw PDFs checked first; exact native-species and invasive-species claims were removed because no official local raw species source was available in Batch 088, while source-safe planting, habitat, hydrology, microclimate, and open-space claims were retained.
+- `prefabricated-constructions`: PD 1096 RIRR Rule XV Section 1501 raw PDF checked first, with Building Construction Handbook 7th Ed by Chudley and Greeno, Building Construction Illustrated, and Construction Project Management Handbook as local construction support; prefabrication claims were narrowed to Section 1501 definition, materials, accredited testing, connections, anchorages, service openings, inspection, and placement safety.
+
+Batch 088 quality protocol results:
+
+- `bun run content-audit:compose -- --article-id <id> --overwrite`: PASS, 5/5 composed, blockers=0.
+- `bun run content-audit:diff -- --article-id <id> --summary`: PASS, 5/5 safe_to_push=true, blockers=0.
+- `bun run content-audit:validate -- --article-id <id> --summary`: PASS, 5/5 valid, blockers=0; component-usage warning only.
+- `bun run content-audit:ui-block-edits -- --article-id <id>`: PASS, 5/5 valid, blockers=0, warnings=0.
+- Scoped JSON parse, marker/source-gap scan, source hash checks, linked-question/question-edit count checks, and stale compose-error scan: PASS in scoped checks artifact.
+- `bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts`: PASS, 34 pass, 0 fail, 328 expect calls.
+- Final scoped `git diff --check`: PASS after this handoff update.
+
+Batch 088 scenario enrichment results:
+
+- `eligible-added`: 5
+- `eligible-deferred`: 0
+- `not-applicable`: 0
+- Scenario sections were added only where supported by the local raw/source evidence selected for the article cluster.
+
+Batch 088 final state:
+
+- Status: `PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW`
+- Blockers: 0
+- Stop condition: Batch 088 complete; do not start Batch 089 in this run.

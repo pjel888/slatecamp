@@ -1,0 +1,134 @@
+{
+  "$schema": "remediation-manifest-v1",
+  "description": "Template for per-article remediation tracking in the second-audit swarm. Coordinator fills this when any lane reports FAIL or BLOCKER. The remediation worker (typically Codex) updates the remediation_applied section. The re-audit lane appends the re_audit section.",
+  "template_version": "1.0",
+  "plan_reference": ".ai/03_plans/final-content-audit-prep/audit-swarm-partition-plan.md",
+
+  "remediation_id": "rem-{batch_number}-{article_slug}-{timestamp}",
+  "created_at": "ISO-8601 timestamp",
+  "updated_at": "ISO-8601 timestamp",
+
+  "article": {
+    "article_uuid": "string",
+    "slug": "string",
+    "title": "string",
+    "batch_number": "string",
+    "article_folder_path": "string",
+    "topic_family": "string",
+    "source_risk_tier": "string"
+  },
+
+  "failure": {
+    "overall_verdict": "FAIL | BLOCKER",
+    "primary_failing_lane": "legal_code | questions | roundtrip | scenarios | citation_evidence",
+    "finding_summary": "One-sentence description of the defect",
+    "finding_detail": "Exact claim text, file path, line/section, and expected vs actual evidence",
+    "lane_output_reference": "Path to the lane audit .md file that reported this failure",
+    "blocker_criteria_met": [
+      "section_number_not_in_pdf",
+      "dimension_contradicts_pdf",
+      "code_conflict_unresolved",
+      "answer_changed_without_rationale_update",
+      "placeholder_in_question_stem",
+      "normalized_candidate_hash_mismatch",
+      "json_parse_failure",
+      "fictional_source_in_scenario",
+      "raw_pdf_missing",
+      "hash_mismatch",
+      "verified_without_locator"
+    ],
+    "evidence_quotes": {
+      "expected": "string (what the source or standard requires)",
+      "actual": "string (what the article or question currently says)",
+      "source_file_path": "string",
+      "source_page_or_locator": "string"
+    },
+    "severity": "correctable | requires_source_narrowing | requires_human_sme | unresolvable"
+  },
+
+  "remediation_assignment": {
+    "assigned_worker": "claude | opencode | kimi | codex | human_sme",
+    "assignment_reason": "Why this worker was chosen for the fix",
+    "scope_limit": "Exactly what files and fields the worker may edit",
+    "must_not_edit": [
+      "other articles",
+      "batch ledgers",
+      "handoff files",
+      "supabase",
+      ".env",
+      "raw PDFs in vitruvius-connection"
+    ]
+  },
+
+  "remediation_applied": {
+    "status": "pending | in_progress | applied | verified | failed_remediation",
+    "applied_at": "ISO-8601 | null",
+    "applied_by": "worker name or session id",
+    "changes_made": [
+      {
+        "file_path": "string",
+        "change_type": "edit | delete | add | hash_update | metadata_repair",
+        "description": "What was changed and why",
+        "before_snippet": "string (for verification)",
+        "after_snippet": "string (for verification)"
+      }
+    ],
+    "validation_commands_run": [
+      {
+        "command": "string",
+        "result": "PASS | FAIL",
+        "output_summary": "string"
+      }
+    ],
+    "new_hashes": {
+      "normalized_sha256": "string | null",
+      "candidate_sha256": "string | null",
+      "source_audit_evidence_sha256": "string | null"
+    },
+    "blockers_resolved": ["string"],
+    "blockers_remaining": ["string"],
+    "notes": "Any ambiguity or risk introduced by the fix"
+  },
+
+  "re_audit": {
+    "status": "pending | assigned | in_progress | pass | fail | parked",
+    "assigned_lane": "same lane that originally found the failure",
+    "re_audited_at": "ISO-8601 | null",
+    "re_audited_by": "worker name or session id",
+    "re_audit_scope": "full article | changed scope only",
+    "verdict": "PASS | FAIL | BLOCKER | null",
+    "finding_delta": "What changed from the original failure, if anything",
+    "evidence_reference": "Path to the re-audit lane output file"
+  },
+
+  "coordinator_decision": {
+    "status": "pending | accepted_after_remediation | parked | escalated_to_human",
+    "decided_at": "ISO-8601 | null",
+    "decision_reason": "Why the coordinator accepted, parked, or escalated",
+    "final_location": "swarm-final-manifest.json | remediation-queue.json | parked-articles.json",
+    "human_sme_required": true
+  },
+
+  "parking": {
+    "is_parked": false,
+    "parked_at": "ISO-8601 | null",
+    "park_reason": "string | null",
+    "unpark_conditions": "string | null",
+    "blocking_dependencies": ["article_uuids or source_families that must be resolved first"]
+  },
+
+  "taxonomy_reference": {
+    "pass_fail_blocker_definitions": {
+      "PASS": "All lane checks satisfied. No warnings that rise to failure.",
+      "FAIL": "A specific, correctable defect was found. Enter remediation loop.",
+      "BLOCKER": "A severe defect risking student harm, legal liability, or data corruption. Immediate remediation; may park if unresolvable.",
+      "N_A": "Lane does not apply. Does not affect overall verdict."
+    },
+    "severity_definitions": {
+      "correctable": "Worker can fix the defect with an edit, hash update, or metadata repair.",
+      "requires_source_narrowing": "Article claims must be narrowed to match available raw sources.",
+      "requires_human_sme": "Legal/code interpretation or pedagogical judgment beyond AI auditor confidence.",
+      "unresolvable": "Raw source is missing and no narrowing is possible; or defect is structural and would require full rewrite."
+    }
+  }
+}

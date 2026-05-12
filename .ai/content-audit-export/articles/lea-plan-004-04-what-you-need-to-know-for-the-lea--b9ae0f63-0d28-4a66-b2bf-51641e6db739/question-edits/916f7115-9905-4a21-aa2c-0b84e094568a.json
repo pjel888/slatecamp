@@ -1,0 +1,99 @@
+{
+  "question_id": "916f7115-9905-4a21-aa2c-0b84e094568a",
+  "baseline_hash": "sha256:0b756df79a423b0e71c0c8704ce32ff26a61b92a2e49f25561016df7e67c34f3",
+  "action": "replace",
+  "reason": "source-audited-article-batch-088-local-first aligned linked question with checked local raw PDF/source evidence for lea-plan-004-04-what-you-need-to-know-for-the-lea.",
+  "approved_by": "codex-local-source-audit-batch-088",
+  "approved_at": "2026-05-12T11:55:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "b9ae0f63-0d28-4a66-b2bf-51641e6db739",
+    "parent_article_slug": "lea-plan-004-04-what-you-need-to-know-for-the-lea",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Design Process lines 52, 59, and 178; Open Space Development Guidelines lines 307-332, 374-376, and 1747-1763; Construction Project Management Handbook lines 291-435, 595-604, 1534, 2029-2051, 2239, 2375-2427, and 2670-2692; Sitework Lecture lines 253-288, 334-365, and 414-461; Building Technology - Siteworks lines 252, 274, 308, 342, 388, and 406.",
+    "checked_markdown_lines": [
+      "Design Process refined markdown lines 52, 59, 67, and 178; raw PDF hash checked locally.",
+      "Open Space Development Guidelines refined markdown lines 36-60, 307-332, 374-376, 1747-1763; raw PDF hash checked locally.",
+      "Construction Project Management Handbook refined markdown lines 291-435, 595-604, 1534, 1996, 2029-2051, 2239, 2375-2427, 2587-2640, and 2670-2692; raw PDF hash checked locally.",
+      "Sitework Lecture refined markdown lines 34, 80, 218, 253-288, 334-365, 414-461, and 520-588; raw PDF hash checked locally.",
+      "Building Technology - Siteworks refined markdown lines 131, 252, 274, 308, 326, 342, 388, and 406; raw PDF hash checked locally."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "design-process-b088",
+        "label": "Design Process",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
+        "sha256": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
+        "refined_markdown_sha256": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
+        "locator": "Design Process refined markdown lines 52, 59, 67, and 178; raw PDF hash checked locally."
+      },
+      {
+        "source_id": "open-space-development-guidelines-b088",
+        "label": "Open Space Development Guidelines",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Open Space Development Guidelines.pdf",
+        "sha256": "sha256:2ca6d61605d370035cdd8679a43cdd57d5f40deada47601ea56e5161733e0add",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Open Space Development Guidelines.md",
+        "refined_markdown_sha256": "sha256:2be9fa0f23c22913f06acedf5905c5ebf004240ee764b47a2b1c97e15b9d9b2b",
+        "locator": "Open Space Development Guidelines refined markdown lines 36-60, 307-332, 374-376, 1747-1763; raw PDF hash checked locally."
+      },
+      {
+        "source_id": "construction-project-management-handbook-b088",
+        "label": "Construction Project Management Handbook",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Construction Project Management Handbook by Shadan _ Fleming.pdf",
+        "sha256": "sha256:01dd25a5de726377eb53bafb502127a806cc007ffc05e8dad745479b0ad6ad17",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Construction Project Management Handbook by Shadan _ Fleming.md",
+        "refined_markdown_sha256": "sha256:9d7f7c772d1efcce9db4c8f1e59cc5d19711cd99448799ae6ce783ebb6b78c77",
+        "locator": "Construction Project Management Handbook refined markdown lines 291-435, 595-604, 1534, 1996, 2029-2051, 2239, 2375-2427, 2587-2640, and 2670-2692; raw PDF hash checked locally."
+      },
+      {
+        "source_id": "sitework-lecture-b088",
+        "label": "Sitework Lecture",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Sitework Lecture.pdf",
+        "sha256": "sha256:a469e97d2c4b842f443864c658fc4359ef2787a2b009b9fbafc1afbd1da25ff6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Sitework Lecture.md",
+        "refined_markdown_sha256": "sha256:e761c9b38b9d0c07bd6053692337109a218169ba791e8f074fa40842d3972af2",
+        "locator": "Sitework Lecture refined markdown lines 34, 80, 218, 253-288, 334-365, 414-461, and 520-588; raw PDF hash checked locally."
+      },
+      {
+        "source_id": "building-technology-siteworks-b088",
+        "label": "Building Technology - Siteworks",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Technology - Siteworks.pdf",
+        "sha256": "sha256:9f498be4a288011a0e8b750d4bb8316afebf07a908993620579c311da30e02a2",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Technology - Siteworks.md",
+        "refined_markdown_sha256": "sha256:3e34ffc7b60b926a2cd75fbde6239ff3f05e7e53993d8cb6f8d5f1d865c64296",
+        "locator": "Building Technology - Siteworks refined markdown lines 131, 252, 274, 308, 326, 342, 388, and 406; raw PDF hash checked locally."
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 088 local raw-source-audited site_open_space_management scope."
+  },
+  "proposed": {
+    "text": "What does the design-process source contribute to management decisions?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It keeps decisions tied to project goals and the right information at the right stage"
+      },
+      {
+        "id": "b",
+        "text": "It removes the need for source checks"
+      },
+      {
+        "id": "c",
+        "text": "It proves every management action is decorative"
+      },
+      {
+        "id": "d",
+        "text": "It replaces inspection and O&M"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Design-process guidance supports goal-based information and decision management.",
+    "explanation": "Design-process guidance supports goal-based information and decision management.",
+    "code_citation": "Design Process; Open Space Development Guidelines; Construction Project Management Handbook; Sitework Lecture; Building Technology - Siteworks",
+    "bloom_level": "understand",
+    "application_context": "source_audited_local_first_batch_088",
+    "practice_context": [],
+    "difficulty": 0.55
+  }
+}

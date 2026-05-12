@@ -1,0 +1,99 @@
+{
+  "question_id": "610892cf-0dae-40d9-94f4-98738e7a9c75",
+  "baseline_hash": "sha256:3fd73ce50b7fa60f5fe899f06e198baa88795a996b7cdaa86ac9c314d68f9eff",
+  "action": "replace",
+  "reason": "source-audited-article-batch-088-local-first aligned linked question with checked local raw PDF/source evidence for lea-plan-004-03-what-you-need-to-know-for-the-lea.",
+  "approved_by": "codex-local-source-audit-batch-088",
+  "approved_at": "2026-05-12T11:55:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "d2246ae0-2def-4144-b42d-f56172b13f67",
+    "parent_article_slug": "lea-plan-004-03-what-you-need-to-know-for-the-lea",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Design Process lines 52, 59, 67, and 178; Open Space Development Guidelines lines 36-60, 307-332, 374-376, and 1747-1763; PD 1216 lines 21-35 and 53-90; PD 1096 RIRR lines 6048-6135; Building Construction Illustrated lines 122, 252-266, 420, 448-479, 714-749, and 907-921.",
+    "checked_markdown_lines": [
+      "Design Process refined markdown lines 52, 59, 67, and 178; raw PDF hash checked locally.",
+      "Open Space Development Guidelines refined markdown lines 36-60, 307-332, 374-376, 1747-1763; raw PDF hash checked locally.",
+      "PD 1216 refined markdown lines 21-35, 53-90, and 214-240; raw PDF hash checked locally.",
+      "PD 1096 RIRR refined markdown lines 4358-4369 for Rule XV Section 1501 and lines 6048-6135 for accessible walkways, crossings, parking, and entrances; raw PDF hash checked locally.",
+      "Building Construction Illustrated refined markdown lines 122, 252-266, 350-360, 420, 448-479, 714-749, 829-921, 1236-1265, 14349-14352, 14838-14848, 2141-2158, 3131-3151, and 3316-3457; raw PDF hash checked locally."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "design-process-b088",
+        "label": "Design Process",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
+        "sha256": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
+        "refined_markdown_sha256": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
+        "locator": "Design Process refined markdown lines 52, 59, 67, and 178; raw PDF hash checked locally."
+      },
+      {
+        "source_id": "open-space-development-guidelines-b088",
+        "label": "Open Space Development Guidelines",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Open Space Development Guidelines.pdf",
+        "sha256": "sha256:2ca6d61605d370035cdd8679a43cdd57d5f40deada47601ea56e5161733e0add",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Open Space Development Guidelines.md",
+        "refined_markdown_sha256": "sha256:2be9fa0f23c22913f06acedf5905c5ebf004240ee764b47a2b1c97e15b9d9b2b",
+        "locator": "Open Space Development Guidelines refined markdown lines 36-60, 307-332, 374-376, 1747-1763; raw PDF hash checked locally."
+      },
+      {
+        "source_id": "pd-1216-open-space-requirements-b088",
+        "label": "PD 1216 - Open Space Requirements in Subdivisions",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1216/PD 1216 - Open Space Requirements in Subdivisions.pdf",
+        "sha256": "sha256:bc878b419cb2714a81257ceccb711e312b3e5a0839c255ad2d5b88128784acc2",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1216/PD 1216 - Open Space Requirements in Subdivisions.md",
+        "refined_markdown_sha256": "sha256:a6374165776a14a8c85797220c57588f75adebbf98f9a41bd18dd9b70f3d4b17",
+        "locator": "PD 1216 refined markdown lines 21-35, 53-90, and 214-240; raw PDF hash checked locally."
+      },
+      {
+        "source_id": "pd-1096-rirr-prefabricated-and-accessibility-b088",
+        "label": "PD 1096 RIRR 2004 - Revised IRR (DPWH Official)",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "locator": "PD 1096 RIRR refined markdown lines 4358-4369 for Rule XV Section 1501 and lines 6048-6135 for accessible walkways, crossings, parking, and entrances; raw PDF hash checked locally."
+      },
+      {
+        "source_id": "building-construction-illustrated-5th-b088",
+        "label": "Building Construction Illustrated, 5th Edition",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "refined_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "locator": "Building Construction Illustrated refined markdown lines 122, 252-266, 350-360, 420, 448-479, 714-749, 829-921, 1236-1265, 14349-14352, 14838-14848, 2141-2158, 3131-3151, and 3316-3457; raw PDF hash checked locally."
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 088 local raw-source-audited human_use_open_space_and_access_planning scope."
+  },
+  "proposed": {
+    "text": "Which design move best fits a plaza used by elderly residents and wheelchair users?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A straightforward, slip-resistant route with turning or rest areas and accessible entrance connections"
+      },
+      {
+        "id": "b",
+        "text": "A narrow obstructed shortcut"
+      },
+      {
+        "id": "c",
+        "text": "A decorative stair as the only route"
+      },
+      {
+        "id": "d",
+        "text": "A path that ignores defined edges"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "PD 1096 RIRR supports accessible route, walkway, crossing, and entrance considerations.",
+    "explanation": "PD 1096 RIRR supports accessible route, walkway, crossing, and entrance considerations.",
+    "code_citation": "Design Process; Open Space Development Guidelines; PD 1216 - Open Space Requirements in Subdivisions; PD 1096 RIRR 2004 - Revised IRR (DPWH Official); Building Construction Illustrated, 5th Edition",
+    "bloom_level": "understand",
+    "application_context": "source_audited_local_first_batch_088",
+    "practice_context": [],
+    "difficulty": 0.55
+  }
+}

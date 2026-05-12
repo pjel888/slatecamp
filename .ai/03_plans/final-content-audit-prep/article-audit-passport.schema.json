@@ -1,0 +1,396 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "article-audit-passport.schema.json",
+  "title": "Article Audit Passport",
+  "description": "Per-article machine-verifiable audit result. Each article in the final audit receives exactly one passport. All gates must resolve to PASS_LOCAL_FIRST for the article to be accepted.",
+  "type": "object",
+  "required": [
+    "passport_version",
+    "article_id",
+    "article_slug",
+    "article_folder_path",
+    "audited_at",
+    "auditor",
+    "audit_mode",
+    "overall_status",
+    "gates"
+  ],
+  "properties": {
+    "passport_version": {
+      "type": "string",
+      "const": "1.0.0",
+      "description": "Schema version of this passport"
+    },
+
+    "article_id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "UUID of the article being audited",
+      "example": "50d41d7e-57cd-4280-b850-e6d2f89414a6"
+    },
+
+    "article_slug": {
+      "type": "string",
+      "description": "Human-readable article slug",
+      "example": "lea-plan-002-01-core-concept"
+    },
+
+    "article_folder_path": {
+      "type": "string",
+      "description": "Absolute path to the article folder being audited",
+      "example": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6"
+    },
+
+    "audited_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp when the audit was completed"
+    },
+
+    "auditor": {
+      "type": "string",
+      "description": "Identifier of the auditor (agent name, human name, or system)"
+    },
+
+    "audit_mode": {
+      "type": "string",
+      "enum": ["read_only", "read_write"],
+      "description": "Whether this audit was read-only (swarm reviewer) or read-write (worker self-audit)"
+    },
+
+    "batch_number": {
+      "type": "string",
+      "description": "Batch number this article belongs to (e.g., '087')",
+      "example": "087"
+    },
+
+    "overall_status": {
+      "type": "string",
+      "enum": [
+        "PASS_LOCAL_FIRST",
+        "NEEDS_REMEDIATION",
+        "BLOCKED_SOURCE_GAP",
+        "BLOCKED_ROUNDTRIP",
+        "BLOCKED_QUESTION_MISMATCH",
+        "BLOCKED_VALIDATION"
+      ],
+      "description": "The worst status across all gates. PASS_LOCAL_FIRST only if all gates pass."
+    },
+
+    "gates": {
+      "type": "object",
+      "required": ["G1", "G2", "G3", "G4", "G5", "G6", "G7", "G8", "G9", "G10", "G11", "G12"],
+      "properties": {
+        "G1": {
+          "$ref": "#/$defs/gate_result",
+          "description": "Article Folder Integrity"
+        },
+        "G2": {
+          "$ref": "#/$defs/gate_result",
+          "description": "Raw-PDF-First Source Audit"
+        },
+        "G3": {
+          "$ref": "#/$defs/gate_result",
+          "description": "Source Hash Verification"
+        },
+        "G4": {
+          "$ref": "#/$defs/gate_result",
+          "description": "Claim-to-Source Traceability"
+        },
+        "G5": {
+          "$ref": "#/$defs/gate_result",
+          "description": "Placeholder / Internal Note / Source Gap Scan"
+        },
+        "G6": {
+          "$ref": "#/$defs/gate_result",
+          "description": "Linked Question / Question Edit Count Match"
+        },
+        "G7": {
+          "$ref": "#/$defs/gate_result",
+          "description": "Question Edit Integrity"
+        },
+        "G8": {
+          "$ref": "#/$defs/gate_result",
+          "description": "Rationale Source Safety"
+        },
+        "G9": {
+          "$ref": "#/$defs/gate_result",
+          "description": "Scenario Status / Source Safety"
+        },
+        "G10": {
+          "$ref": "#/$defs/gate_result",
+          "description": "Roundtrip Integrity"
+        },
+        "G11": {
+          "$ref": "#/$defs/gate_result",
+          "description": "JSON Parse Scan"
+        },
+        "G12": {
+          "$ref": "#/$defs/gate_result",
+          "description": "Stale Compose-Error Scan"
+        }
+      }
+    },
+
+    "counts": {
+      "type": "object",
+      "required": ["linked_questions", "question_edits", "sources", "checked_claims", "raw_pdf_families", "source_hashes_verified"],
+      "properties": {
+        "linked_questions": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of questions in linked-questions.json"
+        },
+        "question_edits": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of .json files in question-edits/"
+        },
+        "sources": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of source entries in sources.json"
+        },
+        "checked_claims": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of checked claims in source-audit-evidence.json"
+        },
+        "raw_pdf_families": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of unique raw PDF families referenced"
+        },
+        "source_hashes_verified": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of sha256 hashes verified against on-disk files"
+        }
+      }
+    },
+
+    "source_families": {
+      "type": "array",
+      "description": "All raw PDF families used as sources for this article",
+      "items": {
+        "type": "object",
+        "required": ["family_name", "raw_pdf_path", "sha256", "exists_on_disk", "hash_verified"],
+        "properties": {
+          "family_name": {
+            "type": "string",
+            "description": "Human-readable source family name",
+            "example": "HLURB CLUP Guidebook Vol. 1"
+          },
+          "raw_pdf_path": {
+            "type": "string",
+            "description": "Absolute path to the raw PDF on disk",
+            "example": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/HLURB_CLUP_Guidebook_Vol_1_11042015.pdf"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$",
+            "description": "Recorded sha256 hash from sources.json"
+          },
+          "exists_on_disk": {
+            "type": "boolean",
+            "description": "Whether the file exists at the stated path"
+          },
+          "hash_verified": {
+            "type": "boolean",
+            "description": "Whether the recorded sha256 matches the actual file hash"
+          },
+          "hash_verified_at": {
+            "type": "string",
+            "format": "date-time",
+            "description": "When the hash was verified (only if hash_verified is true)"
+          }
+        }
+      }
+    },
+
+    "scenario_enrichment": {
+      "type": "object",
+      "required": ["status"],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["eligible-added", "eligible-deferred", "not-applicable"],
+          "description": "Scenario enrichment status"
+        },
+        "not_applicable_reason": {
+          "type": "string",
+          "description": "Required if status is not-applicable"
+        },
+        "scenario_claims_source_safe": {
+          "type": "boolean",
+          "description": "Whether scenario claims trace to local raw-source families (required if eligible-added)"
+        },
+        "scenario_source_families": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Source families backing scenario claims (if eligible-added)"
+        }
+      }
+    },
+
+    "blocker_resolution": {
+      "type": "object",
+      "description": "Resolution status for manifest-declared blockers (only when manifest had blocker_resolution_needed: true)",
+      "properties": {
+        "manifest_declared_blockers": {
+          "type": "boolean",
+          "description": "Whether the manifest declared blockers for this article"
+        },
+        "manifest_blocker_notes": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Original blocker notes from the manifest"
+        },
+        "resolution_strategy": {
+          "type": "string",
+          "enum": ["source_narrowing", "source_acquired", "unresolved", "not_applicable"],
+          "description": "How blockers were resolved"
+        },
+        "resolution_notes": {
+          "type": "string",
+          "description": "How the resolution was achieved"
+        },
+        "blockers_fully_resolved": {
+          "type": "boolean",
+          "description": "Whether all manifest blockers have been fully resolved"
+        }
+      }
+    },
+
+    "reviewer_notes": {
+      "type": "string",
+      "description": "Free-form reviewer observations, concerns, or qualitative assessment. Does not override mechanical gate results."
+    },
+
+    "remediation_required": {
+      "type": "boolean",
+      "description": "True if overall_status is not PASS_LOCAL_FIRST"
+    },
+
+    "remediation_instructions": {
+      "type": "array",
+      "description": "Exact remediation steps if status is not PASS_LOCAL_FIRST",
+      "items": {
+        "type": "object",
+        "required": ["gate_id", "failure", "action"],
+        "properties": {
+          "gate_id": {
+            "type": "string",
+            "description": "Which gate failed (e.g., 'G5')"
+          },
+          "failure": {
+            "type": "string",
+            "description": "What specifically failed"
+          },
+          "action": {
+            "type": "string",
+            "description": "Exact remediation action required"
+          }
+        }
+      }
+    },
+
+    "independent_qa": {
+      "type": "object",
+      "description": "Populated after G13 independent QA review",
+      "properties": {
+        "completed": {
+          "type": "boolean"
+        },
+        "reviewer": {
+          "type": "string"
+        },
+        "reviewed_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "sampling_type": {
+          "type": "string",
+          "enum": ["deep_inspected", "count_verified_only"]
+        },
+        "verdict": {
+          "type": "string",
+          "enum": ["pass", "fail", "advisory_only"]
+        },
+        "findings": {
+          "type": "string",
+          "description": "Key findings from independent review"
+        },
+        "blockers_found": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+
+    "coordinator_acceptance": {
+      "type": "object",
+      "description": "Populated after G14 coordinator acceptance",
+      "properties": {
+        "accepted": {
+          "type": "boolean"
+        },
+        "accepted_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "coordinator": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    }
+  },
+
+  "$defs": {
+    "gate_result": {
+      "type": "object",
+      "required": ["status", "checks"],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["pass", "fail", "blocked", "skipped"],
+          "description": "Aggregate gate status: pass (all checks pass), fail (fixable), blocked (source/roundtrip/mismatch), skipped (not applicable)"
+        },
+        "failed_check_ids": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "IDs of checks that did not pass"
+        },
+        "checks": {
+          "type": "object",
+          "description": "Per-check results; keys are check IDs (e.g., G1.1, G5.2)",
+          "additionalProperties": {
+            "type": "object",
+            "required": ["status"],
+            "properties": {
+              "status": {
+                "type": "string",
+                "enum": ["pass", "fail", "blocked", "skipped"]
+              },
+              "evidence": {
+                "type": "string",
+                "description": "What was checked and what was found"
+              },
+              "detail": {
+                "description": "Machine-readable failure detail (type varies by check). See criteria.json for per-check detail types."
+              },
+              "checked_at": {
+                "type": "string",
+                "format": "date-time",
+                "description": "When this check was executed"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

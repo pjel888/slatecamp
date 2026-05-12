@@ -1,0 +1,89 @@
+{
+  "question_id": "aff27d36-142e-47e5-b54b-d8afe16d7915",
+  "baseline_hash": "sha256:c3cabf91314b561d9a60ff08e1ea3195f33e5b955ca9e89c97c66f1bbb8b9369",
+  "action": "replace",
+  "reason": "source-audited-article-batch-088-local-first aligned linked question with checked local raw PDF/source evidence for prefabricated-constructions.",
+  "approved_by": "codex-local-source-audit-batch-088",
+  "approved_at": "2026-05-12T11:55:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "ba36cb75-5bb4-4d12-802c-f5ab921f7949",
+    "parent_article_slug": "prefabricated-constructions",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "PD 1096 RIRR lines 4358-4369 for Rule XV Section 1501; Chudley lines 295-300, 2222, 2276-2282, and 2291-2297; BCI lines 2141-2158, 3131-3151, and 3316-3457; Construction Project Management Handbook lines 2029-2051, 2239, 2375-2427, and 2587-2692.",
+    "checked_markdown_lines": [
+      "PD 1096 RIRR refined markdown lines 4358-4369 for Rule XV Section 1501 and lines 6048-6135 for accessible walkways, crossings, parking, and entrances; raw PDF hash checked locally.",
+      "Building Construction Handbook refined markdown lines 54, 162, 295-300, 2222, 2276-2282, and 2291-2297; raw PDF hash checked locally.",
+      "Building Construction Illustrated refined markdown lines 122, 252-266, 350-360, 420, 448-479, 714-749, 829-921, 1236-1265, 14349-14352, 14838-14848, 2141-2158, 3131-3151, and 3316-3457; raw PDF hash checked locally.",
+      "Construction Project Management Handbook refined markdown lines 291-435, 595-604, 1534, 1996, 2029-2051, 2239, 2375-2427, 2587-2640, and 2670-2692; raw PDF hash checked locally."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "pd-1096-rirr-prefabricated-and-accessibility-b088",
+        "label": "PD 1096 RIRR 2004 - Revised IRR (DPWH Official)",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "locator": "PD 1096 RIRR refined markdown lines 4358-4369 for Rule XV Section 1501 and lines 6048-6135 for accessible walkways, crossings, parking, and entrances; raw PDF hash checked locally."
+      },
+      {
+        "source_id": "building-construction-handbook-7th-b088",
+        "label": "Building Construction Handbook, 7th Ed by Chudley and Greeno",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf",
+        "sha256": "sha256:2efa493fac06a3efb9367111a397129ff8647778d88160bbe0174403cbb9e0bb",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.md",
+        "refined_markdown_sha256": "sha256:485fe968d55ca680cbde52d24fcee5f512a63591026db19e46835f1bc530dcbb",
+        "locator": "Building Construction Handbook refined markdown lines 54, 162, 295-300, 2222, 2276-2282, and 2291-2297; raw PDF hash checked locally."
+      },
+      {
+        "source_id": "building-construction-illustrated-5th-b088",
+        "label": "Building Construction Illustrated, 5th Edition",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "refined_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+        "locator": "Building Construction Illustrated refined markdown lines 122, 252-266, 350-360, 420, 448-479, 714-749, 829-921, 1236-1265, 14349-14352, 14838-14848, 2141-2158, 3131-3151, and 3316-3457; raw PDF hash checked locally."
+      },
+      {
+        "source_id": "construction-project-management-handbook-b088",
+        "label": "Construction Project Management Handbook",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Construction Project Management Handbook by Shadan _ Fleming.pdf",
+        "sha256": "sha256:01dd25a5de726377eb53bafb502127a806cc007ffc05e8dad745479b0ad6ad17",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Construction Project Management Handbook by Shadan _ Fleming.md",
+        "refined_markdown_sha256": "sha256:9d7f7c772d1efcce9db4c8f1e59cc5d19711cd99448799ae6ce783ebb6b78c77",
+        "locator": "Construction Project Management Handbook refined markdown lines 291-435, 595-604, 1534, 1996, 2029-2051, 2239, 2375-2427, 2587-2640, and 2670-2692; raw PDF hash checked locally."
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the Batch 088 local raw-source-audited pd1096_prefabricated_construction scope."
+  },
+  "proposed": {
+    "text": "Which material category is expressly source-safe in Section 1501?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Precast concrete, metal, uPVC, or another material acceptable to the architect or engineer"
+      },
+      {
+        "id": "b",
+        "text": "Only bamboo by default"
+      },
+      {
+        "id": "c",
+        "text": "Only glass curtain wall by memory"
+      },
+      {
+        "id": "d",
+        "text": "Only any material with no professional acceptance"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "PD 1096 RIRR Section 1501 lists precast concrete, metal, uPVC, and other acceptable materials.",
+    "explanation": "PD 1096 RIRR Section 1501 lists precast concrete, metal, uPVC, and other acceptable materials.",
+    "code_citation": "PD 1096 RIRR 2004 - Revised IRR (DPWH Official); Building Construction Handbook, 7th Ed by Chudley and Greeno; Building Construction Illustrated, 5th Edition; Construction Project Management Handbook",
+    "bloom_level": "understand",
+    "application_context": "source_audited_local_first_batch_088",
+    "practice_context": [],
+    "difficulty": 0.55
+  }
+}

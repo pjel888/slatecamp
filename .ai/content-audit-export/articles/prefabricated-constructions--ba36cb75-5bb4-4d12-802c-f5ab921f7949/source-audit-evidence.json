@@ -1,0 +1,327 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-088-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T11:55:00.000+08:00",
+  "target": {
+    "article_id": "ba36cb75-5bb4-4d12-802c-f5ab921f7949",
+    "slug": "prefabricated-constructions",
+    "title": "Prefabricated construction under PD 1096 Rule XV Section 1501",
+    "article_folder": ".ai/content-audit-export/articles/prefabricated-constructions--ba36cb75-5bb4-4d12-802c-f5ab921f7949",
+    "normalized_sha256": "sha256:bfdef0cc55e29d2a5a0919d58905d8730be9e1d3b7469ef679c717de112404e9",
+    "candidate_sha256": "sha256:bfdef0cc55e29d2a5a0919d58905d8730be9e1d3b7469ef679c717de112404e9",
+    "candidate_path": ".ai/content-audit-export/articles/prefabricated-constructions--ba36cb75-5bb4-4d12-802c-f5ab921f7949/candidate.md"
+  },
+  "classification": {
+    "topic_family": "pd1096_prefabricated_construction",
+    "local_first_batch": "088",
+    "source_sensitivity": "planning_building_technology_and_code",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "building_code_prefabricated_construction",
+    "requires_raw_pdf_audit": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_final_publishing_review": true,
+    "blockers": [],
+    "warnings": []
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdfs_checked_first": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "local_pdf_extraction_method": "local_raw_file_hash_and_refined_locator_review",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "pd-1096-rirr-prefabricated-and-accessibility-b088",
+      "label": "PD 1096 RIRR 2004 - Revised IRR (DPWH Official)",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "locator": "PD 1096 RIRR refined markdown lines 4358-4369 for Rule XV Section 1501 and lines 6048-6135 for accessible walkways, crossings, parking, and entrances; raw PDF hash checked locally."
+    },
+    {
+      "source_id": "building-construction-handbook-7th-b088",
+      "label": "Building Construction Handbook, 7th Ed by Chudley and Greeno",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.pdf",
+      "sha256": "sha256:2efa493fac06a3efb9367111a397129ff8647778d88160bbe0174403cbb9e0bb",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Buidling Construction Handbook 7th Ed by Chudley _ Greeno.md",
+      "refined_markdown_sha256": "sha256:485fe968d55ca680cbde52d24fcee5f512a63591026db19e46835f1bc530dcbb",
+      "locator": "Building Construction Handbook refined markdown lines 54, 162, 295-300, 2222, 2276-2282, and 2291-2297; raw PDF hash checked locally."
+    },
+    {
+      "source_id": "building-construction-illustrated-5th-b088",
+      "label": "Building Construction Illustrated, 5th Edition",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+      "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+      "refined_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "locator": "Building Construction Illustrated refined markdown lines 122, 252-266, 350-360, 420, 448-479, 714-749, 829-921, 1236-1265, 14349-14352, 14838-14848, 2141-2158, 3131-3151, and 3316-3457; raw PDF hash checked locally."
+    },
+    {
+      "source_id": "construction-project-management-handbook-b088",
+      "label": "Construction Project Management Handbook",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Construction Project Management Handbook by Shadan _ Fleming.pdf",
+      "sha256": "sha256:01dd25a5de726377eb53bafb502127a806cc007ffc05e8dad745479b0ad6ad17",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Construction Project Management Handbook by Shadan _ Fleming.md",
+      "refined_markdown_sha256": "sha256:9d7f7c772d1efcce9db4c8f1e59cc5d19711cd99448799ae6ce783ebb6b78c77",
+      "locator": "Construction Project Management Handbook refined markdown lines 291-435, 595-604, 1534, 1996, 2029-2051, 2239, 2375-2427, 2587-2640, and 2670-2692; raw PDF hash checked locally."
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "prefabricated-constructions-article-b088",
+      "claim_text": "Article prefabricated-constructions was rewritten to the checked pd1096_prefabricated_construction source scope.",
+      "claim_type": "article_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 RIRR lines 4358-4369 for Rule XV Section 1501; Chudley lines 295-300, 2222, 2276-2282, and 2291-2297; BCI lines 2141-2158, 3131-3151, and 3316-3457; Construction Project Management Handbook lines 2029-2051, 2239, 2375-2427, and 2587-2692.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; refined markdown locators and local raw PDF hashes were used as primary evidence."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "prefabricated-constructions-scenario-b088",
+      "claim_text": "Real World Scenario for prefabricated-constructions was added from the checked pd1096_prefabricated_construction source scope.",
+      "claim_type": "scenario_enrichment",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 RIRR lines 4358-4369 for Rule XV Section 1501; Chudley lines 295-300, 2222, 2276-2282, and 2291-2297; BCI lines 2141-2158, 3131-3151, and 3316-3457; Construction Project Management Handbook lines 2029-2051, 2239, 2375-2427, and 2587-2692.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; refined markdown locators and local raw PDF hashes were used as primary evidence."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-65d73baf-6850-491a-aa2c-6ac69bfe1b2a-b088",
+      "claim_text": "Question 65d73baf-6850-491a-aa2c-6ac69bfe1b2a was rewritten to the checked pd1096_prefabricated_construction source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 RIRR lines 4358-4369 for Rule XV Section 1501; Chudley lines 295-300, 2222, 2276-2282, and 2291-2297; BCI lines 2141-2158, 3131-3151, and 3316-3457; Construction Project Management Handbook lines 2029-2051, 2239, 2375-2427, and 2587-2692.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; refined markdown locators and local raw PDF hashes were used as primary evidence."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-aff27d36-142e-47e5-b54b-d8afe16d7915-b088",
+      "claim_text": "Question aff27d36-142e-47e5-b54b-d8afe16d7915 was rewritten to the checked pd1096_prefabricated_construction source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 RIRR lines 4358-4369 for Rule XV Section 1501; Chudley lines 295-300, 2222, 2276-2282, and 2291-2297; BCI lines 2141-2158, 3131-3151, and 3316-3457; Construction Project Management Handbook lines 2029-2051, 2239, 2375-2427, and 2587-2692.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; refined markdown locators and local raw PDF hashes were used as primary evidence."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-4bb6024d-1d73-4bff-90bb-1bfa86123602-b088",
+      "claim_text": "Question 4bb6024d-1d73-4bff-90bb-1bfa86123602 was rewritten to the checked pd1096_prefabricated_construction source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 RIRR lines 4358-4369 for Rule XV Section 1501; Chudley lines 295-300, 2222, 2276-2282, and 2291-2297; BCI lines 2141-2158, 3131-3151, and 3316-3457; Construction Project Management Handbook lines 2029-2051, 2239, 2375-2427, and 2587-2692.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; refined markdown locators and local raw PDF hashes were used as primary evidence."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-10423f29-b6c9-47c3-afb5-48a5faeecb54-b088",
+      "claim_text": "Question 10423f29-b6c9-47c3-afb5-48a5faeecb54 was rewritten to the checked pd1096_prefabricated_construction source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 RIRR lines 4358-4369 for Rule XV Section 1501; Chudley lines 295-300, 2222, 2276-2282, and 2291-2297; BCI lines 2141-2158, 3131-3151, and 3316-3457; Construction Project Management Handbook lines 2029-2051, 2239, 2375-2427, and 2587-2692.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; refined markdown locators and local raw PDF hashes were used as primary evidence."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-011b7f8b-2511-4b70-86cb-3d57e72bfe97-b088",
+      "claim_text": "Question 011b7f8b-2511-4b70-86cb-3d57e72bfe97 was rewritten to the checked pd1096_prefabricated_construction source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 RIRR lines 4358-4369 for Rule XV Section 1501; Chudley lines 295-300, 2222, 2276-2282, and 2291-2297; BCI lines 2141-2158, 3131-3151, and 3316-3457; Construction Project Management Handbook lines 2029-2051, 2239, 2375-2427, and 2587-2692.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; refined markdown locators and local raw PDF hashes were used as primary evidence."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-a254acd2-18f0-4520-a08e-ba6fccbf77ae-b088",
+      "claim_text": "Question a254acd2-18f0-4520-a08e-ba6fccbf77ae was rewritten to the checked pd1096_prefabricated_construction source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 RIRR lines 4358-4369 for Rule XV Section 1501; Chudley lines 295-300, 2222, 2276-2282, and 2291-2297; BCI lines 2141-2158, 3131-3151, and 3316-3457; Construction Project Management Handbook lines 2029-2051, 2239, 2375-2427, and 2587-2692.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; refined markdown locators and local raw PDF hashes were used as primary evidence."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-7e6370cf-9e6b-442a-991f-c9bdfabc0557-b088",
+      "claim_text": "Question 7e6370cf-9e6b-442a-991f-c9bdfabc0557 was rewritten to the checked pd1096_prefabricated_construction source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 RIRR lines 4358-4369 for Rule XV Section 1501; Chudley lines 295-300, 2222, 2276-2282, and 2291-2297; BCI lines 2141-2158, 3131-3151, and 3316-3457; Construction Project Management Handbook lines 2029-2051, 2239, 2375-2427, and 2587-2692.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; refined markdown locators and local raw PDF hashes were used as primary evidence."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-ee499f3c-1f07-4aee-9ac1-37a2a1fabc61-b088",
+      "claim_text": "Question ee499f3c-1f07-4aee-9ac1-37a2a1fabc61 was rewritten to the checked pd1096_prefabricated_construction source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 RIRR lines 4358-4369 for Rule XV Section 1501; Chudley lines 295-300, 2222, 2276-2282, and 2291-2297; BCI lines 2141-2158, 3131-3151, and 3316-3457; Construction Project Management Handbook lines 2029-2051, 2239, 2375-2427, and 2587-2692.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; refined markdown locators and local raw PDF hashes were used as primary evidence."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-e5959b12-edd2-4956-9988-061f3525494d-b088",
+      "claim_text": "Question e5959b12-edd2-4956-9988-061f3525494d was rewritten to the checked pd1096_prefabricated_construction source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 RIRR lines 4358-4369 for Rule XV Section 1501; Chudley lines 295-300, 2222, 2276-2282, and 2291-2297; BCI lines 2141-2158, 3131-3151, and 3316-3457; Construction Project Management Handbook lines 2029-2051, 2239, 2375-2427, and 2587-2692.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; refined markdown locators and local raw PDF hashes were used as primary evidence."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-88cf885c-df7e-4cb9-a598-9d7271fb5a38-b088",
+      "claim_text": "Question 88cf885c-df7e-4cb9-a598-9d7271fb5a38 was rewritten to the checked pd1096_prefabricated_construction source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 RIRR lines 4358-4369 for Rule XV Section 1501; Chudley lines 295-300, 2222, 2276-2282, and 2291-2297; BCI lines 2141-2158, 3131-3151, and 3316-3457; Construction Project Management Handbook lines 2029-2051, 2239, 2375-2427, and 2587-2692.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; refined markdown locators and local raw PDF hashes were used as primary evidence."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-3031ae8a-dcfd-4fb0-ac66-ba324336b205-b088",
+      "claim_text": "Question 3031ae8a-dcfd-4fb0-ac66-ba324336b205 was rewritten to the checked pd1096_prefabricated_construction source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 RIRR lines 4358-4369 for Rule XV Section 1501; Chudley lines 295-300, 2222, 2276-2282, and 2291-2297; BCI lines 2141-2158, 3131-3151, and 3316-3457; Construction Project Management Handbook lines 2029-2051, 2239, 2375-2427, and 2587-2692.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; refined markdown locators and local raw PDF hashes were used as primary evidence."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-f7c2dda1-7f12-40f4-9afe-eb50ba706133-b088",
+      "claim_text": "Question f7c2dda1-7f12-40f4-9afe-eb50ba706133 was rewritten to the checked pd1096_prefabricated_construction source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 RIRR lines 4358-4369 for Rule XV Section 1501; Chudley lines 295-300, 2222, 2276-2282, and 2291-2297; BCI lines 2141-2158, 3131-3151, and 3316-3457; Construction Project Management Handbook lines 2029-2051, 2239, 2375-2427, and 2587-2692.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; refined markdown locators and local raw PDF hashes were used as primary evidence."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-a665384f-d93a-4ee7-b69b-9a8f667f1618-b088",
+      "claim_text": "Question a665384f-d93a-4ee7-b69b-9a8f667f1618 was rewritten to the checked pd1096_prefabricated_construction source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 RIRR lines 4358-4369 for Rule XV Section 1501; Chudley lines 295-300, 2222, 2276-2282, and 2291-2297; BCI lines 2141-2158, 3131-3151, and 3316-3457; Construction Project Management Handbook lines 2029-2051, 2239, 2375-2427, and 2587-2692.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; refined markdown locators and local raw PDF hashes were used as primary evidence."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-c15ec8d0-b82f-4e47-8b53-f75f6531d587-b088",
+      "claim_text": "Question c15ec8d0-b82f-4e47-8b53-f75f6531d587 was rewritten to the checked pd1096_prefabricated_construction source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "source_locator": "PD 1096 RIRR lines 4358-4369 for Rule XV Section 1501; Chudley lines 295-300, 2222, 2276-2282, and 2291-2297; BCI lines 2141-2158, 3131-3151, and 3316-3457; Construction Project Management Handbook lines 2029-2051, 2239, 2375-2427, and 2587-2692.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; refined markdown locators and local raw PDF hashes were used as primary evidence."
+      },
+      "blockers": []
+    }
+  ],
+  "removed_or_out_of_scope_claims": [
+    "Extraneous seismic-zone, laboratory-name, crane, and construction-method details were narrowed to PD 1096 Section 1501 plus local support for connections, modular coordination, testing, safety, and closeout."
+  ],
+  "question_edit_audit": {
+    "linked_question_count": 14,
+    "question_edit_count": 14,
+    "answer_key_fields_changed": true,
+    "source_safe_rewrite": true,
+    "blockers": []
+  },
+  "scenario_enrichment": {
+    "status": "eligible-added",
+    "reason": "eligible-added: Batch 088 added a concise prefabricated-construction review scenario supported primarily by PD 1096 RIRR Rule XV Section 1501 and secondarily by local connection, modular coordination, testing, safety, and closeout sources.",
+    "section_title": "Real World Scenario"
+  },
+  "roundtrip": {
+    "normalized_md_owns_article_prose": true,
+    "ui_blocks_json_owns_raw_ui_blocks": true,
+    "candidate_md_generated_by_compose": true,
+    "raw_ui_block_edits_supported_in_this_batch": false,
+    "note": "All selected Batch 088 folders have zero raw UI blocks; article prose is owned by normalized.md and candidate.md is generated by compose.",
+    "unresolved_ui_summary_markers_removed": true
+  }
+}

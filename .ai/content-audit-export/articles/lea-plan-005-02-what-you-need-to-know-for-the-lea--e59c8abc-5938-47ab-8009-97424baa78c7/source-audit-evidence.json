@@ -1,0 +1,271 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-088-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T11:55:00.000+08:00",
+  "target": {
+    "article_id": "e59c8abc-5938-47ab-8009-97424baa78c7",
+    "slug": "lea-plan-005-02-what-you-need-to-know-for-the-lea",
+    "title": "Planting and open-space ecology must stay inside checked site and public-realm sources",
+    "article_folder": ".ai/content-audit-export/articles/lea-plan-005-02-what-you-need-to-know-for-the-lea--e59c8abc-5938-47ab-8009-97424baa78c7",
+    "normalized_sha256": "sha256:ab221234c7eac840d84dc099e48c4bc4ed5ba5dd5f0dbaf05549c2c8c6796564",
+    "candidate_sha256": "sha256:ab221234c7eac840d84dc099e48c4bc4ed5ba5dd5f0dbaf05549c2c8c6796564",
+    "candidate_path": ".ai/content-audit-export/articles/lea-plan-005-02-what-you-need-to-know-for-the-lea--e59c8abc-5938-47ab-8009-97424baa78c7/candidate.md"
+  },
+  "classification": {
+    "topic_family": "planting_open_space_and_site_ecology",
+    "local_first_batch": "088",
+    "source_sensitivity": "planning_building_technology_and_code",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "planting_open_space_site_ecology",
+    "requires_raw_pdf_audit": true
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_final_publishing_review": true,
+    "blockers": [],
+    "warnings": []
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "raw_pdfs_checked_first": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "local_pdf_extraction_method": "local_raw_file_hash_and_refined_locator_review",
+    "blockers": []
+  },
+  "checked_sources": [
+    {
+      "source_id": "open-space-development-guidelines-b088",
+      "label": "Open Space Development Guidelines",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Open Space Development Guidelines.pdf",
+      "sha256": "sha256:2ca6d61605d370035cdd8679a43cdd57d5f40deada47601ea56e5161733e0add",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Open Space Development Guidelines.md",
+      "refined_markdown_sha256": "sha256:2be9fa0f23c22913f06acedf5905c5ebf004240ee764b47a2b1c97e15b9d9b2b",
+      "locator": "Open Space Development Guidelines refined markdown lines 36-60, 307-332, 374-376, 1747-1763; raw PDF hash checked locally."
+    },
+    {
+      "source_id": "pd-1216-open-space-requirements-b088",
+      "label": "PD 1216 - Open Space Requirements in Subdivisions",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1216/PD 1216 - Open Space Requirements in Subdivisions.pdf",
+      "sha256": "sha256:bc878b419cb2714a81257ceccb711e312b3e5a0839c255ad2d5b88128784acc2",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1216/PD 1216 - Open Space Requirements in Subdivisions.md",
+      "refined_markdown_sha256": "sha256:a6374165776a14a8c85797220c57588f75adebbf98f9a41bd18dd9b70f3d4b17",
+      "locator": "PD 1216 refined markdown lines 21-35, 53-90, and 214-240; raw PDF hash checked locally."
+    },
+    {
+      "source_id": "building-construction-illustrated-5th-b088",
+      "label": "Building Construction Illustrated, 5th Edition",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+      "sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+      "refined_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "locator": "Building Construction Illustrated refined markdown lines 122, 252-266, 350-360, 420, 448-479, 714-749, 829-921, 1236-1265, 14349-14352, 14838-14848, 2141-2158, 3131-3151, and 3316-3457; raw PDF hash checked locally."
+    },
+    {
+      "source_id": "green-building-illustrated-b088",
+      "label": "Green Building Illustrated",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Green Building Illustrated.pdf",
+      "sha256": "sha256:b23f127ca4581eb2d733b14e2a3739d022c9d04b343729b0ecdebdf92d0bdc70",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Green Building Illustrated.md",
+      "refined_markdown_sha256": "sha256:4c754dad2867dea176cd93c2f93788b7874ccbbe557096bb64cbb0ab3a0165d2",
+      "locator": "Green Building Illustrated refined markdown lines 169, 271, 779-787, 911-933, 1176-1234, 1396, 1479-1499, 9082, 9124, and 9150; raw PDF hash checked locally."
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-plan-005-02-what-you-need-to-know-for-the-lea-article-b088",
+      "claim_text": "Article lea-plan-005-02-what-you-need-to-know-for-the-lea was rewritten to the checked planting_open_space_and_site_ecology source scope.",
+      "claim_type": "article_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "Open Space Development Guidelines lines 36-60, 307-332, 374-376, 1753-1763; PD 1216 lines 53-90 and 214-240; Building Construction Illustrated lines 122, 252-266, 420, 448-479, 714-749, and 829-921; Green Building Illustrated lines 169, 1176-1234, 1396, 1479-1499, 9082, and 9150.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; refined markdown locators and local raw PDF hashes were used as primary evidence."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "lea-plan-005-02-what-you-need-to-know-for-the-lea-scenario-b088",
+      "claim_text": "Real World Scenario for lea-plan-005-02-what-you-need-to-know-for-the-lea was added from the checked planting_open_space_and_site_ecology source scope.",
+      "claim_type": "scenario_enrichment",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "Open Space Development Guidelines lines 36-60, 307-332, 374-376, 1753-1763; PD 1216 lines 53-90 and 214-240; Building Construction Illustrated lines 122, 252-266, 420, 448-479, 714-749, and 829-921; Green Building Illustrated lines 169, 1176-1234, 1396, 1479-1499, 9082, and 9150.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; refined markdown locators and local raw PDF hashes were used as primary evidence."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-e19b9c3e-4e10-4e65-aa03-89b682e8090f-b088",
+      "claim_text": "Question e19b9c3e-4e10-4e65-aa03-89b682e8090f was rewritten to the checked planting_open_space_and_site_ecology source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "Open Space Development Guidelines lines 36-60, 307-332, 374-376, 1753-1763; PD 1216 lines 53-90 and 214-240; Building Construction Illustrated lines 122, 252-266, 420, 448-479, 714-749, and 829-921; Green Building Illustrated lines 169, 1176-1234, 1396, 1479-1499, 9082, and 9150.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; refined markdown locators and local raw PDF hashes were used as primary evidence."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-7734ead8-6601-44ee-ada1-f11845dae0ea-b088",
+      "claim_text": "Question 7734ead8-6601-44ee-ada1-f11845dae0ea was rewritten to the checked planting_open_space_and_site_ecology source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "Open Space Development Guidelines lines 36-60, 307-332, 374-376, 1753-1763; PD 1216 lines 53-90 and 214-240; Building Construction Illustrated lines 122, 252-266, 420, 448-479, 714-749, and 829-921; Green Building Illustrated lines 169, 1176-1234, 1396, 1479-1499, 9082, and 9150.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; refined markdown locators and local raw PDF hashes were used as primary evidence."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-0e28044c-20d3-4ffe-889f-b59ab7ccbf88-b088",
+      "claim_text": "Question 0e28044c-20d3-4ffe-889f-b59ab7ccbf88 was rewritten to the checked planting_open_space_and_site_ecology source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "Open Space Development Guidelines lines 36-60, 307-332, 374-376, 1753-1763; PD 1216 lines 53-90 and 214-240; Building Construction Illustrated lines 122, 252-266, 420, 448-479, 714-749, and 829-921; Green Building Illustrated lines 169, 1176-1234, 1396, 1479-1499, 9082, and 9150.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; refined markdown locators and local raw PDF hashes were used as primary evidence."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-6adb27f8-39f1-43ea-9627-a9d06aa955af-b088",
+      "claim_text": "Question 6adb27f8-39f1-43ea-9627-a9d06aa955af was rewritten to the checked planting_open_space_and_site_ecology source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "Open Space Development Guidelines lines 36-60, 307-332, 374-376, 1753-1763; PD 1216 lines 53-90 and 214-240; Building Construction Illustrated lines 122, 252-266, 420, 448-479, 714-749, and 829-921; Green Building Illustrated lines 169, 1176-1234, 1396, 1479-1499, 9082, and 9150.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; refined markdown locators and local raw PDF hashes were used as primary evidence."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-6a4deba3-9824-427d-85e4-09dfd634223e-b088",
+      "claim_text": "Question 6a4deba3-9824-427d-85e4-09dfd634223e was rewritten to the checked planting_open_space_and_site_ecology source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "Open Space Development Guidelines lines 36-60, 307-332, 374-376, 1753-1763; PD 1216 lines 53-90 and 214-240; Building Construction Illustrated lines 122, 252-266, 420, 448-479, 714-749, and 829-921; Green Building Illustrated lines 169, 1176-1234, 1396, 1479-1499, 9082, and 9150.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; refined markdown locators and local raw PDF hashes were used as primary evidence."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-ee780da5-104e-4683-86de-d3c92ea9625f-b088",
+      "claim_text": "Question ee780da5-104e-4683-86de-d3c92ea9625f was rewritten to the checked planting_open_space_and_site_ecology source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "Open Space Development Guidelines lines 36-60, 307-332, 374-376, 1753-1763; PD 1216 lines 53-90 and 214-240; Building Construction Illustrated lines 122, 252-266, 420, 448-479, 714-749, and 829-921; Green Building Illustrated lines 169, 1176-1234, 1396, 1479-1499, 9082, and 9150.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; refined markdown locators and local raw PDF hashes were used as primary evidence."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-9d9ec5e4-b493-4abf-b4eb-e9e5fe6c887b-b088",
+      "claim_text": "Question 9d9ec5e4-b493-4abf-b4eb-e9e5fe6c887b was rewritten to the checked planting_open_space_and_site_ecology source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "Open Space Development Guidelines lines 36-60, 307-332, 374-376, 1753-1763; PD 1216 lines 53-90 and 214-240; Building Construction Illustrated lines 122, 252-266, 420, 448-479, 714-749, and 829-921; Green Building Illustrated lines 169, 1176-1234, 1396, 1479-1499, 9082, and 9150.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; refined markdown locators and local raw PDF hashes were used as primary evidence."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-e7eed1b2-4d28-4ee2-bf85-abda02b11e88-b088",
+      "claim_text": "Question e7eed1b2-4d28-4ee2-bf85-abda02b11e88 was rewritten to the checked planting_open_space_and_site_ecology source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "Open Space Development Guidelines lines 36-60, 307-332, 374-376, 1753-1763; PD 1216 lines 53-90 and 214-240; Building Construction Illustrated lines 122, 252-266, 420, 448-479, 714-749, and 829-921; Green Building Illustrated lines 169, 1176-1234, 1396, 1479-1499, 9082, and 9150.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; refined markdown locators and local raw PDF hashes were used as primary evidence."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-e841e37b-a250-41ab-973f-d7ff3b2a389b-b088",
+      "claim_text": "Question e841e37b-a250-41ab-973f-d7ff3b2a389b was rewritten to the checked planting_open_space_and_site_ecology source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "Open Space Development Guidelines lines 36-60, 307-332, 374-376, 1753-1763; PD 1216 lines 53-90 and 214-240; Building Construction Illustrated lines 122, 252-266, 420, 448-479, 714-749, and 829-921; Green Building Illustrated lines 169, 1176-1234, 1396, 1479-1499, 9082, and 9150.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; refined markdown locators and local raw PDF hashes were used as primary evidence."
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "question-4ab9f3fc-dabd-446a-bca0-506fb581daa0-b088",
+      "claim_text": "Question 4ab9f3fc-dabd-446a-bca0-506fb581daa0 was rewritten to the checked planting_open_space_and_site_ecology source scope.",
+      "claim_type": "question_edit_rewrite",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+        "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+        "source_locator": "Open Space Development Guidelines lines 36-60, 307-332, 374-376, 1753-1763; PD 1216 lines 53-90 and 214-240; Building Construction Illustrated lines 122, 252-266, 420, 448-479, 714-749, and 829-921; Green Building Illustrated lines 169, 1176-1234, 1396, 1479-1499, 9082, and 9150.",
+        "quoted_pdf_excerpt": "Claim is constrained to the checked local raw-source-audited scope; refined markdown locators and local raw PDF hashes were used as primary evidence."
+      },
+      "blockers": []
+    }
+  ],
+  "removed_or_out_of_scope_claims": [
+    "Species-specific native, endemic, succession, and invasive-plant examples were removed or generalized because no official Philippine native-species planting raw source was available in the local layer for Batch 088."
+  ],
+  "question_edit_audit": {
+    "linked_question_count": 10,
+    "question_edit_count": 10,
+    "answer_key_fields_changed": true,
+    "source_safe_rewrite": true,
+    "blockers": []
+  },
+  "scenario_enrichment": {
+    "status": "eligible-added",
+    "reason": "eligible-added: Batch 088 added a concise planting and open-space ecology scenario after removing species-specific claims that lacked an official local raw source.",
+    "section_title": "Real World Scenario"
+  },
+  "roundtrip": {
+    "normalized_md_owns_article_prose": true,
+    "ui_blocks_json_owns_raw_ui_blocks": true,
+    "candidate_md_generated_by_compose": true,
+    "raw_ui_block_edits_supported_in_this_batch": false,
+    "note": "All selected Batch 088 folders have zero raw UI blocks; article prose is owned by normalized.md and candidate.md is generated by compose.",
+    "unresolved_ui_summary_markers_removed": true
+  }
+}

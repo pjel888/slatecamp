@@ -1,204 +1,41 @@
+# Human-use planning turns behavior claims into source-checked design tasks
 
-
-## Board Exam Quick Check
-
-Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
-
-**Common mistake:** treating a familiar keyword in **Lea Plan 004 03 What You Need To Know For The Lea** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## What You Need to Know for the LEA
 
-## Learning Goal
-Apply socio-psychological principles — privacy gradients, territoriality, density perception, wayfinding, defensible space — to site planning decisions, design for human comfort and safety, and evaluate social space quality.
+This topic was narrowed away from imported socio-psychology theory and into source-checked design decisions. For LEA purposes, human-use planning is safest when behavior observations are translated into goals, public open-space function, accessible route requirements, legible edges, shade, seating, planting, drainage, and circulation.
 
-Socio-psychological considerations are about how people experience a site and how human behavior shapes site planning. This is not about design aesthetics (that belongs to other articles) or about conducting community participation (that is LEA-PLAN-008-04). This article addresses the underlying principles of human behavior that inform site planning: privacy, territoriality, density perception, wayfinding, and the social spaces within and around a site.
+## Core Concept
 
-### Privacy and Privacy Gradients
+- The design-process source frames design as goal-based decision work: gather the right information at the right stage, define the problem, and evaluate decisions against project goals.
+- The open-space guidance treats parks, plazas, trails, green networks, and public spaces as places that support physical, mental, and social well-being, gathering, connection, habitats, and quality of life.
+- PD 1216 supports the public open-space baseline for subdivisions, including parks, playgrounds, recreational use, tree planting, nonbuildable status for required parks and playgrounds, and non-conversion after donation.
+- PD 1096 RIRR accessibility provisions support level, slip-resistant, sufficiently wide walkways, turning and rest spaces, straightforward routes, dropped curbs, defined open-space edges, signage, accessible parking, and entrance access.
+- BCI supports site analysis that considers microclimate, topography, habitats, trees, shade, privacy, pedestrian and service circulation, access, drainage, and outdoor-use suitability.
 
-Privacy is the ability to control who sees you and what you do. Privacy needs vary with context and culture.
+## How It Is Tested
 
-**Privacy Gradient Concept**
+- Convert behavior or comfort stems into source-checked spatial decisions.
+- Prioritize access, public open-space function, route clarity, shade, drainage, and edge definition over named theories not locally sourced in this batch.
+- Use PD 1096 for accessibility details and PD 1216/open-space guidance for public open-space obligations.
 
-A well-planned site provides a range of privacy levels from public to private:
+## Real World Scenario
 
-1. **Public space** — Open to all, no control over who enters (streets, plazas, parks)
-2. **Semi-public space** — Access is open but the space is associated with a specific use (lobby, courtyard, community center entrance)
-3. **Semi-private space** — Access restricted to residents or users; outsiders may feel unwelcome (residential common area, playground for residents only)
-4. **Private space** — Access restricted; strong sense of ownership (home interior, family yard)
+A barangay plaza is being revised after users avoid the central path and elderly residents cannot comfortably reach the seating area. A source-safe LEA answer starts with the project goals and user information, then checks whether public open space is accessible, walkways are level and slip-resistant, routes are straightforward, and trees, shade, seating, defined edges, drainage, and service access support actual use.
 
-**Site Planning Application**
+## Common Mistakes
 
-- Allocate layered spaces so residents can move from fully public (street) to fully private (home) gradually
-- Provide intermediate spaces (courtyards, community gardens, sitting areas) that are semi-private
-- Avoid abrupt transitions (directly from busy street to residential windows)
-- In high-density sites, semi-private courtyards are crucial for mental health and community bonding
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-plan-004-03-what-you-need-to-know-fo", type="image", caption="Privacy Gradient — Public to Private Space Transition Diagram", description="Section diagram showing the four levels of privacy in well-planned sites: (1) Public space — street/plaza, open to all; (2) Semi-public space — lobby/courtyard, associated with specific use; (3) Semi-private space — residential common area/playground, restricted to residents; (4) Private space — home interior/family yard, strong ownership. Arrows show gradual transition from fully public to fully private with buffer zones.", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+- Do not answer with Hall, Jacobs, territoriality formulas, or density thresholds unless a local raw source for that exact claim is in the batch.
+- Do not treat a plaza, park, or walkway as only decorative when checked sources emphasize access, use, comfort, public benefit, and maintenance.
+- Do not keep raw UI block markers or prose that assumes a source not listed in the local evidence file.
 
-### Territoriality and Sense of Ownership
+## Sources Checked
 
-Territoriality is people's innate need to establish and defend space as "theirs." In planning, this is expressed as a sense of _ownership_ or _belonging_.
+- Design Process: Design Process refined markdown lines 52, 59, 67, and 178; raw PDF hash checked locally.
+- Open Space Development Guidelines: Open Space Development Guidelines refined markdown lines 36-60, 307-332, 374-376, 1747-1763; raw PDF hash checked locally.
+- PD 1216 - Open Space Requirements in Subdivisions: PD 1216 refined markdown lines 21-35, 53-90, and 214-240; raw PDF hash checked locally.
+- PD 1096 RIRR 2004 - Revised IRR (DPWH Official): PD 1096 RIRR refined markdown lines 4358-4369 for Rule XV Section 1501 and lines 6048-6135 for accessible walkways, crossings, parking, and entrances; raw PDF hash checked locally.
+- Building Construction Illustrated, 5th Edition: Building Construction Illustrated refined markdown lines 122, 252-266, 350-360, 420, 448-479, 714-749, 829-921, 1236-1265, 14349-14352, 14838-14848, 2141-2158, 3131-3151, and 3316-3457; raw PDF hash checked locally.
 
-**How to Strengthen Territoriality in Site Planning**
+## Scenario Enrichment Status
 
-1. **Clear definition of space** — Boundaries (fences, changes in material, slight elevation) signal "this is our space"
-2. **Personalization** — Allow residents to mark space (planting, painting, furnishing); bland institutional spaces feel impersonal
-3. **Limited access** — Gates, paths, or subtle cues indicate "residents only"
-4. **Mix of unit sizes** — Allows diverse socioeconomic groups; homogeneous sites create exclusion
-5. **Community gathering points** — Shared spaces where people meet, reducing isolation and increasing informal surveillance ("eyes on the street")
-
-**In Filipino Context**
-
-- Barangay bayanihans (community work events) and fiestas strengthen territoriality
-- Informal markets and basketball courts are traditional gathering points
-- Informal settlements often have stronger social cohesion than planned low-cost housing because residents have self-built and personalized their spaces
-- Planned housing that allows self-finishing and home improvement sees stronger sense of ownership
-
-### Density, Crowding, and Psychological Stress
-
-Density is the number of people per unit area. _Crowding_ is the subjective feeling of having too many people in too little space—it is psychological, not just numerical.
-
-**Density Thresholds and Psychological Response**
-
-- **Low density** (e.g., 50 persons/hectare) — Suburban feel; low sense of crowding; may feel isolating
-- **Medium-low density** (100–150 persons/hectare) — Walkable neighborhood; feels comfortable to most
-- **Medium-high density** (200–300 persons/hectare) — Urban, can feel crowded if transitions are abrupt
-- **High density** (>400 persons/hectare) — Very dense; crowding stress is high unless carefully designed with privacy gradients and community spaces
-
-**Factors That Mitigate Crowding Stress**
-
-1. **Private space per person** — Minimum 22–24 sq.m. per person in housing; below this, crowding stress increases
-2. **Access to semi-private outdoor space** — Courtyards, balconies, rooftop gardens reduce the feeling of confinement
-3. **Proximity to public open space** — Parks, plazas, and community facilities within 5-minute walk reduce stress
-4. **Visual complexity and variety** — Monotonous streetscapes (identical buildings, same height) feel cramped; varied facades and uses feel less crowded
-5. **Clear wayfinding** — Confusing layouts increase stress; legible sites feel more comfortable
-
-**Design Response**
-- Do not pack units with zero outdoor space
-- Provide community spaces even in very high-density sites
-- Use varied architecture and uses to break visual monotony
-- Ensure residents can escape to a park or plaza within short walk
-[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="unknown"]
-Extracted summary:
-- Props: id="media-lea-plan-004-03-what-you-need-to-know-fo", type="image", caption="Density Thresholds — Persons per Hectare Comparison Chart", description=true, Visual=true, comparison=true, of=true, four=true, density=true, levels=true, with=true, psychological=true
-- Text: 400 p/ha — dense, requires community spaces and varied architecture). Shows relationship between density and crowding stress with mitigation strategies (private space, semi-private outdoor space, visual variety)." suggestedAsset="Diagram or reference image" status="placeholder" />
-[/SLATECAMP_UI_BLOCK]
-
-### Social Distance and Interaction Patterns
-
-Social distance is how far apart people stand and how they interact. Culture, context, and comfort shape this.
-
-**Proxemics (Study of Personal Space)**
-
-Edward Hall's distance zones (approximate; varies by culture):
-- **Intimate distance** (0–45 cm) — Family, close friends, touch
-- **Personal distance** (45 cm–1.2 m) — Casual conversation
-- **Social distance** (1.2–3.6 m) — Work interactions, formal conversation
-- **Public distance** (>3.6 m) — Lectures, performances
-
-**Site Planning Implication**
-
-Seating, plaza design, and street furniture should allow people to maintain comfortable social distance:
-- Benches arranged at conversational distance (1–2 meters apart) encourage interaction
-- Wide sidewalks (minimum 3 meters, better 4–5 meters) allow pedestrians to pass without entering intimate space
-- Public gathering areas should have varied seating to accommodate groups and individuals
-- Narrow alleys (2–3 meters) feel oppressive in some cultures; widen for comfort
-
-### Surveillance and "Eyes on the Street"
-
-_Eyes on the street_ (Jane Jacobs' concept) means that informal surveillance by residents and passersby—watching what happens in public space—increases safety and discourage crime.
-
-**How to Enable Eyes on the Street in Site Planning**
-
-1. **Ground-floor active uses** — Shops, cafes, community centers with windows onto the street; residents looking out increase informal surveillance
-2. **Varied activity times** — 24-hour uses (some nighttime activity) mean there are always "eyes" present
-3. **Good lighting** — Bright, visible spaces are safer
-4. **Minimal setbacks** — Buildings close to the street; residents and shopkeepers can see what happens
-5. **Avoidance of large blank walls** — Dead facades reduce surveillance opportunity
-6. **Clear sightlines** — Dense vegetation or corners that hide activity reduce informal surveillance
-
-**What Site Planning Does NOT Do**
-
-- Design excessive security cameras or fencing (that is a security choice, not a planning principle)
-- Create "defensible space" that excludes legitimate users (that is a design choice)
-- Use surveillance as a substitute for good urban design
-
-### Wayfinding and Legibility
-
-People need to understand where they are and how to get where they want to go. A _legible_ site is easy to navigate.
-
-**Reference Note**: Kevin Lynch's five elements (paths, edges, districts, nodes, landmarks) are the classic framework for legibility. The full treatment belongs to LEA-PLAN-002-05. In this article, the planner notes: _"Paths should be clear, nodes marked by distinct features, landmarks visible for orientation, and edges defined."_ That is the extent of Lynch's presence here.
-
-**Site Planning Role in Legibility**
-
-1. **Clear path hierarchy** — Primary paths wider and better-lit; secondary paths connected logically
-2. **Visible decision points** — Where paths meet or branch, mark with seating, vegetation, or change in material
-3. **Visual markers** — Trees, water, art, or distinctive architecture mark key places and aid navigation
-4. **Address and wayfinding signage** — Numbers and signs should be visible and logical (not hidden)
-5. **Walking and cycling network connectivity** — Paths should connect logically to surrounding neighborhoods
-
-**In Philippine Barangays**
-
-- Many informal settlements are labyrinthine (narrow alleys, dead ends); residents know their way but outsiders are lost
-- Formal planned communities often have gridded streets that are legible but monotonous
-- Improved wayfinding (signage, seating at intersections) can make informal areas more navigable
-
-### Community Identity and Placemaking
-
-A place with strong identity is one where residents feel pride and belonging.
-
-**What Creates Placemaking**
-
-1. **Unique character** — Not replicated elsewhere; reflects local history or culture
-2. **Community participation in design and naming** — People invest in places they help create
-3. **Public art and cultural expression** — Murals, sculptures, cultural centers mark identity
-4. **Mixed-income and mixed-use** — Socioeconomic diversity strengthens community cohesion
-5. **Local shops and gathering spots** — Sari-sari stores, basketball courts, market areas are identity anchors
-6. **Access to cultural or natural heritage** — Parks, heritage buildings, sacred sites strengthen place meaning
-
-**PRA (Participatory Rural Appraisal) Reference**
-
-Community input tools (PRA, focus groups, community visioning) are used to understand and shape place identity. The full treatment of PRA methods belongs to LEA-PLAN-008-04. In site planning, the planner notes: _"Gather community input on what makes this place distinctive and what uses/spaces matter to residents."_ That is this article's role.
-
-### Accessibility and Inclusive Design
-
-All people—including children, elderly, people with disabilities, and people with different mobility needs—should be able to use public and semi-public space.
-
-**Universal Design Principles for Site Planning**
-
-1. **Level, slip-resistant surfaces** — Accessible to wheelchairs and walkers; safe for all
-2. **Ramps and accessible routes** — Alternatives to stairs; reduce barriers
-3. **Seating and rest stops** — Benches at 100–200 meter intervals; essential for elderly and mobility-impaired
-4. **Accessible water fountains and toilets** — Universal needs, not luxury
-5. **Clear signage** — Especially important for wayfinding in markets, terminals, health centers
-6. **Lighting and visibility** — Safe for vision-impaired and fearful users (especially women, youth at night)
-7. **Shade and weather protection** — Essential in tropical climates; benches under trees or structures
-8. **Safe pedestrian crossings** — Marked, well-lit intersections with adequate crossing time
-
-**In Filipino Context**
-
-- Many barangay centers have unpaved paths, open drains, and poor lighting—barriers to elderly and disabled residents
-- Accessible design is often treated as an add-on; it should be integral to site planning
-
-### What This Article Does NOT Own
-
-- **Lynch elements and five-element framework (full treatment)** — LEA-PLAN-002-05
-- **PRA methods and participatory design process (full)** — LEA-PLAN-008-04
-- **Design charrette and facilitating community input** — LEA-PLAN-008-04
-- **Detailed accessibility standards and building code compliance** — outside LEA-PLAN
-- **Crime prevention through environmental design (CPTED) methodology** — specialized topic, not in curriculum
-
-### Socio-Psychological Site Analysis Checklist
-
-[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: When analyzing a site's socio-psychological characteristics: 1. Assess existing privacy gradients—are there clear transitions from public to private? 2. Identify territorial markers and sense of ownership—do spaces feel claimed or abandoned? 3. Note current density and crowding stress—is the neighborhood comfortable or stressed? 4. Observe social interaction patterns—where do people gather? 5. Evaluate surveillance and "eyes on the street"—are there natural oversight opportunities? 6. Test legib
-[/SLATECAMP_UI_BLOCK]
-
----
-
-_LEA-PLAN-004-03: Socio-Psychological Considerations_
-_Site Planning Series | Content Owner: Human Behavior and Social Space in Site Analysis_
+eligible-added: Batch 088 added a concise open-space and accessible-route scenario supported by local design-process, open-space, PD 1216, PD 1096, and BCI locators.
