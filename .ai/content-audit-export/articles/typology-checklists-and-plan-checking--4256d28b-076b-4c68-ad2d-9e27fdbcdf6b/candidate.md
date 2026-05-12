@@ -6,9 +6,9 @@ Use a typology checklist as a source-backed plan-checking tool: start with the p
 
 ## Source-Audited Scope
 
-This Batch 053 local-first rewrite uses raw PDFs first. The Design Process source defines architectural programming as ordered problem definition: gathering, organizing, analyzing, interpreting, and presenting project information so a responsible design solution can be made. The same source shows translation guidelines as countable requirements, such as a fixed number of student organization kiosks with minimum floor areas and specified lobby locations.
+This Batch 093 local-first rewrite uses raw PDFs first. The Design Process source defines architectural programming as ordered problem definition: gathering, organizing, analyzing, interpreting, and presenting project information so a responsible design solution can be made. The same source shows translation guidelines as countable requirements, such as a fixed number of student organization kiosks with minimum floor areas and specified lobby locations.
 
-The BP 344 2024 Revised IRR source is used for accessibility plan-check dimensions. RA 9442 privilege and incentive claims are not used in this article because the exact RA 9442 raw-law PDF was not found in the local raw source layer during selection.
+The BP 344 2024 Revised IRR source is used for accessibility plan-check dimensions. PD 1096 is used for permit-stage architectural review categories, including occupancy, height, parking/loading, accessibility, light, and ventilation. RA 9514 is used only to coordinate means-of-egress and occupant-load checks. RA 9442 privilege and incentive claims are not used in this article because the exact RA 9442 raw-law PDF was not found in the local raw source layer during selection.
 
 ## Plan-Checking Sequence
 
@@ -23,9 +23,28 @@ The BP 344 2024 Revised IRR source is used for accessibility plan-check dimensio
 9. Check signage and tactile wayfinding. The ISA and tactile/directional signage must lead users to accessible routes and facilities. Wall and door signs with graphic, text, and Braille content are installed at a maximum 1500 mm center height.
 10. Record exceptions as blockers. If a drawing relies on a privilege, incentive, or legal right outside BP 344, do not infer it from accessibility sources. Park it until the exact legal raw PDF is available.
 
+## Permit Plan-Checking Coordination
+
+A typology checklist should feed the permit review rather than sit beside it. Once the program has been translated into spaces, routes, counters, toilets, parking, and public-use areas, the same set of drawings should be checked against PD 1096 architectural review topics: occupancy classification, height, parking/loading, accessibility features, light, and ventilation. RA 9514 then supports the separate life-safety coordination for exit count, egress width, occupant load, exit arrangement, dead-end limits, and travel distance.
+
+## Real World Scenario
+
+In a small campus clinic with a cafe counter and student service desks, the plan checker can turn the program into a compact checklist: count the rooms and users, identify the public entrance and accessible route, verify accessible parking if parking is required, check doors and toilets, then test counters, dining tables, signage, and any elevator access. The same sheet should flag PD 1096 occupancy and height review plus RA 9514 egress coordination, so the project is not approved on accessibility dimensions while missing a permit-stage occupancy or life-safety issue.
+
 ## Exam Traps
 
 - Do not repeat older values when the checked 2024 IRR source gives a different dimension. In this batch, accessible parking is 4000 mm by 5000 mm, not 3700 mm by 5000 mm.
 - Do not treat a checklist as design authority by itself. The checklist must trace to program requirements and the raw source family.
 - Do not mix privilege-law claims into a BP 344 plan checklist unless the privilege law has its own checked raw PDF.
 - Do not allow a route checklist to stop at the entrance. It must continue through doors, toilets, vertical access, service counters, dining, refuge, and signage where those elements exist.
+
+## Source Checkpoints
+
+- Design Process refined markdown lines 49-68: problem identification, information collection, synthesis, evaluation, iteration, and architectural programming.
+- BP 344 2024 Revised IRR lines 40-64: accessible ramp width, slope, landings, and handrails.
+- BP 344 2024 Revised IRR lines 230-348: accessible parking and signage.
+- BP 344 2024 Revised IRR lines 685-808: walks, accessible entrances, and door clearances.
+- BP 344 2024 Revised IRR lines 917-1018: accessible toilets and elevators.
+- BP 344 2024 Revised IRR lines 1157-1225: counters, workstations, dining tables, and switches.
+- PD 1096 RIRR lines 756-844: permit-stage architectural review and fire safety referral.
+- RA 9514 RIRR lines 2476-2490 and 2635-2716: means-of-egress principles, occupant load, egress width, exit count, exit arrangement, dead-end limits, and travel distance.

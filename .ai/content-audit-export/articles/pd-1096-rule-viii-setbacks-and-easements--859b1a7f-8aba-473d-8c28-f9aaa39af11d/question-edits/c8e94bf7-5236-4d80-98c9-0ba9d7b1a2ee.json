@@ -2,15 +2,17 @@
   "question_id": "c8e94bf7-5236-4d80-98c9-0ba9d7b1a2ee",
   "baseline_hash": "sha256:74fd8eb294b38b368e4a9e4f070890345b172da0bb6ffe11f59b5d3feaded62e",
   "action": "replace",
-  "reason": "source-audited-article-batch-067-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes prior off-source framing where present.",
-  "approved_by": "codex-local-first-batch-067",
-  "approved_at": "2026-05-11T23:36:12+08:00",
+  "reason": "source-audited-article-batch-093-local-first: source-safe local replacement/reapproval grounded in checked local raw sources for pd-1096-rule-viii-setbacks-and-easements; preserves answer-key alignment while removing stale prior-batch support where present.",
+  "approved_by": "codex-local-source-audit-batch-093",
+  "approved_at": "2026-05-12T20:26:21+08:00",
   "source_audit_support": {
     "parent_article_id": "859b1a7f-8aba-473d-8c28-f9aaa39af11d",
     "parent_article_slug": "pd-1096-rule-viii-setbacks-and-easements",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; PD 1067 refined markdown lines 193-195; raw PDF page 9 checked by local PDF extraction",
+    "batch_id": "source-audited-article-batch-093-local-first",
+    "primary_truth": "vitruvius-connection/001_Raw-Source-Layer",
+    "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1851-1999, and 2097-2300; local raw PDF and raw markdown checked. | PD 1067 refined markdown lines 193-195; local raw PDF and raw markdown checked.",
     "checked_markdown_lines": [
       "PD 1096 RIRR lines 486-530",
       "PD 1096 RIRR lines 545-631",
@@ -19,43 +21,40 @@
       "PD 1096 RIRR lines 1088-1149",
       "PD 1096 RIRR lines 1310-1329",
       "PD 1096 RIRR lines 1452-1498",
-      "PD 1096 RIRR lines 1627-1771",
+      "PD 1096 RIRR lines 1851-1999",
       "PD 1096 RIRR lines 2097-2300",
       "PD 1067 refined markdown lines 193-195"
     ],
     "checked_raw_pdf_pages": [
-      "PD 1096 raw PDF pages 21-22",
-      "PD 1096 raw PDF pages 34-36",
-      "PD 1096 raw PDF page 47",
-      "PD 1096 raw PDF page 80",
-      "PD 1096 raw PDF pages 88-90",
-      "PD 1096 raw PDF page 97",
-      "PD 1096 raw PDF page 107",
-      "PD 1096 raw PDF page 119",
-      "PD 1096 raw PDF pages 126 and 128",
-      "PD 1067 raw PDF page 9"
+      "PD 1096 raw PDF pages corresponding to Rule III permit processing and Rule VII/VIII development controls, verified through local conversion artifacts",
+      "PD 1067 raw PDF page corresponding to Article 51, verified through local conversion artifacts"
     ],
     "checked_sources": [
       {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "label": "PD 1096 RIRR 2004 - permits, occupancy, mixed occupancy, height, yards, and parking",
+        "source_id": "pd1096-rirr-dpwh-local-b093",
+        "label": "PD 1096 2004 Revised IRR - National Building Code development controls and permit review",
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
         "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction"
+        "locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1851-1999, and 2097-2300; local raw PDF and raw markdown checked."
       },
       {
-        "source_id": "pd1067-water-code-easements-local-b067",
-        "label": "PD 1067 Water Code - Article 51 public-use easements along waters",
+        "source_id": "pd1067-water-code-easements-local-b093",
+        "label": "PD 1067 Water Code - public-use easements along water bodies",
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1067/PD 1067 - Water Code of the Philippines.pdf",
         "sha256": "sha256:90fdccc66152977f0e628d47c9a7c6a0e5a93faa7d02c9344012679f1e0d4f07",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1067/PD 1067 - Water Code of the Philippines.md",
+        "raw_markdown_sha256": "sha256:bd6bee3504bf1798ec0c4bf3d81d0431a24b23461410a4a4fd1d4f9144cc0a15",
         "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1067/PD 1067 - Water Code of the Philippines.md",
         "refined_markdown_sha256": "sha256:1f64532d7d02f840e5d6c2710e6730d17a99f28fd1e1371839e7690174b942a7",
-        "locator": "PD 1067 refined markdown lines 193-195; raw PDF page 9 checked by local PDF extraction"
+        "locator": "PD 1067 refined markdown lines 193-195; local raw PDF and raw markdown checked."
       }
     ],
-    "local_source_safe_action": "Question text, options, answer, rationale, and citation rewritten to the Batch 067 checked local raw-source scope."
+    "scenario_enrichment_article_status": "eligible-added",
+    "local_source_safe_action": "Question edit revalidated for Batch 093 against checked local raw-source support for pd-1096-rule-viii-setbacks-and-easements."
   },
   "proposed": {
     "text": "In PD 1096 terminology, what is a yard?",

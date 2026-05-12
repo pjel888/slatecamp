@@ -32,9 +32,12 @@ When a building has more than one occupancy, the default PD 1096 rule is to appl
 3. Apply the most restrictive requirement unless a checked exception applies.
 4. Coordinate the occupancy result with egress, fire-resistive separation, height, area, parking, and other dependent controls.
 
+## Real World Scenario
+
+In a small mixed-use building with ground-floor dining, clinic rooms, and upper residential units, the plan checker should not choose the occupancy from the project name alone. The safer sequence is to identify each actual use, test whether any accessory use stays within the ten-percent exception, then apply the most restrictive occupancy requirement if no exception fits. After that classification, egress capacity, exit count, fire-resistive separation, height, area, and parking checks can be reviewed against the coordinated PD 1096 and Fire Code requirements.
+
 ## Source Checkpoints
 
 - PD 1096 RIRR lines 1088-1149: occupancy groups A through J.
 - PD 1096 RIRR lines 1310-1329: mixed occupancy and fire-resistive separation.
 - RA 9514 RIRR lines 2476-2490 and 2635-2716: egress principles used only as coordination context.
-- PD 9514 lines 1599-1629 and 1766-1854: life-safety and egress principles used only as supporting context.

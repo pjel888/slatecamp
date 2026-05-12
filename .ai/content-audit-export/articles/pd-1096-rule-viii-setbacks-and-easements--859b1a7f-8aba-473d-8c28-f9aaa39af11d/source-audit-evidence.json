@@ -1,15 +1,16 @@
 {
-  "batch_id": "source-audited-article-batch-067-local-first",
-  "audit_date": "2026-05-11",
-  "audited_at": "2026-05-11T23:36:12+08:00",
+  "batch_id": "source-audited-article-batch-093-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T20:58:26+08:00",
   "target": {
     "article_id": "859b1a7f-8aba-473d-8c28-f9aaa39af11d",
     "slug": "pd-1096-rule-viii-setbacks-and-easements",
     "title": "PD 1096 Rule VIII Setbacks and Easements",
     "article_folder": ".ai/content-audit-export/articles/pd-1096-rule-viii-setbacks-and-easements--859b1a7f-8aba-473d-8c28-f9aaa39af11d",
-    "normalized_sha256": "sha256:3fffa33793b23d1a9c804084c4f71a17dbdaa429e2025aa521958e360e50d4d6",
-    "candidate_sha256": "sha256:3fffa33793b23d1a9c804084c4f71a17dbdaa429e2025aa521958e360e50d4d6",
-    "candidate_path": ".ai/content-audit-export/articles/pd-1096-rule-viii-setbacks-and-easements--859b1a7f-8aba-473d-8c28-f9aaa39af11d/candidate.md"
+    "normalized_sha256": "sha256:fe43cc36e0f640d97d2886c064148dbb40d446b62692b2078091d180edb7f390",
+    "candidate_sha256": "sha256:fe43cc36e0f640d97d2886c064148dbb40d446b62692b2078091d180edb7f390",
+    "candidate_path": ".ai/content-audit-export/articles/pd-1096-rule-viii-setbacks-and-easements--859b1a7f-8aba-473d-8c28-f9aaa39af11d/candidate.md",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/pd-1096-rule-viii-setbacks-and-easements--859b1a7f-8aba-473d-8c28-f9aaa39af11d/question-edits"
   },
   "classification": {
     "legal_or_code_candidate": true,
@@ -17,31 +18,29 @@
     "requires_raw_pdf_audit": true,
     "source_risk_tier": "high",
     "source_domains": [
-      "PD 1096 RIRR 2004 - permits, occupancy, mixed occupancy, height, yards, and parking",
-      "PD 1067 Water Code - Article 51 public-use easements along waters"
+      "PD 1096 2004 Revised IRR - National Building Code development controls and permit review",
+      "PD 1067 Water Code - public-use easements along water bodies"
     ]
   },
   "raw_pdf_gate": {
     "status": "PASS",
     "raw_pdfs_checked_first": true,
-    "all_legal_code_claims_have_pdf_locator": true,
-    "all_section_numbers_verified_against_raw_pdf": true,
+    "all_legal_code_claims_have_local_source_locator": true,
     "no_derivative_text_used_as_source_of_truth": true,
     "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
-    "local_pdf_extraction_method": "python_pymupdf_local",
+    "local_conversion_layer_used_for_line_location": true,
     "blockers": []
   },
   "checked_sources": [
     {
-      "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-      "label": "PD 1096 RIRR 2004 - permits, occupancy, mixed occupancy, height, yards, and parking",
+      "source_id": "pd1096-rirr-dpwh-local-b093",
+      "label": "PD 1096 2004 Revised IRR - National Building Code development controls and permit review",
       "authority": "DPWH official revised IRR local raw PDF conversion",
       "source_type": "building_code_irr_pdf",
-      "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction",
+      "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1851-1999, and 2097-2300; local raw PDF and raw markdown checked.",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
       "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
       "checked_markdown_lines": [
         "PD 1096 RIRR lines 486-530",
         "PD 1096 RIRR lines 545-631",
@@ -50,459 +49,116 @@
         "PD 1096 RIRR lines 1088-1149",
         "PD 1096 RIRR lines 1310-1329",
         "PD 1096 RIRR lines 1452-1498",
-        "PD 1096 RIRR lines 1627-1771",
+        "PD 1096 RIRR lines 1851-1999",
         "PD 1096 RIRR lines 2097-2300"
       ],
       "checked_raw_pdf_pages": [
-        "PD 1096 raw PDF pages 21-22",
-        "PD 1096 raw PDF pages 34-36",
-        "PD 1096 raw PDF page 47",
-        "PD 1096 raw PDF page 80",
-        "PD 1096 raw PDF pages 88-90",
-        "PD 1096 raw PDF page 97",
-        "PD 1096 raw PDF page 107",
-        "PD 1096 raw PDF page 119",
-        "PD 1096 raw PDF pages 126 and 128"
+        "PD 1096 raw PDF pages corresponding to Rule III permit processing and Rule VII/VIII development controls, verified through local conversion artifacts"
       ],
-      "use": "primary source for Batch 067 PD 1096 article claims",
-      "local_source_checked": true
+      "use": "primary source for PD 1096 permit, occupancy, height, bulk, setback, and architectural review claims",
+      "local_source_checked": true,
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7"
     },
     {
-      "source_id": "pd1067-water-code-easements-local-b067",
-      "label": "PD 1067 Water Code - Article 51 public-use easements along waters",
-      "authority": "Water Code local raw PDF conversion",
+      "source_id": "pd1067-water-code-easements-local-b093",
+      "label": "PD 1067 Water Code - public-use easements along water bodies",
+      "authority": "Local raw PDF conversion of the Water Code of the Philippines",
       "source_type": "water_code_pdf",
-      "source_locator": "PD 1067 refined markdown lines 193-195; raw PDF page 9 checked by local PDF extraction",
+      "source_locator": "PD 1067 refined markdown lines 193-195; local raw PDF and raw markdown checked.",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1067/PD 1067 - Water Code of the Philippines.pdf",
-      "raw_pdf_sha256": "sha256:90fdccc66152977f0e628d47c9a7c6a0e5a93faa7d02c9344012679f1e0d4f07",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1067/PD 1067 - Water Code of the Philippines.md",
       "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1067/PD 1067 - Water Code of the Philippines.md",
-      "refined_markdown_sha256": "sha256:1f64532d7d02f840e5d6c2710e6730d17a99f28fd1e1371839e7690174b942a7",
       "checked_markdown_lines": [
         "PD 1067 refined markdown lines 193-195"
       ],
       "checked_raw_pdf_pages": [
-        "PD 1067 raw PDF page 9"
+        "PD 1067 raw PDF page corresponding to Article 51, verified through local conversion artifacts"
       ],
-      "use": "primary source for water-edge easement dimensions and no-structure rule",
-      "local_source_checked": true
+      "use": "primary source for water-edge public-use easement dimensions and no-structure rule",
+      "local_source_checked": true,
+      "raw_pdf_sha256": "sha256:90fdccc66152977f0e628d47c9a7c6a0e5a93faa7d02c9344012679f1e0d4f07",
+      "raw_markdown_sha256": "sha256:bd6bee3504bf1798ec0c4bf3d81d0431a24b23461410a4a4fd1d4f9144cc0a15",
+      "refined_markdown_sha256": "sha256:1f64532d7d02f840e5d6c2710e6730d17a99f28fd1e1371839e7690174b942a7"
     }
   ],
-  "claims": [
-    {
-      "claim_id": "article-source-scope",
-      "claim_text": "PD 1096 Rule VIII Setbacks and Easements was rewritten to checked Batch 067 local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; PD 1067 refined markdown lines 193-195; raw PDF page 9 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Article uses paraphrase only; raw PDF pages and refined line locators are recorded."
-      }
+  "scenario_enrichment": {
+    "status": "eligible-added",
+    "section": "Real World Scenario",
+    "reason": "Line-and-grade, incremental court width, and Water Code easement coordination are source-safe and exam-useful."
+  },
+  "question_edits": {
+    "expected_count": 27,
+    "linked_question_count": 27,
+    "edit_count": 27,
+    "counts_match_manifest": true,
+    "missing_question_edit_ids": [],
+    "extra_question_edit_ids": [],
+    "question_edit_paths": [
+      ".ai/content-audit-export/articles/pd-1096-rule-viii-setbacks-and-easements--859b1a7f-8aba-473d-8c28-f9aaa39af11d/question-edits/088bf412-dd1e-44b2-80e9-55248688e608.json",
+      ".ai/content-audit-export/articles/pd-1096-rule-viii-setbacks-and-easements--859b1a7f-8aba-473d-8c28-f9aaa39af11d/question-edits/1b370f2a-ff0a-4e79-9dff-44296fd30535.json",
+      ".ai/content-audit-export/articles/pd-1096-rule-viii-setbacks-and-easements--859b1a7f-8aba-473d-8c28-f9aaa39af11d/question-edits/1fe57252-71b9-4d60-822e-ac74aae20874.json",
+      ".ai/content-audit-export/articles/pd-1096-rule-viii-setbacks-and-easements--859b1a7f-8aba-473d-8c28-f9aaa39af11d/question-edits/2657d566-b53b-4c61-ba2d-bc7d59e2a6cf.json",
+      ".ai/content-audit-export/articles/pd-1096-rule-viii-setbacks-and-easements--859b1a7f-8aba-473d-8c28-f9aaa39af11d/question-edits/27deac52-c889-41c2-8649-2c9b2d02fc69.json",
+      ".ai/content-audit-export/articles/pd-1096-rule-viii-setbacks-and-easements--859b1a7f-8aba-473d-8c28-f9aaa39af11d/question-edits/29b0d616-5447-4eae-a7fd-34549a9a86c4.json",
+      ".ai/content-audit-export/articles/pd-1096-rule-viii-setbacks-and-easements--859b1a7f-8aba-473d-8c28-f9aaa39af11d/question-edits/44fe761c-6d46-4163-a0fe-eb2db0e37ef4.json",
+      ".ai/content-audit-export/articles/pd-1096-rule-viii-setbacks-and-easements--859b1a7f-8aba-473d-8c28-f9aaa39af11d/question-edits/5233259b-19f6-4ed2-8c44-f577bdcf455d.json",
+      ".ai/content-audit-export/articles/pd-1096-rule-viii-setbacks-and-easements--859b1a7f-8aba-473d-8c28-f9aaa39af11d/question-edits/58256101-5084-4e03-b9e1-863841a53775.json",
+      ".ai/content-audit-export/articles/pd-1096-rule-viii-setbacks-and-easements--859b1a7f-8aba-473d-8c28-f9aaa39af11d/question-edits/638b3d9e-e9bf-44cf-b37b-20f53add74a4.json",
+      ".ai/content-audit-export/articles/pd-1096-rule-viii-setbacks-and-easements--859b1a7f-8aba-473d-8c28-f9aaa39af11d/question-edits/66edfc05-ac78-4d33-bab3-28bbc563b26e.json",
+      ".ai/content-audit-export/articles/pd-1096-rule-viii-setbacks-and-easements--859b1a7f-8aba-473d-8c28-f9aaa39af11d/question-edits/71c7bb63-c85b-4a96-986c-4eace294c3b5.json",
+      ".ai/content-audit-export/articles/pd-1096-rule-viii-setbacks-and-easements--859b1a7f-8aba-473d-8c28-f9aaa39af11d/question-edits/7b4dc63f-17d4-4888-8eec-7302064afd66.json",
+      ".ai/content-audit-export/articles/pd-1096-rule-viii-setbacks-and-easements--859b1a7f-8aba-473d-8c28-f9aaa39af11d/question-edits/7e440366-2609-41d0-9cc5-83e92569fadd.json",
+      ".ai/content-audit-export/articles/pd-1096-rule-viii-setbacks-and-easements--859b1a7f-8aba-473d-8c28-f9aaa39af11d/question-edits/828a0149-7b2e-4089-b7af-454ee964f40e.json",
+      ".ai/content-audit-export/articles/pd-1096-rule-viii-setbacks-and-easements--859b1a7f-8aba-473d-8c28-f9aaa39af11d/question-edits/88cbb24f-4c73-4707-8a71-bcd4feceff3a.json",
+      ".ai/content-audit-export/articles/pd-1096-rule-viii-setbacks-and-easements--859b1a7f-8aba-473d-8c28-f9aaa39af11d/question-edits/8eae1510-2857-41b0-9699-8920b748a15d.json",
+      ".ai/content-audit-export/articles/pd-1096-rule-viii-setbacks-and-easements--859b1a7f-8aba-473d-8c28-f9aaa39af11d/question-edits/98e3ee54-6e8b-4a38-bd17-451921ee4ba3.json",
+      ".ai/content-audit-export/articles/pd-1096-rule-viii-setbacks-and-easements--859b1a7f-8aba-473d-8c28-f9aaa39af11d/question-edits/9b8d98b4-20f6-48f0-9048-a98d0bc77d01.json",
+      ".ai/content-audit-export/articles/pd-1096-rule-viii-setbacks-and-easements--859b1a7f-8aba-473d-8c28-f9aaa39af11d/question-edits/b7ffb174-dbce-4ac4-ad83-8253d68da2f1.json",
+      ".ai/content-audit-export/articles/pd-1096-rule-viii-setbacks-and-easements--859b1a7f-8aba-473d-8c28-f9aaa39af11d/question-edits/c61910af-1559-40d8-999b-e35cd17f279b.json",
+      ".ai/content-audit-export/articles/pd-1096-rule-viii-setbacks-and-easements--859b1a7f-8aba-473d-8c28-f9aaa39af11d/question-edits/c8e94bf7-5236-4d80-98c9-0ba9d7b1a2ee.json",
+      ".ai/content-audit-export/articles/pd-1096-rule-viii-setbacks-and-easements--859b1a7f-8aba-473d-8c28-f9aaa39af11d/question-edits/d9a0f614-3b30-4e89-af5a-21fb136fa499.json",
+      ".ai/content-audit-export/articles/pd-1096-rule-viii-setbacks-and-easements--859b1a7f-8aba-473d-8c28-f9aaa39af11d/question-edits/de1a83f5-9346-42fb-940f-77de9486a3d1.json",
+      ".ai/content-audit-export/articles/pd-1096-rule-viii-setbacks-and-easements--859b1a7f-8aba-473d-8c28-f9aaa39af11d/question-edits/ec762ea6-0a6c-439f-be28-6fd002e6f5fd.json",
+      ".ai/content-audit-export/articles/pd-1096-rule-viii-setbacks-and-easements--859b1a7f-8aba-473d-8c28-f9aaa39af11d/question-edits/ed33bb59-48f9-4d25-aeca-209c7bc87f62.json",
+      ".ai/content-audit-export/articles/pd-1096-rule-viii-setbacks-and-easements--859b1a7f-8aba-473d-8c28-f9aaa39af11d/question-edits/ee5f97ad-5120-4be7-9183-f1d5bd939a9e.json"
+    ]
+  },
+  "roundtrip_state": {
+    "normalized_md_updated": true,
+    "ui_blocks_json_owns_preserved_blocks": true,
+    "candidate_md_pending_compose": false,
+    "candidate_md_composed": true,
+    "candidate_hash_matches_normalized_hash": true
+  },
+  "stale_prior_batch_overlap": {
+    "observed_prior_batch_artifacts_for_same_article_ids": true,
+    "treatment": "fixed Batch 093 manifest was followed exactly; prior artifact overlap recorded as re-audit history, not as article replacement authority"
+  },
+  "blockers": [],
+  "validation": {
+    "compose": {
+      "blockers": 0,
+      "candidate_hash": "sha256:fe43cc36e0f640d97d2886c064148dbb40d446b62692b2078091d180edb7f390",
+      "passed": true
     },
-    {
-      "claim_id": "question-edit-1",
-      "claim_text": "Question edit 1 for pd-1096-rule-viii-setbacks-and-easements is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; PD 1067 refined markdown lines 193-195; raw PDF page 9 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
+    "diff": {
+      "safe_to_push": true,
+      "blockers": 0,
+      "candidate_hash": "sha256:fe43cc36e0f640d97d2886c064148dbb40d446b62692b2078091d180edb7f390",
+      "passed": true
     },
-    {
-      "claim_id": "question-edit-2",
-      "claim_text": "Question edit 2 for pd-1096-rule-viii-setbacks-and-easements is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; PD 1067 refined markdown lines 193-195; raw PDF page 9 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
+    "validate_bundle": {
+      "valid": true,
+      "blockers": 0,
+      "warnings": 0
     },
-    {
-      "claim_id": "question-edit-3",
-      "claim_text": "Question edit 3 for pd-1096-rule-viii-setbacks-and-easements is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; PD 1067 refined markdown lines 193-195; raw PDF page 9 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-4",
-      "claim_text": "Question edit 4 for pd-1096-rule-viii-setbacks-and-easements is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; PD 1067 refined markdown lines 193-195; raw PDF page 9 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-5",
-      "claim_text": "Question edit 5 for pd-1096-rule-viii-setbacks-and-easements is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; PD 1067 refined markdown lines 193-195; raw PDF page 9 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-6",
-      "claim_text": "Question edit 6 for pd-1096-rule-viii-setbacks-and-easements is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; PD 1067 refined markdown lines 193-195; raw PDF page 9 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-7",
-      "claim_text": "Question edit 7 for pd-1096-rule-viii-setbacks-and-easements is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; PD 1067 refined markdown lines 193-195; raw PDF page 9 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-8",
-      "claim_text": "Question edit 8 for pd-1096-rule-viii-setbacks-and-easements is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; PD 1067 refined markdown lines 193-195; raw PDF page 9 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-9",
-      "claim_text": "Question edit 9 for pd-1096-rule-viii-setbacks-and-easements is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; PD 1067 refined markdown lines 193-195; raw PDF page 9 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-10",
-      "claim_text": "Question edit 10 for pd-1096-rule-viii-setbacks-and-easements is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; PD 1067 refined markdown lines 193-195; raw PDF page 9 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-11",
-      "claim_text": "Question edit 11 for pd-1096-rule-viii-setbacks-and-easements is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; PD 1067 refined markdown lines 193-195; raw PDF page 9 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-12",
-      "claim_text": "Question edit 12 for pd-1096-rule-viii-setbacks-and-easements is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; PD 1067 refined markdown lines 193-195; raw PDF page 9 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-13",
-      "claim_text": "Question edit 13 for pd-1096-rule-viii-setbacks-and-easements is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; PD 1067 refined markdown lines 193-195; raw PDF page 9 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-14",
-      "claim_text": "Question edit 14 for pd-1096-rule-viii-setbacks-and-easements is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; PD 1067 refined markdown lines 193-195; raw PDF page 9 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-15",
-      "claim_text": "Question edit 15 for pd-1096-rule-viii-setbacks-and-easements is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; PD 1067 refined markdown lines 193-195; raw PDF page 9 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-16",
-      "claim_text": "Question edit 16 for pd-1096-rule-viii-setbacks-and-easements is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; PD 1067 refined markdown lines 193-195; raw PDF page 9 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-17",
-      "claim_text": "Question edit 17 for pd-1096-rule-viii-setbacks-and-easements is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; PD 1067 refined markdown lines 193-195; raw PDF page 9 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-18",
-      "claim_text": "Question edit 18 for pd-1096-rule-viii-setbacks-and-easements is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; PD 1067 refined markdown lines 193-195; raw PDF page 9 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-19",
-      "claim_text": "Question edit 19 for pd-1096-rule-viii-setbacks-and-easements is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; PD 1067 refined markdown lines 193-195; raw PDF page 9 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-20",
-      "claim_text": "Question edit 20 for pd-1096-rule-viii-setbacks-and-easements is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; PD 1067 refined markdown lines 193-195; raw PDF page 9 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-21",
-      "claim_text": "Question edit 21 for pd-1096-rule-viii-setbacks-and-easements is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; PD 1067 refined markdown lines 193-195; raw PDF page 9 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-22",
-      "claim_text": "Question edit 22 for pd-1096-rule-viii-setbacks-and-easements is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; PD 1067 refined markdown lines 193-195; raw PDF page 9 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-23",
-      "claim_text": "Question edit 23 for pd-1096-rule-viii-setbacks-and-easements is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; PD 1067 refined markdown lines 193-195; raw PDF page 9 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-24",
-      "claim_text": "Question edit 24 for pd-1096-rule-viii-setbacks-and-easements is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; PD 1067 refined markdown lines 193-195; raw PDF page 9 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-25",
-      "claim_text": "Question edit 25 for pd-1096-rule-viii-setbacks-and-easements is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; PD 1067 refined markdown lines 193-195; raw PDF page 9 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-26",
-      "claim_text": "Question edit 26 for pd-1096-rule-viii-setbacks-and-easements is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; PD 1067 refined markdown lines 193-195; raw PDF page 9 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-27",
-      "claim_text": "Question edit 27 for pd-1096-rule-viii-setbacks-and-easements is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; PD 1067 refined markdown lines 193-195; raw PDF page 9 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
+    "ui_block_edits": {
+      "valid": true,
+      "blockers": 0,
+      "warnings": 0
     }
-  ],
-  "overall": {
-    "status": "PASS_LOCAL_FIRST",
-    "blockers": [],
-    "candidate_hash_matches_evidence": true,
-    "linked_question_edit_count": 27,
-    "question_edit_count": 27
   },
-  "scenario_enrichment_policy": {
-    "status": "eligible-deferred",
-    "note": "Scenario enrichment policy is pending. No Real World Scenario section was blindly added; article correctness and question support remained the gate."
-  },
-  "local_repairs": [
-    "Removed UI media/callout blocks and derivative citations from normalized.md.",
-    "Replaced linked questions with source-safe MCQ edits tied to Batch 067 checked raw PDF/source-family evidence.",
-    "Preserved roundtrip ownership by setting ui-blocks.json to zero extracted UI blocks and regenerating candidate via compose."
-  ],
-  "unverified_or_rejected_claims": [
-    "Derivative web citations and unstated foreign-code comparisons were not used as primary truth.",
-    "Numeric examples not directly supported by the selected raw-source locators were removed or replaced with source-safe rule checks."
-  ],
-  "sme_review": {
-    "required_before_publication": false,
-    "note": "Local-first raw-source audit completed; final publishing remains Supabase review only."
-  }
+  "final_status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW"
 }

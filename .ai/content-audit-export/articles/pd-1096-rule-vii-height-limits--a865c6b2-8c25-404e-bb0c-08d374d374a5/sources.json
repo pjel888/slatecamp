@@ -1,19 +1,18 @@
 {
   "article_id": "a865c6b2-8c25-404e-bb0c-08d374d374a5",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:e7d3a2501ab3d2edac43264f147f7bfef8ec060511e905b6fffe90661c3103a8",
+  "sources_hash": "sha256:0fa1ef009671697fecbc48c1e8a29ecf4a2303a8f01280409826dde641f4c9c8",
   "source_count": 1,
   "sources": [
     {
-      "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-      "label": "PD 1096 RIRR 2004 - permits, occupancy, mixed occupancy, height, yards, and parking",
+      "source_id": "pd1096-rirr-dpwh-local-b093",
+      "label": "PD 1096 2004 Revised IRR - National Building Code development controls and permit review",
       "authority": "DPWH official revised IRR local raw PDF conversion",
       "source_type": "building_code_irr_pdf",
-      "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction",
+      "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1851-1999, and 2097-2300; local raw PDF and raw markdown checked.",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
       "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
       "checked_markdown_lines": [
         "PD 1096 RIRR lines 486-530",
         "PD 1096 RIRR lines 545-631",
@@ -22,22 +21,17 @@
         "PD 1096 RIRR lines 1088-1149",
         "PD 1096 RIRR lines 1310-1329",
         "PD 1096 RIRR lines 1452-1498",
-        "PD 1096 RIRR lines 1627-1771",
+        "PD 1096 RIRR lines 1851-1999",
         "PD 1096 RIRR lines 2097-2300"
       ],
       "checked_raw_pdf_pages": [
-        "PD 1096 raw PDF pages 21-22",
-        "PD 1096 raw PDF pages 34-36",
-        "PD 1096 raw PDF page 47",
-        "PD 1096 raw PDF page 80",
-        "PD 1096 raw PDF pages 88-90",
-        "PD 1096 raw PDF page 97",
-        "PD 1096 raw PDF page 107",
-        "PD 1096 raw PDF page 119",
-        "PD 1096 raw PDF pages 126 and 128"
+        "PD 1096 raw PDF pages corresponding to Rule III permit processing and Rule VII/VIII development controls, verified through local conversion artifacts"
       ],
-      "use": "primary source for Batch 067 PD 1096 article claims",
-      "local_source_checked": true
+      "use": "primary source for PD 1096 permit, occupancy, height, bulk, setback, and architectural review claims",
+      "local_source_checked": true,
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7"
     }
   ]
 }

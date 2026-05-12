@@ -1,0 +1,362 @@
+{
+  "batch_id": "source-audited-article-batch-093-local-first",
+  "generated_at": "2026-05-12T20:58:26+08:00",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "blockers": 0,
+  "checks": {
+    "fixed_manifest_articles": {
+      "expected": 5,
+      "actual": 5,
+      "pass": true
+    },
+    "linked_question_counts": [
+      {
+        "slug": "pd-1096-rule-vii-height-limits",
+        "manifest": 39,
+        "linked": 39,
+        "question_edits": 39,
+        "pass": true
+      },
+      {
+        "slug": "pd-1096-rule-vii-occupancy",
+        "manifest": 27,
+        "linked": 27,
+        "question_edits": 27,
+        "pass": true
+      },
+      {
+        "slug": "pd-1096-rule-viii-setbacks-and-easements",
+        "manifest": 27,
+        "linked": 27,
+        "question_edits": 27,
+        "pass": true
+      },
+      {
+        "slug": "building-permit-process",
+        "manifest": 57,
+        "linked": 57,
+        "question_edits": 57,
+        "pass": true
+      },
+      {
+        "slug": "typology-checklists-and-plan-checking",
+        "manifest": 22,
+        "linked": 22,
+        "question_edits": 22,
+        "pass": true
+      }
+    ],
+    "expected_question_edit_paths": [
+      {
+        "slug": "pd-1096-rule-vii-height-limits",
+        "expected": 39,
+        "actual": 39,
+        "missing": 0,
+        "extra": 0,
+        "pass": true
+      },
+      {
+        "slug": "pd-1096-rule-vii-occupancy",
+        "expected": 27,
+        "actual": 27,
+        "missing": 0,
+        "extra": 0,
+        "pass": true
+      },
+      {
+        "slug": "pd-1096-rule-viii-setbacks-and-easements",
+        "expected": 27,
+        "actual": 27,
+        "missing": 0,
+        "extra": 0,
+        "pass": true
+      },
+      {
+        "slug": "building-permit-process",
+        "expected": 57,
+        "actual": 57,
+        "missing": 0,
+        "extra": 0,
+        "pass": true
+      },
+      {
+        "slug": "typology-checklists-and-plan-checking",
+        "expected": 22,
+        "actual": 22,
+        "missing": 0,
+        "extra": 0,
+        "pass": true
+      }
+    ],
+    "json_parse": {
+      "parsed_files": 232,
+      "pass": true
+    },
+    "source_hash_checks": [
+      {
+        "slug": "pd-1096-rule-vii-height-limits",
+        "source_id": "pd1096-rirr-dpwh-local-b093",
+        "raw_pdf_hash_present": true,
+        "raw_markdown_hash_present": true,
+        "refined_markdown_hash_present": true,
+        "pass": true
+      },
+      {
+        "slug": "pd-1096-rule-vii-occupancy",
+        "source_id": "pd1096-rirr-dpwh-local-b093",
+        "raw_pdf_hash_present": true,
+        "raw_markdown_hash_present": true,
+        "refined_markdown_hash_present": true,
+        "pass": true
+      },
+      {
+        "slug": "pd-1096-rule-vii-occupancy",
+        "source_id": "ra9514-rirr-egress-local-b093",
+        "raw_pdf_hash_present": true,
+        "raw_markdown_hash_present": true,
+        "refined_markdown_hash_present": true,
+        "pass": true
+      },
+      {
+        "slug": "pd-1096-rule-viii-setbacks-and-easements",
+        "source_id": "pd1096-rirr-dpwh-local-b093",
+        "raw_pdf_hash_present": true,
+        "raw_markdown_hash_present": true,
+        "refined_markdown_hash_present": true,
+        "pass": true
+      },
+      {
+        "slug": "pd-1096-rule-viii-setbacks-and-easements",
+        "source_id": "pd1067-water-code-easements-local-b093",
+        "raw_pdf_hash_present": true,
+        "raw_markdown_hash_present": true,
+        "refined_markdown_hash_present": true,
+        "pass": true
+      },
+      {
+        "slug": "building-permit-process",
+        "source_id": "pd1096-rirr-dpwh-local-b093",
+        "raw_pdf_hash_present": true,
+        "raw_markdown_hash_present": true,
+        "refined_markdown_hash_present": true,
+        "pass": true
+      },
+      {
+        "slug": "building-permit-process",
+        "source_id": "ra9514-rirr-egress-local-b093",
+        "raw_pdf_hash_present": true,
+        "raw_markdown_hash_present": true,
+        "refined_markdown_hash_present": true,
+        "pass": true
+      },
+      {
+        "slug": "building-permit-process",
+        "source_id": "lgu-zoning-ordinance-2016-2025-local-b093",
+        "raw_pdf_hash_present": true,
+        "raw_markdown_hash_present": true,
+        "refined_markdown_hash_present": true,
+        "pass": true
+      },
+      {
+        "slug": "typology-checklists-and-plan-checking",
+        "source_id": "design-process-programming-local-b093",
+        "raw_pdf_hash_present": true,
+        "raw_markdown_hash_present": true,
+        "refined_markdown_hash_present": true,
+        "pass": true
+      },
+      {
+        "slug": "typology-checklists-and-plan-checking",
+        "source_id": "bp344-2024-revised-irr-local-b093",
+        "raw_pdf_hash_present": true,
+        "raw_markdown_hash_present": true,
+        "refined_markdown_hash_present": true,
+        "pass": true
+      },
+      {
+        "slug": "typology-checklists-and-plan-checking",
+        "source_id": "pd1096-rirr-dpwh-local-b093",
+        "raw_pdf_hash_present": true,
+        "raw_markdown_hash_present": true,
+        "refined_markdown_hash_present": true,
+        "pass": true
+      },
+      {
+        "slug": "typology-checklists-and-plan-checking",
+        "source_id": "ra9514-rirr-egress-local-b093",
+        "raw_pdf_hash_present": true,
+        "raw_markdown_hash_present": true,
+        "refined_markdown_hash_present": true,
+        "pass": true
+      }
+    ],
+    "compose": {
+      "articles": [
+        {
+          "slug": "pd-1096-rule-vii-height-limits",
+          "blockers": 0,
+          "pass": true
+        },
+        {
+          "slug": "pd-1096-rule-vii-occupancy",
+          "blockers": 0,
+          "pass": true
+        },
+        {
+          "slug": "pd-1096-rule-viii-setbacks-and-easements",
+          "blockers": 0,
+          "pass": true
+        },
+        {
+          "slug": "building-permit-process",
+          "blockers": 0,
+          "pass": true
+        },
+        {
+          "slug": "typology-checklists-and-plan-checking",
+          "blockers": 0,
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    "diff": {
+      "articles": [
+        {
+          "slug": "pd-1096-rule-vii-height-limits",
+          "safe_to_push": true,
+          "blockers": 0,
+          "pass": true
+        },
+        {
+          "slug": "pd-1096-rule-vii-occupancy",
+          "safe_to_push": true,
+          "blockers": 0,
+          "pass": true
+        },
+        {
+          "slug": "pd-1096-rule-viii-setbacks-and-easements",
+          "safe_to_push": true,
+          "blockers": 0,
+          "pass": true
+        },
+        {
+          "slug": "building-permit-process",
+          "safe_to_push": true,
+          "blockers": 0,
+          "pass": true
+        },
+        {
+          "slug": "typology-checklists-and-plan-checking",
+          "safe_to_push": true,
+          "blockers": 0,
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    "validate_bundle": {
+      "articles": [
+        {
+          "slug": "pd-1096-rule-vii-height-limits",
+          "valid": true,
+          "blockers": 0,
+          "warnings": 0
+        },
+        {
+          "slug": "pd-1096-rule-vii-occupancy",
+          "valid": true,
+          "blockers": 0,
+          "warnings": 0
+        },
+        {
+          "slug": "pd-1096-rule-viii-setbacks-and-easements",
+          "valid": true,
+          "blockers": 0,
+          "warnings": 0
+        },
+        {
+          "slug": "building-permit-process",
+          "valid": true,
+          "blockers": 0,
+          "warnings": 0
+        },
+        {
+          "slug": "typology-checklists-and-plan-checking",
+          "valid": true,
+          "blockers": 0,
+          "warnings": 0
+        }
+      ],
+      "pass": true
+    },
+    "ui_block_edit_validation": {
+      "articles": [
+        {
+          "slug": "pd-1096-rule-vii-height-limits",
+          "valid": true,
+          "blockers": 0,
+          "warnings": 0,
+          "pass": true
+        },
+        {
+          "slug": "pd-1096-rule-vii-occupancy",
+          "valid": true,
+          "blockers": 0,
+          "warnings": 0,
+          "pass": true
+        },
+        {
+          "slug": "pd-1096-rule-viii-setbacks-and-easements",
+          "valid": true,
+          "blockers": 0,
+          "warnings": 0,
+          "pass": true
+        },
+        {
+          "slug": "building-permit-process",
+          "valid": true,
+          "blockers": 0,
+          "warnings": 0,
+          "pass": true
+        },
+        {
+          "slug": "typology-checklists-and-plan-checking",
+          "valid": true,
+          "blockers": 0,
+          "warnings": 0,
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    "candidate_placeholder_scan": {
+      "raw_slatecamp_ui_block_placeholders": 0,
+      "pass": true
+    },
+    "internal_note_source_gap_scan": {
+      "matches": 0,
+      "pass": true
+    },
+    "stale_compose_error_scan": {
+      "compose_error_files": 0,
+      "pass": true
+    },
+    "targeted_tests": {
+      "command": "bun test scripts/content-audit/content-audit.test.ts",
+      "passed": 27,
+      "failed": 0,
+      "pass": true
+    },
+    "git_diff_check": {
+      "command": "git diff --check",
+      "pass": true,
+      "pending_final_run": false,
+      "result": "PASS"
+    }
+  },
+  "no_supabase_push": true,
+  "no_deploy": true,
+  "no_commit": true,
+  "stopped_after_batch_093": true
+}

@@ -24,6 +24,10 @@ The minimum horizontal dimension of courts and yards is not less than 2.00 meter
 
 PD 1067 Article 51 places the banks of rivers and streams and the shores of seas and lakes under public-use easements along their margins: three meters in urban areas, twenty meters in agricultural areas, and forty meters in forest areas. Structures of any kind are not allowed in that public-use zone.
 
+## Real World Scenario
+
+For a three-storey building on a lot beside a creek and a road-widening line, the first review is not just the numerical yard table. The OBO line-and-grade check should confirm lot relation, property lines, road widening, utilities, waterways, and required clearances. The drawing then has to show the required yards or courts, the 300 mm added rear or side court width for storeys above the second, and the separate Water Code public-use easement if the water-edge condition applies.
+
 ## Source Checkpoints
 
 - PD 1096 RIRR lines 756-784: permit processing checks for easements, setbacks, grades, occupancy, height, parking, and loading.

@@ -1,147 +1,208 @@
 {
-  "artifact_type": "source-audit-evidence",
-  "batch_id": "source-audited-article-batch-053-local-first",
-  "batch_number": 53,
-  "audit_date": "2026-05-11",
-  "audited_at": "2026-05-11T19:04:00.000+08:00",
-  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "batch_id": "source-audited-article-batch-093-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T20:58:26+08:00",
   "target": {
     "article_id": "4256d28b-076b-4c68-ad2d-9e27fdbcdf6b",
     "slug": "typology-checklists-and-plan-checking",
     "title": "Typology Checklists and Plan Checking",
     "article_folder": ".ai/content-audit-export/articles/typology-checklists-and-plan-checking--4256d28b-076b-4c68-ad2d-9e27fdbcdf6b",
-    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/typology-checklists-and-plan-checking--4256d28b-076b-4c68-ad2d-9e27fdbcdf6b",
+    "normalized_sha256": "sha256:27997dbaf69c14ad758dce2330e8082da9bd96ff57f9c4a9569630ccab27e366",
+    "candidate_sha256": "sha256:27997dbaf69c14ad758dce2330e8082da9bd96ff57f9c4a9569630ccab27e366",
     "candidate_path": ".ai/content-audit-export/articles/typology-checklists-and-plan-checking--4256d28b-076b-4c68-ad2d-9e27fdbcdf6b/candidate.md",
-    "candidate_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/typology-checklists-and-plan-checking--4256d28b-076b-4c68-ad2d-9e27fdbcdf6b/candidate.md",
-    "question_edits_folder": ".ai/content-audit-export/articles/typology-checklists-and-plan-checking--4256d28b-076b-4c68-ad2d-9e27fdbcdf6b/question-edits",
-    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/typology-checklists-and-plan-checking--4256d28b-076b-4c68-ad2d-9e27fdbcdf6b/question-edits",
-    "normalized_sha256": "sha256:dd91d7de51a964ec8ae8542744f086e2adb8cdcf41ff8b8d6bcedfb1cae042d6",
-    "candidate_sha256": "sha256:dd91d7de51a964ec8ae8542744f086e2adb8cdcf41ff8b8d6bcedfb1cae042d6",
-    "linked_questions_sha256": "sha256:83a6f184e3001d6c653f9b7fc8350dfadcdfec607ebc809fd2ef6053d52b46a4",
-    "sources_sha256": "sha256:3dae8804c38a07486ad0f9702d0f6461663bc17510d219351885513accc3b1fd"
+    "question_edits_folder_path": ".ai/content-audit-export/articles/typology-checklists-and-plan-checking--4256d28b-076b-4c68-ad2d-9e27fdbcdf6b/question-edits"
+  },
+  "classification": {
+    "legal_or_code_candidate": true,
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "source_risk_tier": "high",
+    "source_domains": [
+      "Design Process - architectural programming and information-management sequence",
+      "BP 344 2024 Revised IRR - accessibility plan-check dimensions",
+      "PD 1096 2004 Revised IRR - National Building Code development controls and permit review",
+      "RA 9514 Revised IRR 2019 - Fire Code means of egress and occupant-load coordination"
+    ]
   },
   "raw_pdf_gate": {
     "status": "PASS",
-    "primary_truth_layer": "vitruvius-connection/001_Raw-Source-Layer",
-    "refined_markdown_role": "locator_only",
-    "derivative_or_search_layer_as_primary": false,
-    "all_legal_code_claims_have_pdf_locator": true,
-    "all_section_numbers_verified_against_raw_pdf": true,
+    "raw_pdfs_checked_first": true,
+    "all_legal_code_claims_have_local_source_locator": true,
     "no_derivative_text_used_as_source_of_truth": true,
-    "blockers": [],
-    "source_families_checked": [
-      {
-        "label": "Design Process - local raw PDF",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
-        "raw_pdf_sha256": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
-        "refined_markdown_sha256": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
-        "locator": "Design Process refined markdown lines 59-68 and 437-439"
-      },
-      {
-        "label": "BP 344 2024 Revised IRR - local raw PDF",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
-        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
-        "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
-        "locator": "BP 344 2024 Revised IRR refined markdown lines 40-64, 230-280, 305-348, 685-698, 776-808, 917-951, 1002-1018, 1157-1195, 1223-1225, and 1431-1441"
-      }
-    ]
+    "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "local_conversion_layer_used_for_line_location": true,
+    "blockers": []
   },
-  "classification": {
-    "content_type": "design-plan-checking",
-    "contains_legal_or_code_claims": true,
-    "source_risk_tier": "medium",
-    "requires_raw_pdf_audit": true,
-    "linked_questions_observed": 22,
-    "question_edits_created": [
-      "b3dae66f-c749-4e92-ba0a-06f013187ece",
-      "2f237adf-1cb8-4341-9c49-aeb6919d4a7e",
-      "35abdd2d-e166-4b2a-929a-d1661848194f",
-      "34a2ea03-cd2c-4c34-a9b0-5a09208f1fff",
-      "da2beda5-2980-4802-9943-1330fddd6598",
-      "ce6b602f-7351-43ff-8d69-0255f8de3f30",
-      "28a93d7c-57f2-4efa-8ce4-7c0b79ce5508",
-      "612373e0-a100-4b0e-89c6-3f3b894ecb6a",
-      "83509fba-b2c1-42dd-88ff-577f1d1dcde2",
-      "63b5a81f-d850-4c8d-bb8c-c7ce212f60f2",
-      "bf638c92-6cec-46df-8eb6-e1ef9bdafa4c",
-      "43cbfa12-edeb-467b-9f3e-203afda97c4c",
-      "6c6c0312-535c-4eec-adc9-91277fe89d1b",
-      "4af7be48-3c28-4c27-ac8e-cfe3d9fcc9c3",
-      "8bee15df-da62-4494-a63e-add60204accf",
-      "d208b426-cca6-41a3-9b05-47b8f751d5a4",
-      "d36a73fa-3922-46d8-a304-35085d3d37f7",
-      "699ac3ed-320a-470b-a540-38d250f7b7f2",
-      "b8f3f61f-8152-4f9f-b7f5-e54b5c9f0023",
-      "b9a46dda-9405-4ee8-93a0-5092d97ee2bc",
-      "3c1ffbf7-b963-4d6c-9f98-27d2ecbb259f",
-      "df82a691-aa4c-4182-b5f0-c3450542f8a0"
-    ]
-  },
-  "checked_markdown_lines": [
-    "Design Process refined markdown lines 59-68",
-    "Design Process refined markdown lines 437-439",
-    "BP 344 2024 Revised IRR refined markdown lines 40-64",
-    "BP 344 2024 Revised IRR refined markdown lines 230-280",
-    "BP 344 2024 Revised IRR refined markdown lines 305-348",
-    "BP 344 2024 Revised IRR refined markdown lines 685-698",
-    "BP 344 2024 Revised IRR refined markdown lines 776-808",
-    "BP 344 2024 Revised IRR refined markdown lines 917-951",
-    "BP 344 2024 Revised IRR refined markdown lines 1002-1018",
-    "BP 344 2024 Revised IRR refined markdown lines 1157-1195",
-    "BP 344 2024 Revised IRR refined markdown lines 1223-1225",
-    "BP 344 2024 Revised IRR refined markdown lines 1431-1441"
-  ],
-  "claims": [
+  "checked_sources": [
     {
-      "claim_id": "typology-checklists-and-plan-checking-b053-claim-01",
-      "claim_text": "Typology plan checking in Batch 053 is limited to program translation from the checked Design Process source and BP 344 2024 accessibility dimensions from the checked local raw PDF family.",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
-        "quoted_pdf_excerpt": "Design Process refined markdown lines 59-68 and 437-439; BP 344 2024 Revised IRR refined markdown lines 40-64, 230-280, 305-348, 685-698, 776-808, 917-951, 1002-1018, 1157-1195, 1223-1225, and 1431-1441",
-        "source_ids": [
-          "design-process-local-raw-pdf--b053-4256d28b-01",
-          "bp344-2024-local-raw-pdf--b053-4256d28b-02"
-        ]
-      },
-      "audit_result": "PASS"
+      "source_id": "design-process-programming-local-b093",
+      "label": "Design Process - architectural programming and information-management sequence",
+      "authority": "Local raw PDF conversion from Vitruvius history source layer",
+      "source_type": "architectural_programming_pdf",
+      "source_locator": "Design Process refined markdown lines 49-68; local raw PDF and raw markdown checked.",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/raw_markdown/Design Process.md",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
+      "checked_markdown_lines": [
+        "Design Process refined markdown lines 49-68"
+      ],
+      "checked_raw_pdf_pages": [
+        "Design Process raw PDF page corresponding to programming/process sequence, verified through local conversion artifacts"
+      ],
+      "use": "primary source for programming as ordered problem definition before plan checking",
+      "local_source_checked": true,
+      "raw_pdf_sha256": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+      "raw_markdown_sha256": "sha256:38582802fa753235322554091d07ac1d7b7c96e51bc4622b6c4261dd28fc57e2",
+      "refined_markdown_sha256": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80"
     },
     {
-      "claim_id": "typology-checklists-and-plan-checking-b053-claim-questions",
-      "claim_text": "Batch 053 question edits audited for typology-checklists-and-plan-checking: b3dae66f-c749-4e92-ba0a-06f013187ece, 2f237adf-1cb8-4341-9c49-aeb6919d4a7e, 35abdd2d-e166-4b2a-929a-d1661848194f, 34a2ea03-cd2c-4c34-a9b0-5a09208f1fff, da2beda5-2980-4802-9943-1330fddd6598, ce6b602f-7351-43ff-8d69-0255f8de3f30, 28a93d7c-57f2-4efa-8ce4-7c0b79ce5508, 612373e0-a100-4b0e-89c6-3f3b894ecb6a, 83509fba-b2c1-42dd-88ff-577f1d1dcde2, 63b5a81f-d850-4c8d-bb8c-c7ce212f60f2, bf638c92-6cec-46df-8eb6-e1ef9bdafa4c, 43cbfa12-edeb-467b-9f3e-203afda97c4c, 6c6c0312-535c-4eec-adc9-91277fe89d1b, 4af7be48-3c28-4c27-ac8e-cfe3d9fcc9c3, 8bee15df-da62-4494-a63e-add60204accf, d208b426-cca6-41a3-9b05-47b8f751d5a4, d36a73fa-3922-46d8-a304-35085d3d37f7, 699ac3ed-320a-470b-a540-38d250f7b7f2, b8f3f61f-8152-4f9f-b7f5-e54b5c9f0023, b9a46dda-9405-4ee8-93a0-5092d97ee2bc, 3c1ffbf7-b963-4d6c-9f98-27d2ecbb259f, df82a691-aa4c-4182-b5f0-c3450542f8a0",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
-        "quoted_pdf_excerpt": "Design Process refined markdown lines 59-68 and 437-439; BP 344 2024 Revised IRR refined markdown lines 40-64, 230-280, 305-348, 685-698, 776-808, 917-951, 1002-1018, 1157-1195, 1223-1225, and 1431-1441",
-        "source_ids": [
-          "design-process-local-raw-pdf--b053-4256d28b-01",
-          "bp344-2024-local-raw-pdf--b053-4256d28b-02"
-        ]
-      },
-      "audit_result": "PASS"
+      "source_id": "bp344-2024-revised-irr-local-b093",
+      "label": "BP 344 2024 Revised IRR - accessibility plan-check dimensions",
+      "authority": "NCDA/GOVPH revised IRR local raw PDF conversion",
+      "source_type": "accessibility_code_irr_pdf",
+      "source_locator": "BP 344 2024 Revised IRR refined markdown lines 40-64, 230-348, 685-808, 917-1018, and 1157-1225; local raw PDF and raw markdown checked.",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+      "checked_markdown_lines": [
+        "BP 344 2024 Revised IRR lines 40-64",
+        "BP 344 2024 Revised IRR lines 230-348",
+        "BP 344 2024 Revised IRR lines 685-808",
+        "BP 344 2024 Revised IRR lines 917-1018",
+        "BP 344 2024 Revised IRR lines 1157-1225"
+      ],
+      "checked_raw_pdf_pages": [
+        "BP 344 2024 Revised IRR raw PDF pages corresponding to checked accessibility dimensions, verified through local conversion artifacts"
+      ],
+      "use": "primary source for accessible parking, routes, ramps, doors, toilets, elevators, counters, dining, switches, and signage",
+      "local_source_checked": true,
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "raw_markdown_sha256": "sha256:a621bcb059a5c023dc5056939a6fa8ae44b5f60a29918f628d81657b9639692a",
+      "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040"
+    },
+    {
+      "source_id": "pd1096-rirr-dpwh-local-b093",
+      "label": "PD 1096 2004 Revised IRR - National Building Code development controls and permit review",
+      "authority": "DPWH official revised IRR local raw PDF conversion",
+      "source_type": "building_code_irr_pdf",
+      "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1851-1999, and 2097-2300; local raw PDF and raw markdown checked.",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "checked_markdown_lines": [
+        "PD 1096 RIRR lines 486-530",
+        "PD 1096 RIRR lines 545-631",
+        "PD 1096 RIRR lines 756-844",
+        "PD 1096 RIRR lines 870-878",
+        "PD 1096 RIRR lines 1088-1149",
+        "PD 1096 RIRR lines 1310-1329",
+        "PD 1096 RIRR lines 1452-1498",
+        "PD 1096 RIRR lines 1851-1999",
+        "PD 1096 RIRR lines 2097-2300"
+      ],
+      "checked_raw_pdf_pages": [
+        "PD 1096 raw PDF pages corresponding to Rule III permit processing and Rule VII/VIII development controls, verified through local conversion artifacts"
+      ],
+      "use": "primary source for PD 1096 permit, occupancy, height, bulk, setback, and architectural review claims",
+      "local_source_checked": true,
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7"
+    },
+    {
+      "source_id": "ra9514-rirr-egress-local-b093",
+      "label": "RA 9514 Revised IRR 2019 - Fire Code means of egress and occupant-load coordination",
+      "authority": "Bureau of Fire Protection revised IRR local raw PDF conversion",
+      "source_type": "fire_code_irr_pdf",
+      "source_locator": "RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; local raw PDF and raw markdown checked.",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+      "checked_markdown_lines": [
+        "RA 9514 RIRR lines 2476-2490",
+        "RA 9514 RIRR lines 2635-2716"
+      ],
+      "checked_raw_pdf_pages": [
+        "RA 9514 RIRR raw PDF pages corresponding to life safety and means-of-egress requirements, verified through local conversion artifacts"
+      ],
+      "use": "primary source for egress, exit count, width, occupant load, exit arrangement, dead-end, and travel-distance coordination",
+      "local_source_checked": true,
+      "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+      "raw_markdown_sha256": "sha256:eb992b1c0090e1f8f34ee3ad24d20be3b4ffaa34ec3ab9d341b6f1596865dd26",
+      "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567"
     }
   ],
-  "unverified_or_rejected_claims": [],
-  "quality_protocol": {
-    "roundtrip_protocol_preserved": true,
-    "ui_blocks_owner": "ui-blocks.json",
-    "normalized_owner": "normalized.md",
-    "candidate_generation": "compose_completed",
-    "local_first_only": true,
-    "supabase_write_attempted": false,
-    "deploy_attempted": false,
-    "commit_attempted": false,
-    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json"
+  "scenario_enrichment": {
+    "status": "eligible-added",
+    "section": "Real World Scenario",
+    "reason": "Typology-to-plan-check workflow is source-safe when limited to programming, accessibility dimensions, PD 1096 review topics, and RA 9514 egress coordination."
   },
-  "sme_review": {
-    "required": false,
-    "status": "not_required"
+  "question_edits": {
+    "expected_count": 22,
+    "linked_question_count": 22,
+    "edit_count": 22,
+    "counts_match_manifest": true,
+    "missing_question_edit_ids": [],
+    "extra_question_edit_ids": [],
+    "question_edit_paths": [
+      ".ai/content-audit-export/articles/typology-checklists-and-plan-checking--4256d28b-076b-4c68-ad2d-9e27fdbcdf6b/question-edits/28a93d7c-57f2-4efa-8ce4-7c0b79ce5508.json",
+      ".ai/content-audit-export/articles/typology-checklists-and-plan-checking--4256d28b-076b-4c68-ad2d-9e27fdbcdf6b/question-edits/2f237adf-1cb8-4341-9c49-aeb6919d4a7e.json",
+      ".ai/content-audit-export/articles/typology-checklists-and-plan-checking--4256d28b-076b-4c68-ad2d-9e27fdbcdf6b/question-edits/34a2ea03-cd2c-4c34-a9b0-5a09208f1fff.json",
+      ".ai/content-audit-export/articles/typology-checklists-and-plan-checking--4256d28b-076b-4c68-ad2d-9e27fdbcdf6b/question-edits/35abdd2d-e166-4b2a-929a-d1661848194f.json",
+      ".ai/content-audit-export/articles/typology-checklists-and-plan-checking--4256d28b-076b-4c68-ad2d-9e27fdbcdf6b/question-edits/3c1ffbf7-b963-4d6c-9f98-27d2ecbb259f.json",
+      ".ai/content-audit-export/articles/typology-checklists-and-plan-checking--4256d28b-076b-4c68-ad2d-9e27fdbcdf6b/question-edits/43cbfa12-edeb-467b-9f3e-203afda97c4c.json",
+      ".ai/content-audit-export/articles/typology-checklists-and-plan-checking--4256d28b-076b-4c68-ad2d-9e27fdbcdf6b/question-edits/4af7be48-3c28-4c27-ac8e-cfe3d9fcc9c3.json",
+      ".ai/content-audit-export/articles/typology-checklists-and-plan-checking--4256d28b-076b-4c68-ad2d-9e27fdbcdf6b/question-edits/612373e0-a100-4b0e-89c6-3f3b894ecb6a.json",
+      ".ai/content-audit-export/articles/typology-checklists-and-plan-checking--4256d28b-076b-4c68-ad2d-9e27fdbcdf6b/question-edits/63b5a81f-d850-4c8d-bb8c-c7ce212f60f2.json",
+      ".ai/content-audit-export/articles/typology-checklists-and-plan-checking--4256d28b-076b-4c68-ad2d-9e27fdbcdf6b/question-edits/699ac3ed-320a-470b-a540-38d250f7b7f2.json",
+      ".ai/content-audit-export/articles/typology-checklists-and-plan-checking--4256d28b-076b-4c68-ad2d-9e27fdbcdf6b/question-edits/6c6c0312-535c-4eec-adc9-91277fe89d1b.json",
+      ".ai/content-audit-export/articles/typology-checklists-and-plan-checking--4256d28b-076b-4c68-ad2d-9e27fdbcdf6b/question-edits/83509fba-b2c1-42dd-88ff-577f1d1dcde2.json",
+      ".ai/content-audit-export/articles/typology-checklists-and-plan-checking--4256d28b-076b-4c68-ad2d-9e27fdbcdf6b/question-edits/8bee15df-da62-4494-a63e-add60204accf.json",
+      ".ai/content-audit-export/articles/typology-checklists-and-plan-checking--4256d28b-076b-4c68-ad2d-9e27fdbcdf6b/question-edits/b3dae66f-c749-4e92-ba0a-06f013187ece.json",
+      ".ai/content-audit-export/articles/typology-checklists-and-plan-checking--4256d28b-076b-4c68-ad2d-9e27fdbcdf6b/question-edits/b8f3f61f-8152-4f9f-b7f5-e54b5c9f0023.json",
+      ".ai/content-audit-export/articles/typology-checklists-and-plan-checking--4256d28b-076b-4c68-ad2d-9e27fdbcdf6b/question-edits/b9a46dda-9405-4ee8-93a0-5092d97ee2bc.json",
+      ".ai/content-audit-export/articles/typology-checklists-and-plan-checking--4256d28b-076b-4c68-ad2d-9e27fdbcdf6b/question-edits/bf638c92-6cec-46df-8eb6-e1ef9bdafa4c.json",
+      ".ai/content-audit-export/articles/typology-checklists-and-plan-checking--4256d28b-076b-4c68-ad2d-9e27fdbcdf6b/question-edits/ce6b602f-7351-43ff-8d69-0255f8de3f30.json",
+      ".ai/content-audit-export/articles/typology-checklists-and-plan-checking--4256d28b-076b-4c68-ad2d-9e27fdbcdf6b/question-edits/d208b426-cca6-41a3-9b05-47b8f751d5a4.json",
+      ".ai/content-audit-export/articles/typology-checklists-and-plan-checking--4256d28b-076b-4c68-ad2d-9e27fdbcdf6b/question-edits/d36a73fa-3922-46d8-a304-35085d3d37f7.json",
+      ".ai/content-audit-export/articles/typology-checklists-and-plan-checking--4256d28b-076b-4c68-ad2d-9e27fdbcdf6b/question-edits/da2beda5-2980-4802-9943-1330fddd6598.json",
+      ".ai/content-audit-export/articles/typology-checklists-and-plan-checking--4256d28b-076b-4c68-ad2d-9e27fdbcdf6b/question-edits/df82a691-aa4c-4182-b5f0-c3450542f8a0.json"
+    ]
   },
-  "overall": {
-    "source_audit_status": "PASS",
-    "safe_for_batch_apply": true,
-    "safe_for_supabase_upload": true,
-    "blockers": [],
-    "warnings": []
-  }
+  "roundtrip_state": {
+    "normalized_md_updated": true,
+    "ui_blocks_json_owns_preserved_blocks": true,
+    "candidate_md_pending_compose": false,
+    "candidate_md_composed": true,
+    "candidate_hash_matches_normalized_hash": true
+  },
+  "stale_prior_batch_overlap": {
+    "observed_prior_batch_artifacts_for_same_article_ids": true,
+    "treatment": "fixed Batch 093 manifest was followed exactly; prior artifact overlap recorded as re-audit history, not as article replacement authority"
+  },
+  "blockers": [],
+  "validation": {
+    "compose": {
+      "blockers": 0,
+      "candidate_hash": "sha256:27997dbaf69c14ad758dce2330e8082da9bd96ff57f9c4a9569630ccab27e366",
+      "passed": true
+    },
+    "diff": {
+      "safe_to_push": true,
+      "blockers": 0,
+      "candidate_hash": "sha256:27997dbaf69c14ad758dce2330e8082da9bd96ff57f9c4a9569630ccab27e366",
+      "passed": true
+    },
+    "validate_bundle": {
+      "valid": true,
+      "blockers": 0,
+      "warnings": 0
+    },
+    "ui_block_edits": {
+      "valid": true,
+      "blockers": 0,
+      "warnings": 0
+    }
+  },
+  "final_status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW"
 }

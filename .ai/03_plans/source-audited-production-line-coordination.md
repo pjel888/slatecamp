@@ -74,3 +74,10 @@ After each accepted batch, stage only that batch's accepted article folders, que
 - Global handoff completion state for Batches 087-092: committed and pushed through f8956b5bf.
 - Batch 093-095 reservation status: 15 articles reserved, 0 blockers, all raw PDF source families confirmed locally available.
 - Next-batch instruction: Batch 093 may start after coordinator acceptance. Batches 094 and 095 are reserved and ready to start sequentially after prior batch acceptance.
+
+### Batch 093 prior-artifact overlap acknowledgment — 2026-05-12T21:22:14+08:00
+
+Independent QA for Batch 093 found that all five Batch 093 article IDs appeared in older local-first/re-audit artifacts for Batches 007, 008, 053, and 067. QA determined these were historical/local re-audit artifacts that were not committed as accepted production batches, not pushed to Supabase, and not deployed; therefore Batch 093 is acceptable as the first serially accepted production-line pass for these five clusters.
+
+Process advisory: the Batch 093 reservation manifest/process stated `selected_ids_found_in_exclusion_set: []`, while the Batch 093 worker ledger recorded prior-artifact overlap. Future reservation coordinators must distinguish accepted/committed batch exclusion from historical/re-audit artifact overlap and record both explicitly.
+

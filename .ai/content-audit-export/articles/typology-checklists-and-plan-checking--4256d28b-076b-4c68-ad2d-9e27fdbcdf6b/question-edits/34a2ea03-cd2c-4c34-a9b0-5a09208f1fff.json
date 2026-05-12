@@ -2,50 +2,90 @@
   "question_id": "34a2ea03-cd2c-4c34-a9b0-5a09208f1fff",
   "baseline_hash": "sha256:4ddceb0f8cc3d979474ff20bff8834924be1055372710221eae26fb075c33b98",
   "action": "replace",
-  "reason": "source-audited-article-batch-053-local-first: local raw PDF backed replacement constrained to checked Batch 053 source families.",
-  "approved_by": "codex-local-first-batch-053",
-  "approved_at": "2026-05-11T19:04:00.000+08:00",
+  "reason": "source-audited-article-batch-093-local-first: source-safe local replacement/reapproval grounded in checked local raw sources for typology-checklists-and-plan-checking; preserves answer-key alignment while removing stale prior-batch support where present.",
+  "approved_by": "codex-local-source-audit-batch-093",
+  "approved_at": "2026-05-12T20:26:21+08:00",
   "source_audit_support": {
     "parent_article_id": "4256d28b-076b-4c68-ad2d-9e27fdbcdf6b",
     "parent_article_slug": "typology-checklists-and-plan-checking",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "Design Process refined markdown lines 59-68 and 437-439; BP 344 2024 Revised IRR refined markdown lines 40-64, 230-280, 305-348, 685-698, 776-808, 917-951, 1002-1018, 1157-1195, 1223-1225, and 1431-1441",
+    "batch_id": "source-audited-article-batch-093-local-first",
+    "primary_truth": "vitruvius-connection/001_Raw-Source-Layer",
+    "source_locator": "Design Process refined markdown lines 49-68; local raw PDF and raw markdown checked. | BP 344 2024 Revised IRR refined markdown lines 40-64, 230-348, 685-808, 917-1018, and 1157-1225; local raw PDF and raw markdown checked. | PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1851-1999, and 2097-2300; local raw PDF and raw markdown checked. | RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; local raw PDF and raw markdown checked.",
     "checked_markdown_lines": [
-      "Design Process refined markdown lines 59-68",
-      "Design Process refined markdown lines 437-439",
-      "BP 344 2024 Revised IRR refined markdown lines 40-64",
-      "BP 344 2024 Revised IRR refined markdown lines 230-280",
-      "BP 344 2024 Revised IRR refined markdown lines 305-348",
-      "BP 344 2024 Revised IRR refined markdown lines 685-698",
-      "BP 344 2024 Revised IRR refined markdown lines 776-808",
-      "BP 344 2024 Revised IRR refined markdown lines 917-951",
-      "BP 344 2024 Revised IRR refined markdown lines 1002-1018",
-      "BP 344 2024 Revised IRR refined markdown lines 1157-1195",
-      "BP 344 2024 Revised IRR refined markdown lines 1223-1225",
-      "BP 344 2024 Revised IRR refined markdown lines 1431-1441"
+      "Design Process refined markdown lines 49-68",
+      "BP 344 2024 Revised IRR lines 40-64",
+      "BP 344 2024 Revised IRR lines 230-348",
+      "BP 344 2024 Revised IRR lines 685-808",
+      "BP 344 2024 Revised IRR lines 917-1018",
+      "BP 344 2024 Revised IRR lines 1157-1225",
+      "PD 1096 RIRR lines 486-530",
+      "PD 1096 RIRR lines 545-631",
+      "PD 1096 RIRR lines 756-844",
+      "PD 1096 RIRR lines 870-878",
+      "PD 1096 RIRR lines 1088-1149",
+      "PD 1096 RIRR lines 1310-1329",
+      "PD 1096 RIRR lines 1452-1498",
+      "PD 1096 RIRR lines 1851-1999",
+      "PD 1096 RIRR lines 2097-2300",
+      "RA 9514 RIRR lines 2476-2490",
+      "RA 9514 RIRR lines 2635-2716"
+    ],
+    "checked_raw_pdf_pages": [
+      "Design Process raw PDF page corresponding to programming/process sequence, verified through local conversion artifacts",
+      "BP 344 2024 Revised IRR raw PDF pages corresponding to checked accessibility dimensions, verified through local conversion artifacts",
+      "PD 1096 raw PDF pages corresponding to Rule III permit processing and Rule VII/VIII development controls, verified through local conversion artifacts",
+      "RA 9514 RIRR raw PDF pages corresponding to life safety and means-of-egress requirements, verified through local conversion artifacts"
     ],
     "checked_sources": [
       {
-        "source_id": "design-process-local-raw-pdf--b053-4256d28b-01",
-        "label": "Design Process - local raw PDF",
+        "source_id": "design-process-programming-local-b093",
+        "label": "Design Process - architectural programming and information-management sequence",
         "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Design Process.pdf",
         "sha256": "sha256:867f07de2d857d74d256a137571150773d5e14296d2e26ea013cd3a720816e35",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/raw_markdown/Design Process.md",
+        "raw_markdown_sha256": "sha256:38582802fa753235322554091d07ac1d7b7c96e51bc4622b6c4261dd28fc57e2",
         "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Design Process.md",
         "refined_markdown_sha256": "sha256:c2d312913532efffce902e059c49ea731ac09245fd7da29fbbd30fec52afcb80",
-        "locator": "Design Process refined markdown lines 59-68 and 437-439"
+        "locator": "Design Process refined markdown lines 49-68; local raw PDF and raw markdown checked."
       },
       {
-        "source_id": "bp344-2024-local-raw-pdf--b053-4256d28b-02",
-        "label": "BP 344 2024 Revised IRR - local raw PDF",
+        "source_id": "bp344-2024-revised-irr-local-b093",
+        "label": "BP 344 2024 Revised IRR - accessibility plan-check dimensions",
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
         "sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "raw_markdown_sha256": "sha256:a621bcb059a5c023dc5056939a6fa8ae44b5f60a29918f628d81657b9639692a",
         "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
         "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
-        "locator": "BP 344 2024 Revised IRR refined markdown lines 40-64, 230-280, 305-348, 685-698, 776-808, 917-951, 1002-1018, 1157-1195, 1223-1225, and 1431-1441"
+        "locator": "BP 344 2024 Revised IRR refined markdown lines 40-64, 230-348, 685-808, 917-1018, and 1157-1225; local raw PDF and raw markdown checked."
+      },
+      {
+        "source_id": "pd1096-rirr-dpwh-local-b093",
+        "label": "PD 1096 2004 Revised IRR - National Building Code development controls and permit review",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1851-1999, and 2097-2300; local raw PDF and raw markdown checked."
+      },
+      {
+        "source_id": "ra9514-rirr-egress-local-b093",
+        "label": "RA 9514 Revised IRR 2019 - Fire Code means of egress and occupant-load coordination",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "raw_markdown_sha256": "sha256:eb992b1c0090e1f8f34ee3ad24d20be3b4ffaa34ec3ab9d341b6f1596865dd26",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "locator": "RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; local raw PDF and raw markdown checked."
       }
     ],
-    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 053 checked local raw PDF source scope."
+    "scenario_enrichment_article_status": "eligible-added",
+    "local_source_safe_action": "Question edit revalidated for Batch 093 against checked local raw-source support for typology-checklists-and-plan-checking."
   },
   "proposed": {
     "text": "What is the source-backed accessible door clear width in the checked BP 344 2024 source?",
@@ -68,9 +108,9 @@
       }
     ],
     "correct_option_id": "a",
-    "rationale": "900 mm minimum clear width. This answer is supported by the checked Batch 053 local raw PDF source families for Typology Checklists and Plan Checking.",
-    "explanation": "900 mm minimum clear width. The Batch 053 source audit used local raw PDFs first and refined markdown only as locator evidence for Typology Checklists and Plan Checking.",
-    "code_citation": "Design Process refined markdown lines 59-68 and 437-439; BP 344 2024 Revised IRR refined markdown lines 40-64, 230-280, 305-348, 685-698, 776-808, 917-951, 1002-1018, 1157-1195, 1223-1225, and 1431-1441"
+    "rationale": "900 mm minimum clear width. This answer is supported by the checked Batch 093 local raw-source family for BP 344 accessible entrances and doors.",
+    "explanation": "900 mm minimum clear width. Batch 093 used the local raw PDF and converted markdown for BP 344, with refined markdown used only as locator evidence.",
+    "code_citation": "BP 344 2024 Revised IRR lines 776-808"
   },
   "batch_question_template_index": 3
 }

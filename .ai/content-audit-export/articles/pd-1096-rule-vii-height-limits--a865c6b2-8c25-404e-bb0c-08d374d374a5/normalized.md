@@ -2,7 +2,7 @@
 
 ## Source-Safe Scope
 
-This repair limits the article to checked PD 1096 RIRR source evidence. It removes media blocks, derivative citations, and unsupported computed examples. The goal is to teach the sequence of height-limit reasoning without inventing values outside the checked source.
+This repair limits the article to checked PD 1096 RIRR source evidence. It removes media blocks, derivative citations, and off-source computed examples. The goal is to teach the sequence of height-limit reasoning without inventing values outside the checked source.
 
 ## What BHL Means
 
@@ -35,6 +35,10 @@ PD 1096 excludes permitted projections above the roof such as signage, masts, an
 ## Bulk Coordination
 
 Height is not the only control. Rule VII also ties building bulk to FLAR, allowable footprint, outermost building faces, total gross floor area, road right-of-way width, setbacks, and light and ventilation. The exam-safe sequence is to classify the use, find the applicable BHL, apply local zoning if stricter, then cross-check footprint, area, setbacks, and other development controls.
+
+## Real World Scenario
+
+A mixed-use proposal may appear to fit the national BHL table, but the reviewer still has to check the local zoning ordinance and the other Rule VII bulk controls. For example, if the table allows a taller commercial building but the city or municipal zoning ordinance sets a lower height in that zone, the lower local limit controls. The same review should keep roof appurtenances separate from BHL only where the IRR treats them as permitted projections, then continue to FLAR, footprint, road-width, parking, setback, and light-and-ventilation checks.
 
 ## Source Checkpoints
 

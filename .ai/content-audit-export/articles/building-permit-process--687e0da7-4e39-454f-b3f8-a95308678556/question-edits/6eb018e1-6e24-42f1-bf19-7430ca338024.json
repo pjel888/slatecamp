@@ -2,15 +2,17 @@
   "question_id": "6eb018e1-6e24-42f1-bf19-7430ca338024",
   "baseline_hash": "sha256:44019f5991485aebc57d6719ae3e3317fd8b05b81bf67072dd90ec2133983a7c",
   "action": "replace",
-  "reason": "source-audited-article-batch-067-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes prior off-source framing where present.",
-  "approved_by": "codex-local-first-batch-067",
-  "approved_at": "2026-05-11T23:36:12+08:00",
+  "reason": "source-audited-article-batch-093-local-first: source-safe local replacement/reapproval grounded in checked local raw sources for building-permit-process; preserves answer-key alignment while removing stale prior-batch support where present.",
+  "approved_by": "codex-local-source-audit-batch-093",
+  "approved_at": "2026-05-12T20:26:21+08:00",
   "source_audit_support": {
     "parent_article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
     "parent_article_slug": "building-permit-process",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
+    "batch_id": "source-audited-article-batch-093-local-first",
+    "primary_truth": "vitruvius-connection/001_Raw-Source-Layer",
+    "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1851-1999, and 2097-2300; local raw PDF and raw markdown checked. | RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; local raw PDF and raw markdown checked. | LGU zoning ordinance refined markdown lines 2038-2044; local raw PDF and raw markdown checked.",
     "checked_markdown_lines": [
       "PD 1096 RIRR lines 486-530",
       "PD 1096 RIRR lines 545-631",
@@ -19,59 +21,54 @@
       "PD 1096 RIRR lines 1088-1149",
       "PD 1096 RIRR lines 1310-1329",
       "PD 1096 RIRR lines 1452-1498",
-      "PD 1096 RIRR lines 1627-1771",
+      "PD 1096 RIRR lines 1851-1999",
       "PD 1096 RIRR lines 2097-2300",
       "RA 9514 RIRR lines 2476-2490",
       "RA 9514 RIRR lines 2635-2716",
-      "PD 9514 refined markdown lines 1599-1629",
-      "PD 9514 refined markdown lines 1766-1854"
+      "LGU zoning ordinance refined markdown lines 2038-2044"
     ],
     "checked_raw_pdf_pages": [
-      "PD 1096 raw PDF pages 21-22",
-      "PD 1096 raw PDF pages 34-36",
-      "PD 1096 raw PDF page 47",
-      "PD 1096 raw PDF page 80",
-      "PD 1096 raw PDF pages 88-90",
-      "PD 1096 raw PDF page 97",
-      "PD 1096 raw PDF page 107",
-      "PD 1096 raw PDF page 119",
-      "PD 1096 raw PDF pages 126 and 128",
-      "RA 9514 RIRR raw PDF page 90",
-      "RA 9514 RIRR raw PDF pages 94-96",
-      "PD 9514 raw PDF pages 57-58",
-      "PD 9514 raw PDF page 65",
-      "PD 9514 raw PDF page 68"
+      "PD 1096 raw PDF pages corresponding to Rule III permit processing and Rule VII/VIII development controls, verified through local conversion artifacts",
+      "RA 9514 RIRR raw PDF pages corresponding to life safety and means-of-egress requirements, verified through local conversion artifacts",
+      "LGU zoning ordinance raw PDF page corresponding to Article X Sections 67-69, verified through local conversion artifacts"
     ],
     "checked_sources": [
       {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "label": "PD 1096 RIRR 2004 - permits, occupancy, mixed occupancy, height, yards, and parking",
+        "source_id": "pd1096-rirr-dpwh-local-b093",
+        "label": "PD 1096 2004 Revised IRR - National Building Code development controls and permit review",
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
         "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction"
+        "locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1851-1999, and 2097-2300; local raw PDF and raw markdown checked."
       },
       {
-        "source_id": "ra9514-rirr-egress-separation-local-b067",
-        "label": "RA 9514 Revised IRR 2019 - means of egress and exit separation",
+        "source_id": "ra9514-rirr-egress-local-b093",
+        "label": "RA 9514 Revised IRR 2019 - Fire Code means of egress and occupant-load coordination",
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
         "sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "raw_markdown_sha256": "sha256:eb992b1c0090e1f8f34ee3ad24d20be3b4ffaa34ec3ab9d341b6f1596865dd26",
         "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
         "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
-        "locator": "RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction"
+        "locator": "RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; local raw PDF and raw markdown checked."
       },
       {
-        "source_id": "pd9514-fire-code-life-safety-egress-local-b067",
-        "label": "PD 9514 Fire Code source family - life safety and egress principles",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf",
-        "sha256": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-9514/PD 9514 - Fire Code of the Philippines.md",
-        "refined_markdown_sha256": "sha256:5eb0584f1bcbfa87044e28f2e59a75c6364c7160a98edfdd888c6aef849b01b2",
-        "locator": "PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction"
+        "source_id": "lgu-zoning-ordinance-2016-2025-local-b093",
+        "label": "LGU zoning ordinance 2016-2025 - locational clearance and building permit precondition example",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/LGU/459742704-Zoning-Ordinance-2016-2025.pdf",
+        "sha256": "sha256:37df272b5ce9c964ca53c5fe741dde8d2063779e727d251025bc92314cb40455",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/LGU/459742704-Zoning-Ordinance-2016-2025.md",
+        "raw_markdown_sha256": "sha256:1d9ccf682c8c0485943448208c6a518ee155b82d99aa34c41b29103dad229de4",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/LGU/459742704-Zoning-Ordinance-2016-2025.md",
+        "refined_markdown_sha256": "sha256:54241fd01ceffc6713ad58ed7673948c17827a5c01b3ab0ad10f71f2ed05274a",
+        "locator": "LGU zoning ordinance refined markdown lines 2038-2044; local raw PDF and raw markdown checked."
       }
     ],
-    "local_source_safe_action": "Question text, options, answer, rationale, and citation rewritten to the Batch 067 checked local raw-source scope."
+    "scenario_enrichment_article_status": "eligible-added",
+    "local_source_safe_action": "Question edit revalidated for Batch 093 against checked local raw-source support for building-permit-process."
   },
   "proposed": {
     "text": "Under PD 1096 Rule III, what must happen before constructing, altering, repairing, converting, using, occupying, moving, demolishing, or adding to a building or structure?",

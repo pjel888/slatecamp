@@ -2,7 +2,7 @@
 
 ## Source-Safe Scope
 
-This local-first repair is grounded in the checked 2004 Revised IRR of PD 1096, with Fire Code sources used only where the permit workflow refers to fire safety review and occupancy coordination. It removes media blocks, unsupported workflow explanations, and claims not checked against local raw PDFs.
+This local-first repair is grounded in the checked 2004 Revised IRR of PD 1096, with Fire Code sources used only where the permit workflow refers to fire safety review and occupancy coordination. It removes media blocks, off-source workflow explanations, and claims not checked against local raw PDFs.
 
 ## Permit Required Before Work
 
@@ -22,9 +22,17 @@ The Building Official gives due course when documents are in order, checks zonin
 
 If the application, plans, and specifications conform to the Code and IRR, the Building Official must issue the building permit within fifteen days from payment of the required fees.
 
+## Local Zoning Coordination
+
+PD 1096 requires the OBO to verify conformity with the city or municipal land-use zoning ordinance during permit processing. A checked local zoning ordinance in the raw LGU source layer also states that owners or developers must secure locational clearance before activity or construction on their property, and that the Local Building Officer cannot issue a building permit without valid locational clearance under that ordinance. Treat that as a source-backed example of why local zoning clearance can become a permit gate, while still checking the actual ordinance in the project locality.
+
 ## Permit Validity
 
 Issuance of a building permit is not permission to violate the Code. A permit expires and becomes null and void if work does not start within one year after issuance, or if work is suspended or abandoned after commencement for a continuous period of 120 days.
+
+## Real World Scenario
+
+For a small commercial fit-out, the applicant should first assemble the prescribed forms, signed and sealed architectural and engineering documents, accessibility details, and fire safety documents. The OBO then checks zoning conformity or required local clearance, verifies line-and-grade conditions, routes architectural and discipline reviews, and sends one set to the Fire Marshal for fire safety recommendations. If the documents conform and the required fees are paid, the fifteen-day issuance rule applies; if work never starts within one year, or stops for 120 continuous days after starting, the permit expires.
 
 ## Source Checkpoints
 
@@ -32,3 +40,4 @@ Issuance of a building permit is not permission to violate the Code. A permit ex
 - PD 1096 RIRR lines 545-631: signed and sealed application documents, architectural documents, accessibility details, and fire safety documents.
 - PD 1096 RIRR lines 756-844: processing, discipline reviews, fire safety referral, and fifteen-day issuance rule.
 - PD 1096 RIRR lines 870-878: permit validity and expiration.
+- LGU zoning ordinance refined markdown lines 2038-2044: locational clearance and local building-permit precondition under the checked ordinance.

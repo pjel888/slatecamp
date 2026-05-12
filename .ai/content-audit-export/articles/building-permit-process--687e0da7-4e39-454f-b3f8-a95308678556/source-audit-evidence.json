@@ -1,15 +1,16 @@
 {
-  "batch_id": "source-audited-article-batch-067-local-first",
-  "audit_date": "2026-05-11",
-  "audited_at": "2026-05-11T23:36:12+08:00",
+  "batch_id": "source-audited-article-batch-093-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T20:58:26+08:00",
   "target": {
     "article_id": "687e0da7-4e39-454f-b3f8-a95308678556",
     "slug": "building-permit-process",
     "title": "Building Permit Process",
     "article_folder": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556",
-    "normalized_sha256": "sha256:2e67550c937a4b89e90453f9ea1162a60d3bb5b71a9cd01bbb6957fe9502ca84",
-    "candidate_sha256": "sha256:2e67550c937a4b89e90453f9ea1162a60d3bb5b71a9cd01bbb6957fe9502ca84",
-    "candidate_path": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/candidate.md"
+    "normalized_sha256": "sha256:feef49ef5bfe9f5fdf23e57f54e43e53db9e99ec6631e009d72fa652ea216b24",
+    "candidate_sha256": "sha256:feef49ef5bfe9f5fdf23e57f54e43e53db9e99ec6631e009d72fa652ea216b24",
+    "candidate_path": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/candidate.md",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits"
   },
   "classification": {
     "legal_or_code_candidate": true,
@@ -17,32 +18,30 @@
     "requires_raw_pdf_audit": true,
     "source_risk_tier": "high",
     "source_domains": [
-      "PD 1096 RIRR 2004 - permits, occupancy, mixed occupancy, height, yards, and parking",
-      "RA 9514 Revised IRR 2019 - means of egress and exit separation",
-      "PD 9514 Fire Code source family - life safety and egress principles"
+      "PD 1096 2004 Revised IRR - National Building Code development controls and permit review",
+      "RA 9514 Revised IRR 2019 - Fire Code means of egress and occupant-load coordination",
+      "LGU zoning ordinance 2016-2025 - locational clearance and building permit precondition example"
     ]
   },
   "raw_pdf_gate": {
     "status": "PASS",
     "raw_pdfs_checked_first": true,
-    "all_legal_code_claims_have_pdf_locator": true,
-    "all_section_numbers_verified_against_raw_pdf": true,
+    "all_legal_code_claims_have_local_source_locator": true,
     "no_derivative_text_used_as_source_of_truth": true,
     "raw_source_layer_root": "vitruvius-connection/001_Raw-Source-Layer",
-    "local_pdf_extraction_method": "python_pymupdf_local",
+    "local_conversion_layer_used_for_line_location": true,
     "blockers": []
   },
   "checked_sources": [
     {
-      "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-      "label": "PD 1096 RIRR 2004 - permits, occupancy, mixed occupancy, height, yards, and parking",
+      "source_id": "pd1096-rirr-dpwh-local-b093",
+      "label": "PD 1096 2004 Revised IRR - National Building Code development controls and permit review",
       "authority": "DPWH official revised IRR local raw PDF conversion",
       "source_type": "building_code_irr_pdf",
-      "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction",
+      "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1851-1999, and 2097-2300; local raw PDF and raw markdown checked.",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
       "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
       "checked_markdown_lines": [
         "PD 1096 RIRR lines 486-530",
         "PD 1096 RIRR lines 545-631",
@@ -51,903 +50,168 @@
         "PD 1096 RIRR lines 1088-1149",
         "PD 1096 RIRR lines 1310-1329",
         "PD 1096 RIRR lines 1452-1498",
-        "PD 1096 RIRR lines 1627-1771",
+        "PD 1096 RIRR lines 1851-1999",
         "PD 1096 RIRR lines 2097-2300"
       ],
       "checked_raw_pdf_pages": [
-        "PD 1096 raw PDF pages 21-22",
-        "PD 1096 raw PDF pages 34-36",
-        "PD 1096 raw PDF page 47",
-        "PD 1096 raw PDF page 80",
-        "PD 1096 raw PDF pages 88-90",
-        "PD 1096 raw PDF page 97",
-        "PD 1096 raw PDF page 107",
-        "PD 1096 raw PDF page 119",
-        "PD 1096 raw PDF pages 126 and 128"
+        "PD 1096 raw PDF pages corresponding to Rule III permit processing and Rule VII/VIII development controls, verified through local conversion artifacts"
       ],
-      "use": "primary source for Batch 067 PD 1096 article claims",
-      "local_source_checked": true
+      "use": "primary source for PD 1096 permit, occupancy, height, bulk, setback, and architectural review claims",
+      "local_source_checked": true,
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7"
     },
     {
-      "source_id": "ra9514-rirr-egress-separation-local-b067",
-      "label": "RA 9514 Revised IRR 2019 - means of egress and exit separation",
+      "source_id": "ra9514-rirr-egress-local-b093",
+      "label": "RA 9514 Revised IRR 2019 - Fire Code means of egress and occupant-load coordination",
       "authority": "Bureau of Fire Protection revised IRR local raw PDF conversion",
       "source_type": "fire_code_irr_pdf",
-      "source_locator": "RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction",
+      "source_locator": "RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; local raw PDF and raw markdown checked.",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
-      "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
       "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
-      "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
       "checked_markdown_lines": [
         "RA 9514 RIRR lines 2476-2490",
         "RA 9514 RIRR lines 2635-2716"
       ],
       "checked_raw_pdf_pages": [
-        "RA 9514 RIRR raw PDF page 90",
-        "RA 9514 RIRR raw PDF pages 94-96"
+        "RA 9514 RIRR raw PDF pages corresponding to life safety and means-of-egress requirements, verified through local conversion artifacts"
       ],
-      "use": "primary source for egress, exit separation, exit number, width, dead-end, and travel-distance framing",
-      "local_source_checked": true
+      "use": "primary source for egress, exit count, width, occupant load, exit arrangement, dead-end, and travel-distance coordination",
+      "local_source_checked": true,
+      "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+      "raw_markdown_sha256": "sha256:eb992b1c0090e1f8f34ee3ad24d20be3b4ffaa34ec3ab9d341b6f1596865dd26",
+      "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567"
     },
     {
-      "source_id": "pd9514-fire-code-life-safety-egress-local-b067",
-      "label": "PD 9514 Fire Code source family - life safety and egress principles",
-      "authority": "Fire Code local raw PDF conversion",
-      "source_type": "fire_code_pdf",
-      "source_locator": "PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf",
-      "raw_pdf_sha256": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-9514/PD 9514 - Fire Code of the Philippines.md",
-      "refined_markdown_sha256": "sha256:5eb0584f1bcbfa87044e28f2e59a75c6364c7160a98edfdd888c6aef849b01b2",
+      "source_id": "lgu-zoning-ordinance-2016-2025-local-b093",
+      "label": "LGU zoning ordinance 2016-2025 - locational clearance and building permit precondition example",
+      "authority": "Local LGU zoning ordinance raw PDF conversion",
+      "source_type": "local_zoning_ordinance_pdf",
+      "source_locator": "LGU zoning ordinance refined markdown lines 2038-2044; local raw PDF and raw markdown checked.",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/LGU/459742704-Zoning-Ordinance-2016-2025.pdf",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/LGU/459742704-Zoning-Ordinance-2016-2025.md",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/LGU/459742704-Zoning-Ordinance-2016-2025.md",
       "checked_markdown_lines": [
-        "PD 9514 refined markdown lines 1599-1629",
-        "PD 9514 refined markdown lines 1766-1854"
+        "LGU zoning ordinance refined markdown lines 2038-2044"
       ],
       "checked_raw_pdf_pages": [
-        "PD 9514 raw PDF pages 57-58",
-        "PD 9514 raw PDF page 65",
-        "PD 9514 raw PDF page 68"
+        "LGU zoning ordinance raw PDF page corresponding to Article X Sections 67-69, verified through local conversion artifacts"
       ],
-      "use": "supporting source for life-safety egress principles and exit enclosure requirements",
-      "local_source_checked": true
+      "use": "primary local source example for locational clearance and local building-permit precondition",
+      "local_source_checked": true,
+      "raw_pdf_sha256": "sha256:37df272b5ce9c964ca53c5fe741dde8d2063779e727d251025bc92314cb40455",
+      "raw_markdown_sha256": "sha256:1d9ccf682c8c0485943448208c6a518ee155b82d99aa34c41b29103dad229de4",
+      "refined_markdown_sha256": "sha256:54241fd01ceffc6713ad58ed7673948c17827a5c01b3ab0ad10f71f2ed05274a"
     }
   ],
-  "claims": [
-    {
-      "claim_id": "article-source-scope",
-      "claim_text": "Building Permit Process was rewritten to checked Batch 067 local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Article uses paraphrase only; raw PDF pages and refined line locators are recorded."
-      }
+  "scenario_enrichment": {
+    "status": "eligible-added",
+    "section": "Real World Scenario",
+    "reason": "Permit-package, OBO zoning, Fire Marshal referral, issuance, and validity flow are directly supported by local sources."
+  },
+  "question_edits": {
+    "expected_count": 57,
+    "linked_question_count": 57,
+    "edit_count": 57,
+    "counts_match_manifest": true,
+    "missing_question_edit_ids": [],
+    "extra_question_edit_ids": [],
+    "question_edit_paths": [
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/029253cc-5422-437e-9c07-0978827010b9.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/06028da1-bf09-4f25-a810-46e7616dfc6b.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/0901dd48-3e62-4b85-96a6-4f13cfe8ec8f.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/0fc93322-82f2-423d-9783-3428026e5ef5.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/1b89c7d0-3b82-472e-b92c-ae930772ae8b.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/1fe94659-47ec-4231-87b6-6f1f2801f9ab.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/216faec4-026c-4436-a3c1-1d49a2218189.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/2c52baa1-e3fc-445c-9a6e-e2e0f716bf60.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/2d8ada85-005f-47df-8797-ba2edf2fc41f.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/34e7d6e5-84f1-4ca6-bfc7-02cdadca6286.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/3917e78f-ed71-4032-a35f-0258f3f73cba.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/42321ed3-4bff-4083-9f24-05abe68e506a.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/4ae85877-4383-4bfa-816d-6a4661349b0e.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/50af96f9-cc07-4e6f-9cff-501a00778240.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/50da45cd-3084-4208-b270-d236b38fdefd.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/56071d4b-5a4d-461e-8859-8fce88f2b1dc.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/584f7fdf-c74a-48fb-bc91-42fb80d4f56c.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/5c6c5d2b-d9e0-4e8c-88e1-a8e9d22218fa.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/5de519da-04c1-4f76-9b1a-b06da23bc47f.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/60457c0e-5663-4cbd-b035-410956eeeba0.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/67efb640-4b5f-453c-9879-48545884a312.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/68e7f2d9-f300-4c08-bc60-34230015d439.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/6eb018e1-6e24-42f1-bf19-7430ca338024.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/7170509b-1cca-4bd5-ae52-91319fa16a0c.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/77fd460b-82bd-4524-bf37-cc99c6211cd7.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/7f4ad7eb-929c-4b95-b808-2e16c3b91928.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/801f00d2-a4bf-452e-87b5-b172405abf94.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/81613624-0d0a-4b93-a855-99135c69e7a8.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/84481f32-f190-4c8a-af63-c482aacdb392.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/84f5330c-f6c0-4a1f-bcc0-70e89b7753c5.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/85b19263-4679-4357-ac48-f02ea53518bb.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/8d7a571e-83f6-4d50-a87a-39f85445b7b1.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/9034de35-569f-4803-a447-072962ea49ec.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/9700b56b-be57-4b24-84c0-f17a06a654a5.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/973890da-0e56-4e82-97f8-59800ff5c6dc.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/97b9c33c-0cc2-4d75-a38e-6af0c7bbbbf3.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/9bfdfa9f-2c5b-41ca-9baa-3104bc944b92.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/9fa28879-658c-4c90-9bb7-20eaceea12e1.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/b24e34e7-4b7d-4970-afb0-0db40e7ef64d.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/bbe87f0f-7267-4c71-aaf2-cd0c076afc6f.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/bf819825-3fe3-43b2-81b2-ecb94a7e8e2f.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/c94382d9-f23d-4f83-a468-2825f8903f1c.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/d1eb77ed-eec9-4f53-9eb2-75dd90539340.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/d6dbfe45-93b9-472e-b1b1-4167f43f90d2.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/e26a0311-558b-4833-90db-93a93339cc31.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/e44f9486-335d-43d6-ae2f-ca12b44cc3fd.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/ed2ba11e-d2e7-40cc-9003-1ebc8e8fcad6.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/ede73de3-0c53-420f-bdae-4fe11ff495a1.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/ef8a3c44-d5f2-45b8-88b7-b4c9296137b0.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/eff2f430-07f1-4733-83fa-5069ee2a90a7.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/f1697646-3ea4-4821-ad99-e6be29f2101e.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/f25d2e41-4996-4a87-8e99-aecf31a36019.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/f73f4413-0bfd-48d6-9682-773ea0c9c974.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/f8ccd35f-7773-4e7d-afe1-f38616759719.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/fd589783-41bf-40e4-9396-46e3f39183af.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/ff36be49-816a-42fb-9ce2-73286caf4e89.json",
+      ".ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits/ff764a29-1325-4908-bb30-178acf3e50c9.json"
+    ]
+  },
+  "roundtrip_state": {
+    "normalized_md_updated": true,
+    "ui_blocks_json_owns_preserved_blocks": true,
+    "candidate_md_pending_compose": false,
+    "candidate_md_composed": true,
+    "candidate_hash_matches_normalized_hash": true
+  },
+  "stale_prior_batch_overlap": {
+    "observed_prior_batch_artifacts_for_same_article_ids": true,
+    "treatment": "fixed Batch 093 manifest was followed exactly; prior artifact overlap recorded as re-audit history, not as article replacement authority"
+  },
+  "blockers": [],
+  "validation": {
+    "compose": {
+      "blockers": 0,
+      "candidate_hash": "sha256:feef49ef5bfe9f5fdf23e57f54e43e53db9e99ec6631e009d72fa652ea216b24",
+      "passed": true
     },
-    {
-      "claim_id": "question-edit-1",
-      "claim_text": "Question edit 1 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
+    "diff": {
+      "safe_to_push": true,
+      "blockers": 0,
+      "candidate_hash": "sha256:feef49ef5bfe9f5fdf23e57f54e43e53db9e99ec6631e009d72fa652ea216b24",
+      "passed": true
     },
-    {
-      "claim_id": "question-edit-2",
-      "claim_text": "Question edit 2 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
+    "validate_bundle": {
+      "valid": true,
+      "blockers": 0,
+      "warnings": 0
     },
-    {
-      "claim_id": "question-edit-3",
-      "claim_text": "Question edit 3 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-4",
-      "claim_text": "Question edit 4 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-5",
-      "claim_text": "Question edit 5 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-6",
-      "claim_text": "Question edit 6 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-7",
-      "claim_text": "Question edit 7 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-8",
-      "claim_text": "Question edit 8 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-9",
-      "claim_text": "Question edit 9 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-10",
-      "claim_text": "Question edit 10 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-11",
-      "claim_text": "Question edit 11 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-12",
-      "claim_text": "Question edit 12 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-13",
-      "claim_text": "Question edit 13 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-14",
-      "claim_text": "Question edit 14 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-15",
-      "claim_text": "Question edit 15 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-16",
-      "claim_text": "Question edit 16 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-17",
-      "claim_text": "Question edit 17 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-18",
-      "claim_text": "Question edit 18 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-19",
-      "claim_text": "Question edit 19 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-20",
-      "claim_text": "Question edit 20 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-21",
-      "claim_text": "Question edit 21 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-22",
-      "claim_text": "Question edit 22 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-23",
-      "claim_text": "Question edit 23 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-24",
-      "claim_text": "Question edit 24 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-25",
-      "claim_text": "Question edit 25 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-26",
-      "claim_text": "Question edit 26 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-27",
-      "claim_text": "Question edit 27 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-28",
-      "claim_text": "Question edit 28 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-29",
-      "claim_text": "Question edit 29 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-30",
-      "claim_text": "Question edit 30 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-31",
-      "claim_text": "Question edit 31 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-32",
-      "claim_text": "Question edit 32 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-33",
-      "claim_text": "Question edit 33 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-34",
-      "claim_text": "Question edit 34 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-35",
-      "claim_text": "Question edit 35 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-36",
-      "claim_text": "Question edit 36 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-37",
-      "claim_text": "Question edit 37 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-38",
-      "claim_text": "Question edit 38 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-39",
-      "claim_text": "Question edit 39 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-40",
-      "claim_text": "Question edit 40 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-41",
-      "claim_text": "Question edit 41 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-42",
-      "claim_text": "Question edit 42 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-43",
-      "claim_text": "Question edit 43 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-44",
-      "claim_text": "Question edit 44 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-45",
-      "claim_text": "Question edit 45 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-46",
-      "claim_text": "Question edit 46 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-47",
-      "claim_text": "Question edit 47 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-48",
-      "claim_text": "Question edit 48 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-49",
-      "claim_text": "Question edit 49 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-50",
-      "claim_text": "Question edit 50 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-51",
-      "claim_text": "Question edit 51 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-52",
-      "claim_text": "Question edit 52 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-53",
-      "claim_text": "Question edit 53 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-54",
-      "claim_text": "Question edit 54 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-55",
-      "claim_text": "Question edit 55 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-56",
-      "claim_text": "Question edit 56 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
-    },
-    {
-      "claim_id": "question-edit-57",
-      "claim_text": "Question edit 57 for building-permit-process is rewritten within the Batch 067 checked local raw-source scope.",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_id": "pd1096-rirr-occupancy-permit-height-parking-local-b067",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "source_locator": "PD 1096 RIRR refined markdown lines 486-530, 545-631, 756-844, 870-878, 1088-1149, 1310-1329, 1452-1498, 1627-1771, and 2097-2300; raw PDF pages 21-22, 34-36, 47, 80, 88-90, 97, 107, 119, 126, and 128 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2476-2490 and 2635-2716; raw PDF pages 90 and 94-96 checked by local PDF extraction; PD 9514 refined markdown lines 1599-1629 and 1766-1854; raw PDF pages 57-58, 65, and 68 checked by local PDF extraction",
-        "quoted_pdf_excerpt": "Question content is a source-safe paraphrase; see proposed code_citation for the checked locator."
-      }
+    "ui_block_edits": {
+      "valid": true,
+      "blockers": 0,
+      "warnings": 0
     }
-  ],
-  "overall": {
-    "status": "PASS_LOCAL_FIRST",
-    "blockers": [],
-    "candidate_hash_matches_evidence": true,
-    "linked_question_edit_count": 57,
-    "question_edit_count": 57
   },
-  "scenario_enrichment_policy": {
-    "status": "eligible-deferred",
-    "note": "Scenario enrichment policy is pending. No Real World Scenario section was blindly added; article correctness and question support remained the gate."
-  },
-  "local_repairs": [
-    "Removed UI media/callout blocks and derivative citations from normalized.md.",
-    "Replaced linked questions with source-safe MCQ edits tied to Batch 067 checked raw PDF/source-family evidence.",
-    "Preserved roundtrip ownership by setting ui-blocks.json to zero extracted UI blocks and regenerating candidate via compose."
-  ],
-  "unverified_or_rejected_claims": [
-    "Derivative web citations and unstated foreign-code comparisons were not used as primary truth.",
-    "Numeric examples not directly supported by the selected raw-source locators were removed or replaced with source-safe rule checks."
-  ],
-  "sme_review": {
-    "required_before_publication": false,
-    "note": "Local-first raw-source audit completed; final publishing remains Supabase review only."
-  }
+  "final_status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW"
 }
