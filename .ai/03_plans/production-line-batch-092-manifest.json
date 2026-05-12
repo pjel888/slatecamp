@@ -1,0 +1,394 @@
+{
+  "batch_number": "092",
+  "manifest_status": "reserved_pre_start_not_complete",
+  "reserved_at": "2026-05-12T07:27:54+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "branch": "3dlab-gray-viewport-bg",
+  "baseline_commit": "3957e8c08",
+  "selection_rule": "Reserve five unpassed high-value LEA accessibility, fire-code, and professional-practice clusters with linked questions and exact readable local raw PDFs under /Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer, excluding article IDs recorded in source-audited Batches 001-089 reports, ledgers, scoped checks, dated recovery artifacts, and the local-first handoff. Mix BP 344 accessibility, RA 9514 fire-code, and UAP professional-practice articles.",
+  "inherited_blocker_status": "Batch 089 blockers=0; Batch 092 is reserved only and not complete.",
+  "prior_batch_exclusion_check": {
+    "status": "PASS",
+    "exclusion_source": "Batches 001-089 source-audited ledgers, reports, scoped checks, dated blocker/recovery artifacts, and source-audited-local-first-batches-handoff.md",
+    "excluded_article_id_count": 325,
+    "selected_article_count": 5,
+    "selected_ids_found_in_exclusion_set": []
+  },
+  "selected_article_uuids_slugs": [
+    {
+      "article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+      "slug": "pedestrian-protection-during-construction"
+    },
+    {
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "slug": "signs-design-and-construction"
+    },
+    {
+      "article_id": "cb947ab1-7737-4bde-8a47-606b5d305ed6",
+      "slug": "pd-1096-rule-viii-light-and-ventilation"
+    },
+    {
+      "article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+      "slug": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr"
+    },
+    {
+      "article_id": "f2c105fd-51fc-4b48-b53a-77242dbb91b0",
+      "slug": "uap-spp-doc-standards-of-professional-practice-for-philippine-architects"
+    }
+  ],
+  "counts": {
+    "selected_articles": 5,
+    "linked_questions_expected": 130,
+    "question_edits_expected": 130
+  },
+  "article_clusters": [
+    {
+      "article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+      "slug": "pedestrian-protection-during-construction",
+      "subject": "LEA-DSGN - Architectural Design and Site Planning",
+      "linked_question_count": 32,
+      "source_count": 1,
+      "existing_source_labels": [
+        "PD 1096 2004 Revised IRR (DPWH Official)"
+      ],
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743",
+      "linked_questions_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/linked-questions.json",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits",
+      "expected_question_edit_file_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/0fb654f9-536e-4d3e-91c1-9c863a62086f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/105d585e-4661-4c4f-b254-442dddeccadc.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/1ceb9197-7417-4d6e-bc56-a8ca59ad1fd6.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/2cce46a7-05a8-4038-99fe-fbb05abd1652.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/2eb82ecf-fa04-4c29-9c9e-8623fb1c50a5.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/33b6e0ce-3712-4d21-9f0c-8121d217dd70.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/3d15fb0f-aa82-470d-b7c5-f223c9e78bf7.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/42124372-e6d0-4279-8434-fa5ba51667c9.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/4395860b-5485-4baf-9569-910b99944621.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/51e70000-31da-441c-a14b-abdf9d2e6de0.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/59dc0fb3-75f0-4edd-b97a-068228aefe50.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/647b1fb7-6b62-4ad8-829a-17ba5db72715.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/6a01a77e-ff6c-4afd-84e6-c44992a00439.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/7557d28a-6361-4ddc-8f73-8fa26704b810.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/7ada5e00-38f4-458c-9637-1559b1659ab2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/7e290577-22f0-4afc-8192-346edd5cbced.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/7eadd381-e7e9-4c37-89c9-40f27879264d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/7faa42a2-7030-4ef2-98a1-bf50b2d39c84.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/82429017-cb3c-4d12-ac74-258efc6a152a.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/8a0b4b99-1a91-4f75-b5ba-fac17d51d3c5.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/8c9d65e7-dd73-49b1-896a-bcec50a758af.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/9cb73d6b-6fb2-4898-8450-73cf70f18a3b.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/9d00dc32-a53b-43b1-bcdb-0ec741d56d51.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/acf12fc8-7222-4567-b8ea-7a2b4fdcd6f9.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/b4628a11-d451-4e89-b3b6-7f5d9f615cf1.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/c32cd0e3-5d03-4dcb-be1d-d2d650d0b26c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/ccde3faf-3b97-419f-bd3e-2dc54ba23514.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/d459ea5d-890e-4217-af46-9a73e4fc5e38.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/e0ae464c-3653-4871-a342-18fbffcac469.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/e446aec8-ca44-49c8-875a-f41cc4a91011.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/f164109f-129f-494a-8270-1ac805d010e4.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/fe67187c-51bd-4113-bda4-7bb462d3ef11.json"
+      ],
+      "source_audit_priority": "high",
+      "blocker_resolution_needed": false,
+      "blocker_resolution_notes": []
+    },
+    {
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "slug": "signs-design-and-construction",
+      "subject": "LEA-DSGN - Architectural Design and Site Planning",
+      "linked_question_count": 37,
+      "source_count": 1,
+      "existing_source_labels": [
+        "PD 1096 2004 Revised IRR, DPWH Official Publication"
+      ],
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "linked_questions_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/linked-questions.json",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits",
+      "expected_question_edit_file_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/0605fffe-d97c-4aff-a3d1-82a5db520648.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/06bd8d6d-ce78-4eb6-aa4d-6aa795520040.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/0a0f02be-7f90-45bb-bcbf-9e954933564f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/0de8e05e-4518-4824-b146-78538996b570.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/0f7f1087-9b20-4e9c-b466-36ff26a70463.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/10d28226-d5e0-4237-931f-4ff647012884.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/1a1bc273-4daa-41d4-95ec-4c3ad09a77ee.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/1fe4a86b-09a8-4983-ac06-2c91364ff305.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/28523c8d-f1a6-4805-90bd-b55cbb132028.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/2a84ff3b-a43a-4dc3-b372-241ea4592429.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/2e128f3f-1ea1-4aca-a0c4-8fb53879744f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/36b8bca9-c2c1-4196-bcd9-560e4f4a457e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/393234ea-bca2-4e36-af01-af23efdb1de2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/3a6024ea-076d-4c47-a8c0-78330f6d1295.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/41fe151c-da3a-4ac9-89cb-1cdfda4d2dd3.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/4791e449-dc72-4f01-ab5d-36892e1c81fd.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/5b6477e2-7df8-4694-bee9-6db09e1fa14e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/60c70d86-4d93-46e7-b670-852e7bbaf882.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/744c6fa3-f860-40bf-8451-06c49c5188af.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/802a8d89-b04e-4ea8-9158-3127f5ed1f71.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/89bc7810-7304-41ab-806d-b22e338038a7.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/9bdbccbc-122e-463a-8ed3-354092dc88fc.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/ac37db0e-2609-4ead-bc5b-0dfa7b66b17d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/ad72b91c-6cdb-4c2f-8c13-c7c63e68431c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/ba847fe2-1060-44f4-adbb-09ba1d0fdea1.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/c4565528-3d3e-4a87-9eaf-11bc569868a8.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/c9d431d4-7644-4582-98a6-19e3b895b712.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/cb9955d0-c505-42a1-b1c6-644ee07308b0.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/d16477f3-4f40-4151-b9f8-a9184798cdee.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/d514c373-47cc-4dd7-b370-a9266eddcdfe.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/d5b7be30-d51c-4ad1-8c15-22c8d36ee178.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/dc0623ae-d36a-48b4-9ee8-a1923c27bb0d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/e000822c-f304-498f-b960-dcc5e819ed39.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/e2bbd8d1-51d3-4f8d-8be9-8a41833bbfa2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/e4d7877c-e75c-4283-becb-14cfd41cbdc5.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/eb9a794d-ca45-4439-a0b5-d35aec3e48e6.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/ef43b73d-70e8-4e48-872d-a91d46b52f63.json"
+      ],
+      "source_audit_priority": "high",
+      "blocker_resolution_needed": false,
+      "blocker_resolution_notes": []
+    },
+    {
+      "article_id": "cb947ab1-7737-4bde-8a47-606b5d305ed6",
+      "slug": "pd-1096-rule-viii-light-and-ventilation",
+      "subject": "LEA-DSGN - Architectural Design and Site Planning",
+      "linked_question_count": 26,
+      "source_count": 1,
+      "existing_source_labels": [
+        "PD 1096 2004 Revised IRR, DPWH Official Publication"
+      ],
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6",
+      "linked_questions_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6/linked-questions.json",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6/question-edits",
+      "expected_question_edit_file_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6/question-edits/0a849610-08d5-4911-82fe-8b4a06f64a4d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6/question-edits/117c97d6-06cf-4e24-8529-f1e40582c741.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6/question-edits/13217960-3ab8-4546-832e-80a178334bd2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6/question-edits/13ae9baa-7b7b-4c6a-8bce-afb61b0d637f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6/question-edits/2a37d3ea-e799-45cb-9ddc-93711a6e5792.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6/question-edits/36cbd85d-043d-44ca-ae30-c7b23284bde2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6/question-edits/3a5d8ae5-f700-4f41-a3bc-b98e76999733.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6/question-edits/3cb906cb-87d9-4da8-8354-ceb5ce3580cb.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6/question-edits/3f144559-c6ba-4832-8b39-bf397649a0a6.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6/question-edits/5923d4fc-f08a-40cc-881d-bebdb6c045eb.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6/question-edits/5afd2ad4-ba08-4f5f-8702-8cd2810b4c77.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6/question-edits/82a2f551-c3f9-44dd-a97e-d92f7f49e05c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6/question-edits/8f52ddf9-4582-4c78-aee0-ca1ac351ad0c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6/question-edits/a655cff8-15f3-4c6f-bca9-75bc48f4d5ec.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6/question-edits/aebc577f-0d76-44e0-b8fa-8d24cb7802a6.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6/question-edits/b18ab986-cdd8-4f4a-b580-198883189606.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6/question-edits/b1afffa7-66b7-4bd9-9521-1fd231b0e642.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6/question-edits/b5e815cc-ce69-4f5e-bec3-030f31db9773.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6/question-edits/be9d0912-4dac-4c4c-a0c1-e44251d5cf4c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6/question-edits/c2a1c833-81bb-458c-96a1-b169aa084667.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6/question-edits/c97510b9-bac7-4744-baaf-fabc8166e9e6.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6/question-edits/d7afe88a-6212-4702-b2a1-41362f39d5a9.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6/question-edits/d92e0195-f2d3-451e-8262-859fe95d87fe.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6/question-edits/d95e6c0d-3baa-4d32-9b89-52abb04cd745.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6/question-edits/e40268c9-de75-4811-8344-416f1f46c4b6.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6/question-edits/fe6797d2-c711-45df-9490-12c8332bb9dc.json"
+      ],
+      "source_audit_priority": "high",
+      "blocker_resolution_needed": false,
+      "blocker_resolution_notes": []
+    },
+    {
+      "article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+      "slug": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr",
+      "subject": "LEA-UTIL - Utilities and Building Systems",
+      "linked_question_count": 25,
+      "source_count": 1,
+      "existing_source_labels": [
+        "RA 9514 2019 Revised IRR, Fire Code of the Philippines"
+      ],
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+      "linked_questions_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/linked-questions.json",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits",
+      "expected_question_edit_file_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/025aeb7f-cb92-4167-be3d-22754c2eabdf.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/033aac3a-4ed2-4829-830a-79b0e05c002e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/1f585d5c-d4e5-4564-ad2c-830506116dfc.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/250f7007-a767-4f23-afbf-39f47e037054.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/254dd8b0-8dfd-479c-ab22-088c85fabe43.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/291651ff-d1ff-4652-8abc-a1afa1bd59f6.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/3bf30cc2-b4f3-496b-9b32-ee1dccac7219.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/3c35ef86-0865-453f-bf69-b58baba418d6.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/429e5441-fdc3-4e65-95a3-53d31e13eb6e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/43895946-c8b7-4fe9-8c5a-846221eca172.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/4afafaa0-15dd-4930-8ebb-ce28945d51e0.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/5624278e-d5f7-4720-be71-93d53644feb2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/64addb91-3520-4ed3-bff2-e00580dbad01.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/6bbf6717-f436-4d66-a544-e18457023df4.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/87c8eb89-e201-4212-bab5-d9e5f186fed1.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/9c375d9c-746f-4134-bbf4-de6ffdb57525.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/9c5fef1f-8955-4eb9-96dc-427c64d7857a.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/a25309f7-0188-46ee-9900-c2a414d9576c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/a8ee465a-895a-4301-a225-118ed93e5f70.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/bcd21cc2-32c9-42cb-ae69-e9abd229b94e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/bf2da2fd-7d67-4887-906b-7a7fe88dc832.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/c7d69c31-439e-4669-881d-22e8ec5d7849.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/e7bf58a1-129c-46ee-b1e0-c847cc459210.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/f0983215-75bf-4802-8bdb-6a44e5d1d36e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/fe53e220-25ff-495f-b2ae-aa296da73102.json"
+      ],
+      "source_audit_priority": "high",
+      "blocker_resolution_needed": false,
+      "blocker_resolution_notes": []
+    },
+    {
+      "article_id": "f2c105fd-51fc-4b48-b53a-77242dbb91b0",
+      "slug": "uap-spp-doc-standards-of-professional-practice-for-philippine-architects",
+      "subject": "LEA-PRAC - Professional Practice and Law",
+      "linked_question_count": 10,
+      "source_count": 1,
+      "existing_source_labels": [
+        "UAP Standards of Professional Practice"
+      ],
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0",
+      "linked_questions_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/linked-questions.json",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits",
+      "expected_question_edit_file_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/2c8d742c-4c03-44c9-b34f-8a19f772466b.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/44de2806-024e-488f-9c38-f6b3fcf6ca3d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/6959881a-e9a0-44a3-b7c5-35a1aec20712.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/97530be3-4382-434c-b56d-8bca7da48893.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/b437c81d-373b-4905-ba00-5a4f470f024c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/d905acf1-6d69-4aad-b4fa-bf27c1af0135.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/e42464b4-5bd6-48be-93bd-d6fc378f439f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/e65cfa10-7569-42df-a72c-1176c0ce5bf9.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/ef5a28ce-610a-48c7-a3b7-2aeabf1617a2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/f545be77-116b-48fd-8899-cadc77f2fd22.json"
+      ],
+      "source_audit_priority": "high",
+      "blocker_resolution_needed": false,
+      "blocker_resolution_notes": []
+    }
+  ],
+  "exact_article_folder_paths": [
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0"
+  ],
+  "exact_question_edits_paths": [
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits"
+  ],
+  "expected_raw_pdf_source_families": [
+    {
+      "family": "PD 1096 RIRR 2004 DPWH Official",
+      "status": "existing-local-raw-source",
+      "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "purpose": "Primary building code source for PD 1096 articles",
+      "exists_now": true
+    },
+    {
+      "family": "BP 344 2024 Revised IRR",
+      "status": "existing-local-raw-source",
+      "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "purpose": "Primary accessibility source for BP 344 articles",
+      "exists_now": true
+    },
+    {
+      "family": "RA 9514 2019 Revised IRR Fire Code of the Philippines",
+      "status": "existing-local-raw-source",
+      "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+      "purpose": "Primary fire code source for RA 9514 articles",
+      "exists_now": true
+    },
+    {
+      "family": "UAP Standards of Professional Practice",
+      "status": "existing-local-raw-source",
+      "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+      "purpose": "Primary professional practice source for UAP SPP articles",
+      "exists_now": true
+    }
+  ],
+  "source_audit_priority": {
+    "overall": "high",
+    "per_article": [
+      {
+        "article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+        "slug": "pedestrian-protection-during-construction",
+        "priority": "high",
+        "blocker_resolution_needed": false,
+        "blocker_resolution_notes": []
+      },
+      {
+        "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "slug": "signs-design-and-construction",
+        "priority": "high",
+        "blocker_resolution_needed": false,
+        "blocker_resolution_notes": []
+      },
+      {
+        "article_id": "cb947ab1-7737-4bde-8a47-606b5d305ed6",
+        "slug": "pd-1096-rule-viii-light-and-ventilation",
+        "priority": "high",
+        "blocker_resolution_needed": false,
+        "blocker_resolution_notes": []
+      },
+      {
+        "article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+        "slug": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr",
+        "priority": "high",
+        "blocker_resolution_needed": false,
+        "blocker_resolution_notes": []
+      },
+      {
+        "article_id": "f2c105fd-51fc-4b48-b53a-77242dbb91b0",
+        "slug": "uap-spp-doc-standards-of-professional-practice-for-philippine-architects",
+        "priority": "high",
+        "blocker_resolution_needed": false,
+        "blocker_resolution_notes": []
+      }
+    ]
+  },
+  "scenario_enrichment_requirement": {
+    "required": true,
+    "instruction": "Add a Real World Scenario section when source-audited article shape is eligible; otherwise record not-applicable with reason in source-audit evidence and ledger. Scenario enrichment must not override raw-source correctness."
+  },
+  "validation_gates": [
+    "raw-PDF-first audit",
+    "roundtrip protocol",
+    "compose/diff/validate",
+    "UI-block-edit validation",
+    "scoped JSON parse",
+    "placeholder/internal-note/source-gap scans",
+    "source hash checks",
+    "linked-question/question-edit count checks",
+    "stale compose-error scan",
+    "targeted content-audit tests",
+    "scoped git diff --check",
+    "independent reviewer pass",
+    "serial coordinator acceptance",
+    "stage/commit/push after batch acceptance"
+  ],
+  "no_skip_blocker_resolution_policy": {
+    "permanent_skips_allowed": false,
+    "policy": "Difficult articles remain reserved. If an expected source family is missing or extraction is weak, mark blocker-resolution-needed with source families and the recommended path; do not silently replace the article with an easier candidate. Internet may be used only as supplemental discovery, not primary evidence. Primary evidence must be local raw sources under vitruvius-connection/001_Raw-Source-Layer.",
+    "stop_condition": "A batch may be accepted only after all selected article clusters either pass source audit with blockers=0 or have explicit coordinator-approved blocker-resolution notes; do not mark complete while blockers remain."
+  },
+  "allowed_write_scope": {
+    "current_reservation_task": [
+      "/Users/philiplewis/slatecamp/.ai/03_plans/production-line-batch-092-manifest.json",
+      "/Users/philiplewis/slatecamp/.ai/03_plans/source-audited-production-line-coordination.md"
+    ],
+    "future_batch_execution_after_serial_start": [
+      "Selected article folders listed in exact_article_folder_paths only",
+      "Selected question-edit file paths listed under article_clusters[].expected_question_edit_file_paths only",
+      "Batch-specific report, ledger, and scoped-check artifacts under /Users/philiplewis/slatecamp/.ai/content-audit-export only",
+      "Handoff/coordination pre-start or post-batch notes under /Users/philiplewis/slatecamp/.ai/03_plans only"
+    ],
+    "forbidden_now": [
+      "Supabase push/apply",
+      "deploy",
+      "commit",
+      "article content edits during reservation-only task",
+      "question edit mutations during reservation-only task"
+    ]
+  }
+}

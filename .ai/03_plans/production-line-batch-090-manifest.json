@@ -1,0 +1,427 @@
+{
+  "batch_number": "090",
+  "manifest_status": "reserved_pre_start_not_complete",
+  "reserved_at": "2026-05-12T07:27:54+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "branch": "3dlab-gray-viewport-bg",
+  "baseline_commit": "3957e8c08",
+  "selection_rule": "Reserve five unpassed high-value LEA PD 1096 building-code clusters with linked questions and exact readable local raw PDFs under /Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer, excluding article IDs recorded in source-audited Batches 001-089 reports, ledgers, scoped checks, dated recovery artifacts, and the local-first handoff. Prefer code-compliant building design articles with well-established PD 1096 source families.",
+  "inherited_blocker_status": "Batch 089 blockers=0; Batch 090 is reserved only and not complete.",
+  "prior_batch_exclusion_check": {
+    "status": "PASS",
+    "exclusion_source": "Batches 001-089 source-audited ledgers, reports, scoped checks, dated blocker/recovery artifacts, and source-audited-local-first-batches-handoff.md",
+    "excluded_article_id_count": 325,
+    "selected_article_count": 5,
+    "selected_ids_found_in_exclusion_set": []
+  },
+  "selected_article_uuids_slugs": [
+    {
+      "article_id": "16ba355e-811c-4191-98c2-c7fac22ca59b",
+      "slug": "location-on-property-and-exterior-walls"
+    },
+    {
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "slug": "ceiling-heights-and-room-sizes"
+    },
+    {
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "slug": "minimum-requirements-group-a-dwellings"
+    },
+    {
+      "article_id": "3ad2ad2a-e525-44c3-8edf-bf7036d9c31a",
+      "slug": "rule-i-general-provisions"
+    },
+    {
+      "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
+      "slug": "minimum-parking-requirements"
+    }
+  ],
+  "counts": {
+    "selected_articles": 5,
+    "linked_questions_expected": 171,
+    "question_edits_expected": 172
+  },
+  "article_clusters": [
+    {
+      "article_id": "16ba355e-811c-4191-98c2-c7fac22ca59b",
+      "slug": "location-on-property-and-exterior-walls",
+      "subject": "LEA-DSGN - Architectural Design and Site Planning",
+      "linked_question_count": 40,
+      "source_count": 1,
+      "existing_source_labels": [
+        "PD 1096 2004 Revised IRR, DPWH Official Publication"
+      ],
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b",
+      "linked_questions_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/linked-questions.json",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits",
+      "expected_question_edit_file_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits/01d1d3f2-b6da-4110-876f-33b8bc0cd224.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits/057b331f-d5e9-4ecc-a6f0-df527fff5a2a.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits/0812893e-d00e-4a98-b348-ce9f1119548c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits/0aa679c6-8f46-4ece-bad7-3f36d5a4a27f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits/0e318c9c-3ef2-42fb-84c7-271cfbe75f8e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits/1cf2fbe2-0529-446a-a17d-757e97807b0c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits/27f938f9-4e49-4991-aebd-5587bb674f95.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits/295b052e-b324-4b20-93bf-39f46382552f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits/2b0f1216-08f8-4812-b552-d1bf3d49b7fe.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits/2e393cbc-69e8-4130-b2ed-96f5f065d060.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits/3635588b-d376-49ec-afc0-861078ecd02d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits/4407bb55-8935-4100-8404-afe06e6b7534.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits/477e44ee-af37-4bd2-8477-c3fc8223f552.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits/4d9b4473-df46-4c60-9b1f-8066c00c04cd.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits/4db48437-52d6-4194-9cd8-5f5a43832bee.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits/4e2dc080-ec15-40ee-9ffd-a803a36e158b.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits/6a4ad0c5-cc64-4706-998b-b055932fcc8d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits/77f34039-9792-482d-b180-d2d1cc657b09.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits/82be3561-1b2e-454c-bc4e-00bde7992d0b.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits/83186ffb-656e-4a23-8798-ae53bde268d8.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits/84093cf0-4146-4946-a953-160b8a5a44f6.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits/852e5d4c-d4c7-4ba4-8954-87b147975280.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits/904e5d8b-4f63-4988-90e9-fa816ef60407.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits/966f6415-d19f-47d0-b92d-92b6a1e4150c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits/a23c4d45-c1ae-42c7-8a6a-201e23ca8d9e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits/a7870827-248f-4086-9b36-b0031ca7a13d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits/a8030770-69fb-46ff-aa87-a6329437b8ea.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits/abf898f4-325b-4743-96ba-e28e5234b8a5.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits/ad0489eb-72a0-4c43-9900-91d200b8b9e9.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits/adfa3bc1-cccb-4445-bfa1-4ea0adf30624.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits/b29f491f-da4c-480e-8cbb-4926b6c485fe.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits/c7853188-9b8b-4d9c-9e2f-ae596765ea9c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits/ccf5a29a-18ad-4a4e-94d6-d5c775856367.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits/d08f62e9-2486-4402-ad4f-8b76430d9781.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits/d52ef0b2-fffa-4a02-b2b3-c961d8947f1d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits/d729c1a8-be6a-4b28-bf33-53a02c62c9b8.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits/f528f3b9-569c-4a01-8226-68fba2b792df.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits/f622186b-d123-416c-8aea-69be04824223.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits/f83a8c1d-c537-47c0-88ef-d90c6ac6cf66.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits/fab2a39e-2db7-4f23-8830-9a279f45a9b9.json"
+      ],
+      "source_audit_priority": "high",
+      "blocker_resolution_needed": false,
+      "blocker_resolution_notes": []
+    },
+    {
+      "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "slug": "ceiling-heights-and-room-sizes",
+      "subject": "LEA-DSGN - Architectural Design and Site Planning",
+      "linked_question_count": 37,
+      "source_count": 1,
+      "existing_source_labels": [
+        "PD 1096 2004 Revised IRR, DPWH Official Publication"
+      ],
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+      "linked_questions_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/linked-questions.json",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits",
+      "expected_question_edit_file_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits/02b7d88c-9cd9-490d-bee9-e99f8ea295d0.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits/0b81eade-47c3-421a-90cb-8cf64be6283f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits/115e5146-f058-4edb-93fa-26b1d316e9cb.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits/44efd846-6c7d-469f-8eef-67b0837f5b55.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits/54fa45bb-0cfb-40e2-b23f-ba61d5b78e49.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits/5daa649f-2caa-4db1-852d-e3d93e91d7e4.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits/64cba10b-080e-476a-9fe6-0e58cd600c51.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits/658c86c0-033b-4076-a164-4f9f340d076d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits/65e69fd7-c1a2-4a3f-807f-816310ecece0.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits/82ddc730-b980-4e97-a5f6-ea52fb5e7059.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits/8396e018-430e-432e-be37-7e2d8f27ea74.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits/83e05bda-830d-4557-976c-762ca9969865.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits/84242c90-2798-4184-8b81-cfb270542c8c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits/8daefa6f-69e4-4cf6-8aa8-4757a306142c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits/9001b08a-4302-4112-b194-37e88f05a662.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits/93754360-2b5e-4017-8796-f072e145d4c8.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits/971309c0-d432-46c8-88e4-ef4dac529382.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits/98e8f96f-d997-4284-a206-ce1cbefab663.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits/9c4f9a4c-3134-496f-addb-11c64caa7ed4.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits/a5605b5d-36c6-42ab-a2d3-09d452ffca60.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits/a5d4ccae-043d-4145-8dc9-63535a4a36f9.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits/af8bad86-c8b7-4877-b1e1-522950c8f8de.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits/b0bb7690-f58b-42ee-a4fd-f9e36e72c339.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits/b74d0dc7-3d9d-48de-83ae-1b9c1b93cc34.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits/b9fa7052-9f99-4f9c-b30a-fe6e6d4cadbc.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits/ba5efc1a-a888-40c9-9964-035a2b5dd082.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits/bb055257-0b90-462d-940c-2b7ce502a0da.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits/c12cb492-1860-412c-ac4c-9541252cc80c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits/c2b210d9-0e54-4b40-b0c3-e81360b04e64.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits/d4c64da6-538a-4598-b181-b28685dd8846.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits/ddc472c4-f686-4109-a605-fa711af4cbf3.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits/ec35cf94-47a4-4c0a-b302-abea950df2f9.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits/eea71aad-f800-48ef-875f-3466c1f1bd57.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits/f07c38ad-5cdd-41a8-a89e-19c1168edef2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits/f19f1e60-ec7f-40c5-9559-d63ba98917f6.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits/f4e27925-cce8-44c6-a8f0-9206def950bc.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits/f8cb0fd3-ca78-403d-8a32-07f4c0ab8533.json"
+      ],
+      "source_audit_priority": "high",
+      "blocker_resolution_needed": false,
+      "blocker_resolution_notes": []
+    },
+    {
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "slug": "minimum-requirements-group-a-dwellings",
+      "subject": "LEA-DSGN - Architectural Design and Site Planning",
+      "linked_question_count": 36,
+      "source_count": 1,
+      "existing_source_labels": [
+        "PD 1096 2004 Revised IRR, DPWH Official Publication"
+      ],
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "linked_questions_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/linked-questions.json",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits",
+      "expected_question_edit_file_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits/00023dd0-c56b-4979-b54d-4eaf49d9671a.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits/05a03094-bfc1-4a01-af40-ed2d38c56ef2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits/064b483e-860d-4323-93f4-9c45d1ad6004.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits/22e9cc59-a3fa-4dc8-8d95-62cd6daa5f96.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits/24e823b0-4b19-44e8-bba3-30eec81441e7.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits/2c86bbde-3990-4b1f-bf79-54bd0e051c06.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits/2ec69fcf-6835-4a5a-b297-cf6e02e615b4.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits/3508fac1-13c5-4aaf-839f-6d48b2353b26.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits/3d04f3d1-35bf-4e4a-954a-6ea4c2968cc9.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits/3fbc7504-56f0-47c9-8b3c-e5a24f9e65fc.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits/5263abc7-9147-404d-aca7-620f369e81a2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits/584b70c0-b9e8-4b56-8356-d48c57767fd7.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits/5e21dc7c-4adc-423f-94e6-9d3864c7a564.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits/6098f97c-42a5-4542-8fba-ffd9e58ff49a.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits/663ffde0-a298-476c-9449-0fd20ef1fbce.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits/66b2e342-bc30-497a-a124-62fe020df3b3.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits/66ccecba-c3c4-415c-bf90-92fa9f1e70f2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits/66f04e4f-9c9e-430a-bbb1-fdea67a9b529.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits/6aa9d02b-93e7-4bb0-b4f7-fee52ece76dc.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits/7395181d-4df6-4392-bdf4-1c6662e074a5.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits/82b49a21-bb6f-4f62-8895-3651c4854c24.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits/8d8d21b1-8b5b-4760-8b98-7c3a7b446ed9.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits/98e59a2d-897a-42d9-b1ad-20e2aeec1e76.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits/a70cbae0-1017-40d1-ba7e-8c6c53e0f61f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits/aba5abc9-81d2-451b-9621-d1cea12a8f77.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits/c3fc6e2d-a135-4000-a4f4-00b874124498.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits/cc01076a-c00c-4704-951c-d0057846cdcd.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits/cda82dd1-4437-489a-be26-7f5b72009030.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits/d72dd2a6-8668-4165-8610-c44c4b5331f1.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits/e55f1d30-7e99-4f6c-b247-80c21e7a4e23.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits/e85fe73e-2c43-4e3b-9a73-fb550140f30e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits/eff3b897-d597-4a0c-bf25-f79d16bb193d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits/f8366187-7119-44e4-a095-8d3403ad5bc5.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits/f93a569b-da4f-4d0f-babd-22a666cd9ba4.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits/fa2bff60-c961-4cd2-a209-d258092ba734.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits/fd8d4c3a-1e4d-4295-a409-a3762bc9ec68.json"
+      ],
+      "source_audit_priority": "high",
+      "blocker_resolution_needed": false,
+      "blocker_resolution_notes": []
+    },
+    {
+      "article_id": "3ad2ad2a-e525-44c3-8edf-bf7036d9c31a",
+      "slug": "rule-i-general-provisions",
+      "subject": "LEA-DSGN - Architectural Design and Site Planning",
+      "linked_question_count": 30,
+      "source_count": 1,
+      "existing_source_labels": [
+        "PD 1096 2004 Revised IRR, DPWH Official Publication"
+      ],
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a",
+      "linked_questions_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/linked-questions.json",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits",
+      "expected_question_edit_file_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits/035e16b7-0f2f-42f5-b920-f880b8e4e79c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits/09105dcb-65cc-4b6a-ac03-086f28052994.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits/14d547aa-c86e-4e68-8a42-6ab93a4c5de1.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits/1575b69d-0939-47ca-8a16-8f26a996c0e8.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits/185cdf12-e8cb-402e-8fad-7ad7aee2ec15.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits/20ee162d-8918-4c63-9848-f4db16c2faba.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits/2318d9e8-9ace-4600-af59-84885dd312dc.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits/2e0e27ed-7071-401e-94f1-cd6872ef8fb9.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits/4971c6c9-763d-4365-970c-1e103a48ec42.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits/5c1d3e74-2370-4e4f-a8c9-5908368082af.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits/6837c822-9d22-4fb8-8c51-489cb783597f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits/85b4644e-b89b-45e8-932e-968298a1203d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits/957083f0-99d3-4f45-aee3-4cb664edaf6c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits/9d282d92-100e-44f3-9ea5-e9817d53efb6.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits/aaadc687-d7e2-4421-be01-56fbdbad1cb2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits/ae045358-0675-4129-ad58-4e70e22c05f3.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits/aed42c7b-ee02-47c7-9c27-4a4c2832ecae.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits/b1579a42-ec15-41f4-ba3a-991174424788.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits/bb02603a-d17b-43db-806f-51dd28233602.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits/c37560cc-b423-4f89-a589-0fd9feb699a9.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits/c3cdff3c-61ec-43dd-94a0-722e93ff9a44.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits/c5eaca60-aeca-4ed2-879d-11efc8951d3c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits/c9874e0d-3fd2-41a5-b93a-6846af94904b.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits/d1bac795-7a2e-4d0c-8ccd-b30bf7e8661a.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits/e384f1f4-a728-49c6-b1be-9e29da9d747f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits/f24ab40f-c8f6-4033-b554-580e446a1622.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits/f3f1adf9-1898-4a57-97b0-f20ea4b7ad4f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits/f91f3d92-dc16-4f2e-9e30-cff0ebf73aa7.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits/fc2aa1ef-f2d8-44bc-9df4-84e1bb6aacd7.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits/fcb68a72-47a5-4f6e-a3bf-aa40c28688cb.json"
+      ],
+      "source_audit_priority": "high",
+      "blocker_resolution_needed": false,
+      "blocker_resolution_notes": []
+    },
+    {
+      "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
+      "slug": "minimum-parking-requirements",
+      "subject": "LEA-DSGN - Architectural Design and Site Planning",
+      "linked_question_count": 28,
+      "source_count": 2,
+      "existing_source_labels": [
+        "PD 1096 Revised Implementing Rules and Regulations, 2004 DPWH Official",
+        "2024 Revised Implementing Rules and Regulations of Batas Pambansa Blg. 344"
+      ],
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a",
+      "linked_questions_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/linked-questions.json",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits",
+      "expected_question_edit_file_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/18e7e8dd-abaa-41f1-a4ac-5c9309a38f76.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/2772895e-5e13-4851-b033-8c6a38242e48.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/28963736-b95c-474d-9bcf-785de04c663a.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/2c59c765-06b3-4273-8f2a-5be9565a8aa4.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/2f1ae785-1019-4512-8ee8-cf98169f4537.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/52c59f23-53a5-4910-8232-41854c315f12.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/52d28326-aaf0-49c0-9e3e-157225c9a353.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/549ef370-167f-4dfc-ac1b-00ce22ad7c98.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/6f3e2c37-0d0c-4ca6-abef-c697719fb462.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/8c93e456-3440-4c36-912f-8f3503377667.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/9908157a-a669-47d9-90e3-83b4df496405.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/a3932901-e999-49f9-bad0-80120c66fa72.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/a3b9fc07-da66-4818-b524-1f4fbd4c498e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/a8ec5051-9268-461e-873b-5c8182674535.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/ac0c6da1-945a-41b9-8e87-4f91abeaf072.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/ac331568-9433-410b-adfc-7ff7582f9893.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/aed28d28-9e94-456a-a4cf-d3aafec14080.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/b1e19bb8-ca5e-4dd4-aa89-63c857c729cb.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/b918195c-be77-4c3f-965c-2a6cd4154240.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/bdb9c17e-9ee0-4588-a6d8-e4051fc08ed8.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/bf4d568f-9342-4e41-9e86-262d7d482c66.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/bf4f2007-6c3c-4160-8697-2867f0b8ba53.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/c0a7e645-33eb-41b9-a933-5e2f49ea9e2d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/e206144d-cf97-41fc-b6c3-5c23cabfa274.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/e23fc4cf-7e7d-427c-ad8d-50c178f9dd6b.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/e2eb01bd-e3c4-492f-b9b8-fc53730332d3.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/f078ffef-43b6-491c-b974-c39ffec88a6c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/f41cd511-730f-4e06-b116-cc6d58e5a920.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/index.json"
+      ],
+      "source_audit_priority": "high",
+      "blocker_resolution_needed": true,
+      "blocker_resolution_notes": [
+        "Linked question count (28) does not match question-edit file count (29). Verify that all question edits correspond to actual linked questions and remove any orphaned question-edit file before batch acceptance."
+      ]
+    }
+  ],
+  "exact_article_folder_paths": [
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a"
+  ],
+  "exact_question_edits_paths": [
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits"
+  ],
+  "expected_raw_pdf_source_families": [
+    {
+      "family": "PD 1096 RIRR 2004 DPWH Official",
+      "status": "existing-local-raw-source",
+      "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "purpose": "Primary building code source for PD 1096 articles",
+      "exists_now": true
+    },
+    {
+      "family": "BP 344 2024 Revised IRR",
+      "status": "existing-local-raw-source",
+      "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "purpose": "Primary accessibility source for BP 344 articles",
+      "exists_now": true
+    }
+  ],
+  "source_audit_priority": {
+    "overall": "mixed_high_and_blocker-resolution-needed",
+    "per_article": [
+      {
+        "article_id": "16ba355e-811c-4191-98c2-c7fac22ca59b",
+        "slug": "location-on-property-and-exterior-walls",
+        "priority": "high",
+        "blocker_resolution_needed": false,
+        "blocker_resolution_notes": []
+      },
+      {
+        "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+        "slug": "ceiling-heights-and-room-sizes",
+        "priority": "high",
+        "blocker_resolution_needed": false,
+        "blocker_resolution_notes": []
+      },
+      {
+        "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+        "slug": "minimum-requirements-group-a-dwellings",
+        "priority": "high",
+        "blocker_resolution_needed": false,
+        "blocker_resolution_notes": []
+      },
+      {
+        "article_id": "3ad2ad2a-e525-44c3-8edf-bf7036d9c31a",
+        "slug": "rule-i-general-provisions",
+        "priority": "high",
+        "blocker_resolution_needed": false,
+        "blocker_resolution_notes": []
+      },
+      {
+        "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
+        "slug": "minimum-parking-requirements",
+        "priority": "blocker-resolution-needed",
+        "blocker_resolution_needed": true,
+        "blocker_resolution_notes": [
+          "Linked question count (28) does not match question-edit file count (29). Verify correspondence and remove orphaned file before acceptance."
+        ]
+      }
+    ]
+  },
+  "scenario_enrichment_requirement": {
+    "required": true,
+    "instruction": "Add a Real World Scenario section when source-audited article shape is eligible; otherwise record not-applicable with reason in source-audit evidence and ledger. Scenario enrichment must not override raw-source correctness."
+  },
+  "validation_gates": [
+    "raw-PDF-first audit",
+    "roundtrip protocol",
+    "compose/diff/validate",
+    "UI-block-edit validation",
+    "scoped JSON parse",
+    "placeholder/internal-note/source-gap scans",
+    "source hash checks",
+    "linked-question/question-edit count checks",
+    "stale compose-error scan",
+    "targeted content-audit tests",
+    "scoped git diff --check",
+    "independent reviewer pass",
+    "serial coordinator acceptance",
+    "stage/commit/push after batch acceptance"
+  ],
+  "no_skip_blocker_resolution_policy": {
+    "permanent_skips_allowed": false,
+    "policy": "Difficult articles remain reserved. If an expected source family is missing or extraction is weak, mark blocker-resolution-needed with source families and the recommended path; do not silently replace the article with an easier candidate. Internet may be used only as supplemental discovery, not primary evidence. Primary evidence must be local raw sources under vitruvius-connection/001_Raw-Source-Layer.",
+    "stop_condition": "A batch may be accepted only after all selected article clusters either pass source audit with blockers=0 or have explicit coordinator-approved blocker-resolution notes; do not mark complete while blockers remain."
+  },
+  "allowed_write_scope": {
+    "current_reservation_task": [
+      "/Users/philiplewis/slatecamp/.ai/03_plans/production-line-batch-090-manifest.json",
+      "/Users/philiplewis/slatecamp/.ai/03_plans/source-audited-production-line-coordination.md"
+    ],
+    "future_batch_execution_after_serial_start": [
+      "Selected article folders listed in exact_article_folder_paths only",
+      "Selected question-edit file paths listed under article_clusters[].expected_question_edit_file_paths only",
+      "Batch-specific report, ledger, and scoped-check artifacts under /Users/philiplewis/slatecamp/.ai/content-audit-export only",
+      "Handoff/coordination pre-start or post-batch notes under /Users/philiplewis/slatecamp/.ai/03_plans only"
+    ],
+    "forbidden_now": [
+      "Supabase push/apply",
+      "deploy",
+      "commit",
+      "article content edits during reservation-only task",
+      "question edit mutations during reservation-only task"
+    ]
+  }
+}
