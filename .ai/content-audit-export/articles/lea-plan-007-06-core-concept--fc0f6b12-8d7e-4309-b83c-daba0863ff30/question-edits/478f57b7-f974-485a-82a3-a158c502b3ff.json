@@ -1,0 +1,75 @@
+{
+  "question_id": "478f57b7-f974-485a-82a3-a158c502b3ff",
+  "baseline_hash": "sha256:507e2f4ad95edb33a77ebe3df3919360ab6cb3f1d166d92e42f5b46a386f517a",
+  "action": "replace",
+  "reason": "source-audited-article-batch-089-local-first aligned linked question with audited local sources for lea-plan-007-06-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-089",
+  "approved_at": "2026-05-12T10:35:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "fc0f6b12-8d7e-4309-b83c-daba0863ff30",
+    "parent_article_slug": "lea-plan-007-06-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "DHSUD Resilient Urban Design and Development Guidelines",
+    "checked_markdown_lines": [
+      "refined markdown lines 157-180, 737-775, 6988, 12778, 12962-13002",
+      "refined markdown lines 328-432 and 3997-4005",
+      "refined markdown lines 41-66 and 260-330"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "manila-clup-2005-2020",
+        "label": "Manila Comprehensive Land Use Plan and Zoning Ordinance 2005-2020",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/LGU/623689186-Manila-CLUP-2005-2020.pdf",
+        "sha256": "sha256:ddb57c586655fba0e1a9feddc7d7a304a79bef4bb2f5831bc4ad34e250b42fbe",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/LGU/623689186-Manila-CLUP-2005-2020.md",
+        "raw_markdown_sha256": "sha256:6e8c4e219734aa77af8f1ab581867dbb81d2ae6feb3ec99e2990a64bafeb6a68",
+        "locator": "refined markdown lines 157-180, 737-775, 6988, 12778, 12962-13002"
+      },
+      {
+        "source_id": "bgc-design-standards-and-guidelines",
+        "label": "Bonifacio Global City Design Standards and Guidelines",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/LGU/794422427-BGC-Design-Standards-and-Guidelines.pdf",
+        "sha256": "sha256:299dc47bbfee73c5ba6ae5314d766ac3516473de16126d01e3fd3f01ed5f08b8",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/LGU/794422427-BGC-Design-Standards-and-Guidelines.md",
+        "raw_markdown_sha256": "sha256:436d0c23d4293629851795603dd9b6cbbf10316fe88ba7fd3fe996f345ba4a43",
+        "locator": "refined markdown lines 328-432 and 3997-4005"
+      },
+      {
+        "source_id": "dhsud-resilient-urban-design-guidelines",
+        "label": "DHSUD Resilient Urban Design and Development Guidelines",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf",
+        "sha256": "sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.md",
+        "raw_markdown_sha256": "sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7",
+        "locator": "refined markdown lines 41-66 and 260-330"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the local source-audited article scope."
+  },
+  "proposed": {
+    "text": "How does DHSUD extend planning beyond historical civic design?",
+    "options": [
+      {
+        "id": "A",
+        "text": "By linking urban design with CLUP/ZO, resilience, livability, and sustainability"
+      },
+      {
+        "id": "B",
+        "text": "By removing local planning tools"
+      },
+      {
+        "id": "C",
+        "text": "By replacing all plans with monument design"
+      },
+      {
+        "id": "D",
+        "text": "By banning mixed use"
+      }
+    ],
+    "correct_option_id": "A",
+    "rationale": "DHSUD frames resilient urban design through CLUP/ZO and strategies for resilience, livability, and sustainability.",
+    "explanation": "DHSUD frames resilient urban design through CLUP/ZO and strategies for resilience, livability, and sustainability.",
+    "code_citation": "DHSUD Resilient Urban Design and Development Guidelines"
+  }
+}

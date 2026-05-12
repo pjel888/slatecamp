@@ -1,0 +1,120 @@
+{
+  "target": {
+    "article_id": "5d49cedb-dc14-445a-b075-41fe56873081",
+    "slug": "lea-plan-008-03-core-concept",
+    "candidate_sha256": "sha256:79a0f1b0f0f43d5633c796338e413193c6f44ef0579e31ea124eb66a8bf7dd40",
+    "batch_number": "089"
+  },
+  "classification": {
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "primary_truth": "vitruvius-connection/001_Raw-Source-Layer",
+    "supplemental_internet_used": false
+  },
+  "scenario_enrichment": {
+    "status": "added",
+    "result": "source_safe_exam_useful_real_world_scenario_added",
+    "reason": "Scenario uses only local source-supported planning or accessibility claims."
+  },
+  "claims": [
+    {
+      "claim_id": "batch089-lea-plan-008-03-core-concept-claim-01",
+      "audit_result": "PASS",
+      "claim": "Article and linked question edits were narrowed to claims supported by the listed local raw source packet.",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf",
+        "raw_pdf_sha256": "sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.md",
+        "raw_markdown_sha256": "sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7",
+        "locator": "refined markdown lines 41-66 and 260-330",
+        "quoted_pdf_excerpt": "DHSUD frames resilient urban design around CLUP/ZO, evidence-based planning, compact mixed-use and transit-oriented development, and green resilient strategies."
+      }
+    },
+    {
+      "claim_id": "batch089-lea-plan-008-03-core-concept-claim-02",
+      "audit_result": "PASS",
+      "claim": "Supporting source Bonifacio Global City Design Standards and Guidelines checked for this article scope.",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/LGU/794422427-BGC-Design-Standards-and-Guidelines.pdf",
+        "raw_pdf_sha256": "sha256:299dc47bbfee73c5ba6ae5314d766ac3516473de16126d01e3fd3f01ed5f08b8",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/LGU/794422427-BGC-Design-Standards-and-Guidelines.md",
+        "raw_markdown_sha256": "sha256:436d0c23d4293629851795603dd9b6cbbf10316fe88ba7fd3fe996f345ba4a43",
+        "locator": "refined markdown lines 328-432 and 3997-4005",
+        "quoted_pdf_excerpt": "BGC is described as 440 hectares with mixed-use districts, a multi-modal station area, and pedestrian plans covering at-grade and grade-separated movement."
+      }
+    },
+    {
+      "claim_id": "batch089-lea-plan-008-03-core-concept-claim-03",
+      "audit_result": "PASS",
+      "claim": "Supporting source Manila Comprehensive Land Use Plan and Zoning Ordinance 2005-2020 checked for this article scope.",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/LGU/623689186-Manila-CLUP-2005-2020.pdf",
+        "raw_pdf_sha256": "sha256:ddb57c586655fba0e1a9feddc7d7a304a79bef4bb2f5831bc4ad34e250b42fbe",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/LGU/623689186-Manila-CLUP-2005-2020.md",
+        "raw_markdown_sha256": "sha256:6e8c4e219734aa77af8f1ab581867dbb81d2ae6feb3ec99e2990a64bafeb6a68",
+        "locator": "refined markdown lines 157-180, 737-775, 6988, 12778, 12962-13002",
+        "quoted_pdf_excerpt": "The Manila CLUP identifies Daniel Hudson Burnham as the city first urban planner and later links open spaces, waterfront development, and walkability to the Burnham plan."
+      }
+    },
+    {
+      "claim_id": "batch089-lea-plan-008-03-core-concept-claim-04",
+      "audit_result": "PASS",
+      "claim": "Supporting source RA 11285 Energy Efficiency and Conservation Act of 2019 checked for this article scope.",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf",
+        "raw_pdf_sha256": "sha256:316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.md",
+        "raw_markdown_sha256": "sha256:d2baa0e8d4ffe0059688783a4d31ac0e121517daca939f18a048fe053e76cdd4",
+        "locator": "refined markdown lines 291-307 and 761-824",
+        "quoted_pdf_excerpt": "RA 11285 requires energy users to use energy resources efficiently and creates government energy efficiency project review and conservation measures."
+      }
+    },
+    {
+      "claim_id": "batch089-lea-plan-008-03-core-concept-linked-questions",
+      "audit_result": "PASS",
+      "claim": "10 linked question edits created and rewritten to the same local source-safe scope.",
+      "question_ids": [
+        "10e4e2d7-abb5-42a4-a1d0-cdae42fd6dc3",
+        "68daa8e2-ef56-42ab-8f28-5c426f16f293",
+        "2f4082b0-262f-4823-be1b-00de4b6d4a64",
+        "4e670bc9-9376-418f-a380-bfffcac5c58a",
+        "bfe5b747-537d-4802-8fc2-03ae247374c3",
+        "f7c9bf68-d9df-4503-b040-f061d5516345",
+        "613e852c-8adb-4a1f-bb52-241fc226bd03",
+        "83a13363-13e4-4995-b25e-c535bd91ff56",
+        "e8ac5bd4-f744-43ba-bcc0-0fac96da038a",
+        "a7c0c61d-6c16-4bfd-8d88-6404e65ee197"
+      ],
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf",
+        "raw_pdf_sha256": "sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.md",
+        "raw_markdown_sha256": "sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7",
+        "locator": "refined markdown lines 41-66 and 260-330",
+        "quoted_pdf_excerpt": "DHSUD frames resilient urban design around CLUP/ZO, evidence-based planning, compact mixed-use and transit-oriented development, and green resilient strategies."
+      }
+    }
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "source_resolution_notes": [
+    "Article scope retained only where supported by listed local raw-source packets."
+  ],
+  "unverified_or_rejected_claims": [],
+  "sme_review": {
+    "required": false,
+    "status": "not_required"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

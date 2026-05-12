@@ -1,0 +1,365 @@
+{
+  "batch_number": "089",
+  "generated_at": "2026-05-12T13:32:00+08:00",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "blockers": 0,
+  "local_only_constraints": {
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false
+  },
+  "manifest_path": "/Users/philiplewis/slatecamp/.ai/03_plans/production-line-batch-089-manifest.json",
+  "coordination_doc_path": "/Users/philiplewis/slatecamp/.ai/03_plans/source-audited-production-line-coordination.md",
+  "prior_batch": "Batch 088 accepted, independently QA-passed, committed and pushed as c31d7db15",
+  "counts": {
+    "articles_completed": 5,
+    "linked_questions_checked": 61,
+    "source_safe_question_edits_created": 61,
+    "source_rows": 15,
+    "source_evidence_claims": 20,
+    "unique_local_raw_source_families": 8,
+    "real_world_scenarios_added": 5,
+    "scoped_article_json_files_parsed": 118
+  },
+  "blocker_resolution_summary": [
+    "RA 9442/RA 7277/RA 10754 privilege-law claims were not retained without local raw law packets; the two PWD-law decks were narrowed to BP 344/PD 1096 accessibility design support.",
+    "Planning-history and smart/sustainable planning claims were narrowed to local Manila CLUP, BGC, HLURB GIS, DHSUD resilient urban design, and RA 11285 support."
+  ],
+  "articles": [
+    {
+      "article_id": "1262fe88-bb8f-4005-a9e8-0e8d6c03fe64",
+      "slug": "ra-9442-pwd-privileges-and-incentives",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ra-9442-pwd-privileges-and-incentives--1262fe88-bb8f-4005-a9e8-0e8d6c03fe64",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ra-9442-pwd-privileges-and-incentives--1262fe88-bb8f-4005-a9e8-0e8d6c03fe64/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ra-9442-pwd-privileges-and-incentives--1262fe88-bb8f-4005-a9e8-0e8d6c03fe64/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ra-9442-pwd-privileges-and-incentives--1262fe88-bb8f-4005-a9e8-0e8d6c03fe64/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ra-9442-pwd-privileges-and-incentives--1262fe88-bb8f-4005-a9e8-0e8d6c03fe64/source-audit-evidence.json"
+      ],
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ra-9442-pwd-privileges-and-incentives--1262fe88-bb8f-4005-a9e8-0e8d6c03fe64/question-edits",
+      "question_edit_file_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ra-9442-pwd-privileges-and-incentives--1262fe88-bb8f-4005-a9e8-0e8d6c03fe64/question-edits/025e8d23-e547-4895-8d31-571ab8ce9da5.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ra-9442-pwd-privileges-and-incentives--1262fe88-bb8f-4005-a9e8-0e8d6c03fe64/question-edits/184d680c-bcf2-4989-9a1f-e5b4223e3fd5.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ra-9442-pwd-privileges-and-incentives--1262fe88-bb8f-4005-a9e8-0e8d6c03fe64/question-edits/1cabeaa0-af66-4332-ab04-941f9c594150.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ra-9442-pwd-privileges-and-incentives--1262fe88-bb8f-4005-a9e8-0e8d6c03fe64/question-edits/24561889-65bb-4d12-8806-4aabadbdaa4b.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ra-9442-pwd-privileges-and-incentives--1262fe88-bb8f-4005-a9e8-0e8d6c03fe64/question-edits/38084209-a2c4-4df8-849a-0b9f3818dbf8.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ra-9442-pwd-privileges-and-incentives--1262fe88-bb8f-4005-a9e8-0e8d6c03fe64/question-edits/397c79f0-aee3-422c-ac86-cb369e20cc10.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ra-9442-pwd-privileges-and-incentives--1262fe88-bb8f-4005-a9e8-0e8d6c03fe64/question-edits/3ef000b7-cb0b-47f1-a724-44f572d7a948.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ra-9442-pwd-privileges-and-incentives--1262fe88-bb8f-4005-a9e8-0e8d6c03fe64/question-edits/5e495aca-f627-4ad3-a500-0b2e55f7e414.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ra-9442-pwd-privileges-and-incentives--1262fe88-bb8f-4005-a9e8-0e8d6c03fe64/question-edits/5fd55ca3-eeae-48a0-b499-0d860bac7549.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ra-9442-pwd-privileges-and-incentives--1262fe88-bb8f-4005-a9e8-0e8d6c03fe64/question-edits/6a60472f-261f-4a92-b760-52543f15464a.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ra-9442-pwd-privileges-and-incentives--1262fe88-bb8f-4005-a9e8-0e8d6c03fe64/question-edits/8ab6f7c5-83cc-4399-b4c8-8b4e203d8b76.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ra-9442-pwd-privileges-and-incentives--1262fe88-bb8f-4005-a9e8-0e8d6c03fe64/question-edits/8f02020f-2932-4b4e-95ba-d30bdecae193.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ra-9442-pwd-privileges-and-incentives--1262fe88-bb8f-4005-a9e8-0e8d6c03fe64/question-edits/a9044a5c-aa7d-485b-9086-77156a855abf.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ra-9442-pwd-privileges-and-incentives--1262fe88-bb8f-4005-a9e8-0e8d6c03fe64/question-edits/b25a26d0-821d-433b-8e07-8db832ccb64a.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ra-9442-pwd-privileges-and-incentives--1262fe88-bb8f-4005-a9e8-0e8d6c03fe64/question-edits/b486bf24-76ff-4c3a-b1e2-d1070d253bea.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ra-9442-pwd-privileges-and-incentives--1262fe88-bb8f-4005-a9e8-0e8d6c03fe64/question-edits/bba80f31-9296-4517-9b87-fba75b1f934b.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ra-9442-pwd-privileges-and-incentives--1262fe88-bb8f-4005-a9e8-0e8d6c03fe64/question-edits/bdd56476-63bf-4798-90ac-1a1709d2af54.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ra-9442-pwd-privileges-and-incentives--1262fe88-bb8f-4005-a9e8-0e8d6c03fe64/question-edits/dcac97cf-7104-4326-b307-0a28c737c1f2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ra-9442-pwd-privileges-and-incentives--1262fe88-bb8f-4005-a9e8-0e8d6c03fe64/question-edits/ddd94c88-fee7-4167-a8eb-370a02061d26.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ra-9442-pwd-privileges-and-incentives--1262fe88-bb8f-4005-a9e8-0e8d6c03fe64/question-edits/ee96cec5-730b-4940-9da4-7a0d7587fdff.json"
+      ],
+      "linked_question_count": 20,
+      "question_edit_count": 20,
+      "source_count": 3,
+      "source_labels": [
+        "2024 Revised Implementing Rules and Regulations of BP 344 (NCDA)",
+        "BP 344 IRR Accessibility Law (DPWH)",
+        "PD 1096 RIRR 2004 - Revised IRR (DPWH Official)"
+      ],
+      "source_descriptions": [
+        "bp-344-2024-revised-irr-ncda; raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf; raw_pdf_sha256=sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953; raw_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md; raw_markdown_sha256=sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040; checked_locator=refined markdown lines 32-95 and 650-725",
+        "bp-344-irr-accessibility-law-dpwh; raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/BP-344 IRR Accessibility Law DPWH.pdf; raw_pdf_sha256=sha256:7fe6c2de016c0640002029b089c0468a6e0bcb5856be722c93acc97fadf19618; raw_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/BP-344 IRR Accessibility Law DPWH.md; raw_markdown_sha256=sha256:16660ed8a24551d2bcde8e66d051a7e538dc19425651c6bb839df16dc739bad3; checked_locator=refined markdown Appendix A, accessibility requirements for dropped curbs, walkways, parking, entrances, and ramps",
+        "pd-1096-rirr-2004-dpwh-official; raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf; raw_pdf_sha256=sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6; raw_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md; raw_markdown_sha256=sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7; checked_locator=refined markdown lines 6040-6145"
+      ],
+      "source_audit_claim_count": 4,
+      "scenario_status": "eligible-added",
+      "scenario_reason": "Scenario uses only local source-supported planning or accessibility claims.",
+      "blocker_resolution": "resolved_by_source_safe_narrowing_or_local_source_support",
+      "candidate_sha256": "sha256:47799446e7c5a06e4540d47059d0769a0b8f78ef07c9ed4593bd0dfe021bf3d3",
+      "compose": {
+        "blockers": 0,
+        "candidate_hash": "sha256:47799446e7c5a06e4540d47059d0769a0b8f78ef07c9ed4593bd0dfe021bf3d3"
+      },
+      "diff": {
+        "safe_to_push": true,
+        "blockers": [],
+        "changed": true
+      }
+    },
+    {
+      "article_id": "cd893cd9-7427-4093-bc07-edabf41a6cd7",
+      "slug": "law-qa-deck-ra-7277-9442-10754",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/law-qa-deck-ra-7277-9442-10754--cd893cd9-7427-4093-bc07-edabf41a6cd7",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/law-qa-deck-ra-7277-9442-10754--cd893cd9-7427-4093-bc07-edabf41a6cd7/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/law-qa-deck-ra-7277-9442-10754--cd893cd9-7427-4093-bc07-edabf41a6cd7/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/law-qa-deck-ra-7277-9442-10754--cd893cd9-7427-4093-bc07-edabf41a6cd7/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/law-qa-deck-ra-7277-9442-10754--cd893cd9-7427-4093-bc07-edabf41a6cd7/source-audit-evidence.json"
+      ],
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/law-qa-deck-ra-7277-9442-10754--cd893cd9-7427-4093-bc07-edabf41a6cd7/question-edits",
+      "question_edit_file_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/law-qa-deck-ra-7277-9442-10754--cd893cd9-7427-4093-bc07-edabf41a6cd7/question-edits/1998e659-c13a-45dd-94cc-dee9fbebdd69.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/law-qa-deck-ra-7277-9442-10754--cd893cd9-7427-4093-bc07-edabf41a6cd7/question-edits/2cbd723c-709e-4f56-9e3d-886a60e5c7a2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/law-qa-deck-ra-7277-9442-10754--cd893cd9-7427-4093-bc07-edabf41a6cd7/question-edits/2fac9aaa-6ede-4866-aadd-6a36f8d58925.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/law-qa-deck-ra-7277-9442-10754--cd893cd9-7427-4093-bc07-edabf41a6cd7/question-edits/4724857c-5dd7-496a-aca2-0f7e2ad7ec86.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/law-qa-deck-ra-7277-9442-10754--cd893cd9-7427-4093-bc07-edabf41a6cd7/question-edits/6ae11ccd-d822-436f-baab-ea6dba41dd90.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/law-qa-deck-ra-7277-9442-10754--cd893cd9-7427-4093-bc07-edabf41a6cd7/question-edits/9143aadc-ea9b-4c59-8125-9b6000f18c0b.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/law-qa-deck-ra-7277-9442-10754--cd893cd9-7427-4093-bc07-edabf41a6cd7/question-edits/94982ed6-0a46-47de-aad1-d4584a571449.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/law-qa-deck-ra-7277-9442-10754--cd893cd9-7427-4093-bc07-edabf41a6cd7/question-edits/ad1845b0-7bcc-4d72-ad12-57f08df46795.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/law-qa-deck-ra-7277-9442-10754--cd893cd9-7427-4093-bc07-edabf41a6cd7/question-edits/c3be742a-d2e7-4fee-9a72-d69c82ee296c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/law-qa-deck-ra-7277-9442-10754--cd893cd9-7427-4093-bc07-edabf41a6cd7/question-edits/dc4671b2-430b-44a5-89e7-329fd5f7eed4.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/law-qa-deck-ra-7277-9442-10754--cd893cd9-7427-4093-bc07-edabf41a6cd7/question-edits/ff4361c9-b953-4f74-a7a8-bf4b975dfa6c.json"
+      ],
+      "linked_question_count": 11,
+      "question_edit_count": 11,
+      "source_count": 3,
+      "source_labels": [
+        "2024 Revised Implementing Rules and Regulations of BP 344 (NCDA)",
+        "BP 344 IRR Accessibility Law (DPWH)",
+        "PD 1096 RIRR 2004 - Revised IRR (DPWH Official)"
+      ],
+      "source_descriptions": [
+        "bp-344-2024-revised-irr-ncda; raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf; raw_pdf_sha256=sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953; raw_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md; raw_markdown_sha256=sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040; checked_locator=refined markdown lines 32-95 and 650-725",
+        "bp-344-irr-accessibility-law-dpwh; raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/BP-344 IRR Accessibility Law DPWH.pdf; raw_pdf_sha256=sha256:7fe6c2de016c0640002029b089c0468a6e0bcb5856be722c93acc97fadf19618; raw_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/BP-344 IRR Accessibility Law DPWH.md; raw_markdown_sha256=sha256:16660ed8a24551d2bcde8e66d051a7e538dc19425651c6bb839df16dc739bad3; checked_locator=refined markdown Appendix A, accessibility requirements for dropped curbs, walkways, parking, entrances, and ramps",
+        "pd-1096-rirr-2004-dpwh-official; raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf; raw_pdf_sha256=sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6; raw_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md; raw_markdown_sha256=sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7; checked_locator=refined markdown lines 6040-6145"
+      ],
+      "source_audit_claim_count": 4,
+      "scenario_status": "eligible-added",
+      "scenario_reason": "Scenario uses only local source-supported planning or accessibility claims.",
+      "blocker_resolution": "resolved_by_source_safe_narrowing_or_local_source_support",
+      "candidate_sha256": "sha256:f5e0a9454cc769319a0ee76dda4d63bb4d9f1fc2bcf33e8fe15435b642e82b5d",
+      "compose": {
+        "blockers": 0,
+        "candidate_hash": "sha256:f5e0a9454cc769319a0ee76dda4d63bb4d9f1fc2bcf33e8fe15435b642e82b5d"
+      },
+      "diff": {
+        "safe_to_push": true,
+        "blockers": [],
+        "changed": true
+      }
+    },
+    {
+      "article_id": "fc0f6b12-8d7e-4309-b83c-daba0863ff30",
+      "slug": "lea-plan-007-06-core-concept",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-06-core-concept--fc0f6b12-8d7e-4309-b83c-daba0863ff30",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-06-core-concept--fc0f6b12-8d7e-4309-b83c-daba0863ff30/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-06-core-concept--fc0f6b12-8d7e-4309-b83c-daba0863ff30/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-06-core-concept--fc0f6b12-8d7e-4309-b83c-daba0863ff30/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-06-core-concept--fc0f6b12-8d7e-4309-b83c-daba0863ff30/source-audit-evidence.json"
+      ],
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-06-core-concept--fc0f6b12-8d7e-4309-b83c-daba0863ff30/question-edits",
+      "question_edit_file_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-06-core-concept--fc0f6b12-8d7e-4309-b83c-daba0863ff30/question-edits/2af95339-6efe-4b23-9601-b97ecb323c51.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-06-core-concept--fc0f6b12-8d7e-4309-b83c-daba0863ff30/question-edits/3d36469e-d685-4dfd-a746-2487b90d250a.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-06-core-concept--fc0f6b12-8d7e-4309-b83c-daba0863ff30/question-edits/452413b8-2cfa-43cc-b741-a641e0781e95.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-06-core-concept--fc0f6b12-8d7e-4309-b83c-daba0863ff30/question-edits/478f57b7-f974-485a-82a3-a158c502b3ff.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-06-core-concept--fc0f6b12-8d7e-4309-b83c-daba0863ff30/question-edits/4fb5d579-1273-431f-9b27-a0732faee3dd.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-06-core-concept--fc0f6b12-8d7e-4309-b83c-daba0863ff30/question-edits/7404be19-b37f-4f3d-80c4-f245d5d14b94.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-06-core-concept--fc0f6b12-8d7e-4309-b83c-daba0863ff30/question-edits/7f7b9acd-6013-44d5-923e-467444fc050f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-06-core-concept--fc0f6b12-8d7e-4309-b83c-daba0863ff30/question-edits/95f6a300-2af1-48c1-bcfd-19d3af09f1a5.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-06-core-concept--fc0f6b12-8d7e-4309-b83c-daba0863ff30/question-edits/c0930872-223d-4236-91a8-583af7d52c7f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-06-core-concept--fc0f6b12-8d7e-4309-b83c-daba0863ff30/question-edits/dcb036ab-8060-4d01-9a9a-c43ee2c8eaea.json"
+      ],
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 3,
+      "source_labels": [
+        "Manila Comprehensive Land Use Plan and Zoning Ordinance 2005-2020",
+        "Bonifacio Global City Design Standards and Guidelines",
+        "DHSUD Resilient Urban Design and Development Guidelines"
+      ],
+      "source_descriptions": [
+        "manila-clup-2005-2020; raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/LGU/623689186-Manila-CLUP-2005-2020.pdf; raw_pdf_sha256=sha256:ddb57c586655fba0e1a9feddc7d7a304a79bef4bb2f5831bc4ad34e250b42fbe; raw_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/LGU/623689186-Manila-CLUP-2005-2020.md; raw_markdown_sha256=sha256:6e8c4e219734aa77af8f1ab581867dbb81d2ae6feb3ec99e2990a64bafeb6a68; checked_locator=refined markdown lines 157-180, 737-775, 6988, 12778, 12962-13002",
+        "bgc-design-standards-and-guidelines; raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/LGU/794422427-BGC-Design-Standards-and-Guidelines.pdf; raw_pdf_sha256=sha256:299dc47bbfee73c5ba6ae5314d766ac3516473de16126d01e3fd3f01ed5f08b8; raw_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/LGU/794422427-BGC-Design-Standards-and-Guidelines.md; raw_markdown_sha256=sha256:436d0c23d4293629851795603dd9b6cbbf10316fe88ba7fd3fe996f345ba4a43; checked_locator=refined markdown lines 328-432 and 3997-4005",
+        "dhsud-resilient-urban-design-guidelines; raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf; raw_pdf_sha256=sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98; raw_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.md; raw_markdown_sha256=sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7; checked_locator=refined markdown lines 41-66 and 260-330"
+      ],
+      "source_audit_claim_count": 4,
+      "scenario_status": "eligible-added",
+      "scenario_reason": "Scenario uses only local source-supported planning or accessibility claims.",
+      "blocker_resolution": "resolved_by_source_safe_narrowing_or_local_source_support",
+      "candidate_sha256": "sha256:4315a9d07c645b8ec74ac220c7f6b159290794838cc311be5d4022b38634ede1",
+      "compose": {
+        "blockers": 0,
+        "candidate_hash": "sha256:4315a9d07c645b8ec74ac220c7f6b159290794838cc311be5d4022b38634ede1"
+      },
+      "diff": {
+        "safe_to_push": true,
+        "blockers": [],
+        "changed": true
+      }
+    },
+    {
+      "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
+      "slug": "lea-plan-008-02-core-concept",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-02-core-concept--4bb1957d-f513-47e1-b253-c7cbc65912b3",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-02-core-concept--4bb1957d-f513-47e1-b253-c7cbc65912b3/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-02-core-concept--4bb1957d-f513-47e1-b253-c7cbc65912b3/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-02-core-concept--4bb1957d-f513-47e1-b253-c7cbc65912b3/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-02-core-concept--4bb1957d-f513-47e1-b253-c7cbc65912b3/source-audit-evidence.json"
+      ],
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-02-core-concept--4bb1957d-f513-47e1-b253-c7cbc65912b3/question-edits",
+      "question_edit_file_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-02-core-concept--4bb1957d-f513-47e1-b253-c7cbc65912b3/question-edits/072c90a5-e8bc-4b40-807d-724b8b1dda68.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-02-core-concept--4bb1957d-f513-47e1-b253-c7cbc65912b3/question-edits/2e21964b-43d2-4671-88ef-0803c2ff3399.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-02-core-concept--4bb1957d-f513-47e1-b253-c7cbc65912b3/question-edits/4e5ff8fd-644a-4e54-b257-dd5fabf12fa3.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-02-core-concept--4bb1957d-f513-47e1-b253-c7cbc65912b3/question-edits/5fc8bb23-e697-4e5b-bd9a-7e9e8c78cc96.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-02-core-concept--4bb1957d-f513-47e1-b253-c7cbc65912b3/question-edits/67e46ca4-3ed3-4172-9eb0-3fac72beb1ac.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-02-core-concept--4bb1957d-f513-47e1-b253-c7cbc65912b3/question-edits/78dc6325-e27a-4334-a859-86b304fc7ad3.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-02-core-concept--4bb1957d-f513-47e1-b253-c7cbc65912b3/question-edits/7fcd5545-d063-4637-82a7-000e941fdb23.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-02-core-concept--4bb1957d-f513-47e1-b253-c7cbc65912b3/question-edits/98f11a94-64f3-45da-bb3c-1cb1a297b346.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-02-core-concept--4bb1957d-f513-47e1-b253-c7cbc65912b3/question-edits/d47c0aaf-a0bc-4af3-a0b4-2b2f956ea5df.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-02-core-concept--4bb1957d-f513-47e1-b253-c7cbc65912b3/question-edits/f5785968-ecc8-4776-8bdd-006dc42a8ffe.json"
+      ],
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 2,
+      "source_labels": [
+        "CLUP GIS Guidebook (HLURB)",
+        "DHSUD Resilient Urban Design and Development Guidelines"
+      ],
+      "source_descriptions": [
+        "clup-gis-guidebook-hlurb; raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/CLUP GIS GUIDEBOOK HLURB.pdf; raw_pdf_sha256=sha256:761d92030e97ea4ee4604de76df6dce49334f35b03e6bb411617f6943f8f788f; raw_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/CLUP GIS GUIDEBOOK HLURB.md; raw_markdown_sha256=sha256:885dfbb2b28b045cc8d395fc7278f52d429973bd1d9006e7b8f1f7238ed10c06; checked_locator=refined markdown lines 676-716, 1036-1074, and 1334-1370",
+        "dhsud-resilient-urban-design-guidelines; raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf; raw_pdf_sha256=sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98; raw_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.md; raw_markdown_sha256=sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7; checked_locator=refined markdown lines 41-66 and 260-330"
+      ],
+      "source_audit_claim_count": 3,
+      "scenario_status": "eligible-added",
+      "scenario_reason": "Scenario uses only local source-supported planning or accessibility claims.",
+      "blocker_resolution": "local_source_supported",
+      "candidate_sha256": "sha256:b5ab1a1c64068f7f743e870fba0921c94673bab61665e72fcb8a77259b54e65c",
+      "compose": {
+        "blockers": 0,
+        "candidate_hash": "sha256:b5ab1a1c64068f7f743e870fba0921c94673bab61665e72fcb8a77259b54e65c"
+      },
+      "diff": {
+        "safe_to_push": true,
+        "blockers": [],
+        "changed": true
+      }
+    },
+    {
+      "article_id": "5d49cedb-dc14-445a-b075-41fe56873081",
+      "slug": "lea-plan-008-03-core-concept",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-03-core-concept--5d49cedb-dc14-445a-b075-41fe56873081",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-03-core-concept--5d49cedb-dc14-445a-b075-41fe56873081/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-03-core-concept--5d49cedb-dc14-445a-b075-41fe56873081/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-03-core-concept--5d49cedb-dc14-445a-b075-41fe56873081/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-03-core-concept--5d49cedb-dc14-445a-b075-41fe56873081/source-audit-evidence.json"
+      ],
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-03-core-concept--5d49cedb-dc14-445a-b075-41fe56873081/question-edits",
+      "question_edit_file_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-03-core-concept--5d49cedb-dc14-445a-b075-41fe56873081/question-edits/10e4e2d7-abb5-42a4-a1d0-cdae42fd6dc3.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-03-core-concept--5d49cedb-dc14-445a-b075-41fe56873081/question-edits/2f4082b0-262f-4823-be1b-00de4b6d4a64.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-03-core-concept--5d49cedb-dc14-445a-b075-41fe56873081/question-edits/4e670bc9-9376-418f-a380-bfffcac5c58a.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-03-core-concept--5d49cedb-dc14-445a-b075-41fe56873081/question-edits/613e852c-8adb-4a1f-bb52-241fc226bd03.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-03-core-concept--5d49cedb-dc14-445a-b075-41fe56873081/question-edits/68daa8e2-ef56-42ab-8f28-5c426f16f293.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-03-core-concept--5d49cedb-dc14-445a-b075-41fe56873081/question-edits/83a13363-13e4-4995-b25e-c535bd91ff56.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-03-core-concept--5d49cedb-dc14-445a-b075-41fe56873081/question-edits/a7c0c61d-6c16-4bfd-8d88-6404e65ee197.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-03-core-concept--5d49cedb-dc14-445a-b075-41fe56873081/question-edits/bfe5b747-537d-4802-8fc2-03ae247374c3.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-03-core-concept--5d49cedb-dc14-445a-b075-41fe56873081/question-edits/e8ac5bd4-f744-43ba-bcc0-0fac96da038a.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-03-core-concept--5d49cedb-dc14-445a-b075-41fe56873081/question-edits/f7c9bf68-d9df-4503-b040-f061d5516345.json"
+      ],
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 4,
+      "source_labels": [
+        "DHSUD Resilient Urban Design and Development Guidelines",
+        "Bonifacio Global City Design Standards and Guidelines",
+        "Manila Comprehensive Land Use Plan and Zoning Ordinance 2005-2020",
+        "RA 11285 Energy Efficiency and Conservation Act of 2019"
+      ],
+      "source_descriptions": [
+        "dhsud-resilient-urban-design-guidelines; raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf; raw_pdf_sha256=sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98; raw_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.md; raw_markdown_sha256=sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7; checked_locator=refined markdown lines 41-66 and 260-330",
+        "bgc-design-standards-and-guidelines; raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/LGU/794422427-BGC-Design-Standards-and-Guidelines.pdf; raw_pdf_sha256=sha256:299dc47bbfee73c5ba6ae5314d766ac3516473de16126d01e3fd3f01ed5f08b8; raw_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/LGU/794422427-BGC-Design-Standards-and-Guidelines.md; raw_markdown_sha256=sha256:436d0c23d4293629851795603dd9b6cbbf10316fe88ba7fd3fe996f345ba4a43; checked_locator=refined markdown lines 328-432 and 3997-4005",
+        "manila-clup-2005-2020; raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/LGU/623689186-Manila-CLUP-2005-2020.pdf; raw_pdf_sha256=sha256:ddb57c586655fba0e1a9feddc7d7a304a79bef4bb2f5831bc4ad34e250b42fbe; raw_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/LGU/623689186-Manila-CLUP-2005-2020.md; raw_markdown_sha256=sha256:6e8c4e219734aa77af8f1ab581867dbb81d2ae6feb3ec99e2990a64bafeb6a68; checked_locator=refined markdown lines 157-180, 737-775, 6988, 12778, 12962-13002",
+        "ra-11285-energy-efficiency-conservation-act; raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf; raw_pdf_sha256=sha256:316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8; raw_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.md; raw_markdown_sha256=sha256:d2baa0e8d4ffe0059688783a4d31ac0e121517daca939f18a048fe053e76cdd4; checked_locator=refined markdown lines 291-307 and 761-824"
+      ],
+      "source_audit_claim_count": 5,
+      "scenario_status": "eligible-added",
+      "scenario_reason": "Scenario uses only local source-supported planning or accessibility claims.",
+      "blocker_resolution": "local_source_supported",
+      "candidate_sha256": "sha256:79a0f1b0f0f43d5633c796338e413193c6f44ef0579e31ea124eb66a8bf7dd40",
+      "compose": {
+        "blockers": 0,
+        "candidate_hash": "sha256:79a0f1b0f0f43d5633c796338e413193c6f44ef0579e31ea124eb66a8bf7dd40"
+      },
+      "diff": {
+        "safe_to_push": true,
+        "blockers": [],
+        "changed": true
+      }
+    }
+  ],
+  "generated_artifacts": {
+    "report": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-089-local-first-report.md",
+    "ledger": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-089-local-first-ledger.json",
+    "scoped_checks": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-089-local-first-scoped-checks.json"
+  },
+  "validation": {
+    "compose": "PASS 5/5 blockers=0",
+    "diff": "PASS 5/5 safe_to_push=true blockers=0",
+    "validate": "PASS 5/5 valid blockers=0; component-usage warning only",
+    "ui_block_edit_validation": "PASS 5/5 valid blockers=0 warnings=0",
+    "scoped_prechecks": {
+      "generated_at": "2026-05-12T05:26:51.918Z",
+      "batch_number": "089",
+      "blockers": [],
+      "checks": {
+        "scoped_json_parse": {
+          "status": "PASS",
+          "json_files": 118
+        },
+        "candidate_placeholder_internal_note_source_scan": {
+          "status": "PASS",
+          "findings": []
+        },
+        "normalized_ui_placeholders": {
+          "status": "PASS",
+          "files_with_placeholders": [
+            ".ai/content-audit-export/articles/law-qa-deck-ra-7277-9442-10754--cd893cd9-7427-4093-bc07-edabf41a6cd7/normalized.md"
+          ],
+          "note": "Only normalized.md may contain owned UI placeholders when matching ui-blocks.json blocks exist; candidates must not."
+        },
+        "non_original_internal_note_source_scan": {
+          "status": "PASS",
+          "findings": []
+        },
+        "stale_compose_error_scan": {
+          "status": "PASS",
+          "stale_files": []
+        },
+        "question_edit_counts": {
+          "status": "PASS",
+          "expected_questions": 61,
+          "actual_question_edits": 61,
+          "missing_expected_edit_paths": []
+        },
+        "source_hash_checks": {
+          "status": "PASS",
+          "failures": []
+        },
+        "source_audit_evidence_gate": {
+          "status": "PASS",
+          "failures": []
+        },
+        "manifest_scope": {
+          "status": "PASS",
+          "improved_article_folders": [
+            "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ra-9442-pwd-privileges-and-incentives--1262fe88-bb8f-4005-a9e8-0e8d6c03fe64",
+            "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/law-qa-deck-ra-7277-9442-10754--cd893cd9-7427-4093-bc07-edabf41a6cd7",
+            "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-06-core-concept--fc0f6b12-8d7e-4309-b83c-daba0863ff30",
+            "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-02-core-concept--4bb1957d-f513-47e1-b253-c7cbc65912b3",
+            "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-03-core-concept--5d49cedb-dc14-445a-b075-41fe56873081"
+          ]
+        }
+      },
+      "status": "PASS"
+    },
+    "targeted_tests": "PASS bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts: 34 pass, 0 fail, 328 expect calls",
+    "scoped_git_diff_check": "PASS git diff --check -- .ai/content-audit-export .ai/03_plans/source-audited-local-first-batches-handoff.md after final artifact and handoff updates"
+  },
+  "next_batch_planning": "Do not select Batch 090 in this batch. Since only 087-089 were pre-reserved, a new reservation coordinator must reserve 090-092 if blockers=0."
+}

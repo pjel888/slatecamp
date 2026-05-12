@@ -1,0 +1,107 @@
+{
+  "target": {
+    "article_id": "fc0f6b12-8d7e-4309-b83c-daba0863ff30",
+    "slug": "lea-plan-007-06-core-concept",
+    "candidate_sha256": "sha256:4315a9d07c645b8ec74ac220c7f6b159290794838cc311be5d4022b38634ede1",
+    "batch_number": "089"
+  },
+  "classification": {
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "primary_truth": "vitruvius-connection/001_Raw-Source-Layer",
+    "supplemental_internet_used": false
+  },
+  "scenario_enrichment": {
+    "status": "added",
+    "result": "source_safe_exam_useful_real_world_scenario_added",
+    "reason": "Scenario uses only local source-supported planning or accessibility claims."
+  },
+  "claims": [
+    {
+      "claim_id": "batch089-lea-plan-007-06-core-concept-claim-01",
+      "audit_result": "PASS",
+      "claim": "Article and linked question edits were narrowed to claims supported by the listed local raw source packet.",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/LGU/623689186-Manila-CLUP-2005-2020.pdf",
+        "raw_pdf_sha256": "sha256:ddb57c586655fba0e1a9feddc7d7a304a79bef4bb2f5831bc4ad34e250b42fbe",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/LGU/623689186-Manila-CLUP-2005-2020.md",
+        "raw_markdown_sha256": "sha256:6e8c4e219734aa77af8f1ab581867dbb81d2ae6feb3ec99e2990a64bafeb6a68",
+        "locator": "refined markdown lines 157-180, 737-775, 6988, 12778, 12962-13002",
+        "quoted_pdf_excerpt": "The Manila CLUP identifies Daniel Hudson Burnham as the city first urban planner and later links open spaces, waterfront development, and walkability to the Burnham plan."
+      }
+    },
+    {
+      "claim_id": "batch089-lea-plan-007-06-core-concept-claim-02",
+      "audit_result": "PASS",
+      "claim": "Supporting source Bonifacio Global City Design Standards and Guidelines checked for this article scope.",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/LGU/794422427-BGC-Design-Standards-and-Guidelines.pdf",
+        "raw_pdf_sha256": "sha256:299dc47bbfee73c5ba6ae5314d766ac3516473de16126d01e3fd3f01ed5f08b8",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/LGU/794422427-BGC-Design-Standards-and-Guidelines.md",
+        "raw_markdown_sha256": "sha256:436d0c23d4293629851795603dd9b6cbbf10316fe88ba7fd3fe996f345ba4a43",
+        "locator": "refined markdown lines 328-432 and 3997-4005",
+        "quoted_pdf_excerpt": "BGC is described as 440 hectares with mixed-use districts, a multi-modal station area, and pedestrian plans covering at-grade and grade-separated movement."
+      }
+    },
+    {
+      "claim_id": "batch089-lea-plan-007-06-core-concept-claim-03",
+      "audit_result": "PASS",
+      "claim": "Supporting source DHSUD Resilient Urban Design and Development Guidelines checked for this article scope.",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf",
+        "raw_pdf_sha256": "sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.md",
+        "raw_markdown_sha256": "sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7",
+        "locator": "refined markdown lines 41-66 and 260-330",
+        "quoted_pdf_excerpt": "DHSUD frames resilient urban design around CLUP/ZO, evidence-based planning, compact mixed-use and transit-oriented development, and green resilient strategies."
+      }
+    },
+    {
+      "claim_id": "batch089-lea-plan-007-06-core-concept-linked-questions",
+      "audit_result": "PASS",
+      "claim": "10 linked question edits created and rewritten to the same local source-safe scope.",
+      "question_ids": [
+        "dcb036ab-8060-4d01-9a9a-c43ee2c8eaea",
+        "452413b8-2cfa-43cc-b741-a641e0781e95",
+        "7f7b9acd-6013-44d5-923e-467444fc050f",
+        "2af95339-6efe-4b23-9601-b97ecb323c51",
+        "95f6a300-2af1-48c1-bcfd-19d3af09f1a5",
+        "3d36469e-d685-4dfd-a746-2487b90d250a",
+        "7404be19-b37f-4f3d-80c4-f245d5d14b94",
+        "4fb5d579-1273-431f-9b27-a0732faee3dd",
+        "c0930872-223d-4236-91a8-583af7d52c7f",
+        "478f57b7-f974-485a-82a3-a158c502b3ff"
+      ],
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/LGU/623689186-Manila-CLUP-2005-2020.pdf",
+        "raw_pdf_sha256": "sha256:ddb57c586655fba0e1a9feddc7d7a304a79bef4bb2f5831bc4ad34e250b42fbe",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/LGU/623689186-Manila-CLUP-2005-2020.md",
+        "raw_markdown_sha256": "sha256:6e8c4e219734aa77af8f1ab581867dbb81d2ae6feb3ec99e2990a64bafeb6a68",
+        "locator": "refined markdown lines 157-180, 737-775, 6988, 12778, 12962-13002",
+        "quoted_pdf_excerpt": "The Manila CLUP identifies Daniel Hudson Burnham as the city first urban planner and later links open spaces, waterfront development, and walkability to the Burnham plan."
+      }
+    }
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "source_resolution_notes": [
+    "Article scope retained only where supported by listed local raw-source packets."
+  ],
+  "unverified_or_rejected_claims": [],
+  "sme_review": {
+    "required": false,
+    "status": "not_required"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "question_id": "2cbd723c-709e-4f56-9e3d-886a60e5c7a2",
+  "baseline_hash": "sha256:b2ca6b8c9ef8b2d69be7b6b5c0da56ce7fd61075b8e44ce904820d03c704e821",
+  "action": "replace",
+  "reason": "source-audited-article-batch-089-local-first aligned linked question with audited local sources for law-qa-deck-ra-7277-9442-10754.",
+  "approved_by": "codex-local-source-audit-batch-089",
+  "approved_at": "2026-05-12T10:35:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "cd893cd9-7427-4093-bc07-edabf41a6cd7",
+    "parent_article_slug": "law-qa-deck-ra-7277-9442-10754",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "BP 344 2024 IRR, Accessible Ramps",
+    "checked_markdown_lines": [
+      "refined markdown lines 32-95 and 650-725",
+      "refined markdown Appendix A, accessibility requirements for dropped curbs, walkways, parking, entrances, and ramps",
+      "refined markdown lines 6040-6145"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "bp-344-2024-revised-irr-ncda",
+        "label": "2024 Revised Implementing Rules and Regulations of BP 344 (NCDA)",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "raw_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+        "locator": "refined markdown lines 32-95 and 650-725"
+      },
+      {
+        "source_id": "bp-344-irr-accessibility-law-dpwh",
+        "label": "BP 344 IRR Accessibility Law (DPWH)",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/BP-344 IRR Accessibility Law DPWH.pdf",
+        "sha256": "sha256:7fe6c2de016c0640002029b089c0468a6e0bcb5856be722c93acc97fadf19618",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/BP-344 IRR Accessibility Law DPWH.md",
+        "raw_markdown_sha256": "sha256:16660ed8a24551d2bcde8e66d051a7e538dc19425651c6bb839df16dc739bad3",
+        "locator": "refined markdown Appendix A, accessibility requirements for dropped curbs, walkways, parking, entrances, and ramps"
+      },
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official",
+        "label": "PD 1096 RIRR 2004 - Revised IRR (DPWH Official)",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "locator": "refined markdown lines 6040-6145"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the local source-audited article scope."
+  },
+  "proposed": {
+    "text": "What minimum clear width does the 2024 BP 344 IRR give for accessible ramps?",
+    "options": [
+      {
+        "id": "A",
+        "text": "900 mm"
+      },
+      {
+        "id": "B",
+        "text": "1000 mm"
+      },
+      {
+        "id": "C",
+        "text": "1200 mm"
+      },
+      {
+        "id": "D",
+        "text": "1500 mm"
+      }
+    ],
+    "correct_option_id": "C",
+    "rationale": "The 2024 BP 344 IRR states a 1200 mm minimum clear width for accessible ramps.",
+    "explanation": "The 2024 BP 344 IRR states a 1200 mm minimum clear width for accessible ramps.",
+    "code_citation": "BP 344 2024 IRR, Accessible Ramps"
+  }
+}

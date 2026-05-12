@@ -1,185 +1,46 @@
-# RA 9442 PWD Privileges and Incentives
-
+# RA 9442 PWD Privileges and Incentives - Local Source-Safe Accessibility Scope
 
 ## Board Exam Quick Check
 
-Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+For this audited batch, keep the LEA answer inside the local source packet that exists. The available local primary sources support built-environment accessibility dimensions under BP 344 and PD 1096. They do not support retaining RA 7277, RA 9442, RA 10754, RA 10524, BIR, discount, VAT, employment quota, tax incentive, or penalty claims in this article.
 
-**Common mistake:** treating a familiar keyword in **RA 9442 PWD Privileges and Incentives** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
-
+**Exam rule:** use BP 344 and PD 1096 when the question asks for ramps, walkways, entrances, parking, signs, handrails, and accessible routes. Use a separate verified PWD-benefits law packet before answering privilege-law, tax, discount, VAT, employment, or penalty questions.
 
 ## Learning Goal
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code="ra9442", section="Section 4 - Incentives"
-- Text: BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.
-[/SLATECAMP_UI_BLOCK]
-Extracted summary:
-- Props: (none)
-- Text: BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all p...
+After reading this article, you should be able to distinguish source-supported accessibility design requirements from unsupported PWD privilege-law claims, identify the local source family for accessible facility dimensions, and apply the core BP 344/PD 1096 design checks in LEA-style questions.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
-Extracted summary:
-- Props: code="ra9442", section="Section 3 - PWD Privileges"
-- Text: BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.
-[/SLATECAMP_UI_BLOCK]
-Extracted summary:
-- Props: (none)
-- Text: BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all p...
+## Source-Safe Narrowing
 
-After reading this article, you should be able to:
+The manifest flagged this deck because the current local raw-source layer did not contain the RA 7277, RA 9442, RA 10754, RA 10524, or BIR packets needed to verify PWD discount, VAT, tax incentive, employment quota, and penalty claims. Those claims are deferred from the article and linked questions. The source-safe scope retained here is the architectural accessibility scope supported by local BP 344 and PD 1096 raw-source files.
 
-Calculate and apply PWD privileges under RA 9442 as amended by RA 10754: the 20% discount on hotels, restaurants, recreation, and transport; VAT exemption on the discounted amount; income tax deduction for establishments providing free PWD services; and the graduated ramp and accessible design requirements triggered by building alterations.
----
----
+## What BP 344 Supports
 
-## Key Corrections vs Your Draft
+BP 344 is the controlling local source family for barrier-free accessibility dimensions. The 2024 revised IRR states that accessible ramps need a minimum clear width of 1200 mm and a gradient not steeper than 1:20, with steeper gradients allowed only in special cases depending on length. It also requires landings for longer ramps and level areas at the top and bottom of ramps.
 
-1. **Workforce quota:** The 1% PWD quota is properly grounded in **RA 10524** (amending RA 7277), not in RA 9442 “Sec 35” as you wrote.[web:21][web:22][web:24]
-2. **Tax incentives:** Your draft mixes sources and percentages. Current law gives:
-   - **25% additional deduction on PWD wages** (still under RA 7277, as amended).[web:29]
-   - **Additional deduction for accessibility improvements** is commonly described as **up to 50% of actual direct costs** in DOF/BIR guidance, with some materials summarizing a 25% figure; there is no RA 10754 “Sec 4” text setting a simple 25% in the statute itself.[web:29]
-   - For exam purposes, most updated reviewers treat both: **25% wages deduction** and **up to 50% structural improvement cost deduction** as valid incentives under RA 7277 as amended.[web:29]
-3. **RA 9442 text:** RA 9442 (by itself) does not create the wage/improvement tax deductions; it amends RA 7277 and adds privileges and penalties.[web:20][web:23]
-4. **Penalties:** Your ranges are low; post‑RA 10754 references and commentaries cite penalties up to **₱300,000** and 6 years, depending on violation and implementing regs.[web:29]
-5. **BP 344 dimensions:** You again tie **1500 mm corridor** and **4000+1800 mm parking** directly to your attached BP 344 file, but those specific Appendix C pages are not in your PDF; they are, however, consistent with the official 2024 IRR online.[file:2][web:11][web:8]
+For exterior pedestrian routes, BP 344 requires sidewalks, walkways, and pathways to be kept as level and slip-resistant as possible. The 2024 IRR gives a minimum width of 1500 mm for sidewalks/walkways and 1800 mm where two wheelchair users need to pass. It also requires continuous surfaces, safe grating details, adequate headroom, and protection from obstructions.
 
-Below is a cleaned‑up version that keeps your structure but corrects these points.
+## What PD 1096 Adds
 
----
+PD 1096's accessibility appendix reinforces the building-code context for accessible routes. It covers dropped curbs, curb cut-outs, walkways, handrails, signs, crossings, parking areas, entrances, and ramps. In the older appendix language, walkways have a 1.20 m minimum width, accessible parking stalls are at least 3.70 m wide, entrance vestibules need a level area, and ramps require handrails at 0.70 m and 0.90 m.
 
-## The “4 S” Framework (Revised)
+## Law-Dimension Separation
 
-_Think in terms of what each law does for you as an architect._
+Do not cite PWD privilege laws for millimeter values. The accessible facility dimensions in this audited packet come from BP 344 and PD 1096. PWD benefit statutes may explain rights, discounts, employment policies, or penalties only after their local raw law sources are acquired and checked.
 
-1. **S – Specs & Spaces: BP 344 (2024 IRR)**
-   - Technical **dimensions and details**: ramps, corridors, parking, elevators, toilets.[file:2][web:11]
-   - Works together with **PD 1096** on occupancy, exits, and enclosures.[file:1]
+| Exam cue | Source-safe answer |
+| --- | --- |
+| Ramp width, slope, landing, handrail height | BP 344 and PD 1096 accessibility provisions |
+| Sidewalk/walkway minimum width and obstruction control | BP 344 2024 IRR; PD 1096 Appendix A for older code framing |
+| Accessible parking dimensional check | PD 1096 Appendix A and BP 344 accessibility provisions |
+| Discounts, VAT exemption, employment quota, tax incentive, penalty | Deferred until a local RA/BIR source packet is available |
 
-2. **S – Social Rights: RA 7277 + RA 9442 + RA 10754**
-   - **RA 7277** (Magna Carta) is the parent rights law.[web:21][web:28]
-   - **RA 9442** amends RA 7277 to add discounts, anti‑ridicule, privileges.[web:20][web:23]
-   - **RA 10754** expands benefits with **VAT‑exempt + 20% discount**, stiffer penalties.[web:29]
+## Real World Scenario
 
-3. **S – Salaries & Structural Incentives: RA 7277 (as amended)**
-   - **Additional deduction on wages** of PWD employees: **25%** of their salaries.[web:29]
-   - **Additional deduction on accessibility improvements**: practice notes and tax commentaries describe up to **50% of direct accessibility improvement cost** (on top of regular depreciation), based on RA 7277 and implementing BIR rules.[web:29]
+A city hall renovates its public service counter and entry approach. The architect should first check the route from sidewalk to entrance, then verify ramp width and slope, landing size, handrails, obstruction-free walkway width, and accessible parking location against BP 344 and PD 1096. If the owner asks about VAT exemptions, PWD discounts, or tax incentives, the architect should treat that as a separate legal-benefits question requiring verified RA and tax sources.
 
-4. **S – Staff Quotas: RA 10524 (not RA 9442)**
-   - Government: **at least 1%** of positions reserved for PWDs.[web:21][web:22][web:24]
-   - Private companies with 100+ employees: **encouraged** (often interpreted as expected) to reserve **1%** of positions for PWDs.[web:21][web:27]
+## LEA Recall
 
----
-
-## Benefits vs Blueprints Matrix (Fixed Law Assignments)
-
-| Law                 | Core Role                                            | Architect’s Use                                                                   | Spatial Impact                                                                                                           |
-| :------------------ | :--------------------------------------------------- | :-------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------- |
-| **BP 344 2024 IRR** | Built‑environment accessibility standards            | Basis for dimensions and details of ramps, corridors, toilets, parking, elevators | Millimeters: 1200‑mm ramps, ~1500‑mm corridors, 4000‑mm stalls, 1800‑mm aisles, 1800‑mm landings.[file:2][web:11][web:8] |
-| **PD 1096 + IRR**   | General building & fire safety                       | Occupancy, exits, enclosures, fire‑resistive requirements                         | Sets minimums for ramps as exits (“width as required for corridors”), landings, travel distance.[file:1]                 |
-| **RA 7277**         | Parent Magna Carta for PWDs                          | Framework of rights; 25% wage incentive; structural improvement incentives        | “Reasonable accommodation” principle; supports installing BP 344 features.[web:21][web:28]                               |
-| **RA 9442**         | Amends RA 7277: discounts, anti‑ridicule, privileges | Triggers need for express lanes, priority service, no ridicule                    | Requires **services** (discounts, priority lanes), but no new millimeter dimensions.[web:20][web:23]                     |
-| **RA 10754**        | Expands RA 9442: VAT exemption, stronger penalties   | VAT‑exempt + 20% discount; higher penalties for denial                            | No new spatial specs; indirectly strengthens need to implement BP 344 fully.[web:29]                                     |
-| **RA 10524**        | Employment quotas & anti‑discrimination refinement   | 1% workforce goal in public & large private entities                              | Employment policies, not design; may drive need for accessible workplaces.[web:21][web:22][web:24]                       |
-
----
-
-## PWD Privileges: 20% Discount + 12% VAT Exemption
-
-Under **Sec 32 of RA 7277 as amended by RA 9442 and RA 10754**, PWDs are entitled to **both** a **20% discount** and **12% VAT exemption** on specific goods and services.[web:29][web:30]
-
-Applies to (for PWD’s exclusive use):
-
-- Medicines and medical supplies.[web:30]
-- Medical & dental services, diagnostics, professional fees.[web:29]
-
-[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: \ - Domestic air/sea/land transport fares.[web:29] - Hotels, restaurants, recreation (cinemas, amusement).[web:29][web:32] - Funeral and burial services.[web:29] - Educational assistance (tuition, school fees; details from RA 7277).[web:21] **Key point:** Establishments **absorb** these costs; they are not direct government reimbursements, though they may be treated as deductible expenses under BIR rules.[web:26][web:29] ---
-[/SLATECAMP_UI_BLOCK]
-## Employment & Tax Incentives (Updated View)
-
-**1. Wage Incentive (Employer hires PWDs)**
-
-- Additional deduction of **25% of the total amount paid as salaries/wages** to PWD employees.[web:29]
-- Basis: RA 7277 (as amended; some commentaries attribute operative implementation to RA 9442 amendments).[web:21][web:29]
-
-**2. Accessibility Improvement Incentive**
-
-- Employers / businesses may claim additional deductions (up to **50% of direct costs**) for installing accessibility improvements (ramps, lifts, toilets) that comply with BP 344, per tax commentaries and BIR guidance on RA 7277 incentives.[web:29]
-- The simple “25% on improvement cost” statement in your draft is an oversimplification; exam‑focused reviewers often teach _“25% wages, up to 50% improvements”_ as the working rule.[web:29]
-
-**Exam‑safe simplification:**
-
-- **25%** additional deduction on **PWD wages**.
-- **Up to 50%** additional deduction on **direct accessibility improvement costs**, on top of normal depreciation.[web:29]
-
----
-
-## Workforce Quotas (Fixing the Source)
-
-- **Public sector:** At least **1% of positions** in government agencies, offices, or corporations must be reserved for PWDs.[web:21][web:24]
-- **Private sector (100+ employees):** Encouraged (in some interpretations, expected) to reserve at least **1% of positions** for PWDs; backed by anti‑discrimination provisions.[web:21][web:27]
-- Main statutory basis: **RA 10524** and RA 7277 as amended — not RA 9442 “Sec 35” as originally written in your draft.[web:21][web:22][web:24]
-
----
-
-## Penalties (After RA 10754 and Implementing Rules)
-
-\
-
-The exact penalty bands in your draft are too narrow.
-
-- RA 9442 introduced penalties for failure to grant privileges and for ridicule/vilification; RA 10754 **increased** them.[web:20][web:23][web:29]
-- Commentaries and tax guidance after RA 10754 cite fines up to **₱300,000** and imprisonment up to **6 years**, plus possible revocation or suspension of business permits for repeated or serious violations.[web:29]
-
-**For exam recall:**
-
-- Think **“up to ₱300k + up to 6 years”** for serious denial of PWD benefits or privileges, post‑10754.[web:29]
-
----
-
-## Relationship to BP 344 and PD 1096 (Design Integration)
-
-- **RA 7277 / RA 9442 / RA 10754** require that PWDs be able to **access and benefit from** goods and services. That, in practice, forces owners to implement BP 344‑compliant features.[web:21][web:23][web:29][file:2]
-- **BP 344 + PD 1096** provide the **technical specs** (widths, slopes, clearances, accessible parking, elevators, washrooms).[file:1][file:2][web:11][web:8]
-- Tax incentives for accessibility improvements effectively **subsidize** compliance with BP 344 by allowing additional deductions on those capital costs.[web:29]
-
----
-
-## What I Changed From Your Original Text
-
-1. **Fixed law attributions:**
-   - Removed “RA 9442 Sec 35 = 1% workforce” and pointed that quota to RA 10524 / RA 7277 amendments instead.[web:21][web:22][web:24]
-   - Clarified that improvement and wage tax incentives are fundamentally rooted in **RA 7277** (and its later amendments), not RA 9442.[web:21][web:29]
-
-2. **Adjusted deduction percentages:**
-   - Your neat “25% vs 25% vs 50% superseded” table did not match how RA 10754 is actually worded.[web:29]
-   - Recast to: **25% on wages**, and **up to 50%** on structural access improvements as used in current tax commentaries and BIR guidance.[web:29]
-
-3. **Updated penalties:**
-   - Removed the narrow “₱50k–₱150k” framing and replaced it with the more accurate **up to ₱300k, up to 6 years** band used in RA 10754 / BIR / DOH enforcement discussions.[web:29][web:30]
-
-4. **Made clear that RA 9442 / RA 10754 have no millimeter specs:**
-   - Kept the strong distinction that **only BP 344 + PD 1096** give physical dimensions; RA 9442 and RA 10754 provide **rights, discounts, penalties, and incentives**, not slopes or widths.[file:1][file:2][web:20][web:23]
-
-If you’d like, next I can build a **pure Q&A deck** (about 20 flashcards) that only asks: “Which law? which %? which section idea?” so you can drill these distinctions quickly.
-
----
-
-
-
----
-
-## Exam Tip
-
-ALE Swipe: PWD 20% discount applies to: hotels, restaurants, recreation centers, theaters, hospitals/dental clinics, transport (land/air/sea), funeral services. Establishments get income tax deduction equal to the discount amount. The architect's obligation = design compliant accessible facilities. The owner's obligation = register with the DSWD to claim deductions.
-
-## Cross‑References
-
-**Law Qa Deck Ra 7277 9442 10754**, **Translating Pwd Rights**, **Lodging And Residential Accessibility**, **Comprehensive Signage Package**
-
-
-<!-- no-media-needed: existing content format is sufficient without visual media -->
+- BP 344/PD 1096 answer the design-dimension question.
+- PWD privilege-law decks answer social-benefits questions only when the local law source is verified.
+- A number such as 1200 mm, 1500 mm, 1800 mm, or 3.70 m should push the candidate toward accessibility design sources, not discount-law sources.

@@ -1,0 +1,65 @@
+{
+  "question_id": "072c90a5-e8bc-4b40-807d-724b8b1dda68",
+  "baseline_hash": "sha256:52580d16062478020b6e271cf0a1f3db9b536f20918fa212a634de14c5c7d963",
+  "action": "replace",
+  "reason": "source-audited-article-batch-089-local-first aligned linked question with audited local sources for lea-plan-008-02-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-089",
+  "approved_at": "2026-05-12T10:35:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
+    "parent_article_slug": "lea-plan-008-02-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "CLUP GIS Guidebook HLURB",
+    "checked_markdown_lines": [
+      "refined markdown lines 676-716, 1036-1074, and 1334-1370",
+      "refined markdown lines 41-66 and 260-330"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "clup-gis-guidebook-hlurb",
+        "label": "CLUP GIS Guidebook (HLURB)",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/CLUP GIS GUIDEBOOK HLURB.pdf",
+        "sha256": "sha256:761d92030e97ea4ee4604de76df6dce49334f35b03e6bb411617f6943f8f788f",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/CLUP GIS GUIDEBOOK HLURB.md",
+        "raw_markdown_sha256": "sha256:885dfbb2b28b045cc8d395fc7278f52d429973bd1d9006e7b8f1f7238ed10c06",
+        "locator": "refined markdown lines 676-716, 1036-1074, and 1334-1370"
+      },
+      {
+        "source_id": "dhsud-resilient-urban-design-guidelines",
+        "label": "DHSUD Resilient Urban Design and Development Guidelines",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf",
+        "sha256": "sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.md",
+        "raw_markdown_sha256": "sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7",
+        "locator": "refined markdown lines 41-66 and 260-330"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the local source-audited article scope."
+  },
+  "proposed": {
+    "text": "What is the primary CLUP function of GIS in the HLURB guidebook?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A decorative map only"
+      },
+      {
+        "id": "B",
+        "text": "A planning and information management tool for CLUP formulation"
+      },
+      {
+        "id": "C",
+        "text": "A building permit fee"
+      },
+      {
+        "id": "D",
+        "text": "A substitute for zoning ordinances"
+      }
+    ],
+    "correct_option_id": "B",
+    "rationale": "The GIS Guidebook describes GIS as a planning and information management tool for CLUP formulation.",
+    "explanation": "The GIS Guidebook describes GIS as a planning and information management tool for CLUP formulation.",
+    "code_citation": "CLUP GIS Guidebook HLURB"
+  }
+}

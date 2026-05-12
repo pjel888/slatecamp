@@ -7509,3 +7509,122 @@ Batch 088 final state:
 - Status: `PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW`
 - Blockers: 0
 - Stop condition: Batch 088 complete; do not start Batch 089 in this run.
+
+## Batch 089 Pre-Start Checkpoint
+
+- Updated: 2026-05-12T12:42:45+08:00
+- Batch: 089
+- Manifest: `/Users/philiplewis/slatecamp/.ai/03_plans/production-line-batch-089-manifest.json`
+- Coordination doc: `/Users/philiplewis/slatecamp/.ai/03_plans/source-audited-production-line-coordination.md`
+- Selection rule used: execute exactly the five reserved Batch 089 article clusters from the fixed manifest; do not select, reserve, or start Batch 090.
+- Batch 088 acceptance state: accepted, independently QA-passed, committed and pushed as `c31d7db15`; inherited blockers=0.
+- Current worker/session state: Batch 089 started locally; article and question-edits repairs pending; no Supabase push, deploy, or commit attempted.
+- Expected linked questions: 61.
+- Expected source-safe question edits: 61.
+- Known blocker-resolution-needed notes: `ra-9442-pwd-privileges-and-incentives` and `law-qa-deck-ra-7277-9442-10754` contain RA 9442/RA 7277/RA 10754 privilege-law claims but no matching local raw law PDFs were found in the reservation scan, so execution must locally acquire/identify the source family or narrow to BP 344/PD 1096 accessibility design support; `lea-plan-007-06-core-concept` contains planning-personality/history claims that must be locally sourced through Manila CLUP, BGC, and HLURB/DHSUD families or narrowed/removed.
+- Pending validation gates: raw-PDF-first audit, roundtrip protocol, compose/diff/validate, UI-block-edit validation, scoped JSON parse, placeholder/internal-note/source-gap scans, source hash checks, linked-question/question-edit count checks, stale compose-error scan, targeted content-audit tests, scoped `git diff --check`, Batch 089 report, Batch 089 ledger, Batch 089 scoped checks, and this handoff's Batch 089 post-batch completion update.
+
+| # | Article ID | Slug | Article folder | Question-edits folder | Linked questions |
+|---|---|---|---|---|---:|
+| 1 | `1262fe88-bb8f-4005-a9e8-0e8d6c03fe64` | `ra-9442-pwd-privileges-and-incentives` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ra-9442-pwd-privileges-and-incentives--1262fe88-bb8f-4005-a9e8-0e8d6c03fe64` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ra-9442-pwd-privileges-and-incentives--1262fe88-bb8f-4005-a9e8-0e8d6c03fe64/question-edits` | 20 |
+| 2 | `cd893cd9-7427-4093-bc07-edabf41a6cd7` | `law-qa-deck-ra-7277-9442-10754` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/law-qa-deck-ra-7277-9442-10754--cd893cd9-7427-4093-bc07-edabf41a6cd7` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/law-qa-deck-ra-7277-9442-10754--cd893cd9-7427-4093-bc07-edabf41a6cd7/question-edits` | 11 |
+| 3 | `fc0f6b12-8d7e-4309-b83c-daba0863ff30` | `lea-plan-007-06-core-concept` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-06-core-concept--fc0f6b12-8d7e-4309-b83c-daba0863ff30` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-06-core-concept--fc0f6b12-8d7e-4309-b83c-daba0863ff30/question-edits` | 10 |
+| 4 | `4bb1957d-f513-47e1-b253-c7cbc65912b3` | `lea-plan-008-02-core-concept` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-02-core-concept--4bb1957d-f513-47e1-b253-c7cbc65912b3` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-02-core-concept--4bb1957d-f513-47e1-b253-c7cbc65912b3/question-edits` | 10 |
+| 5 | `5d49cedb-dc14-445a-b075-41fe56873081` | `lea-plan-008-03-core-concept` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-03-core-concept--5d49cedb-dc14-445a-b075-41fe56873081` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-03-core-concept--5d49cedb-dc14-445a-b075-41fe56873081/question-edits` | 10 |
+
+Batch 089 expected local raw/source families:
+
+- BP 344 2024 Revised IRR: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf`
+- BP 344 DPWH Accessibility IRR: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/BP-344 IRR Accessibility Law DPWH.pdf`
+- PD 1096 RIRR 2004 DPWH Official: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf`
+- RA 7279 UDHA: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7279/RA 7279 Urban Development and Housing Act 2009.pdf`
+- RA 11201 DHSUD Act: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11201/RA 11201 - DHSUD Act of 2019.pdf`
+- HLURB CLUP GIS Guidebook: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/CLUP GIS GUIDEBOOK HLURB.pdf`
+- Climate-resilient urban planning reference tool: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Reference-Tool-on-Urban-Planning-and-Design-for-Climate-Resilience-for-LGUs-Planning-Actors-in-the-Philippines_readable.pdf`
+- Resilient Urban Design and Development Guidelines: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf`
+- Manila CLUP 2005-2020: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/LGU/623689186-Manila-CLUP-2005-2020.pdf`
+- BGC Design Standards and Guidelines: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/LGU/794422427-BGC-Design-Standards-and-Guidelines.pdf`
+- RA 11285 Energy Efficiency and Conservation Act: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf`
+- DOE Energy Conserving Design Guidelines: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/DOE/DOE Guidelines on Energy Conserving Design on Buildings v2008.pdf`
+- Green Building Illustrated: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/004-Technology/Green Building Illustrated.pdf`
+- Missing unless acquired/identified locally: RA 9442 / RA 7277 / RA 10754 PWD privilege-law source family at `vitruvius-connection/001_Raw-Source-Layer/001-Laws/PWD/RA 9442 RA 7277 RA 10754 PWD Privileges Source Packet.pdf`.
+
+Batch 089 unresolved blockers at this checkpoint: inherited=0; source-family risks are known and must be resolved by local raw-source acquisition/identification, source-safe narrowing, or explicit unresolved blocker recording before final status.
+
+## Batch 089 Post-Batch Completion Checkpoint
+
+- Updated: 2026-05-12T13:36:00+08:00
+- Batch: 089
+- Status: `PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW`
+- Local-only constraints: Supabase push not attempted; deploy not attempted; commit not attempted.
+- Fixed manifest used: `/Users/philiplewis/slatecamp/.ai/03_plans/production-line-batch-089-manifest.json`.
+- Coordination doc read: `/Users/philiplewis/slatecamp/.ai/03_plans/source-audited-production-line-coordination.md`.
+- Inherited blocker status: Batch 088 blockers=0 and accepted at commit `c31d7db15`.
+- Unresolved blockers: 0.
+- Next-batch planning: Since only Batches 087-089 were pre-reserved, do not select Batch 090 here. A new reservation coordinator must reserve 090-092 if blockers=0.
+- Stop condition: Batch 089 complete; this run did not start or reserve Batch 090.
+
+Batch 089 completed article clusters:
+
+| Article ID | Slug | Exact article folder path | Exact improved paths | Exact question-edits path | Scenario status |
+| --- | --- | --- | --- | --- | --- |
+| `1262fe88-bb8f-4005-a9e8-0e8d6c03fe64` | `ra-9442-pwd-privileges-and-incentives` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ra-9442-pwd-privileges-and-incentives--1262fe88-bb8f-4005-a9e8-0e8d6c03fe64` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ra-9442-pwd-privileges-and-incentives--1262fe88-bb8f-4005-a9e8-0e8d6c03fe64/normalized.md`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ra-9442-pwd-privileges-and-incentives--1262fe88-bb8f-4005-a9e8-0e8d6c03fe64/candidate.md`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ra-9442-pwd-privileges-and-incentives--1262fe88-bb8f-4005-a9e8-0e8d6c03fe64/sources.json`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ra-9442-pwd-privileges-and-incentives--1262fe88-bb8f-4005-a9e8-0e8d6c03fe64/source-audit-evidence.json` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ra-9442-pwd-privileges-and-incentives--1262fe88-bb8f-4005-a9e8-0e8d6c03fe64/question-edits` | `eligible-added` |
+| `cd893cd9-7427-4093-bc07-edabf41a6cd7` | `law-qa-deck-ra-7277-9442-10754` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/law-qa-deck-ra-7277-9442-10754--cd893cd9-7427-4093-bc07-edabf41a6cd7` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/law-qa-deck-ra-7277-9442-10754--cd893cd9-7427-4093-bc07-edabf41a6cd7/normalized.md`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/law-qa-deck-ra-7277-9442-10754--cd893cd9-7427-4093-bc07-edabf41a6cd7/candidate.md`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/law-qa-deck-ra-7277-9442-10754--cd893cd9-7427-4093-bc07-edabf41a6cd7/sources.json`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/law-qa-deck-ra-7277-9442-10754--cd893cd9-7427-4093-bc07-edabf41a6cd7/source-audit-evidence.json` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/law-qa-deck-ra-7277-9442-10754--cd893cd9-7427-4093-bc07-edabf41a6cd7/question-edits` | `eligible-added` |
+| `fc0f6b12-8d7e-4309-b83c-daba0863ff30` | `lea-plan-007-06-core-concept` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-06-core-concept--fc0f6b12-8d7e-4309-b83c-daba0863ff30` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-06-core-concept--fc0f6b12-8d7e-4309-b83c-daba0863ff30/normalized.md`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-06-core-concept--fc0f6b12-8d7e-4309-b83c-daba0863ff30/candidate.md`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-06-core-concept--fc0f6b12-8d7e-4309-b83c-daba0863ff30/sources.json`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-06-core-concept--fc0f6b12-8d7e-4309-b83c-daba0863ff30/source-audit-evidence.json` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-06-core-concept--fc0f6b12-8d7e-4309-b83c-daba0863ff30/question-edits` | `eligible-added` |
+| `4bb1957d-f513-47e1-b253-c7cbc65912b3` | `lea-plan-008-02-core-concept` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-02-core-concept--4bb1957d-f513-47e1-b253-c7cbc65912b3` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-02-core-concept--4bb1957d-f513-47e1-b253-c7cbc65912b3/normalized.md`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-02-core-concept--4bb1957d-f513-47e1-b253-c7cbc65912b3/candidate.md`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-02-core-concept--4bb1957d-f513-47e1-b253-c7cbc65912b3/sources.json`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-02-core-concept--4bb1957d-f513-47e1-b253-c7cbc65912b3/source-audit-evidence.json` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-02-core-concept--4bb1957d-f513-47e1-b253-c7cbc65912b3/question-edits` | `eligible-added` |
+| `5d49cedb-dc14-445a-b075-41fe56873081` | `lea-plan-008-03-core-concept` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-03-core-concept--5d49cedb-dc14-445a-b075-41fe56873081` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-03-core-concept--5d49cedb-dc14-445a-b075-41fe56873081/normalized.md`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-03-core-concept--5d49cedb-dc14-445a-b075-41fe56873081/candidate.md`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-03-core-concept--5d49cedb-dc14-445a-b075-41fe56873081/sources.json`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-03-core-concept--5d49cedb-dc14-445a-b075-41fe56873081/source-audit-evidence.json` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-03-core-concept--5d49cedb-dc14-445a-b075-41fe56873081/question-edits` | `eligible-added` |
+
+Batch 089 generated artifacts:
+
+- Report: `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-089-local-first-report.md`
+- Ledger: `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-089-local-first-ledger.json`
+- Scoped checks: `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-089-local-first-scoped-checks.json`
+
+Batch 089 counts:
+
+- Articles completed: 5
+- Linked questions checked: 61
+- Source-safe question edits created: 61
+- Source rows recorded: 15
+- Source evidence claims recorded: 20
+- Unique local raw source families checked: 8
+- Scoped article JSON files parsed: 118
+- Real World Scenario sections added: 5
+
+Batch 089 source evidence:
+
+- `ra-9442-pwd-privileges-and-incentives`: 2024 Revised Implementing Rules and Regulations of BP 344 (NCDA); BP 344 IRR Accessibility Law (DPWH); PD 1096 RIRR 2004 - Revised IRR (DPWH Official).
+- `law-qa-deck-ra-7277-9442-10754`: 2024 Revised Implementing Rules and Regulations of BP 344 (NCDA); BP 344 IRR Accessibility Law (DPWH); PD 1096 RIRR 2004 - Revised IRR (DPWH Official).
+- `lea-plan-007-06-core-concept`: Manila Comprehensive Land Use Plan and Zoning Ordinance 2005-2020; Bonifacio Global City Design Standards and Guidelines; DHSUD Resilient Urban Design and Development Guidelines.
+- `lea-plan-008-02-core-concept`: CLUP GIS Guidebook (HLURB); DHSUD Resilient Urban Design and Development Guidelines.
+- `lea-plan-008-03-core-concept`: DHSUD Resilient Urban Design and Development Guidelines; Bonifacio Global City Design Standards and Guidelines; Manila Comprehensive Land Use Plan and Zoning Ordinance 2005-2020; RA 11285 Energy Efficiency and Conservation Act of 2019.
+- Local export repair: metadata, ui-blocks, and sync-state original hashes were reconciled to current local original.md hashes for four stale Batch 089 folders before final diff validation.
+
+Batch 089 blocker resolution notes:
+
+- The two PWD-law decks were resolved by source-safe narrowing. RA 7277/RA 9442/RA 10754/RA 10524/BIR privilege-law, discount, VAT, employment quota, tax incentive, and penalty claims were removed from article candidates and question edits because no matching local raw source packet was available.
+- Accessibility design claims were retained only where supported by local BP 344 and PD 1096 raw-source packets.
+- Planning decks were narrowed to local Manila CLUP, BGC, HLURB GIS, DHSUD resilient urban design, and RA 11285 support.
+
+Batch 089 quality protocol results:
+
+- `bun run content-audit:compose -- --article-id <id> --overwrite`: PASS, 5/5 composed, blockers=0.
+- `bun run content-audit:diff -- --article-id <id> --summary`: PASS, 5/5 safe_to_push=true, blockers=0.
+- `bun run content-audit:validate -- --article-id <id> --summary`: PASS, 5/5 valid, blockers=0; component-usage warning only.
+- `bun run content-audit:ui-block-edits -- --article-id <id>`: PASS, 5/5 valid, blockers=0, warnings=0.
+- Scoped JSON parse, candidate placeholder/internal-note/source scan, non-original scan, source hash checks, source-audit-evidence gate, linked-question/question-edit count checks, and stale compose-error scan: PASS in scoped checks artifact.
+- `bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts`: PASS, 34 pass, 0 fail, 328 expect calls.
+- Scoped `git diff --check`: PASS after this handoff update.
+
+Batch 089 scenario enrichment results:
+
+- `eligible-added`: 5
+- `eligible-deferred`: 0
+- `not-applicable`: 0
+- Scenario sections were added only where supported by the local raw/source evidence selected for the article cluster.
+
+Batch 089 final state:
+
+- Status: `PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW`
+- Blockers: 0
+- Stop condition: Batch 089 complete; do not start or reserve Batch 090 in this run.

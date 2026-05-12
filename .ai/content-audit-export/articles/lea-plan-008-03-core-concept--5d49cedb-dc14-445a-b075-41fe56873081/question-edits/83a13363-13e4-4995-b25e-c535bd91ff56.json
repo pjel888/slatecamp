@@ -1,0 +1,85 @@
+{
+  "question_id": "83a13363-13e4-4995-b25e-c535bd91ff56",
+  "baseline_hash": "sha256:5c176d769266d5d457d5d45e57815d1a25f90a98dbb2f5c875460cc31277554b",
+  "action": "replace",
+  "reason": "source-audited-article-batch-089-local-first aligned linked question with audited local sources for lea-plan-008-03-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-089",
+  "approved_at": "2026-05-12T10:35:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "5d49cedb-dc14-445a-b075-41fe56873081",
+    "parent_article_slug": "lea-plan-008-03-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 11285",
+    "checked_markdown_lines": [
+      "refined markdown lines 41-66 and 260-330",
+      "refined markdown lines 328-432 and 3997-4005",
+      "refined markdown lines 157-180, 737-775, 6988, 12778, 12962-13002",
+      "refined markdown lines 291-307 and 761-824"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "dhsud-resilient-urban-design-guidelines",
+        "label": "DHSUD Resilient Urban Design and Development Guidelines",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf",
+        "sha256": "sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.md",
+        "raw_markdown_sha256": "sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7",
+        "locator": "refined markdown lines 41-66 and 260-330"
+      },
+      {
+        "source_id": "bgc-design-standards-and-guidelines",
+        "label": "Bonifacio Global City Design Standards and Guidelines",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/LGU/794422427-BGC-Design-Standards-and-Guidelines.pdf",
+        "sha256": "sha256:299dc47bbfee73c5ba6ae5314d766ac3516473de16126d01e3fd3f01ed5f08b8",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/LGU/794422427-BGC-Design-Standards-and-Guidelines.md",
+        "raw_markdown_sha256": "sha256:436d0c23d4293629851795603dd9b6cbbf10316fe88ba7fd3fe996f345ba4a43",
+        "locator": "refined markdown lines 328-432 and 3997-4005"
+      },
+      {
+        "source_id": "manila-clup-2005-2020",
+        "label": "Manila Comprehensive Land Use Plan and Zoning Ordinance 2005-2020",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/LGU/623689186-Manila-CLUP-2005-2020.pdf",
+        "sha256": "sha256:ddb57c586655fba0e1a9feddc7d7a304a79bef4bb2f5831bc4ad34e250b42fbe",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/LGU/623689186-Manila-CLUP-2005-2020.md",
+        "raw_markdown_sha256": "sha256:6e8c4e219734aa77af8f1ab581867dbb81d2ae6feb3ec99e2990a64bafeb6a68",
+        "locator": "refined markdown lines 157-180, 737-775, 6988, 12778, 12962-13002"
+      },
+      {
+        "source_id": "ra-11285-energy-efficiency-conservation-act",
+        "label": "RA 11285 Energy Efficiency and Conservation Act of 2019",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.pdf",
+        "sha256": "sha256:316c6afbb15fd2b54ab7e511f43c0bef24dfd8c5e8d935233c8985d2870d0cb8",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-11285/RA 11285 - Energy Efficiency and Conservation Act 2019.md",
+        "raw_markdown_sha256": "sha256:d2baa0e8d4ffe0059688783a4d31ac0e121517daca939f18a048fe053e76cdd4",
+        "locator": "refined markdown lines 291-307 and 761-824"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the local source-audited article scope."
+  },
+  "proposed": {
+    "text": "How does RA 11285 support sustainable planning and building operations?",
+    "options": [
+      {
+        "id": "A",
+        "text": "By requiring efficient energy use and conservation measures"
+      },
+      {
+        "id": "B",
+        "text": "By setting ramp slope"
+      },
+      {
+        "id": "C",
+        "text": "By creating PWD discounts"
+      },
+      {
+        "id": "D",
+        "text": "By approving zoning maps"
+      }
+    ],
+    "correct_option_id": "A",
+    "rationale": "RA 11285 requires energy users to use resources efficiently and supports energy efficiency and conservation measures.",
+    "explanation": "RA 11285 requires energy users to use resources efficiently and supports energy efficiency and conservation measures.",
+    "code_citation": "RA 11285"
+  }
+}

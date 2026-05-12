@@ -1,0 +1,65 @@
+{
+  "question_id": "2e21964b-43d2-4671-88ef-0803c2ff3399",
+  "baseline_hash": "sha256:46da656a5d5ac554ba5ba77a6ecb4c96da923aa0004c2c4ba8b6f6acb86b34e0",
+  "action": "replace",
+  "reason": "source-audited-article-batch-089-local-first aligned linked question with audited local sources for lea-plan-008-02-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-089",
+  "approved_at": "2026-05-12T10:35:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
+    "parent_article_slug": "lea-plan-008-02-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "CLUP GIS Guidebook HLURB",
+    "checked_markdown_lines": [
+      "refined markdown lines 676-716, 1036-1074, and 1334-1370",
+      "refined markdown lines 41-66 and 260-330"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "clup-gis-guidebook-hlurb",
+        "label": "CLUP GIS Guidebook (HLURB)",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/CLUP GIS GUIDEBOOK HLURB.pdf",
+        "sha256": "sha256:761d92030e97ea4ee4604de76df6dce49334f35b03e6bb411617f6943f8f788f",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/CLUP GIS GUIDEBOOK HLURB.md",
+        "raw_markdown_sha256": "sha256:885dfbb2b28b045cc8d395fc7278f52d429973bd1d9006e7b8f1f7238ed10c06",
+        "locator": "refined markdown lines 676-716, 1036-1074, and 1334-1370"
+      },
+      {
+        "source_id": "dhsud-resilient-urban-design-guidelines",
+        "label": "DHSUD Resilient Urban Design and Development Guidelines",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf",
+        "sha256": "sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.md",
+        "raw_markdown_sha256": "sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7",
+        "locator": "refined markdown lines 41-66 and 260-330"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the local source-audited article scope."
+  },
+  "proposed": {
+    "text": "How should a smart planning workflow treat GIS outputs?",
+    "options": [
+      {
+        "id": "A",
+        "text": "As evidence to guide planner judgment and stakeholder discussion"
+      },
+      {
+        "id": "B",
+        "text": "As automatic final zoning approval"
+      },
+      {
+        "id": "C",
+        "text": "As a replacement for CLUP and ZO"
+      },
+      {
+        "id": "D",
+        "text": "As unrelated to local government planning"
+      }
+    ],
+    "correct_option_id": "A",
+    "rationale": "GIS supports analysis and presentation, but planners still synthesize, negotiate, and decide through CLUP processes.",
+    "explanation": "GIS supports analysis and presentation, but planners still synthesize, negotiate, and decide through CLUP processes.",
+    "code_citation": "CLUP GIS Guidebook HLURB"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "target": {
+    "article_id": "1262fe88-bb8f-4005-a9e8-0e8d6c03fe64",
+    "slug": "ra-9442-pwd-privileges-and-incentives",
+    "candidate_sha256": "sha256:47799446e7c5a06e4540d47059d0769a0b8f78ef07c9ed4593bd0dfe021bf3d3",
+    "batch_number": "089"
+  },
+  "classification": {
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "primary_truth": "vitruvius-connection/001_Raw-Source-Layer",
+    "supplemental_internet_used": false
+  },
+  "scenario_enrichment": {
+    "status": "added",
+    "result": "source_safe_exam_useful_real_world_scenario_added",
+    "reason": "Scenario uses only local source-supported planning or accessibility claims."
+  },
+  "claims": [
+    {
+      "claim_id": "batch089-ra-9442-pwd-privileges-and-incentives-claim-01",
+      "audit_result": "PASS",
+      "claim": "Article and linked question edits were narrowed to claims supported by the listed local raw source packet.",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "raw_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+        "locator": "refined markdown lines 32-95 and 650-725",
+        "quoted_pdf_excerpt": "Accessible ramps have minimum clear width of 1200 mm; sidewalks/walkways have minimum width of 1500 mm and 1800 mm where two wheelchairs must pass."
+      }
+    },
+    {
+      "claim_id": "batch089-ra-9442-pwd-privileges-and-incentives-claim-02",
+      "audit_result": "PASS",
+      "claim": "Supporting source BP 344 IRR Accessibility Law (DPWH) checked for this article scope.",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/BP-344 IRR Accessibility Law DPWH.pdf",
+        "raw_pdf_sha256": "sha256:7fe6c2de016c0640002029b089c0468a6e0bcb5856be722c93acc97fadf19618",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/BP-344 IRR Accessibility Law DPWH.md",
+        "raw_markdown_sha256": "sha256:16660ed8a24551d2bcde8e66d051a7e538dc19425651c6bb839df16dc739bad3",
+        "locator": "refined markdown Appendix A, accessibility requirements for dropped curbs, walkways, parking, entrances, and ramps",
+        "quoted_pdf_excerpt": "Appendix A states minimum requirements for accessibility including dropped curbs, walkways, parking areas, entrances, and ramps."
+      }
+    },
+    {
+      "claim_id": "batch089-ra-9442-pwd-privileges-and-incentives-claim-03",
+      "audit_result": "PASS",
+      "claim": "Supporting source PD 1096 RIRR 2004 - Revised IRR (DPWH Official) checked for this article scope.",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "locator": "refined markdown lines 6040-6145",
+        "quoted_pdf_excerpt": "PD 1096 Appendix A lists accessibility requirements including walkways, handrails, signs, crossings, parking, entrances, and ramps."
+      }
+    },
+    {
+      "claim_id": "batch089-ra-9442-pwd-privileges-and-incentives-linked-questions",
+      "audit_result": "PASS",
+      "claim": "20 linked question edits created and rewritten to the same local source-safe scope.",
+      "question_ids": [
+        "bdd56476-63bf-4798-90ac-1a1709d2af54",
+        "b25a26d0-821d-433b-8e07-8db832ccb64a",
+        "6a60472f-261f-4a92-b760-52543f15464a",
+        "8f02020f-2932-4b4e-95ba-d30bdecae193",
+        "ee96cec5-730b-4940-9da4-7a0d7587fdff",
+        "b486bf24-76ff-4c3a-b1e2-d1070d253bea",
+        "ddd94c88-fee7-4167-a8eb-370a02061d26",
+        "5fd55ca3-eeae-48a0-b499-0d860bac7549",
+        "025e8d23-e547-4895-8d31-571ab8ce9da5",
+        "8ab6f7c5-83cc-4399-b4c8-8b4e203d8b76",
+        "38084209-a2c4-4df8-849a-0b9f3818dbf8",
+        "dcac97cf-7104-4326-b307-0a28c737c1f2",
+        "bba80f31-9296-4517-9b87-fba75b1f934b",
+        "a9044a5c-aa7d-485b-9086-77156a855abf",
+        "3ef000b7-cb0b-47f1-a724-44f572d7a948",
+        "184d680c-bcf2-4989-9a1f-e5b4223e3fd5",
+        "24561889-65bb-4d12-8806-4aabadbdaa4b",
+        "397c79f0-aee3-422c-ac86-cb369e20cc10",
+        "1cabeaa0-af66-4332-ab04-941f9c594150",
+        "5e495aca-f627-4ad3-a500-0b2e55f7e414"
+      ],
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "raw_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+        "locator": "refined markdown lines 32-95 and 650-725",
+        "quoted_pdf_excerpt": "Accessible ramps have minimum clear width of 1200 mm; sidewalks/walkways have minimum width of 1500 mm and 1800 mm where two wheelchairs must pass."
+      }
+    }
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "source_resolution_notes": [
+    "Manifest blocker resolved by source-safe narrowing: local RA 7277/9442/10754/10524/BIR source packet was not available, so benefit-law, discount, VAT, tax, employment, and penalty claims were removed from article and linked question edits.",
+    "Accessibility design claims are retained only where supported by local BP 344 and PD 1096 raw-source files."
+  ],
+  "unverified_or_rejected_claims": [],
+  "sme_review": {
+    "required": false,
+    "status": "not_required"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}

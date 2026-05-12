@@ -1,0 +1,158 @@
+{
+  "batch_number": "089",
+  "generated_at": "2026-05-12T13:32:00+08:00",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "blockers": 0,
+  "article_ids": [
+    "1262fe88-bb8f-4005-a9e8-0e8d6c03fe64",
+    "cd893cd9-7427-4093-bc07-edabf41a6cd7",
+    "fc0f6b12-8d7e-4309-b83c-daba0863ff30",
+    "4bb1957d-f513-47e1-b253-c7cbc65912b3",
+    "5d49cedb-dc14-445a-b075-41fe56873081"
+  ],
+  "article_folders": [
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ra-9442-pwd-privileges-and-incentives--1262fe88-bb8f-4005-a9e8-0e8d6c03fe64",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/law-qa-deck-ra-7277-9442-10754--cd893cd9-7427-4093-bc07-edabf41a6cd7",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-06-core-concept--fc0f6b12-8d7e-4309-b83c-daba0863ff30",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-02-core-concept--4bb1957d-f513-47e1-b253-c7cbc65912b3",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-03-core-concept--5d49cedb-dc14-445a-b075-41fe56873081"
+  ],
+  "question_edits_paths": [
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ra-9442-pwd-privileges-and-incentives--1262fe88-bb8f-4005-a9e8-0e8d6c03fe64/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/law-qa-deck-ra-7277-9442-10754--cd893cd9-7427-4093-bc07-edabf41a6cd7/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-06-core-concept--fc0f6b12-8d7e-4309-b83c-daba0863ff30/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-02-core-concept--4bb1957d-f513-47e1-b253-c7cbc65912b3/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-03-core-concept--5d49cedb-dc14-445a-b075-41fe56873081/question-edits"
+  ],
+  "checks": {
+    "compose": {
+      "status": "PASS",
+      "articles": [
+        {
+          "article_id": "1262fe88-bb8f-4005-a9e8-0e8d6c03fe64",
+          "blockers": 0,
+          "candidate_hash": "sha256:47799446e7c5a06e4540d47059d0769a0b8f78ef07c9ed4593bd0dfe021bf3d3"
+        },
+        {
+          "article_id": "cd893cd9-7427-4093-bc07-edabf41a6cd7",
+          "blockers": 0,
+          "candidate_hash": "sha256:f5e0a9454cc769319a0ee76dda4d63bb4d9f1fc2bcf33e8fe15435b642e82b5d"
+        },
+        {
+          "article_id": "fc0f6b12-8d7e-4309-b83c-daba0863ff30",
+          "blockers": 0,
+          "candidate_hash": "sha256:4315a9d07c645b8ec74ac220c7f6b159290794838cc311be5d4022b38634ede1"
+        },
+        {
+          "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
+          "blockers": 0,
+          "candidate_hash": "sha256:b5ab1a1c64068f7f743e870fba0921c94673bab61665e72fcb8a77259b54e65c"
+        },
+        {
+          "article_id": "5d49cedb-dc14-445a-b075-41fe56873081",
+          "blockers": 0,
+          "candidate_hash": "sha256:79a0f1b0f0f43d5633c796338e413193c6f44ef0579e31ea124eb66a8bf7dd40"
+        }
+      ]
+    },
+    "diff": {
+      "status": "PASS",
+      "articles": [
+        {
+          "article_id": "1262fe88-bb8f-4005-a9e8-0e8d6c03fe64",
+          "safe_to_push": true,
+          "blockers": []
+        },
+        {
+          "article_id": "cd893cd9-7427-4093-bc07-edabf41a6cd7",
+          "safe_to_push": true,
+          "blockers": []
+        },
+        {
+          "article_id": "fc0f6b12-8d7e-4309-b83c-daba0863ff30",
+          "safe_to_push": true,
+          "blockers": []
+        },
+        {
+          "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
+          "safe_to_push": true,
+          "blockers": []
+        },
+        {
+          "article_id": "5d49cedb-dc14-445a-b075-41fe56873081",
+          "safe_to_push": true,
+          "blockers": []
+        }
+      ]
+    },
+    "validate": {
+      "status": "PASS",
+      "blockers": 0,
+      "warnings": "component-usage warning only"
+    },
+    "ui_block_edit_validation": {
+      "status": "PASS",
+      "blockers": 0,
+      "warnings": 0
+    },
+    "scoped_json_parse": {
+      "status": "PASS",
+      "json_files": 118
+    },
+    "candidate_placeholder_internal_note_source_scan": {
+      "status": "PASS",
+      "findings": []
+    },
+    "normalized_ui_placeholders": {
+      "status": "PASS",
+      "files_with_placeholders": [
+        ".ai/content-audit-export/articles/law-qa-deck-ra-7277-9442-10754--cd893cd9-7427-4093-bc07-edabf41a6cd7/normalized.md"
+      ],
+      "note": "Only normalized.md may contain owned UI placeholders when matching ui-blocks.json blocks exist; candidates must not."
+    },
+    "non_original_internal_note_source_scan": {
+      "status": "PASS",
+      "findings": []
+    },
+    "stale_compose_error_scan": {
+      "status": "PASS",
+      "stale_files": []
+    },
+    "question_edit_counts": {
+      "status": "PASS",
+      "expected_questions": 61,
+      "actual_question_edits": 61,
+      "missing_expected_edit_paths": []
+    },
+    "source_hash_checks": {
+      "status": "PASS",
+      "failures": []
+    },
+    "source_audit_evidence_gate": {
+      "status": "PASS",
+      "failures": []
+    },
+    "manifest_scope": {
+      "status": "PASS",
+      "improved_article_folders": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ra-9442-pwd-privileges-and-incentives--1262fe88-bb8f-4005-a9e8-0e8d6c03fe64",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/law-qa-deck-ra-7277-9442-10754--cd893cd9-7427-4093-bc07-edabf41a6cd7",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-007-06-core-concept--fc0f6b12-8d7e-4309-b83c-daba0863ff30",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-02-core-concept--4bb1957d-f513-47e1-b253-c7cbc65912b3",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-008-03-core-concept--5d49cedb-dc14-445a-b075-41fe56873081"
+      ]
+    },
+    "targeted_tests": {
+      "status": "PASS",
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "pass": 34,
+      "fail": 0,
+      "expects": 328
+    },
+    "scoped_git_diff_check": {
+      "status": "PASS",
+      "command": "git diff --check -- .ai/content-audit-export .ai/03_plans/source-audited-local-first-batches-handoff.md",
+      "note": "Passed after final artifact and handoff updates."
+    }
+  }
+}

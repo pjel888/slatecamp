@@ -1,0 +1,75 @@
+{
+  "question_id": "a9044a5c-aa7d-485b-9086-77156a855abf",
+  "baseline_hash": "sha256:938086c2ba2d97ac8855421655deefbe9e94ff2ff90279afaa8a8f3f159b4377",
+  "action": "replace",
+  "reason": "source-audited-article-batch-089-local-first aligned linked question with audited local sources for ra-9442-pwd-privileges-and-incentives.",
+  "approved_by": "codex-local-source-audit-batch-089",
+  "approved_at": "2026-05-12T10:35:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "1262fe88-bb8f-4005-a9e8-0e8d6c03fe64",
+    "parent_article_slug": "ra-9442-pwd-privileges-and-incentives",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "Batch 089 local-source audit decision",
+    "checked_markdown_lines": [
+      "refined markdown lines 32-95 and 650-725",
+      "refined markdown Appendix A, accessibility requirements for dropped curbs, walkways, parking, entrances, and ramps",
+      "refined markdown lines 6040-6145"
+    ],
+    "checked_sources": [
+      {
+        "source_id": "bp-344-2024-revised-irr-ncda",
+        "label": "2024 Revised Implementing Rules and Regulations of BP 344 (NCDA)",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+        "sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "raw_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
+        "locator": "refined markdown lines 32-95 and 650-725"
+      },
+      {
+        "source_id": "bp-344-irr-accessibility-law-dpwh",
+        "label": "BP 344 IRR Accessibility Law (DPWH)",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/BP-344 IRR Accessibility Law DPWH.pdf",
+        "sha256": "sha256:7fe6c2de016c0640002029b089c0468a6e0bcb5856be722c93acc97fadf19618",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/BP-344 IRR Accessibility Law DPWH.md",
+        "raw_markdown_sha256": "sha256:16660ed8a24551d2bcde8e66d051a7e538dc19425651c6bb839df16dc739bad3",
+        "locator": "refined markdown Appendix A, accessibility requirements for dropped curbs, walkways, parking, entrances, and ramps"
+      },
+      {
+        "source_id": "pd-1096-rirr-2004-dpwh-official",
+        "label": "PD 1096 RIRR 2004 - Revised IRR (DPWH Official)",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "locator": "refined markdown lines 6040-6145"
+      }
+    ],
+    "local_source_safe_action": "Question text/options/rationale rewritten to the local source-audited article scope."
+  },
+  "proposed": {
+    "text": "What should an architect do with PWD discount, VAT, employment quota, tax incentive, or penalty claims when the local RA/BIR source packet is unavailable?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Answer from memory"
+      },
+      {
+        "id": "B",
+        "text": "Use BP 344 dimensions as proof of those benefits"
+      },
+      {
+        "id": "C",
+        "text": "Defer or narrow the item until the local law packet is acquired"
+      },
+      {
+        "id": "D",
+        "text": "Delete all accessibility design checks"
+      }
+    ],
+    "correct_option_id": "C",
+    "rationale": "Privilege-law claims require their own verified local source packet; the safe batch action is to defer those claims or narrow to locally supported accessibility design.",
+    "explanation": "Privilege-law claims require their own verified local source packet; the safe batch action is to defer those claims or narrow to locally supported accessibility design.",
+    "code_citation": "Batch 089 local-source audit decision"
+  }
+}

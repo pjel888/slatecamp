@@ -1,70 +1,40 @@
-
+# Philippine Planning Lineage - Burnham, CLUP, and Contemporary Urban Design
 
 ## Board Exam Quick Check
 
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
-
-**Common mistake:** treating a familiar keyword in **Lea Plan 007 06 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
-
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
-## What You Need to Know for the LEA
+Anchor planning-history answers to a source-supported contribution. In this audited version, the strongest local source support is for Daniel Hudson Burnham in Manila's planning tradition, Palafox Associates as consultant in the Manila CLUP, BGC's mixed-use and pedestrian planning standards, and DHSUD's contemporary resilient urban design guidance.
 
 ## Learning Goal
-Identify key figures in Philippine planning — Daniel Burnham (Plan of Manila 1905), Juan Arellano, Felino Palafox Jr., and others — by their contributions, disciplines, and eras, and distinguish international from Filipino practitioners.
 
-Philippine planning and architecture has been shaped by both international figures working in the Philippines and Filipino professionals who established local practice. Understanding these key figures—their contributions, disciplines, and the eras in which they worked—is essential for the LEA planning history context.
+After reading this article, you should be able to connect Manila's Burnham-era civic and open-space planning to later CLUP and private-district planning tools, then identify how contemporary Philippine planning tests mixed use, pedestrian networks, transit access, and resilient urban design.
 
-## Core Concept
+## Burnham and Manila's Planning Memory
 
-**Daniel Burnham** (1846–1912), an American architect and city planner, designed the 1905 _Plan of Manila_ and the Plan of Baguio, foundational to Philippine urban planning. Though not Filipino, Burnham's work established the City Beautiful Movement aesthetic in the Philippines. The Burnham Plan of Manila envisioned grand civic spaces (Luneta), diagonal boulevards (Taft Avenue), and monumental architecture—principles that shaped Manila's early 20th-century development.
+The Manila CLUP identifies Daniel Hudson Burnham as the city's first urban planner and uses Burnham's planning language as a civic reference point. It also connects Manila's waterfront, road structure, open spaces, and later walkability proposals to the Burnham planning legacy. For LEA purposes, Burnham is the safe anchor for City Beautiful influence, civic imageability, waterfront emphasis, major avenues, and connected open spaces in Manila.
 
-**Ildefonso P. Santos Jr.** (1924–2015) was the National Artist for Landscape Architecture (2006) and a pioneering landscape architect. He established landscape architecture as a recognized profession in the Philippines, elevated the discipline's standards, and demonstrated how landscape design integrates with urban planning and architecture. His work emphasized Philippine vernacular sensibility and climate-responsive design.
+## From Civic Monumentality to CLUP Implementation
 
-**Antonio Toledo** was the first Filipino city planner, developing planning frameworks and establishing planning practice in the postwar Philippines (1950s–1970s). He was instrumental in profionalizing urban planning as a distinct discipline separate from architecture.
+Modern planning questions should not stop at names. The Manila CLUP translates heritage, waterfront, university-belt, transport, mixed-use, and pedestrian issues into development thrusts. It treats mixed use as a planning strategy because compatible uses can share facilities, improve convenience, reduce infrastructure cost, encourage pedestrian activity, and reduce fuel use.
 
-**Felino Palafox Jr.** is the leading contemporary Philippine urban planner and architect. His master plans for Bonifacio Global City (BGC), numerous provincial capitals, and local government comprehensive plans shape Philippine urbanism today. Palafox emphasizes mixed-use development, pedestrian-friendly design, and strategic growth corridors.
+This is the practical shift tested in LEA questions: early civic-image planning becomes contemporary land-use control, transport coordination, pedestrian improvement, and urban renewal through the CLUP and zoning ordinance.
 
-**Jorge Yupangco** is known for waterway rehabilitation planning, addressing Manila's critical waterway ecosystem challenges.
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-plan-007-06-core-concept", type="image", caption="Philippine Planning Figures — Burnham to Palafox Timeline", description="Timeline of key figures in Philippine planning: Daniel Burnham (Plan of Manila 1905, City Beautiful), Juan Arellano (Burnham's collaborator, Philippine neoclassical), Felino Palafox Jr. (contemporary tropical urbanism, Palafox master plans), and other contributors by era.", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+## Contemporary Mixed-Use District Planning
 
-## Key Provisions
+The BGC Design Standards and Guidelines give a local example of contemporary district-scale planning. BGC is described as 440 hectares in a strategic Metro Manila location, with districts planned for business, institutional, residential, retail, entertainment, mixed-use, and multi-modal station functions. The guidelines also require pedestrian plans showing movement at grade and, where needed, above or below grade.
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
-Extracted summary:
-- Props: headers="{[\"Figure\", \"Era / Discipline\", \"Key Contribution\", \"Philippine Impact\"]}", rows=true, Daniel=true, Burnham=true, American=true, City=true, Beautiful=true, Movement=true, Plan=true, of=true, Manila=true, Baguio=true
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+## Resilient Urban Design Layer
 
-## Philippine Context
+DHSUD's resilient urban design guidance brings contemporary planning into climate and disaster-risk conditions. It frames CLUP and zoning as tools for green and resilient urban renewal, and it identifies compact, mixed-use, and transit-oriented development as strategies linked to resilience, livability, and sustainability.
 
-The transition from Burnham (colonial American planning, 1905) to Filipino planners (Toledo, Palafox) represents the professionalization of planning in the Philippines. Modern Philippine planning practice combines international best practices (New Urbanism, transit-oriented development) with Filipino context (tropical climate, waterway systems, community participation). Palafox's BGC master plan is a case study in applying contemporary planning principles to Philippine urban development.
+## Real World Scenario
 
-## How It's Tested
+A city preparing a waterfront renewal plan can use Burnham as the historical reference for civic imageability and connected open space, but the working plan still needs CLUP-based land-use controls, pedestrian networks, transit access, public realm improvements, and resilient design checks. A source-safe LEA answer should name the planning idea and then identify the local plan or guideline that operationalizes it.
 
-1. **Attribution:** "Who designed the 1905 Plan of Manila?" → Burnham. "Who is the National Artist for Landscape Architecture?" → Ildefonso P. Santos Jr.
-2. **Era identification:** "Which figure pioneered planning as a distinct profession in postwar Philippines?" → Antonio Toledo.
-3. **Contemporary practice:** "Whose plans emphasize walkability and mixed-use development in Philippine context?" → Felino Palafox Jr.
+## LEA Recall
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Memory aid:** Burnham = 1905 Manila (American). Santos = landscape artist (National Artist). Toledo = first Filipino planner. Palafox = contemporary walkability. Yupangco = waterways.
-[/SLATECAMP_UI_BLOCK]
-
-**Exam Tip:** Must know: Daniel Burnham (1905, Plan of Manila + Baguio), Juan Arellano (post-Burnham architect, Manila Post Office, National Museum), Felino Palafox Jr. (contemporary, mixed-use master plans). Other figures tested less frequently.
-
-## Cross-References
-
-See **LEA-PLAN-001-03** (Philippine Planning History) for historical context, **LEA-PLAN-001-01** (Planning Fundamentals) for international theorist comparison, and **LEA-PLAN-007-07** (Professional Organizations) for professional practice context.
-
-## Common Mistakes
-
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\"Stating Olmsted designed either plan—Burnham designed both the Manila plan (1905) and the Baguio plan; Olmsted was not involved in either Philippine project\", \"Attributing Burnham's Plan of Manila to a Filipino architect—Burnham was American, but his work is foundational to Philippine planning\", \"Forgetting that Ildefonso P. Santos Jr. was a National Artist—his recognition as artist was for his landscape architecture contributions\", \"Confusing Antonio Toledo (first planner) with other figures—Toledo's era was postwar (1950s–70s)\", \"Omitting Felino Palafox's contemporary relevance—Palafox's work is directly applicable to current Philippine planning issues\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+| Cue | Source-safe response |
+| --- | --- |
+| First urban planner of Manila / Burnham plan | Daniel Hudson Burnham, supported by the Manila CLUP |
+| Mixed-use and pedestrian district standards | BGC Design Standards and Guidelines |
+| CLUP implementation and land-use control | Manila CLUP / HLURB-DHSUD planning guidance |
+| Contemporary resilience layer | DHSUD Resilient Urban Design and Development Guidelines |

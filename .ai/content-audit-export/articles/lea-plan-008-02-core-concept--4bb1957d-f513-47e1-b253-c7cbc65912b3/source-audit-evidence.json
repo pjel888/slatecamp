@@ -1,0 +1,94 @@
+{
+  "target": {
+    "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
+    "slug": "lea-plan-008-02-core-concept",
+    "candidate_sha256": "sha256:b5ab1a1c64068f7f743e870fba0921c94673bab61665e72fcb8a77259b54e65c",
+    "batch_number": "089"
+  },
+  "classification": {
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "primary_truth": "vitruvius-connection/001_Raw-Source-Layer",
+    "supplemental_internet_used": false
+  },
+  "scenario_enrichment": {
+    "status": "added",
+    "result": "source_safe_exam_useful_real_world_scenario_added",
+    "reason": "Scenario uses only local source-supported planning or accessibility claims."
+  },
+  "claims": [
+    {
+      "claim_id": "batch089-lea-plan-008-02-core-concept-claim-01",
+      "audit_result": "PASS",
+      "claim": "Article and linked question edits were narrowed to claims supported by the listed local raw source packet.",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/CLUP GIS GUIDEBOOK HLURB.pdf",
+        "raw_pdf_sha256": "sha256:761d92030e97ea4ee4604de76df6dce49334f35b03e6bb411617f6943f8f788f",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/CLUP GIS GUIDEBOOK HLURB.md",
+        "raw_markdown_sha256": "sha256:885dfbb2b28b045cc8d395fc7278f52d429973bd1d9006e7b8f1f7238ed10c06",
+        "locator": "refined markdown lines 676-716, 1036-1074, and 1334-1370",
+        "quoted_pdf_excerpt": "The GIS Cookbook guides CLUP preparation through GIS as a planning and information management tool and produces geographic information products for participatory CLUP formulation."
+      }
+    },
+    {
+      "claim_id": "batch089-lea-plan-008-02-core-concept-claim-02",
+      "audit_result": "PASS",
+      "claim": "Supporting source DHSUD Resilient Urban Design and Development Guidelines checked for this article scope.",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf",
+        "raw_pdf_sha256": "sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.md",
+        "raw_markdown_sha256": "sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7",
+        "locator": "refined markdown lines 41-66 and 260-330",
+        "quoted_pdf_excerpt": "DHSUD frames resilient urban design around CLUP/ZO, evidence-based planning, compact mixed-use and transit-oriented development, and green resilient strategies."
+      }
+    },
+    {
+      "claim_id": "batch089-lea-plan-008-02-core-concept-linked-questions",
+      "audit_result": "PASS",
+      "claim": "10 linked question edits created and rewritten to the same local source-safe scope.",
+      "question_ids": [
+        "072c90a5-e8bc-4b40-807d-724b8b1dda68",
+        "98f11a94-64f3-45da-bb3c-1cb1a297b346",
+        "67e46ca4-3ed3-4172-9eb0-3fac72beb1ac",
+        "d47c0aaf-a0bc-4af3-a0b4-2b2f956ea5df",
+        "2e21964b-43d2-4671-88ef-0803c2ff3399",
+        "f5785968-ecc8-4776-8bdd-006dc42a8ffe",
+        "4e5ff8fd-644a-4e54-b257-dd5fabf12fa3",
+        "5fc8bb23-e697-4e5b-bd9a-7e9e8c78cc96",
+        "78dc6325-e27a-4334-a859-86b304fc7ad3",
+        "7fcd5545-d063-4637-82a7-000e941fdb23"
+      ],
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/CLUP GIS GUIDEBOOK HLURB.pdf",
+        "raw_pdf_sha256": "sha256:761d92030e97ea4ee4604de76df6dce49334f35b03e6bb411617f6943f8f788f",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/CLUP GIS GUIDEBOOK HLURB.md",
+        "raw_markdown_sha256": "sha256:885dfbb2b28b045cc8d395fc7278f52d429973bd1d9006e7b8f1f7238ed10c06",
+        "locator": "refined markdown lines 676-716, 1036-1074, and 1334-1370",
+        "quoted_pdf_excerpt": "The GIS Cookbook guides CLUP preparation through GIS as a planning and information management tool and produces geographic information products for participatory CLUP formulation."
+      }
+    }
+  ],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "source_resolution_notes": [
+    "Article scope retained only where supported by listed local raw-source packets."
+  ],
+  "unverified_or_rejected_claims": [],
+  "sme_review": {
+    "required": false,
+    "status": "not_required"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  }
+}
