@@ -1,0 +1,290 @@
+{
+  "batch_number": "094",
+  "manifest_status": "reserved_pre_start_not_complete",
+  "reserved_at": "2026-05-12T12:13:57+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "branch": "main",
+  "baseline_commit": "f8956b5bf",
+  "selection_rule": "Reserve five unpassed high-value LEA RA 9266 professional law and liability clusters with linked questions and exact readable local raw PDFs under /Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer, excluding article IDs recorded in source-audited Batches 001-092 reports, ledgers, scoped checks, dated recovery artifacts, and the local-first handoff. Prefer RA 9266 and Civil Code articles with well-established legal source families.",
+  "inherited_blocker_status": "Batch 092 blockers=0; Batch 094 is reserved only and not complete.",
+  "prior_batch_exclusion_check": {
+    "status": "PASS",
+    "exclusion_source": "Batches 001-092 source-audited ledgers, reports, scoped checks, dated blocker/recovery artifacts, and source-audited-local-first-batches-handoff.md",
+    "excluded_article_id_count": 205,
+    "selected_article_count": 5,
+    "selected_ids_found_in_exclusion_set": []
+  },
+  "selected_article_uuids_slugs": [
+    {
+      "article_id": "02a5ba32-0443-4162-837d-326783ed77a2",
+      "slug": "lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions"
+    },
+    {
+      "article_id": "7e511a5d-edb1-4622-8f0f-29c1a631c145",
+      "slug": "lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not"
+    },
+    {
+      "article_id": "3d48211b-8add-4934-8dab-ae8bdae74035",
+      "slug": "lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement"
+    },
+    {
+      "article_id": "6dc813a9-913d-47b5-9203-f59e8e909869",
+      "slug": "lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework"
+    },
+    {
+      "article_id": "17b95df0-6bea-43c6-ab03-2b82a358caa6",
+      "slug": "lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi"
+    }
+  ],
+  "counts": {
+    "selected_articles": 5,
+    "linked_questions_expected": 50,
+    "question_edits_expected": 50
+  },
+  "article_clusters": [
+    {
+      "article_id": "02a5ba32-0443-4162-837d-326783ed77a2",
+      "slug": "lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions",
+      "subject": "LEA-PRAC - Professional Practice and Law",
+      "linked_question_count": 10,
+      "source_count": 0,
+      "existing_source_labels": [],
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2",
+      "linked_questions_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/linked-questions.json",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/question-edits",
+      "expected_question_edit_file_paths": [
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/question-edits/16ddda97-9cf3-4b6d-9a7e-79b05fd2a19e.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/question-edits/3a13ae21-70c5-44cd-884f-04f7305e3640.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/question-edits/3ad6f461-c4c4-45e6-af3a-88e089afb52d.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/question-edits/5095e2a0-1ee7-4e67-8c91-5a7e998b3b70.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/question-edits/55e9adf2-fd59-4a65-b7e7-2ec8b42fd4a9.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/question-edits/6c099536-f6a9-4cda-863a-a5a97be9870b.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/question-edits/7e4e697d-9af0-4014-abfc-d26db4d50092.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/question-edits/bff7aa91-e5a7-462b-8b38-8371a20d273c.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/question-edits/e7b2b739-2599-447b-a856-d291c32f294f.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/question-edits/fe23d295-5ba2-4572-b481-7b8eb472010f.json"
+],
+      "source_audit_priority": "high",
+      "blocker_resolution_needed": false,
+      "blocker_resolution_notes": []
+    },
+    {
+      "article_id": "7e511a5d-edb1-4622-8f0f-29c1a631c145",
+      "slug": "lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not",
+      "subject": "LEA-PRAC - Professional Practice and Law",
+      "linked_question_count": 10,
+      "source_count": 0,
+      "existing_source_labels": [],
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145",
+      "linked_questions_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/linked-questions.json",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/question-edits",
+      "expected_question_edit_file_paths": [
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/question-edits/08a1c4ca-fe39-4ded-81c4-94909a6d362c.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/question-edits/470f33bb-24f1-4eb2-a76e-ce255a50ae41.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/question-edits/5799550f-7a5e-4e16-a921-a7551b075bc0.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/question-edits/64f87401-24fd-4f73-803f-d7f9a006c03a.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/question-edits/7d7ae21c-dcec-43f0-8403-b4117dcd1c89.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/question-edits/ae2dd470-af9a-49d3-b2ae-03968c51a4a1.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/question-edits/c47a6715-b32f-4649-8692-cc3e1a1a63b3.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/question-edits/c7d3979b-6241-480e-a37d-28cfd4af00d8.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/question-edits/cfc6c973-ed50-4948-9c47-48a8fadf5dd7.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/question-edits/d64a8825-1fc6-469c-85a7-b67fea123907.json"
+],
+      "source_audit_priority": "high",
+      "blocker_resolution_needed": false,
+      "blocker_resolution_notes": []
+    },
+    {
+      "article_id": "3d48211b-8add-4934-8dab-ae8bdae74035",
+      "slug": "lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement",
+      "subject": "LEA-PRAC - Professional Practice and Law",
+      "linked_question_count": 10,
+      "source_count": 0,
+      "existing_source_labels": [],
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035",
+      "linked_questions_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/linked-questions.json",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/question-edits",
+      "expected_question_edit_file_paths": [
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/question-edits/032522de-2664-4f28-9890-c071c8ff7958.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/question-edits/14eecec5-5617-4dea-96d5-d97a3e498ea2.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/question-edits/37651fee-ec17-4001-8ca1-1dedf550b986.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/question-edits/5b1da138-7d1f-42b4-9ab2-ba065604422a.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/question-edits/9e2f8b9a-0377-4a5c-8b74-1e92e96122b9.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/question-edits/a0bd7489-e809-4020-b40b-6aa2cd56d95d.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/question-edits/bd2377d1-d87e-40d9-9db3-0de5bfd8652f.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/question-edits/dacb2eeb-a43c-47fe-a044-fe3eed4ff9b3.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/question-edits/dd652c66-c567-4c87-834f-17eac39c7133.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/question-edits/e7d85e00-c727-4cf6-a9a1-b882d204aa15.json"
+],
+      "source_audit_priority": "high",
+      "blocker_resolution_needed": false,
+      "blocker_resolution_notes": []
+    },
+    {
+      "article_id": "6dc813a9-913d-47b5-9203-f59e8e909869",
+      "slug": "lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework",
+      "subject": "LEA-PRAC - Professional Practice and Law",
+      "linked_question_count": 10,
+      "source_count": 0,
+      "existing_source_labels": [],
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869",
+      "linked_questions_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/linked-questions.json",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/question-edits",
+      "expected_question_edit_file_paths": [
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/question-edits/023017de-e780-41ba-aadd-3b647271ca32.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/question-edits/4a71ac43-563a-48f4-b2cb-891a5dc3d61f.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/question-edits/6e10941c-0f97-41d1-b596-f91b42f47356.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/question-edits/760d5fa8-81e7-4039-bccb-08b972eec248.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/question-edits/76fe3143-368f-4db5-9bb9-348640000e3a.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/question-edits/8578dc0a-0d66-42db-9904-5a6d4a700b46.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/question-edits/e4a0bc5f-3648-4ac0-ba70-3a46174589e7.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/question-edits/e966f7b8-e605-4866-884d-60b4ee51c577.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/question-edits/f93a2068-4c06-44ed-b97e-3c43eacee196.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/question-edits/fee18dcf-2494-4930-b87f-aa50f7b703a6.json"
+],
+      "source_audit_priority": "high",
+      "blocker_resolution_needed": false,
+      "blocker_resolution_notes": []
+    },
+    {
+      "article_id": "17b95df0-6bea-43c6-ab03-2b82a358caa6",
+      "slug": "lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi",
+      "subject": "LEA-PRAC - Professional Practice and Law",
+      "linked_question_count": 10,
+      "source_count": 0,
+      "existing_source_labels": [],
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6",
+      "linked_questions_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6/linked-questions.json",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6/question-edits",
+      "expected_question_edit_file_paths": [
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6/question-edits/016fafea-7a8c-4720-b73a-aca8fd1488c0.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6/question-edits/216f9a84-8df2-4183-86e4-58279e229b60.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6/question-edits/2cba8465-a4de-41ac-bd26-8451c590b071.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6/question-edits/487458a0-704b-46b4-9de1-1cd3bc85fbf6.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6/question-edits/56120d58-cee2-4daf-9cdc-5d91ff8a9233.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6/question-edits/7f2143ba-a7b7-4397-9c34-82ae0108bb9c.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6/question-edits/96b17f48-0186-4a9a-8cf3-e2fa79120826.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6/question-edits/b216f737-beb5-4e9f-95b0-7023c57dbfaf.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6/question-edits/fc4a4042-8ab7-465a-a6f5-a224a45e0e88.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6/question-edits/fd64ffbe-960f-4ea3-9bb2-5a4feec61d14.json"
+],
+      "source_audit_priority": "high",
+      "blocker_resolution_needed": false,
+      "blocker_resolution_notes": []
+    }
+  ],
+  "exact_article_folder_paths": [
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6"
+  ],
+  "exact_question_edits_paths": [
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6/question-edits"
+  ],
+  "expected_raw_pdf_source_families": [
+  {
+    "family": "RA-386 Civil Code of the Philippines",
+    "status": "existing-local-raw-source",
+    "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386",
+    "purpose": "Primary source for Civil Code liability articles",
+    "exists_now": true
+  },
+  {
+    "family": "RA-9266 Architecture Act of 2004",
+    "status": "existing-local-raw-source",
+    "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266",
+    "purpose": "Primary source for RA 9266 professional law articles",
+    "exists_now": true
+  }
+],
+  "source_audit_priority": {
+    "overall": "high",
+    "per_article": [
+      {
+        "article_id": "02a5ba32-0443-4162-837d-326783ed77a2",
+        "slug": "lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions",
+        "priority": "high",
+        "blocker_resolution_needed": false,
+        "blocker_resolution_notes": []
+      },
+      {
+        "article_id": "7e511a5d-edb1-4622-8f0f-29c1a631c145",
+        "slug": "lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not",
+        "priority": "high",
+        "blocker_resolution_needed": false,
+        "blocker_resolution_notes": []
+      },
+      {
+        "article_id": "3d48211b-8add-4934-8dab-ae8bdae74035",
+        "slug": "lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement",
+        "priority": "high",
+        "blocker_resolution_needed": false,
+        "blocker_resolution_notes": []
+      },
+      {
+        "article_id": "6dc813a9-913d-47b5-9203-f59e8e909869",
+        "slug": "lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework",
+        "priority": "high",
+        "blocker_resolution_needed": false,
+        "blocker_resolution_notes": []
+      },
+      {
+        "article_id": "17b95df0-6bea-43c6-ab03-2b82a358caa6",
+        "slug": "lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi",
+        "priority": "high",
+        "blocker_resolution_needed": false,
+        "blocker_resolution_notes": []
+      }
+    ]
+  },
+  "scenario_enrichment_requirement": {
+    "required": true,
+    "instruction": "Add a Real World Scenario section when source-audited article shape is eligible; otherwise record not-applicable with reason in source-audit evidence and ledger. Scenario enrichment must not override raw-source correctness."
+  },
+  "validation_gates": [
+    "raw-PDF-first audit",
+    "roundtrip protocol",
+    "compose/diff/validate",
+    "UI-block-edit validation",
+    "scoped JSON parse",
+    "placeholder/internal-note/source-gap scans",
+    "source hash checks",
+    "linked-question/question-edit count checks",
+    "stale compose-error scan",
+    "targeted content-audit tests",
+    "scoped git diff --check",
+    "independent reviewer pass",
+    "serial coordinator acceptance",
+    "stage/commit/push after batch acceptance"
+  ],
+  "no_skip_blocker_resolution_policy": {
+    "permanent_skips_allowed": false,
+    "policy": "Difficult articles remain reserved. If an expected source family is missing or extraction is weak, mark blocker-resolution-needed with source families and the recommended path; do not silently replace the article with an easier candidate. Internet may be used only as supplemental discovery, not primary evidence. Primary evidence must be local raw sources under vitruvius-connection/001_Raw-Source-Layer.",
+    "stop_condition": "A batch may be accepted only after all selected article clusters either pass source audit with blockers=0 or have explicit coordinator-approved blocker-resolution notes; do not mark complete while blockers remain."
+  },
+  "allowed_write_scope": {
+    "current_reservation_task": [
+      "/Users/philiplewis/slatecamp/.ai/03_plans/production-line-batch-094-manifest.json",
+      "/Users/philiplewis/slatecamp/.ai/03_plans/source-audited-production-line-coordination.md"
+    ],
+    "future_batch_execution_after_serial_start": [
+      "Selected article folders listed in exact_article_folder_paths only",
+      "Selected question-edit file paths listed under article_clusters[].expected_question_edit_file_paths only",
+      "Batch-specific report, ledger, and scoped-check artifacts under /Users/philiplewis/slatecamp/.ai/content-audit-export only",
+      "Handoff/coordination pre-start or post-batch notes under /Users/philiplewis/slatecamp/.ai/03_plans only"
+    ],
+    "forbidden_now": [
+      "Supabase push/apply",
+      "deploy",
+      "commit",
+      "article content edits during reservation-only task",
+      "question edit mutations during reservation-only task"
+    ]
+  }
+}

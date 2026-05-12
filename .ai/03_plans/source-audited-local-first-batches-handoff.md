@@ -1,6 +1,6 @@
 # Source-Audited Local-First Batches Handoff
 
-Updated: 2026-05-12T19:49:52+08:00
+Updated: 2026-05-12T20:15:00+08:00
 
 ## Operating Mode
 
@@ -12,14 +12,13 @@ Updated: 2026-05-12T19:49:52+08:00
 ## Completed Batches
 
 - Source-audited local-first article batches 001 through 092 are recorded under `/Users/philiplewis/slatecamp/.ai/content-audit-export`.
-- Latest completed batch: Batch 092, status `PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW`, local-first complete and pending final publishing review; report `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-092-local-first-report.md`, ledger `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-092-local-first-ledger.json`, scoped checks `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-092-local-first-scoped-checks.json`.
-- Previous completed checkpoint before this session: Batch 030, status `PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW`, report `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-030-local-first-report.md`, ledger `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-030-local-first-ledger.json`, scoped checks `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-030-local-first-scoped-checks.json`.
+- Latest completed batch: Batch 092, status `PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW`, committed at f8956b5bf; report `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-092-local-first-report.md`, ledger `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-092-local-first-ledger.json`, scoped checks `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-092-local-first-scoped-checks.json`.
 
 ## Current Batch State
 
 - Last completed batch: Batch 092
-- Current batch number for next continuation: unreserved; a new reservation coordinator must reserve the next batches if blockers=0.
-- Current worker/session state: Batch 092 local-first complete from the fixed manifest only; no Batch 093 work, reservation, or selection was started. No Supabase push, deploy, or commit attempted.
+- Current batch number for next continuation: Batch 093 (reserved, not started)
+- Current worker/session state: Batches 093-095 reserved by coordinator. Batch 093 is the next batch to start after coordinator acceptance. No Supabase push, deploy, or commit attempted.
 - Latest completed Batch 082 selection rule used: five unpassed sourceable LEA building-technology/materials/estimating clusters with linked questions and local raw source families, excluding IDs recorded in source-audited Batch 001 through Batch 081 artifacts.
 - Active Batch 083 selection rule used: five unpassed sourceable LEA building-materials and metals clusters with linked questions and exact readable local raw source families, excluding IDs recorded in source-audited Batch 001 through Batch 082 artifacts.
 - Active Batch 084 selection rule used: five unpassed sourceable LEA building-technology/construction-systems clusters with linked questions and exact readable local raw source families, excluding IDs recorded in source-audited Batch 001 through Batch 083 artifacts.
@@ -8018,3 +8017,62 @@ Batch 092 quality protocol results:
 - Completion status: Batch 090 accepted at `6a561f7d3`; Batch 091 accepted at `7c2b35e47` with hygiene follow-up `3881a1f23`; Batch 092 local-first complete with blockers=0 and pending final publishing review.
 - Next action: do not start or reserve Batch 093 in this worker run. A new reservation coordinator must reserve the next batches if blockers=0.
 - Stop condition: Batch 092 local-first work is complete; no Supabase pushes, deploys, or commits were attempted in this Batch 092 worker run.
+
+## Batch 093-095 Reservation Checkpoint
+
+- Updated: ${TIMESTAMP}
+- Batches: 093, 094, 095
+- Reservation coordinator: Sisyphus reservation agent
+- Selection rule applied: Reserve the next fifteen unpassed high-value LEA legal/code/professional-practice/code/accessibility/design/planning/construction clusters from `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles` with linked questions and exact readable local raw PDFs under `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer`, excluding article IDs recorded in source-audited Batch 001 through Batch 092 reports, ledgers, scoped checks, dated recovery artifacts, and the local-first handoff.
+- Prior-batch exclusion check: PASS; selected IDs were checked against source-audited Batch 001 through Batch 092 artifacts under `/Users/philiplewis/slatecamp/.ai/content-audit-export` plus this handoff, and no selected Batch 093-095 article ID appeared in the prior-batch artifact set.
+- Batch cohesion note:
+  - Batch 093 continues PD 1096 building code coverage after Batch 092: height limits, occupancy, setbacks, building permits, and plan checking.
+  - Batch 094 shifts to RA 9266 professional law and liability: overview, scope of practice, prohibited acts, civil code liability, and architect-of-record accountability.
+  - Batch 095 covers UAP professional services: pre-design, SPP 202 framework, schematic design, contract documents, and regular design services.
+- Inherited blocker status: Batch 092 blockers=0.
+- Expected raw PDF/source families:
+  - PD 1096 RIRR 2004 DPWH Official local raw PDF (Batch 093)
+  - LGU Local Government Code local raw PDF (Batch 093)
+  - BP-344 2024 Revised IRR local raw PDF (Batch 093)
+  - RA-9514 Fire Code local raw PDF (Batch 093)
+  - RA-9266 Architecture Act local raw PDF (Batch 094)
+  - RA-386 Civil Code local raw PDF (Batch 094)
+  - UAP SPP Documents local raw PDF (Batch 095)
+- Supabase/deploy/commit state: no Supabase push, deploy, or commit attempted.
+- Reservation manifests:
+  - `/Users/philiplewis/slatecamp/.ai/03_plans/production-line-batch-093-manifest.json`
+  - `/Users/philiplewis/slatecamp/.ai/03_plans/production-line-batch-094-manifest.json`
+  - `/Users/philiplewis/slatecamp/.ai/03_plans/production-line-batch-095-manifest.json`
+- Reservation summary doc: `/Users/philiplewis/slatecamp/.ai/03_plans/source-audited-production-line-reservation-093-095.md`
+
+### Batch 093 Reserved Clusters
+
+| # | Article ID | Slug | Article folder | Question-edits folder | Linked questions |
+|---|-----------|------|----------------|----------------------|-----------------:|
+| 1 | `a865c6b2-8c25-404e-bb0c-08d374d374a5` | `pd-1096-rule-vii-height-limits` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-vii-height-limits--a865c6b2-8c25-404e-bb0c-08d374d374a5` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-vii-height-limits--a865c6b2-8c25-404e-bb0c-08d374d374a5/question-edits` | 39 |
+| 2 | `9085e0d8-3498-4d3b-b991-46e54d94bde0` | `pd-1096-rule-vii-occupancy` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-vii-occupancy--9085e0d8-3498-4d3b-b991-46e54d94bde0` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-vii-occupancy--9085e0d8-3498-4d3b-b991-46e54d94bde0/question-edits` | 27 |
+| 3 | `859b1a7f-8aba-473d-8c28-f9aaa39af11d` | `pd-1096-rule-viii-setbacks-and-easements` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-setbacks-and-easements--859b1a7f-8aba-473d-8c28-f9aaa39af11d` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-setbacks-and-easements--859b1a7f-8aba-473d-8c28-f9aaa39af11d/question-edits` | 27 |
+| 4 | `687e0da7-4e39-454f-b3f8-a95308678556` | `building-permit-process` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/building-permit-process--687e0da7-4e39-454f-b3f8-a95308678556/question-edits` | 57 |
+| 5 | `4256d28b-076b-4c68-ad2d-9e27fdbcdf6b` | `typology-checklists-and-plan-checking` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/typology-checklists-and-plan-checking--4256d28b-076b-4c68-ad2d-9e27fdbcdf6b` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/typology-checklists-and-plan-checking--4256d28b-076b-4c68-ad2d-9e27fdbcdf6b/question-edits` | 22 |
+
+### Batch 094 Reserved Clusters
+
+| # | Article ID | Slug | Article folder | Question-edits folder | Linked questions |
+|---|-----------|------|----------------|----------------------|-----------------:|
+| 1 | `02a5ba32-0443-4162-837d-326783ed77a2` | `lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/question-edits` | 10 |
+| 2 | `7e511a5d-edb1-4622-8f0f-29c1a631c145` | `lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/question-edits` | 10 |
+| 3 | `3d48211b-8add-4934-8dab-ae8bdae74035` | `lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/question-edits` | 10 |
+| 4 | `6dc813a9-913d-47b5-9203-f59e8e909869` | `lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/question-edits` | 10 |
+| 5 | `17b95df0-6bea-43c6-ab03-2b82a358caa6` | `lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6/question-edits` | 10 |
+
+### Batch 095 Reserved Clusters
+
+| # | Article ID | Slug | Article folder | Question-edits folder | Linked questions |
+|---|-----------|------|----------------|----------------------|-----------------:|
+| 1 | `db248a33-44f2-411c-a069-9685200a588c` | `lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c/question-edits` | 10 |
+| 2 | `0b116082-5275-4d0f-bb23-ce5b74339001` | `lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001/question-edits` | 10 |
+| 3 | `b3d5ae5b-09a9-426c-9feb-00932e5555aa` | `lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t--b3d5ae5b-09a9-426c-9feb-00932e5555aa` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t--b3d5ae5b-09a9-426c-9feb-00932e5555aa/question-edits` | 10 |
+| 4 | `617cdac3-3b02-44b0-b81f-f8827fc4242e` | `lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee--617cdac3-3b02-44b0-b81f-f8827fc4242e` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee--617cdac3-3b02-44b0-b81f-f8827fc4242e/question-edits` | 10 |
+| 5 | `24b0a3db-e6bc-45d0-a9a1-d83009112efb` | `spp-doc-202-regular-design-services` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/question-edits` | 10 |
+
+Batch 093-095 unresolved blockers at reservation: 0 inherited. Batch 093 may begin after coordinator acceptance.

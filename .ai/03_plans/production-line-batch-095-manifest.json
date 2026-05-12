@@ -1,0 +1,283 @@
+{
+  "batch_number": "095",
+  "manifest_status": "reserved_pre_start_not_complete",
+  "reserved_at": "2026-05-12T12:13:57+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "branch": "main",
+  "baseline_commit": "f8956b5bf",
+  "selection_rule": "Reserve five unpassed high-value LEA UAP professional services and SPP clusters with linked questions and exact readable local raw PDFs under /Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer, excluding article IDs recorded in source-audited Batches 001-092 reports, ledgers, scoped checks, dated recovery artifacts, and the local-first handoff. Prefer UAP SPP document articles with well-established professional practice source families.",
+  "inherited_blocker_status": "Batch 092 blockers=0; Batch 095 is reserved only and not complete.",
+  "prior_batch_exclusion_check": {
+    "status": "PASS",
+    "exclusion_source": "Batches 001-092 source-audited ledgers, reports, scoped checks, dated blocker/recovery artifacts, and source-audited-local-first-batches-handoff.md",
+    "excluded_article_id_count": 205,
+    "selected_article_count": 5,
+    "selected_ids_found_in_exclusion_set": []
+  },
+  "selected_article_uuids_slugs": [
+    {
+      "article_id": "db248a33-44f2-411c-a069-9685200a588c",
+      "slug": "lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method"
+    },
+    {
+      "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+      "slug": "lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic"
+    },
+    {
+      "article_id": "b3d5ae5b-09a9-426c-9feb-00932e5555aa",
+      "slug": "lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t"
+    },
+    {
+      "article_id": "617cdac3-3b02-44b0-b81f-f8827fc4242e",
+      "slug": "lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee"
+    },
+    {
+      "article_id": "24b0a3db-e6bc-45d0-a9a1-d83009112efb",
+      "slug": "spp-doc-202-regular-design-services"
+    }
+  ],
+  "counts": {
+    "selected_articles": 5,
+    "linked_questions_expected": 50,
+    "question_edits_expected": 50
+  },
+  "article_clusters": [
+    {
+      "article_id": "db248a33-44f2-411c-a069-9685200a588c",
+      "slug": "lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method",
+      "subject": "LEA-PRAC - Professional Practice and Services",
+      "linked_question_count": 10,
+      "source_count": 0,
+      "existing_source_labels": [],
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c",
+      "linked_questions_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c/linked-questions.json",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c/question-edits",
+      "expected_question_edit_file_paths": [
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c/question-edits/13c3b867-cb19-49f9-98c9-79498cd843d7.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c/question-edits/2392ce58-4bd0-4c68-8528-3d4dec330fa7.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c/question-edits/67257ca1-f7e4-44ff-a8e8-10c906dc6c29.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c/question-edits/85a45315-e39c-41e7-815a-2ee9b49edcdb.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c/question-edits/90609d99-2f70-4b64-817c-5f87177190e0.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c/question-edits/d5887625-cf3d-42c0-8702-2d27869b6820.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c/question-edits/d8768a42-0479-44f2-8d49-61507607ce1d.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c/question-edits/e11d7308-a1c7-4444-9e2e-f907b4ac2a7b.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c/question-edits/ee221540-9a12-4911-8275-968a22baf2fb.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c/question-edits/f61bac75-22db-41a6-860b-95a15b857473.json"
+],
+      "source_audit_priority": "high",
+      "blocker_resolution_needed": false,
+      "blocker_resolution_notes": []
+    },
+    {
+      "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+      "slug": "lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic",
+      "subject": "LEA-PRAC - Professional Practice and Services",
+      "linked_question_count": 10,
+      "source_count": 0,
+      "existing_source_labels": [],
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001",
+      "linked_questions_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001/linked-questions.json",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001/question-edits",
+      "expected_question_edit_file_paths": [
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001/question-edits/0d780029-cb84-4b01-b209-27d6bf4cc84d.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001/question-edits/80fe5dfe-4d8b-4ee4-aea6-fda474f5f9dc.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001/question-edits/91a1762d-fd1b-4b53-941e-857f082552b1.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001/question-edits/981a4783-5b58-4662-a9d0-138ccdd371c2.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001/question-edits/aa33ff64-4a81-487a-9ac3-1b59ec809922.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001/question-edits/c4d36d88-0806-4816-968c-bc1397bb21d1.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001/question-edits/c788a60a-dbaa-4899-8cbd-7aac003c6ab5.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001/question-edits/d737bb35-1799-48ef-9f56-e37fd51864db.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001/question-edits/f22ae070-68a5-4f16-a8fa-cf0831e9c584.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001/question-edits/ffa1533e-5ac5-44e0-aba4-6f76ec4baea4.json"
+],
+      "source_audit_priority": "high",
+      "blocker_resolution_needed": false,
+      "blocker_resolution_notes": []
+    },
+    {
+      "article_id": "b3d5ae5b-09a9-426c-9feb-00932e5555aa",
+      "slug": "lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t",
+      "subject": "LEA-PRAC - Professional Practice and Services",
+      "linked_question_count": 10,
+      "source_count": 0,
+      "existing_source_labels": [],
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t--b3d5ae5b-09a9-426c-9feb-00932e5555aa",
+      "linked_questions_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t--b3d5ae5b-09a9-426c-9feb-00932e5555aa/linked-questions.json",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t--b3d5ae5b-09a9-426c-9feb-00932e5555aa/question-edits",
+      "expected_question_edit_file_paths": [
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t--b3d5ae5b-09a9-426c-9feb-00932e5555aa/question-edits/0648ff6b-1677-4581-9a3d-76959220695b.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t--b3d5ae5b-09a9-426c-9feb-00932e5555aa/question-edits/0bbce9ad-a429-40bc-8b6e-23e199f2fe93.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t--b3d5ae5b-09a9-426c-9feb-00932e5555aa/question-edits/3a39c288-9c89-47dd-9acc-858f9745608d.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t--b3d5ae5b-09a9-426c-9feb-00932e5555aa/question-edits/49681035-042d-4d58-b499-0596f6e715f0.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t--b3d5ae5b-09a9-426c-9feb-00932e5555aa/question-edits/65bbba7b-2bfe-4179-a5d4-69d0d2a40a01.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t--b3d5ae5b-09a9-426c-9feb-00932e5555aa/question-edits/7978f50b-a94f-4b20-8f36-1662b80703ed.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t--b3d5ae5b-09a9-426c-9feb-00932e5555aa/question-edits/cbf79e32-d1b7-40ea-9fb1-8eba6e8210fd.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t--b3d5ae5b-09a9-426c-9feb-00932e5555aa/question-edits/de06253a-607c-4c7e-b66f-8d6a29243ff5.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t--b3d5ae5b-09a9-426c-9feb-00932e5555aa/question-edits/fccf1e8a-dc41-4631-9ab9-ddd400052705.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t--b3d5ae5b-09a9-426c-9feb-00932e5555aa/question-edits/fe49f5e2-d8fa-4e92-abea-3c26f200635f.json"
+],
+      "source_audit_priority": "high",
+      "blocker_resolution_needed": false,
+      "blocker_resolution_notes": []
+    },
+    {
+      "article_id": "617cdac3-3b02-44b0-b81f-f8827fc4242e",
+      "slug": "lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee",
+      "subject": "LEA-PRAC - Professional Practice and Services",
+      "linked_question_count": 10,
+      "source_count": 0,
+      "existing_source_labels": [],
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee--617cdac3-3b02-44b0-b81f-f8827fc4242e",
+      "linked_questions_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee--617cdac3-3b02-44b0-b81f-f8827fc4242e/linked-questions.json",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee--617cdac3-3b02-44b0-b81f-f8827fc4242e/question-edits",
+      "expected_question_edit_file_paths": [
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee--617cdac3-3b02-44b0-b81f-f8827fc4242e/question-edits/1d1e39df-f674-4af0-9ae5-82540dae949a.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee--617cdac3-3b02-44b0-b81f-f8827fc4242e/question-edits/4679ff6a-3708-4bc2-bb0d-21a93bcb6a51.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee--617cdac3-3b02-44b0-b81f-f8827fc4242e/question-edits/5195a8dc-9a15-4011-a35a-b77ab833f1ae.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee--617cdac3-3b02-44b0-b81f-f8827fc4242e/question-edits/566fc26d-5bc4-440f-a50d-057fb8fc3f0e.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee--617cdac3-3b02-44b0-b81f-f8827fc4242e/question-edits/6cb7b109-e039-4433-be63-9d0e4f5e76d6.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee--617cdac3-3b02-44b0-b81f-f8827fc4242e/question-edits/749237f0-bb35-40a7-bd64-8ae89c895fdf.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee--617cdac3-3b02-44b0-b81f-f8827fc4242e/question-edits/7afed403-1be3-4af3-a9f1-c473efaa12ff.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee--617cdac3-3b02-44b0-b81f-f8827fc4242e/question-edits/81c3e280-f382-4b2d-a058-59bdf72d0d1f.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee--617cdac3-3b02-44b0-b81f-f8827fc4242e/question-edits/a85baaba-c678-4391-a8c8-74ea1e1db617.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee--617cdac3-3b02-44b0-b81f-f8827fc4242e/question-edits/d89cf2f6-979c-439d-af57-62078b9cd7e0.json"
+],
+      "source_audit_priority": "high",
+      "blocker_resolution_needed": false,
+      "blocker_resolution_notes": []
+    },
+    {
+      "article_id": "24b0a3db-e6bc-45d0-a9a1-d83009112efb",
+      "slug": "spp-doc-202-regular-design-services",
+      "subject": "LEA-PRAC - Professional Practice and Services",
+      "linked_question_count": 10,
+      "source_count": 0,
+      "existing_source_labels": [],
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb",
+      "linked_questions_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/linked-questions.json",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/question-edits",
+      "expected_question_edit_file_paths": [
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/question-edits/214ce588-337e-45fe-ab73-763e5de08118.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/question-edits/2b52b921-0fbb-4b41-9ae9-26147cb2b421.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/question-edits/2e790ee6-a6a0-4c9a-a545-6379492a35f3.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/question-edits/33e502b9-c4a4-4c7f-9cb4-569aabe2ca65.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/question-edits/389d47a6-4100-4b1e-aaa2-3784b2911d3a.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/question-edits/618bb5ae-8a21-498f-bc5a-20389b93aa98.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/question-edits/77a5ab14-e2ec-4d15-85d7-a4a8ce240227.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/question-edits/9fdc08e5-ef3f-46ac-a3a4-4741b3d7e63e.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/question-edits/b1ec9503-9ae3-4835-af28-704fc4dd064c.json",
+  "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/question-edits/b4ad1ac0-f8c0-42fa-821e-7286375ae1b4.json"
+],
+      "source_audit_priority": "high",
+      "blocker_resolution_needed": false,
+      "blocker_resolution_notes": []
+    }
+  ],
+  "exact_article_folder_paths": [
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t--b3d5ae5b-09a9-426c-9feb-00932e5555aa",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee--617cdac3-3b02-44b0-b81f-f8827fc4242e",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb"
+  ],
+  "exact_question_edits_paths": [
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t--b3d5ae5b-09a9-426c-9feb-00932e5555aa/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee--617cdac3-3b02-44b0-b81f-f8827fc4242e/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/question-edits"
+  ],
+  "expected_raw_pdf_source_families": [
+  {
+    "family": "UAP SPP Documents",
+    "status": "existing-local-raw-source",
+    "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP",
+    "purpose": "Primary source for UAP professional services articles",
+    "exists_now": true
+  }
+],
+  "source_audit_priority": {
+    "overall": "high",
+    "per_article": [
+      {
+        "article_id": "db248a33-44f2-411c-a069-9685200a588c",
+        "slug": "lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method",
+        "priority": "high",
+        "blocker_resolution_needed": false,
+        "blocker_resolution_notes": []
+      },
+      {
+        "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+        "slug": "lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic",
+        "priority": "high",
+        "blocker_resolution_needed": false,
+        "blocker_resolution_notes": []
+      },
+      {
+        "article_id": "b3d5ae5b-09a9-426c-9feb-00932e5555aa",
+        "slug": "lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t",
+        "priority": "high",
+        "blocker_resolution_needed": false,
+        "blocker_resolution_notes": []
+      },
+      {
+        "article_id": "617cdac3-3b02-44b0-b81f-f8827fc4242e",
+        "slug": "lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee",
+        "priority": "high",
+        "blocker_resolution_needed": false,
+        "blocker_resolution_notes": []
+      },
+      {
+        "article_id": "24b0a3db-e6bc-45d0-a9a1-d83009112efb",
+        "slug": "spp-doc-202-regular-design-services",
+        "priority": "high",
+        "blocker_resolution_needed": false,
+        "blocker_resolution_notes": []
+      }
+    ]
+  },
+  "scenario_enrichment_requirement": {
+    "required": true,
+    "instruction": "Add a Real World Scenario section when source-audited article shape is eligible; otherwise record not-applicable with reason in source-audit evidence and ledger. Scenario enrichment must not override raw-source correctness."
+  },
+  "validation_gates": [
+    "raw-PDF-first audit",
+    "roundtrip protocol",
+    "compose/diff/validate",
+    "UI-block-edit validation",
+    "scoped JSON parse",
+    "placeholder/internal-note/source-gap scans",
+    "source hash checks",
+    "linked-question/question-edit count checks",
+    "stale compose-error scan",
+    "targeted content-audit tests",
+    "scoped git diff --check",
+    "independent reviewer pass",
+    "serial coordinator acceptance",
+    "stage/commit/push after batch acceptance"
+  ],
+  "no_skip_blocker_resolution_policy": {
+    "permanent_skips_allowed": false,
+    "policy": "Difficult articles remain reserved. If an expected source family is missing or extraction is weak, mark blocker-resolution-needed with source families and the recommended path; do not silently replace the article with an easier candidate. Internet may be used only as supplemental discovery, not primary evidence. Primary evidence must be local raw sources under vitruvius-connection/001_Raw-Source-Layer.",
+    "stop_condition": "A batch may be accepted only after all selected article clusters either pass source audit with blockers=0 or have explicit coordinator-approved blocker-resolution notes; do not mark complete while blockers remain."
+  },
+  "allowed_write_scope": {
+    "current_reservation_task": [
+      "/Users/philiplewis/slatecamp/.ai/03_plans/production-line-batch-095-manifest.json",
+      "/Users/philiplewis/slatecamp/.ai/03_plans/source-audited-production-line-coordination.md"
+    ],
+    "future_batch_execution_after_serial_start": [
+      "Selected article folders listed in exact_article_folder_paths only",
+      "Selected question-edit file paths listed under article_clusters[].expected_question_edit_file_paths only",
+      "Batch-specific report, ledger, and scoped-check artifacts under /Users/philiplewis/slatecamp/.ai/content-audit-export only",
+      "Handoff/coordination pre-start or post-batch notes under /Users/philiplewis/slatecamp/.ai/03_plans only"
+    ],
+    "forbidden_now": [
+      "Supabase push/apply",
+      "deploy",
+      "commit",
+      "article content edits during reservation-only task",
+      "question edit mutations during reservation-only task"
+    ]
+  }
+}
