@@ -16,6 +16,10 @@ BP 344 uses a separate accessible-parking count table. It requires 1 accessible 
 
 Each accessible parking slot is at least 4000 mm by 5000 mm. Provide a 1200 mm clear walkway between the front ends of parked cars, and connect raised access walkways with a dropped sidewalk or curb ramp. Locate accessible slots nearest accessible main entrances; in multi-story parking, locate them near accessible elevators or accessible pedestrian entrances. Accessible slots must not be placed on ramped or sloping areas.
 
+## Real World Scenario
+
+For a project whose PD 1096 occupancy row produces 50 required ordinary parking spaces, keep the ordinary count and accessible overlay separate. The BP 344 table requires 2 accessible slots for 26-50 total parking spaces, and each accessible slot must meet the 4000 mm by 5000 mm minimum, connect to an accessible route, and be located nearest an accessible entrance rather than on a ramped or sloping area.
+
 ## Exam traps
 
 Do not answer a BP 344 accessible-parking question with ordinary PD 1096 slot sizes. Do not put required parking in the road right-of-way. Do not reduce the accessible-parking count by using an ordinary parking ratio table. For 501-1000 total spaces, use 2 percent; for more than 1000, use 20 plus one additional accessible slot for each 100 or fraction over 1000.

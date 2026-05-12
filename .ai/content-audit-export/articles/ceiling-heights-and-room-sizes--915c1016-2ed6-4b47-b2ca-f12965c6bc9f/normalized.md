@@ -50,6 +50,10 @@ Toilet and bath rooms, laundry rooms, and similar rooms must have windows with a
 
 Required windows may open into a roofed porch if the porch abuts a court, yard, public street or alley, open watercourse, or other public open space; has a ceiling height of at least 2.70 m; and has one longer side at least 65% open and unobstructed.
 
+## Real World Scenario
+
+When checking a small boarding-house room, do not stop at floor area. A proposed habitable room with 6.00 sq.m. of area still fails Section 806 if its least dimension is under 2.00 m. If the room relies on natural ventilation, also check the 2.70 m ceiling-height rule and the Section 808 window-opening minimum of 10% of floor area, with an opening not less than 1.00 sq.m.
+
 ## Exam Values To Memorize
 
 | Requirement | Source-grounded value |

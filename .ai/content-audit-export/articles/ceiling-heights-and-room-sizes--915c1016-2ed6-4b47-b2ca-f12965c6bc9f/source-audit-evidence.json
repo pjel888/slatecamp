@@ -1,8 +1,8 @@
 {
   "artifact_type": "source-audit-evidence",
   "batch_id": "source-audited-article-batch-010",
-  "audit_date": "2026-05-10",
-  "audited_at": "2026-05-10T10:55:01.585+08:00",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T15:56:23+08:00",
   "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
   "protocols_applied": [
     "AGENTS.md local-first content-audit workflow",
@@ -20,8 +20,8 @@
     "candidate_path": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/candidate.md",
     "sources_path": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/sources.json",
     "question_edits_folder": ".ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits",
-    "normalized_sha256": "sha256:2ca8b333b10abaedd0438eff65cadec07e5927ce49b3fd0e889abbd6fc2cead7",
-    "candidate_sha256": "sha256:2ca8b333b10abaedd0438eff65cadec07e5927ce49b3fd0e889abbd6fc2cead7",
+    "normalized_sha256": "sha256:aed28c2c1edbb55117a6e5059c953d9e17d182c9b78372face61b777e15d0022",
+    "candidate_sha256": "sha256:aed28c2c1edbb55117a6e5059c953d9e17d182c9b78372face61b777e15d0022",
     "linked_questions_sha256": "sha256:3b435e3f53f11fbd7efe0ea91da3c59671966a417572f1f019af4464fcda3020",
     "sources_sha256": "sha256:55629688f12561bae4fa6d6fe26df9597ed239cc5aefc4270fb19aa3c0161fef"
   },
@@ -628,5 +628,38 @@
     "Removed comparative foreign-code tables and unsupported international practice claims not audited against local raw PDFs.",
     "Removed or corrected unverified section/number claims that conflicted with the checked PD 1096 raw source."
   ],
-  "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED"
+  "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+  "batch_090_local_first_review": {
+    "batch_id": "source-audited-article-batch-090-local-first",
+    "reviewed_at": "2026-05-12T15:56:23+08:00",
+    "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+    "blocker_count": 0,
+    "local_only": {
+      "supabase_push_attempted": false,
+      "deploy_attempted": false,
+      "commit_attempted": false
+    },
+    "scenario_enrichment": {
+      "status": "eligible-added",
+      "section_added": true,
+      "source_safe": true,
+      "exam_useful": true,
+      "summary": "Room-check scenario applying floor area, least dimension, natural-ventilation ceiling height, and window-opening minimums.",
+      "source_basis": [
+        "PD 1096 2004 Revised IRR, Rule VIII Sections 805-808; refined markdown lines 2352-2384 and raw markdown lines 2659-2696"
+      ]
+    },
+    "question_edit_count_check": {
+      "linked_questions": 37,
+      "source_safe_question_edit_files": 37,
+      "non_question_json_files_in_question_edits": [],
+      "missing_question_edits": [],
+      "extra_question_edits": [],
+      "status": "PASS"
+    },
+    "source_gap_status": "PASS",
+    "raw_source_truth": "local_raw_source_layer_primary",
+    "normalized_sha256": "sha256:aed28c2c1edbb55117a6e5059c953d9e17d182c9b78372face61b777e15d0022",
+    "candidate_sha256": "sha256:aed28c2c1edbb55117a6e5059c953d9e17d182c9b78372face61b777e15d0022"
+  }
 }

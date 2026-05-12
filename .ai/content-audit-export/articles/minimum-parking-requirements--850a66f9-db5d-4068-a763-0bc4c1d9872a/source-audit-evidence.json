@@ -2,8 +2,8 @@
   "schema_version": "source-audit-evidence-v1-local-first",
   "artifact_type": "source-audit-evidence",
   "batch_id": "source-audited-article-batch-023-local-first",
-  "audit_date": "2026-05-11",
-  "audited_at": "2026-05-10T18:16:14.069Z",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T15:56:23+08:00",
   "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
   "target": {
     "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
@@ -12,8 +12,8 @@
     "article_folder": ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a",
     "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a",
     "candidate_path": ".ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/candidate.md",
-    "candidate_sha256": "sha256:1f86af9278094aad603b7d3ec852939a32f445a54c0d424f34edb842a4cb4d3b",
-    "normalized_sha256": "sha256:1f86af9278094aad603b7d3ec852939a32f445a54c0d424f34edb842a4cb4d3b",
+    "candidate_sha256": "sha256:abf2d5be7f14a8edd5cc694da8ab91e6a9b251bae59f02593058ac2c14bbd6cc",
+    "normalized_sha256": "sha256:abf2d5be7f14a8edd5cc694da8ab91e6a9b251bae59f02593058ac2c14bbd6cc",
     "linked_questions_sha256": "sha256:9ef9a883d050541ee902968506035ee52ac615b48e76616469349fa42b337c2c",
     "sources_sha256": "sha256:d52ad2362febf29a1e53491a56cf85a8084a85e0736e33ed094cfaf451837b53"
   },
@@ -260,5 +260,46 @@
     "deployed": false,
     "committed": false,
     "final_publishing_only": true
+  },
+  "batch_090_local_first_review": {
+    "batch_id": "source-audited-article-batch-090-local-first",
+    "reviewed_at": "2026-05-12T15:56:23+08:00",
+    "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+    "blocker_count": 0,
+    "local_only": {
+      "supabase_push_attempted": false,
+      "deploy_attempted": false,
+      "commit_attempted": false
+    },
+    "scenario_enrichment": {
+      "status": "eligible-added",
+      "section_added": true,
+      "source_safe": true,
+      "exam_useful": true,
+      "summary": "Parking-count scenario separating the ordinary PD 1096 off-street/on-site count from the BP 344 accessible-parking overlay.",
+      "source_basis": [
+        "PD 1096 RIRR Table VII.4; refined markdown lines 1627-1694",
+        "BP 344 2024 IRR Table A.6.1 accessible parking slot requirements; refined markdown lines 230-305"
+      ]
+    },
+    "question_edit_count_check": {
+      "linked_questions": 28,
+      "source_safe_question_edit_files": 28,
+      "non_question_json_files_in_question_edits": [],
+      "missing_question_edits": [],
+      "extra_question_edits": [],
+      "status": "PASS"
+    },
+    "source_gap_status": "PASS",
+    "raw_source_truth": "local_raw_source_layer_primary",
+    "normalized_sha256": "sha256:abf2d5be7f14a8edd5cc694da8ab91e6a9b251bae59f02593058ac2c14bbd6cc",
+    "candidate_sha256": "sha256:abf2d5be7f14a8edd5cc694da8ab91e6a9b251bae59f02593058ac2c14bbd6cc",
+    "blocker_resolution": {
+      "original_manifest_note": "Reservation counted 29 JSON files in question-edits for 28 linked questions because index.json was included.",
+      "root_cause": "index.json was a Batch 023 aggregate edit ledger without a question_id, not an individual linked-question edit.",
+      "remediation": "Deleted question-edits/index.json; preserved 28 source-safe question edit JSON files with question_id values matching the 28 linked questions exactly.",
+      "corrected_manifest_count": 28,
+      "blockers_after_remediation": 0
+    }
   }
 }

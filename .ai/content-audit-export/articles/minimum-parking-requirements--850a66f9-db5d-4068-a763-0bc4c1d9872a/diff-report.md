@@ -1,6 +1,6 @@
 # Content Diff Report: minimum-parking-requirements
 
-Generated: 2026-05-10T18:17:48.648Z
+Generated: 2026-05-12T07:55:23.640Z
 Article ID: 850a66f9-db5d-4068-a763-0bc4c1d9872a
 Changed: true
 Safe to push locally: true
@@ -8,14 +8,14 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:069a853aaa76cf823cd2e44d8df42d839d5b62d0215739334cdf380c8d582415`
-- Normalized: `sha256:1f86af9278094aad603b7d3ec852939a32f445a54c0d424f34edb842a4cb4d3b`
-- Candidate: `sha256:1f86af9278094aad603b7d3ec852939a32f445a54c0d424f34edb842a4cb4d3b`
+- Normalized: `sha256:abf2d5be7f14a8edd5cc694da8ab91e6a9b251bae59f02593058ac2c14bbd6cc`
+- Candidate: `sha256:abf2d5be7f14a8edd5cc694da8ab91e6a9b251bae59f02593058ac2c14bbd6cc`
 
 ## Line summary
 
-- Changed lines: 519
+- Changed lines: 517
 - Inserted lines: 0
-- Deleted lines: 501
+- Deleted lines: 497
 
 ## UI block preservation
 

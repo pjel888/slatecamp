@@ -1,0 +1,380 @@
+{
+  "batch_number": "090",
+  "generated_at": "2026-05-12T16:10:50+08:00",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "blockers": 0,
+  "article_ids": [
+    "16ba355e-811c-4191-98c2-c7fac22ca59b",
+    "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+    "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+    "3ad2ad2a-e525-44c3-8edf-bf7036d9c31a",
+    "850a66f9-db5d-4068-a763-0bc4c1d9872a"
+  ],
+  "article_folders": [
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a"
+  ],
+  "question_edits_paths": [
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits"
+  ],
+  "commands": {
+    "compose": "for id in 16ba355e-811c-4191-98c2-c7fac22ca59b 915c1016-2ed6-4b47-b2ca-f12965c6bc9f 42eb0c36-da27-4b7e-a1e3-4ed915bfca8d 3ad2ad2a-e525-44c3-8edf-bf7036d9c31a 850a66f9-db5d-4068-a763-0bc4c1d9872a; do bun run content-audit:compose -- --article-id \"$id\" --overwrite; done",
+    "diff": "for id in 16ba355e-811c-4191-98c2-c7fac22ca59b 915c1016-2ed6-4b47-b2ca-f12965c6bc9f 42eb0c36-da27-4b7e-a1e3-4ed915bfca8d 3ad2ad2a-e525-44c3-8edf-bf7036d9c31a 850a66f9-db5d-4068-a763-0bc4c1d9872a; do bun run content-audit:diff -- --article-id \"$id\" --summary; done",
+    "validate": "for id in 16ba355e-811c-4191-98c2-c7fac22ca59b 915c1016-2ed6-4b47-b2ca-f12965c6bc9f 42eb0c36-da27-4b7e-a1e3-4ed915bfca8d 3ad2ad2a-e525-44c3-8edf-bf7036d9c31a 850a66f9-db5d-4068-a763-0bc4c1d9872a; do bun run content-audit:validate -- --article-id \"$id\" --summary; done",
+    "ui_block_edit_validation": "for id in 16ba355e-811c-4191-98c2-c7fac22ca59b 915c1016-2ed6-4b47-b2ca-f12965c6bc9f 42eb0c36-da27-4b7e-a1e3-4ed915bfca8d 3ad2ad2a-e525-44c3-8edf-bf7036d9c31a 850a66f9-db5d-4068-a763-0bc4c1d9872a; do bun run content-audit:ui-block-edits -- --article-id \"$id\"; done",
+    "targeted_tests": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+    "scoped_git_diff_check": "git diff --check -- .ai/content-audit-export .ai/03_plans/source-audited-local-first-batches-handoff.md"
+  },
+  "checks": {
+    "manifest_scope": {
+      "status": "PASS",
+      "manifest_path": "/Users/philiplewis/slatecamp/.ai/03_plans/production-line-batch-090-manifest.json",
+      "selected_article_count": 5,
+      "improved_article_folders": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a"
+      ],
+      "question_edits_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits"
+      ]
+    },
+    "compose": {
+      "status": "PASS",
+      "articles": [
+        {
+          "article_id": "16ba355e-811c-4191-98c2-c7fac22ca59b",
+          "slug": "location-on-property-and-exterior-walls",
+          "blockers": 0,
+          "candidate_hash": "sha256:869c8dabcc353aeed44d8b2d8963029272c2c8754a0e6db9c19cf2d092d3c68d"
+        },
+        {
+          "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+          "slug": "ceiling-heights-and-room-sizes",
+          "blockers": 0,
+          "candidate_hash": "sha256:aed28c2c1edbb55117a6e5059c953d9e17d182c9b78372face61b777e15d0022"
+        },
+        {
+          "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+          "slug": "minimum-requirements-group-a-dwellings",
+          "blockers": 0,
+          "candidate_hash": "sha256:242dd1ecce682e4c41557982285a154eb67c743850bdafd875783f6fbbf3b4e8"
+        },
+        {
+          "article_id": "3ad2ad2a-e525-44c3-8edf-bf7036d9c31a",
+          "slug": "rule-i-general-provisions",
+          "blockers": 0,
+          "candidate_hash": "sha256:f4865e2a1587f153830c8dd3c69625cef309cdd0ec22662db33ff27f30d80dd9"
+        },
+        {
+          "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
+          "slug": "minimum-parking-requirements",
+          "blockers": 0,
+          "candidate_hash": "sha256:abf2d5be7f14a8edd5cc694da8ab91e6a9b251bae59f02593058ac2c14bbd6cc"
+        }
+      ]
+    },
+    "diff": {
+      "status": "PASS",
+      "articles": [
+        {
+          "article_id": "16ba355e-811c-4191-98c2-c7fac22ca59b",
+          "slug": "location-on-property-and-exterior-walls",
+          "safe_to_push": true,
+          "blockers": [],
+          "changed": true
+        },
+        {
+          "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+          "slug": "ceiling-heights-and-room-sizes",
+          "safe_to_push": true,
+          "blockers": [],
+          "changed": true
+        },
+        {
+          "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+          "slug": "minimum-requirements-group-a-dwellings",
+          "safe_to_push": true,
+          "blockers": [],
+          "changed": true
+        },
+        {
+          "article_id": "3ad2ad2a-e525-44c3-8edf-bf7036d9c31a",
+          "slug": "rule-i-general-provisions",
+          "safe_to_push": true,
+          "blockers": [],
+          "changed": true
+        },
+        {
+          "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
+          "slug": "minimum-parking-requirements",
+          "safe_to_push": true,
+          "blockers": [],
+          "changed": true
+        }
+      ]
+    },
+    "validate": {
+      "status": "PASS",
+      "blockers": 0,
+      "warnings": "component-usage warning only for ceiling-heights-and-room-sizes, minimum-requirements-group-a-dwellings, and minimum-parking-requirements"
+    },
+    "ui_block_edit_validation": {
+      "status": "PASS",
+      "articles": [
+        {
+          "article_id": "16ba355e-811c-4191-98c2-c7fac22ca59b",
+          "slug": "location-on-property-and-exterior-walls",
+          "valid": true,
+          "blockers": [],
+          "warnings": []
+        },
+        {
+          "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+          "slug": "ceiling-heights-and-room-sizes",
+          "valid": true,
+          "blockers": [],
+          "warnings": []
+        },
+        {
+          "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+          "slug": "minimum-requirements-group-a-dwellings",
+          "valid": true,
+          "blockers": [],
+          "warnings": []
+        },
+        {
+          "article_id": "3ad2ad2a-e525-44c3-8edf-bf7036d9c31a",
+          "slug": "rule-i-general-provisions",
+          "valid": true,
+          "blockers": [],
+          "warnings": []
+        },
+        {
+          "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
+          "slug": "minimum-parking-requirements",
+          "valid": true,
+          "blockers": [],
+          "warnings": []
+        }
+      ]
+    },
+    "scoped_json_parse": {
+      "status": "PASS",
+      "json_files": 231,
+      "failures": []
+    },
+    "placeholder_internal_note_source_gap_scan": {
+      "status": "PASS",
+      "findings": [],
+      "scope": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/candidate.md"
+      ],
+      "patterns": [
+        "SLATECAMP_UI_BLOCK",
+        "TODO",
+        "FIXME",
+        "VERIFY",
+        "source gap",
+        "unsupported source",
+        "internal note",
+        "manually corrupted"
+      ]
+    },
+    "candidate_raw_ui_placeholder_scan": {
+      "status": "PASS",
+      "findings": []
+    },
+    "source_hash_checks": {
+      "status": "PASS",
+      "checks": 10,
+      "failures": []
+    },
+    "source_audit_evidence_gate": {
+      "status": "PASS",
+      "evidence_files": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/source-audit-evidence.json"
+      ],
+      "failures": []
+    },
+    "linked_question_question_edit_count_checks": {
+      "status": "PASS",
+      "expected_questions": 171,
+      "actual_question_edits": 171,
+      "articles": [
+        {
+          "article_id": "16ba355e-811c-4191-98c2-c7fac22ca59b",
+          "slug": "location-on-property-and-exterior-walls",
+          "linked_questions": 40,
+          "source_safe_question_edit_files": 40,
+          "missing_question_edits": [],
+          "extra_question_edits": [],
+          "files_without_question_id": [],
+          "status": "PASS"
+        },
+        {
+          "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+          "slug": "ceiling-heights-and-room-sizes",
+          "linked_questions": 37,
+          "source_safe_question_edit_files": 37,
+          "missing_question_edits": [],
+          "extra_question_edits": [],
+          "files_without_question_id": [],
+          "status": "PASS"
+        },
+        {
+          "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+          "slug": "minimum-requirements-group-a-dwellings",
+          "linked_questions": 36,
+          "source_safe_question_edit_files": 36,
+          "missing_question_edits": [],
+          "extra_question_edits": [],
+          "files_without_question_id": [],
+          "status": "PASS"
+        },
+        {
+          "article_id": "3ad2ad2a-e525-44c3-8edf-bf7036d9c31a",
+          "slug": "rule-i-general-provisions",
+          "linked_questions": 30,
+          "source_safe_question_edit_files": 30,
+          "missing_question_edits": [],
+          "extra_question_edits": [],
+          "files_without_question_id": [],
+          "status": "PASS"
+        },
+        {
+          "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
+          "slug": "minimum-parking-requirements",
+          "linked_questions": 28,
+          "source_safe_question_edit_files": 28,
+          "missing_question_edits": [],
+          "extra_question_edits": [],
+          "files_without_question_id": [],
+          "status": "PASS"
+        }
+      ]
+    },
+    "minimum_parking_requirements_blocker_resolution": {
+      "status": "PASS",
+      "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits",
+      "manifest_linked_question_count": 28,
+      "reservation_count_including_index_json": 29,
+      "corrected_source_safe_question_edit_count": 28,
+      "linked_question_count": 28,
+      "remediation": {
+        "original_manifest_note": "Reservation counted 29 JSON files in question-edits for 28 linked questions because index.json was included.",
+        "root_cause": "index.json was a Batch 023 aggregate edit ledger without a question_id, not an individual linked-question edit.",
+        "remediation": "Deleted question-edits/index.json; preserved 28 source-safe question edit JSON files with question_id values matching the 28 linked questions exactly.",
+        "corrected_manifest_count": 28,
+        "blockers_after_remediation": 0
+      },
+      "index_json_present_after_remediation": false,
+      "missing_question_edits": [],
+      "extra_question_edits": []
+    },
+    "stale_compose_error_scan": {
+      "status": "PASS",
+      "stale_files": []
+    },
+    "scenario_enrichment": {
+      "status": "PASS",
+      "eligible_added": 5,
+      "eligible_deferred": 0,
+      "not_applicable": 0,
+      "articles": [
+        {
+          "article_id": "16ba355e-811c-4191-98c2-c7fac22ca59b",
+          "slug": "location-on-property-and-exterior-walls",
+          "status": "eligible-added",
+          "summary": "Permit-review scenario for two buildings on one lot using public-space access, assumed property line, opening protection, protected-opening cap, and projection checks.",
+          "source_basis": [
+            "PD 1096 2004 Revised IRR, Rule VII Section 704; refined markdown lines 1337-1352 and raw markdown lines 1538-1555"
+          ]
+        },
+        {
+          "article_id": "915c1016-2ed6-4b47-b2ca-f12965c6bc9f",
+          "slug": "ceiling-heights-and-room-sizes",
+          "status": "eligible-added",
+          "summary": "Room-check scenario applying floor area, least dimension, natural-ventilation ceiling height, and window-opening minimums.",
+          "source_basis": [
+            "PD 1096 2004 Revised IRR, Rule VIII Sections 805-808; refined markdown lines 2352-2384 and raw markdown lines 2659-2696"
+          ]
+        },
+        {
+          "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+          "slug": "minimum-requirements-group-a-dwellings",
+          "status": "eligible-added",
+          "summary": "Inside-lot Group A dwelling scenario applying occupancy, property-line distance, footing, stair, and referenced Rule VIII checks.",
+          "source_basis": [
+            "PD 1096 2004 Revised IRR, Rule VII Section 708; refined markdown lines 1789-1845 and raw markdown lines 2046-2108",
+            "PD 1096 2004 Revised IRR, Rule VIII Sections 805-808 for referenced room and window checks"
+          ]
+        },
+        {
+          "article_id": "3ad2ad2a-e525-44c3-8edf-bf7036d9c31a",
+          "slug": "rule-i-general-provisions",
+          "status": "eligible-added",
+          "summary": "Conversion-classification scenario using Rule I scope, safety, maintenance, and definitions before later technical rules.",
+          "source_basis": [
+            "PD 1096 2004 Revised IRR, Rule I Sections 101-106; refined markdown lines 69-112"
+          ]
+        },
+        {
+          "article_id": "850a66f9-db5d-4068-a763-0bc4c1d9872a",
+          "slug": "minimum-parking-requirements",
+          "status": "eligible-added",
+          "summary": "Parking-count scenario separating the ordinary PD 1096 off-street/on-site count from the BP 344 accessible-parking overlay.",
+          "source_basis": [
+            "PD 1096 RIRR Table VII.4; refined markdown lines 1627-1694",
+            "BP 344 2024 IRR Table A.6.1 accessible parking slot requirements; refined markdown lines 230-305"
+          ]
+        }
+      ]
+    },
+    "targeted_tests": {
+      "status": "PASS",
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "pass": 34,
+      "fail": 0,
+      "expects": 328
+    },
+    "scoped_git_diff_check": {
+      "status": "PASS",
+      "command": "git diff --check -- .ai/content-audit-export .ai/03_plans/source-audited-local-first-batches-handoff.md",
+      "note": "Passed after final Batch 090 artifact and handoff updates."
+    },
+    "local_only_side_effects": {
+      "supabase_push_attempted": false,
+      "deploy_attempted": false,
+      "commit_attempted": false
+    }
+  }
+}

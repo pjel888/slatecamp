@@ -1,6 +1,6 @@
 # Content Diff Report: ceiling-heights-and-room-sizes
 
-Generated: 2026-05-10T10:57:33.806Z
+Generated: 2026-05-12T07:55:23.399Z
 Article ID: 915c1016-2ed6-4b47-b2ca-f12965c6bc9f
 Changed: true
 Safe to push locally: true
@@ -8,14 +8,14 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:9b9e79bab79c07f394d890c1a133746acec9fada98b884b188ad2d3776e899bd`
-- Normalized: `sha256:2ca8b333b10abaedd0438eff65cadec07e5927ce49b3fd0e889abbd6fc2cead7`
-- Candidate: `sha256:2ca8b333b10abaedd0438eff65cadec07e5927ce49b3fd0e889abbd6fc2cead7`
+- Normalized: `sha256:aed28c2c1edbb55117a6e5059c953d9e17d182c9b78372face61b777e15d0022`
+- Candidate: `sha256:aed28c2c1edbb55117a6e5059c953d9e17d182c9b78372face61b777e15d0022`
 
 ## Line summary
 
-- Changed lines: 381
+- Changed lines: 380
 - Inserted lines: 0
-- Deleted lines: 314
+- Deleted lines: 310
 
 ## UI block preservation
 

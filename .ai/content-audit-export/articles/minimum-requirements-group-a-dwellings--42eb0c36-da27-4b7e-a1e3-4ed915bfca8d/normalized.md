@@ -48,6 +48,10 @@ Electrical installations must conform to the Philippine Electrical Code. Mechani
 
 Section 709 states that requirements for other group occupancies are promulgated separately by the Secretary and cover allowable construction, height and area, location on property, exit facilities, light and ventilation, sanitation, vertical openings, fire extinguishing systems, and special hazards.
 
+## Real World Scenario
+
+For a proposed two-storey Group A dwelling on an inside lot, check Section 708 in layers: lot occupancy must not exceed 80%, the dwelling must be at least 2.00 m from the property line, footings must be at least 250 mm thick and 600 mm below ground surface, and stairs must be at least 750 mm clear width with a 200 mm rise and at least 200 mm run. Then use the Rule VIII provisions referenced by Section 708 for room height, room size, and window-opening checks.
+
 ## Exam Values To Memorize
 
 | Requirement | Source-grounded value |

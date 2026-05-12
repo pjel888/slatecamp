@@ -1,7 +1,7 @@
 {
   "artifact_type": "source-audit-evidence",
-  "audit_date": "2026-05-10",
-  "audited_at": "2026-05-10T18:13:43+08:00",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T15:56:23+08:00",
   "audit_mode": "local_source_audit_no_supabase",
   "protocols_applied": [
     ".ai/06_specs/deep/05-reference/content-audit-editor-protocol/01-editor-operating-protocol.md",
@@ -22,8 +22,8 @@
     "question_edits_folder": ".ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits",
     "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits",
     "linked_questions_sha256": "sha256:0a7c8616325ad0fc79f07d388a18ce4f9d473c2ce98c16ed581c94e9604b8224",
-    "candidate_sha256": "sha256:df71e17fc68a7f4ee4b0c50ce3cf1716f7a0a4a9ffcc8df82bbcebb3b57b0e56",
-    "normalized_sha256": "sha256:df71e17fc68a7f4ee4b0c50ce3cf1716f7a0a4a9ffcc8df82bbcebb3b57b0e56",
+    "candidate_sha256": "sha256:869c8dabcc353aeed44d8b2d8963029272c2c8754a0e6db9c19cf2d092d3c68d",
+    "normalized_sha256": "sha256:869c8dabcc353aeed44d8b2d8963029272c2c8754a0e6db9c19cf2d092d3c68d",
     "sources_sha256": "sha256:22abc592b25b3772cbaa006308467d60d4b0213b1fc2f43ba5ef6229a86e93c3"
   },
   "classification": {
@@ -160,5 +160,38 @@
     "blockers": 0,
     "warnings": 0,
     "checked_at": "2026-05-10T18:18:27+08:00"
+  },
+  "batch_090_local_first_review": {
+    "batch_id": "source-audited-article-batch-090-local-first",
+    "reviewed_at": "2026-05-12T15:56:23+08:00",
+    "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+    "blocker_count": 0,
+    "local_only": {
+      "supabase_push_attempted": false,
+      "deploy_attempted": false,
+      "commit_attempted": false
+    },
+    "scenario_enrichment": {
+      "status": "eligible-added",
+      "section_added": true,
+      "source_safe": true,
+      "exam_useful": true,
+      "summary": "Permit-review scenario for two buildings on one lot using public-space access, assumed property line, opening protection, protected-opening cap, and projection checks.",
+      "source_basis": [
+        "PD 1096 2004 Revised IRR, Rule VII Section 704; refined markdown lines 1337-1352 and raw markdown lines 1538-1555"
+      ]
+    },
+    "question_edit_count_check": {
+      "linked_questions": 40,
+      "source_safe_question_edit_files": 40,
+      "non_question_json_files_in_question_edits": [],
+      "missing_question_edits": [],
+      "extra_question_edits": [],
+      "status": "PASS"
+    },
+    "source_gap_status": "PASS",
+    "raw_source_truth": "local_raw_source_layer_primary",
+    "normalized_sha256": "sha256:869c8dabcc353aeed44d8b2d8963029272c2c8754a0e6db9c19cf2d092d3c68d",
+    "candidate_sha256": "sha256:869c8dabcc353aeed44d8b2d8963029272c2c8754a0e6db9c19cf2d092d3c68d"
   }
 }

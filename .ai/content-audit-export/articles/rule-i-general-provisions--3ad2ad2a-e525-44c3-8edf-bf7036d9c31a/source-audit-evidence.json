@@ -1,8 +1,8 @@
 {
   "artifact_type": "source-audit-evidence",
   "batch_id": "source-audited-article-batch-009",
-  "audit_date": "2026-05-10",
-  "audited_at": "2026-05-10T18:42:00.579+08:00",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T15:56:23+08:00",
   "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
   "protocols_applied": [
     "AGENTS.md local-first content-audit workflow",
@@ -20,8 +20,8 @@
     "candidate_path": ".ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/candidate.md",
     "sources_path": ".ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/sources.json",
     "question_edits_folder": ".ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits",
-    "normalized_sha256": "sha256:1f9e90dbafd85b46e8af64b15a3cb0743ba41c6b36bdcda53a1fe0d9a1807658",
-    "candidate_sha256": "sha256:1f9e90dbafd85b46e8af64b15a3cb0743ba41c6b36bdcda53a1fe0d9a1807658",
+    "normalized_sha256": "sha256:f4865e2a1587f153830c8dd3c69625cef309cdd0ec22662db33ff27f30d80dd9",
+    "candidate_sha256": "sha256:f4865e2a1587f153830c8dd3c69625cef309cdd0ec22662db33ff27f30d80dd9",
     "linked_questions_sha256": "sha256:28c5626ef856615edfb8a9c8ee43f6ec39c072212ae416750c8adf129c37091c",
     "sources_sha256": "sha256:8711fdb38d772858c63c860e37343f7f60ba302ef3a26f8242bc1277d489de47"
   },
@@ -607,5 +607,38 @@
     "local_first_status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
     "safe_for_supabase_upload": true,
     "publishing_note": "Final publishing still requires Supabase dry-run stale checks and human/editor review before any apply."
+  },
+  "batch_090_local_first_review": {
+    "batch_id": "source-audited-article-batch-090-local-first",
+    "reviewed_at": "2026-05-12T15:56:23+08:00",
+    "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+    "blocker_count": 0,
+    "local_only": {
+      "supabase_push_attempted": false,
+      "deploy_attempted": false,
+      "commit_attempted": false
+    },
+    "scenario_enrichment": {
+      "status": "eligible-added",
+      "section_added": true,
+      "source_safe": true,
+      "exam_useful": true,
+      "summary": "Conversion-classification scenario using Rule I scope, safety, maintenance, and definitions before later technical rules.",
+      "source_basis": [
+        "PD 1096 2004 Revised IRR, Rule I Sections 101-106; refined markdown lines 69-112"
+      ]
+    },
+    "question_edit_count_check": {
+      "linked_questions": 30,
+      "source_safe_question_edit_files": 30,
+      "non_question_json_files_in_question_edits": [],
+      "missing_question_edits": [],
+      "extra_question_edits": [],
+      "status": "PASS"
+    },
+    "source_gap_status": "PASS",
+    "raw_source_truth": "local_raw_source_layer_primary",
+    "normalized_sha256": "sha256:f4865e2a1587f153830c8dd3c69625cef309cdd0ec22662db33ff27f30d80dd9",
+    "candidate_sha256": "sha256:f4865e2a1587f153830c8dd3c69625cef309cdd0ec22662db33ff27f30d80dd9"
   }
 }

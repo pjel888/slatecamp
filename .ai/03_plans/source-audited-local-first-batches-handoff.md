@@ -1,6 +1,6 @@
 # Source-Audited Local-First Batches Handoff
 
-Updated: 2026-05-12T09:45:00+08:00
+Updated: 2026-05-12T16:11:16+08:00
 
 ## Operating Mode
 
@@ -11,15 +11,15 @@ Updated: 2026-05-12T09:45:00+08:00
 
 ## Completed Batches
 
-- Source-audited local-first article batches 001 through 086 are recorded under `/Users/philiplewis/slatecamp/.ai/content-audit-export`.
-- Latest completed batch: Batch 086, status `PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW`, report `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-086-local-first-report.md`, ledger `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-086-local-first-ledger.json`, scoped checks `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-086-local-first-scoped-checks.json`.
+- Source-audited local-first article batches 001 through 090 are recorded under `/Users/philiplewis/slatecamp/.ai/content-audit-export`.
+- Latest completed batch: Batch 090, status `PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW`, report `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-090-local-first-report.md`, ledger `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-090-local-first-ledger.json`, scoped checks `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-090-local-first-scoped-checks.json`.
 - Previous completed checkpoint before this session: Batch 030, status `PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW`, report `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-030-local-first-report.md`, ledger `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-030-local-first-ledger.json`, scoped checks `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-030-local-first-scoped-checks.json`.
 
 ## Current Batch State
 
-- Last completed batch: Batch 086
-- Current batch number for next continuation: Batch 087
-- Current worker/session state: Batch 086 completed locally with blockers=0; Batch 087 is ready for pre-selection with Batch 001 through Batch 086 IDs excluded. No Supabase push, deploy, or commit attempted.
+- Last completed batch: Batch 090
+- Current batch number for next continuation: Batch 091
+- Current worker/session state: Batch 090 completed locally with blockers=0 from the fixed Batch 090 manifest only; Batch 091 is reserved for a separate run. No Supabase push, deploy, or commit attempted.
 - Latest completed Batch 082 selection rule used: five unpassed sourceable LEA building-technology/materials/estimating clusters with linked questions and local raw source families, excluding IDs recorded in source-audited Batch 001 through Batch 081 artifacts.
 - Active Batch 083 selection rule used: five unpassed sourceable LEA building-materials and metals clusters with linked questions and exact readable local raw source families, excluding IDs recorded in source-audited Batch 001 through Batch 082 artifacts.
 - Active Batch 084 selection rule used: five unpassed sourceable LEA building-technology/construction-systems clusters with linked questions and exact readable local raw source families, excluding IDs recorded in source-audited Batch 001 through Batch 083 artifacts.
@@ -32,6 +32,7 @@ Updated: 2026-05-12T09:45:00+08:00
 - Batch 085 prior-batch exclusion check: PASS; Batch 085 blockers=0.
 - Batch 086 prior-batch exclusion check: PASS; selected IDs were checked against Batch 001 through Batch 085 artifacts and this handoff before edits.
 - Batch 086 completion check: PASS; report, ledger, scoped checks, and post-batch handoff exist with blockers=0.
+- Batch 090 completion check: PASS; report, ledger, scoped checks, and post-batch handoff exist with blockers=0. Batch 091 readiness is separate-run only; this run stopped after Batch 090.
 
 ## Batch 081 Pre-Selection Checkpoint
 
@@ -7667,6 +7668,102 @@ Batch 090 source families selected for audit:
 
 Batch 090 unresolved blockers at this checkpoint: 0 inherited; 1 reserved (`minimum-parking-requirements` question-edit count mismatch). Do not advance to Batch 091 execution unless Batch 090 report, ledger, scoped checks, and post-batch handoff exist with zero blockers.
 
+## Batch 090 Pre-Start Execution Checkpoint
+
+- Updated: 2026-05-12T15:46:37+08:00
+- Batch: 090
+- Fixed manifest: `/Users/philiplewis/slatecamp/.ai/03_plans/production-line-batch-090-manifest.json`
+- Execution state: Batch 090 started locally from the fixed manifest only; no Batch 091 work may begin in this run.
+- Inherited blocker status: Batch 089 accepted as `3957e8c08` with blockers=0; reservation for Batches 090-092 committed and pushed as `d2581499a`.
+- Supabase/deploy/commit state: no Supabase push, deploy, or commit attempted or allowed in this run.
+- Pending gates: local raw-source audit, roundtrip preservation, compose/diff/validate, UI-block-edit validation, scoped JSON parse, placeholder/internal-note/source-gap scans, source hash checks, linked-question/question-edit count checks, stale compose-error scan, targeted content-audit tests, scoped `git diff --check`, Batch 090 report, Batch 090 ledger, Batch 090 scoped checks, and this handoff's Batch 090 post-batch completion update.
+
+Batch 090 exact execution scope:
+
+| # | Article ID | Slug | Article folder | Question-edits path | Linked questions |
+|---|---|---|---|---|---:|
+| 1 | `16ba355e-811c-4191-98c2-c7fac22ca59b` | `location-on-property-and-exterior-walls` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits` | 40 |
+| 2 | `915c1016-2ed6-4b47-b2ca-f12965c6bc9f` | `ceiling-heights-and-room-sizes` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits` | 37 |
+| 3 | `42eb0c36-da27-4b7e-a1e3-4ed915bfca8d` | `minimum-requirements-group-a-dwellings` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits` | 36 |
+| 4 | `3ad2ad2a-e525-44c3-8edf-bf7036d9c31a` | `rule-i-general-provisions` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits` | 30 |
+| 5 | `850a66f9-db5d-4068-a763-0bc4c1d9872a` | `minimum-parking-requirements` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits` | 28 |
+
+Batch 090 expected source families:
+
+- PD 1096 RIRR 2004 DPWH Official raw PDF: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf`
+- BP 344 2024 Revised IRR raw PDF for parking cross-check only: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf`
+
+Batch 090 known blocker-resolution-needed notes:
+
+- `minimum-parking-requirements` reservation records 28 linked questions but 29 JSON files in `question-edits` when `index.json` is counted. Before acceptance, determine whether `index.json` is an aggregate ledger or an orphaned question edit, preserve/create exactly one source-safe question-edit JSON per linked question, and record the remediation in Batch 090 report, ledger, scoped checks, and this handoff.
+
+## Batch 090 Post-Batch Completion Checkpoint
+
+- Updated: 2026-05-12T16:11:16+08:00
+- Batch: 090
+- Status: `PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW`
+- Fixed manifest: `/Users/philiplewis/slatecamp/.ai/03_plans/production-line-batch-090-manifest.json`
+- Completed article count: 5
+- Completed linked-question count: 171
+- Completed source-safe question-edit count: 171
+- Corrected manifest question-edit count: 171; the reservation's 172 count included non-question `index.json` in the parking question-edits folder.
+- Unresolved blockers: 0
+- Supabase/deploy/commit state: no Supabase push, deploy, or commit attempted.
+- Report: `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-090-local-first-report.md`
+- Ledger: `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-090-local-first-ledger.json`
+- Scoped checks: `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-090-local-first-scoped-checks.json`
+- Inherited blocker status: Batch 089 accepted as `3957e8c08` with blockers=0; reservation for Batches 090-092 committed and pushed as `d2581499a`.
+- Next batch readiness: Batch 091 may begin in a separate run only because Batch 090 blockers=0. This Batch 090 run stops here and did not start Batch 091.
+
+| # | Article ID | Slug | Improved normalized path | Improved candidate path | Question-edits path | Linked questions | Question edits | Scenario status |
+|---|---|---|---|---|---|---:|---:|---|
+| 1 | `16ba355e-811c-4191-98c2-c7fac22ca59b` | `location-on-property-and-exterior-walls` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/normalized.md` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/candidate.md` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/location-on-property-and-exterior-walls--16ba355e-811c-4191-98c2-c7fac22ca59b/question-edits` | 40 | 40 | `eligible-added` |
+| 2 | `915c1016-2ed6-4b47-b2ca-f12965c6bc9f` | `ceiling-heights-and-room-sizes` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/normalized.md` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/candidate.md` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/ceiling-heights-and-room-sizes--915c1016-2ed6-4b47-b2ca-f12965c6bc9f/question-edits` | 37 | 37 | `eligible-added` |
+| 3 | `42eb0c36-da27-4b7e-a1e3-4ed915bfca8d` | `minimum-requirements-group-a-dwellings` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/normalized.md` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/candidate.md` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits` | 36 | 36 | `eligible-added` |
+| 4 | `3ad2ad2a-e525-44c3-8edf-bf7036d9c31a` | `rule-i-general-provisions` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/normalized.md` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/candidate.md` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/rule-i-general-provisions--3ad2ad2a-e525-44c3-8edf-bf7036d9c31a/question-edits` | 30 | 30 | `eligible-added` |
+| 5 | `850a66f9-db5d-4068-a763-0bc4c1d9872a` | `minimum-parking-requirements` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/normalized.md` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/candidate.md` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits` | 28 | 28 | `eligible-added` |
+
+Batch 090 source evidence recorded:
+
+- PD 1096 RIRR 2004 DPWH Official raw PDF: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf`; local raw/refined locators covered Rule I Sections 101-106, Rule VII Section 704, Rule VII Section 708, Table VII.4 parking requirements, and Rule VIII Sections 805-808.
+- BP 344 2024 Revised IRR raw PDF: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf`; local refined locators covered accessible parking support for `minimum-parking-requirements`.
+- Source rows recorded: 6; source evidence claims recorded: 118; source hash checks: 10, failures=0.
+- Primary truth remained local/raw; no internet evidence was used as primary cited support.
+
+Batch 090 known blocker resolution:
+
+- `minimum-parking-requirements` had 28 linked questions and 29 JSON files only when `question-edits/index.json` was counted.
+- True source of mismatch: `index.json` was a Batch 023 aggregate edit ledger without a `question_id`, not an individual linked-question edit.
+- Remediation: deleted `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/minimum-parking-requirements--850a66f9-db5d-4068-a763-0bc4c1d9872a/question-edits/index.json`; preserved 28 source-safe question-edit JSON files with IDs matching the 28 linked questions exactly.
+- Result: parking linked-question/question-edit count PASS, 28/28; blockers=0.
+
+Batch 090 scenario enrichment results:
+
+- `eligible-added`: 5
+- `eligible-deferred`: 0
+- `not-applicable`: 0
+- Real World Scenario sections were added only where supported by local PD 1096 or BP 344 source evidence.
+
+Batch 090 quality protocol results:
+
+- Compose: 5/5 pass, blockers=0.
+- Diff: 5/5 pass, `safe_to_push=true`, blockers=0.
+- Validate: 5/5 pass, blockers=0; expected `component-usage.json` warnings only for three articles.
+- UI-block edits: 5/5 pass, blockers=0, warnings=0.
+- Scoped JSON parse: 231 article JSON files parsed, failures=0.
+- Placeholder/internal-note/source-gap scan: matches=0 in Batch 090 normalized/candidate scope; candidates contain no raw `SLATECAMP_UI_BLOCK` placeholders.
+- Source hash checks: 10 checks, failures=0.
+- Linked-question/question-edit count checks: 5/5 pass; 171 linked questions and 171 source-safe question edits.
+- Stale compose-error scan: PASS; stale `compose-error.json` files removed after successful compose for the three affected Batch 090 article folders.
+- Targeted tests: `bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts` -> PASS, 34 pass, 0 fail, 328 expects.
+- Scoped `git diff --check`: PASS after final artifact and handoff updates.
+
+Batch 090 final state:
+
+- Status: `PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW`
+- Blockers: 0
+- Stop condition: Batch 090 complete; do not start Batch 091 in this run.
+
 ## Batch 091 Pre-Selection Checkpoint
 
 - Updated: 2026-05-12T07:27:54+08:00
@@ -7674,7 +7771,7 @@ Batch 090 unresolved blockers at this checkpoint: 0 inherited; 1 reserved (`mini
 - Selection rule applied: reserve five unpassed high-value LEA construction-systems and fire-safety clusters from `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles` with linked questions and exact readable local raw PDFs under `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer`, excluding article IDs recorded in source-audited Batch 001 through Batch 090 reports, ledgers, scoped checks, dated recovery artifacts, and this handoff.
 - Prior-batch exclusion check: PASS; selected IDs were checked against source-audited Batch 001 through Batch 090 artifacts under `/Users/philiplewis/slatecamp/.ai/content-audit-export` plus this handoff, and no selected Batch 091 article ID appeared in the prior-batch artifact set.
 - Batch cohesion note: Batch 091 covers construction technology (excavation/foundation, glass/glazing), fire safety (fire zones, dangerous buildings), and building-code enforcement (certificate of occupancy) — mixing MATL, UTIL, and PRAC subjects for breadth.
-- Inherited blocker status: Batch 090 blockers=0 (assumed after completion).
+- Inherited blocker status: Batch 090 blockers=0; report, ledger, scoped checks, and post-batch handoff exist. Batch 091 remains reserved only until a separate run starts it.
 - Expected raw PDF/source families: PD 1096 RIRR 2004 DPWH Official local raw PDF; Building Construction Illustrated (5th Edition) local raw PDF.
 - Pending validation gates: source-audit raw PDFs first, compose, diff, validate, UI-block-edit validation, scoped JSON parse, placeholder/internal-note/source-gap scan, source hash checks, linked-question/question-edit count checks, stale compose-error scan, targeted content-audit tests, scoped `git diff --check`, Batch 091 report, Batch 091 ledger, Batch 091 scoped checks, and this handoff's Batch 091 post-batch completion update.
 - Supabase/deploy/commit state: no Supabase push, deploy, or commit attempted.
@@ -7685,7 +7782,7 @@ Batch 090 unresolved blockers at this checkpoint: 0 inherited; 1 reserved (`mini
 - Batch: 091
 - Selection rule used: reserved five unpassed high-value construction-systems and fire-safety clusters with linked questions and exact local source families, excluding IDs recorded in source-audited Batch 001 through Batch 090 artifacts.
 - Current worker/session state: Batch 091 reserved only; local raw/refined source locator audit not yet started; article and question-edits repairs not yet applied at this checkpoint.
-- Inherited blocker status: Batch 090 blockers=0 (assumed after completion).
+- Inherited blocker status: Batch 090 blockers=0; Batch 091 remains reserved only until a separate run starts it.
 - Prior-batch exclusion check: PASS.
 - Validation state: pending reservation only; do not mark Batch 091 complete until compose, diff, validate, UI-block-edit validation, scoped JSON/placeholder/source-gap/source-hash/question-edit/stale-error checks, targeted content-audit tests, report, ledger, scoped checks, and post-batch handoff are present with zero blockers.
 

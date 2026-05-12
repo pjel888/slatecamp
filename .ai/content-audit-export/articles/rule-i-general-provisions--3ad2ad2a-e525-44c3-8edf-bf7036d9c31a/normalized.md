@@ -95,6 +95,10 @@ Section 106 defines terms that often decide the correct answer.
 
 Rule I supplies the governing vocabulary. If a question asks whether work is an addition, alteration, conversion, renovation, repair, moving, or demolition, start with Section 106. If a question asks about safe construction, maintenance, or site safety, start with Sections 104 and 105. If a question asks for a dimensional rule, use Rule I only for framework and then go to the later section that gives the technical value.
 
+## Real World Scenario
+
+When an owner changes an existing building to a different use or occupancy, classify the work first under Section 106 as a conversion. Then use Section 103 to confirm that the IRR applies to the building work, Section 104 for the continuing safe and sanitary condition requirement, and the later technical rule for the specific dimension, exit, sanitation, or site-control value.
+
 ## LEA Recall Anchors
 
 - Rule I is the framework rule: title, policy, scope, safety obligations, site requirements, and definitions.

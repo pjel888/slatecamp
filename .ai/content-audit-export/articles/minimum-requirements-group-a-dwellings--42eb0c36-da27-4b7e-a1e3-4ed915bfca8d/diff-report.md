@@ -1,6 +1,6 @@
 # Content Diff Report: minimum-requirements-group-a-dwellings
 
-Generated: 2026-05-10T10:57:33.908Z
+Generated: 2026-05-12T07:55:23.476Z
 Article ID: 42eb0c36-da27-4b7e-a1e3-4ed915bfca8d
 Changed: true
 Safe to push locally: true
@@ -8,14 +8,14 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:72e179a4e86b7d791f72472e35457a6508a27f48536e9d9661c4a98a8ddcd451`
-- Normalized: `sha256:5fdb7650e3b7ed8f02c8643411c700c41435d761e47372bb58e9cdcf86ae1440`
-- Candidate: `sha256:5fdb7650e3b7ed8f02c8643411c700c41435d761e47372bb58e9cdcf86ae1440`
+- Normalized: `sha256:242dd1ecce682e4c41557982285a154eb67c743850bdafd875783f6fbbf3b4e8`
+- Candidate: `sha256:242dd1ecce682e4c41557982285a154eb67c743850bdafd875783f6fbbf3b4e8`
 
 ## Line summary
 
-- Changed lines: 387
+- Changed lines: 385
 - Inserted lines: 0
-- Deleted lines: 331
+- Deleted lines: 327
 
 ## UI block preservation
 

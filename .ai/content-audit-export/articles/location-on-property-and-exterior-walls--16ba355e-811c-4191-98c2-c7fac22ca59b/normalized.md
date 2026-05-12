@@ -55,6 +55,10 @@ If the buildings have different occupancy groups or construction types, apply th
 
 Rule VI defines fire-resistive rating and fire-resistive time period rating. Section 704 depends on that vocabulary when it refers to fire resistance, opening protection, and exterior wall requirements. However, Section 704 itself is the primary location-on-property rule for this article.
 
+## Real World Scenario
+
+During permit review for two residential buildings on one lot, first confirm that each building adjoins or directly accesses a public space, yard, or street on at least one side. If their walls face each other, apply Section 704's assumed-property-line rule before checking exterior wall opening protection, the 50 percent protected-opening cap per storey, and any projection beyond the exterior wall.
+
 ## LEA Recall Anchors
 
 Use this checklist:

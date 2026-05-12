@@ -1,8 +1,8 @@
 {
   "artifact_type": "source-audit-evidence",
   "batch_id": "source-audited-article-batch-010",
-  "audit_date": "2026-05-10",
-  "audited_at": "2026-05-10T10:55:01.585+08:00",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T15:56:23+08:00",
   "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
   "protocols_applied": [
     "AGENTS.md local-first content-audit workflow",
@@ -20,8 +20,8 @@
     "candidate_path": ".ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/candidate.md",
     "sources_path": ".ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/sources.json",
     "question_edits_folder": ".ai/content-audit-export/articles/minimum-requirements-group-a-dwellings--42eb0c36-da27-4b7e-a1e3-4ed915bfca8d/question-edits",
-    "normalized_sha256": "sha256:5fdb7650e3b7ed8f02c8643411c700c41435d761e47372bb58e9cdcf86ae1440",
-    "candidate_sha256": "sha256:5fdb7650e3b7ed8f02c8643411c700c41435d761e47372bb58e9cdcf86ae1440",
+    "normalized_sha256": "sha256:242dd1ecce682e4c41557982285a154eb67c743850bdafd875783f6fbbf3b4e8",
+    "candidate_sha256": "sha256:242dd1ecce682e4c41557982285a154eb67c743850bdafd875783f6fbbf3b4e8",
     "linked_questions_sha256": "sha256:0e54d31b0aa10e068a97ca3544d658171f897b41f5034d411017bfb8902c7bce",
     "sources_sha256": "sha256:a454c6592bbdd723e5ba085aafd2c35081131273d82b6527c33f6ee7d53c923b"
   },
@@ -615,5 +615,39 @@
     "Removed comparative foreign-code tables and unsupported international practice claims not audited against local raw PDFs.",
     "Removed or corrected unverified section/number claims that conflicted with the checked PD 1096 raw source."
   ],
-  "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED"
+  "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+  "batch_090_local_first_review": {
+    "batch_id": "source-audited-article-batch-090-local-first",
+    "reviewed_at": "2026-05-12T15:56:23+08:00",
+    "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
+    "blocker_count": 0,
+    "local_only": {
+      "supabase_push_attempted": false,
+      "deploy_attempted": false,
+      "commit_attempted": false
+    },
+    "scenario_enrichment": {
+      "status": "eligible-added",
+      "section_added": true,
+      "source_safe": true,
+      "exam_useful": true,
+      "summary": "Inside-lot Group A dwelling scenario applying occupancy, property-line distance, footing, stair, and referenced Rule VIII checks.",
+      "source_basis": [
+        "PD 1096 2004 Revised IRR, Rule VII Section 708; refined markdown lines 1789-1845 and raw markdown lines 2046-2108",
+        "PD 1096 2004 Revised IRR, Rule VIII Sections 805-808 for referenced room and window checks"
+      ]
+    },
+    "question_edit_count_check": {
+      "linked_questions": 36,
+      "source_safe_question_edit_files": 36,
+      "non_question_json_files_in_question_edits": [],
+      "missing_question_edits": [],
+      "extra_question_edits": [],
+      "status": "PASS"
+    },
+    "source_gap_status": "PASS",
+    "raw_source_truth": "local_raw_source_layer_primary",
+    "normalized_sha256": "sha256:242dd1ecce682e4c41557982285a154eb67c743850bdafd875783f6fbbf3b4e8",
+    "candidate_sha256": "sha256:242dd1ecce682e4c41557982285a154eb67c743850bdafd875783f6fbbf3b4e8"
+  }
 }
