@@ -1,8 +1,8 @@
 {
   "artifact_type": "source-audit-evidence",
-  "audit_date": "2026-05-10",
-  "audited_at": "2026-05-10T20:15:00+08:00",
-  "audit_mode": "local_source_audit_no_supabase",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T21:35:16+08:00",
+  "audit_mode": "batch_094_local_first_raw_source_audit_no_supabase",
   "protocols_applied": [
     ".ai/CONTENT_EXCELLENCE_GOAL.md",
     ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
@@ -14,10 +14,11 @@
     "title": "Scope of Practice: What Architecture Covers and What It Does Not",
     "article_folder": ".ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145",
     "candidate_path": ".ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/candidate.md",
-    "candidate_sha256": "sha256:167c86ddfd4c651a1781714b3f03de430714fbfe958c51696c2a78a6a65fe708",
-    "normalized_sha256": "sha256:167c86ddfd4c651a1781714b3f03de430714fbfe958c51696c2a78a6a65fe708",
-    "linked_questions_sha256": "sha256:9045353bdcc0017406301628c2c5c7414b7b06a64854df2218a3f41e16952551",
-    "sources_sha256": "sha256:b6753c9223a27f4f1d179fc0494e18c43799f1f7eb45ec5c2d514c11ab37cd6e"
+    "candidate_sha256": "sha256:b84a8f680255ed8239dfa1723f59fef90b58caddeff1e4e848d0ec5700a4531b",
+    "normalized_sha256": "sha256:b84a8f680255ed8239dfa1723f59fef90b58caddeff1e4e848d0ec5700a4531b",
+    "linked_questions_sha256": "sha256:88c3831e9b0a6b8a006e49fda6ac3dc17ffa147c5fb9bca8844bf5f3e4cdc7d6",
+    "sources_sha256": "sha256:bc17e71e5ed48e2599169204352f7ae9add79bdcf98b56cda849cfbc519067f0",
+    "normalized_path": ".ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/normalized.md"
   },
   "classification": {
     "content_type": "ra9266_scope_of_practice_article",
@@ -25,15 +26,15 @@
     "requires_raw_pdf_audit": true,
     "linked_questions_observed": 10,
     "question_edits_created": [
-      "ae2dd470-af9a-49d3-b2ae-03968c51a4a1",
-      "64f87401-24fd-4f73-803f-d7f9a006c03a",
       "08a1c4ca-fe39-4ded-81c4-94909a6d362c",
       "470f33bb-24f1-4eb2-a76e-ce255a50ae41",
       "5799550f-7a5e-4e16-a921-a7551b075bc0",
+      "64f87401-24fd-4f73-803f-d7f9a006c03a",
+      "7d7ae21c-dcec-43f0-8403-b4117dcd1c89",
+      "ae2dd470-af9a-49d3-b2ae-03968c51a4a1",
       "c47a6715-b32f-4649-8692-cc3e1a1a63b3",
       "c7d3979b-6241-480e-a37d-28cfd4af00d8",
       "cfc6c973-ed50-4948-9c47-48a8fadf5dd7",
-      "7d7ae21c-dcec-43f0-8403-b4117dcd1c89",
       "d64a8825-1fc6-469c-85a7-b67fea123907"
     ]
   },
@@ -50,15 +51,39 @@
         2,
         3,
         4
+      ],
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+      "locators_used": [
+        {
+          "source_key": "ra9266_irr",
+          "locator_type": "refined_markdown_lines",
+          "lines": "25-39",
+          "supports": "Architect, Architect-of-Record, AiCC, and Consulting Architect role definitions"
+        },
+        {
+          "source_key": "ra9266_irr",
+          "locator_type": "refined_markdown_lines",
+          "lines": "41-88",
+          "supports": "general practice, scope categories, utility layouting, and structural conceptualization"
+        },
+        {
+          "source_key": "ra9266_irr",
+          "locator_type": "refined_markdown_lines",
+          "lines": "100-104",
+          "supports": "service agreement as written scope and compensation instrument"
+        }
       ]
     }
   ],
   "gate_results": {
-    "compose": "PASS: content-audit:compose -- --article-id <id> --overwrite; blockers=0",
-    "diff": "PASS: content-audit:diff -- --article-id <id>; changed=true safe_to_push=true blockers=0",
-    "validate": "PASS: content-audit:validate -- --article-id <id> --summary --dry-run; valid=true blockers=0 warnings=0",
-    "push_dry_run": "not_attempted_local_first; Supabase remote fetch is final publishing only and is intentionally non-blocking here",
-    "supabase_mutation": "not_attempted"
+    "compose": "PASS: bun run content-audit:compose -- --article-id 7e511a5d-edb1-4622-8f0f-29c1a631c145 --overwrite --strict; blockers=0",
+    "diff": "PASS: bun run content-audit:diff -- --article-id 7e511a5d-edb1-4622-8f0f-29c1a631c145 --strict; safe=true blockers=0",
+    "validate": "PASS: bun run content-audit:validate -- --article-id 7e511a5d-edb1-4622-8f0f-29c1a631c145 --summary; valid=true blockers=0 warnings=0",
+    "push_dry_run": "not_attempted_local_first; Supabase publishing is explicitly forbidden in this run",
+    "supabase_mutation": "not_attempted_by_request",
+    "scenario_enrichment": "PASS: eligible-added; Client-service classification is exam-useful and directly supported by RA 9266 IRR Section 3(4), while the engineering-signing caveat is framed as a boundary rather than an unsupported citation.",
+    "ui_block_edits": "PASS: bun run content-audit:ui-block-edits -- --article-id 7e511a5d-edb1-4622-8f0f-29c1a631c145; valid=true blockers=0 warnings=0"
   },
   "claims": [
     {
@@ -100,6 +125,14 @@
       "source_support": [
         "ra9266_irr"
       ]
+    },
+    {
+      "claim_id": "law002-b094-scenario-claim",
+      "claim_text": "The Real World Scenario classifies site analysis, schematic design, plans, estimates, space planning, and utility layout coordination as architectural services when they are within the commissioned architectural scope.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
     }
   ],
   "unsupported_or_removed_claims": [
@@ -115,10 +148,51 @@
     "remaining_local_blockers": []
   },
   "local_validation": {
-    "command": "bun run content-audit:validate -- --article-id 7e511a5d-edb1-4622-8f0f-29c1a631c145 --summary --dry-run",
+    "command": "bun run content-audit:validate -- --article-id 7e511a5d-edb1-4622-8f0f-29c1a631c145 --summary",
     "valid": true,
     "blockers": 0,
     "warnings": [],
-    "checked_at": "2026-05-10T16:39:34+08:00"
-  }
+    "checked_at": "2026-05-12T21:35:16+08:00"
+  },
+  "batch_id": "094",
+  "scenario_enrichment": {
+    "status": "eligible-added",
+    "section": "Real World Scenario",
+    "reason": "Client-service classification is exam-useful and directly supported by RA 9266 IRR Section 3(4), while the engineering-signing caveat is framed as a boundary rather than an unsupported citation."
+  },
+  "source_locator_summary": [
+    {
+      "source_key": "ra9266_irr",
+      "locator_type": "refined_markdown_lines",
+      "lines": "25-39",
+      "supports": "Architect, Architect-of-Record, AiCC, and Consulting Architect role definitions",
+      "label": "RA 9266 IRR Architecture Act of 2004",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0"
+    },
+    {
+      "source_key": "ra9266_irr",
+      "locator_type": "refined_markdown_lines",
+      "lines": "41-88",
+      "supports": "general practice, scope categories, utility layouting, and structural conceptualization",
+      "label": "RA 9266 IRR Architecture Act of 2004",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0"
+    },
+    {
+      "source_key": "ra9266_irr",
+      "locator_type": "refined_markdown_lines",
+      "lines": "100-104",
+      "supports": "service agreement as written scope and compensation instrument",
+      "label": "RA 9266 IRR Architecture Act of 2004",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0"
+    }
+  ]
 }

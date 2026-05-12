@@ -1,6 +1,6 @@
 # Source-Audited Local-First Batches Handoff
 
-Updated: 2026-05-12T20:58:26+08:00
+Updated: 2026-05-12T21:48:54+08:00
 
 ## Operating Mode
 
@@ -11,14 +11,15 @@ Updated: 2026-05-12T20:58:26+08:00
 
 ## Completed Batches
 
-- Source-audited local-first article batches 001 through 093 are recorded under `/Users/philiplewis/slatecamp/.ai/content-audit-export`.
-- Latest completed batch: Batch 093, status `PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW`, local-only and not committed in this run; report `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-093-local-first-report.md`, ledger `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-093-local-first-ledger.json`, scoped checks `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-093-local-first-scoped-checks.json`.
+- Source-audited local-first article batches 001 through 094 are recorded under `/Users/philiplewis/slatecamp/.ai/content-audit-export`.
+- Latest completed batch: Batch 094, status `PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW`, local-only and not committed in this run; report `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-094-local-first-report.md`, ledger `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-094-local-first-ledger.json`, scoped checks `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-094-local-first-scoped-checks.json`.
+- Previous accepted batch: Batch 093, independently QA-passed, committed and pushed as `81ab4ed94` with whitespace hygiene follow-up `2b24d6b71`.
 
 ## Current Batch State
 
-- Last completed batch: Batch 093
-- Current batch number for next continuation: Batch 094 (reserved only; ready for a separate local-first run because Batch 093 blockers=0)
-- Current worker/session state: Batch 093 completed locally from the fixed manifest. Batch 094 and Batch 095 remain reserved but not started. No Supabase push, deploy, or commit attempted.
+- Last completed batch: Batch 094
+- Current batch number for next continuation: Batch 095 (reserved only; ready for a separate local-first run because Batch 094 blockers=0)
+- Current worker/session state: Batch 094 completed locally from the fixed manifest. Batch 095 remains reserved but not started. No Supabase push, deploy, or commit attempted.
 - Latest completed Batch 082 selection rule used: five unpassed sourceable LEA building-technology/materials/estimating clusters with linked questions and local raw source families, excluding IDs recorded in source-audited Batch 001 through Batch 081 artifacts.
 - Active Batch 083 selection rule used: five unpassed sourceable LEA building-materials and metals clusters with linked questions and exact readable local raw source families, excluding IDs recorded in source-audited Batch 001 through Batch 082 artifacts.
 - Active Batch 084 selection rule used: five unpassed sourceable LEA building-technology/construction-systems clusters with linked questions and exact readable local raw source families, excluding IDs recorded in source-audited Batch 001 through Batch 083 artifacts.
@@ -34,7 +35,78 @@ Updated: 2026-05-12T20:58:26+08:00
 - Batch 090 completion check: PASS; report, ledger, scoped checks, and post-batch handoff exist with blockers=0. Batch 091 readiness is separate-run only; this run stopped after Batch 090.
 - Batch 091 completion check: PASS; report, ledger, scoped checks, and post-batch handoff exist with blockers=0. Batch 092 was executed in this subsequent local-first run.
 - Batch 092 completion check: PASS; report, ledger, scoped checks, and post-batch handoff exist with blockers=0. A new reservation coordinator must reserve the next batches if blockers=0.
-- Batch 093 completion check: PASS; report, ledger, scoped checks, and post-batch handoff exist with blockers=0. Batch 094 is ready only for a separate execution run; this Batch 093 worker stopped after Batch 093.
+- Batch 093 completion check: PASS; report, ledger, scoped checks, and post-batch handoff exist with blockers=0. Batch 093 was accepted, independently QA-passed, committed and pushed as `81ab4ed94` with whitespace hygiene follow-up `2b24d6b71`; reservation for Batches 093-095 committed and pushed as `acbc2b043`.
+- Batch 094 completion check: PASS; report, ledger, scoped checks, and post-batch handoff exist with blockers=0. Batch 095 is ready only for a separate execution run; this Batch 094 worker stopped after Batch 094.
+
+## Batch 094 Pre-Start Checkpoint
+
+- Updated: 2026-05-12T21:25:56+08:00
+- Batch: 094
+- Manifest: `/Users/philiplewis/slatecamp/.ai/03_plans/production-line-batch-094-manifest.json`
+- Scope rule: execute exactly the five article clusters reserved in the Batch 094 manifest; do not skip, replace, combine with Batch 095, push to Supabase, deploy, commit, or start Batch 095.
+- Inherited blocker status: Batch 093 accepted and independently QA-passed with blockers=0; Batch 094 reservation inherited blockers=0.
+- Known blocker-resolution-needed notes: none at pre-start; all manifest `blocker_resolution_needed` values are false. Difficult source or validation findings must stay with the selected article and be recorded as exact blockers rather than replacing the article.
+- Scenario-enrichment potential: high for all five article clusters because RA 9266 professional-practice duties and Civil Code Article 1723 liability are exam-useful in realistic practice settings. Each article must be actively evaluated for a concise source-safe Real World Scenario section; if not source-safe or exam-useful, record `eligible-deferred` or `not-applicable` with a specific reason in the article evidence, ledger, report, and scoped checks.
+
+| # | Article ID | Slug | Exact article folder | Exact question-edits path | Linked questions |
+|---:|---|---|---|---|---:|
+| 1 | `02a5ba32-0443-4162-837d-326783ed77a2` | `lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/question-edits` | 10 |
+| 2 | `7e511a5d-edb1-4622-8f0f-29c1a631c145` | `lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/question-edits` | 10 |
+| 3 | `3d48211b-8add-4934-8dab-ae8bdae74035` | `lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/question-edits` | 10 |
+| 4 | `6dc813a9-913d-47b5-9203-f59e8e909869` | `lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/question-edits` | 10 |
+| 5 | `17b95df0-6bea-43c6-ab03-2b82a358caa6` | `lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6/question-edits` | 10 |
+
+Expected local raw source families:
+
+- RA 9266 Architecture Act of 2004 source family: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266`
+- RA 386 Civil Code of the Philippines source family: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386`
+
+Pending validation gates: raw-PDF-first audit; roundtrip protocol; compose/diff/validate; UI-block-edit validation; scoped JSON parse; placeholder/internal-note/source-gap scans; source hash checks; linked-question/question-edit count checks; stale compose-error scan; targeted content-audit tests; scoped `git diff --check`; Batch 094 report, ledger, and scoped checks under `.ai/content-audit-export`; post-batch handoff/coordination update. Supabase push, deploy, commit, and Batch 095 start remain forbidden in this run.
+
+## Batch 094 Post-Batch Completion Checkpoint
+
+- Updated: 2026-05-12T21:48:54+08:00
+- Batch: 094
+- Status: `PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW`
+- Completed article count: 5
+- Completed linked-question count: 50
+- Completed source-safe question-edit count: 50
+- Scenario enrichment results: 5 eligible-added, 0 eligible-deferred, 0 not-applicable.
+- Source evidence: local/raw primary evidence used for all cited claims; RA 9266 IRR and RA 386 Civil Code local source families supported the final articles. Internet evidence was not used.
+- Unresolved blockers: 0
+- Supabase/deploy/commit state: no Supabase push, deploy, or commit attempted.
+- Batch 095 readiness: ready for a separate local-first worker run because Batch 094 blockers=0; Batch 095 was not started in this run.
+- Report: `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-094-local-first-report.md`
+- Ledger: `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-094-local-first-ledger.json`
+- Scoped checks: `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-094-local-first-scoped-checks.json`
+- Prior artifact overlap note: these same article IDs appear in older local-first/re-audit artifacts for Batches 004, 005, and 006. Batch 094 followed the fixed manifest exactly; overlap is recorded as re-audit history and was not used to skip, replace, or expand scope.
+
+| # | Article ID | Slug | Improved normalized path | Improved candidate path | Question-edits path | Linked questions | Question edits | Scenario status |
+|---:|---|---|---|---|---|---:|---:|---|
+| 1 | `02a5ba32-0443-4162-837d-326783ed77a2` | `lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/normalized.md` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/candidate.md` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/question-edits` | 10 | 10 | `eligible-added` |
+| 2 | `7e511a5d-edb1-4622-8f0f-29c1a631c145` | `lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/normalized.md` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/candidate.md` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/question-edits` | 10 | 10 | `eligible-added` |
+| 3 | `3d48211b-8add-4934-8dab-ae8bdae74035` | `lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/normalized.md` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/candidate.md` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/question-edits` | 10 | 10 | `eligible-added` |
+| 4 | `6dc813a9-913d-47b5-9203-f59e8e909869` | `lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/normalized.md` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/candidate.md` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/question-edits` | 10 | 10 | `eligible-added` |
+| 5 | `17b95df0-6bea-43c6-ab03-2b82a358caa6` | `lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6/normalized.md` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6/candidate.md` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6/question-edits` | 10 | 10 | `eligible-added` |
+
+Batch 094 source evidence recorded:
+
+- RA 9266 IRR Architecture Act of 2004: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf`; raw PDF hash `sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574`; refined markdown hash `sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0`; locators used: RA 9266 IRR refined lines 7-15, 17-88, 100-104, 264-294, 554-580, 586-624, 634-638, 674-702, and 817-855.
+- RA 386 Civil Code of the Philippines: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code of the Phils.pdf`; raw PDF hash `sha256:95b8d7bf26fabeab9d27c661a53729273b69c88fc8565cc2a7146243df693400`; refined markdown hash `sha256:bc1ab23d02eb7d9d5e1d44d77453023e0c58f1fdf7e1af4f7f97aca8a36fae5b`; locator used: refined lines 5146-5150.
+
+Batch 094 quality protocol results:
+
+- Compose: 5/5 pass, blockers=0.
+- Diff: 5/5 pass, locally safe, blockers=0.
+- Validate: 5/5 pass, blockers=0, warnings=0.
+- UI-block edits: 5/5 pass, blockers=0, warnings=0.
+- Scoped JSON parse: 113 JSON files parsed, failures=0.
+- Placeholder/internal-note/source-gap scan: matches=0 in normalized/candidate/source/evidence/question-edit scope.
+- Source hash checks: 7 raw/refined checks, failures=0.
+- Linked-question/question-edit count checks: 5/5 pass; 50 linked questions and 50 question edits; no missing or extra expected manifest paths.
+- Stale compose-error scan: matches=0.
+- Targeted tests: `bun test scripts/content-audit/content-audit.test.ts` passed 27 tests, 0 failures.
+- Scoped `git diff --check`: PASS.
 
 ## Batch 093 Pre-Start Checkpoint
 
@@ -8159,3 +8231,10 @@ Batch 093-095 unresolved blockers at reservation: 0 inherited. Batch 093 may beg
 Independent QA for Batch 093 found that all five Batch 093 article IDs appeared in older local-first/re-audit artifacts for Batches 007, 008, 053, and 067. QA determined these were historical/local re-audit artifacts that were not committed as accepted production batches, not pushed to Supabase, and not deployed; therefore Batch 093 is acceptable as the first serially accepted production-line pass for these five clusters.
 
 Process advisory: the Batch 093 reservation manifest/process stated `selected_ids_found_in_exclusion_set: []`, while the Batch 093 worker ledger recorded prior-artifact overlap. Future reservation coordinators must distinguish accepted/committed batch exclusion from historical/re-audit artifact overlap and record both explicitly.
+
+### Batch 094 prior-artifact overlap acknowledgment — 2026-05-12T22:07:47+08:00
+
+Independent QA for Batch 094 found that the five Batch 094 article IDs appeared in older local-first/re-audit artifacts for Batches 004, 005, and 006. QA determined these were historical uncommitted re-audit artifacts, not accepted final production content, not Supabase pushes, and not deploys; therefore Batch 094 is acceptable as the serially accepted production-line pass for these five clusters.
+
+Process advisory: future reservation coordinators must distinguish accepted/committed batch exclusion from historical/re-audit artifact overlap and record both explicitly.
+

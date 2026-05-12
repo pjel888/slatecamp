@@ -36,6 +36,10 @@ Article 1723 also states that the action must be brought within ten years follow
 
 RA 9266 IRR Section 3(2)(a) defines the Architect-of-Record as directly and professionally responsible for the total design and as assuming civil liability for signed and sealed plans, specifications, and contract documents. Section 32 states that the AoR's signature, seal, PTR, PRC registration number, and IAPOA membership information on architectural documents signify assumption of the fifteen-year civil liability under Article 1723.
 
+### Real World Scenario
+
+A completed building collapses twelve years after turnover. If the collapse is traced to defective plans or specifications, start with the architect or engineer who drew them; if it is traced to inferior materials furnished by the contractor, start with the contractor; if the architect or engineer also supervised the construction, test for solidary liability with the contractor. The lawsuit still has its own clock: it must be brought within ten years following the collapse.
+
 ### Exam Takeaway
 
 Do not answer Article 1723 questions with a generic negligence rule. Match the defect source, check whether collapse occurred within fifteen years from completion, and then apply the ten-year period following collapse for filing the action.

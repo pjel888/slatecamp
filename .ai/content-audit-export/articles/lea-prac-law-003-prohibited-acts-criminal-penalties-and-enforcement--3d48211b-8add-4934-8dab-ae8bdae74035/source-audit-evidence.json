@@ -1,8 +1,8 @@
 {
   "artifact_type": "source-audit-evidence",
-  "audit_date": "2026-05-10",
-  "audited_at": "2026-05-10T20:15:00+08:00",
-  "audit_mode": "local_source_audit_no_supabase",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T21:35:16+08:00",
+  "audit_mode": "batch_094_local_first_raw_source_audit_no_supabase",
   "protocols_applied": [
     ".ai/CONTENT_EXCELLENCE_GOAL.md",
     ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
@@ -14,10 +14,11 @@
     "title": "Prohibited Acts, Criminal Penalties, and Enforcement",
     "article_folder": ".ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035",
     "candidate_path": ".ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/candidate.md",
-    "candidate_sha256": "sha256:1d10455296c673d01347972f61c4a418931f0b017d926ac36a24d865c3e219b0",
-    "normalized_sha256": "sha256:1d10455296c673d01347972f61c4a418931f0b017d926ac36a24d865c3e219b0",
-    "linked_questions_sha256": "sha256:29e686c77f81a538a6a8734b0edea1852519eacf4bb8cc55406d300274d93999",
-    "sources_sha256": "sha256:e7b1a846ad42d42a51f4b3d56c8f674ae14c64049d659b344850f506e62cb5e9"
+    "candidate_sha256": "sha256:089e93716f184fdbf94146fb2d97ca8da1946cab975dff367ed9da6722b1dc5c",
+    "normalized_sha256": "sha256:089e93716f184fdbf94146fb2d97ca8da1946cab975dff367ed9da6722b1dc5c",
+    "linked_questions_sha256": "sha256:e71796316b50ee38084db611074b8da6ed202887c9ce6df9681f49af8c62166c",
+    "sources_sha256": "sha256:0cabb6d28da2f6e37faacf7e92b4ed7ed827a48bba7f1b84289e749cffe391fb",
+    "normalized_path": ".ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/normalized.md"
   },
   "classification": {
     "content_type": "ra9266_enforcement_article",
@@ -25,15 +26,15 @@
     "requires_raw_pdf_audit": true,
     "linked_questions_observed": 10,
     "question_edits_created": [
+      "032522de-2664-4f28-9890-c071c8ff7958",
       "14eecec5-5617-4dea-96d5-d97a3e498ea2",
+      "37651fee-ec17-4001-8ca1-1dedf550b986",
+      "5b1da138-7d1f-42b4-9ab2-ba065604422a",
       "9e2f8b9a-0377-4a5c-8b74-1e92e96122b9",
       "a0bd7489-e809-4020-b40b-6aa2cd56d95d",
-      "5b1da138-7d1f-42b4-9ab2-ba065604422a",
-      "dacb2eeb-a43c-47fe-a044-fe3eed4ff9b3",
-      "032522de-2664-4f28-9890-c071c8ff7958",
-      "dd652c66-c567-4c87-834f-17eac39c7133",
-      "37651fee-ec17-4001-8ca1-1dedf550b986",
       "bd2377d1-d87e-40d9-9db3-0de5bfd8652f",
+      "dacb2eeb-a43c-47fe-a044-fe3eed4ff9b3",
+      "dd652c66-c567-4c87-834f-17eac39c7133",
       "e7d85e00-c727-4cf6-a9a1-b882d204aa15"
     ]
   },
@@ -51,15 +52,45 @@
         16,
         17,
         18
+      ],
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+      "locators_used": [
+        {
+          "source_key": "ra9266_irr",
+          "locator_type": "refined_markdown_lines",
+          "lines": "586-624",
+          "supports": "refusal, suspension, revocation, notice/hearing, seal misuse, aiding unauthorized practice, and service-agreement discipline grounds"
+        },
+        {
+          "source_key": "ra9266_irr",
+          "locator_type": "refined_markdown_lines",
+          "lines": "634-638",
+          "supports": "registration requirement and unauthorized practice of architecture"
+        },
+        {
+          "source_key": "ra9266_irr",
+          "locator_type": "refined_markdown_lines",
+          "lines": "674-690",
+          "supports": "Section 29 penal clause and Section 30 written-service-agreement misdemeanor"
+        },
+        {
+          "source_key": "ra9266_irr",
+          "locator_type": "refined_markdown_lines",
+          "lines": "692-694",
+          "supports": "representative liability for non-registered persons or firms"
+        }
       ]
     }
   ],
   "gate_results": {
-    "compose": "PASS: content-audit:compose -- --article-id <id> --overwrite; blockers=0",
-    "diff": "PASS: content-audit:diff -- --article-id <id>; changed=true safe_to_push=true blockers=0",
-    "validate": "PASS: content-audit:validate -- --article-id <id> --summary --dry-run; valid=true blockers=0 warnings=0",
-    "push_dry_run": "not_attempted_local_first; Supabase remote fetch is final publishing only and is intentionally non-blocking here",
-    "supabase_mutation": "not_attempted"
+    "compose": "PASS: bun run content-audit:compose -- --article-id 3d48211b-8add-4934-8dab-ae8bdae74035 --overwrite --strict; blockers=0",
+    "diff": "PASS: bun run content-audit:diff -- --article-id 3d48211b-8add-4934-8dab-ae8bdae74035 --strict; safe=true blockers=0",
+    "validate": "PASS: bun run content-audit:validate -- --article-id 3d48211b-8add-4934-8dab-ae8bdae74035 --summary; valid=true blockers=0 warnings=0",
+    "push_dry_run": "not_attempted_local_first; Supabase publishing is explicitly forbidden in this run",
+    "supabase_mutation": "not_attempted_by_request",
+    "scenario_enrichment": "PASS: eligible-added; Unauthorized solicitation, coercion without service agreement, and seal misuse are source-backed enforcement distinctions and useful for LEA fact-pattern triage.",
+    "ui_block_edits": "PASS: bun run content-audit:ui-block-edits -- --article-id 3d48211b-8add-4934-8dab-ae8bdae74035; valid=true blockers=0 warnings=0"
   },
   "claims": [
     {
@@ -101,6 +132,14 @@
       "source_support": [
         "ra9266_irr"
       ]
+    },
+    {
+      "claim_id": "law003-b094-scenario-claim",
+      "claim_text": "The Real World Scenario separates unauthorized solicitation, forcing services without a written agreement, and registered-architect seal misuse into the correct RA 9266 enforcement buckets.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
     }
   ],
   "unsupported_or_removed_claims": [
@@ -115,10 +154,62 @@
     "remaining_local_blockers": []
   },
   "local_validation": {
-    "command": "bun run content-audit:validate -- --article-id 3d48211b-8add-4934-8dab-ae8bdae74035 --summary --dry-run",
+    "command": "bun run content-audit:validate -- --article-id 3d48211b-8add-4934-8dab-ae8bdae74035 --summary",
     "valid": true,
     "blockers": 0,
     "warnings": [],
-    "checked_at": "2026-05-10T16:39:34+08:00"
-  }
+    "checked_at": "2026-05-12T21:35:16+08:00"
+  },
+  "batch_id": "094",
+  "scenario_enrichment": {
+    "status": "eligible-added",
+    "section": "Real World Scenario",
+    "reason": "Unauthorized solicitation, coercion without service agreement, and seal misuse are source-backed enforcement distinctions and useful for LEA fact-pattern triage."
+  },
+  "source_locator_summary": [
+    {
+      "source_key": "ra9266_irr",
+      "locator_type": "refined_markdown_lines",
+      "lines": "586-624",
+      "supports": "refusal, suspension, revocation, notice/hearing, seal misuse, aiding unauthorized practice, and service-agreement discipline grounds",
+      "label": "RA 9266 IRR Architecture Act of 2004",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0"
+    },
+    {
+      "source_key": "ra9266_irr",
+      "locator_type": "refined_markdown_lines",
+      "lines": "634-638",
+      "supports": "registration requirement and unauthorized practice of architecture",
+      "label": "RA 9266 IRR Architecture Act of 2004",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0"
+    },
+    {
+      "source_key": "ra9266_irr",
+      "locator_type": "refined_markdown_lines",
+      "lines": "674-690",
+      "supports": "Section 29 penal clause and Section 30 written-service-agreement misdemeanor",
+      "label": "RA 9266 IRR Architecture Act of 2004",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0"
+    },
+    {
+      "source_key": "ra9266_irr",
+      "locator_type": "refined_markdown_lines",
+      "lines": "692-694",
+      "supports": "representative liability for non-registered persons or firms",
+      "label": "RA 9266 IRR Architecture Act of 2004",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0"
+    }
+  ]
 }

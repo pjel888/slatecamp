@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not
 
-Generated: 2026-05-10T08:36:01.449Z
+Generated: 2026-05-12T13:41:46.179Z
 Article ID: 7e511a5d-edb1-4622-8f0f-29c1a631c145
 Changed: true
 Safe to push locally: true
@@ -8,14 +8,14 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:7dee57f1c60c85546af496f709090642a20c264f306fb95a662f6527d20a37d8`
-- Normalized: `sha256:167c86ddfd4c651a1781714b3f03de430714fbfe958c51696c2a78a6a65fe708`
-- Candidate: `sha256:167c86ddfd4c651a1781714b3f03de430714fbfe958c51696c2a78a6a65fe708`
+- Normalized: `sha256:b84a8f680255ed8239dfa1723f59fef90b58caddeff1e4e848d0ec5700a4531b`
+- Candidate: `sha256:b84a8f680255ed8239dfa1723f59fef90b58caddeff1e4e848d0ec5700a4531b`
 
 ## Line summary
 
 - Changed lines: 145
 - Inserted lines: 0
-- Deleted lines: 110
+- Deleted lines: 106
 
 ## UI block preservation
 

@@ -1,8 +1,8 @@
 {
   "artifact_type": "source-audit-evidence",
-  "audit_date": "2026-05-10",
-  "audited_at": "2026-05-10T21:50:00+08:00",
-  "audit_mode": "local_source_audit_no_supabase",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T21:35:16+08:00",
+  "audit_mode": "batch_094_local_first_raw_source_audit_no_supabase",
   "protocols_applied": [
     ".ai/CONTENT_EXCELLENCE_GOAL.md",
     ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
@@ -14,10 +14,11 @@
     "title": "RA 9266 Overview: Core Legal Frame and Key Definitions",
     "article_folder": ".ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2",
     "candidate_path": ".ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/candidate.md",
-    "candidate_sha256": "sha256:56aa80491dcc5c0a9cbe6a3da233473064aec237b4f3fe8083cd5c32ec45d143",
-    "normalized_sha256": "sha256:56aa80491dcc5c0a9cbe6a3da233473064aec237b4f3fe8083cd5c32ec45d143",
-    "linked_questions_sha256": "sha256:608aaccef07b02277f317ec71d538ae55f5109fcf768c35f91f548b2cdf34013",
-    "sources_sha256": "sha256:1db81284ca1a97f45fd4509072a7a08bed234a145579ffcb82f5973639acef32"
+    "candidate_sha256": "sha256:b0051a6a69fcf2ea6124a8b7f7932620907adbd51b57378d04acfc21a3a3ae53",
+    "normalized_sha256": "sha256:b0051a6a69fcf2ea6124a8b7f7932620907adbd51b57378d04acfc21a3a3ae53",
+    "linked_questions_sha256": "sha256:384982404c8648f0c014e8de13a17a3090fd0e96ecaacd4b6c1d056e82208940",
+    "sources_sha256": "sha256:5dacce9b109b0ac8e3f3a1b3e01e75628ed677cc33a0dcd4d9e20209b4170fa4",
+    "normalized_path": ".ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/normalized.md"
   },
   "classification": {
     "content_type": "ra9266_overview_definitions_article",
@@ -25,16 +26,16 @@
     "requires_raw_pdf_audit": true,
     "linked_questions_observed": 10,
     "question_edits_created": [
-      "55e9adf2-fd59-4a65-b7e7-2ec8b42fd4a9",
-      "3ad6f461-c4c4-45e6-af3a-88e089afb52d",
-      "e7b2b739-2599-447b-a856-d291c32f294f",
-      "5095e2a0-1ee7-4e67-8c91-5a7e998b3b70",
-      "6c099536-f6a9-4cda-863a-a5a97be9870b",
-      "bff7aa91-e5a7-462b-8b38-8371a20d273c",
-      "fe23d295-5ba2-4572-b481-7b8eb472010f",
-      "7e4e697d-9af0-4014-abfc-d26db4d50092",
       "16ddda97-9cf3-4b6d-9a7e-79b05fd2a19e",
-      "3a13ae21-70c5-44cd-884f-04f7305e3640"
+      "3a13ae21-70c5-44cd-884f-04f7305e3640",
+      "3ad6f461-c4c4-45e6-af3a-88e089afb52d",
+      "5095e2a0-1ee7-4e67-8c91-5a7e998b3b70",
+      "55e9adf2-fd59-4a65-b7e7-2ec8b42fd4a9",
+      "6c099536-f6a9-4cda-863a-a5a97be9870b",
+      "7e4e697d-9af0-4014-abfc-d26db4d50092",
+      "bff7aa91-e5a7-462b-8b38-8371a20d273c",
+      "e7b2b739-2599-447b-a856-d291c32f294f",
+      "fe23d295-5ba2-4572-b481-7b8eb472010f"
     ]
   },
   "raw_sources": [
@@ -54,15 +55,45 @@
         8,
         22,
         23
+      ],
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+      "locators_used": [
+        {
+          "source_key": "ra9266_irr",
+          "locator_type": "refined_markdown_lines",
+          "lines": "7-15",
+          "supports": "IRR title and policy frame"
+        },
+        {
+          "source_key": "ra9266_irr",
+          "locator_type": "refined_markdown_lines",
+          "lines": "17-88",
+          "supports": "architecture, architect, AoR, AiCC, Consulting Architect, scope, and structural conceptualization definitions"
+        },
+        {
+          "source_key": "ra9266_irr",
+          "locator_type": "refined_markdown_lines",
+          "lines": "264-294",
+          "supports": "PRBoA creation, appointment, and term rules"
+        },
+        {
+          "source_key": "ra9266_irr",
+          "locator_type": "refined_markdown_lines",
+          "lines": "817-855",
+          "supports": "IAPOA/UAP integration and Section 41 IRR distinction"
+        }
       ]
     }
   ],
   "gate_results": {
-    "compose": "PASS: content-audit:compose -- --article-id 02a5ba32-0443-4162-837d-326783ed77a2 --overwrite; blockers=0",
-    "diff": "PASS: content-audit:diff -- --article-id 02a5ba32-0443-4162-837d-326783ed77a2; changed=true safe_to_push=true blockers=0",
-    "validate": "PASS: content-audit:validate -- --article-id 02a5ba32-0443-4162-837d-326783ed77a2 --summary --dry-run; valid=true blockers=0 warnings=0",
-    "push_dry_run": "not_attempted_local_first; Supabase remote fetch is final publishing only and intentionally non-blocking here",
-    "supabase_mutation": "not_attempted_by_request"
+    "compose": "PASS: bun run content-audit:compose -- --article-id 02a5ba32-0443-4162-837d-326783ed77a2 --overwrite --strict; blockers=0",
+    "diff": "PASS: bun run content-audit:diff -- --article-id 02a5ba32-0443-4162-837d-326783ed77a2 --strict; safe=true blockers=0",
+    "validate": "PASS: bun run content-audit:validate -- --article-id 02a5ba32-0443-4162-837d-326783ed77a2 --summary; valid=true blockers=0 warnings=0",
+    "push_dry_run": "not_attempted_local_first; Supabase publishing is explicitly forbidden in this run",
+    "supabase_mutation": "not_attempted_by_request",
+    "scenario_enrichment": "PASS: eligible-added; The AoR/Consulting Architect role split is exam-useful and directly supported by RA 9266 IRR Section 3 role definitions and Section 32 document-liability language.",
+    "ui_block_edits": "PASS: bun run content-audit:ui-block-edits -- --article-id 02a5ba32-0443-4162-837d-326783ed77a2; valid=true blockers=0 warnings=0"
   },
   "claims": [
     {
@@ -112,6 +143,14 @@
       "source_support": [
         "ra9266_irr"
       ]
+    },
+    {
+      "claim_id": "law001-b094-scenario-claim",
+      "claim_text": "The Real World Scenario applies the RA 9266 IRR distinction between the Architect-of-Record responsible for total design/signed documents and a Consulting Architect retained for specialized service.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
     }
   ],
   "unsupported_or_removed_claims": [
@@ -129,10 +168,62 @@
     "remaining_local_blockers": []
   },
   "local_validation": {
-    "command": "bun run content-audit:validate -- --article-id 02a5ba32-0443-4162-837d-326783ed77a2 --summary --dry-run",
+    "command": "bun run content-audit:validate -- --article-id 02a5ba32-0443-4162-837d-326783ed77a2 --summary",
     "valid": true,
     "blockers": 0,
     "warnings": [],
-    "checked_at": "2026-05-10T21:50:00+08:00"
-  }
+    "checked_at": "2026-05-12T21:35:16+08:00"
+  },
+  "batch_id": "094",
+  "scenario_enrichment": {
+    "status": "eligible-added",
+    "section": "Real World Scenario",
+    "reason": "The AoR/Consulting Architect role split is exam-useful and directly supported by RA 9266 IRR Section 3 role definitions and Section 32 document-liability language."
+  },
+  "source_locator_summary": [
+    {
+      "source_key": "ra9266_irr",
+      "locator_type": "refined_markdown_lines",
+      "lines": "7-15",
+      "supports": "IRR title and policy frame",
+      "label": "RA 9266 IRR Architecture Act of 2004",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0"
+    },
+    {
+      "source_key": "ra9266_irr",
+      "locator_type": "refined_markdown_lines",
+      "lines": "17-88",
+      "supports": "architecture, architect, AoR, AiCC, Consulting Architect, scope, and structural conceptualization definitions",
+      "label": "RA 9266 IRR Architecture Act of 2004",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0"
+    },
+    {
+      "source_key": "ra9266_irr",
+      "locator_type": "refined_markdown_lines",
+      "lines": "264-294",
+      "supports": "PRBoA creation, appointment, and term rules",
+      "label": "RA 9266 IRR Architecture Act of 2004",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0"
+    },
+    {
+      "source_key": "ra9266_irr",
+      "locator_type": "refined_markdown_lines",
+      "lines": "817-855",
+      "supports": "IAPOA/UAP integration and Section 41 IRR distinction",
+      "label": "RA 9266 IRR Architecture Act of 2004",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0"
+    }
+  ]
 }

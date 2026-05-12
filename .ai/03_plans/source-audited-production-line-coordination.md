@@ -1,17 +1,17 @@
 # Source-Audited Production-Line Coordination
 
-Updated: 2026-05-12T20:15:00+08:00
+Updated: 2026-05-12T21:48:54+08:00
 Workspace: /Users/philiplewis/slatecamp
 Branch: main
-Mode: controlled serial final-gate production line; Batches 093-095 reserved for next local-first worker runs, no Supabase push, deploy, or commit.
+Mode: controlled serial final-gate production line; Batch 094 completed local-first with no Supabase push, deploy, or commit; Batch 095 remains reserved for a separate worker run.
 
 ## Current Committed Baseline
 
-- Current HEAD: f8956b5bf
-- Latest accepted commit: f8956b5bf
-- Batches 090-092 committed and pushed as accepted baseline
+- Current HEAD observed by Batch 094 worker: 2b24d6b71
+- Latest accepted commit: 2b24d6b71
+- Batch 093 accepted, independently QA-passed, committed and pushed as 81ab4ed94 with whitespace hygiene follow-up 2b24d6b71
 
-Batches 090-092 are committed and pushed as the accepted baseline at f8956b5bf. Batches 093-095 are reserved only and not started.
+Batches 090-093 are committed and pushed as the accepted baseline through 2b24d6b71. Batch 094 is local-first complete with blockers=0 and pending final publishing review. Batch 095 is reserved only and not started.
 
 ## Accepted Batches
 
@@ -30,8 +30,8 @@ Batches 090-092 are committed and pushed as the accepted baseline at f8956b5bf. 
 | 090 | Accepted, committed at 6a561f7d3 | PD 1096 core building code: property location, ceilings, Group A dwellings, general provisions, parking | 5 | 171 | 0 | location-on-property-and-exterior-walls (16ba355e-811c-4191-98c2-c7fac22ca59b)<br>ceiling-heights-and-room-sizes (915c1016-2ed6-4b47-b2ca-f12965c6bc9f)<br>minimum-requirements-group-a-dwellings (42eb0c36-da27-4b7e-a1e3-4ed915bfca8d)<br>rule-i-general-provisions (3ad2ad2a-e525-44c3-8edf-bf7036d9c31a)<br>minimum-parking-requirements (850a66f9-db5d-4068-a763-0bc4c1d9872a) | production-line-batch-090-manifest.json |
 | 091 | Accepted, committed at 7c2b35e47 with hygiene follow-up 3881a1f23 | Construction systems and fire safety: excavation, glazing, fire zones, certificate of occupancy, dangerous buildings | 5 | 168 | 0 | excavation-foundation-and-veneer (bd009a97-21fe-400e-8717-615d5a877cfd)<br>glass-and-glazing-area-limits (3a28da11-0053-4b2f-85a8-f675a3d10a43)<br>fire-zones-and-existing-buildings (9437579a-377e-41ec-8527-4c0399348746)<br>certificate-of-occupancy (68eeacdb-a61b-4f53-bbe9-e2459fa8d152)<br>dangerous-and-ruinous-buildings (ad9732f1-f733-4bc1-acb5-72b4bb53555d) | production-line-batch-091-manifest.json |
 | 092 | Accepted, committed at f8956b5bf | Accessibility, fire code, and professional practice: pedestrian protection, signs, light/ventilation, fire alarms, UAP SPP | 5 | 130 | 0 | pedestrian-protection-during-construction (e6c2a686-5b8c-477d-b5e4-d02bef987743)<br>signs-design-and-construction (16a0bc40-d538-4e4a-8408-cd41dd7aa7aa)<br>pd-1096-rule-viii-light-and-ventilation (cb947ab1-7737-4bde-8a47-606b5d305ed6)<br>lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr (1d37a355-c8bf-4d5e-a41b-07a9817a4427)<br>uap-spp-doc-standards-of-professional-practice-for-philippine-architects (f2c105fd-51fc-4b48-b53a-77242dbb91b0) | production-line-batch-092-manifest.json |
-| 093 | Reserved, not started | PD 1096 building code compliance: height limits, occupancy, setbacks, building permits, plan checking | 5 | 172 | 0 | pd-1096-rule-vii-height-limits (a865c6b2-8c25-404e-bb0c-08d374d374a5)<br>pd-1096-rule-vii-occupancy (9085e0d8-3498-4d3b-b991-46e54d94bde0)<br>pd-1096-rule-viii-setbacks-and-easements (859b1a7f-8aba-473d-8c28-f9aaa39af11d)<br>building-permit-process (687e0da7-4e39-454f-b3f8-a95308678556)<br>typology-checklists-and-plan-checking (4256d28b-076b-4c68-ad2d-9e27fdbcdf6b) | production-line-batch-093-manifest.json |
-| 094 | Reserved, not started | RA 9266 professional law and liability: overview, scope, prohibited acts, civil code liability, architect of record | 5 | 50 | 0 | lea-prac-law-001-ra-9266-overview (02a5ba32-0443-4162-837d-326783ed77a2)<br>lea-prac-law-002-scope-of-practice (7e511a5d-edb1-4622-8f0f-29c1a631c145)<br>lea-prac-law-003-prohibited-acts (3d48211b-8add-4934-8dab-ae8bdae74035)<br>lea-prac-law-010-civil-code-article-1723 (6dc813a9-913d-47b5-9203-f59e8e909869)<br>lea-prac-law-011-architect-of-record (17b95df0-6bea-43c6-ab03-2b82a358caa6) | production-line-batch-094-manifest.json |
+| 093 | Accepted, committed at 81ab4ed94 with hygiene follow-up 2b24d6b71 | PD 1096 building code compliance: height limits, occupancy, setbacks, building permits, plan checking | 5 | 172 | 0 | pd-1096-rule-vii-height-limits (a865c6b2-8c25-404e-bb0c-08d374d374a5)<br>pd-1096-rule-vii-occupancy (9085e0d8-3498-4d3b-b991-46e54d94bde0)<br>pd-1096-rule-viii-setbacks-and-easements (859b1a7f-8aba-473d-8c28-f9aaa39af11d)<br>building-permit-process (687e0da7-4e39-454f-b3f8-a95308678556)<br>typology-checklists-and-plan-checking (4256d28b-076b-4c68-ad2d-9e27fdbcdf6b) | production-line-batch-093-manifest.json |
+| 094 | Local-first complete, pending final publishing review | RA 9266 professional law and liability: overview, scope, prohibited acts, civil code liability, architect of record | 5 | 50 | 0 | lea-prac-law-001-ra-9266-overview (02a5ba32-0443-4162-837d-326783ed77a2)<br>lea-prac-law-002-scope-of-practice (7e511a5d-edb1-4622-8f0f-29c1a631c145)<br>lea-prac-law-003-prohibited-acts (3d48211b-8add-4934-8dab-ae8bdae74035)<br>lea-prac-law-010-civil-code-article-1723 (6dc813a9-913d-47b5-9203-f59e8e909869)<br>lea-prac-law-011-architect-of-record (17b95df0-6bea-43c6-ab03-2b82a358caa6) | production-line-batch-094-manifest.json |
 | 095 | Reserved, not started | UAP professional services: pre-design, SPP 202 overview, schematic design, contract documents, regular design services | 5 | 50 | 0 | lea-prac-svc-001-pre-design-services (db248a33-44f2-411c-a069-9685200a588c)<br>lea-prac-svc-004-spp-doc-202-overview (0b116082-5275-4d0f-bb23-ce5b74339001)<br>lea-prac-svc-005-phase-1-schematic-design (b3d5ae5b-09a9-426c-9feb-00932e5555aa)<br>lea-prac-svc-007-phase-3-contract-documents (617cdac3-3b02-44b0-b81f-f8827fc4242e)<br>spp-doc-202-regular-design-services (24b0a3db-e6bc-45d0-a9a1-d83009112efb) | production-line-batch-095-manifest.json |
 
 ## Worker Instructions
@@ -71,12 +71,20 @@ After each accepted batch, stage only that batch's accepted article folders, que
 - Batch 094 manifest: /Users/philiplewis/slatecamp/.ai/03_plans/production-line-batch-094-manifest.json
 - Batch 095 manifest: /Users/philiplewis/slatecamp/.ai/03_plans/production-line-batch-095-manifest.json
 - Reservation doc: /Users/philiplewis/slatecamp/.ai/03_plans/source-audited-production-line-reservation-093-095.md
-- Global handoff completion state for Batches 087-092: committed and pushed through f8956b5bf.
-- Batch 093-095 reservation status: 15 articles reserved, 0 blockers, all raw PDF source families confirmed locally available.
-- Next-batch instruction: Batch 093 may start after coordinator acceptance. Batches 094 and 095 are reserved and ready to start sequentially after prior batch acceptance.
+- Global handoff completion state for Batches 087-093: committed and pushed through 2b24d6b71.
+- Batch 094 local-first completion state: `PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW`, blockers=0, no Supabase push/deploy/commit attempted by the Batch 094 worker.
+- Batch 095 reservation status: 5 articles reserved, 0 blockers, all raw PDF source families confirmed locally available.
+- Next-batch instruction: Batch 095 may start only in a separate worker run after final Batch 094 review; Batch 094 worker stopped after Batch 094.
 
 ### Batch 093 prior-artifact overlap acknowledgment — 2026-05-12T21:22:14+08:00
 
 Independent QA for Batch 093 found that all five Batch 093 article IDs appeared in older local-first/re-audit artifacts for Batches 007, 008, 053, and 067. QA determined these were historical/local re-audit artifacts that were not committed as accepted production batches, not pushed to Supabase, and not deployed; therefore Batch 093 is acceptable as the first serially accepted production-line pass for these five clusters.
 
 Process advisory: the Batch 093 reservation manifest/process stated `selected_ids_found_in_exclusion_set: []`, while the Batch 093 worker ledger recorded prior-artifact overlap. Future reservation coordinators must distinguish accepted/committed batch exclusion from historical/re-audit artifact overlap and record both explicitly.
+
+### Batch 094 prior-artifact overlap acknowledgment — 2026-05-12T22:07:47+08:00
+
+Independent QA for Batch 094 found that the five Batch 094 article IDs appeared in older local-first/re-audit artifacts for Batches 004, 005, and 006. QA determined these were historical uncommitted re-audit artifacts, not accepted final production content, not Supabase pushes, and not deploys; therefore Batch 094 is acceptable as the serially accepted production-line pass for these five clusters.
+
+Process advisory: future reservation coordinators must distinguish accepted/committed batch exclusion from historical/re-audit artifact overlap and record both explicitly.
+

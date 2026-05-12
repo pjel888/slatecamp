@@ -1,0 +1,503 @@
+{
+  "batch_id": "source-audited-article-batch-094-local-first",
+  "generated_at": "2026-05-12T21:35:16+08:00",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "blockers": 0,
+  "checks": {
+    "fixed_manifest_articles": {
+      "expected": 5,
+      "actual": 5,
+      "pass": true
+    },
+    "linked_question_counts": [
+      {
+        "slug": "lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions",
+        "manifest": 10,
+        "linked": 10,
+        "question_edits": 10,
+        "pass": true
+      },
+      {
+        "slug": "lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not",
+        "manifest": 10,
+        "linked": 10,
+        "question_edits": 10,
+        "pass": true
+      },
+      {
+        "slug": "lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement",
+        "manifest": 10,
+        "linked": 10,
+        "question_edits": 10,
+        "pass": true
+      },
+      {
+        "slug": "lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework",
+        "manifest": 10,
+        "linked": 10,
+        "question_edits": 10,
+        "pass": true
+      },
+      {
+        "slug": "lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi",
+        "manifest": 10,
+        "linked": 10,
+        "question_edits": 10,
+        "pass": true
+      }
+    ],
+    "expected_question_edit_paths": [
+      {
+        "slug": "lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions",
+        "expected": 10,
+        "actual": 10,
+        "missing": 0,
+        "extra": 0,
+        "missing_paths": [],
+        "extra_paths": [],
+        "pass": true
+      },
+      {
+        "slug": "lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not",
+        "expected": 10,
+        "actual": 10,
+        "missing": 0,
+        "extra": 0,
+        "missing_paths": [],
+        "extra_paths": [],
+        "pass": true
+      },
+      {
+        "slug": "lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement",
+        "expected": 10,
+        "actual": 10,
+        "missing": 0,
+        "extra": 0,
+        "missing_paths": [],
+        "extra_paths": [],
+        "pass": true
+      },
+      {
+        "slug": "lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework",
+        "expected": 10,
+        "actual": 10,
+        "missing": 0,
+        "extra": 0,
+        "missing_paths": [],
+        "extra_paths": [],
+        "pass": true
+      },
+      {
+        "slug": "lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi",
+        "expected": 10,
+        "actual": 10,
+        "missing": 0,
+        "extra": 0,
+        "missing_paths": [],
+        "extra_paths": [],
+        "pass": true
+      }
+    ],
+    "json_parse": {
+      "parsed_files": 113,
+      "failures": [],
+      "pass": true
+    },
+    "source_hash_checks": [
+      {
+        "slug": "lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions",
+        "source_key": "ra9266_irr",
+        "source_id": "batch005-lea-prac-law-001-ra-9266-overview-history-legisl-source-01",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_hash_present": true,
+        "raw_pdf_hash_matches": true,
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "refined_markdown_hash_present": true,
+        "refined_markdown_hash_matches": true,
+        "locators": [
+          {
+            "source_key": "ra9266_irr",
+            "locator_type": "refined_markdown_lines",
+            "lines": "7-15",
+            "supports": "IRR title and policy frame"
+          },
+          {
+            "source_key": "ra9266_irr",
+            "locator_type": "refined_markdown_lines",
+            "lines": "17-88",
+            "supports": "architecture, architect, AoR, AiCC, Consulting Architect, scope, and structural conceptualization definitions"
+          },
+          {
+            "source_key": "ra9266_irr",
+            "locator_type": "refined_markdown_lines",
+            "lines": "264-294",
+            "supports": "PRBoA creation, appointment, and term rules"
+          },
+          {
+            "source_key": "ra9266_irr",
+            "locator_type": "refined_markdown_lines",
+            "lines": "817-855",
+            "supports": "IAPOA/UAP integration and Section 41 IRR distinction"
+          }
+        ],
+        "pass": true
+      },
+      {
+        "slug": "lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not",
+        "source_key": "ra9266_irr",
+        "source_id": "batch004-lea-prac-law-002-scope-of-practice-what-architec-source-01",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_hash_present": true,
+        "raw_pdf_hash_matches": true,
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "refined_markdown_hash_present": true,
+        "refined_markdown_hash_matches": true,
+        "locators": [
+          {
+            "source_key": "ra9266_irr",
+            "locator_type": "refined_markdown_lines",
+            "lines": "25-39",
+            "supports": "Architect, Architect-of-Record, AiCC, and Consulting Architect role definitions"
+          },
+          {
+            "source_key": "ra9266_irr",
+            "locator_type": "refined_markdown_lines",
+            "lines": "41-88",
+            "supports": "general practice, scope categories, utility layouting, and structural conceptualization"
+          },
+          {
+            "source_key": "ra9266_irr",
+            "locator_type": "refined_markdown_lines",
+            "lines": "100-104",
+            "supports": "service agreement as written scope and compensation instrument"
+          }
+        ],
+        "pass": true
+      },
+      {
+        "slug": "lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement",
+        "source_key": "ra9266_irr",
+        "source_id": "batch004-lea-prac-law-003-prohibited-acts-criminal-penalt-source-01",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_hash_present": true,
+        "raw_pdf_hash_matches": true,
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "refined_markdown_hash_present": true,
+        "refined_markdown_hash_matches": true,
+        "locators": [
+          {
+            "source_key": "ra9266_irr",
+            "locator_type": "refined_markdown_lines",
+            "lines": "586-624",
+            "supports": "refusal, suspension, revocation, notice/hearing, seal misuse, aiding unauthorized practice, and service-agreement discipline grounds"
+          },
+          {
+            "source_key": "ra9266_irr",
+            "locator_type": "refined_markdown_lines",
+            "lines": "634-638",
+            "supports": "registration requirement and unauthorized practice of architecture"
+          },
+          {
+            "source_key": "ra9266_irr",
+            "locator_type": "refined_markdown_lines",
+            "lines": "674-690",
+            "supports": "Section 29 penal clause and Section 30 written-service-agreement misdemeanor"
+          },
+          {
+            "source_key": "ra9266_irr",
+            "locator_type": "refined_markdown_lines",
+            "lines": "692-694",
+            "supports": "representative liability for non-registered persons or firms"
+          }
+        ],
+        "pass": true
+      },
+      {
+        "slug": "lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework",
+        "source_key": "civil_code_1723",
+        "source_id": "batch004-law010-source-01",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code of the Phils.pdf",
+        "raw_pdf_hash_present": true,
+        "raw_pdf_hash_matches": true,
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-386/RA-386 Civil Code of the Phils.md",
+        "refined_markdown_hash_present": true,
+        "refined_markdown_hash_matches": true,
+        "locators": [
+          {
+            "source_key": "civil_code_1723",
+            "locator_type": "refined_markdown_lines",
+            "lines": "5146-5150",
+            "supports": "fifteen-year collapse window, cause allocation, acceptance non-waiver, and ten-year action period"
+          }
+        ],
+        "pass": true
+      },
+      {
+        "slug": "lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework",
+        "source_key": "ra9266_irr",
+        "source_id": "batch004-law010-source-02",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_hash_present": true,
+        "raw_pdf_hash_matches": true,
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "refined_markdown_hash_present": true,
+        "refined_markdown_hash_matches": true,
+        "locators": [
+          {
+            "source_key": "ra9266_irr",
+            "locator_type": "refined_markdown_lines",
+            "lines": "29-35",
+            "supports": "AoR and AiCC definitions"
+          },
+          {
+            "source_key": "ra9266_irr",
+            "locator_type": "refined_markdown_lines",
+            "lines": "696-702",
+            "supports": "AoR signing/sealing responsibility and Article 1723 civil-liability connection"
+          }
+        ],
+        "pass": true
+      },
+      {
+        "slug": "lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi",
+        "source_key": "ra9266_irr",
+        "source_id": "batch006-lea-prac-law-011-architect-of-record-vs-architec-source-01",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_hash_present": true,
+        "raw_pdf_hash_matches": true,
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "refined_markdown_hash_present": true,
+        "refined_markdown_hash_matches": true,
+        "locators": [
+          {
+            "source_key": "ra9266_irr",
+            "locator_type": "refined_markdown_lines",
+            "lines": "29-35",
+            "supports": "AoR and AiCC role definitions"
+          },
+          {
+            "source_key": "ra9266_irr",
+            "locator_type": "refined_markdown_lines",
+            "lines": "554-580",
+            "supports": "seal use and AoR responsibility for issued architectural documents"
+          },
+          {
+            "source_key": "ra9266_irr",
+            "locator_type": "refined_markdown_lines",
+            "lines": "696-702",
+            "supports": "AoR signing/sealing and Article 1723 civil-liability connection"
+          }
+        ],
+        "pass": true
+      },
+      {
+        "slug": "lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi",
+        "source_key": "civil_code",
+        "source_id": "batch006-lea-prac-law-011-architect-of-record-vs-architec-source-02",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code of the Phils.pdf",
+        "raw_pdf_hash_present": true,
+        "raw_pdf_hash_matches": true,
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-386/RA-386 Civil Code of the Phils.md",
+        "refined_markdown_hash_present": true,
+        "refined_markdown_hash_matches": true,
+        "locators": [
+          {
+            "source_key": "civil_code",
+            "locator_type": "refined_markdown_lines",
+            "lines": "5146-5150",
+            "supports": "Article 1723 cause allocation, solidary liability when supervising, acceptance, and action period"
+          }
+        ],
+        "pass": true
+      }
+    ],
+    "compose": {
+      "articles": [
+        {
+          "slug": "lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions",
+          "blockers": 0,
+          "pass": true
+        },
+        {
+          "slug": "lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not",
+          "blockers": 0,
+          "pass": true
+        },
+        {
+          "slug": "lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement",
+          "blockers": 0,
+          "pass": true
+        },
+        {
+          "slug": "lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework",
+          "blockers": 0,
+          "pass": true
+        },
+        {
+          "slug": "lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi",
+          "blockers": 0,
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    "diff": {
+      "articles": [
+        {
+          "slug": "lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions",
+          "safe_to_push": true,
+          "blockers": 0,
+          "pass": true
+        },
+        {
+          "slug": "lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not",
+          "safe_to_push": true,
+          "blockers": 0,
+          "pass": true
+        },
+        {
+          "slug": "lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement",
+          "safe_to_push": true,
+          "blockers": 0,
+          "pass": true
+        },
+        {
+          "slug": "lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework",
+          "safe_to_push": true,
+          "blockers": 0,
+          "pass": true
+        },
+        {
+          "slug": "lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi",
+          "safe_to_push": true,
+          "blockers": 0,
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    "validate_bundle": {
+      "articles": [
+        {
+          "slug": "lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions",
+          "valid": true,
+          "blockers": 0,
+          "warnings": 0,
+          "pass": true
+        },
+        {
+          "slug": "lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not",
+          "valid": true,
+          "blockers": 0,
+          "warnings": 0,
+          "pass": true
+        },
+        {
+          "slug": "lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement",
+          "valid": true,
+          "blockers": 0,
+          "warnings": 0,
+          "pass": true
+        },
+        {
+          "slug": "lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework",
+          "valid": true,
+          "blockers": 0,
+          "warnings": 0,
+          "pass": true
+        },
+        {
+          "slug": "lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi",
+          "valid": true,
+          "blockers": 0,
+          "warnings": 0,
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    "ui_block_edit_validation": {
+      "articles": [
+        {
+          "slug": "lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions",
+          "valid": true,
+          "blockers": 0,
+          "warnings": 0,
+          "pass": true
+        },
+        {
+          "slug": "lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not",
+          "valid": true,
+          "blockers": 0,
+          "warnings": 0,
+          "pass": true
+        },
+        {
+          "slug": "lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement",
+          "valid": true,
+          "blockers": 0,
+          "warnings": 0,
+          "pass": true
+        },
+        {
+          "slug": "lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework",
+          "valid": true,
+          "blockers": 0,
+          "warnings": 0,
+          "pass": true
+        },
+        {
+          "slug": "lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi",
+          "valid": true,
+          "blockers": 0,
+          "warnings": 0,
+          "pass": true
+        }
+      ],
+      "pass": true
+    },
+    "candidate_placeholder_scan": {
+      "raw_slatecamp_ui_block_placeholders": 0,
+      "matches": [],
+      "pass": true
+    },
+    "internal_note_source_gap_scan": {
+      "matches": 0,
+      "match_details": [],
+      "pass": true
+    },
+    "source_hash_summary": {
+      "checks": 7,
+      "failures": 0,
+      "pass": true
+    },
+    "stale_compose_error_scan": {
+      "compose_error_files": 0,
+      "files": [],
+      "pass": true
+    },
+    "scenario_enrichment": {
+      "results": {
+        "eligible-added": 5
+      },
+      "pass": true
+    },
+    "targeted_tests": {
+      "command": "bun test scripts/content-audit/content-audit.test.ts",
+      "passed": 27,
+      "failed": 0,
+      "expect_calls": 84,
+      "pass": true
+    },
+    "git_diff_check": {
+      "command": "git diff --check",
+      "pass": true,
+      "pending_final_run": false,
+      "result": "PASS"
+    }
+  },
+  "no_supabase_push": true,
+  "no_deploy": true,
+  "no_commit": true,
+  "stopped_after_batch_094": true
+}

@@ -1,8 +1,8 @@
 {
   "artifact_type": "source-audit-evidence",
-  "audit_date": "2026-05-10",
-  "audited_at": "2026-05-10T20:15:00+08:00",
-  "audit_mode": "local_source_audit_no_supabase",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T21:35:16+08:00",
+  "audit_mode": "batch_094_local_first_raw_source_audit_no_supabase",
   "protocols_applied": [
     ".ai/CONTENT_EXCELLENCE_GOAL.md",
     ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
@@ -14,10 +14,11 @@
     "title": "Civil Code Article 1723: The 15-Year Liability Framework",
     "article_folder": ".ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869",
     "candidate_path": ".ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/candidate.md",
-    "candidate_sha256": "sha256:235e759539b600dd06a1bc451f92e659387f3a6aee0455783de2a46a6f2ce7c0",
-    "normalized_sha256": "sha256:235e759539b600dd06a1bc451f92e659387f3a6aee0455783de2a46a6f2ce7c0",
-    "linked_questions_sha256": "sha256:397847afa67604e38dff09ca584a3dc7736d8f1b23f51543fd05993d4be3fd92",
-    "sources_sha256": "sha256:7c7dccd7cc7987e294ddcd79d59c9cf9aaafbc7088f7a440acd8f32cdf491bd4"
+    "candidate_sha256": "sha256:e702c0d62cdfcf74a7be8723054ca4ae0010c57d83a02f47a789e4bf16953064",
+    "normalized_sha256": "sha256:e702c0d62cdfcf74a7be8723054ca4ae0010c57d83a02f47a789e4bf16953064",
+    "linked_questions_sha256": "sha256:b86a881c72cc4e77de5ceb8d4df0e3700733d77e94ad4c138cc8923e80446c26",
+    "sources_sha256": "sha256:84d40bcac0c947bfed691dfa06e41223aa87421804b743d9a5203bf22d824fc1",
+    "normalized_path": ".ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/normalized.md"
   },
   "classification": {
     "content_type": "civil_code_article_1723_article",
@@ -25,16 +26,16 @@
     "requires_raw_pdf_audit": true,
     "linked_questions_observed": 10,
     "question_edits_created": [
-      "76fe3143-368f-4db5-9bb9-348640000e3a",
-      "8578dc0a-0d66-42db-9904-5a6d4a700b46",
       "023017de-e780-41ba-aadd-3b647271ca32",
-      "fee18dcf-2494-4930-b87f-aa50f7b703a6",
       "4a71ac43-563a-48f4-b2cb-891a5dc3d61f",
       "6e10941c-0f97-41d1-b596-f91b42f47356",
       "760d5fa8-81e7-4039-bccb-08b972eec248",
+      "76fe3143-368f-4db5-9bb9-348640000e3a",
+      "8578dc0a-0d66-42db-9904-5a6d4a700b46",
       "e4a0bc5f-3648-4ac0-ba70-3a46174589e7",
       "e966f7b8-e605-4866-884d-60b4ee51c577",
-      "f93a2068-4c06-44ed-b97e-3c43eacee196"
+      "f93a2068-4c06-44ed-b97e-3c43eacee196",
+      "fee18dcf-2494-4930-b87f-aa50f7b703a6"
     ]
   },
   "raw_sources": [
@@ -47,6 +48,16 @@
       "raw_pdf_sha256": "sha256:95b8d7bf26fabeab9d27c661a53729273b69c88fc8565cc2a7146243df693400",
       "checked_pdf_pages": [
         123
+      ],
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-386/RA-386 Civil Code of the Phils.md",
+      "refined_markdown_sha256": "sha256:bc1ab23d02eb7d9d5e1d44d77453023e0c58f1fdf7e1af4f7f97aca8a36fae5b",
+      "locators_used": [
+        {
+          "source_key": "civil_code_1723",
+          "locator_type": "refined_markdown_lines",
+          "lines": "5146-5150",
+          "supports": "fifteen-year collapse window, cause allocation, acceptance non-waiver, and ten-year action period"
+        }
       ]
     },
     {
@@ -60,15 +71,33 @@
         2,
         18,
         19
+      ],
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+      "locators_used": [
+        {
+          "source_key": "ra9266_irr",
+          "locator_type": "refined_markdown_lines",
+          "lines": "29-35",
+          "supports": "AoR and AiCC definitions"
+        },
+        {
+          "source_key": "ra9266_irr",
+          "locator_type": "refined_markdown_lines",
+          "lines": "696-702",
+          "supports": "AoR signing/sealing responsibility and Article 1723 civil-liability connection"
+        }
       ]
     }
   ],
   "gate_results": {
-    "compose": "PASS: content-audit:compose -- --article-id <id> --overwrite; blockers=0",
-    "diff": "PASS: content-audit:diff -- --article-id <id>; changed=true safe_to_push=true blockers=0",
-    "validate": "PASS: content-audit:validate -- --article-id <id> --summary --dry-run; valid=true blockers=0 warnings=0",
-    "push_dry_run": "not_attempted_local_first; Supabase remote fetch is final publishing only and is intentionally non-blocking here",
-    "supabase_mutation": "not_attempted"
+    "compose": "PASS: bun run content-audit:compose -- --article-id 6dc813a9-913d-47b5-9203-f59e8e909869 --overwrite --strict; blockers=0",
+    "diff": "PASS: bun run content-audit:diff -- --article-id 6dc813a9-913d-47b5-9203-f59e8e909869 --strict; safe=true blockers=0",
+    "validate": "PASS: bun run content-audit:validate -- --article-id 6dc813a9-913d-47b5-9203-f59e8e909869 --summary; valid=true blockers=0 warnings=0",
+    "push_dry_run": "not_attempted_local_first; Supabase publishing is explicitly forbidden in this run",
+    "supabase_mutation": "not_attempted_by_request",
+    "scenario_enrichment": "PASS: eligible-added; A collapse fact pattern is the central exam use of Article 1723 and is directly supported by the Civil Code text plus RA 9266 AoR/AiCC definitions.",
+    "ui_block_edits": "PASS: bun run content-audit:ui-block-edits -- --article-id 6dc813a9-913d-47b5-9203-f59e8e909869; valid=true blockers=0 warnings=0"
   },
   "claims": [
     {
@@ -119,6 +148,15 @@
         "civil_code_1723",
         "ra9266_irr"
       ]
+    },
+    {
+      "claim_id": "law010-b094-scenario-claim",
+      "claim_text": "The Real World Scenario applies Civil Code Article 1723 by first identifying the cause of collapse, then applying the fifteen-year collapse window and ten-year action period.",
+      "source_support": [
+        "civil_code_1723",
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
     }
   ],
   "unsupported_or_removed_claims": [
@@ -134,10 +172,51 @@
     "remaining_local_blockers": []
   },
   "local_validation": {
-    "command": "bun run content-audit:validate -- --article-id 6dc813a9-913d-47b5-9203-f59e8e909869 --summary --dry-run",
+    "command": "bun run content-audit:validate -- --article-id 6dc813a9-913d-47b5-9203-f59e8e909869 --summary",
     "valid": true,
     "blockers": 0,
     "warnings": [],
-    "checked_at": "2026-05-10T16:39:34+08:00"
-  }
+    "checked_at": "2026-05-12T21:35:16+08:00"
+  },
+  "batch_id": "094",
+  "scenario_enrichment": {
+    "status": "eligible-added",
+    "section": "Real World Scenario",
+    "reason": "A collapse fact pattern is the central exam use of Article 1723 and is directly supported by the Civil Code text plus RA 9266 AoR/AiCC definitions."
+  },
+  "source_locator_summary": [
+    {
+      "source_key": "civil_code_1723",
+      "locator_type": "refined_markdown_lines",
+      "lines": "5146-5150",
+      "supports": "fifteen-year collapse window, cause allocation, acceptance non-waiver, and ten-year action period",
+      "label": "Civil Code of the Philippines, Article 1723",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code of the Phils.pdf",
+      "raw_pdf_sha256": "sha256:95b8d7bf26fabeab9d27c661a53729273b69c88fc8565cc2a7146243df693400",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-386/RA-386 Civil Code of the Phils.md",
+      "refined_markdown_sha256": "sha256:bc1ab23d02eb7d9d5e1d44d77453023e0c58f1fdf7e1af4f7f97aca8a36fae5b"
+    },
+    {
+      "source_key": "ra9266_irr",
+      "locator_type": "refined_markdown_lines",
+      "lines": "29-35",
+      "supports": "AoR and AiCC definitions",
+      "label": "RA 9266 IRR Architecture Act of 2004",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0"
+    },
+    {
+      "source_key": "ra9266_irr",
+      "locator_type": "refined_markdown_lines",
+      "lines": "696-702",
+      "supports": "AoR signing/sealing responsibility and Article 1723 civil-liability connection",
+      "label": "RA 9266 IRR Architecture Act of 2004",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0"
+    }
+  ]
 }

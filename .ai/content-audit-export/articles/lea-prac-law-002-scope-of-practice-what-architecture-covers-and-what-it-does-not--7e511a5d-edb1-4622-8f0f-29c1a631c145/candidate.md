@@ -32,6 +32,10 @@ The scope includes architectural layouting of mechanical, electrical, electronic
 
 The IRR defines a service agreement as a notarized written contract or equivalent public instrument that states the scope of services and guarantees compensation for services rendered by a registered and licensed architect. The exam trap is to treat the statutory scope as if every architect automatically owes every listed service on every commission. In practice and in exam analysis, the service agreement identifies which services are actually commissioned.
 
+### Real World Scenario
+
+A small commercial client asks one architect for site analysis, schematic design, architectural plans, cost estimates, space planning, and utility layout coordination. Those services fit the RA 9266 scope list when they are architectural services, but the architect should still coordinate with qualified specialists for technical engineering design. The exam move is to classify the architectural service first, then avoid turning architectural coordination into another profession's signing authority.
+
 ### Exam Takeaway
 
 Use this hierarchy: Section 3 defines the practice and role boundaries; the service agreement defines the commissioned scope; signing and sealing rules determine responsibility for documents actually issued under the architect's seal.

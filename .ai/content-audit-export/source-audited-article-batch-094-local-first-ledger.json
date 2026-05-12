@@ -1,0 +1,527 @@
+{
+  "batch_id": "source-audited-article-batch-094-local-first",
+  "generated_at": "2026-05-12T21:35:16+08:00",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "blockers": [],
+  "manifest_path": ".ai/03_plans/production-line-batch-094-manifest.json",
+  "fixed_manifest_observed": true,
+  "no_supabase_push": true,
+  "no_deploy": true,
+  "no_commit": true,
+  "stopped_after_batch": 94,
+  "batch_095_readiness": "ready_for_separate_local_first_worker_run_because_batch_094_blockers_0",
+  "counts": {
+    "article_count": 5,
+    "linked_questions_expected": 50,
+    "linked_questions_actual": 50,
+    "question_edits_expected": 50,
+    "question_edits_actual": 50
+  },
+  "prior_artifact_overlap_recorded": {
+    "status": "recorded_as_historical_local_first_reaudit_overlap_not_skip_reason",
+    "overlaps": [
+      {
+        "article_id": "02a5ba32-0443-4162-837d-326783ed77a2",
+        "older_artifacts": [
+          "source-audited-article-batch-005-local-first-ledger-2026-05-10.json"
+        ]
+      },
+      {
+        "article_id": "7e511a5d-edb1-4622-8f0f-29c1a631c145",
+        "older_artifacts": [
+          "source-audited-article-batch-004-local-first-ledger-2026-05-10.json"
+        ]
+      },
+      {
+        "article_id": "3d48211b-8add-4934-8dab-ae8bdae74035",
+        "older_artifacts": [
+          "source-audited-article-batch-004-local-first-ledger-2026-05-10.json"
+        ]
+      },
+      {
+        "article_id": "6dc813a9-913d-47b5-9203-f59e8e909869",
+        "older_artifacts": [
+          "source-audited-article-batch-004-local-first-ledger-2026-05-10.json"
+        ]
+      },
+      {
+        "article_id": "17b95df0-6bea-43c6-ab03-2b82a358caa6",
+        "older_artifacts": [
+          "source-audited-article-batch-006-local-first-ledger-2026-05-10.json"
+        ]
+      }
+    ]
+  },
+  "articles": [
+    {
+      "article_id": "02a5ba32-0443-4162-837d-326783ed77a2",
+      "slug": "lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions",
+      "title": "RA 9266 Overview: Core Legal Frame and Key Definitions",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/source-audit-evidence.json",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/question-edits",
+      "question_edit_file_paths": [
+        ".ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/question-edits/16ddda97-9cf3-4b6d-9a7e-79b05fd2a19e.json",
+        ".ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/question-edits/3a13ae21-70c5-44cd-884f-04f7305e3640.json",
+        ".ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/question-edits/3ad6f461-c4c4-45e6-af3a-88e089afb52d.json",
+        ".ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/question-edits/5095e2a0-1ee7-4e67-8c91-5a7e998b3b70.json",
+        ".ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/question-edits/55e9adf2-fd59-4a65-b7e7-2ec8b42fd4a9.json",
+        ".ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/question-edits/6c099536-f6a9-4cda-863a-a5a97be9870b.json",
+        ".ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/question-edits/7e4e697d-9af0-4014-abfc-d26db4d50092.json",
+        ".ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/question-edits/bff7aa91-e5a7-462b-8b38-8371a20d273c.json",
+        ".ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/question-edits/e7b2b739-2599-447b-a856-d291c32f294f.json",
+        ".ai/content-audit-export/articles/lea-prac-law-001-ra-9266-overview-history-legislative-intent-and-key-definitions--02a5ba32-0443-4162-837d-326783ed77a2/question-edits/fe23d295-5ba2-4572-b481-7b8eb472010f.json"
+      ],
+      "linked_question_count_manifest": 10,
+      "linked_question_count_actual": 10,
+      "question_edit_count_actual": 10,
+      "source_count": 1,
+      "source_ids": [
+        "batch005-lea-prac-law-001-ra-9266-overview-history-legisl-source-01"
+      ],
+      "scenario_enrichment": {
+        "status": "eligible-added",
+        "section": "Real World Scenario",
+        "reason": "The AoR/Consulting Architect role split is exam-useful and directly supported by RA 9266 IRR Section 3 role definitions and Section 32 document-liability language."
+      },
+      "hashes": {
+        "normalized_sha256": "sha256:b0051a6a69fcf2ea6124a8b7f7932620907adbd51b57378d04acfc21a3a3ae53",
+        "candidate_sha256": "sha256:b0051a6a69fcf2ea6124a8b7f7932620907adbd51b57378d04acfc21a3a3ae53",
+        "sources_hash": "sha256:5dacce9b109b0ac8e3f3a1b3e01e75628ed677cc33a0dcd4d9e20209b4170fa4"
+      },
+      "source_locator_summary": [
+        {
+          "source_key": "ra9266_irr",
+          "locator_type": "refined_markdown_lines",
+          "lines": "7-15",
+          "supports": "IRR title and policy frame",
+          "label": "RA 9266 IRR Architecture Act of 2004",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+          "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0"
+        },
+        {
+          "source_key": "ra9266_irr",
+          "locator_type": "refined_markdown_lines",
+          "lines": "17-88",
+          "supports": "architecture, architect, AoR, AiCC, Consulting Architect, scope, and structural conceptualization definitions",
+          "label": "RA 9266 IRR Architecture Act of 2004",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+          "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0"
+        },
+        {
+          "source_key": "ra9266_irr",
+          "locator_type": "refined_markdown_lines",
+          "lines": "264-294",
+          "supports": "PRBoA creation, appointment, and term rules",
+          "label": "RA 9266 IRR Architecture Act of 2004",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+          "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0"
+        },
+        {
+          "source_key": "ra9266_irr",
+          "locator_type": "refined_markdown_lines",
+          "lines": "817-855",
+          "supports": "IAPOA/UAP integration and Section 41 IRR distinction",
+          "label": "RA 9266 IRR Architecture Act of 2004",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+          "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0"
+        }
+      ],
+      "validation": {
+        "compose_blockers": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "validate_valid": true,
+        "validate_blockers": 0,
+        "validate_warnings": 0,
+        "ui_block_edit_valid": true,
+        "ui_block_edit_blockers": 0,
+        "ui_block_edit_warnings": 0
+      },
+      "blockers": []
+    },
+    {
+      "article_id": "7e511a5d-edb1-4622-8f0f-29c1a631c145",
+      "slug": "lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not",
+      "title": "Scope of Practice: What Architecture Covers and What It Does Not",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/source-audit-evidence.json",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/question-edits",
+      "question_edit_file_paths": [
+        ".ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/question-edits/08a1c4ca-fe39-4ded-81c4-94909a6d362c.json",
+        ".ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/question-edits/470f33bb-24f1-4eb2-a76e-ce255a50ae41.json",
+        ".ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/question-edits/5799550f-7a5e-4e16-a921-a7551b075bc0.json",
+        ".ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/question-edits/64f87401-24fd-4f73-803f-d7f9a006c03a.json",
+        ".ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/question-edits/7d7ae21c-dcec-43f0-8403-b4117dcd1c89.json",
+        ".ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/question-edits/ae2dd470-af9a-49d3-b2ae-03968c51a4a1.json",
+        ".ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/question-edits/c47a6715-b32f-4649-8692-cc3e1a1a63b3.json",
+        ".ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/question-edits/c7d3979b-6241-480e-a37d-28cfd4af00d8.json",
+        ".ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/question-edits/cfc6c973-ed50-4948-9c47-48a8fadf5dd7.json",
+        ".ai/content-audit-export/articles/lea-prac-law-002-scope-of-practice-what-architecture-covers-and-what-it-does-not--7e511a5d-edb1-4622-8f0f-29c1a631c145/question-edits/d64a8825-1fc6-469c-85a7-b67fea123907.json"
+      ],
+      "linked_question_count_manifest": 10,
+      "linked_question_count_actual": 10,
+      "question_edit_count_actual": 10,
+      "source_count": 1,
+      "source_ids": [
+        "batch004-lea-prac-law-002-scope-of-practice-what-architec-source-01"
+      ],
+      "scenario_enrichment": {
+        "status": "eligible-added",
+        "section": "Real World Scenario",
+        "reason": "Client-service classification is exam-useful and directly supported by RA 9266 IRR Section 3(4), while the engineering-signing caveat is framed as a boundary rather than an unsupported citation."
+      },
+      "hashes": {
+        "normalized_sha256": "sha256:b84a8f680255ed8239dfa1723f59fef90b58caddeff1e4e848d0ec5700a4531b",
+        "candidate_sha256": "sha256:b84a8f680255ed8239dfa1723f59fef90b58caddeff1e4e848d0ec5700a4531b",
+        "sources_hash": "sha256:bc17e71e5ed48e2599169204352f7ae9add79bdcf98b56cda849cfbc519067f0"
+      },
+      "source_locator_summary": [
+        {
+          "source_key": "ra9266_irr",
+          "locator_type": "refined_markdown_lines",
+          "lines": "25-39",
+          "supports": "Architect, Architect-of-Record, AiCC, and Consulting Architect role definitions",
+          "label": "RA 9266 IRR Architecture Act of 2004",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+          "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0"
+        },
+        {
+          "source_key": "ra9266_irr",
+          "locator_type": "refined_markdown_lines",
+          "lines": "41-88",
+          "supports": "general practice, scope categories, utility layouting, and structural conceptualization",
+          "label": "RA 9266 IRR Architecture Act of 2004",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+          "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0"
+        },
+        {
+          "source_key": "ra9266_irr",
+          "locator_type": "refined_markdown_lines",
+          "lines": "100-104",
+          "supports": "service agreement as written scope and compensation instrument",
+          "label": "RA 9266 IRR Architecture Act of 2004",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+          "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0"
+        }
+      ],
+      "validation": {
+        "compose_blockers": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "validate_valid": true,
+        "validate_blockers": 0,
+        "validate_warnings": 0,
+        "ui_block_edit_valid": true,
+        "ui_block_edit_blockers": 0,
+        "ui_block_edit_warnings": 0
+      },
+      "blockers": []
+    },
+    {
+      "article_id": "3d48211b-8add-4934-8dab-ae8bdae74035",
+      "slug": "lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement",
+      "title": "Prohibited Acts, Criminal Penalties, and Enforcement",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/source-audit-evidence.json",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/question-edits",
+      "question_edit_file_paths": [
+        ".ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/question-edits/032522de-2664-4f28-9890-c071c8ff7958.json",
+        ".ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/question-edits/14eecec5-5617-4dea-96d5-d97a3e498ea2.json",
+        ".ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/question-edits/37651fee-ec17-4001-8ca1-1dedf550b986.json",
+        ".ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/question-edits/5b1da138-7d1f-42b4-9ab2-ba065604422a.json",
+        ".ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/question-edits/9e2f8b9a-0377-4a5c-8b74-1e92e96122b9.json",
+        ".ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/question-edits/a0bd7489-e809-4020-b40b-6aa2cd56d95d.json",
+        ".ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/question-edits/bd2377d1-d87e-40d9-9db3-0de5bfd8652f.json",
+        ".ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/question-edits/dacb2eeb-a43c-47fe-a044-fe3eed4ff9b3.json",
+        ".ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/question-edits/dd652c66-c567-4c87-834f-17eac39c7133.json",
+        ".ai/content-audit-export/articles/lea-prac-law-003-prohibited-acts-criminal-penalties-and-enforcement--3d48211b-8add-4934-8dab-ae8bdae74035/question-edits/e7d85e00-c727-4cf6-a9a1-b882d204aa15.json"
+      ],
+      "linked_question_count_manifest": 10,
+      "linked_question_count_actual": 10,
+      "question_edit_count_actual": 10,
+      "source_count": 1,
+      "source_ids": [
+        "batch004-lea-prac-law-003-prohibited-acts-criminal-penalt-source-01"
+      ],
+      "scenario_enrichment": {
+        "status": "eligible-added",
+        "section": "Real World Scenario",
+        "reason": "Unauthorized solicitation, coercion without service agreement, and seal misuse are source-backed enforcement distinctions and useful for LEA fact-pattern triage."
+      },
+      "hashes": {
+        "normalized_sha256": "sha256:089e93716f184fdbf94146fb2d97ca8da1946cab975dff367ed9da6722b1dc5c",
+        "candidate_sha256": "sha256:089e93716f184fdbf94146fb2d97ca8da1946cab975dff367ed9da6722b1dc5c",
+        "sources_hash": "sha256:0cabb6d28da2f6e37faacf7e92b4ed7ed827a48bba7f1b84289e749cffe391fb"
+      },
+      "source_locator_summary": [
+        {
+          "source_key": "ra9266_irr",
+          "locator_type": "refined_markdown_lines",
+          "lines": "586-624",
+          "supports": "refusal, suspension, revocation, notice/hearing, seal misuse, aiding unauthorized practice, and service-agreement discipline grounds",
+          "label": "RA 9266 IRR Architecture Act of 2004",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+          "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0"
+        },
+        {
+          "source_key": "ra9266_irr",
+          "locator_type": "refined_markdown_lines",
+          "lines": "634-638",
+          "supports": "registration requirement and unauthorized practice of architecture",
+          "label": "RA 9266 IRR Architecture Act of 2004",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+          "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0"
+        },
+        {
+          "source_key": "ra9266_irr",
+          "locator_type": "refined_markdown_lines",
+          "lines": "674-690",
+          "supports": "Section 29 penal clause and Section 30 written-service-agreement misdemeanor",
+          "label": "RA 9266 IRR Architecture Act of 2004",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+          "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0"
+        },
+        {
+          "source_key": "ra9266_irr",
+          "locator_type": "refined_markdown_lines",
+          "lines": "692-694",
+          "supports": "representative liability for non-registered persons or firms",
+          "label": "RA 9266 IRR Architecture Act of 2004",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+          "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0"
+        }
+      ],
+      "validation": {
+        "compose_blockers": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "validate_valid": true,
+        "validate_blockers": 0,
+        "validate_warnings": 0,
+        "ui_block_edit_valid": true,
+        "ui_block_edit_blockers": 0,
+        "ui_block_edit_warnings": 0
+      },
+      "blockers": []
+    },
+    {
+      "article_id": "6dc813a9-913d-47b5-9203-f59e8e909869",
+      "slug": "lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework",
+      "title": "Civil Code Article 1723: The 15-Year Liability Framework",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/source-audit-evidence.json",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/question-edits",
+      "question_edit_file_paths": [
+        ".ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/question-edits/023017de-e780-41ba-aadd-3b647271ca32.json",
+        ".ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/question-edits/4a71ac43-563a-48f4-b2cb-891a5dc3d61f.json",
+        ".ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/question-edits/6e10941c-0f97-41d1-b596-f91b42f47356.json",
+        ".ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/question-edits/760d5fa8-81e7-4039-bccb-08b972eec248.json",
+        ".ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/question-edits/76fe3143-368f-4db5-9bb9-348640000e3a.json",
+        ".ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/question-edits/8578dc0a-0d66-42db-9904-5a6d4a700b46.json",
+        ".ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/question-edits/e4a0bc5f-3648-4ac0-ba70-3a46174589e7.json",
+        ".ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/question-edits/e966f7b8-e605-4866-884d-60b4ee51c577.json",
+        ".ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/question-edits/f93a2068-4c06-44ed-b97e-3c43eacee196.json",
+        ".ai/content-audit-export/articles/lea-prac-law-010-civil-code-article-1723-the-15-year-liability-framework--6dc813a9-913d-47b5-9203-f59e8e909869/question-edits/fee18dcf-2494-4930-b87f-aa50f7b703a6.json"
+      ],
+      "linked_question_count_manifest": 10,
+      "linked_question_count_actual": 10,
+      "question_edit_count_actual": 10,
+      "source_count": 2,
+      "source_ids": [
+        "batch004-law010-source-01",
+        "batch004-law010-source-02"
+      ],
+      "scenario_enrichment": {
+        "status": "eligible-added",
+        "section": "Real World Scenario",
+        "reason": "A collapse fact pattern is the central exam use of Article 1723 and is directly supported by the Civil Code text plus RA 9266 AoR/AiCC definitions."
+      },
+      "hashes": {
+        "normalized_sha256": "sha256:e702c0d62cdfcf74a7be8723054ca4ae0010c57d83a02f47a789e4bf16953064",
+        "candidate_sha256": "sha256:e702c0d62cdfcf74a7be8723054ca4ae0010c57d83a02f47a789e4bf16953064",
+        "sources_hash": "sha256:84d40bcac0c947bfed691dfa06e41223aa87421804b743d9a5203bf22d824fc1"
+      },
+      "source_locator_summary": [
+        {
+          "source_key": "civil_code_1723",
+          "locator_type": "refined_markdown_lines",
+          "lines": "5146-5150",
+          "supports": "fifteen-year collapse window, cause allocation, acceptance non-waiver, and ten-year action period",
+          "label": "Civil Code of the Philippines, Article 1723",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code of the Phils.pdf",
+          "raw_pdf_sha256": "sha256:95b8d7bf26fabeab9d27c661a53729273b69c88fc8565cc2a7146243df693400",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-386/RA-386 Civil Code of the Phils.md",
+          "refined_markdown_sha256": "sha256:bc1ab23d02eb7d9d5e1d44d77453023e0c58f1fdf7e1af4f7f97aca8a36fae5b"
+        },
+        {
+          "source_key": "ra9266_irr",
+          "locator_type": "refined_markdown_lines",
+          "lines": "29-35",
+          "supports": "AoR and AiCC definitions",
+          "label": "RA 9266 IRR Architecture Act of 2004",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+          "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0"
+        },
+        {
+          "source_key": "ra9266_irr",
+          "locator_type": "refined_markdown_lines",
+          "lines": "696-702",
+          "supports": "AoR signing/sealing responsibility and Article 1723 civil-liability connection",
+          "label": "RA 9266 IRR Architecture Act of 2004",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+          "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0"
+        }
+      ],
+      "validation": {
+        "compose_blockers": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "validate_valid": true,
+        "validate_blockers": 0,
+        "validate_warnings": 0,
+        "ui_block_edit_valid": true,
+        "ui_block_edit_blockers": 0,
+        "ui_block_edit_warnings": 0
+      },
+      "blockers": []
+    },
+    {
+      "article_id": "17b95df0-6bea-43c6-ab03-2b82a358caa6",
+      "slug": "lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi",
+      "title": "Architect of Record vs Architect in Charge of Construction Liability",
+      "article_folder_path": ".ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6/source-audit-evidence.json",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6/question-edits",
+      "question_edit_file_paths": [
+        ".ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6/question-edits/016fafea-7a8c-4720-b73a-aca8fd1488c0.json",
+        ".ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6/question-edits/216f9a84-8df2-4183-86e4-58279e229b60.json",
+        ".ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6/question-edits/2cba8465-a4de-41ac-bd26-8451c590b071.json",
+        ".ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6/question-edits/487458a0-704b-46b4-9de1-1cd3bc85fbf6.json",
+        ".ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6/question-edits/56120d58-cee2-4daf-9cdc-5d91ff8a9233.json",
+        ".ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6/question-edits/7f2143ba-a7b7-4397-9c34-82ae0108bb9c.json",
+        ".ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6/question-edits/96b17f48-0186-4a9a-8cf3-e2fa79120826.json",
+        ".ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6/question-edits/b216f737-beb5-4e9f-95b0-7023c57dbfaf.json",
+        ".ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6/question-edits/fc4a4042-8ab7-465a-a6f5-a224a45e0e88.json",
+        ".ai/content-audit-export/articles/lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6/question-edits/fd64ffbe-960f-4ea3-9bb2-5a4feec61d14.json"
+      ],
+      "linked_question_count_manifest": 10,
+      "linked_question_count_actual": 10,
+      "question_edit_count_actual": 10,
+      "source_count": 2,
+      "source_ids": [
+        "batch006-lea-prac-law-011-architect-of-record-vs-architec-source-01",
+        "batch006-lea-prac-law-011-architect-of-record-vs-architec-source-02"
+      ],
+      "scenario_enrichment": {
+        "status": "eligible-added",
+        "section": "Real World Scenario",
+        "reason": "Separate design-document and construction-supervision roles are exam-useful and directly supported by RA 9266 IRR definitions, signing/sealing provisions, and Civil Code Article 1723."
+      },
+      "hashes": {
+        "normalized_sha256": "sha256:7920875eacdc8e214ff9b0844909c0ff3feb70a34330d937ff112306fa91ff2c",
+        "candidate_sha256": "sha256:7920875eacdc8e214ff9b0844909c0ff3feb70a34330d937ff112306fa91ff2c",
+        "sources_hash": "sha256:442f02de1fac3f473ec53d041ed2aa7aa6e1f2deb9c51fdacdbc560c0f3db11c"
+      },
+      "source_locator_summary": [
+        {
+          "source_key": "ra9266_irr",
+          "locator_type": "refined_markdown_lines",
+          "lines": "29-35",
+          "supports": "AoR and AiCC role definitions",
+          "label": "RA 9266 IRR Architecture Act of 2004",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+          "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0"
+        },
+        {
+          "source_key": "ra9266_irr",
+          "locator_type": "refined_markdown_lines",
+          "lines": "554-580",
+          "supports": "seal use and AoR responsibility for issued architectural documents",
+          "label": "RA 9266 IRR Architecture Act of 2004",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+          "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0"
+        },
+        {
+          "source_key": "ra9266_irr",
+          "locator_type": "refined_markdown_lines",
+          "lines": "696-702",
+          "supports": "AoR signing/sealing and Article 1723 civil-liability connection",
+          "label": "RA 9266 IRR Architecture Act of 2004",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+          "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0"
+        },
+        {
+          "source_key": "civil_code",
+          "locator_type": "refined_markdown_lines",
+          "lines": "5146-5150",
+          "supports": "Article 1723 cause allocation, solidary liability when supervising, acceptance, and action period",
+          "label": "Civil Code of the Philippines, Article 1723",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code of the Phils.pdf",
+          "raw_pdf_sha256": "sha256:95b8d7bf26fabeab9d27c661a53729273b69c88fc8565cc2a7146243df693400",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-386/RA-386 Civil Code of the Phils.md",
+          "refined_markdown_sha256": "sha256:bc1ab23d02eb7d9d5e1d44d77453023e0c58f1fdf7e1af4f7f97aca8a36fae5b"
+        }
+      ],
+      "validation": {
+        "compose_blockers": 0,
+        "diff_safe_to_push": true,
+        "diff_blockers": 0,
+        "validate_valid": true,
+        "validate_blockers": 0,
+        "validate_warnings": 0,
+        "ui_block_edit_valid": true,
+        "ui_block_edit_blockers": 0,
+        "ui_block_edit_warnings": 0
+      },
+      "blockers": []
+    }
+  ]
+}

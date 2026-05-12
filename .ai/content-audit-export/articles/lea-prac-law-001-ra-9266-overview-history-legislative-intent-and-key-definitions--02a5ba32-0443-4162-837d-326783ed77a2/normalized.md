@@ -35,6 +35,10 @@ Do not use Section 41 as the nominee rule. Section 40 is the integration provisi
 
 Section 6 gives each Board member a three-year term and allows reappointment for one full term. The first Board used staggered terms so all seats would not expire at the same time.
 
+## Real World Scenario
+
+A client asks a firm to name the architect responsible for the total design while also retaining a specialist for facade consultation. Treat the named Architect-of-Record as the registered architect responsible for the total design and signed-and-sealed contract documents, then treat the specialist as a Consulting Architect only within the specialized service agreed with the client. For LEA purposes, do not collapse those labels into one generic "architect" role.
+
 ## Exam Guardrails
 
 - Use Section 1 for the short title and repeal of RA 545.

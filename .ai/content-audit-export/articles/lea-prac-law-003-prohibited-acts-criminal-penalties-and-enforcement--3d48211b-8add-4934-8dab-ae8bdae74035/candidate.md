@@ -30,6 +30,10 @@ Section 30 makes it a misdemeanor to entice, compel, coerce, require, or force a
 
 Section 31 prevents non-registered persons, firms, or corporations from avoiding RA 9266 by using a representative or employee to seek architectural work on their behalf. Soliciting architectural work is treated as offering to practice architecture; if the represented party is not properly qualified and registered, both the represented party and the representative may be treated as violators.
 
+### Real World Scenario
+
+An unregistered construction company advertises "architectural design services" and sends an employee to solicit a building owner, while a registered architect is later pressured to sign documents without a written service agreement. Analyze the company and representative under the unauthorized-practice and representative-liability rules, then analyze the pressure on the architect under the written-service-agreement protection. If the facts involve a registered architect misusing a seal, switch to the disciplinary bucket.
+
 ### Exam Takeaway
 
 Use three buckets: registration required, professional discipline, and penal enforcement. If the fact pattern is about a registered architect's seal misuse or gross negligence, think Section 23. If it is about unauthorized practice or pretending to be an architect, think Section 25 and Section 29. If it is about forcing work without a service agreement, think Section 30.

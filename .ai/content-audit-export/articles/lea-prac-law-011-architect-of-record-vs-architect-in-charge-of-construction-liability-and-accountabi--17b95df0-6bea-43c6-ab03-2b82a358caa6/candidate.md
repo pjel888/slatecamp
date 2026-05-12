@@ -18,3 +18,7 @@ Civil Code Article 1723 then asks why the edifice failed. If the cause is a defe
 First identify the cause of failure. Design-document defects point to the Architect-of-Record. Construction defects and inferior materials point first to the contractor. If a supervising architect undertook construction supervision and defective supervision contributed to the failure, Article 1723 can make that supervising professional solidarily liable with the contractor.
 
 Do not merge the two roles. One architect may have exposure under both tracks only when the facts show that the architect accepted both design-document responsibility and construction-supervision responsibility.
+
+## Real World Scenario
+
+One registered architect signs and seals the architectural plans as Architect-of-Record, while another registered architect is engaged to supervise construction. If a later collapse is tied to a design-document defect, analyze the AoR track; if the collapse is tied to construction defects, inferior materials, or defective supervision, analyze the contractor and the Architect-in-Charge of Construction track. The same person can be exposed on both tracks only if the facts show that the person held both roles.
