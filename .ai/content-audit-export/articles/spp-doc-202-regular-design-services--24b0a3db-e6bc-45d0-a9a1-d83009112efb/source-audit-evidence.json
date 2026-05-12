@@ -1,230 +1,102 @@
 {
-  "artifact_type": "source-audit-evidence",
-  "batch_id": "source-audited-article-batch-011",
-  "audit_date": "2026-05-10",
-  "audited_at": "2026-05-10T19:20:00.000+08:00",
-  "audit_mode": "LOCAL_FIRST_NO_SUPABASE_NO_DEPLOY_NO_COMMIT",
-  "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
-  "protocols_applied": [
-    "AGENTS.md root local-first and validation contract",
-    ".ai/AGENTS.md operational-artifact contract",
-    "ph-arch-construction-law skill: cite exact legal/code sources only when verified",
-    "ph-arch-professional-context skill: ground practice claims in Philippine professional context"
-  ],
-  "target": {
-    "article_id": "24b0a3db-e6bc-45d0-a9a1-d83009112efb",
-    "slug": "spp-doc-202-regular-design-services",
-    "title": "SPP Doc 202: Regular Design Services",
-    "article_folder": ".ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb",
-    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb",
-    "normalized_path": ".ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/normalized.md",
-    "candidate_path": ".ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/candidate.md",
-    "sources_path": ".ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/sources.json",
-    "question_edits_folder": ".ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/question-edits",
-    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/question-edits",
-    "normalized_sha256": "sha256:fccda72e844d0d3132144a0bd124ddbdbb3b4d5182843b98f7f4d384b365420f",
-    "candidate_sha256": "sha256:fccda72e844d0d3132144a0bd124ddbdbb3b4d5182843b98f7f4d384b365420f",
-    "linked_questions_sha256": "sha256:18cde003bcd3c769b1ffdfbbf093bd181dff5c7a954730ce27f39c9dcfd1dc77",
-    "sources_sha256": "sha256:03d2c124937eb207b867b19ba088cd50e691f76deec16d8f2ea165c445f0574c"
+  "batch_id": "source-audited-article-batch-095-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T22:11:13.000+08:00",
+  "article_id": "24b0a3db-e6bc-45d0-a9a1-d83009112efb",
+  "slug": "spp-doc-202-regular-design-services",
+  "title": "SPP Doc 202: Regular Design Services",
+  "status": "local_pass_ready_for_final_publishing_review",
+  "article_folder": ".ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb",
+  "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb",
+  "question_edits_folder": ".ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/question-edits",
+  "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/question-edits",
+  "linked_questions": 10,
+  "question_edits_created": 10,
+  "source_safe_rewrite_question_edits": 10,
+  "source_audit": {
+    "primary_sources_checked": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "source_id": "uap-spp-202-standards-of-professional-practice",
+        "locator": "SPP Document 202 regular-design scope, phase duties, classifications, compensation methods, and service conditions"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+        "source_id": "uap-spp-202-standards-of-professional-practice",
+        "locator": "Converted local text for SPP Document 202 line anchoring"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+        "sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+        "source_id": "uap-doc-401-402-owner-architect-agreement",
+        "locator": "Architect fee and manner of payment milestones"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document 401-402.md",
+        "sha256": "sha256:0b9cfd569b9f964c95dec13761812c8606b2c0fe38b9043df13efad361286a53",
+        "source_id": "uap-doc-401-402-owner-architect-agreement",
+        "locator": "Converted local text for payment milestone line anchoring"
+      }
+    ],
+    "checked_markdown_lines": [
+      "UAP Document Standards raw markdown lines 283-382",
+      "UAP Document Standards raw markdown lines 417-441",
+      "UAP Document Standards raw markdown lines 447-492",
+      "UAP Document Standards raw markdown lines 494-543",
+      "UAP Document 401-402 raw markdown lines 88-100",
+      "UAP Document 401-402 raw markdown lines 138-145"
+    ],
+    "source_locator": "SPP Document 202 regular design services, classifications, compensation/service conditions, and UAP Document 401-402 payment milestones",
+    "source_scope": "SPP 202 regular design services plus UAP Document 401-402 payment milestones where payment timing is tested",
+    "local_source_checked": true,
+    "no_internet_primary_evidence_used": true
   },
-  "classification": {
-    "content_type": "spp202_regular_design_services_article",
-    "contains_legal_or_code_claims": true,
-    "requires_raw_pdf_audit": true,
-    "linked_questions_observed": 10,
-    "question_edits_created": [
-      "214ce588-337e-45fe-ab73-763e5de08118",
-      "2b52b921-0fbb-4b41-9ae9-26147cb2b421",
-      "2e790ee6-a6a0-4c9a-a545-6379492a35f3",
-      "33e502b9-c4a4-4c7f-9cb4-569aabe2ca65",
-      "389d47a6-4100-4b1e-aaa2-3784b2911d3a",
-      "618bb5ae-8a21-498f-bc5a-20389b93aa98",
-      "77a5ab14-e2ec-4d15-85d7-a4a8ce240227",
-      "9fdc08e5-ef3f-46ac-a3a4-4741b3d7e63e",
-      "b1ec9503-9ae3-4835-af28-704fc4dd064c",
-      "b4ad1ac0-f8c0-42fa-821e-7286375ae1b4"
+  "scenario_enrichment": {
+    "status": "eligible-added",
+    "section_heading": "Real World Scenario",
+    "summary": "Added source-safe construction-phase scenario distinguishing periodic site visits from separate full-time supervision.",
+    "source_support": [
+      "UAP Document Standards raw markdown lines 375-382"
     ]
   },
-  "raw_sources": [
-    {
-      "source_id": "batch011-spp202-regular-design-services-source-01",
-      "label": "UAP Standards of Professional Practice, SPP Document 202",
-      "source_type": "professional_standards",
-      "source_locator": "UAP Standards of Professional Practice, SPP Document 202, Sections 1, 2, and 5",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-      "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
-      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
-      "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
-      "checked_markdown_lines": [
-        "283-382",
-        "449-492",
-        "496-518"
-      ],
-      "is_verified": true
-    }
-  ],
-  "unsupported_claims_removed": [
-    "Removed unverified fee-split and simplified phase claims and replaced them with the SPP 202 service phases, deliverables, compensation methods, and supervision limits verified in the audited lines.",
-    "Removed unresolved UI-block placeholders and internal drafting scaffolding."
-  ],
-  "claims": [
-    {
-      "claim_id": "B011-spp-doc-202-regular-design-services-ARTICLE-01",
-      "claim_text": "SPP Doc 202: Regular Design Services was repaired against UAP Standards of Professional Practice, SPP Document 202, Sections 1, 2, and 5; placeholders, internal drafting notes, and claims outside the checked raw-source lines were removed from normalized.md.",
-      "claim_class": "article_source_repair",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
-        "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
-        "source_locator": "UAP Standards of Professional Practice, SPP Document 202, Sections 1, 2, and 5",
-        "markdown_lines_checked": [
-          "283-382",
-          "449-492",
-          "496-518"
-        ]
-      }
-    },
-    {
-      "claim_id": "B011-spp-doc-202-regular-design-services-QUESTION-001",
-      "claim_text": "Question 618bb5ae-8a21-498f-bc5a-20389b93aa98 has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/question-edits for the repaired SPP Doc 202: Regular Design Services article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
-        "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
-        "parent_article_locator": "UAP Standards of Professional Practice, SPP Document 202, Sections 1, 2, and 5",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B011-spp-doc-202-regular-design-services-QUESTION-002",
-      "claim_text": "Question 33e502b9-c4a4-4c7f-9cb4-569aabe2ca65 has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/question-edits for the repaired SPP Doc 202: Regular Design Services article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
-        "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
-        "parent_article_locator": "UAP Standards of Professional Practice, SPP Document 202, Sections 1, 2, and 5",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B011-spp-doc-202-regular-design-services-QUESTION-003",
-      "claim_text": "Question 9fdc08e5-ef3f-46ac-a3a4-4741b3d7e63e has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/question-edits for the repaired SPP Doc 202: Regular Design Services article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
-        "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
-        "parent_article_locator": "UAP Standards of Professional Practice, SPP Document 202, Sections 1, 2, and 5",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B011-spp-doc-202-regular-design-services-QUESTION-004",
-      "claim_text": "Question 389d47a6-4100-4b1e-aaa2-3784b2911d3a has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/question-edits for the repaired SPP Doc 202: Regular Design Services article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
-        "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
-        "parent_article_locator": "UAP Standards of Professional Practice, SPP Document 202, Sections 1, 2, and 5",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B011-spp-doc-202-regular-design-services-QUESTION-005",
-      "claim_text": "Question 214ce588-337e-45fe-ab73-763e5de08118 has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/question-edits for the repaired SPP Doc 202: Regular Design Services article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
-        "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
-        "parent_article_locator": "UAP Standards of Professional Practice, SPP Document 202, Sections 1, 2, and 5",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B011-spp-doc-202-regular-design-services-QUESTION-006",
-      "claim_text": "Question 2e790ee6-a6a0-4c9a-a545-6379492a35f3 has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/question-edits for the repaired SPP Doc 202: Regular Design Services article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
-        "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
-        "parent_article_locator": "UAP Standards of Professional Practice, SPP Document 202, Sections 1, 2, and 5",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B011-spp-doc-202-regular-design-services-QUESTION-007",
-      "claim_text": "Question 77a5ab14-e2ec-4d15-85d7-a4a8ce240227 has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/question-edits for the repaired SPP Doc 202: Regular Design Services article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
-        "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
-        "parent_article_locator": "UAP Standards of Professional Practice, SPP Document 202, Sections 1, 2, and 5",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B011-spp-doc-202-regular-design-services-QUESTION-008",
-      "claim_text": "Question 2b52b921-0fbb-4b41-9ae9-26147cb2b421 has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/question-edits for the repaired SPP Doc 202: Regular Design Services article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
-        "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
-        "parent_article_locator": "UAP Standards of Professional Practice, SPP Document 202, Sections 1, 2, and 5",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B011-spp-doc-202-regular-design-services-QUESTION-009",
-      "claim_text": "Question b4ad1ac0-f8c0-42fa-821e-7286375ae1b4 has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/question-edits for the repaired SPP Doc 202: Regular Design Services article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
-        "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
-        "parent_article_locator": "UAP Standards of Professional Practice, SPP Document 202, Sections 1, 2, and 5",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B011-spp-doc-202-regular-design-services-QUESTION-010",
-      "claim_text": "Question b1ec9503-9ae3-4835-af28-704fc4dd064c has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/question-edits for the repaired SPP Doc 202: Regular Design Services article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
-        "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
-        "parent_article_locator": "UAP Standards of Professional Practice, SPP Document 202, Sections 1, 2, and 5",
-        "answer_key_fields_changed": false
-      }
-    }
-  ]
+  "local_repairs": {
+    "normalized_updated": true,
+    "candidate_recomposed": true,
+    "placeholders_removed": true,
+    "source_records_verified_or_updated": true,
+    "question_edits_created": 10,
+    "source_safe_rewrite_question_edits": 10,
+    "cross_article_consistency_checked": true,
+    "consistency_notes": "SPP 201 pre-design MDPE 1.5-2.5 remains distinct from SPP 202 regular design service phases; SPP 202 abandoned-work 90% wording remains distinct from UAP Document 401-402 85% payment milestone."
+  },
+  "target": {
+    "article_id": "24b0a3db-e6bc-45d0-a9a1-d83009112efb",
+    "normalized_sha256": "sha256:204170d44f89507942959fcfe99d1872e44fcb5c49910bce0f266c90e6b8ba36",
+    "candidate_sha256": "sha256:204170d44f89507942959fcfe99d1872e44fcb5c49910bce0f266c90e6b8ba36",
+    "linked_questions_sha256": "sha256:18cde003bcd3c769b1ffdfbbf093bd181dff5c7a954730ce27f39c9dcfd1dc77",
+    "sources_sha256": "sha256:68cfb03b16e2b8d53d22c71ffdd55afebac2f6674a6e3924a9fc4e48017c090d"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_local_source_locator": true,
+    "all_section_or_percentage_claims_verified_against_local_source_text": true,
+    "primary_truth_source_root": "vitruvius-connection/001_Raw-Source-Layer"
+  },
+  "validation": {
+    "status": "PASS",
+    "compose": "passed with blockers=0",
+    "diff": "passed with safe_to_push=true and blockers=[]",
+    "validate": "passed per article with --strict; component-usage.json warning only",
+    "ui_block_edit_validation": "passed with valid=true and blockers=0",
+    "scoped_json_parse": "passed in Batch 095 scoped checks",
+    "placeholder_internal_note_source_gap_scan": "passed with zero matches in candidate/normalized scope",
+    "source_hash_checks": "passed in Batch 095 scoped checks",
+    "linked_question_question_edit_count_checks": "passed; counts match manifest",
+    "stale_compose_error_scan": "passed after stale sidecars removed",
+    "targeted_tests": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts passed: 34 pass, 0 fail, 328 expects",
+    "git_diff_check": "passed after report, ledger, scoped checks, evidence, handoff, and coordination updates"
+  },
+  "blockers": []
 }

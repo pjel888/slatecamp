@@ -24,8 +24,12 @@ SPP 202 lists Schematic Design after Project Definition. Some study notes call i
 
 ## Payment Milestone
 
-UAP Document 401-402 states that upon completion of Schematic Design Services, the architect is paid a sum equal to 15% of the Basic Fee, computed on a reasonable estimated construction cost and less the mobilization amount already paid. Treat this as a payment milestone, not as a substitute for knowing the actual SPP 202 deliverables.
+UAP Document 401-402 states that upon completion of Schematic Design Services, the architect is paid a sum equal to 15% of the Basic Fee, computed on a reasonable estimated construction cost and less the mobilization amount already paid. Treat this as the first checked 401-402 payment milestone, not as a substitute for knowing the actual SPP 202 deliverables.
 
 ## Exam Trap
 
 If an option mentions outline specifications, system diagrams, detailed construction drawings, or permit sets, it is no longer Schematic Design. Those belong to later phases. The Schematic Design clue is conceptual plans supported by initial line drawings, owner approval, and an SPPCC based on current cost parameters.
+
+## Real World Scenario
+
+After the Project Definition Phase, a client asks for concept options before authorizing more detailed drawings. The architect evaluates the program, schedule, budget, and site; prepares initial line drawings that lead to a recommended solution; and submits an SPPCC for owner review. Once Schematic Design Services are completed under the owner-architect agreement, the source-safe payment milestone is 15% of the Basic Fee, less the mobilization amount already paid.

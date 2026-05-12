@@ -2,19 +2,20 @@
   "question_id": "80fe5dfe-4d8b-4ee4-aea6-fda474f5f9dc",
   "baseline_hash": "sha256:ccb3e631530c9313e2718c6619bb278a7861e5856f62d827c7f17ca94392aa0f",
   "action": "replace",
-  "reason": "source-audited-article-batch-016-local-first rewrote this linked question to align with the local SPP 202 source audit for lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic.",
-  "approved_by": "codex-local-source-audit-batch-016",
-  "approved_at": "2026-05-10T23:58:00.000+08:00",
+  "reason": "source-audited-article-batch-095-local-first verified this linked question against local source evidence for lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic and refreshed the source-safe local question-edit draft.",
+  "approved_by": "codex-local-source-audit-batch-095",
+  "approved_at": "2026-05-12T22:11:13.000+08:00",
   "source_audit_support": {
     "parent_article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
     "parent_article_slug": "lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "SPP Document 202 scope, phase duties, and UAP payment milestones where payment is tested",
+    "source_locator": "SPP Document 202 regular design services, classifications, compensation/service conditions, and UAP Document 401-402 payment milestones",
     "checked_markdown_lines": [
-      "UAP Document Standards raw markdown lines 283-297",
-      "UAP Document Standards raw markdown lines 301-344",
-      "UAP Document Standards raw markdown lines 347-382",
+      "UAP Document Standards raw markdown lines 283-382",
+      "UAP Document Standards raw markdown lines 417-441",
+      "UAP Document Standards raw markdown lines 447-492",
+      "UAP Document Standards raw markdown lines 494-543",
       "UAP Document 401-402 raw markdown lines 88-100",
       "UAP Document 401-402 raw markdown lines 138-145"
     ],
@@ -23,7 +24,7 @@
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
         "sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
         "source_id": "uap-spp-202-standards-of-professional-practice",
-        "locator": "SPP Document 202, Regular Design Services scope and phase duties"
+        "locator": "SPP Document 202 regular-design scope, phase duties, classifications, compensation methods, and service conditions"
       },
       {
         "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
@@ -44,7 +45,8 @@
         "locator": "Converted local text for payment milestone line anchoring"
       }
     ],
-    "local_source_safe_action": "replaced prior wording with a source-aligned question, answer key, citation, and explanation"
+    "local_source_safe_action": "retained existing source-audited question rewrite and refreshed Batch 095 provenance after local source re-check",
+    "batch_095_verified": true
   },
   "proposed": {
     "text": "Which item is a Project Definition duty under SPP 202?",
@@ -82,6 +84,6 @@
     ],
     "difficulty": 0.64,
     "is_assessment": false,
-    "model_id": "BATCH-016-lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic-003"
+    "model_id": "BATCH-095-lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic-003"
   }
 }

@@ -27,10 +27,14 @@ SPP 202 describes the architect as the owner's adviser or representative in regu
 
 ## Fee Questions Need Care
 
-UAP Document 401-402 supports the common payment milestones: schematic design reaches 15% of the Basic Fee, design development increases total payments to 35%, and contract documents increase total payments to 85%. The remaining 15% is handled through progress billing and final balance; when contract documents are complete but work is abandoned, the source breaks that remaining 15% into 10% for Civil Code liability and 5% for construction phase service.
+UAP Document 401-402 supports the common payment milestones: schematic design reaches 15% of the Basic Fee, design development increases total payments to 35%, and contract documents increase total payments to 85%. The remaining 15% is handled through progress billing and final balance; when contract documents are complete but work is abandoned, UAP Document 401-402 breaks that remaining 15% into 10% for Civil Code liability and 5% for construction phase service.
 
-For source-safe exam explanations, say that Contract Documents bring the cumulative payment milestone to 85% and represent the largest increment from the prior milestone. Do not say that SPP 202 itself assigns a standalone 5% to bidding assistance or 10% to construction administration unless the specific source text being tested says so.
+For source-safe exam explanations, say that Contract Documents bring the UAP Document 401-402 cumulative payment milestone to 85% and represent the largest increment from the prior milestone. If a question specifically asks about SPP 202's work-suspended-or-abandoned wording, distinguish that source's 90% completed-work statement from the 401-402 payment schedule. Do not say that SPP 202 itself assigns a standalone 5% to bidding assistance or 10% to construction administration unless the specific source text being tested says so.
 
 ## Exam Trap
 
 A question may use familiar labels such as schematic design, design development, contract documents, bidding, or construction. Anchor the answer to the phase duty stated in SPP 202, then use UAP Document 401-402 only when the question asks about payment timing.
+
+## Real World Scenario
+
+An owner asks why the architect cannot jump from conceptual sketches straight to permit drawings. The source-safe answer is to map the request to the SPP 202 sequence: define the project, prepare schematic studies, develop the approved scheme, then produce contract documents. If the same owner asks about billing, use the 401-402 milestones: 15% after schematic design, 35% cumulative after design development, and 85% cumulative after contract documents.

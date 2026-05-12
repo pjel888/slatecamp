@@ -2,9 +2,9 @@
   "question_id": "85a45315-e39c-41e7-815a-2ee9b49edcdb",
   "baseline_hash": "sha256:04a7c8e1fee72b4e68bd88fd8206890f24dd29b3ff71a6372d690b771639de54",
   "action": "replace",
-  "reason": "source-audited-article-batch-021-local-first rewrote this linked question to align with the local source audit for lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method.",
-  "approved_by": "codex-local-source-audit-batch-021",
-  "approved_at": "2026-05-11T10:30:00.000+08:00",
+  "reason": "source-audited-article-batch-095-local-first verified this linked question against local source evidence for lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method and refreshed the source-safe local question-edit draft.",
+  "approved_by": "codex-local-source-audit-batch-095",
+  "approved_at": "2026-05-12T22:11:13.000+08:00",
   "source_audit_support": {
     "parent_article_id": "db248a33-44f2-411c-a069-9685200a588c",
     "parent_article_slug": "lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method",
@@ -27,10 +27,11 @@
         "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
         "sha256": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
         "source_id": "spp-201-predesign-services-local-raw-pdf",
-        "locator": "SPP 201 refined markdown lines 245-255, 268-415, and 425-447"
+        "locator": "Converted local text for SPP 201 line anchoring"
       }
     ],
-    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+    "local_source_safe_action": "retained existing source-audited question rewrite and refreshed Batch 095 provenance after local source re-check",
+    "batch_095_verified": true
   },
   "proposed": {
     "text": "Which checked SPP 201 service helps determine the most appropriate site for a project?",
@@ -68,6 +69,6 @@
     ],
     "difficulty": 0.66,
     "is_assessment": false,
-    "model_id": "BATCH-021-spp201-004"
+    "model_id": "BATCH-095-spp201-004"
   }
 }

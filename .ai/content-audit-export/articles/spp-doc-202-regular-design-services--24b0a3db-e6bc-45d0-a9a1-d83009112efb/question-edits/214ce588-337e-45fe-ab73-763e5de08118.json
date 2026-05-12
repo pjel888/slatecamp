@@ -1,26 +1,89 @@
 {
   "question_id": "214ce588-337e-45fe-ab73-763e5de08118",
   "baseline_hash": "sha256:78636a61f734431097912a2d0c3e22384586fa902708a9ab2611c6543af35d21",
-  "reason": "Batch 011 local source audit aligned linked question 214ce588-337e-45fe-ab73-763e5de08118 with the repaired SPP Doc 202: Regular Design Services article and verified raw-source citations. This local draft updates citation/explanation context only and does not change answer-key fields.",
-  "approved_by": "codex-local-source-audit-batch-011",
-  "approved_at": "2026-05-10T12:05:00.000+08:00",
+  "reason": "source-audited-article-batch-095-local-first verified this linked question against local source evidence for spp-doc-202-regular-design-services and refreshed the source-safe local question-edit draft.",
+  "approved_by": "codex-local-source-audit-batch-095",
+  "approved_at": "2026-05-12T22:11:13.000+08:00",
   "source_audit_support": {
-    "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-    "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
-    "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
-    "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
-    "source_locator": "UAP Standards of Professional Practice, SPP Document 202, Sections 1, 2, and 5",
-    "checked_markdown_lines": [
-      "283-382",
-      "449-492",
-      "496-518"
-    ],
     "parent_article_id": "24b0a3db-e6bc-45d0-a9a1-d83009112efb",
     "parent_article_slug": "spp-doc-202-regular-design-services",
-    "answer_key_fields_changed": false
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "SPP Document 202 regular design services, classifications, compensation/service conditions, and UAP Document 401-402 payment milestones",
+    "checked_markdown_lines": [
+      "UAP Document Standards raw markdown lines 283-382",
+      "UAP Document Standards raw markdown lines 417-441",
+      "UAP Document Standards raw markdown lines 447-492",
+      "UAP Document Standards raw markdown lines 494-543",
+      "UAP Document 401-402 raw markdown lines 88-100",
+      "UAP Document 401-402 raw markdown lines 138-145"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "source_id": "uap-spp-202-standards-of-professional-practice",
+        "locator": "SPP Document 202 regular-design scope, phase duties, classifications, compensation methods, and service conditions"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+        "source_id": "uap-spp-202-standards-of-professional-practice",
+        "locator": "Converted local text for SPP Document 202 line anchoring"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+        "sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+        "source_id": "uap-doc-401-402-owner-architect-agreement",
+        "locator": "Architect fee and manner of payment milestones"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document 401-402.md",
+        "sha256": "sha256:0b9cfd569b9f964c95dec13761812c8606b2c0fe38b9043df13efad361286a53",
+        "source_id": "uap-doc-401-402-owner-architect-agreement",
+        "locator": "Converted local text for payment milestone line anchoring"
+      }
+    ],
+    "local_source_safe_action": "replaced unsupported or under-cited linked-question wording with a source-audited question, answer key, citation, and explanation",
+    "batch_095_verified": true
   },
   "proposed": {
-    "code_citation": "UAP Standards of Professional Practice, SPP Document 202, Sections 1, 2, and 5",
-    "explanation": "The controlling audited source is UAP Standards of Professional Practice, SPP Document 202. It supports regular design services from project definition through construction phase services, the listed phase deliverables, the architect role as adviser or representative of the Owner/Client/Proponent, and the compensation methods listed in the source. This local edit does not add fee percentage splits not verified in the audited lines."
-  }
+    "text": "What characterizes SPP 202 Group 8 in the checked local source?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Projects involving extensive detail such as built-in components, equipment, special fittings, screens, counters, interiors, and development planning/design"
+      },
+      {
+        "id": "b",
+        "text": "Small apartment houses and townhouses"
+      },
+      {
+        "id": "c",
+        "text": "Projects where the same drawings are reused for repetitive similar buildings"
+      },
+      {
+        "id": "d",
+        "text": "Opinions and advice on technical matters pertaining to architectural works"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The checked SPP 202 source describes Group 8 as projects involving extensive detail, including built-in elements, equipment, special fittings, screens, counters, architectural interiors, and development planning/design.",
+    "explanation": "This rewrite tests the source-supported Group 8 description instead of an unsupported minimum-fee percentage.",
+    "code_citation": "UAP Document Standards raw markdown lines 435-437",
+    "bloom_level": "understand",
+    "difficulty": 0.55,
+    "model_id": "BATCH-095-spp-doc-202-regular-design-services-005",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "application_context": "professional_practice",
+    "practice_context": [
+      "SPP 202",
+      "regular design services"
+    ],
+    "is_assessment": false
+  },
+  "action": "replace"
 }

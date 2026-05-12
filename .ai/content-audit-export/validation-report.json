@@ -1,18 +1,22 @@
 {
-  "generated_at": "2026-05-12T13:47:55.837Z",
+  "generated_at": "2026-05-12T14:45:44.686Z",
   "input": "/Users/philiplewis/slatecamp/.ai/content-audit-export",
   "article_count": 1,
   "valid": true,
   "blockers": [],
-  "warnings": [],
+  "warnings": [
+    "spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb: component-usage.json has not been generated for this article yet."
+  ],
   "articles": [
     {
-      "article_id": "17b95df0-6bea-43c6-ab03-2b82a358caa6",
-      "slug": "lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountability",
-      "folder": "lea-prac-law-011-architect-of-record-vs-architect-in-charge-of-construction-liability-and-accountabi--17b95df0-6bea-43c6-ab03-2b82a358caa6",
+      "article_id": "24b0a3db-e6bc-45d0-a9a1-d83009112efb",
+      "slug": "spp-doc-202-regular-design-services",
+      "folder": "spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb",
       "valid": true,
       "blockers": [],
-      "warnings": [],
+      "warnings": [
+        "component-usage.json has not been generated for this article yet."
+      ],
       "files": {
         "metadata": true,
         "original": true,
@@ -23,7 +27,7 @@
         "linkedQuestions": true,
         "sources": true,
         "taxonomy": true,
-        "componentUsage": true,
+        "componentUsage": false,
         "candidate": true,
         "diffReport": true,
         "diffReportMarkdown": true,
@@ -31,9 +35,9 @@
         "pushResult": false
       },
       "hashes": {
-        "original": "sha256:8541eb89a29248c41472c5eadddc22ea3ca6020591b4a9271efa261ce9785e4b",
-        "normalized": "sha256:7920875eacdc8e214ff9b0844909c0ff3feb70a34330d937ff112306fa91ff2c",
-        "candidate": "sha256:7920875eacdc8e214ff9b0844909c0ff3feb70a34330d937ff112306fa91ff2c",
+        "original": "sha256:5a97b469bd15e2561c2fc11b6441ef5bb1131964c2fd9dd391255c2e652c4358",
+        "normalized": "sha256:204170d44f89507942959fcfe99d1872e44fcb5c49910bce0f266c90e6b8ba36",
+        "candidate": "sha256:204170d44f89507942959fcfe99d1872e44fcb5c49910bce0f266c90e6b8ba36",
         "ui_blocks": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
       }
     }

@@ -21,8 +21,12 @@ For LEA questions, identify Contract Documents as the phase where approved desig
 
 ## Payment Milestone
 
-UAP Document 401-402 says completion of Contract Documents Services increases total payments to 85% of the Basic Fee. Since Design Development reaches 35%, the Contract Documents step is the largest payment jump in the checked schedule. If the owner abandons or suspends the work after the architect has prepared the plans, specifications, and other project design documents, the source treats the completed Contract Documents Phase as equivalent to 85% of the architect's work.
+UAP Document 401-402 says completion of Contract Documents Services increases total payments to 85% of the Basic Fee. Since Design Development reaches 35%, the Contract Documents step is the largest payment jump in the checked 401-402 schedule. If a question instead cites SPP 202's separate work-suspended-or-abandoned condition, distinguish that SPP 202 wording from the 401-402 payment schedule: SPP 202 treats prepared plans, specifications, and other project design documents as 90% of the architect's work in that abandoned-work context.
 
 ## Exam Trap
 
 Do not state that Contract Documents are only conceptual drawings. They are the detailed construction drawings and technical specifications. Also avoid saying the source gives Contract Documents only 50% of total design fees; the checked payment source states a cumulative 85% milestone after Contract Documents.
+
+## Real World Scenario
+
+After the owner approves design development, the architect prepares the permit-and-construction package: detailed drawings, technical specifications, seven permit sets, an updated SPPCC, and filing assistance for government approvals. If the question asks about payment timing, use the 401-402 cumulative 85% milestone after Contract Documents. If it asks about abandoned work after the documents are prepared, use the SPP 202 90% completed-work rule only for that specific context.

@@ -23,3 +23,7 @@ SPP 201 identifies three ways of providing these services: as an individual, thr
 ## Exam Use
 
 When a question asks whether an activity is pre-design, compare the activity to the checked SPP 201 service list. When it asks about compensation, use the checked technical-services-cost formula and 1.5 to 2.5 multiplier. Do not import lump-sum, per-diem, or fee-plus-expense methods unless the item gives a separate verified source.
+
+## Real World Scenario
+
+A client has not yet decided whether a proposed site can support the intended building program. Before regular design services begin, the architect may be asked to compare site potentials, study development controls, clarify the space program, and prepare a design brief for later architectural services. In that situation, treat the work as SPP 201 pre-design work and compute compensation from technical-service costs with the checked 1.5 to 2.5 multiplier, not from the SPP 202 regular-design payment milestones.

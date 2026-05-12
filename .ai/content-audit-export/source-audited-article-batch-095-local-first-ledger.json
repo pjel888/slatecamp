@@ -1,0 +1,924 @@
+{
+  "artifact_type": "source-audited-local-first-ledger",
+  "batch_number": "095",
+  "batch_id": "source-audited-article-batch-095-local-first",
+  "generated_at": "2026-05-12T22:46:30+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "manifest_path": ".ai/03_plans/production-line-batch-095-manifest.json",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "blockers": [],
+  "totals": {
+    "selected_articles": 5,
+    "linked_questions": 50,
+    "question_edits": 50,
+    "source_safe_question_edits": 50,
+    "expected_linked_questions": 50,
+    "expected_question_edits": 50,
+    "scenario_eligible_added": 5,
+    "scenario_eligible_deferred": 0,
+    "scenario_not_applicable": 0,
+    "source_hash_checks": 18,
+    "source_hash_failures": 0,
+    "scoped_json_files_parsed": 107,
+    "scoped_json_parse_failures": 0,
+    "stale_compose_error_matches": 0,
+    "candidate_placeholder_matches": 0,
+    "internal_note_source_gap_matches": 0,
+    "component_usage_warnings": 5,
+    "blockers": 0
+  },
+  "exact_improved_article_folder_paths": [
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t--b3d5ae5b-09a9-426c-9feb-00932e5555aa",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee--617cdac3-3b02-44b0-b81f-f8827fc4242e",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb"
+  ],
+  "exact_question_edits_paths": [
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t--b3d5ae5b-09a9-426c-9feb-00932e5555aa/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee--617cdac3-3b02-44b0-b81f-f8827fc4242e/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/question-edits"
+  ],
+  "articles": [
+    {
+      "article_id": "db248a33-44f2-411c-a069-9685200a588c",
+      "slug": "lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method",
+      "title": "Pre Design Services Scope Deliverables and Compensation Method",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c/source-audit-evidence.json",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c/question-edits",
+      "question_edits_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_safe_question_edits": 10,
+      "source_count": 1,
+      "normalized_sha256": "sha256:35b8111429b33421ac9215998c061ea0662face1d8d13c49494f81c7ae08ffff",
+      "candidate_sha256": "sha256:35b8111429b33421ac9215998c061ea0662face1d8d13c49494f81c7ae08ffff",
+      "sources_sha256": "sha256:1d3d2726f0971c85cf0984224d88123498aa25156f60e4bfad2ebcea4a8b9a91",
+      "scenario_status": "eligible-added",
+      "scenario_summary": "Added source-safe owner/site viability scenario distinguishing SPP 201 pre-design work from SPP 202 regular-design milestones.",
+      "compose": {
+        "blockers": 0,
+        "safe_to_diff": true
+      },
+      "diff": {
+        "blockers": 0,
+        "safe_to_push": true,
+        "locally_safe_to_push": true
+      },
+      "ui_block_edit_validation": {
+        "valid": true,
+        "blockers": 0,
+        "warnings": 0
+      },
+      "validation_warnings": [
+        "component-usage.json has not been generated; package validator warning only"
+      ],
+      "blockers": [],
+      "source_locators": [
+        {
+          "source_id": "spp-201-predesign-services-local-raw-pdf",
+          "label": "UAP SPP Document 201 - Pre-Design Services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+          "checked_markdown_lines": [
+            "SPP 201 refined markdown lines 245-255",
+            "SPP 201 refined markdown lines 268-415",
+            "SPP 201 refined markdown lines 425-447"
+          ]
+        }
+      ]
+    },
+    {
+      "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+      "slug": "lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic",
+      "title": "SPP DOC 202 Overview the Six Phase Framework and its Design Logic",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001/source-audit-evidence.json",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001/question-edits",
+      "question_edits_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_safe_question_edits": 10,
+      "source_count": 2,
+      "normalized_sha256": "sha256:ea6f52cfef693abeff5247658893e117e8e0e2a296cc886f500c05f37a100d13",
+      "candidate_sha256": "sha256:ea6f52cfef693abeff5247658893e117e8e0e2a296cc886f500c05f37a100d13",
+      "sources_sha256": "sha256:d254f66d047878da0bc24a0a1d91d5e858d351dc97739e0b53e8e889ed458d7a",
+      "scenario_status": "eligible-added",
+      "scenario_summary": "Added source-safe sequencing and billing scenario for regular design service phase order and 401-402 milestones.",
+      "compose": {
+        "blockers": 0,
+        "safe_to_diff": true
+      },
+      "diff": {
+        "blockers": 0,
+        "safe_to_push": true,
+        "locally_safe_to_push": true
+      },
+      "ui_block_edit_validation": {
+        "valid": true,
+        "blockers": 0,
+        "warnings": 0
+      },
+      "validation_warnings": [
+        "component-usage.json has not been generated; package validator warning only"
+      ],
+      "blockers": [],
+      "source_locators": [
+        {
+          "source_id": "uap-spp-202-lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic",
+          "label": "SPP Document 202 - Regular Design Services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "checked_markdown_lines": [
+            "UAP Document Standards raw markdown lines 283-297",
+            "UAP Document Standards raw markdown lines 301-344",
+            "UAP Document Standards raw markdown lines 347-382"
+          ]
+        },
+        {
+          "source_id": "uap-doc-401-402-payment-lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic",
+          "label": "UAP Document 401-402 - Owner-Architect Agreement payment milestones",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+          "checked_markdown_lines": [
+            "UAP Document 401-402 raw markdown lines 88-100",
+            "UAP Document 401-402 raw markdown lines 138-145"
+          ]
+        }
+      ]
+    },
+    {
+      "article_id": "b3d5ae5b-09a9-426c-9feb-00932e5555aa",
+      "slug": "lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t",
+      "title": "Phase 1 Schematic Design Deliverables Decisions and Fee",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t--b3d5ae5b-09a9-426c-9feb-00932e5555aa",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t--b3d5ae5b-09a9-426c-9feb-00932e5555aa",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t--b3d5ae5b-09a9-426c-9feb-00932e5555aa/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t--b3d5ae5b-09a9-426c-9feb-00932e5555aa/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t--b3d5ae5b-09a9-426c-9feb-00932e5555aa/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t--b3d5ae5b-09a9-426c-9feb-00932e5555aa/source-audit-evidence.json",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t--b3d5ae5b-09a9-426c-9feb-00932e5555aa/question-edits",
+      "question_edits_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t--b3d5ae5b-09a9-426c-9feb-00932e5555aa/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_safe_question_edits": 10,
+      "source_count": 2,
+      "normalized_sha256": "sha256:53e5cedfb564d4ef2676fffb051bfb0830bf2228409ed3163fbb2460b5b512e3",
+      "candidate_sha256": "sha256:53e5cedfb564d4ef2676fffb051bfb0830bf2228409ed3163fbb2460b5b512e3",
+      "sources_sha256": "sha256:08e7683f88292a0f237353f1249b05c0005ca9e90ebf59ead42dba6c988f34da",
+      "scenario_status": "eligible-added",
+      "scenario_summary": "Added source-safe schematic-design scenario using the SPP 202 schematic duties and the 401-402 15% milestone.",
+      "compose": {
+        "blockers": 0,
+        "safe_to_diff": true
+      },
+      "diff": {
+        "blockers": 0,
+        "safe_to_push": true,
+        "locally_safe_to_push": true
+      },
+      "ui_block_edit_validation": {
+        "valid": true,
+        "blockers": 0,
+        "warnings": 0
+      },
+      "validation_warnings": [
+        "component-usage.json has not been generated; package validator warning only"
+      ],
+      "blockers": [],
+      "source_locators": [
+        {
+          "source_id": "uap-spp-202-lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-the-second-phase-under-spp-2022-following-project-definition-this-phase-translates-the-project-defini",
+          "label": "SPP Document 202 - Regular Design Services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "checked_markdown_lines": [
+            "UAP Document Standards raw markdown lines 283-297",
+            "UAP Document Standards raw markdown lines 301-344",
+            "UAP Document Standards raw markdown lines 347-382"
+          ]
+        },
+        {
+          "source_id": "uap-doc-401-402-payment-lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-the-second-phase-under-spp-2022-following-project-definition-this-phase-translates-the-project-defini",
+          "label": "UAP Document 401-402 - Owner-Architect Agreement payment milestones",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+          "checked_markdown_lines": [
+            "UAP Document 401-402 raw markdown lines 88-100",
+            "UAP Document 401-402 raw markdown lines 138-145"
+          ]
+        }
+      ]
+    },
+    {
+      "article_id": "617cdac3-3b02-44b0-b81f-f8827fc4242e",
+      "slug": "lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee",
+      "title": "Phase 3 Contract Documents Working Drawings Specifications",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee--617cdac3-3b02-44b0-b81f-f8827fc4242e",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee--617cdac3-3b02-44b0-b81f-f8827fc4242e",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee--617cdac3-3b02-44b0-b81f-f8827fc4242e/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee--617cdac3-3b02-44b0-b81f-f8827fc4242e/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee--617cdac3-3b02-44b0-b81f-f8827fc4242e/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee--617cdac3-3b02-44b0-b81f-f8827fc4242e/source-audit-evidence.json",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee--617cdac3-3b02-44b0-b81f-f8827fc4242e/question-edits",
+      "question_edits_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee--617cdac3-3b02-44b0-b81f-f8827fc4242e/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_safe_question_edits": 10,
+      "source_count": 2,
+      "normalized_sha256": "sha256:623719e49d88daa63b14c68daa4cde3bcfeb0da6691d43de919737f3795e093b",
+      "candidate_sha256": "sha256:623719e49d88daa63b14c68daa4cde3bcfeb0da6691d43de919737f3795e093b",
+      "sources_sha256": "sha256:fc7ded22aff28e6e7222f82f5873fd98a0b62ab7bc7c294b1482af6f2b937d6c",
+      "scenario_status": "eligible-added",
+      "scenario_summary": "Added source-safe permit-document scenario tying Contract Document deliverables to seven permit sets and the 85% 401-402 milestone.",
+      "compose": {
+        "blockers": 0,
+        "safe_to_diff": true
+      },
+      "diff": {
+        "blockers": 0,
+        "safe_to_push": true,
+        "locally_safe_to_push": true
+      },
+      "ui_block_edit_validation": {
+        "valid": true,
+        "blockers": 0,
+        "warnings": 0
+      },
+      "validation_warnings": [
+        "component-usage.json has not been generated; package validator warning only"
+      ],
+      "blockers": [],
+      "source_locators": [
+        {
+          "source_id": "uap-spp-202-lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee",
+          "label": "SPP Document 202 - Regular Design Services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "checked_markdown_lines": [
+            "UAP Document Standards raw markdown lines 283-297",
+            "UAP Document Standards raw markdown lines 301-344",
+            "UAP Document Standards raw markdown lines 347-382"
+          ]
+        },
+        {
+          "source_id": "uap-doc-401-402-payment-lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee",
+          "label": "UAP Document 401-402 - Owner-Architect Agreement payment milestones",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+          "checked_markdown_lines": [
+            "UAP Document 401-402 raw markdown lines 88-100",
+            "UAP Document 401-402 raw markdown lines 138-145"
+          ]
+        }
+      ]
+    },
+    {
+      "article_id": "24b0a3db-e6bc-45d0-a9a1-d83009112efb",
+      "slug": "spp-doc-202-regular-design-services",
+      "title": "SPP Doc 202: Regular Design Services",
+      "article_folder": ".ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb",
+      "normalized_path": ".ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/source-audit-evidence.json",
+      "question_edits_path": ".ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/question-edits",
+      "question_edits_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_safe_question_edits": 10,
+      "source_count": 2,
+      "normalized_sha256": "sha256:204170d44f89507942959fcfe99d1872e44fcb5c49910bce0f266c90e6b8ba36",
+      "candidate_sha256": "sha256:204170d44f89507942959fcfe99d1872e44fcb5c49910bce0f266c90e6b8ba36",
+      "sources_sha256": "sha256:68cfb03b16e2b8d53d22c71ffdd55afebac2f6674a6e3924a9fc4e48017c090d",
+      "scenario_status": "eligible-added",
+      "scenario_summary": "Added source-safe construction-phase scenario distinguishing periodic site visits from separate full-time supervision.",
+      "compose": {
+        "blockers": 0,
+        "safe_to_diff": true
+      },
+      "diff": {
+        "blockers": 0,
+        "safe_to_push": true,
+        "locally_safe_to_push": true
+      },
+      "ui_block_edit_validation": {
+        "valid": true,
+        "blockers": 0,
+        "warnings": 0
+      },
+      "validation_warnings": [
+        "component-usage.json has not been generated; package validator warning only"
+      ],
+      "blockers": [],
+      "source_locators": [
+        {
+          "source_id": "uap-spp-202-spp-doc-202-regular-design-services",
+          "label": "SPP Document 202 - Regular Design Services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "checked_markdown_lines": [
+            "UAP Document Standards raw markdown lines 283-382",
+            "UAP Document Standards raw markdown lines 417-441",
+            "UAP Document Standards raw markdown lines 447-492",
+            "UAP Document Standards raw markdown lines 494-543"
+          ]
+        },
+        {
+          "source_id": "uap-doc-401-402-payment-spp-doc-202-regular-design-services",
+          "label": "UAP Document 401-402 - Owner-Architect Agreement payment milestones",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+          "checked_markdown_lines": [
+            "UAP Document 401-402 raw markdown lines 88-100",
+            "UAP Document 401-402 raw markdown lines 138-145"
+          ]
+        }
+      ]
+    }
+  ],
+  "scenario_results": {
+    "eligible_added": 5,
+    "eligible_deferred": 0,
+    "not_applicable": 0,
+    "details": [
+      {
+        "article_id": "db248a33-44f2-411c-a069-9685200a588c",
+        "slug": "lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method",
+        "status": "eligible-added",
+        "summary": "Added source-safe owner/site viability scenario distinguishing SPP 201 pre-design work from SPP 202 regular-design milestones."
+      },
+      {
+        "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+        "slug": "lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic",
+        "status": "eligible-added",
+        "summary": "Added source-safe sequencing and billing scenario for regular design service phase order and 401-402 milestones."
+      },
+      {
+        "article_id": "b3d5ae5b-09a9-426c-9feb-00932e5555aa",
+        "slug": "lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t",
+        "status": "eligible-added",
+        "summary": "Added source-safe schematic-design scenario using the SPP 202 schematic duties and the 401-402 15% milestone."
+      },
+      {
+        "article_id": "617cdac3-3b02-44b0-b81f-f8827fc4242e",
+        "slug": "lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee",
+        "status": "eligible-added",
+        "summary": "Added source-safe permit-document scenario tying Contract Document deliverables to seven permit sets and the 85% 401-402 milestone."
+      },
+      {
+        "article_id": "24b0a3db-e6bc-45d0-a9a1-d83009112efb",
+        "slug": "spp-doc-202-regular-design-services",
+        "status": "eligible-added",
+        "summary": "Added source-safe construction-phase scenario distinguishing periodic site visits from separate full-time supervision."
+      }
+    ]
+  },
+  "source_evidence": {
+    "primary_truth_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "no_internet_primary_evidence_used": true,
+    "source_hash_checks": [
+      {
+        "article_id": "db248a33-44f2-411c-a069-9685200a588c",
+        "slug": "lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method",
+        "source_id": "spp-201-predesign-services-local-raw-pdf",
+        "field": "raw_pdf_sha256",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+        "expected": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+        "actual": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+        "status": "PASS"
+      },
+      {
+        "article_id": "db248a33-44f2-411c-a069-9685200a588c",
+        "slug": "lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method",
+        "source_id": "spp-201-predesign-services-local-raw-pdf",
+        "field": "refined_markdown_sha256",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+        "expected": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
+        "actual": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
+        "status": "PASS"
+      },
+      {
+        "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+        "slug": "lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic",
+        "source_id": "uap-spp-202-lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic",
+        "field": "raw_pdf_sha256",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "expected": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "actual": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "status": "PASS"
+      },
+      {
+        "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+        "slug": "lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic",
+        "source_id": "uap-spp-202-lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic",
+        "field": "raw_markdown_sha256",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "expected": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+        "actual": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+        "status": "PASS"
+      },
+      {
+        "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+        "slug": "lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic",
+        "source_id": "uap-doc-401-402-payment-lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic",
+        "field": "raw_pdf_sha256",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+        "expected": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+        "actual": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+        "status": "PASS"
+      },
+      {
+        "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+        "slug": "lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic",
+        "source_id": "uap-doc-401-402-payment-lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic",
+        "field": "raw_markdown_sha256",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document 401-402.md",
+        "expected": "sha256:0b9cfd569b9f964c95dec13761812c8606b2c0fe38b9043df13efad361286a53",
+        "actual": "sha256:0b9cfd569b9f964c95dec13761812c8606b2c0fe38b9043df13efad361286a53",
+        "status": "PASS"
+      },
+      {
+        "article_id": "b3d5ae5b-09a9-426c-9feb-00932e5555aa",
+        "slug": "lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t",
+        "source_id": "uap-spp-202-lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-the-second-phase-under-spp-2022-following-project-definition-this-phase-translates-the-project-defini",
+        "field": "raw_pdf_sha256",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "expected": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "actual": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "status": "PASS"
+      },
+      {
+        "article_id": "b3d5ae5b-09a9-426c-9feb-00932e5555aa",
+        "slug": "lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t",
+        "source_id": "uap-spp-202-lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-the-second-phase-under-spp-2022-following-project-definition-this-phase-translates-the-project-defini",
+        "field": "raw_markdown_sha256",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "expected": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+        "actual": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+        "status": "PASS"
+      },
+      {
+        "article_id": "b3d5ae5b-09a9-426c-9feb-00932e5555aa",
+        "slug": "lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t",
+        "source_id": "uap-doc-401-402-payment-lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-the-second-phase-under-spp-2022-following-project-definition-this-phase-translates-the-project-defini",
+        "field": "raw_pdf_sha256",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+        "expected": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+        "actual": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+        "status": "PASS"
+      },
+      {
+        "article_id": "b3d5ae5b-09a9-426c-9feb-00932e5555aa",
+        "slug": "lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t",
+        "source_id": "uap-doc-401-402-payment-lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-the-second-phase-under-spp-2022-following-project-definition-this-phase-translates-the-project-defini",
+        "field": "raw_markdown_sha256",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document 401-402.md",
+        "expected": "sha256:0b9cfd569b9f964c95dec13761812c8606b2c0fe38b9043df13efad361286a53",
+        "actual": "sha256:0b9cfd569b9f964c95dec13761812c8606b2c0fe38b9043df13efad361286a53",
+        "status": "PASS"
+      },
+      {
+        "article_id": "617cdac3-3b02-44b0-b81f-f8827fc4242e",
+        "slug": "lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee",
+        "source_id": "uap-spp-202-lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee",
+        "field": "raw_pdf_sha256",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "expected": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "actual": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "status": "PASS"
+      },
+      {
+        "article_id": "617cdac3-3b02-44b0-b81f-f8827fc4242e",
+        "slug": "lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee",
+        "source_id": "uap-spp-202-lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee",
+        "field": "raw_markdown_sha256",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "expected": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+        "actual": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+        "status": "PASS"
+      },
+      {
+        "article_id": "617cdac3-3b02-44b0-b81f-f8827fc4242e",
+        "slug": "lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee",
+        "source_id": "uap-doc-401-402-payment-lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee",
+        "field": "raw_pdf_sha256",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+        "expected": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+        "actual": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+        "status": "PASS"
+      },
+      {
+        "article_id": "617cdac3-3b02-44b0-b81f-f8827fc4242e",
+        "slug": "lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee",
+        "source_id": "uap-doc-401-402-payment-lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee",
+        "field": "raw_markdown_sha256",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document 401-402.md",
+        "expected": "sha256:0b9cfd569b9f964c95dec13761812c8606b2c0fe38b9043df13efad361286a53",
+        "actual": "sha256:0b9cfd569b9f964c95dec13761812c8606b2c0fe38b9043df13efad361286a53",
+        "status": "PASS"
+      },
+      {
+        "article_id": "24b0a3db-e6bc-45d0-a9a1-d83009112efb",
+        "slug": "spp-doc-202-regular-design-services",
+        "source_id": "uap-spp-202-spp-doc-202-regular-design-services",
+        "field": "raw_pdf_sha256",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "expected": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "actual": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "status": "PASS"
+      },
+      {
+        "article_id": "24b0a3db-e6bc-45d0-a9a1-d83009112efb",
+        "slug": "spp-doc-202-regular-design-services",
+        "source_id": "uap-spp-202-spp-doc-202-regular-design-services",
+        "field": "raw_markdown_sha256",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "expected": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+        "actual": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+        "status": "PASS"
+      },
+      {
+        "article_id": "24b0a3db-e6bc-45d0-a9a1-d83009112efb",
+        "slug": "spp-doc-202-regular-design-services",
+        "source_id": "uap-doc-401-402-payment-spp-doc-202-regular-design-services",
+        "field": "raw_pdf_sha256",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+        "expected": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+        "actual": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+        "status": "PASS"
+      },
+      {
+        "article_id": "24b0a3db-e6bc-45d0-a9a1-d83009112efb",
+        "slug": "spp-doc-202-regular-design-services",
+        "source_id": "uap-doc-401-402-payment-spp-doc-202-regular-design-services",
+        "field": "raw_markdown_sha256",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document 401-402.md",
+        "expected": "sha256:0b9cfd569b9f964c95dec13761812c8606b2c0fe38b9043df13efad361286a53",
+        "actual": "sha256:0b9cfd569b9f964c95dec13761812c8606b2c0fe38b9043df13efad361286a53",
+        "status": "PASS"
+      }
+    ]
+  },
+  "validation": {
+    "raw_pdf_first_audit": {
+      "status": "PASS",
+      "evidence": "All cited primary evidence points to local raw/source-conversion files under vitruvius-connection/001_Raw-Source-Layer or its conversion layer."
+    },
+    "roundtrip_protocol": {
+      "status": "PASS",
+      "evidence": "normalized.md was edited, ui-blocks.json hashes were refreshed, and candidate.md was generated by compose."
+    },
+    "compose": {
+      "status": "PASS",
+      "articles": [
+        {
+          "article_id": "db248a33-44f2-411c-a069-9685200a588c",
+          "blockers": 0,
+          "safe_to_diff": true
+        },
+        {
+          "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+          "blockers": 0,
+          "safe_to_diff": true
+        },
+        {
+          "article_id": "b3d5ae5b-09a9-426c-9feb-00932e5555aa",
+          "blockers": 0,
+          "safe_to_diff": true
+        },
+        {
+          "article_id": "617cdac3-3b02-44b0-b81f-f8827fc4242e",
+          "blockers": 0,
+          "safe_to_diff": true
+        },
+        {
+          "article_id": "24b0a3db-e6bc-45d0-a9a1-d83009112efb",
+          "blockers": 0,
+          "safe_to_diff": true
+        }
+      ]
+    },
+    "diff": {
+      "status": "PASS",
+      "articles": [
+        {
+          "article_id": "db248a33-44f2-411c-a069-9685200a588c",
+          "blockers": 0,
+          "safe_to_push": true,
+          "locally_safe_to_push": true
+        },
+        {
+          "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+          "blockers": 0,
+          "safe_to_push": true,
+          "locally_safe_to_push": true
+        },
+        {
+          "article_id": "b3d5ae5b-09a9-426c-9feb-00932e5555aa",
+          "blockers": 0,
+          "safe_to_push": true,
+          "locally_safe_to_push": true
+        },
+        {
+          "article_id": "617cdac3-3b02-44b0-b81f-f8827fc4242e",
+          "blockers": 0,
+          "safe_to_push": true,
+          "locally_safe_to_push": true
+        },
+        {
+          "article_id": "24b0a3db-e6bc-45d0-a9a1-d83009112efb",
+          "blockers": 0,
+          "safe_to_push": true,
+          "locally_safe_to_push": true
+        }
+      ]
+    },
+    "validate": {
+      "status": "PASS",
+      "command": "bun run content-audit:validate -- --article <id> --strict for each Batch 095 article",
+      "warning": "component-usage.json warning only for each article"
+    },
+    "ui_block_edit_validation": {
+      "status": "PASS",
+      "articles": [
+        {
+          "article_id": "db248a33-44f2-411c-a069-9685200a588c",
+          "valid": true,
+          "blockers": 0,
+          "warnings": 0
+        },
+        {
+          "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+          "valid": true,
+          "blockers": 0,
+          "warnings": 0
+        },
+        {
+          "article_id": "b3d5ae5b-09a9-426c-9feb-00932e5555aa",
+          "valid": true,
+          "blockers": 0,
+          "warnings": 0
+        },
+        {
+          "article_id": "617cdac3-3b02-44b0-b81f-f8827fc4242e",
+          "valid": true,
+          "blockers": 0,
+          "warnings": 0
+        },
+        {
+          "article_id": "24b0a3db-e6bc-45d0-a9a1-d83009112efb",
+          "valid": true,
+          "blockers": 0,
+          "warnings": 0
+        }
+      ]
+    },
+    "scoped_json_parse": {
+      "status": "PASS",
+      "parsed_files": 107,
+      "failures": 0
+    },
+    "placeholder_internal_note_source_gap_scan": {
+      "status": "PASS",
+      "candidate_placeholder_matches": 0,
+      "cleanup_marker_matches": 0
+    },
+    "source_hash_checks": {
+      "status": "PASS",
+      "checks": [
+        {
+          "article_id": "db248a33-44f2-411c-a069-9685200a588c",
+          "slug": "lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method",
+          "source_id": "spp-201-predesign-services-local-raw-pdf",
+          "field": "raw_pdf_sha256",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+          "expected": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+          "actual": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+          "status": "PASS"
+        },
+        {
+          "article_id": "db248a33-44f2-411c-a069-9685200a588c",
+          "slug": "lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method",
+          "source_id": "spp-201-predesign-services-local-raw-pdf",
+          "field": "refined_markdown_sha256",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+          "expected": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
+          "actual": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
+          "status": "PASS"
+        },
+        {
+          "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+          "slug": "lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic",
+          "source_id": "uap-spp-202-lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic",
+          "field": "raw_pdf_sha256",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "expected": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "actual": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "status": "PASS"
+        },
+        {
+          "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+          "slug": "lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic",
+          "source_id": "uap-spp-202-lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic",
+          "field": "raw_markdown_sha256",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "expected": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+          "actual": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+          "status": "PASS"
+        },
+        {
+          "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+          "slug": "lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic",
+          "source_id": "uap-doc-401-402-payment-lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic",
+          "field": "raw_pdf_sha256",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+          "expected": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+          "actual": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+          "status": "PASS"
+        },
+        {
+          "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+          "slug": "lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic",
+          "source_id": "uap-doc-401-402-payment-lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic",
+          "field": "raw_markdown_sha256",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document 401-402.md",
+          "expected": "sha256:0b9cfd569b9f964c95dec13761812c8606b2c0fe38b9043df13efad361286a53",
+          "actual": "sha256:0b9cfd569b9f964c95dec13761812c8606b2c0fe38b9043df13efad361286a53",
+          "status": "PASS"
+        },
+        {
+          "article_id": "b3d5ae5b-09a9-426c-9feb-00932e5555aa",
+          "slug": "lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t",
+          "source_id": "uap-spp-202-lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-the-second-phase-under-spp-2022-following-project-definition-this-phase-translates-the-project-defini",
+          "field": "raw_pdf_sha256",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "expected": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "actual": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "status": "PASS"
+        },
+        {
+          "article_id": "b3d5ae5b-09a9-426c-9feb-00932e5555aa",
+          "slug": "lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t",
+          "source_id": "uap-spp-202-lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-the-second-phase-under-spp-2022-following-project-definition-this-phase-translates-the-project-defini",
+          "field": "raw_markdown_sha256",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "expected": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+          "actual": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+          "status": "PASS"
+        },
+        {
+          "article_id": "b3d5ae5b-09a9-426c-9feb-00932e5555aa",
+          "slug": "lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t",
+          "source_id": "uap-doc-401-402-payment-lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-the-second-phase-under-spp-2022-following-project-definition-this-phase-translates-the-project-defini",
+          "field": "raw_pdf_sha256",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+          "expected": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+          "actual": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+          "status": "PASS"
+        },
+        {
+          "article_id": "b3d5ae5b-09a9-426c-9feb-00932e5555aa",
+          "slug": "lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t",
+          "source_id": "uap-doc-401-402-payment-lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-the-second-phase-under-spp-2022-following-project-definition-this-phase-translates-the-project-defini",
+          "field": "raw_markdown_sha256",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document 401-402.md",
+          "expected": "sha256:0b9cfd569b9f964c95dec13761812c8606b2c0fe38b9043df13efad361286a53",
+          "actual": "sha256:0b9cfd569b9f964c95dec13761812c8606b2c0fe38b9043df13efad361286a53",
+          "status": "PASS"
+        },
+        {
+          "article_id": "617cdac3-3b02-44b0-b81f-f8827fc4242e",
+          "slug": "lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee",
+          "source_id": "uap-spp-202-lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee",
+          "field": "raw_pdf_sha256",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "expected": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "actual": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "status": "PASS"
+        },
+        {
+          "article_id": "617cdac3-3b02-44b0-b81f-f8827fc4242e",
+          "slug": "lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee",
+          "source_id": "uap-spp-202-lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee",
+          "field": "raw_markdown_sha256",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "expected": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+          "actual": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+          "status": "PASS"
+        },
+        {
+          "article_id": "617cdac3-3b02-44b0-b81f-f8827fc4242e",
+          "slug": "lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee",
+          "source_id": "uap-doc-401-402-payment-lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee",
+          "field": "raw_pdf_sha256",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+          "expected": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+          "actual": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+          "status": "PASS"
+        },
+        {
+          "article_id": "617cdac3-3b02-44b0-b81f-f8827fc4242e",
+          "slug": "lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee",
+          "source_id": "uap-doc-401-402-payment-lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee",
+          "field": "raw_markdown_sha256",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document 401-402.md",
+          "expected": "sha256:0b9cfd569b9f964c95dec13761812c8606b2c0fe38b9043df13efad361286a53",
+          "actual": "sha256:0b9cfd569b9f964c95dec13761812c8606b2c0fe38b9043df13efad361286a53",
+          "status": "PASS"
+        },
+        {
+          "article_id": "24b0a3db-e6bc-45d0-a9a1-d83009112efb",
+          "slug": "spp-doc-202-regular-design-services",
+          "source_id": "uap-spp-202-spp-doc-202-regular-design-services",
+          "field": "raw_pdf_sha256",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "expected": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "actual": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "status": "PASS"
+        },
+        {
+          "article_id": "24b0a3db-e6bc-45d0-a9a1-d83009112efb",
+          "slug": "spp-doc-202-regular-design-services",
+          "source_id": "uap-spp-202-spp-doc-202-regular-design-services",
+          "field": "raw_markdown_sha256",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "expected": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+          "actual": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+          "status": "PASS"
+        },
+        {
+          "article_id": "24b0a3db-e6bc-45d0-a9a1-d83009112efb",
+          "slug": "spp-doc-202-regular-design-services",
+          "source_id": "uap-doc-401-402-payment-spp-doc-202-regular-design-services",
+          "field": "raw_pdf_sha256",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+          "expected": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+          "actual": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+          "status": "PASS"
+        },
+        {
+          "article_id": "24b0a3db-e6bc-45d0-a9a1-d83009112efb",
+          "slug": "spp-doc-202-regular-design-services",
+          "source_id": "uap-doc-401-402-payment-spp-doc-202-regular-design-services",
+          "field": "raw_markdown_sha256",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document 401-402.md",
+          "expected": "sha256:0b9cfd569b9f964c95dec13761812c8606b2c0fe38b9043df13efad361286a53",
+          "actual": "sha256:0b9cfd569b9f964c95dec13761812c8606b2c0fe38b9043df13efad361286a53",
+          "status": "PASS"
+        }
+      ]
+    },
+    "linked_question_question_edit_count_checks": {
+      "status": "PASS",
+      "linked_questions": 50,
+      "question_edits": 50
+    },
+    "stale_compose_error_scan": {
+      "status": "PASS",
+      "matches": 0
+    },
+    "targeted_tests": {
+      "status": "PASS",
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "result": "34 pass, 0 fail, 328 expect calls"
+    },
+    "scoped_git_diff_check": {
+      "status": "PASS",
+      "command": "git diff --check -- <Batch 095 changed paths>",
+      "result": "passed after report, ledger, scoped checks, evidence, handoff, and coordination updates"
+    }
+  },
+  "prior_artifact_overlap": [
+    {
+      "article_id": "db248a33-44f2-411c-a069-9685200a588c",
+      "prior_artifact": ".ai/content-audit-export/source-audited-article-batch-021-local-first-report-2026-05-11.md",
+      "note": "historical/local re-audit artifact; Batch 095 fixed manifest was still processed exactly and not skipped"
+    },
+    {
+      "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+      "prior_artifact": ".ai/content-audit-export/source-audited-article-batch-016-local-first-report-2026-05-10.md",
+      "note": "historical/local re-audit artifact; Batch 095 fixed manifest was still processed exactly and not skipped"
+    },
+    {
+      "article_id": "b3d5ae5b-09a9-426c-9feb-00932e5555aa",
+      "prior_artifact": ".ai/content-audit-export/source-audited-article-batch-016-local-first-report-2026-05-10.md",
+      "note": "historical/local re-audit artifact; Batch 095 fixed manifest was still processed exactly and not skipped"
+    },
+    {
+      "article_id": "617cdac3-3b02-44b0-b81f-f8827fc4242e",
+      "prior_artifact": ".ai/content-audit-export/source-audited-article-batch-016-local-first-report-2026-05-10.md",
+      "note": "historical/local re-audit artifact; Batch 095 fixed manifest was still processed exactly and not skipped"
+    },
+    {
+      "article_id": "24b0a3db-e6bc-45d0-a9a1-d83009112efb",
+      "prior_artifact": ".ai/content-audit-export/source-audited-article-batch-011-local-first-report-2026-05-10.md",
+      "note": "historical/local re-audit artifact; Batch 095 fixed manifest was still processed exactly and not skipped"
+    }
+  ],
+  "no_supabase_push_deploy_commit": true,
+  "stop_condition": "Batch 095 complete locally; Batch 096 not started or reserved."
+}

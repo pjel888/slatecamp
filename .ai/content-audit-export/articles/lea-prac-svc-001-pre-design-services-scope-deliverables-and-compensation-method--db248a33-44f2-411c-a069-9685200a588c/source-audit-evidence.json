@@ -1,59 +1,89 @@
 {
-  "batch_id": "source-audited-article-batch-021-local-first",
-  "audit_date": "2026-05-11",
-  "audited_at": "2026-05-11T10:30:00.000+08:00",
+  "batch_id": "source-audited-article-batch-095-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T22:11:13.000+08:00",
   "article_id": "db248a33-44f2-411c-a069-9685200a588c",
   "slug": "lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method",
   "title": "Pre Design Services Scope Deliverables and Compensation Method",
   "status": "local_pass_ready_for_final_publishing_review",
   "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c",
+  "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c",
   "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c/question-edits",
+  "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c/question-edits",
   "linked_questions": 10,
   "question_edits_created": 10,
   "source_safe_rewrite_question_edits": 10,
   "source_audit": {
-    "checked_sources": [
+    "primary_sources_checked": [
       {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+        "sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
         "source_id": "spp-201-predesign-services-local-raw-pdf",
-        "label": "UAP SPP Document 201 - Pre-Design Services",
-        "authority": "United Architects of the Philippines source conversion",
-        "source_type": "professional_practice_pdf",
-        "source_locator": "SPP 201 refined markdown lines 245-255, 268-415, and 425-447",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
-        "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
-        "refined_markdown_sha256": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
-        "checked_markdown_lines": [
-          "SPP 201 refined markdown lines 245-255",
-          "SPP 201 refined markdown lines 268-415",
-          "SPP 201 refined markdown lines 425-447"
-        ],
-        "use": "primary local source for pre-design services scope and compensation repair",
-        "local_source_checked": true
+        "locator": "SPP 201 refined markdown lines 245-255, 268-415, and 425-447"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+        "sha256": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
+        "source_id": "spp-201-predesign-services-local-raw-pdf",
+        "locator": "Converted local text for SPP 201 line anchoring"
       }
     ],
-    "source_locator": "UAP SPP Document 201 local raw PDF and refined markdown, pre-design scope and compensation provisions",
     "checked_markdown_lines": [
+      "SPP 201 refined markdown lines 245-255",
+      "SPP 201 refined markdown lines 268-415",
+      "SPP 201 refined markdown lines 425-447"
+    ],
+    "source_locator": "UAP SPP Document 201 local raw PDF and refined markdown, pre-design scope and compensation provisions",
+    "source_scope": "SPP 201 pre-design services scope and compensation method",
+    "local_source_checked": true,
+    "no_internet_primary_evidence_used": true
+  },
+  "scenario_enrichment": {
+    "status": "eligible-added",
+    "section_heading": "Real World Scenario",
+    "summary": "Added source-safe owner/site viability scenario distinguishing SPP 201 pre-design work from SPP 202 regular-design milestones.",
+    "source_support": [
       "SPP 201 refined markdown lines 245-255",
       "SPP 201 refined markdown lines 268-415",
       "SPP 201 refined markdown lines 425-447"
     ]
   },
   "local_repairs": {
-    "normalized_rewritten": true,
+    "normalized_updated": true,
     "candidate_recomposed": true,
     "placeholders_removed": true,
-    "source_records_created": 1,
+    "source_records_verified_or_updated": true,
     "question_edits_created": 10,
     "source_safe_rewrite_question_edits": 10,
-    "non_source_claims_removed_or_rewritten": true
+    "cross_article_consistency_checked": true,
+    "consistency_notes": "SPP 201 pre-design MDPE 1.5-2.5 remains distinct from SPP 202 regular design service phases; SPP 202 abandoned-work 90% wording remains distinct from UAP Document 401-402 85% payment milestone."
+  },
+  "target": {
+    "article_id": "db248a33-44f2-411c-a069-9685200a588c",
+    "normalized_sha256": "sha256:35b8111429b33421ac9215998c061ea0662face1d8d13c49494f81c7ae08ffff",
+    "candidate_sha256": "sha256:35b8111429b33421ac9215998c061ea0662face1d8d13c49494f81c7ae08ffff",
+    "linked_questions_sha256": "sha256:f058787f2aec0e075c1fa567264ebcc1d69985158a3f56260e260dae2d4e1930",
+    "sources_sha256": "sha256:1d3d2726f0971c85cf0984224d88123498aa25156f60e4bfad2ebcea4a8b9a91"
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_local_source_locator": true,
+    "all_section_or_percentage_claims_verified_against_local_source_text": true,
+    "primary_truth_source_root": "vitruvius-connection/001_Raw-Source-Layer"
   },
   "validation": {
-    "compose_blockers": [],
-    "diff_safe_to_push": true,
-    "diff_blockers": [],
-    "validate_valid": true,
-    "validate_blockers": []
+    "status": "PASS",
+    "compose": "passed with blockers=0",
+    "diff": "passed with safe_to_push=true and blockers=[]",
+    "validate": "passed per article with --strict; component-usage.json warning only",
+    "ui_block_edit_validation": "passed with valid=true and blockers=0",
+    "scoped_json_parse": "passed in Batch 095 scoped checks",
+    "placeholder_internal_note_source_gap_scan": "passed with zero matches in candidate/normalized scope",
+    "source_hash_checks": "passed in Batch 095 scoped checks",
+    "linked_question_question_edit_count_checks": "passed; counts match manifest",
+    "stale_compose_error_scan": "passed after stale sidecars removed",
+    "targeted_tests": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts passed: 34 pass, 0 fail, 328 expects",
+    "git_diff_check": "passed after report, ledger, scoped checks, evidence, handoff, and coordination updates"
   },
   "blockers": []
 }

@@ -1,29 +1,25 @@
 {
-  "batch_id": "source-audited-article-batch-016-local-first",
+  "batch_id": "source-audited-article-batch-095-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T22:11:13.000+08:00",
   "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
   "slug": "lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic",
   "title": "SPP DOC 202 Overview the Six Phase Framework and its Design Logic",
-  "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001",
-  "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001/question-edits",
-  "audited_at": "2026-05-10T23:58:00.000+08:00",
-  "audit_date": "2026-05-10",
   "status": "local_pass_ready_for_final_publishing_review",
-  "target": {
-    "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
-    "candidate_sha256": "sha256:d58da29e61a97d81cf95b6d13e9db75c9917e26a7fc7dec44c82f125553b0e53"
-  },
-  "classification": {
-    "contains_legal_or_code_claims": true,
-    "requires_raw_pdf_audit": true,
-    "content_domain": "professional_practice_spp_202"
-  },
+  "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001",
+  "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001",
+  "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001/question-edits",
+  "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001/question-edits",
+  "linked_questions": 10,
+  "question_edits_created": 10,
+  "source_safe_rewrite_question_edits": 10,
   "source_audit": {
     "primary_sources_checked": [
       {
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
         "sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
         "source_id": "uap-spp-202-standards-of-professional-practice",
-        "locator": "SPP Document 202, Regular Design Services scope and phase duties"
+        "locator": "SPP Document 202 regular-design scope, phase duties, classifications, compensation methods, and service conditions"
       },
       {
         "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
@@ -45,74 +41,63 @@
       }
     ],
     "checked_markdown_lines": [
-      "UAP Document Standards raw markdown lines 283-297",
-      "UAP Document Standards raw markdown lines 301-344",
-      "UAP Document Standards raw markdown lines 347-382",
+      "UAP Document Standards raw markdown lines 283-382",
+      "UAP Document Standards raw markdown lines 417-441",
+      "UAP Document Standards raw markdown lines 447-492",
+      "UAP Document Standards raw markdown lines 494-543",
       "UAP Document 401-402 raw markdown lines 88-100",
       "UAP Document 401-402 raw markdown lines 138-145"
     ],
-    "source_scope": "SPP 202 regular design services plus UAP Document 401-402 payment milestones",
+    "source_locator": "SPP Document 202 regular design services, classifications, compensation/service conditions, and UAP Document 401-402 payment milestones",
+    "source_scope": "SPP 202 regular design services plus UAP Document 401-402 payment milestones where payment timing is tested",
     "local_source_checked": true,
-    "claims_repaired": [
-      "Removed generated media/component summary blocks from the student-facing article body.",
-      "Replaced standalone Bidding Assistance 5% and Construction Administration 10% fee allocation language with source-safe payment milestone wording.",
-      "Rewrote Contract Documents fee wording to the supported cumulative 85% milestone."
+    "no_internet_primary_evidence_used": true
+  },
+  "scenario_enrichment": {
+    "status": "eligible-added",
+    "section_heading": "Real World Scenario",
+    "summary": "Added source-safe sequencing and billing scenario for regular design service phase order and 401-402 milestones.",
+    "source_support": [
+      "UAP Document Standards raw markdown lines 301-382",
+      "UAP Document 401-402 raw markdown lines 88-100"
     ]
   },
-  "claims": [
-    {
-      "claim_id": "svc004-spp-202-phase-scope",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "checked_markdown_lines": [
-          "UAP Document Standards raw markdown lines 283-297",
-          "UAP Document Standards raw markdown lines 301-344",
-          "UAP Document Standards raw markdown lines 347-382"
-        ],
-        "support_summary": "SPP 202 source text lists regular design service scope and phase duties."
-      }
-    },
-    {
-      "claim_id": "svc004-payment-milestones",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
-        "raw_pdf_sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document 401-402.md",
-        "checked_markdown_lines": [
-          "UAP Document 401-402 raw markdown lines 88-100",
-          "UAP Document 401-402 raw markdown lines 138-145"
-        ],
-        "support_summary": "UAP Document 401-402 supports cumulative payment milestones and remaining-fee breakdown."
-      }
-    }
-  ],
-  "linked_questions": 10,
-  "question_edits_created": 10,
-  "source_safe_rewrite_question_edits": 10,
-  "blockers": [],
+  "local_repairs": {
+    "normalized_updated": true,
+    "candidate_recomposed": true,
+    "placeholders_removed": true,
+    "source_records_verified_or_updated": true,
+    "question_edits_created": 10,
+    "source_safe_rewrite_question_edits": 10,
+    "cross_article_consistency_checked": true,
+    "consistency_notes": "SPP 201 pre-design MDPE 1.5-2.5 remains distinct from SPP 202 regular design service phases; SPP 202 abandoned-work 90% wording remains distinct from UAP Document 401-402 85% payment milestone."
+  },
+  "target": {
+    "article_id": "0b116082-5275-4d0f-bb23-ce5b74339001",
+    "normalized_sha256": "sha256:ea6f52cfef693abeff5247658893e117e8e0e2a296cc886f500c05f37a100d13",
+    "candidate_sha256": "sha256:ea6f52cfef693abeff5247658893e117e8e0e2a296cc886f500c05f37a100d13",
+    "linked_questions_sha256": "sha256:9033ae669e77b0179aa3be305bff980bcd195406e40db129fc588f00c795c0b3",
+    "sources_sha256": "sha256:d254f66d047878da0bc24a0a1d91d5e858d351dc97739e0b53e8e889ed458d7a"
+  },
   "raw_pdf_gate": {
     "status": "PASS",
-    "all_legal_code_claims_have_pdf_locator": true,
-    "all_section_numbers_verified_against_raw_pdf": true,
-    "no_derivative_text_used_as_source_of_truth": true
-  },
-  "overall": {
-    "source_audit_status": "PASS",
-    "safe_for_local_candidate_validation": true,
-    "safe_for_supabase_upload": false,
-    "supabase_final_publishing_required": true
+    "all_legal_code_claims_have_local_source_locator": true,
+    "all_section_or_percentage_claims_verified_against_local_source_text": true,
+    "primary_truth_source_root": "vitruvius-connection/001_Raw-Source-Layer"
   },
   "validation": {
+    "status": "PASS",
     "compose": "passed with blockers=0",
     "diff": "passed with safe_to_push=true and blockers=[]",
-    "validate": "passed with valid=true and blockers=[]; component-usage.json warning only",
-    "json_parse": "passed for selected Batch 016 JSON files",
-    "tests": "bun test scripts/content-audit/content-audit.test.ts passed: 27 pass, 0 fail",
-    "git_diff_check": "passed for selected Batch 016 paths",
-    "clean_artifact_scan": "passed with zero matches"
-  }
+    "validate": "passed per article with --strict; component-usage.json warning only",
+    "ui_block_edit_validation": "passed with valid=true and blockers=0",
+    "scoped_json_parse": "passed in Batch 095 scoped checks",
+    "placeholder_internal_note_source_gap_scan": "passed with zero matches in candidate/normalized scope",
+    "source_hash_checks": "passed in Batch 095 scoped checks",
+    "linked_question_question_edit_count_checks": "passed; counts match manifest",
+    "stale_compose_error_scan": "passed after stale sidecars removed",
+    "targeted_tests": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts passed: 34 pass, 0 fail, 328 expects",
+    "git_diff_check": "passed after report, ledger, scoped checks, evidence, handoff, and coordination updates"
+  },
+  "blockers": []
 }

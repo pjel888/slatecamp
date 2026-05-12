@@ -1,17 +1,17 @@
 # Source-Audited Production-Line Coordination
 
-Updated: 2026-05-12T21:48:54+08:00
+Updated: 2026-05-12T22:46:30+08:00
 Workspace: /Users/philiplewis/slatecamp
-Branch: main
-Mode: controlled serial final-gate production line; Batch 094 completed local-first with no Supabase push, deploy, or commit; Batch 095 remains reserved for a separate worker run.
+Branch: 3dlab-gray-viewport-bg
+Mode: controlled serial final-gate production line; Batch 095 completed local-first with no Supabase push, deploy, or commit; Batch 096 is not reserved or started.
 
 ## Current Committed Baseline
 
-- Current HEAD observed by Batch 094 worker: 2b24d6b71
-- Latest accepted commit: 2b24d6b71
-- Batch 093 accepted, independently QA-passed, committed and pushed as 81ab4ed94 with whitespace hygiene follow-up 2b24d6b71
+- Current HEAD observed by Batch 095 worker: cc950cb4d
+- Latest accepted commit: cc950cb4d
+- Batch 094 accepted, independently QA-passed, committed and pushed as 05113e98f with whitespace hygiene follow-up cc950cb4d
 
-Batches 090-093 are committed and pushed as the accepted baseline through 2b24d6b71. Batch 094 is local-first complete with blockers=0 and pending final publishing review. Batch 095 is reserved only and not started.
+Batches 090-094 are committed and pushed as the accepted baseline through cc950cb4d. Batch 095 is local-first complete with blockers=0 and pending final publishing review. No Batch 096 reservation or start occurred in the Batch 095 worker run.
 
 ## Accepted Batches
 
@@ -31,12 +31,12 @@ Batches 090-093 are committed and pushed as the accepted baseline through 2b24d6
 | 091 | Accepted, committed at 7c2b35e47 with hygiene follow-up 3881a1f23 | Construction systems and fire safety: excavation, glazing, fire zones, certificate of occupancy, dangerous buildings | 5 | 168 | 0 | excavation-foundation-and-veneer (bd009a97-21fe-400e-8717-615d5a877cfd)<br>glass-and-glazing-area-limits (3a28da11-0053-4b2f-85a8-f675a3d10a43)<br>fire-zones-and-existing-buildings (9437579a-377e-41ec-8527-4c0399348746)<br>certificate-of-occupancy (68eeacdb-a61b-4f53-bbe9-e2459fa8d152)<br>dangerous-and-ruinous-buildings (ad9732f1-f733-4bc1-acb5-72b4bb53555d) | production-line-batch-091-manifest.json |
 | 092 | Accepted, committed at f8956b5bf | Accessibility, fire code, and professional practice: pedestrian protection, signs, light/ventilation, fire alarms, UAP SPP | 5 | 130 | 0 | pedestrian-protection-during-construction (e6c2a686-5b8c-477d-b5e4-d02bef987743)<br>signs-design-and-construction (16a0bc40-d538-4e4a-8408-cd41dd7aa7aa)<br>pd-1096-rule-viii-light-and-ventilation (cb947ab1-7737-4bde-8a47-606b5d305ed6)<br>lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr (1d37a355-c8bf-4d5e-a41b-07a9817a4427)<br>uap-spp-doc-standards-of-professional-practice-for-philippine-architects (f2c105fd-51fc-4b48-b53a-77242dbb91b0) | production-line-batch-092-manifest.json |
 | 093 | Accepted, committed at 81ab4ed94 with hygiene follow-up 2b24d6b71 | PD 1096 building code compliance: height limits, occupancy, setbacks, building permits, plan checking | 5 | 172 | 0 | pd-1096-rule-vii-height-limits (a865c6b2-8c25-404e-bb0c-08d374d374a5)<br>pd-1096-rule-vii-occupancy (9085e0d8-3498-4d3b-b991-46e54d94bde0)<br>pd-1096-rule-viii-setbacks-and-easements (859b1a7f-8aba-473d-8c28-f9aaa39af11d)<br>building-permit-process (687e0da7-4e39-454f-b3f8-a95308678556)<br>typology-checklists-and-plan-checking (4256d28b-076b-4c68-ad2d-9e27fdbcdf6b) | production-line-batch-093-manifest.json |
-| 094 | Local-first complete, pending final publishing review | RA 9266 professional law and liability: overview, scope, prohibited acts, civil code liability, architect of record | 5 | 50 | 0 | lea-prac-law-001-ra-9266-overview (02a5ba32-0443-4162-837d-326783ed77a2)<br>lea-prac-law-002-scope-of-practice (7e511a5d-edb1-4622-8f0f-29c1a631c145)<br>lea-prac-law-003-prohibited-acts (3d48211b-8add-4934-8dab-ae8bdae74035)<br>lea-prac-law-010-civil-code-article-1723 (6dc813a9-913d-47b5-9203-f59e8e909869)<br>lea-prac-law-011-architect-of-record (17b95df0-6bea-43c6-ab03-2b82a358caa6) | production-line-batch-094-manifest.json |
-| 095 | Reserved, not started | UAP professional services: pre-design, SPP 202 overview, schematic design, contract documents, regular design services | 5 | 50 | 0 | lea-prac-svc-001-pre-design-services (db248a33-44f2-411c-a069-9685200a588c)<br>lea-prac-svc-004-spp-doc-202-overview (0b116082-5275-4d0f-bb23-ce5b74339001)<br>lea-prac-svc-005-phase-1-schematic-design (b3d5ae5b-09a9-426c-9feb-00932e5555aa)<br>lea-prac-svc-007-phase-3-contract-documents (617cdac3-3b02-44b0-b81f-f8827fc4242e)<br>spp-doc-202-regular-design-services (24b0a3db-e6bc-45d0-a9a1-d83009112efb) | production-line-batch-095-manifest.json |
+| 094 | Accepted, committed at 05113e98f with hygiene follow-up cc950cb4d | RA 9266 professional law and liability: overview, scope, prohibited acts, civil code liability, architect of record | 5 | 50 | 0 | lea-prac-law-001-ra-9266-overview (02a5ba32-0443-4162-837d-326783ed77a2)<br>lea-prac-law-002-scope-of-practice (7e511a5d-edb1-4622-8f0f-29c1a631c145)<br>lea-prac-law-003-prohibited-acts (3d48211b-8add-4934-8dab-ae8bdae74035)<br>lea-prac-law-010-civil-code-article-1723 (6dc813a9-913d-47b5-9203-f59e8e909869)<br>lea-prac-law-011-architect-of-record (17b95df0-6bea-43c6-ab03-2b82a358caa6) | production-line-batch-094-manifest.json |
+| 095 | Local-first complete, pending final publishing review | UAP professional services: pre-design, SPP 202 overview, schematic design, contract documents, regular design services | 5 | 50 | 0 | lea-prac-svc-001-pre-design-services (db248a33-44f2-411c-a069-9685200a588c)<br>lea-prac-svc-004-spp-doc-202-overview (0b116082-5275-4d0f-bb23-ce5b74339001)<br>lea-prac-svc-005-phase-1-schematic-design (b3d5ae5b-09a9-426c-9feb-00932e5555aa)<br>lea-prac-svc-007-phase-3-contract-documents (617cdac3-3b02-44b0-b81f-f8827fc4242e)<br>spp-doc-202-regular-design-services (24b0a3db-e6bc-45d0-a9a1-d83009112efb) | production-line-batch-095-manifest.json |
 
 ## Worker Instructions
 
-- Work one manifest batch at a time. Batches 090-092 are accepted; Batches 093-095 are reserved and ready to start.
+- Work one manifest batch at a time. Batches 090-094 are accepted; Batch 095 is local-first complete with blockers=0 and pending final publishing review.
 - Before editing, re-run the prior-batch exclusion check against Batches 001 through the latest accepted batch (092 at commit f8956b5bf) plus reservation manifests and any local-first completed batch artifacts.
 - Use local raw PDFs under /Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer as primary evidence. Internet lookup may only discover candidate source names or official copies for later local-source acquisition; it cannot be cited as primary evidence.
 - Do not permanently skip difficult articles. If a selected article has missing or weak source families, keep the reservation and mark blocker-resolution-needed with the exact source family and recommended path.
@@ -44,7 +44,7 @@ Batches 090-093 are committed and pushed as the accepted baseline through 2b24d6
 
 ## Reviewer Instructions
 
-- Verify that every selected article ID is absent from Batches 001-091 and any earlier accepted reservation batch.
+- Verify that every newly selected article ID is absent from Batches 001-094 and any earlier accepted reservation batch; record historical/local re-audit overlap separately from accepted production-batch overlap.
 - Review raw-source evidence before prose quality. Claims must be traceable to local raw/source-conversion locators, not web snippets.
 - Confirm linked-question count equals created question-edit count for each article.
 - Check for placeholders, internal notes, source gaps, stale compose-error files, JSON parse failures, unsafe diffs, and scenario enrichment status.
@@ -56,11 +56,11 @@ Batches 090-093 are committed and pushed as the accepted baseline through 2b24d6
 2. Worker runs the full validation gate list from the manifest.
 3. Independent reviewer validates the artifacts and source traceability.
 4. Coordinator accepts or rejects the batch. Acceptance requires blockers=0, source gaps=0, linked-question/question-edit counts matching, and scoped git diff --check passing.
-5. Only after coordinator acceptance may the next batch begin. Batch 092 is local-first complete and pending final publishing review; Batch 093 is not reserved or started, and a new reservation coordinator must reserve the next batches if blockers=0.
+5. Only after coordinator acceptance may the next batch begin. Batch 095 is local-first complete and pending final publishing review; Batch 096 is not reserved or started, and a new reservation coordinator must reserve the next batches if blockers=0.
 
 ## Commit/Push Rule
 
-After each accepted batch, stage only that batch's accepted article folders, question-edit files, batch report, ledger, scoped checks, and handoff/coordination updates. Commit with the Lore Commit Protocol and push the branch. Do not combine batches in one commit unless the coordinator explicitly records a batch-combination exception. This Batch 092 worker run itself must not commit or push.
+After each accepted batch, stage only that batch's accepted article folders, question-edit files, batch report, ledger, scoped checks, and handoff/coordination updates. Commit with the Lore Commit Protocol and push the branch. Do not combine batches in one commit unless the coordinator explicitly records a batch-combination exception. This Batch 095 worker run itself must not commit or push.
 
 ## Handoff Notes
 
@@ -71,10 +71,10 @@ After each accepted batch, stage only that batch's accepted article folders, que
 - Batch 094 manifest: /Users/philiplewis/slatecamp/.ai/03_plans/production-line-batch-094-manifest.json
 - Batch 095 manifest: /Users/philiplewis/slatecamp/.ai/03_plans/production-line-batch-095-manifest.json
 - Reservation doc: /Users/philiplewis/slatecamp/.ai/03_plans/source-audited-production-line-reservation-093-095.md
-- Global handoff completion state for Batches 087-093: committed and pushed through 2b24d6b71.
-- Batch 094 local-first completion state: `PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW`, blockers=0, no Supabase push/deploy/commit attempted by the Batch 094 worker.
-- Batch 095 reservation status: 5 articles reserved, 0 blockers, all raw PDF source families confirmed locally available.
-- Next-batch instruction: Batch 095 may start only in a separate worker run after final Batch 094 review; Batch 094 worker stopped after Batch 094.
+- Global handoff completion state for Batches 087-094: committed and pushed through cc950cb4d.
+- Batch 095 local-first completion state: `PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW`, blockers=0, no Supabase push/deploy/commit attempted by the Batch 095 worker.
+- Batch 095 artifacts: `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-095-local-first-report.md`, `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-095-local-first-ledger.json`, `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-095-local-first-scoped-checks.json`.
+- Next-batch instruction: a new reservation coordinator must reserve the next batches if blockers=0. Batch 096 was not started or reserved in this Batch 095 worker run.
 
 ### Batch 093 prior-artifact overlap acknowledgment — 2026-05-12T21:22:14+08:00
 
@@ -87,3 +87,12 @@ Process advisory: the Batch 093 reservation manifest/process stated `selected_id
 Independent QA for Batch 094 found that the five Batch 094 article IDs appeared in older local-first/re-audit artifacts for Batches 004, 005, and 006. QA determined these were historical uncommitted re-audit artifacts, not accepted final production content, not Supabase pushes, and not deploys; therefore Batch 094 is acceptable as the serially accepted production-line pass for these five clusters.
 
 Process advisory: future reservation coordinators must distinguish accepted/committed batch exclusion from historical/re-audit artifact overlap and record both explicitly.
+
+### Batch 095 prior-artifact overlap coordinator confirmation — 2026-05-12T23:28:11+08:00
+
+Independent QA for Batch 095 passed all structural/content gates but requested coordinator confirmation for prior-artifact overlap with Batches 011, 016, and 021. Coordinator follow-up found older history for Batch 095 article folders, including prior SlateCamp article/question batch artifacts and some `Publish verified SlateCamp article batch ...` commits. Therefore Batch 095 must be treated as a serial source-audited re-audit/repair pass over historically touched content, not as first-ever processing of these article IDs.
+
+Acceptance rationale: Batch 095 followed the fixed 093-095 manifest, produced current local-first source-audit evidence, repaired/validated 50/50 question edits, added source-safe scenarios, passed independent UAP SPP quality review, and made no Supabase push/deploy. This local-first production line is establishing a frozen source-audited state before any future final publishing review; prior historical publication/re-audit artifacts do not invalidate the current local repair, but they expose a reservation-process gap.
+
+Process advisory: future reservation coordinators must record three separate categories: (1) current serially accepted source-audited batches, (2) historical local-first/re-audit artifacts, and (3) historical published/article/question batches. Manifests must not report overlap as zero when any of these historical categories contain the selected IDs.
+

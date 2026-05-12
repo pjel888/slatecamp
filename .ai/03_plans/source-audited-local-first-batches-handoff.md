@@ -1,6 +1,6 @@
 # Source-Audited Local-First Batches Handoff
 
-Updated: 2026-05-12T21:48:54+08:00
+Updated: 2026-05-12T22:46:30+08:00
 
 ## Operating Mode
 
@@ -11,15 +11,15 @@ Updated: 2026-05-12T21:48:54+08:00
 
 ## Completed Batches
 
-- Source-audited local-first article batches 001 through 094 are recorded under `/Users/philiplewis/slatecamp/.ai/content-audit-export`.
-- Latest completed batch: Batch 094, status `PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW`, local-only and not committed in this run; report `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-094-local-first-report.md`, ledger `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-094-local-first-ledger.json`, scoped checks `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-094-local-first-scoped-checks.json`.
-- Previous accepted batch: Batch 093, independently QA-passed, committed and pushed as `81ab4ed94` with whitespace hygiene follow-up `2b24d6b71`.
+- Source-audited local-first article batches 001 through 095 are recorded under `/Users/philiplewis/slatecamp/.ai/content-audit-export`.
+- Latest completed batch: Batch 095, status `PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW`, blockers=0, no Supabase push/deploy/commit attempted; report `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-095-local-first-report.md`, ledger `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-095-local-first-ledger.json`, scoped checks `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-095-local-first-scoped-checks.json`.
+- Previous accepted batch: Batch 094, independently QA-passed, committed and pushed as `05113e98f` with whitespace hygiene follow-up `cc950cb4d`; reservation for Batches 093-095 was committed and pushed as `acbc2b043`.
 
 ## Current Batch State
 
-- Last completed batch: Batch 094
-- Current batch number for next continuation: Batch 095 (reserved only; ready for a separate local-first run because Batch 094 blockers=0)
-- Current worker/session state: Batch 094 completed locally from the fixed manifest. Batch 095 remains reserved but not started. No Supabase push, deploy, or commit attempted.
+- Last completed batch: Batch 095
+- Current batch number for next continuation: none reserved in this worker run; a new reservation coordinator must reserve the next batches if blockers=0.
+- Current worker/session state: Batch 095 fixed-manifest local-first run completed with blockers=0; no Supabase push, deploy, commit, Batch 096 reservation, or Batch 096 start attempted.
 - Latest completed Batch 082 selection rule used: five unpassed sourceable LEA building-technology/materials/estimating clusters with linked questions and local raw source families, excluding IDs recorded in source-audited Batch 001 through Batch 081 artifacts.
 - Active Batch 083 selection rule used: five unpassed sourceable LEA building-materials and metals clusters with linked questions and exact readable local raw source families, excluding IDs recorded in source-audited Batch 001 through Batch 082 artifacts.
 - Active Batch 084 selection rule used: five unpassed sourceable LEA building-technology/construction-systems clusters with linked questions and exact readable local raw source families, excluding IDs recorded in source-audited Batch 001 through Batch 083 artifacts.
@@ -36,7 +36,82 @@ Updated: 2026-05-12T21:48:54+08:00
 - Batch 091 completion check: PASS; report, ledger, scoped checks, and post-batch handoff exist with blockers=0. Batch 092 was executed in this subsequent local-first run.
 - Batch 092 completion check: PASS; report, ledger, scoped checks, and post-batch handoff exist with blockers=0. A new reservation coordinator must reserve the next batches if blockers=0.
 - Batch 093 completion check: PASS; report, ledger, scoped checks, and post-batch handoff exist with blockers=0. Batch 093 was accepted, independently QA-passed, committed and pushed as `81ab4ed94` with whitespace hygiene follow-up `2b24d6b71`; reservation for Batches 093-095 committed and pushed as `acbc2b043`.
-- Batch 094 completion check: PASS; report, ledger, scoped checks, and post-batch handoff exist with blockers=0. Batch 095 is ready only for a separate execution run; this Batch 094 worker stopped after Batch 094.
+- Batch 094 completion check: PASS; report, ledger, scoped checks, and post-batch handoff exist with blockers=0. Batch 094 was accepted, independently QA-passed, committed and pushed as `05113e98f` with whitespace hygiene follow-up `cc950cb4d`.
+- Batch 095 completion check: PASS; report, ledger, scoped checks, and post-batch handoff exist with blockers=0. Batch 095 processed only the five manifest clusters, stopped after Batch 095, and did not reserve or start Batch 096.
+
+## Batch 095 Pre-Start Checkpoint
+
+- Updated: 2026-05-12T22:11:13+08:00
+- Batch: 095
+- Manifest: `/Users/philiplewis/slatecamp/.ai/03_plans/production-line-batch-095-manifest.json`
+- Scope rule: execute exactly the five article clusters reserved in the Batch 095 manifest; do not skip, replace, combine with Batch 096, push to Supabase, deploy, commit, or reserve/start Batch 096.
+- Observed checkout: `3dlab-gray-viewport-bg` at `cc950cb4d`; manifest branch field remains `main`. This local-first run follows the fixed manifest and records the observed checkout without switching branches.
+- Inherited blocker status: Batch 094 accepted and independently QA-passed with blockers=0; Batch 095 reservation inherited blockers=0.
+- Known blocker-resolution-needed notes: none at pre-start; all manifest `blocker_resolution_needed` values are false. Difficult source or validation findings must stay with the selected article and be recorded as exact blockers rather than replacing the article.
+- Scenario-enrichment potential: high for all five article clusters because UAP SPP service-phase obligations, deliverables, and compensation percentages are exam-useful in realistic architect-client service settings. Each article must be actively evaluated for a concise source-safe Real World Scenario section; if not source-safe or exam-useful, record `eligible-deferred` or `not-applicable` with a specific reason in the article evidence, ledger, report, and scoped checks.
+
+| # | Article ID | Slug | Exact article folder | Exact question-edits path | Linked questions |
+|---:|---|---|---|---|---:|
+| 1 | `db248a33-44f2-411c-a069-9685200a588c` | `lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c/question-edits` | 10 |
+| 2 | `0b116082-5275-4d0f-bb23-ce5b74339001` | `lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001/question-edits` | 10 |
+| 3 | `b3d5ae5b-09a9-426c-9feb-00932e5555aa` | `lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t--b3d5ae5b-09a9-426c-9feb-00932e5555aa` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t--b3d5ae5b-09a9-426c-9feb-00932e5555aa/question-edits` | 10 |
+| 4 | `617cdac3-3b02-44b0-b81f-f8827fc4242e` | `lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee--617cdac3-3b02-44b0-b81f-f8827fc4242e` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee--617cdac3-3b02-44b0-b81f-f8827fc4242e/question-edits` | 10 |
+| 5 | `24b0a3db-e6bc-45d0-a9a1-d83009112efb` | `spp-doc-202-regular-design-services` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/question-edits` | 10 |
+
+Expected local raw source families:
+
+- UAP SPP source family: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP`
+- Expected primary UAP documents for this batch: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf`, `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf`, and `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf` as a supporting/cross-check document when needed.
+
+Pending validation gates: raw-PDF-first audit; roundtrip protocol; compose/diff/validate; UI-block-edit validation; scoped JSON parse; placeholder/internal-note/source-gap scans; source hash checks; linked-question/question-edit count checks; stale compose-error scan; targeted content-audit tests; scoped `git diff --check`; Batch 095 report, ledger, and scoped checks under `.ai/content-audit-export`; post-batch handoff/coordination update. Supabase push, deploy, commit, Batch 096 reservation, and Batch 096 start remain forbidden in this run.
+
+## Batch 095 Post-Batch Completion Checkpoint
+
+- Updated: 2026-05-12T22:46:30+08:00
+- Batch: 095
+- Status: `PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW`
+- Completed article count: 5
+- Completed linked-question count: 50
+- Completed source-safe question-edit count: 50
+- Scenario enrichment results: 5 eligible-added, 0 eligible-deferred, 0 not-applicable.
+- Source evidence: local/raw primary evidence used for all cited claims; UAP SPP Document 201, UAP Document Standards of Professional Practice/SPP 202 text, and UAP Document 401-402 local source families supported the final articles. Internet evidence was not used.
+- Unresolved blockers: 0
+- Supabase/deploy/commit state: no Supabase push, deploy, or commit attempted.
+- Batch 096 state: not started and not reserved in this run.
+- Report: `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-095-local-first-report.md`
+- Ledger: `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-095-local-first-ledger.json`
+- Scoped checks: `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-095-local-first-scoped-checks.json`
+- Next-batch instruction: a new reservation coordinator must reserve the next batches if blockers=0; do not start Batch 096 from this Batch 095 worker run.
+
+| # | Article ID | Slug | Improved normalized path | Improved candidate path | Question-edits path | Linked questions | Question edits | Scenario status |
+|---:|---|---|---|---|---|---:|---:|---|
+| 1 | `db248a33-44f2-411c-a069-9685200a588c` | `lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c/normalized.md` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c/candidate.md` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-001-pre-design-services-scope-deliverables-and-compensation-method--db248a33-44f2-411c-a069-9685200a588c/question-edits` | 10 | 10 | `eligible-added` |
+| 2 | `0b116082-5275-4d0f-bb23-ce5b74339001` | `lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001/normalized.md` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001/candidate.md` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-004-spp-doc-202-overview-the-six-phase-framework-and-its-design-logic--0b116082-5275-4d0f-bb23-ce5b74339001/question-edits` | 10 | 10 | `eligible-added` |
+| 3 | `b3d5ae5b-09a9-426c-9feb-00932e5555aa` | `lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t--b3d5ae5b-09a9-426c-9feb-00932e5555aa/normalized.md` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t--b3d5ae5b-09a9-426c-9feb-00932e5555aa/candidate.md` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-005-phase-1-schematic-design-deliverables-decisions-and-fee-earnedschematic-design-is-t--b3d5ae5b-09a9-426c-9feb-00932e5555aa/question-edits` | 10 | 10 | `eligible-added` |
+| 4 | `617cdac3-3b02-44b0-b81f-f8827fc4242e` | `lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee--617cdac3-3b02-44b0-b81f-f8827fc4242e/normalized.md` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee--617cdac3-3b02-44b0-b81f-f8827fc4242e/candidate.md` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-007-phase-3-contract-documents-working-drawings-specifications-and-the-50-fee--617cdac3-3b02-44b0-b81f-f8827fc4242e/question-edits` | 10 | 10 | `eligible-added` |
+| 5 | `24b0a3db-e6bc-45d0-a9a1-d83009112efb` | `spp-doc-202-regular-design-services` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/normalized.md` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/candidate.md` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/spp-doc-202-regular-design-services--24b0a3db-e6bc-45d0-a9a1-d83009112efb/question-edits` | 10 | 10 | `eligible-added` |
+
+Batch 095 source evidence recorded:
+
+- UAP SPP Document 201: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf`; raw PDF hash `sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93`; refined markdown hash `sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed`; locators used: SPP 201 refined markdown lines 245-255, 268-415, and 425-447.
+- UAP Document Standards of Professional Practice/SPP 202: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf`; raw PDF hash `sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b`; raw markdown hash `sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5`; locators used: raw markdown lines 283-382, 417-441, 447-492, and 494-543.
+- UAP Document 401-402: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf`; raw PDF hash `sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f`; raw markdown hash `sha256:0b9cfd569b9f964c95dec13761812c8606b2c0fe38b9043df13efad361286a53`; locators used: raw markdown lines 88-100 and 138-145.
+
+Batch 095 quality protocol results:
+
+- Compose: 5/5 pass, blockers=0.
+- Diff: 5/5 pass, locally safe, blockers=0.
+- Validate: 5/5 pass with `--strict`, blockers=0; expected `component-usage.json` warnings only.
+- UI-block edits: 5/5 pass, blockers=0, warnings=0.
+- Scoped JSON parse: 107 JSON files parsed, failures=0.
+- Placeholder/internal-note/source-gap scan: matches=0; candidates contain no raw `SLATECAMP_UI_BLOCK` placeholders.
+- Source hash checks: 18 cited-source checks, failures=0.
+- Linked-question/question-edit count checks: 5/5 pass; 50 linked questions and 50 question edits.
+- Stale compose-error scan: matches=0 after stale generated sidecars from older runs were removed.
+- Targeted tests: 34 pass, 0 fail, 328 expect calls.
+- Scoped git diff --check: PASS after report, ledger, scoped checks, and handoff/coordination updates.
+
+Prior-artifact overlap note: these five article IDs appear in older historical local-first/re-audit artifacts for Batches 011, 016, and 021. Batch 095 followed the fixed manifest exactly; overlap was not used to skip, replace, or expand scope.
 
 ## Batch 094 Pre-Start Checkpoint
 
@@ -8237,3 +8312,12 @@ Process advisory: the Batch 093 reservation manifest/process stated `selected_id
 Independent QA for Batch 094 found that the five Batch 094 article IDs appeared in older local-first/re-audit artifacts for Batches 004, 005, and 006. QA determined these were historical uncommitted re-audit artifacts, not accepted final production content, not Supabase pushes, and not deploys; therefore Batch 094 is acceptable as the serially accepted production-line pass for these five clusters.
 
 Process advisory: future reservation coordinators must distinguish accepted/committed batch exclusion from historical/re-audit artifact overlap and record both explicitly.
+
+### Batch 095 prior-artifact overlap coordinator confirmation — 2026-05-12T23:28:11+08:00
+
+Independent QA for Batch 095 passed all structural/content gates but requested coordinator confirmation for prior-artifact overlap with Batches 011, 016, and 021. Coordinator follow-up found older history for Batch 095 article folders, including prior SlateCamp article/question batch artifacts and some `Publish verified SlateCamp article batch ...` commits. Therefore Batch 095 must be treated as a serial source-audited re-audit/repair pass over historically touched content, not as first-ever processing of these article IDs.
+
+Acceptance rationale: Batch 095 followed the fixed 093-095 manifest, produced current local-first source-audit evidence, repaired/validated 50/50 question edits, added source-safe scenarios, passed independent UAP SPP quality review, and made no Supabase push/deploy. This local-first production line is establishing a frozen source-audited state before any future final publishing review; prior historical publication/re-audit artifacts do not invalidate the current local repair, but they expose a reservation-process gap.
+
+Process advisory: future reservation coordinators must record three separate categories: (1) current serially accepted source-audited batches, (2) historical local-first/re-audit artifacts, and (3) historical published/article/question batches. Manifests must not report overlap as zero when any of these historical categories contain the selected IDs.
+

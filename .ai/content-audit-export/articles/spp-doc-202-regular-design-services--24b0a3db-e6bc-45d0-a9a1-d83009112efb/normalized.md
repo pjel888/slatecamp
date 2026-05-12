@@ -45,6 +45,11 @@ The Owner/Client has responsibilities that support the architect's work. Other s
 - Full-time supervision is separate when required.
 - MDPE multiplier range checked in the source: 1.5 to 2.5.
 - Compensation methods include PCC, MDPE, Professional Fee Plus Expenses, Lump Sum or Fixed Fee, Per Diem/Honorarium plus reimbursables, and Mixed Methods.
+- UAP Document 401-402 payment milestones are 15% after Schematic Design, 35% cumulative after Design Development, and 85% cumulative after Contract Documents.
+- SPP 202 separately states that, if work is abandoned after plans, specifications, and other project design documents are prepared, the completed Detailed Design and Contract Documents Phase is equivalent to 90% of the architect's work.
 
 ## Common Trap
 Do not answer SPP 202 questions with a generic five-phase design workflow if the audited source is asking for the SPP Document 202 service structure. The checked source identifies Project Definition, Schematic Design, Design Development, Contract Documents, Bidding/Negotiation, and Construction Phase services.
+
+## Real World Scenario
+An owner commissions regular design services for a building and later asks whether the architect must stay on site all day during construction. Under SPP 202, the architect's regular construction-phase role includes decisions on claims, change orders, periodic site visits, payment certificates, and completion inspections. Continuous eight-hour supervision is a separate full-time supervision service when required, so it should not be treated as part of ordinary SPP 202 periodic site visits.
