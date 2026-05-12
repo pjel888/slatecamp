@@ -1,0 +1,109 @@
+{
+  "question_id": "0688b48b-7611-467e-b590-510e75a7d45d",
+  "baseline_hash": "sha256:78f9909c799451938ed7912002ea95c37c2f3326317ce3c92432b206c317522b",
+  "action": "replace",
+  "reason": "source-audited-article-batch-087-local-first aligned linked question with checked local raw PDF/source evidence for lea-plan-002-07-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-087",
+  "approved_at": "2026-05-12T10:45:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "dbac0a4a-cff7-4cb1-8e66-dcd6fb224283",
+    "parent_article_slug": "lea-plan-002-07-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 7160 refined markdown lines 155-162; RPS 2008 refined markdown lines 81-85 and 435-449 cross-check CLUP/zoning mandate; raw PDF hash checked locally. RA 7279 refined markdown lines 11-35, 111-147, 179-185, and 217-231; raw PDF hash checked locally. RPS 2008 refined markdown lines 75-85, 125-129, 435-449, 837-839, 1201-1304, and 1338-1350; raw PDF hash checked locally. Local Shelter Planning Manual refined markdown lines 240-252, 334-382, and 426-472; raw PDF hash checked locally. Resilient Urban Design Guidelines refined markdown lines 41-66, 301-309, 389-392, 556-572, 595-621, and 661-678; raw PDF hash checked locally. HLURB CLUP Guidebook Vol. 1 refined markdown lines 497-551, 665-715, 731-741, 1103-1119, 1541-1558, 3371, 3845, 4633, 6011, and 7310-8159; raw PDF hash checked locally.",
+    "checked_markdown_lines": [
+      "RA 7160 refined markdown lines 155-162; RPS 2008 refined markdown lines 81-85 and 435-449 cross-check CLUP/zoning mandate; raw PDF hash checked locally.",
+      "RA 7279 refined markdown lines 11-35, 111-147, 179-185, and 217-231; raw PDF hash checked locally.",
+      "RPS 2008 refined markdown lines 75-85, 125-129, 435-449, 837-839, 1201-1304, and 1338-1350; raw PDF hash checked locally.",
+      "Local Shelter Planning Manual refined markdown lines 240-252, 334-382, and 426-472; raw PDF hash checked locally.",
+      "Resilient Urban Design Guidelines refined markdown lines 41-66, 301-309, 389-392, 556-572, 595-621, and 661-678; raw PDF hash checked locally.",
+      "HLURB CLUP Guidebook Vol. 1 refined markdown lines 497-551, 665-715, 731-741, 1103-1119, 1541-1558, 3371, 3845, 4633, 6011, and 7310-8159; raw PDF hash checked locally."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "ra-7160-local-government-code-b087",
+        "label": "RA 7160 - Local Government Code",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7160/RA 7160 The Local Government Code.pdf",
+        "sha256": "sha256:e270e8bc7bd84ba8ad7b6fe6780c12a3e5a6103e2b9395db13084266a5ff1fff",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7160/RA 7160 The Local Government Code.md",
+        "refined_markdown_sha256": "sha256:9f95493bd12c7f4b0989913d7e8783cdbc6235891fea9977c2aa77238c3dd392",
+        "locator": "RA 7160 refined markdown lines 155-162; RPS 2008 refined markdown lines 81-85 and 435-449 cross-check CLUP/zoning mandate; raw PDF hash checked locally."
+      },
+      {
+        "source_id": "ra-7279-urban-development-housing-act-b087",
+        "label": "RA 7279 - Urban Development and Housing Act",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7279/RA 7279 Urban Development and Housing Act 2009.pdf",
+        "sha256": "sha256:23efa9c0278519d79ed424d9ced016b24619ebb42a19e75a05dc9bb8bf1c4696",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7279/RA 7279 Urban Development and Housing Act 2009.md",
+        "refined_markdown_sha256": "sha256:f52859fb18fec28c403348851c3e53caca2e678cb9cec43fbca28d8d5c3a323e",
+        "locator": "RA 7279 refined markdown lines 11-35, 111-147, 179-185, and 217-231; raw PDF hash checked locally."
+      },
+      {
+        "source_id": "rps-2008-b087",
+        "label": "RPS 2008 - Rationalizing the Local Planning System",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/RPS (2008).pdf",
+        "sha256": "sha256:1331576aa80a6e5ab2d4079aa091e7294b7574c3c91b41a499e02cd1f8df91a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/RPS (2008).md",
+        "refined_markdown_sha256": "sha256:a86183e25f99faee458dfbb5bdb6045b98e309abe56e3d9fc4b65aee43312c96",
+        "locator": "RPS 2008 refined markdown lines 75-85, 125-129, 435-449, 837-839, 1201-1304, and 1338-1350; raw PDF hash checked locally."
+      },
+      {
+        "source_id": "local-shelter-planning-manual-b087",
+        "label": "Local Shelter Planning Manual 2016",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Local-Shelter-Planning-Manual-2016-Web-Edition.pdf",
+        "sha256": "sha256:c8dd5e9492a17cdd4c2fb05d21564eee75b8def86e9f8bb8052b71adf15edcec",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Local-Shelter-Planning-Manual-2016-Web-Edition.md",
+        "refined_markdown_sha256": "sha256:e94d42b03c750a104eb24daaf60e3f616c55c301af6d4be9b7aede5f1004794b",
+        "locator": "Local Shelter Planning Manual refined markdown lines 240-252, 334-382, and 426-472; raw PDF hash checked locally."
+      },
+      {
+        "source_id": "resilient-urban-design-guidelines-b087",
+        "label": "DHSUD Resilient Urban Design and Development Guidelines",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf",
+        "sha256": "sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.md",
+        "refined_markdown_sha256": "sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7",
+        "locator": "Resilient Urban Design Guidelines refined markdown lines 41-66, 301-309, 389-392, 556-572, 595-621, and 661-678; raw PDF hash checked locally."
+      },
+      {
+        "source_id": "hlurb-clup-guidebook-vol1-b087",
+        "label": "HLURB CLUP Guidebook Vol. 1",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/HLURB_CLUP_Guidebook_Vol_1_11042015.pdf",
+        "sha256": "sha256:5b8e141fa204a4fc8ce74a0c165c55bd8c166691b0ccc393f24f61db57690c6f",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/HLURB_CLUP_Guidebook_Vol_1_11042015.md",
+        "refined_markdown_sha256": "sha256:26067221888dd0b950bf65719ba7ce8308694b7d799dca6f8f238ad7d7f49025",
+        "locator": "HLURB CLUP Guidebook Vol. 1 refined markdown lines 497-551, 665-715, 731-741, 1103-1119, 1541-1558, 3371, 3845, 4633, 6011, and 7310-8159; raw PDF hash checked locally."
+      }
+    ],
+    "local_source_safe_action": "Question rewritten to the Batch 087 local raw-source-audited philippine_urban_challenges_clup_response scope."
+  },
+  "proposed": {
+    "text": "What should a local shelter plan do for households in danger areas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Map them and identify relocation or risk-reduction needs using hazard and vulnerability evidence"
+      },
+      {
+        "id": "b",
+        "text": "Ignore them until construction starts"
+      },
+      {
+        "id": "c",
+        "text": "Treat them as only an aesthetic issue"
+      },
+      {
+        "id": "d",
+        "text": "Approve all existing locations automatically"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "The Local Shelter Planning Manual requires mapping households in danger areas and using vulnerability and hazard inputs.",
+    "explanation": "The Local Shelter Planning Manual requires mapping households in danger areas and using vulnerability and hazard inputs.",
+    "code_citation": "RA 7160 - Local Government Code; RA 7279 - Urban Development and Housing Act; RPS 2008 - Rationalizing the Local Planning System; Local Shelter Planning Manual 2016; DHSUD Resilient Urban Design and Development Guidelines; HLURB CLUP Guidebook Vol. 1",
+    "bloom_level": "apply",
+    "application_context": "source_audited_local_first_batch_087",
+    "practice_context": [],
+    "difficulty": 0.6
+  }
+}

@@ -1,0 +1,354 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-087-local-first",
+  "batch_number": 87,
+  "generated_at": "2026-05-12T10:55:00.000+08:00",
+  "audit_mode": "local_first_raw_source_primary",
+  "article_id": "f6b1d119-9ba2-436b-ba39-d62abceef5ed",
+  "slug": "lea-plan-005-04-core-concept",
+  "title": "Hazard-informed site planning and resilient CLUP design",
+  "article_folder": ".ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed",
+  "overall_status": "PASS",
+  "blocker_count": 0,
+  "source_policy": {
+    "primary_truth": "vitruvius-connection/001_Raw-Source-Layer local raw PDFs",
+    "supplemental_internet_used": false,
+    "source_safe_narrowing_applied": true,
+    "unresolved_source_blockers": []
+  },
+  "scenario_enrichment": {
+    "status": "eligible-added",
+    "real_world_scenario_present": true,
+    "reason": "Added source-safe flood-prone housing-site scenario using hazard maps, exposure, vulnerability, risk assessment, drainage, safe access, open space, evacuation, and shelter-plan controls."
+  },
+  "article_hashes": {
+    "original_content_hash": "sha256:ab9cac8a1367ccdfb42b60637711716d796741b92d655f40f1f1728754b57a46",
+    "normalized_content_hash": "sha256:03a3feacd780ae855857fac4fb9a7447744eea9565aed58a5819ed32657985f9",
+    "candidate_content_hash": "sha256:03a3feacd780ae855857fac4fb9a7447744eea9565aed58a5819ed32657985f9",
+    "sources_hash": "sha256:b28ebfcc495b2befa6632466a2d9947ba47b020016bccc15f123bd4ce7c2fd52"
+  },
+  "checked_sources": [
+    {
+      "source_id": "hlurb-clup-vol2-b087",
+      "label": "HLURB CLUP Volume 2",
+      "source_type": "primary_planning_guide_pdf",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/HLURB_CLUP_Vol_2.pdf",
+      "raw_pdf_sha256": "sha256:0da4f5c9abbab99eeae05a870c9bbce549ef2e7c36aa3d433d05821736b713bc",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/HLURB_CLUP_Vol_2.md",
+      "refined_markdown_sha256": "sha256:7f71db9d9b919381ebf71b3641e21c40f7f0fc6e43f4e845a18bd4084173c0fa",
+      "checked_locator": "HLURB CLUP Volume 2 refined markdown lines 39, 630-754, 1038-1152, 1244, 1457-1488, 1581-1682, 1712-1804, and 8116-8159; raw PDF hash checked locally.",
+      "primary_evidence_status": "local_raw_pdf_hash_checked_with_refined_markdown_locator"
+    },
+    {
+      "source_id": "resilient-urban-design-guidelines-b087",
+      "label": "DHSUD Resilient Urban Design and Development Guidelines",
+      "source_type": "primary_planning_guide_pdf",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf",
+      "raw_pdf_sha256": "sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.md",
+      "refined_markdown_sha256": "sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7",
+      "checked_locator": "Resilient Urban Design Guidelines refined markdown lines 41-66, 301-309, 389-392, 556-572, 595-621, and 661-678; raw PDF hash checked locally.",
+      "primary_evidence_status": "local_raw_pdf_hash_checked_with_refined_markdown_locator"
+    },
+    {
+      "source_id": "local-shelter-planning-manual-b087",
+      "label": "Local Shelter Planning Manual 2016",
+      "source_type": "primary_planning_guide_pdf",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Local-Shelter-Planning-Manual-2016-Web-Edition.pdf",
+      "raw_pdf_sha256": "sha256:c8dd5e9492a17cdd4c2fb05d21564eee75b8def86e9f8bb8052b71adf15edcec",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Local-Shelter-Planning-Manual-2016-Web-Edition.md",
+      "refined_markdown_sha256": "sha256:e94d42b03c750a104eb24daaf60e3f616c55c301af6d4be9b7aede5f1004794b",
+      "checked_locator": "Local Shelter Planning Manual refined markdown lines 240-252, 334-382, and 426-472; raw PDF hash checked locally.",
+      "primary_evidence_status": "local_raw_pdf_hash_checked_with_refined_markdown_locator"
+    },
+    {
+      "source_id": "deped-drrr-manual-b087",
+      "label": "DepEd Disaster Risk Reduction Resource Manual Philippines",
+      "source_type": "supplemental_local_drr_pdf",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DEPED/DepEd DRRR Manual Philippines.pdf",
+      "raw_pdf_sha256": "sha256:bb43a0a4166b461b50f393892a7bf1eb398b3d33e9151e38bf16983c8f42c904",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DEPED/DepEd DRRR Manual Philippines.md",
+      "refined_markdown_sha256": "sha256:3516787141cd216a82777cdba012b4788222cee883642cad7c612b0527f0faf0",
+      "checked_locator": "DepEd DRRR Manual refined markdown lines 91-93, 166-178, 202-232, 264-290; raw PDF hash checked locally.",
+      "primary_evidence_status": "local_raw_pdf_hash_checked_with_refined_markdown_locator"
+    },
+    {
+      "source_id": "rps-2008-b087",
+      "label": "RPS 2008 - Rationalizing the Local Planning System",
+      "source_type": "primary_planning_standard_pdf",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/RPS (2008).pdf",
+      "raw_pdf_sha256": "sha256:1331576aa80a6e5ab2d4079aa091e7294b7574c3c91b41a499e02cd1f8df91a3",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/RPS (2008).md",
+      "refined_markdown_sha256": "sha256:a86183e25f99faee458dfbb5bdb6045b98e309abe56e3d9fc4b65aee43312c96",
+      "checked_locator": "RPS 2008 refined markdown lines 75-85, 125-129, 435-449, 837-839, 1201-1304, and 1338-1350; raw PDF hash checked locally.",
+      "primary_evidence_status": "local_raw_pdf_hash_checked_with_refined_markdown_locator"
+    }
+  ],
+  "source_hash_check_count": 10,
+  "linked_question_count": 10,
+  "question_edit_count": 10,
+  "evidence_claim_count": 12,
+  "claims": [
+    {
+      "claim_id": "f6b1d119-9ba2-436b-ba39-d62abceef5ed:article-rewrite",
+      "claim_type": "article_content",
+      "status": "source_supported",
+      "summary": "Hazard-informed site planning and resilient CLUP design was narrowed to locally checked Batch 087 source evidence for philippine_hazard_informed_site_planning.",
+      "evidence_basis": [
+        "HLURB CLUP Volume 2 refined markdown lines 39, 630-754, 1038-1152, 1244, 1457-1488, 1581-1682, 1712-1804, and 8116-8159; raw PDF hash checked locally.",
+        "Resilient Urban Design Guidelines refined markdown lines 41-66, 301-309, 389-392, 556-572, 595-621, and 661-678; raw PDF hash checked locally.",
+        "Local Shelter Planning Manual refined markdown lines 240-252, 334-382, and 426-472; raw PDF hash checked locally.",
+        "DepEd DRRR Manual refined markdown lines 91-93, 166-178, 202-232, 264-290; raw PDF hash checked locally.",
+        "RPS 2008 refined markdown lines 75-85, 125-129, 435-449, 837-839, 1201-1304, and 1338-1350; raw PDF hash checked locally."
+      ],
+      "checked_sources": [
+        "hlurb-clup-vol2-b087",
+        "resilient-urban-design-guidelines-b087",
+        "local-shelter-planning-manual-b087",
+        "deped-drrr-manual-b087",
+        "rps-2008-b087"
+      ]
+    },
+    {
+      "claim_id": "f6b1d119-9ba2-436b-ba39-d62abceef5ed:real-world-scenario",
+      "claim_type": "scenario_enrichment",
+      "status": "eligible-added_source_safe",
+      "summary": "Added source-safe flood-prone housing-site scenario using hazard maps, exposure, vulnerability, risk assessment, drainage, safe access, open space, evacuation, and shelter-plan controls.",
+      "evidence_basis": [
+        "HLURB CLUP Volume 2 refined markdown lines 39, 630-754, 1038-1152, 1244, 1457-1488, 1581-1682, 1712-1804, and 8116-8159; raw PDF hash checked locally.",
+        "Resilient Urban Design Guidelines refined markdown lines 41-66, 301-309, 389-392, 556-572, 595-621, and 661-678; raw PDF hash checked locally.",
+        "Local Shelter Planning Manual refined markdown lines 240-252, 334-382, and 426-472; raw PDF hash checked locally.",
+        "DepEd DRRR Manual refined markdown lines 91-93, 166-178, 202-232, 264-290; raw PDF hash checked locally.",
+        "RPS 2008 refined markdown lines 75-85, 125-129, 435-449, 837-839, 1201-1304, and 1338-1350; raw PDF hash checked locally."
+      ],
+      "checked_sources": [
+        "hlurb-clup-vol2-b087",
+        "resilient-urban-design-guidelines-b087",
+        "local-shelter-planning-manual-b087",
+        "deped-drrr-manual-b087",
+        "rps-2008-b087"
+      ]
+    },
+    {
+      "claim_id": "169a96c8-f01e-4a00-97a8-a96b96536e76:question-edit",
+      "claim_type": "linked_question_edit",
+      "status": "source_safe_rewrite",
+      "question_id": "169a96c8-f01e-4a00-97a8-a96b96536e76",
+      "question_edit_path": ".ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits/169a96c8-f01e-4a00-97a8-a96b96536e76.json",
+      "summary": "Question 169a96c8-f01e-4a00-97a8-a96b96536e76 rewritten to the Batch 087 local-source scope; answer key fields changed=true.",
+      "evidence_basis": [
+        "HLURB CLUP Volume 2 refined markdown lines 39, 630-754, 1038-1152, 1244, 1457-1488, 1581-1682, 1712-1804, and 8116-8159; raw PDF hash checked locally.",
+        "Resilient Urban Design Guidelines refined markdown lines 41-66, 301-309, 389-392, 556-572, 595-621, and 661-678; raw PDF hash checked locally.",
+        "Local Shelter Planning Manual refined markdown lines 240-252, 334-382, and 426-472; raw PDF hash checked locally.",
+        "DepEd DRRR Manual refined markdown lines 91-93, 166-178, 202-232, 264-290; raw PDF hash checked locally.",
+        "RPS 2008 refined markdown lines 75-85, 125-129, 435-449, 837-839, 1201-1304, and 1338-1350; raw PDF hash checked locally."
+      ],
+      "checked_sources": [
+        "hlurb-clup-vol2-b087",
+        "resilient-urban-design-guidelines-b087",
+        "local-shelter-planning-manual-b087",
+        "deped-drrr-manual-b087",
+        "rps-2008-b087"
+      ]
+    },
+    {
+      "claim_id": "23941221-20b3-4b03-9157-d5687638db39:question-edit",
+      "claim_type": "linked_question_edit",
+      "status": "source_safe_rewrite",
+      "question_id": "23941221-20b3-4b03-9157-d5687638db39",
+      "question_edit_path": ".ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits/23941221-20b3-4b03-9157-d5687638db39.json",
+      "summary": "Question 23941221-20b3-4b03-9157-d5687638db39 rewritten to the Batch 087 local-source scope; answer key fields changed=true.",
+      "evidence_basis": [
+        "HLURB CLUP Volume 2 refined markdown lines 39, 630-754, 1038-1152, 1244, 1457-1488, 1581-1682, 1712-1804, and 8116-8159; raw PDF hash checked locally.",
+        "Resilient Urban Design Guidelines refined markdown lines 41-66, 301-309, 389-392, 556-572, 595-621, and 661-678; raw PDF hash checked locally.",
+        "Local Shelter Planning Manual refined markdown lines 240-252, 334-382, and 426-472; raw PDF hash checked locally.",
+        "DepEd DRRR Manual refined markdown lines 91-93, 166-178, 202-232, 264-290; raw PDF hash checked locally.",
+        "RPS 2008 refined markdown lines 75-85, 125-129, 435-449, 837-839, 1201-1304, and 1338-1350; raw PDF hash checked locally."
+      ],
+      "checked_sources": [
+        "hlurb-clup-vol2-b087",
+        "resilient-urban-design-guidelines-b087",
+        "local-shelter-planning-manual-b087",
+        "deped-drrr-manual-b087",
+        "rps-2008-b087"
+      ]
+    },
+    {
+      "claim_id": "2ba52cd1-9352-421d-ac3b-29f513929e57:question-edit",
+      "claim_type": "linked_question_edit",
+      "status": "source_safe_rewrite",
+      "question_id": "2ba52cd1-9352-421d-ac3b-29f513929e57",
+      "question_edit_path": ".ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits/2ba52cd1-9352-421d-ac3b-29f513929e57.json",
+      "summary": "Question 2ba52cd1-9352-421d-ac3b-29f513929e57 rewritten to the Batch 087 local-source scope; answer key fields changed=true.",
+      "evidence_basis": [
+        "HLURB CLUP Volume 2 refined markdown lines 39, 630-754, 1038-1152, 1244, 1457-1488, 1581-1682, 1712-1804, and 8116-8159; raw PDF hash checked locally.",
+        "Resilient Urban Design Guidelines refined markdown lines 41-66, 301-309, 389-392, 556-572, 595-621, and 661-678; raw PDF hash checked locally.",
+        "Local Shelter Planning Manual refined markdown lines 240-252, 334-382, and 426-472; raw PDF hash checked locally.",
+        "DepEd DRRR Manual refined markdown lines 91-93, 166-178, 202-232, 264-290; raw PDF hash checked locally.",
+        "RPS 2008 refined markdown lines 75-85, 125-129, 435-449, 837-839, 1201-1304, and 1338-1350; raw PDF hash checked locally."
+      ],
+      "checked_sources": [
+        "hlurb-clup-vol2-b087",
+        "resilient-urban-design-guidelines-b087",
+        "local-shelter-planning-manual-b087",
+        "deped-drrr-manual-b087",
+        "rps-2008-b087"
+      ]
+    },
+    {
+      "claim_id": "412a5c9d-4442-42d8-a7f8-587c5355e54b:question-edit",
+      "claim_type": "linked_question_edit",
+      "status": "source_safe_rewrite",
+      "question_id": "412a5c9d-4442-42d8-a7f8-587c5355e54b",
+      "question_edit_path": ".ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits/412a5c9d-4442-42d8-a7f8-587c5355e54b.json",
+      "summary": "Question 412a5c9d-4442-42d8-a7f8-587c5355e54b rewritten to the Batch 087 local-source scope; answer key fields changed=true.",
+      "evidence_basis": [
+        "HLURB CLUP Volume 2 refined markdown lines 39, 630-754, 1038-1152, 1244, 1457-1488, 1581-1682, 1712-1804, and 8116-8159; raw PDF hash checked locally.",
+        "Resilient Urban Design Guidelines refined markdown lines 41-66, 301-309, 389-392, 556-572, 595-621, and 661-678; raw PDF hash checked locally.",
+        "Local Shelter Planning Manual refined markdown lines 240-252, 334-382, and 426-472; raw PDF hash checked locally.",
+        "DepEd DRRR Manual refined markdown lines 91-93, 166-178, 202-232, 264-290; raw PDF hash checked locally.",
+        "RPS 2008 refined markdown lines 75-85, 125-129, 435-449, 837-839, 1201-1304, and 1338-1350; raw PDF hash checked locally."
+      ],
+      "checked_sources": [
+        "hlurb-clup-vol2-b087",
+        "resilient-urban-design-guidelines-b087",
+        "local-shelter-planning-manual-b087",
+        "deped-drrr-manual-b087",
+        "rps-2008-b087"
+      ]
+    },
+    {
+      "claim_id": "54ee072d-60aa-4363-b2d0-4928d0a7f1fa:question-edit",
+      "claim_type": "linked_question_edit",
+      "status": "source_safe_rewrite",
+      "question_id": "54ee072d-60aa-4363-b2d0-4928d0a7f1fa",
+      "question_edit_path": ".ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits/54ee072d-60aa-4363-b2d0-4928d0a7f1fa.json",
+      "summary": "Question 54ee072d-60aa-4363-b2d0-4928d0a7f1fa rewritten to the Batch 087 local-source scope; answer key fields changed=true.",
+      "evidence_basis": [
+        "HLURB CLUP Volume 2 refined markdown lines 39, 630-754, 1038-1152, 1244, 1457-1488, 1581-1682, 1712-1804, and 8116-8159; raw PDF hash checked locally.",
+        "Resilient Urban Design Guidelines refined markdown lines 41-66, 301-309, 389-392, 556-572, 595-621, and 661-678; raw PDF hash checked locally.",
+        "Local Shelter Planning Manual refined markdown lines 240-252, 334-382, and 426-472; raw PDF hash checked locally.",
+        "DepEd DRRR Manual refined markdown lines 91-93, 166-178, 202-232, 264-290; raw PDF hash checked locally.",
+        "RPS 2008 refined markdown lines 75-85, 125-129, 435-449, 837-839, 1201-1304, and 1338-1350; raw PDF hash checked locally."
+      ],
+      "checked_sources": [
+        "hlurb-clup-vol2-b087",
+        "resilient-urban-design-guidelines-b087",
+        "local-shelter-planning-manual-b087",
+        "deped-drrr-manual-b087",
+        "rps-2008-b087"
+      ]
+    },
+    {
+      "claim_id": "5cd1180c-4cb6-4fb5-963b-cf28f9fc2149:question-edit",
+      "claim_type": "linked_question_edit",
+      "status": "source_safe_rewrite",
+      "question_id": "5cd1180c-4cb6-4fb5-963b-cf28f9fc2149",
+      "question_edit_path": ".ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits/5cd1180c-4cb6-4fb5-963b-cf28f9fc2149.json",
+      "summary": "Question 5cd1180c-4cb6-4fb5-963b-cf28f9fc2149 rewritten to the Batch 087 local-source scope; answer key fields changed=true.",
+      "evidence_basis": [
+        "HLURB CLUP Volume 2 refined markdown lines 39, 630-754, 1038-1152, 1244, 1457-1488, 1581-1682, 1712-1804, and 8116-8159; raw PDF hash checked locally.",
+        "Resilient Urban Design Guidelines refined markdown lines 41-66, 301-309, 389-392, 556-572, 595-621, and 661-678; raw PDF hash checked locally.",
+        "Local Shelter Planning Manual refined markdown lines 240-252, 334-382, and 426-472; raw PDF hash checked locally.",
+        "DepEd DRRR Manual refined markdown lines 91-93, 166-178, 202-232, 264-290; raw PDF hash checked locally.",
+        "RPS 2008 refined markdown lines 75-85, 125-129, 435-449, 837-839, 1201-1304, and 1338-1350; raw PDF hash checked locally."
+      ],
+      "checked_sources": [
+        "hlurb-clup-vol2-b087",
+        "resilient-urban-design-guidelines-b087",
+        "local-shelter-planning-manual-b087",
+        "deped-drrr-manual-b087",
+        "rps-2008-b087"
+      ]
+    },
+    {
+      "claim_id": "80463191-02dc-4b84-85b2-8267207f0719:question-edit",
+      "claim_type": "linked_question_edit",
+      "status": "source_safe_rewrite",
+      "question_id": "80463191-02dc-4b84-85b2-8267207f0719",
+      "question_edit_path": ".ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits/80463191-02dc-4b84-85b2-8267207f0719.json",
+      "summary": "Question 80463191-02dc-4b84-85b2-8267207f0719 rewritten to the Batch 087 local-source scope; answer key fields changed=true.",
+      "evidence_basis": [
+        "HLURB CLUP Volume 2 refined markdown lines 39, 630-754, 1038-1152, 1244, 1457-1488, 1581-1682, 1712-1804, and 8116-8159; raw PDF hash checked locally.",
+        "Resilient Urban Design Guidelines refined markdown lines 41-66, 301-309, 389-392, 556-572, 595-621, and 661-678; raw PDF hash checked locally.",
+        "Local Shelter Planning Manual refined markdown lines 240-252, 334-382, and 426-472; raw PDF hash checked locally.",
+        "DepEd DRRR Manual refined markdown lines 91-93, 166-178, 202-232, 264-290; raw PDF hash checked locally.",
+        "RPS 2008 refined markdown lines 75-85, 125-129, 435-449, 837-839, 1201-1304, and 1338-1350; raw PDF hash checked locally."
+      ],
+      "checked_sources": [
+        "hlurb-clup-vol2-b087",
+        "resilient-urban-design-guidelines-b087",
+        "local-shelter-planning-manual-b087",
+        "deped-drrr-manual-b087",
+        "rps-2008-b087"
+      ]
+    },
+    {
+      "claim_id": "972bdb07-0df4-4a39-b97d-29db3dcbe46d:question-edit",
+      "claim_type": "linked_question_edit",
+      "status": "source_safe_rewrite",
+      "question_id": "972bdb07-0df4-4a39-b97d-29db3dcbe46d",
+      "question_edit_path": ".ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits/972bdb07-0df4-4a39-b97d-29db3dcbe46d.json",
+      "summary": "Question 972bdb07-0df4-4a39-b97d-29db3dcbe46d rewritten to the Batch 087 local-source scope; answer key fields changed=true.",
+      "evidence_basis": [
+        "HLURB CLUP Volume 2 refined markdown lines 39, 630-754, 1038-1152, 1244, 1457-1488, 1581-1682, 1712-1804, and 8116-8159; raw PDF hash checked locally.",
+        "Resilient Urban Design Guidelines refined markdown lines 41-66, 301-309, 389-392, 556-572, 595-621, and 661-678; raw PDF hash checked locally.",
+        "Local Shelter Planning Manual refined markdown lines 240-252, 334-382, and 426-472; raw PDF hash checked locally.",
+        "DepEd DRRR Manual refined markdown lines 91-93, 166-178, 202-232, 264-290; raw PDF hash checked locally.",
+        "RPS 2008 refined markdown lines 75-85, 125-129, 435-449, 837-839, 1201-1304, and 1338-1350; raw PDF hash checked locally."
+      ],
+      "checked_sources": [
+        "hlurb-clup-vol2-b087",
+        "resilient-urban-design-guidelines-b087",
+        "local-shelter-planning-manual-b087",
+        "deped-drrr-manual-b087",
+        "rps-2008-b087"
+      ]
+    },
+    {
+      "claim_id": "b07093ca-4877-4435-8004-9bfcd8a5c321:question-edit",
+      "claim_type": "linked_question_edit",
+      "status": "source_safe_rewrite",
+      "question_id": "b07093ca-4877-4435-8004-9bfcd8a5c321",
+      "question_edit_path": ".ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits/b07093ca-4877-4435-8004-9bfcd8a5c321.json",
+      "summary": "Question b07093ca-4877-4435-8004-9bfcd8a5c321 rewritten to the Batch 087 local-source scope; answer key fields changed=true.",
+      "evidence_basis": [
+        "HLURB CLUP Volume 2 refined markdown lines 39, 630-754, 1038-1152, 1244, 1457-1488, 1581-1682, 1712-1804, and 8116-8159; raw PDF hash checked locally.",
+        "Resilient Urban Design Guidelines refined markdown lines 41-66, 301-309, 389-392, 556-572, 595-621, and 661-678; raw PDF hash checked locally.",
+        "Local Shelter Planning Manual refined markdown lines 240-252, 334-382, and 426-472; raw PDF hash checked locally.",
+        "DepEd DRRR Manual refined markdown lines 91-93, 166-178, 202-232, 264-290; raw PDF hash checked locally.",
+        "RPS 2008 refined markdown lines 75-85, 125-129, 435-449, 837-839, 1201-1304, and 1338-1350; raw PDF hash checked locally."
+      ],
+      "checked_sources": [
+        "hlurb-clup-vol2-b087",
+        "resilient-urban-design-guidelines-b087",
+        "local-shelter-planning-manual-b087",
+        "deped-drrr-manual-b087",
+        "rps-2008-b087"
+      ]
+    },
+    {
+      "claim_id": "c51a6f2b-6cc0-405a-901d-1a6f66633826:question-edit",
+      "claim_type": "linked_question_edit",
+      "status": "source_safe_rewrite",
+      "question_id": "c51a6f2b-6cc0-405a-901d-1a6f66633826",
+      "question_edit_path": ".ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits/c51a6f2b-6cc0-405a-901d-1a6f66633826.json",
+      "summary": "Question c51a6f2b-6cc0-405a-901d-1a6f66633826 rewritten to the Batch 087 local-source scope; answer key fields changed=true.",
+      "evidence_basis": [
+        "HLURB CLUP Volume 2 refined markdown lines 39, 630-754, 1038-1152, 1244, 1457-1488, 1581-1682, 1712-1804, and 8116-8159; raw PDF hash checked locally.",
+        "Resilient Urban Design Guidelines refined markdown lines 41-66, 301-309, 389-392, 556-572, 595-621, and 661-678; raw PDF hash checked locally.",
+        "Local Shelter Planning Manual refined markdown lines 240-252, 334-382, and 426-472; raw PDF hash checked locally.",
+        "DepEd DRRR Manual refined markdown lines 91-93, 166-178, 202-232, 264-290; raw PDF hash checked locally.",
+        "RPS 2008 refined markdown lines 75-85, 125-129, 435-449, 837-839, 1201-1304, and 1338-1350; raw PDF hash checked locally."
+      ],
+      "checked_sources": [
+        "hlurb-clup-vol2-b087",
+        "resilient-urban-design-guidelines-b087",
+        "local-shelter-planning-manual-b087",
+        "deped-drrr-manual-b087",
+        "rps-2008-b087"
+      ]
+    }
+  ],
+  "unresolved_blockers": []
+}

@@ -1,20 +1,68 @@
 {
   "article_id": "f6b1d119-9ba2-436b-ba39-d62abceef5ed",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:9afd2877e321ca9efa8ffcc7e666eace15f0000ec372e8bf341267d3cb29c170",
-  "source_count": 1,
+  "sources_hash": "sha256:b28ebfcc495b2befa6632466a2d9947ba47b020016bccc15f123bd4ce7c2fd52",
+  "source_count": 5,
   "sources": [
     {
-      "source_id": "f7e301ce-667e-4385-8695-5281911d39b3",
+      "source_id": "hlurb-clup-vol2-b087",
       "article_id": "f6b1d119-9ba2-436b-ba39-d62abceef5ed",
-      "label": "RA 10121 (Philippine Disaster Risk Reduction and Management Act, 2010); Post-Yolanda National Zoning Framework (2014); PHIVOLCS Active Fault Maps; National DRRM Plan",
+      "label": "HLURB CLUP Volume 2",
       "url": null,
-      "source_type": "primary_law",
-      "description": "DHSUD CLUP guidelines (RA 10121 integration); IPCC Climate Change Assessment (hazard escalation)",
-      "is_verified": false,
+      "source_type": "primary_planning_guide_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-087-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/HLURB_CLUP_Vol_2.pdf; raw_pdf_sha256=sha256:0da4f5c9abbab99eeae05a870c9bbce549ef2e7c36aa3d433d05821736b713bc; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/HLURB_CLUP_Vol_2.md; refined_markdown_sha256=sha256:7f71db9d9b919381ebf71b3641e21c40f7f0fc6e43f4e845a18bd4084173c0fa; checked_locator=HLURB CLUP Volume 2 refined markdown lines 39, 630-754, 1038-1152, 1244, 1457-1488, 1581-1682, 1712-1804, and 8116-8159; raw PDF hash checked locally.",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:34:01.381895+00:00",
-      "updated_at": "2026-03-24T04:34:01.381895+00:00"
+      "created_at": "2026-05-12T10:45:00.000+08:00",
+      "updated_at": "2026-05-12T10:45:00.000+08:00"
+    },
+    {
+      "source_id": "resilient-urban-design-guidelines-b087",
+      "article_id": "f6b1d119-9ba2-436b-ba39-d62abceef5ed",
+      "label": "DHSUD Resilient Urban Design and Development Guidelines",
+      "url": null,
+      "source_type": "primary_planning_guide_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-087-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf; raw_pdf_sha256=sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.md; refined_markdown_sha256=sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7; checked_locator=Resilient Urban Design Guidelines refined markdown lines 41-66, 301-309, 389-392, 556-572, 595-621, and 661-678; raw PDF hash checked locally.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-12T10:45:00.000+08:00",
+      "updated_at": "2026-05-12T10:45:00.000+08:00"
+    },
+    {
+      "source_id": "local-shelter-planning-manual-b087",
+      "article_id": "f6b1d119-9ba2-436b-ba39-d62abceef5ed",
+      "label": "Local Shelter Planning Manual 2016",
+      "url": null,
+      "source_type": "primary_planning_guide_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-087-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Local-Shelter-Planning-Manual-2016-Web-Edition.pdf; raw_pdf_sha256=sha256:c8dd5e9492a17cdd4c2fb05d21564eee75b8def86e9f8bb8052b71adf15edcec; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Local-Shelter-Planning-Manual-2016-Web-Edition.md; refined_markdown_sha256=sha256:e94d42b03c750a104eb24daaf60e3f616c55c301af6d4be9b7aede5f1004794b; checked_locator=Local Shelter Planning Manual refined markdown lines 240-252, 334-382, and 426-472; raw PDF hash checked locally.",
+      "is_verified": true,
+      "sort_order": 2,
+      "created_at": "2026-05-12T10:45:00.000+08:00",
+      "updated_at": "2026-05-12T10:45:00.000+08:00"
+    },
+    {
+      "source_id": "deped-drrr-manual-b087",
+      "article_id": "f6b1d119-9ba2-436b-ba39-d62abceef5ed",
+      "label": "DepEd Disaster Risk Reduction Resource Manual Philippines",
+      "url": null,
+      "source_type": "supplemental_local_drr_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-087-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/DEPED/DepEd DRRR Manual Philippines.pdf; raw_pdf_sha256=sha256:bb43a0a4166b461b50f393892a7bf1eb398b3d33e9151e38bf16983c8f42c904; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DEPED/DepEd DRRR Manual Philippines.md; refined_markdown_sha256=sha256:3516787141cd216a82777cdba012b4788222cee883642cad7c612b0527f0faf0; checked_locator=DepEd DRRR Manual refined markdown lines 91-93, 166-178, 202-232, 264-290; raw PDF hash checked locally.",
+      "is_verified": true,
+      "sort_order": 3,
+      "created_at": "2026-05-12T10:45:00.000+08:00",
+      "updated_at": "2026-05-12T10:45:00.000+08:00"
+    },
+    {
+      "source_id": "rps-2008-b087",
+      "article_id": "f6b1d119-9ba2-436b-ba39-d62abceef5ed",
+      "label": "RPS 2008 - Rationalizing the Local Planning System",
+      "url": null,
+      "source_type": "primary_planning_standard_pdf",
+      "description": "Local raw PDF source audited for source-audited-article-batch-087-local-first. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/RPS (2008).pdf; raw_pdf_sha256=sha256:1331576aa80a6e5ab2d4079aa091e7294b7574c3c91b41a499e02cd1f8df91a3; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/RPS (2008).md; refined_markdown_sha256=sha256:a86183e25f99faee458dfbb5bdb6045b98e309abe56e3d9fc4b65aee43312c96; checked_locator=RPS 2008 refined markdown lines 75-85, 125-129, 435-449, 837-839, 1201-1304, and 1338-1350; raw PDF hash checked locally.",
+      "is_verified": true,
+      "sort_order": 4,
+      "created_at": "2026-05-12T10:45:00.000+08:00",
+      "updated_at": "2026-05-12T10:45:00.000+08:00"
     }
   ]
 }

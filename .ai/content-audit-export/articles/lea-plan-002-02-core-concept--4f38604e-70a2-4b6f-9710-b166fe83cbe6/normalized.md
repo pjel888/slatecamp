@@ -1,80 +1,59 @@
-
-
 ## Board Exam Quick Check
 
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+When a question mentions a contemporary planning model, ask what local design action is being tested: compact growth, mixed-use development, transit access, open-space integration, climate resilience, or PUD/new-town governance.
 
-**Common mistake:** treating a familiar keyword in **Lea Plan 002 02 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+**Common mistake:** memorizing imported labels while missing the Philippine implementation control. DHSUD materials connect these ideas to CLUPs, zoning ordinances, new towns, planned unit developments, open-space plans, and resilient urban design.
 
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
+**Retrieval prompt:** Which local plan, zoning tool, or design criterion would turn the planning idea into an enforceable Philippine settlement strategy?
+
 ## What You Need to Know for the LEA
 
-## Learning Goal
-Distinguish contemporary urban models — Garden City (30,000-60,000 pop), New Urbanism (400m walk radius), Transit-Oriented Development, 15-Minute City, CIAM — by their target values, design principles, and urban vision, and apply to Philippine urban scenarios.
+Contemporary planning in the local source layer is best treated as a family of strategies: compact development, mixed use, transit-oriented development, open-space integration, planned unit development, new towns, and resilient urban design. DHSUD's New Town/PUD guidance says these developments should be sustainable, inclusive, climate-resilient, and aligned with local and national development goals. The same guidance grounds PUDs in CLUPs and zoning ordinances.
 
-Contemporary urban models—Garden City, New Urbanism, Transit-Oriented Development, and 15-Minute City—represent a reaction against sprawl and car-dependent development. Each model specifies exact distances, target populations, or design principles. The LEA tests precise values: Garden City = 30,000–60,000, not 100,000; New Urbanism walk radius = 400m, not 800m; CIAM = separation of functions, not mixing.
+## Learning Goal
+
+Distinguish contemporary planning approaches by their local implementation purpose: where growth goes, what mix of uses is allowed, how people access services, how open space is protected, and how resilience is built into the CLUP and zoning ordinance.
 
 ## Core Concept
 
-Contemporary urban models are 20th and 21st century responses to the social and environmental failures of 20th-century modernism. They redefine what livable, sustainable cities should look like.
+A contemporary planning model is useful only when it changes a planning decision. In Philippine practice, the model must be translated into site selection, land-use mix, density management, transport access, open-space provision, and zoning controls.
 
-The **Garden City** (**Ebenezer Howard, 1898**) was conceived as a self-sufficient new town of _30,000–60,000 people_, large enough to support diverse employment and services but small enough to preserve community and greenspace. Howard envisioned combining the best of city (culture, employment, services) and countryside (fresh air, green space, agricultural buffer). Planned garden cities like Letchworth (1903, England) and Welwyn Garden City (1920, England) were built as standalone communities with clear boundaries, internal transit, and community land ownership. The Garden City concept influenced suburban development globally and partly inspired Quezon City's garden suburb aspirations.
+DHSUD's New Town/PUD guidance supports balanced communities with a mix of housing, jobs, services, open space, and transport access. It identifies accessibility, connection to transportation networks, employment proximity, infrastructure capacity, market demand, environmental constraints, and climate alignment as site and design considerations. The CLUP guide also identifies transit-oriented development areas as places that should allow mixed uses, increased densities, and transportation choices, with zoning changes where conventional zoning blocks transit-friendly design.
 
-**New Urbanism** (**Andrés Duany, Elizabeth Plater-Zyberk, Peter Calthorpe, 1980s–present**) emerged as a critique of car-dependent sprawl. New Urbanism advocates for a return to traditional neighborhood design: walkable blocks, mixed-use neighborhoods, diverse housing types, and strong transit connections. The signature principle is the **5-minute walk**: all daily needs (groceries, services, parks, transit) within _400 meters_ of residential locations. This distance assumes a pedestrian walking speed of ~4–5 km/h. New Urbanism influenced mixed-use developments like Bonifacio Global City and infill projects near MRT stations.
-
-**Transit-Oriented Development** (TOD) extends New Urbanism by anchoring development density around mass transit stations. The ideal TOD catchment is _400–800 meters from a station_—the upper bound represents a 10-minute walk. TOD zones typically allow higher density mixed use, parking reduction, and pedestrian priority. The wider catchment (vs. New Urbanism's 400m) accommodates secondary uses and residential options beyond the immediate walk zone.
-
-**15-Minute City** (**Carlos Moreno, 2020**) is a contemporary refinement proposing that residents should access all daily needs—work, food, health, education, culture, parks—within _15 minutes by foot or bike_. Moreno developed this concept in Paris and it has influenced planning in European cities, Tokyo, and emerging urban frameworks globally. It extends beyond the 5-minute neighborhood to create a more functional daily-life radius while still prioritizing active transport.
-
-**CIAM and the Athens Charter** (1933) represent the modernist precursor to contemporary urbanism—but with opposite values. CIAM (_Congrès Internationaux d'Architecture Moderne_) advocated dividing cities into four separate functional zones: living, working, recreation, and transportation. This zoning doctrine caused decades of urban dysfunction (dead downtowns, isolated neighborhoods, car dependency). Contemporary models like New Urbanism are explicitly a reaction _against_ CIAM's separation—New Urbanism advocates _mixed use_, blending residential, retail, services, and offices.
-
-**Smart Growth** (1990s–present) is a set of principles emphasizing compact, infill development; walkability; transit; mixed uses; and environmental protection. Smart Growth rejects sprawl and car-dependent patterns. It is applied planning strategy rather than a single theorist's framework.
-
-**Growth Pole Theory** (**François Perroux, 1955**) proposes that concentrated investment in a strategic economic sector or location generates "spread effects" to surrounding regions—agglomeration benefits that stimulate broader development. The Clark development corridor (New Clark City in Pampanga) and infrastructure investment corridors reflect growth pole thinking.
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-plan-002-02-core-concept", type="image", caption="Contemporary Urban Models — Garden City, TOD, New Urbanism, 15-Minute City", description="Comparison diagram of modern urban models: Garden City (30,000-60,000 pop, greenbelt), TOD (400m transit radius, density gradient), New Urbanism (5-minute walk, mixed-use), 15-Minute City (all amenities within 15 min walk/cycle), and CIAM (functional zoning tower-in-park).", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+Open-space and resilient-urban-design guidance complete the picture. Open spaces are mainstreamed into the CLUP and zoning ordinance, can mitigate flood risk and heat, and can support walkable corridors, public access, civic life, and ecological services. Resilient urban design treats compact, mixed-use, and transit-oriented development as strategies that improve resilience, livability, and sustainability through CLUP and zoning.
 
 ## Key Provisions
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
-Extracted summary:
-- Props: headers="{[\"Model/Approach\",\"Theorist(s)\",\"Year\",\"Target Sclea or Radius\",\"Key Principle\"]}", rows="{[{\"Model/Approach\":\"Garden City\",\"Theorist(s)\":\"Ebenezer Howard\",\"Year\":\"1898\",\"Target Sclea or Radius\":\"30,000–60,000 people\",\"Key Principle\":\"Self-sufficient new town combining city services with countryside amenities; community land ownership\"}", Model=true, Approach=true, New=true, Urbanism=true, Theorist=true, s=true, Duany=true, Plater-Zyberk=true, Calthorpe=true, Year=true
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+| Approach | Source-safe planning meaning |
+|---|---|
+| New town or PUD | Integrated settlement planned through land use, zoning, site selection, infrastructure, and governance. |
+| Mixed use | Residential, commercial, civic, and recreation functions are coordinated to reduce unnecessary trips and support local services. |
+| Transit-oriented development | Density and mixed uses are organized around transport access and require zoning support. |
+| Open-space integration | Parks, greenbelts, buffers, plazas, streets, and other open spaces are planned as CLUP/ZO strategies. |
+| Resilient urban design | Compact growth, open space, active mobility, drainage, and safe public realm are used to reduce risk and improve livability. |
 
 ## Philippine Context
 
-The Philippines adopted New Urbanism principles in Bonifacio Global City (mixed-use, walkable), proposed TOD frameworks around MRT extensions, and referenced 15-Minute City concepts in recent urban development guidelines. However, widespread car dependency, informal settlements, and fragmented land tenure make implementation challenging. Understanding contemporary models helps planners and architects advocate for walkability and mixed use in Philippine development while confronting structural barriers (transport network gaps, informal land occupation, limited affordable housing supply).
+Fast-growing cities often face housing pressure, transport congestion, climate risk, and weak open-space access at the same time. A source-safe answer does not simply say "use a contemporary model." It asks whether the proposed area has access, jobs, utilities, safe land, open space, and zoning support. If the proposal is a new town, PUD, or station-area district, the CLUP must identify the strategy and the zoning ordinance must allow the needed land-use mix and density.
 
-## How It's Tested
+## How It Is Tested
 
-1. **Numeric values:** "New Urbanism's 5-minute walk radius equals how many meters?" Direct recall of 400m, not 800m (which is TOD).
+1. **Implementation questions:** choose CLUP/ZO mainstreaming, not a slogan.
+2. **Transit questions:** choose mixed use, higher density, reduced car dependence, and transport choice near transit.
+3. **Open-space questions:** choose parks, buffers, streets, plazas, and green infrastructure as planned land-use and resilience tools.
+4. **PUD/new-town questions:** choose integrated site selection, infrastructure, land-use mix, and governance.
 
-2. **Theorist attribution:** "The Garden City concept of 30,000–60,000 people is attributed to whom?" → Howard (1898).
+## Real World Scenario
 
-3. **CIAM vs. contemporary:** "CIAM's Athens Charter advocated for [separation / mixing] of urban functions." → Separation (CIAM advocated zoning; contemporary models oppose it).
+An LGU proposes a new settlement near a future station and employment area. The source-safe move is to evaluate site access, public transport, infrastructure capacity, market demand, environmental constraints, and open-space needs; then mainstream the chosen approach into the CLUP and zoning ordinance. If the station district requires mixed use and higher density, the zoning rules must be amended to allow that form instead of leaving conventional single-use controls in place.
 
-4. **Application:** "Which contemporary model would best guide development around a new MRT station?" → TOD.
+## Exam Tip
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Memory anchors:** HOWARD = **30,000–60,000** (Garden City population). New Urbanism = **400m walk** (NOT 800m; that is TOD's upper bound). CIAM = **SEPARATION** (the problem that contemporary models react against). MORENO = **15 MINUTES** (all daily needs within active-transport distance).
-[/SLATECAMP_UI_BLOCK]
-
-**Exam Tip:** Know precise values: Garden City = 30,000-60,000 population (NOT 100,000). New Urbanism walk radius = 400m (NOT 800m). TOD = 400-800m transit radius. CIAM = separation of functions. 15-Minute City = all services within 15 min walk.
-
-## Cross-References
-
-See **LEA-PLAN-002-01** (Classical Urban Models) for foundational models, **LEA-PLAN-008-03** (Sustainable Urban Development) for TOD and compact city principles, and **LEA-PLAN-002-06** (Urban Design) for New Urbanism design standards.
+For contemporary planning, match the model to the control: PUD/new town = integrated settlement planning; TOD = mixed use and density around transport; open space = CLUP/ZO resilience and public realm; resilient urban design = climate- and disaster-aware urban form.
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\"Confusing New Urbanism's 5-minute walk radius (400m) with TOD's catchment (400–800m)—the upper TOD bound is double the New Urbanism standard\",\"Stating Garden City target population as 100,000 instead of 30,000–60,000—students often round up to memorable large numbers\",\"Thinking CIAM advocated mixed use—CIAM advocated SEPARATION of functions; mixed use is a contemporary critique of CIAM's legacy\",\"Attributing Garden City to Howard but not stating the correct target population range—Howard's vision is specific about sclea for a reason\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+- Treating walkability or mixed use as decorative language instead of zoning and site-planning criteria.
+- Selecting TOD without checking transport access and supporting land-use controls.
+- Treating open space as leftover land instead of a planned CLUP/ZO strategy.
+- Ignoring infrastructure and environmental constraints when proposing a new town or PUD.

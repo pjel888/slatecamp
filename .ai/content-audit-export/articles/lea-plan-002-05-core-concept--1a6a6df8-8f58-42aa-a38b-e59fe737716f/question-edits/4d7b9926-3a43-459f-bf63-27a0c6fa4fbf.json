@@ -1,0 +1,89 @@
+{
+  "question_id": "4d7b9926-3a43-459f-bf63-27a0c6fa4fbf",
+  "baseline_hash": "sha256:f078452339b3b1f7cbdd892ce9254189fe3dc05fb0d5b9ee3f9bf837b053fa77",
+  "action": "replace",
+  "reason": "source-audited-article-batch-087-local-first aligned linked question with checked local raw PDF/source evidence for lea-plan-002-05-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-087",
+  "approved_at": "2026-05-12T10:45:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "1a6a6df8-8f58-42aa-a38b-e59fe737716f",
+    "parent_article_slug": "lea-plan-002-05-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "CLUP GIS Guidebook refined markdown lines 1537-1572, 1944-1964, 2092-2098, 4981-5047, 4681-4735, and 5299-5369; raw PDF hash checked locally. RPS 2008 refined markdown lines 75-85, 125-129, 435-449, 837-839, 1201-1304, and 1338-1350; raw PDF hash checked locally. Open Space Development Guidelines refined markdown lines 38-60, 780-846, 805-836, and 840-846; raw PDF hash checked locally. Resilient Urban Design Guidelines refined markdown lines 41-66, 301-309, 389-392, 556-572, 595-621, and 661-678; raw PDF hash checked locally.",
+    "checked_markdown_lines": [
+      "CLUP GIS Guidebook refined markdown lines 1537-1572, 1944-1964, 2092-2098, 4981-5047, 4681-4735, and 5299-5369; raw PDF hash checked locally.",
+      "RPS 2008 refined markdown lines 75-85, 125-129, 435-449, 837-839, 1201-1304, and 1338-1350; raw PDF hash checked locally.",
+      "Open Space Development Guidelines refined markdown lines 38-60, 780-846, 805-836, and 840-846; raw PDF hash checked locally.",
+      "Resilient Urban Design Guidelines refined markdown lines 41-66, 301-309, 389-392, 556-572, 595-621, and 661-678; raw PDF hash checked locally."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "clup-gis-guidebook-b087",
+        "label": "HLURB CLUP GIS Guidebook",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/CLUP GIS GUIDEBOOK HLURB.pdf",
+        "sha256": "sha256:761d92030e97ea4ee4604de76df6dce49334f35b03e6bb411617f6943f8f788f",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/CLUP GIS GUIDEBOOK HLURB.md",
+        "refined_markdown_sha256": "sha256:885dfbb2b28b045cc8d395fc7278f52d429973bd1d9006e7b8f1f7238ed10c06",
+        "locator": "CLUP GIS Guidebook refined markdown lines 1537-1572, 1944-1964, 2092-2098, 4981-5047, 4681-4735, and 5299-5369; raw PDF hash checked locally."
+      },
+      {
+        "source_id": "rps-2008-b087",
+        "label": "RPS 2008 - Rationalizing the Local Planning System",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/RPS (2008).pdf",
+        "sha256": "sha256:1331576aa80a6e5ab2d4079aa091e7294b7574c3c91b41a499e02cd1f8df91a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/RPS (2008).md",
+        "refined_markdown_sha256": "sha256:a86183e25f99faee458dfbb5bdb6045b98e309abe56e3d9fc4b65aee43312c96",
+        "locator": "RPS 2008 refined markdown lines 75-85, 125-129, 435-449, 837-839, 1201-1304, and 1338-1350; raw PDF hash checked locally."
+      },
+      {
+        "source_id": "open-space-development-guidelines-b087",
+        "label": "DHSUD Open Space Development Guidelines",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Open Space Development Guidelines.pdf",
+        "sha256": "sha256:2ca6d61605d370035cdd8679a43cdd57d5f40deada47601ea56e5161733e0add",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Open Space Development Guidelines.md",
+        "refined_markdown_sha256": "sha256:2be9fa0f23c22913f06acedf5905c5ebf004240ee764b47a2b1c97e15b9d9b2b",
+        "locator": "Open Space Development Guidelines refined markdown lines 38-60, 780-846, 805-836, and 840-846; raw PDF hash checked locally."
+      },
+      {
+        "source_id": "resilient-urban-design-guidelines-b087",
+        "label": "DHSUD Resilient Urban Design and Development Guidelines",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf",
+        "sha256": "sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.md",
+        "refined_markdown_sha256": "sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7",
+        "locator": "Resilient Urban Design Guidelines refined markdown lines 41-66, 301-309, 389-392, 556-572, 595-621, and 661-678; raw PDF hash checked locally."
+      }
+    ],
+    "local_source_safe_action": "Question rewritten to the Batch 087 local raw-source-audited philippine_urban_legibility_mapping scope."
+  },
+  "proposed": {
+    "text": "Which public-realm elements support movement, gathering, recreation, and emergency use?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Streets, sidewalks, parks, open spaces, and related public facilities"
+      },
+      {
+        "id": "b",
+        "text": "Only private bedrooms"
+      },
+      {
+        "id": "c",
+        "text": "Only mechanical rooms"
+      },
+      {
+        "id": "d",
+        "text": "Only construction bonds"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "DHSUD resilient design guidance defines public realm to include streets, sidewalks, parks, and open spaces, including emergency-use spaces.",
+    "explanation": "DHSUD resilient design guidance defines public realm to include streets, sidewalks, parks, and open spaces, including emergency-use spaces.",
+    "code_citation": "HLURB CLUP GIS Guidebook; RPS 2008 - Rationalizing the Local Planning System; DHSUD Open Space Development Guidelines; DHSUD Resilient Urban Design and Development Guidelines",
+    "bloom_level": "analyze",
+    "application_context": "source_audited_local_first_batch_087",
+    "practice_context": [],
+    "difficulty": 0.75
+  }
+}

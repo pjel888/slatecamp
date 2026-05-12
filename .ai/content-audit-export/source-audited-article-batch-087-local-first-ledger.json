@@ -1,0 +1,637 @@
+{
+  "schema_version": "source-audited-local-first-ledger-v1",
+  "batch_number": 87,
+  "batch_id": "source-audited-article-batch-087-local-first",
+  "generated_at": "2026-05-12T11:05:00.000+08:00",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "blockers": 0,
+  "workspace": "/Users/philiplewis/slatecamp",
+  "manifest_path": "/Users/philiplewis/slatecamp/.ai/03_plans/production-line-batch-087-manifest.json",
+  "coordination_doc_path": "/Users/philiplewis/slatecamp/.ai/03_plans/source-audited-production-line-coordination.md",
+  "constraints": {
+    "fixed_manifest_only": true,
+    "batch_088_089_read_only_for_exclusion_awareness": true,
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "primary_truth": "vitruvius-connection/001_Raw-Source-Layer local raw PDFs"
+  },
+  "counts": {
+    "articles": 5,
+    "linked_questions": 50,
+    "question_edits": 50,
+    "source_evidence_claims": 60,
+    "source_hash_checks": 44,
+    "unique_local_raw_source_families": 11,
+    "scoped_article_json_files": 105,
+    "real_world_scenario_sections_added": 5,
+    "unresolved_blockers": 0
+  },
+  "validation": {
+    "compose": {
+      "status": "PASS",
+      "passed": 5,
+      "total": 5,
+      "blockers": 0
+    },
+    "diff": {
+      "status": "PASS",
+      "passed": 5,
+      "total": 5,
+      "safe_to_push": true,
+      "blockers": 0
+    },
+    "validate_bundles": {
+      "status": "PASS",
+      "passed": 5,
+      "total": 5,
+      "blockers": 0,
+      "warnings": "component-usage.json missing warnings only"
+    },
+    "ui_block_edit_validation": {
+      "status": "PASS",
+      "passed": 5,
+      "total": 5,
+      "blockers": 0,
+      "warnings": 0
+    },
+    "scoped_json_parse": {
+      "status": "PASS",
+      "files": 105,
+      "failures": 0
+    },
+    "placeholder_internal_note_source_gap_scan": {
+      "status": "PASS",
+      "matches": 0,
+      "note": "Scoped to normalized.md, candidate.md, sources.json, source-audit-evidence.json, and question-edits."
+    },
+    "source_hash_checks": {
+      "status": "PASS",
+      "checks": 44,
+      "failures": 0
+    },
+    "linked_question_question_edit_counts": {
+      "status": "PASS",
+      "linked_questions": 50,
+      "question_edits": 50,
+      "failures": 0
+    },
+    "stale_compose_error_scan": {
+      "status": "PASS",
+      "files": 0
+    },
+    "targeted_tests": {
+      "status": "PASS",
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "pass": 34,
+      "fail": 0,
+      "expects": 328
+    },
+    "scoped_git_diff_check": {
+      "status": "PASS",
+      "command": "git diff --check -- .ai/content-audit-export .ai/03_plans/source-audited-local-first-batches-handoff.md",
+      "blockers": 0
+    },
+    "artifact_json_parse": {
+      "status": "PASS",
+      "files": 107,
+      "article_json_files": 105,
+      "artifact_json_files": 2,
+      "failures": 0
+    },
+    "batch_087_handoff_segment_scan": {
+      "status": "PASS",
+      "matches": 0
+    }
+  },
+  "scenario_enrichment": {
+    "eligible-added": 5,
+    "eligible_deferred": 0,
+    "not_applicable": 0
+  },
+  "articles": [
+    {
+      "ordinal": 1,
+      "article_id": "50d41d7e-57cd-4280-b850-e6d2f89414a6",
+      "slug": "lea-plan-002-01-core-concept",
+      "title": "Urban structure in Philippine CLUP analysis",
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6",
+      "normalized_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/normalized.md",
+      "candidate_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/candidate.md",
+      "sources_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/sources.json",
+      "source_audit_evidence_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/source-audit-evidence.json",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits",
+      "question_edit_file_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits/0c5fb6b9-1a92-424d-99eb-e98798457031.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits/474a92bc-e098-45ad-b16e-4b310890bead.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits/4ee128a4-3218-4dea-b45d-fca4f6f777fe.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits/796c1c03-ed56-4ffe-b024-7d8948e0ddb9.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits/819e5bda-4246-4c13-9a76-7acd0f8648d8.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits/c75eab96-0b69-44cc-9f3d-43fcb3449239.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits/cec9245f-ad6b-48d5-b9c2-472cbccbb0fe.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits/df8adb14-a0eb-40aa-9485-bb8d12578ec3.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits/e3aeecb6-c72c-4010-9ec4-c77ff7f17422.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits/f25d8b6b-7719-4e66-88b7-f61ba7ef6547.json"
+      ],
+      "linked_questions_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/linked-questions.json",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "expected_question_edit_count": 10,
+      "normalized_sha256": "sha256:528766a4e91126aea34d583c60faf1608111dc75f3f3b80b3b79e9a9f59b2d2c",
+      "candidate_sha256": "sha256:528766a4e91126aea34d583c60faf1608111dc75f3f3b80b3b79e9a9f59b2d2c",
+      "original_sha256": "sha256:79405fd91113d09242c269f02d2a4b735d0104df27144f794155c216dfd800df",
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": [],
+        "unresolved_placeholders": [],
+        "candidate_hash": "sha256:528766a4e91126aea34d583c60faf1608111dc75f3f3b80b3b79e9a9f59b2d2c"
+      },
+      "diff": {
+        "safe_to_push": true,
+        "blockers": [],
+        "unresolved_placeholders_count": 0,
+        "candidate_hash": "sha256:528766a4e91126aea34d583c60faf1608111dc75f3f3b80b3b79e9a9f59b2d2c"
+      },
+      "validate": {
+        "valid": true,
+        "blockers": [],
+        "warnings": [
+          "component-usage.json has not been generated for this article yet."
+        ]
+      },
+      "ui_block_edit_validation": {
+        "valid": true,
+        "blockers": [],
+        "warnings": [],
+        "edit_count": 0
+      },
+      "source_count": 3,
+      "checked_sources": [
+        {
+          "source_id": "rps-2008-b087",
+          "label": "RPS 2008 - Rationalizing the Local Planning System",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/RPS (2008).pdf",
+          "raw_pdf_sha256": "sha256:1331576aa80a6e5ab2d4079aa091e7294b7574c3c91b41a499e02cd1f8df91a3",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/RPS (2008).md",
+          "refined_markdown_sha256": "sha256:a86183e25f99faee458dfbb5bdb6045b98e309abe56e3d9fc4b65aee43312c96",
+          "checked_locator": "RPS 2008 refined markdown lines 75-85, 125-129, 435-449, 837-839, 1201-1304, and 1338-1350; raw PDF hash checked locally."
+        },
+        {
+          "source_id": "hlurb-clup-guidebook-vol1-b087",
+          "label": "HLURB CLUP Guidebook Vol. 1",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/HLURB_CLUP_Guidebook_Vol_1_11042015.pdf",
+          "raw_pdf_sha256": "sha256:5b8e141fa204a4fc8ce74a0c165c55bd8c166691b0ccc393f24f61db57690c6f",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/HLURB_CLUP_Guidebook_Vol_1_11042015.md",
+          "refined_markdown_sha256": "sha256:26067221888dd0b950bf65719ba7ce8308694b7d799dca6f8f238ad7d7f49025",
+          "checked_locator": "HLURB CLUP Guidebook Vol. 1 refined markdown lines 497-551, 665-715, 731-741, 1103-1119, 1541-1558, 3371, 3845, 4633, 6011, and 7310-8159; raw PDF hash checked locally."
+        },
+        {
+          "source_id": "clup-gis-guidebook-b087",
+          "label": "HLURB CLUP GIS Guidebook",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/CLUP GIS GUIDEBOOK HLURB.pdf",
+          "raw_pdf_sha256": "sha256:761d92030e97ea4ee4604de76df6dce49334f35b03e6bb411617f6943f8f788f",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/CLUP GIS GUIDEBOOK HLURB.md",
+          "refined_markdown_sha256": "sha256:885dfbb2b28b045cc8d395fc7278f52d429973bd1d9006e7b8f1f7238ed10c06",
+          "checked_locator": "CLUP GIS Guidebook refined markdown lines 1537-1572, 1944-1964, 2092-2098, 4981-5047, 4681-4735, and 5299-5369; raw PDF hash checked locally."
+        }
+      ],
+      "evidence_claim_count": 12,
+      "source_hash_check_count": 6,
+      "scenario_enrichment_status": "eligible-added",
+      "source_summary": "RPS 2008, HLURB CLUP Guidebook Vol. 1, and HLURB CLUP GIS Guidebook raw PDFs checked first; unverified imported urban-model theory claims were narrowed to Philippine CLUP urban-structure application.",
+      "scenario_summary": "eligible-added: arterial-road corridor CLUP scenario.",
+      "unresolved_blockers": []
+    },
+    {
+      "ordinal": 2,
+      "article_id": "4f38604e-70a2-4b6f-9710-b166fe83cbe6",
+      "slug": "lea-plan-002-02-core-concept",
+      "title": "Contemporary planning approaches in Philippine settlements",
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6",
+      "normalized_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/normalized.md",
+      "candidate_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/candidate.md",
+      "sources_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/sources.json",
+      "source_audit_evidence_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/source-audit-evidence.json",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits",
+      "question_edit_file_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits/235f7569-3e57-4260-bf7c-928452bf5479.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits/336402f6-1899-4e9c-8b36-bde4e07d8d4c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits/50617027-2f64-44e5-9118-dcddb7529163.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits/5a51aace-f447-4b35-9893-aedd60e421cd.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits/68e914a6-f016-4582-833f-1191640e5d02.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits/6ebab89d-5143-4659-a0f7-fcf297463b45.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits/87d9bb79-27be-4628-88dd-da011f7a49f2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits/c12b8f34-f200-4f72-9d8d-fe668b8c6e66.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits/d4176670-983c-4bae-bced-37fef0d6bd8b.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits/dc8bb7ae-f790-4533-8bd4-59d5f2091c61.json"
+      ],
+      "linked_questions_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/linked-questions.json",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "expected_question_edit_count": 10,
+      "normalized_sha256": "sha256:b9c40aee1cc0b5564e87ba66189826ad944d44747d8b99f388f3f4f8f29df58b",
+      "candidate_sha256": "sha256:b9c40aee1cc0b5564e87ba66189826ad944d44747d8b99f388f3f4f8f29df58b",
+      "original_sha256": "sha256:6756f6063a509e235a217d7b0f98838be830acd6a2311052ef33dcf99a781817",
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": [],
+        "unresolved_placeholders": [],
+        "candidate_hash": "sha256:b9c40aee1cc0b5564e87ba66189826ad944d44747d8b99f388f3f4f8f29df58b"
+      },
+      "diff": {
+        "safe_to_push": true,
+        "blockers": [],
+        "unresolved_placeholders_count": 0,
+        "candidate_hash": "sha256:b9c40aee1cc0b5564e87ba66189826ad944d44747d8b99f388f3f4f8f29df58b"
+      },
+      "validate": {
+        "valid": true,
+        "blockers": [],
+        "warnings": [
+          "component-usage.json has not been generated for this article yet."
+        ]
+      },
+      "ui_block_edit_validation": {
+        "valid": true,
+        "blockers": [],
+        "warnings": [],
+        "edit_count": 0
+      },
+      "source_count": 4,
+      "checked_sources": [
+        {
+          "source_id": "new-towns-pud-guidelines-b087",
+          "label": "Guidelines on New Towns, New Settlements, and Planned Unit Development",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Guidelines on New Towns and Planned Unit Development.pdf",
+          "raw_pdf_sha256": "sha256:684281f89b73974b098349995fe4994267c8e1934bdc36e623fc0f8501f05ac0",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Guidelines on New Towns and Planned Unit Development.md",
+          "refined_markdown_sha256": "sha256:9b4258a714988c70630731ec4270580fa70e8d0d6add4c8ab1625a00ba0cff47",
+          "checked_locator": "New Towns/PUD Guidelines refined markdown lines 33, 59-63, 418-437, 447-460, 468-494, 513-565, 603-642, 690-712, 743-765, 900-912, 1037-1050, and 1207-1215; raw PDF hash checked locally."
+        },
+        {
+          "source_id": "open-space-development-guidelines-b087",
+          "label": "DHSUD Open Space Development Guidelines",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Open Space Development Guidelines.pdf",
+          "raw_pdf_sha256": "sha256:2ca6d61605d370035cdd8679a43cdd57d5f40deada47601ea56e5161733e0add",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Open Space Development Guidelines.md",
+          "refined_markdown_sha256": "sha256:2be9fa0f23c22913f06acedf5905c5ebf004240ee764b47a2b1c97e15b9d9b2b",
+          "checked_locator": "Open Space Development Guidelines refined markdown lines 38-60, 780-846, 805-836, and 840-846; raw PDF hash checked locally."
+        },
+        {
+          "source_id": "resilient-urban-design-guidelines-b087",
+          "label": "DHSUD Resilient Urban Design and Development Guidelines",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf",
+          "raw_pdf_sha256": "sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.md",
+          "refined_markdown_sha256": "sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7",
+          "checked_locator": "Resilient Urban Design Guidelines refined markdown lines 41-66, 301-309, 389-392, 556-572, 595-621, and 661-678; raw PDF hash checked locally."
+        },
+        {
+          "source_id": "hlurb-clup-guidebook-vol1-b087",
+          "label": "HLURB CLUP Guidebook Vol. 1",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/HLURB_CLUP_Guidebook_Vol_1_11042015.pdf",
+          "raw_pdf_sha256": "sha256:5b8e141fa204a4fc8ce74a0c165c55bd8c166691b0ccc393f24f61db57690c6f",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/HLURB_CLUP_Guidebook_Vol_1_11042015.md",
+          "refined_markdown_sha256": "sha256:26067221888dd0b950bf65719ba7ce8308694b7d799dca6f8f238ad7d7f49025",
+          "checked_locator": "HLURB CLUP Guidebook Vol. 1 refined markdown lines 497-551, 665-715, 731-741, 1103-1119, 1541-1558, 3371, 3845, 4633, 6011, and 7310-8159; raw PDF hash checked locally."
+        }
+      ],
+      "evidence_claim_count": 12,
+      "source_hash_check_count": 8,
+      "scenario_enrichment_status": "eligible-added",
+      "source_summary": "Guidelines on New Towns and PUD, Open Space Development Guidelines, Resilient Urban Design and Development Guidelines, and HLURB CLUP Guidebook Vol. 1 raw PDFs checked first; broad contemporary planning claims were narrowed to source-backed local settlement and open-space planning.",
+      "scenario_summary": "eligible-added: new-town/PUD/open-space scenario.",
+      "unresolved_blockers": []
+    },
+    {
+      "ordinal": 3,
+      "article_id": "1a6a6df8-8f58-42aa-a38b-e59fe737716f",
+      "slug": "lea-plan-002-05-core-concept",
+      "title": "Urban legibility through maps, public realm, and spatial cues",
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f",
+      "normalized_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/normalized.md",
+      "candidate_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/candidate.md",
+      "sources_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/sources.json",
+      "source_audit_evidence_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/source-audit-evidence.json",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/question-edits",
+      "question_edit_file_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/question-edits/12c2e70c-c8b6-45c0-81e2-bac0bc29ca74.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/question-edits/152fa07a-8165-49dd-b97e-051a50febb81.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/question-edits/162fec39-fb14-4a94-99c9-fd0ffd0448b7.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/question-edits/24247123-2cbc-4e46-be38-b3a0c2795a92.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/question-edits/34cd791f-a3a5-46f2-b1a5-99996f07f9f4.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/question-edits/4d7b9926-3a43-459f-bf63-27a0c6fa4fbf.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/question-edits/602419cc-c3a9-4702-b5aa-fee1c617168a.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/question-edits/60889c28-ee6d-4f2c-aeb2-91d0c815c229.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/question-edits/a5c493f6-588f-4639-851b-dca9710c64ca.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/question-edits/e24d0d10-5e86-4058-892d-9d395c1cb664.json"
+      ],
+      "linked_questions_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/linked-questions.json",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "expected_question_edit_count": 10,
+      "normalized_sha256": "sha256:c3dc0f72bf71f664b93f757e3fcdcfba3804627afb6f99aafe77a10b453a0c8e",
+      "candidate_sha256": "sha256:c3dc0f72bf71f664b93f757e3fcdcfba3804627afb6f99aafe77a10b453a0c8e",
+      "original_sha256": "sha256:d48d8b773c767152ade00243069a4d82f6bbb3e3f86eab05c9615ec43edbd396",
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": [],
+        "unresolved_placeholders": [],
+        "candidate_hash": "sha256:c3dc0f72bf71f664b93f757e3fcdcfba3804627afb6f99aafe77a10b453a0c8e"
+      },
+      "diff": {
+        "safe_to_push": true,
+        "blockers": [],
+        "unresolved_placeholders_count": 0,
+        "candidate_hash": "sha256:c3dc0f72bf71f664b93f757e3fcdcfba3804627afb6f99aafe77a10b453a0c8e"
+      },
+      "validate": {
+        "valid": true,
+        "blockers": [],
+        "warnings": [
+          "component-usage.json has not been generated for this article yet."
+        ]
+      },
+      "ui_block_edit_validation": {
+        "valid": true,
+        "blockers": [],
+        "warnings": [],
+        "edit_count": 0
+      },
+      "source_count": 4,
+      "checked_sources": [
+        {
+          "source_id": "clup-gis-guidebook-b087",
+          "label": "HLURB CLUP GIS Guidebook",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/CLUP GIS GUIDEBOOK HLURB.pdf",
+          "raw_pdf_sha256": "sha256:761d92030e97ea4ee4604de76df6dce49334f35b03e6bb411617f6943f8f788f",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/CLUP GIS GUIDEBOOK HLURB.md",
+          "refined_markdown_sha256": "sha256:885dfbb2b28b045cc8d395fc7278f52d429973bd1d9006e7b8f1f7238ed10c06",
+          "checked_locator": "CLUP GIS Guidebook refined markdown lines 1537-1572, 1944-1964, 2092-2098, 4981-5047, 4681-4735, and 5299-5369; raw PDF hash checked locally."
+        },
+        {
+          "source_id": "rps-2008-b087",
+          "label": "RPS 2008 - Rationalizing the Local Planning System",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/RPS (2008).pdf",
+          "raw_pdf_sha256": "sha256:1331576aa80a6e5ab2d4079aa091e7294b7574c3c91b41a499e02cd1f8df91a3",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/RPS (2008).md",
+          "refined_markdown_sha256": "sha256:a86183e25f99faee458dfbb5bdb6045b98e309abe56e3d9fc4b65aee43312c96",
+          "checked_locator": "RPS 2008 refined markdown lines 75-85, 125-129, 435-449, 837-839, 1201-1304, and 1338-1350; raw PDF hash checked locally."
+        },
+        {
+          "source_id": "open-space-development-guidelines-b087",
+          "label": "DHSUD Open Space Development Guidelines",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Open Space Development Guidelines.pdf",
+          "raw_pdf_sha256": "sha256:2ca6d61605d370035cdd8679a43cdd57d5f40deada47601ea56e5161733e0add",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Open Space Development Guidelines.md",
+          "refined_markdown_sha256": "sha256:2be9fa0f23c22913f06acedf5905c5ebf004240ee764b47a2b1c97e15b9d9b2b",
+          "checked_locator": "Open Space Development Guidelines refined markdown lines 38-60, 780-846, 805-836, and 840-846; raw PDF hash checked locally."
+        },
+        {
+          "source_id": "resilient-urban-design-guidelines-b087",
+          "label": "DHSUD Resilient Urban Design and Development Guidelines",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf",
+          "raw_pdf_sha256": "sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.md",
+          "refined_markdown_sha256": "sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7",
+          "checked_locator": "Resilient Urban Design Guidelines refined markdown lines 41-66, 301-309, 389-392, 556-572, 595-621, and 661-678; raw PDF hash checked locally."
+        }
+      ],
+      "evidence_claim_count": 12,
+      "source_hash_check_count": 8,
+      "scenario_enrichment_status": "eligible-added",
+      "source_summary": "HLURB CLUP GIS Guidebook, RPS 2008, Open Space Development Guidelines, and Resilient Urban Design and Development Guidelines raw PDFs checked first; Kevin Lynch-specific claims were narrowed to locally sourced wayfinding, public realm, GIS, and resilient-design controls.",
+      "scenario_summary": "eligible-added: confusing district/civic-center scenario.",
+      "unresolved_blockers": []
+    },
+    {
+      "ordinal": 4,
+      "article_id": "dbac0a4a-cff7-4cb1-8e66-dcd6fb224283",
+      "slug": "lea-plan-002-07-core-concept",
+      "title": "Philippine urban planning constraints and CLUP responses",
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283",
+      "normalized_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/normalized.md",
+      "candidate_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/candidate.md",
+      "sources_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/sources.json",
+      "source_audit_evidence_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/source-audit-evidence.json",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/question-edits",
+      "question_edit_file_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/question-edits/0688b48b-7611-467e-b590-510e75a7d45d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/question-edits/0b101491-dc2d-4782-9625-027514ede20d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/question-edits/11a6f7b4-db33-440d-b94d-deb31dc5363f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/question-edits/1ff24db1-eff3-4b3c-9672-c5f83fec4e82.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/question-edits/4a01b852-3aad-432f-827c-4600fce93b6e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/question-edits/5f721bb3-a7d5-4671-8492-bb0ab0db1d08.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/question-edits/92c1adc3-a619-4d92-87c7-b9c177bb3b26.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/question-edits/95885061-42bf-4aeb-9835-ce3b3e99c71f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/question-edits/e764d8f5-5909-456d-8fb6-5fb027a2ab01.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/question-edits/f3df1648-1823-4ff2-a879-204919d3457d.json"
+      ],
+      "linked_questions_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/linked-questions.json",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "expected_question_edit_count": 10,
+      "normalized_sha256": "sha256:de6b6592cb6a5b91c7581507dd895a52cd13798878736b6540ea2d92f01fa514",
+      "candidate_sha256": "sha256:de6b6592cb6a5b91c7581507dd895a52cd13798878736b6540ea2d92f01fa514",
+      "original_sha256": "sha256:48d6f2b36bed94e158d25ecea1985e601d09d043950978667d4caaec4121b20c",
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": [],
+        "unresolved_placeholders": [],
+        "candidate_hash": "sha256:de6b6592cb6a5b91c7581507dd895a52cd13798878736b6540ea2d92f01fa514"
+      },
+      "diff": {
+        "safe_to_push": true,
+        "blockers": [],
+        "unresolved_placeholders_count": 0,
+        "candidate_hash": "sha256:de6b6592cb6a5b91c7581507dd895a52cd13798878736b6540ea2d92f01fa514"
+      },
+      "validate": {
+        "valid": true,
+        "blockers": [],
+        "warnings": [
+          "component-usage.json has not been generated for this article yet."
+        ]
+      },
+      "ui_block_edit_validation": {
+        "valid": true,
+        "blockers": [],
+        "warnings": [],
+        "edit_count": 0
+      },
+      "source_count": 6,
+      "checked_sources": [
+        {
+          "source_id": "ra-7160-local-government-code-b087",
+          "label": "RA 7160 - Local Government Code",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7160/RA 7160 The Local Government Code.pdf",
+          "raw_pdf_sha256": "sha256:e270e8bc7bd84ba8ad7b6fe6780c12a3e5a6103e2b9395db13084266a5ff1fff",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7160/RA 7160 The Local Government Code.md",
+          "refined_markdown_sha256": "sha256:9f95493bd12c7f4b0989913d7e8783cdbc6235891fea9977c2aa77238c3dd392",
+          "checked_locator": "RA 7160 refined markdown lines 155-162"
+        },
+        {
+          "source_id": "ra-7279-urban-development-housing-act-b087",
+          "label": "RA 7279 - Urban Development and Housing Act",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7279/RA 7279 Urban Development and Housing Act 2009.pdf",
+          "raw_pdf_sha256": "sha256:23efa9c0278519d79ed424d9ced016b24619ebb42a19e75a05dc9bb8bf1c4696",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-7279/RA 7279 Urban Development and Housing Act 2009.md",
+          "refined_markdown_sha256": "sha256:f52859fb18fec28c403348851c3e53caca2e678cb9cec43fbca28d8d5c3a323e",
+          "checked_locator": "RA 7279 refined markdown lines 11-35, 111-147, 179-185, and 217-231; raw PDF hash checked locally."
+        },
+        {
+          "source_id": "rps-2008-b087",
+          "label": "RPS 2008 - Rationalizing the Local Planning System",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/RPS (2008).pdf",
+          "raw_pdf_sha256": "sha256:1331576aa80a6e5ab2d4079aa091e7294b7574c3c91b41a499e02cd1f8df91a3",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/RPS (2008).md",
+          "refined_markdown_sha256": "sha256:a86183e25f99faee458dfbb5bdb6045b98e309abe56e3d9fc4b65aee43312c96",
+          "checked_locator": "RPS 2008 refined markdown lines 75-85, 125-129, 435-449, 837-839, 1201-1304, and 1338-1350; raw PDF hash checked locally."
+        },
+        {
+          "source_id": "local-shelter-planning-manual-b087",
+          "label": "Local Shelter Planning Manual 2016",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Local-Shelter-Planning-Manual-2016-Web-Edition.pdf",
+          "raw_pdf_sha256": "sha256:c8dd5e9492a17cdd4c2fb05d21564eee75b8def86e9f8bb8052b71adf15edcec",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Local-Shelter-Planning-Manual-2016-Web-Edition.md",
+          "refined_markdown_sha256": "sha256:e94d42b03c750a104eb24daaf60e3f616c55c301af6d4be9b7aede5f1004794b",
+          "checked_locator": "Local Shelter Planning Manual refined markdown lines 240-252, 334-382, and 426-472; raw PDF hash checked locally."
+        },
+        {
+          "source_id": "resilient-urban-design-guidelines-b087",
+          "label": "DHSUD Resilient Urban Design and Development Guidelines",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf",
+          "raw_pdf_sha256": "sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.md",
+          "refined_markdown_sha256": "sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7",
+          "checked_locator": "Resilient Urban Design Guidelines refined markdown lines 41-66, 301-309, 389-392, 556-572, 595-621, and 661-678; raw PDF hash checked locally."
+        },
+        {
+          "source_id": "hlurb-clup-guidebook-vol1-b087",
+          "label": "HLURB CLUP Guidebook Vol. 1",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/HLURB_CLUP_Guidebook_Vol_1_11042015.pdf",
+          "raw_pdf_sha256": "sha256:5b8e141fa204a4fc8ce74a0c165c55bd8c166691b0ccc393f24f61db57690c6f",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/HLURB_CLUP_Guidebook_Vol_1_11042015.md",
+          "refined_markdown_sha256": "sha256:26067221888dd0b950bf65719ba7ce8308694b7d799dca6f8f238ad7d7f49025",
+          "checked_locator": "HLURB CLUP Guidebook Vol. 1 refined markdown lines 497-551, 665-715, 731-741, 1103-1119, 1541-1558, 3371, 3845, 4633, 6011, and 7310-8159; raw PDF hash checked locally."
+        }
+      ],
+      "evidence_claim_count": 12,
+      "source_hash_check_count": 12,
+      "scenario_enrichment_status": "eligible-added",
+      "source_summary": "RA 7160, RA 7279, RPS 2008, Local Shelter Planning Manual 2016, Resilient Urban Design and Development Guidelines, and HLURB CLUP Guidebook Vol. 1 raw PDFs checked first; constraint claims were narrowed to local CLUP, zoning, housing, danger-area, and service-planning evidence.",
+      "scenario_summary": "eligible-added: informal-settlement/floodplain scenario.",
+      "unresolved_blockers": []
+    },
+    {
+      "ordinal": 5,
+      "article_id": "f6b1d119-9ba2-436b-ba39-d62abceef5ed",
+      "slug": "lea-plan-005-04-core-concept",
+      "title": "Hazard-informed site planning and resilient CLUP design",
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed",
+      "normalized_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/normalized.md",
+      "candidate_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/candidate.md",
+      "sources_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/sources.json",
+      "source_audit_evidence_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/source-audit-evidence.json",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits",
+      "question_edit_file_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits/169a96c8-f01e-4a00-97a8-a96b96536e76.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits/23941221-20b3-4b03-9157-d5687638db39.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits/2ba52cd1-9352-421d-ac3b-29f513929e57.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits/412a5c9d-4442-42d8-a7f8-587c5355e54b.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits/54ee072d-60aa-4363-b2d0-4928d0a7f1fa.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits/5cd1180c-4cb6-4fb5-963b-cf28f9fc2149.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits/80463191-02dc-4b84-85b2-8267207f0719.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits/972bdb07-0df4-4a39-b97d-29db3dcbe46d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits/b07093ca-4877-4435-8004-9bfcd8a5c321.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits/c51a6f2b-6cc0-405a-901d-1a6f66633826.json"
+      ],
+      "linked_questions_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/linked-questions.json",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "expected_question_edit_count": 10,
+      "normalized_sha256": "sha256:03a3feacd780ae855857fac4fb9a7447744eea9565aed58a5819ed32657985f9",
+      "candidate_sha256": "sha256:03a3feacd780ae855857fac4fb9a7447744eea9565aed58a5819ed32657985f9",
+      "original_sha256": "sha256:ab9cac8a1367ccdfb42b60637711716d796741b92d655f40f1f1728754b57a46",
+      "compose": {
+        "safe_to_diff": true,
+        "blockers": [],
+        "unresolved_placeholders": [],
+        "candidate_hash": "sha256:03a3feacd780ae855857fac4fb9a7447744eea9565aed58a5819ed32657985f9"
+      },
+      "diff": {
+        "safe_to_push": true,
+        "blockers": [],
+        "unresolved_placeholders_count": 0,
+        "candidate_hash": "sha256:03a3feacd780ae855857fac4fb9a7447744eea9565aed58a5819ed32657985f9"
+      },
+      "validate": {
+        "valid": true,
+        "blockers": [],
+        "warnings": [
+          "component-usage.json has not been generated for this article yet."
+        ]
+      },
+      "ui_block_edit_validation": {
+        "valid": true,
+        "blockers": [],
+        "warnings": [],
+        "edit_count": 0
+      },
+      "source_count": 5,
+      "checked_sources": [
+        {
+          "source_id": "hlurb-clup-vol2-b087",
+          "label": "HLURB CLUP Volume 2",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/HLURB_CLUP_Vol_2.pdf",
+          "raw_pdf_sha256": "sha256:0da4f5c9abbab99eeae05a870c9bbce549ef2e7c36aa3d433d05821736b713bc",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/HLURB_CLUP_Vol_2.md",
+          "refined_markdown_sha256": "sha256:7f71db9d9b919381ebf71b3641e21c40f7f0fc6e43f4e845a18bd4084173c0fa",
+          "checked_locator": "HLURB CLUP Volume 2 refined markdown lines 39, 630-754, 1038-1152, 1244, 1457-1488, 1581-1682, 1712-1804, and 8116-8159; raw PDF hash checked locally."
+        },
+        {
+          "source_id": "resilient-urban-design-guidelines-b087",
+          "label": "DHSUD Resilient Urban Design and Development Guidelines",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf",
+          "raw_pdf_sha256": "sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.md",
+          "refined_markdown_sha256": "sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7",
+          "checked_locator": "Resilient Urban Design Guidelines refined markdown lines 41-66, 301-309, 389-392, 556-572, 595-621, and 661-678; raw PDF hash checked locally."
+        },
+        {
+          "source_id": "local-shelter-planning-manual-b087",
+          "label": "Local Shelter Planning Manual 2016",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Local-Shelter-Planning-Manual-2016-Web-Edition.pdf",
+          "raw_pdf_sha256": "sha256:c8dd5e9492a17cdd4c2fb05d21564eee75b8def86e9f8bb8052b71adf15edcec",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Local-Shelter-Planning-Manual-2016-Web-Edition.md",
+          "refined_markdown_sha256": "sha256:e94d42b03c750a104eb24daaf60e3f616c55c301af6d4be9b7aede5f1004794b",
+          "checked_locator": "Local Shelter Planning Manual refined markdown lines 240-252, 334-382, and 426-472; raw PDF hash checked locally."
+        },
+        {
+          "source_id": "deped-drrr-manual-b087",
+          "label": "DepEd Disaster Risk Reduction Resource Manual Philippines",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DEPED/DepEd DRRR Manual Philippines.pdf",
+          "raw_pdf_sha256": "sha256:bb43a0a4166b461b50f393892a7bf1eb398b3d33e9151e38bf16983c8f42c904",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DEPED/DepEd DRRR Manual Philippines.md",
+          "refined_markdown_sha256": "sha256:3516787141cd216a82777cdba012b4788222cee883642cad7c612b0527f0faf0",
+          "checked_locator": "DepEd DRRR Manual refined markdown lines 91-93, 166-178, 202-232, 264-290; raw PDF hash checked locally."
+        },
+        {
+          "source_id": "rps-2008-b087",
+          "label": "RPS 2008 - Rationalizing the Local Planning System",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/RPS (2008).pdf",
+          "raw_pdf_sha256": "sha256:1331576aa80a6e5ab2d4079aa091e7294b7574c3c91b41a499e02cd1f8df91a3",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/RPS (2008).md",
+          "refined_markdown_sha256": "sha256:a86183e25f99faee458dfbb5bdb6045b98e309abe56e3d9fc4b65aee43312c96",
+          "checked_locator": "RPS 2008 refined markdown lines 75-85, 125-129, 435-449, 837-839, 1201-1304, and 1338-1350; raw PDF hash checked locally."
+        }
+      ],
+      "evidence_claim_count": 12,
+      "source_hash_check_count": 10,
+      "scenario_enrichment_status": "eligible-added",
+      "source_summary": "HLURB CLUP Volume 2, Resilient Urban Design and Development Guidelines, Local Shelter Planning Manual 2016, DepEd DRRR Manual Philippines, and RPS 2008 raw PDFs checked first; RA 10121/PHIVOLCS-specific claims were narrowed to locally sourced hazard, risk, CLUP, shelter, and DRR planning guidance.",
+      "scenario_summary": "eligible-added: flood-prone housing-site scenario.",
+      "unresolved_blockers": []
+    }
+  ]
+}

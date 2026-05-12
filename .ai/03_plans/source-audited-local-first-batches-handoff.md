@@ -7290,3 +7290,112 @@ Batch 086 scenario enrichment results:
 Batch 086 next-phase note:
 
 - Batch 087 is ready for pre-selection; final scoped `git diff --check` and supplemental trailing-whitespace scan passed with Batch 086 blockers=0.
+
+## Batch 087 Pre-Start Checkpoint
+
+- Updated: 2026-05-12T09:56:00+08:00
+- Batch: 087
+- Manifest: `/Users/philiplewis/slatecamp/.ai/03_plans/production-line-batch-087-manifest.json`
+- Coordination doc: `/Users/philiplewis/slatecamp/.ai/03_plans/source-audited-production-line-coordination.md`
+- Selection rule used: execute exactly the five reserved Batch 087 Planning, Housing & Urban Design article clusters from the fixed manifest; exclude all article IDs already recorded in source-audited Batches 001 through 086 and read Batch 088/089 manifests only for exclusion awareness.
+- Batch 088/089 exclusion awareness read-only IDs: Batch 088 (`d2246ae0-2def-4144-b42d-f56172b13f67`, `b9ae0f63-0d28-4a66-b2bf-51641e6db739`, `f22ba499-94ce-41a3-999a-2d9ffdbc0b57`, `e59c8abc-5938-47ab-8009-97424baa78c7`, `ba36cb75-5bb4-4d12-802c-f5ab921f7949`); Batch 089 (`1262fe88-bb8f-4005-a9e8-0e8d6c03fe64`, `cd893cd9-7427-4093-bc07-edabf41a6cd7`, `fc0f6b12-8d7e-4309-b83c-daba0863ff30`, `4bb1957d-f513-47e1-b253-c7cbc65912b3`, `5d49cedb-dc14-445a-b075-41fe56873081`).
+- Current worker/session state: Batch 087 started locally; article and question-edits repairs pending; no Supabase push, deploy, or commit attempted.
+- Inherited blocker status: Batch 086 blockers=0.
+- Known blocker-resolution-needed notes: urban-model theory labels for `lea-plan-002-01-core-concept` and `lea-plan-002-02-core-concept` must be narrowed to local Philippine planning-guide support unless exact theory raw PDFs are acquired locally; Kevin Lynch-specific claims in `lea-plan-002-05-core-concept` must be narrowed to local wayfinding/site-planning support unless the primary Lynch raw PDF is acquired locally; RA 10121/PHIVOLCS-specific claims in `lea-plan-005-04-core-concept` must be narrowed to local DRR/resilience planning manuals unless exact raw sources are acquired locally.
+- Expected linked questions: 50.
+- Expected source-safe question edits: 50.
+- Pending validation gates: raw-PDF-first audit, roundtrip protocol, compose/diff/validate, UI-block-edit validation, scoped JSON parse, placeholder/internal-note/source-gap scans, source hash checks, linked-question/question-edit count checks, stale compose-error scan, targeted content-audit tests, scoped `git diff --check`, Batch 087 report, Batch 087 ledger, Batch 087 scoped checks, and this handoff's Batch 087 post-batch completion update.
+
+| # | Article ID | Slug | Article folder | Question-edits folder | Linked questions |
+|---|---|---|---|---|---:|
+| 1 | `50d41d7e-57cd-4280-b850-e6d2f89414a6` | `lea-plan-002-01-core-concept` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits` | 10 |
+| 2 | `4f38604e-70a2-4b6f-9710-b166fe83cbe6` | `lea-plan-002-02-core-concept` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits` | 10 |
+| 3 | `1a6a6df8-8f58-42aa-a38b-e59fe737716f` | `lea-plan-002-05-core-concept` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/question-edits` | 10 |
+| 4 | `dbac0a4a-cff7-4cb1-8e66-dcd6fb224283` | `lea-plan-002-07-core-concept` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/question-edits` | 10 |
+| 5 | `f6b1d119-9ba2-436b-ba39-d62abceef5ed` | `lea-plan-005-04-core-concept` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits` | 10 |
+
+Batch 087 expected local raw/source families:
+
+- HLURB CLUP Guidebook Vol. 1: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/HLURB_CLUP_Guidebook_Vol_1_11042015.pdf`
+- HLURB CLUP Volume 2: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/HLURB_CLUP_Vol_2.pdf`
+- HLURB CLUP GIS Guidebook: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/CLUP GIS GUIDEBOOK HLURB.pdf`
+- RPS 2008: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/RPS (2008).pdf`
+- Reference Tool on Urban Planning and Design for Climate Resilience: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Reference-Tool-on-Urban-Planning-and-Design-for-Climate-Resilience-for-LGUs-Planning-Actors-in-the-Philippines_readable.pdf`
+- Resilient Urban Design and Development Guidelines: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf`
+- RA 7160 Local Government Code: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7160/RA 7160 The Local Government Code.pdf`
+- RA 7279 UDHA: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-7279/RA 7279 Urban Development and Housing Act 2009.pdf`
+- DepEd DRRR Manual Philippines: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/DEPED/DepEd DRRR Manual Philippines.pdf`
+- Missing until acquired locally: RA 10121 Philippine DRRM Act at `vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-10121/RA 10121 Philippine DRRM Act.pdf`; Kevin Lynch / Image of the City primary source at `vitruvius-connection/001_Raw-Source-Layer/002-History/Kevin Lynch - The Image of the City.pdf`.
+
+Batch 087 unresolved blockers at this checkpoint: inherited=0; source-family risks are known and must be resolved by local acquisition, source-safe narrowing, or explicit unresolved blocker recording before final status.
+
+## Batch 087 Post-Batch Completion Checkpoint
+
+- Updated: 2026-05-12T11:05:00+08:00
+- Batch: 087
+- Status: `PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW`
+- Local-only constraints: Supabase push not attempted; deploy not attempted; commit not attempted.
+- Fixed manifest used: `/Users/philiplewis/slatecamp/.ai/03_plans/production-line-batch-087-manifest.json`.
+- Coordination doc read: `/Users/philiplewis/slatecamp/.ai/03_plans/source-audited-production-line-coordination.md`.
+- Inherited blocker status: Batch 086 blockers=0.
+- Unresolved blockers: 0.
+- Next batch readiness: Batch 088 may begin in a separate run because Batch 087 blockers=0; this run did not start Batch 088.
+
+Batch 087 completed article clusters:
+
+| Article ID | Slug | Exact article folder path | Exact improved paths | Exact question-edits path | Scenario status |
+| --- | --- | --- | --- | --- | --- |
+| `50d41d7e-57cd-4280-b850-e6d2f89414a6` | `lea-plan-002-01-core-concept` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/normalized.md`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/candidate.md`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/sources.json`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/source-audit-evidence.json` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits` | `eligible-added` |
+| `4f38604e-70a2-4b6f-9710-b166fe83cbe6` | `lea-plan-002-02-core-concept` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/normalized.md`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/candidate.md`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/sources.json`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/source-audit-evidence.json` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits` | `eligible-added` |
+| `1a6a6df8-8f58-42aa-a38b-e59fe737716f` | `lea-plan-002-05-core-concept` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/normalized.md`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/candidate.md`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/sources.json`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/source-audit-evidence.json` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/question-edits` | `eligible-added` |
+| `dbac0a4a-cff7-4cb1-8e66-dcd6fb224283` | `lea-plan-002-07-core-concept` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/normalized.md`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/candidate.md`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/sources.json`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/source-audit-evidence.json` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/question-edits` | `eligible-added` |
+| `f6b1d119-9ba2-436b-ba39-d62abceef5ed` | `lea-plan-005-04-core-concept` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/normalized.md`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/candidate.md`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/sources.json`; `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/source-audit-evidence.json` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits` | `eligible-added` |
+
+Batch 087 generated artifacts:
+
+- Report: `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-087-local-first-report.md`
+- Ledger: `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-087-local-first-ledger.json`
+- Scoped checks: `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-087-local-first-scoped-checks.json`
+
+Batch 087 counts:
+
+- Articles completed: 5
+- Linked questions checked: 50
+- Source-safe question edits created: 50
+- Source evidence claims recorded: 60
+- Source hash checks recorded: 44
+- Unique local raw source families checked: 11
+- Scoped article JSON files parsed: 105
+- Real World Scenario sections added: 5
+
+Batch 087 raw PDF/source evidence:
+
+- lea-plan-002-01-core-concept: RPS 2008, HLURB CLUP Guidebook Vol. 1, and HLURB CLUP GIS Guidebook raw PDFs checked first; unverified imported urban-model theory claims were narrowed to Philippine CLUP urban-structure application.
+- lea-plan-002-02-core-concept: Guidelines on New Towns and PUD, Open Space Development Guidelines, Resilient Urban Design and Development Guidelines, and HLURB CLUP Guidebook Vol. 1 raw PDFs checked first; broad contemporary planning claims were narrowed to source-backed local settlement and open-space planning.
+- lea-plan-002-05-core-concept: HLURB CLUP GIS Guidebook, RPS 2008, Open Space Development Guidelines, and Resilient Urban Design and Development Guidelines raw PDFs checked first; Kevin Lynch-specific claims were narrowed to locally sourced wayfinding, public realm, GIS, and resilient-design controls.
+- lea-plan-002-07-core-concept: RA 7160, RA 7279, RPS 2008, Local Shelter Planning Manual 2016, Resilient Urban Design and Development Guidelines, and HLURB CLUP Guidebook Vol. 1 raw PDFs checked first; constraint claims were narrowed to local CLUP, zoning, housing, danger-area, and service-planning evidence.
+- lea-plan-005-04-core-concept: HLURB CLUP Volume 2, Resilient Urban Design and Development Guidelines, Local Shelter Planning Manual 2016, DepEd DRRR Manual Philippines, and RPS 2008 raw PDFs checked first; RA 10121/PHIVOLCS-specific claims were narrowed to locally sourced hazard, risk, CLUP, shelter, and DRR planning guidance.
+- Local export repair: metadata, ui-blocks, and sync-state original hashes were reconciled to current local original.md hashes before final diff validation for these five Batch 087 folders only.
+
+Batch 087 quality protocol results:
+
+- `bun run content-audit:compose -- --article-id <id> --overwrite`: PASS, 5/5 composed, blockers=0.
+- `bun run content-audit:diff -- --article-id <id> --summary`: PASS, 5/5 safe_to_push=true, blockers=0.
+- `bun run content-audit:validate -- --article-id <id> --summary`: PASS, 5/5 valid, blockers=0; component-usage warning only.
+- `bun run content-audit:ui-block-edits -- --article-id <id>`: PASS, 5/5 valid, blockers=0, warnings=0.
+- Scoped JSON parse, marker/source-gap scan, source hash checks, linked-question/question-edit count checks, and stale compose-error scan: PASS in scoped checks artifact.
+- `bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts`: PASS, 34 pass, 0 fail, 328 expect calls.
+- Final scoped `git diff --check`: PASS after this handoff update.
+
+Batch 087 scenario enrichment results:
+
+- `eligible-added`: 5
+- `eligible-deferred`: 0
+- `not-applicable`: 0
+- Scenario sections were added only where supported by the local raw law/planning sources selected for the cluster.
+
+Batch 087 final state:
+
+- Status: `PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW`
+- Blockers: 0
+- Stop condition: Batch 087 complete; do not start Batch 088 in this run.

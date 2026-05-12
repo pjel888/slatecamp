@@ -1,0 +1,284 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-087-local-first",
+  "batch_number": 87,
+  "generated_at": "2026-05-12T10:55:00.000+08:00",
+  "audit_mode": "local_first_raw_source_primary",
+  "article_id": "50d41d7e-57cd-4280-b850-e6d2f89414a6",
+  "slug": "lea-plan-002-01-core-concept",
+  "title": "Urban structure in Philippine CLUP analysis",
+  "article_folder": ".ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6",
+  "overall_status": "PASS",
+  "blocker_count": 0,
+  "source_policy": {
+    "primary_truth": "vitruvius-connection/001_Raw-Source-Layer local raw PDFs",
+    "supplemental_internet_used": false,
+    "source_safe_narrowing_applied": true,
+    "unresolved_source_blockers": []
+  },
+  "scenario_enrichment": {
+    "status": "eligible-added",
+    "real_world_scenario_present": true,
+    "reason": "Added source-safe arterial-road corridor CLUP scenario using structure/concept plan, map overlay, zoning ordinance, infill, expansion, and hazard/service checks."
+  },
+  "article_hashes": {
+    "original_content_hash": "sha256:79405fd91113d09242c269f02d2a4b735d0104df27144f794155c216dfd800df",
+    "normalized_content_hash": "sha256:528766a4e91126aea34d583c60faf1608111dc75f3f3b80b3b79e9a9f59b2d2c",
+    "candidate_content_hash": "sha256:528766a4e91126aea34d583c60faf1608111dc75f3f3b80b3b79e9a9f59b2d2c",
+    "sources_hash": "sha256:c838ef31b75aeba06e3a4273eec6d1defc2348b26191289ebedebd02ccb5dfd0"
+  },
+  "checked_sources": [
+    {
+      "source_id": "rps-2008-b087",
+      "label": "RPS 2008 - Rationalizing the Local Planning System",
+      "source_type": "primary_planning_standard_pdf",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/RPS (2008).pdf",
+      "raw_pdf_sha256": "sha256:1331576aa80a6e5ab2d4079aa091e7294b7574c3c91b41a499e02cd1f8df91a3",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/RPS (2008).md",
+      "refined_markdown_sha256": "sha256:a86183e25f99faee458dfbb5bdb6045b98e309abe56e3d9fc4b65aee43312c96",
+      "checked_locator": "RPS 2008 refined markdown lines 75-85, 125-129, 435-449, 837-839, 1201-1304, and 1338-1350; raw PDF hash checked locally.",
+      "primary_evidence_status": "local_raw_pdf_hash_checked_with_refined_markdown_locator"
+    },
+    {
+      "source_id": "hlurb-clup-guidebook-vol1-b087",
+      "label": "HLURB CLUP Guidebook Vol. 1",
+      "source_type": "primary_planning_guide_pdf",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/HLURB_CLUP_Guidebook_Vol_1_11042015.pdf",
+      "raw_pdf_sha256": "sha256:5b8e141fa204a4fc8ce74a0c165c55bd8c166691b0ccc393f24f61db57690c6f",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/HLURB_CLUP_Guidebook_Vol_1_11042015.md",
+      "refined_markdown_sha256": "sha256:26067221888dd0b950bf65719ba7ce8308694b7d799dca6f8f238ad7d7f49025",
+      "checked_locator": "HLURB CLUP Guidebook Vol. 1 refined markdown lines 497-551, 665-715, 731-741, 1103-1119, 1541-1558, 3371, 3845, 4633, 6011, and 7310-8159; raw PDF hash checked locally.",
+      "primary_evidence_status": "local_raw_pdf_hash_checked_with_refined_markdown_locator"
+    },
+    {
+      "source_id": "clup-gis-guidebook-b087",
+      "label": "HLURB CLUP GIS Guidebook",
+      "source_type": "primary_planning_guide_pdf",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/CLUP GIS GUIDEBOOK HLURB.pdf",
+      "raw_pdf_sha256": "sha256:761d92030e97ea4ee4604de76df6dce49334f35b03e6bb411617f6943f8f788f",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/CLUP GIS GUIDEBOOK HLURB.md",
+      "refined_markdown_sha256": "sha256:885dfbb2b28b045cc8d395fc7278f52d429973bd1d9006e7b8f1f7238ed10c06",
+      "checked_locator": "CLUP GIS Guidebook refined markdown lines 1537-1572, 1944-1964, 2092-2098, 4981-5047, 4681-4735, and 5299-5369; raw PDF hash checked locally.",
+      "primary_evidence_status": "local_raw_pdf_hash_checked_with_refined_markdown_locator"
+    }
+  ],
+  "source_hash_check_count": 6,
+  "linked_question_count": 10,
+  "question_edit_count": 10,
+  "evidence_claim_count": 12,
+  "claims": [
+    {
+      "claim_id": "50d41d7e-57cd-4280-b850-e6d2f89414a6:article-rewrite",
+      "claim_type": "article_content",
+      "status": "source_supported",
+      "summary": "Urban structure in Philippine CLUP analysis was narrowed to locally checked Batch 087 source evidence for philippine_clup_urban_structure.",
+      "evidence_basis": [
+        "RPS 2008 refined markdown lines 75-85, 125-129, 435-449, 837-839, 1201-1304, and 1338-1350; raw PDF hash checked locally.",
+        "HLURB CLUP Guidebook Vol. 1 refined markdown lines 497-551, 665-715, 731-741, 1103-1119, 1541-1558, 3371, 3845, 4633, 6011, and 7310-8159; raw PDF hash checked locally.",
+        "CLUP GIS Guidebook refined markdown lines 1537-1572, 1944-1964, 2092-2098, 4981-5047, 4681-4735, and 5299-5369; raw PDF hash checked locally."
+      ],
+      "checked_sources": [
+        "rps-2008-b087",
+        "hlurb-clup-guidebook-vol1-b087",
+        "clup-gis-guidebook-b087"
+      ]
+    },
+    {
+      "claim_id": "50d41d7e-57cd-4280-b850-e6d2f89414a6:real-world-scenario",
+      "claim_type": "scenario_enrichment",
+      "status": "eligible-added_source_safe",
+      "summary": "Added source-safe arterial-road corridor CLUP scenario using structure/concept plan, map overlay, zoning ordinance, infill, expansion, and hazard/service checks.",
+      "evidence_basis": [
+        "RPS 2008 refined markdown lines 75-85, 125-129, 435-449, 837-839, 1201-1304, and 1338-1350; raw PDF hash checked locally.",
+        "HLURB CLUP Guidebook Vol. 1 refined markdown lines 497-551, 665-715, 731-741, 1103-1119, 1541-1558, 3371, 3845, 4633, 6011, and 7310-8159; raw PDF hash checked locally.",
+        "CLUP GIS Guidebook refined markdown lines 1537-1572, 1944-1964, 2092-2098, 4981-5047, 4681-4735, and 5299-5369; raw PDF hash checked locally."
+      ],
+      "checked_sources": [
+        "rps-2008-b087",
+        "hlurb-clup-guidebook-vol1-b087",
+        "clup-gis-guidebook-b087"
+      ]
+    },
+    {
+      "claim_id": "0c5fb6b9-1a92-424d-99eb-e98798457031:question-edit",
+      "claim_type": "linked_question_edit",
+      "status": "source_safe_rewrite",
+      "question_id": "0c5fb6b9-1a92-424d-99eb-e98798457031",
+      "question_edit_path": ".ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits/0c5fb6b9-1a92-424d-99eb-e98798457031.json",
+      "summary": "Question 0c5fb6b9-1a92-424d-99eb-e98798457031 rewritten to the Batch 087 local-source scope; answer key fields changed=true.",
+      "evidence_basis": [
+        "RPS 2008 refined markdown lines 75-85, 125-129, 435-449, 837-839, 1201-1304, and 1338-1350; raw PDF hash checked locally.",
+        "HLURB CLUP Guidebook Vol. 1 refined markdown lines 497-551, 665-715, 731-741, 1103-1119, 1541-1558, 3371, 3845, 4633, 6011, and 7310-8159; raw PDF hash checked locally.",
+        "CLUP GIS Guidebook refined markdown lines 1537-1572, 1944-1964, 2092-2098, 4981-5047, 4681-4735, and 5299-5369; raw PDF hash checked locally."
+      ],
+      "checked_sources": [
+        "rps-2008-b087",
+        "hlurb-clup-guidebook-vol1-b087",
+        "clup-gis-guidebook-b087"
+      ]
+    },
+    {
+      "claim_id": "474a92bc-e098-45ad-b16e-4b310890bead:question-edit",
+      "claim_type": "linked_question_edit",
+      "status": "source_safe_rewrite",
+      "question_id": "474a92bc-e098-45ad-b16e-4b310890bead",
+      "question_edit_path": ".ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits/474a92bc-e098-45ad-b16e-4b310890bead.json",
+      "summary": "Question 474a92bc-e098-45ad-b16e-4b310890bead rewritten to the Batch 087 local-source scope; answer key fields changed=true.",
+      "evidence_basis": [
+        "RPS 2008 refined markdown lines 75-85, 125-129, 435-449, 837-839, 1201-1304, and 1338-1350; raw PDF hash checked locally.",
+        "HLURB CLUP Guidebook Vol. 1 refined markdown lines 497-551, 665-715, 731-741, 1103-1119, 1541-1558, 3371, 3845, 4633, 6011, and 7310-8159; raw PDF hash checked locally.",
+        "CLUP GIS Guidebook refined markdown lines 1537-1572, 1944-1964, 2092-2098, 4981-5047, 4681-4735, and 5299-5369; raw PDF hash checked locally."
+      ],
+      "checked_sources": [
+        "rps-2008-b087",
+        "hlurb-clup-guidebook-vol1-b087",
+        "clup-gis-guidebook-b087"
+      ]
+    },
+    {
+      "claim_id": "4ee128a4-3218-4dea-b45d-fca4f6f777fe:question-edit",
+      "claim_type": "linked_question_edit",
+      "status": "source_safe_rewrite",
+      "question_id": "4ee128a4-3218-4dea-b45d-fca4f6f777fe",
+      "question_edit_path": ".ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits/4ee128a4-3218-4dea-b45d-fca4f6f777fe.json",
+      "summary": "Question 4ee128a4-3218-4dea-b45d-fca4f6f777fe rewritten to the Batch 087 local-source scope; answer key fields changed=true.",
+      "evidence_basis": [
+        "RPS 2008 refined markdown lines 75-85, 125-129, 435-449, 837-839, 1201-1304, and 1338-1350; raw PDF hash checked locally.",
+        "HLURB CLUP Guidebook Vol. 1 refined markdown lines 497-551, 665-715, 731-741, 1103-1119, 1541-1558, 3371, 3845, 4633, 6011, and 7310-8159; raw PDF hash checked locally.",
+        "CLUP GIS Guidebook refined markdown lines 1537-1572, 1944-1964, 2092-2098, 4981-5047, 4681-4735, and 5299-5369; raw PDF hash checked locally."
+      ],
+      "checked_sources": [
+        "rps-2008-b087",
+        "hlurb-clup-guidebook-vol1-b087",
+        "clup-gis-guidebook-b087"
+      ]
+    },
+    {
+      "claim_id": "796c1c03-ed56-4ffe-b024-7d8948e0ddb9:question-edit",
+      "claim_type": "linked_question_edit",
+      "status": "source_safe_rewrite",
+      "question_id": "796c1c03-ed56-4ffe-b024-7d8948e0ddb9",
+      "question_edit_path": ".ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits/796c1c03-ed56-4ffe-b024-7d8948e0ddb9.json",
+      "summary": "Question 796c1c03-ed56-4ffe-b024-7d8948e0ddb9 rewritten to the Batch 087 local-source scope; answer key fields changed=true.",
+      "evidence_basis": [
+        "RPS 2008 refined markdown lines 75-85, 125-129, 435-449, 837-839, 1201-1304, and 1338-1350; raw PDF hash checked locally.",
+        "HLURB CLUP Guidebook Vol. 1 refined markdown lines 497-551, 665-715, 731-741, 1103-1119, 1541-1558, 3371, 3845, 4633, 6011, and 7310-8159; raw PDF hash checked locally.",
+        "CLUP GIS Guidebook refined markdown lines 1537-1572, 1944-1964, 2092-2098, 4981-5047, 4681-4735, and 5299-5369; raw PDF hash checked locally."
+      ],
+      "checked_sources": [
+        "rps-2008-b087",
+        "hlurb-clup-guidebook-vol1-b087",
+        "clup-gis-guidebook-b087"
+      ]
+    },
+    {
+      "claim_id": "819e5bda-4246-4c13-9a76-7acd0f8648d8:question-edit",
+      "claim_type": "linked_question_edit",
+      "status": "source_safe_rewrite",
+      "question_id": "819e5bda-4246-4c13-9a76-7acd0f8648d8",
+      "question_edit_path": ".ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits/819e5bda-4246-4c13-9a76-7acd0f8648d8.json",
+      "summary": "Question 819e5bda-4246-4c13-9a76-7acd0f8648d8 rewritten to the Batch 087 local-source scope; answer key fields changed=true.",
+      "evidence_basis": [
+        "RPS 2008 refined markdown lines 75-85, 125-129, 435-449, 837-839, 1201-1304, and 1338-1350; raw PDF hash checked locally.",
+        "HLURB CLUP Guidebook Vol. 1 refined markdown lines 497-551, 665-715, 731-741, 1103-1119, 1541-1558, 3371, 3845, 4633, 6011, and 7310-8159; raw PDF hash checked locally.",
+        "CLUP GIS Guidebook refined markdown lines 1537-1572, 1944-1964, 2092-2098, 4981-5047, 4681-4735, and 5299-5369; raw PDF hash checked locally."
+      ],
+      "checked_sources": [
+        "rps-2008-b087",
+        "hlurb-clup-guidebook-vol1-b087",
+        "clup-gis-guidebook-b087"
+      ]
+    },
+    {
+      "claim_id": "c75eab96-0b69-44cc-9f3d-43fcb3449239:question-edit",
+      "claim_type": "linked_question_edit",
+      "status": "source_safe_rewrite",
+      "question_id": "c75eab96-0b69-44cc-9f3d-43fcb3449239",
+      "question_edit_path": ".ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits/c75eab96-0b69-44cc-9f3d-43fcb3449239.json",
+      "summary": "Question c75eab96-0b69-44cc-9f3d-43fcb3449239 rewritten to the Batch 087 local-source scope; answer key fields changed=true.",
+      "evidence_basis": [
+        "RPS 2008 refined markdown lines 75-85, 125-129, 435-449, 837-839, 1201-1304, and 1338-1350; raw PDF hash checked locally.",
+        "HLURB CLUP Guidebook Vol. 1 refined markdown lines 497-551, 665-715, 731-741, 1103-1119, 1541-1558, 3371, 3845, 4633, 6011, and 7310-8159; raw PDF hash checked locally.",
+        "CLUP GIS Guidebook refined markdown lines 1537-1572, 1944-1964, 2092-2098, 4981-5047, 4681-4735, and 5299-5369; raw PDF hash checked locally."
+      ],
+      "checked_sources": [
+        "rps-2008-b087",
+        "hlurb-clup-guidebook-vol1-b087",
+        "clup-gis-guidebook-b087"
+      ]
+    },
+    {
+      "claim_id": "cec9245f-ad6b-48d5-b9c2-472cbccbb0fe:question-edit",
+      "claim_type": "linked_question_edit",
+      "status": "source_safe_rewrite",
+      "question_id": "cec9245f-ad6b-48d5-b9c2-472cbccbb0fe",
+      "question_edit_path": ".ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits/cec9245f-ad6b-48d5-b9c2-472cbccbb0fe.json",
+      "summary": "Question cec9245f-ad6b-48d5-b9c2-472cbccbb0fe rewritten to the Batch 087 local-source scope; answer key fields changed=true.",
+      "evidence_basis": [
+        "RPS 2008 refined markdown lines 75-85, 125-129, 435-449, 837-839, 1201-1304, and 1338-1350; raw PDF hash checked locally.",
+        "HLURB CLUP Guidebook Vol. 1 refined markdown lines 497-551, 665-715, 731-741, 1103-1119, 1541-1558, 3371, 3845, 4633, 6011, and 7310-8159; raw PDF hash checked locally.",
+        "CLUP GIS Guidebook refined markdown lines 1537-1572, 1944-1964, 2092-2098, 4981-5047, 4681-4735, and 5299-5369; raw PDF hash checked locally."
+      ],
+      "checked_sources": [
+        "rps-2008-b087",
+        "hlurb-clup-guidebook-vol1-b087",
+        "clup-gis-guidebook-b087"
+      ]
+    },
+    {
+      "claim_id": "df8adb14-a0eb-40aa-9485-bb8d12578ec3:question-edit",
+      "claim_type": "linked_question_edit",
+      "status": "source_safe_rewrite",
+      "question_id": "df8adb14-a0eb-40aa-9485-bb8d12578ec3",
+      "question_edit_path": ".ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits/df8adb14-a0eb-40aa-9485-bb8d12578ec3.json",
+      "summary": "Question df8adb14-a0eb-40aa-9485-bb8d12578ec3 rewritten to the Batch 087 local-source scope; answer key fields changed=true.",
+      "evidence_basis": [
+        "RPS 2008 refined markdown lines 75-85, 125-129, 435-449, 837-839, 1201-1304, and 1338-1350; raw PDF hash checked locally.",
+        "HLURB CLUP Guidebook Vol. 1 refined markdown lines 497-551, 665-715, 731-741, 1103-1119, 1541-1558, 3371, 3845, 4633, 6011, and 7310-8159; raw PDF hash checked locally.",
+        "CLUP GIS Guidebook refined markdown lines 1537-1572, 1944-1964, 2092-2098, 4981-5047, 4681-4735, and 5299-5369; raw PDF hash checked locally."
+      ],
+      "checked_sources": [
+        "rps-2008-b087",
+        "hlurb-clup-guidebook-vol1-b087",
+        "clup-gis-guidebook-b087"
+      ]
+    },
+    {
+      "claim_id": "e3aeecb6-c72c-4010-9ec4-c77ff7f17422:question-edit",
+      "claim_type": "linked_question_edit",
+      "status": "source_safe_rewrite",
+      "question_id": "e3aeecb6-c72c-4010-9ec4-c77ff7f17422",
+      "question_edit_path": ".ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits/e3aeecb6-c72c-4010-9ec4-c77ff7f17422.json",
+      "summary": "Question e3aeecb6-c72c-4010-9ec4-c77ff7f17422 rewritten to the Batch 087 local-source scope; answer key fields changed=true.",
+      "evidence_basis": [
+        "RPS 2008 refined markdown lines 75-85, 125-129, 435-449, 837-839, 1201-1304, and 1338-1350; raw PDF hash checked locally.",
+        "HLURB CLUP Guidebook Vol. 1 refined markdown lines 497-551, 665-715, 731-741, 1103-1119, 1541-1558, 3371, 3845, 4633, 6011, and 7310-8159; raw PDF hash checked locally.",
+        "CLUP GIS Guidebook refined markdown lines 1537-1572, 1944-1964, 2092-2098, 4981-5047, 4681-4735, and 5299-5369; raw PDF hash checked locally."
+      ],
+      "checked_sources": [
+        "rps-2008-b087",
+        "hlurb-clup-guidebook-vol1-b087",
+        "clup-gis-guidebook-b087"
+      ]
+    },
+    {
+      "claim_id": "f25d8b6b-7719-4e66-88b7-f61ba7ef6547:question-edit",
+      "claim_type": "linked_question_edit",
+      "status": "source_safe_rewrite",
+      "question_id": "f25d8b6b-7719-4e66-88b7-f61ba7ef6547",
+      "question_edit_path": ".ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits/f25d8b6b-7719-4e66-88b7-f61ba7ef6547.json",
+      "summary": "Question f25d8b6b-7719-4e66-88b7-f61ba7ef6547 rewritten to the Batch 087 local-source scope; answer key fields changed=true.",
+      "evidence_basis": [
+        "RPS 2008 refined markdown lines 75-85, 125-129, 435-449, 837-839, 1201-1304, and 1338-1350; raw PDF hash checked locally.",
+        "HLURB CLUP Guidebook Vol. 1 refined markdown lines 497-551, 665-715, 731-741, 1103-1119, 1541-1558, 3371, 3845, 4633, 6011, and 7310-8159; raw PDF hash checked locally.",
+        "CLUP GIS Guidebook refined markdown lines 1537-1572, 1944-1964, 2092-2098, 4981-5047, 4681-4735, and 5299-5369; raw PDF hash checked locally."
+      ],
+      "checked_sources": [
+        "rps-2008-b087",
+        "hlurb-clup-guidebook-vol1-b087",
+        "clup-gis-guidebook-b087"
+      ]
+    }
+  ],
+  "unresolved_blockers": []
+}

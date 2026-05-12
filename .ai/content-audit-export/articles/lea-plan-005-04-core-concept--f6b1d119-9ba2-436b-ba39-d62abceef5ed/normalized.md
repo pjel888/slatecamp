@@ -1,68 +1,61 @@
-
-
 ## Board Exam Quick Check
 
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+When a site-planning question describes flood, landslide, earthquake, storm surge, evacuation, or climate exposure, identify the hazard evidence first. Then choose the planning response that reduces exposure, vulnerability, or damage through land-use control, site planning, urban design, or relocation.
 
-**Common mistake:** treating a familiar keyword in **Lea Plan 005 04 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+**Common mistake:** quoting a setback or no-build number without the exact controlling source. In this local-first batch, use the source-safe rule: obtain hazard maps and risk assessments, direct development away from high-risk areas where possible, and use resilient design where development remains allowed.
 
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
+**Retrieval prompt:** What hazard, exposure, vulnerability, and land-use control are shown by the local evidence?
+
 ## What You Need to Know for the LEA
 
-## Learning Goal
-Apply RA 10121 DRRM mainstreaming to site planning and CLUPs, conduct hazard mapping (flood, landslide, seismic, tsunami), assess site vulnerability, and integrate resilience measures and climate adaptation into development design.
+HLURB CLUP Volume 2 states that climate change adaptation and disaster risk reduction need to become integral to the CLUP process so cities and municipalities can grow safely and sustainably. It defines risk assessment as identifying hazards, elements at risk, potential damages and losses, and risk levels. It also directs planners to use hazard maps to determine the location and extent of susceptible areas and to establish restrictions on future land use and development.
 
-Disaster Risk Reduction and Management (DRRM) must be mainstreamed into site planning and municipal CLUPs per RA 10121. This means identifying site-level hazards (flood, landslide, seismic, tsunami), assessing vulnerability, and integrating resilience measures into development design and land use policy. Climate change compounds these risks.
+## Learning Goal
+
+Apply hazard and resilience evidence to site planning, CLUP spatial strategy, zoning, public realm, drainage, and shelter decisions.
 
 ## Core Concept
 
-RA 10121 (Philippine Disaster Risk Reduction and Management Act, 2010) mandates that disaster risk reduction be integrated into all planning and development. At the site level, this requires hazard mapping (which hazards threaten the site?), vulnerability assessment (who and what is at risk?), and resilience design (what mitigations reduce risk?).
+Hazard-informed planning is a sequence. First, identify and characterize hazards. Second, analyze exposure and vulnerability. Third, estimate risk by area. Fourth, use the results to shape spatial strategy, land-use policy, zoning, site planning, and building or public-realm design.
 
-Key site-level hazards in the Philippines include: typhoons and storm surge, flooding (fluvial and pluvial), landslides, earthquakes, and volcanic eruptions. Post-Typhoon Yolanda (2013), coastal zoning restrictions were implemented in affected provinces. Verify the specific setback distance and legal basis (e.g., DHSUD memorandum, local ordinances) as RA 10121 does not specify a uniform 40-meter no-build zone in its text. PHIVOLCS provides fault maps. Verify the legal source and exact setback requirement for structures near active faults (e.g., PHIVOLCS guidelines, PD 1096, or NSCP 2015) as this is not specified in RA 10121. Flood zone maps identify riverine and coastal flood risks; slope maps identify landslide risk. Rainwater infiltration and groundwater conditions affect both flood and subsidence risk.
+For land-use decisions, CLUP Volume 2 is explicit: the goal of integrating climate and disaster risk into the CLUP is to regulate and control physical development so casualties and damage are reduced. Policies and spatial strategies should prevent future development in highly susceptible areas where possible, encourage risk mitigation through urban design and site planning where development remains viable, and prevent new development from creating added risk.
 
-RA 10121 creates the NDRRMC (National Disaster Risk Reduction and Management Council) and mandates LGU DRRM offices and DRRM funds (not less than 5% of estimated revenue per RA 10121). CLUPs must be updated to integrate DRRM. Site design must incorporate: disaster-resilient building standards, safe evacuation routes, emergency shelter locations, retention basins and green infrastructure for flood resilience, and hazard-informed land use zoning.
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="unknown"]
-Extracted summary:
-- Props: id="media-lea-plan-005-04-core-concept", type="image", caption="Disaster Risk Assessment — Hazard Mapping and Vulnerability Analysis", description=true, Multi-hazard=true, site=true, map=true, showing=true, flood=true, hazard=true, zones=true, year=true
-- Text: 30°), seismic fault lines, tsunami inundation zones, and storm surge risk areas. RA 10121 DRRM mainstreaming into CLUP with resilience measures and climate adaptation." suggestedAsset="Diagram or reference image" status="placeholder" />
-[/SLATECAMP_UI_BLOCK]
+Resilient urban design translates this into physical form. DHSUD's resilient design guidance supports compact, mixed-use, and transit-oriented development through CLUP and zoning; it also uses public realm, evacuation corridors, safe zones, nature-based solutions, water-sensitive urban design, and sustainable drainage systems. Retention basins, ponds, wetlands, swales, permeable paving, green roofs, and rainwater systems are planning tools, not decoration.
 
 ## Key Provisions
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
-Extracted summary:
-- Props: headers="[", DRRM=true, Component=true, Framework=true, Site=true, Planning=true, Application=true, rows="[[", Hazard=true, Mapping=true, Identify=true, tsunami=true
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+| Hazard-planning term | Source-safe meaning |
+|---|---|
+| Hazard profile or map | Shows location, extent, and severity of hazards affecting the city or site. |
+| Exposure | Identifies people, buildings, services, and assets in harm's way. |
+| Vulnerability | Explains susceptibility and limited coping capacity. |
+| Risk assessment | Combines hazard, exposure, vulnerability, losses, and risk levels. |
+| Spatial strategy | Directs growth, conservation, infrastructure, and settlement away from unacceptable risk. |
+| Resilient design | Uses site planning, public realm, drainage, open space, evacuation, and building design to reduce risk. |
 
 ## Philippine Context
 
-The Philippines is the world's most disaster-prone country (World Bank). Annual GDP loss to disasters: ~1.9%. Typhoons, flooding, and earthquakes are existential planning challenges. The 2013 Typhoon Yolanda (Haiyan) killed 6,300+ people and reset national coastal zoning, creating the 40-meter no-build zone. Metro Manila's subsiding aquifers create compounding flood risk: sea-level rise + land subsidence = increased inundation. Informal settlements in danger areas (estero banks, under power lines, near fault zones) are the most vulnerable population. Mainstreaming DRRM into CLUPs and site design is not optional—it is mandatory per RA 10121 and essential for national resilience.
+A Philippine site can be exposed to several hazards at once: flood, storm surge, landslide, earthquake, volcanic hazard, heat, or sea-level rise. The source-safe planning response is not to guess. Use available hazard and climate information from the proper agencies, validate it locally, and carry the result into the CLUP, zoning ordinance, shelter plan, and site design. If households are in a current or projected danger area, the shelter plan should map them and identify relocation or risk-reduction needs.
 
-## How It's Tested
+## How It Is Tested
 
-**Pattern 1 — Hazard identification:** "A proposed subdivision is located 50 km downwind from an active volcano with active crater activity. What site-level hazard applies?" → Ashfall and lahars; volcanic hazard assessment and evacuation routing required.
+- **Hazard identification:** choose hazard profiling and mapping before design selection.
+- **Risk assessment:** choose the answer that considers hazard, exposure, vulnerability, and potential loss.
+- **Land-use control:** direct development away from high-risk areas where possible.
+- **Site design:** use safe access, evacuation routes, drainage, open space, and resilient public realm where development remains allowed.
+- **Shelter planning:** map households in danger areas and use vulnerability and risk studies to identify suitable resettlement areas.
 
-**Pattern 2 — Coastal resilience:** "A residential development in Tacloban, Eastern Samar (Yolanda-affected province) is proposed 30 meters from mean high tide. What RA 10121 constraint applies?" → Post-Yolanda 40m no-build zone; site is within restricted area.
+## Real World Scenario
 
-**Pattern 3 — Seismic resilience:** "A site is 3 meters from a PHIVOLCS-mapped active fault. What design standard applies?" → 5-meter minimum setback; site violates PHIVOLCS standard; relocation or exceptional engineering required.
+A proposed housing site is close to a river and has poor drainage. The source-safe response is to obtain flood and drainage evidence, overlay the hazard and land-use maps, identify exposed households and infrastructure, and test whether the site is suitable. If development is still allowed, the design should include drainage, retention, safe access, open space, and evacuation routes; if the overlay shows high risk that cannot be mitigated, the CLUP and shelter plan should direct settlement to a safer site.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **DRRM is mainstreamed into CLUPs and site design.** Always ask: What hazards threaten this site? What RA 10121 requirements apply? What design resilience mitigations are needed? Climate change intensifies all hazards.
-[/SLATECAMP_UI_BLOCK]
+## Exam Tip
 
-**Exam Tip:** RA 10121 mandates DRRM integration into CLUPs. Key concepts: hazard (natural event), vulnerability (susceptibility to harm), risk (hazard × vulnerability × exposure), and resilience (ability to recover). Know the definitions.
-
-## Cross-References
-
-See **LEA-PLAN-001-05** (CLUP Process) for DRRM mainstreaming in CLUPs, **LEA-PLAN-005-03** (Environmental Laws) for EIS and hazard assessment, and **LEA-PLAN-008-01** (Climate Resilience) for climate adaptation planning.
+Do not answer hazard questions from memory numbers alone. The safer LEA answer is the sequence: hazard map, exposure and vulnerability, risk assessment, spatial strategy, zoning/site planning, and resilient design.
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\"Treating DRRM as separate from planning rather than mainstreamed; RA 10121 mandates integration into CLUPs and site design\",\"Stating post-Yolanda 40m no-build zone applies to all coastal areas nationally; it applies to designated provinces affected by Yolanda, not all coastlines\",\"Confusing 5-meter PHIVOLCS fault setback with 3-meter PD 1067 water body easement; both are setbacks but apply to different hazards\",\"Assuming climate change is optional to plan for; RA 10121 and CLUP guidelines mandate hazard escalation scenarios\",\"Treating retention basins and green infrastructure as aesthetic amenities rather than essential DRRM infrastructure; they are flood resilience mechanisms per RA 10121\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+- Treating DRR as separate from the CLUP instead of part of land-use and zoning decisions.
+- Choosing a fixed setback or no-build rule without the exact controlling source.
+- Calling retention basins or open spaces amenities when the scenario describes flood mitigation.
+- Ignoring households in danger areas when selecting resettlement or upgrading options.

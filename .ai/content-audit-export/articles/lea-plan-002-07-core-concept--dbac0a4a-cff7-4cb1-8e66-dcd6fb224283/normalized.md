@@ -1,73 +1,61 @@
-
-
 ## Board Exam Quick Check
 
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+For Philippine urban-challenge questions, identify the local constraint first: CLUP/zoning authority, socialized housing need, informal settlement mapping, basic services, risk exposure, infrastructure capacity, or LGU implementation capacity.
 
-**Common mistake:** treating a familiar keyword in **Lea Plan 002 07 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+**Common mistake:** answering with a famous city example or planner name when the source-safe LEA issue is the local planning action. The exam usually wants the CLUP, zoning ordinance, shelter plan, land inventory, service provision, or hazard-sensitive siting response.
 
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
+**Retrieval prompt:** Which local instrument turns the diagnosis into a rule, map, program, or budgeted action?
+
 ## What You Need to Know for the LEA
 
-## Learning Goal
-Analyze Philippine urban challenges (primate city, informal settlements, weak LGU capacity, informal transport) through international planning concepts, apply adapted models to Metro Manila scenarios, and identify Felino Palafox Jr.'s contributions.
+Philippine urban planning deals with growth, housing need, service gaps, risk exposure, and local implementation. RPS 2008 frames the CLUP as the long-term physical-development guide and zoning as the enforceable instrument. RA 7279 frames urban development and housing around rational land use, access to land and housing, participation, LGU capability, land inventory, site identification, socialized housing, and basic services. The Local Shelter Planning Manual adds practical mapping of households in danger areas, informal settlements, upgrading needs, and resettlement needs.
 
-Philippine urban planning applies international concepts (urban models, design principles, new urbanism) to the specific context of rapid urbanization, informal settlements, informal transport, and limited municipal capacity. Felino Palafox Jr. is the leading contemporary Philippine planner.
+## Learning Goal
+
+Choose the correct local planning response for Philippine urban problems: CLUP/zoning, socialized housing, in-situ upgrading, relocation, service provision, hazard-sensitive siting, or institutional coordination.
 
 ## Core Concept
 
-Philippine cities face overlapping challenges: population concentration in Metro Manila (primate city), uncontrolled sprawl, inadequate water and sewage systems, informal transport (jeepneys, tricycles), informal settlements (millions of squatters), and weak LGU planning capacity. Planning theory and tools—the Concentric Zone Model, Lynch's elements, New Urbanism, CLUP, zoning—must be adapted to this reality.
+Philippine urban problems are usually overlapping. A housing question may also be a land-use question, a hazard question, a service question, and an implementation question. The correct LEA answer identifies which local instrument controls the immediate decision.
 
-The **Concentric Zone Model (Burgess, 1925)** describes Chicago's outward expansion. In Philippine cities, this model applies but with modifications: Manila's CBD is in the historic center (Intramuros/Makati spine), but sprawl jumps over gaps (leapfrog development) rather than filling in smoothly. The model assumes formal subdivision and property markets; the Philippines has massive informal land occupation that the model cannot capture.
+RA 7279 requires city and municipal governments to inventory lands and identify sites for socialized housing and resettlement with attention to basic services, accessibility, and proximity to jobs. It also allows on-site development where practicable and gives budget priority to on-site development of government lands. For socialized housing and resettlement areas, basic services include water, power, sewerage, solid-waste disposal, roads, and transportation access.
 
-**Kevin Lynch's five elements** are less clearly defined in Philippine cities. Paths exist but are often congested and unsafe (EDSA is chaos, not a legible path). Districts exist (Chinatown, BGC, Tondo) but boundaries blur. Nodes are strong at transit hubs but weak in car-dependent areas. Landmarks are concentrated in CBD and heritage zones; provincial towns often lack memorable landmarks, creating wayfinding difficulty.
-
-**New Urbanism (400m, 5-minute walk, mixed use)** is theoretically applicable but requires infrastructure—pedestrian safety, reliable transit, mixed-use zoning—that many Philippine cities lack. However, BGC, portions of Makati, and planned developments (Laguna, Cavite) have applied New Urbanism principles successfully. The challenge: retrofit existing sprawling cities to New Urbanism density.
-
-**Felino Palafox Jr.** is the nation's leading urban planner and architect. Palafox has masterplanned major developments (BGC, regional growth centers in Laguna, Pampanga, Cavite) and has worked extensively with DHSUD and LGUs on CLUPs. His work bridges international planning theory with Philippine real-world constraints.
-
-Philippine planning must address: **CLUP mandates** (every LGU must have one, RA 7160), **housing integration** (RA 7279 balanced housing, in-situ upgrading), **environmental constraints** (PD 1067 water body easements, PD 1586 ECC requirements), and **stakeholder capacity**. Many provincial LGUs lack professional planners; reliance on consultants means plans are sometimes poorly implemented. Strong PLGUs (Quezon City, Makati, Cebu City) have better planning continuity; weak municipalities struggle with CLUP updates and zoning enforcement.
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-plan-002-07-core-concept", type="image", caption="Philippine Urban Challenges — Primate City and Informal Settlements Diagram", description="Diagram illustrating Philippine urban planning challenges: Metro Manila primate city dominance (population/size imbalance), informal settlement patterns (along waterways, danger zones), weak LGU capacity, and jeepney/UV transport system. Palafox Jr. contributions to tropical urbanism.", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+The Local Shelter Planning Manual requires data on households in danger areas, households needing tenure upgrading, households lacking basic services, suitable residential land, risk values, infrastructure provision capacity, and financing. It also says local shelter planning should integrate climate change adaptation and DRRM inputs such as vulnerability studies, LCCAP, and LDRRMP when mapping danger areas and suitable resettlement sites.
 
 ## Key Provisions
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
-Extracted summary:
-- Props: rows="{[{\"heading\":\"Challenge / Concept\",\"description\":\"Philippine Application and Constraint\"}", content=true, Metro=true, Manila=true, as=true, Primate=true, City=true, description=true, s=true, population=true, in=true, metro=true
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+| Urban issue | Source-safe response |
+|---|---|
+| Weak land-use control | Use the CLUP and zoning ordinance. |
+| Socialized housing demand | Use RA 7279 land inventory, site identification, and housing program tools. |
+| Informal settlements in danger areas | Map the settlements and hazards; identify relocation or risk-reduction needs. |
+| Suitable land with tenure problems | Consider tenure upgrading or on-site development where practicable. |
+| Housing without services | Check water, power, sanitation, drainage, roads, and transport access. |
+| Climate and disaster exposure | Integrate vulnerability, risk, and hazard information into shelter and land-use planning. |
 
 ## Philippine Context
 
-Every CLUP-related decision in the Philippines involves balancing growth (developer interest, housing demand, revenue) with sustainability (infrastructure, environmental limits, social integration). The private real estate sector (developers, builders, agents) drives much physical development, but the public sector (LGUs, DHSUD, NHA) sets the rules through CLUP and zoning. Successful cities (Quezon City, Makati, Cebu City, Iloilo City) have strong planning offices, engaged Sanggunian members, and DHSUD oversight. Weak municipalities become hotspots for sprawl, informal settlement, and infrastructure failure. International donors (World Bank, ADB, JICA) fund CLUP updates and planning capacity-building, recognizing that planning is a prerequisite to sustainable development.
+A subdivision, public housing site, or informal settlement cannot be evaluated by location alone. The planner must ask: Is the site in the CLUP? Is the zoning consistent? Are services available? Are jobs and transport accessible? Is the land safe from identified hazards? Are affected households qualified for upgrading, on-site development, or relocation? These checks convert broad urban problems into source-safe planning decisions.
 
-## How It's Tested
+## How It Is Tested
 
-- "Why does the Concentric Zone Model not fully explain Manila's sprawl?" → Manila has leapfrog development, informal settlement, and land grabbing that the model's formal market assumptions cannot capture.
-- "What is Felino Palafox Jr. known for?" → Leading contemporary Philippine urban planner. Masterplanned BGC and regional growth centers. Applied New Urbanism and TOD principles to Philippine context.
-- "How does in-situ upgrading address informal settlements differently from relocation?" → In-situ keeps communities in place, costs less, is socially preferred. Relocation removes people to new sites (required for danger areas, but resource-intensive).
-- "What is the 400–800m catchment area in Philippine TOD?" → TOD walkable radius around transit stations. Applied to MRT/LRT station areas in Metro Manila.
+- **CLUP mandate:** identify CLUP and zoning ordinance as the land-use control pair.
+- **Socialized housing:** identify RA 7279 land inventory, site identification, and basic services.
+- **In-situ vs relocation:** use on-site development where practicable; relocate when the settlement is in danger or otherwise unsuitable.
+- **Service gaps:** choose infrastructure upgrading when households lack water, sanitation, drainage, roads, or power.
+- **Risk-sensitive planning:** use hazard and vulnerability maps before selecting housing or settlement land.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Philippine planning = applying international theory to local reality (informal settlements, weak capacity, rapid sprawl, diverse stakeholders). Felino Palafox Jr. = leading contemporary planner. In-situ upgrading = keep communities in place. CLUP = law-mandated; zoning ordinance = implementation tool; DHSUD = reviews for conformity.
-[/SLATECAMP_UI_BLOCK]
+## Real World Scenario
 
-**Exam Tip:** Philippine urbanization statistics to know: Manila ≈10× larger than Cebu (primate city). ~2-3 million informal settlers in Metro Manila. Cities growing 3-4% annually. 80+ municipalities and 145+ cities required to have CLUPs.
+An LGU finds an informal settlement along a flood-prone creek but also identifies vacant serviced land inside the built-up area. The source-safe response is not automatic off-city relocation. The LGU should map the danger area, verify household and tenure data, check whether any in-city upgrading or infill option is safe and serviced, and use the CLUP, shelter plan, and budgeted programs to choose the least harmful compliant option.
 
-## Cross-References
+## Exam Tip
 
-See **LEA-PLAN-002-01** (Classical Models) for model application, **LEA-PLAN-003-06** (Informal Settlements) for informal settlement context, and **LEA-PLAN-005-04** (DRRM) for disaster resilience in Philippine cities.
+Philippine planning answers usually pair a problem with an instrument: land-use problem = CLUP/ZO; housing access = RA 7279 and LSP; danger-area settlement = hazard map plus relocation or risk reduction; service deficiency = infrastructure upgrading.
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\"Treating the Concentric Zone Model as literally describing Manila's geography — it describes formal urban expansion; informal settlement and leapfrog development violate the model's assumptions\",\"Confusing CLUP (a vision document) with zoning ordinance (the legal implementation) — both are necessary; one without the other fails\",\"Thinking RA 7279 relocation is always used — actually, in-situ upgrading is preferred when possible (CMP), and relocation is used mainly for danger areas\",\"Underestimating Felino Palafox Jr.'s role in contemporary Philippine planning — he is not just a name to know; his work in BGC and LGU CLUPs is foundational to modern PH urbanism\",\"Assuming all LGUs have equal planning capacity — reality: large cities (QC, Makati, Cebu) have professional planners; many municipalities lack capacity and depend on consultants\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+- Treating informal settlement as only a legal issue when the source-safe plan also checks services, jobs, hazards, and tenure.
+- Choosing relocation before testing safe on-site or in-city alternatives.
+- Ignoring basic services in socialized housing and resettlement siting.
+- Naming a planning concept without identifying the CLUP, zoning, shelter-plan, or program action.

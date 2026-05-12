@@ -1,0 +1,319 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "batch_id": "source-audited-article-batch-087-local-first",
+  "batch_number": 87,
+  "generated_at": "2026-05-12T10:55:00.000+08:00",
+  "audit_mode": "local_first_raw_source_primary",
+  "article_id": "4f38604e-70a2-4b6f-9710-b166fe83cbe6",
+  "slug": "lea-plan-002-02-core-concept",
+  "title": "Contemporary planning approaches in Philippine settlements",
+  "article_folder": ".ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6",
+  "overall_status": "PASS",
+  "blocker_count": 0,
+  "source_policy": {
+    "primary_truth": "vitruvius-connection/001_Raw-Source-Layer local raw PDFs",
+    "supplemental_internet_used": false,
+    "source_safe_narrowing_applied": true,
+    "unresolved_source_blockers": []
+  },
+  "scenario_enrichment": {
+    "status": "eligible-added",
+    "real_world_scenario_present": true,
+    "reason": "Added source-safe new-town/PUD/open-space scenario using mobility, mixed use, environmental impact, open-space, drainage, and resilience checks."
+  },
+  "article_hashes": {
+    "original_content_hash": "sha256:6756f6063a509e235a217d7b0f98838be830acd6a2311052ef33dcf99a781817",
+    "normalized_content_hash": "sha256:b9c40aee1cc0b5564e87ba66189826ad944d44747d8b99f388f3f4f8f29df58b",
+    "candidate_content_hash": "sha256:b9c40aee1cc0b5564e87ba66189826ad944d44747d8b99f388f3f4f8f29df58b",
+    "sources_hash": "sha256:661ad81690d805f9237f609dfd9fc7f2a07085bd6b3e6715ee78f12251b7f63c"
+  },
+  "checked_sources": [
+    {
+      "source_id": "new-towns-pud-guidelines-b087",
+      "label": "Guidelines on New Towns, New Settlements, and Planned Unit Development",
+      "source_type": "primary_planning_guide_pdf",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Guidelines on New Towns and Planned Unit Development.pdf",
+      "raw_pdf_sha256": "sha256:684281f89b73974b098349995fe4994267c8e1934bdc36e623fc0f8501f05ac0",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Guidelines on New Towns and Planned Unit Development.md",
+      "refined_markdown_sha256": "sha256:9b4258a714988c70630731ec4270580fa70e8d0d6add4c8ab1625a00ba0cff47",
+      "checked_locator": "New Towns/PUD Guidelines refined markdown lines 33, 59-63, 418-437, 447-460, 468-494, 513-565, 603-642, 690-712, 743-765, 900-912, 1037-1050, and 1207-1215; raw PDF hash checked locally.",
+      "primary_evidence_status": "local_raw_pdf_hash_checked_with_refined_markdown_locator"
+    },
+    {
+      "source_id": "open-space-development-guidelines-b087",
+      "label": "DHSUD Open Space Development Guidelines",
+      "source_type": "primary_planning_guide_pdf",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Open Space Development Guidelines.pdf",
+      "raw_pdf_sha256": "sha256:2ca6d61605d370035cdd8679a43cdd57d5f40deada47601ea56e5161733e0add",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Open Space Development Guidelines.md",
+      "refined_markdown_sha256": "sha256:2be9fa0f23c22913f06acedf5905c5ebf004240ee764b47a2b1c97e15b9d9b2b",
+      "checked_locator": "Open Space Development Guidelines refined markdown lines 38-60, 780-846, 805-836, and 840-846; raw PDF hash checked locally.",
+      "primary_evidence_status": "local_raw_pdf_hash_checked_with_refined_markdown_locator"
+    },
+    {
+      "source_id": "resilient-urban-design-guidelines-b087",
+      "label": "DHSUD Resilient Urban Design and Development Guidelines",
+      "source_type": "primary_planning_guide_pdf",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf",
+      "raw_pdf_sha256": "sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.md",
+      "refined_markdown_sha256": "sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7",
+      "checked_locator": "Resilient Urban Design Guidelines refined markdown lines 41-66, 301-309, 389-392, 556-572, 595-621, and 661-678; raw PDF hash checked locally.",
+      "primary_evidence_status": "local_raw_pdf_hash_checked_with_refined_markdown_locator"
+    },
+    {
+      "source_id": "hlurb-clup-guidebook-vol1-b087",
+      "label": "HLURB CLUP Guidebook Vol. 1",
+      "source_type": "primary_planning_guide_pdf",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/HLURB_CLUP_Guidebook_Vol_1_11042015.pdf",
+      "raw_pdf_sha256": "sha256:5b8e141fa204a4fc8ce74a0c165c55bd8c166691b0ccc393f24f61db57690c6f",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/HLURB_CLUP_Guidebook_Vol_1_11042015.md",
+      "refined_markdown_sha256": "sha256:26067221888dd0b950bf65719ba7ce8308694b7d799dca6f8f238ad7d7f49025",
+      "checked_locator": "HLURB CLUP Guidebook Vol. 1 refined markdown lines 497-551, 665-715, 731-741, 1103-1119, 1541-1558, 3371, 3845, 4633, 6011, and 7310-8159; raw PDF hash checked locally.",
+      "primary_evidence_status": "local_raw_pdf_hash_checked_with_refined_markdown_locator"
+    }
+  ],
+  "source_hash_check_count": 8,
+  "linked_question_count": 10,
+  "question_edit_count": 10,
+  "evidence_claim_count": 12,
+  "claims": [
+    {
+      "claim_id": "4f38604e-70a2-4b6f-9710-b166fe83cbe6:article-rewrite",
+      "claim_type": "article_content",
+      "status": "source_supported",
+      "summary": "Contemporary planning approaches in Philippine settlements was narrowed to locally checked Batch 087 source evidence for philippine_contemporary_planning_approaches.",
+      "evidence_basis": [
+        "New Towns/PUD Guidelines refined markdown lines 33, 59-63, 418-437, 447-460, 468-494, 513-565, 603-642, 690-712, 743-765, 900-912, 1037-1050, and 1207-1215; raw PDF hash checked locally.",
+        "Open Space Development Guidelines refined markdown lines 38-60, 780-846, 805-836, and 840-846; raw PDF hash checked locally.",
+        "Resilient Urban Design Guidelines refined markdown lines 41-66, 301-309, 389-392, 556-572, 595-621, and 661-678; raw PDF hash checked locally.",
+        "HLURB CLUP Guidebook Vol. 1 refined markdown lines 497-551, 665-715, 731-741, 1103-1119, 1541-1558, 3371, 3845, 4633, 6011, and 7310-8159; raw PDF hash checked locally."
+      ],
+      "checked_sources": [
+        "new-towns-pud-guidelines-b087",
+        "open-space-development-guidelines-b087",
+        "resilient-urban-design-guidelines-b087",
+        "hlurb-clup-guidebook-vol1-b087"
+      ]
+    },
+    {
+      "claim_id": "4f38604e-70a2-4b6f-9710-b166fe83cbe6:real-world-scenario",
+      "claim_type": "scenario_enrichment",
+      "status": "eligible-added_source_safe",
+      "summary": "Added source-safe new-town/PUD/open-space scenario using mobility, mixed use, environmental impact, open-space, drainage, and resilience checks.",
+      "evidence_basis": [
+        "New Towns/PUD Guidelines refined markdown lines 33, 59-63, 418-437, 447-460, 468-494, 513-565, 603-642, 690-712, 743-765, 900-912, 1037-1050, and 1207-1215; raw PDF hash checked locally.",
+        "Open Space Development Guidelines refined markdown lines 38-60, 780-846, 805-836, and 840-846; raw PDF hash checked locally.",
+        "Resilient Urban Design Guidelines refined markdown lines 41-66, 301-309, 389-392, 556-572, 595-621, and 661-678; raw PDF hash checked locally.",
+        "HLURB CLUP Guidebook Vol. 1 refined markdown lines 497-551, 665-715, 731-741, 1103-1119, 1541-1558, 3371, 3845, 4633, 6011, and 7310-8159; raw PDF hash checked locally."
+      ],
+      "checked_sources": [
+        "new-towns-pud-guidelines-b087",
+        "open-space-development-guidelines-b087",
+        "resilient-urban-design-guidelines-b087",
+        "hlurb-clup-guidebook-vol1-b087"
+      ]
+    },
+    {
+      "claim_id": "235f7569-3e57-4260-bf7c-928452bf5479:question-edit",
+      "claim_type": "linked_question_edit",
+      "status": "source_safe_rewrite",
+      "question_id": "235f7569-3e57-4260-bf7c-928452bf5479",
+      "question_edit_path": ".ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits/235f7569-3e57-4260-bf7c-928452bf5479.json",
+      "summary": "Question 235f7569-3e57-4260-bf7c-928452bf5479 rewritten to the Batch 087 local-source scope; answer key fields changed=true.",
+      "evidence_basis": [
+        "New Towns/PUD Guidelines refined markdown lines 33, 59-63, 418-437, 447-460, 468-494, 513-565, 603-642, 690-712, 743-765, 900-912, 1037-1050, and 1207-1215; raw PDF hash checked locally.",
+        "Open Space Development Guidelines refined markdown lines 38-60, 780-846, 805-836, and 840-846; raw PDF hash checked locally.",
+        "Resilient Urban Design Guidelines refined markdown lines 41-66, 301-309, 389-392, 556-572, 595-621, and 661-678; raw PDF hash checked locally.",
+        "HLURB CLUP Guidebook Vol. 1 refined markdown lines 497-551, 665-715, 731-741, 1103-1119, 1541-1558, 3371, 3845, 4633, 6011, and 7310-8159; raw PDF hash checked locally."
+      ],
+      "checked_sources": [
+        "new-towns-pud-guidelines-b087",
+        "open-space-development-guidelines-b087",
+        "resilient-urban-design-guidelines-b087",
+        "hlurb-clup-guidebook-vol1-b087"
+      ]
+    },
+    {
+      "claim_id": "336402f6-1899-4e9c-8b36-bde4e07d8d4c:question-edit",
+      "claim_type": "linked_question_edit",
+      "status": "source_safe_rewrite",
+      "question_id": "336402f6-1899-4e9c-8b36-bde4e07d8d4c",
+      "question_edit_path": ".ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits/336402f6-1899-4e9c-8b36-bde4e07d8d4c.json",
+      "summary": "Question 336402f6-1899-4e9c-8b36-bde4e07d8d4c rewritten to the Batch 087 local-source scope; answer key fields changed=true.",
+      "evidence_basis": [
+        "New Towns/PUD Guidelines refined markdown lines 33, 59-63, 418-437, 447-460, 468-494, 513-565, 603-642, 690-712, 743-765, 900-912, 1037-1050, and 1207-1215; raw PDF hash checked locally.",
+        "Open Space Development Guidelines refined markdown lines 38-60, 780-846, 805-836, and 840-846; raw PDF hash checked locally.",
+        "Resilient Urban Design Guidelines refined markdown lines 41-66, 301-309, 389-392, 556-572, 595-621, and 661-678; raw PDF hash checked locally.",
+        "HLURB CLUP Guidebook Vol. 1 refined markdown lines 497-551, 665-715, 731-741, 1103-1119, 1541-1558, 3371, 3845, 4633, 6011, and 7310-8159; raw PDF hash checked locally."
+      ],
+      "checked_sources": [
+        "new-towns-pud-guidelines-b087",
+        "open-space-development-guidelines-b087",
+        "resilient-urban-design-guidelines-b087",
+        "hlurb-clup-guidebook-vol1-b087"
+      ]
+    },
+    {
+      "claim_id": "50617027-2f64-44e5-9118-dcddb7529163:question-edit",
+      "claim_type": "linked_question_edit",
+      "status": "source_safe_rewrite",
+      "question_id": "50617027-2f64-44e5-9118-dcddb7529163",
+      "question_edit_path": ".ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits/50617027-2f64-44e5-9118-dcddb7529163.json",
+      "summary": "Question 50617027-2f64-44e5-9118-dcddb7529163 rewritten to the Batch 087 local-source scope; answer key fields changed=true.",
+      "evidence_basis": [
+        "New Towns/PUD Guidelines refined markdown lines 33, 59-63, 418-437, 447-460, 468-494, 513-565, 603-642, 690-712, 743-765, 900-912, 1037-1050, and 1207-1215; raw PDF hash checked locally.",
+        "Open Space Development Guidelines refined markdown lines 38-60, 780-846, 805-836, and 840-846; raw PDF hash checked locally.",
+        "Resilient Urban Design Guidelines refined markdown lines 41-66, 301-309, 389-392, 556-572, 595-621, and 661-678; raw PDF hash checked locally.",
+        "HLURB CLUP Guidebook Vol. 1 refined markdown lines 497-551, 665-715, 731-741, 1103-1119, 1541-1558, 3371, 3845, 4633, 6011, and 7310-8159; raw PDF hash checked locally."
+      ],
+      "checked_sources": [
+        "new-towns-pud-guidelines-b087",
+        "open-space-development-guidelines-b087",
+        "resilient-urban-design-guidelines-b087",
+        "hlurb-clup-guidebook-vol1-b087"
+      ]
+    },
+    {
+      "claim_id": "5a51aace-f447-4b35-9893-aedd60e421cd:question-edit",
+      "claim_type": "linked_question_edit",
+      "status": "source_safe_rewrite",
+      "question_id": "5a51aace-f447-4b35-9893-aedd60e421cd",
+      "question_edit_path": ".ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits/5a51aace-f447-4b35-9893-aedd60e421cd.json",
+      "summary": "Question 5a51aace-f447-4b35-9893-aedd60e421cd rewritten to the Batch 087 local-source scope; answer key fields changed=true.",
+      "evidence_basis": [
+        "New Towns/PUD Guidelines refined markdown lines 33, 59-63, 418-437, 447-460, 468-494, 513-565, 603-642, 690-712, 743-765, 900-912, 1037-1050, and 1207-1215; raw PDF hash checked locally.",
+        "Open Space Development Guidelines refined markdown lines 38-60, 780-846, 805-836, and 840-846; raw PDF hash checked locally.",
+        "Resilient Urban Design Guidelines refined markdown lines 41-66, 301-309, 389-392, 556-572, 595-621, and 661-678; raw PDF hash checked locally.",
+        "HLURB CLUP Guidebook Vol. 1 refined markdown lines 497-551, 665-715, 731-741, 1103-1119, 1541-1558, 3371, 3845, 4633, 6011, and 7310-8159; raw PDF hash checked locally."
+      ],
+      "checked_sources": [
+        "new-towns-pud-guidelines-b087",
+        "open-space-development-guidelines-b087",
+        "resilient-urban-design-guidelines-b087",
+        "hlurb-clup-guidebook-vol1-b087"
+      ]
+    },
+    {
+      "claim_id": "68e914a6-f016-4582-833f-1191640e5d02:question-edit",
+      "claim_type": "linked_question_edit",
+      "status": "source_safe_rewrite",
+      "question_id": "68e914a6-f016-4582-833f-1191640e5d02",
+      "question_edit_path": ".ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits/68e914a6-f016-4582-833f-1191640e5d02.json",
+      "summary": "Question 68e914a6-f016-4582-833f-1191640e5d02 rewritten to the Batch 087 local-source scope; answer key fields changed=true.",
+      "evidence_basis": [
+        "New Towns/PUD Guidelines refined markdown lines 33, 59-63, 418-437, 447-460, 468-494, 513-565, 603-642, 690-712, 743-765, 900-912, 1037-1050, and 1207-1215; raw PDF hash checked locally.",
+        "Open Space Development Guidelines refined markdown lines 38-60, 780-846, 805-836, and 840-846; raw PDF hash checked locally.",
+        "Resilient Urban Design Guidelines refined markdown lines 41-66, 301-309, 389-392, 556-572, 595-621, and 661-678; raw PDF hash checked locally.",
+        "HLURB CLUP Guidebook Vol. 1 refined markdown lines 497-551, 665-715, 731-741, 1103-1119, 1541-1558, 3371, 3845, 4633, 6011, and 7310-8159; raw PDF hash checked locally."
+      ],
+      "checked_sources": [
+        "new-towns-pud-guidelines-b087",
+        "open-space-development-guidelines-b087",
+        "resilient-urban-design-guidelines-b087",
+        "hlurb-clup-guidebook-vol1-b087"
+      ]
+    },
+    {
+      "claim_id": "6ebab89d-5143-4659-a0f7-fcf297463b45:question-edit",
+      "claim_type": "linked_question_edit",
+      "status": "source_safe_rewrite",
+      "question_id": "6ebab89d-5143-4659-a0f7-fcf297463b45",
+      "question_edit_path": ".ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits/6ebab89d-5143-4659-a0f7-fcf297463b45.json",
+      "summary": "Question 6ebab89d-5143-4659-a0f7-fcf297463b45 rewritten to the Batch 087 local-source scope; answer key fields changed=true.",
+      "evidence_basis": [
+        "New Towns/PUD Guidelines refined markdown lines 33, 59-63, 418-437, 447-460, 468-494, 513-565, 603-642, 690-712, 743-765, 900-912, 1037-1050, and 1207-1215; raw PDF hash checked locally.",
+        "Open Space Development Guidelines refined markdown lines 38-60, 780-846, 805-836, and 840-846; raw PDF hash checked locally.",
+        "Resilient Urban Design Guidelines refined markdown lines 41-66, 301-309, 389-392, 556-572, 595-621, and 661-678; raw PDF hash checked locally.",
+        "HLURB CLUP Guidebook Vol. 1 refined markdown lines 497-551, 665-715, 731-741, 1103-1119, 1541-1558, 3371, 3845, 4633, 6011, and 7310-8159; raw PDF hash checked locally."
+      ],
+      "checked_sources": [
+        "new-towns-pud-guidelines-b087",
+        "open-space-development-guidelines-b087",
+        "resilient-urban-design-guidelines-b087",
+        "hlurb-clup-guidebook-vol1-b087"
+      ]
+    },
+    {
+      "claim_id": "87d9bb79-27be-4628-88dd-da011f7a49f2:question-edit",
+      "claim_type": "linked_question_edit",
+      "status": "source_safe_rewrite",
+      "question_id": "87d9bb79-27be-4628-88dd-da011f7a49f2",
+      "question_edit_path": ".ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits/87d9bb79-27be-4628-88dd-da011f7a49f2.json",
+      "summary": "Question 87d9bb79-27be-4628-88dd-da011f7a49f2 rewritten to the Batch 087 local-source scope; answer key fields changed=true.",
+      "evidence_basis": [
+        "New Towns/PUD Guidelines refined markdown lines 33, 59-63, 418-437, 447-460, 468-494, 513-565, 603-642, 690-712, 743-765, 900-912, 1037-1050, and 1207-1215; raw PDF hash checked locally.",
+        "Open Space Development Guidelines refined markdown lines 38-60, 780-846, 805-836, and 840-846; raw PDF hash checked locally.",
+        "Resilient Urban Design Guidelines refined markdown lines 41-66, 301-309, 389-392, 556-572, 595-621, and 661-678; raw PDF hash checked locally.",
+        "HLURB CLUP Guidebook Vol. 1 refined markdown lines 497-551, 665-715, 731-741, 1103-1119, 1541-1558, 3371, 3845, 4633, 6011, and 7310-8159; raw PDF hash checked locally."
+      ],
+      "checked_sources": [
+        "new-towns-pud-guidelines-b087",
+        "open-space-development-guidelines-b087",
+        "resilient-urban-design-guidelines-b087",
+        "hlurb-clup-guidebook-vol1-b087"
+      ]
+    },
+    {
+      "claim_id": "c12b8f34-f200-4f72-9d8d-fe668b8c6e66:question-edit",
+      "claim_type": "linked_question_edit",
+      "status": "source_safe_rewrite",
+      "question_id": "c12b8f34-f200-4f72-9d8d-fe668b8c6e66",
+      "question_edit_path": ".ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits/c12b8f34-f200-4f72-9d8d-fe668b8c6e66.json",
+      "summary": "Question c12b8f34-f200-4f72-9d8d-fe668b8c6e66 rewritten to the Batch 087 local-source scope; answer key fields changed=true.",
+      "evidence_basis": [
+        "New Towns/PUD Guidelines refined markdown lines 33, 59-63, 418-437, 447-460, 468-494, 513-565, 603-642, 690-712, 743-765, 900-912, 1037-1050, and 1207-1215; raw PDF hash checked locally.",
+        "Open Space Development Guidelines refined markdown lines 38-60, 780-846, 805-836, and 840-846; raw PDF hash checked locally.",
+        "Resilient Urban Design Guidelines refined markdown lines 41-66, 301-309, 389-392, 556-572, 595-621, and 661-678; raw PDF hash checked locally.",
+        "HLURB CLUP Guidebook Vol. 1 refined markdown lines 497-551, 665-715, 731-741, 1103-1119, 1541-1558, 3371, 3845, 4633, 6011, and 7310-8159; raw PDF hash checked locally."
+      ],
+      "checked_sources": [
+        "new-towns-pud-guidelines-b087",
+        "open-space-development-guidelines-b087",
+        "resilient-urban-design-guidelines-b087",
+        "hlurb-clup-guidebook-vol1-b087"
+      ]
+    },
+    {
+      "claim_id": "d4176670-983c-4bae-bced-37fef0d6bd8b:question-edit",
+      "claim_type": "linked_question_edit",
+      "status": "source_safe_rewrite",
+      "question_id": "d4176670-983c-4bae-bced-37fef0d6bd8b",
+      "question_edit_path": ".ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits/d4176670-983c-4bae-bced-37fef0d6bd8b.json",
+      "summary": "Question d4176670-983c-4bae-bced-37fef0d6bd8b rewritten to the Batch 087 local-source scope; answer key fields changed=true.",
+      "evidence_basis": [
+        "New Towns/PUD Guidelines refined markdown lines 33, 59-63, 418-437, 447-460, 468-494, 513-565, 603-642, 690-712, 743-765, 900-912, 1037-1050, and 1207-1215; raw PDF hash checked locally.",
+        "Open Space Development Guidelines refined markdown lines 38-60, 780-846, 805-836, and 840-846; raw PDF hash checked locally.",
+        "Resilient Urban Design Guidelines refined markdown lines 41-66, 301-309, 389-392, 556-572, 595-621, and 661-678; raw PDF hash checked locally.",
+        "HLURB CLUP Guidebook Vol. 1 refined markdown lines 497-551, 665-715, 731-741, 1103-1119, 1541-1558, 3371, 3845, 4633, 6011, and 7310-8159; raw PDF hash checked locally."
+      ],
+      "checked_sources": [
+        "new-towns-pud-guidelines-b087",
+        "open-space-development-guidelines-b087",
+        "resilient-urban-design-guidelines-b087",
+        "hlurb-clup-guidebook-vol1-b087"
+      ]
+    },
+    {
+      "claim_id": "dc8bb7ae-f790-4533-8bd4-59d5f2091c61:question-edit",
+      "claim_type": "linked_question_edit",
+      "status": "source_safe_rewrite",
+      "question_id": "dc8bb7ae-f790-4533-8bd4-59d5f2091c61",
+      "question_edit_path": ".ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits/dc8bb7ae-f790-4533-8bd4-59d5f2091c61.json",
+      "summary": "Question dc8bb7ae-f790-4533-8bd4-59d5f2091c61 rewritten to the Batch 087 local-source scope; answer key fields changed=true.",
+      "evidence_basis": [
+        "New Towns/PUD Guidelines refined markdown lines 33, 59-63, 418-437, 447-460, 468-494, 513-565, 603-642, 690-712, 743-765, 900-912, 1037-1050, and 1207-1215; raw PDF hash checked locally.",
+        "Open Space Development Guidelines refined markdown lines 38-60, 780-846, 805-836, and 840-846; raw PDF hash checked locally.",
+        "Resilient Urban Design Guidelines refined markdown lines 41-66, 301-309, 389-392, 556-572, 595-621, and 661-678; raw PDF hash checked locally.",
+        "HLURB CLUP Guidebook Vol. 1 refined markdown lines 497-551, 665-715, 731-741, 1103-1119, 1541-1558, 3371, 3845, 4633, 6011, and 7310-8159; raw PDF hash checked locally."
+      ],
+      "checked_sources": [
+        "new-towns-pud-guidelines-b087",
+        "open-space-development-guidelines-b087",
+        "resilient-urban-design-guidelines-b087",
+        "hlurb-clup-guidebook-vol1-b087"
+      ]
+    }
+  ],
+  "unresolved_blockers": []
+}

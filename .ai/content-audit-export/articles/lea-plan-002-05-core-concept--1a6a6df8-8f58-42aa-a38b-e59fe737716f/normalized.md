@@ -1,76 +1,68 @@
-
-
 ## Board Exam Quick Check
 
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+When the question asks how people understand or navigate a city, identify the evidence: mapped roads, boundaries, districts, service locations, public spaces, landmarks, or decision points. Then answer by the function the feature performs in the plan.
 
-**Common mistake:** treating a familiar keyword in **Lea Plan 002 05 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+**Common mistake:** naming a memorized design term without reading what the feature does. A street, plaza, river, or civic building can matter for movement, boundary, gathering, orientation, or public-realm function depending on the scenario.
 
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
+**Retrieval prompt:** Does the feature primarily move people, separate areas, define a district, gather activity, or help people orient themselves?
+
 ## What You Need to Know for the LEA
 
-## Learning Goal
-Identify and apply Kevin Lynch's five urban image elements — paths, edges, districts, nodes, landmarks — to analyze how people mentally map cities, and use these elements to evaluate wayfinding and urban legibility in Philippine contexts.
+The local source-safe version of this topic is urban legibility through CLUP maps, public-realm planning, and spatial analysis. The CLUP GIS Guidebook states that maps should answer questions such as where something is, how to get there, what feature is at a location, and what patterns can be compared. It also says maps reveal spatial relations and patterns when features are selected and depicted well.
 
-Kevin Lynch identified five elements—paths, edges, districts, nodes, landmarks—that shape how people mentally map and navigate cities. Each element is testable with specific definitions.
+## Learning Goal
+
+Classify urban features by their planning function and use GIS/map evidence to support legible city design.
 
 ## Core Concept
 
-In _The Image of the City_ (1960), Kevin Lynch studied how residents of Boston, Jersey City, and Los Angeles understand and move through urban space. He found that people construct mental maps of cities using recurring physical elements. Understanding these five elements is central to urban design and planning because they reveal how _ordinary people_ (not planners or architects) perceive and orient themselves in the built environment.
+Urban legibility is the ability to read the city. In local planning work, this is not just an aesthetic concern. It affects how stakeholders understand maps, how planners present CLUP scenarios, how roads and facilities are prioritized, and how zoning districts and public spaces become understandable to users.
 
-**Paths** are channels of movement: streets, walkways, transit corridors, canals, railroads. Paths are how you move through the city. They are experienced sequentially—a street reveals itself meter by meter as you walk. Major paths (EDSA, LRT Line 1 corridor) become the primary organizing structure of a person's mental map because they are traveled regularly and structure daily life.
+The CLUP GIS Guidebook emphasizes that mapped information should be easy to understand and that the effectiveness of a map depends on selecting the right features, depicting them clearly, and giving users a common key for interpretation. GIS can use geometric modeling for distances and buffers, coincidence modeling for overlays, and adjacency modeling for allocation, path finding, and restrictions. These tools support route analysis, service-area mapping, boundary reading, and land-use decisions.
 
-**Edges** are linear elements _not used as paths_—they are boundaries. Shorelines, railroad cuts, highway embankments, development edges, walls. Edges separate one area from another and are experienced as barriers or boundaries. Manila Bay shoreline is an edge; the Pasig River acts as both a path (if navigable) and an edge (if it separates neighborhoods). Edges are significant because they structure the mental division of the city: "I live on this side of the river" or "that's across the highway from here."
+For LEA scenarios, classify by function:
 
-**Districts** are medium-to-large sections of the city with a common, recognizable character. When you enter a district, you feel "inside" it—a distinctive identity. Intramuros, Binondo/Chinatown, Bonifacio Global City, Divisoria, Makati CBD—each has a distinct character shaped by architecture, activity, history. Districts are experienced holistically, not sequentially like paths. They organize the city into memorable zones that residents can describe and navigate by.
-
-**Nodes** are strategic focal points—junctions, hubs, concentrations. They are places where you _go to_ or pass _through_. A node is where you transfer (EDSA-Taft interchange), where you gather (Quiapo plaza), where you decide which path to take next. Nodes are decision points. Unlike districts (which are areas you are "inside"), nodes are places you arrive at. A busy intersection is a node; a bus terminal is a node; a major shopping center is a node.
-
-**Landmarks** are distinctive objects used for orientation. Unlike nodes, landmarks are _not entered_; they are external reference points. You navigate _by looking at_ a landmark. Rizal Monument, RCBC Plaza in Ayala Triangle, Mayon Volcano (visible from afar), Manila Cathedral—these are things you look at to orient yourself. "Meet me in front of the church" uses the church as a landmark. The key distinction: a node is a place you go TO and pass THROUGH; a landmark is a thing you look AT for direction.
-
-Lynch's five elements are _cognitive_, not physical. The same object can serve different element functions depending on how people use it. A church might be a node (a place to gather) and a landmark (a visual reference point), or either one, depending on context and individual perception.
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-lea-plan-002-05-core-concept", type="image", caption="Kevin Lynch's Five Urban Elements — Paths, Edges, Districts, Nodes, Landmarks", description="Diagram illustrating Kevin Lynch's five elements of city imageability: paths (movement channels), edges (boundaries/barriers), districts (neighborhoods with identity), nodes (junctions/convergence points), landmarks (distinctive reference points). Annotated with Philippine urban examples.", suggestedAsset="Diagram or reference image", status="placeholder"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+| Feature function | Typical local evidence |
+|---|---|
+| Movement | Road network, transit line, sidewalk, or path-finding layer. |
+| Boundary | River, coastline, hazard edge, zoning boundary, or buffer. |
+| District | Zoning district, land-use cluster, heritage area, CBD, or special planning area. |
+| Node | Station, plaza, terminal, market, school, or public facility where activity converges. |
+| Landmark or orientation cue | Civic building, monument, park, bridge, or distinctive public-space feature used for location. |
 
 ## Key Provisions
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
-Extracted summary:
-- Props: rows="{[{\"heading\":\"Lynch Element\",\"definition\":\"What It Is\",\"Philippine Example\"}", content=true, Paths=true, definition=true, Channels=true, of=true, movement=true, Experienced=true, sequentially=true, Major=true, organizing=true, structure=true
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+| Source-safe rule | LEA application |
+|---|---|
+| Maps answer location and route questions. | Use mapped features to explain wayfinding and service access. |
+| Maps reveal spatial relations and patterns. | Use maps to compare roads, services, hazards, and land uses. |
+| CLUP scenarios need shared graphic vocabulary. | Use clear legends, symbols, and common keys in planning workshops. |
+| Zoning subdivides the community into zones or districts. | Treat district identity as a planning and regulatory category. |
+| Public realm includes streets, sidewalks, parks, and open spaces. | Treat them as movement, gathering, recreation, and emergency-use spaces. |
 
 ## Philippine Context
 
-In Metro Manila, paths (EDSA, C-3/C-5) structure commuting and mental maps, but informal settlers and traffic congestion degrade path quality. Districts—Chinatown, Intramuros, Bangko Sentral Complex area—are strong in the historic core but less defined in sprawl. Landmarks (Rizal Monument, Cathedral, Ayala Triangle towers) are concentrated in CBD and heritage zones; provincial towns often lack distinctive landmarks, creating wayfinding difficulty. Nodes are most developed where mass transit exists (MRT/LRT stations, Lawton terminal) but less clear in car-dependent peripheral areas. Understanding Lynch elements helps planners and developers create more legible cities: emphasize path connectivity, clarify district boundaries, create memorable nodes and landmarks, use edges to organize sprawl.
+In Philippine cities, legibility often fails where roads, terminals, informal activity, private developments, waterways, and hazards overlap without clear public-realm design. A commuter may know the route but still face unclear transfers, unsafe crossings, or confusing district boundaries. CLUP maps and public-realm plans help make these patterns visible so the LGU can prioritize road improvements, public spaces, overlays, and zoning controls.
 
-## How It's Tested
+## How It Is Tested
 
-- "Which Lynch element describes a shopping district where residents recognize the area by its distinctive character and narrow streets?" → District.
-- "A waterway separates two neighborhoods and is not used for transportation. Which Lynch element is this?" → Edge.
-- "A major street intersection where commuters transfer between transit systems. Which Lynch element?" → Node (you go to it, pass through it, make decisions).
-- "A church that you don't enter but use to tell visitors 'meet me at the church' for navigation. Which Lynch element?" → Landmark (external reference, not entered).
-- "The LRT corridor that you travel on daily. Which Lynch element?" → Path (channel of movement).
+- A river or highway separates two areas: classify it as a boundary or buffer issue.
+- A transit station or plaza gathers activity and decisions: classify it as a node.
+- A road layer is combined with population and traffic data: use it to assess importance in the road network.
+- A zoning map divides a city into recognizable areas: treat it as a district or land-use classification question.
+- A map legend is unclear during a public workshop: the issue is graphic vocabulary and shared interpretation.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Node = where you GO TO and PASS THROUGH (junction, hub). Landmark = what you LOOK AT for direction (not entered). This is the highest-frequency error: students confuse nodes and landmarks. Test yourself: "Does the object primarily function as a gathering/transfer point (node) or as a visual reference (landmark)?"
-[/SLATECAMP_UI_BLOCK]
+## Real World Scenario
 
-**Exam Tip:** Lynch elements tested through scenarios: "A river that separates two neighborhoods" = edge. "A central square where paths converge" = node. "A prominent church tower visible from far away" = landmark. Match the element to the description.
+A city prepares a CLUP workshop map for a proposed station area. Residents cannot tell where the transfer point, pedestrian route, school, river edge, and proposed mixed-use district are. The source-safe correction is to simplify the base map, use a common legend, show the road and pedestrian network, distinguish zoning districts, and mark public spaces and hazard edges so the preferred structure plan can be understood by both officials and stakeholders.
 
-## Cross-References
+## Exam Tip
 
-See **LEA-PLAN-001-01** (Planning Fundamentals) for Lynch attribution, **LEA-PLAN-002-06** (Urban Design) for urban design application of Lynch elements, and **LEA-PLAN-002-07** (Philippine Context) for Lynch in Philippine cities.
+Answer by function. If people move along it, it is a movement feature. If it separates, it is a boundary. If activity converges there, it is a node. If it helps people orient, it is an orientation cue. If it is a mapped regulatory area, it is a district or zone.
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\"Confusing nodes and landmarks — remember: Node = place you go TO; Landmark = thing you look AT. A church can be both, but you must identify its PRIMARY function in context.\",\"Thinking edges must be water bodies — edges can be any linear boundary: walls, highways, railroad cuts, development edges, even ridgelines. The key is that they separate and are NOT used as movement channels.\",\"Assuming all major streets are paths — paths are channels through which you move. A walled-off highway embankment, even if major, is more edge than path if you cannot move along it.\",\"Using 'landmark' to mean 'important site' — in Lynch's framework, landmarks are specifically things you look AT for orientation, not things you visit.\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+- Calling every prominent object a landmark even when the scenario describes a transfer or gathering point.
+- Ignoring the map legend when the item asks how stakeholders interpret a CLUP map.
+- Treating public realm as decoration rather than movement, access, gathering, and emergency space.
+- Separating wayfinding from zoning, roads, services, and hazards.

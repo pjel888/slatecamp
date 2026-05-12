@@ -1,0 +1,79 @@
+{
+  "question_id": "0c5fb6b9-1a92-424d-99eb-e98798457031",
+  "baseline_hash": "sha256:196bfb4f4fc7f66571ee5b60b963d0ec3e1ef6f2b23e5191d6fc4b5f3847ae3a",
+  "action": "replace",
+  "reason": "source-audited-article-batch-087-local-first aligned linked question with checked local raw PDF/source evidence for lea-plan-002-01-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-087",
+  "approved_at": "2026-05-12T10:45:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "50d41d7e-57cd-4280-b850-e6d2f89414a6",
+    "parent_article_slug": "lea-plan-002-01-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RPS 2008 refined markdown lines 75-85, 125-129, 435-449, 837-839, 1201-1304, and 1338-1350; raw PDF hash checked locally. HLURB CLUP Guidebook Vol. 1 refined markdown lines 497-551, 665-715, 731-741, 1103-1119, 1541-1558, 3371, 3845, 4633, 6011, and 7310-8159; raw PDF hash checked locally. CLUP GIS Guidebook refined markdown lines 1537-1572, 1944-1964, 2092-2098, 4981-5047, 4681-4735, and 5299-5369; raw PDF hash checked locally.",
+    "checked_markdown_lines": [
+      "RPS 2008 refined markdown lines 75-85, 125-129, 435-449, 837-839, 1201-1304, and 1338-1350; raw PDF hash checked locally.",
+      "HLURB CLUP Guidebook Vol. 1 refined markdown lines 497-551, 665-715, 731-741, 1103-1119, 1541-1558, 3371, 3845, 4633, 6011, and 7310-8159; raw PDF hash checked locally.",
+      "CLUP GIS Guidebook refined markdown lines 1537-1572, 1944-1964, 2092-2098, 4981-5047, 4681-4735, and 5299-5369; raw PDF hash checked locally."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "rps-2008-b087",
+        "label": "RPS 2008 - Rationalizing the Local Planning System",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/RPS (2008).pdf",
+        "sha256": "sha256:1331576aa80a6e5ab2d4079aa091e7294b7574c3c91b41a499e02cd1f8df91a3",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/RPS (2008).md",
+        "refined_markdown_sha256": "sha256:a86183e25f99faee458dfbb5bdb6045b98e309abe56e3d9fc4b65aee43312c96",
+        "locator": "RPS 2008 refined markdown lines 75-85, 125-129, 435-449, 837-839, 1201-1304, and 1338-1350; raw PDF hash checked locally."
+      },
+      {
+        "source_id": "hlurb-clup-guidebook-vol1-b087",
+        "label": "HLURB CLUP Guidebook Vol. 1",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/HLURB_CLUP_Guidebook_Vol_1_11042015.pdf",
+        "sha256": "sha256:5b8e141fa204a4fc8ce74a0c165c55bd8c166691b0ccc393f24f61db57690c6f",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/HLURB_CLUP_Guidebook_Vol_1_11042015.md",
+        "refined_markdown_sha256": "sha256:26067221888dd0b950bf65719ba7ce8308694b7d799dca6f8f238ad7d7f49025",
+        "locator": "HLURB CLUP Guidebook Vol. 1 refined markdown lines 497-551, 665-715, 731-741, 1103-1119, 1541-1558, 3371, 3845, 4633, 6011, and 7310-8159; raw PDF hash checked locally."
+      },
+      {
+        "source_id": "clup-gis-guidebook-b087",
+        "label": "HLURB CLUP GIS Guidebook",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/CLUP GIS GUIDEBOOK HLURB.pdf",
+        "sha256": "sha256:761d92030e97ea4ee4604de76df6dce49334f35b03e6bb411617f6943f8f788f",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/CLUP GIS GUIDEBOOK HLURB.md",
+        "refined_markdown_sha256": "sha256:885dfbb2b28b045cc8d395fc7278f52d429973bd1d9006e7b8f1f7238ed10c06",
+        "locator": "CLUP GIS Guidebook refined markdown lines 1537-1572, 1944-1964, 2092-2098, 4981-5047, 4681-4735, and 5299-5369; raw PDF hash checked locally."
+      }
+    ],
+    "local_source_safe_action": "Question rewritten to the Batch 087 local raw-source-audited philippine_clup_urban_structure scope."
+  },
+  "proposed": {
+    "text": "What does map overlay or sieve analysis help determine in CLUP work?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Suitable urban expansion areas and decision zones"
+      },
+      {
+        "id": "b",
+        "text": "The architectural style of every building"
+      },
+      {
+        "id": "c",
+        "text": "The contractor warranty period"
+      },
+      {
+        "id": "d",
+        "text": "The tax rate for construction materials"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "RPS 2008 describes map overlay/sieve analysis as a way to find suitable urban land and identify decision zones.",
+    "explanation": "RPS 2008 describes map overlay/sieve analysis as a way to find suitable urban land and identify decision zones.",
+    "code_citation": "RPS 2008 - Rationalizing the Local Planning System; HLURB CLUP Guidebook Vol. 1; HLURB CLUP GIS Guidebook",
+    "bloom_level": "apply",
+    "application_context": "source_audited_local_first_batch_087",
+    "practice_context": [],
+    "difficulty": 0.6
+  }
+}

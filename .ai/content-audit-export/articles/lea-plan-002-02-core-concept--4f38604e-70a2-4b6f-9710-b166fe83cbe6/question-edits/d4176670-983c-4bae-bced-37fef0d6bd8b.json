@@ -1,0 +1,89 @@
+{
+  "question_id": "d4176670-983c-4bae-bced-37fef0d6bd8b",
+  "baseline_hash": "sha256:9859f9047f17eec67e86c3fb5009673cfd3fb8cb18854bd00848c393a89f021b",
+  "action": "replace",
+  "reason": "source-audited-article-batch-087-local-first aligned linked question with checked local raw PDF/source evidence for lea-plan-002-02-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-087",
+  "approved_at": "2026-05-12T10:45:00.000+08:00",
+  "source_audit_support": {
+    "parent_article_id": "4f38604e-70a2-4b6f-9710-b166fe83cbe6",
+    "parent_article_slug": "lea-plan-002-02-core-concept",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "New Towns/PUD Guidelines refined markdown lines 33, 59-63, 418-437, 447-460, 468-494, 513-565, 603-642, 690-712, 743-765, 900-912, 1037-1050, and 1207-1215; raw PDF hash checked locally. Open Space Development Guidelines refined markdown lines 38-60, 780-846, 805-836, and 840-846; raw PDF hash checked locally. Resilient Urban Design Guidelines refined markdown lines 41-66, 301-309, 389-392, 556-572, 595-621, and 661-678; raw PDF hash checked locally. HLURB CLUP Guidebook Vol. 1 refined markdown lines 497-551, 665-715, 731-741, 1103-1119, 1541-1558, 3371, 3845, 4633, 6011, and 7310-8159; raw PDF hash checked locally.",
+    "checked_markdown_lines": [
+      "New Towns/PUD Guidelines refined markdown lines 33, 59-63, 418-437, 447-460, 468-494, 513-565, 603-642, 690-712, 743-765, 900-912, 1037-1050, and 1207-1215; raw PDF hash checked locally.",
+      "Open Space Development Guidelines refined markdown lines 38-60, 780-846, 805-836, and 840-846; raw PDF hash checked locally.",
+      "Resilient Urban Design Guidelines refined markdown lines 41-66, 301-309, 389-392, 556-572, 595-621, and 661-678; raw PDF hash checked locally.",
+      "HLURB CLUP Guidebook Vol. 1 refined markdown lines 497-551, 665-715, 731-741, 1103-1119, 1541-1558, 3371, 3845, 4633, 6011, and 7310-8159; raw PDF hash checked locally."
+    ],
+    "checked_sources": [
+      {
+        "source_id": "new-towns-pud-guidelines-b087",
+        "label": "Guidelines on New Towns, New Settlements, and Planned Unit Development",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Guidelines on New Towns and Planned Unit Development.pdf",
+        "sha256": "sha256:684281f89b73974b098349995fe4994267c8e1934bdc36e623fc0f8501f05ac0",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Guidelines on New Towns and Planned Unit Development.md",
+        "refined_markdown_sha256": "sha256:9b4258a714988c70630731ec4270580fa70e8d0d6add4c8ab1625a00ba0cff47",
+        "locator": "New Towns/PUD Guidelines refined markdown lines 33, 59-63, 418-437, 447-460, 468-494, 513-565, 603-642, 690-712, 743-765, 900-912, 1037-1050, and 1207-1215; raw PDF hash checked locally."
+      },
+      {
+        "source_id": "open-space-development-guidelines-b087",
+        "label": "DHSUD Open Space Development Guidelines",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Open Space Development Guidelines.pdf",
+        "sha256": "sha256:2ca6d61605d370035cdd8679a43cdd57d5f40deada47601ea56e5161733e0add",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Open Space Development Guidelines.md",
+        "refined_markdown_sha256": "sha256:2be9fa0f23c22913f06acedf5905c5ebf004240ee764b47a2b1c97e15b9d9b2b",
+        "locator": "Open Space Development Guidelines refined markdown lines 38-60, 780-846, 805-836, and 840-846; raw PDF hash checked locally."
+      },
+      {
+        "source_id": "resilient-urban-design-guidelines-b087",
+        "label": "DHSUD Resilient Urban Design and Development Guidelines",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.pdf",
+        "sha256": "sha256:3c85b4f85c6e82e34e7251049b34eba43b5cf19ff4e6c84548f5761ad1ed6d98",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/Resilient Urban Design and Development Guidelines.md",
+        "refined_markdown_sha256": "sha256:f612e4a0dc4545c52b4223e2dc2b3b22e83c7cf29ff1df856110cd0b60b2bae7",
+        "locator": "Resilient Urban Design Guidelines refined markdown lines 41-66, 301-309, 389-392, 556-572, 595-621, and 661-678; raw PDF hash checked locally."
+      },
+      {
+        "source_id": "hlurb-clup-guidebook-vol1-b087",
+        "label": "HLURB CLUP Guidebook Vol. 1",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/HLURB-DHSUD/HLURB_CLUP_Guidebook_Vol_1_11042015.pdf",
+        "sha256": "sha256:5b8e141fa204a4fc8ce74a0c165c55bd8c166691b0ccc393f24f61db57690c6f",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/HLURB-DHSUD/HLURB_CLUP_Guidebook_Vol_1_11042015.md",
+        "refined_markdown_sha256": "sha256:26067221888dd0b950bf65719ba7ce8308694b7d799dca6f8f238ad7d7f49025",
+        "locator": "HLURB CLUP Guidebook Vol. 1 refined markdown lines 497-551, 665-715, 731-741, 1103-1119, 1541-1558, 3371, 3845, 4633, 6011, and 7310-8159; raw PDF hash checked locally."
+      }
+    ],
+    "local_source_safe_action": "Question rewritten to the Batch 087 local raw-source-audited philippine_contemporary_planning_models scope."
+  },
+  "proposed": {
+    "text": "Why must contemporary planning models be carried into zoning controls?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Because the CLUP idea becomes enforceable only through compatible zoning and development regulation"
+      },
+      {
+        "id": "b",
+        "text": "Because zoning is unrelated to land use"
+      },
+      {
+        "id": "c",
+        "text": "Because design concepts automatically build themselves"
+      },
+      {
+        "id": "d",
+        "text": "Because public hearings are never needed"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": "Local guidance links CLUP strategies, PUDs, TOD, and open space to zoning ordinance implementation.",
+    "explanation": "Local guidance links CLUP strategies, PUDs, TOD, and open space to zoning ordinance implementation.",
+    "code_citation": "Guidelines on New Towns, New Settlements, and Planned Unit Development; DHSUD Open Space Development Guidelines; DHSUD Resilient Urban Design and Development Guidelines; HLURB CLUP Guidebook Vol. 1",
+    "bloom_level": "analyze",
+    "application_context": "source_audited_local_first_batch_087",
+    "practice_context": [],
+    "difficulty": 0.75
+  }
+}

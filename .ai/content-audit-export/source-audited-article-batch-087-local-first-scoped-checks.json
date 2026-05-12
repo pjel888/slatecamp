@@ -1,0 +1,220 @@
+{
+  "schema_version": "source-audited-local-first-scoped-checks-v1",
+  "batch_number": 87,
+  "batch_id": "source-audited-article-batch-087-local-first",
+  "generated_at": "2026-05-12T11:05:00.000+08:00",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "blockers": 0,
+  "scope": {
+    "manifest_path": "/Users/philiplewis/slatecamp/.ai/03_plans/production-line-batch-087-manifest.json",
+    "article_folder_paths": [
+      "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6",
+      "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6",
+      "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f",
+      "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283",
+      "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed"
+    ],
+    "question_edits_paths": [
+      "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits",
+      "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits",
+      "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/question-edits",
+      "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/question-edits",
+      "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits"
+    ],
+    "report_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-087-local-first-report.md",
+    "ledger_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-087-local-first-ledger.json",
+    "scoped_checks_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-087-local-first-scoped-checks.json"
+  },
+  "checks": {
+    "compose": {
+      "status": "PASS",
+      "passed": 5,
+      "total": 5,
+      "blockers": 0
+    },
+    "diff": {
+      "status": "PASS",
+      "passed": 5,
+      "total": 5,
+      "safe_to_push": true,
+      "blockers": 0
+    },
+    "validate_bundles": {
+      "status": "PASS",
+      "passed": 5,
+      "total": 5,
+      "blockers": 0,
+      "warnings": "component-usage.json missing warnings only"
+    },
+    "ui_block_edit_validation": {
+      "status": "PASS",
+      "passed": 5,
+      "total": 5,
+      "blockers": 0,
+      "warnings": 0
+    },
+    "scoped_json_parse": {
+      "status": "PASS",
+      "files": 105,
+      "failures": 0
+    },
+    "placeholder_internal_note_source_gap_scan": {
+      "status": "PASS",
+      "matches": 0,
+      "note": "Scoped to normalized.md, candidate.md, sources.json, source-audit-evidence.json, and question-edits."
+    },
+    "source_hash_checks": {
+      "status": "PASS",
+      "checks": 44,
+      "failures": 0
+    },
+    "linked_question_question_edit_counts": {
+      "status": "PASS",
+      "linked_questions": 50,
+      "question_edits": 50,
+      "failures": 0
+    },
+    "stale_compose_error_scan": {
+      "status": "PASS",
+      "files": 0
+    },
+    "targeted_tests": {
+      "status": "PASS",
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "pass": 34,
+      "fail": 0,
+      "expects": 328
+    },
+    "scoped_git_diff_check": {
+      "status": "PASS",
+      "command": "git diff --check -- .ai/content-audit-export .ai/03_plans/source-audited-local-first-batches-handoff.md",
+      "blockers": 0
+    },
+    "artifact_json_parse": {
+      "status": "PASS",
+      "files": 107,
+      "article_json_files": 105,
+      "artifact_json_files": 2,
+      "failures": 0
+    },
+    "batch_087_handoff_segment_scan": {
+      "status": "PASS",
+      "matches": 0
+    }
+  },
+  "article_json_files_parsed": [
+    ".ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/compose-report.json",
+    ".ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/diff-report.json",
+    ".ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits/0c5fb6b9-1a92-424d-99eb-e98798457031.json",
+    ".ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits/474a92bc-e098-45ad-b16e-4b310890bead.json",
+    ".ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits/4ee128a4-3218-4dea-b45d-fca4f6f777fe.json",
+    ".ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits/796c1c03-ed56-4ffe-b024-7d8948e0ddb9.json",
+    ".ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits/819e5bda-4246-4c13-9a76-7acd0f8648d8.json",
+    ".ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits/c75eab96-0b69-44cc-9f3d-43fcb3449239.json",
+    ".ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits/cec9245f-ad6b-48d5-b9c2-472cbccbb0fe.json",
+    ".ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits/df8adb14-a0eb-40aa-9485-bb8d12578ec3.json",
+    ".ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits/e3aeecb6-c72c-4010-9ec4-c77ff7f17422.json",
+    ".ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/question-edits/f25d8b6b-7719-4e66-88b7-f61ba7ef6547.json",
+    ".ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/sources.json",
+    ".ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/taxonomy.json",
+    ".ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-plan-002-01-core-concept--50d41d7e-57cd-4280-b850-e6d2f89414a6/ui-blocks.json",
+    ".ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/compose-report.json",
+    ".ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/diff-report.json",
+    ".ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits/235f7569-3e57-4260-bf7c-928452bf5479.json",
+    ".ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits/336402f6-1899-4e9c-8b36-bde4e07d8d4c.json",
+    ".ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits/50617027-2f64-44e5-9118-dcddb7529163.json",
+    ".ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits/5a51aace-f447-4b35-9893-aedd60e421cd.json",
+    ".ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits/68e914a6-f016-4582-833f-1191640e5d02.json",
+    ".ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits/6ebab89d-5143-4659-a0f7-fcf297463b45.json",
+    ".ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits/87d9bb79-27be-4628-88dd-da011f7a49f2.json",
+    ".ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits/c12b8f34-f200-4f72-9d8d-fe668b8c6e66.json",
+    ".ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits/d4176670-983c-4bae-bced-37fef0d6bd8b.json",
+    ".ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/question-edits/dc8bb7ae-f790-4533-8bd4-59d5f2091c61.json",
+    ".ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/sources.json",
+    ".ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/taxonomy.json",
+    ".ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-plan-002-02-core-concept--4f38604e-70a2-4b6f-9710-b166fe83cbe6/ui-blocks.json",
+    ".ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/compose-report.json",
+    ".ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/diff-report.json",
+    ".ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/question-edits/12c2e70c-c8b6-45c0-81e2-bac0bc29ca74.json",
+    ".ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/question-edits/152fa07a-8165-49dd-b97e-051a50febb81.json",
+    ".ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/question-edits/162fec39-fb14-4a94-99c9-fd0ffd0448b7.json",
+    ".ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/question-edits/24247123-2cbc-4e46-be38-b3a0c2795a92.json",
+    ".ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/question-edits/34cd791f-a3a5-46f2-b1a5-99996f07f9f4.json",
+    ".ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/question-edits/4d7b9926-3a43-459f-bf63-27a0c6fa4fbf.json",
+    ".ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/question-edits/602419cc-c3a9-4702-b5aa-fee1c617168a.json",
+    ".ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/question-edits/60889c28-ee6d-4f2c-aeb2-91d0c815c229.json",
+    ".ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/question-edits/a5c493f6-588f-4639-851b-dca9710c64ca.json",
+    ".ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/question-edits/e24d0d10-5e86-4058-892d-9d395c1cb664.json",
+    ".ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/sources.json",
+    ".ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/taxonomy.json",
+    ".ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-plan-002-05-core-concept--1a6a6df8-8f58-42aa-a38b-e59fe737716f/ui-blocks.json",
+    ".ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/compose-report.json",
+    ".ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/diff-report.json",
+    ".ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/question-edits/0688b48b-7611-467e-b590-510e75a7d45d.json",
+    ".ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/question-edits/0b101491-dc2d-4782-9625-027514ede20d.json",
+    ".ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/question-edits/11a6f7b4-db33-440d-b94d-deb31dc5363f.json",
+    ".ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/question-edits/1ff24db1-eff3-4b3c-9672-c5f83fec4e82.json",
+    ".ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/question-edits/4a01b852-3aad-432f-827c-4600fce93b6e.json",
+    ".ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/question-edits/5f721bb3-a7d5-4671-8492-bb0ab0db1d08.json",
+    ".ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/question-edits/92c1adc3-a619-4d92-87c7-b9c177bb3b26.json",
+    ".ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/question-edits/95885061-42bf-4aeb-9835-ce3b3e99c71f.json",
+    ".ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/question-edits/e764d8f5-5909-456d-8fb6-5fb027a2ab01.json",
+    ".ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/question-edits/f3df1648-1823-4ff2-a879-204919d3457d.json",
+    ".ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/sources.json",
+    ".ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/taxonomy.json",
+    ".ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-plan-002-07-core-concept--dbac0a4a-cff7-4cb1-8e66-dcd6fb224283/ui-blocks.json",
+    ".ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/compose-report.json",
+    ".ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/diff-report.json",
+    ".ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits/169a96c8-f01e-4a00-97a8-a96b96536e76.json",
+    ".ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits/23941221-20b3-4b03-9157-d5687638db39.json",
+    ".ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits/2ba52cd1-9352-421d-ac3b-29f513929e57.json",
+    ".ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits/412a5c9d-4442-42d8-a7f8-587c5355e54b.json",
+    ".ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits/54ee072d-60aa-4363-b2d0-4928d0a7f1fa.json",
+    ".ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits/5cd1180c-4cb6-4fb5-963b-cf28f9fc2149.json",
+    ".ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits/80463191-02dc-4b84-85b2-8267207f0719.json",
+    ".ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits/972bdb07-0df4-4a39-b97d-29db3dcbe46d.json",
+    ".ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits/b07093ca-4877-4435-8004-9bfcd8a5c321.json",
+    ".ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/question-edits/c51a6f2b-6cc0-405a-901d-1a6f66633826.json",
+    ".ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/sources.json",
+    ".ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/taxonomy.json",
+    ".ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-plan-005-04-core-concept--f6b1d119-9ba2-436b-ba39-d62abceef5ed/ui-blocks.json"
+  ],
+  "artifact_json_files_parsed_after_generation": [
+    ".ai/content-audit-export/source-audited-article-batch-087-local-first-ledger.json",
+    ".ai/content-audit-export/source-audited-article-batch-087-local-first-scoped-checks.json"
+  ],
+  "known_nonblocking_warnings": [
+    "component-usage.json has not been generated for these plain Markdown article bundles."
+  ],
+  "unresolved_blockers": []
+}
