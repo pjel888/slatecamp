@@ -1,8 +1,8 @@
 # Batch 091 Independent Quality Review
 
-**Reviewer:** Sisyphus (OpenCode Go independent QA)  
-**Date:** 2026-05-12  
-**Review type:** Read-only audit of completed batch artifacts  
+**Reviewer:** Sisyphus (OpenCode Go independent QA)
+**Date:** 2026-05-12
+**Review type:** Read-only audit of completed batch artifacts
 **Scope:** Batch 091 only — construction-systems and fire-safety cluster (5 articles, 168 linked questions)
 
 ---
