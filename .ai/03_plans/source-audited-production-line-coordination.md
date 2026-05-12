@@ -87,4 +87,3 @@ Process advisory: the Batch 093 reservation manifest/process stated `selected_id
 Independent QA for Batch 094 found that the five Batch 094 article IDs appeared in older local-first/re-audit artifacts for Batches 004, 005, and 006. QA determined these were historical uncommitted re-audit artifacts, not accepted final production content, not Supabase pushes, and not deploys; therefore Batch 094 is acceptable as the serially accepted production-line pass for these five clusters.
 
 Process advisory: future reservation coordinators must distinguish accepted/committed batch exclusion from historical/re-audit artifact overlap and record both explicitly.
-
