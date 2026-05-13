@@ -1,0 +1,88 @@
+{
+  "question_id": "4f1ecc9c-d5a2-4843-9cb3-e52c475c7625",
+  "baseline_hash": "sha256:61d49e8e3942870a11ef96bcc0bdb31a831405de91350c3f17d519edbac04bf5",
+  "action": "replace",
+  "reason": "source-audited-article-batch-118-local-first source-maps lea-hist-001-01-core-concept and rewrites this linked question for source-safe answer, options, rationale, and article alignment.",
+  "approved_by": "codex-local-source-audit-batch-118",
+  "approved_at": "2026-05-13T22:16:00+08:00",
+  "source_audit_support": {
+    "parent_article_id": "28f9907c-c87b-4f49-a9c4-8371989f6865",
+    "parent_article_slug": "lea-hist-001-01-core-concept",
+    "answer_key_fields_changed": false,
+    "correct_option_id_changed": false,
+    "option_text_revised_without_correct_option_change": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UNESCO Stonehenge/Avebury, Megalithic Temples of Malta, Bru na Boinne, and HES Calanais source-map captures; source-map-batch-118 refined anchors.",
+    "checked_markdown_lines": [
+      "UNESCO Stonehenge/Avebury, Megalithic Temples of Malta, Bru na Boinne, and HES Calanais source-map captures; source-map-batch-118 refined anchors."
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-118/lea-hist-001-01-megalithic-architecture.source-capture.md",
+        "sha256": "sha256:c6000a8c386cd7579ea3a69b634d5db7c23ef9d38513ee1dd93e4a8c1021902d",
+        "source_id": "batch118-megalithic-official-source-map-capture",
+        "locator": "UNESCO Stonehenge/Avebury, Megalithic Temples of Malta, Bru na Boinne, and HES Calanais source-map captures; source-map-batch-118 refined anchors."
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-118/lea-hist-001-01-megalithic-architecture.refined.md",
+        "sha256": "sha256:c80187e3bb8a8f7a5e814c9f96280165f57b66f76c3291db00ce06b132c358ab",
+        "source_id": "batch118-megalithic-official-source-map-refined",
+        "locator": "UNESCO Stonehenge/Avebury, Megalithic Temples of Malta, Bru na Boinne, and HES Calanais source-map captures; source-map-batch-118 refined anchors."
+      }
+    ],
+    "local_source_safe_action": "Batch 118 source-mapped the article and linked question together using local source captures/conversions before composing the candidate.",
+    "batch_id": "source-audited-article-batch-118-local-first",
+    "new_source_map_phase": true
+  },
+  "proposed": {
+    "question_id": "4f1ecc9c-d5a2-4843-9cb3-e52c475c7625",
+    "article_id": "28f9907c-c87b-4f49-a9c4-8371989f6865",
+    "topic_id": "5268bd23-8290-44ef-b78e-65df843f5582",
+    "text": "Which source-safe feature makes Stonehenge a key example for post-and-lintel megalithic identification?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Upright stones carry horizontal lintels in trilithon and circle arrangements"
+      },
+      {
+        "id": "b",
+        "text": "Courses of stone project inward to close a burial chamber"
+      },
+      {
+        "id": "c",
+        "text": "Mud-brick towers rise in stepped platforms"
+      },
+      {
+        "id": "d",
+        "text": "A single obelisk stands as a shaped monolith"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "b": "This option does not match the source-audited article and selected local source anchors for this item.",
+      "c": "This option does not match the source-audited article and selected local source anchors for this item.",
+      "d": "This option does not match the source-audited article and selected local source anchors for this item.",
+      "correct": "Stonehenge is the clearest selected source for upright stones and horizontal lintels; corbelling, ziggurats, and obelisks are different traditions.",
+      "takeaway": "Stonehenge reinforces the trilithon/post-and-lintel clue."
+    },
+    "explanation": "Stonehenge is the clearest selected source for upright stones and horizontal lintels; corbelling, ziggurats, and obelisks are different traditions. Stonehenge reinforces the trilithon/post-and-lintel clue.",
+    "code_citation": null,
+    "bloom_level": "remember",
+    "application_context": "code_interpretation",
+    "practice_context": [
+      "ST"
+    ],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false,
+    "model_id": "ALE-HIST-001-01-003",
+    "prompt_image_url": null,
+    "created_at": "2026-03-23T19:27:22.549111+00:00",
+    "updated_at": "2026-05-06T14:56:47.677671+00:00"
+  }
+}

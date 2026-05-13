@@ -1,0 +1,94 @@
+{
+  "question_id": "1f47fadf-56d1-4efb-9436-2f50ccfbb5bb",
+  "baseline_hash": "sha256:3e484ce40053c6baa04b6ef6dc4f9deaf1f9bba632bb8f36118507b58759a02c",
+  "action": "replace",
+  "reason": "source-audited-article-batch-118-local-first source-maps lea-hist-001-02-core-concept and rewrites this linked question for source-safe answer, options, rationale, and article alignment.",
+  "approved_by": "codex-local-source-audit-batch-118",
+  "approved_at": "2026-05-13T22:16:00+08:00",
+  "source_audit_support": {
+    "parent_article_id": "e72bf24e-a816-4c4f-ae4b-f8e97c5d5519",
+    "parent_article_slug": "lea-hist-001-02-core-concept",
+    "answer_key_fields_changed": false,
+    "correct_option_id_changed": false,
+    "option_text_revised_without_correct_option_change": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UNESCO Ahwar/Babylon captures plus Fletcher refined markdown lines 5783-5889, 5994-6062, 6142-6164.",
+    "checked_markdown_lines": [
+      "UNESCO Ahwar/Babylon captures plus Fletcher refined markdown lines 5783-5889, 5994-6062, 6142-6164."
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-118/lea-hist-001-02-mesopotamian-architecture.source-capture.md",
+        "sha256": "sha256:5c6fb94340092efe1619c0ef7fc0fd6c3e2345759bee5a26c040f9720c9f55f8",
+        "source_id": "batch118-mesopotamian-official-source-map-capture",
+        "locator": "UNESCO Ahwar/Babylon captures plus Fletcher refined markdown lines 5783-5889, 5994-6062, 6142-6164."
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-118/lea-hist-001-02-mesopotamian-architecture.refined.md",
+        "sha256": "sha256:ff7cfabb9f66e7e727aa6274a5727443f0de13fb58052e3ccd3c4b59aa442808",
+        "source_id": "batch118-mesopotamian-official-source-map-refined",
+        "locator": "UNESCO Ahwar/Babylon captures plus Fletcher refined markdown lines 5783-5889, 5994-6062, 6142-6164."
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).md",
+        "sha256": "sha256:0d38f59019ff829f62a241a88757583677d4636347bf765c757cd36a83f6894e",
+        "source_id": "batch118-fletcher-western-asiatic-local",
+        "locator": "Fletcher refined markdown lines 5783-5889, 5994-6062, 6142-6164"
+      }
+    ],
+    "local_source_safe_action": "Batch 118 source-mapped the article and linked question together using local source captures/conversions before composing the candidate.",
+    "batch_id": "source-audited-article-batch-118-local-first",
+    "new_source_map_phase": true
+  },
+  "proposed": {
+    "question_id": "1f47fadf-56d1-4efb-9436-2f50ccfbb5bb",
+    "article_id": "e72bf24e-a816-4c4f-ae4b-f8e97c5d5519",
+    "topic_id": "b2a8f6c5-2694-428c-a1a1-4ea1d1b4254e",
+    "text": "Which comparison best shows variation inside Mesopotamian architectural tradition?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Every Mesopotamian period used identical buildings with no variation"
+      },
+      {
+        "id": "b",
+        "text": "Sumerian cities, Babylonian walls/gates, and Assyrian palace reliefs adapt a shared brick-based urban tradition"
+      },
+      {
+        "id": "c",
+        "text": "Mesopotamia is only Greek temple architecture under another name"
+      },
+      {
+        "id": "d",
+        "text": "Mesopotamian buildings were all Egyptian pyramids"
+      }
+    ],
+    "correct_option_id": "b",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "This option does not match the source-audited article and selected local source anchors for this item.",
+      "c": "This option does not match the source-audited article and selected local source anchors for this item.",
+      "d": "This option does not match the source-audited article and selected local source anchors for this item.",
+      "correct": "The selected UNESCO and Fletcher sources support a shared regional tradition with distinct city, ziggurat, palace, gate, and relief expressions.",
+      "takeaway": "Treat Mesopotamia as one broad tradition with varied phases and building types."
+    },
+    "explanation": "The selected UNESCO and Fletcher sources support a shared regional tradition with distinct city, ziggurat, palace, gate, and relief expressions. Treat Mesopotamia as one broad tradition with varied phases and building types.",
+    "code_citation": null,
+    "bloom_level": "analyze",
+    "application_context": "design_application",
+    "practice_context": [
+      "CMP"
+    ],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false,
+    "model_id": "ALE-HIST-001-02-010",
+    "prompt_image_url": null,
+    "created_at": "2026-03-23T19:27:22.769541+00:00",
+    "updated_at": "2026-04-08T07:44:46.846261+00:00"
+  }
+}

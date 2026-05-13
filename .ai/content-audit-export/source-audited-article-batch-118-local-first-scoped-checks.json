@@ -1,0 +1,379 @@
+{
+  "batch_id": "source-audited-article-batch-118-local-first",
+  "batch_number": "118",
+  "generated_at": "2026-05-13T22:42:00+08:00",
+  "status": "pass_local_first_git_blocked",
+  "gates": {
+    "compose_diff_validate_strict_5_of_5": {
+      "status": "pass",
+      "expected_articles": 5,
+      "actual_articles": 5,
+      "articles": [
+        {
+          "slug": "lea-hist-001-01-core-concept",
+          "status": "pass"
+        },
+        {
+          "slug": "lea-hist-001-02-core-concept",
+          "status": "pass"
+        },
+        {
+          "slug": "lea-hist-001-03-core-concept",
+          "status": "pass"
+        },
+        {
+          "slug": "lea-hist-001-04-core-concept",
+          "status": "pass"
+        },
+        {
+          "slug": "lea-hist-001-05-core-concept",
+          "status": "pass"
+        }
+      ]
+    },
+    "ui_block_edit_validation": {
+      "status": "pass",
+      "files": [
+        ".ai/content-audit-export/articles/lea-hist-001-01-core-concept--28f9907c-c87b-4f49-a9c4-8371989f6865/ui-block-edit-validation.json",
+        ".ai/content-audit-export/articles/lea-hist-001-02-core-concept--e72bf24e-a816-4c4f-ae4b-f8e97c5d5519/ui-block-edit-validation.json",
+        ".ai/content-audit-export/articles/lea-hist-001-03-core-concept--6ac76cc0-1023-4e3d-8282-884fa6cc20a2/ui-block-edit-validation.json",
+        ".ai/content-audit-export/articles/lea-hist-001-04-core-concept--3e966435-e276-422e-a220-374043120cec/ui-block-edit-validation.json",
+        ".ai/content-audit-export/articles/lea-hist-001-05-core-concept--757e71dc-bf5f-4a3a-9948-5063d8cd67bb/ui-block-edit-validation.json"
+      ]
+    },
+    "scoped_json_parse": {
+      "status": "pass",
+      "parsed_files": 117,
+      "failures": [],
+      "note": "Count includes article bundle JSON, question-edit JSON, source-audit evidence, global validation/UI-block summaries, Batch 118 ledger, manifest, and scoped checks."
+    },
+    "placeholder_internal_note_source_gap_scan": {
+      "status": "pass",
+      "findings": [],
+      "scope": "normalized.md, candidate.md, and question-edits/*.json for five Batch 118 articles; original.md historical UI-block markers excluded from outgoing learner content scan.",
+      "hits": 0
+    },
+    "source_hash_checks": {
+      "status": "pass",
+      "checked_files": 20,
+      "failures": [],
+      "checks": [
+        {
+          "article_id": "28f9907c-c87b-4f49-a9c4-8371989f6865",
+          "slug": "lea-hist-001-01-core-concept",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-118/lea-hist-001-01-megalithic-architecture.source-capture.md",
+          "expected_sha256": "sha256:c6000a8c386cd7579ea3a69b634d5db7c23ef9d38513ee1dd93e4a8c1021902d",
+          "actual_sha256": "sha256:c6000a8c386cd7579ea3a69b634d5db7c23ef9d38513ee1dd93e4a8c1021902d",
+          "source_id": "batch118-megalithic-official-source-map-capture",
+          "locator": "UNESCO Stonehenge/Avebury, Megalithic Temples of Malta, Bru na Boinne, and HES Calanais source-map captures; source-map-batch-118 refined anchors.",
+          "status": "pass"
+        },
+        {
+          "article_id": "28f9907c-c87b-4f49-a9c4-8371989f6865",
+          "slug": "lea-hist-001-01-core-concept",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-118/lea-hist-001-01-megalithic-architecture.refined.md",
+          "expected_sha256": "sha256:c80187e3bb8a8f7a5e814c9f96280165f57b66f76c3291db00ce06b132c358ab",
+          "actual_sha256": "sha256:c80187e3bb8a8f7a5e814c9f96280165f57b66f76c3291db00ce06b132c358ab",
+          "source_id": "batch118-megalithic-official-source-map-refined",
+          "locator": "UNESCO Stonehenge/Avebury, Megalithic Temples of Malta, Bru na Boinne, and HES Calanais source-map captures; source-map-batch-118 refined anchors.",
+          "status": "pass"
+        },
+        {
+          "article_id": "e72bf24e-a816-4c4f-ae4b-f8e97c5d5519",
+          "slug": "lea-hist-001-02-core-concept",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-118/lea-hist-001-02-mesopotamian-architecture.source-capture.md",
+          "expected_sha256": "sha256:5c6fb94340092efe1619c0ef7fc0fd6c3e2345759bee5a26c040f9720c9f55f8",
+          "actual_sha256": "sha256:5c6fb94340092efe1619c0ef7fc0fd6c3e2345759bee5a26c040f9720c9f55f8",
+          "source_id": "batch118-mesopotamian-official-source-map-capture",
+          "locator": "UNESCO Ahwar/Babylon captures plus Fletcher refined markdown lines 5783-5889, 5994-6062, 6142-6164.",
+          "status": "pass"
+        },
+        {
+          "article_id": "e72bf24e-a816-4c4f-ae4b-f8e97c5d5519",
+          "slug": "lea-hist-001-02-core-concept",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-118/lea-hist-001-02-mesopotamian-architecture.refined.md",
+          "expected_sha256": "sha256:ff7cfabb9f66e7e727aa6274a5727443f0de13fb58052e3ccd3c4b59aa442808",
+          "actual_sha256": "sha256:ff7cfabb9f66e7e727aa6274a5727443f0de13fb58052e3ccd3c4b59aa442808",
+          "source_id": "batch118-mesopotamian-official-source-map-refined",
+          "locator": "UNESCO Ahwar/Babylon captures plus Fletcher refined markdown lines 5783-5889, 5994-6062, 6142-6164.",
+          "status": "pass"
+        },
+        {
+          "article_id": "e72bf24e-a816-4c4f-ae4b-f8e97c5d5519",
+          "slug": "lea-hist-001-02-core-concept",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).md",
+          "expected_sha256": "sha256:0d38f59019ff829f62a241a88757583677d4636347bf765c757cd36a83f6894e",
+          "actual_sha256": "sha256:0d38f59019ff829f62a241a88757583677d4636347bf765c757cd36a83f6894e",
+          "source_id": "batch118-fletcher-western-asiatic-local",
+          "locator": "Fletcher refined markdown lines 5783-5889, 5994-6062, 6142-6164",
+          "status": "pass"
+        },
+        {
+          "article_id": "e72bf24e-a816-4c4f-ae4b-f8e97c5d5519",
+          "slug": "lea-hist-001-02-core-concept",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).pdf",
+          "expected_sha256": "sha256:396ffad4fd94dc3b375d519215bb12d3d3932ecf80b63e0dda4bdff258676d40",
+          "actual_sha256": "sha256:396ffad4fd94dc3b375d519215bb12d3d3932ecf80b63e0dda4bdff258676d40",
+          "source_id": "batch118-fletcher-western-asiatic-local",
+          "locator": "Fletcher refined markdown lines 5783-5889, 5994-6062, 6142-6164",
+          "status": "pass"
+        },
+        {
+          "article_id": "6ac76cc0-1023-4e3d-8282-884fa6cc20a2",
+          "slug": "lea-hist-001-03-core-concept",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-118/lea-hist-001-03-achaemenid-persian-architecture.source-capture.md",
+          "expected_sha256": "sha256:aa14fd96bde2ae9c4e92352878b9e716cf5866419226a3c14e4d41e0bb33523a",
+          "actual_sha256": "sha256:aa14fd96bde2ae9c4e92352878b9e716cf5866419226a3c14e4d41e0bb33523a",
+          "source_id": "batch118-achaemenid-official-source-map-capture",
+          "locator": "UNESCO Persepolis/Pasargadae/Susa captures plus Fletcher refined markdown lines 6070-6115.",
+          "status": "pass"
+        },
+        {
+          "article_id": "6ac76cc0-1023-4e3d-8282-884fa6cc20a2",
+          "slug": "lea-hist-001-03-core-concept",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-118/lea-hist-001-03-achaemenid-persian-architecture.refined.md",
+          "expected_sha256": "sha256:f7b73eedd7ae5987a384c469c04f9f0750a9ee34ea13c453b1b69ff8a665c16c",
+          "actual_sha256": "sha256:f7b73eedd7ae5987a384c469c04f9f0750a9ee34ea13c453b1b69ff8a665c16c",
+          "source_id": "batch118-achaemenid-official-source-map-refined",
+          "locator": "UNESCO Persepolis/Pasargadae/Susa captures plus Fletcher refined markdown lines 6070-6115.",
+          "status": "pass"
+        },
+        {
+          "article_id": "6ac76cc0-1023-4e3d-8282-884fa6cc20a2",
+          "slug": "lea-hist-001-03-core-concept",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).md",
+          "expected_sha256": "sha256:0d38f59019ff829f62a241a88757583677d4636347bf765c757cd36a83f6894e",
+          "actual_sha256": "sha256:0d38f59019ff829f62a241a88757583677d4636347bf765c757cd36a83f6894e",
+          "source_id": "batch118-fletcher-persian-local",
+          "locator": "Fletcher refined markdown lines 6070-6115",
+          "status": "pass"
+        },
+        {
+          "article_id": "6ac76cc0-1023-4e3d-8282-884fa6cc20a2",
+          "slug": "lea-hist-001-03-core-concept",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).pdf",
+          "expected_sha256": "sha256:396ffad4fd94dc3b375d519215bb12d3d3932ecf80b63e0dda4bdff258676d40",
+          "actual_sha256": "sha256:396ffad4fd94dc3b375d519215bb12d3d3932ecf80b63e0dda4bdff258676d40",
+          "source_id": "batch118-fletcher-persian-local",
+          "locator": "Fletcher refined markdown lines 6070-6115",
+          "status": "pass"
+        },
+        {
+          "article_id": "3e966435-e276-422e-a220-374043120cec",
+          "slug": "lea-hist-001-04-core-concept",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-118/lea-hist-001-04-egyptian-architecture.source-capture.md",
+          "expected_sha256": "sha256:853996b6bc812c98e71c92073a71af16645b8db52480258b6dead18d40e387d1",
+          "actual_sha256": "sha256:853996b6bc812c98e71c92073a71af16645b8db52480258b6dead18d40e387d1",
+          "source_id": "batch118-egyptian-official-source-map-capture",
+          "locator": "UNESCO Memphis/Thebes captures plus 30-Second Ancient Egypt refined markdown lines 370-382, 392-452.",
+          "status": "pass"
+        },
+        {
+          "article_id": "3e966435-e276-422e-a220-374043120cec",
+          "slug": "lea-hist-001-04-core-concept",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-118/lea-hist-001-04-egyptian-architecture.refined.md",
+          "expected_sha256": "sha256:3f54027ca4ebc0a79d851ed689bb16477955f99f89e608f365553ffb1215651b",
+          "actual_sha256": "sha256:3f54027ca4ebc0a79d851ed689bb16477955f99f89e608f365553ffb1215651b",
+          "source_id": "batch118-egyptian-official-source-map-refined",
+          "locator": "UNESCO Memphis/Thebes captures plus 30-Second Ancient Egypt refined markdown lines 370-382, 392-452.",
+          "status": "pass"
+        },
+        {
+          "article_id": "3e966435-e276-422e-a220-374043120cec",
+          "slug": "lea-hist-001-04-core-concept",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/30-Second Ancient Egypt (The 50 Most Important Achievements of a Timeless Civilisation Each Explained in Half A Minute) - Peter Der Manuelian.md",
+          "expected_sha256": "sha256:b7571430e45c33fe425481a647a5b709be2d89f518074b4b6d48411b5c9ca35c",
+          "actual_sha256": "sha256:b7571430e45c33fe425481a647a5b709be2d89f518074b4b6d48411b5c9ca35c",
+          "source_id": "batch118-der-manuelian-egypt-local",
+          "locator": "30-Second Ancient Egypt refined markdown lines 370-382, 392-452",
+          "status": "pass"
+        },
+        {
+          "article_id": "3e966435-e276-422e-a220-374043120cec",
+          "slug": "lea-hist-001-04-core-concept",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/30-Second Ancient Egypt (The 50 Most Important Achievements of a Timeless Civilisation Each Explained in Half A Minute) - Peter Der Manuelian.pdf",
+          "expected_sha256": "sha256:0c38c1f6e3f024ce716d0c230e5198a4d08878c6f359d3fbe76d6aa26f4d1e9c",
+          "actual_sha256": "sha256:0c38c1f6e3f024ce716d0c230e5198a4d08878c6f359d3fbe76d6aa26f4d1e9c",
+          "source_id": "batch118-der-manuelian-egypt-local",
+          "locator": "30-Second Ancient Egypt refined markdown lines 370-382, 392-452",
+          "status": "pass"
+        },
+        {
+          "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+          "slug": "lea-hist-001-05-core-concept",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-118/lea-hist-001-05-greek-architecture.source-capture.md",
+          "expected_sha256": "sha256:73359551fa4553a667f3dc1d76d2946bc7410ccfc43ac728737ea63f955ccf59",
+          "actual_sha256": "sha256:73359551fa4553a667f3dc1d76d2946bc7410ccfc43ac728737ea63f955ccf59",
+          "source_id": "batch118-greek-official-source-map-capture",
+          "locator": "UNESCO Acropolis/Bassae/Delphi/Olympia captures plus Vitruvius lines 1963-1999, 2061-2083 and Fletcher Parthenon lines 7180-7190.",
+          "status": "pass"
+        },
+        {
+          "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+          "slug": "lea-hist-001-05-core-concept",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-118/lea-hist-001-05-greek-architecture.refined.md",
+          "expected_sha256": "sha256:3cedc9cdf4bc112c5914c21fc8fb4d21c3a492cafff31190e9aa6a55e666d1fa",
+          "actual_sha256": "sha256:3cedc9cdf4bc112c5914c21fc8fb4d21c3a492cafff31190e9aa6a55e666d1fa",
+          "source_id": "batch118-greek-official-source-map-refined",
+          "locator": "UNESCO Acropolis/Bassae/Delphi/Olympia captures plus Vitruvius lines 1963-1999, 2061-2083 and Fletcher Parthenon lines 7180-7190.",
+          "status": "pass"
+        },
+        {
+          "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+          "slug": "lea-hist-001-05-core-concept",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Vitruvius - 10 Books of Architecture.md",
+          "expected_sha256": "sha256:07eaf55d56357483d264d765f1bf3565aa0c839916def1edd6a17f125980ec75",
+          "actual_sha256": "sha256:07eaf55d56357483d264d765f1bf3565aa0c839916def1edd6a17f125980ec75",
+          "source_id": "batch118-vitruvius-orders-local",
+          "locator": "Vitruvius refined markdown lines 1963-1999 and 2061-2083",
+          "status": "pass"
+        },
+        {
+          "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+          "slug": "lea-hist-001-05-core-concept",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Vitruvius - 10 Books of Architecture.pdf",
+          "expected_sha256": "sha256:e63f78260563ae36c5f1f85a07371df3d5740dfb13f5fc77453d88632238e020",
+          "actual_sha256": "sha256:e63f78260563ae36c5f1f85a07371df3d5740dfb13f5fc77453d88632238e020",
+          "source_id": "batch118-vitruvius-orders-local",
+          "locator": "Vitruvius refined markdown lines 1963-1999 and 2061-2083",
+          "status": "pass"
+        },
+        {
+          "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+          "slug": "lea-hist-001-05-core-concept",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).md",
+          "expected_sha256": "sha256:0d38f59019ff829f62a241a88757583677d4636347bf765c757cd36a83f6894e",
+          "actual_sha256": "sha256:0d38f59019ff829f62a241a88757583677d4636347bf765c757cd36a83f6894e",
+          "source_id": "batch118-fletcher-parthenon-local",
+          "locator": "Fletcher refined markdown lines 7180-7190 plus order/caryatid/tholos index locators",
+          "status": "pass"
+        },
+        {
+          "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+          "slug": "lea-hist-001-05-core-concept",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).pdf",
+          "expected_sha256": "sha256:396ffad4fd94dc3b375d519215bb12d3d3932ecf80b63e0dda4bdff258676d40",
+          "actual_sha256": "sha256:396ffad4fd94dc3b375d519215bb12d3d3932ecf80b63e0dda4bdff258676d40",
+          "source_id": "batch118-fletcher-parthenon-local",
+          "locator": "Fletcher refined markdown lines 7180-7190 plus order/caryatid/tholos index locators",
+          "status": "pass"
+        }
+      ]
+    },
+    "linked_question_question_edit_count_checks": {
+      "status": "pass",
+      "checks": [
+        {
+          "article_id": "28f9907c-c87b-4f49-a9c4-8371989f6865",
+          "slug": "lea-hist-001-01-core-concept",
+          "linked_question_count": 10,
+          "question_edit_count": 10,
+          "status": "pass"
+        },
+        {
+          "article_id": "e72bf24e-a816-4c4f-ae4b-f8e97c5d5519",
+          "slug": "lea-hist-001-02-core-concept",
+          "linked_question_count": 10,
+          "question_edit_count": 10,
+          "status": "pass"
+        },
+        {
+          "article_id": "6ac76cc0-1023-4e3d-8282-884fa6cc20a2",
+          "slug": "lea-hist-001-03-core-concept",
+          "linked_question_count": 12,
+          "question_edit_count": 12,
+          "status": "pass"
+        },
+        {
+          "article_id": "3e966435-e276-422e-a220-374043120cec",
+          "slug": "lea-hist-001-04-core-concept",
+          "linked_question_count": 12,
+          "question_edit_count": 12,
+          "status": "pass"
+        },
+        {
+          "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+          "slug": "lea-hist-001-05-core-concept",
+          "linked_question_count": 12,
+          "question_edit_count": 12,
+          "status": "pass"
+        }
+      ]
+    },
+    "stale_compose_error_scan": {
+      "status": "pass",
+      "checks": [
+        {
+          "article_id": "28f9907c-c87b-4f49-a9c4-8371989f6865",
+          "slug": "lea-hist-001-01-core-concept",
+          "file": ".ai/content-audit-export/articles/lea-hist-001-01-core-concept--28f9907c-c87b-4f49-a9c4-8371989f6865/compose-error.json",
+          "exists": false,
+          "status": "pass"
+        },
+        {
+          "article_id": "e72bf24e-a816-4c4f-ae4b-f8e97c5d5519",
+          "slug": "lea-hist-001-02-core-concept",
+          "file": ".ai/content-audit-export/articles/lea-hist-001-02-core-concept--e72bf24e-a816-4c4f-ae4b-f8e97c5d5519/compose-error.json",
+          "exists": false,
+          "status": "pass"
+        },
+        {
+          "article_id": "6ac76cc0-1023-4e3d-8282-884fa6cc20a2",
+          "slug": "lea-hist-001-03-core-concept",
+          "file": ".ai/content-audit-export/articles/lea-hist-001-03-core-concept--6ac76cc0-1023-4e3d-8282-884fa6cc20a2/compose-error.json",
+          "exists": false,
+          "status": "pass"
+        },
+        {
+          "article_id": "3e966435-e276-422e-a220-374043120cec",
+          "slug": "lea-hist-001-04-core-concept",
+          "file": ".ai/content-audit-export/articles/lea-hist-001-04-core-concept--3e966435-e276-422e-a220-374043120cec/compose-error.json",
+          "exists": false,
+          "status": "pass"
+        },
+        {
+          "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+          "slug": "lea-hist-001-05-core-concept",
+          "file": ".ai/content-audit-export/articles/lea-hist-001-05-core-concept--757e71dc-bf5f-4a3a-9948-5063d8cd67bb/compose-error.json",
+          "exists": false,
+          "status": "pass"
+        }
+      ]
+    },
+    "targeted_content_audit_tests": {
+      "status": "pass",
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "result": "34 pass, 0 fail, 328 expect() calls"
+    },
+    "scoped_git_diff_check": {
+      "status": "pass",
+      "command": "git diff --check -- <Batch 118 intended paths>",
+      "executed_at": "2026-05-13T22:47:00+08:00"
+    },
+    "cached_diff_check": {
+      "status": "pass_via_temporary_index_after_intended_files_only",
+      "command": "GIT_INDEX_FILE=/private/tmp/slatecamp-batch118.<tmp>/index GIT_OBJECT_DIRECTORY=/private/tmp/slatecamp-batch118.<tmp>/objects GIT_ALTERNATE_OBJECT_DIRECTORIES=/Users/philiplewis/slatecamp/.git/objects git diff --cached --check",
+      "executed_at": "2026-05-13T22:50:00+08:00",
+      "temporary_commit_object_created": true
+    },
+    "real_git_stage_commit_push_gate": {
+      "status": "blocked_live_index_and_network_push",
+      "expected_commit_message": "chore(content): accept source-audited batch 118",
+      "commit_created": false,
+      "push_performed": false,
+      "attempted_command": "git add -f -- <Batch 118 intended paths>",
+      "failure": "fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted",
+      "temporary_index_gate": {
+        "status": "pass",
+        "command": "GIT_INDEX_FILE=/private/tmp/slatecamp-batch118.<tmp>/index GIT_OBJECT_DIRECTORY=/private/tmp/slatecamp-batch118.<tmp>/objects GIT_ALTERNATE_OBJECT_DIRECTORIES=/Users/philiplewis/slatecamp/.git/objects git diff --cached --check",
+        "temporary_commit_object_created": true
+      },
+      "network_reachability": {
+        "status": "blocked_dns_resolution",
+        "command": "git ls-remote --heads origin 3dlab-gray-viewport-bg",
+        "failure": "fatal: unable to access 'https://github.com/pjel888/slatecamp.git/': Could not resolve host: github.com"
+      },
+      "push_failure": "fatal: unable to access 'https://github.com/pjel888/slatecamp.git/': Could not resolve host: github.com"
+    }
+  }
+}

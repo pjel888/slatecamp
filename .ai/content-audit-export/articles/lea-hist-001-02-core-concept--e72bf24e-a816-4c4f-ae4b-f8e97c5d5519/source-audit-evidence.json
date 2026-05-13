@@ -1,0 +1,154 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T22:16:00+08:00",
+  "audit_mode": "local_source_map_audit_no_supabase",
+  "protocols_applied": [
+    ".ai/CONTENT_EXCELLENCE_GOAL.md",
+    ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
+    ".ai/00_system/vitruvius-source-reference.md",
+    "Batch 118 new local-first internet-source reservation phase"
+  ],
+  "target": {
+    "article_id": "e72bf24e-a816-4c4f-ae4b-f8e97c5d5519",
+    "slug": "lea-hist-001-02-core-concept",
+    "title": "Mesopotamian Architecture",
+    "article_folder": ".ai/content-audit-export/articles/lea-hist-001-02-core-concept--e72bf24e-a816-4c4f-ae4b-f8e97c5d5519",
+    "candidate_path": ".ai/content-audit-export/articles/lea-hist-001-02-core-concept--e72bf24e-a816-4c4f-ae4b-f8e97c5d5519/candidate.md",
+    "candidate_sha256": "sha256:94cb846f3b45a546e488a101f46ea058d77d9f610c1d177d8d07539689ffe1be",
+    "normalized_sha256": "sha256:94cb846f3b45a546e488a101f46ea058d77d9f610c1d177d8d07539689ffe1be",
+    "linked_questions_sha256": "sha256:a061f21d67314be895610abf0ccfcae426a59b9855aac9584aca7501e3dfe2ff",
+    "sources_sha256": "sha256:0353d489f26b452bca8a741db9bfb9ed70ec00501277733191fc03f4dddee16a"
+  },
+  "classification": {
+    "content_type": "history_mesopotamian_architecture",
+    "focus": "Mud-brick Mesopotamian cities, ziggurats, palaces, gates, and Assyrian relief/guardian programs",
+    "contains_legal_or_code_claims": false,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": [
+      "ea9023fb-0727-4f8c-9b47-be2d3652e76c",
+      "05e95a97-cff5-414d-a859-cdefe9f8c6da",
+      "1f47fadf-56d1-4efb-9436-2f50ccfbb5bb",
+      "1fb52215-16d3-4d42-93dc-e6f00b297236",
+      "cfa77410-0c67-4d51-933a-6dc80522c68b",
+      "79c22909-14db-420d-91c6-6e859aa0a5ff",
+      "ff483628-252d-4429-994c-4b99e495b4a7",
+      "2cc2ffa1-d4f6-4caf-ac8a-0c42a9db41b9",
+      "77dd0635-1ca9-4926-a3aa-e9a0e89240e8",
+      "3fa2b1b2-d9f2-4db9-b21c-5d08b0a46e1c"
+    ],
+    "new_source_map_phase": true
+  },
+  "raw_sources": [
+    {
+      "key": "batch118-mesopotamian-official-source-map-capture",
+      "label": "Mesopotamian official UNESCO sources - raw source-map capture",
+      "source_type": "official_web_source_capture",
+      "source_id": "batch118-mesopotamian-official-source-map-capture",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-118/lea-hist-001-02-mesopotamian-architecture.source-capture.md",
+      "sha256": "sha256:5c6fb94340092efe1619c0ef7fc0fd6c3e2345759bee5a26c040f9720c9f55f8",
+      "locator": "UNESCO Ahwar/Babylon captures plus Fletcher refined markdown lines 5783-5889, 5994-6062, 6142-6164."
+    },
+    {
+      "key": "batch118-mesopotamian-official-source-map-refined",
+      "label": "Mesopotamian official UNESCO sources - refined local conversion",
+      "source_type": "local_conversion",
+      "source_id": "batch118-mesopotamian-official-source-map-refined",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-118/lea-hist-001-02-mesopotamian-architecture.refined.md",
+      "sha256": "sha256:ff7cfabb9f66e7e727aa6274a5727443f0de13fb58052e3ccd3c4b59aa442808",
+      "locator": "UNESCO Ahwar/Babylon captures plus Fletcher refined markdown lines 5783-5889, 5994-6062, 6142-6164."
+    },
+    {
+      "key": "batch118-fletcher-western-asiatic-local",
+      "label": "Banister Fletcher local conversion - Western Asiatic architecture",
+      "source_type": "local_conversion",
+      "source_id": "batch118-fletcher-western-asiatic-local",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).md",
+      "sha256": "sha256:0d38f59019ff829f62a241a88757583677d4636347bf765c757cd36a83f6894e",
+      "locator": "Fletcher refined markdown lines 5783-5889, 5994-6062, 6142-6164"
+    },
+    {
+      "key": "batch118-fletcher-western-asiatic-local",
+      "label": "Banister Fletcher local conversion - Western Asiatic architecture",
+      "source_type": "local_conversion",
+      "source_id": "batch118-fletcher-western-asiatic-local",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).pdf",
+      "sha256": "sha256:396ffad4fd94dc3b375d519215bb12d3d3932ecf80b63e0dda4bdff258676d40",
+      "locator": "Fletcher refined markdown lines 5783-5889, 5994-6062, 6142-6164"
+    }
+  ],
+  "gate_results": {
+    "local_source_artifacts_created": "pass",
+    "article_and_questions_edited_together": "pass",
+    "unsupported_internet_summary_avoidance": "pass",
+    "roundtrip_placeholder_policy": "pass_normalized_and_candidate_plain_markdown",
+    "compose": "pass",
+    "diff": "pass",
+    "validate": "pass",
+    "ui_block_edit_validation": "pass",
+    "scoped_json_parse": "pass",
+    "placeholder_internal_note_source_gap_scan": "pass",
+    "source_hash_checks": "pass",
+    "linked_question_question_edit_count_checks": "pass",
+    "stale_compose_error_scan": "pass",
+    "targeted_content_audit_tests": "pass"
+  },
+  "claims": [
+    {
+      "claim": "Mud brick is a material strategy, not architectural weakness.",
+      "source_locator": "UNESCO Ahwar/Babylon captures plus Fletcher refined markdown lines 5783-5889, 5994-6062, 6142-6164.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Lamassu are Mesopotamian/Assyrian guardian figures.",
+      "source_locator": "UNESCO Ahwar/Babylon captures plus Fletcher refined markdown lines 5783-5889, 5994-6062, 6142-6164.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Treat Mesopotamia as one broad tradition with varied phases and building types.",
+      "source_locator": "UNESCO Ahwar/Babylon captures plus Fletcher refined markdown lines 5783-5889, 5994-6062, 6142-6164.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Material choice affects massing and surface treatment.",
+      "source_locator": "UNESCO Ahwar/Babylon captures plus Fletcher refined markdown lines 5783-5889, 5994-6062, 6142-6164.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Ziggurat equals stepped Mesopotamian temple-platform logic.",
+      "source_locator": "UNESCO Ahwar/Babylon captures plus Fletcher refined markdown lines 5783-5889, 5994-6062, 6142-6164.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Mesopotamia is a long urban sequence, not one isolated dynasty.",
+      "source_locator": "UNESCO Ahwar/Babylon captures plus Fletcher refined markdown lines 5783-5889, 5994-6062, 6142-6164.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Courts plus royal reliefs point to palace architecture.",
+      "source_locator": "UNESCO Ahwar/Babylon captures plus Fletcher refined markdown lines 5783-5889, 5994-6062, 6142-6164.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Use form and function, not unsupported measurements.",
+      "source_locator": "UNESCO Ahwar/Babylon captures plus Fletcher refined markdown lines 5783-5889, 5994-6062, 6142-6164.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Lamassu plus reliefs is the key Assyrian palace clue.",
+      "source_locator": "UNESCO Ahwar/Babylon captures plus Fletcher refined markdown lines 5783-5889, 5994-6062, 6142-6164.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Ziggurat and pyramid are not interchangeable.",
+      "source_locator": "UNESCO Ahwar/Babylon captures plus Fletcher refined markdown lines 5783-5889, 5994-6062, 6142-6164.",
+      "status": "supported_by_batch_118_source_map"
+    }
+  ],
+  "unsupported_or_removed_claims": [
+    "Removed unsupported exact Hammurabi palace and ziggurat-dimension framing; narrowed material and palace claims to UNESCO/Fletcher anchors."
+  ],
+  "remaining_local_blockers": [],
+  "overall": "pass_local_first_git_blocked"
+}

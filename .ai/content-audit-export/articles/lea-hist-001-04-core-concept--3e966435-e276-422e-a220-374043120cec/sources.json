@@ -1,20 +1,69 @@
 {
   "article_id": "3e966435-e276-422e-a220-374043120cec",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:4bad03cdc6325806de8181037ac15f6dfef30a37b3f58d2ee372dab61c0176e9",
-  "source_count": 1,
+  "sources_hash": "sha256:1d9a390aec5d8001ac17ffb605754748fa2c13d0468088355876720e18edf676",
+  "source_count": 3,
   "sources": [
     {
-      "source_id": "7b26b599-57c5-4d33-82a3-b5c6abb4db27",
-      "article_id": "3e966435-e276-422e-a220-374043120cec",
-      "label": "Smith, E. Baldwin. *Egyptian Architecture as Cultural Expression*. D. Appleton-Century Company, 1938",
+      "source_id": "batch118-egyptian-official-source-map-capture",
+      "label": "Egyptian official UNESCO sources - raw source-map capture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "official_web_source_capture",
+      "description": "local_capture_path=vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-118/lea-hist-001-04-egyptian-architecture.source-capture.md; local_capture_sha256=sha256:853996b6bc812c98e71c92073a71af16645b8db52480258b6dead18d40e387d1; official_urls_captured=true",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:33:59.83296+00:00",
-      "updated_at": "2026-03-24T04:33:59.83296+00:00"
+      "created_at": "2026-05-13T22:16:00+08:00",
+      "updated_at": "2026-05-13T22:16:00+08:00",
+      "local_file_hashes": [
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-118/lea-hist-001-04-egyptian-architecture.source-capture.md",
+          "sha256": "sha256:853996b6bc812c98e71c92073a71af16645b8db52480258b6dead18d40e387d1"
+        }
+      ],
+      "locator": "UNESCO Memphis/Thebes captures plus 30-Second Ancient Egypt refined markdown lines 370-382, 392-452.",
+      "article_id": "3e966435-e276-422e-a220-374043120cec"
+    },
+    {
+      "source_id": "batch118-egyptian-official-source-map-refined",
+      "label": "Egyptian official UNESCO sources - refined local conversion",
+      "url": null,
+      "source_type": "local_conversion",
+      "description": "refined_source_map_path=vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-118/lea-hist-001-04-egyptian-architecture.refined.md; refined_source_map_sha256=sha256:3f54027ca4ebc0a79d851ed689bb16477955f99f89e608f365553ffb1215651b; derived_from=vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-118/lea-hist-001-04-egyptian-architecture.source-capture.md",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-13T22:16:00+08:00",
+      "updated_at": "2026-05-13T22:16:00+08:00",
+      "local_file_hashes": [
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-118/lea-hist-001-04-egyptian-architecture.refined.md",
+          "sha256": "sha256:3f54027ca4ebc0a79d851ed689bb16477955f99f89e608f365553ffb1215651b"
+        }
+      ],
+      "locator": "UNESCO Memphis/Thebes captures plus 30-Second Ancient Egypt refined markdown lines 370-382, 392-452.",
+      "article_id": "3e966435-e276-422e-a220-374043120cec"
+    },
+    {
+      "source_id": "batch118-der-manuelian-egypt-local",
+      "label": "30-Second Ancient Egypt local conversion",
+      "url": null,
+      "source_type": "local_conversion",
+      "description": "path=vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/30-Second Ancient Egypt (The 50 Most Important Achievements of a Timeless Civilisation Each Explained in Half A Minute) - Peter Der Manuelian.md; raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/002-History/30-Second Ancient Egypt (The 50 Most Important Achievements of a Timeless Civilisation Each Explained in Half A Minute) - Peter Der Manuelian.pdf; lines=370-382,392-452",
+      "is_verified": true,
+      "sort_order": 2,
+      "created_at": "2026-05-13T22:16:00+08:00",
+      "updated_at": "2026-05-13T22:16:00+08:00",
+      "local_file_hashes": [
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/30-Second Ancient Egypt (The 50 Most Important Achievements of a Timeless Civilisation Each Explained in Half A Minute) - Peter Der Manuelian.md",
+          "sha256": "sha256:b7571430e45c33fe425481a647a5b709be2d89f518074b4b6d48411b5c9ca35c"
+        },
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/30-Second Ancient Egypt (The 50 Most Important Achievements of a Timeless Civilisation Each Explained in Half A Minute) - Peter Der Manuelian.pdf",
+          "sha256": "sha256:0c38c1f6e3f024ce716d0c230e5198a4d08878c6f359d3fbe76d6aa26f4d1e9c"
+        }
+      ],
+      "locator": "30-Second Ancient Egypt refined markdown lines 370-382, 392-452",
+      "article_id": "3e966435-e276-422e-a220-374043120cec"
     }
   ]
 }

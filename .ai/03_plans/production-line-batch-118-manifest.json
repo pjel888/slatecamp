@@ -1,0 +1,140 @@
+{
+  "batch_id": "source-audited-article-batch-118-local-first",
+  "batch_number": "118",
+  "phase": "new_local_first_source_map_reservation_phase",
+  "reserved_at": "2026-05-13T22:42:00+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "branch": "3dlab-gray-viewport-bg",
+  "baseline_commit": "b60e584bf",
+  "content_source_baseline": {
+    "batch_117_commit": "eb2c44d17",
+    "ra8293_source_acquisition_commit": "1f73e77bd",
+    "terminal_freeze_commit": "b60e584bf"
+  },
+  "previous_batch": {
+    "batch_number": "117",
+    "commit": "eb2c44d17",
+    "terminal_freeze_commit": "b60e584bf",
+    "status": "fixed lea-prac line closed; user authorized new non-prac source-map phase"
+  },
+  "current_head_at_manifest_generation": "b60e584bf",
+  "manifest_status": "pass_local_first_git_blocked",
+  "selection_rule": "Select the first safe sourceable non-test residual linked-question bundles from the 132 remaining non-prac prefixes, excluding test unless artifact-only. Batch 118 starts with the first five sourceable history clusters in sorted residual order.",
+  "inherited_blocker_status": {
+    "status": "new_phase_supersedes_terminal_fixed_line_freeze",
+    "notes": [
+      "The Batch 117 terminal freeze remains true for the earlier fixed lea-prac production line but is superseded for this user-authorized source-map/reservation phase.",
+      "Unrelated stairway, 3D, marketing, docs, skills, and performance work remains out of scope and must not be staged.",
+      "No Supabase push, deploy, production DB mutation, or main merge is authorized."
+    ]
+  },
+  "article_clusters": [
+    "Megalithic architecture",
+    "Mesopotamian Architecture",
+    "Achaemenid Persian Architecture",
+    "Egyptian Architecture",
+    "Greek Architecture"
+  ],
+  "counts": {
+    "articles": 5,
+    "linked_questions_expected": 56,
+    "question_edits_expected": 56,
+    "source_safe_real_world_scenarios_expected": 5,
+    "local_source_map_files_created": 10
+  },
+  "selected_article_uuids_slugs": [
+    {
+      "article_id": "28f9907c-c87b-4f49-a9c4-8371989f6865",
+      "slug": "lea-hist-001-01-core-concept",
+      "title": "Megalithic architecture",
+      "folder": ".ai/content-audit-export/articles/lea-hist-001-01-core-concept--28f9907c-c87b-4f49-a9c4-8371989f6865"
+    },
+    {
+      "article_id": "e72bf24e-a816-4c4f-ae4b-f8e97c5d5519",
+      "slug": "lea-hist-001-02-core-concept",
+      "title": "Mesopotamian Architecture",
+      "folder": ".ai/content-audit-export/articles/lea-hist-001-02-core-concept--e72bf24e-a816-4c4f-ae4b-f8e97c5d5519"
+    },
+    {
+      "article_id": "6ac76cc0-1023-4e3d-8282-884fa6cc20a2",
+      "slug": "lea-hist-001-03-core-concept",
+      "title": "Achaemenid Persian Architecture",
+      "folder": ".ai/content-audit-export/articles/lea-hist-001-03-core-concept--6ac76cc0-1023-4e3d-8282-884fa6cc20a2"
+    },
+    {
+      "article_id": "3e966435-e276-422e-a220-374043120cec",
+      "slug": "lea-hist-001-04-core-concept",
+      "title": "Egyptian Architecture",
+      "folder": ".ai/content-audit-export/articles/lea-hist-001-04-core-concept--3e966435-e276-422e-a220-374043120cec"
+    },
+    {
+      "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+      "slug": "lea-hist-001-05-core-concept",
+      "title": "Greek Architecture",
+      "folder": ".ai/content-audit-export/articles/lea-hist-001-05-core-concept--757e71dc-bf5f-4a3a-9948-5063d8cd67bb"
+    }
+  ],
+  "source_map_phase_check": {
+    "status": "pass",
+    "remaining_linked_question_residual_at_start": 132,
+    "selected_non_prac_prefixes": [
+      "lea-hist-001-01-core-concept",
+      "lea-hist-001-02-core-concept",
+      "lea-hist-001-03-core-concept",
+      "lea-hist-001-04-core-concept",
+      "lea-hist-001-05-core-concept"
+    ],
+    "internet_sources_captured": "5 official-source-map capture files plus 5 refined local conversions",
+    "local_capture_paths": [
+      "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-118/lea-hist-001-01-megalithic-architecture.source-capture.md",
+      "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-118/lea-hist-001-01-megalithic-architecture.refined.md",
+      "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-118/lea-hist-001-02-mesopotamian-architecture.source-capture.md",
+      "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-118/lea-hist-001-02-mesopotamian-architecture.refined.md",
+      "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-118/lea-hist-001-03-achaemenid-persian-architecture.source-capture.md",
+      "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-118/lea-hist-001-03-achaemenid-persian-architecture.refined.md",
+      "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-118/lea-hist-001-04-egyptian-architecture.source-capture.md",
+      "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-118/lea-hist-001-04-egyptian-architecture.refined.md",
+      "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-118/lea-hist-001-05-greek-architecture.source-capture.md",
+      "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-118/lea-hist-001-05-greek-architecture.refined.md"
+    ]
+  },
+  "validation_gates": [
+    "compose/diff/validate strict 5/5",
+    "UI-block edit validation",
+    "scoped JSON parse",
+    "placeholder/internal-note/source-gap scan",
+    "source hash checks",
+    "linked-question/question-edit count checks",
+    "stale compose-error scan",
+    "targeted content-audit tests",
+    "scoped git diff --check",
+    "git diff --cached --check before commit"
+  ],
+  "forbidden_actions": {
+    "supabase_push": "not_performed",
+    "deploy": "not_performed",
+    "production_db_mutation": "not_performed",
+    "merge_to_main": "not_performed"
+  },
+  "git_commit_push_state": {
+    "status": "blocked_live_index_and_network_push",
+    "expected_commit_message": "chore(content): accept source-audited batch 118",
+    "commit_created": false,
+    "push_performed": false,
+    "attempted_command": "git add -f -- <Batch 118 intended paths>",
+    "failure": "fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted",
+    "temporary_index_gate": {
+      "status": "pass",
+      "command": "GIT_INDEX_FILE=/private/tmp/slatecamp-batch118.<tmp>/index GIT_OBJECT_DIRECTORY=/private/tmp/slatecamp-batch118.<tmp>/objects GIT_ALTERNATE_OBJECT_DIRECTORIES=/Users/philiplewis/slatecamp/.git/objects git diff --cached --check",
+      "temporary_commit_object_created": true
+    },
+    "network_reachability": {
+      "status": "blocked_dns_resolution",
+      "command": "git ls-remote --heads origin 3dlab-gray-viewport-bg",
+      "failure": "fatal: unable to access 'https://github.com/pjel888/slatecamp.git/': Could not resolve host: github.com"
+    },
+    "push_failure": "fatal: unable to access 'https://github.com/pjel888/slatecamp.git/': Could not resolve host: github.com"
+  },
+  "freeze_readiness_report_path": ".ai/03_plans/source-audited-local-first-freeze-readiness-report.md",
+  "status": "pass_local_first_git_blocked"
+}

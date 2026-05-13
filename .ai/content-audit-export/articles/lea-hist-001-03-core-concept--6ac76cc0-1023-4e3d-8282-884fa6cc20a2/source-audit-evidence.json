@@ -1,0 +1,166 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T22:16:00+08:00",
+  "audit_mode": "local_source_map_audit_no_supabase",
+  "protocols_applied": [
+    ".ai/CONTENT_EXCELLENCE_GOAL.md",
+    ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
+    ".ai/00_system/vitruvius-source-reference.md",
+    "Batch 118 new local-first internet-source reservation phase"
+  ],
+  "target": {
+    "article_id": "6ac76cc0-1023-4e3d-8282-884fa6cc20a2",
+    "slug": "lea-hist-001-03-core-concept",
+    "title": "Achaemenid Persian Architecture",
+    "article_folder": ".ai/content-audit-export/articles/lea-hist-001-03-core-concept--6ac76cc0-1023-4e3d-8282-884fa6cc20a2",
+    "candidate_path": ".ai/content-audit-export/articles/lea-hist-001-03-core-concept--6ac76cc0-1023-4e3d-8282-884fa6cc20a2/candidate.md",
+    "candidate_sha256": "sha256:f6bfcc125e0e82148f7d6b2e4085099a24df13dcf060536108b4e44e89fc99c3",
+    "normalized_sha256": "sha256:f6bfcc125e0e82148f7d6b2e4085099a24df13dcf060536108b4e44e89fc99c3",
+    "linked_questions_sha256": "sha256:9cdb1f78444bf6a5e4ec81bd4bb60a847e9cff7915bd488078356be475f7dff9",
+    "sources_sha256": "sha256:ff75545f225cab549f2924a76d10494e5b887685b33694fdfb2dd3a73e167932"
+  },
+  "classification": {
+    "content_type": "history_achaemenid_persian_architecture",
+    "focus": "Persepolis, Pasargadae, Susa, apadana halls, stone platforms, reliefs, and imperial synthesis",
+    "contains_legal_or_code_claims": false,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 12,
+    "question_edits_created": [
+      "4095ba6c-9c2f-4d60-b4f7-30c617f17165",
+      "0c0c43d3-b5fb-4c32-a278-5187f0ddc530",
+      "78ba8962-8cd2-4d49-9519-a18dfc2f7cf8",
+      "1d427284-eda9-412f-9476-e7321ee89d69",
+      "f8d13853-9ea2-4260-a719-479882be5ea0",
+      "717e0bb1-f134-4728-a820-beb2563c30d6",
+      "0d35238e-a73b-4f1e-9693-51039517a267",
+      "c9e08cfc-b0b0-4629-b3a8-858fea172341",
+      "033d7ef8-c024-42fc-ae3f-5c3de026ecbb",
+      "30791d82-9553-4d92-bbd6-9890e2f0de4e",
+      "6307e91a-91ac-4131-8d5f-1c11c74ef332",
+      "3a382c61-41ab-4752-87ca-3c844e6bc6fb"
+    ],
+    "new_source_map_phase": true
+  },
+  "raw_sources": [
+    {
+      "key": "batch118-achaemenid-official-source-map-capture",
+      "label": "Achaemenid official UNESCO sources - raw source-map capture",
+      "source_type": "official_web_source_capture",
+      "source_id": "batch118-achaemenid-official-source-map-capture",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-118/lea-hist-001-03-achaemenid-persian-architecture.source-capture.md",
+      "sha256": "sha256:aa14fd96bde2ae9c4e92352878b9e716cf5866419226a3c14e4d41e0bb33523a",
+      "locator": "UNESCO Persepolis/Pasargadae/Susa captures plus Fletcher refined markdown lines 6070-6115."
+    },
+    {
+      "key": "batch118-achaemenid-official-source-map-refined",
+      "label": "Achaemenid official UNESCO sources - refined local conversion",
+      "source_type": "local_conversion",
+      "source_id": "batch118-achaemenid-official-source-map-refined",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-118/lea-hist-001-03-achaemenid-persian-architecture.refined.md",
+      "sha256": "sha256:f7b73eedd7ae5987a384c469c04f9f0750a9ee34ea13c453b1b69ff8a665c16c",
+      "locator": "UNESCO Persepolis/Pasargadae/Susa captures plus Fletcher refined markdown lines 6070-6115."
+    },
+    {
+      "key": "batch118-fletcher-persian-local",
+      "label": "Banister Fletcher local conversion - Persian architecture",
+      "source_type": "local_conversion",
+      "source_id": "batch118-fletcher-persian-local",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).md",
+      "sha256": "sha256:0d38f59019ff829f62a241a88757583677d4636347bf765c757cd36a83f6894e",
+      "locator": "Fletcher refined markdown lines 6070-6115"
+    },
+    {
+      "key": "batch118-fletcher-persian-local",
+      "label": "Banister Fletcher local conversion - Persian architecture",
+      "source_type": "local_conversion",
+      "source_id": "batch118-fletcher-persian-local",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).pdf",
+      "sha256": "sha256:396ffad4fd94dc3b375d519215bb12d3d3932ecf80b63e0dda4bdff258676d40",
+      "locator": "Fletcher refined markdown lines 6070-6115"
+    }
+  ],
+  "gate_results": {
+    "local_source_artifacts_created": "pass",
+    "article_and_questions_edited_together": "pass",
+    "unsupported_internet_summary_avoidance": "pass",
+    "roundtrip_placeholder_policy": "pass_normalized_and_candidate_plain_markdown",
+    "compose": "pass",
+    "diff": "pass",
+    "validate": "pass",
+    "ui_block_edit_validation": "pass",
+    "scoped_json_parse": "pass",
+    "placeholder_internal_note_source_gap_scan": "pass",
+    "source_hash_checks": "pass",
+    "linked_question_question_edit_count_checks": "pass",
+    "stale_compose_error_scan": "pass",
+    "targeted_content_audit_tests": "pass"
+  },
+  "claims": [
+    {
+      "claim": "Use apadana for the Persian columned audience hall.",
+      "source_locator": "UNESCO Persepolis/Pasargadae/Susa captures plus Fletcher refined markdown lines 6070-6115.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Cyrus to Alexander is the governing frame.",
+      "source_locator": "UNESCO Persepolis/Pasargadae/Susa captures plus Fletcher refined markdown lines 6070-6115.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Relief programs are political architecture.",
+      "source_locator": "UNESCO Persepolis/Pasargadae/Susa captures plus Fletcher refined markdown lines 6070-6115.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Do not overstate cost or eliminate columns.",
+      "source_locator": "UNESCO Persepolis/Pasargadae/Susa captures plus Fletcher refined markdown lines 6070-6115.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Pasargadae points to Cyrus and the elevated stone tomb.",
+      "source_locator": "UNESCO Persepolis/Pasargadae/Susa captures plus Fletcher refined markdown lines 6070-6115.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Stone availability is the safest material explanation.",
+      "source_locator": "UNESCO Persepolis/Pasargadae/Susa captures plus Fletcher refined markdown lines 6070-6115.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Column presence is not enough; read plan and purpose.",
+      "source_locator": "UNESCO Persepolis/Pasargadae/Susa captures plus Fletcher refined markdown lines 6070-6115.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Prioritize sourced identity over unsourced measurements.",
+      "source_locator": "UNESCO Persepolis/Pasargadae/Susa captures plus Fletcher refined markdown lines 6070-6115.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Guardian bull figures point to lamassu-type gate language.",
+      "source_locator": "UNESCO Persepolis/Pasargadae/Susa captures plus Fletcher refined markdown lines 6070-6115.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Achaemenid architecture is synthetic and imperial.",
+      "source_locator": "UNESCO Persepolis/Pasargadae/Susa captures plus Fletcher refined markdown lines 6070-6115.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Scale and reliefs made imperial ideology visible.",
+      "source_locator": "UNESCO Persepolis/Pasargadae/Susa captures plus Fletcher refined markdown lines 6070-6115.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Apadana space depends on many columns, not one giant lintel.",
+      "source_locator": "UNESCO Persepolis/Pasargadae/Susa captures plus Fletcher refined markdown lines 6070-6115.",
+      "status": "supported_by_batch_118_source_map"
+    }
+  ],
+  "unsupported_or_removed_claims": [
+    "Corrected Apadana answer key, changed unsupported stone-cost explanation to local stone availability, fixed Alexander typo, and removed unsupported exact-dimension testing."
+  ],
+  "remaining_local_blockers": [],
+  "overall": "pass_local_first_git_blocked"
+}

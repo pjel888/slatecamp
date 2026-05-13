@@ -1,0 +1,94 @@
+{
+  "question_id": "f8d13853-9ea2-4260-a719-479882be5ea0",
+  "baseline_hash": "sha256:55c2e88669f87abe25443a82af1c038160dfe959aa6080c986f96db87914c9f2",
+  "action": "replace",
+  "reason": "source-audited-article-batch-118-local-first source-maps lea-hist-001-03-core-concept and rewrites this linked question for source-safe answer, options, rationale, and article alignment.",
+  "approved_by": "codex-local-source-audit-batch-118",
+  "approved_at": "2026-05-13T22:16:00+08:00",
+  "source_audit_support": {
+    "parent_article_id": "6ac76cc0-1023-4e3d-8282-884fa6cc20a2",
+    "parent_article_slug": "lea-hist-001-03-core-concept",
+    "answer_key_fields_changed": false,
+    "correct_option_id_changed": false,
+    "option_text_revised_without_correct_option_change": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UNESCO Persepolis/Pasargadae/Susa captures plus Fletcher refined markdown lines 6070-6115.",
+    "checked_markdown_lines": [
+      "UNESCO Persepolis/Pasargadae/Susa captures plus Fletcher refined markdown lines 6070-6115."
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-118/lea-hist-001-03-achaemenid-persian-architecture.source-capture.md",
+        "sha256": "sha256:aa14fd96bde2ae9c4e92352878b9e716cf5866419226a3c14e4d41e0bb33523a",
+        "source_id": "batch118-achaemenid-official-source-map-capture",
+        "locator": "UNESCO Persepolis/Pasargadae/Susa captures plus Fletcher refined markdown lines 6070-6115."
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-118/lea-hist-001-03-achaemenid-persian-architecture.refined.md",
+        "sha256": "sha256:f7b73eedd7ae5987a384c469c04f9f0750a9ee34ea13c453b1b69ff8a665c16c",
+        "source_id": "batch118-achaemenid-official-source-map-refined",
+        "locator": "UNESCO Persepolis/Pasargadae/Susa captures plus Fletcher refined markdown lines 6070-6115."
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).md",
+        "sha256": "sha256:0d38f59019ff829f62a241a88757583677d4636347bf765c757cd36a83f6894e",
+        "source_id": "batch118-fletcher-persian-local",
+        "locator": "Fletcher refined markdown lines 6070-6115"
+      }
+    ],
+    "local_source_safe_action": "Batch 118 source-mapped the article and linked question together using local source captures/conversions before composing the candidate.",
+    "batch_id": "source-audited-article-batch-118-local-first",
+    "new_source_map_phase": true
+  },
+  "proposed": {
+    "question_id": "f8d13853-9ea2-4260-a719-479882be5ea0",
+    "article_id": "6ac76cc0-1023-4e3d-8282-884fa6cc20a2",
+    "topic_id": "3e6945b7-76de-423b-b18d-b3b0f3677e1f",
+    "text": "The Tomb of Cyrus at Pasargadae is best read as which source-safe architectural statement?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A huge rock-cut tomb hidden inside a cliff palace"
+      },
+      {
+        "id": "b",
+        "text": "A ziggurat with a shrine at the summit"
+      },
+      {
+        "id": "c",
+        "text": "A modest stone tomb set on a stepped platform within the first Achaemenid capital landscape"
+      },
+      {
+        "id": "d",
+        "text": "A Greek theatre"
+      }
+    ],
+    "correct_option_id": "c",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "This option does not match the source-audited article and selected local source anchors for this item.",
+      "b": "This option does not match the source-audited article and selected local source anchors for this item.",
+      "d": "This option does not match the source-audited article and selected local source anchors for this item.",
+      "correct": "UNESCO Pasargadae anchors the Tomb of Cyrus within the Cyrus II capital landscape; the safest exam reading is elevated, isolated royal tomb architecture.",
+      "takeaway": "Pasargadae points to Cyrus and the elevated stone tomb."
+    },
+    "explanation": "UNESCO Pasargadae anchors the Tomb of Cyrus within the Cyrus II capital landscape; the safest exam reading is elevated, isolated royal tomb architecture. Pasargadae points to Cyrus and the elevated stone tomb.",
+    "code_citation": null,
+    "bloom_level": "remember",
+    "application_context": "recall",
+    "practice_context": [
+      "DESC"
+    ],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false,
+    "model_id": "ALE-HIST-001-03-009",
+    "prompt_image_url": null,
+    "created_at": "2026-03-23T19:27:22.975901+00:00",
+    "updated_at": "2026-05-06T13:14:21.071803+00:00"
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T22:16:00+08:00",
+  "audit_mode": "local_source_map_audit_no_supabase",
+  "protocols_applied": [
+    ".ai/CONTENT_EXCELLENCE_GOAL.md",
+    ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
+    ".ai/00_system/vitruvius-source-reference.md",
+    "Batch 118 new local-first internet-source reservation phase"
+  ],
+  "target": {
+    "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+    "slug": "lea-hist-001-05-core-concept",
+    "title": "Greek Architecture",
+    "article_folder": ".ai/content-audit-export/articles/lea-hist-001-05-core-concept--757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
+    "candidate_path": ".ai/content-audit-export/articles/lea-hist-001-05-core-concept--757e71dc-bf5f-4a3a-9948-5063d8cd67bb/candidate.md",
+    "candidate_sha256": "sha256:6d4c42a836dd37414c63383f59b190c6f60668866dd527bd086b58373a47d85c",
+    "normalized_sha256": "sha256:6d4c42a836dd37414c63383f59b190c6f60668866dd527bd086b58373a47d85c",
+    "linked_questions_sha256": "sha256:1ac94988a9b379a820719f8569bc478cf4998e1889534494e95ba736c8e1c5dc",
+    "sources_sha256": "sha256:d5473ad15ad9c8c64c3b5d5a6b90515bd6b21e744a4a77a6cc189cfdd3ad0ce4"
+  },
+  "classification": {
+    "content_type": "history_greek_architecture",
+    "focus": "Greek orders, Parthenon/Acropolis, sanctuary architecture, optical refinement, and post-and-lintel limits",
+    "contains_legal_or_code_claims": false,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 12,
+    "question_edits_created": [
+      "f0bc1160-ad55-470d-a2a9-c0938a5ed933",
+      "57a5181c-b039-42f2-aba3-6bcbd0a8369f",
+      "73f254df-4b73-4698-8606-230af4ce0650",
+      "858f5e0b-e44b-4410-90aa-d921a7e864aa",
+      "e6986094-7029-4024-97c4-406cfd08c254",
+      "e14c4f06-a18d-45ed-a60e-fadad118e5f4",
+      "2126fc90-7db6-4332-9681-a563388564e5",
+      "b210a8ca-118d-4aa5-827c-b7ad6017bb55",
+      "5ef0e30d-6c30-420f-b6b6-7eae74644e93",
+      "d14b44f6-6ea2-4331-9073-64f27da54e13",
+      "bbdeac5c-38a5-4c87-9e0e-2248af287a0e",
+      "96d5b2da-aae4-4262-8ce5-96b345504b62"
+    ],
+    "new_source_map_phase": true
+  },
+  "raw_sources": [
+    {
+      "key": "batch118-greek-official-source-map-capture",
+      "label": "Greek official UNESCO sources - raw source-map capture",
+      "source_type": "official_web_source_capture",
+      "source_id": "batch118-greek-official-source-map-capture",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-118/lea-hist-001-05-greek-architecture.source-capture.md",
+      "sha256": "sha256:73359551fa4553a667f3dc1d76d2946bc7410ccfc43ac728737ea63f955ccf59",
+      "locator": "UNESCO Acropolis/Bassae/Delphi/Olympia captures plus Vitruvius lines 1963-1999, 2061-2083 and Fletcher Parthenon lines 7180-7190."
+    },
+    {
+      "key": "batch118-greek-official-source-map-refined",
+      "label": "Greek official UNESCO sources - refined local conversion",
+      "source_type": "local_conversion",
+      "source_id": "batch118-greek-official-source-map-refined",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-118/lea-hist-001-05-greek-architecture.refined.md",
+      "sha256": "sha256:3cedc9cdf4bc112c5914c21fc8fb4d21c3a492cafff31190e9aa6a55e666d1fa",
+      "locator": "UNESCO Acropolis/Bassae/Delphi/Olympia captures plus Vitruvius lines 1963-1999, 2061-2083 and Fletcher Parthenon lines 7180-7190."
+    },
+    {
+      "key": "batch118-vitruvius-orders-local",
+      "label": "Vitruvius local conversion - Greek orders",
+      "source_type": "local_conversion",
+      "source_id": "batch118-vitruvius-orders-local",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Vitruvius - 10 Books of Architecture.md",
+      "sha256": "sha256:07eaf55d56357483d264d765f1bf3565aa0c839916def1edd6a17f125980ec75",
+      "locator": "Vitruvius refined markdown lines 1963-1999 and 2061-2083"
+    },
+    {
+      "key": "batch118-vitruvius-orders-local",
+      "label": "Vitruvius local conversion - Greek orders",
+      "source_type": "local_conversion",
+      "source_id": "batch118-vitruvius-orders-local",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Vitruvius - 10 Books of Architecture.pdf",
+      "sha256": "sha256:e63f78260563ae36c5f1f85a07371df3d5740dfb13f5fc77453d88632238e020",
+      "locator": "Vitruvius refined markdown lines 1963-1999 and 2061-2083"
+    },
+    {
+      "key": "batch118-fletcher-parthenon-local",
+      "label": "Banister Fletcher local conversion - Parthenon/order reference",
+      "source_type": "local_conversion",
+      "source_id": "batch118-fletcher-parthenon-local",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).md",
+      "sha256": "sha256:0d38f59019ff829f62a241a88757583677d4636347bf765c757cd36a83f6894e",
+      "locator": "Fletcher refined markdown lines 7180-7190 plus order/caryatid/tholos index locators"
+    },
+    {
+      "key": "batch118-fletcher-parthenon-local",
+      "label": "Banister Fletcher local conversion - Parthenon/order reference",
+      "source_type": "local_conversion",
+      "source_id": "batch118-fletcher-parthenon-local",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).pdf",
+      "sha256": "sha256:396ffad4fd94dc3b375d519215bb12d3d3932ecf80b63e0dda4bdff258676d40",
+      "locator": "Fletcher refined markdown lines 7180-7190 plus order/caryatid/tholos index locators"
+    }
+  ],
+  "gate_results": {
+    "local_source_artifacts_created": "pass",
+    "article_and_questions_edited_together": "pass",
+    "unsupported_internet_summary_avoidance": "pass",
+    "roundtrip_placeholder_policy": "pass_normalized_and_candidate_plain_markdown",
+    "compose": "pass",
+    "diff": "pass",
+    "validate": "pass",
+    "ui_block_edit_validation": "pass",
+    "scoped_json_parse": "pass",
+    "placeholder_internal_note_source_gap_scan": "pass",
+    "source_hash_checks": "pass",
+    "linked_question_question_edit_count_checks": "pass",
+    "stale_compose_error_scan": "pass",
+    "targeted_content_audit_tests": "pass"
+  },
+  "claims": [
+    {
+      "claim": "Doric is the stockier Greek order.",
+      "source_locator": "UNESCO Acropolis/Bassae/Delphi/Olympia captures plus Vitruvius lines 1963-1999, 2061-2083 and Fletcher Parthenon lines 7180-7190.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Parthenon equals 8 by 17 for this exam clue.",
+      "source_locator": "UNESCO Acropolis/Bassae/Delphi/Olympia captures plus Vitruvius lines 1963-1999, 2061-2083 and Fletcher Parthenon lines 7180-7190.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Use Archaic-Classical-Hellenistic, not one isolated century.",
+      "source_locator": "UNESCO Acropolis/Bassae/Delphi/Olympia captures plus Vitruvius lines 1963-1999, 2061-2083 and Fletcher Parthenon lines 7180-7190.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Parthenon architects: Ictinus and Callicrates/Kallikrates.",
+      "source_locator": "UNESCO Acropolis/Bassae/Delphi/Olympia captures plus Vitruvius lines 1963-1999, 2061-2083 and Fletcher Parthenon lines 7180-7190.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Volutes point to Ionic.",
+      "source_locator": "UNESCO Acropolis/Bassae/Delphi/Olympia captures plus Vitruvius lines 1963-1999, 2061-2083 and Fletcher Parthenon lines 7180-7190.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Read both capital and entablature.",
+      "source_locator": "UNESCO Acropolis/Bassae/Delphi/Olympia captures plus Vitruvius lines 1963-1999, 2061-2083 and Fletcher Parthenon lines 7180-7190.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Entasis is visual refinement.",
+      "source_locator": "UNESCO Acropolis/Bassae/Delphi/Olympia captures plus Vitruvius lines 1963-1999, 2061-2083 and Fletcher Parthenon lines 7180-7190.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Greek temple meaning includes site, cult, civic, and sculptural program.",
+      "source_locator": "UNESCO Acropolis/Bassae/Delphi/Olympia captures plus Vitruvius lines 1963-1999, 2061-2083 and Fletcher Parthenon lines 7180-7190.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Female support figures are caryatids.",
+      "source_locator": "UNESCO Acropolis/Bassae/Delphi/Olympia captures plus Vitruvius lines 1963-1999, 2061-2083 and Fletcher Parthenon lines 7180-7190.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Circular Greek temple/building clue equals tholos.",
+      "source_locator": "UNESCO Acropolis/Bassae/Delphi/Olympia captures plus Vitruvius lines 1963-1999, 2061-2083 and Fletcher Parthenon lines 7180-7190.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Column drums make handling and shaping more practical.",
+      "source_locator": "UNESCO Acropolis/Bassae/Delphi/Olympia captures plus Vitruvius lines 1963-1999, 2061-2083 and Fletcher Parthenon lines 7180-7190.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Greek post-and-lintel and Roman vaulting are different structural traditions.",
+      "source_locator": "UNESCO Acropolis/Bassae/Delphi/Olympia captures plus Vitruvius lines 1963-1999, 2061-2083 and Fletcher Parthenon lines 7180-7190.",
+      "status": "supported_by_batch_118_source_map"
+    }
+  ],
+  "unsupported_or_removed_claims": [
+    "Corrected caryatid typo and narrowed column-drum and interior-program claims to source-safe wording."
+  ],
+  "remaining_local_blockers": [],
+  "overall": "pass_local_first_git_blocked"
+}

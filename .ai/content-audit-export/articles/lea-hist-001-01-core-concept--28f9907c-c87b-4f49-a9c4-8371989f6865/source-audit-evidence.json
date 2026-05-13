@@ -1,0 +1,136 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T22:16:00+08:00",
+  "audit_mode": "local_source_map_audit_no_supabase",
+  "protocols_applied": [
+    ".ai/CONTENT_EXCELLENCE_GOAL.md",
+    ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
+    ".ai/00_system/vitruvius-source-reference.md",
+    "Batch 118 new local-first internet-source reservation phase"
+  ],
+  "target": {
+    "article_id": "28f9907c-c87b-4f49-a9c4-8371989f6865",
+    "slug": "lea-hist-001-01-core-concept",
+    "title": "Megalithic architecture",
+    "article_folder": ".ai/content-audit-export/articles/lea-hist-001-01-core-concept--28f9907c-c87b-4f49-a9c4-8371989f6865",
+    "candidate_path": ".ai/content-audit-export/articles/lea-hist-001-01-core-concept--28f9907c-c87b-4f49-a9c4-8371989f6865/candidate.md",
+    "candidate_sha256": "sha256:7e37389de549aeca54023681096e8be9e92b09ef7525bdc2770abe40820c6b40",
+    "normalized_sha256": "sha256:7e37389de549aeca54023681096e8be9e92b09ef7525bdc2770abe40820c6b40",
+    "linked_questions_sha256": "sha256:23200e6889c20c49098e064bfae720dd9277e0e63e3a44a521d97152e1f634dd",
+    "sources_sha256": "sha256:33697573963ec927fc5763e2a22aa9691b669303cc85f725198a2fe0be4f4dbd"
+  },
+  "classification": {
+    "content_type": "history_megalithic_architecture",
+    "focus": "Megalithic monument types, regional variation, and source-safe structural identification",
+    "contains_legal_or_code_claims": false,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": [
+      "211c3b70-8163-489c-99fe-fb66a135abc6",
+      "4f1ecc9c-d5a2-4843-9cb3-e52c475c7625",
+      "9e345984-bc44-4e42-810b-7ff857a68eb2",
+      "22220b60-ed76-47ad-bb9e-7f0f09f706af",
+      "5ee21622-9658-4355-92f4-7f7b43f20ccd",
+      "87a2f9f8-1a1b-43c9-b5ee-fc8042301a1f",
+      "5fcc2e57-69ad-46b3-933f-6083b6b97330",
+      "274cacaf-64c4-4f85-a9f5-254707fae0fe",
+      "51159057-5311-4a11-b67e-8a725e0ba35e",
+      "cf5efe9f-160b-432e-bb8c-2c0e02ea12da"
+    ],
+    "new_source_map_phase": true
+  },
+  "raw_sources": [
+    {
+      "key": "batch118-megalithic-official-source-map-capture",
+      "label": "Megalithic official UNESCO/HES sources - raw source-map capture",
+      "source_type": "official_web_source_capture",
+      "source_id": "batch118-megalithic-official-source-map-capture",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-118/lea-hist-001-01-megalithic-architecture.source-capture.md",
+      "sha256": "sha256:c6000a8c386cd7579ea3a69b634d5db7c23ef9d38513ee1dd93e4a8c1021902d",
+      "locator": "UNESCO Stonehenge/Avebury, Megalithic Temples of Malta, Bru na Boinne, and HES Calanais source-map captures; source-map-batch-118 refined anchors."
+    },
+    {
+      "key": "batch118-megalithic-official-source-map-refined",
+      "label": "Megalithic official UNESCO/HES sources - refined local conversion",
+      "source_type": "local_conversion",
+      "source_id": "batch118-megalithic-official-source-map-refined",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-118/lea-hist-001-01-megalithic-architecture.refined.md",
+      "sha256": "sha256:c80187e3bb8a8f7a5e814c9f96280165f57b66f76c3291db00ce06b132c358ab",
+      "locator": "UNESCO Stonehenge/Avebury, Megalithic Temples of Malta, Bru na Boinne, and HES Calanais source-map captures; source-map-batch-118 refined anchors."
+    }
+  ],
+  "gate_results": {
+    "local_source_artifacts_created": "pass",
+    "article_and_questions_edited_together": "pass",
+    "unsupported_internet_summary_avoidance": "pass",
+    "roundtrip_placeholder_policy": "pass_normalized_and_candidate_plain_markdown",
+    "compose": "pass",
+    "diff": "pass",
+    "validate": "pass",
+    "ui_block_edit_validation": "pass",
+    "scoped_json_parse": "pass",
+    "placeholder_internal_note_source_gap_scan": "pass",
+    "source_hash_checks": "pass",
+    "linked_question_question_edit_count_checks": "pass",
+    "stale_compose_error_scan": "pass",
+    "targeted_content_audit_tests": "pass"
+  },
+  "claims": [
+    {
+      "claim": "Classify Ggantija as a Maltese megalithic temple complex.",
+      "source_locator": "UNESCO Stonehenge/Avebury, Megalithic Temples of Malta, Bru na Boinne, and HES Calanais source-map captures; source-map-batch-118 refined anchors.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Stonehenge reinforces the trilithon/post-and-lintel clue.",
+      "source_locator": "UNESCO Stonehenge/Avebury, Megalithic Temples of Malta, Bru na Boinne, and HES Calanais source-map captures; source-map-batch-118 refined anchors.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Use Neolithic/Bronze Age as the broad LEA time frame.",
+      "source_locator": "UNESCO Stonehenge/Avebury, Megalithic Temples of Malta, Bru na Boinne, and HES Calanais source-map captures; source-map-batch-118 refined anchors.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Do not invent construction technology beyond the sources.",
+      "source_locator": "UNESCO Stonehenge/Avebury, Megalithic Temples of Malta, Bru na Boinne, and HES Calanais source-map captures; source-map-batch-118 refined anchors.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Same broad material language, different local monument types.",
+      "source_locator": "UNESCO Stonehenge/Avebury, Megalithic Temples of Malta, Bru na Boinne, and HES Calanais source-map captures; source-map-batch-118 refined anchors.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Passage plus chamber under a mound points to a passage grave.",
+      "source_locator": "UNESCO Stonehenge/Avebury, Megalithic Temples of Malta, Bru na Boinne, and HES Calanais source-map captures; source-map-batch-118 refined anchors.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Do not flatten all prehistoric monuments into one type.",
+      "source_locator": "UNESCO Stonehenge/Avebury, Megalithic Temples of Malta, Bru na Boinne, and HES Calanais source-map captures; source-map-batch-118 refined anchors.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Use the HES source for Callanish-specific claims.",
+      "source_locator": "UNESCO Stonehenge/Avebury, Megalithic Temples of Malta, Bru na Boinne, and HES Calanais source-map captures; source-map-batch-118 refined anchors.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Purpose claims must stay site-specific.",
+      "source_locator": "UNESCO Stonehenge/Avebury, Megalithic Temples of Malta, Bru na Boinne, and HES Calanais source-map captures; source-map-batch-118 refined anchors.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Trilithon equals two posts and one lintel.",
+      "source_locator": "UNESCO Stonehenge/Avebury, Megalithic Temples of Malta, Bru na Boinne, and HES Calanais source-map captures; source-map-batch-118 refined anchors.",
+      "status": "supported_by_batch_118_source_map"
+    }
+  ],
+  "unsupported_or_removed_claims": [
+    "Removed universal-purpose and unsupported construction-technology framing for megalithic sites."
+  ],
+  "remaining_local_blockers": [],
+  "overall": "pass_local_first_git_blocked"
+}

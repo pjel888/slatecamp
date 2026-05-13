@@ -1,20 +1,92 @@
 {
   "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:9caf8eb83bab8ce9289e69e91a3671281f04ba57232fa0927ada2dc2d36c5385",
-  "source_count": 1,
+  "sources_hash": "sha256:89cedba325f52ccffb34f6868a170a36108595982847b24b9546483a30b3f039",
+  "source_count": 4,
   "sources": [
     {
-      "source_id": "4d3aaf55-f995-46d1-a89a-37d632ee1a8d",
-      "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb",
-      "label": "Burn, Lucilla. *The British Museum Book of the Classical World*. Thames and Hudson, 1991",
+      "source_id": "batch118-greek-official-source-map-capture",
+      "label": "Greek official UNESCO sources - raw source-map capture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "official_web_source_capture",
+      "description": "local_capture_path=vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-118/lea-hist-001-05-greek-architecture.source-capture.md; local_capture_sha256=sha256:73359551fa4553a667f3dc1d76d2946bc7410ccfc43ac728737ea63f955ccf59; official_urls_captured=true",
+      "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-03-24T04:33:59.83296+00:00",
-      "updated_at": "2026-03-24T04:33:59.83296+00:00"
+      "created_at": "2026-05-13T22:16:00+08:00",
+      "updated_at": "2026-05-13T22:16:00+08:00",
+      "local_file_hashes": [
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-118/lea-hist-001-05-greek-architecture.source-capture.md",
+          "sha256": "sha256:73359551fa4553a667f3dc1d76d2946bc7410ccfc43ac728737ea63f955ccf59"
+        }
+      ],
+      "locator": "UNESCO Acropolis/Bassae/Delphi/Olympia captures plus Vitruvius lines 1963-1999, 2061-2083 and Fletcher Parthenon lines 7180-7190.",
+      "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb"
+    },
+    {
+      "source_id": "batch118-greek-official-source-map-refined",
+      "label": "Greek official UNESCO sources - refined local conversion",
+      "url": null,
+      "source_type": "local_conversion",
+      "description": "refined_source_map_path=vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-118/lea-hist-001-05-greek-architecture.refined.md; refined_source_map_sha256=sha256:3cedc9cdf4bc112c5914c21fc8fb4d21c3a492cafff31190e9aa6a55e666d1fa; derived_from=vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-118/lea-hist-001-05-greek-architecture.source-capture.md",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-13T22:16:00+08:00",
+      "updated_at": "2026-05-13T22:16:00+08:00",
+      "local_file_hashes": [
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-118/lea-hist-001-05-greek-architecture.refined.md",
+          "sha256": "sha256:3cedc9cdf4bc112c5914c21fc8fb4d21c3a492cafff31190e9aa6a55e666d1fa"
+        }
+      ],
+      "locator": "UNESCO Acropolis/Bassae/Delphi/Olympia captures plus Vitruvius lines 1963-1999, 2061-2083 and Fletcher Parthenon lines 7180-7190.",
+      "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb"
+    },
+    {
+      "source_id": "batch118-vitruvius-orders-local",
+      "label": "Vitruvius local conversion - Greek orders",
+      "url": null,
+      "source_type": "local_conversion",
+      "description": "path=vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Vitruvius - 10 Books of Architecture.md; raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/002-History/Vitruvius - 10 Books of Architecture.pdf; lines=1963-1999,2061-2083",
+      "is_verified": true,
+      "sort_order": 2,
+      "created_at": "2026-05-13T22:16:00+08:00",
+      "updated_at": "2026-05-13T22:16:00+08:00",
+      "local_file_hashes": [
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/Vitruvius - 10 Books of Architecture.md",
+          "sha256": "sha256:07eaf55d56357483d264d765f1bf3565aa0c839916def1edd6a17f125980ec75"
+        },
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Vitruvius - 10 Books of Architecture.pdf",
+          "sha256": "sha256:e63f78260563ae36c5f1f85a07371df3d5740dfb13f5fc77453d88632238e020"
+        }
+      ],
+      "locator": "Vitruvius refined markdown lines 1963-1999 and 2061-2083",
+      "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb"
+    },
+    {
+      "source_id": "batch118-fletcher-parthenon-local",
+      "label": "Banister Fletcher local conversion - Parthenon/order reference",
+      "url": null,
+      "source_type": "local_conversion",
+      "description": "path=vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).md; raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/002-History/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).pdf; lines=7180-7190 and index/order locators",
+      "is_verified": true,
+      "sort_order": 3,
+      "created_at": "2026-05-13T22:16:00+08:00",
+      "updated_at": "2026-05-13T22:16:00+08:00",
+      "local_file_hashes": [
+        {
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).md",
+          "sha256": "sha256:0d38f59019ff829f62a241a88757583677d4636347bf765c757cd36a83f6894e"
+        },
+        {
+          "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).pdf",
+          "sha256": "sha256:396ffad4fd94dc3b375d519215bb12d3d3932ecf80b63e0dda4bdff258676d40"
+        }
+      ],
+      "locator": "Fletcher refined markdown lines 7180-7190 plus order/caryatid/tholos index locators",
+      "article_id": "757e71dc-bf5f-4a3a-9948-5063d8cd67bb"
     }
   ]
 }

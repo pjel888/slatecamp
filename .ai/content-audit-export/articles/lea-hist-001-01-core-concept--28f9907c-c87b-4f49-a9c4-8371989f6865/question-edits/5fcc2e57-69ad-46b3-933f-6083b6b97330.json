@@ -1,0 +1,88 @@
+{
+  "question_id": "5fcc2e57-69ad-46b3-933f-6083b6b97330",
+  "baseline_hash": "sha256:0365128aca2e300c79438e78064845271f3e66349a149e6fd26ebb1d4504e9e9",
+  "action": "replace",
+  "reason": "source-audited-article-batch-118-local-first source-maps lea-hist-001-01-core-concept and rewrites this linked question for source-safe answer, options, rationale, and article alignment.",
+  "approved_by": "codex-local-source-audit-batch-118",
+  "approved_at": "2026-05-13T22:16:00+08:00",
+  "source_audit_support": {
+    "parent_article_id": "28f9907c-c87b-4f49-a9c4-8371989f6865",
+    "parent_article_slug": "lea-hist-001-01-core-concept",
+    "answer_key_fields_changed": false,
+    "correct_option_id_changed": false,
+    "option_text_revised_without_correct_option_change": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UNESCO Stonehenge/Avebury, Megalithic Temples of Malta, Bru na Boinne, and HES Calanais source-map captures; source-map-batch-118 refined anchors.",
+    "checked_markdown_lines": [
+      "UNESCO Stonehenge/Avebury, Megalithic Temples of Malta, Bru na Boinne, and HES Calanais source-map captures; source-map-batch-118 refined anchors."
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-118/lea-hist-001-01-megalithic-architecture.source-capture.md",
+        "sha256": "sha256:c6000a8c386cd7579ea3a69b634d5db7c23ef9d38513ee1dd93e4a8c1021902d",
+        "source_id": "batch118-megalithic-official-source-map-capture",
+        "locator": "UNESCO Stonehenge/Avebury, Megalithic Temples of Malta, Bru na Boinne, and HES Calanais source-map captures; source-map-batch-118 refined anchors."
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-118/lea-hist-001-01-megalithic-architecture.refined.md",
+        "sha256": "sha256:c80187e3bb8a8f7a5e814c9f96280165f57b66f76c3291db00ce06b132c358ab",
+        "source_id": "batch118-megalithic-official-source-map-refined",
+        "locator": "UNESCO Stonehenge/Avebury, Megalithic Temples of Malta, Bru na Boinne, and HES Calanais source-map captures; source-map-batch-118 refined anchors."
+      }
+    ],
+    "local_source_safe_action": "Batch 118 source-mapped the article and linked question together using local source captures/conversions before composing the candidate.",
+    "batch_id": "source-audited-article-batch-118-local-first",
+    "new_source_map_phase": true
+  },
+  "proposed": {
+    "question_id": "5fcc2e57-69ad-46b3-933f-6083b6b97330",
+    "article_id": "28f9907c-c87b-4f49-a9c4-8371989f6865",
+    "topic_id": "5268bd23-8290-44ef-b78e-65df843f5582",
+    "text": "A student compares a Maltese megalithic temple and Stonehenge. Which distinction is most source-safe?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Malta is anchored as temple-complex architecture, while Stonehenge is anchored by standing stones and lintelled arrangements"
+      },
+      {
+        "id": "b",
+        "text": "Both are mud-brick ziggurats"
+      },
+      {
+        "id": "c",
+        "text": "Both are Egyptian tomb temples"
+      },
+      {
+        "id": "d",
+        "text": "Both are Roman arch-and-vault buildings"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "b": "This option does not match the source-audited article and selected local source anchors for this item.",
+      "c": "This option does not match the source-audited article and selected local source anchors for this item.",
+      "d": "This option does not match the source-audited article and selected local source anchors for this item.",
+      "correct": "The selected sources support different megalithic types; the other choices import unrelated traditions.",
+      "takeaway": "Do not flatten all prehistoric monuments into one type."
+    },
+    "explanation": "The selected sources support different megalithic types; the other choices import unrelated traditions. Do not flatten all prehistoric monuments into one type.",
+    "code_citation": null,
+    "bloom_level": "apply",
+    "application_context": "design_application",
+    "practice_context": [
+      "CMP"
+    ],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false,
+    "model_id": "ALE-HIST-001-01-005",
+    "prompt_image_url": null,
+    "created_at": "2026-03-23T19:27:22.549111+00:00",
+    "updated_at": "2026-04-08T07:44:46.846261+00:00"
+  }
+}

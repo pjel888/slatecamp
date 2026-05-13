@@ -1,0 +1,166 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T22:16:00+08:00",
+  "audit_mode": "local_source_map_audit_no_supabase",
+  "protocols_applied": [
+    ".ai/CONTENT_EXCELLENCE_GOAL.md",
+    ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
+    ".ai/00_system/vitruvius-source-reference.md",
+    "Batch 118 new local-first internet-source reservation phase"
+  ],
+  "target": {
+    "article_id": "3e966435-e276-422e-a220-374043120cec",
+    "slug": "lea-hist-001-04-core-concept",
+    "title": "Egyptian Architecture",
+    "article_folder": ".ai/content-audit-export/articles/lea-hist-001-04-core-concept--3e966435-e276-422e-a220-374043120cec",
+    "candidate_path": ".ai/content-audit-export/articles/lea-hist-001-04-core-concept--3e966435-e276-422e-a220-374043120cec/candidate.md",
+    "candidate_sha256": "sha256:906d6b30739ed9f8f25f7f570b0f62ca6f8e3dfe88ba53a874dc8235aead371c",
+    "normalized_sha256": "sha256:906d6b30739ed9f8f25f7f570b0f62ca6f8e3dfe88ba53a874dc8235aead371c",
+    "linked_questions_sha256": "sha256:2dfe085f4b50255c185894d6ea25cbb77e1914da31a3f03edf26781efa9c8295",
+    "sources_sha256": "sha256:f037d1d0a8c2b4c4becefa2704b101ee19e558f96607d2ed553dadedf6786e25"
+  },
+  "classification": {
+    "content_type": "history_egyptian_architecture",
+    "focus": "Egyptian pyramid, tomb, temple, pylon, hypostyle, material, and theological architecture claims",
+    "contains_legal_or_code_claims": false,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 12,
+    "question_edits_created": [
+      "a6398e8c-d712-45e7-9600-5cbf6c2527d3",
+      "f936dd6a-d5e6-4876-a9a7-f0888dfd7486",
+      "e940a076-16a3-42c0-96ac-d3011cfba25f",
+      "3fa8a4f6-9b47-4c8b-b230-bccb06796c13",
+      "b8dcf139-b24f-4f18-a5e1-4f6abcddb016",
+      "4cb17cd4-bcb2-4d2b-b1ec-5e56133ead31",
+      "79d77a54-6bc9-4093-b6b9-c0765bf2c12c",
+      "3fd77d7e-9f31-44da-a63f-4922916cdb8e",
+      "2d2b7924-f64b-40a5-8271-5d891861252b",
+      "6b3b7f7d-dae3-4f13-9d49-317fe2e3e93d",
+      "3e3346bc-ce05-4a25-8492-3016f881f94a",
+      "d78421c8-9d95-4aee-a0f4-4cc4c600c5c8"
+    ],
+    "new_source_map_phase": true
+  },
+  "raw_sources": [
+    {
+      "key": "batch118-egyptian-official-source-map-capture",
+      "label": "Egyptian official UNESCO sources - raw source-map capture",
+      "source_type": "official_web_source_capture",
+      "source_id": "batch118-egyptian-official-source-map-capture",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-118/lea-hist-001-04-egyptian-architecture.source-capture.md",
+      "sha256": "sha256:853996b6bc812c98e71c92073a71af16645b8db52480258b6dead18d40e387d1",
+      "locator": "UNESCO Memphis/Thebes captures plus 30-Second Ancient Egypt refined markdown lines 370-382, 392-452."
+    },
+    {
+      "key": "batch118-egyptian-official-source-map-refined",
+      "label": "Egyptian official UNESCO sources - refined local conversion",
+      "source_type": "local_conversion",
+      "source_id": "batch118-egyptian-official-source-map-refined",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-118/lea-hist-001-04-egyptian-architecture.refined.md",
+      "sha256": "sha256:3f54027ca4ebc0a79d851ed689bb16477955f99f89e608f365553ffb1215651b",
+      "locator": "UNESCO Memphis/Thebes captures plus 30-Second Ancient Egypt refined markdown lines 370-382, 392-452."
+    },
+    {
+      "key": "batch118-der-manuelian-egypt-local",
+      "label": "30-Second Ancient Egypt local conversion",
+      "source_type": "local_conversion",
+      "source_id": "batch118-der-manuelian-egypt-local",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/30-Second Ancient Egypt (The 50 Most Important Achievements of a Timeless Civilisation Each Explained in Half A Minute) - Peter Der Manuelian.md",
+      "sha256": "sha256:b7571430e45c33fe425481a647a5b709be2d89f518074b4b6d48411b5c9ca35c",
+      "locator": "30-Second Ancient Egypt refined markdown lines 370-382, 392-452"
+    },
+    {
+      "key": "batch118-der-manuelian-egypt-local",
+      "label": "30-Second Ancient Egypt local conversion",
+      "source_type": "local_conversion",
+      "source_id": "batch118-der-manuelian-egypt-local",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/30-Second Ancient Egypt (The 50 Most Important Achievements of a Timeless Civilisation Each Explained in Half A Minute) - Peter Der Manuelian.pdf",
+      "sha256": "sha256:0c38c1f6e3f024ce716d0c230e5198a4d08878c6f359d3fbe76d6aa26f4d1e9c",
+      "locator": "30-Second Ancient Egypt refined markdown lines 370-382, 392-452"
+    }
+  ],
+  "gate_results": {
+    "local_source_artifacts_created": "pass",
+    "article_and_questions_edited_together": "pass",
+    "unsupported_internet_summary_avoidance": "pass",
+    "roundtrip_placeholder_policy": "pass_normalized_and_candidate_plain_markdown",
+    "compose": "pass",
+    "diff": "pass",
+    "validate": "pass",
+    "ui_block_edit_validation": "pass",
+    "scoped_json_parse": "pass",
+    "placeholder_internal_note_source_gap_scan": "pass",
+    "source_hash_checks": "pass",
+    "linked_question_question_edit_count_checks": "pass",
+    "stale_compose_error_scan": "pass",
+    "targeted_content_audit_tests": "pass"
+  },
+  "claims": [
+    {
+      "claim": "Columns plus controlled high light point to hypostyle hall.",
+      "source_locator": "UNESCO Memphis/Thebes captures plus 30-Second Ancient Egypt refined markdown lines 370-382, 392-452.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Theology and kingship are central to Egyptian monumentality.",
+      "source_locator": "UNESCO Memphis/Thebes captures plus 30-Second Ancient Egypt refined markdown lines 370-382, 392-452.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Djoser/Imhotep/Saqqara equals step-pyramid innovation.",
+      "source_locator": "UNESCO Memphis/Thebes captures plus 30-Second Ancient Egypt refined markdown lines 370-382, 392-452.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Use sourced construction methods, not folklore phrasing.",
+      "source_locator": "UNESCO Memphis/Thebes captures plus 30-Second Ancient Egypt refined markdown lines 370-382, 392-452.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Tapered mass belongs to Egyptian monumental wall/pylon language.",
+      "source_locator": "UNESCO Memphis/Thebes captures plus 30-Second Ancient Egypt refined markdown lines 370-382, 392-452.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Mastaba to step to true pyramid is the safe sequence.",
+      "source_locator": "UNESCO Memphis/Thebes captures plus 30-Second Ancient Egypt refined markdown lines 370-382, 392-452.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Use the anchored height; avoid unsupported block-count memorization.",
+      "source_locator": "UNESCO Memphis/Thebes captures plus 30-Second Ancient Egypt refined markdown lines 370-382, 392-452.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Karnak/Luxor belong to Theban temple architecture.",
+      "source_locator": "UNESCO Memphis/Thebes captures plus 30-Second Ancient Egypt refined markdown lines 370-382, 392-452.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Pylon is the Egyptian temple entrance clue.",
+      "source_locator": "UNESCO Memphis/Thebes captures plus 30-Second Ancient Egypt refined markdown lines 370-382, 392-452.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "High controlled light means clerestory.",
+      "source_locator": "UNESCO Memphis/Thebes captures plus 30-Second Ancient Egypt refined markdown lines 370-382, 392-452.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Separate tomb/funerary architecture from temple architecture.",
+      "source_locator": "UNESCO Memphis/Thebes captures plus 30-Second Ancient Egypt refined markdown lines 370-382, 392-452.",
+      "status": "supported_by_batch_118_source_map"
+    },
+    {
+      "claim": "Egyptian temple movement tends from public entrance toward sacred interior.",
+      "source_locator": "UNESCO Memphis/Thebes captures plus 30-Second Ancient Egypt refined markdown lines 370-382, 392-452.",
+      "status": "supported_by_batch_118_source_map"
+    }
+  ],
+  "unsupported_or_removed_claims": [
+    "Removed unsupported knife-blade/block-count style prompts and replaced off-article Jericho/Yazilikaya linked questions with Egyptian temple/pyramid prompts."
+  ],
+  "remaining_local_blockers": [],
+  "overall": "pass_local_first_git_blocked"
+}

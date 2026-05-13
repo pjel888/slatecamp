@@ -1,3 +1,32 @@
+# Batch 118 New Source-Map Phase Coordination Update
+
+Updated: 2026-05-13T22:42:00+08:00
+
+## Status
+
+- Batch 118: pass local-first article gates; final git gate pending
+- Branch: 3dlab-gray-viewport-bg
+- Selected articles: 5
+- Linked question edits: 56
+- Phase: new local-first internet-source capture/source-map phase for residual non-prac bundles
+- Forbidden external actions: none performed.
+
+## Batch 118 Gate Summary
+
+- Compose/diff/validate strict 5/5: pass
+- UI-block edit validation: pass
+- Source hash checks: pass at generation
+- Linked-question/question-edit count checks: pass 56/56
+- Final JSON/test/git gates are tracked in the Batch 118 scoped checks artifact.
+
+## Coordination Notes
+
+- The Batch 117 terminal freeze remains valid for the earlier fixed lea-prac line, but the user explicitly authorized this new source-map/reservation phase.
+- Use official/authoritative internet pages only after local capture/refined conversion artifacts are created.
+- Do not publish, Supabase-push, deploy, mutate production DB, or merge to main without later authorization.
+
+---
+
 # Terminal Freeze After Batch 117 Source-Audited Production-Line Coordination Update
 
 Updated: 2026-05-13T21:39:03+08:00

@@ -1,0 +1,94 @@
+{
+  "question_id": "4cb17cd4-bcb2-4d2b-b1ec-5e56133ead31",
+  "baseline_hash": "sha256:8051c4e01821b596ec7f4021a98a1e6ac942a287bc68da69329a26e17fdf13f0",
+  "action": "replace",
+  "reason": "source-audited-article-batch-118-local-first source-maps lea-hist-001-04-core-concept and rewrites this linked question for source-safe answer, options, rationale, and article alignment.",
+  "approved_by": "codex-local-source-audit-batch-118",
+  "approved_at": "2026-05-13T22:16:00+08:00",
+  "source_audit_support": {
+    "parent_article_id": "3e966435-e276-422e-a220-374043120cec",
+    "parent_article_slug": "lea-hist-001-04-core-concept",
+    "answer_key_fields_changed": false,
+    "correct_option_id_changed": false,
+    "option_text_revised_without_correct_option_change": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UNESCO Memphis/Thebes captures plus 30-Second Ancient Egypt refined markdown lines 370-382, 392-452.",
+    "checked_markdown_lines": [
+      "UNESCO Memphis/Thebes captures plus 30-Second Ancient Egypt refined markdown lines 370-382, 392-452."
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-118/lea-hist-001-04-egyptian-architecture.source-capture.md",
+        "sha256": "sha256:853996b6bc812c98e71c92073a71af16645b8db52480258b6dead18d40e387d1",
+        "source_id": "batch118-egyptian-official-source-map-capture",
+        "locator": "UNESCO Memphis/Thebes captures plus 30-Second Ancient Egypt refined markdown lines 370-382, 392-452."
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-118/lea-hist-001-04-egyptian-architecture.refined.md",
+        "sha256": "sha256:3f54027ca4ebc0a79d851ed689bb16477955f99f89e608f365553ffb1215651b",
+        "source_id": "batch118-egyptian-official-source-map-refined",
+        "locator": "UNESCO Memphis/Thebes captures plus 30-Second Ancient Egypt refined markdown lines 370-382, 392-452."
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/30-Second Ancient Egypt (The 50 Most Important Achievements of a Timeless Civilisation Each Explained in Half A Minute) - Peter Der Manuelian.md",
+        "sha256": "sha256:b7571430e45c33fe425481a647a5b709be2d89f518074b4b6d48411b5c9ca35c",
+        "source_id": "batch118-der-manuelian-egypt-local",
+        "locator": "30-Second Ancient Egypt refined markdown lines 370-382, 392-452"
+      }
+    ],
+    "local_source_safe_action": "Batch 118 source-mapped the article and linked question together using local source captures/conversions before composing the candidate.",
+    "batch_id": "source-audited-article-batch-118-local-first",
+    "new_source_map_phase": true
+  },
+  "proposed": {
+    "question_id": "4cb17cd4-bcb2-4d2b-b1ec-5e56133ead31",
+    "article_id": "3e966435-e276-422e-a220-374043120cec",
+    "topic_id": "19741fc9-113b-4a79-9d43-e68d976621c9",
+    "text": "Which sequence best describes the source-audited development of Egyptian royal tomb form?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mastaba and tumulus forms to step pyramid to true pyramid"
+      },
+      {
+        "id": "b",
+        "text": "Stone circle to ziggurat to Gothic cathedral"
+      },
+      {
+        "id": "c",
+        "text": "True pyramid to mastaba to tholos"
+      },
+      {
+        "id": "d",
+        "text": "Roman basilica to pyramid"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "b": "This option does not match the source-audited article and selected local source anchors for this item.",
+      "c": "This option does not match the source-audited article and selected local source anchors for this item.",
+      "d": "This option does not match the source-audited article and selected local source anchors for this item.",
+      "correct": "The local conversion anchors mastaba/tumuli expansion to Djoser’s step pyramid and then true pyramids under Snefru and Giza rulers.",
+      "takeaway": "Mastaba to step to true pyramid is the safe sequence."
+    },
+    "explanation": "The local conversion anchors mastaba/tumuli expansion to Djoser’s step pyramid and then true pyramids under Snefru and Giza rulers. Mastaba to step to true pyramid is the safe sequence.",
+    "code_citation": null,
+    "bloom_level": "remember",
+    "application_context": "recall",
+    "practice_context": [
+      "CH"
+    ],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false,
+    "model_id": "ALE-HIST-001-04-004",
+    "prompt_image_url": null,
+    "created_at": "2026-03-23T19:27:23.211402+00:00",
+    "updated_at": "2026-05-06T15:56:00.984805+00:00"
+  }
+}
