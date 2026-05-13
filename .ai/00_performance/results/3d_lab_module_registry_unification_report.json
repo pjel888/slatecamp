@@ -1,16 +1,13 @@
 {
-  "timestamp": "2026-04-27T14:49:56.838Z",
-  "mode": "all",
-  "gitCommit": "34d5a620",
-  "branch": "main",
-  "moduleCount": 209,
+  "timestamp": "2026-05-13T11:51:02.125Z",
+  "mode": "layout",
+  "gitCommit": "e1158c709",
+  "branch": "3dlab-gray-viewport-bg",
+  "moduleCount": 210,
   "failures": [],
-  "warnings": [
-    "Inactive legacy scene still has direct controls and should not become active without migration: src/features/3d-lab/scenes/NBCPEnvelope/NBCPEnvelope.tsx"
-  ],
+  "warnings": [],
   "evidence": [
-    "Layout audit verified ModuleViewer single shared-shell branch, template/site/calculator slot coverage, shell test IDs, and sidebars/status defaults.",
-    "Controls audit verified SceneConfig owns OrbitControls, DevControls uses scene content only, calculators use shared cameraControls, and active modules do not import direct controls."
+    "Layout audit verified ModuleViewer single shared-shell branch, template/site/calculator slot coverage, shell test IDs, and sidebars/status defaults."
   ],
   "inventory": [
     {
@@ -630,6 +627,27 @@
       "categoryId": "BUILDING_CODE",
       "status": "ready",
       "registryFile": "src/features/3d-lab/config/registry/cat-01.ts",
+      "entryComponent": "src/app/dashboard/3d-lab/[moduleId]/page.tsx -> ModuleViewer",
+      "layoutWrapper": "ViewportShell / 3D Lab shared shell",
+      "sceneComponent": "parametric renderer via useTemplateContent + CanvasWrapper",
+      "leftSidebarComponent": "parametric leftSidebarContent slot",
+      "rightSidebarComponent": "parametric rightSidebarContent slot",
+      "headerOwner": "ViewportShell -> ViewportHeader",
+      "footerStatusOwner": "ViewportShell -> ViewportStatusBar",
+      "viewportCanvasWrapper": "ViewportShell -> LabViewportFrame -> CanvasWrapper -> SceneConfig",
+      "toolbarControlOverlay": "ViewportShell -> SceneToolbar + LayersPanel + CameraNavigationBar",
+      "cameraControlsImplementation": "SceneConfig -> ThreeDLabControlsProvider -> OrbitControls + useCameraSnap",
+      "customGlobalLayoutOverrides": "none detected in active route path",
+      "compliesWithUnifiedStandard": true
+    },
+    {
+      "id": "bp344-accessible-route-ramp",
+      "name": "BP 344 Accessible Route Ramp",
+      "route": "/dashboard/3d-lab/bp344-accessible-route-ramp",
+      "templateType": "parametric",
+      "categoryId": "ACCESSIBILITY",
+      "status": "built",
+      "registryFile": "src/features/3d-lab/config/registry/cat-02.ts",
       "entryComponent": "src/app/dashboard/3d-lab/[moduleId]/page.tsx -> ModuleViewer",
       "layoutWrapper": "ViewportShell / 3D Lab shared shell",
       "sceneComponent": "parametric renderer via useTemplateContent + CanvasWrapper",
@@ -2451,7 +2469,7 @@
     },
     {
       "id": "stairway-configurator",
-      "name": "Stairway Configurator",
+      "name": "Stair Compliance Lab",
       "route": "/dashboard/3d-lab/stairway-configurator",
       "templateType": "parametric",
       "categoryId": "VERTICAL",

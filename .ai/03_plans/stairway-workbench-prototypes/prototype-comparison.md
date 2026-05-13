@@ -126,27 +126,100 @@ Corrected right-sidebar target:
 - keep the compact violation/conflict summary behavior;
 - use modals for deeper explanation/source detail only.
 
+`variant-g-existing-law-categories-relayout.html` is superseded by the next correction because it still implied fixed quadrant/check slots.
+
+## Correction after Philip review 5 — law cards with scalable violation pills
+
+Philip clarified the final right-sidebar pattern:
+
+- remove Safe Preset and Study Cases from the left sidebar for now;
+- keep the four visible laws on the right: RA 9514, BP 344, PD 1096, BP 220;
+- do not use fixed quadrants/check boxes that imply each law only has four violations;
+- research and respect the existing violation model;
+- use compact violation/check pills inside each law card;
+- clicking a pill opens a modal showing all violations/checks for that law, source status, affected dimension, and correction guidance.
+
+Research from current `stairway-configurator.ts` confirms more than four possible checks overall: PD 1096 alone has riser, tread, headroom, vertical rise, width, and handrail-range checks; RA 9514 has riser, width, tread, and vertical rise; BP 220 has riser, tread, and width; BP 344 has width and handrail overlay; there are also cross-law conflicts, comfort, uniformity, nosing, and handrail-detail checks.
+
+Prototype:
+
+- `variant-h-law-cards-violation-pills.html`
+
+## Correction after Philip review 6 — compact board-vital left sidebar
+
+Philip accepted the right sidebar direction for now and asked what else belongs in the left sidebar after examining the live page.
+
+Live browser inspection of `/dashboard/3d-lab/stairway-configurator` at 1440×820 after skipping orientation showed the current left sidebar has a 639px visible scrollport and about 3032px of scroll height. It mixes presets, project classification, stair type/turning, all geometry, overlays, nosing, handrail details, materials, user safety, and egress calculator controls.
+
 New primary prototype:
 
-- `variant-g-existing-law-categories-relayout.html`
+- `variant-i-compact-left-board-vital-controls.html`
 
-`variant-f-zero-decision-fatigue.html` is now superseded for the right sidebar because it did not preserve the existing four-law compliance report model.
+Variant I keeps the Variant H right-sidebar law-card/pill direction, but improves the left sidebar. The recommended default controls are exactly six board-vital controls:
+
+1. riser height;
+2. tread depth;
+3. clear stair width;
+4. headroom clearance;
+5. risers in flight / number of risers, because it drives total vertical rise between landings;
+6. handrail height.
+
+Read-only derived metrics can appear below the controls because they teach without adding choices:
+- 2R + T comfort value;
+- pitch angle;
+- total vertical rise;
+- total run.
+
+Still excluded from first load:
+- Safe Preset;
+- Study Cases;
+- scenario/stair-type dropdowns;
+- project type / occupancy type / accessible route / exit stair toggles;
+- nosing, material, detailed handrail profile, and egress calculator controls.
+
+## Correction after Philip review 7 — categorized left sidebar
+
+Philip clarified that the left sidebar should not be a flat control list and should not have explanatory header copy. Remove `Inputs`, `Default context is fixed`, and the risers-in-flight control for now.
+
+New primary prototype:
+
+- `variant-j-categorized-left-sidebar.html`
+
+Corrected left sidebar structure:
+
+1. `Stair information` card at the top, read-only only:
+   - stair/step count;
+   - total height / total rise;
+   - total run / depth;
+   - `2R + T` comfort value;
+   - pitch angle;
+   - width.
+2. `Step body` card:
+   - riser height;
+   - tread depth;
+   - clear stair width.
+3. `Headroom clearance` standalone card.
+4. `Handrail height` standalone card.
 
 ## UX verdict
 
-The corrected direction is: left sidebar stays low-decision with only essential dimension controls, while the right sidebar preserves the existing four-law compliance report content and redesigns it into a cleaner no-scroll, high-hierarchy layout. Violations should update inside the existing law-category structure, not replace it.
+The corrected direction is: left sidebar starts with compact information, then grouped low-decision controls: stair body, headroom, and handrail. The right sidebar preserves the existing four-law compliance report content and redesigns it into scalable law cards with compact violation/check pills. Violations appear as pills inside the relevant law card; clicking a pill opens a modal with the full law-specific violation/check list. Do not use fixed quadrants.
 
 ## Non-negotiables for production
 
 - Viewport remains dominant.
 - Left panel contains only essential sliders/inputs.
+- Default left panel structure: top `Stair information` read-only card, `Step body` card with riser height/tread depth/clear stair width, standalone `Headroom clearance` card, standalone `Handrail height` card.
+- Show read-only derived metrics only in the information card: stair count, total height/rise, total run/depth, 2R+T, pitch angle, width.
+- Do not include risers-in-flight as a default control for now.
 - No stair-type, scenario, law-set, project-type, occupancy, egress, or accessibility dropdown appears in the default left sidebar.
 - The module selects the default instructional context; learners change dimensions, not the legal universe.
 - No long teaching copy in left sidebar.
 - Avoid sidebar scrolling at desktop/laptop heights.
 - Advanced controls open in modal/popover.
 - Right panel shows the existing four-law compliance report content by default: RA 9514, BP 344, PD 1096, BP 220.
-- Right panel violations update in-place inside the relevant law category/card, preserving current behavior.
-- Right panel rows/cards open detail modals.
+- Right panel uses scalable law cards with flexible violation/check pills, not fixed quadrants or fixed check slots.
+- Active violations update as pills inside the relevant law category/card.
+- Clicking a violation/check pill opens a detail modal listing all checks/violations for that law, active failure state, source/citation status, affected parameter, and correction guidance.
 - Source-audit-pending is visible but compact.
 - Legal, comfort, and comparison states are visually distinct.
