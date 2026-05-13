@@ -17,4 +17,3 @@ This capture records the local raw source artifacts inspected before Batch 136 c
 - Locator 649-670: Site planning should orient openings to prevailing winds, use operable windows and ceiling vents, and add shaded verandas, balconies, and landscaping.
 - Locator 838-875: Passive and mixed-mode ventilation can reduce air-conditioning dependence when openings and stack effect are planned.
 - Locator 1562-1573: Green building in tropical climates reduces cooling load by filtered air movement, shade, and vegetation that does not block circulation.
-

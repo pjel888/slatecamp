@@ -24,4 +24,3 @@ This capture records the local raw source artifacts inspected before Batch 136 c
 - Expected refined sha256: sha256:802f59aa95855d8736e81483600a6d7cf78e358b333fd45812db8baf62759360
 - Locator 103-121: Renzo Piano and Norman Foster appear in the local theory quote corpus.
 - Locator 293-293: Richard Rogers appears in the local theory quote corpus.
-

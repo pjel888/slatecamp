@@ -33,4 +33,3 @@ This capture records the local raw source artifacts inspected before Batch 136 c
 - Refined sha256: sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b
 - Expected refined sha256: sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b
 - Locator 375-375: The theory lecture defines basic building origins through immediate need and locally available materials.
-

@@ -25,4 +25,3 @@ This capture records the local raw source artifacts inspected before Batch 136 c
 - Refined sha256: sha256:06c5f34a17ef793bddfb801de237e2eb3a09f371b92d41b7205679a20b381423
 - Expected refined sha256: sha256:06c5f34a17ef793bddfb801de237e2eb3a09f371b92d41b7205679a20b381423
 - Locator 648-785: Mies is treated as a major modern architect and the TOA 5 corpus repeatedly anchors design in form, light, structure, and material discipline.
-

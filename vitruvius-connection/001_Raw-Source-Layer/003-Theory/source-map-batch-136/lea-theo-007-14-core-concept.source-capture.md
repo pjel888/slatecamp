@@ -25,4 +25,3 @@ This capture records the local raw source artifacts inspected before Batch 136 c
 - Refined sha256: sha256:8fc5b5b1c0cfcf0a20b8bdefc5dd76a697521dd9eae7684bbd7a28fe044e091e
 - Expected refined sha256: sha256:8fc5b5b1c0cfcf0a20b8bdefc5dd76a697521dd9eae7684bbd7a28fe044e091e
 - Locator 1300-1300: SESC is described as occupying a former brick factory and reusing its low functional brick structures.
-
