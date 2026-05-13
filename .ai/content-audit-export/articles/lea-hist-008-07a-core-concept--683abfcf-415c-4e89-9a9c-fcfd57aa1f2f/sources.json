@@ -1,32 +1,38 @@
 {
   "article_id": "683abfcf-415c-4e89-9a9c-fcfd57aa1f2f",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:c460738f30846e6414895c7e9bd6913f1d33c81832357bfb171f8ffa4098c9fe",
+  "sources_hash": "sha256:7b19d1fa2274cd9d8b126f1f346437dd8043f41f72814fd7fc49ff2ad04b0c69",
   "source_count": 2,
   "sources": [
     {
-      "source_id": "78d53aca-1dc3-482e-a208-96ef1432aad5",
+      "source_id": "batch125-lea-hist-008-07a-core-concept-source-map-capture",
       "article_id": "683abfcf-415c-4e89-9a9c-fcfd57aa1f2f",
-      "label": "Wigley, M. (1988). \"Deconstructivism.\" In *Deconstructivism in Architecture* (exhibition catalogue)",
+      "label": "Deconstructivism source-map capture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
+      "source_type": "local_source_capture",
+      "description": "Local-first capture of official/authoritative source anchors for Deconstructivism.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-125/lea-hist-008-07a-core-concept-deconstructivism.source-capture.md",
+      "sha256": "sha256:667c6b5c84518c46c52ae2bbabcc79e927b9af641054923ba3e0dcfb61d2dded",
+      "locator": "MoMA Deconstructivist Architecture exhibition; Vitra Fire Station; Eisenman Architects House VI; Studio Libeskind Denver Art Museum; Guggenheim Bilbao building page; Jewish Museum Berlin Libeskind Building; 20th Century Architects and local history/theory anchors for movement vocabulary and architect-work matching.",
+      "sort_order": 1,
+      "created_at": "2026-05-14T01:57:10.145+08:00",
+      "updated_at": "2026-05-14T01:57:10.145+08:00"
     },
     {
-      "source_id": "4d9b5e1b-c9db-4c43-aa19-06ea7612b761",
+      "source_id": "batch125-lea-hist-008-07a-core-concept-source-map-refined",
       "article_id": "683abfcf-415c-4e89-9a9c-fcfd57aa1f2f",
-      "label": "Museum of Modern Art; Jencks, C. (1997). *The Architecture of the Jumping Universe*. Academy Editions; Frampton, K. (1997). *Modern Architecture: A Critical History*. Thames and Hudson",
+      "label": "Deconstructivism refined source map",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 1,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
+      "source_type": "local_refined_conversion",
+      "description": "Refined claim map for Deconstructivism and linked question edits.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-125/lea-hist-008-07a-core-concept-deconstructivism.refined.md",
+      "sha256": "sha256:2e0ba56b1a090727958e953492c63ecfb08f03a205588aa102cf3251645157ae",
+      "locator": "MoMA Deconstructivist Architecture exhibition; Vitra Fire Station; Eisenman Architects House VI; Studio Libeskind Denver Art Museum; Guggenheim Bilbao building page; Jewish Museum Berlin Libeskind Building; 20th Century Architects and local history/theory anchors for movement vocabulary and architect-work matching.",
+      "sort_order": 2,
+      "created_at": "2026-05-14T01:57:10.145+08:00",
+      "updated_at": "2026-05-14T01:57:10.145+08:00"
     }
   ]
 }

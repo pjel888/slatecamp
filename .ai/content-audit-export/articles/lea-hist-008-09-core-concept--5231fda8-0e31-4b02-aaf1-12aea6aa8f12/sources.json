@@ -1,32 +1,38 @@
 {
   "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:eeac058ff896a65d1bbe729870af25eede936379c77315c8f20b06e59f4b3768",
+  "sources_hash": "sha256:9a70b7e1262d17725263bd1d031e79305df3bfe8230aa7f0a3843d48a9332067",
   "source_count": 2,
   "sources": [
     {
-      "source_id": "2491d4ca-6084-4513-a1a7-ffc6da676cb0",
+      "source_id": "batch125-lea-hist-008-09-core-concept-source-map-capture",
       "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
-      "label": "The Hyatt Foundation",
+      "label": "The Pritzker Architecture Prize source-map capture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
+      "source_type": "local_source_capture",
+      "description": "Local-first capture of official/authoritative source anchors for The Pritzker Architecture Prize.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-125/lea-hist-008-09-core-concept-pritzker-architecture-prize.source-capture.md",
+      "sha256": "sha256:bdb84059b5c884cc6e86d523aedbd9bd6469916863d407e827b97cd4d484e248",
+      "locator": "Pritzker Prize official about and laureates pages; official pages for Philip Johnson, Gordon Bunshaft, Oscar Niemeyer, Zaha Hadid, Frei Otto, Alejandro Aravena, Wang Shu, Tadao Ando, Diébédo Francis Kéré, Liu Jiakun, and Smiljan Radić Clarke; local HOA/TOA anchors for laureate-work exam matching.",
+      "sort_order": 1,
+      "created_at": "2026-05-14T01:57:10.145+08:00",
+      "updated_at": "2026-05-14T01:57:10.145+08:00"
     },
     {
-      "source_id": "74aa9303-d1fd-436e-a293-3920cf021cbf",
+      "source_id": "batch125-lea-hist-008-09-core-concept-source-map-refined",
       "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
-      "label": "Pritzker Architecture Prize official records, 1979–2026",
+      "label": "The Pritzker Architecture Prize refined source map",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 1,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
+      "source_type": "local_refined_conversion",
+      "description": "Refined claim map for The Pritzker Architecture Prize and linked question edits.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-125/lea-hist-008-09-core-concept-pritzker-architecture-prize.refined.md",
+      "sha256": "sha256:abe27530e3ddc38b05a71ad78eab496eb3f8af6f4d02bb7b243e80cfbccc1452",
+      "locator": "Pritzker Prize official about and laureates pages; official pages for Philip Johnson, Gordon Bunshaft, Oscar Niemeyer, Zaha Hadid, Frei Otto, Alejandro Aravena, Wang Shu, Tadao Ando, Diébédo Francis Kéré, Liu Jiakun, and Smiljan Radić Clarke; local HOA/TOA anchors for laureate-work exam matching.",
+      "sort_order": 2,
+      "created_at": "2026-05-14T01:57:10.145+08:00",
+      "updated_at": "2026-05-14T01:57:10.145+08:00"
     }
   ]
 }

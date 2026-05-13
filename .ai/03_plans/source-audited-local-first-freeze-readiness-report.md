@@ -1,3 +1,13 @@
+## Batch 125 Freeze Readiness - 2026-05-14
+
+- Status: pass local-first; pass local-first; live git finalization blocked by .git/index.lock permissions.
+- Source readiness: official/authoritative URLs captured locally and refined for all five selected article clusters.
+- Question readiness: 54/54 linked question edits generated and applied locally.
+- Known source-sensitive corrections: Postmodernism typo and Vanna Venturi guardrails, Deconstructivism/Derrida/CATIA narrowing, Parametricism/BIM overclaim narrowing, Critical Regionalism sustainability/Ando/Kere guardrails, and Pritzker typo/current-laureate corrections.
+- Freeze condition: local validation gates passed; acceptance still requires Hermes to stage only Batch 125 paths, run cached diff check, commit, and push.
+
+---
+
 ## Batch 124 Freeze Readiness - 2026-05-14
 
 - Status: pass local-first; live git finalization blocked by .git/index.lock permissions.

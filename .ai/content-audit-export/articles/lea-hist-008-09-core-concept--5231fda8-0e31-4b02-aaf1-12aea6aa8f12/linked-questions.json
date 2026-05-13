@@ -1,7 +1,7 @@
 {
   "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:bb4e6cc8559c6f60f0f490aa9c461b4ca30ae2ad5ba49f63d10fccc5569006cb",
+  "linked_questions_hash": "sha256:511eb79a13ccdbe72b0e35339fdd9b5d0e879ccb27c993fa335ce4ef286bc3ac",
   "question_count": 12,
   "questions": [
     {
@@ -33,12 +33,13 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "The prize was not established in 1975.",
-        "c": "The prize was established in 1979, not 1985.",
-        "d": "The prize predates 1990.",
-        "correct": "The Pritzker Prize was established in 1979 by the Hyatt Foundation."
+        "a": "This option conflicts with the source-safe distinction: The Pritzker Architecture Prize was established in 1979.",
+        "c": "This option conflicts with the source-safe distinction: The Pritzker Architecture Prize was established in 1979.",
+        "d": "This option conflicts with the source-safe distinction: The Pritzker Architecture Prize was established in 1979.",
+        "correct": "1979 is correct. The Pritzker Architecture Prize was established in 1979.",
+        "takeaway": "The Pritzker Architecture Prize was established in 1979."
       },
-      "explanation": "The prize was not established in 1975. The prize was established in 1979, not 1985. The prize predates 1990. The Pritzker Prize was established in 1979 by the Hyatt Foundation.",
+      "explanation": "1979 is correct. The Pritzker Architecture Prize was established in 1979.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -52,14 +53,14 @@
       "model_id": "pritzker-01",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-05-06T12:41:31.023198+00:00",
-      "content_hash": "sha256:2530ce22ef5a6391b7d80df5819c7dd0c9fb07d88ab0b3ce059302763a7cf022"
+      "updated_at": "2026-05-13T17:57:10.146Z",
+      "content_hash": "sha256:209783b3552c597b054354b277b819d46842b714472690601cfe63ff1fb6c9b9"
     },
     {
       "question_id": "12e30953-d88a-4857-9235-7522268e8fa4",
       "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
       "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
-      "text": "Which architect won the Pritzker Prize in 1988, a shared award that was the only shared prize until later team practices?",
+      "text": "Which architects shared the Pritzker Prize in 1988, the prize's tenth-anniversary shared award?",
       "options": [
         {
           "id": "a",
@@ -84,12 +85,13 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Roche won individually in 1982; Rudolph did not win.",
-        "c": "Stirling won individually in 1981; Wilford was not a laureate.",
-        "d": "Rossi won individually in 1990.",
-        "correct": "In 1988, Gordon Bunshaft (USA) and Oscar Niemeyer (Brazil) shared the Pritzker Prize—the only shared award until later team practices (SANAA, etc.)."
+        "b": "This option conflicts with the source-safe distinction: Oscar Niemeyer and Gordon Bunshaft shared the 1988 Pritzker Prize.",
+        "c": "This option conflicts with the source-safe distinction: Oscar Niemeyer and Gordon Bunshaft shared the 1988 Pritzker Prize.",
+        "d": "This option conflicts with the source-safe distinction: Oscar Niemeyer and Gordon Bunshaft shared the 1988 Pritzker Prize.",
+        "correct": "Oscar Niemeyer and Gordon Bunshaft is correct. Oscar Niemeyer and Gordon Bunshaft shared the 1988 Pritzker Prize.",
+        "takeaway": "Oscar Niemeyer and Gordon Bunshaft shared the 1988 Pritzker Prize."
       },
-      "explanation": "Roche won individually in 1982; Rudolph did not win. Stirling won individually in 1981; Wilford was not a laureate. Rossi won individually in 1990. In 1988, Gordon Bunshaft (USA) and Oscar Niemeyer (Brazil) shared the Pritzker Prize—the only shared award until later team practices (SANAA, etc.).",
+      "explanation": "Oscar Niemeyer and Gordon Bunshaft is correct. Oscar Niemeyer and Gordon Bunshaft shared the 1988 Pritzker Prize.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -103,14 +105,14 @@
       "model_id": "pritzker-10",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-05-06T12:41:31.160483+00:00",
-      "content_hash": "sha256:d7f5eb0979b094c86c0bb9001f62a50bce4246df6c53e06cce4c963183ee1f85"
+      "updated_at": "2026-05-13T17:57:10.146Z",
+      "content_hash": "sha256:e69ee454b174e7d5843fe66515ac6abe91ab457e70a3903a1bb8d6c463532c65"
     },
     {
       "question_id": "5b858f47-c9d7-42e0-8abe-855427d4e87a",
       "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
       "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
-      "text": "How do the Pritzker laureate selections from 2010–2024 differ from those in the 1980s in terms of geography, building type, and design philosophy?",
+      "text": "How do many Pritzker laureate selections from 2010-2026 differ from many 1980s selections in geography, building type, and design emphasis?",
       "options": [
         {
           "id": "a",
@@ -118,7 +120,7 @@
         },
         {
           "id": "b",
-          "text": "Recent selections increasingly recognize non-Western architects, social impact, and sustainability; 1980s selections emphasized Western formalism and cultural institutions."
+          "text": "Recent selections more visibly recognize non-Western contexts, social impact, public interest, and sustainability, while many 1980s selections centered Western modernist/formal achievement and major cultural or corporate works."
         },
         {
           "id": "c",
@@ -135,12 +137,13 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Significant philosophical and geographic shifts are evident.",
-        "c": "Both eras embrace modernism differently; the distinction is in philosophy and scope.",
-        "d": "Recent laureates maintain rigorous standards; the shift is in priorities and representation.",
-        "correct": "The article articulates this shift: Early era (1979–1995) rewarded Western modernists and cultural ambition; Recent era (2011–2024) increasingly recognizes Global South architects, social practice, and sustainability (Aravena, Kéré, Ban, Lacaton & Vassal)."
+        "a": "This option conflicts with the source-safe distinction: Recent Pritzker patterns broaden geography and values without implying earlier laureates lacked rigor.",
+        "c": "This option conflicts with the source-safe distinction: Recent Pritzker patterns broaden geography and values without implying earlier laureates lacked rigor.",
+        "d": "This option conflicts with the source-safe distinction: Recent Pritzker patterns broaden geography and values without implying earlier laureates lacked rigor.",
+        "correct": "Recent selections more visibly recognize non-Western contexts, social impact, public interest, and sustainability, while many 1980s selections centered Western modernist/formal achievement and major cultural or corporate works. is correct. Recent Pritzker patterns broaden geography and values without implying earlier laureates lacked rigor.",
+        "takeaway": "Recent Pritzker patterns broaden geography and values without implying earlier laureates lacked rigor."
       },
-      "explanation": "Significant philosophical and geographic shifts are evident. Both eras embrace modernism differently; the distinction is in philosophy and scope. Recent laureates maintain rigorous standards; the shift is in priorities and representation. The article articulates this shift: Early era (1979–1995) rewarded Western modernists and cultural ambition; Recent era (2011–2024) increasingly recognizes Global South architects, social practice, and sustainability (Aravena, Kéré, Ban, Lacaton & Vassal).",
+      "explanation": "Recent selections more visibly recognize non-Western contexts, social impact, public interest, and sustainability, while many 1980s selections centered Western modernist/formal achievement and major cultural or corporate works. is correct. Recent Pritzker patterns broaden geography and values without implying earlier laureates lacked rigor.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -154,8 +157,8 @@
       "model_id": "pritzker-12",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-05-06T12:41:31.277446+00:00",
-      "content_hash": "sha256:6e6b706e3cd32547293aa5116320a6486618294fccd2b39062e94fd5e84df729"
+      "updated_at": "2026-05-13T17:57:10.146Z",
+      "content_hash": "sha256:df1ec40c84ccaef9ea829008ffd07b980d2e6d3c1b67957e1aca46ac8c20a49a"
     },
     {
       "question_id": "60558af3-7550-4326-a4c2-751024c686e3",
@@ -186,12 +189,13 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Chipperfield won in 2023.",
-        "c": "Aravena won in 2016.",
-        "d": "Wang Shu won in 2012.",
-        "correct": "Diébédo Francis Kéré won in 2022, becoming the first African Pritzker laureate, honored for community-driven architecture in Burkina Faso."
+        "a": "This option conflicts with the source-safe distinction: Diébédo Francis Kéré is the 2022 Pritzker laureate and first African laureate.",
+        "c": "This option conflicts with the source-safe distinction: Diébédo Francis Kéré is the 2022 Pritzker laureate and first African laureate.",
+        "d": "This option conflicts with the source-safe distinction: Diébédo Francis Kéré is the 2022 Pritzker laureate and first African laureate.",
+        "correct": "Diébédo Francis Kéré is correct. Diébédo Francis Kéré is the 2022 Pritzker laureate and first African laureate.",
+        "takeaway": "Diébédo Francis Kéré is the 2022 Pritzker laureate and first African laureate."
       },
-      "explanation": null,
+      "explanation": "Diébédo Francis Kéré is correct. Diébédo Francis Kéré is the 2022 Pritzker laureate and first African laureate.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -205,14 +209,14 @@
       "model_id": "pritzker-04",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f1902a3513099d788b3658720c03ca05c233f14236d5ff798e931123fee46c89"
+      "updated_at": "2026-05-13T17:57:10.146Z",
+      "content_hash": "sha256:d34c7ce043678a7abcc5fa4dc86a0baa9d1d6b5754dc421d35b7673efe4a333c"
     },
     {
       "question_id": "34040cdd-0c12-4dda-8f0b-83bbd1c39cc6",
       "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
       "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
-      "text": "Which year was Frei Otto the Pritzker Prize laureate, becoming the first posthumous award?",
+      "text": "Which year was Frei Otto named Pritzker Prize laureate, creating the prize's special posthumous-award case?",
       "options": [
         {
           "id": "a",
@@ -237,12 +241,13 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Wang Shu won in 2012.",
-        "b": "Shigeru Ban won in 2014.",
-        "d": "Alejandro Aravena won in 2016.",
-        "correct": "Frei Otto won the Pritzker Prize in 2015 as the first posthumous laureate, honored for his structural and material innovation."
+        "a": "This option conflicts with the source-safe distinction: Frei Otto is the 2015 Pritzker posthumous-context answer.",
+        "b": "This option conflicts with the source-safe distinction: Frei Otto is the 2015 Pritzker posthumous-context answer.",
+        "d": "This option conflicts with the source-safe distinction: Frei Otto is the 2015 Pritzker posthumous-context answer.",
+        "correct": "2015 is correct. Frei Otto is the 2015 Pritzker posthumous-context answer.",
+        "takeaway": "Frei Otto is the 2015 Pritzker posthumous-context answer."
       },
-      "explanation": "Wang Shu won in 2012. Shigeru Ban won in 2014. Alejandro Aravena won in 2016. Frei Otto won the Pritzker Prize in 2015 as the first posthumous laureate, honored for his structural and material innovation.",
+      "explanation": "2015 is correct. Frei Otto is the 2015 Pritzker posthumous-context answer.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -256,14 +261,14 @@
       "model_id": "pritzker-07",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-05-06T12:41:30.761618+00:00",
-      "content_hash": "sha256:612af2d1a704954e0d5a62d75f0f25bede2dcb2e5183070fbbeaab3ada369f8f"
+      "updated_at": "2026-05-13T17:57:10.146Z",
+      "content_hash": "sha256:9a1da684ec983509ed2549f31d26b1cbcfc3a0e3b17c2b2ddda78eaafcf93c74"
     },
     {
       "question_id": "18cc6036-17b8-4207-976b-16d83f01dead",
       "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
       "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
-      "text": "A living architect whose built work demonstrates tleant, vision, and lasting contribution to the built environment is recognized annually with a prestigious prize established in 1979. This describes which architecture award?",
+      "text": "A living architect or architects whose built work demonstrates talent, vision, and lasting contribution to humanity and the built environment is recognized annually by which award?",
       "options": [
         {
           "id": "a",
@@ -288,12 +293,13 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "AIA Gold Medal has different criteria.",
-        "b": "RIBA Medal has different focus and history.",
-        "d": "Stirling Prize recognizes completed buildings, not living architects' lifetime achievement.",
-        "correct": "This describes the Pritzker Architecture Prize, established in 1979 by the Hyatt Foundation, recognizing living architects' enduring contributions."
+        "a": "This option conflicts with the source-safe distinction: The Pritzker Prize recognizes a body of built work by living architect(s), not a single building.",
+        "b": "This option conflicts with the source-safe distinction: The Pritzker Prize recognizes a body of built work by living architect(s), not a single building.",
+        "d": "This option conflicts with the source-safe distinction: The Pritzker Prize recognizes a body of built work by living architect(s), not a single building.",
+        "correct": "Pritzker Architecture Prize is correct. The Pritzker Prize recognizes a body of built work by living architect(s), not a single building.",
+        "takeaway": "The Pritzker Prize recognizes a body of built work by living architect(s), not a single building."
       },
-      "explanation": null,
+      "explanation": "Pritzker Architecture Prize is correct. The Pritzker Prize recognizes a body of built work by living architect(s), not a single building.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -307,8 +313,8 @@
       "model_id": "pritzker-11",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6af6f5447179a3e27789c69e3776c49f8de4485a00fdca6b34002fb1012c478a"
+      "updated_at": "2026-05-13T17:57:10.146Z",
+      "content_hash": "sha256:cc0512b430dbba2b6afaf4e7dd0d1747b2a2a19f1152eb08469671d3249d2724"
     },
     {
       "question_id": "442e0cfd-f922-457e-9e5f-170e4563c4bd",
@@ -339,12 +345,13 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Luis Barragán won in 1980, the second laureate.",
-        "c": "I.M. Pei won in 1983.",
-        "d": "Kenzo Tange won in 1987.",
-        "correct": "Philip Johnson was the first Pritzker laureate in 1979, representing American establishment modernism."
+        "a": "This option conflicts with the source-safe distinction: Philip Johnson was the first laureate in 1979.",
+        "c": "This option conflicts with the source-safe distinction: Philip Johnson was the first laureate in 1979.",
+        "d": "This option conflicts with the source-safe distinction: Philip Johnson was the first laureate in 1979.",
+        "correct": "Philip Johnson is correct. Philip Johnson was the first laureate in 1979.",
+        "takeaway": "Philip Johnson was the first laureate in 1979."
       },
-      "explanation": null,
+      "explanation": "Philip Johnson is correct. Philip Johnson was the first laureate in 1979.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -358,14 +365,14 @@
       "model_id": "pritzker-02",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e8f9abed2d85de01e8bcbcaef33cb0b5f40fbbe98a7d75e8729d136363758967"
+      "updated_at": "2026-05-13T17:57:10.146Z",
+      "content_hash": "sha256:7e62fc173db729e5b0cf7aaef132b7351d341ff887aa5f7034b9413d78aee611"
     },
     {
       "question_id": "f877fd65-1347-439f-9bb3-e57c8c0abf2d",
       "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
       "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
-      "text": "Which year marked the first femlea Pritzker Prize laureate, breaking a 25-year gender barrier?",
+      "text": "Which year marked the first female Pritzker Prize laureate?",
       "options": [
         {
           "id": "a",
@@ -390,12 +397,13 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "No female laureate in 2000.",
-        "b": "Glenn Murcutt won in 2002.",
-        "d": "Jean Nouvel won in 2008.",
-        "correct": "Zaha Hadid became the first woman to win the Pritzker Prize in 2004."
+        "a": "This option conflicts with the source-safe distinction: Zaha Hadid became the first woman Pritzker laureate in 2004.",
+        "b": "This option conflicts with the source-safe distinction: Zaha Hadid became the first woman Pritzker laureate in 2004.",
+        "d": "This option conflicts with the source-safe distinction: Zaha Hadid became the first woman Pritzker laureate in 2004.",
+        "correct": "2004 is correct. Zaha Hadid became the first woman Pritzker laureate in 2004.",
+        "takeaway": "Zaha Hadid became the first woman Pritzker laureate in 2004."
       },
-      "explanation": null,
+      "explanation": "2004 is correct. Zaha Hadid became the first woman Pritzker laureate in 2004.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -409,14 +417,14 @@
       "model_id": "pritzker-03",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:cde26fef68b1641edac9d7d9bef0a1df0373cd1f24fda4eace4986da821a0de4"
+      "updated_at": "2026-05-13T17:57:10.146Z",
+      "content_hash": "sha256:d3b47b00f2bb2e99e6dbaa7aace173efe3d47fa59fd7a77808131325878b5ada"
     },
     {
       "question_id": "0764b121-c781-4680-bf92-e329b22f5ac3",
       "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
       "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
-      "text": "Which two architects are both first laureates of their respective countries: Wang Shu (China) and which architect (Japan)?",
+      "text": "Which statement correctly handles the comparison between Wang Shu and Japanese Pritzker firsts?",
       "options": [
         {
           "id": "a",
@@ -432,7 +440,7 @@
         },
         {
           "id": "d",
-          "text": "Multiple Japanese laureates preceded Wang Shu"
+          "text": "Multiple Japanese laureates preceded Wang Shu, who was the first Chinese laureate."
         }
       ],
       "correct_option_id": "d",
@@ -441,12 +449,13 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Tange won in 1987, predating Wang Shu.",
-        "b": "Ando won in 1995, predating Wang Shu.",
-        "c": "Ban won in 2014, after Wang Shu.",
-        "correct": "Wang Shu was China's first laureate in 2012, but Japan had multiple laureates before him (Tange 1987, Ando 1995, etc.). No Japanese architect was a 'first' along with Wang Shu."
+        "a": "This option conflicts with the source-safe distinction: Wang Shu was the first Chinese laureate; Kenzo Tange and other Japanese laureates preceded him.",
+        "b": "This option conflicts with the source-safe distinction: Wang Shu was the first Chinese laureate; Kenzo Tange and other Japanese laureates preceded him.",
+        "c": "This option conflicts with the source-safe distinction: Wang Shu was the first Chinese laureate; Kenzo Tange and other Japanese laureates preceded him.",
+        "correct": "Multiple Japanese laureates preceded Wang Shu, who was the first Chinese laureate. is correct. Wang Shu was the first Chinese laureate; Kenzo Tange and other Japanese laureates preceded him.",
+        "takeaway": "Wang Shu was the first Chinese laureate; Kenzo Tange and other Japanese laureates preceded him."
       },
-      "explanation": null,
+      "explanation": "Multiple Japanese laureates preceded Wang Shu, who was the first Chinese laureate. is correct. Wang Shu was the first Chinese laureate; Kenzo Tange and other Japanese laureates preceded him.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "design_application",
@@ -460,8 +469,8 @@
       "model_id": "pritzker-05",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6ce7e67b40a5a416662e83f8e91ab3790953dc7d0e2aeb6d3f428948558193ba"
+      "updated_at": "2026-05-13T17:57:10.146Z",
+      "content_hash": "sha256:f654222060487c1b06286a25095326ee0c6395ef6230bad0ca806a41201341b1"
     },
     {
       "question_id": "8b9f432f-bb08-4267-a6e2-62b058bd8fc0",
@@ -492,11 +501,13 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Yvonne Farrell & Shelley McNamara won in 2020 (Ireland).",
-        "note": "Remove fictional winners; actual 2024 winner: Riken Yamamoto (Japan). No 2025 winner as of March 2026.",
-        "correct": "No Pritzker Prize awarded in 2026 as of March 2026; second Chilean laureate has not yet been awarded."
+        "a": "This option conflicts with the source-safe distinction: Smiljan Radić Clarke made 2026 the second Chilean laureate year after Alejandro Aravena.",
+        "b": "This option conflicts with the source-safe distinction: Smiljan Radić Clarke made 2026 the second Chilean laureate year after Alejandro Aravena.",
+        "c": "This option conflicts with the source-safe distinction: Smiljan Radić Clarke made 2026 the second Chilean laureate year after Alejandro Aravena.",
+        "correct": "2026 is correct. Smiljan Radić Clarke made 2026 the second Chilean laureate year after Alejandro Aravena.",
+        "takeaway": "Smiljan Radić Clarke made 2026 the second Chilean laureate year after Alejandro Aravena."
       },
-      "explanation": null,
+      "explanation": "2026 is correct. Smiljan Radić Clarke made 2026 the second Chilean laureate year after Alejandro Aravena.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -510,8 +521,8 @@
       "model_id": "pritzker-09",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a3a69442a9a0287e7aae2049b91747432060a8716360dac2298183df40f5edb4"
+      "updated_at": "2026-05-13T17:57:10.146Z",
+      "content_hash": "sha256:6f158f934aaf7d7029469a5c590c77c634e1809c23a2b7ce391e00b455e198b8"
     },
     {
       "question_id": "30137711-7cb1-4d1b-8eab-2932a1fe0553",
@@ -542,12 +553,13 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Getty Center is by Richard Meier (1984 laureate, completed 1997).",
-        "c": "Dancing House is by Gehry and Vlado Milunić (1999), earlier than Bilbao.",
-        "d": "Vitra Design Museum is by Gehry (1989) but predates Bilbao.",
-        "correct": "Frank Gehry's Guggenheim Museum Bilbao (1997) epitomizes his deconstructivist approach with titanium-clad biomorphic forms. He won the Pritzker in 1989, well before this building's completion."
+        "a": "This option conflicts with the source-safe distinction: Guggenheim Museum Bilbao is the 1997 Gehry landmark commonly paired with his 1989 Pritzker fact.",
+        "c": "This option conflicts with the source-safe distinction: Guggenheim Museum Bilbao is the 1997 Gehry landmark commonly paired with his 1989 Pritzker fact.",
+        "d": "This option conflicts with the source-safe distinction: Guggenheim Museum Bilbao is the 1997 Gehry landmark commonly paired with his 1989 Pritzker fact.",
+        "correct": "Guggenheim Museum Bilbao is correct. Guggenheim Museum Bilbao is the 1997 Gehry landmark commonly paired with his 1989 Pritzker fact.",
+        "takeaway": "Guggenheim Museum Bilbao is the 1997 Gehry landmark commonly paired with his 1989 Pritzker fact."
       },
-      "explanation": null,
+      "explanation": "Guggenheim Museum Bilbao is correct. Guggenheim Museum Bilbao is the 1997 Gehry landmark commonly paired with his 1989 Pritzker fact.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -561,14 +573,14 @@
       "model_id": "pritzker-06",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:9c8cd501a39a27aee1610233b8ae6f80bece7f5ae5aabaeb122d696374f1d5e2"
+      "updated_at": "2026-05-13T17:57:10.146Z",
+      "content_hash": "sha256:c46d992cf8404fe85804067f6db34258cb5516fcac97e4e44c2a1416df324d03"
     },
     {
       "question_id": "4cd92ba9-d6ce-472f-826b-9d4442103606",
       "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
       "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
-      "text": "Leajandro Aravena won the Pritzker Prize in 2016. For which type of architecture is he primarily recognized?",
+      "text": "Alejandro Aravena won the Pritzker Prize in 2016. For which type of work is he especially recognized?",
       "options": [
         {
           "id": "a",
@@ -580,7 +592,7 @@
         },
         {
           "id": "c",
-          "text": "Social housing and community-driven work"
+          "text": "Social housing, public-interest, and community-driven work"
         },
         {
           "id": "d",
@@ -593,12 +605,13 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Aravena pursues social work, not purely cultural institutions.",
-        "b": "Aravena is not known for high-tech commercial work.",
-        "d": "Aravena pursues participatory design, not parametricism.",
-        "correct": "Alejandro Aravena won in 2016 for social housing and community-driven architecture, exemplified by Quinta Monroy Housing (2004)."
+        "a": "This option conflicts with the source-safe distinction: Aravena/ELEMENTAL is the social housing and public-interest Pritzker cue.",
+        "b": "This option conflicts with the source-safe distinction: Aravena/ELEMENTAL is the social housing and public-interest Pritzker cue.",
+        "d": "This option conflicts with the source-safe distinction: Aravena/ELEMENTAL is the social housing and public-interest Pritzker cue.",
+        "correct": "Social housing, public-interest, and community-driven work is correct. Aravena/ELEMENTAL is the social housing and public-interest Pritzker cue.",
+        "takeaway": "Aravena/ELEMENTAL is the social housing and public-interest Pritzker cue."
       },
-      "explanation": null,
+      "explanation": "Social housing, public-interest, and community-driven work is correct. Aravena/ELEMENTAL is the social housing and public-interest Pritzker cue.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -612,8 +625,8 @@
       "model_id": "pritzker-08",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:2367f2720e76de941999792bfab54b3f1a42fe931a4215a01ab39f119b8d27f3"
+      "updated_at": "2026-05-13T17:57:10.146Z",
+      "content_hash": "sha256:1337518ac7c74a1ff21cc46e8901c2141d7a20ceccc969940b321f77b12f5f04"
     }
   ]
 }

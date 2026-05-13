@@ -1,0 +1,277 @@
+{
+  "batch_id": "source-audited-article-batch-125-local-first",
+  "generated_at": "2026-05-14T01:57:10.145+08:00",
+  "updated_at": "2026-05-14T01:57:10.145+08:00",
+  "branch": "3dlab-gray-viewport-bg",
+  "baseline_commit": "5daad9f3f",
+  "baseline_full_commit": "5daad9f3ff2e167031bec6b24b82e90899a46dc3",
+  "previous_content_batch_commit": "5daad9f3f",
+  "status": "passed_local_validation_git_index_blocked",
+  "selection_policy": "Next residual non-prac linked-question article bundles after Batch 124 consumed through lea-hist-008-05, choosing lea-hist-008-06 through lea-hist-008-09 because all five were sourceable with official/authoritative captures and local book anchors.",
+  "consumed_before_batch_125": [
+    "lea-hist-001-01..06",
+    "lea-hist-001-08",
+    "lea-hist-002-01..06",
+    "lea-hist-004-01..02",
+    "lea-hist-004-05..08",
+    "lea-hist-007-01..06",
+    "lea-hist-008-01",
+    "lea-hist-008-02",
+    "lea-hist-008-03a",
+    "lea-hist-008-03b",
+    "lea-hist-008-03c",
+    "lea-hist-008-03d",
+    "lea-hist-008-04a",
+    "lea-hist-008-04b",
+    "lea-hist-008-04c",
+    "lea-hist-008-05"
+  ],
+  "selected_articles": [
+    {
+      "article_id": "df096cb2-6240-4081-a17b-534a1577637e",
+      "slug": "lea-hist-008-06-core-concept",
+      "title": "Postmodern Architecture",
+      "folder": ".ai/content-audit-export/articles/lea-hist-008-06-core-concept--df096cb2-6240-4081-a17b-534a1577637e",
+      "source_count": 2,
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "answer_key_change_count": 0,
+      "option_text_change_count": 11,
+      "source_safe_real_world_scenario": "added_source_safe_real_world_scenario",
+      "scenario_summary": "Added source-safe recognition/application scenario bounded to selected local source-map anchors.",
+      "thin_needs_expansion": false,
+      "unsupported_or_removed_claims": [
+        "Corrected Chippendlea typo to Chippendale and tied the AT&T/550 Madison cue to NYC LPC source anchors.",
+        "Vanna Venturi House wording was narrowed from a literal child-drawing claim to source-safe domestic iconography, simplified gable, and deliberate contradiction.",
+        "Postmodern theory wording now avoids unsupported absolutes such as no universal principles exist and instead states that Postmodernism challenged Modernism's universalist claims."
+      ],
+      "original_hash": "sha256:1ad141870701d1388f8b4f62463519cc74aa58753c5047b3eb8c2deebc3d3292",
+      "normalized_hash": "sha256:63b54614365da3dce0c7141f542505cdd503a7b979fc5e23d2b38383ad0747b1",
+      "candidate_hash": "sha256:63b54614365da3dce0c7141f542505cdd503a7b979fc5e23d2b38383ad0747b1",
+      "sources_hash": "sha256:f418697ff97cb992a0b505ce89338eeae061f71fdfd4a06d538d37028011453e",
+      "linked_questions_hash": "sha256:814c4240a2a6c7f7a2d2ec7340b67aafa51fee3b0ce230fbbb7f040135759e64",
+      "source_locator": "Portland.gov Portland Building; Library of Congress Vanna Venturi House HABS record; NYC LPC AT&T/550 Madison landmark designation; TCLF Piazza d'Italia; Pritzker Venturi/Johnson locators; HOA Module 2, Salvan, TOA 3, and TOA 5 local anchors for Postmodernism, Venturi, Graves, Johnson/Burgee, and historical-reference guardrails.",
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-125/lea-hist-008-06-core-concept-postmodern-architecture.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-125/lea-hist-008-06-core-concept-postmodern-architecture.refined.md"
+      ],
+      "source_hashes": [
+        "sha256:7ef418a3fb0f6e2c68a9231eef62eb92ad00daf64d654264933284c0bc901ff6",
+        "sha256:fe1aefa7f7bfeaab76e0fcdb9ec732810e4b0d8cbedb6d5648d31eac45ff86e7"
+      ],
+      "safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+      ]
+    },
+    {
+      "article_id": "683abfcf-415c-4e89-9a9c-fcfd57aa1f2f",
+      "slug": "lea-hist-008-07a-core-concept",
+      "title": "Deconstructivism",
+      "folder": ".ai/content-audit-export/articles/lea-hist-008-07a-core-concept--683abfcf-415c-4e89-9a9c-fcfd57aa1f2f",
+      "source_count": 2,
+      "linked_question_count": 11,
+      "question_edit_count": 11,
+      "answer_key_change_count": 0,
+      "option_text_change_count": 5,
+      "source_safe_real_world_scenario": "added_source_safe_real_world_scenario",
+      "scenario_summary": "Added source-safe recognition/application scenario bounded to selected local source-map anchors.",
+      "thin_needs_expansion": false,
+      "unsupported_or_removed_claims": [
+        "Derrida wording was narrowed to borrowed philosophical language of instability and contradiction, not literal textual analysis applied to buildings.",
+        "Digital-tool claims are tied to Guggenheim Bilbao/CATIA and not generalized to every Deconstructivist project.",
+        "Movement coherence claims are framed as contested rather than universally accepted or universally rejected."
+      ],
+      "original_hash": "sha256:19e8cd02f6c5113008b325d0da45dfd7155618c995119957b6d8a96e0a434f36",
+      "normalized_hash": "sha256:9a4daf05989208e67b45a29ba6025cbeca26be8e9d4b89bb10e69f4e0b6c94f6",
+      "candidate_hash": "sha256:9a4daf05989208e67b45a29ba6025cbeca26be8e9d4b89bb10e69f4e0b6c94f6",
+      "sources_hash": "sha256:7b19d1fa2274cd9d8b126f1f346437dd8043f41f72814fd7fc49ff2ad04b0c69",
+      "linked_questions_hash": "sha256:4ff9913c601cca66ffc1ca4f44dfd8b5b926644cedf72c2ceaf6ab079bc329dc",
+      "source_locator": "MoMA Deconstructivist Architecture exhibition; Vitra Fire Station; Eisenman Architects House VI; Studio Libeskind Denver Art Museum; Guggenheim Bilbao building page; Jewish Museum Berlin Libeskind Building; 20th Century Architects and local history/theory anchors for movement vocabulary and architect-work matching.",
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-125/lea-hist-008-07a-core-concept-deconstructivism.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-125/lea-hist-008-07a-core-concept-deconstructivism.refined.md"
+      ],
+      "source_hashes": [
+        "sha256:667c6b5c84518c46c52ae2bbabcc79e927b9af641054923ba3e0dcfb61d2dded",
+        "sha256:2e0ba56b1a090727958e953492c63ecfb08f03a205588aa102cf3251645157ae"
+      ],
+      "safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+      ]
+    },
+    {
+      "article_id": "22de8889-365b-4034-af03-36636d3c101c",
+      "slug": "lea-hist-008-07b-core-concept",
+      "title": "Parametricism",
+      "folder": ".ai/content-audit-export/articles/lea-hist-008-07b-core-concept--22de8889-365b-4034-af03-36636d3c101c",
+      "source_count": 2,
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "answer_key_change_count": 0,
+      "option_text_change_count": 4,
+      "source_safe_real_world_scenario": "added_source_safe_real_world_scenario",
+      "scenario_summary": "Added source-safe recognition/application scenario bounded to selected local source-map anchors.",
+      "thin_needs_expansion": false,
+      "unsupported_or_removed_claims": [
+        "The article no longer states that Parametricism is architecture's primary 21st-century style as fact; it is framed as Schumacher's theoretical claim and a widely used digital methodology.",
+        "BIM is treated as related practical digital coordination, not as identical to avant-garde Parametricism.",
+        "Zaha Hadid/Patrik Schumacher wording was narrowed to association and theorization rather than unsupported co-formalization in the early 2000s."
+      ],
+      "original_hash": "sha256:2674a70409970e0623f9f48df48c69f2e5655861ffc4d7cd2ad091d9a2ba788b",
+      "normalized_hash": "sha256:6c2d2374c32e33e3acdcb9120303d1d79122bf9c899d48ba254d865beb9a5c03",
+      "candidate_hash": "sha256:6c2d2374c32e33e3acdcb9120303d1d79122bf9c899d48ba254d865beb9a5c03",
+      "sources_hash": "sha256:6b2cb3da6413e377bfe30e5d4511df08b93d2cc0236315cebfefd947f13fe75c",
+      "linked_questions_hash": "sha256:ae2ff63bf94f750e08e4a714ce8e43d3061c1211517e301360b02777a7310c1a",
+      "source_locator": "Patrik Schumacher Parametricism manifesto/source text; Zaha Hadid Architects Heydar Aliyev Centre and Serpentine North/Sackler Gallery pages; buildingSMART IFC relationship model; NIBS NBIMS definition; Autodesk Revit/BIM coordination source; local TOA and HOA anchors for digital design methodology guardrails.",
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-125/lea-hist-008-07b-core-concept-parametricism.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-125/lea-hist-008-07b-core-concept-parametricism.refined.md"
+      ],
+      "source_hashes": [
+        "sha256:510e16c908046e79d0a1aebed70d9c91cf0e8d7fa1a2721429421828220db7d9",
+        "sha256:c15a7fe2ac1fa7a13cfa8bbe99b7efbe15c5ba92ec172721ecaccf22c48e09aa"
+      ],
+      "safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+      ]
+    },
+    {
+      "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
+      "slug": "lea-hist-008-08-core-concept",
+      "title": "Critical Regionalism",
+      "folder": ".ai/content-audit-export/articles/lea-hist-008-08-core-concept--c6f9eec1-727b-4d00-a905-f69a58245c66",
+      "source_count": 2,
+      "linked_question_count": 11,
+      "question_edit_count": 11,
+      "answer_key_change_count": 0,
+      "option_text_change_count": 2,
+      "source_safe_real_world_scenario": "added_source_safe_real_world_scenario",
+      "scenario_summary": "Added source-safe recognition/application scenario bounded to selected local source-map anchors.",
+      "thin_needs_expansion": false,
+      "unsupported_or_removed_claims": [
+        "The sustainability question was softened from inseparable to often overlapping through local materials, passive climate response, and place-specific strategy.",
+        "Ando wording was narrowed to modern concrete, light, wind, geometry, and Japanese spatial/nature relationships without overclaiming every Ando work as Critical Regionalist.",
+        "Kéré/Gando wording now follows Pritzker source anchors for community, local clay/cement bricks, thermal mass, ventilation, and raised roof."
+      ],
+      "original_hash": "sha256:a3f8656187c8179c20a64030d7428b4f7c5e5f536b831afedbd69a1ccfe79b74",
+      "normalized_hash": "sha256:a65118204fa0643f99179de542ddc34fd0689cc8902e98218e602a354ba91292",
+      "candidate_hash": "sha256:a65118204fa0643f99179de542ddc34fd0689cc8902e98218e602a354ba91292",
+      "sources_hash": "sha256:b07848281bfb8d5e8ad69d977e4b45660fe244fdeae76fe4890b9021ac55809e",
+      "linked_questions_hash": "sha256:4ed349cde5317b01c8d2c8372d1d6cafef69d2514309b801b58586673a5b2f7e",
+      "source_locator": "CCA Kenneth Frampton critical regionalism fonds; Pritzker Glenn Murcutt 2002, Tadao Ando 1995, and Diébédo Francis Kéré 2022 laureate pages; local HOA/TOA anchors for place, climate, material, and modernist rigor guardrails.",
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-125/lea-hist-008-08-core-concept-critical-regionalism.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-125/lea-hist-008-08-core-concept-critical-regionalism.refined.md"
+      ],
+      "source_hashes": [
+        "sha256:735801617f9ddc0cbea1d3d20d94be8de858c9f42de35d50275f5203a2f22527",
+        "sha256:6d3d5d35f830b83759595fbf1950333a9d6d46d6993ed7c04f3d0fe580eb0089"
+      ],
+      "safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+      ]
+    },
+    {
+      "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "slug": "lea-hist-008-09-core-concept",
+      "title": "The Pritzker Architecture Prize",
+      "folder": ".ai/content-audit-export/articles/lea-hist-008-09-core-concept--5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "source_count": 2,
+      "linked_question_count": 12,
+      "question_edit_count": 12,
+      "answer_key_change_count": 0,
+      "option_text_change_count": 3,
+      "source_safe_real_world_scenario": "added_source_safe_real_world_scenario",
+      "scenario_summary": "Added source-safe recognition/application scenario bounded to selected local source-map anchors.",
+      "thin_needs_expansion": false,
+      "unsupported_or_removed_claims": [
+        "Corrected tleant to talent, femlea to female, and Leajandro to Alejandro.",
+        "Kept 2026 second Chilean laureate claim because Pritzker official Laureates and Smiljan Radić Clarke pages now source it; this is date-sensitive and captured locally.",
+        "Corrected the Wang Shu/Japan comparison by making the answer test a false-pair correction: multiple Japanese laureates preceded Wang Shu."
+      ],
+      "original_hash": "sha256:a95c9c5dbc91a15ecaf4cc7a6b20dee57c01c54fa824eb49759ea2e9fa4b8a36",
+      "normalized_hash": "sha256:258e16e80661de4a7d5aeeb9adf9302b56948bd53edd8d015ed821040f99d3c3",
+      "candidate_hash": "sha256:258e16e80661de4a7d5aeeb9adf9302b56948bd53edd8d015ed821040f99d3c3",
+      "sources_hash": "sha256:9a70b7e1262d17725263bd1d031e79305df3bfe8230aa7f0a3843d48a9332067",
+      "linked_questions_hash": "sha256:511eb79a13ccdbe72b0e35339fdd9b5d0e879ccb27c993fa335ce4ef286bc3ac",
+      "source_locator": "Pritzker Prize official about and laureates pages; official pages for Philip Johnson, Gordon Bunshaft, Oscar Niemeyer, Zaha Hadid, Frei Otto, Alejandro Aravena, Wang Shu, Tadao Ando, Diébédo Francis Kéré, Liu Jiakun, and Smiljan Radić Clarke; local HOA/TOA anchors for laureate-work exam matching.",
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-125/lea-hist-008-09-core-concept-pritzker-architecture-prize.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-125/lea-hist-008-09-core-concept-pritzker-architecture-prize.refined.md"
+      ],
+      "source_hashes": [
+        "sha256:bdb84059b5c884cc6e86d523aedbd9bd6469916863d407e827b97cd4d484e248",
+        "sha256:abe27530e3ddc38b05a71ad78eab496eb3f8af6f4d02bb7b243e80cfbccc1452"
+      ],
+      "safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+      ]
+    }
+  ],
+  "totals": {
+    "article_clusters": 5,
+    "linked_questions": 54,
+    "question_edits": 54,
+    "answer_key_changes": 0,
+    "option_text_changes": 25,
+    "source_entries": 10,
+    "local_source_artifacts": 10
+  },
+  "source_artifacts": [
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-125/lea-hist-008-06-core-concept-postmodern-architecture.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-125/lea-hist-008-06-core-concept-postmodern-architecture.refined.md",
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-125/lea-hist-008-07a-core-concept-deconstructivism.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-125/lea-hist-008-07a-core-concept-deconstructivism.refined.md",
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-125/lea-hist-008-07b-core-concept-parametricism.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-125/lea-hist-008-07b-core-concept-parametricism.refined.md",
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-125/lea-hist-008-08-core-concept-critical-regionalism.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-125/lea-hist-008-08-core-concept-critical-regionalism.refined.md",
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-125/lea-hist-008-09-core-concept-pritzker-architecture-prize.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-125/lea-hist-008-09-core-concept-pritzker-architecture-prize.refined.md"
+  ],
+  "intended_paths": [
+    ".ai/03_plans/production-line-batch-125-manifest.json",
+    ".ai/03_plans/batch-125-independent-quality-review.md",
+    ".ai/03_plans/batch-125-git-handoff-stage-list.md",
+    ".ai/03_plans/source-audited-production-line-coordination.md",
+    ".ai/03_plans/source-audited-local-first-batches-handoff.md",
+    ".ai/03_plans/source-audited-local-first-freeze-readiness-report.md",
+    ".ai/content-audit-export/source-audited-article-batch-125-local-first-report.md",
+    ".ai/content-audit-export/source-audited-article-batch-125-local-first-ledger.json",
+    ".ai/content-audit-export/source-audited-article-batch-125-local-first-scoped-checks.json",
+    ".ai/content-audit-export/sync-state.json",
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-125",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-125",
+    ".ai/content-audit-export/articles/lea-hist-008-06-core-concept--df096cb2-6240-4081-a17b-534a1577637e",
+    ".ai/content-audit-export/articles/lea-hist-008-07a-core-concept--683abfcf-415c-4e89-9a9c-fcfd57aa1f2f",
+    ".ai/content-audit-export/articles/lea-hist-008-07b-core-concept--22de8889-365b-4034-af03-36636d3c101c",
+    ".ai/content-audit-export/articles/lea-hist-008-08-core-concept--c6f9eec1-727b-4d00-a905-f69a58245c66",
+    ".ai/content-audit-export/articles/lea-hist-008-09-core-concept--5231fda8-0e31-4b02-aaf1-12aea6aa8f12"
+  ],
+  "validation_evidence": {
+    "compose": "5/5 candidate compositions passed with blockers=0 using --overwrite scoped by slug",
+    "diff": "5/5 scoped diff reports safe_to_push=true with blockers=0",
+    "validate": "5/5 bundle validation valid=true; component-usage warnings only",
+    "ui_block_edit_validation": "5/5 valid=true, blockers=0, warnings=0",
+    "scoped_integrity": "59 JSON files parsed; 54 linked questions; 54 question edits; 0 answer-key changes; 10 source hashes verified; no stale compose errors; no placeholder/internal-note/source-gap hits",
+    "targeted_tests": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts -> 34 pass, 0 fail",
+    "scoped_diff_check": "git diff --check scoped tracked paths passed; custom whitespace scan passed for 95 intended Markdown/JSON files including ignored source captures",
+    "cached_git_diff_check": "blocked before cached diff because live git add could not create .git/index.lock"
+  },
+  "blockers": [],
+  "warnings": [
+    "Remote stale checks and Supabase push are intentionally out of scope for this local-first batch.",
+    "Live git stage/commit/push blocked in Codex because .git/index.lock cannot be created."
+  ],
+  "git_blocker": "fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted"
+}

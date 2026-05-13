@@ -1,0 +1,33 @@
+{
+  "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+  "slug": "lea-hist-008-09-core-concept",
+  "batch_id": "source-audited-article-batch-125-local-first",
+  "generated_at": "2026-05-14T01:57:10.145+08:00",
+  "local_first": true,
+  "internet_enabled": true,
+  "source_locator": "Pritzker Prize official about and laureates pages; official pages for Philip Johnson, Gordon Bunshaft, Oscar Niemeyer, Zaha Hadid, Frei Otto, Alejandro Aravena, Wang Shu, Tadao Ando, Diébédo Francis Kéré, Liu Jiakun, and Smiljan Radić Clarke; local HOA/TOA anchors for laureate-work exam matching.",
+  "local_capture_paths": [
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-125/lea-hist-008-09-core-concept-pritzker-architecture-prize.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-125/lea-hist-008-09-core-concept-pritzker-architecture-prize.refined.md"
+  ],
+  "checked_sources": [
+    {
+      "source_id": "batch125-lea-hist-008-09-core-concept-source-map-capture",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-125/lea-hist-008-09-core-concept-pritzker-architecture-prize.source-capture.md",
+      "sha256": "sha256:bdb84059b5c884cc6e86d523aedbd9bd6469916863d407e827b97cd4d484e248",
+      "locator": "Pritzker Prize official about and laureates pages; official pages for Philip Johnson, Gordon Bunshaft, Oscar Niemeyer, Zaha Hadid, Frei Otto, Alejandro Aravena, Wang Shu, Tadao Ando, Diébédo Francis Kéré, Liu Jiakun, and Smiljan Radić Clarke; local HOA/TOA anchors for laureate-work exam matching."
+    },
+    {
+      "source_id": "batch125-lea-hist-008-09-core-concept-source-map-refined",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-125/lea-hist-008-09-core-concept-pritzker-architecture-prize.refined.md",
+      "sha256": "sha256:abe27530e3ddc38b05a71ad78eab496eb3f8af6f4d02bb7b243e80cfbccc1452",
+      "locator": "Pritzker Prize official about and laureates pages; official pages for Philip Johnson, Gordon Bunshaft, Oscar Niemeyer, Zaha Hadid, Frei Otto, Alejandro Aravena, Wang Shu, Tadao Ando, Diébédo Francis Kéré, Liu Jiakun, and Smiljan Radić Clarke; local HOA/TOA anchors for laureate-work exam matching."
+    }
+  ],
+  "unsupported_or_removed_claims": [
+    "Corrected tleant to talent, femlea to female, and Leajandro to Alejandro.",
+    "Kept 2026 second Chilean laureate claim because Pritzker official Laureates and Smiljan Radić Clarke pages now source it; this is date-sensitive and captured locally.",
+    "Corrected the Wang Shu/Japan comparison by making the answer test a false-pair correction: multiple Japanese laureates preceded Wang Shu."
+  ],
+  "real_world_scenario": "added_source_safe_real_world_scenario"
+}

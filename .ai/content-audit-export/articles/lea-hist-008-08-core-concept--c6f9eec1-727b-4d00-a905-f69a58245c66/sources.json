@@ -1,20 +1,38 @@
 {
   "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:97d548c7538fb80da91c19916f417ad9d078fe9520d31b92b0ad292f42e91a1d",
-  "source_count": 1,
+  "sources_hash": "sha256:b07848281bfb8d5e8ad69d977e4b45660fe244fdeae76fe4890b9021ac55809e",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "c4f5a4e7-617a-4325-a583-a72c2d63b700",
+      "source_id": "batch125-lea-hist-008-08-core-concept-source-map-capture",
       "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
-      "label": "Frampton, K. (1983). \"Towards a Critical Regionalism: Six Points for an Architecture of Resistance.\" In H. Foster (Ed.), *The Anti-Aesthetic: Essays on Postmodern Culture*. Bay Press; Ando, T",
+      "label": "Critical Regionalism source-map capture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": "(1995). *Tadao Ando: Buildings and Projects*. Rizzoli; Murcutt, G. (1995). *Glenn Murcutt: Architect*. Academy Editions",
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
+      "source_type": "local_source_capture",
+      "description": "Local-first capture of official/authoritative source anchors for Critical Regionalism.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-125/lea-hist-008-08-core-concept-critical-regionalism.source-capture.md",
+      "sha256": "sha256:735801617f9ddc0cbea1d3d20d94be8de858c9f42de35d50275f5203a2f22527",
+      "locator": "CCA Kenneth Frampton critical regionalism fonds; Pritzker Glenn Murcutt 2002, Tadao Ando 1995, and Diébédo Francis Kéré 2022 laureate pages; local HOA/TOA anchors for place, climate, material, and modernist rigor guardrails.",
+      "sort_order": 1,
+      "created_at": "2026-05-14T01:57:10.145+08:00",
+      "updated_at": "2026-05-14T01:57:10.145+08:00"
+    },
+    {
+      "source_id": "batch125-lea-hist-008-08-core-concept-source-map-refined",
+      "article_id": "c6f9eec1-727b-4d00-a905-f69a58245c66",
+      "label": "Critical Regionalism refined source map",
+      "url": null,
+      "source_type": "local_refined_conversion",
+      "description": "Refined claim map for Critical Regionalism and linked question edits.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-125/lea-hist-008-08-core-concept-critical-regionalism.refined.md",
+      "sha256": "sha256:6d3d5d35f830b83759595fbf1950333a9d6d46d6993ed7c04f3d0fe580eb0089",
+      "locator": "CCA Kenneth Frampton critical regionalism fonds; Pritzker Glenn Murcutt 2002, Tadao Ando 1995, and Diébédo Francis Kéré 2022 laureate pages; local HOA/TOA anchors for place, climate, material, and modernist rigor guardrails.",
+      "sort_order": 2,
+      "created_at": "2026-05-14T01:57:10.145+08:00",
+      "updated_at": "2026-05-14T01:57:10.145+08:00"
     }
   ]
 }

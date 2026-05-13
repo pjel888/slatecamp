@@ -1,32 +1,38 @@
 {
   "article_id": "22de8889-365b-4034-af03-36636d3c101c",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:e9550b532ac6ddddf3a7fe3a007f15247bba3d47de15b2711cf973bbaaf61522",
+  "sources_hash": "sha256:6b2cb3da6413e377bfe30e5d4511df08b93d2cc0236315cebfefd947f13fe75c",
   "source_count": 2,
   "sources": [
     {
-      "source_id": "f4e87ab6-210d-431b-99dd-62558e75f5d2",
+      "source_id": "batch125-lea-hist-008-07b-core-concept-source-map-capture",
       "article_id": "22de8889-365b-4034-af03-36636d3c101c",
-      "label": "Schumacher, P. (2008). \"Parametricism as Style – Parametricist Manifesto.\" Presented at the 11th Architecture Biennale, Venice, 2008; Schumacher, P. (2009)",
+      "label": "Parametricism source-map capture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": "\"Parametricism: A New Global Style for Architecture and Urban Design.\" *Architectural Design*, 79(4), July/August 2009 (Digital Cities issue), pp. 12-18; Schumacher, P. (2011). *The Autopoiesis of Architecture*. Vol. 1: A New Framework for Architecture",
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
+      "source_type": "local_source_capture",
+      "description": "Local-first capture of official/authoritative source anchors for Parametricism.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-125/lea-hist-008-07b-core-concept-parametricism.source-capture.md",
+      "sha256": "sha256:510e16c908046e79d0a1aebed70d9c91cf0e8d7fa1a2721429421828220db7d9",
+      "locator": "Patrik Schumacher Parametricism manifesto/source text; Zaha Hadid Architects Heydar Aliyev Centre and Serpentine North/Sackler Gallery pages; buildingSMART IFC relationship model; NIBS NBIMS definition; Autodesk Revit/BIM coordination source; local TOA and HOA anchors for digital design methodology guardrails.",
+      "sort_order": 1,
+      "created_at": "2026-05-14T01:57:10.145+08:00",
+      "updated_at": "2026-05-14T01:57:10.145+08:00"
     },
     {
-      "source_id": "59696a91-62db-423b-8028-5ef0eaa7e951",
+      "source_id": "batch125-lea-hist-008-07b-core-concept-source-map-refined",
       "article_id": "22de8889-365b-4034-af03-36636d3c101c",
-      "label": "Wiley & Sons; Kolarevic, B. (2005). *Architecture in the Digital Age: Design and Manufacturing*. Spon Press",
+      "label": "Parametricism refined source map",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 1,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
+      "source_type": "local_refined_conversion",
+      "description": "Refined claim map for Parametricism and linked question edits.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-125/lea-hist-008-07b-core-concept-parametricism.refined.md",
+      "sha256": "sha256:c15a7fe2ac1fa7a13cfa8bbe99b7efbe15c5ba92ec172721ecaccf22c48e09aa",
+      "locator": "Patrik Schumacher Parametricism manifesto/source text; Zaha Hadid Architects Heydar Aliyev Centre and Serpentine North/Sackler Gallery pages; buildingSMART IFC relationship model; NIBS NBIMS definition; Autodesk Revit/BIM coordination source; local TOA and HOA anchors for digital design methodology guardrails.",
+      "sort_order": 2,
+      "created_at": "2026-05-14T01:57:10.145+08:00",
+      "updated_at": "2026-05-14T01:57:10.145+08:00"
     }
   ]
 }

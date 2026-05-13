@@ -1,3 +1,12 @@
+## Batch 125 Handoff - 2026-05-14
+
+- Batch 125 continues after accepted Batch 124 and consumes `lea-hist-008-06`, `lea-hist-008-07a`, `lea-hist-008-07b`, `lea-hist-008-08`, and `lea-hist-008-09`.
+- Required local artifacts are present under `.ai/03_plans`, `.ai/content-audit-export`, selected article folders, and `vitruvius-connection/.../source-map-batch-125`.
+- Next residual pointer after a successful commit: continue with `lea-hist-011-01` or the next sourceable non-prac residual cluster after `lea-hist-008-09`.
+- If git index or GitHub DNS blocks finalization, Hermes should stage only the intended Batch 125 paths listed in the manifest and stage list.
+
+---
+
 ## Batch 124 Git Finalization Blocker - 2026-05-14
 
 - Local validation passed, but Codex could not stage because .git/index.lock creation is blocked by the environment.
