@@ -2,53 +2,53 @@
   "question_id": "81d5f0a4-5de9-4f36-bcca-cbd66784eb1b",
   "baseline_hash": "sha256:600b24d245dc228269303e0856e60235eff9bd0452ac503174c4949dd82bdcbd",
   "action": "replace",
-  "reason": "source-audited-article-batch-018-local-first rewrote linked question to match locally checked raw source evidence for lea-prac-eth-011-introduction.",
-  "approved_by": "codex-local-source-audit-batch-018",
-  "approved_at": "2026-05-10T23:42:00.000+08:00",
+  "reason": "source-audited-article-batch-113-local-first rewrote this linked question after local raw-source recheck for lea-prac-eth-011-introduction.",
+  "approved_by": "codex-local-source-audit-batch-113",
+  "approved_at": "2026-05-13T19:10:00+08:00",
   "source_audit_support": {
     "parent_article_id": "17350925-ae83-47a1-a30f-a96eb5c1d942",
     "parent_article_slug": "lea-prac-eth-011-introduction",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "UAP Document Code of Ethics, client-interest and independence provisions, raw markdown lines 47-63 and 66-89",
+    "source_locator": "UAP Code of Ethics lines 77-79",
     "checked_markdown_lines": [
-      "raw markdown lines 47-63",
-      "raw markdown lines 66-89"
+      "UAP Code of Ethics lines 23-29, 46-58, 60-79"
     ],
     "checked_sources": [
       {
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
         "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
-        "source_id": "uap-document-code-of-ethics",
-        "locator": "UAP Document Code of Ethics, client-interest and independence provisions, raw markdown lines 47-63 and 66-89"
+        "source_id": "lea-prac-eth-011-introduction-uap-code-of-ethics-local",
+        "locator": "UAP Document Code of Ethics refined markdown lines 23-29, 46-58, 60-79"
       },
       {
-        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
-        "sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
-        "source_id": "uap-document-code-of-ethics-raw-markdown",
-        "locator": "UAP Document Code of Ethics, client-interest and independence provisions, raw markdown lines 47-63 and 66-89"
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+        "sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+        "source_id": "lea-prac-eth-011-introduction-uap-code-of-ethics-local",
+        "locator": "UAP Document Code of Ethics refined markdown lines 23-29, 46-58, 60-79"
       }
     ],
-    "local_source_safe_action": "Question was rewritten to remove unverified or over-specific claims and use only statements anchored in the checked local raw source packet."
+    "local_source_safe_action": "Batch 113 replaced unsupported, thin, or stale ethics wording with local raw-source-supported question text, answer key, citation, and rationale.",
+    "batch_id": "source-audited-article-batch-113-local-first"
   },
   "proposed": {
-    "text": "Which phrase best describes the architect's required stance when business interests could affect the client?",
+    "text": "What should happen to a permissible market discount?",
     "options": [
       {
         "id": "a",
-        "text": "Unprejudiced and honest adviser free to act in the client's best interests"
+        "text": "It should be credited to the client"
       },
       {
         "id": "b",
-        "text": "Sales agent for the supplier"
+        "text": "It should be retained as hidden architect income"
       },
       {
         "id": "c",
-        "text": "Undisclosed partner of the contractor"
+        "text": "It should replace contract documents"
       },
       {
         "id": "d",
-        "text": "Neutral only after payment is complete"
+        "text": "It should be used as a paid advertisement"
       }
     ],
     "correct_option_id": "a",
@@ -56,17 +56,21 @@
     "accepted_answers": null,
     "value_tolerance": 0,
     "question_type": "mcq",
-    "rationale": "The Code says the architect should remain an unprejudiced and honest adviser free to act in the client's best interests.",
-    "explanation": "The Code says the architect should remain an unprejudiced and honest adviser free to act in the client's best interests.",
-    "code_citation": "UAP Document Code of Ethics, line 62",
-    "bloom_level": "understand",
-    "application_context": "professional_practice",
+    "rationale": {
+      "correct": "Section 4-b permits market discount only as client credit.",
+      "takeaway": "Section 4-b permits market discount only as client credit."
+    },
+    "explanation": "Use UAP Code of Ethics lines 77-79 for this Batch 113 source-safe rewrite.",
+    "code_citation": "UAP Code of Ethics lines 77-79",
+    "bloom_level": "apply",
+    "application_context": "professional_practice_source_audit",
     "practice_context": [
-      "Code of Ethical Conduct",
-      "Professional ethics"
+      "professional practice",
+      "source-audited local-first",
+      "batch 113"
     ],
     "difficulty": 0.5,
     "is_assessment": false,
-    "model_id": "ALE-PRAC-ETH-011-004"
+    "model_id": "BATCH-113-lea-prac-eth-011-introduction-007"
   }
 }

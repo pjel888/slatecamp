@@ -1,33 +1,10 @@
-# Content Diff Report: lea-prac-eth-012-introduction
+# Diff Report: Referral Fees, Supplier Discounts, and Kickbacks
 
-Generated: 2026-05-10T15:49:54.204Z
-Article ID: 5f341f81-5e43-49d6-a821-2a67c5d07c59
-Changed: true
-Safe to push locally: true
-
-## Hashes
-
-- Original: `sha256:008c276056471f7b076b9c7b46759342c4b767d2f8ca9f2d4389d856e798b8fc`
-- Normalized: `sha256:7f0ce22a1c13c433e192b7e0ecb91d024952041ee1521f727d123623a1be507f`
-- Candidate: `sha256:7f0ce22a1c13c433e192b7e0ecb91d024952041ee1521f727d123623a1be507f`
-
-## Line summary
-
-- Changed lines: 379
-- Inserted lines: 0
-- Deleted lines: 365
-
-## UI block preservation
-
-- UI blocks expected: 0
-- UI blocks preserved: 0
-- UI blocks changed/missing: 0
-- Unresolved placeholders: 0
-
-## Blockers
-
-- None
-
-## Warnings
-
-- Remote stale check has not been run by diff; push command must verify Supabase before mutation.
+- Batch: source-audited-article-batch-113-local-first
+- Status: pass
+- Original hash: sha256:008c276056471f7b076b9c7b46759342c4b767d2f8ca9f2d4389d856e798b8fc
+- Candidate hash: sha256:351cd21c3191596d4eb4c28bc22d2aab7ef9548a86ec4c22d2e8b5df861700ec
+- Linked question edits: 10
+- UI-block edit validation: pass
+- Source-safe scenario: added
+- Deferred final-depth items: RA 3019 public-project kickback consequences and modern referral-fee consent doctrine remain final-depth source-needed.; Do not restore disclosed commission as fully ethical unless a local primary source supports that exception; the checked UAP source is stricter.

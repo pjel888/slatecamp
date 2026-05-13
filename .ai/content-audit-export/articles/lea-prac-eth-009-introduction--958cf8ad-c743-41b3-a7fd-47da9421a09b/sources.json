@@ -1,59 +1,53 @@
 {
   "article_id": "958cf8ad-c743-41b3-a7fd-47da9421a09b",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:0bf72d3c18169bd1635c089ca628fb4131fe96dc190fa4e4efdd9b50f03f56b4",
+  "sources_hash": "sha256:4e58cd9dc72ec02d4a0abd3b047b5fa2c9e0ee4803f5be00d13b7f4af9b29654",
   "source_count": 2,
   "sources": [
     {
-      "source_id": "ra9266-irr-board-discipline-cpd-local",
+      "source_id": "lea-prac-eth-009-introduction-ra9266-irr-local",
       "article_id": "958cf8ad-c743-41b3-a7fd-47da9421a09b",
-      "label": "RA 9266 IRR - Board powers, disciplinary grounds, CPD, and enforcement",
+      "label": "RA 9266 IRR - Architecture Act of 2004",
       "url": null,
       "source_type": "primary_law_irr_pdf",
-      "description": "Local raw PDF and refined markdown checked for PRBoA authority, suspension/revocation grounds, CPD, and enforcement claims.",
+      "description": "Checked for Board powers, administrative case authority, subpoenas, finality/appeal language, notice/hearing, charges, and investigation rule gate.",
       "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-05-11T11:45:00.000+08:00",
-      "updated_at": "2026-05-11T11:45:00.000+08:00",
+      "created_at": "2026-05-13T19:10:00+08:00",
+      "updated_at": "2026-05-13T19:10:00+08:00",
       "local_source_audit": {
         "authority": "Professional Regulatory Board of Architecture / PRC",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
         "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
         "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
         "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
-        "source_locator": "RA 9266 IRR refined markdown lines 296-323, 588-630, 670-680, and 855-873",
+        "source_locator": "RA 9266 IRR refined markdown lines 296-323 and 592-624",
         "checked_markdown_lines": [
-          "RA 9266 IRR lines 296-323",
-          "RA 9266 IRR lines 588-630",
-          "RA 9266 IRR lines 670-680",
-          "RA 9266 IRR lines 855-873"
+          "RA 9266 IRR lines 296-323 and 592-624"
         ],
         "local_source_checked": true
       }
     },
     {
-      "source_id": "uap-code-ethics-client-contractor-colleague-local",
+      "source_id": "lea-prac-eth-009-introduction-uap-code-of-ethics-local",
       "article_id": "958cf8ad-c743-41b3-a7fd-47da9421a09b",
-      "label": "UAP Architect's Code of Ethics - client, contractor, and colleague duties",
+      "label": "UAP Document Code of Ethics",
       "url": null,
       "source_type": "professional_ethics_pdf",
-      "description": "Local raw PDF and refined markdown checked for architect impartiality, client-charge disclosure, contractor duties, and colleague duties.",
+      "description": "Checked for ethics source authority and public/client duties that can form Code of Ethical Conduct anchors.",
       "is_verified": true,
       "sort_order": 2,
-      "created_at": "2026-05-11T11:45:00.000+08:00",
-      "updated_at": "2026-05-11T11:45:00.000+08:00",
+      "created_at": "2026-05-13T19:10:00+08:00",
+      "updated_at": "2026-05-13T19:10:00+08:00",
       "local_source_audit": {
-        "authority": "United Architects of the Philippines / PRC-Board approved code source",
+        "authority": "United Architects of the Philippines / Board of Architecture and PRC approved ethics source",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
         "raw_pdf_sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
         "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
         "refined_markdown_sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
-        "source_locator": "UAP Code of Ethics refined markdown lines 23-29, 31-58, 60-71, and 81-99",
+        "source_locator": "UAP Document Code of Ethics refined markdown lines 23-29 and 31-58",
         "checked_markdown_lines": [
-          "UAP Code of Ethics lines 23-29",
-          "UAP Code of Ethics lines 31-58",
-          "UAP Code of Ethics lines 60-71",
-          "UAP Code of Ethics lines 81-99"
+          "UAP Code of Ethics lines 23-29 and 31-58"
         ],
         "local_source_checked": true
       }

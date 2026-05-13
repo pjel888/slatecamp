@@ -1,32 +1,56 @@
 {
   "article_id": "265185c0-c1ac-4f40-8db0-bde23084f634",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:950b0400e3c3df3a1e8ef4f75e2d92a7b1d46942268dc5b973a44ed7c067c8af",
+  "sources_hash": "sha256:75f7a09583420eda5bf0c9d9fd1bb78513072946a740aa4b823838d02ecc0735",
   "source_count": 2,
   "sources": [
     {
-      "source_id": "batch003-lea-prac-eth-010-introduction-source-01",
+      "source_id": "lea-prac-eth-010-introduction-ra9266-irr-local",
       "article_id": "265185c0-c1ac-4f40-8db0-bde23084f634",
-      "label": "RA 9266 IRR, Architecture Act of 2004",
+      "label": "RA 9266 IRR - Architecture Act of 2004",
       "url": null,
-      "source_type": "implementing_rules",
-      "description": "ra9266_irr; raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf; raw_pdf_sha256=sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "source_type": "primary_law_irr_pdf",
+      "description": "Checked for suspension/revocation grounds, reinstatement, unauthorized practice, false evidence, impersonation, false title, and penalty clause.",
       "is_verified": true,
-      "sort_order": 0,
-      "created_at": "2026-05-10T18:00:00+08:00",
-      "updated_at": "2026-05-10T18:00:00+08:00"
+      "sort_order": 1,
+      "created_at": "2026-05-13T19:10:00+08:00",
+      "updated_at": "2026-05-13T19:10:00+08:00",
+      "local_source_audit": {
+        "authority": "Professional Regulatory Board of Architecture / PRC",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_locator": "RA 9266 IRR refined markdown lines 592-630 and 674-682",
+        "checked_markdown_lines": [
+          "RA 9266 IRR lines 592-630 and 674-682"
+        ],
+        "local_source_checked": true
+      }
     },
     {
-      "source_id": "batch003-lea-prac-eth-010-introduction-source-02",
+      "source_id": "lea-prac-eth-010-introduction-uap-code-of-ethics-local",
       "article_id": "265185c0-c1ac-4f40-8db0-bde23084f634",
       "label": "UAP Document Code of Ethics",
       "url": null,
-      "source_type": "professional_ethics_code",
-      "description": "uap_code_of_ethics; raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf; raw_pdf_sha256=sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+      "source_type": "professional_ethics_pdf",
+      "description": "Checked for honesty, public laws/ethics duty, client-only compensation, business-interest disclosure, contractor favors, supplier obligations, direct supervision, and employee/subordinate duties.",
       "is_verified": true,
-      "sort_order": 1,
-      "created_at": "2026-05-10T18:00:00+08:00",
-      "updated_at": "2026-05-10T18:00:00+08:00"
+      "sort_order": 2,
+      "created_at": "2026-05-13T19:10:00+08:00",
+      "updated_at": "2026-05-13T19:10:00+08:00",
+      "local_source_audit": {
+        "authority": "United Architects of the Philippines / Board of Architecture and PRC approved ethics source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+        "raw_pdf_sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+        "refined_markdown_sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+        "source_locator": "UAP Document Code of Ethics refined markdown lines 23-29, 37, 56-58, 69, 77-79, and 97-100",
+        "checked_markdown_lines": [
+          "UAP Code of Ethics lines 23-29, 37, 56-58, 69, 77-79, and 97-100"
+        ],
+        "local_source_checked": true
+      }
     }
   ]
 }

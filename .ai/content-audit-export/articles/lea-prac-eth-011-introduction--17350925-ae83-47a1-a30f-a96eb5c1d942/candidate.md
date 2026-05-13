@@ -1,13 +1,43 @@
-# Conflict of Interest in Architectural Practice
+# Conflict of Interest and Impartial Judgment
 
-For this local-first repair, the conflict-of-interest article is limited to claims supported by the UAP Document Code of Ethics. The source does not provide a long decision tree or a universal disclosure script. It does give clear anchors: the client relationship depends on good faith, the architect must act as an unprejudiced adviser, outside returns are barred, business interests that affect the client must be disclosed, and contractor or supplier benefits must not compromise professional judgment.
+## Board Exam Quick Check
 
-## Source-Safe Conflict Anchors
+Conflict-of-interest questions should be answered with the exact source wording available. The UAP Code supports unprejudiced advice, entire impartiality between client and contractor, compensation solely through the client, disclosure of client-affecting business interests, avoidance of contractor benefits creating moral obligation, refusal of supplier services tied to harmful obligations, and client-crediting of permissible market discounts.
 
-A conflict issue is likely when the architect's independent advice could be weakened by another financial, business, or personal interest. The Code states that the architect should be free from outside investments and business relations that weaken the architect's standing as an unprejudiced and honest adviser, free to act in the client's best interests. If a business interest relates to or affects the client's interest, the architect should inform the client.
+## Learning Goal
 
-The same source also says the architect is compensated solely through the professional fee charged directly to the client and should not accept or ask for any other returns from interested sources. Contractor gifts, commissions, favors, and supplier technical services become ethics problems when they create moral obligation, harm client interests, or adversely affect professional opinion.
+After studying this article, you should be able to:
 
-## How To Use This In LEA Scenarios
+- Explain conflict risk using source language rather than invented doctrine.
+- Identify business-interest disclosure under Section 2-i.
+- Apply contractor and supplier benefit rules to conflict scenarios.
+- Preserve recusal and consent doctrine for final-depth source work.
 
-First identify the interested source: client, contractor, supplier, manufacturer, or another business. Then ask whether the benefit or relationship weakens impartial advice or creates an obligation. If it affects the client, disclose it to the client. If the benefit is an outside return, gift, commission, or supplier service that compromises judgment, the source-safe answer is to refuse it or credit any permitted market discount to the client.
+## Source-Supported Conflict Tests
+
+The Code introduction says the architect's advice to the client must be unprejudiced and that the architect must act with entire impartiality between client and contractor. Section 2 says the client relationship depends on good faith. Section 2-h then says compensation must come solely through the professional fee charged directly to the client, with no other returns from interested sources.
+
+Section 2-i is the closest source-supported disclosure rule in this batch. It says the architect should be free from financial or personal interests outside the profession that weaken and discredit the architect's standing as an unprejudiced and honest adviser. If a business interest relates to or affects the client's interest, the architect should inform the client.
+
+## Contractor and Supplier Conflict Risks
+
+Section 3-d bars free engineering services, substantial aid, gifts, commissions, or favors from a contractor or subcontractor when those benefits tend to place the architect under moral obligation.
+
+Section 4-a bars using manufacturer or supplier technical services accompanied by an obligation detrimental to the client's interest or adverse to the architect's professional opinion. Section 4-b bars commissions, discounts, fees, gifts, or favors from agents or material/equipment firms that may place the architect in a reciprocal frame of mind. A market discount may be accepted only if credited to the client.
+
+## Real World Scenario
+
+An architect's spouse owns an electrical contracting firm that wants to bid on the architect's project. The checked source does not provide a complete family-conflict recusal rule. The source-safe answer is narrower: if the architect has a business interest or relationship that relates to or affects the client interest, the architect should inform the client; the architect must keep advice unprejudiced and avoid contractor or supplier benefits that create moral obligation or reciprocal frame of mind.
+
+## Exam Traps
+
+- Saying disclosure and written consent always cure every conflict.
+- Importing recusal categories not in the checked source.
+- Ignoring a business interest because the architect believes advice remains objective.
+- Treating supplier discounts as architect income rather than client credit.
+
+## Related Articles
+
+- [Client Responsibilities](lea-prac-eth-004)
+- [Contractor and Supplier Independence](lea-prac-eth-007)
+- [Referral Fees and Kickbacks](lea-prac-eth-012)

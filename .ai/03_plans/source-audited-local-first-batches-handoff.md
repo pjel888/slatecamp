@@ -1,3 +1,42 @@
+# Batch 113 Local-First Handoff Update
+
+Last updated: 2026-05-13T19:10:00+08:00
+
+## Current State
+
+- Latest local-first production-line batch prepared: Batch 113
+- Branch: 3dlab-gray-viewport-bg
+- Baseline before Batch 113: 3edb34ffa
+- Previous accepted Batch 112 commit: 3edb34ffa
+- Batch 113 local artifacts: pass
+- Git gate: live `.git/index.lock` writes are blocked in this session; temporary-index cached diff passed and a temporary commit object was created, but push failed because `github.com` could not be resolved.
+- Supabase push/deploy/production DB mutation/main merge: not performed.
+
+## Batch 113 Selection
+
+- lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration (4b4de57e-db7f-44d9-98f7-a0a1fe6e2428)
+- lea-prac-eth-009-introduction (958cf8ad-c743-41b3-a7fd-47da9421a09b)
+- lea-prac-eth-010-introduction (265185c0-c1ac-4f40-8db0-bde23084f634)
+- lea-prac-eth-011-introduction (17350925-ae83-47a1-a30f-a96eb5c1d942)
+- lea-prac-eth-012-introduction (5f341f81-5e43-49d6-a821-2a67c5d07c59)
+
+## Validation Evidence
+
+- Report: `.ai/content-audit-export/source-audited-article-batch-113-local-first-report.md`
+- Ledger: `.ai/content-audit-export/source-audited-article-batch-113-local-first-ledger.json`
+- Scoped checks: `.ai/content-audit-export/source-audited-article-batch-113-local-first-scoped-checks.json`
+- Manifest: `.ai/03_plans/production-line-batch-113-manifest.json`
+- QA memo: `.ai/03_plans/batch-113-independent-quality-review.md`
+
+## Preserved Final-Depth Items
+
+- Keep THIN_NEEDS_EXPANSION and scenario/source-primary findings in the final remediation plan.
+- Preserve ETH-009 PRC administrative-investigation procedure details, ETH-010 penalty ranges, ETH-011 recusal/disclosure doctrine, ETH-012 commission/kickback edge cases, and CPD-currentness questions for final depth unless local primary sources are added.
+
+## Batch 113 Next Batch
+
+After Batch 113 is committed and pushed, continue with Batch 114 using the next eligible fixed/manifest articles not selected in accepted Batches 087-113. Apply the same local-first gates, question-edit requirement, QA memo requirement, commit, push, and automatic continuation behavior.
+
 # Batch 112 Local-First Handoff Update
 
 Last updated: 2026-05-13T18:08:00+08:00

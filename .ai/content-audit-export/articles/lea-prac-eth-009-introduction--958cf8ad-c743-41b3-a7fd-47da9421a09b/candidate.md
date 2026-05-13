@@ -1,56 +1,43 @@
+# PRBoA Discipline Authority and Complaint Gate
+
 ## Board Exam Quick Check
 
-When a professional-practice item mentions CPD, discipline, or ethics, first identify the governing actor. RA 9266 places the Professional Regulatory Board of Architecture within the PRC structure and gives the Board defined powers over practice, ethical standards, administrative cases, and CPD guidance.
+ETH-009 should not pretend to be a complete PRC administrative-procedure manual. The local source packet supports the Board's authority, the charge gate, notice and hearing, subpoena power, appeal/finality language, and the instruction that Commission administrative-investigation rules govern the case.
 
 ## Learning Goal
 
-After reading this article, you should be able to:
+After studying this article, you should be able to:
 
-- Identify the PRBoA powers that matter in ethics and compliance questions.
-- Distinguish CPD guidance from disciplinary enforcement.
-- Recognize the RA 9266 grounds that can lead to suspension or revocation.
-- Apply the Code of Ethics duties to client, contractor, colleague, and public-facing scenarios.
+- Identify the Board powers relevant to discipline.
+- Distinguish source-supported RA 9266 procedure from unsupported procedure detail.
+- Apply written sworn charge and motu proprio investigation rules.
+- Recognize why Code of Ethical Conduct violations can become administrative cases.
 
-## Core Concept
+## Board Authority
 
-CPD ethics and compliance is not just seminar attendance. For LEA purposes, the topic links three source-backed ideas: the Board supervises the registration, licensure, and practice of architects; the Board can hear and decide administrative cases involving RA 9266, its IRR, the Code of Ethical Conduct, and the Standards of Professional Practice; and practicing architects must maintain continuing professional development to safeguard public interest, life, health, and property.
+RA 9266 IRR Section 7 gives the Board authority to supervise registration, licensure, and the practice of architects; issue, suspend, revoke, or reinstate certificates and professional ID cards; prescribe or adopt the Code of Ethical Conduct and Standards of Professional Practice; and hear and decide administrative cases involving violations of RA 9266, the IRR, the Code, and the Standards of Professional Practice.
 
-The safest exam habit is to separate the compliance branch from the discipline branch. CPD belongs to professional maintenance and Board guidelines. Discipline belongs to notice, hearing, suspension or revocation, and appeal to the Commission when the Board acts on a certificate, professional identification card, or special or temporary permit.
+Section 7 also gives subpoena authority for witnesses and documents in those administrative cases. It says the Board decision becomes final and executory after fifteen days from receipt of notice unless appealed to the Commission, and that Commission decisions may be appealed to the Court of Appeals under the Rules of Court.
 
-## Board Powers to Remember
+## Complaint Gate
 
-RA 9266 IRR Section 7 gives the Board several powers that repeatedly appear in exam scenarios:
+Section 23 supplies the gate for suspension and revocation cases. A person, firm, or association may prepare charges against a registrant, but those charges must be written, sworn, and filed with the Secretary of the Board. The Board can also investigate motu proprio or take cognizance of sufficient causes by proper resolution or order.
 
-- Supervise the registration, licensure, and practice of architects.
-- Issue, suspend, revoke, or reinstate certificates of registration and professional identification cards.
-- Prescribe and adopt the Code of Ethical Conduct and Standards of Professional Practice.
-- Hear and decide administrative cases involving violations of RA 9266, the IRR, the Code, and the SPP.
-- Issue subpoenas for witnesses and documents in administrative cases.
-- Prescribe CPD guidelines in consultation with the integrated and accredited professional organization of architects.
+The source does not, by itself, provide a detailed checklist for complaint forms, answer periods, hearing sequence, hearsay admissibility, or Rule 43 drafting. Those details are final-depth items until the local Commission administrative-investigation rules are added and cited.
 
-## Grounds for Discipline
+## Real World Scenario
 
-Section 23 of the RA 9266 IRR states that, upon notice and hearing, the Board may suspend or revoke a certificate, professional ID card, or special or temporary permit. The source-backed grounds include fraud or deceit in obtaining registration, gross negligence or incompetence, unprofessional or dishonorable conduct, and listed acts such as signing or sealing documents not prepared by the architect or not executed under immediate supervision.
+A client sends an unsigned email alleging that an architect violated the Code of Ethical Conduct. The source-safe answer is that a private charge under Section 23 must be written, sworn, and filed with the Secretary of the Board. Separately, if the matter gives the Board sufficient cause, the Board may act motu proprio by proper resolution or order.
 
-The same section also covers aiding unauthorized practice, openly undertaking services without a valid service agreement guaranteeing compensation, and violating RA 9266, the IRR, the Code of Ethical Conduct, or the Standards of Professional Practice.
+## Exam Traps
 
-## CPD and Enforcement
+- Treating an unsworn private accusation as a complete Section 23 charge.
+- Denying Board motu proprio authority when the source expressly allows it.
+- Restoring detailed PRC hearing or evidence rules without the local procedure source.
+- Forgetting that Code and Standards violations are within the Board's administrative-case authority.
 
-The RA 9266 IRR states that practicing architects shall maintain a CPD program to promote public interest and safeguard life, health, and property. It also says the integrated and accredited professional organization develops the overall CPD program, while other entities may become CPD providers upon Board accreditation.
+## Related Articles
 
-Enforcement is broader than CPD. The Commission and Board have the primary duty to enforce RA 9266 and its IRR, and any person may bring cases of illegal practice or violations before the Commission, Board, or law officers.
-
-## Ethics Anchors
-
-The Code of Ethical Conduct frames the architect as a professional adviser whose advice must be unprejudiced and who exercises judicial functions between client and contractor with impartiality. In client scenarios, the architect must clarify the scope of services and corresponding professional charges at the start of the relationship. In contractor scenarios, the architect must provide clear, definite, and consistent information in contract documents, reject nonconforming materials or workmanship upon personal knowledge and inspection, and issue payment or final certificates when the work phase complies with contract documents.
-
-## How It Is Tested
-
-Expect questions that ask which body has authority, which conduct is a disciplinary ground, whether CPD is a professional-maintenance obligation or a punishment, and how ethical impartiality applies when the architect is between owner and contractor. Avoid procedural details unless the item itself quotes them from the source.
-
-## Common Mistakes
-
-- Treating CPD as the same thing as discipline.
-- Forgetting that the Board's administrative-case power extends to RA 9266, its IRR, the Code, and the SPP.
-- Assuming an architect may sign or seal work prepared outside immediate supervision.
-- Treating the architect as the owner's advocate only; the Code and UAP 301 require impartial judgment in contract administration contexts.
+- [Suspension and Revocation](lea-prac-eth-008)
+- [Public Responsibilities](lea-prac-eth-003)
+- [RA 9266 Overview](lea-prac-law-001)

@@ -2,53 +2,53 @@
   "question_id": "905d8e38-c30f-470c-bbe8-a1412475183b",
   "baseline_hash": "sha256:a2c090589af1ec1ab7b3efe79dd31c73a84b807d4e229049aa4635d754c61283",
   "action": "replace",
-  "reason": "source-audited-article-batch-018-local-first rewrote linked question to match locally checked raw source evidence for lea-prac-eth-012-introduction.",
-  "approved_by": "codex-local-source-audit-batch-018",
-  "approved_at": "2026-05-10T23:42:00.000+08:00",
+  "reason": "source-audited-article-batch-113-local-first rewrote this linked question after local raw-source recheck for lea-prac-eth-012-introduction.",
+  "approved_by": "codex-local-source-audit-batch-113",
+  "approved_at": "2026-05-13T19:10:00+08:00",
   "source_audit_support": {
     "parent_article_id": "5f341f81-5e43-49d6-a821-2a67c5d07c59",
     "parent_article_slug": "lea-prac-eth-012-introduction",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "UAP Document Code of Ethics, outside returns and contractor/supplier benefit provisions, raw markdown lines 58-62 and 77-89",
+    "source_locator": "UAP Code of Ethics lines 56-79",
     "checked_markdown_lines": [
-      "raw markdown lines 58-62",
-      "raw markdown lines 77-89"
+      "UAP Code of Ethics lines 56-58, 68-79"
     ],
     "checked_sources": [
       {
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
         "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
-        "source_id": "uap-document-code-of-ethics",
-        "locator": "UAP Document Code of Ethics, outside returns and contractor/supplier benefit provisions, raw markdown lines 58-62 and 77-89"
+        "source_id": "lea-prac-eth-012-introduction-uap-code-of-ethics-local",
+        "locator": "UAP Document Code of Ethics refined markdown lines 56-58, 68-79"
       },
       {
-        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
-        "sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
-        "source_id": "uap-document-code-of-ethics-raw-markdown",
-        "locator": "UAP Document Code of Ethics, outside returns and contractor/supplier benefit provisions, raw markdown lines 58-62 and 77-89"
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+        "sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+        "source_id": "lea-prac-eth-012-introduction-uap-code-of-ethics-local",
+        "locator": "UAP Document Code of Ethics refined markdown lines 56-58, 68-79"
       }
     ],
-    "local_source_safe_action": "Question was rewritten to remove unverified or over-specific claims and use only statements anchored in the checked local raw source packet."
+    "local_source_safe_action": "Batch 113 replaced unsupported, thin, or stale ethics wording with local raw-source-supported question text, answer key, citation, and rationale.",
+    "batch_id": "source-audited-article-batch-113-local-first"
   },
   "proposed": {
-    "text": "Which fact makes a hidden rebate from a material dealer ethically unsafe?",
+    "text": "What is the common problem in hidden referral fees and supplier commissions?",
     "options": [
       {
         "id": "a",
-        "text": "It is a return from an interested source other than the client"
+        "text": "They create returns from interested sources and may bias professional judgment away from client interest"
       },
       {
         "id": "b",
-        "text": "It is listed in the client agreement as a credit to the client"
+        "text": "They improve client transparency"
       },
       {
         "id": "c",
-        "text": "It reduces the client's cost transparently"
+        "text": "They are required to renew PRC ID"
       },
       {
         "id": "d",
-        "text": "It is refused by the architect"
+        "text": "They are the same as sworn charges"
       }
     ],
     "correct_option_id": "a",
@@ -56,17 +56,21 @@
     "accepted_answers": null,
     "value_tolerance": 0,
     "question_type": "mcq",
-    "rationale": "The Code bars returns from interested sources other than the client; the market discount exception requires crediting the client.",
-    "explanation": "The Code bars returns from interested sources other than the client; the market discount exception requires crediting the client.",
-    "code_citation": "UAP Document Code of Ethics, lines 61 and 89",
-    "bloom_level": "analyze",
-    "application_context": "professional_practice",
+    "rationale": {
+      "correct": "Sections 2-h, 3-d, and 4-b support this problem.",
+      "takeaway": "Sections 2-h, 3-d, and 4-b support this problem."
+    },
+    "explanation": "Use UAP Code of Ethics lines 56-79 for this Batch 113 source-safe rewrite.",
+    "code_citation": "UAP Code of Ethics lines 56-79",
+    "bloom_level": "apply",
+    "application_context": "professional_practice_source_audit",
     "practice_context": [
-      "Code of Ethical Conduct",
-      "Professional ethics"
+      "professional practice",
+      "source-audited local-first",
+      "batch 113"
     ],
-    "difficulty": 0.8,
+    "difficulty": 0.5,
     "is_assessment": false,
-    "model_id": "ALE-PRAC-ETH-012-006"
+    "model_id": "BATCH-113-lea-prac-eth-012-introduction-006"
   }
 }

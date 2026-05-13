@@ -1,224 +1,90 @@
 {
-  "schema_version": "source-audit-evidence-v1-local-first",
-  "artifact_type": "source-audit-evidence",
-  "batch_id": "source-audited-article-batch-018-local-first",
-  "audit_date": "2026-05-10",
-  "audited_at": "2026-05-10T23:52:12+08:00",
-  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "artifact_type": "source_audit_evidence",
+  "schema_version": 1,
+  "batch_id": "source-audited-article-batch-113-local-first",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T19:10:00+08:00",
+  "status": "pass",
+  "audit_mode": "local_first_raw_source_recheck",
   "target": {
     "article_id": "4b4de57e-db7f-44d9-98f7-a0a1fe6e2428",
     "slug": "lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration",
-    "title": "Grounds for Suspension and Revocation",
-    "article_folder": ".ai/content-audit-export/articles/lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration--4b4de57e-db7f-44d9-98f7-a0a1fe6e2428",
-    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration--4b4de57e-db7f-44d9-98f7-a0a1fe6e2428",
-    "candidate_path": ".ai/content-audit-export/articles/lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration--4b4de57e-db7f-44d9-98f7-a0a1fe6e2428/candidate.md",
-    "candidate_sha256": "sha256:55676e0a2e160aea7929e38b0fd48c1f725780c8a809a752acc6787efdca3f20",
-    "normalized_sha256": "sha256:55676e0a2e160aea7929e38b0fd48c1f725780c8a809a752acc6787efdca3f20",
-    "linked_questions_sha256": "sha256:ac997acc5442e289fa094b96fff0a36fa1ca7e25f2b8202cb428660d4d952b3d",
-    "sources_sha256": "sha256:d7e4a41d2272686d0e8288cb7fe891e81af7d43da3074601cc64a48fe2285a89"
+    "title": "Suspension, Revocation, and Reinstatement under RA 9266"
   },
   "classification": {
-    "content_domain": "LEA Professional Practice and Jurisprudence",
-    "contains_legal_or_code_claims": true,
-    "source_risk_tier": "high_value_lea_professional_practice",
-    "requires_raw_pdf_audit": true,
-    "linked_questions_observed": 10,
-    "question_edits_created": [
-      "5d63ff24-f6fa-465d-947a-fefee59f2da0",
-      "652b4908-eb70-4af4-ab23-632ea52cba58",
-      "b10b3f85-1a7b-434a-9777-7068ce7b7cbb",
-      "b38b4c8d-0a6a-401e-af49-b07ea4c552f7",
-      "b3d6f710-676b-4588-91f1-56761f20ee38",
-      "b72282c0-da4a-4363-856a-fadd7a58025d",
-      "b8567397-e957-4c58-9548-7eaf89823e2b",
-      "edc79348-a89f-4dd0-ae20-c272683bb96c",
-      "f7d55217-14d9-485b-a78d-73d723319728",
-      "fd15b249-13dc-4a96-86c6-5511f26d3a60"
-    ]
+    "topic": "RA 9266 suspension revocation reinstatement",
+    "source_depth": "source_primary_with_final_depth_deferred_items",
+    "thin_needs_expansion": false
   },
-  "paths": {
-    "article_folder_path": ".ai/content-audit-export/articles/lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration--4b4de57e-db7f-44d9-98f7-a0a1fe6e2428",
-    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration--4b4de57e-db7f-44d9-98f7-a0a1fe6e2428",
-    "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration--4b4de57e-db7f-44d9-98f7-a0a1fe6e2428/question-edits",
-    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration--4b4de57e-db7f-44d9-98f7-a0a1fe6e2428/question-edits",
-    "question_edit_files": [
-      ".ai/content-audit-export/articles/lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration--4b4de57e-db7f-44d9-98f7-a0a1fe6e2428/question-edits/5d63ff24-f6fa-465d-947a-fefee59f2da0.json",
-      ".ai/content-audit-export/articles/lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration--4b4de57e-db7f-44d9-98f7-a0a1fe6e2428/question-edits/652b4908-eb70-4af4-ab23-632ea52cba58.json",
-      ".ai/content-audit-export/articles/lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration--4b4de57e-db7f-44d9-98f7-a0a1fe6e2428/question-edits/b10b3f85-1a7b-434a-9777-7068ce7b7cbb.json",
-      ".ai/content-audit-export/articles/lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration--4b4de57e-db7f-44d9-98f7-a0a1fe6e2428/question-edits/b38b4c8d-0a6a-401e-af49-b07ea4c552f7.json",
-      ".ai/content-audit-export/articles/lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration--4b4de57e-db7f-44d9-98f7-a0a1fe6e2428/question-edits/b3d6f710-676b-4588-91f1-56761f20ee38.json",
-      ".ai/content-audit-export/articles/lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration--4b4de57e-db7f-44d9-98f7-a0a1fe6e2428/question-edits/b72282c0-da4a-4363-856a-fadd7a58025d.json",
-      ".ai/content-audit-export/articles/lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration--4b4de57e-db7f-44d9-98f7-a0a1fe6e2428/question-edits/b8567397-e957-4c58-9548-7eaf89823e2b.json",
-      ".ai/content-audit-export/articles/lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration--4b4de57e-db7f-44d9-98f7-a0a1fe6e2428/question-edits/edc79348-a89f-4dd0-ae20-c272683bb96c.json",
-      ".ai/content-audit-export/articles/lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration--4b4de57e-db7f-44d9-98f7-a0a1fe6e2428/question-edits/f7d55217-14d9-485b-a78d-73d723319728.json",
-      ".ai/content-audit-export/articles/lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration--4b4de57e-db7f-44d9-98f7-a0a1fe6e2428/question-edits/fd15b249-13dc-4a96-86c6-5511f26d3a60.json"
-    ]
-  },
-  "raw_sources": [
-    {
-      "source_key": "ra-9266-irr-architecture-act-2004",
-      "label": "RA 9266 IRR Architecture Act of 2004",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
-      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
-      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
-      "raw_markdown_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
-      "locator": "raw markdown lines 660-666",
-      "quoted_pdf_excerpt": "after the expiration of two (2) years"
-    }
-  ],
   "checked_sources": [
     {
-      "source_id": "ra-9266-irr-lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration",
-      "label": "RA 9266 IRR - Suspension, Revocation, and Reinstatement",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
-      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
-      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
-      "raw_markdown_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
-      "source_locator": "RA 9266 IRR Section 23 and Section 24, raw markdown lines 629-666",
-      "checked_markdown_lines": [
-        "RA 9266 raw markdown lines 629-666"
-      ]
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "source_id": "lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration-ra9266-irr-local",
+      "locator": "RA 9266 IRR refined markdown lines 592-630"
     },
     {
-      "source_id": "uap-code-of-ethics-lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration",
-      "label": "UAP Document Code of Ethics - Direct Supervision and Professional Conduct Cross-Check",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
-      "raw_pdf_sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
-      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Code of Ethics.md",
-      "raw_markdown_sha256": "sha256:e4f83ff0a83ece7895d9da8d89634c2f26a79f76785c22ceb98c62927f839933",
-      "source_locator": "UAP Document Code of Ethics, responsibilities to colleagues and subordinates, raw markdown lines 92-118",
-      "checked_markdown_lines": [
-        "raw markdown lines 92-118"
-      ]
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+      "source_id": "lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration-ra9266-irr-local",
+      "locator": "RA 9266 IRR refined markdown lines 592-630"
+    },
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+      "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+      "source_id": "lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration-uap-code-of-ethics-local",
+      "locator": "UAP Document Code of Ethics refined markdown lines 97-99"
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+      "sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+      "source_id": "lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration-uap-code-of-ethics-local",
+      "locator": "UAP Document Code of Ethics refined markdown lines 97-99"
     }
   ],
   "claims": [
-    {
-      "claim_id": "eth008-claim-01",
-      "claim_text": "RA 9266 IRR Section 23 gives the Board power, upon notice and hearing, to suspend or revoke registration credentials or cancel a special permit.",
-      "claim_type": "legal_or_professional_practice_claim",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_key": "ra-9266-irr-architecture-act-2004",
-        "label": "RA 9266 IRR Architecture Act of 2004",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
-        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
-        "raw_markdown_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
-        "locator": "raw markdown lines 629-632",
-        "quoted_pdf_excerpt": "upon notice and hearing"
-      },
-      "blockers": []
-    },
-    {
-      "claim_id": "eth008-claim-02",
-      "claim_text": "Section 23 lists grounds including unauthorized signing/sealing, paying money beyond regular fees, impersonation, aiding unauthorized practice, no-service-agreement solicitation, and violations of RA 9266, its IRR, the Code, or SPP.",
-      "claim_type": "legal_or_professional_practice_claim",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_key": "ra-9266-irr-architecture-act-2004",
-        "label": "RA 9266 IRR Architecture Act of 2004",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
-        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
-        "raw_markdown_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
-        "locator": "raw markdown lines 633-656",
-        "quoted_pdf_excerpt": "immediate supervision"
-      },
-      "blockers": []
-    },
-    {
-      "claim_id": "eth008-claim-03",
-      "claim_text": "Section 23 requires charges to be written and sworn, allows Board motu proprio action, and Section 24 allows possible reinstatement after two years from revocation.",
-      "claim_type": "legal_or_professional_practice_claim",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_key": "ra-9266-irr-architecture-act-2004",
-        "label": "RA 9266 IRR Architecture Act of 2004",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
-        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
-        "raw_markdown_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
-        "locator": "raw markdown lines 660-666",
-        "quoted_pdf_excerpt": "after the expiration of two (2) years"
-      },
-      "blockers": []
-    }
+    "RA 9266 IRR Section 23 gives Board power upon notice and hearing, subject to appeal to the Commission, for listed discipline grounds.",
+    "Section 23 lists signing/sealing without preparation or immediate supervision, improper payment for registration, false impersonation/name, aiding unauthorized practice, no-service-agreement solicitation/exploitation, and violation of RA 9266/IRR/Code/SPP.",
+    "Private charges must be written, sworn, and filed with the Secretary of the Board; the Board may also act motu proprio by resolution or order.",
+    "Section 24 makes reinstatement after two years discretionary and subject to Commission-approved Board resolution; it may exempt the applicant from another examination."
   ],
-  "unverified_or_rejected_claims": [],
   "removed_or_rewritten_material": [
-    "Removed generated UI placeholders and internal repair notes from learner-visible article content.",
-    "Rewrote over-specific or unverified article/question claims to source-located professional-practice statements."
+    "Replaced unsupported four-ground simplification with the six source-listed Section 23 grounds plus notice/hearing and appeal boundaries.",
+    "Removed automatic retake/remediation statements not stated in Section 24."
   ],
+  "unverified_or_rejected_claims": [
+    "Current PRC administrative investigation details and detailed penalty-calibration rules remain final-depth source-needed.",
+    "Do not restore automatic retaking-exam claims; Section 24 says the Board may reinstate after two years and may exempt the applicant from another examination."
+  ],
+  "scenario_enrichment": {
+    "status": "added",
+    "note": "Added source-safe signing/sealing and reinstatement scenario."
+  },
+  "question_repair_policy": {
+    "linked_questions_count": 10,
+    "question_edits_count": 10,
+    "all_linked_questions_have_source_safe_edits": true
+  },
   "raw_pdf_gate": {
-    "status": "PASS",
-    "all_legal_code_claims_have_pdf_locator": true,
-    "all_section_numbers_verified_against_raw_pdf": true,
-    "no_derivative_text_used_as_source_of_truth": true,
-    "blockers": []
-  },
-  "sme_review": {
-    "required": false,
-    "status": "not_required_for_local_batch"
-  },
-  "gate_results": {
-    "compose": "PASS: bun run content-audit:compose -- --article 4b4de57e-db7f-44d9-98f7-a0a1fe6e2428 --overwrite; blockers=0",
-    "diff": "PASS: bun run content-audit:diff -- --article 4b4de57e-db7f-44d9-98f7-a0a1fe6e2428; changed=true safe_to_push=true blockers=0",
-    "validate": "PASS: bun run content-audit:validate -- --article 4b4de57e-db7f-44d9-98f7-a0a1fe6e2428; valid=true blockers=0 warnings=1 component-usage-only",
-    "push_dry_run": "not_attempted_local_first; Supabase remote fetch/publish is final publishing only",
-    "supabase_mutation": "not_attempted_by_request"
-  },
-  "source_safe_repair": {
-    "normalized_md_rewritten": true,
-    "candidate_md_composed": true,
-    "sources_json_refreshed_to_checked_raw_sources": true,
-    "question_edits_created": 10,
-    "answer_key_fields_changed": true,
-    "ui_markers_removed_from_normalized": true,
-    "unverified_external_claims_removed": true
-  },
-  "local_validation": {
-    "compose": {
-      "passed": true,
-      "blockers": [],
-      "candidate_hash": "sha256:55676e0a2e160aea7929e38b0fd48c1f725780c8a809a752acc6787efdca3f20"
-    },
-    "diff": {
-      "passed": true,
-      "blockers": [],
-      "safe_to_push": true
-    },
-    "validate": {
-      "passed": true,
-      "blockers": [],
-      "warnings": [
-        "component-usage.json has not been generated for this article yet."
-      ]
-    },
-    "scoped_checks": {
-      "json_parse": "PASS",
-      "placeholder_marker_scan": "PASS",
-      "source_hashes": "PASS",
-      "linked_question_edit_count": "PASS",
-      "prior_batch_collision_check": "PASS"
-    },
-    "checked_at": "2026-05-10T23:52:12+08:00"
-  },
-  "overall": {
-    "source_audit_status": "PASS",
-    "safe_for_batch_apply": true,
-    "safe_for_supabase_upload": true,
-    "local_first_recovery_complete": true,
-    "remote_publish_status": "not_attempted_by_request",
-    "blockers": [],
-    "warnings": [
-      "component-usage.json has not been generated for this article yet; validate treats this as a non-blocking warning."
+    "primary_source_truth": "vitruvius-connection/001_Raw-Source-Layer PDFs",
+    "local_conversion_line_anchors": [
+      "RA 9266 IRR refined markdown lines 592-630",
+      "UAP Document Code of Ethics refined markdown lines 97-99"
     ]
   },
-  "supabase": {
-    "pushed": false,
-    "deployed": false,
-    "committed": false,
-    "final_publishing_only": true
+  "source_audit": {
+    "overall": "pass",
+    "blockers": [],
+    "warnings": [
+      "Current PRC administrative investigation details and detailed penalty-calibration rules remain final-depth source-needed.",
+      "Do not restore automatic retaking-exam claims; Section 24 says the Board may reinstate after two years and may exempt the applicant from another examination."
+    ]
+  },
+  "overall": "pass",
+  "paths": {
+    "candidate": ".ai/content-audit-export/articles/lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration--4b4de57e-db7f-44d9-98f7-a0a1fe6e2428/candidate.md",
+    "normalized": ".ai/content-audit-export/articles/lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration--4b4de57e-db7f-44d9-98f7-a0a1fe6e2428/normalized.md",
+    "sources": ".ai/content-audit-export/articles/lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration--4b4de57e-db7f-44d9-98f7-a0a1fe6e2428/sources.json",
+    "question_edits": ".ai/content-audit-export/articles/lea-prac-eth-008-grounds-for-suspension-and-revocation-of-the-certificate-of-registration--4b4de57e-db7f-44d9-98f7-a0a1fe6e2428/question-edits"
   }
 }
