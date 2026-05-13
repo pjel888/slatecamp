@@ -2,129 +2,90 @@
   "question_id": "20c4c16a-b905-42d5-93ec-994d67f25f59",
   "baseline_hash": "sha256:2b00525d9bc1e61258f030ef0d6cf8105030326b02a402d555f290d3ccd31673",
   "action": "replace",
-  "reason": "source-audited-article-batch-066-local-first: source-safe local replacement grounded in checked raw PDF/source-family evidence; removes prior off-scope framing where present.",
-  "approved_by": "codex-local-first-batch-066",
-  "approved_at": "2026-05-11T23:46:00.000+08:00",
+  "reason": "source-audited-article-batch-103-local-first rewrote this linked question after local raw-source recheck for lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty.",
+  "approved_by": "codex-local-source-audit-batch-103",
+  "approved_at": "2026-05-13T11:22:58+08:00",
   "source_audit_support": {
     "parent_article_id": "9eb0b48e-110e-4c75-8a0c-4f83063001cf",
     "parent_article_slug": "lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty",
     "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "BP 344 2024 refined markdown lines 40-70, 198-230, 230-304, 338-350, 450-465, 1349-1350, 1560-1604, 1645-1651, 1661, 1749, and 1827; raw PDF pages 2, 7, 10, 16, 56, 65-67, 70, and 74 checked by local PDF extraction; PD 1096 RIRR DPWH Official refined markdown lines 560-592, 625-631, and 3488-3567; raw PDF pages 23-28 and 193-195 checked by local PDF extraction; RA 9514 RIRR refined markdown lines 2601-2658, 4275-4321, and 4381-4394; raw PDF pages 102, 142-143, and 149 checked by local PDF extraction; PD 9514 Fire Code refined markdown lines 1599-1629 and 1655-1719; raw PDF pages 57-63 checked for matching life-safety and occupancy text",
+    "support_status": "source_safe_rewrite_with_deferred_final_depth_items",
+    "source_locator": "raw markdown lines 39-77, 209-219, 242-288, 332-334, 919-942, 1037-1048; raw markdown lines 21-34, 88-93, 229-234; raw markdown lines 29-33, 589-621",
     "checked_markdown_lines": [
-      "BP 344 2024 refined markdown lines 40-70",
-      "BP 344 2024 refined markdown lines 198-230",
-      "BP 344 2024 refined markdown lines 230-304",
-      "BP 344 2024 refined markdown lines 338-350",
-      "BP 344 2024 refined markdown lines 450-465",
-      "BP 344 2024 refined markdown lines 1349-1350",
-      "BP 344 2024 refined markdown lines 1560-1604",
-      "BP 344 2024 refined markdown lines 1645-1651",
-      "BP 344 2024 refined markdown line 1661",
-      "BP 344 2024 refined markdown line 1749",
-      "BP 344 2024 refined markdown line 1827",
-      "PD 1096 RIRR DPWH Official refined markdown lines 560-592",
-      "PD 1096 RIRR DPWH Official refined markdown lines 625-631",
-      "PD 1096 RIRR DPWH Official refined markdown lines 3488-3567",
-      "RA 9514 RIRR refined markdown lines 2601-2658",
-      "RA 9514 RIRR refined markdown lines 4275-4321",
-      "RA 9514 RIRR refined markdown lines 4381-4394",
-      "PD 9514 Fire Code refined markdown lines 1599-1629",
-      "PD 9514 Fire Code refined markdown lines 1655-1719"
-    ],
-    "checked_raw_pdf_pages": [
-      "BP 344 2024 raw PDF page 2",
-      "BP 344 2024 raw PDF page 7",
-      "BP 344 2024 raw PDF page 10",
-      "BP 344 2024 raw PDF page 16",
-      "BP 344 2024 raw PDF page 56",
-      "BP 344 2024 raw PDF pages 65-67",
-      "BP 344 2024 raw PDF page 70",
-      "BP 344 2024 raw PDF page 74",
-      "PD 1096 RIRR DPWH Official raw PDF pages 23-28",
-      "PD 1096 RIRR DPWH Official raw PDF pages 193-195",
-      "RA 9514 RIRR raw PDF page 102",
-      "RA 9514 RIRR raw PDF pages 142-143",
-      "RA 9514 RIRR raw PDF page 149",
-      "PD 9514 Fire Code raw PDF pages 57-63"
+      "raw markdown lines 39-77, 209-219, 242-288, 332-334, 919-942, 1037-1048",
+      "raw markdown lines 21-34, 88-93, 229-234",
+      "raw markdown lines 29-33, 589-621"
     ],
     "checked_sources": [
       {
-        "source_id": "bp344-2024-accessibility-routes-ramps-parking-local-b066",
-        "label": "BP 344 2024 Revised IRR - accessible routes, ramps, parking, signs, stairs, elevators, and public-use building definitions",
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
         "sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
-        "refined_markdown_sha256": "sha256:539a126c51934516e881b0e37f663536b04d3097bf3fa56aceebc2bb09157040",
-        "locator": "BP 344 2024 refined markdown lines 40-70, 198-230, 230-304, 338-350, 450-465, 1349-1350, 1560-1604, 1645-1651, 1661, 1749, and 1827; raw PDF pages 2, 7, 10, 16, 56, 65-67, 70, and 74 checked by local PDF extraction"
+        "source_id": "batch103-lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty-bp-344-2024-irr",
+        "locator": "raw markdown lines 39-77, 209-219, 242-288, 332-334, 919-942, 1037-1048"
       },
       {
-        "source_id": "pd1096-rirr-plan-egress-stair-local-b066",
-        "label": "PD 1096 RIRR 2004 - architectural documents, accessibility facility details, exits, corridors, doors, and stairways",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
-        "locator": "PD 1096 RIRR DPWH Official refined markdown lines 560-592, 625-631, and 3488-3567; raw PDF pages 23-28 and 193-195 checked by local PDF extraction"
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+        "sha256": "sha256:a621bcb059a5c023dc5056939a6fa8ae44b5f60a29918f628d81657b9639692a",
+        "source_id": "batch103-lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty-bp-344-2024-irr",
+        "locator": "raw markdown lines 39-77, 209-219, 242-288, 332-334, 919-942, 1037-1048"
       },
       {
-        "source_id": "ra9514-rirr-egress-separation-education-local-b066",
-        "label": "RA 9514 Revised IRR 2019 - means of egress, exit enclosure, educational exits, corridors, dead ends, and hazardous-area separation",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
-        "sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
-        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
-        "locator": "RA 9514 RIRR refined markdown lines 2601-2658, 4275-4321, and 4381-4394; raw PDF pages 102, 142-143, and 149 checked by local PDF extraction"
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DPWH/DPWH DO037 Enforcement of BP344 along National Roads.pdf",
+        "sha256": "sha256:1af131d40d5190e949a91b12ed80e85a06d434b67c1423dc8195c84408d42ea7",
+        "source_id": "batch103-lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty-dpwh-do037-bp344-national-roads",
+        "locator": "raw markdown lines 21-34, 88-93, 229-234"
       },
       {
-        "source_id": "pd9514-fire-code-life-safety-local-b066",
-        "label": "PD 9514 Fire Code source family - general life-safety and egress requirements",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-9514/PD 9514 - Fire Code of the Philippines.pdf",
-        "sha256": "sha256:dd64bf1dfa1bc6e448241caab79582dbb9683ba002b43696889d7410a35884f0",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-9514/PD 9514 - Fire Code of the Philippines.md",
-        "refined_markdown_sha256": "sha256:5eb0584f1bcbfa87044e28f2e59a75c6364c7160a98edfdd888c6aef849b01b2",
-        "locator": "PD 9514 Fire Code refined markdown lines 1599-1629 and 1655-1719; raw PDF pages 57-63 checked for matching life-safety and occupancy text"
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/DPWH/DPWH DO037 Enforcement of BP344 along National Roads.md",
+        "sha256": "sha256:bebc171dca8c07cdb58d191399685461365fd930ae9f996bc9e4546b6bd584c4",
+        "source_id": "batch103-lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty-dpwh-do037-bp344-national-roads",
+        "locator": "raw markdown lines 21-34, 88-93, 229-234"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "batch103-lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty-ra-9266-irr-professional-responsibility",
+        "locator": "raw markdown lines 29-33, 589-621"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+        "source_id": "batch103-lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty-ra-9266-irr-professional-responsibility",
+        "locator": "raw markdown lines 29-33, 589-621"
       }
     ],
-    "local_source_safe_action": "Question text, options, answer, rationale, and citation rewritten to the Batch 066 checked local raw-source scope."
+    "local_source_safe_action": "Batch 103 rewrote the linked question using checked local raw source evidence and deferred unsupported exact claims.",
+    "batch_id": "source-audited-article-batch-103-local-first"
   },
   "proposed": {
-    "text": "Which source-safe rule applies to accessible transport pathways and corridors?",
+    "text": "What should contract documents include to support accessibility compliance?",
     "options": [
       {
         "id": "a",
-        "text": "Accessible pathways and corridors along the passenger path have a minimum width of 1800 mm, with at least 900 mm clearance at barriers."
+        "text": "Only a note saying comply with all laws"
       },
       {
         "id": "b",
-        "text": "All corridors may narrow to 600 mm at columns."
+        "text": "Dimensioned ramps, landings, handrails, parking, signage, corridors, toilet clearances, elevators, sidewalks, and curb transitions as applicable"
       },
       {
         "id": "c",
-        "text": "Pathway widths are not addressed in BP 344."
+        "text": "Only renderings without dimensions"
       },
       {
         "id": "d",
-        "text": "Escalators alone complete an accessible passenger route."
+        "text": "Only a furniture list"
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "BP 344 2024 sets a minimum accessible pathway/corridor width along passenger paths and a clearance where barriers are present.",
-    "explanation": "BP 344 2024 sets a minimum accessible pathway/corridor width along passenger paths and a clearance where barriers are present.",
-    "code_citation": "BP 344 2024 refined markdown lines 1558-1570",
-    "correct_value": null,
-    "accepted_answers": null,
-    "value_tolerance": 0,
-    "question_type": "mcq",
-    "bloom_level": "understand",
-    "application_context": "code_interpretation",
+    "correct_option_id": "b",
+    "rationale": "The source-safe answer is to translate accessibility duties into coordinated drawings and specifications.",
+    "explanation": "Batch 103 source-audited rewrite: The source-safe answer is to translate accessibility duties into coordinated drawings and specifications.",
+    "code_citation": "raw markdown lines 39-77, 209-219, 242-288, 332-334, 919-942, 1037-1048; raw markdown lines 21-34, 88-93, 229-234; raw markdown lines 29-33, 589-621",
+    "application_context": "professional_practice_source_audit",
     "practice_context": [
-      "accessibility compliance",
-      "egress review"
+      "professional practice",
+      "source-audited batch 103"
     ],
-    "difficulty": 0.5,
-    "difficulty_rating": null,
-    "discrimination_rating": null,
-    "is_assessment": false
+    "model_id": "BATCH-103-lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty-010"
   }
 }

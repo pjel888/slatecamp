@@ -1,10 +1,11 @@
 {
   "schema_version": "source-audit-evidence-v1-local-first",
   "artifact_type": "source-audit-evidence",
-  "batch_id": "source-audited-article-batch-031-local-first",
-  "audit_date": "2026-05-11",
-  "audited_at": "2026-05-11T08:56:01+08:00",
-  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "batch_id": "source-audited-article-batch-103-local-first",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T11:22:58+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_production_db_mutation_no_main_merge",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
   "target": {
     "article_id": "9261cc17-24c1-49d2-a45a-158032f6fcd3",
     "slug": "lea-prac-frm-016-berde-rating-system-philippine-green-building-standard-and-the-architect-s-role",
@@ -12,10 +13,10 @@
     "article_folder": ".ai/content-audit-export/articles/lea-prac-frm-016-berde-rating-system-philippine-green-building-standard-and-the-architect-s-role--9261cc17-24c1-49d2-a45a-158032f6fcd3",
     "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-016-berde-rating-system-philippine-green-building-standard-and-the-architect-s-role--9261cc17-24c1-49d2-a45a-158032f6fcd3",
     "candidate_path": ".ai/content-audit-export/articles/lea-prac-frm-016-berde-rating-system-philippine-green-building-standard-and-the-architect-s-role--9261cc17-24c1-49d2-a45a-158032f6fcd3/candidate.md",
-    "candidate_sha256": "sha256:adb06acb6a56d4ad477815bff23c997af9d88f574b6245294f7c5d896a39522f",
-    "normalized_sha256": "sha256:adb06acb6a56d4ad477815bff23c997af9d88f574b6245294f7c5d896a39522f",
+    "candidate_sha256": "sha256:7acdaa682dcfec059168b3ca02d9de9c9ff73d20f7117ebe7be3c34edee465d5",
+    "normalized_sha256": "sha256:7acdaa682dcfec059168b3ca02d9de9c9ff73d20f7117ebe7be3c34edee465d5",
     "linked_questions_sha256": "sha256:2cbc807b47dd58731e2052d93025c4c2059af496ec7b624dbc03969c115f9941",
-    "sources_sha256": "sha256:f0d4b27a536ee33ab6a5b00dbebced5805165b151ddea93b1d3e4eebc2a898dd"
+    "sources_sha256": "sha256:c3f6e5c11d059846d5d3b26a7ebcf6d45f30d1678a5bef85f400da8151fca559"
   },
   "classification": {
     "content_domain": "LEA Professional Practice and Jurisprudence",
@@ -34,7 +35,9 @@
       "dd97d6f7-532b-4111-8870-b9dbe1c3ed48",
       "c19dd5a5-b075-42e5-910b-29e859586e21",
       "17577edd-6a51-484c-8a53-fc925cc124a8"
-    ]
+    ],
+    "real_world_scenario_status": "eligible-added",
+    "final_depth_status": "source_primary_complete_for_local_first"
   },
   "paths": {
     "article_folder_path": ".ai/content-audit-export/articles/lea-prac-frm-016-berde-rating-system-philippine-green-building-standard-and-the-architect-s-role--9261cc17-24c1-49d2-a45a-158032f6fcd3",
@@ -54,102 +57,143 @@
       ".ai/content-audit-export/articles/lea-prac-frm-016-berde-rating-system-philippine-green-building-standard-and-the-architect-s-role--9261cc17-24c1-49d2-a45a-158032f6fcd3/question-edits/17577edd-6a51-484c-8a53-fc925cc124a8.json"
     ]
   },
-  "raw_sources": [
-    {
-      "source_id": "berde-buildings-version-5-user-guide-local",
-      "label": "BERDE Buildings Version 5.0.0 User Guide",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.pdf",
-      "raw_pdf_sha256": "sha256:59f4e0a3a485f73f93f211bc4250932a9c9d2b114b4f571b2ab8f6a58c426bb4",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.md",
-      "refined_markdown_sha256": "sha256:36537e2d7fae0f6f9eaf85589873086d118008fbb757f48f845876ab8585b5fc",
-      "source_locator": "BERDE refined markdown lines 123-135, 141-171, 242-269, 320-360, 544-548",
-      "checked_markdown_lines": [
-        "BERDE refined markdown lines 123-135, 141-171, 242-269, 320-360, 544-548"
-      ]
-    }
-  ],
   "checked_sources": [
     {
-      "source_id": "berde-buildings-version-5-user-guide-local",
+      "source_id": "batch103-lea-prac-frm-016-berde-rating-system-philippine-green-building-standard-and-the-architect-s-role-berde-buildings-user-guide",
       "label": "BERDE Buildings Version 5.0.0 User Guide",
+      "authority": "Local primary source under vitruvius-connection",
+      "source_type": "rating_system_user_guide",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.pdf",
       "raw_pdf_sha256": "sha256:59f4e0a3a485f73f93f211bc4250932a9c9d2b114b4f571b2ab8f6a58c426bb4",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.md",
-      "refined_markdown_sha256": "sha256:36537e2d7fae0f6f9eaf85589873086d118008fbb757f48f845876ab8585b5fc",
-      "source_locator": "BERDE refined markdown lines 123-135, 141-171, 242-269, 320-360, 544-548",
+      "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.md",
+      "conversion_sha256": "sha256:d8fff60d4cb5d1fcd0b91e3f30a6fc26309b6d40a439c76ac608a8da0ce0ed05",
+      "additional_conversion_paths": [],
+      "additional_conversion_sha256": [],
+      "source_locator": "raw markdown lines 129-167, 253-289, 337-370, 581, 1178-1204",
       "checked_markdown_lines": [
-        "BERDE refined markdown lines 123-135, 141-171, 242-269, 320-360, 544-548"
-      ]
+        "raw markdown lines 129-167, 253-289, 337-370, 581, 1178-1204"
+      ],
+      "local_source_checked": true
     }
   ],
+  "source_audit": {
+    "checked_sources": [
+      {
+        "source_id": "batch103-lea-prac-frm-016-berde-rating-system-philippine-green-building-standard-and-the-architect-s-role-berde-buildings-user-guide",
+        "label": "BERDE Buildings Version 5.0.0 User Guide",
+        "authority": "Local primary source under vitruvius-connection",
+        "source_type": "rating_system_user_guide",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.pdf",
+        "raw_pdf_sha256": "sha256:59f4e0a3a485f73f93f211bc4250932a9c9d2b114b4f571b2ab8f6a58c426bb4",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.md",
+        "conversion_sha256": "sha256:d8fff60d4cb5d1fcd0b91e3f30a6fc26309b6d40a439c76ac608a8da0ce0ed05",
+        "additional_conversion_paths": [],
+        "additional_conversion_sha256": [],
+        "source_locator": "raw markdown lines 129-167, 253-289, 337-370, 581, 1178-1204",
+        "checked_markdown_lines": [
+          "raw markdown lines 129-167, 253-289, 337-370, 581, 1178-1204"
+        ],
+        "local_source_checked": true
+      }
+    ],
+    "source_locator": "raw markdown lines 129-167, 253-289, 337-370, 581, 1178-1204",
+    "checked_markdown_lines": [
+      "raw markdown lines 129-167, 253-289, 337-370, 581, 1178-1204"
+    ]
+  },
   "claims": [
     {
-      "claim_id": "frm016-claim-01",
-      "claim_text": "BERDE is a tool to assess, measure, monitor, and certify project performance above existing laws and mandatory standards.",
+      "claim_id": "batch-103-lea-prac-frm-016-berde-rating-system-philippine-green-building-standard-and-the-architect-s-role-claim-01",
+      "claim_text": "The BERDE guide describes BERDE as a tool to assess, measure, monitor, and certify performance beyond existing laws.",
       "claim_type": "legal_or_professional_practice_claim",
       "audit_result": "PASS",
+      "support_status": "source_supported",
       "source_support": {
         "source_label": "BERDE Buildings Version 5.0.0 User Guide",
-        "locator": "BERDE refined markdown lines 123-125",
+        "locator": "raw markdown lines 129-167, 253-289, 337-370, 581, 1178-1204",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.pdf",
-        "raw_pdf_sha256": "sha256:59f4e0a3a485f73f93f211bc4250932a9c9d2b114b4f571b2ab8f6a58c426bb4",
-        "quoted_pdf_excerpt": "BERDE is a tool to assess, measure, monitor and certify project performance above existing laws, regulations, and mandatory standards."
+        "quoted_pdf_excerpt": "Only formally assessed, rated, and certified projects may claim BERDE Certified status.",
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.pdf"
+        ],
+        "raw_pdf_sha256": [
+          "sha256:59f4e0a3a485f73f93f211bc4250932a9c9d2b114b4f571b2ab8f6a58c426bb4"
+        ]
       },
       "blockers": []
     },
     {
-      "claim_id": "frm016-claim-02",
-      "claim_text": "BERDE was developed by PHILGBC and is administered under the BERDE Program.",
+      "claim_id": "batch-103-lea-prac-frm-016-berde-rating-system-philippine-green-building-standard-and-the-architect-s-role-claim-02",
+      "claim_text": "Only projects that undergo formal assessment, rating, and certification may claim BERDE Certified status.",
       "claim_type": "legal_or_professional_practice_claim",
       "audit_result": "PASS",
+      "support_status": "source_supported",
       "source_support": {
         "source_label": "BERDE Buildings Version 5.0.0 User Guide",
-        "locator": "BERDE refined markdown lines 127-135",
+        "locator": "raw markdown lines 129-167, 253-289, 337-370, 581, 1178-1204",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.pdf",
-        "raw_pdf_sha256": "sha256:59f4e0a3a485f73f93f211bc4250932a9c9d2b114b4f571b2ab8f6a58c426bb4",
-        "quoted_pdf_excerpt": "BERDE was developed by PHILGBC and BERDE activities are administered by PHILGBC under the BERDE Program."
+        "quoted_pdf_excerpt": "Only formally assessed, rated, and certified projects may claim BERDE Certified status.",
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.pdf"
+        ],
+        "raw_pdf_sha256": [
+          "sha256:59f4e0a3a485f73f93f211bc4250932a9c9d2b114b4f571b2ab8f6a58c426bb4"
+        ]
       },
       "blockers": []
     },
     {
-      "claim_id": "frm016-claim-03",
-      "claim_text": "Only projects completing the formal process, minimum system requirements, and minimum rating may claim BERDE certification.",
+      "claim_id": "batch-103-lea-prac-frm-016-berde-rating-system-philippine-green-building-standard-and-the-architect-s-role-claim-03",
+      "claim_text": "New construction, renovation, and fit-out projects must use Stage 1 Design and Stage 2 Construction, with Stage 1 before Stage 2.",
       "claim_type": "legal_or_professional_practice_claim",
       "audit_result": "PASS",
+      "support_status": "source_supported",
       "source_support": {
         "source_label": "BERDE Buildings Version 5.0.0 User Guide",
-        "locator": "BERDE refined markdown lines 242-257",
+        "locator": "raw markdown lines 129-167, 253-289, 337-370, 581, 1178-1204",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.pdf",
-        "raw_pdf_sha256": "sha256:59f4e0a3a485f73f93f211bc4250932a9c9d2b114b4f571b2ab8f6a58c426bb4",
-        "quoted_pdf_excerpt": "Only projects that complete the formal process, comply with minimum system requirements, and achieve the minimum rating may claim BERDE certification."
+        "quoted_pdf_excerpt": "Only formally assessed, rated, and certified projects may claim BERDE Certified status.",
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.pdf"
+        ],
+        "raw_pdf_sha256": [
+          "sha256:59f4e0a3a485f73f93f211bc4250932a9c9d2b114b4f571b2ab8f6a58c426bb4"
+        ]
       },
       "blockers": []
     },
     {
-      "claim_id": "frm016-claim-04",
-      "claim_text": "New construction and fit-out projects use Stage 1 Design and Stage 2 Construction, with Stage 1 completed first.",
+      "claim_id": "batch-103-lea-prac-frm-016-berde-rating-system-philippine-green-building-standard-and-the-architect-s-role-claim-04",
+      "claim_text": "Project-team documentation for BERDE should be valid, credible, verifiable, complete, independent, reliable, and traceable.",
       "claim_type": "legal_or_professional_practice_claim",
       "audit_result": "PASS",
+      "support_status": "source_supported",
       "source_support": {
         "source_label": "BERDE Buildings Version 5.0.0 User Guide",
-        "locator": "BERDE refined markdown lines 259-269",
+        "locator": "raw markdown lines 129-167, 253-289, 337-370, 581, 1178-1204",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.pdf",
-        "raw_pdf_sha256": "sha256:59f4e0a3a485f73f93f211bc4250932a9c9d2b114b4f571b2ab8f6a58c426bb4",
-        "quoted_pdf_excerpt": "New construction or fit-out projects use Stage 1 Design and Stage 2 Construction, and Stage 1 must be completed before Stage 2."
+        "quoted_pdf_excerpt": "Only formally assessed, rated, and certified projects may claim BERDE Certified status.",
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.pdf"
+        ],
+        "raw_pdf_sha256": [
+          "sha256:59f4e0a3a485f73f93f211bc4250932a9c9d2b114b4f571b2ab8f6a58c426bb4"
+        ]
       },
       "blockers": []
     }
   ],
   "unverified_or_rejected_claims": [],
-  "removed_or_rewritten_material": [
-    "Learner-facing article text was rewritten to local source-supported claims only.",
-    "Legacy UI marker blocks were removed from normalized.md so candidate.md composes without unresolved markers.",
-    "Linked questions were rewritten to source-safe wording, answer keys, rationales, and citations."
-  ],
+  "removed_or_rewritten_material": [],
+  "question_repair_policy": {
+    "action": "refresh_linked_question_edits_with_batch_103_source_safe_metadata",
+    "source_safe_question_edits": 10,
+    "allowed_question_scope": "Only concepts directly supported by checked local source lines are used; unsupported exact details are deferred."
+  },
+  "scenario_enrichment": {
+    "status": "eligible-added",
+    "note": "Batch 103 added a source-safe Real World Scenario grounded in checked local source lines or explicitly recorded final-depth source limits."
+  },
   "raw_pdf_gate": {
     "status": "PASS",
     "all_legal_code_claims_have_pdf_locator": true,
@@ -157,57 +201,14 @@
     "no_derivative_text_used_as_source_of_truth": true,
     "blockers": []
   },
-  "gate_results": {
-    "compose": "PASS: bun run content-audit:compose -- --article-id 9261cc17-24c1-49d2-a45a-158032f6fcd3 --overwrite --strict; blockers=0",
-    "diff": "PASS: bun run content-audit:diff -- --article-id 9261cc17-24c1-49d2-a45a-158032f6fcd3 --summary --strict; safe_to_push=true blockers=0",
-    "validate": "PASS: bun run content-audit:validate -- --article-id 9261cc17-24c1-49d2-a45a-158032f6fcd3 --summary; valid=true blockers=0 warnings=1 component-usage-only",
-    "push_dry_run": "not_attempted_local_first; Supabase remote fetch/publish is final publishing only",
-    "supabase_mutation": "not_attempted_by_request"
-  },
-  "source_safe_repair": {
-    "normalized_md_rewritten": true,
-    "candidate_md_composed": true,
-    "sources_json_refreshed_to_checked_raw_sources": true,
-    "source_audit_evidence_json_created": true,
-    "question_edits_created": 10,
-    "answer_key_fields_changed": true,
-    "ui_markers_removed_from_normalized": true,
-    "external_business_claims_limited_to_source_safe_form": true
-  },
-  "local_validation": {
-    "compose": {
-      "passed": true,
-      "blockers": [],
-      "candidate_hash": "sha256:adb06acb6a56d4ad477815bff23c997af9d88f574b6245294f7c5d896a39522f"
-    },
-    "diff": {
-      "passed": true,
-      "blockers": [],
-      "safe_to_push": true
-    },
-    "validate": {
-      "passed": true,
-      "blockers": [],
-      "warnings": [
-        "component-usage.json has not been generated for this article yet."
-      ]
-    },
-    "scoped_checks": {
-      "json_parse": "PASS",
-      "output_placeholder_internal_source_gap_scan": "PASS",
-      "source_audit_evidence": "PASS",
-      "question_edits": "PASS"
-    }
-  },
-  "sme_review": {
-    "required": false,
-    "status": "PASS"
-  },
   "overall": {
     "source_audit_status": "PASS",
-    "safe_for_batch_apply": true,
     "safe_for_supabase_upload": true,
-    "blockers": [],
-    "warnings": []
+    "local_first_only": true,
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "production_db_mutation_attempted": false,
+    "merge_to_main_attempted": false,
+    "blockers": []
   }
 }

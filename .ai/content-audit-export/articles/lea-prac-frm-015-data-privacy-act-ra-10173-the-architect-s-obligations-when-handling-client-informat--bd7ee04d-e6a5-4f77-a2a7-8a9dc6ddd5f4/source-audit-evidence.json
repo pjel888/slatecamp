@@ -1,0 +1,241 @@
+{
+  "schema_version": "source-audit-evidence-v1-local-first",
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-103-local-first",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T11:22:58+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_production_db_mutation_no_main_merge",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "target": {
+    "article_id": "bd7ee04d-e6a5-4f77-a2a7-8a9dc6ddd5f4",
+    "slug": "lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-information",
+    "title": "Data Privacy Act RA 10173 the Architect's Obligations When Handling",
+    "article_folder": ".ai/content-audit-export/articles/lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-informat--bd7ee04d-e6a5-4f77-a2a7-8a9dc6ddd5f4",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-informat--bd7ee04d-e6a5-4f77-a2a7-8a9dc6ddd5f4",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-informat--bd7ee04d-e6a5-4f77-a2a7-8a9dc6ddd5f4/candidate.md",
+    "candidate_sha256": "sha256:8982324fb0d560d617dbefa88f3d3ae05b8e34c67a6abcd768a5ae940ab18d0f",
+    "normalized_sha256": "sha256:8982324fb0d560d617dbefa88f3d3ae05b8e34c67a6abcd768a5ae940ab18d0f",
+    "linked_questions_sha256": "sha256:5c26d7f6aeed04fe53c04e6f662cf4816e7047c67e06ffb07edca57af6b93355",
+    "sources_sha256": "sha256:4d4148e562cdd64e57b0fb2dadacbf27c8f62aeed9f0880a5d1d4b9c7ffb264b"
+  },
+  "classification": {
+    "content_domain": "LEA Professional Practice and Jurisprudence",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high_value_lea_professional_practice",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": [
+      "0d15139e-2466-46f8-9dee-32b80ba2a1c1",
+      "76bc7791-11c8-4a05-8248-f089d964385f",
+      "3f1df9da-d814-47df-89f6-38523f232295",
+      "38810729-f489-4041-b4b0-7224232ccea6",
+      "5b552362-80b7-4d25-b944-19dee75abd48",
+      "3c6f915c-f707-489d-85eb-1c5f5aa01149",
+      "84858022-97cd-4cb9-8cc7-c8caff6f9655",
+      "4a77eeb0-6ab9-4a8b-ba90-1ab82e59baed",
+      "66e0a196-5ef9-4cf2-9fa2-606bc088cd87",
+      "f2eb38af-dd91-476c-822a-4efc0f2c3166"
+    ],
+    "real_world_scenario_status": "eligible-added",
+    "final_depth_status": "THIN_NEEDS_EXPANSION_RECORDED"
+  },
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-informat--bd7ee04d-e6a5-4f77-a2a7-8a9dc6ddd5f4",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-informat--bd7ee04d-e6a5-4f77-a2a7-8a9dc6ddd5f4",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-informat--bd7ee04d-e6a5-4f77-a2a7-8a9dc6ddd5f4/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-informat--bd7ee04d-e6a5-4f77-a2a7-8a9dc6ddd5f4/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-informat--bd7ee04d-e6a5-4f77-a2a7-8a9dc6ddd5f4/question-edits/0d15139e-2466-46f8-9dee-32b80ba2a1c1.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-informat--bd7ee04d-e6a5-4f77-a2a7-8a9dc6ddd5f4/question-edits/76bc7791-11c8-4a05-8248-f089d964385f.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-informat--bd7ee04d-e6a5-4f77-a2a7-8a9dc6ddd5f4/question-edits/3f1df9da-d814-47df-89f6-38523f232295.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-informat--bd7ee04d-e6a5-4f77-a2a7-8a9dc6ddd5f4/question-edits/38810729-f489-4041-b4b0-7224232ccea6.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-informat--bd7ee04d-e6a5-4f77-a2a7-8a9dc6ddd5f4/question-edits/5b552362-80b7-4d25-b944-19dee75abd48.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-informat--bd7ee04d-e6a5-4f77-a2a7-8a9dc6ddd5f4/question-edits/3c6f915c-f707-489d-85eb-1c5f5aa01149.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-informat--bd7ee04d-e6a5-4f77-a2a7-8a9dc6ddd5f4/question-edits/84858022-97cd-4cb9-8cc7-c8caff6f9655.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-informat--bd7ee04d-e6a5-4f77-a2a7-8a9dc6ddd5f4/question-edits/4a77eeb0-6ab9-4a8b-ba90-1ab82e59baed.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-informat--bd7ee04d-e6a5-4f77-a2a7-8a9dc6ddd5f4/question-edits/66e0a196-5ef9-4cf2-9fa2-606bc088cd87.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-informat--bd7ee04d-e6a5-4f77-a2a7-8a9dc6ddd5f4/question-edits/f2eb38af-dd91-476c-822a-4efc0f2c3166.json"
+    ]
+  },
+  "checked_sources": [
+    {
+      "source_id": "batch103-lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-information-ra-9266-irr-professional-documents",
+      "label": "RA 9266 IRR Architecture Act of 2004",
+      "authority": "Local primary source under vitruvius-connection",
+      "source_type": "implementing_rules",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "conversion_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+      "additional_conversion_paths": [],
+      "additional_conversion_sha256": [],
+      "source_locator": "raw markdown lines 44-90, 169-182, 589-621, 732-748",
+      "checked_markdown_lines": [
+        "raw markdown lines 44-90, 169-182, 589-621, 732-748"
+      ],
+      "local_source_checked": true
+    },
+    {
+      "source_id": "batch103-lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-information-uap-spp-professional-services",
+      "label": "UAP Document Standards of Professional Practice",
+      "authority": "Local primary source under vitruvius-connection",
+      "source_type": "professional_standards",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+      "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+      "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+      "conversion_sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+      "additional_conversion_paths": [],
+      "additional_conversion_sha256": [],
+      "source_locator": "raw markdown lines 47-61, 81-83, 293-304, 1848-1857",
+      "checked_markdown_lines": [
+        "raw markdown lines 47-61, 81-83, 293-304, 1848-1857"
+      ],
+      "local_source_checked": true
+    }
+  ],
+  "source_audit": {
+    "checked_sources": [
+      {
+        "source_id": "batch103-lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-information-ra-9266-irr-professional-documents",
+        "label": "RA 9266 IRR Architecture Act of 2004",
+        "authority": "Local primary source under vitruvius-connection",
+        "source_type": "implementing_rules",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "conversion_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+        "additional_conversion_paths": [],
+        "additional_conversion_sha256": [],
+        "source_locator": "raw markdown lines 44-90, 169-182, 589-621, 732-748",
+        "checked_markdown_lines": [
+          "raw markdown lines 44-90, 169-182, 589-621, 732-748"
+        ],
+        "local_source_checked": true
+      },
+      {
+        "source_id": "batch103-lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-information-uap-spp-professional-services",
+        "label": "UAP Document Standards of Professional Practice",
+        "authority": "Local primary source under vitruvius-connection",
+        "source_type": "professional_standards",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "conversion_sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+        "additional_conversion_paths": [],
+        "additional_conversion_sha256": [],
+        "source_locator": "raw markdown lines 47-61, 81-83, 293-304, 1848-1857",
+        "checked_markdown_lines": [
+          "raw markdown lines 47-61, 81-83, 293-304, 1848-1857"
+        ],
+        "local_source_checked": true
+      }
+    ],
+    "source_locator": "raw markdown lines 44-90, 169-182, 589-621, 732-748; raw markdown lines 47-61, 81-83, 293-304, 1848-1857",
+    "checked_markdown_lines": [
+      "raw markdown lines 44-90, 169-182, 589-621, 732-748",
+      "raw markdown lines 47-61, 81-83, 293-304, 1848-1857"
+    ]
+  },
+  "claims": [
+    {
+      "claim_id": "batch-103-lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-information-claim-01",
+      "claim_text": "The local source layer for Batch 103 did not provide local raw RA 10173 or NPC source text for exact Data Privacy Act mechanics.",
+      "claim_type": "legal_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "support_status": "source_supported",
+      "source_support": {
+        "source_label": "RA 9266 IRR Architecture Act of 2004; UAP Document Standards of Professional Practice",
+        "locator": "raw markdown lines 44-90, 169-182, 589-621, 732-748; raw markdown lines 47-61, 81-83, 293-304, 1848-1857",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "quoted_pdf_excerpt": "RA 9266 supports instrument-of-service controls; exact Data Privacy Act mechanics need a separate local source.",
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf"
+        ],
+        "raw_pdf_sha256": [
+          "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b"
+        ]
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "batch-103-lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-information-claim-02",
+      "claim_text": "RA 9266 supports architectural document, instrument-of-service, copyright, and project-use controls that can ground professional handling advice.",
+      "claim_type": "legal_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "support_status": "source_supported",
+      "source_support": {
+        "source_label": "RA 9266 IRR Architecture Act of 2004; UAP Document Standards of Professional Practice",
+        "locator": "raw markdown lines 44-90, 169-182, 589-621, 732-748; raw markdown lines 47-61, 81-83, 293-304, 1848-1857",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "quoted_pdf_excerpt": "RA 9266 supports instrument-of-service controls; exact Data Privacy Act mechanics need a separate local source.",
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf"
+        ],
+        "raw_pdf_sha256": [
+          "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b"
+        ]
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "batch-103-lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-information-claim-03",
+      "claim_text": "Client project information should be governed by agreement controls and exact privacy-law claims should be restored only after local primary sources are added.",
+      "claim_type": "legal_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "support_status": "source_supported",
+      "source_support": {
+        "source_label": "RA 9266 IRR Architecture Act of 2004; UAP Document Standards of Professional Practice",
+        "locator": "raw markdown lines 44-90, 169-182, 589-621, 732-748; raw markdown lines 47-61, 81-83, 293-304, 1848-1857",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "quoted_pdf_excerpt": "RA 9266 supports instrument-of-service controls; exact Data Privacy Act mechanics need a separate local source.",
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf"
+        ],
+        "raw_pdf_sha256": [
+          "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b"
+        ]
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [
+    "Exact RA 10173 purpose, DPO triggers, personal information controller/processor roles, NPC enforcement, purpose limitation, security measures, and breach-notification periods were not restored without local raw RA 10173 or NPC sources.",
+    "Final depth audit should add local primary Data Privacy Act and NPC materials before re-expanding this article."
+  ],
+  "removed_or_rewritten_material": [
+    "Exact RA 10173 purpose, DPO triggers, personal information controller/processor roles, NPC enforcement, purpose limitation, security measures, and breach-notification periods were not restored without local raw RA 10173 or NPC sources.",
+    "Final depth audit should add local primary Data Privacy Act and NPC materials before re-expanding this article."
+  ],
+  "question_repair_policy": {
+    "action": "refresh_linked_question_edits_with_batch_103_source_safe_metadata",
+    "source_safe_question_edits": 10,
+    "allowed_question_scope": "Only concepts directly supported by checked local source lines are used; unsupported exact details are deferred."
+  },
+  "scenario_enrichment": {
+    "status": "eligible-added",
+    "note": "Batch 103 added a source-safe Real World Scenario grounded in checked local source lines or explicitly recorded final-depth source limits."
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_only": true,
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "production_db_mutation_attempted": false,
+    "merge_to_main_attempted": false,
+    "blockers": []
+  }
+}

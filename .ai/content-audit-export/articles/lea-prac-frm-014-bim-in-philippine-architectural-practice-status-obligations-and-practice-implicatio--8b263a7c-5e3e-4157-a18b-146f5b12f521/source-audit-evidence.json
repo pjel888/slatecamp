@@ -1,0 +1,241 @@
+{
+  "schema_version": "source-audit-evidence-v1-local-first",
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-103-local-first",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T11:22:58+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_production_db_mutation_no_main_merge",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "target": {
+    "article_id": "8b263a7c-5e3e-4157-a18b-146f5b12f521",
+    "slug": "lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implications",
+    "title": "BIM in Philippine Architectural Practice Status Obligations",
+    "article_folder": ".ai/content-audit-export/articles/lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implicatio--8b263a7c-5e3e-4157-a18b-146f5b12f521",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implicatio--8b263a7c-5e3e-4157-a18b-146f5b12f521",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implicatio--8b263a7c-5e3e-4157-a18b-146f5b12f521/candidate.md",
+    "candidate_sha256": "sha256:012f7ac1faec9790829d7f62e83d0373ef40690220d66bf7ca2700bb0856a2e6",
+    "normalized_sha256": "sha256:012f7ac1faec9790829d7f62e83d0373ef40690220d66bf7ca2700bb0856a2e6",
+    "linked_questions_sha256": "sha256:84003e5f77f95667c20e00e454d17204cf1b1432fbf66022d1e626d133433c62",
+    "sources_sha256": "sha256:5ba1283689c94bf1d1334e7fffba9a2b5ce39501e22fe25fe0e9332a671a2fd7"
+  },
+  "classification": {
+    "content_domain": "LEA Professional Practice and Jurisprudence",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high_value_lea_professional_practice",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": [
+      "c446f74e-be99-486a-af3e-7c119351bf45",
+      "acf347c6-3fb0-4cfe-be9e-1c3a48a489dd",
+      "3a04b9b5-3645-4a16-87d0-231f2b14383c",
+      "23630dbc-2261-4505-a8b8-339d6039d464",
+      "cccc46ab-440c-4e3c-b5f2-07fc6c890361",
+      "2377a61d-bd13-4479-b7e1-dd0205a27870",
+      "accb394f-a2c5-41bb-b900-833abe2749af",
+      "80e3384a-5019-4731-b0a0-bda9e485a866",
+      "8cd7a9d5-eb43-4c3f-bc9c-88feb9e73b0d",
+      "46ee9419-0359-4147-9267-61f0dd1bb83b"
+    ],
+    "real_world_scenario_status": "eligible-added",
+    "final_depth_status": "THIN_NEEDS_EXPANSION_RECORDED"
+  },
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implicatio--8b263a7c-5e3e-4157-a18b-146f5b12f521",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implicatio--8b263a7c-5e3e-4157-a18b-146f5b12f521",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implicatio--8b263a7c-5e3e-4157-a18b-146f5b12f521/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implicatio--8b263a7c-5e3e-4157-a18b-146f5b12f521/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implicatio--8b263a7c-5e3e-4157-a18b-146f5b12f521/question-edits/c446f74e-be99-486a-af3e-7c119351bf45.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implicatio--8b263a7c-5e3e-4157-a18b-146f5b12f521/question-edits/acf347c6-3fb0-4cfe-be9e-1c3a48a489dd.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implicatio--8b263a7c-5e3e-4157-a18b-146f5b12f521/question-edits/3a04b9b5-3645-4a16-87d0-231f2b14383c.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implicatio--8b263a7c-5e3e-4157-a18b-146f5b12f521/question-edits/23630dbc-2261-4505-a8b8-339d6039d464.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implicatio--8b263a7c-5e3e-4157-a18b-146f5b12f521/question-edits/cccc46ab-440c-4e3c-b5f2-07fc6c890361.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implicatio--8b263a7c-5e3e-4157-a18b-146f5b12f521/question-edits/2377a61d-bd13-4479-b7e1-dd0205a27870.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implicatio--8b263a7c-5e3e-4157-a18b-146f5b12f521/question-edits/accb394f-a2c5-41bb-b900-833abe2749af.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implicatio--8b263a7c-5e3e-4157-a18b-146f5b12f521/question-edits/80e3384a-5019-4731-b0a0-bda9e485a866.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implicatio--8b263a7c-5e3e-4157-a18b-146f5b12f521/question-edits/8cd7a9d5-eb43-4c3f-bc9c-88feb9e73b0d.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implicatio--8b263a7c-5e3e-4157-a18b-146f5b12f521/question-edits/46ee9419-0359-4147-9267-61f0dd1bb83b.json"
+    ]
+  },
+  "checked_sources": [
+    {
+      "source_id": "batch103-lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implications-ra-9266-irr-professional-documents",
+      "label": "RA 9266 IRR Architecture Act of 2004",
+      "authority": "Local primary source under vitruvius-connection",
+      "source_type": "implementing_rules",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "conversion_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+      "additional_conversion_paths": [],
+      "additional_conversion_sha256": [],
+      "source_locator": "raw markdown lines 44-90, 169-182, 589-621, 732-748",
+      "checked_markdown_lines": [
+        "raw markdown lines 44-90, 169-182, 589-621, 732-748"
+      ],
+      "local_source_checked": true
+    },
+    {
+      "source_id": "batch103-lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implications-uap-spp-professional-services",
+      "label": "UAP Document Standards of Professional Practice",
+      "authority": "Local primary source under vitruvius-connection",
+      "source_type": "professional_standards",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+      "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+      "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+      "conversion_sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+      "additional_conversion_paths": [],
+      "additional_conversion_sha256": [],
+      "source_locator": "raw markdown lines 47-61, 81-83, 293-304, 1848-1857",
+      "checked_markdown_lines": [
+        "raw markdown lines 47-61, 81-83, 293-304, 1848-1857"
+      ],
+      "local_source_checked": true
+    }
+  ],
+  "source_audit": {
+    "checked_sources": [
+      {
+        "source_id": "batch103-lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implications-ra-9266-irr-professional-documents",
+        "label": "RA 9266 IRR Architecture Act of 2004",
+        "authority": "Local primary source under vitruvius-connection",
+        "source_type": "implementing_rules",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "conversion_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+        "additional_conversion_paths": [],
+        "additional_conversion_sha256": [],
+        "source_locator": "raw markdown lines 44-90, 169-182, 589-621, 732-748",
+        "checked_markdown_lines": [
+          "raw markdown lines 44-90, 169-182, 589-621, 732-748"
+        ],
+        "local_source_checked": true
+      },
+      {
+        "source_id": "batch103-lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implications-uap-spp-professional-services",
+        "label": "UAP Document Standards of Professional Practice",
+        "authority": "Local primary source under vitruvius-connection",
+        "source_type": "professional_standards",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "conversion_sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+        "additional_conversion_paths": [],
+        "additional_conversion_sha256": [],
+        "source_locator": "raw markdown lines 47-61, 81-83, 293-304, 1848-1857",
+        "checked_markdown_lines": [
+          "raw markdown lines 47-61, 81-83, 293-304, 1848-1857"
+        ],
+        "local_source_checked": true
+      }
+    ],
+    "source_locator": "raw markdown lines 44-90, 169-182, 589-621, 732-748; raw markdown lines 47-61, 81-83, 293-304, 1848-1857",
+    "checked_markdown_lines": [
+      "raw markdown lines 44-90, 169-182, 589-621, 732-748",
+      "raw markdown lines 47-61, 81-83, 293-304, 1848-1857"
+    ]
+  },
+  "claims": [
+    {
+      "claim_id": "batch-103-lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implications-claim-01",
+      "claim_text": "RA 9266 and its IRR support professional responsibility, contract documents, instruments of service, signing and sealing, and broad architectural service scope.",
+      "claim_type": "legal_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "support_status": "source_supported",
+      "source_support": {
+        "source_label": "RA 9266 IRR Architecture Act of 2004; UAP Document Standards of Professional Practice",
+        "locator": "raw markdown lines 44-90, 169-182, 589-621, 732-748; raw markdown lines 47-61, 81-83, 293-304, 1848-1857",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "quoted_pdf_excerpt": "The checked local packet supports professional document and service controls, not BIM technical standards.",
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf"
+        ],
+        "raw_pdf_sha256": [
+          "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b"
+        ]
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "batch-103-lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implications-claim-02",
+      "claim_text": "The checked local source packet does not establish exact BIM LOD, IFC, ISO 19650, or general Philippine BIM mandate details.",
+      "claim_type": "legal_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "support_status": "source_limited_deferred_or_negative_claim_recorded",
+      "source_support": {
+        "source_label": "RA 9266 IRR Architecture Act of 2004; UAP Document Standards of Professional Practice",
+        "locator": "raw markdown lines 44-90, 169-182, 589-621, 732-748; raw markdown lines 47-61, 81-83, 293-304, 1848-1857",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "quoted_pdf_excerpt": "The checked local packet supports professional document and service controls, not BIM technical standards.",
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf"
+        ],
+        "raw_pdf_sha256": [
+          "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b"
+        ]
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "batch-103-lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implications-claim-03",
+      "claim_text": "When BIM is specified, the source-safe professional control is to define deliverables, reliance, ownership or license terms, and signed/sealed document boundaries in the agreement.",
+      "claim_type": "legal_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "support_status": "source_supported",
+      "source_support": {
+        "source_label": "RA 9266 IRR Architecture Act of 2004; UAP Document Standards of Professional Practice",
+        "locator": "raw markdown lines 44-90, 169-182, 589-621, 732-748; raw markdown lines 47-61, 81-83, 293-304, 1848-1857",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "quoted_pdf_excerpt": "The checked local packet supports professional document and service controls, not BIM technical standards.",
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf"
+        ],
+        "raw_pdf_sha256": [
+          "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b"
+        ]
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [
+    "Exact LOD 300, IFC, ISO 19650, model-element authorship, and current Philippine BIM mandate details were not restored without local raw primary BIM sources.",
+    "Final depth audit should add primary BIM source packets before re-expanding this article."
+  ],
+  "removed_or_rewritten_material": [
+    "Exact LOD 300, IFC, ISO 19650, model-element authorship, and current Philippine BIM mandate details were not restored without local raw primary BIM sources.",
+    "Final depth audit should add primary BIM source packets before re-expanding this article."
+  ],
+  "question_repair_policy": {
+    "action": "refresh_linked_question_edits_with_batch_103_source_safe_metadata",
+    "source_safe_question_edits": 10,
+    "allowed_question_scope": "Only concepts directly supported by checked local source lines are used; unsupported exact details are deferred."
+  },
+  "scenario_enrichment": {
+    "status": "eligible-added",
+    "note": "Batch 103 added a source-safe Real World Scenario grounded in checked local source lines or explicitly recorded final-depth source limits."
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_only": true,
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "production_db_mutation_attempted": false,
+    "merge_to_main_attempted": false,
+    "blockers": []
+  }
+}

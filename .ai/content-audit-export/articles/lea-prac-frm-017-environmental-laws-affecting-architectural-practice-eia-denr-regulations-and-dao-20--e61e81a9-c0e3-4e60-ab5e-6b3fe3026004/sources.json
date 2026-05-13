@@ -1,25 +1,32 @@
 {
   "article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:d1bfda4d4bdb41ad174b999ddf222632f81fafaebf809bf274cdfcfa702e48b0",
-  "source_count": 1,
+  "sources_hash": "sha256:c67823fffc8701ca4c6129afbcca04c428c6e4069f64199a7463c29c90933533",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "denr-dao-2003-30-eis-system-local",
+      "source_id": "batch103-lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30-dao-2003-30-eis-irr",
+      "article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
       "label": "DENR DAO 2003-30 EIS System Implementing Rules",
-      "authority": "Department of Environment and Natural Resources",
-      "source_type": "administrative_order_pdf",
-      "source_locator": "DAO 2003-30 refined markdown lines 13-150 and 150-360",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DENR/DENR DAO 2003-30 - EIS System Implementing Rules.pdf",
-      "raw_pdf_sha256": "sha256:079285ca972d0be053faa148fe6770c12c396408c35e6739929b81685e775fb7",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DENR/DENR DAO 2003-30 - EIS System Implementing Rules.md",
-      "refined_markdown_sha256": "sha256:3a77a918f5e5a62043b3a3e75d9583372031da82056f882b49c317e94f119763",
-      "checked_markdown_lines": [
-        "DAO 2003-30 refined markdown lines 13-150",
-        "DAO 2003-30 refined markdown lines 150-360"
-      ],
-      "use": "primary local source for environmental-practice article repair and linked-question replacement drafts",
-      "local_source_checked": true
+      "url": null,
+      "source_type": "denr_administrative_order",
+      "description": "DENR DAO 2003-30 EIS System Implementing Rules; raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/DENR/DENR DAO 2003-30 - EIS System Implementing Rules.pdf; raw_pdf_sha256=sha256:079285ca972d0be053faa148fe6770c12c396408c35e6739929b81685e775fb7; conversion_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/DENR/DENR DAO 2003-30 - EIS System Implementing Rules.md; conversion_sha256=sha256:4b06c5c2e98beb9387897064cccaa7ef6c10a5d12b89aa1546235657f7f44b78; checked_locator=raw markdown lines 17-34, 50-65, 95-105, 134-165, 248-262",
+      "is_verified": true,
+      "sort_order": 0,
+      "created_at": "2026-05-13T11:22:58+08:00",
+      "updated_at": "2026-05-13T11:22:58+08:00"
+    },
+    {
+      "source_id": "batch103-lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30-dao-2003-30-revised-procedural-manual",
+      "article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
+      "label": "DENR DAO 2003-30 Revised Procedural Manual for the EIS System",
+      "url": null,
+      "source_type": "denr_procedural_manual",
+      "description": "DENR DAO 2003-30 Revised Procedural Manual for the EIS System; raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/DENR/DENR DAO 2003-30 Revised Procedural Manual - EIS System.pdf; raw_pdf_sha256=sha256:28e3763d9b95e58392590c888e18aa24b69b5d35b74fdf36183658a29cf79fe4; conversion_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/DENR/DENR DAO 2003-30 Revised Procedural Manual - EIS System.md; conversion_sha256=sha256:b95d7a7af3683e15661c3f145a3f42bd21eee89ef0dee5d6d25c10b12f048504; checked_locator=raw markdown lines 260-284, 306-313",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-13T11:22:58+08:00",
+      "updated_at": "2026-05-13T11:22:58+08:00"
     }
   ]
 }

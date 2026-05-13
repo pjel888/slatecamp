@@ -1,72 +1,78 @@
 {
   "question_id": "0e962204-4430-4f1e-850a-475a85645839",
-  "baseline_hash": "sha256:6f1d54a7936eca350b5034d7504b1eb8004ff80557c14115f53a92be08135677",
+  "baseline_hash": "sha256:80034f3f12ba2d33053b4c007f4b087bd2660a36621d8514bdfaf0002ec82a11",
   "action": "replace",
-  "reason": "source-audited-article-batch-021-local-first rewrote this linked question to align with the local source audit for lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30.",
-  "approved_by": "codex-local-source-audit-batch-021",
-  "approved_at": "2026-05-11T10:30:00.000+08:00",
+  "reason": "source-audited-article-batch-103-local-first rewrote this linked question after local raw-source recheck for lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30.",
+  "approved_by": "codex-local-source-audit-batch-103",
+  "approved_at": "2026-05-13T11:22:58+08:00",
   "source_audit_support": {
     "parent_article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
     "parent_article_slug": "lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30",
     "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "DENR DAO 2003-30 EIS System Implementing Rules checked from local raw PDF and refined Markdown",
+    "support_status": "source_safe_rewrite_with_deferred_final_depth_items",
+    "source_locator": "raw markdown lines 17-34, 50-65, 95-105, 134-165, 248-262; raw markdown lines 260-284, 306-313",
     "checked_markdown_lines": [
-      "DAO 2003-30 refined markdown lines 13-150",
-      "DAO 2003-30 refined markdown lines 150-360"
+      "raw markdown lines 17-34, 50-65, 95-105, 134-165, 248-262",
+      "raw markdown lines 260-284, 306-313"
     ],
     "checked_sources": [
       {
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DENR/DENR DAO 2003-30 - EIS System Implementing Rules.pdf",
         "sha256": "sha256:079285ca972d0be053faa148fe6770c12c396408c35e6739929b81685e775fb7",
-        "source_id": "denr-dao-2003-30-eis-system-local",
-        "locator": "DAO 2003-30 refined markdown lines 13-150 and 150-360"
+        "source_id": "batch103-lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30-dao-2003-30-eis-irr",
+        "locator": "raw markdown lines 17-34, 50-65, 95-105, 134-165, 248-262"
       },
       {
-        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DENR/DENR DAO 2003-30 - EIS System Implementing Rules.md",
-        "sha256": "sha256:3a77a918f5e5a62043b3a3e75d9583372031da82056f882b49c317e94f119763",
-        "source_id": "denr-dao-2003-30-eis-system-local",
-        "locator": "DAO 2003-30 refined markdown lines 13-150 and 150-360"
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/DENR/DENR DAO 2003-30 - EIS System Implementing Rules.md",
+        "sha256": "sha256:4b06c5c2e98beb9387897064cccaa7ef6c10a5d12b89aa1546235657f7f44b78",
+        "source_id": "batch103-lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30-dao-2003-30-eis-irr",
+        "locator": "raw markdown lines 17-34, 50-65, 95-105, 134-165, 248-262"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DENR/DENR DAO 2003-30 Revised Procedural Manual - EIS System.pdf",
+        "sha256": "sha256:28e3763d9b95e58392590c888e18aa24b69b5d35b74fdf36183658a29cf79fe4",
+        "source_id": "batch103-lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30-dao-2003-30-revised-procedural-manual",
+        "locator": "raw markdown lines 260-284, 306-313"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/DENR/DENR DAO 2003-30 Revised Procedural Manual - EIS System.md",
+        "sha256": "sha256:b95d7a7af3683e15661c3f145a3f42bd21eee89ef0dee5d6d25c10b12f048504",
+        "source_id": "batch103-lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30-dao-2003-30-revised-procedural-manual",
+        "locator": "raw markdown lines 260-284, 306-313"
       }
     ],
-    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+    "local_source_safe_action": "Batch 103 rewrote the linked question using checked local raw source evidence and deferred unsupported exact claims.",
+    "batch_id": "source-audited-article-batch-103-local-first"
   },
   "proposed": {
-    "text": "Which timing statement is source-safe under the checked DAO 2003-30 lines?",
+    "text": "How should an architect discuss EIA approval duration?",
     "options": [
       {
         "id": "a",
-        "text": "All EIA approvals always take exactly three to six months"
+        "text": "Guarantee approval in a fixed number of days for every project"
       },
       {
         "id": "b",
-        "text": "DAO 2003-30 prescribes processing timeframes, but proponent-controlled actions are not counted as EMB-controlled time"
+        "text": "Avoid promising fixed duration and recognize that stated timelines are EMB review processes"
       },
       {
         "id": "c",
-        "text": "ECC approval is always immediate"
+        "text": "Ignore EMB processing entirely"
       },
       {
         "id": "d",
-        "text": "Environmental review only starts after construction"
+        "text": "Treat client pressure as approval"
       }
     ],
     "correct_option_id": "b",
-    "correct_value": null,
-    "accepted_answers": null,
-    "value_tolerance": 0,
-    "question_type": "mcq",
-    "rationale": "The checked DAO 2003-30 source states that prescribed timelines apply to processes and actions within EMB control and exclude proponent responsibilities.",
-    "explanation": "This repair removes the unsupported fixed three-to-six-month timing claim.",
-    "code_citation": "DAO 2003-30 refined markdown lines 21-33 and 300-335",
-    "bloom_level": "apply",
-    "application_context": "code_interpretation",
+    "rationale": "The DAO operating principles state that timelines refer to EMB processes and exclude proponent preparation work.",
+    "explanation": "Batch 103 source-audited rewrite: The DAO operating principles state that timelines refer to EMB processes and exclude proponent preparation work.",
+    "code_citation": "raw markdown lines 17-34, 50-65, 95-105, 134-165, 248-262; raw markdown lines 260-284, 306-313",
+    "application_context": "professional_practice_source_audit",
     "practice_context": [
-      "environmental compliance",
-      "timelines"
+      "professional practice",
+      "source-audited batch 103"
     ],
-    "difficulty": 0.66,
-    "is_assessment": false,
-    "model_id": "BATCH-021-dao-006"
+    "model_id": "BATCH-103-lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30-006"
   }
 }

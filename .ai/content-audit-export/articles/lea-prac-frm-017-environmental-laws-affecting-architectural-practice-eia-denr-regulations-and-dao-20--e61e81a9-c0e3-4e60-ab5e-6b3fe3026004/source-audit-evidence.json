@@ -1,57 +1,239 @@
 {
-  "batch_id": "source-audited-article-batch-021-local-first",
-  "audit_date": "2026-05-11",
-  "audited_at": "2026-05-11T10:30:00.000+08:00",
-  "article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
-  "slug": "lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30",
-  "title": "Environmental Laws Affecting Architectural Practice EIA DENR",
-  "status": "local_pass_ready_for_final_publishing_review",
-  "article_folder": ".ai/content-audit-export/articles/lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-20--e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
-  "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-20--e61e81a9-c0e3-4e60-ab5e-6b3fe3026004/question-edits",
-  "linked_questions": 10,
-  "question_edits_created": 10,
-  "source_safe_rewrite_question_edits": 10,
+  "schema_version": "source-audit-evidence-v1-local-first",
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-103-local-first",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T11:22:58+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_production_db_mutation_no_main_merge",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "target": {
+    "article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
+    "slug": "lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30",
+    "title": "Environmental Laws Affecting Architectural Practice EIA DENR",
+    "article_folder": ".ai/content-audit-export/articles/lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-20--e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-20--e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-20--e61e81a9-c0e3-4e60-ab5e-6b3fe3026004/candidate.md",
+    "candidate_sha256": "sha256:954ee18cde43f30a08896675afdce86da0e83b2044e0977174a097d8819813b0",
+    "normalized_sha256": "sha256:954ee18cde43f30a08896675afdce86da0e83b2044e0977174a097d8819813b0",
+    "linked_questions_sha256": "sha256:e72b42a0257981c81f88e665ed756327776031bb29cd632d9c5670248a462bc2",
+    "sources_sha256": "sha256:c67823fffc8701ca4c6129afbcca04c428c6e4069f64199a7463c29c90933533"
+  },
+  "classification": {
+    "content_domain": "LEA Professional Practice and Jurisprudence",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high_value_lea_professional_practice",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": [
+      "87b90969-2f45-40ac-ad88-458fcc7d72cb",
+      "e548ee77-5eb6-4501-86fe-48bbfa54d21d",
+      "a4b16a2b-deee-4415-9d4b-10d22a425829",
+      "deb634a6-66af-485a-b3e3-7da8f984302a",
+      "02ae8e77-9410-4043-b550-578be05d84c9",
+      "0e962204-4430-4f1e-850a-475a85645839",
+      "56c383d6-628e-426a-b5b8-c6c57d194343",
+      "41c186e9-5b2d-4dbf-9f6f-60a504c8aac7",
+      "ff7e7e2a-e3e2-4bd2-9ff6-fe22ec9649f3",
+      "69d6c7a7-600c-4e9f-bfe9-07a71264eb1d"
+    ],
+    "real_world_scenario_status": "eligible-added",
+    "final_depth_status": "THIN_NEEDS_EXPANSION_RECORDED"
+  },
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-20--e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-20--e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-20--e61e81a9-c0e3-4e60-ab5e-6b3fe3026004/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-20--e61e81a9-c0e3-4e60-ab5e-6b3fe3026004/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-20--e61e81a9-c0e3-4e60-ab5e-6b3fe3026004/question-edits/87b90969-2f45-40ac-ad88-458fcc7d72cb.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-20--e61e81a9-c0e3-4e60-ab5e-6b3fe3026004/question-edits/e548ee77-5eb6-4501-86fe-48bbfa54d21d.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-20--e61e81a9-c0e3-4e60-ab5e-6b3fe3026004/question-edits/a4b16a2b-deee-4415-9d4b-10d22a425829.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-20--e61e81a9-c0e3-4e60-ab5e-6b3fe3026004/question-edits/deb634a6-66af-485a-b3e3-7da8f984302a.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-20--e61e81a9-c0e3-4e60-ab5e-6b3fe3026004/question-edits/02ae8e77-9410-4043-b550-578be05d84c9.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-20--e61e81a9-c0e3-4e60-ab5e-6b3fe3026004/question-edits/0e962204-4430-4f1e-850a-475a85645839.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-20--e61e81a9-c0e3-4e60-ab5e-6b3fe3026004/question-edits/56c383d6-628e-426a-b5b8-c6c57d194343.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-20--e61e81a9-c0e3-4e60-ab5e-6b3fe3026004/question-edits/41c186e9-5b2d-4dbf-9f6f-60a504c8aac7.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-20--e61e81a9-c0e3-4e60-ab5e-6b3fe3026004/question-edits/ff7e7e2a-e3e2-4bd2-9ff6-fe22ec9649f3.json",
+      ".ai/content-audit-export/articles/lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-20--e61e81a9-c0e3-4e60-ab5e-6b3fe3026004/question-edits/69d6c7a7-600c-4e9f-bfe9-07a71264eb1d.json"
+    ]
+  },
+  "checked_sources": [
+    {
+      "source_id": "batch103-lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30-dao-2003-30-eis-irr",
+      "label": "DENR DAO 2003-30 EIS System Implementing Rules",
+      "authority": "Local primary source under vitruvius-connection",
+      "source_type": "denr_administrative_order",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DENR/DENR DAO 2003-30 - EIS System Implementing Rules.pdf",
+      "raw_pdf_sha256": "sha256:079285ca972d0be053faa148fe6770c12c396408c35e6739929b81685e775fb7",
+      "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/DENR/DENR DAO 2003-30 - EIS System Implementing Rules.md",
+      "conversion_sha256": "sha256:4b06c5c2e98beb9387897064cccaa7ef6c10a5d12b89aa1546235657f7f44b78",
+      "additional_conversion_paths": [],
+      "additional_conversion_sha256": [],
+      "source_locator": "raw markdown lines 17-34, 50-65, 95-105, 134-165, 248-262",
+      "checked_markdown_lines": [
+        "raw markdown lines 17-34, 50-65, 95-105, 134-165, 248-262"
+      ],
+      "local_source_checked": true
+    },
+    {
+      "source_id": "batch103-lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30-dao-2003-30-revised-procedural-manual",
+      "label": "DENR DAO 2003-30 Revised Procedural Manual for the EIS System",
+      "authority": "Local primary source under vitruvius-connection",
+      "source_type": "denr_procedural_manual",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DENR/DENR DAO 2003-30 Revised Procedural Manual - EIS System.pdf",
+      "raw_pdf_sha256": "sha256:28e3763d9b95e58392590c888e18aa24b69b5d35b74fdf36183658a29cf79fe4",
+      "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/DENR/DENR DAO 2003-30 Revised Procedural Manual - EIS System.md",
+      "conversion_sha256": "sha256:b95d7a7af3683e15661c3f145a3f42bd21eee89ef0dee5d6d25c10b12f048504",
+      "additional_conversion_paths": [],
+      "additional_conversion_sha256": [],
+      "source_locator": "raw markdown lines 260-284, 306-313",
+      "checked_markdown_lines": [
+        "raw markdown lines 260-284, 306-313"
+      ],
+      "local_source_checked": true
+    }
+  ],
   "source_audit": {
     "checked_sources": [
       {
-        "source_id": "denr-dao-2003-30-eis-system-local",
+        "source_id": "batch103-lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30-dao-2003-30-eis-irr",
         "label": "DENR DAO 2003-30 EIS System Implementing Rules",
-        "authority": "Department of Environment and Natural Resources",
-        "source_type": "administrative_order_pdf",
-        "source_locator": "DAO 2003-30 refined markdown lines 13-150 and 150-360",
+        "authority": "Local primary source under vitruvius-connection",
+        "source_type": "denr_administrative_order",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DENR/DENR DAO 2003-30 - EIS System Implementing Rules.pdf",
         "raw_pdf_sha256": "sha256:079285ca972d0be053faa148fe6770c12c396408c35e6739929b81685e775fb7",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DENR/DENR DAO 2003-30 - EIS System Implementing Rules.md",
-        "refined_markdown_sha256": "sha256:3a77a918f5e5a62043b3a3e75d9583372031da82056f882b49c317e94f119763",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/DENR/DENR DAO 2003-30 - EIS System Implementing Rules.md",
+        "conversion_sha256": "sha256:4b06c5c2e98beb9387897064cccaa7ef6c10a5d12b89aa1546235657f7f44b78",
+        "additional_conversion_paths": [],
+        "additional_conversion_sha256": [],
+        "source_locator": "raw markdown lines 17-34, 50-65, 95-105, 134-165, 248-262",
         "checked_markdown_lines": [
-          "DAO 2003-30 refined markdown lines 13-150",
-          "DAO 2003-30 refined markdown lines 150-360"
+          "raw markdown lines 17-34, 50-65, 95-105, 134-165, 248-262"
         ],
-        "use": "primary local source for environmental-practice article repair and linked-question replacement drafts",
+        "local_source_checked": true
+      },
+      {
+        "source_id": "batch103-lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30-dao-2003-30-revised-procedural-manual",
+        "label": "DENR DAO 2003-30 Revised Procedural Manual for the EIS System",
+        "authority": "Local primary source under vitruvius-connection",
+        "source_type": "denr_procedural_manual",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DENR/DENR DAO 2003-30 Revised Procedural Manual - EIS System.pdf",
+        "raw_pdf_sha256": "sha256:28e3763d9b95e58392590c888e18aa24b69b5d35b74fdf36183658a29cf79fe4",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/DENR/DENR DAO 2003-30 Revised Procedural Manual - EIS System.md",
+        "conversion_sha256": "sha256:b95d7a7af3683e15661c3f145a3f42bd21eee89ef0dee5d6d25c10b12f048504",
+        "additional_conversion_paths": [],
+        "additional_conversion_sha256": [],
+        "source_locator": "raw markdown lines 260-284, 306-313",
+        "checked_markdown_lines": [
+          "raw markdown lines 260-284, 306-313"
+        ],
         "local_source_checked": true
       }
     ],
-    "source_locator": "DENR DAO 2003-30 EIS System Implementing Rules checked from local raw PDF and refined Markdown",
+    "source_locator": "raw markdown lines 17-34, 50-65, 95-105, 134-165, 248-262; raw markdown lines 260-284, 306-313",
     "checked_markdown_lines": [
-      "DAO 2003-30 refined markdown lines 13-150",
-      "DAO 2003-30 refined markdown lines 150-360"
+      "raw markdown lines 17-34, 50-65, 95-105, 134-165, 248-262",
+      "raw markdown lines 260-284, 306-313"
     ]
   },
-  "local_repairs": {
-    "normalized_rewritten": true,
-    "candidate_recomposed": true,
-    "placeholders_removed": true,
-    "source_records_created": 1,
-    "question_edits_created": 10,
-    "source_safe_rewrite_question_edits": 10,
-    "non_source_claims_removed_or_rewritten": true
+  "claims": [
+    {
+      "claim_id": "batch-103-lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30-claim-01",
+      "claim_text": "DENR DAO 2003-30 implements the Philippine EIS System and requires full disclosure, impact assessment, mitigation, and public participation.",
+      "claim_type": "legal_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "support_status": "source_supported",
+      "source_support": {
+        "source_label": "DENR DAO 2003-30 EIS System Implementing Rules; DENR DAO 2003-30 Revised Procedural Manual for the EIS System",
+        "locator": "raw markdown lines 17-34, 50-65, 95-105, 134-165, 248-262; raw markdown lines 260-284, 306-313",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DENR/DENR DAO 2003-30 - EIS System Implementing Rules.pdf",
+        "quoted_pdf_excerpt": "EIA is used to predict environmental consequences and design mitigation or enhancement measures.",
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DENR/DENR DAO 2003-30 - EIS System Implementing Rules.pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DENR/DENR DAO 2003-30 Revised Procedural Manual - EIS System.pdf"
+        ],
+        "raw_pdf_sha256": [
+          "sha256:079285ca972d0be053faa148fe6770c12c396408c35e6739929b81685e775fb7",
+          "sha256:28e3763d9b95e58392590c888e18aa24b69b5d35b74fdf36183658a29cf79fe4"
+        ]
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "batch-103-lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30-claim-02",
+      "claim_text": "Category A and B projects require ECC, while Category C and D use different document or CNC pathways.",
+      "claim_type": "legal_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "support_status": "source_supported",
+      "source_support": {
+        "source_label": "DENR DAO 2003-30 EIS System Implementing Rules; DENR DAO 2003-30 Revised Procedural Manual for the EIS System",
+        "locator": "raw markdown lines 17-34, 50-65, 95-105, 134-165, 248-262; raw markdown lines 260-284, 306-313",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DENR/DENR DAO 2003-30 - EIS System Implementing Rules.pdf",
+        "quoted_pdf_excerpt": "EIA is used to predict environmental consequences and design mitigation or enhancement measures.",
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DENR/DENR DAO 2003-30 - EIS System Implementing Rules.pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DENR/DENR DAO 2003-30 Revised Procedural Manual - EIS System.pdf"
+        ],
+        "raw_pdf_sha256": [
+          "sha256:079285ca972d0be053faa148fe6770c12c396408c35e6739929b81685e775fb7",
+          "sha256:28e3763d9b95e58392590c888e18aa24b69b5d35b74fdf36183658a29cf79fe4"
+        ]
+      },
+      "blockers": []
+    },
+    {
+      "claim_id": "batch-103-lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30-claim-03",
+      "claim_text": "The revised procedural manual places EIA consideration early in project planning and feasibility, with post-ECC measures detailed during design.",
+      "claim_type": "legal_or_professional_practice_claim",
+      "audit_result": "PASS",
+      "support_status": "source_supported",
+      "source_support": {
+        "source_label": "DENR DAO 2003-30 EIS System Implementing Rules; DENR DAO 2003-30 Revised Procedural Manual for the EIS System",
+        "locator": "raw markdown lines 17-34, 50-65, 95-105, 134-165, 248-262; raw markdown lines 260-284, 306-313",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DENR/DENR DAO 2003-30 - EIS System Implementing Rules.pdf",
+        "quoted_pdf_excerpt": "EIA is used to predict environmental consequences and design mitigation or enhancement measures.",
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DENR/DENR DAO 2003-30 - EIS System Implementing Rules.pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DENR/DENR DAO 2003-30 Revised Procedural Manual - EIS System.pdf"
+        ],
+        "raw_pdf_sha256": [
+          "sha256:079285ca972d0be053faa148fe6770c12c396408c35e6739929b81685e775fb7",
+          "sha256:28e3763d9b95e58392590c888e18aa24b69b5d35b74fdf36183658a29cf79fe4"
+        ]
+      },
+      "blockers": []
+    }
+  ],
+  "unverified_or_rejected_claims": [
+    "Exact habitat-offset mechanisms, protected-area-system rules beyond ECA screening, and fixed review-duration claims were not restored without additional local primary sources."
+  ],
+  "removed_or_rewritten_material": [
+    "Exact habitat-offset mechanisms, protected-area-system rules beyond ECA screening, and fixed review-duration claims were not restored without additional local primary sources."
+  ],
+  "question_repair_policy": {
+    "action": "refresh_linked_question_edits_with_batch_103_source_safe_metadata",
+    "source_safe_question_edits": 10,
+    "allowed_question_scope": "Only concepts directly supported by checked local source lines are used; unsupported exact details are deferred."
   },
-  "validation": {
-    "compose_blockers": [],
-    "diff_safe_to_push": true,
-    "diff_blockers": [],
-    "validate_valid": true,
-    "validate_blockers": []
+  "scenario_enrichment": {
+    "status": "eligible-added",
+    "note": "Batch 103 added a source-safe Real World Scenario grounded in checked local source lines or explicitly recorded final-depth source limits."
   },
-  "blockers": []
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_only": true,
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "production_db_mutation_attempted": false,
+    "merge_to_main_attempted": false,
+    "blockers": []
+  }
 }

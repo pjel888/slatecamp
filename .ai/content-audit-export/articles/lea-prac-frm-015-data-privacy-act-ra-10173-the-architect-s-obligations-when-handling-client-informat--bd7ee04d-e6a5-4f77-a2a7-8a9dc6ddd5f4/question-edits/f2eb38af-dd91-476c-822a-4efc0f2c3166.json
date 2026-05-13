@@ -1,0 +1,78 @@
+{
+  "question_id": "f2eb38af-dd91-476c-822a-4efc0f2c3166",
+  "baseline_hash": "sha256:5b928c8be6f4886686b328b383e75f8b2ccffcae94933e9def4a054fc9953c84",
+  "action": "replace",
+  "reason": "source-audited-article-batch-103-local-first rewrote this linked question after local raw-source recheck for lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-information.",
+  "approved_by": "codex-local-source-audit-batch-103",
+  "approved_at": "2026-05-13T11:22:58+08:00",
+  "source_audit_support": {
+    "parent_article_id": "bd7ee04d-e6a5-4f77-a2a7-8a9dc6ddd5f4",
+    "parent_article_slug": "lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-information",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite_with_deferred_final_depth_items",
+    "source_locator": "raw markdown lines 44-90, 169-182, 589-621, 732-748; raw markdown lines 47-61, 81-83, 293-304, 1848-1857",
+    "checked_markdown_lines": [
+      "raw markdown lines 44-90, 169-182, 589-621, 732-748",
+      "raw markdown lines 47-61, 81-83, 293-304, 1848-1857"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "batch103-lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-information-ra-9266-irr-professional-documents",
+        "locator": "raw markdown lines 44-90, 169-182, 589-621, 732-748"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+        "source_id": "batch103-lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-information-ra-9266-irr-professional-documents",
+        "locator": "raw markdown lines 44-90, 169-182, 589-621, 732-748"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "source_id": "batch103-lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-information-uap-spp-professional-services",
+        "locator": "raw markdown lines 47-61, 81-83, 293-304, 1848-1857"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+        "source_id": "batch103-lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-information-uap-spp-professional-services",
+        "locator": "raw markdown lines 47-61, 81-83, 293-304, 1848-1857"
+      }
+    ],
+    "local_source_safe_action": "Batch 103 rewrote the linked question using checked local raw source evidence and deferred unsupported exact claims.",
+    "batch_id": "source-audited-article-batch-103-local-first"
+  },
+  "proposed": {
+    "text": "When may an architect use project information for case studies or award submissions?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Whenever the architect created the drawings"
+      },
+      {
+        "id": "b",
+        "text": "When the agreement or a later written permission allows that non-project use"
+      },
+      {
+        "id": "c",
+        "text": "Whenever the client logo is removed"
+      },
+      {
+        "id": "d",
+        "text": "Whenever the project has received a permit"
+      }
+    ],
+    "correct_option_id": "b",
+    "rationale": "Architect document rights do not automatically authorize public use of client-sensitive project information.",
+    "explanation": "Batch 103 source-audited rewrite: Architect document rights do not automatically authorize public use of client-sensitive project information.",
+    "code_citation": "raw markdown lines 44-90, 169-182, 589-621, 732-748; raw markdown lines 47-61, 81-83, 293-304, 1848-1857",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited batch 103"
+    ],
+    "model_id": "BATCH-103-lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-information-010"
+  }
+}

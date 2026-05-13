@@ -1,0 +1,297 @@
+{
+  "batch_number": "103",
+  "batch_id": "source-audited-article-batch-103-local-first",
+  "manifest_status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "reserved_at": "2026-05-13T11:22:58+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "branch": "3dlab-gray-viewport-bg",
+  "baseline_commit": "cf95ddad4",
+  "previous_batch": "102",
+  "selection_rule": "Continue after accepted Batch 102 with the next five eligible professional-practice form clusters, FRM-014 through FRM-018. Process exactly five article clusters with linked questions and local raw source families.",
+  "inherited_blocker_status": "Batch 102 accepted at commit 2fbcc271e with blockers=0; Batch 103 starts from cf95ddad4 local-first only with no Supabase push, deploy, production DB mutation, or main merge.",
+  "prior_batch_exclusion_check": {
+    "status": "PASS_CURRENT_SERIAL_SET_WITH_HISTORICAL_OVERLAP_RECORDED",
+    "current_serial_source_audited_batches_checked": [
+      "087",
+      "088",
+      "089",
+      "090",
+      "091",
+      "092",
+      "093",
+      "094",
+      "095",
+      "096",
+      "097",
+      "098",
+      "099",
+      "100",
+      "101",
+      "102"
+    ],
+    "selected_article_count": 5,
+    "selected_ids_found_in_current_serial_accepted_selected_articles": [],
+    "historical_overlap_recorded_separately": true,
+    "historical_local_first_or_reaudit_artifacts": {
+      "8b263a7c-5e3e-4157-a18b-146f5b12f521": [],
+      "bd7ee04d-e6a5-4f77-a2a7-8a9dc6ddd5f4": [],
+      "9261cc17-24c1-49d2-a45a-158032f6fcd3": [
+        "older BERDE candidate and question-edit artifacts; no accepted Batches 087-102 overlap"
+      ],
+      "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004": [
+        "Batch 021 validate sidecar and older EIA candidate artifacts; no accepted Batches 087-102 overlap"
+      ],
+      "9eb0b48e-110e-4c75-8a0c-4f83063001cf": [
+        "Batch 021 validate sidecar and older accessibility candidate artifacts; no accepted Batches 087-102 overlap"
+      ]
+    }
+  },
+  "selected_article_uuids_slugs": [
+    {
+      "article_id": "8b263a7c-5e3e-4157-a18b-146f5b12f521",
+      "slug": "lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implications"
+    },
+    {
+      "article_id": "bd7ee04d-e6a5-4f77-a2a7-8a9dc6ddd5f4",
+      "slug": "lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-information"
+    },
+    {
+      "article_id": "9261cc17-24c1-49d2-a45a-158032f6fcd3",
+      "slug": "lea-prac-frm-016-berde-rating-system-philippine-green-building-standard-and-the-architect-s-role"
+    },
+    {
+      "article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
+      "slug": "lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30"
+    },
+    {
+      "article_id": "9eb0b48e-110e-4c75-8a0c-4f83063001cf",
+      "slug": "lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty"
+    }
+  ],
+  "counts": {
+    "selected_articles": 5,
+    "linked_questions_expected": 50,
+    "question_edits_expected": 50,
+    "question_edits_existing_before_repair": 30,
+    "stale_compose_error_files_removed": 0,
+    "scenarios_expected": 5,
+    "source_hash_checks_expected": 20
+  },
+  "article_clusters": [
+    {
+      "article_id": "8b263a7c-5e3e-4157-a18b-146f5b12f521",
+      "slug": "lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implications",
+      "title": "BIM in Philippine Architectural Practice Status Obligations",
+      "focus": "BIM-specific details narrowed to source-safe RA 9266/UAP contract, document, responsibility, and instrument-of-service controls",
+      "linked_question_count": 10,
+      "source_family": "RA 9266 IRR Architecture Act of 2004; UAP Document Standards of Professional Practice",
+      "scenario_status": "eligible-added",
+      "thin_needs_expansion": "THIN_NEEDS_EXPANSION final-depth candidate: exact BIM mandate, LOD, IFC, ISO 19650, and Philippine BIM standard details need local raw primary BIM sources before restoration.",
+      "source_locators": [
+        {
+          "source_id": "batch103-lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implications-ra-9266-irr-professional-documents",
+          "label": "RA 9266 IRR Architecture Act of 2004",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+          "conversion_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+          "checked_markdown_lines": [
+            "raw markdown lines 44-90, 169-182, 589-621, 732-748"
+          ]
+        },
+        {
+          "source_id": "batch103-lea-prac-frm-014-bim-in-philippine-architectural-practice-status-obligations-and-practice-implications-uap-spp-professional-services",
+          "label": "UAP Document Standards of Professional Practice",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "conversion_sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+          "checked_markdown_lines": [
+            "raw markdown lines 47-61, 81-83, 293-304, 1848-1857"
+          ]
+        }
+      ],
+      "historical_overlap": {
+        "current_serial_source_audited_batches": [],
+        "historical_local_first_or_reaudit_artifacts": []
+      }
+    },
+    {
+      "article_id": "bd7ee04d-e6a5-4f77-a2a7-8a9dc6ddd5f4",
+      "slug": "lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-information",
+      "title": "Data Privacy Act RA 10173 the Architect's Obligations When Handling",
+      "focus": "RA 10173-titled article narrowed to local-source-supported professional document, confidentiality, ownership, and agreement controls",
+      "linked_question_count": 10,
+      "source_family": "RA 9266 IRR Architecture Act of 2004; UAP Document Standards of Professional Practice",
+      "scenario_status": "eligible-added",
+      "thin_needs_expansion": "THIN_NEEDS_EXPANSION final-depth candidate: exact RA 10173 controller/processor, DPO, NPC, breach notification, and purpose-limitation rules need local raw RA 10173/NPC sources before restoration.",
+      "source_locators": [
+        {
+          "source_id": "batch103-lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-information-ra-9266-irr-professional-documents",
+          "label": "RA 9266 IRR Architecture Act of 2004",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+          "conversion_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+          "checked_markdown_lines": [
+            "raw markdown lines 44-90, 169-182, 589-621, 732-748"
+          ]
+        },
+        {
+          "source_id": "batch103-lea-prac-frm-015-data-privacy-act-ra-10173-the-architect-s-obligations-when-handling-client-information-uap-spp-professional-services",
+          "label": "UAP Document Standards of Professional Practice",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "conversion_sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+          "checked_markdown_lines": [
+            "raw markdown lines 47-61, 81-83, 293-304, 1848-1857"
+          ]
+        }
+      ],
+      "historical_overlap": {
+        "current_serial_source_audited_batches": [],
+        "historical_local_first_or_reaudit_artifacts": []
+      }
+    },
+    {
+      "article_id": "9261cc17-24c1-49d2-a45a-158032f6fcd3",
+      "slug": "lea-prac-frm-016-berde-rating-system-philippine-green-building-standard-and-the-architect-s-role",
+      "title": "BERDE Rating System and the Architect's Role",
+      "focus": "BERDE as voluntary national rating system, formal third-party certification, design/construction stages, and verifiable documentation",
+      "linked_question_count": 10,
+      "source_family": "BERDE Buildings Version 5.0.0 User Guide",
+      "scenario_status": "eligible-added",
+      "thin_needs_expansion": null,
+      "source_locators": [
+        {
+          "source_id": "batch103-lea-prac-frm-016-berde-rating-system-philippine-green-building-standard-and-the-architect-s-role-berde-buildings-user-guide",
+          "label": "BERDE Buildings Version 5.0.0 User Guide",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.pdf",
+          "raw_pdf_sha256": "sha256:59f4e0a3a485f73f93f211bc4250932a9c9d2b114b4f571b2ab8f6a58c426bb4",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/BERDE/BERDE – Buildings – Version 5.0.0 – User Guide.md",
+          "conversion_sha256": "sha256:d8fff60d4cb5d1fcd0b91e3f30a6fc26309b6d40a439c76ac608a8da0ce0ed05",
+          "checked_markdown_lines": [
+            "raw markdown lines 129-167, 253-289, 337-370, 581, 1178-1204"
+          ]
+        }
+      ],
+      "historical_overlap": {
+        "current_serial_source_audited_batches": [],
+        "historical_local_first_or_reaudit_artifacts": [
+          "older BERDE candidate and question-edit artifacts; no accepted Batches 087-102 overlap"
+        ]
+      }
+    },
+    {
+      "article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
+      "slug": "lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30",
+      "title": "Environmental Laws Affecting Architectural Practice EIA DENR",
+      "focus": "DAO 2003-30 EIS screening, ECC/CNC, ECP/ECA categories, early EIA planning, public participation, and EMP documentation",
+      "linked_question_count": 10,
+      "source_family": "DENR DAO 2003-30 EIS System Implementing Rules; DENR DAO 2003-30 Revised Procedural Manual",
+      "scenario_status": "eligible-added",
+      "thin_needs_expansion": "THIN_NEEDS_EXPANSION final-depth candidate: exact habitat-offset, protected-area-system, and project-specific review-duration claims need additional local primary sources before restoration.",
+      "source_locators": [
+        {
+          "source_id": "batch103-lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30-dao-2003-30-eis-irr",
+          "label": "DENR DAO 2003-30 EIS System Implementing Rules",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DENR/DENR DAO 2003-30 - EIS System Implementing Rules.pdf",
+          "raw_pdf_sha256": "sha256:079285ca972d0be053faa148fe6770c12c396408c35e6739929b81685e775fb7",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/DENR/DENR DAO 2003-30 - EIS System Implementing Rules.md",
+          "conversion_sha256": "sha256:4b06c5c2e98beb9387897064cccaa7ef6c10a5d12b89aa1546235657f7f44b78",
+          "checked_markdown_lines": [
+            "raw markdown lines 17-34, 50-65, 95-105, 134-165, 248-262"
+          ]
+        },
+        {
+          "source_id": "batch103-lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30-dao-2003-30-revised-procedural-manual",
+          "label": "DENR DAO 2003-30 Revised Procedural Manual for the EIS System",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DENR/DENR DAO 2003-30 Revised Procedural Manual - EIS System.pdf",
+          "raw_pdf_sha256": "sha256:28e3763d9b95e58392590c888e18aa24b69b5d35b74fdf36183658a29cf79fe4",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/DENR/DENR DAO 2003-30 Revised Procedural Manual - EIS System.md",
+          "conversion_sha256": "sha256:b95d7a7af3683e15661c3f145a3f42bd21eee89ef0dee5d6d25c10b12f048504",
+          "checked_markdown_lines": [
+            "raw markdown lines 260-284, 306-313"
+          ]
+        }
+      ],
+      "historical_overlap": {
+        "current_serial_source_audited_batches": [],
+        "historical_local_first_or_reaudit_artifacts": [
+          "Batch 021 validate sidecar and older EIA candidate artifacts; no accepted Batches 087-102 overlap"
+        ]
+      }
+    },
+    {
+      "article_id": "9eb0b48e-110e-4c75-8a0c-4f83063001cf",
+      "slug": "lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty",
+      "title": "Universal Design in Practice BP 344 RA 7277",
+      "focus": "BP 344 2024 accessibility requirements, DPWH national-road enforcement details, and RA 9266 professional document responsibility",
+      "linked_question_count": 10,
+      "source_family": "2024 Revised IRR of BP 344; DPWH DO 037 Enforcement of BP 344 along National Roads; RA 9266 IRR",
+      "scenario_status": "eligible-added",
+      "thin_needs_expansion": "THIN_NEEDS_EXPANSION final-depth candidate: exact RA 7277 Magna Carta framing needs local raw RA 7277 source before restoration.",
+      "source_locators": [
+        {
+          "source_id": "batch103-lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty-bp-344-2024-irr",
+          "label": "2024 Revised IRR of BP 344",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+          "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.md",
+          "conversion_sha256": "sha256:a621bcb059a5c023dc5056939a6fa8ae44b5f60a29918f628d81657b9639692a",
+          "checked_markdown_lines": [
+            "raw markdown lines 39-77, 209-219, 242-288, 332-334, 919-942, 1037-1048"
+          ]
+        },
+        {
+          "source_id": "batch103-lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty-dpwh-do037-bp344-national-roads",
+          "label": "DPWH DO 037 Enforcement of BP 344 along National Roads",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DPWH/DPWH DO037 Enforcement of BP344 along National Roads.pdf",
+          "raw_pdf_sha256": "sha256:1af131d40d5190e949a91b12ed80e85a06d434b67c1423dc8195c84408d42ea7",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/DPWH/DPWH DO037 Enforcement of BP344 along National Roads.md",
+          "conversion_sha256": "sha256:bebc171dca8c07cdb58d191399685461365fd930ae9f996bc9e4546b6bd584c4",
+          "checked_markdown_lines": [
+            "raw markdown lines 21-34, 88-93, 229-234"
+          ]
+        },
+        {
+          "source_id": "batch103-lea-prac-frm-018-universal-design-in-practice-bp-344-ra-7277-and-the-architect-s-affirmative-duty-ra-9266-irr-professional-responsibility",
+          "label": "RA 9266 IRR Architecture Act of 2004",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+          "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+          "conversion_sha256": "sha256:afc96265347288121522f485f8ef0f796adbfe047ae8351b182f7ea448dfdc40",
+          "checked_markdown_lines": [
+            "raw markdown lines 29-33, 589-621"
+          ]
+        }
+      ],
+      "historical_overlap": {
+        "current_serial_source_audited_batches": [],
+        "historical_local_first_or_reaudit_artifacts": [
+          "Batch 021 validate sidecar and older accessibility candidate artifacts; no accepted Batches 087-102 overlap"
+        ]
+      }
+    }
+  ],
+  "validation_gates": {
+    "compose": "PASS 5/5 blockers=0",
+    "diff": "PASS 5/5 locally_safe blockers=0",
+    "validate": "PASS 5/5 blockers=0",
+    "ui_block_edit_validation": "PASS 5/5 blockers=0 warnings=0",
+    "scoped_json_parse": "PASS 110 files failures=0",
+    "marker_scan": "PASS matches=0",
+    "source_hash_checks": "PASS 20/20",
+    "linked_question_question_edit_counts": "PASS 50/50",
+    "stale_compose_error_scan": "PASS matches=0",
+    "targeted_tests": "PASS 34 pass, 0 fail, 328 expects",
+    "scoped_git_diff_check": "PASS"
+  },
+  "forbidden_actions": {
+    "supabase_push": false,
+    "deploy": false,
+    "production_db_mutation": false,
+    "merge_to_main": false
+  }
+}

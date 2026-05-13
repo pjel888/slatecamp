@@ -1,72 +1,78 @@
 {
   "question_id": "a4b16a2b-deee-4415-9d4b-10d22a425829",
-  "baseline_hash": "sha256:1499c76e7831abdb901d9497015e3b1d7c2b0c92560f2e12b0ab279e55185c3d",
+  "baseline_hash": "sha256:46dfad3ae96759ab0137a0981679da837306714a3116339f6d9f05de350a68b8",
   "action": "replace",
-  "reason": "source-audited-article-batch-021-local-first rewrote this linked question to align with the local source audit for lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30.",
-  "approved_by": "codex-local-source-audit-batch-021",
-  "approved_at": "2026-05-11T10:30:00.000+08:00",
+  "reason": "source-audited-article-batch-103-local-first rewrote this linked question after local raw-source recheck for lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30.",
+  "approved_by": "codex-local-source-audit-batch-103",
+  "approved_at": "2026-05-13T11:22:58+08:00",
   "source_audit_support": {
     "parent_article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
     "parent_article_slug": "lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30",
     "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
-    "source_locator": "DENR DAO 2003-30 EIS System Implementing Rules checked from local raw PDF and refined Markdown",
+    "support_status": "source_safe_rewrite_with_deferred_final_depth_items",
+    "source_locator": "raw markdown lines 17-34, 50-65, 95-105, 134-165, 248-262; raw markdown lines 260-284, 306-313",
     "checked_markdown_lines": [
-      "DAO 2003-30 refined markdown lines 13-150",
-      "DAO 2003-30 refined markdown lines 150-360"
+      "raw markdown lines 17-34, 50-65, 95-105, 134-165, 248-262",
+      "raw markdown lines 260-284, 306-313"
     ],
     "checked_sources": [
       {
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DENR/DENR DAO 2003-30 - EIS System Implementing Rules.pdf",
         "sha256": "sha256:079285ca972d0be053faa148fe6770c12c396408c35e6739929b81685e775fb7",
-        "source_id": "denr-dao-2003-30-eis-system-local",
-        "locator": "DAO 2003-30 refined markdown lines 13-150 and 150-360"
+        "source_id": "batch103-lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30-dao-2003-30-eis-irr",
+        "locator": "raw markdown lines 17-34, 50-65, 95-105, 134-165, 248-262"
       },
       {
-        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/DENR/DENR DAO 2003-30 - EIS System Implementing Rules.md",
-        "sha256": "sha256:3a77a918f5e5a62043b3a3e75d9583372031da82056f882b49c317e94f119763",
-        "source_id": "denr-dao-2003-30-eis-system-local",
-        "locator": "DAO 2003-30 refined markdown lines 13-150 and 150-360"
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/DENR/DENR DAO 2003-30 - EIS System Implementing Rules.md",
+        "sha256": "sha256:4b06c5c2e98beb9387897064cccaa7ef6c10a5d12b89aa1546235657f7f44b78",
+        "source_id": "batch103-lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30-dao-2003-30-eis-irr",
+        "locator": "raw markdown lines 17-34, 50-65, 95-105, 134-165, 248-262"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/DENR/DENR DAO 2003-30 Revised Procedural Manual - EIS System.pdf",
+        "sha256": "sha256:28e3763d9b95e58392590c888e18aa24b69b5d35b74fdf36183658a29cf79fe4",
+        "source_id": "batch103-lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30-dao-2003-30-revised-procedural-manual",
+        "locator": "raw markdown lines 260-284, 306-313"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/DENR/DENR DAO 2003-30 Revised Procedural Manual - EIS System.md",
+        "sha256": "sha256:b95d7a7af3683e15661c3f145a3f42bd21eee89ef0dee5d6d25c10b12f048504",
+        "source_id": "batch103-lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30-dao-2003-30-revised-procedural-manual",
+        "locator": "raw markdown lines 260-284, 306-313"
       }
     ],
-    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+    "local_source_safe_action": "Batch 103 rewrote the linked question using checked local raw source evidence and deferred unsupported exact claims.",
+    "batch_id": "source-audited-article-batch-103-local-first"
   },
   "proposed": {
-    "text": "What should be checked early in pre-design when applying DAO 2003-30 to a project site?",
+    "text": "What should an architect do early in pre-design regarding environmental requirements?",
     "options": [
       {
         "id": "a",
-        "text": "Only the final paint schedule"
+        "text": "Wait until occupancy inspection"
       },
       {
         "id": "b",
-        "text": "Whether the project nature and site sensitivity bring it within the EIS System"
+        "text": "Screen ECP/ECA status and identify ECC, CNC, EIA, and EMP implications before fixing the site plan"
       },
       {
         "id": "c",
-        "text": "Only contractor labor rates"
+        "text": "Let the contractor guess the environmental category"
       },
       {
         "id": "d",
-        "text": "Only the occupancy permit fee"
+        "text": "Avoid documenting environmental assumptions"
       }
     ],
     "correct_option_id": "b",
-    "correct_value": null,
-    "accepted_answers": null,
-    "value_tolerance": 0,
-    "question_type": "mcq",
-    "rationale": "DAO 2003-30 uses project nature and site sensitivity or vulnerability to determine EIS System scope.",
-    "explanation": "Early screening lets the team plan for ECC, CNC, EIS, IEE, or Project Description requirements.",
-    "code_citation": "DAO 2003-30 refined markdown lines 89-129",
-    "bloom_level": "apply",
-    "application_context": "code_interpretation",
+    "rationale": "The procedural manual places initial self-screening at concept or pre-feasibility.",
+    "explanation": "Batch 103 source-audited rewrite: The procedural manual places initial self-screening at concept or pre-feasibility.",
+    "code_citation": "raw markdown lines 17-34, 50-65, 95-105, 134-165, 248-262; raw markdown lines 260-284, 306-313",
+    "application_context": "professional_practice_source_audit",
     "practice_context": [
-      "environmental compliance",
-      "pre-design"
+      "professional practice",
+      "source-audited batch 103"
     ],
-    "difficulty": 0.66,
-    "is_assessment": false,
-    "model_id": "BATCH-021-dao-003"
+    "model_id": "BATCH-103-lea-prac-frm-017-environmental-laws-affecting-architectural-practice-eia-denr-regulations-and-dao-2003-30-003"
   }
 }
