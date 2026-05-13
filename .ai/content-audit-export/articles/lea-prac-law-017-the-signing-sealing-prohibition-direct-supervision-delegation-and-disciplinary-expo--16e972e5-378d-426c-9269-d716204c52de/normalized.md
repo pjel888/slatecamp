@@ -15,6 +15,10 @@ RA 9266 treats the architect's signature and seal as a professional accountabili
 
 A registered architect may use staff, junior designers, or drafting support. The problem begins when the architect signs and seals work the architect did not personally prepare and did not supervise as it developed. Delegation must remain traceable to the architect's professional control.
 
+## Real World Scenario: Borrowed Drawings Before Permit Filing
+
+A client brings a nearly complete architectural set prepared by another office and asks a new architect to "just sign it" so the permit can be filed. The source-safe answer is no unless the architect clearly limits the signature to parts actually performed or brings the work under real professional control before signing. If the architect signs and seals the whole set as architect-of-record, Section 20 and Section 32 attach responsibility to documents issued under that seal or authorized signature. If the set was not personally prepared or executed under immediate supervision, Section 23 creates suspension or revocation exposure after notice and hearing.
+
 ## Exam Guardrails
 
 Do not treat the seal as a rubber stamp. Ask whether the signing architect personally prepared the documents or immediately supervised their preparation. Keep the consequence tied to Section 23: suspension or revocation after notice and hearing.

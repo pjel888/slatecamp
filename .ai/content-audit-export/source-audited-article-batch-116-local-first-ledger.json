@@ -1,0 +1,97 @@
+{
+  "batch_id": "source-audited-article-batch-116-local-first",
+  "batch_number": "116",
+  "generated_at": "2026-05-13T21:16:00+08:00",
+  "branch": "3dlab-gray-viewport-bg",
+  "baseline_commit": "e1158c709",
+  "previous_batch_commit": "2df2369f9",
+  "status": "pass_local_first_git_blocked",
+  "articles": [
+    {
+      "article_id": "16e972e5-378d-426c-9269-d716204c52de",
+      "slug": "lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-exposure",
+      "title": "The Signing Sealing Prohibition Direct Supervision Delegation",
+      "folder": ".ai/content-audit-export/articles/lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-expo--16e972e5-378d-426c-9269-d716204c52de",
+      "status": "pass",
+      "source_count": 1,
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_safe_real_world_scenario": "added",
+      "scenario_summary": "added a source-safe borrowed-drawings permit-filing scenario grounded in RA 9266 IRR Sections 20, 23, and 32.",
+      "thin_needs_expansion": false,
+      "final_depth_findings": [
+        "Do not restore current PRC administrative investigation procedure, penalty-calibration rules, insurance mechanics, or broad specialist-discipline liability rules beyond RA 9266 IRR Sections 20, 23, and 32 without additional local primary sources."
+      ],
+      "unsupported_or_removed_claims": [
+        "Corrected the linked-question consequence citation to RA 9266 IRR Section 23.",
+        "Removed unsupported automatic-consequence distractor framing from explanations.",
+        "Corrected sealing typos and narrowed specialist-coordination claims to source-backed architectural-document accountability.",
+        "Upgraded historical Batch 006 partial question edits to current Batch 116 source_audit_support replacement edits."
+      ],
+      "original_hash": "sha256:ba9be43d524be00b1f9d36106879742028eac3dd176b49fbb6865a18f615224c",
+      "normalized_hash": "sha256:377cbc158a0c657ff574405dcf1662b2c969d3fed86150574ec4fba33eab2014",
+      "candidate_hash": "sha256:377cbc158a0c657ff574405dcf1662b2c969d3fed86150574ec4fba33eab2014"
+    }
+  ],
+  "source_gap_ineligible": [
+    {
+      "article_id": "6ec9b40c-a495-4a7a-8c51-bd0857fe69b4",
+      "slug": "lea-prac-law-014-intellectual-property-code-ra-8293-applied-to-architectural-works",
+      "status": "source_gap_ineligible",
+      "reason": "No local RA 8293/IP Code raw source was found under vitruvius-connection/001_Raw-Source-Layer; sources.json has source_count 0 and no question-edits are present."
+    },
+    {
+      "article_id": "2e78ff36-673b-4de5-b01d-9cdc6bf31589",
+      "slug": "lea-prac-law-015-copyright-duration-transfer-moral-rights-and-infringement-remedies",
+      "status": "source_gap_ineligible",
+      "reason": "No local RA 8293/IP Code raw source was found under vitruvius-connection/001_Raw-Source-Layer; sources.json has source_count 0 and no question-edits are present."
+    }
+  ],
+  "forbidden_actions_observed": {
+    "supabase_push": "not_performed",
+    "deploy": "not_performed",
+    "production_db_mutation": "not_performed",
+    "merge_to_main": "not_performed"
+  },
+  "gates": {
+    "compose": "PASS: content-audit:compose -- --article-id 16e972e5-378d-426c-9269-d716204c52de --overwrite; blockers=0",
+    "diff": "PASS: content-audit:diff -- --article-id 16e972e5-378d-426c-9269-d716204c52de --summary; changed=true safe_to_push=true blockers=0",
+    "validate": "PASS: content-audit:validate -- --article-id 16e972e5-378d-426c-9269-d716204c52de --summary; valid=true blockers=0 warnings=0",
+    "ui_block_edit_validation": "PASS: content-audit:ui-block-edits -- --article-id 16e972e5-378d-426c-9269-d716204c52de; valid=true blockers=0 warnings=0",
+    "targeted_content_audit_tests": "PASS: bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts; 34 pass, 0 fail, 328 expect() calls",
+    "cached_diff_check": "PASS: temporary-index cached diff check passed after adding intended Batch 116 paths only.",
+    "real_git_stage_commit_push_gate": "BLOCKED: live git add failed with fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted; temporary commit object could be created, but push failed with fatal: unable to access 'https://github.com/pjel888/slatecamp.git/': Could not resolve host: github.com"
+  },
+  "source_hashes": [
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "expected_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "actual_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "status": "pass",
+      "locator": "RA 9266 IRR refined markdown lines 556-580, 584, 592-598, and 696-702"
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "expected_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+      "actual_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+      "status": "pass",
+      "locator": "RA 9266 IRR refined markdown lines 556-580, 584, 592-598, and 696-702"
+    }
+  ],
+  "intended_paths": [
+    ".ai/03_plans/production-line-batch-116-manifest.json",
+    ".ai/content-audit-export/source-audited-article-batch-116-local-first-report.md",
+    ".ai/content-audit-export/source-audited-article-batch-116-local-first-ledger.json",
+    ".ai/content-audit-export/source-audited-article-batch-116-local-first-scoped-checks.json",
+    ".ai/03_plans/batch-116-independent-quality-review.md",
+    ".ai/03_plans/source-audited-local-first-freeze-readiness-report.md",
+    ".ai/03_plans/source-audited-local-first-batches-handoff.md",
+    ".ai/03_plans/source-audited-production-line-coordination.md",
+    ".ai/content-audit-export/sync-state.json",
+    ".ai/content-audit-export/validation-report.json",
+    ".ai/content-audit-export/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-expo--16e972e5-378d-426c-9269-d716204c52de"
+  ],
+  "expected_commit_message": "chore(content): accept source-audited batch 116",
+  "freeze_readiness_report_path": ".ai/03_plans/source-audited-local-first-freeze-readiness-report.md"
+}

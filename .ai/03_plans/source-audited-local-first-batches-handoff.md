@@ -1,3 +1,40 @@
+# Batch 116 Local-First Handoff Update
+
+Last updated: 2026-05-13T21:16:00+08:00
+
+## Current State
+
+- Latest local-first production-line batch prepared: Batch 116
+- Branch: 3dlab-gray-viewport-bg
+- Baseline before Batch 116: e1158c709
+- Previous accepted Batch 115 commit: 2df2369f9
+- Batch 116 local artifacts: pass
+- Git gate: live `git add` failed with `.git/index.lock` permission denial; temporary-index cached diff passed and a temporary commit object was created, but push failed because `github.com` could not be resolved.
+- Supabase push/deploy/production DB mutation/main merge: not performed.
+
+## Batch 116 Selection
+
+- lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-exposure (16e972e5-378d-426c-9269-d716204c52de)
+
+## Validation Evidence
+
+- Report: `.ai/content-audit-export/source-audited-article-batch-116-local-first-report.md`
+- Ledger: `.ai/content-audit-export/source-audited-article-batch-116-local-first-ledger.json`
+- Scoped checks: `.ai/content-audit-export/source-audited-article-batch-116-local-first-scoped-checks.json`
+- Manifest: `.ai/03_plans/production-line-batch-116-manifest.json`
+- QA memo: `.ai/03_plans/batch-116-independent-quality-review.md`
+
+## Preserved Final-Depth Items
+
+- lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-exposure: Do not restore current PRC administrative investigation procedure, penalty-calibration rules, insurance mechanics, or broad specialist-discipline liability rules beyond RA 9266 IRR Sections 20, 23, and 32 without additional local primary sources.
+- LAW-014 and LAW-015 remain source-gap ineligible until a local RA 8293/IP Code raw source and linked question edits are added.
+
+## Batch 116 Next Phase
+
+Live artifact scan after Batch 116 found no remaining eligible source-auditable LAW clusters. Freeze local-first state for the second audit unless new eligible fixed/source-auditable article-question clusters are added. Freeze-readiness report: `.ai/03_plans/source-audited-local-first-freeze-readiness-report.md`. Do not publish or Supabase-push. Freeze-readiness report: `.ai/03_plans/source-audited-local-first-freeze-readiness-report.md`.
+
+---
+
 # Batch 115 Local-First Handoff Update
 
 Last updated: 2026-05-13T20:45:00+08:00

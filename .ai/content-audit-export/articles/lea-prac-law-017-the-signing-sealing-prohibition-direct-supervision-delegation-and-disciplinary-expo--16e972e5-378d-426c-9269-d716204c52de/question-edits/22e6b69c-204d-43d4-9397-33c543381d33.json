@@ -1,11 +1,80 @@
 {
   "question_id": "22e6b69c-204d-43d4-9397-33c543381d33",
   "baseline_hash": "sha256:33c8728d9c9778258db81c0ca0e0d016453e229b2a921196d16e5955028ed5f2",
-  "reason": "Batch 006 local source audit aligned linked question ALE-PRAC-LAW-017-002 to verified raw-source claims for lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-exposure.",
-  "approved_by": "codex-local-source-audit-batch-006",
-  "approved_at": "2026-05-10T22:30:00+08:00",
+  "action": "replace",
+  "reason": "source-audited-article-batch-116-local-first refreshes this linked question under the current serial production-line baseline using local raw-source evidence for lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-exposure.",
+  "approved_by": "codex-local-source-audit-batch-116",
+  "approved_at": "2026-05-13T21:16:00+08:00",
+  "source_audit_support": {
+    "parent_article_id": "16e972e5-378d-426c-9269-d716204c52de",
+    "parent_article_slug": "lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-exposure",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 9266 IRR refined markdown lines 556-580, 584, 592-598, and 696-702",
+    "checked_markdown_lines": [
+      "RA 9266 IRR refined markdown lines 556-580, 584, 592-598, and 696-702"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "batch116-lea-prac-law-017-ra-9266-irr-1",
+        "locator": "RA 9266 IRR refined markdown lines 556-580, 584, 592-598, and 696-702"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_id": "batch116-lea-prac-law-017-ra-9266-irr-1",
+        "locator": "RA 9266 IRR refined markdown lines 556-580, 584, 592-598, and 696-702"
+      }
+    ],
+    "local_source_safe_action": "Batch 116 rechecked the linked question against local raw source truth and carries forward only source-supported question text, answer key, citation, and rationale.",
+    "batch_id": "source-audited-article-batch-116-local-first",
+    "historical_overlap_treatment": "Older Batch 006 local-first artifacts are treated as historical overlap, not an accepted-current duplicate."
+  },
   "proposed": {
-    "code_citation": "RA 9266 IRR Sections 20, 23, and 32",
-    "explanation": "Source-audited against RA 9266 IRR Sections 20, 23, and 32; the answer turns on personal preparation, immediate supervision, and Section 23 discipline exposure."
+    "text": "What does immediate or direct supervision mean for signing and sealing under RA 9266 IRR Sections 20 and 23?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The architect receives copies of completed drawings and reviews them once before signing, without engaging in ongoing project oversight"
+      },
+      {
+        "id": "b",
+        "text": "The architect is actively involved in the design process and overseeing the work as it develops"
+      },
+      {
+        "id": "c",
+        "text": "The architect approves the project budget and schedule, but does not participate in day-to-day design decisions"
+      },
+      {
+        "id": "d",
+        "text": "The architect meets with the owner once during the design phase, providing limited input on the project's progress"
+      }
+    ],
+    "correct_option_id": "b",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Final review of completed drawings is not the same as work prepared under the architect's direct or immediate supervision.",
+      "c": "Budget and schedule approval do not show supervision of the architectural documents being signed and sealed.",
+      "d": "A single owner meeting does not show supervision of the preparation of the documents.",
+      "correct": "RA 9266 IRR uses direct supervision in Section 20 and immediate supervision in Section 23. For exam purposes, the signing architect must be able to connect the signed documents to the architect's own preparation or supervision while the work was being prepared, not merely to a last-minute review.",
+      "takeaway": "The safe exam answer looks for actual supervision of document preparation before signing and sealing."
+    },
+    "explanation": "Source-audited against RA 9266 IRR Sections 20 and 23; the key distinction is supervision during preparation, not final receipt of completed drawings.",
+    "code_citation": "RA 9266 IRR Sections 20 and 23",
+    "bloom_level": "remember",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited local-first",
+      "batch 116"
+    ],
+    "difficulty": 0.3,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-LAW-017-002"
   }
 }

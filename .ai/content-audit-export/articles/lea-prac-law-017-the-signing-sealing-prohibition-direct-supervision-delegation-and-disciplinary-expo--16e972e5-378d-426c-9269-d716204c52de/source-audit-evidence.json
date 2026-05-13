@@ -1,7 +1,7 @@
 {
   "artifact_type": "source-audit-evidence",
-  "audit_date": "2026-05-10",
-  "audited_at": "2026-05-10T22:40:00+08:00",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T21:16:00+08:00",
   "audit_mode": "local_source_audit_no_supabase",
   "protocols_applied": [
     ".ai/CONTENT_EXCELLENCE_GOAL.md",
@@ -14,8 +14,8 @@
     "title": "The Signing Sealing Prohibition Direct Supervision Delegation",
     "article_folder": ".ai/content-audit-export/articles/lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-expo--16e972e5-378d-426c-9269-d716204c52de",
     "candidate_path": ".ai/content-audit-export/articles/lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-expo--16e972e5-378d-426c-9269-d716204c52de/candidate.md",
-    "candidate_sha256": "sha256:92ccce36952512596d89c802b032c35ff0e56373e5c1c1d286688f3664a48b9c",
-    "normalized_sha256": "sha256:92ccce36952512596d89c802b032c35ff0e56373e5c1c1d286688f3664a48b9c",
+    "candidate_sha256": "sha256:377cbc158a0c657ff574405dcf1662b2c969d3fed86150574ec4fba33eab2014",
+    "normalized_sha256": "sha256:377cbc158a0c657ff574405dcf1662b2c969d3fed86150574ec4fba33eab2014",
     "linked_questions_sha256": "sha256:613b2064dc5d53a2468cd454729fa3dcee3abac58ef1244632bf85c7c277d4a9",
     "sources_sha256": "sha256:256b87bafc3e20148ff26f11dd296b78364f7d3fc53ad5b132e95b60bea5dc2e"
   },
@@ -55,8 +55,8 @@
   ],
   "gate_results": {
     "compose": "PASS: content-audit:compose -- --article-id 16e972e5-378d-426c-9269-d716204c52de --overwrite; blockers=0",
-    "diff": "PASS: content-audit:diff -- --article-id 16e972e5-378d-426c-9269-d716204c52de; changed=true safe_to_push=true blockers=0",
-    "validate": "PASS: content-audit:validate -- --article-id 16e972e5-378d-426c-9269-d716204c52de --summary --dry-run; valid=true blockers=0 warnings=0",
+    "diff": "PASS: content-audit:diff -- --article-id 16e972e5-378d-426c-9269-d716204c52de --summary; changed=true safe_to_push=true blockers=0",
+    "validate": "PASS: content-audit:validate -- --article-id 16e972e5-378d-426c-9269-d716204c52de --summary; valid=true blockers=0 warnings=0",
     "push_dry_run": "not_attempted_local_first; Supabase remote fetch is final publishing only and intentionally non-blocking here",
     "supabase_mutation": "not_attempted_by_request"
   },
@@ -92,12 +92,21 @@
       "source_support": [
         "ra9266_irr"
       ]
+    },
+    {
+      "claim_id": "lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-exposure-real-world-scenario",
+      "claim_text": "The Real World Scenario rejects signing a nearly complete set prepared by another office unless the architect clearly limits the performed part or brings the work under real professional control before signing; full-set signing ties responsibility to Sections 20 and 32 and Section 23 discipline exposure if immediate supervision is absent.",
+      "source_support": [
+        "ra9266_irr"
+      ],
+      "audit_result": "PASS"
     }
   ],
   "unsupported_or_removed_claims": [
-    "Corrected the linked-question consequence citation from Section 20(e) to Section 23.",
-    "Removed unsupported insurance-loss and automatic-consequence distractor framing from explanations.",
-    "Corrected sealing typos and narrowed specialist-coordination claims to source-backed architectural-document accountability."
+    "Corrected the linked-question consequence citation to RA 9266 IRR Section 23.",
+    "Removed unsupported automatic-consequence distractor framing from explanations.",
+    "Corrected sealing typos and narrowed specialist-coordination claims to source-backed architectural-document accountability.",
+    "Upgraded historical Batch 006 partial question edits to current Batch 116 source_audit_support replacement edits."
   ],
   "remaining_local_blockers": [],
   "overall": {
@@ -108,11 +117,11 @@
     "remaining_local_blockers": []
   },
   "local_validation": {
-    "command": "bun run content-audit:validate -- --article-id 16e972e5-378d-426c-9269-d716204c52de --summary --dry-run",
+    "command": "bun run content-audit:validate -- --article-id 16e972e5-378d-426c-9269-d716204c52de --summary",
     "valid": true,
     "blockers": 0,
     "warnings": [],
-    "checked_at": "2026-05-10T22:40:00+08:00"
+    "checked_at": "2026-05-13T21:16:00+08:00"
   },
-  "bundle_integrity_repair": "Updated article-metadata.json content_hash/original_content_hash and sync-state original_hash to match the checked local original.md hash before final diff/validate."
+  "bundle_integrity_repair": "Batch 116 refreshed normalized/candidate hashes after adding a source-safe Real World Scenario and upgrading linked question edits to current production-line format."
 }

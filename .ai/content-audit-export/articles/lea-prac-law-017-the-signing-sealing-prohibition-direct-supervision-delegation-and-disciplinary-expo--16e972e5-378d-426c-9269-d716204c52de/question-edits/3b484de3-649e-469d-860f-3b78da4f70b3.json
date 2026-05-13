@@ -1,11 +1,80 @@
 {
   "question_id": "3b484de3-649e-469d-860f-3b78da4f70b3",
   "baseline_hash": "sha256:b11c1ae0a7a070d342e90d07f2cd0ef712749de1d87589a84a180dcee824b8f3",
-  "reason": "Batch 006 local source audit aligned linked question ALE-PRAC-LAW-017-006 to verified raw-source claims for lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-exposure.",
-  "approved_by": "codex-local-source-audit-batch-006",
-  "approved_at": "2026-05-10T22:30:00+08:00",
+  "action": "replace",
+  "reason": "source-audited-article-batch-116-local-first refreshes this linked question under the current serial production-line baseline using local raw-source evidence for lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-exposure.",
+  "approved_by": "codex-local-source-audit-batch-116",
+  "approved_at": "2026-05-13T21:16:00+08:00",
+  "source_audit_support": {
+    "parent_article_id": "16e972e5-378d-426c-9269-d716204c52de",
+    "parent_article_slug": "lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-exposure",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 9266 IRR refined markdown lines 556-580, 584, 592-598, and 696-702",
+    "checked_markdown_lines": [
+      "RA 9266 IRR refined markdown lines 556-580, 584, 592-598, and 696-702"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "batch116-lea-prac-law-017-ra-9266-irr-1",
+        "locator": "RA 9266 IRR refined markdown lines 556-580, 584, 592-598, and 696-702"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_id": "batch116-lea-prac-law-017-ra-9266-irr-1",
+        "locator": "RA 9266 IRR refined markdown lines 556-580, 584, 592-598, and 696-702"
+      }
+    ],
+    "local_source_safe_action": "Batch 116 rechecked the linked question against local raw source truth and carries forward only source-supported question text, answer key, citation, and rationale.",
+    "batch_id": "source-audited-article-batch-116-local-first",
+    "historical_overlap_treatment": "Older Batch 006 local-first artifacts are treated as historical overlap, not an accepted-current duplicate."
+  },
   "proposed": {
-    "code_citation": "RA 9266 IRR Section 23",
-    "explanation": "Source-audited against RA 9266 IRR Sections 20, 23, and 32; the answer turns on personal preparation, immediate supervision, and Section 23 discipline exposure."
+    "text": "An architect's firm policy requires that all construction documents receive a formal review before signing. The review checklist includes verification of sheet completeness, dimensional consistency, detail clarity, and code compliance. An architect conducted this formal review, identified no deficiencies, and signed the drawings. Later, a building code violation was discovered that should have been obvious through careful review. What is the architect's professional position?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The architect is protected from discipline because the firm had a formal review policy, which is not a guarantee"
+      },
+      {
+        "id": "b",
+        "text": "The formal review process demonstrates that the architect exercised reasonable professional care, which may not absolve responsibility"
+      },
+      {
+        "id": "c",
+        "text": "The architect may still face discipline if the building code violation was obvious and a reasonable architect should have caught it during review"
+      },
+      {
+        "id": "d",
+        "text": "The architect has no liability if no one else reviewed the drawings, which is a misunderstanding of professional responsibility"
+      }
+    ],
+    "correct_option_id": "c",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "A firm checklist does not replace the architect's responsibility for documents issued under the architect's seal or authorized signature.",
+      "b": "A formal process may help document diligence, but it does not by itself answer whether the sealed work was properly prepared or supervised.",
+      "d": "Responsibility does not disappear because no one else reviewed the drawings.",
+      "correct": "The architect remains responsible for architectural documents issued under the architect's seal or authorized signature. A review checklist may be evidence of diligence, but it does not remove exposure if the signed documents show inadequate preparation, supervision, or review.",
+      "takeaway": "Process documentation helps, but the sealed architectural documents still carry the architect's responsibility."
+    },
+    "explanation": "Source-audited against RA 9266 IRR Sections 20, 23, and 32; a formal checklist is not a substitute for responsibility over signed and sealed documents.",
+    "code_citation": "RA 9266 IRR Sections 20, 23, and 32",
+    "bloom_level": "apply",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited local-first",
+      "batch 116"
+    ],
+    "difficulty": 0.7,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-LAW-017-006"
   }
 }

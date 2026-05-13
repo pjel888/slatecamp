@@ -1,11 +1,80 @@
 {
   "question_id": "02841c55-036f-4a32-8a6d-ef3fd5346e8f",
   "baseline_hash": "sha256:8796fff91164ea159f1ea91c20b678dc41ec1abb056f623aa2b3625f2153ce9c",
-  "reason": "Batch 006 local source audit aligned linked question ALE-PRAC-LAW-017-003 to verified raw-source claims for lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-exposure.",
-  "approved_by": "codex-local-source-audit-batch-006",
-  "approved_at": "2026-05-10T22:30:00+08:00",
+  "action": "replace",
+  "reason": "source-audited-article-batch-116-local-first refreshes this linked question under the current serial production-line baseline using local raw-source evidence for lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-exposure.",
+  "approved_by": "codex-local-source-audit-batch-116",
+  "approved_at": "2026-05-13T21:16:00+08:00",
+  "source_audit_support": {
+    "parent_article_id": "16e972e5-378d-426c-9269-d716204c52de",
+    "parent_article_slug": "lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-exposure",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 9266 IRR refined markdown lines 556-580, 584, 592-598, and 696-702",
+    "checked_markdown_lines": [
+      "RA 9266 IRR refined markdown lines 556-580, 584, 592-598, and 696-702"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "batch116-lea-prac-law-017-ra-9266-irr-1",
+        "locator": "RA 9266 IRR refined markdown lines 556-580, 584, 592-598, and 696-702"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_id": "batch116-lea-prac-law-017-ra-9266-irr-1",
+        "locator": "RA 9266 IRR refined markdown lines 556-580, 584, 592-598, and 696-702"
+      }
+    ],
+    "local_source_safe_action": "Batch 116 rechecked the linked question against local raw source truth and carries forward only source-supported question text, answer key, citation, and rationale.",
+    "batch_id": "source-audited-article-batch-116-local-first",
+    "historical_overlap_treatment": "Older Batch 006 local-first artifacts are treated as historical overlap, not an accepted-current duplicate."
+  },
   "proposed": {
-    "code_citation": "RA 9266 IRR Sections 20, 23, and 32",
-    "explanation": "Source-audited against RA 9266 IRR Sections 20, 23, and 32; the answer turns on personal preparation, immediate supervision, and Section 23 discipline exposure."
+    "text": "An architect received substantially complete architectural drawings prepared by a design consultant. The architect made three minor dimensional adjustments, reviewed the drawings for approximately two hours, and signed them. Does this satisfy the immediate supervision requirement tied to RA 9266 IRR Section 23?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Yes, because the architect made edits to the drawings, demonstrating involvement in the design process"
+      },
+      {
+        "id": "b",
+        "text": "Yes, because two hours of review constitutes reasonable diligence, meeting the minimum standard for supervision"
+      },
+      {
+        "id": "c",
+        "text": "No, making minor edits to substantially complete work prepared by others and minimal review do not constitute the active, continuous involvement required for direct supervision"
+      },
+      {
+        "id": "d",
+        "text": "Only if the architect had approved the design consultant's qualifications, ensuring their competence"
+      }
+    ],
+    "correct_option_id": "c",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Minor edits do not prove the architect personally prepared the work or supervised its preparation.",
+      "b": "The checked source does not create a time-based safe harbor for review before signing.",
+      "d": "The consultant's qualifications do not substitute for the signing architect's own preparation or immediate supervision.",
+      "correct": "Section 23 identifies discipline exposure for signing and sealing work not personally prepared or not executed under immediate supervision. Minor late changes to substantially complete work prepared elsewhere do not show that the signing architect supervised the work as it was executed.",
+      "takeaway": "Minor edits and brief final review are not a substitute for immediate supervision of the work being signed."
+    },
+    "explanation": "Source-audited against RA 9266 IRR Section 23; the scenario lacks personal preparation or immediate supervision of the work being signed.",
+    "code_citation": "RA 9266 IRR Section 23",
+    "bloom_level": "understand",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited local-first",
+      "batch 116"
+    ],
+    "difficulty": 0.5,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-LAW-017-003"
   }
 }

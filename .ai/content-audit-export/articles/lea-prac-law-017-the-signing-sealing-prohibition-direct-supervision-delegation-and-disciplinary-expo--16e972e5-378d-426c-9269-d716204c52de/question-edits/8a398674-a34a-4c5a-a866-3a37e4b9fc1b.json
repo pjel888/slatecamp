@@ -1,11 +1,80 @@
 {
   "question_id": "8a398674-a34a-4c5a-a866-3a37e4b9fc1b",
   "baseline_hash": "sha256:3a2d48a95a9631a06dff6e920061e3442772b0c817610dceb510d4b71fccd876",
-  "reason": "Batch 006 local source audit aligned linked question ALE-PRAC-LAW-017-008 to verified raw-source claims for lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-exposure.",
-  "approved_by": "codex-local-source-audit-batch-006",
-  "approved_at": "2026-05-10T22:30:00+08:00",
+  "action": "replace",
+  "reason": "source-audited-article-batch-116-local-first refreshes this linked question under the current serial production-line baseline using local raw-source evidence for lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-exposure.",
+  "approved_by": "codex-local-source-audit-batch-116",
+  "approved_at": "2026-05-13T21:16:00+08:00",
+  "source_audit_support": {
+    "parent_article_id": "16e972e5-378d-426c-9269-d716204c52de",
+    "parent_article_slug": "lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-exposure",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 9266 IRR refined markdown lines 556-580, 584, 592-598, and 696-702",
+    "checked_markdown_lines": [
+      "RA 9266 IRR refined markdown lines 556-580, 584, 592-598, and 696-702"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "batch116-lea-prac-law-017-ra-9266-irr-1",
+        "locator": "RA 9266 IRR refined markdown lines 556-580, 584, 592-598, and 696-702"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_id": "batch116-lea-prac-law-017-ra-9266-irr-1",
+        "locator": "RA 9266 IRR refined markdown lines 556-580, 584, 592-598, and 696-702"
+      }
+    ],
+    "local_source_safe_action": "Batch 116 rechecked the linked question against local raw source truth and carries forward only source-supported question text, answer key, citation, and rationale.",
+    "batch_id": "source-audited-article-batch-116-local-first",
+    "historical_overlap_treatment": "Older Batch 006 local-first artifacts are treated as historical overlap, not an accepted-current duplicate."
+  },
   "proposed": {
-    "code_citation": "RA 9266 IRR Sections 20, 23, and 32",
-    "explanation": "Source-audited against RA 9266 IRR Sections 20, 23, and 32; the answer turns on personal preparation, immediate supervision, and Section 23 discipline exposure."
+    "text": "An architect received a complaint to the Board of Architecture alleging that the architect signed drawings not prepared under direct supervision. The architect produced emails and meeting notes documenting participation in design meetings, marked-up drawing sets showing review comments, and a design development schedule. What is the evidentiary value of these documents?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The documents are irrelevant; the Board assumes violation once the complaint is filed, regardless of evidence."
+      },
+      {
+        "id": "b",
+        "text": "The documents provide important evidence of active involvement and direct supervision, supporting the architect's defense"
+      },
+      {
+        "id": "c",
+        "text": "The documents create a presumption of guilt that the architect must overcome with testimony, which is a challenging task."
+      },
+      {
+        "id": "d",
+        "text": "The documents protect the architect from discipline but do not prevent the complaint investigation from proceeding."
+      }
+    ],
+    "correct_option_id": "b",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "The checked source requires notice and hearing for Section 23 discipline; it does not create automatic guilt on complaint filing.",
+      "c": "Documentation of participation supports supervision rather than creating a presumption of guilt.",
+      "d": "Documentation may support the defense, but it does not make the complaint process irrelevant.",
+      "correct": "Emails, meeting notes, markups, and schedules can help show that the architect supervised the work as it developed. That evidence is relevant because Section 23 turns on whether the documents were personally prepared or executed under immediate supervision.",
+      "takeaway": "Good supervision records help connect the seal to actual professional control over document preparation."
+    },
+    "explanation": "Source-audited against RA 9266 IRR Section 23; documentation matters because it can show immediate supervision rather than merely final signing.",
+    "code_citation": "RA 9266 IRR Section 23",
+    "bloom_level": "apply",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited local-first",
+      "batch 116"
+    ],
+    "difficulty": 0.7,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-LAW-017-008"
   }
 }

@@ -1,12 +1,80 @@
 {
   "question_id": "dd8040c1-44b2-4bf3-b907-a55195638c7e",
   "baseline_hash": "sha256:3a2addd22d74eedc8556ba95db0bd661c582631c5fcbbfff895b243609d21a23",
-  "reason": "Batch 006 local source audit aligned linked question ALE-PRAC-LAW-017-005 to verified raw-source claims for lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-exposure.",
-  "approved_by": "codex-local-source-audit-batch-006",
-  "approved_at": "2026-05-10T22:30:00+08:00",
+  "action": "replace",
+  "reason": "source-audited-article-batch-116-local-first refreshes this linked question under the current serial production-line baseline using local raw-source evidence for lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-exposure.",
+  "approved_by": "codex-local-source-audit-batch-116",
+  "approved_at": "2026-05-13T21:16:00+08:00",
+  "source_audit_support": {
+    "parent_article_id": "16e972e5-378d-426c-9269-d716204c52de",
+    "parent_article_slug": "lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-exposure",
+    "answer_key_fields_changed": false,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 9266 IRR refined markdown lines 556-580, 584, 592-598, and 696-702",
+    "checked_markdown_lines": [
+      "RA 9266 IRR refined markdown lines 556-580, 584, 592-598, and 696-702"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "batch116-lea-prac-law-017-ra-9266-irr-1",
+        "locator": "RA 9266 IRR refined markdown lines 556-580, 584, 592-598, and 696-702"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_id": "batch116-lea-prac-law-017-ra-9266-irr-1",
+        "locator": "RA 9266 IRR refined markdown lines 556-580, 584, 592-598, and 696-702"
+      }
+    ],
+    "local_source_safe_action": "Batch 116 rechecked the linked question against local raw source truth and carries forward only source-supported question text, answer key, citation, and rationale.",
+    "batch_id": "source-audited-article-batch-116-local-first",
+    "historical_overlap_treatment": "Older Batch 006 local-first artifacts are treated as historical overlap, not an accepted-current duplicate."
+  },
   "proposed": {
+    "text": "An architect signed and sealed architectural drawings prepared by a consulting firm, making only minor modifications to adapt the design to a different site. Later, construction problems occurred because the building was not properly adapted for the site. What is the architect's signing/sealing exposure?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The architect is not liable because the design was prepared by the consulting firm, which should have ensured site compatibility"
+      },
+      {
+        "id": "b",
+        "text": "The architect is liable; the signature certifies personal responsibility for the document regardless of who prepared it"
+      },
+      {
+        "id": "c",
+        "text": "The architect's liability is limited to the portion of the document the architect personally modified, provided those modifications were substantial"
+      },
+      {
+        "id": "d",
+        "text": "The architect is liable only if the modifications were inadequate to address site-specific concerns, which must be proven by the consulting firm"
+      }
+    ],
+    "correct_option_id": "b",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "Signing and sealing the set prevents the architect from treating the consultant's authorship as a complete shield.",
+      "c": "Section 20 and Section 32 tie responsibility to architectural documents issued under the architect's seal or authorized signature, not only to visible minor edits.",
+      "d": "The checked source does not shift the burden to the consulting firm as the condition for the signing architect's exposure.",
+      "correct": "RA 9266 IRR Section 20 and Section 32 tie responsibility to architectural documents issued under the architect's seal or authorized signature. Section 23 adds discipline exposure if the documents were not personally prepared or executed under immediate supervision.",
+      "takeaway": "A seal on borrowed drawings carries real responsibility; minor adaptation does not erase Section 23 exposure."
+    },
+    "explanation": "Corrected the sealing typo and aligned the exposure to RA 9266 IRR Sections 20, 23, and 32: the seal/signature carries responsibility and Section 23 risk if the work was not personally prepared or immediately supervised.",
     "code_citation": "RA 9266 IRR Sections 20, 23, and 32",
-    "explanation": "Corrected the sealing typo and aligned the exposure to RA 9266 Sections 20, 23, and 32: the seal/signature carries responsibility and Section 23 risk if the work was not personally prepared or immediately supervised.",
-    "text": "An architect signed and sealed architectural drawings prepared by a consulting firm, making only minor modifications to adapt the design to a different site. Later, construction problems occurred because the building was not properly adapted for the site. What is the architect's signing/sealing exposure?"
+    "bloom_level": "understand",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited local-first",
+      "batch 116"
+    ],
+    "difficulty": 0.5,
+    "is_assessment": false,
+    "model_id": "ALE-PRAC-LAW-017-005"
   }
 }

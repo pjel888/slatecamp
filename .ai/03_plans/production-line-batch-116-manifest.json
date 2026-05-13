@@ -1,0 +1,106 @@
+{
+  "batch_id": "source-audited-article-batch-116-local-first",
+  "batch_number": "116",
+  "reserved_at": "2026-05-13T21:16:00+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "branch": "3dlab-gray-viewport-bg",
+  "baseline_commit": "e1158c709",
+  "previous_batch": {
+    "batch_number": "115",
+    "commit": "2df2369f9",
+    "status": "accepted_and_pushed_by_user_context"
+  },
+  "current_head_at_manifest_generation": "e1158c709",
+  "manifest_status": "pass",
+  "selection_rule": "Next eligible fixed/manifest article after accepted Batches 087-115; selected LAW-017 only. LAW-014 and LAW-015 remain source-gap ineligible until a local RA 8293/IP Code raw source and linked question edits are added. No duplicate article IDs were selected from accepted Batches 087-115.",
+  "inherited_blocker_status": {
+    "status": "clear_for_local_first_batch_116",
+    "notes": [
+      "Unrelated stairway, 3D, marketing, docs, skills, and performance work remains out of scope and must not be staged in this content batch.",
+      "Current local HEAD at artifact generation is e1158c709; user-provided accepted Batch 115 baseline is 2df2369f9.",
+      "Read-only rolling audit reports and content-roundtrip temp run directories remain out of staging scope."
+    ]
+  },
+  "article_clusters": [
+    "RA 9266 signing/sealing prohibition, immediate supervision, delegation, architect-of-record responsibility, and Section 23 discipline exposure"
+  ],
+  "counts": {
+    "articles": 1,
+    "linked_questions_expected": 10,
+    "question_edits_expected": 10,
+    "source_safe_real_world_scenarios_expected": 1
+  },
+  "selected_article_uuids_slugs": [
+    {
+      "article_id": "16e972e5-378d-426c-9269-d716204c52de",
+      "slug": "lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-exposure",
+      "title": "The Signing Sealing Prohibition Direct Supervision Delegation",
+      "folder": ".ai/content-audit-export/articles/lea-prac-law-017-the-signing-sealing-prohibition-direct-supervision-delegation-and-disciplinary-expo--16e972e5-378d-426c-9269-d716204c52de"
+    }
+  ],
+  "prior_batch_exclusion_check": {
+    "status": "pass",
+    "checked_batches": "087-115",
+    "duplicate_hits": []
+  },
+  "source_gap_ineligible": [
+    {
+      "article_id": "6ec9b40c-a495-4a7a-8c51-bd0857fe69b4",
+      "slug": "lea-prac-law-014-intellectual-property-code-ra-8293-applied-to-architectural-works",
+      "status": "source_gap_ineligible",
+      "reason": "No local RA 8293/IP Code raw source was found under vitruvius-connection/001_Raw-Source-Layer; sources.json has source_count 0 and no question-edits are present."
+    },
+    {
+      "article_id": "2e78ff36-673b-4de5-b01d-9cdc6bf31589",
+      "slug": "lea-prac-law-015-copyright-duration-transfer-moral-rights-and-infringement-remedies",
+      "status": "source_gap_ineligible",
+      "reason": "No local RA 8293/IP Code raw source was found under vitruvius-connection/001_Raw-Source-Layer; sources.json has source_count 0 and no question-edits are present."
+    }
+  ],
+  "historical_reaudit_overlap_acknowledgment": {
+    "status": "recorded_not_current_accepted_duplicate",
+    "overlap_artifacts": [
+      "LAW-017 has historical Batch 006 local-first source-audited artifacts.",
+      "The historical Batch 006 artifact is treated as overlap only; LAW-017 does not appear in accepted Batches 087-115.",
+      "Batch 116 refreshes the cluster under the current serial production-line baseline and records current source hashes against local raw PDFs."
+    ]
+  },
+  "validation_gates": [
+    "compose/diff/validate strict 1/1",
+    "UI-block edit validation",
+    "scoped JSON parse",
+    "placeholder/internal-note/source-gap scan",
+    "source hash checks",
+    "linked-question/question-edit count checks",
+    "stale compose-error scan",
+    "prior-batch duplicate selection scan",
+    "targeted content-audit tests",
+    "scoped git diff --check",
+    "git diff --cached --check before commit"
+  ],
+  "forbidden_actions": {
+    "supabase_push": "not_performed",
+    "deploy": "not_performed",
+    "production_db_mutation": "not_performed",
+    "merge_to_main": "not_performed"
+  },
+  "git_commit_push_state": {
+    "status": "blocked_live_index_and_network_push",
+    "expected_commit_message": "chore(content): accept source-audited batch 116",
+    "commit_created": false,
+    "push_performed": false,
+    "attempted_command": "git add -- <Batch 116 intended paths>",
+    "failure": "fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted",
+    "temporary_index_gate": {
+      "status": "pass",
+      "command": "GIT_INDEX_FILE=/private/tmp/slatecamp-batch116.index GIT_OBJECT_DIRECTORY=/private/tmp/slatecamp-batch116-objects GIT_ALTERNATE_OBJECT_DIRECTORIES=/Users/philiplewis/slatecamp/.git/objects git diff --cached --check",
+      "temporary_commit_object_created": true
+    },
+    "network_reachability": {
+      "status": "blocked_dns_resolution",
+      "command": "git push origin <temporary-commit>:refs/heads/3dlab-gray-viewport-bg",
+      "failure": "fatal: unable to access 'https://github.com/pjel888/slatecamp.git/': Could not resolve host: github.com"
+    }
+  },
+  "freeze_readiness_report_path": ".ai/03_plans/source-audited-local-first-freeze-readiness-report.md"
+}
