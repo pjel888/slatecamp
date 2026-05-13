@@ -1,0 +1,102 @@
+# Batch 128 Git Handoff Stage List
+
+Generated: 2026-05-14T10:45:00.000+08:00
+Status: passed_local_validation_git_index_blocked_handoff
+
+Codex stage attempt blocked: fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted.
+
+Stage exactly the following paths for Batch 128. Use git add -f for ignored vitruvius source-map artifacts if needed.
+
+- `.ai/03_plans/production-line-batch-128-manifest.json`
+- `.ai/03_plans/batch-128-independent-quality-review.md`
+- `.ai/03_plans/batch-128-git-handoff-stage-list.md`
+- `.ai/03_plans/source-audited-production-line-coordination.md`
+- `.ai/03_plans/source-audited-local-first-batches-handoff.md`
+- `.ai/03_plans/source-audited-local-first-freeze-readiness-report.md`
+- `.ai/content-audit-export/source-audited-article-batch-128-local-first-report.md`
+- `.ai/content-audit-export/source-audited-article-batch-128-local-first-ledger.json`
+- `.ai/content-audit-export/source-audited-article-batch-128-local-first-scoped-checks.json`
+- `.ai/content-audit-export/ui-block-edit-validation.json`
+- `.ai/content-audit-export/sync-state.json`
+- `vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-128/lea-hist-014-04-core-concept-frank-lloyd-wright.source-capture.md`
+- `vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-128/lea-hist-014-04-core-concept-frank-lloyd-wright.refined.md`
+- `.ai/content-audit-export/articles/lea-hist-014-04-core-concept--af09c106-1da0-46e4-8081-bd3b5e393428/article-metadata.json`
+- `.ai/content-audit-export/articles/lea-hist-014-04-core-concept--af09c106-1da0-46e4-8081-bd3b5e393428/candidate.md`
+- `.ai/content-audit-export/articles/lea-hist-014-04-core-concept--af09c106-1da0-46e4-8081-bd3b5e393428/compose-report.json`
+- `.ai/content-audit-export/articles/lea-hist-014-04-core-concept--af09c106-1da0-46e4-8081-bd3b5e393428/diff-report.json`
+- `.ai/content-audit-export/articles/lea-hist-014-04-core-concept--af09c106-1da0-46e4-8081-bd3b5e393428/diff-report.md`
+- `.ai/content-audit-export/articles/lea-hist-014-04-core-concept--af09c106-1da0-46e4-8081-bd3b5e393428/linked-questions.json`
+- `.ai/content-audit-export/articles/lea-hist-014-04-core-concept--af09c106-1da0-46e4-8081-bd3b5e393428/normalized.md`
+- `.ai/content-audit-export/articles/lea-hist-014-04-core-concept--af09c106-1da0-46e4-8081-bd3b5e393428/parser-errors.json`
+- `.ai/content-audit-export/articles/lea-hist-014-04-core-concept--af09c106-1da0-46e4-8081-bd3b5e393428/source-audit-evidence.json`
+- `.ai/content-audit-export/articles/lea-hist-014-04-core-concept--af09c106-1da0-46e4-8081-bd3b5e393428/sources.json`
+- `.ai/content-audit-export/articles/lea-hist-014-04-core-concept--af09c106-1da0-46e4-8081-bd3b5e393428/ui-block-edit-validation.json`
+- `.ai/content-audit-export/articles/lea-hist-014-04-core-concept--af09c106-1da0-46e4-8081-bd3b5e393428/ui-block-edits.json`
+- `.ai/content-audit-export/articles/lea-hist-014-04-core-concept--af09c106-1da0-46e4-8081-bd3b5e393428/ui-blocks.json`
+- `.ai/content-audit-export/articles/lea-hist-014-04-core-concept--af09c106-1da0-46e4-8081-bd3b5e393428/compose-error.json`
+- `vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-128/lea-hist-014-05-core-concept-international-style-modernism-in-america.source-capture.md`
+- `vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-128/lea-hist-014-05-core-concept-international-style-modernism-in-america.refined.md`
+- `.ai/content-audit-export/articles/lea-hist-014-05-core-concept--db85fd0a-60fd-4617-9364-f0d63567acce/article-metadata.json`
+- `.ai/content-audit-export/articles/lea-hist-014-05-core-concept--db85fd0a-60fd-4617-9364-f0d63567acce/candidate.md`
+- `.ai/content-audit-export/articles/lea-hist-014-05-core-concept--db85fd0a-60fd-4617-9364-f0d63567acce/compose-report.json`
+- `.ai/content-audit-export/articles/lea-hist-014-05-core-concept--db85fd0a-60fd-4617-9364-f0d63567acce/diff-report.json`
+- `.ai/content-audit-export/articles/lea-hist-014-05-core-concept--db85fd0a-60fd-4617-9364-f0d63567acce/diff-report.md`
+- `.ai/content-audit-export/articles/lea-hist-014-05-core-concept--db85fd0a-60fd-4617-9364-f0d63567acce/linked-questions.json`
+- `.ai/content-audit-export/articles/lea-hist-014-05-core-concept--db85fd0a-60fd-4617-9364-f0d63567acce/normalized.md`
+- `.ai/content-audit-export/articles/lea-hist-014-05-core-concept--db85fd0a-60fd-4617-9364-f0d63567acce/parser-errors.json`
+- `.ai/content-audit-export/articles/lea-hist-014-05-core-concept--db85fd0a-60fd-4617-9364-f0d63567acce/source-audit-evidence.json`
+- `.ai/content-audit-export/articles/lea-hist-014-05-core-concept--db85fd0a-60fd-4617-9364-f0d63567acce/sources.json`
+- `.ai/content-audit-export/articles/lea-hist-014-05-core-concept--db85fd0a-60fd-4617-9364-f0d63567acce/ui-block-edit-validation.json`
+- `.ai/content-audit-export/articles/lea-hist-014-05-core-concept--db85fd0a-60fd-4617-9364-f0d63567acce/ui-block-edits.json`
+- `.ai/content-audit-export/articles/lea-hist-014-05-core-concept--db85fd0a-60fd-4617-9364-f0d63567acce/ui-blocks.json`
+- `.ai/content-audit-export/articles/lea-hist-014-05-core-concept--db85fd0a-60fd-4617-9364-f0d63567acce/compose-error.json`
+- `vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-128/lea-hist-015-01-core-concept-indigenous-australian-architecture.source-capture.md`
+- `vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-128/lea-hist-015-01-core-concept-indigenous-australian-architecture.refined.md`
+- `.ai/content-audit-export/articles/lea-hist-015-01-core-concept--e714513f-a626-466d-b3e2-a70a2b182c1a/article-metadata.json`
+- `.ai/content-audit-export/articles/lea-hist-015-01-core-concept--e714513f-a626-466d-b3e2-a70a2b182c1a/candidate.md`
+- `.ai/content-audit-export/articles/lea-hist-015-01-core-concept--e714513f-a626-466d-b3e2-a70a2b182c1a/compose-report.json`
+- `.ai/content-audit-export/articles/lea-hist-015-01-core-concept--e714513f-a626-466d-b3e2-a70a2b182c1a/diff-report.json`
+- `.ai/content-audit-export/articles/lea-hist-015-01-core-concept--e714513f-a626-466d-b3e2-a70a2b182c1a/diff-report.md`
+- `.ai/content-audit-export/articles/lea-hist-015-01-core-concept--e714513f-a626-466d-b3e2-a70a2b182c1a/linked-questions.json`
+- `.ai/content-audit-export/articles/lea-hist-015-01-core-concept--e714513f-a626-466d-b3e2-a70a2b182c1a/normalized.md`
+- `.ai/content-audit-export/articles/lea-hist-015-01-core-concept--e714513f-a626-466d-b3e2-a70a2b182c1a/parser-errors.json`
+- `.ai/content-audit-export/articles/lea-hist-015-01-core-concept--e714513f-a626-466d-b3e2-a70a2b182c1a/source-audit-evidence.json`
+- `.ai/content-audit-export/articles/lea-hist-015-01-core-concept--e714513f-a626-466d-b3e2-a70a2b182c1a/sources.json`
+- `.ai/content-audit-export/articles/lea-hist-015-01-core-concept--e714513f-a626-466d-b3e2-a70a2b182c1a/ui-block-edit-validation.json`
+- `.ai/content-audit-export/articles/lea-hist-015-01-core-concept--e714513f-a626-466d-b3e2-a70a2b182c1a/ui-block-edits.json`
+- `.ai/content-audit-export/articles/lea-hist-015-01-core-concept--e714513f-a626-466d-b3e2-a70a2b182c1a/ui-blocks.json`
+- `.ai/content-audit-export/articles/lea-hist-015-01-core-concept--e714513f-a626-466d-b3e2-a70a2b182c1a/compose-error.json`
+- `vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-128/lea-hist-015-02-core-concept-the-sydney-opera-house.source-capture.md`
+- `vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-128/lea-hist-015-02-core-concept-the-sydney-opera-house.refined.md`
+- `.ai/content-audit-export/articles/lea-hist-015-02-core-concept--59ea9844-0c75-4f39-873f-7cb83a14a924/article-metadata.json`
+- `.ai/content-audit-export/articles/lea-hist-015-02-core-concept--59ea9844-0c75-4f39-873f-7cb83a14a924/candidate.md`
+- `.ai/content-audit-export/articles/lea-hist-015-02-core-concept--59ea9844-0c75-4f39-873f-7cb83a14a924/compose-report.json`
+- `.ai/content-audit-export/articles/lea-hist-015-02-core-concept--59ea9844-0c75-4f39-873f-7cb83a14a924/diff-report.json`
+- `.ai/content-audit-export/articles/lea-hist-015-02-core-concept--59ea9844-0c75-4f39-873f-7cb83a14a924/diff-report.md`
+- `.ai/content-audit-export/articles/lea-hist-015-02-core-concept--59ea9844-0c75-4f39-873f-7cb83a14a924/linked-questions.json`
+- `.ai/content-audit-export/articles/lea-hist-015-02-core-concept--59ea9844-0c75-4f39-873f-7cb83a14a924/normalized.md`
+- `.ai/content-audit-export/articles/lea-hist-015-02-core-concept--59ea9844-0c75-4f39-873f-7cb83a14a924/parser-errors.json`
+- `.ai/content-audit-export/articles/lea-hist-015-02-core-concept--59ea9844-0c75-4f39-873f-7cb83a14a924/source-audit-evidence.json`
+- `.ai/content-audit-export/articles/lea-hist-015-02-core-concept--59ea9844-0c75-4f39-873f-7cb83a14a924/sources.json`
+- `.ai/content-audit-export/articles/lea-hist-015-02-core-concept--59ea9844-0c75-4f39-873f-7cb83a14a924/ui-block-edit-validation.json`
+- `.ai/content-audit-export/articles/lea-hist-015-02-core-concept--59ea9844-0c75-4f39-873f-7cb83a14a924/ui-block-edits.json`
+- `.ai/content-audit-export/articles/lea-hist-015-02-core-concept--59ea9844-0c75-4f39-873f-7cb83a14a924/ui-blocks.json`
+- `.ai/content-audit-export/articles/lea-hist-015-02-core-concept--59ea9844-0c75-4f39-873f-7cb83a14a924/compose-error.json`
+- `vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-128/lea-hist-015-03-core-concept-maori-architecture-of-aotearoa.source-capture.md`
+- `vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-128/lea-hist-015-03-core-concept-maori-architecture-of-aotearoa.refined.md`
+- `.ai/content-audit-export/articles/lea-hist-015-03-core-concept--6fd0cdaa-55ed-4847-a740-2779ac5ddded/article-metadata.json`
+- `.ai/content-audit-export/articles/lea-hist-015-03-core-concept--6fd0cdaa-55ed-4847-a740-2779ac5ddded/candidate.md`
+- `.ai/content-audit-export/articles/lea-hist-015-03-core-concept--6fd0cdaa-55ed-4847-a740-2779ac5ddded/compose-report.json`
+- `.ai/content-audit-export/articles/lea-hist-015-03-core-concept--6fd0cdaa-55ed-4847-a740-2779ac5ddded/diff-report.json`
+- `.ai/content-audit-export/articles/lea-hist-015-03-core-concept--6fd0cdaa-55ed-4847-a740-2779ac5ddded/diff-report.md`
+- `.ai/content-audit-export/articles/lea-hist-015-03-core-concept--6fd0cdaa-55ed-4847-a740-2779ac5ddded/linked-questions.json`
+- `.ai/content-audit-export/articles/lea-hist-015-03-core-concept--6fd0cdaa-55ed-4847-a740-2779ac5ddded/normalized.md`
+- `.ai/content-audit-export/articles/lea-hist-015-03-core-concept--6fd0cdaa-55ed-4847-a740-2779ac5ddded/parser-errors.json`
+- `.ai/content-audit-export/articles/lea-hist-015-03-core-concept--6fd0cdaa-55ed-4847-a740-2779ac5ddded/source-audit-evidence.json`
+- `.ai/content-audit-export/articles/lea-hist-015-03-core-concept--6fd0cdaa-55ed-4847-a740-2779ac5ddded/sources.json`
+- `.ai/content-audit-export/articles/lea-hist-015-03-core-concept--6fd0cdaa-55ed-4847-a740-2779ac5ddded/ui-block-edit-validation.json`
+- `.ai/content-audit-export/articles/lea-hist-015-03-core-concept--6fd0cdaa-55ed-4847-a740-2779ac5ddded/ui-block-edits.json`
+- `.ai/content-audit-export/articles/lea-hist-015-03-core-concept--6fd0cdaa-55ed-4847-a740-2779ac5ddded/ui-blocks.json`
+- `.ai/content-audit-export/articles/lea-hist-015-03-core-concept--6fd0cdaa-55ed-4847-a740-2779ac5ddded/compose-error.json`
+
+Do not stage unrelated dirty .ai/00_performance, .ai/00_system/DOCS_SOURCE_OF_TRUTH.md, .ai/README.md, .hermes/skills, .ai/00_system/philip-ux-ui-calibration.md, or unrelated content-roundtrip run directories.

@@ -1,3 +1,13 @@
+## Batch 128 Freeze Readiness - 2026-05-14
+
+- Status: pass local-first; live git finalization blocked by .git/index.lock permissions.
+- Source readiness: official/authoritative URLs captured locally and refined for all five selected article clusters.
+- Question readiness: 57/57 linked question edits generated and applied locally.
+- Known source-sensitive corrections: Wright ornament/Fallingwater/Guggenheim guardrails, International Style versus broader American modernism, Indigenous Australian temporary-only and pilotis overclaims, Sydney Opera House spherical-solution chronology, and Maori colonization/contemporary bicultural design guardrails.
+- Freeze condition: local validation gates passed; acceptance still requires Hermes to stage only Batch 128 paths, run cached diff check, commit, and push.
+
+---
+
 ## Batch 127 Freeze Readiness Update - 2026-05-13T19:05:15.575Z
 
 Batch 127 is not an exhaustion/freeze report. The next residual queue advanced through `lea-hist-014-03-core-concept` with 5/5 sourceable clusters and 53 linked-question edits.

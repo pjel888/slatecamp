@@ -1,150 +1,59 @@
-
+# Frank Lloyd Wright
 
 ## Board Exam Quick Check
 
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+For Wright questions, classify the design logic before the building name: organic architecture, Prairie horizontality, Fallingwater cantilevers, Usonian economy, or Guggenheim circulation. The safest answer links form, site, structure, material, and human movement.
 
-**Common mistake:** treating a familiar keyword in **Lea Hist 014 04 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
-
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
-## Learning Goal
+Frank Lloyd Wright is tested as the major American architect of organic architecture. The UNESCO Wright listing supports the core exam cue: organic architecture uses open planning, a blurred inside-outside boundary, and innovative modern materials such as steel and concrete. Wright's work is not just a style label. It is a design method that ties a building to its site, program, construction, furniture, and sequence of use.
 
-Identify Frank Lloyd Wright's organic architecture philosophy — building grows from site, open plan, horizontal emphasis, natural materials, destruction of the box — and recognize his major works (Fallingwater, Robie House, Guggenheim Museum, Taliesin) by their spatial innovation.
+Prairie houses such as Robie House emphasize long horizontal lines, low roofs, broad overhangs, open interiors, hearth-centered planning, and a close connection to landscape. Fallingwater is the high-yield organic-architecture example because the house is cantilevered over the waterfall and uses stone, concrete, terraces, and circulation to make site and dwelling inseparable. Usonian houses extend Wright's interest in economical, middle-class domestic design. The Guggenheim Museum turns circulation into form through a continuous spiral ramp.
+
 ## Core Concept
 
-**Frank Lloyd Wright** is America's most significant architect. He believed architecture should grow from its site—"organic" means the building is of the land, not imposed upon it. This contrasts sharply with European modernism (International Style), which treats buildings as objects placed anywhere. Wright said: every building must respond to its specific landscape, climate, and human needs.
+Organic architecture does not mean a building merely looks natural. It means the parts of the design are coordinated so that site, plan, structure, material, furniture, and user experience feel like one system. In an exam item, choose the answer that explains relationship and integration, not the answer that only names decoration or a historic period.
 
+Wright also differs from a strict International Style reading. He used modern construction, but he did not reduce architecture to anonymous glass boxes. He favored local site response, warm materials, human scale, built-in furniture, and spatial continuity. Ornament is best understood as integrated pattern or material expression, not as applied decoration.
 
-[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-hist-014-04-core-concept", layout="single", type="image", status="placeholder", alt="View of Fallingwater (Mill Run, PA, 1935–1939, Frank Lloyd Wright), showing the cantilevered concrete terraces extending over the waterfall, the horizontal emphasis, natural stone piers, and the complete integration of building with site.", caption="Fallingwater — Wright's Organic Architecture", suggestedAsset="Architectural reference image or diagram", placementIntent="Visual reference for architectural period/typology"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+## Key Exam Anchors
 
+| Anchor | Source-safe recognition cue | LEA use |
+| --- | --- | --- |
+| Organic architecture | Site, open plan, inside-outside continuity, and modern materials working together | Use for Wright's broad design philosophy. |
+| Prairie style / Robie House | Horizontal lines, open interior, hearth, overhangs, landscape relation | Use for early domestic work and American regional modernism. |
+| Fallingwater | Reinforced-concrete cantilevers over a waterfall | Use for site integration and expressive structure. |
+| Usonian house | Economical domestic design for middle-class American life | Use for democratized housing and compact planning. |
+| Guggenheim Museum | Spiral ramp shaping circulation and viewing | Use for movement becoming architectural form. |
 
-[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Memory aid: **"Wright = Site + Material + Open Plan + Horizontal"** — organic architecture grows from place, not imposed upon it; every building is unique to its location.
-[/SLATECAMP_UI_BLOCK]
+## Real World Scenario
 
-Wright's design principles are clear: **open plan** (remove interior walls, create flowing spaces), **horizontal emphasis** (echoing landscape lines), **integration of materials** (expose wood, stone, brick), **elimination of applied ornament** (form comes from structure and material, not decoration), and **human scale** (spaces fit the body, not the abstract grid). His buildings are never neutral—they are charged with place and purpose.
+A design reviewer comparing a creekside house, a Prairie-style residence, a compact Usonian plan, and a spiral museum should not stop at "Wright used horizontals." The review should ask how the site is entered, how interior and exterior connect, how structure expresses the concept, and whether furniture, material, and circulation are designed as one system.
 
-[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Wright's "elimination of ornament" does NOT mean bare minimalism. He rejected applied decoration (ornament added to disguise form). He embraced integral ornament: wood grain patterns, masonry joint rhythms, geometric window divisions that express structure and material—ornament that grows from the building, not added to it.
-[/SLATECAMP_UI_BLOCK]
+## How It Is Tested
 
-**Prairie Houses** (1900–1915) demonstrate these principles. The **Robie House** (Chicago, 1910) has a low roof, deep eaves, and bands of casement windows that blur the boundary between interior and exterior. Walls are brick (local material), interior spaces flow into each other. The house sits on a Chicago lot as if it grew there. **Fallingwater** (Bear Run, Pennsylvania, completed 1939—main structure 1937, guest house 1939) is his masterwork: reinforced concrete cantilevered over a waterfall. The house and waterfall are not separate—they are integrated. The house is about falling water; every element responds to that reality.
+Expect direct architect identification questions: organic architecture, Fallingwater, Robie House, and Guggenheim usually point to Wright.
 
-[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: Critical distinction: Wright is modernist but opposed to European International Style. Le Corbusier and Mies van der Rohe pursued universal design principles (buildings work anywhere); Wright pursued site-specific design (buildings must be where they are). Both are modernist, but Wright's philosophy is organic (place) while European modernism is abstract (universal).
-[/SLATECAMP_UI_BLOCK]
+Expect distinction questions: Wright's modernism is warmer, more site-specific, and more integrated than a generic International Style glass-box answer.
 
-**The Guggenheim Museum** (New York, 1956–1959, completed posthumously) breaks every Beaux-Arts and modernist convention. It is a spiral ramp, not a box. You ascend the ramp viewing art, the architecture itself becomes the experience. Wright rejected the static gallery—he demanded movement and spatial drama.
-
-**Usonian houses** (1930s–1950s) were Wright's response to American housing crisis: affordable, beautiful houses for ordinary Americans. Open plan, minimal materials, integrated with landscape, houses cost $5,000–$10,000 in Depression era. They democratized modernism; they proved good architecture was not exclusive to the wealthy.
-
-
-[SLATECAMP_UI_BLOCK:ui_0005 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-hist-014-04-core-concept", layout="single", type="image", status="placeholder", alt="View of the Frederick C. Robie House (Chicago, 1908–1910, Frank Lloyd Wright), showing the strong horizontal lines, low-pitched hip roof with wide overhanging eaves, ribbon windows, and the open interior plan destroying the traditional box.", caption="Robie House — Wright's Prairie Style", suggestedAsset="Architectural reference image or diagram", placementIntent="Visual reference for architectural period/typology"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-
-## Key Facts and Testable Items
-
-[SLATECAMP_UI_BLOCK:ui_0006 component="WikiExamTable" status="preserved"]
-Extracted summary:
-- Props: headers="{[\"Building\", \"Architect\", \"Year\", \"Location\", \"Type\", \"Significance\"]}", rows="{[['[\"**Larkin Administration Building**\", \"Frank Lloyd Wright\", \"1906\", \"Buffalo\", \"Commercial\", \"Open plan; suspended balconies; daylit interior; no external ornament\"]', '[\"**Robie House**\", \"Frank Lloyd Wright\", \"1910\", \"Chicago\", \"Residential\", \"Prairie House; horizontal emphasis; open plan; bands of casements\"]', '[\"**Fallingwater**\", \"Frank Lloyd Wright\", \"1939\", \"Bear Run, PA\", \"Residential\", \"Cantilevered concrete; integration with waterfall; organic architecture\"]', '[\"**Taliesin West**\", \"Frank Lloyd Wright\", \"1937\", \"Phoenix\", \"Residential/School\", \"Desert design; boards and battens; linear plan following terrain\"]', '[\"**Usonian Homes**\", \"Frank Lloyd Wright\", \"1936–1950s\", \"Various\", \"Residential\", \"Affordable; open plan; integrated landscape; modular design\"]', '[\"**Guggenheim Museum**\", \"Frank Lloyd Wright\", \"1956-1959\", \"New York\", \"Institutional\", \"Spiral ramp; sculptural concrete; rejected static gallery model; 16-year design/build process\"]']]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-## How It's Tested on the LEA
-
-[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Pattern 1: Organic Architecture Identification** Questions present photographs or plans of buildings and ask you to identify Wright's principles: open plan, horizontal emphasis, material integration, landscape response. You explain why a building is "organic"—how its form responds to site, how spaces flow, how materials express their nature.
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Pattern 2: Fallingwater Analysis** This building is tested obsessively. Questions ask about the cantilevers (why?—to emphasize the overhang and relationship to waterfall), the materials (reinforced concrete, stone, wood—each chosen for specific reasons), the open plan (how spaces relate to views of water and landscape). You explain why it is organic: the building IS about the waterfall, not merely placed above it.
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Pattern 3: Wright vs. European Modernism** Questions compare Wright to Le Corbusier, Mies van der Rohe, or other European modernists. Wright believed buildings must respond to place and culture; Europeans pursued universal design principles. You distinguish Wright's philosophy: he is modernist but anti-International Style, he is American without nationalism, he is humanist.
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: **Pattern 4: Usonian Housing** Questions ask about Wright's approach to affordable housing: open plan (no expensive walls), minimal materials (local stone, wood), integration with site, modular design, built-in furniture. You explain how Usonian houses made modernism democratic and accessible.
-[/SLATECAMP_UI_BLOCK]
-
-[SLATECAMP_UI_BLOCK:ui_0011 component="Callout" status="preserved"]
-Extracted summary:
-- Props: (none)
-- Text: The LEA tests your knowledge of **Frank Lloyd Wright** (1867–1959), the most tested architect in Philippine LEA exams. Questions cover his design principles (**organic architecture**, integration with landscape, open plan), major works (**Prairie Houses**, **Fallingwater**, **The Guggenheim Museum**, **Usonian houses**), and his influence on modernism. You must understand how Wright rejected European modernism and European Beaux-Arts, and how he created a distinctly American architectural philos
-[/SLATECAMP_UI_BLOCK]
+Expect concept questions: open plan is not random openness. It is organized spatial flow with zones linked by movement, views, and material continuity.
 
 ## Common Mistakes
 
-[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
-Extracted summary:
-- Props: mistake="Saying Wright rejected ornament entirely", correction="Students say Wright stripped buildings to bare structure. Wrong. He rejected *applied* ornament—decoration added to hide or disguise form. He *loved* ornament that expressed structure and material: the rhythm of wood boards, the pattern of masonry joints, the geometric detail of windows.", context="His ornament is integral, not applied."
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+Do not say Wright rejected ornament entirely. The safer claim is that he rejected unrelated applied ornament and favored integrated pattern, material, and built-in design.
 
-[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeCard" status="preserved"]
-Extracted summary:
-- Props: mistake="Confusing Wright with European modernism", correction="Students group Wright with Le Corbusier as \\", both=true, modernists=true, They=true, are=true, opposed=true, Le=true, Corbusier=true, pursued=true, universal=true, design=true
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+Do not call every Wright house a Usonian house. Usonian refers to a later economical domestic ideal, not all Wright residential work.
 
-[SLATECAMP_UI_BLOCK:ui_0014 component="WikiMistakeList" status="preserved"]
-Extracted summary:
-- Props: mistakes="{[\"Overestimating Fallingwater's structural logic. Students treat Fallingwater as purely rational structure. The cantilevers are technically daring but also *expressive*—they dramatize the relationship to water, they create an emotional statement. Wright was not a pure functionalist; he was a romantic expressing structure as poetry.\", \"Treating open plan as simple. Students say open plan is \\\"just removing walls.\\\" Open plan is a sophisticated design principle: spaces relate visually and functionally, privacy is created through spatial hierarchy not enclosure, movement through space matters aesthetically. Open plan requires more careful design than enclosed rooms, not less.\"]}"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
+Do not reduce Fallingwater to a visual trick. Its exam value is the integration of cantilever, waterfall, rock, terrace, and daily movement.
 
 ## Key Terms
 
-**Organic Architecture** — Wright's philosophy that buildings should be of their site, integrating with landscape, materials, and human scale; grows from conditions rather than imposed upon them.
+**Organic Architecture** - Wright's design philosophy joining site, plan, structure, material, and human experience.
 
-**Prairie Houses** — Wright's residential designs (1900–1915) featuring horizontal emphasis, low roofs, deep eaves, open plan, and integration with flat Midwestern landscape.
+**Prairie Style** - Wright's early domestic language of horizontality, open interiors, broad overhangs, and landscape relation.
 
-**Cantilevered Concrete** — Reinforced concrete projecting beyond its support; emphasizes lightness and dramatizes the structural overhang; used dramatically at Fallingwater.
+**Usonian** - Wright's economical domestic design approach for middle-class American life.
 
-**Open Plan** — Elimination of interior walls to create flowing, visually connected interior spaces; allows flexibility and creates spatial continuity.
+**Cantilever** - A projecting structural element supported from one end; central to Fallingwater's expression.
 
-**Horizontal Emphasis** — Design principle using low roofs, overhanging eaves, and linear elements to echo landscape horizons and create sense of repose.
-
-**Human Scale** — Design proportions responding to human body dimensions and movement, not abstract geometric grids; Wright opposed International Style's impersonal scale.
-
-**Usonian** — Wright's term for affordable American homes; integrated open plan, local materials, landscape integration, and modular design for working-class families.
-
-**Integral Ornament** — Decorative detail that expresses structure and material (wood grain, masonry pattern, geometric window divisions) rather than applied decoration disguising form.
-
-**Material Expression** — Exposing and emphasizing building materials' natural qualities—stone as stone, wood as wood, concrete as concrete—rather than covering them.
-
-[SLATECAMP_UI_BLOCK:ui_0015 component="ArticleMedia" status="preserved"]
-Extracted summary:
-- Props: id="media-hist-014-04-core-concept-timeline", layout="single", type="image", status="placeholder", alt="Comparison of Frank Lloyd Wright's organic architecture across four iconic works: Robie House (Prairie style, horizontal emphasis), Fallingwater (cantilevered over waterfall), Taliesin West (desert integration), and Guggenheim Museum (continuous spiral).", caption="Frank Lloyd Wright — Organic Architecture Works", suggestedAsset="Style comparison illustration", placementIntent="Style comparison for architectural period"
-- Text: (none detected)
-[/SLATECAMP_UI_BLOCK]
-
-## Related Articles
-
-See also within United States Architecture: **lea-hist-014-01-core-concept**, **lea-hist-014-02-core-concept**, **lea-hist-014-03-core-concept**, **lea-hist-014-05-core-concept**.
-
-> **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
+**Spiral Ramp** - The Guggenheim's continuous circulation system, where movement becomes the museum's main spatial idea.

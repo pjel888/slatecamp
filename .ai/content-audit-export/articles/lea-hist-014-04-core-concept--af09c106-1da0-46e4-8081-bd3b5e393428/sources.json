@@ -1,44 +1,38 @@
 {
   "article_id": "af09c106-1da0-46e4-8081-bd3b5e393428",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:d913fa2ebad1b006bde6b1aa0bb5c45b83ee6b56fe1ccdf70b8347f3b633f703",
-  "source_count": 3,
+  "sources_hash": "sha256:7d85fa3e643077478b3f0c3b50aea4c37c61afdb759d5cc1b723db15a418d69d",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "1e80ef97-03b3-42c0-84f5-5a6f8f2c8ace",
+      "source_id": "batch128-lea-hist-014-04-core-concept-source-map-capture",
       "article_id": "af09c106-1da0-46e4-8081-bd3b5e393428",
-      "label": "Wright, F.L. (1954). *The Natural House*. Horizon Press",
+      "label": "Frank Lloyd Wright source-map capture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
-    },
-    {
-      "source_id": "09e81add-5d82-4e6a-a1c7-99e3de86981e",
-      "article_id": "af09c106-1da0-46e4-8081-bd3b5e393428",
-      "label": "Kaufmann, E., Jr. & Raeburn, B. (1960). *Frank Lloyd Wright: A Life*. Knopf",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_source_capture",
+      "description": "Local-first capture of official/authoritative source anchors for Frank Lloyd Wright.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-128/lea-hist-014-04-core-concept-frank-lloyd-wright.source-capture.md",
+      "sha256": "sha256:09dbb2328ba0dda485f758fd2724bdf88e28a2b521ab41ba853a1b8a897c3ace",
+      "locator": "UNESCO Wright serial listing; Frank Lloyd Wright Trust/Conservancy pages for Prairie, Robie, Fallingwater, Usonian, and Guggenheim anchors; local source map for organic architecture and exam guardrails.",
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
+      "created_at": "2026-05-14T10:45:00.000+08:00",
+      "updated_at": "2026-05-14T10:45:00.000+08:00"
     },
     {
-      "source_id": "67046717-208c-44ed-be22-4908b3f381bb",
+      "source_id": "batch128-lea-hist-014-04-core-concept-source-map-refined",
       "article_id": "af09c106-1da0-46e4-8081-bd3b5e393428",
-      "label": "Ching, F.D.K., Jarzombek, M.M., & Prakash, V. (2006). *A Global History of Architecture*. Wiley",
+      "label": "Frank Lloyd Wright refined source map",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_refined_conversion",
+      "description": "Refined claim map for Frank Lloyd Wright and linked question edits.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-128/lea-hist-014-04-core-concept-frank-lloyd-wright.refined.md",
+      "sha256": "sha256:03e2679a9bff22ac155dfa107878907fdae2c3f6a5a5475cb9b3ae417ab60430",
+      "locator": "UNESCO Wright serial listing; Frank Lloyd Wright Trust/Conservancy pages for Prairie, Robie, Fallingwater, Usonian, and Guggenheim anchors; local source map for organic architecture and exam guardrails.",
       "sort_order": 2,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
+      "created_at": "2026-05-14T10:45:00.000+08:00",
+      "updated_at": "2026-05-14T10:45:00.000+08:00"
     }
   ]
 }

@@ -1,0 +1,41 @@
+{
+  "article_id": "db85fd0a-60fd-4617-9364-f0d63567acce",
+  "slug": "lea-hist-014-05-core-concept",
+  "batch_id": "source-audited-article-batch-128-local-first",
+  "generated_at": "2026-05-14T10:45:00.000+08:00",
+  "local_first": true,
+  "internet_enabled": true,
+  "source_locator": "MoMA International Style exhibition/term records; Chicago Architecture Center for Mies high-rise anchors; National Gallery and NPS records for Pei/Gateway Arch; local source map for modernism/postmodernism guardrails.",
+  "source_urls": [
+    "https://www.moma.org/calendar/exhibitions/2044",
+    "https://www.moma.org/collection/terms/international-style",
+    "https://www.architecture.org/online-resources/buildings-of-chicago/860-880-north-lake-shore-drive",
+    "https://www.nga.gov/about/gallery-campus.html",
+    "https://www.nps.gov/places/gateway-arch-monument.htm",
+    "https://home.nps.gov/jeff/planyourvisit/gateway-arch-still-a-modern-engineering-marvel.htm"
+  ],
+  "local_capture_paths": [
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-128/lea-hist-014-05-core-concept-international-style-modernism-in-america.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-128/lea-hist-014-05-core-concept-international-style-modernism-in-america.refined.md"
+  ],
+  "checked_sources": [
+    {
+      "source_id": "batch128-lea-hist-014-05-core-concept-source-map-capture",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-128/lea-hist-014-05-core-concept-international-style-modernism-in-america.source-capture.md",
+      "sha256": "sha256:d7c5cb466735b03706f39f9cb909f57bff28a3ea1d09860a1fd6a228546b85eb",
+      "locator": "MoMA International Style exhibition/term records; Chicago Architecture Center for Mies high-rise anchors; National Gallery and NPS records for Pei/Gateway Arch; local source map for modernism/postmodernism guardrails."
+    },
+    {
+      "source_id": "batch128-lea-hist-014-05-core-concept-source-map-refined",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-128/lea-hist-014-05-core-concept-international-style-modernism-in-america.refined.md",
+      "sha256": "sha256:fb8423f9102e19082070ed4074a802e705f014a8b94ce870502da5dc767debc6",
+      "locator": "MoMA International Style exhibition/term records; Chicago Architecture Center for Mies high-rise anchors; National Gallery and NPS records for Pei/Gateway Arch; local source map for modernism/postmodernism guardrails."
+    }
+  ],
+  "unsupported_or_removed_claims": [
+    "Narrowed International Style to the MoMA-supported vocabulary of volume, regularity, industrial materials, and little applied ornament.",
+    "Added guardrails so Saarinen, Kahn, Pei, and postmodern critiques are not collapsed into a single Miesian glass-box category.",
+    "Corrected incomplete question stems around modernism complexity and postmodern critique."
+  ],
+  "real_world_scenario": "added_source_safe_real_world_scenario: classify a glass corporate tower, a sculptural airport terminal, a concrete art museum, and a postmodern facade by design logic instead of forcing every mid-century American work into one International Style answer."
+}

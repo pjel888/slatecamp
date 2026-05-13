@@ -1,0 +1,262 @@
+{
+  "batch_id": "source-audited-article-batch-128-local-first",
+  "generated_at": "2026-05-14T10:45:00.000+08:00",
+  "updated_at": "2026-05-14T10:45:00.000+08:00",
+  "status": "passed_local_validation_git_index_blocked_handoff",
+  "baseline_full_commit": "e56f7dfce6f1638ee2b9fe662d422c2253330abc",
+  "branch": "3dlab-gray-viewport-bg",
+  "local_first": true,
+  "internet_enabled": true,
+  "selected_articles": [
+    {
+      "article_id": "af09c106-1da0-46e4-8081-bd3b5e393428",
+      "slug": "lea-hist-014-04-core-concept",
+      "title": "Frank Lloyd Wright",
+      "folder": ".ai/content-audit-export/articles/lea-hist-014-04-core-concept--af09c106-1da0-46e4-8081-bd3b5e393428",
+      "linked_question_count": 12,
+      "question_edit_count": 12,
+      "source_count": 2,
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-128/lea-hist-014-04-core-concept-frank-lloyd-wright.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-128/lea-hist-014-04-core-concept-frank-lloyd-wright.refined.md"
+      ],
+      "source_hashes": [
+        "sha256:09dbb2328ba0dda485f758fd2724bdf88e28a2b521ab41ba853a1b8a897c3ace",
+        "sha256:03e2679a9bff22ac155dfa107878907fdae2c3f6a5a5475cb9b3ae417ab60430"
+      ],
+      "source_urls": [
+        "https://whc.unesco.org/en/list/1496",
+        "https://www.flwright.org/explore/prairie-style",
+        "https://flwright.org/explore/robie-house",
+        "https://fallingwater.org/world-heritage-site",
+        "https://www.guggenheim.org/history/frank-lloyd-wright-and-the-guggenheim"
+      ],
+      "source_locator": "UNESCO Wright serial listing; Frank Lloyd Wright Trust/Conservancy pages for Prairie, Robie, Fallingwater, Usonian, and Guggenheim anchors; local source map for organic architecture and exam guardrails.",
+      "normalized_hash": "sha256:cbaaf29baab7eda70ced9b6c13a599e8c7c9c1cb7d2f4fafab0c44d6b48fc88b",
+      "candidate_hash": "sha256:cbaaf29baab7eda70ced9b6c13a599e8c7c9c1cb7d2f4fafab0c44d6b48fc88b",
+      "sources_hash": "sha256:7d85fa3e643077478b3f0c3b50aea4c37c61afdb759d5cc1b723db15a418d69d",
+      "linked_questions_hash": "sha256:06dbb17f9b67179c6e0680e9eb1d4aad7286d870ed7e69e925b7ded2a40c29ee",
+      "real_world_scenario": "added_source_safe_real_world_scenario: evaluate a hillside residence, Prairie house, Usonian house, and spiral museum by site integration, open plan, material continuity, and user movement before memorizing a single work title.",
+      "unsupported_or_removed_claims": [
+        "Removed unsupported most-tested/masterwork ranking language and kept Fallingwater as a source-backed exemplar of organic integration.",
+        "Corrected incomplete question stems and stale rationale fragments around Fallingwater, ornament, and the Guggenheim.",
+        "Narrowed ornament claims: Wright did not simply erase ornament; he integrated pattern, material, furniture, and space into a unified design logic."
+      ]
+    },
+    {
+      "article_id": "db85fd0a-60fd-4617-9364-f0d63567acce",
+      "slug": "lea-hist-014-05-core-concept",
+      "title": "International Style Modernism in America",
+      "folder": ".ai/content-audit-export/articles/lea-hist-014-05-core-concept--db85fd0a-60fd-4617-9364-f0d63567acce",
+      "linked_question_count": 12,
+      "question_edit_count": 12,
+      "source_count": 2,
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-128/lea-hist-014-05-core-concept-international-style-modernism-in-america.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-128/lea-hist-014-05-core-concept-international-style-modernism-in-america.refined.md"
+      ],
+      "source_hashes": [
+        "sha256:d7c5cb466735b03706f39f9cb909f57bff28a3ea1d09860a1fd6a228546b85eb",
+        "sha256:fb8423f9102e19082070ed4074a802e705f014a8b94ce870502da5dc767debc6"
+      ],
+      "source_urls": [
+        "https://www.moma.org/calendar/exhibitions/2044",
+        "https://www.moma.org/collection/terms/international-style",
+        "https://www.architecture.org/online-resources/buildings-of-chicago/860-880-north-lake-shore-drive",
+        "https://www.nga.gov/about/gallery-campus.html",
+        "https://www.nps.gov/places/gateway-arch-monument.htm",
+        "https://home.nps.gov/jeff/planyourvisit/gateway-arch-still-a-modern-engineering-marvel.htm"
+      ],
+      "source_locator": "MoMA International Style exhibition/term records; Chicago Architecture Center for Mies high-rise anchors; National Gallery and NPS records for Pei/Gateway Arch; local source map for modernism/postmodernism guardrails.",
+      "normalized_hash": "sha256:f2aff81737c10002fbc968245eb1ef0e3e2deaa5564f8d37693c2e2ec8dcb39a",
+      "candidate_hash": "sha256:f2aff81737c10002fbc968245eb1ef0e3e2deaa5564f8d37693c2e2ec8dcb39a",
+      "sources_hash": "sha256:2ca4e780434885dc6136313765efd5bb8ff37639948beb1d459eaba3ec52bf8a",
+      "linked_questions_hash": "sha256:e2c5c9e205f73b5ceec8ee04536472506d58dafd38666e8ac9d98a3fa0082972",
+      "real_world_scenario": "added_source_safe_real_world_scenario: classify a glass corporate tower, a sculptural airport terminal, a concrete art museum, and a postmodern facade by design logic instead of forcing every mid-century American work into one International Style answer.",
+      "unsupported_or_removed_claims": [
+        "Narrowed International Style to the MoMA-supported vocabulary of volume, regularity, industrial materials, and little applied ornament.",
+        "Added guardrails so Saarinen, Kahn, Pei, and postmodern critiques are not collapsed into a single Miesian glass-box category.",
+        "Corrected incomplete question stems around modernism complexity and postmodern critique."
+      ]
+    },
+    {
+      "article_id": "e714513f-a626-466d-b3e2-a70a2b182c1a",
+      "slug": "lea-hist-015-01-core-concept",
+      "title": "Indigenous Australian Architecture",
+      "folder": ".ai/content-audit-export/articles/lea-hist-015-01-core-concept--e714513f-a626-466d-b3e2-a70a2b182c1a",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "source_count": 2,
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-128/lea-hist-015-01-core-concept-indigenous-australian-architecture.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-128/lea-hist-015-01-core-concept-indigenous-australian-architecture.refined.md"
+      ],
+      "source_hashes": [
+        "sha256:8e0d0a6748cddd5002bb29636446e4ecdf60449a8d37d8596d780285f6f4b998",
+        "sha256:aa3d4d74a9f2d4bd2a30a6a718c3bc2c17b48d471956072c21899281d3a33f11"
+      ],
+      "source_urls": [
+        "https://whc.unesco.org/en/list/1577",
+        "https://adp.uq.edu.au/blog/2025/02/gunyah-goondie-wurley-aboriginal-architecture-australia",
+        "https://catalogue.nla.gov.au/catalog/3722558",
+        "https://www.dcceew.gov.au/parks-heritage/heritage/organisations/australian-heritage-council/national-heritage-assessments/hyde-park-barracks",
+        "https://www.nationaltrust.org.au/places/old-government-house/"
+      ],
+      "source_locator": "UNESCO Budj Bim listing; University of Queensland Aboriginal architecture overview; National Library/Historic Houses records; local source map for Indigenous shelter, engineered Country, and colonial public architecture guardrails.",
+      "normalized_hash": "sha256:e52a66eb279e7931a5eced999dc1a5592701fde74807ed65854d41fe7136cbea",
+      "candidate_hash": "sha256:e52a66eb279e7931a5eced999dc1a5592701fde74807ed65854d41fe7136cbea",
+      "sources_hash": "sha256:df28fc9090da2a4d6509b8a1cbbbf0f21c771e6fdebe623ab866cd6f53f219af",
+      "linked_questions_hash": "sha256:b685aad0450d44cec5ab8c6ae773e304289142a11a209c619636fce569772e0b",
+      "real_world_scenario": "added_source_safe_real_world_scenario: compare a seasonal shelter, Budj Bim aquaculture landscape, Hyde Park Barracks, and Old Government House by mobility, Country, labor, material, climate response, and colonial authority.",
+      "unsupported_or_removed_claims": [
+        "Removed the blanket claim that Indigenous Australian architecture was only temporary or non-permanent; Budj Bim requires a stronger engineered-landscape guardrail.",
+        "Replaced pilotis wording for Old Government House with verandahs, shade, ventilation, and raised or ventilated floor-zone climate responses.",
+        "Kept colonial public buildings source-safe by tying them to convict labor, sandstone, institutional order, and British-derived authority."
+      ]
+    },
+    {
+      "article_id": "59ea9844-0c75-4f39-873f-7cb83a14a924",
+      "slug": "lea-hist-015-02-core-concept",
+      "title": "The Sydney Opera House",
+      "folder": ".ai/content-audit-export/articles/lea-hist-015-02-core-concept--59ea9844-0c75-4f39-873f-7cb83a14a924",
+      "linked_question_count": 11,
+      "question_edit_count": 11,
+      "source_count": 2,
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-128/lea-hist-015-02-core-concept-the-sydney-opera-house.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-128/lea-hist-015-02-core-concept-the-sydney-opera-house.refined.md"
+      ],
+      "source_hashes": [
+        "sha256:52827624c2b260c4fae914cd7ce58a8b52715683bad488b378ada5780136b661",
+        "sha256:88b71fa411568215568aa02b95094aa3d269bfc8c170f81cd02904a752734505"
+      ],
+      "source_urls": [
+        "https://www.sydneyoperahouse.com/our-story",
+        "https://www.sydneyoperahouse.com/our-story/jorn-utzon",
+        "https://www.sydneyoperahouse.com/our-story/the-spherical-solution",
+        "https://whc.unesco.org/en/list/166",
+        "https://www.arup.com/projects/designing-the-sydney-opera-house/"
+      ],
+      "source_locator": "Sydney Opera House official history/spherical solution/Jorn Utzon pages; UNESCO listing; Arup project record; local source map for shells, site, structure, completion, and identity guardrails.",
+      "normalized_hash": "sha256:7f44acae335f13851d59063a53844f3634ff98cc715d7d6908d30220de3e500f",
+      "candidate_hash": "sha256:7f44acae335f13851d59063a53844f3634ff98cc715d7d6908d30220de3e500f",
+      "sources_hash": "sha256:ee3182b2093ce3f5189cf03f356157bdb47745bfa6e375307ba44f194dc9334c",
+      "linked_questions_hash": "sha256:2d342090e24ab0f4472aa2eac01786cc98b100eed8694e8f88cdf44c44fb53db",
+      "real_world_scenario": "added_source_safe_real_world_scenario: review a new waterfront cultural hall by form, structure, site, performance function, and national identity without reducing the lesson to copying sail-like shells.",
+      "unsupported_or_removed_claims": [
+        "Kept dates source-safe: Utzon won the 1957 competition, construction began in 1959, Utzon resigned in 1966, and the building opened in 1973.",
+        "Narrowed shell claims to spherical/structural geometry and engineering collaboration rather than decoration-only language.",
+        "Distinguished expressive/site-specific modernism from generic International Style glass-box cues."
+      ]
+    },
+    {
+      "article_id": "6fd0cdaa-55ed-4847-a740-2779ac5ddded",
+      "slug": "lea-hist-015-03-core-concept",
+      "title": "Maori Architecture of Aotearoa",
+      "folder": ".ai/content-audit-export/articles/lea-hist-015-03-core-concept--6fd0cdaa-55ed-4847-a740-2779ac5ddded",
+      "linked_question_count": 12,
+      "question_edit_count": 12,
+      "source_count": 2,
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-128/lea-hist-015-03-core-concept-maori-architecture-of-aotearoa.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-128/lea-hist-015-03-core-concept-maori-architecture-of-aotearoa.refined.md"
+      ],
+      "source_hashes": [
+        "sha256:57d8ff1585737c1fd0eae967f1d814a7ede7a4ef4b687c2c5424c8f82112d094",
+        "sha256:5d1458eba30097bf6f088d5c85b7d1290def960c66e54edd0bb3a8ffc278bcc4"
+      ],
+      "source_urls": [
+        "https://teara.govt.nz/en/maori-architecture-whare-maori/print",
+        "https://teara.govt.nz/en/zoomify/36918/plan-of-paterangi-pa",
+        "https://nzhistory.govt.nz/politics/treaty/the-treaty-in-brief",
+        "https://www.tepapa.govt.nz/discover-collections/read-watch-play/maori/maori-meeting-houses"
+      ],
+      "source_locator": "Te Ara Maori architecture/pa records; NZ History Treaty record; Te Papa meeting-house record; local source map for whare, wharenui, pa, whakapapa, colonization, and contemporary bicultural design guardrails.",
+      "normalized_hash": "sha256:01989cd5c79ce53e5959bdb005afb493e5cfa6b4cad101f58e26bd798eb22cf4",
+      "candidate_hash": "sha256:01989cd5c79ce53e5959bdb005afb493e5cfa6b4cad101f58e26bd798eb22cf4",
+      "sources_hash": "sha256:8bcb9eef3f9ead1305e0b11f345b73aa57fb361cb5181d4c5dc5cc03b04c566d",
+      "linked_questions_hash": "sha256:e263684cbf652199c0d465687e5faa11efdd48c3952686e6815d2ef510dd643c",
+      "real_world_scenario": "added_source_safe_real_world_scenario: review a campus marae by mana whenua engagement, whakapapa, orientation, wharenui/wharekai roles, carving/tukutuku meaning, services, and public safety instead of treating pattern as decoration.",
+      "unsupported_or_removed_claims": [
+        "Removed unsupported mission-school/preventing-language wording and replaced it with source-safe colonization disruption plus later cultural reassertion.",
+        "Kept carving, weaving, and tukutuku as cultural/ancestral communication rather than decoration-only claims.",
+        "Framed contemporary Maori architecture through mana whenua, whakapapa, land, community process, and bicultural design rather than surface motifs."
+      ]
+    }
+  ],
+  "totals": {
+    "article_count": 5,
+    "linked_question_count": 57,
+    "question_edit_count": 57,
+    "local_source_artifact_count": 10
+  },
+  "source_hash_check": [
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-128/lea-hist-014-04-core-concept-frank-lloyd-wright.source-capture.md",
+      "expected_sha256": "sha256:09dbb2328ba0dda485f758fd2724bdf88e28a2b521ab41ba853a1b8a897c3ace",
+      "actual_sha256": "sha256:09dbb2328ba0dda485f758fd2724bdf88e28a2b521ab41ba853a1b8a897c3ace",
+      "passed": true
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-128/lea-hist-014-04-core-concept-frank-lloyd-wright.refined.md",
+      "expected_sha256": "sha256:03e2679a9bff22ac155dfa107878907fdae2c3f6a5a5475cb9b3ae417ab60430",
+      "actual_sha256": "sha256:03e2679a9bff22ac155dfa107878907fdae2c3f6a5a5475cb9b3ae417ab60430",
+      "passed": true
+    },
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-128/lea-hist-014-05-core-concept-international-style-modernism-in-america.source-capture.md",
+      "expected_sha256": "sha256:d7c5cb466735b03706f39f9cb909f57bff28a3ea1d09860a1fd6a228546b85eb",
+      "actual_sha256": "sha256:d7c5cb466735b03706f39f9cb909f57bff28a3ea1d09860a1fd6a228546b85eb",
+      "passed": true
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-128/lea-hist-014-05-core-concept-international-style-modernism-in-america.refined.md",
+      "expected_sha256": "sha256:fb8423f9102e19082070ed4074a802e705f014a8b94ce870502da5dc767debc6",
+      "actual_sha256": "sha256:fb8423f9102e19082070ed4074a802e705f014a8b94ce870502da5dc767debc6",
+      "passed": true
+    },
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-128/lea-hist-015-01-core-concept-indigenous-australian-architecture.source-capture.md",
+      "expected_sha256": "sha256:8e0d0a6748cddd5002bb29636446e4ecdf60449a8d37d8596d780285f6f4b998",
+      "actual_sha256": "sha256:8e0d0a6748cddd5002bb29636446e4ecdf60449a8d37d8596d780285f6f4b998",
+      "passed": true
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-128/lea-hist-015-01-core-concept-indigenous-australian-architecture.refined.md",
+      "expected_sha256": "sha256:aa3d4d74a9f2d4bd2a30a6a718c3bc2c17b48d471956072c21899281d3a33f11",
+      "actual_sha256": "sha256:aa3d4d74a9f2d4bd2a30a6a718c3bc2c17b48d471956072c21899281d3a33f11",
+      "passed": true
+    },
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-128/lea-hist-015-02-core-concept-the-sydney-opera-house.source-capture.md",
+      "expected_sha256": "sha256:52827624c2b260c4fae914cd7ce58a8b52715683bad488b378ada5780136b661",
+      "actual_sha256": "sha256:52827624c2b260c4fae914cd7ce58a8b52715683bad488b378ada5780136b661",
+      "passed": true
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-128/lea-hist-015-02-core-concept-the-sydney-opera-house.refined.md",
+      "expected_sha256": "sha256:88b71fa411568215568aa02b95094aa3d269bfc8c170f81cd02904a752734505",
+      "actual_sha256": "sha256:88b71fa411568215568aa02b95094aa3d269bfc8c170f81cd02904a752734505",
+      "passed": true
+    },
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-128/lea-hist-015-03-core-concept-maori-architecture-of-aotearoa.source-capture.md",
+      "expected_sha256": "sha256:57d8ff1585737c1fd0eae967f1d814a7ede7a4ef4b687c2c5424c8f82112d094",
+      "actual_sha256": "sha256:57d8ff1585737c1fd0eae967f1d814a7ede7a4ef4b687c2c5424c8f82112d094",
+      "passed": true
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-128/lea-hist-015-03-core-concept-maori-architecture-of-aotearoa.refined.md",
+      "expected_sha256": "sha256:5d1458eba30097bf6f088d5c85b7d1290def960c66e54edd0bb3a8ffc278bcc4",
+      "actual_sha256": "sha256:5d1458eba30097bf6f088d5c85b7d1290def960c66e54edd0bb3a8ffc278bcc4",
+      "passed": true
+    }
+  ],
+  "git_handoff_blocker": "fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted",
+  "forbidden_actions_not_performed": [
+    "Supabase push",
+    "deploy",
+    "production DB mutation",
+    "merge to main"
+  ]
+}

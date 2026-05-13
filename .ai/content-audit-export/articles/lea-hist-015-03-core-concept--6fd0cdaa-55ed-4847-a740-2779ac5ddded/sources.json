@@ -1,56 +1,38 @@
 {
   "article_id": "6fd0cdaa-55ed-4847-a740-2779ac5ddded",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:f35110822d49edfe2816751bdd43229e13531d3983e51b835addc113bec9656f",
-  "source_count": 4,
+  "sources_hash": "sha256:8bcb9eef3f9ead1305e0b11f345b73aa57fb361cb5181d4c5dc5cc03b04c566d",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "79c09711-e9b8-4ea4-bc33-7cb4d0d65728",
+      "source_id": "batch128-lea-hist-015-03-core-concept-source-map-capture",
       "article_id": "6fd0cdaa-55ed-4847-a740-2779ac5ddded",
-      "label": "Walker, R. (1990). *Ka Whawhai Tonu Matou: Struggle Without End*. Penguin Books",
+      "label": "Maori Architecture of Aotearoa source-map capture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
-    },
-    {
-      "source_id": "50928a24-5f56-4209-acee-4bc5aa51230a",
-      "article_id": "6fd0cdaa-55ed-4847-a740-2779ac5ddded",
-      "label": "Neich, R. (1994). *Painted Histories: Early Maori Figurative Painting*. University of Hawaii Press",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_source_capture",
+      "description": "Local-first capture of official/authoritative source anchors for Maori Architecture of Aotearoa.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-128/lea-hist-015-03-core-concept-maori-architecture-of-aotearoa.source-capture.md",
+      "sha256": "sha256:57d8ff1585737c1fd0eae967f1d814a7ede7a4ef4b687c2c5424c8f82112d094",
+      "locator": "Te Ara Maori architecture/pa records; NZ History Treaty record; Te Papa meeting-house record; local source map for whare, wharenui, pa, whakapapa, colonization, and contemporary bicultural design guardrails.",
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
+      "created_at": "2026-05-14T10:45:00.000+08:00",
+      "updated_at": "2026-05-14T10:45:00.000+08:00"
     },
     {
-      "source_id": "43b9f7e2-ad81-4044-907c-3c23f13585cc",
+      "source_id": "batch128-lea-hist-015-03-core-concept-source-map-refined",
       "article_id": "6fd0cdaa-55ed-4847-a740-2779ac5ddded",
-      "label": "Selwyn, G. & Selwyn, P. (2005). *Māori Culture and Identity in New Zealand*. Routledge",
+      "label": "Maori Architecture of Aotearoa refined source map",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_refined_conversion",
+      "description": "Refined claim map for Maori Architecture of Aotearoa and linked question edits.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-128/lea-hist-015-03-core-concept-maori-architecture-of-aotearoa.refined.md",
+      "sha256": "sha256:5d1458eba30097bf6f088d5c85b7d1290def960c66e54edd0bb3a8ffc278bcc4",
+      "locator": "Te Ara Maori architecture/pa records; NZ History Treaty record; Te Papa meeting-house record; local source map for whare, wharenui, pa, whakapapa, colonization, and contemporary bicultural design guardrails.",
       "sort_order": 2,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
-    },
-    {
-      "source_id": "2992d962-7f3c-4071-bd9d-adb4c7d09e66",
-      "article_id": "6fd0cdaa-55ed-4847-a740-2779ac5ddded",
-      "label": "Ching, F.D.K., Jarzombek, M.M., & Prakash, V. (2006). *A Global History of Architecture*. Wiley",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 3,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
+      "created_at": "2026-05-14T10:45:00.000+08:00",
+      "updated_at": "2026-05-14T10:45:00.000+08:00"
     }
   ]
 }

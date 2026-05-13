@@ -1,0 +1,278 @@
+{
+  "batch_id": "source-audited-article-batch-128-local-first",
+  "generated_at": "2026-05-14T10:45:00.000+08:00",
+  "status": "passed_local_validation_git_index_blocked_handoff",
+  "baseline_full_commit": "e56f7dfce6f1638ee2b9fe662d422c2253330abc",
+  "selected_article_count": 5,
+  "linked_question_count": 57,
+  "question_edit_count": 57,
+  "checks": [
+    {
+      "name": "compose/diff/validate",
+      "status": "pass",
+      "detail": "5/5 selected articles composed, diffed, and bundle-validated."
+    },
+    {
+      "name": "ui-block validation",
+      "status": "pass",
+      "detail": "5/5 selected articles valid; blockers=0 warnings=0."
+    },
+    {
+      "name": "scoped JSON parse",
+      "status": "pass",
+      "detail": "Batch manifest, ledger, scoped checks, article metadata/source/question/ui-block JSON parsed."
+    },
+    {
+      "name": "placeholder/internal marker/source audit gap scan",
+      "status": "pass",
+      "detail": "No raw UI-block, internal marker, to-do marker, or source audit gap markers remain in selected normalized/candidate/question/source/report scope."
+    },
+    {
+      "name": "source hash checks",
+      "status": "pass",
+      "detail": "All local source capture/refined file hashes match sources.json and source-audit-evidence.json."
+    },
+    {
+      "name": "question-edit count",
+      "status": "pass",
+      "detail": "57 linked questions and 57 edits across 5 selected clusters."
+    },
+    {
+      "name": "stale compose-error scan",
+      "status": "pass",
+      "detail": "No selected compose-error.json file exists after successful compose."
+    },
+    {
+      "name": "targeted content-audit tests",
+      "status": "pass",
+      "detail": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts passed 34 tests, 0 failures."
+    },
+    {
+      "name": "scoped git diff --check",
+      "status": "pass",
+      "detail": "Whitespace check passed for intended Batch 128 paths."
+    },
+    {
+      "name": "git index stage",
+      "status": "blocked",
+      "detail": "fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted"
+    }
+  ],
+  "articles": [
+    {
+      "slug": "lea-hist-014-04-core-concept",
+      "folder": ".ai/content-audit-export/articles/lea-hist-014-04-core-concept--af09c106-1da0-46e4-8081-bd3b5e393428",
+      "candidate_hash": "sha256:cbaaf29baab7eda70ced9b6c13a599e8c7c9c1cb7d2f4fafab0c44d6b48fc88b",
+      "normalized_hash": "sha256:cbaaf29baab7eda70ced9b6c13a599e8c7c9c1cb7d2f4fafab0c44d6b48fc88b",
+      "sources_hash": "sha256:7d85fa3e643077478b3f0c3b50aea4c37c61afdb759d5cc1b723db15a418d69d",
+      "linked_questions_hash": "sha256:06dbb17f9b67179c6e0680e9eb1d4aad7286d870ed7e69e925b7ded2a40c29ee",
+      "linked_question_count": 12,
+      "question_edit_count": 12,
+      "local_source_artifacts": [
+        "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-128/lea-hist-014-04-core-concept-frank-lloyd-wright.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-128/lea-hist-014-04-core-concept-frank-lloyd-wright.refined.md"
+      ],
+      "source_hashes": [
+        "sha256:09dbb2328ba0dda485f758fd2724bdf88e28a2b521ab41ba853a1b8a897c3ace",
+        "sha256:03e2679a9bff22ac155dfa107878907fdae2c3f6a5a5475cb9b3ae417ab60430"
+      ],
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; no Supabase push is authorized in this batch.",
+        "component-usage.json has not been generated for this article yet."
+      ]
+    },
+    {
+      "slug": "lea-hist-014-05-core-concept",
+      "folder": ".ai/content-audit-export/articles/lea-hist-014-05-core-concept--db85fd0a-60fd-4617-9364-f0d63567acce",
+      "candidate_hash": "sha256:f2aff81737c10002fbc968245eb1ef0e3e2deaa5564f8d37693c2e2ec8dcb39a",
+      "normalized_hash": "sha256:f2aff81737c10002fbc968245eb1ef0e3e2deaa5564f8d37693c2e2ec8dcb39a",
+      "sources_hash": "sha256:2ca4e780434885dc6136313765efd5bb8ff37639948beb1d459eaba3ec52bf8a",
+      "linked_questions_hash": "sha256:e2c5c9e205f73b5ceec8ee04536472506d58dafd38666e8ac9d98a3fa0082972",
+      "linked_question_count": 12,
+      "question_edit_count": 12,
+      "local_source_artifacts": [
+        "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-128/lea-hist-014-05-core-concept-international-style-modernism-in-america.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-128/lea-hist-014-05-core-concept-international-style-modernism-in-america.refined.md"
+      ],
+      "source_hashes": [
+        "sha256:d7c5cb466735b03706f39f9cb909f57bff28a3ea1d09860a1fd6a228546b85eb",
+        "sha256:fb8423f9102e19082070ed4074a802e705f014a8b94ce870502da5dc767debc6"
+      ],
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; no Supabase push is authorized in this batch.",
+        "component-usage.json has not been generated for this article yet."
+      ]
+    },
+    {
+      "slug": "lea-hist-015-01-core-concept",
+      "folder": ".ai/content-audit-export/articles/lea-hist-015-01-core-concept--e714513f-a626-466d-b3e2-a70a2b182c1a",
+      "candidate_hash": "sha256:e52a66eb279e7931a5eced999dc1a5592701fde74807ed65854d41fe7136cbea",
+      "normalized_hash": "sha256:e52a66eb279e7931a5eced999dc1a5592701fde74807ed65854d41fe7136cbea",
+      "sources_hash": "sha256:df28fc9090da2a4d6509b8a1cbbbf0f21c771e6fdebe623ab866cd6f53f219af",
+      "linked_questions_hash": "sha256:b685aad0450d44cec5ab8c6ae773e304289142a11a209c619636fce569772e0b",
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "local_source_artifacts": [
+        "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-128/lea-hist-015-01-core-concept-indigenous-australian-architecture.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-128/lea-hist-015-01-core-concept-indigenous-australian-architecture.refined.md"
+      ],
+      "source_hashes": [
+        "sha256:8e0d0a6748cddd5002bb29636446e4ecdf60449a8d37d8596d780285f6f4b998",
+        "sha256:aa3d4d74a9f2d4bd2a30a6a718c3bc2c17b48d471956072c21899281d3a33f11"
+      ],
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; no Supabase push is authorized in this batch.",
+        "component-usage.json has not been generated for this article yet."
+      ]
+    },
+    {
+      "slug": "lea-hist-015-02-core-concept",
+      "folder": ".ai/content-audit-export/articles/lea-hist-015-02-core-concept--59ea9844-0c75-4f39-873f-7cb83a14a924",
+      "candidate_hash": "sha256:7f44acae335f13851d59063a53844f3634ff98cc715d7d6908d30220de3e500f",
+      "normalized_hash": "sha256:7f44acae335f13851d59063a53844f3634ff98cc715d7d6908d30220de3e500f",
+      "sources_hash": "sha256:ee3182b2093ce3f5189cf03f356157bdb47745bfa6e375307ba44f194dc9334c",
+      "linked_questions_hash": "sha256:2d342090e24ab0f4472aa2eac01786cc98b100eed8694e8f88cdf44c44fb53db",
+      "linked_question_count": 11,
+      "question_edit_count": 11,
+      "local_source_artifacts": [
+        "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-128/lea-hist-015-02-core-concept-the-sydney-opera-house.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-128/lea-hist-015-02-core-concept-the-sydney-opera-house.refined.md"
+      ],
+      "source_hashes": [
+        "sha256:52827624c2b260c4fae914cd7ce58a8b52715683bad488b378ada5780136b661",
+        "sha256:88b71fa411568215568aa02b95094aa3d269bfc8c170f81cd02904a752734505"
+      ],
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; no Supabase push is authorized in this batch.",
+        "component-usage.json has not been generated for this article yet."
+      ]
+    },
+    {
+      "slug": "lea-hist-015-03-core-concept",
+      "folder": ".ai/content-audit-export/articles/lea-hist-015-03-core-concept--6fd0cdaa-55ed-4847-a740-2779ac5ddded",
+      "candidate_hash": "sha256:01989cd5c79ce53e5959bdb005afb493e5cfa6b4cad101f58e26bd798eb22cf4",
+      "normalized_hash": "sha256:01989cd5c79ce53e5959bdb005afb493e5cfa6b4cad101f58e26bd798eb22cf4",
+      "sources_hash": "sha256:8bcb9eef3f9ead1305e0b11f345b73aa57fb361cb5181d4c5dc5cc03b04c566d",
+      "linked_questions_hash": "sha256:e263684cbf652199c0d465687e5faa11efdd48c3952686e6815d2ef510dd643c",
+      "linked_question_count": 12,
+      "question_edit_count": 12,
+      "local_source_artifacts": [
+        "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-128/lea-hist-015-03-core-concept-maori-architecture-of-aotearoa.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-128/lea-hist-015-03-core-concept-maori-architecture-of-aotearoa.refined.md"
+      ],
+      "source_hashes": [
+        "sha256:57d8ff1585737c1fd0eae967f1d814a7ede7a4ef4b687c2c5424c8f82112d094",
+        "sha256:5d1458eba30097bf6f088d5c85b7d1290def960c66e54edd0bb3a8ffc278bcc4"
+      ],
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; no Supabase push is authorized in this batch.",
+        "component-usage.json has not been generated for this article yet."
+      ]
+    }
+  ],
+  "scoped_paths_checked": [
+    ".ai/03_plans/production-line-batch-128-manifest.json",
+    ".ai/03_plans/batch-128-independent-quality-review.md",
+    ".ai/03_plans/batch-128-git-handoff-stage-list.md",
+    ".ai/03_plans/source-audited-production-line-coordination.md",
+    ".ai/03_plans/source-audited-local-first-batches-handoff.md",
+    ".ai/03_plans/source-audited-local-first-freeze-readiness-report.md",
+    ".ai/content-audit-export/source-audited-article-batch-128-local-first-report.md",
+    ".ai/content-audit-export/source-audited-article-batch-128-local-first-ledger.json",
+    ".ai/content-audit-export/source-audited-article-batch-128-local-first-scoped-checks.json",
+    ".ai/content-audit-export/ui-block-edit-validation.json",
+    ".ai/content-audit-export/sync-state.json",
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-128/lea-hist-014-04-core-concept-frank-lloyd-wright.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-128/lea-hist-014-04-core-concept-frank-lloyd-wright.refined.md",
+    ".ai/content-audit-export/articles/lea-hist-014-04-core-concept--af09c106-1da0-46e4-8081-bd3b5e393428/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-hist-014-04-core-concept--af09c106-1da0-46e4-8081-bd3b5e393428/candidate.md",
+    ".ai/content-audit-export/articles/lea-hist-014-04-core-concept--af09c106-1da0-46e4-8081-bd3b5e393428/compose-report.json",
+    ".ai/content-audit-export/articles/lea-hist-014-04-core-concept--af09c106-1da0-46e4-8081-bd3b5e393428/diff-report.json",
+    ".ai/content-audit-export/articles/lea-hist-014-04-core-concept--af09c106-1da0-46e4-8081-bd3b5e393428/diff-report.md",
+    ".ai/content-audit-export/articles/lea-hist-014-04-core-concept--af09c106-1da0-46e4-8081-bd3b5e393428/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-hist-014-04-core-concept--af09c106-1da0-46e4-8081-bd3b5e393428/normalized.md",
+    ".ai/content-audit-export/articles/lea-hist-014-04-core-concept--af09c106-1da0-46e4-8081-bd3b5e393428/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-hist-014-04-core-concept--af09c106-1da0-46e4-8081-bd3b5e393428/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-hist-014-04-core-concept--af09c106-1da0-46e4-8081-bd3b5e393428/sources.json",
+    ".ai/content-audit-export/articles/lea-hist-014-04-core-concept--af09c106-1da0-46e4-8081-bd3b5e393428/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-hist-014-04-core-concept--af09c106-1da0-46e4-8081-bd3b5e393428/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-hist-014-04-core-concept--af09c106-1da0-46e4-8081-bd3b5e393428/ui-blocks.json",
+    ".ai/content-audit-export/articles/lea-hist-014-04-core-concept--af09c106-1da0-46e4-8081-bd3b5e393428/compose-error.json",
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-128/lea-hist-014-05-core-concept-international-style-modernism-in-america.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-128/lea-hist-014-05-core-concept-international-style-modernism-in-america.refined.md",
+    ".ai/content-audit-export/articles/lea-hist-014-05-core-concept--db85fd0a-60fd-4617-9364-f0d63567acce/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-hist-014-05-core-concept--db85fd0a-60fd-4617-9364-f0d63567acce/candidate.md",
+    ".ai/content-audit-export/articles/lea-hist-014-05-core-concept--db85fd0a-60fd-4617-9364-f0d63567acce/compose-report.json",
+    ".ai/content-audit-export/articles/lea-hist-014-05-core-concept--db85fd0a-60fd-4617-9364-f0d63567acce/diff-report.json",
+    ".ai/content-audit-export/articles/lea-hist-014-05-core-concept--db85fd0a-60fd-4617-9364-f0d63567acce/diff-report.md",
+    ".ai/content-audit-export/articles/lea-hist-014-05-core-concept--db85fd0a-60fd-4617-9364-f0d63567acce/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-hist-014-05-core-concept--db85fd0a-60fd-4617-9364-f0d63567acce/normalized.md",
+    ".ai/content-audit-export/articles/lea-hist-014-05-core-concept--db85fd0a-60fd-4617-9364-f0d63567acce/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-hist-014-05-core-concept--db85fd0a-60fd-4617-9364-f0d63567acce/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-hist-014-05-core-concept--db85fd0a-60fd-4617-9364-f0d63567acce/sources.json",
+    ".ai/content-audit-export/articles/lea-hist-014-05-core-concept--db85fd0a-60fd-4617-9364-f0d63567acce/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-hist-014-05-core-concept--db85fd0a-60fd-4617-9364-f0d63567acce/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-hist-014-05-core-concept--db85fd0a-60fd-4617-9364-f0d63567acce/ui-blocks.json",
+    ".ai/content-audit-export/articles/lea-hist-014-05-core-concept--db85fd0a-60fd-4617-9364-f0d63567acce/compose-error.json",
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-128/lea-hist-015-01-core-concept-indigenous-australian-architecture.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-128/lea-hist-015-01-core-concept-indigenous-australian-architecture.refined.md",
+    ".ai/content-audit-export/articles/lea-hist-015-01-core-concept--e714513f-a626-466d-b3e2-a70a2b182c1a/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-hist-015-01-core-concept--e714513f-a626-466d-b3e2-a70a2b182c1a/candidate.md",
+    ".ai/content-audit-export/articles/lea-hist-015-01-core-concept--e714513f-a626-466d-b3e2-a70a2b182c1a/compose-report.json",
+    ".ai/content-audit-export/articles/lea-hist-015-01-core-concept--e714513f-a626-466d-b3e2-a70a2b182c1a/diff-report.json",
+    ".ai/content-audit-export/articles/lea-hist-015-01-core-concept--e714513f-a626-466d-b3e2-a70a2b182c1a/diff-report.md",
+    ".ai/content-audit-export/articles/lea-hist-015-01-core-concept--e714513f-a626-466d-b3e2-a70a2b182c1a/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-hist-015-01-core-concept--e714513f-a626-466d-b3e2-a70a2b182c1a/normalized.md",
+    ".ai/content-audit-export/articles/lea-hist-015-01-core-concept--e714513f-a626-466d-b3e2-a70a2b182c1a/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-hist-015-01-core-concept--e714513f-a626-466d-b3e2-a70a2b182c1a/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-hist-015-01-core-concept--e714513f-a626-466d-b3e2-a70a2b182c1a/sources.json",
+    ".ai/content-audit-export/articles/lea-hist-015-01-core-concept--e714513f-a626-466d-b3e2-a70a2b182c1a/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-hist-015-01-core-concept--e714513f-a626-466d-b3e2-a70a2b182c1a/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-hist-015-01-core-concept--e714513f-a626-466d-b3e2-a70a2b182c1a/ui-blocks.json",
+    ".ai/content-audit-export/articles/lea-hist-015-01-core-concept--e714513f-a626-466d-b3e2-a70a2b182c1a/compose-error.json",
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-128/lea-hist-015-02-core-concept-the-sydney-opera-house.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-128/lea-hist-015-02-core-concept-the-sydney-opera-house.refined.md",
+    ".ai/content-audit-export/articles/lea-hist-015-02-core-concept--59ea9844-0c75-4f39-873f-7cb83a14a924/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-hist-015-02-core-concept--59ea9844-0c75-4f39-873f-7cb83a14a924/candidate.md",
+    ".ai/content-audit-export/articles/lea-hist-015-02-core-concept--59ea9844-0c75-4f39-873f-7cb83a14a924/compose-report.json",
+    ".ai/content-audit-export/articles/lea-hist-015-02-core-concept--59ea9844-0c75-4f39-873f-7cb83a14a924/diff-report.json",
+    ".ai/content-audit-export/articles/lea-hist-015-02-core-concept--59ea9844-0c75-4f39-873f-7cb83a14a924/diff-report.md",
+    ".ai/content-audit-export/articles/lea-hist-015-02-core-concept--59ea9844-0c75-4f39-873f-7cb83a14a924/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-hist-015-02-core-concept--59ea9844-0c75-4f39-873f-7cb83a14a924/normalized.md",
+    ".ai/content-audit-export/articles/lea-hist-015-02-core-concept--59ea9844-0c75-4f39-873f-7cb83a14a924/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-hist-015-02-core-concept--59ea9844-0c75-4f39-873f-7cb83a14a924/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-hist-015-02-core-concept--59ea9844-0c75-4f39-873f-7cb83a14a924/sources.json",
+    ".ai/content-audit-export/articles/lea-hist-015-02-core-concept--59ea9844-0c75-4f39-873f-7cb83a14a924/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-hist-015-02-core-concept--59ea9844-0c75-4f39-873f-7cb83a14a924/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-hist-015-02-core-concept--59ea9844-0c75-4f39-873f-7cb83a14a924/ui-blocks.json",
+    ".ai/content-audit-export/articles/lea-hist-015-02-core-concept--59ea9844-0c75-4f39-873f-7cb83a14a924/compose-error.json",
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-128/lea-hist-015-03-core-concept-maori-architecture-of-aotearoa.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-128/lea-hist-015-03-core-concept-maori-architecture-of-aotearoa.refined.md",
+    ".ai/content-audit-export/articles/lea-hist-015-03-core-concept--6fd0cdaa-55ed-4847-a740-2779ac5ddded/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-hist-015-03-core-concept--6fd0cdaa-55ed-4847-a740-2779ac5ddded/candidate.md",
+    ".ai/content-audit-export/articles/lea-hist-015-03-core-concept--6fd0cdaa-55ed-4847-a740-2779ac5ddded/compose-report.json",
+    ".ai/content-audit-export/articles/lea-hist-015-03-core-concept--6fd0cdaa-55ed-4847-a740-2779ac5ddded/diff-report.json",
+    ".ai/content-audit-export/articles/lea-hist-015-03-core-concept--6fd0cdaa-55ed-4847-a740-2779ac5ddded/diff-report.md",
+    ".ai/content-audit-export/articles/lea-hist-015-03-core-concept--6fd0cdaa-55ed-4847-a740-2779ac5ddded/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-hist-015-03-core-concept--6fd0cdaa-55ed-4847-a740-2779ac5ddded/normalized.md",
+    ".ai/content-audit-export/articles/lea-hist-015-03-core-concept--6fd0cdaa-55ed-4847-a740-2779ac5ddded/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-hist-015-03-core-concept--6fd0cdaa-55ed-4847-a740-2779ac5ddded/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-hist-015-03-core-concept--6fd0cdaa-55ed-4847-a740-2779ac5ddded/sources.json",
+    ".ai/content-audit-export/articles/lea-hist-015-03-core-concept--6fd0cdaa-55ed-4847-a740-2779ac5ddded/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-hist-015-03-core-concept--6fd0cdaa-55ed-4847-a740-2779ac5ddded/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-hist-015-03-core-concept--6fd0cdaa-55ed-4847-a740-2779ac5ddded/ui-blocks.json",
+    ".ai/content-audit-export/articles/lea-hist-015-03-core-concept--6fd0cdaa-55ed-4847-a740-2779ac5ddded/compose-error.json"
+  ],
+  "git_handoff_blocker": "fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted",
+  "forbidden_actions_not_performed": [
+    "Supabase push",
+    "deploy",
+    "production DB mutation",
+    "merge to main"
+  ]
+}

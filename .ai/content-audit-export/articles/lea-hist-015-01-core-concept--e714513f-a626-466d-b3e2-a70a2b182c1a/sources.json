@@ -1,44 +1,38 @@
 {
   "article_id": "e714513f-a626-466d-b3e2-a70a2b182c1a",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:b995669a2123e21ed6fe2019b85dfa5c23b7868125ee8d5900d3f32bdd27933e",
-  "source_count": 3,
+  "sources_hash": "sha256:df28fc9090da2a4d6509b8a1cbbbf0f21c771e6fdebe623ab866cd6f53f219af",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "d4e6b329-922e-41e3-94f6-a11ca169b8e0",
+      "source_id": "batch128-lea-hist-015-01-core-concept-source-map-capture",
       "article_id": "e714513f-a626-466d-b3e2-a70a2b182c1a",
-      "label": "Freeland, J.M. (1968). *Architecture in Australia: A History*. F.W. Cheshire",
+      "label": "Indigenous Australian Architecture source-map capture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
-    },
-    {
-      "source_id": "a84bbd28-6fe2-49cf-bd74-76d02df72cc1",
-      "article_id": "e714513f-a626-466d-b3e2-a70a2b182c1a",
-      "label": "Apperly, R., Robert Irving, R., & Reynolds, P. (1989). *A Pictorial Guide to Identifying Australian Architecture*. Angus & Robertson",
-      "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_source_capture",
+      "description": "Local-first capture of official/authoritative source anchors for Indigenous Australian Architecture.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-128/lea-hist-015-01-core-concept-indigenous-australian-architecture.source-capture.md",
+      "sha256": "sha256:8e0d0a6748cddd5002bb29636446e4ecdf60449a8d37d8596d780285f6f4b998",
+      "locator": "UNESCO Budj Bim listing; University of Queensland Aboriginal architecture overview; National Library/Historic Houses records; local source map for Indigenous shelter, engineered Country, and colonial public architecture guardrails.",
       "sort_order": 1,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
+      "created_at": "2026-05-14T10:45:00.000+08:00",
+      "updated_at": "2026-05-14T10:45:00.000+08:00"
     },
     {
-      "source_id": "316b0063-0229-4bf1-ad5d-477f51ce7a93",
+      "source_id": "batch128-lea-hist-015-01-core-concept-source-map-refined",
       "article_id": "e714513f-a626-466d-b3e2-a70a2b182c1a",
-      "label": "Ching, F.D.K., Jarzombek, M.M., & Prakash, V. (2006). *A Global History of Architecture*. Wiley",
+      "label": "Indigenous Australian Architecture refined source map",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
+      "source_type": "local_refined_conversion",
+      "description": "Refined claim map for Indigenous Australian Architecture and linked question edits.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-128/lea-hist-015-01-core-concept-indigenous-australian-architecture.refined.md",
+      "sha256": "sha256:aa3d4d74a9f2d4bd2a30a6a718c3bc2c17b48d471956072c21899281d3a33f11",
+      "locator": "UNESCO Budj Bim listing; University of Queensland Aboriginal architecture overview; National Library/Historic Houses records; local source map for Indigenous shelter, engineered Country, and colonial public architecture guardrails.",
       "sort_order": 2,
-      "created_at": "2026-03-24T04:34:00.244408+00:00",
-      "updated_at": "2026-03-24T04:34:00.244408+00:00"
+      "created_at": "2026-05-14T10:45:00.000+08:00",
+      "updated_at": "2026-05-14T10:45:00.000+08:00"
     }
   ]
 }

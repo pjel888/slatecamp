@@ -1,0 +1,40 @@
+{
+  "article_id": "e714513f-a626-466d-b3e2-a70a2b182c1a",
+  "slug": "lea-hist-015-01-core-concept",
+  "batch_id": "source-audited-article-batch-128-local-first",
+  "generated_at": "2026-05-14T10:45:00.000+08:00",
+  "local_first": true,
+  "internet_enabled": true,
+  "source_locator": "UNESCO Budj Bim listing; University of Queensland Aboriginal architecture overview; National Library/Historic Houses records; local source map for Indigenous shelter, engineered Country, and colonial public architecture guardrails.",
+  "source_urls": [
+    "https://whc.unesco.org/en/list/1577",
+    "https://adp.uq.edu.au/blog/2025/02/gunyah-goondie-wurley-aboriginal-architecture-australia",
+    "https://catalogue.nla.gov.au/catalog/3722558",
+    "https://www.dcceew.gov.au/parks-heritage/heritage/organisations/australian-heritage-council/national-heritage-assessments/hyde-park-barracks",
+    "https://www.nationaltrust.org.au/places/old-government-house/"
+  ],
+  "local_capture_paths": [
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-128/lea-hist-015-01-core-concept-indigenous-australian-architecture.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-128/lea-hist-015-01-core-concept-indigenous-australian-architecture.refined.md"
+  ],
+  "checked_sources": [
+    {
+      "source_id": "batch128-lea-hist-015-01-core-concept-source-map-capture",
+      "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-128/lea-hist-015-01-core-concept-indigenous-australian-architecture.source-capture.md",
+      "sha256": "sha256:8e0d0a6748cddd5002bb29636446e4ecdf60449a8d37d8596d780285f6f4b998",
+      "locator": "UNESCO Budj Bim listing; University of Queensland Aboriginal architecture overview; National Library/Historic Houses records; local source map for Indigenous shelter, engineered Country, and colonial public architecture guardrails."
+    },
+    {
+      "source_id": "batch128-lea-hist-015-01-core-concept-source-map-refined",
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-128/lea-hist-015-01-core-concept-indigenous-australian-architecture.refined.md",
+      "sha256": "sha256:aa3d4d74a9f2d4bd2a30a6a718c3bc2c17b48d471956072c21899281d3a33f11",
+      "locator": "UNESCO Budj Bim listing; University of Queensland Aboriginal architecture overview; National Library/Historic Houses records; local source map for Indigenous shelter, engineered Country, and colonial public architecture guardrails."
+    }
+  ],
+  "unsupported_or_removed_claims": [
+    "Removed the blanket claim that Indigenous Australian architecture was only temporary or non-permanent; Budj Bim requires a stronger engineered-landscape guardrail.",
+    "Replaced pilotis wording for Old Government House with verandahs, shade, ventilation, and raised or ventilated floor-zone climate responses.",
+    "Kept colonial public buildings source-safe by tying them to convict labor, sandstone, institutional order, and British-derived authority."
+  ],
+  "real_world_scenario": "added_source_safe_real_world_scenario: compare a seasonal shelter, Budj Bim aquaculture landscape, Hyde Park Barracks, and Old Government House by mobility, Country, labor, material, climate response, and colonial authority."
+}

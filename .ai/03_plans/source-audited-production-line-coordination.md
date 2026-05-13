@@ -1,3 +1,17 @@
+## Batch 128 Git Index Blocked Handoff - 2026-05-14T10:45:00.000+08:00
+
+Local validation passed, but Codex could not write .git/index.lock. Hermes should stage the Batch 128 intended paths, run cached diff checks, commit `chore(content): accept source-audited batch 128`, and push `origin/3dlab-gray-viewport-bg`.
+
+## Batch 128 Coordination Update - 2026-05-14T10:45:00.000+08:00
+
+- Mode: internet-enabled local-first source-map/reservation pass.
+- Selected bundles: lea-hist-014-04-core-concept, lea-hist-014-05-core-concept, lea-hist-015-01-core-concept, lea-hist-015-02-core-concept, lea-hist-015-03-core-concept.
+- Scope evidence: 5 article clusters, 57 linked questions, 57 question edits, 10 local source artifacts.
+- Constraints held: no Supabase push, no deploy, no production DB mutation, no merge to main.
+- Stop condition: local validation gates passed; live git staging is blocked by .git/index.lock permissions, so Hermes must stage only Batch 128/source files for `chore(content): accept source-audited batch 128` and leave unrelated dirty work untouched.
+
+---
+
 ## Batch 127 Git Index Blocked Handoff - 2026-05-13T19:07:25.929Z
 
 Local validation passed, but Codex could not write .git/index.lock. Hermes should stage the Batch 127 intended paths, run cached diff checks, commit `chore(content): accept source-audited batch 127`, and push `origin/3dlab-gray-viewport-bg`.
