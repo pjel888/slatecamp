@@ -2,57 +2,62 @@
   "question_id": "ff5f61f5-824d-4dd7-b6a0-c771a39fd303",
   "baseline_hash": "sha256:3d6ebbd349da85f3a4eb92287554bcb4408dad0820adbfaa0d440a73e61332b2",
   "action": "replace",
-  "reason": "source-audited-article-batch-060-local-first: local raw PDF backed replacement constrained to checked Batch 060 TOA 4 Tropical Architecture source family.",
-  "approved_by": "codex-local-first-batch-060",
-  "approved_at": "2026-05-11T21:02:00.000+08:00",
+  "reason": "source-audited-article-batch-132-local-first: source-safe rewrite constrained to Batch 132 local source capture and refined conversion artifacts.",
+  "approved_by": "codex-local-first-batch-132",
+  "approved_at": "2026-05-14T05:41:22.456+08:00",
   "source_audit_support": {
     "parent_article_id": "cb07f9cb-7506-496e-941a-4080a05c323f",
     "parent_article_slug": "lea-theo-004-07-core-concept",
-    "answer_key_fields_changed": true,
+    "answer_key_fields_changed": false,
     "support_status": "source_safe_rewrite",
-    "source_locator": "TOA 4 Tropical Architecture refined markdown lines 884-931, 1562-1573, 1648-1665, 1679, and raw PDF pages 104, 180-181, 187, and 194",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-07-core-concept-biophilic-design.source-capture.md (sha256:d135b22fa35e9f11bbae85107dbdaa55bb775ac01017aec9476ea032dcb9b7da); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-07-core-concept-biophilic-design.refined.md (sha256:37bed449b7ddffb4d50569fb4bb87b0783a073a67e0aed29aa8a64c86f6ce9f9)",
     "checked_markdown_lines": [
-      "TOA 4 Tropical Architecture refined markdown lines 884-931",
-      "TOA 4 Tropical Architecture refined markdown lines 1562-1573",
-      "TOA 4 Tropical Architecture refined markdown lines 1648-1665, 1679"
+      "TOA 4 Tropical Architecture refined markdown lines 1562-1573 and 1591-1622",
+      "George Salvan Architectural Theories of Design refined markdown lines 16726-16742",
+      "Terrapin 14 Patterns official PDF lines 1558, 1642, 1719, 1792, 1880, 1963, and 2206-2232"
     ],
     "checked_sources": [
       {
-        "source_id": "toa4-tropical-architecture-local-raw-pdf--b060-cb07f9cb-01",
-        "label": "TOA 4 Tropical Architecture - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
-        "sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
-        "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
-        "locator": "TOA 4 Tropical Architecture refined markdown lines 884-931, 1562-1573, 1648-1665, 1679, and raw PDF pages 104, 180-181, 187, and 194"
+        "source_id": "batch-132-004-07-source-capture",
+        "label": "Batch 132 source capture - Biophilic Design",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-07-core-concept-biophilic-design.source-capture.md",
+        "sha256": "sha256:d135b22fa35e9f11bbae85107dbdaa55bb775ac01017aec9476ea032dcb9b7da",
+        "locator": "TOA 4 Tropical Architecture refined markdown lines 1562-1573 and 1591-1622; George Salvan Architectural Theories of Design refined markdown lines 16726-16742; Terrapin 14 Patterns official PDF lines 1558, 1642, 1719, 1792, 1880, 1963, and 2206-2232"
+      },
+      {
+        "source_id": "batch-132-004-07-refined-conversion",
+        "label": "Batch 132 refined conversion - Biophilic Design",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-07-core-concept-biophilic-design.refined.md",
+        "sha256": "sha256:37bed449b7ddffb4d50569fb4bb87b0783a073a67e0aed29aa8a64c86f6ce9f9",
+        "locator": "Derived from vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-07-core-concept-biophilic-design.source-capture.md (sha256:d135b22fa35e9f11bbae85107dbdaa55bb775ac01017aec9476ea032dcb9b7da)"
       }
     ],
-    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 060 checked local raw PDF source scope."
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten while preserving the existing correct_option_id."
   },
   "proposed": {
-    "text": "Which strategy combines vegetation with passive design correctly?",
+    "text": "How should biophilia relate to green rating language?",
     "options": [
       {
         "id": "a",
-        "text": "Use vegetation for shade and evaporation while keeping airflow paths open."
+        "text": "Every biophilic feature is a guaranteed BERDE credit."
       },
       {
         "id": "b",
-        "text": "Use vegetation to seal every opening."
+        "text": "Rating systems are unnecessary when a project has plants."
       },
       {
         "id": "c",
-        "text": "Use vegetation to trap afternoon heat."
+        "text": "Biophilia is identical to code compliance."
       },
       {
         "id": "d",
-        "text": "Use vegetation only inside sealed rooms."
+        "text": "It may support site, IEQ, materials, and ecology concerns, but it does not automatically earn undocumented points."
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "Use vegetation for shade and evaporation while keeping airflow paths open. This answer is supported by the checked Batch 060 local TOA 4 Tropical Architecture raw PDF source family for Biophilic Design.",
-    "explanation": "Use vegetation for shade and evaporation while keeping airflow paths open. The Batch 060 source audit used the local raw PDF first and refined markdown only as locator evidence for Biophilic Design.",
-    "code_citation": "TOA 4 Tropical Architecture refined markdown lines 884-931, 1562-1573, 1648-1665, 1679, and raw PDF pages 104, 180-181, 187, and 194"
+    "correct_option_id": "d",
+    "rationale": "It may support site, IEQ, materials, and ecology concerns, but it does not automatically earn undocumented points. This is supported by the Batch 132 local source map for Biophilic Design.",
+    "explanation": "It may support site, IEQ, materials, and ecology concerns, but it does not automatically earn undocumented points. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-07-core-concept-biophilic-design.source-capture.md (sha256:d135b22fa35e9f11bbae85107dbdaa55bb775ac01017aec9476ea032dcb9b7da); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-07-core-concept-biophilic-design.refined.md (sha256:37bed449b7ddffb4d50569fb4bb87b0783a073a67e0aed29aa8a64c86f6ce9f9).",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-07-core-concept-biophilic-design.source-capture.md (sha256:d135b22fa35e9f11bbae85107dbdaa55bb775ac01017aec9476ea032dcb9b7da); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-07-core-concept-biophilic-design.refined.md (sha256:37bed449b7ddffb4d50569fb4bb87b0783a073a67e0aed29aa8a64c86f6ce9f9)"
   },
-  "batch_question_template_index": 8
+  "batch_question_template_index": 7
 }

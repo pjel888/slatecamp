@@ -1,10 +1,10 @@
 {
   "artifact_type": "source_audit_evidence",
-  "batch_id": "source-audited-article-batch-060-local-first",
-  "batch_number": 60,
-  "audit_mode": "local_first_raw_pdf_primary",
-  "audit_date": "2026-05-11",
-  "audited_at": "2026-05-11T21:02:00.000+08:00",
+  "batch_id": "source-audited-article-batch-132-local-first",
+  "batch_number": 132,
+  "audit_mode": "local_first_source_capture_primary",
+  "audit_date": "2026-05-14",
+  "audited_at": "2026-05-14T05:41:22.456+08:00",
   "target": {
     "article_id": "cb07f9cb-7506-496e-941a-4080a05c323f",
     "slug": "lea-theo-004-07-core-concept",
@@ -12,32 +12,48 @@
     "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f",
     "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/question-edits",
     "linked_questions": 10,
-    "question_edits": 10,
-    "candidate_sha256": "sha256:f7873f58ee2fc7824c54ed53bcca335db8e3341b1fbf44e05e2534343ccbb12e"
+    "question_edits": 10
   },
-  "raw_pdf_gate": {
+  "local_source_gate": {
     "status": "PASS",
-    "primary_truth": "vitruvius-connection/001_Raw-Source-Layer local raw PDFs",
+    "primary_truth": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132 and vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132",
+    "official_web_used_only_for_local_capture": true,
     "derivative_or_search_layers_used_as_primary_truth": false,
-    "refined_markdown_used_only_as_locator": true,
-    "all_legal_code_claims_have_pdf_locator": true,
-    "all_section_numbers_verified_against_raw_pdf": true,
-    "no_derivative_text_used_as_source_of_truth": true,
-    "blockers": [],
     "checked_sources": [
       {
-        "source_id": "toa4-tropical-architecture-local-raw-pdf--b060-cb07f9cb-01",
+        "source_id": "batch-132-004-07-source-capture",
+        "label": "Batch 132 source capture - Biophilic Design",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-07-core-concept-biophilic-design.source-capture.md",
+        "sha256": "sha256:d135b22fa35e9f11bbae85107dbdaa55bb775ac01017aec9476ea032dcb9b7da",
+        "locator": "TOA 4 Tropical Architecture refined markdown lines 1562-1573 and 1591-1622; George Salvan Architectural Theories of Design refined markdown lines 16726-16742; Terrapin 14 Patterns official PDF lines 1558, 1642, 1719, 1792, 1880, 1963, and 2206-2232"
+      },
+      {
+        "source_id": "batch-132-004-07-refined-conversion",
+        "label": "Batch 132 refined conversion - Biophilic Design",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-07-core-concept-biophilic-design.refined.md",
+        "sha256": "sha256:37bed449b7ddffb4d50569fb4bb87b0783a073a67e0aed29aa8a64c86f6ce9f9",
+        "locator": "Derived from vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-07-core-concept-biophilic-design.source-capture.md (sha256:d135b22fa35e9f11bbae85107dbdaa55bb775ac01017aec9476ea032dcb9b7da)"
+      }
+    ],
+    "underlying_source_families": [
+      {
         "label": "TOA 4 Tropical Architecture - local raw PDF",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
         "raw_pdf_sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
         "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
-        "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
-        "locator": "TOA 4 Tropical Architecture refined markdown lines 884-931, 1562-1573, 1648-1665, 1679, and raw PDF pages 104, 180-181, 187, and 194"
+        "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22"
+      },
+      {
+        "label": "George Salvan Architectural Theories of Design - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
+        "raw_pdf_sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
+        "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10"
       }
     ]
   },
   "classification": {
-    "content_type": "theory-of-architecture-tropical-design",
+    "content_type": "theory-of-architecture-biophilic-design",
     "contains_legal_or_code_claims": false,
     "source_risk_tier": "medium",
     "requires_raw_pdf_audit": true,
@@ -54,58 +70,50 @@
       "671ef0a4-da32-412f-9fcf-bade35805abf",
       "7458086f-9aa2-4f81-bd75-2635168513e2"
     ],
-    "scenario_policy_status": "eligible-deferred",
-    "scenario_policy_reason": "A realistic tropical-site scenario could be useful, but Batch 060 defers scenario enrichment so source-audited article/question correctness remains the only blocking gate."
+    "scenario_policy_status": "added_source_safe_scenario",
+    "scenario_policy_reason": "A school courtyard can use planting, shaded edges, filtered daylight, water only where maintenance and mosquitoes are controlled, and airflow variability. The result is biophilic because nature supports comfort and orientation, not because plants were added as decoration."
   },
   "claims": [
     {
-      "claim_id": "lea-theo-004-07-core-concept-b060-claim-01",
-      "claim_text": "Biophilic Design is limited to checked local raw PDF TOA 4 Tropical Architecture source locators recorded for this article.",
+      "claim_id": "lea-theo-004-07-core-concept-b132-claim-01",
+      "claim_text": "Biophilic Design is limited to the checked Batch 132 source capture, refined conversion, and listed local source family hashes.",
       "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
-        "quoted_pdf_excerpt": "TOA 4 Tropical Architecture refined markdown lines 884-931, 1562-1573, 1648-1665, 1679, and raw PDF pages 104, 180-181, 187, and 194",
         "source_ids": [
-          "toa4-tropical-architecture-local-raw-pdf--b060-cb07f9cb-01"
-        ]
+          "batch-132-004-07-source-capture",
+          "batch-132-004-07-refined-conversion"
+        ],
+        "source_locator": "TOA 4 Tropical Architecture refined markdown lines 1562-1573 and 1591-1622; George Salvan Architectural Theories of Design refined markdown lines 16726-16742; Terrapin 14 Patterns official PDF lines 1558, 1642, 1719, 1792, 1880, 1963, and 2206-2232"
       },
       "audit_result": "PASS"
     }
   ],
   "checked_markdown_lines": [
-    "TOA 4 Tropical Architecture refined markdown lines 884-931",
-    "TOA 4 Tropical Architecture refined markdown lines 1562-1573",
-    "TOA 4 Tropical Architecture refined markdown lines 1648-1665, 1679"
+    "TOA 4 Tropical Architecture refined markdown lines 1562-1573 and 1591-1622",
+    "George Salvan Architectural Theories of Design refined markdown lines 16726-16742",
+    "Terrapin 14 Patterns official PDF lines 1558, 1642, 1719, 1792, 1880, 1963, and 2206-2232"
   ],
-  "checked_pdf_pages": "raw PDF pages 71-78, 81-84, 87-90, 92-100, 104, 106-110, 121, 140, 143-148, 151, 163, 172, 180-181, 187, and 194",
-  "unverified_or_rejected_claims": [],
+  "unverified_or_rejected_claims": [
+    "Exact fractal-dimension ranges, quantified benefit percentages, and unsupported architect quotes were removed.",
+    "Decorative plant-only claims were replaced with pattern-based, climate-aware biophilic design guidance."
+  ],
   "quality_protocol": {
     "roundtrip_protocol_preserved": true,
     "ui_blocks_owner": "ui-blocks.json",
     "normalized_owner": "normalized.md",
-    "candidate_generation": "compose_completed",
+    "candidate_generation": "compose_required_after_prep",
     "local_first_only": true,
     "supabase_write_attempted": false,
     "deploy_attempted": false,
     "commit_attempted": false,
-    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json",
-    "diff_gate": "safe_true_blockers_zero",
-    "validate_gate": "valid_true_blockers_zero",
-    "ui_block_edits_gate": "valid_true_blockers_zero"
+    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json"
   },
   "sme_review": {
-    "required": false,
     "required_before_publication": true,
     "status": "not_started_local_first_batch",
     "note": "Local-first source audit is ready for later human/SME review before final publishing."
   },
   "overall": {
     "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
-    "source_audit_status": "PASS",
-    "safe_for_batch_apply": true,
-    "safe_for_supabase_upload": true,
-    "blockers": [],
-    "warnings": [
-      "Human/SME review remains pending before final publishing."
-    ]
+    "blockers": []
   }
 }

@@ -1,30 +1,28 @@
 {
   "article_id": "567ba614-9dcd-4c76-8bf3-74478fd1291f",
-  "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:b49d0ac235e7286a9187bfd17e45b9a4f530b3b9668405e1182162b7b5f300b7",
   "question_count": 12,
   "questions": [
     {
       "question_id": "7c54c3ce-69a6-46cb-8a13-f95dc113dd36",
       "article_id": "567ba614-9dcd-4c76-8bf3-74478fd1291f",
       "topic_id": "3363831d-f404-4b78-8d93-2e2ec3364996",
-      "text": "Explain why high nighttime temperatures (22–25°C) in the Philippine maritime tropical climate make evaporative cooling less effective as a passive design strategy than in arid zones, and identify which Coronas climate type would benefit most from attempted evaporative cooling.",
+      "text": "Which climate description should guide Philippine tropical design?",
       "options": [
         {
           "id": "a",
-          "text": "High humidity prevents any evaporative cooling benefit; all Coronas types are equally unsuitable for this strategy regardless of seasonal variation"
+          "text": "A dry desert climate with large daily temperature swings."
         },
         {
           "id": "b",
-          "text": "Type IV (distributed rainfall) has highest humidity and is best for evaporative cooling due to abundant moisture supply for wet-pad systems"
+          "text": "A cold temperate climate dominated by snow load."
         },
         {
           "id": "c",
-          "text": "Nighttime temperatures 22–25°C allow thermal mass to cool effectively; evaporative cooling is unnecessary in all types of Philippine climate"
+          "text": "A low-humidity climate where evaporative cooling is always primary."
         },
         {
           "id": "d",
-          "text": "Humidity 75–85% year-round reduces evaporative potential by 50–70%; Type I dry season offers best opportunity (RH 40–50%) for 1–2°C temperature reduction"
+          "text": "A tropical maritime setting with high temperature, high humidity, and abundant rainfall."
         }
       ],
       "correct_option_id": "d",
@@ -33,14 +31,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Though marginal in wet climates, evaporative cooling in Type I's dry season does provide modest benefit; not all types are equally unsuitable.",
-        "b": "High humidity reduces evaporative cooling; Type IV is unsuitable, not best.",
-        "c": "Nighttime temps are too high for thermal mass discharge; evaporative cooling is actually MORE relevant in tropics where direct evaporation from high-humidity air is one of few passive cooling mechanisms.",
-        "correct": "Evaporative cooling potential is reduced by ~50% at 75% RH vs. 50% RH. Type I dry season (Apr–May, RH 40–50%) offers the only window where evaporative cooling materials (sawali walls, thatch) reduce interior 1–2K. Type II/IV perpetual dampness eliminates this benefit entirely.",
-        "takeaway": "Type II/IV perpetual dampness eliminates this benefit entirely."
+        "correct": "A tropical maritime setting with high temperature, high humidity, and abundant rainfall. This is supported by the Batch 132 local source map for Philippine Tropical Climate and Design Response.",
+        "takeaway": "Philippine Tropical Climate and Design Response: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "a": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "b": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "c": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": "Though marginal in wet climates, evaporative cooling in Type I's dry season does provide modest benefit; not all types are equally unsuitable. High humidity reduces evaporative cooling; Type IV is unsuitable, not best. Nighttime temps are too high for thermal mass discharge; evaporative cooling is actually MORE relevant in tropics where direct evaporation from high-humidity air is one of few passive cooling mechanisms. Evaporative cooling potential is reduced by ~50% at 75% RH vs. 50% RH. Type I dry season (Apr–May, RH 40–50%) offers the only window where evaporative cooling materials (sawali walls, thatch) reduce interior 1–2K. Type II/IV perpetual dampness eliminates this benefit entirely. Type II/IV perpetual dampness eliminates this benefit entirely.",
-      "code_citation": null,
+      "explanation": "A tropical maritime setting with high temperature, high humidity, and abundant rainfall. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.source-capture.md (sha256:614c9faf26a196e136223bb73bbca80cc4d90f5c4a35aad8c28ef964e958efa5); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.refined.md (sha256:1f2e963233cffe70bb0889e3712c30c16d242b0233a0b8cfbc97683ec547da16).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.source-capture.md (sha256:614c9faf26a196e136223bb73bbca80cc4d90f5c4a35aad8c28ef964e958efa5); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.refined.md (sha256:1f2e963233cffe70bb0889e3712c30c16d242b0233a0b8cfbc97683ec547da16)",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -53,30 +51,30 @@
       "model_id": "ALE-THEO-004-01-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-05-06T16:22:32.090484+00:00",
-      "content_hash": "sha256:b08607cd4b1be5a050eaa12c378193dea6c9c0c06201c7c7a1f48e8249f578a1"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:00506a90a9bfd8a855394d92e9838c856729f02800b6874d51d7e959144fa027"
     },
     {
       "question_id": "e9b5f7ef-b5f9-410c-8cb7-4e060e6d632a",
       "article_id": "567ba614-9dcd-4c76-8bf3-74478fd1291f",
       "topic_id": "3363831d-f404-4b78-8d93-2e2ec3364996",
-      "text": "Compare habagat and amihan monsoons. Which statement accurately reflects their opposite characteristics?",
+      "text": "Why is high relative humidity important in local comfort planning?",
       "options": [
         {
           "id": "a",
-          "text": "Habagat (May–Oct) is wet with strong convection and high wind speeds; amihan (Nov–Apr) is dry and cooler with divergent flow"
+          "text": "Warm air and high humidity increase perceived heat, so shade and air movement matter."
         },
         {
           "id": "b",
-          "text": "Both monsoons bring equivalent rainfall but at different months; wind patterns are identical year-round"
+          "text": "Humidity eliminates the need for ventilation."
         },
         {
           "id": "c",
-          "text": "Habagat (May–Oct) is wet and brings low wind speeds; amihan (Nov–Apr) is dry and brings strong winds"
+          "text": "Humidity makes solar control unnecessary."
         },
         {
           "id": "d",
-          "text": "Habagat creates moisture for evaporative cooling; amihan suppresses humidity and reduces thermal stress equally"
+          "text": "Humidity is only a structural issue."
         }
       ],
       "correct_option_id": "a",
@@ -85,14 +83,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Monsoons create opposite seasonal patterns with distinct rainfall and wind profiles; not equivalent.",
-        "c": "Habagat has strong winds, not low winds; this reverses the actual characteristics.",
-        "d": "Both affect humidity oppositely; amihan provides greater evaporative cooling opportunity but does not reduce stress 'equally.'",
-        "correct": "Habagat is moisture-laden Pacific air with strong sustained winds (15–25 knots); amihan originates from mainland Asia bringing drier, cooler air with divergent (rain-shadow) effects on leeward slopes.",
-        "takeaway": "Habagat is moisture-laden Pacific air with strong sustained winds (15–25 knots); amihan originates from mainland Asia bringing drier, cooler air with divergent (rain-shadow) effects on leeward slopes."
+        "correct": "Warm air and high humidity increase perceived heat, so shade and air movement matter. This is supported by the Batch 132 local source map for Philippine Tropical Climate and Design Response.",
+        "takeaway": "Philippine Tropical Climate and Design Response: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "b": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "c": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "d": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": "Monsoons create opposite seasonal patterns with distinct rainfall and wind profiles; not equivalent. Habagat has strong winds, not low winds; this reverses the actual characteristics. Both affect humidity oppositely; amihan provides greater evaporative cooling opportunity but does not reduce stress 'equally.' Habagat is moisture-laden Pacific air with strong sustained winds (15–25 knots); amihan originates from mainland Asia bringing drier, cooler air with divergent (rain-shadow) effects on leeward slopes. Habagat is moisture-laden Pacific air with strong sustained winds (15–25 knots); amihan originates from mainland Asia bringing drier, cooler air with divergent (rain-shadow) effects on leeward slopes.",
-      "code_citation": null,
+      "explanation": "Warm air and high humidity increase perceived heat, so shade and air movement matter. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.source-capture.md (sha256:614c9faf26a196e136223bb73bbca80cc4d90f5c4a35aad8c28ef964e958efa5); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.refined.md (sha256:1f2e963233cffe70bb0889e3712c30c16d242b0233a0b8cfbc97683ec547da16).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.source-capture.md (sha256:614c9faf26a196e136223bb73bbca80cc4d90f5c4a35aad8c28ef964e958efa5); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.refined.md (sha256:1f2e963233cffe70bb0889e3712c30c16d242b0233a0b8cfbc97683ec547da16)",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -105,30 +103,30 @@
       "model_id": "ALE-THEO-004-01-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-05-06T16:22:32.205654+00:00",
-      "content_hash": "sha256:0f7289d2c88642959895bc8de1aae105774c3bad3d5332aae09cb613866bb20b"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:2e86629475ac6f65b0c2088ff2aff370398bd0103d1bbddccd657a3f19f8799a"
     },
     {
       "question_id": "5410035e-4097-4bd5-b9a6-7481aa02c66f",
       "article_id": "567ba614-9dcd-4c76-8bf3-74478fd1291f",
       "topic_id": "3363831d-f404-4b78-8d93-2e2ec3364996",
-      "text": "A commercial building's structural system must resist both typhoon wind loads (150+ kph sustained, 200+ kph gusts) and moisture deterioration. In what way do Philippine Coronas climate constraints force a different structural choice than a temperate-zone architecture firm might propose?",
+      "text": "What should Coronas climate types be used for in early site thinking?",
       "options": [
         {
           "id": "a",
-          "text": "Reinforced concrete with high wind safety factors (1.75–2.0g) is optimal for all zones because typhoons are uniform nationwide, which simplifies design considerations"
+          "text": "Selecting a single national roof detail for all regions."
         },
         {
           "id": "b",
-          "text": "Lightweight materials (timber, bamboo) are unsuitable for typhoon zones; heavyweight concrete ensures wind resistance and provides additional thermal mass benefits"
+          "text": "Replacing site observation and local weather data."
         },
         {
           "id": "c",
-          "text": "Type I buildings can use lightweight steel frames with lower wind factors; Type II requires robust concrete construction with moisture-resistant coatings due to perpetual dampness; structural redundancy is mandatory"
+          "text": "Understanding broad rainfall distribution patterns before choosing envelope and drainage responses."
         },
         {
           "id": "d",
-          "text": "Climate-responsive structural design is secondary; building codes specify identical requirements regardless of Coronas type, which means design flexibility is limited"
+          "text": "Ignoring monsoon and typhoon exposure."
         }
       ],
       "correct_option_id": "c",
@@ -137,14 +135,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Typhoons are not uniform; intensity varies by latitude and Coronas exposure. Type III interior areas have lower typhoon intensity than Northern Luzon buckle.",
-        "b": "Modern lightweight timber frames can resist typhoons if properly engineered with redundancy; the issue is moisture durability, not wind capacity.",
-        "d": "Building codes vary by region; climate-responsive design directly informs Code compliance pathways and structural choice.",
-        "correct": "Type I regions with pronounced dry season can employ lightweight structures (steel with protective coatings applied during dry season). Type II perpetual dampness demands concrete or moisture-resistant materials. Additionally, 20-typhoon/year exposure requires redundant load paths; no single failure point is acceptable. This creates a composite constraint: typhoon resilience + moisture durability + structural redundancy.",
-        "takeaway": "This creates a composite constraint: typhoon resilience + moisture durability + structural redundancy."
+        "correct": "Understanding broad rainfall distribution patterns before choosing envelope and drainage responses. This is supported by the Batch 132 local source map for Philippine Tropical Climate and Design Response.",
+        "takeaway": "Philippine Tropical Climate and Design Response: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "a": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "b": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "d": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": "Typhoons are not uniform; intensity varies by latitude and Coronas exposure. Type III interior areas have lower typhoon intensity than Northern Luzon buckle. Modern lightweight timber frames can resist typhoons if properly engineered with redundancy; the issue is moisture durability, not wind capacity. Building codes vary by region; climate-responsive design directly informs Code compliance pathways and structural choice. Type I regions with pronounced dry season can employ lightweight structures (steel with protective coatings applied during dry season). Type II perpetual dampness demands concrete or moisture-resistant materials. Additionally, 20-typhoon/year exposure requires redundant load paths; no single failure point is acceptable. This creates a composite constraint: typhoon resilience + moisture durability + structural redundancy. This creates a composite constraint: typhoon resilience + moisture durability + structural redundancy.",
-      "code_citation": null,
+      "explanation": "Understanding broad rainfall distribution patterns before choosing envelope and drainage responses. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.source-capture.md (sha256:614c9faf26a196e136223bb73bbca80cc4d90f5c4a35aad8c28ef964e958efa5); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.refined.md (sha256:1f2e963233cffe70bb0889e3712c30c16d242b0233a0b8cfbc97683ec547da16).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.source-capture.md (sha256:614c9faf26a196e136223bb73bbca80cc4d90f5c4a35aad8c28ef964e958efa5); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.refined.md (sha256:1f2e963233cffe70bb0889e3712c30c16d242b0233a0b8cfbc97683ec547da16)",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -157,30 +155,30 @@
       "model_id": "ALE-THEO-004-01-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-05-06T16:22:32.433773+00:00",
-      "content_hash": "sha256:9465e4f609ceb653dfb1d3be50060af7cf069e440d37dacdd2836cc4168b6e7e"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:7aac98cf150d700a06a2cb1973d3dd7b7b0746c106aa27fd891d9ae209cca929"
     },
     {
       "question_id": "042ad368-3b3a-4cb8-8f1c-2b9b8150ae9c",
       "article_id": "567ba614-9dcd-4c76-8bf3-74478fd1291f",
       "topic_id": "3363831d-f404-4b78-8d93-2e2ec3364996",
-      "text": "A coastal resort in Northern Luzon sits within the Pacific Typhoon Belt. Why do structural engineers specify wind-load safety factors of 1.75–2.0g instead of the standard 1.3–1.5g used in non-typhoon regions?",
+      "text": "Which design response fits a Type II rainfall exposure?",
       "options": [
         {
           "id": "a",
-          "text": "Tropical maritime climate suppresses diurnal temperature range, creating atmospheric instability"
+          "text": "Use unprotected openings because dry months dominate."
         },
         {
           "id": "b",
-          "text": "Monsoon wind reversal (habagat/amihan) creates bidirectional pressure peaks that accumulate additively"
+          "text": "Use desert courtyards as the main climate strategy."
         },
         {
           "id": "c",
-          "text": "The Philippines experiences average 20 typhoons annually; 5–6 reach destructive strength (150+ kph winds) requiring higher design margins"
+          "text": "Give priority to wind-driven rain protection, roof drainage, and durable protected openings."
         },
         {
           "id": "d",
-          "text": "High relative humidity (75–85%) increases air density and wind pressure calculations"
+          "text": "Assume rainfall occurs only during a short summer peak."
         }
       ],
       "correct_option_id": "c",
@@ -189,14 +187,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Diurnal range suppression affects passive cooling strategy, not wind-load multipliers.",
-        "b": "Monsoon reversal is real but creates opposite-direction sequential loads, not additive stacking.",
-        "d": "Humidity affects air properties marginally; it does not justify doubling structural safety factors.",
-        "correct": "20-typhoon/year exposure with 5–6 destructive events justifies 1.75–2.0g safety factors; this is a hard constraint specific to Philippine Typhoon Belt geography.",
-        "takeaway": "20-typhoon/year exposure with 5–6 destructive events justifies 1.75–2.0g safety factors; this is a hard constraint specific to Philippine Typhoon Belt geography."
+        "correct": "Give priority to wind-driven rain protection, roof drainage, and durable protected openings. This is supported by the Batch 132 local source map for Philippine Tropical Climate and Design Response.",
+        "takeaway": "Philippine Tropical Climate and Design Response: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "a": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "b": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "d": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": "Diurnal range suppression affects passive cooling strategy, not wind-load multipliers. Monsoon reversal is real but creates opposite-direction sequential loads, not additive stacking. Humidity affects air properties marginally; it does not justify doubling structural safety factors. 20-typhoon/year exposure with 5–6 destructive events justifies 1.75–2.0g safety factors; this is a hard constraint specific to Philippine Typhoon Belt geography. 20-typhoon/year exposure with 5–6 destructive events justifies 1.75–2.0g safety factors; this is a hard constraint specific to Philippine Typhoon Belt geography.",
-      "code_citation": null,
+      "explanation": "Give priority to wind-driven rain protection, roof drainage, and durable protected openings. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.source-capture.md (sha256:614c9faf26a196e136223bb73bbca80cc4d90f5c4a35aad8c28ef964e958efa5); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.refined.md (sha256:1f2e963233cffe70bb0889e3712c30c16d242b0233a0b8cfbc97683ec547da16).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.source-capture.md (sha256:614c9faf26a196e136223bb73bbca80cc4d90f5c4a35aad8c28ef964e958efa5); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.refined.md (sha256:1f2e963233cffe70bb0889e3712c30c16d242b0233a0b8cfbc97683ec547da16)",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -209,30 +207,30 @@
       "model_id": "ALE-THEO-004-01-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-05-06T16:22:32.56254+00:00",
-      "content_hash": "sha256:7044d6ec7661eb6a41b921e9cdc038b4ec6dc8139ce02f6192d1828808ee293f"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:2576eb9cab0971d93d86063434621319fda7da5c6c5835dc93f1dbd2e4dddae6"
     },
     {
       "question_id": "561527e6-cb32-4c97-ba08-46279eb6f758",
       "article_id": "567ba614-9dcd-4c76-8bf3-74478fd1291f",
       "topic_id": "3363831d-f404-4b78-8d93-2e2ec3364996",
-      "text": "What is the consequence of applying arid-climate thermal-mass cooling strategies (concrete walls, night ventilation) to a Philippine Type II building with nighttime temperatures of 24–25°C?",
+      "text": "What source-safe seasonal pattern matters for design?",
       "options": [
         {
           "id": "a",
-          "text": "Thermal mass absorbs daytime heat and radiates it during cool nights, reducing interior peak temperature by 5–8°C, which is beneficial for energy savings"
+          "text": "The Philippines has no meaningful seasonal wind shift."
         },
         {
           "id": "b",
-          "text": "The high nighttime humidity (80–90%) enables greater latent cooling, offsetting the thermal mass penalty, thus improving overall comfort"
+          "text": "All regions share the same monthly rainfall peak."
         },
         {
           "id": "c",
-          "text": "Night ventilation fans become unnecessary because natural convection removes stored heat, simplifying the mechanical system design"
+          "text": "Only temperature varies enough to affect architecture."
         },
         {
           "id": "d",
-          "text": "Concrete heated to 28°C during day cannot cool below 25°C at night; stored heat is re-radiated into occupied zones, degrading comfort"
+          "text": "Northeast monsoon, southwest monsoon, transition periods, and tropical cyclones affect rain and wind exposure."
         }
       ],
       "correct_option_id": "d",
@@ -241,14 +239,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This assumes sufficient diurnal range (15–20°C); tropical suppressed range (6°C) prevents this cooling mechanism.",
-        "b": "High humidity reduces evaporative cooling by 50–70%, worsening performance in Type II climates.",
-        "c": "Night ventilation fans still operate but push cool air into space where thermal mass does not discharge heat.",
-        "correct": "High nighttime temperatures (22–25°C) suppress thermal mass effectiveness; a wall at 28°C in 25°C ambient cannot release stored heat—the ΔT is insufficient for radiative cooling.",
-        "takeaway": "High nighttime temperatures (22–25°C) suppress thermal mass effectiveness; a wall at 28°C in 25°C ambient cannot release stored heat—the ΔT is insufficient for radiative cooling."
+        "correct": "Northeast monsoon, southwest monsoon, transition periods, and tropical cyclones affect rain and wind exposure. This is supported by the Batch 132 local source map for Philippine Tropical Climate and Design Response.",
+        "takeaway": "Philippine Tropical Climate and Design Response: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "a": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "b": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "c": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": "This assumes sufficient diurnal range (15–20°C); tropical suppressed range (6°C) prevents this cooling mechanism. High humidity reduces evaporative cooling by 50–70%, worsening performance in Type II climates. Night ventilation fans still operate but push cool air into space where thermal mass does not discharge heat. High nighttime temperatures (22–25°C) suppress thermal mass effectiveness; a wall at 28°C in 25°C ambient cannot release stored heat—the ΔT is insufficient for radiative cooling. High nighttime temperatures (22–25°C) suppress thermal mass effectiveness; a wall at 28°C in 25°C ambient cannot release stored heat—the ΔT is insufficient for radiative cooling.",
-      "code_citation": null,
+      "explanation": "Northeast monsoon, southwest monsoon, transition periods, and tropical cyclones affect rain and wind exposure. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.source-capture.md (sha256:614c9faf26a196e136223bb73bbca80cc4d90f5c4a35aad8c28ef964e958efa5); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.refined.md (sha256:1f2e963233cffe70bb0889e3712c30c16d242b0233a0b8cfbc97683ec547da16).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.source-capture.md (sha256:614c9faf26a196e136223bb73bbca80cc4d90f5c4a35aad8c28ef964e958efa5); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.refined.md (sha256:1f2e963233cffe70bb0889e3712c30c16d242b0233a0b8cfbc97683ec547da16)",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -261,30 +259,30 @@
       "model_id": "ALE-THEO-004-01-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-05-06T16:22:31.974355+00:00",
-      "content_hash": "sha256:2df2db96f177d8f28aa261d879d32b002e995ceb7a5fbc17f082e08c7cd91535"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:df10d76fa9d9bdbae0cf88b2b630cbcdecfef67880f6faf2990b92c68c4491ba"
     },
     {
       "question_id": "8d5861ed-0ad4-42a8-aa74-790043cfbcaa",
       "article_id": "567ba614-9dcd-4c76-8bf3-74478fd1291f",
       "topic_id": "3363831d-f404-4b78-8d93-2e2ec3364996",
-      "text": "Which Coronas Climate Classification type describes a region with no pronounced dry season and peak rainfall December through February?",
+      "text": "Why should mountains and prevailing winds be considered?",
       "options": [
         {
           "id": "a",
-          "text": "Type IV (Even Rainfall Distribution)"
+          "text": "They matter only to landscape design."
         },
         {
           "id": "b",
-          "text": "Type I (Pronounced Dry Season)"
+          "text": "They always cancel typhoon risk."
         },
         {
           "id": "c",
-          "text": "Type II (No Dry Season, High Winter Rain)"
+          "text": "They influence rainfall distribution and exposure across Philippine sites."
         },
         {
           "id": "d",
-          "text": "Type III (Short Dry Season, Interior Plateaus)"
+          "text": "They make climate type irrelevant."
         }
       ],
       "correct_option_id": "c",
@@ -293,14 +291,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Type IV has distributed rainfall but lacks the Dec–Feb peak intensity characteristic of Type II.",
-        "b": "Type I has a pronounced dry season November–April with wet season May–October; not perpetually damp.",
-        "d": "Type III has 1–3 month dry season, not year-round rainfall.",
-        "correct": "Type II is explicitly defined as Eastern Luzon, Eastern Visayas, and Eastern Mindanao with no month entirely dry and peak rainfall December–February, requiring year-round moisture control.",
-        "takeaway": "Type II is explicitly defined as Eastern Luzon, Eastern Visayas, and Eastern Mindanao with no month entirely dry and peak rainfall December–February, requiring year-round moisture control."
+        "correct": "They influence rainfall distribution and exposure across Philippine sites. This is supported by the Batch 132 local source map for Philippine Tropical Climate and Design Response.",
+        "takeaway": "Philippine Tropical Climate and Design Response: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "a": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "b": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "d": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "They influence rainfall distribution and exposure across Philippine sites. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.source-capture.md (sha256:614c9faf26a196e136223bb73bbca80cc4d90f5c4a35aad8c28ef964e958efa5); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.refined.md (sha256:1f2e963233cffe70bb0889e3712c30c16d242b0233a0b8cfbc97683ec547da16).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.source-capture.md (sha256:614c9faf26a196e136223bb73bbca80cc4d90f5c4a35aad8c28ef964e958efa5); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.refined.md (sha256:1f2e963233cffe70bb0889e3712c30c16d242b0233a0b8cfbc97683ec547da16)",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -313,30 +311,30 @@
       "model_id": "ALE-THEO-004-01-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:96a586218a1f773a568f1b16a709d3b86d036593535ca32abd93d1e806135242"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:f9b3b2127a0cedf7d2bf6a35bf04a336e807297cb58da3068337f57b10d7557b"
     },
     {
       "question_id": "d186c673-1ee4-44e2-a311-03f7b7ac690c",
       "article_id": "567ba614-9dcd-4c76-8bf3-74478fd1291f",
       "topic_id": "3363831d-f404-4b78-8d93-2e2ec3364996",
-      "text": "A building in Eastern Visayas experiences no dry season with December–February rainfall exceeding 300mm/month. What design priority must architects implement first?",
+      "text": "What is the risk of importing a temperate-climate wall strategy directly?",
       "options": [
         {
           "id": "a",
-          "text": "Design year-round moisture control and specify mold-resistant materials"
+          "text": "It may trap heat and moisture instead of supporting shade, ventilation, and rainfall control."
         },
         {
           "id": "b",
-          "text": "Maximize cross-ventilation during dry season to remove heat"
+          "text": "It will always reduce cooling loads in the Philippines."
         },
         {
           "id": "c",
-          "text": "Install fixed solar shading optimized for seasonal sun angle variation"
+          "text": "It is required by tropical maritime conditions."
         },
         {
           "id": "d",
-          "text": "Rely on thermal mass to buffer day-night temperature swings"
+          "text": "It makes site orientation unnecessary."
         }
       ],
       "correct_option_id": "a",
@@ -345,14 +343,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Type II has weak dry season; cross-ventilation strategy is secondary to moisture control.",
-        "c": "Seasonal solar variation is minimal driver in Type II; year-round moisture is primary constraint.",
-        "d": "High nighttime temperatures (22–25°C) in maritime tropics prevent thermal mass from radiating stored heat effectively.",
-        "correct": "Type II (Eastern Visayas) perpetual dampness requires explicit moisture management, vapor barriers, and mold-resistant finishes as the foundational strategy; natural drying is slower in no-dry-season climates.",
-        "takeaway": "Type II (Eastern Visayas) perpetual dampness requires explicit moisture management, vapor barriers, and mold-resistant finishes as the foundational strategy; natural drying is slower in no-dry-season climates."
+        "correct": "It may trap heat and moisture instead of supporting shade, ventilation, and rainfall control. This is supported by the Batch 132 local source map for Philippine Tropical Climate and Design Response.",
+        "takeaway": "Philippine Tropical Climate and Design Response: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "b": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "c": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "d": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "It may trap heat and moisture instead of supporting shade, ventilation, and rainfall control. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.source-capture.md (sha256:614c9faf26a196e136223bb73bbca80cc4d90f5c4a35aad8c28ef964e958efa5); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.refined.md (sha256:1f2e963233cffe70bb0889e3712c30c16d242b0233a0b8cfbc97683ec547da16).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.source-capture.md (sha256:614c9faf26a196e136223bb73bbca80cc4d90f5c4a35aad8c28ef964e958efa5); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.refined.md (sha256:1f2e963233cffe70bb0889e3712c30c16d242b0233a0b8cfbc97683ec547da16)",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -365,30 +363,30 @@
       "model_id": "ALE-THEO-004-01-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:19422b8329591caa0707a05c9c53ed324b85aa25e55be5a5edb70dc5712ea066"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:146d41e8196cb6be9af8edee6b4aeb5bc3e1493077354ba92b79e972f82e0126"
     },
     {
       "question_id": "6a745678-7ed1-4540-a787-62f9df3c70dc",
       "article_id": "567ba614-9dcd-4c76-8bf3-74478fd1291f",
       "topic_id": "3363831d-f404-4b78-8d93-2e2ec3364996",
-      "text": "A developer is designing buildings for three Philippine regions: Western Luzon (Type I), Eastern Luzon (Type II), and Central Luzon (Type IV). Explain why identical building designs will fail in each location and specify one critical adaptation for each region.",
+      "text": "Which early design question is source-safe for a humid Philippine site?",
       "options": [
         {
           "id": "a",
-          "text": "Type I and IV are equivalent; Type II alone requires modifications for perpetual dampness, including enhanced drainage systems"
+          "text": "How can the building store as much solar heat as possible?"
         },
         {
           "id": "b",
-          "text": "Type I: maximize permanent openings and dry-season ventilation. Type II: require year-round moisture barriers and operable enclosures. Type IV: employ continuous ventilation independent of season"
+          "text": "How will the building shade heat gain while staying ventilated and protected from rain?"
         },
         {
           "id": "c",
-          "text": "Type I: ignore moisture control. Type II: add temporary dehumidification during dry season. Type IV: use permanent operable screens to manage airflow"
+          "text": "How can all openings be permanently sealed?"
         },
         {
           "id": "d",
-          "text": "All regions require identical roof insulation (50mm) and window specifications; moisture control is secondary, focusing instead on structural integrity"
+          "text": "How can rainwater be ignored after roof selection?"
         }
       ],
       "correct_option_id": "b",
@@ -397,14 +395,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Type I and IV differ; Type I has dry season allowing seasonal design strategies, while Type IV has distributed rainfall year-round.",
-        "c": "Type II does not have 'dry season' for temporary fixes; year-round moisture control is non-negotiable.",
-        "d": "Window U-values and insulation must vary by climate zone; treating all regions identically violates Coronas classification logic.",
-        "correct": "Each Coronas type has distinct seasonal/year-round patterns: Type I can employ permanent openings; Type II needs permanent moisture management; Type IV requires year-round ventilation strategy. design-implications summary emphasizes this climate-specific differentiation.",
-        "takeaway": "design-implications summary emphasizes this climate-specific differentiation."
+        "correct": "How will the building shade heat gain while staying ventilated and protected from rain? This is supported by the Batch 132 local source map for Philippine Tropical Climate and Design Response.",
+        "takeaway": "Philippine Tropical Climate and Design Response: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "a": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "c": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "d": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "How will the building shade heat gain while staying ventilated and protected from rain? The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.source-capture.md (sha256:614c9faf26a196e136223bb73bbca80cc4d90f5c4a35aad8c28ef964e958efa5); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.refined.md (sha256:1f2e963233cffe70bb0889e3712c30c16d242b0233a0b8cfbc97683ec547da16).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.source-capture.md (sha256:614c9faf26a196e136223bb73bbca80cc4d90f5c4a35aad8c28ef964e958efa5); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.refined.md (sha256:1f2e963233cffe70bb0889e3712c30c16d242b0233a0b8cfbc97683ec547da16)",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -417,30 +415,30 @@
       "model_id": "ALE-THEO-004-01-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a947563a1c9c17e750c39d2b9916fbd26c0124286b7e929603f7aafb04db8e46"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:a5d91fc3fcd0fb675bb5d216cddecfe8127b544bec57632a8f3cbcbb06478836"
     },
     {
       "question_id": "d139d08e-b2ad-484b-9cac-f7336c741ddf",
       "article_id": "567ba614-9dcd-4c76-8bf3-74478fd1291f",
       "topic_id": "3363831d-f404-4b78-8d93-2e2ec3364996",
-      "text": "The orographic rainfall effect explains why certain Philippine regions receive 5,000mm annually while leeward interior valleys receive 1,000mm. What geographic feature creates this extreme disparity?",
+      "text": "What climate issue should be considered with typhoon season?",
       "options": [
         {
           "id": "a",
-          "text": "Typhoon tracks avoid mountainous terrain, concentrating rainfall only in coastal valleys, which are more exposed to direct storm paths"
+          "text": "Only interior color selection is affected."
         },
         {
           "id": "b",
-          "text": "Moisture-laden air ascending over mountain ranges produces enhanced precipitation on windward slopes; leeward slopes receive less rainfall due to rain shadow"
+          "text": "Wind, rain, cloudiness, and envelope durability can shape form and detailing."
         },
         {
           "id": "c",
-          "text": "Temperature inversions at different altitudes trap moisture, preventing it from reaching the ground in significant amounts"
+          "text": "Ventilation openings should never be protected."
         },
         {
           "id": "d",
-          "text": "Coastal proximity determines rainfall; interior regions are always drier regardless of mountains, due to prevailing wind patterns"
+          "text": "Roof drainage can be undersized because storms are brief."
         }
       ],
       "correct_option_id": "b",
@@ -449,14 +447,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Typhoon frequency and track behavior do not explain systematic orographic patterns.",
-        "c": "Temperature inversions affect air stability, not the primary driver of 5,000mm vs. 1,000mm disparity.",
-        "d": "Interior mountains create rain-shadow effect despite remoteness from coast.",
-        "correct": "Orographic rainfall is explicitly defined: 'Enhanced precipitation caused by moisture-laden air ascending over mountain ranges.' Windward coasts receive 3,000–5,000mm; leeward interior valleys receive 1,000mm. This is the mechanism explaining Coronas regional variation.",
-        "takeaway": "This is the mechanism explaining Coronas regional variation."
+        "correct": "Wind, rain, cloudiness, and envelope durability can shape form and detailing. This is supported by the Batch 132 local source map for Philippine Tropical Climate and Design Response.",
+        "takeaway": "Philippine Tropical Climate and Design Response: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "a": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "c": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "d": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Wind, rain, cloudiness, and envelope durability can shape form and detailing. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.source-capture.md (sha256:614c9faf26a196e136223bb73bbca80cc4d90f5c4a35aad8c28ef964e958efa5); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.refined.md (sha256:1f2e963233cffe70bb0889e3712c30c16d242b0233a0b8cfbc97683ec547da16).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.source-capture.md (sha256:614c9faf26a196e136223bb73bbca80cc4d90f5c4a35aad8c28ef964e958efa5); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.refined.md (sha256:1f2e963233cffe70bb0889e3712c30c16d242b0233a0b8cfbc97683ec547da16)",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -469,30 +467,30 @@
       "model_id": "ALE-THEO-004-01-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f25c976cadf668d038126cab5ef3277cf1be39d8a98c15b0055890ef9301d04f"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:e8e2fb37d74bf7a5c761052a7f212788161d655a1f532f163ab596e58506e142"
     },
     {
       "question_id": "16723f70-226b-4f7c-80b7-13c339467cef",
       "article_id": "567ba614-9dcd-4c76-8bf3-74478fd1291f",
       "topic_id": "3363831d-f404-4b78-8d93-2e2ec3364996",
-      "text": "Contrast how a Western Visayas (Type I) architect and an Eastern Visayas (Type II) architect would prioritize envelope and ventilation design differently, given their respective climates.",
+      "text": "Which choice best links climate type to design action?",
       "options": [
         {
           "id": "a",
-          "text": "Type II is hotter; Type I strategy focuses on heat rejection. Design is otherwise equivalent, with no significant differences in material choice"
+          "text": "Use the same facade detail across all islands."
         },
         {
           "id": "b",
-          "text": "Type I requires sealed envelopes for dry-season dust control; Type II allows open plans without moisture risk, considering the frequent rainfall"
+          "text": "Base all decisions on average annual temperature alone."
         },
         {
           "id": "c",
-          "text": "Type I can exploit dry-season permanent openings; Type II must design for year-round moisture barriers, operable enclosures, and continuous ventilation regardless of season"
+          "text": "Use local rainfall and wind exposure to tune shading, openings, roof form, and drainage."
         },
         {
           "id": "d",
-          "text": "Both regions have identical strategies; Coronas type does not affect design differentiation, as both prioritize energy efficiency"
+          "text": "Choose materials only by appearance."
         }
       ],
       "correct_option_id": "c",
@@ -501,14 +499,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Both are hot; the key difference is seasonal humidity and drying opportunity, not absolute temperature.",
-        "b": "This reverses reality; Type II perpetual dampness requires continuous moisture control, not just seasonal dust management.",
-        "d": "This ignores central thesis: Coronas type directly predicts which design strategies apply.",
-        "correct": "Western Visayas Type I (dry Nov–Apr, wet May–Oct) allows seasonal design adaptation; permanent openings function safely during dry season. Eastern Visayas Type II (no dry month, high Dec–Feb rain) demands year-round moisture management, material durability focus, and ventilation that operates continuously. These are fundamentally different design logics.",
-        "takeaway": "These are fundamentally different design logics."
+        "correct": "Use local rainfall and wind exposure to tune shading, openings, roof form, and drainage. This is supported by the Batch 132 local source map for Philippine Tropical Climate and Design Response.",
+        "takeaway": "Philippine Tropical Climate and Design Response: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "a": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "b": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "d": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": "Both are hot; the key difference is seasonal humidity and drying opportunity, not absolute temperature. This reverses reality; Type II perpetual dampness requires continuous moisture control, not just seasonal dust management. This ignores central thesis: Coronas type directly predicts which design strategies apply. Western Visayas Type I (dry Nov–Apr, wet May–Oct) allows seasonal design adaptation; permanent openings function safely during dry season. Eastern Visayas Type II (no dry month, high Dec–Feb rain) demands year-round moisture management, material durability focus, and ventilation that operates continuously. These are fundamentally different design logics. These are fundamentally different design logics.",
-      "code_citation": null,
+      "explanation": "Use local rainfall and wind exposure to tune shading, openings, roof form, and drainage. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.source-capture.md (sha256:614c9faf26a196e136223bb73bbca80cc4d90f5c4a35aad8c28ef964e958efa5); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.refined.md (sha256:1f2e963233cffe70bb0889e3712c30c16d242b0233a0b8cfbc97683ec547da16).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.source-capture.md (sha256:614c9faf26a196e136223bb73bbca80cc4d90f5c4a35aad8c28ef964e958efa5); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.refined.md (sha256:1f2e963233cffe70bb0889e3712c30c16d242b0233a0b8cfbc97683ec547da16)",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -521,30 +519,30 @@
       "model_id": "ALE-THEO-004-01-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-05-06T16:22:32.323822+00:00",
-      "content_hash": "sha256:6856a207916c568c22b13d49336896884af66d26f9f768058418fbbe9b259716"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:6a034c124dbe57af0ada9adcb62bcd2071c04eb1d5aaee6a48f340ad3675ea13"
     },
     {
       "question_id": "7aea0d5a-3e24-4633-9581-19cc401d3bb1",
       "article_id": "567ba614-9dcd-4c76-8bf3-74478fd1291f",
       "topic_id": "3363831d-f404-4b78-8d93-2e2ec3364996",
-      "text": "A painted concrete block wall in a Type II zone (no dry month; Dec–Feb peak 300+ mm/month rainfall) shows spalling and cracking after 3 years. Why did this wall fail while the same design succeeds in a Type III zone with 2-month dry season?",
+      "text": "What does tropical maritime climate imply for external spaces?",
       "options": [
         {
           "id": "a",
-          "text": "Type III has stronger concrete mix; Type II uses lower-quality materials, which are not suitable for high moisture environments"
+          "text": "All outdoor circulation should be exposed to sun and rain."
         },
         {
           "id": "b",
-          "text": "Painted finishes are uniformly problematic in all tropical zones; regional climate type is irrelevant to wall durability, as the paint itself is the primary issue"
+          "text": "Verandas and overhangs are irrelevant in humid climates."
         },
         {
           "id": "c",
-          "text": "Type II annual rainfall total (3,500mm) exceeds Type III (2,200mm) by 1,300mm; the wall absorbs more water, leading to increased internal pressure and eventual failure"
+          "text": "External spaces must be avoided completely."
         },
         {
           "id": "d",
-          "text": "Type II has no dry month allowing interior moisture to dry; paint traps water in concrete, causing spalling. Type III's 2-month dry season allows paint curing and wall drying, preventing failure"
+          "text": "Covered, shaded, rain-protected, ventilated transitions can support daily use."
         }
       ],
       "correct_option_id": "d",
@@ -553,14 +551,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Same concrete quality fails/succeeds based on climate drying opportunity, not material grade.",
-        "b": "Climate type directly determines whether painted finishes trap moisture; this is highly relevant to design success/failure.",
-        "c": "Rainfall volume matters, but the critical difference is seasonal availability for drying, not total millimeters.",
-        "correct": "Type II has no dry month; paint traps interior moisture in concrete, causing spalling. Type III dry season (Nov–Apr) allows wall drying and paint curing.' This is a quintessential example of Coronas-type-specific material selection.",
-        "takeaway": "Type III dry season (Nov–Apr) allows wall drying and paint curing.' This is a quintessential example of Coronas-type-specific material selection."
+        "correct": "Covered, shaded, rain-protected, ventilated transitions can support daily use. This is supported by the Batch 132 local source map for Philippine Tropical Climate and Design Response.",
+        "takeaway": "Philippine Tropical Climate and Design Response: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "a": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "b": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "c": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Covered, shaded, rain-protected, ventilated transitions can support daily use. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.source-capture.md (sha256:614c9faf26a196e136223bb73bbca80cc4d90f5c4a35aad8c28ef964e958efa5); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.refined.md (sha256:1f2e963233cffe70bb0889e3712c30c16d242b0233a0b8cfbc97683ec547da16).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.source-capture.md (sha256:614c9faf26a196e136223bb73bbca80cc4d90f5c4a35aad8c28ef964e958efa5); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.refined.md (sha256:1f2e963233cffe70bb0889e3712c30c16d242b0233a0b8cfbc97683ec547da16)",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -573,30 +571,30 @@
       "model_id": "ALE-THEO-004-01-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c76fae44ddb5206c1624ff8a1e398c0dfaf642d6053c841e9509718c191b30a7"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:4d1025612e81b5f5a16484d93f2f450ace3d9161ec07a99761b27c675adf9c0c"
     },
     {
       "question_id": "cd317beb-bc62-49c6-a718-0a41f478643e",
       "article_id": "567ba614-9dcd-4c76-8bf3-74478fd1291f",
       "topic_id": "3363831d-f404-4b78-8d93-2e2ec3364996",
-      "text": "A water management design for a Type III interior Mindanao building (2,200mm annual rainfall, 2-month dry season) must account for peak monthly rainfall. During a typhoon event, what is the critical design parameter overlooked when relying on annual rainfall averages?",
+      "text": "Which claim should be rejected without a checked source?",
       "options": [
         {
           "id": "a",
-          "text": "Annual 2,200mm divided by 12 months = 183mm/month average is sufficient for gutter sizing, which ignores the variability of rainfall distribution"
+          "text": "The Philippines has high humidity and abundant rainfall."
         },
         {
           "id": "b",
-          "text": "The 2-month dry season allows permanent openings without flood risk; moisture is not a constraint, which overlooks potential typhoon impacts"
+          "text": "Rainfall distribution varies by region."
         },
         {
           "id": "c",
-          "text": "Peak daily typhoon rainfall can exceed 400mm in a single 18–48 hour event; gutter and drainage must handle peaks, not averages"
+          "text": "A precise universal comfort temperature or storm load value for every Philippine building type."
         },
         {
           "id": "d",
-          "text": "Type III climate is stable; typhoon protection is secondary to thermal comfort design, which is a flawed assumption given the region's weather patterns"
+          "text": "Monsoon seasons influence climate exposure."
         }
       ],
       "correct_option_id": "c",
@@ -605,14 +603,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Averaging masks extremes; a typhoon event discharges 2× monthly average in hours.",
-        "b": "Even Type III with dry season experiences typhoon exposure; permanent openings invite water infiltration.",
-        "d": "Typhoon is a structural/water management constraint, not merely a thermal comfort issue in tropical design.",
-        "correct": "Confusing annual rainfall total with peak monthly rates' is a critical mistake. Type II might average 2,500mm but dump 400mm in a typhoon; drainage must size for peaks. This principle applies to Type III as well.",
-        "takeaway": "This principle applies to Type III as well."
+        "correct": "A precise universal comfort temperature or storm load value for every Philippine building type. This is supported by the Batch 132 local source map for Philippine Tropical Climate and Design Response.",
+        "takeaway": "Philippine Tropical Climate and Design Response: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "a": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "b": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "d": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "A precise universal comfort temperature or storm load value for every Philippine building type. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.source-capture.md (sha256:614c9faf26a196e136223bb73bbca80cc4d90f5c4a35aad8c28ef964e958efa5); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.refined.md (sha256:1f2e963233cffe70bb0889e3712c30c16d242b0233a0b8cfbc97683ec547da16).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.source-capture.md (sha256:614c9faf26a196e136223bb73bbca80cc4d90f5c4a35aad8c28ef964e958efa5); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.refined.md (sha256:1f2e963233cffe70bb0889e3712c30c16d242b0233a0b8cfbc97683ec547da16)",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -625,8 +623,10 @@
       "model_id": "ALE-THEO-004-01-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:52d2ef0d2e102c52b457e0bdb87ae8ebd6b2940f9d1529ab47de592fac76ca15"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:cd41cda655fa24dc095ba8d44fb4cb4718e6026367076f8f899b92b4995664c0"
     }
-  ]
+  ],
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:8927c3d34d5eba8663890e7ce1a5439fe8e3ab87a4fdeefdd3265b5b1f613441"
 }

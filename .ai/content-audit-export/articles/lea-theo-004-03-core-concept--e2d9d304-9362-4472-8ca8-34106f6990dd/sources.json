@@ -1,35 +1,52 @@
 {
   "article_id": "e2d9d304-9362-4472-8ca8-34106f6990dd",
   "hash_algorithm": "sha256",
-  "source_count": 1,
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "toa4-tropical-architecture-local-raw-pdf--b060-e2d9d304-01",
+      "source_id": "batch-132-004-03-source-capture",
       "article_id": "e2d9d304-9362-4472-8ca8-34106f6990dd",
-      "label": "TOA 4 Tropical Architecture - local raw PDF",
+      "label": "Batch 132 source capture - Tropical Green Building Design in the Philippines",
       "url": null,
-      "source_type": "local_raw_pdf",
-      "description": "TOA 4 Tropical Architecture - local raw PDF; local raw PDF checked first; refined markdown used only as locator. TOA 4 Tropical Architecture refined markdown lines 1562-1573, 513-591, 622-670, 708-874, and raw PDF pages 180-181, 71-78, 81-84, 87-90, and 104.",
+      "source_type": "local_source_capture",
+      "description": "Local source capture for Tropical Green Building Design in the Philippines; official source URLs and local raw source hashes are recorded in the artifact.",
       "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-05-11T21:02:00.000+08:00",
-      "updated_at": "2026-05-11T21:02:00.000+08:00",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
-      "raw_pdf_sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
-      "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
-      "source_locator": "TOA 4 Tropical Architecture refined markdown lines 1562-1573, 513-591, 622-670, 708-874, and raw PDF pages 180-181, 71-78, 81-84, 87-90, and 104",
+      "created_at": "2026-05-14T05:41:22.456+08:00",
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.source-capture.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.source-capture.md",
+      "sha256": "sha256:b9dd47bfcac0ee0dd8d24a6a10aaeaa4facffb432448f79c380c9c18d8454cf9",
+      "source_locator": "TOA 4 Tropical Architecture refined markdown lines 1562-1573; ADB Philippine Green Building Code official page lines 40-43 and 79-80; BERDE Credit Library official documentation lines 141, 151, 163, 181, 195, 213, 231, 254, 275, and 291",
       "checked_markdown_lines": [
         "TOA 4 Tropical Architecture refined markdown lines 1562-1573",
-        "TOA 4 Tropical Architecture refined markdown lines 513-591",
-        "TOA 4 Tropical Architecture refined markdown lines 622-670",
-        "TOA 4 Tropical Architecture refined markdown lines 708-874"
+        "ADB Philippine Green Building Code official page lines 40-43 and 79-80",
+        "BERDE Credit Library official documentation lines 141, 151, 163, 181, 195, 213, 231, 254, 275, and 291"
       ],
-      "checked_pdf_pages": "raw PDF pages 71-78, 81-84, 87-90, 92-100, 104, 106-110, 121, 140, 143-148, 151, 163, 172, 180-181, 187, and 194",
-      "local_audit_note": "Primary truth is the local raw PDF family; refined markdown line ranges are locator aids for the checked claims."
+      "local_audit_note": "Cited Batch 132 source artifact. Official web material was captured locally before article/question use."
+    },
+    {
+      "source_id": "batch-132-004-03-refined-conversion",
+      "article_id": "e2d9d304-9362-4472-8ca8-34106f6990dd",
+      "label": "Batch 132 refined conversion - Tropical Green Building Design in the Philippines",
+      "url": null,
+      "source_type": "local_refined_conversion",
+      "description": "Refined source-safe conversion for Tropical Green Building Design in the Philippines.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-14T05:41:22.456+08:00",
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.refined.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.refined.md",
+      "sha256": "sha256:f4a553fa517aa60b086f44713e51936375d1229e78e34b06554a7906f2dd8266",
+      "source_locator": "Derived from vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.source-capture.md (sha256:b9dd47bfcac0ee0dd8d24a6a10aaeaa4facffb432448f79c380c9c18d8454cf9)",
+      "checked_markdown_lines": [
+        "TOA 4 Tropical Architecture refined markdown lines 1562-1573",
+        "ADB Philippine Green Building Code official page lines 40-43 and 79-80",
+        "BERDE Credit Library official documentation lines 141, 151, 163, 181, 195, 213, 231, 254, 275, and 291"
+      ],
+      "local_audit_note": "Used as the article and linked-question citation layer after source capture."
     }
   ],
-  "sources_hash": "sha256:ed39c699b34b45200c9c29a6099f39325dff734aacb0ac9f02c83c21c1e72411"
+  "sources_hash": "sha256:ad30fb546e30660346a185605fa4105256d6b28a90509bd33d60ea91921ceb35"
 }

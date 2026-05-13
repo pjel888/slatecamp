@@ -9297,3 +9297,14 @@ Git handoff blocker: fatal: Unable to create '/Users/philiplewis/slatecamp/.git/
 Next pointer after acceptance: continue from the next sourceable non-prac residual cluster after lea-theo-003-08-core-concept, unless live artifacts show a later accepted batch.
 
 <!-- batch-131-handoff:end -->
+
+<!-- batch-132-handoff:start -->
+## Batch 132 Handoff
+
+Status: passed_local_validation_git_index_blocked_handoff
+Generated: 2026-05-14T05:43:15.598+08:00
+
+Batch 132 improved five residual non-prac Theory bundles after Batch 131: lea-theo-003-09, 004-01, 004-02, 004-03, and 004-07. Local source captures were written under `vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/` and refined conversions under `vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/`. No Supabase push, deploy, production DB mutation, main merge, force-push, auth/secret edit, or unrelated dirty-file staging is authorized.
+
+Git handoff blocker: fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted. Hermes should run `git add -f --pathspec-from-file=.ai/03_plans/batch-132-git-handoff-stage-paths.txt`, run cached diff checks, commit `chore(content): accept source-audited batch 132`, and push `origin/3dlab-gray-viewport-bg`. The `-f` is required because the Batch 132 Vitruvius source artifacts are under an ignored source layer.
+<!-- batch-132-handoff:end -->

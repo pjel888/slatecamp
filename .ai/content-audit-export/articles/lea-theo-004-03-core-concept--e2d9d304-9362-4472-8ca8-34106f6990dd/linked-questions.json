@@ -1,30 +1,28 @@
 {
   "article_id": "e2d9d304-9362-4472-8ca8-34106f6990dd",
-  "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:66c8ea9b13060586f195ba10b9a1d2d349b353c6aa44b3926ab893702d083d1e",
   "question_count": 11,
   "questions": [
     {
       "question_id": "e759abce-38b1-46ff-a4bc-5a527003da34",
       "article_id": "e2d9d304-9362-4472-8ca8-34106f6990dd",
       "topic_id": "146b32e7-f030-465e-8783-520fe0df6d0d",
-      "text": "What is the legal foundation requiring Philippine buildings to reduce greenhouse gas emissions and adapt to climate impacts including typhoons and flooding?",
+      "text": "How should Philippine green building design begin in a tropical project?",
       "options": [
         {
           "id": "a",
-          "text": "BERDE voluntary green rating system, which provides guidelines but lacks legal enforcement"
+          "text": "Start with imported labels and ignore local climate."
         },
         {
           "id": "b",
-          "text": "Republic Act 9729 (Philippine Climate Change Act, 2009) and the Philippine Green Building Code (2015)"
+          "text": "Reduce cooling and resource loads through climate-responsive design before chasing rating language."
         },
         {
           "id": "c",
-          "text": "International LEED standard adapted for Philippines, offering a framework but not a legal mandate"
+          "text": "Treat greenery as a substitute for code compliance."
         },
         {
           "id": "d",
-          "text": "Local municipal building ordinances without national framework, leading to inconsistent application"
+          "text": "Prioritize facade novelty over water and energy performance."
         }
       ],
       "correct_option_id": "b",
@@ -33,14 +31,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "BERDE is a voluntary green building rating system that rewards performance above the mandatory PGBC minimums.",
-        "c": "LEED is an international system; the PGBC is the mandatory national standard calibrated for Philippine tropical conditions.",
-        "d": "The PGBC establishes a mandatory national framework; local ordinances must align with national standards.",
-        "correct": "RA 9729 (Climate Change Act of 2009) establishes the national framework for climate adaptation and mitigation, while the Philippine Green Building Code (PGBC) of 2015, issued as a referral code to PD 1096, sets mandatory minimum green building standards for energy efficiency, water efficiency, and site sustainability [citation:2][citation:4].",
-        "takeaway": "RA 9729 (Climate Change Act of 2009) establishes the national framework for climate adaptation and mitigation, while the Philippine Green Building Code (PGBC) of 2015, issued as a referral code to PD 1096, sets mandatory minimum green building standards for energy efficiency, water efficiency, and site sustainability [citation:2][citation:4]."
+        "correct": "Reduce cooling and resource loads through climate-responsive design before chasing rating language. This is supported by the Batch 132 local source map for Tropical Green Building Design in the Philippines.",
+        "takeaway": "Tropical Green Building Design in the Philippines: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "a": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "c": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "d": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": null,
-      "code_citation": "PD 1096 (National Building Code), PGBC 2015, RA 9729",
+      "explanation": "Reduce cooling and resource loads through climate-responsive design before chasing rating language. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.source-capture.md (sha256:b9dd47bfcac0ee0dd8d24a6a10aaeaa4facffb432448f79c380c9c18d8454cf9); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.refined.md (sha256:f4a553fa517aa60b086f44713e51936375d1229e78e34b06554a7906f2dd8266).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.source-capture.md (sha256:b9dd47bfcac0ee0dd8d24a6a10aaeaa4facffb432448f79c380c9c18d8454cf9); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.refined.md (sha256:f4a553fa517aa60b086f44713e51936375d1229e78e34b06554a7906f2dd8266)",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -53,30 +51,30 @@
       "model_id": "ALE-THEO-004-03-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a311b553f2e23f225a54546a0a1b923b8f55e6afdcdb49435b85dc26ad28f43b"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:a561e335906f1ca871fa3aa5eba3efd723ee159be7ee010d8fb13d5c196606e2"
     },
     {
       "question_id": "428b1ef7-1fdf-4a31-b0ba-c148e696997b",
       "article_id": "e2d9d304-9362-4472-8ca8-34106f6990dd",
       "topic_id": "146b32e7-f030-465e-8783-520fe0df6d0d",
-      "text": "A developer achieves Philippine Green Building Code compliance through Path A (prescriptive method: meeting specific envelope, insulation, and lighting requirements per PGBC tables). Can this building claim BERDE certification?",
+      "text": "What does the checked Green Building Code source support?",
       "options": [
         {
           "id": "a",
-          "text": "Yes, if the building meets the exact Code minimums, and additional sustainability measures are documented"
+          "text": "A claim that every BERDE credit is mandatory code."
         },
         {
           "id": "b",
-          "text": "No. Code compliance is necessary but insufficient for BERDE. Prescriptive minimums may achieve only baseline compliance; BERDE requires exceeding baseline across multiple categories (energy, water, materials, site ecology) to earn sufficient points for certification"
+          "text": "Scope areas including water efficiency, energy efficiency, renewable energy, sustainable materials, site sustainability, and indoor environmental quality."
         },
         {
           "id": "c",
-          "text": "Yes, Code compliance guarantees BERDE certification, provided the documentation is submitted within the required timeframe"
+          "text": "A universal certification score for all buildings."
         },
         {
           "id": "d",
-          "text": "Only if the building is in a specific climate type, which aligns with the BERDE criteria for regional adaptations"
+          "text": "A rule that passive design is optional decoration."
         }
       ],
       "correct_option_id": "b",
@@ -85,14 +83,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Meeting Code minimums does not guarantee BERDE points; intentional optimization above baseline is required.",
-        "c": "This confuses regulatory compliance with voluntary certification; they are independent pathways.",
-        "d": "BERDE eligibility is not determined by climate type; all regions may pursue certification.",
-        "correct": "The PGBC sets mandatory minimum standards (the \"floor\") for energy efficiency, water efficiency, material sustainability, and site sustainability [citation:2][citation:4]. BERDE is a voluntary rating system that requires exceeding these minimums across multiple categories to earn points. Code compliance is necessary but not sufficient for BERDE certification.",
-        "takeaway": "Code compliance is necessary but not sufficient for BERDE certification."
+        "correct": "Scope areas including water efficiency, energy efficiency, renewable energy, sustainable materials, site sustainability, and indoor environmental quality. This is supported by the Batch 132 local source map for Tropical Green Building Design in the Philippines.",
+        "takeaway": "Tropical Green Building Design in the Philippines: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "a": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "c": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "d": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": null,
-      "code_citation": "PGBC 2015",
+      "explanation": "Scope areas including water efficiency, energy efficiency, renewable energy, sustainable materials, site sustainability, and indoor environmental quality. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.source-capture.md (sha256:b9dd47bfcac0ee0dd8d24a6a10aaeaa4facffb432448f79c380c9c18d8454cf9); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.refined.md (sha256:f4a553fa517aa60b086f44713e51936375d1229e78e34b06554a7906f2dd8266).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.source-capture.md (sha256:b9dd47bfcac0ee0dd8d24a6a10aaeaa4facffb432448f79c380c9c18d8454cf9); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.refined.md (sha256:f4a553fa517aa60b086f44713e51936375d1229e78e34b06554a7906f2dd8266)",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -105,30 +103,30 @@
       "model_id": "ALE-THEO-004-03-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:147d3bcc418b09322e03636a5baeb96ccc2a38838aa096a06099930e9ef81dc0"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:4ad819b6e0645d05d8c0e61bb2c35a146278e24932fa134097ae8968d9ccd417"
     },
     {
       "question_id": "3b5e5bf2-3c2b-4b82-9312-47aa89b59408",
       "article_id": "e2d9d304-9362-4472-8ca8-34106f6990dd",
       "topic_id": "146b32e7-f030-465e-8783-520fe0df6d0d",
-      "text": "An 1,800 m² retail-residential building in a regional city (below PGBC coverage thresholds) has budget constraints. Should architects recommend Path A (prescriptive) or Path B (performance) compliance with Philippine Green Building Code?",
+      "text": "How should code compliance and BERDE be distinguished?",
       "options": [
         {
           "id": "a",
-          "text": "Path B is required in all regions regardless of building size, which is not accurate"
+          "text": "A BERDE score automatically proves code compliance."
         },
         {
           "id": "b",
-          "text": "Neither path is appropriate; municipal codes supersede national Green Building Code, which is misleading"
+          "text": "Code compliance automatically grants BERDE certification."
         },
         {
           "id": "c",
-          "text": "Path A (prescriptive). Buildings below the mandatory PGBC coverage thresholds (residential: 20,000 m²; office/commercial: 10,000 m²) may not be required to comply. However, if voluntary compliance is pursued, Path A is typically more cost-effective for smaller buildings as it uses prescriptive tables without requiring energy modeling. Budget constraints favor Path A"
+          "text": "Code compliance and voluntary rating assessment are related but not interchangeable."
         },
         {
           "id": "d",
-          "text": "Path B is always superior; design simulation is mandatory regardless of budget or building size, which is not always the case"
+          "text": "Both systems should be ignored if the building is tropical."
         }
       ],
       "correct_option_id": "c",
@@ -137,14 +135,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Path B is not mandatory for buildings below coverage thresholds or in all regions.",
-        "b": "The PGBC is a national referral code under PD 1096; municipal codes implement, not replace, national standards.",
-        "d": "Path B flexibility may be valuable for large or complex buildings but is not universally mandatory or cost-effective for small buildings.",
-        "correct": "The PGBC applies to new construction of buildings meeting minimum TGFA thresholds: residential condominiums at 20,000 m²; office, school, hospital, hotel at 10,000 m²; malls at 15,000 m² [citation:1][citation:4][citation:5]. Buildings below these thresholds are not mandatory covered. For voluntary compliance, Path A (prescriptive) is typically more cost-effective for smaller buildings as it uses prescriptive tables without requiring complex energy modeling. Budget constraints favor Path A over Path B (performance-based modeling).",
-        "takeaway": "Budget constraints favor Path A over Path B (performance-based modeling)."
+        "correct": "Code compliance and voluntary rating assessment are related but not interchangeable. This is supported by the Batch 132 local source map for Tropical Green Building Design in the Philippines.",
+        "takeaway": "Tropical Green Building Design in the Philippines: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "a": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "b": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "d": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": null,
-      "code_citation": "PGBC 2015, PD 1096",
+      "explanation": "Code compliance and voluntary rating assessment are related but not interchangeable. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.source-capture.md (sha256:b9dd47bfcac0ee0dd8d24a6a10aaeaa4facffb432448f79c380c9c18d8454cf9); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.refined.md (sha256:f4a553fa517aa60b086f44713e51936375d1229e78e34b06554a7906f2dd8266).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.source-capture.md (sha256:b9dd47bfcac0ee0dd8d24a6a10aaeaa4facffb432448f79c380c9c18d8454cf9); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.refined.md (sha256:f4a553fa517aa60b086f44713e51936375d1229e78e34b06554a7906f2dd8266)",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -157,30 +155,30 @@
       "model_id": "ALE-THEO-004-03-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:60f4e022a8dd0acebb61a345a1a01e965091a408b0f285c807bd8ce874c053cd"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:cd821cb7430c1ab26118f96f1981ba62ed7282f03e3c7dc3a3fc23586c252585"
     },
     {
       "question_id": "ee75ebcb-f9b2-4343-9510-1f3f35f1179d",
       "article_id": "e2d9d304-9362-4472-8ca8-34106f6990dd",
       "topic_id": "146b32e7-f030-465e-8783-520fe0df6d0d",
-      "text": "BERDE emphasizes operational energy efficiency and material selection. How does this support tropical architecture standards?",
+      "text": "Which BERDE category reference is source-safe?",
       "options": [
         {
           "id": "a",
-          "text": "BERDE requires balanced performance across multiple categories including energy efficiency, water efficiency, material sustainability, and site ecology. This supports tropical architecture by incentivizing passive design strategies (natural ventilation, daylighting, shading), efficient mechanical systems appropriate for tropical climates, water conservation suited to seasonal rainfall patterns, and locally sourced, low-carbon materials"
+          "text": "BERDE includes categories such as management, land use and ecology, water, energy, transportation, IEQ, materials, emissions, and waste."
         },
         {
           "id": "b",
-          "text": "Embodied carbon tracking is voluntary; mandatory requirement does not exist, allowing flexibility in material selection"
+          "text": "BERDE assesses only energy use."
         },
         {
           "id": "c",
-          "text": "BERDE eliminates mechanical systems entirely; only passive design qualifies, which may not be feasible for all building types"
+          "text": "BERDE has no materials or waste categories."
         },
         {
           "id": "d",
-          "text": "BERDE is identical to PGBC; no substantive differentiation, which may lead to confusion in implementation"
+          "text": "BERDE replaces all government code duties."
         }
       ],
       "correct_option_id": "a",
@@ -189,14 +187,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Material selection and sustainability are integral to BERDE categories.",
-        "c": "BERDE credits both passive design and efficient mechanical systems; hybrid approaches are common.",
-        "d": "BERDE sets performance thresholds above mandatory PGBC minimums.",
-        "correct": "BERDE requires balanced performance across multiple categories: energy efficiency (incentivizing passive design strategies such as natural ventilation, daylighting, and shading appropriate for tropical climates), water efficiency (rainwater harvesting, efficient fixtures suited to seasonal rainfall patterns), material sustainability (locally sourced, low-carbon materials), and site ecology. This supports tropical architecture by aligning incentives with climate-appropriate design strategies.",
-        "takeaway": "This supports tropical architecture by aligning incentives with climate-appropriate design strategies."
+        "correct": "BERDE includes categories such as management, land use and ecology, water, energy, transportation, IEQ, materials, emissions, and waste. This is supported by the Batch 132 local source map for Tropical Green Building Design in the Philippines.",
+        "takeaway": "Tropical Green Building Design in the Philippines: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "b": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "c": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "d": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "BERDE includes categories such as management, land use and ecology, water, energy, transportation, IEQ, materials, emissions, and waste. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.source-capture.md (sha256:b9dd47bfcac0ee0dd8d24a6a10aaeaa4facffb432448f79c380c9c18d8454cf9); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.refined.md (sha256:f4a553fa517aa60b086f44713e51936375d1229e78e34b06554a7906f2dd8266).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.source-capture.md (sha256:b9dd47bfcac0ee0dd8d24a6a10aaeaa4facffb432448f79c380c9c18d8454cf9); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.refined.md (sha256:f4a553fa517aa60b086f44713e51936375d1229e78e34b06554a7906f2dd8266)",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -209,30 +207,30 @@
       "model_id": "ALE-THEO-004-03-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:42363031ef32582bd3d0dca3711d9df0bbf04b8fa5f488145178df0e2edee1bf"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:638d44497acffeef32dee8b41cc48b087c13f2e338fcc1df9e3e243bd764f499"
     },
     {
       "question_id": "2c8263a9-1cd6-4501-ba02-5bfb27f4a583",
       "article_id": "e2d9d304-9362-4472-8ca8-34106f6990dd",
       "topic_id": "146b32e7-f030-465e-8783-520fe0df6d0d",
-      "text": "Compare mechanical system efficiency requirements in Code and BERDE. How does this affect building design strategy?",
+      "text": "Why does passive tropical design matter to green building?",
       "options": [
         {
           "id": "a",
-          "text": "BERDE penalizes mechanical systems; only passive design is credited, which limits the use of active systems"
+          "text": "Green buildings are defined only by imported equipment."
         },
         {
           "id": "b",
-          "text": "Code and BERDE are identical; no differentiation exists, making compliance straightforward"
+          "text": "Cooling load is unrelated to tropical architecture."
         },
         {
           "id": "c",
-          "text": "Mechanical system efficiency is irrelevant to tropical climates; all AC units perform identically, regardless of efficiency ratings"
+          "text": "Planting alone guarantees energy efficiency."
         },
         {
           "id": "d",
-          "text": "The PGBC sets mandatory minimum efficiency requirements for mechanical systems (e.g., chillers, air conditioning units). BERDE incentivizes systems that exceed these minimums, rewarding higher efficiency equipment (such as high-COP systems) that contribute to energy savings and certification points"
+          "text": "Shading, ventilation strategy, and envelope control can reduce cooling loads and improve comfort."
         }
       ],
       "correct_option_id": "d",
@@ -241,14 +239,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "BERDE credits both passive design and efficient mechanical systems; it does not penalize mechanical systems.",
-        "b": "BERDE sets higher performance thresholds beyond mandatory Code minimums.",
-        "c": "Mechanical system efficiency significantly affects energy consumption in tropical climates with year-round cooling demand.",
-        "correct": "The PGBC sets mandatory minimum efficiency requirements for mechanical systems (e.g., minimum COP for air conditioning units, chiller efficiency). BERDE, as a voluntary rating system, incentivizes systems that exceed these minimums, rewarding higher efficiency equipment that contributes to energy savings and certification points. This encourages designers to specify equipment above Code minimums.",
-        "takeaway": "This encourages designers to specify equipment above Code minimums."
+        "correct": "Shading, ventilation strategy, and envelope control can reduce cooling loads and improve comfort. This is supported by the Batch 132 local source map for Tropical Green Building Design in the Philippines.",
+        "takeaway": "Tropical Green Building Design in the Philippines: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "a": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "b": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "c": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": null,
-      "code_citation": "PGBC 2015",
+      "explanation": "Shading, ventilation strategy, and envelope control can reduce cooling loads and improve comfort. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.source-capture.md (sha256:b9dd47bfcac0ee0dd8d24a6a10aaeaa4facffb432448f79c380c9c18d8454cf9); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.refined.md (sha256:f4a553fa517aa60b086f44713e51936375d1229e78e34b06554a7906f2dd8266).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.source-capture.md (sha256:b9dd47bfcac0ee0dd8d24a6a10aaeaa4facffb432448f79c380c9c18d8454cf9); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.refined.md (sha256:f4a553fa517aa60b086f44713e51936375d1229e78e34b06554a7906f2dd8266)",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -261,30 +259,30 @@
       "model_id": "ALE-THEO-004-03-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:081f97f67e4c80d9833fb16ad0e16beba87c21475d770b5f054f21ed80de3901"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:73357d1bf5f30691cb1611c35485013697e2b63c97ca605ab1bb049d07f7add3"
     },
     {
       "question_id": "3b611cdf-b5b2-4317-aef5-136f750b5b91",
       "article_id": "e2d9d304-9362-4472-8ca8-34106f6990dd",
       "topic_id": "146b32e7-f030-465e-8783-520fe0df6d0d",
-      "text": "An 8,000 m² office building in a metropolitan area with transit access targets BERDE certification. Identify the highest-scoring BERDE category opportunities.",
+      "text": "Which claim should be avoided without a checked local source?",
       "options": [
         {
           "id": "a",
-          "text": "Only renewable energy scoring matters; other categories are secondary, which is an oversimplification"
+          "text": "The code addresses energy and water efficiency."
         },
         {
           "id": "b",
-          "text": "Energy efficiency and transportation are the only categories that matter for office buildings, which is not entirely true"
+          "text": "BERDE has water and energy categories."
         },
         {
           "id": "c",
-          "text": "Climate type prevents water reduction opportunities; energy alone must drive certification, which is misleading"
+          "text": "Tropical design should reduce cooling demand."
         },
         {
           "id": "d",
-          "text": "Energy efficiency (through building envelope optimization, efficient HVAC, and potential renewable energy) and site/land ecology (urban infill, transit access, brownfield redevelopment) are typically high-weight categories. Water efficiency, materials, and indoor environmental quality contribute meaningfully to achieving certification thresholds"
+          "text": "A precise applicability threshold or pathway name not captured in the Batch 132 source map."
         }
       ],
       "correct_option_id": "d",
@@ -293,14 +291,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "A balanced multi-category approach is required; no single category exclusively determines certification.",
-        "b": "While energy is important, water, materials, and site ecology are also significant contributors.",
-        "c": "Water efficiency (e.g., rainwater harvesting, efficient fixtures) is achievable across all climate types.",
-        "correct": "BERDE certification requires a balanced approach across multiple categories. Energy efficiency and site/land ecology (including transit access and urban infill) are typically high-weight categories. Water efficiency, sustainable materials, and indoor environmental quality also contribute meaningfully to achieving certification thresholds.",
-        "takeaway": "Water efficiency, sustainable materials, and indoor environmental quality also contribute meaningfully to achieving certification thresholds."
+        "correct": "A precise applicability threshold or pathway name not captured in the Batch 132 source map. This is supported by the Batch 132 local source map for Tropical Green Building Design in the Philippines.",
+        "takeaway": "Tropical Green Building Design in the Philippines: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "a": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "b": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "c": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "A precise applicability threshold or pathway name not captured in the Batch 132 source map. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.source-capture.md (sha256:b9dd47bfcac0ee0dd8d24a6a10aaeaa4facffb432448f79c380c9c18d8454cf9); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.refined.md (sha256:f4a553fa517aa60b086f44713e51936375d1229e78e34b06554a7906f2dd8266).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.source-capture.md (sha256:b9dd47bfcac0ee0dd8d24a6a10aaeaa4facffb432448f79c380c9c18d8454cf9); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.refined.md (sha256:f4a553fa517aa60b086f44713e51936375d1229e78e34b06554a7906f2dd8266)",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -313,30 +311,30 @@
       "model_id": "ALE-THEO-004-03-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ecca6cb54d32b2409b9c9e7ee7efed7fecebb7516cee98a4e89e8f1b1ebf7e3e"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:47b33ff47bccaf3adede5a8f3d2d2189aaa7911dd321d01051e7d7038d2c21fb"
     },
     {
       "question_id": "3bebb959-274f-45b5-b7f5-d5d500129491",
       "article_id": "e2d9d304-9362-4472-8ca8-34106f6990dd",
       "topic_id": "146b32e7-f030-465e-8783-520fe0df6d0d",
-      "text": "Explain why Path B (performance-based) energy modeling must account for Philippine tropical conditions differently than US models that Path B software may default to.",
+      "text": "What is a source-safe material strategy?",
       "options": [
         {
           "id": "a",
-          "text": "All Philippine regions use identical baseline assumptions; variation is irrelevant"
+          "text": "Select materials only by color."
         },
         {
           "id": "b",
-          "text": "US energy modeling is directly applicable if ASHRAE 62.1 ventilation standards are met"
+          "text": "Assume heavy imported materials are always greener."
         },
         {
           "id": "c",
-          "text": "Tropical conditions are irrelevant to energy modeling; baseline assumptions are universal"
+          "text": "Ignore durability in humid environments."
         },
         {
           "id": "d",
-          "text": "Tropical models require: appropriate baseline temperatures (not US 21°C office standard), high humidity affecting cooling coil and dehumidification loads, monsoon and typhoon wind patterns affecting infiltration assumptions, and regional climate variation (Coronas Types I–IV). Software defaults (US-based) must be overridden with Philippines-specific climatic inputs. Failure to localize yields inaccurate, non-compliant models"
+          "text": "Consider sustainable materials and embodied impacts within documented code/rating categories and project constraints."
         }
       ],
       "correct_option_id": "d",
@@ -345,14 +343,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Regional climate variation (Coronas Types I–IV) affects temperature, humidity, and rainfall patterns.",
-        "b": "ASHRAE 62.1 addresses ventilation rates, not baseline temperature/humidity or wind infiltration assumptions.",
-        "c": "Tropical conditions fundamentally alter equipment sizing, occupancy schedules, and infiltration rates.",
-        "correct": "Path B energy modeling requires localization for Philippine tropical conditions: baseline temperatures (Philippines tropical vs. US temperate baseline), high humidity (75-85% RH) affecting cooling coil performance and dehumidification loads, monsoon and typhoon wind patterns affecting infiltration assumptions, and regional climate variation (Coronas Types I–IV). Software defaults based on US climates (IECC) must be overridden with Philippines-specific inputs; failure to localize yields inaccurate, non-compliant models.",
-        "takeaway": "Software defaults based on US climates (IECC) must be overridden with Philippines-specific inputs; failure to localize yields inaccurate, non-compliant models."
+        "correct": "Consider sustainable materials and embodied impacts within documented code/rating categories and project constraints. This is supported by the Batch 132 local source map for Tropical Green Building Design in the Philippines.",
+        "takeaway": "Tropical Green Building Design in the Philippines: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "a": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "b": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "c": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Consider sustainable materials and embodied impacts within documented code/rating categories and project constraints. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.source-capture.md (sha256:b9dd47bfcac0ee0dd8d24a6a10aaeaa4facffb432448f79c380c9c18d8454cf9); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.refined.md (sha256:f4a553fa517aa60b086f44713e51936375d1229e78e34b06554a7906f2dd8266).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.source-capture.md (sha256:b9dd47bfcac0ee0dd8d24a6a10aaeaa4facffb432448f79c380c9c18d8454cf9); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.refined.md (sha256:f4a553fa517aa60b086f44713e51936375d1229e78e34b06554a7906f2dd8266)",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -365,30 +363,30 @@
       "model_id": "ALE-THEO-004-03-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:692610bab8fd6e90df414f2e60b3fc5a8b7e9dc46eb43940da5f7904410b0725"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:5f4df183e934f0c84ecb278cac87cf4aa2b76e212a025c7d3b2d4c425a43bba4"
     },
     {
       "question_id": "62ec9a51-5fc3-4414-8cf5-9273c1c462c6",
       "article_id": "e2d9d304-9362-4472-8ca8-34106f6990dd",
       "topic_id": "146b32e7-f030-465e-8783-520fe0df6d0d",
-      "text": "Compare BERDE (Philippine) and LEED (US) green building systems. Which distinction is critical for tropical architecture applicability?",
+      "text": "How should indoor environmental quality be treated?",
       "options": [
         {
           "id": "a",
-          "text": "Both systems are identical; system choice is irrelevant, as they offer the same guidelines and criteria for certification"
+          "text": "As an optional aesthetic preference."
         },
         {
           "id": "b",
-          "text": "LEED is universally superior; BERDE is an inferior imitation, lacking the comprehensive standards and global recognition of LEED"
+          "text": "As identical to outdoor landscaping."
         },
         {
           "id": "c",
-          "text": "BERDE emphasizes south-facing solar gain; LEED ignores tropical context, which can lead to inefficiencies in energy use and comfort"
+          "text": "As unrelated to tropical climate."
         },
         {
           "id": "d",
-          "text": "BERDE is calibrated for Philippine tropical climate conditions (Coronas Types I–IV) with emphasis on water efficiency, site ecology, and local material sourcing. LEED was developed for US temperate climates and may have different weighting priorities. A building achieving LEED certification might not achieve equivalent BERDE certification due to differing climate assumptions and category weightings"
+          "text": "As a performance concern linked to ventilation, daylight, moisture control, and source-documented assessment categories."
         }
       ],
       "correct_option_id": "d",
@@ -397,14 +395,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "The systems have different weighting priorities and climate assumptions.",
-        "b": "Neither system is universally superior; BERDE is the national standard calibrated for Philippine conditions.",
-        "c": "Both systems address orientation, but their weighting and climate assumptions differ.",
-        "correct": "BERDE is the Philippine national voluntary rating system, calibrated for tropical climate conditions (Coronas Types I–IV) with emphasis on water efficiency, site ecology in sensitive areas, and local material sourcing. LEED was developed for US temperate climates. Category weightings differ, and climate assumptions affect performance requirements.",
-        "takeaway": "Category weightings differ, and climate assumptions affect performance requirements."
+        "correct": "As a performance concern linked to ventilation, daylight, moisture control, and source-documented assessment categories. This is supported by the Batch 132 local source map for Tropical Green Building Design in the Philippines.",
+        "takeaway": "Tropical Green Building Design in the Philippines: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "a": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "b": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "c": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "As a performance concern linked to ventilation, daylight, moisture control, and source-documented assessment categories. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.source-capture.md (sha256:b9dd47bfcac0ee0dd8d24a6a10aaeaa4facffb432448f79c380c9c18d8454cf9); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.refined.md (sha256:f4a553fa517aa60b086f44713e51936375d1229e78e34b06554a7906f2dd8266).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.source-capture.md (sha256:b9dd47bfcac0ee0dd8d24a6a10aaeaa4facffb432448f79c380c9c18d8454cf9); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.refined.md (sha256:f4a553fa517aa60b086f44713e51936375d1229e78e34b06554a7906f2dd8266)",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -417,30 +415,30 @@
       "model_id": "ALE-THEO-004-03-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:743db8ccc76697697e96ede73e9f82eaf649b955faba81342f076426ee9ab303"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:2d6a8b5d4f20de0ed6609136242eacd61e934b68a947b9a2f8617e5e3aa42fdb"
     },
     {
       "question_id": "12c69cfd-9b1f-4a25-b194-61ea4465f028",
       "article_id": "e2d9d304-9362-4472-8ca8-34106f6990dd",
       "topic_id": "146b32e7-f030-465e-8783-520fe0df6d0d",
-      "text": "Calculate embodied carbon savings for a 12-story office building redesigned from all-concrete structure to a hybrid timber-concrete structure. Does this align with BERDE goals?",
+      "text": "Which approach is strongest for a 24/7 healthcare building?",
       "options": [
         {
           "id": "a",
-          "text": "The PGBC and BERDE encourage sustainable material selection. Embodied carbon reduction (through use of low-carbon materials like certified timber, recycled content, or locally sourced materials) aligns with Green Materials and Emissions categories, which reward material strategy and reduced environmental impact"
+          "text": "Pair climate-responsive load reduction with reliable systems and documented water, energy, and IEQ decisions."
         },
         {
           "id": "b",
-          "text": "Timber adds embodied carbon; material change is not justified, as it may not significantly reduce overall emissions"
+          "text": "Use natural ventilation everywhere regardless of clinical needs."
         },
         {
           "id": "c",
-          "text": "Savings are minimal; design change is not cost-justified, considering the potential increase in construction complexity"
+          "text": "Ignore envelope heat gain because systems run all day."
         },
         {
           "id": "d",
-          "text": "Embodied carbon is not considered; only operational carbon matters, which is a misconception in sustainable design"
+          "text": "Pursue rating points without operational reliability."
         }
       ],
       "correct_option_id": "a",
@@ -449,14 +447,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Certified timber typically has significantly lower embodied carbon than concrete and steel.",
-        "c": "Embodied carbon reduction can be substantial (often 30-70% depending on substitution levels).",
-        "d": "BERDE addresses both operational and embodied carbon through material selection and emissions categories.",
-        "correct": "The PGBC and BERDE promote sustainable material selection. Embodied carbon reduction—through use of low-carbon materials such as certified timber, recycled content, or locally sourced materials—aligns with Green Materials and Emissions categories, which reward material strategy and reduced environmental impact. Timber, when sourced from sustainably managed forests, typically has significantly lower embodied carbon than concrete and steel.",
-        "takeaway": "Timber, when sourced from sustainably managed forests, typically has significantly lower embodied carbon than concrete and steel."
+        "correct": "Pair climate-responsive load reduction with reliable systems and documented water, energy, and IEQ decisions. This is supported by the Batch 132 local source map for Tropical Green Building Design in the Philippines.",
+        "takeaway": "Tropical Green Building Design in the Philippines: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "b": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "c": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "d": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Pair climate-responsive load reduction with reliable systems and documented water, energy, and IEQ decisions. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.source-capture.md (sha256:b9dd47bfcac0ee0dd8d24a6a10aaeaa4facffb432448f79c380c9c18d8454cf9); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.refined.md (sha256:f4a553fa517aa60b086f44713e51936375d1229e78e34b06554a7906f2dd8266).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.source-capture.md (sha256:b9dd47bfcac0ee0dd8d24a6a10aaeaa4facffb432448f79c380c9c18d8454cf9); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.refined.md (sha256:f4a553fa517aa60b086f44713e51936375d1229e78e34b06554a7906f2dd8266)",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -469,30 +467,30 @@
       "model_id": "ALE-THEO-004-03-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:56fd6e5efb7dab8b6b2e8d8a45703be854e9518eec73c81f4e3b0a532445a2b0"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:679047ab6fd7a6ca0b630ecf9b127201e9dc8aad19dce3a6518981164ff06345"
     },
     {
       "question_id": "a68af327-7fbc-4401-894f-e272e7859803",
       "article_id": "e2d9d304-9362-4472-8ca8-34106f6990dd",
       "topic_id": "146b32e7-f030-465e-8783-520fe0df6d0d",
-      "text": "A hospital in Manila (continuous 24/7 occupancy) must achieve high thermal comfort standards. Why does Philippine Green Building Code allow this building to use Path A (prescriptive) compliance despite high-comfort demands?",
+      "text": "What is the safest exam answer about LEED and BERDE?",
       "options": [
         {
           "id": "a",
-          "text": "Climate eliminates need for active cooling; natural ventilation satisfies comfort demands, making prescriptive compliance feasible"
+          "text": "Assume LEED and BERDE have identical credit rules."
         },
         {
           "id": "b",
-          "text": "Hospitals cannot achieve BERDE certification; Code compliance is the only metric, simplifying the compliance process"
+          "text": "Use LEED as a legal substitute for Philippine code."
         },
         {
           "id": "c",
-          "text": "Code allows all hospitals to use Path A regardless of demands, providing a uniform standard for healthcare facilities"
+          "text": "Ignore BERDE because it has no local categories."
         },
         {
           "id": "d",
-          "text": "Continuous occupancy with mechanical cooling (typical for hospitals) can comply via Path A by meeting prescriptive envelope, insulation, and mechanical equipment requirements. Path B performance modeling is more critical for buildings relying on passive strategies (natural ventilation, daylighting) where trade-offs must be modeled. A mechanically conditioned building can demonstrate compliance through prescriptive tables without complex modeling"
+          "text": "Use the locally documented system when the question asks for Philippine rating context, and avoid unsourced equivalence claims."
         }
       ],
       "correct_option_id": "d",
@@ -501,14 +499,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Tropical climate requires mechanical cooling to maintain stable temperatures for hospital comfort standards; natural ventilation alone is insufficient.",
-        "b": "Hospitals can pursue voluntary BERDE certification; Code compliance is mandatory minimum.",
-        "c": "Path selection depends on design strategy, not building type alone.",
-        "correct": "Buildings with continuous mechanical cooling (typical for hospitals) can comply via Path A (prescriptive) by meeting the PGBC's prescriptive requirements for building envelope (insulation, glazing), mechanical equipment efficiency, and lighting. Path B performance modeling is more critical for buildings relying on passive strategies (natural ventilation, daylighting) where design trade-offs must be modeled to demonstrate equivalent performance. A mechanically conditioned building can demonstrate compliance through prescriptive tables without complex energy modeling.",
-        "takeaway": "A mechanically conditioned building can demonstrate compliance through prescriptive tables without complex energy modeling."
+        "correct": "Use the locally documented system when the question asks for Philippine rating context, and avoid unsourced equivalence claims. This is supported by the Batch 132 local source map for Tropical Green Building Design in the Philippines.",
+        "takeaway": "Tropical Green Building Design in the Philippines: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "a": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "b": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "c": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": null,
-      "code_citation": "PGBC 2015",
+      "explanation": "Use the locally documented system when the question asks for Philippine rating context, and avoid unsourced equivalence claims. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.source-capture.md (sha256:b9dd47bfcac0ee0dd8d24a6a10aaeaa4facffb432448f79c380c9c18d8454cf9); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.refined.md (sha256:f4a553fa517aa60b086f44713e51936375d1229e78e34b06554a7906f2dd8266).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.source-capture.md (sha256:b9dd47bfcac0ee0dd8d24a6a10aaeaa4facffb432448f79c380c9c18d8454cf9); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.refined.md (sha256:f4a553fa517aa60b086f44713e51936375d1229e78e34b06554a7906f2dd8266)",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -521,30 +519,30 @@
       "model_id": "ALE-THEO-004-03-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:2dc13eda31eff2ac2bf3fc059f2a7adec59181eb8b7c582c5fd3ee8b965848db"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:19921e34a1ac72da4917f1a3a8aa847f6a8d8e04a9bfb1332e3f54f6f002290f"
     },
     {
       "question_id": "c7fcc5cb-cac7-4388-a77e-13b4d0e3dce1",
       "article_id": "e2d9d304-9362-4472-8ca8-34106f6990dd",
       "topic_id": "146b32e7-f030-465e-8783-520fe0df6d0d",
-      "text": "What does 'embodied carbon' refer to in the context of BERDE and Philippine Green Building Code compliance?",
+      "text": "Which green-building claim is source-safe for this article?",
       "options": [
         {
           "id": "a",
-          "text": "CO₂ released during material extraction, manufacturing, transport, and construction; measured in kg CO₂e per unit of material"
+          "text": "Tropical green design connects climate response with documented water, energy, site, material, and IEQ concerns."
         },
         {
           "id": "b",
-          "text": "CO₂ offsetting mechanisms like carbon credits and tree planting, which are strategies to balance emissions"
+          "text": "A green building is just any building with plants."
         },
         {
           "id": "c",
-          "text": "Carbon sequestered in timber and plant materials during building life, contributing to a reduction in overall carbon footprint"
+          "text": "A certificate is automatic when passive cooling exists."
         },
         {
           "id": "d",
-          "text": "Annual CO₂ emissions from building operations (heating, cooling, lighting), which are part of operational carbon considerations"
+          "text": "The checked sources prove exact score thresholds."
         }
       ],
       "correct_option_id": "a",
@@ -553,14 +551,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Offsets are a compliance or mitigation mechanism, not embodied carbon itself.",
-        "c": "Carbon sequestration is a benefit of biogenic materials but is separate from embodied carbon accounting.",
-        "d": "This describes operational carbon, which is distinct from embodied carbon.",
-        "correct": "Embodied carbon refers to CO₂ emissions released during material extraction, manufacturing, transport, and construction. It is measured in kg CO₂e per unit of material (e.g., kg CO₂/kg material). This is distinct from operational carbon (emissions from building operations) and from carbon offsets or sequestration.",
-        "takeaway": "This is distinct from operational carbon (emissions from building operations) and from carbon offsets or sequestration."
+        "correct": "Tropical green design connects climate response with documented water, energy, site, material, and IEQ concerns. This is supported by the Batch 132 local source map for Tropical Green Building Design in the Philippines.",
+        "takeaway": "Tropical Green Building Design in the Philippines: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "b": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "c": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "d": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": "Offsets are a compliance or mitigation mechanism, not embodied carbon itself. Carbon sequestration is a benefit of biogenic materials but is separate from embodied carbon accounting. This describes operational carbon, which is distinct from embodied carbon. Embodied carbon refers to CO₂ emissions released during material extraction, manufacturing, transport, and construction. It is measured in kg CO₂e per unit of material (e.g., kg CO₂/kg material). This is distinct from operational carbon (emissions from building operations) and from carbon offsets or sequestration. This is distinct from operational carbon (emissions from building operations) and from carbon offsets or sequestration.",
-      "code_citation": null,
+      "explanation": "Tropical green design connects climate response with documented water, energy, site, material, and IEQ concerns. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.source-capture.md (sha256:b9dd47bfcac0ee0dd8d24a6a10aaeaa4facffb432448f79c380c9c18d8454cf9); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.refined.md (sha256:f4a553fa517aa60b086f44713e51936375d1229e78e34b06554a7906f2dd8266).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.source-capture.md (sha256:b9dd47bfcac0ee0dd8d24a6a10aaeaa4facffb432448f79c380c9c18d8454cf9); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.refined.md (sha256:f4a553fa517aa60b086f44713e51936375d1229e78e34b06554a7906f2dd8266)",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -573,8 +571,10 @@
       "model_id": "ALE-THEO-004-03-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-05-06T15:42:47.718119+00:00",
-      "content_hash": "sha256:b00ccef00107573c4c6a3679c891ef347de729463fdc4733d3df79bfd98ad6ab"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:387581ee177bed2ee90958ae0814f56714cdcf4faf630dca01ef105bdfcd1911"
     }
-  ]
+  ],
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:52e4dab6e6b05076a99faa77f33b457613dfc01a031921adfd6712eb9b49d041"
 }

@@ -1,30 +1,28 @@
 {
   "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
-  "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:780738793315cdb0335664b495046c6bef849a4ab13c20f16af85cfdd13af1fe",
   "question_count": 12,
   "questions": [
     {
       "question_id": "9c009e8a-fd05-44d3-b301-7626e0e9eca1",
       "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
       "topic_id": "61adabd7-326c-4d52-ac06-13f313c829c4",
-      "text": "In tropical climates, what is the primary cooling mechanism that differs fundamentally from temperate-zone passive design?",
+      "text": "What is the primary passive-design priority in a hot-humid Philippine setting?",
       "options": [
         {
           "id": "a",
-          "text": "Thermal mass storage of daytime heat for release during cool nights, which is less effective in tropical climates due to minimal temperature variation"
+          "text": "Store as much daytime heat as possible."
         },
         {
           "id": "b",
-          "text": "Ventilation (cross-ventilation, stack effect, wind acceleration) is the primary mechanism; thermal mass is ineffective due to suppressed diurnal range"
+          "text": "Reduce heat gain while maximizing wind exposure and internal air movement."
         },
         {
           "id": "c",
-          "text": "Orientation to maximize south-facing winter solar gain for heating, which is not applicable in tropical regions"
+          "text": "Seal all rooms and avoid shaded openings."
         },
         {
           "id": "d",
-          "text": "Reflective surfaces to mirror solar radiation back to atmosphere, reducing heat absorption in buildings"
+          "text": "Rely only on decorative tropical motifs."
         }
       ],
       "correct_option_id": "b",
@@ -33,14 +31,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This is arid-climate doctrine; it fails in tropics where nighttime temps are too high.",
-        "c": "Tropical orientation prioritizes shade and ventilation, not winter heating gain (unnecessary in tropics).",
-        "d": "Reflectance helps but is secondary to active air movement strategies.",
-        "correct": "The hierarchy: 'In tropical climates, ventilation is the primary cooling mechanism—not shade alone, not mass, not orientation.' Nighttime temps (22–25°C) prevent thermal mass from radiating stored daytime heat.",
-        "takeaway": "The hierarchy: 'In tropical climates, ventilation is the primary cooling mechanism—not shade alone, not mass, not orientation.' Nighttime temps (22–25°C) prevent thermal mass from radiating stored daytime heat."
+        "correct": "Reduce heat gain while maximizing wind exposure and internal air movement. This is supported by the Batch 132 local source map for Passive Design in Tropical Climates.",
+        "takeaway": "Passive Design in Tropical Climates: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "a": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "c": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "d": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": "This is arid-climate doctrine; it fails in tropics where nighttime temps are too high. Tropical orientation prioritizes shade and ventilation, not winter heating gain (unnecessary in tropics). Reflectance helps but is secondary to active air movement strategies. The hierarchy: 'In tropical climates, ventilation is the primary cooling mechanism—not shade alone, not mass, not orientation.' Nighttime temps (22–25°C) prevent thermal mass from radiating stored daytime heat. The hierarchy: 'In tropical climates, ventilation is the primary cooling mechanism—not shade alone, not mass, not orientation.' Nighttime temps (22–25°C) prevent thermal mass from radiating stored daytime heat.",
-      "code_citation": null,
+      "explanation": "Reduce heat gain while maximizing wind exposure and internal air movement. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.source-capture.md (sha256:9927e78faf9319ade65052ca3092e446d4756b4ca634f7cf5238d02b184cb29b); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.refined.md (sha256:dce571fb09c7afb337ccb32b20e3d61300f4501a02bc68e968054f3c3ba69189).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.source-capture.md (sha256:9927e78faf9319ade65052ca3092e446d4756b4ca634f7cf5238d02b184cb29b); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.refined.md (sha256:dce571fb09c7afb337ccb32b20e3d61300f4501a02bc68e968054f3c3ba69189)",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -53,30 +51,30 @@
       "model_id": "ALE-THEO-004-02-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-05-06T15:09:19.131463+00:00",
-      "content_hash": "sha256:7c087c3ff832b74ea81749047ac0768f43bd0a0a0d21407fd36038eee4fce0d5"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:d8e24747a4a09f2fa2b257089ae1644f188c55336edef2d08846f806091c9818"
     },
     {
       "question_id": "93364bbd-0470-4cf2-baf3-8c469f838049",
       "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
       "topic_id": "61adabd7-326c-4d52-ac06-13f313c829c4",
-      "text": "Compare lightweight construction (timber, metal stud, bamboo) versus heavyweight construction (concrete, masonry) in tropical climates. Which statement correctly reflects research findings?",
+      "text": "Why do shaded openings matter?",
       "options": [
         {
           "id": "a",
-          "text": "Heavyweight is better only in Type III/IV zones; weight is neutral in Type I/II climates, where other factors dominate"
+          "text": "They only improve facade style."
         },
         {
           "id": "b",
-          "text": "Heavyweight construction is universally superior; thermal mass reduces peak cooling by 6–8°C, providing consistent comfort"
+          "text": "They replace the need for roof design."
         },
         {
           "id": "c",
-          "text": "Both perform identically; construction weight is irrelevant to tropical thermal performance, as other variables are more significant"
+          "text": "They work only in cold climates."
         },
         {
           "id": "d",
-          "text": "Lightweight construction is 2–3°C cooler during occupied hours (8am–6pm) vs. heavyweight; nighttime cooling techniques are 35.9% more effective in lightweight structures"
+          "text": "They allow ventilation while limiting solar heat gain and rain exposure."
         }
       ],
       "correct_option_id": "d",
@@ -85,14 +83,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Lightweight is optimal in all tropical Coronas types; the difference is marginal in Type III/IV only because diurnal range is slightly larger, not because heavyweight becomes advantageous.",
-        "b": "This is arid-climate logic; it explicitly fails in tropical suppressed diurnal range.",
-        "c": "Weight dramatically affects thermal response; lightweight structures have faster adaptation to ventilation cooling.",
-        "correct": "Research: 'Lightweight timber or metal framing responds quickly to cooled air from night ventilation or early-morning stack effect; interior temperature drops 2–3°C faster than heavyweight buildings. Nighttime cooling techniques are 35.9% more effective in lightweight structures.' This is the evidence-based consensus for tropical design.",
-        "takeaway": "Nighttime cooling techniques are 35.9% more effective in lightweight structures.' This is the evidence-based consensus for tropical design."
+        "correct": "They allow ventilation while limiting solar heat gain and rain exposure. This is supported by the Batch 132 local source map for Passive Design in Tropical Climates.",
+        "takeaway": "Passive Design in Tropical Climates: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "a": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "b": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "c": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": "Lightweight is optimal in all tropical Coronas types; the difference is marginal in Type III/IV only because diurnal range is slightly larger, not because heavyweight becomes advantageous. This is arid-climate logic; it explicitly fails in tropical suppressed diurnal range. Weight dramatically affects thermal response; lightweight structures have faster adaptation to ventilation cooling. Research: 'Lightweight timber or metal framing responds quickly to cooled air from night ventilation or early-morning stack effect; interior temperature drops 2–3°C faster than heavyweight buildings. Nighttime cooling techniques are 35.9% more effective in lightweight structures.' This is the evidence-based consensus for tropical design. Nighttime cooling techniques are 35.9% more effective in lightweight structures.' This is the evidence-based consensus for tropical design.",
-      "code_citation": null,
+      "explanation": "They allow ventilation while limiting solar heat gain and rain exposure. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.source-capture.md (sha256:9927e78faf9319ade65052ca3092e446d4756b4ca634f7cf5238d02b184cb29b); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.refined.md (sha256:dce571fb09c7afb337ccb32b20e3d61300f4501a02bc68e968054f3c3ba69189).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.source-capture.md (sha256:9927e78faf9319ade65052ca3092e446d4756b4ca634f7cf5238d02b184cb29b); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.refined.md (sha256:dce571fb09c7afb337ccb32b20e3d61300f4501a02bc68e968054f3c3ba69189)",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -105,30 +103,30 @@
       "model_id": "ALE-THEO-004-02-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-05-06T15:09:19.420248+00:00",
-      "content_hash": "sha256:6c54aba7366e5139941cffe64bac4e9a51fac69a8b2495affc48e8ded37ea715"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:af67bc7d5d34d254b98a9482191ac13a3f306b60c5f59ee009b5ef8bb446330b"
     },
     {
       "question_id": "665e3f89-744e-42c5-9e49-15a1d35a4895",
       "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
       "topic_id": "61adabd7-326c-4d52-ac06-13f313c829c4",
-      "text": "An office building plan is 25m (E-W) × 18m (N-S) in Cebu (Type IV climate). Identify the primary design problem for cross-ventilation and propose a solution.",
+      "text": "Which plan move supports cross ventilation?",
       "options": [
         {
           "id": "a",
-          "text": "East-west exposure is insufficient; rotate plan 45° diagonal for optimal solar orientation, which may not be feasible due to site constraints"
+          "text": "Put all openings on one wall and block airflow with partitions."
         },
         {
           "id": "b",
-          "text": "Tropical ventilation requires sealed spaces to prevent external heat penetration; cross-ventilation is unnecessary, which contradicts passive cooling strategies"
+          "text": "Use fixed glass everywhere."
         },
         {
           "id": "c",
-          "text": "Window area is too small; increase facade openings to 50% to maximize air velocity, which may affect structural integrity"
+          "text": "Locate openings only in unoccupied storage rooms."
         },
         {
           "id": "d",
-          "text": "Plan width (25m) exceeds the 15m effective cross-ventilation depth; interior zones lack fresh air. Solution: interior courtyard (6m×6m) creating two 9.5m zones on each side"
+          "text": "Align windward and leeward openings and reduce internal obstructions."
         }
       ],
       "correct_option_id": "d",
@@ -137,14 +135,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Solar orientation optimization is secondary to ventilation effectiveness in tropical design.",
-        "b": "This contradicts tropical passive design philosophy; sealed spaces are counter to vernacular proven practice.",
-        "c": "Asymmetric sizing (small inlets, large outlets) is optimal, not uniform 50% openings.",
-        "correct": "The 15m rule: 'Buildings wider than 15–18 meters struggle to ventilate interior zones; interior courtyards or atria become necessary.' The solution (atrium splitting the plan) is explicitly provided as the tested answer.",
-        "takeaway": "The 15m rule: 'Buildings wider than 15–18 meters struggle to ventilate interior zones; interior courtyards or atria become necessary.' The solution (atrium splitting the plan) is explicitly provided as the tested answer."
+        "correct": "Align windward and leeward openings and reduce internal obstructions. This is supported by the Batch 132 local source map for Passive Design in Tropical Climates.",
+        "takeaway": "Passive Design in Tropical Climates: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "a": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "b": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "c": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Align windward and leeward openings and reduce internal obstructions. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.source-capture.md (sha256:9927e78faf9319ade65052ca3092e446d4756b4ca634f7cf5238d02b184cb29b); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.refined.md (sha256:dce571fb09c7afb337ccb32b20e3d61300f4501a02bc68e968054f3c3ba69189).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.source-capture.md (sha256:9927e78faf9319ade65052ca3092e446d4756b4ca634f7cf5238d02b184cb29b); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.refined.md (sha256:dce571fb09c7afb337ccb32b20e3d61300f4501a02bc68e968054f3c3ba69189)",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -157,30 +155,30 @@
       "model_id": "ALE-THEO-004-02-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f97b180dec35d1d2c7d4b3f11ef3bfe0c897c5bffffe7061c68bfeb7d6348c94"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:9d5b7e61e23f357985587b80d93d966409fd6d3e8b45395297583e19d95ad527"
     },
     {
       "question_id": "11de4a7a-6d25-455b-8204-3aac5408c9d4",
       "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
       "topic_id": "61adabd7-326c-4d52-ac06-13f313c829c4",
-      "text": "A hospital in Quezon City (Type IV) must maintain comfortable spaces for patients. How should architects integrate light shelf design with daylighting and cooling requirements?",
+      "text": "How can high openings help passive cooling?",
       "options": [
         {
           "id": "a",
-          "text": "Light shelves should use reflective finishes on both shelf and ceiling to maximize brightness and reduce cooling load equally, ensuring optimal energy efficiency"
+          "text": "They trap warm air below the ceiling."
         },
         {
           "id": "b",
-          "text": "Light shelves are unnecessary if electric lighting is provided; focus on mechanical cooling instead, as it offers more consistent results"
+          "text": "They eliminate the need for shaded inlets."
         },
         {
           "id": "c",
-          "text": "Light shelves work best in arid climates; Type IV high humidity reduces their effectiveness significantly, making them less viable"
+          "text": "They work only when all lower windows are sealed."
         },
         {
           "id": "d",
-          "text": "Light shelves reduce window-area heat gain by 30–40% while achieving 2–3× greater interior illumination; specular (mirror-like) aluminum + diffuse ceiling is optimal for redirecting high-angle noon sun deep into building"
+          "text": "They can release warm air and support stack or convection flow when paired with lower inlets."
         }
       ],
       "correct_option_id": "d",
@@ -189,14 +187,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Mirror ceiling creates secondary glare; diffuse ceilings are required for health-appropriate non-glare illumination.",
-        "b": "Light shelves reduce mechanical cooling demand by 35–40%; they are highly relevant to tropical hospital design.",
-        "c": "Humidity does not reduce light shelf effectiveness; they work equally well in Type IV's perpetual moisture.",
-        "correct": "Light shelves reduce window-area heat gain by 30–40% while achieving 2–3× greater interior illumination... specular aluminum shelves outperform matte finishes; however, diffuse ceilings (not mirrors) must receive the redirected light.' This is the precise protocol for tropical daylighting integration.",
-        "takeaway": "specular aluminum shelves outperform matte finishes; however, diffuse ceilings (not mirrors) must receive the redirected light.' This is the precise protocol for tropical daylighting integration."
+        "correct": "They can release warm air and support stack or convection flow when paired with lower inlets. This is supported by the Batch 132 local source map for Passive Design in Tropical Climates.",
+        "takeaway": "Passive Design in Tropical Climates: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "a": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "b": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "c": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": "Mirror ceiling creates secondary glare; diffuse ceilings are required for health-appropriate non-glare illumination. Light shelves reduce mechanical cooling demand by 35–40%; they are highly relevant to tropical hospital design. Humidity does not reduce light shelf effectiveness; they work equally well in Type IV's perpetual moisture. Light shelves reduce window-area heat gain by 30–40% while achieving 2–3× greater interior illumination... specular aluminum shelves outperform matte finishes; however, diffuse ceilings (not mirrors) must receive the redirected light.' This is the precise protocol for tropical daylighting integration. specular aluminum shelves outperform matte finishes; however, diffuse ceilings (not mirrors) must receive the redirected light.' This is the precise protocol for tropical daylighting integration.",
-      "code_citation": null,
+      "explanation": "They can release warm air and support stack or convection flow when paired with lower inlets. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.source-capture.md (sha256:9927e78faf9319ade65052ca3092e446d4756b4ca634f7cf5238d02b184cb29b); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.refined.md (sha256:dce571fb09c7afb337ccb32b20e3d61300f4501a02bc68e968054f3c3ba69189).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.source-capture.md (sha256:9927e78faf9319ade65052ca3092e446d4756b4ca634f7cf5238d02b184cb29b); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.refined.md (sha256:dce571fb09c7afb337ccb32b20e3d61300f4501a02bc68e968054f3c3ba69189)",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -209,30 +207,30 @@
       "model_id": "ALE-THEO-004-02-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-05-06T15:09:18.844729+00:00",
-      "content_hash": "sha256:071559ba6d8eb71e242e224fd72f9d7f1e97ee1132bcd64ede934305c7fc6d25"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:724d4f12e1fb20cdff5728338f4f3ee3745d048a2ac70e7fb91b7bb071339378"
     },
     {
       "question_id": "a9836d18-447e-4f50-82b4-3b53724f5a1d",
       "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
       "topic_id": "61adabd7-326c-4d52-ac06-13f313c829c4",
-      "text": "Calculate the required overhang depth for an east wall in Manila (8am, summer) with 4m sill height, given solar altitude 10°. Then determine why this depth alone is insufficient without additional shading.",
+      "text": "What is the source-safe limitation of a single overhang detail?",
       "options": [
         {
           "id": "a",
-          "text": "Overhang depth = 4m × tan(10°) ≈ 0.7m (practical). This blocks noon sun but misses early 6–8am exposure when altitude is <10°, necessitating additional shading solutions"
+          "text": "One fixed depth works for every facade and site."
         },
         {
           "id": "b",
-          "text": "Overhang depth = 4m / sin(10°) ≈ 23m. Vertical fins are unnecessary if overhang is deep enough, although this depth is impractical for most urban settings"
+          "text": "Overhangs make ventilation unnecessary."
         },
         {
           "id": "c",
-          "text": "Overhang depth = 4m / tan(10°) ≈ 22.7m (impractical). Insufficient without vertical fins blocking low-angle morning sun"
+          "text": "It must be tuned to orientation, sun angle, rain, and opening use rather than treated as universal."
         },
         {
           "id": "d",
-          "text": "East walls require minimal shading because morning sun is cooler than afternoon sun, which is a common misconception in tropical climates"
+          "text": "Overhangs are only decorative in the tropics."
         }
       ],
       "correct_option_id": "c",
@@ -241,14 +239,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Calculation is reversed (should be height / tan, not height × tan); also misidentifies altitude at 8am.",
-        "b": "A 23m overhang is structurally and aesthetically implausible; vertical fins are mandatory for practical design.",
-        "d": "Morning sun may be cooler but creates glare and psychological discomfort; early heat gain must be controlled.",
-        "correct": "Using depth = height / tan(altitude): 4m / tan(10°) = 22.7m—clearly impractical. Early morning (6–8am) has even shallower angles (<10°), requiring additional vertical fins or brise-soleil to block oblique-angle low sun. 2–3m overhangs PLUS vertical fins for east facades.",
-        "takeaway": "2–3m overhangs PLUS vertical fins for east facades."
+        "correct": "It must be tuned to orientation, sun angle, rain, and opening use rather than treated as universal. This is supported by the Batch 132 local source map for Passive Design in Tropical Climates.",
+        "takeaway": "Passive Design in Tropical Climates: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "a": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "b": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "d": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "It must be tuned to orientation, sun angle, rain, and opening use rather than treated as universal. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.source-capture.md (sha256:9927e78faf9319ade65052ca3092e446d4756b4ca634f7cf5238d02b184cb29b); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.refined.md (sha256:dce571fb09c7afb337ccb32b20e3d61300f4501a02bc68e968054f3c3ba69189).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.source-capture.md (sha256:9927e78faf9319ade65052ca3092e446d4756b4ca634f7cf5238d02b184cb29b); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.refined.md (sha256:dce571fb09c7afb337ccb32b20e3d61300f4501a02bc68e968054f3c3ba69189)",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -261,30 +259,30 @@
       "model_id": "ALE-THEO-004-02-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:785b0663d249a44246cc98e1312acdaca5e17ff50404ef227791d189f3ca66ae"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:36f91a7f65c751df05e775c9bfbb203bb6001ae15ae34101ab45c48a4b7be5bf"
     },
     {
       "question_id": "003a6a7b-7696-4826-be34-19570663f743",
       "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
       "topic_id": "61adabd7-326c-4d52-ac06-13f313c829c4",
-      "text": "Explain the relationship between orientation strategy and ventilation strategy in tropical architecture. Why can a poorly shaded N-S elongated building outperform a poorly ventilated E-W elongated building?",
+      "text": "Which response fits a deep tropical floor plate?",
       "options": [
         {
           "id": "a",
-          "text": "Ventilation effectiveness (cooling load reduction 60–80%) exceeds shade benefit (30–50%); poor ventilation cannot be compensated by good orientation. Conversely, excellent ventilation partially overcomes poor orientation through continuous air movement"
+          "text": "Add shaded air paths, courtyards or voids, and high exhaust routes where the source scope supports them."
         },
         {
           "id": "b",
-          "text": "North-south orientation is universally superior regardless of ventilation quality, because the reduced solar gain on the longer north and south facades eliminates the need for cross-ventilation, making shading alone sufficient for thermal comfort in all tropical climates"
+          "text": "Depend on small sealed windows at the perimeter only."
         },
         {
           "id": "c",
-          "text": "Orientation matters equally to ventilation; neither can compensate for deficiency in the other, as solar geometry and wind patterns contribute identical proportions to thermal comfort, meaning a failure in either parameter results in proportionally equal overheating"
+          "text": "Place all occupied rooms far from any airflow path."
         },
         {
           "id": "d",
-          "text": "East-west orientation is optimal; ventilation is secondary to shading geometry because elongating along the east-west axis maximizes prevailing wind exposure, while narrow north-south facades naturally limit solar gain without requiring additional shading devices"
+          "text": "Increase heat storage and reduce shade."
         }
       ],
       "correct_option_id": "a",
@@ -293,14 +291,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Orientation does not overcome poor ventilation; occupants will remain thermally uncomfortable.",
-        "c": "This overstates orientation importance; tropics prioritize ventilation > shading > orientation.",
-        "d": "This reverses the hierarchy; ventilation is primary, orientation secondary in tropical design.",
-        "correct": "The ALE often tests whether students recognize that shading and ventilation trump orientation.' Cross-ventilation effectiveness (6–12 ACH with synergistic stack effect) provides dramatically greater cooling than orientation alone. A poorly ventilated building cannot escape its thermal load; a poorly shaded but well-ventilated building can dissipate heat through air movement despite unfavorable aspect ratio.",
-        "takeaway": "A poorly ventilated building cannot escape its thermal load; a poorly shaded but well-ventilated building can dissipate heat through air movement despite unfavorable aspect ratio."
+        "correct": "Add shaded air paths, courtyards or voids, and high exhaust routes where the source scope supports them. This is supported by the Batch 132 local source map for Passive Design in Tropical Climates.",
+        "takeaway": "Passive Design in Tropical Climates: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "b": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "c": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "d": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Add shaded air paths, courtyards or voids, and high exhaust routes where the source scope supports them. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.source-capture.md (sha256:9927e78faf9319ade65052ca3092e446d4756b4ca634f7cf5238d02b184cb29b); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.refined.md (sha256:dce571fb09c7afb337ccb32b20e3d61300f4501a02bc68e968054f3c3ba69189).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.source-capture.md (sha256:9927e78faf9319ade65052ca3092e446d4756b4ca634f7cf5238d02b184cb29b); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.refined.md (sha256:dce571fb09c7afb337ccb32b20e3d61300f4501a02bc68e968054f3c3ba69189)",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -313,30 +311,30 @@
       "model_id": "ALE-THEO-004-02-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ff04ea3ce2e54cc6e7cbd9fa72a136ab7df666fda349cf2af6f2687697acf2ac"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:5ce289ffb21440e6c735698f3db5bb9b33ad02fd9e425a417a041483f5ba9522"
     },
     {
       "question_id": "02559414-0545-4024-9703-df834ee48385",
       "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
       "topic_id": "61adabd7-326c-4d52-ac06-13f313c829c4",
-      "text": "What is the 'Venturi skirt' design mentioned as a passive cooling innovation for overhangs in tropical architecture?",
+      "text": "Why is the bahay kubo useful as a passive-design reference?",
       "options": [
         {
           "id": "a",
-          "text": "A horizontal fin array that blocks oblique solar angles while maintaining vertical light penetration, enhancing daylighting"
+          "text": "It proves all modern buildings should use the same materials."
         },
         {
           "id": "b",
-          "text": "A sealed plenum chamber beneath overhangs that buffers thermal radiation and reduces heat transfer to interior spaces"
+          "text": "It removes the need for typhoon-resistant detailing."
         },
         {
           "id": "c",
-          "text": "A reflective paint coating on soffit surfaces to reduce re-radiation of trapped heat, improving thermal comfort"
+          "text": "It is only a decorative historic image."
         },
         {
           "id": "d",
-          "text": "A 30–45 degree louver beneath overhangs that accelerates wind flow and increases cooling by creating local pressure drop"
+          "text": "It demonstrates shaded, lightweight, highly ventilated tropical living patterns."
         }
       ],
       "correct_option_id": "d",
@@ -345,14 +343,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This describes horizontal shading; not the dynamic wind-acceleration principle of Venturi geometry.",
-        "b": "This describes a thermal buffer; not the Venturi acceleration mechanism.",
-        "c": "Soffit reflectance is a separate strategy; not the Venturi skirt.",
-        "correct": ": 'The \"Venturi skirt\" design—a 30–45 degree louver beneath overhangs—accelerates wind flow and increases cooling.' This uses fluid acceleration principle (constriction creates pressure drop) to enhance passive cooling beneath shaded eaves.",
-        "takeaway": ": 'The \"Venturi skirt\" design—a 30–45 degree louver beneath overhangs—accelerates wind flow and increases cooling.' This uses fluid acceleration principle (constriction creates pressure drop) to enhance passive cooling beneath shaded eaves."
+        "correct": "It demonstrates shaded, lightweight, highly ventilated tropical living patterns. This is supported by the Batch 132 local source map for Passive Design in Tropical Climates.",
+        "takeaway": "Passive Design in Tropical Climates: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "a": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "b": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "c": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": "This describes horizontal shading; not the dynamic wind-acceleration principle of Venturi geometry. This describes a thermal buffer; not the Venturi acceleration mechanism. Soffit reflectance is a separate strategy; not the Venturi skirt. : 'The \"Venturi skirt\" design—a 30–45 degree louver beneath overhangs—accelerates wind flow and increases cooling.' This uses fluid acceleration principle (constriction creates pressure drop) to enhance passive cooling beneath shaded eaves. : 'The \"Venturi skirt\" design—a 30–45 degree louver beneath overhangs—accelerates wind flow and increases cooling.' This uses fluid acceleration principle (constriction creates pressure drop) to enhance passive cooling beneath shaded eaves.",
-      "code_citation": null,
+      "explanation": "It demonstrates shaded, lightweight, highly ventilated tropical living patterns. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.source-capture.md (sha256:9927e78faf9319ade65052ca3092e446d4756b4ca634f7cf5238d02b184cb29b); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.refined.md (sha256:dce571fb09c7afb337ccb32b20e3d61300f4501a02bc68e968054f3c3ba69189).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.source-capture.md (sha256:9927e78faf9319ade65052ca3092e446d4756b4ca634f7cf5238d02b184cb29b); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.refined.md (sha256:dce571fb09c7afb337ccb32b20e3d61300f4501a02bc68e968054f3c3ba69189)",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -365,30 +363,30 @@
       "model_id": "ALE-THEO-004-02-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-05-06T15:09:18.994814+00:00",
-      "content_hash": "sha256:43268f9ea72910ebd4f6ebf5c59e8d5285a4d1619a177830cf9e5727ef3705c4"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:a46368e0f141202f21d6362d83d2c248e56059034bf339e8624e14d371eb8aa5"
     },
     {
       "question_id": "f88d1267-28e2-4b78-a568-db664836a6e2",
       "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
       "topic_id": "61adabd7-326c-4d52-ac06-13f313c829c4",
-      "text": "Why would a developer's proposal for thick concrete walls in an Eastern Visayas project (Type II, no dry season, nighttime 24°C) represent a design error?",
+      "text": "What should roof design do in passive tropical architecture?",
       "options": [
         {
           "id": "a",
-          "text": "Concrete absorbs moisture, causing structural failure in perpetually damp climates, especially when not properly treated with moisture barriers"
+          "text": "Absorb heat and release it into rooms at night."
         },
         {
           "id": "b",
-          "text": "Type II nighttime temperatures (24°C) prevent thermal mass discharge; concrete absorbs daytime heat and re-radiates at night, degrading comfort. Alternative: lightweight block + insulation + continuous ventilation"
+          "text": "Limit heat gain and allow heat release through insulation, ventilation, or layered roof strategies."
         },
         {
           "id": "c",
-          "text": "Concrete requires high embodied carbon; BERDE would penalize the choice, leading to lower sustainability ratings and potential regulatory issues"
+          "text": "Ignore roof heat because walls matter more."
         },
         {
           "id": "d",
-          "text": "Thick walls block cross-ventilation, reducing air circulation by 40–50%, which can lead to increased reliance on mechanical ventilation systems"
+          "text": "Use dark unventilated roofs as a default."
         }
       ],
       "correct_option_id": "b",
@@ -397,14 +395,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "While moisture durability matters, the fundamental issue is thermal performance failure.",
-        "c": "Embodied carbon is a secondary BERDE consideration; thermal performance is primary.",
-        "d": "Wall thickness alone does not block ventilation if windows remain properly sized; the core problem is thermal ineffectiveness.",
-        "correct": "The thermal mass error in Type II is explicitly addressed: 'Type II climate prevents nighttime thermal discharge (insufficient ΔT between wall [25°C] and ambient [24°C]). Concrete mass will trap daytime heat and re-radiate at night, degrading comfort.' The proposed alternative (lightweight block + ventilation) is the correct design response.",
-        "takeaway": "Concrete mass will trap daytime heat and re-radiate at night, degrading comfort.' The proposed alternative (lightweight block + ventilation) is the correct design response."
+        "correct": "Limit heat gain and allow heat release through insulation, ventilation, or layered roof strategies. This is supported by the Batch 132 local source map for Passive Design in Tropical Climates.",
+        "takeaway": "Passive Design in Tropical Climates: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "a": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "c": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "d": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Limit heat gain and allow heat release through insulation, ventilation, or layered roof strategies. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.source-capture.md (sha256:9927e78faf9319ade65052ca3092e446d4756b4ca634f7cf5238d02b184cb29b); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.refined.md (sha256:dce571fb09c7afb337ccb32b20e3d61300f4501a02bc68e968054f3c3ba69189).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.source-capture.md (sha256:9927e78faf9319ade65052ca3092e446d4756b4ca634f7cf5238d02b184cb29b); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.refined.md (sha256:dce571fb09c7afb337ccb32b20e3d61300f4501a02bc68e968054f3c3ba69189)",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -417,30 +415,30 @@
       "model_id": "ALE-THEO-004-02-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:fda3e11d4ad7ae40282b002cb8b21223930ac06b231850f061e6c49959b50b31"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:e6e1fbe45a91e6b68f5a452e2b1f683878718c283b706c98e11923a731ced671"
     },
     {
       "question_id": "e09a779d-e420-433b-b63c-32b6daeaa32c",
       "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
       "topic_id": "61adabd7-326c-4d52-ac06-13f313c829c4",
-      "text": "A bay kubo-inspired residential design incorporates open floor plan, large windows (30–40% wall area), and slat flooring. Which passive cooling mechanisms does this vernacular exemplar employ simultaneously?",
+      "text": "When is mechanical cooling still compatible with passive design?",
       "options": [
         {
           "id": "a",
-          "text": "Cross-ventilation only; other mechanisms are secondary, which limits the design's effectiveness"
+          "text": "When passive measures are deleted from the project."
         },
         {
           "id": "b",
-          "text": "Cross-ventilation (wind-driven), stack effect (buoyancy via open floor and roof vents), and evaporative cooling (permeable sawali/flooring)"
+          "text": "When passive measures reduce loads and mechanical systems serve rooms needing tighter control."
         },
         {
           "id": "c",
-          "text": "Thermal mass buffering combined with solar orientation optimization, which is not typical for this design"
+          "text": "Only when all windows are permanently open."
         },
         {
           "id": "d",
-          "text": "Active mechanical ventilation with natural light backup, which contradicts the passive design principles"
+          "text": "Never; passive design forbids any mechanical system."
         }
       ],
       "correct_option_id": "b",
@@ -449,14 +447,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "The bahay kubo achieves 8–10 ACH through synergized mechanisms, not single-strategy reliance.",
-        "c": "Thermal mass and solar orientation are secondary in vernacular tropical design.",
-        "d": "The bahay kubo is passive; mechanical systems are absent by definition.",
-        "correct": "A well-designed tropical building operates all three simultaneously: Cross-ventilation, Stack effect, Venturi effect.' The bahay kubo exemplar demonstrates: 'Cross-ventilation (large windows all sides), Stack effect (open floor + roof vents), Evaporative cooling (sawali walls, permeable flooring).' This triple integration is the tested standard.",
-        "takeaway": "A well-designed tropical building operates all three simultaneously: Cross-ventilation, Stack effect, Venturi effect.' The bahay kubo exemplar demonstrates: 'Cross-ventilation (large windows all sides), Stack effect (open floor + roof vents), Evaporative cooling (sawali walls, permeable flooring).' This triple integration is the tested standard."
+        "correct": "When passive measures reduce loads and mechanical systems serve rooms needing tighter control. This is supported by the Batch 132 local source map for Passive Design in Tropical Climates.",
+        "takeaway": "Passive Design in Tropical Climates: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "a": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "c": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "d": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": "The bahay kubo achieves 8–10 ACH through synergized mechanisms, not single-strategy reliance. Thermal mass and solar orientation are secondary in vernacular tropical design. The bahay kubo is passive; mechanical systems are absent by definition. A well-designed tropical building operates all three simultaneously: Cross-ventilation, Stack effect, Venturi effect.' The bahay kubo exemplar demonstrates: 'Cross-ventilation (large windows all sides), Stack effect (open floor + roof vents), Evaporative cooling (sawali walls, permeable flooring).' This triple integration is the tested standard. A well-designed tropical building operates all three simultaneously: Cross-ventilation, Stack effect, Venturi effect.' The bahay kubo exemplar demonstrates: 'Cross-ventilation (large windows all sides), Stack effect (open floor + roof vents), Evaporative cooling (sawali walls, permeable flooring).' This triple integration is the tested standard.",
-      "code_citation": null,
+      "explanation": "When passive measures reduce loads and mechanical systems serve rooms needing tighter control. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.source-capture.md (sha256:9927e78faf9319ade65052ca3092e446d4756b4ca634f7cf5238d02b184cb29b); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.refined.md (sha256:dce571fb09c7afb337ccb32b20e3d61300f4501a02bc68e968054f3c3ba69189).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.source-capture.md (sha256:9927e78faf9319ade65052ca3092e446d4756b4ca634f7cf5238d02b184cb29b); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.refined.md (sha256:dce571fb09c7afb337ccb32b20e3d61300f4501a02bc68e968054f3c3ba69189)",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -469,30 +467,30 @@
       "model_id": "ALE-THEO-004-02-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-05-06T15:09:19.279243+00:00",
-      "content_hash": "sha256:2cf3a3d3018ecc979feb6429f3576119613319780c8e70070dd13ebf82857ef7"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:c170a364862ab55da2c62e382a762ab40bddd59baa3b74153e3c8bcabe1e9f01"
     },
     {
       "question_id": "14a08653-a3b3-4e51-8e9c-db1e0bec0aa2",
       "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
       "topic_id": "61adabd7-326c-4d52-ac06-13f313c829c4",
-      "text": "Contrast the roof insulation strategy in tropical climates versus temperate climates. What different purpose does insulation serve in each?",
+      "text": "Which landscape move supports natural ventilation?",
       "options": [
         {
           "id": "a",
-          "text": "Both climates use insulation to minimize heat transfer; the mechanism is identical, though the specific materials and thicknesses may vary"
+          "text": "Create dense barriers directly in every wind path."
         },
         {
           "id": "b",
-          "text": "Tropics require thicker insulation (150mm+) because humidity reduces effectiveness; Temperate can use thinner 50mm, as the primary concern is temperature differential"
+          "text": "Use planting only as decoration after occupancy."
         },
         {
           "id": "c",
-          "text": "Tropics: Insulation prevents heat ingress (cooling load reduction); Temperate: Insulation prevents heat loss (heating load reduction). 50–75mm tropical insulation is adequate; 100–150mm is over-specification"
+          "text": "Shade and cool incoming air without blocking prevailing airflow."
         },
         {
           "id": "d",
-          "text": "Insulation effectiveness is independent of climate; thickness is determined by building code uniformly, though practical applications may differ"
+          "text": "Remove all shade near openings."
         }
       ],
       "correct_option_id": "c",
@@ -501,14 +499,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Mechanism differs; the directional heat flow and purpose are opposite.",
-        "b": "Humidity does not require thicker tropical insulation; 50–75mm adequately blocks inbound solar heat.",
-        "d": "Climate directly determines optimal insulation thickness; uniform codes ignore regional thermodynamic reality.",
-        "correct": "In tropics, insulation prevents heat *ingress*, not heat loss (unlike cold climates). 50–75mm is sufficient... BERDE penalizes excess insulation as embodied carbon waste.' This climate-specific logic is fundamental to tropical passive design.",
-        "takeaway": "BERDE penalizes excess insulation as embodied carbon waste.' This climate-specific logic is fundamental to tropical passive design."
+        "correct": "Shade and cool incoming air without blocking prevailing airflow. This is supported by the Batch 132 local source map for Passive Design in Tropical Climates.",
+        "takeaway": "Passive Design in Tropical Climates: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "a": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "b": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "d": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Shade and cool incoming air without blocking prevailing airflow. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.source-capture.md (sha256:9927e78faf9319ade65052ca3092e446d4756b4ca634f7cf5238d02b184cb29b); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.refined.md (sha256:dce571fb09c7afb337ccb32b20e3d61300f4501a02bc68e968054f3c3ba69189).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.source-capture.md (sha256:9927e78faf9319ade65052ca3092e446d4756b4ca634f7cf5238d02b184cb29b); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.refined.md (sha256:dce571fb09c7afb337ccb32b20e3d61300f4501a02bc68e968054f3c3ba69189)",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -521,30 +519,30 @@
       "model_id": "ALE-THEO-004-02-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:67aea987b9e81361b54b78d6a847b870e388c4ee240b61355509bebf31840cd6"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:43d98095cfee790a6e92239edcdb7fb2f438250ed515c54ae427a9451788376d"
     },
     {
       "question_id": "07cef4a3-d502-422d-94fe-e454050ca7e8",
       "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
       "topic_id": "61adabd7-326c-4d52-ac06-13f313c829c4",
-      "text": "A heritage bahay kubo must be upgraded with typhoon-resistant sliding doors and insect screens while preserving passive ventilation. Identify three design interventions that maintain cooling effectiveness.",
+      "text": "What is a source-safe passive-design question for retrofits?",
       "options": [
         {
           "id": "a",
-          "text": "Specify aluminum-frame sliding doors with ventilation louvers (15% aperture when closed), perforated metal insect screens (50% open area), and maintain elevated slat floor to preserve under-structure ventilation"
+          "text": "Can openings, shading, roof heat control, and airflow paths be improved without damaging heritage value?"
         },
         {
           "id": "b",
-          "text": "Seal all openings with tight-fitting doors/screens; install mechanical cooling systems to compensate for ventilation loss"
+          "text": "Can every historic wall be demolished for cross ventilation?"
         },
         {
           "id": "c",
-          "text": "Replace bamboo screens with solid walls; compensate with larger roof vents to enhance airflow"
+          "text": "Can source evidence be skipped if the result looks tropical?"
         },
         {
           "id": "d",
-          "text": "Accept ventilation loss; upgrade insulation instead to improve thermal comfort"
+          "text": "Can sealed glass replace all climate responses?"
         }
       ],
       "correct_option_id": "a",
@@ -553,14 +551,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Sealing defeats the entire bahay kubo design philosophy and ventilation effectiveness.",
-        "c": "Solid walls eliminate cross-ventilation; roof vents alone cannot compensate (stack effect requires inlet/outlet balance).",
-        "d": "Insulting ventilation with mechanical systems is the opposite of sustainable vernacular preservation.",
-        "correct": "Tested answer explicitly includes: '(a) Specify aluminum-frame sliding doors with ventilation louvers; when closed, louvers maintain 15% aperture area for stack flow. (b) Replace traditional fabric insect screens with perforated metal (aluminum 50% open area)... (c) Maintain elevated slat floor by raising door sills 300–500mm, preserving under-structure ventilation.' All three interventions are required for modernization without ventilation loss.",
-        "takeaway": "(c) Maintain elevated slat floor by raising door sills 300–500mm, preserving under-structure ventilation.' All three interventions are required for modernization without ventilation loss."
+        "correct": "Can openings, shading, roof heat control, and airflow paths be improved without damaging heritage value? This is supported by the Batch 132 local source map for Passive Design in Tropical Climates.",
+        "takeaway": "Passive Design in Tropical Climates: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "b": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "c": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "d": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Can openings, shading, roof heat control, and airflow paths be improved without damaging heritage value? The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.source-capture.md (sha256:9927e78faf9319ade65052ca3092e446d4756b4ca634f7cf5238d02b184cb29b); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.refined.md (sha256:dce571fb09c7afb337ccb32b20e3d61300f4501a02bc68e968054f3c3ba69189).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.source-capture.md (sha256:9927e78faf9319ade65052ca3092e446d4756b4ca634f7cf5238d02b184cb29b); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.refined.md (sha256:dce571fb09c7afb337ccb32b20e3d61300f4501a02bc68e968054f3c3ba69189)",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -573,30 +571,30 @@
       "model_id": "ALE-THEO-004-02-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a4532f5c93a197a60c96ae744edd11a28a56e1a8c6ea83c7271222da8d819238"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:9fb94931fafdb824c4bd1d84feab7abc9e2c965638783ec602d6ec43fd9cfb47"
     },
     {
       "question_id": "dec8f145-074a-4181-aba9-1fdc331cca54",
       "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
       "topic_id": "61adabd7-326c-4d52-ac06-13f313c829c4",
-      "text": "A tropical courtyard design includes water features (fountains, pools) intended to cool occupants via evaporative effect. Under what climate conditions is this strategy effective, and where does it fail?",
+      "text": "Which claim should be removed unless separately sourced?",
       "options": [
         {
           "id": "a",
-          "text": "Effective in Type I dry season (RH 40–50%); limited in Type II perpetual moisture (RH 75–85%) where evaporative potential is reduced 60–70%. Type II requires drainage/prevention of mosquito breeding instead"
+          "text": "A precise Venturi-device or overhang dimension that is not in the checked local source set."
         },
         {
           "id": "b",
-          "text": "Water features provide 1–2°C temperature reduction in all tropical climates through evaporation, assuming optimal placement and maintenance"
+          "text": "Shading is important in tropical architecture."
         },
         {
           "id": "c",
-          "text": "Water features are ineffective in tropics; humidity is too high for any evaporative cooling, making alternative cooling methods necessary"
+          "text": "Natural ventilation depends on opening alignment."
         },
         {
           "id": "d",
-          "text": "Water features always increase humidity, worsening thermal comfort regardless of climate type, unless combined with mechanical ventilation"
+          "text": "Hot-humid design should limit heat gain."
         }
       ],
       "correct_option_id": "a",
@@ -605,14 +603,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "While 1–2°C is the magnitude, effectiveness varies dramatically with humidity levels.",
-        "c": "Type I dry season provides clear evaporative cooling benefit; not all tropics are equally humid.",
-        "d": "Water features increase humidity locally but provide net cooling through evaporation; this is biophilic benefit despite humidity rise.",
-        "correct": "Courtyard water features increase relative humidity locally and reduce air temperature by 1–2°C through evaporation.' Performance is climate-dependent: Type I dry season (RH 40–50%) maximizes evaporative cooling. Type II perpetual dampness (RH 75–85%) reduces evaporative potential by 60–70%. Courtyards can trap stale air if poorly oriented; drainage must prevent mosquito breeding in wet climates.'",
-        "takeaway": "Courtyards can trap stale air if poorly oriented; drainage must prevent mosquito breeding in wet climates.'."
+        "correct": "A precise Venturi-device or overhang dimension that is not in the checked local source set. This is supported by the Batch 132 local source map for Passive Design in Tropical Climates.",
+        "takeaway": "Passive Design in Tropical Climates: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "b": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "c": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "d": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "A precise Venturi-device or overhang dimension that is not in the checked local source set. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.source-capture.md (sha256:9927e78faf9319ade65052ca3092e446d4756b4ca634f7cf5238d02b184cb29b); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.refined.md (sha256:dce571fb09c7afb337ccb32b20e3d61300f4501a02bc68e968054f3c3ba69189).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.source-capture.md (sha256:9927e78faf9319ade65052ca3092e446d4756b4ca634f7cf5238d02b184cb29b); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.refined.md (sha256:dce571fb09c7afb337ccb32b20e3d61300f4501a02bc68e968054f3c3ba69189)",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -625,8 +623,10 @@
       "model_id": "ALE-THEO-004-02-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:925d9c9625201d925ae97e31ae4949d9fd9ed2f8764b2748adfd3d530d709214"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:1e234437d5f7b2a4d4d8437673cf6a3c96ecfccd150824a65ac2f5152bc2aaa9"
     }
-  ]
+  ],
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:9df36d542cb34768d62f43345551dc8f7915acd41243d6af2b9ecb70fe14296b"
 }

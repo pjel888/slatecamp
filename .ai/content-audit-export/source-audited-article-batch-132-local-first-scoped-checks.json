@@ -1,0 +1,290 @@
+{
+  "batch_id": "source-audited-article-batch-132-local-first",
+  "generated_at": "2026-05-14T05:43:15.598+08:00",
+  "status": "passed_local_validation_git_index_blocked_handoff",
+  "compose_diff_validate": {
+    "passed": true,
+    "articles": [
+      {
+        "article_id": "2ec5e562-50a1-4c7c-a95e-a17166d4631b",
+        "slug": "lea-theo-003-09-core-concept",
+        "compose": {
+          "safe_to_diff": true,
+          "blockers": [],
+          "placeholders_found": 0,
+          "unresolved_placeholders": []
+        },
+        "diff": {
+          "safe_to_push": true,
+          "locally_safe_to_push": true,
+          "blockers": [],
+          "changed": true
+        },
+        "ui_block_validation": {
+          "valid": true,
+          "blockers": [],
+          "warnings": []
+        }
+      },
+      {
+        "article_id": "567ba614-9dcd-4c76-8bf3-74478fd1291f",
+        "slug": "lea-theo-004-01-core-concept",
+        "compose": {
+          "safe_to_diff": true,
+          "blockers": [],
+          "placeholders_found": 0,
+          "unresolved_placeholders": []
+        },
+        "diff": {
+          "safe_to_push": true,
+          "locally_safe_to_push": true,
+          "blockers": [],
+          "changed": true
+        },
+        "ui_block_validation": {
+          "valid": true,
+          "blockers": [],
+          "warnings": []
+        }
+      },
+      {
+        "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
+        "slug": "lea-theo-004-02-core-concept",
+        "compose": {
+          "safe_to_diff": true,
+          "blockers": [],
+          "placeholders_found": 0,
+          "unresolved_placeholders": []
+        },
+        "diff": {
+          "safe_to_push": true,
+          "locally_safe_to_push": true,
+          "blockers": [],
+          "changed": true
+        },
+        "ui_block_validation": {
+          "valid": true,
+          "blockers": [],
+          "warnings": []
+        }
+      },
+      {
+        "article_id": "e2d9d304-9362-4472-8ca8-34106f6990dd",
+        "slug": "lea-theo-004-03-core-concept",
+        "compose": {
+          "safe_to_diff": true,
+          "blockers": [],
+          "placeholders_found": 0,
+          "unresolved_placeholders": []
+        },
+        "diff": {
+          "safe_to_push": true,
+          "locally_safe_to_push": true,
+          "blockers": [],
+          "changed": true
+        },
+        "ui_block_validation": {
+          "valid": true,
+          "blockers": [],
+          "warnings": []
+        }
+      },
+      {
+        "article_id": "cb07f9cb-7506-496e-941a-4080a05c323f",
+        "slug": "lea-theo-004-07-core-concept",
+        "compose": {
+          "safe_to_diff": true,
+          "blockers": [],
+          "placeholders_found": 0,
+          "unresolved_placeholders": []
+        },
+        "diff": {
+          "safe_to_push": true,
+          "locally_safe_to_push": true,
+          "blockers": [],
+          "changed": true
+        },
+        "ui_block_validation": {
+          "valid": true,
+          "blockers": [],
+          "warnings": []
+        }
+      }
+    ]
+  },
+  "ui_block_validation": {
+    "passed": true,
+    "articles": [
+      {
+        "article_id": "2ec5e562-50a1-4c7c-a95e-a17166d4631b",
+        "slug": "lea-theo-003-09-core-concept",
+        "ui_block_count": 0,
+        "normalized_has_placeholder": false,
+        "candidate_has_placeholder": false,
+        "passed": true
+      },
+      {
+        "article_id": "567ba614-9dcd-4c76-8bf3-74478fd1291f",
+        "slug": "lea-theo-004-01-core-concept",
+        "ui_block_count": 0,
+        "normalized_has_placeholder": false,
+        "candidate_has_placeholder": false,
+        "passed": true
+      },
+      {
+        "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
+        "slug": "lea-theo-004-02-core-concept",
+        "ui_block_count": 0,
+        "normalized_has_placeholder": false,
+        "candidate_has_placeholder": false,
+        "passed": true
+      },
+      {
+        "article_id": "e2d9d304-9362-4472-8ca8-34106f6990dd",
+        "slug": "lea-theo-004-03-core-concept",
+        "ui_block_count": 0,
+        "normalized_has_placeholder": false,
+        "candidate_has_placeholder": false,
+        "passed": true
+      },
+      {
+        "article_id": "cb07f9cb-7506-496e-941a-4080a05c323f",
+        "slug": "lea-theo-004-07-core-concept",
+        "ui_block_count": 0,
+        "normalized_has_placeholder": false,
+        "candidate_has_placeholder": false,
+        "passed": true
+      }
+    ]
+  },
+  "scoped_json_parse": {
+    "passed": true,
+    "checked_files": 103,
+    "failures": []
+  },
+  "placeholder_internal_marker_source_gap_scan": {
+    "passed": true,
+    "checked_files": 78,
+    "findings": []
+  },
+  "source_hash_checks": {
+    "passed": true,
+    "mismatches": []
+  },
+  "question_edit_count": {
+    "passed": true,
+    "total_linked_questions": 58,
+    "total_question_edits": 58,
+    "articles": [
+      {
+        "article_id": "2ec5e562-50a1-4c7c-a95e-a17166d4631b",
+        "slug": "lea-theo-003-09-core-concept",
+        "linked_question_count": 13,
+        "question_edit_count": 13,
+        "answer_key_change_files": [],
+        "passed": true
+      },
+      {
+        "article_id": "567ba614-9dcd-4c76-8bf3-74478fd1291f",
+        "slug": "lea-theo-004-01-core-concept",
+        "linked_question_count": 12,
+        "question_edit_count": 12,
+        "answer_key_change_files": [],
+        "passed": true
+      },
+      {
+        "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
+        "slug": "lea-theo-004-02-core-concept",
+        "linked_question_count": 12,
+        "question_edit_count": 12,
+        "answer_key_change_files": [],
+        "passed": true
+      },
+      {
+        "article_id": "e2d9d304-9362-4472-8ca8-34106f6990dd",
+        "slug": "lea-theo-004-03-core-concept",
+        "linked_question_count": 11,
+        "question_edit_count": 11,
+        "answer_key_change_files": [],
+        "passed": true
+      },
+      {
+        "article_id": "cb07f9cb-7506-496e-941a-4080a05c323f",
+        "slug": "lea-theo-004-07-core-concept",
+        "linked_question_count": 10,
+        "question_edit_count": 10,
+        "answer_key_change_files": [],
+        "passed": true
+      }
+    ]
+  },
+  "stale_compose_error_scan": {
+    "passed": true,
+    "files": []
+  },
+  "targeted_content_audit_tests": {
+    "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+    "exit_code": 0,
+    "stdout_tail": [
+      "bun test v1.3.10 (30e609e0)"
+    ],
+    "stderr_tail": [
+      "scripts/content-audit/content-audit.test.ts:",
+      "(pass) content-audit normalization > normal markdown remains unchanged [2.55ms]",
+      "(pass) content-audit normalization > self-closing component is extracted and preserved [1.18ms]",
+      "(pass) content-audit normalization > paired component with children is extracted and recomposed [0.03ms]",
+      "(pass) content-audit normalization > code fence containing component syntax is not extracted [0.68ms]",
+      "(pass) content-audit normalization > explicit fenced UI blocks are preserved while ordinary json fences are untouched [0.08ms]",
+      "(pass) content-audit normalization > unknown custom block is preserved and flagged [0.10ms]",
+      "(pass) content-audit push payload > suppresses public updated_note for operational repair notes [0.11ms]",
+      "(pass) content-audit push payload > keeps public updated_note when suppression is not requested [0.04ms]",
+      "(pass) content-audit push safety > source audit gate warns on dry-run but blocks apply for legal/code candidates without evidence [0.01ms]",
+      "(pass) content-audit push safety > source audit gate accepts complete passing evidence and rejects stale candidate hashes [0.14ms]",
+      "(pass) content-audit push safety > placeholder parsing accepts current ui ids and legacy block ids [0.06ms]",
+      "(pass) content-audit push safety > legacy block placeholders still recompose against current ui block records [0.03ms]",
+      "(pass) content-audit push safety > recomposition restores original content when normalized is unchanged [0.14ms]",
+      "(pass) content-audit push safety > diff marks unresolved placeholder as unsafe [0.46ms]",
+      "(pass) content-audit push safety > changed-only export helper compares content hashes only [0.04ms]",
+      "(pass) content-audit push safety > bulk apply requires exact confirmation phrase [1.11ms]",
+      "(pass) content-audit push safety > cli parser supports changed-only, all-safe, and confirm flags [0.08ms]",
+      "(pass) content-audit push safety > folder names use stable slug double-dash article id schema [0.12ms]",
+      "(pass) content-audit push safety > stale-safe apply update requires content compare-and-swap and exactly one row [0.13ms]",
+      "(pass) content-audit push safety > placeholder repair apply can use updated_at compare-and-swap [0.12ms]",
+      "(pass) content-audit push safety > push refuses stale remote content and defaults to dry-run [0.08ms]",
+      "(pass) content-audit push safety > apply refuses no-op candidate matching original [0.13ms]",
+      "(pass) content-audit push safety > push safety blocks candidate content that still contains raw UI block placeholders [0.06ms]",
+      "(pass) content-audit push safety > repair placeholder mode can pass stale safety when remote is placeholder-corrupted and candidate is restored [0.15ms]",
+      "(pass) content-audit push safety > repair placeholder mode allows applying a restored candidate even when it matches original [0.02ms]",
+      "(pass) component inventory > detects a fixture component and reports rich article usage [4.21ms]",
+      "(pass) sync state > writes per-article sync status [1.16ms]",
+      "scripts/content-audit/source-verification-invariants.test.ts:",
+      "(pass) source verification invariant artifacts > generated status and recommendation fields do not leak forbidden promotion labels [3.58ms]",
+      "(pass) source verification invariant artifacts > locator evidence rows stay blocked and use explicit safe unions [0.58ms]",
+      "(pass) source verification invariant artifacts > packet prep recommendations stay non-promotional and route high-risk rows to review [0.15ms]",
+      "(pass) source verification invariant artifacts > dry-run admin payload cannot imply writes, approvals, source packs, or embeddings [0.03ms]",
+      "(pass) source verification invariant artifacts > source verification smoke output confirms no mutating side effects [0.29ms]",
+      "(pass) source verification invariant artifacts > package scripts for source verification are dry-run/local safety commands [0.07ms]",
+      "(pass) source verification invariant artifacts > forbidden promotion list covers source-pack and embedding readiness terms [0.17ms]",
+      " 34 pass",
+      " 0 fail",
+      " 328 expect() calls",
+      "Ran 34 tests across 2 files. [117.00ms]"
+    ],
+    "passed": true
+  },
+  "scoped_git_diff_check": {
+    "command": "git diff --check -- .ai/03_plans/batch-132-git-handoff-stage-list.md .ai/03_plans/batch-132-git-handoff-stage-paths.txt .ai/03_plans/batch-132-independent-quality-review.md .ai/03_plans/production-line-batch-132-manifest.json .ai/03_plans/source-audited-local-first-batches-handoff.md .ai/03_plans/source-audited-local-first-freeze-readiness-report.md .ai/03_plans/source-audited-production-line-coordination.md .ai/content-audit-export/articles/lea-theo-003-09-core-concept--2ec5e562-50a1-4c7c-a95e-a17166d4631b/article-metadata.json .ai/content-audit-export/articles/lea-theo-003-09-core-concept--2ec5e562-50a1-4c7c-a95e-a17166d4631b/candidate.md .ai/content-audit-export/articles/lea-theo-003-09-core-concept--2ec5e562-50a1-4c7c-a95e-a17166d4631b/compose-report.json .ai/content-audit-export/articles/lea-theo-003-09-core-concept--2ec5e562-50a1-4c7c-a95e-a17166d4631b/diff-report.json .ai/content-audit-export/articles/lea-theo-003-09-core-concept--2ec5e562-50a1-4c7c-a95e-a17166d4631b/diff-report.md .ai/content-audit-export/articles/lea-theo-003-09-core-concept--2ec5e562-50a1-4c7c-a95e-a17166d4631b/linked-questions.json .ai/content-audit-export/articles/lea-theo-003-09-core-concept--2ec5e562-50a1-4c7c-a95e-a17166d4631b/normalized.md .ai/content-audit-export/articles/lea-theo-003-09-core-concept--2ec5e562-50a1-4c7c-a95e-a17166d4631b/question-edits/2b388bf3-a459-4802-a604-1a8d2cc68d70.json .ai/content-audit-export/articles/lea-theo-003-09-core-concept--2ec5e562-50a1-4c7c-a95e-a17166d4631b/question-edits/48fc4ad7-184f-4de2-8de4-6068e76bd60e.json .ai/content-audit-export/articles/lea-theo-003-09-core-concept--2ec5e562-50a1-4c7c-a95e-a17166d4631b/question-edits/4bb1a6ad-74be-4b11-9520-819c7623ee2e.json .ai/content-audit-export/articles/lea-theo-003-09-core-concept--2ec5e562-50a1-4c7c-a95e-a17166d4631b/question-edits/5228f039-c9b2-4f00-ad56-0d71da974b93.json .ai/content-audit-export/articles/lea-theo-003-09-core-concept--2ec5e562-50a1-4c7c-a95e-a17166d4631b/question-edits/61fd148f-c7d2-405f-96b5-84380bb20ff2.json .ai/content-audit-export/articles/lea-theo-003-09-core-concept--2ec5e562-50a1-4c7c-a95e-a17166d4631b/question-edits/70da2952-4697-4bd8-9d43-9bf2e81ae3cb.json .ai/content-audit-export/articles/lea-theo-003-09-core-concept--2ec5e562-50a1-4c7c-a95e-a17166d4631b/question-edits/8968702c-6522-4cd7-b7a4-164e2a360053.json .ai/content-audit-export/articles/lea-theo-003-09-core-concept--2ec5e562-50a1-4c7c-a95e-a17166d4631b/question-edits/ccf715a9-8537-4d49-837d-bc9f1fa379e4.json .ai/content-audit-export/articles/lea-theo-003-09-core-concept--2ec5e562-50a1-4c7c-a95e-a17166d4631b/question-edits/d3cbd5d7-ea62-4686-bcef-bc45720fda6c.json .ai/content-audit-export/articles/lea-theo-003-09-core-concept--2ec5e562-50a1-4c7c-a95e-a17166d4631b/question-edits/d61a9c8e-36e8-4d5f-89c9-a421e4f9fb1d.json .ai/content-audit-export/articles/lea-theo-003-09-core-concept--2ec5e562-50a1-4c7c-a95e-a17166d4631b/question-edits/d94f11d7-e15b-4e07-b745-316c466a0a93.json .ai/content-audit-export/articles/lea-theo-003-09-core-concept--2ec5e562-50a1-4c7c-a95e-a17166d4631b/question-edits/e621fbc3-6943-40cc-aa66-de5146c8d878.json .ai/content-audit-export/articles/lea-theo-003-09-core-concept--2ec5e562-50a1-4c7c-a95e-a17166d4631b/question-edits/f63305b4-e50b-4623-8963-d5ddee5d1295.json .ai/content-audit-export/articles/lea-theo-003-09-core-concept--2ec5e562-50a1-4c7c-a95e-a17166d4631b/source-audit-evidence.json .ai/content-audit-export/articles/lea-theo-003-09-core-concept--2ec5e562-50a1-4c7c-a95e-a17166d4631b/sources.json .ai/content-audit-export/articles/lea-theo-003-09-core-concept--2ec5e562-50a1-4c7c-a95e-a17166d4631b/ui-block-edit-validation.json .ai/content-audit-export/articles/lea-theo-003-09-core-concept--2ec5e562-50a1-4c7c-a95e-a17166d4631b/ui-block-edits.json .ai/content-audit-export/articles/lea-theo-003-09-core-concept--2ec5e562-50a1-4c7c-a95e-a17166d4631b/ui-blocks.json .ai/content-audit-export/articles/lea-theo-004-01-core-concept--567ba614-9dcd-4c76-8bf3-74478fd1291f/article-metadata.json .ai/content-audit-export/articles/lea-theo-004-01-core-concept--567ba614-9dcd-4c76-8bf3-74478fd1291f/candidate.md .ai/content-audit-export/articles/lea-theo-004-01-core-concept--567ba614-9dcd-4c76-8bf3-74478fd1291f/compose-report.json .ai/content-audit-export/articles/lea-theo-004-01-core-concept--567ba614-9dcd-4c76-8bf3-74478fd1291f/diff-report.json .ai/content-audit-export/articles/lea-theo-004-01-core-concept--567ba614-9dcd-4c76-8bf3-74478fd1291f/diff-report.md .ai/content-audit-export/articles/lea-theo-004-01-core-concept--567ba614-9dcd-4c76-8bf3-74478fd1291f/linked-questions.json .ai/content-audit-export/articles/lea-theo-004-01-core-concept--567ba614-9dcd-4c76-8bf3-74478fd1291f/normalized.md .ai/content-audit-export/articles/lea-theo-004-01-core-concept--567ba614-9dcd-4c76-8bf3-74478fd1291f/question-edits/042ad368-3b3a-4cb8-8f1c-2b9b8150ae9c.json .ai/content-audit-export/articles/lea-theo-004-01-core-concept--567ba614-9dcd-4c76-8bf3-74478fd1291f/question-edits/16723f70-226b-4f7c-80b7-13c339467cef.json .ai/content-audit-export/articles/lea-theo-004-01-core-concept--567ba614-9dcd-4c76-8bf3-74478fd1291f/question-edits/5410035e-4097-4bd5-b9a6-7481aa02c66f.json .ai/content-audit-export/articles/lea-theo-004-01-core-concept--567ba614-9dcd-4c76-8bf3-74478fd1291f/question-edits/561527e6-cb32-4c97-ba08-46279eb6f758.json .ai/content-audit-export/articles/lea-theo-004-01-core-concept--567ba614-9dcd-4c76-8bf3-74478fd1291f/question-edits/6a745678-7ed1-4540-a787-62f9df3c70dc.json .ai/content-audit-export/articles/lea-theo-004-01-core-concept--567ba614-9dcd-4c76-8bf3-74478fd1291f/question-edits/7aea0d5a-3e24-4633-9581-19cc401d3bb1.json .ai/content-audit-export/articles/lea-theo-004-01-core-concept--567ba614-9dcd-4c76-8bf3-74478fd1291f/question-edits/7c54c3ce-69a6-46cb-8a13-f95dc113dd36.json .ai/content-audit-export/articles/lea-theo-004-01-core-concept--567ba614-9dcd-4c76-8bf3-74478fd1291f/question-edits/8d5861ed-0ad4-42a8-aa74-790043cfbcaa.json .ai/content-audit-export/articles/lea-theo-004-01-core-concept--567ba614-9dcd-4c76-8bf3-74478fd1291f/question-edits/cd317beb-bc62-49c6-a718-0a41f478643e.json .ai/content-audit-export/articles/lea-theo-004-01-core-concept--567ba614-9dcd-4c76-8bf3-74478fd1291f/question-edits/d139d08e-b2ad-484b-9cac-f7336c741ddf.json .ai/content-audit-export/articles/lea-theo-004-01-core-concept--567ba614-9dcd-4c76-8bf3-74478fd1291f/question-edits/d186c673-1ee4-44e2-a311-03f7b7ac690c.json .ai/content-audit-export/articles/lea-theo-004-01-core-concept--567ba614-9dcd-4c76-8bf3-74478fd1291f/question-edits/e9b5f7ef-b5f9-410c-8cb7-4e060e6d632a.json .ai/content-audit-export/articles/lea-theo-004-01-core-concept--567ba614-9dcd-4c76-8bf3-74478fd1291f/source-audit-evidence.json .ai/content-audit-export/articles/lea-theo-004-01-core-concept--567ba614-9dcd-4c76-8bf3-74478fd1291f/sources.json .ai/content-audit-export/articles/lea-theo-004-01-core-concept--567ba614-9dcd-4c76-8bf3-74478fd1291f/ui-block-edit-validation.json .ai/content-audit-export/articles/lea-theo-004-01-core-concept--567ba614-9dcd-4c76-8bf3-74478fd1291f/ui-block-edits.json .ai/content-audit-export/articles/lea-theo-004-01-core-concept--567ba614-9dcd-4c76-8bf3-74478fd1291f/ui-blocks.json .ai/content-audit-export/articles/lea-theo-004-02-core-concept--669aab68-416a-4a90-b66c-4ea998e82d05/article-metadata.json .ai/content-audit-export/articles/lea-theo-004-02-core-concept--669aab68-416a-4a90-b66c-4ea998e82d05/candidate.md .ai/content-audit-export/articles/lea-theo-004-02-core-concept--669aab68-416a-4a90-b66c-4ea998e82d05/compose-report.json .ai/content-audit-export/articles/lea-theo-004-02-core-concept--669aab68-416a-4a90-b66c-4ea998e82d05/diff-report.json .ai/content-audit-export/articles/lea-theo-004-02-core-concept--669aab68-416a-4a90-b66c-4ea998e82d05/diff-report.md .ai/content-audit-export/articles/lea-theo-004-02-core-concept--669aab68-416a-4a90-b66c-4ea998e82d05/linked-questions.json .ai/content-audit-export/articles/lea-theo-004-02-core-concept--669aab68-416a-4a90-b66c-4ea998e82d05/normalized.md .ai/content-audit-export/articles/lea-theo-004-02-core-concept--669aab68-416a-4a90-b66c-4ea998e82d05/question-edits/003a6a7b-7696-4826-be34-19570663f743.json .ai/content-audit-export/articles/lea-theo-004-02-core-concept--669aab68-416a-4a90-b66c-4ea998e82d05/question-edits/02559414-0545-4024-9703-df834ee48385.json .ai/content-audit-export/articles/lea-theo-004-02-core-concept--669aab68-416a-4a90-b66c-4ea998e82d05/question-edits/07cef4a3-d502-422d-94fe-e454050ca7e8.json .ai/content-audit-export/articles/lea-theo-004-02-core-concept--669aab68-416a-4a90-b66c-4ea998e82d05/question-edits/11de4a7a-6d25-455b-8204-3aac5408c9d4.json .ai/content-audit-export/articles/lea-theo-004-02-core-concept--669aab68-416a-4a90-b66c-4ea998e82d05/question-edits/14a08653-a3b3-4e51-8e9c-db1e0bec0aa2.json .ai/content-audit-export/articles/lea-theo-004-02-core-concept--669aab68-416a-4a90-b66c-4ea998e82d05/question-edits/665e3f89-744e-42c5-9e49-15a1d35a4895.json .ai/content-audit-export/articles/lea-theo-004-02-core-concept--669aab68-416a-4a90-b66c-4ea998e82d05/question-edits/93364bbd-0470-4cf2-baf3-8c469f838049.json .ai/content-audit-export/articles/lea-theo-004-02-core-concept--669aab68-416a-4a90-b66c-4ea998e82d05/question-edits/9c009e8a-fd05-44d3-b301-7626e0e9eca1.json .ai/content-audit-export/articles/lea-theo-004-02-core-concept--669aab68-416a-4a90-b66c-4ea998e82d05/question-edits/a9836d18-447e-4f50-82b4-3b53724f5a1d.json .ai/content-audit-export/articles/lea-theo-004-02-core-concept--669aab68-416a-4a90-b66c-4ea998e82d05/question-edits/dec8f145-074a-4181-aba9-1fdc331cca54.json .ai/content-audit-export/articles/lea-theo-004-02-core-concept--669aab68-416a-4a90-b66c-4ea998e82d05/question-edits/e09a779d-e420-433b-b63c-32b6daeaa32c.json .ai/content-audit-export/articles/lea-theo-004-02-core-concept--669aab68-416a-4a90-b66c-4ea998e82d05/question-edits/f88d1267-28e2-4b78-a568-db664836a6e2.json .ai/content-audit-export/articles/lea-theo-004-02-core-concept--669aab68-416a-4a90-b66c-4ea998e82d05/source-audit-evidence.json .ai/content-audit-export/articles/lea-theo-004-02-core-concept--669aab68-416a-4a90-b66c-4ea998e82d05/sources.json .ai/content-audit-export/articles/lea-theo-004-02-core-concept--669aab68-416a-4a90-b66c-4ea998e82d05/ui-block-edit-validation.json .ai/content-audit-export/articles/lea-theo-004-02-core-concept--669aab68-416a-4a90-b66c-4ea998e82d05/ui-block-edits.json .ai/content-audit-export/articles/lea-theo-004-02-core-concept--669aab68-416a-4a90-b66c-4ea998e82d05/ui-blocks.json .ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/article-metadata.json .ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/candidate.md .ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/compose-report.json .ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/diff-report.json .ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/diff-report.md .ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/linked-questions.json .ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/normalized.md .ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/question-edits/12c69cfd-9b1f-4a25-b194-61ea4465f028.json .ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/question-edits/2c8263a9-1cd6-4501-ba02-5bfb27f4a583.json .ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/question-edits/3b5e5bf2-3c2b-4b82-9312-47aa89b59408.json .ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/question-edits/3b611cdf-b5b2-4317-aef5-136f750b5b91.json .ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/question-edits/3bebb959-274f-45b5-b7f5-d5d500129491.json .ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/question-edits/428b1ef7-1fdf-4a31-b0ba-c148e696997b.json .ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/question-edits/62ec9a51-5fc3-4414-8cf5-9273c1c462c6.json .ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/question-edits/a68af327-7fbc-4401-894f-e272e7859803.json .ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/question-edits/c7fcc5cb-cac7-4388-a77e-13b4d0e3dce1.json .ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/question-edits/e759abce-38b1-46ff-a4bc-5a527003da34.json .ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/question-edits/ee75ebcb-f9b2-4343-9510-1f3f35f1179d.json .ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/source-audit-evidence.json .ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/sources.json .ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/ui-block-edit-validation.json .ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/ui-block-edits.json .ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/ui-blocks.json .ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/article-metadata.json .ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/candidate.md .ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/compose-report.json .ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/diff-report.json .ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/diff-report.md .ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/linked-questions.json .ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/normalized.md .ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/question-edits/0d101c07-3afe-4f47-b5ae-e0de8b616392.json .ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/question-edits/12e6232e-d6a7-4463-b355-a2342e37c1d1.json .ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/question-edits/3dcf9d67-1490-412b-938b-03dba01490a4.json .ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/question-edits/671ef0a4-da32-412f-9fcf-bade35805abf.json .ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/question-edits/7458086f-9aa2-4f81-bd75-2635168513e2.json .ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/question-edits/7e763bc9-2296-443f-8418-e6d209da8218.json .ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/question-edits/a9c2a381-6626-461a-a9b2-39bb5d376d6b.json .ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/question-edits/d8c2ac1b-2e38-4d32-a630-475c1d7a5b59.json .ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/question-edits/dc3c76ef-5d1b-4d07-a873-5465db5c7b0d.json .ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/question-edits/ff5f61f5-824d-4dd7-b6a0-c771a39fd303.json .ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/source-audit-evidence.json .ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/sources.json .ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/ui-block-edit-validation.json .ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/ui-block-edits.json .ai/content-audit-export/articles/lea-theo-004-07-core-concept--cb07f9cb-7506-496e-941a-4080a05c323f/ui-blocks.json .ai/content-audit-export/runs/source-audited-batch-132-local-generator.mjs .ai/content-audit-export/runs/source-audited-batch-132-prep-summary.json .ai/content-audit-export/source-audited-article-batch-132-local-first-ledger.json .ai/content-audit-export/source-audited-article-batch-132-local-first-report.md .ai/content-audit-export/source-audited-article-batch-132-local-first-scoped-checks.json .ai/content-audit-export/ui-block-edit-validation.json .ai/content-audit-export/validation-report.json vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.source-capture.md vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.source-capture.md vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.source-capture.md vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.source-capture.md vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-07-core-concept-biophilic-design.source-capture.md vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.refined.md vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.refined.md vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.refined.md vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.refined.md vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-07-core-concept-biophilic-design.refined.md",
+    "exit_code": 0,
+    "stdout_tail": [],
+    "stderr_tail": [],
+    "passed": true
+  },
+  "constraints": {
+    "supabase_write_attempted": false,
+    "deploy_attempted": false,
+    "prod_db_touched": false,
+    "main_merge_attempted": false,
+    "unrelated_dirty_files_touched": false
+  },
+  "passed": true
+}

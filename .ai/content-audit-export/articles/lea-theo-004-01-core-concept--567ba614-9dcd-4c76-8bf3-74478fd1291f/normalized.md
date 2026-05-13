@@ -1,26 +1,34 @@
 # Philippine Tropical Climate and Design Response
 
-The Philippines is a tropical maritime setting. For LEA design questions, that means the climate problem is not just heat. The source describes the country as having relatively high temperature, high humidity, and abundant rainfall, so the design response must manage solar heat, wet weather, air movement, and seasonal wind at the same time.
+## Source-Audited Scope
+Source basis: Batch 132 local source capture `vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.source-capture.md` (sha256:614c9faf26a196e136223bb73bbca80cc4d90f5c4a35aad8c28ef964e958efa5) and refined conversion `vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.refined.md` (sha256:1f2e963233cffe70bb0889e3712c30c16d242b0233a0b8cfbc97683ec547da16).
 
-## Exam Anchors
+Philippine design starts from a tropical maritime climate: heat, humidity, abundant rainfall, monsoon shifts, varied rainfall distribution, and tropical-cyclone exposure. Climate type should guide roof drainage, rain protection, shaded openings, ventilation opportunities, material durability, and site planning.
 
-- Tropical climate is the broad climate family; the Philippine setting is also maritime.
-- High humidity and abundant rainfall make shade, rain protection, and ventilation core design concerns.
-- Rainfall distribution varies by region because moisture-bearing winds and mountain systems change exposure.
-- The country has rainy and dry seasons, with regional climate types that affect how much rain arrives and when.
-- A monsoon is a seasonal shift in prevailing wind, so openings and outdoor rooms should be checked against seasonal wind direction rather than a single fixed breeze.
+## Board Exam Quick Check
+Start with heat, humidity, rainfall, monsoon direction, typhoon exposure, and local rainfall type before selecting form, openings, roof, drainage, and material strategies.
 
-## Design Implications
+## Core Concept
+Philippine climate response is not a generic tropical style. It is a site decision framework shaped by hot-humid air, high relative humidity, abundant but regionally varied rainfall, monsoon seasons, and cyclone-related wind and rain.
 
-In hot-humid design, the safe first move is to reduce heat gain and preserve air movement. Do not treat the Philippine climate as if it were an arid climate where heavy thermal mass and night flushing are always the main answer. The checked TOA 4 source points toward maximum wind exposure, maximum internal airflow, and minimum heat gain for hot-humid climates.
+## Real World Scenario
+A coastal school in an eastern seaboard province cannot be treated like a dry-climate project. The safer climate response is to control wind-driven rain, protect openings, drain roofs and grounds quickly, keep shaded ventilation available, and choose assemblies that tolerate humid air.
 
-For board-style questions, separate these tasks:
+## Key Facts
+- PAGASA describes the Philippine climate as tropical and maritime.
+- High humidity and warm temperature increase perceived heat.
+- Rainfall varies with moisture-bearing winds and mountain systems.
+- Coronas Types I to IV describe broad rainfall-distribution patterns.
+- Monsoon seasons and tropical cyclones affect wind, rain, cloudiness, and detailing priorities.
 
-- classify the climate condition;
-- identify the seasonal wind or rainfall issue;
-- choose a form, orientation, opening, or shading response;
-- reject choices that add heat gain, block air movement, or ignore rain exposure.
+## Common Mistakes
+- Exact wind-speed, g-load, room-temperature, and monthly-rainfall exam numerics were removed where the checked sources did not support them.
+- Generic temperate-climate responses were replaced with heat, humidity, rainfall, monsoon, and typhoon-aware Philippine design priorities.
 
-## Common Trap
-
-A familiar tropical keyword is not enough. The correct answer usually follows from the specific climate action: reduce solar heat, admit or guide wind, protect openings from rain, or respond to regional rainfall and monsoon exposure.
+## Key Terms
+- Tropical maritime climate
+- Relative humidity
+- Coronas climate types
+- Northeast monsoon
+- Southwest monsoon
+- Tropical cyclone

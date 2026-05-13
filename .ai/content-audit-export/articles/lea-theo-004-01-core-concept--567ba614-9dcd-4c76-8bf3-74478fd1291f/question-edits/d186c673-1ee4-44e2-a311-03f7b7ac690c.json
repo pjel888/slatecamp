@@ -2,58 +2,61 @@
   "question_id": "d186c673-1ee4-44e2-a311-03f7b7ac690c",
   "baseline_hash": "sha256:19422b8329591caa0707a05c9c53ed324b85aa25e55be5a5edb70dc5712ea066",
   "action": "replace",
-  "reason": "source-audited-article-batch-059-local-first: local raw PDF backed replacement constrained to checked Batch 059 TOA 4 Tropical Architecture source family.",
-  "approved_by": "codex-local-first-batch-059",
-  "approved_at": "2026-05-11T20:48:00.000+08:00",
+  "reason": "source-audited-article-batch-132-local-first: source-safe rewrite constrained to Batch 132 local source capture and refined conversion artifacts.",
+  "approved_by": "codex-local-first-batch-132",
+  "approved_at": "2026-05-14T05:41:22.456+08:00",
   "source_audit_support": {
     "parent_article_id": "567ba614-9dcd-4c76-8bf3-74478fd1291f",
     "parent_article_slug": "lea-theo-004-01-core-concept",
-    "answer_key_fields_changed": true,
+    "answer_key_fields_changed": false,
     "support_status": "source_safe_rewrite",
-    "source_locator": "TOA 4 Tropical Architecture refined markdown lines 79-122, 281-283, 373-397, 420-467, and raw PDF pages 1, 5-11, 13, 15-18, 20-21, 23-24, 28, and 41",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.source-capture.md (sha256:614c9faf26a196e136223bb73bbca80cc4d90f5c4a35aad8c28ef964e958efa5); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.refined.md (sha256:1f2e963233cffe70bb0889e3712c30c16d242b0233a0b8cfbc97683ec547da16)",
     "checked_markdown_lines": [
-      "TOA 4 Tropical Architecture refined markdown lines 79-122",
-      "TOA 4 Tropical Architecture refined markdown lines 281-283",
-      "TOA 4 Tropical Architecture refined markdown lines 373-397",
-      "TOA 4 Tropical Architecture refined markdown lines 420-467"
+      "TOA 4 Tropical Architecture refined markdown lines 281-282, 381, 409-425, 456-459, 481-488, and 496-507",
+      "PAGASA Climate of the Philippines official page lines 329-383"
     ],
     "checked_sources": [
       {
-        "source_id": "toa4-tropical-architecture-local-raw-pdf--b059-567ba614-01",
-        "label": "TOA 4 Tropical Architecture - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
-        "sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
-        "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
-        "locator": "TOA 4 Tropical Architecture refined markdown lines 79-122, 281-283, 373-397, 420-467, and raw PDF pages 1, 5-11, 13, 15-18, 20-21, 23-24, 28, and 41"
+        "source_id": "batch-132-004-01-source-capture",
+        "label": "Batch 132 source capture - Philippine Tropical Climate and Design Response",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.source-capture.md",
+        "sha256": "sha256:614c9faf26a196e136223bb73bbca80cc4d90f5c4a35aad8c28ef964e958efa5",
+        "locator": "TOA 4 Tropical Architecture refined markdown lines 281-282, 381, 409-425, 456-459, 481-488, and 496-507; PAGASA Climate of the Philippines official page lines 329-383"
+      },
+      {
+        "source_id": "batch-132-004-01-refined-conversion",
+        "label": "Batch 132 refined conversion - Philippine Tropical Climate and Design Response",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.refined.md",
+        "sha256": "sha256:1f2e963233cffe70bb0889e3712c30c16d242b0233a0b8cfbc97683ec547da16",
+        "locator": "Derived from vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.source-capture.md (sha256:614c9faf26a196e136223bb73bbca80cc4d90f5c4a35aad8c28ef964e958efa5)"
       }
     ],
-    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 059 checked local raw PDF source scope."
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten while preserving the existing correct_option_id."
   },
   "proposed": {
-    "text": "What does tropical maritime climate require the designer to balance?",
+    "text": "What is the risk of importing a temperate-climate wall strategy directly?",
     "options": [
       {
         "id": "a",
-        "text": "Solar heat, humidity, rainfall, and seasonal wind."
+        "text": "It may trap heat and moisture instead of supporting shade, ventilation, and rainfall control."
       },
       {
         "id": "b",
-        "text": "Snow loading and winter heat retention."
+        "text": "It will always reduce cooling loads in the Philippines."
       },
       {
         "id": "c",
-        "text": "Only view corridors."
+        "text": "It is required by tropical maritime conditions."
       },
       {
         "id": "d",
-        "text": "Only acoustic isolation."
+        "text": "It makes site orientation unnecessary."
       }
     ],
     "correct_option_id": "a",
-    "rationale": "Solar heat, humidity, rainfall, and seasonal wind. This answer is supported by the checked Batch 059 local TOA 4 Tropical Architecture raw PDF source family for Philippine archipelago presents a unique climate.",
-    "explanation": "Solar heat, humidity, rainfall, and seasonal wind. The Batch 059 source audit used the local raw PDF first and refined markdown only as locator evidence for Philippine archipelago presents a unique climate.",
-    "code_citation": "TOA 4 Tropical Architecture refined markdown lines 79-122, 281-283, 373-397, 420-467, and raw PDF pages 1, 5-11, 13, 15-18, 20-21, 23-24, 28, and 41"
+    "rationale": "It may trap heat and moisture instead of supporting shade, ventilation, and rainfall control. This is supported by the Batch 132 local source map for Philippine Tropical Climate and Design Response.",
+    "explanation": "It may trap heat and moisture instead of supporting shade, ventilation, and rainfall control. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.source-capture.md (sha256:614c9faf26a196e136223bb73bbca80cc4d90f5c4a35aad8c28ef964e958efa5); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.refined.md (sha256:1f2e963233cffe70bb0889e3712c30c16d242b0233a0b8cfbc97683ec547da16).",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.source-capture.md (sha256:614c9faf26a196e136223bb73bbca80cc4d90f5c4a35aad8c28ef964e958efa5); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-01-core-concept-philippine-tropical-climate-design-response.refined.md (sha256:1f2e963233cffe70bb0889e3712c30c16d242b0233a0b8cfbc97683ec547da16)"
   },
-  "batch_question_template_index": 7
+  "batch_question_template_index": 6
 }

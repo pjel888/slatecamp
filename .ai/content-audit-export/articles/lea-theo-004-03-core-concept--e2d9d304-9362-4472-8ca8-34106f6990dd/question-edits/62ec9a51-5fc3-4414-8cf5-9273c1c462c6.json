@@ -2,58 +2,62 @@
   "question_id": "62ec9a51-5fc3-4414-8cf5-9273c1c462c6",
   "baseline_hash": "sha256:743db8ccc76697697e96ede73e9f82eaf649b955faba81342f076426ee9ab303",
   "action": "replace",
-  "reason": "source-audited-article-batch-060-local-first: local raw PDF backed replacement constrained to checked Batch 060 TOA 4 Tropical Architecture source family.",
-  "approved_by": "codex-local-first-batch-060",
-  "approved_at": "2026-05-11T21:02:00.000+08:00",
+  "reason": "source-audited-article-batch-132-local-first: source-safe rewrite constrained to Batch 132 local source capture and refined conversion artifacts.",
+  "approved_by": "codex-local-first-batch-132",
+  "approved_at": "2026-05-14T05:41:22.456+08:00",
   "source_audit_support": {
     "parent_article_id": "e2d9d304-9362-4472-8ca8-34106f6990dd",
     "parent_article_slug": "lea-theo-004-03-core-concept",
-    "answer_key_fields_changed": true,
+    "answer_key_fields_changed": false,
     "support_status": "source_safe_rewrite",
-    "source_locator": "TOA 4 Tropical Architecture refined markdown lines 1562-1573, 513-591, 622-670, 708-874, and raw PDF pages 180-181, 71-78, 81-84, 87-90, and 104",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.source-capture.md (sha256:b9dd47bfcac0ee0dd8d24a6a10aaeaa4facffb432448f79c380c9c18d8454cf9); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.refined.md (sha256:f4a553fa517aa60b086f44713e51936375d1229e78e34b06554a7906f2dd8266)",
     "checked_markdown_lines": [
       "TOA 4 Tropical Architecture refined markdown lines 1562-1573",
-      "TOA 4 Tropical Architecture refined markdown lines 513-591",
-      "TOA 4 Tropical Architecture refined markdown lines 622-670",
-      "TOA 4 Tropical Architecture refined markdown lines 708-874"
+      "ADB Philippine Green Building Code official page lines 40-43 and 79-80",
+      "BERDE Credit Library official documentation lines 141, 151, 163, 181, 195, 213, 231, 254, 275, and 291"
     ],
     "checked_sources": [
       {
-        "source_id": "toa4-tropical-architecture-local-raw-pdf--b060-e2d9d304-01",
-        "label": "TOA 4 Tropical Architecture - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
-        "sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
-        "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
-        "locator": "TOA 4 Tropical Architecture refined markdown lines 1562-1573, 513-591, 622-670, 708-874, and raw PDF pages 180-181, 71-78, 81-84, 87-90, and 104"
+        "source_id": "batch-132-004-03-source-capture",
+        "label": "Batch 132 source capture - Tropical Green Building Design in the Philippines",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.source-capture.md",
+        "sha256": "sha256:b9dd47bfcac0ee0dd8d24a6a10aaeaa4facffb432448f79c380c9c18d8454cf9",
+        "locator": "TOA 4 Tropical Architecture refined markdown lines 1562-1573; ADB Philippine Green Building Code official page lines 40-43 and 79-80; BERDE Credit Library official documentation lines 141, 151, 163, 181, 195, 213, 231, 254, 275, and 291"
+      },
+      {
+        "source_id": "batch-132-004-03-refined-conversion",
+        "label": "Batch 132 refined conversion - Tropical Green Building Design in the Philippines",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.refined.md",
+        "sha256": "sha256:f4a553fa517aa60b086f44713e51936375d1229e78e34b06554a7906f2dd8266",
+        "locator": "Derived from vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.source-capture.md (sha256:b9dd47bfcac0ee0dd8d24a6a10aaeaa4facffb432448f79c380c9c18d8454cf9)"
       }
     ],
-    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 060 checked local raw PDF source scope."
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten while preserving the existing correct_option_id."
   },
   "proposed": {
-    "text": "Which pairing is source-safe?",
+    "text": "How should indoor environmental quality be treated?",
     "options": [
       {
         "id": "a",
-        "text": "Shade plus air movement."
+        "text": "As an optional aesthetic preference."
       },
       {
         "id": "b",
-        "text": "Heat gain plus sealed rooms."
+        "text": "As identical to outdoor landscaping."
       },
       {
         "id": "c",
-        "text": "Dark paving plus blocked wind."
+        "text": "As unrelated to tropical climate."
       },
       {
         "id": "d",
-        "text": "Unshaded glass plus no ventilation."
+        "text": "As a performance concern linked to ventilation, daylight, moisture control, and source-documented assessment categories."
       }
     ],
-    "correct_option_id": "a",
-    "rationale": "Shade plus air movement. This answer is supported by the checked Batch 060 local TOA 4 Tropical Architecture raw PDF source family for Green building in the Philippines operates at.",
-    "explanation": "Shade plus air movement. The Batch 060 source audit used the local raw PDF first and refined markdown only as locator evidence for Green building in the Philippines operates at.",
-    "code_citation": "TOA 4 Tropical Architecture refined markdown lines 1562-1573, 513-591, 622-670, 708-874, and raw PDF pages 180-181, 71-78, 81-84, 87-90, and 104"
+    "correct_option_id": "d",
+    "rationale": "As a performance concern linked to ventilation, daylight, moisture control, and source-documented assessment categories. This is supported by the Batch 132 local source map for Tropical Green Building Design in the Philippines.",
+    "explanation": "As a performance concern linked to ventilation, daylight, moisture control, and source-documented assessment categories. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.source-capture.md (sha256:b9dd47bfcac0ee0dd8d24a6a10aaeaa4facffb432448f79c380c9c18d8454cf9); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.refined.md (sha256:f4a553fa517aa60b086f44713e51936375d1229e78e34b06554a7906f2dd8266).",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.source-capture.md (sha256:b9dd47bfcac0ee0dd8d24a6a10aaeaa4facffb432448f79c380c9c18d8454cf9); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.refined.md (sha256:f4a553fa517aa60b086f44713e51936375d1229e78e34b06554a7906f2dd8266)"
   },
-  "batch_question_template_index": 8
+  "batch_question_template_index": 7
 }

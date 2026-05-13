@@ -1,34 +1,50 @@
 {
   "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
   "hash_algorithm": "sha256",
-  "source_count": 1,
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "toa4-tropical-architecture-local-raw-pdf--b059-669aab68-01",
+      "source_id": "batch-132-004-02-source-capture",
       "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
-      "label": "TOA 4 Tropical Architecture - local raw PDF",
+      "label": "Batch 132 source capture - Passive Design in Tropical Climates",
       "url": null,
-      "source_type": "local_raw_pdf",
-      "description": "TOA 4 Tropical Architecture - local raw PDF; local raw PDF checked first; refined markdown used only as locator. TOA 4 Tropical Architecture refined markdown lines 513-591, 622-660, 708-710, and raw PDF pages 71-78, 81-84, 87-90.",
+      "source_type": "local_source_capture",
+      "description": "Local source capture for Passive Design in Tropical Climates; official source URLs and local raw source hashes are recorded in the artifact.",
       "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-05-11T20:48:00.000+08:00",
-      "updated_at": "2026-05-11T20:48:00.000+08:00",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
-      "raw_pdf_sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
-      "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
-      "source_locator": "TOA 4 Tropical Architecture refined markdown lines 513-591, 622-660, 708-710, and raw PDF pages 71-78, 81-84, 87-90",
+      "created_at": "2026-05-14T05:41:22.456+08:00",
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.source-capture.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.source-capture.md",
+      "sha256": "sha256:9927e78faf9319ade65052ca3092e446d4756b4ca634f7cf5238d02b184cb29b",
+      "source_locator": "TOA 4 Tropical Architecture refined markdown lines 517-535, 633-670, 802-810, 840-864, 1155-1172, 1386-1406, 1486, and 1630-1685; PAGASA Climate of the Philippines official page lines 329-383",
       "checked_markdown_lines": [
-        "TOA 4 Tropical Architecture refined markdown lines 513-591",
-        "TOA 4 Tropical Architecture refined markdown lines 622-660",
-        "TOA 4 Tropical Architecture refined markdown lines 708-710"
+        "TOA 4 Tropical Architecture refined markdown lines 517-535, 633-670, 802-810, 840-864, 1155-1172, 1386-1406, 1486, and 1630-1685",
+        "PAGASA Climate of the Philippines official page lines 329-383"
       ],
-      "checked_pdf_pages": "raw PDF pages 1, 5-11, 13, 15-18, 20-21, 23-24, 28, 41, 71-78, 81-84, 87-90, 92-100, 104, 106-110, 121, 140, 143-148, 151, 163, 172, 180-181, and 187",
-      "local_audit_note": "Primary truth is the local raw PDF family; refined markdown line ranges are locator aids for the checked claims."
+      "local_audit_note": "Cited Batch 132 source artifact. Official web material was captured locally before article/question use."
+    },
+    {
+      "source_id": "batch-132-004-02-refined-conversion",
+      "article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
+      "label": "Batch 132 refined conversion - Passive Design in Tropical Climates",
+      "url": null,
+      "source_type": "local_refined_conversion",
+      "description": "Refined source-safe conversion for Passive Design in Tropical Climates.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-14T05:41:22.456+08:00",
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.refined.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.refined.md",
+      "sha256": "sha256:dce571fb09c7afb337ccb32b20e3d61300f4501a02bc68e968054f3c3ba69189",
+      "source_locator": "Derived from vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.source-capture.md (sha256:9927e78faf9319ade65052ca3092e446d4756b4ca634f7cf5238d02b184cb29b)",
+      "checked_markdown_lines": [
+        "TOA 4 Tropical Architecture refined markdown lines 517-535, 633-670, 802-810, 840-864, 1155-1172, 1386-1406, 1486, and 1630-1685",
+        "PAGASA Climate of the Philippines official page lines 329-383"
+      ],
+      "local_audit_note": "Used as the article and linked-question citation layer after source capture."
     }
   ],
-  "sources_hash": "sha256:5d10045fb944c09ea297843160b74fa83763ef1e90e6a353fa2046f54133d3d6"
+  "sources_hash": "sha256:63444fefba879118033dac57e64deb737458b4c83754500664e935c46e2f2f79"
 }

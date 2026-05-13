@@ -1,10 +1,10 @@
 {
   "artifact_type": "source_audit_evidence",
-  "batch_id": "source-audited-article-batch-058-local-first",
-  "batch_number": 58,
-  "audit_mode": "local_first_raw_pdf_primary",
-  "audit_date": "2026-05-11",
-  "audited_at": "2026-05-11T20:31:00.000+08:00",
+  "batch_id": "source-audited-article-batch-132-local-first",
+  "batch_number": 132,
+  "audit_mode": "local_first_source_capture_primary",
+  "audit_date": "2026-05-14",
+  "audited_at": "2026-05-14T05:41:22.456+08:00",
   "target": {
     "article_id": "2ec5e562-50a1-4c7c-a95e-a17166d4631b",
     "slug": "lea-theo-003-09-core-concept",
@@ -14,38 +14,48 @@
     "linked_questions": 13,
     "question_edits": 13
   },
-  "raw_pdf_gate": {
+  "local_source_gate": {
     "status": "PASS",
-    "primary_truth": "vitruvius-connection/001_Raw-Source-Layer local raw PDFs",
+    "primary_truth": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132 and vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132",
+    "official_web_used_only_for_local_capture": true,
     "derivative_or_search_layers_used_as_primary_truth": false,
-    "refined_markdown_used_only_as_locator": true,
     "checked_sources": [
       {
-        "source_id": "toa3-design-perception-local-raw-pdf--b058-2ec5e562-01",
-        "label": "TOA 3 Design Perception - local raw PDF",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 3 (Design Perception).pdf",
-        "raw_pdf_sha256": "sha256:807be9f1a301d579123d8fa3ec680011b1906d6a4edcb6dc061c9a57e5ea9534",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 3 (Design Perception).md",
-        "refined_markdown_sha256": "sha256:49309b3dc5eea661ca7cad04cceb91897ac29fee6dd8e43cf6c3f60f163d404a",
-        "locator": "TOA 3 Design Perception refined markdown lines 43-56, 152-212, and raw PDF pages 8, 22-26"
+        "source_id": "batch-132-003-09-source-capture",
+        "label": "Batch 132 source capture - Spatial Legibility and Environmental Perception",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.source-capture.md",
+        "sha256": "sha256:151d4e1bb89ac352b38cd7547880edcea5c0d5b47c3c4fb5708527eec4af2679",
+        "locator": "George Salvan Architectural Theories of Design refined markdown lines 7855-7863, 9735, 9926, 9972-9982, 10039-10043, 10493, and 15911-15917; TOA 3 Design Perception refined markdown line 347; MIT Press The Image of the City official page lines 98-101 and 125-130"
       },
       {
-        "source_id": "salvan-theory-local-raw-pdf--b058-2ec5e562-02",
+        "source_id": "batch-132-003-09-refined-conversion",
+        "label": "Batch 132 refined conversion - Spatial Legibility and Environmental Perception",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.refined.md",
+        "sha256": "sha256:02271d398d81d16521f9a3b8e7b88f1094c327464b375211122e7137a4f2e3a0",
+        "locator": "Derived from vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.source-capture.md (sha256:151d4e1bb89ac352b38cd7547880edcea5c0d5b47c3c4fb5708527eec4af2679)"
+      }
+    ],
+    "underlying_source_families": [
+      {
         "label": "George Salvan Architectural Theories of Design - local raw PDF",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/George Salvan Architectural Theories of Design.pdf",
         "raw_pdf_sha256": "sha256:e32aaf5dab109c0e8c9c71f2641fb5b20d642d38dd528f487e1fc19597a5f49c",
         "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/George Salvan Architectural Theories of Design.md",
-        "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10",
-        "locator": "George Salvan Architectural Theories of Design refined markdown lines 7861-7984, 10479-10493, 15905-15910, and raw PDF pages 320, 473-478"
+        "refined_markdown_sha256": "sha256:fe2a258c8fec07d371346fa3502dbcb42c3ee2f0fd16cf96ad17b80cc34c9c10"
       },
       {
-        "source_id": "theory-local-raw-pdf--b058-2ec5e562-03",
+        "label": "TOA 3 Design Perception - local raw PDF",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 3 (Design Perception).pdf",
+        "raw_pdf_sha256": "sha256:807be9f1a301d579123d8fa3ec680011b1906d6a4edcb6dc061c9a57e5ea9534",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 3 (Design Perception).md",
+        "refined_markdown_sha256": "sha256:49309b3dc5eea661ca7cad04cceb91897ac29fee6dd8e43cf6c3f60f163d404a"
+      },
+      {
         "label": "theory - local raw PDF",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/theory.pdf",
         "raw_pdf_sha256": "sha256:83619e30c26203f014f5029a0158b588bac23c1a4833b06deb05f2230b172738",
         "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/theory.md",
-        "refined_markdown_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b",
-        "locator": "theory refined markdown lines 11-13 and 186-191 and raw PDF pages 1 and 10"
+        "refined_markdown_sha256": "sha256:f4c45f951582369bea49a778e3d8d4a11644cd58fb78016d018a4888a1c8c17b"
       }
     ]
   },
@@ -70,47 +80,42 @@
       "61fd148f-c7d2-405f-96b5-84380bb20ff2",
       "e621fbc3-6943-40cc-aa66-de5146c8d878"
     ],
-    "scenario_policy_status": "eligible-deferred",
-    "scenario_policy_reason": "A campus wayfinding or exit-perception scenario would be useful, but scenario enrichment is deferred to keep Batch 058 source repair bounded."
+    "scenario_policy_status": "added_source_safe_scenario",
+    "scenario_policy_reason": "A Manila outpatient clinic has repeated corridors and similar counters. The source-safe fix is not more signs alone: strengthen the main path, mark public edges, make waiting nodes recognizable, and use a few durable landmarks so first-time patients can form a cognitive map."
   },
   "claims": [
     {
-      "claim_id": "lea-theo-003-09-core-concept-b058-claim-01",
-      "claim_text": "Spatial Legibility and Environmental Perception is limited to checked local raw PDF source families and the refined markdown locators recorded for this article.",
+      "claim_id": "lea-theo-003-09-core-concept-b132-claim-01",
+      "claim_text": "Spatial Legibility and Environmental Perception is limited to the checked Batch 132 source capture, refined conversion, and listed local source family hashes.",
       "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 3 (Design Perception).pdf",
-        "quoted_pdf_excerpt": "TOA 3 Design Perception refined markdown lines 43-56, 152-212, and raw PDF pages 8, 22-26; George Salvan Architectural Theories of Design refined markdown lines 7861-7984, 10479-10493, 15905-15910, and raw PDF pages 320, 473-478; theory refined markdown lines 11-13 and 186-191 and raw PDF pages 1 and 10",
         "source_ids": [
-          "toa3-design-perception-local-raw-pdf--b058-2ec5e562-01",
-          "salvan-theory-local-raw-pdf--b058-2ec5e562-02",
-          "theory-local-raw-pdf--b058-2ec5e562-03"
-        ]
+          "batch-132-003-09-source-capture",
+          "batch-132-003-09-refined-conversion"
+        ],
+        "source_locator": "George Salvan Architectural Theories of Design refined markdown lines 7855-7863, 9735, 9926, 9972-9982, 10039-10043, 10493, and 15911-15917; TOA 3 Design Perception refined markdown line 347; MIT Press The Image of the City official page lines 98-101 and 125-130"
       },
       "audit_result": "PASS"
     }
   ],
   "checked_markdown_lines": [
-    "TOA 3 Design Perception refined markdown lines 43-56",
-    "TOA 3 Design Perception refined markdown lines 152-212",
-    "George Salvan Architectural Theories of Design refined markdown lines 7861-7984",
-    "George Salvan Architectural Theories of Design refined markdown lines 10479-10493",
-    "George Salvan Architectural Theories of Design refined markdown lines 15905-15910",
-    "theory refined markdown lines 186-191"
+    "George Salvan Architectural Theories of Design refined markdown lines 7855-7863, 9735, 9926, 9972-9982, 10039-10043, 10493, and 15911-15917",
+    "TOA 3 Design Perception refined markdown line 347",
+    "MIT Press The Image of the City official page lines 98-101 and 125-130"
   ],
-  "unverified_or_rejected_claims": [],
+  "unverified_or_rejected_claims": [
+    "Signage-only wayfinding claims were removed; legibility is treated as route, hierarchy, environmental-reference, and cognitive-map design.",
+    "Unsupported universal scaling claims were replaced with source-bounded building and campus application language."
+  ],
   "quality_protocol": {
     "roundtrip_protocol_preserved": true,
     "ui_blocks_owner": "ui-blocks.json",
     "normalized_owner": "normalized.md",
-    "candidate_generation": "compose_completed",
+    "candidate_generation": "compose_required_after_prep",
     "local_first_only": true,
     "supabase_write_attempted": false,
     "deploy_attempted": false,
     "commit_attempted": false,
-    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json",
-    "diff_gate": "safe_true_blockers_zero",
-    "validate_gate": "valid_true_blockers_zero",
-    "ui_block_edits_gate": "valid_true_blockers_zero"
+    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json"
   },
   "sme_review": {
     "required_before_publication": true,

@@ -1,30 +1,28 @@
 {
   "article_id": "2ec5e562-50a1-4c7c-a95e-a17166d4631b",
-  "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:5dba4703e813bac5e6b77f32b3612600de728af80c16df78d0fd1e046c80c382",
   "question_count": 13,
   "questions": [
     {
       "question_id": "ccf715a9-8537-4d49-837d-bc9f1fa379e4",
       "article_id": "2ec5e562-50a1-4c7c-a95e-a17166d4631b",
       "topic_id": "27f93b07-02d8-4035-8cea-739cf9ae6e50",
-      "text": "In designing a mixed-use development (retail, office, residential) for a 15-story building in Manila, how would Lynch's framework inform design?",
+      "text": "In a mixed-use Manila building, which move best applies spatial legibility?",
       "options": [
         {
           "id": "a",
-          "text": "Paths (main vertical circulation, department separation), Edges (zone boundaries between retail/office/residential), Districts (three distinct functional zones), Nodes (main lobby, floor lobbies, key intersections), Landmarks (distinctive interior elements for orientation)"
+          "text": "Separate public paths, zone edges, recognizable nodes, and landmarks so users can form a mental map."
         },
         {
           "id": "b",
-          "text": "Design should maximize uniformity; Lynch's element diversity contradicts practical efficiency, which is often prioritized in urban settings"
+          "text": "Make every corridor identical to simplify construction."
         },
         {
           "id": "c",
-          "text": "Lynch's framework cannot accommodate mixed-use development complexity, as it was originally intended for urban planning"
+          "text": "Rely on signs after the plan is already confusing."
         },
         {
           "id": "d",
-          "text": "Lynch's framework applies only to cities; it's inapplicable to single buildings, especially those with mixed-use functions"
+          "text": "Use landmarks only as decorative sculptures with no route role."
         }
       ],
       "correct_option_id": "a",
@@ -33,14 +31,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Clear organization through element differentiation improves both experience and function",
-        "c": "Lynch's framework directly addresses complex programs through element organization",
-        "d": "Lynch's principles scale from buildings to cities; they're universally applicable",
-        "correct": "Lynch's framework applies across scales; organizing mixed-use buildings through five elements creates legible, memorable places",
-        "takeaway": "Lynch's framework applies across scales; organizing mixed-use buildings through five elements creates legible, memorable places."
+        "correct": "Separate public paths, zone edges, recognizable nodes, and landmarks so users can form a mental map. This is supported by the Batch 132 local source map for Spatial Legibility and Environmental Perception.",
+        "takeaway": "Spatial Legibility and Environmental Perception: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "b": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "c": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "d": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": "Clear organization through element differentiation improves both experience and function Lynch's framework directly addresses complex programs through element organization Lynch's principles scale from buildings to cities; they're universally applicable Lynch's framework applies across scales; organizing mixed-use buildings through five elements creates legible, memorable places Lynch's framework applies across scales; organizing mixed-use buildings through five elements creates legible, memorable places.",
-      "code_citation": null,
+      "explanation": "Separate public paths, zone edges, recognizable nodes, and landmarks so users can form a mental map. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.source-capture.md (sha256:151d4e1bb89ac352b38cd7547880edcea5c0d5b47c3c4fb5708527eec4af2679); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.refined.md (sha256:02271d398d81d16521f9a3b8e7b88f1094c327464b375211122e7137a4f2e3a0).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.source-capture.md (sha256:151d4e1bb89ac352b38cd7547880edcea5c0d5b47c3c4fb5708527eec4af2679); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.refined.md (sha256:02271d398d81d16521f9a3b8e7b88f1094c327464b375211122e7137a4f2e3a0)",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -53,30 +51,30 @@
       "model_id": "ALE-THEO-003-09-013",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-05-06T15:59:02.88216+00:00",
-      "content_hash": "sha256:a3983f10464418d53c3785d9764b81053ff9d026afdf68c7009bc0330e5a956a"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:8250e86d6f2a8675536d00a41fa67abd7cb524d119e18da871cc8ab3d7ee945d"
     },
     {
       "question_id": "5228f039-c9b2-4f00-ad56-0d71da974b93",
       "article_id": "2ec5e562-50a1-4c7c-a95e-a17166d4631b",
       "topic_id": "27f93b07-02d8-4035-8cea-739cf9ae6e50",
-      "text": "Spatial legibility is best defined as:",
+      "text": "What is the safest way to use Lynch-inspired elements inside a campus plan?",
       "options": [
         {
           "id": "a",
-          "text": "The ability to read signage and identify space functions through written labels, which is crucial for wayfinding in complex environments"
+          "text": "Treat the elements as a fixed list of facade ornaments."
         },
         {
           "id": "b",
-          "text": "The aesthetic beauty and visual appeal of a building's design, often contributing to the overall user experience and satisfaction"
+          "text": "Use only color coding and ignore circulation hierarchy."
         },
         {
           "id": "c",
-          "text": "The clarity and comprehensibility of spatial organization enabling occupants to navigate, orient themselves, and understand environmental structure without disorientation"
+          "text": "Use paths, edges, districts, nodes, and landmarks as environmental references that make movement understandable."
         },
         {
           "id": "d",
-          "text": "The efficiency of building mechanical systems in supporting circulation, ensuring that air flow and temperature control are maintained throughout the structure"
+          "text": "Avoid nodes because gathering places slow circulation."
         }
       ],
       "correct_option_id": "c",
@@ -85,14 +83,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Signage is a tool supporting legibility; legibility doesn't depend on reading signs",
-        "b": "Aesthetic appeal is distinct from legibility, though both contribute to quality design",
-        "d": "Mechanical efficiency is unrelated to spatial clarity and navigation",
-        "correct": "Legibility is clarity of spatial organization supporting navigation and orientation; it encompasses physical clarity and psychological comfort",
-        "takeaway": "Legibility is clarity of spatial organization supporting navigation and orientation; it encompasses physical clarity and psychological comfort."
+        "correct": "Use paths, edges, districts, nodes, and landmarks as environmental references that make movement understandable. This is supported by the Batch 132 local source map for Spatial Legibility and Environmental Perception.",
+        "takeaway": "Spatial Legibility and Environmental Perception: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "a": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "b": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "d": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": "Signage is a tool supporting legibility; legibility doesn't depend on reading signs Aesthetic appeal is distinct from legibility, though both contribute to quality design Mechanical efficiency is unrelated to spatial clarity and navigation Legibility is clarity of spatial organization supporting navigation and orientation; it encompasses physical clarity and psychological comfort Legibility is clarity of spatial organization supporting navigation and orientation; it encompasses physical clarity and psychological comfort.",
-      "code_citation": null,
+      "explanation": "Use paths, edges, districts, nodes, and landmarks as environmental references that make movement understandable. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.source-capture.md (sha256:151d4e1bb89ac352b38cd7547880edcea5c0d5b47c3c4fb5708527eec4af2679); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.refined.md (sha256:02271d398d81d16521f9a3b8e7b88f1094c327464b375211122e7137a4f2e3a0).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.source-capture.md (sha256:151d4e1bb89ac352b38cd7547880edcea5c0d5b47c3c4fb5708527eec4af2679); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.refined.md (sha256:02271d398d81d16521f9a3b8e7b88f1094c327464b375211122e7137a4f2e3a0)",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -105,30 +103,30 @@
       "model_id": "ALE-THEO-003-09-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-05-06T15:59:02.056539+00:00",
-      "content_hash": "sha256:7361e5304691636026dd6d08196008d130c7d99ed236024ee15761819df01808"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:23971f19aa0c0e3519ccaf93c5c96b3f94e05276a2d4546ab097d31a470142c1"
     },
     {
       "question_id": "d94f11d7-e15b-4e07-b745-316c466a0a93",
       "article_id": "2ec5e562-50a1-4c7c-a95e-a17166d4631b",
       "topic_id": "27f93b07-02d8-4035-8cea-739cf9ae6e50",
-      "text": "Describe the relationship between Kevin Lynch's 'Imageability' and spatial legibility:",
+      "text": "Why are hidden exits a spatial-legibility problem?",
       "options": [
         {
           "id": "a",
-          "text": "Imageability (distinctive, memorable, recognizable quality) and legibility (clarity of spatial organization) are complementary; legible spaces with distinctive character are memorable and navigable"
+          "text": "They may fail to enter the user cognitive map, so orientation and emergency confidence suffer."
         },
         {
           "id": "b",
-          "text": "Imageability applies only to buildings; legibility applies only to cities, which is a misconception as both concepts can be applied to various scales of design."
+          "text": "They always improve safety because fewer users notice them."
         },
         {
           "id": "c",
-          "text": "Imageability and legibility are unrelated concepts serving different design purposes, though both contribute to user experience and environmental perception."
+          "text": "They are acceptable when the exit sign is large enough."
         },
         {
           "id": "d",
-          "text": "Legibility is the opposite of imageability; clear organization eliminates distinctiveness, which is a misunderstanding of how these concepts interact."
+          "text": "They matter only in urban planning, not buildings."
         }
       ],
       "correct_option_id": "a",
@@ -137,14 +135,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Lynch's framework applies across scales—buildings, campuses, cities",
-        "c": "The concepts work synergistically; legible places are often memorable",
-        "d": "Clear organization supports distinctiveness; they reinforce rather than contradict",
-        "correct": "Imageability and legibility work together: clear spatial organization (legibility) combined with distinctive character (imageability) creates memorable, navigable places",
-        "takeaway": "Imageability and legibility work together: clear spatial organization (legibility) combined with distinctive character (imageability) creates memorable, navigable places."
+        "correct": "They may fail to enter the user cognitive map, so orientation and emergency confidence suffer. This is supported by the Batch 132 local source map for Spatial Legibility and Environmental Perception.",
+        "takeaway": "Spatial Legibility and Environmental Perception: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "b": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "c": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "d": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "They may fail to enter the user cognitive map, so orientation and emergency confidence suffer. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.source-capture.md (sha256:151d4e1bb89ac352b38cd7547880edcea5c0d5b47c3c4fb5708527eec4af2679); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.refined.md (sha256:02271d398d81d16521f9a3b8e7b88f1094c327464b375211122e7137a4f2e3a0).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.source-capture.md (sha256:151d4e1bb89ac352b38cd7547880edcea5c0d5b47c3c4fb5708527eec4af2679); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.refined.md (sha256:02271d398d81d16521f9a3b8e7b88f1094c327464b375211122e7137a4f2e3a0)",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -157,30 +155,30 @@
       "model_id": "ALE-THEO-003-09-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ed14dd39a879441c73b3619a2fb9c47d20a96055f5217ddd58769a4daf14b3ee"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:6b0d2c09397f6b26bec8af964028b95e1d17ba68d14aac196adc72f42d0c81d5"
     },
     {
       "question_id": "4bb1a6ad-74be-4b11-9520-819c7623ee2e",
       "article_id": "2ec5e562-50a1-4c7c-a95e-a17166d4631b",
       "topic_id": "27f93b07-02d8-4035-8cea-739cf9ae6e50",
-      "text": "In Kevin Lynch's framework, Edges are:",
+      "text": "Which design decision strengthens a major route?",
       "options": [
         {
           "id": "a",
-          "text": "Channels of movement structuring human navigation, often serving as pathways or corridors"
+          "text": "Give all routes the same width and ceiling treatment."
         },
         {
           "id": "b",
-          "text": "Linear breaks in continuity (boundaries, barriers, transitions) defining territories and organizing spatial structure"
+          "text": "Make its continuity, scale, and termination clearer than secondary routes."
         },
         {
           "id": "c",
-          "text": "Strategic foci where paths converge and activities concentrate, acting as nodes of interaction"
+          "text": "Hide intersections to discourage pausing."
         },
         {
           "id": "d",
-          "text": "Areas with coherent characteristics and internal identity, often recognized as distinct districts"
+          "text": "Change materials randomly at every few meters."
         }
       ],
       "correct_option_id": "b",
@@ -189,14 +187,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This describes paths, not edges",
-        "c": "This describes nodes, not edges",
-        "d": "This describes districts, not edges",
-        "correct": "Edges are boundaries and transitions—shorelines, walls, highways—that define territories and structure perception",
-        "takeaway": "Edges are boundaries and transitions—shorelines, walls, highways—that define territories and structure perception."
+        "correct": "Make its continuity, scale, and termination clearer than secondary routes. This is supported by the Batch 132 local source map for Spatial Legibility and Environmental Perception.",
+        "takeaway": "Spatial Legibility and Environmental Perception: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "a": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "c": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "d": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Make its continuity, scale, and termination clearer than secondary routes. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.source-capture.md (sha256:151d4e1bb89ac352b38cd7547880edcea5c0d5b47c3c4fb5708527eec4af2679); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.refined.md (sha256:02271d398d81d16521f9a3b8e7b88f1094c327464b375211122e7137a4f2e3a0).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.source-capture.md (sha256:151d4e1bb89ac352b38cd7547880edcea5c0d5b47c3c4fb5708527eec4af2679); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.refined.md (sha256:02271d398d81d16521f9a3b8e7b88f1094c327464b375211122e7137a4f2e3a0)",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -209,30 +207,30 @@
       "model_id": "ALE-THEO-003-09-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:4945c12502856d3a4287b72b4200dfe864fda813537716f9b3fba665c918e4f0"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:17a6791d4638d5aaed107077a86f24d53cba6513723e06aade3d74ef7826bed5"
     },
     {
       "question_id": "70da2952-4697-4bd8-9d43-9bf2e81ae3cb",
       "article_id": "2ec5e562-50a1-4c7c-a95e-a17166d4631b",
       "topic_id": "27f93b07-02d8-4035-8cea-739cf9ae6e50",
-      "text": "Why might a building with clear sight lines and good visual connection still show poor legibility?",
+      "text": "What role do nodes play in a legible interior?",
       "options": [
         {
           "id": "a",
-          "text": "Visual connection alone doesn't create legibility; coherence, consistent organizational logic, and clear hierarchical relationships must accompany visibility"
+          "text": "They become decision points where users can pause, orient, and choose the next path."
         },
         {
           "id": "b",
-          "text": "Visibility is irrelevant to legibility; completely enclosed spaces can be highly legible if designed with intuitive navigation in mind"
+          "text": "They should be avoided because all pauses are inefficient."
         },
         {
           "id": "c",
-          "text": "Legibility depends exclusively on signage; visibility and organization are irrelevant, although this approach may overlook the importance of spatial layout"
+          "text": "They are only outdoor plazas and never interior spaces."
         },
         {
           "id": "d",
-          "text": "Poor legibility is inevitable in all large buildings regardless of visibility, due to the complexity and scale of such structures"
+          "text": "They replace the need for a clear route hierarchy."
         }
       ],
       "correct_option_id": "a",
@@ -241,14 +239,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Visibility is valuable; enclosed spaces can be legible with clear organization",
-        "c": "Signage supplements clear organization; it cannot create legibility from organizational confusion",
-        "d": "Size doesn't determine legibility; large buildings can be highly legible with clear organization",
-        "correct": "Visibility supports legibility but doesn't ensure it; confused organizational logic, inconsistent design, or unclear hierarchies create disorientation despite visibility",
-        "takeaway": "Visibility supports legibility but doesn't ensure it; confused organizational logic, inconsistent design, or unclear hierarchies create disorientation despite visibility."
+        "correct": "They become decision points where users can pause, orient, and choose the next path. This is supported by the Batch 132 local source map for Spatial Legibility and Environmental Perception.",
+        "takeaway": "Spatial Legibility and Environmental Perception: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "b": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "c": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "d": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": "Visibility is valuable; enclosed spaces can be legible with clear organization Signage supplements clear organization; it cannot create legibility from organizational confusion Size doesn't determine legibility; large buildings can be highly legible with clear organization Visibility supports legibility but doesn't ensure it; confused organizational logic, inconsistent design, or unclear hierarchies create disorientation despite visibility Visibility supports legibility but doesn't ensure it; confused organizational logic, inconsistent design, or unclear hierarchies create disorientation despite visibility.",
-      "code_citation": null,
+      "explanation": "They become decision points where users can pause, orient, and choose the next path. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.source-capture.md (sha256:151d4e1bb89ac352b38cd7547880edcea5c0d5b47c3c4fb5708527eec4af2679); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.refined.md (sha256:02271d398d81d16521f9a3b8e7b88f1094c327464b375211122e7137a4f2e3a0).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.source-capture.md (sha256:151d4e1bb89ac352b38cd7547880edcea5c0d5b47c3c4fb5708527eec4af2679); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.refined.md (sha256:02271d398d81d16521f9a3b8e7b88f1094c327464b375211122e7137a4f2e3a0)",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -261,30 +259,30 @@
       "model_id": "ALE-THEO-003-09-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-05-06T15:59:02.181054+00:00",
-      "content_hash": "sha256:c6d7742e9f1dcdd75871e90860564a95bf7672230799b45f3247bfd1a27d3853"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:b507636376277382b01546e006d964dca52b32fa73d42197059340291710a85b"
     },
     {
       "question_id": "d61a9c8e-36e8-4d5f-89c9-a421e4f9fb1d",
       "article_id": "2ec5e562-50a1-4c7c-a95e-a17166d4631b",
       "topic_id": "27f93b07-02d8-4035-8cea-739cf9ae6e50",
-      "text": "A university campus shows poor wayfinding despite comprehensive signage. Using Lynch's framework, which problems likely exist?",
+      "text": "Which statement is source-safe for environmental perception?",
       "options": [
         {
           "id": "a",
-          "text": "Excessive signage obscuring the need for clear spatial organization, leading to confusion"
+          "text": "Perception depends only on written labels."
         },
         {
           "id": "b",
-          "text": "Unclear path hierarchy, undefined district boundaries, unmarked nodes, and absent or poorly distributed landmarks—spatial organization lacks clarity; signage compensates inadequately"
+          "text": "Architectural space supports orientation through perceived spatial relations and clear references."
         },
         {
           "id": "c",
-          "text": "The campus has excellent path clarity but insufficient landmarks, which can mislead visitors"
+          "text": "Users need no hierarchy if dimensions are code compliant."
         },
         {
           "id": "d",
-          "text": "Too many landmarks creating navigational confusion, overwhelming users with information"
+          "text": "Aesthetic variety should always override orientation."
         }
       ],
       "correct_option_id": "b",
@@ -293,14 +291,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Signage cannot compensate for poor spatial organization; comprehensive organization precedes effective signage",
-        "c": "Multiple element failures are evident from signage insufficiency",
-        "d": "Landmarks aid navigation; too many is unlikely; more likely is insufficient or unclear landmarks",
-        "correct": "Poor organization despite signage indicates failures in all Lynch elements: unclear paths, undefined districts, unmarked junctions, and inadequate landmarks",
-        "takeaway": "Poor organization despite signage indicates failures in all Lynch elements: unclear paths, undefined districts, unmarked junctions, and inadequate landmarks."
+        "correct": "Architectural space supports orientation through perceived spatial relations and clear references. This is supported by the Batch 132 local source map for Spatial Legibility and Environmental Perception.",
+        "takeaway": "Spatial Legibility and Environmental Perception: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "a": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "c": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "d": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": "Signage cannot compensate for poor spatial organization; comprehensive organization precedes effective signage Multiple element failures are evident from signage insufficiency Landmarks aid navigation; too many is unlikely; more likely is insufficient or unclear landmarks Poor organization despite signage indicates failures in all Lynch elements: unclear paths, undefined districts, unmarked junctions, and inadequate landmarks Poor organization despite signage indicates failures in all Lynch elements: unclear paths, undefined districts, unmarked junctions, and inadequate landmarks.",
-      "code_citation": null,
+      "explanation": "Architectural space supports orientation through perceived spatial relations and clear references. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.source-capture.md (sha256:151d4e1bb89ac352b38cd7547880edcea5c0d5b47c3c4fb5708527eec4af2679); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.refined.md (sha256:02271d398d81d16521f9a3b8e7b88f1094c327464b375211122e7137a4f2e3a0).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.source-capture.md (sha256:151d4e1bb89ac352b38cd7547880edcea5c0d5b47c3c4fb5708527eec4af2679); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.refined.md (sha256:02271d398d81d16521f9a3b8e7b88f1094c327464b375211122e7137a4f2e3a0)",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -313,30 +311,30 @@
       "model_id": "ALE-THEO-003-09-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-05-06T15:59:02.295273+00:00",
-      "content_hash": "sha256:fd45fe76a8eb52f842f10027c1bf3019b40c10de0ec64fc7189646c398050827"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:a13e36b617eace188295e533f4e4f133d5102fdb391856c61b130f033aed44bf"
     },
     {
       "question_id": "8968702c-6522-4cd7-b7a4-164e2a360053",
       "article_id": "2ec5e562-50a1-4c7c-a95e-a17166d4631b",
       "topic_id": "27f93b07-02d8-4035-8cea-739cf9ae6e50",
-      "text": "In Kevin Lynch's framework, Landmarks are:",
+      "text": "How should a hospital outpatient route be improved?",
       "options": [
         {
           "id": "a",
-          "text": "Distinctive point references (buildings, sculptures, features) used for orientation; viewed from distance rather than entered"
+          "text": "Clarify the main public path, use recognizable waiting nodes, and separate staff/service edges."
         },
         {
           "id": "b",
-          "text": "Linear breaks and boundaries defining territories, which is more characteristic of edges in Lynch's framework"
+          "text": "Add more posters but leave the route sequence unchanged."
         },
         {
           "id": "c",
-          "text": "Strategic gathering spaces where paths converge, which is more characteristic of nodes in Lynch's framework"
+          "text": "Place all departments behind identical doors without landmarks."
         },
         {
           "id": "d",
-          "text": "Channels and routes structuring movement, which is more characteristic of paths in Lynch's framework"
+          "text": "Let each tenant choose unrelated graphics independently."
         }
       ],
       "correct_option_id": "a",
@@ -345,14 +343,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "This describes edges, not landmarks",
-        "c": "This describes nodes, not landmarks",
-        "d": "This describes paths, not landmarks",
-        "correct": "Landmarks are distinctive visible features serving as external reference points; occupants view them from distance for orientation",
-        "takeaway": "Landmarks are distinctive visible features serving as external reference points; occupants view them from distance for orientation."
+        "correct": "Clarify the main public path, use recognizable waiting nodes, and separate staff/service edges. This is supported by the Batch 132 local source map for Spatial Legibility and Environmental Perception.",
+        "takeaway": "Spatial Legibility and Environmental Perception: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "b": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "c": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "d": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": "This describes edges, not landmarks This describes nodes, not landmarks This describes paths, not landmarks Landmarks are distinctive visible features serving as external reference points; occupants view them from distance for orientation Landmarks are distinctive visible features serving as external reference points; occupants view them from distance for orientation.",
-      "code_citation": null,
+      "explanation": "Clarify the main public path, use recognizable waiting nodes, and separate staff/service edges. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.source-capture.md (sha256:151d4e1bb89ac352b38cd7547880edcea5c0d5b47c3c4fb5708527eec4af2679); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.refined.md (sha256:02271d398d81d16521f9a3b8e7b88f1094c327464b375211122e7137a4f2e3a0).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.source-capture.md (sha256:151d4e1bb89ac352b38cd7547880edcea5c0d5b47c3c4fb5708527eec4af2679); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.refined.md (sha256:02271d398d81d16521f9a3b8e7b88f1094c327464b375211122e7137a4f2e3a0)",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -365,30 +363,30 @@
       "model_id": "ALE-THEO-003-09-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-05-06T15:59:02.407187+00:00",
-      "content_hash": "sha256:c84750df2572e8465d6ac5dedc61eb67e9d1d52e461bcd518d3e85b864d835b5"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:7f030ffab8c925d9bb8aa65a333b0a8b08c68340a83b58c6e42d701969fdf722"
     },
     {
       "question_id": "48fc4ad7-184f-4de2-8de4-6068e76bd60e",
       "article_id": "2ec5e562-50a1-4c7c-a95e-a17166d4631b",
       "topic_id": "27f93b07-02d8-4035-8cea-739cf9ae6e50",
-      "text": "Kevin Lynch's 'The Image of the City' identifies five elemental categories for understanding how people perceive cities. The first element, Paths, refers to:",
+      "text": "What is the design risk of a maze-like composite path?",
       "options": [
         {
           "id": "a",
-          "text": "Strategic focus points where paths converge or activity concentrates, often serving as major intersections or hubs"
+          "text": "It creates better imageability because every turn is surprising."
         },
         {
           "id": "b",
-          "text": "Channels of movement (streets, corridors, transit routes) structuring human movement"
+          "text": "Without hierarchy, edges, nodes, and terminations, users lose the perceptual thread of movement."
         },
         {
           "id": "c",
-          "text": "Distinctive visual landmarks used for orientation, which help in navigating and identifying locations"
+          "text": "It is safe if the building has enough floor area."
         },
         {
           "id": "d",
-          "text": "Boundaries and barriers separating distinct areas, which can include walls, fences, or natural features"
+          "text": "It has no effect once users have a printed map."
         }
       ],
       "correct_option_id": "b",
@@ -397,14 +395,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This describes nodes, not paths",
-        "c": "This describes landmarks, not paths",
-        "d": "This describes edges, not paths",
-        "correct": "Paths are movement channels—streets, corridors, routes—that structure navigation and organize mental maps",
-        "takeaway": "Paths are movement channels—streets, corridors, routes—that structure navigation and organize mental maps."
+        "correct": "Without hierarchy, edges, nodes, and terminations, users lose the perceptual thread of movement. This is supported by the Batch 132 local source map for Spatial Legibility and Environmental Perception.",
+        "takeaway": "Spatial Legibility and Environmental Perception: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "a": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "c": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "d": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Without hierarchy, edges, nodes, and terminations, users lose the perceptual thread of movement. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.source-capture.md (sha256:151d4e1bb89ac352b38cd7547880edcea5c0d5b47c3c4fb5708527eec4af2679); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.refined.md (sha256:02271d398d81d16521f9a3b8e7b88f1094c327464b375211122e7137a4f2e3a0).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.source-capture.md (sha256:151d4e1bb89ac352b38cd7547880edcea5c0d5b47c3c4fb5708527eec4af2679); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.refined.md (sha256:02271d398d81d16521f9a3b8e7b88f1094c327464b375211122e7137a4f2e3a0)",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -417,30 +415,30 @@
       "model_id": "ALE-THEO-003-09-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:38bf125e97a694a2879446b3870d6dd5f2ab62027936433d1ba4c8688607ee3e"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:f7a9c0449e22b19819bdba2c9ef564713fe6c72c981b01c492dd38fef3c0d780"
     },
     {
       "question_id": "f63305b4-e50b-4623-8963-d5ddee5d1295",
       "article_id": "2ec5e562-50a1-4c7c-a95e-a17166d4631b",
       "topic_id": "27f93b07-02d8-4035-8cea-739cf9ae6e50",
-      "text": "In Kevin Lynch's framework, Districts are:",
+      "text": "Which choice best treats signage in legible design?",
       "options": [
         {
           "id": "a",
-          "text": "Channels and routes for movement through space, often defined by their connectivity and flow characteristics"
+          "text": "Use signage to compensate for hidden exits and unclear routes."
         },
         {
           "id": "b",
-          "text": "Distinctive landmarks visible from multiple vantage points, serving as orientation aids within the urban fabric"
+          "text": "Avoid spatial hierarchy because signs can carry all information."
         },
         {
           "id": "c",
-          "text": "Boundaries separating different areas and territories, often marked by physical or perceptual barriers"
+          "text": "Use signs only for branding, not wayfinding."
         },
         {
           "id": "d",
-          "text": "Areas with coherent characteristics and identity, such as neighborhoods or functional zones"
+          "text": "Use signage as support for a spatial system that is already understandable."
         }
       ],
       "correct_option_id": "d",
@@ -449,14 +447,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This describes paths, not districts",
-        "b": "This describes landmarks, not districts",
-        "c": "This describes edges, not districts",
-        "correct": "Districts are coherent areas with characteristic identity and internal consistency—neighborhoods, sectors, functional zones",
-        "takeaway": "Districts are coherent areas with characteristic identity and internal consistency—neighborhoods, sectors, functional zones."
+        "correct": "Use signage as support for a spatial system that is already understandable. This is supported by the Batch 132 local source map for Spatial Legibility and Environmental Perception.",
+        "takeaway": "Spatial Legibility and Environmental Perception: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "a": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "b": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "c": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": "This describes paths, not districts This describes landmarks, not districts This describes edges, not districts Districts are coherent areas with characteristic identity and internal consistency—neighborhoods, sectors, functional zones Districts are coherent areas with characteristic identity and internal consistency—neighborhoods, sectors, functional zones.",
-      "code_citation": null,
+      "explanation": "Use signage as support for a spatial system that is already understandable. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.source-capture.md (sha256:151d4e1bb89ac352b38cd7547880edcea5c0d5b47c3c4fb5708527eec4af2679); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.refined.md (sha256:02271d398d81d16521f9a3b8e7b88f1094c327464b375211122e7137a4f2e3a0).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.source-capture.md (sha256:151d4e1bb89ac352b38cd7547880edcea5c0d5b47c3c4fb5708527eec4af2679); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.refined.md (sha256:02271d398d81d16521f9a3b8e7b88f1094c327464b375211122e7137a4f2e3a0)",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -469,30 +467,30 @@
       "model_id": "ALE-THEO-003-09-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-05-06T15:59:02.519845+00:00",
-      "content_hash": "sha256:28ee6353e0100d3cf3b1b13ba717dac7014ef759fdb1d1776178dfaebad8fb2f"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:43995c4f690e461728027287b9247bab5835770fac3b9da8bace3b1a3f426326"
     },
     {
       "question_id": "d3cbd5d7-ea62-4686-bcef-bc45720fda6c",
       "article_id": "2ec5e562-50a1-4c7c-a95e-a17166d4631b",
       "topic_id": "27f93b07-02d8-4035-8cea-739cf9ae6e50",
-      "text": "In designing an office floor plan with 40 workers, which Lynch elements would create legible zones without full walls?",
+      "text": "How can districts help a building user?",
       "options": [
         {
           "id": "a",
-          "text": "Rely exclusively on color coding and signage, ignoring spatial organization, which may lead to confusion in navigation."
+          "text": "They make every floor indistinguishable."
         },
         {
           "id": "b",
-          "text": "No organization necessary; open floor plans are inherently legible, although this may not account for specific functional requirements."
+          "text": "They eliminate the need for doors and thresholds."
         },
         {
           "id": "c",
-          "text": "Paths (clear circulation hierarchy), Districts (department clustering with consistent character), Nodes (major junctions marked by architecture), Figure-ground (primary work areas as figures)"
+          "text": "They group related areas so users can distinguish one functional territory from another."
         },
         {
           "id": "d",
-          "text": "Create maximum density; occupants will negotiate spatial understanding independently, which can lead to inefficiencies and confusion."
+          "text": "They apply only to entire cities."
         }
       ],
       "correct_option_id": "c",
@@ -501,14 +499,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Signage supplements organization; primary clarity comes from space design",
-        "b": "Open plans require careful organization; they're not inherently legible",
-        "d": "Density without organization creates confusion; intentional design creates legibility",
-        "correct": "Lynch elements create legibility through organization: paths guide movement, districts cluster functions, nodes mark junctions, figure-ground distinguishes primary from secondary spaces",
-        "takeaway": "Lynch elements create legibility through organization: paths guide movement, districts cluster functions, nodes mark junctions, figure-ground distinguishes primary from secondary spaces."
+        "correct": "They group related areas so users can distinguish one functional territory from another. This is supported by the Batch 132 local source map for Spatial Legibility and Environmental Perception.",
+        "takeaway": "Spatial Legibility and Environmental Perception: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "a": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "b": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "d": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": "Signage supplements organization; primary clarity comes from space design Open plans require careful organization; they're not inherently legible Density without organization creates confusion; intentional design creates legibility Lynch elements create legibility through organization: paths guide movement, districts cluster functions, nodes mark junctions, figure-ground distinguishes primary from secondary spaces Lynch elements create legibility through organization: paths guide movement, districts cluster functions, nodes mark junctions, figure-ground distinguishes primary from secondary spaces.",
-      "code_citation": null,
+      "explanation": "They group related areas so users can distinguish one functional territory from another. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.source-capture.md (sha256:151d4e1bb89ac352b38cd7547880edcea5c0d5b47c3c4fb5708527eec4af2679); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.refined.md (sha256:02271d398d81d16521f9a3b8e7b88f1094c327464b375211122e7137a4f2e3a0).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.source-capture.md (sha256:151d4e1bb89ac352b38cd7547880edcea5c0d5b47c3c4fb5708527eec4af2679); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.refined.md (sha256:02271d398d81d16521f9a3b8e7b88f1094c327464b375211122e7137a4f2e3a0)",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -521,30 +519,30 @@
       "model_id": "ALE-THEO-003-09-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-05-06T15:59:02.641639+00:00",
-      "content_hash": "sha256:0620017db6ce7ee1658aa88f89da5fd1c0c5fb2f8f2eac163359ac5fd599bfe3"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:a8c918defda3f2d8308f82cfde56ddea2ebcc89c82467eb42bab9282915cbbe0"
     },
     {
       "question_id": "2b388bf3-a459-4802-a604-1a8d2cc68d70",
       "article_id": "2ec5e562-50a1-4c7c-a95e-a17166d4631b",
       "topic_id": "27f93b07-02d8-4035-8cea-739cf9ae6e50",
-      "text": "In Kevin Lynch's framework, Nodes are:",
+      "text": "Which move creates a useful landmark?",
       "options": [
         {
           "id": "a",
-          "text": "Linear breaks and boundaries separating areas, often used to define distinct zones within urban planning contexts"
+          "text": "Place identical landmarks at every corner."
         },
         {
           "id": "b",
-          "text": "Distinctive objects used as visual reference points for orientation, aiding in the navigation and mental mapping of spaces"
+          "text": "Use a landmark where users never need orientation."
         },
         {
           "id": "c",
-          "text": "Coherent areas with characteristic identity and internal consistency, serving as recognizable segments within a larger environment"
+          "text": "Use only temporary objects that are frequently moved."
         },
         {
           "id": "d",
-          "text": "Strategic foci—concentrations of activity or junctions of paths—serving as anchoring points in mental maps"
+          "text": "Place a memorable reference at a real route decision or destination point."
         }
       ],
       "correct_option_id": "d",
@@ -553,14 +551,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "This describes edges, not nodes",
-        "b": "This describes landmarks, not nodes",
-        "c": "This describes districts, not nodes",
-        "correct": "Nodes are junctions and activity concentrations serving as mental map anchors—plazas, intersections, central atria",
-        "takeaway": "Nodes are junctions and activity concentrations serving as mental map anchors—plazas, intersections, central atria."
+        "correct": "Place a memorable reference at a real route decision or destination point. This is supported by the Batch 132 local source map for Spatial Legibility and Environmental Perception.",
+        "takeaway": "Spatial Legibility and Environmental Perception: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "a": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "b": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "c": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": "This describes edges, not nodes This describes landmarks, not nodes This describes districts, not nodes Nodes are junctions and activity concentrations serving as mental map anchors—plazas, intersections, central atria Nodes are junctions and activity concentrations serving as mental map anchors—plazas, intersections, central atria.",
-      "code_citation": null,
+      "explanation": "Place a memorable reference at a real route decision or destination point. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.source-capture.md (sha256:151d4e1bb89ac352b38cd7547880edcea5c0d5b47c3c4fb5708527eec4af2679); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.refined.md (sha256:02271d398d81d16521f9a3b8e7b88f1094c327464b375211122e7137a4f2e3a0).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.source-capture.md (sha256:151d4e1bb89ac352b38cd7547880edcea5c0d5b47c3c4fb5708527eec4af2679); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.refined.md (sha256:02271d398d81d16521f9a3b8e7b88f1094c327464b375211122e7137a4f2e3a0)",
       "bloom_level": "remember",
       "application_context": "recall",
       "practice_context": [
@@ -573,30 +571,30 @@
       "model_id": "ALE-THEO-003-09-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-05-06T15:59:02.75812+00:00",
-      "content_hash": "sha256:47c0af4e96a433fb4e08c29fb87e133ea99f55436dae08bc428013c548b416aa"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:834d4661f1468aef08aee4ae84a3700edba76eba9efdec9e058e27a8d2c2f4f8"
     },
     {
       "question_id": "61fd148f-c7d2-405f-96b5-84380bb20ff2",
       "article_id": "2ec5e562-50a1-4c7c-a95e-a17166d4631b",
       "topic_id": "27f93b07-02d8-4035-8cea-739cf9ae6e50",
-      "text": "Why should spatial organization precede (and be prioritized over) wayfinding signage systems in design?",
+      "text": "What should be checked when applying urban legibility ideas to a building?",
       "options": [
         {
           "id": "a",
-          "text": "Excellent spatial organization allows intuitive navigation with minimal signage; poor spatial organization cannot be saved by signage alone"
+          "text": "Whether the path, edge, district, node, and landmark ideas still support actual user movement."
         },
         {
           "id": "b",
-          "text": "Spatial organization and signage serve identical functions; prioritization is arbitrary, which is a misconception"
+          "text": "Whether every urban term can be copied literally."
         },
         {
           "id": "c",
-          "text": "Signage is more expensive than spatial organization; cost savings drive the prioritization, which is not typically the case"
+          "text": "Whether the building facade has enough visual novelty."
         },
         {
           "id": "d",
-          "text": "Architects prefer designing spaces; sign design is considered a separate discipline, which is not a valid reason for prioritization"
+          "text": "Whether users can be forced to memorize the plan."
         }
       ],
       "correct_option_id": "a",
@@ -605,14 +603,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "Both contribute differently; spatial organization enables understanding; signage supplements organization",
-        "c": "While cost is practical, the functional principle is primary",
-        "d": "Professional integration of both disciplines is required; prioritization follows functional necessity",
-        "correct": "Clear organization enables intuitive navigation; confused organization creates disorientation despite comprehensive signage",
-        "takeaway": "Clear organization enables intuitive navigation; confused organization creates disorientation despite comprehensive signage."
+        "correct": "Whether the path, edge, district, node, and landmark ideas still support actual user movement. This is supported by the Batch 132 local source map for Spatial Legibility and Environmental Perception.",
+        "takeaway": "Spatial Legibility and Environmental Perception: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "b": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "c": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "d": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Whether the path, edge, district, node, and landmark ideas still support actual user movement. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.source-capture.md (sha256:151d4e1bb89ac352b38cd7547880edcea5c0d5b47c3c4fb5708527eec4af2679); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.refined.md (sha256:02271d398d81d16521f9a3b8e7b88f1094c327464b375211122e7137a4f2e3a0).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.source-capture.md (sha256:151d4e1bb89ac352b38cd7547880edcea5c0d5b47c3c4fb5708527eec4af2679); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.refined.md (sha256:02271d398d81d16521f9a3b8e7b88f1094c327464b375211122e7137a4f2e3a0)",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
       "practice_context": [
@@ -625,30 +623,30 @@
       "model_id": "ALE-THEO-003-09-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:351545fa9bb0ef7631afa8b8dcd28ce0e00d8118dd3ada02cf12ba76b89cb5d0"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:f89e29a9dcba21c75719eb72437a58274474d749ffef7f95dcb46072be9d1cc8"
     },
     {
       "question_id": "e621fbc3-6943-40cc-aa66-de5146c8d878",
       "article_id": "2ec5e562-50a1-4c7c-a95e-a17166d4631b",
       "topic_id": "27f93b07-02d8-4035-8cea-739cf9ae6e50",
-      "text": "In applying Lynch's framework to a hospital building, how would you organize its spatial elements?",
+      "text": "What is a source-safe outcome of legible environmental design?",
       "options": [
         {
           "id": "a",
-          "text": "No organization necessary; hospitals function through signage alone, assuming wayfinding is intuitive"
+          "text": "Users never need any signs or assistance."
         },
         {
           "id": "b",
-          "text": "Paths (clear circulation hierarchy), Edges (departmental boundaries), Districts (inpatient/outpatient/administrative), Nodes (major junctions, elevator lobbies), Landmarks (distinctive architectural features for orientation)"
+          "text": "Users can understand routes, boundaries, decision points, and memorable references with less confusion."
         },
         {
           "id": "c",
-          "text": "Use only Paths and Edges; Nodes, Districts, and Landmarks are unnecessary in healthcare, simplifying design"
+          "text": "Every building must imitate a city street grid."
         },
         {
           "id": "d",
-          "text": "Emphasize Landmarks exclusively, assuming distinctive features enable all navigation without additional elements"
+          "text": "All design decisions become purely psychological."
         }
       ],
       "correct_option_id": "b",
@@ -657,14 +655,14 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Organization is fundamental; signage alone cannot create legibility",
-        "c": "All five elements contribute to hospital legibility and patient/visitor navigation",
-        "d": "Landmarks contribute but don't suffice; comprehensive element organization is required",
-        "correct": "All five Lynch elements organized systematically—clear paths, defined edges, distinct districts, marked nodes, visible landmarks—create hospital legibility",
-        "takeaway": "All five Lynch elements organized systematically—clear paths, defined edges, distinct districts, marked nodes, visible landmarks—create hospital legibility."
+        "correct": "Users can understand routes, boundaries, decision points, and memorable references with less confusion. This is supported by the Batch 132 local source map for Spatial Legibility and Environmental Perception.",
+        "takeaway": "Spatial Legibility and Environmental Perception: stay inside the checked Batch 132 source scope and reject unsupported numeric, certification, or quotation claims.",
+        "a": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "c": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle.",
+        "d": "This distractor either overclaims beyond the checked source map or ignores the source-safe design principle."
       },
-      "explanation": null,
-      "code_citation": null,
+      "explanation": "Users can understand routes, boundaries, decision points, and memorable references with less confusion. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.source-capture.md (sha256:151d4e1bb89ac352b38cd7547880edcea5c0d5b47c3c4fb5708527eec4af2679); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.refined.md (sha256:02271d398d81d16521f9a3b8e7b88f1094c327464b375211122e7137a4f2e3a0).",
+      "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.source-capture.md (sha256:151d4e1bb89ac352b38cd7547880edcea5c0d5b47c3c4fb5708527eec4af2679); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.refined.md (sha256:02271d398d81d16521f9a3b8e7b88f1094c327464b375211122e7137a4f2e3a0)",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
@@ -677,8 +675,10 @@
       "model_id": "ALE-THEO-003-09-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:8c3871ff598a61644efb7c788ff7b8b49624322ff09f92361332d415b3353ae2"
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "content_hash": "sha256:05baf32f5c83f870725abb374c98dfc5e52f11bd1413cd854f58272b8b4e7726"
     }
-  ]
+  ],
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:50d721b3b1a94c15242348c0c38f1a1592c951773bf6f88578b0b6f1a43dec67"
 }

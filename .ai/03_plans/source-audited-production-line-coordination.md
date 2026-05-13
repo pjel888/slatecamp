@@ -831,3 +831,14 @@ Batch 131 produced current local-first source-audit evidence, refreshed 64/64 li
 Commit/push gate: local validation passed, but git staging is blocked by .git/index.lock permissions (fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted). Hermes should stage only Batch 131 paths from the stage list, run cached diff checks, commit, and push before Batch 132 acceptance. Next residual target after Batch 131 acceptance should continue with the next sourceable non-prac residual clusters after lea-theo-003-08 unless live artifacts show a later accepted batch.
 
 <!-- batch-131-acceptance:end -->
+
+<!-- batch-132-acceptance:start -->
+## Batch 132 Acceptance Coordination
+
+Status: passed_local_validation_git_index_blocked_handoff
+Generated: 2026-05-14T05:43:15.598+08:00
+
+Acceptance commit target: `chore(content): accept source-audited batch 132`.
+
+Stage only the paths in `.ai/03_plans/batch-132-git-handoff-stage-paths.txt` using `git add -f --pathspec-from-file=.ai/03_plans/batch-132-git-handoff-stage-paths.txt`. Exclude unrelated dirty files and old unrelated content-roundtrip run directories. Git index blocker observed: fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted.
+<!-- batch-132-acceptance:end -->

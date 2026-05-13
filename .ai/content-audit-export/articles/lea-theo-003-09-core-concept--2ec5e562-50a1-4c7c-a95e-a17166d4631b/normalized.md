@@ -1,48 +1,35 @@
+# Spatial Legibility and Environmental Perception
+
+## Source-Audited Scope
+Source basis: Batch 132 local source capture `vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.source-capture.md` (sha256:151d4e1bb89ac352b38cd7547880edcea5c0d5b47c3c4fb5708527eec4af2679) and refined conversion `vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-003-09-core-concept-spatial-legibility-environmental-perception.refined.md` (sha256:02271d398d81d16521f9a3b8e7b88f1094c327464b375211122e7137a4f2e3a0).
+
+Spatial legibility depends on how users perceive paths, edges, districts, nodes, landmarks, and other environmental references. A building or campus becomes easier to understand when major routes are continuous, decision points are recognizable, hidden exits are avoided, and memorable references sit where users actually need orientation.
+
 ## Board Exam Quick Check
-
-For spatial legibility questions, choose the answer that makes the environment easier to understand through order, routes, cues, and perception. Avoid answers that rely on novelty while leaving users disoriented.
-
-## What You Need to Know for the LEA
-
-## Learning Goal
-
-Explain spatial legibility as the user's ability to read a place through spatial relationships, circulation, perceptual cues, and environmental order.
+Ask whether a first-time user can read the main path, understand boundaries, recognize decision points, and remember references without depending on signage alone.
 
 ## Core Concept
+Legibility is the user-facing clarity of spatial organization. Routes, thresholds, functional territories, decision points, landmarks, and visible exits help people form a cognitive map. The design task is to make the spatial system readable before adding labels.
 
-TOA 3 begins design perception with space articulation. Spaces can be within other spaces, interlock, sit adjacent, or be linked by a common space. These relationships make a building readable because they tell the user how parts connect. TOA 3 also shows that movement patterns in centralized or linear organizations help users anticipate where they are going.
+## Real World Scenario
+A Manila outpatient clinic has repeated corridors and similar counters. The source-safe fix is not more signs alone: strengthen the main path, mark public edges, make waiting nodes recognizable, and use a few durable landmarks so first-time patients can form a cognitive map.
 
-Salvan's discussion of architectural space adds that space must facilitate orientation through perception and relate to the space schemata of human public and individual worlds. Legibility is therefore not just signage. It is the combined readability of route, hierarchy, boundary, symbol, light, opening, and sequence.
-
-The same source warns that unknown emergency exits can fail to become part of a user's cognitive map, creating anxiety even when exits exist. That idea is useful for the LEA because it separates actual provision from perceived usability. A legible building makes important choices visible and understandable.
-
-## Key Facts and Testable Items
-
-1. Spatial relationships include space within a space, interlocking spaces, adjacent spaces, and spaces linked by a common space.
-2. Circulation and organization help users anticipate sequence and destination.
-3. Legibility depends on perceptual cues such as hierarchy, boundaries, openings, symbols, and route clarity.
-4. A cognitive map is weakened when important routes or exits are hidden or unclear.
-5. Order and sufficient variety both matter: order aids understanding, while variety prevents monotony.
+## Key Facts
+- Paths carry the perceptual thread of movement through a sequence of spaces.
+- Edges and districts help users distinguish territories and boundaries.
+- Nodes should support pause and orientation at crossings or decisions.
+- Landmarks are strongest when placed where users need a memorable reference.
+- Hidden exits and maze-like route systems can weaken the user cognitive map.
 
 ## Common Mistakes
-
-- Treating wayfinding as signage only.
-- Making a route dramatic but unreadable.
-- Hiding important exits or transitions behind ambiguous cues.
-- Confusing visual complexity with meaningful hierarchy.
+- Signage-only wayfinding claims were removed; legibility is treated as route, hierarchy, environmental-reference, and cognitive-map design.
+- Unsupported universal scaling claims were replaced with source-bounded building and campus application language.
 
 ## Key Terms
-
-**Spatial legibility** - The ease with which users can understand spatial order, routes, and cues.
-
-**Cognitive map** - The user's mental image of how a place is organized and how to move through it.
-
-**Spatial relationship** - The way spaces connect, overlap, sit adjacent, contain one another, or link through another space.
-
-**Environmental perception** - The way users interpret surroundings through sensory, cognitive, and experiential cues.
-
-**Hierarchy** - The ordering of spaces or cues so users can distinguish primary from secondary elements.
-
-## Related Articles
-
-See also within Design Perception: **lea-theo-003-02-core-concept**, **lea-theo-003-03-core-concept**, **lea-theo-003-04-core-concept**, **lea-theo-003-07-core-concept**.
+- Legibility
+- Cognitive map
+- Path
+- Edge
+- District
+- Node
+- Landmark

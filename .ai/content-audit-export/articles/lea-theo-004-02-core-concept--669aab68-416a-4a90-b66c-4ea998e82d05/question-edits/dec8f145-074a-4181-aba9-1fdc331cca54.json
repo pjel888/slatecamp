@@ -2,57 +2,61 @@
   "question_id": "dec8f145-074a-4181-aba9-1fdc331cca54",
   "baseline_hash": "sha256:925d9c9625201d925ae97e31ae4949d9fd9ed2f8764b2748adfd3d530d709214",
   "action": "replace",
-  "reason": "source-audited-article-batch-059-local-first: local raw PDF backed replacement constrained to checked Batch 059 TOA 4 Tropical Architecture source family.",
-  "approved_by": "codex-local-first-batch-059",
-  "approved_at": "2026-05-11T20:48:00.000+08:00",
+  "reason": "source-audited-article-batch-132-local-first: source-safe rewrite constrained to Batch 132 local source capture and refined conversion artifacts.",
+  "approved_by": "codex-local-first-batch-132",
+  "approved_at": "2026-05-14T05:41:22.456+08:00",
   "source_audit_support": {
     "parent_article_id": "669aab68-416a-4a90-b66c-4ea998e82d05",
     "parent_article_slug": "lea-theo-004-02-core-concept",
-    "answer_key_fields_changed": true,
+    "answer_key_fields_changed": false,
     "support_status": "source_safe_rewrite",
-    "source_locator": "TOA 4 Tropical Architecture refined markdown lines 513-591, 622-660, 708-710, and raw PDF pages 71-78, 81-84, 87-90",
+    "source_locator": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.source-capture.md (sha256:9927e78faf9319ade65052ca3092e446d4756b4ca634f7cf5238d02b184cb29b); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.refined.md (sha256:dce571fb09c7afb337ccb32b20e3d61300f4501a02bc68e968054f3c3ba69189)",
     "checked_markdown_lines": [
-      "TOA 4 Tropical Architecture refined markdown lines 513-591",
-      "TOA 4 Tropical Architecture refined markdown lines 622-660",
-      "TOA 4 Tropical Architecture refined markdown lines 708-710"
+      "TOA 4 Tropical Architecture refined markdown lines 517-535, 633-670, 802-810, 840-864, 1155-1172, 1386-1406, 1486, and 1630-1685",
+      "PAGASA Climate of the Philippines official page lines 329-383"
     ],
     "checked_sources": [
       {
-        "source_id": "toa4-tropical-architecture-local-raw-pdf--b059-669aab68-01",
-        "label": "TOA 4 Tropical Architecture - local raw PDF",
-        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
-        "sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
-        "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
-        "locator": "TOA 4 Tropical Architecture refined markdown lines 513-591, 622-660, 708-710, and raw PDF pages 71-78, 81-84, 87-90"
+        "source_id": "batch-132-004-02-source-capture",
+        "label": "Batch 132 source capture - Passive Design in Tropical Climates",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.source-capture.md",
+        "sha256": "sha256:9927e78faf9319ade65052ca3092e446d4756b4ca634f7cf5238d02b184cb29b",
+        "locator": "TOA 4 Tropical Architecture refined markdown lines 517-535, 633-670, 802-810, 840-864, 1155-1172, 1386-1406, 1486, and 1630-1685; PAGASA Climate of the Philippines official page lines 329-383"
+      },
+      {
+        "source_id": "batch-132-004-02-refined-conversion",
+        "label": "Batch 132 refined conversion - Passive Design in Tropical Climates",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.refined.md",
+        "sha256": "sha256:dce571fb09c7afb337ccb32b20e3d61300f4501a02bc68e968054f3c3ba69189",
+        "locator": "Derived from vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.source-capture.md (sha256:9927e78faf9319ade65052ca3092e446d4756b4ca634f7cf5238d02b184cb29b)"
       }
     ],
-    "local_source_safe_action": "Question text, options, answer, rationale, explanation, and citation rewritten to the Batch 059 checked local raw PDF source scope."
+    "local_source_safe_action": "Question text, options, rationale, explanation, and citation rewritten while preserving the existing correct_option_id."
   },
   "proposed": {
-    "text": "What is the exam sequence for passive design decisions?",
+    "text": "Which claim should be removed unless separately sourced?",
     "options": [
       {
         "id": "a",
-        "text": "Avoid heat gain, support ventilation, use shaded daylight, and shape cooler outdoor areas."
+        "text": "A precise Venturi-device or overhang dimension that is not in the checked local source set."
       },
       {
         "id": "b",
-        "text": "Choose equipment first and ignore envelope decisions."
+        "text": "Shading is important in tropical architecture."
       },
       {
         "id": "c",
-        "text": "Select finishes before studying climate."
+        "text": "Natural ventilation depends on opening alignment."
       },
       {
         "id": "d",
-        "text": "Treat every climate family the same."
+        "text": "Hot-humid design should limit heat gain."
       }
     ],
     "correct_option_id": "a",
-    "rationale": "Avoid heat gain, support ventilation, use shaded daylight, and shape cooler outdoor areas. This answer is supported by the checked Batch 059 local TOA 4 Tropical Architecture raw PDF source family for Passive design in tropical climates operates.",
-    "explanation": "Avoid heat gain, support ventilation, use shaded daylight, and shape cooler outdoor areas. The Batch 059 source audit used the local raw PDF first and refined markdown only as locator evidence for Passive design in tropical climates operates.",
-    "code_citation": "TOA 4 Tropical Architecture refined markdown lines 513-591, 622-660, 708-710, and raw PDF pages 71-78, 81-84, 87-90"
+    "rationale": "A precise Venturi-device or overhang dimension that is not in the checked local source set. This is supported by the Batch 132 local source map for Passive Design in Tropical Climates.",
+    "explanation": "A precise Venturi-device or overhang dimension that is not in the checked local source set. The Batch 132 local-first pass rewrote this question to cite vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.source-capture.md (sha256:9927e78faf9319ade65052ca3092e446d4756b4ca634f7cf5238d02b184cb29b); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.refined.md (sha256:dce571fb09c7afb337ccb32b20e3d61300f4501a02bc68e968054f3c3ba69189).",
+    "code_citation": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.source-capture.md (sha256:9927e78faf9319ade65052ca3092e446d4756b4ca634f7cf5238d02b184cb29b); vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-02-core-concept-passive-design-tropical-climates.refined.md (sha256:dce571fb09c7afb337ccb32b20e3d61300f4501a02bc68e968054f3c3ba69189)"
   },
-  "batch_question_template_index": 12
+  "batch_question_template_index": 11
 }

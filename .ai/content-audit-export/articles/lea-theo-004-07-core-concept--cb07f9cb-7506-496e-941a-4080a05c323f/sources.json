@@ -1,34 +1,52 @@
 {
   "article_id": "cb07f9cb-7506-496e-941a-4080a05c323f",
   "hash_algorithm": "sha256",
-  "source_count": 1,
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "toa4-tropical-architecture-local-raw-pdf--b060-cb07f9cb-01",
+      "source_id": "batch-132-004-07-source-capture",
       "article_id": "cb07f9cb-7506-496e-941a-4080a05c323f",
-      "label": "TOA 4 Tropical Architecture - local raw PDF",
+      "label": "Batch 132 source capture - Biophilic Design",
       "url": null,
-      "source_type": "local_raw_pdf",
-      "description": "TOA 4 Tropical Architecture - local raw PDF; local raw PDF checked first; refined markdown used only as locator. TOA 4 Tropical Architecture refined markdown lines 884-931, 1562-1573, 1648-1665, 1679, and raw PDF pages 104, 180-181, 187, and 194.",
+      "source_type": "local_source_capture",
+      "description": "Local source capture for Biophilic Design; official source URLs and local raw source hashes are recorded in the artifact.",
       "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-05-11T21:02:00.000+08:00",
-      "updated_at": "2026-05-11T21:02:00.000+08:00",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
-      "raw_pdf_sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
-      "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
-      "source_locator": "TOA 4 Tropical Architecture refined markdown lines 884-931, 1562-1573, 1648-1665, 1679, and raw PDF pages 104, 180-181, 187, and 194",
+      "created_at": "2026-05-14T05:41:22.456+08:00",
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-07-core-concept-biophilic-design.source-capture.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-07-core-concept-biophilic-design.source-capture.md",
+      "sha256": "sha256:d135b22fa35e9f11bbae85107dbdaa55bb775ac01017aec9476ea032dcb9b7da",
+      "source_locator": "TOA 4 Tropical Architecture refined markdown lines 1562-1573 and 1591-1622; George Salvan Architectural Theories of Design refined markdown lines 16726-16742; Terrapin 14 Patterns official PDF lines 1558, 1642, 1719, 1792, 1880, 1963, and 2206-2232",
       "checked_markdown_lines": [
-        "TOA 4 Tropical Architecture refined markdown lines 884-931",
-        "TOA 4 Tropical Architecture refined markdown lines 1562-1573",
-        "TOA 4 Tropical Architecture refined markdown lines 1648-1665, 1679"
+        "TOA 4 Tropical Architecture refined markdown lines 1562-1573 and 1591-1622",
+        "George Salvan Architectural Theories of Design refined markdown lines 16726-16742",
+        "Terrapin 14 Patterns official PDF lines 1558, 1642, 1719, 1792, 1880, 1963, and 2206-2232"
       ],
-      "checked_pdf_pages": "raw PDF pages 71-78, 81-84, 87-90, 92-100, 104, 106-110, 121, 140, 143-148, 151, 163, 172, 180-181, 187, and 194",
-      "local_audit_note": "Primary truth is the local raw PDF family; refined markdown line ranges are locator aids for the checked claims."
+      "local_audit_note": "Cited Batch 132 source artifact. Official web material was captured locally before article/question use."
+    },
+    {
+      "source_id": "batch-132-004-07-refined-conversion",
+      "article_id": "cb07f9cb-7506-496e-941a-4080a05c323f",
+      "label": "Batch 132 refined conversion - Biophilic Design",
+      "url": null,
+      "source_type": "local_refined_conversion",
+      "description": "Refined source-safe conversion for Biophilic Design.",
+      "is_verified": true,
+      "sort_order": 1,
+      "created_at": "2026-05-14T05:41:22.456+08:00",
+      "updated_at": "2026-05-14T05:41:22.456+08:00",
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-07-core-concept-biophilic-design.refined.md",
+      "local_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-07-core-concept-biophilic-design.refined.md",
+      "sha256": "sha256:37bed449b7ddffb4d50569fb4bb87b0783a073a67e0aed29aa8a64c86f6ce9f9",
+      "source_locator": "Derived from vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-07-core-concept-biophilic-design.source-capture.md (sha256:d135b22fa35e9f11bbae85107dbdaa55bb775ac01017aec9476ea032dcb9b7da)",
+      "checked_markdown_lines": [
+        "TOA 4 Tropical Architecture refined markdown lines 1562-1573 and 1591-1622",
+        "George Salvan Architectural Theories of Design refined markdown lines 16726-16742",
+        "Terrapin 14 Patterns official PDF lines 1558, 1642, 1719, 1792, 1880, 1963, and 2206-2232"
+      ],
+      "local_audit_note": "Used as the article and linked-question citation layer after source capture."
     }
   ],
-  "sources_hash": "sha256:35f6a1fe95f182d941ec73c1fdc2f85096211669a664f6d068494466bdd58503"
+  "sources_hash": "sha256:7a8b7bbad8605b0d81ed7ebd588f29b2ad624ba0c96f4194374385dff790a927"
 }

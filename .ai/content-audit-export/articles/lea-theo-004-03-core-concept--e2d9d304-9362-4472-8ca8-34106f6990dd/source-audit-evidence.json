@@ -1,45 +1,54 @@
 {
   "artifact_type": "source_audit_evidence",
-  "batch_id": "source-audited-article-batch-060-local-first",
-  "batch_number": 60,
-  "audit_mode": "local_first_raw_pdf_primary",
-  "audit_date": "2026-05-11",
-  "audited_at": "2026-05-11T21:02:00.000+08:00",
+  "batch_id": "source-audited-article-batch-132-local-first",
+  "batch_number": 132,
+  "audit_mode": "local_first_source_capture_primary",
+  "audit_date": "2026-05-14",
+  "audited_at": "2026-05-14T05:41:22.456+08:00",
   "target": {
     "article_id": "e2d9d304-9362-4472-8ca8-34106f6990dd",
     "slug": "lea-theo-004-03-core-concept",
-    "title": "Green building in the Philippines operates at",
+    "title": "Tropical Green Building Design in the Philippines",
     "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd",
     "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-theo-004-03-core-concept--e2d9d304-9362-4472-8ca8-34106f6990dd/question-edits",
     "linked_questions": 11,
-    "question_edits": 11,
-    "candidate_sha256": "sha256:b599986e4842730608f128069cd41c9f0201c680e8770125d407627afbbc235e"
+    "question_edits": 11
   },
-  "raw_pdf_gate": {
+  "local_source_gate": {
     "status": "PASS",
-    "primary_truth": "vitruvius-connection/001_Raw-Source-Layer local raw PDFs",
+    "primary_truth": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132 and vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132",
+    "official_web_used_only_for_local_capture": true,
     "derivative_or_search_layers_used_as_primary_truth": false,
-    "refined_markdown_used_only_as_locator": true,
-    "all_legal_code_claims_have_pdf_locator": true,
-    "all_section_numbers_verified_against_raw_pdf": true,
-    "no_derivative_text_used_as_source_of_truth": true,
-    "blockers": [],
     "checked_sources": [
       {
-        "source_id": "toa4-tropical-architecture-local-raw-pdf--b060-e2d9d304-01",
+        "source_id": "batch-132-004-03-source-capture",
+        "label": "Batch 132 source capture - Tropical Green Building Design in the Philippines",
+        "path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.source-capture.md",
+        "sha256": "sha256:b9dd47bfcac0ee0dd8d24a6a10aaeaa4facffb432448f79c380c9c18d8454cf9",
+        "locator": "TOA 4 Tropical Architecture refined markdown lines 1562-1573; ADB Philippine Green Building Code official page lines 40-43 and 79-80; BERDE Credit Library official documentation lines 141, 151, 163, 181, 195, 213, 231, 254, 275, and 291"
+      },
+      {
+        "source_id": "batch-132-004-03-refined-conversion",
+        "label": "Batch 132 refined conversion - Tropical Green Building Design in the Philippines",
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.refined.md",
+        "sha256": "sha256:f4a553fa517aa60b086f44713e51936375d1229e78e34b06554a7906f2dd8266",
+        "locator": "Derived from vitruvius-connection/001_Raw-Source-Layer/003-Theory/source-map-batch-132/lea-theo-004-03-core-concept-tropical-green-building-design.source-capture.md (sha256:b9dd47bfcac0ee0dd8d24a6a10aaeaa4facffb432448f79c380c9c18d8454cf9)"
+      }
+    ],
+    "underlying_source_families": [
+      {
         "label": "TOA 4 Tropical Architecture - local raw PDF",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
         "raw_pdf_sha256": "sha256:aa61b32fc2289be43b7bb210c1082adc0b5bee0321c36b7f3fbd8e54ae36c4f6",
         "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/003-Theory/refined_markdown/TOA 4 (Tropical Architecture).md",
-        "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22",
-        "locator": "TOA 4 Tropical Architecture refined markdown lines 1562-1573, 513-591, 622-670, 708-874, and raw PDF pages 180-181, 71-78, 81-84, 87-90, and 104"
+        "refined_markdown_sha256": "sha256:b6fe9434960e2265ad2e33d4039a335e591ab7d0b255bf5162d676fe178bbb22"
       }
     ]
   },
   "classification": {
-    "content_type": "theory-of-architecture-tropical-design",
-    "contains_legal_or_code_claims": false,
-    "source_risk_tier": "medium",
+    "content_type": "theory-of-architecture-green-building-philippines",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high",
     "requires_raw_pdf_audit": true,
     "linked_questions_observed": 11,
     "question_edits_created": [
@@ -55,59 +64,50 @@
       "a68af327-7fbc-4401-894f-e272e7859803",
       "c7fcc5cb-cac7-4388-a77e-13b4d0e3dce1"
     ],
-    "scenario_policy_status": "eligible-deferred",
-    "scenario_policy_reason": "A realistic tropical-site scenario could be useful, but Batch 060 defers scenario enrichment so source-audited article/question correctness remains the only blocking gate."
+    "scenario_policy_status": "added_source_safe_scenario",
+    "scenario_policy_reason": "For a mid-rise office in Metro Manila, green design should begin with tropical load reduction: shade, ventilation where appropriate, envelope control, water efficiency, and indoor environmental quality. Documentation can then map those decisions to the Green Building Code scope and, if pursued, to BERDE categories."
   },
   "claims": [
     {
-      "claim_id": "lea-theo-004-03-core-concept-b060-claim-01",
-      "claim_text": "Green building in the Philippines operates at is limited to checked local raw PDF TOA 4 Tropical Architecture source locators recorded for this article.",
+      "claim_id": "lea-theo-004-03-core-concept-b132-claim-01",
+      "claim_text": "Tropical Green Building Design in the Philippines is limited to the checked Batch 132 source capture, refined conversion, and listed local source family hashes.",
       "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/003-Theory/TOA 4 (Tropical Architecture).pdf",
-        "quoted_pdf_excerpt": "TOA 4 Tropical Architecture refined markdown lines 1562-1573, 513-591, 622-670, 708-874, and raw PDF pages 180-181, 71-78, 81-84, 87-90, and 104",
         "source_ids": [
-          "toa4-tropical-architecture-local-raw-pdf--b060-e2d9d304-01"
-        ]
+          "batch-132-004-03-source-capture",
+          "batch-132-004-03-refined-conversion"
+        ],
+        "source_locator": "TOA 4 Tropical Architecture refined markdown lines 1562-1573; ADB Philippine Green Building Code official page lines 40-43 and 79-80; BERDE Credit Library official documentation lines 141, 151, 163, 181, 195, 213, 231, 254, 275, and 291"
       },
       "audit_result": "PASS"
     }
   ],
   "checked_markdown_lines": [
     "TOA 4 Tropical Architecture refined markdown lines 1562-1573",
-    "TOA 4 Tropical Architecture refined markdown lines 513-591",
-    "TOA 4 Tropical Architecture refined markdown lines 622-670",
-    "TOA 4 Tropical Architecture refined markdown lines 708-874"
+    "ADB Philippine Green Building Code official page lines 40-43 and 79-80",
+    "BERDE Credit Library official documentation lines 141, 151, 163, 181, 195, 213, 231, 254, 275, and 291"
   ],
-  "checked_pdf_pages": "raw PDF pages 71-78, 81-84, 87-90, 92-100, 104, 106-110, 121, 140, 143-148, 151, 163, 172, 180-181, 187, and 194",
-  "unverified_or_rejected_claims": [],
+  "unverified_or_rejected_claims": [
+    "Unsourced pathway names, threshold claims, point claims, and certification equivalence claims were removed.",
+    "The article distinguishes code compliance from voluntary rating systems instead of implying they are interchangeable."
+  ],
   "quality_protocol": {
     "roundtrip_protocol_preserved": true,
     "ui_blocks_owner": "ui-blocks.json",
     "normalized_owner": "normalized.md",
-    "candidate_generation": "compose_completed",
+    "candidate_generation": "compose_required_after_prep",
     "local_first_only": true,
     "supabase_write_attempted": false,
     "deploy_attempted": false,
     "commit_attempted": false,
-    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json",
-    "diff_gate": "safe_true_blockers_zero",
-    "validate_gate": "valid_true_blockers_zero",
-    "ui_block_edits_gate": "valid_true_blockers_zero"
+    "marker_scan_scope": "normalized.md, candidate.md, sources.json, source-audit-evidence.json, question-edits/*.json"
   },
   "sme_review": {
-    "required": false,
     "required_before_publication": true,
     "status": "not_started_local_first_batch",
     "note": "Local-first source audit is ready for later human/SME review before final publishing."
   },
   "overall": {
     "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
-    "source_audit_status": "PASS",
-    "safe_for_batch_apply": true,
-    "safe_for_supabase_upload": true,
-    "blockers": [],
-    "warnings": [
-      "Human/SME review remains pending before final publishing."
-    ]
+    "blockers": []
   }
 }
