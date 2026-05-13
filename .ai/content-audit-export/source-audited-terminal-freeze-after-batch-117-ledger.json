@@ -1,0 +1,90 @@
+{
+  "freeze_id": "source-audited-terminal-freeze-after-batch-117",
+  "generated_at": "2026-05-13T21:39:03+08:00",
+  "branch": "3dlab-gray-viewport-bg",
+  "accepted_terminal_batch": {
+    "batch_number": "117",
+    "commit": "eb2c44d177a9579dcc990314107537d9692a7a7f",
+    "message": "chore(content): accept source-audited batch 117"
+  },
+  "decision": {
+    "status": "terminal_freeze_pass_git_index_blocked",
+    "batch_118_produced": false,
+    "reason": "No remaining eligible fixed-scope source-auditable article/question cluster was found after accepted Batch 117."
+  },
+  "evidence": {
+    "head_commit": "eb2c44d177a9579dcc990314107537d9692a7a7f",
+    "origin_branch_commit": "eb2c44d177a9579dcc990314107537d9692a7a7f",
+    "production_line_manifest_count": 31,
+    "production_line_manifest_range": "087-117",
+    "production_line_batch_118_manifest_exists": false,
+    "accepted_batch_087_117_selected_article_clusters": 148,
+    "linked_question_article_bundles_missing_source_audit_or_question_edits": 132,
+    "lea_prac_linked_question_article_bundles_missing_source_audit_or_question_edits": 0,
+    "remaining_non_eligible_prefixes": [
+      "lea-hist-001",
+      "lea-hist-002",
+      "lea-hist-004",
+      "lea-hist-007",
+      "lea-hist-008",
+      "lea-hist-011",
+      "lea-hist-012",
+      "lea-hist-013",
+      "lea-hist-014",
+      "lea-hist-015",
+      "lea-matl-005",
+      "lea-matl-009",
+      "lea-strc-001",
+      "lea-strc-002",
+      "lea-strc-003",
+      "lea-strc-004",
+      "lea-strc-005",
+      "lea-strc-006",
+      "lea-strc-007",
+      "lea-strc-008",
+      "lea-strc-009",
+      "lea-strc-010",
+      "lea-strc-011",
+      "lea-strc-012",
+      "lea-theo-001",
+      "lea-theo-002",
+      "lea-theo-005",
+      "lea-theo-006",
+      "lea-theo-007",
+      "lea-theo-008",
+      "lea-util-004",
+      "playwright-seeded-quiz"
+    ]
+  },
+  "artifact_paths": {
+    "freeze_readiness_report": ".ai/03_plans/source-audited-local-first-freeze-readiness-report.md",
+    "handoff": ".ai/03_plans/source-audited-local-first-batches-handoff.md",
+    "coordination": ".ai/03_plans/source-audited-production-line-coordination.md",
+    "report": ".ai/content-audit-export/source-audited-terminal-freeze-after-batch-117-report.md",
+    "ledger": ".ai/content-audit-export/source-audited-terminal-freeze-after-batch-117-ledger.json",
+    "scoped_checks": ".ai/content-audit-export/source-audited-terminal-freeze-after-batch-117-scoped-checks.json",
+    "independent_qa": ".ai/03_plans/terminal-freeze-after-batch-117-independent-quality-review.md"
+  },
+  "final_audit_carryover": [
+    "THIN_NEEDS_EXPANSION",
+    "scenario status and scenario-quality findings",
+    "question-alignment findings",
+    "source-primary and source-needed findings"
+  ],
+  "git_gate": {
+    "status": "blocked_live_index",
+    "attempted_command": "git add -- <terminal freeze intended files>",
+    "failure": "fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted",
+    "commit_created": false,
+    "push_performed": false
+  },
+  "forbidden_actions_observed": {
+    "supabase_push": false,
+    "deploy": false,
+    "production_db_mutation": false,
+    "merge_main": false,
+    "force_push": false,
+    "auth_or_secret_edit": false,
+    "unrelated_3d_ui_stairway_workbench_performance_stage": false
+  }
+}
