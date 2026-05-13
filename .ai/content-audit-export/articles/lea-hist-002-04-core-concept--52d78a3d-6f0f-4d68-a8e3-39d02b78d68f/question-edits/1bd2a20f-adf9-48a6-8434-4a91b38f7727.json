@@ -1,0 +1,113 @@
+{
+  "question_id": "1bd2a20f-adf9-48a6-8434-4a91b38f7727",
+  "baseline_hash": "sha256:d54fdf2533d5eb1425e84a26cb241711888888b6c10103461dd75e3dd21d003a",
+  "action": "replace",
+  "reason": "source-audited-article-batch-120-local-first source-maps lea-hist-002-04-core-concept and rewrites this linked question for source-safe wording, rationale, and article alignment.",
+  "approved_by": "codex-local-source-audit-batch-120",
+  "approved_at": "2026-05-13T23:34:16.492+08:00",
+  "source_audit_support": {
+    "parent_article_id": "52d78a3d-6f0f-4d68-a8e3-39d02b78d68f",
+    "parent_article_slug": "lea-hist-002-04-core-concept",
+    "answer_key_fields_changed": false,
+    "correct_option_id_changed": false,
+    "option_text_revised_without_correct_option_change": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UNESCO Florence/Vicenza captures plus HOA Module 2 P2 and Fletcher locators for Brunelleschi, Alberti, Bramante, Palladio, proportional theory, villas, and St. Peter sequence.",
+    "checked_markdown_lines": [
+      "UNESCO Florence/Vicenza captures plus HOA Module 2 P2 and Fletcher locators for Brunelleschi, Alberti, Bramante, Palladio, proportional theory, villas, and St. Peter sequence."
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-120/lea-hist-002-04-renaissance-architecture.source-capture.md",
+        "sha256": "sha256:8ebe57aa1a2ee799c6027c816f5e4321947f3ce68c220e1c32c8328c71955399",
+        "source_id": "batch120-renaissance-architecture-source-map-capture",
+        "locator": "UNESCO Florence/Vicenza captures plus HOA Module 2 P2 and Fletcher locators for Brunelleschi, Alberti, Bramante, Palladio, proportional theory, villas, and St. Peter sequence."
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-120/lea-hist-002-04-renaissance-architecture.refined.md",
+        "sha256": "sha256:886b57659fb4439da90efd58838ca9576ecb6c7598b77391c95ebad7be8ed134",
+        "source_id": "batch120-renaissance-architecture-source-map-refined",
+        "locator": "UNESCO Florence/Vicenza captures plus HOA Module 2 P2 and Fletcher locators for Brunelleschi, Alberti, Bramante, Palladio, proportional theory, villas, and St. Peter sequence."
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/HOA MODULE 2 P2.md",
+        "sha256": "sha256:5ffe301d62a262de67d757f88a9606fa592f9dbcd8c76d4cf6742bfe12d51502",
+        "source_id": "batch120-renaissance-architecture-local-1",
+        "locator": "UNESCO Florence/Vicenza captures plus HOA Module 2 P2 and Fletcher locators for Brunelleschi, Alberti, Bramante, Palladio, proportional theory, villas, and St. Peter sequence."
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/HOA MODULE 2 P2.pdf",
+        "sha256": "sha256:395fad31e6fe4ca1b9e9252f977fa817a18d2a78ba854478ac5ce1c512c3336c",
+        "source_id": "batch120-renaissance-architecture-local-2",
+        "locator": "UNESCO Florence/Vicenza captures plus HOA Module 2 P2 and Fletcher locators for Brunelleschi, Alberti, Bramante, Palladio, proportional theory, villas, and St. Peter sequence."
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).md",
+        "sha256": "sha256:0d38f59019ff829f62a241a88757583677d4636347bf765c757cd36a83f6894e",
+        "source_id": "batch120-renaissance-architecture-local-3",
+        "locator": "UNESCO Florence/Vicenza captures plus HOA Module 2 P2 and Fletcher locators for Brunelleschi, Alberti, Bramante, Palladio, proportional theory, villas, and St. Peter sequence."
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).pdf",
+        "sha256": "sha256:396ffad4fd94dc3b375d519215bb12d3d3932ecf80b63e0dda4bdff258676d40",
+        "source_id": "batch120-renaissance-architecture-local-4",
+        "locator": "UNESCO Florence/Vicenza captures plus HOA Module 2 P2 and Fletcher locators for Brunelleschi, Alberti, Bramante, Palladio, proportional theory, villas, and St. Peter sequence."
+      }
+    ],
+    "local_source_safe_action": "Batch 120 source-mapped the article and linked questions together using local source captures/conversions before composing the candidate.",
+    "batch_id": "source-audited-article-batch-120-local-first",
+    "new_source_map_phase": true
+  },
+  "proposed": {
+    "question_id": "1bd2a20f-adf9-48a6-8434-4a91b38f7727",
+    "article_id": "52d78a3d-6f0f-4d68-a8e3-39d02b78d68f",
+    "topic_id": "6af1905f-17a6-42e6-a852-dc96fca01956",
+    "text": "In what sequence did these Renaissance architects work on St. Peter's Basilica in Rome?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Palladio designed the initial plan, then Michelangelo redesigned the dome, focusing on enhancing the structural integrity and aesthetic grandeur"
+      },
+      {
+        "id": "b",
+        "text": "Michelangelo designed the initial plan in 1506, then Bramante completed the dome, incorporating innovative engineering techniques of the period"
+      },
+      {
+        "id": "c",
+        "text": "Bramante designed the initial Greek cross plan (begun 1506), then Michelangelo became chief architect (1547) and redesigned it with emphasis on the dome"
+      },
+      {
+        "id": "d",
+        "text": "Alberti designed the original church in the 15th century, and Bramante later added the dome, integrating classical elements with Renaissance ideals"
+      }
+    ],
+    "correct_option_id": "c",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "This option conflicts with the Batch 120 source map for Renaissance Architecture or overstates the supported claim.",
+      "b": "This option conflicts with the Batch 120 source map for Renaissance Architecture or overstates the supported claim.",
+      "d": "This option conflicts with the Batch 120 source map for Renaissance Architecture or overstates the supported claim.",
+      "correct": "Bramante designed the initial Greek cross plan (begun 1506), then Michelangelo became chief architect (1547) and redesigned it with emphasis on the dome matches the local source capture and refined source-map anchors for Renaissance Architecture.",
+      "takeaway": "Renaissance Architecture items should be answered from source-mapped architectural vocabulary, patron/period anchors, and cautious claim limits."
+    },
+    "explanation": "Bramante designed the initial Greek cross plan (begun 1506), then Michelangelo became chief architect (1547) and redesigned it with emphasis on the dome matches the local source capture and refined source-map anchors for Renaissance Architecture. Renaissance Architecture items should be answered from source-mapped architectural vocabulary, patron/period anchors, and cautious claim limits.",
+    "code_citation": null,
+    "bloom_level": "remember",
+    "application_context": "recall",
+    "practice_context": [
+      "CH"
+    ],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false,
+    "model_id": "ALE-HIST-002-04-007",
+    "prompt_image_url": null,
+    "created_at": "2026-03-23T19:27:24.95449+00:00",
+    "updated_at": "2026-04-08T07:44:46.846261+00:00",
+    "content_hash": "sha256:d54fdf2533d5eb1425e84a26cb241711888888b6c10103461dd75e3dd21d003a"
+  }
+}

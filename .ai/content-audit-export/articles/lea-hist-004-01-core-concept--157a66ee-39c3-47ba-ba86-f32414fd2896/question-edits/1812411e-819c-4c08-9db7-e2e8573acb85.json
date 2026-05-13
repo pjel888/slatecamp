@@ -1,0 +1,113 @@
+{
+  "question_id": "1812411e-819c-4c08-9db7-e2e8573acb85",
+  "baseline_hash": "sha256:a5961f10e5e993ec79826a80aae45ec1d6007e73adbfed240fa9d997e4f5703c",
+  "action": "replace",
+  "reason": "source-audited-article-batch-120-local-first source-maps lea-hist-004-01-core-concept and rewrites this linked question for source-safe wording, rationale, and article alignment.",
+  "approved_by": "codex-local-source-audit-batch-120",
+  "approved_at": "2026-05-13T23:34:16.492+08:00",
+  "source_audit_support": {
+    "parent_article_id": "157a66ee-39c3-47ba-ba86-f32414fd2896",
+    "parent_article_slug": "lea-hist-004-01-core-concept",
+    "answer_key_fields_changed": false,
+    "correct_option_id_changed": false,
+    "option_text_revised_without_correct_option_change": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UNESCO Damascus/Cordoba/Jerusalem captures plus HOA Module 3 and Fletcher locators for mosque vocabulary, mihrab, sahn, minaret, iwan, muqarnas, arabesque, calligraphy, and reused columns.",
+    "checked_markdown_lines": [
+      "UNESCO Damascus/Cordoba/Jerusalem captures plus HOA Module 3 and Fletcher locators for mosque vocabulary, mihrab, sahn, minaret, iwan, muqarnas, arabesque, calligraphy, and reused columns."
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-120/lea-hist-004-01-islamic-architecture.source-capture.md",
+        "sha256": "sha256:cc9df95c17545dc94a4a3cf0c1279ccb024782e76591f7d1464ce207b3810ec7",
+        "source_id": "batch120-islamic-architecture-source-map-capture",
+        "locator": "UNESCO Damascus/Cordoba/Jerusalem captures plus HOA Module 3 and Fletcher locators for mosque vocabulary, mihrab, sahn, minaret, iwan, muqarnas, arabesque, calligraphy, and reused columns."
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-120/lea-hist-004-01-islamic-architecture.refined.md",
+        "sha256": "sha256:7f3fb6eefb6c3ba76bb3414ca3053712b325af41a7b10d2427ff8e208612e561",
+        "source_id": "batch120-islamic-architecture-source-map-refined",
+        "locator": "UNESCO Damascus/Cordoba/Jerusalem captures plus HOA Module 3 and Fletcher locators for mosque vocabulary, mihrab, sahn, minaret, iwan, muqarnas, arabesque, calligraphy, and reused columns."
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/HOA MODULE 3.md",
+        "sha256": "sha256:eed418d53fe1e3637b4bd9e009c3f17074fb376c17de4d0af55019285dbd644c",
+        "source_id": "batch120-islamic-architecture-local-1",
+        "locator": "UNESCO Damascus/Cordoba/Jerusalem captures plus HOA Module 3 and Fletcher locators for mosque vocabulary, mihrab, sahn, minaret, iwan, muqarnas, arabesque, calligraphy, and reused columns."
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/HOA MODULE 3.pdf",
+        "sha256": "sha256:b0c8a5241122b84f41bbc62f9fedb867cbcdc9f4538342cde604dfc862b2cc26",
+        "source_id": "batch120-islamic-architecture-local-2",
+        "locator": "UNESCO Damascus/Cordoba/Jerusalem captures plus HOA Module 3 and Fletcher locators for mosque vocabulary, mihrab, sahn, minaret, iwan, muqarnas, arabesque, calligraphy, and reused columns."
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).md",
+        "sha256": "sha256:0d38f59019ff829f62a241a88757583677d4636347bf765c757cd36a83f6894e",
+        "source_id": "batch120-islamic-architecture-local-3",
+        "locator": "UNESCO Damascus/Cordoba/Jerusalem captures plus HOA Module 3 and Fletcher locators for mosque vocabulary, mihrab, sahn, minaret, iwan, muqarnas, arabesque, calligraphy, and reused columns."
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).pdf",
+        "sha256": "sha256:396ffad4fd94dc3b375d519215bb12d3d3932ecf80b63e0dda4bdff258676d40",
+        "source_id": "batch120-islamic-architecture-local-4",
+        "locator": "UNESCO Damascus/Cordoba/Jerusalem captures plus HOA Module 3 and Fletcher locators for mosque vocabulary, mihrab, sahn, minaret, iwan, muqarnas, arabesque, calligraphy, and reused columns."
+      }
+    ],
+    "local_source_safe_action": "Batch 120 source-mapped the article and linked questions together using local source captures/conversions before composing the candidate.",
+    "batch_id": "source-audited-article-batch-120-local-first",
+    "new_source_map_phase": true
+  },
+  "proposed": {
+    "question_id": "1812411e-819c-4c08-9db7-e2e8573acb85",
+    "article_id": "157a66ee-39c3-47ba-ba86-f32414fd2896",
+    "topic_id": "7706f350-25af-4f03-986e-50fa74ff49e0",
+    "text": "A structure serves as both a functional broadcast point for ritual calls and a symbolic marker dominating the urban skyline. It rises above surrounding buildings, typically in circular, square, or polygonal section. What is this architectural element?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mihrab"
+      },
+      {
+        "id": "b",
+        "text": "Courtyard"
+      },
+      {
+        "id": "c",
+        "text": "Minaret"
+      },
+      {
+        "id": "d",
+        "text": "Muqarnas"
+      }
+    ],
+    "correct_option_id": "c",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "This option conflicts with the Batch 120 source map for Islamic architecture or overstates the supported claim.",
+      "b": "This option conflicts with the Batch 120 source map for Islamic architecture or overstates the supported claim.",
+      "d": "This option conflicts with the Batch 120 source map for Islamic architecture or overstates the supported claim.",
+      "correct": "Minaret matches the local source capture and refined source-map anchors for Islamic architecture.",
+      "takeaway": "Islamic architecture items should be answered from source-mapped architectural vocabulary, patron/period anchors, and cautious claim limits."
+    },
+    "explanation": "Minaret matches the local source capture and refined source-map anchors for Islamic architecture. Islamic architecture items should be answered from source-mapped architectural vocabulary, patron/period anchors, and cautious claim limits.",
+    "code_citation": null,
+    "bloom_level": "apply",
+    "application_context": "recall",
+    "practice_context": [
+      "DESC"
+    ],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false,
+    "model_id": "ALE-HIST-004-01-009",
+    "prompt_image_url": null,
+    "created_at": "2026-03-23T19:27:24.126756+00:00",
+    "updated_at": "2026-04-08T07:44:46.846261+00:00",
+    "content_hash": "sha256:a5961f10e5e993ec79826a80aae45ec1d6007e73adbfed240fa9d997e4f5703c"
+  }
+}

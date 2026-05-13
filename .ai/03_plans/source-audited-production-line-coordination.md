@@ -1,3 +1,9 @@
+# Batch 120 Production-Line Coordination
+
+Generated: 2026-05-13T23:33:02.312+08:00
+
+Batch 120 is reserved for the next five sourceable residual bundles after Batch 119: lea-hist-002-04, lea-hist-002-05, lea-hist-002-06, lea-hist-004-01, and lea-hist-004-02. The intended acceptance path is compose/diff/validate, UI-block edit validation, scoped JSON/source/hash/count scans, targeted content-audit tests, scoped diff checks, then stage only Batch 120/source files.
+
 # Batch 119 New Source-Map Phase Coordination Update
 
 Updated: 2026-05-13T23:12:59.669+08:00

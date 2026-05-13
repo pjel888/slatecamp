@@ -1,0 +1,113 @@
+{
+  "question_id": "f43656c0-5910-4c2f-bea6-028537703701",
+  "baseline_hash": "sha256:137d3874f8f1145cf9c876f6e8030229176c0fc71b57b9ac9e467280c9aa158c",
+  "action": "replace",
+  "reason": "source-audited-article-batch-120-local-first source-maps lea-hist-002-05-core-concept and rewrites this linked question for source-safe wording, rationale, and article alignment.",
+  "approved_by": "codex-local-source-audit-batch-120",
+  "approved_at": "2026-05-13T23:34:16.492+08:00",
+  "source_audit_support": {
+    "parent_article_id": "9bcf8ae9-81a7-41eb-b636-74c93570864c",
+    "parent_article_slug": "lea-hist-002-05-core-concept",
+    "answer_key_fields_changed": false,
+    "correct_option_id_changed": false,
+    "option_text_revised_without_correct_option_change": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UNESCO Versailles and Vatican News Bernini Baldacchino captures plus HOA Module 2 P2 and Fletcher locators for Baroque movement, Bernini, Borromini, Jesuit spatial focus, Versailles, and Rococo transition.",
+    "checked_markdown_lines": [
+      "UNESCO Versailles and Vatican News Bernini Baldacchino captures plus HOA Module 2 P2 and Fletcher locators for Baroque movement, Bernini, Borromini, Jesuit spatial focus, Versailles, and Rococo transition."
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-120/lea-hist-002-05-baroque-architecture.source-capture.md",
+        "sha256": "sha256:f31432eecaa5757ed59e5f36eb07add43d141f87e78c1d3df71aa60b2416f254",
+        "source_id": "batch120-baroque-architecture-source-map-capture",
+        "locator": "UNESCO Versailles and Vatican News Bernini Baldacchino captures plus HOA Module 2 P2 and Fletcher locators for Baroque movement, Bernini, Borromini, Jesuit spatial focus, Versailles, and Rococo transition."
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-120/lea-hist-002-05-baroque-architecture.refined.md",
+        "sha256": "sha256:f3834708ad7088f32fbd37698344876c848558506fba776a98d399357edcadb7",
+        "source_id": "batch120-baroque-architecture-source-map-refined",
+        "locator": "UNESCO Versailles and Vatican News Bernini Baldacchino captures plus HOA Module 2 P2 and Fletcher locators for Baroque movement, Bernini, Borromini, Jesuit spatial focus, Versailles, and Rococo transition."
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/HOA MODULE 2 P2.md",
+        "sha256": "sha256:5ffe301d62a262de67d757f88a9606fa592f9dbcd8c76d4cf6742bfe12d51502",
+        "source_id": "batch120-baroque-architecture-local-1",
+        "locator": "UNESCO Versailles and Vatican News Bernini Baldacchino captures plus HOA Module 2 P2 and Fletcher locators for Baroque movement, Bernini, Borromini, Jesuit spatial focus, Versailles, and Rococo transition."
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/HOA MODULE 2 P2.pdf",
+        "sha256": "sha256:395fad31e6fe4ca1b9e9252f977fa817a18d2a78ba854478ac5ce1c512c3336c",
+        "source_id": "batch120-baroque-architecture-local-2",
+        "locator": "UNESCO Versailles and Vatican News Bernini Baldacchino captures plus HOA Module 2 P2 and Fletcher locators for Baroque movement, Bernini, Borromini, Jesuit spatial focus, Versailles, and Rococo transition."
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).md",
+        "sha256": "sha256:0d38f59019ff829f62a241a88757583677d4636347bf765c757cd36a83f6894e",
+        "source_id": "batch120-baroque-architecture-local-3",
+        "locator": "UNESCO Versailles and Vatican News Bernini Baldacchino captures plus HOA Module 2 P2 and Fletcher locators for Baroque movement, Bernini, Borromini, Jesuit spatial focus, Versailles, and Rococo transition."
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).pdf",
+        "sha256": "sha256:396ffad4fd94dc3b375d519215bb12d3d3932ecf80b63e0dda4bdff258676d40",
+        "source_id": "batch120-baroque-architecture-local-4",
+        "locator": "UNESCO Versailles and Vatican News Bernini Baldacchino captures plus HOA Module 2 P2 and Fletcher locators for Baroque movement, Bernini, Borromini, Jesuit spatial focus, Versailles, and Rococo transition."
+      }
+    ],
+    "local_source_safe_action": "Batch 120 source-mapped the article and linked questions together using local source captures/conversions before composing the candidate.",
+    "batch_id": "source-audited-article-batch-120-local-first",
+    "new_source_map_phase": true
+  },
+  "proposed": {
+    "question_id": "f43656c0-5910-4c2f-bea6-028537703701",
+    "article_id": "9bcf8ae9-81a7-41eb-b636-74c93570864c",
+    "topic_id": "102b0aa5-55a8-4039-bed4-7b3b1dbcb76b",
+    "text": "A building features white-and-gold stuccoed walls, illusionistic ceiling frescoes, and Rococo lightness in a church setting. Which of the following best exemplifies this description?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sant'Andrea al Quirinale, with sculptural drama and oval form, but lacks the Rococo lightness"
+      },
+      {
+        "id": "b",
+        "text": "San Carlo alle Quattro Fontane, with geometric complexity and coffered dome, which is more Baroque than Rococo"
+      },
+      {
+        "id": "c",
+        "text": "Wieskirche (Bavaria, 1745–1754), a rare full church expression with white-and-gold stucco and illusionistic ceiling frescoes"
+      },
+      {
+        "id": "d",
+        "text": "Versailles Palace, with Hall of Mirrors and gilded interiors, which is not a church setting"
+      }
+    ],
+    "correct_option_id": "c",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "This option conflicts with the Batch 120 source map for Baroque Architecture or overstates the supported claim.",
+      "b": "This option conflicts with the Batch 120 source map for Baroque Architecture or overstates the supported claim.",
+      "d": "This option conflicts with the Batch 120 source map for Baroque Architecture or overstates the supported claim.",
+      "correct": "Wieskirche (Bavaria, 1745–1754), a rare full church expression with white-and-gold stucco and illusionistic ceiling frescoes matches the local source capture and refined source-map anchors for Baroque Architecture.",
+      "takeaway": "Baroque Architecture items should be answered from source-mapped architectural vocabulary, patron/period anchors, and cautious claim limits."
+    },
+    "explanation": "Wieskirche (Bavaria, 1745–1754), a rare full church expression with white-and-gold stucco and illusionistic ceiling frescoes matches the local source capture and refined source-map anchors for Baroque Architecture. Baroque Architecture items should be answered from source-mapped architectural vocabulary, patron/period anchors, and cautious claim limits.",
+    "code_citation": null,
+    "bloom_level": "apply",
+    "application_context": "recall",
+    "practice_context": [
+      "DESC"
+    ],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false,
+    "model_id": "ALE-HIST-002-05-010",
+    "prompt_image_url": null,
+    "created_at": "2026-03-23T19:27:24.95449+00:00",
+    "updated_at": "2026-05-06T15:06:27.092106+00:00",
+    "content_hash": "sha256:137d3874f8f1145cf9c876f6e8030229176c0fc71b57b9ac9e467280c9aa158c"
+  }
+}

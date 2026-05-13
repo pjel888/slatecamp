@@ -1,0 +1,113 @@
+{
+  "question_id": "fbdc10a4-352e-42e2-97e8-1fdfb0ecd7dd",
+  "baseline_hash": "sha256:156c51cafb9185d96ca72370ac8565bd90d770ef0b0a3f51a3f146c14a8735e5",
+  "action": "replace",
+  "reason": "source-audited-article-batch-120-local-first source-maps lea-hist-004-02-core-concept and rewrites this linked question for source-safe wording, rationale, and article alignment.",
+  "approved_by": "codex-local-source-audit-batch-120",
+  "approved_at": "2026-05-13T23:34:16.492+08:00",
+  "source_audit_support": {
+    "parent_article_id": "c0a5189b-4c67-47ad-bfd0-4b4d33df7247",
+    "parent_article_slug": "lea-hist-004-02-core-concept",
+    "answer_key_fields_changed": false,
+    "correct_option_id_changed": false,
+    "option_text_revised_without_correct_option_change": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "UNESCO Damascus/Samarra/Jerusalem captures plus HOA Module 3 and Fletcher locators for Dome of the Rock, Great Mosque of Damascus, Umayyad reuse/adaptation, Abbasid Baghdad/Samarra, brick, stucco, palaces, and spiral minaret.",
+    "checked_markdown_lines": [
+      "UNESCO Damascus/Samarra/Jerusalem captures plus HOA Module 3 and Fletcher locators for Dome of the Rock, Great Mosque of Damascus, Umayyad reuse/adaptation, Abbasid Baghdad/Samarra, brick, stucco, palaces, and spiral minaret."
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-120/lea-hist-004-02-umayyad-and-abbasid-architecture.source-capture.md",
+        "sha256": "sha256:e8c47ff9aa070c30ec14d228535ef0cdb8c1811eee8cb864976d6ee6a6a448ca",
+        "source_id": "batch120-umayyad-and-abbasid-architecture-source-map-capture",
+        "locator": "UNESCO Damascus/Samarra/Jerusalem captures plus HOA Module 3 and Fletcher locators for Dome of the Rock, Great Mosque of Damascus, Umayyad reuse/adaptation, Abbasid Baghdad/Samarra, brick, stucco, palaces, and spiral minaret."
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-120/lea-hist-004-02-umayyad-and-abbasid-architecture.refined.md",
+        "sha256": "sha256:e3aedb080f98a1b0d574511eda0b752a49668dba0734e50f2260bde03b72f488",
+        "source_id": "batch120-umayyad-and-abbasid-architecture-source-map-refined",
+        "locator": "UNESCO Damascus/Samarra/Jerusalem captures plus HOA Module 3 and Fletcher locators for Dome of the Rock, Great Mosque of Damascus, Umayyad reuse/adaptation, Abbasid Baghdad/Samarra, brick, stucco, palaces, and spiral minaret."
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/HOA MODULE 3.md",
+        "sha256": "sha256:eed418d53fe1e3637b4bd9e009c3f17074fb376c17de4d0af55019285dbd644c",
+        "source_id": "batch120-umayyad-and-abbasid-architecture-local-1",
+        "locator": "UNESCO Damascus/Samarra/Jerusalem captures plus HOA Module 3 and Fletcher locators for Dome of the Rock, Great Mosque of Damascus, Umayyad reuse/adaptation, Abbasid Baghdad/Samarra, brick, stucco, palaces, and spiral minaret."
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/HOA MODULE 3.pdf",
+        "sha256": "sha256:b0c8a5241122b84f41bbc62f9fedb867cbcdc9f4538342cde604dfc862b2cc26",
+        "source_id": "batch120-umayyad-and-abbasid-architecture-local-2",
+        "locator": "UNESCO Damascus/Samarra/Jerusalem captures plus HOA Module 3 and Fletcher locators for Dome of the Rock, Great Mosque of Damascus, Umayyad reuse/adaptation, Abbasid Baghdad/Samarra, brick, stucco, palaces, and spiral minaret."
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).md",
+        "sha256": "sha256:0d38f59019ff829f62a241a88757583677d4636347bf765c757cd36a83f6894e",
+        "source_id": "batch120-umayyad-and-abbasid-architecture-local-3",
+        "locator": "UNESCO Damascus/Samarra/Jerusalem captures plus HOA Module 3 and Fletcher locators for Dome of the Rock, Great Mosque of Damascus, Umayyad reuse/adaptation, Abbasid Baghdad/Samarra, brick, stucco, palaces, and spiral minaret."
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).pdf",
+        "sha256": "sha256:396ffad4fd94dc3b375d519215bb12d3d3932ecf80b63e0dda4bdff258676d40",
+        "source_id": "batch120-umayyad-and-abbasid-architecture-local-4",
+        "locator": "UNESCO Damascus/Samarra/Jerusalem captures plus HOA Module 3 and Fletcher locators for Dome of the Rock, Great Mosque of Damascus, Umayyad reuse/adaptation, Abbasid Baghdad/Samarra, brick, stucco, palaces, and spiral minaret."
+      }
+    ],
+    "local_source_safe_action": "Batch 120 source-mapped the article and linked questions together using local source captures/conversions before composing the candidate.",
+    "batch_id": "source-audited-article-batch-120-local-first",
+    "new_source_map_phase": true
+  },
+  "proposed": {
+    "question_id": "fbdc10a4-352e-42e2-97e8-1fdfb0ecd7dd",
+    "article_id": "c0a5189b-4c67-47ad-bfd0-4b4d33df7247",
+    "topic_id": "dff22787-f45a-4f3a-87a3-57ed4a13ea0f",
+    "text": "What does the Umayyad desert palace (qasr) reveal about Umayyad dynastic priorities compared to Abbasid palace design?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Umayyad qasrs emphasize monumental public display; Abbasid palaces emphasize private, hidden administrative complexity, reflecting differing political and cultural priorities."
+      },
+      {
+        "id": "b",
+        "text": "Umayyad qasrs were primarily defensive fortifications; Abbasid palaces were purely decorative with no security function, highlighting a shift in architectural focus."
+      },
+      {
+        "id": "c",
+        "text": "Umayyad qasrs combine Roman military logistics with Islamic spatial hierarchy in fortified, private retreats; Abbasid palaces focus on expansive, intricate, inward-focused bureaucratic complexity"
+      },
+      {
+        "id": "d",
+        "text": "Umayyad qasrs use stone exclusively; Abbasid palaces use only brick, indicating a change in material preference and construction techniques."
+      }
+    ],
+    "correct_option_id": "c",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "This option conflicts with the Batch 120 source map for Umayyad and Abbasid Architecture or overstates the supported claim.",
+      "b": "This option conflicts with the Batch 120 source map for Umayyad and Abbasid Architecture or overstates the supported claim.",
+      "d": "This option conflicts with the Batch 120 source map for Umayyad and Abbasid Architecture or overstates the supported claim.",
+      "correct": "Umayyad qasrs combine Roman military logistics with Islamic spatial hierarchy in fortified, private retreats; Abbasid palaces focus on expansive, intricate, inward-focused bureaucratic complexity matches the local source capture and refined source-map anchors for Umayyad and Abbasid Architecture.",
+      "takeaway": "Umayyad and Abbasid Architecture items should be answered from source-mapped architectural vocabulary, patron/period anchors, and cautious claim limits."
+    },
+    "explanation": "Umayyad qasrs combine Roman military logistics with Islamic spatial hierarchy in fortified, private retreats; Abbasid palaces focus on expansive, intricate, inward-focused bureaucratic complexity matches the local source capture and refined source-map anchors for Umayyad and Abbasid Architecture. Umayyad and Abbasid Architecture items should be answered from source-mapped architectural vocabulary, patron/period anchors, and cautious claim limits.",
+    "code_citation": null,
+    "bloom_level": "analyze",
+    "application_context": "code_interpretation",
+    "practice_context": [
+      "CON"
+    ],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false,
+    "model_id": "ALE-HIST-004-02-009",
+    "prompt_image_url": null,
+    "created_at": "2026-03-23T19:27:24.126756+00:00",
+    "updated_at": "2026-05-06T13:14:22.931535+00:00",
+    "content_hash": "sha256:156c51cafb9185d96ca72370ac8565bd90d770ef0b0a3f51a3f146c14a8735e5"
+  }
+}

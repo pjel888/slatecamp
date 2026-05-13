@@ -1,0 +1,113 @@
+{
+  "question_id": "e0c0cef7-deb3-40cd-b590-dcff42faabca",
+  "baseline_hash": "sha256:ac73a14082909891147784f972088cd52ecb0225de8d52366c2817c49f6a9372",
+  "action": "replace",
+  "reason": "source-audited-article-batch-120-local-first source-maps lea-hist-002-06-core-concept and rewrites this linked question for source-safe wording, rationale, and article alignment.",
+  "approved_by": "codex-local-source-audit-batch-120",
+  "approved_at": "2026-05-13T23:34:16.492+08:00",
+  "source_audit_support": {
+    "parent_article_id": "c93bfab9-3571-4e80-8d9b-d9d50a9eff02",
+    "parent_article_slug": "lea-hist-002-06-core-concept",
+    "answer_key_fields_changed": false,
+    "correct_option_id_changed": false,
+    "option_text_revised_without_correct_option_change": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "AOC U.S. Capitol, Monticello, Berlin Brandenburg Gate, Paris Pantheon, HOA Module 2 P3, and Fletcher locators for Enlightenment classicism, Greek Revival, civic symbolism, Monticello, and measured antiquity.",
+    "checked_markdown_lines": [
+      "AOC U.S. Capitol, Monticello, Berlin Brandenburg Gate, Paris Pantheon, HOA Module 2 P3, and Fletcher locators for Enlightenment classicism, Greek Revival, civic symbolism, Monticello, and measured antiquity."
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-120/lea-hist-002-06-neoclassicism.source-capture.md",
+        "sha256": "sha256:491c8cac9fe133b1a2e0ab7a8149b795a138ce69387d7dff79a69d9a87bd6be1",
+        "source_id": "batch120-neoclassicism-source-map-capture",
+        "locator": "AOC U.S. Capitol, Monticello, Berlin Brandenburg Gate, Paris Pantheon, HOA Module 2 P3, and Fletcher locators for Enlightenment classicism, Greek Revival, civic symbolism, Monticello, and measured antiquity."
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-120/lea-hist-002-06-neoclassicism.refined.md",
+        "sha256": "sha256:7dac83b2daf116dfef200c98d02c148db887ef71ba85945c6ade5c964f124c29",
+        "source_id": "batch120-neoclassicism-source-map-refined",
+        "locator": "AOC U.S. Capitol, Monticello, Berlin Brandenburg Gate, Paris Pantheon, HOA Module 2 P3, and Fletcher locators for Enlightenment classicism, Greek Revival, civic symbolism, Monticello, and measured antiquity."
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/HOA MODULE 2 P3.md",
+        "sha256": "sha256:d53cf6de56725d4b046a9f6b72665039b32d0bd932abc4d158ec0b2ba4b290e8",
+        "source_id": "batch120-neoclassicism-local-1",
+        "locator": "AOC U.S. Capitol, Monticello, Berlin Brandenburg Gate, Paris Pantheon, HOA Module 2 P3, and Fletcher locators for Enlightenment classicism, Greek Revival, civic symbolism, Monticello, and measured antiquity."
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/HOA MODULE 2 P3.pdf",
+        "sha256": "sha256:b62daa7737b464ab7dc573d64f0f8701998462f8ac0fe933d96e8ecfe8040ba2",
+        "source_id": "batch120-neoclassicism-local-2",
+        "locator": "AOC U.S. Capitol, Monticello, Berlin Brandenburg Gate, Paris Pantheon, HOA Module 2 P3, and Fletcher locators for Enlightenment classicism, Greek Revival, civic symbolism, Monticello, and measured antiquity."
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).md",
+        "sha256": "sha256:0d38f59019ff829f62a241a88757583677d4636347bf765c757cd36a83f6894e",
+        "source_id": "batch120-neoclassicism-local-3",
+        "locator": "AOC U.S. Capitol, Monticello, Berlin Brandenburg Gate, Paris Pantheon, HOA Module 2 P3, and Fletcher locators for Enlightenment classicism, Greek Revival, civic symbolism, Monticello, and measured antiquity."
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/002-History/A History of Architecture on the Comparative Method, 5th ed. 1905 (Banister Fletcher).pdf",
+        "sha256": "sha256:396ffad4fd94dc3b375d519215bb12d3d3932ecf80b63e0dda4bdff258676d40",
+        "source_id": "batch120-neoclassicism-local-4",
+        "locator": "AOC U.S. Capitol, Monticello, Berlin Brandenburg Gate, Paris Pantheon, HOA Module 2 P3, and Fletcher locators for Enlightenment classicism, Greek Revival, civic symbolism, Monticello, and measured antiquity."
+      }
+    ],
+    "local_source_safe_action": "Batch 120 source-mapped the article and linked questions together using local source captures/conversions before composing the candidate.",
+    "batch_id": "source-audited-article-batch-120-local-first",
+    "new_source_map_phase": true
+  },
+  "proposed": {
+    "question_id": "e0c0cef7-deb3-40cd-b590-dcff42faabca",
+    "article_id": "c93bfab9-3571-4e80-8d9b-d9d50a9eff02",
+    "topic_id": "b1089853-8005-466f-9ef2-509e599d2c1f",
+    "text": "Which discovery-and-publication pair helped catalyze the shift from Baroque/Rococo to Neoclassicism in the mid-18th century?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Brunelleschi's treatise on domes and Palladio's *Four Books on Architecture*, which were influential but not directly related to Neoclassicism"
+      },
+      {
+        "id": "b",
+        "text": "Archaeological excavations at Pompeii and Herculaneum (beginning 1748) and Stuart & Revett's *Antiquities of Athens* (Volume I, 1762)"
+      },
+      {
+        "id": "c",
+        "text": "Baroque architectural handbooks and Rococo interior design manuals, which were more about style than a shift to Neoclassicism"
+      },
+      {
+        "id": "d",
+        "text": "Medieval building guides and Renaissance treatises on perspective, which predate the Neoclassical movement"
+      }
+    ],
+    "correct_option_id": "b",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "a": "This option conflicts with the Batch 120 source map for Neoclassicism or overstates the supported claim.",
+      "c": "This option conflicts with the Batch 120 source map for Neoclassicism or overstates the supported claim.",
+      "d": "This option conflicts with the Batch 120 source map for Neoclassicism or overstates the supported claim.",
+      "correct": "Archaeological excavations at Pompeii and Herculaneum (beginning 1748) and Stuart & Revett's *Antiquities of Athens* (Volume I, 1762) matches the local source capture and refined source-map anchors for Neoclassicism.",
+      "takeaway": "Neoclassicism items should be answered from source-mapped architectural vocabulary, patron/period anchors, and cautious claim limits."
+    },
+    "explanation": "Archaeological excavations at Pompeii and Herculaneum (beginning 1748) and Stuart & Revett's *Antiquities of Athens* (Volume I, 1762) matches the local source capture and refined source-map anchors for Neoclassicism. Neoclassicism items should be answered from source-mapped architectural vocabulary, patron/period anchors, and cautious claim limits.",
+    "code_citation": null,
+    "bloom_level": "remember",
+    "application_context": "recall",
+    "practice_context": [
+      "CH"
+    ],
+    "difficulty": 0.5,
+    "difficulty_rating": null,
+    "discrimination_rating": null,
+    "is_assessment": false,
+    "model_id": "ALE-HIST-002-06-001",
+    "prompt_image_url": null,
+    "created_at": "2026-03-23T19:27:24.95449+00:00",
+    "updated_at": "2026-05-06T13:22:20.755936+00:00",
+    "content_hash": "sha256:ac73a14082909891147784f972088cd52ecb0225de8d52366c2817c49f6a9372"
+  }
+}
