@@ -1,8 +1,16 @@
+# Batch 121 Local-First Handoff
+
+Generated: 2026-05-13T23:57:31+08:00
+
+Batch 121 selected five sourceable residual History article/question clusters after Batch 120: Al-Andalus, Ottoman, Mughal, Philippine Islamic, and Indian architecture survey. Local captures live under vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-121; refined conversions live under vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-121. Validation passed locally; live git index staging is blocked in this Codex surface and acceptance status is tracked in .ai/03_plans/production-line-batch-121-manifest.json and .ai/content-audit-export/source-audited-article-batch-121-local-first-scoped-checks.json.
+
+---
+
 # Batch 120 Local-First Handoff
 
 Generated: 2026-05-13T23:33:02.312+08:00
 
-Batch 120 selected five sourceable residual History article/question clusters after Batch 119: Renaissance, Baroque, Neoclassicism, Islamic architecture, and Umayyad/Abbasid architecture. Local captures live under vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-120; refined conversions live under vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-120. Validation passed locally; acceptance status is tracked in .ai/03_plans/production-line-batch-120-manifest.json and .ai/content-audit-export/source-audited-article-batch-120-local-first-scoped-checks.json.
+Batch 120 selected five sourceable residual History article/question clusters after Batch 119: Renaissance, Baroque, Neoclassicism, Islamic architecture, and Umayyad/Abbasid architecture. Local captures live under vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-120; refined conversions live under vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-120. Validation passed locally; live git index staging is blocked in this Codex surface and acceptance status is tracked in .ai/03_plans/production-line-batch-120-manifest.json and .ai/content-audit-export/source-audited-article-batch-120-local-first-scoped-checks.json.
 
 # Batch 119 New Source-Map Phase Handoff Update
 

@@ -1,8 +1,18 @@
+# Batch 121 Freeze Readiness
+
+Generated: 2026-05-13T23:57:31+08:00
+
+Status: pass_local_first_git_index_blocked_handoff. Scope is local-only content/source artifacts for five residual non-prac linked-question bundles. No Supabase push, deploy, production DB mutation, or main merge is authorized or performed in this batch lane.
+
+Batch 121 consumes lea-hist-004-05, lea-hist-004-06, lea-hist-004-07, lea-hist-004-08, and lea-hist-007-01. Live git index staging is blocked in this Codex surface. Hermes should perform the real stage/commit/push, then future residual source-map passes can continue from the next sourceable non-test linked-question clusters.
+
+---
+
 # Batch 120 Freeze Readiness
 
 Generated: 2026-05-13T23:33:02.312+08:00
 
-Status: pass_local_first_pending_git_acceptance. Scope is local-only content/source artifacts for five residual non-prac linked-question bundles. No Supabase push, deploy, production DB mutation, or main merge is authorized or performed in this batch lane.
+Status: pass_local_first_git_index_blocked_handoff. Scope is local-only content/source artifacts for five residual non-prac linked-question bundles. No Supabase push, deploy, production DB mutation, or main merge is authorized or performed in this batch lane.
 
 # Batch 119 Source-Map Phase Position
 

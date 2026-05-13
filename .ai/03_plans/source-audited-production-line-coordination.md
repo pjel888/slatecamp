@@ -1,3 +1,11 @@
+# Batch 121 Production-Line Coordination
+
+Generated: 2026-05-13T23:57:31+08:00
+
+Batch 121 is reserved for the next five sourceable residual bundles after Batch 120: lea-hist-004-05, lea-hist-004-06, lea-hist-004-07, lea-hist-004-08, and lea-hist-007-01. The intended acceptance path is compose/diff/validate, UI-block edit validation, scoped JSON/source/hash/count scans, targeted content-audit tests, scoped diff checks, then stage only Batch 121/source files. Live git add is blocked in this Codex surface by .git/index.lock permissions; Hermes should perform the real stage/commit/push.
+
+---
+
 # Batch 120 Production-Line Coordination
 
 Generated: 2026-05-13T23:33:02.312+08:00
