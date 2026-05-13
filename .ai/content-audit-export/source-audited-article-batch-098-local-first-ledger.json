@@ -1,0 +1,139 @@
+{
+  "artifact_type": "source_audited_article_batch_ledger",
+  "batch_number": "098",
+  "batch_id": "source-audited-article-batch-098-local-first",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "generated_at": "2026-05-13T08:52:04+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "manifest_path": ".ai/03_plans/production-line-batch-098-manifest.json",
+  "blockers": 0,
+  "exact_improved_article_folder_paths": [
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration--1277bf71-f3cc-4d29-86a8-8cadca0133f9",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-016-post-construction-services-building-administration-and-operations-support--355981c3-3480-4441-991d-8d8e94cd20b5",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission--50450ba8-a843-4399-9bd9-9b6c854ee65a",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice---75ef7a25-2d9d-455d-8d89-e6eb0b691240",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role--9796e088-8c83-4a6c-9599-51afd69d0e81"
+  ],
+  "exact_question_edits_paths": [
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration--1277bf71-f3cc-4d29-86a8-8cadca0133f9/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-016-post-construction-services-building-administration-and-operations-support--355981c3-3480-4441-991d-8d8e94cd20b5/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission--50450ba8-a843-4399-9bd9-9b6c854ee65a/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice---75ef7a25-2d9d-455d-8d89-e6eb0b691240/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role--9796e088-8c83-4a6c-9599-51afd69d0e81/question-edits"
+  ],
+  "totals": {
+    "articles": 5,
+    "linked_questions": 50,
+    "question_edits": 50,
+    "source_safe_question_edits": 50,
+    "scenario_enrichment": {
+      "eligible_added": 5,
+      "eligible_deferred": 0,
+      "not_applicable": 0
+    },
+    "source_hash_checks": 22,
+    "source_hash_failures": 0,
+    "scoped_json_parse_files": 114,
+    "scoped_json_parse_failures": 0,
+    "marker_scan_files": 60,
+    "marker_scan_matches": 0,
+    "stale_compose_error_matches": 0
+  },
+  "articles": [
+    {
+      "article_id": "1277bf71-f3cc-4d29-86a8-8cadca0133f9",
+      "slug": "lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration",
+      "title": "Full Time Supervision vs Construction Management vs SPP 202",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration--1277bf71-f3cc-4d29-86a8-8cadca0133f9",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration--1277bf71-f3cc-4d29-86a8-8cadca0133f9/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration--1277bf71-f3cc-4d29-86a8-8cadca0133f9/candidate.md",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration--1277bf71-f3cc-4d29-86a8-8cadca0133f9/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_safe_question_edits": 10,
+      "real_world_scenario_status": "eligible-added",
+      "source_audit_status": "PASS",
+      "checked_source_count": 5,
+      "current_serial_accepted_overlap": [],
+      "historical_local_first_or_reaudit_overlap": [
+        "Batch 022 local-first source-audited repair artifact"
+      ]
+    },
+    {
+      "article_id": "355981c3-3480-4441-991d-8d8e94cd20b5",
+      "slug": "lea-prac-svc-016-post-construction-services-building-administration-and-operations-support",
+      "title": "Post-Construction Services, Building Administration, and Operations Support",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-016-post-construction-services-building-administration-and-operations-support--355981c3-3480-4441-991d-8d8e94cd20b5",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-svc-016-post-construction-services-building-administration-and-operations-support--355981c3-3480-4441-991d-8d8e94cd20b5/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-svc-016-post-construction-services-building-administration-and-operations-support--355981c3-3480-4441-991d-8d8e94cd20b5/candidate.md",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-prac-svc-016-post-construction-services-building-administration-and-operations-support--355981c3-3480-4441-991d-8d8e94cd20b5/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_safe_question_edits": 10,
+      "real_world_scenario_status": "eligible-added",
+      "source_audit_status": "PASS",
+      "checked_source_count": 2,
+      "current_serial_accepted_overlap": [],
+      "historical_local_first_or_reaudit_overlap": [
+        "Batch 034 local-first source-audited repair artifact"
+      ]
+    },
+    {
+      "article_id": "50450ba8-a843-4399-9bd9-9b6c854ee65a",
+      "slug": "lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission",
+      "title": "Comprehensive Architectural Services the Full Spectrum Commission",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission--50450ba8-a843-4399-9bd9-9b6c854ee65a",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission--50450ba8-a843-4399-9bd9-9b6c854ee65a/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission--50450ba8-a843-4399-9bd9-9b6c854ee65a/candidate.md",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission--50450ba8-a843-4399-9bd9-9b6c854ee65a/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_safe_question_edits": 10,
+      "real_world_scenario_status": "eligible-added",
+      "source_audit_status": "PASS",
+      "checked_source_count": 2,
+      "current_serial_accepted_overlap": [],
+      "historical_local_first_or_reaudit_overlap": [
+        "Batch 024 local-first source-audited repair artifact"
+      ]
+    },
+    {
+      "article_id": "75ef7a25-2d9d-455d-8d89-e6eb0b691240",
+      "slug": "lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice-services",
+      "title": "Building Condition Assessment, Adaptive Reuse, and Heritage Conservation",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice---75ef7a25-2d9d-455d-8d89-e6eb0b691240",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice---75ef7a25-2d9d-455d-8d89-e6eb0b691240/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice---75ef7a25-2d9d-455d-8d89-e6eb0b691240/candidate.md",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice---75ef7a25-2d9d-455d-8d89-e6eb0b691240/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_safe_question_edits": 10,
+      "real_world_scenario_status": "eligible-added",
+      "source_audit_status": "PASS",
+      "checked_source_count": 2,
+      "current_serial_accepted_overlap": [],
+      "historical_local_first_or_reaudit_overlap": [
+        "Batch 031 local-first source-audited repair artifact"
+      ]
+    },
+    {
+      "article_id": "9796e088-8c83-4a6c-9599-51afd69d0e81",
+      "slug": "lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role",
+      "title": "Design Build Services Overview Rationale and Architect's Role",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role--9796e088-8c83-4a6c-9599-51afd69d0e81",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role--9796e088-8c83-4a6c-9599-51afd69d0e81/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role--9796e088-8c83-4a6c-9599-51afd69d0e81/candidate.md",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role--9796e088-8c83-4a6c-9599-51afd69d0e81/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_safe_question_edits": 10,
+      "real_world_scenario_status": "eligible-added",
+      "source_audit_status": "PASS",
+      "checked_source_count": 2,
+      "current_serial_accepted_overlap": [],
+      "historical_local_first_or_reaudit_overlap": [
+        "Batch 024 local-first source-audited repair artifact"
+      ]
+    }
+  ]
+}

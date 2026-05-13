@@ -1,0 +1,323 @@
+{
+  "artifact_type": "source_audited_article_batch_scoped_checks",
+  "batch_number": "098",
+  "batch_id": "source-audited-article-batch-098-local-first",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "generated_at": "2026-05-13T08:52:04+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "manifest_path": ".ai/03_plans/production-line-batch-098-manifest.json",
+  "blockers": 0,
+  "warnings": [
+    "validate-bundles emitted only expected component-usage.json warnings for the five scoped articles."
+  ],
+  "totals": {
+    "articles": 5,
+    "linked_questions": 50,
+    "question_edits": 50,
+    "source_safe_question_edits": 50,
+    "scenario_enrichment": {
+      "eligible_added": 5,
+      "eligible_deferred": 0,
+      "not_applicable": 0
+    },
+    "source_hash_checks": 22,
+    "source_hash_failures": 0,
+    "scoped_json_parse_files": 114,
+    "scoped_json_parse_failures": 0,
+    "marker_scan_files": 60,
+    "marker_scan_matches": 0,
+    "stale_compose_error_matches": 0
+  },
+  "gates": {
+    "compose": {
+      "status": "PASS",
+      "articles": 5,
+      "blockers": 0
+    },
+    "diff": {
+      "status": "PASS",
+      "articles": 5,
+      "locally_safe": 5,
+      "blockers": 0
+    },
+    "validate_strict": {
+      "status": "PASS",
+      "articles": 5,
+      "blockers": 0,
+      "warnings": "Expected component-usage.json warnings only."
+    },
+    "ui_block_edit_validation": {
+      "status": "PASS",
+      "articles": 5,
+      "blockers": 0,
+      "warnings": 0
+    },
+    "scoped_json_parse": {
+      "status": "PASS",
+      "files_checked": 114,
+      "failures": []
+    },
+    "marker_scan": {
+      "status": "PASS",
+      "files_checked": 60,
+      "matches": []
+    },
+    "source_hash_checks": {
+      "status": "PASS",
+      "checks": 22,
+      "failures": [],
+      "checks_detail": [
+        {
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "expected": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "actual": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "pass": true
+        },
+        {
+          "kind": "conversion",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "expected": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+          "actual": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+          "pass": true
+        },
+        {
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+          "expected": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+          "actual": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+          "pass": true
+        },
+        {
+          "kind": "conversion",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+          "expected": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+          "actual": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+          "pass": true
+        },
+        {
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204A.pdf",
+          "expected": "sha256:ec08811ae8611f077fda9f0d1106cc7fab6a1e6210fe6d617637adaa6de083b8",
+          "actual": "sha256:ec08811ae8611f077fda9f0d1106cc7fab6a1e6210fe6d617637adaa6de083b8",
+          "pass": true
+        },
+        {
+          "kind": "conversion",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md",
+          "expected": "sha256:9044ca5193245c730509d0022e13d597b62ad9ea969e5e870bd2954faeb89500",
+          "actual": "sha256:9044ca5193245c730509d0022e13d597b62ad9ea969e5e870bd2954faeb89500",
+          "pass": true
+        },
+        {
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204B.pdf",
+          "expected": "sha256:b6bfffcf6e3ca7a4317121b28d5fab9237c2a4642b450573232516ef9dfb697e",
+          "actual": "sha256:b6bfffcf6e3ca7a4317121b28d5fab9237c2a4642b450573232516ef9dfb697e",
+          "pass": true
+        },
+        {
+          "kind": "conversion",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204B.md",
+          "expected": "sha256:b49b5fcffe1e1ad48cb618b70d6a369400a0c7460dd3fa7ea471ee5900dc53e8",
+          "actual": "sha256:b49b5fcffe1e1ad48cb618b70d6a369400a0c7460dd3fa7ea471ee5900dc53e8",
+          "pass": true
+        },
+        {
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+          "expected": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+          "actual": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+          "pass": true
+        },
+        {
+          "kind": "conversion",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+          "expected": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+          "actual": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+          "pass": true
+        },
+        {
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 205.pdf",
+          "expected": "sha256:8511f90780e4d26f966c941142bde99395337280f12ce1035c68d3e7ebb41b33",
+          "actual": "sha256:8511f90780e4d26f966c941142bde99395337280f12ce1035c68d3e7ebb41b33",
+          "pass": true
+        },
+        {
+          "kind": "conversion",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 205.md",
+          "expected": "sha256:8a0b4833ce68e5daeb2ec4403d32ff95f7cfc192218a526e44618c41cf6e563a",
+          "actual": "sha256:8a0b4833ce68e5daeb2ec4403d32ff95f7cfc192218a526e44618c41cf6e563a",
+          "pass": true
+        },
+        {
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+          "expected": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+          "actual": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+          "pass": true
+        },
+        {
+          "kind": "conversion",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+          "expected": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+          "actual": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+          "pass": true
+        },
+        {
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 206.pdf",
+          "expected": "sha256:d140c57e69f990af217f914a1dac51b6d6aae02a1b42aadd4a3f26b6cebf72b7",
+          "actual": "sha256:d140c57e69f990af217f914a1dac51b6d6aae02a1b42aadd4a3f26b6cebf72b7",
+          "pass": true
+        },
+        {
+          "kind": "conversion",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 206.md",
+          "expected": "sha256:1ed62c21499c67d14265fb41468a137d00983893797b04a3bd18b6fde4f3b283",
+          "actual": "sha256:1ed62c21499c67d14265fb41468a137d00983893797b04a3bd18b6fde4f3b283",
+          "pass": true
+        },
+        {
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-10066/ra 10066.pdf",
+          "expected": "sha256:98aefeeecfc07c329eac6e9ff9b784bf94e22c319dc2987d51ded09343b2bd95",
+          "actual": "sha256:98aefeeecfc07c329eac6e9ff9b784bf94e22c319dc2987d51ded09343b2bd95",
+          "pass": true
+        },
+        {
+          "kind": "conversion",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-10066/ra 10066.md",
+          "expected": "sha256:9dd244f4545b120ea56288340cb426236781e873a7ad9139779f0971e08b220c",
+          "actual": "sha256:9dd244f4545b120ea56288340cb426236781e873a7ad9139779f0971e08b220c",
+          "pass": true
+        },
+        {
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+          "expected": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+          "actual": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+          "pass": true
+        },
+        {
+          "kind": "conversion",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+          "expected": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+          "actual": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+          "pass": true
+        },
+        {
+          "kind": "raw_pdf",
+          "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 207.pdf",
+          "expected": "sha256:7050b0c7bd152694587f39ead8b682ed71b882ba50fce5c4a614206f32b5b610",
+          "actual": "sha256:7050b0c7bd152694587f39ead8b682ed71b882ba50fce5c4a614206f32b5b610",
+          "pass": true
+        },
+        {
+          "kind": "conversion",
+          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md",
+          "expected": "sha256:16375f49124440ba1bc938379786e14016249c3d42d0b7498a543ddb4f702e0a",
+          "actual": "sha256:16375f49124440ba1bc938379786e14016249c3d42d0b7498a543ddb4f702e0a",
+          "pass": true
+        }
+      ]
+    },
+    "linked_question_question_edit_counts": {
+      "status": "PASS",
+      "total_linked_questions": 50,
+      "total_question_edits": 50,
+      "articles": [
+        {
+          "article_id": "1277bf71-f3cc-4d29-86a8-8cadca0133f9",
+          "slug": "lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration",
+          "linked_questions": 10,
+          "question_edits": 10,
+          "missing_question_edits": [],
+          "extra_question_edits": [],
+          "scenario_status": "eligible-added",
+          "compose_blockers": [],
+          "diff_locally_safe": true,
+          "diff_blockers": [],
+          "ui_block_validation_pass": true,
+          "compose_error_present": false
+        },
+        {
+          "article_id": "355981c3-3480-4441-991d-8d8e94cd20b5",
+          "slug": "lea-prac-svc-016-post-construction-services-building-administration-and-operations-support",
+          "linked_questions": 10,
+          "question_edits": 10,
+          "missing_question_edits": [],
+          "extra_question_edits": [],
+          "scenario_status": "eligible-added",
+          "compose_blockers": [],
+          "diff_locally_safe": true,
+          "diff_blockers": [],
+          "ui_block_validation_pass": true,
+          "compose_error_present": false
+        },
+        {
+          "article_id": "50450ba8-a843-4399-9bd9-9b6c854ee65a",
+          "slug": "lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission",
+          "linked_questions": 10,
+          "question_edits": 10,
+          "missing_question_edits": [],
+          "extra_question_edits": [],
+          "scenario_status": "eligible-added",
+          "compose_blockers": [],
+          "diff_locally_safe": true,
+          "diff_blockers": [],
+          "ui_block_validation_pass": true,
+          "compose_error_present": false
+        },
+        {
+          "article_id": "75ef7a25-2d9d-455d-8d89-e6eb0b691240",
+          "slug": "lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice-services",
+          "linked_questions": 10,
+          "question_edits": 10,
+          "missing_question_edits": [],
+          "extra_question_edits": [],
+          "scenario_status": "eligible-added",
+          "compose_blockers": [],
+          "diff_locally_safe": true,
+          "diff_blockers": [],
+          "ui_block_validation_pass": true,
+          "compose_error_present": false
+        },
+        {
+          "article_id": "9796e088-8c83-4a6c-9599-51afd69d0e81",
+          "slug": "lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role",
+          "linked_questions": 10,
+          "question_edits": 10,
+          "missing_question_edits": [],
+          "extra_question_edits": [],
+          "scenario_status": "eligible-added",
+          "compose_blockers": [],
+          "diff_locally_safe": true,
+          "diff_blockers": [],
+          "ui_block_validation_pass": true,
+          "compose_error_present": false
+        }
+      ]
+    },
+    "stale_compose_error_scan": {
+      "status": "PASS",
+      "matches": []
+    },
+    "targeted_content_audit_tests": {
+      "status": "PASS",
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "tests": 34,
+      "failures": 0,
+      "expects": 328
+    },
+    "scoped_git_diff_check": {
+      "status": "PASS",
+      "command": "git diff --check -- <Batch 098 scoped paths>"
+    },
+    "independent_quality_review": {
+      "status": "PASS",
+      "path": ".ai/03_plans/batch-098-independent-quality-review.md"
+    }
+  }
+}

@@ -1,11 +1,11 @@
 {
-  "batch_id": "source-audited-article-batch-022-local-first",
-  "audit_date": "2026-05-11",
-  "audited_at": "2026-05-11T11:45:00.000+08:00",
+  "batch_id": "source-audited-article-batch-098-local-first",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T08:33:24+08:00",
   "article_id": "1277bf71-f3cc-4d29-86a8-8cadca0133f9",
   "slug": "lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration",
-  "title": "Full-Time Supervision vs Construction Management vs SPP 202 Administration",
-  "status": "local_pass_ready_for_final_publishing_review",
+  "title": "Full Time Supervision vs Construction Management vs SPP 202 Administration",
+  "status": "PASS",
   "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration--1277bf71-f3cc-4d29-86a8-8cadca0133f9",
   "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration--1277bf71-f3cc-4d29-86a8-8cadca0133f9",
   "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration--1277bf71-f3cc-4d29-86a8-8cadca0133f9/question-edits",
@@ -13,380 +13,263 @@
   "linked_questions": 10,
   "question_edits_created": 10,
   "source_safe_rewrite_question_edits": 10,
+  "real_world_scenario_status": "eligible-added",
+  "classification": {
+    "content_domain": "professional_practice",
+    "requires_raw_pdf_audit": true,
+    "legal_or_code_source": true
+  },
+  "target": {
+    "article_id": "1277bf71-f3cc-4d29-86a8-8cadca0133f9",
+    "slug": "lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration",
+    "normalized_sha256": "sha256:8dca418c8e2df36d1aa5b301544180c9022539d108fb62d1dedefd30f3b86667",
+    "candidate_sha256": "sha256:8dca418c8e2df36d1aa5b301544180c9022539d108fb62d1dedefd30f3b86667"
+  },
   "overall": {
     "source_audit_status": "PASS",
     "safe_for_supabase_upload": true,
     "local_first_only": true,
     "supabase_push_attempted": false,
     "deploy_attempted": false,
+    "production_db_mutation_attempted": false,
     "commit_attempted": false
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
   },
   "source_audit": {
     "checked_sources": [
       {
-        "source_id": "uap-standards-selection-compensation-supervision-cm-local",
-        "label": "UAP Standards of Professional Practice - selection, compensation, supervision, and construction management services",
+        "source_id": "uap-standards-selection-compensation-supervision-cm-batch-098",
+        "label": "UAP Document Standards of Professional Practice - selection, compensation, supervision, and construction management services",
         "authority": "United Architects of the Philippines / Professional practice standards source",
-        "source_type": "professional_practice_pdf",
-        "source_locator": "UAP Standards refined markdown lines 79-100, 217-265, 416-458, 915-964, 1129-1168, and 1174-1216",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
         "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "conversion_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
         "checked_markdown_lines": [
-          "UAP Standards lines 79-100",
-          "UAP Standards lines 217-265",
-          "UAP Standards lines 416-458",
-          "UAP Standards lines 915-964",
-          "UAP Standards lines 1129-1168",
-          "UAP Standards lines 1174-1216"
+          "UAP Document Standards refined markdown lines 79-100",
+          "UAP Document Standards refined markdown lines 217-265",
+          "UAP Document Standards refined markdown lines 416-458",
+          "UAP Document Standards refined markdown lines 915-964",
+          "UAP Document Standards refined markdown lines 1129-1168",
+          "UAP Document Standards refined markdown lines 1174-1216"
         ],
-        "use": "primary local source for selection, compensation, full-time supervision, SPP 202, and CM distinctions",
+        "source_type": "local_raw_pdf_with_local_conversion",
         "local_source_checked": true
       },
       {
-        "source_id": "spp-202-regular-design-services-local",
-        "label": "SPP 202 - Regular Design Services phases",
+        "source_id": "spp-202-regular-design-services-batch-098",
+        "label": "SPP Document 202 - Regular Design Services phases",
         "authority": "United Architects of the Philippines / Standards of Professional Practice",
-        "source_type": "professional_practice_pdf",
-        "source_locator": "SPP 202 refined markdown lines 175-183, corroborated by UAP Standards lines 1129-1168",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
         "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
-        "refined_markdown_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+        "conversion_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
         "checked_markdown_lines": [
-          "SPP 202 lines 175-183",
-          "UAP Standards lines 1129-1168"
+          "SPP 202 refined markdown lines 175-183"
         ],
-        "use": "local source for regular design services phase list",
+        "source_type": "local_raw_pdf_with_local_conversion",
         "local_source_checked": true
       },
       {
-        "source_id": "spp-204a-full-time-supervision-local",
-        "label": "SPP 204-A - Full-Time Supervision Services",
+        "source_id": "spp-204a-fulltime-supervision-batch-098",
+        "label": "SPP Document 204-A - Fulltime Supervision Services",
         "authority": "United Architects of the Philippines / Standards of Professional Practice",
-        "source_type": "professional_practice_pdf",
-        "source_locator": "SPP 204-A refined markdown lines 201-207, corroborated by UAP Standards lines 915-964 and 1129-1168",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204A.pdf",
         "raw_pdf_sha256": "sha256:ec08811ae8611f077fda9f0d1106cc7fab6a1e6210fe6d617637adaa6de083b8",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md",
-        "refined_markdown_sha256": "sha256:9044ca5193245c730509d0022e13d597b62ad9ea969e5e870bd2954faeb89500",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md",
+        "conversion_sha256": "sha256:9044ca5193245c730509d0022e13d597b62ad9ea969e5e870bd2954faeb89500",
         "checked_markdown_lines": [
-          "SPP 204-A lines 201-207",
-          "UAP Standards lines 915-964",
-          "UAP Standards lines 1129-1168"
+          "SPP 204-A refined markdown lines 201-207"
         ],
-        "use": "local source for full-time supervision scope",
+        "source_type": "local_raw_pdf_with_local_conversion",
         "local_source_checked": true
       },
       {
-        "source_id": "spp-204b-construction-management-local",
-        "label": "SPP 204-B - Construction Management Services",
+        "source_id": "spp-204b-construction-management-batch-098",
+        "label": "SPP Document 204-B - Construction Management Services",
         "authority": "United Architects of the Philippines / Standards of Professional Practice",
-        "source_type": "professional_practice_pdf",
-        "source_locator": "SPP 204-B refined markdown line 7, corroborated by UAP Standards lines 1174-1216",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204B.pdf",
         "raw_pdf_sha256": "sha256:b6bfffcf6e3ca7a4317121b28d5fab9237c2a4642b450573232516ef9dfb697e",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204B.md",
-        "refined_markdown_sha256": "sha256:b49b5fcffe1e1ad48cb618b70d6a369400a0c7460dd3fa7ea471ee5900dc53e8",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204B.md",
+        "conversion_sha256": "sha256:b49b5fcffe1e1ad48cb618b70d6a369400a0c7460dd3fa7ea471ee5900dc53e8",
         "checked_markdown_lines": [
-          "SPP 204-B line 7",
-          "UAP Standards lines 1174-1216"
+          "SPP 204-B refined markdown line 7"
         ],
-        "use": "local source for construction management service classification",
+        "source_type": "local_raw_pdf_with_local_conversion",
         "local_source_checked": true
       },
       {
-        "source_id": "uap-document-301-general-conditions-local",
-        "label": "UAP Document 301 - General Conditions, architect authority, claims, payments, and project representatives",
+        "source_id": "uap-document-301-general-conditions-batch-098",
+        "label": "UAP Document 301 - General Conditions",
         "authority": "United Architects of the Philippines / PRC Board approved general conditions source",
-        "source_type": "professional_practice_contract_pdf",
-        "source_locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
         "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "refined_markdown_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+        "conversion_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
         "checked_markdown_lines": [
-          "UAP Document 301 lines 41-71",
-          "UAP Document 301 lines 482-520",
-          "UAP Document 301 lines 1019-1051",
-          "UAP Document 301 lines 1062-1080"
+          "UAP Document 301 refined markdown lines 41-71",
+          "UAP Document 301 refined markdown lines 482-520",
+          "UAP Document 301 refined markdown lines 1019-1051",
+          "UAP Document 301 refined markdown lines 1062-1080"
         ],
-        "use": "primary local source for construction contract administration authority and documentation claims",
+        "source_type": "local_raw_pdf_with_local_conversion",
         "local_source_checked": true
       }
     ],
-    "source_locator": "UAP Standards refined markdown lines 79-100, 217-265, 416-458, 915-964, 1129-1168, and 1174-1216; SPP 202 refined markdown lines 175-183, corroborated by UAP Standards lines 1129-1168; SPP 204-A refined markdown lines 201-207, corroborated by UAP Standards lines 915-964 and 1129-1168; SPP 204-B refined markdown line 7, corroborated by UAP Standards lines 1174-1216; UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080",
+    "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md: UAP Document Standards refined markdown lines 79-100, UAP Document Standards refined markdown lines 217-265, UAP Document Standards refined markdown lines 416-458, UAP Document Standards refined markdown lines 915-964, UAP Document Standards refined markdown lines 1129-1168, UAP Document Standards refined markdown lines 1174-1216; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md: SPP 202 refined markdown lines 175-183; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md: SPP 204-A refined markdown lines 201-207; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204B.md: SPP 204-B refined markdown line 7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md: UAP Document 301 refined markdown lines 41-71, UAP Document 301 refined markdown lines 482-520, UAP Document 301 refined markdown lines 1019-1051, UAP Document 301 refined markdown lines 1062-1080",
     "checked_markdown_lines": [
-      "UAP Standards lines 79-100",
-      "UAP Standards lines 217-265",
-      "UAP Standards lines 416-458",
-      "UAP Standards lines 915-964",
-      "UAP Standards lines 1129-1168",
-      "UAP Standards lines 1174-1216",
-      "SPP 202 lines 175-183",
-      "UAP Standards lines 1129-1168",
-      "SPP 204-A lines 201-207",
-      "UAP Standards lines 915-964",
-      "UAP Standards lines 1129-1168",
-      "SPP 204-B line 7",
-      "UAP Standards lines 1174-1216",
-      "UAP Document 301 lines 41-71",
-      "UAP Document 301 lines 482-520",
-      "UAP Document 301 lines 1019-1051",
-      "UAP Document 301 lines 1062-1080"
-    ]
+      "UAP Document Standards refined markdown lines 79-100",
+      "UAP Document Standards refined markdown lines 217-265",
+      "UAP Document Standards refined markdown lines 416-458",
+      "UAP Document Standards refined markdown lines 915-964",
+      "UAP Document Standards refined markdown lines 1129-1168",
+      "UAP Document Standards refined markdown lines 1174-1216",
+      "SPP 202 refined markdown lines 175-183",
+      "SPP 204-A refined markdown lines 201-207",
+      "SPP 204-B refined markdown line 7",
+      "UAP Document 301 refined markdown lines 41-71",
+      "UAP Document 301 refined markdown lines 482-520",
+      "UAP Document 301 refined markdown lines 1019-1051",
+      "UAP Document 301 refined markdown lines 1062-1080"
+    ],
+    "internet_evidence_used": false
+  },
+  "article_repair": {
+    "normalized_md_rewritten": true,
+    "candidate_md_composed": false,
+    "diff_report_generated": false,
+    "real_world_scenario_added": true,
+    "placeholders_removed": true,
+    "internal_notes_removed": true,
+    "source_gap_notes_removed": true,
+    "unsupported_claims_rewritten_or_removed": true
   },
   "claims": [
     {
-      "claim_id": "batch-022-lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration-question-001",
-      "claim_text": "Question 723d1495-84c4-4921-ade4-21b0a1e4c699 / model BATCH-022-lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration-001 rewritten to source-safe local form.",
-      "question_id": "723d1495-84c4-4921-ade4-21b0a1e4c699",
-      "model_id": "BATCH-022-lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration-001",
+      "claim_id": "batch-098-lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration-article-001",
+      "claim_text": "SPP 202 construction-phase design administration is not automatically full-time site supervision.",
       "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-selection-compensation-supervision-cm-local",
-        "spp-202-regular-design-services-local",
-        "spp-204a-full-time-supervision-local",
-        "spp-204b-construction-management-local",
-        "uap-document-301-general-conditions-local"
-      ],
       "audit_result": "PASS",
+      "source_ids": [
+        "uap-standards-selection-compensation-supervision-cm-batch-098",
+        "spp-202-regular-design-services-batch-098",
+        "spp-204a-fulltime-supervision-batch-098",
+        "spp-204b-construction-management-batch-098",
+        "uap-document-301-general-conditions-batch-098"
+      ],
       "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards refined markdown lines 79-100, 217-265, 416-458, 915-964, 1129-1168, and 1174-1216",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204A.pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204B.pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf"
+        ],
+        "conversion_paths": [
+          "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204B.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md"
+        ],
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md: UAP Document Standards refined markdown lines 79-100, UAP Document Standards refined markdown lines 217-265, UAP Document Standards refined markdown lines 416-458, UAP Document Standards refined markdown lines 915-964, UAP Document Standards refined markdown lines 1129-1168, UAP Document Standards refined markdown lines 1174-1216; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md: SPP 202 refined markdown lines 175-183; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md: SPP 204-A refined markdown lines 201-207; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204B.md: SPP 204-B refined markdown line 7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md: UAP Document 301 refined markdown lines 41-71, UAP Document 301 refined markdown lines 482-520, UAP Document 301 refined markdown lines 1019-1051, UAP Document 301 refined markdown lines 1062-1080",
+        "note": "Local raw PDFs are the authority files; local conversion line ranges provide anchors."
       }
     },
     {
-      "claim_id": "batch-022-lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration-question-002",
-      "claim_text": "Question 220f133d-4770-47d8-a8a2-031efec6f71e / model BATCH-022-lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration-002 rewritten to source-safe local form.",
-      "question_id": "220f133d-4770-47d8-a8a2-031efec6f71e",
-      "model_id": "BATCH-022-lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration-002",
+      "claim_id": "batch-098-lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration-article-002",
+      "claim_text": "SPP 204-A full-time supervision and SPP 204-B construction management are separate construction-stage services.",
       "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-selection-compensation-supervision-cm-local",
-        "spp-202-regular-design-services-local",
-        "spp-204a-full-time-supervision-local",
-        "spp-204b-construction-management-local",
-        "uap-document-301-general-conditions-local"
-      ],
       "audit_result": "PASS",
+      "source_ids": [
+        "uap-standards-selection-compensation-supervision-cm-batch-098",
+        "spp-202-regular-design-services-batch-098",
+        "spp-204a-fulltime-supervision-batch-098",
+        "spp-204b-construction-management-batch-098",
+        "uap-document-301-general-conditions-batch-098"
+      ],
       "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards refined markdown lines 79-100, 217-265, 416-458, 915-964, 1129-1168, and 1174-1216",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204A.pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204B.pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf"
+        ],
+        "conversion_paths": [
+          "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204B.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md"
+        ],
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md: UAP Document Standards refined markdown lines 79-100, UAP Document Standards refined markdown lines 217-265, UAP Document Standards refined markdown lines 416-458, UAP Document Standards refined markdown lines 915-964, UAP Document Standards refined markdown lines 1129-1168, UAP Document Standards refined markdown lines 1174-1216; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md: SPP 202 refined markdown lines 175-183; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md: SPP 204-A refined markdown lines 201-207; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204B.md: SPP 204-B refined markdown line 7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md: UAP Document 301 refined markdown lines 41-71, UAP Document 301 refined markdown lines 482-520, UAP Document 301 refined markdown lines 1019-1051, UAP Document 301 refined markdown lines 1062-1080",
+        "note": "Local raw PDFs are the authority files; local conversion line ranges provide anchors."
       }
     },
     {
-      "claim_id": "batch-022-lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration-question-003",
-      "claim_text": "Question dae8dc6e-ac8a-4631-923a-e40d55c2f370 / model BATCH-022-lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration-003 rewritten to source-safe local form.",
-      "question_id": "dae8dc6e-ac8a-4631-923a-e40d55c2f370",
-      "model_id": "BATCH-022-lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration-003",
+      "claim_id": "batch-098-lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration-article-003",
+      "claim_text": "UAP Document 301 keeps project representatives as assistants and preserves contractor responsibility.",
       "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-selection-compensation-supervision-cm-local",
-        "spp-202-regular-design-services-local",
-        "spp-204a-full-time-supervision-local",
-        "spp-204b-construction-management-local",
-        "uap-document-301-general-conditions-local"
-      ],
       "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards refined markdown lines 79-100, 217-265, 416-458, 915-964, 1129-1168, and 1174-1216",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-022-lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration-question-004",
-      "claim_text": "Question 29dd6dc5-26ba-4695-b8d9-faf8e24168da / model BATCH-022-lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration-004 rewritten to source-safe local form.",
-      "question_id": "29dd6dc5-26ba-4695-b8d9-faf8e24168da",
-      "model_id": "BATCH-022-lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration-004",
-      "support_status": "PASS",
       "source_ids": [
-        "uap-standards-selection-compensation-supervision-cm-local",
-        "spp-202-regular-design-services-local",
-        "spp-204a-full-time-supervision-local",
-        "spp-204b-construction-management-local",
-        "uap-document-301-general-conditions-local"
+        "uap-standards-selection-compensation-supervision-cm-batch-098",
+        "spp-202-regular-design-services-batch-098",
+        "spp-204a-fulltime-supervision-batch-098",
+        "spp-204b-construction-management-batch-098",
+        "uap-document-301-general-conditions-batch-098"
       ],
-      "audit_result": "PASS",
       "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards refined markdown lines 79-100, 217-265, 416-458, 915-964, 1129-1168, and 1174-1216",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-022-lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration-question-005",
-      "claim_text": "Question 36b5b91f-0408-48ce-8992-10cc2cfcb3c3 / model BATCH-022-lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration-005 rewritten to source-safe local form.",
-      "question_id": "36b5b91f-0408-48ce-8992-10cc2cfcb3c3",
-      "model_id": "BATCH-022-lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration-005",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-selection-compensation-supervision-cm-local",
-        "spp-202-regular-design-services-local",
-        "spp-204a-full-time-supervision-local",
-        "spp-204b-construction-management-local",
-        "uap-document-301-general-conditions-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards refined markdown lines 79-100, 217-265, 416-458, 915-964, 1129-1168, and 1174-1216",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-022-lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration-question-006",
-      "claim_text": "Question 5dc46cca-f183-4b3f-9d35-a04110ba91f2 / model BATCH-022-lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration-006 rewritten to source-safe local form.",
-      "question_id": "5dc46cca-f183-4b3f-9d35-a04110ba91f2",
-      "model_id": "BATCH-022-lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration-006",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-selection-compensation-supervision-cm-local",
-        "spp-202-regular-design-services-local",
-        "spp-204a-full-time-supervision-local",
-        "spp-204b-construction-management-local",
-        "uap-document-301-general-conditions-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards refined markdown lines 79-100, 217-265, 416-458, 915-964, 1129-1168, and 1174-1216",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-022-lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration-question-007",
-      "claim_text": "Question a539d8c1-b237-4106-9a8d-551646a42cfa / model BATCH-022-lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration-007 rewritten to source-safe local form.",
-      "question_id": "a539d8c1-b237-4106-9a8d-551646a42cfa",
-      "model_id": "BATCH-022-lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration-007",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-selection-compensation-supervision-cm-local",
-        "spp-202-regular-design-services-local",
-        "spp-204a-full-time-supervision-local",
-        "spp-204b-construction-management-local",
-        "uap-document-301-general-conditions-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards refined markdown lines 79-100, 217-265, 416-458, 915-964, 1129-1168, and 1174-1216",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-022-lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration-question-008",
-      "claim_text": "Question 29a8d547-9d4b-4a7d-a084-127d93e528c6 / model BATCH-022-lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration-008 rewritten to source-safe local form.",
-      "question_id": "29a8d547-9d4b-4a7d-a084-127d93e528c6",
-      "model_id": "BATCH-022-lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration-008",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-selection-compensation-supervision-cm-local",
-        "spp-202-regular-design-services-local",
-        "spp-204a-full-time-supervision-local",
-        "spp-204b-construction-management-local",
-        "uap-document-301-general-conditions-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards refined markdown lines 79-100, 217-265, 416-458, 915-964, 1129-1168, and 1174-1216",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-022-lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration-question-009",
-      "claim_text": "Question 49ee9405-b9df-452e-9385-695bf1c55ce9 / model BATCH-022-lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration-009 rewritten to source-safe local form.",
-      "question_id": "49ee9405-b9df-452e-9385-695bf1c55ce9",
-      "model_id": "BATCH-022-lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration-009",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-selection-compensation-supervision-cm-local",
-        "spp-202-regular-design-services-local",
-        "spp-204a-full-time-supervision-local",
-        "spp-204b-construction-management-local",
-        "uap-document-301-general-conditions-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards refined markdown lines 79-100, 217-265, 416-458, 915-964, 1129-1168, and 1174-1216",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-022-lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration-question-010",
-      "claim_text": "Question db9c9838-e211-4913-a100-15a9af7d2538 / model BATCH-022-lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration-010 rewritten to source-safe local form.",
-      "question_id": "db9c9838-e211-4913-a100-15a9af7d2538",
-      "model_id": "BATCH-022-lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration-010",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-selection-compensation-supervision-cm-local",
-        "spp-202-regular-design-services-local",
-        "spp-204a-full-time-supervision-local",
-        "spp-204b-construction-management-local",
-        "uap-document-301-general-conditions-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards refined markdown lines 79-100, 217-265, 416-458, 915-964, 1129-1168, and 1174-1216",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+        "raw_pdf_paths": [
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204A.pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204B.pdf",
+          "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf"
+        ],
+        "conversion_paths": [
+          "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204B.md",
+          "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md"
+        ],
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md: UAP Document Standards refined markdown lines 79-100, UAP Document Standards refined markdown lines 217-265, UAP Document Standards refined markdown lines 416-458, UAP Document Standards refined markdown lines 915-964, UAP Document Standards refined markdown lines 1129-1168, UAP Document Standards refined markdown lines 1174-1216; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md: SPP 202 refined markdown lines 175-183; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md: SPP 204-A refined markdown lines 201-207; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204B.md: SPP 204-B refined markdown line 7; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md: UAP Document 301 refined markdown lines 41-71, UAP Document 301 refined markdown lines 482-520, UAP Document 301 refined markdown lines 1019-1051, UAP Document 301 refined markdown lines 1062-1080",
+        "note": "Local raw PDFs are the authority files; local conversion line ranges provide anchors."
       }
     }
   ],
-  "local_repairs": {
-    "normalized_rewritten": true,
-    "candidate_recomposed": true,
-    "placeholders_removed": true,
-    "source_records_created": 5,
-    "question_edits_created": 10,
-    "source_safe_rewrite_question_edits": 10,
-    "non_source_claims_removed_or_rewritten": true
+  "scenario_enrichment": {
+    "status": "eligible-added",
+    "summary": "Added source-safe scenario separating SPP 202 construction-phase design administration, SPP 204-A full-time supervision, SPP 204-B construction management, and contractor responsibility under UAP Document 301.",
+    "scenario_excerpt": "A building owner asks the architect to add daily site presence to a regular design-service proposal. A source-safe answer first names the base SPP 202 construction phase, then checks whether the owner is actually asking for full-time supervision under SPP 204-A or broader construction management under SPP 204-B. If the owner stations project representatives, resident architects, resident engineers, or construction inspectors on site, UAP Document 301 keeps them as assistants to the architect and engineers; it does not transfer the contractor's duty to perform the work according to the drawings, specifications, and other Contract Documents."
   },
-  "validation": {
-    "compose_blockers": [],
-    "diff_safe_to_push": true,
-    "diff_blockers": [],
-    "validate_valid": true,
-    "validate_blockers": [],
-    "validate_warnings": [
-      "lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration--1277bf71-f3cc-4d29-86a8-8cadca0133f9: component-usage.json has not been generated for this article yet."
+  "question_edit_files": [
+    "220f133d-4770-47d8-a8a2-031efec6f71e.json",
+    "29a8d547-9d4b-4a7d-a084-127d93e528c6.json",
+    "29dd6dc5-26ba-4695-b8d9-faf8e24168da.json",
+    "36b5b91f-0408-48ce-8992-10cc2cfcb3c3.json",
+    "49ee9405-b9df-452e-9385-695bf1c55ce9.json",
+    "5dc46cca-f183-4b3f-9d35-a04110ba91f2.json",
+    "723d1495-84c4-4921-ade4-21b0a1e4c699.json",
+    "a539d8c1-b237-4106-9a8d-551646a42cfa.json",
+    "dae8dc6e-ac8a-4631-923a-e40d55c2f370.json",
+    "db9c9838-e211-4913-a100-15a9af7d2538.json"
+  ],
+  "historical_overlap": {
+    "current_serial_source_audited_batches": [],
+    "historical_local_first_or_reaudit_artifacts": [
+      "Batch 022 local-first source-audited repair artifact"
     ],
-    "scoped_validate_report": ".ai/content-audit-export/articles/lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration--1277bf71-f3cc-4d29-86a8-8cadca0133f9/batch-022-validate-report.json"
+    "historical_published_article_question_artifacts": [
+      "legacy published/article/question artifacts may exist before this local-first repair line; not current serial accepted-batch overlap"
+    ]
   },
-  "blockers": [],
-  "unverified_or_rejected_claims": [],
-  "raw_pdf_gate": {
-    "status": "PASS",
-    "blockers": []
-  },
-  "sme_review": {
-    "required": false,
-    "status": "not_required_for_local_first_batch"
-  }
+  "blockers": []
 }

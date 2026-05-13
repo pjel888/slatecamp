@@ -1,0 +1,448 @@
+{
+  "batch_number": "098",
+  "batch_id": "source-audited-article-batch-098-local-first",
+  "manifest_status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "reserved_at": "2026-05-13T08:33:24+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "branch": "3dlab-gray-viewport-bg",
+  "baseline_commit": "688cceb08f44d506b100446a2bb1c946be184c79",
+  "previous_batch": "097",
+  "selection_rule": "Continue the source-audited local-first production line after accepted Batch 097 with exactly five high-value LEA professional-services clusters, linked questions, and exact readable local raw PDFs under vitruvius-connection/001_Raw-Source-Layer. Process serially because validation and handoff outputs are shared mutable surfaces.",
+  "inherited_blocker_status": "Batch 097 accepted at commit 688cceb08 with blockers=0; Batch 098 starts local-first only with no Supabase push, deploy, production DB mutation, or main merge.",
+  "prior_batch_exclusion_check": {
+    "status": "PASS_CURRENT_SERIAL_SET_WITH_HISTORICAL_OVERLAP_RECORDED",
+    "current_serial_source_audited_batches_checked": [
+      "087",
+      "088",
+      "089",
+      "090",
+      "091",
+      "092",
+      "093",
+      "094",
+      "095",
+      "096",
+      "097"
+    ],
+    "selected_article_count": 5,
+    "selected_ids_found_in_current_serial_accepted_selected_articles": [],
+    "historical_overlap_recorded_separately": true,
+    "historical_local_first_or_reaudit_artifacts": {
+      "1277bf71-f3cc-4d29-86a8-8cadca0133f9": [
+        "Batch 022 local-first source-audited repair artifact"
+      ],
+      "355981c3-3480-4441-991d-8d8e94cd20b5": [
+        "Batch 034 local-first source-audited repair artifact"
+      ],
+      "50450ba8-a843-4399-9bd9-9b6c854ee65a": [
+        "Batch 024 local-first source-audited repair artifact"
+      ],
+      "75ef7a25-2d9d-455d-8d89-e6eb0b691240": [
+        "Batch 031 local-first source-audited repair artifact"
+      ],
+      "9796e088-8c83-4a6c-9599-51afd69d0e81": [
+        "Batch 024 local-first source-audited repair artifact"
+      ]
+    }
+  },
+  "selected_article_uuids_slugs": [
+    {
+      "article_id": "1277bf71-f3cc-4d29-86a8-8cadca0133f9",
+      "slug": "lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration"
+    },
+    {
+      "article_id": "355981c3-3480-4441-991d-8d8e94cd20b5",
+      "slug": "lea-prac-svc-016-post-construction-services-building-administration-and-operations-support"
+    },
+    {
+      "article_id": "50450ba8-a843-4399-9bd9-9b6c854ee65a",
+      "slug": "lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission"
+    },
+    {
+      "article_id": "75ef7a25-2d9d-455d-8d89-e6eb0b691240",
+      "slug": "lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice-services"
+    },
+    {
+      "article_id": "9796e088-8c83-4a6c-9599-51afd69d0e81",
+      "slug": "lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role"
+    }
+  ],
+  "counts": {
+    "selected_articles": 5,
+    "linked_questions_expected": 50,
+    "question_edits_expected": 50,
+    "question_edits_existing_before_repair": 50,
+    "stale_question_edit_index_files_to_remove": 0,
+    "scenarios_expected": 5
+  },
+  "article_clusters": [
+    {
+      "article_id": "1277bf71-f3cc-4d29-86a8-8cadca0133f9",
+      "slug": "lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration",
+      "title": "Full Time Supervision vs Construction Management vs SPP 202 Administration",
+      "subject": "LEA-PRAC - Professional Practice and Services",
+      "focus": "service boundary among SPP 202, SPP 204-A, SPP 204-B, and UAP Doc 301 construction-period authority",
+      "linked_question_count": 10,
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration--1277bf71-f3cc-4d29-86a8-8cadca0133f9",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-015-full-time-supervision-vs-construction-management-vs-spp-202-administration--1277bf71-f3cc-4d29-86a8-8cadca0133f9/question-edits",
+      "source_family": "UAP Document Standards of Professional Practice - selection, compensation, supervision, and construction management services; SPP Document 202 - Regular Design Services phases; SPP Document 204-A - Fulltime Supervision Services; SPP Document 204-B - Construction Management Services; UAP Document 301 - General Conditions",
+      "source_locators": [
+        {
+          "source_id": "uap-standards-selection-compensation-supervision-cm-batch-098",
+          "label": "UAP Document Standards of Professional Practice - selection, compensation, supervision, and construction management services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "conversion_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+          "checked_markdown_lines": [
+            "UAP Document Standards refined markdown lines 79-100",
+            "UAP Document Standards refined markdown lines 217-265",
+            "UAP Document Standards refined markdown lines 416-458",
+            "UAP Document Standards refined markdown lines 915-964",
+            "UAP Document Standards refined markdown lines 1129-1168",
+            "UAP Document Standards refined markdown lines 1174-1216"
+          ]
+        },
+        {
+          "source_id": "spp-202-regular-design-services-batch-098",
+          "label": "SPP Document 202 - Regular Design Services phases",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+          "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+          "conversion_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+          "checked_markdown_lines": [
+            "SPP 202 refined markdown lines 175-183"
+          ]
+        },
+        {
+          "source_id": "spp-204a-fulltime-supervision-batch-098",
+          "label": "SPP Document 204-A - Fulltime Supervision Services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204A.pdf",
+          "raw_pdf_sha256": "sha256:ec08811ae8611f077fda9f0d1106cc7fab6a1e6210fe6d617637adaa6de083b8",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md",
+          "conversion_sha256": "sha256:9044ca5193245c730509d0022e13d597b62ad9ea969e5e870bd2954faeb89500",
+          "checked_markdown_lines": [
+            "SPP 204-A refined markdown lines 201-207"
+          ]
+        },
+        {
+          "source_id": "spp-204b-construction-management-batch-098",
+          "label": "SPP Document 204-B - Construction Management Services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204B.pdf",
+          "raw_pdf_sha256": "sha256:b6bfffcf6e3ca7a4317121b28d5fab9237c2a4642b450573232516ef9dfb697e",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204B.md",
+          "conversion_sha256": "sha256:b49b5fcffe1e1ad48cb618b70d6a369400a0c7460dd3fa7ea471ee5900dc53e8",
+          "checked_markdown_lines": [
+            "SPP 204-B refined markdown line 7"
+          ]
+        },
+        {
+          "source_id": "uap-document-301-general-conditions-batch-098",
+          "label": "UAP Document 301 - General Conditions",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+          "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+          "conversion_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+          "checked_markdown_lines": [
+            "UAP Document 301 refined markdown lines 41-71",
+            "UAP Document 301 refined markdown lines 482-520",
+            "UAP Document 301 refined markdown lines 1019-1051",
+            "UAP Document 301 refined markdown lines 1062-1080"
+          ]
+        }
+      ],
+      "historical_overlap": {
+        "current_serial_source_audited_batches": [],
+        "historical_local_first_or_reaudit_artifacts": [
+          "Batch 022 local-first source-audited repair artifact"
+        ]
+      }
+    },
+    {
+      "article_id": "355981c3-3480-4441-991d-8d8e94cd20b5",
+      "slug": "lea-prac-svc-016-post-construction-services-building-administration-and-operations-support",
+      "title": "Post-Construction Services, Building Administration, and Operations Support",
+      "subject": "LEA-PRAC - Professional Practice and Services",
+      "focus": "SPP 205 post-construction building administration and post-construction evaluation",
+      "linked_question_count": 10,
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-016-post-construction-services-building-administration-and-operations-support--355981c3-3480-4441-991d-8d8e94cd20b5",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-016-post-construction-services-building-administration-and-operations-support--355981c3-3480-4441-991d-8d8e94cd20b5/question-edits",
+      "source_family": "SPP Document 205 - Post-construction Services; Standards of Professional Practice2 - compiled SPP source",
+      "source_locators": [
+        {
+          "source_id": "spp-205-post-construction-batch-098",
+          "label": "SPP Document 205 - Post-construction Services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 205.pdf",
+          "raw_pdf_sha256": "sha256:8511f90780e4d26f966c941142bde99395337280f12ce1035c68d3e7ebb41b33",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 205.md",
+          "conversion_sha256": "sha256:8a0b4833ce68e5daeb2ec4403d32ff95f7cfc192218a526e44618c41cf6e563a",
+          "checked_markdown_lines": [
+            "SPP 205 refined markdown lines 3-7",
+            "SPP 205 refined markdown lines 119-129"
+          ]
+        },
+        {
+          "source_id": "uap-standards-professional-practice2-batch-098",
+          "label": "Standards of Professional Practice2 - compiled SPP source",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+          "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+          "conversion_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+          "checked_markdown_lines": [
+            "Standards of Professional Practice2 refined markdown lines 300-350",
+            "Standards of Professional Practice2 refined markdown lines 362-418",
+            "Standards of Professional Practice2 refined markdown lines 475-586",
+            "Standards of Professional Practice2 refined markdown lines 1036-1077",
+            "Standards of Professional Practice2 refined markdown lines 1097-1215"
+          ]
+        }
+      ],
+      "historical_overlap": {
+        "current_serial_source_audited_batches": [],
+        "historical_local_first_or_reaudit_artifacts": [
+          "Batch 034 local-first source-audited repair artifact"
+        ]
+      }
+    },
+    {
+      "article_id": "50450ba8-a843-4399-9bd9-9b6c854ee65a",
+      "slug": "lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission",
+      "title": "Comprehensive Architectural Services: The Full-Spectrum Commission",
+      "subject": "LEA-PRAC - Professional Practice and Services",
+      "focus": "SPP 206 comprehensive architectural services and project management boundaries",
+      "linked_question_count": 10,
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission--50450ba8-a843-4399-9bd9-9b6c854ee65a",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission--50450ba8-a843-4399-9bd9-9b6c854ee65a/question-edits",
+      "source_family": "UAP Document Standards of Professional Practice - selection, compensation, supervision, and construction management services; SPP Document 206 - Comprehensive Architectural Services",
+      "source_locators": [
+        {
+          "source_id": "uap-standards-selection-compensation-supervision-cm-batch-098",
+          "label": "UAP Document Standards of Professional Practice - selection, compensation, supervision, and construction management services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "conversion_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+          "checked_markdown_lines": [
+            "UAP Document Standards refined markdown lines 79-100",
+            "UAP Document Standards refined markdown lines 217-265",
+            "UAP Document Standards refined markdown lines 416-458",
+            "UAP Document Standards refined markdown lines 915-964",
+            "UAP Document Standards refined markdown lines 1129-1168",
+            "UAP Document Standards refined markdown lines 1174-1216"
+          ]
+        },
+        {
+          "source_id": "spp-206-comprehensive-architectural-services-batch-098",
+          "label": "SPP Document 206 - Comprehensive Architectural Services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 206.pdf",
+          "raw_pdf_sha256": "sha256:d140c57e69f990af217f914a1dac51b6d6aae02a1b42aadd4a3f26b6cebf72b7",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 206.md",
+          "conversion_sha256": "sha256:1ed62c21499c67d14265fb41468a137d00983893797b04a3bd18b6fde4f3b283",
+          "checked_markdown_lines": [
+            "SPP 206 refined markdown lines 713-823"
+          ]
+        }
+      ],
+      "historical_overlap": {
+        "current_serial_source_audited_batches": [],
+        "historical_local_first_or_reaudit_artifacts": [
+          "Batch 024 local-first source-audited repair artifact"
+        ]
+      }
+    },
+    {
+      "article_id": "75ef7a25-2d9d-455d-8d89-e6eb0b691240",
+      "slug": "lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice-services",
+      "title": "Building Condition Assessment, Adaptive Reuse, and Heritage Conservation",
+      "subject": "LEA-PRAC - Professional Practice and Services",
+      "focus": "RA 10066 adaptive reuse and conservation vocabulary plus SPP 203 specialized heritage practice",
+      "linked_question_count": 10,
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice---75ef7a25-2d9d-455d-8d89-e6eb0b691240",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice---75ef7a25-2d9d-455d-8d89-e6eb0b691240/question-edits",
+      "source_family": "RA 10066 - National Cultural Heritage Act of 2009; SPP Document 203 - Specialized Architectural Services",
+      "source_locators": [
+        {
+          "source_id": "ra-10066-national-cultural-heritage-act-batch-098",
+          "label": "RA 10066 - National Cultural Heritage Act of 2009",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-10066/ra 10066.pdf",
+          "raw_pdf_sha256": "sha256:98aefeeecfc07c329eac6e9ff9b784bf94e22c319dc2987d51ded09343b2bd95",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-10066/ra 10066.md",
+          "conversion_sha256": "sha256:9dd244f4545b120ea56288340cb426236781e873a7ad9139779f0971e08b220c",
+          "checked_markdown_lines": [
+            "RA 10066 refined markdown lines 37-48",
+            "RA 10066 refined markdown line 60",
+            "RA 10066 refined markdown lines 81-97",
+            "RA 10066 refined markdown lines 177-199"
+          ]
+        },
+        {
+          "source_id": "spp-203-specialized-architectural-services-batch-098",
+          "label": "SPP Document 203 - Specialized Architectural Services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+          "raw_pdf_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+          "conversion_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+          "checked_markdown_lines": [
+            "SPP 203 refined markdown lines 101-149",
+            "SPP 203 refined markdown lines 1465-1469"
+          ]
+        }
+      ],
+      "historical_overlap": {
+        "current_serial_source_audited_batches": [],
+        "historical_local_first_or_reaudit_artifacts": [
+          "Batch 031 local-first source-audited repair artifact"
+        ]
+      }
+    },
+    {
+      "article_id": "9796e088-8c83-4a6c-9599-51afd69d0e81",
+      "slug": "lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role",
+      "title": "Design-Build Services: Overview, Rationale, and Architect's Role",
+      "subject": "LEA-PRAC - Professional Practice and Services",
+      "focus": "SPP 207 design-build service models, responsibility, cost guarantee, and professional identity",
+      "linked_question_count": 10,
+      "article_folder_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role--9796e088-8c83-4a6c-9599-51afd69d0e81",
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role--9796e088-8c83-4a6c-9599-51afd69d0e81/question-edits",
+      "source_family": "UAP Document Standards of Professional Practice - selection, compensation, supervision, and construction management services; SPP Document 207 - Design-Build Services",
+      "source_locators": [
+        {
+          "source_id": "uap-standards-selection-compensation-supervision-cm-batch-098",
+          "label": "UAP Document Standards of Professional Practice - selection, compensation, supervision, and construction management services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "conversion_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+          "checked_markdown_lines": [
+            "UAP Document Standards refined markdown lines 79-100",
+            "UAP Document Standards refined markdown lines 217-265",
+            "UAP Document Standards refined markdown lines 416-458",
+            "UAP Document Standards refined markdown lines 915-964",
+            "UAP Document Standards refined markdown lines 1129-1168",
+            "UAP Document Standards refined markdown lines 1174-1216"
+          ]
+        },
+        {
+          "source_id": "spp-207-design-build-services-batch-098",
+          "label": "SPP Document 207 - Design-Build Services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 207.pdf",
+          "raw_pdf_sha256": "sha256:7050b0c7bd152694587f39ead8b682ed71b882ba50fce5c4a614206f32b5b610",
+          "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md",
+          "conversion_sha256": "sha256:16375f49124440ba1bc938379786e14016249c3d42d0b7498a543ddb4f702e0a",
+          "checked_markdown_lines": [
+            "SPP 207 refined markdown lines 135-440"
+          ]
+        }
+      ],
+      "historical_overlap": {
+        "current_serial_source_audited_batches": [],
+        "historical_local_first_or_reaudit_artifacts": [
+          "Batch 024 local-first source-audited repair artifact"
+        ]
+      }
+    }
+  ],
+  "required_validation_gates": [
+    "compose 5/5",
+    "diff 5/5",
+    "validate strict 5/5",
+    "UI-block edit validation",
+    "scoped JSON parse",
+    "placeholder/internal-note/source-gap scan",
+    "source hash checks",
+    "linked-question/question-edit count checks",
+    "stale compose-error scan",
+    "targeted content-audit tests",
+    "scoped git diff --check",
+    "independent QA review",
+    "git diff --cached --check before commit"
+  ],
+  "scenario_enrichment_instruction": "Add one source-safe Real World Scenario section for each selected article because these five professional-service boundaries are exam-useful in realistic owner-client-contractor and existing-building settings.",
+  "stop_condition": "Batch 098 local-first work is complete after blockers=0, independent QA PASS, final staged diff checks, commit, and push; then continue Batch 099 unless a real blocker or tool failure stops advancement.",
+  "report_path": ".ai/content-audit-export/source-audited-article-batch-098-local-first-report.md",
+  "ledger_path": ".ai/content-audit-export/source-audited-article-batch-098-local-first-ledger.json",
+  "scoped_checks_path": ".ai/content-audit-export/source-audited-article-batch-098-local-first-scoped-checks.json",
+  "independent_quality_review_path": ".ai/03_plans/batch-098-independent-quality-review.md",
+  "completed_at": "2026-05-13T08:52:04+08:00",
+  "actuals": {
+    "selected_articles": 5,
+    "linked_questions": 50,
+    "question_edits": 50,
+    "source_safe_question_edits": 50,
+    "scenario_enrichment": {
+      "eligible_added": 5,
+      "eligible_deferred": 0,
+      "not_applicable": 0
+    },
+    "source_hash_checks": 22,
+    "source_hash_failures": 0,
+    "blockers": 0,
+    "local_first_only": true,
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "production_db_mutation_attempted": false,
+    "merge_to_main_attempted": false
+  },
+  "validation_results": {
+    "compose": {
+      "status": "PASS",
+      "articles": 5,
+      "blockers": 0
+    },
+    "diff": {
+      "status": "PASS",
+      "articles": 5,
+      "locally_safe": 5,
+      "blockers": 0
+    },
+    "validate_strict": {
+      "status": "PASS",
+      "articles": 5,
+      "blockers": 0,
+      "warnings": "Expected component-usage.json has not been generated warnings only."
+    },
+    "ui_block_edit_validation": {
+      "status": "PASS",
+      "articles": 5,
+      "blockers": 0,
+      "warnings": 0
+    },
+    "scoped_json_parse": {
+      "status": "PASS",
+      "failures": 0,
+      "files_checked": 114
+    },
+    "marker_scan": {
+      "status": "PASS",
+      "matches": 0,
+      "files_checked": 60
+    },
+    "source_hash_checks": {
+      "status": "PASS",
+      "checks": 22,
+      "failures": 0
+    },
+    "linked_question_question_edit_counts": {
+      "status": "PASS",
+      "linked_questions": 50,
+      "question_edits": 50
+    },
+    "stale_compose_error_scan": {
+      "status": "PASS",
+      "matches": 0
+    },
+    "targeted_content_audit_tests": {
+      "status": "PASS",
+      "tests": 34,
+      "failures": 0,
+      "expects": 328
+    },
+    "scoped_git_diff_check": {
+      "status": "PASS"
+    },
+    "independent_qa": {
+      "status": "PASS",
+      "path": ".ai/03_plans/batch-098-independent-quality-review.md"
+    }
+  }
+}

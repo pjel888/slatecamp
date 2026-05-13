@@ -47,3 +47,7 @@ Expect client-communication questions, service proposal questions, and liability
 - Treating construction management as merely another name for full-time inspection.
 - Forgetting that separate services can require separate compensation.
 - Treating resident staff assistance as a transfer of contractor responsibility.
+
+## Real World Scenario
+
+A building owner asks the architect to add daily site presence to a regular design-service proposal. A source-safe answer first names the base SPP 202 construction phase, then checks whether the owner is actually asking for full-time supervision under SPP 204-A or broader construction management under SPP 204-B. If the owner stations project representatives, resident architects, resident engineers, or construction inspectors on site, UAP Document 301 keeps them as assistants to the architect and engineers; it does not transfer the contractor's duty to perform the work according to the drawings, specifications, and other Contract Documents.

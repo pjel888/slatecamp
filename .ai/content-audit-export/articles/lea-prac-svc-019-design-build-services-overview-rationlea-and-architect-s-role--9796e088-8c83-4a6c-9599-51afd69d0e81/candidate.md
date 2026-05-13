@@ -30,3 +30,7 @@ SPP 207 recognizes that the architect may be part of the entity constructing the
 - Saying Design-Build by Administration has a guaranteed maximum cost.
 - Saying all savings revert only to the owner under the guaranteed-maximum model.
 - Ignoring the source's conflict-of-interest and separate-professional-identity requirements.
+
+## Real World Scenario
+
+A client wants the architect to implement the architect's own design because speed, quality, and cost control are all critical. Under SPP 207, the first fork is whether the engagement is Design-Build Services by Administration or Design-Build Services with Guaranteed Maximum Project Construction Cost. The guaranteed-maximum model adds the cost guarantee, shared savings, and limited overrun consequence described in the source. In either model, the architect's professional responsibility and civil liability cover both design and construction of the project, and the architect must keep a separate professional identity while disclosing business interests that could create a conflict of interest.

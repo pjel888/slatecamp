@@ -2,46 +2,56 @@
   "question_id": "048c28fc-8ffb-4709-867b-dcd9125b9c60",
   "baseline_hash": "sha256:6f5ca39ede8211e8511b122abeffedfa37952daff49f61ecbb2fad36747e3b2c",
   "action": "replace",
-  "reason": "source-audited-article-batch-031-local-first aligned linked question with audited local source language for lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice-services.",
-  "approved_by": "codex-local-source-audit-batch-031",
-  "approved_at": "2026-05-11T08:56:01+08:00",
+  "reason": "source-audited-article-batch-098-local-first refreshed this linked question as a source-safe question edit for lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice-services.",
+  "approved_by": "codex-local-source-audit-batch-098",
+  "approved_at": "2026-05-13T08:33:24+08:00",
   "source_audit_support": {
     "parent_article_id": "75ef7a25-2d9d-455d-8d89-e6eb0b691240",
-    "parent_article_slug": "lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice-services",
+    "parent_article_slug": "lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "RA 10066 lines 37-48, 60, 81-97, 177-199; SPP 203 lines 101-149 and 1465-1469",
+    "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-10066/ra 10066.md: RA 10066 refined markdown lines 37-48, RA 10066 refined markdown line 60, RA 10066 refined markdown lines 81-97, RA 10066 refined markdown lines 177-199; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md: SPP 203 refined markdown lines 101-149, SPP 203 refined markdown lines 1465-1469",
     "checked_sources": [
       {
-        "source_id": "ra-10066-national-cultural-heritage-act-local",
+        "source_id": "ra-10066-national-cultural-heritage-act-batch-098",
         "label": "RA 10066 - National Cultural Heritage Act of 2009",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-10066/ra 10066.pdf",
-        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-10066/ra 10066.pdf",
         "raw_pdf_sha256": "sha256:98aefeeecfc07c329eac6e9ff9b784bf94e22c319dc2987d51ded09343b2bd95",
         "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-10066/ra 10066.md",
-        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-10066/ra 10066.md",
         "refined_markdown_sha256": "sha256:9dd244f4545b120ea56288340cb426236781e873a7ad9139779f0971e08b220c",
-        "source_locator": "RA 10066 refined markdown lines 37-48, 60, 81-97, 177-199",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-10066/ra 10066.md: RA 10066 refined markdown lines 37-48, RA 10066 refined markdown line 60, RA 10066 refined markdown lines 81-97, RA 10066 refined markdown lines 177-199",
         "checked_markdown_lines": [
-          "RA 10066 refined markdown lines 37-48, 60, 81-97, 177-199"
+          "RA 10066 refined markdown lines 37-48",
+          "RA 10066 refined markdown line 60",
+          "RA 10066 refined markdown lines 81-97",
+          "RA 10066 refined markdown lines 177-199"
         ]
       },
       {
-        "source_id": "uap-spp-203-specialized-architectural-services-local",
-        "label": "UAP SPP 203 - Specialized Architectural Services",
+        "source_id": "spp-203-specialized-architectural-services-batch-098",
+        "label": "SPP Document 203 - Specialized Architectural Services",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
-        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
         "raw_pdf_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
         "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
-        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
         "refined_markdown_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
-        "source_locator": "SPP 203 refined markdown lines 101-149 and 1465-1469",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md: SPP 203 refined markdown lines 101-149, SPP 203 refined markdown lines 1465-1469",
         "checked_markdown_lines": [
-          "SPP 203 refined markdown lines 101-149 and 1465-1469"
+          "SPP 203 refined markdown lines 101-149",
+          "SPP 203 refined markdown lines 1465-1469"
         ]
       }
     ],
-    "local_source_safe_action": "Question text, options, answer key, rationale, explanation, and code citation rewritten to the audited local article scope."
+    "local_source_safe_action": "Batch 098 retained and refreshed the source-bounded rewrite using checked local raw source evidence.",
+    "parent_article_title": "Building Condition Assessment, Adaptive Reuse, and Heritage Conservation",
+    "batch_id": "source-audited-article-batch-098-local-first",
+    "checked_markdown_lines": [
+      "RA 10066 refined markdown lines 37-48",
+      "RA 10066 refined markdown line 60",
+      "RA 10066 refined markdown lines 81-97",
+      "RA 10066 refined markdown lines 177-199",
+      "SPP 203 refined markdown lines 101-149",
+      "SPP 203 refined markdown lines 1465-1469"
+    ]
   },
   "proposed": {
     "text": "Which item is part of built heritage under RA 10066?",
@@ -66,6 +76,10 @@
     "correct_option_id": "a",
     "rationale": "RA 10066 includes architectural and engineering structures plus settings and landscapes when significant.",
     "explanation": "RA 10066 includes architectural and engineering structures plus settings and landscapes when significant.",
-    "code_citation": "RA 10066 lines 37-48, 60, 81-97, 177-199; SPP 203 lines 101-149 and 1465-1469"
+    "code_citation": "RA 10066 lines 37-48, 60, 81-97, 177-199; SPP 203 lines 101-149 and 1465-1469",
+    "practice_context": [
+      "source-audited batch 098"
+    ],
+    "model_id": "BATCH-098-lea-prac-svc-018-building-condition-assessment-adaptive-reuse-and-heritage-conservation-as-practice-services-001"
   }
 }

@@ -2,46 +2,58 @@
   "question_id": "bef77a69-327c-459e-b11d-918086a5fe4a",
   "baseline_hash": "sha256:9ce9805ecea64a339a5831465f39dbab552e99f35eccd1acd20d9cca54cfa962",
   "action": "replace",
-  "reason": "source-audited-article-batch-024-local-first rewrote this linked question to align with the local source audit for lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission.",
-  "approved_by": "codex-local-source-audit-batch-024",
-  "approved_at": "2026-05-11T14:30:00.000+08:00",
+  "reason": "source-audited-article-batch-098-local-first refreshed this linked question as a source-safe question edit for lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission.",
+  "approved_by": "codex-local-source-audit-batch-098",
+  "approved_at": "2026-05-13T08:33:24+08:00",
   "source_audit_support": {
     "parent_article_id": "50450ba8-a843-4399-9bd9-9b6c854ee65a",
     "parent_article_slug": "lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "UAP Standards refined markdown lines 1091-1216; SPP 206 refined markdown lines 713-823",
+    "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md: UAP Document Standards refined markdown lines 79-100, UAP Document Standards refined markdown lines 217-265, UAP Document Standards refined markdown lines 416-458, UAP Document Standards refined markdown lines 915-964, UAP Document Standards refined markdown lines 1129-1168, UAP Document Standards refined markdown lines 1174-1216; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 206.md: SPP 206 refined markdown lines 713-823",
     "checked_markdown_lines": [
-      "UAP Standards lines 1091-1216",
-      "SPP 206 lines 713-823"
+      "UAP Document Standards refined markdown lines 79-100",
+      "UAP Document Standards refined markdown lines 217-265",
+      "UAP Document Standards refined markdown lines 416-458",
+      "UAP Document Standards refined markdown lines 915-964",
+      "UAP Document Standards refined markdown lines 1129-1168",
+      "UAP Document Standards refined markdown lines 1174-1216",
+      "SPP 206 refined markdown lines 713-823"
     ],
     "checked_sources": [
       {
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "source_id": "uap-standards-spp206-cas-lifecycle-local",
-        "locator": "UAP Standards refined markdown lines 1091-1216"
+        "source_id": "uap-standards-selection-compensation-supervision-cm-batch-098",
+        "label": "UAP Document Standards of Professional Practice - selection, compensation, supervision, and construction management services",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md: UAP Document Standards refined markdown lines 79-100, UAP Document Standards refined markdown lines 217-265, UAP Document Standards refined markdown lines 416-458, UAP Document Standards refined markdown lines 915-964, UAP Document Standards refined markdown lines 1129-1168, UAP Document Standards refined markdown lines 1174-1216",
+        "checked_markdown_lines": [
+          "UAP Document Standards refined markdown lines 79-100",
+          "UAP Document Standards refined markdown lines 217-265",
+          "UAP Document Standards refined markdown lines 416-458",
+          "UAP Document Standards refined markdown lines 915-964",
+          "UAP Document Standards refined markdown lines 1129-1168",
+          "UAP Document Standards refined markdown lines 1174-1216"
+        ]
       },
       {
-        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
-        "source_id": "uap-standards-spp206-cas-lifecycle-local",
-        "locator": "UAP Standards refined markdown lines 1091-1216"
-      },
-      {
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 206.pdf",
-        "sha256": "sha256:d140c57e69f990af217f914a1dac51b6d6aae02a1b42aadd4a3f26b6cebf72b7",
-        "source_id": "spp206-full-spectrum-commission-local",
-        "locator": "SPP 206 refined markdown lines 713-823"
-      },
-      {
-        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 206.md",
-        "sha256": "sha256:1ed62c21499c67d14265fb41468a137d00983893797b04a3bd18b6fde4f3b283",
-        "source_id": "spp206-full-spectrum-commission-local",
-        "locator": "SPP 206 refined markdown lines 713-823"
+        "source_id": "spp-206-comprehensive-architectural-services-batch-098",
+        "label": "SPP Document 206 - Comprehensive Architectural Services",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 206.pdf",
+        "raw_pdf_sha256": "sha256:d140c57e69f990af217f914a1dac51b6d6aae02a1b42aadd4a3f26b6cebf72b7",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 206.md",
+        "refined_markdown_sha256": "sha256:1ed62c21499c67d14265fb41468a137d00983893797b04a3bd18b6fde4f3b283",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 206.md: SPP 206 refined markdown lines 713-823",
+        "checked_markdown_lines": [
+          "SPP 206 refined markdown lines 713-823"
+        ]
       }
     ],
-    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+    "local_source_safe_action": "Batch 098 retained and refreshed the source-bounded rewrite using checked local raw source evidence.",
+    "parent_article_title": "Comprehensive Architectural Services: The Full-Spectrum Commission",
+    "batch_id": "source-audited-article-batch-098-local-first"
   },
   "proposed": {
     "text": "How do the five CAS categories relate to the project lifecycle?",
@@ -75,10 +87,10 @@
     "application_context": "professional_practice_source_audit",
     "practice_context": [
       "professional practice",
-      "source-audited batch 024"
+      "source-audited batch 098"
     ],
     "difficulty": 0.42,
     "is_assessment": false,
-    "model_id": "BATCH-024-lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission-009"
+    "model_id": "BATCH-098-lea-prac-svc-017-comprehensive-architectural-services-the-full-spectrum-commission-009"
   }
 }

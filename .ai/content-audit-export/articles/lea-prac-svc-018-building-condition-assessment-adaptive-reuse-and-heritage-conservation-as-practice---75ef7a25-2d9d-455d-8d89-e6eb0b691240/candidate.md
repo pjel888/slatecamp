@@ -25,3 +25,7 @@ RA 10066 uses conservation for all processes and measures that maintain cultural
 ## Professional Practice Cue
 
 SPP 203 places historic and cultural heritage conservation and planning under specialized architectural services. It also lists building appraisal, building testing and commissioning, and facilities maintenance support. When the project involves an existing or heritage building, the architect should clarify the service scope, evidence needed, deliverables, and limits of advice rather than assuming the work is covered by ordinary design deliverables alone.
+
+## Real World Scenario
+
+A city is considering converting an old cinema into a public cultural venue. A source-safe exam answer starts with RA 10066 vocabulary: adaptive reuse changes the use of a valuable building, structure, or site while conserving its engineering integrity and design authenticity; built heritage includes structures, settings, and landscapes with historical or cultural significance; conservation can combine preservation, restoration, reconstruction, protection, and adaptation. The professional-practice cue is to scope the work as specialized architectural service under SPP 203 when heritage conservation and planning are involved, rather than treating it as a simple decoration exercise or ordinary occupancy-label change.

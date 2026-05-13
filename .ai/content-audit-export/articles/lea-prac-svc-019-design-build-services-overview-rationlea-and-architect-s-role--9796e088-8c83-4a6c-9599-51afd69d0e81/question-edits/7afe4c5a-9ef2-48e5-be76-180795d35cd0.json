@@ -2,46 +2,58 @@
   "question_id": "7afe4c5a-9ef2-48e5-be76-180795d35cd0",
   "baseline_hash": "sha256:bf35878357bbf0accac9103da0bab29ebf90384b58c5850fcc5a5a1c9173b5c6",
   "action": "replace",
-  "reason": "source-audited-article-batch-024-local-first rewrote this linked question to align with the local source audit for lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role.",
-  "approved_by": "codex-local-source-audit-batch-024",
-  "approved_at": "2026-05-11T14:30:00.000+08:00",
+  "reason": "source-audited-article-batch-098-local-first refreshed this linked question as a source-safe question edit for lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role.",
+  "approved_by": "codex-local-source-audit-batch-098",
+  "approved_at": "2026-05-13T08:33:24+08:00",
   "source_audit_support": {
     "parent_article_id": "9796e088-8c83-4a6c-9599-51afd69d0e81",
     "parent_article_slug": "lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "UAP Standards refined markdown lines 1222-1284; SPP 207 refined markdown lines 135-440",
+    "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md: UAP Document Standards refined markdown lines 79-100, UAP Document Standards refined markdown lines 217-265, UAP Document Standards refined markdown lines 416-458, UAP Document Standards refined markdown lines 915-964, UAP Document Standards refined markdown lines 1129-1168, UAP Document Standards refined markdown lines 1174-1216; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md: SPP 207 refined markdown lines 135-440",
     "checked_markdown_lines": [
-      "UAP Standards lines 1222-1284",
-      "SPP 207 lines 135-440"
+      "UAP Document Standards refined markdown lines 79-100",
+      "UAP Document Standards refined markdown lines 217-265",
+      "UAP Document Standards refined markdown lines 416-458",
+      "UAP Document Standards refined markdown lines 915-964",
+      "UAP Document Standards refined markdown lines 1129-1168",
+      "UAP Document Standards refined markdown lines 1174-1216",
+      "SPP 207 refined markdown lines 135-440"
     ],
     "checked_sources": [
       {
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "source_id": "uap-standards-spp207-design-build-local",
-        "locator": "UAP Standards refined markdown lines 1222-1284"
+        "source_id": "uap-standards-selection-compensation-supervision-cm-batch-098",
+        "label": "UAP Document Standards of Professional Practice - selection, compensation, supervision, and construction management services",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md: UAP Document Standards refined markdown lines 79-100, UAP Document Standards refined markdown lines 217-265, UAP Document Standards refined markdown lines 416-458, UAP Document Standards refined markdown lines 915-964, UAP Document Standards refined markdown lines 1129-1168, UAP Document Standards refined markdown lines 1174-1216",
+        "checked_markdown_lines": [
+          "UAP Document Standards refined markdown lines 79-100",
+          "UAP Document Standards refined markdown lines 217-265",
+          "UAP Document Standards refined markdown lines 416-458",
+          "UAP Document Standards refined markdown lines 915-964",
+          "UAP Document Standards refined markdown lines 1129-1168",
+          "UAP Document Standards refined markdown lines 1174-1216"
+        ]
       },
       {
-        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
-        "source_id": "uap-standards-spp207-design-build-local",
-        "locator": "UAP Standards refined markdown lines 1222-1284"
-      },
-      {
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 207.pdf",
-        "sha256": "sha256:7050b0c7bd152694587f39ead8b682ed71b882ba50fce5c4a614206f32b5b610",
-        "source_id": "spp207-design-build-services-local",
-        "locator": "SPP 207 refined markdown lines 135-440"
-      },
-      {
-        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md",
-        "sha256": "sha256:16375f49124440ba1bc938379786e14016249c3d42d0b7498a543ddb4f702e0a",
-        "source_id": "spp207-design-build-services-local",
-        "locator": "SPP 207 refined markdown lines 135-440"
+        "source_id": "spp-207-design-build-services-batch-098",
+        "label": "SPP Document 207 - Design-Build Services",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 207.pdf",
+        "raw_pdf_sha256": "sha256:7050b0c7bd152694587f39ead8b682ed71b882ba50fce5c4a614206f32b5b610",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md",
+        "refined_markdown_sha256": "sha256:16375f49124440ba1bc938379786e14016249c3d42d0b7498a543ddb4f702e0a",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 207.md: SPP 207 refined markdown lines 135-440",
+        "checked_markdown_lines": [
+          "SPP 207 refined markdown lines 135-440"
+        ]
       }
     ],
-    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+    "local_source_safe_action": "Batch 098 retained and refreshed the source-bounded rewrite using checked local raw source evidence.",
+    "parent_article_title": "Design-Build Services: Overview, Rationale, and Architect's Role",
+    "batch_id": "source-audited-article-batch-098-local-first"
   },
   "proposed": {
     "text": "How does SPP 207 connect design-build to value in project delivery?",
@@ -75,10 +87,10 @@
     "application_context": "professional_practice_source_audit",
     "practice_context": [
       "professional practice",
-      "source-audited batch 024"
+      "source-audited batch 098"
     ],
     "difficulty": 0.5,
     "is_assessment": false,
-    "model_id": "BATCH-024-lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role-005"
+    "model_id": "BATCH-098-lea-prac-svc-019-design-build-services-overview-rationlea-and-architect-s-role-006"
   }
 }

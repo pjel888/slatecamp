@@ -32,3 +32,7 @@ Construction services under CAS point to full-time supervision and construction 
 - Saying the architect must directly provide every specialist service.
 - Saying PM relieves contractors or engineers of their normal responsibilities.
 - Importing design-build liability language into a CAS question unless the item is actually about SPP 207.
+
+## Real World Scenario
+
+An owner wants one professional lead to coordinate feasibility inputs, design, specialist consultants, supervision, construction management, and post-occupancy support for a complex project. In SPP 206 terms, that points to Comprehensive Architectural Services and project management. The architect remains the prime professional, creator, author, and coordinator of the building design, but the source-safe boundary is that the architect is not expected to personally perform every service. Architects, engineers, contractors, and other consultants still keep their own duties while the project manager coordinates time, cost, quality, and the full service continuum.
