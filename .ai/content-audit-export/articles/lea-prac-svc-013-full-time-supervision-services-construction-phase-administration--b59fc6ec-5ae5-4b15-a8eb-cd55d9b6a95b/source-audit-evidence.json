@@ -1,82 +1,384 @@
 {
+  "batch_id": "source-audited-article-batch-097-local-first",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T08:07:14+08:00",
   "article_id": "b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b",
   "slug": "lea-prac-svc-013-full-time-supervision-services-construction-phase-administration",
-  "batch_id": "source-audited-article-batch-020-local-first",
-  "generated_at": "2026-05-10T16:41:51.472Z",
-  "mode": "local_first_no_supabase_no_deploy_no_commit",
-  "status": "locally_source_audited",
-  "raw_pdf_audit": [
-    {
-      "source_id": "spp-204a-uap-local-raw-pdf",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204A.pdf",
-      "raw_pdf_sha256": "sha256:ec08811ae8611f077fda9f0d1106cc7fab6a1e6210fe6d617637adaa6de083b8",
-      "ocr_pdf_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/ocr_pdf/UAP/SPP 204A.pdf",
-      "ocr_pdf_sha256": "sha256:39d9b58861880331c15e33c5ffa44c9a2d3e111679ed9763aa2d8c54a1109a8b",
-      "checked_markdown_lines": [
-        {
-          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md",
-          "checked_lines": [
-            "3-8"
-          ],
-          "note": "Document title identifies Fulltime Supervision Services."
-        },
-        {
-          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md",
-          "checked_lines": [
-            "201-206"
-          ],
-          "note": "Scope of services list: quality control, evaluation of construction work, daily inspection reports, filing of documents."
-        }
-      ],
-      "note": "Raw PDF is retained as the authority file; local OCR/refined Markdown was used for line-level verification."
-    }
-  ],
+  "title": "Full Time Supervision Services Construction Phase Administration",
+  "status": "PASS",
+  "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-013-full-time-supervision-services-construction-phase-administration--b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b",
+  "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-013-full-time-supervision-services-construction-phase-administration--b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b",
+  "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-svc-013-full-time-supervision-services-construction-phase-administration--b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b/question-edits",
+  "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-013-full-time-supervision-services-construction-phase-administration--b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b/question-edits",
+  "linked_questions": 10,
+  "question_edits_created": 10,
+  "source_safe_rewrite_question_edits": 10,
+  "real_world_scenario_status": "eligible-added",
+  "classification": {
+    "content_domain": "professional_practice",
+    "requires_raw_pdf_audit": true,
+    "legal_or_code_source": true
+  },
+  "target": {
+    "article_id": "b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b",
+    "slug": "lea-prac-svc-013-full-time-supervision-services-construction-phase-administration",
+    "normalized_sha256": "sha256:97797f25ae425d8f89e11799d3f8d8e3f913a43567f06f3f35a13f5cb1a6d228",
+    "candidate_sha256": "sha256:97797f25ae425d8f89e11799d3f8d8e3f913a43567f06f3f35a13f5cb1a6d228"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_only": true,
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "production_db_mutation_attempted": false,
+    "commit_attempted": false
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "source_audit": {
+    "checked_sources": [
+      {
+        "source_id": "spp-204a-fulltime-supervision-batch-097",
+        "label": "SPP Document 204-A - Fulltime Supervision Services",
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "source_type": "local_raw_pdf_with_local_conversion",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204A.pdf",
+        "raw_pdf_sha256": "sha256:ec08811ae8611f077fda9f0d1106cc7fab6a1e6210fe6d617637adaa6de083b8",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md",
+        "conversion_sha256": "sha256:9044ca5193245c730509d0022e13d597b62ad9ea969e5e870bd2954faeb89500",
+        "checked_markdown_lines": [
+          "SPP 204A refined markdown lines 3-8",
+          "SPP 204A refined markdown lines 201-206"
+        ],
+        "local_source_checked": true
+      }
+    ],
+    "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md: SPP 204A refined markdown lines 3-8, SPP 204A refined markdown lines 201-206",
+    "checked_markdown_lines": [
+      "SPP 204A refined markdown lines 3-8",
+      "SPP 204A refined markdown lines 201-206"
+    ],
+    "internet_evidence_used": false
+  },
   "article_repair": {
     "normalized_md_rewritten": true,
-    "candidate_md_to_be_recomposed": true,
-    "ui_blocks_removed_from_current_candidate": true,
-    "old_internal_generation_notes_removed": true,
-    "risky_claims_removed_or_rewritten": [
-      "Removed prior historical evolution claims.",
-      "Removed unverified supervision-group organization and compensation method details.",
-      "Removed unrelated phase-fee UI material."
-    ]
+    "candidate_md_composed": true,
+    "diff_report_generated": true,
+    "real_world_scenario_added": true,
+    "placeholders_removed": true,
+    "internal_notes_removed": true,
+    "source_gap_notes_removed": true,
+    "unsupported_claims_rewritten_or_removed": true,
+    "stale_question_edit_index_removed": true
   },
-  "claim_support": [
+  "claims": [
     {
-      "claim": "SPP 204-A identifies Fulltime Supervision Services.",
-      "support_status": "source_supported",
-      "support_sources": [
-        {
-          "source_id": "spp-204a-uap-local-raw-pdf",
-          "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md lines 3-8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md lines 201-206"
-        }
-      ]
+      "claim_id": "batch-097-lea-prac-svc-013-full-time-supervision-services-construction-phase-administration-article-001",
+      "claim_text": "SPP 204-A identifies Fulltime Supervision Services.",
+      "support_status": "PASS",
+      "audit_result": "PASS",
+      "source_ids": [
+        "spp-204a-fulltime-supervision-batch-097"
+      ],
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204A.pdf",
+        "raw_pdf_sha256": "sha256:ec08811ae8611f077fda9f0d1106cc7fab6a1e6210fe6d617637adaa6de083b8",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md: SPP 204A refined markdown lines 3-8, SPP 204A refined markdown lines 201-206",
+        "quoted_pdf_excerpt": "Local raw PDF and local conversion line range checked for this source-safe claim."
+      }
     },
     {
-      "claim": "The checked SPP 204-A scope list includes quality control, evaluation of construction work, daily inspection reports, and filing of documents.",
-      "support_status": "source_supported",
-      "support_sources": [
-        {
-          "source_id": "spp-204a-uap-local-raw-pdf",
-          "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md lines 3-8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md lines 201-206"
-        }
-      ]
+      "claim_id": "batch-097-lea-prac-svc-013-full-time-supervision-services-construction-phase-administration-article-002",
+      "claim_text": "The checked SPP 204-A scope list includes quality control, evaluation of construction work, daily inspection reports, and filing of documents.",
+      "support_status": "PASS",
+      "audit_result": "PASS",
+      "source_ids": [
+        "spp-204a-fulltime-supervision-batch-097"
+      ],
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204A.pdf",
+        "raw_pdf_sha256": "sha256:ec08811ae8611f077fda9f0d1106cc7fab6a1e6210fe6d617637adaa6de083b8",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md: SPP 204A refined markdown lines 3-8, SPP 204A refined markdown lines 201-206",
+        "quoted_pdf_excerpt": "Local raw PDF and local conversion line range checked for this source-safe claim."
+      }
     },
     {
-      "claim": "This cluster is source-safe when it avoids broader construction-phase administration claims not verified in the checked lines.",
-      "support_status": "source_supported",
-      "support_sources": [
-        {
-          "source_id": "spp-204a-uap-local-raw-pdf",
-          "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md lines 3-8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md lines 201-206"
-        }
-      ]
+      "claim_id": "batch-097-lea-prac-svc-013-full-time-supervision-services-construction-phase-administration-article-003",
+      "claim_text": "The article avoids broader construction-phase, liability, compensation, or CM claims not supported by the checked SPP 204-A lines.",
+      "support_status": "PASS",
+      "audit_result": "PASS",
+      "source_ids": [
+        "spp-204a-fulltime-supervision-batch-097"
+      ],
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204A.pdf",
+        "raw_pdf_sha256": "sha256:ec08811ae8611f077fda9f0d1106cc7fab6a1e6210fe6d617637adaa6de083b8",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md: SPP 204A refined markdown lines 3-8, SPP 204A refined markdown lines 201-206",
+        "quoted_pdf_excerpt": "Local raw PDF and local conversion line range checked for this source-safe claim."
+      }
+    },
+    {
+      "claim_id": "batch-097-lea-prac-svc-013-full-time-supervision-services-construction-phase-administration-scenario",
+      "claim_text": "Real World Scenario section is source-safe, pedagogically useful, and limited to the same service-boundary claims supported by the checked local raw source family.",
+      "support_status": "PASS",
+      "audit_result": "PASS",
+      "source_ids": [
+        "spp-204a-fulltime-supervision-batch-097"
+      ],
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204A.pdf",
+        "raw_pdf_sha256": "sha256:ec08811ae8611f077fda9f0d1106cc7fab6a1e6210fe6d617637adaa6de083b8",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md: SPP 204A refined markdown lines 3-8, SPP 204A refined markdown lines 201-206",
+        "quoted_pdf_excerpt": "Scenario was checked against the same local source-bounded service facts used by the article."
+      }
+    },
+    {
+      "claim_id": "batch-097-lea-prac-svc-013-full-time-supervision-services-construction-phase-administration-question-001",
+      "claim_text": "Question 022b5016-65a5-443c-8115-6810f7faf702 / model BATCH-097-lea-prac-svc-013-full-time-supervision-services-construction-phase-administration-001 refreshed to Batch 097 source-safe form.",
+      "question_id": "022b5016-65a5-443c-8115-6810f7faf702",
+      "model_id": "BATCH-097-lea-prac-svc-013-full-time-supervision-services-construction-phase-administration-001",
+      "support_status": "PASS",
+      "audit_result": "PASS",
+      "source_ids": [
+        "spp-204a-fulltime-supervision-batch-097"
+      ],
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204A.pdf",
+        "raw_pdf_sha256": "sha256:ec08811ae8611f077fda9f0d1106cc7fab6a1e6210fe6d617637adaa6de083b8",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md: SPP 204A refined markdown lines 3-8, SPP 204A refined markdown lines 201-206",
+        "quoted_pdf_excerpt": "Local raw PDF and local conversion line range checked for this source-safe question edit."
+      }
+    },
+    {
+      "claim_id": "batch-097-lea-prac-svc-013-full-time-supervision-services-construction-phase-administration-question-002",
+      "claim_text": "Question 0a7ee1b5-bdbf-4788-9492-15b2028989d0 / model BATCH-097-lea-prac-svc-013-full-time-supervision-services-construction-phase-administration-002 refreshed to Batch 097 source-safe form.",
+      "question_id": "0a7ee1b5-bdbf-4788-9492-15b2028989d0",
+      "model_id": "BATCH-097-lea-prac-svc-013-full-time-supervision-services-construction-phase-administration-002",
+      "support_status": "PASS",
+      "audit_result": "PASS",
+      "source_ids": [
+        "spp-204a-fulltime-supervision-batch-097"
+      ],
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204A.pdf",
+        "raw_pdf_sha256": "sha256:ec08811ae8611f077fda9f0d1106cc7fab6a1e6210fe6d617637adaa6de083b8",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md: SPP 204A refined markdown lines 3-8, SPP 204A refined markdown lines 201-206",
+        "quoted_pdf_excerpt": "Local raw PDF and local conversion line range checked for this source-safe question edit."
+      }
+    },
+    {
+      "claim_id": "batch-097-lea-prac-svc-013-full-time-supervision-services-construction-phase-administration-question-003",
+      "claim_text": "Question 0c5027b0-68c9-4d58-bb4e-da26fd1fd275 / model BATCH-097-lea-prac-svc-013-full-time-supervision-services-construction-phase-administration-003 refreshed to Batch 097 source-safe form.",
+      "question_id": "0c5027b0-68c9-4d58-bb4e-da26fd1fd275",
+      "model_id": "BATCH-097-lea-prac-svc-013-full-time-supervision-services-construction-phase-administration-003",
+      "support_status": "PASS",
+      "audit_result": "PASS",
+      "source_ids": [
+        "spp-204a-fulltime-supervision-batch-097"
+      ],
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204A.pdf",
+        "raw_pdf_sha256": "sha256:ec08811ae8611f077fda9f0d1106cc7fab6a1e6210fe6d617637adaa6de083b8",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md: SPP 204A refined markdown lines 3-8, SPP 204A refined markdown lines 201-206",
+        "quoted_pdf_excerpt": "Local raw PDF and local conversion line range checked for this source-safe question edit."
+      }
+    },
+    {
+      "claim_id": "batch-097-lea-prac-svc-013-full-time-supervision-services-construction-phase-administration-question-004",
+      "claim_text": "Question 21e2b089-a0db-4b7f-8288-51e2cc075489 / model BATCH-097-lea-prac-svc-013-full-time-supervision-services-construction-phase-administration-004 refreshed to Batch 097 source-safe form.",
+      "question_id": "21e2b089-a0db-4b7f-8288-51e2cc075489",
+      "model_id": "BATCH-097-lea-prac-svc-013-full-time-supervision-services-construction-phase-administration-004",
+      "support_status": "PASS",
+      "audit_result": "PASS",
+      "source_ids": [
+        "spp-204a-fulltime-supervision-batch-097"
+      ],
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204A.pdf",
+        "raw_pdf_sha256": "sha256:ec08811ae8611f077fda9f0d1106cc7fab6a1e6210fe6d617637adaa6de083b8",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md: SPP 204A refined markdown lines 3-8, SPP 204A refined markdown lines 201-206",
+        "quoted_pdf_excerpt": "Local raw PDF and local conversion line range checked for this source-safe question edit."
+      }
+    },
+    {
+      "claim_id": "batch-097-lea-prac-svc-013-full-time-supervision-services-construction-phase-administration-question-005",
+      "claim_text": "Question 6283b7f7-410d-4dfa-857a-848baad36251 / model BATCH-097-lea-prac-svc-013-full-time-supervision-services-construction-phase-administration-005 refreshed to Batch 097 source-safe form.",
+      "question_id": "6283b7f7-410d-4dfa-857a-848baad36251",
+      "model_id": "BATCH-097-lea-prac-svc-013-full-time-supervision-services-construction-phase-administration-005",
+      "support_status": "PASS",
+      "audit_result": "PASS",
+      "source_ids": [
+        "spp-204a-fulltime-supervision-batch-097"
+      ],
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204A.pdf",
+        "raw_pdf_sha256": "sha256:ec08811ae8611f077fda9f0d1106cc7fab6a1e6210fe6d617637adaa6de083b8",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md: SPP 204A refined markdown lines 3-8, SPP 204A refined markdown lines 201-206",
+        "quoted_pdf_excerpt": "Local raw PDF and local conversion line range checked for this source-safe question edit."
+      }
+    },
+    {
+      "claim_id": "batch-097-lea-prac-svc-013-full-time-supervision-services-construction-phase-administration-question-006",
+      "claim_text": "Question 8bbabab7-1c86-4831-ace6-3055418dcf6f / model BATCH-097-lea-prac-svc-013-full-time-supervision-services-construction-phase-administration-006 refreshed to Batch 097 source-safe form.",
+      "question_id": "8bbabab7-1c86-4831-ace6-3055418dcf6f",
+      "model_id": "BATCH-097-lea-prac-svc-013-full-time-supervision-services-construction-phase-administration-006",
+      "support_status": "PASS",
+      "audit_result": "PASS",
+      "source_ids": [
+        "spp-204a-fulltime-supervision-batch-097"
+      ],
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204A.pdf",
+        "raw_pdf_sha256": "sha256:ec08811ae8611f077fda9f0d1106cc7fab6a1e6210fe6d617637adaa6de083b8",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md: SPP 204A refined markdown lines 3-8, SPP 204A refined markdown lines 201-206",
+        "quoted_pdf_excerpt": "Local raw PDF and local conversion line range checked for this source-safe question edit."
+      }
+    },
+    {
+      "claim_id": "batch-097-lea-prac-svc-013-full-time-supervision-services-construction-phase-administration-question-007",
+      "claim_text": "Question 9b111974-d268-4013-a159-889b82c921c7 / model BATCH-097-lea-prac-svc-013-full-time-supervision-services-construction-phase-administration-007 refreshed to Batch 097 source-safe form.",
+      "question_id": "9b111974-d268-4013-a159-889b82c921c7",
+      "model_id": "BATCH-097-lea-prac-svc-013-full-time-supervision-services-construction-phase-administration-007",
+      "support_status": "PASS",
+      "audit_result": "PASS",
+      "source_ids": [
+        "spp-204a-fulltime-supervision-batch-097"
+      ],
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204A.pdf",
+        "raw_pdf_sha256": "sha256:ec08811ae8611f077fda9f0d1106cc7fab6a1e6210fe6d617637adaa6de083b8",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md: SPP 204A refined markdown lines 3-8, SPP 204A refined markdown lines 201-206",
+        "quoted_pdf_excerpt": "Local raw PDF and local conversion line range checked for this source-safe question edit."
+      }
+    },
+    {
+      "claim_id": "batch-097-lea-prac-svc-013-full-time-supervision-services-construction-phase-administration-question-008",
+      "claim_text": "Question a6f6bed0-fb59-4a43-863a-bdf9d0c4ab73 / model BATCH-097-lea-prac-svc-013-full-time-supervision-services-construction-phase-administration-008 refreshed to Batch 097 source-safe form.",
+      "question_id": "a6f6bed0-fb59-4a43-863a-bdf9d0c4ab73",
+      "model_id": "BATCH-097-lea-prac-svc-013-full-time-supervision-services-construction-phase-administration-008",
+      "support_status": "PASS",
+      "audit_result": "PASS",
+      "source_ids": [
+        "spp-204a-fulltime-supervision-batch-097"
+      ],
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204A.pdf",
+        "raw_pdf_sha256": "sha256:ec08811ae8611f077fda9f0d1106cc7fab6a1e6210fe6d617637adaa6de083b8",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md: SPP 204A refined markdown lines 3-8, SPP 204A refined markdown lines 201-206",
+        "quoted_pdf_excerpt": "Local raw PDF and local conversion line range checked for this source-safe question edit."
+      }
+    },
+    {
+      "claim_id": "batch-097-lea-prac-svc-013-full-time-supervision-services-construction-phase-administration-question-009",
+      "claim_text": "Question c99413b1-4c97-4c48-909a-93a8c4fb5277 / model BATCH-097-lea-prac-svc-013-full-time-supervision-services-construction-phase-administration-009 refreshed to Batch 097 source-safe form.",
+      "question_id": "c99413b1-4c97-4c48-909a-93a8c4fb5277",
+      "model_id": "BATCH-097-lea-prac-svc-013-full-time-supervision-services-construction-phase-administration-009",
+      "support_status": "PASS",
+      "audit_result": "PASS",
+      "source_ids": [
+        "spp-204a-fulltime-supervision-batch-097"
+      ],
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204A.pdf",
+        "raw_pdf_sha256": "sha256:ec08811ae8611f077fda9f0d1106cc7fab6a1e6210fe6d617637adaa6de083b8",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md: SPP 204A refined markdown lines 3-8, SPP 204A refined markdown lines 201-206",
+        "quoted_pdf_excerpt": "Local raw PDF and local conversion line range checked for this source-safe question edit."
+      }
+    },
+    {
+      "claim_id": "batch-097-lea-prac-svc-013-full-time-supervision-services-construction-phase-administration-question-010",
+      "claim_text": "Question f955e0ff-f375-4708-bda6-458448f216ed / model BATCH-097-lea-prac-svc-013-full-time-supervision-services-construction-phase-administration-010 refreshed to Batch 097 source-safe form.",
+      "question_id": "f955e0ff-f375-4708-bda6-458448f216ed",
+      "model_id": "BATCH-097-lea-prac-svc-013-full-time-supervision-services-construction-phase-administration-010",
+      "support_status": "PASS",
+      "audit_result": "PASS",
+      "source_ids": [
+        "spp-204a-fulltime-supervision-batch-097"
+      ],
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204A.pdf",
+        "raw_pdf_sha256": "sha256:ec08811ae8611f077fda9f0d1106cc7fab6a1e6210fe6d617637adaa6de083b8",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md: SPP 204A refined markdown lines 3-8, SPP 204A refined markdown lines 201-206",
+        "quoted_pdf_excerpt": "Local raw PDF and local conversion line range checked for this source-safe question edit."
+      }
     }
   ],
-  "question_repair_policy": {
-    "action": "replace_linked_questions_with_source_safe_versions",
-    "answer_key_changes_expected": true,
-    "allowed_question_scope": "Only concepts directly supported by the checked SPP source lines are used."
+  "question_edits": [
+    {
+      "file": ".ai/content-audit-export/articles/lea-prac-svc-013-full-time-supervision-services-construction-phase-administration--b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b/question-edits/022b5016-65a5-443c-8115-6810f7faf702.json",
+      "question_id": "022b5016-65a5-443c-8115-6810f7faf702",
+      "support_status": "source_safe_rewrite"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-prac-svc-013-full-time-supervision-services-construction-phase-administration--b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b/question-edits/0a7ee1b5-bdbf-4788-9492-15b2028989d0.json",
+      "question_id": "0a7ee1b5-bdbf-4788-9492-15b2028989d0",
+      "support_status": "source_safe_rewrite"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-prac-svc-013-full-time-supervision-services-construction-phase-administration--b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b/question-edits/0c5027b0-68c9-4d58-bb4e-da26fd1fd275.json",
+      "question_id": "0c5027b0-68c9-4d58-bb4e-da26fd1fd275",
+      "support_status": "source_safe_rewrite"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-prac-svc-013-full-time-supervision-services-construction-phase-administration--b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b/question-edits/21e2b089-a0db-4b7f-8288-51e2cc075489.json",
+      "question_id": "21e2b089-a0db-4b7f-8288-51e2cc075489",
+      "support_status": "source_safe_rewrite"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-prac-svc-013-full-time-supervision-services-construction-phase-administration--b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b/question-edits/6283b7f7-410d-4dfa-857a-848baad36251.json",
+      "question_id": "6283b7f7-410d-4dfa-857a-848baad36251",
+      "support_status": "source_safe_rewrite"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-prac-svc-013-full-time-supervision-services-construction-phase-administration--b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b/question-edits/8bbabab7-1c86-4831-ace6-3055418dcf6f.json",
+      "question_id": "8bbabab7-1c86-4831-ace6-3055418dcf6f",
+      "support_status": "source_safe_rewrite"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-prac-svc-013-full-time-supervision-services-construction-phase-administration--b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b/question-edits/9b111974-d268-4013-a159-889b82c921c7.json",
+      "question_id": "9b111974-d268-4013-a159-889b82c921c7",
+      "support_status": "source_safe_rewrite"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-prac-svc-013-full-time-supervision-services-construction-phase-administration--b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b/question-edits/a6f6bed0-fb59-4a43-863a-bdf9d0c4ab73.json",
+      "question_id": "a6f6bed0-fb59-4a43-863a-bdf9d0c4ab73",
+      "support_status": "source_safe_rewrite"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-prac-svc-013-full-time-supervision-services-construction-phase-administration--b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b/question-edits/c99413b1-4c97-4c48-909a-93a8c4fb5277.json",
+      "question_id": "c99413b1-4c97-4c48-909a-93a8c4fb5277",
+      "support_status": "source_safe_rewrite"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-prac-svc-013-full-time-supervision-services-construction-phase-administration--b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b/question-edits/f955e0ff-f375-4708-bda6-458448f216ed.json",
+      "question_id": "f955e0ff-f375-4708-bda6-458448f216ed",
+      "support_status": "source_safe_rewrite"
+    }
+  ],
+  "blockers": [],
+  "unverified_or_rejected_claims": [],
+  "sme_review": {
+    "required": false,
+    "reason": "Batch 097 claims are limited to checked local UAP source families and no unresolved source blockers remain."
   }
 }

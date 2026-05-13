@@ -30,6 +30,10 @@ Selection should consider qualifications such as competence, capability, and int
 
 PACS compensation depends on the type of services and conditions of performance. It may be based on one or a combination of methods: per diem or hourly basis, retainer, salary cost times multiplier plus reimbursable expenses, fixed/lump sum payment, and percentage of total project cost. The source says compensation and allowances should be comparable with foreign consulting service standards and that, for the same scope of work, there should be no disparity between Filipino PCAs and foreign consultant counterparts.
 
+## Real World Scenario
+
+A local government asks for consulting support on a redevelopment program that includes feasibility work, land-use planning, monitoring, training, and capital investment programming. A source-safe SPP 209 answer starts by checking whether the service is PACS, then whether the consulting architect or consulting firm meets the PCA or firm qualifications. If no qualified Filipino Professional Consulting Architect is available and a foreign consultant is engaged, the source-supported guardrail is the understudy requirement for at least two Filipino RLAs in the same specialization. Compensation should be chosen from the SPP 209 methods according to service type and performance conditions, not treated as one fixed fee for every consulting assignment.
+
 ## Common Mistakes
 
 - Treating SPP 209 as permission to bypass RA 9266 or local professional rules.

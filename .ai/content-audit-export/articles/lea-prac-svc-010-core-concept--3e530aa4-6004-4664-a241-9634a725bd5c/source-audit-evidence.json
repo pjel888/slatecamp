@@ -1,130 +1,404 @@
 {
+  "batch_id": "source-audited-article-batch-097-local-first",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T08:07:14+08:00",
   "article_id": "3e530aa4-6004-4664-a241-9634a725bd5c",
   "slug": "lea-prac-svc-010-core-concept",
-  "batch_id": "source-audited-article-batch-020-local-first",
-  "generated_at": "2026-05-10T16:41:51.472Z",
-  "mode": "local_first_no_supabase_no_deploy_no_commit",
-  "status": "locally_source_audited",
-  "raw_pdf_audit": [
-    {
-      "source_id": "spp-208-uap-local-raw-pdf",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 208.pdf",
-      "raw_pdf_sha256": "sha256:c491ea6b2a58eb052b37ca4bee7145ffc98b5da9ef076cf30aa59b04b100c074",
-      "ocr_pdf_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/ocr_pdf/UAP/SPP 208.pdf",
-      "ocr_pdf_sha256": "sha256:42dbb6ec53dcd7d0187f5470a5da999754522acb93244ceef9dcacb4e4eb74d7",
-      "checked_markdown_lines": [
-        {
-          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md",
-          "checked_lines": [
-            "3-8"
-          ],
-          "note": "Document title identifies Architectural Design Competitions."
-        },
-        {
-          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md",
-          "checked_lines": [
-            "111-151"
-          ],
-          "note": "Owner definition and owner financing/invitation role."
-        },
-        {
-          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/SPP 208.md",
-          "checked_lines": [
-            "155-173"
-          ],
-          "note": "Jury definition, juror label, architect majority, lay juror, nomination and approval."
-        },
-        {
-          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md",
-          "checked_lines": [
-            "179-201"
-          ],
-          "note": "Professional Advisor role."
-        },
-        {
-          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md",
-          "checked_lines": [
-            "205-241"
-          ],
-          "note": "Technical Advisors and Competition Secretariat roles."
-        },
-        {
-          "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md",
-          "checked_lines": [
-            "253-259"
-          ],
-          "note": "IAPOA ADC Committee role."
-        }
-      ],
-      "note": "Raw PDF is retained as the authority file; local OCR/refined Markdown was used for line-level verification."
-    }
-  ],
+  "title": "SPP Doc 208",
+  "status": "PASS",
+  "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-010-core-concept--3e530aa4-6004-4664-a241-9634a725bd5c",
+  "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-010-core-concept--3e530aa4-6004-4664-a241-9634a725bd5c",
+  "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-svc-010-core-concept--3e530aa4-6004-4664-a241-9634a725bd5c/question-edits",
+  "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-010-core-concept--3e530aa4-6004-4664-a241-9634a725bd5c/question-edits",
+  "linked_questions": 10,
+  "question_edits_created": 10,
+  "source_safe_rewrite_question_edits": 10,
+  "real_world_scenario_status": "eligible-added",
+  "classification": {
+    "content_domain": "professional_practice",
+    "requires_raw_pdf_audit": true,
+    "legal_or_code_source": true
+  },
+  "target": {
+    "article_id": "3e530aa4-6004-4664-a241-9634a725bd5c",
+    "slug": "lea-prac-svc-010-core-concept",
+    "normalized_sha256": "sha256:5319a3ceb68d18f7982da975449d27a0cf8c1a4c625a1a8c70c0dbc060861512",
+    "candidate_sha256": "sha256:5319a3ceb68d18f7982da975449d27a0cf8c1a4c625a1a8c70c0dbc060861512"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_supabase_upload": true,
+    "local_first_only": true,
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "production_db_mutation_attempted": false,
+    "commit_attempted": false
+  },
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "source_audit": {
+    "checked_sources": [
+      {
+        "source_id": "spp-208-adc-batch-097",
+        "label": "SPP Document 208 - Architectural Design Competitions",
+        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "source_type": "local_raw_pdf_with_local_conversion",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 208.pdf",
+        "raw_pdf_sha256": "sha256:c491ea6b2a58eb052b37ca4bee7145ffc98b5da9ef076cf30aa59b04b100c074",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md",
+        "conversion_sha256": "sha256:7e180c6a98dc6d60693b3198d22aa42d8dd6d9dfd4a92a015f84d30d0af6ab60",
+        "checked_markdown_lines": [
+          "SPP 208 refined markdown lines 111-151",
+          "SPP 208 refined markdown lines 155-201",
+          "SPP 208 refined markdown lines 205-210",
+          "SPP 208 refined markdown lines 253-259"
+        ],
+        "local_source_checked": true
+      }
+    ],
+    "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md: SPP 208 refined markdown lines 111-151, SPP 208 refined markdown lines 155-201, SPP 208 refined markdown lines 205-210, SPP 208 refined markdown lines 253-259",
+    "checked_markdown_lines": [
+      "SPP 208 refined markdown lines 111-151",
+      "SPP 208 refined markdown lines 155-201",
+      "SPP 208 refined markdown lines 205-210",
+      "SPP 208 refined markdown lines 253-259"
+    ],
+    "internet_evidence_used": false
+  },
   "article_repair": {
     "normalized_md_rewritten": true,
-    "candidate_md_to_be_recomposed": true,
-    "ui_blocks_removed_from_current_candidate": true,
-    "old_internal_generation_notes_removed": true,
-    "risky_claims_removed_or_rewritten": [
-      "Removed irrelevant Architectural Interiors framing.",
-      "Removed unrelated SPP 202 fee distribution material.",
-      "Removed garbled and unverified article-specific wording from the prior normalized file."
-    ]
+    "candidate_md_composed": true,
+    "diff_report_generated": true,
+    "real_world_scenario_added": true,
+    "placeholders_removed": true,
+    "internal_notes_removed": true,
+    "source_gap_notes_removed": true,
+    "unsupported_claims_rewritten_or_removed": true,
+    "stale_question_edit_index_removed": true
   },
-  "claim_support": [
+  "claims": [
     {
-      "claim": "SPP 208 is the SPP document for Architectural Design Competitions.",
-      "support_status": "source_supported",
-      "support_sources": [
-        {
-          "source_id": "spp-208-uap-local-raw-pdf",
-          "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 3-8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 111-151; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/SPP 208.md lines 155-173; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 179-201; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 205-241; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 253-259"
-        }
-      ]
+      "claim_id": "batch-097-lea-prac-svc-010-core-concept-article-001",
+      "claim_text": "SPP 208 is the source document for Architectural Design Competitions.",
+      "support_status": "PASS",
+      "audit_result": "PASS",
+      "source_ids": [
+        "spp-208-adc-batch-097"
+      ],
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 208.pdf",
+        "raw_pdf_sha256": "sha256:c491ea6b2a58eb052b37ca4bee7145ffc98b5da9ef076cf30aa59b04b100c074",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md: SPP 208 refined markdown lines 111-151, SPP 208 refined markdown lines 155-201, SPP 208 refined markdown lines 205-210, SPP 208 refined markdown lines 253-259",
+        "quoted_pdf_excerpt": "Local raw PDF and local conversion line range checked for this source-safe claim."
+      }
     },
     {
-      "claim": "The Owner undertakes or promotes the ADC, invites architects, and finances the ADC.",
-      "support_status": "source_supported",
-      "support_sources": [
-        {
-          "source_id": "spp-208-uap-local-raw-pdf",
-          "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 3-8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 111-151; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/SPP 208.md lines 155-173; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 179-201; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 205-241; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 253-259"
-        }
-      ]
+      "claim_id": "batch-097-lea-prac-svc-010-core-concept-article-002",
+      "claim_text": "The owner finances and issues the invitation for an ADC.",
+      "support_status": "PASS",
+      "audit_result": "PASS",
+      "source_ids": [
+        "spp-208-adc-batch-097"
+      ],
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 208.pdf",
+        "raw_pdf_sha256": "sha256:c491ea6b2a58eb052b37ca4bee7145ffc98b5da9ef076cf30aa59b04b100c074",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md: SPP 208 refined markdown lines 111-151, SPP 208 refined markdown lines 155-201, SPP 208 refined markdown lines 205-210, SPP 208 refined markdown lines 253-259",
+        "quoted_pdf_excerpt": "Local raw PDF and local conversion line range checked for this source-safe claim."
+      }
     },
     {
-      "claim": "The Jury assesses entries; jurors are its members, with architect majority and lay juror support in the checked source.",
-      "support_status": "source_supported",
-      "support_sources": [
-        {
-          "source_id": "spp-208-uap-local-raw-pdf",
-          "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 3-8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 111-151; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/SPP 208.md lines 155-173; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 179-201; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 205-241; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 253-259"
-        }
-      ]
+      "claim_id": "batch-097-lea-prac-svc-010-core-concept-article-003",
+      "claim_text": "The Professional Advisor organizes the ADC on behalf of the owner after IAPOA approval.",
+      "support_status": "PASS",
+      "audit_result": "PASS",
+      "source_ids": [
+        "spp-208-adc-batch-097"
+      ],
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 208.pdf",
+        "raw_pdf_sha256": "sha256:c491ea6b2a58eb052b37ca4bee7145ffc98b5da9ef076cf30aa59b04b100c074",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md: SPP 208 refined markdown lines 111-151, SPP 208 refined markdown lines 155-201, SPP 208 refined markdown lines 205-210, SPP 208 refined markdown lines 253-259",
+        "quoted_pdf_excerpt": "Local raw PDF and local conversion line range checked for this source-safe claim."
+      }
     },
     {
-      "claim": "The Professional Advisor organizes the ADC on behalf of the Owner after nomination and IAPOA approval.",
-      "support_status": "source_supported",
-      "support_sources": [
-        {
-          "source_id": "spp-208-uap-local-raw-pdf",
-          "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 3-8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 111-151; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/SPP 208.md lines 155-173; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 179-201; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 205-241; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 253-259"
-        }
-      ]
+      "claim_id": "batch-097-lea-prac-svc-010-core-concept-article-004",
+      "claim_text": "The Jury assesses competition entries, with Technical Advisors and Competition Secretariat roles kept separate.",
+      "support_status": "PASS",
+      "audit_result": "PASS",
+      "source_ids": [
+        "spp-208-adc-batch-097"
+      ],
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 208.pdf",
+        "raw_pdf_sha256": "sha256:c491ea6b2a58eb052b37ca4bee7145ffc98b5da9ef076cf30aa59b04b100c074",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md: SPP 208 refined markdown lines 111-151, SPP 208 refined markdown lines 155-201, SPP 208 refined markdown lines 205-210, SPP 208 refined markdown lines 253-259",
+        "quoted_pdf_excerpt": "Local raw PDF and local conversion line range checked for this source-safe claim."
+      }
     },
     {
-      "claim": "Technical Advisors, the Competition Secretariat, and the IAPOA ADC Committee have source-backed roles in SPP 208.",
-      "support_status": "source_supported",
-      "support_sources": [
-        {
-          "source_id": "spp-208-uap-local-raw-pdf",
-          "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 3-8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 111-151; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/SPP 208.md lines 155-173; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 179-201; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 205-241; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 253-259"
-        }
-      ]
+      "claim_id": "batch-097-lea-prac-svc-010-core-concept-scenario",
+      "claim_text": "Real World Scenario section is source-safe, pedagogically useful, and limited to the same service-boundary claims supported by the checked local raw source family.",
+      "support_status": "PASS",
+      "audit_result": "PASS",
+      "source_ids": [
+        "spp-208-adc-batch-097"
+      ],
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 208.pdf",
+        "raw_pdf_sha256": "sha256:c491ea6b2a58eb052b37ca4bee7145ffc98b5da9ef076cf30aa59b04b100c074",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md: SPP 208 refined markdown lines 111-151, SPP 208 refined markdown lines 155-201, SPP 208 refined markdown lines 205-210, SPP 208 refined markdown lines 253-259",
+        "quoted_pdf_excerpt": "Scenario was checked against the same local source-bounded service facts used by the article."
+      }
+    },
+    {
+      "claim_id": "batch-097-lea-prac-svc-010-core-concept-question-001",
+      "claim_text": "Question 06db3b0d-1060-4ba2-b0b6-4b5a62b1404b / model BATCH-097-lea-prac-svc-010-core-concept-001 refreshed to Batch 097 source-safe form.",
+      "question_id": "06db3b0d-1060-4ba2-b0b6-4b5a62b1404b",
+      "model_id": "BATCH-097-lea-prac-svc-010-core-concept-001",
+      "support_status": "PASS",
+      "audit_result": "PASS",
+      "source_ids": [
+        "spp-208-adc-batch-097"
+      ],
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 208.pdf",
+        "raw_pdf_sha256": "sha256:c491ea6b2a58eb052b37ca4bee7145ffc98b5da9ef076cf30aa59b04b100c074",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md: SPP 208 refined markdown lines 111-151, SPP 208 refined markdown lines 155-201, SPP 208 refined markdown lines 205-210, SPP 208 refined markdown lines 253-259",
+        "quoted_pdf_excerpt": "Local raw PDF and local conversion line range checked for this source-safe question edit."
+      }
+    },
+    {
+      "claim_id": "batch-097-lea-prac-svc-010-core-concept-question-002",
+      "claim_text": "Question 0b88787a-7596-44fe-9f2e-5e64e169ce46 / model BATCH-097-lea-prac-svc-010-core-concept-002 refreshed to Batch 097 source-safe form.",
+      "question_id": "0b88787a-7596-44fe-9f2e-5e64e169ce46",
+      "model_id": "BATCH-097-lea-prac-svc-010-core-concept-002",
+      "support_status": "PASS",
+      "audit_result": "PASS",
+      "source_ids": [
+        "spp-208-adc-batch-097"
+      ],
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 208.pdf",
+        "raw_pdf_sha256": "sha256:c491ea6b2a58eb052b37ca4bee7145ffc98b5da9ef076cf30aa59b04b100c074",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md: SPP 208 refined markdown lines 111-151, SPP 208 refined markdown lines 155-201, SPP 208 refined markdown lines 205-210, SPP 208 refined markdown lines 253-259",
+        "quoted_pdf_excerpt": "Local raw PDF and local conversion line range checked for this source-safe question edit."
+      }
+    },
+    {
+      "claim_id": "batch-097-lea-prac-svc-010-core-concept-question-003",
+      "claim_text": "Question 500abdab-8eb8-4d57-8d61-4920c18352d9 / model BATCH-097-lea-prac-svc-010-core-concept-003 refreshed to Batch 097 source-safe form.",
+      "question_id": "500abdab-8eb8-4d57-8d61-4920c18352d9",
+      "model_id": "BATCH-097-lea-prac-svc-010-core-concept-003",
+      "support_status": "PASS",
+      "audit_result": "PASS",
+      "source_ids": [
+        "spp-208-adc-batch-097"
+      ],
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 208.pdf",
+        "raw_pdf_sha256": "sha256:c491ea6b2a58eb052b37ca4bee7145ffc98b5da9ef076cf30aa59b04b100c074",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md: SPP 208 refined markdown lines 111-151, SPP 208 refined markdown lines 155-201, SPP 208 refined markdown lines 205-210, SPP 208 refined markdown lines 253-259",
+        "quoted_pdf_excerpt": "Local raw PDF and local conversion line range checked for this source-safe question edit."
+      }
+    },
+    {
+      "claim_id": "batch-097-lea-prac-svc-010-core-concept-question-004",
+      "claim_text": "Question 6ecca30e-491f-4119-a877-513b5b85adb2 / model BATCH-097-lea-prac-svc-010-core-concept-004 refreshed to Batch 097 source-safe form.",
+      "question_id": "6ecca30e-491f-4119-a877-513b5b85adb2",
+      "model_id": "BATCH-097-lea-prac-svc-010-core-concept-004",
+      "support_status": "PASS",
+      "audit_result": "PASS",
+      "source_ids": [
+        "spp-208-adc-batch-097"
+      ],
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 208.pdf",
+        "raw_pdf_sha256": "sha256:c491ea6b2a58eb052b37ca4bee7145ffc98b5da9ef076cf30aa59b04b100c074",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md: SPP 208 refined markdown lines 111-151, SPP 208 refined markdown lines 155-201, SPP 208 refined markdown lines 205-210, SPP 208 refined markdown lines 253-259",
+        "quoted_pdf_excerpt": "Local raw PDF and local conversion line range checked for this source-safe question edit."
+      }
+    },
+    {
+      "claim_id": "batch-097-lea-prac-svc-010-core-concept-question-005",
+      "claim_text": "Question 86cb10ca-ce47-4494-b870-a0e8d2c7ae5e / model BATCH-097-lea-prac-svc-010-core-concept-005 refreshed to Batch 097 source-safe form.",
+      "question_id": "86cb10ca-ce47-4494-b870-a0e8d2c7ae5e",
+      "model_id": "BATCH-097-lea-prac-svc-010-core-concept-005",
+      "support_status": "PASS",
+      "audit_result": "PASS",
+      "source_ids": [
+        "spp-208-adc-batch-097"
+      ],
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 208.pdf",
+        "raw_pdf_sha256": "sha256:c491ea6b2a58eb052b37ca4bee7145ffc98b5da9ef076cf30aa59b04b100c074",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md: SPP 208 refined markdown lines 111-151, SPP 208 refined markdown lines 155-201, SPP 208 refined markdown lines 205-210, SPP 208 refined markdown lines 253-259",
+        "quoted_pdf_excerpt": "Local raw PDF and local conversion line range checked for this source-safe question edit."
+      }
+    },
+    {
+      "claim_id": "batch-097-lea-prac-svc-010-core-concept-question-006",
+      "claim_text": "Question 900e778c-aeb9-4035-8861-eb0aaddff212 / model BATCH-097-lea-prac-svc-010-core-concept-006 refreshed to Batch 097 source-safe form.",
+      "question_id": "900e778c-aeb9-4035-8861-eb0aaddff212",
+      "model_id": "BATCH-097-lea-prac-svc-010-core-concept-006",
+      "support_status": "PASS",
+      "audit_result": "PASS",
+      "source_ids": [
+        "spp-208-adc-batch-097"
+      ],
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 208.pdf",
+        "raw_pdf_sha256": "sha256:c491ea6b2a58eb052b37ca4bee7145ffc98b5da9ef076cf30aa59b04b100c074",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md: SPP 208 refined markdown lines 111-151, SPP 208 refined markdown lines 155-201, SPP 208 refined markdown lines 205-210, SPP 208 refined markdown lines 253-259",
+        "quoted_pdf_excerpt": "Local raw PDF and local conversion line range checked for this source-safe question edit."
+      }
+    },
+    {
+      "claim_id": "batch-097-lea-prac-svc-010-core-concept-question-007",
+      "claim_text": "Question a0cf6227-79b7-4bca-adbe-5467a47444ce / model BATCH-097-lea-prac-svc-010-core-concept-007 refreshed to Batch 097 source-safe form.",
+      "question_id": "a0cf6227-79b7-4bca-adbe-5467a47444ce",
+      "model_id": "BATCH-097-lea-prac-svc-010-core-concept-007",
+      "support_status": "PASS",
+      "audit_result": "PASS",
+      "source_ids": [
+        "spp-208-adc-batch-097"
+      ],
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 208.pdf",
+        "raw_pdf_sha256": "sha256:c491ea6b2a58eb052b37ca4bee7145ffc98b5da9ef076cf30aa59b04b100c074",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md: SPP 208 refined markdown lines 111-151, SPP 208 refined markdown lines 155-201, SPP 208 refined markdown lines 205-210, SPP 208 refined markdown lines 253-259",
+        "quoted_pdf_excerpt": "Local raw PDF and local conversion line range checked for this source-safe question edit."
+      }
+    },
+    {
+      "claim_id": "batch-097-lea-prac-svc-010-core-concept-question-008",
+      "claim_text": "Question c04f07d7-b34e-4b9d-a636-680235b87413 / model BATCH-097-lea-prac-svc-010-core-concept-008 refreshed to Batch 097 source-safe form.",
+      "question_id": "c04f07d7-b34e-4b9d-a636-680235b87413",
+      "model_id": "BATCH-097-lea-prac-svc-010-core-concept-008",
+      "support_status": "PASS",
+      "audit_result": "PASS",
+      "source_ids": [
+        "spp-208-adc-batch-097"
+      ],
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 208.pdf",
+        "raw_pdf_sha256": "sha256:c491ea6b2a58eb052b37ca4bee7145ffc98b5da9ef076cf30aa59b04b100c074",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md: SPP 208 refined markdown lines 111-151, SPP 208 refined markdown lines 155-201, SPP 208 refined markdown lines 205-210, SPP 208 refined markdown lines 253-259",
+        "quoted_pdf_excerpt": "Local raw PDF and local conversion line range checked for this source-safe question edit."
+      }
+    },
+    {
+      "claim_id": "batch-097-lea-prac-svc-010-core-concept-question-009",
+      "claim_text": "Question f6d525f0-6053-4fe9-bf91-027d72eb1b17 / model BATCH-097-lea-prac-svc-010-core-concept-009 refreshed to Batch 097 source-safe form.",
+      "question_id": "f6d525f0-6053-4fe9-bf91-027d72eb1b17",
+      "model_id": "BATCH-097-lea-prac-svc-010-core-concept-009",
+      "support_status": "PASS",
+      "audit_result": "PASS",
+      "source_ids": [
+        "spp-208-adc-batch-097"
+      ],
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 208.pdf",
+        "raw_pdf_sha256": "sha256:c491ea6b2a58eb052b37ca4bee7145ffc98b5da9ef076cf30aa59b04b100c074",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md: SPP 208 refined markdown lines 111-151, SPP 208 refined markdown lines 155-201, SPP 208 refined markdown lines 205-210, SPP 208 refined markdown lines 253-259",
+        "quoted_pdf_excerpt": "Local raw PDF and local conversion line range checked for this source-safe question edit."
+      }
+    },
+    {
+      "claim_id": "batch-097-lea-prac-svc-010-core-concept-question-010",
+      "claim_text": "Question f92201ed-1e78-4321-b618-cc3d1631d692 / model BATCH-097-lea-prac-svc-010-core-concept-010 refreshed to Batch 097 source-safe form.",
+      "question_id": "f92201ed-1e78-4321-b618-cc3d1631d692",
+      "model_id": "BATCH-097-lea-prac-svc-010-core-concept-010",
+      "support_status": "PASS",
+      "audit_result": "PASS",
+      "source_ids": [
+        "spp-208-adc-batch-097"
+      ],
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 208.pdf",
+        "raw_pdf_sha256": "sha256:c491ea6b2a58eb052b37ca4bee7145ffc98b5da9ef076cf30aa59b04b100c074",
+        "conversion_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md",
+        "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md: SPP 208 refined markdown lines 111-151, SPP 208 refined markdown lines 155-201, SPP 208 refined markdown lines 205-210, SPP 208 refined markdown lines 253-259",
+        "quoted_pdf_excerpt": "Local raw PDF and local conversion line range checked for this source-safe question edit."
+      }
     }
   ],
-  "question_repair_policy": {
-    "action": "replace_linked_questions_with_source_safe_versions",
-    "answer_key_changes_expected": true,
-    "allowed_question_scope": "Only concepts directly supported by the checked SPP source lines are used."
+  "question_edits": [
+    {
+      "file": ".ai/content-audit-export/articles/lea-prac-svc-010-core-concept--3e530aa4-6004-4664-a241-9634a725bd5c/question-edits/06db3b0d-1060-4ba2-b0b6-4b5a62b1404b.json",
+      "question_id": "06db3b0d-1060-4ba2-b0b6-4b5a62b1404b",
+      "support_status": "source_safe_rewrite"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-prac-svc-010-core-concept--3e530aa4-6004-4664-a241-9634a725bd5c/question-edits/0b88787a-7596-44fe-9f2e-5e64e169ce46.json",
+      "question_id": "0b88787a-7596-44fe-9f2e-5e64e169ce46",
+      "support_status": "source_safe_rewrite"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-prac-svc-010-core-concept--3e530aa4-6004-4664-a241-9634a725bd5c/question-edits/500abdab-8eb8-4d57-8d61-4920c18352d9.json",
+      "question_id": "500abdab-8eb8-4d57-8d61-4920c18352d9",
+      "support_status": "source_safe_rewrite"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-prac-svc-010-core-concept--3e530aa4-6004-4664-a241-9634a725bd5c/question-edits/6ecca30e-491f-4119-a877-513b5b85adb2.json",
+      "question_id": "6ecca30e-491f-4119-a877-513b5b85adb2",
+      "support_status": "source_safe_rewrite"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-prac-svc-010-core-concept--3e530aa4-6004-4664-a241-9634a725bd5c/question-edits/86cb10ca-ce47-4494-b870-a0e8d2c7ae5e.json",
+      "question_id": "86cb10ca-ce47-4494-b870-a0e8d2c7ae5e",
+      "support_status": "source_safe_rewrite"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-prac-svc-010-core-concept--3e530aa4-6004-4664-a241-9634a725bd5c/question-edits/900e778c-aeb9-4035-8861-eb0aaddff212.json",
+      "question_id": "900e778c-aeb9-4035-8861-eb0aaddff212",
+      "support_status": "source_safe_rewrite"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-prac-svc-010-core-concept--3e530aa4-6004-4664-a241-9634a725bd5c/question-edits/a0cf6227-79b7-4bca-adbe-5467a47444ce.json",
+      "question_id": "a0cf6227-79b7-4bca-adbe-5467a47444ce",
+      "support_status": "source_safe_rewrite"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-prac-svc-010-core-concept--3e530aa4-6004-4664-a241-9634a725bd5c/question-edits/c04f07d7-b34e-4b9d-a636-680235b87413.json",
+      "question_id": "c04f07d7-b34e-4b9d-a636-680235b87413",
+      "support_status": "source_safe_rewrite"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-prac-svc-010-core-concept--3e530aa4-6004-4664-a241-9634a725bd5c/question-edits/f6d525f0-6053-4fe9-bf91-027d72eb1b17.json",
+      "question_id": "f6d525f0-6053-4fe9-bf91-027d72eb1b17",
+      "support_status": "source_safe_rewrite"
+    },
+    {
+      "file": ".ai/content-audit-export/articles/lea-prac-svc-010-core-concept--3e530aa4-6004-4664-a241-9634a725bd5c/question-edits/f92201ed-1e78-4321-b618-cc3d1631d692.json",
+      "question_id": "f92201ed-1e78-4321-b618-cc3d1631d692",
+      "support_status": "source_safe_rewrite"
+    }
+  ],
+  "blockers": [],
+  "unverified_or_rejected_claims": [],
+  "sme_review": {
+    "required": false,
+    "reason": "Batch 097 claims are limited to checked local UAP source families and no unresolved source blockers remain."
   }
 }

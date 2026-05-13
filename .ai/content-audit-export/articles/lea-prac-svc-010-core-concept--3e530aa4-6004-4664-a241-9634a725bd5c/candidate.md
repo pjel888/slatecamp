@@ -18,3 +18,7 @@ SPP Document 208 is the standard for Architectural Design Competitions. The chec
 ## Exam Use
 
 For source-safe questions, match each SPP 208 role to its function. Do not import SPP 202 fee distributions, SPP 203 specialized services, or SPP 204-A supervision scope into this ADC cluster.
+
+## Real World Scenario
+
+An owner plans a design competition for a civic building. In source-safe SPP 208 framing, the owner finances and issues the invitation, the Professional Advisor organizes the ADC on the owner's behalf after IAPOA approval, the Jury assesses the entries, Technical Advisors supply specialist information to the jurors when needed, and the Competition Secretariat assists the Professional Advisor and Jury with administration. The exam trap is to assign daily inspection, construction management, or regular design-service payment duties to the ADC roles; those belong to other SPP documents, not this competition-service cluster.

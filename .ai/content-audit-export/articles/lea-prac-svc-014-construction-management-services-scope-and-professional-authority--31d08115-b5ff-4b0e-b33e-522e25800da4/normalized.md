@@ -32,6 +32,10 @@ The individual CM, or the principal of the CM firm, must be a state-regulated pr
 
 The source-safe compensation rule is direct: construction management is not part of the architect's regular services, so services rendered by the architect as CM are separately compensated.
 
+## Real World Scenario
+
+An owner hires an architect as Construction Manager for a complex project that needs cost and time control while preserving design quality. The source-safe SPP 204-B distinction is that the CM coordinates, supervises, controls cost and time, checks quality, and keeps records, but must not directly take over the contractor's work or impose methods, systems, or designs that impair the architect-of-record's design concept. For exam use, separate the CM's owner-facing management responsibility from contractor liability and from regular design services; the CM service is separately compensated.
+
 ## Common Mistakes
 
 - Treating CM as part of regular design services with no separate compensation.

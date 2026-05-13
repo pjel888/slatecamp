@@ -1,0 +1,472 @@
+{
+  "artifact_type": "source-audited-local-first-ledger",
+  "batch_number": "097",
+  "batch_id": "source-audited-article-batch-097-local-first",
+  "generated_at": "2026-05-13T08:52:00+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "manifest_path": ".ai/03_plans/production-line-batch-097-manifest.json",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "blockers": [],
+  "totals": {
+    "selected_articles": 5,
+    "linked_questions": 50,
+    "question_edits": 50,
+    "source_safe_question_edits": 50,
+    "expected_linked_questions": 50,
+    "expected_question_edits": 50,
+    "scenario_eligible_added": 5,
+    "scenario_eligible_deferred": 0,
+    "scenario_not_applicable": 0,
+    "source_hash_checks": 16,
+    "source_hash_failures": 0,
+    "scoped_json_files_parsed": 107,
+    "scoped_json_parse_failures": 0,
+    "stale_compose_error_matches": 0,
+    "candidate_placeholder_matches": 0,
+    "internal_note_source_gap_matches": 0,
+    "component_usage_warnings": 5,
+    "blockers": 0
+  },
+  "exact_improved_article_folder_paths": [
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-010-core-concept--3e530aa4-6004-4664-a241-9634a725bd5c",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-011-core-concept--2ec8e3f1-4aa7-443f-8ca1-a77638b2a713",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations--b912733e-1018-4559-bd53-6c4ca2506e0d",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-013-full-time-supervision-services-construction-phase-administration--b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-014-construction-management-services-scope-and-professional-authority--31d08115-b5ff-4b0e-b33e-522e25800da4"
+  ],
+  "exact_question_edits_paths": [
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-010-core-concept--3e530aa4-6004-4664-a241-9634a725bd5c/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-011-core-concept--2ec8e3f1-4aa7-443f-8ca1-a77638b2a713/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations--b912733e-1018-4559-bd53-6c4ca2506e0d/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-013-full-time-supervision-services-construction-phase-administration--b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-014-construction-management-services-scope-and-professional-authority--31d08115-b5ff-4b0e-b33e-522e25800da4/question-edits"
+  ],
+  "articles": [
+    {
+      "article_id": "3e530aa4-6004-4664-a241-9634a725bd5c",
+      "slug": "lea-prac-svc-010-core-concept",
+      "title": "SPP Doc 208",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-010-core-concept--3e530aa4-6004-4664-a241-9634a725bd5c",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-010-core-concept--3e530aa4-6004-4664-a241-9634a725bd5c",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-svc-010-core-concept--3e530aa4-6004-4664-a241-9634a725bd5c/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-svc-010-core-concept--3e530aa4-6004-4664-a241-9634a725bd5c/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/lea-prac-svc-010-core-concept--3e530aa4-6004-4664-a241-9634a725bd5c/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-svc-010-core-concept--3e530aa4-6004-4664-a241-9634a725bd5c/source-audit-evidence.json",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-prac-svc-010-core-concept--3e530aa4-6004-4664-a241-9634a725bd5c/question-edits",
+      "question_edits_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-010-core-concept--3e530aa4-6004-4664-a241-9634a725bd5c/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "question_edit_files": [
+        "06db3b0d-1060-4ba2-b0b6-4b5a62b1404b.json",
+        "0b88787a-7596-44fe-9f2e-5e64e169ce46.json",
+        "500abdab-8eb8-4d57-8d61-4920c18352d9.json",
+        "6ecca30e-491f-4119-a877-513b5b85adb2.json",
+        "86cb10ca-ce47-4494-b870-a0e8d2c7ae5e.json",
+        "900e778c-aeb9-4035-8861-eb0aaddff212.json",
+        "a0cf6227-79b7-4bca-adbe-5467a47444ce.json",
+        "c04f07d7-b34e-4b9d-a636-680235b87413.json",
+        "f6d525f0-6053-4fe9-bf91-027d72eb1b17.json",
+        "f92201ed-1e78-4321-b618-cc3d1631d692.json"
+      ],
+      "source_safe_question_edits": 10,
+      "source_count": 1,
+      "normalized_sha256": "sha256:5319a3ceb68d18f7982da975449d27a0cf8c1a4c625a1a8c70c0dbc060861512",
+      "candidate_sha256": "sha256:5319a3ceb68d18f7982da975449d27a0cf8c1a4c625a1a8c70c0dbc060861512",
+      "sources_sha256": "sha256:67c39e9d4883952dfa4918c0de44d40107b530c7f41cb4bbd2e88b42208c0f32",
+      "scenario_status": "eligible-added",
+      "scenario_summary": "Added source-safe ADC role scenario separating Owner, Professional Advisor, Jury, Technical Advisors, and Competition Secretariat from design/construction service duties.",
+      "scenario_excerpt": "An owner plans a design competition for a civic building. In source-safe SPP 208 framing, the owner finances and issues the invitation, the Professional Advisor organizes the ADC on the owner's behalf after IAPOA approval, the Jury assesses the entries, Technical Advisors supply specialist information to the jurors when needed, and the Competition Secretariat assists the Professional Advisor and Jury with administration. The exam trap is to assign daily inspection, construction management, or regular design-service payment duties to the ADC roles; those belong to other SPP documents, not this competition-service cluster.",
+      "compose": {
+        "blockers": 0,
+        "safe_to_diff": true
+      },
+      "diff": {
+        "blockers": 0,
+        "safe_to_push": true,
+        "locally_safe_to_push": true
+      },
+      "ui_block_edit_validation": {
+        "valid": true,
+        "blockers": 0,
+        "warnings": 0
+      },
+      "validation_warnings": [
+        "component-usage.json has not been generated; package validator warning only"
+      ],
+      "blockers": [],
+      "source_locators": [
+        {
+          "source_id": "spp-208-adc-batch-097",
+          "label": "SPP Document 208 - Architectural Design Competitions",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 208.pdf",
+          "raw_pdf_sha256": "sha256:c491ea6b2a58eb052b37ca4bee7145ffc98b5da9ef076cf30aa59b04b100c074",
+          "conversion_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md",
+          "conversion_markdown_sha256": "sha256:7e180c6a98dc6d60693b3198d22aa42d8dd6d9dfd4a92a015f84d30d0af6ab60",
+          "conversion_markdown_field": "conversion_sha256",
+          "checked_markdown_lines": [
+            "SPP 208 refined markdown lines 111-151",
+            "SPP 208 refined markdown lines 155-201",
+            "SPP 208 refined markdown lines 205-210",
+            "SPP 208 refined markdown lines 253-259"
+          ]
+        }
+      ],
+      "historical_overlap": {
+        "current_serial_source_audited_batches": [],
+        "historical_local_first_or_reaudit_artifacts": [
+          "Batch 020 local-first source-audited repair artifact"
+        ],
+        "historical_published_article_question_artifacts": [
+          "legacy published/article/question artifacts exist before this local-first repair line; not current serial accepted-batch overlap"
+        ]
+      }
+    },
+    {
+      "article_id": "2ec8e3f1-4aa7-443f-8ca1-a77638b2a713",
+      "slug": "lea-prac-svc-011-core-concept",
+      "title": "Professional Architectural Consulting Services",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-011-core-concept--2ec8e3f1-4aa7-443f-8ca1-a77638b2a713",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-011-core-concept--2ec8e3f1-4aa7-443f-8ca1-a77638b2a713",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-svc-011-core-concept--2ec8e3f1-4aa7-443f-8ca1-a77638b2a713/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-svc-011-core-concept--2ec8e3f1-4aa7-443f-8ca1-a77638b2a713/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/lea-prac-svc-011-core-concept--2ec8e3f1-4aa7-443f-8ca1-a77638b2a713/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-svc-011-core-concept--2ec8e3f1-4aa7-443f-8ca1-a77638b2a713/source-audit-evidence.json",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-prac-svc-011-core-concept--2ec8e3f1-4aa7-443f-8ca1-a77638b2a713/question-edits",
+      "question_edits_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-011-core-concept--2ec8e3f1-4aa7-443f-8ca1-a77638b2a713/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "question_edit_files": [
+        "0dafc31c-192d-48be-87b2-daa2a11ce3e9.json",
+        "1df3290c-a3f3-4e14-8a6e-37c37601ef6e.json",
+        "226c0498-e69f-4a48-a0e3-0ab75f0bf3f6.json",
+        "3005606d-8682-4445-85eb-ec2648a50401.json",
+        "36ce1dc0-e047-4a92-bf53-4c9952322e94.json",
+        "74785634-59af-4a3a-9fe0-accbc9c28235.json",
+        "78444811-6e06-41b6-900e-62ddbd1e66cd.json",
+        "7e3de747-0f6d-49f1-badc-3628f30242a7.json",
+        "b434b587-956b-4a06-9f82-20bcdef27695.json",
+        "ff764f9e-d0b3-480d-a35e-ec283775bf3e.json"
+      ],
+      "source_safe_question_edits": 10,
+      "source_count": 2,
+      "normalized_sha256": "sha256:f53d3655f9c6dc48a170104aa12ac9d551e7306bc00ee17ac8e2a0324365aee5",
+      "candidate_sha256": "sha256:f53d3655f9c6dc48a170104aa12ac9d551e7306bc00ee17ac8e2a0324365aee5",
+      "sources_sha256": "sha256:511130600f008b3b479abbb7a63b1234b920cdee307b0939412dd57e7deaf71f",
+      "scenario_status": "eligible-added",
+      "scenario_summary": "Added source-safe PACS scenario covering PCA/FPCA qualification, Filipino understudy guardrail for foreign consultants, and compensation-method selection.",
+      "scenario_excerpt": "A local government asks for consulting support on a redevelopment program that includes feasibility work, land-use planning, monitoring, training, and capital investment programming. A source-safe SPP 209 answer starts by checking whether the service is PACS, then whether the consulting architect or consulting firm meets the PCA or firm qualifications. If no qualified Filipino Professional Consulting Architect is available and a foreign consultant is engaged, the source-supported guardrail is the understudy requirement for at least two Filipino RLAs in the same specialization. Compensation should be chosen from the SPP 209 methods according to service type and performance conditions, not treated as one fixed fee for every consulting assignment.",
+      "compose": {
+        "blockers": 0,
+        "safe_to_diff": true
+      },
+      "diff": {
+        "blockers": 0,
+        "safe_to_push": true,
+        "locally_safe_to_push": true
+      },
+      "ui_block_edit_validation": {
+        "valid": true,
+        "blockers": 0,
+        "warnings": 0
+      },
+      "validation_warnings": [
+        "component-usage.json has not been generated; package validator warning only"
+      ],
+      "blockers": [],
+      "source_locators": [
+        {
+          "source_id": "uap-standards-spp-209-pacs-batch-097",
+          "label": "UAP Document Standards of Professional Practice - SPP 209 PACS",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "conversion_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "conversion_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+          "conversion_markdown_field": "conversion_sha256",
+          "checked_markdown_lines": [
+            "UAP Document Standards refined markdown lines 1418-1460",
+            "UAP Document Standards refined markdown lines 1544-1681"
+          ]
+        },
+        {
+          "source_id": "spp-209-pacs-batch-097",
+          "label": "SPP Document 209 - Professional Architectural Consulting Services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 209.pdf",
+          "raw_pdf_sha256": "sha256:c0e805e8bb71adb0a3d31fe1655447d718abba54f546d20cbac3c092268b03c5",
+          "conversion_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 209.md",
+          "conversion_markdown_sha256": "sha256:d596d4cda9d7fc4551ac81786bf0f7063917ecfac79b89bc1810373e3655a4f2",
+          "conversion_markdown_field": "conversion_sha256",
+          "checked_markdown_lines": [
+            "SPP 209 refined markdown title lines 3-8"
+          ]
+        }
+      ],
+      "historical_overlap": {
+        "current_serial_source_audited_batches": [],
+        "historical_local_first_or_reaudit_artifacts": [
+          "Batch 024 local-first source-audited repair artifact"
+        ],
+        "historical_published_article_question_artifacts": [
+          "legacy published/article/question artifacts exist before this local-first repair line; not current serial accepted-batch overlap"
+        ]
+      }
+    },
+    {
+      "article_id": "b912733e-1018-4559-bd53-6c4ca2506e0d",
+      "slug": "lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations",
+      "title": "Architectural Acoustics Lighting Design and Technical Specializations",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations--b912733e-1018-4559-bd53-6c4ca2506e0d",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations--b912733e-1018-4559-bd53-6c4ca2506e0d",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations--b912733e-1018-4559-bd53-6c4ca2506e0d/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations--b912733e-1018-4559-bd53-6c4ca2506e0d/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations--b912733e-1018-4559-bd53-6c4ca2506e0d/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations--b912733e-1018-4559-bd53-6c4ca2506e0d/source-audit-evidence.json",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations--b912733e-1018-4559-bd53-6c4ca2506e0d/question-edits",
+      "question_edits_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations--b912733e-1018-4559-bd53-6c4ca2506e0d/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "question_edit_files": [
+        "1695f6e9-857b-476e-9825-7a671c13996c.json",
+        "21051feb-3e54-40ec-a27d-672697596090.json",
+        "33ce8f73-1908-4b48-b6f9-ec295230325a.json",
+        "53445e63-acfb-4a3f-a3ba-388720f67116.json",
+        "5fc485ae-8c6b-4196-a57b-e18c21d8bbaa.json",
+        "614b45c3-91ee-4eab-ab31-181b077f9fbf.json",
+        "a5b92750-8d63-4321-a3ff-85ca017b3b4e.json",
+        "c10e5add-6408-4c7d-9e7c-89fb0017b442.json",
+        "d7bee01c-0d5f-464d-8c67-02b3a086a4fc.json",
+        "e366f3d0-0b5b-40e9-9791-652a1d76b832.json"
+      ],
+      "source_safe_question_edits": 10,
+      "source_count": 2,
+      "normalized_sha256": "sha256:6eb2f6eb53ab46971bd7ebc7d52813332b7ac2c438dde9194d38494c3ccd7c0e",
+      "candidate_sha256": "sha256:6eb2f6eb53ab46971bd7ebc7d52813332b7ac2c438dde9194d38494c3ccd7c0e",
+      "sources_sha256": "sha256:d46290f3ebf1bfce4044fee13947569d32d1916d194b1792edaa8cd6eef474f0",
+      "scenario_status": "eligible-added",
+      "scenario_summary": "Added source-safe SPP 203 scenario separating acoustic design as a named specialization from directly documented lighting-layout duties and owner-account consultant fees.",
+      "scenario_excerpt": "A theater fit-out asks for acoustic design plus a lighting layout that coordinates illumination, fixture placement, efficiency, energy use, samples, final inspection, and payment evaluation for the lighting subcontractor. A source-safe answer classifies the work under SPP 203 specialized services, then separates what is directly documented for lighting layout and design from the narrower source support for acoustic design as a named specialized service. If the owner hires separate specialist consultants, their fees are for the owner/client's account; do not treat those consultant fees as ordinary SPP 202 regular design fees.",
+      "compose": {
+        "blockers": 0,
+        "safe_to_diff": true
+      },
+      "diff": {
+        "blockers": 0,
+        "safe_to_push": true,
+        "locally_safe_to_push": true
+      },
+      "ui_block_edit_validation": {
+        "valid": true,
+        "blockers": 0,
+        "warnings": 0
+      },
+      "validation_warnings": [
+        "component-usage.json has not been generated; package validator warning only"
+      ],
+      "blockers": [],
+      "source_locators": [
+        {
+          "source_id": "uap-standards-spp-203-specialized-batch-097",
+          "label": "UAP Document Standards of Professional Practice - SPP 203 specialized services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "conversion_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "conversion_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+          "conversion_markdown_field": "conversion_sha256",
+          "checked_markdown_lines": [
+            "UAP Document Standards refined markdown lines 560-590",
+            "UAP Document Standards refined markdown lines 660-689",
+            "UAP Document Standards refined markdown lines 1138-1154"
+          ]
+        },
+        {
+          "source_id": "spp-203-specialized-batch-097",
+          "label": "SPP Document 203 - Specialized Architectural Services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+          "raw_pdf_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+          "conversion_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+          "conversion_markdown_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+          "conversion_markdown_field": "conversion_sha256",
+          "checked_markdown_lines": [
+            "SPP 203 refined markdown lines 101-150",
+            "SPP 203 refined markdown lines 228-232"
+          ]
+        }
+      ],
+      "historical_overlap": {
+        "current_serial_source_audited_batches": [],
+        "historical_local_first_or_reaudit_artifacts": [
+          "Batch 025 local-first source-audited repair artifact"
+        ],
+        "historical_published_article_question_artifacts": [
+          "legacy published/article/question artifacts exist before this local-first repair line; not current serial accepted-batch overlap"
+        ]
+      }
+    },
+    {
+      "article_id": "b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b",
+      "slug": "lea-prac-svc-013-full-time-supervision-services-construction-phase-administration",
+      "title": "Full Time Supervision Services Construction Phase Administration",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-013-full-time-supervision-services-construction-phase-administration--b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-013-full-time-supervision-services-construction-phase-administration--b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-svc-013-full-time-supervision-services-construction-phase-administration--b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-svc-013-full-time-supervision-services-construction-phase-administration--b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/lea-prac-svc-013-full-time-supervision-services-construction-phase-administration--b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-svc-013-full-time-supervision-services-construction-phase-administration--b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b/source-audit-evidence.json",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-prac-svc-013-full-time-supervision-services-construction-phase-administration--b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b/question-edits",
+      "question_edits_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-013-full-time-supervision-services-construction-phase-administration--b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "question_edit_files": [
+        "022b5016-65a5-443c-8115-6810f7faf702.json",
+        "0a7ee1b5-bdbf-4788-9492-15b2028989d0.json",
+        "0c5027b0-68c9-4d58-bb4e-da26fd1fd275.json",
+        "21e2b089-a0db-4b7f-8288-51e2cc075489.json",
+        "6283b7f7-410d-4dfa-857a-848baad36251.json",
+        "8bbabab7-1c86-4831-ace6-3055418dcf6f.json",
+        "9b111974-d268-4013-a159-889b82c921c7.json",
+        "a6f6bed0-fb59-4a43-863a-bdf9d0c4ab73.json",
+        "c99413b1-4c97-4c48-909a-93a8c4fb5277.json",
+        "f955e0ff-f375-4708-bda6-458448f216ed.json"
+      ],
+      "source_safe_question_edits": 10,
+      "source_count": 1,
+      "normalized_sha256": "sha256:97797f25ae425d8f89e11799d3f8d8e3f913a43567f06f3f35a13f5cb1a6d228",
+      "candidate_sha256": "sha256:97797f25ae425d8f89e11799d3f8d8e3f913a43567f06f3f35a13f5cb1a6d228",
+      "sources_sha256": "sha256:9d90361efc7a38651894f2d7e51d0741ccd85971777182bca2ba58b49a6cda1f",
+      "scenario_status": "eligible-added",
+      "scenario_summary": "Added source-safe SPP 204-A scenario narrowing fulltime supervision to quality control, work evaluation, daily inspection reports, and document filing.",
+      "scenario_excerpt": "During construction, the owner asks what a fulltime supervision engagement can safely cover under the checked SPP 204-A source. The source-safe answer is narrow: quality control, evaluation of construction work, daily inspection reports, and filing of documents. If the question asks about contractor liability, construction-management authority limits, or separate CM compensation, route the answer to a directly supported SPP 204-B or other verified source instead of stretching SPP 204-A beyond the checked scope list.",
+      "compose": {
+        "blockers": 0,
+        "safe_to_diff": true
+      },
+      "diff": {
+        "blockers": 0,
+        "safe_to_push": true,
+        "locally_safe_to_push": true
+      },
+      "ui_block_edit_validation": {
+        "valid": true,
+        "blockers": 0,
+        "warnings": 0
+      },
+      "validation_warnings": [
+        "component-usage.json has not been generated; package validator warning only"
+      ],
+      "blockers": [],
+      "source_locators": [
+        {
+          "source_id": "spp-204a-fulltime-supervision-batch-097",
+          "label": "SPP Document 204-A - Fulltime Supervision Services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204A.pdf",
+          "raw_pdf_sha256": "sha256:ec08811ae8611f077fda9f0d1106cc7fab6a1e6210fe6d617637adaa6de083b8",
+          "conversion_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md",
+          "conversion_markdown_sha256": "sha256:9044ca5193245c730509d0022e13d597b62ad9ea969e5e870bd2954faeb89500",
+          "conversion_markdown_field": "conversion_sha256",
+          "checked_markdown_lines": [
+            "SPP 204A refined markdown lines 3-8",
+            "SPP 204A refined markdown lines 201-206"
+          ]
+        }
+      ],
+      "historical_overlap": {
+        "current_serial_source_audited_batches": [],
+        "historical_local_first_or_reaudit_artifacts": [
+          "Batch 020 local-first source-audited repair artifact"
+        ],
+        "historical_published_article_question_artifacts": [
+          "legacy published/article/question artifacts exist before this local-first repair line; not current serial accepted-batch overlap"
+        ]
+      }
+    },
+    {
+      "article_id": "31d08115-b5ff-4b0e-b33e-522e25800da4",
+      "slug": "lea-prac-svc-014-construction-management-services-scope-and-professional-authority",
+      "title": "Construction Management Services Scope and Professional Authority",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-014-construction-management-services-scope-and-professional-authority--31d08115-b5ff-4b0e-b33e-522e25800da4",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-014-construction-management-services-scope-and-professional-authority--31d08115-b5ff-4b0e-b33e-522e25800da4",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-svc-014-construction-management-services-scope-and-professional-authority--31d08115-b5ff-4b0e-b33e-522e25800da4/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-svc-014-construction-management-services-scope-and-professional-authority--31d08115-b5ff-4b0e-b33e-522e25800da4/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/lea-prac-svc-014-construction-management-services-scope-and-professional-authority--31d08115-b5ff-4b0e-b33e-522e25800da4/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-svc-014-construction-management-services-scope-and-professional-authority--31d08115-b5ff-4b0e-b33e-522e25800da4/source-audit-evidence.json",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-prac-svc-014-construction-management-services-scope-and-professional-authority--31d08115-b5ff-4b0e-b33e-522e25800da4/question-edits",
+      "question_edits_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-014-construction-management-services-scope-and-professional-authority--31d08115-b5ff-4b0e-b33e-522e25800da4/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "question_edit_files": [
+        "008ab79e-185d-43ad-bbc8-6445beb9f26b.json",
+        "1b1098cb-d60d-444e-b6f1-aa2fe2810161.json",
+        "1d653a53-5ede-43ab-bd9a-a0d6c963ac2f.json",
+        "2a156f09-7030-4e37-a362-9597b459680f.json",
+        "615f6330-3d53-43a7-8f9e-e6cb0b012892.json",
+        "69712cf4-a584-4b6c-b5ff-87f0e27d385d.json",
+        "bd7a7fd3-7d13-4eb8-a449-42ede25cdbd2.json",
+        "dbf7e720-9ac6-4383-ad42-e9f436162024.json",
+        "f6c7e61b-4498-45fa-9d43-adc2ec9df530.json",
+        "fa3a69f6-cef9-49eb-8348-822ee08aad75.json"
+      ],
+      "source_safe_question_edits": 10,
+      "source_count": 2,
+      "normalized_sha256": "sha256:4ae4b9c0353f7f0a142118a72dfe05c79717bc013dbc2a0a4d75a686444eeedf",
+      "candidate_sha256": "sha256:4ae4b9c0353f7f0a142118a72dfe05c79717bc013dbc2a0a4d75a686444eeedf",
+      "sources_sha256": "sha256:e7a9da5b60678b8eecdbe3b01530eaf134bddda1b635cca5e912d6db7103d52e",
+      "scenario_status": "eligible-added",
+      "scenario_summary": "Added source-safe SPP 204-B scenario separating CM coordination/control/records from contractor liability and regular design services.",
+      "scenario_excerpt": "An owner hires an architect as Construction Manager for a complex project that needs cost and time control while preserving design quality. The source-safe SPP 204-B distinction is that the CM coordinates, supervises, controls cost and time, checks quality, and keeps records, but must not directly take over the contractor's work or impose methods, systems, or designs that impair the architect-of-record's design concept. For exam use, separate the CM's owner-facing management responsibility from contractor liability and from regular design services; the CM service is separately compensated.",
+      "compose": {
+        "blockers": 0,
+        "safe_to_diff": true
+      },
+      "diff": {
+        "blockers": 0,
+        "safe_to_push": true,
+        "locally_safe_to_push": true
+      },
+      "ui_block_edit_validation": {
+        "valid": true,
+        "blockers": 0,
+        "warnings": 0
+      },
+      "validation_warnings": [
+        "component-usage.json has not been generated; package validator warning only"
+      ],
+      "blockers": [],
+      "source_locators": [
+        {
+          "source_id": "uap-standards-spp-204b-cm-batch-097",
+          "label": "UAP Document Standards of Professional Practice - SPP 204-B Construction Management",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "conversion_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "conversion_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+          "conversion_markdown_field": "conversion_sha256",
+          "checked_markdown_lines": [
+            "UAP Document Standards refined markdown lines 983-1030"
+          ]
+        },
+        {
+          "source_id": "spp-204b-cm-batch-097",
+          "label": "SPP Document 204-B - Construction Management Services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 204B.pdf",
+          "raw_pdf_sha256": "sha256:b6bfffcf6e3ca7a4317121b28d5fab9237c2a4642b450573232516ef9dfb697e",
+          "conversion_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204B.md",
+          "conversion_markdown_sha256": "sha256:b49b5fcffe1e1ad48cb618b70d6a369400a0c7460dd3fa7ea471ee5900dc53e8",
+          "conversion_markdown_field": "conversion_sha256",
+          "checked_markdown_lines": [
+            "SPP 204B refined markdown lines 3-8",
+            "SPP 204B refined markdown lines 149-150",
+            "SPP 204B refined markdown lines 257-261"
+          ]
+        }
+      ],
+      "historical_overlap": {
+        "current_serial_source_audited_batches": [],
+        "historical_local_first_or_reaudit_artifacts": [
+          "Batch 024 local-first source-audited repair artifact"
+        ],
+        "historical_published_article_question_artifacts": [
+          "legacy published/article/question artifacts exist before this local-first repair line; not current serial accepted-batch overlap"
+        ]
+      }
+    }
+  ]
+}

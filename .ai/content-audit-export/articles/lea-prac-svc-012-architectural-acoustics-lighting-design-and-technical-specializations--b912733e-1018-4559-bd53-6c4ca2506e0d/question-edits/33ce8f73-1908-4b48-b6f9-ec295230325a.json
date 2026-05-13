@@ -2,9 +2,9 @@
   "question_id": "33ce8f73-1908-4b48-b6f9-ec295230325a",
   "baseline_hash": "sha256:875d69e6ba7b019466ba3fb757fd7f36f3ce5bff9e0c7f669eadb95000217578",
   "action": "replace",
-  "reason": "source-audited-article-batch-025-local-first rewrote this linked question to align with the local source audit for lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations.",
-  "approved_by": "codex-local-source-audit-batch-025",
-  "approved_at": "2026-05-11T18:30:00.000+08:00",
+  "reason": "source-audited-article-batch-097-local-first refreshed this linked question as a source-safe question edit for lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations.",
+  "approved_by": "codex-local-source-audit-batch-097",
+  "approved_at": "2026-05-13T08:07:14+08:00",
   "source_audit_support": {
     "parent_article_id": "b912733e-1018-4559-bd53-6c4ca2506e0d",
     "parent_article_slug": "lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations",
@@ -43,7 +43,7 @@
         "locator": "SPP 203 lines 101-135"
       }
     ],
-    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+    "local_source_safe_action": "Batch 097 retained and refreshed the source-bounded rewrite using checked local raw source evidence."
   },
   "proposed": {
     "text": "How should an LEA answer distinguish SPP 203 from SPP 202 here?",
@@ -71,16 +71,16 @@
     "value_tolerance": 0,
     "question_type": "mcq",
     "rationale": "The UAP source separates specialized allied services under SPP 203 from regular architectural design under SPP 202.",
-    "explanation": "This Batch 025 replacement is tied to the checked local UAP source locator and removes wording that was not needed for source-safe assessment.",
+    "explanation": "This Batch 097 edit is tied to the checked local source locator.",
     "code_citation": "UAP Standards lines 560-583, 660-689, 1138-1152; SPP 203 refined markdown lines 101-135",
     "bloom_level": "analyze",
     "application_context": "professional_practice_source_audit",
     "practice_context": [
       "professional practice",
-      "source-audited batch 025"
+      "source-audited batch 097"
     ],
     "difficulty": 0.56,
     "is_assessment": false,
-    "model_id": "BATCH-025-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations-010"
+    "model_id": "BATCH-097-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations-003"
   }
 }

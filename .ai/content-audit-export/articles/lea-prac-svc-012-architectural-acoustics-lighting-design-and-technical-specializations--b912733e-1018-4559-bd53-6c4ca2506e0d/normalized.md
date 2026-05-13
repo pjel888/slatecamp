@@ -14,6 +14,10 @@ If specialist consultants are engaged separately, the checked source says they a
 
 Do not fold all specialized allied services into ordinary SPP 202 design. For exam purposes, first identify that the service is SPP 203, then apply only the scope supported by the source. Lighting design has documented duties in the checked lines; acoustics is confirmed as an SPP 203 specialized service in the checked lines.
 
+## Real World Scenario
+
+A theater fit-out asks for acoustic design plus a lighting layout that coordinates illumination, fixture placement, efficiency, energy use, samples, final inspection, and payment evaluation for the lighting subcontractor. A source-safe answer classifies the work under SPP 203 specialized services, then separates what is directly documented for lighting layout and design from the narrower source support for acoustic design as a named specialized service. If the owner hires separate specialist consultants, their fees are for the owner/client's account; do not treat those consultant fees as ordinary SPP 202 regular design fees.
+
 ## Source Notes
 
-Local raw PDFs and refined markdown were checked for this Batch 025 repair: UAP Standards lines 560-583, 660-689, and 1138-1152; SPP 203 lines 101-135.
+Local raw PDFs and refined markdown were checked for this Batch 097 repair: UAP Standards lines 560-590, 660-689, and 1138-1154; SPP 203 lines 101-150 and 228-232.

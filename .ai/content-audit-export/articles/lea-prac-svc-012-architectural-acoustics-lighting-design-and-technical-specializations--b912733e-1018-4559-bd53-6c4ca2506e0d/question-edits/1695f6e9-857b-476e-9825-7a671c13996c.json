@@ -2,9 +2,9 @@
   "question_id": "1695f6e9-857b-476e-9825-7a671c13996c",
   "baseline_hash": "sha256:79119a8a74c2933760f3e2aa53f64323da5967bee1fef564d7bb103722b75745",
   "action": "replace",
-  "reason": "source-audited-article-batch-025-local-first rewrote this linked question to align with the local source audit for lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations.",
-  "approved_by": "codex-local-source-audit-batch-025",
-  "approved_at": "2026-05-11T18:30:00.000+08:00",
+  "reason": "source-audited-article-batch-097-local-first refreshed this linked question as a source-safe question edit for lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations.",
+  "approved_by": "codex-local-source-audit-batch-097",
+  "approved_at": "2026-05-13T08:07:14+08:00",
   "source_audit_support": {
     "parent_article_id": "b912733e-1018-4559-bd53-6c4ca2506e0d",
     "parent_article_slug": "lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations",
@@ -43,7 +43,7 @@
         "locator": "SPP 203 lines 101-135"
       }
     ],
-    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+    "local_source_safe_action": "Batch 097 retained and refreshed the source-bounded rewrite using checked local raw source evidence."
   },
   "proposed": {
     "text": "Which deliverable is source-supported for architectural lighting layout and design?",
@@ -71,16 +71,16 @@
     "value_tolerance": 0,
     "question_type": "mcq",
     "rationale": "The lighting design scope includes drawings and specifications for illumination and fixture placement.",
-    "explanation": "This Batch 025 replacement is tied to the checked local UAP source locator and removes wording that was not needed for source-safe assessment.",
+    "explanation": "This Batch 097 edit is tied to the checked local source locator.",
     "code_citation": "UAP Standards lines 560-583, 660-689, 1138-1152; SPP 203 refined markdown lines 101-135",
     "bloom_level": "remember",
     "application_context": "professional_practice_source_audit",
     "practice_context": [
       "professional practice",
-      "source-audited batch 025"
+      "source-audited batch 097"
     ],
     "difficulty": 0.47,
     "is_assessment": false,
-    "model_id": "BATCH-025-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations-004"
+    "model_id": "BATCH-097-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations-001"
   }
 }

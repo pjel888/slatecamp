@@ -2,9 +2,9 @@
   "question_id": "a5b92750-8d63-4321-a3ff-85ca017b3b4e",
   "baseline_hash": "sha256:87821344fd1f194feb946dbb9c63c7803258613a129ef0c0781dee44f293bbcc",
   "action": "replace",
-  "reason": "source-audited-article-batch-025-local-first rewrote this linked question to align with the local source audit for lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations.",
-  "approved_by": "codex-local-source-audit-batch-025",
-  "approved_at": "2026-05-11T18:30:00.000+08:00",
+  "reason": "source-audited-article-batch-097-local-first refreshed this linked question as a source-safe question edit for lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations.",
+  "approved_by": "codex-local-source-audit-batch-097",
+  "approved_at": "2026-05-13T08:07:14+08:00",
   "source_audit_support": {
     "parent_article_id": "b912733e-1018-4559-bd53-6c4ca2506e0d",
     "parent_article_slug": "lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations",
@@ -43,7 +43,7 @@
         "locator": "SPP 203 lines 101-135"
       }
     ],
-    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+    "local_source_safe_action": "Batch 097 retained and refreshed the source-bounded rewrite using checked local raw source evidence."
   },
   "proposed": {
     "text": "A separately engaged specialist consultant is hired for a specialized service. Who pays that consultant under the checked source?",
@@ -71,16 +71,16 @@
     "value_tolerance": 0,
     "question_type": "mcq",
     "rationale": "The checked source states that specialist consultants engaged separately are paid by the Owner/Client.",
-    "explanation": "This Batch 025 replacement is tied to the checked local UAP source locator and removes wording that was not needed for source-safe assessment.",
+    "explanation": "This Batch 097 edit is tied to the checked local source locator.",
     "code_citation": "UAP Standards lines 560-583, 660-689, 1138-1152; SPP 203 refined markdown lines 101-135",
     "bloom_level": "apply",
     "application_context": "professional_practice_source_audit",
     "practice_context": [
       "professional practice",
-      "source-audited batch 025"
+      "source-audited batch 097"
     ],
     "difficulty": 0.54,
     "is_assessment": false,
-    "model_id": "BATCH-025-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations-006"
+    "model_id": "BATCH-097-lea-prac-svc-012-architectural-acoustics-lighting-design-and-technical-specializations-007"
   }
 }

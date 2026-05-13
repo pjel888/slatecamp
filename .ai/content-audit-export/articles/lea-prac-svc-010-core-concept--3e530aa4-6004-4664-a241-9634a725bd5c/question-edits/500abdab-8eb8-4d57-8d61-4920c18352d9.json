@@ -2,9 +2,9 @@
   "question_id": "500abdab-8eb8-4d57-8d61-4920c18352d9",
   "baseline_hash": "sha256:44af5fd3d49f19aee93ffa77ed752606039bfd7593eb6a336d3a870de3b57bf4",
   "action": "replace",
-  "reason": "source-audited-article-batch-020-local-first rewrote the question to match only locally checked source evidence.",
-  "approved_by": "codex-local-source-audit-batch-020",
-  "approved_at": "2026-05-10T16:41:51.472Z",
+  "reason": "source-audited-article-batch-097-local-first refreshed this linked question as a source-safe question edit for lea-prac-svc-010-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-097",
+  "approved_at": "2026-05-13T08:07:14+08:00",
   "source_audit_support": {
     "parent_article_id": "3e530aa4-6004-4664-a241-9634a725bd5c",
     "parent_article_slug": "lea-prac-svc-010-core-concept",
@@ -18,7 +18,7 @@
         "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 3-8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 111-151; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/SPP 208.md lines 155-173; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 179-201; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 205-241; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 208.md lines 253-259"
       }
     ],
-    "local_source_safe_action": "Replaced the prior item with a source-bounded MCQ using only checked SPP source lines."
+    "local_source_safe_action": "Batch 097 retained and refreshed the source-bounded rewrite using checked local raw source evidence."
   },
   "proposed": {
     "text": "Which answer should be avoided in this repaired SPP 208 cluster?",
@@ -52,10 +52,11 @@
     "application_context": "professional_practice",
     "practice_context": [
       "SPP Document 208",
-      "SPP Doc 208: Architectural Design Competitions"
+      "SPP Doc 208: Architectural Design Competitions",
+      "source-audited batch 097"
     ],
     "difficulty": 0.55,
     "is_assessment": false,
-    "model_id": "BATCH-020-lea-prac-svc-010-core-concept-010"
+    "model_id": "BATCH-097-lea-prac-svc-010-core-concept-003"
   }
 }

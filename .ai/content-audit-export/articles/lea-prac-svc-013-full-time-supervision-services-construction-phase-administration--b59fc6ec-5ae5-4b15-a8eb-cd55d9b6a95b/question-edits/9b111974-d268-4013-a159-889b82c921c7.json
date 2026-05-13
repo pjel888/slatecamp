@@ -2,9 +2,9 @@
   "question_id": "9b111974-d268-4013-a159-889b82c921c7",
   "baseline_hash": "sha256:a22cefdfee79f6be1f529e3bed1ff9d4a9d070f035bce8277e6f02570696fbb0",
   "action": "replace",
-  "reason": "source-audited-article-batch-020-local-first rewrote the question to match only locally checked source evidence.",
-  "approved_by": "codex-local-source-audit-batch-020",
-  "approved_at": "2026-05-10T16:41:51.472Z",
+  "reason": "source-audited-article-batch-097-local-first refreshed this linked question as a source-safe question edit for lea-prac-svc-013-full-time-supervision-services-construction-phase-administration.",
+  "approved_by": "codex-local-source-audit-batch-097",
+  "approved_at": "2026-05-13T08:07:14+08:00",
   "source_audit_support": {
     "parent_article_id": "b59fc6ec-5ae5-4b15-a8eb-cd55d9b6a95b",
     "parent_article_slug": "lea-prac-svc-013-full-time-supervision-services-construction-phase-administration",
@@ -18,7 +18,7 @@
         "source_locator": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md lines 3-8; vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 204A.md lines 201-206"
       }
     ],
-    "local_source_safe_action": "Replaced the prior item with a source-bounded MCQ using only checked SPP source lines."
+    "local_source_safe_action": "Batch 097 retained and refreshed the source-bounded rewrite using checked local raw source evidence."
   },
   "proposed": {
     "text": "Which item is included in the checked SPP 204-A scope list?",
@@ -52,10 +52,11 @@
     "application_context": "professional_practice",
     "practice_context": [
       "SPP Document 204-A",
-      "Fulltime Supervision Services: Construction-Phase Administration"
+      "Fulltime Supervision Services: Construction-Phase Administration",
+      "source-audited batch 097"
     ],
     "difficulty": 0.45,
     "is_assessment": false,
-    "model_id": "BATCH-020-lea-prac-svc-013-full-time-supervision-services-construction-phase-administration-003"
+    "model_id": "BATCH-097-lea-prac-svc-013-full-time-supervision-services-construction-phase-administration-007"
   }
 }

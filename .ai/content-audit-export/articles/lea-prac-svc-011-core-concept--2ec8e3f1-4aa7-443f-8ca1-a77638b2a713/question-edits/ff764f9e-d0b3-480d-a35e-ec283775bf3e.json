@@ -2,9 +2,9 @@
   "question_id": "ff764f9e-d0b3-480d-a35e-ec283775bf3e",
   "baseline_hash": "sha256:e4c0f839ca971462160459c0d64146ef880ce28bc35e68fd8890f16c9145f4ea",
   "action": "replace",
-  "reason": "source-audited-article-batch-024-local-first rewrote this linked question to align with the local source audit for lea-prac-svc-011-core-concept.",
-  "approved_by": "codex-local-source-audit-batch-024",
-  "approved_at": "2026-05-11T14:30:00.000+08:00",
+  "reason": "source-audited-article-batch-097-local-first refreshed this linked question as a source-safe question edit for lea-prac-svc-011-core-concept.",
+  "approved_by": "codex-local-source-audit-batch-097",
+  "approved_at": "2026-05-13T08:07:14+08:00",
   "source_audit_support": {
     "parent_article_id": "2ec8e3f1-4aa7-443f-8ca1-a77638b2a713",
     "parent_article_slug": "lea-prac-svc-011-core-concept",
@@ -42,7 +42,7 @@
         "locator": "SPP 209 refined markdown lines 637-1099"
       }
     ],
-    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+    "local_source_safe_action": "Batch 097 retained and refreshed the source-bounded rewrite using checked local raw source evidence."
   },
   "proposed": {
     "text": "How does SPP 209 support institutional learning through PACS scope?",
@@ -70,16 +70,16 @@
     "value_tolerance": 0,
     "question_type": "mcq",
     "rationale": "The source-supported PACS scope includes these learning and capability-building activities.",
-    "explanation": "This Batch 024 replacement removes non-source-backed or over-specific wording and ties the answer to the checked local UAP source locator.",
+    "explanation": "This Batch 097 edit is tied to the checked local source locator.",
     "code_citation": "UAP Standards lines 1418-1460 and 1544-1695; SPP 209 refined markdown lines 637-1099",
     "bloom_level": "understand",
     "application_context": "professional_practice_source_audit",
     "practice_context": [
       "professional practice",
-      "source-audited batch 024"
+      "source-audited batch 097"
     ],
     "difficulty": 0.52,
     "is_assessment": false,
-    "model_id": "BATCH-024-lea-prac-svc-011-core-concept-008"
+    "model_id": "BATCH-097-lea-prac-svc-011-core-concept-010"
   }
 }

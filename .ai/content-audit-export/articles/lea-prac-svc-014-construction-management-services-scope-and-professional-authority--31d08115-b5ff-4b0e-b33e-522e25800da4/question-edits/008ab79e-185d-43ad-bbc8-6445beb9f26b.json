@@ -2,9 +2,9 @@
   "question_id": "008ab79e-185d-43ad-bbc8-6445beb9f26b",
   "baseline_hash": "sha256:6bb984ab797d49ec7e3d9e60d037784fb1441e5f335c369a29f562ba00e8de41",
   "action": "replace",
-  "reason": "source-audited-article-batch-024-local-first rewrote this linked question to align with the local source audit for lea-prac-svc-014-construction-management-services-scope-and-professional-authority.",
-  "approved_by": "codex-local-source-audit-batch-024",
-  "approved_at": "2026-05-11T14:30:00.000+08:00",
+  "reason": "source-audited-article-batch-097-local-first refreshed this linked question as a source-safe question edit for lea-prac-svc-014-construction-management-services-scope-and-professional-authority.",
+  "approved_by": "codex-local-source-audit-batch-097",
+  "approved_at": "2026-05-13T08:07:14+08:00",
   "source_audit_support": {
     "parent_article_id": "31d08115-b5ff-4b0e-b33e-522e25800da4",
     "parent_article_slug": "lea-prac-svc-014-construction-management-services-scope-and-professional-authority",
@@ -41,7 +41,7 @@
         "locator": "SPP 204B refined markdown lines 83-377"
       }
     ],
-    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+    "local_source_safe_action": "Batch 097 retained and refreshed the source-bounded rewrite using checked local raw source evidence."
   },
   "proposed": {
     "text": "Why can an architect serve effectively as Construction Manager according to SPP 204-B?",
@@ -69,16 +69,16 @@
     "value_tolerance": 0,
     "question_type": "mcq",
     "rationale": "SPP 204-B links the architect's coordination training to monitoring construction quality, workmanship, and cost.",
-    "explanation": "This Batch 024 replacement removes non-source-backed or over-specific wording and ties the answer to the checked local UAP source locator.",
+    "explanation": "This Batch 097 edit is tied to the checked local source locator.",
     "code_citation": "UAP Standards lines 983-1030; SPP 204B refined markdown lines 83-377",
     "bloom_level": "understand",
     "application_context": "professional_practice_source_audit",
     "practice_context": [
       "professional practice",
-      "source-audited batch 024"
+      "source-audited batch 097"
     ],
     "difficulty": 0.48,
     "is_assessment": false,
-    "model_id": "BATCH-024-lea-prac-svc-014-construction-management-services-scope-and-professional-authority-006"
+    "model_id": "BATCH-097-lea-prac-svc-014-construction-management-services-scope-and-professional-authority-001"
   }
 }
