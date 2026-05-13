@@ -42,6 +42,8 @@ The source folders are valuable evidence, but they should no longer be used as c
 | `11_source-ledger-and-archive-map.md` | Evidence ledger plus original-to-archive path map |
 | `12_agent-execution-handoff.md` | Handoff instructions for the later implementation run |
 | `13_vizcode-live-mode-deep-dive-2026-05-13.md` | Live VizCode mode study and SlateCamp counter-plan |
+| `14_vizcode-member-mode-audit-2026-05-13.md` | Logged-in VizCode mode/sidebar audit and implementation updates |
+| `15_3d_lab_pi_li_blast_radius_and_shared_viewport_optimization.md` | Live 3D Lab PI inventory, blast-radius result, and shared viewport LI optimization |
 
 ## Reading Order
 

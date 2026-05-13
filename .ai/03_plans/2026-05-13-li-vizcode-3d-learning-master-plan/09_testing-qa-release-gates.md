@@ -6,6 +6,7 @@ LI must prove two things at the same time:
 
 1. LI works as a learning interaction.
 2. PI did not regress.
+3. The shared 3D Lab viewport/shell contract still holds.
 
 No completion claim should be made without fresh verification evidence from the current implementation run.
 
@@ -48,6 +49,8 @@ Commands:
 
 Use current 3D performance scripts when implementation reaches release-candidate state:
 
+- `bun run perf:3d:layout-audit`
+- `bun run perf:3d:controls-audit`
 - `bun run perf:3d:smoke`
 - `bun run perf:3d:mobile`
 - `bun run perf:3d:gates`
@@ -55,6 +58,14 @@ Use current 3D performance scripts when implementation reaches release-candidate
 Select the smallest script that proves the claim for the current PR.
 
 ## Manual QA Checklist
+
+For shared viewport/shell regression:
+
+- Each tested LI and PI route has one shell/header/viewport/status structure.
+- No LI route mounts a second R3F canvas for the same module surface.
+- Shared orbit/pan/zoom/reset controls still work.
+- WebGL unavailable, context-loss, and slow-scene fallback surfaces remain reachable.
+- Mobile bottom sheet contains the expected LI/PI sidebar content without overlap.
 
 For each LI module:
 
@@ -88,7 +99,10 @@ For PI regression:
 - hotspot contract drafted,
 - config schema planned,
 - tests planned,
-- blast-radius tooling run for source edits.
+- blast-radius tooling run for source edits,
+- GitNexus freshness restored or its unavailability explicitly documented,
+- code-review-graph impact reviewed for shared 3D Lab files,
+- ChunkHound search/research run or its lock/unavailability explicitly documented.
 
 ### PR-Ready
 
@@ -115,6 +129,7 @@ Block release if:
 
 - source values disagree across card, overlay, and config,
 - model geometry is used as legal truth without source card,
+- LI changes fork `ViewportShell`, `LabViewportFrame`, or `CanvasWrapper` without explicit architecture approval and full 3D performance evidence,
 - GBC compliance is claimed without official source,
 - WebGL canvas is blank on common viewport,
 - mobile hotspot content cannot be used,

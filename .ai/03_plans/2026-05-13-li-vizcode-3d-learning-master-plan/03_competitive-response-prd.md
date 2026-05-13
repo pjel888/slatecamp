@@ -12,8 +12,10 @@ The VizCode audit reports:
 - 233 canonical competitor topic/page surfaces.
 - Strong public product coverage across PD 1096, BP 344, BP 220/PD 957, RA 9514, and GBC.
 - Visible signals for category panels, isolation mode, comparative mode, game mode, references, QUBI/AI, pricing, group plans, community, and support/report surfaces.
+- 2026-05-13 member audit confirms logged-in Review Modes exposes references/library links, isolation links, comparative links, game-mode query links, mobile/hamburger menu entries, category panels, code-reference drawers, report links, and unlocked QUBI quotas.
 
 Evidence boundary: private account, checkout, payment, AI answer quality, backend behavior, and legal accuracy were not validated.
+Member-audit boundary: no checkout, Discord join, AI prompt, quiz answer submission, or discrepancy report submission was performed.
 
 ## Match / Improve / Replace / Skip Matrix
 

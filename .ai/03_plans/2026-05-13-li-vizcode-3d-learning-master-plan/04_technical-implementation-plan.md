@@ -2,7 +2,15 @@
 
 ## Implementation Goal
 
-Add LI as a data-driven 3D Lab module mode while preserving PI behavior. The implementation should be incremental, testable, and reversible.
+Add LI as a data-driven 3D Lab interaction profile while preserving PI behavior. The implementation should be incremental, testable, reversible, and should reuse the existing shared viewport/canvas shell.
+
+## 2026-05-13 Optimization Correction
+
+Live-code review confirms the 3D Lab already has a unified route shell and viewport path: `ModuleViewer -> ViewportShell -> LabViewportFrame -> CanvasWrapper -> SceneConfig -> template scene content`.
+
+Implementation should not start by creating a separate `learning` viewport or forking shell/canvas components. The P0 path is to add LI learning objects and slot adapters into the existing template system, beginning with a ramp LI surface that reuses the existing `bp344-accessible-route-ramp` module work.
+
+See `15_3d_lab_pi_li_blast_radius_and_shared_viewport_optimization.md` for the live PI inventory and blast-radius result.
 
 ## Live Code Touchpoints To Re-Inspect Before Editing
 
@@ -29,6 +37,12 @@ The source plans and current repo lookup identify these likely touchpoints:
 - `src/features/3d-lab/config/module-paths.test.ts`
 - `e2e/authenticated-demo-3d-lab.spec.ts` or the current 3D Lab Playwright spec location
 
+High-blast-radius files to avoid in the first LI PR unless strictly required:
+
+- `src/features/3d-lab/components/shell/ViewportShell.tsx`
+- `src/features/3d-lab/components/shell/LabViewportFrame.tsx`
+- `src/features/3d-lab/components/CanvasWrapper.tsx`
+
 Before source edits, run the repository's required blast-radius systems for functions/classes/methods being edited. Do not rely on this document as a current code-impact proof.
 
 ## Phase 0 - Readiness Gate
@@ -50,19 +64,18 @@ Exit criteria:
 - blast-radius triad has been run for source symbol edits,
 - first implementation PR scope is narrowed.
 
-## Phase 1 - Type and Template Widening
+## Phase 1 - Interaction Metadata Widening
 
-Objective: add LI types with no visible behavior change.
+Objective: add LI metadata and learning-object types with no visible behavior change.
 
 Planned changes:
 
-- Add `InteractionMode = 'PI' | 'LI'`.
-- Add optional `mode?: InteractionMode` to `ModuleRegistryEntry`.
-- Add `learning` to `TemplateType`.
-- Add `LearningSceneConfig`, `LearningLayerDef`, and `LearningHotspot`.
-- Add `learning` to module config union if needed.
-- Add `learning` shell defaults with right panel only and no left sidebar.
-- Add `learning` template metadata for cards.
+- Add `InteractionMode = 'PI' | 'LI' | 'HYBRID'`.
+- Add optional `interactionMode?: InteractionMode` to `ModuleRegistryEntry`.
+- Add optional config-level `learningObjects` or equivalent LI payload.
+- Add LI source/quiz/comparison/repair object types.
+- Do not add `learning` to `TemplateType` in P0 unless the implementation review proves an interaction profile cannot work.
+- Add Learning/Hybrid badge metadata separately from the rendering template badge.
 
 Acceptance:
 
@@ -87,21 +100,23 @@ Acceptance:
 - Unit tests cover default info behavior plus quiz/comparison payload rendering.
 - No broad overlay rewrite.
 
-## Phase 3 - Learning Renderer and Right Panel
+## Phase 3 - Learning Slot Adapter and Right Panel
 
-Objective: render LI configs in the shared viewport shell.
+Objective: render LI learning objects in the shared viewport shell without creating a new viewport engine.
 
 Planned new files:
 
-- `src/features/3d-lab/components/learning/LearningSceneRenderer.tsx`
 - `src/features/3d-lab/components/learning/LearningHotspotList.tsx`
 - `src/features/3d-lab/components/learning/LearningLayerToggles.tsx`
+- `src/features/3d-lab/components/learning/LearningObjectPanel.tsx`
+- `src/features/3d-lab/components/learning/LearningSourceDrawer.tsx`
+- `src/features/3d-lab/components/learning/BoardDrillCard.tsx`
 - `src/features/3d-lab/components/learning/index.ts`
 
 Planned modifications:
 
-- Add `learning` case in `useTemplateContent`.
-- Add `learning` handling in `LabViewport` if still needed.
+- Add a learning-object branch inside the relevant existing template case in `useTemplateContent`, starting with `parametric`.
+- Avoid changes to `LabViewport` unless live review proves the legacy fallback path is still required for the chosen module.
 - Use existing `CanvasWrapper`, `GeometryMesh`/geometry instruction rendering, `HotspotAnnotation`, `DOMOverlayLayer`, and shell slots.
 
 Acceptance:
@@ -117,18 +132,18 @@ Objective: prove one source-grounded LI module end to end.
 
 Recommended first module:
 
-- `bp344-ramp-hotspots`
+- `bp344-ramp-hotspots`, composed from the existing `bp344-accessible-route-ramp` PI module/config where possible
 - category: accessibility
-- template: `learning`
+- rendering substrate: existing parametric scene/template path
 - route: existing `/dashboard/3d-lab/bp344-ramp-hotspots`
 
 Implementation notes:
 
-- Use programmatic geometry first.
+- Reuse existing ramp geometry, annotations, violations, and sourceTruth where safe.
 - Avoid external GLB unless source/name/entitlement contracts are ready.
 - Use 6-8 hotspots max.
 - Use source cards from the final truth handoff.
-- Keep existing PI ramp module separate.
+- Keep the existing PI ramp module functional and visible according to current `DASHBOARD_VISIBLE_IDS`.
 
 Acceptance:
 
@@ -156,7 +171,7 @@ Acceptance:
 
 Objective: connect LI to wider SlateCamp learning system.
 
-Deferred until MVP modules prove the template:
+Deferred until MVP modules prove the interaction profile:
 
 - `/dashboard/3d-lab?view=coverage`
 - weak-topic-to-hotspot links,
@@ -168,9 +183,9 @@ Deferred until MVP modules prove the template:
 
 | Phase | Rollback |
 | --- | --- |
-| Types/template widening | Remove `learning` union entries and defaults. |
+| Interaction metadata widening | Remove LI metadata, learning-object types, and badge handling. |
 | Hotspot payload extension | Remove optional LI fields; existing fields remain. |
-| Learning components | Delete new `components/learning` files and switch case. |
+| Learning components | Delete new `components/learning` files and remove the learning-object adapter branch. |
 | Module configs | Remove LI module registry entries and dashboard-visible IDs. |
 | Dashboard filter | Hide behind feature flag or remove chips; cards still work. |
 

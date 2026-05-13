@@ -8,10 +8,10 @@ Use this folder as the active planning basis for a later implementation run that
 
 Use a planned implementation lane, not ad hoc patching. The first code run should target a small slice:
 
-1. Type/template widening.
-2. Hotspot payload extension.
+1. Interaction metadata and learning-object types.
+2. Hotspot/learning payload extension.
 3. Dashboard metadata.
-4. Focused tests.
+4. Focused tests and shared viewport regression checks.
 
 Do not implement all modules in one PR.
 
@@ -22,12 +22,13 @@ Do not implement all modules in one PR.
 - Re-read `src/app/dashboard/3d-lab/AGENTS.md`.
 - Inspect live `templates.ts`, `useTemplateContent.tsx`, `ModuleCard.tsx`, `LabBrowser.tsx`, overlay store/card files, registry files, and tests.
 - Run required blast-radius analysis before editing functions/classes/methods.
+- Treat `15_3d_lab_pi_li_blast_radius_and_shared_viewport_optimization.md` as the latest plan correction.
 - Confirm current scripts in `package.json`.
 - Confirm branch/worktree expectations with current repo state.
 
 ## Suggested Task Slices
 
-### Slice 1 - LI Types and Template Defaults
+### Slice 1 - LI Interaction Metadata
 
 Files likely owned:
 
@@ -39,6 +40,8 @@ Validation:
 
 - `bun run type-check`
 - focused registry/template tests
+
+Implementation note: do not add a new `learning` `TemplateType` in Slice 1 unless a live-code review proves the interaction-profile approach cannot work.
 
 ### Slice 2 - Hotspot Payload Contract
 
@@ -60,19 +63,21 @@ Files likely owned:
 
 - `src/features/3d-lab/components/learning/*`
 - `src/features/3d-lab/hooks/useTemplateContent.tsx`
-- `src/features/3d-lab/components/LabViewport.tsx` if required
+- `src/features/3d-lab/components/LabViewport.tsx` only if required after live review
 
 Validation:
 
 - component tests,
 - type-check,
 - one local route smoke after first config exists.
+- `bun run perf:3d:layout-audit`
+- `bun run perf:3d:controls-audit`
 
 ### Slice 4 - First Module
 
 Files likely owned:
 
-- new `bp344-ramp-hotspots` config,
+- new `bp344-ramp-hotspots` config composed from existing `bp344-accessible-route-ramp` work where safe,
 - category registry,
 - dashboard visibility,
 - module path tests,

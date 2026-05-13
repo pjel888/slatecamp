@@ -2,13 +2,13 @@
 
 ## Roadmap Principle
 
-Ship a small number of excellent source-grounded LI modules before broad coverage work. The first modules should prove the hotspot template, source-card UX, quiz feedback, and PI preservation.
+Ship a small number of excellent source-grounded LI modules before broad coverage work. The first modules should prove the hotspot interaction profile, source-card UX, quiz feedback, shared viewport reuse, and PI preservation.
 
 ## P0 MVP Modules
 
 | Priority | Module ID | Learner job | Source readiness | Notes |
 | --- | --- | --- | --- | --- |
-| 1 | `bp344-ramp-hotspots` | Understand accessible ramp dimensions and traps through hotspots. | Strong | First implementation candidate. |
+| 1 | `bp344-ramp-hotspots` | Understand accessible ramp dimensions and traps through hotspots. | Strong | First implementation candidate; compose from existing `bp344-accessible-route-ramp` where safe. |
 | 2 | `bp344-toilet-hotspots` | Understand accessible toilet clearances, grab bars, door swing, lavatory. | Good | Use as second accessibility module. |
 | 3 | `egress-stair-hotspots` | Compare stair/egress requirements across codes. | Good but interpretation-sensitive | Needs careful comparison/source boundaries. |
 
@@ -16,10 +16,10 @@ Ship a small number of excellent source-grounded LI modules before broad coverag
 
 | ID | Work item | Depends on |
 | --- | --- | --- |
-| INF-P0-001 | LI type/template support | none |
+| INF-P0-001 | LI interaction metadata and learning-object support | none |
 | INF-P0-002 | Hotspot payload extension | current overlay store/card |
-| INF-P0-003 | Learning renderer and hotspot list | LI types |
-| INF-P0-004 | Dashboard Learning badge | template metadata |
+| INF-P0-003 | Learning slot adapter and hotspot list | LI types |
+| INF-P0-004 | Dashboard Learning/Hybrid badge | interaction metadata |
 | INF-P0-005 | Mode filter chips | visible LI module |
 | INF-P0-006 | Static fallback contract | module content |
 | INF-P0-007 | Source-card display contract | source cards |
@@ -41,7 +41,7 @@ Ship a small number of excellent source-grounded LI modules before broad coverag
 | Module | Reason later |
 | --- | --- |
 | GBC roof SRI/R-value compliance | Official GBC source not available in local evidence. |
-| Full source atlas coverage map | Needs ID reconciliation and MVP template proof first. |
+| Full source atlas coverage map | Needs ID reconciliation and MVP interaction proof first. |
 | AI-assisted repair assistant | Requires source-card model, uncertainty labels, and safety policy first. |
 | Side-by-side viewport comparator | Higher complexity; start with comparison hotspots. |
 
@@ -49,7 +49,7 @@ Ship a small number of excellent source-grounded LI modules before broad coverag
 
 Recommended PR 1:
 
-- type/template widening,
+- interaction metadata and learning-object type widening,
 - dashboard metadata,
 - hotspot payload extension behind optional fields,
 - no visible LI modules yet,
@@ -57,10 +57,10 @@ Recommended PR 1:
 
 Recommended PR 2:
 
-- `LearningSceneRenderer`,
 - `LearningHotspotList`,
 - `LearningLayerToggles`,
-- `useTemplateContent` learning case,
+- learning object panel/source drawer/board drill card,
+- `useTemplateContent` learning-object adapter branch,
 - tests.
 
 Recommended PR 3:

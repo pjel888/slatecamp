@@ -24,8 +24,14 @@ LEA candidates need to internalize spatial code requirements: ramp slopes, stair
 2. Make every hotspot teach one concept, one dimension, one comparison, or one board-style trap.
 3. Provide source cards and correction/report affordances for trust.
 4. Preserve current PI modules and route behavior.
-5. Create a reusable config-driven LI template.
+5. Create reusable config-driven LI interaction objects inside the existing 3D Lab template/viewport system.
 6. Support future Wiki, quiz, Camp Trail, and analytics integration.
+
+## 2026-05-13 Live-Code Correction
+
+The live 3D Lab already shares `ViewportShell`, `LabViewportFrame`, `CanvasWrapper`, `SceneConfig`, and `useTemplateContent` across active module routes. LI should therefore be modeled as an interaction profile over existing rendering templates, not as a separate viewport engine.
+
+Implementation should prefer optional LI metadata and `learningObjects` on existing module/config patterns before adding a new `learning` `TemplateType`. The first LI ramp should reuse the existing `bp344-accessible-route-ramp` geometry/source work, even if the student-facing LI slug remains `bp344-ramp-hotspots`.
 
 ## MVP Scope
 
@@ -33,8 +39,8 @@ LEA candidates need to internalize spatial code requirements: ramp slopes, stair
 
 | ID | Requirement | Priority |
 | --- | --- | --- |
-| LI-FR-001 | Add data-driven LI mode metadata to 3D Lab registry entries. | P0 |
-| LI-FR-002 | Add `learning` template support without changing current route structure. | P0 |
+| LI-FR-001 | Add data-driven LI/Hybrid interaction metadata to 3D Lab registry entries. | P0 |
+| LI-FR-002 | Add LI learning-object support without changing current route or viewport structure. | P0 |
 | LI-FR-003 | Render LI modules in the shared 3D Lab viewport shell. | P0 |
 | LI-FR-004 | Support model hotspots with `info`, `quiz`, and `comparison` payload shapes. | P0 |
 | LI-FR-005 | Render a compact hotspot list and progress summary in the right panel. | P0 |
@@ -82,6 +88,8 @@ LEA candidates need to internalize spatial code requirements: ramp slopes, stair
 ### `bp344-ramp-hotspots`
 
 Learner job: understand ramp surface, slope, width, landings, handrails, edge curb, tactile warning, and traffic conditions without manipulating parametric controls.
+
+Implementation basis: compose from the existing `bp344-accessible-route-ramp` PI module/config where possible. Do not rebuild ramp geometry from scratch unless live code review proves reuse is more expensive than replacement.
 
 Minimum hotspots:
 

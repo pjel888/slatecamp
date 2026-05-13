@@ -5,7 +5,7 @@
 | ID | Risk | Severity | Mitigation |
 | --- | --- | --- | --- |
 | LI-RISK-001 | Reintroducing superseded sub-mode tabs. | High | Canonical model is hotspot-centered. Preserve learner jobs only. |
-| LI-RISK-002 | PI regression from template/type widening. | High | Phase changes, default existing modules to PI, run PI regression tests. |
+| LI-RISK-002 | PI regression from interaction metadata, registry, or shared adapter changes. | High | Keep shared viewport untouched in P0, default existing modules to PI, run PI and shared shell regression tests. |
 | LI-RISK-003 | Unverified code claims in hotspots. | High | Source-card and no-go gates. |
 | LI-RISK-004 | `HotspotQuestion` integration is more incomplete than expected. | Medium | Re-inspect live code; stage payload extension separately. |
 | LI-RISK-005 | Hotspot UI overloads model. | Medium | 6-8 hotspots, progressive disclosure, one concept per hotspot. |
@@ -24,8 +24,9 @@
 | PI remains the parametric compliance mode. | Locked |
 | Existing 3D Lab route remains. | Locked |
 | Existing modules default to PI. | Locked |
+| LI reuses the shared 3D Lab viewport/canvas shell. | Locked |
 | VizCode audit is competitive signal only. | Locked |
-| First LI module should be BP 344 ramp hotspots unless implementation evidence blocks it. | Locked |
+| First LI module should be BP 344 ramp hotspots composed from `bp344-accessible-route-ramp` unless implementation evidence blocks reuse. | Locked |
 
 ## Open Decisions
 
