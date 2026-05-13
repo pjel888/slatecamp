@@ -1,0 +1,107 @@
+{
+  "batch_id": "source-audited-article-batch-114-local-first",
+  "batch_number": "114",
+  "reserved_at": "2026-05-13T19:45:00+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "branch": "3dlab-gray-viewport-bg",
+  "baseline_commit": "07a6fe686",
+  "current_head_at_manifest_generation": "07a6fe686",
+  "previous_batch": {
+    "batch_number": "113",
+    "commit": "07a6fe686",
+    "status": "accepted_and_pushed"
+  },
+  "manifest_status": "pass",
+  "selection_rule": "Next eligible fixed/manifest articles after accepted Batch 113 ETH-012; selected ETH-013 and LAW-004 through LAW-007 with no duplicate article IDs from accepted Batches 087-113.",
+  "inherited_blocker_status": {
+    "status": "clear",
+    "notes": [
+      "Batch 113 is accepted and pushed at 07a6fe686; Batch 114 starts from that live baseline.",
+      "Unrelated stairway and 3D learning work remains out of scope and must not be staged in this content batch.",
+      "Read-only rolling audit reports under .ai/03_plans/final-second-audit/rolling-readonly-swarm remain unstaged."
+    ]
+  },
+  "article_clusters": [
+    "Ethical fee competition and professional charges source-bounded to UAP ethics/SPP text",
+    "PRBoA composition, appointment, qualifications, terms, and reappointment",
+    "PRBoA Section 7 powers and Commission review boundary",
+    "PRC administrative supervision, Board decision appeal path, and Board-member removal grounds",
+    "LEA eligibility, DAE, required documents, reciprocity, and fraudulent application consequences"
+  ],
+  "counts": {
+    "articles": 5,
+    "linked_questions_expected": 50,
+    "question_edits_expected": 50,
+    "source_safe_real_world_scenarios_expected": 5
+  },
+  "selected_article_uuids_slugs": [
+    {
+      "article_id": "3a7ba43c-5ef5-4fd8-b054-ccb8a567d6f7",
+      "slug": "lea-prac-eth-013-introduction",
+      "title": "Ethical Fee Competition and Professional Charges",
+      "folder": ".ai/content-audit-export/articles/lea-prac-eth-013-introduction--3a7ba43c-5ef5-4fd8-b054-ccb8a567d6f7"
+    },
+    {
+      "article_id": "1532843e-c068-4666-8c85-2e44982075c1",
+      "slug": "lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office",
+      "title": "PRBoA Composition, Qualifications, and Terms of Office",
+      "folder": ".ai/content-audit-export/articles/lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office--1532843e-c068-4666-8c85-2e44982075c1"
+    },
+    {
+      "article_id": "ab6d74a1-744c-4961-816a-b088bb707848",
+      "slug": "lea-prac-law-005-prboa-powers-and-functions-section-7-in-full",
+      "title": "PRBoA Powers and Functions under Section 7",
+      "folder": ".ai/content-audit-export/articles/lea-prac-law-005-prboa-powers-and-functions-section-7-in-full--ab6d74a1-744c-4961-816a-b088bb707848"
+    },
+    {
+      "article_id": "3a66b00c-20a4-4577-8359-b956a93d7c50",
+      "slug": "lea-prac-law-006-prc-vs-prboa-distinct-roles-authority-and-the-appeals-chain",
+      "title": "PRC vs PRBoA: Authority, Supervision, and Appeals",
+      "folder": ".ai/content-audit-export/articles/lea-prac-law-006-prc-vs-prboa-distinct-roles-authority-and-the-appeals-chain--3a66b00c-20a4-4577-8359-b956a93d7c50"
+    },
+    {
+      "article_id": "9527e4a9-f8f1-4554-999e-0d46cc49bcd1",
+      "slug": "lea-prac-law-007-lea-eligibility-requirements-academic-credentials-dae-and-moral-character",
+      "title": "LEA Eligibility Requirements: Degree, DAE, Documents, and Moral Character",
+      "folder": ".ai/content-audit-export/articles/lea-prac-law-007-lea-eligibility-requirements-academic-credentials-dae-and-moral-character--9527e4a9-f8f1-4554-999e-0d46cc49bcd1"
+    }
+  ],
+  "prior_batch_exclusion_check": {
+    "status": "pass",
+    "checked_batches": "087-113",
+    "duplicate_hits": []
+  },
+  "historical_reaudit_overlap_acknowledgment": {
+    "status": "recorded_not_current_accepted_duplicate",
+    "overlap_artifacts": [
+      "ETH-013 has a historical Batch 034 local-first source-audited sidecar.",
+      "LAW-004 through LAW-007 were not selected in accepted Batches 087-113.",
+      "Batch 114 refreshes these clusters under the current serial production-line baseline and records overlap separately from accepted Batches 087-113."
+    ]
+  },
+  "validation_gates": [
+    "compose/diff/validate strict 5/5",
+    "UI-block edit validation",
+    "scoped JSON parse",
+    "placeholder/internal-note/source-gap scan",
+    "source hash checks",
+    "linked-question/question-edit count checks",
+    "stale compose-error scan",
+    "prior-batch duplicate selection scan",
+    "targeted content-audit tests",
+    "scoped git diff --check",
+    "git diff --cached --check before commit"
+  ],
+  "forbidden_actions": {
+    "supabase_push": "not_performed",
+    "deploy": "not_performed",
+    "production_db_mutation": "not_performed",
+    "merge_to_main": "not_performed"
+  },
+  "git_commit_push_state": {
+    "status": "ready_for_real_stage_commit_push",
+    "expected_commit_message": "chore(content): accept source-audited batch 114",
+    "commit_created": false,
+    "push_performed": false
+  }
+}

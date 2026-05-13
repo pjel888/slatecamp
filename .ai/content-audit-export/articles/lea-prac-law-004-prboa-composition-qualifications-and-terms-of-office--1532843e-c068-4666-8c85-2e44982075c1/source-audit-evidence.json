@@ -1,121 +1,90 @@
 {
-  "artifact_type": "source-audit-evidence",
-  "audit_date": "2026-05-10",
-  "audited_at": "2026-05-10T20:15:00+08:00",
-  "audit_mode": "local_source_audit_no_supabase",
-  "protocols_applied": [
-    ".ai/CONTENT_EXCELLENCE_GOAL.md",
-    ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
-    ".ai/00_system/vitruvius-source-reference.md"
-  ],
+  "artifact_type": "source_audit_evidence",
+  "schema_version": 1,
+  "batch_id": "source-audited-article-batch-114-local-first",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T19:45:00+08:00",
+  "status": "pass",
+  "audit_mode": "local_first_raw_source_recheck",
   "target": {
     "article_id": "1532843e-c068-4666-8c85-2e44982075c1",
     "slug": "lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office",
-    "title": "PRBoA Composition, Qualifications, and Terms of Office",
-    "article_folder": ".ai/content-audit-export/articles/lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office--1532843e-c068-4666-8c85-2e44982075c1",
-    "candidate_path": ".ai/content-audit-export/articles/lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office--1532843e-c068-4666-8c85-2e44982075c1/candidate.md",
-    "candidate_sha256": "sha256:10866df5e2ae4f6aa350d728250bc3f28650896ba07797b411ab232b1d9d5970",
-    "normalized_sha256": "sha256:10866df5e2ae4f6aa350d728250bc3f28650896ba07797b411ab232b1d9d5970",
-    "linked_questions_sha256": "sha256:0408e5fb5fafafa3a4f8437518e827e7bf308c7286bae052c77ff87a949e6770",
-    "sources_sha256": "sha256:be85f07f9b6eeac6b83a66e4776189b5553f22067c94593709f3b5a1e8d2a346"
+    "title": "PRBoA Composition, Qualifications, and Terms of Office"
   },
   "classification": {
-    "content_type": "ra9266_prboa_composition_article",
-    "contains_legal_or_code_claims": true,
-    "requires_raw_pdf_audit": true,
-    "linked_questions_observed": 10,
-    "question_edits_created": [
-      "0658f7fc-6b28-4f6e-a031-fc0ebabef8e5",
-      "7ce02099-96a7-40ad-8faf-64f6a437a552",
-      "a2b5fcde-a74b-4d0b-b9c2-e772e671f512",
-      "eb2c6186-152b-45f4-8c04-bef82f0a63b0",
-      "f81a080d-b7f2-4d92-88a9-2332124cf7b1",
-      "729b292d-7855-41ff-b926-aae5ae91b777",
-      "a4aca274-c4bb-4f23-9188-9bceac28e9a6",
-      "5c083d41-aeca-4fa3-8910-df15564475fe",
-      "5d458084-7e5a-4dad-b26e-345108c54d0d",
-      "bf893554-e3c1-486c-b99d-ad07c2b6ac23"
+    "topic": "PRBoA composition qualifications and terms",
+    "source_depth": "source_primary_with_final_depth_deferred_items",
+    "thin_needs_expansion": false
+  },
+  "checked_sources": [
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "source_id": "lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office-ra9266-irr-local-1",
+      "locator": "RA 9266 IRR refined markdown lines 264-294"
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+      "source_id": "lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office-ra9266-irr-local-1",
+      "locator": "RA 9266 IRR refined markdown lines 264-294"
+    },
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "source_id": "lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office-ra9266-irr-local-2",
+      "locator": "RA 9266 IRR refined markdown lines 817-835"
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+      "source_id": "lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office-ra9266-irr-local-2",
+      "locator": "RA 9266 IRR refined markdown lines 817-835"
+    }
+  ],
+  "claims": [
+    "RA 9266 IRR Section 4 creates a three-person Board composed of a chairman and two members appointed by the President from recommendees drawn from IAPOA nominees.",
+    "Section 5 lists the member qualifications: citizenship/residence, BS Architecture degree, valid COR/PIC and ten years active practice, no faculty/review conflict without a five-year break, no moral turpitude conviction, and no elective professional-organization office.",
+    "Section 6 states the three-year term, vacancy rule, one full three-year reappointment, initial staggered terms, and oath requirement.",
+    "Section 40 identifies UAP as the existing IAPOA and includes Board vacancy nominations among IAPOA functions."
+  ],
+  "removed_or_rewritten_material": [
+    "Removed unsupported policy-theory explanations and maximum-tenure formulas not stated in the checked source.",
+    "Rebuilt around Section 4 composition, Section 5 qualifications, Section 6 terms, and Section 40 IAPOA identity/functions."
+  ],
+  "unverified_or_rejected_claims": [
+    "Broader policy theory about democratic accountability, regulatory capture, and voting deadlock remains final-depth commentary unless supported by a local primary source.",
+    "Do not restore position-specific 6/5/4-year maximum-tenure formulas; the checked source states one full three-year reappointment for each member."
+  ],
+  "scenario_enrichment": {
+    "status": "added",
+    "note": "Added source-safe appointment and qualification scenario."
+  },
+  "question_repair_policy": {
+    "linked_questions_count": 10,
+    "question_edits_count": 10,
+    "all_linked_questions_have_source_safe_edits": true
+  },
+  "raw_pdf_gate": {
+    "primary_source_truth": "vitruvius-connection/001_Raw-Source-Layer PDFs",
+    "local_conversion_line_anchors": [
+      "RA 9266 IRR refined markdown lines 264-294",
+      "RA 9266 IRR refined markdown lines 817-835"
     ]
   },
-  "raw_sources": [
-    {
-      "key": "ra9266_irr",
-      "label": "RA 9266 IRR Architecture Act of 2004",
-      "source_type": "implementing_rules",
-      "source_id": "batch004-lea-prac-law-004-prboa-composition-qualification-source-01",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
-      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
-      "checked_pdf_pages": [
-        7,
-        8
-      ]
-    }
-  ],
-  "gate_results": {
-    "compose": "PASS: content-audit:compose -- --article-id <id> --overwrite; blockers=0",
-    "diff": "PASS: content-audit:diff -- --article-id <id>; changed=true safe_to_push=true blockers=0",
-    "validate": "PASS: content-audit:validate -- --article-id <id> --summary --dry-run; valid=true blockers=0 warnings=0",
-    "push_dry_run": "not_attempted_local_first; Supabase remote fetch is final publishing only and is intentionally non-blocking here",
-    "supabase_mutation": "not_attempted"
+  "source_audit": {
+    "overall": "pass",
+    "blockers": [],
+    "warnings": [
+      "Broader policy theory about democratic accountability, regulatory capture, and voting deadlock remains final-depth commentary unless supported by a local primary source.",
+      "Do not restore position-specific 6/5/4-year maximum-tenure formulas; the checked source states one full three-year reappointment for each member."
+    ]
   },
-  "claims": [
-    {
-      "claim_id": "law004-claim-01",
-      "claim_text": "RA 9266 IRR Section 4 creates a three-person Board under PRC supervision and administrative control.",
-      "source_support": [
-        "ra9266_irr"
-      ],
-      "audit_result": "PASS"
-    },
-    {
-      "claim_id": "law004-claim-02",
-      "claim_text": "RA 9266 IRR Section 4 uses the five nominees to three recommendees to one appointee appointment path.",
-      "source_support": [
-        "ra9266_irr"
-      ],
-      "audit_result": "PASS"
-    },
-    {
-      "claim_id": "law004-claim-03",
-      "claim_text": "RA 9266 IRR Section 5 lists member qualifications including citizenship/residency, BS Architecture, valid COR/PIC, ten years active practice, faculty/review restrictions, no moral-turpitude conviction, and no elective IAPOA/professional organization office.",
-      "source_support": [
-        "ra9266_irr"
-      ],
-      "audit_result": "PASS"
-    },
-    {
-      "claim_id": "law004-claim-04",
-      "claim_text": "RA 9266 IRR Section 6 sets three-year terms, one full reappointment, vacancy replacement for the unexpired term, and initial 3-2-1 year staggering.",
-      "source_support": [
-        "ra9266_irr"
-      ],
-      "audit_result": "PASS"
-    },
-    {
-      "claim_id": "lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office-linked-question-edits",
-      "claim_text": "Question edits staged locally for linked question IDs/model IDs: 0658f7fc-6b28-4f6e-a031-fc0ebabef8e5 (ALE-PRAC-LAW-004-001), 7ce02099-96a7-40ad-8faf-64f6a437a552 (ALE-PRAC-LAW-004-004), a2b5fcde-a74b-4d0b-b9c2-e772e671f512 (ALE-PRAC-LAW-004-002), eb2c6186-152b-45f4-8c04-bef82f0a63b0 (ALE-PRAC-LAW-004-009), f81a080d-b7f2-4d92-88a9-2332124cf7b1 (ALE-PRAC-LAW-004-008), 729b292d-7855-41ff-b926-aae5ae91b777 (ALE-PRAC-LAW-004-005), a4aca274-c4bb-4f23-9188-9bceac28e9a6 (ALE-PRAC-LAW-004-010), 5c083d41-aeca-4fa3-8910-df15564475fe (ALE-PRAC-LAW-004-007), 5d458084-7e5a-4dad-b26e-345108c54d0d (ALE-PRAC-LAW-004-003), bf893554-e3c1-486c-b99d-ad07c2b6ac23 (ALE-PRAC-LAW-004-006)",
-      "audit_result": "PASS",
-      "source_support": [
-        "ra9266_irr"
-      ]
-    }
-  ],
-  "unsupported_or_removed_claims": [
-    "Removed learner-visible preserved UI placeholder blocks and internal replacement notes from normalized/candidate content."
-  ],
-  "remaining_local_blockers": [],
-  "overall": {
-    "source_audit_status": "PASS",
-    "safe_for_supabase_upload": true,
-    "local_first_recovery_complete": true,
-    "remote_publish_status": "not_attempted_by_request",
-    "remaining_local_blockers": []
-  },
-  "local_validation": {
-    "command": "bun run content-audit:validate -- --article-id 1532843e-c068-4666-8c85-2e44982075c1 --summary --dry-run",
-    "valid": true,
-    "blockers": 0,
-    "warnings": [],
-    "checked_at": "2026-05-10T16:39:34+08:00"
+  "overall": "pass",
+  "paths": {
+    "candidate": ".ai/content-audit-export/articles/lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office--1532843e-c068-4666-8c85-2e44982075c1/candidate.md",
+    "normalized": ".ai/content-audit-export/articles/lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office--1532843e-c068-4666-8c85-2e44982075c1/normalized.md",
+    "sources": ".ai/content-audit-export/articles/lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office--1532843e-c068-4666-8c85-2e44982075c1/sources.json",
+    "question_edits": ".ai/content-audit-export/articles/lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office--1532843e-c068-4666-8c85-2e44982075c1/question-edits"
   }
 }

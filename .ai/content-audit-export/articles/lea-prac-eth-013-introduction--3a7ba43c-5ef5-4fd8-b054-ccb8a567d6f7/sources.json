@@ -1,44 +1,80 @@
 {
   "article_id": "3a7ba43c-5ef5-4fd8-b054-ccb8a567d6f7",
   "hash_algorithm": "sha256",
+  "sources_hash": "sha256:82d57869a6ab4c23e51ae60e7bc1d4367226d3772862e8c9fbb0c94cedbad7af",
   "source_count": 3,
   "sources": [
     {
-      "source_id": "uap-code-of-ethics-local",
+      "source_id": "lea-prac-eth-013-introduction-uap-code-of-ethics-local-1",
       "article_id": "3a7ba43c-5ef5-4fd8-b054-ccb8a567d6f7",
       "label": "UAP Document Code of Ethics",
       "url": null,
-      "source_type": "local_raw_pdf",
-      "description": "UAP Document Code of Ethics; UAP Code of Ethics refined markdown lines 44-58, 60-71, 81-89; raw PDF checked locally for source-audited-article-batch-034-local-first.",
-      "is_verified": true,
-      "sort_order": 0,
-      "created_at": "2026-05-11T10:59:50+08:00",
-      "updated_at": "2026-05-11T10:59:50+08:00"
-    },
-    {
-      "source_id": "ra-9266-irr-local",
-      "article_id": "3a7ba43c-5ef5-4fd8-b054-ccb8a567d6f7",
-      "label": "RA 9266 IRR Architecture Act of 2004",
-      "url": null,
-      "source_type": "local_raw_pdf",
-      "description": "RA 9266 IRR Architecture Act of 2004; RA 9266 IRR refined markdown lines 674-680, 688-690, 736-738, 853-855; raw PDF checked locally for source-audited-article-batch-034-local-first.",
+      "source_type": "professional_ethics_pdf",
+      "description": "Checked for fair remuneration, client interest over financial return, impartiality, professional charges, client-only compensation, no preliminary services on a conditional basis, and no knowingly competing on professional charges.",
       "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-05-11T10:59:50+08:00",
-      "updated_at": "2026-05-11T10:59:50+08:00"
+      "created_at": "2026-05-13T19:45:00+08:00",
+      "updated_at": "2026-05-13T19:45:00+08:00",
+      "local_source_audit": {
+        "authority": "United Architects of the Philippines / Board of Architecture and PRC approved ethics source",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+        "raw_pdf_sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+        "refined_markdown_sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+        "source_locator": "UAP Document Code of Ethics refined markdown lines 7-15, 48-56, and 85-87",
+        "checked_markdown_lines": [
+          "UAP Code of Ethics lines 7-15, 48-56, and 85-87"
+        ],
+        "local_source_checked": true
+      }
     },
     {
-      "source_id": "uap-standards-professional-practice2-local",
+      "source_id": "lea-prac-eth-013-introduction-uap-spp-local-2",
       "article_id": "3a7ba43c-5ef5-4fd8-b054-ccb8a567d6f7",
-      "label": "UAP Standards of Professional Practice - compiled SPP source",
+      "label": "UAP Standards of Professional Practice",
       "url": null,
-      "source_type": "local_raw_pdf",
-      "description": "UAP Standards of Professional Practice - compiled SPP source; UAP Standards of Professional Practice refined markdown lines 300-350, 362-418, 475-586, 1036-1077, 1097-1215; raw PDF checked locally for source-audited-article-batch-034-local-first.",
+      "source_type": "professional_practice_pdf",
+      "description": "Checked for architect selection methods, negotiation of scope and fee, design competition boundaries, and Regular Design Services compensation methods.",
       "is_verified": true,
       "sort_order": 2,
-      "created_at": "2026-05-11T10:59:50+08:00",
-      "updated_at": "2026-05-11T10:59:50+08:00"
+      "created_at": "2026-05-13T19:45:00+08:00",
+      "updated_at": "2026-05-13T19:45:00+08:00",
+      "local_source_audit": {
+        "authority": "Professional Regulatory Board of Architecture / UAP Standards of Professional Practice",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "source_locator": "UAP SPP refined markdown lines 73-100 and 416-457",
+        "checked_markdown_lines": [
+          "UAP SPP lines 73-100 and 416-457"
+        ],
+        "local_source_checked": true
+      }
+    },
+    {
+      "source_id": "lea-prac-eth-013-introduction-ra9266-irr-local-3",
+      "article_id": "3a7ba43c-5ef5-4fd8-b054-ccb8a567d6f7",
+      "label": "RA 9266 IRR - Architecture Act of 2004",
+      "url": null,
+      "source_type": "primary_law_irr_pdf",
+      "description": "Checked for RA 9266 IRR adoption of the Code of Ethical Conduct and Standards of Professional Practice.",
+      "is_verified": true,
+      "sort_order": 3,
+      "created_at": "2026-05-13T19:45:00+08:00",
+      "updated_at": "2026-05-13T19:45:00+08:00",
+      "local_source_audit": {
+        "authority": "Professional Regulatory Board of Architecture / PRC",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_locator": "RA 9266 IRR refined markdown lines 853-855",
+        "checked_markdown_lines": [
+          "RA 9266 IRR lines 853-855"
+        ],
+        "local_source_checked": true
+      }
     }
-  ],
-  "sources_hash": "sha256:1f2f3bb1b303629ff9d659547e89a9ab8e80af013d6d266bbb91c6dcc5cce2f4"
+  ]
 }

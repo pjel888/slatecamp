@@ -1,3 +1,44 @@
+# Batch 114 Local-First Handoff Update
+
+Last updated: 2026-05-13T19:45:00+08:00
+
+## Current State
+
+- Latest local-first production-line batch prepared: Batch 114
+- Branch: 3dlab-gray-viewport-bg
+- Baseline before Batch 114: 07a6fe686
+- Previous accepted Batch 113 commit: 07a6fe686
+- Batch 114 local artifacts: pass
+- Git gate: targeted tests, scoped diff checks, and temporary-index cached diff passed; live `git add` failed on `.git/index.lock` creation with `Operation not permitted`, so real commit/push was not performed.
+- Supabase push/deploy/production DB mutation/main merge: not performed.
+
+## Batch 114 Selection
+
+- lea-prac-eth-013-introduction (3a7ba43c-5ef5-4fd8-b054-ccb8a567d6f7)
+- lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office (1532843e-c068-4666-8c85-2e44982075c1)
+- lea-prac-law-005-prboa-powers-and-functions-section-7-in-full (ab6d74a1-744c-4961-816a-b088bb707848)
+- lea-prac-law-006-prc-vs-prboa-distinct-roles-authority-and-the-appeals-chain (3a66b00c-20a4-4577-8359-b956a93d7c50)
+- lea-prac-law-007-lea-eligibility-requirements-academic-credentials-dae-and-moral-character (9527e4a9-f8f1-4554-999e-0d46cc49bcd1)
+
+## Validation Evidence
+
+- Report: `.ai/content-audit-export/source-audited-article-batch-114-local-first-report.md`
+- Ledger: `.ai/content-audit-export/source-audited-article-batch-114-local-first-ledger.json`
+- Scoped checks: `.ai/content-audit-export/source-audited-article-batch-114-local-first-scoped-checks.json`
+- Manifest: `.ai/03_plans/production-line-batch-114-manifest.json`
+- QA memo: `.ai/03_plans/batch-114-independent-quality-review.md`
+
+## Preserved Final-Depth Items
+
+- Keep THIN_NEEDS_EXPANSION and scenario/source-primary findings in the final remediation plan.
+- Preserve ETH-013 Philippine Competition Act/current fee-competition doctrine, LAW-005 current CPD-law reconciliation, LAW-006 appellate review doctrine, and LAW-007 current PRC/DAE document mechanics for final depth unless local primary sources are added.
+
+## Batch 114 Next Batch
+
+After Batch 114 is committed and pushed from an environment with writable `.git/index` access, continue with Batch 115 using the next eligible fixed/manifest articles not selected in accepted Batches 087-114. Apply the same local-first gates, question-edit requirement, QA memo requirement, commit, push, and automatic continuation behavior.
+
+---
+
 # Batch 113 Local-First Handoff Update
 
 Last updated: 2026-05-13T19:10:00+08:00

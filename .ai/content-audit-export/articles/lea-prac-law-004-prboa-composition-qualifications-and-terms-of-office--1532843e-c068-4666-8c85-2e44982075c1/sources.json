@@ -1,20 +1,56 @@
 {
   "article_id": "1532843e-c068-4666-8c85-2e44982075c1",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:be85f07f9b6eeac6b83a66e4776189b5553f22067c94593709f3b5a1e8d2a346",
-  "source_count": 1,
+  "sources_hash": "sha256:35a2f78602cc939118ee265e7856f4a3e1cfe124a0b26620acb2b143c7e2e527",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "batch004-lea-prac-law-004-prboa-composition-qualification-source-01",
+      "source_id": "lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office-ra9266-irr-local-1",
       "article_id": "1532843e-c068-4666-8c85-2e44982075c1",
-      "label": "RA 9266 IRR Architecture Act of 2004",
+      "label": "RA 9266 IRR - Architecture Act of 2004",
       "url": null,
-      "source_type": "implementing_rules",
-      "description": "ra9266_irr; raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf; raw_pdf_sha256=sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574; checked_pdf_pages=7,8",
+      "source_type": "primary_law_irr_pdf",
+      "description": "Checked for Board composition, appointment process, qualifications, term, vacancy, oath, and one full three-year reappointment.",
       "is_verified": true,
-      "sort_order": 0,
-      "created_at": "2026-05-10T20:15:00+08:00",
-      "updated_at": "2026-05-10T20:15:00+08:00"
+      "sort_order": 1,
+      "created_at": "2026-05-13T19:45:00+08:00",
+      "updated_at": "2026-05-13T19:45:00+08:00",
+      "local_source_audit": {
+        "authority": "Professional Regulatory Board of Architecture / PRC",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_locator": "RA 9266 IRR refined markdown lines 264-294",
+        "checked_markdown_lines": [
+          "RA 9266 IRR lines 264-294"
+        ],
+        "local_source_checked": true
+      }
+    },
+    {
+      "source_id": "lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office-ra9266-irr-local-2",
+      "article_id": "1532843e-c068-4666-8c85-2e44982075c1",
+      "label": "RA 9266 IRR - Architecture Act of 2004",
+      "url": null,
+      "source_type": "primary_law_irr_pdf",
+      "description": "Checked for IAPOA/UAP integration and nomination function.",
+      "is_verified": true,
+      "sort_order": 2,
+      "created_at": "2026-05-13T19:45:00+08:00",
+      "updated_at": "2026-05-13T19:45:00+08:00",
+      "local_source_audit": {
+        "authority": "Professional Regulatory Board of Architecture / PRC",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_locator": "RA 9266 IRR refined markdown lines 817-835",
+        "checked_markdown_lines": [
+          "RA 9266 IRR lines 817-835"
+        ],
+        "local_source_checked": true
+      }
     }
   ]
 }

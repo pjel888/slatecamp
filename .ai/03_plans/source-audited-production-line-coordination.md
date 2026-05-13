@@ -1,3 +1,38 @@
+# Batch 114 Source-Audited Production-Line Coordination Update
+
+Updated: 2026-05-13T19:45:00+08:00
+
+## Status
+
+- Batch 114: pass local-first; real git index staging blocked in this session
+- Branch: 3dlab-gray-viewport-bg
+- Selected articles: 5
+- Linked question edits: 50
+- Forbidden external actions: none performed.
+
+## Batch 114 Gate Summary
+
+- Compose/diff/validate strict 5/5: pass
+- UI-block edit validation: pass
+- Scoped JSON parse: pass
+- Placeholder/internal-note/source-gap scan: pass
+- Source hash checks: pass
+- Linked-question/question-edit count checks: pass
+- Stale compose-error scan: pass
+- Targeted content-audit tests: pass
+- Scoped git diff --check: pass
+- Cached diff check: pass via temporary index after staging intended files only
+- Real git stage/commit/push gate: blocked_live_index; `git add` failed on `.git/index.lock` creation with `Operation not permitted`, so commit/push was not performed.
+
+## Coordination Notes
+
+- Batch 113 is accepted and pushed at commit 07a6fe686; Batch 114 starts from 07a6fe686.
+- Batch 114 includes both article improvements and linked question edits for every selected article.
+- Difficult clusters were resolved locally by narrowing ETH-013 to UAP fee/competition text and LAW-004 through LAW-007 to verified RA 9266 IRR passages while preserving unsupported competition-law, CPD-currentness, appellate-review, and PRC-document details for final depth.
+- Next production-line target: Batch 115 after Batch 114 commit and push from an environment with writable `.git/index` access.
+
+---
+
 # Batch 113 Source-Audited Production-Line Coordination Update
 
 Updated: 2026-05-13T19:10:00+08:00

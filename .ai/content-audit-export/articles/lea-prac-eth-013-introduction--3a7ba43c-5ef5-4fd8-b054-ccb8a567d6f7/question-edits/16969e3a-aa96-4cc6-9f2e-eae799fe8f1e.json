@@ -2,94 +2,101 @@
   "question_id": "16969e3a-aa96-4cc6-9f2e-eae799fe8f1e",
   "baseline_hash": "sha256:acfa88066113c261dcf6d190160ba1a3453e1f31b721f5e3710be433726f472a",
   "action": "replace",
-  "reason": "source-audited-article-batch-034-local-first aligned linked professional-practice question with audited local raw PDF source language for lea-prac-eth-013-introduction.",
-  "approved_by": "codex-local-source-audit-batch-034",
-  "approved_at": "2026-05-11T10:59:50+08:00",
+  "reason": "source-audited-article-batch-114-local-first rewrote this linked question after local raw-source recheck for lea-prac-eth-013-introduction.",
+  "approved_by": "codex-local-source-audit-batch-114",
+  "approved_at": "2026-05-13T19:45:00+08:00",
   "source_audit_support": {
     "parent_article_id": "3a7ba43c-5ef5-4fd8-b054-ccb8a567d6f7",
     "parent_article_slug": "lea-prac-eth-013-introduction",
-    "parent_article_title": "Ethical Fee Competition and Professional Charges",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "UAP Code of Ethics refined markdown lines 48-50",
+    "source_locator": "UAP Code of Ethics lines 85-87",
+    "checked_markdown_lines": [
+      "UAP Code of Ethics lines 7-15, 48-56, and 85-87",
+      "UAP SPP lines 73-100 and 416-457",
+      "RA 9266 IRR lines 853-855"
+    ],
     "checked_sources": [
       {
-        "source_id": "uap-code-of-ethics-local",
-        "label": "UAP Document Code of Ethics",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
-        "source_locator": "UAP Code of Ethics refined markdown lines 44-58, 60-71, 81-89",
-        "checked_markdown_lines": [
-          "UAP Code of Ethics refined markdown lines 44-58",
-          "UAP Code of Ethics refined markdown lines 60-71",
-          "UAP Code of Ethics refined markdown lines 81-89"
-        ],
-        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
-        "raw_pdf_sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
-        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
-        "refined_markdown_sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b"
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Code of Ethics.pdf",
+        "sha256": "sha256:74444a64eb5da055137c52e64c37d32e73c95d8e899f7564471d960dd5a56eea",
+        "source_id": "lea-prac-eth-013-introduction-uap-code-of-ethics-local-1",
+        "locator": "UAP Document Code of Ethics refined markdown lines 7-15, 48-56, and 85-87"
       },
       {
-        "source_id": "ra-9266-irr-local",
-        "label": "RA 9266 IRR Architecture Act of 2004",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
-        "source_locator": "RA 9266 IRR refined markdown lines 674-680, 688-690, 736-738, 853-855",
-        "checked_markdown_lines": [
-          "RA 9266 IRR refined markdown lines 674-680",
-          "RA 9266 IRR refined markdown lines 688-690",
-          "RA 9266 IRR refined markdown lines 736-738",
-          "RA 9266 IRR refined markdown lines 853-855"
-        ],
-        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
-        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
-        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
-        "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0"
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Code of Ethics.md",
+        "sha256": "sha256:155a82165acf17e0dfb145e18c818e2b8f9cff3eaf3fa1bd206bc47797ca138b",
+        "source_id": "lea-prac-eth-013-introduction-uap-code-of-ethics-local-1",
+        "locator": "UAP Document Code of Ethics refined markdown lines 7-15, 48-56, and 85-87"
       },
       {
-        "source_id": "uap-standards-professional-practice2-local",
-        "label": "UAP Standards of Professional Practice - compiled SPP source",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
-        "source_locator": "UAP Standards of Professional Practice refined markdown lines 300-350, 362-418, 475-586, 1036-1077, 1097-1215",
-        "checked_markdown_lines": [
-          "UAP Standards of Professional Practice refined markdown lines 300-350",
-          "UAP Standards of Professional Practice refined markdown lines 362-418",
-          "UAP Standards of Professional Practice refined markdown lines 475-586",
-          "UAP Standards of Professional Practice refined markdown lines 1036-1077",
-          "UAP Standards of Professional Practice refined markdown lines 1097-1215"
-        ],
-        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
-        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
-        "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c"
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "source_id": "lea-prac-eth-013-introduction-uap-spp-local-2",
+        "locator": "UAP SPP refined markdown lines 73-100 and 416-457"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "source_id": "lea-prac-eth-013-introduction-uap-spp-local-2",
+        "locator": "UAP SPP refined markdown lines 73-100 and 416-457"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "lea-prac-eth-013-introduction-ra9266-irr-local-3",
+        "locator": "RA 9266 IRR refined markdown lines 853-855"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_id": "lea-prac-eth-013-introduction-ra9266-irr-local-3",
+        "locator": "RA 9266 IRR refined markdown lines 853-855"
       }
     ],
-    "local_source_safe_action": "Question text, options, answer key, rationale, explanation, and code citation rewritten to audited local article scope."
+    "local_source_safe_action": "Batch 114 replaced unsupported, thin, or stale professional-practice wording with local raw-source-supported question text, answer key, citation, and rationale.",
+    "batch_id": "source-audited-article-batch-114-local-first"
   },
   "proposed": {
-    "text": "At the start of the client relationship, what must the architect ascertain?",
+    "text": "Which UAP rule controls free preliminary sketches offered before a definite client agreement?",
     "options": [
       {
         "id": "a",
-        "text": "Exact service scope and corresponding professional charges"
+        "text": "Do not offer preliminary services on a conditional basis before a definite agreement with the client"
       },
       {
         "id": "b",
-        "text": "Only the contractor's preferred bid"
+        "text": "Always give full schematic design for free"
       },
       {
         "id": "c",
-        "text": "Only the supplier discount"
+        "text": "Use contractor gifts as compensation"
       },
       {
         "id": "d",
-        "text": "Only the advertising strategy"
+        "text": "Avoid discussing scope and charges"
       }
     ],
     "correct_option_id": "a",
-    "rationale": "The Code requires the architect to ascertain the exact nature and scope of services and corresponding professional charges.",
-    "explanation": "The Code requires the architect to ascertain the exact nature and scope of services and corresponding professional charges.",
-    "code_citation": "UAP Code of Ethics refined markdown lines 48-50"
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "correct": "UAP Section 5-a bars conditional preliminary services before definite agreement.",
+      "takeaway": "UAP Section 5-a bars conditional preliminary services before definite agreement."
+    },
+    "explanation": "Use UAP Code of Ethics lines 85-87 for this Batch 114 source-safe rewrite.",
+    "code_citation": "UAP Code of Ethics lines 85-87",
+    "bloom_level": "apply",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited local-first",
+      "batch 114"
+    ],
+    "difficulty": 0.5,
+    "is_assessment": false,
+    "model_id": "BATCH-114-lea-prac-eth-013-introduction-002"
   }
 }

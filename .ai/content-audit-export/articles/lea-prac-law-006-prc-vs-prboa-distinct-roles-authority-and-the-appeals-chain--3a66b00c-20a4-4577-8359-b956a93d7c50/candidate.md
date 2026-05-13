@@ -1,45 +1,51 @@
-# PRC vs PRBoA: Supervision, Board Powers, and Appeals
+# PRC vs PRBoA: Authority, Supervision, and Appeals
 
-RA 9266 separates the Professional Regulation Commission from the Professional Regulatory Board of Architecture, but it does not make the Board independent of the Commission. The IRR places the PRBoA under PRC supervision and administrative control while assigning architecture-specific regulatory powers to the Board.
+## Board Exam Quick Check
 
-## PRC Supervision and Board Authority
+For LAW-006, keep the bodies separate. The Board exercises architecture-specific powers under Section 7. The Commission provides administrative supervision, record custody, secretary designation, secretariat, and support services under Section 8. Board policies, resolutions, rules, and regulations are subject to Commission review and approval. Board decisions in administrative cases are reviewed only if appealed.
 
-Section 4 creates the PRBoA under the supervision and administrative control of the PRC. The Board is composed of a chairperson and two members appointed by the President through the nomination and recommendation process described in that section.
+## Learning Goal
 
-Section 7 gives the Board architecture-specific powers and functions, including:
+After studying this article, you should be able to:
 
-- adopting and enforcing the Code of Ethical Conduct and Standards of Professional Practice;
-- administering oaths in connection with Board functions;
-- issuing, suspending, revoking, or reinstating Certificates of Registration and Professional Identification Cards;
-- hearing and deciding administrative cases involving architects and architectural firms;
-- prescribing and adopting LEA syllabi and preparing or selecting examination questions;
-- adopting a program for continuing professional development.
+- Distinguish PRC administrative supervision from Board Section 7 powers.
+- State the administrative-case appeal path supported by the checked source.
+- Identify the Commission's record-custody and support-services role.
+- Apply Section 9 Board-member removal grounds without inventing appellate doctrine.
 
-Section 8 then assigns administrative support: all Board records are under Commission custody, and the Commission provides the secretary and support services needed for Board work.
+## Board Powers and Commission Review
 
-## Review, Approval, and Appeal
+Section 7 gives the Board architecture-specific powers: registration, licensure, practice supervision, administrative cases, ethics/SPP adoption, examinations, temporary or special permits, and CHED coordination.
 
-Section 7 draws an important line. Board policies, resolutions, rules, orders, and decisions issued in administrative cases are generally subject to Commission review and approval. But a Board decision in an administrative case is subject to review only if it is appealed.
+The same section states the review boundary. Board policies, resolutions, rules, and regulations are subject to Commission review and approval. But Board decisions, resolutions, or orders in administrative cases are subject to review only if appealed.
 
-For disciplinary decisions, the sequence in the checked IRR text is:
+## Administrative Supervision under Section 8
 
-1. Board decision;
-2. final and executory after fifteen days unless appealed to the Commission;
-3. Commission decision appealable to the Court of Appeals.
+Section 8 states that the Board is under the administrative supervision of the Commission. It also says all Board records, including applications for examination, examination questions, answer sheets, licensure examination records, administrative records, and investigative-case documents, are under Commission custody. The Commission designates the Board Secretary and provides secretariat and other support services to implement RA 9266.
 
-The appeal chain stated in this IRR stops at the Court of Appeals after Commission action. A Court of Appeals standard of review belongs in a separate procedural-law lesson.
+That is the source-safe meaning of administrative supervision for this batch: custody, secretary designation, secretariat, and support services. Broader claims about operational control or appellate standards should wait for a specific source.
 
-## IAPOA Role
+## Administrative-Case Appeal Path
 
-Section 4 uses the Integrated and Accredited Professional Organization of Architects as the source of nominees for Board appointments. Section 40 identifies the United Architects of the Philippines as the IAPOA under Board Resolution No. 3, series of 2004, and lists organizational functions such as nominations to Board vacancies and CPD-related participation.
+Under Section 7(h), a Board administrative-case decision becomes final and executory after fifteen days from receipt of notice unless appealed to the Commission. A Commission decision may be appealed to the Court of Appeals in accordance with the Rules of Court. This batch does not supply the Rules of Court details or the Court of Appeals standard of review.
 
-## Removal Grounds
+## IAPOA/UAP Context
 
-Section 9 allows the President, upon the Commission's recommendation and after due process, to suspend or remove a Board member for listed grounds such as neglect of duty, incompetence, violations or tolerance of violations of RA 9266 and its IRR, final judgment involving crimes of moral turpitude, or manipulation and tampering connected with examination results.
+Section 40 identifies the integrated and accredited professional organization structure and records UAP as the existing IAPOA. Its listed functions include nominations to Board vacancies, CPD program responsibility, foreign-national endorsement functions, liability-insurance recommendation for temporary or special permits, and monitoring compliance or filing complaints for violations of RA 9266, the IRR, Code, SPP, and other Board or Commission policies.
 
-## Exam Guardrails
+## Real World Scenario
 
-- PRC = administrative supervision, custody, support, and Commission review/approval.
-- PRBoA = architecture-specific regulatory judgment and Board powers under Section 7.
-- Appeal chain in the IRR = Board to Commission to Court of Appeals.
-- IAPOA appointment role = Section 4; UAP/IAPOA integration = Section 40.
+The Board decides an administrative case involving an alleged ethics violation. The source-safe appeal answer is: if no appeal is made to the Commission, the Board decision becomes final and executory after fifteen days from receipt of notice. If appealed, the Commission reviews the decision, and a Commission decision may be appealed to the Court of Appeals under the Rules of Court.
+
+## Exam Traps
+
+- Saying PRC record custody means the Commission writes the architecture exam questions.
+- Treating every Board action as automatically appealed.
+- Supplying a Court of Appeals review standard not found in the checked source.
+- Forgetting that Section 9 removal of Board members starts with the President upon Commission recommendation after opportunity to defend in an administrative investigation.
+
+## Related Articles
+
+- [PRBoA Composition](lea-prac-law-004)
+- [PRBoA Powers and Functions](lea-prac-law-005)
+- [IAPOA/UAP Role](lea-prac-law-001)

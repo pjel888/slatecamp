@@ -1,37 +1,68 @@
-# LEA Eligibility: Academic Credentials, DAE, and Moral Character
+# LEA Eligibility Requirements: Degree, DAE, Documents, and Moral Character
 
-RA 9266 treats LEA eligibility as a combined legal, academic, experiential, and character screen. The checked IRR source supports four core eligibility anchors: citizenship or reciprocity, good moral character, recognized architecture education, and certified diversified architectural experience.
+## Board Exam Quick Check
 
-## DAE Definition
+For LAW-007, do not overstate the DAE mechanics. The checked RA 9266 IRR text requires a Bachelor of Science in Architecture from a CHED-recognized or accredited school, good moral character, at least two years or equivalent of diversified architectural experience duly certified by a registered/licensed architect, no conviction of a criminal offense involving moral turpitude, and the listed support documents. It does not state a 3,840-hour conversion in the checked passage.
 
-Section 3(29) defines Diversified Architectural Experience as post-baccalaureate, pre-licensure experience of two years. It consists of a variation of experiences in different phases of architectural service.
+## Learning Goal
 
-Use the IRR phrase two years or equivalent DAE. Do not convert the requirement into a fixed hour total unless another controlling source supplies that conversion.
+After studying this article, you should be able to:
 
-## Section 13 Eligibility
+- State the Section 13 applicant qualifications.
+- Identify the source-listed supporting documents.
+- Apply the one-year practical-experience credit for a government-recognized master's degree in Architecture.
+- Recognize fraudulent-application consequences without inventing current PRC portal details.
 
-Section 13 states that an applicant for the Architect Licensure Examination must:
+## Examination Required
 
-- be a Filipino citizen or a citizen of a foreign country qualified under the reciprocity rule;
-- be of good moral character;
-- hold a degree of Bachelor of Science in Architecture from a school, college, academy, or institute recognized and/or accredited by CHED;
-- have at least two years or equivalent diversified architectural experience, duly certified by a registered and licensed architect;
-- have no final conviction by a court of competent jurisdiction for a criminal offense involving moral turpitude.
+Section 12 states that all applicants for registration for the practice of architecture must undergo a licensure examination given by the Board in places and dates designated by the Commission in accordance with RA 8981.
 
-A Master of Architecture degree from a government-recognized institution receives one year of credit toward the practical experience requirement.
+## Section 13 Qualifications
 
-## Required Documents
+An applicant must establish to the Board's satisfaction that:
 
-The checked IRR page lists supporting documents such as the Certificate of Live Birth from the National Statistics Office, marriage contract for a married female applicant, diploma, transcript of records, DT Forms 001 and 002, an Architect-Mentor affidavit, photocopies of the mentor's valid PIC, PTR, and IAPOA number, NBI clearance, and other documents the Board or Commission may require.
+1. The applicant is a Filipino citizen or a foreign citizen qualified under the reciprocity rule in Section 27.
+2. The applicant is of good moral character.
+3. The applicant holds a Bachelor of Science in Architecture from a school, college, academy, or institute recognized or accredited by CHED and has at least two years or equivalent of diversified architectural experience duly certified by a registered/licensed architect.
+4. If the applicant has a master's degree in Architecture from a government-recognized school, college, university, or institute, one year is credited in practical experience.
+5. The applicant has not been convicted of a criminal offense involving moral turpitude.
 
-## False Evidence and Misrepresentation
+## Source-Listed Documents
 
-Section 13 also gives the Board authority to act when an application or registration is based on false swearing, misrepresentation, false evidence, or false information. The Board may refuse to renew the PIC or suspend or revoke the Certificate of Registration obtained through that conduct, and may refuse to renew or grant registration when the application contains false evidence or information.
+The checked source lists these support documents:
 
-## Exam Guardrails
+- Certificate of Live Birth in NSO Security Paper.
+- Marriage Contract in NSO Security Paper for married female applicants.
+- College Diploma showing date of graduation and Special Order Number unless not required.
+- Baccalaureate Transcript of Records showing date of graduation and Special Order Number unless not required.
+- Accomplished Diversified Training Form 001.
+- Accomplished Diversified Training Form 002.
+- Architect-Mentor Affidavit.
+- Photocopy of the Architect-Mentor's valid Professional Identification Card, Professional Tax Receipt, and IAPOA number.
+- National Bureau of Investigation clearance.
+- Other documents the Board may require.
 
-- Use two years or equivalent DAE unless another controlling source supplies a specific hour conversion.
-- Use Section 13 for eligibility and document requirements.
-- Use Section 3(29) for the DAE definition.
-- Use one year of credit for a qualifying Master of Architecture degree.
-- Use only the eligibility items stated in Section 13; do not add a minimum-age rule from this lesson.
+## Fraudulent Applications
+
+The Board may refuse to renew a professional identification card, suspend or revoke a certificate of registration obtained by false swearing or misrepresentation in applying for registration or examination, and refuse renewal or registration when an application contains false evidence or information.
+
+## Reciprocity Note
+
+Section 27 covers foreign citizens seeking to take the licensure examination through reciprocity. The foreign applicant must prove that the foreign country allows Filipino citizens to practice or take the examination on terms of strict and absolute equality, including recognition of prerequisite degrees or diplomas. The source also lists immigration, passport, transcript, and Board-required documents for such applicants.
+
+## Real World Scenario
+
+A candidate has a BS Architecture degree and a master's degree in Architecture from a government-recognized university, but only one year of certified diversified architectural experience. The source-safe answer is that Section 13 credits one year of practical experience for the master's degree in Architecture, so the remaining experience question turns on whether the Board is satisfied with the degree, certification, and required documents. Do not add a 3,840-hour rule unless a current local source is checked.
+
+## Exam Traps
+
+- Calling DAE "Documentary Alternative Evaluation" in this article.
+- Using a 3,840-hour number not present in the checked passage.
+- Forgetting that a master's degree credit applies to Architecture from a government-recognized institution.
+- Treating false evidence as harmless after examination approval.
+
+## Related Articles
+
+- [LEA Structure and Passing Standard](lea-prac-law-008)
+- [Certificate of Registration and Oath](lea-prac-law-009)
+- [Reciprocity Principles](lea-prac-frm-007)

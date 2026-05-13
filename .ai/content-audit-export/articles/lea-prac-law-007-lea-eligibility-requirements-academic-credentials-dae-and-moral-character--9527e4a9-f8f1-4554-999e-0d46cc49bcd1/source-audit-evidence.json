@@ -1,132 +1,91 @@
 {
-  "artifact_type": "source-audit-evidence",
-  "audit_date": "2026-05-10",
-  "audited_at": "2026-05-10T21:50:00+08:00",
-  "audit_mode": "local_source_audit_no_supabase",
-  "protocols_applied": [
-    ".ai/CONTENT_EXCELLENCE_GOAL.md",
-    ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
-    ".ai/00_system/vitruvius-source-reference.md"
-  ],
+  "artifact_type": "source_audit_evidence",
+  "schema_version": 1,
+  "batch_id": "source-audited-article-batch-114-local-first",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T19:45:00+08:00",
+  "status": "pass",
+  "audit_mode": "local_first_raw_source_recheck",
   "target": {
     "article_id": "9527e4a9-f8f1-4554-999e-0d46cc49bcd1",
     "slug": "lea-prac-law-007-lea-eligibility-requirements-academic-credentials-dae-and-moral-character",
-    "title": "LEA Eligibility: Academic Credentials, DAE, and Moral Character",
-    "article_folder": ".ai/content-audit-export/articles/lea-prac-law-007-lea-eligibility-requirements-academic-credentials-dae-and-moral-character--9527e4a9-f8f1-4554-999e-0d46cc49bcd1",
-    "candidate_path": ".ai/content-audit-export/articles/lea-prac-law-007-lea-eligibility-requirements-academic-credentials-dae-and-moral-character--9527e4a9-f8f1-4554-999e-0d46cc49bcd1/candidate.md",
-    "candidate_sha256": "sha256:26d47c5e1909c65f0b1437b729a7a81c289af1e4b3f0346de27b0387e06fc2f0",
-    "normalized_sha256": "sha256:26d47c5e1909c65f0b1437b729a7a81c289af1e4b3f0346de27b0387e06fc2f0",
-    "linked_questions_sha256": "sha256:16aa9917d43f94f91e540deafbb452c42e239dc75d6cd088d5394a54f2a2015a",
-    "sources_sha256": "sha256:e2fd88b12ecc400f80e1a7bfea81fe69f84b00c94a9e8af2c6439256544dca58"
+    "title": "LEA Eligibility Requirements: Degree, DAE, Documents, and Moral Character"
   },
   "classification": {
-    "content_type": "ra9266_lea_eligibility_article",
-    "contains_legal_or_code_claims": true,
-    "requires_raw_pdf_audit": true,
-    "linked_questions_observed": 10,
-    "question_edits_created": [
-      "41ffe2a2-10ff-4308-adb9-29b97141d657",
-      "2c5690ce-36ff-4ba8-b261-322bc95c880a",
-      "322640fd-b891-4827-a284-4f0ecb707c05",
-      "515fdf22-be1f-495b-a65f-e9f80ab4c0d6",
-      "7aebff66-1444-41e2-8cb1-b05a626f0811",
-      "9f917c1e-317b-4a35-aeaf-327ce7c41298",
-      "3bf3c0d5-ad9d-44bc-bed2-11eb56fd3595",
-      "97c8aa6b-c21d-4ab0-bc04-e62c42720665",
-      "4cd44a96-7246-4702-8715-3baaba3685aa",
-      "cc6442bf-ef49-46bf-8b8d-ee86d1393b18"
+    "topic": "LEA eligibility requirements and documents",
+    "source_depth": "source_primary_with_final_depth_deferred_items",
+    "thin_needs_expansion": false
+  },
+  "checked_sources": [
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "source_id": "lea-prac-law-007-lea-eligibility-requirements-academic-credentials-dae-and-moral-character-ra9266-irr-local-1",
+      "locator": "RA 9266 IRR refined markdown lines 372-411"
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+      "source_id": "lea-prac-law-007-lea-eligibility-requirements-academic-credentials-dae-and-moral-character-ra9266-irr-local-1",
+      "locator": "RA 9266 IRR refined markdown lines 372-411"
+    },
+    {
+      "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "source_id": "lea-prac-law-007-lea-eligibility-requirements-academic-credentials-dae-and-moral-character-ra9266-irr-local-2",
+      "locator": "RA 9266 IRR refined markdown lines 646-666"
+    },
+    {
+      "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+      "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+      "source_id": "lea-prac-law-007-lea-eligibility-requirements-academic-credentials-dae-and-moral-character-ra9266-irr-local-2",
+      "locator": "RA 9266 IRR refined markdown lines 646-666"
+    }
+  ],
+  "claims": [
+    "Section 12 requires applicants for registration to undergo the licensure examination given by the Board at Commission-designated places and dates.",
+    "Section 13 requires citizenship/reciprocity qualification, good moral character, BS Architecture from a CHED-recognized or accredited school, at least two years or equivalent of diversified architectural experience certified by a registered/licensed architect, and no moral-turpitude conviction.",
+    "Section 13 gives one year practical-experience credit for a master degree in Architecture from a government-recognized institution.",
+    "Section 13 lists support documents including NSO live birth, diploma/TOR, DT Forms 001 and 002, Architect-Mentor Affidavit, mentor PIC/PTR/IAPOA number, NBI clearance, and other Board-required documents.",
+    "The fraudulent-applications clause allows refusal, suspension, revocation, or denial when false swearing, misrepresentation, false evidence, or false information is involved."
+  ],
+  "removed_or_rewritten_material": [
+    "Removed unsupported 3,840-hour conversion, Documentary Alternative Evaluation label, current portal checklist details, and mentor-PTR expiration conclusion.",
+    "Rebuilt around Sections 12, 13, 27, and the fraudulent-applications clause."
+  ],
+  "unverified_or_rejected_claims": [
+    "The exact current PRC portal checklist, DAE logbook mechanics, and 3,840-hour conversion require current local PRC/Board sources before restoration.",
+    "Do not restore Documentary Alternative Evaluation wording; the checked source supports Diversified Training forms and diversified architectural experience."
+  ],
+  "scenario_enrichment": {
+    "status": "added",
+    "note": "Added source-safe LEA application document scenario."
+  },
+  "question_repair_policy": {
+    "linked_questions_count": 10,
+    "question_edits_count": 10,
+    "all_linked_questions_have_source_safe_edits": true
+  },
+  "raw_pdf_gate": {
+    "primary_source_truth": "vitruvius-connection/001_Raw-Source-Layer PDFs",
+    "local_conversion_line_anchors": [
+      "RA 9266 IRR refined markdown lines 372-411",
+      "RA 9266 IRR refined markdown lines 646-666"
     ]
   },
-  "raw_sources": [
-    {
-      "key": "ra9266_irr",
-      "label": "RA 9266 IRR Architecture Act of 2004",
-      "source_type": "implementing_rules",
-      "source_id": "batch005-lea-prac-law-007-lea-eligibility-requirements-ac-source-01",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
-      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
-      "checked_pdf_pages": [
-        5,
-        10
-      ]
-    }
-  ],
-  "gate_results": {
-    "compose": "PASS: content-audit:compose -- --article-id 9527e4a9-f8f1-4554-999e-0d46cc49bcd1 --overwrite; blockers=0",
-    "diff": "PASS: content-audit:diff -- --article-id 9527e4a9-f8f1-4554-999e-0d46cc49bcd1; changed=true safe_to_push=true blockers=0",
-    "validate": "PASS: content-audit:validate -- --article-id 9527e4a9-f8f1-4554-999e-0d46cc49bcd1 --summary --dry-run; valid=true blockers=0 warnings=0",
-    "push_dry_run": "not_attempted_local_first; Supabase remote fetch is final publishing only and intentionally non-blocking here",
-    "supabase_mutation": "not_attempted_by_request"
+  "source_audit": {
+    "overall": "pass",
+    "blockers": [],
+    "warnings": [
+      "The exact current PRC portal checklist, DAE logbook mechanics, and 3,840-hour conversion require current local PRC/Board sources before restoration.",
+      "Do not restore Documentary Alternative Evaluation wording; the checked source supports Diversified Training forms and diversified architectural experience."
+    ]
   },
-  "claims": [
-    {
-      "claim_id": "law007-claim-01",
-      "claim_text": "Section 3(29) defines DAE as post-baccalaureate, pre-licensure experience of two years with varied phases of architectural service.",
-      "source_support": [
-        "ra9266_irr"
-      ],
-      "audit_result": "PASS"
-    },
-    {
-      "claim_id": "law007-claim-02",
-      "claim_text": "Section 13 requires citizenship/reciprocity, good moral character, a recognized BS Architecture degree, certified two years or equivalent DAE, and no moral-turpitude conviction.",
-      "source_support": [
-        "ra9266_irr"
-      ],
-      "audit_result": "PASS"
-    },
-    {
-      "claim_id": "law007-claim-03",
-      "claim_text": "Section 13 credits a qualifying Master of Architecture degree as one year toward practical experience.",
-      "source_support": [
-        "ra9266_irr"
-      ],
-      "audit_result": "PASS"
-    },
-    {
-      "claim_id": "law007-claim-04",
-      "claim_text": "Section 13 lists application documents including NSO birth certificate, diploma, transcript, DT forms, mentor affidavit, mentor PIC/PTR/IAPOA documentation, NBI clearance, and other required documents.",
-      "source_support": [
-        "ra9266_irr"
-      ],
-      "audit_result": "PASS"
-    },
-    {
-      "claim_id": "law007-claim-05",
-      "claim_text": "Section 13 authorizes refusal, suspension, or revocation when false evidence, false information, or misrepresentation is used.",
-      "source_support": [
-        "ra9266_irr"
-      ],
-      "audit_result": "PASS"
-    },
-    {
-      "claim_id": "lea-prac-law-007-lea-eligibility-requirements-academic-credentials-dae-and-moral-character-linked-question-edits",
-      "claim_text": "Question edits staged locally for linked question IDs/model IDs: 41ffe2a2-10ff-4308-adb9-29b97141d657 (ALE-PRAC-LAW-007-003), 2c5690ce-36ff-4ba8-b261-322bc95c880a (ALE-PRAC-LAW-007-009), 322640fd-b891-4827-a284-4f0ecb707c05 (ALE-PRAC-LAW-007-008), 515fdf22-be1f-495b-a65f-e9f80ab4c0d6 (ALE-PRAC-LAW-007-002), 7aebff66-1444-41e2-8cb1-b05a626f0811 (ALE-PRAC-LAW-007-010), 9f917c1e-317b-4a35-aeaf-327ce7c41298 (ALE-PRAC-LAW-007-001), 3bf3c0d5-ad9d-44bc-bed2-11eb56fd3595 (ALE-PRAC-LAW-007-006), 97c8aa6b-c21d-4ab0-bc04-e62c42720665 (ALE-PRAC-LAW-007-005), 4cd44a96-7246-4702-8715-3baaba3685aa (ALE-PRAC-LAW-007-007), cc6442bf-ef49-46bf-8b8d-ee86d1393b18 (ALE-PRAC-LAW-007-004)",
-      "audit_result": "PASS",
-      "source_support": [
-        "ra9266_irr"
-      ]
-    }
-  ],
-  "unsupported_or_removed_claims": [
-    "Removed learner-visible UI placeholders, preserved placeholder blocks, extracted-summary notes, and internal replacement notes from normalized/candidate content.",
-    "Removed age-based eligibility language; the checked Section 13 page does not state a minimum age.",
-    "Removed fixed-hour DAE claims; the checked source states two years or equivalent DAE.",
-    "Rewrote mentor-PTR-expiry scenario to the verified mentor-document submission requirement."
-  ],
-  "remaining_local_blockers": [],
-  "overall": {
-    "source_audit_status": "PASS",
-    "safe_for_supabase_upload": true,
-    "local_first_recovery_complete": true,
-    "remote_publish_status": "not_attempted_by_request",
-    "remaining_local_blockers": []
-  },
-  "local_validation": {
-    "command": "bun run content-audit:validate -- --article-id 9527e4a9-f8f1-4554-999e-0d46cc49bcd1 --summary --dry-run",
-    "valid": true,
-    "blockers": 0,
-    "warnings": [],
-    "checked_at": "2026-05-10T21:50:00+08:00"
+  "overall": "pass",
+  "paths": {
+    "candidate": ".ai/content-audit-export/articles/lea-prac-law-007-lea-eligibility-requirements-academic-credentials-dae-and-moral-character--9527e4a9-f8f1-4554-999e-0d46cc49bcd1/candidate.md",
+    "normalized": ".ai/content-audit-export/articles/lea-prac-law-007-lea-eligibility-requirements-academic-credentials-dae-and-moral-character--9527e4a9-f8f1-4554-999e-0d46cc49bcd1/normalized.md",
+    "sources": ".ai/content-audit-export/articles/lea-prac-law-007-lea-eligibility-requirements-academic-credentials-dae-and-moral-character--9527e4a9-f8f1-4554-999e-0d46cc49bcd1/sources.json",
+    "question_edits": ".ai/content-audit-export/articles/lea-prac-law-007-lea-eligibility-requirements-academic-credentials-dae-and-moral-character--9527e4a9-f8f1-4554-999e-0d46cc49bcd1/question-edits"
   }
 }

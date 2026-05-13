@@ -1,0 +1,164 @@
+{
+  "batch_number": "114",
+  "batch_id": "source-audited-article-batch-114-local-first",
+  "generated_at": "2026-05-13T19:45:00+08:00",
+  "status": "pass_local_first_git_blocked",
+  "gates": {
+    "compose_diff_validate_strict_5_of_5": {
+      "status": "pass",
+      "expected_articles": 5,
+      "actual_articles": 5,
+      "articles": [
+        {
+          "slug": "lea-prac-eth-013-introduction",
+          "status": "pass"
+        },
+        {
+          "slug": "lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office",
+          "status": "pass"
+        },
+        {
+          "slug": "lea-prac-law-005-prboa-powers-and-functions-section-7-in-full",
+          "status": "pass"
+        },
+        {
+          "slug": "lea-prac-law-006-prc-vs-prboa-distinct-roles-authority-and-the-appeals-chain",
+          "status": "pass"
+        },
+        {
+          "slug": "lea-prac-law-007-lea-eligibility-requirements-academic-credentials-dae-and-moral-character",
+          "status": "pass"
+        }
+      ]
+    },
+    "ui_block_edit_validation": {
+      "status": "pass",
+      "files": [
+        ".ai/content-audit-export/articles/lea-prac-eth-013-introduction--3a7ba43c-5ef5-4fd8-b054-ccb8a567d6f7/ui-block-edit-validation.json",
+        ".ai/content-audit-export/articles/lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office--1532843e-c068-4666-8c85-2e44982075c1/ui-block-edit-validation.json",
+        ".ai/content-audit-export/articles/lea-prac-law-005-prboa-powers-and-functions-section-7-in-full--ab6d74a1-744c-4961-816a-b088bb707848/ui-block-edit-validation.json",
+        ".ai/content-audit-export/articles/lea-prac-law-006-prc-vs-prboa-distinct-roles-authority-and-the-appeals-chain--3a66b00c-20a4-4577-8359-b956a93d7c50/ui-block-edit-validation.json",
+        ".ai/content-audit-export/articles/lea-prac-law-007-lea-eligibility-requirements-academic-credentials-dae-and-moral-character--9527e4a9-f8f1-4554-999e-0d46cc49bcd1/ui-block-edit-validation.json"
+      ]
+    },
+    "scoped_json_parse": {
+      "status": "pass",
+      "parsed_files": 111,
+      "failures": []
+    },
+    "placeholder_internal_note_source_gap_scan": {
+      "status": "pass",
+      "findings": []
+    },
+    "source_hash_checks": {
+      "status": "pass",
+      "checked_files": 22,
+      "failures": []
+    },
+    "linked_question_question_edit_count_checks": {
+      "status": "pass",
+      "checks": [
+        {
+          "article_id": "3a7ba43c-5ef5-4fd8-b054-ccb8a567d6f7",
+          "slug": "lea-prac-eth-013-introduction",
+          "linked_question_count": 10,
+          "question_edit_count": 10,
+          "status": "pass"
+        },
+        {
+          "article_id": "1532843e-c068-4666-8c85-2e44982075c1",
+          "slug": "lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office",
+          "linked_question_count": 10,
+          "question_edit_count": 10,
+          "status": "pass"
+        },
+        {
+          "article_id": "ab6d74a1-744c-4961-816a-b088bb707848",
+          "slug": "lea-prac-law-005-prboa-powers-and-functions-section-7-in-full",
+          "linked_question_count": 10,
+          "question_edit_count": 10,
+          "status": "pass"
+        },
+        {
+          "article_id": "3a66b00c-20a4-4577-8359-b956a93d7c50",
+          "slug": "lea-prac-law-006-prc-vs-prboa-distinct-roles-authority-and-the-appeals-chain",
+          "linked_question_count": 10,
+          "question_edit_count": 10,
+          "status": "pass"
+        },
+        {
+          "article_id": "9527e4a9-f8f1-4554-999e-0d46cc49bcd1",
+          "slug": "lea-prac-law-007-lea-eligibility-requirements-academic-credentials-dae-and-moral-character",
+          "linked_question_count": 10,
+          "question_edit_count": 10,
+          "status": "pass"
+        }
+      ]
+    },
+    "stale_compose_error_scan": {
+      "status": "pass",
+      "checks": [
+        {
+          "article_id": "3a7ba43c-5ef5-4fd8-b054-ccb8a567d6f7",
+          "slug": "lea-prac-eth-013-introduction",
+          "file": ".ai/content-audit-export/articles/lea-prac-eth-013-introduction--3a7ba43c-5ef5-4fd8-b054-ccb8a567d6f7/compose-error.json",
+          "exists": false,
+          "status": "pass"
+        },
+        {
+          "article_id": "1532843e-c068-4666-8c85-2e44982075c1",
+          "slug": "lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office",
+          "file": ".ai/content-audit-export/articles/lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office--1532843e-c068-4666-8c85-2e44982075c1/compose-error.json",
+          "exists": false,
+          "status": "pass"
+        },
+        {
+          "article_id": "ab6d74a1-744c-4961-816a-b088bb707848",
+          "slug": "lea-prac-law-005-prboa-powers-and-functions-section-7-in-full",
+          "file": ".ai/content-audit-export/articles/lea-prac-law-005-prboa-powers-and-functions-section-7-in-full--ab6d74a1-744c-4961-816a-b088bb707848/compose-error.json",
+          "exists": false,
+          "status": "pass"
+        },
+        {
+          "article_id": "3a66b00c-20a4-4577-8359-b956a93d7c50",
+          "slug": "lea-prac-law-006-prc-vs-prboa-distinct-roles-authority-and-the-appeals-chain",
+          "file": ".ai/content-audit-export/articles/lea-prac-law-006-prc-vs-prboa-distinct-roles-authority-and-the-appeals-chain--3a66b00c-20a4-4577-8359-b956a93d7c50/compose-error.json",
+          "exists": false,
+          "status": "pass"
+        },
+        {
+          "article_id": "9527e4a9-f8f1-4554-999e-0d46cc49bcd1",
+          "slug": "lea-prac-law-007-lea-eligibility-requirements-academic-credentials-dae-and-moral-character",
+          "file": ".ai/content-audit-export/articles/lea-prac-law-007-lea-eligibility-requirements-academic-credentials-dae-and-moral-character--9527e4a9-f8f1-4554-999e-0d46cc49bcd1/compose-error.json",
+          "exists": false,
+          "status": "pass"
+        }
+      ]
+    },
+    "prior_batch_duplicate_selection_scan": {
+      "status": "pass",
+      "checked_batches": "087-113",
+      "duplicate_hits": []
+    },
+    "targeted_content_audit_tests": {
+      "status": "pass",
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "result": "34 pass, 0 fail, 328 expect() calls"
+    },
+    "scoped_git_diff_check": {
+      "status": "pass",
+      "command": "git diff --check -- .ai/03_plans/production-line-batch-114-manifest.json .ai/content-audit-export/source-audited-article-batch-114-local-first-report.md .ai/content-audit-export/source-audited-article-batch-114-local-first-ledger.json .ai/content-audit-export/source-audited-article-batch-114-local-first-scoped-checks.json .ai/03_plans/batch-114-independent-quality-review.md .ai/03_plans/source-audited-local-first-batches-handoff.md .ai/03_plans/source-audited-production-line-coordination.md .ai/content-audit-export/sync-state.json .ai/content-audit-export/runs/source-audited-batch-114-local-generator.mjs .ai/content-audit-export/articles/lea-prac-eth-013-introduction--3a7ba43c-5ef5-4fd8-b054-ccb8a567d6f7 .ai/content-audit-export/articles/lea-prac-law-004-prboa-composition-qualifications-and-terms-of-office--1532843e-c068-4666-8c85-2e44982075c1 .ai/content-audit-export/articles/lea-prac-law-005-prboa-powers-and-functions-section-7-in-full--ab6d74a1-744c-4961-816a-b088bb707848 .ai/content-audit-export/articles/lea-prac-law-006-prc-vs-prboa-distinct-roles-authority-and-the-appeals-chain--3a66b00c-20a4-4577-8359-b956a93d7c50 .ai/content-audit-export/articles/lea-prac-law-007-lea-eligibility-requirements-academic-credentials-dae-and-moral-character--9527e4a9-f8f1-4554-999e-0d46cc49bcd1"
+    },
+    "cached_diff_check": {
+      "status": "pass_via_temporary_index_after_intended_files_only",
+      "command": "GIT_INDEX_FILE=/private/tmp/slatecamp-batch114.index GIT_OBJECT_DIRECTORY=/private/tmp/slatecamp-batch114-objects GIT_ALTERNATE_OBJECT_DIRECTORIES=/Users/philiplewis/slatecamp/.git/objects git diff --cached --check"
+    },
+    "real_git_stage_commit_push_gate": {
+      "status": "blocked_live_index",
+      "expected_commit_message": "chore(content): accept source-audited batch 114",
+      "attempted_command": "git add -- <Batch 114 intended paths>",
+      "failure": "fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted",
+      "push_status": "not_attempted_no_real_commit"
+    }
+  }
+}

@@ -1,11 +1,76 @@
 {
   "question_id": "73030b31-b2f2-4ae5-810a-0ffc12e67007",
   "baseline_hash": "sha256:6dd4d1a39383f2594f506a287a9c4ece8a391e32a251c18750065adc30556972",
-  "reason": "Batch 004 local source audit aligned PRBoA Powers and Functions: Section 7 in Full linked question ALE-PRAC-LAW-005-008 to verified raw-source citations and repaired generic/incorrect locators where needed.",
-  "approved_by": "codex-local-source-audit-batch-004",
-  "approved_at": "2026-05-10T20:15:00+08:00",
+  "action": "replace",
+  "reason": "source-audited-article-batch-114-local-first rewrote this linked question after local raw-source recheck for lea-prac-law-005-prboa-powers-and-functions-section-7-in-full.",
+  "approved_by": "codex-local-source-audit-batch-114",
+  "approved_at": "2026-05-13T19:45:00+08:00",
+  "source_audit_support": {
+    "parent_article_id": "ab6d74a1-744c-4961-816a-b088bb707848",
+    "parent_article_slug": "lea-prac-law-005-prboa-powers-and-functions-section-7-in-full",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 9266 IRR lines 309-312",
+    "checked_markdown_lines": [
+      "RA 9266 IRR lines 296-340"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "lea-prac-law-005-prboa-powers-and-functions-section-7-in-full-ra9266-irr-local-1",
+        "locator": "RA 9266 IRR refined markdown lines 296-340"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_id": "lea-prac-law-005-prboa-powers-and-functions-section-7-in-full-ra9266-irr-local-1",
+        "locator": "RA 9266 IRR refined markdown lines 296-340"
+      }
+    ],
+    "local_source_safe_action": "Batch 114 replaced unsupported, thin, or stale professional-practice wording with local raw-source-supported question text, answer key, citation, and rationale.",
+    "batch_id": "source-audited-article-batch-114-local-first"
+  },
   "proposed": {
-    "code_citation": "RA 9266 IRR Section 7",
-    "explanation": "Source-audited against RA 9266 IRR Section 7, which enumerates the Board powers and functions from paragraphs (a) through (n), plus the Commission review rule immediately following the list."
+    "text": "Which answer best states Section 7(f)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Monitor conditions affecting practice and adopt measures to maintain high professional, ethical, and technical standards"
+      },
+      {
+        "id": "b",
+        "text": "Replace CHED in all education matters"
+      },
+      {
+        "id": "c",
+        "text": "Act as the Court of Appeals"
+      },
+      {
+        "id": "d",
+        "text": "Set all contractor prices"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "correct": "Section 7(f) is the monitoring and standards-maintenance power.",
+      "takeaway": "Section 7(f) is the monitoring and standards-maintenance power."
+    },
+    "explanation": "Use RA 9266 IRR lines 309-312 for this Batch 114 source-safe rewrite.",
+    "code_citation": "RA 9266 IRR lines 309-312",
+    "bloom_level": "apply",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited local-first",
+      "batch 114"
+    ],
+    "difficulty": 0.5,
+    "is_assessment": false,
+    "model_id": "BATCH-114-lea-prac-law-005-prboa-powers-and-functions-section-7-in-full-003"
   }
 }

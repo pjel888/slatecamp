@@ -1,11 +1,102 @@
 {
   "question_id": "30634494-d646-4114-8e7a-17f3e61c7b5d",
   "baseline_hash": "sha256:48521681b5a6b2c3aa3ba4cd9a346c728c3eec62e09a9777cfbe1b3615603371",
-  "reason": "Batch 005 local source audit aligned PRC vs PRBoA: Supervision, Board Powers, and Appeals linked question ALE-PRAC-LAW-006-002 to verified RA 9266 IRR raw-source claims.",
-  "approved_by": "codex-local-source-audit-batch-005",
-  "approved_at": "2026-05-10T21:30:00+08:00",
+  "action": "replace",
+  "reason": "source-audited-article-batch-114-local-first rewrote this linked question after local raw-source recheck for lea-prac-law-006-prc-vs-prboa-distinct-roles-authority-and-the-appeals-chain.",
+  "approved_by": "codex-local-source-audit-batch-114",
+  "approved_at": "2026-05-13T19:45:00+08:00",
+  "source_audit_support": {
+    "parent_article_id": "3a66b00c-20a4-4577-8359-b956a93d7c50",
+    "parent_article_slug": "lea-prac-law-006-prc-vs-prboa-distinct-roles-authority-and-the-appeals-chain",
+    "answer_key_fields_changed": true,
+    "support_status": "source_safe_rewrite",
+    "source_locator": "RA 9266 IRR lines 342-344",
+    "checked_markdown_lines": [
+      "RA 9266 IRR lines 317-344",
+      "RA 9266 IRR lines 346-360",
+      "RA 9266 IRR lines 817-847"
+    ],
+    "checked_sources": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "lea-prac-law-006-prc-vs-prboa-distinct-roles-authority-and-the-appeals-chain-ra9266-irr-local-1",
+        "locator": "RA 9266 IRR refined markdown lines 317-344"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_id": "lea-prac-law-006-prc-vs-prboa-distinct-roles-authority-and-the-appeals-chain-ra9266-irr-local-1",
+        "locator": "RA 9266 IRR refined markdown lines 317-344"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "lea-prac-law-006-prc-vs-prboa-distinct-roles-authority-and-the-appeals-chain-ra9266-irr-local-2",
+        "locator": "RA 9266 IRR refined markdown lines 346-360"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_id": "lea-prac-law-006-prc-vs-prboa-distinct-roles-authority-and-the-appeals-chain-ra9266-irr-local-2",
+        "locator": "RA 9266 IRR refined markdown lines 346-360"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "source_id": "lea-prac-law-006-prc-vs-prboa-distinct-roles-authority-and-the-appeals-chain-ra9266-irr-local-3",
+        "locator": "RA 9266 IRR refined markdown lines 817-847"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
+        "sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_id": "lea-prac-law-006-prc-vs-prboa-distinct-roles-authority-and-the-appeals-chain-ra9266-irr-local-3",
+        "locator": "RA 9266 IRR refined markdown lines 817-847"
+      }
+    ],
+    "local_source_safe_action": "Batch 114 replaced unsupported, thin, or stale professional-practice wording with local raw-source-supported question text, answer key, citation, and rationale.",
+    "batch_id": "source-audited-article-batch-114-local-first"
+  },
   "proposed": {
-    "code_citation": "RA 9266 IRR Sections 4, 7, 8, 9, and 40",
-    "explanation": "Source-audited against RA 9266 IRR Sections 4, 7, 8, 9, and 40 in the checked local RA 9266 IRR PDF. This edit removes unsupported locators or assumptions and keeps the question aligned to the audited article cluster."
+    "text": "What does Section 8 say the Commission provides to the Board?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The Board Secretary, secretariat, and other support services"
+      },
+      {
+        "id": "b",
+        "text": "All private client fees"
+      },
+      {
+        "id": "c",
+        "text": "All competition prizes"
+      },
+      {
+        "id": "d",
+        "text": "All contractor bonds"
+      }
+    ],
+    "correct_option_id": "a",
+    "correct_value": null,
+    "accepted_answers": null,
+    "value_tolerance": 0,
+    "question_type": "mcq",
+    "rationale": {
+      "correct": "Section 8 states secretary designation and support services.",
+      "takeaway": "Section 8 states secretary designation and support services."
+    },
+    "explanation": "Use RA 9266 IRR lines 342-344 for this Batch 114 source-safe rewrite.",
+    "code_citation": "RA 9266 IRR lines 342-344",
+    "bloom_level": "apply",
+    "application_context": "professional_practice_source_audit",
+    "practice_context": [
+      "professional practice",
+      "source-audited local-first",
+      "batch 114"
+    ],
+    "difficulty": 0.5,
+    "is_assessment": false,
+    "model_id": "BATCH-114-lea-prac-law-006-prc-vs-prboa-distinct-roles-authority-and-the-appeals-chain-010"
   }
 }
