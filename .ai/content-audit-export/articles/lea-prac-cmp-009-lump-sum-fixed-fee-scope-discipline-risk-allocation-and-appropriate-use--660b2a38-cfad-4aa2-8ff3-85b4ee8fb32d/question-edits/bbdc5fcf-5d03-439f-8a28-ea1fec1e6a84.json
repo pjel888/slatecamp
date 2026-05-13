@@ -2,80 +2,142 @@
   "question_id": "bbdc5fcf-5d03-439f-8a28-ea1fec1e6a84",
   "baseline_hash": "sha256:794dd714b9506bf19e3b2d05250080d16b382cc3a913a5a6ff6635effe306a2e",
   "action": "replace",
-  "reason": "source-audited-article-batch-035-local-first aligned linked professional-practice question with audited local raw PDF source language for lea-prac-cmp-009-lump-sum-fixed-fee-scope-discipline-risk-allocation-and-appropriate-use.",
-  "approved_by": "codex-local-source-audit-batch-035",
-  "approved_at": "2026-05-11T11:27:41+08:00",
+  "reason": "source-audited-article-batch-106-local-first refreshed this linked professional-practice question against current local raw PDF/source anchors for lea-prac-cmp-009-lump-sum-fixed-fee-scope-discipline-risk-allocation-and-appropriate-use.",
+  "approved_by": "codex-local-source-audit-batch-106",
+  "approved_at": "2026-05-13T14:35:00+08:00",
   "source_audit_support": {
     "parent_article_id": "660b2a38-cfad-4aa2-8ff3-85b4ee8fb32d",
     "parent_article_slug": "lea-prac-cmp-009-lump-sum-fixed-fee-scope-discipline-risk-allocation-and-appropriate-use",
     "parent_article_title": "Lump Sum Fixed Fee Scope Discipline Risk Allocation",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "UAP Standards of Professional Practice refined markdown lines 441-443; SPP 201 refined markdown lines 204-207",
+    "source_locator": "UAP Standards refined markdown lines 362-457, 473-551, and 1608-1642; Standards of Professional Practice2 raw markdown lines 232-281, 447-493, 524-543, and 1690-1737; SPP 201 refined markdown lines 174-251; UAP Document 401-402 refined markdown lines 1-24 and 105-160; RA 9266 IRR refined markdown lines 106-111 and 778-780",
+    "checked_markdown_lines": [
+      "UAP Standards lines 362-412 project classification groups",
+      "UAP Standards lines 414-457 compensation methods",
+      "UAP Standards lines 473-551 fee conditions, reimbursables, abandoned work, PCC/PDC",
+      "UAP Standards lines 1608-1642 PACS per diem, retainer, reimbursables, and fixed/lump sum",
+      "Standards2 lines 232-281",
+      "Standards2 lines 447-493",
+      "Standards2 lines 524-543",
+      "Standards2 lines 1690-1737",
+      "SPP 201 lines 174-251 compensation methods",
+      "401-402 lines 1-24",
+      "401-402 lines 105-160",
+      "RA 9266 IRR lines 106-111 service agreement",
+      "RA 9266 IRR lines 778-780 collection of professional fees"
+    ],
     "checked_sources": [
       {
-        "source_id": "uap-standards-professional-practice2-local",
-        "label": "UAP Standards of Professional Practice - compiled SPP source",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
-        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
-        "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
-        "source_locator": "UAP Standards of Professional Practice refined markdown lines 441-443; SPP 201 refined markdown lines 204-207",
+        "source_id": "uap-document-standards-professional-practice-local",
+        "label": "UAP Document Standards of Professional Practice - SPP 202 compensation and project classification",
+        "authority": "United Architects of the Philippines / professional practice standards source",
+        "source_type": "professional_practice_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+        "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "source_locator": "UAP Standards refined markdown lines 362-457, 473-551, and 1608-1642",
         "checked_markdown_lines": [
-          "UAP Standards of Professional Practice refined markdown lines 441-443",
-          "SPP 201 refined markdown lines 204-207"
-        ]
+          "UAP Standards lines 362-412 project classification groups",
+          "UAP Standards lines 414-457 compensation methods",
+          "UAP Standards lines 473-551 fee conditions, reimbursables, abandoned work, PCC/PDC",
+          "UAP Standards lines 1608-1642 PACS per diem, retainer, reimbursables, and fixed/lump sum"
+        ],
+        "use": "Primary local source for SPP 202 compensation methods, Group 6/7 classification, reimbursables, and consulting-compensation methods."
       },
       {
-        "source_id": "uap-spp-201-local",
-        "label": "UAP SPP Document 201 - Pre-design Services / Compensation Slides",
+        "source_id": "standards-of-professional-practice2-local",
+        "label": "Standards of Professional Practice2 compiled local PDF",
+        "authority": "United Architects of the Philippines / compiled professional practice standards source",
+        "source_type": "professional_practice_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+        "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+        "source_locator": "Standards of Professional Practice2 raw markdown lines 232-281, 447-493, 524-543, and 1690-1737",
+        "checked_markdown_lines": [
+          "Standards2 lines 232-281",
+          "Standards2 lines 447-493",
+          "Standards2 lines 524-543",
+          "Standards2 lines 1690-1737"
+        ],
+        "use": "Corroborates methods of compensation and related service conditions."
+      },
+      {
+        "source_id": "spp-201-pre-design-services-local",
+        "label": "SPP 201 - Pre-design Services local raw PDF",
+        "authority": "United Architects of the Philippines / pre-design services source",
+        "source_type": "professional_practice_pdf",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
-        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
         "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
         "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
-        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
         "refined_markdown_sha256": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
-        "source_locator": "UAP Standards of Professional Practice refined markdown lines 441-443; SPP 201 refined markdown lines 204-207",
+        "source_locator": "SPP 201 refined markdown lines 174-251",
         "checked_markdown_lines": [
-          "UAP Standards of Professional Practice refined markdown lines 441-443",
-          "SPP 201 refined markdown lines 204-207"
-        ]
+          "SPP 201 lines 174-251 compensation methods"
+        ],
+        "use": "Corroborates pre-design MDPE, lump sum/fixed fee, per diem/honorarium, and mixed compensation methods."
+      },
+      {
+        "source_id": "uap-document-401-402-owner-architect-agreement-local",
+        "label": "UAP Document 401-402 Proforma Architect-Owner Agreement local PDF",
+        "authority": "United Architects of the Philippines / Owner-Architect agreement source",
+        "source_type": "professional_practice_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+        "raw_pdf_sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
+        "refined_markdown_sha256": "sha256:ea7f84c966467b46fe9058778d4f9a0821db94a5dbc0a4fb02a2cfd69e215d05",
+        "source_locator": "UAP Document 401-402 refined markdown lines 1-24 and 105-160",
+        "checked_markdown_lines": [
+          "401-402 lines 1-24",
+          "401-402 lines 105-160"
+        ],
+        "use": "Corroborates agreement structure, owner responsibilities, reimbursables, abandoned work, and scope exclusions."
+      },
+      {
+        "source_id": "ra-9266-irr-service-agreement-local",
+        "label": "IRR of RA 9266 - service agreement and professional fee provisions",
+        "authority": "Professional Regulation Commission / Architecture Act IRR source",
+        "source_type": "legal_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+        "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_locator": "RA 9266 IRR refined markdown lines 106-111 and 778-780",
+        "checked_markdown_lines": [
+          "RA 9266 IRR lines 106-111 service agreement",
+          "RA 9266 IRR lines 778-780 collection of professional fees"
+        ],
+        "use": "Legal boundary for service agreement compensation and collection of architectural fees."
       }
     ],
-    "local_source_safe_action": "Question text, options, answer key, rationale, explanation, and code citation rewritten to audited local article scope."
+    "local_source_safe_action": "source-audited-article-batch-106-local-first refreshed question text, options, answer key, rationale, explanation, and code citation to the audited article scope."
   },
   "proposed": {
-    "text": "If a question asks for the specific source-backed project type mentioned for Lump Sum or Fixed Fee, which answer is safest?",
+    "text": "What is the best exam boundary for fixed fee?",
     "options": [
       {
         "id": "a",
-        "text": "Government projects"
+        "text": "Treat it as unlimited service."
       },
       {
         "id": "b",
-        "text": "Only private single-family residences"
+        "text": "Recognize the method, then check whether scope and source facts justify it."
       },
       {
         "id": "c",
-        "text": "Only design-build contracts"
+        "text": "Use it only when reimbursables are impossible."
       },
       {
         "id": "d",
-        "text": "Only projects with no paperwork"
+        "text": "Apply it to all creative work by default."
       }
     ],
-    "correct_option_id": "a",
-    "rationale": {
-      "a": "The checked source specifically mentions government projects as a context where Lump Sum or Fixed Fee may be applied.",
-      "b": "The checked source does not limit the method to private single-family residences.",
-      "c": "The checked line does not identify design-build contracts.",
-      "d": "The source says government projects entail more paperwork.",
-      "correct": "The checked source specifically mentions government projects as a context where Lump Sum or Fixed Fee may be applied.",
-      "takeaway": "Answer the project type actually named in the source."
-    },
-    "explanation": "The checked source specifically mentions government projects as a context where Lump Sum or Fixed Fee may be applied. Answer the project type actually named in the source.",
-    "code_citation": "UAP Standards of Professional Practice refined markdown lines 441-443"
+    "correct_option_id": "b",
+    "rationale": "Batch 106 keeps fixed-fee use tied to source-recognized method, government rationale, and clearly defined scope.",
+    "explanation": "Batch 106 keeps fixed-fee use tied to source-recognized method, government rationale, and clearly defined scope.",
+    "code_citation": "UAP Standards lines 441-457 and 1633-1642",
+    "model_id": "BATCH-106-lea-prac-cmp-009-lump-sum-fixed-fee-scope-discipline-risk-allocation-and-appropriate-use-008"
   }
 }

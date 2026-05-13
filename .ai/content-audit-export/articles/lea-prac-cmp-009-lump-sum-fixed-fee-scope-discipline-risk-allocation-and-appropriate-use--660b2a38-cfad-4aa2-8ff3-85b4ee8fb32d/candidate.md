@@ -1,55 +1,47 @@
-## Board Exam Quick Check
+# Lump Sum or Fixed Fee: Scope Discipline and Source Limits
 
-For lump sum or fixed fee, keep the answer narrow unless the question supplies a contract clause. The checked SPP sources recognize the method and mention government-project paperwork/time demands; they do not provide broad numerical contingency rules.
-
-## Lump Sum or Fixed Fee: Source-Supported Scope and Limits
+Lump Sum or Fixed Fee is a recognized compensation method, but the checked local sources support a narrower lesson than many review notes imply. For regular design services, the source specifically says the method may be applied to government projects because they involve more paperwork and time-consuming efforts. For professional architectural consulting services, the source adds a practical guardrail: fixed or lump-sum compensation fits when the required scope can be clearly and fully defined.
 
 ## Learning Goal
 
-After studying this article, you should be able to identify Lump Sum or Fixed Fee as a recognized compensation method, state the source-backed government-project rationale, and avoid unsupported risk-allocation or contingency heuristics.
+After studying this article, you should be able to identify when Lump Sum or Fixed Fee is source-recognized, explain why scope definition matters, and reject unsupported contingency or discount formulas.
 
----
+## What the Source Supports
 
-### Recognized Compensation Method
+SPP 202 recognizes Lump Sum or Fixed Fee as one of several compensation methods. The explicit regular-design rationale is government work: paperwork and time-consuming requirements can justify a fixed-fee structure. The professional consulting section adds that fixed/lump-sum compensation may be used when the scope of services can be clearly and fully defined.
 
-SPP Document 202, Section 5.4 lists Lump Sum or Fixed Fee as a compensation method. SPP Document 201, Section 4.3 also recognizes Lump Sum or Fixed Fee. The source-backed statement is narrow but important: this method may be applied to government projects because they entail more paperwork and time-consuming efforts.
+For consulting work, the source also gives contract controls. A lump-sum agreement should contain a clear time limit for performance and a provision for additional compensation for extra time used. In design assignments, it should address charges after preliminary-design approval and clarify where final approval authority lies.
 
-<ExamTip>
-If the board asks whether Lump Sum or Fixed Fee is recognized, answer yes. If it asks for the specific source-backed rationale in these SPP documents, remember government projects, paperwork, and time-consuming effort.
-</ExamTip>
+## What the Source Does Not Support
 
-### What the Source Does Not Say
+The checked sources do not supply a universal 10-20 percent contingency, a rule that lump sum must be lower than MDPE, or a 2.2 multiplier formula for lump-sum pricing. Those can be private contract assumptions only when a problem gives them. They are not source-backed defaults for this Batch 106 article.
 
-The checked sources do not give a 10-20% contingency rule. They do not say lump sum should be 10-20% lower than MDPE. They do not provide a 2.2 multiplier example. They also do not provide a detailed list saying lump sum is best for every stable-scope, renovation, design-build, or demanding-client scenario.
+## Professional Practice Logic
 
-Those statements may sound practical, but for source-grounded LEA content they cannot be taught as rules unless another verified source supports them.
+A fixed fee transfers estimation risk to the architect unless the scope, deliverables, approval points, reimbursables, and additional-service rules are written clearly. That does not mean the architect absorbs every owner change. The same SPP source requires additional compensation when the architect renders additional professional services due to owner-ordered changes after approval of outputs.
 
-### Professional Practice Logic
+## Real World Scenario
 
-A lump sum fee fixes the fee amount by agreement rather than computing the fee only after counting hours or applying a percentage. Because the fee is fixed, scope definition matters. The Owner-Architect Agreement should be clear about what services are included, what deliverables are expected, and how additional services or changes will be handled. That is a contract-management inference, not a replacement for the source-backed SPP statement.
+An LGU asks for architectural services for a small public building and needs a definite fee for procurement documents. The architect may use Lump Sum or Fixed Fee because the source recognizes government-project paperwork and time demands. The source-safe contract response is to define the included services, deliverables, review dates, time limit, reimbursables, and extra-service procedure. If the LGU later expands the program or requests new drawings after approval, the architect should document the additional service instead of silently absorbing it.
 
-### Real-World Application
+## Exam Traps
 
-Suppose an architect is negotiating with an LGU for a small public facility. The LGU prefers a fixed fee because procurement documents need a definite amount. The architect can recognize Lump Sum or Fixed Fee as a valid compensation method and can explain that the SPP source specifically mentions government projects because they require more paperwork and time-consuming effort. The architect should then make the agreement clear: included services, deliverables, approval points, reimbursables if any, and what happens when the Owner requests work outside the agreed scope. For the board, the key is not to invent a percentage discount or contingency. The key is to identify the method and its source-backed rationale.
+- Do not memorize an unsupported contingency percentage as an SPP rule.
+- Do not compute lump sum with an MDPE multiplier unless the item gives that private assumption.
+- Do not treat fixed fee as unlimited services.
+- Do not ignore time limits, final approval authority, or additional compensation clauses when the question asks about contract control.
 
-### Exam Traps
+## Source Locator
 
-- Do not memorize a 10-20% contingency as an SPP rule for lump sum.
-- Do not say lump sum is always lower than MDPE by a fixed percentage.
-- Do not compute lump sum from an unsupported 2.2 multiplier unless the problem itself supplies that as a contract assumption.
-- Do not turn practical risk advice into source law.
-
-### Source Locator
-
-- Standards of Professional Practice2.pdf, SPP Document 202, Section 5.4, refined markdown lines 441-443.
-- SPP 201.pdf, methods of compensation slides, refined markdown lines 204-207.
+- UAP Document Standards of Professional Practice, SPP 202 compensation methods, refined markdown lines 441-457 and 491-501.
+- UAP Document Standards of Professional Practice, PACS fixed/lump-sum compensation, refined markdown lines 1633-1642.
+- SPP 201 compensation-method summary, refined markdown lines 226-251.
+- UAP Document 401-402, agreement and owner-responsibility clauses, refined markdown lines 105-160.
 
 ## Related Articles
 
-- [Project Construction Cost](lea-prac-cmp-003)
-- [Schedule of Payments](lea-prac-cmp-004)
-- [MDPE Formula](lea-prac-cmp-006)
-- [MDPE Multipliers](lea-prac-cmp-007)
-- [Lump Sum Fixed Fee](lea-prac-cmp-009)
+- [Choosing MDPE vs Percentage of PCC](lea-prac-cmp-008)
+- [Reimbursable Expenses](lea-prac-cmp-011)
+- [Fees for Abandoned Projects](lea-prac-cmp-013)
 
-<!-- no-media-needed: professional practice article, text/tables/UI blocks are optimal format -->
+<!-- no-media-needed: professional practice article, source matrix and scenario text are the best format -->

@@ -210,3 +210,14 @@ Content preservation commits were observed before the final acceptance artifact 
 Next production-line target: Batch 106, continuing with the next eligible CMP clusters after CMP-007 unless live artifacts show a later completed batch.
 
 <!-- batch-105-acceptance:end -->
+<!-- batch-106-acceptance:start -->
+
+### Batch 106 local-first acceptance - 2026-05-13T14:20:00+08:00
+
+Batch 106 followed the fixed/eligible production-line rule and selected the next CMP sequence after Batch 105: CMP-008 through CMP-012. Current serial accepted-batch overlap check passed for Batches 087-105: no selected Batch 106 article ID appeared in that accepted set. Historical local-first/re-audit overlap is present in older pre-087 artifacts and is recorded separately from accepted production-line duplication.
+
+Batch 106 produced current local-first source-audit evidence, refreshed 50/50 linked question edits, added five source-safe Real World Scenario sections, removed a stale deferred evidence sidecar for CMP-009, and made no Supabase push/deploy/production DB mutation/merge-to-main. Required gates passed: compose 5/5, diff 5/5, validate 5/5, UI-block edit validation 5/5, scoped JSON parse, source hash checks, linked-question/question-edit counts, targeted content-audit tests, and duplicate selection scan.
+
+Commit/push gate: pending outside this sandbox because `.git` writes are blocked here; do not start Batch 107 until Batch 106 is actually committed and pushed. Next production-line target after that gate is Batch 107, continuing with the next eligible fixed/manifest articles after CMP-012 unless live artifacts show a later completed batch. Preserve THIN_NEEDS_EXPANSION, scenario/source-primary findings, and source-safe scenario decisions for final-depth remediation after all local-first batches are complete.
+
+<!-- batch-106-acceptance:end -->

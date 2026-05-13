@@ -2,63 +2,100 @@
   "question_id": "1361eb39-035a-4e15-ba8d-143bff302f3d",
   "baseline_hash": "sha256:b683951be0e5a6a57b885b17ca033f7bacd82709f4f54ca72e1829c63022763e",
   "action": "replace",
-  "reason": "source-audited-article-batch-027-local-first aligned linked question with audited local UAP/SPP source language for lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill.",
-  "approved_by": "codex-local-source-audit-batch-027",
-  "approved_at": "2026-05-11T00:00:00.000+08:00",
+  "reason": "source-audited-article-batch-106-local-first refreshed this linked professional-practice question against current local raw PDF/source anchors for lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill.",
+  "approved_by": "codex-local-source-audit-batch-106",
+  "approved_at": "2026-05-13T14:35:00+08:00",
   "source_audit_support": {
     "parent_article_id": "425c5476-12a0-476c-96e3-3f10c1530a9c",
     "parent_article_slug": "lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill",
+    "parent_article_title": "Reimbursable Expenses What is Reimbursable What is Absorbed",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "UAP Standards refined markdown lines 421-435, 461-490, and 1621-1631; SPP 202 local raw PDF checked",
+    "source_locator": "UAP Standards refined markdown lines 362-457, 473-551, and 1608-1642; SPP 202 local raw PDF checked; UAP Standards refined markdown provides readable line locators for the same provisions.; UAP Document 401-402 refined markdown lines 1-24 and 105-160; RA 9266 IRR refined markdown lines 106-111 and 778-780",
     "checked_markdown_lines": [
-      "UAP Standards lines 414-457",
-      "UAP Standards lines 459-501",
-      "UAP Standards lines 1608-1642",
+      "UAP Standards lines 362-412 project classification groups",
+      "UAP Standards lines 414-457 compensation methods",
+      "UAP Standards lines 473-551 fee conditions, reimbursables, abandoned work, PCC/PDC",
+      "UAP Standards lines 1608-1642 PACS per diem, retainer, reimbursables, and fixed/lump sum",
       "SPP 202 local raw PDF checked",
-      "UAP Standards lines 414-501 used for readable source locators"
+      "UAP Standards readable line locators used for citation control",
+      "401-402 lines 1-24",
+      "401-402 lines 105-160",
+      "RA 9266 IRR lines 106-111 service agreement",
+      "RA 9266 IRR lines 778-780 collection of professional fees"
     ],
     "checked_sources": [
       {
-        "source_id": "uap-standards-spp202-compensation-local",
-        "label": "UAP Document Standards of Professional Practice - SPP 202 compensation and service conditions",
-        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "source_id": "uap-document-standards-professional-practice-local",
+        "label": "UAP Document Standards of Professional Practice - SPP 202 compensation and project classification",
+        "authority": "United Architects of the Philippines / professional practice standards source",
         "source_type": "professional_practice_pdf",
-        "source_locator": "UAP Standards refined markdown lines 414-501 and 1608-1642",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
         "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
         "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
         "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "source_locator": "UAP Standards refined markdown lines 362-457, 473-551, and 1608-1642",
         "checked_markdown_lines": [
-          "UAP Standards lines 414-457",
-          "UAP Standards lines 459-501",
-          "UAP Standards lines 1608-1642"
+          "UAP Standards lines 362-412 project classification groups",
+          "UAP Standards lines 414-457 compensation methods",
+          "UAP Standards lines 473-551 fee conditions, reimbursables, abandoned work, PCC/PDC",
+          "UAP Standards lines 1608-1642 PACS per diem, retainer, reimbursables, and fixed/lump sum"
         ],
-        "use": "Local UAP Standards raw PDF and refined markdown checked for SPP 202 compensation methods, reimbursables, owner responsibilities, additional services, abandoned projects, and PCA compensation terms.",
-        "local_source_checked": true
+        "use": "Primary local source for SPP 202 compensation methods, Group 6/7 classification, reimbursables, and consulting-compensation methods."
       },
       {
-        "source_id": "spp202-regular-design-services-local",
-        "label": "SPP 202 - Regular Design Services",
-        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "source_id": "spp-202-regular-design-services-local",
+        "label": "SPP 202 - Regular Design Services local raw PDF",
+        "authority": "United Architects of the Philippines / regular design services source",
         "source_type": "professional_practice_pdf",
-        "source_locator": "SPP 202 local raw PDF; UAP Standards refined markdown lines 414-501 used as readable local locator",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
         "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
         "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
         "refined_markdown_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+        "source_locator": "SPP 202 local raw PDF checked; UAP Standards refined markdown provides readable line locators for the same provisions.",
         "checked_markdown_lines": [
           "SPP 202 local raw PDF checked",
-          "UAP Standards lines 414-501 used for readable source locators"
+          "UAP Standards readable line locators used for citation control"
         ],
-        "use": "Local SPP 202 raw PDF checked as the regular-design-services source counterpart; UAP Standards refined markdown provides readable local line locators for the same professional-practice provisions.",
-        "local_source_checked": true
+        "use": "Raw PDF counterpart for regular design services."
+      },
+      {
+        "source_id": "uap-document-401-402-owner-architect-agreement-local",
+        "label": "UAP Document 401-402 Proforma Architect-Owner Agreement local PDF",
+        "authority": "United Architects of the Philippines / Owner-Architect agreement source",
+        "source_type": "professional_practice_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+        "raw_pdf_sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
+        "refined_markdown_sha256": "sha256:ea7f84c966467b46fe9058778d4f9a0821db94a5dbc0a4fb02a2cfd69e215d05",
+        "source_locator": "UAP Document 401-402 refined markdown lines 1-24 and 105-160",
+        "checked_markdown_lines": [
+          "401-402 lines 1-24",
+          "401-402 lines 105-160"
+        ],
+        "use": "Corroborates agreement structure, owner responsibilities, reimbursables, abandoned work, and scope exclusions."
+      },
+      {
+        "source_id": "ra-9266-irr-service-agreement-local",
+        "label": "IRR of RA 9266 - service agreement and professional fee provisions",
+        "authority": "Professional Regulation Commission / Architecture Act IRR source",
+        "source_type": "legal_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+        "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_locator": "RA 9266 IRR refined markdown lines 106-111 and 778-780",
+        "checked_markdown_lines": [
+          "RA 9266 IRR lines 106-111 service agreement",
+          "RA 9266 IRR lines 778-780 collection of professional fees"
+        ],
+        "use": "Legal boundary for service agreement compensation and collection of architectural fees."
       }
     ],
-    "local_source_safe_action": "Question text/options/rationale rewritten to the local source-audited article scope."
+    "local_source_safe_action": "source-audited-article-batch-106-local-first refreshed question text, options, answer key, rationale, explanation, and code citation to the audited article scope."
   },
   "proposed": {
-    "text": "How does SPP 202 express the total cost of the architect's services when reimbursables apply?",
+    "text": "How does SPP 202 express total cost when reimbursables apply?",
     "options": [
       {
         "id": "a",
@@ -70,17 +107,17 @@
       },
       {
         "id": "c",
-        "text": "Only the reimbursable expenses."
+        "text": "Only reimbursable expenses."
       },
       {
         "id": "d",
-        "text": "Only the contractor's progress payment."
+        "text": "Only contractor progress payments."
       }
     ],
     "correct_option_id": "b",
-    "rationale": "The checked UAP lines state that total cost is the architect's fee plus reimbursable expenses.",
-    "explanation": "The checked UAP lines state that total cost is the architect's fee plus reimbursable expenses.",
-    "code_citation": "UAP Standards SPP 202 lines 431-435",
-    "model_id": "BATCH-027-lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill-002"
+    "rationale": "The checked source states the total cost of service as fee plus reimbursable expenses.",
+    "explanation": "The checked source states the total cost of service as fee plus reimbursable expenses.",
+    "code_citation": "UAP Standards lines 421-435",
+    "model_id": "BATCH-106-lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill-001"
   }
 }

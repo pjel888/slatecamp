@@ -1,0 +1,110 @@
+{
+  "batch_number": "106",
+  "batch_id": "source-audited-article-batch-106-local-first",
+  "reserved_at": "2026-05-13T14:20:00+08:00",
+  "branch": "3dlab-gray-viewport-bg",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "baseline_commit": "527dc3a64",
+  "current_head_at_manifest_generation": "527dc3a64",
+  "previous_batch": {
+    "batch_number": "105",
+    "commit": "527dc3a64",
+    "status": "accepted_and_pushed"
+  },
+  "selection_rule": "Next eligible CMP clusters after accepted Batch 105 CMP-003/CMP-007; selected CMP-008 through CMP-012 with no duplicate article IDs from accepted Batches 087-105.",
+  "selected_article_uuids_slugs": [
+    {
+      "article_id": "a7751310-8582-4b9a-a71b-78f6e9216b79",
+      "slug": "lea-prac-cmp-008-choosing-mdpe-vs-percentage-of-pcc-the-decision-matrix",
+      "title": "Choosing MDPE vs Percentage of PCC the Decision Matrix",
+      "folder": ".ai/content-audit-export/articles/lea-prac-cmp-008-choosing-mdpe-vs-percentage-of-pcc-the-decision-matrix--a7751310-8582-4b9a-a71b-78f6e9216b79"
+    },
+    {
+      "article_id": "660b2a38-cfad-4aa2-8ff3-85b4ee8fb32d",
+      "slug": "lea-prac-cmp-009-lump-sum-fixed-fee-scope-discipline-risk-allocation-and-appropriate-use",
+      "title": "Lump Sum Fixed Fee Scope Discipline Risk Allocation",
+      "folder": ".ai/content-audit-export/articles/lea-prac-cmp-009-lump-sum-fixed-fee-scope-discipline-risk-allocation-and-appropriate-use--660b2a38-cfad-4aa2-8ff3-85b4ee8fb32d"
+    },
+    {
+      "article_id": "7e5be79c-b68f-44ff-8252-ef97874e528d",
+      "slug": "lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application",
+      "title": "Per Diem Retainer and Honorarium Definitions Scope",
+      "folder": ".ai/content-audit-export/articles/lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application--7e5be79c-b68f-44ff-8252-ef97874e528d"
+    },
+    {
+      "article_id": "425c5476-12a0-476c-96e3-3f10c1530a9c",
+      "slug": "lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill",
+      "title": "Reimbursable Expenses What is Reimbursable What is Absorbed",
+      "folder": ".ai/content-audit-export/articles/lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill--425c5476-12a0-476c-96e3-3f10c1530a9c"
+    },
+    {
+      "article_id": "f95d5cc8-30d4-4f74-890f-1018d764da6e",
+      "slug": "lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification",
+      "title": "Fees for Repetitive Designs Reduced Fees and Their Justification",
+      "folder": ".ai/content-audit-export/articles/lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification--f95d5cc8-30d4-4f74-890f-1018d764da6e"
+    }
+  ],
+  "article_clusters": [
+    "CMP-008 compensation method decision matrix: percentage of PCC vs MDPE and mixed methods",
+    "CMP-009 lump sum/fixed fee boundaries, public-project rationale, and PACS fixed/lump-sum guardrails",
+    "CMP-010 per diem, retainer, honorarium, and mixed compensation distinctions",
+    "CMP-011 reimbursable expenses, billing documentation, and 50.0-km travel/living-expense boundary",
+    "CMP-012 Group 6/Group 7 repetitive-design classification and rejection of invented reduced-fee percentages"
+  ],
+  "counts": {
+    "articles": 5,
+    "linked_questions": 50,
+    "question_edits": 50,
+    "source_safe_real_world_scenarios": 5
+  },
+  "prior_batch_exclusion_check": {
+    "status": "pass",
+    "checked_batches": "087-105",
+    "duplicate_hits": [],
+    "historical_reaudit_overlap_recorded_separately": [
+      ".ai/content-audit-export/source-audited-article-batch-026-local-first-* for CMP-008/CMP-012",
+      ".ai/content-audit-export/source-audited-article-batch-027-local-first-* for CMP-010/CMP-011",
+      ".ai/content-audit-export/source-audited-article-batch-035-local-first-* and earlier blocker artifacts for CMP-009"
+    ]
+  },
+  "historical_reaudit_overlap_acknowledgment": {
+    "status": "recorded_not_current_accepted_duplicate",
+    "overlap_artifacts": [
+      ".ai/content-audit-export/source-audited-article-batch-026-local-first-* for CMP-008/CMP-012",
+      ".ai/content-audit-export/source-audited-article-batch-027-local-first-* for CMP-010/CMP-011",
+      ".ai/content-audit-export/source-audited-article-batch-035-local-first-* and earlier blocker artifacts for CMP-009"
+    ]
+  },
+  "inherited_blocker_status": {
+    "final_depth_remediation": "deferred_until_all_local_first_batches_complete",
+    "preserved_findings": [
+      "THIN_NEEDS_EXPANSION and source-primary findings remain final-depth audit inputs.",
+      "Compensation-method articles must continue using local primary source anchors or exam-given values for any numeric fee claim."
+    ]
+  },
+  "validation_gates": [
+    "compose/diff/validate strict 5/5",
+    "UI-block edit validation",
+    "scoped JSON parse",
+    "placeholder/internal-note/source-gap scan",
+    "source hash checks",
+    "linked-question/question-edit count checks",
+    "stale compose-error scan",
+    "prior-batch duplicate selection scan",
+    "targeted content-audit tests",
+    "scoped git diff --check",
+    "git diff --cached --check before commit"
+  ],
+  "forbidden_actions": [
+    "no Supabase push",
+    "no deploy",
+    "no production DB mutation",
+    "no merge to main"
+  ],
+  "manifest_status": "pass_local_first_commit_blocked_by_sandbox",
+  "git_commit_push_state": {
+    "status": "blocked_by_sandbox_git_dir_write_restriction",
+    "evidence": "touch .git/codex-write-test and git restore both failed with Operation not permitted; real git staging/commit/push were not performed.",
+    "intended_commit_subject": "chore(content): accept source-audited batch 106"
+  }
+}

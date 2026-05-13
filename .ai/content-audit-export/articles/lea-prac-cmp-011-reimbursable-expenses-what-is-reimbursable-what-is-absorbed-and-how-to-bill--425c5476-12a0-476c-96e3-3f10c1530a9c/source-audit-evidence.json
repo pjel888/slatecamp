@@ -1,336 +1,256 @@
 {
-  "batch_id": "source-audited-article-batch-027-local-first",
-  "article_id": "425c5476-12a0-476c-96e3-3f10c1530a9c",
-  "slug": "lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill",
-  "title": "Reimbursable Expenses in Architectural Services",
-  "audit_date": "2026-05-11",
-  "audited_at": "2026-05-11T00:00:00.000+08:00",
-  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
-  "classification": "legal_code_professional_practice_compensation_contracts",
-  "target": "local_first_source_audit_article_and_linked_questions",
-  "article_folder": ".ai/content-audit-export/articles/lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill--425c5476-12a0-476c-96e3-3f10c1530a9c",
-  "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill--425c5476-12a0-476c-96e3-3f10c1530a9c",
-  "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill--425c5476-12a0-476c-96e3-3f10c1530a9c/question-edits",
-  "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill--425c5476-12a0-476c-96e3-3f10c1530a9c/question-edits",
-  "question_edits_created": 10,
-  "linked_questions": [
-    {
-      "question_id": "37e8d567-54b0-4d7f-a6b3-9a90fd52cd9c",
-      "baseline_hash": "sha256:9ce5d92d9a5b369fb7a1a13c61ac8906a3cc51402903039adef1a81ce908b4c1"
-    },
-    {
-      "question_id": "1361eb39-035a-4e15-ba8d-143bff302f3d",
-      "baseline_hash": "sha256:b683951be0e5a6a57b885b17ca033f7bacd82709f4f54ca72e1829c63022763e"
-    },
-    {
-      "question_id": "17ab93cd-dd74-4ffa-9fbc-360208fe3678",
-      "baseline_hash": "sha256:fc022189e287050bd239200381b56ff14d3b53ba17868911b12ffb189406f0cc"
-    },
-    {
-      "question_id": "30379ab6-2c1a-49bd-8ff5-644e59918f3b",
-      "baseline_hash": "sha256:be90fc3c63b0e8e30d5e885b575d05f3941dc3901853d524808c32965f6fb0ad"
-    },
-    {
-      "question_id": "4c7619bb-77dc-45e2-afe9-105998d3db7e",
-      "baseline_hash": "sha256:42adad4241a02ab68c1f5fc4ded911d809d3cb636059dddd80cf521052c60dda"
-    },
-    {
-      "question_id": "a1116920-5d14-4702-b9ea-fdaef98fdbf6",
-      "baseline_hash": "sha256:9f9f04839379be722338877ba6b6e1aabee68ca14cdc78bc12a01fe55d3535a2"
-    },
-    {
-      "question_id": "884ed15f-cb22-484c-b13e-096ecd43dfc6",
-      "baseline_hash": "sha256:fbdd76849c0afbb2651f69cb3c2cab5d8a85502653314af419ce5779f23b173d"
-    },
-    {
-      "question_id": "9318fb3d-26ef-4817-b470-e99c326f4eb3",
-      "baseline_hash": "sha256:bcc2a0d29d7881c90ce26ec07c325f94bf517b1196ba49f697f2350472019a72"
-    },
-    {
-      "question_id": "495b1532-4458-4892-8642-e5039ca832e2",
-      "baseline_hash": "sha256:ca290e22e3f138fa274e92c53c4a5826434a5b1c89496acc03b775b39d7a62e7"
-    },
-    {
-      "question_id": "ab61c101-751e-4aa4-b2b5-ae62a9df9db0",
-      "baseline_hash": "sha256:138961347c5a6e0b332d2bb5c35ab90a5da345071c7cc0213b6bcb2a0c3666b8"
-    }
-  ],
-  "raw_pdf_gate": {
-    "status": "PASS",
-    "all_legal_code_claims_have_pdf_locator": true,
-    "all_section_numbers_verified_against_raw_pdf": true,
-    "no_derivative_text_used_as_source_of_truth": true,
-    "blockers": []
+  "schema_version": "source-audit-evidence-v1-local-first",
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-106-local-first",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T14:35:00+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "target": {
+    "article_id": "425c5476-12a0-476c-96e3-3f10c1530a9c",
+    "slug": "lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill",
+    "title": "Reimbursable Expenses What is Reimbursable What is Absorbed",
+    "article_folder": ".ai/content-audit-export/articles/lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill--425c5476-12a0-476c-96e3-3f10c1530a9c",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill--425c5476-12a0-476c-96e3-3f10c1530a9c",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill--425c5476-12a0-476c-96e3-3f10c1530a9c/candidate.md",
+    "candidate_sha256": "sha256:36a1796b0045f5005177dd92dffe51e5e1a1106bcd1bfcbc84a7438544ea106a",
+    "normalized_sha256": "sha256:36a1796b0045f5005177dd92dffe51e5e1a1106bcd1bfcbc84a7438544ea106a",
+    "linked_questions_sha256": "sha256:cc252159283de0853580ffd3908222f74c88332235c1f7a03ca92b74eb1b93a8",
+    "sources_sha256": "sha256:22bc6e5706825a6a3439c0d5a34a516d3537ede6d4596fe4ef8515610427d61e"
   },
-  "source_audit": {
-    "checked_sources": [
-      {
-        "source_id": "uap-standards-spp202-compensation-local",
-        "label": "UAP Document Standards of Professional Practice - SPP 202 compensation and service conditions",
-        "authority": "United Architects of the Philippines / Professional practice standards source",
-        "source_type": "professional_practice_pdf",
-        "source_locator": "UAP Standards refined markdown lines 414-501 and 1608-1642",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
-        "checked_markdown_lines": [
-          "UAP Standards lines 414-457",
-          "UAP Standards lines 459-501",
-          "UAP Standards lines 1608-1642"
-        ],
-        "use": "Local UAP Standards raw PDF and refined markdown checked for SPP 202 compensation methods, reimbursables, owner responsibilities, additional services, abandoned projects, and PCA compensation terms.",
-        "local_source_checked": true
-      },
-      {
-        "source_id": "spp202-regular-design-services-local",
-        "label": "SPP 202 - Regular Design Services",
-        "authority": "United Architects of the Philippines / Professional practice standards source",
-        "source_type": "professional_practice_pdf",
-        "source_locator": "SPP 202 local raw PDF; UAP Standards refined markdown lines 414-501 used as readable local locator",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
-        "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
-        "refined_markdown_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
-        "checked_markdown_lines": [
-          "SPP 202 local raw PDF checked",
-          "UAP Standards lines 414-501 used for readable source locators"
-        ],
-        "use": "Local SPP 202 raw PDF checked as the regular-design-services source counterpart; UAP Standards refined markdown provides readable local line locators for the same professional-practice provisions.",
-        "local_source_checked": true
-      }
+  "classification": {
+    "content_domain": "LEA Professional Practice and compensation methods",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high_value_professional_practice",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": [
+      "1361eb39-035a-4e15-ba8d-143bff302f3d",
+      "17ab93cd-dd74-4ffa-9fbc-360208fe3678",
+      "30379ab6-2c1a-49bd-8ff5-644e59918f3b",
+      "37e8d567-54b0-4d7f-a6b3-9a90fd52cd9c",
+      "495b1532-4458-4892-8642-e5039ca832e2",
+      "4c7619bb-77dc-45e2-afe9-105998d3db7e",
+      "884ed15f-cb22-484c-b13e-096ecd43dfc6",
+      "9318fb3d-26ef-4817-b470-e99c326f4eb3",
+      "a1116920-5d14-4702-b9ea-fdaef98fdbf6",
+      "ab61c101-751e-4aa4-b2b5-ae62a9df9db0"
     ],
-    "source_locator": "UAP Standards refined markdown lines 421-435, 461-490, and 1621-1631; SPP 202 local raw PDF checked",
-    "checked_markdown_lines": [
-      "UAP Standards lines 414-457",
-      "UAP Standards lines 459-501",
-      "UAP Standards lines 1608-1642",
-      "SPP 202 local raw PDF checked",
-      "UAP Standards lines 414-501 used for readable source locators"
+    "source_safe_real_world_scenario": "eligible-added"
+  },
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill--425c5476-12a0-476c-96e3-3f10c1530a9c",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill--425c5476-12a0-476c-96e3-3f10c1530a9c",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill--425c5476-12a0-476c-96e3-3f10c1530a9c/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill--425c5476-12a0-476c-96e3-3f10c1530a9c/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill--425c5476-12a0-476c-96e3-3f10c1530a9c/question-edits/1361eb39-035a-4e15-ba8d-143bff302f3d.json",
+      ".ai/content-audit-export/articles/lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill--425c5476-12a0-476c-96e3-3f10c1530a9c/question-edits/17ab93cd-dd74-4ffa-9fbc-360208fe3678.json",
+      ".ai/content-audit-export/articles/lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill--425c5476-12a0-476c-96e3-3f10c1530a9c/question-edits/30379ab6-2c1a-49bd-8ff5-644e59918f3b.json",
+      ".ai/content-audit-export/articles/lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill--425c5476-12a0-476c-96e3-3f10c1530a9c/question-edits/37e8d567-54b0-4d7f-a6b3-9a90fd52cd9c.json",
+      ".ai/content-audit-export/articles/lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill--425c5476-12a0-476c-96e3-3f10c1530a9c/question-edits/495b1532-4458-4892-8642-e5039ca832e2.json",
+      ".ai/content-audit-export/articles/lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill--425c5476-12a0-476c-96e3-3f10c1530a9c/question-edits/4c7619bb-77dc-45e2-afe9-105998d3db7e.json",
+      ".ai/content-audit-export/articles/lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill--425c5476-12a0-476c-96e3-3f10c1530a9c/question-edits/884ed15f-cb22-484c-b13e-096ecd43dfc6.json",
+      ".ai/content-audit-export/articles/lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill--425c5476-12a0-476c-96e3-3f10c1530a9c/question-edits/9318fb3d-26ef-4817-b470-e99c326f4eb3.json",
+      ".ai/content-audit-export/articles/lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill--425c5476-12a0-476c-96e3-3f10c1530a9c/question-edits/a1116920-5d14-4702-b9ea-fdaef98fdbf6.json",
+      ".ai/content-audit-export/articles/lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill--425c5476-12a0-476c-96e3-3f10c1530a9c/question-edits/ab61c101-751e-4aa4-b2b5-ae62a9df9db0.json"
     ]
   },
-  "article_repair": {
-    "normalized_md_rewritten": true,
-    "candidate_md_pending_compose": false,
-    "placeholders_removed": true,
-    "internal_notes_removed": true,
-    "source_safe_scope": true,
-    "normalized_hash": "sha256:6916a6cfcbf13c4e2305c3edca2e0ab4c86383e61016b08223e173d91b0ad5c7",
-    "sources_hash": "sha256:84f0bc8916f76074bcced8dccd0afa48cfd81dd770667940aa9302d3d48bf5f0",
-    "candidate_hash": "sha256:6916a6cfcbf13c4e2305c3edca2e0ab4c86383e61016b08223e173d91b0ad5c7"
-  },
-  "claims": [
+  "raw_sources": [
     {
-      "claim_id": "batch-027-lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill-question-001",
-      "claim_text": "Question 37e8d567-54b0-4d7f-a6b3-9a90fd52cd9c / model BATCH-027-lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill-001 rewritten to local source-safe form.",
-      "question_id": "37e8d567-54b0-4d7f-a6b3-9a90fd52cd9c",
-      "model_id": "BATCH-027-lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill-001",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-spp202-compensation-local",
-        "spp202-regular-design-services-local"
+      "authority": "United Architects of the Philippines / professional practice standards source",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+      "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+      "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+      "source_locator": "UAP Standards refined markdown lines 362-457, 473-551, and 1608-1642",
+      "checked_markdown_lines": [
+        "UAP Standards lines 362-412 project classification groups",
+        "UAP Standards lines 414-457 compensation methods",
+        "UAP Standards lines 473-551 fee conditions, reimbursables, abandoned work, PCC/PDC",
+        "UAP Standards lines 1608-1642 PACS per diem, retainer, reimbursables, and fixed/lump sum"
       ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards refined markdown lines 421-435, 461-490, and 1621-1631; SPP 202 local raw PDF checked",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
+      "local_source_checked": true
     },
     {
-      "claim_id": "batch-027-lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill-question-002",
-      "claim_text": "Question 1361eb39-035a-4e15-ba8d-143bff302f3d / model BATCH-027-lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill-002 rewritten to local source-safe form.",
-      "question_id": "1361eb39-035a-4e15-ba8d-143bff302f3d",
-      "model_id": "BATCH-027-lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill-002",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-spp202-compensation-local",
-        "spp202-regular-design-services-local"
+      "authority": "United Architects of the Philippines / regular design services source",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+      "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+      "refined_markdown_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+      "source_locator": "SPP 202 local raw PDF checked; UAP Standards refined markdown provides readable line locators for the same provisions.",
+      "checked_markdown_lines": [
+        "SPP 202 local raw PDF checked",
+        "UAP Standards readable line locators used for citation control"
       ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards refined markdown lines 421-435, 461-490, and 1621-1631; SPP 202 local raw PDF checked",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
+      "local_source_checked": true
     },
     {
-      "claim_id": "batch-027-lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill-question-003",
-      "claim_text": "Question 17ab93cd-dd74-4ffa-9fbc-360208fe3678 / model BATCH-027-lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill-003 rewritten to local source-safe form.",
-      "question_id": "17ab93cd-dd74-4ffa-9fbc-360208fe3678",
-      "model_id": "BATCH-027-lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill-003",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-spp202-compensation-local",
-        "spp202-regular-design-services-local"
+      "authority": "United Architects of the Philippines / Owner-Architect agreement source",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+      "raw_pdf_sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
+      "refined_markdown_sha256": "sha256:ea7f84c966467b46fe9058778d4f9a0821db94a5dbc0a4fb02a2cfd69e215d05",
+      "source_locator": "UAP Document 401-402 refined markdown lines 1-24 and 105-160",
+      "checked_markdown_lines": [
+        "401-402 lines 1-24",
+        "401-402 lines 105-160"
       ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards refined markdown lines 421-435, 461-490, and 1621-1631; SPP 202 local raw PDF checked",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
+      "local_source_checked": true
     },
     {
-      "claim_id": "batch-027-lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill-question-004",
-      "claim_text": "Question 30379ab6-2c1a-49bd-8ff5-644e59918f3b / model BATCH-027-lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill-004 rewritten to local source-safe form.",
-      "question_id": "30379ab6-2c1a-49bd-8ff5-644e59918f3b",
-      "model_id": "BATCH-027-lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill-004",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-spp202-compensation-local",
-        "spp202-regular-design-services-local"
+      "authority": "Professional Regulation Commission / Architecture Act IRR source",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+      "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+      "source_locator": "RA 9266 IRR refined markdown lines 106-111 and 778-780",
+      "checked_markdown_lines": [
+        "RA 9266 IRR lines 106-111 service agreement",
+        "RA 9266 IRR lines 778-780 collection of professional fees"
       ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards refined markdown lines 421-435, 461-490, and 1621-1631; SPP 202 local raw PDF checked",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-027-lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill-question-005",
-      "claim_text": "Question 4c7619bb-77dc-45e2-afe9-105998d3db7e / model BATCH-027-lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill-005 rewritten to local source-safe form.",
-      "question_id": "4c7619bb-77dc-45e2-afe9-105998d3db7e",
-      "model_id": "BATCH-027-lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill-005",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-spp202-compensation-local",
-        "spp202-regular-design-services-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards refined markdown lines 421-435, 461-490, and 1621-1631; SPP 202 local raw PDF checked",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-027-lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill-question-006",
-      "claim_text": "Question a1116920-5d14-4702-b9ea-fdaef98fdbf6 / model BATCH-027-lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill-006 rewritten to local source-safe form.",
-      "question_id": "a1116920-5d14-4702-b9ea-fdaef98fdbf6",
-      "model_id": "BATCH-027-lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill-006",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-spp202-compensation-local",
-        "spp202-regular-design-services-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards refined markdown lines 421-435, 461-490, and 1621-1631; SPP 202 local raw PDF checked",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-027-lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill-question-007",
-      "claim_text": "Question 884ed15f-cb22-484c-b13e-096ecd43dfc6 / model BATCH-027-lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill-007 rewritten to local source-safe form.",
-      "question_id": "884ed15f-cb22-484c-b13e-096ecd43dfc6",
-      "model_id": "BATCH-027-lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill-007",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-spp202-compensation-local",
-        "spp202-regular-design-services-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards refined markdown lines 421-435, 461-490, and 1621-1631; SPP 202 local raw PDF checked",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-027-lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill-question-008",
-      "claim_text": "Question 9318fb3d-26ef-4817-b470-e99c326f4eb3 / model BATCH-027-lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill-008 rewritten to local source-safe form.",
-      "question_id": "9318fb3d-26ef-4817-b470-e99c326f4eb3",
-      "model_id": "BATCH-027-lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill-008",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-spp202-compensation-local",
-        "spp202-regular-design-services-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards refined markdown lines 421-435, 461-490, and 1621-1631; SPP 202 local raw PDF checked",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-027-lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill-question-009",
-      "claim_text": "Question 495b1532-4458-4892-8642-e5039ca832e2 / model BATCH-027-lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill-009 rewritten to local source-safe form.",
-      "question_id": "495b1532-4458-4892-8642-e5039ca832e2",
-      "model_id": "BATCH-027-lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill-009",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-spp202-compensation-local",
-        "spp202-regular-design-services-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards refined markdown lines 421-435, 461-490, and 1621-1631; SPP 202 local raw PDF checked",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-027-lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill-question-010",
-      "claim_text": "Question ab61c101-751e-4aa4-b2b5-ae62a9df9db0 / model BATCH-027-lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill-010 rewritten to local source-safe form.",
-      "question_id": "ab61c101-751e-4aa4-b2b5-ae62a9df9db0",
-      "model_id": "BATCH-027-lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill-010",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-spp202-compensation-local",
-        "spp202-regular-design-services-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards refined markdown lines 421-435, 461-490, and 1621-1631; SPP 202 local raw PDF checked",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
+      "local_source_checked": true
     }
   ],
-  "unsupported_or_removed_claims": [
-    "Removed invented reimbursable markup and absorption rules.",
-    "Removed broad billing advice not tied to a UAP source locator.",
-    "Rewrote examples around the expense categories and receipt/document support found in the local sources."
+  "checked_sources": [
+    {
+      "source_id": "uap-document-standards-professional-practice-local",
+      "label": "UAP Document Standards of Professional Practice - SPP 202 compensation and project classification",
+      "source_locator": "UAP Standards refined markdown lines 362-457, 473-551, and 1608-1642",
+      "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b"
+    },
+    {
+      "source_id": "spp-202-regular-design-services-local",
+      "label": "SPP 202 - Regular Design Services local raw PDF",
+      "source_locator": "SPP 202 local raw PDF checked; UAP Standards refined markdown provides readable line locators for the same provisions.",
+      "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d"
+    },
+    {
+      "source_id": "uap-document-401-402-owner-architect-agreement-local",
+      "label": "UAP Document 401-402 Proforma Architect-Owner Agreement local PDF",
+      "source_locator": "UAP Document 401-402 refined markdown lines 1-24 and 105-160",
+      "raw_pdf_sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f"
+    },
+    {
+      "source_id": "ra-9266-irr-service-agreement-local",
+      "label": "IRR of RA 9266 - service agreement and professional fee provisions",
+      "source_locator": "RA 9266 IRR refined markdown lines 106-111 and 778-780",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574"
+    }
   ],
-  "source_safe_rewrite_question_edits": true,
-  "local_validation": {
-    "compose": "PASS: blockers=0",
-    "diff": "PASS: changed=true safe_to_push=true blockers=0",
-    "validate": "PASS: scoped content-audit:validate valid=true blockers=0",
-    "scoped_checks": "PASS: scoped JSON/source/placeholder/diff checks passed",
-    "tests": "PASS: bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts - 34 pass, 0 fail"
+  "claims": [
+    {
+      "claim_id": "lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill:article:001",
+      "claim_text": "Reimbursable Expenses What is Reimbursable What is Absorbed was rewritten with source-safe compensation-method boundaries and no unsupported fee-rate formulas.",
+      "support": "UAP Standards refined markdown lines 362-457, 473-551, and 1608-1642; SPP 202 local raw PDF checked; UAP Standards refined markdown provides readable line locators for the same provisions.; UAP Document 401-402 refined markdown lines 1-24 and 105-160; RA 9266 IRR refined markdown lines 106-111 and 778-780",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill:scenario:001",
+      "claim_text": "Batch 106 Real World Scenario is source-safe and stays inside checked UAP/SPP compensation-method facts.",
+      "support": "UAP Standards refined markdown lines 362-457, 473-551, and 1608-1642; SPP 202 local raw PDF checked; UAP Standards refined markdown provides readable line locators for the same provisions.; UAP Document 401-402 refined markdown lines 1-24 and 105-160; RA 9266 IRR refined markdown lines 106-111 and 778-780",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill:question:01",
+      "claim_text": "Question 1361eb39-035a-4e15-ba8d-143bff302f3d / How does SPP 202 express total cost when reimbursables apply? has a source-safe Batch 106 question-edits rewrite aligned to lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill.",
+      "support": "UAP Standards refined markdown lines 362-457, 473-551, and 1608-1642; SPP 202 local raw PDF checked; UAP Standards refined markdown provides readable line locators for the same provisions.; UAP Document 401-402 refined markdown lines 1-24 and 105-160; RA 9266 IRR refined markdown lines 106-111 and 778-780",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill:question:02",
+      "claim_text": "Question 17ab93cd-dd74-4ffa-9fbc-360208fe3678 / Which item is source-safe as a reimbursable category? has a source-safe Batch 106 question-edits rewrite aligned to lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill.",
+      "support": "UAP Standards refined markdown lines 362-457, 473-551, and 1608-1642; SPP 202 local raw PDF checked; UAP Standards refined markdown provides readable line locators for the same provisions.; UAP Document 401-402 refined markdown lines 1-24 and 105-160; RA 9266 IRR refined markdown lines 106-111 and 778-780",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill:question:03",
+      "claim_text": "Question 30379ab6-2c1a-49bd-8ff5-644e59918f3b / Which owner responsibility is source-backed? has a source-safe Batch 106 question-edits rewrite aligned to lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill.",
+      "support": "UAP Standards refined markdown lines 362-457, 473-551, and 1608-1642; SPP 202 local raw PDF checked; UAP Standards refined markdown provides readable line locators for the same provisions.; UAP Document 401-402 refined markdown lines 1-24 and 105-160; RA 9266 IRR refined markdown lines 106-111 and 778-780",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill:question:04",
+      "claim_text": "Question 37e8d567-54b0-4d7f-a6b3-9a90fd52cd9c / When is per diem plus travel and living expense chargeable under the UAP Standards locator used in Batch 106? has a source-safe Batch 106 question-edits rewrite aligned to lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill.",
+      "support": "UAP Standards refined markdown lines 362-457, 473-551, and 1608-1642; SPP 202 local raw PDF checked; UAP Standards refined markdown provides readable line locators for the same provisions.; UAP Document 401-402 refined markdown lines 1-24 and 105-160; RA 9266 IRR refined markdown lines 106-111 and 778-780",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill:question:05",
+      "claim_text": "Question 495b1532-4458-4892-8642-e5039ca832e2 / What documentation supports reimbursable direct costs in PACS when required? has a source-safe Batch 106 question-edits rewrite aligned to lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill.",
+      "support": "UAP Standards refined markdown lines 362-457, 473-551, and 1608-1642; SPP 202 local raw PDF checked; UAP Standards refined markdown provides readable line locators for the same provisions.; UAP Document 401-402 refined markdown lines 1-24 and 105-160; RA 9266 IRR refined markdown lines 106-111 and 778-780",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill:question:06",
+      "claim_text": "Question 4c7619bb-77dc-45e2-afe9-105998d3db7e / Which statement about reimbursable markups is source-safe? has a source-safe Batch 106 question-edits rewrite aligned to lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill.",
+      "support": "UAP Standards refined markdown lines 362-457, 473-551, and 1608-1642; SPP 202 local raw PDF checked; UAP Standards refined markdown provides readable line locators for the same provisions.; UAP Document 401-402 refined markdown lines 1-24 and 105-160; RA 9266 IRR refined markdown lines 106-111 and 778-780",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill:question:07",
+      "claim_text": "Question 884ed15f-cb22-484c-b13e-096ecd43dfc6 / How should reimbursables appear in a source-safe invoice? has a source-safe Batch 106 question-edits rewrite aligned to lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill.",
+      "support": "UAP Standards refined markdown lines 362-457, 473-551, and 1608-1642; SPP 202 local raw PDF checked; UAP Standards refined markdown provides readable line locators for the same provisions.; UAP Document 401-402 refined markdown lines 1-24 and 105-160; RA 9266 IRR refined markdown lines 106-111 and 778-780",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill:question:08",
+      "claim_text": "Question 9318fb3d-26ef-4817-b470-e99c326f4eb3 / Which item should not be treated as automatically reimbursable merely because the firm incurs it? has a source-safe Batch 106 question-edits rewrite aligned to lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill.",
+      "support": "UAP Standards refined markdown lines 362-457, 473-551, and 1608-1642; SPP 202 local raw PDF checked; UAP Standards refined markdown provides readable line locators for the same provisions.; UAP Document 401-402 refined markdown lines 1-24 and 105-160; RA 9266 IRR refined markdown lines 106-111 and 778-780",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill:question:09",
+      "claim_text": "Question a1116920-5d14-4702-b9ea-fdaef98fdbf6 / Who pays separately for specialist consultant services when required and approved under the checked source? has a source-safe Batch 106 question-edits rewrite aligned to lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill.",
+      "support": "UAP Standards refined markdown lines 362-457, 473-551, and 1608-1642; SPP 202 local raw PDF checked; UAP Standards refined markdown provides readable line locators for the same provisions.; UAP Document 401-402 refined markdown lines 1-24 and 105-160; RA 9266 IRR refined markdown lines 106-111 and 778-780",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill:question:10",
+      "claim_text": "Question ab61c101-751e-4aa4-b2b5-ae62a9df9db0 / What is the best exam answer when a question gives an older agreement distance but the article uses the UAP Standards 50.0-kilometer locator? has a source-safe Batch 106 question-edits rewrite aligned to lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill.",
+      "support": "UAP Standards refined markdown lines 362-457, 473-551, and 1608-1642; SPP 202 local raw PDF checked; UAP Standards refined markdown provides readable line locators for the same provisions.; UAP Document 401-402 refined markdown lines 1-24 and 105-160; RA 9266 IRR refined markdown lines 106-111 and 778-780",
+      "status": "verified_local_raw_pdf"
+    }
+  ],
+  "unverified_or_rejected_claims": [
+    "Removed unsupported automatic markup and absorption assumptions."
+  ],
+  "removed_or_rewritten_material": [
+    "Removed unsupported automatic markup and absorption assumptions."
+  ],
+  "raw_pdf_gate": {
+    "status": "pass",
+    "primary_source_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "readable_locator_layer": "vitruvius-connection/002_Raw-Conversion-Layer",
+    "source_hashes_checked": 4
   },
-  "remaining_local_blockers": [],
+  "gate_results": {
+    "article_rewrite": "pass_pending_compose_diff_validation",
+    "question_edits": "pass_10_of_10",
+    "real_world_scenario": "eligible-added",
+    "unsupported_formula_scan": "pass"
+  },
+  "source_safe_repair": {
+    "status": "complete",
+    "decisions": [
+      "Added 50.0-kilometer source-boundary note and invoice-control scenario."
+    ]
+  },
+  "local_validation": {
+    "compose": "PASS: blockers=0; candidate_hash=sha256:36a1796b0045f5005177dd92dffe51e5e1a1106bcd1bfcbc84a7438544ea106a",
+    "diff": "PASS: changed=true; safe_to_push=true; blockers=0",
+    "validate": "PASS: scoped validate-bundles valid=true blockers=0; component-usage warning only",
+    "ui_block_edits": "PASS: validate-ui-block-edits valid=true blockers=0",
+    "scoped_checks": "PASS: aggregate scoped checks pass; JSON parse failures=0; marker matches=0; source hash failures=0; linked question edits=10/10",
+    "tests": "PASS: bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts (34 pass, 0 fail, 328 expect calls)",
+    "prior_batch_duplicate_selection_scan": "PASS: no selected article ID found in accepted Batches 087-105; historical re-audit overlap recorded separately."
+  },
+  "sme_review": {
+    "status": "local_codex_professional_context_pass",
+    "notes": "Applied professional-practice and legal-citation skills; no new section numbers invented."
+  },
   "overall": {
     "source_audit_status": "PASS",
     "safe_for_supabase_upload": true,
-    "local_first_only": true,
-    "supabase_push_attempted": false,
-    "deploy_attempted": false,
-    "commit_attempted": false
+    "blockers": []
   }
 }

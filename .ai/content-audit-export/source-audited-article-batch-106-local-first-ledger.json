@@ -1,0 +1,195 @@
+{
+  "batch_id": "source-audited-article-batch-106-local-first",
+  "batch_number": "106",
+  "generated_at": "2026-05-13T14:20:00+08:00",
+  "branch": "3dlab-gray-viewport-bg",
+  "start_baseline_commit": "527dc3a64",
+  "previous_accepted_batch_commit": "527dc3a64",
+  "current_head_at_generation": "527dc3a64",
+  "status": "pass_local_first_commit_blocked_by_sandbox",
+  "totals": {
+    "articles": 5,
+    "linked_questions": 50,
+    "question_edits": 50,
+    "source_safe_real_world_scenarios": 5,
+    "source_hash_references_checked": 480,
+    "unique_source_artifacts_checked": 12,
+    "scoped_json_files_parsed": 107
+  },
+  "gates": {
+    "compose_strict_5_of_5": true,
+    "diff_strict_5_of_5": true,
+    "validate_strict_5_of_5": true,
+    "ui_block_edit_validation_5_of_5": true,
+    "scoped_json_parse": {
+      "pass": true,
+      "parsed_files": 107,
+      "failures": []
+    },
+    "placeholder_internal_note_source_gap_scan": {
+      "pass": true,
+      "findings": []
+    },
+    "source_hash_checks": {
+      "pass": true,
+      "checked_references": 480,
+      "unique_source_artifacts": 12,
+      "failures": []
+    },
+    "linked_question_question_edit_counts": {
+      "pass": true,
+      "linked_questions": 50,
+      "question_edits": 50
+    },
+    "stale_compose_error_scan": {
+      "pass": true,
+      "stale_compose_errors": 0
+    },
+    "prior_batch_duplicate_selection_scan": {
+      "status": "pass",
+      "checked_batches": "087-105",
+      "duplicate_hits": [],
+      "historical_reaudit_overlap_recorded_separately": [
+        ".ai/content-audit-export/source-audited-article-batch-026-local-first-* for CMP-008/CMP-012",
+        ".ai/content-audit-export/source-audited-article-batch-027-local-first-* for CMP-010/CMP-011",
+        ".ai/content-audit-export/source-audited-article-batch-035-local-first-* and earlier blocker artifacts for CMP-009"
+      ]
+    },
+    "targeted_content_audit_tests": {
+      "pass": true,
+      "commands": [
+        "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts (34 pass, 0 fail, 328 expect calls)"
+      ]
+    },
+    "scoped_git_diff_check": {
+      "status": "pass",
+      "command": "git diff --check -- <Batch 106 scoped tracked paths>"
+    },
+    "cached_diff_check": {
+      "status": "pass_alternate_index",
+      "command": "GIT_INDEX_FILE=/private/tmp/slatecamp-batch106.index git diff --cached --check",
+      "note": "Real .git index writes are blocked in this Codex sandbox; intended Batch 106 paths were staged in a temporary alternate index for cached-diff validation."
+    }
+  },
+  "articles": [
+    {
+      "article_id": "a7751310-8582-4b9a-a71b-78f6e9216b79",
+      "slug": "lea-prac-cmp-008-choosing-mdpe-vs-percentage-of-pcc-the-decision-matrix",
+      "title": "Choosing MDPE vs Percentage of PCC the Decision Matrix",
+      "folder": ".ai/content-audit-export/articles/lea-prac-cmp-008-choosing-mdpe-vs-percentage-of-pcc-the-decision-matrix--a7751310-8582-4b9a-a71b-78f6e9216b79",
+      "cluster": "CMP-008 compensation method decision matrix: percentage of PCC vs MDPE and mixed methods",
+      "candidate_sha256": "sha256:6cdacf1f48769cbbebffbe3119dccf2231fb7515e00c9ce98e5ac2e3d5349950",
+      "normalized_sha256": "sha256:6cdacf1f48769cbbebffbe3119dccf2231fb7515e00c9ce98e5ac2e3d5349950",
+      "sources_hash": "sha256:8592a670ad76265757ddf674dc89f7721113726218e88ed6fdfaac94cdbe2538",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_count": 4,
+      "source_safe_real_world_scenario": "eligible-added",
+      "compose_pass": true,
+      "diff_pass": true,
+      "validate_pass": true,
+      "ui_block_edit_validation_pass": true,
+      "json_parse_failures": [],
+      "marker_findings": [],
+      "stale_compose_error": false
+    },
+    {
+      "article_id": "660b2a38-cfad-4aa2-8ff3-85b4ee8fb32d",
+      "slug": "lea-prac-cmp-009-lump-sum-fixed-fee-scope-discipline-risk-allocation-and-appropriate-use",
+      "title": "Lump Sum Fixed Fee Scope Discipline Risk Allocation",
+      "folder": ".ai/content-audit-export/articles/lea-prac-cmp-009-lump-sum-fixed-fee-scope-discipline-risk-allocation-and-appropriate-use--660b2a38-cfad-4aa2-8ff3-85b4ee8fb32d",
+      "cluster": "CMP-009 lump sum/fixed fee boundaries, public-project rationale, and PACS fixed/lump-sum guardrails",
+      "candidate_sha256": "sha256:f0af84f8b20d9658d569de310bd2cd690e183bcb4d33f9429c7a3e057286220c",
+      "normalized_sha256": "sha256:f0af84f8b20d9658d569de310bd2cd690e183bcb4d33f9429c7a3e057286220c",
+      "sources_hash": "sha256:9fcd92313233c7feb1b61cc53a4f91719cf96b5d5488027f443d434d6fc17d6a",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_count": 5,
+      "source_safe_real_world_scenario": "eligible-added",
+      "compose_pass": true,
+      "diff_pass": true,
+      "validate_pass": true,
+      "ui_block_edit_validation_pass": true,
+      "json_parse_failures": [],
+      "marker_findings": [],
+      "stale_compose_error": false
+    },
+    {
+      "article_id": "7e5be79c-b68f-44ff-8252-ef97874e528d",
+      "slug": "lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application",
+      "title": "Per Diem Retainer and Honorarium Definitions Scope",
+      "folder": ".ai/content-audit-export/articles/lea-prac-cmp-010-per-diem-retainer-and-honorarium-definitions-scope-and-philippine-application--7e5be79c-b68f-44ff-8252-ef97874e528d",
+      "cluster": "CMP-010 per diem, retainer, honorarium, and mixed compensation distinctions",
+      "candidate_sha256": "sha256:1e42f08c96a53994130b6ba7722912a5323c9932fd6e2577abf49f8e693546bf",
+      "normalized_sha256": "sha256:1e42f08c96a53994130b6ba7722912a5323c9932fd6e2577abf49f8e693546bf",
+      "sources_hash": "sha256:6e61fa280646aabba0a69bfc5cb763d11a3889ceb3810dc3b52984b7e07dfb77",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_count": 4,
+      "source_safe_real_world_scenario": "eligible-added",
+      "compose_pass": true,
+      "diff_pass": true,
+      "validate_pass": true,
+      "ui_block_edit_validation_pass": true,
+      "json_parse_failures": [],
+      "marker_findings": [],
+      "stale_compose_error": false
+    },
+    {
+      "article_id": "425c5476-12a0-476c-96e3-3f10c1530a9c",
+      "slug": "lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill",
+      "title": "Reimbursable Expenses What is Reimbursable What is Absorbed",
+      "folder": ".ai/content-audit-export/articles/lea-prac-cmp-011-reimbursable-expenses-what-is-reimbursable-what-is-absorbed-and-how-to-bill--425c5476-12a0-476c-96e3-3f10c1530a9c",
+      "cluster": "CMP-011 reimbursable expenses, billing documentation, and 50.0-km travel/living-expense boundary",
+      "candidate_sha256": "sha256:36a1796b0045f5005177dd92dffe51e5e1a1106bcd1bfcbc84a7438544ea106a",
+      "normalized_sha256": "sha256:36a1796b0045f5005177dd92dffe51e5e1a1106bcd1bfcbc84a7438544ea106a",
+      "sources_hash": "sha256:e675cb0fff900b92c092d30a73d8aa24c239c4f172e012d73e29728438923795",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_count": 4,
+      "source_safe_real_world_scenario": "eligible-added",
+      "compose_pass": true,
+      "diff_pass": true,
+      "validate_pass": true,
+      "ui_block_edit_validation_pass": true,
+      "json_parse_failures": [],
+      "marker_findings": [],
+      "stale_compose_error": false
+    },
+    {
+      "article_id": "f95d5cc8-30d4-4f74-890f-1018d764da6e",
+      "slug": "lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification",
+      "title": "Fees for Repetitive Designs Reduced Fees and Their Justification",
+      "folder": ".ai/content-audit-export/articles/lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification--f95d5cc8-30d4-4f74-890f-1018d764da6e",
+      "cluster": "CMP-012 Group 6/Group 7 repetitive-design classification and rejection of invented reduced-fee percentages",
+      "candidate_sha256": "sha256:2da77af116e34ebb7dce1af8f2c87fe3f986ddcf77e1dc0e2ded507123524142",
+      "normalized_sha256": "sha256:2da77af116e34ebb7dce1af8f2c87fe3f986ddcf77e1dc0e2ded507123524142",
+      "sources_hash": "sha256:9ffb3f0f29b95bf47cb88c06b52177d9344897134fe176e0a165a625e949ed27",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_count": 3,
+      "source_safe_real_world_scenario": "eligible-added",
+      "compose_pass": true,
+      "diff_pass": true,
+      "validate_pass": true,
+      "ui_block_edit_validation_pass": true,
+      "json_parse_failures": [],
+      "marker_findings": [],
+      "stale_compose_error": false
+    }
+  ],
+  "forbidden_actions": {
+    "supabase_push": false,
+    "deploy": false,
+    "production_db_mutation": false,
+    "merge_to_main": false
+  },
+  "final_depth_findings_preserved": [
+    "THIN_NEEDS_EXPANSION/source-primary/scenario eligibility findings remain final-audit inputs after local-first batches are complete."
+  ],
+  "git_commit_push_state": {
+    "status": "blocked_by_sandbox_git_dir_write_restriction",
+    "evidence": "touch .git/codex-write-test and git restore both failed with Operation not permitted; real git staging/commit/push were not performed.",
+    "intended_commit_subject": "chore(content): accept source-audited batch 106"
+  }
+}

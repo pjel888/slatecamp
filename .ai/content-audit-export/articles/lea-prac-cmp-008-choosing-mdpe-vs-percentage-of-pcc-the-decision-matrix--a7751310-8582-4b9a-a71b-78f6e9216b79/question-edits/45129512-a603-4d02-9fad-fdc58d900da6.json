@@ -2,101 +2,120 @@
   "question_id": "45129512-a603-4d02-9fad-fdc58d900da6",
   "baseline_hash": "sha256:bb7f1c2274f0d49272f684a857daca3c3b9ab93d942f6dd93a37525d66f895ad",
   "action": "replace",
-  "reason": "source-audited-article-batch-026-local-first rewrote this linked question to source-safe form against local raw PDF evidence for Choosing MDPE vs Percentage of PCC the Decision Matrix.",
-  "approved_by": "codex-local-source-audit-batch-026",
-  "approved_at": "2026-05-11T20:30:00.000+08:00",
+  "reason": "source-audited-article-batch-106-local-first refreshed this linked professional-practice question against current local raw PDF/source anchors for lea-prac-cmp-008-choosing-mdpe-vs-percentage-of-pcc-the-decision-matrix.",
+  "approved_by": "codex-local-source-audit-batch-106",
+  "approved_at": "2026-05-13T14:35:00+08:00",
   "source_audit_support": {
     "parent_article_id": "a7751310-8582-4b9a-a71b-78f6e9216b79",
     "parent_article_slug": "lea-prac-cmp-008-choosing-mdpe-vs-percentage-of-pcc-the-decision-matrix",
+    "parent_article_title": "Choosing MDPE vs Percentage of PCC the Decision Matrix",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "UAP Standards refined markdown lines 362-457 and 473-551; SPP 202 local raw PDF; UAP Standards refined markdown supplies readable line support for the same professional-practice topic",
+    "source_locator": "UAP Standards refined markdown lines 362-457, 473-551, and 1608-1642; SPP 202 local raw PDF checked; UAP Standards refined markdown provides readable line locators for the same provisions.; SPP 201 refined markdown lines 174-251; RA 9266 IRR refined markdown lines 106-111 and 778-780",
     "checked_markdown_lines": [
-      "UAP Standards lines 362-412",
-      "UAP Standards lines 414-457",
-      "UAP Standards lines 473-551",
+      "UAP Standards lines 362-412 project classification groups",
+      "UAP Standards lines 414-457 compensation methods",
+      "UAP Standards lines 473-551 fee conditions, reimbursables, abandoned work, PCC/PDC",
+      "UAP Standards lines 1608-1642 PACS per diem, retainer, reimbursables, and fixed/lump sum",
       "SPP 202 local raw PDF checked",
-      "UAP Standards lines 362-457 and 473-551 used for readable source locators"
+      "UAP Standards readable line locators used for citation control",
+      "SPP 201 lines 174-251 compensation methods",
+      "RA 9266 IRR lines 106-111 service agreement",
+      "RA 9266 IRR lines 778-780 collection of professional fees"
     ],
     "checked_sources": [
       {
-        "source_id": "uap-standards-spp202-project-classification-local",
-        "label": "UAP Document Standards of Professional Practice - SPP 202 Project Classification and Compensation",
-        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "source_id": "uap-document-standards-professional-practice-local",
+        "label": "UAP Document Standards of Professional Practice - SPP 202 compensation and project classification",
+        "authority": "United Architects of the Philippines / professional practice standards source",
         "source_type": "professional_practice_pdf",
-        "source_locator": "UAP Standards refined markdown lines 362-457 and 473-551",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
         "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
         "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
         "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+        "source_locator": "UAP Standards refined markdown lines 362-457, 473-551, and 1608-1642",
         "checked_markdown_lines": [
-          "UAP Standards lines 362-412",
-          "UAP Standards lines 414-457",
-          "UAP Standards lines 473-551"
+          "UAP Standards lines 362-412 project classification groups",
+          "UAP Standards lines 414-457 compensation methods",
+          "UAP Standards lines 473-551 fee conditions, reimbursables, abandoned work, PCC/PDC",
+          "UAP Standards lines 1608-1642 PACS per diem, retainer, reimbursables, and fixed/lump sum"
         ],
-        "use": "SPP 202 project classification, compensation methods, fee conditions, and PCC definition.",
-        "local_source_checked": true
+        "use": "Primary local source for SPP 202 compensation methods, Group 6/7 classification, reimbursables, and consulting-compensation methods."
       },
       {
-        "source_id": "spp202-regular-design-services-local",
-        "label": "SPP 202 - Regular Design Services",
-        "authority": "United Architects of the Philippines / Professional practice standards source",
+        "source_id": "spp-202-regular-design-services-local",
+        "label": "SPP 202 - Regular Design Services local raw PDF",
+        "authority": "United Architects of the Philippines / regular design services source",
         "source_type": "professional_practice_pdf",
-        "source_locator": "SPP 202 local raw PDF; UAP Standards refined markdown supplies readable line support for the same professional-practice topic",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
         "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
         "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
         "refined_markdown_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+        "source_locator": "SPP 202 local raw PDF checked; UAP Standards refined markdown provides readable line locators for the same provisions.",
         "checked_markdown_lines": [
           "SPP 202 local raw PDF checked",
-          "UAP Standards lines 362-457 and 473-551 used for readable source locators"
+          "UAP Standards readable line locators used for citation control"
         ],
-        "use": "Regular design services raw source counterpart; paired with UAP Standards readable line support.",
-        "local_source_checked": true
+        "use": "Raw PDF counterpart for regular design services."
+      },
+      {
+        "source_id": "spp-201-pre-design-services-local",
+        "label": "SPP 201 - Pre-design Services local raw PDF",
+        "authority": "United Architects of the Philippines / pre-design services source",
+        "source_type": "professional_practice_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+        "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+        "refined_markdown_sha256": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
+        "source_locator": "SPP 201 refined markdown lines 174-251",
+        "checked_markdown_lines": [
+          "SPP 201 lines 174-251 compensation methods"
+        ],
+        "use": "Corroborates pre-design MDPE, lump sum/fixed fee, per diem/honorarium, and mixed compensation methods."
+      },
+      {
+        "source_id": "ra-9266-irr-service-agreement-local",
+        "label": "IRR of RA 9266 - service agreement and professional fee provisions",
+        "authority": "Professional Regulation Commission / Architecture Act IRR source",
+        "source_type": "legal_pdf",
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/IRR of RA 9266.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/IRR of RA 9266.md",
+        "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0",
+        "source_locator": "RA 9266 IRR refined markdown lines 106-111 and 778-780",
+        "checked_markdown_lines": [
+          "RA 9266 IRR lines 106-111 service agreement",
+          "RA 9266 IRR lines 778-780 collection of professional fees"
+        ],
+        "use": "Legal boundary for service agreement compensation and collection of architectural fees."
       }
     ],
-    "local_source_safe_action": "Replaced prior wording with a source-audited question, answer key, citation, and explanation."
+    "local_source_safe_action": "source-audited-article-batch-106-local-first refreshed question text, options, answer key, rationale, explanation, and code citation to the audited article scope."
   },
   "proposed": {
-    "text": "What does SPP 202 say about mixed compensation methods?",
+    "text": "Why is MDPE not a default pricing method for creative design value?",
     "options": [
       {
         "id": "a",
-        "text": "They are never allowed"
+        "text": "The source says creative design value is not measured by time spent."
       },
       {
         "id": "b",
-        "text": "They may be used, and each project should be examined to determine the most appropriate method"
+        "text": "The source bans reimbursables."
       },
       {
         "id": "c",
-        "text": "They apply only to fire-safety inspections"
+        "text": "The source applies MDPE only to construction labor."
       },
       {
         "id": "d",
-        "text": "They replace all professional-practice standards"
+        "text": "The source uses MDPE only for housing projects."
       }
     ],
-    "correct_option_id": "b",
-    "correct_value": null,
-    "accepted_answers": null,
-    "value_tolerance": 0,
-    "question_type": "mcq",
-    "rationale": {
-      "a": "Incorrect. This choice is not the source-supported answer for the cited provision.",
-      "b": "Correct.",
-      "c": "Incorrect. This choice is not the source-supported answer for the cited provision.",
-      "d": "Incorrect. This choice is not the source-supported answer for the cited provision.",
-      "correct": "The source lists mixed methods and states that each project should be examined to determine the appropriate method.",
-      "takeaway": "The source lists mixed methods and states that each project should be examined to determine the appropriate method."
-    },
-    "explanation": "The source lists mixed methods and states that each project should be examined to determine the appropriate method.",
-    "code_citation": "UAP Standards, SPP 202 Methods of Compensation",
-    "bloom_level": "understand",
-    "application_context": "code_interpretation",
-    "practice_context": [],
-    "difficulty": 0.5,
-    "is_assessment": false,
-    "model_id": "BATCH-026-lea-prac-cmp-008-choosing-mdpe-vs-percentage-of-pcc-the-decision-matrix-009"
+    "correct_option_id": "a",
+    "rationale": "The source specifically says MDPE does not account for creative work because creative design value cannot be measured by time spent.",
+    "explanation": "The source specifically says MDPE does not account for creative work because creative design value cannot be measured by time spent.",
+    "code_citation": "UAP Standards line 421",
+    "model_id": "BATCH-106-lea-prac-cmp-008-choosing-mdpe-vs-percentage-of-pcc-the-decision-matrix-004"
   }
 }

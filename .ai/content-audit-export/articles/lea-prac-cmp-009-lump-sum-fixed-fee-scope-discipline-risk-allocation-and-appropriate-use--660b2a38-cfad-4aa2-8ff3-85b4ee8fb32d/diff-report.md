@@ -1,6 +1,6 @@
 # Content Diff Report: lea-prac-cmp-009-lump-sum-fixed-fee-scope-discipline-risk-allocation-and-appropriate-use
 
-Generated: 2026-05-11T03:45:28.053Z
+Generated: 2026-05-13T05:06:58.174Z
 Article ID: 660b2a38-cfad-4aa2-8ff3-85b4ee8fb32d
 Changed: true
 Safe to push locally: true
@@ -8,14 +8,14 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:f4488637a97679d8923d7f3275b9fbc02f8a7c2a26caca0ff5d5506c65b03f8b`
-- Normalized: `sha256:5d4c19954db9c5741277f3a8c19ba548f83b6b46ea6a11e6484d381c60f4322b`
-- Candidate: `sha256:5d4c19954db9c5741277f3a8c19ba548f83b6b46ea6a11e6484d381c60f4322b`
+- Normalized: `sha256:f0af84f8b20d9658d569de310bd2cd690e183bcb4d33f9429c7a3e057286220c`
+- Candidate: `sha256:f0af84f8b20d9658d569de310bd2cd690e183bcb4d33f9429c7a3e057286220c`
 
 ## Line summary
 
 - Changed lines: 102
 - Inserted lines: 0
-- Deleted lines: 51
+- Deleted lines: 59
 
 ## UI block preservation
 

@@ -1,302 +1,237 @@
 {
-  "batch_id": "source-audited-article-batch-026-local-first",
-  "audit_date": "2026-05-11",
-  "audited_at": "2026-05-11T20:30:00.000+08:00",
-  "article_id": "f95d5cc8-30d4-4f74-890f-1018d764da6e",
-  "slug": "lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification",
-  "title": "Fees for Repetitive Designs Reduced Fees and Their Justification",
-  "status": "local_pass_ready_for_final_publishing_review",
-  "article_folder": ".ai/content-audit-export/articles/lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification--f95d5cc8-30d4-4f74-890f-1018d764da6e",
-  "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification--f95d5cc8-30d4-4f74-890f-1018d764da6e",
-  "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification--f95d5cc8-30d4-4f74-890f-1018d764da6e/question-edits",
-  "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification--f95d5cc8-30d4-4f74-890f-1018d764da6e/question-edits",
-  "linked_questions": 10,
-  "question_edits_created": 10,
-  "source_safe_rewrite_question_edits": 10,
-  "classification": {
-    "content_domain": "professional_practice",
-    "requires_raw_pdf_audit": true,
-    "legal_or_code_source": true
-  },
+  "schema_version": "source-audit-evidence-v1-local-first",
+  "artifact_type": "source-audit-evidence",
+  "batch_id": "source-audited-article-batch-106-local-first",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T14:35:00+08:00",
+  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
   "target": {
     "article_id": "f95d5cc8-30d4-4f74-890f-1018d764da6e",
     "slug": "lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification",
-    "normalized_sha256": "sha256:d33b785f2aa3efca2667230e9b6f326ca4c2169071aab009f6dd53018fc9d849",
-    "candidate_sha256": "sha256:d33b785f2aa3efca2667230e9b6f326ca4c2169071aab009f6dd53018fc9d849"
+    "title": "Fees for Repetitive Designs Reduced Fees and Their Justification",
+    "article_folder": ".ai/content-audit-export/articles/lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification--f95d5cc8-30d4-4f74-890f-1018d764da6e",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification--f95d5cc8-30d4-4f74-890f-1018d764da6e",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification--f95d5cc8-30d4-4f74-890f-1018d764da6e/candidate.md",
+    "candidate_sha256": "sha256:2da77af116e34ebb7dce1af8f2c87fe3f986ddcf77e1dc0e2ded507123524142",
+    "normalized_sha256": "sha256:2da77af116e34ebb7dce1af8f2c87fe3f986ddcf77e1dc0e2ded507123524142",
+    "linked_questions_sha256": "sha256:25b9495a4e40982a0168406b264ce65740a5325a3ac5021e033f962362bd441e",
+    "sources_sha256": "sha256:e1d0b80d4a429c109ab6e23f693836fd0dfa24946a05e0b60bebf8aff7203f93"
+  },
+  "classification": {
+    "content_domain": "LEA Professional Practice and compensation methods",
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "high_value_professional_practice",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": [
+      "00d6e974-88d4-4a1b-b8d6-cd967d458a68",
+      "153c1923-34a5-4497-a4af-d7fa20375489",
+      "38bf0302-b729-4677-855c-48d8e3122419",
+      "39300b9d-04dc-4fa0-848d-9698713629c4",
+      "41ab1960-bf08-4453-b85d-0d7e12788ce2",
+      "78753553-9f7e-47a9-b4d2-844e5c260dd2",
+      "8daee28e-c4d7-475d-87fb-f7b3146c69af",
+      "a34caab0-5358-4287-84a5-000ada6fe8f9",
+      "decdd89e-f41b-4917-94a5-4fd70a3e38a8",
+      "fc934959-3dee-42f3-a575-c193560abc41"
+    ],
+    "source_safe_real_world_scenario": "eligible-added"
+  },
+  "paths": {
+    "article_folder_path": ".ai/content-audit-export/articles/lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification--f95d5cc8-30d4-4f74-890f-1018d764da6e",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification--f95d5cc8-30d4-4f74-890f-1018d764da6e",
+    "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification--f95d5cc8-30d4-4f74-890f-1018d764da6e/question-edits",
+    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification--f95d5cc8-30d4-4f74-890f-1018d764da6e/question-edits",
+    "question_edit_files": [
+      ".ai/content-audit-export/articles/lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification--f95d5cc8-30d4-4f74-890f-1018d764da6e/question-edits/00d6e974-88d4-4a1b-b8d6-cd967d458a68.json",
+      ".ai/content-audit-export/articles/lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification--f95d5cc8-30d4-4f74-890f-1018d764da6e/question-edits/153c1923-34a5-4497-a4af-d7fa20375489.json",
+      ".ai/content-audit-export/articles/lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification--f95d5cc8-30d4-4f74-890f-1018d764da6e/question-edits/38bf0302-b729-4677-855c-48d8e3122419.json",
+      ".ai/content-audit-export/articles/lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification--f95d5cc8-30d4-4f74-890f-1018d764da6e/question-edits/39300b9d-04dc-4fa0-848d-9698713629c4.json",
+      ".ai/content-audit-export/articles/lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification--f95d5cc8-30d4-4f74-890f-1018d764da6e/question-edits/41ab1960-bf08-4453-b85d-0d7e12788ce2.json",
+      ".ai/content-audit-export/articles/lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification--f95d5cc8-30d4-4f74-890f-1018d764da6e/question-edits/78753553-9f7e-47a9-b4d2-844e5c260dd2.json",
+      ".ai/content-audit-export/articles/lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification--f95d5cc8-30d4-4f74-890f-1018d764da6e/question-edits/8daee28e-c4d7-475d-87fb-f7b3146c69af.json",
+      ".ai/content-audit-export/articles/lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification--f95d5cc8-30d4-4f74-890f-1018d764da6e/question-edits/a34caab0-5358-4287-84a5-000ada6fe8f9.json",
+      ".ai/content-audit-export/articles/lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification--f95d5cc8-30d4-4f74-890f-1018d764da6e/question-edits/decdd89e-f41b-4917-94a5-4fd70a3e38a8.json",
+      ".ai/content-audit-export/articles/lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification--f95d5cc8-30d4-4f74-890f-1018d764da6e/question-edits/fc934959-3dee-42f3-a575-c193560abc41.json"
+    ]
+  },
+  "raw_sources": [
+    {
+      "authority": "United Architects of the Philippines / professional practice standards source",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+      "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
+      "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
+      "source_locator": "UAP Standards refined markdown lines 362-457, 473-551, and 1608-1642",
+      "checked_markdown_lines": [
+        "UAP Standards lines 362-412 project classification groups",
+        "UAP Standards lines 414-457 compensation methods",
+        "UAP Standards lines 473-551 fee conditions, reimbursables, abandoned work, PCC/PDC",
+        "UAP Standards lines 1608-1642 PACS per diem, retainer, reimbursables, and fixed/lump sum"
+      ],
+      "local_source_checked": true
+    },
+    {
+      "authority": "United Architects of the Philippines / regular design services source",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
+      "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
+      "refined_markdown_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
+      "source_locator": "SPP 202 local raw PDF checked; UAP Standards refined markdown provides readable line locators for the same provisions.",
+      "checked_markdown_lines": [
+        "SPP 202 local raw PDF checked",
+        "UAP Standards readable line locators used for citation control"
+      ],
+      "local_source_checked": true
+    },
+    {
+      "authority": "United Architects of the Philippines / Owner-Architect agreement source",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+      "raw_pdf_sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 401-402.md",
+      "refined_markdown_sha256": "sha256:ea7f84c966467b46fe9058778d4f9a0821db94a5dbc0a4fb02a2cfd69e215d05",
+      "source_locator": "UAP Document 401-402 refined markdown lines 1-24 and 105-160",
+      "checked_markdown_lines": [
+        "401-402 lines 1-24",
+        "401-402 lines 105-160"
+      ],
+      "local_source_checked": true
+    }
+  ],
+  "checked_sources": [
+    {
+      "source_id": "uap-document-standards-professional-practice-local",
+      "label": "UAP Document Standards of Professional Practice - SPP 202 compensation and project classification",
+      "source_locator": "UAP Standards refined markdown lines 362-457, 473-551, and 1608-1642",
+      "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b"
+    },
+    {
+      "source_id": "spp-202-regular-design-services-local",
+      "label": "SPP 202 - Regular Design Services local raw PDF",
+      "source_locator": "SPP 202 local raw PDF checked; UAP Standards refined markdown provides readable line locators for the same provisions.",
+      "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d"
+    },
+    {
+      "source_id": "uap-document-401-402-owner-architect-agreement-local",
+      "label": "UAP Document 401-402 Proforma Architect-Owner Agreement local PDF",
+      "source_locator": "UAP Document 401-402 refined markdown lines 1-24 and 105-160",
+      "raw_pdf_sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification:article:001",
+      "claim_text": "Fees for Repetitive Designs Reduced Fees and Their Justification was rewritten with source-safe compensation-method boundaries and no unsupported fee-rate formulas.",
+      "support": "UAP Standards refined markdown lines 362-457, 473-551, and 1608-1642; SPP 202 local raw PDF checked; UAP Standards refined markdown provides readable line locators for the same provisions.; UAP Document 401-402 refined markdown lines 1-24 and 105-160",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification:scenario:001",
+      "claim_text": "Batch 106 Real World Scenario is source-safe and stays inside checked UAP/SPP compensation-method facts.",
+      "support": "UAP Standards refined markdown lines 362-457, 473-551, and 1608-1642; SPP 202 local raw PDF checked; UAP Standards refined markdown provides readable line locators for the same provisions.; UAP Document 401-402 refined markdown lines 1-24 and 105-160",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification:question:01",
+      "claim_text": "Question 00d6e974-88d4-4a1b-b8d6-cd967d458a68 / What is the core Group 6 fact in SPP 202? has a source-safe Batch 106 question-edits rewrite aligned to lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification.",
+      "support": "UAP Standards refined markdown lines 362-457, 473-551, and 1608-1642; SPP 202 local raw PDF checked; UAP Standards refined markdown provides readable line locators for the same provisions.; UAP Document 401-402 refined markdown lines 1-24 and 105-160",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification:question:02",
+      "claim_text": "Question 153c1923-34a5-4497-a4af-d7fa20375489 / What is the core Group 7 fact? has a source-safe Batch 106 question-edits rewrite aligned to lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification.",
+      "support": "UAP Standards refined markdown lines 362-457, 473-551, and 1608-1642; SPP 202 local raw PDF checked; UAP Standards refined markdown provides readable line locators for the same provisions.; UAP Document 401-402 refined markdown lines 1-24 and 105-160",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification:question:03",
+      "claim_text": "Question 38bf0302-b729-4677-855c-48d8e3122419 / Which statement about reduced fees is safest for Batch 106? has a source-safe Batch 106 question-edits rewrite aligned to lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification.",
+      "support": "UAP Standards refined markdown lines 362-457, 473-551, and 1608-1642; SPP 202 local raw PDF checked; UAP Standards refined markdown provides readable line locators for the same provisions.; UAP Document 401-402 refined markdown lines 1-24 and 105-160",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification:question:04",
+      "claim_text": "Question 39300b9d-04dc-4fa0-848d-9698713629c4 / When should a repeated design not be treated as clean Group 6 reuse? has a source-safe Batch 106 question-edits rewrite aligned to lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification.",
+      "support": "UAP Standards refined markdown lines 362-457, 473-551, and 1608-1642; SPP 202 local raw PDF checked; UAP Standards refined markdown provides readable line locators for the same provisions.; UAP Document 401-402 refined markdown lines 1-24 and 105-160",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification:question:05",
+      "claim_text": "Question 41ab1960-bf08-4453-b85d-0d7e12788ce2 / A one-site housing project uses one set of plans for several residential units. Which classification is most source-aligned? has a source-safe Batch 106 question-edits rewrite aligned to lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification.",
+      "support": "UAP Standards refined markdown lines 362-457, 473-551, and 1608-1642; SPP 202 local raw PDF checked; UAP Standards refined markdown provides readable line locators for the same provisions.; UAP Document 401-402 refined markdown lines 1-24 and 105-160",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification:question:06",
+      "claim_text": "Question 78753553-9f7e-47a9-b4d2-844e5c260dd2 / What source fact distinguishes Group 6 from ordinary similar-looking buildings? has a source-safe Batch 106 question-edits rewrite aligned to lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification.",
+      "support": "UAP Standards refined markdown lines 362-457, 473-551, and 1608-1642; SPP 202 local raw PDF checked; UAP Standards refined markdown provides readable line locators for the same provisions.; UAP Document 401-402 refined markdown lines 1-24 and 105-160",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification:question:07",
+      "claim_text": "Question 8daee28e-c4d7-475d-87fb-f7b3146c69af / If a question gives a contract-specific reduced percentage for repeated use, what should the student do? has a source-safe Batch 106 question-edits rewrite aligned to lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification.",
+      "support": "UAP Standards refined markdown lines 362-457, 473-551, and 1608-1642; SPP 202 local raw PDF checked; UAP Standards refined markdown provides readable line locators for the same provisions.; UAP Document 401-402 refined markdown lines 1-24 and 105-160",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification:question:08",
+      "claim_text": "Question a34caab0-5358-4287-84a5-000ada6fe8f9 / Which answer best handles a repeated prototype built on three different lots with major site-specific revisions? has a source-safe Batch 106 question-edits rewrite aligned to lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification.",
+      "support": "UAP Standards refined markdown lines 362-457, 473-551, and 1608-1642; SPP 202 local raw PDF checked; UAP Standards refined markdown provides readable line locators for the same provisions.; UAP Document 401-402 refined markdown lines 1-24 and 105-160",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification:question:09",
+      "claim_text": "Question decdd89e-f41b-4917-94a5-4fd70a3e38a8 / Which compensation-source statement remains true even after identifying Group 6 or Group 7? has a source-safe Batch 106 question-edits rewrite aligned to lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification.",
+      "support": "UAP Standards refined markdown lines 362-457, 473-551, and 1608-1642; SPP 202 local raw PDF checked; UAP Standards refined markdown provides readable line locators for the same provisions.; UAP Document 401-402 refined markdown lines 1-24 and 105-160",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification:question:10",
+      "claim_text": "Question fc934959-3dee-42f3-a575-c193560abc41 / Which phrase should raise a source-audit warning in repetitive-design questions? has a source-safe Batch 106 question-edits rewrite aligned to lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification.",
+      "support": "UAP Standards refined markdown lines 362-457, 473-551, and 1608-1642; SPP 202 local raw PDF checked; UAP Standards refined markdown provides readable line locators for the same provisions.; UAP Document 401-402 refined markdown lines 1-24 and 105-160",
+      "status": "verified_local_raw_pdf"
+    }
+  ],
+  "unverified_or_rejected_claims": [
+    "Rejected unsupported reduced-fee percentage calculations and prototype-site formulas."
+  ],
+  "removed_or_rewritten_material": [
+    "Rejected unsupported reduced-fee percentage calculations and prototype-site formulas."
+  ],
+  "raw_pdf_gate": {
+    "status": "pass",
+    "primary_source_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "readable_locator_layer": "vitruvius-connection/002_Raw-Conversion-Layer",
+    "source_hashes_checked": 3
+  },
+  "gate_results": {
+    "article_rewrite": "pass_pending_compose_diff_validation",
+    "question_edits": "pass_10_of_10",
+    "real_world_scenario": "eligible-added",
+    "unsupported_formula_scan": "pass"
+  },
+  "source_safe_repair": {
+    "status": "complete",
+    "decisions": [
+      "Added Group 6 vs Group 7 classification boundary and source-safe Real World Scenario."
+    ]
+  },
+  "local_validation": {
+    "compose": "PASS: blockers=0; candidate_hash=sha256:2da77af116e34ebb7dce1af8f2c87fe3f986ddcf77e1dc0e2ded507123524142",
+    "diff": "PASS: changed=true; safe_to_push=true; blockers=0",
+    "validate": "PASS: scoped validate-bundles valid=true blockers=0; component-usage warning only",
+    "ui_block_edits": "PASS: validate-ui-block-edits valid=true blockers=0",
+    "scoped_checks": "PASS: aggregate scoped checks pass; JSON parse failures=0; marker matches=0; source hash failures=0; linked question edits=10/10",
+    "tests": "PASS: bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts (34 pass, 0 fail, 328 expect calls)",
+    "prior_batch_duplicate_selection_scan": "PASS: no selected article ID found in accepted Batches 087-105; historical re-audit overlap recorded separately."
+  },
+  "sme_review": {
+    "status": "local_codex_professional_context_pass",
+    "notes": "Applied professional-practice and legal-citation skills; no new section numbers invented."
   },
   "overall": {
     "source_audit_status": "PASS",
     "safe_for_supabase_upload": true,
-    "local_first_only": true,
-    "supabase_push_attempted": false,
-    "deploy_attempted": false,
-    "commit_attempted": false
-  },
-  "raw_pdf_gate": {
-    "status": "PASS",
-    "all_legal_code_claims_have_pdf_locator": true,
-    "all_section_numbers_verified_against_raw_pdf": true,
-    "no_derivative_text_used_as_source_of_truth": true,
     "blockers": []
-  },
-  "source_audit": {
-    "checked_sources": [
-      {
-        "source_id": "uap-standards-spp202-project-classification-local",
-        "label": "UAP Document Standards of Professional Practice - SPP 202 Project Classification and Compensation",
-        "authority": "United Architects of the Philippines / Professional practice standards source",
-        "source_type": "professional_practice_pdf",
-        "source_locator": "UAP Standards refined markdown lines 362-457 and 473-551",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
-        "checked_markdown_lines": [
-          "UAP Standards lines 362-412",
-          "UAP Standards lines 414-457",
-          "UAP Standards lines 473-551"
-        ],
-        "use": "SPP 202 project classification, compensation methods, fee conditions, and PCC definition.",
-        "local_source_checked": true
-      },
-      {
-        "source_id": "spp202-regular-design-services-local",
-        "label": "SPP 202 - Regular Design Services",
-        "authority": "United Architects of the Philippines / Professional practice standards source",
-        "source_type": "professional_practice_pdf",
-        "source_locator": "SPP 202 local raw PDF; UAP Standards refined markdown supplies readable line support for the same professional-practice topic",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 202.pdf",
-        "raw_pdf_sha256": "sha256:1d01f1660b8505351ff8c653b7f1c1299b06863c1301c630698fc46aa24ce46d",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 202.md",
-        "refined_markdown_sha256": "sha256:18eb3816290807261986f9443481f4b31dfe5e363b4d194c945af0dde112f2fc",
-        "checked_markdown_lines": [
-          "SPP 202 local raw PDF checked",
-          "UAP Standards lines 362-457 and 473-551 used for readable source locators"
-        ],
-        "use": "Regular design services raw source counterpart; paired with UAP Standards readable line support.",
-        "local_source_checked": true
-      }
-    ],
-    "source_locator": "UAP Standards refined markdown lines 362-457 and 473-551; SPP 202 local raw PDF; UAP Standards refined markdown supplies readable line support for the same professional-practice topic",
-    "checked_markdown_lines": [
-      "UAP Standards lines 362-412",
-      "UAP Standards lines 414-457",
-      "UAP Standards lines 473-551",
-      "SPP 202 local raw PDF checked",
-      "UAP Standards lines 362-457 and 473-551 used for readable source locators"
-    ]
-  },
-  "article_repair": {
-    "normalized_md_rewritten": true,
-    "candidate_md_pending_compose": false,
-    "placeholders_removed": true,
-    "internal_notes_removed": true,
-    "source_gap_notes_removed": true,
-    "unsupported_claims_rewritten_or_removed": true,
-    "candidate_md_composed": true,
-    "diff_report_generated": true
-  },
-  "claims": [
-    {
-      "claim_id": "batch-026-lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification-question-001",
-      "claim_text": "Question 38bf0302-b729-4677-855c-48d8e3122419 / model BATCH-026-lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification-001 rewritten to local source-safe form.",
-      "question_id": "38bf0302-b729-4677-855c-48d8e3122419",
-      "model_id": "BATCH-026-lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification-001",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-spp202-project-classification-local",
-        "spp202-regular-design-services-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards refined markdown lines 362-457 and 473-551; SPP 202 local raw PDF; UAP Standards refined markdown supplies readable line support for the same professional-practice topic",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-026-lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification-question-002",
-      "claim_text": "Question decdd89e-f41b-4917-94a5-4fd70a3e38a8 / model BATCH-026-lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification-002 rewritten to local source-safe form.",
-      "question_id": "decdd89e-f41b-4917-94a5-4fd70a3e38a8",
-      "model_id": "BATCH-026-lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification-002",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-spp202-project-classification-local",
-        "spp202-regular-design-services-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards refined markdown lines 362-457 and 473-551; SPP 202 local raw PDF; UAP Standards refined markdown supplies readable line support for the same professional-practice topic",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-026-lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification-question-003",
-      "claim_text": "Question 78753553-9f7e-47a9-b4d2-844e5c260dd2 / model BATCH-026-lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification-003 rewritten to local source-safe form.",
-      "question_id": "78753553-9f7e-47a9-b4d2-844e5c260dd2",
-      "model_id": "BATCH-026-lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification-003",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-spp202-project-classification-local",
-        "spp202-regular-design-services-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards refined markdown lines 362-457 and 473-551; SPP 202 local raw PDF; UAP Standards refined markdown supplies readable line support for the same professional-practice topic",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-026-lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification-question-004",
-      "claim_text": "Question 153c1923-34a5-4497-a4af-d7fa20375489 / model BATCH-026-lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification-004 rewritten to local source-safe form.",
-      "question_id": "153c1923-34a5-4497-a4af-d7fa20375489",
-      "model_id": "BATCH-026-lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification-004",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-spp202-project-classification-local",
-        "spp202-regular-design-services-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards refined markdown lines 362-457 and 473-551; SPP 202 local raw PDF; UAP Standards refined markdown supplies readable line support for the same professional-practice topic",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-026-lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification-question-005",
-      "claim_text": "Question 00d6e974-88d4-4a1b-b8d6-cd967d458a68 / model BATCH-026-lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification-005 rewritten to local source-safe form.",
-      "question_id": "00d6e974-88d4-4a1b-b8d6-cd967d458a68",
-      "model_id": "BATCH-026-lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification-005",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-spp202-project-classification-local",
-        "spp202-regular-design-services-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards refined markdown lines 362-457 and 473-551; SPP 202 local raw PDF; UAP Standards refined markdown supplies readable line support for the same professional-practice topic",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-026-lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification-question-006",
-      "claim_text": "Question 8daee28e-c4d7-475d-87fb-f7b3146c69af / model BATCH-026-lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification-006 rewritten to local source-safe form.",
-      "question_id": "8daee28e-c4d7-475d-87fb-f7b3146c69af",
-      "model_id": "BATCH-026-lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification-006",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-spp202-project-classification-local",
-        "spp202-regular-design-services-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards refined markdown lines 362-457 and 473-551; SPP 202 local raw PDF; UAP Standards refined markdown supplies readable line support for the same professional-practice topic",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-026-lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification-question-007",
-      "claim_text": "Question 39300b9d-04dc-4fa0-848d-9698713629c4 / model BATCH-026-lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification-007 rewritten to local source-safe form.",
-      "question_id": "39300b9d-04dc-4fa0-848d-9698713629c4",
-      "model_id": "BATCH-026-lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification-007",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-spp202-project-classification-local",
-        "spp202-regular-design-services-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards refined markdown lines 362-457 and 473-551; SPP 202 local raw PDF; UAP Standards refined markdown supplies readable line support for the same professional-practice topic",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-026-lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification-question-008",
-      "claim_text": "Question 41ab1960-bf08-4453-b85d-0d7e12788ce2 / model BATCH-026-lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification-008 rewritten to local source-safe form.",
-      "question_id": "41ab1960-bf08-4453-b85d-0d7e12788ce2",
-      "model_id": "BATCH-026-lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification-008",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-spp202-project-classification-local",
-        "spp202-regular-design-services-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards refined markdown lines 362-457 and 473-551; SPP 202 local raw PDF; UAP Standards refined markdown supplies readable line support for the same professional-practice topic",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-026-lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification-question-009",
-      "claim_text": "Question fc934959-3dee-42f3-a575-c193560abc41 / model BATCH-026-lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification-009 rewritten to local source-safe form.",
-      "question_id": "fc934959-3dee-42f3-a575-c193560abc41",
-      "model_id": "BATCH-026-lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification-009",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-spp202-project-classification-local",
-        "spp202-regular-design-services-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards refined markdown lines 362-457 and 473-551; SPP 202 local raw PDF; UAP Standards refined markdown supplies readable line support for the same professional-practice topic",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-026-lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification-question-010",
-      "claim_text": "Question a34caab0-5358-4287-84a5-000ada6fe8f9 / model BATCH-026-lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification-010 rewritten to local source-safe form.",
-      "question_id": "a34caab0-5358-4287-84a5-000ada6fe8f9",
-      "model_id": "BATCH-026-lea-prac-cmp-012-fees-for-repetitive-designs-reduced-fees-and-their-justification-010",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-standards-spp202-project-classification-local",
-        "spp202-regular-design-services-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "source_locator": "UAP Standards refined markdown lines 362-457 and 473-551; SPP 202 local raw PDF; UAP Standards refined markdown supplies readable line support for the same professional-practice topic",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    }
-  ],
-  "local_validation": {
-    "compose": "PASS",
-    "diff": "PASS",
-    "validate": "PASS",
-    "scoped_checks": "PASS",
-    "tests": "PASS - bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts: 34 pass, 0 fail"
-  },
-  "remaining_local_blockers": [],
-  "unsupported_or_removed_claims": [
-    "Removed or rewrote stale UI placeholders, internal notes, unverified numeric fee claims, and source claims not supported by the checked local raw PDFs."
-  ]
+  }
 }
