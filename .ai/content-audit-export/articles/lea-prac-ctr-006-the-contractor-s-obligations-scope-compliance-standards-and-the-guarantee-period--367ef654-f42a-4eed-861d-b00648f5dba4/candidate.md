@@ -31,6 +31,14 @@ UAP Document 301 states that the Contractor, before signing the Contract, furnis
 
 CIAP Document 102 keeps the same Performance Bond and Payment Bond percentages at fifteen percent each. It states that the Guarantee Bond is equivalent to the retention released to the Contractor and runs for one year from posting. CIAP also requires the Contractor to guarantee materials and workmanship for one year, or longer when the Specifications provide, and to commence corrective work within five days after written notice by the Owner.
 
+## Real World Scenario
+
+A contractor installs ceiling materials before resolving a drawing/specification conflict and later argues that the architect's inspector saw the work, so the contractor is released from correction. The safer exam answer is that the work still has to conform to the Contract Documents. UAP Document 301 and CIAP Document 102 both keep the contractor responsible for reporting discrepancies, following the contract, protecting the site, and correcting defective work. Inspection or delayed rejection does not become a blanket release from the contractor's own obligations.
+
+## Exam Trap
+
+Do not merge the one-year contractual guarantee with every possible statutory liability issue. For this article, the tested source is the contract guarantee or warranty period and bond replacement path, not a separate Civil Code design-liability rule unless the question supplies that source.
+
 ## Source Anchors
 
 - UAP Document 301: Contractor definition, conformity, safety/damages, bonds, and one-year guarantee.

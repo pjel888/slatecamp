@@ -1,3 +1,17 @@
+# Batch 108 Post-Batch Handoff Addendum
+
+Updated: 2026-05-13T14:11:03+08:00
+
+Batch 108 local-first artifacts are validated for CTR-005 through CTR-009. Staging, cached diff check, commit, push, and Batch 109 continuation are blocked in this sandbox because `git add` cannot create `.git/index.lock` and the sandbox cannot write probe files inside `.git`. Batch 109 must not start until Batch 108 is actually committed and pushed. Preserve final-depth notes for UAP/CIAP source-primary boundaries, private bidding versus public procurement terms, and contractual guarantee versus Civil Code Article 1723 statutory liability.
+
+Git gate blocker: `git add -- <Batch 108 scoped paths>` failed with `fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted`; no staged diff, commit, or push exists in this sandbox.
+
+Artifacts: .ai/03_plans/production-line-batch-108-manifest.json; .ai/content-audit-export/source-audited-article-batch-108-local-first-report.md; .ai/content-audit-export/source-audited-article-batch-108-local-first-ledger.json; .ai/content-audit-export/source-audited-article-batch-108-local-first-scoped-checks.json; .ai/03_plans/batch-108-independent-quality-review.md. Validation: compose/diff/validate strict 5/5; UI-block edit validation 5/5; scoped JSON parse 109 files failures=0; marker scan hits=0 on learner-facing content/question/evidence files; source hashes 8 unique artifacts and 242 cited references; linked questions/question edits 50/50; stale compose-error files=0; targeted tests 34 pass, 0 fail, 328 expects; scoped git diff --check PASS.
+
+Next target after Batch 108 commit/push: Batch 109 with CTR-010 through CTR-014 unless live artifacts show a later completed batch.
+
+---
+
 # Batch 107 Post-Batch Handoff Addendum
 
 Updated: 2026-05-13T13:50:00+08:00

@@ -1,3 +1,39 @@
+# Batch 108 Source-Audited Production-Line Coordination Update
+
+Updated: 2026-05-13T14:11:03+08:00
+
+## Status
+
+- Batch 108: local-first validated; stage/cached-diff/commit/push blocked by `.git/index.lock` write denial in this sandbox.
+- Branch: 3dlab-gray-viewport-bg
+- Start baseline: b2d9c144d
+- Batch 107 acceptance: committed and pushed at b2d9c144d; earlier Batch 107 sandbox blocker text is superseded.
+- Selected articles: 5
+- Linked question edits: 50
+- Forbidden external actions: none performed.
+
+## Batch 108 Gate Summary
+
+- Compose/diff/validate strict 5/5: pass
+- UI-block edit validation: pass
+- Scoped JSON parse: pass; 109 files (106 selected-folder + 3 batch artifact JSON)
+- Placeholder/internal-note/source-gap scan: pass; learner-facing hits=0
+- Source hash checks: pass; 8 unique artifacts / 242 references
+- Linked-question/question-edit count checks: pass
+- Stale compose-error scan: pass
+- Targeted content-audit tests: pass; 34 pass, 0 fail, 328 expects
+- Scoped git diff --check: pass
+- Cached diff check: blocked before stage; `git add` cannot create `.git/index.lock`
+
+## Coordination Notes
+
+- Git gate blocker: `git add -- <Batch 108 scoped paths>` failed with `.git/index.lock` Operation not permitted; no commit or push was created.
+- Batch 108 includes both article improvements and linked question edits for every selected article.
+- Historical local-first overlap from Batches 022/028/029 is recorded as non-current accepted overlap.
+- Next production-line target after Batch 108 commit/push outside this sandbox: Batch 109, continuing CTR sequence at CTR-010 through CTR-014 unless live artifacts show a later accepted batch.
+
+---
+
 # Batch 107 Source-Audited Production-Line Coordination Update
 
 Updated: 2026-05-13T13:50:00+08:00

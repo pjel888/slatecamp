@@ -35,6 +35,10 @@ UAP Document 301 says the architect is, in the first instance, the interpreter o
 
 The UAP Code of Ethics supports the same professional posture. It describes the architect's advice as unprejudiced and the architect's judicial functions between client and contractor as impartial.
 
+## Real World Scenario
+
+A site architect is asked to approve a cheaper substitute material after contract award because the contractor missed a specification conflict during bidding. The source-safe response is not "approve it to keep the project moving." UAP Document 301 points first to the Contract Documents, written architect decisions on drawing/specification conflicts, and the architect's limited authority as the owner's representative. The architect may interpret contract requirements and refer the matter through the contract process, but the contractor remains responsible for conforming work and cannot treat silence or missed stoppage as a waiver.
+
 ## How It Is Tested
 
 Expect substitution, defective work, progress, payment, and interpretation scenarios. The safest answer usually asks: What do the Contract Documents authorize? Is the architect deciding quality, interpretation, performance, or progress? Does the decision require owner financial authorization? Does the contractor remain responsible for the work?
@@ -45,3 +49,8 @@ Expect substitution, defective work, progress, payment, and interpretation scena
 - Treating the architect's failure to stop work as a waiver of contractor responsibility.
 - Treating project representatives as independent final decision-makers.
 - Forgetting that the architect must act impartially when interpreting the contract.
+
+## Source Anchors
+
+- UAP Document 301: contract-document conflicts before proposal, architect status, decision authority, project representatives, and schedule of time limits.
+- UAP Code of Ethics: unprejudiced client advice, impartial judicial function between client and contractor, and fair assistance to the contractor.

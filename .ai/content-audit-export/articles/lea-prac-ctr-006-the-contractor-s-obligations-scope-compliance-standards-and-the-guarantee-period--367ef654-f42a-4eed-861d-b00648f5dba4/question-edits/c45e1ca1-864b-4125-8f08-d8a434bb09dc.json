@@ -2,14 +2,14 @@
   "question_id": "c45e1ca1-864b-4125-8f08-d8a434bb09dc",
   "baseline_hash": "sha256:cb8281d8cceb6c31d940c058cb6736a262349b7bf7d1f059e372763459b3b705",
   "action": "replace",
-  "reason": "source-audited-article-batch-028-local-first rewrote this linked question to source-safe local form for lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period.",
-  "approved_by": "codex-local-source-audit-batch-028",
-  "approved_at": "2026-05-11T15:30:00.000+08:00",
+  "reason": "source-audited-article-batch-108-local-first revalidated and refreshed this linked question against current serial Batch 108 article/source evidence for lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period.",
+  "approved_by": "codex-local-source-audit-batch-108",
+  "approved_at": "2026-05-13T13:57:08.000+08:00",
   "source_audit_support": {
     "parent_article_id": "367ef654-f42a-4eed-861d-b00648f5dba4",
     "parent_article_slug": "lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period",
     "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
+    "support_status": "verified_local_raw_pdf",
     "source_locator": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090; CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820",
     "checked_markdown_lines": [
       "UAP Document 301 lines 472-545",
@@ -46,7 +46,9 @@
         "locator": "CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820"
       }
     ],
-    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+    "local_source_safe_action": "revalidated question text, answer key, citation, and learner explanation against current Batch 108 source-audited article evidence",
+    "serial_batch_id": "source-audited-article-batch-108-local-first",
+    "current_candidate_sha256": "sha256:1c8138583a05341ca8bffdd11a1a61e4f5998aed279ae1d172b5482fa56df3a7"
   },
   "proposed": {
     "text": "Under UAP Document 301, who is the Contractor?",
@@ -74,17 +76,17 @@
     "value_tolerance": 0,
     "question_type": "mcq",
     "rationale": "Correct because it follows UAP Document 301 lines 482-486. The other options change the party, period, percentage, or document rule stated in the audited source.",
-    "explanation": "Use UAP Document 301 lines 482-486 for this Batch 028 replacement.",
+    "explanation": "Incorrect choices either erase contractor responsibility, confuse bond amounts or timing, or import statutory liability rules not supplied by the cited contract source.",
     "code_citation": "UAP Document 301 lines 482-486",
     "bloom_level": "remember",
     "application_context": "professional_practice_source_audit",
     "practice_context": [
       "professional practice",
       "contracts",
-      "source-audited batch 028"
+      "source-audited batch 108"
     ],
     "difficulty": 0.35,
     "is_assessment": false,
-    "model_id": "BATCH-028-lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period-001"
+    "model_id": "BATCH-108-lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period-001"
   }
 }

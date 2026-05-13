@@ -31,6 +31,14 @@ CIAP Document 102 provides a broader hierarchy. Detailed Drawings prevail over G
 
 CIAP Document 102 defines Bid Bulletin as a document containing additional information on Bid Documents issued to bidders before the date of bidding. It also places Addenda to Bid Documents in the document-priority list after Instructions to Bidders and before Drawings. UAP Document 301 uses Bid Bulletin and Supplementary Specifications language for additional or amended information issued before bidding or as additions/amendments to Specifications.
 
+## Real World Scenario
+
+Before bidding, a contractor notices that the reflected ceiling plan conflicts with the electrical drawing. Under UAP Document 301, the contractor should seek a written decision from the architect before submitting the proposal instead of pricing a guess and later claiming surprise. Under CIAP Document 102, the contract documents are read through the stated interpretation rules and priority list. If the clarification affects bidders before the bid date, a Bid Bulletin or Addendum is the source-safe document path.
+
+## Exam Trap
+
+Do not answer every document conflict with one universal hierarchy. UAP Document 301 uses its own drawing/specification and architect-decision language; CIAP Document 102 gives a broader priority list. Use the hierarchy from the document named in the question.
+
 ## Source Anchors
 
 - UAP Document 301: definitions, Contract Documents, Drawings and Specifications, and discrepancy rules.

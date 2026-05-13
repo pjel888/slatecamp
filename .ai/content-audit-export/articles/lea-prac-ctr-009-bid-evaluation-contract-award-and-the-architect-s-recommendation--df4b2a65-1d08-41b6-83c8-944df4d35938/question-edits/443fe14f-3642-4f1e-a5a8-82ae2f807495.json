@@ -2,14 +2,14 @@
   "question_id": "443fe14f-3642-4f1e-a5a8-82ae2f807495",
   "baseline_hash": "sha256:6a3709d4446a42ff811de2f4f492bee354129e59bc2515733540ad9fb70836da",
   "action": "replace",
-  "reason": "source-audited-article-batch-029-local-first rewrote this linked question to source-safe local form for lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation.",
-  "approved_by": "codex-local-source-audit-batch-029",
-  "approved_at": "2026-05-11T16:20:00.000+08:00",
+  "reason": "source-audited-article-batch-108-local-first revalidated and refreshed this linked question against current serial Batch 108 article/source evidence for lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation.",
+  "approved_by": "codex-local-source-audit-batch-108",
+  "approved_at": "2026-05-13T13:57:08.000+08:00",
   "source_audit_support": {
     "parent_article_id": "df4b2a65-1d08-41b6-83c8-944df4d35938",
     "parent_article_slug": "lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation",
     "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
+    "support_status": "verified_local_raw_pdf",
     "source_locator": "UAP Document 301 refined markdown lines 486-499; CIAP Document 102 refined markdown lines 171-177; Civil Code Article 1326 refined markdown line 166",
     "checked_markdown_lines": [
       "UAP Document 301 lines 486-499",
@@ -54,7 +54,9 @@
         "locator": "Civil Code Article 1326 refined markdown line 166"
       }
     ],
-    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+    "local_source_safe_action": "revalidated question text, answer key, citation, and learner explanation against current Batch 108 source-audited article evidence",
+    "serial_batch_id": "source-audited-article-batch-108-local-first",
+    "current_candidate_sha256": "sha256:2e5123f9ecba3fcacd2c74c573ff281f00d33bf5678fe699d94862d67bf2712a"
   },
   "proposed": {
     "text": "Under CIAP Document 102, what is a bid?",
@@ -82,17 +84,17 @@
     "value_tolerance": 0,
     "question_type": "mcq",
     "rationale": "Correct because it follows CIAP Document 102 lines 171-177. The other options change the document, party, timing, amount, or legal effect stated in the checked local source.",
-    "explanation": "Use CIAP Document 102 lines 171-177 for this Batch 029 source-safe replacement.",
+    "explanation": "Incorrect choices treat bid advertisement as automatic award, bypass the instructions or bid documents, or import procedures not stated in the cited source.",
     "code_citation": "CIAP Document 102 lines 171-177",
     "bloom_level": "remember",
     "application_context": "professional_practice_source_audit",
     "practice_context": [
       "professional practice",
       "contracts",
-      "source-audited-article-batch-029-local-first"
+      "source-audited batch 108"
     ],
     "difficulty": 0.38,
     "is_assessment": false,
-    "model_id": "BATCH-029-lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation-002"
+    "model_id": "BATCH-108-lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation-002"
   }
 }

@@ -2,14 +2,14 @@
   "question_id": "48ae83be-231f-4def-bb0e-af02e62e895b",
   "baseline_hash": "sha256:9c064da5d1b491fe915f75cb9f8b8da0197fead8cb55befc1d5e037a9a96f47c",
   "action": "replace",
-  "reason": "source-audited-article-batch-028-local-first rewrote this linked question to source-safe local form for lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda.",
-  "approved_by": "codex-local-source-audit-batch-028",
-  "approved_at": "2026-05-11T15:30:00.000+08:00",
+  "reason": "source-audited-article-batch-108-local-first revalidated and refreshed this linked question against current serial Batch 108 article/source evidence for lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda.",
+  "approved_by": "codex-local-source-audit-batch-108",
+  "approved_at": "2026-05-13T13:57:08.000+08:00",
   "source_audit_support": {
     "parent_article_id": "a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
     "parent_article_slug": "lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda",
     "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
+    "support_status": "verified_local_raw_pdf",
     "source_locator": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090; CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820",
     "checked_markdown_lines": [
       "UAP Document 301 lines 472-545",
@@ -46,7 +46,9 @@
         "locator": "CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820"
       }
     ],
-    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+    "local_source_safe_action": "revalidated question text, answer key, citation, and learner explanation against current Batch 108 source-audited article evidence",
+    "serial_batch_id": "source-audited-article-batch-108-local-first",
+    "current_candidate_sha256": "sha256:31371b5e488ee8cda1a9be3fa72eab309450036608e07c5476d020598e9b5fb6"
   },
   "proposed": {
     "text": "What should the Contractor do when a discrepancy in Drawings or Specifications is found under UAP Document 301?",
@@ -74,17 +76,17 @@
     "value_tolerance": 0,
     "question_type": "mcq",
     "rationale": "Correct because it follows UAP Document 301 lines 523-545. The other options change the party, period, percentage, or document rule stated in the audited source.",
-    "explanation": "Use UAP Document 301 lines 523-545 for this Batch 028 replacement.",
+    "explanation": "Incorrect choices apply the wrong document hierarchy or ignore the pre-bid clarification/addendum path in the cited UAP/CIAP provisions.",
     "code_citation": "UAP Document 301 lines 523-545",
     "bloom_level": "apply",
     "application_context": "professional_practice_source_audit",
     "practice_context": [
       "professional practice",
       "contracts",
-      "source-audited batch 028"
+      "source-audited batch 108"
     ],
     "difficulty": 0.56,
     "is_assessment": false,
-    "model_id": "BATCH-028-lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda-007"
+    "model_id": "BATCH-108-lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda-007"
   }
 }

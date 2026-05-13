@@ -1,0 +1,145 @@
+{
+  "batch_id": "source-audited-article-batch-108-local-first",
+  "batch_number": "108",
+  "generated_at": "2026-05-13T14:11:03+08:00",
+  "branch": "3dlab-gray-viewport-bg",
+  "baseline_commit": "b2d9c144d",
+  "selected_articles": [
+    {
+      "article_id": "5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5",
+      "slug": "lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-c--5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_count": 2,
+      "scenario_status": "eligible-added"
+    },
+    {
+      "article_id": "367ef654-f42a-4eed-861d-b00648f5dba4",
+      "slug": "lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period--367ef654-f42a-4eed-861d-b00648f5dba4",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_count": 2,
+      "scenario_status": "eligible-added"
+    },
+    {
+      "article_id": "0c598f14-db0d-490d-827d-d3088108b47f",
+      "slug": "lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_count": 2,
+      "scenario_status": "eligible-added"
+    },
+    {
+      "article_id": "a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
+      "slug": "lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda--a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_count": 2,
+      "scenario_status": "eligible-added"
+    },
+    {
+      "article_id": "df4b2a65-1d08-41b6-83c8-944df4d35938",
+      "slug": "lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation--df4b2a65-1d08-41b6-83c8-944df4d35938",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_count": 3,
+      "scenario_status": "eligible-added"
+    }
+  ],
+  "checks": {
+    "compose_strict_5_of_5": {
+      "status": "pass",
+      "passed": 5,
+      "failed": 0
+    },
+    "diff_strict_5_of_5": {
+      "status": "pass",
+      "passed": 5,
+      "failed": 0
+    },
+    "validate_bundles_strict_5_of_5": {
+      "status": "pass",
+      "passed": 5,
+      "failed": 0,
+      "blockers": 0,
+      "warnings": [
+        "component-usage warnings only"
+      ]
+    },
+    "ui_block_edit_validation": {
+      "status": "pass",
+      "articles": 5,
+      "blockers": 0,
+      "warnings": 0
+    },
+    "scoped_json_parse": {
+      "status": "pass",
+      "parsed_files": 109,
+      "selected_folder_json_files": 106,
+      "artifact_json_files": 3,
+      "failures": []
+    },
+    "placeholder_internal_note_source_gap_scan": {
+      "status": "pass",
+      "matches": [],
+      "scan_scope": "normalized.md, candidate.md, question-edits JSON, and source-audit-evidence.json for selected Batch 108 article folders",
+      "note": "compose-report.json and diff-report.json contain schema fields with zero values; those are not content marker hits."
+    },
+    "source_hash_checks": {
+      "status": "pass",
+      "references_checked": 242,
+      "unique_source_artifacts_checked": 8,
+      "failures": []
+    },
+    "linked_question_question_edit_count": {
+      "status": "pass",
+      "linked_questions": 50,
+      "question_edits": 50
+    },
+    "stale_compose_error_scan": {
+      "status": "pass",
+      "remaining_selected_compose_errors": []
+    },
+    "prior_batch_duplicate_selection_scan": {
+      "status": "pass",
+      "checked_batches": "087-107",
+      "duplicate_hits": []
+    },
+    "targeted_content_audit_tests": {
+      "status": "pass",
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "pass": 34,
+      "fail": 0,
+      "expect_calls": 328
+    },
+    "scoped_git_diff_check": {
+      "status": "pass",
+      "command": "git diff --check -- <Batch 108 scoped paths>"
+    },
+    "cached_git_diff_check": {
+      "status": "blocked_git_index_write",
+      "attempted_command": "git add -- <Batch 108 scoped paths>",
+      "error": "fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted",
+      "consequence": "No staged diff exists, so git diff --cached --check is not meaningful and commit/push cannot be performed in this sandbox."
+    }
+  },
+  "forbidden_actions": {
+    "supabase_push": "not_performed",
+    "deploy": "not_performed",
+    "production_db_mutation": "not_performed",
+    "merge_to_main": "not_performed"
+  },
+  "overall": "pass_local_first_blocked_at_git_stage_commit_push",
+  "git_commit_push_state": {
+    "status": "blocked_git_index_write",
+    "expected_commit_message": "chore(content): accept source-audited batch 108",
+    "commit_created": false,
+    "push_performed": false,
+    "blocker": "fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted"
+  }
+}

@@ -2,14 +2,14 @@
   "question_id": "96a7e7da-5a9a-4163-9511-bf6a29741bc2",
   "baseline_hash": "sha256:133a8b85e7945b96a987abc1820ce096f4475c55073e1c294f223db72cf31b1f",
   "action": "replace",
-  "reason": "source-audited-article-batch-028-local-first rewrote this linked question to source-safe local form for lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures.",
-  "approved_by": "codex-local-source-audit-batch-028",
-  "approved_at": "2026-05-11T15:30:00.000+08:00",
+  "reason": "source-audited-article-batch-108-local-first revalidated and refreshed this linked question against current serial Batch 108 article/source evidence for lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures.",
+  "approved_by": "codex-local-source-audit-batch-108",
+  "approved_at": "2026-05-13T13:57:08.000+08:00",
   "source_audit_support": {
     "parent_article_id": "0c598f14-db0d-490d-827d-d3088108b47f",
     "parent_article_slug": "lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures",
     "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
+    "support_status": "verified_local_raw_pdf",
     "source_locator": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090; CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820",
     "checked_markdown_lines": [
       "UAP Document 301 lines 472-545",
@@ -46,7 +46,9 @@
         "locator": "CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820"
       }
     ],
-    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+    "local_source_safe_action": "revalidated question text, answer key, citation, and learner explanation against current Batch 108 source-audited article evidence",
+    "serial_batch_id": "source-audited-article-batch-108-local-first",
+    "current_candidate_sha256": "sha256:a72418c5c1f56794395ef3b1876a83b3d7e1e8bf1ff631248676da56d79b0470"
   },
   "proposed": {
     "text": "Under CIAP Document 102, what is a Bid Bond?",
@@ -74,17 +76,17 @@
     "value_tolerance": 0,
     "question_type": "mcq",
     "rationale": "Correct because it follows CIAP Document 102 lines 174-176. The other options change the party, period, percentage, or document rule stated in the audited source.",
-    "explanation": "Use CIAP Document 102 lines 174-176 for this Batch 028 replacement.",
+    "explanation": "Incorrect choices import unsupported public-procurement or automatic-award rules instead of staying with the private bid-document definitions supplied by the cited source.",
     "code_citation": "CIAP Document 102 lines 174-176",
     "bloom_level": "remember",
     "application_context": "professional_practice_source_audit",
     "practice_context": [
       "professional practice",
       "contracts",
-      "source-audited batch 028"
+      "source-audited batch 108"
     ],
     "difficulty": 0.38,
     "is_assessment": false,
-    "model_id": "BATCH-028-lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures-005"
+    "model_id": "BATCH-108-lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures-005"
   }
 }

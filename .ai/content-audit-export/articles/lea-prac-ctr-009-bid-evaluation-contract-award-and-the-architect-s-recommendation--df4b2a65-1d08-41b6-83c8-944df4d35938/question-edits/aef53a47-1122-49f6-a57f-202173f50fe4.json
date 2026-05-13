@@ -2,14 +2,14 @@
   "question_id": "aef53a47-1122-49f6-a57f-202173f50fe4",
   "baseline_hash": "sha256:44456dbda7e45990c3b83956d724143ac3dc1f4ddf125f48cd6c169608bb6ef5",
   "action": "replace",
-  "reason": "source-audited-article-batch-029-local-first rewrote this linked question to source-safe local form for lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation.",
-  "approved_by": "codex-local-source-audit-batch-029",
-  "approved_at": "2026-05-11T16:20:00.000+08:00",
+  "reason": "source-audited-article-batch-108-local-first revalidated and refreshed this linked question against current serial Batch 108 article/source evidence for lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation.",
+  "approved_by": "codex-local-source-audit-batch-108",
+  "approved_at": "2026-05-13T13:57:08.000+08:00",
   "source_audit_support": {
     "parent_article_id": "df4b2a65-1d08-41b6-83c8-944df4d35938",
     "parent_article_slug": "lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation",
     "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
+    "support_status": "verified_local_raw_pdf",
     "source_locator": "UAP Document 301 refined markdown lines 486-499; CIAP Document 102 refined markdown lines 171-177; Civil Code Article 1326 refined markdown line 166",
     "checked_markdown_lines": [
       "UAP Document 301 lines 486-499",
@@ -54,7 +54,9 @@
         "locator": "Civil Code Article 1326 refined markdown line 166"
       }
     ],
-    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+    "local_source_safe_action": "revalidated question text, answer key, citation, and learner explanation against current Batch 108 source-audited article evidence",
+    "serial_batch_id": "source-audited-article-batch-108-local-first",
+    "current_candidate_sha256": "sha256:2e5123f9ecba3fcacd2c74c573ff281f00d33bf5678fe699d94862d67bf2712a"
   },
   "proposed": {
     "text": "What is the safest exam move when a bid-award item mentions an unfamiliar procedure?",
@@ -82,17 +84,17 @@
     "value_tolerance": 0,
     "question_type": "mcq",
     "rationale": "Correct because it follows Civil Code Article 1326 line 166; UAP Document 301 lines 486-499. The other options change the document, party, timing, amount, or legal effect stated in the checked local source.",
-    "explanation": "Use Civil Code Article 1326 line 166; UAP Document 301 lines 486-499 for this Batch 029 source-safe replacement.",
+    "explanation": "Incorrect choices treat bid advertisement as automatic award, bypass the instructions or bid documents, or import procedures not stated in the cited source.",
     "code_citation": "Civil Code Article 1326 line 166; UAP Document 301 lines 486-499",
     "bloom_level": "understand",
     "application_context": "professional_practice_source_audit",
     "practice_context": [
       "professional practice",
       "contracts",
-      "source-audited-article-batch-029-local-first"
+      "source-audited batch 108"
     ],
     "difficulty": 0.58,
     "is_assessment": false,
-    "model_id": "BATCH-029-lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation-010"
+    "model_id": "BATCH-108-lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation-010"
   }
 }

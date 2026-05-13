@@ -1,0 +1,197 @@
+{
+  "batch_id": "source-audited-article-batch-108-local-first",
+  "batch_number": "108",
+  "generated_at": "2026-05-13T14:11:03+08:00",
+  "branch": "3dlab-gray-viewport-bg",
+  "start_baseline_commit": "b2d9c144d",
+  "previous_accepted_batch_commit": "b2d9c144d",
+  "current_head_at_generation": "b2d9c144d",
+  "status": "pass_local_first_validated_blocked_at_git_stage_commit_push",
+  "totals": {
+    "articles": 5,
+    "linked_questions": 50,
+    "question_edits": 50,
+    "source_safe_real_world_scenarios": 5,
+    "source_hash_references_checked": 242,
+    "unique_source_artifacts_checked": 8,
+    "scoped_json_files_parsed": 109,
+    "selected_folder_json_files": 106,
+    "artifact_json_files": 3
+  },
+  "articles": [
+    {
+      "article_id": "5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5",
+      "slug": "lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor",
+      "title": "Architect's Authority During Construction Powers Limits",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-c--5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5",
+      "status": "pass_validated_local_first",
+      "sources": 2,
+      "linked_questions": 10,
+      "question_edits": 10,
+      "scenario_status": "eligible-added",
+      "final_depth_findings_preserved": [
+        "Preserve final-depth comparison of UAP Document 301 architect-authority boundaries against current project-specific general-condition forms if newer local forms are acquired."
+      ]
+    },
+    {
+      "article_id": "367ef654-f42a-4eed-861d-b00648f5dba4",
+      "slug": "lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period",
+      "title": "The Contractor's Obligations Scope Compliance Standards",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period--367ef654-f42a-4eed-861d-b00648f5dba4",
+      "status": "pass_validated_local_first",
+      "sources": 2,
+      "linked_questions": 10,
+      "question_edits": 10,
+      "scenario_status": "eligible-added",
+      "final_depth_findings_preserved": [
+        "Preserve final-depth split between contractual guarantee/warranty periods and Civil Code Article 1723 statutory liability; Batch 108 does not merge those periods."
+      ]
+    },
+    {
+      "article_id": "0c598f14-db0d-490d-827d-d3088108b47f",
+      "slug": "lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures",
+      "title": "Private Bidding Competitive Bidding Negotiated",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f",
+      "status": "pass_validated_local_first",
+      "sources": 2,
+      "linked_questions": 10,
+      "question_edits": 10,
+      "scenario_status": "eligible-added",
+      "final_depth_findings_preserved": [
+        "Preserve final-depth public-procurement comparison for RA 9184 terms; Batch 108 keeps private bidding under UAP Document 301/CIAP private-contract sources."
+      ]
+    },
+    {
+      "article_id": "a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
+      "slug": "lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda",
+      "title": "Bid Documents Contents Interpretation and Issuing Addenda",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda--a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
+      "status": "pass_validated_local_first",
+      "sources": 2,
+      "linked_questions": 10,
+      "question_edits": 10,
+      "scenario_status": "eligible-added",
+      "final_depth_findings_preserved": [
+        "Preserve final-depth comparison of document-precedence clauses when project-specific owner-contractor forms are acquired; Batch 108 states only the local UAP/CIAP source rules."
+      ]
+    },
+    {
+      "article_id": "df4b2a65-1d08-41b6-83c8-944df4d35938",
+      "slug": "lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation",
+      "title": "Bid Evaluation Contract Award and the Architect's Recommendation",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation--df4b2a65-1d08-41b6-83c8-944df4d35938",
+      "status": "pass_validated_local_first",
+      "sources": 3,
+      "linked_questions": 10,
+      "question_edits": 10,
+      "scenario_status": "eligible-added",
+      "final_depth_findings_preserved": [
+        "Preserve final-depth owner-award-discretion and architect-recommendation wording against current private-contract proforma sources if obtained."
+      ]
+    }
+  ],
+  "gates": {
+    "compose_strict_5_of_5": {
+      "status": "pass",
+      "passed": 5,
+      "failed": 0
+    },
+    "diff_strict_5_of_5": {
+      "status": "pass",
+      "passed": 5,
+      "failed": 0
+    },
+    "validate_bundles_strict_5_of_5": {
+      "status": "pass",
+      "passed": 5,
+      "failed": 0,
+      "blockers": 0,
+      "warnings": [
+        "component-usage warnings only"
+      ]
+    },
+    "ui_block_edit_validation": {
+      "status": "pass",
+      "articles": 5,
+      "blockers": 0,
+      "warnings": 0
+    },
+    "scoped_json_parse": {
+      "status": "pass",
+      "parsed_files": 109,
+      "selected_folder_json_files": 106,
+      "artifact_json_files": 3,
+      "failures": []
+    },
+    "placeholder_internal_note_source_gap_scan": {
+      "status": "pass",
+      "matches": [],
+      "scan_scope": "normalized.md, candidate.md, question-edits JSON, and source-audit-evidence.json for selected Batch 108 article folders",
+      "note": "compose-report.json and diff-report.json contain schema fields with zero values; those are not content marker hits."
+    },
+    "source_hash_checks": {
+      "status": "pass",
+      "references_checked": 242,
+      "unique_source_artifacts_checked": 8,
+      "failures": []
+    },
+    "linked_question_question_edit_count": {
+      "status": "pass",
+      "linked_questions": 50,
+      "question_edits": 50
+    },
+    "stale_compose_error_scan": {
+      "status": "pass",
+      "remaining_selected_compose_errors": []
+    },
+    "prior_batch_duplicate_selection_scan": {
+      "status": "pass",
+      "checked_batches": "087-107",
+      "duplicate_hits": []
+    },
+    "targeted_content_audit_tests": {
+      "status": "pass",
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "pass": 34,
+      "fail": 0,
+      "expect_calls": 328
+    },
+    "scoped_git_diff_check": {
+      "status": "pass",
+      "command": "git diff --check -- <Batch 108 scoped paths>"
+    },
+    "cached_git_diff_check": {
+      "status": "blocked_git_index_write",
+      "attempted_command": "git add -- <Batch 108 scoped paths>",
+      "error": "fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted",
+      "consequence": "No staged diff exists, so git diff --cached --check is not meaningful and commit/push cannot be performed in this sandbox."
+    }
+  },
+  "forbidden_actions": {
+    "supabase_push": "not_performed",
+    "deploy": "not_performed",
+    "production_db_mutation": "not_performed",
+    "merge_to_main": "not_performed"
+  },
+  "source_decisions": [
+    "CTR-005 keeps architect authority inside UAP Document 301 decision, stoppage, project-representative, written-authority, and ethics boundaries.",
+    "CTR-006 separates contractor execution/compliance duties, one-year contractual guarantee language, and Civil Code Article 1723 statutory liability.",
+    "CTR-007 keeps private bidding methods source-safe and avoids importing public-procurement lowest-calculated-bid language.",
+    "CTR-008 separates UAP Document 301 document interpretation/addenda rules from CIAP Document 102 private-contract hierarchy rules.",
+    "CTR-009 states architect recommendation as advice to the Owner and keeps award power with the Owner under the private contract source boundary."
+  ],
+  "final_depth_findings_preserved": [
+    "Preserve final-depth comparison of UAP Document 301 architect-authority boundaries against current project-specific general-condition forms if newer local forms are acquired.",
+    "Preserve final-depth split between contractual guarantee/warranty periods and Civil Code Article 1723 statutory liability; Batch 108 does not merge those periods.",
+    "Preserve final-depth public-procurement comparison for RA 9184 terms; Batch 108 keeps private bidding under UAP Document 301/CIAP private-contract sources.",
+    "Preserve final-depth comparison of document-precedence clauses when project-specific owner-contractor forms are acquired; Batch 108 states only the local UAP/CIAP source rules.",
+    "Preserve final-depth owner-award-discretion and architect-recommendation wording against current private-contract proforma sources if obtained."
+  ],
+  "git_commit_push_state": {
+    "status": "blocked_git_index_write",
+    "expected_commit_message": "chore(content): accept source-audited batch 108",
+    "commit_created": false,
+    "push_performed": false,
+    "blocker": "fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted"
+  }
+}

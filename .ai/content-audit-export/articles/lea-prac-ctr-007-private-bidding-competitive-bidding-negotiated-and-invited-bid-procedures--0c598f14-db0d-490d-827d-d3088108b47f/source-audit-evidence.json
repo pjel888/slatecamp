@@ -1,313 +1,199 @@
 {
-  "batch_id": "source-audited-article-batch-028-local-first",
-  "audit_date": "2026-05-11",
-  "audited_at": "2026-05-11T15:30:00.000+08:00",
-  "article_id": "0c598f14-db0d-490d-827d-d3088108b47f",
-  "slug": "lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures",
-  "title": "Private Bidding Competitive Bidding Negotiated",
-  "status": "local_pass_ready_for_final_publishing_review",
-  "article_folder": ".ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f",
-  "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f",
-  "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f/question-edits",
-  "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f/question-edits",
-  "linked_questions": 10,
-  "question_edits_created": 10,
-  "source_safe_rewrite_question_edits": 10,
-  "classification": {
-    "legal_or_code_content": true,
-    "requires_raw_pdf_audit": true,
-    "local_first_only": true
-  },
-  "raw_pdf_gate": {
-    "status": "PASS",
-    "all_legal_code_claims_have_pdf_locator": true,
-    "all_section_numbers_verified_against_raw_pdf": true,
-    "no_derivative_text_used_as_source_of_truth": true,
-    "blockers": []
-  },
-  "overall": {
-    "source_audit_status": "PASS",
-    "safe_for_batch_apply": true,
-    "safe_for_supabase_upload": true,
-    "local_first_only": true,
-    "supabase_push_attempted": false,
-    "deploy_attempted": false,
-    "commit_attempted": false,
-    "blockers": [],
-    "warnings": [
-      "Local-first content batch only; final Supabase publishing requires separate review/apply phase."
-    ]
-  },
-  "source_audit": {
-    "checked_sources": [
-      {
-        "source_id": "uap-document-301-general-conditions-local",
-        "label": "UAP Document 301 - General Conditions for construction contract documents",
-        "authority": "United Architects of the Philippines / PRC Board approved general conditions source",
-        "source_type": "professional_practice_contract_pdf",
-        "source_locator": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "refined_markdown_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
-        "checked_markdown_lines": [
-          "UAP Document 301 lines 472-545",
-          "UAP Document 301 lines 923-998",
-          "UAP Document 301 lines 1019-1051",
-          "UAP Document 301 lines 1062-1090"
-        ],
-        "use": "primary local source for source-safe article and question rewrite claims",
-        "local_source_checked": true
-      },
-      {
-        "source_id": "ciap-document-102-private-construction-contract-local",
-        "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
-        "authority": "Construction Industry Authority of the Philippines / DTI private construction contract source",
-        "source_type": "construction_contract_pdf",
-        "source_locator": "CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-        "refined_markdown_sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
-        "checked_markdown_lines": [
-          "CIAP Document 102 lines 169-258",
-          "CIAP Document 102 lines 712-761",
-          "CIAP Document 102 lines 807-820"
-        ],
-        "use": "primary local source for source-safe article and question rewrite claims",
-        "local_source_checked": true
-      }
-    ],
-    "source_locator": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090; CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820",
-    "checked_markdown_lines": [
-      "UAP Document 301 lines 472-545",
-      "UAP Document 301 lines 923-998",
-      "UAP Document 301 lines 1019-1051",
-      "UAP Document 301 lines 1062-1090",
-      "CIAP Document 102 lines 169-258",
-      "CIAP Document 102 lines 712-761",
-      "CIAP Document 102 lines 807-820"
-    ]
-  },
-  "claims": [
-    {
-      "claim_id": "batch-028-lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures-question-001",
-      "claim_text": "Question 0b587929-9468-40fe-aa21-4bc6dd18d353 / model BATCH-028-lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures-001 rewritten to source-safe local form.",
-      "question_id": "0b587929-9468-40fe-aa21-4bc6dd18d353",
-      "model_id": "BATCH-028-lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures-001",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-document-301-general-conditions-local",
-        "ciap-document-102-private-construction-contract-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "source_locator": "UAP Document 301 lines 490-499",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-028-lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures-question-002",
-      "claim_text": "Question 133a155e-942f-4423-a618-db04b924a780 / model BATCH-028-lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures-002 rewritten to source-safe local form.",
-      "question_id": "133a155e-942f-4423-a618-db04b924a780",
-      "model_id": "BATCH-028-lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures-002",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-document-301-general-conditions-local",
-        "ciap-document-102-private-construction-contract-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "source_locator": "CIAP Document 102 lines 171-176",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-028-lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures-question-003",
-      "claim_text": "Question 430cb11f-f1ae-4956-a0f8-918acf8480b2 / model BATCH-028-lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures-003 rewritten to source-safe local form.",
-      "question_id": "430cb11f-f1ae-4956-a0f8-918acf8480b2",
-      "model_id": "BATCH-028-lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures-003",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-document-301-general-conditions-local",
-        "ciap-document-102-private-construction-contract-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "source_locator": "CIAP Document 102 lines 174-177",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-028-lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures-question-004",
-      "claim_text": "Question 56de8bc9-526c-4609-a89d-0689bcaf88ce / model BATCH-028-lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures-004 rewritten to source-safe local form.",
-      "question_id": "56de8bc9-526c-4609-a89d-0689bcaf88ce",
-      "model_id": "BATCH-028-lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures-004",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-document-301-general-conditions-local",
-        "ciap-document-102-private-construction-contract-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "source_locator": "UAP Document 301 lines 489-491",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-028-lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures-question-005",
-      "claim_text": "Question 96a7e7da-5a9a-4163-9511-bf6a29741bc2 / model BATCH-028-lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures-005 rewritten to source-safe local form.",
-      "question_id": "96a7e7da-5a9a-4163-9511-bf6a29741bc2",
-      "model_id": "BATCH-028-lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures-005",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-document-301-general-conditions-local",
-        "ciap-document-102-private-construction-contract-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "source_locator": "CIAP Document 102 lines 174-176",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-028-lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures-question-006",
-      "claim_text": "Question b916ef5c-9166-4460-a5dc-4a5f2b85e5d8 / model BATCH-028-lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures-006 rewritten to source-safe local form.",
-      "question_id": "b916ef5c-9166-4460-a5dc-4a5f2b85e5d8",
-      "model_id": "BATCH-028-lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures-006",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-document-301-general-conditions-local",
-        "ciap-document-102-private-construction-contract-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "source_locator": "UAP Document 301 lines 498-505; CIAP Document 102 lines 198-204",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-028-lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures-question-007",
-      "claim_text": "Question 808401a2-7e7e-42fe-b7df-b0c122d2674d / model BATCH-028-lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures-007 rewritten to source-safe local form.",
-      "question_id": "808401a2-7e7e-42fe-b7df-b0c122d2674d",
-      "model_id": "BATCH-028-lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures-007",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-document-301-general-conditions-local",
-        "ciap-document-102-private-construction-contract-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "source_locator": "CIAP Document 102 lines 176-178",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-028-lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures-question-008",
-      "claim_text": "Question 915cf8f3-6124-46af-8c95-54565b055e86 / model BATCH-028-lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures-008 rewritten to source-safe local form.",
-      "question_id": "915cf8f3-6124-46af-8c95-54565b055e86",
-      "model_id": "BATCH-028-lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures-008",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-document-301-general-conditions-local",
-        "ciap-document-102-private-construction-contract-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "source_locator": "UAP Document 301 lines 490-505; CIAP Document 102 lines 171-204",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-028-lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures-question-009",
-      "claim_text": "Question 0469ce6d-9057-4c1c-8635-bc4e878aa9c1 / model BATCH-028-lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures-009 rewritten to source-safe local form.",
-      "question_id": "0469ce6d-9057-4c1c-8635-bc4e878aa9c1",
-      "model_id": "BATCH-028-lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures-009",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-document-301-general-conditions-local",
-        "ciap-document-102-private-construction-contract-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "source_locator": "UAP Document 301 lines 490-505; CIAP Document 102 lines 171-204",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-028-lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures-question-010",
-      "claim_text": "Question 986d8bc6-065e-465f-b66e-96af92788a9a / model BATCH-028-lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures-010 rewritten to source-safe local form.",
-      "question_id": "986d8bc6-065e-465f-b66e-96af92788a9a",
-      "model_id": "BATCH-028-lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures-010",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-document-301-general-conditions-local",
-        "ciap-document-102-private-construction-contract-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "source_locator": "UAP Document 301 lines 489-491; CIAP Document 102 lines 174-176",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    }
-  ],
-  "unverified_or_rejected_claims": [],
-  "sme_review": {
-    "required": false,
-    "status": "PASS"
-  },
-  "removed_or_rewritten_claims": [
-    "Removed unresolved SLATECAMP_UI_BLOCK placeholder sections because ui-blocks.json had zero preserved blocks for these bundles.",
-    "Removed unsupported RA 9184/private-award, AIA, cure-period, lien-remedy, and Civil Code liability claims unless supported by the checked local source set.",
-    "Rewrote linked questions to source-safe prompts and answer keys anchored to exact local source locators."
-  ],
+  "artifact_type": "source_audit_evidence",
+  "schema_version": "source-audited-local-first-v2",
+  "batch_id": "source-audited-article-batch-108-local-first",
+  "audit_mode": "local_raw_pdf_primary_with_refined_markdown_line_locators",
+  "audit_date": "2026-05-13T13:57:08.000+08:00",
+  "audited_at": "2026-05-13T13:57:08.000+08:00",
   "target": {
     "article_id": "0c598f14-db0d-490d-827d-d3088108b47f",
     "slug": "lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures",
-    "normalized_sha256": "sha256:831099f2e83971870d74c00e69ecdfeea4e7237957ee1a73d2fe6cd76a558003",
-    "candidate_sha256": "sha256:831099f2e83971870d74c00e69ecdfeea4e7237957ee1a73d2fe6cd76a558003",
-    "sources_sha256": "sha256:82abad25c48b8090bed09604639a28ae9a54c4a4599f72f1b934431cda8bec60",
-    "diff_report_sha256": "sha256:d6ae6455bad1aafbb8877510d0840386204d8f7a802a401239a55db816e3bd8d",
-    "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f/question-edits",
-    "question_edits_count": 10
+    "title": "Private Bidding Competitive Bidding Negotiated",
+    "article_folder": ".ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f/candidate.md",
+    "candidate_sha256": "sha256:a72418c5c1f56794395ef3b1876a83b3d7e1e8bf1ff631248676da56d79b0470",
+    "normalized_sha256": "sha256:a72418c5c1f56794395ef3b1876a83b3d7e1e8bf1ff631248676da56d79b0470",
+    "linked_questions_sha256": "sha256:3a931d6b0d1609b787a63a5a345c62595fd66ebf97b293822485b2643e7b305a",
+    "sources_sha256": "sha256:a2a6fcd7c1deb337b0471d9d4f666eec5b701c881c5fbecfe70c46326fccc795"
   },
-  "validation": {
-    "compose_blockers": [],
-    "diff_safe_to_push": true,
-    "diff_blockers": [],
-    "local_first_only": true,
-    "supabase_push_attempted": false,
-    "deploy_attempted": false,
-    "commit_attempted": false
+  "classification": {
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "content_domain": "Philippine architecture professional practice",
+    "primary_source_root": "vitruvius-connection/001_Raw-Source-Layer"
+  },
+  "raw_pdf_gate": {
+    "status": "pass",
+    "primary_source_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "readable_locator_layer": "vitruvius-connection/002_Raw-Conversion-Layer",
+    "source_hashes_checked": 2,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true
+  },
+  "checked_sources": [
+    {
+      "source_id": "uap-document-301-general-conditions-local",
+      "label": "UAP Document 301 - General Conditions for construction contract documents",
+      "source_locator": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090",
+      "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3"
+    },
+    {
+      "source_id": "ciap-document-102-private-construction-contract-local",
+      "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
+      "source_locator": "CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820",
+      "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15"
+    }
+  ],
+  "raw_sources": [
+    {
+      "authority": "United Architects of the Philippines / PRC Board approved general conditions source",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+      "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+      "refined_markdown_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+      "source_locator": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090",
+      "checked_markdown_lines": [
+        "UAP Document 301 lines 472-545",
+        "UAP Document 301 lines 923-998",
+        "UAP Document 301 lines 1019-1051",
+        "UAP Document 301 lines 1062-1090"
+      ],
+      "local_source_checked": true
+    },
+    {
+      "authority": "Construction Industry Authority of the Philippines / DTI private construction contract source",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+      "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+      "refined_markdown_sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
+      "source_locator": "CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820",
+      "checked_markdown_lines": [
+        "CIAP Document 102 lines 169-258",
+        "CIAP Document 102 lines 712-761",
+        "CIAP Document 102 lines 807-820"
+      ],
+      "local_source_checked": true
+    }
+  ],
+  "historical_reaudit_overlap": {
+    "status": "recorded_not_current_accepted_duplicate",
+    "prior_local_first_batch_id": "source-audited-article-batch-028-local-first",
+    "current_serial_accepted_batches_checked": "087-107",
+    "duplicate_in_current_serial_accepted_batches": false
+  },
+  "scenario": {
+    "status": "eligible-added",
+    "claim_text": "Batch 108 Real World Scenario checks private invitation, bid documents, instructions to bidders, bid bulletins, and bid/proposal bond boundaries against UAP Document 301 and CIAP Document 102.",
+    "support": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090; CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820"
+  },
+  "source_decisions": [
+    "CTR-007 now adds a private-owner invited-bidding scenario and keeps competitive/negotiated/invited language within local private bid-document definitions rather than unsupported public-procurement rules."
+  ],
+  "claims": [
+    {
+      "claim_id": "lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures:article:batch-108",
+      "claim_text": "Private Bidding Competitive Bidding Negotiated was refreshed in Batch 108 with source-safe professional-practice boundaries and local source anchors.",
+      "support": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090; CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures:scenario:batch-108",
+      "claim_text": "Batch 108 Real World Scenario checks private invitation, bid documents, instructions to bidders, bid bulletins, and bid/proposal bond boundaries against UAP Document 301 and CIAP Document 102.",
+      "support": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090; CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures:question:001:batch-108",
+      "question_id": "0469ce6d-9057-4c1c-8635-bc4e878aa9c1",
+      "claim_text": "Why is a claim that all private projects must be awarded to the lowest bidder unsafe in this batch?",
+      "support": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090; CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures:question:002:batch-108",
+      "question_id": "0b587929-9468-40fe-aa21-4bc6dd18d353",
+      "claim_text": "Under UAP Document 301, what is an Advertisement or Invitation to Bid?",
+      "support": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090; CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures:question:003:batch-108",
+      "question_id": "133a155e-942f-4423-a618-db04b924a780",
+      "claim_text": "Under CIAP Document 102, what is a Bid?",
+      "support": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090; CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures:question:004:batch-108",
+      "question_id": "430cb11f-f1ae-4956-a0f8-918acf8480b2",
+      "claim_text": "Under CIAP Document 102, what are Bid Documents?",
+      "support": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090; CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures:question:005:batch-108",
+      "question_id": "56de8bc9-526c-4609-a89d-0689bcaf88ce",
+      "claim_text": "Under UAP Document 301, what is a Proposal Bond?",
+      "support": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090; CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures:question:006:batch-108",
+      "question_id": "808401a2-7e7e-42fe-b7df-b0c122d2674d",
+      "claim_text": "What is a Bid Bulletin under CIAP Document 102?",
+      "support": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090; CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures:question:007:batch-108",
+      "question_id": "915cf8f3-6124-46af-8c95-54565b055e86",
+      "claim_text": "Which statement is safe for private bidding based on UAP Document 301 and CIAP Document 102 alone?",
+      "support": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090; CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures:question:008:batch-108",
+      "question_id": "96a7e7da-5a9a-4163-9511-bf6a29741bc2",
+      "claim_text": "Under CIAP Document 102, what is a Bid Bond?",
+      "support": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090; CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures:question:009:batch-108",
+      "question_id": "986d8bc6-065e-465f-b66e-96af92788a9a",
+      "claim_text": "Which source-backed item helps ensure the successful bidder enters the construction contract?",
+      "support": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090; CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures:question:010:batch-108",
+      "question_id": "b916ef5c-9166-4460-a5dc-4a5f2b85e5d8",
+      "claim_text": "What do Instructions to Bidders control in the checked sources?",
+      "support": "UAP Document 301 refined markdown lines 472-545, 923-998, 1019-1051, and 1062-1090; CIAP Document 102 refined markdown lines 169-258, 712-761, and 807-820",
+      "status": "verified_local_raw_pdf"
+    }
+  ],
+  "question_edit_files": [
+    ".ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f/question-edits/0469ce6d-9057-4c1c-8635-bc4e878aa9c1.json",
+    ".ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f/question-edits/0b587929-9468-40fe-aa21-4bc6dd18d353.json",
+    ".ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f/question-edits/133a155e-942f-4423-a618-db04b924a780.json",
+    ".ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f/question-edits/430cb11f-f1ae-4956-a0f8-918acf8480b2.json",
+    ".ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f/question-edits/56de8bc9-526c-4609-a89d-0689bcaf88ce.json",
+    ".ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f/question-edits/808401a2-7e7e-42fe-b7df-b0c122d2674d.json",
+    ".ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f/question-edits/915cf8f3-6124-46af-8c95-54565b055e86.json",
+    ".ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f/question-edits/96a7e7da-5a9a-4163-9511-bf6a29741bc2.json",
+    ".ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f/question-edits/986d8bc6-065e-465f-b66e-96af92788a9a.json",
+    ".ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f/question-edits/b916ef5c-9166-4460-a5dc-4a5f2b85e5d8.json"
+  ],
+  "source_hash_check_inputs": {
+    "source_file_paths": [
+      "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+      "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+      "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+      "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md"
+    ],
+    "question_edit_checked_source_references": 40
   }
 }

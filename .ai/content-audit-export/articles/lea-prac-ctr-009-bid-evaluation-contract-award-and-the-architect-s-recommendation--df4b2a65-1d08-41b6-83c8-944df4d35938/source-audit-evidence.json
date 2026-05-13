@@ -1,301 +1,214 @@
 {
-  "batch_id": "source-audited-article-batch-029-local-first",
-  "audit_date": "2026-05-11",
-  "audited_at": "2026-05-11T16:20:00.000+08:00",
-  "article_id": "df4b2a65-1d08-41b6-83c8-944df4d35938",
-  "slug": "lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation",
-  "title": "Bid Evaluation Contract Award and the Architect's Recommendation",
-  "status": "local_pass_ready_for_final_publishing_review",
-  "article_folder": ".ai/content-audit-export/articles/lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation--df4b2a65-1d08-41b6-83c8-944df4d35938",
-  "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation--df4b2a65-1d08-41b6-83c8-944df4d35938",
-  "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation--df4b2a65-1d08-41b6-83c8-944df4d35938/question-edits",
-  "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation--df4b2a65-1d08-41b6-83c8-944df4d35938/question-edits",
-  "linked_questions": 10,
-  "question_edits_created": 10,
-  "source_safe_rewrite_question_edits": 10,
+  "artifact_type": "source_audit_evidence",
+  "schema_version": "source-audited-local-first-v2",
+  "batch_id": "source-audited-article-batch-108-local-first",
+  "audit_mode": "local_raw_pdf_primary_with_refined_markdown_line_locators",
+  "audit_date": "2026-05-13T13:57:08.000+08:00",
+  "audited_at": "2026-05-13T13:57:08.000+08:00",
+  "target": {
+    "article_id": "df4b2a65-1d08-41b6-83c8-944df4d35938",
+    "slug": "lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation",
+    "title": "Bid Evaluation Contract Award and the Architect's Recommendation",
+    "article_folder": ".ai/content-audit-export/articles/lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation--df4b2a65-1d08-41b6-83c8-944df4d35938",
+    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation--df4b2a65-1d08-41b6-83c8-944df4d35938",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation--df4b2a65-1d08-41b6-83c8-944df4d35938/candidate.md",
+    "candidate_sha256": "sha256:2e5123f9ecba3fcacd2c74c573ff281f00d33bf5678fe699d94862d67bf2712a",
+    "normalized_sha256": "sha256:2e5123f9ecba3fcacd2c74c573ff281f00d33bf5678fe699d94862d67bf2712a",
+    "linked_questions_sha256": "sha256:31e431812b86baf51c1320013b0a57b85684e3cbf9af16f8bcaa7258da748ba1",
+    "sources_sha256": "sha256:d7216d448308912aa1db265b0f3c78253959f752c0c16afd51823b95f564ed21"
+  },
   "classification": {
-    "legal_or_code_content": true,
+    "contains_legal_or_code_claims": true,
     "requires_raw_pdf_audit": true,
-    "local_first_only": true
+    "content_domain": "Philippine architecture professional practice",
+    "primary_source_root": "vitruvius-connection/001_Raw-Source-Layer"
   },
   "raw_pdf_gate": {
-    "status": "PASS",
+    "status": "pass",
+    "primary_source_root": "vitruvius-connection/001_Raw-Source-Layer",
+    "readable_locator_layer": "vitruvius-connection/002_Raw-Conversion-Layer",
+    "source_hashes_checked": 3,
     "all_legal_code_claims_have_pdf_locator": true,
     "all_section_numbers_verified_against_raw_pdf": true,
-    "no_derivative_text_used_as_source_of_truth": true,
-    "blockers": []
+    "no_derivative_text_used_as_source_of_truth": true
   },
-  "overall": {
-    "source_audit_status": "PASS",
-    "safe_for_batch_apply": true,
-    "safe_for_supabase_upload": true,
-    "local_first_only": true,
-    "supabase_push_attempted": false,
-    "deploy_attempted": false,
-    "commit_attempted": false,
-    "blockers": [],
-    "warnings": [
-      "Local-first content batch only; final Supabase publishing requires separate review/apply phase."
-    ]
+  "checked_sources": [
+    {
+      "source_id": "uap-document-301-general-conditions-local",
+      "label": "UAP Document 301 - General Conditions",
+      "source_locator": "UAP Document 301 refined markdown lines 486-499",
+      "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3"
+    },
+    {
+      "source_id": "ciap-document-102-private-construction-contract-local",
+      "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
+      "source_locator": "CIAP Document 102 refined markdown lines 171-177",
+      "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15"
+    },
+    {
+      "source_id": "ra-386-civil-code-local",
+      "label": "RA 386 - Civil Code of the Philippines",
+      "source_locator": "Civil Code Article 1326 refined markdown line 166",
+      "raw_pdf_sha256": "sha256:c3551f7d92abed808a64071fdf08832b1f27dc87375775416f52cbc25b4bcba5"
+    }
+  ],
+  "raw_sources": [
+    {
+      "authority": "United Architects of the Philippines / PRC Board approved general conditions source",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+      "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+      "refined_markdown_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
+      "source_locator": "UAP Document 301 refined markdown lines 486-499",
+      "checked_markdown_lines": [
+        "UAP Document 301 lines 486-499"
+      ],
+      "local_source_checked": true
+    },
+    {
+      "authority": "Construction Industry Authority of the Philippines / DTI private construction contract source",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+      "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+      "refined_markdown_sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
+      "source_locator": "CIAP Document 102 refined markdown lines 171-177",
+      "checked_markdown_lines": [
+        "CIAP Document 102 lines 171-177"
+      ],
+      "local_source_checked": true
+    },
+    {
+      "authority": "Civil Code of the Philippines local legal source",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code.pdf",
+      "raw_pdf_sha256": "sha256:c3551f7d92abed808a64071fdf08832b1f27dc87375775416f52cbc25b4bcba5",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-386/RA-386 Civil Code.md",
+      "refined_markdown_sha256": "sha256:8215f8acdd208b9b2f4a981bdf6c7227acbfd26186dac703133b187fc6d96adf",
+      "source_locator": "Civil Code Article 1326 refined markdown line 166",
+      "checked_markdown_lines": [
+        "RA 386 Civil Code line 166"
+      ],
+      "local_source_checked": true
+    }
+  ],
+  "historical_reaudit_overlap": {
+    "status": "recorded_not_current_accepted_duplicate",
+    "prior_local_first_batch_id": "source-audited-article-batch-029-local-first",
+    "current_serial_accepted_batches_checked": "087-107",
+    "duplicate_in_current_serial_accepted_batches": false
   },
-  "source_audit": {
-    "checked_sources": [
-      {
-        "source_id": "uap-document-301-general-conditions-local",
-        "label": "UAP Document 301 - General Conditions",
-        "authority": "United Architects of the Philippines / PRC Board approved general conditions source",
-        "source_type": "professional_practice_contract_pdf",
-        "source_locator": "UAP Document 301 refined markdown lines 486-499",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "refined_markdown_sha256": "sha256:3aa99e2c95956249df770534717b08ae084e0ccc108d1b8eeae8575a219caa40",
-        "checked_markdown_lines": [
-          "UAP Document 301 lines 486-499"
-        ],
-        "use": "primary local source for source-safe article and question rewrite claims",
-        "local_source_checked": true
-      },
-      {
-        "source_id": "ciap-document-102-private-construction-contract-local",
-        "label": "CIAP Document 102 - Uniform General Conditions of Contract for Private Construction",
-        "authority": "Construction Industry Authority of the Philippines / DTI private construction contract source",
-        "source_type": "construction_contract_pdf",
-        "source_locator": "CIAP Document 102 refined markdown lines 171-177",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
-        "raw_pdf_sha256": "sha256:63943bc59465b154329631d2b286706ba45e85c63b31433d1c285d9b7caecd15",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
-        "refined_markdown_sha256": "sha256:013cb47a78817451d5e6518311a0ecb08efac58e07d8b24e24088426a0ec3207",
-        "checked_markdown_lines": [
-          "CIAP Document 102 lines 171-177"
-        ],
-        "use": "primary local source for source-safe article and question rewrite claims",
-        "local_source_checked": true
-      },
-      {
-        "source_id": "ra-386-civil-code-local",
-        "label": "RA 386 - Civil Code of the Philippines",
-        "authority": "Civil Code of the Philippines local legal source",
-        "source_type": "law_pdf",
-        "source_locator": "Civil Code Article 1326 refined markdown line 166",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code.pdf",
-        "raw_pdf_sha256": "sha256:c3551f7d92abed808a64071fdf08832b1f27dc87375775416f52cbc25b4bcba5",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-386/RA-386 Civil Code.md",
-        "refined_markdown_sha256": "sha256:8215f8acdd208b9b2f4a981bdf6c7227acbfd26186dac703133b187fc6d96adf",
-        "checked_markdown_lines": [
-          "RA 386 Civil Code line 166"
-        ],
-        "use": "primary local source for source-safe article and question rewrite claims",
-        "local_source_checked": true
-      }
-    ],
-    "source_locator": "UAP Document 301 refined markdown lines 486-499; CIAP Document 102 refined markdown lines 171-177; Civil Code Article 1326 refined markdown line 166",
-    "checked_markdown_lines": [
-      "UAP Document 301 lines 486-499",
-      "CIAP Document 102 lines 171-177",
-      "RA 386 Civil Code line 166"
-    ]
+  "scenario": {
+    "status": "eligible-added",
+    "claim_text": "Batch 108 Real World Scenario checks no-automatic-award reasoning against Civil Code Article 1326 and local private construction bid definitions.",
+    "support": "UAP Document 301 refined markdown lines 486-499; CIAP Document 102 refined markdown lines 171-177; Civil Code Article 1326 refined markdown line 166"
   },
+  "source_decisions": [
+    "CTR-009 now adds a bid-opening and lowest-price scenario anchored to Civil Code Article 1326 and the UAP/CIAP bid-document definitions."
+  ],
   "claims": [
     {
-      "claim_id": "batch-029-lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation-question-001",
-      "claim_text": "Question 174bfeeb-cf2f-478f-821a-856a565ac2ae / model BATCH-029-lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation-001 rewritten to source-safe local form.",
-      "question_id": "174bfeeb-cf2f-478f-821a-856a565ac2ae",
-      "model_id": "BATCH-029-lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation-001",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-document-301-general-conditions-local",
-        "ciap-document-102-private-construction-contract-local",
-        "ra-386-civil-code-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "source_locator": "Civil Code Article 1326 line 166",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
+      "claim_id": "lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation:article:batch-108",
+      "claim_text": "Bid Evaluation Contract Award and the Architect's Recommendation was refreshed in Batch 108 with source-safe professional-practice boundaries and local source anchors.",
+      "support": "UAP Document 301 refined markdown lines 486-499; CIAP Document 102 refined markdown lines 171-177; Civil Code Article 1326 refined markdown line 166",
+      "status": "verified_local_raw_pdf"
     },
     {
-      "claim_id": "batch-029-lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation-question-002",
-      "claim_text": "Question 443fe14f-3642-4f1e-a5a8-82ae2f807495 / model BATCH-029-lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation-002 rewritten to source-safe local form.",
-      "question_id": "443fe14f-3642-4f1e-a5a8-82ae2f807495",
-      "model_id": "BATCH-029-lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation-002",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-document-301-general-conditions-local",
-        "ciap-document-102-private-construction-contract-local",
-        "ra-386-civil-code-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "source_locator": "CIAP Document 102 lines 171-177",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
+      "claim_id": "lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation:scenario:batch-108",
+      "claim_text": "Batch 108 Real World Scenario checks no-automatic-award reasoning against Civil Code Article 1326 and local private construction bid definitions.",
+      "support": "UAP Document 301 refined markdown lines 486-499; CIAP Document 102 refined markdown lines 171-177; Civil Code Article 1326 refined markdown line 166",
+      "status": "verified_local_raw_pdf"
     },
     {
-      "claim_id": "batch-029-lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation-question-003",
-      "claim_text": "Question cf781362-9e6f-4e39-acb8-1647796c7631 / model BATCH-029-lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation-003 rewritten to source-safe local form.",
-      "question_id": "cf781362-9e6f-4e39-acb8-1647796c7631",
-      "model_id": "BATCH-029-lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation-003",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-document-301-general-conditions-local",
-        "ciap-document-102-private-construction-contract-local",
-        "ra-386-civil-code-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "source_locator": "UAP Document 301 lines 486-499; CIAP Document 102 lines 171-177",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-029-lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation-question-004",
-      "claim_text": "Question d2435813-0af3-4fd6-950f-6103d6e980a6 / model BATCH-029-lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation-004 rewritten to source-safe local form.",
-      "question_id": "d2435813-0af3-4fd6-950f-6103d6e980a6",
-      "model_id": "BATCH-029-lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation-004",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-document-301-general-conditions-local",
-        "ciap-document-102-private-construction-contract-local",
-        "ra-386-civil-code-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "source_locator": "UAP Document 301 lines 486-499",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-029-lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation-question-005",
-      "claim_text": "Question 9124c3a1-056f-41c9-b9ba-6a437ce67af1 / model BATCH-029-lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation-005 rewritten to source-safe local form.",
-      "question_id": "9124c3a1-056f-41c9-b9ba-6a437ce67af1",
-      "model_id": "BATCH-029-lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation-005",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-document-301-general-conditions-local",
-        "ciap-document-102-private-construction-contract-local",
-        "ra-386-civil-code-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "source_locator": "UAP Document 301 lines 486-499",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-029-lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation-question-006",
-      "claim_text": "Question ff9641df-b72b-429e-bde7-e91122852770 / model BATCH-029-lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation-006 rewritten to source-safe local form.",
-      "question_id": "ff9641df-b72b-429e-bde7-e91122852770",
-      "model_id": "BATCH-029-lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation-006",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-document-301-general-conditions-local",
-        "ciap-document-102-private-construction-contract-local",
-        "ra-386-civil-code-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "source_locator": "UAP Document 301 lines 486-499; CIAP Document 102 lines 171-177",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-029-lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation-question-007",
-      "claim_text": "Question 1689a555-7d79-4bb4-8179-6db9174c0a3a / model BATCH-029-lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation-007 rewritten to source-safe local form.",
-      "question_id": "1689a555-7d79-4bb4-8179-6db9174c0a3a",
-      "model_id": "BATCH-029-lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation-007",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-document-301-general-conditions-local",
-        "ciap-document-102-private-construction-contract-local",
-        "ra-386-civil-code-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "source_locator": "Civil Code Article 1326 line 166",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-029-lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation-question-008",
-      "claim_text": "Question 3c59790f-1023-4ec7-baf0-c3d766f4bed1 / model BATCH-029-lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation-008 rewritten to source-safe local form.",
-      "question_id": "3c59790f-1023-4ec7-baf0-c3d766f4bed1",
-      "model_id": "BATCH-029-lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation-008",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-document-301-general-conditions-local",
-        "ciap-document-102-private-construction-contract-local",
-        "ra-386-civil-code-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "source_locator": "UAP Document 301 lines 486-499; CIAP Document 102 lines 171-177; Civil Code Article 1326 line 166",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-029-lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation-question-009",
-      "claim_text": "Question 0457399f-ff59-4441-a4f5-b6f7195eb1c7 / model BATCH-029-lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation-009 rewritten to source-safe local form.",
+      "claim_id": "lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation:question:001:batch-108",
       "question_id": "0457399f-ff59-4441-a4f5-b6f7195eb1c7",
-      "model_id": "BATCH-029-lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation-009",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-document-301-general-conditions-local",
-        "ciap-document-102-private-construction-contract-local",
-        "ra-386-civil-code-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "source_locator": "CIAP Document 102 lines 171-177",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
+      "claim_text": "Which source defines bid documents as including the invitation to bid and the contract to be signed by the winning bidder?",
+      "support": "UAP Document 301 refined markdown lines 486-499; CIAP Document 102 refined markdown lines 171-177; Civil Code Article 1326 refined markdown line 166",
+      "status": "verified_local_raw_pdf"
     },
     {
-      "claim_id": "batch-029-lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation-question-010",
-      "claim_text": "Question aef53a47-1122-49f6-a57f-202173f50fe4 / model BATCH-029-lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation-010 rewritten to source-safe local form.",
+      "claim_id": "lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation:question:002:batch-108",
+      "question_id": "1689a555-7d79-4bb4-8179-6db9174c0a3a",
+      "claim_text": "Why is lowest price alone not a source-safe automatic award rule here?",
+      "support": "UAP Document 301 refined markdown lines 486-499; CIAP Document 102 refined markdown lines 171-177; Civil Code Article 1326 refined markdown line 166",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation:question:003:batch-108",
+      "question_id": "174bfeeb-cf2f-478f-821a-856a565ac2ae",
+      "claim_text": "Under Civil Code Article 1326, how should an advertisement for bidders normally be treated?",
+      "support": "UAP Document 301 refined markdown lines 486-499; CIAP Document 102 refined markdown lines 171-177; Civil Code Article 1326 refined markdown line 166",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation:question:004:batch-108",
+      "question_id": "3c59790f-1023-4ec7-baf0-c3d766f4bed1",
+      "claim_text": "Which item belongs in the source-safe bid-award framework for this article?",
+      "support": "UAP Document 301 refined markdown lines 486-499; CIAP Document 102 refined markdown lines 171-177; Civil Code Article 1326 refined markdown line 166",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation:question:005:batch-108",
+      "question_id": "443fe14f-3642-4f1e-a5a8-82ae2f807495",
+      "claim_text": "Under CIAP Document 102, what is a bid?",
+      "support": "UAP Document 301 refined markdown lines 486-499; CIAP Document 102 refined markdown lines 171-177; Civil Code Article 1326 refined markdown line 166",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation:question:006:batch-108",
+      "question_id": "9124c3a1-056f-41c9-b9ba-6a437ce67af1",
+      "claim_text": "What are Instructions to Bidders under UAP Document 301?",
+      "support": "UAP Document 301 refined markdown lines 486-499; CIAP Document 102 refined markdown lines 171-177; Civil Code Article 1326 refined markdown line 166",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation:question:007:batch-108",
       "question_id": "aef53a47-1122-49f6-a57f-202173f50fe4",
-      "model_id": "BATCH-029-lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation-010",
-      "support_status": "PASS",
-      "source_ids": [
-        "uap-document-301-general-conditions-local",
-        "ciap-document-102-private-construction-contract-local",
-        "ra-386-civil-code-local"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
-        "raw_pdf_sha256": "sha256:bd1d2f88cf3e430a893c8d52b0a1ca74b234b2e2ca14dfc7aa67fc0ce1ee86a3",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
-        "source_locator": "Civil Code Article 1326 line 166; UAP Document 301 lines 486-499",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
+      "claim_text": "What is the safest exam move when a bid-award item mentions an unfamiliar procedure?",
+      "support": "UAP Document 301 refined markdown lines 486-499; CIAP Document 102 refined markdown lines 171-177; Civil Code Article 1326 refined markdown line 166",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation:question:008:batch-108",
+      "question_id": "cf781362-9e6f-4e39-acb8-1647796c7631",
+      "claim_text": "What does a bid bond or proposal bond guarantee in the checked contract sources?",
+      "support": "UAP Document 301 refined markdown lines 486-499; CIAP Document 102 refined markdown lines 171-177; Civil Code Article 1326 refined markdown line 166",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation:question:009:batch-108",
+      "question_id": "d2435813-0af3-4fd6-950f-6103d6e980a6",
+      "claim_text": "Who is the contractor under UAP Document 301?",
+      "support": "UAP Document 301 refined markdown lines 486-499; CIAP Document 102 refined markdown lines 171-177; Civil Code Article 1326 refined markdown line 166",
+      "status": "verified_local_raw_pdf"
+    },
+    {
+      "claim_id": "lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation:question:010:batch-108",
+      "question_id": "ff9641df-b72b-429e-bde7-e91122852770",
+      "claim_text": "What is a Bid Bulletin in the checked sources?",
+      "support": "UAP Document 301 refined markdown lines 486-499; CIAP Document 102 refined markdown lines 171-177; Civil Code Article 1326 refined markdown line 166",
+      "status": "verified_local_raw_pdf"
     }
-  ]
+  ],
+  "question_edit_files": [
+    ".ai/content-audit-export/articles/lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation--df4b2a65-1d08-41b6-83c8-944df4d35938/question-edits/0457399f-ff59-4441-a4f5-b6f7195eb1c7.json",
+    ".ai/content-audit-export/articles/lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation--df4b2a65-1d08-41b6-83c8-944df4d35938/question-edits/1689a555-7d79-4bb4-8179-6db9174c0a3a.json",
+    ".ai/content-audit-export/articles/lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation--df4b2a65-1d08-41b6-83c8-944df4d35938/question-edits/174bfeeb-cf2f-478f-821a-856a565ac2ae.json",
+    ".ai/content-audit-export/articles/lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation--df4b2a65-1d08-41b6-83c8-944df4d35938/question-edits/3c59790f-1023-4ec7-baf0-c3d766f4bed1.json",
+    ".ai/content-audit-export/articles/lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation--df4b2a65-1d08-41b6-83c8-944df4d35938/question-edits/443fe14f-3642-4f1e-a5a8-82ae2f807495.json",
+    ".ai/content-audit-export/articles/lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation--df4b2a65-1d08-41b6-83c8-944df4d35938/question-edits/9124c3a1-056f-41c9-b9ba-6a437ce67af1.json",
+    ".ai/content-audit-export/articles/lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation--df4b2a65-1d08-41b6-83c8-944df4d35938/question-edits/aef53a47-1122-49f6-a57f-202173f50fe4.json",
+    ".ai/content-audit-export/articles/lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation--df4b2a65-1d08-41b6-83c8-944df4d35938/question-edits/cf781362-9e6f-4e39-acb8-1647796c7631.json",
+    ".ai/content-audit-export/articles/lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation--df4b2a65-1d08-41b6-83c8-944df4d35938/question-edits/d2435813-0af3-4fd6-950f-6103d6e980a6.json",
+    ".ai/content-audit-export/articles/lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation--df4b2a65-1d08-41b6-83c8-944df4d35938/question-edits/ff9641df-b72b-429e-bde7-e91122852770.json"
+  ],
+  "source_hash_check_inputs": {
+    "source_file_paths": [
+      "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 301.pdf",
+      "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document 301.md",
+      "vitruvius-connection/001_Raw-Source-Layer/001-Laws/CIAP/CIAP-Document-102-Private-Constn-Contract.pdf",
+      "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/CIAP/CIAP-Document-102-Private-Constn-Contract.md",
+      "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-386/RA-386 Civil Code.pdf",
+      "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-386/RA-386 Civil Code.md"
+    ],
+    "question_edit_checked_source_references": 60
+  }
 }

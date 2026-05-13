@@ -1,0 +1,129 @@
+{
+  "batch_id": "source-audited-article-batch-108-local-first",
+  "batch_number": "108",
+  "reserved_at": "2026-05-13T14:11:03+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "branch": "3dlab-gray-viewport-bg",
+  "baseline_commit": "b2d9c144d",
+  "current_head_at_manifest_generation": "b2d9c144d",
+  "previous_batch": {
+    "batch_number": "107",
+    "commit": "b2d9c144d",
+    "status": "accepted_and_pushed"
+  },
+  "manifest_status": "completed_local_first_validated_blocked_at_git_stage_commit_push",
+  "selection_rule": "Next eligible fixed/manifest articles after accepted Batch 107 CTR-004; selected CTR-005 through CTR-009 with no duplicate article IDs from accepted Batches 087-107.",
+  "inherited_blocker_status": {
+    "status": "clear",
+    "source_blockers": 0,
+    "notes": [
+      "Batch 107 is accepted and pushed at b2d9c144d; earlier sandbox git-blocker text is superseded by this baseline."
+    ]
+  },
+  "article_clusters": [
+    "UAP Document 301 architect authority, impartiality, project representatives, and contractor means/method boundary",
+    "Contractor scope, compliance, inspection, guarantees, and Civil Code Article 1723 statutory liability boundary",
+    "Private bidding methods, invited bidding, negotiated bidding, and private-contract award boundary",
+    "Bid document contents, interpretation, addenda, and UAP/CIAP document-hierarchy separation",
+    "Bid evaluation, owner award discretion, and architect recommendation boundary"
+  ],
+  "counts": {
+    "articles": 5,
+    "linked_questions": 50,
+    "question_edits": 50,
+    "source_safe_real_world_scenarios": 5,
+    "source_hash_references_checked": 242,
+    "unique_source_artifacts_checked": 8,
+    "scoped_json_files_parsed": 109,
+    "selected_folder_json_files": 106,
+    "artifact_json_files": 3
+  },
+  "selected_article_uuids_slugs": [
+    {
+      "article_id": "5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5",
+      "slug": "lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor",
+      "title": "Architect's Authority During Construction Powers Limits",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-c--5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5"
+    },
+    {
+      "article_id": "367ef654-f42a-4eed-861d-b00648f5dba4",
+      "slug": "lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period",
+      "title": "The Contractor's Obligations Scope Compliance Standards",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period--367ef654-f42a-4eed-861d-b00648f5dba4"
+    },
+    {
+      "article_id": "0c598f14-db0d-490d-827d-d3088108b47f",
+      "slug": "lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures",
+      "title": "Private Bidding Competitive Bidding Negotiated",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures--0c598f14-db0d-490d-827d-d3088108b47f"
+    },
+    {
+      "article_id": "a6eaa2f0-1220-44ea-9bf3-3e90f791b71f",
+      "slug": "lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda",
+      "title": "Bid Documents Contents Interpretation and Issuing Addenda",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda--a6eaa2f0-1220-44ea-9bf3-3e90f791b71f"
+    },
+    {
+      "article_id": "df4b2a65-1d08-41b6-83c8-944df4d35938",
+      "slug": "lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation",
+      "title": "Bid Evaluation Contract Award and the Architect's Recommendation",
+      "folder": ".ai/content-audit-export/articles/lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation--df4b2a65-1d08-41b6-83c8-944df4d35938"
+    }
+  ],
+  "prior_batch_exclusion_check": {
+    "status": "pass",
+    "checked_batches": "087-107",
+    "duplicate_hits": [],
+    "historical_reaudit_overlap_recorded_separately": [
+      "source-audited-article-batch-022-local-first for lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor",
+      "source-audited-article-batch-028-local-first for lea-prac-ctr-006-the-contractor-s-obligations-scope-compliance-standards-and-the-guarantee-period",
+      "source-audited-article-batch-028-local-first for lea-prac-ctr-007-private-bidding-competitive-bidding-negotiated-and-invited-bid-procedures",
+      "source-audited-article-batch-028-local-first for lea-prac-ctr-008-bid-documents-contents-interpretation-and-issuing-addenda",
+      "source-audited-article-batch-029-local-first for lea-prac-ctr-009-bid-evaluation-contract-award-and-the-architect-s-recommendation"
+    ]
+  },
+  "historical_reaudit_overlap_acknowledgment": {
+    "status": "recorded_not_current_accepted_duplicate",
+    "overlap_artifacts": [
+      "Historical batch 022/028/029 artifacts existed but were not accepted in the current serial Batch 087-107 baseline for these selected IDs."
+    ]
+  },
+  "validation_gates": [
+    "compose/diff/validate strict 5/5",
+    "UI-block edit validation",
+    "scoped JSON parse",
+    "placeholder/internal-note/source-gap scan",
+    "source hash checks",
+    "linked-question/question-edit count checks",
+    "stale compose-error scan",
+    "prior-batch duplicate selection scan",
+    "targeted content-audit tests",
+    "scoped git diff --check",
+    "git diff --cached --check before commit"
+  ],
+  "forbidden_actions": {
+    "supabase_push": "not_performed",
+    "deploy": "not_performed",
+    "production_db_mutation": "not_performed",
+    "merge_to_main": "not_performed"
+  },
+  "git_commit_push_state": {
+    "status": "blocked_git_index_write",
+    "expected_commit_message": "chore(content): accept source-audited batch 108",
+    "commit_created": false,
+    "push_performed": false,
+    "blocker": "fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted"
+  },
+  "validation_evidence": {
+    "validate_bundles": "PASS 5/5; blockers=0; component-usage warnings only",
+    "ui_block_edit_validation": "PASS 5/5; blockers=0 warnings=0",
+    "scoped_json_parse": "PASS 109 JSON files parsed (106 selected-folder + 3 batch artifact JSON); failures=0",
+    "marker_scan": "PASS learner-facing article/question-edit/source-evidence scan hits=0",
+    "source_hash_checks": "PASS 8 unique raw/refined source artifacts; 242 cited source references; failures=0",
+    "linked_question_counts": "PASS linked questions=50 question edits=50",
+    "stale_compose_error_scan": "PASS remaining selected compose-error files=0",
+    "targeted_tests": "PASS bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts; 34 pass, 0 fail, 328 expects",
+    "scoped_git_diff_check": "PASS git diff --check over Batch 108 scoped article/report/ledger/manifest/handoff paths",
+    "cached_git_diff_check": "BLOCKED because git add failed before staging: fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted"
+  }
+}

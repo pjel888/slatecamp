@@ -2,14 +2,14 @@
   "question_id": "8d2e15ef-d781-4bbe-a67b-680d9c60afc5",
   "baseline_hash": "sha256:ff71410177f30ecf9a71db071cf1f0547a5ab0900598b5089cdc3ae1fac02717",
   "action": "replace",
-  "reason": "source-audited-article-batch-022-local-first rewrote this linked question to align with the local source audit for lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor.",
-  "approved_by": "codex-local-source-audit-batch-022",
-  "approved_at": "2026-05-11T11:45:00.000+08:00",
+  "reason": "source-audited-article-batch-108-local-first revalidated and refreshed this linked question against current serial Batch 108 article/source evidence for lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor.",
+  "approved_by": "codex-local-source-audit-batch-108",
+  "approved_at": "2026-05-13T13:57:08.000+08:00",
   "source_audit_support": {
     "parent_article_id": "5e8c7d0a-95b1-4739-a23a-ef8fbd89e5c5",
     "parent_article_slug": "lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor",
     "answer_key_fields_changed": true,
-    "support_status": "source_safe_rewrite",
+    "support_status": "verified_local_raw_pdf",
     "source_locator": "UAP Document 301 refined markdown lines 41-71, 482-520, 1019-1051, and 1062-1080; UAP Code of Ethics refined markdown lines 23-29, 31-58, 60-71, and 81-99",
     "checked_markdown_lines": [
       "UAP Document 301 lines 41-71",
@@ -47,7 +47,9 @@
         "locator": "UAP Code of Ethics refined markdown lines 23-29, 31-58, 60-71, and 81-99"
       }
     ],
-    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+    "local_source_safe_action": "revalidated question text, answer key, citation, and learner explanation against current Batch 108 source-audited article evidence",
+    "serial_batch_id": "source-audited-article-batch-108-local-first",
+    "current_candidate_sha256": "sha256:839073ed54b6d7f6435051b0daa02594f2eebeaa4586a827356bf2aa98dec7e3"
   },
   "proposed": {
     "text": "In interpreting the contract, how should the architect act between owner and contractor?",
@@ -75,16 +77,16 @@
     "value_tolerance": 0,
     "question_type": "mcq",
     "rationale": "UAP Document 301 requires impartial contract interpretation and enforcement.",
-    "explanation": "The incorrect options import a different actor, service category, timing rule, or authority path that the checked local source does not support.",
+    "explanation": "Incorrect choices either give the architect unlimited owner authority, remove contractor responsibility, or bypass the Contract Documents and written authority limits.",
     "code_citation": "UAP Document 301 lines 1019-1039",
     "bloom_level": "remember",
     "application_context": "professional_practice_source_audit",
     "practice_context": [
       "professional practice",
-      "source-audited batch 022"
+      "source-audited batch 108"
     ],
     "difficulty": 0.58,
     "is_assessment": false,
-    "model_id": "BATCH-022-lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor-005"
+    "model_id": "BATCH-108-lea-prac-ctr-005-the-architect-s-authority-during-construction-powers-limits-and-the-line-with-the-contractor-005"
   }
 }

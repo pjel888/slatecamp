@@ -1,5 +1,9 @@
 ## Bid Evaluation, Contract Award, and the Architect's Recommendation
 
+## Board Exam Quick Check
+
+For private bidding items, separate the act of receiving bids from the legal effect of award. The local sources define bids, bid documents, instructions, and the contractor whose proposal has been accepted. Civil Code Article 1326 blocks the shortcut that the highest or lowest bid must be accepted unless the invitation itself says otherwise.
+
 ## Learning Goal
 
 After studying this article, you should be able to:
@@ -20,9 +24,19 @@ CIAP Document 102 defines bid documents as the documents made available to prosp
 
 A Bid Bulletin is additional information on bid or contract documents issued before the date of bidding. A Proposal or Bid Bond guarantees that the bidder will enter into the contract with the owner if the contract is awarded to that bidder.
 
+## Real World Scenario
+
+After opening bids, an owner asks whether the lowest price automatically binds the owner to award. A source-safe answer cites Civil Code Article 1326: advertisements for bidders are invitations to make proposals, and the advertiser is not bound to accept the highest or lowest bidder unless the contrary appears. The architect's recommendation can help the owner read the bid against the instructions and contract documents, but acceptance and award must follow the source named in the bidding documents.
+
 ## Exam Boundary
 
 A source-safe answer should identify the controlling document first: bid definitions from CIAP Document 102 or UAP Document 301, and the no-automatic-award rule from Civil Code Article 1326. Avoid importing scoring systems, confidentiality procedures, or technical-ranking rules unless those exact procedures are named by the item and supplied by the source.
+
+## Source Anchors
+
+- UAP Document 301: contractor, proposal, proposal bond, invitation to bid, bid bulletin, and instructions to bidders.
+- CIAP Document 102: bid, bid bond, bid documents, bid bulletin, and instruction to bidders.
+- Civil Code Article 1326: advertisements for bidders are invitations to make proposals unless the contrary appears.
 
 ## Related Articles
 

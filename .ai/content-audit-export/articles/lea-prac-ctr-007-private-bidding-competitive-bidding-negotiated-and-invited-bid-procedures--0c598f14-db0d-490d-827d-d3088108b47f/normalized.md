@@ -31,6 +31,14 @@ UAP Document 301 defines Proposal Bond as a cashier's check or surety bond accom
 
 The checked sources support a careful distinction: a private Owner may issue an advertisement or invitation, provide Instructions to Bidders, issue Bid Bulletins before bidding, and require a Proposal or Bid Bond. They do not support a blanket statement that every private project must be publicly advertised or awarded only to the lowest bidder. When a question asks about public procurement, use the public procurement source supplied by the question, not private construction documents alone.
 
+## Real World Scenario
+
+A private owner invites three contractors to price a small commercial project and issues instructions, drawings, specifications, and a bid bond requirement. On the LEA, the source-safe answer should identify the documents and definitions first: invitation or advertisement, bid, bid documents, bid bulletin, instructions to bidders, and bid or proposal bond. Do not convert the private owner's invited process into a public-procurement rule unless the question expressly shifts to RA 9184 or another public source.
+
+## Exam Boundary
+
+If the option says "lowest bidder automatically wins," slow down. The local private-contract sources define bidding documents and bid security, but they do not by themselves create an automatic award rule. The answer should stay with the governing document named in the item.
+
 ## Source Anchors
 
 - UAP Document 301: Advertisement/Invitation to Bid, Proposal Bond, Bid Bulletin, Instructions to Bidders, and related contract-document definitions.
