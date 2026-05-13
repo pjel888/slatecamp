@@ -1,32 +1,38 @@
 {
   "article_id": "98d64943-b6ab-4fad-b16e-975d7126036e",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:b397c334351deabed740ab25063fa27f4505911cc36f0c5a31fc495b1560d2cc",
+  "sources_hash": "sha256:ca72f7d73b2e5a84bcdf15305af372d5144dfc57ed407c8b8abe1f5ba27d2af2",
   "source_count": 2,
   "sources": [
     {
-      "source_id": "39805ca6-9b4b-4aa0-aab8-1940e20dde9d",
+      "source_id": "batch126-lea-hist-011-02-core-concept-source-map-capture",
       "article_id": "98d64943-b6ab-4fad-b16e-975d7126036e",
-      "label": "Lepik, Andres (ed.). *African Modernism: The Architecture of Independence*. Museum of Modern Art, 2015. Kéré, Diébédo Francis. *Kéré Foundation and Architectural Practice*. Contemporary documentation",
+      "label": "Colonial Architecture in Africa source-map capture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:33:59.83296+00:00",
-      "updated_at": "2026-03-24T04:33:59.83296+00:00"
+      "source_type": "local_source_capture",
+      "description": "Local-first capture of official/authoritative source anchors for Colonial Architecture in Africa.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-126/lea-hist-011-02-core-concept-colonial-architecture-in-africa.source-capture.md",
+      "sha256": "sha256:9d7d522f6f27313c1f82030d66628de095e627c0a89e66b8a7a7186bf14762b2",
+      "locator": "UNESCO records for Asmara and Rabat; Kere Architecture and Pritzker records for Gando Primary School; NLE record for Makoko Floating School; Senegal ministry record for Monument de la Renaissance Africaine.",
+      "sort_order": 1,
+      "created_at": "2026-05-14T02:42:00.000+08:00",
+      "updated_at": "2026-05-14T02:42:00.000+08:00"
     },
     {
-      "source_id": "379be310-c35c-4acb-803d-ba9e036fdf38",
+      "source_id": "batch126-lea-hist-011-02-core-concept-source-map-refined",
       "article_id": "98d64943-b6ab-4fad-b16e-975d7126036e",
-      "label": "Uduku, Ogoh. \"Modernism Arrived in Lagos: Architectural Modernism and the Nigerian Experience.\" *Journal of Architectural Education*, vol. 57, no. 3, 2004. UNESCO World Heritage Centre records",
+      "label": "Colonial Architecture in Africa refined source map",
       "url": null,
-      "source_type": "heritage_body",
-      "description": null,
-      "is_verified": false,
-      "sort_order": 1,
-      "created_at": "2026-03-24T04:33:59.83296+00:00",
-      "updated_at": "2026-03-24T04:33:59.83296+00:00"
+      "source_type": "local_refined_conversion",
+      "description": "Refined claim map for Colonial Architecture in Africa and linked question edits.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-126/lea-hist-011-02-core-concept-colonial-architecture-in-africa.refined.md",
+      "sha256": "sha256:f1bca979425b5dabc7bb7b7c73da51e4ff1e3f6af48cd2ad5c05ee6e80d1a935",
+      "locator": "UNESCO records for Asmara and Rabat; Kere Architecture and Pritzker records for Gando Primary School; NLE record for Makoko Floating School; Senegal ministry record for Monument de la Renaissance Africaine.",
+      "sort_order": 2,
+      "created_at": "2026-05-14T02:42:00.000+08:00",
+      "updated_at": "2026-05-14T02:42:00.000+08:00"
     }
   ]
 }

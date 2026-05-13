@@ -1,0 +1,195 @@
+{
+  "artifact_type": "source-audited-local-first-scoped-checks",
+  "batch_id": "source-audited-article-batch-126-local-first",
+  "generated_at": "2026-05-14T02:58:00.000+08:00",
+  "branch": "3dlab-gray-viewport-bg",
+  "baseline_commit": "d65cf8ebedb49521c66e0ad0595c7dc6377c6739",
+  "checks": [
+    {
+      "name": "compose scoped by slug",
+      "status": "pass",
+      "evidence": "5/5 scoped compositions passed with blockers=0 using --overwrite by slug."
+    },
+    {
+      "name": "diff scoped by slug",
+      "status": "pass",
+      "evidence": "5/5 scoped diff reports safe_to_push=true with blockers=0."
+    },
+    {
+      "name": "validate scoped by slug",
+      "status": "pass",
+      "evidence": "5/5 bundle validation valid=true; component-usage warnings only."
+    },
+    {
+      "name": "ui-block edit validation",
+      "status": "pass",
+      "evidence": "5/5 valid=true, blockers=0, warnings=0."
+    },
+    {
+      "name": "source hash verification",
+      "status": "pass",
+      "evidence": "10/10 local source artifact hashes matched sources.json."
+    },
+    {
+      "name": "linked question edit count",
+      "status": "pass",
+      "evidence": "57/57 linked questions edited; answer-key changes=0."
+    },
+    {
+      "name": "reserved authoring marker scan",
+      "status": "pass",
+      "evidence": "No reserved authoring markers found in selected normalized/candidate/question/source output scope."
+    },
+    {
+      "name": "stale compose-error scan",
+      "status": "pass",
+      "evidence": "Stale compose-error sidecars removed from selected folders; revalidation passed."
+    },
+    {
+      "name": "targeted content-audit tests",
+      "status": "pass",
+      "evidence": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts -> 34 pass, 0 fail."
+    },
+    {
+      "name": "scoped JSON parse",
+      "status": "pass",
+      "evidence": "54 intended JSON files parsed after artifact generation."
+    },
+    {
+      "name": "scoped git diff check",
+      "status": "pass",
+      "evidence": "git diff --check passed for 80 regular intended paths; custom whitespace scan passed for 85 existing intended files including ignored source artifacts."
+    },
+    {
+      "name": "cached git diff check",
+      "status": "pass_temporary_index",
+      "evidence": "Temporary index cached diff check passed for 90 intended paths; live git staging is blocked by .git/index.lock permissions."
+    }
+  ],
+  "selected_article_folders": [
+    ".ai/content-audit-export/articles/lea-hist-011-01-core-concept--584a3bfe-0f9a-4c59-8576-b52a2f2a9074",
+    ".ai/content-audit-export/articles/lea-hist-011-02-core-concept--98d64943-b6ab-4fad-b16e-975d7126036e",
+    ".ai/content-audit-export/articles/lea-hist-012-01-core-concept--b3b94acc-c537-4dc3-bf2c-8246a8e6fdc6",
+    ".ai/content-audit-export/articles/lea-hist-012-02-core-concept--2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce",
+    ".ai/content-audit-export/articles/lea-hist-012-03-core-concept--a33f91de-362d-436e-87f5-e30e32e47529"
+  ],
+  "source_artifacts": [
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-126/lea-hist-011-01-core-concept-pre-colonial-african-architecture.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-126/lea-hist-011-01-core-concept-pre-colonial-african-architecture.refined.md",
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-126/lea-hist-011-02-core-concept-colonial-architecture-in-africa.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-126/lea-hist-011-02-core-concept-colonial-architecture-in-africa.refined.md",
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-126/lea-hist-012-01-core-concept-maya-and-aztec-architecture.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-126/lea-hist-012-01-core-concept-maya-and-aztec-architecture.refined.md",
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-126/lea-hist-012-02-core-concept-inca-architecture.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-126/lea-hist-012-02-core-concept-inca-architecture.refined.md",
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-126/lea-hist-012-03-core-concept-north-american-indigenous-architecture.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-126/lea-hist-012-03-core-concept-north-american-indigenous-architecture.refined.md"
+  ],
+  "intended_paths": [
+    ".ai/03_plans/production-line-batch-126-manifest.json",
+    ".ai/03_plans/batch-126-independent-quality-review.md",
+    ".ai/03_plans/batch-126-git-handoff-stage-list.md",
+    ".ai/03_plans/source-audited-production-line-coordination.md",
+    ".ai/03_plans/source-audited-local-first-batches-handoff.md",
+    ".ai/03_plans/source-audited-local-first-freeze-readiness-report.md",
+    ".ai/content-audit-export/source-audited-article-batch-126-local-first-report.md",
+    ".ai/content-audit-export/source-audited-article-batch-126-local-first-ledger.json",
+    ".ai/content-audit-export/source-audited-article-batch-126-local-first-scoped-checks.json",
+    ".ai/content-audit-export/sync-state.json",
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-126/lea-hist-011-01-core-concept-pre-colonial-african-architecture.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-126/lea-hist-011-01-core-concept-pre-colonial-african-architecture.refined.md",
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-126/lea-hist-011-02-core-concept-colonial-architecture-in-africa.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-126/lea-hist-011-02-core-concept-colonial-architecture-in-africa.refined.md",
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-126/lea-hist-012-01-core-concept-maya-and-aztec-architecture.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-126/lea-hist-012-01-core-concept-maya-and-aztec-architecture.refined.md",
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-126/lea-hist-012-02-core-concept-inca-architecture.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-126/lea-hist-012-02-core-concept-inca-architecture.refined.md",
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-126/lea-hist-012-03-core-concept-north-american-indigenous-architecture.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-126/lea-hist-012-03-core-concept-north-american-indigenous-architecture.refined.md",
+    ".ai/content-audit-export/articles/lea-hist-011-01-core-concept--584a3bfe-0f9a-4c59-8576-b52a2f2a9074/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-hist-011-01-core-concept--584a3bfe-0f9a-4c59-8576-b52a2f2a9074/candidate.md",
+    ".ai/content-audit-export/articles/lea-hist-011-01-core-concept--584a3bfe-0f9a-4c59-8576-b52a2f2a9074/compose-error.json",
+    ".ai/content-audit-export/articles/lea-hist-011-01-core-concept--584a3bfe-0f9a-4c59-8576-b52a2f2a9074/compose-report.json",
+    ".ai/content-audit-export/articles/lea-hist-011-01-core-concept--584a3bfe-0f9a-4c59-8576-b52a2f2a9074/diff-report.json",
+    ".ai/content-audit-export/articles/lea-hist-011-01-core-concept--584a3bfe-0f9a-4c59-8576-b52a2f2a9074/diff-report.md",
+    ".ai/content-audit-export/articles/lea-hist-011-01-core-concept--584a3bfe-0f9a-4c59-8576-b52a2f2a9074/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-hist-011-01-core-concept--584a3bfe-0f9a-4c59-8576-b52a2f2a9074/normalized.md",
+    ".ai/content-audit-export/articles/lea-hist-011-01-core-concept--584a3bfe-0f9a-4c59-8576-b52a2f2a9074/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-hist-011-01-core-concept--584a3bfe-0f9a-4c59-8576-b52a2f2a9074/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-hist-011-01-core-concept--584a3bfe-0f9a-4c59-8576-b52a2f2a9074/sources.json",
+    ".ai/content-audit-export/articles/lea-hist-011-01-core-concept--584a3bfe-0f9a-4c59-8576-b52a2f2a9074/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-hist-011-01-core-concept--584a3bfe-0f9a-4c59-8576-b52a2f2a9074/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-hist-011-01-core-concept--584a3bfe-0f9a-4c59-8576-b52a2f2a9074/ui-blocks.json",
+    ".ai/content-audit-export/articles/lea-hist-011-02-core-concept--98d64943-b6ab-4fad-b16e-975d7126036e/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-hist-011-02-core-concept--98d64943-b6ab-4fad-b16e-975d7126036e/candidate.md",
+    ".ai/content-audit-export/articles/lea-hist-011-02-core-concept--98d64943-b6ab-4fad-b16e-975d7126036e/compose-error.json",
+    ".ai/content-audit-export/articles/lea-hist-011-02-core-concept--98d64943-b6ab-4fad-b16e-975d7126036e/compose-report.json",
+    ".ai/content-audit-export/articles/lea-hist-011-02-core-concept--98d64943-b6ab-4fad-b16e-975d7126036e/diff-report.json",
+    ".ai/content-audit-export/articles/lea-hist-011-02-core-concept--98d64943-b6ab-4fad-b16e-975d7126036e/diff-report.md",
+    ".ai/content-audit-export/articles/lea-hist-011-02-core-concept--98d64943-b6ab-4fad-b16e-975d7126036e/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-hist-011-02-core-concept--98d64943-b6ab-4fad-b16e-975d7126036e/normalized.md",
+    ".ai/content-audit-export/articles/lea-hist-011-02-core-concept--98d64943-b6ab-4fad-b16e-975d7126036e/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-hist-011-02-core-concept--98d64943-b6ab-4fad-b16e-975d7126036e/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-hist-011-02-core-concept--98d64943-b6ab-4fad-b16e-975d7126036e/sources.json",
+    ".ai/content-audit-export/articles/lea-hist-011-02-core-concept--98d64943-b6ab-4fad-b16e-975d7126036e/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-hist-011-02-core-concept--98d64943-b6ab-4fad-b16e-975d7126036e/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-hist-011-02-core-concept--98d64943-b6ab-4fad-b16e-975d7126036e/ui-blocks.json",
+    ".ai/content-audit-export/articles/lea-hist-012-01-core-concept--b3b94acc-c537-4dc3-bf2c-8246a8e6fdc6/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-hist-012-01-core-concept--b3b94acc-c537-4dc3-bf2c-8246a8e6fdc6/candidate.md",
+    ".ai/content-audit-export/articles/lea-hist-012-01-core-concept--b3b94acc-c537-4dc3-bf2c-8246a8e6fdc6/compose-error.json",
+    ".ai/content-audit-export/articles/lea-hist-012-01-core-concept--b3b94acc-c537-4dc3-bf2c-8246a8e6fdc6/compose-report.json",
+    ".ai/content-audit-export/articles/lea-hist-012-01-core-concept--b3b94acc-c537-4dc3-bf2c-8246a8e6fdc6/diff-report.json",
+    ".ai/content-audit-export/articles/lea-hist-012-01-core-concept--b3b94acc-c537-4dc3-bf2c-8246a8e6fdc6/diff-report.md",
+    ".ai/content-audit-export/articles/lea-hist-012-01-core-concept--b3b94acc-c537-4dc3-bf2c-8246a8e6fdc6/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-hist-012-01-core-concept--b3b94acc-c537-4dc3-bf2c-8246a8e6fdc6/normalized.md",
+    ".ai/content-audit-export/articles/lea-hist-012-01-core-concept--b3b94acc-c537-4dc3-bf2c-8246a8e6fdc6/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-hist-012-01-core-concept--b3b94acc-c537-4dc3-bf2c-8246a8e6fdc6/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-hist-012-01-core-concept--b3b94acc-c537-4dc3-bf2c-8246a8e6fdc6/sources.json",
+    ".ai/content-audit-export/articles/lea-hist-012-01-core-concept--b3b94acc-c537-4dc3-bf2c-8246a8e6fdc6/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-hist-012-01-core-concept--b3b94acc-c537-4dc3-bf2c-8246a8e6fdc6/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-hist-012-01-core-concept--b3b94acc-c537-4dc3-bf2c-8246a8e6fdc6/ui-blocks.json",
+    ".ai/content-audit-export/articles/lea-hist-012-02-core-concept--2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-hist-012-02-core-concept--2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce/candidate.md",
+    ".ai/content-audit-export/articles/lea-hist-012-02-core-concept--2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce/compose-error.json",
+    ".ai/content-audit-export/articles/lea-hist-012-02-core-concept--2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce/compose-report.json",
+    ".ai/content-audit-export/articles/lea-hist-012-02-core-concept--2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce/diff-report.json",
+    ".ai/content-audit-export/articles/lea-hist-012-02-core-concept--2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce/diff-report.md",
+    ".ai/content-audit-export/articles/lea-hist-012-02-core-concept--2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-hist-012-02-core-concept--2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce/normalized.md",
+    ".ai/content-audit-export/articles/lea-hist-012-02-core-concept--2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-hist-012-02-core-concept--2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-hist-012-02-core-concept--2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce/sources.json",
+    ".ai/content-audit-export/articles/lea-hist-012-02-core-concept--2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-hist-012-02-core-concept--2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-hist-012-02-core-concept--2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce/ui-blocks.json",
+    ".ai/content-audit-export/articles/lea-hist-012-03-core-concept--a33f91de-362d-436e-87f5-e30e32e47529/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-hist-012-03-core-concept--a33f91de-362d-436e-87f5-e30e32e47529/candidate.md",
+    ".ai/content-audit-export/articles/lea-hist-012-03-core-concept--a33f91de-362d-436e-87f5-e30e32e47529/compose-error.json",
+    ".ai/content-audit-export/articles/lea-hist-012-03-core-concept--a33f91de-362d-436e-87f5-e30e32e47529/compose-report.json",
+    ".ai/content-audit-export/articles/lea-hist-012-03-core-concept--a33f91de-362d-436e-87f5-e30e32e47529/diff-report.json",
+    ".ai/content-audit-export/articles/lea-hist-012-03-core-concept--a33f91de-362d-436e-87f5-e30e32e47529/diff-report.md",
+    ".ai/content-audit-export/articles/lea-hist-012-03-core-concept--a33f91de-362d-436e-87f5-e30e32e47529/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-hist-012-03-core-concept--a33f91de-362d-436e-87f5-e30e32e47529/normalized.md",
+    ".ai/content-audit-export/articles/lea-hist-012-03-core-concept--a33f91de-362d-436e-87f5-e30e32e47529/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-hist-012-03-core-concept--a33f91de-362d-436e-87f5-e30e32e47529/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-hist-012-03-core-concept--a33f91de-362d-436e-87f5-e30e32e47529/sources.json",
+    ".ai/content-audit-export/articles/lea-hist-012-03-core-concept--a33f91de-362d-436e-87f5-e30e32e47529/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-hist-012-03-core-concept--a33f91de-362d-436e-87f5-e30e32e47529/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-hist-012-03-core-concept--a33f91de-362d-436e-87f5-e30e32e47529/ui-blocks.json"
+  ],
+  "totals": {
+    "article_clusters": 5,
+    "linked_questions": 57,
+    "question_edits": 57,
+    "answer_key_changes": 0,
+    "option_text_changes": 9,
+    "source_entries": 10,
+    "local_source_artifacts": 10
+  },
+  "warnings": [
+    "No Supabase push, deploy, production DB mutation, or merge to main was performed.",
+    "Diff reports warn that remote stale checks must run before any future Supabase mutation; this batch does not authorize Supabase mutation.",
+    "vitruvius-connection source artifacts are gitignored and require force-add if committed from this workspace.",
+    "Live git add failed with fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted."
+  ]
+}

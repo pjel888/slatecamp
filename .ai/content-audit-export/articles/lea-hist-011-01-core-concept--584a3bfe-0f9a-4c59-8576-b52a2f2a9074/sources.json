@@ -1,20 +1,38 @@
 {
   "article_id": "584a3bfe-0f9a-4c59-8576-b52a2f2a9074",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:7707f12fd07a8e91cc9afeb4fc86dc4866e86960bd4d01414532cf0e3d1f067f",
-  "source_count": 1,
+  "sources_hash": "sha256:99768549a03d506c5bbb2b3f7cfd35f0925d1818ad3057d2f978fb328c18274a",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "5ac96c52-96b5-4112-a97e-dd957c0e54d3",
+      "source_id": "batch126-lea-hist-011-01-core-concept-source-map-capture",
       "article_id": "584a3bfe-0f9a-4c59-8576-b52a2f2a9074",
-      "label": "Prussin, Labelle. *African Nomadic Architecture: Space, Place, and Gender*. Smithsonian Institution Press, 1995. Connah, Graham. *African Civilizations: An Archaeological Perspective*. 2nd ed.",
+      "label": "Pre-Colonial African Architecture source-map capture",
       "url": null,
-      "source_type": "heritage_body",
-      "description": "Cambridge University Press, 2001. UNESCO World Heritage Centre records for Great Zimbabwe, Lalibela, and Djenne",
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:33:59.83296+00:00",
-      "updated_at": "2026-03-24T04:33:59.83296+00:00"
+      "source_type": "local_source_capture",
+      "description": "Local-first capture of official/authoritative source anchors for Pre-Colonial African Architecture.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-126/lea-hist-011-01-core-concept-pre-colonial-african-architecture.source-capture.md",
+      "sha256": "sha256:2bdd1a2f1d15fa056e090cec6b9c0a33018434c8bc6a41c641aecec12d736fe8",
+      "locator": "UNESCO World Heritage Centre records for Great Zimbabwe, Rock-Hewn Churches of Lalibela, and Old Towns of Djenne; local source map for LEA contrast of dry-stone, rock-hewn, and Sahelian earthen traditions.",
+      "sort_order": 1,
+      "created_at": "2026-05-14T02:42:00.000+08:00",
+      "updated_at": "2026-05-14T02:42:00.000+08:00"
+    },
+    {
+      "source_id": "batch126-lea-hist-011-01-core-concept-source-map-refined",
+      "article_id": "584a3bfe-0f9a-4c59-8576-b52a2f2a9074",
+      "label": "Pre-Colonial African Architecture refined source map",
+      "url": null,
+      "source_type": "local_refined_conversion",
+      "description": "Refined claim map for Pre-Colonial African Architecture and linked question edits.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-126/lea-hist-011-01-core-concept-pre-colonial-african-architecture.refined.md",
+      "sha256": "sha256:bc1068863f250203855dd4c4256b405c89d7f8084e594f63d86b0e036ba14e81",
+      "locator": "UNESCO World Heritage Centre records for Great Zimbabwe, Rock-Hewn Churches of Lalibela, and Old Towns of Djenne; local source map for LEA contrast of dry-stone, rock-hewn, and Sahelian earthen traditions.",
+      "sort_order": 2,
+      "created_at": "2026-05-14T02:42:00.000+08:00",
+      "updated_at": "2026-05-14T02:42:00.000+08:00"
     }
   ]
 }

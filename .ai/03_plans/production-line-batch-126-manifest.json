@@ -1,0 +1,396 @@
+{
+  "batch_id": "source-audited-article-batch-126-local-first",
+  "generated_at": "2026-05-14T02:58:00.000+08:00",
+  "updated_at": "2026-05-14T02:58:00.000+08:00",
+  "branch": "3dlab-gray-viewport-bg",
+  "baseline_commit": "d65cf8ebe",
+  "baseline_full_commit": "d65cf8ebedb49521c66e0ad0595c7dc6377c6739",
+  "previous_content_batch_commit": "d65cf8ebe",
+  "status": "passed_local_validation_git_index_blocked_handoff",
+  "selection_policy": "Next residual non-prac linked-question article bundles after Batch 125 consumed through lea-hist-008-09; selected lea-hist-011-01, lea-hist-011-02, lea-hist-012-01, lea-hist-012-02, and lea-hist-012-03 because all five were sourceable with official/authoritative local captures.",
+  "consumed_before_batch_126": [
+    "lea-hist-001-01..06",
+    "lea-hist-001-08",
+    "lea-hist-002-01..06",
+    "lea-hist-004-01..02",
+    "lea-hist-004-05..08",
+    "lea-hist-007-01..06",
+    "lea-hist-008-01",
+    "lea-hist-008-02",
+    "lea-hist-008-03a",
+    "lea-hist-008-03b",
+    "lea-hist-008-03c",
+    "lea-hist-008-03d",
+    "lea-hist-008-04a",
+    "lea-hist-008-04b",
+    "lea-hist-008-04c",
+    "lea-hist-008-05",
+    "lea-hist-008-06",
+    "lea-hist-008-07a",
+    "lea-hist-008-07b",
+    "lea-hist-008-08",
+    "lea-hist-008-09"
+  ],
+  "selected_articles": [
+    {
+      "article_id": "584a3bfe-0f9a-4c59-8576-b52a2f2a9074",
+      "slug": "lea-hist-011-01-core-concept",
+      "title": "Pre-Colonial African Architecture",
+      "folder": ".ai/content-audit-export/articles/lea-hist-011-01-core-concept--584a3bfe-0f9a-4c59-8576-b52a2f2a9074",
+      "source_count": 2,
+      "linked_question_count": 10,
+      "question_edit_count": 10,
+      "answer_key_change_count": 0,
+      "option_text_change_count": 2,
+      "source_safe_real_world_scenario": "added_source_safe_real_world_scenario: compare a heritage repair brief for an earthen Sahel mosque with a dry-stone monument; the maintenance rhythm, material weathering, and conservation schedule change by climate and construction system.",
+      "scenario_summary": "Added source-safe recognition/application scenario bounded to selected local source-map anchors.",
+      "thin_needs_expansion": false,
+      "unsupported_or_removed_claims": [
+        "Removed unsupported cross-in-square wording for Biete Giyorgis and replaced it with cruciform/Greek-cross plan language.",
+        "Removed roof-support-only and permanent structural overclaims about Djenne toron.",
+        "Kept Great Zimbabwe, Lalibela, and Djenne comparisons but tied them to UNESCO source anchors rather than broad internet summaries."
+      ],
+      "original_hash": "sha256:396a6af7331ba14f55efbfc428b1523922497bdb8334289b0473912c41e50f07",
+      "normalized_hash": "sha256:346dc802f1209543be23e24b2c45791b922a7deae7f2c381e581a680a46a3222",
+      "candidate_hash": "sha256:346dc802f1209543be23e24b2c45791b922a7deae7f2c381e581a680a46a3222",
+      "sources_hash": "sha256:99768549a03d506c5bbb2b3f7cfd35f0925d1818ad3057d2f978fb328c18274a",
+      "linked_questions_hash": "sha256:ebfde28d760534c1897f4858faac952a304c88a8303717d26c1ef142f3f1c950",
+      "source_locator": "UNESCO World Heritage Centre records for Great Zimbabwe, Rock-Hewn Churches of Lalibela, and Old Towns of Djenne; local source map for LEA contrast of dry-stone, rock-hewn, and Sahelian earthen traditions.",
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-126/lea-hist-011-01-core-concept-pre-colonial-african-architecture.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-126/lea-hist-011-01-core-concept-pre-colonial-african-architecture.refined.md"
+      ],
+      "source_hashes": [
+        "sha256:2bdd1a2f1d15fa056e090cec6b9c0a33018434c8bc6a41c641aecec12d736fe8",
+        "sha256:bc1068863f250203855dd4c4256b405c89d7f8084e594f63d86b0e036ba14e81"
+      ],
+      "safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation.",
+        "component-usage.json has not been generated for this article yet."
+      ],
+      "ui_block_edit_validation": {
+        "valid": true,
+        "blockers": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "article_id": "98d64943-b6ab-4fad-b16e-975d7126036e",
+      "slug": "lea-hist-011-02-core-concept",
+      "title": "Colonial Architecture in Africa",
+      "folder": ".ai/content-audit-export/articles/lea-hist-011-02-core-concept--98d64943-b6ab-4fad-b16e-975d7126036e",
+      "source_count": 2,
+      "linked_question_count": 11,
+      "question_edit_count": 11,
+      "answer_key_change_count": 0,
+      "option_text_change_count": 2,
+      "source_safe_real_world_scenario": "added_source_safe_real_world_scenario: compare a hot-climate school brief in Burkina Faso with a waterfront community prototype in Lagos; both are contemporary African responses, but their site risks and material strategies differ.",
+      "scenario_summary": "Added source-safe recognition/application scenario bounded to selected local source-map anchors.",
+      "thin_needs_expansion": false,
+      "unsupported_or_removed_claims": [
+        "Removed the weak Hilton Addis Ababa/Lalibela-inspired hotel item and replaced it with the UNESCO-sourceable Asmara modernist city item.",
+        "Softened broad colonial-grid claims so they remain comparative rather than absolute.",
+        "Kept Kere and Adeyemi contemporary examples because official practice pages support them."
+      ],
+      "original_hash": "sha256:1b840fb6d2d7efae031530b2ef1e3b0ef4be1dd340a407c8918aa36ae67a8aa0",
+      "normalized_hash": "sha256:f50999708024d6882891f693b5485c4eec8af31cd0e7997c6cc97cb966ecb1b7",
+      "candidate_hash": "sha256:f50999708024d6882891f693b5485c4eec8af31cd0e7997c6cc97cb966ecb1b7",
+      "sources_hash": "sha256:ca72f7d73b2e5a84bcdf15305af372d5144dfc57ed407c8b8abe1f5ba27d2af2",
+      "linked_questions_hash": "sha256:52c3111ee50fac3fc49ab48e5dd744372de7b69d6fec72a2ea60f6f93e44c058",
+      "source_locator": "UNESCO records for Asmara and Rabat; Kere Architecture and Pritzker records for Gando Primary School; NLE record for Makoko Floating School; Senegal ministry record for Monument de la Renaissance Africaine.",
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-126/lea-hist-011-02-core-concept-colonial-architecture-in-africa.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-126/lea-hist-011-02-core-concept-colonial-architecture-in-africa.refined.md"
+      ],
+      "source_hashes": [
+        "sha256:9d7d522f6f27313c1f82030d66628de095e627c0a89e66b8a7a7186bf14762b2",
+        "sha256:f1bca979425b5dabc7bb7b7c73da51e4ff1e3f6af48cd2ad5c05ee6e80d1a935"
+      ],
+      "safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation.",
+        "component-usage.json has not been generated for this article yet."
+      ],
+      "ui_block_edit_validation": {
+        "valid": true,
+        "blockers": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "article_id": "b3b94acc-c537-4dc3-bf2c-8246a8e6fdc6",
+      "slug": "lea-hist-012-01-core-concept",
+      "title": "Maya and Aztec Architecture",
+      "folder": ".ai/content-audit-export/articles/lea-hist-012-01-core-concept--b3b94acc-c537-4dc3-bf2c-8246a8e6fdc6",
+      "source_count": 2,
+      "linked_question_count": 12,
+      "question_edit_count": 12,
+      "answer_key_change_count": 0,
+      "option_text_change_count": 0,
+      "source_safe_real_world_scenario": "added_source_safe_real_world_scenario: when classifying a ruin, the examiner may give the structure type before the culture; corbelled vault plus stelae suggests Maya, while a double shrine to Tlaloc and Huitzilopochtli suggests Aztec Templo Mayor.",
+      "scenario_summary": "Added source-safe recognition/application scenario bounded to selected local source-map anchors.",
+      "thin_needs_expansion": false,
+      "unsupported_or_removed_claims": [
+        "Corrected Pleanque to Palenque.",
+        "Softened precise Templo Mayor height/blood-channel wording to avoid over-specific claims not needed for the answer key.",
+        "Kept Chichen Itza/Kukulcan equinox language but framed it as an exam pattern supported through local INAH/UNESCO anchors."
+      ],
+      "original_hash": "sha256:ac67990038632bfdfa3e11c36d038a44faccb94b9a1935af5ed9a1d2f1c826dc",
+      "normalized_hash": "sha256:6977b88da3917d996c43bf7c05c92c6747237c28b0a4b75948af45bfba96f49b",
+      "candidate_hash": "sha256:6977b88da3917d996c43bf7c05c92c6747237c28b0a4b75948af45bfba96f49b",
+      "sources_hash": "sha256:e03e7687cb2f6d1691efe8ec9f89da30a089cf2fa1b64ba75a4d779f810f8cf0",
+      "linked_questions_hash": "sha256:e5f43d9ce6e1eb4c9519522666d9f704f32666bbf1901b0c11aa03c4b58c2401",
+      "source_locator": "UNESCO records for Tikal, Chichen Itza, and Palenque; INAH records for Templo Mayor and Chichen Itza; local source map for Maya/Aztec exam contrasts.",
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-126/lea-hist-012-01-core-concept-maya-and-aztec-architecture.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-126/lea-hist-012-01-core-concept-maya-and-aztec-architecture.refined.md"
+      ],
+      "source_hashes": [
+        "sha256:342605b54c143f07d95a5ce2551df7d5733c7673280c2978effc43ca44e26f4a",
+        "sha256:ebc68e01775c18bc1cfd0f69659243753e5cce485fef60e804cbba44c4a7a9ea"
+      ],
+      "safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation.",
+        "component-usage.json has not been generated for this article yet."
+      ],
+      "ui_block_edit_validation": {
+        "valid": true,
+        "blockers": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "article_id": "2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce",
+      "slug": "lea-hist-012-02-core-concept",
+      "title": "Inca Architecture",
+      "folder": ".ai/content-audit-export/articles/lea-hist-012-02-core-concept--2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce",
+      "source_count": 2,
+      "linked_question_count": 12,
+      "question_edit_count": 12,
+      "answer_key_change_count": 0,
+      "option_text_change_count": 1,
+      "source_safe_real_world_scenario": "added_source_safe_real_world_scenario: when reading Andean site clues, separate masonry technique from imperial infrastructure; ashlar precision identifies construction logic, while Qhapaq Nan identifies administrative reach.",
+      "scenario_summary": "Added source-safe recognition/application scenario bounded to selected local source-map anchors.",
+      "thin_needs_expansion": false,
+      "unsupported_or_removed_claims": [
+        "Removed the specific 1960 Valdivia earthquake proof claim and replaced it with a general source-safe seismic-performance principle.",
+        "Changed the Qhapaq Nan item from approximately 40,000 km and relay-runner speed claims to about 30,000 km and administrative integration.",
+        "Softened Ollantaytambo wording to avoid unsupported fortress/river-control specifics."
+      ],
+      "original_hash": "sha256:c4c52762001dc06536d4981228087bea5a74a69bab2053ebe5cddb60953ec83f",
+      "normalized_hash": "sha256:f4e316566390dc401455daae05e6e13277a60b136c9795313fa3566617b3924f",
+      "candidate_hash": "sha256:f4e316566390dc401455daae05e6e13277a60b136c9795313fa3566617b3924f",
+      "sources_hash": "sha256:653eeced48ab777a0da080de2a446eb03b3d26aa0231500194dec62d1fee2380",
+      "linked_questions_hash": "sha256:a559ee8f768367b03f75d0f074a26baedc022afb124cd30dc3909c045def235a",
+      "source_locator": "UNESCO records for Machu Picchu, City of Cuzco, and Qhapaq Nan; local source map for Inca ashlar, terraces, road administration, and Andean attribution guardrails.",
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-126/lea-hist-012-02-core-concept-inca-architecture.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-126/lea-hist-012-02-core-concept-inca-architecture.refined.md"
+      ],
+      "source_hashes": [
+        "sha256:a1689e3c40986290b0853f6f80443d8e529dd0392855c7cd299eee26416a582b",
+        "sha256:1ebba90a16352e8631aecf9caee69013923e5265bcd36febca4fefc1ed2cf8ee"
+      ],
+      "safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation.",
+        "component-usage.json has not been generated for this article yet."
+      ],
+      "ui_block_edit_validation": {
+        "valid": true,
+        "blockers": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "article_id": "a33f91de-362d-436e-87f5-e30e32e47529",
+      "slug": "lea-hist-012-03-core-concept",
+      "title": "North American Indigenous Architecture",
+      "folder": ".ai/content-audit-export/articles/lea-hist-012-03-core-concept--a33f91de-362d-436e-87f5-e30e32e47529",
+      "source_count": 2,
+      "linked_question_count": 12,
+      "question_edit_count": 12,
+      "answer_key_change_count": 0,
+      "option_text_change_count": 4,
+      "source_safe_real_world_scenario": "added_source_safe_real_world_scenario: a preservation brief for Pueblo adobe, Mesa Verde masonry alcoves, Haudenosaunee longhouses, and Cahokia mounds requires different material, climate, and community-history assumptions.",
+      "scenario_summary": "Added source-safe recognition/application scenario bounded to selected local source-map anchors.",
+      "thin_needs_expansion": false,
+      "unsupported_or_removed_claims": [
+        "Removed the over-specific Monks Mound radiocarbon two-phase item and replaced it with UNESCO-supported scale/construction identification.",
+        "Removed an unsupported sclea/scale typo pattern by rewriting the longhouse and mound rationales.",
+        "Softened gender/property claims for Haudenosaunee longhouses so they stay tied to extended-family compartmentation and matrilineal social organization."
+      ],
+      "original_hash": "sha256:81ab6fb1846785272bec16747f08b68f484a1f41e8d5e51c73d964a218f27d84",
+      "normalized_hash": "sha256:9bbb7df85468e16399fd0fafd5cce3cb581ae533a0148f0ab7389f54727b2b16",
+      "candidate_hash": "sha256:9bbb7df85468e16399fd0fafd5cce3cb581ae533a0148f0ab7389f54727b2b16",
+      "sources_hash": "sha256:cb503ad0b18672210ba8101d04769ea6ca1e2f4162c3a73d2cb7131b1b0b7c37",
+      "linked_questions_hash": "sha256:8b8d60b4de245de2a00c3fd94b87b14935d04e86d06555d3ef2358a918bd0cfe",
+      "source_locator": "NPS records for Pueblo Bonito and Mesa Verde cliff dwellings; UNESCO record for Taos Pueblo and Cahokia; Haudenosaunee Confederacy housing record; local source map for Pueblo, longhouse, and Mississippian mound contrasts.",
+      "local_capture_paths": [
+        "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-126/lea-hist-012-03-core-concept-north-american-indigenous-architecture.source-capture.md",
+        "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-126/lea-hist-012-03-core-concept-north-american-indigenous-architecture.refined.md"
+      ],
+      "source_hashes": [
+        "sha256:e9ed94d2428abe6d2df3b9c3317239c0dee8940a05b2478152e913851ee18f58",
+        "sha256:886afd2232c04db4bf6d255297f2f41ec71ea906b08291336e467aff41b719f6"
+      ],
+      "safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation.",
+        "component-usage.json has not been generated for this article yet."
+      ],
+      "ui_block_edit_validation": {
+        "valid": true,
+        "blockers": 0,
+        "warnings": 0
+      }
+    }
+  ],
+  "totals": {
+    "article_clusters": 5,
+    "linked_questions": 57,
+    "question_edits": 57,
+    "answer_key_changes": 0,
+    "option_text_changes": 9,
+    "source_entries": 10,
+    "local_source_artifacts": 10
+  },
+  "source_artifacts": [
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-126/lea-hist-011-01-core-concept-pre-colonial-african-architecture.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-126/lea-hist-011-01-core-concept-pre-colonial-african-architecture.refined.md",
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-126/lea-hist-011-02-core-concept-colonial-architecture-in-africa.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-126/lea-hist-011-02-core-concept-colonial-architecture-in-africa.refined.md",
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-126/lea-hist-012-01-core-concept-maya-and-aztec-architecture.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-126/lea-hist-012-01-core-concept-maya-and-aztec-architecture.refined.md",
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-126/lea-hist-012-02-core-concept-inca-architecture.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-126/lea-hist-012-02-core-concept-inca-architecture.refined.md",
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-126/lea-hist-012-03-core-concept-north-american-indigenous-architecture.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-126/lea-hist-012-03-core-concept-north-american-indigenous-architecture.refined.md"
+  ],
+  "intended_paths": [
+    ".ai/03_plans/production-line-batch-126-manifest.json",
+    ".ai/03_plans/batch-126-independent-quality-review.md",
+    ".ai/03_plans/batch-126-git-handoff-stage-list.md",
+    ".ai/03_plans/source-audited-production-line-coordination.md",
+    ".ai/03_plans/source-audited-local-first-batches-handoff.md",
+    ".ai/03_plans/source-audited-local-first-freeze-readiness-report.md",
+    ".ai/content-audit-export/source-audited-article-batch-126-local-first-report.md",
+    ".ai/content-audit-export/source-audited-article-batch-126-local-first-ledger.json",
+    ".ai/content-audit-export/source-audited-article-batch-126-local-first-scoped-checks.json",
+    ".ai/content-audit-export/sync-state.json",
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-126/lea-hist-011-01-core-concept-pre-colonial-african-architecture.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-126/lea-hist-011-01-core-concept-pre-colonial-african-architecture.refined.md",
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-126/lea-hist-011-02-core-concept-colonial-architecture-in-africa.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-126/lea-hist-011-02-core-concept-colonial-architecture-in-africa.refined.md",
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-126/lea-hist-012-01-core-concept-maya-and-aztec-architecture.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-126/lea-hist-012-01-core-concept-maya-and-aztec-architecture.refined.md",
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-126/lea-hist-012-02-core-concept-inca-architecture.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-126/lea-hist-012-02-core-concept-inca-architecture.refined.md",
+    "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-126/lea-hist-012-03-core-concept-north-american-indigenous-architecture.source-capture.md",
+    "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-126/lea-hist-012-03-core-concept-north-american-indigenous-architecture.refined.md",
+    ".ai/content-audit-export/articles/lea-hist-011-01-core-concept--584a3bfe-0f9a-4c59-8576-b52a2f2a9074/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-hist-011-01-core-concept--584a3bfe-0f9a-4c59-8576-b52a2f2a9074/candidate.md",
+    ".ai/content-audit-export/articles/lea-hist-011-01-core-concept--584a3bfe-0f9a-4c59-8576-b52a2f2a9074/compose-error.json",
+    ".ai/content-audit-export/articles/lea-hist-011-01-core-concept--584a3bfe-0f9a-4c59-8576-b52a2f2a9074/compose-report.json",
+    ".ai/content-audit-export/articles/lea-hist-011-01-core-concept--584a3bfe-0f9a-4c59-8576-b52a2f2a9074/diff-report.json",
+    ".ai/content-audit-export/articles/lea-hist-011-01-core-concept--584a3bfe-0f9a-4c59-8576-b52a2f2a9074/diff-report.md",
+    ".ai/content-audit-export/articles/lea-hist-011-01-core-concept--584a3bfe-0f9a-4c59-8576-b52a2f2a9074/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-hist-011-01-core-concept--584a3bfe-0f9a-4c59-8576-b52a2f2a9074/normalized.md",
+    ".ai/content-audit-export/articles/lea-hist-011-01-core-concept--584a3bfe-0f9a-4c59-8576-b52a2f2a9074/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-hist-011-01-core-concept--584a3bfe-0f9a-4c59-8576-b52a2f2a9074/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-hist-011-01-core-concept--584a3bfe-0f9a-4c59-8576-b52a2f2a9074/sources.json",
+    ".ai/content-audit-export/articles/lea-hist-011-01-core-concept--584a3bfe-0f9a-4c59-8576-b52a2f2a9074/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-hist-011-01-core-concept--584a3bfe-0f9a-4c59-8576-b52a2f2a9074/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-hist-011-01-core-concept--584a3bfe-0f9a-4c59-8576-b52a2f2a9074/ui-blocks.json",
+    ".ai/content-audit-export/articles/lea-hist-011-02-core-concept--98d64943-b6ab-4fad-b16e-975d7126036e/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-hist-011-02-core-concept--98d64943-b6ab-4fad-b16e-975d7126036e/candidate.md",
+    ".ai/content-audit-export/articles/lea-hist-011-02-core-concept--98d64943-b6ab-4fad-b16e-975d7126036e/compose-error.json",
+    ".ai/content-audit-export/articles/lea-hist-011-02-core-concept--98d64943-b6ab-4fad-b16e-975d7126036e/compose-report.json",
+    ".ai/content-audit-export/articles/lea-hist-011-02-core-concept--98d64943-b6ab-4fad-b16e-975d7126036e/diff-report.json",
+    ".ai/content-audit-export/articles/lea-hist-011-02-core-concept--98d64943-b6ab-4fad-b16e-975d7126036e/diff-report.md",
+    ".ai/content-audit-export/articles/lea-hist-011-02-core-concept--98d64943-b6ab-4fad-b16e-975d7126036e/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-hist-011-02-core-concept--98d64943-b6ab-4fad-b16e-975d7126036e/normalized.md",
+    ".ai/content-audit-export/articles/lea-hist-011-02-core-concept--98d64943-b6ab-4fad-b16e-975d7126036e/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-hist-011-02-core-concept--98d64943-b6ab-4fad-b16e-975d7126036e/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-hist-011-02-core-concept--98d64943-b6ab-4fad-b16e-975d7126036e/sources.json",
+    ".ai/content-audit-export/articles/lea-hist-011-02-core-concept--98d64943-b6ab-4fad-b16e-975d7126036e/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-hist-011-02-core-concept--98d64943-b6ab-4fad-b16e-975d7126036e/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-hist-011-02-core-concept--98d64943-b6ab-4fad-b16e-975d7126036e/ui-blocks.json",
+    ".ai/content-audit-export/articles/lea-hist-012-01-core-concept--b3b94acc-c537-4dc3-bf2c-8246a8e6fdc6/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-hist-012-01-core-concept--b3b94acc-c537-4dc3-bf2c-8246a8e6fdc6/candidate.md",
+    ".ai/content-audit-export/articles/lea-hist-012-01-core-concept--b3b94acc-c537-4dc3-bf2c-8246a8e6fdc6/compose-error.json",
+    ".ai/content-audit-export/articles/lea-hist-012-01-core-concept--b3b94acc-c537-4dc3-bf2c-8246a8e6fdc6/compose-report.json",
+    ".ai/content-audit-export/articles/lea-hist-012-01-core-concept--b3b94acc-c537-4dc3-bf2c-8246a8e6fdc6/diff-report.json",
+    ".ai/content-audit-export/articles/lea-hist-012-01-core-concept--b3b94acc-c537-4dc3-bf2c-8246a8e6fdc6/diff-report.md",
+    ".ai/content-audit-export/articles/lea-hist-012-01-core-concept--b3b94acc-c537-4dc3-bf2c-8246a8e6fdc6/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-hist-012-01-core-concept--b3b94acc-c537-4dc3-bf2c-8246a8e6fdc6/normalized.md",
+    ".ai/content-audit-export/articles/lea-hist-012-01-core-concept--b3b94acc-c537-4dc3-bf2c-8246a8e6fdc6/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-hist-012-01-core-concept--b3b94acc-c537-4dc3-bf2c-8246a8e6fdc6/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-hist-012-01-core-concept--b3b94acc-c537-4dc3-bf2c-8246a8e6fdc6/sources.json",
+    ".ai/content-audit-export/articles/lea-hist-012-01-core-concept--b3b94acc-c537-4dc3-bf2c-8246a8e6fdc6/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-hist-012-01-core-concept--b3b94acc-c537-4dc3-bf2c-8246a8e6fdc6/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-hist-012-01-core-concept--b3b94acc-c537-4dc3-bf2c-8246a8e6fdc6/ui-blocks.json",
+    ".ai/content-audit-export/articles/lea-hist-012-02-core-concept--2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-hist-012-02-core-concept--2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce/candidate.md",
+    ".ai/content-audit-export/articles/lea-hist-012-02-core-concept--2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce/compose-error.json",
+    ".ai/content-audit-export/articles/lea-hist-012-02-core-concept--2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce/compose-report.json",
+    ".ai/content-audit-export/articles/lea-hist-012-02-core-concept--2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce/diff-report.json",
+    ".ai/content-audit-export/articles/lea-hist-012-02-core-concept--2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce/diff-report.md",
+    ".ai/content-audit-export/articles/lea-hist-012-02-core-concept--2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-hist-012-02-core-concept--2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce/normalized.md",
+    ".ai/content-audit-export/articles/lea-hist-012-02-core-concept--2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-hist-012-02-core-concept--2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-hist-012-02-core-concept--2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce/sources.json",
+    ".ai/content-audit-export/articles/lea-hist-012-02-core-concept--2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-hist-012-02-core-concept--2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-hist-012-02-core-concept--2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce/ui-blocks.json",
+    ".ai/content-audit-export/articles/lea-hist-012-03-core-concept--a33f91de-362d-436e-87f5-e30e32e47529/article-metadata.json",
+    ".ai/content-audit-export/articles/lea-hist-012-03-core-concept--a33f91de-362d-436e-87f5-e30e32e47529/candidate.md",
+    ".ai/content-audit-export/articles/lea-hist-012-03-core-concept--a33f91de-362d-436e-87f5-e30e32e47529/compose-error.json",
+    ".ai/content-audit-export/articles/lea-hist-012-03-core-concept--a33f91de-362d-436e-87f5-e30e32e47529/compose-report.json",
+    ".ai/content-audit-export/articles/lea-hist-012-03-core-concept--a33f91de-362d-436e-87f5-e30e32e47529/diff-report.json",
+    ".ai/content-audit-export/articles/lea-hist-012-03-core-concept--a33f91de-362d-436e-87f5-e30e32e47529/diff-report.md",
+    ".ai/content-audit-export/articles/lea-hist-012-03-core-concept--a33f91de-362d-436e-87f5-e30e32e47529/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-hist-012-03-core-concept--a33f91de-362d-436e-87f5-e30e32e47529/normalized.md",
+    ".ai/content-audit-export/articles/lea-hist-012-03-core-concept--a33f91de-362d-436e-87f5-e30e32e47529/parser-errors.json",
+    ".ai/content-audit-export/articles/lea-hist-012-03-core-concept--a33f91de-362d-436e-87f5-e30e32e47529/source-audit-evidence.json",
+    ".ai/content-audit-export/articles/lea-hist-012-03-core-concept--a33f91de-362d-436e-87f5-e30e32e47529/sources.json",
+    ".ai/content-audit-export/articles/lea-hist-012-03-core-concept--a33f91de-362d-436e-87f5-e30e32e47529/ui-block-edit-validation.json",
+    ".ai/content-audit-export/articles/lea-hist-012-03-core-concept--a33f91de-362d-436e-87f5-e30e32e47529/ui-block-edits.json",
+    ".ai/content-audit-export/articles/lea-hist-012-03-core-concept--a33f91de-362d-436e-87f5-e30e32e47529/ui-blocks.json"
+  ],
+  "validation_evidence": {
+    "compose": "5/5 scoped compositions passed with blockers=0 using --overwrite by slug.",
+    "diff": "5/5 scoped diff reports safe_to_push=true with blockers=0.",
+    "validate": "5/5 bundle validation valid=true; component-usage warnings only.",
+    "ui_block_edit_validation": "5/5 valid=true, blockers=0, warnings=0.",
+    "source_hash_checks": "10/10 local source artifact hashes matched sources.json.",
+    "linked_question_counts": "57/57 linked questions edited; answer-key changes=0.",
+    "reserved_marker_scan": "No reserved authoring markers found in selected normalized/candidate/question/source output scope.",
+    "stale_compose_error_scan": "Stale compose-error sidecars removed from selected folders; revalidation passed.",
+    "targeted_tests": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts -> 34 pass, 0 fail.",
+    "json_parse": "54 intended JSON files parsed after artifact generation.",
+    "git_diff_check": "git diff --check passed for 80 regular intended paths; custom whitespace scan passed for 85 existing intended files including ignored source artifacts.",
+    "git_cached_diff_check": "Temporary index cached diff check passed for 90 intended paths; live git staging is blocked by .git/index.lock permissions."
+  },
+  "blockers": [],
+  "warnings": [
+    "No Supabase push, deploy, production DB mutation, or merge to main was performed.",
+    "Diff reports warn that remote stale checks must run before any future Supabase mutation; this batch does not authorize Supabase mutation.",
+    "vitruvius-connection source artifacts are gitignored and require force-add if committed from this workspace.",
+    "Live git add failed with fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted."
+  ],
+  "git_blocker": {
+    "stage": "real_git_add",
+    "command": "git add -- <Batch 126 intended regular paths>; git add -f -- <Batch 126 source artifacts>",
+    "error": "fatal: Unable to create '/Users/philiplewis/slatecamp/.git/index.lock': Operation not permitted",
+    "handoff": ".ai/03_plans/batch-126-git-handoff-stage-list.md"
+  }
+}

@@ -1,3 +1,12 @@
+## Batch 126 Handoff - 2026-05-14
+
+- Batch 126 continues after accepted Batch 125 and consumes `lea-hist-011-01`, `lea-hist-011-02`, `lea-hist-012-01`, `lea-hist-012-02`, and `lea-hist-012-03`.
+- Required local artifacts are present under `.ai/03_plans`, `.ai/content-audit-export`, selected article folders, and `vitruvius-connection/.../source-map-batch-126`.
+- Next residual pointer after a successful commit: continue with the next sourceable non-prac residual cluster after `lea-hist-012-03`.
+- If git index or GitHub DNS blocks finalization, Hermes should stage only the intended Batch 126 paths listed in the manifest and stage list.
+
+---
+
 ## Batch 125 Handoff - 2026-05-14
 
 - Batch 125 continues after accepted Batch 124 and consumes `lea-hist-008-06`, `lea-hist-008-07a`, `lea-hist-008-07b`, `lea-hist-008-08`, and `lea-hist-008-09`.

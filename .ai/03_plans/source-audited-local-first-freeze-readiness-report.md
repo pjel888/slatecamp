@@ -1,3 +1,13 @@
+## Batch 126 Freeze Readiness - 2026-05-14
+
+- Status: pass local-first; live git finalization blocked by .git/index.lock permissions.
+- Source readiness: official/authoritative URLs captured locally and refined for all five selected article clusters.
+- Question readiness: 57/57 linked question edits generated and applied locally.
+- Known source-sensitive corrections: Biete Giyorgis plan wording, Djenne toron maintenance wording, Asmara colonial modernist city replacement, Palenque spelling, Inca seismic/Qhapaq Nan guardrails, and Monks Mound scale/sourceable identification.
+- Freeze condition: local validation gates passed and temporary-index cached diff passed; acceptance still requires Hermes to stage only Batch 126 paths, run cached diff check in the real index, commit, and push.
+
+---
+
 ## Batch 125 Freeze Readiness - 2026-05-14
 
 - Status: pass local-first; pass local-first; live git finalization blocked by .git/index.lock permissions.

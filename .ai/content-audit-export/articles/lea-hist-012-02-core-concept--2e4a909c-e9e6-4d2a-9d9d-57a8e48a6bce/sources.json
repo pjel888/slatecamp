@@ -1,20 +1,38 @@
 {
   "article_id": "2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:057e4dceff3c3ad6fd44c8ec2811e1f5a0f2d1a1ed6da96d966642384d372c04",
-  "source_count": 1,
+  "sources_hash": "sha256:653eeced48ab777a0da080de2a446eb03b3d26aa0231500194dec62d1fee2380",
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "c1668eff-6ed1-4844-bd1d-6871e4a33c0e",
+      "source_id": "batch126-lea-hist-012-02-core-concept-source-map-capture",
       "article_id": "2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce",
-      "label": "Hemming, John. *The Conquest of the Inca*. Harcourt Brace Jovanovich, 1970. Rowe, John Howland",
+      "label": "Inca Architecture source-map capture",
       "url": null,
-      "source_type": "reference_standard",
-      "description": "\"An Introduction to the Archaeology of Cuzco.\" *Papers of the Peabody Museum of American Archaeology and Ethnology*, vol. 27, no. 2, 1944. Wright, Kenneth R., Alfredo Valencia Zegarra, and Ruth M. Wright. *Machu Picchu: A Civil Engineering Marvel*. American Society of Civil Engineers, 2001",
-      "is_verified": false,
-      "sort_order": 0,
-      "created_at": "2026-03-24T04:33:59.83296+00:00",
-      "updated_at": "2026-03-24T04:33:59.83296+00:00"
+      "source_type": "local_source_capture",
+      "description": "Local-first capture of official/authoritative source anchors for Inca Architecture.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/source-map-batch-126/lea-hist-012-02-core-concept-inca-architecture.source-capture.md",
+      "sha256": "sha256:a1689e3c40986290b0853f6f80443d8e529dd0392855c7cd299eee26416a582b",
+      "locator": "UNESCO records for Machu Picchu, City of Cuzco, and Qhapaq Nan; local source map for Inca ashlar, terraces, road administration, and Andean attribution guardrails.",
+      "sort_order": 1,
+      "created_at": "2026-05-14T02:42:00.000+08:00",
+      "updated_at": "2026-05-14T02:42:00.000+08:00"
+    },
+    {
+      "source_id": "batch126-lea-hist-012-02-core-concept-source-map-refined",
+      "article_id": "2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce",
+      "label": "Inca Architecture refined source map",
+      "url": null,
+      "source_type": "local_refined_conversion",
+      "description": "Refined claim map for Inca Architecture and linked question edits.",
+      "is_verified": true,
+      "local_path": "vitruvius-connection/002_Raw-Conversion-Layer/002-History/refined_markdown/source-map-batch-126/lea-hist-012-02-core-concept-inca-architecture.refined.md",
+      "sha256": "sha256:1ebba90a16352e8631aecf9caee69013923e5265bcd36febca4fefc1ed2cf8ee",
+      "locator": "UNESCO records for Machu Picchu, City of Cuzco, and Qhapaq Nan; local source map for Inca ashlar, terraces, road administration, and Andean attribution guardrails.",
+      "sort_order": 2,
+      "created_at": "2026-05-14T02:42:00.000+08:00",
+      "updated_at": "2026-05-14T02:42:00.000+08:00"
     }
   ]
 }
